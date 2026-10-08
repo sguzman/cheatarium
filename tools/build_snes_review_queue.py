@@ -11,20 +11,27 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
+from validate_snes_publications import validate_registry
+
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = Path("generated/v1/reports/snes-composition-review-queue.json")
 TOP = 100
 SAMPLES = 3
 
 
-def calculate(bundle, documented):
+def calculate(bundle, documented, publications=None):
     if bundle.get("schema_version") != 1 or bundle.get("platform") != "snes":
         raise ValueError("Review queue requires SNES v1 source index")
     documented_set={(x["source_record_id"], x["source_ordinal"])
                     for x in documented["records"]}
+    published_set = set()
+    if publications is not None:
+        validate_registry(publications, bundle)
+        published_set = {(x["source_record_id"], x["source_ordinal"])
+                         for x in publications["records"]}
     buckets=defaultdict(lambda: {
         "titles":set(), "source_records":set(), "regions":set(),
-        "device_labels":set(), "occurrences":[],
+        "device_labels":set(), "occurrences":[], "publication_witnesses":set(),
     })
     total=0
     for record in bundle["records"]:
@@ -47,6 +54,8 @@ def calculate(bundle, documented):
             if comp.get("evidence") or comp.get("alternatives"):
                 raise ValueError("Unresolved source must not have synthetic evidence")
             b=buckets[key]
+            if ref in published_set:
+                b["publication_witnesses"].add(ref)
             b["titles"].add(record["title_hint"])
             b["source_records"].add(record["id"])
             if record.get("region_hint"):
@@ -68,6 +77,9 @@ def calculate(bundle, documented):
             "title_hints":sorted(b["titles"])[:10],
             "unresolved_source_occurrences":len(b["occurrences"]),
             "distinct_source_records":len(b["source_records"]),
+            "historical_publication_witnesses":len(b["publication_witnesses"]),
+            "occurrences_without_publication_witness":(
+                len(b["occurrences"])-len(b["publication_witnesses"])),
             "region_hints":sorted(b["regions"]),
             "declared_device_hints":sorted(b["device_labels"]),
             "sample_originals":b["occurrences"][:SAMPLES],
@@ -81,6 +93,10 @@ def calculate(bundle, documented):
         "effect_or_compatibility_verified":False,
         "rank_rule":"descending-unresolved-source-occurrences-then-ascending-candidate-key",
         "total_unresolved_source_occurrences":total,
+        "total_historical_publication_witnesses":sum(
+            len(b["publication_witnesses"]) for b in buckets.values()),
+        "total_without_publication_witness":(
+            total-sum(len(b["publication_witnesses"]) for b in buckets.values())),
         "candidate_groups_with_unresolved_joins":len(out),
         "published_top_limit":TOP,
         "top_groups":out[:TOP],
@@ -91,7 +107,9 @@ def build(root):
     with gzip.open(root/"generated/v1/snes.json.gz","rt",encoding="utf-8") as f:
         bundle=json.load(f)
     doc=json.loads((root/"generated/v1/interpretations/snes.json").read_text(encoding="utf-8"))
-    data=calculate(bundle,doc)
+    publications=json.loads((root/"interpretations/v1/snes-published-groups.json")
+                            .read_text(encoding="utf-8"))
+    data=calculate(bundle,doc,publications)
     audit=json.loads((root/"generated/v1/reports/snes-codec-coverage.json").read_text(encoding="utf-8"))
     if data["total_unresolved_source_occurrences"] != audit["counts"]["unresolved_plus_groups"]:
         raise ValueError("Review queue differs from SNES composition audit count")
