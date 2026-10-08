@@ -53,6 +53,8 @@ def build_manifest(root):
     publication_witnesses = audit_publications(ROOT)
     if publication_witnesses["empirically_tested_combinations"] != 0:
         raise ValueError("Publication witness registry cannot assert empirical execution")
+    if publication_witnesses["publication_witness_ordinals_checked"] != publication_witnesses["historical_publication_witnesses"]:
+        raise ValueError("Original archive audit did not cover every publication witness")
     from build_snes_review_queue import build as rebuild_composition_queue
     queue_rel = "reports/snes-composition-review-queue.json"
     composition_queue = checked_json(safe_path(root, queue_rel))
@@ -342,6 +344,8 @@ def build_manifest(root):
         "unresolved_snes_plus_groups": compositions["unresolved_plus_groups"],
         "unresolved_snes_candidate_groups": composition_queue["candidate_groups_with_unresolved_joins"],
         "historical_snes_publication_witnesses": witness_count,
+        "historical_snes_source_blobs_audited": publication_witnesses["original_archived_files_checked"],
+        "historical_snes_source_ordinals_audited": publication_witnesses["publication_witness_ordinals_checked"],
         "unresolved_snes_without_publication_witness": composition_queue["total_without_publication_witness"],
         "reviewed_effect_claims": len(review_doc["claims"]),
         "observed_effect_claims": sum(c.get("assessment") == "observed" for c in review_doc["claims"]),
