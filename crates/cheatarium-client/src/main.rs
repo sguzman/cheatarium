@@ -1,6 +1,7 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
 use cheatarium_client::{
-    load_game_candidates, load_platform, load_repeated_codes, verify_platform_distribution,
+    load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
+    verify_platform_distribution,
 };
 use std::env;
 use std::error::Error;
@@ -12,6 +13,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut title = None;
     let mut effect = None;
     let mut game_key = None;
+    let mut category = None;
     let mut varying_descriptions = false;
     let mut declared_format = None;
     let mut source_id = None;
@@ -24,8 +26,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("verify") => "verify",
         Some("effects") => "effects",
         Some("repeats") => "repeats",
+        Some("tags") => "tags",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -36,6 +39,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--title" => title = Some(args.next().ok_or("--title needs a value")?),
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
+            "--category" => category = Some(args.next().ok_or("--category needs an ID")?),
             "--varying-descriptions" => varying_descriptions = true,
             "--declared-format" => {
                 declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
@@ -55,8 +59,11 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     if mode != "repeats" && varying_descriptions {
         return Err("--varying-descriptions applies only to repeats".into());
     }
-    if mode != "repeats" && game_key.is_some() {
-        return Err("--game-key applies only to repeats".into());
+    if mode != "tags" && category.is_some() {
+        return Err("--category applies only to tags".into());
+    }
+    if mode != "repeats" && mode != "tags" && game_key.is_some() {
+        return Err("--game-key applies only to repeats and tags".into());
     }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
         return Err("--declared-format and --source-id apply only to effects".into());
@@ -86,6 +93,66 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         } else {
             println!("OK: {platform} artifacts match local distribution.json SHA-256 checksums");
             println!("The manifest itself is not authenticated, and cheats remain unverified.");
+        }
+        return Ok(());
+    }
+    if mode == "tags" {
+        let index = load_effect_tags(&root, &platform)?;
+        if let Some(ref selected) = category {
+            if selected.trim().is_empty() {
+                return Err("--category cannot be empty".into());
+            }
+            let group = index.by_category(selected).ok_or("No signal matches for that category")?;
+            let hits: Vec<_> = group.matches.iter()
+                .filter(|hit| game_key.as_deref().is_none_or(|key| hit.candidate_game_key == key))
+                .collect();
+            let total = hits.len();
+            if json {
+                println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.lexical_tags.v1",
+                    "platform": platform,
+                    "taxonomy_id": index.taxonomy_id,
+                    "category": selected,
+                    "candidate_game_key_filter": game_key,
+                    "interpretation": index.interpretation,
+                    "source_text_only": true,
+                    "verified_effect": false,
+                    "verified_game_identity": false,
+                    "cheats_activated": false,
+                    "total_matches": total,
+                    "hits": hits.into_iter().take(limit).collect::<Vec<_>>(),
+                }))?);
+            } else {
+                println!("{total} textual {selected:?} cues on {platform}; no verified gameplay effect.");
+                for hit in hits.into_iter().take(limit) {
+                    println!("- {} #{} ({}; phrase {:?})",
+                        hit.source_record_id, hit.ordinal, hit.candidate_game_key, hit.matched_phrase);
+                }
+            }
+        } else {
+            if game_key.is_some() {
+                return Err("--game-key needs --category in tags mode".into());
+            }
+            let counts: Vec<_> = index.categories.iter()
+                .map(|group| serde_json::json!({
+                    "category": group.id,
+                    "matches": group.matches.len()
+                })).collect();
+            if json {
+                println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.lexical_tag_categories.v1",
+                    "platform": platform,
+                    "taxonomy_id": index.taxonomy_id,
+                    "source_text_only": true,
+                    "verified_effect": false,
+                    "categories": counts,
+                }))?);
+            } else {
+                println!("Lexical description cues on {platform} (not verified effects):");
+                for group in &index.categories {
+                    println!("- {}: {} source occurrences", group.id, group.matches.len());
+                }
+            }
         }
         return Ok(());
     }

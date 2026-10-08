@@ -36,6 +36,10 @@ pub struct CatalogEntry {
     #[serde(default)]
     pub repeat_groups: Option<usize>,
     #[serde(default)]
+    pub tag_index_artifact: Option<String>,
+    #[serde(default)]
+    pub tag_matches: Option<usize>,
+    #[serde(default)]
     pub identity_artifact: Option<String>,
     #[serde(default)]
     pub game_candidate_groups: Option<usize>,
@@ -258,6 +262,13 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
             return Err("Unsafe Cheatarium repetition-index path".into());
         }
         artifacts.push(repeat_path.clone());
+    }
+    if let Some(tag_path) = &entry.tag_index_artifact {
+        if tag_path != &format!("tags/{platform}.json.gz") {
+            return Err("Unsafe Cheatarium effect-tag index path".into());
+        }
+        artifacts.push(tag_path.clone());
+        artifacts.push("taxonomy/effects-v1.json".to_owned());
     }
     if let Some(identity_path) = &entry.identity_artifact {
         if identity_path != &format!("identities/{platform}.json") {
@@ -484,6 +495,78 @@ impl RepeatedCodeIndex {
     }
 }
 
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct EffectTagIndex {
+    pub schema_version: u32,
+    pub platform: String,
+    pub taxonomy_id: String,
+    pub interpretation: String,
+    pub categories: Vec<TagCategory>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct TagCategory {
+    pub id: String,
+    pub matches: Vec<TagOccurrence>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct TagOccurrence {
+    pub source_record_id: String,
+    pub ordinal: usize,
+    pub candidate_game_key: String,
+    pub matched_phrase: String,
+}
+
+/// Read-only lexical signal index. The original source descriptions live in
+/// the platform bundle; no signal is a verified gameplay-effect assertion.
+pub fn load_effect_tags(root: impl AsRef<Path>, platform: &str) -> Result<EffectTagIndex> {
+    let root = root.as_ref();
+    let catalog = load_catalog(root)?;
+    let entry = catalog.bundles.iter()
+        .find(|entry| entry.platform == platform)
+        .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
+    let expected = format!("tags/{platform}.json.gz");
+    if platform.is_empty()
+        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || entry.tag_index_artifact.as_deref() != Some(expected.as_str())
+    {
+        return Err("No safe effect-tag index available".into());
+    }
+    let mut gzip = GzDecoder::new(File::open(root.join(expected))?)
+        .take(MAX_UNCOMPRESSED_BUNDLE + 1);
+    let mut data = Vec::new();
+    gzip.read_to_end(&mut data)?;
+    if data.len() as u64 > MAX_UNCOMPRESSED_BUNDLE {
+        return Err("Cheatarium effect-tag index exceeds size limit".into());
+    }
+    let index: EffectTagIndex = serde_json::from_slice(&data)?;
+    check_schema(index.schema_version)?;
+    if index.platform != platform
+        || index.taxonomy_id != "cheatarium-effect-signals-en-v1"
+        || index.interpretation != "lexical-source-description-signal-only; no verified game effect or cartridge compatibility"
+        || Some(index.categories.iter().map(|c| c.matches.len()).sum::<usize>()) != entry.tag_matches
+    {
+        return Err("Cheatarium lexical tag catalog mismatch".into());
+    }
+    let mut seen_categories = std::collections::BTreeSet::new();
+    if index.categories.iter().any(|category| {
+        !seen_categories.insert(category.id.as_str())
+            || category.matches.is_empty()
+            || category.matches.iter().any(|hit| hit.source_record_id.is_empty() || hit.matched_phrase.is_empty())
+    }) {
+        return Err("Malformed Cheatarium lexical tag entries".into());
+    }
+    Ok(index)
+}
+
+impl EffectTagIndex {
+    #[must_use]
+    pub fn by_category(&self, id: &str) -> Option<&TagCategory> {
+        self.categories.iter().find(|category| category.id == id)
+    }
+}
 /// A non-executing cheat-description search result, with complete provenance.
 #[derive(Debug, Serialize)]
 pub struct EffectHit<'a> {
@@ -701,6 +784,29 @@ mod tests {
         assert!(index.by_candidate_game_key("other").is_empty());
         assert!(index.by_candidate_game_key("").is_empty());
         assert!(!index.groups[0].confirmed_equivalent_cheat);
+    }
+
+    #[test]
+    fn signal_index_has_no_executable_or_verified_effect_claims() {
+        let index = EffectTagIndex {
+            schema_version: 1,
+            platform: "snes".to_owned(),
+            taxonomy_id: "cheatarium-effect-signals-en-v1".to_owned(),
+            interpretation: "lexical-source-description-signal-only; no verified game effect or cartridge compatibility".to_owned(),
+            categories: vec![TagCategory {
+                id: "lives".to_owned(),
+                matches: vec![TagOccurrence {
+                    source_record_id: "source:a".to_owned(),
+                    ordinal: 0,
+                    candidate_game_key: "super-mario-world".to_owned(),
+                    matched_phrase: "infinite lives".to_owned(),
+                }],
+            }],
+        };
+        let hit = &index.by_category("lives").unwrap().matches[0];
+        assert_eq!(hit.source_record_id, "source:a");
+        assert!(index.by_category("health").is_none());
+        assert!(index.interpretation.contains("no verified"));
     }
 
     #[test]
