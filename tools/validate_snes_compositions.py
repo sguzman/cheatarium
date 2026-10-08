@@ -9,6 +9,8 @@ import gzip
 import json
 from pathlib import Path
 
+from audit_snes_publication_archive import audit_original_archives
+
 ROOT = Path(__file__).resolve().parents[1]
 REVISION = "revision-alternatives"
 UNRESOLVED = "unresolved"
@@ -95,6 +97,11 @@ def audit(root):
             counts["reviewed_revision_alternatives"] += 1
     if seen != set(reviewed):
         raise ValueError(f"Missing reviewed source+ordinal interpretations: {set(reviewed)-seen}")
+    archive_stats = audit_original_archives(root, original, bundle)
+    if archive_stats["publication_witness_ordinals_checked"] != counts["reviewed_revision_alternatives"]:
+        raise ValueError("Original archive audit omitted a reviewed SNES composition")
+    counts["reviewed_original_source_blobs_audited"] = archive_stats["original_archived_files_checked"]
+    counts["reviewed_original_source_ordinals_audited"] = archive_stats["publication_witness_ordinals_checked"]
     return counts
 
 
