@@ -1,0 +1,203 @@
+//! Local, read-only consumer for Cheatarium's versioned console cheat indexes.
+//!
+//! No network access, ROM reads, cartridge mutation, or code execution.
+//! All name matching is *advisory* and must not auto-enable cheats.
+use flate2::read::GzDecoder;
+use serde::{Deserialize, Serialize};
+use std::error::Error;
+use std::fs::{self, File};
+use std::io::Read;
+use std::path::Path;
+
+pub type Result<T> = std::result::Result<T, Box<dyn Error + Send + Sync>>;
+
+const MAX_CATALOG_SIZE: u64 = 5 * 1024 * 1024;
+const MAX_UNCOMPRESSED_BUNDLE: u64 = 512 * 1024 * 1024;
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Catalog {
+    pub schema_version: u32,
+    pub format: String,
+    pub matching_policy: String,
+    pub bundles: Vec<CatalogEntry>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct CatalogEntry {
+    pub platform: String,
+    pub artifact: String,
+    pub source_files: usize,
+    pub code_fields: usize,
+    pub warnings: usize,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Bundle {
+    pub schema_version: u32,
+    pub platform: String,
+    pub game_identity_rule: String,
+    pub compatibility_rule: String,
+    pub records: Vec<IndexedFile>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct IndexedFile {
+    pub id: String,
+    pub title_hint: String,
+    pub candidate_game_key: String,
+    pub identity_confidence: String,
+    pub raw_filename: String,
+    pub region_hint: Option<String>,
+    pub format_hint: Option<String>,
+    pub declared_cheats: Option<usize>,
+    pub parse_warnings: Vec<String>,
+    pub codes: Vec<Code>,
+    pub provenance: Provenance,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Code {
+    pub ordinal: usize,
+    pub description: Option<String>,
+    pub code: Option<String>,
+    pub source_enabled: bool,
+    pub verification: String,
+    #[serde(default)]
+    pub role: Option<String>,
+}
+
+impl Code {
+    /// Description-only headings are not activatable codes.
+    #[must_use]
+    pub fn is_code(&self) -> bool {
+        self.code.is_some() && self.role.as_deref() != Some("section-heading")
+    }
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Provenance {
+    pub source_id: String,
+    pub repository: String,
+    pub revision: String,
+    pub license: String,
+    pub upstream_path: String,
+    pub archive_path: String,
+    pub git_blob_sha: String,
+}
+
+fn check_schema(version: u32) -> Result<()> {
+    if version != 1 {
+        return Err(format!("Unsupported Cheatarium schema version {version}").into());
+    }
+    Ok(())
+}
+
+pub fn load_catalog(root: impl AsRef<Path>) -> Result<Catalog> {
+    let path = root.as_ref().join("catalog.json");
+    let file = File::open(path)?;
+    let mut bytes = Vec::new();
+    file.take(MAX_CATALOG_SIZE + 1).read_to_end(&mut bytes)?;
+    if bytes.len() as u64 > MAX_CATALOG_SIZE {
+        return Err("Cheatarium catalog exceeds size limit".into());
+    }
+    let catalog: Catalog = serde_json::from_slice(&bytes)?;
+    check_schema(catalog.schema_version)?;
+    if catalog.format != "cheatarium-index-v1" {
+        return Err("Unsupported Cheatarium index format".into());
+    }
+    Ok(catalog)
+}
+
+/// Decode a compressed bundle with an explicit uncompressed size limit.
+pub fn decode_bundle(reader: impl Read) -> Result<Bundle> {
+    let mut gzip = GzDecoder::new(reader).take(MAX_UNCOMPRESSED_BUNDLE + 1);
+    let mut data = Vec::new();
+    gzip.read_to_end(&mut data)?;
+    if data.len() as u64 > MAX_UNCOMPRESSED_BUNDLE {
+        return Err("Cheatarium bundle exceeds size limit".into());
+    }
+    let bundle: Bundle = serde_json::from_slice(&data)?;
+    check_schema(bundle.schema_version)?;
+    Ok(bundle)
+}
+
+/// Load one platform's local, compressed index.
+/// The catalog cannot direct a consumer outside its own directory.
+pub fn load_platform(root: impl AsRef<Path>, platform: &str) -> Result<Bundle> {
+    let root = root.as_ref();
+    let catalog = load_catalog(root)?;
+    let entry = catalog
+        .bundles
+        .into_iter()
+        .find(|item| item.platform == platform)
+        .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
+    if entry.artifact != format!("{platform}.json.gz")
+        || platform.is_empty()
+        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+    {
+        return Err("Unsafe or unexpected Cheatarium index path".into());
+    }
+    let bundle = decode_bundle(File::open(root.join(entry.artifact))?)?;
+    if bundle.platform != platform || bundle.records.len() != entry.source_files {
+        return Err("Cheatarium catalog/bundle mismatch".into());
+    }
+    Ok(bundle)
+}
+
+impl Bundle {
+    /// Case-insensitive, *candidate-only* title lookup; no ROM identity check.
+    #[must_use]
+    pub fn search_title(&self, needle: &str) -> Vec<&IndexedFile> {
+        let needle = needle.trim().to_lowercase();
+        if needle.is_empty() {
+            return Vec::new();
+        }
+        self.records
+            .iter()
+            .filter(|r| r.title_hint.to_lowercase().contains(&needle))
+            .collect()
+    }
+
+    /// Exact candidate-title key lookup; still not a cartridge identity test.
+    #[must_use]
+    pub fn by_candidate_game_key(&self, key: &str) -> Vec<&IndexedFile> {
+        self.records
+            .iter()
+            .filter(|r| r.candidate_game_key == key)
+            .collect()
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use flate2::{Compression, GzBuilder};
+    use std::io::Write;
+
+    fn fixture() -> Vec<u8> {
+        let payload = r#"{"schema_version":1,"platform":"snes","game_identity_rule":"filename only","compatibility_rule":"manual confirmation","records":[{"id":"x","title_hint":"Super Mario World","candidate_game_key":"super-mario-world","identity_confidence":"filename_heuristic_only","raw_filename":"Super Mario World (USA).cht","region_hint":"USA","format_hint":null,"declared_cheats":1,"parse_warnings":[],"codes":[{"ordinal":0,"description":"Infinite Lives","code":"ABCD","source_enabled":false,"verification":"unverified","role":"code"},{"ordinal":1,"description":"A heading","code":null,"source_enabled":false,"verification":"unverified","role":"section-heading"}],"provenance":{"source_id":"libretro","repository":"https://example.com","revision":"abc","license":"CC-BY-SA-4.0","upstream_path":"cht/sample.cht","archive_path":"archive/sample.cht","git_blob_sha":"abcdef"}}]}"#;
+        let mut gz = GzBuilder::new().mtime(0).write(Vec::new(), Compression::fast());
+        gz.write_all(payload.as_bytes()).unwrap();
+        gz.finish().unwrap()
+    }
+
+    #[test]
+    fn reads_bundle_and_never_activates_headings() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        assert_eq!(bundle.search_title("MARIO").len(), 1);
+        assert_eq!(bundle.by_candidate_game_key("super-mario-world").len(), 1);
+        assert_eq!(bundle.records[0].codes[0].code.as_deref(), Some("ABCD"));
+        assert!(bundle.records[0].codes[0].is_code());
+        assert!(!bundle.records[0].codes[1].is_code());
+    }
+
+    #[test]
+    fn rejects_unknown_schema() {
+        let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
+        bundle.schema_version = 2;
+        let payload = serde_json::to_vec(&bundle).unwrap();
+        let mut gz = GzBuilder::new().mtime(0).write(Vec::new(), Compression::fast());
+        gz.write_all(&payload).unwrap();
+        assert!(decode_bundle(gz.finish().unwrap().as_slice()).is_err());
+    }
+}
