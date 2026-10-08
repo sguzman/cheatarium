@@ -26,6 +26,10 @@ pub struct Catalog {
 pub struct CatalogEntry {
     pub platform: String,
     pub artifact: String,
+    #[serde(default)]
+    pub game_index_artifact: Option<String>,
+    #[serde(default)]
+    pub game_candidate_groups: Option<usize>,
     pub source_files: usize,
     pub code_fields: usize,
     #[serde(default)]
@@ -161,6 +165,89 @@ pub fn load_platform(root: impl AsRef<Path>, platform: &str) -> Result<Bundle> {
     Ok(bundle)
 }
 
+/// Advisory grouping of source occurrences under filename-derived titles.
+/// Neither an edition identifier nor a verified ROM/serial match.
+#[derive(Debug, Deserialize, Serialize)]
+pub struct GameIndex {
+    pub schema_version: u32,
+    pub platform: String,
+    pub identity_rule: String,
+    pub candidates: Vec<GameCandidate>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct GameCandidate {
+    pub key: String,
+    pub title_hint: String,
+    pub alternate_title_hints: Vec<String>,
+    pub identity_confidence: String,
+    pub possible_title_collision: bool,
+    pub source_record_ids: Vec<String>,
+    pub source_ids: Vec<String>,
+    pub region_hints: Vec<String>,
+    pub format_hints: Vec<String>,
+    pub code_fields: usize,
+    pub native_memory_entries: usize,
+}
+
+pub fn decode_game_index(reader: impl Read) -> Result<GameIndex> {
+    let mut gzip = GzDecoder::new(reader).take(MAX_UNCOMPRESSED_BUNDLE + 1);
+    let mut data = Vec::new();
+    gzip.read_to_end(&mut data)?;
+    if data.len() as u64 > MAX_UNCOMPRESSED_BUNDLE {
+        return Err("Cheatarium game index exceeds size limit".into());
+    }
+    let index: GameIndex = serde_json::from_slice(&data)?;
+    check_schema(index.schema_version)?;
+    Ok(index)
+}
+
+/// Load the optional, additive v1 filename-group index for one platform.
+pub fn load_game_candidates(root: impl AsRef<Path>, platform: &str) -> Result<GameIndex> {
+    let root = root.as_ref();
+    let catalog = load_catalog(root)?;
+    let entry = catalog
+        .bundles
+        .into_iter()
+        .find(|entry| entry.platform == platform)
+        .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
+    let expected = format!("games/{platform}.json.gz");
+    if platform.is_empty()
+        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || entry.game_index_artifact.as_deref() != Some(expected.as_str())
+    {
+        return Err("No safe game-candidate index available".into());
+    }
+    let index = decode_game_index(File::open(root.join(expected))?)?;
+    if index.platform != platform || Some(index.candidates.len()) != entry.game_candidate_groups {
+        return Err("Cheatarium game catalog/bundle mismatch".into());
+    }
+    Ok(index)
+}
+
+impl GameIndex {
+    /// Case-insensitive candidate title matching. Never a verified ROM match.
+    #[must_use]
+    pub fn search_title(&self, needle: &str) -> Vec<&GameCandidate> {
+        let needle = needle.trim().to_lowercase();
+        if needle.is_empty() {
+            return Vec::new();
+        }
+        self.candidates
+            .iter()
+            .filter(|game| {
+                game.title_hint.to_lowercase().contains(&needle)
+                    || game.alternate_title_hints.iter().any(|title| title.to_lowercase().contains(&needle))
+            })
+            .collect()
+    }
+
+    #[must_use]
+    pub fn by_candidate_key(&self, key: &str) -> Option<&GameCandidate> {
+        self.candidates.iter().find(|game| game.key == key)
+    }
+}
+
 impl Bundle {
     /// Case-insensitive, *candidate-only* title lookup; no ROM identity check.
     #[must_use]
@@ -206,6 +293,35 @@ mod tests {
         assert_eq!(bundle.records[0].codes[0].code.as_deref(), Some("ABCD"));
         assert!(bundle.records[0].codes[0].is_code());
         assert!(!bundle.records[0].codes[1].is_code());
+    }
+
+    #[test]
+    fn game_candidate_lookup_preserves_all_source_links() {
+        let payload = serde_json::json!({
+            "schema_version": 1,
+            "platform": "snes",
+            "identity_rule": "unverified filename grouping",
+            "candidates": [{
+                "key": "super-mario-world",
+                "title_hint": "Super Mario World",
+                "alternate_title_hints": ["Super-Mario World"],
+                "identity_confidence": "filename_candidate_only",
+                "possible_title_collision": true,
+                "source_record_ids": ["source:a", "source:b"],
+                "source_ids": ["source"],
+                "region_hints": ["USA"],
+                "format_hints": ["game-genie"],
+                "code_fields": 2,
+                "native_memory_entries": 0
+            }]
+        });
+        let mut gz = GzBuilder::new().mtime(0).write(Vec::new(), Compression::fast());
+        gz.write_all(&serde_json::to_vec(&payload).unwrap()).unwrap();
+        let index = decode_game_index(gz.finish().unwrap().as_slice()).unwrap();
+        assert_eq!(index.search_title("MARIO").len(), 1);
+        let group = index.by_candidate_key("super-mario-world").unwrap();
+        assert_eq!(group.source_record_ids.len(), 2);
+        assert!(group.possible_title_collision);
     }
 
     #[test]

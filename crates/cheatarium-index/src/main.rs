@@ -77,6 +77,8 @@ struct Bundle {
 struct CatalogItem {
     platform: String,
     artifact: String,
+    game_index_artifact: String,
+    game_candidate_groups: usize,
     source_files: usize,
     code_fields: usize,
     native_memory_entries: usize,
@@ -89,6 +91,91 @@ struct Catalog {
     format: &'static str,
     matching_policy: &'static str,
     bundles: Vec<CatalogItem>,
+}
+
+#[derive(Default)]
+struct CandidateAccum {
+    titles: BTreeSet<String>,
+    regions: BTreeSet<String>,
+    formats: BTreeSet<String>,
+    sources: BTreeSet<String>,
+    source_record_ids: Vec<String>,
+    code_fields: usize,
+    native_memory_entries: usize,
+}
+
+#[derive(Serialize)]
+struct GameCandidate {
+    key: String,
+    title_hint: String,
+    alternate_title_hints: Vec<String>,
+    identity_confidence: &'static str,
+    possible_title_collision: bool,
+    source_record_ids: Vec<String>,
+    source_ids: Vec<String>,
+    region_hints: Vec<String>,
+    format_hints: Vec<String>,
+    code_fields: usize,
+    native_memory_entries: usize,
+}
+
+#[derive(Serialize)]
+struct GameIndex {
+    schema_version: u32,
+    platform: String,
+    identity_rule: &'static str,
+    candidates: Vec<GameCandidate>,
+}
+
+fn build_game_index(platform: &str, records: &[IndexedFile]) -> GameIndex {
+    let mut groups: BTreeMap<String, CandidateAccum> = BTreeMap::new();
+    for record in records {
+        // Never merge records that lack a usable filename-derived key.
+        let key = if record.candidate_game_key.is_empty() {
+            format!("unresolved:{}", record.id)
+        } else {
+            record.candidate_game_key.clone()
+        };
+        let entry = groups.entry(key).or_default();
+        entry.titles.insert(record.title_hint.clone());
+        if let Some(region) = &record.region_hint {
+            entry.regions.insert(region.clone());
+        }
+        if let Some(format) = record.format_hint {
+            entry.formats.insert(format.to_owned());
+        }
+        entry.sources.insert(record.provenance.source_id.clone());
+        entry.source_record_ids.push(record.id.clone());
+        entry.code_fields += record.codes.iter().filter(|c| c.role == "code").count();
+        entry.native_memory_entries +=
+            record.codes.iter().filter(|c| c.role == "memory-entry").count();
+    }
+    let candidates = groups
+        .into_iter()
+        .map(|(key, group)| {
+            let title_hint = group.titles.iter().next().cloned().unwrap_or_default();
+            let possible_title_collision = group.titles.len() > 1;
+            GameCandidate {
+                key,
+                title_hint,
+                alternate_title_hints: group.titles.into_iter().skip(1).collect(),
+                identity_confidence: "filename_candidate_only",
+                possible_title_collision,
+                source_record_ids: group.source_record_ids,
+                source_ids: group.sources.into_iter().collect(),
+                region_hints: group.regions.into_iter().collect(),
+                format_hints: group.formats.into_iter().collect(),
+                code_fields: group.code_fields,
+                native_memory_entries: group.native_memory_entries,
+            }
+        })
+        .collect();
+    GameIndex {
+        schema_version: 1,
+        platform: platform.to_owned(),
+        identity_rule: "unverified filename grouping; keys are not ROM or edition identities",
+        candidates,
+    }
 }
 
 fn checked_path(root: &Path, rel: &str) -> Result<PathBuf> {
@@ -195,6 +282,7 @@ fn run() -> Result<()> {
     }
 
     fs::create_dir_all(&out)?;
+    fs::create_dir_all(out.join("games"))?;
     let mut catalog = Vec::new();
     for (platform, mut records) in by_platform {
         records.sort_by(|a, b| a.id.cmp(&b.id));
@@ -203,6 +291,14 @@ fn run() -> Result<()> {
         let warnings: usize = records.iter().map(|x| x.parse_warnings.len()).sum();
         let source_files = records.len();
         let filename = format!("{platform}.json.gz");
+        let game_index_artifact = format!("games/{platform}.json.gz");
+        let games = build_game_index(&platform, &records);
+        let game_candidate_groups = games.candidates.len();
+        let mut game_gzip = GzBuilder::new().mtime(0).write(
+            File::create(out.join(&game_index_artifact))?, Compression::default()
+        );
+        game_gzip.write_all(&serde_json::to_vec(&games)?)?;
+        game_gzip.finish()?;
         let bundle = Bundle {
             schema_version: 1,
             platform: platform.clone(),
@@ -215,10 +311,12 @@ fn run() -> Result<()> {
         let mut gz = GzBuilder::new().mtime(0).write(File::create(target)?, Compression::default());
         gz.write_all(&json)?;
         gz.finish()?;
-        println!("{platform}: {source_files} source files, {code_fields} device codes, {native_memory_entries} native memory entries, {warnings} warnings");
+        println!("{platform}: {game_candidate_groups} candidate games, {source_files} source files, {code_fields} device codes, {native_memory_entries} native memory entries, {warnings} warnings");
         catalog.push(CatalogItem {
             platform,
             artifact: filename,
+            game_index_artifact,
+            game_candidate_groups,
             source_files,
             code_fields,
             native_memory_entries,
