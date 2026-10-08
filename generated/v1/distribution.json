@@ -39,8 +39,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "ad46574a7166b0cbab237d472420a5770bcf5111e24369e4e6de7cb962c3b279",
-      "size_bytes": 11414
+      "sha256": "69065f6a59a9cdfd9c14bd6c954b516b0d352039a7dc51af03f2131b32dbfe6f",
+      "size_bytes": 11465
     },
     {
       "path": "colecovision.json.gz",
@@ -266,6 +266,11 @@
       "path": "gx4000.json.gz",
       "sha256": "554d618e2f6fd16dbd21ece5117463dd6c4b0270a846d5eb0ce2389a672a96a1",
       "size_bytes": 2838
+    },
+    {
+      "path": "identities/snes.json",
+      "sha256": "3d6c2f438e064116b8c1b7d5f62dc4136c6b02c2ffbd8f375112fde20dae4b93",
+      "size_bytes": 290
     },
     {
       "path": "intellivision.json.gz",

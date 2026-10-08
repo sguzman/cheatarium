@@ -17,9 +17,13 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     while let Some(arg) = args.next() {
         match arg.as_str() {
             "--platform" => platform = Some(args.next().ok_or("--platform requires an ID")?),
-            "--file" => source_file = Some(PathBuf::from(args.next().ok_or("--file requires a path")?)),
+            "--file" => {
+                source_file = Some(PathBuf::from(args.next().ok_or("--file requires a path")?))
+            }
             "--sha256" => hash = Some(args.next().ok_or("--sha256 requires a digest")?),
-            "--registry" => registry_dir = PathBuf::from(args.next().ok_or("--registry requires a directory")?),
+            "--registry" => {
+                registry_dir = PathBuf::from(args.next().ok_or("--registry requires a directory")?)
+            }
             "--help" | "-h" => {
                 println!("cheatarium-fingerprint --platform snes (--file /local/game.sfc | --sha256 HASH) [--registry generated/v1/identities]");
                 return Ok(());
@@ -38,22 +42,29 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         if !sha256_valid(&sha256) {
             return Err("Expected lowercase 64-character SHA-256 digest".into());
         }
-        Fingerprint {sha256, byte_length: 0, hash_scope: HASH_SCOPE.to_owned()}
+        Fingerprint {
+            sha256,
+            byte_length: 0,
+            hash_scope: HASH_SCOPE.to_owned(),
+        }
     };
     let registry = load_registry(registry_dir, &platform)?;
     let matching = registry.lookup_with_length(
         &fingerprint.sha256,
         (fingerprint.byte_length > 0).then_some(fingerprint.byte_length),
     )?;
-    println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-        "schema": "cheatarium.fingerprint.v1",
-        "platform": platform,
-        "fingerprint": fingerprint,
-        "size_known": fingerprint.byte_length != 0,
-        "evidence_lookup": matching,
-        "filename_matching_used": false,
-        "cheats_activated": false,
-    }))?);
+    println!(
+        "{}",
+        serde_json::to_string_pretty(&serde_json::json!({
+            "schema": "cheatarium.fingerprint.v1",
+            "platform": platform,
+            "fingerprint": fingerprint,
+            "size_known": fingerprint.byte_length != 0,
+            "evidence_lookup": matching,
+            "filename_matching_used": false,
+            "cheats_activated": false,
+        }))?
+    );
     Ok(())
 }
 

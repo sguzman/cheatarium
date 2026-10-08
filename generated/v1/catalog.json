@@ -326,6 +326,7 @@
       "platform": "snes",
       "artifact": "snes.json.gz",
       "game_index_artifact": "games/snes.json.gz",
+      "identity_artifact": "identities/snes.json",
       "game_candidate_groups": 1367,
       "source_files": 2773,
       "code_fields": 68094,

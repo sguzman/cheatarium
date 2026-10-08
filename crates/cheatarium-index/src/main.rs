@@ -352,7 +352,10 @@ fn run() -> Result<()> {
         // filename candidates. No ROM hash is ever inferred from a title.
         let identity_artifact = if platform == "snes" {
             let name = format!("identities/{platform}.json");
-            fs::copy(root.join(format!("identities/v1/{platform}.json")), out.join(&name))?;
+            fs::copy(
+                root.join(format!("identities/v1/{platform}.json")),
+                out.join(&name),
+            )?;
             Some(name)
         } else {
             None

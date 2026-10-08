@@ -61,7 +61,10 @@ pub struct FingerprintLookup<'a> {
 }
 
 pub fn sha256_valid(hash: &str) -> bool {
-    hash.len() == 64 && hash.bytes().all(|c| c.is_ascii_digit() || (b'a'..=b'f').contains(&c))
+    hash.len() == 64
+        && hash
+            .bytes()
+            .all(|c| c.is_ascii_digit() || (b'a'..=b'f').contains(&c))
 }
 
 pub fn fingerprint_reader(mut reader: impl Read) -> Result<Fingerprint> {
@@ -74,7 +77,9 @@ pub fn fingerprint_reader(mut reader: impl Read) -> Result<Fingerprint> {
             break;
         }
         hasher.update(&buffer[..n]);
-        size = size.checked_add(n as u64).ok_or("Fingerprint byte length overflow")?;
+        size = size
+            .checked_add(n as u64)
+            .ok_or("Fingerprint byte length overflow")?;
     }
     Ok(Fingerprint {
         sha256: format!("{:x}", hasher.finalize()),
@@ -91,12 +96,17 @@ pub fn fingerprint_file(path: impl AsRef<Path>) -> Result<Fingerprint> {
 
 fn valid_platform(platform: &str) -> bool {
     !platform.is_empty()
-        && platform.bytes().all(|b| b.is_ascii_lowercase() || b.is_ascii_digit() || b == b'-')
+        && platform
+            .bytes()
+            .all(|b| b.is_ascii_lowercase() || b.is_ascii_digit() || b == b'-')
 }
 
 impl IdentityRegistry {
     pub fn validate(&self) -> Result<()> {
-        if self.schema_version != 1 || !valid_platform(&self.platform) || self.hash_scope != HASH_SCOPE {
+        if self.schema_version != 1
+            || !valid_platform(&self.platform)
+            || self.hash_scope != HASH_SCOPE
+        {
             return Err("Unsupported or malformed ROM identity registry header".into());
         }
         for record in &self.records {
@@ -130,15 +140,24 @@ impl IdentityRegistry {
 
     /// Require the exact byte length when it is known. Any disagreement in
     /// reported size remains an explicit conflict, never a silent selection.
-    pub fn lookup_with_length(&self, hash: &str, known_length: Option<u64>) -> Result<FingerprintLookup<'_>> {
+    pub fn lookup_with_length(
+        &self,
+        hash: &str,
+        known_length: Option<u64>,
+    ) -> Result<FingerprintLookup<'_>> {
         if !sha256_valid(hash) {
             return Err("Expected lowercase 64-character SHA-256 digest".into());
         }
         self.validate()?;
-        let matching_release_claims: Vec<&ReleaseClaim> =
-            self.records.iter().filter(|record| record.sha256 == hash).collect();
+        let matching_release_claims: Vec<&ReleaseClaim> = self
+            .records
+            .iter()
+            .filter(|record| record.sha256 == hash)
+            .collect();
         let length_conflict = known_length.is_some_and(|size| {
-            matching_release_claims.iter().any(|claim| claim.byte_length != size)
+            matching_release_claims
+                .iter()
+                .any(|claim| claim.byte_length != size)
         });
         let status = if length_conflict {
             "fingerprint_length_conflict"
@@ -189,11 +208,13 @@ mod tests {
 
     fn claim(edition: &str) -> ReleaseClaim {
         ReleaseClaim {
-            sha256: ABC_SHA.to_owned(), byte_length: 3,
+            sha256: ABC_SHA.to_owned(),
+            byte_length: 3,
             game_id: "fixture-game".to_owned(),
             title: "Fixture game (not a real ROM)".to_owned(),
             edition_id: edition.to_owned(),
-            region: None, revision: None,
+            region: None,
+            revision: None,
             evidence: vec![Evidence {
                 url: "https://example.invalid/test-evidence".to_owned(),
                 reference: "fixture row 1".to_owned(),
@@ -205,8 +226,10 @@ mod tests {
 
     fn registry(records: Vec<ReleaseClaim>) -> IdentityRegistry {
         IdentityRegistry {
-            schema_version: 1, platform: "snes".to_owned(),
-            hash_scope: HASH_SCOPE.to_owned(), records,
+            schema_version: 1,
+            platform: "snes".to_owned(),
+            hash_scope: HASH_SCOPE.to_owned(),
+            records,
         }
     }
 
@@ -217,7 +240,8 @@ mod tests {
         assert_eq!(fp.sha256, ABC_SHA);
         assert_eq!(fp.byte_length, 3);
         assert_eq!(fp.hash_scope, HASH_SCOPE);
-        let with_header = fingerprint_reader([vec![0; 512], bytes.to_vec()].concat().as_slice()).unwrap();
+        let with_header =
+            fingerprint_reader([vec![0; 512], bytes.to_vec()].concat().as_slice()).unwrap();
         assert_ne!(fp.sha256, with_header.sha256);
         assert_eq!(with_header.byte_length, 515);
     }
