@@ -1,77 +1,38 @@
 # Cheatarium index v1
 
-The indexer is a **repeatable Rust build**, not a hand-maintained snapshot.
+The indexer is a **repeatable Rust build**, not a manual snapshot. Data exports are emulator-independent and never modify original sources.
 
 ## Build
 
-\`\`\`sh
+```sh
 cargo test --workspace
-cargo run --release -p cheatarium-index -- --root . --out generated/v1
-# Optional: --systems snes,nes
-\`\`\`
+cargo run --locked --release -p cheatarium-index -- --root . --out generated/v1
+python3 tools/build_distribution.py --write
+python3 tools/build_distribution.py --check
+```
 
-This writes a stable \`catalog.json\` plus **one compressed \`<platform>.json.gz\` per imported console**. Both are checked into \`generated/v1/\` by CI, so clients may consume a pinned Git revision or a future GitHub release without cloning source archives.
+Use `--systems snes,nes` for bounded development builds, not for refreshing the full distributed catalog.
 
-The indexer currently parses Libretro \`.cht\` files only. Additional source formats will become separate adapters; every record already carries source ID, repository URL, exact snapshot commit, upstream path, archive path and original Git blob SHA.
+## Layers
 
-### Per-console payload
+**Source archive:** unchanged `.cht` files under `archive/libretro/cht/`; per-file upstream path, revision, and original Git blob SHA in `sources/libretro-database.json`.
 
-\`\`\`json
-{
-  "schema_version": 1,
-  "platform": "snes",
-  "game_identity_rule": "filename-derived suggestion, not verified ROM identity",
-  "compatibility_rule": "never auto-apply a code without confirmed release/build compatibility",
-  "records": [
-    {
-      "id": "libretro-database:cht/.../Donkey Kong Country (USA) (Game Genie).cht",
-      "title_hint": "Donkey Kong Country",
-      "candidate_game_key": "donkey-kong-country",
-      "identity_confidence": "filename_heuristic_only",
-      "raw_filename": "Donkey Kong Country (USA) (Game Genie).cht",
-      "region_hint": "USA",
-      "format_hint": "game-genie",
-      "declared_cheats": 51,
-      "parse_warnings": [],
-      "codes": [{
-        "ordinal": 0,
-        "description": "Invincible",
-        "code": "1DCC-CA7A",
-        "source_enabled": false,
-        "verification": "unverified"
-      }],
-      "provenance": {
-        "source_id": "libretro-database",
-        "repository": "https://github.com/libretro/libretro-database",
-        "revision": "...",
-        "license": "CC-BY-SA-4.0",
-        "upstream_path": "...",
-        "archive_path": "...",
-        "git_blob_sha": "..."
-      }
-    }
-  ]
-}
-\`\`\`
+**Source bundles:** `generated/v1/<platform>.json.gz` contains `schema_version: 1`, `platform`, compatibility/identity rules and original source occurrences. Each `record` exposes a stable source occurrence `id`, advisory `title_hint` and `candidate_game_key`, original filename, optional region/format hints, `codes`, and `provenance`.
 
-Fields in this example are illustrative and abbreviated. The real outputs contain **all** indexed \`.cht\` source records and their parseable code entries. The raw archives remain authoritative for bytes and any unsupported fields. Metadata anomalies become parse warnings; the importer and Python validator retain separate byte-integrity checks.
+An indexed code entry has an ordinal, description, optional code string, `source_enabled`, `verification`, `role`, and ordered `native_fields`. Roles distinguish `code`, `memory-entry` and `section-heading`. Provenance retains source ID, repository, pinned revision, license, original path, archive path and Git blob SHA.
 
-## Consumer contract
+**Game-candidate bundles:** `generated/v1/games/<platform>.json.gz` contains advisory title groups with `key`, title hints, `source_record_ids`, distinct source IDs, region/format hints, counts, and `possible_title_collision`. An ungroupable record remains isolated with an `unresolved:` key.
 
-- \`catalog.json\` selects available platform bundles; artifact filenames are relative to its directory.
-- Gzip output has a zero modification timestamp, stable ordering, and no build-time timestamps, so the same repository revision yields byte-identical output with the same build dependencies.
-- A record is a **source occurrence**, not a unique game or an endorsement of a code. \`candidate_game_key\` is advisory and may collide; \`raw_filename\` and exact provenance are never lost.
-- A code can require a specific cartridge revision, emulator device, core or memory domain. The filename-derived region/format hints are **not** enough to enable a code safely.
-- \`source_enabled\` is how the upstream file represented its own default, **not permission to enable the code in a consumer**. No cheats are automatically activated.
-- Do not interpret the original cheat-code strings as native memory-write instructions. Device formats need verified console-specific decoding/execution.
-- Consumers should check \`schema_version\`, accept unknown future fields, and fail safely on unsupported versions.
+**Catalog:** `generated/v1/catalog.json` references the source and game bundles for each console, with file and entry counts. `game_index_artifact` and `game_candidate_groups` are additive v1 fields.
 
-This is the first transport contract for **Starbyte and future emulators**. A stable game/build resolver, format-specific execution adapters, and a shared Rust consumer library are separate upcoming tasks.
+**Distribution:** `generated/v1/distribution.json` lists SHA-256 and byte length for every artifact, created and checked by `tools/build_distribution.py`.
 
-## Mixed provenance
+## Interpretation rules
 
-Each source file is retained independently. Distinct upstream files containing identically named codes remain distinct \`records\`; automatic effect-level merging is deliberately deferred until we can use reliable game/build identity and evidence-based equivalence, not just string similarity.
+Source occurrences and filename-derived game groups do not prove game identity, ROM revision, device compatibility, or code function. Group keys may collide; different games must not be merged as verified merely because their slugs match. Different code formats must not be treated as raw memory writes without console-specific decoding.
 
-## Native memory entries
+Imported entries are unverified unless actually tested, and `source_enabled` is original metadata, **never** a request to activate a cheat.
 
-Some RetroArch `.cht` files use `cheatN_address`, `cheatN_value`, `cheatN_cheat_type`, `cheatN_memory_search_size`, and other fields instead of `cheatN_code`. Indexed entries preserve all additional native key/value fields in an ordered `native_fields` list (including repeat occurrences) and distinguish `role: "memory-entry"` from encoded `role: "code"` and `role: "section-heading"`. Emulators must interpret these fields according to their platform/RetroArch memory semantics; they are **not** translated into executable codes automatically. The catalog reports both `code_fields` and `native_memory_entries`.
+Existing v1 source bundles remain backward compatible. New fields may be added; breaking semantic changes require a new major schema. Data revisions can change underlying records even when the contract version is unchanged. Consumers should pin one Git revision and verify its artifacts.
+
+See [consumer guide](CONSUMERS.md) and [distribution/integrity contract](DISTRIBUTION.md).

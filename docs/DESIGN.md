@@ -24,7 +24,7 @@ A curated cheat can carry notes about side effects, game progress, permanence, c
 
 **Now:** consoles and handhelds, especially offline/single-player use. Include Game Genie, GameShark, Action Replay, Pro Action Replay, CodeBreaker, native emulator formats, passwords, debug menus, button sequences, secrets, and glitches.
 
-**Later:** arcade/computer platforms, search UI, format conversion, executable patches (only where redistribution is permitted), Rust-powered tools, and emulator integrations such as Starbyte.
+**Later:** arcade/computer platforms, search UI, format conversion, executable patches (only where redistribution is permitted), Rust-powered tools, and stable data contracts for independently maintained emulators. Consumer integration code belongs in the consumer projects.
 
 **Never in this repository:** copyrighted ROM dumps, proprietary BIOS/firmware, unlock keys for paid content, account compromises, or multiplayer cheating tools.
 

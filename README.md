@@ -14,7 +14,8 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Sources](sources/README.md) — upstream repositories, attribution, licenses, and snapshots.
 - [Adding cheats](docs/ADDING-CHEATS.md) — how new collections and individual cheats enter the archive.
 - [Emulator consumers](docs/CONSUMERS.md) — read-only Rust client and offline search.
-- [Versioned index](docs/INDEX-V1.md) — deterministic per-console bundles and compatibility rules.
+- [Versioned index](docs/INDEX-V1.md) — deterministic game/source bundles and compatibility rules.
+- [Distribution and integrity](docs/DISTRIBUTION.md) — SHA-256 manifests and verified consumer downloads.
 - [Design](docs/DESIGN.md) — the boundaries and data model.
 - [Roadmap](docs/ROADMAP.md) — systems, imports, and future features.
 

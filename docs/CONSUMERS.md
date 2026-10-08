@@ -1,30 +1,32 @@
-# Consuming Cheatarium from Rust emulators
+# Cheatarium consumers
 
-Cheatarium now includes a **read-only Rust client** in \`crates/cheatarium-client\`. It reads the checked-in \`generated/v1/catalog.json\` and per-console compressed \`*.json.gz\` bundles. It never reads ROMs, touches emulator memory, downloads anything, or enables cheats.
+Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust client in `crates/cheatarium-client`. It is not an emulator and does not modify emulator repositories.
 
-## Try the bundled search tool
+## SNES files
 
-\`\`\`sh
-cargo run --release -p cheatarium-client --bin cheatarium-query -- search \
-  --db generated/v1 --platform snes --title "Super Mario World"
-\`\`\`
+- `generated/v1/catalog.json`: the machine-readable console catalog.
+- `generated/v1/games/snes.json.gz`: advisory title groups linking to their source records.
+- `generated/v1/snes.json.gz`: full parsed source occurrences, original code strings, hints and provenance.
+- `generated/v1/distribution.json`: SHA-256 hashes and byte sizes of all artifacts.
 
-Add \`--json\` to receive source records, their codes, and provenance as machine-readable output.
+An emulator can download only these four files at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
 
-## Rust consumer API
+## Rust client
 
-The crate exposes \`load_catalog(dir)\`, \`load_platform(dir, "snes")\`, \`Bundle::search_title("Mario")\`, \`Bundle::by_candidate_game_key("super-mario-world")\`, and \`Code::is_code()\`.
+The client exposes `load_catalog`, `load_game_candidates`, `load_platform`, `verify_platform_distribution`, and candidate title searches. Its CLI supports these local-only operations:
 
-A Starbyte adapter should:
+```sh
+cargo run --release -p cheatarium-client --bin cheatarium-query -- games --db generated/v1 --platform snes --title 'Chrono Trigger' --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- search --db generated/v1 --platform snes --title 'Chrono Trigger' --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db generated/v1 --platform snes --json
+```
 
-1. Open a user-supplied or explicitly configured local \`snes.json.gz\` snapshot through this library.
-2. Show title candidates and source variants in the SNES game UI or CLI.
-3. Explicitly confirm the loaded cartridge's region/revision; use reliable hash/serial matching once that data is available.
-4. Support an opt-in execution engine that understands the actual SNES cheat format (Game Genie/Action Replay, memory domain and timing). Not every indexed string is a valid direct memory write.
-5. Never automatically activate imported codes, and never treat a section heading as executable.
+`verify` confirms local files match the distribution manifest, but does not authenticate the manifest itself. Pin a trusted upstream Git commit or future immutable release.
 
-**Current boundary:** the client and CLI can read, inspect, and search. Starbyte itself is not yet wired to this client, and no cheat-execution engine is claimed. The initial catalog is transport-ready, not runtime-code-ready.
+## No implicit execution
 
-Consumers should pin the exact Cheatarium revision or a future published version; do not depend on mutable branch HEAD or unverified title-only automatic matching. Avoid adding Cheatarium source archives as a build dependency: only ship the needed \`snes.json.gz\` and \`catalog.json\` files.
+Entries of `role: "code"` preserve native device-code strings; `role: "memory-entry"` preserves address/value metadata; `role: "section-heading"` marks a non-executable label. Codes are imported **unverified**. `source_enabled` means only that the original file marked them enabled.
 
-The client also distinguishes `Code::is_memory_entry()` from encoded `Code::is_code()`. Original `native_fields` are preserved for console-specific translation; no memory entry is executed by this library.
+Consumers must decide whether a code is compatible with the exact cartridge build and know how its specific Game Genie, Action Replay, or memory format behaves before applying anything. Nothing in this library activates a cheat automatically.
+
+See [the v1 contract](INDEX-V1.md) and [distribution specification](DISTRIBUTION.md).

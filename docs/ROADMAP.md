@@ -33,12 +33,14 @@
 - [x] Game/edition/format schema and integrity validator.
 - [x] Automatic upstream **bulk importer** with platform selection, limits, and deterministic records.
 - [x] Generate versioned compressed per-console source-record indexes in Rust (36 consoles).
+- [x] Generate advisory game-title catalogs with source links for all 36 consoles.
+- [x] Publish SHA-256 artifact manifests with Rust client integrity checks.
 - [ ] Establish reliable cartridge/build identity and canonical cross-source game records.
 - [ ] Dedupe equivalent codes while retaining original provenance.
 - [ ] Search by game, platform, cheat effect, author, source, and code format.
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.
 - [ ] Add a pleasant desktop/game cheat explorer.
-- [ ] Wire the Rust client into Starbyte for read-only cheat discovery; then develop and test SNES-specific code execution.
+- [ ] Document console-specific code formats and verify sample fixtures; emulator integration belongs to the consumer projects.
 
 Keep the README about the project; keep work tracking here.

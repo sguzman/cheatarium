@@ -21,7 +21,7 @@ Any record whose title cannot yield a usable key stays in its own `unresolved:<s
 
 ## Rust consumer
 
-The `cheatarium-client` crate offers `load_catalog`, `load_platform`, `load_game_candidates`, source-record search, and candidate-game search. All operate on local files and never activate cheats.
+The `cheatarium-client` crate offers `load_catalog`, `load_platform`, `load_game_candidates`, `verify_platform_distribution`, source-record search, and candidate-game search. All operate on local files and never activate cheats.
 
 Example usage:
 
@@ -34,7 +34,7 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- search --db g
 
 `python3 tools/build_distribution.py --check` verifies SHA-256 hashes/byte lengths, parses both exports for every platform, and ensures every source record belongs to exactly one candidate group. `--write` regenerates the manifest after a Rust build; it is deterministic and network-free.
 
-Consumers should pin one Cheatarium commit or future immutable release and validate `distribution.json` before trusting downloaded artifacts. SHA-256 confirms files match the pinned manifest; it does **not** prove that cheats work, that the manifest was authenticated, or that the game title matches a user's ROM.
+Consumers should pin one Cheatarium commit or future immutable release and validate `distribution.json` before trusting downloaded artifacts. `cheatarium-query verify --db generated/v1 --platform snes --json` checks the local SNES files against the manifest; it does not authenticate the manifest itself. SHA-256 confirms files match the pinned manifest; it does **not** prove that cheats work, that the manifest was authenticated, or that the game title matches a user's ROM.
 
 Schema `v1` remains backward compatible by **adding** the `game_index_artifact` and `game_candidate_groups` catalog fields. Existing `<platform>.json.gz` source bundles and the `search` CLI continue to work. New clients may discover `games/<platform>.json.gz` via the new optional fields.
 
