@@ -1,6 +1,112 @@
 {
   "schema_version": 1,
   "format": "cheatarium-effect-reviews-v1",
-  "description": "Separate, deliberately empty human-reviewed effect claims. Lexical hints and imported cheat names do not constitute gameplay observation.",
-  "claims": []
+  "description": "Attributable external cheat-code reports, distinct from source text hints and independently observed gameplay. Historical Game Genie listings can republish earlier code tables; no report here implies emulator verification.",
+  "claims": [
+    {
+      "id": "dkc-snes-almost-invincible-report",
+      "platform": "snes",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 0,
+      "source_revision": "fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90",
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "effect_category": "invulnerability",
+      "assessment": "reported",
+      "reviewed_by": "cheatarium-source-audit",
+      "review_date": "2026-10-08",
+      "assessment_note": "A GameFAQs-hosted historical FAQ reproduces Lewis Galoob's Game Genie notes. The exact 1DCC-CA7A code is labeled almost invincible, with a warning to disable it if stuck. It is presented as one of two version-dependent alternatives; no cartridge hash or actual test is documented.",
+      "evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/snes/588282-donkey-kong-country/faqs/5450",
+          "reference": "Q-11: Game Genie, Invincibility, 1DCC-CA7A alternate 1DCA-C2EA",
+          "source_revision": "CStassen DKC FAQ v1.3, 1995-03-27"
+        }
+      ],
+      "test_context": null
+    },
+    {
+      "id": "dkc-snes-infinite-lives-report",
+      "platform": "snes",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 1,
+      "source_revision": "fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90",
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "effect_category": "lives",
+      "assessment": "reported",
+      "reviewed_by": "cheatarium-source-audit",
+      "review_date": "2026-10-08",
+      "assessment_note": "A GameFAQs-hosted historical FAQ reproduces Lewis Galoob's code updates and reports C2C1-4A9C as the alternate-version code for infinite lives, versus C2C9-4E2C on another build. The imported source filename's USA region is only a hint; neither exact revision nor execution was tested.",
+      "evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/snes/588282-donkey-kong-country/faqs/5450",
+          "reference": "Q-11: Game Genie, Lives, C2C9-4E2C alternate C2C1-4A9C",
+          "source_revision": "CStassen DKC FAQ v1.3, 1995-03-27"
+        }
+      ],
+      "test_context": null
+    },
+    {
+      "id": "dkc-snes-high-jump-report",
+      "platform": "snes",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 8,
+      "source_revision": "fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90",
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "effect_category": "movement",
+      "assessment": "reported",
+      "reviewed_by": "cheatarium-source-audit",
+      "review_date": "2026-10-08",
+      "assessment_note": "A historical FAQ lists A081-1273 as the high-jump code for Donkey Kong, with A086-13E3 as the alternative for another game version. This is an attributed code report, not empirical confirmation or proof of a specific ROM revision.",
+      "evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/snes/588282-donkey-kong-country/faqs/5450",
+          "reference": "Q-11: Game Genie, Jumping, A081-1273 alternate A086-13E3",
+          "source_revision": "CStassen DKC FAQ v1.3, 1995-03-27"
+        }
+      ],
+      "test_context": null
+    },
+    {
+      "id": "dk-nes-infinite-lives-report",
+      "platform": "nes",
+      "source_record_id": "libretro-database:cht/Nintendo - Nintendo Entertainment System/Donkey Kong (World) (Game Genie).cht",
+      "source_ordinal": 0,
+      "source_revision": "fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90",
+      "source_git_blob_sha": "167f9cf9b62ec86749c4cab876e1038123a9efcb",
+      "effect_category": "lives",
+      "assessment": "reported",
+      "reviewed_by": "cheatarium-source-audit",
+      "review_date": "2026-10-08",
+      "assessment_note": "MaineCane's versioned NES Donkey Kong walkthrough lists SXNGOZVG as the infinite-lives Game Genie code. This is a documented external report; no emulator, cartridge SHA-256, or independent gameplay observation is supplied.",
+      "evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/nes/563403-donkey-kong/faqs/34396",
+          "reference": "Section IV: Cheats, Game Genie, SXNGOZVG",
+          "source_revision": "MaineCane Donkey Kong Guide v0.9, 2004-12-30"
+        }
+      ],
+      "test_context": null
+    },
+    {
+      "id": "dk-nes-start-nine-lives-report",
+      "platform": "nes",
+      "source_record_id": "libretro-database:cht/Nintendo - Nintendo Entertainment System/Donkey Kong (World) (Game Genie).cht",
+      "source_ordinal": 2,
+      "source_revision": "fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90",
+      "source_git_blob_sha": "167f9cf9b62ec86749c4cab876e1038123a9efcb",
+      "effect_category": "lives",
+      "assessment": "reported",
+      "reviewed_by": "cheatarium-source-audit",
+      "review_date": "2026-10-08",
+      "assessment_note": "MaineCane's versioned NES Donkey Kong walkthrough lists PENKNPLE as the Game Genie code to start with nine lives. This describes a finite starting count, not infinite lives, and is untested here.",
+      "evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/nes/563403-donkey-kong/faqs/34396",
+          "reference": "Section IV: Cheats, Game Genie, PENKNPLE",
+          "source_revision": "MaineCane Donkey Kong Guide v0.9, 2004-12-30"
+        }
+      ],
+      "test_context": null
+    }
+  ]
 }
