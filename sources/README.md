@@ -4,7 +4,7 @@ Redistribution status matters as much as code count. Register candidates here; o
 
 | Source | Scope | Status | Notes |
 | --- | --- | --- | --- |
-| [Libretro Database](https://github.com/libretro/libretro-database) | Many retro consoles/handhelds; RetroArch `.cht` | **Pilot imported** | Repository CC BY-SA 4.0; [pinned provenance and file inventory](libretro-database.json). Check original credits. |
+| [Libretro Database](https://github.com/libretro/libretro-database) | Many retro consoles/handhelds; RetroArch `.cht` | **NES + SNES imported** | Repository CC BY-SA 4.0; 5,035 archived `.cht` files; [pinned provenance and file inventory](libretro-database.json). Check original credits. |
 | [GameHacking.org](https://gamehacking.org/) | Extremely broad code collection and research | **Link / rights review** | Great research and export source. Do not bulk rehost without confirming permissions. |
 | [Switch Cheats DB](https://github.com/HamletDuFromage/switch-cheats-db) | Switch title/build-ID cheats | **Candidate / rights review** | Mirror of other community sources; title/build IDs critical. No redistribution clearance established here. |
 | [GoldHEN Cheat Repository](https://github.com/GoldHEN/GoldHEN_Cheat_Repository) | PlayStation 4 | **Candidate / review** | GPL-3.0 repository license observed; distinguish tools/data and their notices before copying. |
