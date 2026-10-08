@@ -66,7 +66,7 @@ def audit_original_archives(root, registry, bundle):
             raise ValueError(f"Index source ID disagrees with provenance: {source_id}")
         path = archive_path(root, provenance["archive_path"])
         raw = path.read_bytes()
-        git_sha = hashlib.sha1(f"blob {len(raw)}\\0".encode() + raw).hexdigest()
+        git_sha = hashlib.sha1(f"blob {len(raw)}".encode() + bytes([0]) + raw).hexdigest()
         if git_sha != provenance["git_blob_sha"]:
             raise ValueError(f"Original archive Git blob changed: {source_id}")
         original_codes = parse_code_fields(raw)
