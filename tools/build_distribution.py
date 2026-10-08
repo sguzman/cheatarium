@@ -44,10 +44,13 @@ def build_manifest(root):
     source_files = 0
     game_groups = 0
     decoded_snes_entries = 0
-    for rel in ["catalog.json"]:
+    for rel in ["catalog.json", "reports/snes-codec-coverage.json"]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
         named_paths.add(rel)
+    coverage = checked_json(safe_path(root, "reports/snes-codec-coverage.json"))
+    if coverage.get("schema_version") != 1 or coverage.get("scope") != "snes":
+        raise ValueError("Invalid SNES decoder audit report")
 
     for entry in entries:
         platform = entry["platform"]
@@ -119,6 +122,11 @@ def build_manifest(root):
                 decoded += 1
         if decoded != entry.get("decoded_snes_code_fields", 0):
             raise ValueError(f"Incorrect SNES decoder statistics: {platform}")
+        if platform == "snes" and (
+            coverage.get("counts", {}).get("strictly_decoded") != decoded
+            or coverage.get("source_files") != len(records)
+        ):
+            raise ValueError("SNES coverage report disagrees with exported source data")
         decoded_snes_entries += decoded
         if (encoded, native) != (entry["code_fields"], entry["native_memory_entries"]):
             raise ValueError(f"Catalog/source counts differ: {platform}")

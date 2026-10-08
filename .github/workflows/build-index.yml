@@ -45,8 +45,9 @@ jobs:
           cargo test --workspace
       - name: Build per-console index bundles
         run: cargo run --locked --release -p cheatarium-index -- --root . --out generated/v1
-      - name: Build SHA-256 distribution and validate cross-index links
+      - name: Audit SNES interpretations and build verified distribution
         run: |
+          python3 tools/audit_snes_codecs.py --out generated/v1/reports/snes-codec-coverage.json
           python3 tools/build_distribution.py --write
           python3 tools/build_distribution.py --check
       - name: Smoke-test exported catalog
@@ -122,7 +123,7 @@ jobs:
             echo "ERROR: placeholder cheat unexpectedly decoded" >&2
             exit 1
           fi
-          python3 tools/audit_snes_codecs.py --json | python3 -c 'import json,sys; a=json.load(sys.stdin); c=a["counts"]; assert c["strictly_decoded"] > 10000 and c["format_not_identified"] > 0'
+          python3 tools/audit_snes_codecs.py --json | python3 -c 'import json,sys; a=json.load(sys.stdin); c=a["counts"]; assert c["strictly_decoded"] > 10000 and c["decoded_from_code_syntax"] > 0 and c["format_not_identified"] > 0'
       - name: Commit reproducible index snapshots
         run: |
           git config user.name "github-actions[bot]"
