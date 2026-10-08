@@ -15,6 +15,7 @@ on:
       - "sources/candidates.json"
       - "tools/validate.py"
       - "identities/**"
+      - "taxonomy/**"
       - "curated/**"
       - "archive/libretro/cht/**"
   workflow_dispatch:
@@ -204,11 +205,29 @@ jobs:
           fi
           python3 tools/audit_snes_codecs.py --json | python3 -c 'import json,sys; a=json.load(sys.stdin); c=a["counts"]; assert c["strictly_decoded"] > 10000 and c["decoded_from_code_syntax"] > 0 and c["format_not_identified"] > 0'
       - name: Commit reproducible index snapshots
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Builds are deterministic but older runs may finish after new
+          # development commits. Do not publish obsolete generated data.
+          baseline="$(git rev-parse HEAD)"
+          remote="$(git ls-remote origin refs/heads/main | cut -f1)"
+          if [[ "$baseline" != "$remote" ]]; then
+            echo "Main advanced since checkout; skip stale index snapshot."
+            exit 0
+          fi
           git add Cargo.lock generated/v1 crates/
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh provenance-aware console index snapshots"
-            git push origin HEAD:main
+            if ! git push origin HEAD:main; then
+              remote="$(git ls-remote origin refs/heads/main | cut -f1)"
+              if [[ "$baseline" != "$remote" ]]; then
+                echo "Main advanced while publishing; a newer workflow will regenerate."
+                exit 0
+              fi
+              echo "Unable to publish generated index snapshot" >&2
+              exit 1
+            fi
           fi
