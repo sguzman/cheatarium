@@ -30,7 +30,7 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- compositions 
 
 The query returns the original source provenance and both the reviewed or unresolved grouping status. Both `rom_match_verified` and `safe_to_combine_or_auto_apply` remain false. Other source `+` records are marked `unresolved` until reviewed, even if their individual code bytes decode successfully.
 
-The indexer and independent Python audit reject altered source blobs, missing ordinals, lost/reordered components, malformed evidence and mistakenly emitted simultaneous writes for revision alternatives. The generated registry and source bundle are checksummed in the published distribution.
+The indexer and independent Python audit reject altered source blobs, missing ordinals, lost/reordered components, malformed evidence and mistakenly emitted simultaneous writes for revision alternatives. The composition auditor also re-reads each referenced original `.cht`, recalculates the Git-blob SHA-1 from its bytes and checks the exact original ordinal/code string. The release manifest separately reports the number of original files and ordinals checked. The generated registry and source bundle are checksummed in the published distribution; none of these integrity checks demonstrate gameplay compatibility.
 
 ### Unresolved-source review priority
 
