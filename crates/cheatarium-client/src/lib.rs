@@ -32,6 +32,10 @@ pub struct CatalogEntry {
     #[serde(default)]
     pub game_index_artifact: Option<String>,
     #[serde(default)]
+    pub repeat_index_artifact: Option<String>,
+    #[serde(default)]
+    pub repeat_groups: Option<usize>,
+    #[serde(default)]
     pub identity_artifact: Option<String>,
     #[serde(default)]
     pub game_candidate_groups: Option<usize>,
@@ -374,6 +378,85 @@ impl GameIndex {
     }
 }
 
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct RepeatedCodeIndex {
+    pub schema_version: u32,
+    pub platform: String,
+    pub interpretation: String,
+    pub groups: Vec<RepeatedCode>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct RepeatedCode {
+    pub candidate_game_key: String,
+    pub region_hint: Option<String>,
+    pub revision_hint: Option<String>,
+    pub declared_format: Option<String>,
+    pub source_code: String,
+    pub relation: String,
+    pub confirmed_equivalent_cheat: bool,
+    pub verified_rom_compatibility: bool,
+    pub occurrences: Vec<RepeatOccurrence>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct RepeatOccurrence {
+    pub source_record_id: String,
+    pub ordinal: usize,
+    pub description: Option<String>,
+}
+
+/// Read additive advisory repetition index. This does not establish a
+/// verified game identity, equivalence of effects, or code compatibility.
+pub fn load_repeated_codes(root: impl AsRef<Path>, platform: &str) -> Result<RepeatedCodeIndex> {
+    let root = root.as_ref();
+    let catalog = load_catalog(root)?;
+    let entry = catalog.bundles.iter()
+        .find(|entry| entry.platform == platform)
+        .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
+    let expected = format!("repeats/{platform}.json.gz");
+    if platform.is_empty()
+        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || entry.repeat_index_artifact.as_deref() != Some(expected.as_str())
+    {
+        return Err("No safe repetition index available".into());
+    }
+    let mut gzip = GzDecoder::new(File::open(root.join(expected))?)
+        .take(MAX_UNCOMPRESSED_BUNDLE + 1);
+    let mut data = Vec::new();
+    gzip.read_to_end(&mut data)?;
+    if data.len() as u64 > MAX_UNCOMPRESSED_BUNDLE {
+        return Err("Cheatarium repetition index exceeds size limit".into());
+    }
+    let index: RepeatedCodeIndex = serde_json::from_slice(&data)?;
+    check_schema(index.schema_version)?;
+    if index.platform != platform || Some(index.groups.len()) != entry.repeat_groups {
+        return Err("Cheatarium repeated-code index catalog mismatch".into());
+    }
+    if index.groups.iter().any(|group| {
+        group.confirmed_equivalent_cheat
+            || group.verified_rom_compatibility
+            || group.relation != "identical-raw-code-text-within-advisory-filename-bucket"
+            || group.occurrences.iter().map(|c| &c.source_record_id).collect::<std::collections::BTreeSet<_>>().len() < 2
+    }) {
+        return Err("Unsafe or malformed code-repetition interpretation".into());
+    }
+    Ok(index)
+}
+
+impl RepeatedCodeIndex {
+    #[must_use]
+    pub fn by_candidate_game_key(&self, key: &str) -> Vec<&RepeatedCode> {
+        if key.is_empty() {
+            return Vec::new();
+        }
+        self.groups.iter()
+            .filter(|group| group.candidate_game_key == key)
+            .collect()
+    }
+}
+
 /// A non-executing cheat-description search result, with complete provenance.
 #[derive(Debug, Serialize)]
 pub struct EffectHit<'a> {
@@ -554,6 +637,33 @@ mod tests {
         let group = index.by_candidate_key("super-mario-world").unwrap();
         assert_eq!(group.source_record_ids.len(), 2);
         assert!(group.possible_title_collision);
+    }
+
+    #[test]
+    fn repetition_index_is_advisory_and_exactly_queryable() {
+        let index = RepeatedCodeIndex {
+            schema_version: 1,
+            platform: "snes".to_owned(),
+            interpretation: "source-text-only".to_owned(),
+            groups: vec![RepeatedCode {
+                candidate_game_key: "super-mario-world".to_owned(),
+                region_hint: Some("USA".to_owned()),
+                revision_hint: None,
+                declared_format: None,
+                source_code: "DDB4-6F07".to_owned(),
+                relation: "identical-raw-code-text-within-advisory-filename-bucket".to_owned(),
+                confirmed_equivalent_cheat: false,
+                verified_rom_compatibility: false,
+                occurrences: vec![
+                    RepeatOccurrence { source_record_id: "a".to_owned(), ordinal: 0, description: None },
+                    RepeatOccurrence { source_record_id: "b".to_owned(), ordinal: 1, description: None },
+                ],
+            }],
+        };
+        assert_eq!(index.by_candidate_game_key("super-mario-world").len(), 1);
+        assert!(index.by_candidate_game_key("other").is_empty());
+        assert!(index.by_candidate_game_key("").is_empty());
+        assert!(!index.groups[0].confirmed_equivalent_cheat);
     }
 
     #[test]

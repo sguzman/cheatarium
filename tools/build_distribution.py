@@ -44,6 +44,7 @@ def build_manifest(root):
     source_files = 0
     game_groups = 0
     decoded_snes_entries = 0
+    repeated_code_groups = 0
     for rel in ["catalog.json", "reports/snes-codec-coverage.json"]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
@@ -58,10 +59,13 @@ def build_manifest(root):
             raise ValueError(f"Invalid platform id {platform!r}")
         source_rel = entry["artifact"]
         game_rel = entry["game_index_artifact"]
-        if source_rel != f"{platform}.json.gz" or game_rel != f"games/{platform}.json.gz":
+        repeat_rel = entry["repeat_index_artifact"]
+        if (source_rel != f"{platform}.json.gz"
+                or game_rel != f"games/{platform}.json.gz"
+                or repeat_rel != f"repeats/{platform}.json.gz"):
             raise ValueError(f"Unexpected artifact path for {platform}")
         identity_rel = entry.get("identity_artifact")
-        artifacts = [source_rel, game_rel]
+        artifacts = [source_rel, game_rel, repeat_rel]
         if identity_rel is not None:
             if identity_rel != f"identities/{platform}.json":
                 raise ValueError(f"Unexpected ROM identity artifact path for {platform}")
@@ -96,6 +100,12 @@ def build_manifest(root):
 
         bundle = checked_json(safe_path(root, source_rel))
         games = checked_json(safe_path(root, game_rel))
+        repeats = checked_json(safe_path(root, repeat_rel))
+        if (repeats.get("schema_version") != 1
+                or repeats.get("platform") != platform
+                or not isinstance(repeats.get("groups"), list)
+                or len(repeats["groups"]) != entry["repeat_groups"]):
+            raise ValueError(f"Malformed raw-code repetition index: {platform}")
         if bundle["schema_version"] != 1 or bundle["platform"] != platform:
             raise ValueError(f"Bad source bundle header: {platform}")
         if games["schema_version"] != 1 or games["platform"] != platform:
@@ -106,8 +116,31 @@ def build_manifest(root):
             raise ValueError(f"Incorrect record or group count: {platform}")
 
         record_ids = [r["id"] for r in records]
+        by_record_id = {r["id"]: r for r in records}
         if len(record_ids) != len(set(record_ids)):
             raise ValueError(f"Duplicate source record IDs: {platform}")
+        repeated_code_groups += len(repeats["groups"])
+        for group in repeats["groups"]:
+            if (group.get("relation") != "identical-raw-code-text-within-advisory-filename-bucket"
+                    or group.get("confirmed_equivalent_cheat") is not False
+                    or group.get("verified_rom_compatibility") is not False):
+                raise ValueError(f"Repetition result incorrectly claims verified cheat/ROM identity: {platform}")
+            refs = group.get("occurrences", [])
+            if not isinstance(refs, list) or len({r["source_record_id"] for r in refs}) < 2:
+                raise ValueError(f"Repetition group lacks distinct source records: {platform}")
+            for ref in refs:
+                record = by_record_id.get(ref["source_record_id"])
+                if record is None:
+                    raise ValueError(f"Missing original repetition source record: {platform}")
+                if (record["candidate_game_key"] != group["candidate_game_key"]
+                        or record.get("region_hint") != group.get("region_hint")
+                        or record.get("format_hint") != group.get("declared_format")):
+                    raise ValueError(f"Repetition crossed candidate game, region or declared format: {platform}")
+                matching = [c for c in record["codes"] if c["ordinal"] == ref["ordinal"]]
+                if (len(matching) != 1 or matching[0]["role"] != "code"
+                        or matching[0].get("code") != group["source_code"]
+                        or matching[0].get("description") != ref.get("description")):
+                    raise ValueError(f"Repetition reference differs from original source code: {platform}")
         all_links = []
         group_keys = set()
         game_code_fields = 0
@@ -181,6 +214,7 @@ def build_manifest(root):
         "console_bundles": len(entries),
         "source_files": source_files,
         "game_candidate_groups": game_groups,
+        "repeated_raw_code_groups": repeated_code_groups,
         "decoded_snes_code_fields": decoded_snes_entries,
         "files": sorted(manifest_files, key=lambda item: item["path"]),
     }

@@ -1,5 +1,7 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
-use cheatarium_client::{load_game_candidates, load_platform, verify_platform_distribution};
+use cheatarium_client::{
+    load_game_candidates, load_platform, load_repeated_codes, verify_platform_distribution,
+};
 use std::env;
 use std::error::Error;
 use std::path::PathBuf;
@@ -9,6 +11,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut platform = None;
     let mut title = None;
     let mut effect = None;
+    let mut game_key = None;
     let mut declared_format = None;
     let mut source_id = None;
     let mut json = false;
@@ -19,8 +22,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("games") => "games",
         Some("verify") => "verify",
         Some("effects") => "effects",
+        Some("repeats") => "repeats",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -30,6 +34,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--platform" => platform = Some(args.next().ok_or("--platform needs a value")?),
             "--title" => title = Some(args.next().ok_or("--title needs a value")?),
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
+            "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--declared-format" => {
                 declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
             }
@@ -45,6 +50,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
+    if mode != "repeats" && game_key.is_some() {
+        return Err("--game-key applies only to repeats".into());
+    }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
         return Err("--declared-format and --source-id apply only to effects".into());
     }
@@ -73,6 +81,36 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         } else {
             println!("OK: {platform} artifacts match local distribution.json SHA-256 checksums");
             println!("The manifest itself is not authenticated, and cheats remain unverified.");
+        }
+        return Ok(());
+    }
+    if mode == "repeats" {
+        let game_key = game_key.ok_or("Please provide --game-key for repeats")?;
+        if game_key.trim().is_empty() {
+            return Err("--game-key cannot be empty".into());
+        }
+        let index = load_repeated_codes(root, &platform)?;
+        let hits = index.by_candidate_game_key(&game_key);
+        let total = hits.len();
+        if json {
+            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+                "schema": "cheatarium.raw_repeats.v1",
+                "platform": platform,
+                "candidate_game_key": game_key,
+                "candidate_only": true,
+                "cheats_activated": false,
+                "equivalent_effect_verified": false,
+                "rom_compatibility_verified": false,
+                "total_groups": total,
+                "groups": hits.into_iter().take(limit).collect::<Vec<_>>(),
+            }))?);
+        } else {
+            println!("{total} exact raw-code repetition groups for {game_key:?} on {platform}");
+            println!("These repeat TEXT only: title, effects and ROM builds are unverified.");
+            for hit in hits.into_iter().take(limit) {
+                println!("- {} ({} source occurrences, region {:?}, format {:?}, revision {:?})",
+                    hit.source_code, hit.occurrences.len(), hit.region_hint, hit.declared_format, hit.revision_hint);
+            }
         }
         return Ok(());
     }
