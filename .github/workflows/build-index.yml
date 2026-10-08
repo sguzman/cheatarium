@@ -107,6 +107,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- verify \
             --db generated/v1 --platform snes --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["artifact_checksums_match"] and not q["manifest_authenticated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- effects \
+            --db generated/v1 --platform snes --effect "Infinite" --limit 2 --json \
+            | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["schema"] == "cheatarium.effects.v1" and q["total_matches"] > 0 and not q["cheats_activated"]; assert all(hit["provenance"]["git_blob_sha"] for hit in q["hits"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- games \
             --db generated/v1 --platform snes --title "Donkey Kong Country" --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_candidate_groups"] > 0 and q["candidate_only"]'

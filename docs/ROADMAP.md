@@ -37,7 +37,8 @@
 - [x] Publish SHA-256 artifact manifests with Rust client integrity checks.
 - [ ] Establish reliable cartridge/build identity and canonical cross-source game records.
 - [ ] Dedupe equivalent codes while retaining original provenance.
-- [ ] Search by game, platform, cheat effect, author, source, and code format.
+- [x] Add case-insensitive, provenance-preserving cheat-effect text search in the Rust client and CLI.
+- [ ] Expand discovery filters to author, source, code format and richer effect classification.
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.
 - [ ] Add a pleasant desktop/game cheat explorer.

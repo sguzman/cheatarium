@@ -364,6 +364,18 @@ impl GameIndex {
     }
 }
 
+/// A non-executing cheat-description search result, with complete provenance.
+#[derive(Debug, Serialize)]
+pub struct EffectHit<'a> {
+    pub source_record_id: &'a str,
+    pub title_hint: &'a str,
+    pub raw_filename: &'a str,
+    pub region_hint: Option<&'a str>,
+    pub format_hint: Option<&'a str>,
+    pub cheat: &'a Code,
+    pub provenance: &'a Provenance,
+}
+
 impl Bundle {
     /// Case-insensitive, *candidate-only* title lookup; no ROM identity check.
     #[must_use]
@@ -376,6 +388,40 @@ impl Bundle {
             .iter()
             .filter(|r| r.title_hint.to_lowercase().contains(&needle))
             .collect()
+    }
+
+    /// Search indexed gameplay-effect descriptions across one console.
+    /// No title identity is established and no cheat is activated. Non-executable
+    /// section headings are excluded from results.
+    #[must_use]
+    pub fn search_effect(&self, needle: &str) -> Vec<EffectHit<'_>> {
+        let needle = needle.trim().to_lowercase();
+        if needle.is_empty() {
+            return Vec::new();
+        }
+        let mut hits = Vec::new();
+        for record in &self.records {
+            for cheat in &record.codes {
+                if !(cheat.is_code() || cheat.is_memory_entry()) {
+                    continue;
+                }
+                if !cheat.description.as_deref().is_some_and(|description| {
+                    description.to_lowercase().contains(&needle)
+                }) {
+                    continue;
+                }
+                hits.push(EffectHit {
+                    source_record_id: &record.id,
+                    title_hint: &record.title_hint,
+                    raw_filename: &record.raw_filename,
+                    region_hint: record.region_hint.as_deref(),
+                    format_hint: record.format_hint.as_deref(),
+                    cheat,
+                    provenance: &record.provenance,
+                });
+            }
+        }
+        hits
     }
 
     /// Exact candidate-title key lookup; still not a cartridge identity test.
@@ -411,6 +457,20 @@ mod tests {
         assert_eq!(bundle.records[0].codes[0].code.as_deref(), Some("ABCD"));
         assert!(bundle.records[0].codes[0].is_code());
         assert!(!bundle.records[0].codes[1].is_code());
+    }
+
+    #[test]
+    fn effect_search_preserves_source_and_excludes_nonexecuting_headings() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let hits = bundle.search_effect("INFINITE");
+        assert_eq!(hits.len(), 1);
+        assert_eq!(hits[0].source_record_id, "x");
+        assert_eq!(hits[0].title_hint, "Super Mario World");
+        assert_eq!(hits[0].cheat.ordinal, 0);
+        assert_eq!(hits[0].cheat.code.as_deref(), Some("ABCD"));
+        assert_eq!(hits[0].provenance.upstream_path, "cht/sample.cht");
+        assert!(bundle.search_effect("A heading").is_empty());
+        assert!(bundle.search_effect("").is_empty());
     }
 
     #[test]
