@@ -6,6 +6,8 @@
   "effect_or_compatibility_verified": false,
   "rank_rule": "descending-unresolved-source-occurrences-then-ascending-candidate-key",
   "total_unresolved_source_occurrences": 14565,
+  "total_historical_publication_witnesses": 9,
+  "total_without_publication_witness": 14556,
   "candidate_groups_with_unresolved_joins": 928,
   "published_top_limit": 100,
   "top_groups": [
@@ -16,6 +18,8 @@
       ],
       "unresolved_source_occurrences": 490,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 3,
+      "occurrences_without_publication_witness": 487,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -52,6 +56,8 @@
       ],
       "unresolved_source_occurrences": 390,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 3,
+      "occurrences_without_publication_witness": 387,
       "region_hints": [
         "USA"
       ],
@@ -87,6 +93,8 @@
       ],
       "unresolved_source_occurrences": 375,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 3,
+      "occurrences_without_publication_witness": 372,
       "region_hints": [
         "USA",
         "World"
@@ -123,6 +131,8 @@
       ],
       "unresolved_source_occurrences": 340,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 340,
       "region_hints": [
         "Japan"
       ],
@@ -157,6 +167,8 @@
       ],
       "unresolved_source_occurrences": 254,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 254,
       "region_hints": [
         "USA"
       ],
@@ -191,6 +203,8 @@
       ],
       "unresolved_source_occurrences": 253,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 253,
       "region_hints": [
         "USA"
       ],
@@ -226,6 +240,8 @@
       ],
       "unresolved_source_occurrences": 247,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 247,
       "region_hints": [
         "Japan"
       ],
@@ -260,6 +276,8 @@
       ],
       "unresolved_source_occurrences": 244,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 244,
       "region_hints": [
         "USA"
       ],
@@ -294,6 +312,8 @@
       ],
       "unresolved_source_occurrences": 231,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 231,
       "region_hints": [
         "USA"
       ],
@@ -329,6 +349,8 @@
       ],
       "unresolved_source_occurrences": 225,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 225,
       "region_hints": [
         "Japan"
       ],
@@ -363,6 +385,8 @@
       ],
       "unresolved_source_occurrences": 178,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 178,
       "region_hints": [
         "Japan"
       ],
@@ -398,6 +422,8 @@
       ],
       "unresolved_source_occurrences": 160,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 160,
       "region_hints": [
         "USA"
       ],
@@ -430,6 +456,8 @@
       ],
       "unresolved_source_occurrences": 155,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 155,
       "region_hints": [
         "USA"
       ],
@@ -465,6 +493,8 @@
       ],
       "unresolved_source_occurrences": 152,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 152,
       "region_hints": [
         "USA"
       ],
@@ -499,6 +529,8 @@
       ],
       "unresolved_source_occurrences": 143,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 143,
       "region_hints": [
         "USA",
         "USA, Japan"
@@ -534,6 +566,8 @@
       ],
       "unresolved_source_occurrences": 141,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 141,
       "region_hints": [
         "Japan"
       ],
@@ -569,6 +603,8 @@
       ],
       "unresolved_source_occurrences": 138,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 138,
       "region_hints": [
         "USA"
       ],
@@ -603,6 +639,8 @@
       ],
       "unresolved_source_occurrences": 137,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 137,
       "region_hints": [
         "USA"
       ],
@@ -638,6 +676,8 @@
       ],
       "unresolved_source_occurrences": 125,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 125,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -673,6 +713,8 @@
       ],
       "unresolved_source_occurrences": 117,
       "distinct_source_records": 6,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 117,
       "region_hints": [
         "Europe",
         "Japan",
@@ -711,6 +753,8 @@
       ],
       "unresolved_source_occurrences": 115,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 115,
       "region_hints": [
         "USA"
       ],
@@ -745,6 +789,8 @@
       ],
       "unresolved_source_occurrences": 111,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 111,
       "region_hints": [
         "Japan"
       ],
@@ -777,6 +823,8 @@
       ],
       "unresolved_source_occurrences": 108,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 108,
       "region_hints": [
         "USA"
       ],
@@ -812,6 +860,8 @@
       ],
       "unresolved_source_occurrences": 105,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 105,
       "region_hints": [
         "Japan"
       ],
@@ -846,6 +896,8 @@
       ],
       "unresolved_source_occurrences": 100,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 100,
       "region_hints": [
         "Japan"
       ],
@@ -881,6 +933,8 @@
       ],
       "unresolved_source_occurrences": 99,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 99,
       "region_hints": [
         "USA"
       ],
@@ -916,6 +970,8 @@
       ],
       "unresolved_source_occurrences": 98,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 98,
       "region_hints": [
         "USA"
       ],
@@ -951,6 +1007,8 @@
       ],
       "unresolved_source_occurrences": 95,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 95,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -986,6 +1044,8 @@
       ],
       "unresolved_source_occurrences": 94,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 94,
       "region_hints": [
         "Japan"
       ],
@@ -1020,6 +1080,8 @@
       ],
       "unresolved_source_occurrences": 94,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 94,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -1055,6 +1117,8 @@
       ],
       "unresolved_source_occurrences": 92,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 92,
       "region_hints": [
         "Japan"
       ],
@@ -1089,6 +1153,8 @@
       ],
       "unresolved_source_occurrences": 90,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 90,
       "region_hints": [
         "Japan"
       ],
@@ -1121,6 +1187,8 @@
       ],
       "unresolved_source_occurrences": 89,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 89,
       "region_hints": [
         "Japan"
       ],
@@ -1153,6 +1221,8 @@
       ],
       "unresolved_source_occurrences": 85,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 85,
       "region_hints": [
         "USA"
       ],
@@ -1188,6 +1258,8 @@
       ],
       "unresolved_source_occurrences": 83,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 83,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -1224,6 +1296,8 @@
       ],
       "unresolved_source_occurrences": 81,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 81,
       "region_hints": [
         "Europe"
       ],
@@ -1256,6 +1330,8 @@
       ],
       "unresolved_source_occurrences": 81,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 81,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -1292,6 +1368,8 @@
       ],
       "unresolved_source_occurrences": 80,
       "distinct_source_records": 7,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 80,
       "region_hints": [
         "Europe",
         "USA"
@@ -1327,6 +1405,8 @@
       ],
       "unresolved_source_occurrences": 79,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 79,
       "region_hints": [
         "USA",
         "World"
@@ -1363,6 +1443,8 @@
       ],
       "unresolved_source_occurrences": 77,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 77,
       "region_hints": [
         "Japan"
       ],
@@ -1395,6 +1477,8 @@
       ],
       "unresolved_source_occurrences": 76,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 76,
       "region_hints": [
         "USA"
       ],
@@ -1429,6 +1513,8 @@
       ],
       "unresolved_source_occurrences": 75,
       "distinct_source_records": 6,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 75,
       "region_hints": [
         "Europe",
         "Japan",
@@ -1466,6 +1552,8 @@
       ],
       "unresolved_source_occurrences": 74,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 74,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -1501,6 +1589,8 @@
       ],
       "unresolved_source_occurrences": 74,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 74,
       "region_hints": [
         "USA",
         "USA, Europe",
@@ -1538,6 +1628,8 @@
       ],
       "unresolved_source_occurrences": 74,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 74,
       "region_hints": [
         "USA"
       ],
@@ -1570,6 +1662,8 @@
       ],
       "unresolved_source_occurrences": 74,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 74,
       "region_hints": [
         "Europe, Japan",
         "Japan, USA"
@@ -1605,6 +1699,8 @@
       ],
       "unresolved_source_occurrences": 72,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 72,
       "region_hints": [
         "Europe",
         "USA"
@@ -1638,6 +1734,8 @@
       ],
       "unresolved_source_occurrences": 71,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 71,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -1673,6 +1771,8 @@
       ],
       "unresolved_source_occurrences": 71,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 71,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -1708,6 +1808,8 @@
       ],
       "unresolved_source_occurrences": 71,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 71,
       "region_hints": [
         "Japan"
       ],
@@ -1740,6 +1842,8 @@
       ],
       "unresolved_source_occurrences": 69,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 69,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -1775,6 +1879,8 @@
       ],
       "unresolved_source_occurrences": 67,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 67,
       "region_hints": [
         "Japan"
       ],
@@ -1810,6 +1916,8 @@
       ],
       "unresolved_source_occurrences": 67,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 67,
       "region_hints": [
         "Japan"
       ],
@@ -1842,6 +1950,8 @@
       ],
       "unresolved_source_occurrences": 66,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 66,
       "region_hints": [
         "Japan"
       ],
@@ -1876,6 +1986,8 @@
       ],
       "unresolved_source_occurrences": 66,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 66,
       "region_hints": [
         "USA",
         "World"
@@ -1912,6 +2024,8 @@
       ],
       "unresolved_source_occurrences": 63,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 63,
       "region_hints": [
         "Japan"
       ],
@@ -1946,6 +2060,8 @@
       ],
       "unresolved_source_occurrences": 62,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 62,
       "region_hints": [
         "Japan"
       ],
@@ -1980,6 +2096,8 @@
       ],
       "unresolved_source_occurrences": 60,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 60,
       "region_hints": [
         "USA"
       ],
@@ -2015,6 +2133,8 @@
       ],
       "unresolved_source_occurrences": 59,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 59,
       "region_hints": [
         "USA"
       ],
@@ -2050,6 +2170,8 @@
       ],
       "unresolved_source_occurrences": 58,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 58,
       "region_hints": [
         "Japan"
       ],
@@ -2084,6 +2206,8 @@
       ],
       "unresolved_source_occurrences": 58,
       "distinct_source_records": 5,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 58,
       "region_hints": [
         "USA",
         "World"
@@ -2120,6 +2244,8 @@
       ],
       "unresolved_source_occurrences": 58,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 58,
       "region_hints": [
         "USA"
       ],
@@ -2155,6 +2281,8 @@
       ],
       "unresolved_source_occurrences": 56,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 56,
       "region_hints": [
         "USA",
         "USA, Japan"
@@ -2190,6 +2318,8 @@
       ],
       "unresolved_source_occurrences": 56,
       "distinct_source_records": 4,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 56,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2226,6 +2356,8 @@
       ],
       "unresolved_source_occurrences": 55,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 55,
       "region_hints": [
         "Europe",
         "USA",
@@ -2262,6 +2394,8 @@
       ],
       "unresolved_source_occurrences": 54,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 54,
       "region_hints": [
         "Japan"
       ],
@@ -2294,6 +2428,8 @@
       ],
       "unresolved_source_occurrences": 54,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 54,
       "region_hints": [
         "USA"
       ],
@@ -2328,6 +2464,8 @@
       ],
       "unresolved_source_occurrences": 52,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 52,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2364,6 +2502,8 @@
       ],
       "unresolved_source_occurrences": 52,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 52,
       "region_hints": [
         "USA"
       ],
@@ -2399,6 +2539,8 @@
       ],
       "unresolved_source_occurrences": 52,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 52,
       "region_hints": [
         "USA",
         "World"
@@ -2435,6 +2577,8 @@
       ],
       "unresolved_source_occurrences": 52,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 52,
       "region_hints": [
         "USA",
         "USA, Japan"
@@ -2470,6 +2614,8 @@
       ],
       "unresolved_source_occurrences": 52,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 52,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2506,6 +2652,8 @@
       ],
       "unresolved_source_occurrences": 51,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 51,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2542,6 +2690,8 @@
       ],
       "unresolved_source_occurrences": 51,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 51,
       "region_hints": [
         "USA"
       ],
@@ -2577,6 +2727,8 @@
       ],
       "unresolved_source_occurrences": 50,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 50,
       "region_hints": [],
       "declared_device_hints": [],
       "sample_originals": [
@@ -2607,6 +2759,8 @@
       ],
       "unresolved_source_occurrences": 49,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 49,
       "region_hints": [
         "Japan"
       ],
@@ -2639,6 +2793,8 @@
       ],
       "unresolved_source_occurrences": 49,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 49,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2674,6 +2830,8 @@
       ],
       "unresolved_source_occurrences": 49,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 49,
       "region_hints": [
         "USA"
       ],
@@ -2708,6 +2866,8 @@
       ],
       "unresolved_source_occurrences": 48,
       "distinct_source_records": 1,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 48,
       "region_hints": [
         "USA"
       ],
@@ -2740,6 +2900,8 @@
       ],
       "unresolved_source_occurrences": 47,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 47,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2775,6 +2937,8 @@
       ],
       "unresolved_source_occurrences": 46,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 46,
       "region_hints": [
         "USA"
       ],
@@ -2810,6 +2974,8 @@
       ],
       "unresolved_source_occurrences": 46,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 46,
       "region_hints": [
         "USA",
         "USA, Europe",
@@ -2847,6 +3013,8 @@
       ],
       "unresolved_source_occurrences": 45,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 45,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2883,6 +3051,8 @@
       ],
       "unresolved_source_occurrences": 45,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 45,
       "region_hints": [
         "USA"
       ],
@@ -2917,6 +3087,8 @@
       ],
       "unresolved_source_occurrences": 45,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 45,
       "region_hints": [
         "Japan"
       ],
@@ -2952,6 +3124,8 @@
       ],
       "unresolved_source_occurrences": 45,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 45,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -2988,6 +3162,8 @@
       ],
       "unresolved_source_occurrences": 43,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 43,
       "region_hints": [
         "USA"
       ],
@@ -3023,6 +3199,8 @@
       ],
       "unresolved_source_occurrences": 43,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 43,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -3058,6 +3236,8 @@
       ],
       "unresolved_source_occurrences": 43,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 43,
       "region_hints": [
         "USA",
         "World"
@@ -3094,6 +3274,8 @@
       ],
       "unresolved_source_occurrences": 42,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 42,
       "region_hints": [
         "USA",
         "World"
@@ -3130,6 +3312,8 @@
       ],
       "unresolved_source_occurrences": 41,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 41,
       "region_hints": [
         "USA"
       ],
@@ -3165,6 +3349,8 @@
       ],
       "unresolved_source_occurrences": 41,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 41,
       "region_hints": [
         "USA"
       ],
@@ -3199,6 +3385,8 @@
       ],
       "unresolved_source_occurrences": 40,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 40,
       "region_hints": [
         "USA"
       ],
@@ -3234,6 +3422,8 @@
       ],
       "unresolved_source_occurrences": 40,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 40,
       "region_hints": [
         "USA"
       ],
@@ -3269,6 +3459,8 @@
       ],
       "unresolved_source_occurrences": 40,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 40,
       "region_hints": [
         "Japan"
       ],
@@ -3304,6 +3496,8 @@
       ],
       "unresolved_source_occurrences": 40,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 40,
       "region_hints": [
         "Europe"
       ],
@@ -3339,6 +3533,8 @@
       ],
       "unresolved_source_occurrences": 39,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 39,
       "region_hints": [
         "USA",
         "USA, Europe"
@@ -3375,6 +3571,8 @@
       ],
       "unresolved_source_occurrences": 38,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 38,
       "region_hints": [
         "USA",
         "USA, Japan"
@@ -3410,6 +3608,8 @@
       ],
       "unresolved_source_occurrences": 37,
       "distinct_source_records": 2,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 37,
       "region_hints": [
         "USA",
         "World"
@@ -3445,6 +3645,8 @@
       ],
       "unresolved_source_occurrences": 35,
       "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 35,
       "region_hints": [
         "USA"
       ],
