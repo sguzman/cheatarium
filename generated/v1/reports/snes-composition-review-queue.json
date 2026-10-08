@@ -1,0 +1,3477 @@
+{
+  "schema_version": 1,
+  "platform": "snes",
+  "scope": "unresolved-source-code-plus-semantics",
+  "identity_confidence": "filename-derived-candidates-only",
+  "effect_or_compatibility_verified": false,
+  "rank_rule": "descending-unresolved-source-occurrences-then-ascending-candidate-key",
+  "total_unresolved_source_occurrences": 14565,
+  "candidate_groups_with_unresolved_joins": 928,
+  "published_top_limit": 100,
+  "top_groups": [
+    {
+      "candidate_game_key": "push-over",
+      "title_hints": [
+        "Push-Over"
+      ],
+      "unresolved_source_occurrences": 490,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht",
+          "ordinal": 3,
+          "source_code": "CB66-AD6F+6266-AF0F+DF66-ADAF",
+          "source_git_blob_sha": "6b3cafffdc42198af285f999f10e3070e41bc4d0"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht",
+          "ordinal": 4,
+          "source_code": "CB66-AD6F+6266-AF0F+D466-ADAF",
+          "source_git_blob_sha": "6b3cafffdc42198af285f999f10e3070e41bc4d0"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht",
+          "ordinal": 5,
+          "source_code": "CB66-AD6F+6266-AF0F+D766-ADAF",
+          "source_git_blob_sha": "6b3cafffdc42198af285f999f10e3070e41bc4d0"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "ka-blooey",
+      "title_hints": [
+        "Ka-blooey"
+      ],
+      "unresolved_source_occurrences": 390,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ka-blooey (USA) (Action Replay).cht",
+          "ordinal": 11,
+          "source_code": "7E032040+7E032106",
+          "source_git_blob_sha": "00b46daa07af4486166ed33a21e7a544cca1231e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ka-blooey (USA) (Action Replay).cht",
+          "ordinal": 12,
+          "source_code": "00DD7801+00DD7C9C",
+          "source_git_blob_sha": "00b46daa07af4486166ed33a21e7a544cca1231e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ka-blooey (USA) (Action Replay).cht",
+          "ordinal": 13,
+          "source_code": "00DD7802+00DD7C9C",
+          "source_git_blob_sha": "00b46daa07af4486166ed33a21e7a544cca1231e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "lemmings",
+      "title_hints": [
+        "Lemmings"
+      ],
+      "unresolved_source_occurrences": 375,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lemmings (USA).cht",
+          "ordinal": 27,
+          "source_code": "31B6-6FAF+18B6-64DF",
+          "source_git_blob_sha": "10f3e89c7ea6898c566e676c8cebb1d9a5eea486"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lemmings (USA).cht",
+          "ordinal": 28,
+          "source_code": "CBCC-DD05+DFCC-DD65+C9C8-0FD5",
+          "source_git_blob_sha": "10f3e89c7ea6898c566e676c8cebb1d9a5eea486"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lemmings (USA).cht",
+          "ordinal": 29,
+          "source_code": "CBCC-DD05+D4CC-DD65+C9C8-0FD5",
+          "source_git_blob_sha": "10f3e89c7ea6898c566e676c8cebb1d9a5eea486"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "bahamut-lagoon",
+      "title_hints": [
+        "Bahamut Lagoon"
+      ],
+      "unresolved_source_occurrences": 340,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Bahamut Lagoon (Japan) (Game Genie).cht",
+          "ordinal": 0,
+          "source_code": "DB8B-DFD0+BD8B-DF00+DD8B-DF60",
+          "source_git_blob_sha": "313888a649f6da0cfa356b06034ddf6070317430"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Bahamut Lagoon (Japan) (Game Genie).cht",
+          "ordinal": 1,
+          "source_code": "EE6A-5650+EE6A-5680",
+          "source_git_blob_sha": "313888a649f6da0cfa356b06034ddf6070317430"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Bahamut Lagoon (Japan).cht",
+          "ordinal": 338,
+          "source_code": "7E21050F+7E210627",
+          "source_git_blob_sha": "645b44ed73be83271ec7b879c9f2577e86f311e6"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "ogre-battle-the-march-of-the-black-queen",
+      "title_hints": [
+        "Ogre Battle - The March of the Black Queen"
+      ],
+      "unresolved_source_occurrences": 254,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ogre Battle - The March of the Black Queen (USA) (Game Genie).cht",
+          "ordinal": 0,
+          "source_code": "3229-DDDD+3229-DDDD+A23D-D4FA+3229-A23D",
+          "source_git_blob_sha": "e3b8591bc20d747f185217841feeffd941caa76b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ogre Battle - The March of the Black Queen (USA) (Game Genie).cht",
+          "ordinal": 1,
+          "source_code": "10E3-9376+10E3-9356+10E3-9386+10E3-93E6+10E3-9E76",
+          "source_git_blob_sha": "e3b8591bc20d747f185217841feeffd941caa76b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ogre Battle - The March of the Black Queen (USA) (Game Genie).cht",
+          "ordinal": 2,
+          "source_code": "10E3-9E56+10E3-9E86+10E3-9EE6+10EE-9A76+10EE-9A56",
+          "source_git_blob_sha": "e3b8591bc20d747f185217841feeffd941caa76b"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "faceball-2000",
+      "title_hints": [
+        "Faceball 2000"
+      ],
+      "unresolved_source_occurrences": 253,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Faceball 2000 (USA) (Action Replay).cht",
+          "ordinal": 20,
+          "source_code": "029279A9+02927A01",
+          "source_git_blob_sha": "e326c4ff3ce24acfe3eee6de537487233aa5e23c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Faceball 2000 (USA) (Action Replay).cht",
+          "ordinal": 21,
+          "source_code": "029279A9+02927A05",
+          "source_git_blob_sha": "e326c4ff3ce24acfe3eee6de537487233aa5e23c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Faceball 2000 (USA) (Action Replay).cht",
+          "ordinal": 22,
+          "source_code": "029279A9+02927A14",
+          "source_git_blob_sha": "e326c4ff3ce24acfe3eee6de537487233aa5e23c"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "shin-megami-tensei",
+      "title_hints": [
+        "Shin Megami Tensei"
+      ],
+      "unresolved_source_occurrences": 247,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shin Megami Tensei (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E1030??+7E1031??",
+          "source_git_blob_sha": "18413f3e5b6abeccdc5cf7380560d8d15a46cd35"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shin Megami Tensei (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E102E??+7E102F??",
+          "source_git_blob_sha": "18413f3e5b6abeccdc5cf7380560d8d15a46cd35"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shin Megami Tensei (Japan) (Action Replay).cht",
+          "ordinal": 8,
+          "source_code": "7E045100+7E0ED5FF+7E0ED746+7E0ED887+7E0ED91A",
+          "source_git_blob_sha": "18413f3e5b6abeccdc5cf7380560d8d15a46cd35"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "final-fantasy-iii",
+      "title_hints": [
+        "Final Fantasy III"
+      ],
+      "unresolved_source_occurrences": 244,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy III (USA) (Action Replay).cht",
+          "ordinal": 7,
+          "source_code": "7E2F35FF+7E2F36E7+7E2F3776",
+          "source_git_blob_sha": "7d7ef6ce661f308a9981cfbed101b388e85c3316"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy III (USA) (Action Replay).cht",
+          "ordinal": 9,
+          "source_code": "7E1A69FF+7E1A6AFF+7E1A6BFF+7E1A6CFF",
+          "source_git_blob_sha": "7d7ef6ce661f308a9981cfbed101b388e85c3316"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy III (USA) (Action Replay).cht",
+          "ordinal": 10,
+          "source_code": "7E3BFC00+7E3BFD00",
+          "source_git_blob_sha": "7d7ef6ce661f308a9981cfbed101b388e85c3316"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "lufia-ii-rise-of-the-sinistrals",
+      "title_hints": [
+        "Lufia II - Rise of the Sinistrals"
+      ],
+      "unresolved_source_occurrences": 231,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia II - Rise of the Sinistrals (USA) (Action Replay).cht",
+          "ordinal": 34,
+          "source_code": "00F04000+00F04000+07C05862",
+          "source_git_blob_sha": "c139af2609c6c6f0137d6868e7f1c85688e18d9e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia II - Rise of the Sinistrals (USA) (Action Replay).cht",
+          "ordinal": 35,
+          "source_code": "00F0908F+00F0908F+07C06863",
+          "source_git_blob_sha": "c139af2609c6c6f0137d6868e7f1c85688e18d9e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia II - Rise of the Sinistrals (USA) (Action Replay).cht",
+          "ordinal": 37,
+          "source_code": "7E1608FF+7E1609FF",
+          "source_git_blob_sha": "c139af2609c6c6f0137d6868e7f1c85688e18d9e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "final-fantasy-vi",
+      "title_hints": [
+        "Final Fantasy VI"
+      ],
+      "unresolved_source_occurrences": 225,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy VI (Japan) (Action Replay).cht",
+          "ordinal": 32,
+          "source_code": "7E0200XX+7E0201YY",
+          "source_git_blob_sha": "58dccf66b8e536fbd6a2af117bd2bbf8b5eebb6c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy VI (Japan) (Action Replay).cht",
+          "ordinal": 35,
+          "source_code": "001866??+001867??+001868??+001869??+00186A??+00186B??",
+          "source_git_blob_sha": "58dccf66b8e536fbd6a2af117bd2bbf8b5eebb6c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy VI (Japan) (Action Replay).cht",
+          "ordinal": 42,
+          "source_code": "7E1D29FF+7E1D2AFF",
+          "source_git_blob_sha": "58dccf66b8e536fbd6a2af117bd2bbf8b5eebb6c"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "star-ocean",
+      "title_hints": [
+        "Star Ocean"
+      ],
+      "unresolved_source_occurrences": 178,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Star Ocean (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E02737F+7E027496+7E027598",
+          "source_git_blob_sha": "1017cff4e417f8dcc7faea8abe6389a73dda216f"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Star Ocean (Japan) (Game Genie).cht",
+          "ordinal": 1,
+          "source_code": "CBEA-57BC+6CE2-5FFC+3CE2-5F9C+DEEA-572C",
+          "source_git_blob_sha": "8fd41602eacb17a508da1b2544cf11e47263a9d3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Star Ocean (Japan) (Game Genie).cht",
+          "ordinal": 2,
+          "source_code": "CBEA-57BC+6CE2-5FFC+3CE2-5F9C+DFEC-549C+6EEA-572C",
+          "source_git_blob_sha": "8fd41602eacb17a508da1b2544cf11e47263a9d3"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "liberty-or-death",
+      "title_hints": [
+        "Liberty or Death"
+      ],
+      "unresolved_source_occurrences": 160,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Liberty or Death (USA).cht",
+          "ordinal": 0,
+          "source_code": "7E40B7FF+7E40B8FF",
+          "source_git_blob_sha": "b293aed1c2d3bd28e9e6aad356e9a1ecef447429"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Liberty or Death (USA).cht",
+          "ordinal": 1,
+          "source_code": "7E20D30F+7E20D427",
+          "source_git_blob_sha": "b293aed1c2d3bd28e9e6aad356e9a1ecef447429"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Liberty or Death (USA).cht",
+          "ordinal": 2,
+          "source_code": "7E20D50F+7E20D627",
+          "source_git_blob_sha": "b293aed1c2d3bd28e9e6aad356e9a1ecef447429"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "breath-of-fire",
+      "title_hints": [
+        "Breath of Fire"
+      ],
+      "unresolved_source_occurrences": 155,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Breath of Fire (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E104C63+7E104E63",
+          "source_git_blob_sha": "f4b8ccf3c546a218bd5dd92e75e23e66151c61fa"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Breath of Fire (USA) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E10500F+7E105127",
+          "source_git_blob_sha": "f4b8ccf3c546a218bd5dd92e75e23e66151c61fa"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Breath of Fire (USA) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E10540F+7E105527",
+          "source_git_blob_sha": "f4b8ccf3c546a218bd5dd92e75e23e66151c61fa"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "romance-of-the-three-kingdoms-iv-wall-of-fire",
+      "title_hints": [
+        "Romance of the Three Kingdoms IV - Wall of Fire"
+      ],
+      "unresolved_source_occurrences": 152,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Romance of the Three Kingdoms IV - Wall of Fire (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7EBA02E8+7EBA03FD",
+          "source_git_blob_sha": "17f7e068ae15ff3363d57a53dcd0c16226eab395"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Romance of the Three Kingdoms IV - Wall of Fire (USA) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7EBA00E8+7EBA01FD",
+          "source_git_blob_sha": "17f7e068ae15ff3363d57a53dcd0c16226eab395"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Romance of the Three Kingdoms IV - Wall of Fire (USA).cht",
+          "ordinal": 0,
+          "source_code": "7EB49000+7EB49100",
+          "source_git_blob_sha": "bde379045d34d589d86afbbc79a7ee9381f13bf5"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "chrono-trigger",
+      "title_hints": [
+        "Chrono Trigger"
+      ],
+      "unresolved_source_occurrences": 143,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Chrono Trigger (USA).cht",
+          "ordinal": 0,
+          "source_code": "7EB28C00+7EB28D00",
+          "source_git_blob_sha": "cfe52917a60fd8dc8780f189c2ceb7ece9363ea9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Chrono Trigger (USA).cht",
+          "ordinal": 1,
+          "source_code": "7EB2DB00+7EB2DC00",
+          "source_git_blob_sha": "cfe52917a60fd8dc8780f189c2ceb7ece9363ea9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Chrono Trigger (USA).cht",
+          "ordinal": 9,
+          "source_code": "7F01300F+7F013127",
+          "source_git_blob_sha": "cfe52917a60fd8dc8780f189c2ceb7ece9363ea9"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "dai-3-ji-super-robot-taisen",
+      "title_hints": [
+        "Dai-3-ji Super Robot Taisen"
+      ],
+      "unresolved_source_occurrences": 141,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dai-3-ji Super Robot Taisen (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E1006E7+7E100703",
+          "source_git_blob_sha": "6a7289f7349d132aa507ec791fff00bbb84e592a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dai-3-ji Super Robot Taisen (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E18060F+7E180727",
+          "source_git_blob_sha": "6a7289f7349d132aa507ec791fff00bbb84e592a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dai-3-ji Super Robot Taisen (Japan) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E18080F+7E180927",
+          "source_git_blob_sha": "6a7289f7349d132aa507ec791fff00bbb84e592a"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "genghis-khan-ii-clan-of-the-gray-wolf",
+      "title_hints": [
+        "Genghis Khan II - Clan of the Gray Wolf"
+      ],
+      "unresolved_source_occurrences": 138,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E3C33+FF+7E3C34+FF",
+          "source_git_blob_sha": "bbfff576e03389b483499448b627770db84d70ed"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
+          "ordinal": 3,
+          "source_code": "7E454B0F+7E454C27",
+          "source_git_blob_sha": "bbfff576e03389b483499448b627770db84d70ed"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
+          "ordinal": 4,
+          "source_code": "7E39A90F+7E39AA27",
+          "source_git_blob_sha": "bbfff576e03389b483499448b627770db84d70ed"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-mario-rpg-legend-of-the-seven-stars",
+      "title_hints": [
+        "Super Mario RPG - Legend of the Seven Stars"
+      ],
+      "unresolved_source_occurrences": 137,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario RPG - Legend of the Seven Stars (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E033801+7E025604",
+          "source_git_blob_sha": "e15344e641526a918c5cb793b379764c8b0d1bf9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario RPG - Legend of the Seven Stars (USA) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E0256:04+7E0257:3C",
+          "source_git_blob_sha": "e15344e641526a918c5cb793b379764c8b0d1bf9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario RPG - Legend of the Seven Stars (USA) (Action Replay).cht",
+          "ordinal": 11,
+          "source_code": "30303205+30303300+30303401+30303502+30303603+30303704+30303800",
+          "source_git_blob_sha": "e15344e641526a918c5cb793b379764c8b0d1bf9"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "mortal-kombat-ii",
+      "title_hints": [
+        "Mortal Kombat II"
+      ],
+      "unresolved_source_occurrences": 125,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat II (USA) (Rev 1).cht",
+          "ordinal": 2,
+          "source_code": "DDCE-14A2+DDA3-376B",
+          "source_git_blob_sha": "db272f7d7e90e94fd29c86b3317dd9674543bfbb"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat II (USA) (Rev 1).cht",
+          "ordinal": 4,
+          "source_code": "6D2A-C465+6DE7-3767+D9E7-37A7",
+          "source_git_blob_sha": "db272f7d7e90e94fd29c86b3317dd9674543bfbb"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat II (USA) (Rev 1).cht",
+          "ordinal": 5,
+          "source_code": "CE65-4FAD+DF69-CD6F+CE69-C7DF",
+          "source_git_blob_sha": "db272f7d7e90e94fd29c86b3317dd9674543bfbb"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "street-fighter-ii",
+      "title_hints": [
+        "Street Fighter II"
+      ],
+      "unresolved_source_occurrences": 117,
+      "distinct_source_records": 6,
+      "region_hints": [
+        "Europe",
+        "Japan",
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (Europe).cht",
+          "ordinal": 0,
+          "source_code": "CB01-54DF+8D01-540F+6201-546F+4801-54AF+DA01-57DF",
+          "source_git_blob_sha": "ff58679737854e6098ca6a4af42da26d5d268954"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (Japan).cht",
+          "ordinal": 0,
+          "source_code": "CB00-570F+8D00-576F+6200-57AF+4809-5DDF+DA09-5D0F",
+          "source_git_blob_sha": "715534feba55d3ca60822de3a36e4d5b40a71406"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (USA).cht",
+          "ordinal": 17,
+          "source_code": "6DCF-D764+FFCF-D7A4",
+          "source_git_blob_sha": "238c19680d48eeec8cfb2cb67c2e5d03bfdf8170"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-mario-world",
+      "title_hints": [
+        "Super Mario World"
+      ],
+      "unresolved_source_occurrences": 115,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA) (Game Genie).cht",
+          "ordinal": 0,
+          "source_code": "EDA5-0F6F+61A5-040F+61A6-0D6F",
+          "source_git_blob_sha": "15ef970f1dbb5eac3a4d017129b5c52a14ce095f"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA) (Game Genie).cht",
+          "ordinal": 1,
+          "source_code": "EDA5-0F6F+69A5-040F+69A6-0D6F",
+          "source_git_blob_sha": "15ef970f1dbb5eac3a4d017129b5c52a14ce095f"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA) (Game Genie).cht",
+          "ordinal": 2,
+          "source_code": "2D80-0DE1+ED8B-0D89",
+          "source_git_blob_sha": "15ef970f1dbb5eac3a4d017129b5c52a14ce095f"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "final-fantasy-iv",
+      "title_hints": [
+        "Final Fantasy IV"
+      ],
+      "unresolved_source_occurrences": 111,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy IV (Japan) (Rev 1).cht",
+          "ordinal": 5,
+          "source_code": "7E3402B0+7E340304",
+          "source_git_blob_sha": "e8a0e104d7d22b256bc155a8f97f54fa71df889a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy IV (Japan) (Rev 1).cht",
+          "ordinal": 6,
+          "source_code": "7E3402B0+7E340304",
+          "source_git_blob_sha": "e8a0e104d7d22b256bc155a8f97f54fa71df889a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy IV (Japan) (Rev 1).cht",
+          "ordinal": 7,
+          "source_code": "7E3402B0+7E340304",
+          "source_git_blob_sha": "e8a0e104d7d22b256bc155a8f97f54fa71df889a"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "mecarobot-golf",
+      "title_hints": [
+        "Mecarobot Golf"
+      ],
+      "unresolved_source_occurrences": 108,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mecarobot Golf (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "06FD21B4+1EE01304",
+          "source_git_blob_sha": "31268759690289ff28c25a5ed426642285404f28"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mecarobot Golf (USA) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "06FD21B6+1EE01306",
+          "source_git_blob_sha": "31268759690289ff28c25a5ed426642285404f28"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mecarobot Golf (USA) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "06FD24B3+1EE01403",
+          "source_git_blob_sha": "31268759690289ff28c25a5ed426642285404f28"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "final-fantasy-v",
+      "title_hints": [
+        "Final Fantasy V"
+      ],
+      "unresolved_source_occurrences": 105,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy V (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E0840FF+7E0841FF+7E0842FF",
+          "source_git_blob_sha": "5a4812cc47a35b271b598ce0f4734bddb95fca31"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy V (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E053BE7+7E053C03",
+          "source_git_blob_sha": "5a4812cc47a35b271b598ce0f4734bddb95fca31"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy V (Japan) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E058BE7+7E058C03",
+          "source_git_blob_sha": "5a4812cc47a35b271b598ce0f4734bddb95fca31"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "tales-of-phantasia",
+      "title_hints": [
+        "Tales of Phantasia"
+      ],
+      "unresolved_source_occurrences": 100,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Tales of Phantasia (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E6E1A7F+7E6E1B96+7E6E1C98",
+          "source_git_blob_sha": "55f540be7cd0975a81e5b68eba94ae4698f6459e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Tales of Phantasia (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E14B37F+7E14B496+7E14B598",
+          "source_git_blob_sha": "55f540be7cd0975a81e5b68eba94ae4698f6459e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Tales of Phantasia (Japan) (Action Replay).cht",
+          "ordinal": 8,
+          "source_code": "7E1484FF+7E14857F+7E1486FF+7E14877F",
+          "source_git_blob_sha": "55f540be7cd0975a81e5b68eba94ae4698f6459e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "earthbound",
+      "title_hints": [
+        "EarthBound"
+      ],
+      "unresolved_source_occurrences": 99,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/EarthBound (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E983100+7E9832E1+7E9833F5+7E983405",
+          "source_git_blob_sha": "c0df97e83ff753cdc69f3353eda4dc730e0f0af6"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/EarthBound (USA) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E9835??+7E9836??+7E9837??",
+          "source_git_blob_sha": "c0df97e83ff753cdc69f3353eda4dc730e0f0af6"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/EarthBound (USA) (Action Replay).cht",
+          "ordinal": 3,
+          "source_code": "7E9C22FF+7E9C23FF",
+          "source_git_blob_sha": "c0df97e83ff753cdc69f3353eda4dc730e0f0af6"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "road-runner-s-death-valley-rally",
+      "title_hints": [
+        "Road Runner's Death Valley Rally"
+      ],
+      "unresolved_source_occurrences": 98,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Road Runner's Death Valley Rally (USA) (Action Replay).cht",
+          "ordinal": 40,
+          "source_code": "809B9401+809B96E1+809B971E",
+          "source_git_blob_sha": "d620d866ee447a35fdbbde7ae7d09b5a107a60e5"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Road Runner's Death Valley Rally (USA) (Action Replay).cht",
+          "ordinal": 41,
+          "source_code": "809B9402+809B96E1+809B971E",
+          "source_git_blob_sha": "d620d866ee447a35fdbbde7ae7d09b5a107a60e5"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Road Runner's Death Valley Rally (USA) (Action Replay).cht",
+          "ordinal": 42,
+          "source_code": "809B9403+809B96E1+809B971E",
+          "source_git_blob_sha": "d620d866ee447a35fdbbde7ae7d09b5a107a60e5"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-tennis",
+      "title_hints": [
+        "Super Tennis"
+      ],
+      "unresolved_source_occurrences": 95,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Tennis (USA).cht",
+          "ordinal": 0,
+          "source_code": "D060-AFAF+D761-AFAF+DD24-07A5",
+          "source_git_blob_sha": "25fcba42e56d0544ebf04c1a1a3e4835d72ca633"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Tennis (USA).cht",
+          "ordinal": 1,
+          "source_code": "D060-AFAF+D761-AFAF+DD24-A7A5",
+          "source_git_blob_sha": "25fcba42e56d0544ebf04c1a1a3e4835d72ca633"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Tennis (USA).cht",
+          "ordinal": 2,
+          "source_code": "D060-AFAF+D761-AFAF+DD27-07A5",
+          "source_git_blob_sha": "25fcba42e56d0544ebf04c1a1a3e4835d72ca633"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "dragon-quest-vi-maboroshi-no-daichi",
+      "title_hints": [
+        "Dragon Quest VI - Maboroshi no Daichi"
+      ],
+      "unresolved_source_occurrences": 94,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest VI - Maboroshi no Daichi (Japan) (Action Replay) (diff).cht",
+          "ordinal": 0,
+          "source_code": "7E5A2E??+7E5A2F??+7E5A30??",
+          "source_git_blob_sha": "9e2fa0a99094bdec1f07ee0542319af7271470ef"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest VI - Maboroshi no Daichi (Japan) (Action Replay) (diff).cht",
+          "ordinal": 1,
+          "source_code": "7E387A__+7E387B__+7E387C__",
+          "source_git_blob_sha": "9e2fa0a99094bdec1f07ee0542319af7271470ef"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest VI - Maboroshi no Daichi (Japan) (Action Replay) (diff).cht",
+          "ordinal": 2,
+          "source_code": "7E3EA7??+7E3EA8??+7E3EA9??",
+          "source_git_blob_sha": "9e2fa0a99094bdec1f07ee0542319af7271470ef"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "harvest-moon",
+      "title_hints": [
+        "Harvest Moon"
+      ],
+      "unresolved_source_occurrences": 94,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Harvest Moon (USA).cht",
+          "ordinal": 8,
+          "source_code": "7F1F01FF+7F1F02FF+7F1F03FF",
+          "source_git_blob_sha": "4afee3c6cc8f9627c9d5a683c6d8f5f059b8682a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Harvest Moon (USA).cht",
+          "ordinal": 9,
+          "source_code": "7F1F043F+7F1F0542+7F1F060F",
+          "source_git_blob_sha": "4afee3c6cc8f9627c9d5a683c6d8f5f059b8682a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Harvest Moon (USA).cht",
+          "ordinal": 10,
+          "source_code": "7F1F073F+7F1F0842+7F1F090F",
+          "source_git_blob_sha": "4afee3c6cc8f9627c9d5a683c6d8f5f059b8682a"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "dragon-ball-z-super-saiya-densetsu",
+      "title_hints": [
+        "Dragon Ball Z - Super Saiya Densetsu"
+      ],
+      "unresolved_source_occurrences": 92,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Ball Z - Super Saiya Densetsu (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E01B40F+7E01B527",
+          "source_git_blob_sha": "9c00115a246898047f7fbef26141d2bda6a23ae3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Ball Z - Super Saiya Densetsu (Japan).cht",
+          "ordinal": 1,
+          "source_code": "7E01B40F+7E01B527",
+          "source_git_blob_sha": "41d2cdb500e53b212a7d0abbdb346a12aaf5a2ce"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Ball Z - Super Saiya Densetsu (Japan).cht",
+          "ordinal": 18,
+          "source_code": "7E0B03E7+7E0B0403",
+          "source_git_blob_sha": "41d2cdb500e53b212a7d0abbdb346a12aaf5a2ce"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "kouryuu-densetsu-villgust-kieta-shoujo",
+      "title_hints": [
+        "Kouryuu Densetsu Villgust - Kieta Shoujo"
+      ],
+      "unresolved_source_occurrences": 90,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Kouryuu Densetsu Villgust - Kieta Shoujo (Japan).cht",
+          "ordinal": 3,
+          "source_code": "7E070400+7E070500",
+          "source_git_blob_sha": "eb080fa482bd21a41cfd9393f7b812f75bc6f4ad"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Kouryuu Densetsu Villgust - Kieta Shoujo (Japan).cht",
+          "ordinal": 4,
+          "source_code": "7E070700+7E070800",
+          "source_git_blob_sha": "eb080fa482bd21a41cfd9393f7b812f75bc6f4ad"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Kouryuu Densetsu Villgust - Kieta Shoujo (Japan).cht",
+          "ordinal": 5,
+          "source_code": "7E070D00+7E070E00",
+          "source_git_blob_sha": "eb080fa482bd21a41cfd9393f7b812f75bc6f4ad"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "princess-minerva",
+      "title_hints": [
+        "Princess Minerva"
+      ],
+      "unresolved_source_occurrences": 89,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Princess Minerva (Japan).cht",
+          "ordinal": 2,
+          "source_code": "C28C-1409+C28C-17A9",
+          "source_git_blob_sha": "7cb7afe41a88d17bab19b6b52705bbdf9300df02"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Princess Minerva (Japan).cht",
+          "ordinal": 3,
+          "source_code": "7E13BA9F+7E13BB86+7E13BC01",
+          "source_git_blob_sha": "7cb7afe41a88d17bab19b6b52705bbdf9300df02"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Princess Minerva (Japan).cht",
+          "ordinal": 5,
+          "source_code": "7E1063E7+7E106403",
+          "source_git_blob_sha": "7cb7afe41a88d17bab19b6b52705bbdf9300df02"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "arcana",
+      "title_hints": [
+        "Arcana"
+      ],
+      "unresolved_source_occurrences": 85,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Arcana (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E12F3E7+7E12F403",
+          "source_git_blob_sha": "e9363a6ae67636827d711b069143bf372223f973"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Arcana (USA) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E12F5E7+7E12F603",
+          "source_git_blob_sha": "e9363a6ae67636827d711b069143bf372223f973"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Arcana (USA) (Action Replay).cht",
+          "ordinal": 4,
+          "source_code": "7E12F7E7+7E12F803",
+          "source_git_blob_sha": "e9363a6ae67636827d711b069143bf372223f973"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "madden-nfl-94",
+      "title_hints": [
+        "Madden NFL '94"
+      ],
+      "unresolved_source_occurrences": 83,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Madden NFL '94 (USA).cht",
+          "ordinal": 17,
+          "source_code": "D93F-7D0F+DE3F-7D6F",
+          "source_git_blob_sha": "b7ab7e8fbae03d4427eea276c8d202b008399aa0"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Madden NFL '94 (USA).cht",
+          "ordinal": 18,
+          "source_code": "D53F-7D0F+DE3F-7D6F",
+          "source_git_blob_sha": "b7ab7e8fbae03d4427eea276c8d202b008399aa0"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Madden NFL '94 (USA).cht",
+          "ordinal": 19,
+          "source_code": "DC3F-7D0F+DE3F-7D6F",
+          "source_git_blob_sha": "b7ab7e8fbae03d4427eea276c8d202b008399aa0"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "might-and-magic-ii",
+      "title_hints": [
+        "Might and Magic II"
+      ],
+      "unresolved_source_occurrences": 81,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Europe"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Might and Magic II (Europe).cht",
+          "ordinal": 0,
+          "source_code": "7DA8-0F22+7DA8-0492+7DAA-0792",
+          "source_git_blob_sha": "5e75258d8a834f3e536e0403ba7e4b953d8280f3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Might and Magic II (Europe).cht",
+          "ordinal": 1,
+          "source_code": "CDA8-0F22+CDA8-0492+CDAA-0792",
+          "source_git_blob_sha": "5e75258d8a834f3e536e0403ba7e4b953d8280f3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Might and Magic II (Europe).cht",
+          "ordinal": 17,
+          "source_code": "45A7-6792+45A7-6722+45A9-6D22",
+          "source_git_blob_sha": "5e75258d8a834f3e536e0403ba7e4b953d8280f3"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "secret-of-evermore",
+      "title_hints": [
+        "Secret of Evermore"
+      ],
+      "unresolved_source_occurrences": 81,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Secret of Evermore (USA).cht",
+          "ordinal": 0,
+          "source_code": "7E0AC67F+7E0AC796+7E0AC898",
+          "source_git_blob_sha": "72183eeba5e821130df216a813a08d66a258e8be"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Secret of Evermore (USA).cht",
+          "ordinal": 1,
+          "source_code": "7E0AC97F+7E0ACA96+7E0ACB98",
+          "source_git_blob_sha": "72183eeba5e821130df216a813a08d66a258e8be"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Secret of Evermore (USA).cht",
+          "ordinal": 2,
+          "source_code": "7E0ACC7F+7E0ACD96+7E0ACE98",
+          "source_git_blob_sha": "72183eeba5e821130df216a813a08d66a258e8be"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "donkey-kong-country",
+      "title_hints": [
+        "Donkey Kong Country"
+      ],
+      "unresolved_source_occurrences": 80,
+      "distinct_source_records": 7,
+      "region_hints": [
+        "Europe",
+        "USA"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (Europe) (En,Fr,De) (Rev 1).cht",
+          "ordinal": 5,
+          "source_code": "1DCA-CE5A+F6C0-137A+F6C2-335A",
+          "source_git_blob_sha": "4adb448e5327e66dad9bdf0cee396aa90cad1278"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (Europe) (En,Fr,De).cht",
+          "ordinal": 4,
+          "source_code": "1DC8-C3EA+F6C7-128A+F6CA-32EA",
+          "source_git_blob_sha": "8eee228c1b36b13718d5e7e5700fc1009a20acd3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (Europe) (Game Genie).cht",
+          "ordinal": 4,
+          "source_code": "1DC8-C3EA+F6C7-128A+F6CA-32EA",
+          "source_git_blob_sha": "52c626dde01c105866dc3eba025638bef9e0084e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "shadowrun",
+      "title_hints": [
+        "Shadowrun"
+      ],
+      "unresolved_source_occurrences": 79,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shadowrun (USA).cht",
+          "ordinal": 1,
+          "source_code": "69A6-1F07+6BA6-1F67",
+          "source_git_blob_sha": "ab146a6506088a37c0032f36ea57be884a992124"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shadowrun (USA).cht",
+          "ordinal": 3,
+          "source_code": "CB3D-4FD4+D13D-4F04+B53D-4FA4+EB3D-44D4",
+          "source_git_blob_sha": "ab146a6506088a37c0032f36ea57be884a992124"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shadowrun (USA).cht",
+          "ordinal": 4,
+          "source_code": "CB31-C4AF+D131-C7DF+B531-C76F+EB31-C7AF",
+          "source_git_blob_sha": "ab146a6506088a37c0032f36ea57be884a992124"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "ryuukiheidan-dunzarv",
+      "title_hints": [
+        "Ryuukiheidan Dunzarv"
+      ],
+      "unresolved_source_occurrences": 77,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ryuukiheidan Dunzarv (Japan).cht",
+          "ordinal": 0,
+          "source_code": "7E166D3F+7E166E42+7E166F0F",
+          "source_git_blob_sha": "ca9a3daffdb2849515982ba3a7c737dc8a026279"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ryuukiheidan Dunzarv (Japan).cht",
+          "ordinal": 8,
+          "source_code": "DD32-ADC7+DD32-A417",
+          "source_git_blob_sha": "ca9a3daffdb2849515982ba3a7c737dc8a026279"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ryuukiheidan Dunzarv (Japan).cht",
+          "ordinal": 11,
+          "source_code": "7E1673FF+7E1674FF",
+          "source_git_blob_sha": "ca9a3daffdb2849515982ba3a7c737dc8a026279"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "kirby-s-avalanche",
+      "title_hints": [
+        "Kirby's Avalanche"
+      ],
+      "unresolved_source_occurrences": 76,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Kirby's Avalanche (USA) (Game Genie).cht",
+          "ordinal": 1,
+          "source_code": "CB60-C737+DD69-CD47+DD69-CD17",
+          "source_git_blob_sha": "f9484fe472d797b1975f33a9ec6b23ff67ddb442"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Kirby's Avalanche (USA) (Game Genie).cht",
+          "ordinal": 2,
+          "source_code": "CB60-C737+DF69-CD47+DF69-CD17",
+          "source_git_blob_sha": "f9484fe472d797b1975f33a9ec6b23ff67ddb442"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Kirby's Avalanche (USA) (Game Genie).cht",
+          "ordinal": 3,
+          "source_code": "CB60-C737+D769-CD47+D769-CD17",
+          "source_git_blob_sha": "f9484fe472d797b1975f33a9ec6b23ff67ddb442"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "street-fighter-ii-turbo",
+      "title_hints": [
+        "Street Fighter II Turbo"
+      ],
+      "unresolved_source_occurrences": 75,
+      "distinct_source_records": 6,
+      "region_hints": [
+        "Europe",
+        "Japan",
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II Turbo (Europe) (Rev 1).cht",
+          "ordinal": 0,
+          "source_code": "CB0A-EDD7+8D0A-ED07+620A-ED67+7D0A-EDA7+D90A-EFD7",
+          "source_git_blob_sha": "9574c180ac96bdf2212412530f7306ba7323dd1a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II Turbo (Europe) (Rev 1).cht",
+          "ordinal": 1,
+          "source_code": "ADF1-E40D+F9F1-E46D",
+          "source_git_blob_sha": "9574c180ac96bdf2212412530f7306ba7323dd1a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II Turbo (Europe).cht",
+          "ordinal": 0,
+          "source_code": "CB08-EF67+8D08-EFA7+6208-E4D7+7D08-E407+D908-E467",
+          "source_git_blob_sha": "c4e03f1c9a22a5f0ed719f0887e305633bc4dd6c"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "legend-of-zelda-the-a-link-to-the-past",
+      "title_hints": [
+        "Legend of Zelda, The - A Link to the Past"
+      ],
+      "unresolved_source_occurrences": 74,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Legend of Zelda, The - A Link to the Past (USA).cht",
+          "ordinal": 6,
+          "source_code": "7E0D8001+7E0D8101+7E0D8201",
+          "source_git_blob_sha": "7ab43a4d8fd96a5716a65cae91c38d5dc03d0fbf"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Legend of Zelda, The - A Link to the Past (USA).cht",
+          "ordinal": 7,
+          "source_code": "7E0D3005+7E0D3105+7E0D3205",
+          "source_git_blob_sha": "7ab43a4d8fd96a5716a65cae91c38d5dc03d0fbf"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Legend of Zelda, The - A Link to the Past (USA).cht",
+          "ordinal": 14,
+          "source_code": "7EF3E900+7EF3EA00",
+          "source_git_blob_sha": "7ab43a4d8fd96a5716a65cae91c38d5dc03d0fbf"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "secret-of-mana",
+      "title_hints": [
+        "Secret of Mana"
+      ],
+      "unresolved_source_occurrences": 74,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe",
+        "USA, Europe, USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Secret of Mana (USA).cht",
+          "ordinal": 0,
+          "source_code": "7ECC6A7F+7ECC6B96+7ECC6C98",
+          "source_git_blob_sha": "4c9be78d4cf2c8694c85f23fec13f7fc9d5c3b40"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Secret of Mana (USA).cht",
+          "ordinal": 1,
+          "source_code": "7EE78200+7EE98200+7EEB8200",
+          "source_git_blob_sha": "4c9be78d4cf2c8694c85f23fec13f7fc9d5c3b40"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Secret of Mana (USA).cht",
+          "ordinal": 6,
+          "source_code": "7EE184E7+7EE18503",
+          "source_git_blob_sha": "4c9be78d4cf2c8694c85f23fec13f7fc9d5c3b40"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-mario-all-stars-super-mario-world",
+      "title_hints": [
+        "Super Mario All-Stars + Super Mario World"
+      ],
+      "unresolved_source_occurrences": 74,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario All-Stars + Super Mario World (USA).cht",
+          "ordinal": 0,
+          "source_code": "CB26-6755+D426-6785+CBCE-AD85+DDCE-ADE5",
+          "source_git_blob_sha": "792f63a8f7925b55482e0d26b5c4302c424dc406"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario All-Stars + Super Mario World (USA).cht",
+          "ordinal": 1,
+          "source_code": "CB26-6755+D426-6785",
+          "source_git_blob_sha": "792f63a8f7925b55482e0d26b5c4302c424dc406"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario All-Stars + Super Mario World (USA).cht",
+          "ordinal": 2,
+          "source_code": "D288-070F+D08A-0DAF+AD8A-0F0F",
+          "source_git_blob_sha": "792f63a8f7925b55482e0d26b5c4302c424dc406"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-metroid",
+      "title_hints": [
+        "Super Metroid"
+      ],
+      "unresolved_source_occurrences": 74,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Europe, Japan",
+        "Japan, USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Metroid (Europe, Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E05B6FF+7E18A8FF",
+          "source_git_blob_sha": "91efd500733991bfc33edf8d348f3b89201e5f39"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Metroid (Europe, Japan) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E094500+7E094600+7E094701",
+          "source_git_blob_sha": "91efd500733991bfc33edf8d348f3b89201e5f39"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Metroid (Europe, Japan) (Action Replay).cht",
+          "ordinal": 3,
+          "source_code": "7E0B2D44+7E0B2E01",
+          "source_git_blob_sha": "91efd500733991bfc33edf8d348f3b89201e5f39"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-conflict",
+      "title_hints": [
+        "Super Conflict"
+      ],
+      "unresolved_source_occurrences": 72,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Europe",
+        "USA"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Conflict (Europe).cht",
+          "ordinal": 2,
+          "source_code": "7E03C300+7E03C400",
+          "source_git_blob_sha": "4f16f358a1624f95e5bc24db1bab436cc0fd7a66"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Conflict (Europe).cht",
+          "ordinal": 3,
+          "source_code": "7E03C500+7E03C600",
+          "source_git_blob_sha": "4f16f358a1624f95e5bc24db1bab436cc0fd7a66"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Conflict (Europe).cht",
+          "ordinal": 4,
+          "source_code": "7E0D6A00+7E0D6B00",
+          "source_git_blob_sha": "4f16f358a1624f95e5bc24db1bab436cc0fd7a66"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "killer-instinct",
+      "title_hints": [
+        "Killer Instinct"
+      ],
+      "unresolved_source_occurrences": 71,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA) (Rev 1).cht",
+          "ordinal": 0,
+          "source_code": "3DC1-4DA4+DDC1-4FD4+DDC1-4F04",
+          "source_git_blob_sha": "3efc3eac4c629b3e27a8eceb547662911486ae7e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA) (Rev 1).cht",
+          "ordinal": 2,
+          "source_code": "EDB6-3DD7+D2B6-3D07+0AB6-3D67+CAB6-3DA7+CFB6-3FD7",
+          "source_git_blob_sha": "3efc3eac4c629b3e27a8eceb547662911486ae7e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA) (Rev 1).cht",
+          "ordinal": 3,
+          "source_code": "3DBB-3F07+DDBB-3F67+EDBB-34D7+A7BB-3407",
+          "source_git_blob_sha": "3efc3eac4c629b3e27a8eceb547662911486ae7e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "mortal-kombat",
+      "title_hints": [
+        "Mortal Kombat"
+      ],
+      "unresolved_source_occurrences": 71,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA).cht",
+          "ordinal": 10,
+          "source_code": "7E002207+9897C4A9+9897C507",
+          "source_git_blob_sha": "d599431ab4599dd88558efd82d099fc7594a5849"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA).cht",
+          "ordinal": 12,
+          "source_code": "7E002209+7E02C101+7E197204",
+          "source_git_blob_sha": "d599431ab4599dd88558efd82d099fc7594a5849"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA).cht",
+          "ordinal": 19,
+          "source_code": "7E768800+7E768900+7E768C00+7E768D00+7E768E00+7E768F00+7E769000+7E769100+7E769200+7E769300+7E769600+7E769700",
+          "source_git_blob_sha": "d599431ab4599dd88558efd82d099fc7594a5849"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "romancing-sa-ga-3",
+      "title_hints": [
+        "Romancing Sa-Ga 3"
+      ],
+      "unresolved_source_occurrences": 71,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Romancing Sa-Ga 3 (Japan).cht",
+          "ordinal": 1,
+          "source_code": "7EF320FF+7EF321FF",
+          "source_git_blob_sha": "a605c476a059060201eb4bb310c6ca9c14a0ddcf"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Romancing Sa-Ga 3 (Japan).cht",
+          "ordinal": 2,
+          "source_code": "7EF46AFF+7EF46BFF+7EF46CFF+7EF46DFF+7EF46EFF+7EF46FFF+7EF470FF+7EF471FF+7EF472FF+7EF473FF+7EF474FF+7EF475FF+7EF476FF+7EF477FF+7EF478FF+7EF479FF+7EF47AFF+7EF47BFF+7EF47CFF+7EF47DFF+7EF47EFF+7EF47FFF",
+          "source_git_blob_sha": "a605c476a059060201eb4bb310c6ca9c14a0ddcf"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Romancing Sa-Ga 3 (Japan).cht",
+          "ordinal": 3,
+          "source_code": "7EF014E7+7EF01503",
+          "source_git_blob_sha": "a605c476a059060201eb4bb310c6ca9c14a0ddcf"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "clay-fighter",
+      "title_hints": [
+        "Clay Fighter"
+      ],
+      "unresolved_source_occurrences": 69,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Clay Fighter (USA).cht",
+          "ordinal": 15,
+          "source_code": "DD4A-8548+DD9C-E53E",
+          "source_git_blob_sha": "fbca0780825341bfbd8ad24ba3bf026edef3b714"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Clay Fighter (USA).cht",
+          "ordinal": 16,
+          "source_code": "DD4A-8548+DF9C-E53E",
+          "source_git_blob_sha": "fbca0780825341bfbd8ad24ba3bf026edef3b714"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Clay Fighter (USA).cht",
+          "ordinal": 17,
+          "source_code": "DD4A-8548+D49C-E53E",
+          "source_git_blob_sha": "fbca0780825341bfbd8ad24ba3bf026edef3b714"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "dragon-quest-iii-soshite-densetsu-e",
+      "title_hints": [
+        "Dragon Quest III - Soshite Densetsu e..."
+      ],
+      "unresolved_source_occurrences": 67,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest III - Soshite Densetsu e... (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E3696??+7E3697??+7E3698??",
+          "source_git_blob_sha": "57b4791511fad95ab66f3c6b76f2340fb9e66a3c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest III - Soshite Densetsu e... (Japan) (Game Genie).cht",
+          "ordinal": 2,
+          "source_code": "C29F-EDB4+C29F-EFB4",
+          "source_git_blob_sha": "de4ef91d99b1559f1c2a1e1139648aa3d0068b75"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest III - Soshite Densetsu e... (Japan) (Game Genie).cht",
+          "ordinal": 3,
+          "source_code": "EEEE-E765+EEEE-E7A5+6DEE-E4B8",
+          "source_git_blob_sha": "de4ef91d99b1559f1c2a1e1139648aa3d0068b75"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "seiken-densetsu-3",
+      "title_hints": [
+        "Seiken Densetsu 3"
+      ],
+      "unresolved_source_occurrences": 67,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Seiken Densetsu 3 (Japan).cht",
+          "ordinal": 1,
+          "source_code": "DD18-87AF+C41A-84DF+BD1A-840F+791A-846F+CB1A-84AF+271A-87DF+3C1A-870F",
+          "source_git_blob_sha": "5cc3b2b1e7e2c188236d93b4fca6ba17382e4db9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Seiken Densetsu 3 (Japan).cht",
+          "ordinal": 3,
+          "source_code": "CBE6-EF9F+DD32-7561",
+          "source_git_blob_sha": "5cc3b2b1e7e2c188236d93b4fca6ba17382e4db9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Seiken Densetsu 3 (Japan).cht",
+          "ordinal": 5,
+          "source_code": "7FEDF2E7+7FEDF303",
+          "source_git_blob_sha": "5cc3b2b1e7e2c188236d93b4fca6ba17382e4db9"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "aretha-ii-ariel-no-fushigi-na-tabi",
+      "title_hints": [
+        "Aretha II - Ariel no Fushigi na Tabi"
+      ],
+      "unresolved_source_occurrences": 66,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Aretha II - Ariel no Fushigi na Tabi (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E15DBE7+7E15DC03",
+          "source_git_blob_sha": "0845e1377aa978d54e7fbf69ccbe8de4032a3155"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Aretha II - Ariel no Fushigi na Tabi (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E15DFE7+7E15E003",
+          "source_git_blob_sha": "0845e1377aa978d54e7fbf69ccbe8de4032a3155"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Aretha II - Ariel no Fushigi na Tabi (Japan) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E1616E7+7E161703",
+          "source_git_blob_sha": "0845e1377aa978d54e7fbf69ccbe8de4032a3155"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "darius-twin",
+      "title_hints": [
+        "Darius Twin"
+      ],
+      "unresolved_source_occurrences": 66,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Darius Twin (USA).cht",
+          "ordinal": 2,
+          "source_code": "FDC3-6D67+CBC3-6D07+3CC3-6DA7",
+          "source_git_blob_sha": "de97f769c0c1fd87b261104cb926748e18fcf313"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Darius Twin (USA).cht",
+          "ordinal": 3,
+          "source_code": "F9C3-6D67+CBC3-6D07+3CC3-6DA7",
+          "source_git_blob_sha": "de97f769c0c1fd87b261104cb926748e18fcf313"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Darius Twin (USA).cht",
+          "ordinal": 4,
+          "source_code": "4DC3-6D67+CBC3-6D07+3CC3-6DA7",
+          "source_git_blob_sha": "de97f769c0c1fd87b261104cb926748e18fcf313"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "dragon-quest-i-ii",
+      "title_hints": [
+        "Dragon Quest I _ II"
+      ],
+      "unresolved_source_occurrences": 63,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest I _ II (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E0C81XX+7E0C82XX+7E0C83XX",
+          "source_git_blob_sha": "29c2ecc14bd5b1b9694ac00e8dfffbc7f6a82000"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest I _ II (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E0C81FF+7E0C82FF",
+          "source_git_blob_sha": "fbdb998ac2c64dcaa2fd3b95be2f0813b4f476ab"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest I _ II (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E0C11FF+7E0C12FF",
+          "source_git_blob_sha": "fbdb998ac2c64dcaa2fd3b95be2f0813b4f476ab"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "magic-knight-rayearth",
+      "title_hints": [
+        "Magic Knight Rayearth"
+      ],
+      "unresolved_source_occurrences": 62,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Magic Knight Rayearth (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E0D8A3F+7E0D8B42+7E0D8C0F",
+          "source_git_blob_sha": "b86d3e0b1e1090639467e35d78cad04434102e18"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Magic Knight Rayearth (Japan).cht",
+          "ordinal": 0,
+          "source_code": "7E0D8A3F+7E0D8B42+7E0D8C0F",
+          "source_git_blob_sha": "dab88ee696e0eb22dd9c6859944f1fe4a9b3cfc4"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Magic Knight Rayearth (Japan).cht",
+          "ordinal": 1,
+          "source_code": "7E0DD30F+7E0DD427",
+          "source_git_blob_sha": "dab88ee696e0eb22dd9c6859944f1fe4a9b3cfc4"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "paladin-s-quest",
+      "title_hints": [
+        "Paladin's Quest"
+      ],
+      "unresolved_source_occurrences": 60,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Paladin's Quest (USA) (Action Replay).cht",
+          "ordinal": 22,
+          "source_code": "7E15FBFF+7E15FCFF",
+          "source_git_blob_sha": "6f5b7059775a5c2da54f134f67cf072dc0bbdbb3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Paladin's Quest (USA) (Action Replay).cht",
+          "ordinal": 23,
+          "source_code": "7E1621FF+7E1622FF",
+          "source_git_blob_sha": "6f5b7059775a5c2da54f134f67cf072dc0bbdbb3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Paladin's Quest (USA) (Game Genie).cht",
+          "ordinal": 63,
+          "source_code": "EEEB-6DCF+EEEB-6D1F",
+          "source_git_blob_sha": "0c733c217aaba822aeb00739ac0341a81acfbf63"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "f1-roc-race-of-champions",
+      "title_hints": [
+        "F1 ROC - Race of Champions"
+      ],
+      "unresolved_source_occurrences": 59,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/F1 ROC - Race of Champions (USA) (Action Replay).cht",
+          "ordinal": 7,
+          "source_code": "05FAC300+05FAC400",
+          "source_git_blob_sha": "912b935a9f4548b42241a644c94680e6775f57fc"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/F1 ROC - Race of Champions (USA) (Action Replay).cht",
+          "ordinal": 8,
+          "source_code": "05FAC500+05FAC60F",
+          "source_git_blob_sha": "912b935a9f4548b42241a644c94680e6775f57fc"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/F1 ROC - Race of Champions (USA) (Action Replay).cht",
+          "ordinal": 9,
+          "source_code": "05FACB00+05FACC00",
+          "source_git_blob_sha": "912b935a9f4548b42241a644c94680e6775f57fc"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "aretha",
+      "title_hints": [
+        "Aretha"
+      ],
+      "unresolved_source_occurrences": 58,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Aretha (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E1598E7+7E159903",
+          "source_git_blob_sha": "5deb574d43396ea0591b14bb54295f2f609b38db"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Aretha (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E159CE7+7E159D03",
+          "source_git_blob_sha": "5deb574d43396ea0591b14bb54295f2f609b38db"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Aretha (Japan).cht",
+          "ordinal": 0,
+          "source_code": "7E1598E7+7E159903",
+          "source_git_blob_sha": "4a8306cfce6ed0f45bd44fdf2c0057bf0c79f7ec"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "nba-jam",
+      "title_hints": [
+        "NBA Jam"
+      ],
+      "unresolved_source_occurrences": 58,
+      "distinct_source_records": 5,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NBA Jam (Beta).cht",
+          "ordinal": 0,
+          "source_code": "7E1CFF36+7E1D0000",
+          "source_git_blob_sha": "9a2bb1b278a5e4a70fff8cd46fb7b94039a2d058"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NBA Jam (Beta).cht",
+          "ordinal": 1,
+          "source_code": "7E1D0100+7E1D0200",
+          "source_git_blob_sha": "9a2bb1b278a5e4a70fff8cd46fb7b94039a2d058"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NBA Jam (Beta).cht",
+          "ordinal": 2,
+          "source_code": "7E1D0300+7E1D0400",
+          "source_git_blob_sha": "9a2bb1b278a5e4a70fff8cd46fb7b94039a2d058"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "space-megaforce",
+      "title_hints": [
+        "Space Megaforce"
+      ],
+      "unresolved_source_occurrences": 58,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Space Megaforce (USA) (Action Replay).cht",
+          "ordinal": 20,
+          "source_code": "02A125A9+02A12600",
+          "source_git_blob_sha": "fd2e600ffa8e83a32a5918f2b2973502765da5b3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Space Megaforce (USA) (Action Replay).cht",
+          "ordinal": 21,
+          "source_code": "02A125A9+02A12601",
+          "source_git_blob_sha": "fd2e600ffa8e83a32a5918f2b2973502765da5b3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Space Megaforce (USA) (Action Replay).cht",
+          "ordinal": 22,
+          "source_code": "02A125A9+02A12602",
+          "source_git_blob_sha": "fd2e600ffa8e83a32a5918f2b2973502765da5b3"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "brandish",
+      "title_hints": [
+        "Brandish"
+      ],
+      "unresolved_source_occurrences": 56,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Japan"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Brandish (USA).cht",
+          "ordinal": 3,
+          "source_code": "DD56-A2D7+5E56-A207",
+          "source_git_blob_sha": "92a603534431a9d59a9a4079cc14d7e2086dba54"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Brandish (USA).cht",
+          "ordinal": 4,
+          "source_code": "F856-A267+5E56-A2A7",
+          "source_git_blob_sha": "92a603534431a9d59a9a4079cc14d7e2086dba54"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Brandish (USA).cht",
+          "ordinal": 5,
+          "source_code": "0056-A3D7+5E56-A307",
+          "source_git_blob_sha": "92a603534431a9d59a9a4079cc14d7e2086dba54"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "donkey-kong-country-2-diddy-s-kong-quest",
+      "title_hints": [
+        "Donkey Kong Country 2 - Diddy's Kong Quest"
+      ],
+      "unresolved_source_occurrences": 56,
+      "distinct_source_records": 4,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country 2 - Diddy's Kong Quest (USA) (En,Fr) (Rev 1).cht",
+          "ordinal": 2,
+          "source_code": "DDBD-CA44+D5BD-3214+DBB2-3244+DD8E-121D+6787-C334",
+          "source_git_blob_sha": "255be1f12d28e713172139670149de485d623e5e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country 2 - Diddy's Kong Quest (USA) (En,Fr) (Rev 1).cht",
+          "ordinal": 3,
+          "source_code": "CB2C-1A4D+FD2C-1A1D+DD2C-1ACD",
+          "source_git_blob_sha": "255be1f12d28e713172139670149de485d623e5e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country 2 - Diddy's Kong Quest (USA) (En,Fr) (Rev 1).cht",
+          "ordinal": 4,
+          "source_code": "DDE2-33B9+6DE4-4EF1+DDE7-4EF1",
+          "source_git_blob_sha": "255be1f12d28e713172139670149de485d623e5e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-street-fighter-ii",
+      "title_hints": [
+        "Super Street Fighter II"
+      ],
+      "unresolved_source_occurrences": 55,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Europe",
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Street Fighter II (Europe).cht",
+          "ordinal": 0,
+          "source_code": "CB98-57DD+8D98-570D+6298-576D+7F98-57AD+D99A-5DDD",
+          "source_git_blob_sha": "579d859845b42431d65fd41c85f8aef20ac05a9a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Street Fighter II (USA).cht",
+          "ordinal": 5,
+          "source_code": "CB96-7DDD+8D96-7D0D+6296-7D6D+7F96-7DAD+D996-7FDD",
+          "source_git_blob_sha": "af0418560e3954cb653a4ea8fd45696825f943ec"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Street Fighter II (USA).cht",
+          "ordinal": 14,
+          "source_code": "CB17-8FAD+7D17-84DD",
+          "source_git_blob_sha": "af0418560e3954cb653a4ea8fd45696825f943ec"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "nekketsu-tairiku-burning-heroes",
+      "title_hints": [
+        "Nekketsu Tairiku Burning Heroes"
+      ],
+      "unresolved_source_occurrences": 54,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Nekketsu Tairiku Burning Heroes (Japan).cht",
+          "ordinal": 2,
+          "source_code": "7E0938E7+7E093903",
+          "source_git_blob_sha": "2556a2b89c112f3610d7a24c8d30746dd2bcb10e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Nekketsu Tairiku Burning Heroes (Japan).cht",
+          "ordinal": 7,
+          "source_code": "7E1111E7+7E111203",
+          "source_git_blob_sha": "2556a2b89c112f3610d7a24c8d30746dd2bcb10e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Nekketsu Tairiku Burning Heroes (Japan).cht",
+          "ordinal": 8,
+          "source_code": "7E1139E7+7E113A03",
+          "source_git_blob_sha": "2556a2b89c112f3610d7a24c8d30746dd2bcb10e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "taz-mania",
+      "title_hints": [
+        "Taz-Mania"
+      ],
+      "unresolved_source_occurrences": 54,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Taz-Mania (USA) (Action Replay).cht",
+          "ordinal": 30,
+          "source_code": "99E1882C+99E18930",
+          "source_git_blob_sha": "974faf58cc69c99be9a24cd8c265befba246cef8"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Taz-Mania (USA) (Action Replay).cht",
+          "ordinal": 31,
+          "source_code": "99E11E01+99E1882C+99E18930",
+          "source_git_blob_sha": "974faf58cc69c99be9a24cd8c265befba246cef8"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Taz-Mania (USA) (Action Replay).cht",
+          "ordinal": 32,
+          "source_code": "99E11E02+99E1882C+99E18930",
+          "source_git_blob_sha": "974faf58cc69c99be9a24cd8c265befba246cef8"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "jack-nicklaus-golf",
+      "title_hints": [
+        "Jack Nicklaus Golf"
+      ],
+      "unresolved_source_occurrences": 52,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Jack Nicklaus Golf (USA).cht",
+          "ordinal": 3,
+          "source_code": "DF33-076F+DDEB-D40A",
+          "source_git_blob_sha": "c6a9c850354c04b8f0838246225e4ba487195856"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Jack Nicklaus Golf (USA).cht",
+          "ordinal": 4,
+          "source_code": "D433-076F+DFEB-D40A",
+          "source_git_blob_sha": "c6a9c850354c04b8f0838246225e4ba487195856"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Jack Nicklaus Golf (USA).cht",
+          "ordinal": 5,
+          "source_code": "D733-076F+D4EB-D40A",
+          "source_git_blob_sha": "c6a9c850354c04b8f0838246225e4ba487195856"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "robotrek",
+      "title_hints": [
+        "Robotrek"
+      ],
+      "unresolved_source_occurrences": 52,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Robotrek (USA) (Action Replay).cht",
+          "ordinal": 5,
+          "source_code": "039A17A9+039A1899+039A1999+03BA8EA9+03BA8F99+03BA9099",
+          "source_git_blob_sha": "b258f5618b0e3b68285c07db7dbd60922f3fa1b2"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Robotrek (USA) (Action Replay).cht",
+          "ordinal": 6,
+          "source_code": "08EEA0EA+08EEA1EA+08EEA28D",
+          "source_git_blob_sha": "b258f5618b0e3b68285c07db7dbd60922f3fa1b2"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Robotrek (USA) (Action Replay).cht",
+          "ordinal": 7,
+          "source_code": "838A3D02+85F596A9+85F59799+85F59800+85F599EA",
+          "source_git_blob_sha": "b258f5618b0e3b68285c07db7dbd60922f3fa1b2"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-punch-out",
+      "title_hints": [
+        "Super Punch-Out!!"
+      ],
+      "unresolved_source_occurrences": 52,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Punch-Out!! (USA).cht",
+          "ordinal": 3,
+          "source_code": "CB34-AD07+F834-AD67+3C34-ADA7",
+          "source_git_blob_sha": "322df0c602b60d8858e5d23daf4606e4fe5e6ed7"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Punch-Out!! (USA).cht",
+          "ordinal": 12,
+          "source_code": "DB8A-D4A1+D48A-D7D1+3C8A-D701",
+          "source_git_blob_sha": "322df0c602b60d8858e5d23daf4606e4fe5e6ed7"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Punch-Out!! (USA).cht",
+          "ordinal": 13,
+          "source_code": "CB84-DDA7+DD84-DFD7",
+          "source_git_blob_sha": "322df0c602b60d8858e5d23daf4606e4fe5e6ed7"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "thunder-spirits",
+      "title_hints": [
+        "Thunder Spirits"
+      ],
+      "unresolved_source_occurrences": 52,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Japan"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Thunder Spirits (USA).cht",
+          "ordinal": 4,
+          "source_code": "68BF-0D6D+C4BF-0DAD",
+          "source_git_blob_sha": "c486ead4bae5e1e4396c48022c476ae6a31ad156"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Thunder Spirits (USA).cht",
+          "ordinal": 5,
+          "source_code": "D0BF-0D6D+C3BF-0DAD",
+          "source_git_blob_sha": "c486ead4bae5e1e4396c48022c476ae6a31ad156"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Thunder Spirits (USA).cht",
+          "ordinal": 7,
+          "source_code": "EEB3-DD0D+CBB3-DDDD",
+          "source_git_blob_sha": "c486ead4bae5e1e4396c48022c476ae6a31ad156"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "urban-strike",
+      "title_hints": [
+        "Urban Strike"
+      ],
+      "unresolved_source_occurrences": 52,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Urban Strike (USA).cht",
+          "ordinal": 9,
+          "source_code": "DD3C-1682+DD3C-16E2",
+          "source_git_blob_sha": "39404a3f2abac61fe1fa2db5bb59350dd71f1567"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Urban Strike (USA).cht",
+          "ordinal": 10,
+          "source_code": "103C-1682+DD3C-16E2",
+          "source_git_blob_sha": "39404a3f2abac61fe1fa2db5bb59350dd71f1567"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Urban Strike (USA).cht",
+          "ordinal": 11,
+          "source_code": "A63C-1682+DD3C-16E2",
+          "source_git_blob_sha": "39404a3f2abac61fe1fa2db5bb59350dd71f1567"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "james-bond-jr",
+      "title_hints": [
+        "James Bond Jr"
+      ],
+      "unresolved_source_occurrences": 51,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/James Bond Jr (USA).cht",
+          "ordinal": 15,
+          "source_code": "DDA9-640D+CEE7-64AD",
+          "source_git_blob_sha": "491e951f609ba675b7da2d1e68adbd58ddfddca5"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/James Bond Jr (USA).cht",
+          "ordinal": 16,
+          "source_code": "D9A9-640D+CEE7-64AD",
+          "source_git_blob_sha": "491e951f609ba675b7da2d1e68adbd58ddfddca5"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/James Bond Jr (USA).cht",
+          "ordinal": 17,
+          "source_code": "FBA9-640D+CEE7-64AD",
+          "source_git_blob_sha": "491e951f609ba675b7da2d1e68adbd58ddfddca5"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-bases-loaded",
+      "title_hints": [
+        "Super Bases Loaded"
+      ],
+      "unresolved_source_occurrences": 51,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Bases Loaded (USA) (Action Replay).cht",
+          "ordinal": 8,
+          "source_code": "00C34E01+00C36A00+00F24601",
+          "source_git_blob_sha": "e895dc4a884ca579df7c8b391e4b3cf2c4fc2a2c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Bases Loaded (USA) (Action Replay).cht",
+          "ordinal": 9,
+          "source_code": "00C34E03+00C36A02+00F24603",
+          "source_git_blob_sha": "e895dc4a884ca579df7c8b391e4b3cf2c4fc2a2c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Bases Loaded (USA) (Action Replay).cht",
+          "ordinal": 10,
+          "source_code": "00C34E05+00C36A04+00F24605",
+          "source_git_blob_sha": "e895dc4a884ca579df7c8b391e4b3cf2c4fc2a2c"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "shin-megami-tensei-j-v1-0-t-eng1-00-agtp",
+      "title_hints": [
+        "Shin Megami Tensei (J) (V1.0) [T+Eng1.00_AGTP]"
+      ],
+      "unresolved_source_occurrences": 50,
+      "distinct_source_records": 1,
+      "region_hints": [],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shin Megami Tensei (J) (V1.0) [T+Eng1.00_AGTP].cht",
+          "ordinal": 1,
+          "source_code": "7E04053F+7E040642+7E04070F",
+          "source_git_blob_sha": "ee82d44fcdb4f16e513a2d73fb569572f2e7cab3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shin Megami Tensei (J) (V1.0) [T+Eng1.00_AGTP].cht",
+          "ordinal": 2,
+          "source_code": "7E04099F+7E040A86+7E040B01",
+          "source_git_blob_sha": "ee82d44fcdb4f16e513a2d73fb569572f2e7cab3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Shin Megami Tensei (J) (V1.0) [T+Eng1.00_AGTP].cht",
+          "ordinal": 15,
+          "source_code": "7E101E00+7E101F00",
+          "source_git_blob_sha": "ee82d44fcdb4f16e513a2d73fb569572f2e7cab3"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "emerald-dragon",
+      "title_hints": [
+        "Emerald Dragon"
+      ],
+      "unresolved_source_occurrences": 49,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Emerald Dragon (Japan).cht",
+          "ordinal": 258,
+          "source_code": "7E0E3FFF+7E0E40FF+7E0E41FF",
+          "source_git_blob_sha": "9aea57b285c2c077437d378b93e6c9e6c1f71b7b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Emerald Dragon (Japan).cht",
+          "ordinal": 260,
+          "source_code": "7E330827+7E32FB0F",
+          "source_git_blob_sha": "9aea57b285c2c077437d378b93e6c9e6c1f71b7b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Emerald Dragon (Japan).cht",
+          "ordinal": 262,
+          "source_code": "7E32D400+7E32C700",
+          "source_git_blob_sha": "9aea57b285c2c077437d378b93e6c9e6c1f71b7b"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "mortal-kombat-3",
+      "title_hints": [
+        "Mortal Kombat 3"
+      ],
+      "unresolved_source_occurrences": 49,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat 3 (USA).cht",
+          "ordinal": 2,
+          "source_code": "7E010400+7E020400+7E030400+7E040400+7E050400+7E060400+7E070400+7E080400+7E090400+7E0A0400+7E0B0400+7E0C0400+7E0D0400",
+          "source_git_blob_sha": "2f9f67ec70291f582de674941a5fe9cf62a7b2e7"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat 3 (USA).cht",
+          "ordinal": 3,
+          "source_code": "7E017600+7E027600+7E037600+7E047600+7E057600+7E067600+7E077600+7E087600+7E097600+7E0A7600+7E0B7600+7E0C7600+7E0D7600",
+          "source_git_blob_sha": "2f9f67ec70291f582de674941a5fe9cf62a7b2e7"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat 3 (USA).cht",
+          "ordinal": 62,
+          "source_code": "CE8F-3FB7+BA23-3727+DDAE-4FFF",
+          "source_git_blob_sha": "2f9f67ec70291f582de674941a5fe9cf62a7b2e7"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-soccer",
+      "title_hints": [
+        "Super Soccer"
+      ],
+      "unresolved_source_occurrences": 49,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Soccer (USA) (Game Genie).cht",
+          "ordinal": 0,
+          "source_code": "FC2A-0F65+3C2A-0FA5",
+          "source_git_blob_sha": "bb36aeddd776955b22d09ca642885a5c30c82320"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Soccer (USA) (Game Genie).cht",
+          "ordinal": 1,
+          "source_code": "FC2A-0F65+FC2A-0FA5",
+          "source_git_blob_sha": "bb36aeddd776955b22d09ca642885a5c30c82320"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Soccer (USA) (Game Genie).cht",
+          "ordinal": 2,
+          "source_code": "1B2A-0F65+D72A-0FA5",
+          "source_git_blob_sha": "bb36aeddd776955b22d09ca642885a5c30c82320"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-mario-all-stars",
+      "title_hints": [
+        "Super Mario All-Stars"
+      ],
+      "unresolved_source_occurrences": 48,
+      "distinct_source_records": 1,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario All-Stars (USA).cht",
+          "ordinal": 1,
+          "source_code": "DADF-F30D+D7DF-F36D",
+          "source_git_blob_sha": "51c6ced0dad81b5263b7d8f40dcb0b8d0217d1d3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario All-Stars (USA).cht",
+          "ordinal": 11,
+          "source_code": "CB81-0D02+EC81-0D62+3C81-0DA2",
+          "source_git_blob_sha": "51c6ced0dad81b5263b7d8f40dcb0b8d0217d1d3"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario All-Stars (USA).cht",
+          "ordinal": 55,
+          "source_code": "CB81-0D02+E281-0D62+3C81-0DA2",
+          "source_git_blob_sha": "51c6ced0dad81b5263b7d8f40dcb0b8d0217d1d3"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "phalanx",
+      "title_hints": [
+        "Phalanx"
+      ],
+      "unresolved_source_occurrences": 47,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Phalanx (USA).cht",
+          "ordinal": 0,
+          "source_code": "DFA8-05E3+DF2D-015A",
+          "source_git_blob_sha": "ed0693b23ecbce6b8661ee510c45b00959d1376c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Phalanx (USA).cht",
+          "ordinal": 1,
+          "source_code": "D4A8-05E3+D42D-015A",
+          "source_git_blob_sha": "ed0693b23ecbce6b8661ee510c45b00959d1376c"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Phalanx (USA).cht",
+          "ordinal": 2,
+          "source_code": "D7A8-05E3+D72D-015A",
+          "source_git_blob_sha": "ed0693b23ecbce6b8661ee510c45b00959d1376c"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "final-fantasy-ii",
+      "title_hints": [
+        "Final Fantasy II"
+      ],
+      "unresolved_source_occurrences": 46,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy II (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E1706??+7E1707??",
+          "source_git_blob_sha": "567a1113e40327ce9eae0b9dc682617758a8deaf"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy II (USA) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E0947FF+7E0948FF+7E0949FF",
+          "source_git_blob_sha": "567a1113e40327ce9eae0b9dc682617758a8deaf"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy II (USA) (Action Replay).cht",
+          "ordinal": 12,
+          "source_code": "01C702AD+01C707AE",
+          "source_git_blob_sha": "567a1113e40327ce9eae0b9dc682617758a8deaf"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-ghouls-n-ghosts",
+      "title_hints": [
+        "Super Ghouls 'N Ghosts",
+        "Super Ghouls'n Ghosts"
+      ],
+      "unresolved_source_occurrences": 46,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe",
+        "USA, Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Ghouls 'N Ghosts (USA).cht",
+          "ordinal": 7,
+          "source_code": "7E14BB00+7E14BC00",
+          "source_git_blob_sha": "8ce4be4eede197ae7aa87de99b055d745e141d7e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Ghouls 'N Ghosts (USA).cht",
+          "ordinal": 13,
+          "source_code": "7E044A01+7E14BA01",
+          "source_git_blob_sha": "8ce4be4eede197ae7aa87de99b055d745e141d7e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Ghouls 'N Ghosts (USA).cht",
+          "ordinal": 17,
+          "source_code": "CBC3-D4D5+FCC3-D465+DDC3-D405",
+          "source_git_blob_sha": "8ce4be4eede197ae7aa87de99b055d745e141d7e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "battle-clash",
+      "title_hints": [
+        "Battle Clash"
+      ],
+      "unresolved_source_occurrences": 45,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Battle Clash (USA).cht",
+          "ordinal": 7,
+          "source_code": "CBAB-CDA0+DDAB-CF00+DDAB-CFD0",
+          "source_git_blob_sha": "b63a52ee7b5d7aaa8989ea220d8fa023ee8cd230"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Battle Clash (USA).cht",
+          "ordinal": 8,
+          "source_code": "CBAB-CDA0+DDAB-CF00+DFAB-CFD0",
+          "source_git_blob_sha": "b63a52ee7b5d7aaa8989ea220d8fa023ee8cd230"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Battle Clash (USA).cht",
+          "ordinal": 9,
+          "source_code": "CBAB-CDA0+DDAB-CF00+D4AB-CFD0",
+          "source_git_blob_sha": "b63a52ee7b5d7aaa8989ea220d8fa023ee8cd230"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "final-fantasy-mystic-quest",
+      "title_hints": [
+        "Final Fantasy - Mystic Quest"
+      ],
+      "unresolved_source_occurrences": 45,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy - Mystic Quest (USA) (Action Replay).cht",
+          "ordinal": 16,
+          "source_code": "00A04044+15C049D5",
+          "source_git_blob_sha": "ca44511942cd2d4bcbd7e517f7293b51ccb09254"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy - Mystic Quest (USA) (Action Replay).cht",
+          "ordinal": 17,
+          "source_code": "00B0704D+15E0A919",
+          "source_git_blob_sha": "ca44511942cd2d4bcbd7e517f7293b51ccb09254"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Final Fantasy - Mystic Quest (USA) (Action Replay).cht",
+          "ordinal": 18,
+          "source_code": "00B0704D+15E0A949",
+          "source_git_blob_sha": "ca44511942cd2d4bcbd7e517f7293b51ccb09254"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "live-a-live",
+      "title_hints": [
+        "Live A Live"
+      ],
+      "unresolved_source_occurrences": 45,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Live A Live (Japan) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "C14BB722+C14BB830+C14BB9FF+C14BBADF+DFFF3085+DFFF31DC+DFFF3248+DFFF33A9+DFFF3400+DFFF3500+DFFF368F+DFFF37F0+DFFF38FF+DFFF397F+DFFF3A68+DFFF3BE2+DFFF3C20+DFFF3D6B",
+          "source_git_blob_sha": "12983f432341cd8ec63c5de272f63b840a2f5787"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Live A Live (Japan) (Game Genie).cht",
+          "ordinal": 0,
+          "source_code": "1D9D-E7D6+D05D-8DDC+DA5D-84DC+DD54-84DC+DD54-8DDC",
+          "source_git_blob_sha": "015845dc9f64d8e1ab1224601401e834f7733149"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Live A Live (Japan) (Game Genie).cht",
+          "ordinal": 3,
+          "source_code": "1095-7D00+5D95-7D60",
+          "source_git_blob_sha": "015845dc9f64d8e1ab1224601401e834f7733149"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "nhlpa-hockey-93",
+      "title_hints": [
+        "NHLPA Hockey 93"
+      ],
+      "unresolved_source_occurrences": 45,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NHLPA Hockey 93 (USA).cht",
+          "ordinal": 5,
+          "source_code": "7AE8-4D98+DDE8-4DB8",
+          "source_git_blob_sha": "16b707d1e4ef32d2ecce9166e4bc17884e11ce70"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NHLPA Hockey 93 (USA).cht",
+          "ordinal": 6,
+          "source_code": "56E8-4D98+DDE8-4DB8",
+          "source_git_blob_sha": "16b707d1e4ef32d2ecce9166e4bc17884e11ce70"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NHLPA Hockey 93 (USA).cht",
+          "ordinal": 7,
+          "source_code": "80E8-4D98+DDE8-4DB8",
+          "source_git_blob_sha": "16b707d1e4ef32d2ecce9166e4bc17884e11ce70"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "contra-iii-the-alien-wars",
+      "title_hints": [
+        "Contra III - The Alien Wars"
+      ],
+      "unresolved_source_occurrences": 43,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Contra III - The Alien Wars (USA) (Action Replay).cht",
+          "ordinal": 12,
+          "source_code": "7E174602FF+7E1F8A02FF",
+          "source_git_blob_sha": "f51b91eab135a020ec96c3f0b9ebad50ef483023"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Contra III - The Alien Wars (USA) (Action Replay).cht",
+          "ordinal": 13,
+          "source_code": "7E175C03FF+7E1F0C02FF",
+          "source_git_blob_sha": "f51b91eab135a020ec96c3f0b9ebad50ef483023"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Contra III - The Alien Wars (USA) (Action Replay).cht",
+          "ordinal": 28,
+          "source_code": "029695DD+02969880",
+          "source_git_blob_sha": "f51b91eab135a020ec96c3f0b9ebad50ef483023"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "primal-rage",
+      "title_hints": [
+        "Primal Rage"
+      ],
+      "unresolved_source_occurrences": 43,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Primal Rage (USA).cht",
+          "ordinal": 6,
+          "source_code": "7E027000+7E02CE54",
+          "source_git_blob_sha": "ddf35f9669881c238b7ece632275a7035af62c70"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Primal Rage (USA).cht",
+          "ordinal": 25,
+          "source_code": "7E1B0E06+7E1BCE01",
+          "source_git_blob_sha": "ddf35f9669881c238b7ece632275a7035af62c70"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Primal Rage (USA).cht",
+          "ordinal": 26,
+          "source_code": "7E1B1206+7E1BD201",
+          "source_git_blob_sha": "ddf35f9669881c238b7ece632275a7035af62c70"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-mario-kart",
+      "title_hints": [
+        "Super Mario Kart"
+      ],
+      "unresolved_source_occurrences": 43,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (USA).cht",
+          "ordinal": 1,
+          "source_code": "7E019200+7E103100",
+          "source_git_blob_sha": "b9f0bd125390f0e9bd8bf351936d58f5bae05be8"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (USA).cht",
+          "ordinal": 2,
+          "source_code": "7E019400+7E103200",
+          "source_git_blob_sha": "b9f0bd125390f0e9bd8bf351936d58f5bae05be8"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (USA).cht",
+          "ordinal": 4,
+          "source_code": "C2BC-C7A9+D0BC-C4A9",
+          "source_git_blob_sha": "b9f0bd125390f0e9bd8bf351936d58f5bae05be8"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "lagoon",
+      "title_hints": [
+        "Lagoon"
+      ],
+      "unresolved_source_occurrences": 42,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lagoon (USA).cht",
+          "ordinal": 0,
+          "source_code": "7E04D0FF+7E04D1FF+7E04D2FF+7E04D3F8",
+          "source_git_blob_sha": "ce84b6fa03a37c4a0458a34175c15602debd484b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lagoon (USA).cht",
+          "ordinal": 1,
+          "source_code": "7E04D4FF+7E04D5FF+7E04D6FF+7E04D780",
+          "source_git_blob_sha": "ce84b6fa03a37c4a0458a34175c15602debd484b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lagoon (USA).cht",
+          "ordinal": 8,
+          "source_code": "7E052AFF+7E052BFF",
+          "source_git_blob_sha": "ce84b6fa03a37c4a0458a34175c15602debd484b"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "john-madden-football",
+      "title_hints": [
+        "John Madden Football"
+      ],
+      "unresolved_source_occurrences": 41,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/John Madden Football (USA) (Action Replay).cht",
+          "ordinal": 34,
+          "source_code": "008EA1A9+008EA203+008EA48D+008EA526+008EAAF0",
+          "source_git_blob_sha": "56769cd7e39aa12ef5a9b703e762f0d786c795d7"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/John Madden Football (USA) (Action Replay).cht",
+          "ordinal": 35,
+          "source_code": "008EA1A9+008EA203+008EA48D+008EA52B+008EAAF0",
+          "source_git_blob_sha": "56769cd7e39aa12ef5a9b703e762f0d786c795d7"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/John Madden Football (USA) (Action Replay).cht",
+          "ordinal": 36,
+          "source_code": "008EA1A9+008EA209+008EA48D+008EA526+008EAAF0",
+          "source_git_blob_sha": "56769cd7e39aa12ef5a9b703e762f0d786c795d7"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "lufia-the-fortress-of-doom",
+      "title_hints": [
+        "Lufia _ the Fortress of Doom"
+      ],
+      "unresolved_source_occurrences": 41,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E054300+7E054400",
+          "source_git_blob_sha": "cf407d6679e5838cbb449bbe021027039d9ccc1a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E14CF7F+7E14D096+7E14D198",
+          "source_git_blob_sha": "cf407d6679e5838cbb449bbe021027039d9ccc1a"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA).cht",
+          "ordinal": 92,
+          "source_code": "7E054300+7E054400",
+          "source_git_blob_sha": "4e37f9d9846e7c548a421b99f167d705ee8bdc0e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "advanced-dungeons-dragons-eye-of-the-beholder",
+      "title_hints": [
+        "Advanced Dungeons _ Dragons - Eye of the Beholder"
+      ],
+      "unresolved_source_occurrences": 40,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Advanced Dungeons _ Dragons - Eye of the Beholder (USA) (Action Replay).cht",
+          "ordinal": 3,
+          "source_code": "06C3CFA9+06C3D1EA",
+          "source_git_blob_sha": "5b981ab2b35e6faa71b0d383701a8190d5530a3f"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Advanced Dungeons _ Dragons - Eye of the Beholder (USA) (Action Replay).cht",
+          "ordinal": 4,
+          "source_code": "0685F9BD+06BA73BD",
+          "source_git_blob_sha": "5b981ab2b35e6faa71b0d383701a8190d5530a3f"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Advanced Dungeons _ Dragons - Eye of the Beholder (USA) (Game Genie).cht",
+          "ordinal": 0,
+          "source_code": "8285-6D2C+82DE-049B",
+          "source_git_blob_sha": "cd2af93b9b71cd09ccbb0378ca31739e5fa3181e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "d-force",
+      "title_hints": [
+        "D-Force"
+      ],
+      "unresolved_source_occurrences": 40,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/D-Force (USA) (Action Replay).cht",
+          "ordinal": 3,
+          "source_code": "00842ADA+0084A930",
+          "source_git_blob_sha": "8117aa582f05e0636b13d7c391afd42940f8c92e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/D-Force (USA) (Action Replay).cht",
+          "ordinal": 4,
+          "source_code": "0084B20F+0084B50B",
+          "source_git_blob_sha": "8117aa582f05e0636b13d7c391afd42940f8c92e"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/D-Force (USA) (Action Replay).cht",
+          "ordinal": 5,
+          "source_code": "00908B10+00908E0C",
+          "source_git_blob_sha": "8117aa582f05e0636b13d7c391afd42940f8c92e"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "dragon-quest-v-tenkuu-no-hanayome",
+      "title_hints": [
+        "Dragon Quest V - Tenkuu no Hanayome"
+      ],
+      "unresolved_source_occurrences": 40,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Japan"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest V - Tenkuu no Hanayome (Japan) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E203C90+7E203DD0+7E203E03",
+          "source_git_blob_sha": "41b25affc199068edf1ca678b1560b79ed3fa812"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest V - Tenkuu no Hanayome (Japan) (Action Replay).cht",
+          "ordinal": 3,
+          "source_code": "7E20199F+7E201A75+7E201B00",
+          "source_git_blob_sha": "41b25affc199068edf1ca678b1560b79ed3fa812"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Dragon Quest V - Tenkuu no Hanayome (Japan) (Action Replay).cht",
+          "ordinal": 4,
+          "source_code": "7E10FC??+7E10FD??+7E10FE??",
+          "source_git_blob_sha": "41b25affc199068edf1ca678b1560b79ed3fa812"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "terranigma",
+      "title_hints": [
+        "Terranigma"
+      ],
+      "unresolved_source_occurrences": 40,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Terranigma (Europe) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "7E0662FF+0FE065DF",
+          "source_git_blob_sha": "5c7506b864c105e453557e868435a2f235c8e269"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Terranigma (Europe) (Action Replay).cht",
+          "ordinal": 4,
+          "source_code": "7E065FFF+7E0660FF+7E0663FF+7E0666FF",
+          "source_git_blob_sha": "5c7506b864c105e453557e868435a2f235c8e269"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Terranigma (Europe) (Action Replay).cht",
+          "ordinal": 10,
+          "source_code": "7E0690FF+7E06910F+7E0692A5+7E0693D4",
+          "source_git_blob_sha": "5c7506b864c105e453557e868435a2f235c8e269"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "we-re-back-a-dinosaur-s-story",
+      "title_hints": [
+        "We're Back! - A Dinosaur's Story"
+      ],
+      "unresolved_source_occurrences": 39,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/We're Back! - A Dinosaur's Story (USA).cht",
+          "ordinal": 7,
+          "source_code": "D48B-C110+D466-49CC",
+          "source_git_blob_sha": "beace06f55e64c64f37d3d5285691a7c4935b89f"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/We're Back! - A Dinosaur's Story (USA).cht",
+          "ordinal": 14,
+          "source_code": "CB85-1530+D486-1040+DD86-1010",
+          "source_git_blob_sha": "beace06f55e64c64f37d3d5285691a7c4935b89f"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/We're Back! - A Dinosaur's Story (USA).cht",
+          "ordinal": 15,
+          "source_code": "CB85-1530+D786-1040+DD86-1010",
+          "source_git_blob_sha": "beace06f55e64c64f37d3d5285691a7c4935b89f"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "nba-jam-tournament-edition",
+      "title_hints": [
+        "NBA Jam - Tournament Edition"
+      ],
+      "unresolved_source_occurrences": 38,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA",
+        "USA, Japan"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NBA Jam - Tournament Edition (USA) (Beta).cht",
+          "ordinal": 0,
+          "source_code": "7E16CB00+7E16CC00",
+          "source_git_blob_sha": "38fca66f4f69eb4389f696c48792e91fe2f068f9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NBA Jam - Tournament Edition (USA) (Beta).cht",
+          "ordinal": 1,
+          "source_code": "7E16CD00+7E16CE00",
+          "source_git_blob_sha": "38fca66f4f69eb4389f696c48792e91fe2f068f9"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/NBA Jam - Tournament Edition (USA) (Beta).cht",
+          "ordinal": 2,
+          "source_code": "7E16CF00+7E16D000",
+          "source_git_blob_sha": "38fca66f4f69eb4389f696c48792e91fe2f068f9"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-r-type",
+      "title_hints": [
+        "Super R-Type"
+      ],
+      "unresolved_source_occurrences": 37,
+      "distinct_source_records": 2,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super R-Type (USA).cht",
+          "ordinal": 2,
+          "source_code": "DF66-0F00+CB66-0FD0+DD66-0F60",
+          "source_git_blob_sha": "1be9fd9129a43da0f4393588310ea1367b8cdc5b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super R-Type (USA).cht",
+          "ordinal": 3,
+          "source_code": "D466-0F00+CB66-0FD0+DD66-0F60",
+          "source_git_blob_sha": "1be9fd9129a43da0f4393588310ea1367b8cdc5b"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super R-Type (USA).cht",
+          "ordinal": 4,
+          "source_code": "D066-0F00+CB66-0FD0+DD66-0F60",
+          "source_git_blob_sha": "1be9fd9129a43da0f4393588310ea1367b8cdc5b"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "extra-innings",
+      "title_hints": [
+        "Extra Innings"
+      ],
+      "unresolved_source_occurrences": 35,
+      "distinct_source_records": 3,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Extra Innings (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "008C2EAD+008F4BAD",
+          "source_git_blob_sha": "408f85bc8341233bad292dc54d51a868ce3da751"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Extra Innings (USA) (Action Replay).cht",
+          "ordinal": 1,
+          "source_code": "008C3501+008F4800",
+          "source_git_blob_sha": "408f85bc8341233bad292dc54d51a868ce3da751"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Extra Innings (USA) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "008C3502+008F4801",
+          "source_git_blob_sha": "408f85bc8341233bad292dc54d51a868ce3da751"
+        }
+      ]
+    }
+  ]
+}

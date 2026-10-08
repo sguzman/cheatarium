@@ -9,6 +9,7 @@
   "lexical_effect_tag_matches": 65495,
   "reviewed_snes_revision_alternatives": 27,
   "unresolved_snes_plus_groups": 14565,
+  "unresolved_snes_candidate_groups": 928,
   "reviewed_effect_claims": 5,
   "observed_effect_claims": 0,
   "effect_taxonomy": "cheatarium-effect-signals-en-v1",
@@ -518,6 +519,11 @@
       "path": "reports/snes-codec-coverage.json",
       "sha256": "a92cd6a22cc793623358a63c8f971881af4f46a157ee2694fd299bdfc021cb6c",
       "size_bytes": 3702
+    },
+    {
+      "path": "reports/snes-composition-review-queue.json",
+      "sha256": "82d18ecc2128c50c8282193a0029d1ab7492a07ecafc56d562e5dd8b40543b96",
+      "size_bytes": 132540
     },
     {
       "path": "reviews.json",
