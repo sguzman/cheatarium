@@ -106,6 +106,8 @@ jobs:
           publication_count = len(publications["records"])
           manifest = json.loads((root / "distribution.json").read_text())
           assert manifest["historical_snes_publication_witnesses"] == publication_count
+          assert manifest["historical_snes_source_blobs_audited"] == len({r["source_record_id"] for r in publications["records"]})
+          assert manifest["historical_snes_source_ordinals_audited"] == publication_count
           assert manifest["unresolved_snes_without_publication_witness"] == manifest["unresolved_snes_plus_groups"] - publication_count
           witness = next(x for x in manifest["files"] if x["path"] == "interpretations/snes-published-groups.json")
           assert witness["size_bytes"] > 0 and len(witness["sha256"]) == 64
