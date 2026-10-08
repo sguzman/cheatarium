@@ -83,6 +83,8 @@ jobs:
           python3 tools/validate_snes_publications.py --check
           python3 tools/inspect_snes_joins.py --game-key push-over --limit 2 \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_unresolved_source_occurrences"] >= 2 and d["returned"] == 2 and d["has_more"] and d["historical_publication_witnesses"] == 3; assert not d["effect_or_compatibility_verified"] and all(x["original_code"] and x["provenance"]["git_blob_sha"] for x in d["occurrences"])'
+          python3 tools/inspect_snes_joins.py --game-key push-over --witnessed-only \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["witness_filter"] == "witnessed" and d["selected_source_occurrences"] == 3 and d["returned"] == 3; assert all("historical_publication_witness" in x for x in d["occurrences"])'
           python3 tools/build_distribution.py --write
           python3 tools/build_distribution.py --check
       - name: Smoke-test exported catalog
