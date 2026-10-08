@@ -39,13 +39,16 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     if mode == "verify" {
         verify_platform_distribution(&root, &platform)?;
         if json {
-            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-                "schema": "cheatarium.integrity.v1",
-                "platform": platform,
-                "artifact_checksums_match": true,
-                "manifest_authenticated": false,
-                "cheats_verified": false
-            }))?);
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.integrity.v1",
+                    "platform": platform,
+                    "artifact_checksums_match": true,
+                    "manifest_authenticated": false,
+                    "cheats_verified": false
+                }))?
+            );
         } else {
             println!("OK: {platform} artifacts match local distribution.json SHA-256 checksums");
             println!("The manifest itself is not authenticated, and cheats remain unverified.");

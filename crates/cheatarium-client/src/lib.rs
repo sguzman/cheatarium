@@ -192,7 +192,9 @@ fn sha256_reader(mut reader: impl Read) -> Result<(String, u64)> {
             break;
         }
         hasher.update(&buffer[..n]);
-        bytes = bytes.checked_add(n as u64).ok_or("Artifact size overflow")?;
+        bytes = bytes
+            .checked_add(n as u64)
+            .ok_or("Artifact size overflow")?;
     }
     Ok((format!("{:x}", hasher.finalize()), bytes))
 }
@@ -209,7 +211,9 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
         .find(|item| item.platform == platform)
         .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
     if platform.is_empty()
-        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || !platform
+            .bytes()
+            .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
         || entry.artifact != format!("{platform}.json.gz")
     {
         return Err("Unsafe Cheatarium artifact path".into());
@@ -235,7 +239,9 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
     }
     for name in artifacts {
         let mut references = manifest.files.iter().filter(|file| file.path == name);
-        let expected = references.next().ok_or_else(|| format!("Unlisted Cheatarium artifact: {name}"))?;
+        let expected = references
+            .next()
+            .ok_or_else(|| format!("Unlisted Cheatarium artifact: {name}"))?;
         if references.next().is_some() {
             return Err(format!("Duplicate manifest artifact: {name}").into());
         }
@@ -423,7 +429,10 @@ mod tests {
     fn checksum_reader_matches_sha256_test_vector() {
         let (hash, length) = sha256_reader("abc".as_bytes()).unwrap();
         assert_eq!(length, 3);
-        assert_eq!(hash, "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad");
+        assert_eq!(
+            hash,
+            "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+        );
     }
 
     #[test]
