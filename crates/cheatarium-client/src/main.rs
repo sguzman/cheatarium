@@ -1,5 +1,5 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
-use cheatarium_client::{load_game_candidates, load_platform};
+use cheatarium_client::{load_game_candidates, load_platform, verify_platform_distribution};
 use std::env;
 use std::error::Error;
 use std::path::PathBuf;
@@ -14,8 +14,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mode = match args.next().as_deref() {
         Some("search") => "search",
         Some("games") => "games",
+        Some("verify") => "verify",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games> --db generated/v1 --platform snes --title Mario [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|verify> --db generated/v1 --platform snes [--title Mario] [--limit 10] [--json]");
             return Err("Expected search or games subcommand".into());
         }
     };
@@ -35,6 +36,22 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
+    if mode == "verify" {
+        verify_platform_distribution(&root, &platform)?;
+        if json {
+            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+                "schema": "cheatarium.integrity.v1",
+                "platform": platform,
+                "artifact_checksums_match": true,
+                "manifest_authenticated": false,
+                "cheats_verified": false
+            }))?);
+        } else {
+            println!("OK: {platform} artifacts match local distribution.json SHA-256 checksums");
+            println!("The manifest itself is not authenticated, and cheats remain unverified.");
+        }
+        return Ok(());
+    }
     let title = title.ok_or("Please provide --title")?;
     if mode == "games" {
         let index = load_game_candidates(root, &platform)?;

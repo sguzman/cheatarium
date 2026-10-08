@@ -4,6 +4,7 @@
 //! All name matching is *advisory* and must not auto-enable cheats.
 use flate2::read::GzDecoder;
 use serde::{Deserialize, Serialize};
+use sha2::{Digest, Sha256};
 use std::error::Error;
 use std::fs::{self, File};
 use std::io::Read;
@@ -165,6 +166,88 @@ pub fn load_platform(root: impl AsRef<Path>, platform: &str) -> Result<Bundle> {
         return Err("Cheatarium catalog/bundle mismatch".into());
     }
     Ok(bundle)
+}
+
+#[derive(Debug, Deserialize)]
+pub struct DistributionManifest {
+    pub schema_version: u32,
+    pub format: String,
+    pub files: Vec<ArtifactDigest>,
+}
+
+#[derive(Debug, Deserialize)]
+pub struct ArtifactDigest {
+    pub path: String,
+    pub sha256: String,
+    pub size_bytes: u64,
+}
+
+fn sha256_reader(mut reader: impl Read) -> Result<(String, u64)> {
+    let mut hasher = Sha256::new();
+    let mut bytes = 0_u64;
+    let mut buffer = [0_u8; 64 * 1024];
+    loop {
+        let n = reader.read(&mut buffer)?;
+        if n == 0 {
+            break;
+        }
+        hasher.update(&buffer[..n]);
+        bytes = bytes.checked_add(n as u64).ok_or("Artifact size overflow")?;
+    }
+    Ok((format!("{:x}", hasher.finalize()), bytes))
+}
+
+/// Checks catalog and requested console bundles against the local v1 SHA-256
+/// manifest. Does not authenticate the manifest itself: pin a trusted commit
+/// or separately verify the origin of distribution.json.
+pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> Result<()> {
+    let root = root.as_ref();
+    let catalog = load_catalog(root)?;
+    let entry = catalog
+        .bundles
+        .iter()
+        .find(|item| item.platform == platform)
+        .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
+    if platform.is_empty()
+        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || entry.artifact != format!("{platform}.json.gz")
+    {
+        return Err("Unsafe Cheatarium artifact path".into());
+    }
+    let mut artifacts = vec!["catalog.json".to_owned(), entry.artifact.clone()];
+    if let Some(game_path) = &entry.game_index_artifact {
+        if game_path != &format!("games/{platform}.json.gz") {
+            return Err("Unsafe Cheatarium game-index path".into());
+        }
+        artifacts.push(game_path.clone());
+    }
+    let mut content = Vec::new();
+    File::open(root.join("distribution.json"))?
+        .take(MAX_CATALOG_SIZE + 1)
+        .read_to_end(&mut content)?;
+    if content.len() as u64 > MAX_CATALOG_SIZE {
+        return Err("Cheatarium distribution manifest exceeds size limit".into());
+    }
+    let manifest: DistributionManifest = serde_json::from_slice(&content)?;
+    check_schema(manifest.schema_version)?;
+    if manifest.format != "cheatarium-distribution-v1" {
+        return Err("Unsupported Cheatarium distribution manifest".into());
+    }
+    for name in artifacts {
+        let mut references = manifest.files.iter().filter(|file| file.path == name);
+        let expected = references.next().ok_or_else(|| format!("Unlisted Cheatarium artifact: {name}"))?;
+        if references.next().is_some() {
+            return Err(format!("Duplicate manifest artifact: {name}").into());
+        }
+        if expected.sha256.len() != 64 || !expected.sha256.bytes().all(|c| c.is_ascii_hexdigit()) {
+            return Err(format!("Malformed SHA-256 checksum for {name}").into());
+        }
+        let (actual_hash, actual_length) = sha256_reader(File::open(root.join(&name))?)?;
+        if actual_hash != expected.sha256 || actual_length != expected.size_bytes {
+            return Err(format!("Cheatarium checksum/length mismatch for {name}").into());
+        }
+    }
+    Ok(())
 }
 
 /// Advisory grouping of source occurrences under filename-derived titles.
@@ -334,6 +417,13 @@ mod tests {
         let group = index.by_candidate_key("super-mario-world").unwrap();
         assert_eq!(group.source_record_ids.len(), 2);
         assert!(group.possible_title_collision);
+    }
+
+    #[test]
+    fn checksum_reader_matches_sha256_test_vector() {
+        let (hash, length) = sha256_reader("abc".as_bytes()).unwrap();
+        assert_eq!(length, 3);
+        assert_eq!(hash, "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad");
     }
 
     #[test]
