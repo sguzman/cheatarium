@@ -23,6 +23,8 @@ on:
       - "tools/test_snes_compositions.py"
       - "tools/build_snes_review_queue.py"
       - "tools/test_snes_review_queue.py"
+      - "tools/inspect_snes_joins.py"
+      - "tools/test_inspect_snes_joins.py"
       - "reviews/**"
       - "tools/validate_effect_reviews.py"
       - "tools/test_effect_reviews.py"
@@ -73,6 +75,9 @@ jobs:
           python3 tools/test_snes_review_queue.py
           python3 tools/build_snes_review_queue.py --write
           python3 tools/build_snes_review_queue.py --check
+          python3 tools/test_inspect_snes_joins.py
+          python3 tools/inspect_snes_joins.py --game-key push-over --limit 2 \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_unresolved_source_occurrences"] >= 2 and d["returned"] == 2 and d["has_more"]; assert not d["effect_or_compatibility_verified"] and all(x["original_code"] and x["provenance"]["git_blob_sha"] for x in d["occurrences"])'
           python3 tools/build_distribution.py --write
           python3 tools/build_distribution.py --check
       - name: Smoke-test exported catalog
