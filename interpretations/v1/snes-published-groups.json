@@ -46,6 +46,66 @@
       "safe_to_auto_apply": false
     },
     {
+      "candidate_game_key": "faceball-2000",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Faceball 2000 (USA) (Game Genie).cht",
+      "source_git_blob_sha": "308e73f20c332ccce18df3c91e9c79dff68e6599",
+      "source_ordinal": 10,
+      "raw_code": "CBB5-6406+DFB5-6466",
+      "published_text_segments": [
+        "CBB5-6406",
+        "DFB5-6466"
+      ],
+      "published_effect_description": "Start each Cyberzone level with 1 tag required",
+      "publication": {
+        "url": "https://etherealgames.com/snes/f/faceball-2000/game-genie-codes/",
+        "reference": "Ethereal Games Faceball 2000 Game Genie entry 11",
+        "source_revision": "undated web listing accessed 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "faceball-2000",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Faceball 2000 (USA) (Game Genie).cht",
+      "source_git_blob_sha": "308e73f20c332ccce18df3c91e9c79dff68e6599",
+      "source_ordinal": 11,
+      "raw_code": "CBB5-6406+D9B5-6466",
+      "published_text_segments": [
+        "CBB5-6406",
+        "D9B5-6466"
+      ],
+      "published_effect_description": "Start each Cyberzone level with 5 tags required",
+      "publication": {
+        "url": "https://etherealgames.com/snes/f/faceball-2000/game-genie-codes/",
+        "reference": "Ethereal Games Faceball 2000 Game Genie entry 12",
+        "source_revision": "undated web listing accessed 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "faceball-2000",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Faceball 2000 (USA) (Game Genie).cht",
+      "source_git_blob_sha": "308e73f20c332ccce18df3c91e9c79dff68e6599",
+      "source_ordinal": 12,
+      "raw_code": "CBB5-6406+F0B5-6466",
+      "published_text_segments": [
+        "CBB5-6406",
+        "F0B5-6466"
+      ],
+      "published_effect_description": "Start each Cyberzone level with 20 tags required",
+      "publication": {
+        "url": "https://etherealgames.com/snes/f/faceball-2000/game-genie-codes/",
+        "reference": "Ethereal Games Faceball 2000 Game Genie entry 13",
+        "source_revision": "undated web listing accessed 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
       "candidate_game_key": "ka-blooey",
       "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ka-blooey (USA) (Game Genie).cht",
       "source_git_blob_sha": "4103f84d0acceea4f10281bb69fe680fb357efbb",
