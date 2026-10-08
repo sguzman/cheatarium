@@ -1,7 +1,8 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
 use cheatarium_client::{
     load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
-    reviews::load_effect_reviews, verify_platform_distribution,
+    publications::load_snes_publications, reviews::load_effect_reviews,
+    verify_platform_distribution,
 };
 use std::env;
 use std::error::Error;
@@ -30,9 +31,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("repeats") => "repeats",
         Some("tags") => "tags",
         Some("reviews") => "reviews",
+        Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|compositions|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -75,8 +77,8 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     {
         return Err("--relation must be revision-alternatives or unresolved".into());
     }
-    if mode != "reviews" && source_record_id.is_some() {
-        return Err("--source-record-id applies only to reviews".into());
+    if mode != "reviews" && mode != "publications" && source_record_id.is_some() {
+        return Err("--source-record-id applies only to reviews or publications".into());
     }
     if mode != "repeats" && varying_descriptions {
         return Err("--varying-descriptions applies only to repeats".into());
@@ -84,8 +86,13 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     if mode != "tags" && mode != "reviews" && category.is_some() {
         return Err("--category applies only to tags or reviews".into());
     }
-    if mode != "repeats" && mode != "tags" && mode != "compositions" && game_key.is_some() {
-        return Err("--game-key applies only to repeats, tags and compositions".into());
+    if mode != "repeats"
+        && mode != "tags"
+        && mode != "compositions"
+        && mode != "publications"
+        && game_key.is_some()
+    {
+        return Err("--game-key applies only to repeats, tags, compositions and publications".into());
     }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
         return Err("--declared-format and --source-id apply only to effects".into());
@@ -115,6 +122,57 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         } else {
             println!("OK: {platform} artifacts match local distribution.json SHA-256 checksums");
             println!("The manifest itself is not authenticated, and cheats remain unverified.");
+        }
+        return Ok(());
+    }
+    if mode == "publications" {
+        if platform != "snes" {
+            return Err("Historical multi-part publication witnesses currently support SNES only".into());
+        }
+        let registry = load_snes_publications(&root)?;
+        let hits: Vec<_> = registry
+            .records
+            .iter()
+            .filter(|item| {
+                game_key
+                    .as_deref()
+                    .is_none_or(|key| key == item.candidate_game_key)
+            })
+            .filter(|item| {
+                source_record_id
+                    .as_deref()
+                    .is_none_or(|id| id == item.source_record_id)
+            })
+            .collect();
+        let total = hits.len();
+        if json {
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.snes_publications.v1",
+                    "platform": "snes",
+                    "game_key_filter": game_key,
+                    "source_record_id_filter": source_record_id,
+                    "total_witnesses": total,
+                    "historical_publication_only": true,
+                    "execution_observed": false,
+                    "rom_match_verified": false,
+                    "safe_to_auto_apply": false,
+                    "publications": hits.into_iter().take(limit).collect::<Vec<_>>(),
+                }))?
+            );
+        } else {
+            println!("{total} historical SNES publication witnesses (not verified execution)");
+            for item in hits.into_iter().take(limit) {
+                println!(
+                    "- {} #{}: {} ({})",
+                    item.source_record_id,
+                    item.source_ordinal,
+                    item.raw_code,
+                    item.publication.reference
+                );
+            }
+            println!("No evidence of cartridge compatibility or safe code activation.");
         }
         return Ok(());
     }
