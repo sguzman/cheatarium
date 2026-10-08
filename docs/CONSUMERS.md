@@ -13,6 +13,7 @@ Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust 
 - `generated/v1/snes.json.gz`: full parsed source occurrences, original code strings, hints and provenance.
 - `generated/v1/identities/snes.json`: separately reviewed ROM hash evidence registry (currently empty; no guessed ROM mappings).
 - `generated/v1/interpretations/snes.json`: evidence-backed revision alternatives for exact original multi-part source codes; all other SNES `+` joins remain unresolved.
+- `generated/v1/interpretations/snes-published-groups.json`: historical source-publication witnesses, linked to exact original source ordinals and Git blobs; never evidence of successful execution.
 - `generated/v1/reports/snes-composition-review-queue.json`: optional, ranked unresolved source-join review priorities with complete source identifiers and advisory candidate names.
 - `generated/v1/distribution.json`: SHA-256 hashes and byte sizes of all artifacts.
 
@@ -29,6 +30,7 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- effects --db 
 cargo run --release -p cheatarium-client --bin cheatarium-query -- repeats --db generated/v1 --platform snes --game-key super-mario-world --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- compositions --db generated/v1 --platform snes --game-key donkey-kong-country --relation revision-alternatives --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- reviews --db generated/v1 --platform snes --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- publications --db generated/v1 --platform snes --game-key push-over --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- reviews --db generated/v1 --platform snes --category lives --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- tags --db generated/v1 --platform snes --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- tags --db generated/v1 --platform snes --category lives --limit 10 --json
@@ -38,6 +40,8 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db g
 ```
 
 `compositions` shows the exact source `+` joins, whether a specific original code is independently documented as a revision-alternative partition, and the source-cited grouping. An unknown join does not become a simultaneously executable program. Even a reviewed version alternative is not tied to an exact ROM revision: no code selection or execution happens. See [SNES code composition](SNES-CODES.md).
+
+`publications` returns the separately validated, source-bound SNES publication-witness registry. It supports `--game-key`, `--source-record-id`, and `--limit`. The Rust client independently checks each witness against its original code string, source ordinal and Git blob. These are *published code text* matches, not gameplay observations or compatibility assertions. No code is executed or activated.
 
 `reviews` lists separately sourced reports and exact-ROM test observations, optionally narrowed by original `--source-record-id` or `--category`. It currently returns five externally reported claims (three SNES and two NES) and zero tested observations. No text-only match has been promoted to an empirically verified cheat. See [effect reviews](EFFECT-REVIEWS.md).
 
