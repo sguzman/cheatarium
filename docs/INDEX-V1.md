@@ -23,6 +23,8 @@ An indexed code entry has an ordinal, description, optional code string, `source
 
 **Game-candidate bundles:** `generated/v1/games/<platform>.json.gz` contains advisory title groups with `key`, title hints, `source_record_ids`, distinct source IDs, region/format hints, counts, and `possible_title_collision`. An ungroupable record remains isolated with an `unresolved:` key.
 
+**Lexical effect-tag bundles:** `generated/v1/tags/<platform>.json.gz` contains word-boundary matches between original cheat descriptions and the separately versioned, checked `generated/v1/taxonomy/effects-v1.json`. Every occurrence links back to the original source record and code ordinal and records the exact matched phrase. Labels are **English-language text cues only** and do not verify gameplay effects, game identity or cartridge compatibility. The catalog adds `tag_index_artifact` and `tag_matches`.
+
 **Raw-code repetition bundles:** `generated/v1/repeats/<platform>.json.gz` lists exact original source-code strings appearing in distinct source files within the same filename-derived game key, region hint, explicit revision marker and declared device format. Each group links back to all original source-record IDs and ordinals, preserving distinct descriptions. It deliberately excludes native memory entries and does **not** assert identical effects or cartridge compatibility. The additive catalog fields `repeat_index_artifact` and `repeat_groups` describe these bundles.
 
 **Catalog:** `generated/v1/catalog.json` references the source and game bundles for each console, with file and entry counts. The additive `decoded_snes_code_fields` reports the number of SNES source code fields decoded in full. `game_index_artifact` and `game_candidate_groups` are additive v1 fields.

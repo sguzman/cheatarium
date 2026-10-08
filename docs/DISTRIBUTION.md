@@ -10,6 +10,8 @@ Every successful index build produces the following under `generated/v1/`:
 - `<platform>.json.gz`: complete, unaltered-in-meaning *parsed source occurrences*, including code entries and byte-level upstream provenance.
 - `games/<platform>.json.gz`: small, **advisory filename-derived game groups** with links back to source occurrence IDs, regions, formats, and counts.
 - `reports/snes-codec-coverage.json`: deterministic SNES device/syntax interpretation coverage audit, including rejected/ambiguous codes and source samples.
+- `taxonomy/effects-v1.json`: versioned lexical effect taxonomy (included once in the manifest).
+- `tags/<platform>.json.gz`: per-console lexical description phrase hits, each linked back to its source occurrence; recomputed from originals during validation.
 - `repeats/<platform>.json.gz`: per-console exact-text repetition candidates with source references, included in the manifest for all 36 bundles.
 - `identities/snes.json`: independent SHA-256 whole-file ROM release evidence registry, copied from `identities/v1/snes.json` and checksummed alongside the cheat bundles. This is **not** a list of verified cheat-to-ROM mappings.
 - `distribution.json`: deterministic SHA-256 digests and byte lengths for every exported artifact (including the coverage report), aggregate counts and additive `decoded_snes_code_fields`. A distribution manifest does **not** sign itself.

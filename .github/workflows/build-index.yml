@@ -67,6 +67,11 @@ jobs:
           assert catalog["schema_version"] == 1
           assert catalog["bundles"]
           for entry in catalog["bundles"]:
+              assert entry["tag_index_artifact"] == f'tags/{entry["platform"]}.json.gz'
+              with gzip.open(root / entry["tag_index_artifact"], "rt") as handle:
+                  tags = json.load(handle)
+              assert tags["platform"] == entry["platform"]
+              assert sum(len(x["matches"]) for x in tags["categories"]) == entry["tag_matches"]
               assert entry["repeat_index_artifact"] == f'repeats/{entry["platform"]}.json.gz'
               with gzip.open(root / entry["repeat_index_artifact"], "rt") as handle:
                   repeat_index = json.load(handle)
@@ -118,6 +123,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- verify \
             --db generated/v1 --platform snes --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["artifact_checksums_match"] and not q["manifest_authenticated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- tags \
+            --db generated/v1 --platform snes --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.lexical_tag_categories.v1" and not x["verified_effect"] and sum(c["matches"] for c in x["categories"]) > 0'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- tags \
+            --db generated/v1 --platform snes --category lives --limit 2 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.lexical_tags.v1" and x["total_matches"] > 0 and not x["verified_effect"] and not x["cheats_activated"] and all(h["matched_phrase"] for h in x["hits"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- effects \
             --db generated/v1 --platform snes --effect "Infinite" --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["schema"] == "cheatarium.effects.v1" and q["total_matches"] > 0 and not q["cheats_activated"]; assert all(hit["provenance"]["git_blob_sha"] for hit in q["hits"])'

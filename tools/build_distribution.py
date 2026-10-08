@@ -7,6 +7,7 @@ import argparse
 import gzip
 import hashlib
 import json
+import re
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,7 +46,30 @@ def build_manifest(root):
     game_groups = 0
     decoded_snes_entries = 0
     repeated_code_groups = 0
-    for rel in ["catalog.json", "reports/snes-codec-coverage.json"]:
+    lexical_tag_matches = 0
+    taxonomy_rel = "taxonomy/effects-v1.json"
+    taxonomy = checked_json(safe_path(root, taxonomy_rel))
+    if (taxonomy.get("schema_version") != 1
+            or taxonomy.get("id") != "cheatarium-effect-signals-en-v1"
+            or taxonomy.get("language") != "en"
+            or taxonomy.get("method") != "ascii-token-phrase"
+            or not isinstance(taxonomy.get("categories"), list)
+            or not taxonomy["categories"]):
+        raise ValueError("Unsupported effect-signal taxonomy")
+    categories = taxonomy["categories"]
+    ids = set()
+    for category in categories:
+        cid = category.get("id", "")
+        phrases = category.get("phrases", [])
+        if (not isinstance(cid, str) or not re.fullmatch(r"[a-z-]+", cid)
+                or cid in ids or not category.get("label")
+                or not isinstance(phrases, list) or not phrases
+                or len(phrases) != len(set(phrases))
+                or any(not p or p != " ".join(re.findall(r"[A-Za-z0-9]+", p)).lower()
+                       for p in phrases)):
+            raise ValueError("Malformed lexical effect category or phrase")
+        ids.add(cid)
+    for rel in ["catalog.json", "reports/snes-codec-coverage.json", taxonomy_rel]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
         named_paths.add(rel)
@@ -60,12 +84,14 @@ def build_manifest(root):
         source_rel = entry["artifact"]
         game_rel = entry["game_index_artifact"]
         repeat_rel = entry["repeat_index_artifact"]
-        if (source_rel != f"{platform}.json.gz"
+        tags_rel = entry["tag_index_artifact"]
+        if (tags_rel != f"tags/{platform}.json.gz"
+                or source_rel != f"{platform}.json.gz"
                 or game_rel != f"games/{platform}.json.gz"
                 or repeat_rel != f"repeats/{platform}.json.gz"):
             raise ValueError(f"Unexpected artifact path for {platform}")
         identity_rel = entry.get("identity_artifact")
-        artifacts = [source_rel, game_rel, repeat_rel]
+        artifacts = [source_rel, game_rel, repeat_rel, tags_rel]
         if identity_rel is not None:
             if identity_rel != f"identities/{platform}.json":
                 raise ValueError(f"Unexpected ROM identity artifact path for {platform}")
@@ -101,6 +127,13 @@ def build_manifest(root):
         bundle = checked_json(safe_path(root, source_rel))
         games = checked_json(safe_path(root, game_rel))
         repeats = checked_json(safe_path(root, repeat_rel))
+        tags = checked_json(safe_path(root, tags_rel))
+        if (tags.get("schema_version") != 1
+                or tags.get("platform") != platform
+                or tags.get("taxonomy_id") != taxonomy["id"]
+                or tags.get("interpretation") != "lexical-source-description-signal-only; no verified game effect or cartridge compatibility"
+                or not isinstance(tags.get("categories"), list)):
+            raise ValueError(f"Malformed lexical effect tag index: {platform}")
         if (repeats.get("schema_version") != 1
                 or repeats.get("platform") != platform
                 or not isinstance(repeats.get("groups"), list)
@@ -119,6 +152,35 @@ def build_manifest(root):
         by_record_id = {r["id"]: r for r in records}
         if len(record_ids) != len(set(record_ids)):
             raise ValueError(f"Duplicate source record IDs: {platform}")
+        # Deterministic exact recomputation from original source descriptions.
+        # Do not infer effect from filenames, code bytes or SNES decoding.
+        expected_tags = {c["id"]: [] for c in categories}
+        for record in records:
+            for cheat in record["codes"]:
+                if cheat["role"] not in ("code", "memory-entry"):
+                    continue
+                desc = cheat.get("description")
+                if not isinstance(desc, str):
+                    continue
+                words = " " + " ".join(w.lower() for w in re.findall(r"[A-Za-z0-9]+", desc)) + " "
+                for cat in categories:
+                    found = next((phrase for phrase in cat["phrases"]
+                                  if " " + phrase + " " in words), None)
+                    if found is not None:
+                        expected_tags[cat["id"]].append({
+                            "source_record_id": record["id"],
+                            "ordinal": cheat["ordinal"],
+                            "candidate_game_key": record["candidate_game_key"],
+                            "matched_phrase": found,
+                        })
+        expected_groups = [{"id": cid, "matches": found}
+                           for cid, found in sorted(expected_tags.items()) if found]
+        if tags["categories"] != expected_groups:
+            raise ValueError(f"Effect tags disagree with source text or evidence rules: {platform}")
+        count_tags = sum(len(group["matches"]) for group in expected_groups)
+        if count_tags != entry["tag_matches"]:
+            raise ValueError(f"Catalog effect-tag match count disagrees: {platform}")
+        lexical_tag_matches += count_tags
         repeated_code_groups += len(repeats["groups"])
         repeat_keys = set()
         for group in repeats["groups"]:
@@ -248,6 +310,8 @@ def build_manifest(root):
         "source_files": source_files,
         "game_candidate_groups": game_groups,
         "repeated_raw_code_groups": repeated_code_groups,
+        "lexical_effect_tag_matches": lexical_tag_matches,
+        "effect_taxonomy": "cheatarium-effect-signals-en-v1",
         "decoded_snes_code_fields": decoded_snes_entries,
         "files": sorted(manifest_files, key=lambda item: item["path"]),
     }

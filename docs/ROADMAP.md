@@ -42,7 +42,8 @@
 - [ ] Establish semantic equivalence and deduplicate only after game/release identity and effect validation.
 - [x] Add case-insensitive, provenance-preserving cheat-effect text search in the Rust client and CLI.
 - [x] Add exact source-ID and provenance-declared device-format filters for effect search.
-- [ ] Expand discovery to contributor/author attribution and richer effect classification.
+- [x] Publish English lexical effect-category signals with inspectable phrases, source occurrence links, query filters and cross-file validation.
+- [ ] Add separately evidenced gameplay-effect semantic reviews, multilingual cues, and contributor/author attribution.
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.
 - [ ] Add a pleasant desktop/game cheat explorer.
