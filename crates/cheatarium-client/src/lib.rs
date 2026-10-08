@@ -4,6 +4,7 @@
 //! All name matching is *advisory* and must not auto-enable cheats.
 pub mod identity;
 pub mod inventory;
+pub mod publications;
 pub mod reviews;
 use flate2::read::GzDecoder;
 use serde::{Deserialize, Serialize};
