@@ -94,10 +94,12 @@ jobs:
           root = Path("generated/v1")
           catalog = json.loads((root / "catalog.json").read_text())
           queue = json.loads((root / "reports/snes-composition-review-queue.json").read_text())
+          publications = json.loads(Path("interpretations/v1/snes-published-groups.json").read_text())
+          publication_count = len(publications["records"])
           assert queue["schema_version"] == 1 and queue["platform"] == "snes"
           assert queue["total_unresolved_source_occurrences"] > 0
-          assert queue["total_historical_publication_witnesses"] == 6
-          assert queue["total_without_publication_witness"] == queue["total_unresolved_source_occurrences"] - 6
+          assert queue["total_historical_publication_witnesses"] == publication_count
+          assert queue["total_without_publication_witness"] == queue["total_unresolved_source_occurrences"] - publication_count
           assert all(b["unresolved_source_occurrences"] == b["historical_publication_witnesses"] + b["occurrences_without_publication_witness"] for b in queue["top_groups"])
           assert len(queue["top_groups"]) <= 100
           assert not queue["effect_or_compatibility_verified"]
