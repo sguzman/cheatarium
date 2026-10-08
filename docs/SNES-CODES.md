@@ -55,9 +55,34 @@ The JSON dossier gives the total unresolved source-occurrence count, distinct **
 
 Identical text strings are not automatically equivalent cheats. A text segment is **not** a verified device write or a recommended code partition. Historical code relationships, game identity, ROM compatibility and activation remain unverified. This inspection tool does not modify indexes, fetch ROMs, decode joined programs, or execute cheats.
 
+### Near-identical source text families
+
+Reviewers can reduce repetitive research by grouping unresolved source entries
+that have the same number of literal `+`-separated parts and share **all but
+one** text component within the **same original source file**:
+
+```sh
+python3 tools/analyze_snes_patterns.py --game-key push-over --min-members 3 --limit 25
+python3 tools/analyze_snes_patterns.py --game-key lemmings --limit 25
+```
+
+The report ranks candidate text patterns by the number of original occurrences,
+retains source ordinals, exact source strings, descriptions and upstream Git
+blob, and identifies which one component text varies. It also counts how many
+members have a separately validated historical publication witness. The
+`--source-record-id` filter restricts one original file; `--offset` and
+`--limit` paginate results.
+
+Patterns are **source-text similarities only**: whitespace is trimmed for
+component comparison without changing published original strings. Families
+can overlap, and their counts must not be summed into unique cheats. A shared
+prefix/suffix does **not** prove same effect, simultaneous writes, alternate
+revisions, safe activation or ROM compatibility. The tool is offline,
+read-only and covered by synthetic adversarial tests.
+
 ### Historical multi-part publication witnesses
 
-An independent, source-bound [publication witness registry](../interpretations/v1/snes-published-groups.json) records 17 original unresolved SNES `+` strings whose exact multi-part code text also appears in historically published code listings: three each from **Ka-Blooey**, **Push-Over**, **Lemmings**, **Ogre Battle** and **Faceball 2000**, plus two from **Bahamut Lagoon**. Each claim includes the original source record/ordinal, upstream Git blob, unchanged joined code, publication URL and listing entry, and a transcription of the publication's effect label.
+A separately validated, source-bound [publication witness registry](../interpretations/v1/snes-published-groups.json) records 17 original unresolved SNES `+` strings whose exact multi-part code text also appears in historically published code listings: three each from **Ka-Blooey**, **Push-Over**, **Lemmings**, **Ogre Battle** and **Faceball 2000**, plus two from **Bahamut Lagoon**. Each claim includes the original source record/ordinal, upstream Git blob, unchanged joined code, publication URL and listing entry, and a transcription of the publication's effect label.
 
 The external listings document how those strings were **published as a grouped entry**. They do not establish whether all components work in gameplay, whether the listing copied the source archive, which cartridge revision is required, or whether applying a decoded write sequence is safe. Accordingly, these records remain `composition.relation: "unresolved"` in the source index; all `execution_observed`, `rom_match_verified` and `safe_to_auto_apply` values are false. Publication witnesses are not counted among the 27 documented revision-alternative partitions.
 
