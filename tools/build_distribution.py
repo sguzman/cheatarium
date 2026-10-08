@@ -49,6 +49,10 @@ def build_manifest(root):
     lexical_tag_matches = 0
     from validate_snes_compositions import audit as audit_compositions
     compositions = audit_compositions(ROOT)
+    from validate_snes_publications import audit as audit_publications
+    publication_witnesses = audit_publications(ROOT)
+    if publication_witnesses["empirically_tested_combinations"] != 0:
+        raise ValueError("Publication witness registry cannot assert empirical execution")
     from build_snes_review_queue import build as rebuild_composition_queue
     queue_rel = "reports/snes-composition-review-queue.json"
     composition_queue = checked_json(safe_path(root, queue_rel))
@@ -86,7 +90,8 @@ def build_manifest(root):
             or not isinstance(review_doc.get("claims"), list)):
         raise ValueError("Unvalidated or changed effect review registry")
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
-                taxonomy_rel, review_rel, composition_rel, queue_rel]:
+                taxonomy_rel, review_rel, composition_rel, queue_rel,
+                "interpretations/snes-published-groups.json"]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
         named_paths.add(rel)
