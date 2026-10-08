@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Adversarial SNES composition fixtures; synthetic strings, no ROMs."""
 import copy
+import hashlib
 import gzip
 import json
 import tempfile
@@ -17,7 +18,12 @@ def save(path, obj):
 def run_tests():
     with tempfile.TemporaryDirectory(prefix="cheatarium-source-join-fixture-") as work:
         root=Path(work)
-        ev={"source_record_id":"fake:record","source_ordinal":2,"source_git_blob_sha":"a"*40,
+        raw=b'cheats = 3\ncheat2_code = "CODE-A+CODE-B+CODE-C+CODE-D"\ncheat3_code = "ABC+DEF"\n'
+        blob=hashlib.sha1(f"blob {len(raw)}".encode()+bytes([0])+raw).hexdigest()
+        archive=root/"archive/libretro/cht/fixture.cht"
+        archive.parent.mkdir(parents=True, exist_ok=True)
+        archive.write_bytes(raw)
+        ev={"source_record_id":"fake:cht/fixture.cht","source_ordinal":2,"source_git_blob_sha":blob,
             "raw_code":"CODE-A+CODE-B+CODE-C+CODE-D","relation":"revision-alternatives",
             "alternatives":[["CODE-A","CODE-B"],["CODE-C","CODE-D"]],
             "evidence":[{"url":"https://example.org/faq","reference":"table 2","source_revision":"v1"}],
@@ -29,7 +35,10 @@ def run_tests():
               "composition":{k:ev[k] for k in ["relation","alternatives","evidence",
                                                 "rom_match_verified","simultaneous_execution_confirmed"]}}
         bundle={"schema_version":1,"platform":"snes","records":[
-            {"id":"fake:record","provenance":{"git_blob_sha":"a"*40},"codes":[code]}
+            {"id":"fake:cht/fixture.cht","provenance":{
+                "source_id":"fake","upstream_path":"cht/fixture.cht",
+                "archive_path":"archive/libretro/cht/fixture.cht",
+                "git_blob_sha":blob},"codes":[code]}
         ]}
         def attempt(reg, data, expected):
             save(root/"interpretations/v1/snes.json",reg)
@@ -45,6 +54,8 @@ def run_tests():
                 if not expected:
                     raise AssertionError("Corrupted source composition accepted")
                 assert stats["reviewed_revision_alternatives"] == 1
+                assert stats["reviewed_original_source_blobs_audited"] == 1
+                assert stats["reviewed_original_source_ordinals_audited"] == 1
         attempt(registry,bundle,True)
         def bad_reg(mut):
             r=copy.deepcopy(registry)
@@ -76,6 +87,9 @@ def run_tests():
             "rom_match_verified":False,"simultaneous_execution_confirmed":False
         }
         attempt(registry,b,True)
+        archive.write_bytes(raw.replace(b"CODE-A", b"CODE-X"))
+        attempt(registry,b,False)
+        archive.write_bytes(raw)
     print("OK: 14 normal and adversarial synthetic SNES composition tests")
 
 
