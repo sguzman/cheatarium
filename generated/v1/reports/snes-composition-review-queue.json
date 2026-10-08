@@ -6,8 +6,8 @@
   "effect_or_compatibility_verified": false,
   "rank_rule": "descending-unresolved-source-occurrences-then-ascending-candidate-key",
   "total_unresolved_source_occurrences": 14565,
-  "total_historical_publication_witnesses": 14,
-  "total_without_publication_witness": 14551,
+  "total_historical_publication_witnesses": 17,
+  "total_without_publication_witness": 14548,
   "candidate_groups_with_unresolved_joins": 928,
   "published_top_limit": 100,
   "top_groups": [
@@ -203,8 +203,8 @@
       ],
       "unresolved_source_occurrences": 253,
       "distinct_source_records": 3,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 253,
+      "historical_publication_witnesses": 3,
+      "occurrences_without_publication_witness": 250,
       "region_hints": [
         "USA"
       ],
