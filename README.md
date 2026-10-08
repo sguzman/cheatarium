@@ -13,6 +13,8 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Platforms](platforms/platforms.json) — stable platform identifiers, including console and handheld generations.
 - [Sources](sources/README.md) — upstream repositories, attribution, licenses, and snapshots.
 - [Adding cheats](docs/ADDING-CHEATS.md) — how new collections and individual cheats enter the archive.
+- [Emulator consumers](docs/CONSUMERS.md) — read-only Rust client and offline search.
+- [Versioned index](docs/INDEX-V1.md) — deterministic per-console bundles and compatibility rules.
 - [Design](docs/DESIGN.md) — the boundaries and data model.
 - [Roadmap](docs/ROADMAP.md) — systems, imports, and future features.
 
@@ -27,6 +29,6 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Status
 
-The foundation is live. **Eight complete Libretro console/handheld collections** have been imported: 14,713 native `.cht` source files, pinned to the 2026-10-05 upstream revision with byte-level provenance. The platform registry covers 50 systems; three games have starter curated records. This distinction matters: archiving thousands of native files is not the same as curating and verifying every individual code. Other systems, better indexing, search, and integrations will follow without rewriting the archive.
+Cheatarium archives **23,382 intact Libretro `.cht` source files across 39 original source collections**, organized as **36 canonical console index bundles**. Their original bytes and Git-blob provenance remain intact. The reproducible Rust indexer and read-only Rust client can search these offline. Current indexes expose approximately **1.17 million nonempty encoded code fields** and **13,296 native address/value cheat entries**; these are source occurrences, not counts of unique or verified cheats. The platform registry covers 55 systems, and three games have manual curated records. Further source collections, reliable ROM/build matching, and actual cheat execution remain future work.
 
 The archive is separate from any particular emulator, but future integrations may make these cheats directly usable in projects such as Starbyte.

@@ -16,12 +16,14 @@
 
 - [x] Register console/handheld platform IDs.
 - [x] Start Libretro NES and SNES proof-of-concept imports.
-- [x] Import eight pinned Libretro collections with per-file provenance (14,713 files): NES, SNES, GB, GBC, GBA, Genesis, PlayStation, PSP.
-- [ ] Expand Nintendo beyond the imported GB/GBC/GBA collections: N64, DS, GameCube, Wii, 3DS.
-- [ ] Expand Sega beyond the imported Genesis/Mega Drive collection: Master System, Game Gear, Saturn, Dreamcast.
+- [x] Import 39 Libretro console/handheld source collections with pinned per-file provenance (23,382 files, 36 canonical console bundles).
+- [x] Add Libretro N64, Nintendo DS, Virtual Boy and FDS.
+- [ ] Add GameCube, Wii, 3DS, Wii U and Switch from other sources.
+- [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
 - [ ] Expand Sony beyond the imported PS1/PSP collections: PS2, PS3, Vita, PS4.
 - [ ] Evaluate Nintendo Switch title-ID/build-ID cheat datasets, PS2 PCSX2 `.pnach` collections, and GameCube/Wii Gecko codes.
-- [ ] Evaluate Microsoft Xbox families, Atari, NEC, SNK, Bandai, 3DO.
+- [x] Add Libretro Atari, NEC, SNK handheld, WonderSwan, ColecoVision, Intellivision and GX4000.
+- [ ] Evaluate Xbox families, Neo Geo AES/CD, 3DO and other collections.
 - [ ] Add link-only indexes for valuable sources whose redistribution rights cannot be confirmed.
 
 ## Infrastructure queue
@@ -30,11 +32,13 @@
 - [x] Source manifests with exact upstream paths/revisions/blob IDs.
 - [x] Game/edition/format schema and integrity validator.
 - [x] Automatic upstream **bulk importer** with platform selection, limits, and deterministic records.
-- [ ] Generate source-independent game and platform indexes (native files are preserved, not yet all normalized).
+- [x] Generate versioned compressed per-console source-record indexes in Rust (36 consoles).
+- [ ] Establish reliable cartridge/build identity and canonical cross-source game records.
 - [ ] Dedupe equivalent codes while retaining original provenance.
 - [ ] Search by game, platform, cheat effect, author, source, and code format.
 - [ ] Reliable console-specific converters/exporters.
-- [ ] Optional Rust CLI and offline explorer.
-- [ ] Starbyte integration, starting with SNES cheats when emulator capabilities support them.
+- [x] Add read-only Rust index client and searchable CLI.
+- [ ] Add a pleasant desktop/game cheat explorer.
+- [ ] Wire the Rust client into Starbyte for read-only cheat discovery; then develop and test SNES-specific code execution.
 
 Keep the README about the project; keep work tracking here.

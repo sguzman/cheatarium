@@ -59,6 +59,25 @@ jobs:
               assert all("provenance" in record for record in bundle["records"])
           print("OK:", len(catalog["bundles"]), "versioned provenance-aware bundles")
           PY
+      - name: Check real-world formats and search client
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import gzip, json
+          from pathlib import Path
+          root = Path('generated/v1')
+          def load(platform):
+              with gzip.open(root / f'{platform}.json.gz', 'rt') as f:
+                  return json.load(f)['records']
+          assert any(r['candidate_game_key'] == 'donkey-kong-country' and any(c.get('code') == '1DCC-CA7A' for c in r['codes']) for r in load('snes'))
+          assert sum(c['role'] == 'memory-entry' for r in load('colecovision') for c in r['codes']) >= 100
+          assert any(c['role'] == 'section-heading' for r in load('nds') for c in r['codes'])
+          print('OK: SNES device codes, ColecoVision memory records, and NDS headings')
+          PY
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- search \
+            --db generated/v1 --platform snes --title 'Donkey Kong Country' --limit 2 --json \
+            | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_source_records"] > 0 and q["candidate_only"]'
       - name: Commit reproducible index snapshots
         run: |
           git config user.name "github-actions[bot]"
