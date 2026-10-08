@@ -18,13 +18,15 @@ MAX_PAGE_SIZE = 500
 
 
 def dossier(bundle, game_key, *, offset=0, limit=50, source_record_id=None,
-            publication_registry=None):
+            publication_registry=None, witness_filter="all"):
     if bundle.get("schema_version") != 1 or bundle.get("platform") != "snes":
         raise ValueError("Expected a version-one SNES source bundle")
     if not isinstance(game_key, str) or not game_key:
         raise ValueError("A nonempty candidate game key is required")
     if offset < 0 or not 1 <= limit <= MAX_PAGE_SIZE:
         raise ValueError("Offset must be nonnegative and page size between 1 and 500")
+    if witness_filter not in ("all", "witnessed", "unwitnessed"):
+        raise ValueError("Witness filter must be all, witnessed or unwitnessed")
 
     reports = {}
     if publication_registry is not None:
@@ -80,7 +82,9 @@ def dossier(bundle, game_key, *, offset=0, limit=50, source_record_id=None,
     matches.sort(key=lambda x: (x["source_record_id"], x["source_ordinal"]))
     record_counts = Counter(x["source_record_id"] for x in matches)
     segment_counts = Counter(x["text_segment_count"] for x in matches)
-    page = matches[offset:offset + limit]
+    selected = [x for x in matches if witness_filter == "all" or
+                ("historical_publication_witness" in x) == (witness_filter == "witnessed")]
+    page = selected[offset:offset + limit]
     return {
         "schema_version": 1,
         "platform": "snes",
@@ -93,6 +97,8 @@ def dossier(bundle, game_key, *, offset=0, limit=50, source_record_id=None,
         "total_unresolved_source_occurrences": len(matches),
         "distinct_original_code_strings": len({x["original_code"] for x in matches}),
         "distinct_source_records": len(record_counts),
+        "witness_filter": witness_filter,
+        "selected_source_occurrences": len(selected),
         "historical_publication_witnesses": sum(
             "historical_publication_witness" in x for x in matches),
         "source_record_counts": [
@@ -106,7 +112,7 @@ def dossier(bundle, game_key, *, offset=0, limit=50, source_record_id=None,
         "offset": offset,
         "limit": limit,
         "returned": len(page),
-        "has_more": offset + len(page) < len(matches),
+        "has_more": offset + len(page) < len(selected),
         "occurrences": page,
     }
 
@@ -119,14 +125,21 @@ def main():
     parser.add_argument("--source-record-id", help="Optional exact original source record ID")
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int, default=50)
+    witness_mode = parser.add_mutually_exclusive_group()
+    witness_mode.add_argument("--witnessed-only", action="store_true",
+                              help="Show only source entries with an external publication witness")
+    witness_mode.add_argument("--unwitnessed-only", action="store_true",
+                              help="Show only source entries still lacking publication evidence")
     args = parser.parse_args()
     with gzip.open(args.root / "generated/v1/snes.json.gz", "rt", encoding="utf-8") as stream:
         bundle = json.load(stream)
     registry = json.loads((args.root / "interpretations/v1/snes-published-groups.json")
                           .read_text(encoding="utf-8"))
+    witness_filter = ("witnessed" if args.witnessed_only else
+                      "unwitnessed" if args.unwitnessed_only else "all")
     result = dossier(bundle, args.game_key, offset=args.offset, limit=args.limit,
                      source_record_id=args.source_record_id,
-                     publication_registry=registry)
+                     publication_registry=registry, witness_filter=witness_filter)
     if not result["total_unresolved_source_occurrences"]:
         parser.error("No unresolved source joins match the selected candidate and source")
     print(json.dumps(result, ensure_ascii=False, indent=2))
