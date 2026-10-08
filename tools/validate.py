@@ -35,15 +35,16 @@ for manifest in sorted((ROOT / "sources").glob("*.json")):
     sources[sid] = data
     if not data.get("snapshot_commit") or not data.get("license"):
         error(f"{manifest}: missing snapshot or license")
+    archive_prefix = data.get("archive_prefix", f"archive/{sid}/")
     for item in data.get("files", []):
         relative = item.get("archive_path", "")
         upstream = item.get("upstream_path", "")
         key = (sid, relative)
-        if not relative.startswith(f"archive/{sid}/") or not upstream or key in inventory:
+        if not relative.startswith(archive_prefix) or not upstream or key in inventory:
             error(f"{manifest}: malformed/duplicate file record: {relative}")
             continue
         inventory.add(key)
-        expected_relative = f"archive/{sid}/{upstream}"
+        expected_relative = archive_prefix + upstream
         if expected_relative != relative:
             error(f"{manifest}: path no longer preserves upstream layout: {relative}")
         path = ROOT / relative
@@ -95,8 +96,9 @@ for path in sorted((ROOT / "curated").glob("*/*/cheats.json")):
             if (ref.get("source"), ref.get("archive_path")) not in inventory:
                 error(f"{path}: untracked source reference {ref}")
 
+tracked_archive_paths = {rel for _, rel in inventory}
 for path in (ROOT / "archive").rglob("*"):
-    if path.is_file() and not any(path == ROOT / rel for _, rel in inventory):
+    if path.is_file() and path.relative_to(ROOT).as_posix() not in tracked_archive_paths:
         error(f"{path.relative_to(ROOT)}: archived file omitted from source inventories")
 
 if failures:
