@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-index-v1",
+  "matching_policy": "candidate titles only; no ROM hashes or verified execution",
+  "bundles": [
+    {
+      "platform": "gb",
+      "artifact": "gb.json.gz",
+      "source_files": 1496,
+      "code_fields": 17516,
+      "warnings": 0
+    },
+    {
+      "platform": "gba",
+      "artifact": "gba.json.gz",
+      "source_files": 513,
+      "code_fields": 7017,
+      "warnings": 0
+    },
+    {
+      "platform": "gbc",
+      "artifact": "gbc.json.gz",
+      "source_files": 960,
+      "code_fields": 26864,
+      "warnings": 2
+    },
+    {
+      "platform": "genesis",
+      "artifact": "genesis.json.gz",
+      "source_files": 2094,
+      "code_fields": 38545,
+      "warnings": 2
+    },
+    {
+      "platform": "nes",
+      "artifact": "nes.json.gz",
+      "source_files": 2262,
+      "code_fields": 44504,
+      "warnings": 10
+    },
+    {
+      "platform": "ps1",
+      "artifact": "ps1.json.gz",
+      "source_files": 1961,
+      "code_fields": 22114,
+      "warnings": 2
+    },
+    {
+      "platform": "psp",
+      "artifact": "psp.json.gz",
+      "source_files": 2654,
+      "code_fields": 81109,
+      "warnings": 26
+    },
+    {
+      "platform": "snes",
+      "artifact": "snes.json.gz",
+      "source_files": 2773,
+      "code_fields": 77971,
+      "warnings": 0
+    }
+  ]
+}
