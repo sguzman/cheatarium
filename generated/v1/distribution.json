@@ -10,8 +10,8 @@
   "reviewed_snes_revision_alternatives": 27,
   "unresolved_snes_plus_groups": 14565,
   "unresolved_snes_candidate_groups": 928,
-  "historical_snes_publication_witnesses": 14,
-  "unresolved_snes_without_publication_witness": 14551,
+  "historical_snes_publication_witnesses": 17,
+  "unresolved_snes_without_publication_witness": 14548,
   "reviewed_effect_claims": 5,
   "observed_effect_claims": 0,
   "effect_taxonomy": "cheatarium-effect-signals-en-v1",
@@ -289,8 +289,8 @@
     },
     {
       "path": "interpretations/snes-published-groups.json",
-      "sha256": "439f1d6a5b4385c6a681db41c1e89f6bed24d7719b3b9818448d1a14e03747bd",
-      "size_bytes": 12518
+      "sha256": "3aead3f563fd68792299cb5de5773bdebccd03455efc806de07a8eeaedda6ab6",
+      "size_bytes": 15128
     },
     {
       "path": "interpretations/snes.json",
@@ -529,7 +529,7 @@
     },
     {
       "path": "reports/snes-composition-review-queue.json",
-      "sha256": "899cf2975b9ae12fc50a35a811d6dc4f85120975890a5b8093ac32faa8c6d4c4",
+      "sha256": "6cf8b122f5ce8557a77800759b92881115cc7a2794c8ce5d516fd3e94996149a",
       "size_bytes": 142459
     },
     {
