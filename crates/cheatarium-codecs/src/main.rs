@@ -1,5 +1,5 @@
 //! Offline SNES cheat decoding demonstration; never touches a running emulator.
-use cheatarium_codecs::decode_snes;
+use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use std::env;
 
 fn main() {
@@ -11,14 +11,19 @@ fn main() {
         args.next(),
         args.next(),
     ) else {
-        eprintln!("Usage: cheatarium-decode decode snes <game-genie|action-replay> '<code>'");
+        eprintln!("Usage: cheatarium-decode decode snes <game-genie|action-replay|syntax> '<code>'");
         std::process::exit(2);
     };
     if command != "decode" || console != "snes" {
         eprintln!("Only the decode snes command is supported");
         std::process::exit(2);
     }
-    match decode_snes(&format, &code) {
+    let result = if format == "syntax" {
+        decode_snes_unlabelled(&code)
+    } else {
+        decode_snes(&format, &code)
+    };
+    match result {
         Ok(decoded) => {
             let doc = serde_json::json!({
                 "schema_version": 1,

@@ -1,6 +1,6 @@
 # SNES cheat-code decoding
 
-Cheatarium provides pure Rust decoding in `crates/cheatarium-codecs`; it does **not** execute cheats or modify emulator repositories. The v1 SNES index includes a derived `snes_decode` object only for complete, unambiguous **Game Genie** or **Pro Action Replay** codes whose filenames identify the format.
+Cheatarium provides pure Rust decoding in `crates/cheatarium-codecs`; it does **not** execute cheats or modify emulator repositories. The v1 SNES index includes a derived `snes_decode` object for complete codes with either an explicit device format in the source filename or a strictly recognizable, homogeneous code syntax. The latter are **syntax candidates**, not source-confirmed device identities.
 
 ## Decoded representation
 
@@ -11,6 +11,7 @@ Source code strings remain unchanged in every entry's `code` field. When decodin
   "format": "game-genie",
   "address_space": "snes-cpu-bus-24-bit",
   "compatibility": "unverified-cartridge-build",
+  "interpretation_basis": "declared-file-format",
   "writes": [{ "address_hex": "009E25", "value_hex": "00" }]
 }
 ```
@@ -23,7 +24,8 @@ This is what the code *decodes to*, not proof the bus location is RAM, that the 
 - **Pro Action Replay / Action Replay:** exactly eight hexadecimal characters representing a 24-bit SNES CPU-bus address followed by one byte (e.g. `7E1E6B14`).
 - **Compound groups:** separated by `+`; components stay ordered and linked as a single original cheat. If *any* component fails, the group stays undecoded. Up to 64 components and 1024 input bytes are accepted.
 - **Wildcards and placeholders:** e.g. `7FC136XX` are preserved as source strings, but are deliberately not converted into concrete writes.
-- **Unknown or ambiguous formats:** no code-format guessing based on title alone; no `snes_decode` is exported without an explicit source filename format hint. Codes for other consoles are unaffected.
+- **Unlabeled source files:** a full set of Game Genie-shaped components may be interpreted as Game Genie with `interpretation_basis: "code-syntax"`. A full set of eight-digit hexadecimal components may be interpreted as `format: "raw-snes-address-value"`, without falsely asserting Pro Action Replay provenance. Both have unverified compatibility.
+- **Conflicting or ambiguous sources:** a declared format takes precedence. A failed declared-format decode stays undecoded, even if the code text could fit a different format. Mixed, placeholder, or unknown code syntax stays undecoded. Codes for other consoles are unaffected.
 
 ## Reference vectors
 
@@ -43,10 +45,11 @@ The decoder can be exercised without an emulator:
 ```sh
 cargo run --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes game-genie 'DDB4-6F07'
 cargo run --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes action-replay '7E1E6B14+7F80CAFF'
+cargo run --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes syntax '7E1E6B14+7F80CAFF'
 python3 tools/audit_snes_codecs.py --json
 ```
 
-The decoder prints versioned JSON containing the original code, decoded writes, and explicit `executable: false` and `rom_compatible: false` flags. It rejects malformed codes with a nonzero exit status. The audit partitions every SNES code field by decoded, malformed/placeholder, other format, or unknown source format.
+The decoder prints versioned JSON containing the original code, decoded writes, evidence basis, and explicit `executable: false` and `rom_compatible: false` flags. It rejects malformed codes with a nonzero exit status. The audit partitions every SNES code field by decoded, malformed/placeholder, other format, or unknown source format.
 
 ## Tests and release integrity
 

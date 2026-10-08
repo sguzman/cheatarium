@@ -119,6 +119,10 @@ jobs:
           set -euo pipefail
           cargo run --locked --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes game-genie DDB4-6F07 \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["decoded"]["writes"][0] == {"address_hex":"009E25","value_hex":"00"}; assert not x["executable"] and not x["rom_compatible"]'
+          cargo run --locked --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes syntax 7E1E6B14 \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); d=x["decoded"]; assert d["interpretation_basis"] == "code-syntax" and d["format"] == "raw-snes-address-value" and not x["executable"]'
+          cargo run --locked --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes syntax DDB4-6F07 \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["decoded"]["format"] == "game-genie" and x["decoded"]["interpretation_basis"] == "code-syntax"'
           if cargo run --locked --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes action-replay 7FC136XX; then
             echo "ERROR: placeholder cheat unexpectedly decoded" >&2
             exit 1
