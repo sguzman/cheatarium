@@ -341,6 +341,8 @@ def build_manifest(root):
         "repeated_raw_code_groups": repeated_code_groups,
         "lexical_effect_tag_matches": lexical_tag_matches,
         "reviewed_snes_revision_alternatives": compositions["reviewed_revision_alternatives"],
+        "reviewed_snes_source_blobs_audited": compositions["reviewed_original_source_blobs_audited"],
+        "reviewed_snes_source_ordinals_audited": compositions["reviewed_original_source_ordinals_audited"],
         "unresolved_snes_plus_groups": compositions["unresolved_plus_groups"],
         "unresolved_snes_candidate_groups": composition_queue["candidate_groups_with_unresolved_joins"],
         "historical_snes_publication_witnesses": witness_count,
