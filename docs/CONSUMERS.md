@@ -27,6 +27,8 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db g
 
 Entries of `role: "code"` preserve native device-code strings; `role: "memory-entry"` preserves address/value metadata; `role: "section-heading"` marks a non-executable label. Codes are imported **unverified**. `source_enabled` means only that the original file marked them enabled.
 
+Where explicitly identified by the source filename, complete SNES Game Genie and Pro Action Replay code groups additionally provide an optional `snes_decode` object with ordered `{address_hex, value_hex}` entries, a CPU-bus address-space label, and `compatibility: unverified-cartridge-build`. This is decoding, not execution permission. Undecodable placeholders and unknown formats have no `snes_decode` value. See [SNES codec guide](SNES-CODES.md).
+
 Consumers must decide whether a code is compatible with the exact cartridge build and know how its specific Game Genie, Action Replay, or memory format behaves before applying anything. Nothing in this library activates a cheat automatically.
 
 See [the v1 contract](INDEX-V1.md) and [distribution specification](DISTRIBUTION.md).

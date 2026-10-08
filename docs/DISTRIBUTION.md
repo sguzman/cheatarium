@@ -9,7 +9,7 @@ Every successful index build produces the following under `generated/v1/`:
 - `catalog.json`: versioned list of consoles and their two bundle types.
 - `<platform>.json.gz`: complete, unaltered-in-meaning *parsed source occurrences*, including code entries and byte-level upstream provenance.
 - `games/<platform>.json.gz`: small, **advisory filename-derived game groups** with links back to source occurrence IDs, regions, formats, and counts.
-- `distribution.json`: deterministic SHA-256 digests and byte lengths for every exported artifact, and aggregate counts. A distribution manifest does **not** sign itself.
+- `distribution.json`: deterministic SHA-256 digests and byte lengths for every exported artifact, aggregate counts and additive `decoded_snes_code_fields`. A distribution manifest does **not** sign itself.
 
 The source `.cht` files remain in `archive/` and are the authority for original bytes. No ROM images, firmware, or save data are required or supplied.
 

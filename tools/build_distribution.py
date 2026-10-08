@@ -43,6 +43,7 @@ def build_manifest(root):
     named_paths = set()
     source_files = 0
     game_groups = 0
+    decoded_snes_entries = 0
     for rel in ["catalog.json"]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
@@ -93,6 +94,32 @@ def build_manifest(root):
             raise ValueError(f"Source occurrences missing/duplicated in game groups: {platform}")
         encoded = sum(c["role"] == "code" for r in records for c in r["codes"])
         native = sum(c["role"] == "memory-entry" for r in records for c in r["codes"])
+        decoded = 0
+        for record in records:
+            for code in record["codes"]:
+                interpretation = code.get("snes_decode")
+                if interpretation is None:
+                    continue
+                if platform != "snes" or code["role"] != "code":
+                    raise ValueError(f"Unexpected SNES decoding field: {platform}")
+                if record.get("format_hint") != interpretation.get("format"):
+                    raise ValueError("Decoded format differs from original file format hint")
+                if interpretation.get("compatibility") != "unverified-cartridge-build":
+                    raise ValueError("Decoded code incorrectly claims ROM compatibility")
+                if interpretation.get("address_space") != "snes-cpu-bus-24-bit":
+                    raise ValueError("Unsupported decoded address space")
+                writes = interpretation.get("writes", [])
+                if not writes:
+                    raise ValueError("Decoded compound code contains no entries")
+                for patch in writes:
+                    addr = patch.get("address_hex", "")
+                    value = patch.get("value_hex", "")
+                    if len(addr) != 6 or len(value) != 2 or not all(c in "0123456789ABCDEF" for c in addr + value):
+                        raise ValueError("Malformed SNES decoded address/value")
+                decoded += 1
+        if decoded != entry.get("decoded_snes_code_fields", 0):
+            raise ValueError(f"Incorrect SNES decoder statistics: {platform}")
+        decoded_snes_entries += decoded
         if (encoded, native) != (entry["code_fields"], entry["native_memory_entries"]):
             raise ValueError(f"Catalog/source counts differ: {platform}")
         if (game_code_fields, game_memory_fields) != (encoded, native):
@@ -107,6 +134,7 @@ def build_manifest(root):
         "console_bundles": len(entries),
         "source_files": source_files,
         "game_candidate_groups": game_groups,
+        "decoded_snes_code_fields": decoded_snes_entries,
         "files": sorted(manifest_files, key=lambda item: item["path"]),
     }
 

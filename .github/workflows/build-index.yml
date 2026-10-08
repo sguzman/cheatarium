@@ -81,6 +81,25 @@ jobs:
           assert any(r['candidate_game_key'] == 'donkey-kong-country' and any(c.get('code') == '1DCC-CA7A' for c in r['codes']) for r in load('snes'))
           assert sum(c['role'] == 'memory-entry' for r in load('colecovision') for c in r['codes']) >= 100
           assert any(c['role'] == 'section-heading' for r in load('nds') for c in r['codes'])
+          snes = load('snes')
+          expected = {
+              'DDB4-6F07': ('009E25', '00'),
+              'D6B4-6F07': ('009E25', '08'),
+              'C222-D4DD': ('00D0D8', 'AD'),
+              '7E1E6B14': ('7E1E6B', '14'),
+          }
+          found = {}
+          for item in snes:
+              for c in item['codes']:
+                  code = c.get('code')
+                  if code in expected and c.get('snes_decode'):
+                      writes = c['snes_decode']['writes']
+                      if len(writes) == 1:
+                          found[code] = (writes[0]['address_hex'], writes[0]['value_hex'])
+          assert all(found.get(k) == v for k, v in expected.items()), (expected, found)
+          # Placeholder codes are deliberately not converted into concrete writes.
+          assert any(c.get('code') == '7FC136XX' and not c.get('snes_decode') for item in snes for c in item['codes'])
+          print('OK: SNES Game Genie/PAR vectors and rejected placeholders')
           print('OK: SNES device codes, ColecoVision memory records, and NDS headings')
           PY
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- verify \
