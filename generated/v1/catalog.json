@@ -6,6 +6,8 @@
     {
       "platform": "32x",
       "artifact": "32x.json.gz",
+      "game_index_artifact": "games/32x.json.gz",
+      "game_candidate_groups": 28,
       "source_files": 29,
       "code_fields": 652,
       "native_memory_entries": 0,
@@ -14,6 +16,8 @@
     {
       "platform": "atari-2600",
       "artifact": "atari-2600.json.gz",
+      "game_index_artifact": "games/atari-2600.json.gz",
+      "game_candidate_groups": 22,
       "source_files": 22,
       "code_fields": 3,
       "native_memory_entries": 41,
@@ -22,6 +26,8 @@
     {
       "platform": "atari-5200",
       "artifact": "atari-5200.json.gz",
+      "game_index_artifact": "games/atari-5200.json.gz",
+      "game_candidate_groups": 82,
       "source_files": 107,
       "code_fields": 0,
       "native_memory_entries": 267,
@@ -30,6 +36,8 @@
     {
       "platform": "atari-7800",
       "artifact": "atari-7800.json.gz",
+      "game_index_artifact": "games/atari-7800.json.gz",
+      "game_candidate_groups": 33,
       "source_files": 41,
       "code_fields": 0,
       "native_memory_entries": 92,
@@ -38,6 +46,8 @@
     {
       "platform": "atari-jaguar",
       "artifact": "atari-jaguar.json.gz",
+      "game_index_artifact": "games/atari-jaguar.json.gz",
+      "game_candidate_groups": 41,
       "source_files": 41,
       "code_fields": 23,
       "native_memory_entries": 207,
@@ -46,6 +56,8 @@
     {
       "platform": "atari-lynx",
       "artifact": "atari-lynx.json.gz",
+      "game_index_artifact": "games/atari-lynx.json.gz",
+      "game_candidate_groups": 14,
       "source_files": 14,
       "code_fields": 0,
       "native_memory_entries": 39,
@@ -54,6 +66,8 @@
     {
       "platform": "colecovision",
       "artifact": "colecovision.json.gz",
+      "game_index_artifact": "games/colecovision.json.gz",
+      "game_candidate_groups": 89,
       "source_files": 89,
       "code_fields": 0,
       "native_memory_entries": 179,
@@ -62,6 +76,8 @@
     {
       "platform": "dreamcast",
       "artifact": "dreamcast.json.gz",
+      "game_index_artifact": "games/dreamcast.json.gz",
+      "game_candidate_groups": 292,
       "source_files": 292,
       "code_fields": 0,
       "native_memory_entries": 11160,
@@ -70,6 +86,8 @@
     {
       "platform": "fds",
       "artifact": "fds.json.gz",
+      "game_index_artifact": "games/fds.json.gz",
+      "game_candidate_groups": 114,
       "source_files": 114,
       "code_fields": 660,
       "native_memory_entries": 0,
@@ -78,6 +96,8 @@
     {
       "platform": "game-gear",
       "artifact": "game-gear.json.gz",
+      "game_index_artifact": "games/game-gear.json.gz",
+      "game_candidate_groups": 406,
       "source_files": 818,
       "code_fields": 7274,
       "native_memory_entries": 0,
@@ -86,6 +106,8 @@
     {
       "platform": "gb",
       "artifact": "gb.json.gz",
+      "game_index_artifact": "games/gb.json.gz",
+      "game_candidate_groups": 878,
       "source_files": 1496,
       "code_fields": 16849,
       "native_memory_entries": 0,
@@ -94,6 +116,8 @@
     {
       "platform": "gba",
       "artifact": "gba.json.gz",
+      "game_index_artifact": "games/gba.json.gz",
+      "game_candidate_groups": 508,
       "source_files": 513,
       "code_fields": 7015,
       "native_memory_entries": 0,
@@ -102,6 +126,8 @@
     {
       "platform": "gbc",
       "artifact": "gbc.json.gz",
+      "game_index_artifact": "games/gbc.json.gz",
+      "game_candidate_groups": 707,
       "source_files": 960,
       "code_fields": 9274,
       "native_memory_entries": 0,
@@ -110,6 +136,8 @@
     {
       "platform": "genesis",
       "artifact": "genesis.json.gz",
+      "game_index_artifact": "games/genesis.json.gz",
+      "game_candidate_groups": 1152,
       "source_files": 2094,
       "code_fields": 37552,
       "native_memory_entries": 177,
@@ -118,6 +146,8 @@
     {
       "platform": "gx4000",
       "artifact": "gx4000.json.gz",
+      "game_index_artifact": "games/gx4000.json.gz",
+      "game_candidate_groups": 17,
       "source_files": 17,
       "code_fields": 0,
       "native_memory_entries": 42,
@@ -126,6 +156,8 @@
     {
       "platform": "intellivision",
       "artifact": "intellivision.json.gz",
+      "game_index_artifact": "games/intellivision.json.gz",
+      "game_candidate_groups": 8,
       "source_files": 8,
       "code_fields": 0,
       "native_memory_entries": 11,
@@ -134,6 +166,8 @@
     {
       "platform": "master-system",
       "artifact": "master-system.json.gz",
+      "game_index_artifact": "games/master-system.json.gz",
+      "game_candidate_groups": 389,
       "source_files": 724,
       "code_fields": 4679,
       "native_memory_entries": 44,
@@ -142,6 +176,8 @@
     {
       "platform": "n64",
       "artifact": "n64.json.gz",
+      "game_index_artifact": "games/n64.json.gz",
+      "game_candidate_groups": 694,
       "source_files": 1386,
       "code_fields": 226881,
       "native_memory_entries": 22,
@@ -150,6 +186,8 @@
     {
       "platform": "nds",
       "artifact": "nds.json.gz",
+      "game_index_artifact": "games/nds.json.gz",
+      "game_candidate_groups": 3254,
       "source_files": 4204,
       "code_fields": 645067,
       "native_memory_entries": 5,
@@ -158,6 +196,8 @@
     {
       "platform": "nes",
       "artifact": "nes.json.gz",
+      "game_index_artifact": "games/nes.json.gz",
+      "game_candidate_groups": 1483,
       "source_files": 2262,
       "code_fields": 43687,
       "native_memory_entries": 123,
@@ -166,6 +206,8 @@
     {
       "platform": "ngp",
       "artifact": "ngp.json.gz",
+      "game_index_artifact": "games/ngp.json.gz",
+      "game_candidate_groups": 5,
       "source_files": 5,
       "code_fields": 19,
       "native_memory_entries": 0,
@@ -174,6 +216,8 @@
     {
       "platform": "ngpc",
       "artifact": "ngpc.json.gz",
+      "game_index_artifact": "games/ngpc.json.gz",
+      "game_candidate_groups": 29,
       "source_files": 29,
       "code_fields": 129,
       "native_memory_entries": 0,
@@ -182,6 +226,8 @@
     {
       "platform": "pc-fx",
       "artifact": "pc-fx.json.gz",
+      "game_index_artifact": "games/pc-fx.json.gz",
+      "game_candidate_groups": 2,
       "source_files": 2,
       "code_fields": 2,
       "native_memory_entries": 0,
@@ -190,6 +236,8 @@
     {
       "platform": "ps1",
       "artifact": "ps1.json.gz",
+      "game_index_artifact": "games/ps1.json.gz",
+      "game_candidate_groups": 1899,
       "source_files": 1961,
       "code_fields": 22114,
       "native_memory_entries": 2,
@@ -198,6 +246,8 @@
     {
       "platform": "psp",
       "artifact": "psp.json.gz",
+      "game_index_artifact": "games/psp.json.gz",
+      "game_candidate_groups": 2653,
       "source_files": 2654,
       "code_fields": 81104,
       "native_memory_entries": 5,
@@ -206,6 +256,8 @@
     {
       "platform": "satellaview",
       "artifact": "satellaview.json.gz",
+      "game_index_artifact": "games/satellaview.json.gz",
+      "game_candidate_groups": 6,
       "source_files": 6,
       "code_fields": 50,
       "native_memory_entries": 0,
@@ -214,6 +266,8 @@
     {
       "platform": "saturn",
       "artifact": "saturn.json.gz",
+      "game_index_artifact": "games/saturn.json.gz",
+      "game_candidate_groups": 189,
       "source_files": 192,
       "code_fields": 1698,
       "native_memory_entries": 12,
@@ -222,6 +276,8 @@
     {
       "platform": "segacd",
       "artifact": "segacd.json.gz",
+      "game_index_artifact": "games/segacd.json.gz",
+      "game_candidate_groups": 14,
       "source_files": 14,
       "code_fields": 164,
       "native_memory_entries": 0,
@@ -230,6 +286,8 @@
     {
       "platform": "sg1000",
       "artifact": "sg1000.json.gz",
+      "game_index_artifact": "games/sg1000.json.gz",
+      "game_candidate_groups": 26,
       "source_files": 26,
       "code_fields": 69,
       "native_memory_entries": 0,
@@ -238,6 +296,8 @@
     {
       "platform": "snes",
       "artifact": "snes.json.gz",
+      "game_index_artifact": "games/snes.json.gz",
+      "game_candidate_groups": 1367,
       "source_files": 2773,
       "code_fields": 68094,
       "native_memory_entries": 715,
@@ -246,6 +306,8 @@
     {
       "platform": "supergrafx",
       "artifact": "supergrafx.json.gz",
+      "game_index_artifact": "games/supergrafx.json.gz",
+      "game_candidate_groups": 4,
       "source_files": 4,
       "code_fields": 14,
       "native_memory_entries": 0,
@@ -254,6 +316,8 @@
     {
       "platform": "tg16",
       "artifact": "tg16.json.gz",
+      "game_index_artifact": "games/tg16.json.gz",
+      "game_candidate_groups": 267,
       "source_files": 322,
       "code_fields": 905,
       "native_memory_entries": 149,
@@ -262,6 +326,8 @@
     {
       "platform": "tgcd",
       "artifact": "tgcd.json.gz",
+      "game_index_artifact": "games/tgcd.json.gz",
+      "game_candidate_groups": 128,
       "source_files": 138,
       "code_fields": 532,
       "native_memory_entries": 4,
@@ -270,6 +336,8 @@
     {
       "platform": "virtual-boy",
       "artifact": "virtual-boy.json.gz",
+      "game_index_artifact": "games/virtual-boy.json.gz",
+      "game_candidate_groups": 10,
       "source_files": 10,
       "code_fields": 23,
       "native_memory_entries": 0,
@@ -278,6 +346,8 @@
     {
       "platform": "wonderswan",
       "artifact": "wonderswan.json.gz",
+      "game_index_artifact": "games/wonderswan.json.gz",
+      "game_candidate_groups": 6,
       "source_files": 6,
       "code_fields": 17,
       "native_memory_entries": 0,
@@ -286,6 +356,8 @@
     {
       "platform": "wonderswan-color",
       "artifact": "wonderswan-color.json.gz",
+      "game_index_artifact": "games/wonderswan-color.json.gz",
+      "game_candidate_groups": 9,
       "source_files": 9,
       "code_fields": 15,
       "native_memory_entries": 0,
