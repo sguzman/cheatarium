@@ -22,6 +22,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut source_id = None;
     let mut json = false;
     let mut limit = 10usize;
+    let mut offset = 0usize;
     let mut args = env::args().skip(1);
     let mode = match args.next().as_deref() {
         Some("search") => "search",
@@ -34,7 +35,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -63,11 +64,17 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     return Err("--limit must be 1..100".into());
                 }
             }
+            "--offset" => {
+                offset = args.next().ok_or("--offset needs an integer")?.parse()?;
+            }
             "--json" => json = true,
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
+    if offset != 0 && mode != "compositions" && mode != "publications" {
+        return Err("--offset applies only to compositions or publications".into());
+    }
     if mode != "compositions" && composition_relation.is_some() {
         return Err("--relation applies only to compositions".into());
     }
@@ -161,16 +168,19 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "game_key_filter": game_key,
                     "source_record_id_filter": source_record_id,
                     "total_witnesses": total,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
                     "historical_publication_only": true,
                     "execution_observed": false,
                     "rom_match_verified": false,
                     "safe_to_auto_apply": false,
-                    "publications": hits.into_iter().take(limit).collect::<Vec<_>>(),
+                    "publications": hits.into_iter().skip(offset).take(limit).collect::<Vec<_>>(),
                 }))?
             );
         } else {
             println!("{total} historical SNES publication witnesses (not verified execution)");
-            for item in hits.into_iter().take(limit) {
+            for item in hits.into_iter().skip(offset).take(limit) {
                 println!(
                     "- {} #{}: {} ({})",
                     item.source_record_id,
@@ -220,6 +230,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         if json {
             let entries: Vec<_> = hits
                 .into_iter()
+                .skip(offset)
                 .take(limit)
                 .map(|(record, code, composition)| {
                     serde_json::json!({
@@ -242,6 +253,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "relation_filter": composition_relation,
                     "source_record_id_filter": source_record_id,
                     "total_groups": total,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
                     "evidenced_revision_alternatives": resolved,
                     "unresolved_groups": total - resolved,
                     "rom_match_verified": false,
@@ -252,7 +266,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         } else {
             println!("{total} plus-joined SNES source records, {resolved} with revision-alternative evidence");
             println!("No output authorizes choosing a revision or combining/activating codes.");
-            for (record, code, composition) in hits.into_iter().take(limit) {
+            for (record, code, composition) in hits.into_iter().skip(offset).take(limit) {
                 println!(
                     "- {} #{}: {} ({})",
                     record.id,
