@@ -51,6 +51,23 @@ python3 tools/audit_snes_codecs.py --json
 
 The decoder prints versioned JSON containing the original code, decoded writes, evidence basis, and explicit `executable: false` and `rom_compatible: false` flags. It rejects malformed codes with a nonzero exit status. The audit partitions every SNES code field by decoded, malformed/placeholder, other format, or unknown source format.
 
+## Coverage report from the pinned Libretro snapshot
+
+The generated, per-snapshot [SNES codec audit](../generated/v1/reports/snes-codec-coverage.json) tracks precisely what is and is not interpreted. On the current 23,382-file Libretro import (SNES: 2,773 source files):
+
+| Classification | Source entries |
+| --- | ---: |
+| Encoded SNES code fields | 68,094 |
+| Successfully interpreted from explicitly named device format | 14,750 |
+| Successfully interpreted from distinctive, unlabeled code syntax | 51,852 |
+| **Total interpreted** | **66,602** |
+| Labeled device codes with malformed/incomplete/placeholder data | 1,478 |
+| Remaining code fields without recognized syntax or format | 14 |
+
+The syntax-only interpretations include **19,380 recognizable Game Genie entries** and **32,472 anonymous eight-hex-digit address/value candidates**. The latter are **not** presented as proven Pro Action Replay cheats. The complete audit is machine-readable, generated during CI, cross-checked against SNES source records, and checksummed in `distribution.json`.
+
+Interpreted entries are not unique cheats and have **not** been verified against actual ROMs. Do not use these numbers to imply functional compatibility.
+
 ## Tests and release integrity
 
 Rust unit tests cover valid/invalid/compound codes, lowercase inputs, wildcards, and bounded input. GitHub Actions also checks actual imported Super Mario World and 3 Ninjas cheat records, ensures a wildcard remains undecoded, and runs the distribution integrity checker across **all** consoles.

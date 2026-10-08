@@ -31,4 +31,4 @@ Complete SNES Game Genie and Pro Action Replay source-code groups may include a 
 
 Consumers must decide whether a code is compatible with the exact cartridge build and know how its specific Game Genie, Action Replay, or memory format behaves before applying anything. Nothing in this library activates a cheat automatically.
 
-See [the v1 contract](INDEX-V1.md) and [distribution specification](DISTRIBUTION.md).
+See [the v1 contract](INDEX-V1.md), [SNES decoding and coverage](SNES-CODES.md), and [distribution specification](DISTRIBUTION.md). The generated [SNES coverage report](../generated/v1/reports/snes-codec-coverage.json) is available for any consumer to inspect.

@@ -16,7 +16,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Emulator consumers](docs/CONSUMERS.md) — read-only Rust client and offline search.
 - [Versioned index](docs/INDEX-V1.md) — deterministic game/source bundles and compatibility rules.
 - [Distribution and integrity](docs/DISTRIBUTION.md) — SHA-256 manifests and verified consumer downloads.
-- [SNES codes](docs/SNES-CODES.md) — independently usable Game Genie and Action Replay decoding.
+- [SNES codes](docs/SNES-CODES.md) — independently usable Game Genie and Action Replay decoding, with format evidence and a detailed coverage audit.
 - [Design](docs/DESIGN.md) — the boundaries and data model.
 - [Roadmap](docs/ROADMAP.md) — systems, imports, and future features.
 
@@ -31,6 +31,6 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Status
 
-Cheatarium archives **23,382 intact Libretro `.cht` source files across 39 original source collections**, organized as **36 canonical console index bundles**. Their original bytes and Git-blob provenance remain intact. The reproducible Rust indexer and read-only Rust client can search these offline. Current indexes expose approximately **1.17 million nonempty encoded code fields** and **13,296 native address/value cheat entries**; these are source occurrences, not counts of unique or verified cheats. The platform registry covers 55 systems, and three games have manual curated records. The SNES source index also contains **14,750 strictly decoded Game Genie/Action Replay code groups**, without changing original cheat strings. Further source collections, reliable ROM/build matching, and actual cheat execution remain future work.
+Cheatarium archives **23,382 intact Libretro `.cht` source files across 39 original source collections**, organized as **36 canonical console index bundles**. Their original bytes and Git-blob provenance remain intact. The reproducible Rust indexer and read-only Rust client can search these offline. Current indexes expose approximately **1.17 million nonempty encoded code fields** and **13,296 native address/value cheat entries**; these are source occurrences, not counts of unique or verified cheats. The platform registry covers 55 systems, and three games have manual curated records. The SNES source index also contains **66,602 strictly interpreted SNES code groups** (14,750 with a declared device format; 51,852 from recognized unlabeled syntax), without changing original cheat strings. Further source collections, reliable ROM/build matching, and actual cheat execution remain future work.
 
 The archive is separate from any particular emulator, but future integrations may make these cheats directly usable in projects such as Starbyte.
