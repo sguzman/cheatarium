@@ -120,7 +120,14 @@ def build_manifest(root):
         if len(record_ids) != len(set(record_ids)):
             raise ValueError(f"Duplicate source record IDs: {platform}")
         repeated_code_groups += len(repeats["groups"])
+        repeat_keys = set()
         for group in repeats["groups"]:
+            key = (group["candidate_game_key"], group.get("region_hint"),
+                   group.get("revision_hint"), group.get("declared_format"),
+                   group["source_code"])
+            if key in repeat_keys:
+                raise ValueError(f"Duplicate repetition grouping key: {platform}")
+            repeat_keys.add(key)
             if (group.get("relation") != "identical-raw-code-text-within-advisory-filename-bucket"
                     or group.get("confirmed_equivalent_cheat") is not False
                     or group.get("verified_rom_compatibility") is not False):
@@ -128,7 +135,12 @@ def build_manifest(root):
             refs = group.get("occurrences", [])
             if not isinstance(refs, list) or len({r["source_record_id"] for r in refs}) < 2:
                 raise ValueError(f"Repetition group lacks distinct source records: {platform}")
+            seen_occurrences = set()
             for ref in refs:
+                ordinal_key = (ref["source_record_id"], ref["ordinal"])
+                if ordinal_key in seen_occurrences:
+                    raise ValueError(f"Duplicated repetition reference: {platform}")
+                seen_occurrences.add(ordinal_key)
                 record = by_record_id.get(ref["source_record_id"])
                 if record is None:
                     raise ValueError(f"Missing original repetition source record: {platform}")
@@ -136,6 +148,21 @@ def build_manifest(root):
                         or record.get("region_hint") != group.get("region_hint")
                         or record.get("format_hint") != group.get("declared_format")):
                     raise ValueError(f"Repetition crossed candidate game, region or declared format: {platform}")
+                # Re-read the explicit build marker, independently of the Rust indexer.
+                tags = [
+                    part.split(")", 1)[0].strip().lower()
+                    for part in record["raw_filename"].split("(")[1:]
+                    if ")" in part
+                ]
+                known_build_tags = [
+                    tag for tag in tags
+                    if tag.startswith(("rev ", "revision ", "version ", "beta",
+                                       "proto", "demo", "v1.", "v2."))
+                    or tag in ("unl", "virtual console")
+                    or "hack" in tag or "translation" in tag
+                ]
+                if (known_build_tags[0] if known_build_tags else None) != group.get("revision_hint"):
+                    raise ValueError(f"Repetition crosses a known revision/edition marker: {platform}")
                 matching = [c for c in record["codes"] if c["ordinal"] == ref["ordinal"]]
                 if (len(matching) != 1 or matching[0]["role"] != "code"
                         or matching[0].get("code") != group["source_code"]

@@ -253,6 +253,12 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
         }
         artifacts.push(game_path.clone());
     }
+    if let Some(repeat_path) = &entry.repeat_index_artifact {
+        if repeat_path != &format!("repeats/{platform}.json.gz") {
+            return Err("Unsafe Cheatarium repetition-index path".into());
+        }
+        artifacts.push(repeat_path.clone());
+    }
     if let Some(identity_path) = &entry.identity_artifact {
         if identity_path != &format!("identities/{platform}.json") {
             return Err("Unsafe Cheatarium ROM identity artifact path".into());

@@ -15,6 +15,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Adding cheats](docs/ADDING-CHEATS.md) — how new collections and individual cheats enter the archive.
 - [Emulator consumers](docs/CONSUMERS.md) — read-only Rust client and offline search.
 - [Versioned index](docs/INDEX-V1.md) — deterministic game/source bundles and compatibility rules.
+- [Repeated cheat codes](docs/REPEATED-CODES.md) — source-preserving duplicate-text discovery without unverified game or effect merging.
 - [Distribution and integrity](docs/DISTRIBUTION.md) — SHA-256 manifests and verified consumer downloads.
 - [SNES codes](docs/SNES-CODES.md) — independently usable Game Genie and Action Replay decoding, with format evidence and a detailed coverage audit.
 - [ROM identity evidence](docs/ROM-IDENTITY.md) — read-only SHA-256 fingerprinting, optional local ZIP inventory scanning, and source-reviewed release claims.

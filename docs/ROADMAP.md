@@ -38,7 +38,8 @@
 - [x] Add source-evidenced, exact-file ROM fingerprint lookup with ambiguity and size-conflict handling; publish an initially empty SNES identity registry to avoid invented mappings.
 - [x] Add local-only, ZIP-streaming SNES ROM metadata inventory scanner; do not collect or upload ROMs.
 - [ ] Acquire independently sourced and reviewed release hashes, then establish reliable cartridge/build identity and canonical cross-source game records.
-- [ ] Dedupe equivalent codes while retaining original provenance.
+- [x] Publish cross-source exact-raw-code repetition candidates while preserving every original occurrence, region hint, format label, revision marker and description.
+- [ ] Establish semantic equivalence and deduplicate only after game/release identity and effect validation.
 - [x] Add case-insensitive, provenance-preserving cheat-effect text search in the Rust client and CLI.
 - [x] Add exact source-ID and provenance-declared device-format filters for effect search.
 - [ ] Expand discovery to contributor/author attribution and richer effect classification.
