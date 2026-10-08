@@ -178,6 +178,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- compositions \
             --db generated/v1 --platform snes --game-key donkey-kong-country --relation unresolved --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["evidenced_revision_alternatives"] == 0 and all(e["composition"]["relation"] == "unresolved" and not e["composition"]["evidence"] for e in x["entries"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- publications \
+            --db generated/v1 --platform snes --game-key push-over --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.snes_publications.v1" and x["total_witnesses"] == 3; assert x["historical_publication_only"] and not x["execution_observed"] and not x["rom_match_verified"] and not x["safe_to_auto_apply"]; assert all(c["candidate_game_key"] == "push-over" and not c["safe_to_auto_apply"] for c in x["publications"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- publications \
+            --db generated/v1 --platform snes --game-key faceball-2000 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total_witnesses"] == 3 and len(x["publications"]) == 3; assert all(c["source_git_blob_sha"] and len(c["published_text_segments"]) > 1 for c in x["publications"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- reviews \
             --db generated/v1 --platform snes --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.effect_reviews.v1" and x["total_claims"] == 3 and x["reviews_are_evidence_not_execution_permission"] and not x["unverified_imports_promoted"] and not x["cheats_activated"]'
