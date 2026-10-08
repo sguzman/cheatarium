@@ -18,7 +18,7 @@ Every successful index build produces the following under `generated/v1/`:
 - `interpretations/snes.json`: separately sourced, independently validated SNES source-code group relationships. Revision alternatives preserve version-specific partitions without inventing ROM identity or runnable combined writes.
 - `interpretations/snes-published-groups.json`: externally witnessed historical multi-part listings, pinned to exact original source ordinals and upstream Git blobs; these do **not** resolve execution semantics or authorize applying codes.
 - `identities/snes.json`: independent SHA-256 whole-file ROM release evidence registry, copied from `identities/v1/snes.json` and checksummed alongside the cheat bundles. This is **not** a list of verified cheat-to-ROM mappings.
-- `distribution.json`: deterministic SHA-256 digests and byte lengths for every exported artifact (including the coverage report), aggregate counts, SNES historical-publication witness coverage, and additive `decoded_snes_code_fields`. A distribution manifest does **not** sign itself.
+- `distribution.json`: deterministic SHA-256 digests and byte lengths for every exported artifact, aggregate counts, and SNES historical-publication coverage. The separate `historical_snes_source_blobs_audited` and `historical_snes_source_ordinals_audited` counts report actual archived `.cht` files rehashed as Git blobs and exact original cheat entries rechecked before publication. `decoded_snes_code_fields` counts decoded source entries. A distribution manifest does **not** sign itself.
 
 The source `.cht` files remain in `archive/` and are the authority for original bytes. No ROM images, firmware, or save data are required or supplied.
 
