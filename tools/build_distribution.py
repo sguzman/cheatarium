@@ -47,6 +47,9 @@ def build_manifest(root):
     decoded_snes_entries = 0
     repeated_code_groups = 0
     lexical_tag_matches = 0
+    from validate_snes_compositions import audit as audit_compositions
+    compositions = audit_compositions(ROOT)
+    composition_rel = "interpretations/snes.json"
     taxonomy_rel = "taxonomy/effects-v1.json"
     taxonomy = checked_json(safe_path(root, taxonomy_rel))
     if (taxonomy.get("schema_version") != 1
@@ -77,7 +80,8 @@ def build_manifest(root):
             or review_doc.get("format") != "cheatarium-effect-reviews-v1"
             or not isinstance(review_doc.get("claims"), list)):
         raise ValueError("Unvalidated or changed effect review registry")
-    for rel in ["catalog.json", "reports/snes-codec-coverage.json", taxonomy_rel, review_rel]:
+    for rel in ["catalog.json", "reports/snes-codec-coverage.json",
+                taxonomy_rel, review_rel, composition_rel]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
         named_paths.add(rel)
@@ -319,6 +323,8 @@ def build_manifest(root):
         "game_candidate_groups": game_groups,
         "repeated_raw_code_groups": repeated_code_groups,
         "lexical_effect_tag_matches": lexical_tag_matches,
+        "reviewed_snes_revision_alternatives": compositions["reviewed_revision_alternatives"],
+        "unresolved_snes_plus_groups": compositions["unresolved_plus_groups"],
         "reviewed_effect_claims": len(review_doc["claims"]),
         "observed_effect_claims": sum(c.get("assessment") == "observed" for c in review_doc["claims"]),
         "effect_taxonomy": "cheatarium-effect-signals-en-v1",

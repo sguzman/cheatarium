@@ -867,6 +867,50 @@ mod tests {
     }
 
     #[test]
+    fn revision_alternative_groups_reject_lost_or_reordered_source_components() {
+        let base = CompositionOverride {
+            source_record_id: "source:1".to_owned(),
+            source_ordinal: 21,
+            source_git_blob_sha: "some-pinned-blob".to_owned(),
+            raw_code: "A+B+C+D".to_owned(),
+            relation: "revision-alternatives".to_owned(),
+            alternatives: vec![vec!["A".to_owned(), "B".to_owned()],
+                               vec!["C".to_owned(), "D".to_owned()]],
+            evidence: vec![CompositionEvidence {
+                url: "https://example.org/faq".to_owned(),
+                reference: "entry 1".to_owned(),
+                source_revision: "2026-test".to_owned()
+            }],
+            rom_match_verified: false,
+            simultaneous_execution_confirmed: false,
+        };
+        let raw = "A+B+C+D";
+        let ok = composition_from_override("source:1", "some-pinned-blob", raw, base);
+        assert!(ok.is_ok());
+        let composition = ok.unwrap();
+        assert_eq!(composition.relation, "revision-alternatives");
+        assert!(!composition.simultaneous_execution_confirmed);
+        assert_eq!(composition.alternatives[0], vec!["A", "B"]);
+
+        let bad = CompositionOverride {
+            source_record_id: "source:1".to_owned(),
+            source_ordinal: 21,
+            source_git_blob_sha: "some-pinned-blob".to_owned(),
+            raw_code: raw.to_owned(),
+            relation: "revision-alternatives".to_owned(),
+            alternatives: vec![vec!["A".to_owned(), "B".to_owned()], vec!["D".to_owned(), "C".to_owned()]],
+            evidence: vec![CompositionEvidence {
+                url: "https://example.org/faq".to_owned(),
+                reference: "entry 1".to_owned(),
+                source_revision: "2026-test".to_owned(),
+            }],
+            rom_match_verified: false,
+            simultaneous_execution_confirmed: false,
+        };
+        assert!(composition_from_override("source:1", "some-pinned-blob", raw, bad).is_err());
+    }
+
+    #[test]
     fn never_merge_region_revision_or_declared_device_format() {
         let baseline = mock("SMW (USA).cht", "a", Some("USA"), None);
         let europe = mock("SMW (Europe).cht", "b", Some("Europe"), None);

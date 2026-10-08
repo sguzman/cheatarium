@@ -37,6 +37,26 @@ def audit(index_path):
             if entry["role"] != "code":
                 raise ValueError("Unexpected source role")
             counts["encoded_code_fields"] += 1
+            composition = entry.get("composition")
+            code_text = entry.get("code") or ""
+            if "+" in code_text:
+                if not isinstance(composition, dict):
+                    raise ValueError("Compound text requires an explicit source composition annotation")
+                if composition.get("rom_match_verified") is not False or composition.get("simultaneous_execution_confirmed") is not False:
+                    raise ValueError("Unverified '+' string cannot imply executable code compatibility")
+                if composition.get("relation") == "revision-alternatives":
+                    if entry.get("snes_decode") is not None or len(composition.get("alternatives", [])) < 2:
+                        raise ValueError("Version alternatives must not masquerade as decoded simultaneous writes")
+                    counts["documented_revision_alternatives"] += 1
+                    continue
+                elif composition.get("relation") == "unresolved":
+                    if composition.get("alternatives") != [] or composition.get("evidence") != []:
+                        raise ValueError("Unknown source composition must not invent alternatives")
+                    counts["unresolved_plus_groups"] += 1
+                else:
+                    raise ValueError("Unsupported '+' semantics")
+            elif composition is not None:
+                raise ValueError("Unjoined source code cannot be a '+' composition")
             parsed = entry.get("snes_decode")
             if parsed:
                 if parsed.get("compatibility") != "unverified-cartridge-build":
@@ -87,6 +107,7 @@ def audit(index_path):
 
     subtotal = sum(counts[k] for k in (
         "strictly_decoded",
+        "documented_revision_alternatives",
         "explicit_format_not_decodable",
         "other_device_format",
         "format_not_identified",
