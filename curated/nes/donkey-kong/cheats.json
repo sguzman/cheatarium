@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "platform": "nes",
+  "game": {
+    "id": "donkey-kong",
+    "title": "Donkey Kong"
+  },
+  "editions": [
+    {
+      "id": "world",
+      "region": "World",
+      "revision": null,
+      "hashes": {}
+    }
+  ],
+  "cheats": [
+    {
+      "id": "infinite-lives",
+      "name": "Infinite Lives",
+      "kind": "device-code",
+      "variants": [
+        {
+          "edition": "world",
+          "format": "nes-game-genie",
+          "code": "SXNGOZVG",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Nintendo Entertainment System/Donkey Kong (World) (Game Genie).cht"
+          }
+        }
+      ]
+    },
+    {
+      "id": "start-nine-lives",
+      "name": "Start With 9 Lives",
+      "kind": "device-code",
+      "variants": [
+        {
+          "edition": "world",
+          "format": "nes-game-genie",
+          "code": "PENKNPLE",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Nintendo Entertainment System/Donkey Kong (World) (Game Genie).cht"
+          }
+        }
+      ]
+    }
+  ]
+}

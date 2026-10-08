@@ -1,0 +1,36 @@
+{
+  "id": "libretro-database",
+  "name": "Libretro Database",
+  "repository": "https://github.com/libretro/libretro-database",
+  "original_code_path": "https://github.com/libretro/libretro-database/tree/master/cht",
+  "snapshot_commit": "fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90",
+  "snapshot_date": "2026-10-05",
+  "imported_on": "2026-10-08",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://github.com/libretro/libretro-database/blob/fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90/LICENSE",
+  "attribution": "Libretro Database contributors and the original cheat authors credited upstream. Some entries aggregate earlier community sources.",
+  "redistribution_review": "Repository-wide CC-BY-SA-4.0; preserve upstream attribution and review any embedded third-party restrictions if identified.",
+  "import_policy": "Preserve exact upstream files; no corrections or conversions inside archive/.",
+  "files": [
+    {
+      "upstream_path": "cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "archive_path": "archive/libretro/cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438"
+    },
+    {
+      "upstream_path": "cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Action Replay).cht",
+      "archive_path": "archive/libretro/cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Action Replay).cht",
+      "git_blob_sha": "78c873763131e92750f397b68c2338886fba3f8a"
+    },
+    {
+      "upstream_path": "cht/Nintendo - Nintendo Entertainment System/Dr. Mario (Japan, USA).cht",
+      "archive_path": "archive/libretro/cht/Nintendo - Nintendo Entertainment System/Dr. Mario (Japan, USA).cht",
+      "git_blob_sha": "190b42d5aa10bb4e6a667a1914bf1acecdf155a3"
+    },
+    {
+      "upstream_path": "cht/Nintendo - Nintendo Entertainment System/Donkey Kong (World) (Game Genie).cht",
+      "archive_path": "archive/libretro/cht/Nintendo - Nintendo Entertainment System/Donkey Kong (World) (Game Genie).cht",
+      "git_blob_sha": "167f9cf9b62ec86749c4cab876e1038123a9efcb"
+    }
+  ]
+}

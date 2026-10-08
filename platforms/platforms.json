@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "platforms": [
+    {
+      "id": "atari-2600",
+      "name": "Atari 2600",
+      "maker": "Atari",
+      "kind": "home"
+    },
+    {
+      "id": "atari-5200",
+      "name": "Atari 5200",
+      "maker": "Atari",
+      "kind": "home"
+    },
+    {
+      "id": "atari-7800",
+      "name": "Atari 7800",
+      "maker": "Atari",
+      "kind": "home"
+    },
+    {
+      "id": "atari-jaguar",
+      "name": "Atari Jaguar",
+      "maker": "Atari",
+      "kind": "home"
+    },
+    {
+      "id": "atari-lynx",
+      "name": "Atari Lynx",
+      "maker": "Atari",
+      "kind": "handheld"
+    },
+    {
+      "id": "nes",
+      "name": "Nintendo Entertainment System",
+      "maker": "Nintendo",
+      "kind": "home"
+    },
+    {
+      "id": "snes",
+      "name": "Super Nintendo Entertainment System",
+      "maker": "Nintendo",
+      "kind": "home"
+    },
+    {
+      "id": "n64",
+      "name": "Nintendo 64",
+      "maker": "Nintendo",
+      "kind": "home"
+    },
+    {
+      "id": "gamecube",
+      "name": "Nintendo GameCube",
+      "maker": "Nintendo",
+      "kind": "home"
+    },
+    {
+      "id": "wii",
+      "name": "Nintendo Wii",
+      "maker": "Nintendo",
+      "kind": "home"
+    },
+    {
+      "id": "wii-u",
+      "name": "Nintendo Wii U",
+      "maker": "Nintendo",
+      "kind": "home"
+    },
+    {
+      "id": "switch",
+      "name": "Nintendo Switch",
+      "maker": "Nintendo",
+      "kind": "hybrid"
+    },
+    {
+      "id": "switch-2",
+      "name": "Nintendo Switch 2",
+      "maker": "Nintendo",
+      "kind": "hybrid"
+    },
+    {
+      "id": "gb",
+      "name": "Game Boy",
+      "maker": "Nintendo",
+      "kind": "handheld"
+    },
+    {
+      "id": "gbc",
+      "name": "Game Boy Color",
+      "maker": "Nintendo",
+      "kind": "handheld"
+    },
+    {
+      "id": "gba",
+      "name": "Game Boy Advance",
+      "maker": "Nintendo",
+      "kind": "handheld"
+    },
+    {
+      "id": "nds",
+      "name": "Nintendo DS",
+      "maker": "Nintendo",
+      "kind": "handheld"
+    },
+    {
+      "id": "3ds",
+      "name": "Nintendo 3DS",
+      "maker": "Nintendo",
+      "kind": "handheld"
+    },
+    {
+      "id": "virtual-boy",
+      "name": "Nintendo Virtual Boy",
+      "maker": "Nintendo",
+      "kind": "home"
+    },
+    {
+      "id": "master-system",
+      "name": "Sega Master System",
+      "maker": "Sega",
+      "kind": "home"
+    },
+    {
+      "id": "genesis",
+      "name": "Sega Genesis / Mega Drive",
+      "maker": "Sega",
+      "kind": "home"
+    },
+    {
+      "id": "segacd",
+      "name": "Sega CD / Mega-CD",
+      "maker": "Sega",
+      "kind": "home"
+    },
+    {
+      "id": "32x",
+      "name": "Sega 32X",
+      "maker": "Sega",
+      "kind": "home"
+    },
+    {
+      "id": "saturn",
+      "name": "Sega Saturn",
+      "maker": "Sega",
+      "kind": "home"
+    },
+    {
+      "id": "dreamcast",
+      "name": "Sega Dreamcast",
+      "maker": "Sega",
+      "kind": "home"
+    },
+    {
+      "id": "game-gear",
+      "name": "Sega Game Gear",
+      "maker": "Sega",
+      "kind": "handheld"
+    },
+    {
+      "id": "ps1",
+      "name": "Sony PlayStation",
+      "maker": "Sony",
+      "kind": "home"
+    },
+    {
+      "id": "ps2",
+      "name": "Sony PlayStation 2",
+      "maker": "Sony",
+      "kind": "home"
+    },
+    {
+      "id": "ps3",
+      "name": "Sony PlayStation 3",
+      "maker": "Sony",
+      "kind": "home"
+    },
+    {
+      "id": "ps4",
+      "name": "Sony PlayStation 4",
+      "maker": "Sony",
+      "kind": "home"
+    },
+    {
+      "id": "ps5",
+      "name": "Sony PlayStation 5",
+      "maker": "Sony",
+      "kind": "home"
+    },
+    {
+      "id": "psp",
+      "name": "Sony PlayStation Portable",
+      "maker": "Sony",
+      "kind": "handheld"
+    },
+    {
+      "id": "vita",
+      "name": "Sony PlayStation Vita",
+      "maker": "Sony",
+      "kind": "handheld"
+    },
+    {
+      "id": "xbox",
+      "name": "Microsoft Xbox",
+      "maker": "Microsoft",
+      "kind": "home"
+    },
+    {
+      "id": "xbox-360",
+      "name": "Microsoft Xbox 360",
+      "maker": "Microsoft",
+      "kind": "home"
+    },
+    {
+      "id": "xbox-one",
+      "name": "Microsoft Xbox One",
+      "maker": "Microsoft",
+      "kind": "home"
+    },
+    {
+      "id": "xbox-series",
+      "name": "Xbox Series X/S",
+      "maker": "Microsoft",
+      "kind": "home"
+    },
+    {
+      "id": "tg16",
+      "name": "PC Engine / TurboGrafx-16",
+      "maker": "NEC",
+      "kind": "home"
+    },
+    {
+      "id": "tgcd",
+      "name": "PC Engine CD / TurboGrafx-CD",
+      "maker": "NEC",
+      "kind": "home"
+    },
+    {
+      "id": "pc-fx",
+      "name": "NEC PC-FX",
+      "maker": "NEC",
+      "kind": "home"
+    },
+    {
+      "id": "neo-geo",
+      "name": "Neo Geo AES",
+      "maker": "SNK",
+      "kind": "home"
+    },
+    {
+      "id": "neo-geo-cd",
+      "name": "Neo Geo CD",
+      "maker": "SNK",
+      "kind": "home"
+    },
+    {
+      "id": "ngp",
+      "name": "Neo Geo Pocket",
+      "maker": "SNK",
+      "kind": "handheld"
+    },
+    {
+      "id": "ngpc",
+      "name": "Neo Geo Pocket Color",
+      "maker": "SNK",
+      "kind": "handheld"
+    },
+    {
+      "id": "wonderswan",
+      "name": "WonderSwan",
+      "maker": "Bandai",
+      "kind": "handheld"
+    },
+    {
+      "id": "wonderswan-color",
+      "name": "WonderSwan Color",
+      "maker": "Bandai",
+      "kind": "handheld"
+    },
+    {
+      "id": "3do",
+      "name": "3DO Interactive Multiplayer",
+      "maker": "3DO",
+      "kind": "home"
+    },
+    {
+      "id": "colecovision",
+      "name": "ColecoVision",
+      "maker": "Coleco",
+      "kind": "home"
+    },
+    {
+      "id": "intellivision",
+      "name": "Intellivision",
+      "maker": "Mattel",
+      "kind": "home"
+    },
+    {
+      "id": "vectrex",
+      "name": "Vectrex",
+      "maker": "GCE",
+      "kind": "home"
+    }
+  ]
+}

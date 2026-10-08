@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "platform": "nes",
+  "game": {
+    "id": "dr-mario",
+    "title": "Dr. Mario"
+  },
+  "editions": [
+    {
+      "id": "japan-usa",
+      "region": "Japan, USA",
+      "revision": null,
+      "hashes": {}
+    }
+  ],
+  "cheats": [
+    {
+      "id": "vitamins-do-not-fall",
+      "name": "Vitamin capsules don't fall",
+      "kind": "device-code",
+      "variants": [
+        {
+          "edition": "japan-usa",
+          "format": "nes-game-genie",
+          "code": "GZNEVIVT",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Nintendo Entertainment System/Dr. Mario (Japan, USA).cht"
+          }
+        }
+      ]
+    },
+    {
+      "id": "more-pieces-sent",
+      "name": "More pieces sent to the other player",
+      "kind": "device-code",
+      "variants": [
+        {
+          "edition": "japan-usa",
+          "format": "nes-game-genie",
+          "code": "AUVONUAO",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Nintendo Entertainment System/Dr. Mario (Japan, USA).cht"
+          }
+        }
+      ]
+    }
+  ]
+}

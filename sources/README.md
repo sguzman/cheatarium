@@ -1,0 +1,17 @@
+# Upstream source registry
+
+Redistribution status matters as much as code count. Register candidates here; only copy their payloads after checking permissions and notices.
+
+| Source | Scope | Status | Notes |
+| --- | --- | --- | --- |
+| [Libretro Database](https://github.com/libretro/libretro-database) | Many retro consoles/handhelds; RetroArch `.cht` | **Pilot imported** | Repository CC BY-SA 4.0; [pinned provenance and file inventory](libretro-database.json). Check original credits. |
+| [GameHacking.org](https://gamehacking.org/) | Extremely broad code collection and research | **Link / rights review** | Great research and export source. Do not bulk rehost without confirming permissions. |
+| [Switch Cheats DB](https://github.com/HamletDuFromage/switch-cheats-db) | Switch title/build-ID cheats | **Candidate / rights review** | Mirror of other community sources; title/build IDs critical. No redistribution clearance established here. |
+| [GoldHEN Cheat Repository](https://github.com/GoldHEN/GoldHEN_Cheat_Repository) | PlayStation 4 | **Candidate / review** | GPL-3.0 repository license observed; distinguish tools/data and their notices before copying. |
+| [Artemis PS3](https://github.com/bucanero/ArtemisPS3) | PlayStation 3 | **Candidate / review** | Project points to community cheat codes and an online database; check individual code rights and format. |
+
+The **source manifest**, not this table, is the authoritative record of what has actually been imported. Dates, revisions, and license details must not be inferred for sources listed as candidates.
+
+### Attribution
+
+The pilot import uses `libretro/libretro-database` at commit `fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90`, accessed 2026-10-08. Credits: Libretro Database contributors and upstream original authors. The upstream repository lists CC BY-SA 4.0. Each intact `.cht` file retains its original title and data. Attribution and any changes in future curated derivatives must be preserved. A repository-level license does not automatically settle every third-party contribution.

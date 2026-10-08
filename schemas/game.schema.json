@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cheatarium curated game",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "platform",
+    "game",
+    "editions",
+    "cheats"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "platform": {
+      "type": "string",
+      "minLength": 1
+    },
+    "game": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "editions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "region"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "revision": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hashes": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "cheats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "variants"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "device-code",
+              "emulator-memory",
+              "button-sequence",
+              "password",
+              "unlockable",
+              "glitch",
+              "patch"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          },
+          "variants": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "edition",
+                "format",
+                "code",
+                "status",
+                "source"
+              ],
+              "properties": {
+                "edition": {
+                  "type": "string"
+                },
+                "format": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "status": {
+                  "enum": [
+                    "unverified",
+                    "verified",
+                    "broken"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "object",
+                  "required": [
+                    "source",
+                    "archive_path"
+                  ],
+                  "properties": {
+                    "source": {
+                      "type": "string"
+                    },
+                    "archive_path": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

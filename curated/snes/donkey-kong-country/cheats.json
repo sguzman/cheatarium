@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "platform": "snes",
+  "game": {
+    "id": "donkey-kong-country",
+    "title": "Donkey Kong Country"
+  },
+  "editions": [
+    {
+      "id": "usa",
+      "region": "USA",
+      "revision": null,
+      "hashes": {}
+    }
+  ],
+  "cheats": [
+    {
+      "id": "invincible",
+      "name": "Invincible",
+      "kind": "device-code",
+      "variants": [
+        {
+          "edition": "usa",
+          "format": "snes-game-genie",
+          "code": "1DCC-CA7A",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht"
+          }
+        },
+        {
+          "edition": "usa",
+          "format": "snes-action-replay",
+          "code": "BFA2C7:60",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Action Replay).cht"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-lives",
+      "name": "Infinite Lives",
+      "kind": "device-code",
+      "variants": [
+        {
+          "edition": "usa",
+          "format": "snes-game-genie",
+          "code": "C2C1-4A9C",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht"
+          }
+        },
+        {
+          "edition": "usa",
+          "format": "snes-action-replay",
+          "code": "B6A863:AD",
+          "status": "unverified",
+          "source": {
+            "source": "libretro-database",
+            "archive_path": "archive/libretro/cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Action Replay).cht"
+          }
+        }
+      ]
+    }
+  ]
+}
