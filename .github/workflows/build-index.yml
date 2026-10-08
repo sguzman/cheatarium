@@ -219,6 +219,17 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- tags \
             --db generated/v1 --platform snes --category lives --limit 2 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.lexical_tags.v1" and x["total_matches"] > 0 and not x["verified_effect"] and not x["cheats_activated"] and all(h["matched_phrase"] for h in x["hits"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
+            --db generated/v1 --platform snes --code '6D6B-6F0F' --game-key push-over \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.exact_codes.v1" and d["total_source_occurrences"] == 1 and d["returned"] == 1 and d["hits"][0]["cheat"]["ordinal"] == 0 and d["exact_original_text_only"] and not d["equivalent_effect_verified"] and not d["rom_compatibility_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
+            --db generated/v1 --platform snes --code 'CB66-AD6F+6266-AF0F+DF66-ADAF' \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_source_occurrences"] == 1 and d["hits"][0]["cheat"]["ordinal"] == 3 and d["hits"][0]["cheat"]["composition"]["relation"] == "unresolved" and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
+            --db generated/v1 --platform snes --code '6d6b-6f0f' --game-key push-over --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_source_occurrences"] == 0 and d["exact_original_text_only"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- effects \
             --db generated/v1 --platform snes --effect "Infinite" --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["schema"] == "cheatarium.effects.v1" and q["total_matches"] > 0 and not q["cheats_activated"]; assert all(hit["provenance"]["git_blob_sha"] for hit in q["hits"])'
