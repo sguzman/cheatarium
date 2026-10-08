@@ -13,9 +13,10 @@ Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust 
 - `generated/v1/snes.json.gz`: full parsed source occurrences, original code strings, hints and provenance.
 - `generated/v1/identities/snes.json`: separately reviewed ROM hash evidence registry (currently empty; no guessed ROM mappings).
 - `generated/v1/interpretations/snes.json`: evidence-backed revision alternatives for exact original multi-part source codes; all other SNES `+` joins remain unresolved.
+- `generated/v1/reports/snes-composition-review-queue.json`: optional, ranked unresolved source-join review priorities with complete source identifiers and advisory candidate names.
 - `generated/v1/distribution.json`: SHA-256 hashes and byte sizes of all artifacts.
 
-An emulator can download these ten files at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
+An emulator can download the relevant platform artifacts at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
 
 ## Rust client
 

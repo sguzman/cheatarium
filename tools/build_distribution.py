@@ -49,6 +49,11 @@ def build_manifest(root):
     lexical_tag_matches = 0
     from validate_snes_compositions import audit as audit_compositions
     compositions = audit_compositions(ROOT)
+    from build_snes_review_queue import build as rebuild_composition_queue
+    queue_rel = "reports/snes-composition-review-queue.json"
+    composition_queue = checked_json(safe_path(root, queue_rel))
+    if composition_queue != rebuild_composition_queue(ROOT):
+        raise ValueError("Stale or tampered source composition review queue")
     composition_rel = "interpretations/snes.json"
     taxonomy_rel = "taxonomy/effects-v1.json"
     taxonomy = checked_json(safe_path(root, taxonomy_rel))
@@ -81,7 +86,7 @@ def build_manifest(root):
             or not isinstance(review_doc.get("claims"), list)):
         raise ValueError("Unvalidated or changed effect review registry")
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
-                taxonomy_rel, review_rel, composition_rel]:
+                taxonomy_rel, review_rel, composition_rel, queue_rel]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
         named_paths.add(rel)
@@ -325,6 +330,7 @@ def build_manifest(root):
         "lexical_effect_tag_matches": lexical_tag_matches,
         "reviewed_snes_revision_alternatives": compositions["reviewed_revision_alternatives"],
         "unresolved_snes_plus_groups": compositions["unresolved_plus_groups"],
+        "unresolved_snes_candidate_groups": composition_queue["candidate_groups_with_unresolved_joins"],
         "reviewed_effect_claims": len(review_doc["claims"]),
         "observed_effect_claims": sum(c.get("assessment") == "observed" for c in review_doc["claims"]),
         "effect_taxonomy": "cheatarium-effect-signals-en-v1",

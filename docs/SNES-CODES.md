@@ -32,6 +32,12 @@ The query returns the original source provenance and both the reviewed or unreso
 
 The indexer and independent Python audit reject altered source blobs, missing ordinals, lost/reordered components, malformed evidence and mistakenly emitted simultaneous writes for revision alternatives. The generated registry and source bundle are checksummed in the published distribution.
 
+### Unresolved-source review priority
+
+The reproducible [SNES composition review queue](../generated/v1/reports/snes-composition-review-queue.json) groups still-unresolved `+` source occurrences by **advisory filename-derived game key**, sorted by descending unresolved source count, then game key. It publishes the top 100 candidate buckets with original source IDs, code ordinals, source blob hashes, region/declared-device hints and up to three raw examples per bucket.
+
+This is an evidence-acquisition priority list, **not** a claim that the highest-ranked game has the most broken cheats, nor that `+` means simultaneous writes. It can be regenerated and independently checked by `tools/build_snes_review_queue.py`, with synthetic adversarial tests in CI.
+
 ## Supported formats
 
 - **Game Genie:** one 4+4-character hyphenated SNES code per component (e.g. `DDB4-6F07`); the known Game Genie alphabet and 24-bit address-bit permutation are applied strictly.
