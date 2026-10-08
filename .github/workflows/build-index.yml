@@ -18,6 +18,7 @@ on:
       - "taxonomy/**"
       - "interpretations/**"
       - "tools/validate_snes_compositions.py"
+      - "tools/test_snes_compositions.py"
       - "reviews/**"
       - "tools/validate_effect_reviews.py"
       - "tools/test_effect_reviews.py"
@@ -62,6 +63,7 @@ jobs:
           python3 tools/test_effect_reviews.py
           python3 tools/validate_effect_reviews.py --write
           python3 tools/validate_effect_reviews.py --check
+          python3 tools/test_snes_compositions.py
           python3 tools/validate_snes_compositions.py
           python3 tools/audit_snes_codecs.py --out generated/v1/reports/snes-codec-coverage.json
           python3 tools/build_distribution.py --write
