@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/import-libretro.yml"
       - "tools/import_libretro.py"
+      - "tools/validate.py"
   workflow_dispatch:
 
 permissions:
