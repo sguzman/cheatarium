@@ -16,11 +16,11 @@
 
 - [x] Register console/handheld platform IDs.
 - [x] Start Libretro NES and SNES proof-of-concept imports.
-- [x] Import complete pinned Libretro NES/SNES archives with per-file provenance (5,035 files).
-- [ ] Expand Nintendo: Game Boy, Game Boy Color, Game Boy Advance, N64, DS, GameCube, Wii, 3DS.
-- [ ] Expand Sega: Master System, Genesis/Mega Drive, Game Gear, Saturn, Dreamcast.
-- [ ] Expand Sony: PlayStation, PS2, PSP, PS3, Vita, PS4.
-- [ ] Evaluate Nintendo Switch title-ID/build-ID cheat datasets.
+- [x] Import eight pinned Libretro collections with per-file provenance (14,713 files): NES, SNES, GB, GBC, GBA, Genesis, PlayStation, PSP.
+- [ ] Expand Nintendo beyond the imported GB/GBC/GBA collections: N64, DS, GameCube, Wii, 3DS.
+- [ ] Expand Sega beyond the imported Genesis/Mega Drive collection: Master System, Game Gear, Saturn, Dreamcast.
+- [ ] Expand Sony beyond the imported PS1/PSP collections: PS2, PS3, Vita, PS4.
+- [ ] Evaluate Nintendo Switch title-ID/build-ID cheat datasets, PS2 PCSX2 `.pnach` collections, and GameCube/Wii Gecko codes.
 - [ ] Evaluate Microsoft Xbox families, Atari, NEC, SNK, Bandai, 3DO.
 - [ ] Add link-only indexes for valuable sources whose redistribution rights cannot be confirmed.
 

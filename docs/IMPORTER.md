@@ -11,4 +11,4 @@ python3 tools/validate.py
 
 For a bounded trial use `--limit 25` (per system). The default is the full system collection. The import is repeatable and refuses to overwrite a modified archived file. Additional supported identifiers are listed by `--help`.
 
-The repository's one-time GitHub Actions bootstrap runs the NES/SNES import on changes to its workflow or importer, then commits the result only if validation succeeds. This is *not* a continuous scraper. Wider platforms require intentional scope and source reviews.
+The repository's GitHub Actions importer now runs eight pinned system collections (NES, SNES, GB, GBC, GBA, Genesis, PS1, PSP) on changes to its workflow, importer, or validator, then commits the result only if validation succeeds. This is *not* a continuous scraper. Wider platforms require intentional scope and source reviews.

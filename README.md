@@ -27,6 +27,6 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Status
 
-The foundation is live. **Complete NES and SNES Libretro cheat collections** have been imported: 5,035 native `.cht` source files, pinned to the 2026-10-05 upstream revision with byte-level provenance. There are also starter curated game entries. Other systems, better indexing, search, and integrations will follow without rewriting the archive.
+The foundation is live. **Eight complete Libretro console/handheld collections** have been imported: 14,713 native `.cht` source files, pinned to the 2026-10-05 upstream revision with byte-level provenance. The platform registry covers 50 systems; three games have starter curated records. This distinction matters: archiving thousands of native files is not the same as curating and verifying every individual code. Other systems, better indexing, search, and integrations will follow without rewriting the archive.
 
 The archive is separate from any particular emulator, but future integrations may make these cheats directly usable in projects such as Starbyte.
