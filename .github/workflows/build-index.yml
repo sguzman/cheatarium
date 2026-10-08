@@ -133,6 +133,36 @@ jobs:
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["fingerprint"]["sha256"] == "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"; assert d["fingerprint"]["byte_length"] == 3; assert d["evidence_lookup"]["status"] == "no_evidence"; assert not d["evidence_lookup"]["cheat_compatibility_verified"] and not d["filename_matching_used"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- verify --db generated/v1 --platform snes --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["artifact_checksums_match"] and not d["cheats_verified"]'
+      - name: Smoke-test local SNES ZIP inventory (synthetic bytes only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          work="$(mktemp -d)"
+          trap 'rm -rf "$work"' EXIT
+          mkdir -p "$work/zips/subdir"
+          python3 - "$work/zips/subdir/Synthetic.zip" <<'PY'
+          import sys, zipfile
+          with zipfile.ZipFile(sys.argv[1], "w", compression=zipfile.ZIP_DEFLATED) as z:
+              z.writestr("fixture.SFC", b"abc")
+              z.writestr("ignore.txt", b"not a ROM")
+          PY
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-inventory -- \
+            --rom-dir "$work/zips" --out "$work/private-inventory.json"
+          python3 - "$work/private-inventory.json" <<'PY'
+          import json,sys
+          d=json.load(open(sys.argv[1]))
+          assert d["archives_scanned"]==1 and d["rom_members_hashed"]==1 and not d["issues"]
+          r=d["entries"][0]
+          assert r["archive"]=="subdir/Synthetic.zip" and r["member"]=="fixture.SFC"
+          assert r["sha256"]=="ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+          assert r["byte_length"]==3 and not r["possible_512_byte_copier_header_by_length_only"]
+          assert d["identity_status"].startswith("fingerprints_only")
+          PY
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-inventory -- \
+            --rom-dir "$work/zips" --out "$work/private-inventory.json"; then
+            echo "ERROR: scanner unexpectedly overwrote private inventory" >&2
+            exit 1
+          fi
       - name: Exercise standalone codec and audit entire SNES coverage
         shell: bash
         run: |

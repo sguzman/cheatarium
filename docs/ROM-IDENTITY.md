@@ -15,6 +15,20 @@ cargo run --release -p cheatarium-client --bin cheatarium-fingerprint -- --platf
 
 The second command uses the SHA-256 of the ASCII text `abc` solely as a test vector, **not** as a Nintendo ROM identity. With the current empty registry both commands produce `no_evidence` unless users supply a file whose hash appears in a future evidence record.
 
+## Local ZIP inventory scanner
+
+The opt-in `cheatarium-inventory` CLI scans nested directories of SNES `.zip` archives, opens supported `.sfc` and `.smc` members **in memory**, and calculates SHA-256 over their original uncompressed bytes. No ROM extraction, upload, or remote communication occurs. The JSON inventory stays outside the repository unless someone independently and explicitly decides to share the metadata.
+
+```fish
+cargo run --release -p cheatarium-client --bin cheatarium-inventory -- --rom-dir "/path/to/my/SNES ZIPs" --out "$HOME/snes-inventory.json"
+```
+
+That is one command. It does not assume or need a Ludographium checkout, does not modify the source ZIPs, and refuses to overwrite an existing output file.
+
+The JSON contains **only metadata**: ZIP-relative archive names, ZIP member names, original byte lengths, SHA-256 digests, and a tentative 512-byte copier-header **length heuristic**. It omits absolute local paths and never includes the ROM bytes. Failed ZIPs and unsupported members are reported as issue codes. A result is a **private test inventory**, not a source of publicly verified release IDs, and it is not automatically committed to any repo.
+
+Safety limits: 64 MiB per ROM member, 100,000 entries per ZIP, 100,000 ZIPs, and 500,000 result entries. The scanner does not follow nested symlinks or extract archive paths.
+
 ## Strict hash semantics
 
 The hash scope is always `sha256-entire-file-unaltered`. **Do not automatically strip a 512-byte copier header**, trim padding, reverse bytes, strip ROM metadata, or infer headers from file extensions. Such transforms could be supported later as explicitly named and audited normalization algorithms, but a normalized hash must never silently replace a whole-file hash.

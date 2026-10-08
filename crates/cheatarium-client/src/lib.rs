@@ -3,6 +3,7 @@
 //! No network access, ROM reads, cartridge mutation, or code execution.
 //! All name matching is *advisory* and must not auto-enable cheats.
 pub mod identity;
+pub mod inventory;
 use flate2::read::GzDecoder;
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};

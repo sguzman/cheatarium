@@ -36,6 +36,7 @@
 - [x] Generate advisory game-title catalogs with source links for all 36 consoles.
 - [x] Publish SHA-256 artifact manifests with Rust client integrity checks.
 - [x] Add source-evidenced, exact-file ROM fingerprint lookup with ambiguity and size-conflict handling; publish an initially empty SNES identity registry to avoid invented mappings.
+- [x] Add local-only, ZIP-streaming SNES ROM metadata inventory scanner; do not collect or upload ROMs.
 - [ ] Acquire independently sourced and reviewed release hashes, then establish reliable cartridge/build identity and canonical cross-source game records.
 - [ ] Dedupe equivalent codes while retaining original provenance.
 - [x] Add case-insensitive, provenance-preserving cheat-effect text search in the Rust client and CLI.
