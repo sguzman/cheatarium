@@ -36,6 +36,18 @@ This is what the code *decodes to*, not proof the bus location is RAM, that the 
 
 The decoder follows the documented SNES code encoding used by [Snes9x](https://github.com/snes9xgit/snes9x/blob/master/cheats2.cpp) and cross-checked against [bsnes-derived decoding](https://github.com/OpenEmu/BSNES-Core/blob/master/program.mm). The Super Mario World Game Genie sample codes also appear in historical published codebooks; that confirms example code text, not execution on arbitrary cartridges.
 
+## Standalone Cheatarium tools
+
+The decoder can be exercised without an emulator:
+
+```sh
+cargo run --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes game-genie 'DDB4-6F07'
+cargo run --release -p cheatarium-codecs --bin cheatarium-decode -- decode snes action-replay '7E1E6B14+7F80CAFF'
+python3 tools/audit_snes_codecs.py --json
+```
+
+The decoder prints versioned JSON containing the original code, decoded writes, and explicit `executable: false` and `rom_compatible: false` flags. It rejects malformed codes with a nonzero exit status. The audit partitions every SNES code field by decoded, malformed/placeholder, other format, or unknown source format.
+
 ## Tests and release integrity
 
 Rust unit tests cover valid/invalid/compound codes, lowercase inputs, wildcards, and bounded input. GitHub Actions also checks actual imported Super Mario World and 3 Ninjas cheat records, ensures a wildcard remains undecoded, and runs the distribution integrity checker across **all** consoles.
