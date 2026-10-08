@@ -130,6 +130,24 @@ def test():
     assert not match["historical_publication_witness"]["safe_to_auto_apply"]
     missing = dossier(bundle, "other-game", publication_registry=publication)
     assert missing["historical_publication_witnesses"] == 0
+    witnessed_only = dossier(bundle, "example", publication_registry=publication,
+                           witness_filter="witnessed", limit=1)
+    assert witnessed_only["total_unresolved_source_occurrences"] == 3
+    assert witnessed_only["historical_publication_witnesses"] == 1
+    assert witnessed_only["selected_source_occurrences"] == 1
+    assert witnessed_only["returned"] == 1 and not witnessed_only["has_more"]
+    assert witnessed_only["occurrences"][0]["source_ordinal"] == 9
+    unwitnessed_only = dossier(bundle, "example", publication_registry=publication,
+                             witness_filter="unwitnessed", limit=1)
+    assert unwitnessed_only["selected_source_occurrences"] == 2
+    assert unwitnessed_only["returned"] == 1 and unwitnessed_only["has_more"]
+    second_unwitnessed = dossier(bundle, "example", publication_registry=publication,
+                               witness_filter="unwitnessed", offset=1, limit=1)
+    assert second_unwitnessed["returned"] == 1 and not second_unwitnessed["has_more"]
+    assert all("historical_publication_witness" not in x
+               for x in unwitnessed_only["occurrences"] + second_unwitnessed["occurrences"])
+    rejects(lambda: dossier(bundle, "example", witness_filter="verified"))
+
     altered_publication = copy.deepcopy(publication)
     altered_publication["records"][0]["raw_code"] = "AAA+WRONG"
     rejects(lambda: dossier(bundle, "example", publication_registry=altered_publication))
