@@ -84,6 +84,8 @@ pub struct SnesDecoded {
     pub format: String,
     pub address_space: String,
     pub compatibility: String,
+    #[serde(default)]
+    pub interpretation_basis: Option<String>,
     pub writes: Vec<SnesWrite>,
 }
 

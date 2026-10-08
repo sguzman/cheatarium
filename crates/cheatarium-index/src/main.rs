@@ -1,4 +1,4 @@
-use cheatarium_codecs::decode_snes;
+use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::{candidate_game_key, format_hint, parse_cht, region_hint, title_hint, Code};
 use flate2::{Compression, GzBuilder};
 use serde::{Deserialize, Serialize};
@@ -277,15 +277,19 @@ fn run() -> Result<()> {
         let mut parsed = parse_cht(&String::from_utf8_lossy(&content));
         let stem = filename.strip_suffix(".cht").unwrap_or(filename);
         if system.platform == "snes" {
-            if let Some(device_format) = format_hint(stem) {
-                for code in &mut parsed.codes {
-                    if code.role != "code" {
-                        continue;
-                    }
-                    if let Some(source_code) = &code.code {
-                        // Reject any wildcard or malformed compound as a whole.
-                        code.snes_decode = decode_snes(device_format, source_code).ok();
-                    }
+            let declared_format = format_hint(stem);
+            for code in &mut parsed.codes {
+                if code.role != "code" {
+                    continue;
+                }
+                if let Some(source_code) = &code.code {
+                    // Unknown filename formats never override declared formats.
+                    // An unlabelled code is interpreted only if its entire
+                    // compound text uses a single unambiguous syntax.
+                    code.snes_decode = match declared_format {
+                        Some(format) => decode_snes(format, source_code).ok(),
+                        None => decode_snes_unlabelled(source_code).ok(),
+                    };
                 }
             }
         }

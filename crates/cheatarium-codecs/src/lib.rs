@@ -22,6 +22,8 @@ pub struct SnesDecoded {
     pub format: String,
     pub address_space: String,
     pub compatibility: String,
+    /// "declared-file-format" or "code-syntax", never verified compatibility.
+    pub interpretation_basis: String,
     /// All parts must be successfully decoded; never apply only part of a group.
     pub writes: Vec<SnesWrite>,
 }
@@ -107,8 +109,49 @@ pub fn decode_snes(format: &str, raw: &str) -> Result<SnesDecoded, DecodeError> 
         format: format.to_owned(),
         address_space: "snes-cpu-bus-24-bit".to_owned(),
         compatibility: "unverified-cartridge-build".to_owned(),
+        interpretation_basis: "declared-file-format".to_owned(),
         writes,
     })
+}
+
+/// Interpret *unlabelled* SNES code text conservatively.
+/// Hyphenated Game Genie has a distinctive alphabet; exactly eight hex
+/// digits can only be called a raw 24-bit-address/8-bit-value candidate.
+/// Never attribute anonymous hex to Pro Action Replay or invent a ROM match.
+/// Mixed groups, placeholders and other encodings remain uninterpreted.
+pub fn decode_snes_unlabelled(raw: &str) -> Result<SnesDecoded, DecodeError> {
+    if raw.len() > MAX_SOURCE_LENGTH {
+        return Err(DecodeError::TooManyParts);
+    }
+    let parts: Vec<_> = raw.split('+').map(str::trim).collect();
+    if parts.len() > MAX_COMPOUND_PARTS {
+        return Err(DecodeError::TooManyParts);
+    }
+    if parts.iter().any(|part| part.is_empty()) {
+        return Err(DecodeError::EmptyPart);
+    }
+    let all_game_genie = parts.iter().all(|part| {
+        part.len() == 9
+            && part.as_bytes().get(4) == Some(&b'-')
+            && part.bytes().enumerate().all(|(i, ch)| {
+                i == 4 || GENIE_DIGITS.contains(&ch.to_ascii_uppercase())
+            })
+    });
+    let all_raw_hex = parts.iter().all(|part| {
+        part.len() == 8 && part.bytes().all(|ch| ch.is_ascii_hexdigit())
+    });
+    let mut decoded = if all_game_genie {
+        decode_snes("game-genie", raw)?
+    } else if all_raw_hex {
+        decode_snes("action-replay", raw)?
+    } else {
+        return Err(DecodeError::InvalidCode);
+    };
+    if all_raw_hex {
+        decoded.format = "raw-snes-address-value".to_owned();
+    }
+    decoded.interpretation_basis = "code-syntax".to_owned();
+    Ok(decoded)
 }
 
 #[cfg(test)]
@@ -165,6 +208,34 @@ mod tests {
             decode_snes("gameshark", "7E1E6B14"),
             Err(DecodeError::UnsupportedFormat)
         );
+    }
+
+    #[test]
+    fn unlabeled_game_genie_is_syntax_only() {
+        let result = decode_snes_unlabelled("ddB4-6f07").unwrap();
+        assert_eq!(result.format, "game-genie");
+        assert_eq!(result.interpretation_basis, "code-syntax");
+        assert_eq!(result.writes[0].address_hex, "009E25");
+        assert_eq!(result.writes[0].value_hex, "00");
+    }
+
+    #[test]
+    fn anonymous_hex_is_not_mislabeled_as_action_replay() {
+        let result = decode_snes_unlabelled("7E1E6B14+7F80CAFF").unwrap();
+        assert_eq!(result.format, "raw-snes-address-value");
+        assert_eq!(result.interpretation_basis, "code-syntax");
+        assert_eq!(result.writes.len(), 2);
+        assert_eq!(result.writes[1].address_hex, "7F80CA");
+    }
+
+    #[test]
+    fn mixed_or_incomplete_unlabeled_groups_not_interpreted() {
+        assert_eq!(decode_snes_unlabelled("DDB4-6F07+7E1E6B14"), Err(DecodeError::InvalidCode));
+        assert_eq!(decode_snes_unlabelled("7FC136XX"), Err(DecodeError::InvalidCode));
+        assert_eq!(decode_snes_unlabelled("DDB4-6F07+"), Err(DecodeError::EmptyPart));
+        assert_eq!(decode_snes_unlabelled("ABCD/1234"), Err(DecodeError::InvalidCode));
+        let known = decode_snes("action-replay", "7E1E6B14").unwrap();
+        assert_eq!(known.interpretation_basis, "declared-file-format");
     }
 
     #[test]
