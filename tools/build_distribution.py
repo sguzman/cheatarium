@@ -105,8 +105,19 @@ def build_manifest(root):
                     continue
                 if platform != "snes" or code["role"] != "code":
                     raise ValueError(f"Unexpected SNES decoding field: {platform}")
-                if record.get("format_hint") != interpretation.get("format"):
-                    raise ValueError("Decoded format differs from original file format hint")
+                source_format = record.get("format_hint")
+                decoded_format = interpretation.get("format")
+                evidence = interpretation.get("interpretation_basis")
+                if evidence == "declared-file-format":
+                    if source_format not in ("game-genie", "action-replay") or decoded_format != source_format:
+                        raise ValueError("Decoder contradicted the declared file format")
+                elif evidence == "code-syntax":
+                    if source_format is not None or decoded_format not in (
+                        "game-genie", "raw-snes-address-value"
+                    ):
+                        raise ValueError("Code syntax cannot override a declared file format")
+                else:
+                    raise ValueError("Missing or invalid SNES decoder evidence basis")
                 if interpretation.get("compatibility") != "unverified-cartridge-build":
                     raise ValueError("Decoded code incorrectly claims ROM compatibility")
                 if interpretation.get("address_space") != "snes-cpu-bus-24-bit":
