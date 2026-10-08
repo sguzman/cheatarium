@@ -125,16 +125,29 @@ impl IdentityRegistry {
     /// A documented SHA claim never silently becomes a verified cheat binding.
     /// Multiple claims for the same hash are reported as conflicts.
     pub fn lookup(&self, hash: &str) -> Result<FingerprintLookup<'_>> {
+        self.lookup_with_length(hash, None)
+    }
+
+    /// Require the exact byte length when it is known. Any disagreement in
+    /// reported size remains an explicit conflict, never a silent selection.
+    pub fn lookup_with_length(&self, hash: &str, known_length: Option<u64>) -> Result<FingerprintLookup<'_>> {
         if !sha256_valid(hash) {
             return Err("Expected lowercase 64-character SHA-256 digest".into());
         }
         self.validate()?;
         let matching_release_claims: Vec<&ReleaseClaim> =
             self.records.iter().filter(|record| record.sha256 == hash).collect();
-        let status = match matching_release_claims.len() {
-            0 => "no_evidence",
-            1 => "documented_release_claim",
-            _ => "conflicting_release_claims",
+        let length_conflict = known_length.is_some_and(|size| {
+            matching_release_claims.iter().any(|claim| claim.byte_length != size)
+        });
+        let status = if length_conflict {
+            "fingerprint_length_conflict"
+        } else {
+            match matching_release_claims.len() {
+                0 => "no_evidence",
+                1 => "documented_release_claim",
+                _ => "conflicting_release_claims",
+            }
         };
         Ok(FingerprintLookup {
             schema_version: 1,
@@ -225,6 +238,16 @@ mod tests {
         assert_eq!(result.status, "documented_release_claim");
         assert_eq!(result.matching_release_claims.len(), 1);
         assert!(!result.cheat_compatibility_verified);
+    }
+
+    #[test]
+    fn mismatching_file_length_cannot_be_considered_an_identity_hit() {
+        let reg = registry(vec![claim("release-a")]);
+        let result = reg.lookup_with_length(ABC_SHA, Some(8)).unwrap();
+        assert_eq!(result.status, "fingerprint_length_conflict");
+        assert!(!result.cheat_compatibility_verified);
+        let result = reg.lookup_with_length(ABC_SHA, Some(3)).unwrap();
+        assert_eq!(result.status, "documented_release_claim");
     }
 
     #[test]

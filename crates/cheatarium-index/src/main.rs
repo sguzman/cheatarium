@@ -79,6 +79,8 @@ struct CatalogItem {
     platform: String,
     artifact: String,
     game_index_artifact: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    identity_artifact: Option<String>,
     game_candidate_groups: usize,
     source_files: usize,
     code_fields: usize,
@@ -323,6 +325,7 @@ fn run() -> Result<()> {
 
     fs::create_dir_all(&out)?;
     fs::create_dir_all(out.join("games"))?;
+    fs::create_dir_all(out.join("identities"))?;
     let mut catalog = Vec::new();
     for (platform, mut records) in by_platform {
         records.sort_by(|a, b| a.id.cmp(&b.id));
@@ -345,6 +348,15 @@ fn run() -> Result<()> {
         let source_files = records.len();
         let filename = format!("{platform}.json.gz");
         let game_index_artifact = format!("games/{platform}.json.gz");
+        // Evidence-driven ROM fingerprints are distributed separately from
+        // filename candidates. No ROM hash is ever inferred from a title.
+        let identity_artifact = if platform == "snes" {
+            let name = format!("identities/{platform}.json");
+            fs::copy(root.join(format!("identities/v1/{platform}.json")), out.join(&name))?;
+            Some(name)
+        } else {
+            None
+        };
         let games = build_game_index(&platform, &records);
         let game_candidate_groups = games.candidates.len();
         let mut game_gzip = GzBuilder::new().mtime(0).write(
@@ -373,6 +385,7 @@ fn run() -> Result<()> {
             platform,
             artifact: filename,
             game_index_artifact,
+            identity_artifact,
             game_candidate_groups,
             source_files,
             code_fields,

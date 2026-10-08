@@ -31,6 +31,8 @@ pub struct CatalogEntry {
     #[serde(default)]
     pub game_index_artifact: Option<String>,
     #[serde(default)]
+    pub identity_artifact: Option<String>,
+    #[serde(default)]
     pub game_candidate_groups: Option<usize>,
     pub source_files: usize,
     pub code_fields: usize,
@@ -245,6 +247,12 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
             return Err("Unsafe Cheatarium game-index path".into());
         }
         artifacts.push(game_path.clone());
+    }
+    if let Some(identity_path) = &entry.identity_artifact {
+        if identity_path != &format!("identities/{platform}.json") {
+            return Err("Unsafe Cheatarium ROM identity artifact path".into());
+        }
+        artifacts.push(identity_path.clone());
     }
     let mut content = Vec::new();
     File::open(root.join("distribution.json"))?

@@ -60,7 +60,35 @@ def build_manifest(root):
         game_rel = entry["game_index_artifact"]
         if source_rel != f"{platform}.json.gz" or game_rel != f"games/{platform}.json.gz":
             raise ValueError(f"Unexpected artifact path for {platform}")
-        for rel in [source_rel, game_rel]:
+        identity_rel = entry.get("identity_artifact")
+        artifacts = [source_rel, game_rel]
+        if identity_rel is not None:
+            if identity_rel != f"identities/{platform}.json":
+                raise ValueError(f"Unexpected ROM identity artifact path for {platform}")
+            identity = checked_json(safe_path(root, identity_rel))
+            if (identity.get("schema_version") != 1
+                    or identity.get("platform") != platform
+                    or identity.get("hash_scope") != "sha256-entire-file-unaltered"
+                    or not isinstance(identity.get("records"), list)):
+                raise ValueError(f"Invalid ROM identity registry: {platform}")
+            for record in identity["records"]:
+                digest_hex = record.get("sha256", "")
+                if (len(digest_hex) != 64
+                        or not all(c in "0123456789abcdef" for c in digest_hex)
+                        or not isinstance(record.get("byte_length"), int)
+                        or record["byte_length"] <= 0
+                        or not all(record.get(field) for field in ("game_id", "title", "edition_id"))
+                        or not isinstance(record.get("evidence"), list)
+                        or not record["evidence"]):
+                    raise ValueError(f"Bad identity claim in {platform}")
+                for evidence in record["evidence"]:
+                    if (not evidence.get("url", "").startswith("https://")
+                            or not evidence.get("reference")
+                            or not evidence.get("source_revision")
+                            or evidence.get("review_state") not in ("candidate", "reviewed")):
+                        raise ValueError(f"Invalid ROM fingerprint evidence in {platform}")
+            artifacts.append(identity_rel)
+        for rel in artifacts:
             if rel in named_paths:
                 raise ValueError(f"Duplicate artifact path {rel}")
             manifest_files.append({"path": rel, **digest(safe_path(root, rel))})

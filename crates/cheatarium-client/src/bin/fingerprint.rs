@@ -41,7 +41,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Fingerprint {sha256, byte_length: 0, hash_scope: HASH_SCOPE.to_owned()}
     };
     let registry = load_registry(registry_dir, &platform)?;
-    let matching = registry.lookup(&fingerprint.sha256)?;
+    let matching = registry.lookup_with_length(
+        &fingerprint.sha256,
+        (fingerprint.byte_length > 0).then_some(fingerprint.byte_length),
+    )?;
     println!("{}", serde_json::to_string_pretty(&serde_json::json!({
         "schema": "cheatarium.fingerprint.v1",
         "platform": platform,
