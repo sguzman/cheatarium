@@ -154,7 +154,9 @@ pub fn load_platform(root: impl AsRef<Path>, platform: &str) -> Result<Bundle> {
         .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
     if entry.artifact != format!("{platform}.json.gz")
         || platform.is_empty()
-        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || !platform
+            .bytes()
+            .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
     {
         return Err("Unsafe or unexpected Cheatarium index path".into());
     }
@@ -213,7 +215,9 @@ pub fn load_game_candidates(root: impl AsRef<Path>, platform: &str) -> Result<Ga
         .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
     let expected = format!("games/{platform}.json.gz");
     if platform.is_empty()
-        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || !platform
+            .bytes()
+            .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
         || entry.game_index_artifact.as_deref() != Some(expected.as_str())
     {
         return Err("No safe game-candidate index available".into());
@@ -237,7 +241,10 @@ impl GameIndex {
             .iter()
             .filter(|game| {
                 game.title_hint.to_lowercase().contains(&needle)
-                    || game.alternate_title_hints.iter().any(|title| title.to_lowercase().contains(&needle))
+                    || game
+                        .alternate_title_hints
+                        .iter()
+                        .any(|title| title.to_lowercase().contains(&needle))
             })
             .collect()
     }
@@ -280,7 +287,9 @@ mod tests {
 
     fn fixture() -> Vec<u8> {
         let payload = r#"{"schema_version":1,"platform":"snes","game_identity_rule":"filename only","compatibility_rule":"manual confirmation","records":[{"id":"x","title_hint":"Super Mario World","candidate_game_key":"super-mario-world","identity_confidence":"filename_heuristic_only","raw_filename":"Super Mario World (USA).cht","region_hint":"USA","format_hint":null,"declared_cheats":1,"parse_warnings":[],"codes":[{"ordinal":0,"description":"Infinite Lives","code":"ABCD","source_enabled":false,"verification":"unverified","role":"code"},{"ordinal":1,"description":"A heading","code":null,"source_enabled":false,"verification":"unverified","role":"section-heading"}],"provenance":{"source_id":"libretro","repository":"https://example.com","revision":"abc","license":"CC-BY-SA-4.0","upstream_path":"cht/sample.cht","archive_path":"archive/sample.cht","git_blob_sha":"abcdef"}}]}"#;
-        let mut gz = GzBuilder::new().mtime(0).write(Vec::new(), Compression::fast());
+        let mut gz = GzBuilder::new()
+            .mtime(0)
+            .write(Vec::new(), Compression::fast());
         gz.write_all(payload.as_bytes()).unwrap();
         gz.finish().unwrap()
     }
@@ -315,8 +324,11 @@ mod tests {
                 "native_memory_entries": 0
             }]
         });
-        let mut gz = GzBuilder::new().mtime(0).write(Vec::new(), Compression::fast());
-        gz.write_all(&serde_json::to_vec(&payload).unwrap()).unwrap();
+        let mut gz = GzBuilder::new()
+            .mtime(0)
+            .write(Vec::new(), Compression::fast());
+        gz.write_all(&serde_json::to_vec(&payload).unwrap())
+            .unwrap();
         let index = decode_game_index(gz.finish().unwrap().as_slice()).unwrap();
         assert_eq!(index.search_title("MARIO").len(), 1);
         let group = index.by_candidate_key("super-mario-world").unwrap();
@@ -329,7 +341,9 @@ mod tests {
         let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
         bundle.schema_version = 2;
         let payload = serde_json::to_vec(&bundle).unwrap();
-        let mut gz = GzBuilder::new().mtime(0).write(Vec::new(), Compression::fast());
+        let mut gz = GzBuilder::new()
+            .mtime(0)
+            .write(Vec::new(), Compression::fast());
         gz.write_all(&payload).unwrap();
         assert!(decode_bundle(gz.finish().unwrap().as_slice()).is_err());
     }

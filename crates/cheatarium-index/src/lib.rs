@@ -76,7 +76,10 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
             "desc" => entry.description = Some(value),
             "code" => entry.code = Some(value),
             "enable" => entry.source_enabled = matches!(value.trim(), "true" | "1"),
-            _ => entry.native_fields.push(NativeField { name: field.to_owned(), value }),
+            _ => entry.native_fields.push(NativeField {
+                name: field.to_owned(),
+                value,
+            }),
         }
     }
 
@@ -84,8 +87,14 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
         .into_iter()
         .map(|(ordinal, part)| {
             let encoded = part.code.as_deref().is_some_and(|s| !s.trim().is_empty());
-            let has_address = part.native_fields.iter().any(|f| f.name == "address" && !f.value.is_empty());
-            let has_value = part.native_fields.iter().any(|f| f.name == "value" && !f.value.is_empty());
+            let has_address = part
+                .native_fields
+                .iter()
+                .any(|f| f.name == "address" && !f.value.is_empty());
+            let has_value = part
+                .native_fields
+                .iter()
+                .any(|f| f.name == "value" && !f.value.is_empty());
             let role = if encoded {
                 "code"
             } else if has_address && has_value {
@@ -114,7 +123,11 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
     }
     // Description-only indexed entries are intentional headings in many
     // Libretro NDS cheat files; they are not malformed executable cheats.
-    ParsedCheats { declared_count, codes, warnings }
+    ParsedCheats {
+        declared_count,
+        codes,
+        warnings,
+    }
 }
 
 /// Parenthetical suffixes stripped here are only common *filename metadata*.
@@ -122,12 +135,39 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
 fn is_metadata_suffix(inner: &str) -> bool {
     let lower = inner.trim().to_ascii_lowercase();
     const EXACT: &[&str] = &[
-        "usa", "japan", "europe", "world", "asia", "korea", "china",
-        "france", "germany", "spain", "italy", "brazil", "australia",
-        "u", "e", "j", "game genie", "action replay", "pro action replay",
-        "gameshark", "game shark", "code breaker", "codebreaker",
-        "rumbles", "diff", "unl", "beta", "proto", "prototype",
-        "virtual console", "sgb enhanced", "gbc", "gba",
+        "usa",
+        "japan",
+        "europe",
+        "world",
+        "asia",
+        "korea",
+        "china",
+        "france",
+        "germany",
+        "spain",
+        "italy",
+        "brazil",
+        "australia",
+        "u",
+        "e",
+        "j",
+        "game genie",
+        "action replay",
+        "pro action replay",
+        "gameshark",
+        "game shark",
+        "code breaker",
+        "codebreaker",
+        "rumbles",
+        "diff",
+        "unl",
+        "beta",
+        "proto",
+        "prototype",
+        "virtual console",
+        "sgb enhanced",
+        "gbc",
+        "gba",
     ];
     EXACT.contains(&lower.as_str())
         || lower.starts_with("rev ")
@@ -196,12 +236,29 @@ pub fn region_hint(filename: &str) -> Option<String> {
             continue;
         };
         let token = token.trim();
-        let first = token.split(',').next().unwrap_or("").trim().to_ascii_lowercase();
+        let first = token
+            .split(',')
+            .next()
+            .unwrap_or("")
+            .trim()
+            .to_ascii_lowercase();
         if [
-            "usa", "japan", "europe", "world", "asia", "korea",
-            "china", "france", "germany", "spain", "italy", "brazil",
+            "usa",
+            "japan",
+            "europe",
+            "world",
+            "asia",
+            "korea",
+            "china",
+            "france",
+            "germany",
+            "spain",
+            "italy",
+            "brazil",
             "australia",
-        ].contains(&first.as_str()) {
+        ]
+        .contains(&first.as_str())
+        {
             return Some(token.to_owned());
         }
     }
@@ -259,6 +316,9 @@ mod tests {
         assert_eq!(format_hint(raw), Some("game-genie"));
         assert_eq!(region_hint(raw).as_deref(), Some("USA"));
         assert_eq!(title_hint("Chrono Trigger (Rumbles)"), "Chrono Trigger");
-        assert_eq!(title_hint("Something (Special Edition)"), "Something (Special Edition)");
+        assert_eq!(
+            title_hint("Something (Special Edition)"),
+            "Something (Special Edition)"
+        );
     }
 }

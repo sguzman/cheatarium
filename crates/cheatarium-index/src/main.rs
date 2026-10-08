@@ -147,8 +147,11 @@ fn build_game_index(platform: &str, records: &[IndexedFile]) -> GameIndex {
         entry.sources.insert(record.provenance.source_id.clone());
         entry.source_record_ids.push(record.id.clone());
         entry.code_fields += record.codes.iter().filter(|c| c.role == "code").count();
-        entry.native_memory_entries +=
-            record.codes.iter().filter(|c| c.role == "memory-entry").count();
+        entry.native_memory_entries += record
+            .codes
+            .iter()
+            .filter(|c| c.role == "memory-entry")
+            .count();
     }
     let candidates = groups
         .into_iter()
@@ -180,7 +183,10 @@ fn build_game_index(platform: &str, records: &[IndexedFile]) -> GameIndex {
 
 fn checked_path(root: &Path, rel: &str) -> Result<PathBuf> {
     let path = Path::new(rel);
-    if path.components().any(|c| !matches!(c, Component::Normal(_))) {
+    if path
+        .components()
+        .any(|c| !matches!(c, Component::Normal(_)))
+    {
         return Err(format!("Unsafe archive path: {rel}").into());
     }
     Ok(root.join(path))
@@ -196,8 +202,16 @@ fn parse_args() -> Result<(PathBuf, PathBuf, Option<BTreeSet<String>>)> {
             "--root" => root = PathBuf::from(args.next().ok_or("--root requires a path")?),
             "--out" => out = PathBuf::from(args.next().ok_or("--out requires a path")?),
             "--systems" => {
-                let s = args.next().ok_or("--systems requires comma-separated platforms")?;
-                wanted = Some(s.split(',').map(str::trim).filter(|s| !s.is_empty()).map(str::to_owned).collect());
+                let s = args
+                    .next()
+                    .ok_or("--systems requires comma-separated platforms")?;
+                wanted = Some(
+                    s.split(',')
+                        .map(str::trim)
+                        .filter(|s| !s.is_empty())
+                        .map(str::to_owned)
+                        .collect(),
+                );
             }
             "--help" | "-h" => {
                 println!("cheatarium-index [--root PATH] [--out PATH] [--systems nes,snes]");
@@ -212,19 +226,20 @@ fn parse_args() -> Result<(PathBuf, PathBuf, Option<BTreeSet<String>>)> {
 
 fn run() -> Result<()> {
     let (root, out, wanted) = parse_args()?;
-    let mapping: LibretroMapping = serde_json::from_slice(
-        &fs::read(root.join("platforms/libretro-mapping.json"))?,
-    )?;
-    let manifest: SourceManifest = serde_json::from_slice(
-        &fs::read(root.join("sources/libretro-database.json"))?,
-    )?;
+    let mapping: LibretroMapping =
+        serde_json::from_slice(&fs::read(root.join("platforms/libretro-mapping.json"))?)?;
+    let manifest: SourceManifest =
+        serde_json::from_slice(&fs::read(root.join("sources/libretro-database.json"))?)?;
     if manifest.id != "libretro-database" {
         return Err("Expected Libretro source manifest".into());
     }
     let mut source_directories = HashMap::<String, System>::new();
     let mut known_platforms = BTreeSet::new();
     for system in mapping.systems {
-        if source_directories.insert(system.source_directory.clone(), system.clone()).is_some() {
+        if source_directories
+            .insert(system.source_directory.clone(), system.clone())
+            .is_some()
+        {
             return Err("Duplicate Libretro directory mapping".into());
         }
         known_platforms.insert(system.platform);
@@ -249,7 +264,10 @@ fn run() -> Result<()> {
             // Unmapped source collections are not silently attributed to a console.
             continue;
         };
-        if wanted.as_ref().is_some_and(|v| !v.contains(&system.platform)) {
+        if wanted
+            .as_ref()
+            .is_some_and(|v| !v.contains(&system.platform))
+        {
             continue;
         }
         let path = checked_path(&root, &item.archive_path)?;
@@ -278,7 +296,10 @@ fn run() -> Result<()> {
                 git_blob_sha: item.git_blob_sha,
             },
         };
-        by_platform.entry(system.platform.clone()).or_default().push(record);
+        by_platform
+            .entry(system.platform.clone())
+            .or_default()
+            .push(record);
     }
 
     fs::create_dir_all(&out)?;
@@ -286,8 +307,16 @@ fn run() -> Result<()> {
     let mut catalog = Vec::new();
     for (platform, mut records) in by_platform {
         records.sort_by(|a, b| a.id.cmp(&b.id));
-        let code_fields: usize = records.iter().flat_map(|x| &x.codes).filter(|x| x.role == "code").count();
-        let native_memory_entries: usize = records.iter().flat_map(|x| &x.codes).filter(|x| x.role == "memory-entry").count();
+        let code_fields: usize = records
+            .iter()
+            .flat_map(|x| &x.codes)
+            .filter(|x| x.role == "code")
+            .count();
+        let native_memory_entries: usize = records
+            .iter()
+            .flat_map(|x| &x.codes)
+            .filter(|x| x.role == "memory-entry")
+            .count();
         let warnings: usize = records.iter().map(|x| x.parse_warnings.len()).sum();
         let source_files = records.len();
         let filename = format!("{platform}.json.gz");
@@ -295,7 +324,8 @@ fn run() -> Result<()> {
         let games = build_game_index(&platform, &records);
         let game_candidate_groups = games.candidates.len();
         let mut game_gzip = GzBuilder::new().mtime(0).write(
-            File::create(out.join(&game_index_artifact))?, Compression::default()
+            File::create(out.join(&game_index_artifact))?,
+            Compression::default(),
         );
         game_gzip.write_all(&serde_json::to_vec(&games)?)?;
         game_gzip.finish()?;
@@ -303,12 +333,15 @@ fn run() -> Result<()> {
             schema_version: 1,
             platform: platform.clone(),
             game_identity_rule: "filename-derived suggestion, not verified ROM identity",
-            compatibility_rule: "never auto-apply a code without confirmed release/build compatibility",
+            compatibility_rule:
+                "never auto-apply a code without confirmed release/build compatibility",
             records,
         };
         let json = serde_json::to_vec(&bundle)?;
         let target = out.join(&filename);
-        let mut gz = GzBuilder::new().mtime(0).write(File::create(target)?, Compression::default());
+        let mut gz = GzBuilder::new()
+            .mtime(0)
+            .write(File::create(target)?, Compression::default());
         gz.write_all(&json)?;
         gz.finish()?;
         println!("{platform}: {game_candidate_groups} candidate games, {source_files} source files, {code_fields} device codes, {native_memory_entries} native memory entries, {warnings} warnings");
@@ -329,7 +362,10 @@ fn run() -> Result<()> {
         matching_policy: "candidate titles only; no ROM hashes or verified execution",
         bundles: catalog,
     };
-    fs::write(out.join("catalog.json"), serde_json::to_vec_pretty(&catalog)?)?;
+    fs::write(
+        out.join("catalog.json"),
+        serde_json::to_vec_pretty(&catalog)?,
+    )?;
     println!("Wrote {} index bundles", catalog.bundles.len());
     Ok(())
 }
