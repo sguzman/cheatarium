@@ -1,8 +1,8 @@
 use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
 use cheatarium_index::{
-    candidate_game_key, format_hint, parse_cht, region_hint, title_hint,
-    Code, CompositionEvidence, SourceComposition,
+    candidate_game_key, format_hint, parse_cht, region_hint, title_hint, Code, CompositionEvidence,
+    SourceComposition,
 };
 use flate2::{Compression, GzBuilder};
 use serde::{Deserialize, Serialize};
@@ -407,7 +407,6 @@ fn build_effect_tag_index(
     }
 }
 
-
 #[derive(Deserialize)]
 struct CompositionRegistry {
     schema_version: u32,
@@ -430,7 +429,10 @@ struct CompositionOverride {
 }
 
 fn composition_from_override(
-    source: &str, blob: &str, code: &str, candidate: CompositionOverride,
+    source: &str,
+    blob: &str,
+    code: &str,
+    candidate: CompositionOverride,
 ) -> Result<SourceComposition> {
     if candidate.source_record_id != source
         || candidate.source_git_blob_sha != blob
@@ -448,12 +450,16 @@ fn composition_from_override(
     {
         return Err("Invalid source composition evidence or attribution".into());
     }
-    let components: Vec<String> = candidate.alternatives.iter()
+    let components: Vec<String> = candidate
+        .alternatives
+        .iter()
         .flat_map(|group| group.iter().map(|c| c.trim().to_owned()))
         .collect();
     let original: Vec<String> = code.split('+').map(|c| c.trim().to_owned()).collect();
-    if candidate.alternatives.iter().any(|group| group.is_empty()
-        || group.iter().any(|c| c.trim().is_empty() || c.trim() != c))
+    if candidate
+        .alternatives
+        .iter()
+        .any(|group| group.is_empty() || group.iter().any(|c| c.trim().is_empty() || c.trim() != c))
         || components != original
     {
         return Err("Source composition alternatives do not partition original code".into());
@@ -543,7 +549,8 @@ fn run() -> Result<()> {
         serde_json::from_slice(&fs::read(&composition_path)?)?;
     if source_compositions.schema_version != 1
         || source_compositions.platform != "snes"
-        || source_compositions.interpretation != "evidenced-source-code-layout-not-ROM-compatibility"
+        || source_compositions.interpretation
+            != "evidenced-source-code-layout-not-ROM-compatibility"
     {
         return Err("Unsupported SNES source-composition registry".into());
     }
@@ -554,7 +561,9 @@ fn run() -> Result<()> {
             return Err("Duplicate source composition override".into());
         }
     }
-    let scan_snes = wanted.as_ref().is_none_or(|systems| systems.contains("snes"));
+    let scan_snes = wanted
+        .as_ref()
+        .is_none_or(|systems| systems.contains("snes"));
     let mut by_platform: BTreeMap<String, Vec<IndexedFile>> = BTreeMap::new();
     for item in manifest.files {
         let Some(rest) = item.upstream_path.strip_prefix("cht/") else {
@@ -589,16 +598,25 @@ fn run() -> Result<()> {
                     if source_code.contains('+') {
                         code.composition = Some(match override_entry {
                             Some(entry) => composition_from_override(
-                                &source_id, &item.git_blob_sha, source_code, entry,
+                                &source_id,
+                                &item.git_blob_sha,
+                                source_code,
+                                entry,
                             )?,
                             None => SourceComposition::unresolved(),
                         });
                     } else if override_entry.is_some() {
-                        return Err("Composition override must reference a '+'-joined source code".into());
+                        return Err(
+                            "Composition override must reference a '+'-joined source code".into(),
+                        );
                     }
                     // Known revision-alternatives are not a simultaneous set
                     // of writes: preserve only the documented per-version groups.
-                    if code.composition.as_ref().is_some_and(|c| c.relation == "revision-alternatives") {
+                    if code
+                        .composition
+                        .as_ref()
+                        .is_some_and(|c| c.relation == "revision-alternatives")
+                    {
                         continue;
                     }
                     // Unknown filename formats never override declared formats.
@@ -640,7 +658,11 @@ fn run() -> Result<()> {
     }
 
     if scan_snes && !overrides.is_empty() {
-        return Err(format!("{} unreferenced SNES composition overrides", overrides.len()).into());
+        return Err(format!(
+            "{} unreferenced SNES composition overrides",
+            overrides.len()
+        )
+        .into());
     }
     fs::create_dir_all(&out)?;
     fs::create_dir_all(out.join("interpretations"))?;
@@ -874,12 +896,14 @@ mod tests {
             source_git_blob_sha: "some-pinned-blob".to_owned(),
             raw_code: "A+B+C+D".to_owned(),
             relation: "revision-alternatives".to_owned(),
-            alternatives: vec![vec!["A".to_owned(), "B".to_owned()],
-                               vec!["C".to_owned(), "D".to_owned()]],
+            alternatives: vec![
+                vec!["A".to_owned(), "B".to_owned()],
+                vec!["C".to_owned(), "D".to_owned()],
+            ],
             evidence: vec![CompositionEvidence {
                 url: "https://example.org/faq".to_owned(),
                 reference: "entry 1".to_owned(),
-                source_revision: "2026-test".to_owned()
+                source_revision: "2026-test".to_owned(),
             }],
             rom_match_verified: false,
             simultaneous_execution_confirmed: false,
@@ -898,7 +922,10 @@ mod tests {
             source_git_blob_sha: "some-pinned-blob".to_owned(),
             raw_code: raw.to_owned(),
             relation: "revision-alternatives".to_owned(),
-            alternatives: vec![vec!["A".to_owned(), "B".to_owned()], vec!["D".to_owned(), "C".to_owned()]],
+            alternatives: vec![
+                vec!["A".to_owned(), "B".to_owned()],
+                vec!["D".to_owned(), "C".to_owned()],
+            ],
             evidence: vec![CompositionEvidence {
                 url: "https://example.org/faq".to_owned(),
                 reference: "entry 1".to_owned(),

@@ -7,10 +7,12 @@
   "game_candidate_groups": 16825,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 65495,
+  "reviewed_snes_revision_alternatives": 5,
+  "unresolved_snes_plus_groups": 14587,
   "reviewed_effect_claims": 5,
   "observed_effect_claims": 0,
   "effect_taxonomy": "cheatarium-effect-signals-en-v1",
-  "decoded_snes_code_fields": 66602,
+  "decoded_snes_code_fields": 66597,
   "files": [
     {
       "path": "32x.json.gz",
@@ -44,7 +46,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "efdbdb6673507e28f73535415091cca7366d6acc654871f7e74453fba92c7aaa",
+      "sha256": "b3b0e3e4b8ec965759f59526e088059edbc5f5828e809bc34dbaf64903a7d290",
       "size_bytes": 17290
     },
     {
@@ -283,6 +285,11 @@
       "size_bytes": 1490
     },
     {
+      "path": "interpretations/snes.json",
+      "sha256": "05e2115f7424dc17c879a2430ea1d71456464c52084b9421a20cc58e42ec1b99",
+      "size_bytes": 4622
+    },
+    {
       "path": "master-system.json.gz",
       "sha256": "baedfe6124e346ddbea5875e875f09248e0bbce3e1086cbe4f0768f6be5e30d7",
       "size_bytes": 112166
@@ -509,8 +516,8 @@
     },
     {
       "path": "reports/snes-codec-coverage.json",
-      "sha256": "e5c858b33636221ea9a33fa35f77b41993af72494871a42af193aa6d25dc0dbc",
-      "size_bytes": 3621
+      "sha256": "20fb77030f86b815c74ef391e13290de2b77d6cc4deb2cc432422228ec49aa46",
+      "size_bytes": 3701
     },
     {
       "path": "reviews.json",
@@ -539,8 +546,8 @@
     },
     {
       "path": "snes.json.gz",
-      "sha256": "eefc97deeb7efca16df31209e9c37f57098b3ff491eea7282090bc2bd4f099d1",
-      "size_bytes": 1818160
+      "sha256": "69de6c0206840c235e03e23a9f44cde8cee12c4ef867fa7f305ee6329f828f7a",
+      "size_bytes": 1860219
     },
     {
       "path": "supergrafx.json.gz",

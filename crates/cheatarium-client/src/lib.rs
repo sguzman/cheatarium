@@ -143,8 +143,9 @@ impl Code {
     #[must_use]
     #[must_use]
     pub fn requires_composition_review(&self) -> bool {
-        self.composition.as_ref().is_some_and(|x| x.relation == "unresolved"
-            || x.relation == "revision-alternatives")
+        self.composition
+            .as_ref()
+            .is_some_and(|x| x.relation == "unresolved" || x.relation == "revision-alternatives")
     }
 
     /// A source '+' character is NOT a declaration of an executable combination.

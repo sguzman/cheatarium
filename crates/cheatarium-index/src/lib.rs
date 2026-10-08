@@ -4,8 +4,8 @@
 //! emulator memory writes. Exact original bytes remain in archive/.
 //! Filename-based game associations are suggestions, never ROM verification.
 pub mod effect_signals;
-use serde::Deserialize;
 use cheatarium_codecs::SnesDecoded;
+use serde::Deserialize;
 use serde::Serialize;
 use std::collections::BTreeMap;
 
