@@ -47,9 +47,11 @@ The top-100 queue carries only three original examples per candidate. For an exh
 ```sh
 python3 tools/inspect_snes_joins.py --game-key push-over --limit 50
 python3 tools/inspect_snes_joins.py --game-key push-over --offset 50 --limit 50
+python3 tools/inspect_snes_joins.py --game-key push-over --witnessed-only
+python3 tools/inspect_snes_joins.py --game-key push-over --unwitnessed-only --limit 50
 ```
 
-The JSON dossier gives the total unresolved source-occurrence count, distinct **literal** code strings, contributing source-record counts, and a histogram of plus-separated text segment lengths. Each paginated occurrence preserves its original description, exact code text, original ordinal, title/region/device hints, source-enabled flag, verification label and upstream provenance, including Git blob SHA. Use `--source-record-id '...'` to examine just one original source; page size is capped at 500, and ordering is stable by source record ID and original ordinal.
+The JSON dossier gives the total unresolved source-occurrence count, distinct **literal** code strings, contributing source-record counts, and a histogram of plus-separated text segment lengths. Each paginated occurrence preserves its original description, exact code text, original ordinal, title/region/device hints, source-enabled flag, verification label and upstream provenance, including Git blob SHA. Use `--source-record-id '...'` to examine just one original source; `--witnessed-only` and `--unwitnessed-only` are mutually exclusive research filters. The output keeps the pre-filter `total_unresolved_source_occurrences` and adds `selected_source_occurrences` for filtered pagination. Page size is capped at 500, and ordering is stable by source record ID and original ordinal.
 
 Identical text strings are not automatically equivalent cheats. A text segment is **not** a verified device write or a recommended code partition. Historical code relationships, game identity, ROM compatibility and activation remain unverified. This inspection tool does not modify indexes, fetch ROMs, decode joined programs, or execute cheats.
 
