@@ -116,6 +116,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- effects \
             --db generated/v1 --platform snes --effect "Infinite" --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["schema"] == "cheatarium.effects.v1" and q["total_matches"] > 0 and not q["cheats_activated"]; assert all(hit["provenance"]["git_blob_sha"] for hit in q["hits"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- effects \
+            --db generated/v1 --platform snes --effect "Infinite" --declared-format game-genie --source-id libretro-database --limit 3 --json \
+            | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_matches"] > 0 and q["declared_format_filter"] == "game-genie" and q["source_id_filter"] == "libretro-database"; assert all(h["format_hint"] == "game-genie" and h["provenance"]["source_id"] == "libretro-database" for h in q["hits"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- games \
             --db generated/v1 --platform snes --title "Donkey Kong Country" --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_candidate_groups"] > 0 and q["candidate_only"]'

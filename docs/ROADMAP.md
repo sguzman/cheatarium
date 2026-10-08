@@ -40,7 +40,8 @@
 - [ ] Acquire independently sourced and reviewed release hashes, then establish reliable cartridge/build identity and canonical cross-source game records.
 - [ ] Dedupe equivalent codes while retaining original provenance.
 - [x] Add case-insensitive, provenance-preserving cheat-effect text search in the Rust client and CLI.
-- [ ] Expand discovery filters to author, source, code format and richer effect classification.
+- [x] Add exact source-ID and provenance-declared device-format filters for effect search.
+- [ ] Expand discovery to contributor/author attribution and richer effect classification.
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.
 - [ ] Add a pleasant desktop/game cheat explorer.

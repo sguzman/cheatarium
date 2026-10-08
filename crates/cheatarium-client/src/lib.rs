@@ -436,6 +436,25 @@ impl Bundle {
         hits
     }
 
+    /// Restrict gameplay-effect results to provenance-declared device format
+    /// and exact source identity. Anonymous code-syntax interpretations do NOT
+    /// pass a declared-format filter.
+    #[must_use]
+    pub fn search_effect_filtered(
+        &self,
+        needle: &str,
+        declared_format: Option<&str>,
+        source_id: Option<&str>,
+    ) -> Vec<EffectHit<'_>> {
+        self.search_effect(needle)
+            .into_iter()
+            .filter(|hit| {
+                declared_format.is_none_or(|format| hit.format_hint == Some(format))
+                    && source_id.is_none_or(|id| hit.provenance.source_id == id)
+            })
+            .collect()
+    }
+
     /// Exact candidate-title key lookup; still not a cartridge identity test.
     #[must_use]
     pub fn by_candidate_game_key(&self, key: &str) -> Vec<&IndexedFile> {
@@ -483,6 +502,19 @@ mod tests {
         assert_eq!(hits[0].provenance.upstream_path, "cht/sample.cht");
         assert!(bundle.search_effect("A heading").is_empty());
         assert!(bundle.search_effect("").is_empty());
+    }
+
+    #[test]
+    fn source_and_declared_format_filters_never_infer_device_provenance() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        assert_eq!(
+            bundle.search_effect_filtered("Infinite", None, Some("libretro")).len(), 1
+        );
+        assert!(bundle.search_effect_filtered("Infinite", None, Some("other")).is_empty());
+        // The fixture has an unlabeled device format. Its code must not
+        // become Game Genie through text search or an anonymous decoder.
+        assert!(bundle.search_effect_filtered("Infinite", Some("game-genie"), None).is_empty());
+        assert!(bundle.search_effect_filtered("", None, None).is_empty());
     }
 
     #[test]
