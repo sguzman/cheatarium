@@ -13,6 +13,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut platform = None;
     let mut title = None;
     let mut effect = None;
+    let mut exact_code = None;
     let mut game_key = None;
     let mut category = None;
     let mut composition_relation = None;
@@ -29,13 +30,14 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("games") => "games",
         Some("verify") => "verify",
         Some("effects") => "effects",
+        Some("codes") => "codes",
         Some("repeats") => "repeats",
         Some("tags") => "tags",
         Some("reviews") => "reviews",
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -45,6 +47,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--platform" => platform = Some(args.next().ok_or("--platform needs a value")?),
             "--title" => title = Some(args.next().ok_or("--title needs a value")?),
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
+            "--code" => exact_code = Some(args.next().ok_or("--code needs original source text")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--category" => category = Some(args.next().ok_or("--category needs an ID")?),
             "--relation" => {
@@ -72,8 +75,11 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
-    if offset != 0 && mode != "compositions" && mode != "publications" {
-        return Err("--offset applies only to compositions or publications".into());
+    if offset != 0 && mode != "compositions" && mode != "publications" && mode != "codes" {
+        return Err("--offset applies only to compositions, publications or codes".into());
+    }
+    if mode != "codes" && exact_code.is_some() {
+        return Err("--code applies only to codes".into());
     }
     if mode != "compositions" && composition_relation.is_some() {
         return Err("--relation applies only to compositions".into());
@@ -87,9 +93,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     if mode != "reviews"
         && mode != "publications"
         && mode != "compositions"
+        && mode != "codes"
         && source_record_id.is_some()
     {
-        return Err("--source-record-id applies only to reviews, publications or compositions".into());
+        return Err("--source-record-id applies only to reviews, publications, compositions or codes".into());
     }
     if mode != "repeats" && varying_descriptions {
         return Err("--varying-descriptions applies only to repeats".into());
@@ -101,9 +108,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "tags"
         && mode != "compositions"
         && mode != "publications"
+        && mode != "codes"
         && game_key.is_some()
     {
-        return Err("--game-key applies only to repeats, tags, compositions and publications".into());
+        return Err("--game-key applies only to repeats, tags, compositions, publications and codes".into());
     }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
         return Err("--declared-format and --source-id apply only to effects".into());
@@ -116,6 +124,61 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             .is_some_and(|s: &str| s.trim().is_empty())
     {
         return Err("Effect source and device filters cannot be empty".into());
+    }
+    if mode == "codes" {
+        let original = exact_code.ok_or("Please provide --code for exact source-code lookup")?;
+        if original.is_empty() {
+            return Err("--code cannot be empty".into());
+        }
+        let bundle = load_platform(&root, &platform)?;
+        let matches = bundle.search_exact_code(&original);
+        let hits: Vec<_> = matches
+            .into_iter()
+            .filter(|hit| {
+                game_key
+                    .as_deref()
+                    .is_none_or(|key| key == hit.candidate_game_key)
+            })
+            .filter(|hit| {
+                source_record_id
+                    .as_deref()
+                    .is_none_or(|id| id == hit.source_record_id)
+            })
+            .collect();
+        let total = hits.len();
+        if json {
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.exact_codes.v1",
+                    "platform": platform,
+                    "raw_code": original,
+                    "candidate_game_key_filter": game_key,
+                    "source_record_id_filter": source_record_id,
+                    "total_source_occurrences": total,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "exact_original_text_only": true,
+                    "equivalent_effect_verified": false,
+                    "rom_compatibility_verified": false,
+                    "cheats_activated": false,
+                    "hits": hits.into_iter().skip(offset).take(limit).collect::<Vec<_>>(),
+                }))?
+            );
+        } else {
+            println!("{total} exact original-source text occurrences on {platform}");
+            println!("Same text does not prove compatible ROMs or equivalent cheat effects.");
+            for hit in hits.into_iter().skip(offset).take(limit) {
+                println!(
+                    "- {} #{}: {}",
+                    hit.source_record_id,
+                    hit.cheat.ordinal,
+                    hit.cheat.description.as_deref().unwrap_or("<unnamed>")
+                );
+            }
+        }
+        return Ok(());
     }
     if mode == "verify" {
         verify_platform_distribution(&root, &platform)?;
