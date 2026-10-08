@@ -179,6 +179,9 @@ jobs:
             --db generated/v1 --platform snes --game-key donkey-kong-country --relation revision-alternatives --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.source_compositions.v1" and x["total_groups"] == 27 and x["evidenced_revision_alternatives"] == 27 and not x["rom_match_verified"] and not x["safe_to_combine_or_auto_apply"]; assert all(e["composition"]["relation"] == "revision-alternatives" and len(e["composition"]["alternatives"]) == 2 and e["decoded_combined_writes"] is None for e in x["entries"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- compositions \
+            --db generated/v1 --platform snes --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --relation unresolved --offset 5 --limit 2 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total_groups"] > 7 and x["offset"] == 5 and x["returned"] == 2 and x["has_more"] and len(x["entries"]) == 2'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- compositions \
             --db generated/v1 --platform snes --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --relation unresolved --limit 3 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total_groups"] > 3 and len(x["entries"]) == 3 and x["source_record_id_filter"].endswith("Push-Over (USA).cht"); assert all(e["source_record_id"] == x["source_record_id_filter"] and e["composition"]["relation"] == "unresolved" for e in x["entries"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- compositions \
@@ -187,6 +190,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- publications \
             --db generated/v1 --platform snes --game-key push-over --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.snes_publications.v1" and x["total_witnesses"] == 3; assert x["historical_publication_only"] and not x["execution_observed"] and not x["rom_match_verified"] and not x["safe_to_auto_apply"]; assert all(c["candidate_game_key"] == "push-over" and not c["safe_to_auto_apply"] for c in x["publications"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- publications \
+            --db generated/v1 --platform snes --game-key faceball-2000 --offset 1 --limit 1 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total_witnesses"] == 3 and x["offset"] == 1 and x["returned"] == 1 and x["has_more"] and len(x["publications"]) == 1'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- publications \
             --db generated/v1 --platform snes --game-key faceball-2000 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total_witnesses"] == 3 and len(x["publications"]) == 3; assert all(c["source_git_blob_sha"] and len(c["published_text_segments"]) > 1 for c in x["publications"])'
