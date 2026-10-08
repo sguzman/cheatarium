@@ -6,8 +6,8 @@
   "effect_or_compatibility_verified": false,
   "rank_rule": "descending-unresolved-source-occurrences-then-ascending-candidate-key",
   "total_unresolved_source_occurrences": 14565,
-  "total_historical_publication_witnesses": 9,
-  "total_without_publication_witness": 14556,
+  "total_historical_publication_witnesses": 14,
+  "total_without_publication_witness": 14551,
   "candidate_groups_with_unresolved_joins": 928,
   "published_top_limit": 100,
   "top_groups": [
@@ -131,8 +131,8 @@
       ],
       "unresolved_source_occurrences": 340,
       "distinct_source_records": 2,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 340,
+      "historical_publication_witnesses": 2,
+      "occurrences_without_publication_witness": 338,
       "region_hints": [
         "Japan"
       ],
@@ -167,8 +167,8 @@
       ],
       "unresolved_source_occurrences": 254,
       "distinct_source_records": 2,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 254,
+      "historical_publication_witnesses": 3,
+      "occurrences_without_publication_witness": 251,
       "region_hints": [
         "USA"
       ],
