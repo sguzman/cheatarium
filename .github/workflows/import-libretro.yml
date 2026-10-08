@@ -7,6 +7,7 @@ on:
       - ".github/workflows/import-libretro.yml"
       - "tools/import_libretro.py"
       - "tools/validate.py"
+      - "platforms/libretro-mapping.json"
   workflow_dispatch:
 
 permissions:
@@ -19,13 +20,13 @@ concurrency:
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5
         with:
           persist-credentials: true
-      - name: Import pinned console and handheld collections
-        run: python3 tools/import_libretro.py --systems nes snes gb gbc gba genesis ps1 psp
+      - name: Import all mapped Libretro console and handheld collections
+        run: python3 tools/import_libretro.py --all-consoles
       - name: Check archive and curated references
         run: python3 tools/validate.py
       - name: Commit imported data

@@ -14,39 +14,43 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_FILE = ROOT / "sources/libretro-database.json"
 SOURCE_URL = "https://github.com/libretro/libretro-database.git"
-SYSTEMS = {
-    "nes": "Nintendo - Nintendo Entertainment System",
-    "snes": "Nintendo - Super Nintendo Entertainment System",
-    "gb": "Nintendo - Game Boy",
-    "gbc": "Nintendo - Game Boy Color",
-    "gba": "Nintendo - Game Boy Advance",
-    "n64": "Nintendo - Nintendo 64",
-    "genesis": "Sega - Mega Drive - Genesis",
-    "sms": "Sega - Master System - Mark III",
-    "gg": "Sega - Game Gear",
-    "saturn": "Sega - Saturn",
-    "dreamcast": "Sega - Dreamcast",
-    "ps1": "Sony - PlayStation",
-    "psp": "Sony - PlayStation Portable",
-}
+def load_systems():
+    mapping = json.loads((ROOT / "platforms/libretro-mapping.json").read_text(encoding="utf-8"))
+    if mapping.get("schema_version") != 1:
+        raise RuntimeError("Unsupported Libretro mapping schema")
+    systems = {}
+    directories = set()
+    for row in mapping["systems"]:
+        key, directory = row["import_id"], row["source_directory"]
+        if key in systems or directory in directories:
+            raise RuntimeError(f"Duplicate Libretro mapping: {key} / {directory}")
+        systems[key] = directory
+        directories.add(directory)
+    return systems
+
+SYSTEMS = load_systems()
 
 def run(*args):
     return subprocess.check_output(args, text=True).strip()
 
 def blob_sha(content):
-    return hashlib.sha1(f"blob {len(content)}\\0".encode("ascii").replace(b"\\0", b"\x00") + content).hexdigest()
+    return hashlib.sha1(f"blob {len(content)}\0".encode("ascii") + content).hexdigest()
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--systems", nargs="+", choices=sorted(SYSTEMS), default=["nes", "snes"])
+    parser.add_argument("--systems", nargs="+", choices=sorted(SYSTEMS), help="One or more mapped source-collection IDs")
+    parser.add_argument("--all-consoles", action="store_true", help="Import every mapped console/handheld collection")
     parser.add_argument("--limit", type=int, default=0, help="Max files per system; 0 imports all")
     args = parser.parse_args()
     if args.limit < 0:
         parser.error("--limit must be nonnegative")
+    if args.all_consoles and args.systems:
+        parser.error("Choose --systems or --all-consoles, not both")
+    selected = sorted(SYSTEMS) if args.all_consoles else (args.systems or ["nes", "snes"])
     data = json.loads(SOURCE_FILE.read_text(encoding="utf-8"))
     revision = data["snapshot_commit"]
     items = {x["upstream_path"]: x for x in data["files"]}
-    requested = [f"cht/{SYSTEMS[s]}" for s in dict.fromkeys(args.systems)]
+    requested = [f"cht/{SYSTEMS[s]}" for s in dict.fromkeys(selected)]
     imported = 0
     with tempfile.TemporaryDirectory(prefix="cheatarium-libretro-") as folder:
         source = Path(folder) / "upstream"

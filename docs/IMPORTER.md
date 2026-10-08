@@ -9,6 +9,6 @@ python3 tools/import_libretro.py --systems nes snes
 python3 tools/validate.py
 ```
 
-For a bounded trial use `--limit 25` (per system). The default is the full system collection. The import is repeatable and refuses to overwrite a modified archived file. Additional supported identifiers are listed by `--help`.
+For a bounded trial use `--limit 25` (per system). The default is the full system collection. The import is repeatable and refuses to overwrite a modified archived file. Additional supported identifiers are recorded in `platforms/libretro-mapping.json`. `--all-consoles` imports the complete mapped console and handheld set. This will download substantial data.
 
-The repository's GitHub Actions importer now runs eight pinned system collections (NES, SNES, GB, GBC, GBA, Genesis, PS1, PSP) on changes to its workflow, importer, or validator, then commits the result only if validation succeeds. This is *not* a continuous scraper. Wider platforms require intentional scope and source reviews.
+The repository's GitHub Actions importer imports all mapped console/handheld collections on changes to its workflow, importer, or validator, then commits the result only if validation succeeds. This is *not* a continuous scraper. Wider platforms require intentional scope and source reviews.
