@@ -384,7 +384,6 @@ impl GameIndex {
     }
 }
 
-
 #[derive(Debug, Deserialize, Serialize)]
 pub struct RepeatedCodeIndex {
     pub schema_version: u32,
@@ -418,18 +417,22 @@ pub struct RepeatOccurrence {
 pub fn load_repeated_codes(root: impl AsRef<Path>, platform: &str) -> Result<RepeatedCodeIndex> {
     let root = root.as_ref();
     let catalog = load_catalog(root)?;
-    let entry = catalog.bundles.iter()
+    let entry = catalog
+        .bundles
+        .iter()
         .find(|entry| entry.platform == platform)
         .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
     let expected = format!("repeats/{platform}.json.gz");
     if platform.is_empty()
-        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || !platform
+            .bytes()
+            .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
         || entry.repeat_index_artifact.as_deref() != Some(expected.as_str())
     {
         return Err("No safe repetition index available".into());
     }
-    let mut gzip = GzDecoder::new(File::open(root.join(expected))?)
-        .take(MAX_UNCOMPRESSED_BUNDLE + 1);
+    let mut gzip =
+        GzDecoder::new(File::open(root.join(expected))?).take(MAX_UNCOMPRESSED_BUNDLE + 1);
     let mut data = Vec::new();
     gzip.read_to_end(&mut data)?;
     if data.len() as u64 > MAX_UNCOMPRESSED_BUNDLE {
@@ -444,7 +447,13 @@ pub fn load_repeated_codes(root: impl AsRef<Path>, platform: &str) -> Result<Rep
         group.confirmed_equivalent_cheat
             || group.verified_rom_compatibility
             || group.relation != "identical-raw-code-text-within-advisory-filename-bucket"
-            || group.occurrences.iter().map(|c| &c.source_record_id).collect::<std::collections::BTreeSet<_>>().len() < 2
+            || group
+                .occurrences
+                .iter()
+                .map(|c| &c.source_record_id)
+                .collect::<std::collections::BTreeSet<_>>()
+                .len()
+                < 2
     }) {
         return Err("Unsafe or malformed code-repetition interpretation".into());
     }
@@ -457,7 +466,8 @@ impl RepeatedCodeIndex {
         if key.is_empty() {
             return Vec::new();
         }
-        self.groups.iter()
+        self.groups
+            .iter()
             .filter(|group| group.candidate_game_key == key)
             .collect()
     }
@@ -661,8 +671,16 @@ mod tests {
                 confirmed_equivalent_cheat: false,
                 verified_rom_compatibility: false,
                 occurrences: vec![
-                    RepeatOccurrence { source_record_id: "a".to_owned(), ordinal: 0, description: None },
-                    RepeatOccurrence { source_record_id: "b".to_owned(), ordinal: 1, description: None },
+                    RepeatOccurrence {
+                        source_record_id: "a".to_owned(),
+                        ordinal: 0,
+                        description: None,
+                    },
+                    RepeatOccurrence {
+                        source_record_id: "b".to_owned(),
+                        ordinal: 1,
+                        description: None,
+                    },
                 ],
             }],
         };

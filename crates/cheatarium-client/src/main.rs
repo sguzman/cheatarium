@@ -93,23 +93,32 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         let hits = index.by_candidate_game_key(&game_key);
         let total = hits.len();
         if json {
-            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-                "schema": "cheatarium.raw_repeats.v1",
-                "platform": platform,
-                "candidate_game_key": game_key,
-                "candidate_only": true,
-                "cheats_activated": false,
-                "equivalent_effect_verified": false,
-                "rom_compatibility_verified": false,
-                "total_groups": total,
-                "groups": hits.into_iter().take(limit).collect::<Vec<_>>(),
-            }))?);
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.raw_repeats.v1",
+                    "platform": platform,
+                    "candidate_game_key": game_key,
+                    "candidate_only": true,
+                    "cheats_activated": false,
+                    "equivalent_effect_verified": false,
+                    "rom_compatibility_verified": false,
+                    "total_groups": total,
+                    "groups": hits.into_iter().take(limit).collect::<Vec<_>>(),
+                }))?
+            );
         } else {
             println!("{total} exact raw-code repetition groups for {game_key:?} on {platform}");
             println!("These repeat TEXT only: title, effects and ROM builds are unverified.");
             for hit in hits.into_iter().take(limit) {
-                println!("- {} ({} source occurrences, region {:?}, format {:?}, revision {:?})",
-                    hit.source_code, hit.occurrences.len(), hit.region_hint, hit.declared_format, hit.revision_hint);
+                println!(
+                    "- {} ({} source occurrences, region {:?}, format {:?}, revision {:?})",
+                    hit.source_code,
+                    hit.occurrences.len(),
+                    hit.region_hint,
+                    hit.declared_format,
+                    hit.revision_hint
+                );
             }
         }
         return Ok(());

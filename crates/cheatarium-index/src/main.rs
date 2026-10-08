@@ -251,7 +251,13 @@ fn revision_hint(filename: &str) -> Option<String> {
 /// merge dissimilar descriptions into an asserted shared gameplay effect.
 /// Keep ONLY groups spanning distinct original source files.
 fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> RepeatedCodeIndex {
-    type RepeatKey = (String, Option<String>, Option<String>, Option<String>, String);
+    type RepeatKey = (
+        String,
+        Option<String>,
+        Option<String>,
+        Option<String>,
+        String,
+    );
     let mut buckets: BTreeMap<RepeatKey, Vec<RepeatOccurrence>> = BTreeMap::new();
     for record in records {
         if record.candidate_game_key.is_empty() {
@@ -282,13 +288,20 @@ fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> Repeate
         }
     }
     let mut groups = Vec::new();
-    for ((candidate_game_key, region_hint, revision_hint, declared_format, source_code), mut occurrences) in buckets {
-        occurrences.sort_by(|a, b| (&a.source_record_id, a.ordinal).cmp(&(&b.source_record_id, b.ordinal)));
+    for (
+        (candidate_game_key, region_hint, revision_hint, declared_format, source_code),
+        mut occurrences,
+    ) in buckets
+    {
+        occurrences.sort_by(|a, b| {
+            (&a.source_record_id, a.ordinal).cmp(&(&b.source_record_id, b.ordinal))
+        });
         if occurrences
             .iter()
             .map(|occ| occ.source_record_id.as_str())
             .collect::<BTreeSet<_>>()
-            .len() < 2
+            .len()
+            < 2
         {
             continue;
         }
@@ -307,7 +320,8 @@ fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> Repeate
     RepeatedCodeIndex {
         schema_version: 1,
         platform: platform.to_owned(),
-        interpretation: "exact source-text repetition only; not a game, edition, effect, or compatibility match",
+        interpretation:
+            "exact source-text repetition only; not a game, edition, effect, or compatibility match",
         groups,
     }
 }
@@ -561,8 +575,14 @@ fn main() {
 mod tests {
     use super::*;
 
-    fn mock(filename: &str, id: &str, region: Option<&str>, format: Option<&'static str>) -> IndexedFile {
-        let codes = parse_cht("cheat0_desc = \"Infinite Lives\"\ncheat0_code = \"DDB4-6F07\"").codes;
+    fn mock(
+        filename: &str,
+        id: &str,
+        region: Option<&str>,
+        format: Option<&'static str>,
+    ) -> IndexedFile {
+        let codes =
+            parse_cht("cheat0_desc = \"Infinite Lives\"\ncheat0_code = \"DDB4-6F07\"").codes;
         IndexedFile {
             id: id.to_owned(),
             title_hint: "Super Mario World".to_owned(),
@@ -597,7 +617,10 @@ mod tests {
         let group = &index.groups[0];
         assert_eq!(group.occurrences.len(), 2);
         assert_eq!(group.occurrences[0].source_record_id, "record-a");
-        assert_eq!(group.occurrences[0].description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(
+            group.occurrences[0].description.as_deref(),
+            Some("Infinite Lives")
+        );
         assert!(!group.confirmed_equivalent_cheat);
         assert!(!group.verified_rom_compatibility);
         assert_eq!(group.source_code, "DDB4-6F07");
@@ -608,11 +631,20 @@ mod tests {
         let baseline = mock("SMW (USA).cht", "a", Some("USA"), None);
         let europe = mock("SMW (Europe).cht", "b", Some("Europe"), None);
         let revised = mock("SMW (USA) (Rev 1).cht", "c", Some("USA"), None);
-        let device = mock("SMW (USA) (Game Genie).cht", "d", Some("USA"), Some("game-genie"));
+        let device = mock(
+            "SMW (USA) (Game Genie).cht",
+            "d",
+            Some("USA"),
+            Some("game-genie"),
+        );
         let uncertain = mock("SMW (USA) (Rev 2).cht", "e", Some("USA"), None);
-        let index = build_repeated_code_index("snes", &[baseline,europe,revised,device,uncertain]);
+        let index =
+            build_repeated_code_index("snes", &[baseline, europe, revised, device, uncertain]);
         assert!(index.groups.is_empty());
-        assert_eq!(revision_hint("SMW (USA) (Rev 1).cht").as_deref(), Some("rev 1"));
+        assert_eq!(
+            revision_hint("SMW (USA) (Rev 1).cht").as_deref(),
+            Some("rev 1")
+        );
         assert_eq!(revision_hint("SMW (USA).cht"), None);
     }
 
@@ -624,6 +656,8 @@ mod tests {
         assert!(build_repeated_code_index("snes", &[a, b]).groups.is_empty());
         let mut unresolved = mock("SMW (USA).cht", "b", Some("USA"), None);
         unresolved.candidate_game_key.clear();
-        assert!(build_repeated_code_index("snes", &[unresolved]).groups.is_empty());
+        assert!(build_repeated_code_index("snes", &[unresolved])
+            .groups
+            .is_empty());
     }
 }

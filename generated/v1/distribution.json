@@ -5,6 +5,7 @@
   "console_bundles": 36,
   "source_files": 23382,
   "game_candidate_groups": 16825,
+  "repeated_raw_code_groups": 395,
   "decoded_snes_code_fields": 66602,
   "files": [
     {
@@ -39,8 +40,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "69065f6a59a9cdfd9c14bd6c954b516b0d352039a7dc51af03f2131b32dbfe6f",
-      "size_bytes": 11465
+      "sha256": "5228e33909cd5ac8683cd88b18e8e96126ecf54fec2cda069c9be1472bab9515",
+      "size_bytes": 14494
     },
     {
       "path": "colecovision.json.gz",
@@ -321,6 +322,186 @@
       "path": "psp.json.gz",
       "sha256": "f561102c2d7a9debbf07b8272b8f418abfbf350920c0d120c58957520ed5060e",
       "size_bytes": 1950153
+    },
+    {
+      "path": "repeats/32x.json.gz",
+      "sha256": "055c62fd0ff2d0f74030961b04ac459d1eafb50992a792f82772c945177c8489",
+      "size_bytes": 143
+    },
+    {
+      "path": "repeats/atari-2600.json.gz",
+      "sha256": "b3ed9efb4a199af517bbf2006c4586778d6263a4038f04c26e378d855a186dd5",
+      "size_bytes": 148
+    },
+    {
+      "path": "repeats/atari-5200.json.gz",
+      "sha256": "076c772bd4b67b597ac0ad1204c00e9b060b47cc6813040bafdf053f87490f6e",
+      "size_bytes": 148
+    },
+    {
+      "path": "repeats/atari-7800.json.gz",
+      "sha256": "a7a778dac4bd2eb2b91e3c8e53f1344aace1d9531be79b41535edd186f5fe119",
+      "size_bytes": 147
+    },
+    {
+      "path": "repeats/atari-jaguar.json.gz",
+      "sha256": "cbe98605db9c4dd48b4cbef715e4666039a75a6af9478777cd724b5d52817081",
+      "size_bytes": 147
+    },
+    {
+      "path": "repeats/atari-lynx.json.gz",
+      "sha256": "4ec24f2fc88c224a2256552407ebb1c467af7a2e95c9253b780d65247635be2d",
+      "size_bytes": 145
+    },
+    {
+      "path": "repeats/colecovision.json.gz",
+      "sha256": "678030a70190008c9b9853cf67047db8820899688ab5b7d6cf062a2f0b5006dc",
+      "size_bytes": 145
+    },
+    {
+      "path": "repeats/dreamcast.json.gz",
+      "sha256": "4a8a872ae15875712c6ae305efb549bed789a91b6777aba343312ac5f2cf0aa0",
+      "size_bytes": 144
+    },
+    {
+      "path": "repeats/fds.json.gz",
+      "sha256": "1449e66d84748e367c9d39712c7c68bb8d63e256cdbcdd51817d12e91473894a",
+      "size_bytes": 141
+    },
+    {
+      "path": "repeats/game-gear.json.gz",
+      "sha256": "5ef1856210481d779117a1a32184b1d81c1afd1281eaf8d1f90196422a39707f",
+      "size_bytes": 606
+    },
+    {
+      "path": "repeats/gb.json.gz",
+      "sha256": "f0a78a13d64d10b83c04c4ac6127458551d71049dd23061365a187a6b296097f",
+      "size_bytes": 937
+    },
+    {
+      "path": "repeats/gba.json.gz",
+      "sha256": "fbf5bf635e5e4fe074e855e47be71300af8abf1edc29c3d55b38dfc7d8f847fc",
+      "size_bytes": 743
+    },
+    {
+      "path": "repeats/gbc.json.gz",
+      "sha256": "29c6ab4ebbf0fd6369152750ba8c84c1fc6e377929658aa02766aad35530d584",
+      "size_bytes": 141
+    },
+    {
+      "path": "repeats/genesis.json.gz",
+      "sha256": "7fbb100f8322f482bb4a58e0ea7848a5f0b6ed208e0a1e55d0d95219cbd10663",
+      "size_bytes": 143
+    },
+    {
+      "path": "repeats/gx4000.json.gz",
+      "sha256": "2f16e205c8a51d1507fff09bdd19fb3d118f1544ecc62817ce586759e51e0dfc",
+      "size_bytes": 145
+    },
+    {
+      "path": "repeats/intellivision.json.gz",
+      "sha256": "7a33ecd79c358aa9cc774e85fd753ca5cc8194465aeb4d46f8c9e44a33c8ff90",
+      "size_bytes": 144
+    },
+    {
+      "path": "repeats/master-system.json.gz",
+      "sha256": "1be643eecbd15ed3b5bd627edb157a22feedf053f3f87d63a7ef0be8053bcae0",
+      "size_bytes": 1251
+    },
+    {
+      "path": "repeats/n64.json.gz",
+      "sha256": "2bd085139e844611a98bf8195a8cb19c8e30048ab0ed2fbc993bcf2620ac76d2",
+      "size_bytes": 10377
+    },
+    {
+      "path": "repeats/nds.json.gz",
+      "sha256": "938148074d89ce2e280376299b1d04af02a4652945b64e7d5ed5114365c4eff0",
+      "size_bytes": 3578
+    },
+    {
+      "path": "repeats/nes.json.gz",
+      "sha256": "0824a8ddfb71c24e71350fa3d7a37054342191df55e8a9cd307795f6e053b34b",
+      "size_bytes": 487
+    },
+    {
+      "path": "repeats/ngp.json.gz",
+      "sha256": "f80ccd30fd18a30eac0ac56f61ea01b725bda1045b8b8f2b55d0fab261a04dd3",
+      "size_bytes": 141
+    },
+    {
+      "path": "repeats/ngpc.json.gz",
+      "sha256": "5aaa9cc0fcce113c6788fa50b76bc5ea95e626cc47f7fc8645f37df0675f98b1",
+      "size_bytes": 142
+    },
+    {
+      "path": "repeats/pc-fx.json.gz",
+      "sha256": "78fafebb2dc4ef6ec5df133563ff650c8a4738c2c235b4d66d95ae9f963930ca",
+      "size_bytes": 143
+    },
+    {
+      "path": "repeats/ps1.json.gz",
+      "sha256": "7318d46b98eb6f4848bcf78034765c0e0dfb2693ec6a4ae1196233dd9a584076",
+      "size_bytes": 1550
+    },
+    {
+      "path": "repeats/psp.json.gz",
+      "sha256": "a0efb3faa9fafcb73c96aa2b062e3b3b6716e372dc10433a22a2857fc0f4a5e5",
+      "size_bytes": 610
+    },
+    {
+      "path": "repeats/satellaview.json.gz",
+      "sha256": "c36b1ea28c9ed5ec630d36241cf1c977ed32ff58b9af716fe2fb4f329c8f3d14",
+      "size_bytes": 146
+    },
+    {
+      "path": "repeats/saturn.json.gz",
+      "sha256": "63a4e220cc705434f2f9d1c5cd94b458fac5e128f6df65c59ebe83da8c8be187",
+      "size_bytes": 433
+    },
+    {
+      "path": "repeats/segacd.json.gz",
+      "sha256": "ce0d5cb192f61e4af548fdc4ef21eb7b0d999d99e20433919f656f851e8941cf",
+      "size_bytes": 143
+    },
+    {
+      "path": "repeats/sg1000.json.gz",
+      "sha256": "1eecb1960eec665d2bc68500126ac4b22493b92b2d2e6837783c7d9f4aa59686",
+      "size_bytes": 144
+    },
+    {
+      "path": "repeats/snes.json.gz",
+      "sha256": "43db3ed64747baf1eb4fbef7c5c5abc67a46f05ba0cc5b7bdec9ebac8f75a0da",
+      "size_bytes": 786
+    },
+    {
+      "path": "repeats/supergrafx.json.gz",
+      "sha256": "bcdf8e6dd6eb5256e72bc5987f408f8ff4f6539a1509c6f173b2c1b5c397920e",
+      "size_bytes": 145
+    },
+    {
+      "path": "repeats/tg16.json.gz",
+      "sha256": "9163682d48ecda5303e801d3110bb23d05289b8dfe31f6e860bb13d17167ead3",
+      "size_bytes": 144
+    },
+    {
+      "path": "repeats/tgcd.json.gz",
+      "sha256": "00066eca1885c0c53305702c0899884276a687f765e3869878be520c99f44e1e",
+      "size_bytes": 142
+    },
+    {
+      "path": "repeats/virtual-boy.json.gz",
+      "sha256": "42a941314175d2a0ce4aacac65979aae2184a77e58c0cce64832a17638a7b3d4",
+      "size_bytes": 146
+    },
+    {
+      "path": "repeats/wonderswan-color.json.gz",
+      "sha256": "c1f54281e313689547c75b9aa170f24ffbc0008dc7f4ed5544c9dcbb91eb2ffb",
+      "size_bytes": 150
+    },
+    {
+      "path": "repeats/wonderswan.json.gz",
+      "sha256": "da6c5a1dbf2eb8d1ae333244a277c0a4b20b457c20b80f28c33046e57c71451c",
+      "size_bytes": 146
     },
     {
       "path": "reports/snes-codec-coverage.json",
