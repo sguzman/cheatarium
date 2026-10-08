@@ -79,6 +79,8 @@ struct CatalogItem {
     platform: String,
     artifact: String,
     game_index_artifact: String,
+    repeat_index_artifact: String,
+    repeat_groups: usize,
     #[serde(skip_serializing_if = "Option::is_none")]
     identity_artifact: Option<String>,
     game_candidate_groups: usize,
@@ -182,6 +184,131 @@ fn build_game_index(platform: &str, records: &[IndexedFile]) -> GameIndex {
         platform: platform.to_owned(),
         identity_rule: "unverified filename grouping; keys are not ROM or edition identities",
         candidates,
+    }
+}
+
+/// An occurrence of an *identical original code string*, not a verified
+/// equivalence of gameplay effects or ROM compatibility.
+#[derive(Serialize)]
+struct RepeatOccurrence {
+    source_record_id: String,
+    ordinal: usize,
+    description: Option<String>,
+}
+
+#[derive(Serialize)]
+struct RepeatedCode {
+    candidate_game_key: String,
+    region_hint: Option<String>,
+    revision_hint: Option<String>,
+    declared_format: Option<String>,
+    source_code: String,
+    relation: &'static str,
+    confirmed_equivalent_cheat: bool,
+    verified_rom_compatibility: bool,
+    occurrences: Vec<RepeatOccurrence>,
+}
+
+#[derive(Serialize)]
+struct RepeatedCodeIndex {
+    schema_version: u32,
+    platform: String,
+    interpretation: &'static str,
+    groups: Vec<RepeatedCode>,
+}
+
+/// Preserve explicitly marked revisions/builds. Unknown is *not* presumed
+/// to mean "Rev 0". Exclude only parenthetical tags denoting a build variant,
+/// leaving game key and region hints to their own separate fields.
+fn revision_hint(filename: &str) -> Option<String> {
+    for segment in filename.split('(').skip(1) {
+        let Some((inside, _)) = segment.split_once(')') else {
+            continue;
+        };
+        let tag = inside.trim().to_ascii_lowercase();
+        if tag.starts_with("rev ")
+            || tag.starts_with("revision ")
+            || tag.starts_with("version ")
+            || tag.starts_with("beta")
+            || tag.starts_with("proto")
+            || tag.starts_with("demo")
+            || tag.starts_with("v1.")
+            || tag.starts_with("v2.")
+            || tag == "unl"
+            || tag.contains("hack")
+            || tag.contains("translation")
+            || tag == "virtual console"
+        {
+            return Some(tag);
+        }
+    }
+    None
+}
+
+/// An exact-text repeat is scoped narrowly by platform, *candidate* game
+/// title, region, declared device format and explicit build-marker text.
+/// Never canonicalize device codes, infer a code format, strip a header or
+/// merge dissimilar descriptions into an asserted shared gameplay effect.
+/// Keep ONLY groups spanning distinct original source files.
+fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> RepeatedCodeIndex {
+    type RepeatKey = (String, Option<String>, Option<String>, Option<String>, String);
+    let mut buckets: BTreeMap<RepeatKey, Vec<RepeatOccurrence>> = BTreeMap::new();
+    for record in records {
+        if record.candidate_game_key.is_empty() {
+            continue;
+        }
+        let build = revision_hint(&record.raw_filename);
+        for cheat in &record.codes {
+            if cheat.role != "code" {
+                continue;
+            }
+            let Some(code) = cheat.code.as_ref().filter(|s| !s.trim().is_empty()) else {
+                continue;
+            };
+            // Keep exact original source text; case, whitespace and compound
+            // ordering are potentially meaningful.
+            let key = (
+                record.candidate_game_key.clone(),
+                record.region_hint.clone(),
+                build.clone(),
+                record.format_hint.map(str::to_owned),
+                code.clone(),
+            );
+            buckets.entry(key).or_default().push(RepeatOccurrence {
+                source_record_id: record.id.clone(),
+                ordinal: cheat.ordinal,
+                description: cheat.description.clone(),
+            });
+        }
+    }
+    let mut groups = Vec::new();
+    for ((candidate_game_key, region_hint, revision_hint, declared_format, source_code), mut occurrences) in buckets {
+        occurrences.sort_by(|a, b| (&a.source_record_id, a.ordinal).cmp(&(&b.source_record_id, b.ordinal)));
+        if occurrences
+            .iter()
+            .map(|occ| occ.source_record_id.as_str())
+            .collect::<BTreeSet<_>>()
+            .len() < 2
+        {
+            continue;
+        }
+        groups.push(RepeatedCode {
+            candidate_game_key,
+            region_hint,
+            revision_hint,
+            declared_format,
+            source_code,
+            relation: "identical-raw-code-text-within-advisory-filename-bucket",
+            confirmed_equivalent_cheat: false,
+            verified_rom_compatibility: false,
+            occurrences,
+        });
+    }
+    RepeatedCodeIndex {
+        schema_version: 1,
+        platform: platform.to_owned(),
+        interpretation: "exact source-text repetition only; not a game, edition, effect, or compatibility match",
+        groups,
     }
 }
 
@@ -325,6 +452,7 @@ fn run() -> Result<()> {
 
     fs::create_dir_all(&out)?;
     fs::create_dir_all(out.join("games"))?;
+    fs::create_dir_all(out.join("repeats"))?;
     fs::create_dir_all(out.join("identities"))?;
     let mut catalog = Vec::new();
     for (platform, mut records) in by_platform {
@@ -348,6 +476,15 @@ fn run() -> Result<()> {
         let source_files = records.len();
         let filename = format!("{platform}.json.gz");
         let game_index_artifact = format!("games/{platform}.json.gz");
+        let repeat_index_artifact = format!("repeats/{platform}.json.gz");
+        let repeats = build_repeated_code_index(&platform, &records);
+        let repeat_groups = repeats.groups.len();
+        let mut repeat_gzip = GzBuilder::new().mtime(0).write(
+            File::create(out.join(&repeat_index_artifact))?,
+            Compression::default(),
+        );
+        repeat_gzip.write_all(&serde_json::to_vec(&repeats)?)?;
+        repeat_gzip.finish()?;
         // Evidence-driven ROM fingerprints are distributed separately from
         // filename candidates. No ROM hash is ever inferred from a title.
         let identity_artifact = if platform == "snes" {
@@ -388,6 +525,8 @@ fn run() -> Result<()> {
             platform,
             artifact: filename,
             game_index_artifact,
+            repeat_index_artifact,
+            repeat_groups,
             identity_artifact,
             game_candidate_groups,
             source_files,
@@ -415,5 +554,76 @@ fn main() {
     if let Err(error) = run() {
         eprintln!("cheatarium-index: {error}");
         std::process::exit(1);
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn mock(filename: &str, id: &str, region: Option<&str>, format: Option<&'static str>) -> IndexedFile {
+        let codes = parse_cht("cheat0_desc = \"Infinite Lives\"\ncheat0_code = \"DDB4-6F07\"").codes;
+        IndexedFile {
+            id: id.to_owned(),
+            title_hint: "Super Mario World".to_owned(),
+            candidate_game_key: "super-mario-world".to_owned(),
+            identity_confidence: "filename_heuristic_only",
+            raw_filename: filename.to_owned(),
+            region_hint: region.map(str::to_owned),
+            format_hint: format,
+            declared_cheats: Some(1),
+            parse_warnings: vec![],
+            codes,
+            provenance: Provenance {
+                source_id: "fixture".to_owned(),
+                repository: "https://example.invalid/fixture".to_owned(),
+                revision: "test".to_owned(),
+                license: "test".to_owned(),
+                upstream_path: id.to_owned(),
+                archive_path: id.to_owned(),
+                git_blob_sha: "test".to_owned(),
+            },
+        }
+    }
+
+    #[test]
+    fn requires_multiple_distinct_source_records_for_repeat() {
+        let a = mock("SMW (USA).cht", "record-a", Some("USA"), None);
+        assert!(build_repeated_code_index("snes", &[a]).groups.is_empty());
+        let a = mock("SMW (USA).cht", "record-a", Some("USA"), None);
+        let b = mock("SMW (USA) (Alternative).cht", "record-b", Some("USA"), None);
+        let index = build_repeated_code_index("snes", &[b, a]);
+        assert_eq!(index.groups.len(), 1);
+        let group = &index.groups[0];
+        assert_eq!(group.occurrences.len(), 2);
+        assert_eq!(group.occurrences[0].source_record_id, "record-a");
+        assert_eq!(group.occurrences[0].description.as_deref(), Some("Infinite Lives"));
+        assert!(!group.confirmed_equivalent_cheat);
+        assert!(!group.verified_rom_compatibility);
+        assert_eq!(group.source_code, "DDB4-6F07");
+    }
+
+    #[test]
+    fn never_merge_region_revision_or_declared_device_format() {
+        let baseline = mock("SMW (USA).cht", "a", Some("USA"), None);
+        let europe = mock("SMW (Europe).cht", "b", Some("Europe"), None);
+        let revised = mock("SMW (USA) (Rev 1).cht", "c", Some("USA"), None);
+        let device = mock("SMW (USA) (Game Genie).cht", "d", Some("USA"), Some("game-genie"));
+        let uncertain = mock("SMW (USA) (Rev 2).cht", "e", Some("USA"), None);
+        let index = build_repeated_code_index("snes", &[baseline,europe,revised,device,uncertain]);
+        assert!(index.groups.is_empty());
+        assert_eq!(revision_hint("SMW (USA) (Rev 1).cht").as_deref(), Some("rev 1"));
+        assert_eq!(revision_hint("SMW (USA).cht"), None);
+    }
+
+    #[test]
+    fn never_fold_unequal_raw_codes_or_unresolved_title() {
+        let a = mock("SMW (USA).cht", "a", Some("USA"), None);
+        let mut b = mock("SMW (USA).cht", "b", Some("USA"), None);
+        b.codes[0].code = Some("ddb4-6f07".to_owned());
+        assert!(build_repeated_code_index("snes", &[a, b]).groups.is_empty());
+        let mut unresolved = mock("SMW (USA).cht", "b", Some("USA"), None);
+        unresolved.candidate_game_key.clear();
+        assert!(build_repeated_code_index("snes", &[unresolved]).groups.is_empty());
     }
 }
