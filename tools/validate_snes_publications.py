@@ -10,6 +10,8 @@ import json
 import re
 from pathlib import Path
 
+from audit_snes_publication_archive import audit_original_archives
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path("interpretations/v1/snes-published-groups.json")
 PUBLISHED = Path("generated/v1/interpretations/snes-published-groups.json")
@@ -82,6 +84,7 @@ def audit(root=ROOT, *, write=False):
     with gzip.open(root / "generated/v1/snes.json.gz", "rt", encoding="utf-8") as stream:
         bundle = json.load(stream)
     stats = validate_registry(registry, bundle)
+    stats.update(audit_original_archives(root, registry, bundle))
     if write:
         published.parent.mkdir(parents=True, exist_ok=True)
         published.write_bytes(raw_bytes)
