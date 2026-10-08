@@ -61,7 +61,8 @@ impl Default for ZipInventory {
 }
 
 fn zip_extension(path: &Path) -> bool {
-    path.extension().is_some_and(|s| s.eq_ignore_ascii_case("zip"))
+    path.extension()
+        .is_some_and(|s| s.eq_ignore_ascii_case("zip"))
 }
 
 fn is_snes_rom(name: &str) -> bool {
@@ -176,7 +177,10 @@ pub fn scan_directory(root: impl AsRef<Path>) -> Result<ZipInventory> {
             if result.archives_scanned >= MAX_ARCHIVES {
                 return Err("Too many ZIP files in selected directory".into());
             }
-            let relative = path.strip_prefix(root)?.to_string_lossy().replace('\\', "/");
+            let relative = path
+                .strip_prefix(root)?
+                .to_string_lossy()
+                .replace('\\', "/");
             match File::open(&path) {
                 Ok(file) => scan_zip(file, &relative, &mut result),
                 Err(_) => issue(&mut result, &relative, None, "unreadable_zip_archive"),
@@ -186,7 +190,9 @@ pub fn scan_directory(root: impl AsRef<Path>) -> Result<ZipInventory> {
     if result.archives_scanned == 0 {
         return Err("No ZIP archives found inside selected directory".into());
     }
-    result.entries.sort_by(|a, b| (&a.archive, &a.member).cmp(&(&b.archive, &b.member)));
+    result
+        .entries
+        .sort_by(|a, b| (&a.archive, &a.member).cmp(&(&b.archive, &b.member)));
     result.rom_members_hashed = result.entries.len();
     Ok(result)
 }
@@ -201,8 +207,12 @@ mod tests {
     fn fixture(entries: &[(&str, &[u8])]) -> Cursor<Vec<u8>> {
         let mut archive = ZipWriter::new(Cursor::new(Vec::new()));
         for (name, bytes) in entries {
-            archive.start_file(*name, SimpleFileOptions::default()
-                .compression_method(CompressionMethod::Deflated)).unwrap();
+            archive
+                .start_file(
+                    *name,
+                    SimpleFileOptions::default().compression_method(CompressionMethod::Deflated),
+                )
+                .unwrap();
             archive.write_all(bytes).unwrap();
         }
         archive.finish().unwrap()
@@ -220,8 +230,10 @@ mod tests {
         assert!(inv.issues.is_empty());
         assert_eq!(inv.entries.len(), 2);
         assert_eq!(inv.entries[0].archive, "games/a.zip");
-        assert_eq!(inv.entries[0].sha256,
-            "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad");
+        assert_eq!(
+            inv.entries[0].sha256,
+            "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+        );
         assert_eq!(inv.entries[0].byte_length, 3);
         assert_eq!(inv.entries[1].member, "nested/Another Game.SMC");
         assert_eq!(inv.hash_scope, HASH_SCOPE);
@@ -234,7 +246,10 @@ mod tests {
         scan_zip(fixture(&[("fixture.smc", &rom)]), "fixture.zip", &mut inv);
         assert_eq!(inv.entries.len(), 1);
         assert!(inv.entries[0].possible_512_byte_copier_header_by_length_only);
-        assert_eq!(inv.entries[0].sha256, fingerprint_reader(rom.as_slice()).unwrap().sha256);
+        assert_eq!(
+            inv.entries[0].sha256,
+            fingerprint_reader(rom.as_slice()).unwrap().sha256
+        );
     }
 
     #[test]
