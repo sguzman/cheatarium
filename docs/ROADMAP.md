@@ -35,7 +35,8 @@
 - [x] Generate versioned compressed per-console source-record indexes in Rust (36 consoles).
 - [x] Generate advisory game-title catalogs with source links for all 36 consoles.
 - [x] Publish SHA-256 artifact manifests with Rust client integrity checks.
-- [ ] Establish reliable cartridge/build identity and canonical cross-source game records.
+- [x] Add source-evidenced, exact-file ROM fingerprint lookup with ambiguity and size-conflict handling; publish an initially empty SNES identity registry to avoid invented mappings.
+- [ ] Acquire independently sourced and reviewed release hashes, then establish reliable cartridge/build identity and canonical cross-source game records.
 - [ ] Dedupe equivalent codes while retaining original provenance.
 - [x] Add case-insensitive, provenance-preserving cheat-effect text search in the Rust client and CLI.
 - [ ] Expand discovery filters to author, source, code format and richer effect classification.

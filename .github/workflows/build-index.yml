@@ -14,6 +14,7 @@ on:
       - "sources/libretro-database.json"
       - "sources/candidates.json"
       - "tools/validate.py"
+      - "identities/**"
       - "curated/**"
       - "archive/libretro/cht/**"
   workflow_dispatch:
@@ -121,6 +122,17 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- search \
             --db generated/v1 --platform snes --title 'Donkey Kong Country' --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_source_records"] > 0 and q["candidate_only"]'
+      - name: Verify read-only ROM SHA-256 fingerprint behavior
+        shell: bash
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp)"
+          trap 'rm -f "$fixture"' EXIT
+          printf abc > "$fixture"
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-fingerprint -- --platform snes --file "$fixture" \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["fingerprint"]["sha256"] == "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"; assert d["fingerprint"]["byte_length"] == 3; assert d["evidence_lookup"]["status"] == "no_evidence"; assert not d["evidence_lookup"]["cheat_compatibility_verified"] and not d["filename_matching_used"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- verify --db generated/v1 --platform snes --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["artifact_checksums_match"] and not d["cheats_verified"]'
       - name: Exercise standalone codec and audit entire SNES coverage
         shell: bash
         run: |

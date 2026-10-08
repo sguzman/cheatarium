@@ -7,9 +7,10 @@ Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust 
 - `generated/v1/catalog.json`: the machine-readable console catalog.
 - `generated/v1/games/snes.json.gz`: advisory title groups linking to their source records.
 - `generated/v1/snes.json.gz`: full parsed source occurrences, original code strings, hints and provenance.
+- `generated/v1/identities/snes.json`: separately reviewed ROM hash evidence registry (currently empty; no guessed ROM mappings).
 - `generated/v1/distribution.json`: SHA-256 hashes and byte sizes of all artifacts.
 
-An emulator can download only these four files at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
+An emulator can download only these five files at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
 
 ## Rust client
 
@@ -24,6 +25,16 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db g
 ```
 
 `effects` searches cheat descriptions within the chosen console, optionally narrowed by a filename-derived title. Each hit retains the original code entry and complete source provenance; headings are excluded and no cheat is activated. `verify` confirms local files match the distribution manifest, but does not authenticate the manifest itself. Pin a trusted upstream Git commit or future immutable release.
+
+## ROM fingerprint evidence
+
+The `cheatarium-fingerprint` CLI reads a user-selected local file and hashes its **entire original contents**. It may compare that SHA-256 to documented release claims. No ROM data is uploaded or retained and no cheat record is automatically associated with a matching release.
+
+```fish
+cargo run --release -p cheatarium-client --bin cheatarium-fingerprint -- --platform snes --file /path/to/local-game.sfc
+```
+
+The identity registry is currently empty because filename guesses are not evidence of a ROM checksum. Status `no_evidence` is the correct, safe result until a sourced hash is deliberately added. Review [ROM identity design](ROM-IDENTITY.md).
 
 ## No implicit execution
 
