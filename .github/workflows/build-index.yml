@@ -12,6 +12,9 @@ on:
       - "sources/libretro-database.json"
       - "archive/libretro/cht/**"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Bootstrap console cheat archive"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -22,6 +25,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:

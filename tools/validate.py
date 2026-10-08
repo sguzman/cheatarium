@@ -63,9 +63,11 @@ for manifest in sorted((ROOT / "sources").glob("*.json")):
         if path.suffix == ".cht":
             text = raw.decode("utf-8", errors="replace")
             count = re.search(r"(?m)^cheats\s*=\s*(\d+)", text)
-            codes = re.findall(r"(?m)^cheat\d+_code\s*=", text)
-            if count and int(count.group(1)) != len(codes):
-                warning(f"{relative}: .cht cheat count mismatch ({count.group(1)} declared, {len(codes)} codes)")
+            # RetroArch .cht files often use description-only section headings.
+            # "cheats" counts indexed entries, not only code-bearing entries.
+            entries = set(re.findall(r"(?m)^cheat(\d+)_(?:desc|code|enable)\s*=", text))
+            if count and int(count.group(1)) != len(entries):
+                warning(f"{relative}: .cht entry count mismatch ({count.group(1)} declared, {len(entries)} indexed entries)")
 
 curated_count = 0
 cheat_count = 0

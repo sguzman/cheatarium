@@ -20,6 +20,7 @@ pub struct Code {
     pub code: Option<String>,
     pub source_enabled: bool,
     pub verification: &'static str,
+    pub role: &'static str,
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -79,19 +80,19 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
             code: part.code,
             source_enabled: part.source_enabled,
             verification: "unverified",
+            role: if part.code.is_some() { "code" } else { "section-heading" },
         })
         .collect();
     let mut warnings = Vec::new();
-    let count = codes.iter().filter(|c| c.code.is_some()).count();
+    let count = codes.len();
     if declared_count.is_some_and(|n| n != count) {
         warnings.push(format!(
-            "declared {0} cheats, found {count} code fields",
+            "declared {0} entries, found {count} indexed entries",
             declared_count.unwrap_or_default()
         ));
     }
-    if codes.iter().any(|c| c.code.is_none()) {
-        warnings.push("at least one described cheat lacks a code field".to_owned());
-    }
+    // Description-only indexed entries are intentional headings in many
+    // Libretro NDS cheat files; they are not malformed executable cheats.
     ParsedCheats { declared_count, codes, warnings }
 }
 
@@ -208,8 +209,15 @@ mod tests {
     fn mismatch_is_warning_not_destructive_edit() {
         let p = parse_cht("cheats = 2\ncheat0_desc = \"Missing\"\ncheat1_code = \"ABCD\"\n");
         assert_eq!(p.codes.len(), 2);
-        assert_eq!(p.warnings.len(), 2);
+        assert!(p.warnings.is_empty());
         assert!(p.codes[0].code.is_none());
+        assert_eq!(p.codes[0].role, "section-heading");
+    }
+
+    #[test]
+    fn real_entry_count_mismatch_is_reported() {
+        let parsed = parse_cht("cheats = 4\ncheat0_desc = \"A group\"\ncheat1_code = \"ABCD\"\n");
+        assert_eq!(parsed.warnings.len(), 1);
     }
 
     #[test]
