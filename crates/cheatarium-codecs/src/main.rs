@@ -11,7 +11,9 @@ fn main() {
         args.next(),
         args.next(),
     ) else {
-        eprintln!("Usage: cheatarium-decode decode snes <game-genie|action-replay|syntax> '<code>'");
+        eprintln!(
+            "Usage: cheatarium-decode decode snes <game-genie|action-replay|syntax> '<code>'"
+        );
         std::process::exit(2);
     };
     if command != "decode" || console != "snes" {

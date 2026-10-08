@@ -133,13 +133,14 @@ pub fn decode_snes_unlabelled(raw: &str) -> Result<SnesDecoded, DecodeError> {
     let all_game_genie = parts.iter().all(|part| {
         part.len() == 9
             && part.as_bytes().get(4) == Some(&b'-')
-            && part.bytes().enumerate().all(|(i, ch)| {
-                i == 4 || GENIE_DIGITS.contains(&ch.to_ascii_uppercase())
-            })
+            && part
+                .bytes()
+                .enumerate()
+                .all(|(i, ch)| i == 4 || GENIE_DIGITS.contains(&ch.to_ascii_uppercase()))
     });
-    let all_raw_hex = parts.iter().all(|part| {
-        part.len() == 8 && part.bytes().all(|ch| ch.is_ascii_hexdigit())
-    });
+    let all_raw_hex = parts
+        .iter()
+        .all(|part| part.len() == 8 && part.bytes().all(|ch| ch.is_ascii_hexdigit()));
     let mut decoded = if all_game_genie {
         decode_snes("game-genie", raw)?
     } else if all_raw_hex {
@@ -230,10 +231,22 @@ mod tests {
 
     #[test]
     fn mixed_or_incomplete_unlabeled_groups_not_interpreted() {
-        assert_eq!(decode_snes_unlabelled("DDB4-6F07+7E1E6B14"), Err(DecodeError::InvalidCode));
-        assert_eq!(decode_snes_unlabelled("7FC136XX"), Err(DecodeError::InvalidCode));
-        assert_eq!(decode_snes_unlabelled("DDB4-6F07+"), Err(DecodeError::EmptyPart));
-        assert_eq!(decode_snes_unlabelled("ABCD/1234"), Err(DecodeError::InvalidCode));
+        assert_eq!(
+            decode_snes_unlabelled("DDB4-6F07+7E1E6B14"),
+            Err(DecodeError::InvalidCode)
+        );
+        assert_eq!(
+            decode_snes_unlabelled("7FC136XX"),
+            Err(DecodeError::InvalidCode)
+        );
+        assert_eq!(
+            decode_snes_unlabelled("DDB4-6F07+"),
+            Err(DecodeError::EmptyPart)
+        );
+        assert_eq!(
+            decode_snes_unlabelled("ABCD/1234"),
+            Err(DecodeError::InvalidCode)
+        );
         let known = decode_snes("action-replay", "7E1E6B14").unwrap();
         assert_eq!(known.interpretation_basis, "declared-file-format");
     }

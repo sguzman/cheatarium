@@ -5,7 +5,7 @@
   "console_bundles": 36,
   "source_files": 23382,
   "game_candidate_groups": 16825,
-  "decoded_snes_code_fields": 14750,
+  "decoded_snes_code_fields": 66602,
   "files": [
     {
       "path": "32x.json.gz",
@@ -39,7 +39,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "2a53b5175f340e581bf8da9d8da37b66d7367e206d7f5299bd38e618bc3d79f7",
+      "sha256": "ad46574a7166b0cbab237d472420a5770bcf5111e24369e4e6de7cb962c3b279",
       "size_bytes": 11414
     },
     {
@@ -318,6 +318,11 @@
       "size_bytes": 1950153
     },
     {
+      "path": "reports/snes-codec-coverage.json",
+      "sha256": "e5c858b33636221ea9a33fa35f77b41993af72494871a42af193aa6d25dc0dbc",
+      "size_bytes": 3621
+    },
+    {
       "path": "satellaview.json.gz",
       "sha256": "1c776998d54fa3b1fc5fbd2a8ec4a8a1872b068440c428612f1fc1197d3ca58c",
       "size_bytes": 2024
@@ -339,8 +344,8 @@
     },
     {
       "path": "snes.json.gz",
-      "sha256": "b7e424affb1a50287c1b2e4dfbc9ca49f73ab15d9b4b3285ef9862bc868bc50b",
-      "size_bytes": 1404367
+      "sha256": "eefc97deeb7efca16df31209e9c37f57098b3ff491eea7282090bc2bd4f099d1",
+      "size_bytes": 1818160
     },
     {
       "path": "supergrafx.json.gz",

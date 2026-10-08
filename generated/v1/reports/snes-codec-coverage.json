@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "scope": "snes",
+  "status": "syntax_interpretation_only_not_rom_verified",
+  "source_files": 2773,
+  "counts": {
+    "anonymous_game_genie_codes": 19380,
+    "anonymous_hex_address_candidates": 32472,
+    "decoded_declared_format": 14750,
+    "decoded_from_code_syntax": 51852,
+    "encoded_code_fields": 68094,
+    "explicit_format_not_decodable": 1478,
+    "format_not_identified": 14,
+    "native_memory_entries": 715,
+    "section_headings": 9162,
+    "strictly_decoded": 66602
+  },
+  "sample_undecoded_explicit_codes": [
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/2020 Super Baseball (USA, Japan) (Action Replay).cht",
+      "ordinal": 3,
+      "format_hint": "action-replay",
+      "source_code": "7FC136XX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/2020 Super Baseball (USA, Japan) (Action Replay).cht",
+      "ordinal": 4,
+      "format_hint": "action-replay",
+      "source_code": "7FC137XX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/2020 Super Baseball (USA, Japan) (Action Replay).cht",
+      "ordinal": 5,
+      "format_hint": "action-replay",
+      "source_code": "7FC138XX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/2020 Super Baseball (USA, Japan) (Action Replay).cht",
+      "ordinal": 6,
+      "format_hint": "action-replay",
+      "source_code": "7FC13BXX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/2020 Super Baseball (USA, Japan) (Action Replay).cht",
+      "ordinal": 7,
+      "format_hint": "action-replay",
+      "source_code": "7FC13CXX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/3x3 Eyes - Juuma Houkan (Japan) (Action Replay).cht",
+      "ordinal": 2,
+      "format_hint": "action-replay",
+      "source_code": "7E9292??"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/3x3 Eyes - Juuma Houkan (Japan) (Action Replay).cht",
+      "ordinal": 3,
+      "format_hint": "action-replay",
+      "source_code": "7E9282??"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/46 Okunen Monogatari - Harukanaru Eden e (Japan) (Action Replay).cht",
+      "ordinal": 2,
+      "format_hint": "action-replay",
+      "source_code": "7E00D2??+7E00D3??"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/ABC Monday Night Football (USA, Japan) (Action Replay).cht",
+      "ordinal": 1,
+      "format_hint": "action-replay",
+      "source_code": "7E1182XX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/ABC Monday Night Football (USA, Japan) (Action Replay).cht",
+      "ordinal": 2,
+      "format_hint": "action-replay",
+      "source_code": "7E118CXX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/ABC Monday Night Football (USA, Japan) (Action Replay).cht",
+      "ordinal": 3,
+      "format_hint": "action-replay",
+      "source_code": "7E11A6XX"
+    },
+    {
+      "source": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/ABC Monday Night Football (USA, Japan) (Action Replay).cht",
+      "ordinal": 4,
+      "format_hint": "action-replay",
+      "source_code": "7E11A5XX"
+    }
+  ],
+  "remainder_policy": "Never infer ROM compatibility or change original source codes"
+}
