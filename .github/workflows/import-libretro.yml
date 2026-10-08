@@ -21,11 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: true
-      - name: Import pinned NES and SNES collections
-        run: python3 tools/import_libretro.py --systems nes snes
+      - name: Import pinned console and handheld collections
+        run: python3 tools/import_libretro.py --systems nes snes gb gbc gba genesis ps1 psp
       - name: Check archive and curated references
         run: python3 tools/validate.py
       - name: Commit imported data
@@ -35,6 +35,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add archive/libretro/cht/ sources/libretro-database.json
           if ! git diff --cached --quiet; then
-            git commit -m "data: vendor pinned Libretro NES and SNES cheat archives"
+            git commit -m "data: expand pinned Libretro console cheat archives"
             git push origin HEAD:main
           fi
