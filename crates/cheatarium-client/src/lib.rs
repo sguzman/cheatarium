@@ -628,7 +628,51 @@ pub struct EffectHit<'a> {
     pub provenance: &'a Provenance,
 }
 
+/// Literal original code-text occurrence, not a deduplicated or verified cheat.
+#[derive(Debug, Serialize)]
+pub struct ExactCodeHit<'a> {
+    pub source_record_id: &'a str,
+    pub candidate_game_key: &'a str,
+    pub title_hint: &'a str,
+    pub raw_filename: &'a str,
+    pub region_hint: Option<&'a str>,
+    pub format_hint: Option<&'a str>,
+    pub cheat: &'a Code,
+    pub provenance: &'a Provenance,
+}
+
 impl Bundle {
+    /// Match raw device code text *exactly*, including case and whitespace.
+    /// A repeated string is not proof of identical effects or ROM compatibility.
+    /// Each occurrence retains its original source and ordinal. Never executes.
+    #[must_use]
+    pub fn search_exact_code(&self, raw_code: &str) -> Vec<ExactCodeHit<'_>> {
+        if raw_code.is_empty() {
+            return Vec::new();
+        }
+        let mut hits = Vec::new();
+        for record in &self.records {
+            for cheat in &record.codes {
+                if cheat.role.as_deref() != Some("code")
+                    || cheat.code.as_deref() != Some(raw_code)
+                {
+                    continue;
+                }
+                hits.push(ExactCodeHit {
+                    source_record_id: &record.id,
+                    candidate_game_key: &record.candidate_game_key,
+                    title_hint: &record.title_hint,
+                    raw_filename: &record.raw_filename,
+                    region_hint: record.region_hint.as_deref(),
+                    format_hint: record.format_hint.as_deref(),
+                    cheat,
+                    provenance: &record.provenance,
+                });
+            }
+        }
+        hits
+    }
+
     /// Case-insensitive, *candidate-only* title lookup; no ROM identity check.
     #[must_use]
     pub fn search_title(&self, needle: &str) -> Vec<&IndexedFile> {
@@ -730,6 +774,22 @@ mod tests {
         assert_eq!(bundle.records[0].codes[0].code.as_deref(), Some("ABCD"));
         assert!(bundle.records[0].codes[0].is_code());
         assert!(!bundle.records[0].codes[1].is_code());
+    }
+
+    #[test]
+    fn exact_code_search_preserves_text_ordinals_and_provenance() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let hits = bundle.search_exact_code("ABCD");
+        assert_eq!(hits.len(), 1);
+        assert_eq!(hits[0].source_record_id, "x");
+        assert_eq!(hits[0].candidate_game_key, "super-mario-world");
+        assert_eq!(hits[0].cheat.ordinal, 0);
+        assert_eq!(hits[0].cheat.description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(hits[0].provenance.upstream_path, "cht/sample.cht");
+        assert!(bundle.search_exact_code("abcd").is_empty());
+        assert!(bundle.search_exact_code("ABCD ").is_empty());
+        assert!(bundle.search_exact_code("").is_empty());
+        assert!(bundle.search_exact_code("A heading").is_empty());
     }
 
     #[test]
