@@ -495,7 +495,6 @@ impl RepeatedCodeIndex {
     }
 }
 
-
 #[derive(Debug, Deserialize, Serialize)]
 pub struct EffectTagIndex {
     pub schema_version: u32,
@@ -524,18 +523,22 @@ pub struct TagOccurrence {
 pub fn load_effect_tags(root: impl AsRef<Path>, platform: &str) -> Result<EffectTagIndex> {
     let root = root.as_ref();
     let catalog = load_catalog(root)?;
-    let entry = catalog.bundles.iter()
+    let entry = catalog
+        .bundles
+        .iter()
         .find(|entry| entry.platform == platform)
         .ok_or_else(|| format!("No Cheatarium index for console {platform}"))?;
     let expected = format!("tags/{platform}.json.gz");
     if platform.is_empty()
-        || !platform.bytes().all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        || !platform
+            .bytes()
+            .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
         || entry.tag_index_artifact.as_deref() != Some(expected.as_str())
     {
         return Err("No safe effect-tag index available".into());
     }
-    let mut gzip = GzDecoder::new(File::open(root.join(expected))?)
-        .take(MAX_UNCOMPRESSED_BUNDLE + 1);
+    let mut gzip =
+        GzDecoder::new(File::open(root.join(expected))?).take(MAX_UNCOMPRESSED_BUNDLE + 1);
     let mut data = Vec::new();
     gzip.read_to_end(&mut data)?;
     if data.len() as u64 > MAX_UNCOMPRESSED_BUNDLE {
@@ -554,7 +557,10 @@ pub fn load_effect_tags(root: impl AsRef<Path>, platform: &str) -> Result<Effect
     if index.categories.iter().any(|category| {
         !seen_categories.insert(category.id.as_str())
             || category.matches.is_empty()
-            || category.matches.iter().any(|hit| hit.source_record_id.is_empty() || hit.matched_phrase.is_empty())
+            || category
+                .matches
+                .iter()
+                .any(|hit| hit.source_record_id.is_empty() || hit.matched_phrase.is_empty())
     }) {
         return Err("Malformed Cheatarium lexical tag entries".into());
     }

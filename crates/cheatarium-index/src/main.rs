@@ -339,7 +339,6 @@ fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> Repeate
     }
 }
 
-
 #[derive(Serialize)]
 struct EffectTagOccurrence {
     source_record_id: String,
@@ -366,7 +365,9 @@ struct EffectTagIndex {
 /// Index source-description phrases only. Region, file name and decoded code
 /// text never supply a classification; emitted references point to originals.
 fn build_effect_tag_index(
-    platform: &str, records: &[IndexedFile], taxonomy: &EffectTaxonomy,
+    platform: &str,
+    records: &[IndexedFile],
+    taxonomy: &EffectTaxonomy,
 ) -> EffectTagIndex {
     let mut groups: BTreeMap<String, Vec<EffectTagOccurrence>> = BTreeMap::new();
     for record in records {
@@ -378,16 +379,20 @@ fn build_effect_tag_index(
                 continue;
             };
             for (category, phrase) in classify(description, taxonomy) {
-                groups.entry(category.to_owned()).or_default().push(EffectTagOccurrence {
-                    source_record_id: record.id.clone(),
-                    ordinal: code.ordinal,
-                    candidate_game_key: record.candidate_game_key.clone(),
-                    matched_phrase: phrase.to_owned(),
-                });
+                groups
+                    .entry(category.to_owned())
+                    .or_default()
+                    .push(EffectTagOccurrence {
+                        source_record_id: record.id.clone(),
+                        ordinal: code.ordinal,
+                        candidate_game_key: record.candidate_game_key.clone(),
+                        matched_phrase: phrase.to_owned(),
+                    });
             }
         }
     }
-    let categories = groups.into_iter()
+    let categories = groups
+        .into_iter()
         .map(|(id, matches)| EffectTagCategory { id, matches })
         .collect();
     EffectTagIndex {
@@ -572,7 +577,11 @@ fn run() -> Result<()> {
         let repeat_index_artifact = format!("repeats/{platform}.json.gz");
         let tag_index_artifact = format!("tags/{platform}.json.gz");
         let tags = build_effect_tag_index(&platform, &records, &taxonomy);
-        let tag_matches = tags.categories.iter().map(|category| category.matches.len()).sum();
+        let tag_matches = tags
+            .categories
+            .iter()
+            .map(|category| category.matches.len())
+            .sum();
         let mut tag_gzip = GzBuilder::new().mtime(0).write(
             File::create(out.join(&tag_index_artifact))?,
             Compression::default(),
@@ -672,7 +681,11 @@ mod tests {
         let taxonomy: EffectTaxonomy =
             serde_json::from_str(include_str!("../../../taxonomy/effects-v1.json")).unwrap();
         let tags = build_effect_tag_index("snes", &[a, b], &taxonomy);
-        let lives = tags.categories.iter().find(|category| category.id == "lives").unwrap();
+        let lives = tags
+            .categories
+            .iter()
+            .find(|category| category.id == "lives")
+            .unwrap();
         assert_eq!(lives.matches.len(), 1);
         assert_eq!(lives.matches[0].source_record_id, "a");
         assert_eq!(lives.matches[0].ordinal, 0);

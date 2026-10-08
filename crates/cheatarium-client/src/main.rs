@@ -102,51 +102,77 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             if selected.trim().is_empty() {
                 return Err("--category cannot be empty".into());
             }
-            let group = index.by_category(selected).ok_or("No signal matches for that category")?;
-            let hits: Vec<_> = group.matches.iter()
-                .filter(|hit| game_key.as_deref().is_none_or(|key| hit.candidate_game_key == key))
+            let group = index
+                .by_category(selected)
+                .ok_or("No signal matches for that category")?;
+            let hits: Vec<_> = group
+                .matches
+                .iter()
+                .filter(|hit| {
+                    game_key
+                        .as_deref()
+                        .is_none_or(|key| hit.candidate_game_key == key)
+                })
                 .collect();
             let total = hits.len();
             if json {
-                println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-                    "schema": "cheatarium.lexical_tags.v1",
-                    "platform": platform,
-                    "taxonomy_id": index.taxonomy_id,
-                    "category": selected,
-                    "candidate_game_key_filter": game_key,
-                    "interpretation": index.interpretation,
-                    "source_text_only": true,
-                    "verified_effect": false,
-                    "verified_game_identity": false,
-                    "cheats_activated": false,
-                    "total_matches": total,
-                    "hits": hits.into_iter().take(limit).collect::<Vec<_>>(),
-                }))?);
+                println!(
+                    "{}",
+                    serde_json::to_string_pretty(&serde_json::json!({
+                        "schema": "cheatarium.lexical_tags.v1",
+                        "platform": platform,
+                        "taxonomy_id": index.taxonomy_id,
+                        "category": selected,
+                        "candidate_game_key_filter": game_key,
+                        "interpretation": index.interpretation,
+                        "source_text_only": true,
+                        "verified_effect": false,
+                        "verified_game_identity": false,
+                        "cheats_activated": false,
+                        "total_matches": total,
+                        "hits": hits.into_iter().take(limit).collect::<Vec<_>>(),
+                    }))?
+                );
             } else {
-                println!("{total} textual {selected:?} cues on {platform}; no verified gameplay effect.");
+                println!(
+                    "{total} textual {selected:?} cues on {platform}; no verified gameplay effect."
+                );
                 for hit in hits.into_iter().take(limit) {
-                    println!("- {} #{} ({}; phrase {:?})",
-                        hit.source_record_id, hit.ordinal, hit.candidate_game_key, hit.matched_phrase);
+                    println!(
+                        "- {} #{} ({}; phrase {:?})",
+                        hit.source_record_id,
+                        hit.ordinal,
+                        hit.candidate_game_key,
+                        hit.matched_phrase
+                    );
                 }
             }
         } else {
             if game_key.is_some() {
                 return Err("--game-key needs --category in tags mode".into());
             }
-            let counts: Vec<_> = index.categories.iter()
-                .map(|group| serde_json::json!({
-                    "category": group.id,
-                    "matches": group.matches.len()
-                })).collect();
+            let counts: Vec<_> = index
+                .categories
+                .iter()
+                .map(|group| {
+                    serde_json::json!({
+                        "category": group.id,
+                        "matches": group.matches.len()
+                    })
+                })
+                .collect();
             if json {
-                println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-                    "schema": "cheatarium.lexical_tag_categories.v1",
-                    "platform": platform,
-                    "taxonomy_id": index.taxonomy_id,
-                    "source_text_only": true,
-                    "verified_effect": false,
-                    "categories": counts,
-                }))?);
+                println!(
+                    "{}",
+                    serde_json::to_string_pretty(&serde_json::json!({
+                        "schema": "cheatarium.lexical_tag_categories.v1",
+                        "platform": platform,
+                        "taxonomy_id": index.taxonomy_id,
+                        "source_text_only": true,
+                        "verified_effect": false,
+                        "categories": counts,
+                    }))?
+                );
             } else {
                 println!("Lexical description cues on {platform} (not verified effects):");
                 for group in &index.categories {

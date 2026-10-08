@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "id": "cheatarium-effect-signals-en-v1",
+  "language": "en",
+  "method": "ascii-token-phrase",
+  "interpretation": "Textual cues in original source descriptions only; no validated gameplay effect, release or device compatibility",
+  "categories": [
+    {
+      "id": "lives",
+      "label": "Lives",
+      "phrases": [
+        "infinite lives",
+        "unlimited lives",
+        "maximum lives",
+        "max lives",
+        "99 lives",
+        "extra lives",
+        "infinite life",
+        "unlimited life"
+      ]
+    },
+    {
+      "id": "health",
+      "label": "Health",
+      "phrases": [
+        "infinite health",
+        "unlimited health",
+        "maximum health",
+        "max health",
+        "full health",
+        "infinite hp",
+        "max hp",
+        "full hp",
+        "never lose health"
+      ]
+    },
+    {
+      "id": "invulnerability",
+      "label": "Invulnerability",
+      "phrases": [
+        "invincibility",
+        "invincible",
+        "god mode",
+        "no damage",
+        "no hit damage",
+        "immune to damage"
+      ]
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "phrases": [
+        "infinite time",
+        "unlimited time",
+        "freeze timer",
+        "stop timer",
+        "stopped timer",
+        "timer stops",
+        "time never runs out"
+      ]
+    },
+    {
+      "id": "ammunition",
+      "label": "Ammunition",
+      "phrases": [
+        "infinite ammo",
+        "unlimited ammo",
+        "max ammo",
+        "maximum ammo",
+        "infinite ammunition",
+        "unlimited ammunition",
+        "unlimited bullets",
+        "infinite bullets",
+        "unlimited missiles"
+      ]
+    },
+    {
+      "id": "currency",
+      "label": "Currency",
+      "phrases": [
+        "infinite money",
+        "unlimited money",
+        "max money",
+        "maximum money",
+        "infinite gold",
+        "unlimited gold",
+        "max gold",
+        "unlimited coins",
+        "infinite coins",
+        "max coins"
+      ]
+    },
+    {
+      "id": "score",
+      "label": "Score",
+      "phrases": [
+        "maximum score",
+        "max score",
+        "infinite score",
+        "high score",
+        "unlimited points",
+        "max points"
+      ]
+    },
+    {
+      "id": "energy-magic",
+      "label": "Energy and magic",
+      "phrases": [
+        "infinite mana",
+        "unlimited mana",
+        "max mana",
+        "infinite mp",
+        "max mp",
+        "max magic",
+        "infinite magic",
+        "infinite energy",
+        "unlimited energy"
+      ]
+    },
+    {
+      "id": "unlocking",
+      "label": "Unlocking",
+      "phrases": [
+        "unlock all",
+        "all levels unlocked",
+        "unlock levels",
+        "all characters unlocked",
+        "unlock characters",
+        "unlock everything",
+        "all stages unlocked"
+      ]
+    },
+    {
+      "id": "items-equipment",
+      "label": "Items and equipment",
+      "phrases": [
+        "all weapons",
+        "max weapons",
+        "have all items",
+        "infinite items",
+        "unlimited items",
+        "max items",
+        "all equipment",
+        "unlimited weapons"
+      ]
+    },
+    {
+      "id": "movement",
+      "label": "Movement",
+      "phrases": [
+        "moon jump",
+        "high jump",
+        "super jump",
+        "super speed",
+        "speed boost",
+        "infinite jump",
+        "unlimited jumps"
+      ]
+    }
+  ]
+}
