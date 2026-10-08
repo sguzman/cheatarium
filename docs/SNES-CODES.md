@@ -38,6 +38,8 @@ The reproducible [SNES composition review queue](../generated/v1/reports/snes-co
 
 This is an evidence-acquisition priority list, **not** a claim that the highest-ranked game has the most broken cheats, nor that `+` means simultaneous writes. It can be regenerated and independently checked by `tools/build_snes_review_queue.py`, with synthetic adversarial tests in CI.
 
+The queue additionally reports `historical_publication_witnesses` and `occurrences_without_publication_witness` per filename candidate, plus corresponding archive-wide totals. These refer only to exact, source-audited external **textual** witnesses. They are not confirmed simultaneous programs, compatible builds, deduplicated cheats, or verified effects. Ranking remains based on original unresolved source occurrences, not the witness count.
+
 ### Inspect full source dossiers
 
 The top-100 queue carries only three original examples per candidate. For an exhaustive, **read-only** inspection of one candidate, query the pinned SNES source bundle directly:
