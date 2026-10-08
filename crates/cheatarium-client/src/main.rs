@@ -77,8 +77,12 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     {
         return Err("--relation must be revision-alternatives or unresolved".into());
     }
-    if mode != "reviews" && mode != "publications" && source_record_id.is_some() {
-        return Err("--source-record-id applies only to reviews or publications".into());
+    if mode != "reviews"
+        && mode != "publications"
+        && mode != "compositions"
+        && source_record_id.is_some()
+    {
+        return Err("--source-record-id applies only to reviews, publications or compositions".into());
     }
     if mode != "repeats" && varying_descriptions {
         return Err("--varying-descriptions applies only to repeats".into());
@@ -191,6 +195,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 game_key
                     .as_deref()
                     .is_none_or(|key| key == record.candidate_game_key)
+                    && source_record_id
+                        .as_deref()
+                        .is_none_or(|id| id == record.id)
             })
             .flat_map(|record| {
                 record.codes.iter().filter_map(move |code| {
@@ -233,6 +240,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "platform": platform,
                     "candidate_game_key_filter": game_key,
                     "relation_filter": composition_relation,
+                    "source_record_id_filter": source_record_id,
                     "total_groups": total,
                     "evidenced_revision_alternatives": resolved,
                     "unresolved_groups": total - resolved,
