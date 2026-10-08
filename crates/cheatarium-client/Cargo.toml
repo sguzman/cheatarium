@@ -15,3 +15,7 @@ flate2 = "1"
 [[bin]]
 name = "cheatarium-query"
 path = "src/main.rs"
+
+[[bin]]
+name = "cheatarium-fingerprint"
+path = "src/bin/fingerprint.rs"
