@@ -32,6 +32,26 @@ for manifest in sorted((ROOT / "sources").glob("*.json")):
     data = load(manifest)
     if not data:
         continue
+    # Acquisition queues describe third-party sources *not* imported yet.
+    # They cannot be treated as source inventories or awarded source IDs.
+    if manifest.name == "candidates.json":
+        if data.get("schema_version") != 1 or not isinstance(data.get("candidates"), list):
+            error(f"{manifest}: malformed acquisition queue")
+        else:
+            seen = set()
+            for candidate in data["candidates"]:
+                if not isinstance(candidate, dict):
+                    error(f"{manifest}: malformed candidate entry")
+                    continue
+                cid = candidate.get("id")
+                if not isinstance(cid, str) or not cid or cid in seen:
+                    error(f"{manifest}: empty or duplicate candidate ID")
+                seen.add(cid)
+                if not isinstance(candidate.get("repo"), str) or not candidate["repo"].startswith("https://"):
+                    error(f"{manifest}: candidate lacks HTTPS source URL")
+                if candidate.get("state") not in ("link_only_rights_review", "needs_file_level_review"):
+                    error(f"{manifest}: candidate lacks a recognized review state")
+        continue
     sid = data.get("id")
     if not sid or sid in sources:
         error(f"{manifest}: empty or duplicate source ID")
