@@ -3,8 +3,8 @@
 //! This code does NOT decode a Game Genie/Action Replay code into executable
 //! emulator memory writes. Exact original bytes remain in archive/.
 //! Filename-based game associations are suggestions, never ROM verification.
-use serde::Serialize;
 use cheatarium_codecs::SnesDecoded;
+use serde::Serialize;
 use std::collections::BTreeMap;
 
 #[derive(Debug, Default)]

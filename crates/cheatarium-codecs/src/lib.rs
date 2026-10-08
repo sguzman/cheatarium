@@ -45,7 +45,9 @@ fn read_game_genie(input: &str) -> Result<SnesWrite, DecodeError> {
             continue;
         }
         let upper = c.to_ascii_uppercase();
-        let digit = GENIE_DIGITS.iter().position(|&v| v == upper)
+        let digit = GENIE_DIGITS
+            .iter()
+            .position(|&v| v == upper)
             .ok_or(DecodeError::InvalidCode)? as u32;
         parsed = (parsed << 4) | digit;
     }
@@ -122,10 +124,13 @@ mod tests {
         assert_eq!(nine.writes[0].address_hex, "009E25");
         assert_eq!(nine.writes[0].value_hex, "08");
         let infinite = decode_snes("game-genie", "C222-D4DD").unwrap();
-        assert_eq!(infinite.writes[0], SnesWrite {
-            address_hex: "00D0D8".to_owned(),
-            value_hex: "AD".to_owned(),
-        });
+        assert_eq!(
+            infinite.writes[0],
+            SnesWrite {
+                address_hex: "00D0D8".to_owned(),
+                value_hex: "AD".to_owned(),
+            }
+        );
     }
 
     #[test]
@@ -140,18 +145,42 @@ mod tests {
 
     #[test]
     fn wildcard_and_partial_groups_rejected() {
-        assert_eq!(decode_snes("action-replay", "7FC136XX"), Err(DecodeError::InvalidCode));
-        assert_eq!(decode_snes("action-replay", "7E1E6B14+7FC136XX"), Err(DecodeError::InvalidCode));
-        assert_eq!(decode_snes("game-genie", "DDB4-6F07+"), Err(DecodeError::EmptyPart));
-        assert_eq!(decode_snes("game-genie", "DDB4-6F0X"), Err(DecodeError::InvalidCode));
-        assert_eq!(decode_snes("gameshark", "7E1E6B14"), Err(DecodeError::UnsupportedFormat));
+        assert_eq!(
+            decode_snes("action-replay", "7FC136XX"),
+            Err(DecodeError::InvalidCode)
+        );
+        assert_eq!(
+            decode_snes("action-replay", "7E1E6B14+7FC136XX"),
+            Err(DecodeError::InvalidCode)
+        );
+        assert_eq!(
+            decode_snes("game-genie", "DDB4-6F07+"),
+            Err(DecodeError::EmptyPart)
+        );
+        assert_eq!(
+            decode_snes("game-genie", "DDB4-6F0X"),
+            Err(DecodeError::InvalidCode)
+        );
+        assert_eq!(
+            decode_snes("gameshark", "7E1E6B14"),
+            Err(DecodeError::UnsupportedFormat)
+        );
     }
 
     #[test]
     fn bounded_and_zero_vector() {
         let too_long = "DDDD-DDDD+".repeat(65);
-        assert_eq!(decode_snes("game-genie", &too_long), Err(DecodeError::TooManyParts));
-        assert_eq!(decode_snes("game-genie", "DDDD-DDDD").unwrap().writes[0].value_hex, "00");
-        assert_eq!(decode_snes("action-replay", "00123456").unwrap().writes[0].address_hex, "001234");
+        assert_eq!(
+            decode_snes("game-genie", &too_long),
+            Err(DecodeError::TooManyParts)
+        );
+        assert_eq!(
+            decode_snes("game-genie", "DDDD-DDDD").unwrap().writes[0].value_hex,
+            "00"
+        );
+        assert_eq!(
+            decode_snes("action-replay", "00123456").unwrap().writes[0].address_hex,
+            "001234"
+        );
     }
 }

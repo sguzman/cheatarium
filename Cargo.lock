@@ -34,9 +34,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "cheatarium-codecs"
+version = "0.1.0"
+dependencies = [
+ "serde",
+]
+
+[[package]]
 name = "cheatarium-index"
 version = "0.1.0"
 dependencies = [
+ "cheatarium-codecs",
  "flate2",
  "serde",
  "serde_json",

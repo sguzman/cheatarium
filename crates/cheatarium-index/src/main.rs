@@ -332,8 +332,11 @@ fn run() -> Result<()> {
             .flat_map(|x| &x.codes)
             .filter(|x| x.role == "memory-entry")
             .count();
-        let decoded_snes_code_fields: usize = records.iter()
-            .flat_map(|x| &x.codes).filter(|x| x.snes_decode.is_some()).count();
+        let decoded_snes_code_fields: usize = records
+            .iter()
+            .flat_map(|x| &x.codes)
+            .filter(|x| x.snes_decode.is_some())
+            .count();
         let warnings: usize = records.iter().map(|x| x.parse_warnings.len()).sum();
         let source_files = records.len();
         let filename = format!("{platform}.json.gz");
