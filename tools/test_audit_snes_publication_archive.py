@@ -95,6 +95,11 @@ def test():
         altered = copy.deepcopy(bundle)
         altered["records"][0]["provenance"]["upstream_path"] = "cht/Another.cht"
         rejects(lambda: audit_original_archives(root, publications, altered))
+        alias = root / "archive/libretro/cht/Alias.cht"
+        alias.write_bytes(RAW)
+        altered = copy.deepcopy(bundle)
+        altered["records"][0]["provenance"]["archive_path"] = "archive/libretro/cht/Alias.cht"
+        rejects(lambda: audit_original_archives(root, publications, altered))
         altered = copy.deepcopy(bundle)
         altered["records"][0]["provenance"]["git_blob_sha"] = "0" * 40
         rejects(lambda: audit_original_archives(root, publications, altered))
