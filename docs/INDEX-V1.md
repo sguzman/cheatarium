@@ -31,6 +31,8 @@ An indexed code entry has an ordinal, description, optional code string, `source
 
 **Catalog:** `generated/v1/catalog.json` references the source and game bundles for each console, with file and entry counts. The additive `decoded_snes_code_fields` reports the number of SNES source code fields decoded in full. `game_index_artifact` and `game_candidate_groups` are additive v1 fields.
 
+**Source-code join semantics:** `interpretations/v1/snes.json` gives separately sourced partitions for documented SNES `+`-joined alternatives; it is copied to `generated/v1/interpretations/snes.json` and validated against exact original source blobs and ordinals. The original `code` is untouched. An unreviewed `+` join gets `composition.relation: "unresolved"`; an evidenced `revision-alternatives` group has explicit alternative component arrays and does **not** emit a combined `snes_decode` object. Neither means a ROM revision has been matched. See [SNES code decoding](SNES-CODES.md).
+
 **ROM hash evidence:** `generated/v1/identities/snes.json` is a separately sourced (currently empty) registry of exact-file SHA-256 release claims, independent of filenames or cheat codes. It is referenced by the optional `identity_artifact` catalog field. A hash match never verifies a cheat.
 
 **Distribution:** `generated/v1/distribution.json` lists SHA-256 and byte length for every artifact, including the ROM evidence registry, created and checked by `tools/build_distribution.py`.

@@ -46,7 +46,8 @@
 - [x] Add independently referenced review registry, validated original-record/ordinal attribution and explicit report-versus-observation evidence with exact-ROM test contexts.
 - [x] Ground the first five external `reported` claims in dated historic cheat documents, with specific original source file blobs and ordinals (SNES DKC and NES DK).
 - [ ] Acquire empirical cheat tests tied to exact ROM/build SHA-256 and version-specific device/core semantics; no empirical observation claims exist yet.
-- [ ] Review external version-alternative codes encoded as `+`-joined strings in imported source data before any consumer treats them as simultaneous writes.
+- [x] Add source-bound, independently cited SNES revision-alternative partitions for five DKC `+` records, preserve raw codes and prevent combined decoder output for these exact records.
+- [ ] Review remaining unresolved `+` joins, distinguish authentic multi-code device programs from revision alternatives, and eventually map verified builds to alternatives.
 - [ ] Expand multilingual phrase cues and contributor/author attribution.
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.

@@ -18,11 +18,27 @@ Source code strings remain unchanged in every entry's `code` field. When decodin
 
 This is what the code *decodes to*, not proof the bus location is RAM, that the targeted game/region/revision is compatible, or that any emulator supports patching that address. A Game Genie ROM read substitution and a memory-write engine do not have identical semantics; a consumer must implement its own device-specific timing and mapping.
 
+## Evidence-backed source composition
+
+The additive, separately audited registry `interpretations/v1/snes.json` describes select exact original `+` entries from Donkey Kong Country. The corresponding read-only distribution artifact is `generated/v1/interpretations/snes.json`. Each reviewed record specifies the original source record, code ordinal, upstream file blob SHA, unchanged raw code string, version-alternative partitions and external citations.
+
+For example, the source string `C2C9-4E2C+C2C1-4A9C` actually represents **two one-code alternatives for different game versions**, not one two-part program. Another example, `DBC1-3D6D+DCC1-34AD+DBC9-340D+DCC1-3D6D`, represents **two versions of a two-code combination**. The original [Game Genie Donkey Kong Country code table](https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html) explicitly separates the alternatives by version. It does **not** identify those ROMs by SHA-256.
+
+```fish
+cargo run --release -p cheatarium-client --bin cheatarium-query -- compositions --db generated/v1 --platform snes --game-key donkey-kong-country --relation revision-alternatives --json
+```
+
+The query returns the original source provenance and both the reviewed or unresolved grouping status. Both `rom_match_verified` and `safe_to_combine_or_auto_apply` remain false. Other source `+` records are marked `unresolved` until reviewed, even if their individual code bytes decode successfully.
+
+The indexer and independent Python audit reject altered source blobs, missing ordinals, lost/reordered components, malformed evidence and mistakenly emitted simultaneous writes for revision alternatives. The generated registry and source bundle are checksummed in the published distribution.
+
 ## Supported formats
 
 - **Game Genie:** one 4+4-character hyphenated SNES code per component (e.g. `DDB4-6F07`); the known Game Genie alphabet and 24-bit address-bit permutation are applied strictly.
 - **Pro Action Replay / Action Replay:** exactly eight hexadecimal characters representing a 24-bit SNES CPU-bus address followed by one byte (e.g. `7E1E6B14`).
-- **Compound groups:** separated by `+`; components stay ordered and linked as a single original cheat. If *any* component fails, the group stays undecoded. Up to 64 components and 1024 input bytes are accepted.
+- **Source `+` joins:** a plus character in an imported code is **not evidence that all parts are meant to run simultaneously**. For unreviewed joins the original entry exposes `composition.relation: "unresolved"`. The pure codec still decodes syntactically valid components, but its `writes` vector is only a parse, **never a runnable compound program**.
+- **Reviewed revision alternatives:** externally documented `+` source entries expose `composition.relation: "revision-alternatives"` with ordered `alternatives` (each alternative contains one or more components) and attributed evidence. They have **no `snes_decode` object for the joined string**. Consumers must neither concatenate their alternatives nor assume a ROM version from the filename; no verified ROM hash mapping exists.
+- **Syntax decoder limits:** any component failing syntax validation leaves the entire input undecoded. Pure decoding accepts up to 64 components and 1024 source bytes, but cannot establish whether a source code joins alternative revisions or simultaneous device writes.
 - **Wildcards and placeholders:** e.g. `7FC136XX` are preserved as source strings, but are deliberately not converted into concrete writes.
 - **Unlabeled source files:** a full set of Game Genie-shaped components may be interpreted as Game Genie with `interpretation_basis: "code-syntax"`. A full set of eight-digit hexadecimal components may be interpreted as `format: "raw-snes-address-value"`, without falsely asserting Pro Action Replay provenance. Both have unverified compatibility.
 - **Conflicting or ambiguous sources:** a declared format takes precedence. A failed declared-format decode stays undecoded, even if the code text could fit a different format. Mixed, placeholder, or unknown code syntax stays undecoded. Codes for other consoles are unaffected.
