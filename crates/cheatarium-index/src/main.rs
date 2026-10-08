@@ -1,4 +1,5 @@
 use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
+use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
 use cheatarium_index::{candidate_game_key, format_hint, parse_cht, region_hint, title_hint, Code};
 use flate2::{Compression, GzBuilder};
 use serde::{Deserialize, Serialize};
@@ -81,6 +82,8 @@ struct CatalogItem {
     game_index_artifact: String,
     repeat_index_artifact: String,
     repeat_groups: usize,
+    tag_index_artifact: String,
+    tag_matches: usize,
     #[serde(skip_serializing_if = "Option::is_none")]
     identity_artifact: Option<String>,
     game_candidate_groups: usize,
@@ -336,6 +339,66 @@ fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> Repeate
     }
 }
 
+
+#[derive(Serialize)]
+struct EffectTagOccurrence {
+    source_record_id: String,
+    ordinal: usize,
+    candidate_game_key: String,
+    matched_phrase: String,
+}
+
+#[derive(Serialize)]
+struct EffectTagCategory {
+    id: String,
+    matches: Vec<EffectTagOccurrence>,
+}
+
+#[derive(Serialize)]
+struct EffectTagIndex {
+    schema_version: u32,
+    platform: String,
+    taxonomy_id: String,
+    interpretation: &'static str,
+    categories: Vec<EffectTagCategory>,
+}
+
+/// Index source-description phrases only. Region, file name and decoded code
+/// text never supply a classification; emitted references point to originals.
+fn build_effect_tag_index(
+    platform: &str, records: &[IndexedFile], taxonomy: &EffectTaxonomy,
+) -> EffectTagIndex {
+    let mut groups: BTreeMap<String, Vec<EffectTagOccurrence>> = BTreeMap::new();
+    for record in records {
+        for code in &record.codes {
+            if code.role != "code" && code.role != "memory-entry" {
+                continue;
+            }
+            let Some(description) = &code.description else {
+                continue;
+            };
+            for (category, phrase) in classify(description, taxonomy) {
+                groups.entry(category.to_owned()).or_default().push(EffectTagOccurrence {
+                    source_record_id: record.id.clone(),
+                    ordinal: code.ordinal,
+                    candidate_game_key: record.candidate_game_key.clone(),
+                    matched_phrase: phrase.to_owned(),
+                });
+            }
+        }
+    }
+    let categories = groups.into_iter()
+        .map(|(id, matches)| EffectTagCategory { id, matches })
+        .collect();
+    EffectTagIndex {
+        schema_version: 1,
+        platform: platform.to_owned(),
+        taxonomy_id: taxonomy.id.clone(),
+        interpretation: "lexical-source-description-signal-only; no verified game effect or cartridge compatibility",
+        categories,
+    }
+}
+
 fn checked_path(root: &Path, rel: &str) -> Result<PathBuf> {
     let path = Path::new(rel);
     if path
@@ -476,6 +539,12 @@ fn run() -> Result<()> {
 
     fs::create_dir_all(&out)?;
     fs::create_dir_all(out.join("games"))?;
+    fs::create_dir_all(out.join("tags"))?;
+    fs::create_dir_all(out.join("taxonomy"))?;
+    let taxonomy_path = root.join("taxonomy/effects-v1.json");
+    let taxonomy: EffectTaxonomy = serde_json::from_slice(&fs::read(&taxonomy_path)?)?;
+    taxonomy.validate()?;
+    fs::copy(&taxonomy_path, out.join("taxonomy/effects-v1.json"))?;
     fs::create_dir_all(out.join("repeats"))?;
     fs::create_dir_all(out.join("identities"))?;
     let mut catalog = Vec::new();
@@ -501,6 +570,15 @@ fn run() -> Result<()> {
         let filename = format!("{platform}.json.gz");
         let game_index_artifact = format!("games/{platform}.json.gz");
         let repeat_index_artifact = format!("repeats/{platform}.json.gz");
+        let tag_index_artifact = format!("tags/{platform}.json.gz");
+        let tags = build_effect_tag_index(&platform, &records, &taxonomy);
+        let tag_matches = tags.categories.iter().map(|category| category.matches.len()).sum();
+        let mut tag_gzip = GzBuilder::new().mtime(0).write(
+            File::create(out.join(&tag_index_artifact))?,
+            Compression::default(),
+        );
+        tag_gzip.write_all(&serde_json::to_vec(&tags)?)?;
+        tag_gzip.finish()?;
         let repeats = build_repeated_code_index(&platform, &records);
         let repeat_groups = repeats.groups.len();
         let mut repeat_gzip = GzBuilder::new().mtime(0).write(
@@ -551,6 +629,8 @@ fn run() -> Result<()> {
             game_index_artifact,
             repeat_index_artifact,
             repeat_groups,
+            tag_index_artifact,
+            tag_matches,
             identity_artifact,
             game_candidate_groups,
             source_files,
@@ -583,6 +663,23 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
+
+    #[test]
+    fn lexical_effect_index_points_to_original_code_without_claiming_effect() {
+        let a = mock("SMW (USA).cht", "a", Some("USA"), None);
+        let mut b = mock("SMW (USA).cht", "b", Some("USA"), None);
+        b.codes[0].description = Some("A mystery code".to_owned());
+        let taxonomy: EffectTaxonomy =
+            serde_json::from_str(include_str!("../../../taxonomy/effects-v1.json")).unwrap();
+        let tags = build_effect_tag_index("snes", &[a, b], &taxonomy);
+        let lives = tags.categories.iter().find(|category| category.id == "lives").unwrap();
+        assert_eq!(lives.matches.len(), 1);
+        assert_eq!(lives.matches[0].source_record_id, "a");
+        assert_eq!(lives.matches[0].ordinal, 0);
+        assert_eq!(lives.matches[0].matched_phrase, "infinite lives");
+        assert!(tags.interpretation.contains("lexical"));
+    }
+
     use super::*;
 
     fn mock(
