@@ -4,6 +4,7 @@
 //! All name matching is *advisory* and must not auto-enable cheats.
 pub mod identity;
 pub mod inventory;
+pub mod reviews;
 use flate2::read::GzDecoder;
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
@@ -250,7 +251,7 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
     {
         return Err("Unsafe Cheatarium artifact path".into());
     }
-    let mut artifacts = vec!["catalog.json".to_owned(), entry.artifact.clone()];
+    let mut artifacts = vec!["catalog.json".to_owned(), "reviews.json".to_owned(), entry.artifact.clone()];
     if let Some(game_path) = &entry.game_index_artifact {
         if game_path != &format!("games/{platform}.json.gz") {
             return Err("Unsafe Cheatarium game-index path".into());

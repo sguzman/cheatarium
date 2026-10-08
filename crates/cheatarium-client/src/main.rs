@@ -2,6 +2,7 @@
 use cheatarium_client::{
     load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
     verify_platform_distribution,
+    reviews::load_effect_reviews,
 };
 use std::env;
 use std::error::Error;
@@ -14,6 +15,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut effect = None;
     let mut game_key = None;
     let mut category = None;
+    let mut source_record_id = None;
     let mut varying_descriptions = false;
     let mut declared_format = None;
     let mut source_id = None;
@@ -27,8 +29,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("effects") => "effects",
         Some("repeats") => "repeats",
         Some("tags") => "tags",
+        Some("reviews") => "reviews",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -40,6 +43,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--category" => category = Some(args.next().ok_or("--category needs an ID")?),
+            "--source-record-id" => source_record_id = Some(args.next().ok_or("--source-record-id needs an ID")?),
             "--varying-descriptions" => varying_descriptions = true,
             "--declared-format" => {
                 declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
@@ -56,11 +60,14 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
+    if mode != "reviews" && source_record_id.is_some() {
+        return Err("--source-record-id applies only to reviews".into());
+    }
     if mode != "repeats" && varying_descriptions {
         return Err("--varying-descriptions applies only to repeats".into());
     }
-    if mode != "tags" && category.is_some() {
-        return Err("--category applies only to tags".into());
+    if mode != "tags" && mode != "reviews" && category.is_some() {
+        return Err("--category applies only to tags or reviews".into());
     }
     if mode != "repeats" && mode != "tags" && game_key.is_some() {
         return Err("--game-key applies only to repeats and tags".into());
@@ -93,6 +100,37 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         } else {
             println!("OK: {platform} artifacts match local distribution.json SHA-256 checksums");
             println!("The manifest itself is not authenticated, and cheats remain unverified.");
+        }
+        return Ok(());
+    }
+    if mode == "reviews" {
+        let index = load_effect_reviews(&root, &platform)?;
+        let claims = index.claims.iter()
+            .filter(|claim| category.as_deref().is_none_or(|id| claim.effect_category == id))
+            .filter(|claim| source_record_id.as_deref()
+                .is_none_or(|id| claim.source_record_id == id))
+            .collect::<Vec<_>>();
+        let total = claims.len();
+        if json {
+            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+                "schema": "cheatarium.effect_reviews.v1",
+                "platform": platform,
+                "category_filter": category,
+                "source_record_id_filter": source_record_id,
+                "claims": claims.into_iter().take(limit).collect::<Vec<_>>(),
+                "total_claims": total,
+                "reviews_are_evidence_not_execution_permission": true,
+                "unverified_imports_promoted": false,
+                "cheats_activated": false,
+            }))?);
+        } else {
+            println!("{total} separately evidenced effect reviews on {platform}");
+            println!("These are source-bound reports/observations, not universal compatibility.");
+            for claim in claims.into_iter().take(limit) {
+                println!("- {}: {} ({}, original {} #{})",
+                    claim.id, claim.effect_category, claim.assessment,
+                    claim.source_record_id, claim.source_ordinal);
+            }
         }
         return Ok(());
     }
