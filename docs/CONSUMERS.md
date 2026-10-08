@@ -21,7 +21,7 @@ An emulator can download the relevant platform artifacts at a **pinned Cheatariu
 
 ## Rust client
 
-The client exposes `load_catalog`, `load_game_candidates`, `load_platform`, `verify_platform_distribution`, and candidate title searches. Its CLI supports these local-only operations:
+The client exposes `load_catalog`, `load_game_candidates`, `load_platform`, `verify_platform_distribution`, `publications::load_snes_publications`, and candidate title searches. Its CLI supports these local-only operations:
 
 ```sh
 cargo run --release -p cheatarium-client --bin cheatarium-query -- games --db generated/v1 --platform snes --title 'Chrono Trigger' --json
@@ -39,7 +39,7 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- effects --db 
 cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db generated/v1 --platform snes --json
 ```
 
-`compositions` shows the exact source `+` joins, whether a specific original code is independently documented as a revision-alternative partition, and the source-cited grouping. An unknown join does not become a simultaneously executable program. Even a reviewed version alternative is not tied to an exact ROM revision: no code selection or execution happens. See [SNES code composition](SNES-CODES.md).
+`compositions` shows the exact source `+` joins, whether a specific original code is independently documented as a revision-alternative partition, and the source-cited grouping. Optional `--source-record-id` and `--game-key` filters support research scoped to one original source or one advisory candidate. An unknown join does not become a simultaneously executable program. Even a reviewed version alternative is not tied to an exact ROM revision: no code selection or execution happens. See [SNES code composition](SNES-CODES.md).
 
 `publications` returns the separately validated, source-bound SNES publication-witness registry. It supports `--game-key`, `--source-record-id`, and `--limit`. The Rust client independently checks each witness against its original code string, source ordinal and Git blob. These are *published code text* matches, not gameplay observations or compatibility assertions. No code is executed or activated.
 
