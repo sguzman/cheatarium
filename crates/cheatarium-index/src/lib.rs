@@ -77,10 +77,10 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
         .map(|(ordinal, part)| Code {
             ordinal,
             description: part.description,
+            role: if part.code.is_some() { "code" } else { "section-heading" },
             code: part.code,
             source_enabled: part.source_enabled,
             verification: "unverified",
-            role: if part.code.is_some() { "code" } else { "section-heading" },
         })
         .collect();
     let mut warnings = Vec::new();
