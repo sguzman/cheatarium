@@ -5,6 +5,47 @@
   "evidence_limit": "Documents historical grouped publication only; not runtime execution, cartridge/ROM compatibility or safe combined writes",
   "records": [
     {
+      "candidate_game_key": "bahamut-lagoon",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Bahamut Lagoon (Japan) (Game Genie).cht",
+      "source_git_blob_sha": "313888a649f6da0cfa356b06034ddf6070317430",
+      "source_ordinal": 0,
+      "raw_code": "DB8B-DFD0+BD8B-DF00+DD8B-DF60",
+      "published_text_segments": [
+        "DB8B-DFD0",
+        "BD8B-DF00",
+        "DD8B-DF60"
+      ],
+      "published_effect_description": "Earn 65525 GP after battle",
+      "publication": {
+        "url": "https://gamefaqs.gamespot.com/snes/563516-bahamut-lagoon/faqs/6647",
+        "reference": "A_Chau Bahamut Lagoon Guide #6647, Tips and Tricks",
+        "source_revision": "GameFAQs historical walkthrough, undated revision accessed 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "bahamut-lagoon",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Bahamut Lagoon (Japan) (Game Genie).cht",
+      "source_git_blob_sha": "313888a649f6da0cfa356b06034ddf6070317430",
+      "source_ordinal": 1,
+      "raw_code": "EE6A-5650+EE6A-5680",
+      "published_text_segments": [
+        "EE6A-5650",
+        "EE6A-5680"
+      ],
+      "published_effect_description": "Start a new game with a lot of gold",
+      "publication": {
+        "url": "https://etherealgames.com/snes/b/bahamut-lagoon/game-genie-codes/",
+        "reference": "Ethereal Games Bahamut Lagoon Game Genie, entry 2",
+        "source_revision": "undated web listing accessed 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
       "candidate_game_key": "ka-blooey",
       "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ka-blooey (USA) (Game Genie).cht",
       "source_git_blob_sha": "4103f84d0acceea4f10281bb69fe680fb357efbb",
@@ -121,6 +162,74 @@
         "url": "https://gamegenie.com/cheats/gamegenie/snes/lemmings.html",
         "reference": "Game Genie Lemmings, entry 11",
         "source_revision": "undated web transcription consulted 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "ogre-battle-the-march-of-the-black-queen",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ogre Battle - The March of the Black Queen (USA) (Game Genie).cht",
+      "source_git_blob_sha": "e3b8591bc20d747f185217841feeffd941caa76b",
+      "source_ordinal": 0,
+      "raw_code": "3229-DDDD+3229-DDDD+A23D-D4FA+3229-A23D",
+      "published_text_segments": [
+        "3229-DDDD",
+        "3229-DDDD",
+        "A23D-D4FA",
+        "3229-A23D"
+      ],
+      "published_effect_description": "Gives Lord about 90 HP and alternate attack",
+      "publication": {
+        "url": "https://almarsguides.com/retro/walkthroughs/snes/games/ogrebattle/gamegenie/",
+        "reference": "Almar's Guides Ogre Battle, Gives Lord 90HP and Alternative Attack",
+        "source_revision": "undated web listing accessed 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "ogre-battle-the-march-of-the-black-queen",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ogre Battle - The March of the Black Queen (USA) (Game Genie).cht",
+      "source_git_blob_sha": "e3b8591bc20d747f185217841feeffd941caa76b",
+      "source_ordinal": 1,
+      "raw_code": "10E3-9376+10E3-9356+10E3-9386+10E3-93E6+10E3-9E76",
+      "published_text_segments": [
+        "10E3-9376",
+        "10E3-9356",
+        "10E3-9386",
+        "10E3-93E6",
+        "10E3-9E76"
+      ],
+      "published_effect_description": "Hero's group quick level up",
+      "publication": {
+        "url": "https://almarsguides.com/retro/walkthroughs/snes/games/ogrebattle/gamegenie/",
+        "reference": "Almar's Guides Ogre Battle, Hero's Group Quick Level Up",
+        "source_revision": "undated web listing accessed 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "ogre-battle-the-march-of-the-black-queen",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Ogre Battle - The March of the Black Queen (USA) (Game Genie).cht",
+      "source_git_blob_sha": "e3b8591bc20d747f185217841feeffd941caa76b",
+      "source_ordinal": 2,
+      "raw_code": "10E3-9E56+10E3-9E86+10E3-9EE6+10EE-9A76+10EE-9A56",
+      "published_text_segments": [
+        "10E3-9E56",
+        "10E3-9E86",
+        "10E3-9EE6",
+        "10EE-9A76",
+        "10EE-9A56"
+      ],
+      "published_effect_description": "Lans group quick level up",
+      "publication": {
+        "url": "https://almarsguides.com/retro/walkthroughs/snes/games/ogrebattle/gamegenie/",
+        "reference": "Almar's Guides Ogre Battle, Lans Group Quick Level Up",
+        "source_revision": "undated web listing accessed 2026-10-08"
       },
       "execution_observed": false,
       "rom_match_verified": false,
