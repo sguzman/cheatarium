@@ -16,6 +16,7 @@ Every successful index build produces the following under `generated/v1/`:
 - `repeats/<platform>.json.gz`: per-console exact-text repetition candidates with source references, included in the manifest for all 36 bundles.
 - `reports/snes-composition-review-queue.json`: deterministic summary of unresolved SNES `+` source-code joins, ranked for research and linked to exact original source records; not compatibility evidence.
 - `interpretations/snes.json`: separately sourced, independently validated SNES source-code group relationships. Revision alternatives preserve version-specific partitions without inventing ROM identity or runnable combined writes.
+- `interpretations/snes-published-groups.json`: externally witnessed historical multi-part listings, pinned to exact original source ordinals and upstream Git blobs; these do **not** resolve execution semantics or authorize applying codes.
 - `identities/snes.json`: independent SHA-256 whole-file ROM release evidence registry, copied from `identities/v1/snes.json` and checksummed alongside the cheat bundles. This is **not** a list of verified cheat-to-ROM mappings.
 - `distribution.json`: deterministic SHA-256 digests and byte lengths for every exported artifact (including the coverage report), aggregate counts and additive `decoded_snes_code_fields`. A distribution manifest does **not** sign itself.
 
