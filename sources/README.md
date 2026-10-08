@@ -12,6 +12,8 @@ Redistribution status matters as much as code count. Register candidates here; o
 | [GoldHEN Cheat Repository](https://github.com/GoldHEN/GoldHEN_Cheat_Repository) | PlayStation 4 | **Candidate / review** | GPL-3.0 repository license observed; distinguish tools/data and their notices before copying. |
 | [Artemis PS3](https://github.com/bucanero/ArtemisPS3) | PlayStation 3 | **Candidate / review** | Project points to community cheat codes and an online database; check individual code rights and format. |
 
+The [machine-readable acquisition queue](candidates.json) and [source/rights audit](../docs/SOURCE-AUDIT.md) track additional candidates without copying their payloads.
+
 The **source manifest**, not this table, is the authoritative record of what has actually been imported. Dates, revisions, and license details must not be inferred for sources listed as candidates.
 
 ### Attribution

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "description": "Reviewed candidate cheat sources not yet copied to archive; metadata only. Rights status is not an assessment of legality in any jurisdiction.",
+  "candidates": [
+    {
+      "id": "pcsx2-cheats-collection",
+      "repo": "https://github.com/xs1l3n7x/pcsx2_cheats_collection",
+      "platforms": [
+        "ps2"
+      ],
+      "formats": [
+        "pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "README says decrypted cheats derive from Ultimate PCSX2 Cheater and CheatDevicePS2; verify those upstream data rights and credits."
+    },
+    {
+      "id": "dolphin-gecko-examples",
+      "repo": "https://github.com/hakami55/Gecko-Codes-for-Dolphin",
+      "platforms": [
+        "gamecube",
+        "wii"
+      ],
+      "formats": [
+        "gecko-code-in-readme"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "README contains game-ID/revision-specific Gecko code blocks and names original community contributors; no root license found."
+    },
+    {
+      "id": "switch-cheats-db",
+      "repo": "https://github.com/HamletDuFromage/switch-cheats-db",
+      "platforms": [
+        "switch"
+      ],
+      "formats": [
+        "atmosphere",
+        "sxos"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "README describes a moving mirror of GBATemp and graphics-code communities; preserve distinct upstream authors and game build IDs."
+    },
+    {
+      "id": "goldhen-cheat-repository",
+      "repo": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository",
+      "platforms": [
+        "ps4"
+      ],
+      "formats": [
+        "json",
+        "mc4",
+        "shn"
+      ],
+      "state": "needs_file_level_review",
+      "repo_license": "GPL-3.0-root-license",
+      "notes": "Root LICENSE provides GPL-3; confirm applicability to imported third-party data, and keep separate GPL notices."
+    },
+    {
+      "id": "artemis-ps3",
+      "repo": "https://github.com/bucanero/ArtemisPS3",
+      "platforms": [
+        "ps3"
+      ],
+      "formats": [
+        "artemis-code-files"
+      ],
+      "state": "needs_file_level_review",
+      "repo_license": "MIT-root-license",
+      "notes": "Root software license is MIT; README describes community cheat submissions and online game code database. Confirm rights for original contributed code data."
+    },
+    {
+      "id": "gamehacking-org",
+      "repo": "https://gamehacking.org/",
+      "platforms": [
+        "multiple"
+      ],
+      "formats": [
+        "device-codes"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "undetermined",
+      "notes": "Excellent research reference; confirm export permissions and individual source attribution before bulk import."
+    }
+  ]
+}
