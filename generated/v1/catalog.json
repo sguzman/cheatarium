@@ -4,6 +4,76 @@
   "matching_policy": "candidate titles only; no ROM hashes or verified execution",
   "bundles": [
     {
+      "platform": "32x",
+      "artifact": "32x.json.gz",
+      "source_files": 29,
+      "code_fields": 658,
+      "warnings": 1
+    },
+    {
+      "platform": "atari-2600",
+      "artifact": "atari-2600.json.gz",
+      "source_files": 22,
+      "code_fields": 31,
+      "warnings": 0
+    },
+    {
+      "platform": "atari-5200",
+      "artifact": "atari-5200.json.gz",
+      "source_files": 107,
+      "code_fields": 267,
+      "warnings": 0
+    },
+    {
+      "platform": "atari-7800",
+      "artifact": "atari-7800.json.gz",
+      "source_files": 41,
+      "code_fields": 92,
+      "warnings": 0
+    },
+    {
+      "platform": "atari-jaguar",
+      "artifact": "atari-jaguar.json.gz",
+      "source_files": 41,
+      "code_fields": 230,
+      "warnings": 0
+    },
+    {
+      "platform": "atari-lynx",
+      "artifact": "atari-lynx.json.gz",
+      "source_files": 14,
+      "code_fields": 39,
+      "warnings": 0
+    },
+    {
+      "platform": "colecovision",
+      "artifact": "colecovision.json.gz",
+      "source_files": 89,
+      "code_fields": 1,
+      "warnings": 0
+    },
+    {
+      "platform": "dreamcast",
+      "artifact": "dreamcast.json.gz",
+      "source_files": 292,
+      "code_fields": 11160,
+      "warnings": 0
+    },
+    {
+      "platform": "fds",
+      "artifact": "fds.json.gz",
+      "source_files": 114,
+      "code_fields": 666,
+      "warnings": 0
+    },
+    {
+      "platform": "game-gear",
+      "artifact": "game-gear.json.gz",
+      "source_files": 818,
+      "code_fields": 7284,
+      "warnings": 0
+    },
+    {
       "platform": "gb",
       "artifact": "gb.json.gz",
       "source_files": 1496,
@@ -22,41 +92,167 @@
       "artifact": "gbc.json.gz",
       "source_files": 960,
       "code_fields": 26864,
-      "warnings": 2
+      "warnings": 0
     },
     {
       "platform": "genesis",
       "artifact": "genesis.json.gz",
       "source_files": 2094,
       "code_fields": 38545,
-      "warnings": 2
+      "warnings": 0
+    },
+    {
+      "platform": "gx4000",
+      "artifact": "gx4000.json.gz",
+      "source_files": 17,
+      "code_fields": 42,
+      "warnings": 0
+    },
+    {
+      "platform": "intellivision",
+      "artifact": "intellivision.json.gz",
+      "source_files": 8,
+      "code_fields": 11,
+      "warnings": 0
+    },
+    {
+      "platform": "master-system",
+      "artifact": "master-system.json.gz",
+      "source_files": 724,
+      "code_fields": 4747,
+      "warnings": 0
+    },
+    {
+      "platform": "n64",
+      "artifact": "n64.json.gz",
+      "source_files": 1386,
+      "code_fields": 228549,
+      "warnings": 0
+    },
+    {
+      "platform": "nds",
+      "artifact": "nds.json.gz",
+      "source_files": 4204,
+      "code_fields": 645072,
+      "warnings": 0
     },
     {
       "platform": "nes",
       "artifact": "nes.json.gz",
       "source_files": 2262,
       "code_fields": 44504,
-      "warnings": 10
+      "warnings": 0
+    },
+    {
+      "platform": "ngp",
+      "artifact": "ngp.json.gz",
+      "source_files": 5,
+      "code_fields": 19,
+      "warnings": 0
+    },
+    {
+      "platform": "ngpc",
+      "artifact": "ngpc.json.gz",
+      "source_files": 29,
+      "code_fields": 129,
+      "warnings": 0
+    },
+    {
+      "platform": "pc-fx",
+      "artifact": "pc-fx.json.gz",
+      "source_files": 2,
+      "code_fields": 2,
+      "warnings": 0
     },
     {
       "platform": "ps1",
       "artifact": "ps1.json.gz",
       "source_files": 1961,
       "code_fields": 22114,
-      "warnings": 2
+      "warnings": 0
     },
     {
       "platform": "psp",
       "artifact": "psp.json.gz",
       "source_files": 2654,
       "code_fields": 81109,
-      "warnings": 26
+      "warnings": 0
+    },
+    {
+      "platform": "satellaview",
+      "artifact": "satellaview.json.gz",
+      "source_files": 6,
+      "code_fields": 50,
+      "warnings": 0
+    },
+    {
+      "platform": "saturn",
+      "artifact": "saturn.json.gz",
+      "source_files": 192,
+      "code_fields": 1710,
+      "warnings": 0
+    },
+    {
+      "platform": "segacd",
+      "artifact": "segacd.json.gz",
+      "source_files": 14,
+      "code_fields": 164,
+      "warnings": 0
+    },
+    {
+      "platform": "sg1000",
+      "artifact": "sg1000.json.gz",
+      "source_files": 26,
+      "code_fields": 70,
+      "warnings": 0
     },
     {
       "platform": "snes",
       "artifact": "snes.json.gz",
       "source_files": 2773,
       "code_fields": 77971,
+      "warnings": 0
+    },
+    {
+      "platform": "supergrafx",
+      "artifact": "supergrafx.json.gz",
+      "source_files": 4,
+      "code_fields": 14,
+      "warnings": 0
+    },
+    {
+      "platform": "tg16",
+      "artifact": "tg16.json.gz",
+      "source_files": 322,
+      "code_fields": 1055,
+      "warnings": 3
+    },
+    {
+      "platform": "tgcd",
+      "artifact": "tgcd.json.gz",
+      "source_files": 138,
+      "code_fields": 536,
+      "warnings": 1
+    },
+    {
+      "platform": "virtual-boy",
+      "artifact": "virtual-boy.json.gz",
+      "source_files": 10,
+      "code_fields": 23,
+      "warnings": 0
+    },
+    {
+      "platform": "wonderswan",
+      "artifact": "wonderswan.json.gz",
+      "source_files": 6,
+      "code_fields": 17,
+      "warnings": 0
+    },
+    {
+      "platform": "wonderswan-color",
+      "artifact": "wonderswan-color.json.gz",
+      "source_files": 9,
+      "code_fields": 15,
       "warnings": 0
     }
   ]
