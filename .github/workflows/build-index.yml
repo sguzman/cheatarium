@@ -81,6 +81,9 @@ jobs:
           python3 tools/build_snes_review_queue.py --check
           python3 tools/test_inspect_snes_joins.py
           python3 tools/test_snes_publications.py
+          python3 tools/test_analyze_snes_patterns.py
+          python3 tools/analyze_snes_patterns.py --game-key push-over --limit 2 \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_pattern_families"] > 0 and d["returned"] == 2; assert d["families_may_overlap"] and d["pattern_is_not_code_equivalence"]; assert not d["execution_or_rom_compatibility_verified"] and not d["safe_to_combine_or_auto_apply"]; assert all(f["original_occurrences"] >= 2 and f["source_git_blob_sha"] for f in d["families"])'
           python3 tools/validate_snes_publications.py --write
           python3 tools/validate_snes_publications.py --check
           python3 tools/inspect_snes_joins.py --game-key push-over --limit 2 \
