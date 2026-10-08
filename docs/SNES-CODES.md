@@ -59,7 +59,7 @@ The external listings document how those strings were **published as a grouped e
 
 The registry is independently validated against the pinned `snes.json.gz` source bundle, including unchanged code text, exact original ordinal and upstream blob, then published as [checksummed distribution data](../generated/v1/interpretations/snes-published-groups.json). Run `python3 tools/validate_snes_publications.py --check` after generating distribution snapshots. Synthetic tests reject tampered sources, citations, component order and invented execution claims.
 
-External listing references: [Push-Over](https://gamegenie.com/cheats/gamegenie/snes/pushover.html) and [Lemmings](https://gamegenie.com/cheats/gamegenie/snes/lemmings.html).
+External listing references: [Push-Over](https://gamegenie.com/cheats/gamegenie/snes/pushover.html) and [Lemmings](https://gamegenie.com/cheats/gamegenie/snes/lemmings.html). The dossier inspector includes a `historical_publication_witnesses` count and attaches the validated citation to each matching source occurrence; all execution and compatibility flags remain false.
 ## Supported formats
 
 - **Game Genie:** one 4+4-character hyphenated SNES code per component (e.g. `DDB4-6F07`); the known Game Genie alphabet and 24-bit address-bit permutation are applied strictly.
