@@ -58,6 +58,11 @@ def build_manifest(root):
     composition_queue = checked_json(safe_path(root, queue_rel))
     if composition_queue != rebuild_composition_queue(ROOT):
         raise ValueError("Stale or tampered source composition review queue")
+    witness_count = publication_witnesses["historical_publication_witnesses"]
+    if (composition_queue.get("total_historical_publication_witnesses") != witness_count
+            or composition_queue.get("total_without_publication_witness") !=
+            composition_queue["total_unresolved_source_occurrences"] - witness_count):
+        raise ValueError("SNES publication witness counts disagree with research queue")
     composition_rel = "interpretations/snes.json"
     taxonomy_rel = "taxonomy/effects-v1.json"
     taxonomy = checked_json(safe_path(root, taxonomy_rel))
@@ -336,6 +341,8 @@ def build_manifest(root):
         "reviewed_snes_revision_alternatives": compositions["reviewed_revision_alternatives"],
         "unresolved_snes_plus_groups": compositions["unresolved_plus_groups"],
         "unresolved_snes_candidate_groups": composition_queue["candidate_groups_with_unresolved_joins"],
+        "historical_snes_publication_witnesses": witness_count,
+        "unresolved_snes_without_publication_witness": composition_queue["total_without_publication_witness"],
         "reviewed_effect_claims": len(review_doc["claims"]),
         "observed_effect_claims": sum(c.get("assessment") == "observed" for c in review_doc["claims"]),
         "effect_taxonomy": "cheatarium-effect-signals-en-v1",
