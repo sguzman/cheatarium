@@ -9,6 +9,8 @@ on:
       - "Cargo.lock"
       - "README.md"
       - "docs/**"
+      - "generated/v1/**"
+      - "tools/**"
       - "crates/**"
       - "tools/build_distribution.py"
       - "tools/audit_snes_codecs.py"
