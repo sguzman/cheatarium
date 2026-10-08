@@ -4,9 +4,13 @@ use std::env;
 
 fn main() {
     let mut args = env::args().skip(1);
-    let (Some(command), Some(console), Some(format), Some(code), None) =
-        (args.next(), args.next(), args.next(), args.next(), args.next())
-    else {
+    let (Some(command), Some(console), Some(format), Some(code), None) = (
+        args.next(),
+        args.next(),
+        args.next(),
+        args.next(),
+        args.next(),
+    ) else {
         eprintln!("Usage: cheatarium-decode decode snes <game-genie|action-replay> '<code>'");
         std::process::exit(2);
     };
