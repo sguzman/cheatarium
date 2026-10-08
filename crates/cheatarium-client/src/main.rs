@@ -129,6 +129,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         if platform != "snes" {
             return Err("Historical multi-part publication witnesses currently support SNES only".into());
         }
+        // Reject altered local publication/source artifacts before resolving claims.
+        // SHA-256 validates this checkout, not the authenticity of its manifest.
+        verify_platform_distribution(&root, &platform)?;
         let registry = load_snes_publications(&root)?;
         let hits: Vec<_> = registry
             .records
