@@ -238,6 +238,19 @@ mod tests {
     }
 
     #[test]
+    fn rejects_wrong_blob_game_key_and_unsupported_publication_link() {
+        let (bundle, mut registry) = fixture();
+        registry.records[0].source_git_blob_sha = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb".to_owned();
+        assert!(registry.validate_for_bundle(&bundle).is_err());
+        registry.records[0].source_git_blob_sha = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_owned();
+        registry.records[0].candidate_game_key = "unrelated".to_owned();
+        assert!(registry.validate_for_bundle(&bundle).is_err());
+        registry.records[0].candidate_game_key = "game".to_owned();
+        registry.records[0].publication.url = "http://example.org".to_owned();
+        assert!(registry.validate_for_bundle(&bundle).is_err());
+    }
+
+    #[test]
     fn rejects_duplicate_and_reviewed_source_entries() {
         let (mut bundle, mut registry) = fixture();
         registry.records.push(registry.records[0].clone());
