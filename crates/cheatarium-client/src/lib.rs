@@ -28,6 +28,8 @@ pub struct CatalogEntry {
     pub artifact: String,
     pub source_files: usize,
     pub code_fields: usize,
+    #[serde(default)]
+    pub native_memory_entries: usize,
     pub warnings: usize,
 }
 
@@ -64,13 +66,28 @@ pub struct Code {
     pub verification: String,
     #[serde(default)]
     pub role: Option<String>,
+    #[serde(default)]
+    pub native_fields: Vec<NativeField>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct NativeField {
+    pub name: String,
+    pub value: String,
 }
 
 impl Code {
+    /// A native address/value cheat remains separate from encoded device codes.
+    #[must_use]
+    pub fn is_memory_entry(&self) -> bool {
+        self.role.as_deref() == Some("memory-entry")
+    }
+
     /// Description-only headings are not activatable codes.
     #[must_use]
     pub fn is_code(&self) -> bool {
-        self.code.is_some() && self.role.as_deref() != Some("section-heading")
+        self.code.as_deref().is_some_and(|s| !s.trim().is_empty())
+            && self.role.as_deref() != Some("section-heading")
     }
 }
 

@@ -52,7 +52,8 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         println!("WARNING: title matches are suggestions; ROM/build compatibility is unverified.");
         for hit in hits.into_iter().take(limit) {
             let code_count = hit.codes.iter().filter(|x| x.is_code()).count();
-            println!("- {} ({code_count} codes; {})", hit.raw_filename, hit.provenance.source_id);
+            let memory_count = hit.codes.iter().filter(|x| x.is_memory_entry()).count();
+            println!("- {} ({code_count} device codes, {memory_count} native memory entries; {})", hit.raw_filename, hit.provenance.source_id);
         }
     }
     Ok(())

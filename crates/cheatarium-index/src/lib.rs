@@ -11,6 +11,13 @@ struct PartialCheat {
     description: Option<String>,
     code: Option<String>,
     source_enabled: bool,
+    native_fields: Vec<NativeField>,
+}
+
+#[derive(Debug, Clone, Serialize, PartialEq, Eq)]
+pub struct NativeField {
+    pub name: String,
+    pub value: String,
 }
 
 #[derive(Debug, Clone, Serialize, PartialEq, Eq)]
@@ -21,6 +28,7 @@ pub struct Code {
     pub source_enabled: bool,
     pub verification: &'static str,
     pub role: &'static str,
+    pub native_fields: Vec<NativeField>,
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -68,19 +76,32 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
             "desc" => entry.description = Some(value),
             "code" => entry.code = Some(value),
             "enable" => entry.source_enabled = matches!(value.trim(), "true" | "1"),
-            _ => {}
+            _ => entry.native_fields.push(NativeField { name: field.to_owned(), value }),
         }
     }
 
     let codes: Vec<_> = cheats
         .into_iter()
-        .map(|(ordinal, part)| Code {
-            ordinal,
-            description: part.description,
-            role: if part.code.is_some() { "code" } else { "section-heading" },
-            code: part.code,
-            source_enabled: part.source_enabled,
-            verification: "unverified",
+        .map(|(ordinal, part)| {
+            let encoded = part.code.as_deref().is_some_and(|s| !s.trim().is_empty());
+            let has_address = part.native_fields.iter().any(|f| f.name == "address" && !f.value.is_empty());
+            let has_value = part.native_fields.iter().any(|f| f.name == "value" && !f.value.is_empty());
+            let role = if encoded {
+                "code"
+            } else if has_address && has_value {
+                "memory-entry"
+            } else {
+                "section-heading"
+            };
+            Code {
+                ordinal,
+                description: part.description,
+                role,
+                code: part.code.filter(|s| !s.trim().is_empty()),
+                source_enabled: part.source_enabled,
+                verification: "unverified",
+                native_fields: part.native_fields,
+            }
         })
         .collect();
     let mut warnings = Vec::new();
@@ -212,6 +233,16 @@ mod tests {
         assert!(p.warnings.is_empty());
         assert!(p.codes[0].code.is_none());
         assert_eq!(p.codes[0].role, "section-heading");
+    }
+
+    #[test]
+    fn preserves_native_memory_entries_without_fake_code_strings() {
+        let parsed = parse_cht("cheats = \"1\"\ncheat0_desc = \"Infinite Lives\"\ncheat0_address = \"38\"\ncheat0_value = \"8\"\ncheat0_cheat_type = \"1\"\n");
+        assert!(parsed.warnings.is_empty());
+        assert_eq!(parsed.codes[0].role, "memory-entry");
+        assert!(parsed.codes[0].code.is_none());
+        assert_eq!(parsed.codes[0].native_fields.len(), 3);
+        assert_eq!(parsed.codes[0].native_fields[0].name, "address");
     }
 
     #[test]

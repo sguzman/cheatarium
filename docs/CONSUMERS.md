@@ -26,3 +26,5 @@ A Starbyte adapter should:
 **Current boundary:** the client and CLI can read, inspect, and search. Starbyte itself is not yet wired to this client, and no cheat-execution engine is claimed. The initial catalog is transport-ready, not runtime-code-ready.
 
 Consumers should pin the exact Cheatarium revision or a future published version; do not depend on mutable branch HEAD or unverified title-only automatic matching. Avoid adding Cheatarium source archives as a build dependency: only ship the needed \`snes.json.gz\` and \`catalog.json\` files.
+
+The client also distinguishes `Code::is_memory_entry()` from encoded `Code::is_code()`. Original `native_fields` are preserved for console-specific translation; no memory entry is executed by this library.

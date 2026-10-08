@@ -79,6 +79,7 @@ struct CatalogItem {
     artifact: String,
     source_files: usize,
     code_fields: usize,
+    native_memory_entries: usize,
     warnings: usize,
 }
 
@@ -197,7 +198,8 @@ fn run() -> Result<()> {
     let mut catalog = Vec::new();
     for (platform, mut records) in by_platform {
         records.sort_by(|a, b| a.id.cmp(&b.id));
-        let code_fields: usize = records.iter().flat_map(|x| &x.codes).filter(|x| x.code.is_some()).count();
+        let code_fields: usize = records.iter().flat_map(|x| &x.codes).filter(|x| x.role == "code").count();
+        let native_memory_entries: usize = records.iter().flat_map(|x| &x.codes).filter(|x| x.role == "memory-entry").count();
         let warnings: usize = records.iter().map(|x| x.parse_warnings.len()).sum();
         let source_files = records.len();
         let filename = format!("{platform}.json.gz");
@@ -213,12 +215,13 @@ fn run() -> Result<()> {
         let mut gz = GzBuilder::new().mtime(0).write(File::create(target)?, Compression::default());
         gz.write_all(&json)?;
         gz.finish()?;
-        println!("{platform}: {source_files} source files, {code_fields} codes, {warnings} warnings");
+        println!("{platform}: {source_files} source files, {code_fields} device codes, {native_memory_entries} native memory entries, {warnings} warnings");
         catalog.push(CatalogItem {
             platform,
             artifact: filename,
             source_files,
             code_fields,
+            native_memory_entries,
             warnings,
         });
     }

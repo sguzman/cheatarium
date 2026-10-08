@@ -71,3 +71,7 @@ This is the first transport contract for **Starbyte and future emulators**. A st
 ## Mixed provenance
 
 Each source file is retained independently. Distinct upstream files containing identically named codes remain distinct \`records\`; automatic effect-level merging is deliberately deferred until we can use reliable game/build identity and evidence-based equivalence, not just string similarity.
+
+## Native memory entries
+
+Some RetroArch `.cht` files use `cheatN_address`, `cheatN_value`, `cheatN_cheat_type`, `cheatN_memory_search_size`, and other fields instead of `cheatN_code`. Indexed entries preserve all additional native key/value fields in an ordered `native_fields` list (including repeat occurrences) and distinguish `role: "memory-entry"` from encoded `role: "code"` and `role: "section-heading"`. Emulators must interpret these fields according to their platform/RetroArch memory semantics; they are **not** translated into executable codes automatically. The catalog reports both `code_fields` and `native_memory_entries`.

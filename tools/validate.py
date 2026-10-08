@@ -62,7 +62,7 @@ for manifest in sorted((ROOT / "sources").glob("*.json")):
         archive_count += 1
         if path.suffix == ".cht":
             text = raw.decode("utf-8", errors="replace")
-            count = re.search(r"(?m)^cheats\s*=\s*(\d+)", text)
+            count = re.search(r'(?m)^cheats\s*=\s*"?(\d+)"?', text)
             # RetroArch .cht files often use description-only section headings.
             # "cheats" counts indexed entries, not only code-bearing entries.
             entries = set(re.findall(r"(?m)^cheat(\d+)_(?:desc|code|enable)\s*=", text))
