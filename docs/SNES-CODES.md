@@ -20,7 +20,7 @@ This is what the code *decodes to*, not proof the bus location is RAM, that the 
 
 ## Evidence-backed source composition
 
-The additive, separately audited registry `interpretations/v1/snes.json` describes select exact original `+` entries from Donkey Kong Country. The corresponding read-only distribution artifact is `generated/v1/interpretations/snes.json`. Each reviewed record specifies the original source record, code ordinal, upstream file blob SHA, unchanged raw code string, version-alternative partitions and external citations.
+The additive, separately audited registry `interpretations/v1/snes.json` describes 27 independently documented original `+` entries from Donkey Kong Country. The corresponding read-only distribution artifact is `generated/v1/interpretations/snes.json`. Each reviewed record specifies the original source record, code ordinal, upstream file blob SHA, unchanged raw code string, version-alternative partitions and external citations.
 
 For example, the source string `C2C9-4E2C+C2C1-4A9C` actually represents **two one-code alternatives for different game versions**, not one two-part program. Another example, `DBC1-3D6D+DCC1-34AD+DBC9-340D+DCC1-3D6D`, represents **two versions of a two-code combination**. The original [Game Genie Donkey Kong Country code table](https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html) explicitly separates the alternatives by version. It does **not** identify those ROMs by SHA-256.
 

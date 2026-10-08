@@ -135,7 +135,7 @@ jobs:
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["artifact_checksums_match"] and not q["manifest_authenticated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- compositions \
             --db generated/v1 --platform snes --game-key donkey-kong-country --relation revision-alternatives --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.source_compositions.v1" and x["total_groups"] == 5 and x["evidenced_revision_alternatives"] == 5 and not x["rom_match_verified"] and not x["safe_to_combine_or_auto_apply"]; assert all(e["composition"]["relation"] == "revision-alternatives" and len(e["composition"]["alternatives"]) == 2 and e["decoded_combined_writes"] is None for e in x["entries"])'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.source_compositions.v1" and x["total_groups"] == 27 and x["evidenced_revision_alternatives"] == 27 and not x["rom_match_verified"] and not x["safe_to_combine_or_auto_apply"]; assert all(e["composition"]["relation"] == "revision-alternatives" and len(e["composition"]["alternatives"]) == 2 and e["decoded_combined_writes"] is None for e in x["entries"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- compositions \
             --db generated/v1 --platform snes --game-key donkey-kong-country --relation unresolved --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["evidenced_revision_alternatives"] == 0 and all(e["composition"]["relation"] == "unresolved" and not e["composition"]["evidence"] for e in x["entries"])'

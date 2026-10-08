@@ -20,8 +20,8 @@
       "evidence": [
         {
           "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
-          "reference": "entry 1, Infinite lives",
-          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+          "reference": "numbered SNES Game Genie table entry 1: Infinite Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
         }
       ],
       "rom_match_verified": false,
@@ -44,8 +44,176 @@
       "evidence": [
         {
           "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
-          "reference": "entry 2, Start with 8 lives",
-          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+          "reference": "numbered SNES Game Genie table entry 2: Start With 8 Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 23,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "DC68-C34D+DC68-C33D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "DC68-C34D"
+        ],
+        [
+          "DC68-C33D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 3: Start With 11 Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 24,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "DE68-C34D+DE68-C33D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "DE68-C34D"
+        ],
+        [
+          "DE68-C33D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 4: Start With 16 Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 25,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "FB68-C34D+FB68-C33D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "FB68-C34D"
+        ],
+        [
+          "FB68-C33D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 5: Start With 26 Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 26,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "7468-C34D+7468-C33D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "7468-C34D"
+        ],
+        [
+          "7468-C33D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 6: Start With 51 Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 27,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "0868-C34D+0868-C33D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "0868-C34D"
+        ],
+        [
+          "0868-C33D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 7: Start With 76 Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 28,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "1768-C34D+1768-C33D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "1768-C34D"
+        ],
+        [
+          "1768-C33D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 8: Start With 100 Lives",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 29,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "EE65-C37E+EE66-C27E",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "EE65-C37E"
+        ],
+        [
+          "EE66-C27E"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 9: When Your Last Kong Is Hit, The Other One Returns (Reset If You Get Stuck",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
         }
       ],
       "rom_match_verified": false,
@@ -68,8 +236,8 @@
       "evidence": [
         {
           "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
-          "reference": "entry 10, Almost invincible",
-          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+          "reference": "numbered SNES Game Genie table entry 10: Almost Invincible (Switch Off If You Get Stuck) (V1.0)",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
         }
       ],
       "rom_match_verified": false,
@@ -94,8 +262,86 @@
       "evidence": [
         {
           "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
-          "reference": "entry 11, 10 bananas per extra life",
-          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+          "reference": "numbered SNES Game Genie table entry 11: 10 Bananas Needed For An Extra Life",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 32,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "F6C1-3D6D+FBC1-34AD+F6C9-340D+FBC1-3D6D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "F6C1-3D6D",
+          "FBC1-34AD"
+        ],
+        [
+          "F6C9-340D",
+          "FBC1-3D6D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 12: 25 Bananas Needed For An Extra Life",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 33,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "7FC1-3D6D+74C1-34AD+7FC9-340D+74C1-3D6D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "7FC1-3D6D",
+          "74C1-34AD"
+        ],
+        [
+          "7FC9-340D",
+          "74C1-3D6D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 13: 50 Bananas Needed For An Extra Life",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 34,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "0CC1-3D6D+08C1-34AD+0CC9-340D+08C1-3D6D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "0CC1-3D6D",
+          "08C1-34AD"
+        ],
+        [
+          "0CC9-340D",
+          "08C1-3D6D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 14: 75 Bananas Needed For An Extra Life",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
         }
       ],
       "rom_match_verified": false,
@@ -120,8 +366,296 @@
       "evidence": [
         {
           "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
-          "reference": "entry 15, Keep animals between stages",
-          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+          "reference": "numbered SNES Game Genie table entry 15: Keep Animals Between Stages",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 36,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "A081-1273+A086-13E3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "A081-1273"
+        ],
+        [
+          "A086-13E3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 16: High Jump For Donkey Kong",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 37,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "2D81-1273+2D86-13E3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "2D81-1273"
+        ],
+        [
+          "2D86-13E3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 17: Super Jump For Donkey Kong",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 38,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "3D81-1273+3D86-13E3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "3D81-1273"
+        ],
+        [
+          "3D86-13E3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 18: Mega-Jump For Donkey Kong",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 39,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "8081-1E73+808B-1AE3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "8081-1E73"
+        ],
+        [
+          "808B-1AE3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 19: High Jump For Diddy Kong",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 40,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "AD81-1E73+AD8B-1AE3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "AD81-1E73"
+        ],
+        [
+          "AD8B-1AE3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 20: Super Jump For Diddy Kong",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 41,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "2D81-1E73+2D8B-1AE3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "2D81-1E73"
+        ],
+        [
+          "2D8B-1AE3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 21: Mega-Jump For Diddy Kong",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 42,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "A08F-C273+A087-C3E3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "A08F-C273"
+        ],
+        [
+          "A087-C3E3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 22: High Jump For All Animals",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 43,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "2D8F-C273+2D87-C3E3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "2D8F-C273"
+        ],
+        [
+          "2D87-C3E3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 23: Super Jump For All Animals",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 44,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "3D8F-C273+3087-C3E3",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "3D8F-C273"
+        ],
+        [
+          "3087-C3E3"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 24: Mega-Jump For All Animals",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 45,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "D76B-337E+D76C-327E",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "D76B-337E"
+        ],
+        [
+          "D76C-327E"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 25: Get Both Kongs Back On The Map Screen After Dying (Doesn't Work When You Fall Off Screen)",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 46,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "DD8B-C28A+DD88-CE5A",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "DD8B-C28A"
+        ],
+        [
+          "DD88-CE5A"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 26: In The 2-Player Team Mode, The Inactive Player Can Get Control At Any Time By Pressing A Or Select On Their Controller",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 47,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "DDB9-3DD4+DDB0-34A4",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "DDB9-3DD4"
+        ],
+        [
+          "DDB0-34A4"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "numbered SNES Game Genie table entry 27: Pressing Start And Then Select Will Exit Any Level, Not Just Completed Levels",
+          "source_revision": "GameGenie.com Donkey Kong Country two-version code table (inspected 2026-10-08)"
         }
       ],
       "rom_match_verified": false,
