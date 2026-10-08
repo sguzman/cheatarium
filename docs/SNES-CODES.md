@@ -51,6 +51,15 @@ The JSON dossier gives the total unresolved source-occurrence count, distinct **
 
 Identical text strings are not automatically equivalent cheats. A text segment is **not** a verified device write or a recommended code partition. Historical code relationships, game identity, ROM compatibility and activation remain unverified. This inspection tool does not modify indexes, fetch ROMs, decode joined programs, or execute cheats.
 
+### Historical multi-part publication witnesses
+
+An independent, source-bound [publication witness registry](../interpretations/v1/snes-published-groups.json) records six original unresolved SNES `+` strings whose exact multi-part code text also appears in external Game Genie listings: three from **Push-Over** and three from **Lemmings**. Each claim includes the original source record/ordinal, upstream Git blob, unchanged joined code, publication URL and listing entry, and a transcription of the publication's effect label.
+
+The external listings document how those strings were **published as a grouped entry**. They do not establish whether all components work in gameplay, whether the listing copied the source archive, which cartridge revision is required, or whether applying a decoded write sequence is safe. Accordingly, these records remain `composition.relation: "unresolved"` in the source index; all `execution_observed`, `rom_match_verified` and `safe_to_auto_apply` values are false. Publication witnesses are not counted among the 27 documented revision-alternative partitions.
+
+The registry is independently validated against the pinned `snes.json.gz` source bundle, including unchanged code text, exact original ordinal and upstream blob, then published as [checksummed distribution data](../generated/v1/interpretations/snes-published-groups.json). Run `python3 tools/validate_snes_publications.py --check` after generating distribution snapshots. Synthetic tests reject tampered sources, citations, component order and invented execution claims.
+
+External listing references: [Push-Over](https://gamegenie.com/cheats/gamegenie/snes/pushover.html) and [Lemmings](https://gamegenie.com/cheats/gamegenie/snes/lemmings.html).
 ## Supported formats
 
 - **Game Genie:** one 4+4-character hyphenated SNES code per component (e.g. `DDB4-6F07`); the known Game Genie alphabet and 24-bit address-bit permutation are applied strictly.
