@@ -310,6 +310,7 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
     }
     if platform == "snes" {
         artifacts.push("interpretations/snes.json".to_owned());
+        artifacts.push("interpretations/snes-published-groups.json".to_owned());
     }
     if let Some(identity_path) = &entry.identity_artifact {
         if identity_path != &format!("identities/{platform}.json") {
