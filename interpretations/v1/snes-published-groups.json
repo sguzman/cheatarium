@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "platform": "snes",
+  "claim_type": "externally-published-multi-part-source-code-text",
+  "evidence_limit": "Documents historical grouped publication only; not runtime execution, cartridge/ROM compatibility or safe combined writes",
+  "records": [
+    {
+      "candidate_game_key": "push-over",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht",
+      "source_git_blob_sha": "6b3cafffdc42198af285f999f10e3070e41bc4d0",
+      "source_ordinal": 3,
+      "raw_code": "CB66-AD6F+6266-AF0F+DF66-ADAF",
+      "published_text_segments": [
+        "CB66-AD6F",
+        "6266-AF0F",
+        "DF66-ADAF"
+      ],
+      "published_effect_description": "Start on level 2",
+      "publication": {
+        "url": "https://gamegenie.com/cheats/gamegenie/snes/pushover.html",
+        "reference": "Game Genie Push-Over, entry 4",
+        "source_revision": "undated web transcription consulted 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "push-over",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht",
+      "source_git_blob_sha": "6b3cafffdc42198af285f999f10e3070e41bc4d0",
+      "source_ordinal": 4,
+      "raw_code": "CB66-AD6F+6266-AF0F+D466-ADAF",
+      "published_text_segments": [
+        "CB66-AD6F",
+        "6266-AF0F",
+        "D466-ADAF"
+      ],
+      "published_effect_description": "Start on level 3",
+      "publication": {
+        "url": "https://gamegenie.com/cheats/gamegenie/snes/pushover.html",
+        "reference": "Game Genie Push-Over, entry 5",
+        "source_revision": "undated web transcription consulted 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "push-over",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht",
+      "source_git_blob_sha": "6b3cafffdc42198af285f999f10e3070e41bc4d0",
+      "source_ordinal": 5,
+      "raw_code": "CB66-AD6F+6266-AF0F+D766-ADAF",
+      "published_text_segments": [
+        "CB66-AD6F",
+        "6266-AF0F",
+        "D766-ADAF"
+      ],
+      "published_effect_description": "Start on level 4",
+      "publication": {
+        "url": "https://gamegenie.com/cheats/gamegenie/snes/pushover.html",
+        "reference": "Game Genie Push-Over, entry 6",
+        "source_revision": "undated web transcription consulted 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "lemmings",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lemmings (USA).cht",
+      "source_git_blob_sha": "10f3e89c7ea6898c566e676c8cebb1d9a5eea486",
+      "source_ordinal": 27,
+      "raw_code": "31B6-6FAF+18B6-64DF",
+      "published_text_segments": [
+        "31B6-6FAF",
+        "18B6-64DF"
+      ],
+      "published_effect_description": "Each saved lemming counts as two",
+      "publication": {
+        "url": "https://gamegenie.com/cheats/gamegenie/snes/lemmings.html",
+        "reference": "Game Genie Lemmings, entry 9",
+        "source_revision": "undated web transcription consulted 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "lemmings",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lemmings (USA).cht",
+      "source_git_blob_sha": "10f3e89c7ea6898c566e676c8cebb1d9a5eea486",
+      "source_ordinal": 28,
+      "raw_code": "CBCC-DD05+DFCC-DD65+C9C8-0FD5",
+      "published_text_segments": [
+        "CBCC-DD05",
+        "DFCC-DD65",
+        "C9C8-0FD5"
+      ],
+      "published_effect_description": "Start on level 2, Fun rating",
+      "publication": {
+        "url": "https://gamegenie.com/cheats/gamegenie/snes/lemmings.html",
+        "reference": "Game Genie Lemmings, entry 10",
+        "source_revision": "undated web transcription consulted 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    },
+    {
+      "candidate_game_key": "lemmings",
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lemmings (USA).cht",
+      "source_git_blob_sha": "10f3e89c7ea6898c566e676c8cebb1d9a5eea486",
+      "source_ordinal": 29,
+      "raw_code": "CBCC-DD05+D4CC-DD65+C9C8-0FD5",
+      "published_text_segments": [
+        "CBCC-DD05",
+        "D4CC-DD65",
+        "C9C8-0FD5"
+      ],
+      "published_effect_description": "Start on level 3, Fun rating",
+      "publication": {
+        "url": "https://gamegenie.com/cheats/gamegenie/snes/lemmings.html",
+        "reference": "Game Genie Lemmings, entry 11",
+        "source_revision": "undated web transcription consulted 2026-10-08"
+      },
+      "execution_observed": false,
+      "rom_match_verified": false,
+      "safe_to_auto_apply": false
+    }
+  ]
+}
