@@ -44,10 +44,12 @@ As of October 8, 2026, five `reported` claims link specific original entries to 
 
 Both documents independently exist outside the Libretro archive, but the historical cheat lists may share original code authorship. This counts as **external source corroboration of a reported code effect**, not independent demonstration, nor proof of cartridge revision compatibility. No ROMs were accessed, and source material is linked rather than copied into Cheatarium.
 
-### A source encoding hazard to review
+### A resolved source encoding ambiguity
 
-The raw Libretro DKC Game Genie file contains `C2C9-4E2C+C2C1-4A9C` as one combined source string, while the historical FAQ calls these **alternative codes for different game versions**, not a simultaneous two-code combination. That difference must be resolved with source-specific semantics before any exporter or emulator decides to interpret or execute the combined string. The raw archive has deliberately not been altered.
+The raw Libretro DKC Game Genie file contains `C2C9-4E2C+C2C1-4A9C` as one `+`-joined source string, while the historical Game Genie documentation calls these **alternative codes for different versions**, not a simultaneous two-code program. Cheatarium now independently annotates **27 documented entries** with correct per-version partitions, including five where each alternative is itself a two-code combination. See [SNES source composition](SNES-CODES.md).
+
+These partitions are evidence of the author's intended **code grouping**, not identification of which ROM SHA-256 corresponds to either version. Unreviewed `+` source strings remain explicitly unresolved. The original archive has not been modified.
 
 ## Next step
 
-Collect more independently attributable references, distinguish version alternatives from multi-code combinations, and acquire reproducible exact-ROM test observations. Do not manufacture observations from lexical categories, filenames, decoded addresses, or source listings alone.
+Collect more independently attributable references, review currently unresolved source code combinations, and acquire reproducible exact-ROM test observations. Do not manufacture observations from lexical categories, filenames, decoded addresses, or source listings alone.

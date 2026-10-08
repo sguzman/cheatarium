@@ -52,7 +52,7 @@
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.
 - [ ] Add a pleasant desktop/game cheat explorer.
-- [x] Implement SNES Game Genie / Pro Action Replay decoding, plus provenance-conscious syntax-only interpretation for unlabeled codes (66,602 / 68,094 fields interpreted); publish an audited coverage report.
+- [x] Implement SNES Game Genie / Pro Action Replay decoding, plus provenance-conscious syntax-only interpretation for unlabeled codes (over 66,000 fields interpreted); publish an audited coverage report with source-join semantics tracked separately.
 - [ ] Add console-specific codecs beyond SNES; emulator integration remains owned by its separate projects.
 
 Keep the README about the project; keep work tracking here.

@@ -74,13 +74,13 @@ The generated, per-snapshot [SNES codec audit](../generated/v1/reports/snes-code
 | Classification | Source entries |
 | --- | ---: |
 | Encoded SNES code fields | 68,094 |
-| Successfully interpreted from explicitly named device format | 14,750 |
-| Successfully interpreted from distinctive, unlabeled code syntax | 51,852 |
-| **Total interpreted** | **66,602** |
-| Labeled device codes with malformed/incomplete/placeholder data | 1,478 |
-| Remaining code fields without recognized syntax or format | 14 |
+| Successfully interpreted from explicitly named device format | See reproducible audit |
+| Successfully interpreted from distinctive, unlabeled code syntax | See reproducible audit |
+| Documented, version-alternative source groups (never emitted as combined decoded writes) | 27 |
+| Unknown `+` grouping semantics | See reproducible audit |
+| Incomplete or unrecognized code formats | See reproducible audit |
 
-The syntax-only interpretations include **19,380 recognizable Game Genie entries** and **32,472 anonymous eight-hex-digit address/value candidates**. The latter are **not** presented as proven Pro Action Replay cheats. The complete audit is machine-readable, generated during CI, cross-checked against SNES source records, and checksummed in `distribution.json`.
+Syntax-only interpretations distinguish recognizable Game Genie code text from anonymous eight-hex-digit address/value candidates. The latter are **not** presented as proven Pro Action Replay cheats. Exact current counts, including revision alternatives and unresolved `+` groups, come from the generated audit. The complete audit is machine-readable, generated during CI, cross-checked against SNES source records, and checksummed in `distribution.json`.
 
 Interpreted entries are not unique cheats and have **not** been verified against actual ROMs. Do not use these numbers to imply functional compatibility.
 

@@ -6,7 +6,7 @@ This document covers Cheatarium's exported artifacts only. No emulator is modifi
 
 Every successful index build produces the following under `generated/v1/`:
 
-- `catalog.json`: versioned list of consoles and their two bundle types.
+- `catalog.json`: versioned catalog of consoles, per-platform source bundles, advisory game groups and additive evidence indexes.
 - `<platform>.json.gz`: complete, unaltered-in-meaning *parsed source occurrences*, including code entries and byte-level upstream provenance.
 - `games/<platform>.json.gz`: small, **advisory filename-derived game groups** with links back to source occurrence IDs, regions, formats, and counts.
 - `reports/snes-codec-coverage.json`: deterministic SNES device/syntax interpretation coverage audit, including rejected/ambiguous codes and source samples.
