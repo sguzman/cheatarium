@@ -141,6 +141,7 @@ impl Code {
 
     /// Description-only headings are not activatable codes.
     #[must_use]
+    #[must_use]
     pub fn requires_composition_review(&self) -> bool {
         self.composition.as_ref().is_some_and(|x| x.relation == "unresolved"
             || x.relation == "revision-alternatives")
@@ -153,6 +154,7 @@ impl Code {
         false
     }
 
+    #[must_use]
     pub fn is_code(&self) -> bool {
         self.code.as_deref().is_some_and(|s| !s.trim().is_empty())
             && self.role.as_deref() != Some("section-heading")

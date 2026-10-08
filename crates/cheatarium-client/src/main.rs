@@ -14,6 +14,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut effect = None;
     let mut game_key = None;
     let mut category = None;
+    let mut composition_relation = None;
     let mut source_record_id = None;
     let mut varying_descriptions = false;
     let mut declared_format = None;
@@ -29,8 +30,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("repeats") => "repeats",
         Some("tags") => "tags",
         Some("reviews") => "reviews",
+        Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|tags|reviews|compositions|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -42,6 +44,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--category" => category = Some(args.next().ok_or("--category needs an ID")?),
+            "--relation" => composition_relation = Some(args.next().ok_or("--relation needs a value")?),
             "--source-record-id" => {
                 source_record_id = Some(args.next().ok_or("--source-record-id needs an ID")?)
             }
@@ -61,6 +64,12 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
+    if mode != "compositions" && composition_relation.is_some() {
+        return Err("--relation applies only to compositions".into());
+    }
+    if composition_relation.as_deref().is_some_and(|v| !matches!(v, "revision-alternatives" | "unresolved")) {
+        return Err("--relation must be revision-alternatives or unresolved".into());
+    }
     if mode != "reviews" && source_record_id.is_some() {
         return Err("--source-record-id applies only to reviews".into());
     }
@@ -70,8 +79,8 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     if mode != "tags" && mode != "reviews" && category.is_some() {
         return Err("--category applies only to tags or reviews".into());
     }
-    if mode != "repeats" && mode != "tags" && game_key.is_some() {
-        return Err("--game-key applies only to repeats and tags".into());
+    if mode != "repeats" && mode != "tags" && mode != "compositions" && game_key.is_some() {
+        return Err("--game-key applies only to repeats, tags and compositions".into());
     }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
         return Err("--declared-format and --source-id apply only to effects".into());
@@ -101,6 +110,58 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         } else {
             println!("OK: {platform} artifacts match local distribution.json SHA-256 checksums");
             println!("The manifest itself is not authenticated, and cheats remain unverified.");
+        }
+        return Ok(());
+    }
+    if mode == "compositions" {
+        if platform != "snes" {
+            return Err("Source composition evidence currently supports SNES only".into());
+        }
+        let bundle = load_platform(&root, &platform)?;
+        let hits: Vec<_> = bundle.records.iter()
+            .filter(|record| game_key.as_deref()
+                .is_none_or(|key| key == record.candidate_game_key))
+            .flat_map(|record| record.codes.iter().filter_map(move |code| {
+                code.composition.as_ref().map(|composition|
+                    (record, code, composition))
+            }))
+            .filter(|(_, _, group)| composition_relation.as_deref()
+                .is_none_or(|relation| relation == group.relation))
+            .collect();
+        let total = hits.len();
+        let resolved = hits.iter()
+            .filter(|(_, _, composition)| composition.relation == "revision-alternatives")
+            .count();
+        if json {
+            let entries: Vec<_> = hits.into_iter().take(limit)
+                .map(|(record, code, composition)| serde_json::json!({
+                    "source_record_id": record.id,
+                    "candidate_game_key": record.candidate_game_key,
+                    "source_ordinal": code.ordinal,
+                    "raw_source_code": code.code,
+                    "source_provenance": record.provenance,
+                    "composition": composition,
+                    "decoded_combined_writes": code.snes_decode,
+                })).collect();
+            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+                "schema": "cheatarium.source_compositions.v1",
+                "platform": platform,
+                "candidate_game_key_filter": game_key,
+                "relation_filter": composition_relation,
+                "total_groups": total,
+                "evidenced_revision_alternatives": resolved,
+                "unresolved_groups": total - resolved,
+                "rom_match_verified": false,
+                "safe_to_combine_or_auto_apply": false,
+                "entries": entries,
+            }))?);
+        } else {
+            println!("{total} plus-joined SNES source records, {resolved} with revision-alternative evidence");
+            println!("No output authorizes choosing a revision or combining/activating codes.");
+            for (record, code, composition) in hits.into_iter().take(limit) {
+                println!("- {} #{}: {} ({})", record.id, code.ordinal,
+                    code.code.as_deref().unwrap_or(""), composition.relation);
+            }
         }
         return Ok(());
     }
