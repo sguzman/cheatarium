@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "description": "Libretro cheat-directory mapping. import_id selects a native source directory; platform is Cheatarium's canonical console id. Distinct upstream directories can share a platform without merging records.",
+  "systems": [
+    {
+      "import_id": "nes",
+      "platform": "nes",
+      "source_directory": "Nintendo - Nintendo Entertainment System"
+    },
+    {
+      "import_id": "snes",
+      "platform": "snes",
+      "source_directory": "Nintendo - Super Nintendo Entertainment System"
+    },
+    {
+      "import_id": "gb",
+      "platform": "gb",
+      "source_directory": "Nintendo - Game Boy"
+    },
+    {
+      "import_id": "gbc",
+      "platform": "gbc",
+      "source_directory": "Nintendo - Game Boy Color"
+    },
+    {
+      "import_id": "gba",
+      "platform": "gba",
+      "source_directory": "Nintendo - Game Boy Advance"
+    },
+    {
+      "import_id": "n64",
+      "platform": "n64",
+      "source_directory": "Nintendo - Nintendo 64"
+    },
+    {
+      "import_id": "n64-ique",
+      "platform": "n64",
+      "source_directory": "Nintendo - Nintendo 64 (iQue)"
+    },
+    {
+      "import_id": "n64-aleck64",
+      "platform": "n64",
+      "source_directory": "Nintendo - Nintendo 64 (Aleck64)"
+    },
+    {
+      "import_id": "n64-unreleased",
+      "platform": "n64",
+      "source_directory": "Nintendo - Nintendo 64 (Unreleased)"
+    },
+    {
+      "import_id": "nds",
+      "platform": "nds",
+      "source_directory": "Nintendo - Nintendo DS"
+    },
+    {
+      "import_id": "fds",
+      "platform": "fds",
+      "source_directory": "Nintendo - Family Computer Disk System"
+    },
+    {
+      "import_id": "satellaview",
+      "platform": "satellaview",
+      "source_directory": "Nintendo - Satellaview"
+    },
+    {
+      "import_id": "virtual-boy",
+      "platform": "virtual-boy",
+      "source_directory": "Nintendo - Virtual Boy"
+    },
+    {
+      "import_id": "genesis",
+      "platform": "genesis",
+      "source_directory": "Sega - Mega Drive - Genesis"
+    },
+    {
+      "import_id": "sms",
+      "platform": "master-system",
+      "source_directory": "Sega - Master System - Mark III"
+    },
+    {
+      "import_id": "gg",
+      "platform": "game-gear",
+      "source_directory": "Sega - Game Gear"
+    },
+    {
+      "import_id": "saturn",
+      "platform": "saturn",
+      "source_directory": "Sega - Saturn"
+    },
+    {
+      "import_id": "dreamcast",
+      "platform": "dreamcast",
+      "source_directory": "Sega - Dreamcast"
+    },
+    {
+      "import_id": "segacd",
+      "platform": "segacd",
+      "source_directory": "Sega - Mega-CD - Sega CD"
+    },
+    {
+      "import_id": "32x",
+      "platform": "32x",
+      "source_directory": "Sega - 32X"
+    },
+    {
+      "import_id": "sg1000",
+      "platform": "sg1000",
+      "source_directory": "Sega - SG-1000"
+    },
+    {
+      "import_id": "ps1",
+      "platform": "ps1",
+      "source_directory": "Sony - PlayStation"
+    },
+    {
+      "import_id": "psp",
+      "platform": "psp",
+      "source_directory": "Sony - PlayStation Portable"
+    },
+    {
+      "import_id": "atari2600",
+      "platform": "atari-2600",
+      "source_directory": "Atari - 2600"
+    },
+    {
+      "import_id": "atari5200",
+      "platform": "atari-5200",
+      "source_directory": "Atari - 5200"
+    },
+    {
+      "import_id": "atari7800",
+      "platform": "atari-7800",
+      "source_directory": "Atari - 7800"
+    },
+    {
+      "import_id": "jaguar",
+      "platform": "atari-jaguar",
+      "source_directory": "Atari - Jaguar"
+    },
+    {
+      "import_id": "lynx",
+      "platform": "atari-lynx",
+      "source_directory": "Atari - Lynx"
+    },
+    {
+      "import_id": "wonderswan",
+      "platform": "wonderswan",
+      "source_directory": "Bandai - WonderSwan"
+    },
+    {
+      "import_id": "wonderswan-color",
+      "platform": "wonderswan-color",
+      "source_directory": "Bandai - WonderSwan Color"
+    },
+    {
+      "import_id": "colecovision",
+      "platform": "colecovision",
+      "source_directory": "Coleco - ColecoVision"
+    },
+    {
+      "import_id": "intellivision",
+      "platform": "intellivision",
+      "source_directory": "Mattel - Intellivision"
+    },
+    {
+      "import_id": "tg16",
+      "platform": "tg16",
+      "source_directory": "NEC - PC Engine - TurboGrafx 16"
+    },
+    {
+      "import_id": "tgcd",
+      "platform": "tgcd",
+      "source_directory": "NEC - PC Engine CD - TurboGrafx-CD"
+    },
+    {
+      "import_id": "supergrafx",
+      "platform": "supergrafx",
+      "source_directory": "NEC - PC Engine SuperGrafx"
+    },
+    {
+      "import_id": "pc-fx",
+      "platform": "pc-fx",
+      "source_directory": "NEC - PC-FX"
+    },
+    {
+      "import_id": "ngp",
+      "platform": "ngp",
+      "source_directory": "SNK - Neo Geo Pocket"
+    },
+    {
+      "import_id": "ngpc",
+      "platform": "ngpc",
+      "source_directory": "SNK - Neo Geo Pocket Color"
+    },
+    {
+      "import_id": "gx4000",
+      "platform": "gx4000",
+      "source_directory": "Amstrad - GX4000"
+    }
+  ]
+}
