@@ -69,7 +69,15 @@ def build_manifest(root):
                        for p in phrases)):
             raise ValueError("Malformed lexical effect category or phrase")
         ids.add(cid)
-    for rel in ["catalog.json", "reports/snes-codec-coverage.json", taxonomy_rel]:
+    review_rel = "reviews.json"
+    review_doc = checked_json(safe_path(root, review_rel))
+    review_source = checked_json(ROOT / "reviews/v1/claims.json")
+    if (review_doc != review_source
+            or review_doc.get("schema_version") != 1
+            or review_doc.get("format") != "cheatarium-effect-reviews-v1"
+            or not isinstance(review_doc.get("claims"), list)):
+        raise ValueError("Unvalidated or changed effect review registry")
+    for rel in ["catalog.json", "reports/snes-codec-coverage.json", taxonomy_rel, review_rel]:
         path = safe_path(root, rel)
         manifest_files.append({"path": rel, **digest(path)})
         named_paths.add(rel)
@@ -311,6 +319,8 @@ def build_manifest(root):
         "game_candidate_groups": game_groups,
         "repeated_raw_code_groups": repeated_code_groups,
         "lexical_effect_tag_matches": lexical_tag_matches,
+        "reviewed_effect_claims": len(review_doc["claims"]),
+        "observed_effect_claims": sum(c.get("assessment") == "observed" for c in review_doc["claims"]),
         "effect_taxonomy": "cheatarium-effect-signals-en-v1",
         "decoded_snes_code_fields": decoded_snes_entries,
         "files": sorted(manifest_files, key=lambda item: item["path"]),

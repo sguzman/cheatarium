@@ -9,11 +9,12 @@ Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust 
 - `generated/v1/repeats/snes.json.gz`: conservative exact-text repetitions linking back to distinct source files.
 - `generated/v1/tags/snes.json.gz`: English lexical signals from source cheat descriptions.
 - `generated/v1/taxonomy/effects-v1.json`: versioned, inspectable phrases driving those tags.
+- `generated/v1/reviews.json`: independently evidenced gameplay-effect review register (currently empty).
 - `generated/v1/snes.json.gz`: full parsed source occurrences, original code strings, hints and provenance.
 - `generated/v1/identities/snes.json`: separately reviewed ROM hash evidence registry (currently empty; no guessed ROM mappings).
 - `generated/v1/distribution.json`: SHA-256 hashes and byte sizes of all artifacts.
 
-An emulator can download these eight files at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
+An emulator can download these nine files at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
 
 ## Rust client
 
@@ -24,12 +25,16 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- games --db ge
 cargo run --release -p cheatarium-client --bin cheatarium-query -- search --db generated/v1 --platform snes --title 'Chrono Trigger' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- effects --db generated/v1 --platform snes --effect 'Infinite Lives' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- repeats --db generated/v1 --platform snes --game-key super-mario-world --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- reviews --db generated/v1 --platform snes --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- reviews --db generated/v1 --platform snes --category lives --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- tags --db generated/v1 --platform snes --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- tags --db generated/v1 --platform snes --category lives --limit 10 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- effects --db generated/v1 --platform snes --effect 'Infinite' --title 'Mario' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- effects --db generated/v1 --platform snes --effect 'Infinite' --declared-format game-genie --source-id libretro-database --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db generated/v1 --platform snes --json
 ```
+
+`reviews` lists separately sourced reports and exact-ROM test observations, optionally narrowed by original `--source-record-id` or `--category`. It currently returns zero claims; no text-only match has been promoted to a verified cheat. See [effect reviews](EFFECT-REVIEWS.md).
 
 `tags` lists English-language cue counts or, with `--category`, source-record occurrences and the exact phrase that matched. Optional `--game-key` narrows category results to a **filename-derived candidate**. A textual phrase can be negated, misleading or mistranslated and does not establish functionality. See [Effect signals](EFFECT-SIGNALS.md).
 

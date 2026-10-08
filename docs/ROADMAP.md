@@ -43,7 +43,9 @@
 - [x] Add case-insensitive, provenance-preserving cheat-effect text search in the Rust client and CLI.
 - [x] Add exact source-ID and provenance-declared device-format filters for effect search.
 - [x] Publish English lexical effect-category signals with inspectable phrases, source occurrence links, query filters and cross-file validation.
-- [ ] Add separately evidenced gameplay-effect semantic reviews, multilingual cues, and contributor/author attribution.
+- [x] Add independently referenced review registry, validated original-record/ordinal attribution and explicit report-versus-observation evidence with exact-ROM test contexts.
+- [ ] Obtain actual independently documented gameplay-effect claims and cartridge/revision tests; the review register currently contains zero claims.
+- [ ] Expand multilingual phrase cues and contributor/author attribution.
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.
 - [ ] Add a pleasant desktop/game cheat explorer.

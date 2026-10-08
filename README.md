@@ -17,6 +17,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Versioned index](docs/INDEX-V1.md) — deterministic game/source bundles and compatibility rules.
 - [Repeated cheat codes](docs/REPEATED-CODES.md) — source-preserving duplicate-text discovery without unverified game or effect merging.
 - [Effect signals](docs/EFFECT-SIGNALS.md) — browse gameplay-effect descriptions by explicit language cues without unverified functional claims.
+- [Effect reviews](docs/EFFECT-REVIEWS.md) — independently referenced reports and exact-build observations, separate from text search.
 - [Distribution and integrity](docs/DISTRIBUTION.md) — SHA-256 manifests and verified consumer downloads.
 - [SNES codes](docs/SNES-CODES.md) — independently usable Game Genie and Action Replay decoding, with format evidence and a detailed coverage audit.
 - [ROM identity evidence](docs/ROM-IDENTITY.md) — read-only SHA-256 fingerprinting, optional local ZIP inventory scanning, and source-reviewed release claims.
