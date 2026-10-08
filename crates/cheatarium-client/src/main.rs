@@ -66,30 +66,39 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         let bundle = load_platform(root, &platform)?;
         let hits = bundle.search_effect(&effect);
         let title_filter = title.as_deref().map(str::trim).filter(|s| !s.is_empty());
-        let filtered = hits.into_iter().filter(|hit| title_filter.is_none_or(|name| {
-            hit.title_hint.to_lowercase().contains(&name.to_lowercase())
-        })).collect::<Vec<_>>();
+        let filtered = hits
+            .into_iter()
+            .filter(|hit| {
+                title_filter
+                    .is_none_or(|name| hit.title_hint.to_lowercase().contains(&name.to_lowercase()))
+            })
+            .collect::<Vec<_>>();
         let total = filtered.len();
         if json {
-            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-                "schema": "cheatarium.effects.v1",
-                "platform": platform,
-                "effect_query": effect,
-                "title_filter": title_filter,
-                "candidate_only": true,
-                "cheats_activated": false,
-                "total_matches": total,
-                "hits": filtered.into_iter().take(limit).collect::<Vec<_>>()
-            }))?);
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.effects.v1",
+                    "platform": platform,
+                    "effect_query": effect,
+                    "title_filter": title_filter,
+                    "candidate_only": true,
+                    "cheats_activated": false,
+                    "total_matches": total,
+                    "hits": filtered.into_iter().take(limit).collect::<Vec<_>>()
+                }))?
+            );
         } else {
             println!("{total} unverified effect matches for {effect:?} on {platform}");
             println!("Source text search only: no ROM/build matching or code activation.");
             for hit in filtered.into_iter().take(limit) {
-                println!("- {} — {} ({}, #{})",
+                println!(
+                    "- {} — {} ({}, #{})",
                     hit.title_hint,
                     hit.cheat.description.as_deref().unwrap_or("<unnamed>"),
                     hit.raw_filename,
-                    hit.cheat.ordinal);
+                    hit.cheat.ordinal
+                );
             }
         }
         return Ok(());

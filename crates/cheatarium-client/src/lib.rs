@@ -405,9 +405,11 @@ impl Bundle {
                 if !(cheat.is_code() || cheat.is_memory_entry()) {
                     continue;
                 }
-                if !cheat.description.as_deref().is_some_and(|description| {
-                    description.to_lowercase().contains(&needle)
-                }) {
+                if !cheat
+                    .description
+                    .as_deref()
+                    .is_some_and(|description| description.to_lowercase().contains(&needle))
+                {
                     continue;
                 }
                 hits.push(EffectHit {
