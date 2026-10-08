@@ -95,7 +95,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             return Err("--game-key cannot be empty".into());
         }
         let index = load_repeated_codes(root, &platform)?;
-        let hits = index.by_candidate_game_key(&game_key).into_iter()
+        let hits = index
+            .by_candidate_game_key(&game_key)
+            .into_iter()
             .filter(|g| !varying_descriptions || g.description_text_varies)
             .collect::<Vec<_>>();
         let total = hits.len();

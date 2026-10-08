@@ -448,10 +448,14 @@ pub fn load_repeated_codes(root: impl AsRef<Path>, platform: &str) -> Result<Rep
     if index.groups.iter().any(|group| {
         group.confirmed_equivalent_cheat
             || group.verified_rom_compatibility
-            || group.description_variants != group.occurrences.iter()
-                .filter_map(|o| o.description.as_deref())
-                .filter(|s| !s.trim().is_empty())
-                .collect::<std::collections::BTreeSet<_>>().len()
+            || group.description_variants
+                != group
+                    .occurrences
+                    .iter()
+                    .filter_map(|o| o.description.as_deref())
+                    .filter(|s| !s.trim().is_empty())
+                    .collect::<std::collections::BTreeSet<_>>()
+                    .len()
             || group.description_text_varies != (group.description_variants > 1)
             || group.relation != "identical-raw-code-text-within-advisory-filename-bucket"
             || group

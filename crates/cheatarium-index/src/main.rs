@@ -307,7 +307,8 @@ fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> Repeate
         {
             continue;
         }
-        let description_variants = occurrences.iter()
+        let description_variants = occurrences
+            .iter()
             .filter_map(|occ| occ.description.as_deref())
             .filter(|value| !value.trim().is_empty())
             .collect::<BTreeSet<_>>()
@@ -647,8 +648,10 @@ mod tests {
         assert_eq!(index.groups[0].description_variants, 2);
         assert!(index.groups[0].description_text_varies);
         assert!(!index.groups[0].confirmed_equivalent_cheat);
-        assert_eq!(index.groups[0].occurrences[1].description.as_deref(),
-            Some("An unrelated source description"));
+        assert_eq!(
+            index.groups[0].occurrences[1].description.as_deref(),
+            Some("An unrelated source description")
+        );
     }
 
     #[test]
