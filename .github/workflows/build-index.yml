@@ -8,6 +8,7 @@ on:
       - "Cargo.toml"
       - "Cargo.lock"
       - "crates/**"
+      - "tools/build_distribution.py"
       - "platforms/libretro-mapping.json"
       - "sources/libretro-database.json"
       - "archive/libretro/cht/**"
@@ -36,10 +37,17 @@ jobs:
         run: |
           rustup toolchain install stable --profile minimal
           rustup default stable
-      - name: Unit tests
-        run: cargo test --workspace
+      - name: Format Rust sources and run unit tests
+        run: |
+          cargo fmt --all
+          cargo fmt --all -- --check
+          cargo test --workspace
       - name: Build per-console index bundles
         run: cargo run --locked --release -p cheatarium-index -- --root . --out generated/v1
+      - name: Build SHA-256 distribution and validate cross-index links
+        run: |
+          python3 tools/build_distribution.py --write
+          python3 tools/build_distribution.py --check
       - name: Smoke-test exported catalog
         run: |
           python3 - <<'PY'
@@ -82,7 +90,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Cargo.lock generated/v1
+          git add Cargo.lock generated/v1 crates/
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh provenance-aware console index snapshots"
             git push origin HEAD:main
