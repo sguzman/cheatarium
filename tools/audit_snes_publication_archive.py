@@ -64,6 +64,8 @@ def audit_original_archives(root, registry, bundle):
         provenance = record["provenance"]
         if (source_id != provenance["source_id"] + ":" + provenance["upstream_path"]):
             raise ValueError(f"Index source ID disagrees with provenance: {source_id}")
+        if provenance["archive_path"] != "archive/libretro/" + provenance["upstream_path"]:
+            raise ValueError(f"Archived file no longer preserves its upstream path: {source_id}")
         path = archive_path(root, provenance["archive_path"])
         raw = path.read_bytes()
         git_sha = hashlib.sha1(f"blob {len(raw)}".encode() + bytes([0]) + raw).hexdigest()
