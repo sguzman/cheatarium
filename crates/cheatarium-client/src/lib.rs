@@ -508,12 +508,19 @@ mod tests {
     fn source_and_declared_format_filters_never_infer_device_provenance() {
         let bundle = decode_bundle(fixture().as_slice()).unwrap();
         assert_eq!(
-            bundle.search_effect_filtered("Infinite", None, Some("libretro")).len(), 1
+            bundle
+                .search_effect_filtered("Infinite", None, Some("libretro"))
+                .len(),
+            1
         );
-        assert!(bundle.search_effect_filtered("Infinite", None, Some("other")).is_empty());
+        assert!(bundle
+            .search_effect_filtered("Infinite", None, Some("other"))
+            .is_empty());
         // The fixture has an unlabeled device format. Its code must not
         // become Game Genie through text search or an anonymous decoder.
-        assert!(bundle.search_effect_filtered("Infinite", Some("game-genie"), None).is_empty());
+        assert!(bundle
+            .search_effect_filtered("Infinite", Some("game-genie"), None)
+            .is_empty());
         assert!(bundle.search_effect_filtered("", None, None).is_empty());
     }
 

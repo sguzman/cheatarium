@@ -30,7 +30,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--platform" => platform = Some(args.next().ok_or("--platform needs a value")?),
             "--title" => title = Some(args.next().ok_or("--title needs a value")?),
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
-            "--declared-format" => declared_format = Some(args.next().ok_or("--declared-format needs a value")?),
+            "--declared-format" => {
+                declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
+            }
             "--source-id" => source_id = Some(args.next().ok_or("--source-id needs a value")?),
             "--limit" => {
                 limit = args.next().ok_or("--limit needs an integer")?.parse()?;
@@ -46,8 +48,13 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
         return Err("--declared-format and --source-id apply only to effects".into());
     }
-    if declared_format.as_deref().is_some_and(|s: &str| s.trim().is_empty())
-        || source_id.as_deref().is_some_and(|s: &str| s.trim().is_empty()) {
+    if declared_format
+        .as_deref()
+        .is_some_and(|s: &str| s.trim().is_empty())
+        || source_id
+            .as_deref()
+            .is_some_and(|s: &str| s.trim().is_empty())
+    {
         return Err("Effect source and device filters cannot be empty".into());
     }
     if mode == "verify" {
@@ -75,7 +82,11 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             return Err("--effect cannot be empty".into());
         }
         let bundle = load_platform(root, &platform)?;
-        let hits = bundle.search_effect_filtered(&effect, declared_format.as_deref(), source_id.as_deref());
+        let hits = bundle.search_effect_filtered(
+            &effect,
+            declared_format.as_deref(),
+            source_id.as_deref(),
+        );
         let title_filter = title.as_deref().map(str::trim).filter(|s| !s.is_empty());
         let filtered = hits
             .into_iter()
