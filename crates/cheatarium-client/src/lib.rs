@@ -402,6 +402,8 @@ pub struct RepeatedCode {
     pub relation: String,
     pub confirmed_equivalent_cheat: bool,
     pub verified_rom_compatibility: bool,
+    pub description_variants: usize,
+    pub description_text_varies: bool,
     pub occurrences: Vec<RepeatOccurrence>,
 }
 
@@ -446,6 +448,11 @@ pub fn load_repeated_codes(root: impl AsRef<Path>, platform: &str) -> Result<Rep
     if index.groups.iter().any(|group| {
         group.confirmed_equivalent_cheat
             || group.verified_rom_compatibility
+            || group.description_variants != group.occurrences.iter()
+                .filter_map(|o| o.description.as_deref())
+                .filter(|s| !s.trim().is_empty())
+                .collect::<std::collections::BTreeSet<_>>().len()
+            || group.description_text_varies != (group.description_variants > 1)
             || group.relation != "identical-raw-code-text-within-advisory-filename-bucket"
             || group
                 .occurrences
@@ -670,6 +677,8 @@ mod tests {
                 relation: "identical-raw-code-text-within-advisory-filename-bucket".to_owned(),
                 confirmed_equivalent_cheat: false,
                 verified_rom_compatibility: false,
+                description_variants: 0,
+                description_text_varies: false,
                 occurrences: vec![
                     RepeatOccurrence {
                         source_record_id: "a".to_owned(),

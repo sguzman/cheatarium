@@ -27,6 +27,8 @@ The `relation` field is always `identical-raw-code-text-within-advisory-filename
 cargo run --release -p cheatarium-client --bin cheatarium-query -- repeats --db generated/v1 --platform snes --game-key super-mario-world --json
 ```
 
+Each group reports `description_variants` and `description_text_varies`, computed by literal comparison of nonempty original descriptions. This is a prompt for editorial review, not a semantic contradiction. Use `--varying-descriptions` with the `repeats` command to limit output to groups with different source wording.
+
 Each group returns its original string and an occurrence list of `{source_record_id, ordinal, description}`. Resolve `source_record_id` in `generated/v1/snes.json.gz` to recover the full source provenance. The query is non-executing and does not access ROMs.
 
 All generated `repeats/<platform>.json.gz` bundles are checksum-verified by `distribution.json`; `tools/build_distribution.py` validates source references and explicit bucket boundaries. Code text is not deleted or consolidated in either the archive or curated records.

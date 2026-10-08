@@ -127,6 +127,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- repeats \
             --db generated/v1 --platform snes --game-key donkey-kong-country --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["schema"] == "cheatarium.raw_repeats.v1" and q["candidate_only"] and not q["equivalent_effect_verified"] and not q["rom_compatibility_verified"] and not q["cheats_activated"]; assert all(len(g["occurrences"]) >= 2 and not g["confirmed_equivalent_cheat"] for g in q["groups"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- repeats \
+            --db generated/v1 --platform snes --game-key donkey-kong-country --varying-descriptions --json \
+            | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["varying_descriptions_only"]; assert all(g["description_text_varies"] and g["description_variants"] > 1 for g in q["groups"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- games \
             --db generated/v1 --platform snes --title "Donkey Kong Country" --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_candidate_groups"] > 0 and q["candidate_only"]'

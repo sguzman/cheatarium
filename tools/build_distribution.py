@@ -133,6 +133,12 @@ def build_manifest(root):
                     or group.get("verified_rom_compatibility") is not False):
                 raise ValueError(f"Repetition result incorrectly claims verified cheat/ROM identity: {platform}")
             refs = group.get("occurrences", [])
+            descriptions = {r["description"] for r in refs
+                            if isinstance(r.get("description"), str)
+                            and r["description"].strip()}
+            if (group.get("description_variants") != len(descriptions)
+                    or group.get("description_text_varies") is not (len(descriptions) > 1)):
+                raise ValueError(f"Malformed description variation counts: {platform}")
             if not isinstance(refs, list) or len({r["source_record_id"] for r in refs}) < 2:
                 raise ValueError(f"Repetition group lacks distinct source records: {platform}")
             seen_occurrences = set()

@@ -206,6 +206,8 @@ struct RepeatedCode {
     relation: &'static str,
     confirmed_equivalent_cheat: bool,
     verified_rom_compatibility: bool,
+    description_variants: usize,
+    description_text_varies: bool,
     occurrences: Vec<RepeatOccurrence>,
 }
 
@@ -305,6 +307,11 @@ fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> Repeate
         {
             continue;
         }
+        let description_variants = occurrences.iter()
+            .filter_map(|occ| occ.description.as_deref())
+            .filter(|value| !value.trim().is_empty())
+            .collect::<BTreeSet<_>>()
+            .len();
         groups.push(RepeatedCode {
             candidate_game_key,
             region_hint,
@@ -314,6 +321,8 @@ fn build_repeated_code_index(platform: &str, records: &[IndexedFile]) -> Repeate
             relation: "identical-raw-code-text-within-advisory-filename-bucket",
             confirmed_equivalent_cheat: false,
             verified_rom_compatibility: false,
+            description_variants,
+            description_text_varies: description_variants > 1,
             occurrences,
         });
     }
@@ -624,6 +633,22 @@ mod tests {
         assert!(!group.confirmed_equivalent_cheat);
         assert!(!group.verified_rom_compatibility);
         assert_eq!(group.source_code, "DDB4-6F07");
+        assert_eq!(group.description_variants, 1);
+        assert!(!group.description_text_varies);
+    }
+
+    #[test]
+    fn preserve_description_differences_without_claiming_shared_effect() {
+        let a = mock("SMW (USA).cht", "a", Some("USA"), None);
+        let mut b = mock("SMW (USA).cht", "b", Some("USA"), None);
+        b.codes[0].description = Some("An unrelated source description".to_owned());
+        let index = build_repeated_code_index("snes", &[a, b]);
+        assert_eq!(index.groups.len(), 1);
+        assert_eq!(index.groups[0].description_variants, 2);
+        assert!(index.groups[0].description_text_varies);
+        assert!(!index.groups[0].confirmed_equivalent_cheat);
+        assert_eq!(index.groups[0].occurrences[1].description.as_deref(),
+            Some("An unrelated source description"));
     }
 
     #[test]

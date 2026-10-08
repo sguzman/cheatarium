@@ -12,6 +12,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut title = None;
     let mut effect = None;
     let mut game_key = None;
+    let mut varying_descriptions = false;
     let mut declared_format = None;
     let mut source_id = None;
     let mut json = false;
@@ -24,7 +25,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("effects") => "effects",
         Some("repeats") => "repeats",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
+            eprintln!("Usage: cheatarium-query <search|games|effects|repeats|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--game-key super-mario-world] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -35,6 +36,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--title" => title = Some(args.next().ok_or("--title needs a value")?),
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
+            "--varying-descriptions" => varying_descriptions = true,
             "--declared-format" => {
                 declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
             }
@@ -50,6 +52,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
+    if mode != "repeats" && varying_descriptions {
+        return Err("--varying-descriptions applies only to repeats".into());
+    }
     if mode != "repeats" && game_key.is_some() {
         return Err("--game-key applies only to repeats".into());
     }
@@ -90,7 +95,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             return Err("--game-key cannot be empty".into());
         }
         let index = load_repeated_codes(root, &platform)?;
-        let hits = index.by_candidate_game_key(&game_key);
+        let hits = index.by_candidate_game_key(&game_key).into_iter()
+            .filter(|g| !varying_descriptions || g.description_text_varies)
+            .collect::<Vec<_>>();
         let total = hits.len();
         if json {
             println!(
@@ -99,6 +106,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "schema": "cheatarium.raw_repeats.v1",
                     "platform": platform,
                     "candidate_game_key": game_key,
+                    "varying_descriptions_only": varying_descriptions,
                     "candidate_only": true,
                     "cheats_activated": false,
                     "equivalent_effect_verified": false,
@@ -112,9 +120,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             println!("These repeat TEXT only: title, effects and ROM builds are unverified.");
             for hit in hits.into_iter().take(limit) {
                 println!(
-                    "- {} ({} source occurrences, region {:?}, format {:?}, revision {:?})",
+                    "- {} ({} source occurrences, {} distinct descriptions; region {:?}, format {:?}, revision {:?})",
                     hit.source_code,
                     hit.occurrences.len(),
+                    hit.description_variants,
                     hit.region_hint,
                     hit.declared_format,
                     hit.revision_hint
