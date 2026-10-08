@@ -4,6 +4,7 @@
 //! emulator memory writes. Exact original bytes remain in archive/.
 //! Filename-based game associations are suggestions, never ROM verification.
 pub mod effect_signals;
+use serde::Deserialize;
 use cheatarium_codecs::SnesDecoded;
 use serde::Serialize;
 use std::collections::BTreeMap;
@@ -33,6 +34,39 @@ pub struct Code {
     pub native_fields: Vec<NativeField>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub snes_decode: Option<SnesDecoded>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub composition: Option<SourceComposition>,
+}
+
+/// Literal '+' in a source file does not establish simultaneous execution.
+/// An evidenced version-alternative partition is not a mapping to a known ROM.
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub struct SourceComposition {
+    pub relation: String,
+    pub alternatives: Vec<Vec<String>>,
+    pub evidence: Vec<CompositionEvidence>,
+    pub rom_match_verified: bool,
+    pub simultaneous_execution_confirmed: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub struct CompositionEvidence {
+    pub url: String,
+    pub reference: String,
+    pub source_revision: String,
+}
+
+impl SourceComposition {
+    #[must_use]
+    pub fn unresolved() -> Self {
+        Self {
+            relation: "unresolved".to_owned(),
+            alternatives: Vec::new(),
+            evidence: Vec::new(),
+            rom_match_verified: false,
+            simultaneous_execution_confirmed: false,
+        }
+    }
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -115,6 +149,7 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
                 verification: "unverified",
                 native_fields: part.native_fields,
                 snes_decode: None,
+                composition: None,
             }
         })
         .collect();

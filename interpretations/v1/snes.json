@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "platform": "snes",
+  "interpretation": "evidenced-source-code-layout-not-ROM-compatibility",
+  "records": [
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 21,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "C2C9-4E2C+C2C1-4A9C",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "C2C9-4E2C"
+        ],
+        [
+          "C2C1-4A9C"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "entry 1, Infinite lives",
+          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 22,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "D568-C34D+D568-C33D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "D568-C34D"
+        ],
+        [
+          "D568-C33D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "entry 2, Start with 8 lives",
+          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 30,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "1DCC-CA7A+1DCA-C2EA",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "1DCC-CA7A"
+        ],
+        [
+          "1DCA-C2EA"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "entry 10, Almost invincible",
+          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 31,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "DBC1-3D6D+DCC1-34AD+DBC9-340D+DCC1-3D6D",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "DBC1-3D6D",
+          "DCC1-34AD"
+        ],
+        [
+          "DBC9-340D",
+          "DCC1-3D6D"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "entry 11, 10 bananas per extra life",
+          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    },
+    {
+      "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Donkey Kong Country (USA) (Game Genie).cht",
+      "source_ordinal": 35,
+      "source_git_blob_sha": "8c120856fb110a972bd170fd23533ae29c2d1438",
+      "raw_code": "1D6B-3FDD+196A-333D+1D6B-3D6D+166A-3ECD",
+      "relation": "revision-alternatives",
+      "alternatives": [
+        [
+          "1D6B-3FDD",
+          "196A-333D"
+        ],
+        [
+          "1D6B-3D6D",
+          "166A-3ECD"
+        ]
+      ],
+      "evidence": [
+        {
+          "url": "https://gamegenie.com/cheats/gamegenie/snes/donkeykongcountry.html",
+          "reference": "entry 15, Keep animals between stages",
+          "source_revision": "GameGenie.com: Donkey Kong Country SNES Game Genie table (two-version instructions, inspected 2026-10-08)"
+        }
+      ],
+      "rom_match_verified": false,
+      "simultaneous_execution_confirmed": false
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
-use cheatarium_index::{candidate_game_key, format_hint, parse_cht, region_hint, title_hint, Code};
+use cheatarium_index::{
+    candidate_game_key, format_hint, parse_cht, region_hint, title_hint,
+    Code, CompositionEvidence, SourceComposition,
+};
 use flate2::{Compression, GzBuilder};
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet, HashMap};
@@ -404,6 +407,66 @@ fn build_effect_tag_index(
     }
 }
 
+
+#[derive(Deserialize)]
+struct CompositionRegistry {
+    schema_version: u32,
+    platform: String,
+    interpretation: String,
+    records: Vec<CompositionOverride>,
+}
+
+#[derive(Deserialize)]
+struct CompositionOverride {
+    source_record_id: String,
+    source_ordinal: usize,
+    source_git_blob_sha: String,
+    raw_code: String,
+    relation: String,
+    alternatives: Vec<Vec<String>>,
+    evidence: Vec<CompositionEvidence>,
+    rom_match_verified: bool,
+    simultaneous_execution_confirmed: bool,
+}
+
+fn composition_from_override(
+    source: &str, blob: &str, code: &str, candidate: CompositionOverride,
+) -> Result<SourceComposition> {
+    if candidate.source_record_id != source
+        || candidate.source_git_blob_sha != blob
+        || candidate.raw_code != code
+        || candidate.relation != "revision-alternatives"
+        || candidate.rom_match_verified
+        || candidate.simultaneous_execution_confirmed
+        || candidate.alternatives.len() < 2
+        || candidate.evidence.is_empty()
+        || candidate.evidence.iter().any(|e| {
+            !e.url.starts_with("https://")
+                || e.reference.trim().is_empty()
+                || e.source_revision.trim().is_empty()
+        })
+    {
+        return Err("Invalid source composition evidence or attribution".into());
+    }
+    let components: Vec<String> = candidate.alternatives.iter()
+        .flat_map(|group| group.iter().map(|c| c.trim().to_owned()))
+        .collect();
+    let original: Vec<String> = code.split('+').map(|c| c.trim().to_owned()).collect();
+    if candidate.alternatives.iter().any(|group| group.is_empty()
+        || group.iter().any(|c| c.trim().is_empty() || c.trim() != c))
+        || components != original
+    {
+        return Err("Source composition alternatives do not partition original code".into());
+    }
+    Ok(SourceComposition {
+        relation: candidate.relation,
+        alternatives: candidate.alternatives,
+        evidence: candidate.evidence,
+        rom_match_verified: false,
+        simultaneous_execution_confirmed: false,
+    })
+}
+
 fn checked_path(root: &Path, rel: &str) -> Result<PathBuf> {
     let path = Path::new(rel);
     if path
@@ -475,6 +538,23 @@ fn run() -> Result<()> {
         }
     }
 
+    let composition_path = root.join("interpretations/v1/snes.json");
+    let source_compositions: CompositionRegistry =
+        serde_json::from_slice(&fs::read(&composition_path)?)?;
+    if source_compositions.schema_version != 1
+        || source_compositions.platform != "snes"
+        || source_compositions.interpretation != "evidenced-source-code-layout-not-ROM-compatibility"
+    {
+        return Err("Unsupported SNES source-composition registry".into());
+    }
+    let mut overrides: BTreeMap<(String, usize), CompositionOverride> = BTreeMap::new();
+    for item in source_compositions.records {
+        let key = (item.source_record_id.clone(), item.source_ordinal);
+        if overrides.insert(key, item).is_some() {
+            return Err("Duplicate source composition override".into());
+        }
+    }
+    let scan_snes = wanted.as_ref().is_none_or(|systems| systems.contains("snes"));
     let mut by_platform: BTreeMap<String, Vec<IndexedFile>> = BTreeMap::new();
     for item in manifest.files {
         let Some(rest) = item.upstream_path.strip_prefix("cht/") else {
@@ -497,6 +577,7 @@ fn run() -> Result<()> {
         let content = fs::read(&path)?;
         let mut parsed = parse_cht(&String::from_utf8_lossy(&content));
         let stem = filename.strip_suffix(".cht").unwrap_or(filename);
+        let source_id = format!("{}:{}", manifest.id, item.upstream_path);
         if system.platform == "snes" {
             let declared_format = format_hint(stem);
             for code in &mut parsed.codes {
@@ -504,6 +585,22 @@ fn run() -> Result<()> {
                     continue;
                 }
                 if let Some(source_code) = &code.code {
+                    let override_entry = overrides.remove(&(source_id.clone(), code.ordinal));
+                    if source_code.contains('+') {
+                        code.composition = Some(match override_entry {
+                            Some(entry) => composition_from_override(
+                                &source_id, &item.git_blob_sha, source_code, entry,
+                            )?,
+                            None => SourceComposition::unresolved(),
+                        });
+                    } else if override_entry.is_some() {
+                        return Err("Composition override must reference a '+'-joined source code".into());
+                    }
+                    // Known revision-alternatives are not a simultaneous set
+                    // of writes: preserve only the documented per-version groups.
+                    if code.composition.as_ref().is_some_and(|c| c.relation == "revision-alternatives") {
+                        continue;
+                    }
                     // Unknown filename formats never override declared formats.
                     // An unlabelled code is interpreted only if its entire
                     // compound text uses a single unambiguous syntax.
@@ -516,7 +613,7 @@ fn run() -> Result<()> {
         }
         let guess = title_hint(stem);
         let record = IndexedFile {
-            id: format!("{}:{}", manifest.id, item.upstream_path),
+            id: source_id,
             candidate_game_key: candidate_game_key(&guess),
             title_hint: guess,
             identity_confidence: "filename_heuristic_only",
@@ -542,7 +639,12 @@ fn run() -> Result<()> {
             .push(record);
     }
 
+    if scan_snes && !overrides.is_empty() {
+        return Err(format!("{} unreferenced SNES composition overrides", overrides.len()).into());
+    }
     fs::create_dir_all(&out)?;
+    fs::create_dir_all(out.join("interpretations"))?;
+    fs::copy(&composition_path, out.join("interpretations/snes.json"))?;
     fs::create_dir_all(out.join("games"))?;
     fs::create_dir_all(out.join("tags"))?;
     fs::create_dir_all(out.join("taxonomy"))?;

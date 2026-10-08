@@ -90,6 +90,24 @@ pub struct Code {
     pub native_fields: Vec<NativeField>,
     #[serde(default)]
     pub snes_decode: Option<SnesDecoded>,
+    #[serde(default)]
+    pub composition: Option<SourceComposition>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct SourceComposition {
+    pub relation: String,
+    pub alternatives: Vec<Vec<String>>,
+    pub evidence: Vec<CompositionEvidence>,
+    pub rom_match_verified: bool,
+    pub simultaneous_execution_confirmed: bool,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct CompositionEvidence {
+    pub url: String,
+    pub reference: String,
+    pub source_revision: String,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -123,6 +141,18 @@ impl Code {
 
     /// Description-only headings are not activatable codes.
     #[must_use]
+    pub fn requires_composition_review(&self) -> bool {
+        self.composition.as_ref().is_some_and(|x| x.relation == "unresolved"
+            || x.relation == "revision-alternatives")
+    }
+
+    /// A source '+' character is NOT a declaration of an executable combination.
+    /// No version-alternative record is safe to flatten into combined writes.
+    #[must_use]
+    pub fn may_consumer_treat_as_verified_combination(&self) -> bool {
+        false
+    }
+
     pub fn is_code(&self) -> bool {
         self.code.as_deref().is_some_and(|s| !s.trim().is_empty())
             && self.role.as_deref() != Some("section-heading")
@@ -274,6 +304,9 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
         }
         artifacts.push(tag_path.clone());
         artifacts.push("taxonomy/effects-v1.json".to_owned());
+    }
+    if platform == "snes" {
+        artifacts.push("interpretations/snes.json".to_owned());
     }
     if let Some(identity_path) = &entry.identity_artifact {
         if identity_path != &format!("identities/{platform}.json") {
