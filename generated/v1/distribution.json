@@ -286,6 +286,11 @@
       "size_bytes": 1490
     },
     {
+      "path": "interpretations/snes-published-groups.json",
+      "sha256": "8376de09601e96d1403f49b1526d1ad365b8119b66509c27ca1aa5c4d6e1e5b9",
+      "size_bytes": 7695
+    },
+    {
       "path": "interpretations/snes.json",
       "sha256": "134606ba28ba2556c6e3121a7609dded8f2b77d98033cbaaabff723d04d63d8d",
       "size_bytes": 24497
@@ -522,8 +527,8 @@
     },
     {
       "path": "reports/snes-composition-review-queue.json",
-      "sha256": "82d18ecc2128c50c8282193a0029d1ab7492a07ecafc56d562e5dd8b40543b96",
-      "size_bytes": 132540
+      "sha256": "d44e5676c5b8415bdb79765d541b611e002e1d2f5eff4f7f68f9c2abbc95b5bf",
+      "size_bytes": 142458
     },
     {
       "path": "reviews.json",
