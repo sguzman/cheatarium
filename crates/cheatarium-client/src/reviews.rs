@@ -1,8 +1,8 @@
 //! Source-bound reviews of claimed cheat effects, independent of lexical tags.
 //! Reports, observed runs, and failed reproduction attempts remain distinct.
 //! No review result grants permission to auto-activate or assert universal ROM compatibility.
-use crate::{load_platform, Result};
 use crate::identity::sha256_valid;
+use crate::{load_platform, Result};
 use serde::{Deserialize, Serialize};
 use std::collections::BTreeSet;
 use std::fs::File;
@@ -60,8 +60,12 @@ fn nonblank(s: &str) -> bool {
 
 fn date_shape(date: &str) -> bool {
     let b = date.as_bytes();
-    b.len() == 10 && b[4] == b'-' && b[7] == b'-'
-        && b.iter().enumerate().all(|(i, c)| i == 4 || i == 7 || c.is_ascii_digit())
+    b.len() == 10
+        && b[4] == b'-'
+        && b[7] == b'-'
+        && b.iter()
+            .enumerate()
+            .all(|(i, c)| i == 4 || i == 7 || c.is_ascii_digit())
 }
 
 impl EffectReviewRegistry {
@@ -83,21 +87,29 @@ impl EffectReviewRegistry {
             if claim.platform != bundle.platform {
                 return Err("Unexpected platform in scoped effect review registry".into());
             }
-            if !nonblank(&claim.id) || !categories.contains(&claim.effect_category)
-                || !nonblank(&claim.reviewed_by) || !nonblank(&claim.assessment_note)
+            if !nonblank(&claim.id)
+                || !categories.contains(&claim.effect_category)
+                || !nonblank(&claim.reviewed_by)
+                || !nonblank(&claim.assessment_note)
                 || !date_shape(&claim.review_date)
                 || claim.evidence.is_empty()
-                || !matches!(claim.assessment.as_str(), "reported" | "observed" | "not-reproduced")
+                || !matches!(
+                    claim.assessment.as_str(),
+                    "reported" | "observed" | "not-reproduced"
+                )
             {
                 return Err("Incomplete or unsupported effect assessment".into());
             }
             if claim.evidence.iter().any(|e| {
-                !e.url.starts_with("https://") || !nonblank(&e.reference)
+                !e.url.starts_with("https://")
+                    || !nonblank(&e.reference)
                     || !nonblank(&e.source_revision)
             }) {
                 return Err("Missing public effect assessment evidence".into());
             }
-            let record = bundle.records.iter()
+            let record = bundle
+                .records
+                .iter()
                 .find(|record| record.id == claim.source_record_id)
                 .ok_or("Reviewed cheat source record is missing")?;
             if record.provenance.revision != claim.source_revision
@@ -105,7 +117,10 @@ impl EffectReviewRegistry {
             {
                 return Err("Reviewed cheat source revision or blob has changed".into());
             }
-            let code = record.codes.iter().find(|c| c.ordinal == claim.source_ordinal)
+            let code = record
+                .codes
+                .iter()
+                .find(|c| c.ordinal == claim.source_ordinal)
                 .ok_or("Reviewed original cheat ordinal is missing")?;
             if !(code.is_code() || code.is_memory_entry()) {
                 return Err("A section heading cannot be a reviewed cheat".into());
@@ -132,12 +147,18 @@ impl EffectReviewRegistry {
 
     #[must_use]
     pub fn by_source_record(&self, source_id: &str) -> Vec<&EffectReview> {
-        self.claims.iter().filter(|c| c.source_record_id == source_id).collect()
+        self.claims
+            .iter()
+            .filter(|c| c.source_record_id == source_id)
+            .collect()
     }
 
     #[must_use]
     pub fn by_effect_category(&self, category: &str) -> Vec<&EffectReview> {
-        self.claims.iter().filter(|c| c.effect_category == category).collect()
+        self.claims
+            .iter()
+            .filter(|c| c.effect_category == category)
+            .collect()
     }
 }
 
@@ -149,7 +170,8 @@ pub fn load_effect_reviews(root: impl AsRef<Path>, platform: &str) -> Result<Eff
     let bundle = load_platform(root, platform)?;
     let mut content = Vec::new();
     File::open(root.join("reviews.json"))?
-        .take(MAX_REVIEW_REGISTRY + 1).read_to_end(&mut content)?;
+        .take(MAX_REVIEW_REGISTRY + 1)
+        .read_to_end(&mut content)?;
     if content.len() as u64 > MAX_REVIEW_REGISTRY {
         return Err("Effect review registry exceeds allowed size".into());
     }
@@ -159,15 +181,21 @@ pub fn load_effect_reviews(root: impl AsRef<Path>, platform: &str) -> Result<Eff
     }
     let mut taxonomy = Vec::new();
     File::open(root.join("taxonomy/effects-v1.json"))?
-        .take(1024 * 1024).read_to_end(&mut taxonomy)?;
+        .take(1024 * 1024)
+        .read_to_end(&mut taxonomy)?;
     let taxonomy: serde_json::Value = serde_json::from_slice(&taxonomy)?;
-    let categories: BTreeSet<String> = taxonomy["categories"].as_array()
+    let categories: BTreeSet<String> = taxonomy["categories"]
+        .as_array()
         .ok_or("Invalid effect taxonomy")?
         .iter()
         .filter_map(|entry| entry["id"].as_str().map(str::to_owned))
         .collect();
     let data = EffectReviewRegistry {
-        claims: data.claims.into_iter().filter(|c| c.platform == platform).collect(),
+        claims: data
+            .claims
+            .into_iter()
+            .filter(|c| c.platform == platform)
+            .collect(),
         ..data
     };
     data.validate_for_platform(&bundle, &categories)?;
@@ -197,33 +225,41 @@ mod tests {
                   "license":"test","archive_path":"archive/test","upstream_path":"test.cht"}
             }]
         });
-        let mut gz = GzBuilder::new().mtime(0).write(Vec::new(), Compression::fast());
-        gz.write_all(serde_json::to_string(&raw).unwrap().as_bytes()).unwrap();
+        let mut gz = GzBuilder::new()
+            .mtime(0)
+            .write(Vec::new(), Compression::fast());
+        gz.write_all(serde_json::to_string(&raw).unwrap().as_bytes())
+            .unwrap();
         decode_bundle(gz.finish().unwrap().as_slice()).unwrap()
     }
 
     fn claim() -> EffectReview {
         EffectReview {
-            id:"fixture-review".to_owned(), platform:"snes".to_owned(),
-            source_record_id:"source:fixture".to_owned(), source_ordinal:1,
-            source_revision:"r1".to_owned(),
-            source_git_blob_sha:"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb".to_owned(),
-            effect_category:"lives".to_owned(), assessment:"reported".to_owned(),
-            reviewed_by:"fixture".to_owned(), review_date:"2026-10-08".to_owned(),
-            assessment_note:"Reported by another source, not tested".to_owned(),
-            evidence:vec![ReviewEvidence {
-                url:"https://example.org/ref".to_owned(),
-                reference:"entry 1".to_owned(),source_revision:"fixture-r1".to_owned(),
+            id: "fixture-review".to_owned(),
+            platform: "snes".to_owned(),
+            source_record_id: "source:fixture".to_owned(),
+            source_ordinal: 1,
+            source_revision: "r1".to_owned(),
+            source_git_blob_sha: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb".to_owned(),
+            effect_category: "lives".to_owned(),
+            assessment: "reported".to_owned(),
+            reviewed_by: "fixture".to_owned(),
+            review_date: "2026-10-08".to_owned(),
+            assessment_note: "Reported by another source, not tested".to_owned(),
+            evidence: vec![ReviewEvidence {
+                url: "https://example.org/ref".to_owned(),
+                reference: "entry 1".to_owned(),
+                source_revision: "fixture-r1".to_owned(),
             }],
-            test_context:None,
+            test_context: None,
         }
     }
 
     fn registry(claims: Vec<EffectReview>) -> EffectReviewRegistry {
         EffectReviewRegistry {
-            schema_version:1,
-            format:"cheatarium-effect-reviews-v1".to_owned(),
-            description:"fixture".to_owned(),
+            schema_version: 1,
+            format: "cheatarium-effect-reviews-v1".to_owned(),
+            description: "fixture".to_owned(),
             claims,
         }
     }
@@ -232,15 +268,20 @@ mod tests {
     fn empty_review_registry_cannot_promote_imported_cheats() {
         let data = registry(vec![]);
         let categories = BTreeSet::from(["lives".to_owned()]);
-        data.validate_for_platform(&fixture_bundle(), &categories).unwrap();
+        data.validate_for_platform(&fixture_bundle(), &categories)
+            .unwrap();
         assert!(data.by_effect_category("lives").is_empty());
     }
 
     #[test]
     fn externally_reported_effect_is_not_an_observed_run() {
         let data = registry(vec![claim()]);
-        data.validate_for_platform(&fixture_bundle(), &BTreeSet::from(["lives".to_owned()])).unwrap();
-        assert_eq!(data.by_source_record("source:fixture")[0].assessment, "reported");
+        data.validate_for_platform(&fixture_bundle(), &BTreeSet::from(["lives".to_owned()]))
+            .unwrap();
+        assert_eq!(
+            data.by_source_record("source:fixture")[0].assessment,
+            "reported"
+        );
         assert!(data.claims[0].test_context.is_none());
     }
 
@@ -249,22 +290,38 @@ mod tests {
         let mut c = claim();
         c.assessment = "observed".to_owned();
         let valid = ReviewTestContext {
-            rom_sha256:"a".repeat(64), emulator:"Fixture Emulator".to_owned(),
-            emulator_version:"0.1".to_owned(), code_device_or_core:"Fixture core".to_owned(),
-            test_date:"2026-10-08".to_owned(), outcome:"observed".to_owned(),
-            observed_behavior:"Lives counter remained stable".to_owned(),
+            rom_sha256: "a".repeat(64),
+            emulator: "Fixture Emulator".to_owned(),
+            emulator_version: "0.1".to_owned(),
+            code_device_or_core: "Fixture core".to_owned(),
+            test_date: "2026-10-08".to_owned(),
+            outcome: "observed".to_owned(),
+            observed_behavior: "Lives counter remained stable".to_owned(),
         };
         let categories = BTreeSet::from(["lives".to_owned()]);
-        assert!(registry(vec![c.clone()]).validate_for_platform(&fixture_bundle(), &categories).is_err());
+        assert!(registry(vec![c.clone()])
+            .validate_for_platform(&fixture_bundle(), &categories)
+            .is_err());
         c.test_context = Some(valid.clone());
-        registry(vec![c.clone()]).validate_for_platform(&fixture_bundle(), &categories).unwrap();
+        registry(vec![c.clone()])
+            .validate_for_platform(&fixture_bundle(), &categories)
+            .unwrap();
         c.source_ordinal = 99;
-        assert!(registry(vec![c.clone()]).validate_for_platform(&fixture_bundle(), &categories).is_err());
+        assert!(registry(vec![c.clone()])
+            .validate_for_platform(&fixture_bundle(), &categories)
+            .is_err());
         c.source_ordinal = 1;
         c.source_git_blob_sha = "altered".to_owned();
-        assert!(registry(vec![c.clone()]).validate_for_platform(&fixture_bundle(), &categories).is_err());
+        assert!(registry(vec![c.clone()])
+            .validate_for_platform(&fixture_bundle(), &categories)
+            .is_err());
         c.source_git_blob_sha = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb".to_owned();
-        c.test_context = Some(ReviewTestContext { outcome: "not-reproduced".to_owned(), ..valid });
-        assert!(registry(vec![c]).validate_for_platform(&fixture_bundle(), &categories).is_err());
+        c.test_context = Some(ReviewTestContext {
+            outcome: "not-reproduced".to_owned(),
+            ..valid
+        });
+        assert!(registry(vec![c])
+            .validate_for_platform(&fixture_bundle(), &categories)
+            .is_err());
     }
 }

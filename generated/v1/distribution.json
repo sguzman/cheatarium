@@ -7,6 +7,8 @@
   "game_candidate_groups": 16825,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 65495,
+  "reviewed_effect_claims": 0,
+  "observed_effect_claims": 0,
   "effect_taxonomy": "cheatarium-effect-signals-en-v1",
   "decoded_snes_code_fields": 66602,
   "files": [
@@ -509,6 +511,11 @@
       "path": "reports/snes-codec-coverage.json",
       "sha256": "e5c858b33636221ea9a33fa35f77b41993af72494871a42af193aa6d25dc0dbc",
       "size_bytes": 3621
+    },
+    {
+      "path": "reviews.json",
+      "sha256": "b147406b77e34d56f7f8bf22b23b3b2e504c2d8a60d7c297f35d332c28247581",
+      "size_bytes": 244
     },
     {
       "path": "satellaview.json.gz",

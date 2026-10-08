@@ -1,8 +1,7 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
 use cheatarium_client::{
     load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
-    verify_platform_distribution,
-    reviews::load_effect_reviews,
+    reviews::load_effect_reviews, verify_platform_distribution,
 };
 use std::env;
 use std::error::Error;
@@ -43,7 +42,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--category" => category = Some(args.next().ok_or("--category needs an ID")?),
-            "--source-record-id" => source_record_id = Some(args.next().ok_or("--source-record-id needs an ID")?),
+            "--source-record-id" => {
+                source_record_id = Some(args.next().ok_or("--source-record-id needs an ID")?)
+            }
             "--varying-descriptions" => varying_descriptions = true,
             "--declared-format" => {
                 declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
@@ -105,31 +106,48 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     }
     if mode == "reviews" {
         let index = load_effect_reviews(&root, &platform)?;
-        let claims = index.claims.iter()
-            .filter(|claim| category.as_deref().is_none_or(|id| claim.effect_category == id))
-            .filter(|claim| source_record_id.as_deref()
-                .is_none_or(|id| claim.source_record_id == id))
+        let claims = index
+            .claims
+            .iter()
+            .filter(|claim| {
+                category
+                    .as_deref()
+                    .is_none_or(|id| claim.effect_category == id)
+            })
+            .filter(|claim| {
+                source_record_id
+                    .as_deref()
+                    .is_none_or(|id| claim.source_record_id == id)
+            })
             .collect::<Vec<_>>();
         let total = claims.len();
         if json {
-            println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-                "schema": "cheatarium.effect_reviews.v1",
-                "platform": platform,
-                "category_filter": category,
-                "source_record_id_filter": source_record_id,
-                "claims": claims.into_iter().take(limit).collect::<Vec<_>>(),
-                "total_claims": total,
-                "reviews_are_evidence_not_execution_permission": true,
-                "unverified_imports_promoted": false,
-                "cheats_activated": false,
-            }))?);
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.effect_reviews.v1",
+                    "platform": platform,
+                    "category_filter": category,
+                    "source_record_id_filter": source_record_id,
+                    "claims": claims.into_iter().take(limit).collect::<Vec<_>>(),
+                    "total_claims": total,
+                    "reviews_are_evidence_not_execution_permission": true,
+                    "unverified_imports_promoted": false,
+                    "cheats_activated": false,
+                }))?
+            );
         } else {
             println!("{total} separately evidenced effect reviews on {platform}");
             println!("These are source-bound reports/observations, not universal compatibility.");
             for claim in claims.into_iter().take(limit) {
-                println!("- {}: {} ({}, original {} #{})",
-                    claim.id, claim.effect_category, claim.assessment,
-                    claim.source_record_id, claim.source_ordinal);
+                println!(
+                    "- {}: {} ({}, original {} #{})",
+                    claim.id,
+                    claim.effect_category,
+                    claim.assessment,
+                    claim.source_record_id,
+                    claim.source_ordinal
+                );
             }
         }
         return Ok(());
