@@ -1,3 +1,4 @@
+use cheatarium_codecs::decode_snes;
 use cheatarium_index::{candidate_game_key, format_hint, parse_cht, region_hint, title_hint, Code};
 use flate2::{Compression, GzBuilder};
 use serde::{Deserialize, Serialize};
@@ -82,6 +83,7 @@ struct CatalogItem {
     source_files: usize,
     code_fields: usize,
     native_memory_entries: usize,
+    decoded_snes_code_fields: usize,
     warnings: usize,
 }
 
@@ -272,8 +274,21 @@ fn run() -> Result<()> {
         }
         let path = checked_path(&root, &item.archive_path)?;
         let content = fs::read(&path)?;
-        let parsed = parse_cht(&String::from_utf8_lossy(&content));
+        let mut parsed = parse_cht(&String::from_utf8_lossy(&content));
         let stem = filename.strip_suffix(".cht").unwrap_or(filename);
+        if system.platform == "snes" {
+            if let Some(device_format) = format_hint(stem) {
+                for code in &mut parsed.codes {
+                    if code.role != "code" {
+                        continue;
+                    }
+                    if let Some(source_code) = &code.code {
+                        // Reject any wildcard or malformed compound as a whole.
+                        code.snes_decode = decode_snes(device_format, source_code).ok();
+                    }
+                }
+            }
+        }
         let guess = title_hint(stem);
         let record = IndexedFile {
             id: format!("{}:{}", manifest.id, item.upstream_path),
@@ -317,6 +332,8 @@ fn run() -> Result<()> {
             .flat_map(|x| &x.codes)
             .filter(|x| x.role == "memory-entry")
             .count();
+        let decoded_snes_code_fields: usize = records.iter()
+            .flat_map(|x| &x.codes).filter(|x| x.snes_decode.is_some()).count();
         let warnings: usize = records.iter().map(|x| x.parse_warnings.len()).sum();
         let source_files = records.len();
         let filename = format!("{platform}.json.gz");
@@ -353,6 +370,7 @@ fn run() -> Result<()> {
             source_files,
             code_fields,
             native_memory_entries,
+            decoded_snes_code_fields,
             warnings,
         });
     }

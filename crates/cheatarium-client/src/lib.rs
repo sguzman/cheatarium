@@ -35,6 +35,8 @@ pub struct CatalogEntry {
     pub code_fields: usize,
     #[serde(default)]
     pub native_memory_entries: usize,
+    #[serde(default)]
+    pub decoded_snes_code_fields: usize,
     pub warnings: usize,
 }
 
@@ -73,6 +75,22 @@ pub struct Code {
     pub role: Option<String>,
     #[serde(default)]
     pub native_fields: Vec<NativeField>,
+    #[serde(default)]
+    pub snes_decode: Option<SnesDecoded>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct SnesDecoded {
+    pub format: String,
+    pub address_space: String,
+    pub compatibility: String,
+    pub writes: Vec<SnesWrite>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct SnesWrite {
+    pub address_hex: String,
+    pub value_hex: String,
 }
 
 #[derive(Debug, Deserialize, Serialize)]

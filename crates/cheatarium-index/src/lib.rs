@@ -4,6 +4,7 @@
 //! emulator memory writes. Exact original bytes remain in archive/.
 //! Filename-based game associations are suggestions, never ROM verification.
 use serde::Serialize;
+use cheatarium_codecs::SnesDecoded;
 use std::collections::BTreeMap;
 
 #[derive(Debug, Default)]
@@ -29,6 +30,8 @@ pub struct Code {
     pub verification: &'static str,
     pub role: &'static str,
     pub native_fields: Vec<NativeField>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub snes_decode: Option<SnesDecoded>,
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -110,6 +113,7 @@ pub fn parse_cht(text: &str) -> ParsedCheats {
                 source_enabled: part.source_enabled,
                 verification: "unverified",
                 native_fields: part.native_fields,
+                snes_decode: None,
             }
         })
         .collect();

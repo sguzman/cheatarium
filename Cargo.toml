@@ -1,3 +1,3 @@
 [workspace]
-members = ["crates/cheatarium-index", "crates/cheatarium-client"]
+members = ["crates/cheatarium-index", "crates/cheatarium-client", "crates/cheatarium-codecs"]
 resolver = "2"
