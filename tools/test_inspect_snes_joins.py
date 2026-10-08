@@ -106,6 +106,34 @@ def test():
     altered = copy.deepcopy(bundle)
     altered["records"][0]["codes"][0]["composition"]["rom_match_verified"] = True
     rejects(lambda: dossier(altered, "example"))
+    publication = {
+        "schema_version": 1, "platform": "snes",
+        "claim_type": "externally-published-multi-part-source-code-text",
+        "evidence_limit": "Publication is not verified execution",
+        "records": [{
+            "candidate_game_key": "example", "source_record_id": "source-b",
+            "source_git_blob_sha": "f" * 40, "source_ordinal": 9,
+            "raw_code": "AAAA+BBBB",
+            "published_text_segments": ["AAAA", "BBBB"],
+            "published_effect_description": "Original published effect",
+            "publication": {"url": "https://example.org/faq",
+                            "reference": "Example 9", "source_revision": "undated"},
+            "execution_observed": False, "rom_match_verified": False,
+            "safe_to_auto_apply": False,
+        }],
+    }
+    witnessed = dossier(bundle, "example", publication_registry=publication)
+    assert witnessed["historical_publication_witnesses"] == 1
+    match = next(x for x in witnessed["occurrences"] if x["source_ordinal"] == 9)
+    assert match["historical_publication_witness"]["publication"]["reference"] == "Example 9"
+    assert not match["historical_publication_witness"]["execution_observed"]
+    assert not match["historical_publication_witness"]["safe_to_auto_apply"]
+    missing = dossier(bundle, "other-game", publication_registry=publication)
+    assert missing["historical_publication_witnesses"] == 0
+    altered_publication = copy.deepcopy(publication)
+    altered_publication["records"][0]["raw_code"] = "AAA+WRONG"
+    rejects(lambda: dossier(bundle, "example", publication_registry=altered_publication))
+
     print("OK: complete, paginated, source-exact SNES dossiers with no invented code semantics")
 
 
