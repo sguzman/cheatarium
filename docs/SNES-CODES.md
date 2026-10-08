@@ -38,6 +38,19 @@ The reproducible [SNES composition review queue](../generated/v1/reports/snes-co
 
 This is an evidence-acquisition priority list, **not** a claim that the highest-ranked game has the most broken cheats, nor that `+` means simultaneous writes. It can be regenerated and independently checked by `tools/build_snes_review_queue.py`, with synthetic adversarial tests in CI.
 
+### Inspect full source dossiers
+
+The top-100 queue carries only three original examples per candidate. For an exhaustive, **read-only** inspection of one candidate, query the pinned SNES source bundle directly:
+
+```sh
+python3 tools/inspect_snes_joins.py --game-key push-over --limit 50
+python3 tools/inspect_snes_joins.py --game-key push-over --offset 50 --limit 50
+```
+
+The JSON dossier gives the total unresolved source-occurrence count, distinct **literal** code strings, contributing source-record counts, and a histogram of plus-separated text segment lengths. Each paginated occurrence preserves its original description, exact code text, original ordinal, title/region/device hints, source-enabled flag, verification label and upstream provenance, including Git blob SHA. Use `--source-record-id '...'` to examine just one original source; page size is capped at 500, and ordering is stable by source record ID and original ordinal.
+
+Identical text strings are not automatically equivalent cheats. A text segment is **not** a verified device write or a recommended code partition. Historical code relationships, game identity, ROM compatibility and activation remain unverified. This inspection tool does not modify indexes, fetch ROMs, decode joined programs, or execute cheats.
+
 ## Supported formats
 
 - **Game Genie:** one 4+4-character hyphenated SNES code per component (e.g. `DDB4-6F07`); the known Game Genie alphabet and 24-bit address-bit permutation are applied strictly.
