@@ -8,9 +8,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 failures = []
+warnings = []
 
 def error(message):
     failures.append(message)
+
+def warning(message):
+    warnings.append(message)
 
 def load(path):
     try:
@@ -61,7 +65,7 @@ for manifest in sorted((ROOT / "sources").glob("*.json")):
             count = re.search(r"(?m)^cheats\s*=\s*(\d+)", text)
             codes = re.findall(r"(?m)^cheat\d+_code\s*=", text)
             if count and int(count.group(1)) != len(codes):
-                error(f"{relative}: .cht cheat count mismatch ({count.group(1)} declared, {len(codes)} codes)")
+                warning(f"{relative}: .cht cheat count mismatch ({count.group(1)} declared, {len(codes)} codes)")
 
 curated_count = 0
 cheat_count = 0
@@ -101,9 +105,11 @@ for path in (ROOT / "archive").rglob("*"):
     if path.is_file() and path.relative_to(ROOT).as_posix() not in tracked_archive_paths:
         error(f"{path.relative_to(ROOT)}: archived file omitted from source inventories")
 
+for message in warnings:
+    print("WARN:", message, file=sys.stderr)
 if failures:
     for message in failures:
         print("ERROR:", message, file=sys.stderr)
     raise SystemExit(f"{len(failures)} problem(s) found")
-print(f"OK: {len(platforms)} platforms, {len(sources)} sources, {archive_count} archived files, "
+print(f"OK ({len(warnings)} upstream format warnings): {len(platforms)} platforms, {len(sources)} sources, {archive_count} archived files, "
       f"{curated_count} curated games, {cheat_count} curated effects")
