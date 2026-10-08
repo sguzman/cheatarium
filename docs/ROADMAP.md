@@ -44,7 +44,9 @@
 - [x] Add exact source-ID and provenance-declared device-format filters for effect search.
 - [x] Publish English lexical effect-category signals with inspectable phrases, source occurrence links, query filters and cross-file validation.
 - [x] Add independently referenced review registry, validated original-record/ordinal attribution and explicit report-versus-observation evidence with exact-ROM test contexts.
-- [ ] Obtain actual independently documented gameplay-effect claims and cartridge/revision tests; the review register currently contains zero claims.
+- [x] Ground the first five external `reported` claims in dated historic cheat documents, with specific original source file blobs and ordinals (SNES DKC and NES DK).
+- [ ] Acquire empirical cheat tests tied to exact ROM/build SHA-256 and version-specific device/core semantics; no empirical observation claims exist yet.
+- [ ] Review external version-alternative codes encoded as `+`-joined strings in imported source data before any consumer treats them as simultaneous writes.
 - [ ] Expand multilingual phrase cues and contributor/author attribution.
 - [ ] Reliable console-specific converters/exporters.
 - [x] Add read-only Rust index client and searchable CLI.

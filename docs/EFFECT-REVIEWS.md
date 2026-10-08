@@ -2,7 +2,7 @@
 
 Cheatarium separates **original source descriptions**, **lexical text hints**, **external reports**, **observed behavior in a specific test setup**, and **failed reproduction attempts**. These are not interchangeable.
 
-The editable registry is `reviews/v1/claims.json`. Only independently evidenced claims may enter it. The read-only, checksummed export is `generated/v1/reviews.json`. It initially contains **zero claims**: collecting a cheat never implies it has been tested.
+The editable registry is `reviews/v1/claims.json`. Only independently evidenced claims may enter it. The read-only, checksummed export is `generated/v1/reviews.json`. It now contains **five externally reported claims and zero tested observations**. Collecting or cross-referencing a cheat does not imply it has been tested.
 
 ## Assessments
 
@@ -35,6 +35,19 @@ The Rust client checks the source-record ID, original code ordinal, source revis
 
 To validate after building the source bundles, run `python3 tools/validate_effect_reviews.py --write`, followed by `--check`. CI also runs synthetic positive and adversarial tests, then checksums the exported registry.
 
+## First sourced reports
+
+As of October 8, 2026, five `reported` claims link specific original entries to two dated historical GameFAQs documents:
+
+- Three SNES **Donkey Kong Country** codes: `1DCC-CA7A` (almost invincible), `C2C1-4A9C` (infinite lives), and `A081-1273` (Donkey Kong high jump). See [CStassen's DKC FAQ v1.3, March 27, 1995](https://gamefaqs.gamespot.com/snes/588282-donkey-kong-country/faqs/5450), Q-11. That FAQ *reprints historical Lewis Galoob code-update text*; it is not a new empirical test. It explicitly distinguishes **alternate codes for two game versions**, without identifying corresponding ROM SHA-256 fingerprints. "Almost invincible" includes a stuck-state warning. These caveats are preserved in each review.
+- Two NES **Donkey Kong** codes: `SXNGOZVG` (infinite lives), and `PENKNPLE` (start with nine lives). See [MaineCane's Donkey Kong guide v0.9, December 30, 2004](https://gamefaqs.gamespot.com/nes/563403-donkey-kong/faqs/34396), Section IV. The latter is **not** an infinite-lives claim.
+
+Both documents independently exist outside the Libretro archive, but the historical cheat lists may share original code authorship. This counts as **external source corroboration of a reported code effect**, not independent demonstration, nor proof of cartridge revision compatibility. No ROMs were accessed, and source material is linked rather than copied into Cheatarium.
+
+### A source encoding hazard to review
+
+The raw Libretro DKC Game Genie file contains `C2C9-4E2C+C2C1-4A9C` as one combined source string, while the historical FAQ calls these **alternative codes for different game versions**, not a simultaneous two-code combination. That difference must be resolved with source-specific semantics before any exporter or emulator decides to interpret or execute the combined string. The raw archive has deliberately not been altered.
+
 ## Next step
 
-Populate this register through real independent research or controlled tests. Do not manufacture observations from a lexical category, filename, raw code string, or decoded address.
+Collect more independently attributable references, distinguish version alternatives from multi-code combinations, and acquire reproducible exact-ROM test observations. Do not manufacture observations from lexical categories, filenames, decoded addresses, or source listings alone.

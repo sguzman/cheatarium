@@ -9,7 +9,7 @@ Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust 
 - `generated/v1/repeats/snes.json.gz`: conservative exact-text repetitions linking back to distinct source files.
 - `generated/v1/tags/snes.json.gz`: English lexical signals from source cheat descriptions.
 - `generated/v1/taxonomy/effects-v1.json`: versioned, inspectable phrases driving those tags.
-- `generated/v1/reviews.json`: independently evidenced gameplay-effect review register (currently empty).
+- `generated/v1/reviews.json`: independently evidenced gameplay-effect review register (five external reports, zero tested observations).
 - `generated/v1/snes.json.gz`: full parsed source occurrences, original code strings, hints and provenance.
 - `generated/v1/identities/snes.json`: separately reviewed ROM hash evidence registry (currently empty; no guessed ROM mappings).
 - `generated/v1/distribution.json`: SHA-256 hashes and byte sizes of all artifacts.
@@ -34,7 +34,7 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- effects --db 
 cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db generated/v1 --platform snes --json
 ```
 
-`reviews` lists separately sourced reports and exact-ROM test observations, optionally narrowed by original `--source-record-id` or `--category`. It currently returns zero claims; no text-only match has been promoted to a verified cheat. See [effect reviews](EFFECT-REVIEWS.md).
+`reviews` lists separately sourced reports and exact-ROM test observations, optionally narrowed by original `--source-record-id` or `--category`. It currently returns five externally reported claims (three SNES and two NES) and zero tested observations. No text-only match has been promoted to an empirically verified cheat. See [effect reviews](EFFECT-REVIEWS.md).
 
 `tags` lists English-language cue counts or, with `--category`, source-record occurrences and the exact phrase that matched. Optional `--game-key` narrows category results to a **filename-derived candidate**. A textual phrase can be negated, misleading or mistranslated and does not establish functionality. See [Effect signals](EFFECT-SIGNALS.md).
 
