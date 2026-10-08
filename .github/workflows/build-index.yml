@@ -1,0 +1,66 @@
+name: Build Cheatarium indices
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-index.yml"
+      - "Cargo.toml"
+      - "Cargo.lock"
+      - "crates/**"
+      - "platforms/libretro-mapping.json"
+      - "sources/libretro-database.json"
+      - "archive/libretro/cht/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-index-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Rust toolchain
+        run: |
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+      - name: Unit tests
+        run: cargo test --workspace
+      - name: Build per-console index bundles
+        run: cargo run --locked --release -p cheatarium-index -- --root . --out generated/v1
+      - name: Smoke-test exported catalog
+        run: |
+          python3 - <<'PY'
+          import gzip
+          import json
+          from pathlib import Path
+          root = Path("generated/v1")
+          catalog = json.loads((root / "catalog.json").read_text())
+          assert catalog["schema_version"] == 1
+          assert catalog["bundles"]
+          for entry in catalog["bundles"]:
+              with gzip.open(root / entry["artifact"], "rt") as handle:
+                  bundle = json.load(handle)
+              assert bundle["schema_version"] == 1
+              assert bundle["platform"] == entry["platform"]
+              assert len(bundle["records"]) == entry["source_files"]
+              assert all("provenance" in record for record in bundle["records"])
+          print("OK:", len(catalog["bundles"]), "versioned provenance-aware bundles")
+          PY
+      - name: Commit reproducible index snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Cargo.lock generated/v1
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh provenance-aware console index snapshots"
+            git push origin HEAD:main
+          fi
