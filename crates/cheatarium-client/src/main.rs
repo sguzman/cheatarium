@@ -1,6 +1,6 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
 use cheatarium_client::{
-    load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
+    load_catalog, load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
     publications::load_snes_publications, reviews::load_effect_reviews,
     verify_platform_distribution,
 };
@@ -30,6 +30,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("source") => "source",
         Some("games") => "games",
         Some("game") => "game",
+        Some("platforms") => "platforms",
         Some("verify") => "verify",
         Some("effects") => "effects",
         Some("codes") => "codes",
@@ -39,7 +40,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|source|games|game|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -76,6 +77,56 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
     }
+    if mode == "platforms" {
+        if platform.is_some()
+            || title.is_some()
+            || effect.is_some()
+            || exact_code.is_some()
+            || game_key.is_some()
+            || category.is_some()
+            || composition_relation.is_some()
+            || source_record_id.is_some()
+            || varying_descriptions
+            || declared_format.is_some()
+            || source_id.is_some()
+        {
+            return Err("platforms accepts --db, --offset, --limit and --json only".into());
+        }
+        let catalog = load_catalog(&root)?;
+        let total = catalog.bundles.len();
+        if json {
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.platform_catalog.v1",
+                    "source_format": catalog.format,
+                    "matching_policy": catalog.matching_policy,
+                    "total_platforms": total,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "candidate_titles_only": true,
+                    "rom_matching_verified": false,
+                    "cheats_activated": false,
+                    "platforms": catalog.bundles.iter().skip(offset).take(limit).collect::<Vec<_>>(),
+                }))?
+            );
+        } else {
+            println!("{total} indexed console/handheld platforms");
+            println!("Filename candidates only; source cheats remain unverified.");
+            for entry in catalog.bundles.iter().skip(offset).take(limit) {
+                println!(
+                    "- {}: {} original files, {} candidate groups, {} encoded codes, {} memory entries",
+                    entry.platform,
+                    entry.source_files,
+                    entry.game_candidate_groups.unwrap_or(0),
+                    entry.code_fields,
+                    entry.native_memory_entries
+                );
+            }
+        }
+        return Ok(());
+    }
     let platform = platform.ok_or("Please provide --platform")?;
     if offset != 0
         && mode != "compositions"
@@ -83,6 +134,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "codes"
         && mode != "source"
         && mode != "game"
+        && mode != "platforms"
     {
         return Err("--offset applies only to compositions, publications, codes, source or game".into());
     }
