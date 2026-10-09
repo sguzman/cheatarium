@@ -81,10 +81,10 @@ jobs:
               exit 1
             fi
           done
-      - name: Confirm ${stage} stage
+      - name: Confirm python-tests stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: bash tools/report_ci_stage.sh ${stage}
+        run: bash tools/report_ci_stage.sh python-tests
       - name: Rust toolchain
         run: |
           rustup toolchain install stable --profile minimal
@@ -101,25 +101,25 @@ jobs:
             ${{ runner.os }}-cargo-
       - name: Verify source inventories, rights-review queue and curated references
         run: python3 tools/validate.py
-      - name: Confirm ${stage} stage
+      - name: Confirm source-inventory stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: bash tools/report_ci_stage.sh ${stage}
+        run: bash tools/report_ci_stage.sh source-inventory
       - name: Format Rust sources and run unit tests
         run: |
           cargo fmt --all
           cargo fmt --all -- --check
           cargo test --workspace
-      - name: Confirm ${stage} stage
+      - name: Confirm rust-tests stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: bash tools/report_ci_stage.sh ${stage}
+        run: bash tools/report_ci_stage.sh rust-tests
       - name: Build per-console index bundles
         run: cargo run --locked --release -p cheatarium-index -- --root . --out generated/v1
-      - name: Confirm ${stage} stage
+      - name: Confirm index-generated stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: bash tools/report_ci_stage.sh ${stage}
+        run: bash tools/report_ci_stage.sh index-generated
       - name: Audit SNES interpretations and build verified distribution
         run: |
           python3 tools/validate_effect_reviews.py --write
@@ -138,10 +138,10 @@ jobs:
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["witness_filter"] == "witnessed" and d["selected_source_occurrences"] == 3 and d["returned"] == 3; assert all("historical_publication_witness" in x for x in d["occurrences"])'
           python3 tools/build_distribution.py --write
           python3 tools/build_distribution.py --check
-      - name: Confirm ${stage} stage
+      - name: Confirm distribution-audited stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: bash tools/report_ci_stage.sh ${stage}
+        run: bash tools/report_ci_stage.sh distribution-audited
       - name: Smoke-test exported catalog
         run: |
           python3 - <<'PY'
@@ -373,10 +373,10 @@ jobs:
             exit 1
           fi
           python3 tools/audit_snes_codecs.py --json | python3 -c 'import json,sys; a=json.load(sys.stdin); c=a["counts"]; assert c["strictly_decoded"] > 10000 and c["decoded_from_code_syntax"] > 0 and c["format_not_identified"] > 0'
-      - name: Confirm ${stage} stage
+      - name: Confirm consumer-smoke stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: bash tools/report_ci_stage.sh ${stage}
+        run: bash tools/report_ci_stage.sh consumer-smoke
       - name: Commit reproducible index snapshots
         shell: bash
         run: |
