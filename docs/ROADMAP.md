@@ -12,6 +12,10 @@
 6. **Verify** codes against actual game builds and supported emulators.
 7. **Publish** searchable indexes, then integrations/exporters.
 
+## Acquisition status (2026-10-09)
+
+**32,551 original cheat files preserved** from Libretro (23,382), Sharkive (1,135), GoldHEN (5,445), Artemis PS3 (2,540), and two Gecko/AR authors (49). The latter three collection groups added **8,034 files in the latest acquisition session**. Only Libretro/Sharkive (**24,517 files across 38 console bundles**) are presently searchable through the generated index. New data acquisition and native source-format ingestion remain the active work; UI expansion is not a collection milestone.
+
 ## Platform queue
 
 - [x] Register console/handheld platform IDs.
@@ -20,10 +24,13 @@
 - [x] Add Libretro N64, Nintendo DS, Virtual Boy and FDS.
 - [x] Archive 644 Nintendo 3DS and 491 Nintendo Switch native cheat files from pinned Sharkive (1,135 new original source files; unverified).
 - [x] Index 3DS title-ID and Switch title/build-ID native cheat sections without inventing game names, build compatibility or activation semantics (12,274 + 6,150 source code sections).
-- [ ] Acquire GameCube, Wii, Wii U, and further independent 3DS/Switch cheat sources.
+- [x] Preserve 21 GameCube/Wii VC AR/Gecko original INI files and 28 Wii/Wii U Gecko code documents from independently licensed upstream collections.
+- [ ] Expand the GameCube/Wii/Wii U collections beyond these pilot authors, and acquire additional independent 3DS/Switch sources.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
-- [ ] Expand Sony beyond the imported PS1/PSP collections: PS2, PS3, Vita, PS4.
-- [ ] Evaluate Nintendo Switch title-ID/build-ID cheat datasets, PS2 PCSX2 `.pnach` collections, and GameCube/Wii Gecko codes.
+- [x] Archive 5,445 original GoldHEN PS4-oriented native JSON/MC4/SHN/XML files and 2,540 original Artemis PS3 NCL cheat files, retaining exact revisions, original authors and license notices.
+- [ ] Index native PS3/PS4 and Gecko source records without guessing identities, code compatibility or author permissions.
+- [ ] Expand Sony coverage with independently sourced PS2 and Vita collections; GoldHEN PS2-era title IDs are not native PS2 coverage.
+- [ ] Review additional Nintendo Switch title/build-ID databases, PS2 PCSX2 `.pnach` collections and GameCube/Wii Gecko sources whose reuse rights remain unresolved.
 - [x] Add Libretro Atari, NEC, SNK handheld, WonderSwan, ColecoVision, Intellivision and GX4000.
 - [ ] Evaluate Xbox families, Neo Geo AES/CD, 3DO and other collections.
 - [ ] Add link-only indexes for valuable sources whose redistribution rights cannot be confirmed.
