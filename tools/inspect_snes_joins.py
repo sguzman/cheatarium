@@ -34,14 +34,22 @@ def dossier(bundle, game_key, *, offset=0, limit=50, source_record_id=None,
         reports = {(r["source_record_id"], r["source_ordinal"]): r
                    for r in publication_registry["records"]}
     matches = []
+    seen_source_ids = set()
     for record in bundle["records"]:
         record_id = record["id"]
+        if record_id in seen_source_ids:
+            raise ValueError(f"Repeated source record identity: {record_id}")
+        seen_source_ids.add(record_id)
         candidate = record["candidate_game_key"] or f"unresolved:{record_id}"
         if candidate != game_key or (
             source_record_id is not None and record_id != source_record_id
         ):
             continue
+        seen_ordinals = set()
         for cheat in record["codes"]:
+            if cheat["ordinal"] in seen_ordinals:
+                raise ValueError(f"Repeated original ordinal in source record: {record_id}")
+            seen_ordinals.add(cheat["ordinal"])
             raw = cheat.get("code")
             if cheat.get("role") != "code" or not isinstance(raw, str) or "+" not in raw:
                 continue
