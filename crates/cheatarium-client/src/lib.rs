@@ -854,6 +854,23 @@ impl Bundle {
         Ok(first)
     }
 
+    /// Resolve an original archive entry by its stable source ID and source
+    /// ordinal, not by array offset or a potentially repeated code string.
+    /// Duplicate ordinals in one source are invalid archival data.
+    pub fn find_original_entry(
+        &self,
+        source_record_id: &str,
+        ordinal: usize,
+    ) -> Result<(&IndexedFile, &Code)> {
+        let record = self.find_source_record(source_record_id)?;
+        let mut found = record.codes.iter().filter(|entry| entry.ordinal == ordinal);
+        let entry = found.next().ok_or("Original cheat entry ordinal not found")?;
+        if found.next().is_some() {
+            return Err("Duplicate original cheat ordinal in source record".into());
+        }
+        Ok((record, entry))
+    }
+
     /// Match raw device code text *exactly*, including case and whitespace.
     /// A repeated string is not proof of identical effects or ROM compatibility.
     /// Each occurrence retains its original source and ordinal. Never executes.
@@ -1196,6 +1213,28 @@ mod tests {
             serde_json::from_value(serde_json::to_value(&index.candidates[0]).unwrap()).unwrap();
         index.candidates.push(clone);
         assert!(index.find_candidate("game").is_err());
+    }
+
+    #[test]
+    fn original_ordinal_lookup_never_infers_identity_from_position_or_code_text() {
+        let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let (source, code) = bundle.find_original_entry("x", 0).unwrap();
+        assert_eq!(source.provenance.upstream_path, "cht/sample.cht");
+        assert_eq!(code.description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(code.code.as_deref(), Some("ABCD"));
+        assert!(bundle.find_original_entry("x", 1).unwrap().1.code.is_none());
+        assert!(bundle.find_original_entry("x", 2).is_err());
+        assert!(bundle.find_original_entry("not-a-source", 0).is_err());
+        assert!(bundle.find_original_entry("", 0).is_err());
+        let mut copy = serde_json::to_value(&bundle.records[0].codes[0]).unwrap();
+        copy["ordinal"] = serde_json::json!(37);
+        bundle.records[0].codes.push(serde_json::from_value(copy).unwrap());
+        assert_eq!(bundle.find_original_entry("x", 37).unwrap().1.code.as_deref(), Some("ABCD"));
+        assert_eq!(bundle.find_original_entry("x", 0).unwrap().1.ordinal, 0);
+        let duplicate = serde_json::to_value(&bundle.records[0].codes[0]).unwrap();
+        bundle.records[0].codes.push(serde_json::from_value(duplicate).unwrap());
+        assert!(bundle.find_original_entry("x", 0).is_err());
+        assert_eq!(bundle.find_original_entry("x", 37).unwrap().1.ordinal, 37);
     }
 
     #[test]
