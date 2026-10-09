@@ -16,6 +16,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut exact_code = None;
     let mut game_key = None;
     let mut entry_role = None;
+    let mut exact_ordinal = None;
     let mut description_contains = None;
     let mut category = None;
     let mut composition_relation = None;
@@ -33,6 +34,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("games") => "games",
         Some("game") => "game",
         Some("entries") => "entries",
+        Some("entry") => "entry",
         Some("platforms") => "platforms",
         Some("verify") => "verify",
         Some("effects") => "effects",
@@ -43,7 +45,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -56,6 +58,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--code" => exact_code = Some(args.next().ok_or("--code needs original source text")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--role" => entry_role = Some(args.next().ok_or("--role needs a value")?),
+            "--ordinal" => exact_ordinal = Some(args.next().ok_or("--ordinal needs a number")?.parse::<usize>()?),
             "--description-contains" => {
                 description_contains = Some(args.next().ok_or("--description-contains needs text")?)
             }
@@ -98,6 +101,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             || source_id.is_some()
             || entry_role.is_some()
             || description_contains.is_some()
+            || exact_ordinal.is_some()
         {
             return Err("platforms accepts --db, --offset, --limit and --json only".into());
         }
@@ -150,6 +154,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     {
         return Err("--offset applies only to paginated source, game, publication, composition, code and search results".into());
     }
+    if mode != "entry" && exact_ordinal.is_some() {
+        return Err("--ordinal applies only to entry".into());
+    }
     if mode != "entries" && description_contains.is_some() {
         return Err("--description-contains applies only to entries".into());
     }
@@ -174,6 +181,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "codes"
         && mode != "source"
         && mode != "entries"
+        && mode != "entry"
         && source_record_id.is_some()
     {
         return Err("--source-record-id applies only to reviews, publications, compositions, codes or source".into());
@@ -209,6 +217,49 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             .is_some_and(|s: &str| s.trim().is_empty())
     {
         return Err("Effect source and device filters cannot be empty".into());
+    }
+    if mode == "entry" {
+        let selected = source_record_id
+            .as_deref()
+            .ok_or("Please provide --source-record-id")?;
+        let ordinal = exact_ordinal.ok_or("Please provide --ordinal")?;
+        verify_platform_distribution(&root, &platform)?;
+        let bundle = load_platform(&root, &platform)?;
+        let (source, entry) = bundle.find_original_entry(selected, ordinal)?;
+        if json {
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.original_entry.v1",
+                    "platform": platform,
+                    "source_record_id": source.id,
+                    "source_ordinal": entry.ordinal,
+                    "title_hint": source.title_hint,
+                    "candidate_game_key": source.candidate_game_key,
+                    "raw_filename": source.raw_filename,
+                    "region_hint": source.region_hint,
+                    "declared_format_hint": source.format_hint,
+                    "provenance": source.provenance,
+                    "entry": entry,
+                    "original_source_enabled_is_not_activation": true,
+                    "game_identity_verified": false,
+                    "code_effect_or_compatibility_verified": false,
+                    "cheats_activated": false,
+                }))?
+            );
+        } else {
+            println!(
+                "{} #{}: {}",
+                source.id,
+                entry.ordinal,
+                entry.description.as_deref().unwrap_or("<unnamed>")
+            );
+            println!("Original source entry; gameplay effects and ROM identity are unverified.");
+            if let Some(raw) = entry.code.as_deref() {
+                println!("Original code text: {raw}");
+            }
+        }
+        return Ok(());
     }
     if mode == "entries" {
         let key = game_key.as_deref().ok_or("Please provide --game-key")?;
