@@ -110,6 +110,14 @@ jobs:
           cargo fmt --all
           cargo fmt --all -- --check
           cargo test --workspace
+      - name: Build and test optional Linux desktop explorer headlessly
+        run: |
+          cargo check -p cheatarium-client --features desktop --bin cheatarium-explorer
+          cargo test -p cheatarium-client --features desktop --bin cheatarium-explorer
+      - name: Confirm desktop-tests stage
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash tools/report_ci_stage.sh desktop-tests
       - name: Confirm rust-tests stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
