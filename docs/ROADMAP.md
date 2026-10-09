@@ -14,7 +14,7 @@
 
 ## Acquisition status (2026-10-09)
 
-**32,551 original cheat files preserved** from Libretro (23,382), Sharkive (1,135), GoldHEN (5,445), Artemis PS3 (2,540), and two Gecko/AR authors (49). The latter three collection groups added **8,034 files in the latest acquisition session**. Only Libretro/Sharkive (**24,517 files across 38 console bundles**) are presently searchable through the generated index. New data acquisition and native source-format ingestion remain the active work; UI expansion is not a collection milestone.
+**32,551 original cheat files preserved** from Libretro (23,382), Sharkive (1,135), GoldHEN (5,445), Artemis PS3 (2,540), and two Gecko/AR authors (49). The latter three collection groups added **8,034 files in the latest acquisition session**. All **32,551 original cheat files now have searchable source records across 43 console bundles**. Code-bearing entries are explicitly distinguished from metadata-only or opaque formats. More console source acquisition remains the active work; UI expansion is not a collection milestone.
 
 ## Platform queue
 
@@ -28,7 +28,7 @@
 - [ ] Expand the GameCube/Wii/Wii U collections beyond these pilot authors, and acquire additional independent 3DS/Switch sources.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
 - [x] Archive 5,445 original GoldHEN PS4-oriented native JSON/MC4/SHN/XML files and 2,540 original Artemis PS3 NCL cheat files, retaining exact revisions, original authors and license notices.
-- [ ] Index native PS3/PS4 and Gecko source records without guessing identities, code compatibility or author permissions.
+- [x] Index original PS3 NCL, PS4 GoldHEN JSON/SHN/MC4/XML, and GameCube/Wii/Wii U Gecko/AR source records without fabricating decoded cheats or game compatibility.
 - [ ] Expand Sony coverage with independently sourced PS2 and Vita collections; GoldHEN PS2-era title IDs are not native PS2 coverage.
 - [ ] Review additional Nintendo Switch title/build-ID databases, PS2 PCSX2 `.pnach` collections and GameCube/Wii Gecko sources whose reuse rights remain unresolved.
 - [x] Add Libretro Atari, NEC, SNK handheld, WonderSwan, ColecoVision, Intellivision and GX4000.
@@ -41,8 +41,8 @@
 - [x] Source manifests with exact upstream paths/revisions/blob IDs.
 - [x] Game/edition/format schema and integrity validator.
 - [x] Automatic upstream **bulk importer** with platform selection, limits, and deterministic records.
-- [x] Generate versioned compressed per-console source-record indexes in Rust (38 consoles).
-- [x] Generate advisory game-title / source-ID catalogs with provenance links for all 38 consoles.
+- [x] Generate versioned compressed per-console source-record indexes in Rust (43 consoles).
+- [x] Generate advisory game-title / source-ID catalogs with provenance links for all 43 consoles.
 - [x] Publish SHA-256 artifact manifests with Rust client integrity checks.
 - [x] Add source-evidenced, exact-file ROM fingerprint lookup with ambiguity and size-conflict handling; publish an initially empty SNES identity registry to avoid invented mappings.
 - [x] Add local-only, ZIP-streaming SNES ROM metadata inventory scanner; do not collect or upload ROMs.
