@@ -755,6 +755,30 @@ fn run() -> Result<()> {
             .push(record);
     }
 
+    // Original GoldHEN filename-to-title lists supply game labels.
+    // These labels are source claims, not independently verified game builds.
+    let mut goldhen_titles = BTreeMap::<String, String>::new();
+    for (directory, expected) in [("json", 1878usize), ("mc4", 706), ("shn", 1702)] {
+        let raw = fs::read_to_string(root.join(format!("archive/goldhen/{directory}.txt")))?;
+        let mut count = 0;
+        for line in raw.lines().filter(|line| !line.trim().is_empty()) {
+            let Some((filename, label)) = line.split_once('=') else {
+                return Err(format!("Malformed original {directory} source title list").into());
+            };
+            if filename.is_empty() || label.trim().is_empty() || filename.contains('/') {
+                return Err(format!("Malformed source title for GoldHEN {directory}").into());
+            }
+            let key = format!("{directory}/{filename}");
+            if goldhen_titles.insert(key.clone(), label.trim().to_owned()).is_some() {
+                return Err(format!("Duplicate GoldHEN source name {key}").into());
+            }
+            count += 1;
+        }
+        if count != expected {
+            return Err(format!("GoldHEN {directory} original title count {count} != {expected}").into());
+        }
+    }
+
     // Pinned later-generation sources are independently inventoried, and
     // copied unchanged. Build ONLY source-derived game/title/build candidates.
     // In particular, GoldHEN PS2-looking IDs are not claims of PS2 support.
@@ -883,15 +907,16 @@ fn run() -> Result<()> {
                         .into(),
                 );
             }
-            let title = if format == "goldhen-json" {
-                serde_json::from_str::<serde_json::Value>(&decoded)
-                    .ok()
-                    .and_then(|v| v.get("name").and_then(|n| n.as_str()).map(|n| n.to_owned()))
-                    .map(|n| format!("{n} [{title}]"))
-                    .unwrap_or(title)
-            } else {
-                title
-            };
+            let source_declared_title = if manifest_id == "goldhen" {
+                goldhen_titles.get(original).cloned()
+            } else { None };
+            let json_title = if format == "goldhen-json" {
+                serde_json::from_str::<serde_json::Value>(&decoded).ok()
+                    .and_then(|v| v.get("name").and_then(|n| n.as_str()).map(str::to_owned))
+            } else { None };
+            let title = json_title.or(source_declared_title)
+                .map(|label| format!("{label} [{title}]"))
+                .unwrap_or(title);
             let file_name = original.rsplit('/').next().unwrap_or(original).to_owned();
             let record = IndexedFile {
                 id: format!("{manifest_id}:{original}"),
