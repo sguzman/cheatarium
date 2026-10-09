@@ -6,7 +6,12 @@ description = "Read-only, versioned Cheatarium console cheat index consumer for 
 license = "MIT OR Apache-2.0"
 publish = false
 
+[features]
+default = []
+desktop = ["dep:eframe"]
+
 [dependencies]
+eframe = { version = "0.32", optional = true, default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sha2 = "0.10"
@@ -24,3 +29,8 @@ path = "src/bin/fingerprint.rs"
 [[bin]]
 name = "cheatarium-inventory"
 path = "src/bin/inventory.rs"
+
+[[bin]]
+name = "cheatarium-explorer"
+path = "src/bin/explorer.rs"
+required-features = ["desktop"]
