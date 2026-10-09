@@ -312,7 +312,7 @@ jobs:
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_entries.v1" and d["total_original_entries"] >= 1; assert d["entries"][0]["entry"]["code"] and "DD000000" in d["entries"][0]["entry"]["code"] and d["entries"][0]["entry"]["verification"] == "unverified" and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
             --db generated/v1 --platform switch --game-key title-id-0100000000010000-build-b424be150a8e7d78 --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "switch" and d["total_sources"] == 1 and d["sources"][0]["provenance"]["upstream_path"] == "switch/0100000000010000/b424be150a8e7d78.txt" and d["sources"][0]["declared_format_hint"] == "atmosphere" and not d["game_identity_verified"]'
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "switch" and d["total_original_sources"] == 1 and d["sources"][0]["provenance"]["upstream_path"] == "switch/0100000000010000/b424be150a8e7d78.txt" and d["sources"][0]["declared_format_hint"] == "atmosphere" and not d["game_identity_verified"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
             --db generated/v1 --platform switch --game-key title-id-0100000000010000-build-b424be150a8e7d78 --limit 4 --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_original_entries"] >= 4 and "5C3BE7DC" in d["entries"][0]["entry"]["code"] and not d["game_identity_verified"] and not d["cheats_activated"]'
