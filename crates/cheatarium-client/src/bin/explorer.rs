@@ -3,8 +3,7 @@
 //! No ROM access, cheat activation, source edits, or network requests.
 use cheatarium_client::{
     load_all_game_candidates, load_catalog, load_game_candidates, load_platform,
-    verify_platform_distribution,
-    CatalogEntry, GameIndex,
+    verify_platform_distribution, CatalogEntry, GameIndex,
 };
 use eframe::egui::{self, Color32, RichText};
 use std::path::{Path, PathBuf};
@@ -91,8 +90,14 @@ fn load_verified_game(root: &Path, platform: &str, key: &str) -> Result<LoadedGa
             .map(|record| SourceView {
                 id: record.id.clone(),
                 filename: record.raw_filename.clone(),
-                region: record.region_hint.clone().unwrap_or_else(|| "not specified".into()),
-                declared_format: record.format_hint.clone().unwrap_or_else(|| "not declared".into()),
+                region: record
+                    .region_hint
+                    .clone()
+                    .unwrap_or_else(|| "not specified".into()),
+                declared_format: record
+                    .format_hint
+                    .clone()
+                    .unwrap_or_else(|| "not declared".into()),
                 upstream_repository: record.provenance.repository.clone(),
                 upstream_path: record.provenance.upstream_path.clone(),
                 revision: record.provenance.revision.clone(),
@@ -107,16 +112,33 @@ fn load_verified_game(root: &Path, platform: &str, key: &str) -> Result<LoadedGa
                 source_id: hit.source_record_id.to_owned(),
                 source_file: hit.raw_filename.to_owned(),
                 ordinal: hit.entry.ordinal,
-                description: hit.entry.description.clone().unwrap_or_else(|| "(no description)".into()),
+                description: hit
+                    .entry
+                    .description
+                    .clone()
+                    .unwrap_or_else(|| "(no description)".into()),
                 raw_code: hit.entry.code.clone(),
-                role: hit.entry.role.clone().unwrap_or_else(|| "unspecified".into()),
+                role: hit
+                    .entry
+                    .role
+                    .clone()
+                    .unwrap_or_else(|| "unspecified".into()),
                 enabled_upstream: hit.entry.source_enabled,
                 verification: hit.entry.verification.clone(),
-                native_fields: hit.entry.native_fields.iter().map(|field| (field.name.clone(), field.value.clone())).collect(),
+                native_fields: hit
+                    .entry
+                    .native_fields
+                    .iter()
+                    .map(|field| (field.name.clone(), field.value.clone()))
+                    .collect(),
                 composition_note: hit.entry.composition.as_ref().map(|c| c.relation.clone()),
             })
             .collect();
-        Ok(LoadedGame { title: candidate.title_hint.clone(), sources, entries })
+        Ok(LoadedGame {
+            title: candidate.title_hint.clone(),
+            sources,
+            entries,
+        })
     })();
     result.map_err(|error| error.to_string())
 }
@@ -172,7 +194,13 @@ impl Explorer {
                 while let Ok(first) = pending_requests.recv() {
                     let request = newest_request(first, &pending_requests);
                     let result = load_verified_game(&worker_root, &request.platform, &request.key);
-                    if results.send(GameResult { generation: request.generation, result }).is_err() {
+                    if results
+                        .send(GameResult {
+                            generation: request.generation,
+                            result,
+                        })
+                        .is_err()
+                    {
                         break;
                     }
                 }
@@ -232,7 +260,11 @@ impl Explorer {
     }
 
     fn select_game(&mut self, platform: &str, key: &str) {
-        if self.selected_game.as_ref().is_some_and(|(p, k)| p == platform && k == key) {
+        if self
+            .selected_game
+            .as_ref()
+            .is_some_and(|(p, k)| p == platform && k == key)
+        {
             return;
         }
         self.request_generation = self.request_generation.wrapping_add(1);
@@ -278,7 +310,11 @@ impl Explorer {
             }
             self.pending_request = None;
             match reply.result {
-                Ok(LoadedGame { title, sources, entries }) => {
+                Ok(LoadedGame {
+                    title,
+                    sources,
+                    entries,
+                }) => {
                     self.game_title = title;
                     self.sources = sources;
                     self.entries = entries;
@@ -607,11 +643,13 @@ mod tests {
     fn queued_game_selections_discard_superseded_pending_requests() {
         let (sender, receiver) = mpsc::channel();
         for (generation, key) in [(1, "first"), (2, "second"), (3, "latest")] {
-            sender.send(GameRequest {
-                generation,
-                platform: "snes".into(),
-                key: key.into(),
-            }).unwrap();
+            sender
+                .send(GameRequest {
+                    generation,
+                    platform: "snes".into(),
+                    key: key.into(),
+                })
+                .unwrap();
         }
         let first = receiver.recv().unwrap();
         let newest = newest_request(first, &receiver);
