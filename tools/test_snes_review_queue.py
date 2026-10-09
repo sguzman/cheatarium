@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Synthetic priority-queue tests; never use ROMs."""
+import copy
 from build_snes_review_queue import calculate
 
 def fixture():
@@ -29,6 +30,24 @@ def fixture():
     assert report["top_groups"][0]["distinct_source_records"]==2
     assert report["top_groups"][0]["sample_originals"][0]["ordinal"]==1
     assert not report["effect_or_compatibility_verified"]
+    duplicate_source=copy.deepcopy(bundle)
+    duplicate_source["records"].append(copy.deepcopy(duplicate_source["records"][0]))
+    try:
+        calculate(duplicate_source,docs)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Queue accepted a duplicate source record ID")
+    duplicate_ordinal=copy.deepcopy(bundle)
+    duplicate_ordinal["records"][0]["codes"].append(
+        copy.deepcopy(duplicate_ordinal["records"][0]["codes"][0])
+    )
+    try:
+        calculate(duplicate_ordinal,docs)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Queue counted the same source ordinal twice")
     publications={
         "schema_version":1,"platform":"snes",
         "claim_type":"externally-published-multi-part-source-code-text",
