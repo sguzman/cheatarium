@@ -58,6 +58,7 @@
 - [x] Add read-only Rust index client and searchable CLI.
 - [x] Add exact original device-code text lookup with source ordinals, provenance and safe pagination; do not infer cheat equivalence from shared strings.
 - [x] Add read-only, paginated original-source inspection so console consumers can browse all imported code, native memory, and section-heading entries without title guesses.
+- [x] Resolve exact candidate-game keys to checksum-checked, paginated original-source summaries with strict source-link and count validation.
 - [ ] Add a pleasant desktop/game cheat explorer.
 - [x] Implement SNES Game Genie / Pro Action Replay decoding, plus provenance-conscious syntax-only interpretation for unlabeled codes (over 66,000 fields interpreted); publish an audited coverage report with source-join semantics tracked separately.
 - [ ] Add console-specific codecs beyond SNES; emulator integration remains owned by its separate projects.
