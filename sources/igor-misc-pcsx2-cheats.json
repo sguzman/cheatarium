@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "igor-misc-pcsx2-cheats",
+  "repository": "https://github.com/igorciz777/Misc-PCSX2-Cheats",
+  "snapshot_commit": "26c4395dd3c10d469168c12c5b9f08e56f4de061",
+  "license": "MIT (original author copyright notice preserved)",
+  "archive_prefix": "archive/igor-misc-pcsx2-cheats/",
+  "scope_note": "17 region- and CRC-specific PCSX2 .pnach files; exact version compatibility is not independently verified by Cheatarium.",
+  "rights_note": "Preserve original Igor README and MIT LICENSE; do not conflate patches for different region/release IDs.",
+  "native_cheat_counts": {
+    "ps2": 17
+  },
+  "files": [
+    {
+      "upstream_path": "Enthusia Professional Racing/Controller Input Tweaks/SLES-53125_5C63B5AC.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/Enthusia Professional Racing/Controller Input Tweaks/SLES-53125_5C63B5AC.pnach",
+      "git_blob_sha": "c3cf9bb29a84d12cf52f708abfaa7d36d3280892"
+    },
+    {
+      "upstream_path": "Enthusia Professional Racing/Controller Input Tweaks/SLPM-65948_5637E95B.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/Enthusia Professional Racing/Controller Input Tweaks/SLPM-65948_5637E95B.pnach",
+      "git_blob_sha": "9f45d5fbae06e9c531eefecdd048accfbd03d0cc"
+    },
+    {
+      "upstream_path": "Enthusia Professional Racing/Controller Input Tweaks/SLUS-20967_81D233DC.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/Enthusia Professional Racing/Controller Input Tweaks/SLUS-20967_81D233DC.pnach",
+      "git_blob_sha": "b63db85066f2081a98c20f50d299cbb46fb7a15f"
+    },
+    {
+      "upstream_path": "Kaido Racer (Kaido Battle 2)/Free Camera/SLES-53191_F7780E06.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/Kaido Racer (Kaido Battle 2)/Free Camera/SLES-53191_F7780E06.pnach",
+      "git_blob_sha": "72edf367ec343d4b1be33148484942c9d524fe27"
+    },
+    {
+      "upstream_path": "Kaido Racer (Kaido Battle 2)/Free Camera/SLKA-25146_D285B3DF.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/Kaido Racer (Kaido Battle 2)/Free Camera/SLKA-25146_D285B3DF.pnach",
+      "git_blob_sha": "2248d07364e4640a8017a2c0004d3ac3ff018deb"
+    },
+    {
+      "upstream_path": "Kaido Racer (Kaido Battle 2)/Free Camera/SLPM-65514_C37C1B76.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/Kaido Racer (Kaido Battle 2)/Free Camera/SLPM-65514_C37C1B76.pnach",
+      "git_blob_sha": "d4d722c029f90c5f4b8869c23e3f9e58b6953480"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/LICENSE",
+      "git_blob_sha": "3010a4293f042b71563ee307d67d6983615665e1"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/README.md",
+      "git_blob_sha": "ecd8a8cebbcbd7427253cf6ec3b6d807a27d6ca9"
+    },
+    {
+      "upstream_path": "TXR Drift (Kaido Battle 1)/KB2 Camera Parameters/SLKA-25063_E3795E39.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift (Kaido Battle 1)/KB2 Camera Parameters/SLKA-25063_E3795E39.pnach",
+      "git_blob_sha": "fbf821fc0c5365708904ff396554983c24fcbfcb"
+    },
+    {
+      "upstream_path": "TXR Drift (Kaido Battle 1)/KB2 Camera Parameters/SLPM-65246_2046216F.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift (Kaido Battle 1)/KB2 Camera Parameters/SLPM-65246_2046216F.pnach",
+      "git_blob_sha": "159eff3a73237a0af1193fbfd5688a080c126158"
+    },
+    {
+      "upstream_path": "TXR Drift (Kaido Battle 1)/KB2 Camera Parameters/SLUS-21236_07A4E535.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift (Kaido Battle 1)/KB2 Camera Parameters/SLUS-21236_07A4E535.pnach",
+      "git_blob_sha": "58b3620abb5c0637f04a36b6e62d744e40926b0d"
+    },
+    {
+      "upstream_path": "TXR Drift 2 (Kaido Battle 3)/Alternative Chase Camera/SLES-53900_C7993BCC.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift 2 (Kaido Battle 3)/Alternative Chase Camera/SLES-53900_C7993BCC.pnach",
+      "git_blob_sha": "4d37c46b928d596e8735b52059f85e30c7357a87"
+    },
+    {
+      "upstream_path": "TXR Drift 2 (Kaido Battle 3)/Alternative Chase Camera/SLPM-66022_EC33CA0D.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift 2 (Kaido Battle 3)/Alternative Chase Camera/SLPM-66022_EC33CA0D.pnach",
+      "git_blob_sha": "cbf53b908b868a1eb2bbdf8af77960ea4972188f"
+    },
+    {
+      "upstream_path": "TXR Drift 2 (Kaido Battle 3)/Alternative Chase Camera/SLUS-21394_B32E018E.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift 2 (Kaido Battle 3)/Alternative Chase Camera/SLUS-21394_B32E018E.pnach",
+      "git_blob_sha": "567513d012d5c71a3d1a0a8895e9a86539dc1430"
+    },
+    {
+      "upstream_path": "TXR Drift 2 (Kaido Battle 3)/Locked Driver's Camera/SLES-53900_C7993BCC.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift 2 (Kaido Battle 3)/Locked Driver's Camera/SLES-53900_C7993BCC.pnach",
+      "git_blob_sha": "d08e0d9a8ca7da5b8963fc28f53e0f247e1a6cf9"
+    },
+    {
+      "upstream_path": "TXR Drift 2 (Kaido Battle 3)/Locked Driver's Camera/SLPM-66022_EC33CA0D.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift 2 (Kaido Battle 3)/Locked Driver's Camera/SLPM-66022_EC33CA0D.pnach",
+      "git_blob_sha": "c10d558cc5c7903485c7e73f8eaf66aa9ce9250f"
+    },
+    {
+      "upstream_path": "TXR Drift 2 (Kaido Battle 3)/Locked Driver's Camera/SLUS-21394_B32E018E.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/TXR Drift 2 (Kaido Battle 3)/Locked Driver's Camera/SLUS-21394_B32E018E.pnach",
+      "git_blob_sha": "49c3ed568015d8e048f8713ba7d34f898a850dcc"
+    },
+    {
+      "upstream_path": "WRC 4/Debug/SLPM-65975_C6D912FB.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/WRC 4/Debug/SLPM-65975_C6D912FB.pnach",
+      "git_blob_sha": "9b86dec2dc2ab3f67202ae5cc48a174be31a337a"
+    },
+    {
+      "upstream_path": "WRC Rally Evolved/Debug/SCES-53680_79BAD675.pnach",
+      "archive_path": "archive/igor-misc-pcsx2-cheats/WRC Rally Evolved/Debug/SCES-53680_79BAD675.pnach",
+      "git_blob_sha": "5997d8d7f839c9398582140dc01f082f88cff897"
+    }
+  ]
+}
