@@ -484,7 +484,12 @@ impl Bundle {
             let source = by_id
                 .get(source_id.as_str())
                 .ok_or("Missing linked original source record")?;
-            if source.candidate_game_key != candidate.key {
+            let derived_key = if source.candidate_game_key.is_empty() {
+                format!("unresolved:{}", source.id)
+            } else {
+                source.candidate_game_key.clone()
+            };
+            if derived_key != candidate.key {
                 return Err("Linked source has another candidate game key".into());
             }
             code_fields = code_fields
@@ -896,6 +901,23 @@ mod tests {
         broken["code_fields"] = serde_json::json!(1);
         broken["key"] = serde_json::json!("another-game");
         assert!(bundle.sources_for_candidate(&serde_json::from_value(broken).unwrap()).is_err());
+    }
+
+    #[test]
+    fn candidate_lookup_preserves_filename_unresolved_source_groups() {
+        let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
+        bundle.records[0].candidate_game_key.clear();
+        let candidate: GameCandidate = serde_json::from_value(serde_json::json!({
+            "key": "unresolved:x", "title_hint": "Unresolved filename",
+            "alternate_title_hints": [], "identity_confidence": "filename_candidate_only",
+            "possible_title_collision": false, "source_record_ids": ["x"],
+            "source_ids": ["libretro"], "region_hints": ["USA"],
+            "format_hints": [], "code_fields": 1, "native_memory_entries": 0
+        })).unwrap();
+        let records = bundle.sources_for_candidate(&candidate).unwrap();
+        assert_eq!(records.len(), 1);
+        assert_eq!(records[0].id, "x");
+        assert!(records[0].candidate_game_key.is_empty());
     }
 
     #[test]
