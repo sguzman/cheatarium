@@ -18,8 +18,8 @@
 - [x] Start Libretro NES and SNES proof-of-concept imports.
 - [x] Import 39 Libretro console/handheld source collections with pinned per-file provenance (23,382 files, 36 canonical console bundles).
 - [x] Add Libretro N64, Nintendo DS, Virtual Boy and FDS.
-- [x] Archive 644 Nintendo 3DS and 491 Nintendo Switch native cheat files from pinned Sharkive (1,135 new original source files; unverified; not yet exposed through the Libretro-only console indexes).
-- [ ] Index original Sharkive 3DS title-ID and Switch title/build-ID cheat sections without inventing game names or activation semantics.
+- [x] Archive 644 Nintendo 3DS and 491 Nintendo Switch native cheat files from pinned Sharkive (1,135 new original source files; unverified).
+- [x] Index 3DS title-ID and Switch title/build-ID native cheat sections without inventing game names, build compatibility or activation semantics (12,274 + 6,150 source code sections).
 - [ ] Acquire GameCube, Wii, Wii U, and further independent 3DS/Switch cheat sources.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
 - [ ] Expand Sony beyond the imported PS1/PSP collections: PS2, PS3, Vita, PS4.
@@ -34,8 +34,8 @@
 - [x] Source manifests with exact upstream paths/revisions/blob IDs.
 - [x] Game/edition/format schema and integrity validator.
 - [x] Automatic upstream **bulk importer** with platform selection, limits, and deterministic records.
-- [x] Generate versioned compressed per-console source-record indexes in Rust (36 consoles).
-- [x] Generate advisory game-title catalogs with source links for all 36 consoles.
+- [x] Generate versioned compressed per-console source-record indexes in Rust (38 consoles).
+- [x] Generate advisory game-title / source-ID catalogs with provenance links for all 38 consoles.
 - [x] Publish SHA-256 artifact manifests with Rust client integrity checks.
 - [x] Add source-evidenced, exact-file ROM fingerprint lookup with ambiguity and size-conflict handling; publish an initially empty SNES identity registry to avoid invented mappings.
 - [x] Add local-only, ZIP-streaming SNES ROM metadata inventory scanner; do not collect or upload ROMs.
