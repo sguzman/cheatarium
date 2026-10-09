@@ -465,6 +465,18 @@ pub struct GameEntryHit<'a> {
     pub provenance: &'a Provenance,
 }
 
+/// Exact filters for a candidate game's unchanged source entries.
+/// Source metadata filters are literal labels, never compatibility claims.
+#[derive(Debug, Default)]
+pub struct GameEntryFilters<'a> {
+    pub source_record_id: Option<&'a str>,
+    pub role: Option<&'a str>,
+    pub description_contains: Option<&'a str>,
+    pub region_hint: Option<&'a str>,
+    pub declared_format_hint: Option<&'a str>,
+    pub source_id: Option<&'a str>,
+}
+
 impl Bundle {
     /// Follow exactly the original source links in a candidate game group.
     /// Both the candidate and the source bundle are required: filename
@@ -579,29 +591,69 @@ impl Bundle {
         role: Option<&str>,
         description_contains: Option<&str>,
     ) -> Result<Vec<GameEntryHit<'a>>> {
-        let needle = description_contains.map(str::trim);
+        self.filter_entries_for_candidate(
+            candidate,
+            &GameEntryFilters {
+                source_record_id,
+                role,
+                description_contains,
+                ..GameEntryFilters::default()
+            },
+        )
+    }
+
+    /// Source/region/declared-format facets are exact upstream labels.
+    /// Validate candidate source links before applying any facet, so an
+    /// unrelated or malformed source cannot disappear behind a filter.
+    pub fn filter_entries_for_candidate<'a>(
+        &'a self,
+        candidate: &GameCandidate,
+        filters: &GameEntryFilters<'_>,
+    ) -> Result<Vec<GameEntryHit<'a>>> {
+        let needle = filters.description_contains.map(str::trim);
         if needle == Some("") {
             return Err("Description search text must not be blank".into());
         }
         let needle = needle.map(str::to_lowercase);
-        if role.is_some_and(|name| !matches!(name, "code" | "memory-entry" | "section-heading")) {
+        if filters
+            .role
+            .is_some_and(|name| !matches!(name, "code" | "memory-entry" | "section-heading"))
+        {
             return Err("Unsupported original cheat entry role".into());
         }
-        if source_record_id == Some("") {
+        if filters.source_record_id == Some("") {
             return Err("Original source record filter cannot be empty".into());
         }
+        if filters.region_hint.is_some_and(|value| value.trim().is_empty())
+            || filters.declared_format_hint.is_some_and(|value| value.trim().is_empty())
+            || filters.source_id.is_some_and(|value| value.trim().is_empty())
+        {
+            return Err("Source metadata filters cannot be blank".into());
+        }
         let sources = self.sources_for_candidate(candidate)?;
-        let mut source_found = source_record_id.is_none();
+        let mut source_found = filters.source_record_id.is_none();
         let mut hits = Vec::new();
         for source in sources {
-            if let Some(filter) = source_record_id {
+            if let Some(filter) = filters.source_record_id {
                 if filter != source.id {
                     continue;
                 }
             }
             source_found = true;
+            if filters
+                .region_hint
+                .is_some_and(|value| source.region_hint.as_deref() != Some(value))
+                || filters
+                    .declared_format_hint
+                    .is_some_and(|value| source.format_hint.as_deref() != Some(value))
+                || filters
+                    .source_id
+                    .is_some_and(|value| source.provenance.source_id != value)
+            {
+                continue;
+            }
             for code in &source.codes {
-                if let Some(role_filter) = role {
+                if let Some(role_filter) = filters.role {
                     if code.role.as_deref() != Some(role_filter) {
                         continue;
                     }
@@ -1172,6 +1224,55 @@ mod tests {
                 .len(),
             2
         );
+    }
+
+    #[test]
+    fn entry_metadata_facets_are_exact_and_do_not_weaken_source_validation() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let candidate: GameCandidate = serde_json::from_value(serde_json::json!({
+            "key": "super-mario-world", "title_hint": "Super Mario World",
+            "alternate_title_hints": [], "identity_confidence": "filename_candidate_only",
+            "possible_title_collision": false, "source_record_ids": ["x"],
+            "source_ids": ["libretro"], "region_hints": ["USA"],
+            "format_hints": [], "code_fields": 1, "native_memory_entries": 0
+        })).unwrap();
+        let selected = bundle.filter_entries_for_candidate(
+            &candidate,
+            &GameEntryFilters {
+                region_hint: Some("USA"),
+                source_id: Some("libretro"),
+                role: Some("code"),
+                description_contains: Some("LIVES"),
+                ..GameEntryFilters::default()
+            },
+        ).unwrap();
+        assert_eq!(selected.len(), 1);
+        assert_eq!(selected[0].entry.ordinal, 0);
+        assert_eq!(selected[0].entry.description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(selected[0].provenance.source_id, "libretro");
+        for facets in [
+            GameEntryFilters { region_hint: Some("usa"), ..GameEntryFilters::default() },
+            GameEntryFilters { region_hint: Some("Europe"), ..GameEntryFilters::default() },
+            GameEntryFilters { declared_format_hint: Some("game-genie"), ..GameEntryFilters::default() },
+            GameEntryFilters { source_id: Some("other-source"), ..GameEntryFilters::default() },
+        ] {
+            assert!(bundle.filter_entries_for_candidate(&candidate, &facets).unwrap().is_empty());
+        }
+        for facets in [
+            GameEntryFilters { region_hint: Some("   "), ..GameEntryFilters::default() },
+            GameEntryFilters { declared_format_hint: Some(""), ..GameEntryFilters::default() },
+            GameEntryFilters { source_id: Some(" "), ..GameEntryFilters::default() },
+        ] {
+            assert!(bundle.filter_entries_for_candidate(&candidate, &facets).is_err());
+        }
+        let mut malformed: GameCandidate = serde_json::from_value(
+            serde_json::to_value(&candidate).unwrap()
+        ).unwrap();
+        malformed.source_record_ids = vec!["missing".into()];
+        assert!(bundle.filter_entries_for_candidate(
+            &malformed,
+            &GameEntryFilters { region_hint: Some("Europe"), ..GameEntryFilters::default() }
+        ).is_err());
     }
 
     #[test]
