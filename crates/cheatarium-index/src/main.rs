@@ -1,7 +1,8 @@
 use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
 use cheatarium_index::{
-    candidate_game_key, format_hint, parse_cht, region_hint, title_hint, Code, CompositionEvidence,
+    candidate_game_key, format_hint, parse_cht, parse_native_sections, region_hint, title_hint,
+    Code, CompositionEvidence,
     SourceComposition,
 };
 use flate2::{Compression, GzBuilder};
@@ -188,7 +189,7 @@ fn build_game_index(platform: &str, records: &[IndexedFile]) -> GameIndex {
     GameIndex {
         schema_version: 1,
         platform: platform.to_owned(),
-        identity_rule: "unverified filename grouping; keys are not ROM or edition identities",
+        identity_rule: "unverified source-path-derived grouping, possibly title/build IDs; keys are not verified ROM identities",
         candidates,
     }
 }
@@ -536,6 +537,8 @@ fn run() -> Result<()> {
         }
         known_platforms.insert(system.platform);
     }
+    known_platforms.insert("3ds".to_owned());
+    known_platforms.insert("switch".to_owned());
     if let Some(ref filter) = wanted {
         for id in filter {
             if !known_platforms.contains(id) {
@@ -657,6 +660,78 @@ fn run() -> Result<()> {
             .push(record);
     }
 
+    // Sharkive files are native Gateshark/Atmosphère sections indexed by
+    // literal upstream title/build IDs, NEVER by guessed human game names.
+    // The root LICENSE/README retain legal/credit metadata outside this index.
+    let sharkive: SourceManifest =
+        serde_json::from_slice(&fs::read(root.join("sources/sharkive.json"))?)?;
+    if sharkive.id != "sharkive" {
+        return Err("Expected pinned Sharkive source manifest".into());
+    }
+    for item in sharkive.files {
+        let parts: Vec<&str> = item.upstream_path.split('/').collect();
+        let (platform, title_id, build_id) = match parts.as_slice() {
+            ["3ds", original] if original.ends_with(".txt") => {
+                ("3ds", original.trim_end_matches(".txt"), None)
+            }
+            ["switch", title_id, original] if original.ends_with(".txt") => {
+                ("switch", *title_id, Some(original.trim_end_matches(".txt")))
+            }
+            _ => continue, // license, README and non-code upstream metadata
+        };
+        if wanted.as_ref().is_some_and(|v| !v.contains(platform)) {
+            continue;
+        }
+        if title_id.len() != 16 || !title_id.bytes().all(|c| c.is_ascii_hexdigit())
+            || build_id.is_some_and(|id| id.is_empty() || id.len() > 64
+                || !id.bytes().all(|c| c.is_ascii_hexdigit()))
+        {
+            return Err(format!("Malformed original Sharkive title/build path: {}", item.upstream_path).into());
+        }
+        let source_file_path = checked_path(&root, &item.archive_path)?;
+        let raw = fs::read(source_file_path)?;
+        let content = String::from_utf8_lossy(&raw);
+        let mut parsed = parse_native_sections(&content);
+        if matches!(content, std::borrow::Cow::Owned(_)) {
+            parsed.warnings.push("Original source contains non-UTF8 bytes; original is preserved verbatim in archive".into());
+        }
+        if build_id.is_some_and(|id| id.len() != 16) {
+            parsed.warnings.push("Upstream Switch build-ID filename has nonstandard length; preserved verbatim, not normalized or verified".into());
+        }
+        let title_hint = match build_id {
+            Some(build) => format!("Title ID {title_id} / build {build}"),
+            None => format!("Title ID {title_id}"),
+        };
+        let key = match build_id {
+            Some(build) => format!("title-id-{}-build-{}", title_id.to_ascii_lowercase(), build.to_ascii_lowercase()),
+            None => format!("title-id-{}", title_id.to_ascii_lowercase()),
+        };
+        let source_file_name = item.upstream_path.strip_prefix(&format!("{platform}/"))
+            .unwrap_or(&item.upstream_path).to_owned();
+        let record = IndexedFile {
+            id: format!("sharkive:{}", item.upstream_path),
+            title_hint,
+            candidate_game_key: key,
+            identity_confidence: "source-path-title-and-build-id-unverified",
+            raw_filename: source_file_name,
+            region_hint: None,
+            format_hint: Some(if platform == "3ds" { "gateshark" } else { "atmosphere" }),
+            declared_cheats: None,
+            parse_warnings: parsed.warnings,
+            codes: parsed.codes,
+            provenance: Provenance {
+                source_id: sharkive.id.clone(),
+                repository: sharkive.repository.clone(),
+                revision: sharkive.snapshot_commit.clone(),
+                license: sharkive.license.clone(),
+                upstream_path: item.upstream_path,
+                archive_path: item.archive_path,
+                git_blob_sha: item.git_blob_sha,
+            },
+        };
+        by_platform.entry(platform.to_owned()).or_default().push(record);
+    }
+
     if scan_snes && !overrides.is_empty() {
         return Err(format!(
             "{} unreferenced SNES composition overrides",
@@ -743,7 +818,7 @@ fn run() -> Result<()> {
         let bundle = Bundle {
             schema_version: 1,
             platform: platform.clone(),
-            game_identity_rule: "filename-derived suggestion, not verified ROM identity",
+            game_identity_rule: "source filename/title-ID hints only; not independently verified ROM or game-build identity",
             compatibility_rule:
                 "never auto-apply a code without confirmed release/build compatibility",
             records,
