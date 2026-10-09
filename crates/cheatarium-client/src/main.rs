@@ -138,7 +138,8 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "has_more": offset.saturating_add(limit) < total,
                     "candidate_titles_only": true,
                     "rom_compatibility_verified": false,
-                    "artifact_checksums_verified": false,
+                    "artifact_checksums_verified": true,
+                    "manifest_authenticated": false,
                     "cheats_activated": false,
                     "matches": hits.into_iter().skip(offset).take(limit).collect::<Vec<_>>(),
                 }))?
