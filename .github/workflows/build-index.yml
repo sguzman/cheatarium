@@ -45,7 +45,9 @@ permissions:
 
 concurrency:
   group: cheatarium-index-build
-  cancel-in-progress: false
+  # Older snapshots cannot be published once main advances.
+  # Stop obsolete builds instead of queueing expensive duplicate work.
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -60,6 +62,16 @@ jobs:
         run: |
           rustup toolchain install stable --profile minimal
           rustup default stable
+      - name: Cache Rust dependencies and build output
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
       - name: Verify source inventories, rights-review queue and curated references
         run: python3 tools/validate.py
       - name: Format Rust sources and run unit tests
