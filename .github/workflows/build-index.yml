@@ -289,6 +289,20 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
             --db generated/v1 --platform snes --game-key push-over --role code \
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --description-contains 'UNDO A PUSH' --limit 10 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_entries.v1" and d["description_contains_filter"] == "UNDO A PUSH" and d["description_text_match_only"] and d["total_original_entries"] >= 1; assert all("undo a push" in h["entry"]["description"].lower() and h["entry"]["role"] == "code" for h in d["entries"]); assert any(h["entry"]["ordinal"] == 1 and h["entry"]["code"] == "3366-6F0F" for h in d["entries"]); assert not d["code_effects_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --role code \
+            --description-contains 'NO SUCH SOURCE DESCRIPTION EXISTS' --limit 2 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_original_entries"] == 0 and d["returned"] == 0 and d["entries"] == [] and not d["has_more"]'
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --description-contains '   '; then
+            echo "ERROR: accepted blank description search" >&2
+            exit 1
+          fi
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --role code \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
             --offset 3 --limit 1 --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_entries.v1" and d["role_filter"] == "code" and d["total_original_entries"] >= 102 and d["returned"] == 1 and d["has_more"]; assert d["entries"][0]["entry"]["ordinal"] == 3 and d["entries"][0]["entry"]["code"] == "CB66-AD6F+6266-AF0F+DF66-ADAF"; assert d["entries"][0]["provenance"]["git_blob_sha"] and not d["cheats_activated"] and not d["game_identity_verified"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
