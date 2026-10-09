@@ -66,7 +66,8 @@
 - [x] Add exact upstream-collection, region and declared-device-format facets for game-level cheat browsing without guessing ROM compatibility or promoting syntax-inferred formats.
 - [x] Discover filename-derived game-title candidates across all platform catalogs, with platform-qualified keys and deterministic pagination.
 - [x] Verify the SHA-256 checksums of all local title-catalog artifacts during cross-platform discovery, without requiring full cheat-bundle hashing.
-- [ ] Add a pleasant desktop/game cheat explorer.
+- [x] Add an optional, read-only Linux/egui desktop explorer with original game/source/code browsing, copy-on-demand, provenance inspection, and responsive background loading.
+- [ ] Complete desktop visual/layout and live Wayland interaction QA, then polish the explorer for everyday use.
 - [x] Implement SNES Game Genie / Pro Action Replay decoding, plus provenance-conscious syntax-only interpretation for unlabeled codes (over 66,000 fields interpreted); publish an audited coverage report with source-join semantics tracked separately.
 - [ ] Add console-specific codecs beyond SNES; emulator integration remains owned by its separate projects.
 
