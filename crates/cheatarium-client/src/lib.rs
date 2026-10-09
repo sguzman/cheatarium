@@ -691,6 +691,69 @@ impl Bundle {
     }
 }
 
+/// A platform-qualified filename candidate. This does not identify an
+/// actual cartridge or imply that different platforms share executable codes.
+#[derive(Debug, Serialize)]
+pub struct PlatformCandidateHit<'a> {
+    pub platform: &'a str,
+    pub candidate: &'a GameCandidate,
+}
+
+/// Load all platform title catalogs without loading the much larger
+/// per-platform cheat-entry bundles. Index keys and platforms must be unique.
+pub fn load_all_game_candidates(root: impl AsRef<Path>) -> Result<Vec<GameIndex>> {
+    use std::collections::BTreeSet;
+
+    let root = root.as_ref();
+    let catalog = load_catalog(root)?;
+    if catalog.bundles.is_empty() {
+        return Err("Cheatarium catalog has no console bundles".into());
+    }
+    let mut platforms = BTreeSet::new();
+    let mut indexes = Vec::with_capacity(catalog.bundles.len());
+    for entry in &catalog.bundles {
+        if !platforms.insert(entry.platform.as_str()) {
+            return Err("Duplicate platform in Cheatarium catalog".into());
+        }
+        let index = load_game_candidates(root, &entry.platform)?;
+        let mut keys = BTreeSet::new();
+        for game in &index.candidates {
+            if game.key.is_empty() || !keys.insert(game.key.as_str()) {
+                return Err("Missing or duplicate game candidate key in platform index".into());
+            }
+        }
+        indexes.push(index);
+    }
+    Ok(indexes)
+}
+
+/// Search titles across platform candidate indexes. The caller supplies the
+/// loaded local indexes; this routine does not read ROMs or contact a server.
+#[must_use]
+pub fn search_cross_platform_titles<'a>(
+    indexes: &'a [GameIndex],
+    title: &str,
+) -> Vec<PlatformCandidateHit<'a>> {
+    if title.trim().is_empty() {
+        return Vec::new();
+    }
+    let mut hits = Vec::new();
+    for index in indexes {
+        for candidate in index.search_title(title) {
+            hits.push(PlatformCandidateHit {
+                platform: &index.platform,
+                candidate,
+            });
+        }
+    }
+    hits.sort_by(|a, b| {
+        a.platform
+            .cmp(b.platform)
+            .then_with(|| a.candidate.key.cmp(&b.candidate.key))
+    });
+    hits
+}
+
 #[derive(Debug, Deserialize, Serialize)]
 pub struct RepeatedCodeIndex {
     pub schema_version: u32,
@@ -1333,6 +1396,53 @@ mod tests {
         assert_eq!(records.len(), 1);
         assert_eq!(records[0].id, "x");
         assert!(records[0].candidate_game_key.is_empty());
+    }
+
+    #[test]
+    fn cross_platform_title_discovery_preserves_platform_and_advisory_group_ids() {
+        let mario: GameCandidate = serde_json::from_value(serde_json::json!({
+            "key": "super-mario-world", "title_hint": "Super Mario World",
+            "alternate_title_hints": ["Mario Bros"],
+            "identity_confidence": "filename_candidate_only",
+            "possible_title_collision": true,
+            "source_record_ids": ["snes:1"], "source_ids": ["libretro"],
+            "region_hints": ["USA"], "format_hints": ["game-genie"],
+            "code_fields": 4, "native_memory_entries": 0
+        })).unwrap();
+        let nes: GameCandidate = serde_json::from_value(serde_json::json!({
+            "key": "super-mario-bros", "title_hint": "Super Mario Bros",
+            "alternate_title_hints": [],
+            "identity_confidence": "filename_candidate_only",
+            "possible_title_collision": false,
+            "source_record_ids": ["nes:1"], "source_ids": ["libretro"],
+            "region_hints": ["USA"], "format_hints": [],
+            "code_fields": 2, "native_memory_entries": 0
+        })).unwrap();
+        let indexes = vec![
+            GameIndex {
+                schema_version: 1,
+                platform: "snes".to_owned(),
+                identity_rule: "filename only".to_owned(),
+                candidates: vec![mario],
+            },
+            GameIndex {
+                schema_version: 1,
+                platform: "nes".to_owned(),
+                identity_rule: "filename only".to_owned(),
+                candidates: vec![nes],
+            },
+        ];
+        let hits = search_cross_platform_titles(&indexes, "  MARIO  ");
+        assert_eq!(hits.len(), 2);
+        assert_eq!(hits[0].platform, "nes");
+        assert_eq!(hits[0].candidate.key, "super-mario-bros");
+        assert_eq!(hits[1].platform, "snes");
+        assert_eq!(hits[1].candidate.key, "super-mario-world");
+        assert_eq!(hits[1].candidate.region_hints, vec!["USA"]);
+        assert!(hits[1].candidate.possible_title_collision);
+        assert_eq!(search_cross_platform_titles(&indexes, "BROS").len(), 2);
+        assert!(search_cross_platform_titles(&indexes, "no matching game").is_empty());
+        assert!(search_cross_platform_titles(&indexes, "  ").is_empty());
     }
 
     #[test]
