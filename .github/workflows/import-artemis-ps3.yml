@@ -1,0 +1,52 @@
+name: Import pinned Artemis PS3 native cheats
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-artemis-ps3.yml"
+      - "tools/import_artemis_ps3.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-artemis-ps3-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire complete pinned Artemis PS3 .ncl archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/import_artemis_ps3.py
+      - name: Validate original files and per-file Git blob identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/validate.py
+      - name: Commit only PS3 original cheats, notices, and inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/artemis-ps3/ sources/artemis-ps3.json
+          if git diff --cached --quiet; then
+            echo "Pinned Artemis PS3 snapshot already archived."
+            exit 0
+          fi
+          git commit -m "data: archive 2540 pinned Artemis PS3 cheat sources"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
