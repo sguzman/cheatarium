@@ -30,7 +30,7 @@ Any record whose title cannot yield a usable key stays in its own `unresolved:<s
 
 ## Rust consumer
 
-The `cheatarium-client` crate offers `load_catalog`, `load_platform`, `load_game_candidates`, `verify_platform_distribution`, source-record search, and candidate-game search. All operate on local files and never activate cheats.
+The `cheatarium-client` crate offers `load_catalog`, `load_platform`, `load_game_candidates`, `verify_platform_distribution`, exact original-source lookup (`Bundle::find_source_record`), exact raw-code text search (`Bundle::search_exact_code`), and source-bound SNES publication evidence (`publications::load_snes_publications`). All operate on local files and never activate cheats. Exact text matches and historical publications are not verified code effects or compatible ROM identities.
 
 Example usage:
 
@@ -46,6 +46,23 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- search --db g
 Consumers should pin one Cheatarium commit or future immutable release and validate `distribution.json` before trusting downloaded artifacts. `cheatarium-query verify --db generated/v1 --platform snes --json` checks the local SNES files against the manifest; it does not authenticate the manifest itself. SHA-256 confirms files match the pinned manifest; it does **not** prove that cheats work, that the manifest was authenticated, or that the game title matches a user's ROM.
 
 Schema `v1` remains backward compatible by **adding** the `game_index_artifact` and `game_candidate_groups` catalog fields. Existing `<platform>.json.gz` source bundles and the `search` CLI continue to work. New clients may discover `games/<platform>.json.gz` via the new optional fields.
+
+## Automated build verification
+
+The index workflow validates archive manifests, Rust code and tests, SNES
+composition/publication audits, generated snapshots, and offline CLI
+behavior. It publishes a GitHub commit status under
+`cheatarium/build-index` on the commit the workflow checked, with
+`success`, `failure`, or `error`. An absent status means **no result
+confirmed**; it must not be interpreted as a passing build. Other GitHub
+checks may appear separately. The workflow caches Rust compilation and
+cancels superseded runs to avoid consuming resources testing stale
+versions. Its final snapshot publication step rejects commits whose
+source branch has advanced.
+
+The status is a report of an automated build, not a signed distribution or
+proof of executable cheat behavior. Consumers must still pin trusted
+source and verify artifact checksums independently.
 
 ## Boundaries
 
