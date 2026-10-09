@@ -2,11 +2,14 @@
 //!
 //! No ROM access, cheat activation, source edits, or network requests.
 use cheatarium_client::{
-    load_all_game_candidates, load_catalog, load_platform, verify_platform_distribution,
+    load_all_game_candidates, load_catalog, load_game_candidates, load_platform,
+    verify_platform_distribution,
     CatalogEntry, GameIndex,
 };
 use eframe::egui::{self, Color32, RichText};
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
+use std::sync::mpsc::{self, Receiver, Sender};
+use std::time::Duration;
 
 const MAX_ROW_TITLE_CHARS: usize = 92;
 
@@ -51,6 +54,73 @@ fn abbreviated(text: &str, max: usize) -> String {
     }
 }
 
+struct LoadedGame {
+    title: String,
+    sources: Vec<SourceView>,
+    entries: Vec<EntryView>,
+}
+
+struct GameRequest {
+    generation: u64,
+    platform: String,
+    key: String,
+}
+
+struct GameResult {
+    generation: u64,
+    result: Result<LoadedGame, String>,
+}
+
+fn newest_request(mut initial: GameRequest, receiver: &Receiver<GameRequest>) -> GameRequest {
+    // Only the most recently selected game is useful once the worker is free.
+    while let Ok(replacement) = receiver.try_recv() {
+        initial = replacement;
+    }
+    initial
+}
+
+fn load_verified_game(root: &Path, platform: &str, key: &str) -> Result<LoadedGame, String> {
+    let result = (|| -> cheatarium_client::Result<_> {
+        verify_platform_distribution(root, platform)?;
+        let index = load_game_candidates(root, platform)?;
+        let candidate = index.find_candidate(key)?;
+        let bundle = load_platform(root, platform)?;
+        let original_sources = bundle.sources_for_candidate(candidate)?;
+        let sources = original_sources
+            .iter()
+            .map(|record| SourceView {
+                id: record.id.clone(),
+                filename: record.raw_filename.clone(),
+                region: record.region_hint.clone().unwrap_or_else(|| "not specified".into()),
+                declared_format: record.format_hint.clone().unwrap_or_else(|| "not declared".into()),
+                upstream_repository: record.provenance.repository.clone(),
+                upstream_path: record.provenance.upstream_path.clone(),
+                revision: record.provenance.revision.clone(),
+                git_blob_sha: record.provenance.git_blob_sha.clone(),
+                license: record.provenance.license.clone(),
+            })
+            .collect();
+        let entries = bundle
+            .entries_for_candidate(candidate, None, None)?
+            .into_iter()
+            .map(|hit| EntryView {
+                source_id: hit.source_record_id.to_owned(),
+                source_file: hit.raw_filename.to_owned(),
+                ordinal: hit.entry.ordinal,
+                description: hit.entry.description.clone().unwrap_or_else(|| "(no description)".into()),
+                raw_code: hit.entry.code.clone(),
+                role: hit.entry.role.clone().unwrap_or_else(|| "unspecified".into()),
+                enabled_upstream: hit.entry.source_enabled,
+                verification: hit.entry.verification.clone(),
+                native_fields: hit.entry.native_fields.iter().map(|field| (field.name.clone(), field.value.clone())).collect(),
+                composition_note: hit.entry.composition.as_ref().map(|c| c.relation.clone()),
+            })
+            .collect();
+        Ok(LoadedGame { title: candidate.title_hint.clone(), sources, entries })
+    })();
+    result.map_err(|error| error.to_string())
+}
+
 /// The selected game is a filename-derived browse group, never a ROM identity.
 struct Explorer {
     data_root: PathBuf,
@@ -70,6 +140,10 @@ struct Explorer {
     selected_entry: Option<usize>,
     error: Option<String>,
     loading_note: String,
+    request_sender: Sender<GameRequest>,
+    result_receiver: Receiver<GameResult>,
+    request_generation: u64,
+    pending_request: Option<u64>,
 }
 
 impl Explorer {
@@ -89,6 +163,21 @@ impl Explorer {
                 Some("Cannot open verified local title catalogs. Confirm --db points to a complete Cheatarium generated/v1 snapshot.".to_owned()),
             ),
         };
+        let (request_sender, pending_requests) = mpsc::channel::<GameRequest>();
+        let (results, result_receiver) = mpsc::channel::<GameResult>();
+        let worker_root = data_root.clone();
+        std::thread::Builder::new()
+            .name("cheatarium-source-loader".to_owned())
+            .spawn(move || {
+                while let Ok(first) = pending_requests.recv() {
+                    let request = newest_request(first, &pending_requests);
+                    let result = load_verified_game(&worker_root, &request.platform, &request.key);
+                    if results.send(GameResult { generation: request.generation, result }).is_err() {
+                        break;
+                    }
+                }
+            })
+            .expect("Unable to initialize Cheatarium read-only source loader");
         let mut app = Self {
             data_root,
             platforms,
@@ -108,6 +197,10 @@ impl Explorer {
             error,
             loading_note: "Browse filename-derived game candidates; source codes are unverified."
                 .into(),
+            request_sender,
+            result_receiver,
+            request_generation: 0,
+            pending_request: None,
         };
         app.rebuild_games();
         app
@@ -139,88 +232,69 @@ impl Explorer {
     }
 
     fn select_game(&mut self, platform: &str, key: &str) {
-        // Keep all data loading in the read-only client with full selected-platform
-        // SHA-256 verification. No UI layer creates candidate identities.
-        let result = (|| -> cheatarium_client::Result<_> {
-            verify_platform_distribution(&self.data_root, platform)?;
-            let index = self
-                .indexes
-                .iter()
-                .find(|idx| idx.platform == platform)
-                .ok_or("Unknown console platform")?;
-            let candidate = index.find_candidate(key)?;
-            let bundle = load_platform(&self.data_root, platform)?;
-            let original_sources = bundle.sources_for_candidate(candidate)?;
-            let source_views: Vec<_> = original_sources
-                .iter()
-                .map(|record| SourceView {
-                    id: record.id.clone(),
-                    filename: record.raw_filename.clone(),
-                    region: record
-                        .region_hint
-                        .clone()
-                        .unwrap_or_else(|| "not specified".into()),
-                    declared_format: record
-                        .format_hint
-                        .clone()
-                        .unwrap_or_else(|| "not declared".into()),
-                    upstream_repository: record.provenance.repository.clone(),
-                    upstream_path: record.provenance.upstream_path.clone(),
-                    revision: record.provenance.revision.clone(),
-                    git_blob_sha: record.provenance.git_blob_sha.clone(),
-                    license: record.provenance.license.clone(),
-                })
-                .collect();
-            let entry_views: Vec<_> = bundle
-                .entries_for_candidate(candidate, None, None)?
-                .into_iter()
-                .map(|hit| EntryView {
-                    source_id: hit.source_record_id.to_owned(),
-                    source_file: hit.raw_filename.to_owned(),
-                    ordinal: hit.entry.ordinal,
-                    description: hit
-                        .entry
-                        .description
-                        .clone()
-                        .unwrap_or_else(|| "(no description)".into()),
-                    raw_code: hit.entry.code.clone(),
-                    role: hit
-                        .entry
-                        .role
-                        .clone()
-                        .unwrap_or_else(|| "unspecified".into()),
-                    enabled_upstream: hit.entry.source_enabled,
-                    verification: hit.entry.verification.clone(),
-                    native_fields: hit
-                        .entry
-                        .native_fields
-                        .iter()
-                        .map(|field| (field.name.clone(), field.value.clone()))
-                        .collect(),
-                    composition_note: hit.entry.composition.as_ref().map(|c| c.relation.clone()),
-                })
-                .collect();
-            Ok((candidate.title_hint.clone(), source_views, entry_views))
-        })();
-        match result {
-            Ok((title, sources, entries)) => {
-                self.selected_game = Some((platform.to_owned(), key.to_owned()));
-                self.game_title = title;
-                self.sources = sources;
-                self.entries = entries;
-                self.source_filter = None;
-                self.entry_search.clear();
-                self.entry_role = Some("code".to_owned());
-                self.selected_entry = None;
-                self.error = None;
-                self.rebuild_entries();
-                self.loading_note = format!(
-                    "{} original sources · {} imported entries · checksums verified against local manifest",
-                    self.sources.len(),
-                    self.entries.len()
-                );
+        if self.selected_game.as_ref().is_some_and(|(p, k)| p == platform && k == key) {
+            return;
+        }
+        self.request_generation = self.request_generation.wrapping_add(1);
+        let generation = self.request_generation;
+        self.selected_game = Some((platform.to_owned(), key.to_owned()));
+        self.game_title = self
+            .indexes
+            .iter()
+            .find(|index| index.platform == platform)
+            .and_then(|index| index.find_candidate(key).ok())
+            .map(|game| game.title_hint.clone())
+            .unwrap_or_else(|| key.to_owned());
+        self.sources.clear();
+        self.entries.clear();
+        self.visible_entries.clear();
+        self.selected_entry = None;
+        self.entry_search.clear();
+        self.entry_role = Some("code".to_owned());
+        self.source_filter = None;
+        self.error = None;
+        self.loading_note = "Verifying local source checksums and loading original entries…".into();
+        self.pending_request = Some(generation);
+        if self
+            .request_sender
+            .send(GameRequest {
+                generation,
+                platform: platform.to_owned(),
+                key: key.to_owned(),
+            })
+            .is_err()
+        {
+            self.pending_request = None;
+            self.error = Some("Cheatarium source loader is no longer available.".into());
+        }
+    }
+
+    fn collect_finished_loads(&mut self) {
+        while let Ok(reply) = self.result_receiver.try_recv() {
+            // A result from an older selection is never allowed to replace the
+            // game's currently selected original sources.
+            if self.pending_request != Some(reply.generation) {
+                continue;
             }
-            Err(err) => self.error = Some(format!("Unable to open original sources: {err}")),
+            self.pending_request = None;
+            match reply.result {
+                Ok(LoadedGame { title, sources, entries }) => {
+                    self.game_title = title;
+                    self.sources = sources;
+                    self.entries = entries;
+                    self.error = None;
+                    self.rebuild_entries();
+                    self.loading_note = format!(
+                        "{} original sources · {} imported entries · checksums verified against local manifest",
+                        self.sources.len(),
+                        self.entries.len()
+                    );
+                }
+                Err(error) => {
+                    self.error = Some(format!("Unable to open original sources: {error}"));
+                    self.loading_note = "Could not load original source records.".into();
+                }
+            }
         }
     }
 
@@ -414,6 +488,10 @@ impl Explorer {
             ui.heading(format!("{} · {}", self.game_title, platform));
             ui.label(RichText::new(format!("Candidate key: {key}")).small().color(Color32::GRAY));
             ui.label(&self.loading_note);
+            if self.pending_request.is_some() {
+                ui.add(egui::Spinner::new());
+                return;
+            }
             ui.separator();
             let mut filter_changed = false;
             ui.horizontal(|ui| {
@@ -473,6 +551,10 @@ impl Explorer {
 
 impl eframe::App for Explorer {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        self.collect_finished_loads();
+        if self.pending_request.is_some() {
+            ctx.request_repaint_after(Duration::from_millis(60));
+        }
         self.show_header(ctx);
         self.show_games(ctx);
         self.show_details(ctx);
@@ -520,6 +602,23 @@ fn main() -> eframe::Result {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn queued_game_selections_discard_superseded_pending_requests() {
+        let (sender, receiver) = mpsc::channel();
+        for (generation, key) in [(1, "first"), (2, "second"), (3, "latest")] {
+            sender.send(GameRequest {
+                generation,
+                platform: "snes".into(),
+                key: key.into(),
+            }).unwrap();
+        }
+        let first = receiver.recv().unwrap();
+        let newest = newest_request(first, &receiver);
+        assert_eq!(newest.generation, 3);
+        assert_eq!(newest.key, "latest");
+        assert!(receiver.try_recv().is_err());
+    }
 
     #[test]
     fn title_matching_trims_query_but_never_rewrites_originals() {
