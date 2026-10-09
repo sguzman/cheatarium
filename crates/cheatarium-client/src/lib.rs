@@ -408,7 +408,9 @@ pub fn verify_game_catalog_distribution(root: impl AsRef<Path>) -> Result<()> {
         }
         let (actual_hash, actual_length) = sha256_reader(File::open(root.join(&path))?)?;
         if actual_hash != expected.sha256 || actual_length != expected.size_bytes {
-            return Err(format!("Cheatarium title-catalog checksum/length mismatch: {path}").into());
+            return Err(
+                format!("Cheatarium title-catalog checksum/length mismatch: {path}").into(),
+            );
         }
     }
     Ok(())
@@ -1464,8 +1466,14 @@ mod tests {
     fn global_game_catalog_checksum_verification_rejects_modified_title_data() {
         use std::time::{SystemTime, UNIX_EPOCH};
 
-        let stamp = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_nanos();
-        let root = std::env::temp_dir().join(format!("cheatarium-title-audit-{}-{stamp}", std::process::id()));
+        let stamp = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .unwrap()
+            .as_nanos();
+        let root = std::env::temp_dir().join(format!(
+            "cheatarium-title-audit-{}-{stamp}",
+            std::process::id()
+        ));
         std::fs::create_dir_all(root.join("games")).unwrap();
         let catalog = serde_json::to_vec(&serde_json::json!({
             "schema_version": 1,
@@ -1479,7 +1487,8 @@ mod tests {
                 "code_fields": 1,
                 "warnings": 0
             }]
-        })).unwrap();
+        }))
+        .unwrap();
         let compressed_title_index = b"example-title-index-bytes".to_vec();
         let files = vec![
             ("catalog.json", catalog.clone()),
@@ -1506,14 +1515,22 @@ mod tests {
         std::fs::write(
             root.join("distribution.json"),
             serde_json::to_vec(&manifest).unwrap(),
-        ).unwrap();
+        )
+        .unwrap();
         assert!(verify_game_catalog_distribution(&root).is_ok());
         std::fs::write(root.join("games/snes.json.gz"), b"tampered title index").unwrap();
         assert!(verify_game_catalog_distribution(&root).is_err());
         std::fs::write(root.join("games/snes.json.gz"), &compressed_title_index).unwrap();
         let mut duplicated = manifest.clone();
-        duplicated["files"].as_array_mut().unwrap().push(manifest["files"][0].clone());
-        std::fs::write(root.join("distribution.json"), serde_json::to_vec(&duplicated).unwrap()).unwrap();
+        duplicated["files"]
+            .as_array_mut()
+            .unwrap()
+            .push(manifest["files"][0].clone());
+        std::fs::write(
+            root.join("distribution.json"),
+            serde_json::to_vec(&duplicated).unwrap(),
+        )
+        .unwrap();
         assert!(verify_game_catalog_distribution(&root).is_err());
         std::fs::remove_dir_all(&root).unwrap();
     }
