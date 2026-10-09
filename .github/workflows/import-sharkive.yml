@@ -1,0 +1,48 @@
+name: Import pinned Sharkive console cheat archive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-sharkive.yml"
+      - "tools/import_sharkive.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-sharkive-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire all pinned 3DS and Switch cheat source files
+        run: |
+          set -euo pipefail
+          python3 tools/import_sharkive.py
+      - name: Validate original Git blob integrity, native layout and source inventory
+        run: python3 tools/validate.py
+      - name: Commit only acquired original files and provenance
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/sharkive/ sources/sharkive.json
+          if git diff --cached --quiet; then
+            echo "Pinned Sharkive snapshot already archived, no new files."
+            exit 0
+          fi
+          git commit -m "data: archive 1135 pinned Sharkive 3DS and Switch cheat sources"
+          if ! git push origin HEAD:main; then
+            echo "Remote main advanced; preserving unrelated commits and rebasing imports."
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
