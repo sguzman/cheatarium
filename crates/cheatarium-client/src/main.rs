@@ -2,7 +2,7 @@
 use cheatarium_client::{
     load_catalog, load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
     publications::load_snes_publications, reviews::load_effect_reviews,
-    verify_platform_distribution,
+    verify_platform_distribution, GameEntryFilters,
 };
 use std::env;
 use std::error::Error;
@@ -23,6 +23,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut source_record_id = None;
     let mut varying_descriptions = false;
     let mut declared_format = None;
+    let mut region_hint = None;
     let mut source_id = None;
     let mut json = false;
     let mut limit = 10usize;
@@ -45,7 +46,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--region-hint USA] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -76,6 +77,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 source_record_id = Some(args.next().ok_or("--source-record-id needs an ID")?)
             }
             "--varying-descriptions" => varying_descriptions = true,
+            "--region-hint" => region_hint = Some(args.next().ok_or("--region-hint needs a value")?),
             "--declared-format" => {
                 declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
             }
@@ -104,6 +106,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             || source_record_id.is_some()
             || varying_descriptions
             || declared_format.is_some()
+            || region_hint.is_some()
             || source_id.is_some()
             || entry_role.is_some()
             || description_contains.is_some()
@@ -212,8 +215,17 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 .into(),
         );
     }
-    if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
-        return Err("--declared-format and --source-id apply only to effects".into());
+    if mode != "entries" && region_hint.is_some() {
+        return Err("--region-hint applies only to entries".into());
+    }
+    if mode != "effects" && mode != "entries" && declared_format.is_some() {
+        return Err("--declared-format applies only to effects or entries".into());
+    }
+    if mode != "effects" && mode != "entries" && source_id.is_some() {
+        return Err("--source-id applies only to effects or entries".into());
+    }
+    if region_hint.as_deref().is_some_and(|s: &str| s.trim().is_empty()) {
+        return Err("Region source filter cannot be blank".into());
     }
     if declared_format
         .as_deref()
@@ -273,11 +285,16 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         let index = load_game_candidates(&root, &platform)?;
         let candidate = index.find_candidate(key)?;
         let bundle = load_platform(&root, &platform)?;
-        let hits = bundle.search_entries_for_candidate(
+        let hits = bundle.filter_entries_for_candidate(
             candidate,
-            source_record_id.as_deref(),
-            entry_role.as_deref(),
-            description_contains.as_deref(),
+            &GameEntryFilters {
+                source_record_id: source_record_id.as_deref(),
+                role: entry_role.as_deref(),
+                description_contains: description_contains.as_deref(),
+                region_hint: region_hint.as_deref(),
+                declared_format_hint: declared_format.as_deref(),
+                source_id: source_id.as_deref(),
+            },
         )?;
         let total = hits.len();
         if json {
@@ -292,6 +309,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "source_record_id_filter": source_record_id,
                     "role_filter": entry_role,
                     "description_contains_filter": description_contains,
+                    "region_hint_filter": region_hint,
+                    "declared_format_filter": declared_format,
+                    "source_id_filter": source_id,
+                    "source_facets_match_exact_original_labels": true,
                     "description_text_match_only": true,
                     "total_original_entries": total,
                     "offset": offset,
