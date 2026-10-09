@@ -191,6 +191,10 @@ jobs:
               assert all("provenance" in record for record in bundle["records"])
           print("OK:", len(catalog["bundles"]), "versioned provenance-aware bundles")
           PY
+      - name: Confirm consumer-catalog stage
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash tools/report_ci_stage.sh consumer-catalog
       - name: Check real-world formats and search client
         shell: bash
         run: |
@@ -317,6 +321,10 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- search \
             --db generated/v1 --platform snes --title 'Donkey Kong Country' --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_source_records"] > 0 and q["candidate_only"]'
+      - name: Confirm consumer-cli stage
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash tools/report_ci_stage.sh consumer-cli
       - name: Verify read-only ROM SHA-256 fingerprint behavior
         shell: bash
         run: |
@@ -328,6 +336,10 @@ jobs:
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["fingerprint"]["sha256"] == "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"; assert d["fingerprint"]["byte_length"] == 3; assert d["evidence_lookup"]["status"] == "no_evidence"; assert not d["evidence_lookup"]["cheat_compatibility_verified"] and not d["filename_matching_used"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- verify --db generated/v1 --platform snes --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["artifact_checksums_match"] and not d["cheats_verified"]'
+      - name: Confirm consumer-fingerprint stage
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash tools/report_ci_stage.sh consumer-fingerprint
       - name: Smoke-test local SNES ZIP inventory (synthetic bytes only)
         shell: bash
         run: |
@@ -358,6 +370,10 @@ jobs:
             echo "ERROR: scanner unexpectedly overwrote private inventory" >&2
             exit 1
           fi
+      - name: Confirm consumer-zip stage
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash tools/report_ci_stage.sh consumer-zip
       - name: Exercise standalone codec and audit entire SNES coverage
         shell: bash
         run: |
@@ -373,6 +389,10 @@ jobs:
             exit 1
           fi
           python3 tools/audit_snes_codecs.py --json | python3 -c 'import json,sys; a=json.load(sys.stdin); c=a["counts"]; assert c["strictly_decoded"] > 10000 and c["decoded_from_code_syntax"] > 0 and c["format_not_identified"] > 0'
+      - name: Confirm consumer-codecs stage
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash tools/report_ci_stage.sh consumer-codecs
       - name: Confirm consumer-smoke stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
