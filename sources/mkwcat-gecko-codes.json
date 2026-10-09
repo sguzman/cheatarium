@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "mkwcat-gecko-codes",
+  "repository": "https://github.com/mkwcat/gecko-codes",
+  "snapshot_commit": "5b31c6c18bc0982fcbc1cdd9346631abd0d7d29b",
+  "license": "MIT (upstream explicitly licenses the original Gecko codes and requests author credit)",
+  "archive_prefix": "archive/mkwcat-gecko-codes/",
+  "source_cheat_files": 28,
+  "platform_scope": [
+    "wii",
+    "wii-u"
+  ],
+  "rights_note": "The upstream author explicitly licenses their own Wii/Wii U Gecko codes under MIT and asks for credit. Original version-specific markdown and its requirements remain unaltered.",
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/mkwcat-gecko-codes/LICENSE",
+      "git_blob_sha": "cddb07387e582ecc22e6e144b8c8a194c9d03b80"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/mkwcat-gecko-codes/README.md",
+      "git_blob_sha": "1b6bd19d8873caf73614a5113f3df3796bf01e08"
+    },
+    {
+      "upstream_path": "mkw/Balance-Board-Support.md",
+      "archive_path": "archive/mkwcat-gecko-codes/mkw/Balance-Board-Support.md",
+      "git_blob_sha": "cd046d3f8d1d0cff9acc214ff8603dcb0eb8ea86"
+    },
+    {
+      "upstream_path": "mkw/Load-More-Gecko-Codes.md",
+      "archive_path": "archive/mkwcat-gecko-codes/mkw/Load-More-Gecko-Codes.md",
+      "git_blob_sha": "b79120e935c60651570df178af498d47c891801e"
+    },
+    {
+      "upstream_path": "nsmbu/Arbitrary-Course-Load.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbu/Arbitrary-Course-Load.md",
+      "git_blob_sha": "3138f06422bf182b5cf41db3438e8d1a0ac04b68"
+    },
+    {
+      "upstream_path": "nsmbu/Duplicate-Anything-NSMBU.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbu/Duplicate-Anything-NSMBU.md",
+      "git_blob_sha": "0a54750f8b4455cb3ba4c96d34508b622145d18a"
+    },
+    {
+      "upstream_path": "nsmbu/Lift-Anything-NSMBU.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbu/Lift-Anything-NSMBU.md",
+      "git_blob_sha": "df5459cd2b94190d7b4bb0e444b36df68e696ce5"
+    },
+    {
+      "upstream_path": "nsmbu/README.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbu/README.md",
+      "git_blob_sha": "9c2d8f3436c7151dd95227e6f289c6372f1780ac"
+    },
+    {
+      "upstream_path": "nsmbu/Save-Anytime.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbu/Save-Anytime.md",
+      "git_blob_sha": "04654dbc0681cc360118f2d20839a26d41285611"
+    },
+    {
+      "upstream_path": "nsmbw/Allow-Movement-During-Cutscenes.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Allow-Movement-During-Cutscenes.md",
+      "git_blob_sha": "d81057020ab2183f5b4aec068813c3b279a82c06"
+    },
+    {
+      "upstream_path": "nsmbw/Connect-All-Pipes.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Connect-All-Pipes.md",
+      "git_blob_sha": "51795e2107c2a26edc68ce5807fb449ff75c6c2e"
+    },
+    {
+      "upstream_path": "nsmbw/Cycle-Through-Powerups.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Cycle-Through-Powerups.md",
+      "git_blob_sha": "df7c9b4107d3085b6f871c6a4103d2bf7fb4f401"
+    },
+    {
+      "upstream_path": "nsmbw/Death-Messages.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Death-Messages.md",
+      "git_blob_sha": "17c4692add4ba2e7f4b675f4f321ffc7c2cc0c47"
+    },
+    {
+      "upstream_path": "nsmbw/Destroy-Any-Tile.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Destroy-Any-Tile.md",
+      "git_blob_sha": "213aed93b828dead6ac329b52117c4f7a16f8a7b"
+    },
+    {
+      "upstream_path": "nsmbw/Disable-Powerup-Change-Pause.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Disable-Powerup-Change-Pause.md",
+      "git_blob_sha": "ae746f590c847b6ee65b8948ed4e93645c49fbce"
+    },
+    {
+      "upstream_path": "nsmbw/Draw-Actor-Collision.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Draw-Actor-Collision.md",
+      "git_blob_sha": "4e71ecd25fb874ef6ceff6ceddf160656a439f34"
+    },
+    {
+      "upstream_path": "nsmbw/Duplicate-Anything.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Duplicate-Anything.md",
+      "git_blob_sha": "b2b0361895879ee198ce98d0fe096b4c9a2b5a51"
+    },
+    {
+      "upstream_path": "nsmbw/Exit-Course-Anytime.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Exit-Course-Anytime.md",
+      "git_blob_sha": "a99b66dadb28315b07fc3a8b1f14f6e51356aa79"
+    },
+    {
+      "upstream_path": "nsmbw/Fall-Damage.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Fall-Damage.md",
+      "git_blob_sha": "dcb243131fc4d634de55a711294f47844476402d"
+    },
+    {
+      "upstream_path": "nsmbw/Freeze-Any-Enemy.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Freeze-Any-Enemy.md",
+      "git_blob_sha": "762a644577a2e53a650bac31cd658a2fdc515719"
+    },
+    {
+      "upstream_path": "nsmbw/Fully-Open-Areas.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Fully-Open-Areas.md",
+      "git_blob_sha": "709bbaae75a148bb6a0909ee35a0a7cd4f6ad9e4"
+    },
+    {
+      "upstream_path": "nsmbw/GameCube-Controller-Support.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/GameCube-Controller-Support.md",
+      "git_blob_sha": "6197b051213410c67187a7556bf73dd8486da662"
+    },
+    {
+      "upstream_path": "nsmbw/Lift-Anything.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Lift-Anything.md",
+      "git_blob_sha": "a6b4f17c6a9b3e31b3251f47308f429ebda9efe2"
+    },
+    {
+      "upstream_path": "nsmbw/Load-More-Gecko-Codes.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Load-More-Gecko-Codes.md",
+      "git_blob_sha": "fb4a56d3d5a5923655645c672281da7e1c3a5a6c"
+    },
+    {
+      "upstream_path": "nsmbw/Midair-Crouching.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Midair-Crouching.md",
+      "git_blob_sha": "92652541caa112a4ac6eb72489abb22ef6db4eae"
+    },
+    {
+      "upstream_path": "nsmbw/No-Projectile-Limits.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/No-Projectile-Limits.md",
+      "git_blob_sha": "f3d7c8c0d4bc32e958a2553fa8759300cd88b0d6"
+    },
+    {
+      "upstream_path": "nsmbw/Player-1-Can-Change-Character.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Player-1-Can-Change-Character.md",
+      "git_blob_sha": "69f0d53666b3a206d21e9521619e7c65dd825eba"
+    },
+    {
+      "upstream_path": "nsmbw/Random-Worldmap-Anim.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Random-Worldmap-Anim.md",
+      "git_blob_sha": "b95d94e74444669969e95979b36265df5c517edb"
+    },
+    {
+      "upstream_path": "nsmbw/Save-Anytime.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Save-Anytime.md",
+      "git_blob_sha": "35a7ee66cc3dfaa8df6cc3cda72bd0e92a2f9830"
+    },
+    {
+      "upstream_path": "nsmbw/Speed-Up-Everything-But-Player.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/Speed-Up-Everything-But-Player.md",
+      "git_blob_sha": "6f6f465bf3c587ffe6fea2656c9fd46e451eae8f"
+    },
+    {
+      "upstream_path": "nsmbw/World-Map-Expansion-Support.md",
+      "archive_path": "archive/mkwcat-gecko-codes/nsmbw/World-Map-Expansion-Support.md",
+      "git_blob_sha": "b5dce8b5c70843d4378b58fdfea39f2441d792be"
+    }
+  ]
+}

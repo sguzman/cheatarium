@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "id": "admentus-enhancement-codes",
+  "repository": "https://github.com/Admentus64/Enhancement-Codes",
+  "snapshot_commit": "f8e9ad12d90460e316b552fdf73052eb308e9ab9",
+  "license": "GPL-3.0-only (repository license; respect named source-code authors and upstream notices)",
+  "archive_prefix": "archive/admentus-enhancement-codes/",
+  "source_cheat_files": 21,
+  "platform_scope": [
+    "gamecube",
+    "wii",
+    "wii-u"
+  ],
+  "rights_note": "The upstream Credits.txt attributes AR/Gecko coding to numerous authors. These credits and original per-game Dolphin .ini contents are preserved.",
+  "files": [
+    {
+      "upstream_path": "Credits.txt",
+      "archive_path": "archive/admentus-enhancement-codes/Credits.txt",
+      "git_blob_sha": "c9d97c46193dd39b09958ba99df9d97fe2c0f27d"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/admentus-enhancement-codes/LICENSE",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "upstream_path": "Mario Kart 64 (VC)/NABE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Mario Kart 64 (VC)/NABE01.ini",
+      "git_blob_sha": "46efd3aef083c5f39d120a8e3a6f01e1ef23bfd7"
+    },
+    {
+      "upstream_path": "Paper Mario (VC)/NAEE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Paper Mario (VC)/NAEE01.ini",
+      "git_blob_sha": "d6100117e2a205c4ba84a4c7da7c61cc557b8993"
+    },
+    {
+      "upstream_path": "Paper Mario, TTYD (GC)/G8ME01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Paper Mario, TTYD (GC)/G8ME01.ini",
+      "git_blob_sha": "509b68f7368211f5ed4ded6af958b8b91c6646de"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/admentus-enhancement-codes/README.md",
+      "git_blob_sha": "e361774ea6013a606234dc46bb9be9de7f654418"
+    },
+    {
+      "upstream_path": "Star Fox 64 (VC)/NADE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Star Fox 64 (VC)/NADE01.ini",
+      "git_blob_sha": "b3583612f61629622f73ec93b016f82e059d57b7"
+    },
+    {
+      "upstream_path": "Super Mario 64 (VC)/NAAE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Super Mario 64 (VC)/NAAE01.ini",
+      "git_blob_sha": "1aa7bca3e0b479b610e4fb427e25efdd42ed50b3"
+    },
+    {
+      "upstream_path": "Super Mario 64 (VC)/NAAJ01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Super Mario 64 (VC)/NAAJ01.ini",
+      "git_blob_sha": "0027451cb01796076c45cc9853d95653d31ae47a"
+    },
+    {
+      "upstream_path": "Super Mario 64 (VC)/NAAP01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Super Mario 64 (VC)/NAAP01.ini",
+      "git_blob_sha": "00da83703535324554ad606b62d2b1d510b12b98"
+    },
+    {
+      "upstream_path": "Super Mario 64 (VC)/NAXE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Super Mario 64 (VC)/NAXE01.ini",
+      "git_blob_sha": "d1ee1ba1118ea1bf1cdbe29228cfa4041e8d00a6"
+    },
+    {
+      "upstream_path": "Super Mario 64 (VC)/NTLC01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Super Mario 64 (VC)/NTLC01.ini",
+      "git_blob_sha": "292de3dbda8dc2f75b25f6dc25d843ef705a3257"
+    },
+    {
+      "upstream_path": "Super Smash Bros (VC)/NALE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Super Smash Bros (VC)/NALE01.ini",
+      "git_blob_sha": "cc0a59d615f4c30f48945edc196ecb18daed90dd"
+    },
+    {
+      "upstream_path": "Zelda, Collector's Edition (GC)/PZLE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Collector's Edition (GC)/PZLE01.ini",
+      "git_blob_sha": "920f371b0a4ff6566fac1d00f7659d2f2cc7e19d"
+    },
+    {
+      "upstream_path": "Zelda, Collector's Edition (GC)/PZLP01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Collector's Edition (GC)/PZLP01.ini",
+      "git_blob_sha": "3337ca6af2da24d7ea757c342cd408b7525b146f"
+    },
+    {
+      "upstream_path": "Zelda, Collector's Edition (GC)/RELS01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Collector's Edition (GC)/RELS01.ini",
+      "git_blob_sha": "920f371b0a4ff6566fac1d00f7659d2f2cc7e19d"
+    },
+    {
+      "upstream_path": "Zelda, Dawn & Dusk (VC)/NAC101.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Dawn & Dusk (VC)/NAC101.ini",
+      "git_blob_sha": "55296c2571756fd52af31f656563a446b6b5407c"
+    },
+    {
+      "upstream_path": "Zelda, Majora's Mask (VC)/NAR001.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Majora's Mask (VC)/NAR001.ini",
+      "git_blob_sha": "915ee68ad9e78d7606c53ee6cfe7222900a6e7a6"
+    },
+    {
+      "upstream_path": "Zelda, Majora's Mask (VC)/NARE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Majora's Mask (VC)/NARE01.ini",
+      "git_blob_sha": "915ee68ad9e78d7606c53ee6cfe7222900a6e7a6"
+    },
+    {
+      "upstream_path": "Zelda, Majora's Mask (VC)/NARJ01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Majora's Mask (VC)/NARJ01.ini",
+      "git_blob_sha": "ba3d1abc803fab3d8b6b1770cb82a80f7415d394"
+    },
+    {
+      "upstream_path": "Zelda, Majora's Mask (VC)/ReadMe.txt",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Majora's Mask (VC)/ReadMe.txt",
+      "git_blob_sha": "3195f7190a41a93838d77d699eefa2d9a58d209f"
+    },
+    {
+      "upstream_path": "Zelda, Master Quest (GC)/D43E01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Master Quest (GC)/D43E01.ini",
+      "git_blob_sha": "03c43192d2201eb0be8b635adaa0242aea050a50"
+    },
+    {
+      "upstream_path": "Zelda, Master Quest (GC)/D43P01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Master Quest (GC)/D43P01.ini",
+      "git_blob_sha": "048a7e3e79132861e7938ba18fea43ac03befedd"
+    },
+    {
+      "upstream_path": "Zelda, Ocarina of Time (VC)/NAC001.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Ocarina of Time (VC)/NAC001.ini",
+      "git_blob_sha": "59a3cfe808089cd7322b4a4cad8ae792257f0adc"
+    },
+    {
+      "upstream_path": "Zelda, Ocarina of Time (VC)/NACE01.ini",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Ocarina of Time (VC)/NACE01.ini",
+      "git_blob_sha": "efdb50cb9a566a94a311df709ece322f85dccfbe"
+    },
+    {
+      "upstream_path": "Zelda, Ocarina of Time (VC)/ReadMe.txt",
+      "archive_path": "archive/admentus-enhancement-codes/Zelda, Ocarina of Time (VC)/ReadMe.txt",
+      "git_blob_sha": "1c7291013ac591dab476b3b89c65fa7b054f66ad"
+    }
+  ]
+}
