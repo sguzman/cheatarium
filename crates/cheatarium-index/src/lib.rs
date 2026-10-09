@@ -95,6 +95,7 @@ fn unquote(value: &str) -> String {
 pub fn parse_native_sections(text: &str) -> ParsedCheats {
     fn append_section(codes: &mut Vec<Code>, description: Option<String>, body: String) {
         let is_code = !body.trim().is_empty() && description.is_some();
+        let code = if is_code { Some(body.clone()) } else { None };
         let native_fields = if description.is_none() && !body.trim().is_empty() {
             vec![NativeField {
                 name: "unattributed_original_text".to_owned(),
@@ -103,7 +104,6 @@ pub fn parse_native_sections(text: &str) -> ParsedCheats {
         } else {
             Vec::new()
         };
-        let code = if is_code { Some(body.clone()) } else { None };
         if description.is_some() || !native_fields.is_empty() {
             codes.push(Code {
                 ordinal: codes.len(),
