@@ -15,6 +15,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut effect = None;
     let mut exact_code = None;
     let mut game_key = None;
+    let mut entry_role = None;
     let mut category = None;
     let mut composition_relation = None;
     let mut source_record_id = None;
@@ -30,6 +31,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("source") => "source",
         Some("games") => "games",
         Some("game") => "game",
+        Some("entries") => "entries",
         Some("platforms") => "platforms",
         Some("verify") => "verify",
         Some("effects") => "effects",
@@ -40,7 +42,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -52,6 +54,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--effect" => effect = Some(args.next().ok_or("--effect needs a value")?),
             "--code" => exact_code = Some(args.next().ok_or("--code needs original source text")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
+            "--role" => entry_role = Some(args.next().ok_or("--role needs a value")?),
             "--category" => category = Some(args.next().ok_or("--category needs an ID")?),
             "--relation" => {
                 composition_relation = Some(args.next().ok_or("--relation needs a value")?)
@@ -89,6 +92,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             || varying_descriptions
             || declared_format.is_some()
             || source_id.is_some()
+            || entry_role.is_some()
         {
             return Err("platforms accepts --db, --offset, --limit and --json only".into());
         }
@@ -137,8 +141,12 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "platforms"
         && mode != "games"
         && mode != "search"
+        && mode != "entries"
     {
         return Err("--offset applies only to paginated source, game, publication, composition, code and search results".into());
+    }
+    if mode != "entries" && entry_role.is_some() {
+        return Err("--role applies only to entries".into());
     }
     if mode != "codes" && exact_code.is_some() {
         return Err("--code applies only to codes".into());
@@ -157,6 +165,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "compositions"
         && mode != "codes"
         && mode != "source"
+        && mode != "entries"
         && source_record_id.is_some()
     {
         return Err("--source-record-id applies only to reviews, publications, compositions, codes or source".into());
@@ -173,6 +182,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "publications"
         && mode != "codes"
         && mode != "game"
+        && mode != "entries"
         && game_key.is_some()
     {
         return Err(
@@ -191,6 +201,57 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             .is_some_and(|s: &str| s.trim().is_empty())
     {
         return Err("Effect source and device filters cannot be empty".into());
+    }
+    if mode == "entries" {
+        let key = game_key.as_deref().ok_or("Please provide --game-key")?;
+        verify_platform_distribution(&root, &platform)?;
+        let index = load_game_candidates(&root, &platform)?;
+        let candidate = index.find_candidate(key)?;
+        let bundle = load_platform(&root, &platform)?;
+        let hits = bundle.entries_for_candidate(
+            candidate,
+            source_record_id.as_deref(),
+            entry_role.as_deref(),
+        )?;
+        let total = hits.len();
+        if json {
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.game_entries.v1",
+                    "platform": platform,
+                    "candidate_game_key": candidate.key,
+                    "title_hint": candidate.title_hint,
+                    "possible_title_collision": candidate.possible_title_collision,
+                    "source_record_id_filter": source_record_id,
+                    "role_filter": entry_role,
+                    "total_original_entries": total,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "candidate_only": true,
+                    "same_code_text_is_not_equivalence": true,
+                    "original_source_enabled_is_not_activation": true,
+                    "game_identity_verified": false,
+                    "code_effects_verified": false,
+                    "cheats_activated": false,
+                    "entries": hits.into_iter().skip(offset).take(limit).collect::<Vec<_>>(),
+                }))?
+            );
+        } else {
+            println!("{total} original entries for {} on {}", candidate.title_hint, platform);
+            println!("Original source code text, not verified effects or ROM identity.");
+            for hit in hits.into_iter().skip(offset).take(limit) {
+                println!(
+                    "- {} #{}: {} ({})",
+                    hit.source_record_id,
+                    hit.entry.ordinal,
+                    hit.entry.description.as_deref().unwrap_or("<unnamed>"),
+                    hit.entry.role.as_deref().unwrap_or("unspecified")
+                );
+            }
+        }
+        return Ok(());
     }
     if mode == "game" {
         let key = game_key.as_deref().ok_or("Please provide --game-key")?;
