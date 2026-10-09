@@ -1102,29 +1102,22 @@ mod tests {
             .search_entries_for_candidate(&candidate, None, None, Some("  INFINITE lives "))
             .unwrap();
         assert_eq!(matched.len(), 1);
-        assert_eq!(matched[0].entry.description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(
+            matched[0].entry.description.as_deref(),
+            Some("Infinite Lives")
+        );
         assert_eq!(matched[0].entry.code.as_deref(), Some("ABCD"));
         assert_eq!(matched[0].entry.ordinal, 0);
         assert_eq!(matched[0].provenance.upstream_path, "cht/sample.cht");
         assert_eq!(
             bundle
-                .search_entries_for_candidate(
-                    &candidate,
-                    Some("x"),
-                    Some("code"),
-                    Some("lIvEs"),
-                )
+                .search_entries_for_candidate(&candidate, Some("x"), Some("code"), Some("lIvEs"),)
                 .unwrap()
                 .len(),
             1
         );
         assert!(bundle
-            .search_entries_for_candidate(
-                &candidate,
-                None,
-                Some("section-heading"),
-                Some("lives"),
-            )
+            .search_entries_for_candidate(&candidate, None, Some("section-heading"), Some("lives"),)
             .unwrap()
             .is_empty());
         assert_eq!(
