@@ -77,7 +77,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 source_record_id = Some(args.next().ok_or("--source-record-id needs an ID")?)
             }
             "--varying-descriptions" => varying_descriptions = true,
-            "--region-hint" => region_hint = Some(args.next().ok_or("--region-hint needs a value")?),
+            "--region-hint" => {
+                region_hint = Some(args.next().ok_or("--region-hint needs a value")?)
+            }
             "--declared-format" => {
                 declared_format = Some(args.next().ok_or("--declared-format needs a value")?)
             }
@@ -224,7 +226,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     if mode != "effects" && mode != "entries" && source_id.is_some() {
         return Err("--source-id applies only to effects or entries".into());
     }
-    if region_hint.as_deref().is_some_and(|s: &str| s.trim().is_empty()) {
+    if region_hint
+        .as_deref()
+        .is_some_and(|s: &str| s.trim().is_empty())
+    {
         return Err("Region source filter cannot be blank".into());
     }
     if declared_format

@@ -624,9 +624,15 @@ impl Bundle {
         if filters.source_record_id == Some("") {
             return Err("Original source record filter cannot be empty".into());
         }
-        if filters.region_hint.is_some_and(|value| value.trim().is_empty())
-            || filters.declared_format_hint.is_some_and(|value| value.trim().is_empty())
-            || filters.source_id.is_some_and(|value| value.trim().is_empty())
+        if filters
+            .region_hint
+            .is_some_and(|value| value.trim().is_empty())
+            || filters
+                .declared_format_hint
+                .is_some_and(|value| value.trim().is_empty())
+            || filters
+                .source_id
+                .is_some_and(|value| value.trim().is_empty())
         {
             return Err("Source metadata filters cannot be blank".into());
         }
@@ -1235,44 +1241,80 @@ mod tests {
             "possible_title_collision": false, "source_record_ids": ["x"],
             "source_ids": ["libretro"], "region_hints": ["USA"],
             "format_hints": [], "code_fields": 1, "native_memory_entries": 0
-        })).unwrap();
-        let selected = bundle.filter_entries_for_candidate(
-            &candidate,
-            &GameEntryFilters {
-                region_hint: Some("USA"),
-                source_id: Some("libretro"),
-                role: Some("code"),
-                description_contains: Some("LIVES"),
-                ..GameEntryFilters::default()
-            },
-        ).unwrap();
+        }))
+        .unwrap();
+        let selected = bundle
+            .filter_entries_for_candidate(
+                &candidate,
+                &GameEntryFilters {
+                    region_hint: Some("USA"),
+                    source_id: Some("libretro"),
+                    role: Some("code"),
+                    description_contains: Some("LIVES"),
+                    ..GameEntryFilters::default()
+                },
+            )
+            .unwrap();
         assert_eq!(selected.len(), 1);
         assert_eq!(selected[0].entry.ordinal, 0);
-        assert_eq!(selected[0].entry.description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(
+            selected[0].entry.description.as_deref(),
+            Some("Infinite Lives")
+        );
         assert_eq!(selected[0].provenance.source_id, "libretro");
         for facets in [
-            GameEntryFilters { region_hint: Some("usa"), ..GameEntryFilters::default() },
-            GameEntryFilters { region_hint: Some("Europe"), ..GameEntryFilters::default() },
-            GameEntryFilters { declared_format_hint: Some("game-genie"), ..GameEntryFilters::default() },
-            GameEntryFilters { source_id: Some("other-source"), ..GameEntryFilters::default() },
+            GameEntryFilters {
+                region_hint: Some("usa"),
+                ..GameEntryFilters::default()
+            },
+            GameEntryFilters {
+                region_hint: Some("Europe"),
+                ..GameEntryFilters::default()
+            },
+            GameEntryFilters {
+                declared_format_hint: Some("game-genie"),
+                ..GameEntryFilters::default()
+            },
+            GameEntryFilters {
+                source_id: Some("other-source"),
+                ..GameEntryFilters::default()
+            },
         ] {
-            assert!(bundle.filter_entries_for_candidate(&candidate, &facets).unwrap().is_empty());
+            assert!(bundle
+                .filter_entries_for_candidate(&candidate, &facets)
+                .unwrap()
+                .is_empty());
         }
         for facets in [
-            GameEntryFilters { region_hint: Some("   "), ..GameEntryFilters::default() },
-            GameEntryFilters { declared_format_hint: Some(""), ..GameEntryFilters::default() },
-            GameEntryFilters { source_id: Some(" "), ..GameEntryFilters::default() },
+            GameEntryFilters {
+                region_hint: Some("   "),
+                ..GameEntryFilters::default()
+            },
+            GameEntryFilters {
+                declared_format_hint: Some(""),
+                ..GameEntryFilters::default()
+            },
+            GameEntryFilters {
+                source_id: Some(" "),
+                ..GameEntryFilters::default()
+            },
         ] {
-            assert!(bundle.filter_entries_for_candidate(&candidate, &facets).is_err());
+            assert!(bundle
+                .filter_entries_for_candidate(&candidate, &facets)
+                .is_err());
         }
-        let mut malformed: GameCandidate = serde_json::from_value(
-            serde_json::to_value(&candidate).unwrap()
-        ).unwrap();
+        let mut malformed: GameCandidate =
+            serde_json::from_value(serde_json::to_value(&candidate).unwrap()).unwrap();
         malformed.source_record_ids = vec!["missing".into()];
-        assert!(bundle.filter_entries_for_candidate(
-            &malformed,
-            &GameEntryFilters { region_hint: Some("Europe"), ..GameEntryFilters::default() }
-        ).is_err());
+        assert!(bundle
+            .filter_entries_for_candidate(
+                &malformed,
+                &GameEntryFilters {
+                    region_hint: Some("Europe"),
+                    ..GameEntryFilters::default()
+                }
+            )
+            .is_err());
     }
 
     #[test]
