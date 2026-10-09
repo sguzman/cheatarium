@@ -63,6 +63,14 @@ def test():
         bad = copy.deepcopy(registry)
         bad["records"][0][name] = replacement
         fails(bad, bundle)
+    repeated_source = copy.deepcopy(bundle)
+    repeated_source["records"].append(copy.deepcopy(repeated_source["records"][0]))
+    fails(registry, repeated_source)
+    repeated_ordinal = copy.deepcopy(bundle)
+    repeated_ordinal["records"][0]["codes"].append(
+        copy.deepcopy(repeated_ordinal["records"][0]["codes"][0])
+    )
+    fails(registry, repeated_ordinal)
     bad = copy.deepcopy(registry)
     bad["records"].append(copy.deepcopy(bad["records"][0]))
     fails(bad, bundle)
