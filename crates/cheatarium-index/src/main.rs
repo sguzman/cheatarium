@@ -776,6 +776,9 @@ fn run() -> Result<()> {
                 "goldhen" if original.starts_with("json/") && original.ends_with(".json") => {
                     ("ps4", "goldhen-json", original.trim_start_matches("json/").trim_end_matches(".json").to_owned())
                 }
+                "goldhen" if original.starts_with("mc4/") && original.ends_with(".xml") => {
+                    ("ps4", "goldhen-mc4-xml", original.trim_start_matches("mc4/").to_owned())
+                }
                 "goldhen" if original.starts_with("mc4/") && original.to_ascii_lowercase().ends_with(".mc4") => {
                     ("ps4", "goldhen-mc4", original.trim_start_matches("mc4/").to_owned())
                 }
@@ -811,6 +814,7 @@ fn run() -> Result<()> {
                 "goldhen-json" => parse_goldhen_json(&decoded),
                 "goldhen-mc4" => parse_goldhen_mc4(&decoded),
                 "goldhen-shn" => parse_goldhen_shn(&decoded),
+                "goldhen-mc4-xml" => parse_goldhen_shn(&decoded),
                 "dolphin-ini" => parse_gecko_ini(&decoded),
                 "gecko-markdown" => parse_gecko_markdown(&decoded),
                 _ => unreachable!(),
