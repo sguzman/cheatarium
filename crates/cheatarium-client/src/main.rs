@@ -135,8 +135,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "source"
         && mode != "game"
         && mode != "platforms"
+        && mode != "games"
+        && mode != "search"
     {
-        return Err("--offset applies only to compositions, publications, codes, source or game".into());
+        return Err("--offset applies only to paginated source, game, publication, composition, code and search results".into());
     }
     if mode != "codes" && exact_code.is_some() {
         return Err("--code applies only to codes".into());
@@ -790,13 +792,16 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "query": title,
                     "candidate_only": true,
                     "total_candidate_groups": total,
-                    "candidates": hits.into_iter().take(limit).collect::<Vec<_>>()
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "candidates": hits.into_iter().skip(offset).take(limit).collect::<Vec<_>>()
                 }))?
             );
         } else {
             println!("{total} candidate game groups for {title:?} on {platform}");
             println!("WARNING: filename grouping is not verified game/ROM identity.");
-            for game in hits.into_iter().take(limit) {
+            for game in hits.into_iter().skip(offset).take(limit) {
                 println!(
                     "- {} ({} sources, {} records, {} codes)",
                     game.title_hint,
@@ -819,7 +824,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "query": title,
                     "candidate_only": true,
                     "total_source_records": total,
-                    "records": hits.into_iter().take(limit).collect::<Vec<_>>()
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "records": hits.into_iter().skip(offset).take(limit).collect::<Vec<_>>()
                 }))?
             );
         } else {
@@ -827,7 +835,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             println!(
                 "WARNING: title matches are suggestions; ROM/build compatibility is unverified."
             );
-            for hit in hits.into_iter().take(limit) {
+            for hit in hits.into_iter().skip(offset).take(limit) {
                 let code_count = hit.codes.iter().filter(|x| x.is_code()).count();
                 let memory_count = hit.codes.iter().filter(|x| x.is_memory_entry()).count();
                 println!(
