@@ -26,6 +26,7 @@ The client exposes `load_catalog`, `load_game_candidates`, `load_platform`, `ver
 ```sh
 cargo run --release -p cheatarium-client --bin cheatarium-query -- games --db generated/v1 --platform snes --title 'Chrono Trigger' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- search --db generated/v1 --platform snes --title 'Chrono Trigger' --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- source --db generated/v1 --platform snes --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --offset 0 --limit 20 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- effects --db generated/v1 --platform snes --effect 'Infinite Lives' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- codes --db generated/v1 --platform snes --code '6D6B-6F0F' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- repeats --db generated/v1 --platform snes --game-key super-mario-world --json
@@ -47,6 +48,8 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db g
 `reviews` lists separately sourced reports and exact-ROM test observations, optionally narrowed by original `--source-record-id` or `--category`. It currently returns five externally reported claims (three SNES and two NES) and zero tested observations. No text-only match has been promoted to an empirically verified cheat. See [effect reviews](EFFECT-REVIEWS.md).
 
 `tags` lists English-language cue counts or, with `--category`, source-record occurrences and the exact phrase that matched. Optional `--game-key` narrows category results to a **filename-derived candidate**. A textual phrase can be negated, misleading or mistranslated and does not establish functionality. See [Effect signals](EFFECT-SIGNALS.md).
+
+`source` inspects one **exact original source record**, identified by `--source-record-id`. It returns the source's filename, advisory title and region/format hints, import warnings, upstream repository/revision/license and Git blob provenance, together with paginated original entries. It preserves device-code fields, native memory entries and section headings separately, including each entry's ordinal, original description, original enable bit and unverified status. `--offset` and `--limit` allow walking large `.cht` files without dumping everything at once. Neither original enabled flags nor imported text authorize execution.
 
 `codes` finds **literal exact-code text** within a chosen platform. It preserves case, spaces and original `+` joins, then reports every matching original source record, ordinal, description, device/region hints and pinned provenance. Optional `--game-key` and `--source-record-id` filters narrow advisory candidates or exact original records; `--offset` and `--limit` paginate matches. This is not normalization or deduplication: exact string matches across sources do not establish equivalent effects, valid ROM revisions, or activation permission. The query never executes cheats.
 
