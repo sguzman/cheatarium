@@ -24,6 +24,7 @@ An emulator can download the relevant platform artifacts at a **pinned Cheatariu
 The client exposes `load_catalog`, `load_game_candidates`, `load_platform`, `verify_platform_distribution`, `publications::load_snes_publications`, and candidate title searches. Its CLI supports these local-only operations:
 
 ```sh
+cargo run --release -p cheatarium-client --bin cheatarium-query -- platforms --db generated/v1 --offset 0 --limit 36 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- games --db generated/v1 --platform snes --title 'Chrono Trigger' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- game --db generated/v1 --platform snes --game-key push-over --offset 0 --limit 20 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- search --db generated/v1 --platform snes --title 'Chrono Trigger' --json
@@ -49,6 +50,8 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db g
 `reviews` lists separately sourced reports and exact-ROM test observations, optionally narrowed by original `--source-record-id` or `--category`. It currently returns five externally reported claims (three SNES and two NES) and zero tested observations. No text-only match has been promoted to an empirically verified cheat. See [effect reviews](EFFECT-REVIEWS.md).
 
 `tags` lists English-language cue counts or, with `--category`, source-record occurrences and the exact phrase that matched. Optional `--game-key` narrows category results to a **filename-derived candidate**. A textual phrase can be negated, misleading or mistranslated and does not establish functionality. See [Effect signals](EFFECT-SIGNALS.md).
+
+`platforms` lists supported indexed consoles/handhelds without needing `--platform`, with source-file counts, filename-derived game-candidate counts, code/memory counts and artifact paths. Its `--offset`/`--limit` pagination supports small command palettes and GUIs. This is catalog enumeration, **not** proof of any game identity or imported cheat's functionality. A title-search workflow is `platforms` → `games --platform ... --title ...` → `game --game-key ...` → `source --source-record-id ...`.
 
 `game` accepts one **exact advisory candidate game key** (`--game-key`) and joins the separately generated game index to its original per-platform source records. It returns full source IDs, filenames, source/region/format hints, Git blob and upstream licensing provenance, import warnings and per-source counts without dumping all cheat entries. Results use `--offset` and `--limit` with unpaginated totals. Missing/duplicate references, mismatched game keys, and disagreeing source-code/memory counts cause errors; the local distribution is checksum-checked first. The command never promotes a filename match to ROM identity or authorizes activation. Use the returned `source_record_id` with `source` to page individual original cheats.
 
