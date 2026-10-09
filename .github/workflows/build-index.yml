@@ -41,6 +41,7 @@ on:
 
 permissions:
   contents: write
+  statuses: write
 
 concurrency:
   group: cheatarium-index-build
@@ -351,3 +352,25 @@ jobs:
               exit 1
             fi
           fi
+
+      - name: Report complete index build result on source commit
+        if: always()
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          VALIDATION_STATUS: ${{ job.status }}
+        run: |
+          set -euo pipefail
+          case "$VALIDATION_STATUS" in
+            success) state=success ;;
+            failure) state=failure ;;
+            *) state=error ;;
+          esac
+          payload="$(printf '{"state":"%s","context":"cheatarium/build-index","description":"Automated Cheatarium validation and distribution build"}' "$state")"
+          curl --fail-with-body --silent --show-error --retry 2 \
+            --request POST \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            --data "$payload" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}"
