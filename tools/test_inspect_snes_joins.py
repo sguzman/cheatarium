@@ -112,7 +112,7 @@ def test():
         "evidence_limit": "Publication is not verified execution",
         "records": [{
             "candidate_game_key": "example", "source_record_id": "source-b",
-            "source_git_blob_sha": "f" * 40, "source_ordinal": 9,
+            "source_git_blob_sha": "a" * 40, "source_ordinal": 9,
             "raw_code": "AAAA+BBBB",
             "published_text_segments": ["AAAA", "BBBB"],
             "published_effect_description": "Original published effect",
