@@ -18,7 +18,9 @@
 - [x] Start Libretro NES and SNES proof-of-concept imports.
 - [x] Import 39 Libretro console/handheld source collections with pinned per-file provenance (23,382 files, 36 canonical console bundles).
 - [x] Add Libretro N64, Nintendo DS, Virtual Boy and FDS.
-- [ ] Add GameCube, Wii, 3DS, Wii U and Switch from other sources.
+- [x] Archive 644 Nintendo 3DS and 491 Nintendo Switch native cheat files from pinned Sharkive (1,135 new original source files; unverified; not yet exposed through the Libretro-only console indexes).
+- [ ] Index original Sharkive 3DS title-ID and Switch title/build-ID cheat sections without inventing game names or activation semantics.
+- [ ] Acquire GameCube, Wii, Wii U, and further independent 3DS/Switch cheat sources.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
 - [ ] Expand Sony beyond the imported PS1/PSP collections: PS2, PS3, Vita, PS4.
 - [ ] Evaluate Nintendo Switch title-ID/build-ID cheat datasets, PS2 PCSX2 `.pnach` collections, and GameCube/Wii Gecko codes.
