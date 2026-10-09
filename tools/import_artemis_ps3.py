@@ -27,10 +27,13 @@ def blob_sha(raw: bytes) -> str:
 
 
 def selected_source_paths(upstream: Path) -> list:
-    original = subprocess.check_output(
-        ["git", "-C", str(upstream), "ls-tree", "-r", "--name-only", "HEAD"],
-        text=True,
-    ).splitlines()
+    original = [
+        entry.decode("utf-8", errors="surrogateescape")
+        for entry in subprocess.check_output(
+            ["git", "-C", str(upstream), "ls-tree", "-r", "-z", "--name-only", "HEAD"],
+        ).split(b"\0")
+        if entry
+    ]
     selected = set()
     ncl_paths = []
     for relative in original:
