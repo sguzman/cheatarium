@@ -1,8 +1,9 @@
 use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
 use cheatarium_index::{
-    candidate_game_key, format_hint, parse_cht, parse_native_sections, region_hint, title_hint,
-    Code, CompositionEvidence, SourceComposition,
+    candidate_game_key, format_hint, parse_artemis_ncl, parse_cht, parse_gecko_ini,
+    parse_gecko_markdown, parse_goldhen_json, parse_goldhen_mc4, parse_goldhen_shn,
+    parse_native_sections, region_hint, title_hint, Code, CompositionEvidence, SourceComposition,
 };
 use flate2::{Compression, GzBuilder};
 use serde::{Deserialize, Serialize};
@@ -538,6 +539,9 @@ fn run() -> Result<()> {
     }
     known_platforms.insert("3ds".to_owned());
     known_platforms.insert("switch".to_owned());
+    for platform in ["ps3", "ps4", "gamecube", "wii", "wii-u"] {
+        known_platforms.insert(platform.to_owned());
+    }
     if let Some(ref filter) = wanted {
         for id in filter {
             if !known_platforms.contains(id) {
@@ -749,6 +753,101 @@ fn run() -> Result<()> {
             .entry(platform.to_owned())
             .or_default()
             .push(record);
+    }
+
+    // Pinned later-generation sources are independently inventoried, and
+    // copied unchanged. Build ONLY source-derived game/title/build candidates.
+    // In particular, GoldHEN PS2-looking IDs are not claims of PS2 support.
+    for manifest_id in [
+        "artemis-ps3", "goldhen", "admentus-enhancement-codes", "mkwcat-gecko-codes"
+    ] {
+        let native: SourceManifest = serde_json::from_slice(
+            &fs::read(root.join(format!("sources/{manifest_id}.json")))?
+        )?;
+        if native.id != manifest_id {
+            return Err(format!("Wrong source manifest identity for {manifest_id}").into());
+        }
+        for item in native.files {
+            let original = &item.upstream_path;
+            let (platform, format, title) = match manifest_id {
+                "artemis-ps3" if original.starts_with("docs/codes/") && original.ends_with(".ncl") => {
+                    ("ps3", "artemis-ncl", original.trim_start_matches("docs/codes/").trim_end_matches(".ncl").to_owned())
+                }
+                "goldhen" if original.starts_with("json/") && original.ends_with(".json") => {
+                    ("ps4", "goldhen-json", original.trim_start_matches("json/").trim_end_matches(".json").to_owned())
+                }
+                "goldhen" if original.starts_with("mc4/") && original.to_ascii_lowercase().ends_with(".mc4") => {
+                    ("ps4", "goldhen-mc4", original.trim_start_matches("mc4/").to_owned())
+                }
+                "goldhen" if original.starts_with("shn/") &&
+                    (original.ends_with(".shn") || original.ends_with(".xml")) => {
+                    ("ps4", "goldhen-shn", original.trim_start_matches("shn/").to_owned())
+                }
+                "admentus-enhancement-codes" if original.ends_with(".ini") => {
+                    let platform = if original.contains("(GC)/") { "gamecube" } else { "wii" };
+                    (platform, "dolphin-ini", original.to_owned())
+                }
+                "mkwcat-gecko-codes" if original.ends_with(".md") &&
+                    ["mkw/", "nsmbw/", "nsmbu/"].iter().any(|prefix| original.starts_with(prefix))
+                    && original != "nsmbu/README.md" => {
+                    let platform = if original.starts_with("nsmbu/") { "wii-u" } else { "wii" };
+                    (platform, "gecko-markdown", original.to_owned())
+                }
+                _ => continue,
+            };
+            if wanted.as_ref().is_some_and(|v| !v.contains(platform)) {
+                continue;
+            }
+            let raw = fs::read(checked_path(&root, &item.archive_path)?)?;
+            // Native SHN files may be UTF-16. Do not claim text rendering
+            // is exact byte preservation: the archive remains authoritative.
+            let decoded = if raw.starts_with(&[0xff, 0xfe]) {
+                String::from_utf16_lossy(&raw[2..].chunks_exact(2).map(|p| u16::from_le_bytes([p[0], p[1]])).collect::<Vec<_>>())
+            } else if raw.starts_with(&[0xfe, 0xff]) {
+                String::from_utf16_lossy(&raw[2..].chunks_exact(2).map(|p| u16::from_be_bytes([p[0], p[1]])).collect::<Vec<_>>())
+            } else { String::from_utf8_lossy(&raw).into_owned() };
+            let mut parsed = match format {
+                "artemis-ncl" => parse_artemis_ncl(&decoded),
+                "goldhen-json" => parse_goldhen_json(&decoded),
+                "goldhen-mc4" => parse_goldhen_mc4(&decoded),
+                "goldhen-shn" => parse_goldhen_shn(&decoded),
+                "dolphin-ini" => parse_gecko_ini(&decoded),
+                "gecko-markdown" => parse_gecko_markdown(&decoded),
+                _ => unreachable!(),
+            };
+            if !raw.starts_with(&[0xff, 0xfe]) && !raw.starts_with(&[0xfe, 0xff])
+                && std::str::from_utf8(&raw).is_err() {
+                parsed.warnings.push("Original non-UTF8 bytes preserved in archive; source index is lossy text".into());
+            }
+            let title = if format == "goldhen-json" {
+                serde_json::from_str::<serde_json::Value>(&decoded).ok()
+                    .and_then(|v| v.get("name").and_then(|n| n.as_str()).map(|n| n.to_owned()))
+                    .map(|n| format!("{n} [{title}]")).unwrap_or(title)
+            } else { title };
+            let file_name = original.rsplit('/').next().unwrap_or(original).to_owned();
+            let record = IndexedFile {
+                id: format!("{manifest_id}:{original}"),
+                title_hint: title,
+                candidate_game_key: format!("{manifest_id}:{original}"),
+                identity_confidence: "original-source-path-and-claimed-title-only",
+                raw_filename: file_name,
+                region_hint: None,
+                format_hint: Some(format),
+                declared_cheats: None,
+                parse_warnings: parsed.warnings,
+                codes: parsed.codes,
+                provenance: Provenance {
+                    source_id: native.id.clone(),
+                    repository: native.repository.clone(),
+                    revision: native.snapshot_commit.clone(),
+                    license: native.license.clone(),
+                    upstream_path: item.upstream_path,
+                    archive_path: item.archive_path,
+                    git_blob_sha: item.git_blob_sha,
+                },
+            };
+            by_platform.entry(platform.to_owned()).or_default().push(record);
+        }
     }
 
     if scan_snes && !overrides.is_empty() {
