@@ -1,0 +1,1038 @@
+{
+  "schema_version": 1,
+  "id": "cookieplmonster-console-cheat-codes",
+  "repository": "https://github.com/CookiePLMonster/Console-Cheat-Codes",
+  "snapshot_commit": "f55aa8db8e6c79a2af6a9dd216b46635fc7324b5",
+  "license": "MIT (root LICENSE); original/adapted code credits retained separately",
+  "archive_prefix": "archive/cookieplmonster-console-cheat-codes/",
+  "scope_note": "PS2 .pnach, PS1 .cht, GameCube GameINI .ini and PSP CWCheat .ini codes as originally supplied; original per-release and author text must not be treated as independently tested by Cheatarium.",
+  "rights_note": "README explicitly states some imported codes belong to other authors and credits are given. Preserve each original code file, named credits.txt, readmes, scripts, root LICENSE and native layout. MIT root license does not silently override rights of other authors.",
+  "native_cheat_counts": {
+    "ps1": 67,
+    "ps2": 110,
+    "gamecube": 2,
+    "psp": 4
+  },
+  "files": [
+    {
+      "upstream_path": ".gitignore",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/.gitignore",
+      "git_blob_sha": "1d74e21965c4f858f5f818a270e64e1bfad7d843"
+    },
+    {
+      "upstream_path": "GC/NASCAR Dirt to Daytona/60 FPS/GN2E70_60fps.ini",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/GC/NASCAR Dirt to Daytona/60 FPS/GN2E70_60fps.ini",
+      "git_blob_sha": "9d0a1be6c051879a564081890b28ce6097b1b1cd"
+    },
+    {
+      "upstream_path": "GC/NASCAR Dirt to Daytona/Extended valid birth date range/GN2E70_birthdate.ini",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/GC/NASCAR Dirt to Daytona/Extended valid birth date range/GN2E70_birthdate.ini",
+      "git_blob_sha": "8ad287c392c4c17c11a7f4b835f66d06d39af955"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/LICENSE",
+      "git_blob_sha": "dfa56f2725a0571d90608d85c1d2894fcdedc875"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/16x9 Widescreen/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/16x9 Widescreen/NTSC-J 1.0.cht",
+      "git_blob_sha": "60ca1e33423b845d62d86cc0a5487b27f9a5d2d7"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/16x9 Widescreen/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/16x9 Widescreen/NTSC-J 1.1.cht",
+      "git_blob_sha": "9f7aec1b5fe687e5935a0ed9cfa113475c5cf48d"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/16x9 Widescreen/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/16x9 Widescreen/NTSC-U 1.1.cht",
+      "git_blob_sha": "02f8961602443b6bfe2a8ec0fc527e94e6723b4e"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/16x9 Widescreen/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/16x9 Widescreen/NTSC-U 1.2.cht",
+      "git_blob_sha": "812ebda37489cf48f37dcd2b63f93d06a59e5eb5"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/16x9 Widescreen/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/16x9 Widescreen/PAL.cht",
+      "git_blob_sha": "caf6693146cb50094203cb63c11f6c056c6e5e6d"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/21x9 Widescreen/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/21x9 Widescreen/NTSC-J 1.0.cht",
+      "git_blob_sha": "c9c400358ffd4fcb1d4dd1133771ed1f25c5e349"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/21x9 Widescreen/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/21x9 Widescreen/NTSC-J 1.1.cht",
+      "git_blob_sha": "2a290b07538ed1c799dbba270caaf03c12c09b9d"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/21x9 Widescreen/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/21x9 Widescreen/NTSC-U 1.1.cht",
+      "git_blob_sha": "dcccfe86a04f4a2f39d47e267faabf8a8a464d72"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/21x9 Widescreen/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/21x9 Widescreen/NTSC-U 1.2.cht",
+      "git_blob_sha": "fc4517118ed48b71fb05ef6a338a7e69f49fe7b5"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/21x9 Widescreen/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/21x9 Widescreen/PAL.cht",
+      "git_blob_sha": "7e4d4e25e277fa1e2bbf71b9686da2ffaf70527a"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/60 FPS/NTSC-J 1.0 Arcade.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/60 FPS/NTSC-J 1.0 Arcade.cht",
+      "git_blob_sha": "a69f5cc79ed6c57d3607d8908b445d7454a63f3a"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/60 FPS/NTSC-J 1.0 Simulation.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/60 FPS/NTSC-J 1.0 Simulation.cht",
+      "git_blob_sha": "cc7a60834c09e72a5d96c456c54bdc0a74b67d92"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/60 FPS/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/60 FPS/NTSC-J 1.1.cht",
+      "git_blob_sha": "2d6ccb9564ae9c25ef79c1f369a4ac60f87d37cb"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/60 FPS/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/60 FPS/NTSC-U 1.1.cht",
+      "git_blob_sha": "9420b7b7777463346592c38c1b3f7352400ddeb0"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/60 FPS/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/60 FPS/NTSC-U 1.2.cht",
+      "git_blob_sha": "45444aa76ab0129a5ff5b5ea5478e0f59d75e8cb"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/60 FPS/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/60 FPS/PAL.cht",
+      "git_blob_sha": "6fe3840ede0f0fb176bc260b0431ff9d3b502226"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/60 FPS/credits.txt",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/60 FPS/credits.txt",
+      "git_blob_sha": "a5b14c6e27620607e5370bed0134e60505f67d12"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/8MB RAM/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/8MB RAM/NTSC-J 1.0.cht",
+      "git_blob_sha": "ebf3b755f37544031171b44e1e8d78a81204eaa4"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/8MB RAM/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/8MB RAM/NTSC-J 1.1.cht",
+      "git_blob_sha": "530c1ceda4ce8563975f5b355491f7d0702ff286"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/8MB RAM/NTSC-U 1.1, NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/8MB RAM/NTSC-U 1.1, NTSC-U 1.2.cht",
+      "git_blob_sha": "3da620f15ee83b14e1c099a965379b60564d587d"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/8MB RAM/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/8MB RAM/PAL.cht",
+      "git_blob_sha": "64888bd9dea3e9634d40a87bd2d950ea381fdf99"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/BGM switch/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/BGM switch/NTSC-J 1.0.cht",
+      "git_blob_sha": "8cbe5d94e46ea21715687d2b7cf3a15d938724e9"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/BGM switch/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/BGM switch/NTSC-J 1.1.cht",
+      "git_blob_sha": "8932441dd9f1317cd5e4c43e5f59c89b2060ce26"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/BGM switch/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/BGM switch/NTSC-U 1.1.cht",
+      "git_blob_sha": "d71327a52e49e039545e33ffd14b5b9adcd10816"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/BGM switch/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/BGM switch/NTSC-U 1.2.cht",
+      "git_blob_sha": "e96b33fd260c5e0a4aaa077518e1a5a406499f43"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/BGM switch/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/BGM switch/PAL.cht",
+      "git_blob_sha": "93ad30810d6140629af1128648ada4c199917370"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Fixed event generator/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Fixed event generator/NTSC-J 1.0.cht",
+      "git_blob_sha": "4264997ba7e6b4a9479eee8f416960425539e8f6"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Fixed event generator/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Fixed event generator/NTSC-J 1.1.cht",
+      "git_blob_sha": "57a4a9b5b3321324df20cd383706773c6bcd257f"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Fixed event generator/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Fixed event generator/NTSC-U 1.1.cht",
+      "git_blob_sha": "104852606d46fd00943b937d903a79411c96ca98"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Fixed event generator/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Fixed event generator/NTSC-U 1.2.cht",
+      "git_blob_sha": "eb12249f9b81fdcbfa0d402441060cd0bd31a53f"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Fixed event generator/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Fixed event generator/PAL.cht",
+      "git_blob_sha": "20065fa2723ce33f5fb60e94818b33e37ddd8c78"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Full detail AI cars/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Full detail AI cars/NTSC-J 1.0.cht",
+      "git_blob_sha": "9e7d7c34ed83b9b61ee7a982e9dcd6f09ce004b1"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Full detail AI cars/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Full detail AI cars/NTSC-J 1.1.cht",
+      "git_blob_sha": "14f847db8229bb8185431cc1a63c028b19677bee"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Full detail AI cars/NTSC-U 1.1, NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Full detail AI cars/NTSC-U 1.1, NTSC-U 1.2.cht",
+      "git_blob_sha": "40352bbebb76d53ad262dab86c64cc6931edb047"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Full detail AI cars/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Full detail AI cars/PAL.cht",
+      "git_blob_sha": "00e9d513f862542374b9e626c948c99d9a18c20e"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/HUD toggle/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/HUD toggle/NTSC-J 1.0.cht",
+      "git_blob_sha": "2af976a38df90ade0c53b4cc4dc6cfc0f4e0f2b9"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/HUD toggle/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/HUD toggle/NTSC-J 1.1.cht",
+      "git_blob_sha": "3253b8856d5eb144197abb1893c057b587a38df9"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/HUD toggle/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/HUD toggle/NTSC-U 1.1.cht",
+      "git_blob_sha": "743362fa3b20a57fa0176c924b09afd646915b4d"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/HUD toggle/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/HUD toggle/NTSC-U 1.2.cht",
+      "git_blob_sha": "c68c127cb0ecdf1c86b6d8db573d040aad394787"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/HUD toggle/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/HUD toggle/PAL.cht",
+      "git_blob_sha": "04883ac334e2f05d6885ed60b253a8ed8d5bbd2e"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Higher draw distance/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Higher draw distance/NTSC-J 1.0.cht",
+      "git_blob_sha": "a4edd91513d5b14d2f3f6dbe07c10c2e3e602bc3"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Higher draw distance/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Higher draw distance/NTSC-J 1.1.cht",
+      "git_blob_sha": "9848e9c6f54d02656cf30f2b60ed5f97414d9803"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Higher draw distance/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Higher draw distance/NTSC-U 1.1.cht",
+      "git_blob_sha": "36b0d62bc3c30316ea555cc863a1c01b60bf0356"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Higher draw distance/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Higher draw distance/NTSC-U 1.2.cht",
+      "git_blob_sha": "b2fa303e7a8ef62ae1695b9785708c1df0186d9c"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Higher draw distance/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Higher draw distance/PAL.cht",
+      "git_blob_sha": "d094ebd4df48126d8c4f47bd65e1ed8b4e1d7700"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Metric units/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Metric units/NTSC-U 1.1.cht",
+      "git_blob_sha": "eee3af8092217b68fb1c75786f085728d92ea214"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Metric units/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Metric units/NTSC-U 1.2.cht",
+      "git_blob_sha": "a1b8245f1c68d52dfd258898723eb86f0f6817b3"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Metric units/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Metric units/PAL.cht",
+      "git_blob_sha": "585b608814b17f48428dfda405866af7ab204708"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Replay cameras/NTSC-J 1.0 Arcade.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Replay cameras/NTSC-J 1.0 Arcade.cht",
+      "git_blob_sha": "5daaa21071660b961eed14c6cbea315eac05cd20"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Replay cameras/NTSC-J 1.0 Simulation.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Replay cameras/NTSC-J 1.0 Simulation.cht",
+      "git_blob_sha": "888a7b30a13e1b4f0ec2a22b5e7b0423d550231b"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Replay cameras/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Replay cameras/NTSC-J 1.1.cht",
+      "git_blob_sha": "966feba9820359c7e32ef92fb6a929839c4b0d30"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Replay cameras/NTSC-U 1.1, NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Replay cameras/NTSC-U 1.1, NTSC-U 1.2.cht",
+      "git_blob_sha": "786d73c292c7724633088af915ecc65d420ee750"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/Replay cameras/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/Replay cameras/PAL.cht",
+      "git_blob_sha": "6febfee1b9d4817b1af9d2e8312c4c223d1f74d2"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/True Endurance/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/True Endurance/NTSC-J 1.1.cht",
+      "git_blob_sha": "c569df62cfca551fec1ca64adac864595d0db85b"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/True Endurance/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/True Endurance/NTSC-U 1.1.cht",
+      "git_blob_sha": "75322ad7048de20af071b4a5a0b8c98750913ff7"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/True Endurance/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/True Endurance/NTSC-U 1.2.cht",
+      "git_blob_sha": "1792f61e6d08a2cc8de3cb544d5242af36d775ab"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo 2/True Endurance/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo 2/True Endurance/PAL.cht",
+      "git_blob_sha": "e75c7cd9e04776cb8b08b537a30eb6f51c256477"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo/60 FPS/NTSC-J.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo/60 FPS/NTSC-J.cht",
+      "git_blob_sha": "8e2c824ecf0cc9ae6349addaf26406ffcf70ef66"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo/60 FPS/NTSC-U 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo/60 FPS/NTSC-U 1.0.cht",
+      "git_blob_sha": "d31bc27779e6f5d4323577c71d5c1289e1d7ccf9"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo/60 FPS/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo/60 FPS/NTSC-U 1.1.cht",
+      "git_blob_sha": "1b393fe5e9f68be03d6bf9d3d2060048041caa5d"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo/60 FPS/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo/60 FPS/PAL.cht",
+      "git_blob_sha": "4660b42fa7d5879f7f2a52fc5062e25a40e45cb4"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo/60 FPS/credits.txt",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo/60 FPS/credits.txt",
+      "git_blob_sha": "a5b14c6e27620607e5370bed0134e60505f67d12"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo/Sim timescale in Arcade/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo/Sim timescale in Arcade/NTSC-U 1.1.cht",
+      "git_blob_sha": "f6e14d2718f27499f03c883a0873a9203f0021f2"
+    },
+    {
+      "upstream_path": "PS1/Gran Turismo/Sim timescale in Arcade/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Gran Turismo/Sim timescale in Arcade/PAL.cht",
+      "git_blob_sha": "775c8735b90f9c8400f3d433116dd98dcb0d37ca"
+    },
+    {
+      "upstream_path": "PS1/Tools/cheat-gen.py",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Tools/cheat-gen.py",
+      "git_blob_sha": "1e2954a8eacba6fbfed74d1feafdb4a9925596bf"
+    },
+    {
+      "upstream_path": "PS1/Tools/gt2-widescreen-gen.py",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Tools/gt2-widescreen-gen.py",
+      "git_blob_sha": "64e783ce148f3183bf7f0d4e444e2bd1647733f0"
+    },
+    {
+      "upstream_path": "PS1/Tools/resource/gt2-ws/NTSC-J 1.0.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Tools/resource/gt2-ws/NTSC-J 1.0.cht",
+      "git_blob_sha": "ec817f9102c03c5b3283c2ab399248eff0709255"
+    },
+    {
+      "upstream_path": "PS1/Tools/resource/gt2-ws/NTSC-J 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Tools/resource/gt2-ws/NTSC-J 1.1.cht",
+      "git_blob_sha": "de5de95e48e3b13e4de18aa644f21b21bf25cd4f"
+    },
+    {
+      "upstream_path": "PS1/Tools/resource/gt2-ws/NTSC-U 1.1.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Tools/resource/gt2-ws/NTSC-U 1.1.cht",
+      "git_blob_sha": "fb2811cea696af473c1f9cb63ef58368fc456175"
+    },
+    {
+      "upstream_path": "PS1/Tools/resource/gt2-ws/NTSC-U 1.2.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Tools/resource/gt2-ws/NTSC-U 1.2.cht",
+      "git_blob_sha": "c6a7c8018aef8663edbade6c30f211b1f88099fd"
+    },
+    {
+      "upstream_path": "PS1/Tools/resource/gt2-ws/PAL.cht",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS1/Tools/resource/gt2-ws/PAL.cht",
+      "git_blob_sha": "86d8bdd845ea8fac8c40ed2caf7d3611ff3e2e05"
+    },
+    {
+      "upstream_path": "PS2/007 Agent Under Fire/Widescreen/SLES-50539_992B46DC_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/007 Agent Under Fire/Widescreen/SLES-50539_992B46DC_widescreen.pnach",
+      "git_blob_sha": "0abc98b70007abbd1c0966c46d96beab74b133c7"
+    },
+    {
+      "upstream_path": "PS2/007 Agent Under Fire/Widescreen/SLPM-67505_60666E72_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/007 Agent Under Fire/Widescreen/SLPM-67505_60666E72_widescreen.pnach",
+      "git_blob_sha": "d6caa5d9f7587017de096c760596e786b84e4c34"
+    },
+    {
+      "upstream_path": "PS2/007 Agent Under Fire/Widescreen/SLUS-20265_79646C72_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/007 Agent Under Fire/Widescreen/SLUS-20265_79646C72_widescreen.pnach",
+      "git_blob_sha": "378e77a1a73c9678674c745c2c7ce6851b020cad"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/60 FPS/SLUS-20872_778AE49E_60fps.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/60 FPS/SLUS-20872_778AE49E_60fps.pnach",
+      "git_blob_sha": "69e728f1e71aa2ced454f53c080ef50dac4e755e"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/60 FPS/SLUS-20872_F8B52006_60fps.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/60 FPS/SLUS-20872_F8B52006_60fps.pnach",
+      "git_blob_sha": "61f905a7a5a59b1a83b44bda234a18aac8bb5478"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/DNAS Bypass/SLUS-20872_778AE49E_dnas.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/DNAS Bypass/SLUS-20872_778AE49E_dnas.pnach",
+      "git_blob_sha": "096b9cdf4e184b271aa22b9d741c3db73ecbc910"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/DNAS Bypass/SLUS-20872_F8B52006_dnas.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/DNAS Bypass/SLUS-20872_F8B52006_dnas.pnach",
+      "git_blob_sha": "d96128c9aaea0470804adb99a1ed7381571cdd33"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/Fixed Widescreen/SLUS-20872_778AE49E_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/Fixed Widescreen/SLUS-20872_778AE49E_widescreen.pnach",
+      "git_blob_sha": "ad180e8b0d2a9971e0d8b7058da05a96db88a6f6"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/Fixed Widescreen/SLUS-20872_F8B52006_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/Fixed Widescreen/SLUS-20872_F8B52006_widescreen.pnach",
+      "git_blob_sha": "e172f218e33dc00bcbaa74d0f451bf49fb0edb16"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/Progressive Scan/SLUS-20872_778AE49E_progressive.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/Progressive Scan/SLUS-20872_778AE49E_progressive.pnach",
+      "git_blob_sha": "817d2ea64cc7818ddf5551c2068874713b5cfc1b"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/Xbox Controls Layout/SLUS-20872_778AE49E_xbox.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/Xbox Controls Layout/SLUS-20872_778AE49E_xbox.pnach",
+      "git_blob_sha": "6a943eef127dea1a5da4a30cf27c25befb9d712b"
+    },
+    {
+      "upstream_path": "PS2/Acclaim Juiced/Xbox Controls Layout/SLUS-20872_F8B52006_xbox.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Acclaim Juiced/Xbox Controls Layout/SLUS-20872_F8B52006_xbox.pnach",
+      "git_blob_sha": "5dd30ce7555de346258c4e90f7e22f8647e65ab0"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 2000/Auto-activate analogs/PAPX-90203_55CE5111_analogs.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 2000/Auto-activate analogs/PAPX-90203_55CE5111_analogs.pnach",
+      "git_blob_sha": "2ca8d85356c60f2717911fe4bde0c79abba4badb"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 2000/Car select/PAPX-90203_55CE5111_carselect.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 2000/Car select/PAPX-90203_55CE5111_carselect.pnach",
+      "git_blob_sha": "8880e1bf67330c402b0c3090cf97c07b1a534879"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 2000/No time limit/PAPX-90203_55CE5111_notimelimit.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 2000/No time limit/PAPX-90203_55CE5111_notimelimit.pnach",
+      "git_blob_sha": "ca6b6ef5bc3b5c30b8abc9f94a8ad896d611f587"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 2000/Throttle and brake on right stick/PAPX-90203_55CE5111_rightstick.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 2000/Throttle and brake on right stick/PAPX-90203_55CE5111_rightstick.pnach",
+      "git_blob_sha": "a7a647c4bd6e5dce9079600d05943ef821c40cad"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 2000/Trigger control mappings/PAPX-90203_55CE5111_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 2000/Trigger control mappings/PAPX-90203_55CE5111_triggers.pnach",
+      "git_blob_sha": "8b57466d395b0244e62c7b36fa7344697c1160e3"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 2000/Widescreen/PAPX-90203_55CE5111_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 2000/Widescreen/PAPX-90203_55CE5111_widescreen.pnach",
+      "git_blob_sha": "1b95a1bdbc255e0abcf278850e91fd2333f92761"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjustable units/PBPX-95503_8AA991B0_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjustable units/PBPX-95503_8AA991B0_units.pnach",
+      "git_blob_sha": "eae24dc36acdc0f33339077b5ddc4bd389a840d4"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjustable units/SCES-50294_B590CE04_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjustable units/SCES-50294_B590CE04_units.pnach",
+      "git_blob_sha": "67c3f97c51e48447322497b189660dd2fe368924"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjustable units/SCPS-15009_9DE5CF65_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjustable units/SCPS-15009_9DE5CF65_units.pnach",
+      "git_blob_sha": "e23198d04775293ef1130fcd33163837b4bb97fe"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjustable units/SCUS-97102_85AE91B3_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjustable units/SCUS-97102_85AE91B3_units.pnach",
+      "git_blob_sha": "80e99e42ab780bba0145b1f29a32e136ddc9e027"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjusted triggers sensitivity/PBPX-95503_8AA991B0_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjusted triggers sensitivity/PBPX-95503_8AA991B0_triggers.pnach",
+      "git_blob_sha": "a0d6d71237a8b70b9a677cc0bf9dd94814ba5c59"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjusted triggers sensitivity/SCES-50294_B590CE04_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjusted triggers sensitivity/SCES-50294_B590CE04_triggers.pnach",
+      "git_blob_sha": "697d2d165567b50cec8d70bb7e6a8d40b2320c39"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjusted triggers sensitivity/SCPS-15009_9DE5CF65_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjusted triggers sensitivity/SCPS-15009_9DE5CF65_triggers.pnach",
+      "git_blob_sha": "03cbbe877bfdf13d4ec1e3d3f82ee553e12d6ff3"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/Adjusted triggers sensitivity/SCUS-97102_85AE91B3_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/Adjusted triggers sensitivity/SCUS-97102_85AE91B3_triggers.pnach",
+      "git_blob_sha": "58d97743f06ca4ca3a386d334bd901cab0709124"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/No time limit/SCPS-99999_EEC4A766_notimelimit.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/No time limit/SCPS-99999_EEC4A766_notimelimit.pnach",
+      "git_blob_sha": "dd2ff6fed4beb14a47824b9d460cab22ba741a53"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 3/README.md",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 3/README.md",
+      "git_blob_sha": "4bc0ce3cab0c031925697b7c5af547ac4031066f"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 First Preview/Adjustable units/PCPX-96649_E906EA37_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 First Preview/Adjustable units/PCPX-96649_E906EA37_units.pnach",
+      "git_blob_sha": "de9c9102e1d7dac1e1389f6156877f7d517cd8a3"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 First Preview/Deinterlace/PCPX-96649_E906EA37_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 First Preview/Deinterlace/PCPX-96649_E906EA37_deinterlace.pnach",
+      "git_blob_sha": "aacc1dcd5ab7dc927d4eac9cdd5b63d40f608917"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Online/Adjusted triggers sensitivity/SCUS-97436_32A1C752_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Online/Adjusted triggers sensitivity/SCUS-97436_32A1C752_triggers.pnach",
+      "git_blob_sha": "08bea07c833b8e7ea973f0b09f43847065cce7b9"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Online/Deinterlace/SCUS-97436_32A1C752_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Online/Deinterlace/SCUS-97436_32A1C752_deinterlace.pnach",
+      "git_blob_sha": "cea93509b2738eba61e0125042c17d60aacba4a6"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Online/Far chase camera/SCUS-97436_32A1C752_farchasecam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Online/Far chase camera/SCUS-97436_32A1C752_farchasecam.pnach",
+      "git_blob_sha": "52ae33444db4cce08cbfbd7b3fb93628497f9fb4"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Online/GT3 style camera/SCUS-97436_32A1C752_gt3cam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Online/GT3 style camera/SCUS-97436_32A1C752_gt3cam.pnach",
+      "git_blob_sha": "a9bc634ec13f302cdaf33bb6102c567659d46156"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Adjustable units/SCES-52438_3FB69323_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Adjustable units/SCES-52438_3FB69323_units.pnach",
+      "git_blob_sha": "eb98c2361a22dcd9921c144ad644fc6939445797"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Adjustable units/SCPS-15055_EF258742_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Adjustable units/SCPS-15055_EF258742_units.pnach",
+      "git_blob_sha": "8021a97ad6f573a4d6a1eb378a0f1a6f61e0ee38"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Adjusted triggers sensitivity/SCES-52438_3FB69323_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Adjusted triggers sensitivity/SCES-52438_3FB69323_triggers.pnach",
+      "git_blob_sha": "c84bfc1fabab31412d49e1aaae3941eed85095cf"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Adjusted triggers sensitivity/SCPS-15055_EF258742_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Adjusted triggers sensitivity/SCPS-15055_EF258742_triggers.pnach",
+      "git_blob_sha": "05e3e64cd026282ad24cdf0af3a445b25b881bac"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Deinterlace/SCES-52438_3FB69323_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Deinterlace/SCES-52438_3FB69323_deinterlace.pnach",
+      "git_blob_sha": "3ab102e3eb38674f93af63ea09b433bff017da76"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Deinterlace/SCPS-15055_EF258742_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Deinterlace/SCPS-15055_EF258742_deinterlace.pnach",
+      "git_blob_sha": "d2682dbadb606a3a249929ea4687672fb304b096"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Remappable controls/SCES-52438_3FB69323_remapping.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Remappable controls/SCES-52438_3FB69323_remapping.pnach",
+      "git_blob_sha": "556d52e9975fe938084a569fd21c0ff751f174ee"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4 Prologue/Remappable controls/SCPS-15055_EF258742_remapping.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4 Prologue/Remappable controls/SCPS-15055_EF258742_remapping.pnach",
+      "git_blob_sha": "b33475b6f5b537ea747261e5cfe5fa92a0b3d620"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4/Adjusted triggers sensitivity/SCES-51719_44A61C8F_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4/Adjusted triggers sensitivity/SCES-51719_44A61C8F_triggers.pnach",
+      "git_blob_sha": "708eeeecc979cab79518b860f3e90beb55676a15"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4/Adjusted triggers sensitivity/SCUS-97328_77E61C8A_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4/Adjusted triggers sensitivity/SCUS-97328_77E61C8A_triggers.pnach",
+      "git_blob_sha": "9efa23340c76809d17850082ae7491e4bb6fb6c2"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4/Deinterlace/SCES-51719_44A61C8F_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4/Deinterlace/SCES-51719_44A61C8F_deinterlace.pnach",
+      "git_blob_sha": "a19a40b3367f7a243975a4332a35c2ebabdc0d6b"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4/Far chase camera/SCES-51719_44A61C8F_farchasecam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4/Far chase camera/SCES-51719_44A61C8F_farchasecam.pnach",
+      "git_blob_sha": "b48cbeb4990ce5e57ea4ceec75b7224bb6564bb7"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4/Far chase camera/SCUS-97328_77E61C8A_farchasecam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4/Far chase camera/SCUS-97328_77E61C8A_farchasecam.pnach",
+      "git_blob_sha": "90c03cefc219df6acda7ac771bc3a0d9d3acc8d0"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4/GT3 style camera/SCES-51719_44A61C8F_gt3cam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4/GT3 style camera/SCES-51719_44A61C8F_gt3cam.pnach",
+      "git_blob_sha": "14d02813be3eb43631d0a14a6d5f3c38e6b1adb3"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo 4/GT3 style camera/SCUS-97328_77E61C8A_gt3cam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo 4/GT3 style camera/SCUS-97328_77E61C8A_gt3cam.pnach",
+      "git_blob_sha": "491fbe58d1591e15b7d317db51102c292fd60812"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo Concept/Adjustable units/SCES-50858_60013EBD_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo Concept/Adjustable units/SCES-50858_60013EBD_units.pnach",
+      "git_blob_sha": "18c7edb0708874e9b70d129935d20f02541fe180"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo Concept/Adjustable units/SCPS-55903_6810C3BC_units.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo Concept/Adjustable units/SCPS-55903_6810C3BC_units.pnach",
+      "git_blob_sha": "f266ed160c526609be980bdf76241a3a36156f1a"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo Concept/Adjusted triggers sensitivity/SCES-50858_60013EBD_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo Concept/Adjusted triggers sensitivity/SCES-50858_60013EBD_triggers.pnach",
+      "git_blob_sha": "1f79d2cd4aeff58bd5c59b13e6f4358553754327"
+    },
+    {
+      "upstream_path": "PS2/Gran Turismo Concept/Adjusted triggers sensitivity/SCPS-55903_6810C3BC_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Gran Turismo Concept/Adjusted triggers sensitivity/SCPS-55903_6810C3BC_triggers.pnach",
+      "git_blob_sha": "4c4a57fef7171fc9e73b85fff4cc33ffa65bb2cf"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52541_A1B3F232_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52541_A1B3F232_postfx.pnach",
+      "git_blob_sha": "9306dfd50b3d92a8e06593c2b94610a331911e4b"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52541_B440A8FE_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52541_B440A8FE_postfx.pnach",
+      "git_blob_sha": "4df5886ca3e858269d20c50fd6227978c5222853"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52927_A3EF1321_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52927_A3EF1321_postfx.pnach",
+      "git_blob_sha": "75bbb4a0ea7ff846ee053148728d758495eadd7f"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52927_B61F872C_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLES-52927_B61F872C_postfx.pnach",
+      "git_blob_sha": "398f3fffc7f7f861cb7ec9933708b7766ab91781"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLPM-55292_9E18263C_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLPM-55292_9E18263C_postfx.pnach",
+      "git_blob_sha": "8798b2c9bbc1cbf0b84fa3cea835d52790894122"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLPM-65984_60FE139C_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLPM-65984_60FE139C_postfx.pnach",
+      "git_blob_sha": "217643a84122e6dc8c4ce904f239f3bde217a913"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLUS-20946_2C6BE434_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLUS-20946_2C6BE434_postfx.pnach",
+      "git_blob_sha": "9446e98a3352afe751e721e39b73cc86e1d92525"
+    },
+    {
+      "upstream_path": "PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLUS-20946_399A49CA_postfx.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Grand Theft Auto San Andreas/Sharp Post Effects/SLUS-20946_399A49CA_postfx.pnach",
+      "git_blob_sha": "66abfa0a1ba63bf394d3e4f074cecfa30b1ddf4a"
+    },
+    {
+      "upstream_path": "PS2/Juiced/Xbox Controls Layout/SLES-53044_D7E2EF61_xbox.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Juiced/Xbox Controls Layout/SLES-53044_D7E2EF61_xbox.pnach",
+      "git_blob_sha": "8b9b0c3cc1c4f926fdcaf259f4a0e3565c297e24"
+    },
+    {
+      "upstream_path": "PS2/Juiced/Xbox Controls Layout/SLES-53151_308582DE_xbox.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Juiced/Xbox Controls Layout/SLES-53151_308582DE_xbox.pnach",
+      "git_blob_sha": "ceccabaf5429cf1ffe29edeb241c76271ed367d2"
+    },
+    {
+      "upstream_path": "PS2/Juiced/Xbox Controls Layout/SLKA-25283_D556AE22_xbox.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Juiced/Xbox Controls Layout/SLKA-25283_D556AE22_xbox.pnach",
+      "git_blob_sha": "c84c02517f497a8b2a27755c855af0a54c2bf5e7"
+    },
+    {
+      "upstream_path": "PS2/Juiced/Xbox Controls Layout/SLPM-66277_531B7E2E_xbox.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Juiced/Xbox Controls Layout/SLPM-66277_531B7E2E_xbox.pnach",
+      "git_blob_sha": "2f4da9433a613844a8edc2aaac40fa85237f35ff"
+    },
+    {
+      "upstream_path": "PS2/Juiced/Xbox Controls Layout/SLUS-20872_C186ACA9_xbox.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Juiced/Xbox Controls Layout/SLUS-20872_C186ACA9_xbox.pnach",
+      "git_blob_sha": "14fac7bce19051d008092f6374ab261808f250e8"
+    },
+    {
+      "upstream_path": "PS2/NASCAR Dirt to Daytona/60 FPS/SLUS-20441_2EA87CC5_60fps.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/NASCAR Dirt to Daytona/60 FPS/SLUS-20441_2EA87CC5_60fps.pnach",
+      "git_blob_sha": "683dc09bf1bf8df583d4ea53ea5c4dacbce13843"
+    },
+    {
+      "upstream_path": "PS2/NASCAR Dirt to Daytona/Camera controls on right stick/SLUS-20441_2EA87CC5_lookaround.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/NASCAR Dirt to Daytona/Camera controls on right stick/SLUS-20441_2EA87CC5_lookaround.pnach",
+      "git_blob_sha": "5db50e699c9353b6469f4de13a43c2eae42b45d0"
+    },
+    {
+      "upstream_path": "PS2/NASCAR Dirt to Daytona/Extended valid birth date range/SLUS-20441_2EA87CC5_birthdate.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/NASCAR Dirt to Daytona/Extended valid birth date range/SLUS-20441_2EA87CC5_birthdate.pnach",
+      "git_blob_sha": "b0ca0b90e82b79505366498bf94585a54aeb3562"
+    },
+    {
+      "upstream_path": "PS2/NASCAR Dirt to Daytona/Shoulders control mapping/SLUS-20441_2EA87CC5_shoulders.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/NASCAR Dirt to Daytona/Shoulders control mapping/SLUS-20441_2EA87CC5_shoulders.pnach",
+      "git_blob_sha": "fb2d1685fe462bee0ef1e1de845ce3e13957cd69"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLES-54321_ECCEEC09_bonus.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLES-54321_ECCEEC09_bonus.pnach",
+      "git_blob_sha": "190a27522c6eec2833ff7130f2f0c4f442a7e240"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLES-54492_C2909885_bonus.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLES-54492_C2909885_bonus.pnach",
+      "git_blob_sha": "458120b3aee17ee82ddf72024be2c76ef8a391ca"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLUS-21493_7841A89E_bonus.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLUS-21493_7841A89E_bonus.pnach",
+      "git_blob_sha": "67e38b52aa189625587f1b280b85cdee9b910547"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLUS-21494_52565480_bonus.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLUS-21494_52565480_bonus.pnach",
+      "git_blob_sha": "2d16abae1aeaf6dd25a21e285d577067bde2da89"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Disable Catchup/SLES-50731_1D2818AF_no-catchup.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Disable Catchup/SLES-50731_1D2818AF_no-catchup.pnach",
+      "git_blob_sha": "eaf48cb655d40c5a5208c4db2d28f8a20e306153"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Disable Catchup/SLUS-20362_1D2818AF_no-catchup.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Disable Catchup/SLUS-20362_1D2818AF_no-catchup.pnach",
+      "git_blob_sha": "7c0f55f847564e2a06360f8046c78c1680a4f321"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Speed Boost for all cars/SLES-50731_1D2818AF_nitro.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Speed Boost for all cars/SLES-50731_1D2818AF_nitro.pnach",
+      "git_blob_sha": "7dd7711a149902115c2c408f03e22fc4740db686"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Speed Boost for all cars/SLUS-20362_1D2818AF_nitro.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Speed Boost for all cars/SLUS-20362_1D2818AF_nitro.pnach",
+      "git_blob_sha": "ab950c75ed0c63b964362a61829202d1ffaf08c9"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLES-50731_1D2818AF_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLES-50731_1D2818AF_triggers.pnach",
+      "git_blob_sha": "47ef689adabb9885ba4109db2d691dc7cdc5c5bc"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLUS-20362_1D2818AF_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLUS-20362_1D2818AF_triggers.pnach",
+      "git_blob_sha": "2e8ab6e86f7c732c31c2331f8f5efc2ca95ab479"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/eventNames.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/eventNames.json",
+      "git_blob_sha": "7ecfcbed7ff9233dee383bf6f33c2cd35189a2f5"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/patch.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/patch.pnach",
+      "git_blob_sha": "b1e21331d62d65dadea1b9e74c21fd121b4cafc4"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/scannerConfigs.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/scannerConfigs.json",
+      "git_blob_sha": "6d42edadc4b3d07b721355b59c0687ccaaa36359"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/scannerConfigs_original.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/scannerConfigs_original.json",
+      "git_blob_sha": "4182d6cb327783a96632dbbbd5106f37097ca06f"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/scannerConfigs_original_A1.56.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/scannerConfigs_original_A1.56.json",
+      "git_blob_sha": "56908bc50c2dd4620d310ac8624bf097f3206079"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Pro Street/Fix Most Wanted Black Edition save detection/SLES-55002_BEB531C8_bonus.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Pro Street/Fix Most Wanted Black Edition save detection/SLES-55002_BEB531C8_bonus.pnach",
+      "git_blob_sha": "c7ed096d34b1c682fdea1ed9b8ce519c6878892d"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Pro Street/Fix Most Wanted Black Edition save detection/SLES-55006_F0A358FE_bonus.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Pro Street/Fix Most Wanted Black Edition save detection/SLES-55006_F0A358FE_bonus.pnach",
+      "git_blob_sha": "365deb647ba1340fd4b0c502387a652f093c4ee3"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Pro Street/Native Widescreen/SLES-55002_BEB531C8_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Pro Street/Native Widescreen/SLES-55002_BEB531C8_widescreen.pnach",
+      "git_blob_sha": "68ce52f2892768e31fc76b7846d46f44e4a581e2"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Pro Street/Native Widescreen/SLES-55006_F0A358FE_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Pro Street/Native Widescreen/SLES-55006_F0A358FE_widescreen.pnach",
+      "git_blob_sha": "5c57078f88442b697108c8f0c8821c62d835741f"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/SilentPatch/SLES-51967_FDA10318_silentpatch.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/SilentPatch/SLES-51967_FDA10318_silentpatch.pnach",
+      "git_blob_sha": "b99d77426d5e8ebbbf87381f8c43f5595f00dd92"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/SilentPatch/SLKA-25136_C5D0EBD2_silentpatch.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/SilentPatch/SLKA-25136_C5D0EBD2_silentpatch.pnach",
+      "git_blob_sha": "76946f31e8a294ae6d563706fb9af4975ae5427f"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/SilentPatch/SLPM-65471_4608D01A_silentpatch.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/SilentPatch/SLPM-65471_4608D01A_silentpatch.pnach",
+      "git_blob_sha": "acb1401838de8e220cae5f5b57a1d2f10663ba23"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/SilentPatch/SLUS-20811_CB99CD12_silentpatch.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/SilentPatch/SLUS-20811_CB99CD12_silentpatch.pnach",
+      "git_blob_sha": "f254ae402d5cf1ee06e97596ee3c02e39fee7422"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/Config/buttonActionHashes.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/Config/buttonActionHashes.json",
+      "git_blob_sha": "2ac358be9bfec662f54fce0bb446f480b6a49391"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/Config/buttonActionHashes_original.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/Config/buttonActionHashes_original.json",
+      "git_blob_sha": "9105fa1861be96db4f9e575847d772692e343c70"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/Config/eventNames.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/Config/eventNames.json",
+      "git_blob_sha": "8118eeb23bbea4629a73ce885f34100274506167"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs.json",
+      "git_blob_sha": "925874043cef4ae97a737c7c0f602f35ca9f0f0d"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs_jp.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs_jp.json",
+      "git_blob_sha": "534427abeb5f07d3b3c9ab236a1fe83506799699"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs_original.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs_original.json",
+      "git_blob_sha": "70c5f28b07301b00550b276fde8eb5f53dc38b1f"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs_original_jp.json",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/Config/scannerConfigs_original_jp.json",
+      "git_blob_sha": "e6632f0725208b2e0b4423ed59f72894e81dd57d"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/SLES-51967_FDA10318_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/SLES-51967_FDA10318_triggers.pnach",
+      "git_blob_sha": "e9e71a7568dec9dfc72ce4ea6b6247608cced70b"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/SLKA-25136_C5D0EBD2_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/SLKA-25136_C5D0EBD2_triggers.pnach",
+      "git_blob_sha": "df81510125c3fe8e1958339522cde43a5fffc909"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/SLPM-65471_4608D01A_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/SLPM-65471_4608D01A_triggers.pnach",
+      "git_blob_sha": "36dd1cc56ac795615f0866cafce5cd0758c1e9e2"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/SLPM-65614_6130F707_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/SLPM-65614_6130F707_triggers.pnach",
+      "git_blob_sha": "7db1501d009072b4eb09c3c6d129c7ddfa9e3680"
+    },
+    {
+      "upstream_path": "PS2/Need for Speed Underground/Triggers control mapping/SLUS-20811_CB99CD12_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Underground/Triggers control mapping/SLUS-20811_CB99CD12_triggers.pnach",
+      "git_blob_sha": "723ce318af8d9945ae71464c55e9213082cdb4c6"
+    },
+    {
+      "upstream_path": "PS2/Test Drive Eve of Destruction/Shoulders control mapping/SLUS-20910_5D0244D3_shoulders.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Test Drive Eve of Destruction/Shoulders control mapping/SLUS-20910_5D0244D3_shoulders.pnach",
+      "git_blob_sha": "0b255c21f7f836e5c0e5b776aca25a1dcb08944d"
+    },
+    {
+      "upstream_path": "PS2/Test Drive Unlimited/Triggers control mapping/SLES-53753_C2911A79_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Test Drive Unlimited/Triggers control mapping/SLES-53753_C2911A79_triggers.pnach",
+      "git_blob_sha": "f2ba2f35b0fd58f5b8b1488f5f68101206096251"
+    },
+    {
+      "upstream_path": "PS2/Test Drive Unlimited/Triggers control mapping/SLES-54466_C2911A79_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Test Drive Unlimited/Triggers control mapping/SLES-54466_C2911A79_triggers.pnach",
+      "git_blob_sha": "77a9f39fad5e5038b8ca0156136246b092be78f6"
+    },
+    {
+      "upstream_path": "PS2/Test Drive Unlimited/Triggers control mapping/SLUS-21490_A4303F5A_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Test Drive Unlimited/Triggers control mapping/SLUS-21490_A4303F5A_triggers.pnach",
+      "git_blob_sha": "b20f61e8184188a1b5a945d35c036e67269f5b9b"
+    },
+    {
+      "upstream_path": "PS2/Tokyo Xtreme Racer Zero/Deinterlacing/SLES-50115_073D7FB5_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tokyo Xtreme Racer Zero/Deinterlacing/SLES-50115_073D7FB5_deinterlace.pnach",
+      "git_blob_sha": "aef5b84fe136ce281791aae239d54f0803f924c8"
+    },
+    {
+      "upstream_path": "PS2/Tokyo Xtreme Racer Zero/Deinterlacing/SLPS-25028_F9D5C6A6_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tokyo Xtreme Racer Zero/Deinterlacing/SLPS-25028_F9D5C6A6_deinterlace.pnach",
+      "git_blob_sha": "a551ccc6eb8dc082d09d9046da06b86a3d7ab4e8"
+    },
+    {
+      "upstream_path": "PS2/Tokyo Xtreme Racer Zero/Deinterlacing/SLUS-20189_C1760287_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tokyo Xtreme Racer Zero/Deinterlacing/SLUS-20189_C1760287_deinterlace.pnach",
+      "git_blob_sha": "179a8f989f27494112fd30cbafd98c7fc53f0b98"
+    },
+    {
+      "upstream_path": "PS2/Tokyo Xtreme Racer Zero/Widescreen/SLES-50115_073D7FB5_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tokyo Xtreme Racer Zero/Widescreen/SLES-50115_073D7FB5_widescreen.pnach",
+      "git_blob_sha": "d7b679ec71198577b621642bf7a4b221481d1487"
+    },
+    {
+      "upstream_path": "PS2/Tokyo Xtreme Racer Zero/Widescreen/SLPS-25028_F9D5C6A6_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tokyo Xtreme Racer Zero/Widescreen/SLPS-25028_F9D5C6A6_widescreen.pnach",
+      "git_blob_sha": "69864fc3cd30dbc5090bc91a5b10bf2c19bc47b5"
+    },
+    {
+      "upstream_path": "PS2/Tokyo Xtreme Racer Zero/Widescreen/SLUS-20189_C1760287_widescreen.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tokyo Xtreme Racer Zero/Widescreen/SLUS-20189_C1760287_widescreen.pnach",
+      "git_blob_sha": "08d7b808d047ef54c2b895f398b2e44cf6eb500f"
+    },
+    {
+      "upstream_path": "PS2/Tools/README.md",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tools/README.md",
+      "git_blob_sha": "c9cbf040ad6aaf7fb483fd2b05c3c6ab3bc6c45a"
+    },
+    {
+      "upstream_path": "PS2/Tools/nfs-scanner-configs.py",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tools/nfs-scanner-configs.py",
+      "git_blob_sha": "cf19d9ad7cfb55739d36513d16e0137f9f626340"
+    },
+    {
+      "upstream_path": "PS2/Tourist Trophy/Adjusted triggers sensitivity/SCES-53372_CA9AA903_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tourist Trophy/Adjusted triggers sensitivity/SCES-53372_CA9AA903_triggers.pnach",
+      "git_blob_sha": "495168bf80733e0b4697f317d4117f59484c5b95"
+    },
+    {
+      "upstream_path": "PS2/Tourist Trophy/Adjusted triggers sensitivity/SCUS-97502_FF9C0E93_triggers.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tourist Trophy/Adjusted triggers sensitivity/SCUS-97502_FF9C0E93_triggers.pnach",
+      "git_blob_sha": "a287912deff564f7b20465c466df31c586f79f3d"
+    },
+    {
+      "upstream_path": "PS2/Tourist Trophy/Deinterlace/SCES-53372_CA9AA903_deinterlace.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tourist Trophy/Deinterlace/SCES-53372_CA9AA903_deinterlace.pnach",
+      "git_blob_sha": "9a4800613c23cee943cc4deb682fba73ab43ba8c"
+    },
+    {
+      "upstream_path": "PS2/Tourist Trophy/Far chase camera/SCES-53372_CA9AA903_farchasecam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tourist Trophy/Far chase camera/SCES-53372_CA9AA903_farchasecam.pnach",
+      "git_blob_sha": "f507e6a6b1a11ec7ff7f3e47209a18175cd1de30"
+    },
+    {
+      "upstream_path": "PS2/Tourist Trophy/Far chase camera/SCUS-97502_FF9C0E93_farchasecam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tourist Trophy/Far chase camera/SCUS-97502_FF9C0E93_farchasecam.pnach",
+      "git_blob_sha": "44d21fdb6dff50ff559ac0ea79228b18e3ba831c"
+    },
+    {
+      "upstream_path": "PS2/Tourist Trophy/GT3 style camera/SCES-53372_CA9AA903_gt3cam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tourist Trophy/GT3 style camera/SCES-53372_CA9AA903_gt3cam.pnach",
+      "git_blob_sha": "9b85333ab57de5c879888c94c5ae970986f5c20d"
+    },
+    {
+      "upstream_path": "PS2/Tourist Trophy/GT3 style camera/SCUS-97502_FF9C0E93_gt3cam.pnach",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PS2/Tourist Trophy/GT3 style camera/SCUS-97502_FF9C0E93_gt3cam.pnach",
+      "git_blob_sha": "bb469adfc8aa7bef39fc4681210976e546c987fa"
+    },
+    {
+      "upstream_path": "PSP/Midnight Club LA Remix/Unlock prototype cheats/ULES01144_cheats.ini",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PSP/Midnight Club LA Remix/Unlock prototype cheats/ULES01144_cheats.ini",
+      "git_blob_sha": "f5973f3859449a25c4ef143d9afba907d09dc4df"
+    },
+    {
+      "upstream_path": "PSP/Midnight Club LA Remix/Unlock prototype cheats/ULJM05904_cheats.ini",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PSP/Midnight Club LA Remix/Unlock prototype cheats/ULJM05904_cheats.ini",
+      "git_blob_sha": "494ebdd0db4c103ead2c5c9a139423d41eda61fb"
+    },
+    {
+      "upstream_path": "PSP/Midnight Club LA Remix/Unlock prototype cheats/ULJS00180_cheats.ini",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PSP/Midnight Club LA Remix/Unlock prototype cheats/ULJS00180_cheats.ini",
+      "git_blob_sha": "6ce428945fd789387e7b74146f06151d6522a851"
+    },
+    {
+      "upstream_path": "PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini",
+      "git_blob_sha": "afecba7cce751c5cd3ed4467450a40ac0baa12c2"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/cookieplmonster-console-cheat-codes/README.md",
+      "git_blob_sha": "09541dbf27b6d074f822bdbc48ff1e42de007d54"
+    }
+  ]
+}
