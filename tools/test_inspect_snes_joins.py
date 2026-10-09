@@ -97,6 +97,14 @@ def test():
     rejects(lambda: dossier(bundle, "example", offset=-1))
     rejects(lambda: dossier(bundle, "example", limit=0))
     rejects(lambda: dossier(bundle, "example", limit=501))
+    duplicate_source = copy.deepcopy(bundle)
+    duplicate_source["records"].append(copy.deepcopy(duplicate_source["records"][0]))
+    rejects(lambda: dossier(duplicate_source, "example"))
+    duplicate_ordinal = copy.deepcopy(bundle)
+    duplicate_ordinal["records"][0]["codes"].append(
+        copy.deepcopy(duplicate_ordinal["records"][0]["codes"][0])
+    )
+    rejects(lambda: dossier(duplicate_ordinal, "example"))
     altered = copy.deepcopy(bundle)
     altered["records"][0]["codes"][0]["composition"]["relation"] = "simultaneous"
     rejects(lambda: dossier(altered, "example"))
