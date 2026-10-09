@@ -36,7 +36,7 @@ def test():
     assert not report["execution_or_rom_compatibility_verified"]
     first = report["families"][0]
     assert first["source_record_id"] == "fixture:a"
-    assert first["source_git_blob_sha"] == "f" * 40
+    assert first["source_git_blob_sha"] == "a" * 40
     assert first["original_occurrences"] == 3
     assert first["distinct_varying_text_components"] == 3
     assert first["variable_component_position_zero_based"] == 2
