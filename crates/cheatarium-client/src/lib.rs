@@ -1026,8 +1026,11 @@ mod tests {
             "possible_title_collision": false, "source_record_ids": ["x"],
             "source_ids": ["libretro"], "region_hints": ["USA"],
             "format_hints": [], "code_fields": 1, "native_memory_entries": 0
-        })).unwrap();
-        let all = bundle.entries_for_candidate(&candidate, None, None).unwrap();
+        }))
+        .unwrap();
+        let all = bundle
+            .entries_for_candidate(&candidate, None, None)
+            .unwrap();
         assert_eq!(all.len(), 2);
         assert_eq!(all[0].entry.ordinal, 0);
         assert_eq!(all[0].entry.code.as_deref(), Some("ABCD"));
@@ -1036,14 +1039,24 @@ mod tests {
         assert_eq!(all[1].entry.ordinal, 1);
         assert_eq!(all[1].entry.role.as_deref(), Some("section-heading"));
 
-        let only_codes = bundle.entries_for_candidate(&candidate, Some("x"), Some("code")).unwrap();
+        let only_codes = bundle
+            .entries_for_candidate(&candidate, Some("x"), Some("code"))
+            .unwrap();
         assert_eq!(only_codes.len(), 1);
         assert_eq!(only_codes[0].entry.ordinal, 0);
-        let headings = bundle.entries_for_candidate(&candidate, None, Some("section-heading")).unwrap();
+        let headings = bundle
+            .entries_for_candidate(&candidate, None, Some("section-heading"))
+            .unwrap();
         assert_eq!(headings.len(), 1);
-        assert!(bundle.entries_for_candidate(&candidate, Some("other"), None).is_err());
-        assert!(bundle.entries_for_candidate(&candidate, Some(""), None).is_err());
-        assert!(bundle.entries_for_candidate(&candidate, None, Some("verified")).is_err());
+        assert!(bundle
+            .entries_for_candidate(&candidate, Some("other"), None)
+            .is_err());
+        assert!(bundle
+            .entries_for_candidate(&candidate, Some(""), None)
+            .is_err());
+        assert!(bundle
+            .entries_for_candidate(&candidate, None, Some("verified"))
+            .is_err());
     }
 
     #[test]

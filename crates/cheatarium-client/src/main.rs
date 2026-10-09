@@ -239,7 +239,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 }))?
             );
         } else {
-            println!("{total} original entries for {} on {}", candidate.title_hint, platform);
+            println!(
+                "{total} original entries for {} on {}",
+                candidate.title_hint, platform
+            );
             println!("Original source code text, not verified effects or ROM identity.");
             for hit in hits.into_iter().skip(offset).take(limit) {
                 println!(
