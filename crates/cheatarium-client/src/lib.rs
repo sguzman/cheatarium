@@ -824,6 +824,26 @@ mod tests {
     }
 
     #[test]
+    fn exact_code_search_keeps_distinct_ordinals_within_one_original_file() {
+        let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let mut repeated = serde_json::to_value(&bundle.records[0].codes[0]).unwrap();
+        repeated["ordinal"] = serde_json::json!(101);
+        repeated["description"] = serde_json::json!("Repeated original code text");
+        bundle.records[0]
+            .codes
+            .push(serde_json::from_value(repeated).unwrap());
+
+        let hits = bundle.search_exact_code("ABCD");
+        assert_eq!(hits.len(), 2);
+        assert_eq!(hits[0].source_record_id, hits[1].source_record_id);
+        assert_eq!(
+            hits.iter().map(|hit| hit.cheat.ordinal).collect::<Vec<_>>(),
+            vec![0, 101]
+        );
+        assert_ne!(hits[0].cheat.description, hits[1].cheat.description);
+    }
+
+    #[test]
     fn exact_code_search_does_not_merge_independent_source_occurrences() {
         let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
         let mut duplicate = serde_json::to_value(&bundle.records[0]).unwrap();
