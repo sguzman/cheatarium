@@ -302,7 +302,7 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
             --db generated/v1 --platform snes --code 'CB66-AD6F+6266-AF0F+DF66-ADAF' \
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_source_occurrences"] == 1 and d["hits"][0]["cheat"]["ordinal"] == 3 and d["hits"][0]["cheat"]["composition"]["relation"] == "unresolved" and not d["cheats_activated"]'
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_source_occurrences"] == 2 and d["returned"] == 2 and {h["cheat"]["ordinal"] for h in d["hits"]} == {3,101}; assert all(h["source_record_id"] == d["source_record_id_filter"] and h["cheat"]["composition"]["relation"] == "unresolved" for h in d["hits"]) and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
             --db generated/v1 --platform snes --code '6d6b-6f0f' --game-key push-over --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_source_occurrences"] == 0 and d["exact_original_text_only"]'
