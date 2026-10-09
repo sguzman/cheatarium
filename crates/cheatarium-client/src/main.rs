@@ -135,11 +135,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             return Err("--source-record-id cannot be empty".into());
         }
         let bundle = load_platform(&root, &platform)?;
-        let mut matches = bundle.records.iter().filter(|record| record.id == selected);
-        let record = matches.next().ok_or("Original source record not found")?;
-        if matches.next().is_some() {
-            return Err("Duplicate original source record IDs in platform index".into());
-        }
+        let record = bundle.find_source_record(selected)?;
         let total = record.codes.len();
         let code_fields = record
             .codes
