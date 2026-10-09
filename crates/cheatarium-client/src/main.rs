@@ -27,6 +27,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut args = env::args().skip(1);
     let mode = match args.next().as_deref() {
         Some("search") => "search",
+        Some("source") => "source",
         Some("games") => "games",
         Some("verify") => "verify",
         Some("effects") => "effects",
@@ -37,7 +38,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|games|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <search|source|games|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -75,8 +76,8 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
-    if offset != 0 && mode != "compositions" && mode != "publications" && mode != "codes" {
-        return Err("--offset applies only to compositions, publications or codes".into());
+    if offset != 0 && mode != "compositions" && mode != "publications" && mode != "codes" && mode != "source" {
+        return Err("--offset applies only to compositions, publications, codes or source".into());
     }
     if mode != "codes" && exact_code.is_some() {
         return Err("--code applies only to codes".into());
@@ -94,9 +95,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "publications"
         && mode != "compositions"
         && mode != "codes"
+        && mode != "source"
         && source_record_id.is_some()
     {
-        return Err("--source-record-id applies only to reviews, publications, compositions or codes".into());
+        return Err("--source-record-id applies only to reviews, publications, compositions, codes or source".into());
     }
     if mode != "repeats" && varying_descriptions {
         return Err("--varying-descriptions applies only to repeats".into());
@@ -124,6 +126,79 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             .is_some_and(|s: &str| s.trim().is_empty())
     {
         return Err("Effect source and device filters cannot be empty".into());
+    }
+    if mode == "source" {
+        let selected = source_record_id
+            .as_deref()
+            .ok_or("Please provide --source-record-id for original source inspection")?;
+        if selected.is_empty() {
+            return Err("--source-record-id cannot be empty".into());
+        }
+        let bundle = load_platform(&root, &platform)?;
+        let mut matches = bundle.records.iter().filter(|record| record.id == selected);
+        let record = matches.next().ok_or("Original source record not found")?;
+        if matches.next().is_some() {
+            return Err("Duplicate original source record IDs in platform index".into());
+        }
+        let total = record.codes.len();
+        let code_fields = record
+            .codes
+            .iter()
+            .filter(|entry| entry.role.as_deref() == Some("code"))
+            .count();
+        let memory_entries = record
+            .codes
+            .iter()
+            .filter(|entry| entry.role.as_deref() == Some("memory-entry"))
+            .count();
+        let headings = record
+            .codes
+            .iter()
+            .filter(|entry| entry.role.as_deref() == Some("section-heading"))
+            .count();
+        if json {
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.original_source.v1",
+                    "platform": platform,
+                    "source_record_id": record.id,
+                    "title_hint": record.title_hint,
+                    "candidate_game_key": record.candidate_game_key,
+                    "region_hint": record.region_hint,
+                    "declared_format_hint": record.format_hint,
+                    "raw_filename": record.raw_filename,
+                    "declared_cheats": record.declared_cheats,
+                    "parse_warnings": record.parse_warnings,
+                    "provenance": record.provenance,
+                    "total_source_entries": total,
+                    "code_fields": code_fields,
+                    "native_memory_entries": memory_entries,
+                    "section_headings": headings,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "original_source_enabled_is_not_activation": true,
+                    "game_identity_verified": false,
+                    "code_effect_or_compatibility_verified": false,
+                    "cheats_activated": false,
+                    "entries": record.codes.iter().skip(offset).take(limit).collect::<Vec<_>>(),
+                }))?
+            );
+        } else {
+            println!("{}: {} original source entries", record.id, total);
+            println!("{} code fields; {} memory entries; {} headings", code_fields, memory_entries, headings);
+            println!("Imported source text is not verified gameplay or ROM compatibility.");
+            for entry in record.codes.iter().skip(offset).take(limit) {
+                println!(
+                    "- #{}: {} ({})",
+                    entry.ordinal,
+                    entry.description.as_deref().unwrap_or("<unnamed>"),
+                    entry.role.as_deref().unwrap_or("unspecified")
+                );
+            }
+        }
+        return Ok(());
     }
     if mode == "codes" {
         let original = exact_code.ok_or("Please provide --code for exact source-code lookup")?;
