@@ -49,9 +49,13 @@ as device codes.
   manifest is not digitally signed or independently authenticated.
 - The app is read-only: it does not change the archive, write game files,
   launch emulators, or transmit searches or codes.
-- Loading a new game performs source integrity checks synchronously; on large
-  bundles there can be a pause. The interface is an initial desktop MVP,
-  and screenshot-based layout and Wayland interaction QA remain outstanding.
+- Loading a new game verifies source integrity on one background worker,
+  leaving the desktop window interactive. A newer selection supersedes queued
+  older requests; late results cannot replace the current selection. An already
+  running source read still finishes before the next request starts.
+- This remains an initial desktop MVP. Screenshot-based layout and live Wayland
+  interaction QA remain outstanding even when headless compilation and unit
+  tests pass.
 
 The canonical terminal and programmatic interfaces are documented in
 [Consumers](CONSUMERS.md). Raw sources, independently reviewed evidence,
