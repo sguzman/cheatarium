@@ -219,6 +219,16 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- tags \
             --db generated/v1 --platform snes --category lives --limit 2 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.lexical_tags.v1" and x["total_matches"] > 0 and not x["verified_effect"] and not x["cheats_activated"] and all(h["matched_phrase"] for h in x["hits"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform snes \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --offset 0 --limit 2 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.original_source.v1" and d["total_source_entries"] >= 20 and d["returned"] == 2 and d["has_more"] and d["entries"][0]["ordinal"] == 0 and d["entries"][0]["code"] == "6D6B-6F0F"; assert d["provenance"]["git_blob_sha"] and not d["game_identity_verified"] and not d["code_effect_or_compatibility_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform snes \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --offset 3 --limit 1 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["returned"] == 1 and d["offset"] == 3 and d["entries"][0]["ordinal"] == 3 and d["entries"][0]["composition"]["relation"] == "unresolved" and d["entries"][0]["code"] == "CB66-AD6F+6266-AF0F+DF66-ADAF"'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
             --db generated/v1 --platform snes --code '6D6B-6F0F' --game-key push-over \
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --json \
