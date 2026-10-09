@@ -341,6 +341,12 @@ jobs:
             --db generated/v1 --platform snes --game-key donkey-kong-country --varying-descriptions --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["varying_descriptions_only"]; assert all(g["description_text_varies"] and g["description_variants"] > 1 for g in q["groups"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- games \
+            --db generated/v1 --platform snes --title "Donkey Kong Country" --offset 1000 --limit 2 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_candidate_groups"] > 0 and d["offset"] == 1000 and d["returned"] == 0 and d["candidates"] == [] and not d["has_more"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- search \
+            --db generated/v1 --platform snes --title "Donkey Kong Country" --offset 1000 --limit 2 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_source_records"] > 0 and d["offset"] == 1000 and d["returned"] == 0 and d["records"] == [] and not d["has_more"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- games \
             --db generated/v1 --platform snes --title "Donkey Kong Country" --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_candidate_groups"] > 0 and q["candidate_only"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- search \
