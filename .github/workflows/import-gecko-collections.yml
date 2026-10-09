@@ -1,0 +1,53 @@
+name: Import pinned GC Wii Wii-U native Gecko cheat sources
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-gecko-collections.yml"
+      - "tools/import_gecko_collections.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-gecko-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire pinned native AR and Gecko cheat sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/import_gecko_collections.py
+      - name: Validate original source Git blobs and full archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/validate.py
+      - name: Commit only acquired original files and source manifests
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/admentus-enhancement-codes/ archive/mkwcat-gecko-codes/ \
+                  sources/admentus-enhancement-codes.json sources/mkwcat-gecko-codes.json
+          if git diff --cached --quiet; then
+            echo "Both pinned original Gecko cheat collections already archived."
+            exit 0
+          fi
+          git commit -m "data: preserve 49 original GameCube Wii and Wii U code files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
