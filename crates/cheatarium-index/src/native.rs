@@ -91,7 +91,11 @@ pub fn parse_goldhen_shn(text: &str) -> ParsedCheats {
         let name = opening.split("Text=\"").nth(1)
             .and_then(|s| s.split_once('"').map(|p| p.0))
             .unwrap_or("(unnamed SHN entry)");
-        add(&mut out, name.to_owned(), Some(raw.to_owned()), vec![field("native_format", "GoldHEN SHN XML")]);
+        let has_payload = raw.contains("<Cheatline");
+        add(&mut out, name.to_owned(), if has_payload { Some(raw.to_owned()) } else { None }, vec![
+            field("native_format", "GoldHEN source XML"),
+            field("original_xml_element", raw),
+        ]);
         rest = &rest[close..];
     }
     if out.codes.is_empty() {
@@ -204,6 +208,16 @@ mod tests {
         let p = parse_goldhen_shn("<Cheat Text=\"A\"><Cheatline /></Cheat><Cheat Text=\"B\"><Cheatline /></Cheat>");
         assert_eq!(p.codes.len(), 2);
         assert_eq!(p.codes[1].description.as_deref(), Some("B"));
+    }
+
+    #[test]
+    fn mc4_xml_metadata_names_are_not_misclassified_as_executable_codes() {
+        let p = parse_goldhen_shn("<Trainer><Cheat Text=\"Godmode\">\n</Cheat></Trainer>");
+        assert_eq!(p.codes.len(), 1);
+        assert_eq!(p.codes[0].description.as_deref(), Some("Godmode"));
+        assert_eq!(p.codes[0].role, "section-heading");
+        assert!(p.codes[0].code.is_none());
+        assert!(p.codes[0].native_fields[1].value.contains("<Cheat Text"));
     }
 
     #[test]
