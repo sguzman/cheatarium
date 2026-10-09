@@ -34,9 +34,18 @@ def calculate(bundle, documented, publications=None):
         "device_labels":set(), "occurrences":[], "publication_witnesses":set(),
     })
     total=0
+    seen_source_ids=set()
+    seen_ordinals=set()
     for record in bundle["records"]:
+        if record["id"] in seen_source_ids:
+            raise ValueError("Repeated source record in SNES review queue")
+        seen_source_ids.add(record["id"])
         key=record["candidate_game_key"] or f'unresolved:{record["id"]}'
         for cheat in record["codes"]:
+            ref=(record["id"],cheat["ordinal"])
+            if ref in seen_ordinals:
+                raise ValueError("Repeated original ordinal in SNES review queue")
+            seen_ordinals.add(ref)
             code=cheat.get("code") or ""
             if cheat.get("role")!="code" or "+" not in code:
                 continue
@@ -44,7 +53,6 @@ def calculate(bundle, documented, publications=None):
             if (not isinstance(comp,dict)
                     or comp.get("relation") not in ("unresolved","revision-alternatives")):
                 raise ValueError("Unclassified source join found in review queue input")
-            ref=(record["id"], cheat["ordinal"])
             if comp["relation"]=="revision-alternatives":
                 if ref not in documented_set:
                     raise ValueError("Undocumented version alternative")
