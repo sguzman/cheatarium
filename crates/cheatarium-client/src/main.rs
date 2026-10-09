@@ -58,7 +58,13 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--code" => exact_code = Some(args.next().ok_or("--code needs original source text")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--role" => entry_role = Some(args.next().ok_or("--role needs a value")?),
-            "--ordinal" => exact_ordinal = Some(args.next().ok_or("--ordinal needs a number")?.parse::<usize>()?),
+            "--ordinal" => {
+                exact_ordinal = Some(
+                    args.next()
+                        .ok_or("--ordinal needs a number")?
+                        .parse::<usize>()?,
+                )
+            }
             "--description-contains" => {
                 description_contains = Some(args.next().ok_or("--description-contains needs text")?)
             }

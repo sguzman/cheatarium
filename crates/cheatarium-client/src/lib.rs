@@ -864,7 +864,9 @@ impl Bundle {
     ) -> Result<(&IndexedFile, &Code)> {
         let record = self.find_source_record(source_record_id)?;
         let mut found = record.codes.iter().filter(|entry| entry.ordinal == ordinal);
-        let entry = found.next().ok_or("Original cheat entry ordinal not found")?;
+        let entry = found
+            .next()
+            .ok_or("Original cheat entry ordinal not found")?;
         if found.next().is_some() {
             return Err("Duplicate original cheat ordinal in source record".into());
         }
@@ -1228,11 +1230,23 @@ mod tests {
         assert!(bundle.find_original_entry("", 0).is_err());
         let mut copy = serde_json::to_value(&bundle.records[0].codes[0]).unwrap();
         copy["ordinal"] = serde_json::json!(37);
-        bundle.records[0].codes.push(serde_json::from_value(copy).unwrap());
-        assert_eq!(bundle.find_original_entry("x", 37).unwrap().1.code.as_deref(), Some("ABCD"));
+        bundle.records[0]
+            .codes
+            .push(serde_json::from_value(copy).unwrap());
+        assert_eq!(
+            bundle
+                .find_original_entry("x", 37)
+                .unwrap()
+                .1
+                .code
+                .as_deref(),
+            Some("ABCD")
+        );
         assert_eq!(bundle.find_original_entry("x", 0).unwrap().1.ordinal, 0);
         let duplicate = serde_json::to_value(&bundle.records[0].codes[0]).unwrap();
-        bundle.records[0].codes.push(serde_json::from_value(duplicate).unwrap());
+        bundle.records[0]
+            .codes
+            .push(serde_json::from_value(duplicate).unwrap());
         assert!(bundle.find_original_entry("x", 0).is_err());
         assert_eq!(bundle.find_original_entry("x", 37).unwrap().1.ordinal, 37);
     }
