@@ -229,6 +229,16 @@ jobs:
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
             --offset 3 --limit 1 --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["returned"] == 1 and d["offset"] == 3 and d["entries"][0]["ordinal"] == 3 and d["entries"][0]["composition"]["relation"] == "unresolved" and d["entries"][0]["code"] == "CB66-AD6F+6266-AF0F+DF66-ADAF"'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform snes \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --offset 100000 --limit 1 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_source_entries"] >= 20 and d["returned"] == 0 and d["entries"] == [] and not d["has_more"]'
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform snes --source-record-id 'nonexistent:source'; then
+            echo "ERROR: accepted missing original source record" >&2
+            exit 1
+          fi
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
             --db generated/v1 --platform snes --code '6D6B-6F0F' --game-key push-over \
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --json \
