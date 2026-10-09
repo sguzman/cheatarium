@@ -566,6 +566,24 @@ impl Bundle {
         source_record_id: Option<&str>,
         role: Option<&str>,
     ) -> Result<Vec<GameEntryHit<'a>>> {
+        self.search_entries_for_candidate(candidate, source_record_id, role, None)
+    }
+
+    /// Case-insensitive *description text* lookup within an advisory game
+    /// grouping. Matching a label is not verification of the gameplay effect;
+    /// no original description, code, or source identity is rewritten.
+    pub fn search_entries_for_candidate<'a>(
+        &'a self,
+        candidate: &GameCandidate,
+        source_record_id: Option<&str>,
+        role: Option<&str>,
+        description_contains: Option<&str>,
+    ) -> Result<Vec<GameEntryHit<'a>>> {
+        let needle = description_contains.map(str::trim);
+        if needle == Some("") {
+            return Err("Description search text must not be blank".into());
+        }
+        let needle = needle.map(str::to_lowercase);
         if role.is_some_and(|name| !matches!(name, "code" | "memory-entry" | "section-heading")) {
             return Err("Unsupported original cheat entry role".into());
         }
@@ -585,6 +603,15 @@ impl Bundle {
             for code in &source.codes {
                 if let Some(role_filter) = role {
                     if code.role.as_deref() != Some(role_filter) {
+                        continue;
+                    }
+                }
+                if let Some(search_text) = needle.as_deref() {
+                    if !code
+                        .description
+                        .as_deref()
+                        .is_some_and(|description| description.to_lowercase().contains(search_text))
+                    {
                         continue;
                     }
                 }
@@ -1057,6 +1084,82 @@ mod tests {
         assert!(bundle
             .entries_for_candidate(&candidate, None, Some("verified"))
             .is_err());
+    }
+
+    #[test]
+    fn description_search_preserves_source_text_and_filter_semantics() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let candidate: GameCandidate = serde_json::from_value(serde_json::json!({
+            "key": "super-mario-world", "title_hint": "Super Mario World",
+            "alternate_title_hints": [], "identity_confidence": "filename_candidate_only",
+            "possible_title_collision": false, "source_record_ids": ["x"],
+            "source_ids": ["libretro"], "region_hints": ["USA"],
+            "format_hints": [], "code_fields": 1, "native_memory_entries": 0
+        }))
+        .unwrap();
+
+        let matched = bundle
+            .search_entries_for_candidate(&candidate, None, None, Some("  INFINITE lives "))
+            .unwrap();
+        assert_eq!(matched.len(), 1);
+        assert_eq!(matched[0].entry.description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(matched[0].entry.code.as_deref(), Some("ABCD"));
+        assert_eq!(matched[0].entry.ordinal, 0);
+        assert_eq!(matched[0].provenance.upstream_path, "cht/sample.cht");
+        assert_eq!(
+            bundle
+                .search_entries_for_candidate(
+                    &candidate,
+                    Some("x"),
+                    Some("code"),
+                    Some("lIvEs"),
+                )
+                .unwrap()
+                .len(),
+            1
+        );
+        assert!(bundle
+            .search_entries_for_candidate(
+                &candidate,
+                None,
+                Some("section-heading"),
+                Some("lives"),
+            )
+            .unwrap()
+            .is_empty());
+        assert_eq!(
+            bundle
+                .search_entries_for_candidate(
+                    &candidate,
+                    None,
+                    Some("section-heading"),
+                    Some("heading"),
+                )
+                .unwrap()
+                .len(),
+            1
+        );
+        assert!(bundle
+            .search_entries_for_candidate(&candidate, None, None, Some("ABCD"))
+            .unwrap()
+            .is_empty());
+        assert!(bundle
+            .search_entries_for_candidate(&candidate, None, None, Some("nonexistent"))
+            .unwrap()
+            .is_empty());
+        assert!(bundle
+            .search_entries_for_candidate(&candidate, None, None, Some("  "))
+            .is_err());
+        assert!(bundle
+            .search_entries_for_candidate(&candidate, Some("missing"), None, Some("lives"))
+            .is_err());
+        assert_eq!(
+            bundle
+                .search_entries_for_candidate(&candidate, None, None, None)
+                .unwrap()
+                .len(),
+            2
+        );
     }
 
     #[test]
