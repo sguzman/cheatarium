@@ -794,6 +794,7 @@ fn run() -> Result<()> {
         "admentus-enhancement-codes",
         "mkwcat-gecko-codes",
         "cookieplmonster-console-cheat-codes",
+        "igor-misc-pcsx2-cheats",
     ] {
         let native: SourceManifest =
             serde_json::from_slice(&fs::read(root.join(format!("sources/{manifest_id}.json")))?)?;
@@ -803,6 +804,9 @@ fn run() -> Result<()> {
         for item in native.files {
             let original = &item.upstream_path;
             let (platform, format, title) = match manifest_id {
+                "igor-misc-pcsx2-cheats" if original.ends_with(".pnach") => {
+                    ("ps2", "pcsx2-pnach", original.to_owned())
+                }
                 "cookieplmonster-console-cheat-codes"
                     if original.starts_with("PS2/") && original.ends_with(".pnach") =>
                 {
