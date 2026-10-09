@@ -1461,6 +1461,64 @@ mod tests {
     }
 
     #[test]
+    fn global_game_catalog_checksum_verification_rejects_modified_title_data() {
+        use std::time::{SystemTime, UNIX_EPOCH};
+
+        let stamp = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_nanos();
+        let root = std::env::temp_dir().join(format!("cheatarium-title-audit-{}-{stamp}", std::process::id()));
+        std::fs::create_dir_all(root.join("games")).unwrap();
+        let catalog = serde_json::to_vec(&serde_json::json!({
+            "schema_version": 1,
+            "format": "cheatarium-index-v1",
+            "matching_policy": "filename candidates only",
+            "bundles": [{
+                "platform": "snes",
+                "artifact": "snes.json.gz",
+                "game_index_artifact": "games/snes.json.gz",
+                "source_files": 1,
+                "code_fields": 1,
+                "warnings": 0
+            }]
+        })).unwrap();
+        let compressed_title_index = b"example-title-index-bytes".to_vec();
+        let files = vec![
+            ("catalog.json", catalog.clone()),
+            ("games/snes.json.gz", compressed_title_index.clone()),
+        ];
+        for (name, bytes) in &files {
+            std::fs::write(root.join(name), bytes).unwrap();
+        }
+        let manifest_files: Vec<_> = files
+            .iter()
+            .map(|(name, bytes)| {
+                serde_json::json!({
+                    "path": name,
+                    "sha256": format!("{:x}", Sha256::digest(bytes)),
+                    "size_bytes": bytes.len(),
+                })
+            })
+            .collect();
+        let manifest = serde_json::json!({
+            "schema_version": 1,
+            "format": "cheatarium-distribution-v1",
+            "files": manifest_files,
+        });
+        std::fs::write(
+            root.join("distribution.json"),
+            serde_json::to_vec(&manifest).unwrap(),
+        ).unwrap();
+        assert!(verify_game_catalog_distribution(&root).is_ok());
+        std::fs::write(root.join("games/snes.json.gz"), b"tampered title index").unwrap();
+        assert!(verify_game_catalog_distribution(&root).is_err());
+        std::fs::write(root.join("games/snes.json.gz"), &compressed_title_index).unwrap();
+        let mut duplicated = manifest.clone();
+        duplicated["files"].as_array_mut().unwrap().push(manifest["files"][0].clone());
+        std::fs::write(root.join("distribution.json"), serde_json::to_vec(&duplicated).unwrap()).unwrap();
+        assert!(verify_game_catalog_distribution(&root).is_err());
+        std::fs::remove_dir_all(&root).unwrap();
+    }
+
+    #[test]
     fn cross_platform_title_discovery_preserves_platform_and_advisory_group_ids() {
         let mario: GameCandidate = serde_json::from_value(serde_json::json!({
             "key": "super-mario-world", "title_hint": "Super Mario World",
