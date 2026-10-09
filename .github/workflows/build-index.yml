@@ -275,6 +275,17 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- tags \
             --db generated/v1 --platform snes --category lives --limit 2 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.lexical_tags.v1" and x["total_matches"] > 0 and not x["verified_effect"] and not x["cheats_activated"] and all(h["matched_phrase"] for h in x["hits"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
+            --db generated/v1 --platform snes --game-key push-over --limit 100 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_sources.v1" and d["candidate_game_key"] == "push-over" and d["total_original_sources"] > 0 and d["returned"] == d["total_original_sources"]; assert d["total_code_fields"] >= sum(s["code_fields"] for s in d["sources"]) and not d["game_identity_verified"] and not d["cheat_effects_verified"] and not d["cheats_activated"]; assert any(s["source_record_id"].endswith("Push-Over (USA).cht") for s in d["sources"]); assert all(s["provenance"]["git_blob_sha"] and s["source_record_id"] for s in d["sources"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
+            --db generated/v1 --platform snes --game-key push-over --offset 10000 --limit 2 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_original_sources"] > 0 and d["returned"] == 0 and d["sources"] == [] and not d["has_more"]'
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
+            --db generated/v1 --platform snes --game-key definitely-not-a-game; then
+            echo "ERROR: accepted missing candidate game key" >&2
+            exit 1
+          fi
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform snes \
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
