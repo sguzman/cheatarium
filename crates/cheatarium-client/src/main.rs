@@ -1,9 +1,8 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
 use cheatarium_client::{
     load_all_game_candidates, load_catalog, load_effect_tags, load_game_candidates, load_platform,
-    load_repeated_codes, search_cross_platform_titles,
-    publications::load_snes_publications, reviews::load_effect_reviews,
-    verify_platform_distribution, GameEntryFilters,
+    load_repeated_codes, publications::load_snes_publications, reviews::load_effect_reviews,
+    search_cross_platform_titles, verify_platform_distribution, GameEntryFilters,
 };
 use std::env;
 use std::error::Error;
@@ -145,7 +144,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 }))?
             );
         } else {
-            println!("{total} advisory game groups matching {query:?} across {} platforms", indexes.len());
+            println!(
+                "{total} advisory game groups matching {query:?} across {} platforms",
+                indexes.len()
+            );
             println!("Title matches are not verified ROM identities or executable cheats.");
             for hit in hits.into_iter().skip(offset).take(limit) {
                 println!(

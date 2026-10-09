@@ -1408,7 +1408,8 @@ mod tests {
             "source_record_ids": ["snes:1"], "source_ids": ["libretro"],
             "region_hints": ["USA"], "format_hints": ["game-genie"],
             "code_fields": 4, "native_memory_entries": 0
-        })).unwrap();
+        }))
+        .unwrap();
         let nes: GameCandidate = serde_json::from_value(serde_json::json!({
             "key": "super-mario-bros", "title_hint": "Super Mario Bros",
             "alternate_title_hints": [],
@@ -1417,7 +1418,8 @@ mod tests {
             "source_record_ids": ["nes:1"], "source_ids": ["libretro"],
             "region_hints": ["USA"], "format_hints": [],
             "code_fields": 2, "native_memory_entries": 0
-        })).unwrap();
+        }))
+        .unwrap();
         let indexes = vec![
             GameIndex {
                 schema_version: 1,
