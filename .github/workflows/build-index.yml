@@ -197,8 +197,11 @@ jobs:
         run: bash tools/report_ci_stage.sh consumer-catalog
       - name: Check real-world formats and search client
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          trap 'status=$?; bash tools/report_ci_stage.sh "cli-line-${LINENO}" failure || true; exit "$status"' ERR
           python3 - <<'PY'
           import gzip, json
           from pathlib import Path
