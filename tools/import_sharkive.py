@@ -43,7 +43,7 @@ def import_snapshot(upstream):
         old = {entry["upstream_path"]: entry for entry in previous["files"]}
     else:
         old = {}
-    selected = [upstream / "LICENSE"]
+    selected = [upstream / "LICENSE", upstream / "README.md"]
     stats = {}
     for platform, rule in PATH_RULES.items():
         matches = []
@@ -122,6 +122,7 @@ def import_snapshot(upstream):
         "total_archived_source_files": len(inventory),
         "platforms": stats,
         "source_license_archived": (ARCHIVE / "LICENSE").is_file(),
+        "upstream_credits_readme_archived": (ARCHIVE / "README.md").is_file(),
     }, indent=2))
 
 
