@@ -670,8 +670,7 @@ impl Bundle {
         let mut hits = Vec::new();
         for record in &self.records {
             for cheat in &record.codes {
-                if cheat.role.as_deref() != Some("code")
-                    || cheat.code.as_deref() != Some(raw_code)
+                if cheat.role.as_deref() != Some("code") || cheat.code.as_deref() != Some(raw_code)
                 {
                     continue;
                 }
@@ -796,13 +795,15 @@ mod tests {
     #[test]
     fn exact_source_lookup_rejects_missing_and_duplicate_source_ids() {
         let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
-        assert_eq!(bundle.find_source_record("x").unwrap().title_hint, "Super Mario World");
+        assert_eq!(
+            bundle.find_source_record("x").unwrap().title_hint,
+            "Super Mario World"
+        );
         assert!(bundle.find_source_record("").is_err());
         assert!(bundle.find_source_record("nonexistent").is_err());
 
-        let copy: IndexedFile = serde_json::from_value(
-            serde_json::to_value(&bundle.records[0]).unwrap()
-        ).unwrap();
+        let copy: IndexedFile =
+            serde_json::from_value(serde_json::to_value(&bundle.records[0]).unwrap()).unwrap();
         bundle.records.push(copy);
         assert!(bundle.find_source_record("x").is_err());
     }
@@ -851,9 +852,10 @@ mod tests {
         duplicate["raw_filename"] = serde_json::json!("Other Edition.cht");
         duplicate["codes"][0]["ordinal"] = serde_json::json!(37);
         duplicate["codes"][0]["description"] = serde_json::json!("Different claimed effect");
-        duplicate["provenance"]["upstream_path"] =
-            serde_json::json!("cht/other-edition.cht");
-        bundle.records.push(serde_json::from_value(duplicate).unwrap());
+        duplicate["provenance"]["upstream_path"] = serde_json::json!("cht/other-edition.cht");
+        bundle
+            .records
+            .push(serde_json::from_value(duplicate).unwrap());
 
         let hits = bundle.search_exact_code("ABCD");
         assert_eq!(hits.len(), 2);
@@ -866,7 +868,10 @@ mod tests {
             hits[1].cheat.description.as_deref(),
             Some("Different claimed effect")
         );
-        assert_ne!(hits[0].provenance.upstream_path, hits[1].provenance.upstream_path);
+        assert_ne!(
+            hits[0].provenance.upstream_path,
+            hits[1].provenance.upstream_path
+        );
         assert!(bundle.search_exact_code("abcd").is_empty());
     }
 

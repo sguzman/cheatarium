@@ -76,7 +76,12 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     let platform = platform.ok_or("Please provide --platform")?;
-    if offset != 0 && mode != "compositions" && mode != "publications" && mode != "codes" && mode != "source" {
+    if offset != 0
+        && mode != "compositions"
+        && mode != "publications"
+        && mode != "codes"
+        && mode != "source"
+    {
         return Err("--offset applies only to compositions, publications, codes or source".into());
     }
     if mode != "codes" && exact_code.is_some() {
@@ -113,7 +118,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "codes"
         && game_key.is_some()
     {
-        return Err("--game-key applies only to repeats, tags, compositions, publications and codes".into());
+        return Err(
+            "--game-key applies only to repeats, tags, compositions, publications and codes".into(),
+        );
     }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
         return Err("--declared-format and --source-id apply only to effects".into());
@@ -183,7 +190,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             );
         } else {
             println!("{}: {} original source entries", record.id, total);
-            println!("{} code fields; {} memory entries; {} headings", code_fields, memory_entries, headings);
+            println!(
+                "{} code fields; {} memory entries; {} headings",
+                code_fields, memory_entries, headings
+            );
             println!("Imported source text is not verified gameplay or ROM compatibility.");
             for entry in record.codes.iter().skip(offset).take(limit) {
                 println!(
@@ -272,7 +282,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     }
     if mode == "publications" {
         if platform != "snes" {
-            return Err("Historical multi-part publication witnesses currently support SNES only".into());
+            return Err(
+                "Historical multi-part publication witnesses currently support SNES only".into(),
+            );
         }
         // Reject altered local publication/source artifacts before resolving claims.
         // SHA-256 validates this checkout, not the authenticity of its manifest.
@@ -339,9 +351,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 game_key
                     .as_deref()
                     .is_none_or(|key| key == record.candidate_game_key)
-                    && source_record_id
-                        .as_deref()
-                        .is_none_or(|id| id == record.id)
+                    && source_record_id.as_deref().is_none_or(|id| id == record.id)
             })
             .flat_map(|record| {
                 record.codes.iter().filter_map(move |code| {

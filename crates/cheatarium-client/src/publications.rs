@@ -116,7 +116,9 @@ impl SnesPublicationRegistry {
                 .codes
                 .iter()
                 .filter(|code| code.ordinal == witness.source_ordinal);
-            let code = matches.next().ok_or("Historical witness ordinal not found")?;
+            let code = matches
+                .next()
+                .ok_or("Historical witness ordinal not found")?;
             if matches.next().is_some()
                 || code.role.as_deref() != Some("code")
                 || code.code.as_deref() != Some(witness.raw_code.as_str())
@@ -190,7 +192,8 @@ mod tests {
                     "git_blob_sha":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
             }]
-        })).unwrap();
+        }))
+        .unwrap();
         let registry: SnesPublicationRegistry = serde_json::from_value(serde_json::json!({
             "schema_version":1,"platform":"snes",
             "claim_type":"externally-published-multi-part-source-code-text",
@@ -206,7 +209,8 @@ mod tests {
                 "execution_observed":false,"rom_match_verified":false,
                 "safe_to_auto_apply":false
             }]
-        })).unwrap();
+        }))
+        .unwrap();
         (bundle, registry)
     }
 
@@ -240,9 +244,11 @@ mod tests {
     #[test]
     fn rejects_wrong_blob_game_key_and_unsupported_publication_link() {
         let (bundle, mut registry) = fixture();
-        registry.records[0].source_git_blob_sha = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb".to_owned();
+        registry.records[0].source_git_blob_sha =
+            "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb".to_owned();
         assert!(registry.validate_for_bundle(&bundle).is_err());
-        registry.records[0].source_git_blob_sha = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_owned();
+        registry.records[0].source_git_blob_sha =
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_owned();
         registry.records[0].candidate_game_key = "unrelated".to_owned();
         assert!(registry.validate_for_bundle(&bundle).is_err());
         registry.records[0].candidate_game_key = "game".to_owned();
@@ -257,7 +263,10 @@ mod tests {
         assert!(registry.validate_for_bundle(&bundle).is_err());
         registry.records.pop();
         bundle.records[0].codes[0]
-            .composition.as_mut().unwrap().relation = "revision-alternatives".to_owned();
+            .composition
+            .as_mut()
+            .unwrap()
+            .relation = "revision-alternatives".to_owned();
         assert!(registry.validate_for_bundle(&bundle).is_err());
     }
 }
