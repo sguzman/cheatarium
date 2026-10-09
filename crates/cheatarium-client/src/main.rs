@@ -1,6 +1,7 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
 use cheatarium_client::{
-    load_catalog, load_effect_tags, load_game_candidates, load_platform, load_repeated_codes,
+    load_all_game_candidates, load_catalog, load_effect_tags, load_game_candidates, load_platform,
+    load_repeated_codes, search_cross_platform_titles,
     publications::load_snes_publications, reviews::load_effect_reviews,
     verify_platform_distribution, GameEntryFilters,
 };
@@ -37,6 +38,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("entries") => "entries",
         Some("entry") => "entry",
         Some("platforms") => "platforms",
+        Some("discover") => "discover",
         Some("verify") => "verify",
         Some("effects") => "effects",
         Some("codes") => "codes",
@@ -46,7 +48,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--region-hint USA] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <discover|platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--region-hint USA] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -96,6 +98,66 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--json" => json = true,
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if mode == "discover" {
+        if platform.is_some()
+            || effect.is_some()
+            || exact_code.is_some()
+            || game_key.is_some()
+            || entry_role.is_some()
+            || exact_ordinal.is_some()
+            || description_contains.is_some()
+            || category.is_some()
+            || composition_relation.is_some()
+            || source_record_id.is_some()
+            || varying_descriptions
+            || region_hint.is_some()
+            || declared_format.is_some()
+            || source_id.is_some()
+        {
+            return Err("discover accepts --db, --title, --offset, --limit and --json only".into());
+        }
+        let query = title
+            .as_deref()
+            .ok_or("Please provide --title for cross-platform discovery")?;
+        if query.trim().is_empty() {
+            return Err("--title cannot be blank".into());
+        }
+        let indexes = load_all_game_candidates(&root)?;
+        let hits = search_cross_platform_titles(&indexes, query);
+        let total = hits.len();
+        if json {
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.cross_platform_game_candidates.v1",
+                    "query": query,
+                    "indexed_platforms": indexes.len(),
+                    "total_candidate_groups": total,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "candidate_titles_only": true,
+                    "rom_compatibility_verified": false,
+                    "artifact_checksums_verified": false,
+                    "cheats_activated": false,
+                    "matches": hits.into_iter().skip(offset).take(limit).collect::<Vec<_>>(),
+                }))?
+            );
+        } else {
+            println!("{total} advisory game groups matching {query:?} across {} platforms", indexes.len());
+            println!("Title matches are not verified ROM identities or executable cheats.");
+            for hit in hits.into_iter().skip(offset).take(limit) {
+                println!(
+                    "- {}:{} — {} ({} original sources)",
+                    hit.platform,
+                    hit.candidate.key,
+                    hit.candidate.title_hint,
+                    hit.candidate.source_record_ids.len()
+                );
+            }
+        }
+        return Ok(());
     }
     if mode == "platforms" {
         if platform.is_some()
