@@ -86,6 +86,63 @@ fn unquote(value: &str) -> String {
     value.to_owned()
 }
 
+/// Preserve original bracketed Gateshark/Atmosphère cheat sections as
+/// indivisible, unverified multiline source-code occurrences.
+///
+/// This is a grouping parser, not a code interpreter. It does not infer
+/// executable writes, disabled/enabled state, game names, or ROM compatibility.
+/// Complete original bytes remain in the separately archived source file.
+pub fn parse_native_sections(text: &str) -> ParsedCheats {
+    fn append_section(codes: &mut Vec<Code>, description: Option<String>, body: String) {
+        let is_code = !body.trim().is_empty() && description.is_some();
+        let native_fields = if description.is_none() && !body.trim().is_empty() {
+            vec![NativeField {
+                name: "unattributed_original_text".to_owned(),
+                value: body,
+            }]
+        } else {
+            Vec::new()
+        };
+        let code = if is_code { Some(body) } else { None };
+        if description.is_some() || !native_fields.is_empty() {
+            codes.push(Code {
+                ordinal: codes.len(),
+                description: description.or_else(|| Some("(unsectioned original source text)".into())),
+                code,
+                source_enabled: false,
+                verification: "unverified",
+                role: if is_code { "code" } else { "section-heading" },
+                native_fields,
+                snes_decode: None,
+                composition: None,
+            });
+        }
+    }
+
+    let mut codes = Vec::new();
+    let mut title: Option<String> = None;
+    let mut body = String::new();
+    for line in text.split_inclusive('\n') {
+        let trimmed = line.trim();
+        let heading = trimmed
+            .strip_prefix('[')
+            .and_then(|s| s.strip_suffix(']'))
+            .filter(|s| !s.is_empty() && !s.contains(['\r', '\n']));
+        if let Some(name) = heading {
+            append_section(&mut codes, title.take(), std::mem::take(&mut body));
+            title = Some(name.to_owned());
+        } else {
+            body.push_str(line);
+        }
+    }
+    append_section(&mut codes, title, body);
+    ParsedCheats {
+        declared_count: None,
+        codes,
+        warnings: Vec::new(),
+    }
+}
+
 pub fn parse_cht(text: &str) -> ParsedCheats {
     let mut declared_count = None;
     let mut cheats: BTreeMap<usize, PartialCheat> = BTreeMap::new();
@@ -308,6 +365,41 @@ pub fn region_hint(filename: &str) -> Option<String> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn native_section_parser_preserves_multiline_codes_and_original_ordinals() {
+        let text = "[Max Health]\r\nDD000000 00000280\r\nD3000000 144276F4\r\n\r\n"
+            .to_owned()
+            + "[Infinite Coins]\n11160000 5C3BE7DC 00000000\n"
+            + "[Heading only]\n";
+        let parsed = parse_native_sections(&text);
+        assert_eq!(parsed.codes.len(), 3);
+        assert_eq!(parsed.codes[0].ordinal, 0);
+        assert_eq!(parsed.codes[0].description.as_deref(), Some("Max Health"));
+        assert_eq!(
+            parsed.codes[0].code.as_deref(),
+            Some("DD000000 00000280\r\nD3000000 144276F4\r\n\r\n")
+        );
+        assert!(!parsed.codes[0].source_enabled);
+        assert_eq!(parsed.codes[0].role, "code");
+        assert_eq!(parsed.codes[0].verification, "unverified");
+        assert_eq!(parsed.codes[1].code.as_deref(), Some("11160000 5C3BE7DC 00000000\n"));
+        assert_eq!(parsed.codes[2].role, "section-heading");
+        assert!(parsed.codes[2].code.is_none());
+    }
+
+    #[test]
+    fn native_section_parser_keeps_unlabeled_source_text_without_fake_code() {
+        let parsed = parse_native_sections("// original source comment\r\n[Cheat]\n01000000 ABCD\n");
+        assert_eq!(parsed.codes.len(), 2);
+        assert_eq!(parsed.codes[0].role, "section-heading");
+        assert!(parsed.codes[0].code.is_none());
+        assert_eq!(parsed.codes[0].native_fields[0].value, "// original source comment\r\n");
+        assert_eq!(parsed.codes[1].ordinal, 1);
+        assert_eq!(parsed.codes[1].description.as_deref(), Some("Cheat"));
+        assert_eq!(parsed.codes[1].code.as_deref(), Some("01000000 ABCD\n"));
+        assert!(parse_native_sections("").codes.is_empty());
+    }
 
     #[test]
     fn preserves_compound_codes_and_sparse_ordinals() {
