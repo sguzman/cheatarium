@@ -350,6 +350,70 @@ pub fn verify_platform_distribution(root: impl AsRef<Path>, platform: &str) -> R
     Ok(())
 }
 
+/// Verify only the local title-catalog distribution (catalog.json and all
+/// games/*.json.gz) against distribution.json. This does not read the large
+/// cheat-entry bundles or authenticate the manifest's publisher.
+pub fn verify_game_catalog_distribution(root: impl AsRef<Path>) -> Result<()> {
+    use std::collections::BTreeSet;
+
+    let root = root.as_ref();
+    let catalog = load_catalog(root)?;
+    if catalog.bundles.is_empty() {
+        return Err("Cheatarium catalog has no console bundles".into());
+    }
+    let mut paths = BTreeSet::new();
+    let mut platforms = BTreeSet::new();
+    paths.insert("catalog.json".to_owned());
+    for entry in &catalog.bundles {
+        if entry.platform.is_empty()
+            || !entry
+                .platform
+                .bytes()
+                .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
+        {
+            return Err("Unsafe platform name in game catalog".into());
+        }
+        if !platforms.insert(entry.platform.as_str()) {
+            return Err("Duplicate platform in game catalog".into());
+        }
+        let expected_path = format!("games/{}.json.gz", entry.platform);
+        if entry.game_index_artifact.as_deref() != Some(expected_path.as_str()) {
+            return Err("Unexpected title-catalog artifact path".into());
+        }
+        paths.insert(expected_path);
+    }
+
+    let mut content = Vec::new();
+    File::open(root.join("distribution.json"))?
+        .take(MAX_CATALOG_SIZE + 1)
+        .read_to_end(&mut content)?;
+    if content.len() as u64 > MAX_CATALOG_SIZE {
+        return Err("Cheatarium distribution manifest exceeds size limit".into());
+    }
+    let manifest: DistributionManifest = serde_json::from_slice(&content)?;
+    check_schema(manifest.schema_version)?;
+    if manifest.format != "cheatarium-distribution-v1" {
+        return Err("Unsupported Cheatarium distribution manifest".into());
+    }
+    for path in paths {
+        let mut references = manifest.files.iter().filter(|entry| entry.path == path);
+        let expected = references
+            .next()
+            .ok_or_else(|| format!("Unlisted title-catalog artifact: {path}"))?;
+        if references.next().is_some() {
+            return Err(format!("Duplicate title-catalog artifact in manifest: {path}").into());
+        }
+        if expected.sha256.len() != 64 || !expected.sha256.bytes().all(|c| c.is_ascii_hexdigit()) {
+            return Err(format!("Malformed SHA-256 checksum for {path}").into());
+        }
+        let (actual_hash, actual_length) = sha256_reader(File::open(root.join(&path))?)?;
+        if actual_hash != expected.sha256 || actual_length != expected.size_bytes {
+            return Err(format!("Cheatarium title-catalog checksum/length mismatch: {path}").into());
+        }
+    }
+    Ok(())
+}
+
 /// Advisory grouping of source occurrences under filename-derived titles.
 /// Neither an edition identifier nor a verified ROM/serial match.
 #[derive(Debug, Deserialize, Serialize)]
@@ -705,10 +769,8 @@ pub fn load_all_game_candidates(root: impl AsRef<Path>) -> Result<Vec<GameIndex>
     use std::collections::BTreeSet;
 
     let root = root.as_ref();
+    verify_game_catalog_distribution(root)?;
     let catalog = load_catalog(root)?;
-    if catalog.bundles.is_empty() {
-        return Err("Cheatarium catalog has no console bundles".into());
-    }
     let mut platforms = BTreeSet::new();
     let mut indexes = Vec::with_capacity(catalog.bundles.len());
     for entry in &catalog.bundles {
