@@ -342,6 +342,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
             --db generated/v1 --platform wii-u --game-key 'mkwcat-gecko-codes:nsmbu/Save-Anytime.md' --limit 4 --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_original_entries"]>=1 and "045A4AB8" in d["entries"][0]["entry"]["code"] and "USA NSMBU" in str(d["entries"][0]["entry"]["native_fields"]) and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- games \
+            --db generated/v1 --platform ps4 --title 'Ghost Rider' --limit 50 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_candidate_groups"]>0 and any(x["key"]=="goldhen:shn/SLUS21306_01.00.shn" and "Ghost Rider" in x["title_hint"] for x in d["candidates"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
+            --db generated/v1 --platform ps4 --game-key 'goldhen:mc4/CUSA00002_01.00.mc4.xml' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert "Killzone Shadow Fall" in d["title_hint"] and d["total_original_sources"]==1 and d["sources"][0]["provenance"]["upstream_path"]=="mc4/CUSA00002_01.00.mc4.xml" and not d["game_identity_verified"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- platforms \
             --db generated/v1 --limit 2 --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.platform_catalog.v1" and d["total_platforms"] == 43 and d["returned"] == 2 and d["has_more"]; assert all(p["source_files"] > 0 and p["game_candidate_groups"] > 0 for p in d["platforms"]) and d["candidate_titles_only"] and not d["rom_matching_verified"] and not d["cheats_activated"]'
