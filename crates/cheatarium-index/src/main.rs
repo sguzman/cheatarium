@@ -1,9 +1,9 @@
 use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
 use cheatarium_index::{
-    candidate_game_key, format_hint, parse_artemis_ncl, parse_cht, parse_gecko_ini,
-    parse_gecko_markdown, parse_goldhen_json, parse_goldhen_mc4, parse_goldhen_shn,
-    parse_cwcheat_ini, parse_native_sections, region_hint, title_hint, Code, CompositionEvidence,
+    candidate_game_key, format_hint, parse_artemis_ncl, parse_cht, parse_cwcheat_ini,
+    parse_gecko_ini, parse_gecko_markdown, parse_goldhen_json, parse_goldhen_mc4,
+    parse_goldhen_shn, parse_native_sections, region_hint, title_hint, Code, CompositionEvidence,
     SourceComposition,
 };
 use flate2::{Compression, GzBuilder};
@@ -806,22 +806,38 @@ fn run() -> Result<()> {
                 "cookieplmonster-console-cheat-codes"
                     if original.starts_with("PS2/") && original.ends_with(".pnach") =>
                 {
-                    ("ps2", "pcsx2-pnach", original.trim_start_matches("PS2/").to_owned())
+                    (
+                        "ps2",
+                        "pcsx2-pnach",
+                        original.trim_start_matches("PS2/").to_owned(),
+                    )
                 }
                 "cookieplmonster-console-cheat-codes"
                     if original.starts_with("PS1/") && original.ends_with(".cht") =>
                 {
-                    ("ps1", "ps1-native-cht", original.trim_start_matches("PS1/").to_owned())
+                    (
+                        "ps1",
+                        "ps1-native-cht",
+                        original.trim_start_matches("PS1/").to_owned(),
+                    )
                 }
                 "cookieplmonster-console-cheat-codes"
                     if original.starts_with("PSP/") && original.ends_with(".ini") =>
                 {
-                    ("psp", "psp-cwcheat-ini", original.trim_start_matches("PSP/").to_owned())
+                    (
+                        "psp",
+                        "psp-cwcheat-ini",
+                        original.trim_start_matches("PSP/").to_owned(),
+                    )
                 }
                 "cookieplmonster-console-cheat-codes"
                     if original.starts_with("GC/") && original.ends_with(".ini") =>
                 {
-                    ("gamecube", "dolphin-ini", original.trim_start_matches("GC/").to_owned())
+                    (
+                        "gamecube",
+                        "dolphin-ini",
+                        original.trim_start_matches("GC/").to_owned(),
+                    )
                 }
                 "artemis-ps3"
                     if original.starts_with("docs/codes/") && original.ends_with(".ncl") =>

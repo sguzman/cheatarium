@@ -2,11 +2,11 @@
   "schema_version": 1,
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
-  "console_bundles": 43,
-  "source_files": 32551,
-  "game_candidate_groups": 25994,
+  "console_bundles": 44,
+  "source_files": 32734,
+  "game_candidate_groups": 26177,
   "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 80525,
+  "lexical_effect_tag_matches": 80527,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -58,8 +58,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "9b249fbb818014f64cbe1f6704e4d7c537e464dfb68a50e27aa7ee7d0567dfc9",
-      "size_bytes": 20527
+      "sha256": "db1d0940fe72ba14cc3b28ec683e5958144bde585916be715ec779809c43d199",
+      "size_bytes": 20980
     },
     {
       "path": "colecovision.json.gz",
@@ -83,8 +83,8 @@
     },
     {
       "path": "gamecube.json.gz",
-      "sha256": "aaeb19932348483361c4e22ace73a2085456186cc03d037d2bd3e10f2c5f28d8",
-      "size_bytes": 47771
+      "sha256": "86a978498f318129a2eb575721bccb502f22e8dc63cfdc19fdccbbf77dd45c67",
+      "size_bytes": 48349
     },
     {
       "path": "games/32x.json.gz",
@@ -143,8 +143,8 @@
     },
     {
       "path": "games/gamecube.json.gz",
-      "sha256": "98734c9415f6ec24b884533e83b71f1a9748dc310270b3b84de2624c2c51d276",
-      "size_bytes": 473
+      "sha256": "98881828d6bf1b18843c6ff7d36d8b1a9e6fd3af5b11f3d064fcf9b3d4a02411",
+      "size_bytes": 594
     },
     {
       "path": "games/gb.json.gz",
@@ -213,8 +213,13 @@
     },
     {
       "path": "games/ps1.json.gz",
-      "sha256": "7ffdc4fcc19bb1739316550eaa3fa43aebc22e2e3cfd1ada8fec324d01a028db",
-      "size_bytes": 49021
+      "sha256": "cc813e29cb58a43f3bf4e4d7344667de08123516104e77a487a494ec578da4b1",
+      "size_bytes": 50248
+    },
+    {
+      "path": "games/ps2.json.gz",
+      "sha256": "1bbd5fa6dd145e71afc5fab3b258bfc924e9d4829bc31f7161ea280730bd88a1",
+      "size_bytes": 3205
     },
     {
       "path": "games/ps3.json.gz",
@@ -228,8 +233,8 @@
     },
     {
       "path": "games/psp.json.gz",
-      "sha256": "8f8dc8f41f2527234237274d1b553bc08d48eae35ec3331bfaaaac94ef405dc6",
-      "size_bytes": 90400
+      "sha256": "a7c131869b8916d1231dfec4cfada6833b3162e7a0ed507719097c5b2200e2bf",
+      "size_bytes": 90575
     },
     {
       "path": "games/satellaview.json.gz",
@@ -383,8 +388,13 @@
     },
     {
       "path": "ps1.json.gz",
-      "sha256": "0be9c300319f914e5afcadb3e79dcd649149a2bb9864b79c12a9c3fa0f823459",
-      "size_bytes": 551272
+      "sha256": "72827b6679af5192be2b3793283d3ac729dff2ac3142c14e797ad7ae2af2759a",
+      "size_bytes": 562705
+    },
+    {
+      "path": "ps2.json.gz",
+      "sha256": "ea9c0bb94503b7390512df654e75f302c0063b4fd5002baff0e2174e3d063eff",
+      "size_bytes": 35230
     },
     {
       "path": "ps3.json.gz",
@@ -398,8 +408,8 @@
     },
     {
       "path": "psp.json.gz",
-      "sha256": "133de6c91ede3afb6d3905c5145fdb482cc8936b5041163e952f37a55758ac4e",
-      "size_bytes": 1950180
+      "sha256": "ce747c0f38158747afede8b0ca4be3286c54c16c92952cb7658292d4328a5703",
+      "size_bytes": 1950768
     },
     {
       "path": "repeats/32x.json.gz",
@@ -530,6 +540,11 @@
       "path": "repeats/ps1.json.gz",
       "sha256": "32c8bd305f83f0398f11e8a64f5401dda5f27c2a80278694644c1f1c6c0160cf",
       "size_bytes": 1608
+    },
+    {
+      "path": "repeats/ps2.json.gz",
+      "sha256": "ebb3c243a676e936e3f45eb8283624597f503db26d1d4db074ef47dfb183d5b0",
+      "size_bytes": 142
     },
     {
       "path": "repeats/ps3.json.gz",
@@ -795,6 +810,11 @@
       "path": "tags/ps1.json.gz",
       "sha256": "28107d9bd1786561231b420557cf964de3dd7615113381c050e4574d4f1652de",
       "size_bytes": 52935
+    },
+    {
+      "path": "tags/ps2.json.gz",
+      "sha256": "cee8e7807624b1731abbcef78f82be826dc5f0a7e40cc28e399750779fcc085f",
+      "size_bytes": 350
     },
     {
       "path": "tags/ps3.json.gz",

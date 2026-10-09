@@ -155,12 +155,20 @@ pub fn parse_native_sections(text: &str) -> ParsedCheats {
 /// PSP build validation or memory-write interpretation is performed.
 pub fn parse_cwcheat_ini(text: &str) -> ParsedCheats {
     fn push(codes: &mut Vec<Code>, heading: Option<(String, bool, &'static str)>, body: String) {
-        let is_code = heading.is_some() && body.lines().any(|line| line.trim_start().starts_with("_L "));
+        let is_code = heading.is_some()
+            && body
+                .lines()
+                .any(|line| line.trim_start().starts_with("_L "));
         if heading.is_none() && body.is_empty() {
             return;
         }
-        let (description, source_enabled, marker) = heading
-            .unwrap_or_else(|| ("(original CWCheat source preamble)".into(), false, "preamble"));
+        let (description, source_enabled, marker) = heading.unwrap_or_else(|| {
+            (
+                "(original CWCheat source preamble)".into(),
+                false,
+                "preamble",
+            )
+        });
         let native_fields = vec![NativeField {
             name: "original_cwcheat_section_marker".into(),
             value: marker.into(),
@@ -191,7 +199,9 @@ pub fn parse_cwcheat_ini(text: &str) -> ParsedCheats {
     let mut body = String::new();
     for line in text.split_inclusive('\n') {
         let trimmed = line.trim();
-        let next = trimmed.strip_prefix("_C0 ").map(|name| (name, false, "_C0"))
+        let next = trimmed
+            .strip_prefix("_C0 ")
+            .map(|name| (name, false, "_C0"))
             .or_else(|| trimmed.strip_prefix("_C1 ").map(|name| (name, true, "_C1")));
         if let Some((name, enabled, marker)) = next {
             push(&mut codes, heading.take(), std::mem::take(&mut body));
@@ -437,9 +447,18 @@ mod tests {
         let parsed = parse_cwcheat_ini(src);
         assert_eq!(parsed.codes.len(), 3);
         assert_eq!(parsed.codes[0].role, "section-heading");
-        assert_eq!(parsed.codes[0].native_fields[1].value, "_S ULUS-10383\r\n_G Midnight Club: L.A. Remix [US]\r\n");
-        assert_eq!(parsed.codes[1].description.as_deref(), Some("Unlock prototype cheats"));
-        assert_eq!(parsed.codes[1].code.as_deref(), Some("_L 0x20067094 0x00000000\r\n"));
+        assert_eq!(
+            parsed.codes[0].native_fields[1].value,
+            "_S ULUS-10383\r\n_G Midnight Club: L.A. Remix [US]\r\n"
+        );
+        assert_eq!(
+            parsed.codes[1].description.as_deref(),
+            Some("Unlock prototype cheats")
+        );
+        assert_eq!(
+            parsed.codes[1].code.as_deref(),
+            Some("_L 0x20067094 0x00000000\r\n")
+        );
         assert!(parsed.codes[1].source_enabled);
         assert_eq!(parsed.codes[1].native_fields[0].value, "_C1");
         assert!(!parsed.codes[2].source_enabled);
