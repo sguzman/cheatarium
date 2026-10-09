@@ -436,6 +436,78 @@ impl GameIndex {
     pub fn by_candidate_key(&self, key: &str) -> Option<&GameCandidate> {
         self.candidates.iter().find(|game| game.key == key)
     }
+
+    /// Resolve an exact advisory key; a collision in the *index* is invalid,
+    /// distinct from the possible-title-collision warning on a single group.
+    pub fn find_candidate(&self, key: &str) -> Result<&GameCandidate> {
+        if key.is_empty() {
+            return Err("Candidate game key must not be empty".into());
+        }
+        let mut matches = self.candidates.iter().filter(|game| game.key == key);
+        let candidate = matches.next().ok_or("Candidate game key not found")?;
+        if matches.next().is_some() {
+            return Err("Duplicate game candidate keys in index".into());
+        }
+        Ok(candidate)
+    }
+}
+
+impl Bundle {
+    /// Follow exactly the original source links in a candidate game group.
+    /// Both the candidate and the source bundle are required: filename
+    /// grouping is advisory and never validates cartridge/ROM identity.
+    pub fn sources_for_candidate<'a>(
+        &'a self,
+        candidate: &GameCandidate,
+    ) -> Result<Vec<&'a IndexedFile>> {
+        use std::collections::{BTreeMap, BTreeSet};
+
+        let by_id: BTreeMap<_, _> = self
+            .records
+            .iter()
+            .map(|source| (source.id.as_str(), source))
+            .collect();
+        if by_id.len() != self.records.len() {
+            return Err("Duplicate original source IDs in platform bundle".into());
+        }
+        let mut seen = BTreeSet::new();
+        let mut selected = Vec::with_capacity(candidate.source_record_ids.len());
+        let mut code_fields = 0usize;
+        let mut memory_entries = 0usize;
+        if candidate.source_record_ids.is_empty() {
+            return Err("Candidate game has no original source links".into());
+        }
+        for source_id in &candidate.source_record_ids {
+            if !seen.insert(source_id.as_str()) {
+                return Err("Duplicate original source link in candidate game".into());
+            }
+            let source = by_id
+                .get(source_id.as_str())
+                .ok_or("Missing linked original source record")?;
+            if source.candidate_game_key != candidate.key {
+                return Err("Linked source has another candidate game key".into());
+            }
+            code_fields = code_fields
+                .checked_add(
+                    source.codes.iter().filter(|code| code.role.as_deref() == Some("code")).count(),
+                )
+                .ok_or("Candidate source code count overflow")?;
+            memory_entries = memory_entries
+                .checked_add(
+                    source
+                        .codes
+                        .iter()
+                        .filter(|code| code.role.as_deref() == Some("memory-entry"))
+                        .count(),
+                )
+                .ok_or("Candidate memory entry count overflow")?;
+            selected.push(*source);
+        }
+        if code_fields != candidate.code_fields || memory_entries != candidate.native_memory_entries {
+            return Err("Candidate game source totals disagree with original source bundle".into());
+        }
+        Ok(selected)
+    }
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -790,6 +862,65 @@ mod tests {
         assert_eq!(bundle.records[0].codes[0].code.as_deref(), Some("ABCD"));
         assert!(bundle.records[0].codes[0].is_code());
         assert!(!bundle.records[0].codes[1].is_code());
+    }
+
+    #[test]
+    fn game_candidate_source_links_preserve_exact_provenance() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let candidate = GameCandidate {
+            key: "super-mario-world".to_owned(),
+            title_hint: "Super Mario World".to_owned(),
+            alternate_title_hints: vec![],
+            identity_confidence: "filename_candidate_only".to_owned(),
+            possible_title_collision: false,
+            source_record_ids: vec!["x".to_owned()],
+            source_ids: vec!["libretro".to_owned()],
+            region_hints: vec!["USA".to_owned()],
+            format_hints: vec![],
+            code_fields: 1,
+            native_memory_entries: 0,
+        };
+        let sources = bundle.sources_for_candidate(&candidate).unwrap();
+        assert_eq!(sources.len(), 1);
+        assert_eq!(sources[0].id, "x");
+        assert_eq!(sources[0].provenance.upstream_path, "cht/sample.cht");
+        let mut broken = serde_json::to_value(&candidate).unwrap();
+
+        broken["source_record_ids"] = serde_json::json!(["x", "x"]);
+        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        broken["source_record_ids"] = serde_json::json!(["missing"]);
+        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        broken["source_record_ids"] = serde_json::json!(["x"]);
+        broken["code_fields"] = serde_json::json!(2);
+        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        broken["code_fields"] = serde_json::json!(1);
+        broken["key"] = serde_json::json!("another-game");
+        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken).unwrap()).is_err());
+    }
+
+    #[test]
+    fn exact_candidate_lookup_rejects_ambiguous_keys() {
+        let candidate: GameCandidate = serde_json::from_value(serde_json::json!({
+            "key": "game", "title_hint": "Game", "alternate_title_hints": [],
+            "identity_confidence": "filename_candidate_only",
+            "possible_title_collision": false, "source_record_ids": ["source"],
+            "source_ids": ["archive"], "region_hints": [], "format_hints": [],
+            "code_fields": 1, "native_memory_entries": 0
+        })).unwrap();
+        let mut index = GameIndex {
+            schema_version: 1,
+            platform: "snes".to_owned(),
+            identity_rule: "filename candidates".to_owned(),
+            candidates: vec![candidate],
+        };
+        assert!(index.find_candidate("game").is_ok());
+        assert!(index.find_candidate("").is_err());
+        assert!(index.find_candidate("missing").is_err());
+        let clone: GameCandidate = serde_json::from_value(
+            serde_json::to_value(&index.candidates[0]).unwrap()
+        ).unwrap();
+        index.candidates.push(clone);
+        assert!(index.find_candidate("game").is_err());
     }
 
     #[test]
