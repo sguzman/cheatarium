@@ -1,0 +1,49 @@
+name: Import pinned independent PS2 cheats
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-igor-pcsx2.yml"
+      - "tools/import_igor_pcsx2.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-igor-pcsx2-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Preserve pinned regional PS2 patch originals and author license
+        run: |
+          set -euo pipefail
+          python3 tools/import_igor_pcsx2.py
+      - name: Validate original Git blob checksums and all source manifests
+        run: |
+          set -euo pipefail
+          python3 tools/validate.py
+      - name: Commit original PS2 cheats only
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/igor-misc-pcsx2-cheats/ sources/igor-misc-pcsx2-cheats.json
+          if git diff --cached --quiet; then
+            echo "Pinned source is already preserved."
+            exit 0
+          fi
+          git commit -m "data: preserve 17 independent regional PS2 PNACH cheat files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
