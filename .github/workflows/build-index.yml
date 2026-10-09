@@ -58,6 +58,16 @@ jobs:
       - uses: actions/checkout@v5
         with:
           persist-credentials: true
+      - name: Run fast ROM-free Python regression tests
+        run: |
+          set -euo pipefail
+          python3 tools/test_effect_reviews.py
+          python3 tools/test_snes_compositions.py
+          python3 tools/test_snes_review_queue.py
+          python3 tools/test_inspect_snes_joins.py
+          python3 tools/test_snes_publications.py
+          python3 tools/test_audit_snes_publication_archive.py
+          python3 tools/test_analyze_snes_patterns.py
       - name: Rust toolchain
         run: |
           rustup toolchain install stable --profile minimal
@@ -83,19 +93,12 @@ jobs:
         run: cargo run --locked --release -p cheatarium-index -- --root . --out generated/v1
       - name: Audit SNES interpretations and build verified distribution
         run: |
-          python3 tools/test_effect_reviews.py
           python3 tools/validate_effect_reviews.py --write
           python3 tools/validate_effect_reviews.py --check
-          python3 tools/test_snes_compositions.py
           python3 tools/validate_snes_compositions.py
           python3 tools/audit_snes_codecs.py --out generated/v1/reports/snes-codec-coverage.json
-          python3 tools/test_snes_review_queue.py
           python3 tools/build_snes_review_queue.py --write
           python3 tools/build_snes_review_queue.py --check
-          python3 tools/test_inspect_snes_joins.py
-          python3 tools/test_snes_publications.py
-          python3 tools/test_audit_snes_publication_archive.py
-          python3 tools/test_analyze_snes_patterns.py
           python3 tools/analyze_snes_patterns.py --game-key push-over --limit 2 \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_pattern_families"] > 0 and 0 < d["returned"] <= 2; assert d["families_may_overlap"] and d["pattern_is_not_code_equivalence"]; assert not d["execution_or_rom_compatibility_verified"] and not d["safe_to_combine_or_auto_apply"]; assert all(f["original_occurrences"] >= 2 and f["source_git_blob_sha"] for f in d["families"])'
           python3 tools/validate_snes_publications.py --write
