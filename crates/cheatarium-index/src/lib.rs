@@ -4,6 +4,8 @@
 //! emulator memory writes. Exact original bytes remain in archive/.
 //! Filename-based game associations are suggestions, never ROM verification.
 pub mod effect_signals;
+mod native;
+pub use native::{parse_artemis_ncl, parse_gecko_ini, parse_gecko_markdown, parse_goldhen_json, parse_goldhen_mc4, parse_goldhen_shn};
 use cheatarium_codecs::SnesDecoded;
 use serde::Deserialize;
 use serde::Serialize;
