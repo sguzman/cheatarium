@@ -310,6 +310,31 @@ jobs:
             exit 1
           fi
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --source-id libretro-database --region-hint USA --role code \
+            --description-contains 'UNDO A PUSH' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_entries.v1" and d["source_id_filter"] == "libretro-database" and d["region_hint_filter"] == "USA" and d["source_facets_match_exact_original_labels"] and d["description_text_match_only"]; assert d["total_original_entries"] > 0 and d["returned"] > 0; assert all(h["provenance"]["source_id"] == "libretro-database" and h["region_hint"] == "USA" and "undo a push" in h["entry"]["description"].lower() for h in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --region-hint usa \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' --limit 2 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_original_entries"] == 0 and d["entries"] == [] and d["returned"] == 0 and not d["has_more"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --declared-format no-such-declared-format --limit 2 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["declared_format_filter"] == "no-such-declared-format" and d["total_original_entries"] == 0 and d["entries"] == []'
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --region-hint '   '; then
+            echo "ERROR: accepted blank exact source region" >&2
+            exit 1
+          fi
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- codes \
+            --db generated/v1 --platform snes --code '6D6B-6F0F' --region-hint USA; then
+            echo "ERROR: accepted entries-only region filter on exact-code query" >&2
+            exit 1
+          fi
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
             --db generated/v1 --platform snes --game-key push-over --role code \
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
             --description-contains 'UNDO A PUSH' --limit 10 --json \
