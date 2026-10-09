@@ -19,6 +19,21 @@
       "warnings": 1
     },
     {
+      "platform": "3ds",
+      "artifact": "3ds.json.gz",
+      "game_index_artifact": "games/3ds.json.gz",
+      "repeat_index_artifact": "repeats/3ds.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/3ds.json.gz",
+      "tag_matches": 1190,
+      "game_candidate_groups": 644,
+      "source_files": 644,
+      "code_fields": 12274,
+      "native_memory_entries": 0,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "atari-2600",
       "artifact": "atari-2600.json.gz",
       "game_index_artifact": "games/atari-2600.json.gz",
@@ -468,6 +483,21 @@
       "native_memory_entries": 0,
       "decoded_snes_code_fields": 0,
       "warnings": 0
+    },
+    {
+      "platform": "switch",
+      "artifact": "switch.json.gz",
+      "game_index_artifact": "games/switch.json.gz",
+      "repeat_index_artifact": "repeats/switch.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/switch.json.gz",
+      "tag_matches": 838,
+      "game_candidate_groups": 491,
+      "source_files": 491,
+      "code_fields": 6150,
+      "native_memory_entries": 0,
+      "decoded_snes_code_fields": 0,
+      "warnings": 3
     },
     {
       "platform": "tg16",

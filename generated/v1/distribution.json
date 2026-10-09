@@ -2,11 +2,11 @@
   "schema_version": 1,
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
-  "console_bundles": 36,
-  "source_files": 23382,
-  "game_candidate_groups": 16825,
+  "console_bundles": 38,
+  "source_files": 24517,
+  "game_candidate_groups": 17960,
   "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 65495,
+  "lexical_effect_tag_matches": 67523,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -23,263 +23,278 @@
   "files": [
     {
       "path": "32x.json.gz",
-      "sha256": "ff4a67ff7ebd289a94eddce7914b67aa4361309314d659ef5d088443b0bb46ec",
-      "size_bytes": 15046
+      "sha256": "166c44781115afb68a22e79f32f6e14e9d801550f81b60ea2f934e6dd9bc8854",
+      "size_bytes": 15068
+    },
+    {
+      "path": "3ds.json.gz",
+      "sha256": "e21544203bb0497a33c345147eac29e9e560f741af6dc79483848cf4581c4ee3",
+      "size_bytes": 364014
     },
     {
       "path": "atari-2600.json.gz",
-      "sha256": "893acb837ee1bf2b196cfbab145c1db0f7b4ea4707446d890de9dd48b8b5ae3b",
-      "size_bytes": 3198
+      "sha256": "21806cd1536c56a4b5147e76ca81776906b456e2bbcda78725f3519fba7cc7b8",
+      "size_bytes": 3222
     },
     {
       "path": "atari-5200.json.gz",
-      "sha256": "e731ad8718aaf592750405e58a958e3620bb38761c8b2c3e210dc481a3f29344",
-      "size_bytes": 12204
+      "sha256": "92bde4b49188b8e262f7fbeab0ca22bfac3a958c808e41f33eede1ebc0073e02",
+      "size_bytes": 12229
     },
     {
       "path": "atari-7800.json.gz",
-      "sha256": "0e70a9fef92b76c160d92605d248bf0f79ac5eb4c529fd142c1d6fea656aa97f",
-      "size_bytes": 4927
+      "sha256": "a7661ddc25f194aa08ed47a956fbaad1be2bf0e8f91c6741f9bf400fd1659387",
+      "size_bytes": 4951
     },
     {
       "path": "atari-jaguar.json.gz",
-      "sha256": "684994126e84acdcae9c4a60b8cc40ad13a992d7541fc0620648976a657d73b4",
-      "size_bytes": 9057
+      "sha256": "35e2828676e4339b3a378c3e3ef7779f8d3a9fabf8b2a405d661a1101466cdb0",
+      "size_bytes": 9082
     },
     {
       "path": "atari-lynx.json.gz",
-      "sha256": "07ddb5d3147fce24bb2e508d023ec4e456a6597777ac8e544479501af6ec7309",
-      "size_bytes": 2563
+      "sha256": "298329c2f33328de536f73db0570c50ec6f8527f73864e5160a9cf33fea3aeb1",
+      "size_bytes": 2587
     },
     {
       "path": "catalog.json",
-      "sha256": "90b03e39617c9d0058d7bb93ae33b40e9554828f72aa90aa67921ccfe3e588d4",
-      "size_bytes": 17290
+      "sha256": "0ee5c3dda7db78d6ddc1ab810f7358291a8fa2fa39c9625cde9011a0afbdd561",
+      "size_bytes": 18219
     },
     {
       "path": "colecovision.json.gz",
-      "sha256": "fc6b6fbf2342778fd82836729a965f5b9bde58e942de7caff3e730c7ec720d10",
-      "size_bytes": 9987
+      "sha256": "c79407083ab8c78bc419659aa6260fd907f6866eba222908169fd999469f6f89",
+      "size_bytes": 10013
     },
     {
       "path": "dreamcast.json.gz",
-      "sha256": "19c658c23f1d51f0a3d195e5c7e64b257b1f6d22f9a62354a60cf46457b8e4f8",
-      "size_bytes": 243839
+      "sha256": "029bb8e3a853221bf5417b40f81fe6769e4c6b1d229d42fd119cb4e2f83c5f56",
+      "size_bytes": 243883
     },
     {
       "path": "fds.json.gz",
-      "sha256": "2bfd2579c5c8f5fdb34a6e4fdbf5ed3cb3a7166d94411883bce9a82cf846e5f4",
-      "size_bytes": 21586
+      "sha256": "e1104c4f476ccb9932e1c66cc78036257545f602655d9779442cb050f9dcfd77",
+      "size_bytes": 21608
     },
     {
       "path": "game-gear.json.gz",
-      "sha256": "2d5305c1b3d9020e623365c7f83a107ae540558b3849fc58e679ce4ea5cdbe72",
-      "size_bytes": 150196
+      "sha256": "0cefcf80769b4e05fb205404804c634c80f366adb9e0bf9f5ca3c91f1d668d57",
+      "size_bytes": 150222
     },
     {
       "path": "games/32x.json.gz",
-      "sha256": "01f2e75be94ce388d1b2af6e51a97db3983a77f13d3f651bee3ea4c57ba28d9e",
-      "size_bytes": 1291
+      "sha256": "5971cf58bc7271d8b36593cb1b5f14e889bb52a91399067d2955abd9974c7a2c",
+      "size_bytes": 1313
+    },
+    {
+      "path": "games/3ds.json.gz",
+      "sha256": "f407d38b28647fdbca5ff70d53acc7082ce4528d5ce8dd82934d623041f24735",
+      "size_bytes": 8188
     },
     {
       "path": "games/atari-2600.json.gz",
-      "sha256": "ae31c545e179ffbed84013bc890e81defece1881c203161be78cae2cae037131",
-      "size_bytes": 879
+      "sha256": "20e83eb7424f671de8cb5382a24ba040eed3dea67502e9017501d5700a5a4a93",
+      "size_bytes": 900
     },
     {
       "path": "games/atari-5200.json.gz",
-      "sha256": "05ab149678bbc4209dc85784b902223e7c0fc1b9a0470e368edaa6e4104aa85e",
-      "size_bytes": 2345
+      "sha256": "a945b3c301ea6f3cc4a62f0e5b5a73f66cfc2f8fe77b46e5102ff7e0b6f17d67",
+      "size_bytes": 2371
     },
     {
       "path": "games/atari-7800.json.gz",
-      "sha256": "f66f80940393090e565dc9dd945883323ec7c942df520286a66c224171ec8a6f",
-      "size_bytes": 1111
+      "sha256": "1b059a1c3a1c45fc6089e94395bdef48cd0a53b1fe22b3db65a7346f0d3e0e8d",
+      "size_bytes": 1131
     },
     {
       "path": "games/atari-jaguar.json.gz",
-      "sha256": "c1bbed177a5a6f5e1109f981c18aa5c7977c90fc8f41123fbdd30c130bed18d6",
-      "size_bytes": 1569
+      "sha256": "97034f77292496698c1fa432451609d0e6e0c943a7cbaf50f1f89f55f20a3748",
+      "size_bytes": 1590
     },
     {
       "path": "games/atari-lynx.json.gz",
-      "sha256": "62d8b45cf014897ed6747345e57d64777142e31004f99b641a49f3f2fdb9764e",
-      "size_bytes": 671
+      "sha256": "18383b1d77aede7cf07fd182f0ae055eb1d45e8eaa3fa449fef9c5fbcbb05d3a",
+      "size_bytes": 690
     },
     {
       "path": "games/colecovision.json.gz",
-      "sha256": "068a65c2a4c938e051b8b783784ac74c2a6850082102bcf92779a8b07cf45c7c",
-      "size_bytes": 2553
+      "sha256": "aa658d5e2f0de2d24c2cd320e99ef899ccaaba15e6c05757b7bb8cf25c869bd8",
+      "size_bytes": 2571
     },
     {
       "path": "games/dreamcast.json.gz",
-      "sha256": "585152f9b7fb4bd543798af290f440dfc6847b817c149092e55ded613d1275be",
-      "size_bytes": 8008
+      "sha256": "5c93f0c9dccb5148c7191eebfcc6fe1575ea890753f59aba34f7acb0c963f079",
+      "size_bytes": 8030
     },
     {
       "path": "games/fds.json.gz",
-      "sha256": "ad7c27255f659543dbb7532f7a13f6ed710a4fb089cc7437e91defdd138d5c94",
-      "size_bytes": 4780
+      "sha256": "33d60d8a82b8f7ac0f350173e46c7fbaa18cd022e330b2559a5cafd286f85469",
+      "size_bytes": 4802
     },
     {
       "path": "games/game-gear.json.gz",
-      "sha256": "617d8328912341c37d7246cd3dc2a85e68d2efdedc232b310b44145a753c1ff5",
-      "size_bytes": 15813
+      "sha256": "bfdaa2ed7a78fdf7fefefca9d90dcedf419f56966c8afd217d4fa0c138236ebe",
+      "size_bytes": 15834
     },
     {
       "path": "games/gb.json.gz",
-      "sha256": "4aa1ef998f9e3e5e2167c71db0f75c81a162d1fc3a044691cd87bbfd192780a2",
-      "size_bytes": 29622
+      "sha256": "0169d34497b0f7520fd4f2837139715896756b8b5dc3cdf5f66b656448ba2d23",
+      "size_bytes": 29645
     },
     {
       "path": "games/gba.json.gz",
-      "sha256": "dce580e3c4d51dd597713ace37358e7680de6d2c94bc16d109574ae0ce031c3d",
-      "size_bytes": 16839
+      "sha256": "d37ac1cf5f73184eee3c0937eeac2cbe7d8a5c888b6ce4737926f70ecb8565b9",
+      "size_bytes": 16859
     },
     {
       "path": "games/gbc.json.gz",
-      "sha256": "e5dfeb37003ef9feb37f8ed3546d9d0712f93db328bf0f7cdadd07b32a5436fc",
-      "size_bytes": 22907
+      "sha256": "fba9dcaaa3327971766d1789abe03a167ab00b486291a48461d344954d7b6ed0",
+      "size_bytes": 22927
     },
     {
       "path": "games/genesis.json.gz",
-      "sha256": "a3d173f734eca31b8d846036a75866bb6d3baac4ea72edfc16640a490c49c00c",
-      "size_bytes": 42209
+      "sha256": "e500f3df2021205e9232cf9c4ae9df0aa034a959ff728e0f520ec394ae1e9832",
+      "size_bytes": 42229
     },
     {
       "path": "games/gx4000.json.gz",
-      "sha256": "de7b3c7f34db46e304ce155ea0084a7f087a0ee026196b3ec0d833ddc910bbf5",
-      "size_bytes": 791
+      "sha256": "e1512876e56147280674f4b9b1d3cb5e657f3496f82cd58d463f911da3d28ba3",
+      "size_bytes": 811
     },
     {
       "path": "games/intellivision.json.gz",
-      "sha256": "5c08ea8a8bd30bd2ba9c7af6f120b7605481378b18015adbb8ece2ebe7aa73d5",
-      "size_bytes": 517
+      "sha256": "4392858318a930b165545181ebaa7ef06e5e938055b51cf781ee3ec264be4a07",
+      "size_bytes": 537
     },
     {
       "path": "games/master-system.json.gz",
-      "sha256": "17a2db42738861c5f8c82998dcfb4f835f48108be2c7ce5672c8cf79120bcf31",
-      "size_bytes": 13769
+      "sha256": "5262beefb89c804148b68f6d4756c8df4835e03a7837bef8a28a95b9a5892332",
+      "size_bytes": 13788
     },
     {
       "path": "games/n64.json.gz",
-      "sha256": "f2a9f7ac4d308c8e242bde9ca4b58fca3d6449cd8edc45a8135bf83e054c0e55",
-      "size_bytes": 24443
+      "sha256": "6663989201ff2f2a51ba8ce808043769a01f1cf8a48e798ca5c15ee73580d53e",
+      "size_bytes": 24465
     },
     {
       "path": "games/nds.json.gz",
-      "sha256": "f7949053528f34af37bcaa8ada55b4570276e0e2b8ea31291c801bbe07fde45a",
-      "size_bytes": 119157
+      "sha256": "e0884987feb10bae7c0107daa9ce3ebf88b1d204aee9217f38d1e94280e8bee4",
+      "size_bytes": 119179
     },
     {
       "path": "games/nes.json.gz",
-      "sha256": "777d308ded72e3afc4ece621a1ae920329eca792c7bf979a6a64e9e120114312",
-      "size_bytes": 50365
+      "sha256": "d8c9360c1ec170108641d6631b2b09c1460832558a6fc30d6502dab35dbb0a5f",
+      "size_bytes": 50390
     },
     {
       "path": "games/ngp.json.gz",
-      "sha256": "351cd70d64fcb3957c8fb3a3db17eabb516a41c8a1613fbc1c60609244556fc3",
-      "size_bytes": 510
+      "sha256": "3bfa5322fc07a0b402b4f989738e024bb7ec5ec28ea9f8e8ba93292d55d34f15",
+      "size_bytes": 529
     },
     {
       "path": "games/ngpc.json.gz",
-      "sha256": "c4251c92e5e93518488aec1e0c6db318bde8500f1af5854354edd61567274323",
-      "size_bytes": 1382
+      "sha256": "35239e40535c2fbbcb86d835bb4083e231f1b5133a1ff9720834f7a707146605",
+      "size_bytes": 1403
     },
     {
       "path": "games/pc-fx.json.gz",
-      "sha256": "75d03d0636394a47acc0f89df96303d03820c654c0c06d8c277cd809b604a93f",
-      "size_bytes": 360
+      "sha256": "fbe27b6ec4090229eac964b20f08a93cb1f8275b72681a3068e1c796a4e95c03",
+      "size_bytes": 378
     },
     {
       "path": "games/ps1.json.gz",
-      "sha256": "4811da018b1c9d3579b5a91f1fcf2877ad2d633a6cf67699a06cb07cda488168",
-      "size_bytes": 48997
+      "sha256": "7ffdc4fcc19bb1739316550eaa3fa43aebc22e2e3cfd1ada8fec324d01a028db",
+      "size_bytes": 49021
     },
     {
       "path": "games/psp.json.gz",
-      "sha256": "1f6d5e62f4fc14b4c1f14a5423619ed4a85d0afff14cf07a806ca1048e897b32",
-      "size_bytes": 90380
+      "sha256": "8f8dc8f41f2527234237274d1b553bc08d48eae35ec3331bfaaaac94ef405dc6",
+      "size_bytes": 90400
     },
     {
       "path": "games/satellaview.json.gz",
-      "sha256": "b7d6ca391828086f20882e788c6b2df6aff6ce0b20482e7487afaf456bbcecad",
-      "size_bytes": 634
+      "sha256": "948fd6caec4766244d234951cf23b17dd9471bd1cd13b4e7f3ba00ddc1323030",
+      "size_bytes": 655
     },
     {
       "path": "games/saturn.json.gz",
-      "sha256": "94c99e9a954f7b0b7cb59547363c25dd45abb572e5767182660b903550c45cb1",
-      "size_bytes": 5844
+      "sha256": "554da3219c88b9ad021fd4ff190d510a756b699037ace9e5cba6e7d829d2c421",
+      "size_bytes": 5865
     },
     {
       "path": "games/segacd.json.gz",
-      "sha256": "85556838e685c1769a4053318bf8a2299a63f9a29c1497c572790a16a11dd1e0",
-      "size_bytes": 766
+      "sha256": "deb416207b6fd24a9ab910320e85a24dced44c23b99b24148c701f9780aab43c",
+      "size_bytes": 783
     },
     {
       "path": "games/sg1000.json.gz",
-      "sha256": "bbae23433c275e82d7e7a3be509276f2a1fe49a8b81913946e865edbe6282b73",
-      "size_bytes": 1106
+      "sha256": "43856219618a1f4c883e0fbedc614ee0245d01c1c328e9476e8bec4cf81f2fa2",
+      "size_bytes": 1124
     },
     {
       "path": "games/snes.json.gz",
-      "sha256": "203bbdecc734fcc569aadd733a110464bcb04aff2569508037635a5fdb598e9a",
-      "size_bytes": 52063
+      "sha256": "738f45b390fe3939ad3111c755a9d8307e034fde6b5d4db0e495260d02491685",
+      "size_bytes": 52082
     },
     {
       "path": "games/supergrafx.json.gz",
-      "sha256": "79d956ea37e053ac3badff5071da9c429174184388d8dea569c897c5afb5a3b7",
-      "size_bytes": 428
+      "sha256": "3b27c51e988258da281d4bdc260ba87dc44e982c89b6000e307ecbc5e8ed1472",
+      "size_bytes": 446
+    },
+    {
+      "path": "games/switch.json.gz",
+      "sha256": "9283e3767f59f3e182b8bff83f712c8fccaa17d05f38d88afc893e1b00b8892d",
+      "size_bytes": 16652
     },
     {
       "path": "games/tg16.json.gz",
-      "sha256": "649168bc98a9967276ec8b3bebfe7a9945dbbf6dcc4611efdce2ffd013420b45",
-      "size_bytes": 7739
+      "sha256": "e2366363d94a5329939c1c638039fa0c6fecc0282c5b6a5729b817482a80f691",
+      "size_bytes": 7757
     },
     {
       "path": "games/tgcd.json.gz",
-      "sha256": "0b8595ec8fd8f45b75ad82b0278cb82c89fe51f517417608a37daba261fc91f5",
-      "size_bytes": 4535
+      "sha256": "748f958d1cfa7f6e2aa77b02946ad22471f3e51d3dbc00acd8328d3d6da03f49",
+      "size_bytes": 4554
     },
     {
       "path": "games/virtual-boy.json.gz",
-      "sha256": "53b4602398aa5cad513eb24243b3e4db512649a722172711d00d959eec01cf6c",
-      "size_bytes": 620
+      "sha256": "136bb664ee62b181b21c88848fa58aa236e6a6f75ce111fa740e003864798a3a",
+      "size_bytes": 641
     },
     {
       "path": "games/wonderswan-color.json.gz",
-      "sha256": "d58b6a477fe396d8c97ef01891a11b069726fa649df54ae9ca62c860af844e30",
-      "size_bytes": 514
+      "sha256": "2b869f45756619a58bc9a3e118f3f16df4534efd05c61ca51b31909070abfd57",
+      "size_bytes": 532
     },
     {
       "path": "games/wonderswan.json.gz",
-      "sha256": "dcf2ca271deed88f486fd29ee1ae924e2296934a88d8c5e00e8080db7e6042bb",
-      "size_bytes": 568
+      "sha256": "01af6d77ec94b33d4250d5b42ecf2f58eb297619bb47cc0ab1e4d0653ffb2f1b",
+      "size_bytes": 587
     },
     {
       "path": "gb.json.gz",
-      "sha256": "e88c54be44cc431cb023fa119d545edd230d516fd6dc1ae74033a3e728a5292d",
-      "size_bytes": 337363
+      "sha256": "140af06733f8e0327a292faff48043fc01b1be67a6c40e282fba920ea2b22d51",
+      "size_bytes": 337397
     },
     {
       "path": "gba.json.gz",
-      "sha256": "eb24221cf9ea7bef86ad408161e30c052fef5ae9159efd1782d0fd65b152a3fd",
-      "size_bytes": 171132
+      "sha256": "0f83aca3bf2df071474b480203c14394745c13136988778ca54330533c5d302c",
+      "size_bytes": 171143
     },
     {
       "path": "gbc.json.gz",
-      "sha256": "0ffdeb206fade4ea33f11a77091c057bcd2cba4dbddf3e5967814bb423d08ec1",
-      "size_bytes": 361300
+      "sha256": "801349a96785e1ca16372109e490db0c3b469860a56c336bdf4ea4fb4168a4b3",
+      "size_bytes": 361332
     },
     {
       "path": "genesis.json.gz",
-      "sha256": "af72f793bbaa07d45cdafc4e936adcf85dfb7eaa23d353284d39d11bbc157a62",
-      "size_bytes": 806328
+      "sha256": "426fdf3ac6df7f3705fcfe2c54f27f86877050045dd278605f8091db51220d4d",
+      "size_bytes": 806332
     },
     {
       "path": "gx4000.json.gz",
-      "sha256": "554d618e2f6fd16dbd21ece5117463dd6c4b0270a846d5eb0ce2389a672a96a1",
-      "size_bytes": 2838
+      "sha256": "2e35c355bc9110cf260ca3ec9b85f7aafa4e9ddac6d82a4c8c060f164645184c",
+      "size_bytes": 2862
     },
     {
       "path": "identities/snes.json",
@@ -288,8 +303,8 @@
     },
     {
       "path": "intellivision.json.gz",
-      "sha256": "ab8c8211c38b9c78c1a760e29a3aada52496b460ec9c82de859cf55dddff4a20",
-      "size_bytes": 1490
+      "sha256": "96cda43fdc853713d587661f7ebebf744e1a1d4dbe9b09153c13a0893c63e94b",
+      "size_bytes": 1513
     },
     {
       "path": "interpretations/snes-published-groups.json",
@@ -303,53 +318,58 @@
     },
     {
       "path": "master-system.json.gz",
-      "sha256": "baedfe6124e346ddbea5875e875f09248e0bbce3e1086cbe4f0768f6be5e30d7",
-      "size_bytes": 112166
+      "sha256": "9da53333dde9e86fb71b39d880333057222ce669ef50ffa58be9655331f8b7b6",
+      "size_bytes": 112188
     },
     {
       "path": "n64.json.gz",
-      "sha256": "bca2978dcd8baed7675d6e49bfdcb4be3fd389c80e320daf6f3be7fd9a33dd49",
-      "size_bytes": 2826552
+      "sha256": "b7868d958f6b3ffea254783780245602d6e44c709148fca1ad9d5ad23c646d09",
+      "size_bytes": 2826582
     },
     {
       "path": "nds.json.gz",
-      "sha256": "336e26a65bd2cc32ea4877063e48fa44b086a153fc4f0f7ba0bde0229f3114fd",
-      "size_bytes": 12847396
+      "sha256": "d4a9dc91dd5ba4d4a8d5c2993c7736bf7c5f6a97a22d114b8911e90c65bc0d90",
+      "size_bytes": 12847462
     },
     {
       "path": "nes.json.gz",
-      "sha256": "35a096ee57b84e7edd68bcec5d7ce71cc990068e03f55b3052d91e17572938fc",
-      "size_bytes": 901143
+      "sha256": "3d3cb9eb0f53ab149032884a14a3ab5feeb27d3ec26be30287d134d268dea6e3",
+      "size_bytes": 901158
     },
     {
       "path": "ngp.json.gz",
-      "sha256": "72e2ee1092d851bfc33c30b9f54d3d7ad0c47a84d08564162272af201309c1f2",
-      "size_bytes": 1210
+      "sha256": "9cb662f33498dcc9d948707e02564f7477be8325813420b63a5605ed41c4ee8d",
+      "size_bytes": 1229
     },
     {
       "path": "ngpc.json.gz",
-      "sha256": "839991469fb2b23f03ac65deb57291e82eb813c631fbf454d16087a0ea78e0ea",
-      "size_bytes": 4980
+      "sha256": "6691af6ebdf782d032118d11fca0adaa26569d9c15b0de04b078cedc5e6e6183",
+      "size_bytes": 5004
     },
     {
       "path": "pc-fx.json.gz",
-      "sha256": "258433f0be9f3b2cc601fed92a6708580f5b6925eb718c8f2e2a4cc09f18d49a",
-      "size_bytes": 704
+      "sha256": "bde356357bc9ce0e7edf0a95e5d8b85561d52b5fe0a56c5d6e9fbca087ef8374",
+      "size_bytes": 726
     },
     {
       "path": "ps1.json.gz",
-      "sha256": "0af1edbbe128d04dac0f1381ba164c666426aa80d41ea74a0b935194c58903d9",
-      "size_bytes": 551245
+      "sha256": "0be9c300319f914e5afcadb3e79dcd649149a2bb9864b79c12a9c3fa0f823459",
+      "size_bytes": 551272
     },
     {
       "path": "psp.json.gz",
-      "sha256": "f561102c2d7a9debbf07b8272b8f418abfbf350920c0d120c58957520ed5060e",
-      "size_bytes": 1950153
+      "sha256": "133de6c91ede3afb6d3905c5145fdb482cc8936b5041163e952f37a55758ac4e",
+      "size_bytes": 1950180
     },
     {
       "path": "repeats/32x.json.gz",
       "sha256": "055c62fd0ff2d0f74030961b04ac459d1eafb50992a792f82772c945177c8489",
       "size_bytes": 143
+    },
+    {
+      "path": "repeats/3ds.json.gz",
+      "sha256": "947d47554005d8fbb0d516cc3abfb48a7300a7a55a1c1965410f7cd5b9ab92b1",
+      "size_bytes": 142
     },
     {
       "path": "repeats/atari-2600.json.gz",
@@ -502,6 +522,11 @@
       "size_bytes": 145
     },
     {
+      "path": "repeats/switch.json.gz",
+      "sha256": "812f9aa67fa11a3ef1d7056e683abd48b2514b05bd7fdb14549ab58934920b77",
+      "size_bytes": 142
+    },
+    {
       "path": "repeats/tg16.json.gz",
       "sha256": "9163682d48ecda5303e801d3110bb23d05289b8dfe31f6e860bb13d17167ead3",
       "size_bytes": 144
@@ -543,38 +568,48 @@
     },
     {
       "path": "satellaview.json.gz",
-      "sha256": "1c776998d54fa3b1fc5fbd2a8ec4a8a1872b068440c428612f1fc1197d3ca58c",
-      "size_bytes": 2024
+      "sha256": "3e7d77e50cb5f0d0eb733189f9a79a2dba15025bf0ff8acd74f7171c411e91c3",
+      "size_bytes": 2045
     },
     {
       "path": "saturn.json.gz",
-      "sha256": "33872fc65af4086a73f15fb07ae1b871ca2812ef69b9870f82ed9389ae12400e",
-      "size_bytes": 41539
+      "sha256": "044c77c82d658364f55e758db3a594f0f26769b1d2b06615556dc9ff872c9b53",
+      "size_bytes": 41562
     },
     {
       "path": "segacd.json.gz",
-      "sha256": "942d610d7e6817895ec2154c1fe7bae97b4b0b5faa4d12bb9988c79ccfe063a6",
-      "size_bytes": 3742
+      "sha256": "ae97cafaa678f852104e53dca672e4c019dcdc9f99287870ccbe422896a01704",
+      "size_bytes": 3765
     },
     {
       "path": "sg1000.json.gz",
-      "sha256": "e30f4004fc8df38c5cd088a5f74d091a45e1a4f7aa918b411044cfa53ec0c7fc",
-      "size_bytes": 3608
+      "sha256": "30efc79f57d6da8b0bf8944736982c62452a5672939b0e5290b7286f9544571b",
+      "size_bytes": 3631
     },
     {
       "path": "snes.json.gz",
-      "sha256": "f91b054d38e5924c57ee2c55507979254ebb63a6ddde97d4c4f85409db7b0e75",
-      "size_bytes": 1860322
+      "sha256": "b8ca3aa489cdbf095173db7dac600fa7c93f507c6d753d3456607b3e1bb4f63b",
+      "size_bytes": 1860385
     },
     {
       "path": "supergrafx.json.gz",
-      "sha256": "d0c49fe3a9dbe652481ab3fbeb04832dfa0a1caa8ef0b78c8c217a613c6c7bc2",
-      "size_bytes": 1052
+      "sha256": "f1cf8e91358389aa4c84aee0e3d5b5872db9ee03c384d4547ff5593cd5fdd84d",
+      "size_bytes": 1075
+    },
+    {
+      "path": "switch.json.gz",
+      "sha256": "a467606f28c16b6d2af98b9c4fb4321543998655b3ae465d4d3e94e1f1e443c7",
+      "size_bytes": 207340
     },
     {
       "path": "tags/32x.json.gz",
       "sha256": "4c4f73aad863f8d8f2ef76349eee46954a2cdfc3be461f553153353c59ca9884",
       "size_bytes": 1406
+    },
+    {
+      "path": "tags/3ds.json.gz",
+      "sha256": "22eecab15e523d714c0ebbb14ea198856ae076bfbb7ec657ffe12d989a092a44",
+      "size_bytes": 8520
     },
     {
       "path": "tags/atari-2600.json.gz",
@@ -727,6 +762,11 @@
       "size_bytes": 481
     },
     {
+      "path": "tags/switch.json.gz",
+      "sha256": "860702cffdc7c717e6405b984ed2c02186b84be52b59c903597202b70b0fabc1",
+      "size_bytes": 12893
+    },
+    {
       "path": "tags/tg16.json.gz",
       "sha256": "0279b68ae916c09d426a150a6167d1a0efc92fd3f5322e3fb01cc8da88bb8731",
       "size_bytes": 7549
@@ -758,28 +798,28 @@
     },
     {
       "path": "tg16.json.gz",
-      "sha256": "4cea2eb1967bcab9088eea0012cb13b1b036c9f9e078cbbb55992e785d0f6a57",
-      "size_bytes": 37910
+      "sha256": "46f7cb33ea57186e247c7d219c5021e444ec82f34b7d3dbeba117a45d10c6a23",
+      "size_bytes": 37933
     },
     {
       "path": "tgcd.json.gz",
-      "sha256": "6856fe6f5f6fc72c3ca5aff2b6ed4f42fffd3166757173352385fae2a1864038",
-      "size_bytes": 18246
+      "sha256": "a6f9c3e526e74b0ac1993ef146a51a7d5e7f4512684b86a28af309a9ea611612",
+      "size_bytes": 18269
     },
     {
       "path": "virtual-boy.json.gz",
-      "sha256": "68b7cc8073f2b6b2c7696cc523c5d007a7f75e0724ac3d4ffc394c27b9aabbf0",
-      "size_bytes": 1833
+      "sha256": "7afdbe874800c72cad0c3a337c299f64ef453b3721f1cb6959b1ccc83a23de47",
+      "size_bytes": 1858
     },
     {
       "path": "wonderswan-color.json.gz",
-      "sha256": "aab3aae10581d44569e4a203adddec357a01ec665f363611a425ac57eb2a2694",
-      "size_bytes": 1549
+      "sha256": "f07f7c8b643a7e7a436bf7a9c93e8f150fcacde6c0ff1ab6f9c2f8d32f318240",
+      "size_bytes": 1573
     },
     {
       "path": "wonderswan.json.gz",
-      "sha256": "fb1acdbf276df0cd69c7373e5c66d8b0acacc4848416386c0ece206f3e7ba675",
-      "size_bytes": 1472
+      "sha256": "fdc52d85239b4a4905342ebce9db0b7474821abc8d2afcd0786b8712710e0ee1",
+      "size_bytes": 1492
     }
   ]
 }

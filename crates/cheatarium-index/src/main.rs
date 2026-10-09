@@ -2,8 +2,7 @@ use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
 use cheatarium_index::{
     candidate_game_key, format_hint, parse_cht, parse_native_sections, region_hint, title_hint,
-    Code, CompositionEvidence,
-    SourceComposition,
+    Code, CompositionEvidence, SourceComposition,
 };
 use flate2::{Compression, GzBuilder};
 use serde::{Deserialize, Serialize};
@@ -682,11 +681,17 @@ fn run() -> Result<()> {
         if wanted.as_ref().is_some_and(|v| !v.contains(platform)) {
             continue;
         }
-        if title_id.len() != 16 || !title_id.bytes().all(|c| c.is_ascii_hexdigit())
-            || build_id.is_some_and(|id| id.is_empty() || id.len() > 64
-                || !id.bytes().all(|c| c.is_ascii_hexdigit()))
+        if title_id.len() != 16
+            || !title_id.bytes().all(|c| c.is_ascii_hexdigit())
+            || build_id.is_some_and(|id| {
+                id.is_empty() || id.len() > 64 || !id.bytes().all(|c| c.is_ascii_hexdigit())
+            })
         {
-            return Err(format!("Malformed original Sharkive title/build path: {}", item.upstream_path).into());
+            return Err(format!(
+                "Malformed original Sharkive title/build path: {}",
+                item.upstream_path
+            )
+            .into());
         }
         let source_file_path = checked_path(&root, &item.archive_path)?;
         let raw = fs::read(source_file_path)?;
@@ -703,11 +708,18 @@ fn run() -> Result<()> {
             None => format!("Title ID {title_id}"),
         };
         let key = match build_id {
-            Some(build) => format!("title-id-{}-build-{}", title_id.to_ascii_lowercase(), build.to_ascii_lowercase()),
+            Some(build) => format!(
+                "title-id-{}-build-{}",
+                title_id.to_ascii_lowercase(),
+                build.to_ascii_lowercase()
+            ),
             None => format!("title-id-{}", title_id.to_ascii_lowercase()),
         };
-        let source_file_name = item.upstream_path.strip_prefix(&format!("{platform}/"))
-            .unwrap_or(&item.upstream_path).to_owned();
+        let source_file_name = item
+            .upstream_path
+            .strip_prefix(&format!("{platform}/"))
+            .unwrap_or(&item.upstream_path)
+            .to_owned();
         let record = IndexedFile {
             id: format!("sharkive:{}", item.upstream_path),
             title_hint,
@@ -715,7 +727,11 @@ fn run() -> Result<()> {
             identity_confidence: "source-path-title-and-build-id-unverified",
             raw_filename: source_file_name,
             region_hint: None,
-            format_hint: Some(if platform == "3ds" { "gateshark" } else { "atmosphere" }),
+            format_hint: Some(if platform == "3ds" {
+                "gateshark"
+            } else {
+                "atmosphere"
+            }),
             declared_cheats: None,
             parse_warnings: parsed.warnings,
             codes: parsed.codes,
@@ -729,7 +745,10 @@ fn run() -> Result<()> {
                 git_blob_sha: item.git_blob_sha,
             },
         };
-        by_platform.entry(platform.to_owned()).or_default().push(record);
+        by_platform
+            .entry(platform.to_owned())
+            .or_default()
+            .push(record);
     }
 
     if scan_snes && !overrides.is_empty() {
