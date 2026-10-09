@@ -21,7 +21,7 @@ MANIFEST = ROOT / "sources/sharkive.json"
 ARCHIVE = ROOT / "archive/sharkive"
 PATH_RULES = {
     "3ds": re.compile(r"3ds/[a-fA-F0-9]{16}\.txt\Z"),
-    "switch": re.compile(r"switch/[a-fA-F0-9]{16}/[a-fA-F0-9]{16}\.txt\Z"),
+    "switch": re.compile(r"switch/[a-fA-F0-9]{16}/[a-fA-F0-9]{1,64}\.txt\Z"),
 }
 EXPECTED = {"3ds": 644, "switch": 491}
 
@@ -60,6 +60,11 @@ def import_snapshot(upstream):
         stats[platform] = {
             "source_files": len(matches),
             "original_section_headings": 0,
+            "nonstandard_build_id_paths": [
+                path.relative_to(upstream).as_posix()
+                for path in matches
+                if platform == "switch" and len(path.stem) != 16
+            ],
         }
         selected.extend(matches)
     new_files = 0
