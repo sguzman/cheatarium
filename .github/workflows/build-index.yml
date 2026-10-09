@@ -59,15 +59,28 @@ jobs:
         with:
           persist-credentials: true
       - name: Run fast ROM-free Python regression tests
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          python3 tools/test_effect_reviews.py
-          python3 tools/test_snes_compositions.py
-          python3 tools/test_snes_review_queue.py
-          python3 tools/test_inspect_snes_joins.py
-          python3 tools/test_snes_publications.py
-          python3 tools/test_audit_snes_publication_archive.py
-          python3 tools/test_analyze_snes_patterns.py
+          for item in \
+            "test_effect_reviews:test-effect-reviews" \
+            "test_snes_compositions:test-snes-compositions" \
+            "test_snes_review_queue:test-snes-review-queue" \
+            "test_inspect_snes_joins:test-inspect-snes-joins" \
+            "test_snes_publications:test-snes-publications" \
+            "test_audit_snes_publication_archive:test-audit-snes-publication-archive" \
+            "test_analyze_snes_patterns:test-analyze-snes-patterns"
+          do
+            script="${item%%:*}"
+            stage="${item#*:}"
+            if python3 "tools/${script}.py"; then
+              bash tools/report_ci_stage.sh "$stage" success
+            else
+              bash tools/report_ci_stage.sh "$stage" failure
+              exit 1
+            fi
+          done
       - name: Confirm ${stage} stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
