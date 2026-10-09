@@ -2,8 +2,8 @@
 //!
 //! No ROM access, cheat activation, source edits, or network requests.
 use cheatarium_client::{
-    load_all_game_candidates, load_catalog, load_platform, verify_platform_distribution, CatalogEntry,
-    GameIndex,
+    load_all_game_candidates, load_catalog, load_platform, verify_platform_distribution,
+    CatalogEntry, GameIndex,
 };
 use eframe::egui::{self, Color32, RichText};
 use std::path::PathBuf;
@@ -106,7 +106,8 @@ impl Explorer {
             visible_entries: Vec::new(),
             selected_entry: None,
             error,
-            loading_note: "Browse filename-derived game candidates; source codes are unverified.".into(),
+            loading_note: "Browse filename-derived game candidates; source codes are unverified."
+                .into(),
         };
         app.rebuild_games();
         app
@@ -126,7 +127,10 @@ impl Explorer {
             for (game_index, game) in index.candidates.iter().enumerate() {
                 if filter.is_empty()
                     || matches_term(&game.title_hint, &filter)
-                    || game.alternate_title_hints.iter().any(|title| matches_term(title, &filter))
+                    || game
+                        .alternate_title_hints
+                        .iter()
+                        .any(|title| matches_term(title, &filter))
                 {
                     self.games.push((platform_index, game_index));
                 }
@@ -152,8 +156,14 @@ impl Explorer {
                 .map(|record| SourceView {
                     id: record.id.clone(),
                     filename: record.raw_filename.clone(),
-                    region: record.region_hint.clone().unwrap_or_else(|| "not specified".into()),
-                    declared_format: record.format_hint.clone().unwrap_or_else(|| "not declared".into()),
+                    region: record
+                        .region_hint
+                        .clone()
+                        .unwrap_or_else(|| "not specified".into()),
+                    declared_format: record
+                        .format_hint
+                        .clone()
+                        .unwrap_or_else(|| "not declared".into()),
                     upstream_repository: record.provenance.repository.clone(),
                     upstream_path: record.provenance.upstream_path.clone(),
                     revision: record.provenance.revision.clone(),
@@ -168,9 +178,17 @@ impl Explorer {
                     source_id: hit.source_record_id.to_owned(),
                     source_file: hit.raw_filename.to_owned(),
                     ordinal: hit.entry.ordinal,
-                    description: hit.entry.description.clone().unwrap_or_else(|| "(no description)".into()),
+                    description: hit
+                        .entry
+                        .description
+                        .clone()
+                        .unwrap_or_else(|| "(no description)".into()),
                     raw_code: hit.entry.code.clone(),
-                    role: hit.entry.role.clone().unwrap_or_else(|| "unspecified".into()),
+                    role: hit
+                        .entry
+                        .role
+                        .clone()
+                        .unwrap_or_else(|| "unspecified".into()),
                     enabled_upstream: hit.entry.source_enabled,
                     verification: hit.entry.verification.clone(),
                     native_fields: hit
@@ -262,14 +280,19 @@ impl Explorer {
                 ui.horizontal(|ui| {
                     ui.label("Find");
                     filters_changed |= ui
-                        .add(egui::TextEdit::singleline(&mut self.game_search).hint_text("Title or alternate title…"))
+                        .add(
+                            egui::TextEdit::singleline(&mut self.game_search)
+                                .hint_text("Title or alternate title…"),
+                        )
                         .changed();
                 });
                 egui::ComboBox::from_id_salt("platform_filter")
                     .selected_text(self.platform_filter.as_deref().unwrap_or("All consoles"))
                     .width(ui.available_width())
                     .show_ui(ui, |ui| {
-                        filters_changed |= ui.selectable_value(&mut self.platform_filter, None, "All consoles").changed();
+                        filters_changed |= ui
+                            .selectable_value(&mut self.platform_filter, None, "All consoles")
+                            .changed();
                         for platform in &self.platforms {
                             filters_changed |= ui
                                 .selectable_value(
@@ -283,8 +306,9 @@ impl Explorer {
                 ui.separator();
                 ui.label(format!("{} matching filename candidates", self.games.len()));
                 ui.add_space(5.0);
-                egui::ScrollArea::vertical().id_salt("games_scroll").show_rows(
-                    ui, 28.0, self.games.len(), |ui, range| {
+                egui::ScrollArea::vertical()
+                    .id_salt("games_scroll")
+                    .show_rows(ui, 28.0, self.games.len(), |ui, range| {
                         for row in range {
                             let (platform_idx, game_idx) = self.games[row];
                             let platform = &self.indexes[platform_idx].platform;
@@ -299,8 +323,7 @@ impl Explorer {
                                 pick = Some((platform.clone(), game.key.clone()));
                             }
                         }
-                    },
-                );
+                    });
             });
         if filters_changed {
             self.rebuild_games();
@@ -463,7 +486,11 @@ fn data_root_from_args() -> Result<PathBuf, String> {
     while let Some(arg) = args.next() {
         match arg.as_str() {
             "--db" => root = PathBuf::from(args.next().ok_or("--db needs a directory")?),
-            _ => return Err(format!("Unknown option {arg}. Usage: cheatarium-explorer [--db generated/v1]")),
+            _ => {
+                return Err(format!(
+                    "Unknown option {arg}. Usage: cheatarium-explorer [--db generated/v1]"
+                ))
+            }
         }
     }
     Ok(root)
@@ -511,16 +538,28 @@ mod tests {
     fn distinct_original_ordinals_stay_distinct() {
         let rows = [
             EntryView {
-                source_id: "x".into(), source_file: "Sample".into(), ordinal: 3,
-                description: "Start on level 2".into(), raw_code: Some("ABCD".into()),
-                role: "code".into(), enabled_upstream: false, verification: "unverified".into(),
-                native_fields: Vec::new(), composition_note: None,
+                source_id: "x".into(),
+                source_file: "Sample".into(),
+                ordinal: 3,
+                description: "Start on level 2".into(),
+                raw_code: Some("ABCD".into()),
+                role: "code".into(),
+                enabled_upstream: false,
+                verification: "unverified".into(),
+                native_fields: Vec::new(),
+                composition_note: None,
             },
             EntryView {
-                source_id: "x".into(), source_file: "Sample".into(), ordinal: 101,
-                description: "Start On Level 2".into(), raw_code: Some("ABCD".into()),
-                role: "code".into(), enabled_upstream: false, verification: "unverified".into(),
-                native_fields: Vec::new(), composition_note: None,
+                source_id: "x".into(),
+                source_file: "Sample".into(),
+                ordinal: 101,
+                description: "Start On Level 2".into(),
+                raw_code: Some("ABCD".into()),
+                role: "code".into(),
+                enabled_upstream: false,
+                verification: "unverified".into(),
+                native_fields: Vec::new(),
+                composition_note: None,
             },
         ];
         assert_eq!(rows.len(), 2);
