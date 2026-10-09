@@ -176,7 +176,8 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && game_key.is_some()
     {
         return Err(
-            "--game-key applies only to repeats, tags, compositions, publications, codes and game".into(),
+            "--game-key applies only to repeats, tags, compositions, publications, codes and game"
+                .into(),
         );
     }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
@@ -247,7 +248,10 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                 }))?
             );
         } else {
-            println!("{}: {} original sources on {}", candidate.title_hint, total, platform);
+            println!(
+                "{}: {} original sources on {}",
+                candidate.title_hint, total, platform
+            );
             println!("Advisory filename grouping only; no verified ROM identity or effects.");
             for record in sources.into_iter().skip(offset).take(limit) {
                 println!(

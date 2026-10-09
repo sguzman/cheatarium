@@ -504,7 +504,11 @@ impl Bundle {
             }
             code_fields = code_fields
                 .checked_add(
-                    source.codes.iter().filter(|code| code.role.as_deref() == Some("code")).count(),
+                    source
+                        .codes
+                        .iter()
+                        .filter(|code| code.role.as_deref() == Some("code"))
+                        .count(),
                 )
                 .ok_or("Candidate source code count overflow")?;
             memory_entries = memory_entries
@@ -518,9 +522,12 @@ impl Bundle {
                 .ok_or("Candidate memory entry count overflow")?;
             selected.push(*source);
         }
-        let declared_archives: BTreeSet<_> = candidate.source_ids.iter().map(String::as_str).collect();
-        let declared_regions: BTreeSet<_> = candidate.region_hints.iter().map(String::as_str).collect();
-        let declared_formats: BTreeSet<_> = candidate.format_hints.iter().map(String::as_str).collect();
+        let declared_archives: BTreeSet<_> =
+            candidate.source_ids.iter().map(String::as_str).collect();
+        let declared_regions: BTreeSet<_> =
+            candidate.region_hints.iter().map(String::as_str).collect();
+        let declared_formats: BTreeSet<_> =
+            candidate.format_hints.iter().map(String::as_str).collect();
         if declared_archives.len() != candidate.source_ids.len()
             || declared_regions.len() != candidate.region_hints.len()
             || declared_formats.len() != candidate.format_hints.len()
@@ -530,7 +537,8 @@ impl Bundle {
         {
             return Err("Candidate game source/region/device hints disagree with originals".into());
         }
-        if code_fields != candidate.code_fields || memory_entries != candidate.native_memory_entries {
+        if code_fields != candidate.code_fields || memory_entries != candidate.native_memory_entries
+        {
             return Err("Candidate game source totals disagree with original source bundle".into());
         }
         Ok(selected)
@@ -914,24 +922,38 @@ mod tests {
         let mut broken = serde_json::to_value(&candidate).unwrap();
 
         broken["source_record_ids"] = serde_json::json!(["x", "x"]);
-        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        assert!(bundle
+            .sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap())
+            .is_err());
         broken["source_record_ids"] = serde_json::json!(["missing"]);
-        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        assert!(bundle
+            .sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap())
+            .is_err());
         broken["source_record_ids"] = serde_json::json!(["x"]);
         broken["code_fields"] = serde_json::json!(2);
-        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        assert!(bundle
+            .sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap())
+            .is_err());
         broken["code_fields"] = serde_json::json!(1);
         broken["source_ids"] = serde_json::json!(["unknown-archive"]);
-        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        assert!(bundle
+            .sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap())
+            .is_err());
         broken["source_ids"] = serde_json::json!(["libretro"]);
         broken["region_hints"] = serde_json::json!(["Europe"]);
-        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        assert!(bundle
+            .sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap())
+            .is_err());
         broken["region_hints"] = serde_json::json!(["USA"]);
         broken["format_hints"] = serde_json::json!(["game-genie"]);
-        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        assert!(bundle
+            .sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap())
+            .is_err());
         broken["format_hints"] = serde_json::json!([]);
         broken["key"] = serde_json::json!("another-game");
-        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken).unwrap()).is_err());
+        assert!(bundle
+            .sources_for_candidate(&serde_json::from_value(broken).unwrap())
+            .is_err());
     }
 
     #[test]
@@ -944,7 +966,8 @@ mod tests {
             "possible_title_collision": false, "source_record_ids": ["x"],
             "source_ids": ["libretro"], "region_hints": ["USA"],
             "format_hints": [], "code_fields": 1, "native_memory_entries": 0
-        })).unwrap();
+        }))
+        .unwrap();
         let records = bundle.sources_for_candidate(&candidate).unwrap();
         assert_eq!(records.len(), 1);
         assert_eq!(records[0].id, "x");
@@ -959,7 +982,8 @@ mod tests {
             "possible_title_collision": false, "source_record_ids": ["source"],
             "source_ids": ["archive"], "region_hints": [], "format_hints": [],
             "code_fields": 1, "native_memory_entries": 0
-        })).unwrap();
+        }))
+        .unwrap();
         let mut index = GameIndex {
             schema_version: 1,
             platform: "snes".to_owned(),
@@ -969,9 +993,8 @@ mod tests {
         assert!(index.find_candidate("game").is_ok());
         assert!(index.find_candidate("").is_err());
         assert!(index.find_candidate("missing").is_err());
-        let clone: GameCandidate = serde_json::from_value(
-            serde_json::to_value(&index.candidates[0]).unwrap()
-        ).unwrap();
+        let clone: GameCandidate =
+            serde_json::from_value(serde_json::to_value(&index.candidates[0]).unwrap()).unwrap();
         index.candidates.push(clone);
         assert!(index.find_candidate("game").is_err());
     }
