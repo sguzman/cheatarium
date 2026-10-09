@@ -286,6 +286,29 @@ jobs:
             echo "ERROR: accepted a nonsensical platform filter on platform listing" >&2
             exit 1
           fi
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entry \
+            --db generated/v1 --platform snes \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --ordinal 3 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.original_entry.v1" and d["source_ordinal"] == 3 and d["entry"]["ordinal"] == 3 and d["entry"]["description"] == "Start on level 2" and d["entry"]["code"] == "CB66-AD6F+6266-AF0F+DF66-ADAF"; assert d["provenance"]["git_blob_sha"] and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entry \
+            --db generated/v1 --platform snes \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --ordinal 101 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["source_ordinal"] == 101 and d["entry"]["description"] == "Start On Level 2" and d["entry"]["code"] == "CB66-AD6F+6266-AF0F+DF66-ADAF" and d["original_source_enabled_is_not_activation"]'
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entry \
+            --db generated/v1 --platform snes \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --ordinal 999999; then
+            echo "ERROR: accepted nonexistent original source ordinal" >&2
+            exit 1
+          fi
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entry \
+            --db generated/v1 --platform snes \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht'; then
+            echo "ERROR: accepted missing original source ordinal" >&2
+            exit 1
+          fi
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
             --db generated/v1 --platform snes --game-key push-over --role code \
             --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
