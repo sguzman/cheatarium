@@ -149,6 +149,65 @@ pub fn parse_native_sections(text: &str) -> ParsedCheats {
     }
 }
 
+/// Preserve original CWCheat _C0/_C1 sections and _L code lines.
+///
+/// Original enabled-state flags are source metadata only. No emulator activation,
+/// PSP build validation or memory-write interpretation is performed.
+pub fn parse_cwcheat_ini(text: &str) -> ParsedCheats {
+    fn push(codes: &mut Vec<Code>, heading: Option<(String, bool, &'static str)>, body: String) {
+        let is_code = heading.is_some() && body.lines().any(|line| line.trim_start().starts_with("_L "));
+        if heading.is_none() && body.is_empty() {
+            return;
+        }
+        let (description, source_enabled, marker) = heading
+            .unwrap_or_else(|| ("(original CWCheat source preamble)".into(), false, "preamble"));
+        let native_fields = vec![NativeField {
+            name: "original_cwcheat_section_marker".into(),
+            value: marker.into(),
+        }];
+        codes.push(Code {
+            ordinal: codes.len(),
+            description: Some(description),
+            code: if is_code { Some(body.clone()) } else { None },
+            source_enabled,
+            verification: "unverified",
+            role: if is_code { "code" } else { "section-heading" },
+            native_fields: if is_code {
+                native_fields
+            } else {
+                let mut fields = native_fields;
+                fields.push(NativeField {
+                    name: "original_uninterpreted_text".into(),
+                    value: body,
+                });
+                fields
+            },
+            snes_decode: None,
+            composition: None,
+        });
+    }
+    let mut codes = Vec::new();
+    let mut heading: Option<(String, bool, &'static str)> = None;
+    let mut body = String::new();
+    for line in text.split_inclusive('\n') {
+        let trimmed = line.trim();
+        let next = trimmed.strip_prefix("_C0 ").map(|name| (name, false, "_C0"))
+            .or_else(|| trimmed.strip_prefix("_C1 ").map(|name| (name, true, "_C1")));
+        if let Some((name, enabled, marker)) = next {
+            push(&mut codes, heading.take(), std::mem::take(&mut body));
+            heading = Some((name.to_owned(), enabled, marker));
+        } else {
+            body.push_str(line);
+        }
+    }
+    push(&mut codes, heading, body);
+    ParsedCheats {
+        declared_count: None,
+        codes,
+        warnings: Vec::new(),
+    }
+}
+
 pub fn parse_cht(text: &str) -> ParsedCheats {
     let mut declared_count = None;
     let mut cheats: BTreeMap<usize, PartialCheat> = BTreeMap::new();
@@ -371,6 +430,22 @@ pub fn region_hint(filename: &str) -> Option<String> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn cwcheat_preserves_source_section_flags_and_literal_lines() {
+        let src = "_S ULUS-10383\r\n_G Midnight Club: L.A. Remix [US]\r\n_C1 Unlock prototype cheats\r\n_L 0x20067094 0x00000000\r\n_C0 Optional\r\n_L 0x20067094 0x11111111\r\n";
+        let parsed = parse_cwcheat_ini(src);
+        assert_eq!(parsed.codes.len(), 3);
+        assert_eq!(parsed.codes[0].role, "section-heading");
+        assert_eq!(parsed.codes[0].native_fields[1].value, "_S ULUS-10383\r\n_G Midnight Club: L.A. Remix [US]\r\n");
+        assert_eq!(parsed.codes[1].description.as_deref(), Some("Unlock prototype cheats"));
+        assert_eq!(parsed.codes[1].code.as_deref(), Some("_L 0x20067094 0x00000000\r\n"));
+        assert!(parsed.codes[1].source_enabled);
+        assert_eq!(parsed.codes[1].native_fields[0].value, "_C1");
+        assert!(!parsed.codes[2].source_enabled);
+        assert_eq!(parsed.codes[2].native_fields[0].value, "_C0");
+        assert!(parsed.codes.iter().all(|c| c.verification == "unverified"));
+    }
 
     #[test]
     fn native_section_parser_preserves_multiline_codes_and_original_ordinals() {
