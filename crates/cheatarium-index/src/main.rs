@@ -540,7 +540,7 @@ fn run() -> Result<()> {
     }
     known_platforms.insert("3ds".to_owned());
     known_platforms.insert("switch".to_owned());
-    for platform in ["ps3", "ps4", "gamecube", "wii", "wii-u"] {
+    for platform in ["ps2", "ps3", "ps4", "gamecube", "wii", "wii-u"] {
         known_platforms.insert(platform.to_owned());
     }
     if let Some(ref filter) = wanted {
