@@ -642,6 +642,23 @@ pub struct ExactCodeHit<'a> {
 }
 
 impl Bundle {
+    /// Resolve one exact original source ID. A duplicate source ID is treated
+    /// as malformed index data rather than silently choosing an occurrence.
+    pub fn find_source_record(&self, source_record_id: &str) -> Result<&IndexedFile> {
+        if source_record_id.is_empty() {
+            return Err("Original source record ID must not be empty".into());
+        }
+        let mut matches = self
+            .records
+            .iter()
+            .filter(|record| record.id == source_record_id);
+        let first = matches.next().ok_or("Original source record not found")?;
+        if matches.next().is_some() {
+            return Err("Duplicate original source record IDs in platform index".into());
+        }
+        Ok(first)
+    }
+
     /// Match raw device code text *exactly*, including case and whitespace.
     /// A repeated string is not proof of identical effects or ROM compatibility.
     /// Each occurrence retains its original source and ordinal. Never executes.
@@ -774,6 +791,20 @@ mod tests {
         assert_eq!(bundle.records[0].codes[0].code.as_deref(), Some("ABCD"));
         assert!(bundle.records[0].codes[0].is_code());
         assert!(!bundle.records[0].codes[1].is_code());
+    }
+
+    #[test]
+    fn exact_source_lookup_rejects_missing_and_duplicate_source_ids() {
+        let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
+        assert_eq!(bundle.find_source_record("x").unwrap().title_hint, "Super Mario World");
+        assert!(bundle.find_source_record("").is_err());
+        assert!(bundle.find_source_record("nonexistent").is_err());
+
+        let copy: IndexedFile = serde_json::from_value(
+            serde_json::to_value(&bundle.records[0]).unwrap()
+        ).unwrap();
+        bundle.records.push(copy);
+        assert!(bundle.find_source_record("x").is_err());
     }
 
     #[test]
