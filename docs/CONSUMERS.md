@@ -25,6 +25,7 @@ The client exposes `load_catalog`, `load_game_candidates`, `load_platform`, `ver
 
 ```sh
 cargo run --release -p cheatarium-client --bin cheatarium-query -- platforms --db generated/v1 --offset 0 --limit 36 --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- discover --db generated/v1 --title 'Donkey Kong Country' --offset 0 --limit 20 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- games --db generated/v1 --platform snes --title 'Chrono Trigger' --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- game --db generated/v1 --platform snes --game-key push-over --offset 0 --limit 20 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- entries --db generated/v1 --platform snes --game-key push-over --role code --offset 0 --limit 20 --json
@@ -56,6 +57,8 @@ cargo run --release -p cheatarium-client --bin cheatarium-query -- verify --db g
 `tags` lists English-language cue counts or, with `--category`, source-record occurrences and the exact phrase that matched. Optional `--game-key` narrows category results to a **filename-derived candidate**. A textual phrase can be negated, misleading or mistranslated and does not establish functionality. See [Effect signals](EFFECT-SIGNALS.md).
 
 The `games` title-group search and `search` original-source title search now both accept `--offset` and `--limit`. Their JSON includes the unpaginated result total, page offset, actual returned count and `has_more`, so broad terms can be traversed without silently dropping later matches. Search results remain filename candidates, not verified game identities.
+
+`discover` searches advisory game-title groups across **all 36 local platform catalogs** without first choosing a console. Its platform-qualified results include the original candidate key, alternate title hints, source-record references, region/format hints, and counts. Results are sorted by platform and candidate key, then paginated with `--offset` and `--limit`. Consumers can follow one result with `game --platform PLATFORM --game-key KEY` for checksum-checked original-source inspection. Discovery reads game-title catalogs only; it does not hash all 36 platform distributions, authenticate the manifest, inspect ROMs, or infer cheat compatibility. Its JSON explicitly marks artifact checksums as unverified for this broad title search.
 
 `platforms` lists supported indexed consoles/handhelds without needing `--platform`, with source-file counts, filename-derived game-candidate counts, code/memory counts and artifact paths. Its `--offset`/`--limit` pagination supports small command palettes and GUIs. This is catalog enumeration, **not** proof of any game identity or imported cheat's functionality. A title-search workflow is `platforms` → `games --platform ... --title ...` → `game --game-key ...` → `source --source-record-id ...`.
 
