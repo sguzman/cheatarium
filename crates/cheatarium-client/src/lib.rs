@@ -471,6 +471,9 @@ impl Bundle {
             return Err("Duplicate original source IDs in platform bundle".into());
         }
         let mut seen = BTreeSet::new();
+        let mut original_archives = BTreeSet::new();
+        let mut original_regions = BTreeSet::new();
+        let mut original_formats = BTreeSet::new();
         let mut selected = Vec::with_capacity(candidate.source_record_ids.len());
         let mut code_fields = 0usize;
         let mut memory_entries = 0usize;
@@ -492,6 +495,13 @@ impl Bundle {
             if derived_key != candidate.key {
                 return Err("Linked source has another candidate game key".into());
             }
+            original_archives.insert(source.provenance.source_id.as_str());
+            if let Some(region) = source.region_hint.as_deref() {
+                original_regions.insert(region);
+            }
+            if let Some(format) = source.format_hint.as_deref() {
+                original_formats.insert(format);
+            }
             code_fields = code_fields
                 .checked_add(
                     source.codes.iter().filter(|code| code.role.as_deref() == Some("code")).count(),
@@ -507,6 +517,18 @@ impl Bundle {
                 )
                 .ok_or("Candidate memory entry count overflow")?;
             selected.push(*source);
+        }
+        let declared_archives: BTreeSet<_> = candidate.source_ids.iter().map(String::as_str).collect();
+        let declared_regions: BTreeSet<_> = candidate.region_hints.iter().map(String::as_str).collect();
+        let declared_formats: BTreeSet<_> = candidate.format_hints.iter().map(String::as_str).collect();
+        if declared_archives.len() != candidate.source_ids.len()
+            || declared_regions.len() != candidate.region_hints.len()
+            || declared_formats.len() != candidate.format_hints.len()
+            || declared_archives != original_archives
+            || declared_regions != original_regions
+            || declared_formats != original_formats
+        {
+            return Err("Candidate game source/region/device hints disagree with originals".into());
         }
         if code_fields != candidate.code_fields || memory_entries != candidate.native_memory_entries {
             return Err("Candidate game source totals disagree with original source bundle".into());
@@ -899,6 +921,15 @@ mod tests {
         broken["code_fields"] = serde_json::json!(2);
         assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
         broken["code_fields"] = serde_json::json!(1);
+        broken["source_ids"] = serde_json::json!(["unknown-archive"]);
+        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        broken["source_ids"] = serde_json::json!(["libretro"]);
+        broken["region_hints"] = serde_json::json!(["Europe"]);
+        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        broken["region_hints"] = serde_json::json!(["USA"]);
+        broken["format_hints"] = serde_json::json!(["game-genie"]);
+        assert!(bundle.sources_for_candidate(&serde_json::from_value(broken.clone()).unwrap()).is_err());
+        broken["format_hints"] = serde_json::json!([]);
         broken["key"] = serde_json::json!("another-game");
         assert!(bundle.sources_for_candidate(&serde_json::from_value(broken).unwrap()).is_err());
     }
