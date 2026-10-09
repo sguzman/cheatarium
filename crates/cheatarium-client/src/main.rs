@@ -29,6 +29,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("search") => "search",
         Some("source") => "source",
         Some("games") => "games",
+        Some("game") => "game",
         Some("verify") => "verify",
         Some("effects") => "effects",
         Some("codes") => "codes",
@@ -38,7 +39,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <search|source|games|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <search|source|games|game|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -81,8 +82,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "publications"
         && mode != "codes"
         && mode != "source"
+        && mode != "game"
     {
-        return Err("--offset applies only to compositions, publications, codes or source".into());
+        return Err("--offset applies only to compositions, publications, codes, source or game".into());
     }
     if mode != "codes" && exact_code.is_some() {
         return Err("--code applies only to codes".into());
@@ -116,10 +118,11 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "compositions"
         && mode != "publications"
         && mode != "codes"
+        && mode != "game"
         && game_key.is_some()
     {
         return Err(
-            "--game-key applies only to repeats, tags, compositions, publications and codes".into(),
+            "--game-key applies only to repeats, tags, compositions, publications, codes and game".into(),
         );
     }
     if mode != "effects" && (declared_format.is_some() || source_id.is_some()) {
@@ -133,6 +136,75 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             .is_some_and(|s: &str| s.trim().is_empty())
     {
         return Err("Effect source and device filters cannot be empty".into());
+    }
+    if mode == "game" {
+        let key = game_key.as_deref().ok_or("Please provide --game-key")?;
+        verify_platform_distribution(&root, &platform)?;
+        let index = load_game_candidates(&root, &platform)?;
+        let candidate = index.find_candidate(key)?;
+        let bundle = load_platform(&root, &platform)?;
+        let sources = bundle.sources_for_candidate(candidate)?;
+        let total = sources.len();
+        if json {
+            let page: Vec<_> = sources
+                .iter()
+                .skip(offset)
+                .take(limit)
+                .map(|record| {
+                    serde_json::json!({
+                        "source_record_id": record.id,
+                        "title_hint": record.title_hint,
+                        "raw_filename": record.raw_filename,
+                        "region_hint": record.region_hint,
+                        "declared_format_hint": record.format_hint,
+                        "declared_cheats": record.declared_cheats,
+                        "code_fields": record.codes.iter().filter(|code| code.role.as_deref() == Some("code")).count(),
+                        "native_memory_entries": record.codes.iter().filter(|code| code.role.as_deref() == Some("memory-entry")).count(),
+                        "section_headings": record.codes.iter().filter(|code| code.role.as_deref() == Some("section-heading")).count(),
+                        "parse_warnings": record.parse_warnings,
+                        "provenance": record.provenance,
+                    })
+                })
+                .collect();
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&serde_json::json!({
+                    "schema": "cheatarium.game_sources.v1",
+                    "platform": platform,
+                    "candidate_game_key": candidate.key,
+                    "title_hint": candidate.title_hint,
+                    "alternate_title_hints": candidate.alternate_title_hints,
+                    "identity_confidence": candidate.identity_confidence,
+                    "possible_title_collision": candidate.possible_title_collision,
+                    "region_hints": candidate.region_hints,
+                    "format_hints": candidate.format_hints,
+                    "source_ids": candidate.source_ids,
+                    "total_original_sources": total,
+                    "total_code_fields": candidate.code_fields,
+                    "total_native_memory_entries": candidate.native_memory_entries,
+                    "offset": offset,
+                    "returned": total.saturating_sub(offset).min(limit),
+                    "has_more": offset.saturating_add(limit) < total,
+                    "candidate_only": true,
+                    "game_identity_verified": false,
+                    "cheat_effects_verified": false,
+                    "cheats_activated": false,
+                    "sources": page,
+                }))?
+            );
+        } else {
+            println!("{}: {} original sources on {}", candidate.title_hint, total, platform);
+            println!("Advisory filename grouping only; no verified ROM identity or effects.");
+            for record in sources.into_iter().skip(offset).take(limit) {
+                println!(
+                    "- {} ({}; {})",
+                    record.id,
+                    record.region_hint.as_deref().unwrap_or("unknown region"),
+                    record.format_hint.as_deref().unwrap_or("unknown device"),
+                );
+            }
+        }
+        return Ok(());
     }
     if mode == "source" {
         let selected = source_record_id
