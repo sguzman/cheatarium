@@ -14,6 +14,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Sources](sources/README.md) — upstream repositories, attribution, licenses, and snapshots.
 - [Adding cheats](docs/ADDING-CHEATS.md) — how new collections and individual cheats enter the archive.
 - [Emulator consumers](docs/CONSUMERS.md) — read-only Rust client and offline search.
+- [Desktop explorer](docs/DESKTOP.md) — optional Linux app to browse original cheat entries and provenance.
 - [Versioned index](docs/INDEX-V1.md) — deterministic game/source bundles and compatibility rules.
 - [Repeated cheat codes](docs/REPEATED-CODES.md) — source-preserving duplicate-text discovery without unverified game or effect merging.
 - [Effect signals](docs/EFFECT-SIGNALS.md) — browse gameplay-effect descriptions by explicit language cues without unverified functional claims.
