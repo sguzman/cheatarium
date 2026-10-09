@@ -11,7 +11,7 @@ case "$state" in success|failure|error|pending) ;; *)
   echo "Invalid CI status: $state" >&2; exit 2 ;;
 esac
 case "$stage" in
-  python-tests|source-inventory|rust-tests|index-generated|distribution-audited|consumer-smoke|test-effect-reviews|test-snes-compositions|test-snes-review-queue|test-inspect-snes-joins|test-snes-publications|test-audit-snes-publication-archive|test-analyze-snes-patterns)
+  python-tests|source-inventory|rust-tests|index-generated|distribution-audited|consumer-smoke|test-effect-reviews|test-snes-compositions|test-snes-review-queue|test-inspect-snes-joins|test-snes-publications|test-audit-snes-publication-archive|test-analyze-snes-patterns|consumer-catalog|consumer-cli|consumer-fingerprint|consumer-zip|consumer-codecs)
     ;;
   *)
     echo "Unknown Cheatarium CI stage: $stage" >&2
