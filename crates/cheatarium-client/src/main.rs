@@ -16,6 +16,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut exact_code = None;
     let mut game_key = None;
     let mut entry_role = None;
+    let mut description_contains = None;
     let mut category = None;
     let mut composition_relation = None;
     let mut source_record_id = None;
@@ -42,7 +43,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <platforms|search|source|games|game|entries|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -55,6 +56,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--code" => exact_code = Some(args.next().ok_or("--code needs original source text")?),
             "--game-key" => game_key = Some(args.next().ok_or("--game-key needs a value")?),
             "--role" => entry_role = Some(args.next().ok_or("--role needs a value")?),
+            "--description-contains" => {
+                description_contains = Some(args.next().ok_or("--description-contains needs text")?)
+            }
             "--category" => category = Some(args.next().ok_or("--category needs an ID")?),
             "--relation" => {
                 composition_relation = Some(args.next().ok_or("--relation needs a value")?)
@@ -93,6 +97,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             || declared_format.is_some()
             || source_id.is_some()
             || entry_role.is_some()
+            || description_contains.is_some()
         {
             return Err("platforms accepts --db, --offset, --limit and --json only".into());
         }
@@ -144,6 +149,9 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         && mode != "entries"
     {
         return Err("--offset applies only to paginated source, game, publication, composition, code and search results".into());
+    }
+    if mode != "entries" && description_contains.is_some() {
+        return Err("--description-contains applies only to entries".into());
     }
     if mode != "entries" && entry_role.is_some() {
         return Err("--role applies only to entries".into());
@@ -208,10 +216,11 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         let index = load_game_candidates(&root, &platform)?;
         let candidate = index.find_candidate(key)?;
         let bundle = load_platform(&root, &platform)?;
-        let hits = bundle.entries_for_candidate(
+        let hits = bundle.search_entries_for_candidate(
             candidate,
             source_record_id.as_deref(),
             entry_role.as_deref(),
+            description_contains.as_deref(),
         )?;
         let total = hits.len();
         if json {
@@ -225,6 +234,8 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
                     "possible_title_collision": candidate.possible_title_collision,
                     "source_record_id_filter": source_record_id,
                     "role_filter": entry_role,
+                    "description_contains_filter": description_contains,
+                    "description_text_match_only": true,
                     "total_original_entries": total,
                     "offset": offset,
                     "returned": total.saturating_sub(offset).min(limit),
