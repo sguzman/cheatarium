@@ -22,6 +22,7 @@ on:
       - "sources/admentus-enhancement-codes.json"
       - "sources/mkwcat-gecko-codes.json"
       - "sources/cookieplmonster-console-cheat-codes.json"
+      - "sources/igor-misc-pcsx2-cheats.json"
       - "sources/candidates.json"
       - "tools/validate.py"
       - "identities/**"
@@ -46,6 +47,7 @@ on:
       - "archive/admentus-enhancement-codes/**"
       - "archive/mkwcat-gecko-codes/**"
       - "archive/cookieplmonster-console-cheat-codes/**"
+      - "archive/igor-misc-pcsx2-cheats/**"
   workflow_dispatch:
   workflow_run:
     workflows: ["Bootstrap console cheat archive"]
@@ -350,6 +352,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
             --db generated/v1 --platform ps4 --game-key 'goldhen:mc4/CUSA00002_01.00.mc4.xml' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert "Killzone Shadow Fall" in d["title_hint"] and d["total_original_sources"]==1 and d["sources"][0]["provenance"]["upstream_path"]=="mc4/CUSA00002_01.00.mc4.xml" and not d["game_identity_verified"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform ps2 --source-record-id 'igor-misc-pcsx2-cheats:WRC 4/Debug/SLPM-65975_C6D912FB.pnach' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "igor-misc-pcsx2-cheats" and d["code_fields"] >= 1; assert "patch=1,EE" in d["entries"][1]["code"] and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform ps2 --source-record-id 'cookieplmonster-console-cheat-codes:PS2/Gran Turismo 4/Adjusted triggers sensitivity/SCUS-97328_77E61C8A_triggers.pnach' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["declared_format_hint"] == "pcsx2-pnach" and d["code_fields"] >= 1; assert d["provenance"]["source_id"] == "cookieplmonster-console-cheat-codes" and d["entries"][0]["role"] in ("section-heading", "code"); assert any("patch=1,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
