@@ -769,13 +769,18 @@ fn run() -> Result<()> {
                 return Err(format!("Malformed source title for GoldHEN {directory}").into());
             }
             let key = format!("{directory}/{filename}");
-            if goldhen_titles.insert(key.clone(), label.trim().to_owned()).is_some() {
+            if goldhen_titles
+                .insert(key.clone(), label.trim().to_owned())
+                .is_some()
+            {
                 return Err(format!("Duplicate GoldHEN source name {key}").into());
             }
             count += 1;
         }
         if count != expected {
-            return Err(format!("GoldHEN {directory} original title count {count} != {expected}").into());
+            return Err(
+                format!("GoldHEN {directory} original title count {count} != {expected}").into(),
+            );
         }
     }
 
@@ -909,12 +914,18 @@ fn run() -> Result<()> {
             }
             let source_declared_title = if manifest_id == "goldhen" {
                 goldhen_titles.get(original).cloned()
-            } else { None };
+            } else {
+                None
+            };
             let json_title = if format == "goldhen-json" {
-                serde_json::from_str::<serde_json::Value>(&decoded).ok()
+                serde_json::from_str::<serde_json::Value>(&decoded)
+                    .ok()
                     .and_then(|v| v.get("name").and_then(|n| n.as_str()).map(str::to_owned))
-            } else { None };
-            let title = json_title.or(source_declared_title)
+            } else {
+                None
+            };
+            let title = json_title
+                .or(source_declared_title)
                 .map(|label| format!("{label} [{title}]"))
                 .unwrap_or(title);
             let file_name = original.rsplit('/').next().unwrap_or(original).to_owned();
