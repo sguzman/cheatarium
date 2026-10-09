@@ -29,6 +29,12 @@ def validate_registry(registry, bundle):
             or bundle.get("platform") != "snes"):
         raise ValueError("Invalid SNES publication witness schema")
     sources = {r["id"]: r for r in bundle["records"]}
+    if len(sources) != len(bundle["records"]):
+        raise ValueError("Repeated original source IDs in publication bundle")
+    for source in bundle["records"]:
+        ordinals = [entry["ordinal"] for entry in source["codes"]]
+        if len(ordinals) != len(set(ordinals)):
+            raise ValueError(f"Repeated original ordinal in {source['id']}")
     seen = set()
     for report in registry["records"]:
         key = (report["source_record_id"], report["source_ordinal"])
