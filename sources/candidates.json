@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Reviewed candidate cheat sources not yet copied to archive; metadata only. Rights status is not an assessment of legality in any jurisdiction.",
+  "description": "Unimported, source-level rights-review candidates; imported data is inventoried only in sources/<source-id>.json. This queue does not imply permission to copy or tested compatibility.",
   "candidates": [
     {
       "id": "pcsx2-cheats-collection",
@@ -42,34 +42,6 @@
       "state": "link_only_rights_review",
       "repo_license": "not_found_in_root",
       "notes": "README describes a moving mirror of GBATemp and graphics-code communities; preserve distinct upstream authors and game build IDs."
-    },
-    {
-      "id": "goldhen-cheat-repository",
-      "repo": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository",
-      "platforms": [
-        "ps4"
-      ],
-      "formats": [
-        "json",
-        "mc4",
-        "shn"
-      ],
-      "state": "needs_file_level_review",
-      "repo_license": "GPL-3.0-root-license",
-      "notes": "Root LICENSE provides GPL-3; confirm applicability to imported third-party data, and keep separate GPL notices."
-    },
-    {
-      "id": "artemis-ps3",
-      "repo": "https://github.com/bucanero/ArtemisPS3",
-      "platforms": [
-        "ps3"
-      ],
-      "formats": [
-        "artemis-code-files"
-      ],
-      "state": "needs_file_level_review",
-      "repo_license": "MIT-root-license",
-      "notes": "Root software license is MIT; README describes community cheat submissions and online game code database. Confirm rights for original contributed code data."
     },
     {
       "id": "gamehacking-org",
