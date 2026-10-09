@@ -16,6 +16,7 @@ on:
       - "tools/audit_snes_codecs.py"
       - "platforms/libretro-mapping.json"
       - "sources/libretro-database.json"
+      - "sources/sharkive.json"
       - "sources/candidates.json"
       - "tools/validate.py"
       - "identities/**"
@@ -34,6 +35,7 @@ on:
       - "tools/test_effect_reviews.py"
       - "curated/**"
       - "archive/libretro/cht/**"
+      - "archive/sharkive/**"
   workflow_dispatch:
   workflow_run:
     workflows: ["Bootstrap console cheat archive"]
@@ -285,10 +287,10 @@ jobs:
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["schema"] == "cheatarium.lexical_tags.v1" and x["total_matches"] > 0 and not x["verified_effect"] and not x["cheats_activated"] and all(h["matched_phrase"] for h in x["hits"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- discover \
             --db generated/v1 --title 'Donkey Kong Country' --limit 100 --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.cross_platform_game_candidates.v1" and d["query"] == "Donkey Kong Country" and d["indexed_platforms"] == 36 and d["total_candidate_groups"] >= 1 and d["returned"] >= 1; assert any(h["platform"] == "snes" and h["candidate"]["key"] == "donkey-kong-country" for h in d["matches"]); assert all(h["platform"] and h["candidate"]["source_record_ids"] for h in d["matches"]); assert d["candidate_titles_only"] and not d["rom_compatibility_verified"] and d["artifact_checksums_verified"] and not d["manifest_authenticated"] and not d["cheats_activated"]'
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.cross_platform_game_candidates.v1" and d["query"] == "Donkey Kong Country" and d["indexed_platforms"] == 38 and d["total_candidate_groups"] >= 1 and d["returned"] >= 1; assert any(h["platform"] == "snes" and h["candidate"]["key"] == "donkey-kong-country" for h in d["matches"]); assert all(h["platform"] and h["candidate"]["source_record_ids"] for h in d["matches"]); assert d["candidate_titles_only"] and not d["rom_compatibility_verified"] and d["artifact_checksums_verified"] and not d["manifest_authenticated"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- discover \
             --db generated/v1 --title 'Mario' --limit 2 --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["indexed_platforms"] == 36 and d["total_candidate_groups"] > 2 and d["returned"] == 2 and d["has_more"]; assert [(h["platform"],h["candidate"]["key"]) for h in d["matches"]] == sorted((h["platform"],h["candidate"]["key"]) for h in d["matches"])'
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["indexed_platforms"] == 38 and d["total_candidate_groups"] > 2 and d["returned"] == 2 and d["has_more"]; assert [(h["platform"],h["candidate"]["key"]) for h in d["matches"]] == sorted((h["platform"],h["candidate"]["key"]) for h in d["matches"])'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- discover \
             --db generated/v1 --title 'Donkey Kong Country' --offset 999999 --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_candidate_groups"] > 0 and d["returned"] == 0 and d["matches"] == [] and not d["has_more"]'
@@ -302,12 +304,24 @@ jobs:
             echo "ERROR: accepted blank cross-platform title search" >&2
             exit 1
           fi
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
+            --db generated/v1 --platform 3ds --game-key title-id-0004000000030c00 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and not d["game_identity_verified"] and not d["cheats_activated"]; assert any(s["provenance"]["source_id"] == "sharkive" and s["provenance"]["upstream_path"] == "3ds/0004000000030C00.txt" and s["declared_format_hint"] == "gateshark" for s in d["sources"])'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform 3ds --game-key title-id-0004000000030c00 --source-id sharkive --limit 5 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_entries.v1" and d["total_original_entries"] >= 1; assert d["entries"][0]["entry"]["code"] and "DD000000" in d["entries"][0]["entry"]["code"] and d["entries"][0]["entry"]["verification"] == "unverified" and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
+            --db generated/v1 --platform switch --game-key title-id-0100000000010000-build-b424be150a8e7d78 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "switch" and d["total_sources"] == 1 and d["sources"][0]["provenance"]["upstream_path"] == "switch/0100000000010000/b424be150a8e7d78.txt" and d["sources"][0]["declared_format_hint"] == "atmosphere" and not d["game_identity_verified"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform switch --game-key title-id-0100000000010000-build-b424be150a8e7d78 --limit 4 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_original_entries"] >= 4 and "5C3BE7DC" in d["entries"][0]["entry"]["code"] and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- platforms \
             --db generated/v1 --limit 2 --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.platform_catalog.v1" and d["total_platforms"] == 36 and d["returned"] == 2 and d["has_more"]; assert all(p["source_files"] > 0 and p["game_candidate_groups"] > 0 for p in d["platforms"]) and d["candidate_titles_only"] and not d["rom_matching_verified"] and not d["cheats_activated"]'
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.platform_catalog.v1" and d["total_platforms"] == 38 and d["returned"] == 2 and d["has_more"]; assert all(p["source_files"] > 0 and p["game_candidate_groups"] > 0 for p in d["platforms"]) and d["candidate_titles_only"] and not d["rom_matching_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- platforms \
             --db generated/v1 --offset 100 --limit 10 --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_platforms"] == 36 and d["returned"] == 0 and d["platforms"] == [] and not d["has_more"]'
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_platforms"] == 38 and d["returned"] == 0 and d["platforms"] == [] and not d["has_more"]'
           if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- platforms \
             --db generated/v1 --platform snes; then
             echo "ERROR: accepted a nonsensical platform filter on platform listing" >&2
