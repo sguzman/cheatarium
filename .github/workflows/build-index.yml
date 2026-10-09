@@ -286,6 +286,26 @@ jobs:
             echo "ERROR: accepted a nonsensical platform filter on platform listing" >&2
             exit 1
           fi
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --role code \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --offset 3 --limit 1 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_entries.v1" and d["role_filter"] == "code" and d["total_original_entries"] >= 102 and d["returned"] == 1 and d["has_more"]; assert d["entries"][0]["entry"]["ordinal"] == 3 and d["entries"][0]["entry"]["code"] == "CB66-AD6F+6266-AF0F+DF66-ADAF"; assert d["entries"][0]["provenance"]["git_blob_sha"] and not d["cheats_activated"] and not d["game_identity_verified"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --role code \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --offset 101 --limit 1 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["entries"][0]["entry"]["ordinal"] == 101 and d["entries"][0]["entry"]["code"] == "CB66-AD6F+6266-AF0F+DF66-ADAF" and d["returned"] == 1 and d["same_code_text_is_not_equivalence"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --role code \
+            --source-record-id 'libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Push-Over (USA).cht' \
+            --offset 100000 --limit 1 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total_original_entries"] >= 102 and d["returned"] == 0 and d["entries"] == [] and not d["has_more"]'
+          if cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- entries \
+            --db generated/v1 --platform snes --game-key push-over --role guessed; then
+            echo "ERROR: accepted an unknown original source entry role" >&2
+            exit 1
+          fi
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
             --db generated/v1 --platform snes --game-key push-over --limit 100 --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["schema"] == "cheatarium.game_sources.v1" and d["candidate_game_key"] == "push-over" and d["total_original_sources"] > 0 and d["returned"] == d["total_original_sources"]; assert d["total_code_fields"] >= sum(s["code_fields"] for s in d["sources"]) and not d["game_identity_verified"] and not d["cheat_effects_verified"] and not d["cheats_activated"]; assert any(s["source_record_id"].endswith("Push-Over (USA).cht") for s in d["sources"]); assert all(s["provenance"]["git_blob_sha"] and s["source_record_id"] for s in d["sources"])'
