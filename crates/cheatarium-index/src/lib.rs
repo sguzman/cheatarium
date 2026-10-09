@@ -103,7 +103,7 @@ pub fn parse_native_sections(text: &str) -> ParsedCheats {
         } else {
             Vec::new()
         };
-        let code = if is_code { Some(body) } else { None };
+        let code = if is_code { Some(body.clone()) } else { None };
         if description.is_some() || !native_fields.is_empty() {
             codes.push(Code {
                 ordinal: codes.len(),
