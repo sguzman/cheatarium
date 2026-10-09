@@ -793,6 +793,33 @@ mod tests {
     }
 
     #[test]
+    fn exact_code_search_does_not_merge_independent_source_occurrences() {
+        let mut bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let mut duplicate = serde_json::to_value(&bundle.records[0]).unwrap();
+        duplicate["id"] = serde_json::json!("other-source");
+        duplicate["raw_filename"] = serde_json::json!("Other Edition.cht");
+        duplicate["codes"][0]["ordinal"] = serde_json::json!(37);
+        duplicate["codes"][0]["description"] = serde_json::json!("Different claimed effect");
+        duplicate["provenance"]["upstream_path"] =
+            serde_json::json!("cht/other-edition.cht");
+        bundle.records.push(serde_json::from_value(duplicate).unwrap());
+
+        let hits = bundle.search_exact_code("ABCD");
+        assert_eq!(hits.len(), 2);
+        assert_eq!(hits[0].source_record_id, "x");
+        assert_eq!(hits[0].cheat.ordinal, 0);
+        assert_eq!(hits[1].source_record_id, "other-source");
+        assert_eq!(hits[1].cheat.ordinal, 37);
+        assert_eq!(hits[0].cheat.description.as_deref(), Some("Infinite Lives"));
+        assert_eq!(
+            hits[1].cheat.description.as_deref(),
+            Some("Different claimed effect")
+        );
+        assert_ne!(hits[0].provenance.upstream_path, hits[1].provenance.upstream_path);
+        assert!(bundle.search_exact_code("abcd").is_empty());
+    }
+
+    #[test]
     fn effect_search_preserves_source_and_excludes_nonexecuting_headings() {
         let bundle = decode_bundle(fixture().as_slice()).unwrap();
         let hits = bundle.search_effect("INFINITE");
