@@ -1,0 +1,52 @@
+name: Import pinned GoldHEN console cheat source archive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-goldhen.yml"
+      - "tools/import_goldhen.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-goldhen-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire complete pinned GoldHEN native cheat collections
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/import_goldhen.py
+      - name: Validate original source files and Git blob checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/validate.py
+      - name: Commit original files, notices, and authoritative inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/goldhen/ sources/goldhen.json
+          if git diff --cached --quiet; then
+            echo "Pinned GoldHEN source snapshot already preserved."
+            exit 0
+          fi
+          git commit -m "data: preserve 5445 native GoldHEN console cheat source files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
