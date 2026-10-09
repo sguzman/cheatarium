@@ -452,6 +452,19 @@ impl GameIndex {
     }
 }
 
+/// One unchanged original cheat entry within a filename-derived game group.
+/// This is not evidence of executable compatibility or identical effects.
+#[derive(Debug, Serialize)]
+pub struct GameEntryHit<'a> {
+    pub source_record_id: &'a str,
+    pub source_title_hint: &'a str,
+    pub raw_filename: &'a str,
+    pub region_hint: Option<&'a str>,
+    pub declared_format_hint: Option<&'a str>,
+    pub entry: &'a Code,
+    pub provenance: &'a Provenance,
+}
+
 impl Bundle {
     /// Follow exactly the original source links in a candidate game group.
     /// Both the candidate and the source bundle are required: filename
@@ -542,6 +555,54 @@ impl Bundle {
             return Err("Candidate game source totals disagree with original source bundle".into());
         }
         Ok(selected)
+    }
+
+    /// Browse original source entries across an advisory game candidate.
+    /// Preserves duplicate text, original source ordinals, section headings and
+    /// imported enable bits as *data*, never activation instructions.
+    pub fn entries_for_candidate<'a>(
+        &'a self,
+        candidate: &GameCandidate,
+        source_record_id: Option<&str>,
+        role: Option<&str>,
+    ) -> Result<Vec<GameEntryHit<'a>>> {
+        if role.is_some_and(|name| !matches!(name, "code" | "memory-entry" | "section-heading")) {
+            return Err("Unsupported original cheat entry role".into());
+        }
+        if source_record_id == Some("") {
+            return Err("Original source record filter cannot be empty".into());
+        }
+        let sources = self.sources_for_candidate(candidate)?;
+        let mut source_found = source_record_id.is_none();
+        let mut hits = Vec::new();
+        for source in sources {
+            if let Some(filter) = source_record_id {
+                if filter != source.id {
+                    continue;
+                }
+            }
+            source_found = true;
+            for code in &source.codes {
+                if let Some(role_filter) = role {
+                    if code.role.as_deref() != Some(role_filter) {
+                        continue;
+                    }
+                }
+                hits.push(GameEntryHit {
+                    source_record_id: &source.id,
+                    source_title_hint: &source.title_hint,
+                    raw_filename: &source.raw_filename,
+                    region_hint: source.region_hint.as_deref(),
+                    declared_format_hint: source.format_hint.as_deref(),
+                    entry: code,
+                    provenance: &source.provenance,
+                });
+            }
+        }
+        if !source_found {
+            return Err("Original source record is not linked to candidate game".into());
+        }
+        Ok(hits)
     }
 }
 
@@ -954,6 +1015,35 @@ mod tests {
         assert!(bundle
             .sources_for_candidate(&serde_json::from_value(broken).unwrap())
             .is_err());
+    }
+
+    #[test]
+    fn candidate_entry_browsing_preserves_original_ordinals_and_roles() {
+        let bundle = decode_bundle(fixture().as_slice()).unwrap();
+        let candidate: GameCandidate = serde_json::from_value(serde_json::json!({
+            "key": "super-mario-world", "title_hint": "Super Mario World",
+            "alternate_title_hints": [], "identity_confidence": "filename_candidate_only",
+            "possible_title_collision": false, "source_record_ids": ["x"],
+            "source_ids": ["libretro"], "region_hints": ["USA"],
+            "format_hints": [], "code_fields": 1, "native_memory_entries": 0
+        })).unwrap();
+        let all = bundle.entries_for_candidate(&candidate, None, None).unwrap();
+        assert_eq!(all.len(), 2);
+        assert_eq!(all[0].entry.ordinal, 0);
+        assert_eq!(all[0].entry.code.as_deref(), Some("ABCD"));
+        assert_eq!(all[0].source_record_id, "x");
+        assert_eq!(all[0].provenance.source_id, "libretro");
+        assert_eq!(all[1].entry.ordinal, 1);
+        assert_eq!(all[1].entry.role.as_deref(), Some("section-heading"));
+
+        let only_codes = bundle.entries_for_candidate(&candidate, Some("x"), Some("code")).unwrap();
+        assert_eq!(only_codes.len(), 1);
+        assert_eq!(only_codes[0].entry.ordinal, 0);
+        let headings = bundle.entries_for_candidate(&candidate, None, Some("section-heading")).unwrap();
+        assert_eq!(headings.len(), 1);
+        assert!(bundle.entries_for_candidate(&candidate, Some("other"), None).is_err());
+        assert!(bundle.entries_for_candidate(&candidate, Some(""), None).is_err());
+        assert!(bundle.entries_for_candidate(&candidate, None, Some("verified")).is_err());
     }
 
     #[test]
