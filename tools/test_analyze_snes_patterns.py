@@ -68,7 +68,7 @@ def test():
         "evidence_limit": "Historical listing, no execution evidence",
         "records": [{
             "candidate_game_key": "game", "source_record_id": "fixture:a",
-            "source_git_blob_sha": "f" * 40, "source_ordinal": 1,
+            "source_git_blob_sha": "a" * 40, "source_ordinal": 1,
             "raw_code": "AAAA+BBBB+0002",
             "published_text_segments": ["AAAA", "BBBB", "0002"],
             "published_effect_description": "Example",
