@@ -1,0 +1,49 @@
+name: Import pinned PS2 and console cheat source files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-console-cheat-codes.yml"
+      - "tools/import_console_cheat_codes.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-console-cheat-codes-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire pinned console cheat originals and upstream author credits
+        run: |
+          set -euo pipefail
+          python3 tools/import_console_cheat_codes.py
+      - name: Verify all preserved originals against source Git blobs
+        run: |
+          set -euo pipefail
+          python3 tools/validate.py
+      - name: Commit only pinned original corpus files and provenance
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/cookieplmonster-console-cheat-codes/ sources/cookieplmonster-console-cheat-codes.json
+          if git diff --cached --quiet; then
+            echo "Pinned cheat source collection already preserved."
+            exit 0
+          fi
+          git commit -m "data: preserve 183 original PS2 PS1 PSP and GameCube cheat files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
