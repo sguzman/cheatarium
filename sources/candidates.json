@@ -55,6 +55,45 @@
       "state": "link_only_rights_review",
       "repo_license": "undetermined",
       "notes": "Excellent research reference; confirm export permissions and individual source attribution before bulk import."
+    },
+    {
+      "id": "r0ah-vitacheat",
+      "repo": "https://github.com/r0ah/vitacheat",
+      "platforms": [
+        "vita"
+      ],
+      "formats": [
+        "vitacheat-psv"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned tree bb8158a1c696914a8ea2299889d42ab9a57a3ab2 contains 676 .psv files; README calls this a user-created community database and cites contributors. No LICENSE/COPYING/NOTICE file found. Contributor/code-specific reuse permission remains unverified; do not bulk rehost."
+    },
+    {
+      "id": "shumnot-vitacheat",
+      "repo": "https://github.com/ShumnoT/VitaCheatDatabase",
+      "platforms": [
+        "vita"
+      ],
+      "formats": [
+        "vitacheat-psv"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned tree a394316be0fe7b233b49b7ba22f14fae56a1b9c8 contains 119 .psv files; README acknowledges external code sites. No LICENSE/COPYING/NOTICE file found; third-party rights unresolved."
+    },
+    {
+      "id": "kimdebroye-n3ds-cheat-codes",
+      "repo": "https://github.com/KimDebroye/N3DS-Cheat-Codes",
+      "platforms": [
+        "3ds"
+      ],
+      "formats": [
+        "gateshark-text"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned tree c454a953fa2294372192443d06391058ab68198a contains ten .txt files; owner states cheats are custom created but no LICENSE/COPYING/NOTICE file is present. Ask for reuse terms before ingesting."
     }
   ]
 }

@@ -14,7 +14,7 @@
 
 ## Acquisition status (2026-10-10)
 
-**33,091 actual original cheat files archived**, including **340 newly acquired in this continuation**: 62 original PS2 PNACH and 278 code-bearing Dolphin GameCube/Wii INIs. **33,057 files are searchable across 44 console bundles**; 34 original Dolphin INIs have unresolved family labels and remain safely archived. The current catalog exposes 1,257,967 code-bearing source entries; it does not assert unique effects, game compatibility or successful execution. Active priority remains acquiring further independently reusable console cheats, not UI work.
+**33,095 actual original cheat files archived**. The latest additions are four independently MIT-licensed PS2 PNACH files, following 62 AeroWidescreen PS2 and 278 Dolphin GameCube/Wii originals. **33,061 files are searchable across 44 console bundles**; 34 original Dolphin INIs have unresolved family labels and remain safely archived. The current catalog exposes 1,257,971 code-bearing source entries; it does not assert unique effects, game compatibility or successful execution. Active priority remains acquiring further independently reusable console cheats, not UI work.
 
 ## Platform queue
 
@@ -27,12 +27,13 @@
 - [x] Preserve 21 GameCube/Wii VC AR/Gecko original INI files and 28 Wii/Wii U Gecko code documents from independently licensed upstream collections.
 - [x] Acquire 278 code-bearing Dolphin GameSettings INIs with original project COPYING and license variants: 210 GameCube, 34 Wii and 34 with unresolved disc-system identity.
 - [x] Acquire and index 62 independent AeroWidescreen PS2 PNACH files retaining native region/CRC keys, authors and MIT notices.
+- [x] Acquire and index one SalustLab Klonoa 2 hard-mode PS2 PNACH and three PreachingPython Kingdom Hearts Final Mix PS2 PNACH variants (3x, 4x, diagnostic 100x), preserving original MIT notices and compatibility caveats.
 - [ ] Expand GameCube/Wii/Wii U and other missing console source collections beyond these additional authors, and acquire independent 3DS/Switch/Vita sources where original-code reuse rights permit.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
 - [x] Archive 5,445 original GoldHEN PS4-oriented native JSON/MC4/SHN/XML files and 2,540 original Artemis PS3 NCL cheat files, retaining exact revisions, original authors and license notices.
 - [x] Index original PS3 NCL, PS4 GoldHEN JSON/SHN/MC4/XML, and GameCube/Wii/Wii U Gecko/AR source records without fabricating decoded cheats or game compatibility.
 - [x] Acquire and index 110 original PS2 PNACH cheat files from pinned CookiePLMonster, plus 67 PS1, 4 PSP, and 2 GameCube native cheat files with author attribution.
-- [ ] Expand Sony coverage with additional independent PS2 and Vita collections; GoldHEN PS2-era title IDs are not native PS2 coverage.
+- [ ] Expand Sony coverage with additional independent PS2 and Vita collections; GoldHEN PS2-era title IDs are not native PS2 coverage. The 676-file r0ah and 119-file ShumnoT VitaCheat databases remain link-only pending contributor and redistribution rights review.
 - [ ] Review additional Nintendo Switch title/build-ID databases, PS2 PCSX2 `.pnach` collections and GameCube/Wii Gecko sources whose reuse rights remain unresolved.
 - [x] Add Libretro Atari, NEC, SNK handheld, WonderSwan, ColecoVision, Intellivision and GX4000.
 - [ ] Evaluate Xbox families, Neo Geo AES/CD, 3DO and other collections.
