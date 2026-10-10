@@ -23,7 +23,7 @@ ARCHIVE = ROOT / "archive" / SOURCE_ID
 EXPECTED_INIS = 1889
 NOTICES = (
     "COPYING",
-    "README.md",
+    "Readme.md",
     "LICENSES/GPL-2.0-or-later.txt",
     "LICENSES/MIT.txt",
     "LICENSES/BSD-3-Clause.txt",
@@ -81,7 +81,7 @@ def import_snapshot(checkout):
         raise RuntimeError(f"Unexpected upstream revision: {sha}")
     listing = sorted(subprocess.check_output(
         ["git", "-C", str(checkout), "ls-tree", "-r", "--name-only", "HEAD",
-         SOURCE_DIR, "COPYING", "README.md", "LICENSES"],
+         SOURCE_DIR, "COPYING", "Readme.md", "LICENSES"],
         text=True
     ).splitlines())
     inis = [path for path in listing
@@ -149,7 +149,7 @@ def import_snapshot(checkout):
         "license": "GPL-2.0-or-later project-wide guidance; third-party per-file rights may vary",
         "archive_prefix": f"archive/{SOURCE_ID}/",
         "scope_note": "Selected upstream Dolphin GameSettings INI source files with explicit ActionReplay/Gecko named code payloads. Excludes ordinary emulator settings INIs.",
-        "rights_note": "Dolphin COPYING explains GPLv2+ for most original work and differing licenses for derived materials. Preserve root README, COPYING, LICENSES notices and original file-level credits; do not assume individual authors surrendered separate rights.",
+        "rights_note": "Dolphin COPYING explains GPLv2+ for most original work and differing licenses for derived materials. Preserve root Readme.md, COPYING, LICENSES notices and original file-level credits; do not assume individual authors surrendered separate rights.",
         "selection_rule": "An INI is included if an ActionReplay or Gecko section contains a $-prefixed named entry followed by an original 8+8-character code line. Other INIs omitted.",
         "source_game_id_hints_only": True,
         "native_cheat_file_counts": counts,
