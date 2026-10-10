@@ -1,0 +1,1440 @@
+{
+  "schema_version": 1,
+  "id": "dolphin-game-cheats",
+  "repository": "https://github.com/dolphin-emu/dolphin",
+  "snapshot_commit": "e6f3ae17627e4344da95b13424af5baf4c892b08",
+  "license": "GPL-2.0-or-later project-wide guidance; third-party per-file rights may vary",
+  "archive_prefix": "archive/dolphin-game-cheats/",
+  "scope_note": "Selected upstream Dolphin GameSettings INI source files with explicit ActionReplay/Gecko named code payloads. Excludes ordinary emulator settings INIs.",
+  "rights_note": "Dolphin COPYING explains GPLv2+ for most original work and differing licenses for derived materials. Preserve root Readme.md, COPYING, LICENSES notices and original file-level credits; do not assume individual authors surrendered separate rights.",
+  "selection_rule": "An INI is included if an ActionReplay or Gecko section contains a $-prefixed named entry followed by an original 8+8-character code line. Other INIs omitted.",
+  "source_game_id_hints_only": true,
+  "native_cheat_file_counts": {
+    "gamecube": 210,
+    "wii": 34,
+    "unclassified": 34
+  },
+  "named_payload_sections_detected": 4167,
+  "files": [
+    {
+      "upstream_path": "COPYING",
+      "archive_path": "archive/dolphin-game-cheats/COPYING",
+      "git_blob_sha": "2f19ccad8a0d6d809f26eaf93eeeef9b0cdf0f07"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/D43E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/D43E01.ini",
+      "git_blob_sha": "05a4dd4fe3390ca4493e4dd5bc372659f5b63bb5"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/DPOJ8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/DPOJ8P.ini",
+      "git_blob_sha": "458b3d23d1c9224aaee16cd4654be6bb3b3d2691"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G2FE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G2FE78.ini",
+      "git_blob_sha": "ef2167cdafadeb586464d673d07ba1e82fd7e80a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G2ME01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G2ME01.ini",
+      "git_blob_sha": "ef294b6aa50907d28a210a92b978a3116be6223d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G2MP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G2MP01.ini",
+      "git_blob_sha": "1d9069a8145c0c3528341989fb7aae55e05c71f0"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G2RE52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G2RE52.ini",
+      "git_blob_sha": "81535286aef15a85c32d68eeb92dc8b7e661dd0c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G2VE08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G2VE08.ini",
+      "git_blob_sha": "6e6e3ce677c198ce9c3a0a1417a7c1e0bafa99df"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G2VP08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G2VP08.ini",
+      "git_blob_sha": "07859c853fea2bbf53cd8a21da45c0852f43c511"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G3RP52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G3RP52.ini",
+      "git_blob_sha": "a3277eaa601a797e62192ef91bc51da99e06caa3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G3YP52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G3YP52.ini",
+      "git_blob_sha": "09eb2c78710505a00b6fd44401f7f5581d4a26f9"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G4AEE9.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G4AEE9.ini",
+      "git_blob_sha": "9674139eb7c2e2ca7ea206675dffa160a390f58f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G4GEE9.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G4GEE9.ini",
+      "git_blob_sha": "02627c7f344ee86cf6207d42133686067557e21a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G4ME69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G4ME69.ini",
+      "git_blob_sha": "7ca915fa7215ab37f2c8360984541b4581183958"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G4NJDA.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G4NJDA.ini",
+      "git_blob_sha": "ad83ba8bda35a88d492c306e6f96299407372217"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G4QE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G4QE01.ini",
+      "git_blob_sha": "03e1ace2bcba93d6e118ed2da62f0e8d9152ed9d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G4SP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G4SP01.ini",
+      "git_blob_sha": "834c6239ca9861cd5ea02a269af9001cbda9dd4e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G5SE7D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G5SE7D.ini",
+      "git_blob_sha": "c17cbb345fe3a455967d6caf5a6c3df64e884c6d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G5SP7D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G5SP7D.ini",
+      "git_blob_sha": "badac2175457a44ee13efe75c12bb94027a012ff"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G8ME01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G8ME01.ini",
+      "git_blob_sha": "c7abda1cc57ed77f2b40255dd24cbfd8a6485089"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G8MJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G8MJ01.ini",
+      "git_blob_sha": "393cafcc58f493ab348f21c3d6dce22d7c56090c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G8MP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G8MP01.ini",
+      "git_blob_sha": "e410a2ff64b13e8bdf9f3d3314fbc9f267077f35"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G8WP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G8WP01.ini",
+      "git_blob_sha": "ac197b15dd81f28e842fd39f90201e1adac38b77"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G9SE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G9SE8P.ini",
+      "git_blob_sha": "3ca6d38beafc4bc728d123c448c1be75df66239a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G9SJ8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G9SJ8P.ini",
+      "git_blob_sha": "fdbd1da7365b307269dab6a077a5810ca7154332"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/G9SP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/G9SP8P.ini",
+      "git_blob_sha": "797f1e97c7d42cfe93b4275fae1df512981480c3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GAFE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GAFE01.ini",
+      "git_blob_sha": "213070814c7ae3c71eb1593611b1f53e21c87214"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GAL.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GAL.ini",
+      "git_blob_sha": "50c869a114b159dfb76a6c75df9235bd3f276e42"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GALE01r0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GALE01r0.ini",
+      "git_blob_sha": "58cf2bd746921fed4e2cd2ae9527c892dfc5ac1a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GALE01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GALE01r1.ini",
+      "git_blob_sha": "998edd46aa2d93466ef9b7eafce2348169774498"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GALE01r2.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GALE01r2.ini",
+      "git_blob_sha": "de5627492b8a4160455bfbc28ca3091f3dbbcb76"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GALP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GALP01.ini",
+      "git_blob_sha": "9315721db862b80e61243e0ec8590be2acf7249f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GAUE08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GAUE08.ini",
+      "git_blob_sha": "b88328bf91d652b3e3128fbc174a995e0a82a540"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GAZE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GAZE69.ini",
+      "git_blob_sha": "5ceab63b9398db2de8cadfdfc18ca43c42c0064f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GB4E51.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GB4E51.ini",
+      "git_blob_sha": "b63b993dac9f96aca8b26035a0ec920208dde2ef"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBHEC8.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBHEC8.ini",
+      "git_blob_sha": "f6111abd55034fdd197d4346fc5835f19d796766"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBLE52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBLE52.ini",
+      "git_blob_sha": "3d36bfbe57202dcb075b8e8e083b645d88a95f5f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBLP52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBLP52.ini",
+      "git_blob_sha": "dc686647b171cbcb5da344b18c42573b278352e2"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBOP51.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBOP51.ini",
+      "git_blob_sha": "9add5ca7b2323b56920dccb4a83a92dab87f44fc"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBRJ18.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBRJ18.ini",
+      "git_blob_sha": "533eb3e4465486bf54d1dbd88c65f1ffb6784dc3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBSE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBSE8P.ini",
+      "git_blob_sha": "7bbf0df89274662b0f85f22f12b48b0aed5286a4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBSP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBSP8P.ini",
+      "git_blob_sha": "2961876943f622adc4f9b19540612f89d42fda0a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GBZP08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GBZP08.ini",
+      "git_blob_sha": "81ee1c2ce1135b20b061595b17ab61fa77e9f2b0"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GC6E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GC6E01.ini",
+      "git_blob_sha": "b42eac6ccc8eeee46ffd5d749b56360434eac21c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GC6J01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GC6J01.ini",
+      "git_blob_sha": "7111923c0c929957e78150434525a088d229fb56"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GC6P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GC6P01.ini",
+      "git_blob_sha": "1d22faa89a9a5226c1270c30239c8957967e6afd"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GC8JA4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GC8JA4.ini",
+      "git_blob_sha": "6b4a9ff712f8fdd7760632e2b50a749d4cfca595"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GCBE7D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GCBE7D.ini",
+      "git_blob_sha": "ced4b6749b771a8b518c8ab3e2bfb3dac8b4ed80"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GCBP7D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GCBP7D.ini",
+      "git_blob_sha": "0dec0edde56db6eb5756d38b86e8ac6b1aa6fa27"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GCCE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GCCE01.ini",
+      "git_blob_sha": "baca19c303259e319f34642778b33d5a00dfa115"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GCCP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GCCP01.ini",
+      "git_blob_sha": "f73892aadb938aee1415ecf94f6967894644f13d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GCN.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GCN.ini",
+      "git_blob_sha": "2d894502fcfb5422a9bed02b1a923b5ff574bae1"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GCVEEB.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GCVEEB.ini",
+      "git_blob_sha": "7577f1c9edef6fc1e1f1d0621123ba07c9530438"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GDDE41.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GDDE41.ini",
+      "git_blob_sha": "ae1e6f4cb9f1ee1e08bfe011ffaebdf42d40a514"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GDEE71.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GDEE71.ini",
+      "git_blob_sha": "cc48c6f47761d60b3c39c67564520e243e50bbef"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GDJEB2.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GDJEB2.ini",
+      "git_blob_sha": "ebb06bd3f403bb075e23ece609725074b623bb04"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GDTE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GDTE69.ini",
+      "git_blob_sha": "928f2918abdf5294345d9e7b6d8f8393270a41aa"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GE5EA4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GE5EA4.ini",
+      "git_blob_sha": "042a7bae39ec6c3789a725a463e3fb420627a2bd"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GEZE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GEZE8P.ini",
+      "git_blob_sha": "a740c94c92489648a405efeed149bd90ede13e0e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GEZP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GEZP8P.ini",
+      "git_blob_sha": "8d3abf73d08c59319b307317af1ccadfd5feee87"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GF7E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GF7E01.ini",
+      "git_blob_sha": "99f37153e4be86a3c7a62caab0fb0b432d9d6a92"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GF7P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GF7P01.ini",
+      "git_blob_sha": "333629d732c276261fa3e94193953f722024c01f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GF8E69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GF8E69.ini",
+      "git_blob_sha": "506f73048945dbabde91add550573450eb9ab7e5"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFEE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFEE01.ini",
+      "git_blob_sha": "485e49f6ac4d9fcda9b6255c758f689a01760a0e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFEJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFEJ01.ini",
+      "git_blob_sha": "2540e9035fbab574c5e23d819a4faccda9e4b256"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFQEA4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFQEA4.ini",
+      "git_blob_sha": "dba1f7e75a3e97f4c3b6061f532d5c5a472c34a3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFTE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFTE01.ini",
+      "git_blob_sha": "85985b7aea8a7f2c235187569f42e6fba98cd05b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFYE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFYE69.ini",
+      "git_blob_sha": "24960f005f29f937586de0098dd2825e6a3da34f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFZE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFZE01.ini",
+      "git_blob_sha": "6d5afdccd060e43e5a65ae12fdee32ad0e6fd7a3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFZJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFZJ01.ini",
+      "git_blob_sha": "553984f337de0485f2162d158e673c69cd5bfd8f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GFZP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GFZP01.ini",
+      "git_blob_sha": "1420cd0c67ad8457ecb8ba236a6257a8f7632d49"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGSEA4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGSEA4.ini",
+      "git_blob_sha": "d37f1e22878c3de62da2ca4875e88569b9b2167a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGSPA4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGSPA4.ini",
+      "git_blob_sha": "87f41f8e9e7375d20e0e9005a040e8ac8033d988"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGTE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGTE01.ini",
+      "git_blob_sha": "cd5dede038aa791553bf83f2e4fe0bd8c1463362"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGTJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGTJ01.ini",
+      "git_blob_sha": "531c8df6c5300dae5b294c3591b839000ec54446"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGTP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGTP01.ini",
+      "git_blob_sha": "fe26579eba40a4785d17118b7d0b933afff3bf19"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGVD78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGVD78.ini",
+      "git_blob_sha": "7f3c0eaf44b7a2ffa02efb56280375a03ddd6ce1"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGVE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGVE78.ini",
+      "git_blob_sha": "b74a725dcc9b894a9ef79b7134f3b070cfccb1fe"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GGVP78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GGVP78.ini",
+      "git_blob_sha": "9e0a90f55d399050276891f016a52ac51c13541e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GHLE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GHLE69.ini",
+      "git_blob_sha": "3c59d7bfb7a5f9ba612c77628753d4357c1b3d3b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GHME4F.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GHME4F.ini",
+      "git_blob_sha": "eecd2ab072b3f57e1c39c4463c845466b138b7a9"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GHQE7D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GHQE7D.ini",
+      "git_blob_sha": "310fbe9ff3fc81a58dd46e2522079a7c8678117a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GHQP7D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GHQP7D.ini",
+      "git_blob_sha": "eb9f3dcf2d9ffdd4aa5b5a984c9bf9d16425981d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GHRE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GHRE78.ini",
+      "git_blob_sha": "2dee29d065aea23b58fd8b3bc4426e416f8407b1"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GHSE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GHSE69.ini",
+      "git_blob_sha": "7c72f496cf9f45036e71138611bdbcc06dd5f89d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GHSP69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GHSP69.ini",
+      "git_blob_sha": "af83fecee8d9cafd75c7f56e1f814a199ace5fb6"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GICE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GICE78.ini",
+      "git_blob_sha": "f4684b75e19a076caa383113824622f928fd9a9d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GIGJ8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GIGJ8P.ini",
+      "git_blob_sha": "2098ab10ea0ec577056a5006b2b25174534d1b6a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GINE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GINE69.ini",
+      "git_blob_sha": "35254da5f790b17aa608aed708d0de74b0eca750"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GIQE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GIQE78.ini",
+      "git_blob_sha": "3a20714fe8e10da9c4b0ede68599d5e7701f6711"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GJCE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GJCE8P.ini",
+      "git_blob_sha": "d8f0a17f9bb31fb96636010eaa4877b298e3a865"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GJUE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GJUE78.ini",
+      "git_blob_sha": "4fa943d357dbc8c97fb6fe72ad3c29b0cca69b6b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GJWE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GJWE78.ini",
+      "git_blob_sha": "9e9c39816c03a646c891b10db02424ba8319fb08"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GK2.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GK2.ini",
+      "git_blob_sha": "04ce22869094ee1f96afe0c873a6289f31429349"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GK2E52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GK2E52.ini",
+      "git_blob_sha": "db6c14b36abc3a92fa7fb05cab72776c62c6090a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GK4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GK4.ini",
+      "git_blob_sha": "7c59cc3a8f5db71a7b85f5e264683bb862c72c1b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GK4E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GK4E01.ini",
+      "git_blob_sha": "86278394cfd7b96f26abe92d46bc391133193fc7"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKB.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKB.ini",
+      "git_blob_sha": "0a6b4f9019d2eb466414194afd4f2481c85cd097"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKBPAF.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKBPAF.ini",
+      "git_blob_sha": "3580dddde3e999d282550120a4f1e15bf9286bb9"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKDP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKDP01.ini",
+      "git_blob_sha": "d79070237fd2941ddfcf7d70a0a2dda550293569"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKNEB2.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKNEB2.ini",
+      "git_blob_sha": "bd269a7b9918be9e1ff2475219188605280751bf"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKRPB2.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKRPB2.ini",
+      "git_blob_sha": "4efc6a823202471d68270ceea5d19c5d0eb655d9"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKWJ18.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKWJ18.ini",
+      "git_blob_sha": "cc7ea69fcdd353a69c05d49119639e4be8e6d152"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKYE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKYE01.ini",
+      "git_blob_sha": "0c52f1e226cde6f56ac7396abbe5f778c00c26ac"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKYJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKYJ01.ini",
+      "git_blob_sha": "ce53233cc10fcc7ce2cf1f7e7f5ae70330963f82"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GKYP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GKYP01.ini",
+      "git_blob_sha": "1ef7bdb94d1d37fc0e302bf5aebbaa13276c22d7"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GL8.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GL8.ini",
+      "git_blob_sha": "b880b45646014228b8232ff23a770a00623e74a1"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GLME01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GLME01.ini",
+      "git_blob_sha": "6ff02a53164b33d3ec4a4ff424d6d37a1fb6e65e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GLMP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GLMP01.ini",
+      "git_blob_sha": "fb078d1398fb4b94e122e609d63991b9727a17d3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GLNE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GLNE69.ini",
+      "git_blob_sha": "d4669a28b1a7bc304c1319f8d021c66b5ba30376"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GLSP64.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GLSP64.ini",
+      "git_blob_sha": "ed3fbd16fc69f855f8e30e97f0747c4d8a0e59e9"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GM4E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GM4E01.ini",
+      "git_blob_sha": "6e291e4b3c2b3bd3687fdabdcf1dfd46fc80f214"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GM4P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GM4P01.ini",
+      "git_blob_sha": "20702143999b17e7bc1eaee526c993ffd1f4853a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GM8E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GM8E01.ini",
+      "git_blob_sha": "76a050abc68e4ed0002d2fa84fb09364fb9869da"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMBE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMBE8P.ini",
+      "git_blob_sha": "e9f5507bc0cca953bd00f485a6b1f01aaec1ae92"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMBP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMBP8P.ini",
+      "git_blob_sha": "db6d62d3886e08bc9603aea182e816b9b1ba84c0"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMOP70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMOP70.ini",
+      "git_blob_sha": "df54bae2d21c640069e74b1954c585c77a1abb92"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMPE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMPE01.ini",
+      "git_blob_sha": "448294f61a7c9d2275f4aca5eda754e6c7302d99"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMPJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMPJ01.ini",
+      "git_blob_sha": "931f7553832735fc76ec3d5557a8311af25dda85"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMPP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMPP01.ini",
+      "git_blob_sha": "d44ab16243f7d7515ff054937421508c42a80a42"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMSE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMSE01.ini",
+      "git_blob_sha": "e13fc6a81384656d2f8c024fd46350f0f14f5717"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMSJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMSJ01.ini",
+      "git_blob_sha": "b9d357417c5d54c1815909f95507c0eb6ef8831e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMSJ01r0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMSJ01r0.ini",
+      "git_blob_sha": "e353df6a76e1754ce2985426532c508c55c7d64c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMSJ01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMSJ01r1.ini",
+      "git_blob_sha": "a1772aab5fcec16d114dd3a69128818e8176a7f4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMSP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMSP01.ini",
+      "git_blob_sha": "d9da3107ec1fa0a318425ab793b2e6dda86251d2"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GMXE70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GMXE70.ini",
+      "git_blob_sha": "f68ad7172d4ad6cacb764c1d39ad160f4dda6aae"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GNLE82.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GNLE82.ini",
+      "git_blob_sha": "e54eb93435ffbd09e7358079efe1cb291efeb55a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GNLJ82.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GNLJ82.ini",
+      "git_blob_sha": "dae1839dc45d3f2175b6885a2ba922dd55917426"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GNWE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GNWE69.ini",
+      "git_blob_sha": "cedf2b1ffd58b12d50d64ecb966cd99da90f0922"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GO2E4F.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GO2E4F.ini",
+      "git_blob_sha": "0f3b20bd0cd1422d0470bd820f4cc05b2fa0db93"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GO7E69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GO7E69.ini",
+      "git_blob_sha": "2616cceedf361105c261723e43f7a01bbaa70f28"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GO7F69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GO7F69.ini",
+      "git_blob_sha": "c83914bc3d4babe2cf3f5500ea7977e5d1d1d9ad"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GO7P69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GO7P69.ini",
+      "git_blob_sha": "dafd7e77e134b538fdadcf9ffc01f67d5cad6498"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GOCE5D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GOCE5D.ini",
+      "git_blob_sha": "b06a50b393a0f28e750444a7df33a9c1027cf38d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GOME01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GOME01.ini",
+      "git_blob_sha": "a05a88d8cf9d229477137448b34e4cea55b866ea"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GOMP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GOMP01.ini",
+      "git_blob_sha": "ef4900bf86083219986be2f9fa46f649d8b70e31"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GONE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GONE69.ini",
+      "git_blob_sha": "05d1d4f745dfda9769fc1d640177870afe646159"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GOWE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GOWE69.ini",
+      "git_blob_sha": "2a612a218426356e322136a8b813bd12e1a999ba"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GOYE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GOYE69.ini",
+      "git_blob_sha": "b9ea7e9d1a1cf5e17d52b77a4ed610264863251e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP4J18.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP4J18.ini",
+      "git_blob_sha": "f3440345d4ba03d53a58cba71e23d6230fd627e2"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP5E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP5E01.ini",
+      "git_blob_sha": "30c1fccc00cc75bb4a45f27b4d6d5813800edad1"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP5J01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP5J01.ini",
+      "git_blob_sha": "59e3bb29d625f7dd4839f62acbbc36e3e2bec683"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP5P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP5P01.ini",
+      "git_blob_sha": "278e942805a3bab12e18fa8cbfccabd1b966fbce"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP6E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP6E01.ini",
+      "git_blob_sha": "ea1d01166d577ed55f5d6bb5cb6df1b01d23bfd6"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP6J01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP6J01.ini",
+      "git_blob_sha": "3f6e4c76b7ca607d9e4ddb5bfa2ea2106ba1389f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP6P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP6P01.ini",
+      "git_blob_sha": "641ea26e77d004c03de9e04c5a2dc851fe20530f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP7E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP7E01.ini",
+      "git_blob_sha": "c6dab7458ff512114b06403abd15dbcaa11428b3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP7J01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP7J01.ini",
+      "git_blob_sha": "492fa44bd1d29429fdc817bce6c5f8ecfdab7adf"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GP7P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GP7P01.ini",
+      "git_blob_sha": "c2a035c5f7c216dcf806d3727bb8868a99c4760e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPIE01r0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPIE01r0.ini",
+      "git_blob_sha": "f70c0914d9911a328e4a4a267cd06e739ed264ad"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPIE01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPIE01r1.ini",
+      "git_blob_sha": "a8261effc92a766fbf2f9a22a191abadeb1aead7"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPIP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPIP01.ini",
+      "git_blob_sha": "e5ab93a69551eeb4f910da785eb882d1528ab39a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPNE08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPNE08.ini",
+      "git_blob_sha": "b4fb2e06c0aac15135c328f580389b0957cad363"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPNP08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPNP08.ini",
+      "git_blob_sha": "dc2baa866f3298fb0f90d15cf7770da2d9ef41cc"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPOE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPOE8P.ini",
+      "git_blob_sha": "aab0c5404b760252bddb6235e61d26b213598ac8"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPOE8Pr0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPOE8Pr0.ini",
+      "git_blob_sha": "251edb806b0cc8463470ddcd9f44c1affdd256ad"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPOE8Pr1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPOE8Pr1.ini",
+      "git_blob_sha": "ec1f160c6dc673838c4a93a27afb2cff6485eb0a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPOP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPOP8P.ini",
+      "git_blob_sha": "b81fa324fa16cb3195b54cc7e5da687cab70d3ce"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPSP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPSP8P.ini",
+      "git_blob_sha": "24523e2eacf2322806eba980c1644fab9b56c808"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPVE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPVE01.ini",
+      "git_blob_sha": "6cfc89642e586530e9f3c17e911b60a27a231654"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GPVP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GPVP01.ini",
+      "git_blob_sha": "fb93def8f3795e9ccc6c92d63033e45f6d357b17"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GQPP78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GQPP78.ini",
+      "git_blob_sha": "49bc7abf8e34a28b6799055fa0d7925a5a6ddcbb"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GQSDAF.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GQSDAF.ini",
+      "git_blob_sha": "a0f2d3588477461b450afdc44fd3fa4553503606"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GQSEAF.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GQSEAF.ini",
+      "git_blob_sha": "3493288db91b01f864de675d95f4d7bfa93d6ba4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GQSFAF.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GQSFAF.ini",
+      "git_blob_sha": "90c3e75ebd9d3e6307f23be2747e89098f3cf4b1"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GR2E52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GR2E52.ini",
+      "git_blob_sha": "0ea99e2f74ccf9dc968ca44e268747f476bf8dcd"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GR2J52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GR2J52.ini",
+      "git_blob_sha": "8769c483876d526055e02a40eeed8cf088245a06"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GR2P52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GR2P52.ini",
+      "git_blob_sha": "089a9d245051fbe0d9d0d29a7c4e957a56d72846"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GREE08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GREE08.ini",
+      "git_blob_sha": "ad686dabb8fc231c8861daaa1048af29f28fd2de"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GRNE52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GRNE52.ini",
+      "git_blob_sha": "b7fd5f8a11d92f8fbed6ed1ab48dfb0ddf879c6d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GRNJ52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GRNJ52.ini",
+      "git_blob_sha": "7a8e13b2d3a9a0ee3da75a62a1790e530ca15bf4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GRNP52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GRNP52.ini",
+      "git_blob_sha": "6ba00d34640b8bb7add0bb7992a0b9a29105a783"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GROE5Z.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GROE5Z.ini",
+      "git_blob_sha": "4e818d56e127c227e1dee14cdafc3bd86deee05b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GRSPAF.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GRSPAF.ini",
+      "git_blob_sha": "878d49c4fda8d23e4d55da5e46dd3b2c2e09e692"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GRUE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GRUE78.ini",
+      "git_blob_sha": "287b55376b65457ad3498c88678ee08f965fe5bf"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GS2E78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GS2E78.ini",
+      "git_blob_sha": "45486430fc05093cc78a34bc3a297b71dcdd27d3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSAE01r0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSAE01r0.ini",
+      "git_blob_sha": "e19aec18fc9034a1ddf42a0a4a646dd309f7cb65"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSAE01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSAE01r1.ini",
+      "git_blob_sha": "28f81778246a2ad4a2914f3c9e44d017bd629538"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSAP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSAP01.ini",
+      "git_blob_sha": "5eebdcbf65de5d1482bc70c00283e0679989ed6b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSNE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSNE8P.ini",
+      "git_blob_sha": "f81264a32ec460020e1d15b39b552b85d6ef8378"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSNJ8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSNJ8P.ini",
+      "git_blob_sha": "495eac0465beb321fabbbaa050e0a64163f971de"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSNP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSNP8P.ini",
+      "git_blob_sha": "525c808e5845b201e948aca81c6a15c4c81aab4d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSO.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSO.ini",
+      "git_blob_sha": "9c5d0d41b9ce569cb0252c9e10823016d11ba14c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSPE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSPE69.ini",
+      "git_blob_sha": "9d2db540ff8fd4a8585cf9ed13ffed8423de786d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSPP69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSPP69.ini",
+      "git_blob_sha": "203ce150f9a3c8622eec6dd934bff7ccb9381f3f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSSE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSSE8P.ini",
+      "git_blob_sha": "8a6a987025ed69669a54e192e22b508bcc68de27"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GSWE64.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GSWE64.ini",
+      "git_blob_sha": "df888eaf480df15d5b654173b9272b1033b5c935"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GT6E70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GT6E70.ini",
+      "git_blob_sha": "5fe7fb9fa1f3b80625b4434820e9ae8d306764d5"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GTEE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GTEE01.ini",
+      "git_blob_sha": "82ce09d0e7627c7ff585d9b8d9abee986e9d957c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GTEP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GTEP01.ini",
+      "git_blob_sha": "adcfa3a292e7fb07b52cd826fabb4c6dcd8dc281"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GTKE51.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GTKE51.ini",
+      "git_blob_sha": "d051bc354d7d484a10345738c6c689b7d6bccc87"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GTOJAF.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GTOJAF.ini",
+      "git_blob_sha": "8707b825ebeb137be80cd5a69c98c18cf4213592"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GTSE4F.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GTSE4F.ini",
+      "git_blob_sha": "52e888933b1a27a075fc5e70faf64e9e43000e05"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GTZE41.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GTZE41.ini",
+      "git_blob_sha": "91fabb5d57aa339575b0dc63942b962bc48e4712"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GTZP41.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GTZP41.ini",
+      "git_blob_sha": "a1894b14f7749b9fcf43114892743ea3e3750570"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GUNE5D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GUNE5D.ini",
+      "git_blob_sha": "92b7e70c13ce489cbdc20c6da38a0cfc0aebb69b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GUNE5Dr0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GUNE5Dr0.ini",
+      "git_blob_sha": "060d123894433f23282e4524d3177e82ec3d44ef"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GUNE5Dr1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GUNE5Dr1.ini",
+      "git_blob_sha": "c426e94bb0f244b709d015decec3b8157c37220a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GUNP5D.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GUNP5D.ini",
+      "git_blob_sha": "17eabc17ed189b4c594a2292070c6c142dbfc9db"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GVJE08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GVJE08.ini",
+      "git_blob_sha": "a012c6846678ee9bcc00273dc975c7f30105fe0c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GVJP08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GVJP08.ini",
+      "git_blob_sha": "ad69b48f4fa5d433c38a6d993b00b77a64fc1ec8"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GVSE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GVSE8P.ini",
+      "git_blob_sha": "be50827e6604b86035dd14581845e5a7f0f86395"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GW5E69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GW5E69.ini",
+      "git_blob_sha": "080e5b1fc8096e3e4151dd7ab6596cf826d162dd"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GWQE52.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GWQE52.ini",
+      "git_blob_sha": "bb9f3b57affcbccd809e2679f25fee551a28e09e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GWRE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GWRE01.ini",
+      "git_blob_sha": "8030e57ef99a0157e206ed7183658d633c13198b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GWRP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GWRP01.ini",
+      "git_blob_sha": "cd7e0fca46394a0dde813a9f90417722feebcbe5"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GWWE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GWWE01.ini",
+      "git_blob_sha": "1fd3ee9fc998f42d936f5e5b23865c51cadfd77d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GWWJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GWWJ01.ini",
+      "git_blob_sha": "94ee2bacae22c2d2cf0cd86332e452a8384d2254"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GWWP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GWWP01.ini",
+      "git_blob_sha": "86359fe4a475d9d593668a0e8e5057c3f9556a2c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GWZE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GWZE01.ini",
+      "git_blob_sha": "809f7cf1ae2b9dee1d56bcba8f0b25bbf25c7d5b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXCE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXCE01.ini",
+      "git_blob_sha": "ca0ff7262746ff351f171c795b7bd3a5d549a346"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXRP08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXRP08.ini",
+      "git_blob_sha": "90860442768a958b30045bdeaf565be2e79ce2e2"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXSE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXSE8P.ini",
+      "git_blob_sha": "887da1ccb1477f18579581de1c4b8ffb9c3471e8"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXSJ8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXSJ8P.ini",
+      "git_blob_sha": "10f47cb51b4e6fc6ba6e97c1de187dd903db0f6b"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXSP8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXSP8P.ini",
+      "git_blob_sha": "4956d90be7bd57ee31fed1d238ce7dc856e06ad7"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXXE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXXE01.ini",
+      "git_blob_sha": "b6b61dc8cfbc3eda0372408eb04e6d3fc977d974"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXXJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXXJ01.ini",
+      "git_blob_sha": "153fe6e10462e9eaba689675a0f0b01ac4c3937d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GXXP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GXXP01.ini",
+      "git_blob_sha": "16d3a1d2e84d08d19d1ea0773377b54c87a27793"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GYAE78.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GYAE78.ini",
+      "git_blob_sha": "500f4e339646ed6249af04c1876aa8dca44351ad"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GYFPA4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GYFPA4.ini",
+      "git_blob_sha": "e7be8f1ca6d5b9709aa7bfcf77e66e06a650c234"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZ2E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZ2E01.ini",
+      "git_blob_sha": "8639aa8f5fe12ac21ae59ed7c3906445349c8e4c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZ2J01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZ2J01.ini",
+      "git_blob_sha": "231082d70a51750cac3932b1c81052e909c43c2d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZ2P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZ2P01.ini",
+      "git_blob_sha": "f66f8146ab96a48e8cfb06127f57e28773e4c95c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZ3E70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZ3E70.ini",
+      "git_blob_sha": "37c6a1230dc0b413043911b20f3afe998d4a1a3d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZDP70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZDP70.ini",
+      "git_blob_sha": "ac1eb7f5e57a793ecc18f8b7335f874211eef578"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZLE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZLE01.ini",
+      "git_blob_sha": "ced6ed6ba1ea11eedbb25514749454481ff5a14a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZLJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZLJ01.ini",
+      "git_blob_sha": "142675610601e59dd1ca6b6ed271eabcef617ce3"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZLP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZLP01.ini",
+      "git_blob_sha": "f2da08a1fc3cbd135c2d6828539f55ad3708e6c4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZPE70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZPE70.ini",
+      "git_blob_sha": "38d005d5829ef5b1b2f308e7bedbdb99c249c188"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZPP70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZPP70.ini",
+      "git_blob_sha": "5b55a0c3ad9d0fccd0a9eba18b3e7f792ddf99a5"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/GZSE70.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/GZSE70.ini",
+      "git_blob_sha": "23fe038b1de7b3c8d007f697c6fa90b4144a7ebf"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/HATE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/HATE01.ini",
+      "git_blob_sha": "a289a2a58db41c00b19afc20b85be175f3cb5467"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/HATJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/HATJ01.ini",
+      "git_blob_sha": "02fcbed497a35210b46495493333559531fab987"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/HATP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/HATP01.ini",
+      "git_blob_sha": "0b32371123bdde1bac48dcf8aaeaf913682b3395"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/P1RE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/P1RE01.ini",
+      "git_blob_sha": "4cab2ff0fc270b704aee16e3a583b7edd101d08c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/PZLE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/PZLE01.ini",
+      "git_blob_sha": "a6f12608fedb2de51fc9b8a014f2d7e413b8bb81"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R3R.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R3R.ini",
+      "git_blob_sha": "7ab281d3b94434b0db5b1bb7d325c45fffa415de"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R4QE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R4QE01.ini",
+      "git_blob_sha": "778c174249396920a82d7ac059c15af7db5459d8"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R4QJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R4QJ01.ini",
+      "git_blob_sha": "6434dd31380531714d64987b09647e92e06438ff"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R4QK01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R4QK01.ini",
+      "git_blob_sha": "fa9d9dd0ec19bae4fe98055628ef142f6cac5500"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R4QP01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R4QP01r1.ini",
+      "git_blob_sha": "ac9cbe1d43605681a913d79fefdd6e3bcc5f2c7f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R4QP01r2.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R4QP01r2.ini",
+      "git_blob_sha": "f4ab1799be566b0ce48c07e47178511fd26b9c8e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R7E.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R7E.ini",
+      "git_blob_sha": "fc718a05acf65a491b8f693e9996edd75b9e6652"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R9IE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R9IE01.ini",
+      "git_blob_sha": "de46ba7e067bd557749f0afc481cd5485dd50f8a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R9IJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R9IJ01.ini",
+      "git_blob_sha": "83bfc32649af2557e0eca2a1d7c512d75749676f"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R9IK01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R9IK01.ini",
+      "git_blob_sha": "ec33f099cca44774c68a53fe230cab71176d54de"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/R9IP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/R9IP01.ini",
+      "git_blob_sha": "197000fcd60162c730ce9763f5fc22b554bfb12e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RBU.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RBU.ini",
+      "git_blob_sha": "e05cc50981fef30f1cb2f0d33304cd11140b8fb4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RDGEA4.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RDGEA4.ini",
+      "git_blob_sha": "4b2e2029cd203b7061c6c917e225e58ed88fbbcf"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RENE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RENE8P.ini",
+      "git_blob_sha": "ac99386c3754aff1c0e7ffa4257aa69bc8e0e1ba"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RHO.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RHO.ini",
+      "git_blob_sha": "bc24328ab4c464ec4052d300dec28ea04ed7fd4a"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RM8E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RM8E01.ini",
+      "git_blob_sha": "527f86b4262e259d0d465e24ea6167f57d19fc98"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RM8J01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RM8J01.ini",
+      "git_blob_sha": "d7dd9cfd7da69e4f8ee7fe0b9d434066ed0f80fe"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RM8P01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RM8P01.ini",
+      "git_blob_sha": "23cf46a4e17110677255e5faca1432936f0dfc22"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RMCE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RMCE01.ini",
+      "git_blob_sha": "7293c55378835d8e9db5f2b1cd540b602ff1dc65"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RMCJ01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RMCJ01.ini",
+      "git_blob_sha": "53c4568c2f5771754a3882050eac39f2cb3451d4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RMCK01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RMCK01.ini",
+      "git_blob_sha": "c215dcf8f0242500cf8fc8f2fe82a0a1f51e498c"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RMCP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RMCP01.ini",
+      "git_blob_sha": "eed090db89d47d6e8cbd3ccc9b2d167ecd407cd4"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RNSE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RNSE69.ini",
+      "git_blob_sha": "b90af989de74e3a4eca14c651b4fd89d4e8fbbba"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RSBE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RSBE01.ini",
+      "git_blob_sha": "45f99c18bdf3a9670da2ba85c35014e73e94dbbf"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RSBP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RSBP01.ini",
+      "git_blob_sha": "0c44ea6bc9e980d567f989c2becf67632432e0eb"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RSRE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RSRE8P.ini",
+      "git_blob_sha": "40c7b01725fcaa5e86a963dbc4e5f417379b78a6"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RSVE8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RSVE8P.ini",
+      "git_blob_sha": "a2301386c969772679416e448b063baafe361a27"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUFEMV.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUFEMV.ini",
+      "git_blob_sha": "e6caaa8a8c229641fdccf47eeb3c124ae25fd2f0"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUFP99.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUFP99.ini",
+      "git_blob_sha": "c96106184b2809f45fdc0ca0068497aebf12d8fb"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUUE01r0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUUE01r0.ini",
+      "git_blob_sha": "a016e9c569348dfaea72130f31d3faaca97d24cb"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUUE01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUUE01r1.ini",
+      "git_blob_sha": "62ae160058f13ca1965337e2ac37e522d0961e5d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUUJ01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUUJ01r1.ini",
+      "git_blob_sha": "e56ddee6f9769cca8a7e1bcaf180b15b9bfe6011"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUUK01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUUK01r1.ini",
+      "git_blob_sha": "29ded01ebca47a84f8f41b5be2235ad182f8af65"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUUP01r0.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUUP01r0.ini",
+      "git_blob_sha": "72df615e6e2701576309434b70ac0d391843ab70"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RUUP01r1.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RUUP01r1.ini",
+      "git_blob_sha": "e5e2ae8c7c565ad462532eaf89984997aa94c810"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/RZJP69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/RZJP69.ini",
+      "git_blob_sha": "e299d9d4dc834774a8e57495009147ee79279823"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/SBDE08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/SBDE08.ini",
+      "git_blob_sha": "0a087bf613d92be06c4c79196d71d549843dee50"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/SBDP08.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/SBDP08.ini",
+      "git_blob_sha": "c61deb122d854a6d984652485095f569a30d2e0e"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/SC2E8P.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/SC2E8P.ini",
+      "git_blob_sha": "61f9e128dd84421bf56d4d33e1986b9b0b4a12e8"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/SMNE01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/SMNE01.ini",
+      "git_blob_sha": "63f764a17950d777c5b8dc0453fdbe9658800171"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/SMNP01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/SMNP01.ini",
+      "git_blob_sha": "d90474f8f1be8b7775010c6100dfbd796706c41d"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/SNJE69.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/SNJE69.ini",
+      "git_blob_sha": "0f544c179087868f5a28253ccbcf5f3491885320"
+    },
+    {
+      "upstream_path": "Data/Sys/GameSettings/SX4E01.ini",
+      "archive_path": "archive/dolphin-game-cheats/Data/Sys/GameSettings/SX4E01.ini",
+      "git_blob_sha": "450c8f85da0cfbd02f11f92c99fd4afebc118896"
+    },
+    {
+      "upstream_path": "LICENSES/BSD-3-Clause.txt",
+      "archive_path": "archive/dolphin-game-cheats/LICENSES/BSD-3-Clause.txt",
+      "git_blob_sha": "6c9eef8d8c8e513a0d828f33d9a7a8859e469312"
+    },
+    {
+      "upstream_path": "LICENSES/CC0-1.0.txt",
+      "archive_path": "archive/dolphin-game-cheats/LICENSES/CC0-1.0.txt",
+      "git_blob_sha": "0e259d42c996742e9e3cba14c677129b2c1b6311"
+    },
+    {
+      "upstream_path": "LICENSES/GPL-2.0-or-later.txt",
+      "archive_path": "archive/dolphin-game-cheats/LICENSES/GPL-2.0-or-later.txt",
+      "git_blob_sha": "17cb286430a4d8094e473d06bd7f50f40438ddba"
+    },
+    {
+      "upstream_path": "LICENSES/MIT.txt",
+      "archive_path": "archive/dolphin-game-cheats/LICENSES/MIT.txt",
+      "git_blob_sha": "2071b23b0e08594ea6bc99ac71129ef992abf498"
+    },
+    {
+      "upstream_path": "Readme.md",
+      "archive_path": "archive/dolphin-game-cheats/Readme.md",
+      "git_blob_sha": "4180d136b66d39913b30593bf23ba47d7d3e9555"
+    }
+  ]
+}
