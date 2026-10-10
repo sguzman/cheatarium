@@ -796,6 +796,7 @@ fn run() -> Result<()> {
         "cookieplmonster-console-cheat-codes",
         "igor-misc-pcsx2-cheats",
         "aerowidescreen-pcsx2-cheats",
+        "dolphin-game-cheats",
     ] {
         let native: SourceManifest =
             serde_json::from_slice(&fs::read(root.join(format!("sources/{manifest_id}.json")))?)?;
@@ -809,6 +810,28 @@ fn run() -> Result<()> {
                     if original.ends_with(".pnach") =>
                 {
                     ("ps2", "pcsx2-pnach", original.to_owned())
+                }
+                "dolphin-game-cheats"
+                    if original.starts_with("Data/Sys/GameSettings/")
+                        && original.ends_with(".ini") =>
+                {
+                    let name = original
+                        .rsplit('/')
+                        .next()
+                        .unwrap_or(original)
+                        .trim_end_matches(".ini");
+                    // Dolphin's six-character source game-ID convention is a
+                    // source hint, not a confirmed disc/region/build identity.
+                    // Unknown prefixes remain archived but unassigned.
+                    if name.len() != 6 {
+                        continue;
+                    }
+                    let system = match name.chars().next() {
+                        Some('G' | 'D') => "gamecube",
+                        Some('R' | 'S' | 'W' | 'H') => "wii",
+                        _ => continue,
+                    };
+                    (system, "dolphin-ini", name.to_owned())
                 }
                 "cookieplmonster-console-cheat-codes"
                     if original.starts_with("PS2/") && original.ends_with(".pnach") =>
