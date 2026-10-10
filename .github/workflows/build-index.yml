@@ -26,6 +26,8 @@ on:
       - "sources/aerowidescreen-pcsx2-cheats.json"
       - "sources/salustlab-ps2-mods.json"
       - "sources/kh1fm-ps2-drop-rate.json"
+      - "sources/igor-txr-controller-tweaks.json"
+      - "sources/saupernova-bt3-60fps.json"
       - "sources/dolphin-game-cheats.json"
       - "sources/candidates.json"
       - "tools/validate.py"
@@ -55,6 +57,8 @@ on:
       - "archive/aerowidescreen-pcsx2-cheats/**"
       - "archive/salustlab-ps2-mods/**"
       - "archive/kh1fm-ps2-drop-rate/**"
+      - "archive/igor-txr-controller-tweaks/**"
+      - "archive/saupernova-bt3-60fps/**"
       - "archive/dolphin-game-cheats/**"
   workflow_dispatch:
   workflow_run:
@@ -381,6 +385,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform ps2 --source-record-id 'kh1fm-ps2-drop-rate:pnach/4x/SLPS-25198_BD3FB870.pnach' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "kh1fm-ps2-drop-rate" and d["code_fields"] >= 1 and any("patch=2,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform ps2 --source-record-id 'igor-txr-controller-tweaks:C1GP/SLPM-65897_1C087362.pnach' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "igor-txr-controller-tweaks" and d["code_fields"] > 5 and any("patch=0,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform ps2 --source-record-id 'saupernova-bt3-60fps:patch/428113C2.pnach' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "saupernova-bt3-60fps" and d["code_fields"] > 5 and any("patch=" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'

@@ -798,6 +798,8 @@ fn run() -> Result<()> {
         "aerowidescreen-pcsx2-cheats",
         "salustlab-ps2-mods",
         "kh1fm-ps2-drop-rate",
+        "igor-txr-controller-tweaks",
+        "saupernova-bt3-60fps",
         "dolphin-game-cheats",
     ] {
         let native: SourceManifest =
@@ -812,6 +814,8 @@ fn run() -> Result<()> {
                 | "aerowidescreen-pcsx2-cheats"
                 | "salustlab-ps2-mods"
                 | "kh1fm-ps2-drop-rate"
+                | "igor-txr-controller-tweaks"
+                | "saupernova-bt3-60fps"
                     if original.ends_with(".pnach") =>
                 {
                     ("ps2", "pcsx2-pnach", original.to_owned())

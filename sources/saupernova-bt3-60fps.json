@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "saupernova-bt3-60fps",
+  "repository": "https://github.com/Saupernova13/pcsx2-bt3-60fps",
+  "snapshot_commit": "2829748e6e2bf5e2bfd6509ae99c8efb5f09ce2f",
+  "license": "CC BY 4.0 (released PNACH patch; LICENSE-docs), separate from MIT tooling",
+  "archive_prefix": "archive/saupernova-bt3-60fps/",
+  "scope_note": "One released original PS2 PNACH 60 FPS patch for Dragon Ball Z: Budokai Tenkaichi 3 (source SLUS-21678/CRC 428113C2). WIP experiments and software tools are excluded.",
+  "rights_note": "The patch is licensed CC BY 4.0 as stated in the source README and retained LICENSE-docs; upstream MIT LICENSE covers tooling, not the patch. Retain original author attribution, documented third-party workflow credits, known defects and unverified compatibility status.",
+  "native_cheat_counts": {
+    "ps2": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/saupernova-bt3-60fps/LICENSE",
+      "git_blob_sha": "b9200125dee0e62c7f88373b12363339c67b60c7"
+    },
+    {
+      "upstream_path": "LICENSE-docs",
+      "archive_path": "archive/saupernova-bt3-60fps/LICENSE-docs",
+      "git_blob_sha": "a5956fb9822fc725076d3bef61d58f2d12ebc01a"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/saupernova-bt3-60fps/README.md",
+      "git_blob_sha": "4605659b3b8d43b1607c5095152dda04efaca6f5"
+    },
+    {
+      "upstream_path": "patch/428113C2.pnach",
+      "archive_path": "archive/saupernova-bt3-60fps/patch/428113C2.pnach",
+      "git_blob_sha": "c49f9f1713b5a771967f8bccd73d37966c0ed64d"
+    }
+  ]
+}
