@@ -1,0 +1,49 @@
+name: Import pinned AeroWidescreen PS2 cheat files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-aero-pcsx2.yml"
+      - "tools/import_aero_pcsx2.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-aero-ps2-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Preserve all 62 original pinned PS2 PNACH files and notices
+        run: |
+          set -euo pipefail
+          python3 tools/import_aero_pcsx2.py
+      - name: Verify original Git blob hashes and existing archive inventories
+        run: |
+          set -euo pipefail
+          python3 tools/validate.py
+      - name: Commit original cheat files and authoritative source inventory
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/aerowidescreen-pcsx2-cheats/ sources/aerowidescreen-pcsx2-cheats.json
+          if git diff --cached --quiet; then
+            echo "Pinned original source collection already archived."
+            exit 0
+          fi
+          git commit -m "data: archive 62 independent PS2 PNACH source files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
