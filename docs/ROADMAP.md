@@ -12,9 +12,9 @@
 6. **Verify** codes against actual game builds and supported emulators.
 7. **Publish** searchable indexes, then integrations/exporters.
 
-## Acquisition status (2026-10-09)
+## Acquisition status (2026-10-10)
 
-**32,734 original cheat files preserved** from Libretro (23,382), Sharkive (1,135), GoldHEN (5,445), Artemis PS3 (2,540), and two Gecko/AR authors (49). The latter three collection groups added **8,034 files in the latest acquisition session**. All **32,734 original cheat files now have searchable source records across 44 console bundles**, including **110 original PS2 PNACH files**. Code-bearing entries are explicitly distinguished from metadata-only or opaque formats. More console source acquisition remains the active work; UI expansion is not a collection milestone.
+**33,091 actual original cheat files archived**, including **340 newly acquired in this continuation**: 62 original PS2 PNACH and 278 code-bearing Dolphin GameCube/Wii INIs. **33,057 files are searchable across 44 console bundles**; 34 original Dolphin INIs have unresolved family labels and remain safely archived. The current catalog exposes 1,257,967 code-bearing source entries; it does not assert unique effects, game compatibility or successful execution. Active priority remains acquiring further independently reusable console cheats, not UI work.
 
 ## Platform queue
 
@@ -25,7 +25,9 @@
 - [x] Archive 644 Nintendo 3DS and 491 Nintendo Switch native cheat files from pinned Sharkive (1,135 new original source files; unverified).
 - [x] Index 3DS title-ID and Switch title/build-ID native cheat sections without inventing game names, build compatibility or activation semantics (12,274 + 6,150 source code sections).
 - [x] Preserve 21 GameCube/Wii VC AR/Gecko original INI files and 28 Wii/Wii U Gecko code documents from independently licensed upstream collections.
-- [ ] Expand the GameCube/Wii/Wii U collections beyond these pilot authors, and acquire additional independent 3DS/Switch sources.
+- [x] Acquire 278 code-bearing Dolphin GameSettings INIs with original project COPYING and license variants: 210 GameCube, 34 Wii and 34 with unresolved disc-system identity.
+- [x] Acquire and index 62 independent AeroWidescreen PS2 PNACH files retaining native region/CRC keys, authors and MIT notices.
+- [ ] Expand GameCube/Wii/Wii U and other missing console source collections beyond these additional authors, and acquire independent 3DS/Switch/Vita sources where original-code reuse rights permit.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
 - [x] Archive 5,445 original GoldHEN PS4-oriented native JSON/MC4/SHN/XML files and 2,540 original Artemis PS3 NCL cheat files, retaining exact revisions, original authors and license notices.
 - [x] Index original PS3 NCL, PS4 GoldHEN JSON/SHN/MC4/XML, and GameCube/Wii/Wii U Gecko/AR source records without fabricating decoded cheats or game compatibility.
