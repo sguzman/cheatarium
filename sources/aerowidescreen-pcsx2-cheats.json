@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "id": "aerowidescreen-pcsx2-cheats",
+  "repository": "https://github.com/AeroWidescreen/PCSX2-Cheats",
+  "snapshot_commit": "ab043ba5adb9e65837fd451d207e6c7c2731c3b1",
+  "license": "MIT (root LICENSE; original file-level author text preserved)",
+  "archive_prefix": "archive/aerowidescreen-pcsx2-cheats/",
+  "scope_note": "62 original PS2 PCSX2 PNACH files: widescreen, controls, access, event and other game patches. Region, CRC, patch activation and compatibility unverified by Cheatarium.",
+  "rights_note": "Preserve upstream author's original MIT LICENSE, README and all file-level author, title, version and patch comments. Do not claim these patches are unique, already executed, or interoperable across regions.",
+  "native_cheat_counts": {
+    "ps2": 62
+  },
+  "files": [
+    {
+      "upstream_path": ".gitattributes",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/.gitattributes",
+      "git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+    },
+    {
+      "upstream_path": "Burnout 3 Takedown/SLUS-21050/Button Mapping/SLUS-21050_BEBF8793_buttons.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Burnout 3 Takedown/SLUS-21050/Button Mapping/SLUS-21050_BEBF8793_buttons.pnach",
+      "git_blob_sha": "ec2c264e3f3592c22a6e342673c7967a1e577610"
+    },
+    {
+      "upstream_path": "Burnout 3 Takedown/SLUS-21050/Widescreen Fix/SLUS-21050_BEBF8793_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Burnout 3 Takedown/SLUS-21050/Widescreen Fix/SLUS-21050_BEBF8793_widescreen.pnach",
+      "git_blob_sha": "c63fb2dd3c6c97043bf03e816c2d38205f2ba54f"
+    },
+    {
+      "upstream_path": "Burnout Dominator/SLUS-21596/Button Mapping/SLUS-21596_8C9576A1_buttons.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Burnout Dominator/SLUS-21596/Button Mapping/SLUS-21596_8C9576A1_buttons.pnach",
+      "git_blob_sha": "f6f8a41bd23596b5a4584fc8043583468e483da7"
+    },
+    {
+      "upstream_path": "Burnout Revenge/SLUS-21242/Button Mapping/SLUS-21242_D224D348_buttons.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Burnout Revenge/SLUS-21242/Button Mapping/SLUS-21242_D224D348_buttons.pnach",
+      "git_blob_sha": "b65325736fc34b345339624d0075aa4b45dd743f"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/PBPX-95503/Access Hidden Car Classes/PBPX-95503_8AA991B0_carclass.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/PBPX-95503/Access Hidden Car Classes/PBPX-95503_8AA991B0_carclass.pnach",
+      "git_blob_sha": "8b337f3ecf23f01ff89ffc77a0a30a40e468398d"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/PBPX-95503/Always Gold License Test/PBPX-95503_8AA991B0_alwaysgoldtest.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/PBPX-95503/Always Gold License Test/PBPX-95503_8AA991B0_alwaysgoldtest.pnach",
+      "git_blob_sha": "2814924cfb0a37935774e0ee3b25446a28121c89"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/PBPX-95503/Full Trigger Sensitivity/PBPX-95503_8AA991B0_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/PBPX-95503/Full Trigger Sensitivity/PBPX-95503_8AA991B0_triggers.pnach",
+      "git_blob_sha": "3d33d0b85ccaea60ca0e4c5d4c033cea809a5fec"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/PBPX-95503/Reduce Vibration/PBPX-95503_8AA991B0_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/PBPX-95503/Reduce Vibration/PBPX-95503_8AA991B0_vibration.pnach",
+      "git_blob_sha": "b6ba386937e9b34a5701a6f7d121bdb36f7009a8"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/PBPX-95503/Widescreen Text/PBPX-95503_8AA991B0_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/PBPX-95503/Widescreen Text/PBPX-95503_8AA991B0_widescreen.pnach",
+      "git_blob_sha": "7e092749bb38f1dcea3d69d65ee6dc234514108c"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCES-50294/Access Hidden Car Classes/SCES-50294_B590CE04_carclass.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCES-50294/Access Hidden Car Classes/SCES-50294_B590CE04_carclass.pnach",
+      "git_blob_sha": "3746f5e408fd4cd14f13c304267c5d3e00bd8a04"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCES-50294/Always Gold License Test/SCES-50294_B590CE04_alwaysgoldtest.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCES-50294/Always Gold License Test/SCES-50294_B590CE04_alwaysgoldtest.pnach",
+      "git_blob_sha": "c5655d067a71bc6262a2e6354bd54b6b1df58d68"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCES-50294/Full Trigger Sensitivity/SCES-50294_B590CE04_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCES-50294/Full Trigger Sensitivity/SCES-50294_B590CE04_triggers.pnach",
+      "git_blob_sha": "e8c7064924d39a09a8bdd4c779f9126926c7967b"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCES-50294/Reduce Vibration/SCES-50294_B590CE04_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCES-50294/Reduce Vibration/SCES-50294_B590CE04_vibration.pnach",
+      "git_blob_sha": "2ba1f3cdaa2d6a3b43341012bc39222d88d56c51"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCES-50294/Widescreen Text/SCES-50294_B590CE04_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCES-50294/Widescreen Text/SCES-50294_B590CE04_widescreen.pnach",
+      "git_blob_sha": "1aee7fadb63415b08c20f98844882bbe72ba20f2"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCUS-97102/Access Hidden Car Classes/SCUS-97102_85AE91B3_carclass.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCUS-97102/Access Hidden Car Classes/SCUS-97102_85AE91B3_carclass.pnach",
+      "git_blob_sha": "1cbb4522de791e9f5ddf22b51af56fd654da0db5"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCUS-97102/Always Gold License Test/SCUS-97102_85AE91B3_alwaysgoldtest.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCUS-97102/Always Gold License Test/SCUS-97102_85AE91B3_alwaysgoldtest.pnach",
+      "git_blob_sha": "74a47da6fe923385dfe7dce283f13956fe813a88"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCUS-97102/Full Trigger Sensitivity/SCUS-97102_85AE91B3_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCUS-97102/Full Trigger Sensitivity/SCUS-97102_85AE91B3_triggers.pnach",
+      "git_blob_sha": "dad3dc8ef08e406300d2e21edd87fa95e924aaee"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCUS-97102/Reduce Vibration/SCUS-97102_85AE91B3_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCUS-97102/Reduce Vibration/SCUS-97102_85AE91B3_vibration.pnach",
+      "git_blob_sha": "6cd3e22eafc87e3abe77b1e3a6ddd19466b2b63a"
+    },
+    {
+      "upstream_path": "Gran Turismo 3/SCUS-97102/Widescreen Text/SCUS-97102_85AE91B3_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 3/SCUS-97102/Widescreen Text/SCUS-97102_85AE91B3_widescreen.pnach",
+      "git_blob_sha": "fe3210d07d00206a518768c4115d12d99afb51eb"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Access Special Paint Colors/SCES-51719_44A61C8F_specialpaints.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Access Special Paint Colors/SCES-51719_44A61C8F_specialpaints.pnach",
+      "git_blob_sha": "21ce80f13b60e14fbf59b554fc4cb3e904142c99"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Always Gold License Test/SCES-51719_44A61C8F_alwaysgoldtest.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Always Gold License Test/SCES-51719_44A61C8F_alwaysgoldtest.pnach",
+      "git_blob_sha": "bb4f6dce17cfcdfdd565af1cc604d18d1f585856"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Analog HUD For All Camera Views/SCES-51719_44A61C8F_replacehud.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Analog HUD For All Camera Views/SCES-51719_44A61C8F_replacehud.pnach",
+      "git_blob_sha": "46058ec1c95b486e6ada1d82b43ac76df41eab92"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Digital HUD For All Camera Views/SCES-51719_44A61C8F_replacehud.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Digital HUD For All Camera Views/SCES-51719_44A61C8F_replacehud.pnach",
+      "git_blob_sha": "cb4403e2a2b6ba7a138ab1d4d9171e87a127a006"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Disable Dynamic Race Text/SCES-51719_44A61C8F_disabletext.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Disable Dynamic Race Text/SCES-51719_44A61C8F_disabletext.pnach",
+      "git_blob_sha": "38a230a7c7ccf3299e598d48048bf313c340f62a"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Full Trigger Sensitivity/SCES-51719_44A61C8F_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Full Trigger Sensitivity/SCES-51719_44A61C8F_triggers.pnach",
+      "git_blob_sha": "0a8602e9e077bd5aa2a6d473315691359a57cd00"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/GT3 Camera Placement/SCES-51719_44A61C8F_gt3camplacement.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/GT3 Camera Placement/SCES-51719_44A61C8F_gt3camplacement.pnach",
+      "git_blob_sha": "7f7921c88f962a93ae533406720fd9eaf557cc17"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/GT5 Camera Placement/SCES-51719_44A61C8F_gt5camplacement.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/GT5 Camera Placement/SCES-51719_44A61C8F_gt5camplacement.pnach",
+      "git_blob_sha": "d0b618a4d7a303cee358dbbd21f59c844642de3b"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Reduce Vibration/SCES-51719_44A61C8F_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Reduce Vibration/SCES-51719_44A61C8F_vibration.pnach",
+      "git_blob_sha": "fa443ebeb65c0f71a7084bafb39db410414f7667"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCES-51719/Widescreen Text/SCES-51719_44A61C8F_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCES-51719/Widescreen Text/SCES-51719_44A61C8F_widescreen.pnach",
+      "git_blob_sha": "b9dc0b4813a3d0b1749c7c9238188eab3b613786"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Access Special Paint Colors/SCUS-97328_77E61C8A_specialpaints.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Access Special Paint Colors/SCUS-97328_77E61C8A_specialpaints.pnach",
+      "git_blob_sha": "dfa3a7d81a4cf456465b498680d0fe91f031f09e"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Always Gold License Test/SCUS-97328_77E61C8A_alwaysgoldtest.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Always Gold License Test/SCUS-97328_77E61C8A_alwaysgoldtest.pnach",
+      "git_blob_sha": "225d854432285f403c897bd9490608d46780c6fb"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Analog HUD For All Camera Views/SCUS-97328_77E61C8A_replacehud.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Analog HUD For All Camera Views/SCUS-97328_77E61C8A_replacehud.pnach",
+      "git_blob_sha": "c052cc576b627880d34534b6831de47e9cb35a70"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Autoboot in 480p/SCUS-97328_77E61C8A_deinterlace.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Autoboot in 480p/SCUS-97328_77E61C8A_deinterlace.pnach",
+      "git_blob_sha": "6bc5a6c47b65a68b620b257a981ed44514c0abad"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Digital HUD For All Camera Views/SCUS-97328_77E61C8A_replacehud.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Digital HUD For All Camera Views/SCUS-97328_77E61C8A_replacehud.pnach",
+      "git_blob_sha": "fc592cb6e28a6f21c295e549014fe579a3b694f2"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Disable Dynamic Race Text/SCUS-97328_77E61C8A_disabletext.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Disable Dynamic Race Text/SCUS-97328_77E61C8A_disabletext.pnach",
+      "git_blob_sha": "01afd207427508d3b38fe3666177a3a1211f2040"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Full Trigger Sensitivity/SCUS-97328_77E61C8A_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Full Trigger Sensitivity/SCUS-97328_77E61C8A_triggers.pnach",
+      "git_blob_sha": "228b99969ca37ec7c4eec35d78fc4ecd912a9e76"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/GT3 Camera Placement/SCUS-97328_77E61C8A_gt3camplacement.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/GT3 Camera Placement/SCUS-97328_77E61C8A_gt3camplacement.pnach",
+      "git_blob_sha": "7a25bb7cde9a184c95eff145fa5d73ea2582b410"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/GT5 Camera Placement/SCUS-97328_77E61C8A_gt5camplacement.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/GT5 Camera Placement/SCUS-97328_77E61C8A_gt5camplacement.pnach",
+      "git_blob_sha": "28a190383d2383eb998e42158d4850456cbcc691"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Reduce Vibration/SCUS-97328_77E61C8A_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Reduce Vibration/SCUS-97328_77E61C8A_vibration.pnach",
+      "git_blob_sha": "4c65c95a3760a2fab8f07ccc5bfa3dcb95f71f2a"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97328/Widescreen Text/SCUS-97328_77E61C8A_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97328/Widescreen Text/SCUS-97328_77E61C8A_widescreen.pnach",
+      "git_blob_sha": "50a1a5ad8ac63b8628527432e491f5a14b91254c"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Access Special Paint Colors/SCUS-97436_32A1C752_specialpaints.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Access Special Paint Colors/SCUS-97436_32A1C752_specialpaints.pnach",
+      "git_blob_sha": "23d2863b44035a77a475aedfd6737043a51e01b1"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Always Gold License Test/SCUS-97436_32A1C752_alwaysgoldtest.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Always Gold License Test/SCUS-97436_32A1C752_alwaysgoldtest.pnach",
+      "git_blob_sha": "703b798584ff8141450f1c72f465099307033275"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Analog HUD For All Camera Views/SCUS-97436_32A1C752_replacehud.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Analog HUD For All Camera Views/SCUS-97436_32A1C752_replacehud.pnach",
+      "git_blob_sha": "9045f35ace43cbb1c5c6614017bcc2df507b9be9"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Analog HUD For Roof Camera/SCUS-97436_32A1C752_restorehud.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Analog HUD For Roof Camera/SCUS-97436_32A1C752_restorehud.pnach",
+      "git_blob_sha": "a966f4bcfdc55051bddba36d5ff31cbb4be2db6d"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Digital HUD For All Camera Views/SCUS-97436_32A1C752_replacehud.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Digital HUD For All Camera Views/SCUS-97436_32A1C752_replacehud.pnach",
+      "git_blob_sha": "5182d25ce942c21bb96ed5a34d64ce88ee57dee8"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Disable Dynamic Race Text/SCUS-97436_32A1C752_disabletext.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Disable Dynamic Race Text/SCUS-97436_32A1C752_disabletext.pnach",
+      "git_blob_sha": "651e407ff5d6846b457e2df4dee724c689a81f3c"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Full Trigger Sensitivity/SCUS-97436_32A1C752_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Full Trigger Sensitivity/SCUS-97436_32A1C752_triggers.pnach",
+      "git_blob_sha": "a6d7809a92291877aafa33c49f119c288ccfc78a"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/GT3 Camera Placement/SCUS-97436_32A1C752_gt3camplacement.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/GT3 Camera Placement/SCUS-97436_32A1C752_gt3camplacement.pnach",
+      "git_blob_sha": "e547debd663d39bcd96e478e299bc8fab841ac1d"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/GT5 Camera Placement/SCUS-97436_32A1C752_gt5camplacement.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/GT5 Camera Placement/SCUS-97436_32A1C752_gt5camplacement.pnach",
+      "git_blob_sha": "326fadd543d39c21c824814f369d5766cc2672e7"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Reduce Vibration/SCUS-97436_32A1C752_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Reduce Vibration/SCUS-97436_32A1C752_vibration.pnach",
+      "git_blob_sha": "d787499139a73c9e9e31d0e64b8e3492a309f40d"
+    },
+    {
+      "upstream_path": "Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Widescreen Text/SCUS-97436_32A1C752_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo 4/SCUS-97436 (GT4 Online Public Beta)/Widescreen Text/SCUS-97436_32A1C752_widescreen.pnach",
+      "git_blob_sha": "b6230e9c12d14ba8d84a4c12bc9d3f9ca8091224"
+    },
+    {
+      "upstream_path": "Gran Turismo Concept/SCES-50858/Full Trigger Sensitivity/SCES-50858_60013EBD_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo Concept/SCES-50858/Full Trigger Sensitivity/SCES-50858_60013EBD_triggers.pnach",
+      "git_blob_sha": "2f1851f1e5e9aef8e753db03c32935a43e8ade9d"
+    },
+    {
+      "upstream_path": "Gran Turismo Concept/SCES-50858/Reduce Vibration/SCES-50858_60013EBD_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo Concept/SCES-50858/Reduce Vibration/SCES-50858_60013EBD_vibration.pnach",
+      "git_blob_sha": "bbf499a9920b485b6ea99f584e53abd4a7fa5ba1"
+    },
+    {
+      "upstream_path": "Gran Turismo Concept/SCES-50858/Widescreen Text/SCES-50858_60013EBD_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo Concept/SCES-50858/Widescreen Text/SCES-50858_60013EBD_widescreen.pnach",
+      "git_blob_sha": "c20d8e3bb95a10aebd60ce86892c0a763473423c"
+    },
+    {
+      "upstream_path": "Gran Turismo Concept/SCPS-55903/Full Trigger Sensitivity/SCPS-55903_6810C3BC_triggers.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo Concept/SCPS-55903/Full Trigger Sensitivity/SCPS-55903_6810C3BC_triggers.pnach",
+      "git_blob_sha": "e75ef8916202e6739a5184d45fce2e7c7848b1e4"
+    },
+    {
+      "upstream_path": "Gran Turismo Concept/SCPS-55903/Reduce Vibration/SCPS-55903_6810C3BC_vibration.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo Concept/SCPS-55903/Reduce Vibration/SCPS-55903_6810C3BC_vibration.pnach",
+      "git_blob_sha": "fd255d86e5e8fbdbac459871a07c5af34a96d90c"
+    },
+    {
+      "upstream_path": "Gran Turismo Concept/SCPS-55903/Widescreen Text/SCPS-55903_6810C3BC_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Gran Turismo Concept/SCPS-55903/Widescreen Text/SCPS-55903_6810C3BC_widescreen.pnach",
+      "git_blob_sha": "7ce54216a69047ea108c6a77d8f68cb88710c96c"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/LICENSE",
+      "git_blob_sha": "2029b984c7e2671a01a94e4fc6f0b9103ffc3e8e"
+    },
+    {
+      "upstream_path": "Need for Speed Hot Pursuit 2/SLUS-20362/Access All Cars/SLUS-20362_1D2818AF_allcars.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Need for Speed Hot Pursuit 2/SLUS-20362/Access All Cars/SLUS-20362_1D2818AF_allcars.pnach",
+      "git_blob_sha": "406be4c168d4726d76efe5e97e788ba8d6a40d7e"
+    },
+    {
+      "upstream_path": "Need for Speed Hot Pursuit 2/SLUS-20362/Access Interior View/SLUS-20362_1D2818AF_interior.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Need for Speed Hot Pursuit 2/SLUS-20362/Access Interior View/SLUS-20362_1D2818AF_interior.pnach",
+      "git_blob_sha": "8c596e1f36c5f5aa9c045eee469a271b429b0738"
+    },
+    {
+      "upstream_path": "Need for Speed Hot Pursuit 2/SLUS-20362/Complete All Events/SLUS-20362_1D2818AF_allevents.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Need for Speed Hot Pursuit 2/SLUS-20362/Complete All Events/SLUS-20362_1D2818AF_allevents.pnach",
+      "git_blob_sha": "77cf1092fd67a20098fc06fedf012da937997560"
+    },
+    {
+      "upstream_path": "Need for Speed Hot Pursuit 2/SLUS-20362/Wireframe Mode/SLUS-20362_1D2818AF_wireframe.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Need for Speed Hot Pursuit 2/SLUS-20362/Wireframe Mode/SLUS-20362_1D2818AF_wireframe.pnach",
+      "git_blob_sha": "3b19f502f8a24b9015fe324cdd943656a4ee5916"
+    },
+    {
+      "upstream_path": "Need for Speed ProStreet/SLUS-21658/Widescreen Fix/SLUS-21658_DD3CE71B_widescreen.pnach",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/Need for Speed ProStreet/SLUS-21658/Widescreen Fix/SLUS-21658_DD3CE71B_widescreen.pnach",
+      "git_blob_sha": "54aa8657e3c31c5edc911f6d723a8a63e8b4c20f"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/aerowidescreen-pcsx2-cheats/README.md",
+      "git_blob_sha": "02e08fd40378cc6f28bd6c494f768e5941d3710d"
+    }
+  ]
+}
