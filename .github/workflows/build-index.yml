@@ -24,6 +24,8 @@ on:
       - "sources/cookieplmonster-console-cheat-codes.json"
       - "sources/igor-misc-pcsx2-cheats.json"
       - "sources/aerowidescreen-pcsx2-cheats.json"
+      - "sources/salustlab-ps2-mods.json"
+      - "sources/kh1fm-ps2-drop-rate.json"
       - "sources/dolphin-game-cheats.json"
       - "sources/candidates.json"
       - "tools/validate.py"
@@ -51,6 +53,8 @@ on:
       - "archive/cookieplmonster-console-cheat-codes/**"
       - "archive/igor-misc-pcsx2-cheats/**"
       - "archive/aerowidescreen-pcsx2-cheats/**"
+      - "archive/salustlab-ps2-mods/**"
+      - "archive/kh1fm-ps2-drop-rate/**"
       - "archive/dolphin-game-cheats/**"
   workflow_dispatch:
   workflow_run:
@@ -371,6 +375,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform ps2 --source-record-id 'cookieplmonster-console-cheat-codes:PS2/Gran Turismo 4/Adjusted triggers sensitivity/SCUS-97328_77E61C8A_triggers.pnach' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["declared_format_hint"] == "pcsx2-pnach" and d["code_fields"] >= 1; assert d["provenance"]["source_id"] == "cookieplmonster-console-cheat-codes" and d["entries"][0]["role"] in ("section-heading", "code"); assert any("patch=1,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform ps2 --source-record-id 'salustlab-ps2-mods:mods/klonoa2/klonoa2_hard_mode/SLUS-20151_2F56CBC9.pnach' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "salustlab-ps2-mods" and d["code_fields"] >= 1 and any("patch=1,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform ps2 --source-record-id 'kh1fm-ps2-drop-rate:pnach/4x/SLPS-25198_BD3FB870.pnach' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "kh1fm-ps2-drop-rate" and d["code_fields"] >= 1 and any("patch=2,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'

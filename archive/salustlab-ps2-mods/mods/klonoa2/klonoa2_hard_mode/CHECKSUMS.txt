@@ -1,0 +1,9 @@
+SHA-256 (v1.6, 2026-08-30: post-boss cutscenes no longer play muted - the mod pauses its speed-up while the game's global audio fade runs, restoring the vanilla fade/scene sync at any rate; all play-tested)
+original ISO : 51bb8359a2d827f3259f286719947e27b76e8f1d1f502301e35f76781f49339e  Klonoa 2 - Lunatea's Veil (USA).iso
+Hard Mode ISO: 4b78cf2dc4c7f767cd6b1f78f4f8a5eb4c79f2c9dec4d85062bc5bddfd71f0cc  Klonoa 2 - Lunatea's Veil (USA) [Hard Mode].iso
+xdelta       : 5ef7bad76fe28d7c7b8461e97fb8100c98104730ae2969de5acd3b4f2bd0aa36  Klonoa2_HardMode.xdelta
+(xdelta round-trip decode reproduced the Hard Mode hash exactly)
+
+v1.5 (last previous published, for reference): ISO a2520a06a31d3f0efcfc9a5d8f802a463218cb42ab4fbdd4fbd7462f9205862b, xdelta 07bc342d4b988eb643ebe4bbf5053d0980275248bffdbf328b69d69947d73b15
+v1.3: ISO e778b9999fb2c7604f64b3d20bb06916456309be4b4f8c2aebdb4e01cc03a61c, xdelta 405102e27269257224d860cc6b1aeca9416c4935dd37ded63edc2cbc066d6e20
+v1.0: ISO 228a82f8aae4bc959293b3d87fb592cba7e72d7f0f12802f8b8a427426ccdc01, xdelta 9936cfbb8b415bc5851aaf0fec07453a0d1b0412a324972258e6dee84f2fe799

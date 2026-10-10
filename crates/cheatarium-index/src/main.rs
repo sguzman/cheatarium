@@ -796,6 +796,8 @@ fn run() -> Result<()> {
         "cookieplmonster-console-cheat-codes",
         "igor-misc-pcsx2-cheats",
         "aerowidescreen-pcsx2-cheats",
+        "salustlab-ps2-mods",
+        "kh1fm-ps2-drop-rate",
         "dolphin-game-cheats",
     ] {
         let native: SourceManifest =
@@ -806,7 +808,10 @@ fn run() -> Result<()> {
         for item in native.files {
             let original = &item.upstream_path;
             let (platform, format, title) = match manifest_id {
-                "igor-misc-pcsx2-cheats" | "aerowidescreen-pcsx2-cheats"
+                "igor-misc-pcsx2-cheats"
+                | "aerowidescreen-pcsx2-cheats"
+                | "salustlab-ps2-mods"
+                | "kh1fm-ps2-drop-rate"
                     if original.ends_with(".pnach") =>
                 {
                     ("ps2", "pcsx2-pnach", original.to_owned())

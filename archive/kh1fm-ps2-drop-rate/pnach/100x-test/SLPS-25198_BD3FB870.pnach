@@ -1,0 +1,13 @@
+gametitle=Kingdom Hearts: Final Mix (English patch) (SLPS-25198 / CRC BD3FB870)
+comment=Diagnostic only; do not use for normal play. Enable this group and the master Patches toggle, restart, and defeat ordinary enemies.
+
+[100x Enemy Item Drop Rate - Diagnostic]
+author=OpenAI Codex; tested by PreachingPython
+description=Compatibility test. Eligible enemy drops should appear en masse. Return to the 3x or 4x variant afterward.
+patch=2,EE,000FF000,word,3C0142C8
+patch=2,EE,000FF004,word,44810800
+patch=2,EE,000FF008,word,E4610000
+patch=2,EE,000FF00C,word,03E00008
+patch=2,EE,000FF010,word,00000000
+patch=2,EE,00125520,word,00000000
+patch=2,EE,00125378,word,0C03FC00

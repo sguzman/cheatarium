@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "salustlab-ps2-mods",
+  "repository": "https://github.com/SalustLab/PS2ModsSalustLab",
+  "snapshot_commit": "70284e1d9b132aeda6c699c43e84f1ec0baf1eb6",
+  "license": "MIT (Vinicius Salustiano; root LICENSE retained)",
+  "archive_prefix": "archive/salustlab-ps2-mods/",
+  "scope_note": "One original PS2 PNACH hard-mode patch for Klonoa 2 (SLUS-20151; source CRC 2F56CBC9). The native xdelta binary game-image patch is intentionally excluded.",
+  "rights_note": "Original author credits, MIT license, game-build claims, checksums and technical documentation are preserved. Cheatarium has not independently tested the patch or validated its claimed ROM identity.",
+  "native_cheat_counts": {
+    "ps2": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/salustlab-ps2-mods/LICENSE",
+      "git_blob_sha": "da3f7ab4ba4fadf6e04612a936728bf147b11464"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/salustlab-ps2-mods/README.md",
+      "git_blob_sha": "23e2c26684c80031ec31099a9585ab3c1e8d29b1"
+    },
+    {
+      "upstream_path": "mods/klonoa2/klonoa2_hard_mode/CHECKSUMS.txt",
+      "archive_path": "archive/salustlab-ps2-mods/mods/klonoa2/klonoa2_hard_mode/CHECKSUMS.txt",
+      "git_blob_sha": "c8f8f430136899ed2800b969c97b3057faa6f952"
+    },
+    {
+      "upstream_path": "mods/klonoa2/klonoa2_hard_mode/README.md",
+      "archive_path": "archive/salustlab-ps2-mods/mods/klonoa2/klonoa2_hard_mode/README.md",
+      "git_blob_sha": "75bad28e19fa8ca5f0bba662008849fb954185fc"
+    },
+    {
+      "upstream_path": "mods/klonoa2/klonoa2_hard_mode/SLUS-20151_2F56CBC9.pnach",
+      "archive_path": "archive/salustlab-ps2-mods/mods/klonoa2/klonoa2_hard_mode/SLUS-20151_2F56CBC9.pnach",
+      "git_blob_sha": "2d3c8b7ec7f12f82495048e631e8712de8b311fd"
+    },
+    {
+      "upstream_path": "mods/klonoa2/klonoa2_hard_mode/TECHNICAL.md",
+      "archive_path": "archive/salustlab-ps2-mods/mods/klonoa2/klonoa2_hard_mode/TECHNICAL.md",
+      "git_blob_sha": "ffe2ff5e55b1d264707358b0da764e743b3916b1"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+gametitle=Kingdom Hearts: Final Mix (English patch) (SLPS-25198 / CRC BD3FB870)
+comment=Enable this group and the master Patches toggle, then restart. Lucky Strike does not stack; unequip it and spend the AP elsewhere.
+
+[4x Enemy Item Drop Rate]
+author=OpenAI Codex; tested by PreachingPython
+description=Fixed 4x multiplier for ordinary enemy item rolls. Install only one multiplier variant.
+patch=2,EE,000FF000,word,3C014080
+patch=2,EE,000FF004,word,44810800
+patch=2,EE,000FF008,word,E4610000
+patch=2,EE,000FF00C,word,03E00008
+patch=2,EE,000FF010,word,00000000
+patch=2,EE,00125520,word,00000000
+patch=2,EE,00125378,word,0C03FC00

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "kh1fm-ps2-drop-rate",
+  "repository": "https://github.com/PreachingPython/kh1fm-ps2-item-drop-rate",
+  "snapshot_commit": "fe077ccded94fbd3ddce1a8778627725aa6467ba",
+  "license": "MIT (PreachingPython; root LICENSE retained)",
+  "archive_prefix": "archive/kh1fm-ps2-drop-rate/",
+  "scope_note": "Three PS2 PNACH files for Kingdom Hearts Final Mix: 3x, 4x and a diagnostic-only 100x enemy drop-rate variant. They share an upstream CRC and must not be combined.",
+  "rights_note": "Source README attributes code and documentation to OpenAI Codex and testing to PreachingPython. Original license, contributor credits and test/compatibility limitations remain attached. Cheatarium has not executed these patches or verified ROM compatibility.",
+  "native_cheat_counts": {
+    "ps2": 3
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/kh1fm-ps2-drop-rate/LICENSE",
+      "git_blob_sha": "3b6bb201ab9f8bc0916ea56af33e5d34a70e34f8"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/kh1fm-ps2-drop-rate/README.md",
+      "git_blob_sha": "eaf5656727ae05ca6aa3950c77337eab9016d872"
+    },
+    {
+      "upstream_path": "RELEASE_NOTES.md",
+      "archive_path": "archive/kh1fm-ps2-drop-rate/RELEASE_NOTES.md",
+      "git_blob_sha": "e4a6f88da30e742aba5ab1c2b722b27a6014d266"
+    },
+    {
+      "upstream_path": "TECHNICAL.md",
+      "archive_path": "archive/kh1fm-ps2-drop-rate/TECHNICAL.md",
+      "git_blob_sha": "6fa2324caacb0d4a587a81bba3a958cca4fe7179"
+    },
+    {
+      "upstream_path": "pnach/100x-test/SLPS-25198_BD3FB870.pnach",
+      "archive_path": "archive/kh1fm-ps2-drop-rate/pnach/100x-test/SLPS-25198_BD3FB870.pnach",
+      "git_blob_sha": "9a848c5b197cda0d34744e348d4a1c02411073cc"
+    },
+    {
+      "upstream_path": "pnach/3x/SLPS-25198_BD3FB870.pnach",
+      "archive_path": "archive/kh1fm-ps2-drop-rate/pnach/3x/SLPS-25198_BD3FB870.pnach",
+      "git_blob_sha": "bca3afe116bad3af9429e8793b20b5f282df7496"
+    },
+    {
+      "upstream_path": "pnach/4x/SLPS-25198_BD3FB870.pnach",
+      "archive_path": "archive/kh1fm-ps2-drop-rate/pnach/4x/SLPS-25198_BD3FB870.pnach",
+      "git_blob_sha": "66e99a9fc5320e4cea36f26e4c1538cb2a06996d"
+    }
+  ]
+}
