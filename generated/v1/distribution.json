@@ -3,10 +3,10 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 32813,
-  "game_candidate_groups": 26256,
+  "source_files": 33057,
+  "game_candidate_groups": 26500,
   "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 80527,
+  "lexical_effect_tag_matches": 80859,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -58,8 +58,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "1b430aa161d860c13553ed6c4741d15c2c021e0bb82e5519a3980a119fb6de38",
-      "size_bytes": 20980
+      "sha256": "438d5a155872baa5772ad1fb86296e70b7ef548941f65f69bb5e3a0ec15a4f3b",
+      "size_bytes": 20986
     },
     {
       "path": "colecovision.json.gz",
@@ -83,8 +83,8 @@
     },
     {
       "path": "gamecube.json.gz",
-      "sha256": "86a978498f318129a2eb575721bccb502f22e8dc63cfdc19fdccbbf77dd45c67",
-      "size_bytes": 48349
+      "sha256": "0e892d53c98b03cf90eef6bec0f6d597cbf82be9575a757dee6f8ae2ec01e140",
+      "size_bytes": 203472
     },
     {
       "path": "games/32x.json.gz",
@@ -143,8 +143,8 @@
     },
     {
       "path": "games/gamecube.json.gz",
-      "sha256": "98881828d6bf1b18843c6ff7d36d8b1a9e6fd3af5b11f3d064fcf9b3d4a02411",
-      "size_bytes": 594
+      "sha256": "b4d20a46a16a772e2d56d724b811ca896ad0438335112fae250c48bde27ebb27",
+      "size_bytes": 3390
     },
     {
       "path": "games/gb.json.gz",
@@ -293,8 +293,8 @@
     },
     {
       "path": "games/wii.json.gz",
-      "sha256": "e3fe1491e2b0ee09dd2b96416daa70cc8bbe2f5511d0bef0da6c121f24b97264",
-      "size_bytes": 1246
+      "sha256": "88170d4a44230ffeed8cac03ee088d5adc7b7a7bcaecccede4db206e778987e6",
+      "size_bytes": 1728
     },
     {
       "path": "games/wonderswan-color.json.gz",
@@ -738,8 +738,8 @@
     },
     {
       "path": "tags/gamecube.json.gz",
-      "sha256": "a070dd8e132bdbb9e754047c9db52aecdf6d61e7ee4ea017bf0bba21aa08f251",
-      "size_bytes": 609
+      "sha256": "e94fcb38ae124c8db98651c027d0650b6a601dead67b7f76ab031fa72b6d4f72",
+      "size_bytes": 3327
     },
     {
       "path": "tags/gb.json.gz",
@@ -888,8 +888,8 @@
     },
     {
       "path": "tags/wii.json.gz",
-      "sha256": "a7de4f773cedf20942929608e05353b934d3cad61ed8d1abeb19eaeeeebf0daf",
-      "size_bytes": 644
+      "sha256": "f6187cacb7f03b65e18b3a08ed8483bc04a2ae4f95fe6f3d728b768d52b32a08",
+      "size_bytes": 809
     },
     {
       "path": "tags/wonderswan-color.json.gz",
@@ -928,8 +928,8 @@
     },
     {
       "path": "wii.json.gz",
-      "sha256": "9ecede53a53c69d3e0b7c749eadfeb48fb798b7ae3a65127b4cfc4eff7ca8e6f",
-      "size_bytes": 54444
+      "sha256": "8be986678459965819f2a4bfe9e65c3ccfb02d2714abf4f735b92c6e9e1286ba",
+      "size_bytes": 68718
     },
     {
       "path": "wonderswan-color.json.gz",
