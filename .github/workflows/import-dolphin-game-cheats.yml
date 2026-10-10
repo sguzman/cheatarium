@@ -1,0 +1,49 @@
+name: Import pinned Dolphin GameCube and Wii source cheats
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-dolphin-game-cheats.yml"
+      - "tools/import_dolphin_game_cheats.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-dolphin-game-cheats-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire pinned code-bearing AR and Gecko source files
+        run: |
+          set -euo pipefail
+          python3 tools/import_dolphin_game_cheats.py
+      - name: Verify original Git blob integrity and all source inventories
+        run: |
+          set -euo pipefail
+          python3 tools/validate.py
+      - name: Commit original code-bearing files and upstream license notices
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/dolphin-game-cheats/ sources/dolphin-game-cheats.json
+          if git diff --cached --quiet; then
+            echo "Pinned Dolphin native cheat sources already archived."
+            exit 0
+          fi
+          git commit -m "data: preserve pinned Dolphin GameCube and Wii original AR/Gecko cheats"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
