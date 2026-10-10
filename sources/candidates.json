@@ -94,6 +94,19 @@
       "state": "link_only_rights_review",
       "repo_license": "not_found_in_root",
       "notes": "Reviewed pinned tree c454a953fa2294372192443d06391058ab68198a contains ten .txt files; owner states cheats are custom created but no LICENSE/COPYING/NOTICE file is present. Ask for reuse terms before ingesting."
+    },
+    {
+      "id": "pcsx2-official-patches",
+      "repo": "https://github.com/PCSX2/pcsx2_patches",
+      "platforms": [
+        "ps2"
+      ],
+      "formats": [
+        "pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned revision 9f82a4d2b8a2aaf83807421f18d5d30263ea826c has 4,710 .pnach files. README explicitly says PCSX2 maintainers distribute third-party patches but neither create nor repair them. No LICENSE/COPYING/NOTICE file found; author-specific redistribution rights unresolved. Link only; do not import payloads."
     }
   ]
 }
