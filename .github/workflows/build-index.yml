@@ -23,6 +23,7 @@ on:
       - "sources/mkwcat-gecko-codes.json"
       - "sources/cookieplmonster-console-cheat-codes.json"
       - "sources/igor-misc-pcsx2-cheats.json"
+      - "sources/aerowidescreen-pcsx2-cheats.json"
       - "sources/candidates.json"
       - "tools/validate.py"
       - "identities/**"
@@ -48,6 +49,7 @@ on:
       - "archive/mkwcat-gecko-codes/**"
       - "archive/cookieplmonster-console-cheat-codes/**"
       - "archive/igor-misc-pcsx2-cheats/**"
+      - "archive/aerowidescreen-pcsx2-cheats/**"
   workflow_dispatch:
   workflow_run:
     workflows: ["Bootstrap console cheat archive"]
@@ -352,6 +354,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- game \
             --db generated/v1 --platform ps4 --game-key 'goldhen:mc4/CUSA00002_01.00.mc4.xml' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert "Killzone Shadow Fall" in d["title_hint"] and d["total_original_sources"]==1 and d["sources"][0]["provenance"]["upstream_path"]=="mc4/CUSA00002_01.00.mc4.xml" and not d["game_identity_verified"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform ps2 --source-record-id 'aerowidescreen-pcsx2-cheats:Burnout 3 Takedown/SLUS-21050/Button Mapping/SLUS-21050_BEBF8793_buttons.pnach' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "aerowidescreen-pcsx2-cheats" and d["provenance"]["upstream_path"] == "Burnout 3 Takedown/SLUS-21050/Button Mapping/SLUS-21050_BEBF8793_buttons.pnach" and d["declared_format_hint"] == "pcsx2-pnach"; assert d["code_fields"] >= 1 and any("patch=0,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform ps2 --source-record-id 'igor-misc-pcsx2-cheats:WRC 4/Debug/SLPM-65975_C6D912FB.pnach' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "igor-misc-pcsx2-cheats" and d["code_fields"] >= 1; assert "patch=1,EE" in d["entries"][1]["code"] and not d["game_identity_verified"] and not d["cheats_activated"]'
