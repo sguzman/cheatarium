@@ -323,6 +323,19 @@
       "state": "link_only_rights_review",
       "repo_license": "No SPDX license or standalone LICENSE file located as of pinned revision",
       "notes": "Reviewed commit 8ec531942871cd4e0aaefe5eb596fb2b49e9ae92: 1,009 original repository file blobs, 568 platform-specific Markdown candidate documents across 3DS, DS, GameCube, Switch and Wii. The README says only author-created codes are included, but contains no redistribution grant. Do not bulk rehost original cheat text until author permission or an explicit license is documented."
+    },
+    {
+      "id": "chidreams-rpcs3-artemis",
+      "repo": "https://github.com/chidreams/Artemis-Patch-Collection-RPCS3",
+      "platforms": [
+        "ps3"
+      ],
+      "formats": [
+        "rpcs3-patch-yaml"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "MIT root project license; converted third-party PS3 cheat original author permissions unknown",
+      "notes": "Original README identifies source content as Aldo's PS3 cheat database converted to RPCS3 patch YAML. Converters own their transformation work but cannot unilaterally license other original code authors' rights; do not bulk rehost without file-level review."
     }
   ]
 }
