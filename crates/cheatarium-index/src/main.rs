@@ -798,6 +798,7 @@ fn run() -> Result<()> {
         "igor-misc-pcsx2-cheats",
         "aerowidescreen-pcsx2-cheats",
         "salustlab-ps2-mods",
+        "made-in-slovakia-ratchet-ps2",
         "kh1fm-ps2-drop-rate",
         "igor-txr-controller-tweaks",
         "saupernova-bt3-60fps",
@@ -855,6 +856,7 @@ fn run() -> Result<()> {
                 "igor-misc-pcsx2-cheats"
                 | "aerowidescreen-pcsx2-cheats"
                 | "salustlab-ps2-mods"
+                | "made-in-slovakia-ratchet-ps2"
                 | "kh1fm-ps2-drop-rate"
                 | "igor-txr-controller-tweaks"
                 | "saupernova-bt3-60fps"

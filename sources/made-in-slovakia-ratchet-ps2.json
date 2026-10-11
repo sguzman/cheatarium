@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "made-in-slovakia-ratchet-ps2",
+  "repository": "https://github.com/Made-in-Slovakia/rac",
+  "snapshot_commit": "d3c5c09e75f9c379280f27753668e244e38e024e",
+  "license": "MIT (Made In Slovakia; original LICENSE retained)",
+  "archive_prefix": "archive/made-in-slovakia-ratchet-ps2/",
+  "scope_note": "Six original PCSX2 PNACH cheat files for Ratchet & Clank, Going Commando and Up Your Arsenal, preserving original serial/CRC regional variants. These are author-created source patches, not game software.",
+  "rights_note": "Original author's MIT LICENSE, both READMEs, changelog and original native files retained with unmodified per-file Git blobs. The source warns that experimental patches can corrupt saves, recommends backups and indicates that PAL is the principal test target while NTSC may be untested or partially tested. Cheatarium does not activate codes or validate game compatibility.",
+  "native_cheat_counts": {
+    "ps2": 6
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/LICENSE",
+      "git_blob_sha": "e23df84d71885636497651bef208357a3a45231a"
+    },
+    {
+      "upstream_path": "PCSX2/CHANGELOG.md",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/CHANGELOG.md",
+      "git_blob_sha": "d0186771ec70ef70b6e9b630b4cd72fece2444f6"
+    },
+    {
+      "upstream_path": "PCSX2/README.md",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/README.md",
+      "git_blob_sha": "7138a5d9bbf3e47de0f7b4b7f4d2cbb10ce12d92"
+    },
+    {
+      "upstream_path": "PCSX2/cheats/SCES-50916_76F724A3.pnach",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/cheats/SCES-50916_76F724A3.pnach",
+      "git_blob_sha": "d5c854e28a47a34d62e0614bed4fe06590f7acb3"
+    },
+    {
+      "upstream_path": "PCSX2/cheats/SCES-51607_2F486E6F.pnach",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/cheats/SCES-51607_2F486E6F.pnach",
+      "git_blob_sha": "3608d699c77d4237925c63241dc6d2e3bb0ecf2d"
+    },
+    {
+      "upstream_path": "PCSX2/cheats/SCES-52456_17125698.pnach",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/cheats/SCES-52456_17125698.pnach",
+      "git_blob_sha": "fcb3f9b1f29bf234ca86663e9d2a0566d582c7f3"
+    },
+    {
+      "upstream_path": "PCSX2/cheats/SCUS-97199_CE4933D0.pnach",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/cheats/SCUS-97199_CE4933D0.pnach",
+      "git_blob_sha": "a318cf0c3a255db2d2f15473ac6eab973d4355b0"
+    },
+    {
+      "upstream_path": "PCSX2/cheats/SCUS-97268_B3A71D10.pnach",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/cheats/SCUS-97268_B3A71D10.pnach",
+      "git_blob_sha": "8c6ff47de67d94e21d3d0dbc6eecec98e89fd8f1"
+    },
+    {
+      "upstream_path": "PCSX2/cheats/SCUS-97353_45FE0CC4.pnach",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/PCSX2/cheats/SCUS-97353_45FE0CC4.pnach",
+      "git_blob_sha": "33dca749952e48a4098cebe5b07c74e97041fc1d"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/made-in-slovakia-ratchet-ps2/README.md",
+      "git_blob_sha": "4ee9b85f4b856fa44ce7434ad51b971cb1af4ab2"
+    }
+  ]
+}
