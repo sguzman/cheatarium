@@ -14,7 +14,7 @@
 
 ## Acquisition status (2026-10-10)
 
-**33,110 actual original cheat files archived**. The latest additions are 14 author-MIT PS2 controller-tweak PNACH files and one CC BY 4.0 PS2 frame-rate PNACH, following four SalustLab/PreachingPython PS2 originals, 62 AeroWidescreen PS2 files and 278 Dolphin GameCube/Wii originals. **33,076 files are searchable across 44 console bundles**; 34 original Dolphin INIs have unresolved family labels and remain safely archived. The current catalog exposes 1,258,115 code-bearing source entries; it does not assert unique effects, game compatibility or successful execution. Active priority remains acquiring further independently reusable console cheats, not UI work.
+**33,122 actual original cheat files archived**. The latest additions are twelve independently pinned native cheats: four 3DS Gateshark text files, three Wii Gecko INIs and five PS2 Sly 2 PNACH files. Earlier recent additions include 19 PS2 PNACH originals, 62 AeroWidescreen PS2 files and 278 Dolphin GameCube/Wii originals. **33,088 files are searchable across 44 console bundles**; 34 original Dolphin INIs have unresolved family labels and remain safely archived. The current catalog exposes 1,258,214 code-bearing source entries; it does not assert unique effects, game compatibility or successful execution. Active priority remains acquiring further independently reusable console cheats, not UI work.
 
 ## Platform queue
 
@@ -29,6 +29,8 @@
 - [x] Acquire and index 62 independent AeroWidescreen PS2 PNACH files retaining native region/CRC keys, authors and MIT notices.
 - [x] Acquire and index one SalustLab Klonoa 2 hard-mode PS2 PNACH and three PreachingPython Kingdom Hearts Final Mix PS2 PNACH variants (3x, 4x, diagnostic 100x), preserving original MIT notices and compatibility caveats.
 - [x] Preserve 14 original igorciz777 TXR/Kaido controller PNACH files (MIT) and Saupernova13's released Budokai Tenkaichi 3 60 FPS PNACH (CC BY 4.0); exclude WIP experiments and retain differing upstream rights notices.
+- [x] Acquire original Wii Gecko codes from e.the.real (3), 3DS Gateshark texts from four author-licensed FoxyXTN projects (4), and Sly 2 PS2 PNACH reimplementations from andshrew (5), retaining pinned source hashes and original licenses.
+- [ ] Resolve redistribution rights of the multi-author Ice Station Z CTRPF compilation before importing its code payload.
 - [ ] Expand GameCube/Wii/Wii U and other missing console source collections beyond these additional authors, and acquire independent 3DS/Switch/Vita sources where original-code reuse rights permit.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
 - [x] Archive 5,445 original GoldHEN PS4-oriented native JSON/MC4/SHN/XML files and 2,540 original Artemis PS3 NCL cheat files, retaining exact revisions, original authors and license notices.

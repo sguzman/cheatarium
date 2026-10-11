@@ -107,6 +107,19 @@
       "state": "link_only_rights_review",
       "repo_license": "not_found_in_root",
       "notes": "Reviewed pinned revision 9f82a4d2b8a2aaf83807421f18d5d30263ea826c has 4,710 .pnach files. README explicitly says PCSX2 maintainers distribute third-party patches but neither create nor repair them. No LICENSE/COPYING/NOTICE file found; author-specific redistribution rights unresolved. Link only; do not import payloads."
+    },
+    {
+      "id": "foxy-isz-multiauthor",
+      "repo": "https://github.com/FoxyXTN/ISZ-3ds-cheats-for-ctrpf-ByFoxy.",
+      "platforms": [
+        "3ds"
+      ],
+      "formats": [
+        "gateshark-text"
+      ],
+      "state": "needs_file_level_review",
+      "repo_license": "Apache-2.0 root, third-party original authorship rights unresolved",
+      "notes": "Reviewed pinned revision 0c6bbbc53907c8eb91de6027c3250b99f0bd74f5; main 0004000000199700.txt source is 553445 bytes. README explicitly credits multiple creators (Owl, Foxy, Peanut, Springtrap, Cracko, Darksiders, Megapika) and others. Do not copy until contributor rights established; root license cannot settle every source code author's rights."
     }
   ]
 }
