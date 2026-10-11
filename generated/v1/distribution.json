@@ -2,11 +2,11 @@
   "schema_version": 1,
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
-  "console_bundles": 56,
-  "source_files": 37771,
-  "game_candidate_groups": 31210,
+  "console_bundles": 58,
+  "source_files": 37904,
+  "game_candidate_groups": 31343,
   "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 87063,
+  "lexical_effect_tag_matches": 87133,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -68,8 +68,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "b1ed97486064c567a65857d8db72c42147821b066c71d015ec294a1c9fc17027",
-      "size_bytes": 26675
+      "sha256": "309aed41439c9e9f1908ce6855d5e1b119cdb08b0fd40e4d6c8d3f7f392148f0",
+      "size_bytes": 27584
     },
     {
       "path": "chailove.json.gz",
@@ -287,6 +287,11 @@
       "size_bytes": 118884
     },
     {
+      "path": "games/ps5.json.gz",
+      "sha256": "698c97e1ffc642a07a31184882ea9b42878afda7a3188361c5d951b893241369",
+      "size_bytes": 1785
+    },
+    {
       "path": "games/psp.json.gz",
       "sha256": "0efedd59b7c0d5524db0413cc8ee02186936c2a157ed9c0b8dc23472e2b92797",
       "size_bytes": 90670
@@ -355,6 +360,11 @@
       "path": "games/virtual-boy.json.gz",
       "sha256": "136bb664ee62b181b21c88848fa58aa236e6a6f75ce111fa740e003864798a3a",
       "size_bytes": 641
+    },
+    {
+      "path": "games/vita.json.gz",
+      "sha256": "ea733868b85ee2c50ed39ca78add15f65c1dd5567e623d280edf85bf9d23c202",
+      "size_bytes": 1050
     },
     {
       "path": "games/wii-u.json.gz",
@@ -500,6 +510,11 @@
       "path": "ps4.json.gz",
       "sha256": "2159b231f451a1d3579f950733e6fa64635e10a90ce408032baef1d63e79db0a",
       "size_bytes": 7662619
+    },
+    {
+      "path": "ps5.json.gz",
+      "sha256": "5cba040f4bf790488ef133cf4f4491a3a1a9ff9a8fc005c0cbb4169a7d9e45f4",
+      "size_bytes": 145522
     },
     {
       "path": "psp.json.gz",
@@ -692,6 +707,11 @@
       "size_bytes": 142
     },
     {
+      "path": "repeats/ps5.json.gz",
+      "sha256": "5eff23111a7719c53847516bdbfd9cea70aadee8bc9c6a0b1bbb6c691cf1fdcc",
+      "size_bytes": 143
+    },
+    {
       "path": "repeats/psp.json.gz",
       "sha256": "9008bf99ee1598139aa72214d824a8e1a7582aeaf01db3e519c34fcfd570e872",
       "size_bytes": 634
@@ -760,6 +780,11 @@
       "path": "repeats/virtual-boy.json.gz",
       "sha256": "42a941314175d2a0ce4aacac65979aae2184a77e58c0cce64832a17638a7b3d4",
       "size_bytes": 146
+    },
+    {
+      "path": "repeats/vita.json.gz",
+      "sha256": "f985b4d68239985c54fdb7fe9e823fa09668730c82fcd580e2266a6a2dba6969",
+      "size_bytes": 142
     },
     {
       "path": "repeats/wii-u.json.gz",
@@ -1022,6 +1047,11 @@
       "size_bytes": 52543
     },
     {
+      "path": "tags/ps5.json.gz",
+      "sha256": "b231c9f358d2fdf2ef2b0f4847ab5face94b610907609838193f5e65168d5915",
+      "size_bytes": 1032
+    },
+    {
       "path": "tags/psp.json.gz",
       "sha256": "9123ef287e996f3fb412aa98b79f05d26591ff3a87a8152a0dfc1e649f1b09be",
       "size_bytes": 85179
@@ -1092,6 +1122,11 @@
       "size_bytes": 562
     },
     {
+      "path": "tags/vita.json.gz",
+      "sha256": "97422fe1db110e3b04d6f35a565e4f0993d1a983d6fb6aaca81338c3a51d5f73",
+      "size_bytes": 173
+    },
+    {
       "path": "tags/wii-u.json.gz",
       "sha256": "fc834cbeae983b774b2e4335c73b04f781ce05071bee46e46da8e34829a290c7",
       "size_bytes": 174
@@ -1150,6 +1185,11 @@
       "path": "virtual-boy.json.gz",
       "sha256": "7afdbe874800c72cad0c3a337c299f64ef453b3721f1cb6959b1ccc83a23de47",
       "size_bytes": 1858
+    },
+    {
+      "path": "vita.json.gz",
+      "sha256": "f75b4a11eb967254304ba34848059cb6e842e264c41dd77df08d82d55a633371",
+      "size_bytes": 14587
     },
     {
       "path": "wii-u.json.gz",

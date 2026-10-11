@@ -1105,16 +1105,24 @@ fn run() -> Result<()> {
                         original.trim_start_matches("GC/").to_owned(),
                     )
                 }
-                "rincheat-vita" if original.starts_with("cheats_db/") && original.ends_with(".txt") => (
-                    "vita",
-                    "vita-rincheat-memory",
-                    original.trim_start_matches("cheats_db/").to_owned(),
-                ),
-                "rincheat-vita" if original.starts_with("SE_cheats_db/") && original.ends_with(".lua") => (
-                    "vita",
-                    "vita-rincheat-save-lua",
-                    original.trim_start_matches("SE_cheats_db/").to_owned(),
-                ),
+                "rincheat-vita"
+                    if original.starts_with("cheats_db/") && original.ends_with(".txt") =>
+                {
+                    (
+                        "vita",
+                        "vita-rincheat-memory",
+                        original.trim_start_matches("cheats_db/").to_owned(),
+                    )
+                }
+                "rincheat-vita"
+                    if original.starts_with("SE_cheats_db/") && original.ends_with(".lua") =>
+                {
+                    (
+                        "vita",
+                        "vita-rincheat-save-lua",
+                        original.trim_start_matches("SE_cheats_db/").to_owned(),
+                    )
+                }
                 "artemis-ps3"
                     if original.starts_with("docs/codes/") && original.ends_with(".ncl") =>
                 {
@@ -1130,19 +1138,30 @@ fn run() -> Result<()> {
                 "etahen-ps5" if original.starts_with("json/") && original.ends_with(".json") => (
                     "ps5",
                     "goldhen-json",
-                    original.trim_start_matches("json/").trim_end_matches(".json").to_owned(),
+                    original
+                        .trim_start_matches("json/")
+                        .trim_end_matches(".json")
+                        .to_owned(),
                 ),
                 "etahen-ps5" if original.starts_with("shn/") && original.ends_with(".shn") => (
                     "ps5",
                     "goldhen-shn",
                     original.trim_start_matches("shn/").to_owned(),
                 ),
-                "etahen-ps5" if original.ends_with(".mc4")
-                    && (original.starts_with("shn/") || original.starts_with("mc4/")) => (
-                    "ps5",
-                    "goldhen-mc4",
-                    original.split_once('/').map(|(_, p)| p).unwrap_or(original).to_owned(),
-                ),
+                "etahen-ps5"
+                    if original.ends_with(".mc4")
+                        && (original.starts_with("shn/") || original.starts_with("mc4/")) =>
+                {
+                    (
+                        "ps5",
+                        "goldhen-mc4",
+                        original
+                            .split_once('/')
+                            .map(|(_, p)| p)
+                            .unwrap_or(original)
+                            .to_owned(),
+                    )
+                }
                 "goldhen" if original.starts_with("json/") && original.ends_with(".json") => (
                     "ps4",
                     "goldhen-json",
