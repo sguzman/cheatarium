@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "wii-tetris-party-gecko",
+  "repository": "https://github.com/Wii-Patches/Tetris-Party-Patch",
+  "snapshot_commit": "0630e78e9e4f81e220049e111e2f63720857edb8",
+  "license": "MIT (quatric; original LICENSE retained)",
+  "archive_prefix": "archive/wii-tetris-party-gecko/",
+  "scope_note": "Three original Wii Gecko GameCube-controller patches for Tetris Party Deluxe and Japan's Tetris Party Premium, with original disc-ID regional INI paths.",
+  "rights_note": "Original quatric MIT LICENSE and README retained; upstream test status is not independent verification by Cheatarium. Original source revision and per-file Git blob hashes pinned.",
+  "native_cheat_counts": {
+    "wii": 3
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/wii-tetris-party-gecko/LICENSE",
+      "git_blob_sha": "0b736ad79a276ceafe490d58bba9fa788805a5fa"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/wii-tetris-party-gecko/README.md",
+      "git_blob_sha": "95949849ce3bc2d07db69461b3c56978017b7120"
+    },
+    {
+      "upstream_path": "codes/STEETR.ini",
+      "archive_path": "archive/wii-tetris-party-gecko/codes/STEETR.ini",
+      "git_blob_sha": "af88a34c8ddc8eb88aa04741bb812cc8445335f3"
+    },
+    {
+      "upstream_path": "codes/STEJ18.ini",
+      "archive_path": "archive/wii-tetris-party-gecko/codes/STEJ18.ini",
+      "git_blob_sha": "ab3bb4518c71f76f055d56265eba9d172790b6a9"
+    },
+    {
+      "upstream_path": "codes/STEPTR.ini",
+      "archive_path": "archive/wii-tetris-party-gecko/codes/STEPTR.ini",
+      "git_blob_sha": "bc3f836c4862bfeb98a69ea2a739668ad1d40876"
+    }
+  ]
+}

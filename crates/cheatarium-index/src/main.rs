@@ -793,6 +793,7 @@ fn run() -> Result<()> {
         "goldhen",
         "admentus-enhancement-codes",
         "mkwcat-gecko-codes",
+        "shrub-kar-gecko",
         "cookieplmonster-console-cheat-codes",
         "igor-misc-pcsx2-cheats",
         "aerowidescreen-pcsx2-cheats",
@@ -818,6 +819,9 @@ fn run() -> Result<()> {
         "wii-okami-controller",
         "wii-robinsons-controller",
         "wii-punchout-controller",
+        "wii-tetris-party-gecko",
+        "wii-sonic-secret-rings-gecko",
+        "wii-mario-galaxy-gecko",
         "xan1242-nfsu-ps2",
         "dolphin-game-cheats",
     ] {
@@ -857,6 +861,9 @@ fn run() -> Result<()> {
                 | "wii-okami-controller"
                 | "wii-robinsons-controller"
                 | "wii-punchout-controller"
+                | "wii-tetris-party-gecko"
+                | "wii-sonic-secret-rings-gecko"
+                | "wii-mario-galaxy-gecko"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
                 {
                     let disc = original
@@ -1009,6 +1016,13 @@ fn run() -> Result<()> {
                         "wii"
                     };
                     (platform, "dolphin-ini", original.to_owned())
+                }
+                "shrub-kar-gecko"
+                    if original.starts_with("codes/") && original.ends_with(".md") =>
+                {
+                    // Nine original Kirby Air Ride Gecko Markdown documents.
+                    // Source README labels US and possible PAL; none independently verified.
+                    ("gamecube", "gecko-markdown", original.to_owned())
                 }
                 "mkwcat-gecko-codes"
                     if original.ends_with(".md")

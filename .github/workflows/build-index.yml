@@ -21,6 +21,7 @@ on:
       - "sources/artemis-ps3.json"
       - "sources/admentus-enhancement-codes.json"
       - "sources/mkwcat-gecko-codes.json"
+      - "sources/shrub-kar-gecko.json"
       - "sources/cookieplmonster-console-cheat-codes.json"
       - "sources/igor-misc-pcsx2-cheats.json"
       - "sources/aerowidescreen-pcsx2-cheats.json"
@@ -46,6 +47,9 @@ on:
       - "sources/wii-okami-controller.json"
       - "sources/wii-robinsons-controller.json"
       - "sources/wii-punchout-controller.json"
+      - "sources/wii-tetris-party-gecko.json"
+      - "sources/wii-sonic-secret-rings-gecko.json"
+      - "sources/wii-mario-galaxy-gecko.json"
       - "sources/xan1242-nfsu-ps2.json"
       - "sources/dolphin-game-cheats.json"
       - "sources/candidates.json"
@@ -71,6 +75,7 @@ on:
       - "archive/artemis-ps3/**"
       - "archive/admentus-enhancement-codes/**"
       - "archive/mkwcat-gecko-codes/**"
+      - "archive/shrub-kar-gecko/**"
       - "archive/cookieplmonster-console-cheat-codes/**"
       - "archive/igor-misc-pcsx2-cheats/**"
       - "archive/aerowidescreen-pcsx2-cheats/**"
@@ -96,6 +101,9 @@ on:
       - "archive/wii-okami-controller/**"
       - "archive/wii-robinsons-controller/**"
       - "archive/wii-punchout-controller/**"
+      - "archive/wii-tetris-party-gecko/**"
+      - "archive/wii-sonic-secret-rings-gecko/**"
+      - "archive/wii-mario-galaxy-gecko/**"
       - "archive/xan1242-nfsu-ps2/**"
       - "archive/dolphin-game-cheats/**"
   workflow_dispatch:
@@ -471,6 +479,18 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform wii --source-record-id 'wii-punchout-controller:codes/R7PE01.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-punchout-controller" and d["provenance"]["upstream_path"] == "codes/R7PE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform gamecube --source-record-id 'shrub-kar-gecko:codes/random_size.md' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "gamecube" and d["provenance"]["source_id"] == "shrub-kar-gecko" and d["provenance"]["upstream_path"] == "codes/random_size.md" and d["declared_format_hint"] == "gecko-markdown"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-tetris-party-gecko:codes/STEETR.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-tetris-party-gecko" and d["provenance"]["upstream_path"] == "codes/STEETR.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-sonic-secret-rings-gecko:codes/RSRE01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-sonic-secret-rings-gecko" and d["provenance"]["upstream_path"] == "codes/RSRE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-mario-galaxy-gecko:codes/RMGE01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-mario-galaxy-gecko" and d["provenance"]["upstream_path"] == "codes/RMGE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'
