@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "id": "etahen-ps5",
+  "repository": "https://github.com/etaHEN/PS5_Cheats",
+  "snapshot_commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+  "license": "GPL-3.0-only (repository notice; third-party cheat creator rights separately reserved)",
+  "archive_prefix": "archive/etahen-ps5/",
+  "scope": "Entire source-native PPSA PS5 cheat subset from etaHEN's json, shn and mc4 folders; original execution not verified",
+  "rights_note": "The original etaHEN GPL-3.0 license, code-author/PS4Trainer credits, format lists and README are preserved. Repository-wide licensing does not prove ownership of all earlier cheats.",
+  "native_format_counts": {
+    "json": 15,
+    "shn": 31,
+    "mc4": 29
+  },
+  "source_ps5_title_ids": 56,
+  "source_cheat_files": 75,
+  "files": [
+    {
+      "upstream_path": ".github/README.md",
+      "archive_path": "archive/etahen-ps5/.github/README.md",
+      "git_blob_sha": "d9effc23a8a3e9278ec70b6726cdbe01e30e7cd4"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/etahen-ps5/LICENSE",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "upstream_path": "json.txt",
+      "archive_path": "archive/etahen-ps5/json.txt",
+      "git_blob_sha": "4f56ec6031e2f33fee0992a091960a9fc1f53cb0"
+    },
+    {
+      "upstream_path": "json/PPSA01628_1.026.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA01628_1.026.000.json",
+      "git_blob_sha": "fd9c52007fe21af85fe890d36a4ce324d8b1217d"
+    },
+    {
+      "upstream_path": "json/PPSA03352_01.029.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA03352_01.029.000.json",
+      "git_blob_sha": "5fae60b7f05668e8244cb9ce567c5af05f22103a"
+    },
+    {
+      "upstream_path": "json/PPSA03397_01.001.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA03397_01.001.000.json",
+      "git_blob_sha": "d82cc2b41a4be752017c4e2c55f36a490e1324c1"
+    },
+    {
+      "upstream_path": "json/PPSA05059_01.000.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA05059_01.000.000.json",
+      "git_blob_sha": "a5a578d5f1a4d27964ba95127a53573b7ef71536"
+    },
+    {
+      "upstream_path": "json/PPSA08135_01.000.008.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA08135_01.000.008.json",
+      "git_blob_sha": "415c5370d04891507be72faecde399a8d8e5542e"
+    },
+    {
+      "upstream_path": "json/PPSA08237_01.000.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA08237_01.000.000.json",
+      "git_blob_sha": "1aa5046fdb42ccac8bdfba9bbac4298a705e51ff"
+    },
+    {
+      "upstream_path": "json/PPSA08710_01.005.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA08710_01.005.000.json",
+      "git_blob_sha": "0b3e5ac5577f781687608f31fa26c415ed95d711"
+    },
+    {
+      "upstream_path": "json/PPSA09663_01.000.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA09663_01.000.000.json",
+      "git_blob_sha": "4d9eb1100c10f3d932b5f1b43721839243fc6784"
+    },
+    {
+      "upstream_path": "json/PPSA09911_01.000.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA09911_01.000.000.json",
+      "git_blob_sha": "d0a1d2394d8a2c7ce99e53eebef48921f3c791e8"
+    },
+    {
+      "upstream_path": "json/PPSA10662_01.001.030.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA10662_01.001.030.json",
+      "git_blob_sha": "e2999443dbaaa14cc3c90471d98eedf4ac62ce8a"
+    },
+    {
+      "upstream_path": "json/PPSA10965_01.007.004.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA10965_01.007.004.json",
+      "git_blob_sha": "24630a6b2d8be374d71efe76bb6dbdbf51ea643c"
+    },
+    {
+      "upstream_path": "json/PPSA14275_01.001.004.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA14275_01.001.004.json",
+      "git_blob_sha": "fcff64d1f148feefcab0137efbf2d12d1bec71d6"
+    },
+    {
+      "upstream_path": "json/PPSA14632_01.000.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA14632_01.000.000.json",
+      "git_blob_sha": "be955f8cc38fb4406d5082aacf10496e12c51574"
+    },
+    {
+      "upstream_path": "json/PPSA21564_01.007.000.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA21564_01.007.000.json",
+      "git_blob_sha": "e7bc39998e72fed5d080038dc489dff57e52b511"
+    },
+    {
+      "upstream_path": "json/PPSA23226_01.000.010.json",
+      "archive_path": "archive/etahen-ps5/json/PPSA23226_01.000.010.json",
+      "git_blob_sha": "b50e1a11f4801d34817f73dad32c42e38ec364e8"
+    },
+    {
+      "upstream_path": "mc4.txt",
+      "archive_path": "archive/etahen-ps5/mc4.txt",
+      "git_blob_sha": "1c32a1745ab493f0eff1e815fef54e47529c99e2"
+    },
+    {
+      "upstream_path": "mc4/PPSA01285_03.000.004.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA01285_03.000.004.mc4",
+      "git_blob_sha": "440957213f9dcd3655d20ab0695386d2ad5db6ba"
+    },
+    {
+      "upstream_path": "mc4/PPSA01342_01.004.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA01342_01.004.000.mc4",
+      "git_blob_sha": "c51d17b229f50d92e3132d0b8e72a1c589b9c8d9"
+    },
+    {
+      "upstream_path": "mc4/PPSA02225_02.024.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA02225_02.024.000.mc4",
+      "git_blob_sha": "b588a8c52a007cb1662627c6c9f179eab1e5ba7e"
+    },
+    {
+      "upstream_path": "mc4/PPSA02372_01.005.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA02372_01.005.000.mc4",
+      "git_blob_sha": "7f690036b0a59c3121f7648b6c17ab6066f7011a"
+    },
+    {
+      "upstream_path": "mc4/PPSA02474_01.000.500.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA02474_01.000.500.mc4",
+      "git_blob_sha": "2a19de9f1e06151313a8cccf704508be644b45bb"
+    },
+    {
+      "upstream_path": "mc4/PPSA02632_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA02632_01.000.000.mc4",
+      "git_blob_sha": "9bd2a51051686b20a085aa56dbd9b3a3c995028a"
+    },
+    {
+      "upstream_path": "mc4/PPSA02633_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA02633_01.000.000.mc4",
+      "git_blob_sha": "396d1007f5f8641b19158527583485df799318d6"
+    },
+    {
+      "upstream_path": "mc4/PPSA02663_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA02663_01.000.000.mc4",
+      "git_blob_sha": "b9bc3888088258c89a1c2b909cd2474a314d7f81"
+    },
+    {
+      "upstream_path": "mc4/PPSA02868_01.000.008.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA02868_01.000.008.mc4",
+      "git_blob_sha": "bbcebabcaf57f2bccf5e0648eef286e196e6edd2"
+    },
+    {
+      "upstream_path": "mc4/PPSA03351_01.029.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA03351_01.029.000.mc4",
+      "git_blob_sha": "8926518520258512e82ba16343036a46e253d6b4"
+    },
+    {
+      "upstream_path": "mc4/PPSA03393_01.040.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA03393_01.040.000.mc4",
+      "git_blob_sha": "edb679d82b158fd66eee36fbe09b512d56bfdc19"
+    },
+    {
+      "upstream_path": "mc4/PPSA03396_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA03396_01.000.000.mc4",
+      "git_blob_sha": "4aa87cf397d3c7f451daa219eae4ea9cd6e6c965"
+    },
+    {
+      "upstream_path": "mc4/PPSA03396_01.003.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA03396_01.003.000.mc4",
+      "git_blob_sha": "c9d253b56df69b3709b4bac31a419fb9b623f901"
+    },
+    {
+      "upstream_path": "mc4/PPSA03490_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA03490_01.000.000.mc4",
+      "git_blob_sha": "ee52cd4911c6798d3313ccb928843d390344d8a4"
+    },
+    {
+      "upstream_path": "mc4/PPSA03845_01.000.006.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA03845_01.000.006.mc4",
+      "git_blob_sha": "b6adb8673383b0a9565ca4a7b14d0913c721c79d"
+    },
+    {
+      "upstream_path": "mc4/PPSA03952_01.000.004.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA03952_01.000.004.mc4",
+      "git_blob_sha": "23cf223f431fa15dc262662dd56913d4d2094ab1"
+    },
+    {
+      "upstream_path": "mc4/PPSA04288_01.000.003.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA04288_01.000.003.mc4",
+      "git_blob_sha": "bde4fd8c3db06dcac9566cb9e0a9784a65d0cc80"
+    },
+    {
+      "upstream_path": "mc4/PPSA05059_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA05059_01.000.000.mc4",
+      "git_blob_sha": "9aafabb264f707dee1909d7f515a2504a94dcc6d"
+    },
+    {
+      "upstream_path": "mc4/PPSA05060_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA05060_01.000.000.mc4",
+      "git_blob_sha": "8c26a280522504856c1771a25d8f9190e57d2362"
+    },
+    {
+      "upstream_path": "mc4/PPSA05389_01.002.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA05389_01.002.000.mc4",
+      "git_blob_sha": "7c8042619b86aa3638aa57da52d7b257f1c5b08b"
+    },
+    {
+      "upstream_path": "mc4/PPSA06693_01.000.037.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA06693_01.000.037.mc4",
+      "git_blob_sha": "5a807da3c5ff5d56ca0202cbfc63f2d103f94c36"
+    },
+    {
+      "upstream_path": "mc4/PPSA07274_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA07274_01.000.000.mc4",
+      "git_blob_sha": "1adcccff8fb7fc3217ff8a2bc6cc295e542697c4"
+    },
+    {
+      "upstream_path": "mc4/PPSA07275_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA07275_01.000.000.mc4",
+      "git_blob_sha": "74cc4d8da154e81960a40ad774b8fae2fd447783"
+    },
+    {
+      "upstream_path": "mc4/PPSA08083_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA08083_01.000.000.mc4",
+      "git_blob_sha": "026a84cd781a4af1c90505c5481468d2761e7f17"
+    },
+    {
+      "upstream_path": "mc4/PPSA08772_01.027.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA08772_01.027.000.mc4",
+      "git_blob_sha": "33788bc48993cbfefbc107cf2c02d21732a32d76"
+    },
+    {
+      "upstream_path": "mc4/PPSA10261_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA10261_01.000.000.mc4",
+      "git_blob_sha": "7174e554bf1c5c9a4e7bcd051d8102d1278a9d28"
+    },
+    {
+      "upstream_path": "mc4/PPSA10662_01.001.030.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA10662_01.001.030.mc4",
+      "git_blob_sha": "c708f275db9a1c35c3d60ba9807700cf4e3ae2f3"
+    },
+    {
+      "upstream_path": "mc4/PPSA10695_01.014.400.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA10695_01.014.400.mc4",
+      "git_blob_sha": "a8b5fdc2aca5ffb2f4449ddf9aec2a4085f3cf73"
+    },
+    {
+      "upstream_path": "mc4/PPSA21564_01.007.000.mc4",
+      "archive_path": "archive/etahen-ps5/mc4/PPSA21564_01.007.000.mc4",
+      "git_blob_sha": "79456916014a11bc9ef663a93d6bd62b17214ad3"
+    },
+    {
+      "upstream_path": "shn.txt",
+      "archive_path": "archive/etahen-ps5/shn.txt",
+      "git_blob_sha": "e46f644af04f7301627b31f59365497bb0548d54"
+    },
+    {
+      "upstream_path": "shn/PPSA01341_01.004.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01341_01.004.000.shn",
+      "git_blob_sha": "fb168f9b64bce37beba4a7778a05dac3c0345567"
+    },
+    {
+      "upstream_path": "shn/PPSA01342_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01342_01.000.000.shn",
+      "git_blob_sha": "ea6f6a99889b70c02c7713609e10b85be52b788e"
+    },
+    {
+      "upstream_path": "shn/PPSA01342_01.004.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01342_01.004.000.shn",
+      "git_blob_sha": "a8a9ca91a1f54927e7f2dc24fef642f1ca3819d0"
+    },
+    {
+      "upstream_path": "shn/PPSA01473_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01473_01.000.000.shn",
+      "git_blob_sha": "b84f53dcd203cdbd7d4501fc5c79be90a25f757e"
+    },
+    {
+      "upstream_path": "shn/PPSA01473_01.004.001.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01473_01.004.001.shn",
+      "git_blob_sha": "a62495cb0257174810a5e1cacb09c2ca9297b3c5"
+    },
+    {
+      "upstream_path": "shn/PPSA01556_01.001.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01556_01.001.000.shn",
+      "git_blob_sha": "ead92be2fa632a730e168a77da5ffeea87e91b43"
+    },
+    {
+      "upstream_path": "shn/PPSA01619_01.000.004.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01619_01.000.004.shn",
+      "git_blob_sha": "1f1fec366e900d5e31a37dce64d6b8d1b8ca742e"
+    },
+    {
+      "upstream_path": "shn/PPSA01861_01.000.010.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01861_01.000.010.shn",
+      "git_blob_sha": "6e1759c6d24a776e017e7f82fe0ea34a8d574d22"
+    },
+    {
+      "upstream_path": "shn/PPSA01925_01.000.003.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA01925_01.000.003.shn",
+      "git_blob_sha": "8f6e0b9ee66460791f88263d15a8eaed86842f91"
+    },
+    {
+      "upstream_path": "shn/PPSA02745_01.000.004.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA02745_01.000.004.shn",
+      "git_blob_sha": "29eec69f3f462891d57412f52838421d466dd16f"
+    },
+    {
+      "upstream_path": "shn/PPSA03396_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA03396_01.000.000.shn",
+      "git_blob_sha": "e3888fa0d532cbe4dab03cf39e9bbc339beb9c07"
+    },
+    {
+      "upstream_path": "shn/PPSA03845_01.000.004.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA03845_01.000.004.shn",
+      "git_blob_sha": "b600f1f6bc7b5ce1a0e93fc408e1c6f18f0c2bf2"
+    },
+    {
+      "upstream_path": "shn/PPSA03952_01.000.004.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA03952_01.000.004.shn",
+      "git_blob_sha": "6c5aa1962bb13b454029216faec57919882072aa"
+    },
+    {
+      "upstream_path": "shn/PPSA03977_04.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA03977_04.000.000.shn",
+      "git_blob_sha": "b8324c0cbd2ca63f7c67d6a57f96553e430e9a3f"
+    },
+    {
+      "upstream_path": "shn/PPSA04288_01.000.003.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA04288_01.000.003.shn",
+      "git_blob_sha": "4475e0a1b4d174fccbb905437d0fa79f9c0e6201"
+    },
+    {
+      "upstream_path": "shn/PPSA05366_01.005.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA05366_01.005.000.shn",
+      "git_blob_sha": "7ce8767f053941b8ba461b4f6fe1f95f95a9b7f9"
+    },
+    {
+      "upstream_path": "shn/PPSA05684_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA05684_01.000.000.shn",
+      "git_blob_sha": "8475454974a66c6f302d3dd2b05f4d9f238664bf"
+    },
+    {
+      "upstream_path": "shn/PPSA05684_01.000.000_1.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA05684_01.000.000_1.shn",
+      "git_blob_sha": "8475454974a66c6f302d3dd2b05f4d9f238664bf"
+    },
+    {
+      "upstream_path": "shn/PPSA05684_01.000.000_2.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA05684_01.000.000_2.shn",
+      "git_blob_sha": "54d78c1167d34d3d708aac77abdb9f5bcc590b6e"
+    },
+    {
+      "upstream_path": "shn/PPSA07411_01.100.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA07411_01.100.000.shn",
+      "git_blob_sha": "1658abe4ed42778e2006f731727083a4decb435b"
+    },
+    {
+      "upstream_path": "shn/PPSA07412_01.000.000.mc4",
+      "archive_path": "archive/etahen-ps5/shn/PPSA07412_01.000.000.mc4",
+      "git_blob_sha": "f5809bb0a6fd250cf069ac9b91970f97c0812cc7"
+    },
+    {
+      "upstream_path": "shn/PPSA07412_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA07412_01.000.000.shn",
+      "git_blob_sha": "7c6c1420bf6b7be10a7920e22d18c4ce9f832b00"
+    },
+    {
+      "upstream_path": "shn/PPSA07576_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA07576_01.000.000.shn",
+      "git_blob_sha": "562fcc199340e9fd2097ba8660153f2ecf02cb29"
+    },
+    {
+      "upstream_path": "shn/PPSA08666_01.040.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA08666_01.040.000.shn",
+      "git_blob_sha": "776a8ec8fcb6260be1582ff9d83a2e184510c0ff"
+    },
+    {
+      "upstream_path": "shn/PPSA08710_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA08710_01.000.000.shn",
+      "git_blob_sha": "3a27227cb747b94d194aa09230252667eac85204"
+    },
+    {
+      "upstream_path": "shn/PPSA09663_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA09663_01.000.000.shn",
+      "git_blob_sha": "cdd54f371969893d243aa9e49f9a14de304d6193"
+    },
+    {
+      "upstream_path": "shn/PPSA10261_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA10261_01.000.000.shn",
+      "git_blob_sha": "5869a90276f761bedbc74e29ed32a5b80092aa4f"
+    },
+    {
+      "upstream_path": "shn/PPSA13195_01.014.001.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA13195_01.014.001.shn",
+      "git_blob_sha": "73260ee7ba7dde2ee5c81f93802867e02a7fac69"
+    },
+    {
+      "upstream_path": "shn/PPSA15210_01.000.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA15210_01.000.000.shn",
+      "git_blob_sha": "87baf25c5e343025f4ca3171c0a1da8ca6b4b4fa"
+    },
+    {
+      "upstream_path": "shn/PPSA21564_01.007.000.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA21564_01.007.000.shn",
+      "git_blob_sha": "a456b88fa6c4432d611cbafea43eef92442fec45"
+    },
+    {
+      "upstream_path": "shn/PPSA23226_01.000.010.shn",
+      "archive_path": "archive/etahen-ps5/shn/PPSA23226_01.000.010.shn",
+      "git_blob_sha": "7e905159e34d5e4ff6803a3f7f63fa0b0296b7b1"
+    }
+  ]
+}
