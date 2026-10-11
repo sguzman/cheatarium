@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "cracko-mc3ds-spawn-cap",
+  "repository": "https://github.com/Cracko298/MC3DS-Remove-SpawnLimit",
+  "snapshot_commit": "506f3599f0f7efd5d1233a520eeee12e58b7a07d",
+  "license": "Apache-2.0 (original upstream LICENSE and README retained)",
+  "archive_prefix": "archive/cracko-mc3ds-spawn-cap/",
+  "scope_note": "Three source-original Nintendo 3DS Minecraft CTRPF files with region-specific title IDs; all three text payloads are byte-identical.",
+  "rights_note": "The original code text attributes creation to Cracko298 and labels version 1.2. Keep three native files for regional provenance, but do not present them as three distinct effects. Source project Apache-2.0 retained. Actual removal of entity caps, region/build support and stability are unverified.",
+  "native_cheat_counts": {
+    "3ds": 3
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/cracko-mc3ds-spawn-cap/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/cracko-mc3ds-spawn-cap/README.md",
+      "git_blob_sha": "8836743b96aa418beb3fd9f294badd2d4ce89979"
+    },
+    {
+      "upstream_path": "000400000017CA00.txt",
+      "archive_path": "archive/cracko-mc3ds-spawn-cap/000400000017CA00.txt",
+      "git_blob_sha": "8f3d017d44870933415c01dfa845ed13be69fc7f"
+    },
+    {
+      "upstream_path": "000400000017FD00.txt",
+      "archive_path": "archive/cracko-mc3ds-spawn-cap/000400000017FD00.txt",
+      "git_blob_sha": "8f3d017d44870933415c01dfa845ed13be69fc7f"
+    },
+    {
+      "upstream_path": "00040000001B8700.txt",
+      "archive_path": "archive/cracko-mc3ds-spawn-cap/00040000001B8700.txt",
+      "git_blob_sha": "8f3d017d44870933415c01dfa845ed13be69fc7f"
+    }
+  ]
+}

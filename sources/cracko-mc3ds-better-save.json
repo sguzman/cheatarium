@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "cracko-mc3ds-better-save",
+  "repository": "https://github.com/Cracko298/MC3DS-BetterSaveSystem",
+  "snapshot_commit": "ce2ab7441464b73dd6324a08aecd16da82675c3b",
+  "license": "Apache-2.0 (original upstream LICENSE and README retained)",
+  "archive_prefix": "archive/cracko-mc3ds-better-save/",
+  "scope_note": "One author-published Nintendo 3DS Minecraft CTRPF save-control code native to title ID 00040000001B8700.",
+  "rights_note": "README describes new saving option. Source text labels ZR+ZL, and Apache-2.0 LICENSE credits Cracko298 (Phinehas Charles Beresford) for 2025. Unexpected save-state mutation or save corruption is possible; source activation and game build are not independently tested.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/cracko-mc3ds-better-save/LICENSE",
+      "git_blob_sha": "677fee0e9a1258f8302c5955a737c383da1f6d3a"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/cracko-mc3ds-better-save/README.md",
+      "git_blob_sha": "1037e2dab9bc6582e27b612df35382cc2f5aec2b"
+    },
+    {
+      "upstream_path": "00040000001B8700.txt",
+      "archive_path": "archive/cracko-mc3ds-better-save/00040000001B8700.txt",
+      "git_blob_sha": "e4a6b2f7b4c079222975a5c36e0c3ba5c6d40ad0"
+    }
+  ]
+}
