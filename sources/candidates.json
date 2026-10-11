@@ -306,6 +306,23 @@
       "state": "link_only_rights_review",
       "rights": "No root LICENSE; README says code includes both own work and modifications of other authors.",
       "notes": "Several Melee native Gecko .txt output documents and matching assembly sources. Need code-by-code origin and reuse permission; do not bulk rehost."
+    },
+    {
+      "id": "rogamer97-asm-cheats-and-patches",
+      "repo": "https://github.com/RoGamer97/ASM-Cheats-and-Patches",
+      "platforms": [
+        "3ds",
+        "ds",
+        "gamecube",
+        "switch",
+        "wii"
+      ],
+      "formats": [
+        "original-gecko-and-asm-markdown-documents"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No SPDX license or standalone LICENSE file located as of pinned revision",
+      "notes": "Reviewed commit 8ec531942871cd4e0aaefe5eb596fb2b49e9ae92: 1,009 original repository file blobs, 568 platform-specific Markdown candidate documents across 3DS, DS, GameCube, Switch and Wii. The README says only author-created codes are included, but contains no redistribution grant. Do not bulk rehost original cheat text until author permission or an explicit license is documented."
     }
   ]
 }
