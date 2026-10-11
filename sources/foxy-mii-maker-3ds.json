@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-mii-maker-3ds",
+  "repository": "https://github.com/FoxyXTN/Mii-Maker-Cheats-Cttpf-on-3ds-Only-in-german-available-",
+  "snapshot_commit": "63ebb62116d2c273c88d809edc3b968428d3afa5",
+  "license": "Apache-2.0 (upstream root LICENSE preserved; original source author FoxyXTN)",
+  "archive_prefix": "archive/foxy-mii-maker-3ds/",
+  "scope_note": "1 original Nintendo 3DS CTRPF/Gateshark native cheat text file for Nintendo 3DS Mii Maker, with native title-ID paths where supplied. Code effect, region and game build compatibility are source claims only.",
+  "rights_note": "Original Apache-2.0 notice and any upstream explanatory text preserved without modification. Source project license is not independent verification of every historical third-party cheat origin; keep source-level attribution. No cheat execution or title/build validation performed.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "0004001000022700.txt",
+      "archive_path": "archive/foxy-mii-maker-3ds/0004001000022700.txt",
+      "git_blob_sha": "d4ff1df3fe14cca69bf07c2ac306585c52c629aa"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-mii-maker-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    }
+  ]
+}

@@ -33,6 +33,13 @@ on:
       - "sources/foxy-kirby-clash-3ds.json"
       - "sources/foxy-terraria-3ds.json"
       - "sources/foxy-ocarina-3ds.json"
+      - "sources/foxy-battleminers-3ds.json"
+      - "sources/foxy-battleminerz-3ds.json"
+      - "sources/foxy-mgs3ds-3ds.json"
+      - "sources/foxy-badge-arcade-3ds.json"
+      - "sources/foxy-re-revelations-3ds.json"
+      - "sources/foxy-fnaf-remake-3ds.json"
+      - "sources/foxy-mii-maker-3ds.json"
       - "sources/andshrew-sly2-pnach.json"
       - "sources/wii-zero-gravity-controller.json"
       - "sources/wii-krusty-krab-controller.json"
@@ -74,6 +81,13 @@ on:
       - "archive/foxy-kirby-clash-3ds/**"
       - "archive/foxy-terraria-3ds/**"
       - "archive/foxy-ocarina-3ds/**"
+      - "archive/foxy-battleminers-3ds/**"
+      - "archive/foxy-battleminerz-3ds/**"
+      - "archive/foxy-mgs3ds-3ds/**"
+      - "archive/foxy-badge-arcade-3ds/**"
+      - "archive/foxy-re-revelations-3ds/**"
+      - "archive/foxy-fnaf-remake-3ds/**"
+      - "archive/foxy-mii-maker-3ds/**"
       - "archive/andshrew-sly2-pnach/**"
       - "archive/wii-zero-gravity-controller/**"
       - "archive/wii-krusty-krab-controller/**"
@@ -435,6 +449,18 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform ps2 --source-record-id 'xan1242-nfsu-ps2:CB99CD12_ForceCarPreset.pnach' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "xan1242-nfsu-ps2" and d["provenance"]["upstream_path"] == "CB99CD12_ForceCarPreset.pnach" and d["declared_format_hint"] == "pcsx2-pnach"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-battleminers-3ds:000400000014DA00.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-battleminers-3ds" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-mgs3ds-3ds:0004000000082400.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-mgs3ds-3ds" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-re-revelations-3ds:ReR Fps Codes.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-re-revelations-3ds" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-mii-maker-3ds:0004001000022700.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-mii-maker-3ds" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'

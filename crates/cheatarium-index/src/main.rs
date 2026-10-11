@@ -805,6 +805,13 @@ fn run() -> Result<()> {
         "foxy-kirby-clash-3ds",
         "foxy-terraria-3ds",
         "foxy-ocarina-3ds",
+        "foxy-battleminers-3ds",
+        "foxy-battleminerz-3ds",
+        "foxy-mgs3ds-3ds",
+        "foxy-badge-arcade-3ds",
+        "foxy-re-revelations-3ds",
+        "foxy-fnaf-remake-3ds",
+        "foxy-mii-maker-3ds",
         "andshrew-sly2-pnach",
         "wii-zero-gravity-controller",
         "wii-krusty-krab-controller",
@@ -863,6 +870,13 @@ fn run() -> Result<()> {
                 | "foxy-kirby-clash-3ds"
                 | "foxy-terraria-3ds"
                 | "foxy-ocarina-3ds"
+                | "foxy-battleminers-3ds"
+                | "foxy-battleminerz-3ds"
+                | "foxy-mgs3ds-3ds"
+                | "foxy-badge-arcade-3ds"
+                | "foxy-re-revelations-3ds"
+                | "foxy-fnaf-remake-3ds"
+                | "foxy-mii-maker-3ds"
                     if original.ends_with(".txt")
                         && original.trim_end_matches(".txt").len() == 16
                         && original
@@ -876,6 +890,10 @@ fn run() -> Result<()> {
                         "gateshark-text",
                         original.trim_end_matches(".txt").to_owned(),
                     )
+                }
+                "foxy-re-revelations-3ds" if original == "ReR Fps Codes.txt" => {
+                    // Native author-supplied auxiliary title; do not invent a game/build ID.
+                    ("3ds", "gateshark-text", original.to_owned())
                 }
                 "dolphin-game-cheats"
                     if original.starts_with("Data/Sys/GameSettings/")

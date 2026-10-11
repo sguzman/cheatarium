@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-fnaf-remake-3ds",
+  "repository": "https://github.com/FoxyXTN/Fnaf-Remake-3ds-Ctrpf-Cheat-Codes",
+  "snapshot_commit": "525cf4306868d4543eeecd71a0be76679a00bb5a",
+  "license": "Apache-2.0 (upstream root LICENSE preserved; original source author FoxyXTN)",
+  "archive_prefix": "archive/foxy-fnaf-remake-3ds/",
+  "scope_note": "1 original Nintendo 3DS CTRPF/Gateshark native cheat text file for FNAF Remake 3DS, with native title-ID paths where supplied. Code effect, region and game build compatibility are source claims only.",
+  "rights_note": "Original Apache-2.0 notice and any upstream explanatory text preserved without modification. Source project license is not independent verification of every historical third-party cheat origin; keep source-level attribution. No cheat execution or title/build validation performed.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "000400000F1FFF00.txt",
+      "archive_path": "archive/foxy-fnaf-remake-3ds/000400000F1FFF00.txt",
+      "git_blob_sha": "d8b0430863799f06b261c808f38b296bb948e6b7"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-fnaf-remake-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    }
+  ]
+}

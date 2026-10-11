@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "foxy-battleminerz-3ds",
+  "repository": "https://github.com/FoxyXTN/Battleminerz-Eur-Ctrpf-Ar-Cheats",
+  "snapshot_commit": "3eb29d7498092ee4d354cc1815e6a0fafd5a1a3e",
+  "license": "Apache-2.0 (upstream root LICENSE preserved; original source author FoxyXTN)",
+  "archive_prefix": "archive/foxy-battleminerz-3ds/",
+  "scope_note": "1 original Nintendo 3DS CTRPF/Gateshark native cheat text file for Battleminerz (Europe), with native title-ID paths where supplied. Code effect, region and game build compatibility are source claims only.",
+  "rights_note": "Original Apache-2.0 notice and any upstream explanatory text preserved without modification. Source project license is not independent verification of every historical third-party cheat origin; keep source-level attribution. No cheat execution or title/build validation performed.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "00040000001C9D00.txt",
+      "archive_path": "archive/foxy-battleminerz-3ds/00040000001C9D00.txt",
+      "git_blob_sha": "67ed9a60c19be7ff8a6e382d723e2bdd2965a276"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-battleminerz-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/foxy-battleminerz-3ds/README.md",
+      "git_blob_sha": "d4c3c7fb03c22d68ce81ee1bdfea397b491ae9c0"
+    }
+  ]
+}

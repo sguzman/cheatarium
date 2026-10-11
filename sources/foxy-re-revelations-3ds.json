@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "foxy-re-revelations-3ds",
+  "repository": "https://github.com/FoxyXTN/Resident-Evil-Revelations-Eur-Ctrpf-Ar-Cheats",
+  "snapshot_commit": "805c0e4048f0211c438c16b460be90da33a80c62",
+  "license": "Apache-2.0 (upstream root LICENSE preserved; original source author FoxyXTN)",
+  "archive_prefix": "archive/foxy-re-revelations-3ds/",
+  "scope_note": "2 original Nintendo 3DS CTRPF/Gateshark native cheat text files for Resident Evil Revelations (Europe), with native title-ID paths where supplied. Code effect, region and game build compatibility are source claims only.",
+  "rights_note": "Original Apache-2.0 notice and any upstream explanatory text preserved without modification. Source project license is not independent verification of every historical third-party cheat origin; keep source-level attribution. No cheat execution or title/build validation performed.",
+  "native_cheat_counts": {
+    "3ds": 2
+  },
+  "files": [
+    {
+      "upstream_path": "000400000005EE00.txt",
+      "archive_path": "archive/foxy-re-revelations-3ds/000400000005EE00.txt",
+      "git_blob_sha": "eb194054b09c8bee16c5d22bb3b2f997d019841f"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-re-revelations-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "ReR Fps Codes.txt",
+      "archive_path": "archive/foxy-re-revelations-3ds/ReR Fps Codes.txt",
+      "git_blob_sha": "d7c0d18879ca7f1aeb78dddc1072606012294fb8"
+    }
+  ]
+}

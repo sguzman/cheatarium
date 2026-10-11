@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-battleminers-3ds",
+  "repository": "https://github.com/FoxyXTN/Battleminers-Eur-Ctrpf-Ar-Cheats",
+  "snapshot_commit": "9f673efb52ce510ac1e130cbd49556f67f97db2f",
+  "license": "Apache-2.0 (upstream root LICENSE preserved; original source author FoxyXTN)",
+  "archive_prefix": "archive/foxy-battleminers-3ds/",
+  "scope_note": "1 original Nintendo 3DS CTRPF/Gateshark native cheat text file for Battleminers (Europe), with native title-ID paths where supplied. Code effect, region and game build compatibility are source claims only.",
+  "rights_note": "Original Apache-2.0 notice and any upstream explanatory text preserved without modification. Source project license is not independent verification of every historical third-party cheat origin; keep source-level attribution. No cheat execution or title/build validation performed.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "000400000014DA00.txt",
+      "archive_path": "archive/foxy-battleminers-3ds/000400000014DA00.txt",
+      "git_blob_sha": "ecc1a0b068c6107767fe8fa6ffc4b24f4fae3458"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-battleminers-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    }
+  ]
+}

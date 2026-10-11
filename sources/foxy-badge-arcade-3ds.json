@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-badge-arcade-3ds",
+  "repository": "https://github.com/FoxyXTN/Nintendo-Badge-Arcade-Eur-CTRPF-Ar-Cheats",
+  "snapshot_commit": "8c9e1ef539ffc59a928c010280bf67d5d305d352",
+  "license": "Apache-2.0 (upstream root LICENSE preserved; original source author FoxyXTN)",
+  "archive_prefix": "archive/foxy-badge-arcade-3ds/",
+  "scope_note": "1 original Nintendo 3DS CTRPF/Gateshark native cheat text file for Nintendo Badge Arcade (Europe), with native title-ID paths where supplied. Code effect, region and game build compatibility are source claims only.",
+  "rights_note": "Original Apache-2.0 notice and any upstream explanatory text preserved without modification. Source project license is not independent verification of every historical third-party cheat origin; keep source-level attribution. No cheat execution or title/build validation performed.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "0004000000153600.txt",
+      "archive_path": "archive/foxy-badge-arcade-3ds/0004000000153600.txt",
+      "git_blob_sha": "96f5d1f0dea332a2be31b8a436d79fc0a35c3c6f"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-badge-arcade-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    }
+  ]
+}
