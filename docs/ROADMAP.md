@@ -10,6 +10,9 @@ At the pinned Libretro revision, the first mapped expansion imported **835 `.cht
 
 ## Automated bulk-coverage comparison
 
+The version-pinned Nintendo Switch acquisition now includes bad1dea's complete NXCheats native source-text collection (2,992 build-ID-named cheat files, 3,155 total source originals including accompanying data and notices). A CI-generated Switch source overlap report compares Sharkive and NXCheats by exact native title/build-ID pairs and tracks repeated paths and nonstandard identifiers. It does not claim unique games, equivalent effects or tested operation.
+
+
 The machine-generated `generated/v1/reports/ps2-bulk-source-coverage.json` compares the complete original root670 source game headings, NTSC and PAL ZIP titles, and CRC-labeled PNACH conversion titles using conservative lexical matching and an explicitly more relaxed region-label comparison. It records overlap and newly unmatched **source-name candidates**, not independently established new games. The CI build regenerates and checks it whenever it rebuilds the index; no manual curation or title choice occurs.
 
 ## PCSX2-ready bulk conversion (2026-10-11)
@@ -41,7 +44,7 @@ The maintained GPL-3.0 CheatDevicePS2 fork `israpps/CheatDevicePS2` includes fou
 
 ## Acquisition status (2026-10-11)
 
-**37,939 actual original cheat-bearing files from 76 pinned collections**. The indexed distribution contains **39,387 search records across 58 platform bundles**, including 1,483 game-section records from *one physical original* CheatDevicePS2 text file, plus **32,826 unverified filename/source-defined candidate game groups**, **1,439,838 source code-group entries** and **21,322 native memory entries**. Exactly 34 archived Dolphin INIs remain unassigned. New PS2, PS5 and Vita source data passed integrity validation and reproducible index/consumer CI. Historic third-party author rights and game-specific compatibility are not independently determined. No real-world cheat execution verification is claimed.
+**49,016 archived original files including source notices and companion data from 79 pinned collections**. The indexed distribution contains **51,883 source/game-section records across 58 platform bundles**, **42,459 unverified source-derived candidate game groups**, **1,732,474 code-bearing index entries** and **21,322 native memory entries**. An entire 2,992-file native Switch NXCheats collection, plus 163 source companion and license originals, was newly bulk-imported from a pinned MIT repository; this does not represent 2,992 distinct games or verified effects. Exactly 34 Dolphin originals remain unassigned. Original historical author rights and build compatibility are not independently confirmed. No real-world cheat execution verification is claimed.
 
 ## Platform queue
 
