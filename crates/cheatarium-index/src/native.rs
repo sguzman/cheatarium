@@ -195,6 +195,236 @@ pub fn parse_goldhen_mc4(text: &str) -> ParsedCheats {
     out
 }
 
+/// Index original Gecko hexadecimal lines when upstream supplied no Dolphin `//! Source-preserving views of non-Libretro native console cheat formats.
+//! Original archived files remain authoritative. No code is interpreted or run.
+use crate::{Code, NativeField, ParsedCheats};
+
+fn field(name: &str, value: impl Into<String>) -> NativeField {
+    NativeField {
+        name: name.to_owned(),
+        value: value.into(),
+    }
+}
+
+fn result() -> ParsedCheats {
+    ParsedCheats {
+        declared_count: None,
+        codes: Vec::new(),
+        warnings: Vec::new(),
+    }
+}
+
+fn add(out: &mut ParsedCheats, name: String, payload: Option<String>, metadata: Vec<NativeField>) {
+    let role = if payload.as_ref().is_some_and(|s| !s.trim().is_empty()) {
+        "code"
+    } else {
+        "section-heading"
+    };
+    out.codes.push(Code {
+        ordinal: out.codes.len(),
+        description: Some(name),
+        code: payload.filter(|s| !s.trim().is_empty()),
+        source_enabled: false,
+        verification: "unverified",
+        role,
+        native_fields: metadata,
+        snes_decode: None,
+        composition: None,
+    });
+}
+
+pub fn parse_artemis_ncl(text: &str) -> ParsedCheats {
+    let mut out = result();
+    let mut lines = Vec::<String>::new();
+    let mut flush = |lines: &mut Vec<String>, out: &mut ParsedCheats| {
+        if lines.is_empty() {
+            return;
+        }
+        let name = lines.first().map_or("", String::as_str).trim();
+        if name.is_empty() {
+            out.warnings
+                .push("NCL block has an empty description".into());
+        }
+        let parameter = lines.get(1).map_or("", String::as_str).trim().to_owned();
+        let author = lines.get(2).map_or("", String::as_str).trim().to_owned();
+        let payload = if lines.len() > 3 {
+            Some(lines[3..].join("\n") + "\n")
+        } else {
+            None
+        };
+        add(
+            out,
+            if name.is_empty() {
+                "(unnamed NCL entry)".into()
+            } else {
+                name.to_owned()
+            },
+            payload,
+            vec![
+                field("original_parameter", parameter),
+                field("original_author", author),
+            ],
+        );
+        lines.clear();
+    };
+    for line in text.lines() {
+        if line.trim() == "#" {
+            flush(&mut lines, &mut out);
+        } else {
+            lines.push(line.to_owned());
+        }
+    }
+    flush(&mut lines, &mut out);
+    out
+}
+
+pub fn parse_goldhen_json(text: &str) -> ParsedCheats {
+    let mut out = result();
+    match serde_json::from_str::<serde_json::Value>(text) {
+        Ok(value) => {
+            let credits = value.get("credits").map_or("".into(), |v| v.to_string());
+            let process = value
+                .get("process")
+                .and_then(|v| v.as_str())
+                .unwrap_or("")
+                .to_owned();
+            if let Some(mods) = value.get("mods").and_then(|v| v.as_array()) {
+                for item in mods {
+                    let name = item
+                        .get("name")
+                        .and_then(|v| v.as_str())
+                        .unwrap_or("(unnamed native mod)")
+                        .to_owned();
+                    add(
+                        &mut out,
+                        name,
+                        Some(item.to_string()),
+                        vec![
+                            field("original_process", process.clone()),
+                            field("original_credits", credits.clone()),
+                            field(
+                                "native_type",
+                                item.get("type").and_then(|v| v.as_str()).unwrap_or(""),
+                            ),
+                        ],
+                    );
+                }
+            } else {
+                out.warnings.push("GoldHEN JSON has no mods array".into());
+                add(
+                    &mut out,
+                    "(original JSON metadata)".into(),
+                    None,
+                    vec![field("original_source_text", text)],
+                );
+            }
+        }
+        Err(e) => {
+            out.warnings.push(format!("GoldHEN JSON parse failed: {e}"));
+            add(
+                &mut out,
+                "(unparsed original JSON)".into(),
+                None,
+                vec![field("original_source_text", text)],
+            );
+        }
+    }
+    out
+}
+
+pub fn parse_goldhen_shn(text: &str) -> ParsedCheats {
+    let mut out = result();
+    let mut rest = text;
+    while let Some(start) = rest.find("<Cheat ") {
+        rest = &rest[start..];
+        let Some(end) = rest.find("</Cheat>") else {
+            out.warnings
+                .push("Unterminated original SHN Cheat element".into());
+            break;
+        };
+        let close = end + "</Cheat>".len();
+        let raw = &rest[..close];
+        let opening = raw.split_once('>').map_or("", |pair| pair.0);
+        let name = opening
+            .split("Text=\"")
+            .nth(1)
+            .and_then(|s| s.split_once('"').map(|p| p.0))
+            .unwrap_or("(unnamed SHN entry)");
+        let has_payload = raw.contains("<Cheatline");
+        add(
+            &mut out,
+            name.to_owned(),
+            if has_payload {
+                Some(raw.to_owned())
+            } else {
+                None
+            },
+            vec![
+                field("native_format", "GoldHEN source XML"),
+                field("original_xml_element", raw),
+            ],
+        );
+        rest = &rest[close..];
+    }
+    if out.codes.is_empty() {
+        out.warnings
+            .push("No parseable SHN Cheat elements; preserved original text".into());
+        add(
+            &mut out,
+            "(original SHN source)".into(),
+            None,
+            vec![field("original_source_text", text)],
+        );
+    }
+    out
+}
+
+pub fn parse_goldhen_mc4(text: &str) -> ParsedCheats {
+    let mut out = result();
+    add(
+        &mut out,
+        "(opaque original MC4 source)".into(),
+        None,
+        vec![field("encoded_original_source", text)],
+    );
+    out.warnings
+        .push("Original MC4 is opaque: not decoded or executable".into());
+    out
+}
+
+ headers.
+/// All original lines remain in one unverified payload; no game identity is inferred.
+pub fn parse_gecko_flat(text: &str) -> ParsedCheats {
+    let mut out = result();
+    let has_code = text.lines().any(|line| {
+        let mut parts = line.split_whitespace();
+        match (parts.next(), parts.next()) {
+            (Some(a), Some(b)) => {
+                a.len() == 8
+                    && b.len() == 8
+                    && a.bytes().all(|c| c.is_ascii_hexdigit())
+                    && b.bytes().all(|c| c.is_ascii_hexdigit())
+            }
+            _ => false,
+        }
+    });
+    let heading = text
+        .lines()
+        .map(str::trim)
+        .find(|line| !line.is_empty())
+        .unwrap_or("(original Gecko text)");
+    add(
+        &mut out,
+        heading.to_owned(),
+        if has_code { Some(text.to_owned()) } else { None },
+        vec![field("original_unsectioned_gecko_text", text)],
+    );
+    if !has_code {
+        out.warnings
+            .push("No native 8-hex-digit Gecko address/value pairs found".into());
+    }
+    out
+}
 pub fn parse_gecko_ini(text: &str) -> ParsedCheats {
     let mut out = result();
     let mut mode = String::new();
@@ -287,6 +517,19 @@ pub fn parse_gecko_markdown(text: &str) -> ParsedCheats {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn flat_gecko_keeps_original_unsectioned_bytes_and_unverified_status() {
+        let src = "Classic Controller [author]\n04000004 DEADBEEF\nC2000000 00000001\n";
+        let parsed = parse_gecko_flat(src);
+        assert_eq!(parsed.codes.len(), 1);
+        assert_eq!(parsed.codes[0].role, "code");
+        assert_eq!(parsed.codes[0].verification, "unverified");
+        assert_eq!(parsed.codes[0].code.as_deref(), Some(src));
+        let no_code = parse_gecko_flat("Game heading without codes\n");
+        assert_eq!(no_code.codes[0].role, "section-heading");
+        assert!(no_code.codes[0].code.is_none());
+    }
 
     #[test]
     fn ncl_keeps_author_and_native_payload_without_merging_sections() {

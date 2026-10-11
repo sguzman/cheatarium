@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "wii-country-returns-gecko",
+  "repository": "https://github.com/Wii-Patches/Country-Returns-Patch",
+  "snapshot_commit": "2236d75551fe535a0c6e7f18015095028bf9a14f",
+  "license": "MIT (host quatric; original LICENSE and README code credits retained)",
+  "archive_prefix": "archive/wii-country-returns-gecko/",
+  "scope_note": "Four native Wii Gecko code files for Donkey Kong Country Returns, retaining original separate source USA revision 0 and 1 alongside Japan and Europe variants.",
+  "rights_note": "Preserve original MIT LICENSE, README and full names, including upstream attribution to Vague Rant, crediar, and quatric; host MIT does not independently settle prior community code authorship. Original compatibility and testing claims are unverified by Cheatarium.",
+  "native_cheat_counts": {
+    "wii": 4
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/wii-country-returns-gecko/LICENSE",
+      "git_blob_sha": "0b736ad79a276ceafe490d58bba9fa788805a5fa"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/wii-country-returns-gecko/README.md",
+      "git_blob_sha": "9331cbc4bf6c43460c79f71367eb5907ffb04146"
+    },
+    {
+      "upstream_path": "codes/SF8E01_rev0.ini",
+      "archive_path": "archive/wii-country-returns-gecko/codes/SF8E01_rev0.ini",
+      "git_blob_sha": "70e133ae23f147ec4ea3547d728502379cec5445"
+    },
+    {
+      "upstream_path": "codes/SF8E01_rev1.ini",
+      "archive_path": "archive/wii-country-returns-gecko/codes/SF8E01_rev1.ini",
+      "git_blob_sha": "1cf1b0f94740a817fc2814499207ef19bd78aba1"
+    },
+    {
+      "upstream_path": "codes/SF8J01.ini",
+      "archive_path": "archive/wii-country-returns-gecko/codes/SF8J01.ini",
+      "git_blob_sha": "ab16b0fba5a9ef2ebf8cc72387d262ce10e44429"
+    },
+    {
+      "upstream_path": "codes/SF8P01.ini",
+      "archive_path": "archive/wii-country-returns-gecko/codes/SF8P01.ini",
+      "git_blob_sha": "42223aa9a86da8db32a910c91992ab20965b2851"
+    }
+  ]
+}

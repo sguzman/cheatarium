@@ -2,7 +2,7 @@ use cheatarium_codecs::{decode_snes, decode_snes_unlabelled};
 use cheatarium_index::effect_signals::{classify, EffectTaxonomy};
 use cheatarium_index::{
     candidate_game_key, format_hint, parse_artemis_ncl, parse_cht, parse_cwcheat_ini,
-    parse_gecko_ini, parse_gecko_markdown, parse_goldhen_json, parse_goldhen_mc4,
+    parse_gecko_flat, parse_gecko_ini, parse_gecko_markdown, parse_goldhen_json, parse_goldhen_mc4,
     parse_goldhen_shn, parse_native_sections, region_hint, title_hint, Code, CompositionEvidence,
     SourceComposition,
 };
@@ -1168,6 +1168,9 @@ fn run() -> Result<()> {
                 "goldhen-mc4" => parse_goldhen_mc4(&decoded),
                 "goldhen-shn" => parse_goldhen_shn(&decoded),
                 "goldhen-mc4-xml" => parse_goldhen_shn(&decoded),
+                "dolphin-ini" if manifest_id == "wii-country-returns-gecko" => {
+                    parse_gecko_flat(&decoded)
+                }
                 "dolphin-ini" | "gecko-plain-text" => parse_gecko_ini(&decoded),
                 "gecko-markdown" => parse_gecko_markdown(&decoded),
                 "pcsx2-pnach" | "ps1-native-cht" | "gateshark-text" => {
