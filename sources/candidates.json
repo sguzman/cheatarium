@@ -267,6 +267,45 @@
       "state": "link_only_rights_review",
       "rights": "No repository-wide LICENSE reported on review; multi-author game patch provenance must be assessed per file.",
       "notes": "Potential Xbox 360 game patch source collection, not all patch entries are cheats. Keep link-only until code authorship, native patch types and redistribution terms are verified."
+    },
+    {
+      "id": "questionblock22-misc-gecko",
+      "repo": "https://github.com/QuestionBlock22/Miscellaneous-Codes",
+      "platforms": [
+        "wii"
+      ],
+      "formats": [
+        "gecko-native-text"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "Root project lacks blanket license; MIT LICENSE.txt appears under only one subproject and its README says only parts are MIT licensed.",
+      "notes": "Multiple native Mario Kart Wii regional Gecko .txt outputs. Enable-Balloons-for-Mission-Mode subfolder credits prior contributors including mkwcat, stebler and others; source's limited MIT notice cannot conclusively establish redistribution permission for all generated codes. Review per-subfolder rights before copying."
+    },
+    {
+      "id": "bedrockreal-umbrella-gc",
+      "repo": "https://github.com/bedrockreal/UmbrElla",
+      "platforms": [
+        "gamecube"
+      ],
+      "formats": [
+        "dolphin-ini"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "No root LICENSE; README allows direct use of own codes but does not explicitly grant redistribution or relicensing.",
+      "notes": "Mario Golf: Toadstool Tour PAL Gecko code file GFTP01.ini authored by repository owner, with PowerPC sources. Obtain clear redistribution permission before archival."
+    },
+    {
+      "id": "righteousryan-melee-gecko",
+      "repo": "https://github.com/RighteousRyan1/MyMeleeGeckoCodes",
+      "platforms": [
+        "gamecube"
+      ],
+      "formats": [
+        "gecko-native-text"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "No root LICENSE; README says code includes both own work and modifications of other authors.",
+      "notes": "Several Melee native Gecko .txt output documents and matching assembly sources. Need code-by-code origin and reuse permission; do not bulk rehost."
     }
   ]
 }
