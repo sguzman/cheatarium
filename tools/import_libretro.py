@@ -39,13 +39,15 @@ def blob_sha(content):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--systems", nargs="+", choices=sorted(SYSTEMS), help="One or more mapped source-collection IDs")
-    parser.add_argument("--all-consoles", action="store_true", help="Import every mapped console/handheld collection")
+    parser.add_argument("--all-consoles", action="store_true", help="Legacy alias: import every mapped collection")
+    parser.add_argument("--all-collections", dest="all_consoles", action="store_true",
+                        help="Import all mapped source collections, including arcade and computers")
     parser.add_argument("--limit", type=int, default=0, help="Max files per system; 0 imports all")
     args = parser.parse_args()
     if args.limit < 0:
         parser.error("--limit must be nonnegative")
     if args.all_consoles and args.systems:
-        parser.error("Choose --systems or --all-consoles, not both")
+        parser.error("Choose --systems or --all-collections, not both")
     selected = sorted(SYSTEMS) if args.all_consoles else (args.systems or ["nes", "snes"])
     data = json.loads(SOURCE_FILE.read_text(encoding="utf-8"))
     revision = data["snapshot_commit"]

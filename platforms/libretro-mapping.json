@@ -196,6 +196,31 @@
       "import_id": "gx4000",
       "platform": "gx4000",
       "source_directory": "Amstrad - GX4000"
+    },
+    {
+      "import_id": "atari-8bit",
+      "platform": "atari-8bit",
+      "source_directory": "Atari - 8-bit Family"
+    },
+    {
+      "import_id": "dos",
+      "platform": "dos",
+      "source_directory": "DOS"
+    },
+    {
+      "import_id": "fbneo",
+      "platform": "arcade-fbneo",
+      "source_directory": "FBNeo - Arcade Games"
+    },
+    {
+      "import_id": "msx",
+      "platform": "msx",
+      "source_directory": "Microsoft - MSX"
+    },
+    {
+      "import_id": "msx2",
+      "platform": "msx2",
+      "source_directory": "Microsoft - MSX2"
     }
   ]
 }

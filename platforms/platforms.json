@@ -330,6 +330,36 @@
       "name": "Amstrad GX4000",
       "maker": "Amstrad",
       "kind": "home"
+    },
+    {
+      "id": "atari-8bit",
+      "name": "Atari 8-bit Family",
+      "maker": "Atari",
+      "kind": "computer"
+    },
+    {
+      "id": "dos",
+      "name": "DOS PC",
+      "maker": "IBM-compatible",
+      "kind": "computer"
+    },
+    {
+      "id": "arcade-fbneo",
+      "name": "FinalBurn Neo Arcade",
+      "maker": "Various",
+      "kind": "arcade"
+    },
+    {
+      "id": "msx",
+      "name": "MSX",
+      "maker": "MSX",
+      "kind": "computer"
+    },
+    {
+      "id": "msx2",
+      "name": "MSX2",
+      "maker": "MSX",
+      "kind": "computer"
     }
   ]
 }

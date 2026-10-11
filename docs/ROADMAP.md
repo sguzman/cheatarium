@@ -2,6 +2,12 @@
 
 **North star:** a huge, pleasant, searchable collection, where original cheat files and meaningful game/edition/device relationships are both preserved.
 
+## Acquisition priority: BULK FIRST (2026-10-11)
+
+Entire licensed/pinned game-cheat collections are the default unit of acquisition. Expand complete platform coverage before single-title work. Evaluate progress by new source files and new filename-derived game candidates (with duplicate and build ambiguity disclosed), never by commit count. Do not hand-curate isolated titles while material bulk coverage opportunities remain. Individual-title sources are a final gap-filling stage, justified only by measured coverage gaps. Rights-unresolved external data remains link-only until it can be redistributed; it must not be presented as acquired files.
+
+The next bulk Libretro pass includes entire, previously unmapped MSX, MSX2, FinalBurn Neo arcade, DOS and Atari 8-bit collections (835 `.cht` source files observed at pinned revision). These are computer/arcade expansions, not a substitute for further bulk console coverage. The import workflow commits the originals and manifests automatically; count them as archived only after the workflow succeeds.
+
 ## Collection pipeline
 
 1. **Discover** a source; identify platforms, file formats, size, provenance, and licenses.
