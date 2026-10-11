@@ -3,10 +3,10 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 58,
-  "source_files": 48891,
-  "game_candidate_groups": 42330,
-  "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 118290,
+  "source_files": 51883,
+  "game_candidate_groups": 42459,
+  "repeated_raw_code_groups": 2973,
+  "lexical_effect_tag_matches": 118566,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -68,8 +68,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "4a2a3faeede71ca6a696a757f3f2fac5d4d57fe2ae7e8f78c7439d66f5803727",
-      "size_bytes": 27599
+      "sha256": "cb6cd45c35a0e5e79be952e87ce915f3cef4564fc8618d7a35003cd2b1bd1ef1",
+      "size_bytes": 27608
     },
     {
       "path": "chailove.json.gz",
@@ -333,8 +333,8 @@
     },
     {
       "path": "games/switch.json.gz",
-      "sha256": "9283e3767f59f3e182b8bff83f712c8fccaa17d05f38d88afc893e1b00b8892d",
-      "size_bytes": 16652
+      "sha256": "bba6b597653ea43e2d5294f2bd412cff44f38f0a96d3c4db8a4969bf762d12c2",
+      "size_bytes": 48371
     },
     {
       "path": "games/tg16.json.gz",
@@ -753,8 +753,8 @@
     },
     {
       "path": "repeats/switch.json.gz",
-      "sha256": "812f9aa67fa11a3ef1d7056e683abd48b2514b05bd7fdb14549ab58934920b77",
-      "size_bytes": 142
+      "sha256": "799b1381f94c2c59038e862f134f4ddf87ad922734b90435fcbdb4f55c87094d",
+      "size_bytes": 102500
     },
     {
       "path": "repeats/tg16.json.gz",
@@ -863,8 +863,8 @@
     },
     {
       "path": "switch.json.gz",
-      "sha256": "a467606f28c16b6d2af98b9c4fb4321543998655b3ae465d4d3e94e1f1e443c7",
-      "size_bytes": 207340
+      "sha256": "e4e053750e63d204767e4e0cf161cce2e2079be78ddd83984193020bcde74410",
+      "size_bytes": 607743
     },
     {
       "path": "tags/32x.json.gz",
@@ -1093,8 +1093,8 @@
     },
     {
       "path": "tags/switch.json.gz",
-      "sha256": "860702cffdc7c717e6405b984ed2c02186b84be52b59c903597202b70b0fabc1",
-      "size_bytes": 12893
+      "sha256": "96240c11694087ba536082cd6e989ba15dec51278888d26944fcf34e0bec9fe4",
+      "size_bytes": 21414
     },
     {
       "path": "tags/tg16.json.gz",

@@ -846,14 +846,22 @@ fn run() -> Result<()> {
             {
                 continue;
             }
-            let title_id = parts.iter().find_map(|part| {
-                let prefix = part.split_whitespace().next().unwrap_or(part);
-                if prefix.len() == 16 && prefix.bytes().all(|c| c.is_ascii_hexdigit()) {
-                    Some(prefix)
-                } else {
-                    None
-                }
-            }).ok_or_else(|| format!("Missing source-native Switch title ID: {}", item.upstream_path))?;
+            let title_id = parts
+                .iter()
+                .find_map(|part| {
+                    let prefix = part.split_whitespace().next().unwrap_or(part);
+                    if prefix.len() == 16 && prefix.bytes().all(|c| c.is_ascii_hexdigit()) {
+                        Some(prefix)
+                    } else {
+                        None
+                    }
+                })
+                .ok_or_else(|| {
+                    format!(
+                        "Missing source-native Switch title ID: {}",
+                        item.upstream_path
+                    )
+                })?;
             if wanted.as_ref().is_some_and(|v| !v.contains("switch")) {
                 continue;
             }
@@ -861,9 +869,9 @@ fn run() -> Result<()> {
             let decoded = String::from_utf8_lossy(&raw);
             let mut parsed = parse_native_sections(&decoded);
             if std::str::from_utf8(&raw).is_err() {
-                parsed.warnings.push(
-                    "Non-UTF8 source bytes remain preserved in the original archive".into(),
-                );
+                parsed
+                    .warnings
+                    .push("Non-UTF8 source bytes remain preserved in the original archive".into());
             }
             parsed.warnings.push(
                 "Legacy one-effect files may repeat complete build packs; no effect deduplication or game verification is inferred".into(),
@@ -873,9 +881,8 @@ fn run() -> Result<()> {
             } else {
                 parts[0].split_once(' ').map_or(parts[0], |(_, name)| name)
             };
-            let title_hint = format!(
-                "{source_label} [source title] / title ID {title_id} / build {build}"
-            );
+            let title_hint =
+                format!("{source_label} [source title] / title ID {title_id} / build {build}");
             let record = IndexedFile {
                 id: format!("{}:{}", nx.id, item.upstream_path),
                 title_hint,

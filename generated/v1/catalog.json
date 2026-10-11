@@ -684,15 +684,15 @@
       "artifact": "switch.json.gz",
       "game_index_artifact": "games/switch.json.gz",
       "repeat_index_artifact": "repeats/switch.json.gz",
-      "repeat_groups": 0,
+      "repeat_groups": 2578,
       "tag_index_artifact": "tags/switch.json.gz",
-      "tag_matches": 838,
-      "game_candidate_groups": 491,
-      "source_files": 491,
-      "code_fields": 6150,
+      "tag_matches": 1114,
+      "game_candidate_groups": 620,
+      "source_files": 3483,
+      "code_fields": 16214,
       "native_memory_entries": 0,
       "decoded_snes_code_fields": 0,
-      "warnings": 3
+      "warnings": 2995
     },
     {
       "platform": "tg16",
