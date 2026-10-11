@@ -1,0 +1,32 @@
+gametitle=Need for Speed Underground [U] [SLUS-20811]
+
+[Enable UnlockEverythingThatCanBeLocked]
+author=xan1242
+comment=Enables the UnlockEverythingThatCanBeLocked variable. Self-explanatory. Gives infinite cash as well.
+patch=1,EE,205016A4,word,00000001
+
+[Enable DebugCameras]
+author=xan1242
+comment=Enables the DebugCameras variable. This can also be enabled via the debug menu. Use the second controller to control. Press SELECT on second controller to toggle modes.
+patch=1,EE,20503CA4,word,00000001
+
+[Enable Debug Menu]
+author=xan1242
+comment=Unhides the "DEBUG" menu in the pause menu.
+patch=1,EE,20501BC0,word,DEADBEEF
+
+[Enable DrawFEng]
+author=xan1242
+comment=Enables the DrawFEng variable.
+patch=1,EE,20502718,word,00000001
+
+[Disable DrawFEng]
+author=xan1242
+comment=Disables the DrawFEng variable, which hides all of the UI. To unhide, disable this cheat and enable the "Enable DrawFEng" cheat.
+patch=1,EE,20502718,word,00000000
+
+[Enable DEFAULTTEXTURE]
+author=xan1242
+comment=Enables use of DEFAULTTEXTURE just like debug/early builds.
+patch=1,EE,2029C890,short,1900
+patch=1,EE,2029C8A0,short,6835

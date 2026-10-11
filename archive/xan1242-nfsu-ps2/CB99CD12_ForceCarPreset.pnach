@@ -1,0 +1,71 @@
+gametitle=Need for Speed Underground [U] [SLUS-20811]
+
+//
+// USAGE:
+// 1. Edit the preset namehash with the name hash of the preset you want (you can use any NFS hashing utility such as NFS-Hasher or Binary). You can find the presets in FrontB (either use Binary or a hex editor and look for the chunk: 20 02 03 00)
+// 2. Set the desired performance rating (0.0 = minimum/stock, 5.0 = average, 10.0 = max performance). You can use this website to convert float to hex: https://www.h-schmidt.net/FloatConverter/IEEE754.html
+// 3. Save the file, reload cheats in PCSX2, enable the cheat in PCSX2 and start the game
+// 4. Go to Underground Mode (play through DDay if you have to, but you have to enter the Underground Mode menu for this to take effect)
+// 5. Save the game
+// 6. Disable the cheat and reboot. The car should now be in your garage.
+//
+
+[Force Car Preset For Underground Mode]
+author=xan1242
+comment=Open the cheat file for precise usage instructions. Enable once, go to Underground Mode, save the game, then disable and reboot the game.
+
+// Preset namehash (EDDIE_SKYLINE)
+patch=1,EE,203EDCD8,word,7A282C98
+
+// Perf rating (float, 10.0)
+patch=1,EE,203EDCDC,word,41200000
+
+
+
+
+// HOOK CODE -- DO NOT TOUCH THIS
+patch=1,EE,203EFC3C,word,27BDFFB0    // addiu sp, -0x50
+patch=1,EE,203EFC40,word,FFB30040    // sd s3, 0x40(sp)
+patch=1,EE,203EFC44,word,FFB20030    // sd s2, 0x30(sp)
+patch=1,EE,203EFC48,word,FFB10020    // sd s1, 0x20(sp)
+patch=1,EE,203EFC4C,word,FFB00010    // sd s0, 0x10(sp)
+patch=1,EE,203EFC50,word,FFBF0000    // sd ra, 0(sp)
+patch=1,EE,203EFC54,word,00808021    // move s0, a0
+patch=1,EE,203EFC58,word,00A08821    // move s1, a1
+patch=1,EE,203EFC5C,word,00C09021    // move s2, a2
+patch=1,EE,203EFC60,word,3C13003F    // lui s3, 0x03F
+            
+patch=1,EE,203EFC64,word,8E64DCD8    // lw a0, -0x2328(s3)
+patch=1,EE,203EFC68,word,0C07839A    // jal 0x001E0E68 (BuildRideInfoFromPreset)
+patch=1,EE,203EFC6C,word,02402821    // move a1, s2
+            
+patch=1,EE,203EFC70,word,C66CDCDC    // lwc1 f12, -0x2324(s3)
+patch=1,EE,203EFC74,word,3C0140A0    // lui at, 0x40A0 // 5.0f
+patch=1,EE,203EFC78,word,44816800    // mtc1 at, f13
+patch=1,EE,203EFC7C,word,02402021    // move a0, s2
+patch=1,EE,203EFC80,word,2405FFFF    // addiu a1, zero, -1
+patch=1,EE,203EFC84,word,0C0B92F2    // jal 0x002E4BC8 (RideInfo::MatchPerformance)
+patch=1,EE,203EFC88,word,24060001    // li a2, 1
+            
+patch=1,EE,203EFC8C,word,0C0B8E0E    // jal 0x002E3838 (RideInfo::SyncPartsToPhysicsForPlayer)
+patch=1,EE,203EFC90,word,02402021    // move a0, s2
+            
+patch=1,EE,203EFC94,word,02402021    // move a0, s2
+patch=1,EE,203EFC98,word,0C0B9088    // jal 0x002E4220 (RideInfo::RebuildPhysicsInfo)
+patch=1,EE,203EFC9C,word,24050001    // li a1, 1
+            
+patch=1,EE,203EFCA0,word,02002021    // move a0, s0
+patch=1,EE,203EFCA4,word,0C076A5E    // jal 0x001DA978 (PresetCarSlot::FillWithRide)
+patch=1,EE,203EFCA8,word,02402821    // move a1, s2
+            
+patch=1,EE,203EFCAC,word,DFBF0000    // ld ra, 0(sp)
+patch=1,EE,203EFCB0,word,DFB00010    // ld s0, 0x10(sp)
+patch=1,EE,203EFCB4,word,DFB10020    // ld s1, 0x20(sp)
+patch=1,EE,203EFCB8,word,DFB20030    // ld s2, 0x30(sp)
+patch=1,EE,203EFCBC,word,DFB30040    // ld s3, 0x40(sp)
+patch=1,EE,203EFCC0,word,03E00008    // jr ra
+patch=1,EE,203EFCC4,word,27BD0050    // addiu sp, 0x50
+
+
+// entrypoint
+patch=1,EE,20221FD0,word,0C0FBF0F  // jal 0x3EFC3C   

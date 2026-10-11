@@ -806,6 +806,10 @@ fn run() -> Result<()> {
         "foxy-terraria-3ds",
         "foxy-ocarina-3ds",
         "andshrew-sly2-pnach",
+        "wii-zero-gravity-controller",
+        "wii-krusty-krab-controller",
+        "wii-okami-controller",
+        "xan1242-nfsu-ps2",
         "dolphin-game-cheats",
     ] {
         let native: SourceManifest =
@@ -823,6 +827,7 @@ fn run() -> Result<()> {
                 | "igor-txr-controller-tweaks"
                 | "saupernova-bt3-60fps"
                 | "andshrew-sly2-pnach"
+                | "xan1242-nfsu-ps2"
                     if original.ends_with(".pnach") =>
                 {
                     ("ps2", "pcsx2-pnach", original.to_owned())
@@ -837,6 +842,22 @@ fn run() -> Result<()> {
                         "dolphin-ini",
                         original.trim_end_matches(".ini").to_owned(),
                     )
+                }
+                "wii-zero-gravity-controller"
+                | "wii-krusty-krab-controller"
+                | "wii-okami-controller"
+                    if original.starts_with("codes/") && original.ends_with(".ini") =>
+                {
+                    let disc = original
+                        .rsplit('/')
+                        .next()
+                        .unwrap_or(original)
+                        .trim_end_matches(".ini");
+                    if disc.len() != 6 || !disc.chars().all(|c| c.is_ascii_alphanumeric()) {
+                        continue;
+                    }
+                    // The exact original disc ID is only an unverified source hint.
+                    ("wii", "dolphin-ini", disc.to_owned())
                 }
                 "foxy-dementium-3ds"
                 | "foxy-kirby-clash-3ds"

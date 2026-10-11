@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "xan1242-nfsu-ps2",
+  "repository": "https://github.com/xan1242/nfsu-ps2-cheats",
+  "snapshot_commit": "4908ae10335745379caa76c788bde0f410cb864d",
+  "license": "MIT (Lovro Pleše / xan1242; original LICENSE retained)",
+  "archive_prefix": "archive/xan1242-nfsu-ps2/",
+  "scope_note": "Two original PS2 PCSX2 PNACH cheat files for Need for Speed Underground source NTSC-U SLUS-20811, including force-car-preset and other gameplay modifications.",
+  "rights_note": "Preserve original authored code, MIT attribution and usage README. Original config instructions and source game/CRC claims are not independently verified; cheats are not activated.",
+  "native_cheat_counts": {
+    "ps2": 2
+  },
+  "files": [
+    {
+      "upstream_path": "CB99CD12_ForceCarPreset.pnach",
+      "archive_path": "archive/xan1242-nfsu-ps2/CB99CD12_ForceCarPreset.pnach",
+      "git_blob_sha": "8038ce047bc56643a1e9103b2e82ca6b0d429823"
+    },
+    {
+      "upstream_path": "CB99CD12_Other.pnach",
+      "archive_path": "archive/xan1242-nfsu-ps2/CB99CD12_Other.pnach",
+      "git_blob_sha": "251e5c011f48faa9524d54660191a52c26a01d25"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/xan1242-nfsu-ps2/LICENSE",
+      "git_blob_sha": "381c7eae0cd217eef82336f5ab050dd653fe23fb"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/xan1242-nfsu-ps2/README.md",
+      "git_blob_sha": "3ea294f9365f02affa268403078873f55e513c45"
+    }
+  ]
+}

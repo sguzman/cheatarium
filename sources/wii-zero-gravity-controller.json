@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "wii-zero-gravity-controller",
+  "repository": "https://github.com/Wii-Patches/Zero-Gravity-Patch",
+  "snapshot_commit": "34488ca3cca0ad8708af13d651bc6b608d74b043",
+  "license": "MIT (quatric; original LICENSE retained)",
+  "archive_prefix": "archive/wii-zero-gravity-controller/",
+  "scope_note": "Three original Wii Gecko INI controller patches for Sonic Riders: Zero Gravity, preserving USA, Europe and Japan source disc IDs. These are original controller modifications, not independently tested by Cheatarium.",
+  "rights_note": "Original quatric attribution, README, caveats and MIT license preserved; no ROMs, converted copies, generated executable code or retail DOLs imported.",
+  "native_cheat_counts": {
+    "wii": 3
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/wii-zero-gravity-controller/LICENSE",
+      "git_blob_sha": "0b736ad79a276ceafe490d58bba9fa788805a5fa"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/wii-zero-gravity-controller/README.md",
+      "git_blob_sha": "3efacf0c6bbefbc05453f996e4b9b592a63a0041"
+    },
+    {
+      "upstream_path": "codes/RS9E8P.ini",
+      "archive_path": "archive/wii-zero-gravity-controller/codes/RS9E8P.ini",
+      "git_blob_sha": "b8615177e35cbb24cead5fecfb175622ac21eb97"
+    },
+    {
+      "upstream_path": "codes/RS9J8P.ini",
+      "archive_path": "archive/wii-zero-gravity-controller/codes/RS9J8P.ini",
+      "git_blob_sha": "31fa2f6cdbee547b95621408a3385ea9a6306fea"
+    },
+    {
+      "upstream_path": "codes/RS9P8P.ini",
+      "archive_path": "archive/wii-zero-gravity-controller/codes/RS9P8P.ini",
+      "git_blob_sha": "4d9bcf5e8f9c5d8ad8b3c2a1ad8f7366fbed5049"
+    }
+  ]
+}
