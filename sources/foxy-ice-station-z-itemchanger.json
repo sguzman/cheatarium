@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-ice-station-z-itemchanger",
+  "repository": "https://github.com/FoxyXTN/ISZ-item-Changer-slot1-by-Foxy",
+  "snapshot_commit": "d1ce6e6c9cf78a3bd000dfaab2de893b3bfd5cee",
+  "license": "Apache-2.0 (FoxyXTN; original root LICENSE retained)",
+  "archive_prefix": "archive/foxy-ice-station-z-itemchanger/",
+  "scope_note": "One original Ice Station Z 3DS CTRPF cheat text file containing author-labeled slot 1 item-changer sections, preserved under its original title rather than inventing a title ID.",
+  "rights_note": "Original code document self-attributes all included cheat sections to Foxy#XTN; retain upstream Apache license. Text contains experimental item warnings and unverified game instructions, and has no confirmed title/build ID.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "ISZ Item Changer Slot1.txt",
+      "archive_path": "archive/foxy-ice-station-z-itemchanger/ISZ Item Changer Slot1.txt",
+      "git_blob_sha": "2b8389fb6e36fe4ce5db4710e92c11ae1d2cea53"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-ice-station-z-itemchanger/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    }
+  ]
+}

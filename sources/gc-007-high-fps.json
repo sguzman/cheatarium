@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "gc-007-high-fps",
+  "repository": "https://github.com/MOOMAIV/Gamecube-high-fps-patches",
+  "snapshot_commit": "7cfc309ee1a211e8becd562ad4244ace24e098f1",
+  "license": "GPL-3.0 (source LICENSE retained)",
+  "archive_prefix": "archive/gc-007-high-fps/",
+  "scope_note": "One original GameCube 007 Agent Under Fire Gecko-code text file, with 120/240/300 FPS alternatives separated for REV0 and REV1 by the source author.",
+  "rights_note": "Upstream project author describes self-created patches; original GPLv3 LICENSE and instructions retained. Source author notes incomplete other games and driving-stage limitations. Cheatarium preserves original code and source revision labels, not hardware/emulator testing.",
+  "native_cheat_counts": {
+    "gamecube": 1
+  },
+  "files": [
+    {
+      "upstream_path": "007 Agent under fire (GW7E69)",
+      "archive_path": "archive/gc-007-high-fps/007 Agent under fire (GW7E69)",
+      "git_blob_sha": "c787910c51e484252364bec77aed6b136ddd0ecf"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/gc-007-high-fps/LICENSE",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/gc-007-high-fps/README.md",
+      "git_blob_sha": "521abcc13ad742cc27323a6724164784b6c3d941"
+    }
+  ]
+}

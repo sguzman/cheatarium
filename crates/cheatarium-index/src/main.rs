@@ -829,6 +829,12 @@ fn run() -> Result<()> {
         "wii-pikmin2-gecko",
         "wii-rhythm-heaven-gecko",
         "wii-mario-sports-mix-gecko",
+        "wii-barrel-blast-gecko",
+        "wii-excite-truck-gecko",
+        "wii-mario-power-tennis-gecko",
+        "wii-super-sluggers-gecko",
+        "gc-007-high-fps",
+        "foxy-ice-station-z-itemchanger",
         "xan1242-nfsu-ps2",
         "xan1242-gt3-no-interlace",
         "xan1242-gt3-freecam",
@@ -882,6 +888,10 @@ fn run() -> Result<()> {
                 | "wii-pikmin2-gecko"
                 | "wii-rhythm-heaven-gecko"
                 | "wii-mario-sports-mix-gecko"
+                | "wii-barrel-blast-gecko"
+                | "wii-excite-truck-gecko"
+                | "wii-mario-power-tennis-gecko"
+                | "wii-super-sluggers-gecko"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
                 {
                     let disc = original
@@ -919,6 +929,14 @@ fn run() -> Result<()> {
                         "gateshark-text",
                         original.trim_end_matches(".txt").to_owned(),
                     )
+                }
+                "foxy-ice-station-z-itemchanger" if original == "ISZ Item Changer Slot1.txt" => {
+                    // Original author-titled code file, no verified game build/title ID.
+                    ("3ds", "gateshark-text", original.to_owned())
+                }
+                "gc-007-high-fps" if original == "007 Agent under fire (GW7E69)" => {
+                    // Source includes distinct REV0/REV1 and FPS alternatives in plain text.
+                    ("gamecube", "gecko-plain-text", original.to_owned())
                 }
                 "foxy-re-revelations-3ds" if original == "ReR Fps Codes.txt" => {
                     // Native author-supplied auxiliary title; do not invent a game/build ID.
@@ -1087,7 +1105,7 @@ fn run() -> Result<()> {
                 "goldhen-mc4" => parse_goldhen_mc4(&decoded),
                 "goldhen-shn" => parse_goldhen_shn(&decoded),
                 "goldhen-mc4-xml" => parse_goldhen_shn(&decoded),
-                "dolphin-ini" => parse_gecko_ini(&decoded),
+                "dolphin-ini" | "gecko-plain-text" => parse_gecko_ini(&decoded),
                 "gecko-markdown" => parse_gecko_markdown(&decoded),
                 "pcsx2-pnach" | "ps1-native-cht" | "gateshark-text" => {
                     parse_native_sections(&decoded)

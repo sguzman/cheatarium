@@ -57,6 +57,12 @@ on:
       - "sources/wii-pikmin2-gecko.json"
       - "sources/wii-rhythm-heaven-gecko.json"
       - "sources/wii-mario-sports-mix-gecko.json"
+      - "sources/wii-barrel-blast-gecko.json"
+      - "sources/wii-excite-truck-gecko.json"
+      - "sources/wii-mario-power-tennis-gecko.json"
+      - "sources/wii-super-sluggers-gecko.json"
+      - "sources/gc-007-high-fps.json"
+      - "sources/foxy-ice-station-z-itemchanger.json"
       - "sources/xan1242-nfsu-ps2.json"
       - "sources/xan1242-gt3-no-interlace.json"
       - "sources/xan1242-gt3-freecam.json"
@@ -120,6 +126,12 @@ on:
       - "archive/wii-pikmin2-gecko/**"
       - "archive/wii-rhythm-heaven-gecko/**"
       - "archive/wii-mario-sports-mix-gecko/**"
+      - "archive/wii-barrel-blast-gecko/**"
+      - "archive/wii-excite-truck-gecko/**"
+      - "archive/wii-mario-power-tennis-gecko/**"
+      - "archive/wii-super-sluggers-gecko/**"
+      - "archive/gc-007-high-fps/**"
+      - "archive/foxy-ice-station-z-itemchanger/**"
       - "archive/xan1242-nfsu-ps2/**"
       - "archive/xan1242-gt3-no-interlace/**"
       - "archive/xan1242-gt3-freecam/**"
@@ -536,6 +548,24 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform wii --source-record-id 'wii-mario-sports-mix-gecko:codes/RMKE01.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-mario-sports-mix-gecko" and d["provenance"]["upstream_path"] == "codes/RMKE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-barrel-blast-gecko:codes/RDKE01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-barrel-blast-gecko" and d["provenance"]["upstream_path"] == "codes/RDKE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-excite-truck-gecko:codes/REXE01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-excite-truck-gecko" and d["provenance"]["upstream_path"] == "codes/REXE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-mario-power-tennis-gecko:codes/RMAE01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-mario-power-tennis-gecko" and d["provenance"]["upstream_path"] == "codes/RMAE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-super-sluggers-gecko:codes/RMBE01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-super-sluggers-gecko" and d["provenance"]["upstream_path"] == "codes/RMBE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform gamecube --source-record-id 'gc-007-high-fps:007 Agent under fire (GW7E69)' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "gamecube" and d["provenance"]["source_id"] == "gc-007-high-fps" and d["provenance"]["upstream_path"] == "007 Agent under fire (GW7E69)" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-ice-station-z-itemchanger:ISZ Item Changer Slot1.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-ice-station-z-itemchanger" and d["provenance"]["upstream_path"] == "ISZ Item Changer Slot1.txt" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'

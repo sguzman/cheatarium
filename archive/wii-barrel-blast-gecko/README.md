@@ -1,0 +1,161 @@
+# Barrel Blast Patch
+
+![Donkey Kong Barrel Blast](assets/logo.png)
+
+Play the Wii release of **Donkey Kong Barrel Blast** with a **GameCube
+controller**, a set of **DK Bongos**, or a **Classic Controller** — instead
+of shaking a Wii Remote and Nunchuk. Works with the USA (`RDKE01`), European
+(`RDKP01`, *Donkey Kong: Jet Race*) and Japanese (`RDKJ01`, *Donkey Kong Taru
+Jet Race*) releases.
+
+The patch is applied to your own copy of the game: drop a clean `.wbfs` or
+`.iso` onto the patcher and play the result on a Wii (USB loader) or in
+Dolphin. Nothing from the game is included in this repository.
+
+## Status — v1.5
+
+Tested on a real Wii with a USB loader. The USA, European and Japanese
+releases all work; the European and Japanese builds run the same code, moved to
+those releases' addresses.
+
+**Works:**
+
+- GameCube pad: left/right drums, both-drums jump, steering, menus
+- DK Bongos: left/right drums, both drums to jump, attack and menus, with
+  the Wii Remote's motion still working (rim hits and claps no longer steer
+  you right)
+- presses registering reliably, and unplugging/replugging a GameCube pad
+  at the title screen or in menus
+- a GameCube pad driving a player that has no Wii Remote (players 1 and 2)
+- Classic Controller: buttons, pointer, left and right drums
+- the HOME Menu (Wii Remote or Classic Controller), with no accidental HOME
+  Menu when a Classic Controller is plugged in
+
+**Known issues:**
+
+- player 1's pointer may not respond until the HOME Menu has been opened once
+- player 2 occasionally misses a shake
+- on DK Bongos, an off-centre hit on the right drum's lower half can punch
+- a GameCube pad unplugged and replugged mid-race doesn't come back until
+  you're back at a menu
+- relaunching the game without powering the console off can leave GameCube
+  pads unresponsive — power-cycle between sessions
+- players 3 and 4 are untested
+
+## Controls
+
+### GameCube controller
+
+| Input | Action |
+| --- | --- |
+| Y, R, or the R trigger | Right drum |
+| X, L, or the L trigger | Left drum |
+| Z (or both drums together) | Both drums — jump / boost |
+| Control stick | Steer / move |
+| C-stick | Pointer |
+| A / B | Wii Remote A / B |
+| Start | Wii Remote + |
+| D-pad | D-pad |
+
+### DK Bongos
+
+The bongos plug into a GameCube port and are detected automatically (they
+have no sticks).
+
+| Input | Action |
+| --- | --- |
+| Left drum | Left drum, and Wii Remote B (menu back) |
+| Right drum | Right drum, and Wii Remote A (attack / menu select) |
+| Both drums together | Jump / boost |
+| Start | Pause (Wii Remote +) |
+| Clap | Nothing |
+
+The Wii Remote's own buttons and motion keep working alongside the bongos.
+
+There's no steering on bongos alone, just like the original game, which pairs
+bongo hits with Wii Remote tilt.
+
+### Classic Controller
+
+| Input | Action |
+| --- | --- |
+| R, ZR, or the R trigger | Right drum |
+| X, L, ZL, or the L trigger | Left drum |
+| ZR, or both drums together | Jump / boost |
+| Left stick | Steer / move |
+| Right stick | Pointer |
+| A / B, D-pad, + / −, HOME | Same as the Wii Remote |
+
+A Wii Remote must still be connected for a Classic Controller (it plugs into
+the remote). A GameCube pad can play without one.
+
+## Installing
+
+### Patch your disc image
+
+You need a clean `.wbfs` or `.iso` of the **USA** (`RDKE01`), **European**
+(`RDKP01`) or **Japanese** (`RDKJ01`) release and
+[Wiimms ISO Tool](https://wit.wiimm.de/) (`wit`) on your `PATH`.
+
+```bash
+python3 tools/gui.py
+```
+
+Drop the image onto the window (or click to choose it). The patcher checks the
+disc ID, patches `sys/main.dol`, rebuilds the image in the same format, and
+replaces your file, keeping the original next to it as `<name>.bak`. Other
+regions, and images that are already patched, are refused rather than
+corrupted.
+
+### Play on a Wii
+
+Copy the patched image to your USB loader's drive as usual
+(`wbfs/<Title> [RDKE01]/RDKE01.wbfs`, or `RDKP01` / `RDKJ01`). In the loader's settings for this game,
+turn the **debugger, hook type and cheats off**: the loader's cheat code
+handler loads into the same memory as the patch and black-screens the game.
+
+### Play in Dolphin
+
+Either boot the patched image, or use the Gecko codes instead: copy
+`codes/<disc ID>.ini` (`RDKE01`, `RDKP01` or `RDKJ01`) to Dolphin's
+`GameSettings` folder, enable the code under
+**Properties → Gecko Codes**, and set GameCube Port 1 to your controller or
+adapter before booting. The Gecko codes don't include DK Bongos support or the
+Classic Controller left drum, which only exist in patched images.
+
+## Building from source
+
+The patcher needs only Python 3 and `wit`. The one piece of C
+(`src/cc_nunchuk.c`) ships prebuilt in `tools/prebuilt/`, checked against its
+source hash. With [devkitPPC](https://devkitpro.org/) installed it's rebuilt
+automatically. To patch a `main.dol` directly:
+
+```bash
+python3 tools/inject_dol.py <retail main.dol> <patched main.dol>
+```
+
+How the patch works, and the long investigation behind it, is in
+[docs/TECHNICAL.md](docs/TECHNICAL.md).
+
+## Credits
+
+- Inspired by Vague Rant's Classic Controller hacks for *Donkey Kong Jungle
+  Beat*, whose approach (letting the game see Nunchuk input from a Classic
+  Controller) the Classic Controller left drum follows.
+- Gecko code format and code handler by the Gecko / WiiRD community.
+
+## Contact
+
+quatricsoftware@gmail.com
+
+No support will be provided for this tool.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+Copyright (c) 2026 quatric
+
+### Modded images
+
+Disc patchers match the first four characters of the game ID (ID4), so mods can change the last two characters. The original disc ID and filename are preserved. Revision and executable patch-site checks still apply; mods that change required code may be incompatible.
