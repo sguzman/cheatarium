@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33207,
-  "game_candidate_groups": 26650,
+  "source_files": 33208,
+  "game_candidate_groups": 26651,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 80881,
   "reviewed_snes_revision_alternatives": 27,
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "5aa324894f6f5fc09582505abff7dfcf956e2a8f4455aad6e7ef1722a0aac576",
+      "sha256": "c73e115773bca55efcbdcdcddbc252c11876f6ba32937ac6db3277e882a92526",
       "size_bytes": 20988
     },
     {
@@ -233,8 +233,8 @@
     },
     {
       "path": "games/psp.json.gz",
-      "sha256": "a7c131869b8916d1231dfec4cfada6833b3162e7a0ed507719097c5b2200e2bf",
-      "size_bytes": 90575
+      "sha256": "228d696470afa59753229fc46d9543f739338e182ecde697101106d5051de2ae",
+      "size_bytes": 90637
     },
     {
       "path": "games/satellaview.json.gz",
@@ -408,8 +408,8 @@
     },
     {
       "path": "psp.json.gz",
-      "sha256": "ce747c0f38158747afede8b0ca4be3286c54c16c92952cb7658292d4328a5703",
-      "size_bytes": 1950768
+      "sha256": "5cb363aa957da1aeeb3d06afd865821342b467ac6eb95a96b7150b253ae7c479",
+      "size_bytes": 1951163
     },
     {
       "path": "repeats/32x.json.gz",
