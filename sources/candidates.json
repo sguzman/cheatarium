@@ -3,123 +3,43 @@
   "description": "Unimported, source-level rights-review candidates; imported data is inventoried only in sources/<source-id>.json. This queue does not imply permission to copy or tested compatibility.",
   "candidates": [
     {
-      "id": "pcsx2-cheats-collection",
-      "repo": "https://github.com/xs1l3n7x/pcsx2_cheats_collection",
+      "id": "asaenzm-gow-psp-cheats",
+      "repo": "https://github.com/asaenzm1327-svg/GOW_PSP_Cheats_Pack",
       "platforms": [
-        "ps2"
+        "psp"
       ],
       "formats": [
-        "pnach"
+        "psp-cwcheat-ini"
       ],
       "state": "link_only_rights_review",
-      "repo_license": "not_found_in_root",
-      "notes": "README says decrypted cheats derive from Ultimate PCSX2 Cheater and CheatDevicePS2; verify those upstream data rights and credits."
+      "rights": "No root LICENSE or explicit redistribution permission found.",
+      "notes": "Four labeled PSP CWCheat INIs for God of War Chains of Olympus and Ghost of Sparta (English and Spanish labels). Authorship/rights for individual cheats need verification before archival; no payload imported."
     },
     {
-      "id": "dolphin-gecko-examples",
-      "repo": "https://github.com/hakami55/Gecko-Codes-for-Dolphin",
+      "id": "asaenzm-resistance-psp-cheats",
+      "repo": "https://github.com/asaenzm1327-svg/Resistance_Retribution_Cheats_Pack",
       "platforms": [
-        "gamecube",
-        "wii"
+        "psp"
       ],
       "formats": [
-        "gecko-code-in-readme"
+        "psp-cwcheat-ini"
       ],
       "state": "link_only_rights_review",
-      "repo_license": "not_found_in_root",
-      "notes": "README contains game-ID/revision-specific Gecko code blocks and names original community contributors; no root license found."
+      "rights": "No root LICENSE or explicit redistribution permission found.",
+      "notes": "Two bilingual PSP CWCheat INI source files; investigate individual code authorship and repository reuse terms before copying."
     },
     {
-      "id": "switch-cheats-db",
-      "repo": "https://github.com/HamletDuFromage/switch-cheats-db",
+      "id": "bedrockreal-umbrella-gc",
+      "repo": "https://github.com/bedrockreal/UmbrElla",
       "platforms": [
-        "switch"
+        "gamecube"
       ],
       "formats": [
-        "atmosphere",
-        "sxos"
+        "dolphin-ini"
       ],
       "state": "link_only_rights_review",
-      "repo_license": "not_found_in_root",
-      "notes": "README describes a moving mirror of GBATemp and graphics-code communities; preserve distinct upstream authors and game build IDs."
-    },
-    {
-      "id": "gamehacking-org",
-      "repo": "https://gamehacking.org/",
-      "platforms": [
-        "multiple"
-      ],
-      "formats": [
-        "device-codes"
-      ],
-      "state": "link_only_rights_review",
-      "repo_license": "undetermined",
-      "notes": "Excellent research reference; confirm export permissions and individual source attribution before bulk import."
-    },
-    {
-      "id": "r0ah-vitacheat",
-      "repo": "https://github.com/r0ah/vitacheat",
-      "platforms": [
-        "vita"
-      ],
-      "formats": [
-        "vitacheat-psv"
-      ],
-      "state": "link_only_rights_review",
-      "repo_license": "not_found_in_root",
-      "notes": "Reviewed pinned tree bb8158a1c696914a8ea2299889d42ab9a57a3ab2 contains 676 .psv files; README calls this a user-created community database and cites contributors. No LICENSE/COPYING/NOTICE file found. Contributor/code-specific reuse permission remains unverified; do not bulk rehost."
-    },
-    {
-      "id": "shumnot-vitacheat",
-      "repo": "https://github.com/ShumnoT/VitaCheatDatabase",
-      "platforms": [
-        "vita"
-      ],
-      "formats": [
-        "vitacheat-psv"
-      ],
-      "state": "link_only_rights_review",
-      "repo_license": "not_found_in_root",
-      "notes": "Reviewed pinned tree a394316be0fe7b233b49b7ba22f14fae56a1b9c8 contains 119 .psv files; README acknowledges external code sites. No LICENSE/COPYING/NOTICE file found; third-party rights unresolved."
-    },
-    {
-      "id": "kimdebroye-n3ds-cheat-codes",
-      "repo": "https://github.com/KimDebroye/N3DS-Cheat-Codes",
-      "platforms": [
-        "3ds"
-      ],
-      "formats": [
-        "gateshark-text"
-      ],
-      "state": "link_only_rights_review",
-      "repo_license": "not_found_in_root",
-      "notes": "Reviewed pinned tree c454a953fa2294372192443d06391058ab68198a contains ten .txt files; owner states cheats are custom created but no LICENSE/COPYING/NOTICE file is present. Ask for reuse terms before ingesting."
-    },
-    {
-      "id": "pcsx2-official-patches",
-      "repo": "https://github.com/PCSX2/pcsx2_patches",
-      "platforms": [
-        "ps2"
-      ],
-      "formats": [
-        "pnach"
-      ],
-      "state": "link_only_rights_review",
-      "repo_license": "not_found_in_root",
-      "notes": "Reviewed pinned revision 9f82a4d2b8a2aaf83807421f18d5d30263ea826c has 4,710 .pnach files. README explicitly says PCSX2 maintainers distribute third-party patches but neither create nor repair them. No LICENSE/COPYING/NOTICE file found; author-specific redistribution rights unresolved. Link only; do not import payloads."
-    },
-    {
-      "id": "foxy-isz-multiauthor",
-      "repo": "https://github.com/FoxyXTN/ISZ-3ds-cheats-for-ctrpf-ByFoxy.",
-      "platforms": [
-        "3ds"
-      ],
-      "formats": [
-        "gateshark-text"
-      ],
-      "state": "needs_file_level_review",
-      "repo_license": "Apache-2.0 root, third-party original authorship rights unresolved",
-      "notes": "Reviewed pinned revision 0c6bbbc53907c8eb91de6027c3250b99f0bd74f5; main 0004000000199700.txt source is 553445 bytes. README explicitly credits multiple creators (Owl, Foxy, Peanut, Springtrap, Cracko, Darksiders, Megapika) and others. Do not copy until contributor rights established; root license cannot settle every source code author's rights."
+      "rights": "No root LICENSE; README allows direct use of own codes but does not explicitly grant redistribution or relicensing.",
+      "notes": "Mario Golf: Toadstool Tour PAL Gecko code file GFTP01.ini authored by repository owner, with PowerPC sources. Obtain clear redistribution permission before archival."
     },
     {
       "id": "bucanero-dreamcast-cheats",
@@ -135,19 +55,17 @@
       "notes": "Reviewed commit 13c7a5c9957331398252e2a8916be7dd61b68144: 387 per-game native Markdown code documents. Root LICENSE GPLv3, but README is an index of game/code pages with no per-cheat author attribution or evidence that repo owner originated all codes. Do not bulk rehost until original cheat creators' reuse/attribution terms are checked."
     },
     {
-      "id": "xan1242-console-cheat-codes",
-      "repo": "https://github.com/xan1242/Console-Cheat-Codes",
+      "id": "chidreams-rpcs3-artemis",
+      "repo": "https://github.com/chidreams/Artemis-Patch-Collection-RPCS3",
       "platforms": [
-        "ps1",
-        "ps2"
+        "ps3"
       ],
       "formats": [
-        "ps1-native-cht",
-        "pcsx2-pnach"
+        "rpcs3-patch-yaml"
       ],
       "state": "link_only_rights_review",
-      "repo_license": "MIT root, but upstream credits multiple independent cheat-code authors",
-      "notes": "Reviewed master tree: 67 PS1 .cht source files and 48 PS2 .pnach source files. README explicitly says not all codes are original and credits Aero_, Arapapa, asasega and HugoPocked. Example PNACH files credit Silent as code author. Do not bulk rehost until per-file author licensing and permission are established; preserve author-specific labels and revisions."
+      "repo_license": "MIT root project license; converted third-party PS3 cheat original author permissions unknown",
+      "notes": "Original README identifies source content as Aldo's PS3 cheat database converted to RPCS3 patch YAML. Converters own their transformation work but cannot unilaterally license other original code authors' rights; do not bulk rehost without file-level review."
     },
     {
       "id": "cylfox-shadow-colossus-camera",
@@ -189,30 +107,70 @@
       "notes": "Repository README describes a self-made Ridge Racers 2 (UCES00422) PSP cheat collection; one native UCES00422.ini. No LICENSE or other explicit redistribution permission; link-only until author grants reuse rights."
     },
     {
-      "id": "willmidia-ape-escape-2-gadget-swap",
-      "repo": "https://github.com/WillMidia/ape-escape-2-quick-gadget-swap",
+      "id": "dolphin-gecko-examples",
+      "repo": "https://github.com/hakami55/Gecko-Codes-for-Dolphin",
       "platforms": [
-        "ps2"
+        "gamecube",
+        "wii"
       ],
       "formats": [
-        "pcsx2-pnach"
+        "gecko-code-in-readme"
       ],
       "state": "link_only_rights_review",
-      "repo_license": "No redistribution license identified",
-      "notes": "One original Ape Escape 2 NTSC-U quick-gadget swap PNACH and accompanying readme/patcher. No LICENSE; avoid redistribution despite apparently original authorship."
+      "repo_license": "not_found_in_root",
+      "notes": "README contains game-ID/revision-specific Gecko code blocks and names original community contributors; no root license found."
     },
     {
-      "id": "scottadkin-gt3-ntsc-patches",
-      "repo": "https://github.com/scottadkin/Gran-Turismo-3-NTSC-Patches",
+      "id": "duckstation-chtdb",
+      "repo": "https://github.com/duckstation/chtdb",
       "platforms": [
-        "ps2"
+        "ps1"
       ],
       "formats": [
-        "pcsx2-pnach"
+        "duckstation-native-cht"
       ],
       "state": "link_only_rights_review",
-      "repo_license": "No redistribution license identified",
-      "notes": "74 native Gran Turismo 3 PCSX2 PNACH originals and revisions, including extensive bundled cheat recipes. No LICENSE or explicit redistribution permission; link-only pending rights review and duplicate/derivation audit."
+      "rights": "Upstream LICENSE explicitly reserves cheat and patch copyright to original authors; MIT applies only to processing scripts.",
+      "notes": "Pinned bulk inventory e3cce509 contains 4,497 cheats and 138 patches. Metadata-only snapshot under sources/external-bulk/; no cheat or patch contents archived."
+    },
+    {
+      "id": "foxy-isz-multiauthor",
+      "repo": "https://github.com/FoxyXTN/ISZ-3ds-cheats-for-ctrpf-ByFoxy.",
+      "platforms": [
+        "3ds"
+      ],
+      "formats": [
+        "gateshark-text"
+      ],
+      "state": "needs_file_level_review",
+      "repo_license": "Apache-2.0 root, third-party original authorship rights unresolved",
+      "notes": "Reviewed pinned revision 0c6bbbc53907c8eb91de6027c3250b99f0bd74f5; main 0004000000199700.txt source is 553445 bytes. README explicitly credits multiple creators (Owl, Foxy, Peanut, Springtrap, Cracko, Darksiders, Megapika) and others. Do not copy until contributor rights established; root license cannot settle every source code author's rights."
+    },
+    {
+      "id": "gamehacking-org",
+      "repo": "https://gamehacking.org/",
+      "platforms": [
+        "multiple"
+      ],
+      "formats": [
+        "device-codes"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "undetermined",
+      "notes": "Excellent research reference; confirm export permissions and individual source attribution before bulk import."
+    },
+    {
+      "id": "kimdebroye-n3ds-cheat-codes",
+      "repo": "https://github.com/KimDebroye/N3DS-Cheat-Codes",
+      "platforms": [
+        "3ds"
+      ],
+      "formats": [
+        "gateshark-text"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned tree c454a953fa2294372192443d06391058ab68198a contains ten .txt files; owner states cheats are custom created but no LICENSE/COPYING/NOTICE file is present. Ask for reuse terms before ingesting."
     },
     {
       "id": "kittymaya-gecko-codes",
@@ -230,43 +188,30 @@
       "notes": "Two short source-authored Wii/GameCube Gecko code.txt originals with corresponding source.asm and README files, for HAPE and RMCE. Review original authorship and request a public license before rehosting."
     },
     {
-      "id": "asaenzm-gow-psp-cheats",
-      "repo": "https://github.com/asaenzm1327-svg/GOW_PSP_Cheats_Pack",
+      "id": "pcsx2-cheats-collection",
+      "repo": "https://github.com/xs1l3n7x/pcsx2_cheats_collection",
       "platforms": [
-        "psp"
+        "ps2"
       ],
       "formats": [
-        "psp-cwcheat-ini"
+        "pnach"
       ],
       "state": "link_only_rights_review",
-      "rights": "No root LICENSE or explicit redistribution permission found.",
-      "notes": "Four labeled PSP CWCheat INIs for God of War Chains of Olympus and Ghost of Sparta (English and Spanish labels). Authorship/rights for individual cheats need verification before archival; no payload imported."
+      "repo_license": "not_found_in_root",
+      "notes": "README says decrypted cheats derive from Ultimate PCSX2 Cheater and CheatDevicePS2; verify those upstream data rights and credits."
     },
     {
-      "id": "asaenzm-resistance-psp-cheats",
-      "repo": "https://github.com/asaenzm1327-svg/Resistance_Retribution_Cheats_Pack",
+      "id": "pcsx2-official-patches",
+      "repo": "https://github.com/PCSX2/pcsx2_patches",
       "platforms": [
-        "psp"
+        "ps2"
       ],
       "formats": [
-        "psp-cwcheat-ini"
+        "pnach"
       ],
       "state": "link_only_rights_review",
-      "rights": "No root LICENSE or explicit redistribution permission found.",
-      "notes": "Two bilingual PSP CWCheat INI source files; investigate individual code authorship and repository reuse terms before copying."
-    },
-    {
-      "id": "xenia-canary-game-patches",
-      "repo": "https://github.com/xenia-canary/game-patches",
-      "platforms": [
-        "xbox360"
-      ],
-      "formats": [
-        "xenia-game-patches"
-      ],
-      "state": "link_only_rights_review",
-      "rights": "No repository-wide LICENSE reported on review; multi-author game patch provenance must be assessed per file.",
-      "notes": "Potential Xbox 360 game patch source collection, not all patch entries are cheats. Keep link-only until code authorship, native patch types and redistribution terms are verified."
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned revision 9f82a4d2b8a2aaf83807421f18d5d30263ea826c has 4,710 .pnach files. README explicitly says PCSX2 maintainers distribute third-party patches but neither create nor repair them. No LICENSE/COPYING/NOTICE file found; author-specific redistribution rights unresolved. Link only; do not import payloads."
     },
     {
       "id": "questionblock22-misc-gecko",
@@ -282,17 +227,17 @@
       "notes": "Multiple native Mario Kart Wii regional Gecko .txt outputs. Enable-Balloons-for-Mission-Mode subfolder credits prior contributors including mkwcat, stebler and others; source's limited MIT notice cannot conclusively establish redistribution permission for all generated codes. Review per-subfolder rights before copying."
     },
     {
-      "id": "bedrockreal-umbrella-gc",
-      "repo": "https://github.com/bedrockreal/UmbrElla",
+      "id": "r0ah-vitacheat",
+      "repo": "https://github.com/r0ah/vitacheat",
       "platforms": [
-        "gamecube"
+        "vita"
       ],
       "formats": [
-        "dolphin-ini"
+        "vitacheat-psv"
       ],
       "state": "link_only_rights_review",
-      "rights": "No root LICENSE; README allows direct use of own codes but does not explicitly grant redistribution or relicensing.",
-      "notes": "Mario Golf: Toadstool Tour PAL Gecko code file GFTP01.ini authored by repository owner, with PowerPC sources. Obtain clear redistribution permission before archival."
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned tree bb8158a1c696914a8ea2299889d42ab9a57a3ab2 contains 676 .psv files; README calls this a user-created community database and cites contributors. No LICENSE/COPYING/NOTICE file found. Contributor/code-specific reuse permission remains unverified; do not bulk rehost."
     },
     {
       "id": "righteousryan-melee-gecko",
@@ -325,17 +270,85 @@
       "notes": "Reviewed commit 8ec531942871cd4e0aaefe5eb596fb2b49e9ae92: 1,009 original repository file blobs, 568 platform-specific Markdown candidate documents across 3DS, DS, GameCube, Switch and Wii. The README says only author-created codes are included, but contains no redistribution grant. Do not bulk rehost original cheat text until author permission or an explicit license is documented."
     },
     {
-      "id": "chidreams-rpcs3-artemis",
-      "repo": "https://github.com/chidreams/Artemis-Patch-Collection-RPCS3",
+      "id": "scottadkin-gt3-ntsc-patches",
+      "repo": "https://github.com/scottadkin/Gran-Turismo-3-NTSC-Patches",
       "platforms": [
-        "ps3"
+        "ps2"
       ],
       "formats": [
-        "rpcs3-patch-yaml"
+        "pcsx2-pnach"
       ],
       "state": "link_only_rights_review",
-      "repo_license": "MIT root project license; converted third-party PS3 cheat original author permissions unknown",
-      "notes": "Original README identifies source content as Aldo's PS3 cheat database converted to RPCS3 patch YAML. Converters own their transformation work but cannot unilaterally license other original code authors' rights; do not bulk rehost without file-level review."
+      "repo_license": "No redistribution license identified",
+      "notes": "74 native Gran Turismo 3 PCSX2 PNACH originals and revisions, including extensive bundled cheat recipes. No LICENSE or explicit redistribution permission; link-only pending rights review and duplicate/derivation audit."
+    },
+    {
+      "id": "shumnot-vitacheat",
+      "repo": "https://github.com/ShumnoT/VitaCheatDatabase",
+      "platforms": [
+        "vita"
+      ],
+      "formats": [
+        "vitacheat-psv"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "Reviewed pinned tree a394316be0fe7b233b49b7ba22f14fae56a1b9c8 contains 119 .psv files; README acknowledges external code sites. No LICENSE/COPYING/NOTICE file found; third-party rights unresolved."
+    },
+    {
+      "id": "switch-cheats-db",
+      "repo": "https://github.com/HamletDuFromage/switch-cheats-db",
+      "platforms": [
+        "switch"
+      ],
+      "formats": [
+        "atmosphere",
+        "sxos"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "not_found_in_root",
+      "notes": "README describes a moving mirror of GBATemp and graphics-code communities; preserve distinct upstream authors and game build IDs."
+    },
+    {
+      "id": "willmidia-ape-escape-2-gadget-swap",
+      "repo": "https://github.com/WillMidia/ape-escape-2-quick-gadget-swap",
+      "platforms": [
+        "ps2"
+      ],
+      "formats": [
+        "pcsx2-pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No redistribution license identified",
+      "notes": "One original Ape Escape 2 NTSC-U quick-gadget swap PNACH and accompanying readme/patcher. No LICENSE; avoid redistribution despite apparently original authorship."
+    },
+    {
+      "id": "xan1242-console-cheat-codes",
+      "repo": "https://github.com/xan1242/Console-Cheat-Codes",
+      "platforms": [
+        "ps1",
+        "ps2"
+      ],
+      "formats": [
+        "ps1-native-cht",
+        "pcsx2-pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "MIT root, but upstream credits multiple independent cheat-code authors",
+      "notes": "Reviewed master tree: 67 PS1 .cht source files and 48 PS2 .pnach source files. README explicitly says not all codes are original and credits Aero_, Arapapa, asasega and HugoPocked. Example PNACH files credit Silent as code author. Do not bulk rehost until per-file author licensing and permission are established; preserve author-specific labels and revisions."
+    },
+    {
+      "id": "xenia-canary-game-patches",
+      "repo": "https://github.com/xenia-canary/game-patches",
+      "platforms": [
+        "xbox360"
+      ],
+      "formats": [
+        "xenia-game-patches"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "No repository-wide LICENSE reported on review; multi-author game patch provenance must be assessed per file.",
+      "notes": "Potential Xbox 360 game patch source collection, not all patch entries are cheats. Keep link-only until code authorship, native patch types and redistribution terms are verified."
     }
   ]
 }

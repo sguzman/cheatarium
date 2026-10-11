@@ -238,6 +238,7 @@ jobs:
               exit 1
             fi
           done
+          python3 tools/test_external_bulk.py
       - name: Confirm python-tests stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -287,6 +288,7 @@ jobs:
           python3 tools/measure_ps2_bulk_coverage.py --check
           python3 tools/measure_switch_bulk_coverage.py --write
           python3 tools/measure_switch_bulk_coverage.py --check
+          python3 tools/external_bulk.py --check
       - name: Confirm index-generated stage
         env:
           GITHUB_TOKEN: ${{ github.token }}

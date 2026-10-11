@@ -34,6 +34,10 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 5. **Make room for the weird stuff.** Traditional cheat devices, secrets, glitches, passwords, and quality-of-life modifications belong here.
 6. **No game images or firmware.** This is a cheat library, not a ROM or BIOS archive.
 
+## External bulk reference catalogs (link-only)
+
+- [Pinned external source metadata](sources/external-bulk/) — filename, blob hash and byte-count indexes for 4,497 DuckStation PS1 cheats, 138 PS1 patches and 501 Xenia Xbox 360 patch files. These **5,136 upstream files are not archived**: rights are unresolved and some patches are not cheats. Source links are read-only references, not independently tested compatibility evidence. Use `python3 tools/external_bulk.py --search "SLUS-" --platform ps1` for offline filename lookup.
+
 ## Status
 
 Cheatarium preserves **49,016 archived original files, including cheat data, supporting source files and notices, from 79 pinned upstream collections**. Its complete pinned Libretro snapshot covers all **51 source directories** (27,915 original `.cht` files); the latest console-focused bulk imports add **75 PlayStation 5-native etaHEN cheat files, 58 PS Vita rinCheat originals, the entire 6,375,204-byte PS2 CheatDevice database, 7,244 original PS2 ZIP members, 473 CRC-labeled PS2 PNACH files and 2,992 Nintendo Switch NXCheats native cheat text files**. The latter contains **1,483 source-declared game sections** and **200,941 original hexadecimal code lines**. Original bytes, pinned Git blob IDs, source notices and contributor rights caveats are preserved.

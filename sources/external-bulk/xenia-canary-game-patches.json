@@ -1,0 +1,2521 @@
+{
+  "schema_version": 1,
+  "id": "xenia-canary-game-patches",
+  "repository": "https://github.com/xenia-canary/game-patches",
+  "snapshot_commit": "106bb0a40be27b5a2444162562975e4885e1ce74",
+  "git_tree_sha": "106bb0a40be27b5a2444162562975e4885e1ce74",
+  "platform": "xbox-360",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "No repository-wide LICENSE was present in the pinned tree; patch authorship and redistribution permissions must be reviewed. Patches are not necessarily gameplay cheats. Only file names, hashes and sizes are indexed.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "patch": 501
+  },
+  "files": [
+    [
+      "patches/354807D1 - Painkiller Hell & Damnation (TU1).patch.toml",
+      "2026e338aad9e7ce5b6e073c084ecd38c4e1c7f3",
+      1252
+    ],
+    [
+      "patches/354807D1 - Painkiller Hell & Damnation.patch.toml",
+      "4b9c511a24ea215b90225c5913a5b440c5017538",
+      1246
+    ],
+    [
+      "patches/354807D5 - Deadfall Adventures (TU1).patch.toml",
+      "e677bbf67f5af9b996b507184677c717fc0fb990",
+      1242
+    ],
+    [
+      "patches/354807D5 - Deadfall Adventures.patch.toml",
+      "e0b75e15c20ed67e85ce8776af8f4b12051f49ff",
+      1236
+    ],
+    [
+      "patches/415407D7 - Catherine (USA).patch.toml",
+      "734a6c50bf7ef19dcd7e7ab29f3448dac0dbeb56",
+      587
+    ],
+    [
+      "patches/415407DE - Game of Thrones (USA).patch.toml",
+      "c4fabba0ed30197429f664fc5d03b02b461984b0",
+      898
+    ],
+    [
+      "patches/415607D2 - Quake 4.patch.toml",
+      "a31cf577e3eddf0bd40f68cb3e103fd5c1cb9a01",
+      714
+    ],
+    [
+      "patches/415607D3 - Gun (Germany).patch.toml",
+      "9c42a7389ef039e6d1e803cc09ff5629de549d83",
+      473
+    ],
+    [
+      "patches/415607D3 - Gun (USA, Europe).patch.toml",
+      "12074910b04e9c12fcdf736f3bbd779e600c5aed",
+      491
+    ],
+    [
+      "patches/415607D3 - Gun.patch.toml",
+      "2f31770f2ec3a653c8a194ae17afac9fa247e831",
+      274
+    ],
+    [
+      "patches/415607D6 - Quake 2.patch.toml",
+      "3d86edfdd51cbfc7c6df1e8c91be872ee9468b90",
+      593
+    ],
+    [
+      "patches/415607D7 - Quake 4 (Germany).patch.toml",
+      "ce1b5f2c89209150dd560a89069c604c019e1e77",
+      639
+    ],
+    [
+      "patches/415607DA - Marvel Ultimate Alliance (Special Edition).patch.toml",
+      "edf6c70cdf5f250aaeb46392deb77ae7b141a6f4",
+      902
+    ],
+    [
+      "patches/415607DA - Marvel Ultimate Alliance (TU2).patch.toml",
+      "2a7a6d05be7deb13ecf551defa20242d23b29dd0",
+      897
+    ],
+    [
+      "patches/415607DA - Marvel Ultimate Alliance.patch.toml",
+      "7eba2b18efa53a5b82f45df444895c2da309fcbb",
+      891
+    ],
+    [
+      "patches/415607DD - Tony Hawk's Project 8.patch.toml",
+      "3f2e649aa123eef1d39074832f865a20ea9afda0",
+      1954
+    ],
+    [
+      "patches/415607E1 - Call Of Duty 3 (TU3).patch.toml",
+      "653735f7eb28b1e33b40b0b1309eaa27919ffb88",
+      1591
+    ],
+    [
+      "patches/415607E1 - Call Of Duty 3 MP (TU3).patch.toml",
+      "e63ad74ad20f8972e230e2213541cf03bf279ffb",
+      1920
+    ],
+    [
+      "patches/415607E1 - Call Of Duty 3 MP.patch.toml",
+      "5aac59210f2601b96becf67f1cf666b0182ff940",
+      1669
+    ],
+    [
+      "patches/415607E1 - Call Of Duty 3.patch.toml",
+      "aefeaaf913db041b0bb8632580974aff5f7e6fe4",
+      1591
+    ],
+    [
+      "patches/415607E6 - Call of Duty 4 Modern Warfare (TU4).patch.toml",
+      "c81f2838f22f5081ebe5ce1d03b14c37ab380d92",
+      725
+    ],
+    [
+      "patches/415607E6 - Call of Duty 4 Modern Warfare MP (TU4).patch.toml",
+      "4e85ae5653b85ac741734eb135c4c2457be15e7f",
+      728
+    ],
+    [
+      "patches/415607E8 - DreamWorks Shrek the Third (Europe).patch.toml",
+      "9cd5fb2c5923da4a87ddb97b9eee859f820caaac",
+      698
+    ],
+    [
+      "patches/415607E8 - DreamWorks Shrek the Third (USA).patch.toml",
+      "748a8d519cdcec5b13d253749f2633873c3e2978",
+      487
+    ],
+    [
+      "patches/415607EF - Singularity (TU2).patch.toml",
+      "7de3735b01059192d9dddec9e369b9cc1e8ad917",
+      897
+    ],
+    [
+      "patches/415607EF - Singularity.patch.toml",
+      "54db3a6e305e8a048a1ab9983601d873c1652f5e",
+      891
+    ],
+    [
+      "patches/415607F2 - Kung Fu Panda.patch.toml",
+      "56ed54a8a04ad8cedc13a8b7a6bc45ce1c8b45ec",
+      342
+    ],
+    [
+      "patches/415607F5 - Bee Movie Game.patch.toml",
+      "c45f92e9fe9b06938cab106f4ae2042e364865b7",
+      320
+    ],
+    [
+      "patches/415607FF - 007 Quantum of Solace MP (TU2).patch.toml",
+      "2d6a8b11d1a8d470f085762b06d6750bd1b61004",
+      600
+    ],
+    [
+      "patches/415607FF - 007 Quantum of Solace MP.patch.toml",
+      "08353a20ba78396dd3bfaf2a3c6264251cca8d58",
+      596
+    ],
+    [
+      "patches/415607FF - 007 Quantum of Solace.patch.toml",
+      "257c583985f9cdb0b7099cd8443ac15446998653",
+      648
+    ],
+    [
+      "patches/41560816 - X-Men Origins Wolverine.patch.toml",
+      "21b58a420742f41b3113c2f7b74eb64126bd1a43",
+      687
+    ],
+    [
+      "patches/41560817 - Call of Duty - Modern Warfare 2 (TU0).patch.toml",
+      "95b465f16c9eb3e817f060787ea22e8d4d906054",
+      725
+    ],
+    [
+      "patches/41560817 - Call of Duty - Modern Warfare 2 (TU9).patch.toml",
+      "143256e8a3e623276b12af46e3ceceeb2e18e793",
+      725
+    ],
+    [
+      "patches/41560817 - Call of Duty - Modern Warfare 2 MP (TU0).patch.toml",
+      "ec768554fd3be0279360356b42c766e44b316d7e",
+      728
+    ],
+    [
+      "patches/41560817 - Call of Duty - Modern Warfare 2 MP (TU9).patch.toml",
+      "56ab0e50590e5f42e0d8aed1ceee8ac59ffb34b0",
+      728
+    ],
+    [
+      "patches/41560817 - Modern Warfare 2 (TU6).patch.toml",
+      "f93f56f3efb624442986649c0042c67c5510823d",
+      1006
+    ],
+    [
+      "patches/4156081C - Call of Duty - World at War (Sep 27, 2008 Prototype) (MP).patch.toml",
+      "c4e972ffca92d52b357d6331f28c09844557a070",
+      601
+    ],
+    [
+      "patches/4156081C - Call of Duty - World at War (Sep 27, 2008 Prototype) (SP).patch.toml",
+      "08e2e3c27bb3663dc1de9691507b0f173734507e",
+      914
+    ],
+    [
+      "patches/4156082F - Marvel Ultimate Alliance 2.patch.toml",
+      "d86916cc9b4a7bc2cb41e682efb428f0a0c82bbe",
+      933
+    ],
+    [
+      "patches/41560845 - Blur (TU2).patch.toml",
+      "d3ce2aac6dfeb54e739e4e2c24eb1ca7cd109fd6",
+      1326
+    ],
+    [
+      "patches/41560845 - Blur.patch.toml",
+      "97abf3b743aa9563d7e4733bfa13af4590102ce4",
+      1320
+    ],
+    [
+      "patches/4156084C - Transformers War for Cybertron (TU1).patch.toml",
+      "2c8c127fbc5ce4b6581d53a73d9da8d6ee601c4e",
+      1361
+    ],
+    [
+      "patches/4156084C - Transformers War for Cybertron.patch.toml",
+      "eeb818a12a26b35cafd1405c52efa90853760477",
+      1355
+    ],
+    [
+      "patches/4156088B - Apache Air Assault (TU1).patch.toml",
+      "9a962710815bbf0032ddf30208dd9a82294141c6",
+      656
+    ],
+    [
+      "patches/4156088B - Apache Air Assault.patch.toml",
+      "1a34ab875acc653e6019ebed0c840f27d3e2feab",
+      650
+    ],
+    [
+      "patches/4156089C - Transformers Fall of Cybertron (TU1).patch.toml",
+      "d8965093824f459b35dceae24aa2cec1a49e5e58",
+      944
+    ],
+    [
+      "patches/4156089C - Transformers Fall of Cybertron (TU2).patch.toml",
+      "33ba1ce5f575f41d6826493a81424b91091d5d29",
+      944
+    ],
+    [
+      "patches/4156089C - Transformers Fall of Cybertron.patch.toml",
+      "4b5c41c9f8d29e3efb64289eafdb23d435d72371",
+      938
+    ],
+    [
+      "patches/415608A4 - Transformers Dark of the Moon (TU1).patch.toml",
+      "106cb400e9f5b1a6acdda7dfb46115759444c2c5",
+      987
+    ],
+    [
+      "patches/415608A4 - Transformers Dark of the Moon.patch.toml",
+      "caef1414871b76f44007157c1f9b1c6cf25527fc",
+      981
+    ],
+    [
+      "patches/415608AF - GoldenEye 007 Reloaded.patch.toml",
+      "27b385f3bd9dd1c55ce5c0da302d9262646e14f4",
+      599
+    ],
+    [
+      "patches/415608C5 - Family Guy Back to the Multiverse.patch.toml",
+      "38d9538a6dc5f7e4315a2cf45be8bf0db717cd7e",
+      367
+    ],
+    [
+      "patches/415608EC - Deadpool.patch.toml",
+      "5a60991996639ed90cf27e9f37a5605710a53043",
+      937
+    ],
+    [
+      "patches/41560901 - Angry Birds Star Wars.patch.toml",
+      "786935861641dd0d3fd231d2afc57f262caf5379",
+      429
+    ],
+    [
+      "patches/41560904 - Transformers-Rise of The Dark Spark.patch.toml",
+      "6d4907127e897e22b25c5eee36809053ce654ddd",
+      933
+    ],
+    [
+      "patches/424107DC - Dragon Ball Z Burst Limit (EU).patch.toml",
+      "849070418962ce961e32775324c30a691ac534e0",
+      1053
+    ],
+    [
+      "patches/424107DC - Dragon Ball Z Burst Limit (US).patch.toml",
+      "565064694928c6d48a5f8060a554de1c216f789d",
+      1053
+    ],
+    [
+      "patches/425307D1 - The Elder Scrolls IV Oblivion (GOTY).patch.toml",
+      "a9c31ae6933a27d4b2a678ee1c3ec4603778b1c0",
+      1111
+    ],
+    [
+      "patches/425307D3 - Rogue Warrior (TU1).patch.toml",
+      "f7f0dabf29cbe4ec6fc9a01b86fd9f6579864f3e",
+      336
+    ],
+    [
+      "patches/425307D3 - Rogue Warrior.patch.toml",
+      "186d6ed942e8770aec4a1664ddb303bed8fdfbab",
+      330
+    ],
+    [
+      "patches/425307D7 - Hunted The Demon's Forge (TU1).patch.toml",
+      "de1de6bf2af3b0fe1520173d6f7af093f4d81fd9",
+      915
+    ],
+    [
+      "patches/425307D7 - Hunted The Demon's Forge.patch.toml",
+      "f4ea6377787d4d3bd25a1921d762aff95a6cac24",
+      909
+    ],
+    [
+      "patches/425307DB - Wet.patch.toml",
+      "d89c944504818d2e864d4861eebb25629fb219e3",
+      969
+    ],
+    [
+      "patches/425307E3 - Dishonored (Europe).patch.toml",
+      "e78ec5f0e1b2b297da6d82a720e03127fe20183a",
+      1126
+    ],
+    [
+      "patches/425307E3 - Dishonored (Europe, USA)(TU4).patch.toml",
+      "dda06aa593744ce68a3f77a6e48c6fb2d0496ee1",
+      1197
+    ],
+    [
+      "patches/425307E3 - Dishonored (USA).patch.toml",
+      "b4486b63177069a5a3ffa1275104f3f90ff9df81",
+      1047
+    ],
+    [
+      "patches/425307E6 - The Elder Scrolls V Skyrim.patch.toml",
+      "c9d1f1848b64979a143c30d1b6191b3586bc48ec",
+      390
+    ],
+    [
+      "patches/425307F1 - DOOM 3 BFG Edition.patch.toml",
+      "858eab2481cb0b636010167acabd5233894027cb",
+      568
+    ],
+    [
+      "patches/425607D1 - Pirates of the Caribbean.patch.toml",
+      "d02c1e6b24693c5c187a38d6d8f77c0fd4ce582b",
+      352
+    ],
+    [
+      "patches/425607D3 - Turok (TU2).patch.toml",
+      "3c0768afe65df493daf97259ff25131a14719d91",
+      1217
+    ],
+    [
+      "patches/425607D3 - Turok.patch.toml",
+      "7ddcbe7efc550f7010f00282645ece16c6cadd66",
+      1211
+    ],
+    [
+      "patches/425607E5 - Toy Story 3.patch.toml",
+      "4c046680eba0dc50b379b4f0755271f51ee79375",
+      1000
+    ],
+    [
+      "patches/425607ED - Tron Evolution (TU1).patch.toml",
+      "067dfc50a7277a9bd8a06133ba3f1fce39f2e112",
+      1262
+    ],
+    [
+      "patches/425607ED - Tron Evolution.patch.toml",
+      "50646522d7a93ebd07591153c64a76ab4dd046f6",
+      1257
+    ],
+    [
+      "patches/42560816 - Epic Mickey 2 The Power Of Two.patch.toml",
+      "95e6b4049ef5c534c31f90e1b5390e51d69f5339",
+      705
+    ],
+    [
+      "patches/434107D2 - Tetris The Grand Master Ace.patch.toml",
+      "81a3a88169f73bbd6d1308c400d89f4997271f67",
+      672
+    ],
+    [
+      "patches/434307D4 - Resident Evil 5.patch.toml",
+      "55d7aea0d9206e724792ad5ab98f9e28c5da4ec4",
+      1155
+    ],
+    [
+      "patches/434307E0 - Dark Void (TU1).patch.toml",
+      "239b62da63c1da46bfd1c592142cc74442889f82",
+      876
+    ],
+    [
+      "patches/434307E0 - Dark Void.patch.toml",
+      "58b6111be61a8a05c88f0a9e369450f21ee9d70f",
+      870
+    ],
+    [
+      "patches/43430814 - Dragon's Dogma Dark Arisen (TU3).patch.toml",
+      "b06fa6f8153d0e92064fd00f12417a9cfacebb84",
+      13651
+    ],
+    [
+      "patches/43430817 - Asura's Wrath (TU1).patch.toml",
+      "598bac39503b1597d11e6b29fca291f5db748b0d",
+      1361
+    ],
+    [
+      "patches/43430817 - Asura's Wrath.patch.toml",
+      "bff7e73f6dade650c2e3814e57309130171d93f6",
+      1355
+    ],
+    [
+      "patches/43430824 - DmC Devil May Cry (TU1).patch.toml",
+      "35d8bc8cc19f07902e6a0fa3505e06cc07e2cb32",
+      1108
+    ],
+    [
+      "patches/43430824 - DmC Devil May Cry.patch.toml",
+      "d5de034e683428bf6ab7c0a26f6c05b7ac3787c7",
+      1102
+    ],
+    [
+      "patches/4343082F - Remember Me.patch.toml",
+      "d43877784ecef3156eac130ceb83ca3a8b130b1a",
+      1006
+    ],
+    [
+      "patches/43430830 - Lost Planet 3 (TU1).patch.toml",
+      "5f48cc6136b6818d89df6dd7795cafa8d8d4765c",
+      842
+    ],
+    [
+      "patches/43430830 - Lost Planet 3.patch.toml",
+      "bd8d8cc0c3caf1d4ec715896cfc9453eb3ae720f",
+      836
+    ],
+    [
+      "patches/43430841 - Resident Evil.patch.toml",
+      "17fba0df6611f31c113042bf0b59c7140c9d2f1e",
+      1086
+    ],
+    [
+      "patches/43430842 - Resident Evil 0.patch.toml",
+      "c9f0aa15394d12e439e5a851de567beac8fc2d35",
+      1245
+    ],
+    [
+      "patches/434D07DE - Rise of the Argonauts.patch.toml",
+      "24d2e32eb8ede4b85f63e4ded91b0ac035f6f7da",
+      983
+    ],
+    [
+      "patches/434D07E0 - Turning Point Fall of Liberty.patch.toml",
+      "53bb4cad6c0ad93e05b758b1658706a3362c0b07",
+      393
+    ],
+    [
+      "patches/434D0806 - Damnation.patch.toml",
+      "9f84fa2cd9b9f0a8dba65d77a3ec2a32c658cae3",
+      920
+    ],
+    [
+      "patches/434D0822 - Leisure Suit Larry Box Office Bust.patch.toml",
+      "e5f93f605bf07293f3b01ec357492715bd2baf66",
+      1010
+    ],
+    [
+      "patches/435907D4 - Sniper Ghost Warrior 2 (TU2).patch.toml",
+      "f8595114298e05e2c56f3ec4e72457d06104339f",
+      677
+    ],
+    [
+      "patches/435907D4 - Sniper Ghost Warrior 2.patch.toml",
+      "ed5a13e4a777d1ad18e24204670c4983098f2c4a",
+      671
+    ],
+    [
+      "patches/435907D5 - Enemy Front (TU1).patch.toml",
+      "4141574131a54ddcc2b2b5ca29a0e7476d3d30e0",
+      665
+    ],
+    [
+      "patches/435907D5 - Enemy Front.patch.toml",
+      "8a7934a3c81f44df509d42d310e631ff560b0d31",
+      659
+    ],
+    [
+      "patches/445007EA - Onechanbara Bikini Samurai Squad.patch.toml",
+      "de769a2a61bde52295c1e6795a51db25787057e1",
+      681
+    ],
+    [
+      "patches/445007F4 - お姉チャンバラZ～カグラ～.patch.toml",
+      "fa44cc17ce4c60e20ade07eb2d02892c226db7c4",
+      599
+    ],
+    [
+      "patches/454107D9 - Need for Speed Most Wanted (2005).patch.toml",
+      "d07ebed72c5850e382db10a09a82e69226d620b3",
+      1395
+    ],
+    [
+      "patches/454107DC - Burnout Revenge.patch.toml",
+      "e7efe9949c2fcca23f045e0c032f302fab03d252",
+      687
+    ],
+    [
+      "patches/454107F8 - Army of Two (USA)(TU2).patch.toml",
+      "e9e3499f65fff1f3d16342195336c241bf6257d5",
+      917
+    ],
+    [
+      "patches/454107F8 - Army of Two (USA).patch.toml",
+      "7587b9f3d525e9af5c77b9c1e2af9bffaf0b11bf",
+      1361
+    ],
+    [
+      "patches/454107F9 - Battlefield Bad Company.patch.toml",
+      "93a2afe7b49e01b9b53c077f826bd165d84f5eea",
+      708
+    ],
+    [
+      "patches/45410809 - The Simpsons Game.patch.toml",
+      "ca1206fde4e7f9ebcbb825c0c709ccf9b3bfcb46",
+      914
+    ],
+    [
+      "patches/4541080F - The Orange Box (TU5) (GameUI_360.dll).patch.toml",
+      "d0659bcef488b48c3a4970634317414f3ad86e8d",
+      1208
+    ],
+    [
+      "patches/4541080F - The Orange Box (TU5) (engine_360.dll).patch.toml",
+      "31cc406aed85d4ce9b4f59cad6d8a6ab176d453d",
+      2725
+    ],
+    [
+      "patches/4541080F - The Orange Box (TU5) (tf-bin-Server_360.dll).patch.toml",
+      "9c9bdd997c601b44664ecca18e427420731be263",
+      933
+    ],
+    [
+      "patches/4541080F - The Orange Box (default.xex).patch.toml",
+      "a16f3c0c3c22c7d32bce8a4e09dabda4f6784960",
+      1005
+    ],
+    [
+      "patches/4541080F - The Orange Box (engine_360.dll).patch.toml",
+      "a10bdcf5bfdbd1471772219b115796291db4d850",
+      3267
+    ],
+    [
+      "patches/4541080F - The Orange Box (shaderapidx9_360.dll).patch.toml",
+      "49f85226d4af34d76ae7f1dad7e411fa86f63234",
+      410
+    ],
+    [
+      "patches/4541080F - The Orange Box (tf-bin-Client_360.dll).patch.toml",
+      "cc3ca0e1cecd22858984bb21a6df8dcafe6e2831",
+      605
+    ],
+    [
+      "patches/4541084C - Army of Two (Europe)(TU2).patch.toml",
+      "f1bc9a2e1c45e82ff31612cc604de5d8a0db0ed4",
+      920
+    ],
+    [
+      "patches/4541084C - Army of Two (Europe).patch.toml",
+      "a28751276294ea0499515699ccce600fc331b4de",
+      914
+    ],
+    [
+      "patches/45410850 - Mirror's Edge (TU2).patch.toml",
+      "b5091a333fbe1cf71e52e31ff37275cc0194adfb",
+      1842
+    ],
+    [
+      "patches/45410850 - Mirror's Edge.patch.toml",
+      "c433b5103cf57da0e7b32f44a591e66774dec32f",
+      1990
+    ],
+    [
+      "patches/4541087F - Skate 2.patch.toml",
+      "85b959c4989ec962abf1d28ab2d8479d7227aaea",
+      1791
+    ],
+    [
+      "patches/454108CE - Mass Effect 2 (TU2).patch.toml",
+      "ef87485a117b9006aa4c4ba7ac9e3400350d3735",
+      4344
+    ],
+    [
+      "patches/454108CE - Mass Effect 2.patch.toml",
+      "fd2ed917f011593757c46fddca35dee4240bfab7",
+      4338
+    ],
+    [
+      "patches/454108CF - Dante's Inferno (TU2).patch.toml",
+      "f2da5717d3c47075e51cdc5a1ec670e30d9f53c3",
+      524
+    ],
+    [
+      "patches/454108CF - Dante's Inferno.patch.toml",
+      "ca24d781101430a432bdec91b20498ab0cfec05f",
+      518
+    ],
+    [
+      "patches/454108D8 - Army of Two The 40th Day (TU3).patch.toml",
+      "e5908b0515c6d5372f8a83d7679f7ae8e52e7b5b",
+      1387
+    ],
+    [
+      "patches/454108D8 - Army of Two The 40th Day.patch.toml",
+      "9561c3d3d605ad2af8a08481abdbb7559f1682fe",
+      1382
+    ],
+    [
+      "patches/454108E3 - Crysis 2 (TU4).patch.toml",
+      "9fc2503e9cf38d421522449966d2a0b15fa29475",
+      656
+    ],
+    [
+      "patches/454108E3 - Crysis 2.patch.toml",
+      "6148cdee888ad935b436f06150ed87e060d55b8d",
+      650
+    ],
+    [
+      "patches/454108E6 - Skate 3.patch.toml",
+      "b3317aad5acfc6c6c05d5396d148711cf7424c62",
+      585
+    ],
+    [
+      "patches/454108EF - Bulletstorm (TU3).patch.toml",
+      "38a56621737ce709f8f9155980bb458b43e8e241",
+      1948
+    ],
+    [
+      "patches/454108EF - Bulletstorm.patch.toml",
+      "622e5726e83af11299e77a030805a6d0d8e158ce",
+      1942
+    ],
+    [
+      "patches/454108F7 - Medal of Honor.patch.toml",
+      "d45ee02aefcf21bfae9add8e01cdfa0e534e1916",
+      533
+    ],
+    [
+      "patches/45410914 - Rock Band 3 (TU5).patch.toml",
+      "6081687cf5bc1f46d784dc392ff37ae755236919",
+      1446
+    ],
+    [
+      "patches/45410914 - Rock Band 3.patch.toml",
+      "f58c02684ec8ea70406d31da06b4c1cc001345ed",
+      369
+    ],
+    [
+      "patches/45410915 - Fight Night Champion (TU0).patch.toml",
+      "4a54283270475408b9dade40f2118d5ee3795375",
+      561
+    ],
+    [
+      "patches/45410915 - Fight Night Champion (TU1).patch.toml",
+      "7d3cda0c4058309a92fe6677ac164e1b7afba9a1",
+      561
+    ],
+    [
+      "patches/45410915 - Fight Night Champion (TU2).patch.toml",
+      "901627422ed65db2cc0a1be757c5e8e4bcf5df06",
+      561
+    ],
+    [
+      "patches/45410916 - Alice Madness Returns.patch.toml",
+      "e3b0d6bdf347e9b424825abe465c3afae4afb456",
+      753
+    ],
+    [
+      "patches/4541092A - Shadows of the Damned.patch.toml",
+      "e365b24385cdecf68137e3076c1f61b0aea884c3",
+      906
+    ],
+    [
+      "patches/4541095D - Mass Effect 3 (TU6).patch.toml",
+      "8687a58b2ffc53e90f6d6216aca9328f2b9d131c",
+      921
+    ],
+    [
+      "patches/4541095D - Mass Effect 3.patch.toml",
+      "6cd7def4a3d9f3c5e3161c58ef3ab0c5a09d6dfb",
+      915
+    ],
+    [
+      "patches/45410968 - Crysis.patch.toml",
+      "6286ab2336fee1eb4f1e6857d5009f70a183d5a7",
+      655
+    ],
+    [
+      "patches/4541096D - SSX.patch.toml",
+      "58d9ee7d169500917ec960dcb0146794b78cde97",
+      794
+    ],
+    [
+      "patches/4541096E - Fuse.patch.toml",
+      "604073f007a905e119aca7c871f6b71070013c97",
+      900
+    ],
+    [
+      "patches/4541098E - Crysis 3 (TU3).patch.toml",
+      "4e21403fb32cf346e3368bedd1e89d7f93b327bb",
+      662
+    ],
+    [
+      "patches/4541098E - Crysis 3.patch.toml",
+      "13218fb7754762d3157b36de2f36b7b87003de95",
+      656
+    ],
+    [
+      "patches/464507DB - Game of Thrones (Europe 1).patch.toml",
+      "c2eb6d2db39350d8135536f529c204ac6381769d",
+      902
+    ],
+    [
+      "patches/464507DB - Game of Thrones (Europe 2).patch.toml",
+      "80118df0ed2f352adfc343be175e4ae8366f10c5",
+      901
+    ],
+    [
+      "patches/464507DF - Sherlock Holmes Crimes & Punishments.patch.toml",
+      "93367593456b2cf744cf7942afb8d3e3f8fa8cf4",
+      866
+    ],
+    [
+      "patches/464507E1 - Farming Simulator (TU1).patch.toml",
+      "64ea9f6274a3efde3ffa105167519c060fc9fc59",
+      411
+    ],
+    [
+      "patches/464507E1 - Farming Simulator 15.patch.toml",
+      "da3905c5373ab38d55a1c523665854868aeb062a",
+      799
+    ],
+    [
+      "patches/464507E1 - Farming Simulator.patch.toml",
+      "4c82594507f2059329dd60e537f347b9083b7724",
+      405
+    ],
+    [
+      "patches/464F07D1 - IL-2 Sturmovik Birds of Prey.patch.toml",
+      "bde975a825e17f26f634bfc82e37c13f326a2b0a",
+      509
+    ],
+    [
+      "patches/464F07E8 - Sniper Elite V2 (SSE, GOTY).patch.toml",
+      "1ea1600bd0f619dcabaecbe823c5dbe89af0bc31",
+      726
+    ],
+    [
+      "patches/464F07E8 - Sniper Elite V2 (TU2).patch.toml",
+      "c4800e68e36106acb5ef8e3645e9e83dcb285823",
+      684
+    ],
+    [
+      "patches/464F07E8 - Sniper Elite V2.patch.toml",
+      "1718bf02785dd63139e0399c298a0c9bfd6fcfb0",
+      678
+    ],
+    [
+      "patches/464F0803 - Sniper Elite 3 (TU5).patch.toml",
+      "3c8ae3d9ab734593eb200aa0d1c722a29ff31759",
+      457
+    ],
+    [
+      "patches/464F0803 - Sniper Elite 3 (Ultimate Edition).patch.toml",
+      "90793c5a7181a29d2ab520f8a49b890121f700c6",
+      478
+    ],
+    [
+      "patches/464F0803 - Sniper Elite 3.patch.toml",
+      "8b79e8a42d2afa4e4cc25b4bee82e579d9bb7fdd",
+      451
+    ],
+    [
+      "patches/465307D6 - Armored Core 4 (USA).patch.toml",
+      "f49302d360fe5dcfe6cb6a31c8d3299d5e118bac",
+      507
+    ],
+    [
+      "patches/465307D7 - Tenchu Z.patch.toml",
+      "160273eb1a73f908b1f8c8dcbb1a2808c98b1a4b",
+      362
+    ],
+    [
+      "patches/474507D1 - Shutoko Battle X.patch.toml",
+      "44b7fc63f6b87d79501b695c636bfc2b2efb6824",
+      404
+    ],
+    [
+      "patches/475007D2 - Hail to the Chimp.patch.toml",
+      "b9fc41359e3bff71bbd7c6d90fa555a9eb88833b",
+      275
+    ],
+    [
+      "patches/475007D3 - Legendary.patch.toml",
+      "1c4adf1f8eea4c834c947e95d217be1dc1ce7598",
+      1028
+    ],
+    [
+      "patches/475007D4 - Section 8 (TU1).patch.toml",
+      "bd4a7ccfcca7c01da1f5cbfd0a470ef65629e62d",
+      1481
+    ],
+    [
+      "patches/475007D4 - Section 8.patch.toml",
+      "6b0913779c1e56aa6cc0ce85d432610e9dc10fae",
+      1475
+    ],
+    [
+      "patches/475807D1 - Lucha Libre AAA Heroes del Ring.patch.toml",
+      "7d29b10bcd1bb0b741d1b406c0f2635bbcddf03d",
+      1166
+    ],
+    [
+      "patches/475807D7 - El Chavo Kart.patch.toml",
+      "1c9bdcc76016b6ead2b4b9f54e8d143171d5e635",
+      861
+    ],
+    [
+      "patches/494F07D1 - El Shaddai.patch.toml",
+      "7f0b759c1580f84b849460a6b87277ba8cfb316a",
+      939
+    ],
+    [
+      "patches/494F07D4 - Deadly Premonition.patch.toml",
+      "f132b373bb5b827b9973515558f105df4e4ac396",
+      536
+    ],
+    [
+      "patches/4B4D07DF - Dead Island (GOTY).patch.toml",
+      "e5c501e533a09764c38ae4a3b5d768be51184537",
+      649
+    ],
+    [
+      "patches/4B4D07DF - Dead Island (TU2).patch.toml",
+      "b10445abf2428a38b3a7093787f9d73a0dde0d56",
+      628
+    ],
+    [
+      "patches/4B4D07DF - Dead Island.patch.toml",
+      "bc0a17e43610f3d3c8d7108a58feaa41fcc15fd4",
+      622
+    ],
+    [
+      "patches/4B4D07E9 - Ride to Hell Retribution.patch.toml",
+      "6f51667988552c7789d8fdd0c343a028357e92eb",
+      1082
+    ],
+    [
+      "patches/4B4D07EA - Catherine (Europe).patch.toml",
+      "17c39a0e5eae1a48a3c0874fb6aef1ea4ea7b630",
+      590
+    ],
+    [
+      "patches/4B4D07F2 - Dead Island Riptide (Complete Edition).patch.toml",
+      "9cd1f4aa8c175d22569593bb296d42a121e967f9",
+      646
+    ],
+    [
+      "patches/4B4D07F2 - Dead Island Riptide (TU2).patch.toml",
+      "f4c0d9d7ed868fbf547624778a078d46485cb5b2",
+      637
+    ],
+    [
+      "patches/4B4D07F2 - Dead Island Riptide.patch.toml",
+      "2dfc6d925fb515f217c99a1adba9506d09524a1a",
+      631
+    ],
+    [
+      "patches/4B4E07D1 - Rumble Roses XX.patch.toml",
+      "030de8cc045d1cbc6a5990088c6985d50e932902",
+      1641
+    ],
+    [
+      "patches/4B4E07DA - Pro Evolution Soccer 6 (TU3).patch.toml",
+      "b529be092bb1a75703ec0d43f17717f4a210ecbf",
+      1529
+    ],
+    [
+      "patches/4B4E07DA - Pro Evolution Soccer 6.patch.toml",
+      "5e6bca862867877d89fb8182ba2e6056ff184c99",
+      1524
+    ],
+    [
+      "patches/4B4E0802 - Saw.patch.toml",
+      "492ca352878085edab94462bc6f2c6b106230a79",
+      890
+    ],
+    [
+      "patches/4B4E0806 - Tornado Outbreak (Europe).patch.toml",
+      "ccac6ea9b6cd2d5046f4586ea65e5b89367edd56",
+      790
+    ],
+    [
+      "patches/4B4E0806 - Tornado Outbreak.patch.toml",
+      "e4f7573f0776d676c0ff7011d859ce2fcba6e55c",
+      788
+    ],
+    [
+      "patches/4B4E081F - NeverDead (TU1).patch.toml",
+      "8dfc08dfd520f2e23855a636229c431841dde4ec",
+      506
+    ],
+    [
+      "patches/4B4E081F - NeverDead.patch.toml",
+      "dc332f921e9e779a3f94009f3756f68b6a99644e",
+      500
+    ],
+    [
+      "patches/4B4E0822 - Saw II Flesh & Blood.patch.toml",
+      "0b6e9aec890d32bf574b47336d25cbf0c3d73a04",
+      817
+    ],
+    [
+      "patches/4B4E0823 - Silent Hill Downpour (TU1).patch.toml",
+      "c94cfde8f802de5dd666b96955c1155e912cc788",
+      1087
+    ],
+    [
+      "patches/4B4E0823 - Silent Hill Downpour.patch.toml",
+      "214bae91abbb6dcdb2e1ab2b8dd7f818d103d866",
+      1532
+    ],
+    [
+      "patches/4B4E0838 - Blades of Time.patch.toml",
+      "a8f48811e624e213b257da9ba563803d265819cc",
+      551
+    ],
+    [
+      "patches/4B4E0839 - Birds of Steel.patch.toml",
+      "afb98aba78d98baa5699710f1f8d8f01b3f724b2",
+      486
+    ],
+    [
+      "patches/4B4F07D7 - Fatal Inertia (TU1).patch.toml",
+      "aa847cb350096eb1e21b2dee5b832f95d59bdfcb",
+      986
+    ],
+    [
+      "patches/4B4F07D7 - Fatal Inertia.patch.toml",
+      "c6c4ccad8c67ca6a47891e4721e2a8b5addb41fa",
+      980
+    ],
+    [
+      "patches/4B5607E2 - Yaiba Ninja Gaiden Z.patch.toml",
+      "e7f5f861ce64e4a27e4e868721209de6ddbd081f",
+      684
+    ],
+    [
+      "patches/4B5607E8 - Dead or Alive 5 Ultimate.patch.toml",
+      "b955af5a1635ae8c4283f1f98fb7ca601c721d60",
+      413
+    ],
+    [
+      "patches/4C4107D7 - LEGO Star Wars The Complete Saga.patch.toml",
+      "704b5a487b27e0aff96747975883e51d618b9269",
+      378
+    ],
+    [
+      "patches/4C4107F3 - LEGO Star Wars III The Clone Wars.patch.toml",
+      "701506438020600d5dd78853bb719a619fa95a97",
+      1235
+    ],
+    [
+      "patches/4D4A07D5 - Night at the Museum Battle of the Smithsonian.patch.toml",
+      "c1cbcca22e731ed69e2aeed2f622a653a9545ec3",
+      803
+    ],
+    [
+      "patches/4D4B07D6 - Carrier Command Gaea Mission (Europe).patch.toml",
+      "6a34d6998efae9857e91be071e443e23a4dd5092",
+      442
+    ],
+    [
+      "patches/4D5307D1 - Project Gotham Racing 3 (v10.0 or higher).patch.toml",
+      "a94307f4f365c21817457f031aa255cf7f44fb39",
+      1269
+    ],
+    [
+      "patches/4D5307D1 - Project Gotham Racing 3 (v9.0 or lower).patch.toml",
+      "f69d658ff93ba3731206618c96a2b80e651b14cd",
+      1360
+    ],
+    [
+      "patches/4D5307D2 - Kameo Elements of Power (TU2).patch.toml",
+      "8ba2299f32f30ceb13d0e1a09b194844fbb28f3e",
+      1987
+    ],
+    [
+      "patches/4D5307D2 - Kameo Elements of Power.patch.toml",
+      "0289385bf45e80a49507aa378f6e9b0e37a8f3b1",
+      1963
+    ],
+    [
+      "patches/4D5307D3 - Perfect Dark Zero (Platinum Hits).patch.toml",
+      "a5ee5fdf5a3efdc73f7c56eff6573e39f28fc531",
+      939
+    ],
+    [
+      "patches/4D5307D3 - Perfect Dark Zero (TU3).patch.toml",
+      "e6aa9364bda5ee8eebd1b38106491548d783ad0a",
+      928
+    ],
+    [
+      "patches/4D5307D3 - Perfect Dark Zero.patch.toml",
+      "bf2d91efda4b34a011203a3e6327c65f882372b5",
+      904
+    ],
+    [
+      "patches/4D5307D5 - Gears of War (Japan).patch.toml",
+      "c7185f7c4bb5143d691940135ace56f087a42835",
+      1663
+    ],
+    [
+      "patches/4D5307D5 - Gears of War (TU5).patch.toml",
+      "6d2e47af12e45d23272640f817484e4ecb53adf2",
+      5744
+    ],
+    [
+      "patches/4D5307D5 - Gears of War.patch.toml",
+      "7888d990f81c6fe73853fddf77badac770fb41df",
+      6180
+    ],
+    [
+      "patches/4D5307DC - Crackdown (TU0).patch.toml",
+      "cb688c2537104fbce12b866d06ce88474c58ffe0",
+      1893
+    ],
+    [
+      "patches/4D5307DC - Crackdown (TU2).patch.toml",
+      "cfbeef3f359f235d70c975d6298961bc5fd6510d",
+      1893
+    ],
+    [
+      "patches/4D5307DF - Blue Dragon.patch.toml",
+      "6a7eca4ab0a6565558391a976ee46c1755636955",
+      2378
+    ],
+    [
+      "patches/4D5307DF - ブルードラゴン.patch.toml",
+      "11ab9065343053625d2457c5d4641774b3a05523",
+      975
+    ],
+    [
+      "patches/4D5307E6 - Halo 3.patch.toml",
+      "1e304179b9e2d852cf480853b43818aeab70dc98",
+      1293
+    ],
+    [
+      "patches/4D5307E8 - Mass Effect (Japan).patch.toml",
+      "2f29a33251b20167981fdaac1c2cc1832e458381",
+      1364
+    ],
+    [
+      "patches/4D5307E8 - Mass Effect (USA Rev 1).patch.toml",
+      "7a5bcf5f948f993a00998755b1ba21aaf96ad12b",
+      1390
+    ],
+    [
+      "patches/4D5307E8 - Mass Effect.patch.toml",
+      "510b6ff3f9c96a8de8e7550ee762347d694ac455",
+      8876
+    ],
+    [
+      "patches/4D5307EA - Forza Motorsport 2 (TU4).patch.toml",
+      "c5b9a7511956878b0df212e39c3f38806bcf9e20",
+      552
+    ],
+    [
+      "patches/4D5307EA - Forza Motorsport 2.patch.toml",
+      "06a4f2cd902ec7824094cc40a79409f36a9910bd",
+      546
+    ],
+    [
+      "patches/4D5307ED - Banjo-Kazooie Nuts & Bolts (Sep 18, 2008 Prototype).patch.toml",
+      "026fb93237dc911c4cb9a5607d81fc94cf9400fb",
+      469
+    ],
+    [
+      "patches/4D5307ED - Banjo-Kazooie Nuts & Bolts (TU3).patch.toml",
+      "c84b0ad78073eb8e048ed51b69f08dc9d68d761a",
+      2614
+    ],
+    [
+      "patches/4D5307ED - Banjo-Kazooie Nuts & Bolts.patch.toml",
+      "43846c20f7fba1126b0a86d09eef9d296748dd82",
+      2517
+    ],
+    [
+      "patches/4D5307F1 - Fable II (1).patch.toml",
+      "a5e7a289295c31e783175564549d13eef817f568",
+      1506
+    ],
+    [
+      "patches/4D5307F1 - Fable II (2).patch.toml",
+      "16afe9fcdf18b7f4e8216a8fe71980abf782f0b7",
+      889
+    ],
+    [
+      "patches/4D5307F1 - Fable II (GOTY_Platinum Edition).patch.toml",
+      "787dda137da346af8bf9bc7ef28c5a18e28bb184",
+      3311
+    ],
+    [
+      "patches/4D5307F1 - Fable II (GOTY_Platinum Edition, TU1).patch.toml",
+      "085dba931870a9a9769d7c2dc30734567ffb667a",
+      2488
+    ],
+    [
+      "patches/4D5307F2 - Viva Piñata.patch.toml",
+      "b5f9519b323fa0c77c7f9301d193cc91d467fb83",
+      332
+    ],
+    [
+      "patches/4D5307F9 - Project Gotham Racing 4 (TU2).patch.toml",
+      "2f492431a4754694603b0a53e400d25cfec4826b",
+      792
+    ],
+    [
+      "patches/4D5307F9 - Project Gotham Racing 4.patch.toml",
+      "ca1cc395a46d1b218026fe0ce3c7593f3ee8608e",
+      787
+    ],
+    [
+      "patches/4D5307FA - Lost Odyssey (NTSC-J).patch.toml",
+      "8d159d2f0b134ebc672612b58fabf537a7a7e56b",
+      1550
+    ],
+    [
+      "patches/4D5307FA - Lost Odyssey.patch.toml",
+      "c93010942e28358381081fec6048aa2f09a73abd",
+      12162
+    ],
+    [
+      "patches/4D530805 - Alan Wake.patch.toml",
+      "512afbd02f0c5c1582dfeee449c8d9a7f410dc35",
+      1368
+    ],
+    [
+      "patches/4D53082D - Gears of War 2 (TU6).patch.toml",
+      "67d052cf7e8834355d5e1396c9130e14a8a737ae",
+      10513
+    ],
+    [
+      "patches/4D53082D - Gears of War 2.patch.toml",
+      "7f7dc4b9065a07747d47f4e4532dec10998efa85",
+      10249
+    ],
+    [
+      "patches/4D53084D - Forza Motorsport 3 Ultimate Collection.patch.toml",
+      "292376c41654f9270bd65b6062c73eefc8dc2e42",
+      711
+    ],
+    [
+      "patches/4D53085B - Halo Reach (TU1).patch.toml",
+      "bf4b4dba6537a1af4423f0ba287e265ecb0256cb",
+      343
+    ],
+    [
+      "patches/4D53085B - Halo Reach.patch.toml",
+      "6f5ae9faa54cdc08c90362938582b370ee978cf4",
+      786
+    ],
+    [
+      "patches/4D53085F - Viva Piñata Trouble in Paradise (TU1).patch.toml",
+      "41706022349d157712a34e96befc0262158da9ab",
+      374
+    ],
+    [
+      "patches/4D53085F - Viva Piñata Trouble in Paradise.patch.toml",
+      "1829095d3efd634b0d9a6f4735fed87cdebdf3f0",
+      359
+    ],
+    [
+      "patches/4D530877 - Halo 3 ODST.patch.toml",
+      "e5298750764dd6b5545f513ca0268033d30b89c4",
+      423
+    ],
+    [
+      "patches/4D5308AB - Gears of War 3 (TU6 Disc; TU1 XBL).patch.toml",
+      "5309efefcf63310d9532aa74b3c1e8d05daf8a77",
+      7284
+    ],
+    [
+      "patches/4D5308AB - Gears of War 3.patch.toml",
+      "ab9745a7dd0d7621e385f67badf017a32d166647",
+      7078
+    ],
+    [
+      "patches/4D5308BC - Crackdown 2 (TU0).patch.toml",
+      "7b13853ff9891a2b215265f0647fe1146956dea4",
+      4400
+    ],
+    [
+      "patches/4D5308BC - Crackdown 2 (TU5).patch.toml",
+      "f6d6906de2c26f6dcac700aa46c9f07e3ef78941",
+      4187
+    ],
+    [
+      "patches/4D5308C8 - Gears of War 2 (Japan).patch.toml",
+      "0fddc65e5ff49ae42cea850e924b6187587f928a",
+      1918
+    ],
+    [
+      "patches/4D53090E - Kinect Star Wars.patch.toml",
+      "ce63481a2341ac57baa9186a338ba253a5a2238b",
+      274
+    ],
+    [
+      "patches/4D530919 - Halo 4 (TU10).patch.toml",
+      "18f3164a253960ae216201a415a62a3a96e0ff00",
+      418
+    ],
+    [
+      "patches/4D530919 - Halo 4.patch.toml",
+      "6df830a8aafdc6efdf60f0ef15a98b889bc2bd2a",
+      411
+    ],
+    [
+      "patches/4D5309B1 - Halo Combat Evolved Anniversary.patch.toml",
+      "1616b6b007743a1ca13769c55d5552d2b51d446c",
+      779
+    ],
+    [
+      "patches/4D5309C9 - Forza Horizon (E3 Demo).patch.toml",
+      "e40c750a38f3b586aaec4f9d2a416045e1c3bdbe",
+      442
+    ],
+    [
+      "patches/4D5309C9 - Forza Horizon (TU4).patch.toml",
+      "2c963c860596255282e8196aa4b7fcbe95000694",
+      1356
+    ],
+    [
+      "patches/4D5309C9 - Forza Horizon.patch.toml",
+      "f0796a681710142c0e5e1a8908b94091185c43db",
+      1269
+    ],
+    [
+      "patches/4D530A26 - Gears of War Judgment (TU4).patch.toml",
+      "d86be6d4c826a29ef0c9f4e0c55cc47af5c44111",
+      8007
+    ],
+    [
+      "patches/4D530A26 - Gears of War Judgment.patch.toml",
+      "0b11f88182322c89ea777f7afa2e739760236da3",
+      8046
+    ],
+    [
+      "patches/4D530A87 - Fable Anniversary (TU5).patch.toml",
+      "93cd3b3671455de2284ac6e7b0d616593e17c7c5",
+      1321
+    ],
+    [
+      "patches/4D530A87 - Fable Anniversary.patch.toml",
+      "5c136ba3320f7e714c89f0b55a87c810221dc2d9",
+      1315
+    ],
+    [
+      "patches/4D530AA4 - Forza Horizon 2 (May 4, 2014 Prototype).patch.toml",
+      "db8fd3145dc0345cf77a5844dceb6b1f4e6cdace",
+      376
+    ],
+    [
+      "patches/4D530AA4 - Forza Horizon 2 (TU2).patch.toml",
+      "93fa8bd94449aabcb33659d5b9df01b789f82e07",
+      958
+    ],
+    [
+      "patches/4D530AA4 - Forza Horizon 2.patch.toml",
+      "e54ba12a43b6f6a00a2304bc5a6336ccc8838c18",
+      871
+    ],
+    [
+      "patches/4D530AB5 - Forza Horizon 2 Presents Fast & Furious (TU1).patch.toml",
+      "c4a1d8ad524113416d63c0ea9e5dff26660a3795",
+      774
+    ],
+    [
+      "patches/4D530AB5 - Forza Horizon 2 Presents Fast & Furious.patch.toml",
+      "30c104bc86907a28ddefbc19d7fcd24e2ed65399",
+      768
+    ],
+    [
+      "patches/4D5387E0 - Kameo Elements of Power (kiosk demo).patch.toml",
+      "eddebd021d46f8e6b113490be1c413a8ebe49191",
+      308
+    ],
+    [
+      "patches/4D5387E9 - Kameo Elements of Power (demo).patch.toml",
+      "5930141a3d99f2e81428adde51b8e2ce2a9a31d8",
+      290
+    ],
+    [
+      "patches/4D538803 - Pocketbike Racer.patch.toml",
+      "b8f767482e6b9f6986070aee4c265815716ed143",
+      504
+    ],
+    [
+      "patches/4D53880C - Halo 3 Alpha.patch.toml",
+      "251f1b48171b17bba2e53ddd61d06c6b2df4641b",
+      417
+    ],
+    [
+      "patches/4D53883A - Halo 3 Epsilon (Aug 20th).patch.toml",
+      "1e99ef3cb507da2c57f12174b7e89c952f667ec2",
+      428
+    ],
+    [
+      "patches/4D5388BF - Crackdown 2 Demo.patch.toml",
+      "df1c1ef63b62ecb955d974bac22739b599f5d657",
+      293
+    ],
+    [
+      "patches/4D5607D1 - Deadly Premonition (PAL).patch.toml",
+      "1afb85d33a54bdcf5e6dbbca8ac0f66ac1048a97",
+      542
+    ],
+    [
+      "patches/4D5707D7 - Blacksite.patch.toml",
+      "fdf1ac8f0042a1b24da6efd690bc5c7ea5aa7c16",
+      1000
+    ],
+    [
+      "patches/4D5707D9 - Hour of Victory.patch.toml",
+      "fad4ac3731c55b413d5d3581343801cec8d7cde5",
+      990
+    ],
+    [
+      "patches/4D5707DB - Unreal Tournament 3.patch.toml",
+      "71a448c07c2d7b6d632dbcc016ad5a755e51ca2e",
+      1224
+    ],
+    [
+      "patches/4D5707DF - TNA Impact (TU1).patch.toml",
+      "94fcac24fff76841eff93b713393a79e07d7f883",
+      580
+    ],
+    [
+      "patches/4E4D07D3 - Ridge Racer 6.patch.toml",
+      "2fe9974849e21385ce116dd9e0e8047c85f427d0",
+      2167
+    ],
+    [
+      "patches/4E4D07F0 - Splatterhouse.patch.toml",
+      "424339bff94b3875716a45bf00ae534220fd71a6",
+      428
+    ],
+    [
+      "patches/4E4D07F1 - Enslaved Odyssey to the West (TU1).patch.toml",
+      "aadfd92483884aaccdee5e5dc88f68f31a36979f",
+      1139
+    ],
+    [
+      "patches/4E4D07F1 - Enslaved Odyssey to the West.patch.toml",
+      "253a8e25db793fac55af7d93f6852a4000b9907a",
+      1133
+    ],
+    [
+      "patches/4E4D080B - Magnacarta2.patch.toml",
+      "3de2b4a18ae247630b8ea1653edd20e3eb3321ea",
+      1295
+    ],
+    [
+      "patches/4E4D083D - SOULCALIBUR V (TU0).patch.toml",
+      "71aa684fdeb816e06a1849f6cade1d1dba40ac3a",
+      568
+    ],
+    [
+      "patches/4E4D083D - SOULCALIBUR V (TU1).patch.toml",
+      "eda5418704b3083c2cf975d055ae23fb81b75118",
+      568
+    ],
+    [
+      "patches/4E4D0859 - TEKKEN TAG 2 (TU0).patch.toml",
+      "a4ab57b45b4ef64d992552406cc0b0c48c55577f",
+      564
+    ],
+    [
+      "patches/4E4D0859 - TEKKEN TAG 2 (TU1).patch.toml",
+      "da9f479dcfb797260d0faf39338fe28ba6fcae21",
+      564
+    ],
+    [
+      "patches/4E4D085B - Star Trek.patch.toml",
+      "47159971f30cfb3b3dd25b5ffcf16220e9f26d19",
+      928
+    ],
+    [
+      "patches/504307D1 - Fairytale Fights (TU1).patch.toml",
+      "f12cccc61391ef3f344976648ec1a115f2abc8af",
+      1049
+    ],
+    [
+      "patches/504307D1 - Fairytale Fights.patch.toml",
+      "22067a6344ae252035ca3d00b81d87df083b3643",
+      1043
+    ],
+    [
+      "patches/534307D5 - Just Cause.patch.toml",
+      "91b6d35f11bb50c34fe8df446ce1db14b037d134",
+      410
+    ],
+    [
+      "patches/534307E2 - Bionicle Heroes.patch.toml",
+      "bb832accd2063e270563804bfca0bf2f25255c0b",
+      318
+    ],
+    [
+      "patches/534307F6 - Batman Arkham Asylum.patch.toml",
+      "086769a1aba937ab8feb57c55a43ef9c15e65f4a",
+      1605
+    ],
+    [
+      "patches/5343080B - Batman Arkham Asylum GOTY.patch.toml",
+      "f87986513884cb34a7012eddd248fd4817673f12",
+      2010
+    ],
+    [
+      "patches/534507D2 - Condemned.patch.toml",
+      "1e050a134ad118fa063928d126d61acebc2ebe90",
+      502
+    ],
+    [
+      "patches/534507D4 - Chromehounds (prototype).patch.toml",
+      "a12fe7ffd23276d1060afc00399283564a2e912f",
+      399
+    ],
+    [
+      "patches/534507D4 - Syndicate.patch.toml",
+      "386f5b69ab5f2a34c879496cdc743138ff8d9751",
+      699
+    ],
+    [
+      "patches/534507D6 - Sonic the Hedgehog (2006).patch.toml",
+      "b21ab1cb0cc3c3a3b0397743515551d9fa4e6d4c",
+      1508
+    ],
+    [
+      "patches/534507E0 - Viking Battle for Asgard.patch.toml",
+      "514ec487e82b3d6b2330c5acb59cd8332358a30c",
+      406
+    ],
+    [
+      "patches/5345080C - Aliens Colonial Marines (TU6).patch.toml",
+      "2b33912d079b7c2599bdc184ed82f6d8374fafd1",
+      820
+    ],
+    [
+      "patches/5345080C - Aliens Colonial Marines.patch.toml",
+      "bac8abd5111a04c0356eddca89dea004a00fa226",
+      814
+    ],
+    [
+      "patches/5345080E - Alpha Protocol.patch.toml",
+      "b6508f1bf311eb73de6a28d85577ee8394686b03",
+      677
+    ],
+    [
+      "patches/53450812 - Sonic Unleashed (TU2).patch.toml",
+      "45a97bb8e6afd10cf4fd0dd0d5167563345869ba",
+      2043
+    ],
+    [
+      "patches/53450812 - Sonic Unleashed.patch.toml",
+      "1b757d78966e15252aa255f8e56a2e8c35444ae1",
+      2098
+    ],
+    [
+      "patches/53450813 - Bayonetta.patch.toml",
+      "016d1e51dad1b025507c061578efe79a0872d624",
+      552
+    ],
+    [
+      "patches/5345082A - Aliens vs. Predator (TU3).patch.toml",
+      "82e16cccbfdbb1a9ffd12d1e8899e0e944813ae4",
+      710
+    ],
+    [
+      "patches/5345082A - Aliens vs. Predator.patch.toml",
+      "f6cff721dbaa1fef23fa962309a01eb691279a80",
+      704
+    ],
+    [
+      "patches/5345082B - Planet 51 The Game.patch.toml",
+      "e07ac14ccb112bc942cf8c66db12778650795b56",
+      1133
+    ],
+    [
+      "patches/53450845 - Thor God of Thunder.patch.toml",
+      "282ce3f49926a5765b7e30939a08f7a303bf3400",
+      877
+    ],
+    [
+      "patches/53450848 - Sonic Generations (TU2).patch.toml",
+      "fe6b47663604da948863a8be058de96393f2cadc",
+      423
+    ],
+    [
+      "patches/53450848 - Sonic Generations.patch.toml",
+      "7758e1e00e0ef234e08c0492b9a312f21687180b",
+      408
+    ],
+    [
+      "patches/5345085A - Dreamcast Collection.patch.toml",
+      "01821be7253283e96e32fe028d3395dcbd455c3a",
+      484
+    ],
+    [
+      "patches/5345085D - Sonic & All-Stars Racing Transformed.patch.toml",
+      "026309e243a5e9846889acbc9f1e417543529db5",
+      414
+    ],
+    [
+      "patches/5345085E - Alien Isolation (TU2).patch.toml",
+      "d77bfa2712b66b0a1c2a3eb99f1184bce9664883",
+      770
+    ],
+    [
+      "patches/5345085E - Alien Isolation.patch.toml",
+      "c02643498c742f638b45ebae5196c3ca5283514f",
+      764
+    ],
+    [
+      "patches/535107DA - The Last Remnant.patch.toml",
+      "26d1b3310451ae4f6aa16486eaf79f88918ee889",
+      1201
+    ],
+    [
+      "patches/535107E4 - Final Fantasy XIII.patch.toml",
+      "f38fed1000cfa849f0b15fef22fa6aab731836bd",
+      585
+    ],
+    [
+      "patches/535107E8 - Nier.patch.toml",
+      "b371c98eb7afc3b8d9eca4a44d55f2e1153b3ef1",
+      381
+    ],
+    [
+      "patches/535107FA - Deus Ex Human Revolution Director's Cut.patch.toml",
+      "19c91227e134f999a91af0d9cbd997c0819dcc8b",
+      463
+    ],
+    [
+      "patches/53510802 - Tomb Raider (TU3).patch.toml",
+      "b7e94808be2ea7451fd72fe720f5aeac3f5e5c2c",
+      429
+    ],
+    [
+      "patches/53510802 - Tomb Raider.patch.toml",
+      "024a68f9a76cd10510ab59269e09a9946467d8f0",
+      423
+    ],
+    [
+      "patches/53510803 - Thief (TU2).patch.toml",
+      "1c4fdde3c9209e47a8e7838673dd6e39365a7645",
+      502
+    ],
+    [
+      "patches/53510803 - Thief.patch.toml",
+      "627f060b5cfe970b1aa778a6c7dc77559d02125d",
+      496
+    ],
+    [
+      "patches/53510806 - Final Fantasy XIII-2.patch.toml",
+      "1a61d1eac154605d9cfe4eb494a5ed5e4c8903d9",
+      1817
+    ],
+    [
+      "patches/5351081E - Murdered Soul Suspect (TU1).patch.toml",
+      "7fe2ded4eceb9ee7e53b317ef51592557950c0c6",
+      1717
+    ],
+    [
+      "patches/5351081E - Murdered Soul Suspect.patch.toml",
+      "aaf5cacc0bba7c0faffa59279e74bebec84bcf0f",
+      1711
+    ],
+    [
+      "patches/53518810 - Final Fantasy XIII-2 Demo.patch.toml",
+      "f4feadbb0e15e459a09e78def1dd440b96b582f9",
+      371
+    ],
+    [
+      "patches/544307D1 - DEAD OR ALIVE 4 (PROTOTYPE).patch.toml",
+      "38a7e60aa6277d1943db841ff039b8e732e1657d",
+      1755
+    ],
+    [
+      "patches/544307D1 - DEAD OR ALIVE 4 (Rev1).patch.toml",
+      "9d6af0a24c71ba77debc165883bbec3eef9651f0",
+      4589
+    ],
+    [
+      "patches/544307D1 - DEAD OR ALIVE 4 (TU1).patch.toml",
+      "acd6360b06005ea26406e333e6480e04fc52ad56",
+      4576
+    ],
+    [
+      "patches/544307D1 - DEAD OR ALIVE 4.patch.toml",
+      "b21b7d674b1092d11859535270e295ee48bbd274",
+      4582
+    ],
+    [
+      "patches/544307D5 - Ninja Gaiden II (Japan, TU3).patch.toml",
+      "8e4b0efc1f70535c592c4d0c4a1755c594251a9f",
+      944
+    ],
+    [
+      "patches/544307D5 - Ninja Gaiden II (World).patch.toml",
+      "c2ff913d2faf39f08c2bb1f968079e68de3c2a6b",
+      931
+    ],
+    [
+      "patches/544307D5 - Ninja Gaiden II (World, TU2).patch.toml",
+      "c6bc536c335a0432981b6522c84de6eb13b65df2",
+      604
+    ],
+    [
+      "patches/545107D1 - Saints Row (TU1).patch.toml",
+      "c83212b8feb89a889071fe946ced4f426c746a8b",
+      11784
+    ],
+    [
+      "patches/545107D1 - Saints Row.patch.toml",
+      "3d36185b7dbe36df7c3aad927f8d4e2287744125",
+      2826
+    ],
+    [
+      "patches/545107EA - Disney-Pixar Cars (Europe) (De,Fr) (TU1).patch.toml",
+      "a8ddba37eb7b3304b90079a6cc72add7291bba03",
+      1208
+    ],
+    [
+      "patches/545107EA - Disney-Pixar Cars (Europe) (De,Fr).patch.toml",
+      "e0e0601f48e5ac77a36045c66a33c0256da8b643",
+      1202
+    ],
+    [
+      "patches/545107EA - Disney-Pixar Cars (Europe) (En,Es,It) (TU1).patch.toml",
+      "9ef43d8a52c11e89732a6017d6b452e7a02b7f4b",
+      1243
+    ],
+    [
+      "patches/545107EA - Disney-Pixar Cars (Europe) (En,Es,It).patch.toml",
+      "f129142c65c166f217c58b752581fcb0e58f6d5f",
+      1237
+    ],
+    [
+      "patches/545107EA - Disney-Pixar Cars (USA).patch.toml",
+      "b6c77857018158a3c7d931c8915d46c1723e496a",
+      1223
+    ],
+    [
+      "patches/545107F1 - Ratatouille.patch.toml",
+      "12583fd36a703a37f593ab83c7db1710862b095a",
+      334
+    ],
+    [
+      "patches/545107F8 - Saints Row (Japan).patch.toml",
+      "62e39160ebc76279c6a93322f0c823657d61b128",
+      14350
+    ],
+    [
+      "patches/545107FC - Saints Row 2 (TU3).patch.toml",
+      "822b4d59e612d879bc31b4665c00b30bc15d2cde",
+      8408
+    ],
+    [
+      "patches/545107FC - Saints Row 2.patch.toml",
+      "34d1c732d6ec8a315d063d713bb6190d9112e026",
+      5464
+    ],
+    [
+      "patches/545107FE - DAH Path of the Furon.patch.toml",
+      "d3b4ed52f80dda8953a834955bfcba17314cb8de",
+      1404
+    ],
+    [
+      "patches/5451083B - 50 Cent Blood on the Sand.patch.toml",
+      "cf0ca262a76475e295513aa250e7a171d362cc03",
+      3559
+    ],
+    [
+      "patches/54510846 - Homefront (TU4).patch.toml",
+      "61ee317a4a85cf441bc98f7f0c54b3d88e45f713",
+      946
+    ],
+    [
+      "patches/54510846 - Homefront.patch.toml",
+      "c6c964a06a1c63e1444897329df688f18727e785",
+      940
+    ],
+    [
+      "patches/54510850 - SpongeBob - Truth or Square.patch.toml",
+      "bbdbca9822147259bba4dc3402b6b5d5f14963df",
+      364
+    ],
+    [
+      "patches/54510865 - de Blob 2.patch.toml",
+      "f2e36c8f057952c42b627e4779834039ce53c1cd",
+      732
+    ],
+    [
+      "patches/54510866 - WWE All Stars.patch.toml",
+      "7ad61d5714e30650c505d35b4458336ef8636c88",
+      345
+    ],
+    [
+      "patches/5451087D - UFC Undisputed 3.patch.toml",
+      "9c86d0d6cfa6376e8c6eb4b8a73cab10918250a2",
+      861
+    ],
+    [
+      "patches/545407D4 - Amped 3.patch.toml",
+      "96ffc7bc498220be55cea24b4e86c6f2817eee35",
+      316
+    ],
+    [
+      "patches/545407DD - The Bureau XCOM Declassified (TU1).patch.toml",
+      "14494a31d1ce78b49cb10fdb6d4c1e94033bd2ae",
+      948
+    ],
+    [
+      "patches/545407DD - The Bureau XCOM Declassified.patch.toml",
+      "a5d795046ec95ffd81292ee7b0076135314e1526",
+      942
+    ],
+    [
+      "patches/545407DF - Table Tennis.patch.toml",
+      "05e72771e61c6cf9609d35f4c388aaa29e4dfd59",
+      854
+    ],
+    [
+      "patches/545407E0 - Prey (TU1).patch.toml",
+      "ec92972773fed5fe736ace9a448379d3a5252957",
+      639
+    ],
+    [
+      "patches/545407E0 - Prey.patch.toml",
+      "9a894da00425967582a5ccbc47998d99a0647539",
+      633
+    ],
+    [
+      "patches/545407E4 - The Bigs.patch.toml",
+      "6cadb878224bffbe9cf5921ce0bffd73d59d4a56",
+      584
+    ],
+    [
+      "patches/545407E7 - Borderlands (TU5).patch.toml",
+      "854bdc4fde9bda9bdabac44da81442268ba428eb",
+      898
+    ],
+    [
+      "patches/545407E7 - Borderlands.patch.toml",
+      "a8b0035dc554f60208c7e0ee4188d0d1fa61b507",
+      892
+    ],
+    [
+      "patches/545407EE - The Darkness.patch.toml",
+      "7cca3c49ca171179ff50fec554724e60bfb7c6a3",
+      721
+    ],
+    [
+      "patches/545407F2 - Grand Theft Auto IV (TU8).patch.toml",
+      "0461b991bde5eec5b6ba7adc7332bf66dcad0bfb",
+      1119
+    ],
+    [
+      "patches/545407F2 - Grand Theft Auto IV.patch.toml",
+      "486fd0bad94b6f32ee769eafbe7a93bf1716e1f3",
+      1097
+    ],
+    [
+      "patches/545407F8 - Midnight Club Los Angeles (Complete Edition).patch.toml",
+      "6a8cbc509b796e7461480f3850e4226ad030cce6",
+      1864
+    ],
+    [
+      "patches/545407F8 - Midnight Club Los Angeles.patch.toml",
+      "f1952ff4de5a3b307fb8455c46400bbb422f5d4f",
+      1720
+    ],
+    [
+      "patches/5454082B - Red Dead Redemption (GOTY, Disc 1).patch.toml",
+      "e7ce5b9593efc16d57eda062c3c491c59ba3dbd7",
+      5188
+    ],
+    [
+      "patches/5454082B - Red Dead Redemption (GOTY, Disc 2).patch.toml",
+      "d9ed3f78a9b73a4e4696e8e037bc29cfe0758049",
+      5200
+    ],
+    [
+      "patches/5454082B - Red Dead Redemption (Original, NTSC).patch.toml",
+      "a7285d56f03c4eb17c9c02b0fe2a8005eeb74388",
+      5565
+    ],
+    [
+      "patches/5454082B - Red Dead Redemption (Original, NTSC, TU9).patch.toml",
+      "4d2f7746581cb64b876184785eb71904464bb9a5",
+      5184
+    ],
+    [
+      "patches/5454082B - Red Dead Redemption-Undead Nightmare (Platinum Hits).patch.toml",
+      "4f268fd2d25f06ea75c2e9042c4c3cb6cd0c751c",
+      5511
+    ],
+    [
+      "patches/54540830 - The Bigs 2.patch.toml",
+      "7666248d319132c4165f48c67e9cf89362e89b70",
+      619
+    ],
+    [
+      "patches/54540843 - Spec Ops The Line (TU2).patch.toml",
+      "a10800067e7d7e0c4d613389496e3b3f171426bd",
+      1366
+    ],
+    [
+      "patches/54540843 - Spec Ops The Line.patch.toml",
+      "56f9cc2bc29e3e43be1458469acae86f3dcdbddc",
+      1360
+    ],
+    [
+      "patches/5454085D - Bioshock Infinite (TU7).patch.toml",
+      "09495137e7f4d5e9d5439fa044a97aad1d432b8c",
+      1245
+    ],
+    [
+      "patches/5454085D - Bioshock Infinite.patch.toml",
+      "779853c214b136033c831d8b784efe04656e3dbb",
+      1239
+    ],
+    [
+      "patches/5454087C - Borderlands 2 (TU14).patch.toml",
+      "16babf2670a8181144266d52476cf54c034ba437",
+      894
+    ],
+    [
+      "patches/5454087C - Borderlands 2.patch.toml",
+      "6745d44f49834d6f134628dc5cb5ba25bceb9f38",
+      1278
+    ],
+    [
+      "patches/54540882 - XCOM Enemy Unknown (TU1).patch.toml",
+      "89b55db1017889a8c82f38b8a121b2f2f4c7eaab",
+      867
+    ],
+    [
+      "patches/54540882 - XCOM Enemy Unknown (TU2).patch.toml",
+      "794316f28a8b0b6bd599eee9b7f867afbc234552",
+      867
+    ],
+    [
+      "patches/54540882 - XCOM Enemy Unknown.patch.toml",
+      "422c852b86a9a9f5545b87a45ff4ce78fd61d047",
+      861
+    ],
+    [
+      "patches/5454088D - The Darkness II (TU2).patch.toml",
+      "5c43a8e3d64a9d0a0feabb69c46c87cd699cd400",
+      713
+    ],
+    [
+      "patches/5454088D - The Darkness II.patch.toml",
+      "da5efdae89f215d54f7284d23cc719cdb2aed680",
+      707
+    ],
+    [
+      "patches/545408A7 - Grand Theft Auto V (TU10).patch.toml",
+      "55764bfc79d93db482ea371787cea8d00d1a2768",
+      386
+    ],
+    [
+      "patches/545408A7 - Grand Theft Auto V (TU18).patch.toml",
+      "9c9daf24f4b716a7e04236eebf412873439b5e39",
+      416
+    ],
+    [
+      "patches/545408A7 - Grand Theft Auto V (TU26).patch.toml",
+      "70f463729b9ce1c8e23a36f1691a74dc5c7b33b3",
+      3728
+    ],
+    [
+      "patches/545408A7 - Grand Theft Auto V (TU27).patch.toml",
+      "b99c1ebc44f03a0eb53b46293f3dbd4ef01b9f32",
+      4076
+    ],
+    [
+      "patches/545408AE - XCOM Enemy Within (TU1).patch.toml",
+      "d5f9857246556eeb0f58b5c0c94f3ac1a8e84d2b",
+      866
+    ],
+    [
+      "patches/545408AE - XCOM Enemy Within.patch.toml",
+      "9013580ddd1c8d67f2e1d94b29f6015dc3561814",
+      860
+    ],
+    [
+      "patches/545408B4 - Borderlands The Pre-Sequel! (TU9).patch.toml",
+      "d1a85ed9f68b138cd5c7c8f44fe9bb25020bfad3",
+      908
+    ],
+    [
+      "patches/545408B4 - Borderlands The Pre-Sequel!.patch.toml",
+      "562a45cf195a9e908b5e648b07b991b280a4ecdd",
+      902
+    ],
+    [
+      "patches/545A07D5 - Carrier Command Gaea Mission (USA).patch.toml",
+      "d56a82ec5a002ce311a1dcbf7deba592f612bbbe",
+      439
+    ],
+    [
+      "patches/555307D4 - Assassin's Creed.patch.toml",
+      "d68ed91dee2f182fac6c09d0cbb03441cf41af67",
+      464
+    ],
+    [
+      "patches/555307DC - Far Cry Instincts Predator.patch.toml",
+      "9f0da838b3a3cbee6c2148a250fbe46c0e891bb0",
+      787
+    ],
+    [
+      "patches/555307E5 - Naruto Rise of a Ninja.patch.toml",
+      "1a676bf3f3d6d27f47689fe0e44a66289d3eb452",
+      328
+    ],
+    [
+      "patches/555307EA - Brothers in Arms Hell's Highway.patch.toml",
+      "a16fe555adc8a4379599b10f4f1009b6db09c301",
+      1134
+    ],
+    [
+      "patches/555307EE - Import Tuner Challange.patch.toml",
+      "1803ac87abc485102fef28a437508deadd0fd6ac",
+      476
+    ],
+    [
+      "patches/5553083B - Assassin's Creed II (GOTY).patch.toml",
+      "d0f4c5f127c9d07c82b8205e9ad117ce7f915336",
+      447
+    ],
+    [
+      "patches/5553088C - Far Cry 3.patch.toml",
+      "e5ed797b30ac182a3186b8bf9590eb59e71b0a7f",
+      927
+    ],
+    [
+      "patches/555308BD - The Smurfs 2.patch.toml",
+      "1e8c20703ad4d64b761c7428e63ea17fb1ed4ecd",
+      456
+    ],
+    [
+      "patches/565507D4 - The Bourne Conspiracy.patch.toml",
+      "b9fc8960d77ffa66006bd20aa99faedd96c460a3",
+      1132
+    ],
+    [
+      "patches/565707D0 - Lollipop Chainsaw (Premium Edition).patch.toml",
+      "82fe9f5ae2b473e9a2c657a5a512b79a62076b19",
+      1121
+    ],
+    [
+      "patches/565707D0 - Lollipop Chainsaw.patch.toml",
+      "bb7880f3f3112c48acf37cd580985c0ede4b7cb6",
+      3219
+    ],
+    [
+      "patches/565707D6 - Killer Is Dead.patch.toml",
+      "7bf8e4f8d2d2daea264feab521864a7a30c6161c",
+      1150
+    ],
+    [
+      "patches/575207D3 - F.E.A.R. 2 Project Origin (TU3).patch.toml",
+      "1f3409a37b11ddb6ee84ca0f0303ae751b510b83",
+      522
+    ],
+    [
+      "patches/575207D3 - F.E.A.R. 2 Project Origin.patch.toml",
+      "8acdf4468801bc63706e9e91493b05ba7c4a6670",
+      516
+    ],
+    [
+      "patches/57520802 - Batman Arkham City (TU6).patch.toml",
+      "a3289a721de09713d4e3fe7d10269e71f337f3b9",
+      1442
+    ],
+    [
+      "patches/57520802 - Batman Arkham City GOTY.patch.toml",
+      "ecbe1e8d3637916ca862bbf511b54b8eec5f1458",
+      1615
+    ],
+    [
+      "patches/57520802 - Batman Arkham City.patch.toml",
+      "f2c393cfe49ee13aa95f2c3a22391c15a24a93b9",
+      1436
+    ],
+    [
+      "patches/57520828 - Batman Arkham Origins (TU3).patch.toml",
+      "05acb3ed6e5ca3a585ef1078e7ae26ce5a6fa0de",
+      1733
+    ],
+    [
+      "patches/57520828 - Batman Arkham Origins (TU4).patch.toml",
+      "5a9920f9114c1f48ae2668ef84ca51565a6e24c1",
+      1733
+    ],
+    [
+      "patches/57520828 - Batman Arkham Origins.patch.toml",
+      "26fa68c111b92441db13c90f7e26954ceaac944f",
+      1909
+    ],
+    [
+      "patches/5752082C - Middle-Earth Shadow of Mordor (TU2).patch.toml",
+      "d39ea6dee163a88b80b8bd8c61598e7c6a86fc91",
+      718
+    ],
+    [
+      "patches/5752082C - Middle-Earth Shadow of Mordor.patch.toml",
+      "2b37277f3d09ee594d4860d034c498b6570b5cda",
+      712
+    ],
+    [
+      "patches/584107D5 - Small Arms.patch.toml",
+      "3bc2e36e79b33cb43a542677489f80cf3b3e1e55",
+      833
+    ],
+    [
+      "patches/5841086A - Boom Boom Rocket (TU2).patch.toml",
+      "541ebae8591d362f07881fd7c40fba32ed5539c1",
+      520
+    ],
+    [
+      "patches/5841086A - Boom Boom Rocket.patch.toml",
+      "1ef3bf5d2aca0700210711fab40dd6c1d70e9a30",
+      514
+    ],
+    [
+      "patches/58410873 - Undertow (TU2).patch.toml",
+      "c6eb5f7a719a25e5f2ec118d973f8aba14cf9bba",
+      655
+    ],
+    [
+      "patches/58410873 - Undertow.patch.toml",
+      "532f7af68c652253a54a0a1ec6d9b794f0b9d42c",
+      649
+    ],
+    [
+      "patches/58410889 - Peggle.patch.toml",
+      "eda075b99f2fb6458f2193bd2d06ec5f6239e396",
+      308
+    ],
+    [
+      "patches/58410898 - Military Madness Nectaris.patch.toml",
+      "e57da1154d00e1c4b431ce836a65f1b7c6396a92",
+      397
+    ],
+    [
+      "patches/584108A9 - Bean (GoldenEye 007) (Community Edition).patch.toml",
+      "64cff61ce638925f3bfff624db0e1f10878e5667",
+      12277
+    ],
+    [
+      "patches/584108A9 - Bean (GoldenEye 007).patch.toml",
+      "7071f8c1cb0bc71e7a937080b09ad1a33770f46f",
+      13390
+    ],
+    [
+      "patches/584108AA - 1942 Joint Strike.patch.toml",
+      "95b45c530a83d88178534458ccc2ddffa027a664",
+      389
+    ],
+    [
+      "patches/584108AB - WOTB Commando 3 (TU2).patch.toml",
+      "ce6614025d9233f50503adf61c27385b880a0b93",
+      430
+    ],
+    [
+      "patches/584108AB - WOTB Commando 3.patch.toml",
+      "0f3b015cb7eff9f55b8f9f281ff2b0ad6c5eb6e2",
+      425
+    ],
+    [
+      "patches/584108C7 - Shrek n' Roll.patch.toml",
+      "d11afa43c133abe62b4d0990a6eb7c21ee4f599f",
+      736
+    ],
+    [
+      "patches/584108C8 - Quake Arena Arcade.patch.toml",
+      "6f3392042afe6abb02739f6ce291d7b63031b8c5",
+      714
+    ],
+    [
+      "patches/584108CB - Defense Grid The Awakening (TU5).patch.toml",
+      "0821552f4290b2217b9ef259c1e61c91e6c6ab4b",
+      617
+    ],
+    [
+      "patches/584108CB - Defense Grid The Awakening.patch.toml",
+      "40c31d6cc63767cbbce4bff40ac4b36d998cc6d8",
+      611
+    ],
+    [
+      "patches/584108D3 - Boogie Bunnies.patch.toml",
+      "97090e6fae8514872ec420d28f14ad03f58b3ed5",
+      574
+    ],
+    [
+      "patches/584108DB - A Kingdom for Keflings.patch.toml",
+      "24d4c0ecdb9a82eecf11238cf829c790ece4bc01",
+      427
+    ],
+    [
+      "patches/584108EC - Ticket to Ride.patch.toml",
+      "e7bc9c67c6771038c22b9c7b5627f79094bb163a",
+      690
+    ],
+    [
+      "patches/584108F6 - Shadow Complex.patch.toml",
+      "aaf8b4717936bc316b211b6db111075e1bef8e17",
+      1524
+    ],
+    [
+      "patches/58410908 - Gel Set & Match.patch.toml",
+      "676c5e591cbdca733d4a72081e420d1a04472c72",
+      357
+    ],
+    [
+      "patches/5841090B - Doritos Dash of Destruction.patch.toml",
+      "699e5405362e59f6175cee692f34da5cd2abad6d",
+      350
+    ],
+    [
+      "patches/58410921 - CellFactor PW.patch.toml",
+      "34d5a0cba0cb2d564ba014396dbf9e292c3434c6",
+      894
+    ],
+    [
+      "patches/58410954 - Banjo-Kazooie (TU2).patch.toml",
+      "807a3d2294184da55b7a77ac2e52a4439006627a",
+      350
+    ],
+    [
+      "patches/58410954 - Banjo-Kazooie.patch.toml",
+      "779a54b685b595aef05979247df6d7fafad5638b",
+      12628
+    ],
+    [
+      "patches/58410955 - Banjo-Tooie.patch.toml",
+      "a9b9425ccdd1262c83641e65ed4ab8be9a1c9b1e",
+      12701
+    ],
+    [
+      "patches/58410964 - Alien Breed Episode 1.patch.toml",
+      "75ea766c3108e7c717b5e64db36a771fcd8fd4b6",
+      1353
+    ],
+    [
+      "patches/58410968 - Outrun Online Arcade.patch.toml",
+      "3c9f0e0e39c40f2972bc82f208cae268da37b8b1",
+      358
+    ],
+    [
+      "patches/5841096A - Hydro Thunder Hurricane.patch.toml",
+      "ef1dc1d81029136c8be2232b69dea530b2f1bea3",
+      311
+    ],
+    [
+      "patches/584109C2 - Perfect Dark (Dec 3, 2009 Prototype).patch.toml",
+      "cc861baad36790f3e6c22efcfe031234ffc93a8f",
+      334
+    ],
+    [
+      "patches/584109C2 - Perfect Dark (Mar 4, 2010 Prototype).patch.toml",
+      "6447c4664ad19f85161d4b1d8e57c90cb72c7d9d",
+      334
+    ],
+    [
+      "patches/584109C2 - Perfect Dark (TU3).patch.toml",
+      "2072aa3f117526f4025edaa7a6c90b1d7f3720a0",
+      310
+    ],
+    [
+      "patches/584109C2 - Perfect Dark.patch.toml",
+      "4fd27d3252107f6a83d6c259dbe5f90f43d4df77",
+      310
+    ],
+    [
+      "patches/584109DA - Serious Sam HD TFE.patch.toml",
+      "10287f730ecac6dbb11e5f2efb64c30d831c5163",
+      1653
+    ],
+    [
+      "patches/584109FF - Plants vs. Zombies.patch.toml",
+      "e5ffb44af5a35f98dd7af83d44bcd260b3d4602d",
+      509
+    ],
+    [
+      "patches/58410A05 - Outland.patch.toml",
+      "d421f49f259599455708c8b0dc85df9daf0e3fef",
+      916
+    ],
+    [
+      "patches/58410A22 - Alien Breed 2 Assault.patch.toml",
+      "1c572201b7f8f2ca1ba1d5e3353e05d62634c611",
+      1360
+    ],
+    [
+      "patches/58410A34 - Crazy Taxi.patch.toml",
+      "b4fa90b8b43a2db7aa3d160ad831e5676d3d0d22",
+      672
+    ],
+    [
+      "patches/58410A39 - Space Channel 5 Part 2.patch.toml",
+      "0fa296cb841cd9a2134bc06fcdffdf8c1b8704ef",
+      718
+    ],
+    [
+      "patches/58410A70 - Harm's Way.patch.toml",
+      "a044b421dc90502b22e02fcca5c0e0810aebf378",
+      350
+    ],
+    [
+      "patches/58410A72 - Serious Sam HD TSE.patch.toml",
+      "615695017924daf576a4a853669412e5f132b7a3",
+      1393
+    ],
+    [
+      "patches/58410A8D - Dead Rising 2 Case Zero.patch.toml",
+      "1a95b62e8545a0dec3922af95818cbf04a27e2c0",
+      931
+    ],
+    [
+      "patches/58410A95 - Iron Brigade (TU6).patch.toml",
+      "a61f3fd62fa6fdc147969248fcc47e1806eebb01",
+      1058
+    ],
+    [
+      "patches/58410A95 - Iron Brigade.patch.toml",
+      "451f8cbf5deef0190e2cf80edb827f8f9c30f3a2",
+      1052
+    ],
+    [
+      "patches/58410AA2 - Dungeons & Dragons Daggerdale.patch.toml",
+      "ce0e269879928dd2ad1e69b8a10851eb15e82086",
+      730
+    ],
+    [
+      "patches/58410AA3 - Alien Breed 3 Descent.patch.toml",
+      "af48bf9c5e06b9239d9e2b60c751753ce97e6f3d",
+      1360
+    ],
+    [
+      "patches/58410B00 - Dead Rising 2 Case West.patch.toml",
+      "fdd48b2a4ca01281e7c1183e054ca7c986b140af",
+      1138
+    ],
+    [
+      "patches/58410B22 - Alien Rage.patch.toml",
+      "9e5038c715e28dee2f6efdd643365214a26ec870",
+      1067
+    ],
+    [
+      "patches/58410B45 - Section 8 Prejudice (TU2).patch.toml",
+      "c6a1339666d31e27809599a7f6e43f3527031a44",
+      1081
+    ],
+    [
+      "patches/58410B45 - Section 8 Prejudice.patch.toml",
+      "9edd827cb4c7ee5f7a3751639b39b7d642901738",
+      1313
+    ],
+    [
+      "patches/58410B48 - Dead Block.patch.toml",
+      "0e3c774d3cd2fc522c69720908b8d668115665d8",
+      1065
+    ],
+    [
+      "patches/58410B52 - Warhammer 40,000 Kill Team.patch.toml",
+      "e79467dcd579b133f702f3c21648e0210cf5ec1a",
+      469
+    ],
+    [
+      "patches/58410B55 - Who Wants to Be a Millionaire Special Editions.patch.toml",
+      "74bc5486737c9b69eef2ac611db5d2e2793188f5",
+      900
+    ],
+    [
+      "patches/58410B6D - Dungeon Defenders (TU2).patch.toml",
+      "c555995ed61ec549c7d3edd16d54332e4d69af19",
+      1302
+    ],
+    [
+      "patches/58410B6D - Dungeon Defenders.patch.toml",
+      "7bbab6acf39136dc5ed3d74d925eaf33ed56a478",
+      1296
+    ],
+    [
+      "patches/58410B7A - Bloodforge (TU1).patch.toml",
+      "428ee0626df444c18b752e18e235db765e54c88c",
+      889
+    ],
+    [
+      "patches/58410B7A - Bloodforge.patch.toml",
+      "198403e34f8054f494c4e92a9aaf04661dba0aff",
+      883
+    ],
+    [
+      "patches/58410B8D - Deadlight (TU1).patch.toml",
+      "f41e4e65621003c7cdd6802cd02be39bbb436b4c",
+      1162
+    ],
+    [
+      "patches/58410B8D - Deadlight.patch.toml",
+      "b74c717d0bf18f203fe298124c799bdc4cda7466",
+      1156
+    ],
+    [
+      "patches/584111DC - Warp.patch.toml",
+      "806b8cd42c470e5c876649fd587ed4cf999b7a38",
+      546
+    ],
+    [
+      "patches/584111E8 - State of Decay (TU5).patch.toml",
+      "bb4432703ab2b250a9151268a5a59898b3d66f98",
+      1067
+    ],
+    [
+      "patches/584111E8 - State of Decay (TU7).patch.toml",
+      "0299eeed75812e3ccd884fffff1fc583f0c74418",
+      1067
+    ],
+    [
+      "patches/584111E8 - State of Decay.patch.toml",
+      "a9f58aef55962d33b52c933638840e792144162e",
+      1061
+    ],
+    [
+      "patches/584111F7 - Minecraft (XBLA, TU0).patch.toml",
+      "34875f2b25beae7e48127f583dcc0e1e3467be6c",
+      2200
+    ],
+    [
+      "patches/584111F7 - Minecraft (XBLA, TU1).patch.toml",
+      "887f442909499d6671c919768433ced95a9ea1eb",
+      784
+    ],
+    [
+      "patches/584111F7 - Minecraft (XBLA, TU2).patch.toml",
+      "3f4de5ef23ef1e6257c0504fe1316cff9ae9e1ef",
+      784
+    ],
+    [
+      "patches/584111F7 - Minecraft (XBLA, TU3).patch.toml",
+      "4fc380879f055a4177a36bd96a5e350bc68d167a",
+      784
+    ],
+    [
+      "patches/584111F7 - Minecraft (XBLA, TU4).patch.toml",
+      "649693e2b577d750722ce7f919fe30c38b36de7f",
+      784
+    ],
+    [
+      "patches/584111F7 - Minecraft (XBLA, TU75).patch.toml",
+      "514afd577accb18c1bbe3e49cb042c65f24f1071",
+      381
+    ],
+    [
+      "patches/58411233 - Alan Wake's American Nightmare.patch.toml",
+      "b0e090ad7c4531c16d838a83d26d649a075be51b",
+      779
+    ],
+    [
+      "patches/5841124B - The Expendables 2 Videogame.patch.toml",
+      "eeef291867c7a6508ca9e1d39fa411f873fe11dd",
+      2332
+    ],
+    [
+      "patches/5841124F - Doritos Crash Course 2.patch.toml",
+      "d92b76d3fa1a7b75638792fd26c1009838173013",
+      354
+    ],
+    [
+      "patches/5841125E - Joy Ride Turbo (TU1).patch.toml",
+      "435fa7b3bfd7751ff85c832c3cd979f1103e5ffa",
+      739
+    ],
+    [
+      "patches/5841125E - Joy Ride Turbo.patch.toml",
+      "2a79ae7fd2f2df46e8f1b2bf200220252c928e7d",
+      733
+    ],
+    [
+      "patches/58411277 - Zeno Clash 2 (TU1).patch.toml",
+      "80ccd1c38bfe6bc4d31d90d7c4f0d51bb866c912",
+      1290
+    ],
+    [
+      "patches/58411277 - Zeno Clash 2.patch.toml",
+      "31b129fdfa7e16a4bad22f764a40cb6b2a8ac722",
+      1284
+    ],
+    [
+      "patches/5841127F - Serious Sam 3 BFE.patch.toml",
+      "daffeb474d7470719723c228ecd74a5594f0caea",
+      1092
+    ],
+    [
+      "patches/5841128C - Karateka.patch.toml",
+      "b269b9b137623b511e6ba82b0cc6b6aba0a29389",
+      881
+    ],
+    [
+      "patches/58411293 - Narco Terror.patch.toml",
+      "1f9f4f8a10c6c54fd778788f18b41659eadc56a1",
+      2317
+    ],
+    [
+      "patches/584112A5 - Brothers A Tale of Two Sons.patch.toml",
+      "2b2ac248ce7aa52fecc74a80eac266144151f431",
+      917
+    ],
+    [
+      "patches/584112AD - Special Forces Team X.patch.toml",
+      "030862392b4d71ddc0f0fcc56a1135f1f2da244d",
+      919
+    ],
+    [
+      "patches/584112B0 - Call of Juarez Gunslinger.patch.toml",
+      "6a044a8d94259f0ccf4277553a4d044707b540de",
+      609
+    ],
+    [
+      "patches/58411329 - Sanctum 2.patch.toml",
+      "aea8c8c5b794ed3e05db1663b1fea0b31c35ad33",
+      1064
+    ],
+    [
+      "patches/584113C2 - Teenage Mutant Ninja Turtles Out of the Shadows.patch.toml",
+      "5e15ac4281f50fcbbe2cb3d275f698012e1f0ccb",
+      1235
+    ],
+    [
+      "patches/584113F8 - Fireburst.patch.toml",
+      "b3630d302c359434bc96ea68d617aa7422eb9f1d",
+      916
+    ],
+    [
+      "patches/584113FE - Flashback (TU1).patch.toml",
+      "13189176980680f88d9ca9e65622eeb1cdc492ec",
+      1236
+    ],
+    [
+      "patches/584113FE - Flashback.patch.toml",
+      "00a192bc921521ac40076906a5c87cdf3ba38ef3",
+      1230
+    ],
+    [
+      "patches/58411403 - Marlow Briggs and the Mask of Death.patch.toml",
+      "e61a27580dc3ca5963c112fd52f3de5290157020",
+      3323
+    ],
+    [
+      "patches/58411408 - Castlevania LOS-MOF HD.patch.toml",
+      "f10a2df8cffa42f982d78af4cace47c5f464d4fe",
+      465
+    ],
+    [
+      "patches/5841141A - Contrast (TU1).patch.toml",
+      "92f3562744d3c7e9ee09f656f30ac6e4109df241",
+      1333
+    ],
+    [
+      "patches/5841141A - Contrast.patch.toml",
+      "c7be810d67bd9612c30a6a1db63e103d2fde55f8",
+      1327
+    ],
+    [
+      "patches/58411436 - Peggle 2.patch.toml",
+      "b97ac89b135850a12acbdff388d25cb2a0ae80d6",
+      928
+    ],
+    [
+      "patches/5841147C - Life Is Strange (TU9).patch.toml",
+      "7a742a15861810e6396cafea97be3cb61632cbda",
+      848
+    ],
+    [
+      "patches/5841147C - Life Is Strange.patch.toml",
+      "3e210b9137bd5a436c92bae2384a15177f2d55ea",
+      842
+    ]
+  ]
+}
