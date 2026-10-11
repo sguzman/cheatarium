@@ -141,6 +141,47 @@ struct GameIndex {
     candidates: Vec<GameCandidate>,
 }
 
+
+fn parse_mohasi_ps3_compiled(text: &str) -> cheatarium_index::ParsedCheats {
+    // The upstream plugin syntax uses name/author/mode/score headers and raw
+    // w8/w16/w32/aob commands. Preserve the *entire* source-native block for
+    // each named entry, including annotations, rather than guessing opcodes.
+    // Scores are upstream community reports, NOT observed Cheatarium tests.
+    fn flush(codes: &mut Vec<Code>, current: &mut Option<String>, raw: &mut String) {
+        if let Some(title) = current.take() {
+            codes.push(Code {
+                ordinal: codes.len(),
+                description: Some(title),
+                code: Some(std::mem::take(raw)),
+                source_enabled: false,
+                verification: "unverified",
+                role: "code",
+                native_fields: Vec::new(),
+                snes_decode: None,
+                composition: None,
+            });
+        }
+    }
+    let mut codes = Vec::new();
+    let mut name = None;
+    let mut raw = String::new();
+    for line in text.split_inclusive('\n') {
+        if let Some(title) = line.strip_prefix("name: ").map(str::trim).filter(|v| !v.is_empty()) {
+            flush(&mut codes, &mut name, &mut raw);
+            name = Some(title.to_owned());
+        }
+        if name.is_some() {
+            raw.push_str(line);
+        }
+    }
+    flush(&mut codes, &mut name, &mut raw);
+    cheatarium_index::ParsedCheats {
+        declared_count: None,
+        codes,
+        warnings: vec!["Artemis-derived PS3 source converted for another plugin; aliases, per-serial variants and upstream vote scores do not establish new effects, working cheats or verified compatibility".into()],
+    }
+}
+
 fn parse_cheatdevice_ps2_games(text: &str) -> Vec<(String, Vec<Code>)> {
     fn is_native_code_line(line: &str) -> bool {
         let mut parts = line.split_whitespace();
@@ -946,6 +987,7 @@ fn run() -> Result<()> {
     // In particular, GoldHEN PS2-looking IDs are not claims of PS2 support.
     for manifest_id in [
         "artemis-ps3",
+        "mohasi-ps3-compiled",
         "goldhen",
         "etahen-ps5",
         "rincheat-vita",
@@ -1020,6 +1062,13 @@ fn run() -> Result<()> {
         "xan1242-gt3-freecam",
         "dolphin-game-cheats",
     ] {
+        // The separately dispatched bulk importer creates this optional manifest.
+        // The initial implementation commit can still build the existing archive.
+        if manifest_id == "mohasi-ps3-compiled"
+            && !root.join(format!("sources/{manifest_id}.json")).exists()
+        {
+            continue;
+        }
         let native: SourceManifest =
             serde_json::from_slice(&fs::read(root.join(format!("sources/{manifest_id}.json")))?)?;
         if native.id != manifest_id {
@@ -1292,6 +1341,11 @@ fn run() -> Result<()> {
                         original.trim_start_matches("SE_cheats_db/").to_owned(),
                     )
                 }
+                "mohasi-ps3-compiled"
+                    if original.starts_with("compiled/") && original.ends_with(".txt") =>
+                {
+                    ("ps3", "ps3-mohasi-compiled", original.trim_start_matches("compiled/").to_owned())
+                }
                 "artemis-ps3"
                     if original.starts_with("docs/codes/") && original.ends_with(".ncl") =>
                 {
@@ -1435,6 +1489,7 @@ fn run() -> Result<()> {
                     }],
                     warnings: vec!["Original Vita runtime/save-edit source is opaque; do not infer game-build compatibility or activate automatically".to_owned()],
                 },
+                "ps3-mohasi-compiled" => parse_mohasi_ps3_compiled(&decoded),
                 "artemis-ncl" => parse_artemis_ncl(&decoded),
                 "goldhen-json" => parse_goldhen_json(&decoded),
                 "goldhen-mc4" => parse_goldhen_mc4(&decoded),
@@ -1465,6 +1520,11 @@ fn run() -> Result<()> {
             }
             let source_declared_title = if manifest_id == "goldhen" {
                 goldhen_titles.get(original).cloned()
+            } else if manifest_id == "mohasi-ps3-compiled" {
+                decoded.lines().find_map(|line| line.strip_prefix("# ")
+                    .map(str::trim)
+                    .filter(|s| !s.is_empty())
+                    .map(str::to_owned))
             } else if manifest_id == "emucorex-cheatdevice-pnach" {
                 decoded.lines().find_map(|line| {
                     line.strip_prefix("gametitle=")
@@ -1838,6 +1898,23 @@ mod tests {
     }
 
     use super::*;
+
+    #[test]
+    fn converted_ps3_code_parser_preserves_origins_and_never_promotes_scores() {
+        let input = "# Example (source-declared)\nname: Infinite Health\n\
+author: original creator\nscore BCES00001 01.00: 80 2+ 0-\nmode: once\n\
+w32 0010ABCD 00000064\n\nname: Special\n\
+author: another author\nmode: once\naob 0123 4567\n";
+        let parsed = parse_mohasi_ps3_compiled(input);
+        assert_eq!(parsed.codes.len(), 2);
+        assert_eq!(parsed.codes[0].ordinal, 0);
+        assert_eq!(parsed.codes[0].description.as_deref(), Some("Infinite Health"));
+        assert!(parsed.codes[0].code.as_ref().unwrap().contains("score BCES00001"));
+        assert!(parsed.codes[0].code.as_ref().unwrap().contains("author: original creator"));
+        assert!(parsed.codes[1].code.as_ref().unwrap().contains("aob 0123 4567"));
+        assert!(parsed.codes.iter().all(|c| c.verification == "unverified"));
+        assert!(parsed.codes.iter().all(|c| !c.source_enabled));
+    }
 
     fn mock(
         filename: &str,

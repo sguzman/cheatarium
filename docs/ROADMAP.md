@@ -36,6 +36,10 @@ The maintained GPL-3.0 CheatDevicePS2 fork `israpps/CheatDevicePS2` includes fou
 
 **Standing rule:** all further acquisitions are bulk-first. The next target is entire eligible console collections that substantially improve breadth and title coverage, particularly under-covered Xbox 360, GameCube/Wii, PS2, Switch and Vita libraries. Keep rights-unresolved sources link-only and do not report their payloads as acquired. Manual single-game work is reserved for the final coverage-gap stage.
 
+## Full-source converted PS3 bulk acquisition (2026-10-11)
+
+The separately automated `mohasi/game-cheats` PS3 import targets its exact MIT-noticed snapshot `08f2c50c`: all **4,343** compiled native plugin text files, **13,343** editable source/alias text files and **2** source notices, **17,688 original files** total. It is a converted, reformatted **derivative of already archived Artemis PS3**, not 17,688 original newly discovered games or codes. Keep all source aliases, author attribution, original scores and raw formatting unchanged, and expose only compiled serial files as source-native, **unverified** named cheat entries. Upstream score values are not gameplay tests conducted by Cheatarium. The automatic importer commits originals and attribution independently before CI regenerates the PS3 bundle. Historical original cheat-author rights may vary despite the upstream MIT grant.
+
 ## Collection pipeline
 
 1. **Discover** a source; identify platforms, file formats, size, provenance, and licenses.

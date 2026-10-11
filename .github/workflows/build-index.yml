@@ -18,6 +18,8 @@ on:
       - "sources/libretro-database.json"
       - "sources/sharkive.json"
       - "sources/bad1dea-nxcheats-switch.json"
+      - "sources/mohasi-ps3-compiled.json"
+      - "archive/mohasi-ps3-compiled/**"
       - "sources/goldhen.json"
       - "sources/etahen-ps5.json"
       - "sources/rincheat-vita.json"
@@ -192,7 +194,7 @@ on:
       - "archive/dolphin-game-cheats/**"
   workflow_dispatch:
   workflow_run:
-    workflows: ["Bulk import pinned Libretro cheat collections", "Bulk import pinned PS5 native cheat sources", "Bulk import pinned PS Vita cheat sources", "Bulk import pinned PS2 CheatDevice database", "Bulk import pinned PS2 ZIP cheat collections", "Bulk import pinned PS2 PNACH conversion library", "Bulk import pinned Nintendo Switch NXCheats collection"]
+    workflows: ["Bulk import pinned Libretro cheat collections", "Bulk import pinned PS5 native cheat sources", "Bulk import pinned PS Vita cheat sources", "Bulk import pinned PS2 CheatDevice database", "Bulk import pinned PS2 ZIP cheat collections", "Bulk import pinned PS2 PNACH conversion library", "Bulk import pinned Nintendo Switch NXCheats collection", "Bulk import pinned converted PS3 Artemis-derived collection"]
     types: [completed]
 
 permissions:
@@ -239,6 +241,7 @@ jobs:
             fi
           done
           python3 tools/test_external_bulk.py
+          python3 tools/test_import_mohasi_ps3.py
       - name: Confirm python-tests stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
