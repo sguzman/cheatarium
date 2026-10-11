@@ -12,9 +12,9 @@
 6. **Verify** codes against actual game builds and supported emulators.
 7. **Publish** searchable indexes, then integrations/exporters.
 
-## Acquisition status (2026-10-10)
+## Acquisition status (2026-10-11)
 
-**33,203 archived original cheat files**, **33,169 searchable in 44 console bundles** and **46 pinned upstream repositories**. The latest 13 collections contributed **57 additional original files**: 43 Wii Gecko INIs, 9 GameCube Gecko Markdown code documents and 5 Gran Turismo 3 PS2 PNACHs, all with source-specific licenses, exact archive blob hashes and upstream caveats. The generated index includes **1,258,628 code-bearing source entries**. The 34 unclassified Dolphin INIs remain archived and deliberately unassigned. Region/build matching, game-code functionality, and per-contributor redistribution permissions have not been independently confirmed. Collecting legally reusable original cheats remains the priority; no desktop feature work was authorized.
+**33,215 original cheat-bearing files archived from 52 pinned repositories**, with **33,181 searchable across 44 console bundles**, **34 archived but unassigned Dolphin INIs**, and **1,258,742 code-bearing source occurrences**. Six newly pinned sources supplied 12 original native cheat files: **10 Wii Gecko INIs**, **1 GameCube Gecko text file**, and **1 Nintendo 3DS CTRPF text file**. Source archive blobs, licenses and attribution notes were checked; search-client lookups and automated validation passed. Original region/build suitability, code effects, and inherited third-party code rights remain unverified. Native cheat acquisition remains the priority; there was no UI/desktop expansion.
 
 ## Platform queue
 
@@ -32,6 +32,7 @@
 - [x] Acquire original Wii Gecko codes from e.the.real (3), 3DS Gateshark texts from four author-licensed FoxyXTN projects (4), and Sly 2 PS2 PNACH reimplementations from andshrew (5), retaining pinned source hashes and original licenses.
 - [x] Archive and index 24 additional independently pinned cheat originals: 14 Wii Gecko INIs from five MIT-licensed sources, 8 3DS CTRPF texts from seven Apache-licensed sources, and 2 Need for Speed Underground PS2 PNACHs from xan1242, with exact original source paths and SHA hashes.
 - [x] Archive and index 57 additional native cheat-bearing source files from 13 more repositories: 43 Wii Gecko INIs, 9 GameCube Gecko Markdown files and 5 Gran Turismo 3 PS2 PNACHs. Confirm original Git blob identity and run live source-lookup smoke checks; preserve external code-author credits and source-level rights limitations.
+- [x] Archive and index 12 additional native cheats from six pinned original sources: 10 Wii Gecko INIs, one GameCube 007 Agent Under Fire code text and one 3DS Ice Station Z item-changer text. Preserve exact author files, original source licenses and revision-specific alternatives, and verify source lookups in CI.
 - [ ] Resolve redistribution rights of the multi-author Ice Station Z CTRPF compilation before importing its code payload.
 - [ ] Expand GameCube/Wii/Wii U and other missing console source collections beyond these additional authors, and acquire independent 3DS/Switch/Vita sources where original-code reuse rights permit.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.
