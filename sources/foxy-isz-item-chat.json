@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-isz-item-chat",
+  "repository": "https://github.com/FoxyXTN/Item-Id-Chat-Test-",
+  "snapshot_commit": "86e95a5b4999965aed1e1f557f2f0a8c7d1b8d24",
+  "license": "Apache-2.0 (FoxyXTN; original LICENSE retained)",
+  "archive_prefix": "archive/foxy-isz-item-chat/",
+  "scope_note": "One original author-published Nintendo 3DS Ice Station Z item-ID chat-triggered CTRPF text cheat document, kept under original file title; source itself labels the code a test.",
+  "rights_note": "Apache-2.0 LICENSE preserved. Code text and 3DS EU-game claims remain source-origin assertions only; no title ID or build compatibility inferred. Independent code author credits are not supplied and are not invented.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "Item Id Chat (Test).txt",
+      "archive_path": "archive/foxy-isz-item-chat/Item Id Chat (Test).txt",
+      "git_blob_sha": "95748771a303b69f77c43c88271885a0ce5010ae"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-isz-item-chat/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    }
+  ]
+}

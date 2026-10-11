@@ -833,6 +833,10 @@ fn run() -> Result<()> {
         "wii-excite-truck-gecko",
         "wii-mario-power-tennis-gecko",
         "wii-super-sluggers-gecko",
+        "wii-galaxy2-gecko",
+        "wii-twilight-princess-gecko",
+        "gamecubing-gecko",
+        "foxy-isz-item-chat",
         "gc-007-high-fps",
         "foxy-ice-station-z-itemchanger",
         "xan1242-nfsu-ps2",
@@ -892,6 +896,7 @@ fn run() -> Result<()> {
                 | "wii-excite-truck-gecko"
                 | "wii-mario-power-tennis-gecko"
                 | "wii-super-sluggers-gecko"
+                | "wii-galaxy2-gecko"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
                 {
                     let disc = original
@@ -929,6 +934,25 @@ fn run() -> Result<()> {
                         "gateshark-text",
                         original.trim_end_matches(".txt").to_owned(),
                     )
+                }
+                "wii-twilight-princess-gecko"
+                    if original.starts_with("codes/") && original.ends_with(".ini") =>
+                {
+                    let filename = original.rsplit('/').next().unwrap_or(original);
+                    let disc = filename.split('.').next().unwrap_or(filename);
+                    // Game ID is only an unverified hint; revision stays in full source path.
+                    if disc.len() != 6 || !disc.chars().all(|c| c.is_ascii_alphanumeric()) {
+                        continue;
+                    }
+                    ("wii", "dolphin-ini", disc.to_owned())
+                }
+                "gamecubing-gecko" if original == "Geckos.txt" => {
+                    // Multi-game original author source; do not invent a common game ID.
+                    ("gamecube", "gecko-plain-text", original.to_owned())
+                }
+                "foxy-isz-item-chat" if original == "Item Id Chat (Test).txt" => {
+                    // Author's test code has no verified retail title/build identifier.
+                    ("3ds", "gateshark-text", original.to_owned())
                 }
                 "foxy-ice-station-z-itemchanger" if original == "ISZ Item Changer Slot1.txt" => {
                     // Original author-titled code file, no verified game build/title ID.

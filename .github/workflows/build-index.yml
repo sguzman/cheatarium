@@ -63,6 +63,10 @@ on:
       - "sources/wii-super-sluggers-gecko.json"
       - "sources/gc-007-high-fps.json"
       - "sources/foxy-ice-station-z-itemchanger.json"
+      - "sources/wii-galaxy2-gecko.json"
+      - "sources/wii-twilight-princess-gecko.json"
+      - "sources/gamecubing-gecko.json"
+      - "sources/foxy-isz-item-chat.json"
       - "sources/xan1242-nfsu-ps2.json"
       - "sources/xan1242-gt3-no-interlace.json"
       - "sources/xan1242-gt3-freecam.json"
@@ -132,6 +136,10 @@ on:
       - "archive/wii-super-sluggers-gecko/**"
       - "archive/gc-007-high-fps/**"
       - "archive/foxy-ice-station-z-itemchanger/**"
+      - "archive/wii-galaxy2-gecko/**"
+      - "archive/wii-twilight-princess-gecko/**"
+      - "archive/gamecubing-gecko/**"
+      - "archive/foxy-isz-item-chat/**"
       - "archive/xan1242-nfsu-ps2/**"
       - "archive/xan1242-gt3-no-interlace/**"
       - "archive/xan1242-gt3-freecam/**"
@@ -566,6 +574,21 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform 3ds --source-record-id 'foxy-ice-station-z-itemchanger:ISZ Item Changer Slot1.txt' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-ice-station-z-itemchanger" and d["provenance"]["upstream_path"] == "ISZ Item Changer Slot1.txt" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-galaxy2-gecko:codes/SB4E01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-galaxy2-gecko" and d["provenance"]["upstream_path"] == "codes/SB4E01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-twilight-princess-gecko:codes/RZDE01.0.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-twilight-princess-gecko" and d["provenance"]["upstream_path"] == "codes/RZDE01.0.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-twilight-princess-gecko:codes/RZDE01.2.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-twilight-princess-gecko" and d["provenance"]["upstream_path"] == "codes/RZDE01.2.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform gamecube --source-record-id 'gamecubing-gecko:Geckos.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "gamecube" and d["provenance"]["source_id"] == "gamecubing-gecko" and d["provenance"]["upstream_path"] == "Geckos.txt" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-isz-item-chat:Item Id Chat (Test).txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-isz-item-chat" and d["provenance"]["upstream_path"] == "Item Id Chat (Test).txt" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'

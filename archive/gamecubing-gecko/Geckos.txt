@@ -1,0 +1,19 @@
+Purple Scale GameCubing8619
+```045183b0 XXXXXXXX```
+dynamic memory edit
+
+$Disable Doshin Pull [PAL] [GameCubing8619]
+04024bd4 60000000
+
+$Save All Piki From End Day Death[Pikmin 2 GC USA Final v1.00] [GameCubing8619]
+0415ff4c 4e800020
+$Save All Piki From End Day Death[Pikmin 2 GC USA Kiosk Demo 17] [GameCubing8619]
+0415ff2c 4e800020
+I have more codes like LI but they are private until further mod notice 
+$stones enemys Pikimin 2
+c21074d0 00000003
+800301e0 64000010
+900301e0 38600001
+4e800020 00000000
+
+memory address - encoded PowerPC asm instruction

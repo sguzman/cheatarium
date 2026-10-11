@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "gamecubing-gecko",
+  "repository": "https://github.com/GameCubing8619/PowerPC-ASM-Gecko-Codes",
+  "snapshot_commit": "d046fdad799e0df7dd7023c739984e95e99aebe5",
+  "license": "GPL-3.0 (GameCubing8619; original LICENSE retained)",
+  "archive_prefix": "archive/gamecubing-gecko/",
+  "scope_note": "Original author-compiled GameCube Gecko code text with Doshin/Pikmin 2 code fragments and separate source-authored PowerPC assembly and C++ support retained unchanged.",
+  "rights_note": "Original author README states code was written for the NGC Gecko processor and labels GameCubing8619 authorship; original GPL-3.0 LICENSE retained. Contains several different games in a single text document. Source game names and code effects not independently verified.",
+  "native_cheat_counts": {
+    "gamecube": 1
+  },
+  "files": [
+    {
+      "upstream_path": "Func.S",
+      "archive_path": "archive/gamecubing-gecko/Func.S",
+      "git_blob_sha": "7f1b018a65953838eb9982a3c6680bd7b762adfe"
+    },
+    {
+      "upstream_path": "Func.cpp",
+      "archive_path": "archive/gamecubing-gecko/Func.cpp",
+      "git_blob_sha": "7e8f9cdf08ec89afb2fad437a4bf7bb18d1b2459"
+    },
+    {
+      "upstream_path": "Geckos.txt",
+      "archive_path": "archive/gamecubing-gecko/Geckos.txt",
+      "git_blob_sha": "a038434d2e1350351094822c5ecbcd7b13e3a2e1"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/gamecubing-gecko/LICENSE",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/gamecubing-gecko/README.md",
+      "git_blob_sha": "e0aad9a66e3ff8e11a321ee653d308b6ce6b291c"
+    }
+  ]
+}
