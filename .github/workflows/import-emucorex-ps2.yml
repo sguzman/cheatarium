@@ -1,0 +1,46 @@
+name: Bulk import pinned PS2 PNACH conversion library
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-emucorex-ps2.yml"
+      - "tools/import_emucorex_ps2.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-ps2-pnach-bulk-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire all 473 original serial/CRC PNACH files
+        run: python3 tools/import_emucorex_ps2.py
+      - name: Validate entire original archive
+        run: python3 tools/validate.py
+      - name: Commit complete source collection and credits
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/emucorex-cheatdevice-pnach/ sources/emucorex-cheatdevice-pnach.json
+          if git diff --cached --quiet; then
+            echo "All 473 originals already archived."
+            exit 0
+          fi
+          git commit -m "data(ps2): bulk-preserve 473 CRC-labeled original PNACH files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi

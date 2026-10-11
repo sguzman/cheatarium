@@ -860,6 +860,7 @@ fn run() -> Result<()> {
         "goldhen",
         "etahen-ps5",
         "rincheat-vita",
+        "emucorex-cheatdevice-pnach",
         "admentus-enhancement-codes",
         "mkwcat-gecko-codes",
         "shrub-kar-gecko",
@@ -1172,6 +1173,13 @@ fn run() -> Result<()> {
                         original.trim_start_matches("GC/").to_owned(),
                     )
                 }
+                "emucorex-cheatdevice-pnach"
+                    if original.starts_with("files/root670-cheatdevice/")
+                        && original.ends_with(".pnach") =>
+                {
+                    ("ps2", "pcsx2-pnach",
+                     original.trim_start_matches("files/root670-cheatdevice/").to_owned())
+                }
                 "rincheat-vita"
                     if original.starts_with("cheats_db/") && original.ends_with(".txt") =>
                 {
@@ -1363,6 +1371,11 @@ fn run() -> Result<()> {
             }
             let source_declared_title = if manifest_id == "goldhen" {
                 goldhen_titles.get(original).cloned()
+            } else if manifest_id == "emucorex-cheatdevice-pnach" {
+                decoded.lines().find_map(|line| {
+                    line.strip_prefix("gametitle=").map(str::trim)
+                        .filter(|label| !label.is_empty()).map(str::to_owned)
+                })
             } else {
                 None
             };
