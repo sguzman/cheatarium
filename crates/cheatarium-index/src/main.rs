@@ -956,8 +956,7 @@ fn run() -> Result<()> {
                     ("wii", "dolphin-ini", disc.to_owned())
                 }
                 "shaigem-melee-gecko"
-                    if original.starts_with("output/codes_")
-                        && original.ends_with(".txt") =>
+                    if original.starts_with("output/codes_") && original.ends_with(".txt") =>
                 {
                     // Original source labels effects under $Gecko-style headings.
                     // No verified game revision association is synthesized.
