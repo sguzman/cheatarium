@@ -46,7 +46,7 @@ def acquire(root):
         if len(parts) != 2 or parts[0] not in EXPECTED:
             continue
         stem, suffix = PurePosixPath(parts[1]).stem, PurePosixPath(parts[1]).suffix
-        if not (len(stem) == 9 and stem[:4] in ("PCSA", "PCSB", "PCSE", "PCSH")
+        if not (len(stem) == 9 and stem[:3] == "PCS" and stem[3].isalpha()
                 and stem[4:].isdigit()):
             raise RuntimeError(f"Unexpected native Vita game key: {path}")
         wanted = ".txt" if parts[0] == "cheats_db" else ".lua"
