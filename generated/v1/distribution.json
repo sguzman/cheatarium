@@ -3,10 +3,10 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33076,
-  "game_candidate_groups": 26519,
+  "source_files": 33082,
+  "game_candidate_groups": 26525,
   "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 80859,
+  "lexical_effect_tag_matches": 80860,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -28,8 +28,8 @@
     },
     {
       "path": "3ds.json.gz",
-      "sha256": "e21544203bb0497a33c345147eac29e9e560f741af6dc79483848cf4581c4ee3",
-      "size_bytes": 364014
+      "sha256": "98508461048c10d0d8b59cd29faf900af001ad10812440c697ac3983393ee3b3",
+      "size_bytes": 366509
     },
     {
       "path": "atari-2600.json.gz",
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "cf1478ba08f721bd2432ff7db234ee3d26e1bca920a06640c4450e3c25d39ab0",
+      "sha256": "cbad683d4e3f74f578b5a71df5678aaaffce6814a402ad8d6eb4f48599f428a2",
       "size_bytes": 20986
     },
     {
@@ -93,8 +93,8 @@
     },
     {
       "path": "games/3ds.json.gz",
-      "sha256": "f407d38b28647fdbca5ff70d53acc7082ce4528d5ce8dd82934d623041f24735",
-      "size_bytes": 8188
+      "sha256": "148f2e3ab45bb70033f502b05cf4ccd5f85420678bb46a7c6bf85e04f46fa401",
+      "size_bytes": 8328
     },
     {
       "path": "games/atari-2600.json.gz",
@@ -293,8 +293,8 @@
     },
     {
       "path": "games/wii.json.gz",
-      "sha256": "88170d4a44230ffeed8cac03ee088d5adc7b7a7bcaecccede4db206e778987e6",
-      "size_bytes": 1728
+      "sha256": "887637802f09d92917aa019234daedf127cc8fa1c861d072fef653cfb1a29783",
+      "size_bytes": 1780
     },
     {
       "path": "games/wonderswan-color.json.gz",
@@ -688,8 +688,8 @@
     },
     {
       "path": "tags/3ds.json.gz",
-      "sha256": "22eecab15e523d714c0ebbb14ea198856ae076bfbb7ec657ffe12d989a092a44",
-      "size_bytes": 8520
+      "sha256": "088a9ee38c375f7631321f0d33657382066fd77803e866ab5bd65ffd91df0636",
+      "size_bytes": 8551
     },
     {
       "path": "tags/atari-2600.json.gz",
@@ -928,8 +928,8 @@
     },
     {
       "path": "wii.json.gz",
-      "sha256": "8be986678459965819f2a4bfe9e65c3ccfb02d2714abf4f735b92c6e9e1286ba",
-      "size_bytes": 68718
+      "sha256": "11146fb23d43bca9e0180191e6e990eeab8018f8d7b6cc9ca782973a8efce24b",
+      "size_bytes": 69159
     },
     {
       "path": "wonderswan-color.json.gz",
