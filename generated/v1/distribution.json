@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33208,
-  "game_candidate_groups": 26651,
+  "source_files": 33210,
+  "game_candidate_groups": 26653,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 80881,
   "reviewed_snes_revision_alternatives": 27,
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "c73e115773bca55efcbdcdcddbc252c11876f6ba32937ac6db3277e882a92526",
+      "sha256": "891523349ea7c188be6c0c3c06aa2ff40ef16a9cf34e799244d2eb6e1f15f7e5",
       "size_bytes": 20988
     },
     {
@@ -83,8 +83,8 @@
     },
     {
       "path": "gamecube.json.gz",
-      "sha256": "ab3140d1647fb6c878aa43647f6a0c1fd365b869bccd1b89b7dc71314b709df4",
-      "size_bytes": 205512
+      "sha256": "486d441205688d8ae9f44a73407d5573c76e42180160b9d9e4da8122f177098c",
+      "size_bytes": 208364
     },
     {
       "path": "games/32x.json.gz",
@@ -143,8 +143,8 @@
     },
     {
       "path": "games/gamecube.json.gz",
-      "sha256": "2beb1e123b176b393958d2f726255d00076e12919f1f82af03704786e8539ed9",
-      "size_bytes": 3731
+      "sha256": "26871ca4290f20a8d037f624824771c1b7a7ef2a9e2ac9318ebec0fc6377ca95",
+      "size_bytes": 3786
     },
     {
       "path": "games/gb.json.gz",
