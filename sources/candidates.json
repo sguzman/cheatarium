@@ -133,6 +133,21 @@
       "state": "link_only_rights_review",
       "repo_license": "GPL-3.0 project LICENSE; original cheat-code author rights not established",
       "notes": "Reviewed commit 13c7a5c9957331398252e2a8916be7dd61b68144: 387 per-game native Markdown code documents. Root LICENSE GPLv3, but README is an index of game/code pages with no per-cheat author attribution or evidence that repo owner originated all codes. Do not bulk rehost until original cheat creators' reuse/attribution terms are checked."
+    },
+    {
+      "id": "xan1242-console-cheat-codes",
+      "repo": "https://github.com/xan1242/Console-Cheat-Codes",
+      "platforms": [
+        "ps1",
+        "ps2"
+      ],
+      "formats": [
+        "ps1-native-cht",
+        "pcsx2-pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "MIT root, but upstream credits multiple independent cheat-code authors",
+      "notes": "Reviewed master tree: 67 PS1 .cht source files and 48 PS2 .pnach source files. README explicitly says not all codes are original and credits Aero_, Arapapa, asasega and HugoPocked. Example PNACH files credit Silent as code author. Do not bulk rehost until per-file author licensing and permission are established; preserve author-specific labels and revisions."
     }
   ]
 }
