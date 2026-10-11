@@ -8,6 +8,10 @@ Entire licensed/pinned game-cheat collections are the default unit of acquisitio
 
 At the pinned Libretro revision, the first mapped expansion imported **835 `.cht` files** from MSX, MSX2, FinalBurn Neo arcade, DOS and Atari 8-bit. A second whole-directory pass imported the remaining seven upstream collections, led by **3,683 ZX Spectrum +3 files**, plus ChaiLove, PrBoom, PuzzleScript, TIC-80, Thomson MOTO and Wolfenstein 3D (**3,698 cheat files; TIC-80 also contains one README that is intentionally not counted as a cheat**). These preserve source-system identities, including computer, arcade and engine categories, without pretending they are console ROMs. The automatic importer committed and validated both complete batches (4,533 new files). This completes discovery coverage of the **51 source directories** at the pinned Libretro snapshot; it does not complete console coverage outside Libretro.
 
+## Automated bulk-coverage comparison
+
+The machine-generated `generated/v1/reports/ps2-bulk-source-coverage.json` compares the complete original root670 source game headings, NTSC and PAL ZIP titles, and CRC-labeled PNACH conversion titles using conservative lexical matching and an explicitly more relaxed region-label comparison. It records overlap and newly unmatched **source-name candidates**, not independently established new games. The CI build regenerates and checks it whenever it rebuilds the index; no manual curation or title choice occurs.
+
 ## PCSX2-ready bulk conversion (2026-10-11)
 
 The pinned `sashkinbro/EmuCoreX-Cheat` source `e1803c3b` exposes **473 serial/CRC-labeled PCSX2 PNACH originals** derived from the GPLv3 root670 CheatDevice collection. Import the *entire* folder, keeping the original `gametitle`, effect headings, GPL and contributor notice. These files improve ready-to-load native emulator coverage, but overlap raw root670 codes; do **not** present the conversion as 473 independently discovered effects or tested compatible ROMs.

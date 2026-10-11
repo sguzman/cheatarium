@@ -278,6 +278,10 @@ jobs:
         run: bash tools/report_ci_stage.sh rust-tests
       - name: Build per-console index bundles
         run: cargo run --locked --release -p cheatarium-index -- --root . --out generated/v1
+      - name: Measure bulk PS2 title-label coverage and source overlap
+        run: |
+          python3 tools/measure_ps2_bulk_coverage.py --write
+          python3 tools/measure_ps2_bulk_coverage.py --check
       - name: Confirm index-generated stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
