@@ -6,10 +6,18 @@ from external_bulk import SOURCES, classify, load, lookup, source_link, validate
 class TestExternalBulk(unittest.TestCase):
     def test_pinned_inventories(self):
         indexes = load(__import__("external_bulk").ROOT)
-        self.assertEqual([len(x["files"]) for x in indexes], [4635, 501])
+        self.assertEqual({x["id"]: len(x["files"]) for x in indexes}, {
+            "duckstation-chtdb": 4635,
+            "xenia-canary-game-patches": 501,
+            "pcsx2-official-patches": 4710,
+            "r0ah-vitacheat": 677,
+            "shumnot-vitacheat": 119,
+            "bucanero-dreamcast-cheats": 387,
+        })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(indexes[1]["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 11029)
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
@@ -30,6 +38,8 @@ class TestExternalBulk(unittest.TestCase):
         self.assertTrue(all(m["redistribution"] == "link_only_rights_review" for m in matches))
         self.assertTrue(all(m["upstream_url"].startswith(index["repository"] + "/blob/") for m in matches))
         self.assertEqual(lookup([index], "painkiller", "ps1", 4), [])
+        self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "SLUS-", "ps2", 5))
+        self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "PCSA", "vita", 5))
 
 if __name__ == "__main__":
     unittest.main()

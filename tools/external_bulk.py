@@ -27,6 +27,30 @@ SOURCES = {
         "platform": "xbox-360", "expected": {"patch": 501},
         "rights_note": "No repository-wide LICENSE was present in the pinned tree; patch authorship and redistribution permissions must be reviewed. Patches are not necessarily gameplay cheats. Only file names, hashes and sizes are indexed.",
     },
+    "pcsx2-official-patches": {
+        "repository": "PCSX2/pcsx2_patches",
+        "commit": "9f82a4d2b8a2aaf83807421f18d5d30263ea826c",
+        "platform": "ps2", "expected": {"patch":4710},
+        "rights_note": "The official PCSX2 repository aggregates patches written by many independent authors, and no blanket permission for their code was located at this pinned revision. Native PNACH patch files are link-only references, not imported.",
+    },
+    "r0ah-vitacheat": {
+        "repository": "r0ah/vitacheat",
+        "commit": "bb8158a1c696914a8ea2299889d42ab9a57a3ab2",
+        "platform": "vita", "expected": {"cheat":677},
+        "rights_note": "Community-submitted VitaCheat code authors retain separate rights; no root redistribution LICENSE was found at the pinned revision. This inventory includes 676 standard PSV files and one specially named PSV-NSFW variant; no payload is rehosted.",
+    },
+    "shumnot-vitacheat": {
+        "repository": "ShumnoT/VitaCheatDatabase",
+        "commit": "a394316be0fe7b233b49b7ba22f14fae56a1b9c8",
+        "platform": "vita", "expected": {"cheat":119},
+        "rights_note": "The database credits multiple earlier websites and authors and lacks a blanket source-code redistribution grant. Preserve only original filename, Git blob hash and byte count.",
+    },
+    "bucanero-dreamcast-cheats": {
+        "repository": "bucanero/dreamcast-cheats",
+        "commit": "13c7a5c9957331398252e2a8916be7dd61b68144",
+        "platform": "dreamcast", "expected": {"cheat":387},
+        "rights_note": "The GPL-3.0 repository-wide grant does not independently establish redistribution rights for third-party historical cheats copied or adapted from external authors. The original markdown cheat text remains link-only.",
+    },
 }
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -39,6 +63,14 @@ def classify(source, path):
             return "patch"
     if source == "xenia-canary-game-patches" and re.fullmatch(r"patches/[^/]+\.patch\.toml", path):
         return "patch"
+    if source == "pcsx2-official-patches" and re.fullmatch(r"patches/[^/]+\.pnach", path):
+        return "patch"
+    if source == "r0ah-vitacheat" and re.fullmatch(r"db/[^/]+\.psv(?:-NSFW)?", path):
+        return "cheat"
+    if source == "shumnot-vitacheat" and re.fullmatch(r"[^/]+\.psv", path):
+        return "cheat"
+    if source == "bucanero-dreamcast-cheats" and re.fullmatch(r"[^/]+\.md", path) and path != "README.md":
+        return "cheat"
     return None
 
 
@@ -167,7 +199,7 @@ def main():
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--refresh", action="store_true")
     mode.add_argument("--search", metavar="TEXT")
-    parser.add_argument("--platform", choices=("ps1", "xbox-360"))
+    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "vita", "dreamcast"))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args()
