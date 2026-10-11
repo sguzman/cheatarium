@@ -190,7 +190,7 @@ on:
       - "archive/dolphin-game-cheats/**"
   workflow_dispatch:
   workflow_run:
-    workflows: ["Bulk import pinned Libretro cheat collections", "Bulk import pinned PS5 native cheat sources", "Bulk import pinned PS Vita cheat sources", "Bulk import pinned PS2 CheatDevice database", "Bulk import pinned PS2 ZIP cheat collections, "Bulk import pinned PS2 PNACH conversion library"]
+    workflows: ["Bulk import pinned Libretro cheat collections", "Bulk import pinned PS5 native cheat sources", "Bulk import pinned PS Vita cheat sources", "Bulk import pinned PS2 CheatDevice database", "Bulk import pinned PS2 ZIP cheat collections", "Bulk import pinned PS2 PNACH conversion library"]
     types: [completed]
 
 permissions:
