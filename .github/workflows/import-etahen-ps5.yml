@@ -1,0 +1,46 @@
+name: Bulk import pinned PS5 native cheat sources
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-etahen-ps5.yml"
+      - "tools/import_etahen_ps5.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-ps5-bulk-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Import complete pinned PS5-native subset with original provenance
+        run: python3 tools/import_etahen_ps5.py
+      - name: Validate entire source archive
+        run: python3 tools/validate.py
+      - name: Commit only bulk PS5 source originals and inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/etahen-ps5/ sources/etahen-ps5.json
+          if git diff --cached --quiet; then
+            echo "All PS5 source originals already archived."
+            exit 0
+          fi
+          git commit -m "data(ps5): bulk-preserve 75 original etaHEN cheat files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi

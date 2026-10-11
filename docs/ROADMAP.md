@@ -8,6 +8,10 @@ Entire licensed/pinned game-cheat collections are the default unit of acquisitio
 
 At the pinned Libretro revision, the first mapped expansion imported **835 `.cht` files** from MSX, MSX2, FinalBurn Neo arcade, DOS and Atari 8-bit. A second whole-directory pass imported the remaining seven upstream collections, led by **3,683 ZX Spectrum +3 files**, plus ChaiLove, PrBoom, PuzzleScript, TIC-80, Thomson MOTO and Wolfenstein 3D (**3,698 cheat files; TIC-80 also contains one README that is intentionally not counted as a cheat**). These preserve source-system identities, including computer, arcade and engine categories, without pretending they are console ROMs. The automatic importer committed and validated both complete batches (4,533 new files). This completes discovery coverage of the **51 source directories** at the pinned Libretro snapshot; it does not complete console coverage outside Libretro.
 
+## Next console bulk acquisition
+
+The etaHEN PS5 database (pinned `ef295511`, GPL-3.0 repository license with original-author rights caveats) exposes **75 native PPSA files covering 56 source-labeled PS5 title IDs** in one complete format-filtered acquisition, excluding duplicate PS4 GoldHEN files. A reproducible importer/CI workflow must acquire and validate the entire subset before marking it complete. Source labels are not independently verified game-build compatibility or effects.
+
 ## Collection pipeline
 
 1. **Discover** a source; identify platforms, file formats, size, provenance, and licenses.
