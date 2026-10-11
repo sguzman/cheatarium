@@ -71,6 +71,7 @@ on:
       - "sources/wii-twilight-princess-gecko.json"
       - "sources/gamecubing-gecko.json"
       - "sources/two-gifts-melee-random.json"
+      - "sources/shaigem-melee-gecko.json"
       - "sources/foxy-isz-item-chat.json"
       - "sources/xan1242-nfsu-ps2.json"
       - "sources/xan1242-gt3-no-interlace.json"
@@ -149,6 +150,7 @@ on:
       - "archive/wii-twilight-princess-gecko/**"
       - "archive/gamecubing-gecko/**"
       - "archive/two-gifts-melee-random/**"
+      - "archive/shaigem-melee-gecko/**"
       - "archive/foxy-isz-item-chat/**"
       - "archive/xan1242-nfsu-ps2/**"
       - "archive/xan1242-gt3-no-interlace/**"
@@ -620,6 +622,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform gamecube --source-record-id 'two-gifts-melee-random:dist/GALE01r2.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "gamecube" and d["provenance"]["source_id"] == "two-gifts-melee-random" and d["provenance"]["upstream_path"] == "dist/GALE01r2.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform gamecube --source-record-id 'shaigem-melee-gecko:output/codes_general.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "gamecube" and d["provenance"]["source_id"] == "shaigem-melee-gecko" and d["provenance"]["upstream_path"] == "output/codes_general.txt" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform gamecube --source-record-id 'shaigem-melee-gecko:output/codes_dataexpand.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "gamecube" and d["provenance"]["source_id"] == "shaigem-melee-gecko" and d["provenance"]["upstream_path"] == "output/codes_dataexpand.txt" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'

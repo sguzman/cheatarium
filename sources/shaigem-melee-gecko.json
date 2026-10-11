@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "shaigem-melee-gecko",
+  "repository": "https://github.com/shaigem/melee-asm-lab",
+  "snapshot_commit": "255d0082c01fdd541171ec06ffbfc7dc18203b7c",
+  "license": "MIT (shaigem; original LICENSE retained)",
+  "archive_prefix": "archive/shaigem-melee-gecko/",
+  "scope_note": "Two original author-labeled Gecko code output text documents for Super Smash Bros. Melee v1.02: common/throw/REL features and extended hitbox/fighter data effects. Exact native dollar-prefixed code headings and hex payloads are preserved.",
+  "rights_note": "MIT LICENSE names shaigem as copyright holder; included original codes explicitly label sushie, and repository describes itself as a personal Gecko code collection. The separate output/codes_mhch.txt document also labels Achilles1515 as contributor and is deliberately excluded pending that contributor's reuse terms. Cheatarium does not test execution, compatibility or code effects.",
+  "native_cheat_counts": {
+    "gamecube": 2
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/shaigem-melee-gecko/LICENSE",
+      "git_blob_sha": "0b40216235363249cd61b3a35f9ac4f61a64f646"
+    },
+    {
+      "upstream_path": "output/codes_dataexpand.txt",
+      "archive_path": "archive/shaigem-melee-gecko/output/codes_dataexpand.txt",
+      "git_blob_sha": "d1af1d42e9f6d4edb7396a51fd2d497dea257954"
+    },
+    {
+      "upstream_path": "output/codes_general.txt",
+      "archive_path": "archive/shaigem-melee-gecko/output/codes_general.txt",
+      "git_blob_sha": "fdab852e59dff982c74a47f565a82adefde56dae"
+    }
+  ]
+}

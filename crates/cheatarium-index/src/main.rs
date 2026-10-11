@@ -841,6 +841,7 @@ fn run() -> Result<()> {
         "wii-twilight-princess-gecko",
         "gamecubing-gecko",
         "two-gifts-melee-random",
+        "shaigem-melee-gecko",
         "foxy-isz-item-chat",
         "gc-007-high-fps",
         "foxy-ice-station-z-itemchanger",
@@ -953,6 +954,14 @@ fn run() -> Result<()> {
                         continue;
                     }
                     ("wii", "dolphin-ini", disc.to_owned())
+                }
+                "shaigem-melee-gecko"
+                    if original.starts_with("output/codes_")
+                        && original.ends_with(".txt") =>
+                {
+                    // Original source labels effects under $Gecko-style headings.
+                    // No verified game revision association is synthesized.
+                    ("gamecube", "gecko-plain-text", original.to_owned())
                 }
                 "two-gifts-melee-random"
                     if original.starts_with("dist/") && original.ends_with(".ini") =>
