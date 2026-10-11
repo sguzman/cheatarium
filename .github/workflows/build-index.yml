@@ -74,6 +74,7 @@ on:
       - "sources/two-gifts-melee-random.json"
       - "sources/shaigem-melee-gecko.json"
       - "sources/foxy-isz-item-chat.json"
+      - "sources/foxy-isz-wtw-3ds.json"
       - "sources/xan1242-nfsu-ps2.json"
       - "sources/xan1242-gt3-no-interlace.json"
       - "sources/xan1242-gt3-freecam.json"
@@ -154,6 +155,7 @@ on:
       - "archive/two-gifts-melee-random/**"
       - "archive/shaigem-melee-gecko/**"
       - "archive/foxy-isz-item-chat/**"
+      - "archive/foxy-isz-wtw-3ds/**"
       - "archive/xan1242-nfsu-ps2/**"
       - "archive/xan1242-gt3-no-interlace/**"
       - "archive/xan1242-gt3-freecam/**"
@@ -603,6 +605,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform gamecube --source-record-id 'gamecubing-gecko:Geckos.txt' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "gamecube" and d["provenance"]["source_id"] == "gamecubing-gecko" and d["provenance"]["upstream_path"] == "Geckos.txt" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-isz-wtw-3ds:No CopyRight ISZ .WTW.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-isz-wtw-3ds" and d["provenance"]["upstream_path"] == "No CopyRight ISZ .WTW.txt" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform 3ds --source-record-id 'foxy-isz-item-chat:Item Id Chat (Test).txt' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-isz-item-chat" and d["provenance"]["upstream_path"] == "Item Id Chat (Test).txt" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'

@@ -844,6 +844,7 @@ fn run() -> Result<()> {
         "two-gifts-melee-random",
         "shaigem-melee-gecko",
         "foxy-isz-item-chat",
+        "foxy-isz-wtw-3ds",
         "gc-007-high-fps",
         "foxy-ice-station-z-itemchanger",
         "xan1242-nfsu-ps2",
@@ -974,6 +975,11 @@ fn run() -> Result<()> {
                 "gamecubing-gecko" if original == "Geckos.txt" => {
                     // Multi-game original author source; do not invent a common game ID.
                     ("gamecube", "gecko-plain-text", original.to_owned())
+                }
+                "foxy-isz-wtw-3ds" if original == "No CopyRight ISZ .WTW.txt" => {
+                    // Author-titled Beta file with explicit reuse statement in original text.
+                    // No verified retail title/build ID is implied.
+                    ("3ds", "gateshark-text", original.to_owned())
                 }
                 "foxy-isz-item-chat" if original == "Item Id Chat (Test).txt" => {
                     // Author's test code has no verified retail title/build identifier.

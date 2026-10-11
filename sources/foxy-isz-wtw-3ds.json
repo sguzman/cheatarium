@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "foxy-isz-wtw-3ds",
+  "repository": "https://github.com/FoxyXTN/ISZ-W.T.W-cheat-ctrpf-no-copyrights",
+  "snapshot_commit": "4a4f75f7baee1f00ea8573321915e2ef25b3b85f",
+  "license": "Explicit unrestricted reuse claim by source author (no SPDX LICENSE file)",
+  "archive_prefix": "archive/foxy-isz-wtw-3ds/",
+  "scope_note": "One author-published original Nintendo 3DS Ice Station Z walk-through-walls CTRPF/Gateshark text document; native source filename and author-specific beta label retained.",
+  "rights_note": "FoxyXTN original file itself states that the walk-through-walls cheat can be used, copied and issued as another person's work; the repository description repeats this permission. No conventional license or independent legal rights confirmation exists, and this source is not represented as an SPDX-licensed collection. Code effects, region/build target and game compatibility unverified.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "No CopyRight ISZ .WTW.txt",
+      "archive_path": "archive/foxy-isz-wtw-3ds/No CopyRight ISZ .WTW.txt",
+      "git_blob_sha": "39076d9da42f98273931bedc9c8f23e5b8cf069f"
+    }
+  ]
+}
