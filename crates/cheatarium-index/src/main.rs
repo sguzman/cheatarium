@@ -840,6 +840,9 @@ fn run() -> Result<()> {
         "wii-super-sluggers-gecko",
         "wii-galaxy2-gecko",
         "wii-twilight-princess-gecko",
+        "wii-wario-land-gecko",
+        "wii-country-returns-gecko",
+        "wii-strikers-gecko",
         "gamecubing-gecko",
         "two-gifts-melee-random",
         "shaigem-melee-gecko",
@@ -909,6 +912,7 @@ fn run() -> Result<()> {
                 | "wii-mario-power-tennis-gecko"
                 | "wii-super-sluggers-gecko"
                 | "wii-galaxy2-gecko"
+                | "wii-wario-land-gecko"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
                 {
                     let disc = original
@@ -946,6 +950,18 @@ fn run() -> Result<()> {
                         "gateshark-text",
                         original.trim_end_matches(".txt").to_owned(),
                     )
+                }
+                "wii-country-returns-gecko" | "wii-strikers-gecko"
+                    if original.starts_with("codes/") && original.ends_with(".ini") =>
+                {
+                    // Keep native revision suffix in provenance, not game identity.
+                    let filename = original.rsplit('/').next().unwrap_or(original);
+                    let base = filename.trim_end_matches(".ini");
+                    let disc = base.split('_').next().unwrap_or(base);
+                    if disc.len() != 6 || !disc.chars().all(|c| c.is_ascii_alphanumeric()) {
+                        continue;
+                    }
+                    ("wii", "dolphin-ini", disc.to_owned())
                 }
                 "wii-twilight-princess-gecko"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
