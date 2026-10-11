@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "root670-cheatdevice-ps2",
+  "repository": "https://github.com/root670/CheatDevicePS2",
+  "snapshot_commit": "7d9c525a3a8377ff0b8fe782ea692ed0f245b92c",
+  "license": "GPL-3.0-only (upstream project notice; historic cheat-code author rights separately unverified)",
+  "archive_prefix": "archive/root670-cheatdevice-ps2/",
+  "scope": "Complete original PlayStation 2 CheatDevice game-cheat database and original notices",
+  "rights_note": "Bundled with GPL-3.0 CheatDevicePS2; the original game codes may be derived from historic independent authors. License and original bytes are preserved; no inference of code authorship, release compatibility or successful execution.",
+  "original_game_sections": 1483,
+  "source_cheat_files": 1,
+  "files": [
+    {
+      "upstream_path": "CheatDatabase.txt",
+      "archive_path": "archive/root670-cheatdevice-ps2/CheatDatabase.txt",
+      "git_blob_sha": "e2dcbafa32b8e955ceb23c79842a6098d393fd97"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/root670-cheatdevice-ps2/LICENSE",
+      "git_blob_sha": "20d40b6bceca3a6c0237d7455ebf1820aeff3680"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/root670-cheatdevice-ps2/README.md",
+      "git_blob_sha": "23d3337f88d1442475e7398877c6d64c2f9c7550"
+    }
+  ]
+}
