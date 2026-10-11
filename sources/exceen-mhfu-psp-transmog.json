@@ -5,10 +5,10 @@
   "snapshot_commit": "8da384cfcd1e5fc49bcf980d102613aab1c15007",
   "license": "MIT (Exceen; original LICENSE retained)",
   "archive_prefix": "archive/exceen-mhfu-psp-transmog/",
-  "scope_note": "One original PSP CWCheat cheat.db code file containing author-documented Monster Hunter Freedom Unite equipment-transmog examples for FUComplete mod, with source CWCheat _S/_G/_C0/_L lines preserved. Supporting research notes and license retained.",
-  "rights_note": "Author's README documents codes derived from original equipment model table research and the FUComplete v1.4.0 mod; the game, DLC, FUComplete assets, save states, generator source, and extracted game resources are NOT included. Actual compatible build, effects and real PSP behavior unverified by Cheatarium.",
+  "scope_note": "Two author-created PSP CWCheat source files: original cheat.db transmog example presets, plus an original universal slot transmog code document for the FUComplete mod. All upstream CWCheat code lines preserved with their native names. Supporting research notes and license retained.",
+  "rights_note": "Author's README documents codes derived from original equipment model table research and the FUComplete v1.4.0 mod; the game, DLC, FUComplete assets, save states, generator source, and extracted game resources are NOT included. Actual compatible build, effects and real PSP behavior unverified by Cheatarium. The larger universal transmog text originates from the author-published code-generator research but is preserved as source data only; Cheatarium does not ingest extracted game tables or generator scripts.",
   "native_cheat_counts": {
-    "psp": 1
+    "psp": 2
   },
   "files": [
     {
@@ -30,6 +30,11 @@
       "upstream_path": "archive/cheat.db",
       "archive_path": "archive/exceen-mhfu-psp-transmog/archive/cheat.db",
       "git_blob_sha": "2db0a9ce72f483e29fe954982f2bc24ed5a5ea21"
+    },
+    {
+      "upstream_path": "archive/universal_transmog.txt",
+      "archive_path": "archive/exceen-mhfu-psp-transmog/archive/universal_transmog.txt",
+      "git_blob_sha": "fa0de3a58efe997cedaf61a6e9bd38335ad95970"
     }
   ]
 }

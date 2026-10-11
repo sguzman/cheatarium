@@ -614,6 +614,9 @@ jobs:
             --db generated/v1 --platform ps2 --source-record-id 'xan1242-nfsmw-opm-demo-ps2:cheats/61D112E4.pnach' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "xan1242-nfsmw-opm-demo-ps2" and d["provenance"]["upstream_path"] == "cheats/61D112E4.pnach" and d["declared_format_hint"] == "pcsx2-pnach"; assert d["code_fields"] > 0 and any("patch=1,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform psp --source-record-id 'exceen-mhfu-psp-transmog:archive/universal_transmog.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["provenance"]["source_id"] == "exceen-mhfu-psp-transmog" and d["provenance"]["upstream_path"] == "archive/universal_transmog.txt" and d["declared_format_hint"] == "psp-cwcheat-ini"; assert d["code_fields"] > 0 and any("_L " in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'exceen-mhfu-psp-transmog:archive/cheat.db' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["provenance"]["source_id"] == "exceen-mhfu-psp-transmog" and d["provenance"]["upstream_path"] == "archive/cheat.db" and d["declared_format_hint"] == "psp-cwcheat-ini"; assert d["code_fields"] > 0 and any("_L " in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \

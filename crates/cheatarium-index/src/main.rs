@@ -1029,7 +1029,10 @@ fn run() -> Result<()> {
                         original.trim_start_matches("PS1/").to_owned(),
                     )
                 }
-                "exceen-mhfu-psp-transmog" if original == "archive/cheat.db" => {
+                "exceen-mhfu-psp-transmog"
+                    if original == "archive/cheat.db"
+                        || original == "archive/universal_transmog.txt" =>
+                {
                     // Native CWCheat cheat.db; upstream _S ULJM-05500 is a source hint
                     // for an FUComplete mod, not an independently verified game build.
                     ("psp", "psp-cwcheat-ini", original.to_owned())
