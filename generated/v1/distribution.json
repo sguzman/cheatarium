@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33088,
-  "game_candidate_groups": 26531,
+  "source_files": 33098,
+  "game_candidate_groups": 26541,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 80860,
   "reviewed_snes_revision_alternatives": 27,
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "e5f13b32cd2be8a3b98356776c74e22ac7b50b630ca28dff2f1a31271263c63e",
+      "sha256": "1474b65d47e1dec3be15e0d18d804d69e7e7818ddd7aba2204226d833eb2d014",
       "size_bytes": 20986
     },
     {
@@ -218,8 +218,8 @@
     },
     {
       "path": "games/ps2.json.gz",
-      "sha256": "653a8a40cb63995e4c2b386ed9e207a4c5680c2a73d3d1ff3c31a4b2dc3a45b8",
-      "size_bytes": 5976
+      "sha256": "dc06ee91d46b8adb6a9a9753978638a9fa0fa32097a0980de02b1503aa03448c",
+      "size_bytes": 6043
     },
     {
       "path": "games/ps3.json.gz",
@@ -293,8 +293,8 @@
     },
     {
       "path": "games/wii.json.gz",
-      "sha256": "887637802f09d92917aa019234daedf127cc8fa1c861d072fef653cfb1a29783",
-      "size_bytes": 1780
+      "sha256": "fbcd1a41c6967024d8c6b3406f9e527c37a6991c884478430c3b8f7d1c1026f0",
+      "size_bytes": 1936
     },
     {
       "path": "games/wonderswan-color.json.gz",
@@ -393,8 +393,8 @@
     },
     {
       "path": "ps2.json.gz",
-      "sha256": "2903098937e530b225a6633e375836a89d4b1011406351111b55827ba50a76d2",
-      "size_bytes": 86014
+      "sha256": "2415015233b5b490564a6718321a75aed6fa20de2fe870904964e830c7ebc96d",
+      "size_bytes": 88027
     },
     {
       "path": "ps3.json.gz",
@@ -928,8 +928,8 @@
     },
     {
       "path": "wii.json.gz",
-      "sha256": "11146fb23d43bca9e0180191e6e990eeab8018f8d7b6cc9ca782973a8efce24b",
-      "size_bytes": 69159
+      "sha256": "d9b47e0f1ebb7f6618447d590622cf659a877718711f9e9ebac05b8252a521d7",
+      "size_bytes": 78953
     },
     {
       "path": "wonderswan-color.json.gz",
