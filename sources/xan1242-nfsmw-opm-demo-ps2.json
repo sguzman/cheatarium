@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "xan1242-nfsmw-opm-demo-ps2",
+  "repository": "https://github.com/xan1242/NFSMW-PS2-ICE",
+  "snapshot_commit": "37fd6cedf56db327e31e9f1995441297776f8995",
+  "license": "MIT (xan1242, original LICENSE.txt preserved)",
+  "archive_prefix": "archive/xan1242-nfsmw-opm-demo-ps2/",
+  "scope_note": "Two native PS2 PNACH code files for Need for Speed Most Wanted OPM demo build variants. Source codes modify unlocked debug ICE, demo frontend and testing conveniences; the separate plugin executable is not archived.",
+  "rights_note": "Original author MIT LICENSE.txt and README preserved, including NTSC-U demo-only limitation, PCSX2 fork/plugin installation caveats and code author labels. Archive only source PNACHs; do not copy game assets, custom fork, or plugin binaries. No game/ROM compatibility or patch effects independently verified.",
+  "native_cheat_counts": {
+    "ps2": 2
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE.txt",
+      "archive_path": "archive/xan1242-nfsmw-opm-demo-ps2/LICENSE.txt",
+      "git_blob_sha": "8d1ee7e3e01c04d2888f2bf86324384ef1c5d44b"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/xan1242-nfsmw-opm-demo-ps2/README.md",
+      "git_blob_sha": "3a5cb23f769ca2941a47b5ec6e5b8960d032c4ed"
+    },
+    {
+      "upstream_path": "cheats/61D112E4.pnach",
+      "archive_path": "archive/xan1242-nfsmw-opm-demo-ps2/cheats/61D112E4.pnach",
+      "git_blob_sha": "afe1f06ceebfd32ad1643cff5712db67cabe2b07"
+    },
+    {
+      "upstream_path": "cheats/638B0D32.pnach",
+      "archive_path": "archive/xan1242-nfsmw-opm-demo-ps2/cheats/638B0D32.pnach",
+      "git_blob_sha": "dded49175ac5fb098e654ef1a652ffc9f65b8a97"
+    }
+  ]
+}

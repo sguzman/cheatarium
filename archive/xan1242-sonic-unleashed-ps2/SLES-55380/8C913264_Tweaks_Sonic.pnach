@@ -1,0 +1,291 @@
+//
+// Sonic Unleashed PS2 - Sonic tweaks & patches
+//
+
+gametitle=Sonic Unleashed [SLES-55380] (E)
+
+[Disable Drift Minimum Angle And Speed Checks]
+author=xan1242
+comment=Disables the checks for minimum drift angles and speeds to make it a bit more like the HD version.
+patch=1,EE,201D8CC0,extended,00000000
+patch=1,EE,201D8CD0,extended,00000000
+// prevent it from stopping the drift state
+patch=1,EE,201BABB0,extended,10000044
+
+[Disable RubWall State]
+author=xan1242
+comment=Disables the wall rubbing state from ever being activated.
+patch=1,EE,201C5088,extended,00000000
+
+[Disable CrashWall State]
+author=xan1242
+comment=Disables the wall crash state from ever being activated.
+patch=1,EE,201C5080,extended,00000000
+
+[Disable auto-sliding on slopes]
+author=xan1242
+comment=Disables automatic sliding on slopes/walls.
+patch=1,EE,201B6370,extended,10000038
+// disable auto slide on slope when landing into a squat
+patch=1,EE,201B4308,extended,10000021
+patch=1,EE,2029C848,extended,10000021
+
+[Disable Hitstop/Slowdown On Boost Damage]
+author=xan1242
+comment=Disables the stutter/slowdown whenever you deal damage during boost.
+patch=1,EE,201C8700,extended,1000000D
+
+[Disable Fall Struggle Animation]
+author=xan1242
+comment=Disables the struggle animation while falling.
+patch=1,EE,201B67E8,extended,10000005
+
+[Set Boost Level-Up Points]
+author=xan1242
+comment=Allows you to control the ring requirement for each boost level up. Edit this cheat with your own values. Defaults are set with game's default values.
+// If you want to disable any given level, set the value to be really big, e.g. uint32 max (FFFFFFFF). 
+// To convert values from decimal (base 10) to hexadecimal (base 16) easily, you can use a calculator in Programmer mode.
+// Level 1 (default: 30 dec, 1E hex)
+patch=1,EE,2075D010,extended,0000001E
+// Level 2 (default: 60 dec, 3C hex)
+patch=1,EE,2075D014,extended,0000003C
+// Level 3 (default: 90 dec, 5A hex)
+patch=1,EE,2075D018,extended,0000005A
+
+[Allow Lightspeed Dash Activation While Boosting]
+author=xan1242
+comment=Allows you to activate Lightspeed Dash while boosting.
+patch=1,EE,201E2388,extended,00000000
+// lightspeed dash checker hook
+// write a singleton to 0x8204A4 -- this is gonna be our boost cancel var
+patch=1,EE,201A89D0,extended,3C020082 // lui v0, 0x82
+patch=1,EE,201A89D4,extended,AC5104A4 // sw s1, 0x4A4(v0)
+patch=1,EE,201A89D8,extended,00000000 // nop
+// hook the state updater
+patch=1,EE,201B8778,extended,3C020082 // lui v0, 0x82
+patch=1,EE,201B877C,extended,AC5104A4 // sw s1, 0x4A4(v0)
+// hook to check if boost should be cancelled
+patch=1,EE,2076D534,extended,3C030082 // lui v1, 0x82
+patch=1,EE,2076D538,extended,8C6204A4 // lw v0, 0x4A4(v1)
+patch=1,EE,2076D53C,extended,14400003 // bnez v0, stopboost (0x76D558)
+patch=1,EE,2076D540,extended,AC6004A4 // sw zero, 0x4A4(v1)
+patch=1,EE,2076D544,extended,0807677C // j 0x1D9DF0
+patch=1,EE,2076D548,extended,00000000 // nop
+                                      // stopboost:
+patch=1,EE,2076D54C,extended,03E00008 // jr ra
+patch=1,EE,2076D550,extended,24020001 // li v0, 1
+// hook at boost start
+patch=1,EE,2019E6D0,extended,3C030082 // lui v1, 0x82
+patch=1,EE,2019E6D4,extended,AC6004A4 // sw zero, 0x4A4(v1)
+patch=1,EE,2019E6D8,extended,03E00008 // jr ra
+patch=1,EE,2019E6DC,extended,27BD0230 // addiu sp, 0x230
+// entrypoint
+patch=1,EE,2019E880,extended,0C1DB54D // jal 0x76D534
+
+// #TODO: needs tuning...
+[Continuous Boost]
+author=xan1242
+comment=Allows you to boost continuously akin to the HD version. NOTE: You MUST remap this in case you're NOT using "Remap Sonic's Actions" cheat!
+// Button binding for boost (refer to Remap Sonic's Actions for the button mask table)
+patch=1,EE,201D9E08,extended,30420080 // andi v0, v0, 0x80
+// Amount of drainage per second (0.75)
+patch=1,EE,2082048C,extended,3F400000
+// Boost start penalty/drain
+patch=1,EE,20820490,extended,40000000
+
+// HOOK CODE -- DO NOT TOUCH THIS
+// hook boost end checks
+// needed because of changed offsets
+patch=1,EE,201D9DFC,extended,5040000C // beqzl v0, exitpoint (0x1D9E30)
+// button check + boost amount check (at 0xDFC)
+patch=1,EE,201D9E04,extended,8F82CCDC // lw v0, -0x3324(gp)
+// patch=1,EE,201D9E08,extended,30420080 // andi v0, v0, 0x80 <-- this is the binding, so it's up above...
+patch=1,EE,201D9E0C,extended,10400006 // beqz v0, stopboost (1D9E28)
+patch=1,EE,201D9E10,extended,C4810DFC // lwc1 f1, 0xDFC(a0)
+patch=1,EE,201D9E14,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201D9E18,extended,00000000 // nop
+patch=1,EE,201D9E1C,extended,46000836 // c.le.s f1, f0
+patch=1,EE,201D9E20,extended,45020003 // bc1fl exitpoint (0x1D9E30)
+patch=1,EE,201D9E24,extended,0000102D // move v0, zero
+                                      // stopboost:
+patch=1,EE,201D9E28,extended,0C076790 // jal 0x1D9E40
+patch=1,EE,201D9E2C,extended,24020001 // li v0, 1
+                                      // exitpoint:
+patch=1,EE,201D9E30,extended,DFBF0000 // ld ra, 0(sp)
+patch=1,EE,201D9E34,extended,03E00008 // jr ra
+patch=1,EE,201D9E38,extended,27BD0010 // addiu sp, 0x10
+// hook boost drainage
+// replace the original one and add initial penalty...
+patch=1,EE,201D9CF4,extended,3C020082 // lui v0, 0x82
+patch=1,EE,201D9CF8,extended,C4410490 // lwc1 f1, 0x490(v0)
+patch=1,EE,201D9CFC,extended,46010001 // sub.s f0, f0, f1
+// also ensure that it is clamped to zero...
+patch=1,EE,201D9D00,extended,00000000 // nop 
+patch=1,EE,201D9D04,extended,44800800 // mtc1 zero, f1
+// custom drainer
+patch=1,EE,201D9D30,extended,90820E0C // lbu v0, 0xE0C(a0)
+patch=1,EE,201D9D34,extended,1040000B // beqz v0, exitpoint (0x1D9D64)
+patch=1,EE,201D9D38,extended,3C020082 // lui v0, 0x82
+patch=1,EE,201D9D3C,extended,C440048C // lwc1 f0, 0x48C(v0)
+patch=1,EE,201D9D40,extended,46006002 // mul.s f0, f12, f0
+patch=1,EE,201D9D44,extended,C4810DFC // lwc1 f1, 0xDFC(a0)
+patch=1,EE,201D9D48,extended,46000801 // sub.s f0, f1, f0
+patch=1,EE,201D9D4C,extended,44800800 // mtc1 zero, f1
+patch=1,EE,201D9D50,extended,00000000 // nop
+patch=1,EE,201D9D54,extended,46010036 // c.le.s f0, f1
+patch=1,EE,201D9D58,extended,45030001 // bc1tl writepoint
+patch=1,EE,201D9D5C,extended,46000806 // mov.s f0, f1
+                                      // writepoint:
+patch=1,EE,201D9D60,extended,E4800DFC // swc1 f0, 0xDFC(a0)
+                                      // exitpoint:
+patch=1,EE,201D9D64,extended,03E00008 // jr ra
+patch=1,EE,201D9D68,extended,00000000 // nop
+// patch minimum boost value checks
+patch=1,EE,201DB800,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DB804,extended,00000000 // nop
+patch=1,EE,201DB808,extended,10000007 // b 0x1DB828
+patch=1,EE,201DB80C,extended,00000000 // nop
+patch=1,EE,201DB828,extended,4600A036 // c.le.s f20, f0
+
+patch=1,EE,201DC170,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DC174,extended,00000000 // nop
+patch=1,EE,201DC178,extended,10000007 // b 0x1DC198
+patch=1,EE,201DC17C,extended,00000000 // nop
+patch=1,EE,201DC198,extended,4600A036 // c.le.s f20, f0
+
+patch=1,EE,201DC344,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DC348,extended,00000000 // nop
+patch=1,EE,201DC34C,extended,10000007 // b 0x1DC36C
+patch=1,EE,201DC350,extended,00000000 // nop
+patch=1,EE,201DC36C,extended,4600A036 // c.le.s f20, f0
+
+patch=1,EE,201DBD5C,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DBD60,extended,00000000 // nop
+patch=1,EE,201DBD64,extended,10000007 // b 0x1DBD84
+patch=1,EE,201DBD68,extended,00000000 // nop
+patch=1,EE,201DBD84,extended,4600A036 // c.le.s f20, f0
+
+patch=1,EE,201DB9F0,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DB9F4,extended,00000000 // nop
+patch=1,EE,201DB9F8,extended,10000007 // b 0x1DBA18
+patch=1,EE,201DB9FC,extended,00000000 // nop
+patch=1,EE,201DBA18,extended,4600A036 // c.le.s f20, f0
+
+patch=1,EE,201DBF80,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DBF84,extended,00000000 // nop
+
+// air boost
+patch=1,EE,201DB5D4,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DB5D8,extended,00000000 // nop
+patch=1,EE,201DB5DC,extended,10000007 // b 0x1DB5FC
+patch=1,EE,201DB5E0,extended,00000000 // nop
+patch=1,EE,201DB5FC,extended,4600A036 // c.le.s f20, f0
+
+// boost during loops/paths
+patch=1,EE,201DBBAC,extended,44800000 // mtc1 zero, f0
+patch=1,EE,201DBBB0,extended,00000000 // nop
+patch=1,EE,201DBBB4,extended,10000007 // b 0x1DBBD4
+patch=1,EE,201DBBB8,extended,00000000 // nop
+patch=1,EE,201DBBD4,extended,4600A036 // c.le.s f20, f0
+
+[Randomize Sonic Boost Voices]
+author=xan1242
+comment=Randomly selects between 3 voice clips for Sonic when boosting (like the HD version)
+// common voice clip trampoline (reusable)
+patch=1,EE,208205F0,extended,0000282D // move a1, zero
+patch=1,EE,208205F4,extended,0000302D // move a2, zero
+patch=1,EE,208205F8,extended,080B170C // j uPlaySFXFunc (0x2C5C30)
+patch=1,EE,208205FC,extended,0000382D // move a3, zero
+// boost voice clip select between "hiyah", "woo" and "go" ("go" being the default case)
+patch=1,EE,20820600,extended,50600005 // beqzl v1, exitpoint (0x820618)
+patch=1,EE,20820604,extended,3C02000A // lui v0, 0xA
+patch=1,EE,20820608,extended,24020001 // li v0, 1
+patch=1,EE,2082060C,extended,50620002 // beql v1, v0, exitpoint (0x820618)
+patch=1,EE,20820610,extended,3C02000B // lui v0, 0xB
+patch=1,EE,20820614,extended,3C020011 // lui v0, 0x11
+                                      // exitpoint:
+patch=1,EE,20820618,extended,0820817C // j voicetrampoline (0x8205F0)
+patch=1,EE,2082061C,extended,34443EA9 // ori a0, v0, 0x3EA9
+// pre & entrypoint
+patch=1,EE,20190DBC,extended,0C1A0142 // jal rand (0x680508)
+patch=1,EE,20190DC0,extended,00000000 // nop
+patch=1,EE,20190DC4,extended,24030003 // li v1, 3 // 3 possible voice clips
+patch=1,EE,20190DC8,extended,0043001B // divu v0, v1
+patch=1,EE,20190DCC,extended,0C208180 // jal 0x820600
+patch=1,EE,20190DD0,extended,00001810 // mfhi v1
+
+[Randomize Sonic Drift Voices]
+author=xan1242
+comment=Randomly selects between 2 voice clips for Sonic when drifting
+// randomize drift grunts
+// common voice clip trampoline (reusable)
+patch=1,EE,208205F0,extended,0000282D // move a1, zero
+patch=1,EE,208205F4,extended,0000302D // move a2, zero
+patch=1,EE,208205F8,extended,080B170C // j uPlaySFXFunc (0x2C5C30)
+patch=1,EE,208205FC,extended,0000382D // move a3, zero
+// drift voice clip select between 2 grunts (to be more like HD)
+patch=1,EE,20820620,extended,50600002 // beqzl v1, exitpoint (0x820634)
+patch=1,EE,20820624,extended,3C020009 // lui v0, 9
+patch=1,EE,20820628,extended,3C020008 // lui v0, 8
+                                      // exitpoint:
+patch=1,EE,2082062C,extended,0820817C // j voicetrampoline (0x8205F0)
+patch=1,EE,20820630,extended,34443EA9 // ori a0, v0, 0x3EA9
+// pre & entrypoint
+patch=1,EE,20190DDC,extended,0C1A0142 // jal rand (0x680508)
+patch=1,EE,20190DE0,extended,00000000 // nop
+patch=1,EE,20190DE4,extended,24030003 // li v1, 2 // 2 possible voice clips
+patch=1,EE,20190DE8,extended,0043001B // divu v0, v1
+patch=1,EE,20190DEC,extended,0C208188 // jal 0x820620
+patch=1,EE,20190DF0,extended,00001810 // mfhi v1
+
+[Randomize Sonic Jump Voices]
+author=xan1242
+comment=Randomly selects between 3 voice clips for Sonic when jumping
+// common voice clip trampoline (reusable)
+patch=1,EE,208205F0,extended,0000282D // move a1, zero
+patch=1,EE,208205F4,extended,0000302D // move a2, zero
+patch=1,EE,208205F8,extended,080B170C // j uPlaySFXFunc (0x2C5C30)
+patch=1,EE,208205FC,extended,0000382D // move a3, zero
+// play randomized jump grunts
+patch=1,EE,20820634,extended,00001010 // mfhi v0
+patch=1,EE,20820638,extended,00021400 // sll v0, v0, 16 // we can directly map values into the upper half of the register
+patch=1,EE,2082063C,extended,0820817C // j voicetrampoline (0x8205F0)
+patch=1,EE,20820640,extended,34443EA9 // ori a0, v0, 0x3EA9
+// pre & entrypoint
+patch=1,EE,20190CE0,extended,0C1A0142 // jal rand (0x680508)
+patch=1,EE,20190CE4,extended,00000000 // nop
+patch=1,EE,20190CE8,extended,24030003 // li v1, 3 // 3 possible voice clips
+patch=1,EE,20190CEC,extended,0C20818D // jal 0x820634
+patch=1,EE,20190CF0,extended,0043001B // divu v0, v1 // we'll have to mfhi in the hook
+
+[Randomize Sonic's Other Voices]
+author=xan1242
+comment=Randomly selects between 5 voice clips for Sonic when doing other things (woo-hoo, etc.)
+// common voice clip trampoline (reusable)
+patch=1,EE,208205F0,extended,0000282D // move a1, zero
+patch=1,EE,208205F4,extended,0000302D // move a2, zero
+patch=1,EE,208205F8,extended,080B170C // j uPlaySFXFunc (0x2C5C30)
+patch=1,EE,208205FC,extended,0000382D // move a3, zero
+// randomized woohoos and stuff
+patch=1,EE,20820644,extended,50600006 // beqzl v1, exitpoint (0x820668)
+patch=1,EE,20820648,extended,3C02000B // lui v0, 0xB
+patch=1,EE,2082064C,extended,28620004 // slti v0, v1, 4
+patch=1,EE,20820650,extended,50400003 // beqzl v0, exitpoint (0x820668)
+patch=1,EE,20820654,extended,3C020003 // lui v0, 3
+patch=1,EE,20820658,extended,2462000C // addiu v0, v1, 0xC
+patch=1,EE,2082065C,extended,00021400 // sll v0, v0, 16
+                                      // exitpoint:
+patch=1,EE,20820660,extended,0820817C // j voicetrampoline (0x8205F0)
+patch=1,EE,20820664,extended,34443EA9 // ori a0, v0, 0x3EA9
+// pre & entrypoint
+patch=1,EE,20190E5C,extended,0C1A0142 // jal rand (0x680508)
+patch=1,EE,20190E60,extended,00000000 // nop
+patch=1,EE,20190E64,extended,24030005 // li v1, 5 // 5 possible voice clips
+patch=1,EE,20190E68,extended,0043001B // divu v0, v1
+patch=1,EE,20190E6C,extended,0C208191 // jal 0x820644
+patch=1,EE,20190E70,extended,00001810 // mfhi v1
+// redirects
+patch=1,EE,20190E7C,extended,08064397 // j 0x190E5C
+patch=1,EE,20190E80,extended,00000000
+patch=1,EE,20190EBC,extended,08064397 // j 0x190E5C
+patch=1,EE,20190EC0,extended,00000000

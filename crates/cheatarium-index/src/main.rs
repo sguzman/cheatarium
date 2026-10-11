@@ -799,6 +799,8 @@ fn run() -> Result<()> {
         "aerowidescreen-pcsx2-cheats",
         "salustlab-ps2-mods",
         "made-in-slovakia-ratchet-ps2",
+        "xan1242-sonic-unleashed-ps2",
+        "xan1242-nfsmw-opm-demo-ps2",
         "kh1fm-ps2-drop-rate",
         "igor-txr-controller-tweaks",
         "saupernova-bt3-60fps",
@@ -857,6 +859,8 @@ fn run() -> Result<()> {
                 | "aerowidescreen-pcsx2-cheats"
                 | "salustlab-ps2-mods"
                 | "made-in-slovakia-ratchet-ps2"
+                | "xan1242-sonic-unleashed-ps2"
+                | "xan1242-nfsmw-opm-demo-ps2"
                 | "kh1fm-ps2-drop-rate"
                 | "igor-txr-controller-tweaks"
                 | "saupernova-bt3-60fps"

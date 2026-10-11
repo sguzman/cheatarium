@@ -1,0 +1,187 @@
+//
+// Sonic Unleashed PS2 - Sonic action remap patches
+//
+
+gametitle=Sonic Unleashed [SLES-55380] (E)
+
+// #TODO: prompt icons...
+[Remap Sonic's Actions]
+author=xan1242
+comment=Remaps Sonic's actions to different buttons. Edit this cheat to reconfigure bindings. Default configuration follows HD Unleashed.
+// ACTIONS -- edit the last 2 bytes (4 digits) of the value with your desired button. If there are multiple entries in an action, change all of them to be the same!
+// HINT: if you want to assign multiple buttons, OR the values together in a hex calculator!
+// Button mask table:
+// | Button                 | Value |
+// | ---------------------- | ----- |
+// | Left D-Pad             | 8000  |
+// | Down D-Pad             | 4000  |
+// | Right D-Pad            | 2000  |
+// | Up D-Pad               | 1000  |
+// | Start                  | 0800  |
+// | R3 (Right stick press) | 0400  |
+// | L3 (Left stick press)  | 0200  |
+// | Select                 | 0100  |
+// | Square                 | 0080  |
+// | Cross (X)              | 0040  |
+// | Circle                 | 0020  |
+// | Triangle               | 0010  |
+// | R1                     | 0008  |
+// | L1                     | 0004  |
+// | R2                     | 0002  |
+// | L2                     | 0001  |
+
+// SONIC ACTIONS
+// Jump
+patch=1,EE,201858A4,extended,24050040
+patch=1,EE,201DD5D4,extended,24050040
+patch=1,EE,20188C04,extended,24050040
+patch=1,EE,201DBFB4,extended,24050040
+patch=1,EE,2018A794,extended,24050040
+patch=1,EE,201E07C8,extended,24050040
+patch=1,EE,201E0818,extended,24050040
+// Boost
+patch=1,EE,201DB7C8,extended,24050080
+patch=1,EE,201DC30C,extended,24050080
+patch=1,EE,201DBB74,extended,24050080
+patch=1,EE,201DD39C,extended,24050080
+patch=1,EE,201DD1D4,extended,24050080
+patch=1,EE,201DBD24,extended,24050080
+patch=1,EE,201DB9B8,extended,24050080
+patch=1,EE,201DBEFC,extended,24050080
+patch=1,EE,201DC138,extended,24050080
+// Squat / Slide
+patch=1,EE,201D8EF0,extended,24050020
+patch=1,EE,201D8ED4,extended,24050020
+patch=1,EE,201B4228,extended,24050020
+patch=1,EE,201B3C70,extended,24050020
+patch=1,EE,2029C768,extended,24050020
+// Drift
+patch=1,EE,201D8CE0,extended,24050003
+patch=1,EE,201BACC8,extended,24050003
+// Lightspeed Dash
+patch=1,EE,201E23A8,extended,24050010
+// Sidestep Right
+patch=1,EE,201D8AAC,extended,24050008
+patch=1,EE,201DBFD4,extended,24050008
+// Sidestep Left
+patch=1,EE,201D8AC0,extended,24050004
+patch=1,EE,201D8AD0,extended,24050004
+patch=1,EE,201DBFE8,extended,24050004
+patch=1,EE,201DBFF8,extended,24050004
+// Homing Attack
+patch=1,EE,201DB404,extended,24050040
+// Air Boost
+patch=1,EE,201DB3D4,extended,24050080
+// Stomp
+patch=1,EE,201E0668,extended,24050020
+// Countdown Spindash (aka SpinStartingDemo)
+patch=1,EE,203936C0,extended,24050080
+// Grind Squat
+patch=1,EE,201DD4D0,extended,24050020
+patch=1,EE,201DD514,extended,24050020
+patch=1,EE,2020E484,extended,24050020
+// Unknown (grind squat again?)
+patch=1,EE,201DD4FC,extended,24050020
+patch=1,EE,201DD540,extended,24050020
+// Bobsled Drift
+patch=1,EE,203BD0A4,extended,24050003
+// Bobsled Jump
+patch=1,EE,201DB940,extended,24050040
+// Switch Rail Right
+patch=1,EE,201DD76C,extended,24050008
+// Switch Rail Left
+patch=1,EE,201DD780,extended,24050004
+patch=1,EE,201DD794,extended,24050004
+
+// HOOK CODE -- DO NOT TOUCH THIS
+// read the pad address directly... (874CCC)
+// enablement checker "function" -- we back up the return address in the v1 register...
+patch=1,EE,2082052C,extended,908200D4 // lbu v0, 0xD4(a0)
+patch=1,EE,20820530,extended,10400003 // beqz v0, exitpoint_dcheck
+patch=1,EE,20820534,extended,00000000 // nop
+patch=1,EE,20820538,extended,908200D5 // lbu v0, 0xD5(a0)
+patch=1,EE,2082053C,extended,0002102B // sltu v0, zero, v0
+                                      // exitpoint_dcheck:
+patch=1,EE,20820540,extended,03E00008 // jr ra
+patch=1,EE,20820544,extended,0060F821 // move ra, v1
+// checks if button has been pressed this frame only...
+patch=1,EE,20820548,extended,03E01821 // move v1, ra
+patch=1,EE,2082054C,extended,0C20814B // jal 0x82052C
+patch=1,EE,20820550,extended,00000000 // nop
+patch=1,EE,20820554,extended,10400003 // beqz v0, exitpoint
+patch=1,EE,20820558,extended,00000000 // nop
+patch=1,EE,2082055C,extended,8F82CCE4 // lw v0, -0x331C(gp)
+                                      // exitpoint_hcheck:
+patch=1,EE,20820560,extended,00A21024 // and v0, a1, v0
+                                      // exitpoint:
+patch=1,EE,20820564,extended,03E00008 // jr ra
+patch=1,EE,20820568,extended,0002102B // sltu v0, zero, v0
+// checks current button state (held down)
+patch=1,EE,2082056C,extended,03E01821 // move v1, ra
+patch=1,EE,20820570,extended,0C20814B // jal 0x82052C
+patch=1,EE,20820574,extended,00000000 // nop
+patch=1,EE,20820578,extended,1040FFFA // beqz v0, exitpoint // using code from above to save space...
+patch=1,EE,2082057C,extended,00000000 // nop
+patch=1,EE,20820580,extended,1000FFF7 // b exitpoint_hcheck // using code from above to save space...
+patch=1,EE,20820584,extended,8F82CCDC // lw v0, -0x3324(gp)
+
+// SONIC ACTIONS
+// Jump
+patch=1,EE,201858B0,extended,0C208152
+patch=1,EE,201DD5E0,extended,0C208152
+patch=1,EE,20188C10,extended,0C208152
+patch=1,EE,201DBFB0,extended,0C208152
+patch=1,EE,2018A7A0,extended,0C208152
+patch=1,EE,201E07C4,extended,0C208152
+patch=1,EE,201E0814,extended,0C208152
+// Boost
+patch=1,EE,201DB7C4,extended,0C208152
+patch=1,EE,201DC308,extended,0C208152
+patch=1,EE,201DBB70,extended,0C208152
+patch=1,EE,201DD398,extended,0C208152
+patch=1,EE,201DD1D0,extended,0C208152
+patch=1,EE,201DBD20,extended,0C208152
+patch=1,EE,201DB9B4,extended,0C208152
+patch=1,EE,201DBEF8,extended,0C208152
+patch=1,EE,201DC134,extended,0C208152
+// Squat / Slide
+patch=1,EE,201D8EEC,extended,0C208152 // button pressed hook
+patch=1,EE,201D8ED0,extended,0C20815B // button held hook
+patch=1,EE,201B422C,extended,0C20815B
+patch=1,EE,201B3C74,extended,0C20815B
+patch=1,EE,2029C76C,extended,0C20815B
+// Drift
+patch=1,EE,201D8CDC,extended,0C208152
+patch=1,EE,201BACC4,extended,0C20815B
+// Lightspeed Dash
+patch=1,EE,201E23A4,extended,0C20815B
+// Sidestep
+patch=1,EE,201D8AA8,extended,0C208152
+patch=1,EE,201D8ABC,extended,0C208152
+patch=1,EE,201D8AD4,extended,0C208152
+patch=1,EE,201DBFD0,extended,0C208152
+patch=1,EE,201DBFE4,extended,0C208152
+patch=1,EE,201DBFFC,extended,0C208152
+// Homing Attack
+patch=1,EE,201DB400,extended,0C208152
+// Air Boost
+patch=1,EE,201DB3F0,extended,0C208152
+// Stomp
+patch=1,EE,201E0664,extended,0C208152
+// Countdown Spindash (aka SpinStartingDemo)
+patch=1,EE,203936C4,extended,0C208152
+// Grind Squat
+patch=1,EE,201DD510,extended,0C208152
+patch=1,EE,201DD4CC,extended,0C20815B
+patch=1,EE,2020E488,extended,0C20815B
+// Unknown (grind squat again?)
+patch=1,EE,201DD4F8,extended,0C208152
+patch=1,EE,201DD53C,extended,0C20815B
+// Bobsled Drift
+patch=1,EE,203BD0AC,extended,0C20815B
+// Bobsled Jump
+patch=1,EE,201DB93C,extended,0C208152
+// Switch Rail
+patch=1,EE,201DD768,extended,0C208152
+patch=1,EE,201DD77C,extended,0C208152
+patch=1,EE,201DD794,extended,0C208152

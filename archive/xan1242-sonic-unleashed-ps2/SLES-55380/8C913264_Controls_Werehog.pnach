@@ -1,0 +1,145 @@
+//
+// Sonic Unleashed PS2 - Werehog/EvilSonic action remap patches
+//
+
+gametitle=Sonic Unleashed [SLES-55380] (E)
+
+// #TODO: prompt icons...
+[Remap Werehog Actions]
+author=xan1242
+comment=Remaps Werehog's actions to different buttons. Edit this cheat to reconfigure bindings.
+// ACTIONS -- edit the last 2 bytes (4 digits) of the value with your desired button. If there are multiple entries in an action, change all of them to be the same!
+// HINT: if you want to assign multiple buttons, OR the values together in a hex calculator!
+// Button mask table:
+// | Button                 | Value |
+// | ---------------------- | ----- |
+// | Left D-Pad             | 8000  |
+// | Down D-Pad             | 4000  |
+// | Right D-Pad            | 2000  |
+// | Up D-Pad               | 1000  |
+// | Start                  | 0800  |
+// | R3 (Right stick press) | 0400  |
+// | L3 (Left stick press)  | 0200  |
+// | Select                 | 0100  |
+// | Square                 | 0080  |
+// | Cross (X)              | 0040  |
+// | Circle                 | 0020  |
+// | Triangle               | 0010  |
+// | R1                     | 0008  |
+// | L1                     | 0004  |
+// | R2                     | 0002  |
+// | L2                     | 0001  |
+
+// Jump
+patch=1,EE,2024906C,extended,30860040
+// Grab
+patch=1,EE,20249070,extended,30870008
+patch=1,EE,20247248,extended,24050008
+patch=1,EE,20247268,extended,24050008
+patch=1,EE,2026FD60,extended,30620008
+patch=1,EE,2026FDB4,extended,30620008
+patch=1,EE,20270438,extended,30630008
+patch=1,EE,202705B0,extended,30420008
+patch=1,EE,203C1884,extended,30420008
+patch=1,EE,203DAFD4,extended,30420008
+patch=1,EE,204125C4,extended,30420008
+// Unknown
+patch=1,EE,20249074,extended,30880000
+// Defend
+patch=1,EE,20249078,extended,30890004
+patch=1,EE,20247258,extended,24050004
+// Left Arm
+patch=1,EE,2024907C,extended,308A0080
+// Right Arm
+patch=1,EE,20249080,extended,308B0020
+// Both Arms
+patch=1,EE,20249000,extended,30830010
+// Attack (During Grab)
+patch=1,EE,2026FD6C,extended,306200B0
+// Throw (During Grab)
+patch=1,EE,2026FDC0,extended,30620040
+
+// HOOK CODE -- DO NOT TOUCH THIS
+// redirect to pad DMA
+patch=1,EE,20248FF0,extended,8F84CCDC // lw a0, -0x3324(gp)
+patch=1,EE,203ECE5C,extended,8F85CCE4 // lw a1, -0x331C(gp)
+// during grab state
+patch=1,EE,2026FD5C,extended,8F83CCDC // lw v1, -0x3324(gp)
+patch=1,EE,2026FDB0,extended,8F83CCDC // lw v1, -0x3324(gp)
+patch=1,EE,202703F8,extended,8F83CCDC // lw v1, -0x3324(gp)
+patch=1,EE,202705AC,extended,8F82CCDC // lw v0, -0x3324(gp)
+// nuke reads
+patch=1,EE,2026FBBC,extended,00000000
+patch=1,EE,20247528,extended,00000000
+// hook for the grab button (used for doors)
+patch=1,EE,203C1880,extended,8F82CCDC // lw v0, -0x3324(gp)
+//patch=1,EE,203C1884,extended,30420020 // andi v0, v0, 0x20 <-- this is the binding, so it's up above...
+patch=1,EE,203C1888,extended,54400002 // bnezl v0, returnspot
+patch=1,EE,203C188C,extended,0000102D // move v0, zero
+patch=1,EE,203C1890,extended,24020001 // li v0, 1
+                                      // returnspot:
+patch=1,EE,203C1894,extended,03E00008 // jr ra
+patch=1,EE,203C1898,extended,00000000 // nop
+
+// hook for the grab button (used for levers)
+patch=1,EE,203DAFD0,extended,8F82CCDC // lw v0, -0x3324(gp)
+//patch=1,EE,203DAFD4,extended,30420020 // andi v0, v0, 0x20 <-- this is the binding, so it's up above...
+patch=1,EE,203DAFD8,extended,54400002 // bnezl v0, returnspot
+patch=1,EE,203DAFDC,extended,0000102D // move v0, zero
+patch=1,EE,203DAFE0,extended,24020001 // li v0, 1
+                                      // returnspot:
+patch=1,EE,203DAFE4,extended,03E00008 // jr ra
+patch=1,EE,203DAFE8,extended,00000000 // nop
+
+// hook for the grab button (used for cranks)
+patch=1,EE,204125C0,extended,8F82CCDC // lw v0, -0x3324(gp)
+//patch=1,EE,204125C4,extended,30420020 // andi v0, v0, 0x20 <-- this is the binding, so it's up above...
+patch=1,EE,204125C8,extended,54400002 // bnezl v0, returnspot
+patch=1,EE,204125CC,extended,0000102D // move v0, zero
+patch=1,EE,204125D0,extended,24020001 // li v0, 1
+                                      // returnspot:
+patch=1,EE,204125D4,extended,03E00008 // jr ra
+patch=1,EE,204125D8,extended,00000000 // nop
+
+[Bind Werehog Dash to a button]
+author=xan1242
+comment=Binds Werehog dash to a button instead of stick double-tap. Refer to the cheat above for the button table. Default is L2 or R2.
+// Set the value here for binding (default: L2 or R2)
+patch=1,EE,20267474,extended,30420003
+patch=1,EE,20268994,extended,30420003
+
+
+// HOOK CODE -- DO NOT TOUCH THIS
+patch=1,EE,20267470,extended,8F82CCDC // lw v0, -0x3324(gp)
+//patch=1,EE,20267474,extended,30420002 // andi v0, v0, 0x2 <-- this is the binding, so it's up above...
+patch=1,EE,20267478,extended,0002102B // sltu v0, zero, v0
+patch=1,EE,2026747C,extended,AE820030 // sw v0, 0x30(s4)
+patch=1,EE,20267480,extended,5880002E // blezl a0, 0x26753C
+patch=1,EE,20267484,extended,AE800010 // sw zero, 0x10(s4)
+// hook to trigger the disable once it's let go
+patch=1,EE,20268990,extended,8F82CCDC // lw v0, -0x3324(gp)
+//patch=1,EE,20268994,extended,30420002 // andi v0, v0, 0x2 <-- this is the binding, so it's up above...
+patch=1,EE,20268998,extended,0002102B // sltu v0, zero, v0
+patch=1,EE,2026899C,extended,10400025 // beqz v0, 0x268A34
+patch=1,EE,202689A0,extended,24080001 // li a4, 1
+patch=1,EE,202689A4,extended,10000023 // b 0x268A34
+patch=1,EE,202689A8,extended,0000402D // move a4, zero
+
+[Bind Werehog Unleash to a button]
+author=xan1242
+comment=Binds Werehog Unleash to a button. Refer to the cheat "Remap Werehog Actions" for the button table. Default is R3.
+// Set the value here for binding (default: R3)
+patch=1,EE,202733FC,extended,30420400
+
+// HOOK CODE -- DO NOT TOUCH THIS
+patch=1,EE,202733F8,extended,8F82CCE4 // lw v0, -0x331C(gp)
+//patch=1,EE,202733FC,extended,30420400 // andi v0, v0, 0x400  <-- this is the binding, so it's up above...
+                                      // beqzl v0, 0x273454 <-- these instructions should already be in the executable...
+                                      // move v0, zero
+patch=1,EE,20273408,extended,00000000 // nop
+patch=1,EE,2027340C,extended,00000000 // nop
+patch=1,EE,20273410,extended,00000000 // nop
+// BONUS -- disable the "delay" for re-activating the grab/guard. This is not possible without this implementation of Unleash activation specifically.
+patch=1,EE,003ECE50,extended,00000000
+patch=1,EE,003ECE54,extended,00000000
+patch=1,EE,003ECE58,extended,00000000

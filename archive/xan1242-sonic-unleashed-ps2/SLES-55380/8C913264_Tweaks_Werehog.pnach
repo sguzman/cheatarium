@@ -1,0 +1,94 @@
+//
+// Sonic Unleashed PS2 - Werehog/EvilSonic tweaks & patches
+//
+
+gametitle=Sonic Unleashed [SLES-55380] (E)
+
+[Disable Werehog Battle Music]
+author=xan1242
+comment=Disables the battle music in Werehog stages. (Except for stage bosses)
+patch=1,EE,2076D50C,extended,10A00003 // beqz a1, notminiboss (0x76D51C)
+patch=1,EE,2076D510,extended,00000000 // nop
+patch=1,EE,2076D514,extended,080B04D4 // j 0x2C1350
+patch=1,EE,2076D518,extended,00000000 // nop
+                                      // notminiboss:
+patch=1,EE,2076D51C,extended,03E00008 // jr ra
+patch=1,EE,2076D520,extended,00000000 // nop
+// entrypoint
+patch=1,EE,20403C74,extended,0C1DB543 // jal 0x76D50C
+
+[Set Werehog Levels]
+author=xan1242
+comment=Manually set each level of Werehog skills (edit the cheat with your own values)
+// Edit the last byte with your own desired level
+// Attack (max 5)
+patch=1,EE,202496B0,extended,24020005 
+// Damage (max 4)
+patch=1,EE,202496BC,extended,24020004
+// Life (max 4)
+patch=1,EE,202496C8,extended,24020004
+// Unleash (max 4)
+patch=1,EE,202496D4,extended,24030004
+
+[Speed up Werehog Ledge Climb]
+author=xan1242
+comment=Speeds up the werehog's ledge climbing by skipping animation finish checks.
+patch=1,EE,2026983C,extended,00000000
+patch=1,EE,20269844,extended,00000000
+
+[Speed up Werehog Wall Handle Animation]
+author=xan1242
+comment=Speeds up the werehog's wall handle grabbing animations by skipping animation finish checks.
+patch=1,EE,2026DD64,extended,00000000
+patch=1,EE,2026DD6C,extended,00000000
+
+[Speed up Werehog Dash Stop Animation]
+author=xan1242
+comment=Speeds up the werehog's dash stop animations by skipping animation finish checks.
+patch=1,EE,202687AC,extended,00000000
+patch=1,EE,202687B4,extended,10000007
+
+[Disable Werehog hitstops]
+author=xan1242
+comment=Disables all hitstops for Werehog.
+patch=1,EE,202F2790,extended,AC400000
+
+[Disable Werehog Unleash bar from draining during cutscenes]
+author=xan1242
+comment=Stops the Unleash bar from draining during in-game cutscenes.
+patch=1,EE,20820588,extended,0C0E2A04 // jal 0x38A810 // (function that checks if there's NOT an active cutscene)
+patch=1,EE,2082058C,extended,00000000 // nop
+patch=1,EE,20820590,extended,54400003 // bnezl v0, no_cutscene (0x8205A0)
+patch=1,EE,20820594,extended,C483000C // lwc f3, 0xC(a0)
+patch=1,EE,20820598,extended,080F6701 // j 0x3D9C04 // exit early
+patch=1,EE,2082059C,extended,00000000 // nop
+                                      // no_cutscene:
+patch=1,EE,208205A0,extended,080F66D8 // j 0x3D9B60 // continue as normal
+patch=1,EE,208205A4,extended,00000000 // nop
+// entrypoint
+patch=1,EE,203D9B58,extended,08208162 // j 0x820588
+
+[Play Howl on Werehog Unleash]
+author=xan1242
+comment=Play the howl when Werehog Unleash state is activated.
+// common function - play BGM with just the ID in a1 (this can be reused for other purposes if needed)
+patch=1,EE,2076D554,extended,8F82B2F4 // lw v0, -0x4D0C(gp) // 8732E4 has a thing that contains the BGM obj, can be null so we check for that
+patch=1,EE,2076D558,extended,54400003 // bnezl v0, cont (0x76D568)
+patch=1,EE,2076D55C,extended,8C440008 // lw a0, 8(v0)
+patch=1,EE,2076D560,extended,03E00008 // jr ra
+patch=1,EE,2076D564,extended,0000102D // move v0, zero
+                                      // cont:
+patch=1,EE,2076D568,extended,080B02F8 // j 0x2C0BE0 (PlayBgm) // a1 should be set as an input param beforehand
+patch=1,EE,2076D56C,extended,0000302D // move a2, zero
+// play howl on unleash hook
+patch=1,EE,20820668,extended,27BDFFF0 // addiu sp, -0x10
+patch=1,EE,2082066C,extended,FFBF0000 // sd ra, 0(sp)
+patch=1,EE,20820670,extended,0C099DAC // jal 0x2676B0 (uUpdateWerehogStateThing)
+patch=1,EE,20820674,extended,00000000 // nop
+patch=1,EE,20820678,extended,0C1DB555 // jal 0x76D554 (play bgm custom func)
+patch=1,EE,2082067C,extended,2405000C // li a1, 0xC // Howl "BGM" ID
+patch=1,EE,20820680,extended,DFBF0000 // ld ra, 0(sp)
+patch=1,EE,20820684,extended,03E00008 // jr ra
+patch=1,EE,20820688,extended,27BD0010 // addiu sp, 0x10
+// entrypoint
+patch=1,EE,20273440,extended,0C20819A // jal 0x820668

@@ -1,0 +1,369 @@
+//
+// Sonic Unleashed PS2 - General game tweaks & QoL features
+//
+
+gametitle=Sonic Unleashed [SLES-55380] (E)
+
+[Force Progressive Scan Mode]
+author=xan1242
+comment=Force-enables progressive scan output after the game initializes.
+// hijack a nullsub during main() before the loop starts, call 0x501300(2) which sets the video mode
+patch=1,EE,204FF78C,extended,0C1404C0
+patch=1,EE,204FF790,extended,24040002 // 0 = NTSC, 1 = PAL, 2 = NTSC Progressive
+
+[Improved Frame Syncing]
+author=xan1242
+comment=Replaces the frame syncing function with a new implementation which should yield in more consistent frame pacing.
+// bGetTicker -- bWare function, gets the current CPU tick counter
+patch=1,EE,20836E10,bytes,004802400800E00300000000
+// bGetTickerDifference -- bWare function, returns a float value of the difference between 2 CPU tick values in milliseconds
+patch=1,EE,20836E1C,bytes,2B10A4002310A400050040044218020000108244A01080460600001000000000010042302510430000108244A0108046801002465F36013C3BB2213400008144823F013C3A23213400088144021000460800E00302000146
+// PS2Skeleton Sync replacement
+patch=1,EE,20836E74,extended,3C020087  // lui v0, 0x87
+patch=1,EE,20836E78,extended,8C430A1C  // lw v1, 0xA1C(v0) // get the current game mode, fall back to original sync for any movie-related modes (attract, movie, credit)
+patch=1,EE,20836E7C,extended,2462FFF4  // addiu v0, v1, -0xC
+patch=1,EE,20836E80,extended,2C420002  // sltiu v0, 2
+patch=1,EE,20836E84,extended,14400016  // bnez v0, loc_regularSync
+patch=1,EE,20836E88,extended,00000000  // nop
+patch=1,EE,20836E8C,extended,24020010  // li v0, 0x10
+patch=1,EE,20836E90,extended,10620013  // beq v1, v0, loc_regularSync
+patch=1,EE,20836E94,extended,00000000  // nop
+patch=1,EE,20836E98,extended,27BDFFF0  // addiu sp, -0x10
+patch=1,EE,20836E9C,extended,FFBF0000  // sd ra, 0(sp)
+patch=1,EE,20836EA0,extended,3C190082  // lui t9, 0x82
+                                       // loc_Loop:
+patch=1,EE,20836EA4,extended,0C20DB84  // jal 0x836E10 (bGetTicker)
+patch=1,EE,20836EA8,extended,8F240498  // lw a0, 0x498(t9)
+patch=1,EE,20836EAC,extended,0C20DB87  // jal 0x836E1C (bGetTickerDifference)
+patch=1,EE,20836EB0,extended,00402825  // move a1, v0
+patch=1,EE,20836EB4,extended,C721049C  // lwc1 f1, 0x49C(t9)
+patch=1,EE,20836EB8,extended,46000836  // c.le.s f1, f0
+patch=1,EE,20836EBC,extended,00000000  // nop
+patch=1,EE,20836EC0,extended,4500FFF8  // bc1f loc_Loop
+patch=1,EE,20836EC4,extended,00000000  // nop
+patch=1,EE,20836EC8,extended,0C20DB84  // jal 0x836E10 (bGetTicker)
+patch=1,EE,20836ECC,extended,00000000  // nop
+patch=1,EE,20836ED0,extended,AF220498  // sw v0, 0x498(t9)
+patch=1,EE,20836ED4,extended,DFBF0000  // ld ra, 0(sp)
+patch=1,EE,20836ED8,extended,03E00008  // jr ra
+patch=1,EE,20836EDC,extended,27BD0010  // addiu sp, 0x10
+                                       // loc_regularSync:
+patch=1,EE,20836EE0,extended,081403A0  // j 0x500E80 (uPS2Skeleton_Sync)
+patch=1,EE,20836EE4,extended,00000000  // nop
+// entrypoint
+patch=1,EE,20500E10,extended,0C20DB9D
+// update frametime based on current FPS limit
+patch=0,EE,200D91FC,extended,3C01447A // lui at, 0x447A
+patch=0,EE,200D9204,extended,44811000 // mtc1 at, f2
+patch=0,EE,200D920C,extended,46011083 // div.s f2, f2, f1
+patch=0,EE,200D9210,extended,3C020082 // lui v0, 0x82
+patch=0,EE,200D9214,extended,8F390034 // lw t9, 0x34(t9)
+patch=0,EE,200D9218,extended,03200008 // jr t9
+patch=0,EE,200D921C,extended,E442049C // swc1 f2, 0x49C(v0)
+// initialize frametime value hook
+patch=0,EE,20836EE8,extended,3C030082 // lui $v1, 0x82
+patch=0,EE,20836EEC,extended,3C024185 // lui $v0, 0x4185
+patch=0,EE,20836EF0,extended,24425555 // addiu $v0, $v0, 0x5555
+patch=0,EE,20836EF4,extended,03E00008 // jr $ra
+patch=0,EE,20836EF8,extended,AC62049C // sw $v0, 0x49C($v1)
+// entrypoint for init hook
+patch=0,EE,204FF6BC,extended,0C20DBBA // jal 0x836EE8
+
+[PAL 30FPS]
+author=xan1242
+comment=Uses 30FPS instead of 25FPS on PAL.
+patch=1,EE,200D91AC,extended,00401821
+patch=1,EE,200D91B0,extended,00000000
+patch=1,EE,200D91B4,extended,10000003
+patch=1,EE,200D91B8,extended,00000000
+
+[640x448]
+author=xan1242
+comment=Sets the screen resolution to 640x448
+patch=1,EE,204FE384,extended,24050280
+
+[Enable Widescreen Mode]
+author=xan1242
+comment=Do NOT enable with "Ultrawide Aspect Ratio". Enables the widescreen mode flag in the default system configuration and patches the UI values.
+patch=1,EE,20753F08,byte,01
+patch=1,EE,20218470,extended,00000000
+// set CSD res to 854x480
+patch=1,EE,20871490,extended,44554000
+patch=1,EE,20871494,extended,43F00000
+// set font draw size / aspect ratio (CConverse)
+patch=1,EE,20870100,extended,3F400000
+patch=1,EE,20870104,extended,3F800000
+// fix font kerning
+// world map mission list
+patch=1,EE,20871F54,extended,C0800000
+patch=1,EE,20871F4C,extended,C0666666
+// global font spacing hook
+patch=1,EE,2076D524,extended,3C020082 // lui v0, 0x82
+patch=1,EE,2076D528,extended,C4400478 // lwc1 f0, 0x478(v0)
+patch=1,EE,2076D52C,extended,080D1090 // j 0x344240
+patch=1,EE,2076D530,extended,46000802 // mul.s f0, f1, f0
+// entrypoint
+patch=1,EE,20344238,extended,081DB549 // j 0x76D524
+patch=1,EE,2034423C,extended,00000000 // nop
+// value
+patch=1,EE,20820478,extended,3F400000 // nominal: 0.8, this: 0.75
+// fix bars width - vanilla value (0.8) * wii value (0.75029308)
+patch=1,EE,20871DE4,extended,3F19A8F7
+// fix Werehog health bar fill X position
+patch=1,EE,20871E44,extended,41340000
+// fix Werehog unleash bar fill X position
+patch=1,EE,20871E50,extended,40F00000
+// fix Boss HP bar poly right edge pos
+patch=1,EE,203C9DBC,extended,3C023F00
+// fix Werehog results screen upgrade gauges
+// main position 
+patch=1,EE,20872358,extended,3F19999A
+// extension position
+patch=1,EE,20872364,extended,3E0ED917
+patch=1,EE,20872368,extended,3DC9374C
+patch=1,EE,20872378,extended,3DC9374C
+// Squirrel Movie IsWide function force return true
+patch=1,EE,2023C484,extended,24020001
+// fix NPCTalk rendering
+patch=1,EE,20820504,extended,3C020082 // lui v0, 0x82
+patch=1,EE,20820508,extended,C4400484 // lwc1 f0, 0x484(v0)
+patch=1,EE,2082050C,extended,0810EBE1 // j 0x43AF84
+patch=1,EE,20820510,extended,46000802 // mul.s f0, f1, f0
+// entrypoint
+patch=1,EE,2043AF7C,extended,08208141 // j 0x820504
+patch=1,EE,2043AF80,extended,00000000 // nop
+// patch NPC texture scaling value
+patch=1,EE,20436420,extended,3C020082 // lui v0, 0x82
+patch=1,EE,20436428,extended,C4400484 // lwc1 f0, 0x484(v0)
+// NPC texture left position
+patch=1,EE,2043657C,extended,3C024455 // lui v0, 0x4455
+// NPC texture spacing (between left and right NPC)
+patch=1,EE,20407A00,extended,3C024305
+// X scale of NPCTalk
+patch=1,EE,20820484,extended,3F19999A
+
+[Ultrawide Aspect Ratio]
+author=xan1242
+comment=Do NOT enable with "Enable Widescreen Mode". Sets the 3D projection scaling for ultrawide aspect ratio (2.3888). Applied only at game bootup.
+patch=1,EE,208700CC,extended,400D2BF2
+patch=1,EE,20753F08,byte,01
+// set CSD res to 1147x480
+patch=1,EE,20218470,extended,00000000
+patch=1,EE,20871490,extended,448F6000
+patch=1,EE,20871494,extended,43F00000
+// set font draw size / aspect ratio (CConverse)
+patch=1,EE,20870100,extended,3F0EE23C
+patch=1,EE,20870104,extended,3F800000
+// fix font kerning
+// world map mission list
+patch=1,EE,20871F54,extended,C0800000
+patch=1,EE,20871F4C,extended,C0666666
+// global font spacing hook
+patch=1,EE,2076D524,extended,3C020082 // lui v0, 0x82
+patch=1,EE,2076D528,extended,C4400478 // lwc1 f0, 0x478(v0)
+patch=1,EE,2076D52C,extended,080D1090 // j 0x344240
+patch=1,EE,2076D530,extended,46000802 // mul.s f0, f1, f0
+// entrypoint
+patch=1,EE,20344238,extended,081DB549 // j 0x76D524
+patch=1,EE,2034423C,extended,00000000 // nop
+// value
+patch=1,EE,20820478,extended,3F009869 // nominal: 0.8, this: 0.50232558375
+// fix bars width - vanilla value (0.8) * wii value (0.75029308) * ultrawide scaling factor (0.744186046511628)
+patch=1,EE,20871DE4,extended,3EE4B40B
+// fix Werehog health bar fill X position
+patch=1,EE,20871E44,extended,4105F418
+// fix Werehog unleash bar fill X position
+patch=1,EE,20871E50,extended,40B29ACA
+// fix Boss HP bar poly size
+patch=1,EE,20871DEC,extended,400EE23C
+// fix Boss HP bar poly right edge pos
+patch=1,EE,203C9DBC,extended,3C023F00
+// fix Werehog results screen upgrade gauges
+// main position 
+patch=1,EE,20872358,extended,3EE49D2C
+// extension position
+patch=1,EE,20872364,extended,3DD49C69
+patch=1,EE,20872368,extended,3D95BDFD
+patch=1,EE,20872378,extended,3D95BDFD
+// fix Werehog minimap
+// scale X
+patch=1,EE,204E605C,extended,3C0341AC
+// pos X
+patch=1,EE,20870470,extended,4184399A
+// 3d model transforms
+patch=1,EE,204E4A78,extended,3C02430A
+patch=1,EE,204E5B5C,extended,3C02430A
+patch=1,EE,204E4E74,extended,3C0242D7
+// Squirrel Movie IsWide function force return true
+patch=1,EE,2023C484,extended,24020001
+// DrawMovieWithPos hook -- adjust mov_l and mov_r values...
+patch=1,EE,2082051C,extended,3C020082 // lui v0, 0x82
+patch=1,EE,20820520,extended,C44E047C // lwc1 f14, 0x47C(v0)
+patch=1,EE,20820524,extended,0808F0C0 // j 0x23C300
+patch=1,EE,20820528,extended,C44C0480 // lwc1 f12, 0x480(v0)
+// entrypoint
+patch=1,EE,2023F96C,extended,0C208147 // jal 0x82051C
+// values -- the movie window is 512x448, this sets absolute values of the rectangle within that window
+// mov_r value (right side of the rectangle)
+patch=1,EE,2082047C,extended,43D41595
+// mov_l value (left side of the rectangle)
+patch=1,EE,20820480,extended,42AFA9AB
+// fix NPCTalk rendering
+patch=1,EE,20820504,extended,3C020082 // lui v0, 0x82
+patch=1,EE,20820508,extended,C4400484 // lwc1 f0, 0x484(v0)
+patch=1,EE,2082050C,extended,46000802 // mul.s f0, f1, f0
+patch=1,EE,20820510,extended,C4410488 // lwc1 f1, 0x488(v0)
+patch=1,EE,20820514,extended,0810EBE1 // j 0x43AF84
+patch=1,EE,20820518,extended,46010000 // add.s f0, f0, f1
+// entrypoint
+patch=1,EE,2043AF7C,extended,08208141 // j 0x820504
+patch=1,EE,2043AF80,extended,00000000 // nop
+// patch NPC texture scaling value
+patch=1,EE,20436420,extended,3C020082 // lui v0, 0x82
+patch=1,EE,20436428,extended,C4400484 // lwc1 f0, 0x484(v0)
+// NPC texture left position
+patch=1,EE,2043657C,extended,3C02448F // lui v0, 0x448F
+// NPC texture spacing (between left and right NPC)
+patch=1,EE,20407A00,extended,3C024305
+// X scale of NPCTalk
+patch=1,EE,20820484,extended,3EE49D2C
+// X pos translation of NPCTalk background
+patch=1,EE,20820488,extended,42393333
+
+[Allow movie skipping everywhere]
+author=xan1242
+comment=Allows you to skip movies at any point.
+patch=1,EE,2040E7B4,extended,00000000
+
+[Disable Chip's Messages]
+author=xan1242
+comment=Stops Chip's tutorial messages by preventing the TChipTalk task from starting up. (Except in Gaia Gates/Entrance Stages)
+patch=1,EE,2076D4F0,extended,8F82B460 // lw v0, -0x4BA0(gp) -- check the CEntrance singleton at 0x873450
+patch=1,EE,2076D4F4,extended,10400003 // beqz v0, nogaia (0x76D504)
+patch=1,EE,2076D4F8,extended,00000000 // nop
+patch=1,EE,2076D4FC,extended,080F72FC // j 0x3DCBF0 -- proceed with the usual function...
+patch=1,EE,2076D500,extended,00000000 // nop
+                                      // nogaia:
+patch=1,EE,2076D504,extended,03E00008 // jr ra
+patch=1,EE,2076D508,extended,00001021 // move v0, zero
+// entrypoint
+patch=1,EE,203F4B2C,extended,0C1DB53C // jal 0x76D4F0
+
+[Skip Continue Playing Dialog]
+author=xan1242
+comment=Skips the "Continue Playing?" dialog and continues with the next stage automatically.
+// #TODO this does not work! This makes the exit happen too early and it fails to set up the next stage's files for loading!
+// Currently using the faked pad accept method as a workaround, but ideally what needs to happen is to perform the loading, wait for it and then set the flag!
+// EXPLANATION:
+// This sets the memset value to be 5
+// This works because when the user selects the "Yes" on the dialog, it sets specifically the flags with the value 5
+// The flag is set at 4C1A94 and is read at 4C0D7C afterwards.
+//patch=1,EE,204C2104,extended,24050005
+// Force pad accept on first poll
+patch=1,EE,204C1E90,extended,10000005
+patch=1,EE,204C1EA8,extended,00000000
+patch=1,EE,204C1DF4,extended,10000005
+
+[Disable Loading Beep]
+author=xan1242
+comment=Disables the beeping sound effect during the loading screen.
+patch=1,EE,20463598,extended,10000011
+
+[Music in Options Menu]
+author=xan1242
+comment=Re-enables menu music in the Options Menu.
+patch=1,EE,20456A38,extended,24050041 // you can edit the last byte to change the music ID to your liking... the order of IDs follow the array of BGMs found at 0x762390
+
+[Force Japanese Language]
+author=xan1242
+comment=Forces the Japanese language to be active.
+patch=1,EE,20873878,byte,00
+
+// if only we could put radio buttons...
+[Force PS Controller Type]
+author=xan1242
+comment=Forces the PlayStation controller icons and type. (Use this to revert to default)
+patch=1,EE,2087387D,byte,00
+
+[Force Wii Classic Controller Type]
+author=xan1242
+comment=Forces the Wii Classic Controller controller icons and type.
+patch=1,EE,2087387D,byte,01
+
+[Force GameCube Controller Type]
+author=xan1242
+comment=Forces the GameCube Controller controller icons and type.
+patch=1,EE,2087387D,byte,02
+
+[Use Japanese Voice (Ingame Only)]
+author=xan1242
+comment=Loads the JP voice sound banks instead of the EN ones. NOTE: This will only affect ingame voices. The game normally lacks the other JP audio files!
+// replace checks for the JP voice IDs for the EN ones to avoid loading them (and allow loading JP voices)
+patch=1,EE,200EB00C,extended,24020003 // li v0, 3
+patch=1,EE,200EB018,extended,2402000A // li v0, 0xA
+// next, we have to intercept bank loading... we'll hook the sound bank load func and check if we have our matching .one file IDs
+// 2C4C60 -- uLoadSoundBank
+// 82068C -- hook loc
+// hook to patch the bank ID -- JP voices use 3C and 3D, EN use 3E and 3F. To avoid patching the hardcoded values everywhere, we patch the bank data as it's loading...
+patch=1,EE,2082068C,extended,80C3025A // lb v1, 0x25A(a2)
+patch=1,EE,20820690,extended,24630002 // addiu v1, 0x2
+patch=1,EE,20820694,extended,24020002 // li v0, 2 // if werehog bank
+patch=1,EE,20820698,extended,50520004 // beql v0, s2, 0x8206AC (contpoint)
+patch=1,EE,2082069C,extended,A0C3025A // sb v1, 0x25A(a2)
+patch=1,EE,208206A0,extended,24020009 // li v0, 9 // if sonic bank
+patch=1,EE,208206A4,extended,50520001 // beql v0, s2, 0x8206AC (contpoint)
+patch=1,EE,208206A8,extended,A0C3025A // sb v1, 0x25A(a2)
+                                      // contpoint:
+patch=1,EE,208206AC,extended,080B1318 // j 0x2C4C60
+patch=1,EE,208206B0,extended,00000000 // nop
+// entrypoint
+patch=1,EE,200EB07C,extended,0C2081A3 // jal 0x82068C
+
+[60FPS Mode (BUGGY)]
+author=xan1242
+comment=Disables the frame limiter and allows the game to run in full 60Hz VSync frametime. NOTE: The game will have a lot of timescale bugs!
+patch=1,EE,200D91A4,extended,08036476
+// fix werehog dash jitter
+patch=1,EE,20268A20,extended,24020000
+// Fix CCameraChanger updater/ticker task timescale hook
+patch=1,EE,208205A8,extended,C7809E90 // lwc1 f0, -0x6170(gp) // use a static 2.0 value found at 0x871E80
+patch=1,EE,208205AC,extended,080A59AC // j 0x2966B0
+patch=1,EE,208205B0,extended,460C0302 // mul.s f12, f0, f12
+// entrypoint -- at vtable Update() method...
+patch=1,EE,208520F4,extended,008205A8
+// GimSonicSpring -- Per-object half rate hack function (needed for some springs, e.g. Eggmanland)
+// #TODO - this needs to be rewritten with hardware timers in mind! Need to measure delta time and limit it to 1/30s somehow.
+// Until then -- overclock the EE rate to ensure that the game runs at 60FPS consistently!
+// This hooks the boundary check and delays it by exactly 1 frame in case it is intersecting.
+patch=1,EE,208205B4,extended,27BDFFF0 // addiu sp, -0x10
+patch=1,EE,208205B8,extended,FFBF0000 // sd ra, 0(sp)
+patch=1,EE,208205BC,extended,0C07E0C0 // jal 0x1F8300
+patch=1,EE,208205C0,extended,00000000 // nop
+patch=1,EE,208205C4,extended,10400007 // beqz v0, 0x8205E4 // stopcheck
+patch=1,EE,208205C8,extended,8E030254 // lw v1, 0x254(s0)
+patch=1,EE,208205CC,extended,14600004 // bnez v1, 0x8205E0 // clearflag
+patch=1,EE,208205D0,extended,24020001 // li v0, 1
+patch=1,EE,208205D4,extended,AE020254 // sw v0, 0x254(s0)
+patch=1,EE,208205D8,extended,10000002 // b 0x8205E4 // stopcheck
+patch=1,EE,208205DC,extended,0000102D // move v0, zero
+                                      // clearflag:
+patch=1,EE,208205E0,extended,AE000254 // sw zero, 0x254(s0)
+                                      // stopcheck:
+patch=1,EE,208205E4,extended,DFBF0000 // ld ra, 0(sp)
+patch=1,EE,208205E8,extended,03E00008 // jr ra
+patch=1,EE,208205EC,extended,27BD0010 // addiu sp, 0x10
+// entrypoint
+patch=1,EE,203FDEBC,extended,0C20816D // jal 0x8205B4
+// fix simulation slowdown times for 60FPS (HitStop)
+patch=1,EE,201ECAC8,extended,C7809E90 // lwc1 f0, -0x6170(gp) // use a static 2.0 value found at 0x871E80
+//patch=1,EE,201ECACC,extended,460C0302 // mul.s f12, f0, f12 // speed mul -- ignored for now...
+patch=1,EE,201ECACC,extended,00000000 // nop
+patch=1,EE,201ECAD0,extended,460D0342 // mul.s f13, f0, f13 // time mul
+patch=1,EE,201ECAD4,extended,E48C0014 // swc f12, 0x14(a0)
+patch=1,EE,201ECAD8,extended,03E00008 // jr ra
+patch=1,EE,201ECADC,extended,E48D0018 // swc f13, 0x18(a0)
+
+[Show Progressive Scan Prompt Instead Of 60Hz Prompt]
+author=xan1242
+comment=When holding X+Triangle during bootup, it will ask for Progressive Scan instead of 60Hz Mode.
+patch=1,EE,2068EF3C,extended,081A3BC6

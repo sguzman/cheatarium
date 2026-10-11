@@ -1,0 +1,60 @@
+//
+// Sonic Unleashed PS2 - Debugging patches
+//
+
+gametitle=Sonic Unleashed [SLES-55380] (E)
+
+[Redirect ADXRT errors to stdout]
+author=xan1242
+comment=Pipes the CRI ADXRT library error outputs to the TTY. Useful for debugging/development.
+// string
+patch=1,EE,20820500,extended,000A7325
+// DVCI
+patch=1,EE,20781594,extended,00820500
+patch=1,EE,20781590,extended,0065AFC8
+// cvFs
+patch=1,EE,2078FE10,extended,00820500
+patch=1,EE,2078FE0C,extended,0065AFC8
+// MFCI
+patch=1,EE,20796F18,extended,00820500
+patch=1,EE,20796F14,extended,0065AFC8
+// HTCI
+patch=1,EE,20792180,extended,00820500
+patch=1,EE,2079217C,extended,0065AFC8
+
+[Redirect Squirrel Prints to stdout]
+author=xan1242
+comment=Redirects Squirrel's print function into the TTY. Useful for debugging/development.
+patch=1,EE,203085F4,extended,00000000 // nop
+patch=1,EE,203085FC,extended,3C04007B // lui a0, 0x7B
+patch=1,EE,20308600,extended,0C196BF2 // jal printf (0x65AFC8)
+patch=1,EE,20308604,extended,2484AEB8 // addiu a0, a0, 0xAEB8
+patch=1,EE,20308608,extended,DFBF0000 // ld ra, 0(sp)
+patch=1,EE,2030860C,extended,03E00008 // jr ra
+patch=1,EE,20308610,extended,27BD0080 // addiu sp 0x80
+
+[Force g_CScenarioManager.IsDebugRom]
+author=xan1242
+comment=Forces g_CScenarioManager.IsDebugRom() to return true
+patch=1,EE,20371E44,extended,24020001
+
+[Force g_CScenarioManager.IsDebug]
+author=xan1242
+comment=Forces g_CScenarioManager.IsDebug() to return true
+patch=1,EE,20371E34,extended,24020001
+
+[Force std.IsDebug]
+author=xan1242
+comment=Forces std.IsDebug() to return true
+patch=1,EE,20308CA4,extended,24020001
+
+[Fix DebugSelect Sonic Action]
+author=xan1242
+comment=Corrects the mode ID for Sonic Action in the DebugSelect mode (aka Make Mode)
+patch=1,EE,20754740,extended,00000004
+
+[Replace DebugSelect Screen Change option with CSD Viewer]
+author=xan1242
+comment=Replaces the "Screen Change" option the CSD Viewer mode
+patch=1,EE,207549D4,extended,0000001E
+patch=1,EE,207549DC,bytes,4353442056696577657200

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "xan1242-sonic-unleashed-ps2",
+  "repository": "https://github.com/xan1242/UnwiishedPS2Hacks",
+  "snapshot_commit": "1f0ccbe4975f54c3f7c810a21c440e5a51728085",
+  "license": "MIT (xan1242, root LICENSE preserved)",
+  "archive_prefix": "archive/xan1242-sonic-unleashed-ps2/",
+  "scope_note": "Seven original PS2 PNACH code sources for Sonic Unleashed PAL-E SLES-55380 (CRC 8C913264): separate Sonic and Werehog controls, debug mode, host filesystem and gameplay tweaks. Full native file paths preserved.",
+  "rights_note": "The author explicitly identifies these as personally authored Sonic Unleashed PS2 hacks. Preserve MIT LICENSE, usage and memory-map documentation. Some functionality requires special PCSX2 Host Filesystem setup and extracted user-owned game data. Source says only European PAL revision supported; game/build identity and effect execution unverified by Cheatarium.",
+  "native_cheat_counts": {
+    "ps2": 7
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/LICENSE",
+      "git_blob_sha": "87ea90ddb27c52bc7a92566e055d61ec5a7d7196"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/README.md",
+      "git_blob_sha": "4797b834d4ce9944b3a044df047ffe632abc93cd"
+    },
+    {
+      "upstream_path": "SLES-55380/8C913264_Controls_Sonic.pnach",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/8C913264_Controls_Sonic.pnach",
+      "git_blob_sha": "02499fa3fcf495891106413d6d2091310d9a2917"
+    },
+    {
+      "upstream_path": "SLES-55380/8C913264_Controls_Werehog.pnach",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/8C913264_Controls_Werehog.pnach",
+      "git_blob_sha": "e36839179c75b50b09cef2f473f30d2e6c091c8b"
+    },
+    {
+      "upstream_path": "SLES-55380/8C913264_Debug.pnach",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/8C913264_Debug.pnach",
+      "git_blob_sha": "e308008d471c852f2befc15caa27633535a8e944"
+    },
+    {
+      "upstream_path": "SLES-55380/8C913264_Filesystem.pnach",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/8C913264_Filesystem.pnach",
+      "git_blob_sha": "c5534edd8650e915b058842564552d65441020f9"
+    },
+    {
+      "upstream_path": "SLES-55380/8C913264_Tweaks_Game.pnach",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/8C913264_Tweaks_Game.pnach",
+      "git_blob_sha": "618b5d44d923cb060be8f423eb4380a5b72c11ce"
+    },
+    {
+      "upstream_path": "SLES-55380/8C913264_Tweaks_Sonic.pnach",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/8C913264_Tweaks_Sonic.pnach",
+      "git_blob_sha": "5bcb3624ec8a8fbe61e053061c3dd8bb709ccaaa"
+    },
+    {
+      "upstream_path": "SLES-55380/8C913264_Tweaks_Werehog.pnach",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/8C913264_Tweaks_Werehog.pnach",
+      "git_blob_sha": "3ee1715259c8db7fcabd23112ccfb01c0db918c6"
+    },
+    {
+      "upstream_path": "SLES-55380/MemoryMap.md",
+      "archive_path": "archive/xan1242-sonic-unleashed-ps2/SLES-55380/MemoryMap.md",
+      "git_blob_sha": "75603b8339361d3590a6ed5276d2767b5a50eca2"
+    }
+  ]
+}
