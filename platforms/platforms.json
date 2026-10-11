@@ -360,6 +360,48 @@
       "name": "MSX2",
       "maker": "MSX",
       "kind": "computer"
+    },
+    {
+      "id": "chailove",
+      "name": "ChaiLove Game Engine",
+      "maker": "Community",
+      "kind": "engine"
+    },
+    {
+      "id": "prboom",
+      "name": "PrBoom",
+      "maker": "Community",
+      "kind": "engine"
+    },
+    {
+      "id": "puzzlescript",
+      "name": "PuzzleScript",
+      "maker": "Community",
+      "kind": "engine"
+    },
+    {
+      "id": "zx-spectrum",
+      "name": "ZX Spectrum +3",
+      "maker": "Sinclair",
+      "kind": "computer"
+    },
+    {
+      "id": "tic80",
+      "name": "TIC-80",
+      "maker": "Community",
+      "kind": "fantasy-console"
+    },
+    {
+      "id": "thomson-moto",
+      "name": "Thomson MO/TO",
+      "maker": "Thomson",
+      "kind": "computer"
+    },
+    {
+      "id": "wolf3d",
+      "name": "Wolfenstein 3D Engine",
+      "maker": "id Software",
+      "kind": "engine"
     }
   ]
 }

@@ -221,6 +221,41 @@
       "import_id": "msx2",
       "platform": "msx2",
       "source_directory": "Microsoft - MSX2"
+    },
+    {
+      "import_id": "chailove",
+      "platform": "chailove",
+      "source_directory": "ChaiLove"
+    },
+    {
+      "import_id": "prboom",
+      "platform": "prboom",
+      "source_directory": "PrBoom"
+    },
+    {
+      "import_id": "puzzlescript",
+      "platform": "puzzlescript",
+      "source_directory": "PuzzleScript"
+    },
+    {
+      "import_id": "zx-spectrum",
+      "platform": "zx-spectrum",
+      "source_directory": "Sinclair - ZX Spectrum +3"
+    },
+    {
+      "import_id": "tic80",
+      "platform": "tic80",
+      "source_directory": "TIC-80"
+    },
+    {
+      "import_id": "thomson-moto",
+      "platform": "thomson-moto",
+      "source_directory": "Thomson - MOTO"
+    },
+    {
+      "import_id": "wolf3d",
+      "platform": "wolf3d",
+      "source_directory": "Wolfenstein 3D"
     }
   ]
 }
