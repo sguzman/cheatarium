@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33214,
-  "game_candidate_groups": 26657,
+  "source_files": 33215,
+  "game_candidate_groups": 26658,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 80881,
   "reviewed_snes_revision_alternatives": 27,
@@ -28,8 +28,8 @@
     },
     {
       "path": "3ds.json.gz",
-      "sha256": "add193dfb6e32aa962be57b1b6cf8fc5cd1bd15fe340963d20c6e81db2300fb4",
-      "size_bytes": 377092
+      "sha256": "fa0356f37b104dcf018e1204a2fcab53e594d4f7354e7d7ebe436ae373bcefd7",
+      "size_bytes": 377452
     },
     {
       "path": "atari-2600.json.gz",
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "9f153b460be230cb5c4b31740581a4fa038475b3eb7ee77d3260166952f5660a",
+      "sha256": "628388ca078a2f772c4b9fcb792e22e5dc7d7dd37d18f46c71b8cd49b5879741",
       "size_bytes": 20988
     },
     {
@@ -93,8 +93,8 @@
     },
     {
       "path": "games/3ds.json.gz",
-      "sha256": "a169193f05c0690e130b51297017c822c02e6d8b71427db4c11006c8e8052316",
-      "size_bytes": 8786
+      "sha256": "9bd5e92940d979e0981864497c4c62d65ab0b1909bd43d8a5d33c14b4abe74bb",
+      "size_bytes": 8836
     },
     {
       "path": "games/atari-2600.json.gz",
