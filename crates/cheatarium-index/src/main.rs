@@ -838,7 +838,10 @@ fn run() -> Result<()> {
                         original.trim_end_matches(".ini").to_owned(),
                     )
                 }
-                "foxy-dementium-3ds" | "foxy-kirby-clash-3ds" | "foxy-terraria-3ds" | "foxy-ocarina-3ds"
+                "foxy-dementium-3ds"
+                | "foxy-kirby-clash-3ds"
+                | "foxy-terraria-3ds"
+                | "foxy-ocarina-3ds"
                     if original.ends_with(".txt")
                         && original.trim_end_matches(".txt").len() == 16
                         && original

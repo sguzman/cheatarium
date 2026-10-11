@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33082,
-  "game_candidate_groups": 26525,
+  "source_files": 33088,
+  "game_candidate_groups": 26531,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 80860,
   "reviewed_snes_revision_alternatives": 27,
@@ -28,8 +28,8 @@
     },
     {
       "path": "3ds.json.gz",
-      "sha256": "98508461048c10d0d8b59cd29faf900af001ad10812440c697ac3983393ee3b3",
-      "size_bytes": 366509
+      "sha256": "1074b521dfbe4e698fe16c9600249808d7bdc087632f75f938c640bdcbf3a925",
+      "size_bytes": 367616
     },
     {
       "path": "atari-2600.json.gz",
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "cbad683d4e3f74f578b5a71df5678aaaffce6814a402ad8d6eb4f48599f428a2",
+      "sha256": "e5f13b32cd2be8a3b98356776c74e22ac7b50b630ca28dff2f1a31271263c63e",
       "size_bytes": 20986
     },
     {
@@ -93,8 +93,8 @@
     },
     {
       "path": "games/3ds.json.gz",
-      "sha256": "148f2e3ab45bb70033f502b05cf4ccd5f85420678bb46a7c6bf85e04f46fa401",
-      "size_bytes": 8328
+      "sha256": "ee6076f62bb66e3e232cd6ccb96b6add330749e5a3b33be5973ee0a326b046ae",
+      "size_bytes": 8361
     },
     {
       "path": "games/atari-2600.json.gz",
@@ -218,8 +218,8 @@
     },
     {
       "path": "games/ps2.json.gz",
-      "sha256": "a9c60ef0c5f2822e84c6d5245e1a3b6e806e1708b944867bcf77e8dc7dc80077",
-      "size_bytes": 5807
+      "sha256": "653a8a40cb63995e4c2b386ed9e207a4c5680c2a73d3d1ff3c31a4b2dc3a45b8",
+      "size_bytes": 5976
     },
     {
       "path": "games/ps3.json.gz",
@@ -393,8 +393,8 @@
     },
     {
       "path": "ps2.json.gz",
-      "sha256": "8c5863025130d29120fa840f4af3f9124d275a397880dd91d5bd823290398c9b",
-      "size_bytes": 84671
+      "sha256": "2903098937e530b225a6633e375836a89d4b1011406351111b55827ba50a76d2",
+      "size_bytes": 86014
     },
     {
       "path": "ps3.json.gz",
