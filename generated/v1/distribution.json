@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33112,
-  "game_candidate_groups": 26555,
+  "source_files": 33131,
+  "game_candidate_groups": 26574,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 80881,
   "reviewed_snes_revision_alternatives": 27,
@@ -58,8 +58,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "7f6187556aac4203ebcc6a1bbb6576e725e674cf19f5a7d8b470648e9c97e3d5",
-      "size_bytes": 20986
+      "sha256": "99216712bffc633314f1363370d111e113dd17cc35db0aaff46cea0226983471",
+      "size_bytes": 20988
     },
     {
       "path": "colecovision.json.gz",
@@ -83,8 +83,8 @@
     },
     {
       "path": "gamecube.json.gz",
-      "sha256": "0e892d53c98b03cf90eef6bec0f6d597cbf82be9575a757dee6f8ae2ec01e140",
-      "size_bytes": 203472
+      "sha256": "057a91b93dddd421c5b1ceee4caa30ed0c531ad48fab35d1eabad018a2812f1b",
+      "size_bytes": 204817
     },
     {
       "path": "games/32x.json.gz",
@@ -143,8 +143,8 @@
     },
     {
       "path": "games/gamecube.json.gz",
-      "sha256": "b4d20a46a16a772e2d56d724b811ca896ad0438335112fae250c48bde27ebb27",
-      "size_bytes": 3390
+      "sha256": "bd2299c3f9f3e736814a895cda1fe59389cbeee736d4c5396f2f5a52037a4b75",
+      "size_bytes": 3616
     },
     {
       "path": "games/gb.json.gz",
@@ -293,8 +293,8 @@
     },
     {
       "path": "games/wii.json.gz",
-      "sha256": "b93c7779ddf6c78e743ddd9d2ae26ecfcc3bbf4540e0644d5c994c63487e9f79",
-      "size_bytes": 2038
+      "sha256": "3d5711394954450ff2834c9015cf09adef6c7255d6c8b699d2dcbd5040f3947f",
+      "size_bytes": 2231
     },
     {
       "path": "games/wonderswan-color.json.gz",
@@ -928,8 +928,8 @@
     },
     {
       "path": "wii.json.gz",
-      "sha256": "65cd242812a0a9b121502c182972a01ef89e528bcd2c1f7dd347494cb410148d",
-      "size_bytes": 83925
+      "sha256": "4b0235bd3bb502b500acfc50727bcbb7fd1ef3ca467898fd08118126b97bfde2",
+      "size_bytes": 93507
     },
     {
       "path": "wonderswan-color.json.gz",
