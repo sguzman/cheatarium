@@ -122,6 +122,42 @@ for path in sorted((ROOT / "curated").glob("*/*/cheats.json")):
             if (ref.get("source"), ref.get("archive_path")) not in inventory:
                 error(f"{path}: untracked source reference {ref}")
 
+# Verify that each extracted PS2 ZIP member still matches the exact original
+# archive payload, including its member path, container blob hash and CRC.
+# Member-computed Git hashes are byte IDs, not assertions of upstream loose blobs.
+if "israpps-cheatdevice-ps2-extras" in sources:
+    import zipfile
+    pack = sources["israpps-cheatdevice-ps2-extras"]
+    rows = pack["files"]
+    lookup = {x["upstream_path"]: x for x in rows}
+    opened = {}
+    try:
+        for row in rows:
+            if "source_zip" not in row:
+                continue
+            zip_rel = row["source_zip"]
+            source_zip_row = lookup.get(zip_rel)
+            if not source_zip_row:
+                error(f"PS2 ZIP member lacks original container record: {row['upstream_path']}")
+                continue
+            if row["source_zip_git_blob_sha"] != source_zip_row["git_blob_sha"]:
+                error(f"PS2 ZIP container SHA mismatch: {row['upstream_path']}")
+                continue
+            if zip_rel not in opened:
+                opened[zip_rel] = zipfile.ZipFile(ROOT / source_zip_row["archive_path"])
+            name = row["zip_member_path"]
+            try:
+                member = opened[zip_rel].getinfo(name)
+                if f"{member.CRC:08x}" != row["zip_member_crc32"]:
+                    error(f"PS2 ZIP member CRC metadata mismatch: {row['upstream_path']}")
+                if opened[zip_rel].read(name) != (ROOT / row["archive_path"]).read_bytes():
+                    error(f"PS2 ZIP extracted bytes differ from original: {row['upstream_path']}")
+            except (KeyError, OSError, zipfile.BadZipFile) as exc:
+                error(f"PS2 ZIP original member unavailable {row['upstream_path']}: {exc}")
+    finally:
+        for handle in opened.values():
+            handle.close()
+
 tracked_archive_paths = {rel for _, rel in inventory}
 for path in (ROOT / "archive").rglob("*"):
     if path.is_file() and path.relative_to(ROOT).as_posix() not in tracked_archive_paths:

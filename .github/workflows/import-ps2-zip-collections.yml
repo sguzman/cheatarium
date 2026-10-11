@@ -1,0 +1,46 @@
+name: Bulk import pinned PS2 ZIP cheat collections
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-ps2-zip-collections.yml"
+      - "tools/import_ps2_zip_collections.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-ps2-zip-bulk-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Bulk-acquire all four pinned ZIPs and exact native members
+        run: python3 tools/import_ps2_zip_collections.py
+      - name: Verify complete source inventory and original byte hashes
+        run: python3 tools/validate.py
+      - name: Commit complete PS2 ZIP originals and extracted member archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/israpps-cheatdevice-ps2-extras/ sources/israpps-cheatdevice-ps2-extras.json
+          if git diff --cached --quiet; then
+            echo "All four original PS2 ZIP collections already archived."
+            exit 0
+          fi
+          git commit -m "data(ps2): bulk-preserve 7244 pinned native ZIP cheat members"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi

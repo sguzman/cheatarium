@@ -1471,6 +1471,77 @@ fn run() -> Result<()> {
         }
     }
 
+
+    // Import all source-native game sections from the four pinned ZIP packs.
+    // Original ZIP blobs and exact extracted member bytes remain separately
+    // archived; game names, mastercodes, region hints and revisions are source
+    // claims, never verified ROM matches or activation authorizations.
+    if wanted.as_ref().is_none_or(|platforms| platforms.contains("ps2")) {
+        let id = "israpps-cheatdevice-ps2-extras";
+        let manifest: SourceManifest = serde_json::from_slice(&fs::read(
+            root.join(format!("sources/{id}.json"))
+        )?)?;
+        if manifest.id != id {
+            return Err("Mismatched PS2 ZIP source manifest".into());
+        }
+        let mut count_sources = 0usize;
+        for item in manifest.files {
+            let original = &item.upstream_path;
+            let (format, region) = if original.starts_with("zip-members/NTSC_CHEATS.zip/")
+                && original.to_ascii_lowercase().ends_with(".cht") {
+                ("ps2-zip-native-ntsc", Some("NTSC".to_owned()))
+            } else if original.starts_with("zip-members/PAL_CHEATS.zip/")
+                && original.to_ascii_lowercase().ends_with(".cht") {
+                ("ps2-zip-native-pal", Some("PAL".to_owned()))
+            } else if original.starts_with("zip-members/MASTERCODES.zip/")
+                && original.to_ascii_lowercase().ends_with(".txt") {
+                ("ps2-zip-mastercode", None)
+            } else if original.starts_with("zip-members/WIDESCREEN.zip/")
+                && original.to_ascii_lowercase().ends_with(".txt") {
+                ("ps2-zip-widescreen", None)
+            } else {
+                continue;
+            };
+            count_sources += 1;
+            let bytes = fs::read(checked_path(&root, &item.archive_path)?)?;
+            let decoded = String::from_utf8_lossy(&bytes);
+            let groups = parse_cheatdevice_ps2_games(&decoded);
+            if groups.is_empty() {
+                return Err(format!("No source-title game sections in pinned ZIP member: {original}").into());
+            }
+            for (section, (title, codes)) in groups.into_iter().enumerate() {
+                let source_name = original.rsplit('/').next().unwrap_or(original);
+                let record = IndexedFile {
+                    id: format!("{id}:{original}#section-{:04}", section + 1),
+                    title_hint: title,
+                    candidate_game_key: format!("{id}:{original}#section-{:04}", section + 1),
+                    identity_confidence: "source-declared-game-name-only",
+                    raw_filename: source_name.to_owned(),
+                    region_hint: region.clone(),
+                    format_hint: Some(format),
+                    declared_cheats: None,
+                    parse_warnings: vec![
+                        "Pinned CheatDevice ZIP source text; compatibility/effects not gameplay-verified, including required mastercode conditions".to_owned(),
+                    ],
+                    codes,
+                    provenance: Provenance {
+                        source_id: manifest.id.clone(),
+                        repository: manifest.repository.clone(),
+                        revision: manifest.snapshot_commit.clone(),
+                        license: manifest.license.clone(),
+                        upstream_path: item.upstream_path.clone(),
+                        archive_path: item.archive_path.clone(),
+                        git_blob_sha: item.git_blob_sha.clone(),
+                    },
+                };
+                by_platform.entry("ps2".to_owned()).or_default().push(record);
+            }
+        }
+        if count_sources != 7243 {
+            return Err(format!("Pinned CheatDevice ZIP index source count mismatch: {count_sources}").into());
+        }
+    }
+
     if scan_snes && !overrides.is_empty() {
         return Err(format!(
             "{} unreferenced SNES composition overrides",
