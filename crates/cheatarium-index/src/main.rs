@@ -141,13 +141,13 @@ struct GameIndex {
     candidates: Vec<GameCandidate>,
 }
 
-
 fn parse_cheatdevice_ps2_games(text: &str) -> Vec<(String, Vec<Code>)> {
     fn is_native_code_line(line: &str) -> bool {
         let mut parts = line.split_whitespace();
         match (parts.next(), parts.next(), parts.next()) {
             (Some(a), Some(b), None) => {
-                a.len() == 8 && b.len() == 8
+                a.len() == 8
+                    && b.len() == 8
                     && a.bytes().all(|c| c.is_ascii_hexdigit())
                     && b.bytes().all(|c| c.is_ascii_hexdigit())
             }
@@ -194,7 +194,7 @@ fn parse_cheatdevice_ps2_games(text: &str) -> Vec<(String, Vec<Code>)> {
     for line in text.split_inclusive('\n') {
         let trimmed = line.trim();
         if trimmed.len() >= 2 && trimmed.starts_with('"') && trimmed.ends_with('"') {
-            if let Some(prior) = name.replace(trimmed[1..trimmed.len()-1].to_owned()) {
+            if let Some(prior) = name.replace(trimmed[1..trimmed.len() - 1].to_owned()) {
                 games.push((prior, parse_game_body(&body)));
                 body.clear();
             }
@@ -1406,29 +1406,40 @@ fn run() -> Result<()> {
         }
     }
 
-
     // Entire original root670 CheatDevicePS2 database: 1 source file, 1,483
     // source-declared game sections. Each section is indexed separately without
     // manufacturing ROM/build identity or treating individual memory writes
     // as known-good. Original bytes and historic code-author uncertainty remain.
-    if wanted.as_ref().is_none_or(|platforms| platforms.contains("ps2")) {
+    if wanted
+        .as_ref()
+        .is_none_or(|platforms| platforms.contains("ps2"))
+    {
         let id = "root670-cheatdevice-ps2";
         let manifest_path = root.join(format!("sources/{id}.json"));
         let manifest: SourceManifest = serde_json::from_slice(&fs::read(manifest_path)?)?;
         if manifest.id != id {
             return Err("Mismatched source manifest for PS2 CheatDevice".into());
         }
-        let db = manifest.files.iter().find(|x| x.upstream_path == "CheatDatabase.txt")
+        let db = manifest
+            .files
+            .iter()
+            .find(|x| x.upstream_path == "CheatDatabase.txt")
             .ok_or("Missing indexed CheatDevicePS2 database source")?;
         let bytes = fs::read(checked_path(&root, &db.archive_path)?)?;
         let text = String::from_utf8_lossy(&bytes);
         let games = parse_cheatdevice_ps2_games(&text);
         if games.len() != 1483 {
-            return Err(format!("Pinned CheatDevicePS2 game count mismatch: {}", games.len()).into());
+            return Err(
+                format!("Pinned CheatDevicePS2 game count mismatch: {}", games.len()).into(),
+            );
         }
         for (index, (title, codes)) in games.into_iter().enumerate() {
             if codes.is_empty() {
-                return Err(format!("Missing raw device code lines in CheatDevicePS2 game {}", index + 1).into());
+                return Err(format!(
+                    "Missing raw device code lines in CheatDevicePS2 game {}",
+                    index + 1
+                )
+                .into());
             }
             let record = IndexedFile {
                 id: format!("{id}:CheatDatabase.txt#game-{:04}", index + 1),
@@ -1453,7 +1464,10 @@ fn run() -> Result<()> {
                     git_blob_sha: db.git_blob_sha.clone(),
                 },
             };
-            by_platform.entry("ps2".to_owned()).or_default().push(record);
+            by_platform
+                .entry("ps2".to_owned())
+                .or_default()
+                .push(record);
         }
     }
 
