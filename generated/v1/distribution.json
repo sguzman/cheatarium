@@ -3,10 +3,10 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33231,
-  "game_candidate_groups": 26674,
+  "source_files": 33233,
+  "game_candidate_groups": 26676,
   "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 80881,
+  "lexical_effect_tag_matches": 80882,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -28,8 +28,8 @@
     },
     {
       "path": "3ds.json.gz",
-      "sha256": "fa0356f37b104dcf018e1204a2fcab53e594d4f7354e7d7ebe436ae373bcefd7",
-      "size_bytes": 377452
+      "sha256": "9e9a4e2cd5083bdc9d308db3bb6df5531bbd3e95d6c191c12b4ce2b52d37b299",
+      "size_bytes": 377799
     },
     {
       "path": "atari-2600.json.gz",
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "567f559c38b64b08f1ac2dcae7b403e73787319877b39163e30ff29ae4f7c513",
+      "sha256": "f8734a35f665f049a7a9c3718260315f59d15e9e40d565c17ee432baa3417c74",
       "size_bytes": 20988
     },
     {
@@ -93,8 +93,8 @@
     },
     {
       "path": "games/3ds.json.gz",
-      "sha256": "9bd5e92940d979e0981864497c4c62d65ab0b1909bd43d8a5d33c14b4abe74bb",
-      "size_bytes": 8836
+      "sha256": "00305e42f0eea5f3be84939d1500aa1393ba67910de1fc6d5edbf0618596fb25",
+      "size_bytes": 8897
     },
     {
       "path": "games/atari-2600.json.gz",
@@ -223,8 +223,8 @@
     },
     {
       "path": "games/ps3.json.gz",
-      "sha256": "fe7f3ce9e169939368a0a32c034f423f1ea1f21f17285d21ebe1fe339d57f822",
-      "size_bytes": 56887
+      "sha256": "6e3288fe2c5f371057740ad04fb11292ef1530e693c4e48d6acd8c88ad91d9d5",
+      "size_bytes": 56952
     },
     {
       "path": "games/ps4.json.gz",
@@ -398,8 +398,8 @@
     },
     {
       "path": "ps3.json.gz",
-      "sha256": "a5efa20c4f4e8e312aefc32080fc1d858882d733c7ad5589907f503e70237bb9",
-      "size_bytes": 2125761
+      "sha256": "178011c2cf1e1fbb25349073c94f4f625b8a62f01811f800a30f2fdddc03dade",
+      "size_bytes": 2126445
     },
     {
       "path": "ps4.json.gz",
@@ -818,8 +818,8 @@
     },
     {
       "path": "tags/ps3.json.gz",
-      "sha256": "dc1579d4d0bd8d5f29cbbd3a664af40928944d0d3dbb8b0b3533640487483346",
-      "size_bytes": 79589
+      "sha256": "47108380b167b2e418013ad8f41829e304f9d01f7c9c804bf11d4a81dc8907bb",
+      "size_bytes": 79626
     },
     {
       "path": "tags/ps4.json.gz",
