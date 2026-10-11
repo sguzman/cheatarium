@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "wii-mario-sports-mix-gecko",
+  "repository": "https://github.com/Wii-Patches/Mario-Sports-Mix-Patch",
+  "snapshot_commit": "f8b36ef25b98895fc8cca114390c063f25ec579d",
+  "license": "MIT (original quatric LICENSE, upstream attributed contributors retained)",
+  "archive_prefix": "archive/wii-mario-sports-mix-gecko/",
+  "scope_note": "Three native Wii Gecko controller INIs for Mario Sports Mix, preserving USA, Japan and Europe source disc-ID variants.",
+  "rights_note": "Retain quatric MIT LICENSE and README, including Vague Rant credit for Classic Controller logic and quatric's original GameCube controller work. Original compatibility/testing assertions are source statements, not Cheatarium tests; third-party rights are not independently established.",
+  "native_cheat_counts": {
+    "wii": 3
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/wii-mario-sports-mix-gecko/LICENSE",
+      "git_blob_sha": "0b736ad79a276ceafe490d58bba9fa788805a5fa"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/wii-mario-sports-mix-gecko/README.md",
+      "git_blob_sha": "8763299f2cae4facc8f052cb197a5d9c9b02c827"
+    },
+    {
+      "upstream_path": "codes/RMKE01.ini",
+      "archive_path": "archive/wii-mario-sports-mix-gecko/codes/RMKE01.ini",
+      "git_blob_sha": "a027cf61c061b9a33429196d86d8bdc6874e7bee"
+    },
+    {
+      "upstream_path": "codes/RMKJ01.ini",
+      "archive_path": "archive/wii-mario-sports-mix-gecko/codes/RMKJ01.ini",
+      "git_blob_sha": "dfe57fd340e22df93d0f8b66a26f5fdbf1a82c9c"
+    },
+    {
+      "upstream_path": "codes/RMKP01.ini",
+      "archive_path": "archive/wii-mario-sports-mix-gecko/codes/RMKP01.ini",
+      "git_blob_sha": "870c4e05fdc279521901d9fcb992a2c29bf5fc3f"
+    }
+  ]
+}
