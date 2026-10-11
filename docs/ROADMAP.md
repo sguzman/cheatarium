@@ -6,7 +6,7 @@
 
 Entire licensed/pinned game-cheat collections are the default unit of acquisition. Expand complete platform coverage before single-title work. Evaluate progress by new source files and new filename-derived game candidates (with duplicate and build ambiguity disclosed), never by commit count. Do not hand-curate isolated titles while material bulk coverage opportunities remain. Individual-title sources are a final gap-filling stage, justified only by measured coverage gaps. Rights-unresolved external data remains link-only until it can be redistributed; it must not be presented as acquired files.
 
-At the pinned Libretro revision, the first mapped expansion imported **835 `.cht` files** from MSX, MSX2, FinalBurn Neo arcade, DOS and Atari 8-bit. A second whole-directory pass maps the remaining seven upstream collections, led by **3,683 ZX Spectrum +3 files**, plus ChaiLove, PrBoom, PuzzleScript, TIC-80, Thomson MOTO and Wolfenstein 3D (**3,699 source files total**). These preserve source-system identities, including computer, arcade and engine categories, without pretending they are console ROMs. The automatic importer must commit and validate the second pass before its contents count as acquired. This completes discovery coverage of the **51 source directories** at the pinned Libretro snapshot; it does not complete console coverage outside Libretro.
+At the pinned Libretro revision, the first mapped expansion imported **835 `.cht` files** from MSX, MSX2, FinalBurn Neo arcade, DOS and Atari 8-bit. A second whole-directory pass imported the remaining seven upstream collections, led by **3,683 ZX Spectrum +3 files**, plus ChaiLove, PrBoom, PuzzleScript, TIC-80, Thomson MOTO and Wolfenstein 3D (**3,698 cheat files; TIC-80 also contains one README that is intentionally not counted as a cheat**). These preserve source-system identities, including computer, arcade and engine categories, without pretending they are console ROMs. The automatic importer committed and validated both complete batches (4,533 new files). This completes discovery coverage of the **51 source directories** at the pinned Libretro snapshot; it does not complete console coverage outside Libretro.
 
 ## Collection pipeline
 
@@ -20,13 +20,14 @@ At the pinned Libretro revision, the first mapped expansion imported **835 `.cht
 
 ## Acquisition status (2026-10-11)
 
-**33,272 original cheat files archived from 73 pinned source repositories**; **33,238 searchable across 44 console bundles** with **34 unassigned archived Dolphin INIs**. The published corpus contains **1,259,044 code-bearing source occurrences** and **665 indexed Nintendo 3DS original files**. The latest three sources add five native 3DS text files: FoxyXTN Settings-app CTRPF, three byte-identical Cracko298 Minecraft 3DS mob-cap files with distinct regional IDs, and one Cracko298 Minecraft 3DS save-control file. All source blobs matched their pinned Git SHA-1 values; the combined CI run passed source-inventory, Rust, index, distribution and consumer checks. Codes and compatibility remain untested; settings and save modifiers can be destructive. Console cheat acquisition, not unrelated app development, is the priority.
+**37,805 original cheat files archived from 73 pinned source repositories**; **37,771 searchable across 56 platform bundles** with **34 unassigned archived Dolphin INIs**. The published corpus contains **1,259,044 code-bearing source occurrences** and **665 indexed Nintendo 3DS original files**. The latest three sources add five native 3DS text files: FoxyXTN Settings-app CTRPF, three byte-identical Cracko298 Minecraft 3DS mob-cap files with distinct regional IDs, and one Cracko298 Minecraft 3DS save-control file. All source blobs matched their pinned Git SHA-1 values; the combined CI run passed source-inventory, Rust, index, distribution and consumer checks. Codes and compatibility remain untested; settings and save modifiers can be destructive. Console cheat acquisition, not unrelated app development, is the priority.
 
 ## Platform queue
 
 - [x] Register console/handheld platform IDs.
 - [x] Start Libretro NES and SNES proof-of-concept imports.
 - [x] Import 39 Libretro console/handheld source collections with pinned per-file provenance (23,382 files, 36 canonical console bundles).
+- [x] Bulk-import the 12 remaining mapped Libretro directories (4,533 original `.cht` files), completing all 51 cheat directories at the pinned revision; preserve computer, arcade and engine classifications distinctly from consoles.
 - [x] Add Libretro N64, Nintendo DS, Virtual Boy and FDS.
 - [x] Archive 644 Nintendo 3DS and 491 Nintendo Switch native cheat files from pinned Sharkive (1,135 new original source files; unverified).
 - [x] Index 3DS title-ID and Switch title/build-ID native cheat sections without inventing game names, build compatibility or activation semantics (12,274 + 6,150 source code sections).
