@@ -174,6 +174,45 @@
       "state": "link_only_rights_review",
       "repo_license": "MIT root; imported fixes credited to other code creators",
       "notes": "Reviewed commit 2501b58a9b1afb9e5d80fdf0898cbc24aa412461. The 19,703-byte patch/AAE75441.pnach source has GTA V Legacy/GTA San Andreas edits but comments explicitly credit spaceeinstein for a fix and README references SilentPatch. Host MIT cannot establish rights to all original contributed code; keep link-only pending file-level clearance."
+    },
+    {
+      "id": "deadpixel911-rr2psp-cwcheats",
+      "repo": "https://github.com/DeadPixel911/RR2PSP-Cwcheats",
+      "platforms": [
+        "psp"
+      ],
+      "formats": [
+        "cwcheat-ini"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No redistribution license identified",
+      "notes": "Repository README describes a self-made Ridge Racers 2 (UCES00422) PSP cheat collection; one native UCES00422.ini. No LICENSE or other explicit redistribution permission; link-only until author grants reuse rights."
+    },
+    {
+      "id": "willmidia-ape-escape-2-gadget-swap",
+      "repo": "https://github.com/WillMidia/ape-escape-2-quick-gadget-swap",
+      "platforms": [
+        "ps2"
+      ],
+      "formats": [
+        "pcsx2-pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No redistribution license identified",
+      "notes": "One original Ape Escape 2 NTSC-U quick-gadget swap PNACH and accompanying readme/patcher. No LICENSE; avoid redistribution despite apparently original authorship."
+    },
+    {
+      "id": "scottadkin-gt3-ntsc-patches",
+      "repo": "https://github.com/scottadkin/Gran-Turismo-3-NTSC-Patches",
+      "platforms": [
+        "ps2"
+      ],
+      "formats": [
+        "pcsx2-pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No redistribution license identified",
+      "notes": "74 native Gran Turismo 3 PCSX2 PNACH originals and revisions, including extensive bundled cheat recipes. No LICENSE or explicit redistribution permission; link-only pending rights review and duplicate/derivation audit."
     }
   ]
 }
