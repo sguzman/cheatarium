@@ -148,6 +148,32 @@
       "state": "link_only_rights_review",
       "repo_license": "MIT root, but upstream credits multiple independent cheat-code authors",
       "notes": "Reviewed master tree: 67 PS1 .cht source files and 48 PS2 .pnach source files. README explicitly says not all codes are original and credits Aero_, Arapapa, asasega and HugoPocked. Example PNACH files credit Silent as code author. Do not bulk rehost until per-file author licensing and permission are established; preserve author-specific labels and revisions."
+    },
+    {
+      "id": "cylfox-shadow-colossus-camera",
+      "repo": "https://github.com/cylfox/sotc-camera-patches",
+      "platforms": [
+        "ps2"
+      ],
+      "formats": [
+        "pcsx2-pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "no LICENSE/COPYING found in source root",
+      "notes": "Reviewed commit d6ea45ff8872d54c069317b077eaa4c1969cb4e1. Five original-looking Shadow of the Colossus PAL PNACHs under patches/, but no source redistribution grant found. Preserve as link-only until the author licenses them; no payload imported."
+    },
+    {
+      "id": "danielsantos-gtavlegacy-pnach",
+      "repo": "https://github.com/DanielSant0s/GTAVLStuff",
+      "platforms": [
+        "ps2"
+      ],
+      "formats": [
+        "pcsx2-pnach"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "MIT root; imported fixes credited to other code creators",
+      "notes": "Reviewed commit 2501b58a9b1afb9e5d80fdf0898cbc24aa412461. The 19,703-byte patch/AAE75441.pnach source has GTA V Legacy/GTA San Andreas edits but comments explicitly credit spaceeinstein for a fix and README references SilentPatch. Host MIT cannot establish rights to all original contributed code; keep link-only pending file-level clearance."
     }
   ]
 }
