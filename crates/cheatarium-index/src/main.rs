@@ -843,6 +843,7 @@ fn run() -> Result<()> {
         "wii-wario-land-gecko",
         "wii-country-returns-gecko",
         "wii-strikers-gecko",
+        "wii-fluidity-gecko",
         "gamecubing-gecko",
         "two-gifts-melee-random",
         "shaigem-melee-gecko",
@@ -950,6 +951,12 @@ fn run() -> Result<()> {
                         "gateshark-text",
                         original.trim_end_matches(".txt").to_owned(),
                     )
+                }
+                "wii-fluidity-gecko"
+                    if original.starts_with("codes/") && original.ends_with(".txt") =>
+                {
+                    // WiiWare native text filenames are source hints only, not verified titles.
+                    ("wii", "gecko-plain-text", original.to_owned())
                 }
                 "wii-country-returns-gecko" | "wii-strikers-gecko"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
@@ -1184,6 +1191,9 @@ fn run() -> Result<()> {
                 "goldhen-mc4" => parse_goldhen_mc4(&decoded),
                 "goldhen-shn" => parse_goldhen_shn(&decoded),
                 "goldhen-mc4-xml" => parse_goldhen_shn(&decoded),
+                "gecko-plain-text" if manifest_id == "wii-fluidity-gecko" => {
+                    parse_gecko_flat(&decoded)
+                }
                 "dolphin-ini" if manifest_id == "wii-country-returns-gecko" => {
                     parse_gecko_flat(&decoded)
                 }

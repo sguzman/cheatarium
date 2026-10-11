@@ -73,6 +73,7 @@ on:
       - "sources/wii-wario-land-gecko.json"
       - "sources/wii-country-returns-gecko.json"
       - "sources/wii-strikers-gecko.json"
+      - "sources/wii-fluidity-gecko.json"
       - "sources/gamecubing-gecko.json"
       - "sources/two-gifts-melee-random.json"
       - "sources/shaigem-melee-gecko.json"
@@ -157,6 +158,7 @@ on:
       - "archive/wii-wario-land-gecko/**"
       - "archive/wii-country-returns-gecko/**"
       - "archive/wii-strikers-gecko/**"
+      - "archive/wii-fluidity-gecko/**"
       - "archive/gamecubing-gecko/**"
       - "archive/two-gifts-melee-random/**"
       - "archive/shaigem-melee-gecko/**"
@@ -662,6 +664,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform wii --source-record-id 'wii-strikers-gecko:codes/R4QP01_rev2.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-strikers-gecko" and d["provenance"]["upstream_path"] == "codes/R4QP01_rev2.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-fluidity-gecko:codes/WFLE-gc.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-fluidity-gecko" and d["provenance"]["upstream_path"] == "codes/WFLE-gc.txt" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-fluidity-gecko:codes/WFLP-sharp.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-fluidity-gecko" and d["provenance"]["upstream_path"] == "codes/WFLP-sharp.txt" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'
