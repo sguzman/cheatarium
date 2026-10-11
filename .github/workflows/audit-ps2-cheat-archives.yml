@@ -1,0 +1,21 @@
+name: Audit complete pinned PS2 cheat ZIP collections
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-ps2-cheat-archives.yml"
+      - "tools/audit_ps2_cheat_archives.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Inspect entire pinned CheatDevicePS2 ZIP collections
+        run: python3 tools/audit_ps2_cheat_archives.py
