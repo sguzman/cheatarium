@@ -34,6 +34,21 @@
       "warnings": 0
     },
     {
+      "platform": "arcade-fbneo",
+      "artifact": "arcade-fbneo.json.gz",
+      "game_index_artifact": "games/arcade-fbneo.json.gz",
+      "repeat_index_artifact": "repeats/arcade-fbneo.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/arcade-fbneo.json.gz",
+      "tag_matches": 40,
+      "game_candidate_groups": 71,
+      "source_files": 71,
+      "code_fields": 0,
+      "native_memory_entries": 285,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "atari-2600",
       "artifact": "atari-2600.json.gz",
       "game_index_artifact": "games/atari-2600.json.gz",
@@ -79,6 +94,21 @@
       "warnings": 0
     },
     {
+      "platform": "atari-8bit",
+      "artifact": "atari-8bit.json.gz",
+      "game_index_artifact": "games/atari-8bit.json.gz",
+      "repeat_index_artifact": "repeats/atari-8bit.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/atari-8bit.json.gz",
+      "tag_matches": 2,
+      "game_candidate_groups": 5,
+      "source_files": 7,
+      "code_fields": 0,
+      "native_memory_entries": 16,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "atari-jaguar",
       "artifact": "atari-jaguar.json.gz",
       "game_index_artifact": "games/atari-jaguar.json.gz",
@@ -109,6 +139,21 @@
       "warnings": 0
     },
     {
+      "platform": "chailove",
+      "artifact": "chailove.json.gz",
+      "game_index_artifact": "games/chailove.json.gz",
+      "repeat_index_artifact": "repeats/chailove.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/chailove.json.gz",
+      "tag_matches": 0,
+      "game_candidate_groups": 1,
+      "source_files": 1,
+      "code_fields": 2,
+      "native_memory_entries": 0,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "colecovision",
       "artifact": "colecovision.json.gz",
       "game_index_artifact": "games/colecovision.json.gz",
@@ -120,6 +165,21 @@
       "source_files": 89,
       "code_fields": 0,
       "native_memory_entries": 179,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
+      "platform": "dos",
+      "artifact": "dos.json.gz",
+      "game_index_artifact": "games/dos.json.gz",
+      "repeat_index_artifact": "repeats/dos.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/dos.json.gz",
+      "tag_matches": 27,
+      "game_candidate_groups": 19,
+      "source_files": 19,
+      "code_fields": 22,
+      "native_memory_entries": 34,
       "decoded_snes_code_fields": 0,
       "warnings": 0
     },
@@ -289,6 +349,36 @@
       "warnings": 0
     },
     {
+      "platform": "msx",
+      "artifact": "msx.json.gz",
+      "game_index_artifact": "games/msx.json.gz",
+      "repeat_index_artifact": "repeats/msx.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/msx.json.gz",
+      "tag_matches": 158,
+      "game_candidate_groups": 552,
+      "source_files": 553,
+      "code_fields": 0,
+      "native_memory_entries": 4720,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
+      "platform": "msx2",
+      "artifact": "msx2.json.gz",
+      "game_index_artifact": "games/msx2.json.gz",
+      "repeat_index_artifact": "repeats/msx2.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/msx2.json.gz",
+      "tag_matches": 94,
+      "game_candidate_groups": 185,
+      "source_files": 185,
+      "code_fields": 0,
+      "native_memory_entries": 2954,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "n64",
       "artifact": "n64.json.gz",
       "game_index_artifact": "games/n64.json.gz",
@@ -379,6 +469,21 @@
       "warnings": 0
     },
     {
+      "platform": "prboom",
+      "artifact": "prboom.json.gz",
+      "game_index_artifact": "games/prboom.json.gz",
+      "repeat_index_artifact": "repeats/prboom.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/prboom.json.gz",
+      "tag_matches": 4,
+      "game_candidate_groups": 2,
+      "source_files": 2,
+      "code_fields": 27,
+      "native_memory_entries": 0,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "ps1",
       "artifact": "ps1.json.gz",
       "game_index_artifact": "games/ps1.json.gz",
@@ -450,6 +555,21 @@
       "source_files": 2660,
       "code_fields": 81113,
       "native_memory_entries": 5,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
+      "platform": "puzzlescript",
+      "artifact": "puzzlescript.json.gz",
+      "game_index_artifact": "games/puzzlescript.json.gz",
+      "repeat_index_artifact": "repeats/puzzlescript.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/puzzlescript.json.gz",
+      "tag_matches": 0,
+      "game_candidate_groups": 1,
+      "source_files": 1,
+      "code_fields": 2,
+      "native_memory_entries": 0,
       "decoded_snes_code_fields": 0,
       "warnings": 0
     },
@@ -590,6 +710,36 @@
       "warnings": 1
     },
     {
+      "platform": "thomson-moto",
+      "artifact": "thomson-moto.json.gz",
+      "game_index_artifact": "games/thomson-moto.json.gz",
+      "repeat_index_artifact": "repeats/thomson-moto.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/thomson-moto.json.gz",
+      "tag_matches": 4,
+      "game_candidate_groups": 5,
+      "source_files": 5,
+      "code_fields": 0,
+      "native_memory_entries": 8,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
+      "platform": "tic80",
+      "artifact": "tic80.json.gz",
+      "game_index_artifact": "games/tic80.json.gz",
+      "repeat_index_artifact": "repeats/tic80.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/tic80.json.gz",
+      "tag_matches": 1,
+      "game_candidate_groups": 5,
+      "source_files": 5,
+      "code_fields": 26,
+      "native_memory_entries": 0,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "virtual-boy",
       "artifact": "virtual-boy.json.gz",
       "game_index_artifact": "games/virtual-boy.json.gz",
@@ -635,6 +785,21 @@
       "warnings": 0
     },
     {
+      "platform": "wolf3d",
+      "artifact": "wolf3d.json.gz",
+      "game_index_artifact": "games/wolf3d.json.gz",
+      "repeat_index_artifact": "repeats/wolf3d.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/wolf3d.json.gz",
+      "tag_matches": 2,
+      "game_candidate_groups": 1,
+      "source_files": 1,
+      "code_fields": 0,
+      "native_memory_entries": 9,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
       "platform": "wonderswan",
       "artifact": "wonderswan.json.gz",
       "game_index_artifact": "games/wonderswan.json.gz",
@@ -660,6 +825,21 @@
       "game_candidate_groups": 9,
       "source_files": 9,
       "code_fields": 15,
+      "native_memory_entries": 0,
+      "decoded_snes_code_fields": 0,
+      "warnings": 0
+    },
+    {
+      "platform": "zx-spectrum",
+      "artifact": "zx-spectrum.json.gz",
+      "game_index_artifact": "games/zx-spectrum.json.gz",
+      "repeat_index_artifact": "repeats/zx-spectrum.json.gz",
+      "repeat_groups": 0,
+      "tag_index_artifact": "tags/zx-spectrum.json.gz",
+      "tag_matches": 5849,
+      "game_candidate_groups": 3682,
+      "source_files": 3683,
+      "code_fields": 23414,
       "native_memory_entries": 0,
       "decoded_snes_code_fields": 0,
       "warnings": 0
