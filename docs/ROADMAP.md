@@ -8,13 +8,14 @@ Entire licensed/pinned game-cheat collections are the default unit of acquisitio
 
 At the pinned Libretro revision, the first mapped expansion imported **835 `.cht` files** from MSX, MSX2, FinalBurn Neo arcade, DOS and Atari 8-bit. A second whole-directory pass imported the remaining seven upstream collections, led by **3,683 ZX Spectrum +3 files**, plus ChaiLove, PrBoom, PuzzleScript, TIC-80, Thomson MOTO and Wolfenstein 3D (**3,698 cheat files; TIC-80 also contains one README that is intentionally not counted as a cheat**). These preserve source-system identities, including computer, arcade and engine categories, without pretending they are console ROMs. The automatic importer committed and validated both complete batches (4,533 new files). This completes discovery coverage of the **51 source directories** at the pinned Libretro snapshot; it does not complete console coverage outside Libretro.
 
-## Next console bulk acquisition
-The GPL-3.0-licensed root670 CheatDevicePS2 source contains a **6,375,204-byte original game-cheat database**, mechanically audited as **1,483 distinct source game sections** and **200,941 source-native hexadecimal device-code lines**. Acquire the *entire* file byte-for-byte from pinned commit `7d9c525a`, retaining README/LICENSE, then deterministically index each source-defined game section and its contiguous code groups. These numbers are source occurrences, not unique executable effects or verified ROM matches. GPL project licensing does not independently clear earlier historic cheat creators' rights.
+## Console bulk acquisition — completed in this pass
 
-The complete pinned rinCheat repository Vita cheat databases include **58 original native text/Lua files for 57 source Vita game IDs** (7 runtime memory files and 51 save-edit Lua programs). Import and index the full two-directory source, preserving original GPLv3 notice and contributor attribution. The Lua scripts are save editors, not independently verified in-game memory cheats; index their raw source without executing or normalizing code. A bulk workflow must complete and validate them before they count as acquired.
+- [x] PS5: etaHEN pinned GPLv3-original-source snapshot `ef295511`, **75 PPSA cheat files representing 56 original title IDs**; native JSON/SHN/MC4 and original project notices retained, distinct from already archived PS4 GoldHEN files.
+- [x] PS Vita: rinCheat pinned GPLv3 source `d17fd2a7`, **58 original files across 57 Vita title IDs** (7 runtime-memory code sources, 51 save-editor Lua sources); no Lua is executed by the indexer.
+- [x] PS2: root670 CheatDevicePS2 pinned GPLv3 project `7d9c525a`, complete **6,375,204-byte source database** containing **1,483 original source game sections** and **200,941 native hexadecimal code lines**. Its single original data file is preserved unchanged; the indexer deterministically exposes **1,483 separate source-game records**. Device-code group counts must not be confused with hex line counts or empirical cheat verification.
+- [x] Archive validation, index generation, distribution integrity and offline-client smoke tests completed for all three imports.
 
-
-The etaHEN PS5 database (pinned `ef295511`, GPL-3.0 repository license with original-author rights caveats) exposes **75 native PPSA files covering 56 source-labeled PS5 title IDs** in one complete format-filtered acquisition, excluding duplicate PS4 GoldHEN files. A reproducible importer/CI workflow must acquire and validate the entire subset before marking it complete. Source labels are not independently verified game-build compatibility or effects.
+**Standing rule:** all further acquisitions are bulk-first. The next target is entire eligible console collections that substantially improve breadth and title coverage, particularly under-covered Xbox 360, GameCube/Wii, PS2, Switch and Vita libraries. Keep rights-unresolved sources link-only and do not report their payloads as acquired. Manual single-game work is reserved for the final coverage-gap stage.
 
 ## Collection pipeline
 
@@ -28,7 +29,7 @@ The etaHEN PS5 database (pinned `ef295511`, GPL-3.0 repository license with orig
 
 ## Acquisition status (2026-10-11)
 
-**37,805 original cheat files archived from 73 pinned source repositories**; **37,771 searchable across 56 platform bundles** with **34 unassigned archived Dolphin INIs**. The published corpus contains **1,259,044 code-bearing source occurrences** and **665 indexed Nintendo 3DS original files**. The latest three sources add five native 3DS text files: FoxyXTN Settings-app CTRPF, three byte-identical Cracko298 Minecraft 3DS mob-cap files with distinct regional IDs, and one Cracko298 Minecraft 3DS save-control file. All source blobs matched their pinned Git SHA-1 values; the combined CI run passed source-inventory, Rust, index, distribution and consumer checks. Codes and compatibility remain untested; settings and save modifiers can be destructive. Console cheat acquisition, not unrelated app development, is the priority.
+**37,939 actual original cheat-bearing files from 76 pinned collections**. The indexed distribution contains **39,387 search records across 58 platform bundles**, including 1,483 game-section records from *one physical original* CheatDevicePS2 text file, plus **32,826 unverified filename/source-defined candidate game groups**, **1,439,838 source code-group entries** and **21,322 native memory entries**. Exactly 34 archived Dolphin INIs remain unassigned. New PS2, PS5 and Vita source data passed integrity validation and reproducible index/consumer CI. Historic third-party author rights and game-specific compatibility are not independently determined. No real-world cheat execution verification is claimed.
 
 ## Platform queue
 

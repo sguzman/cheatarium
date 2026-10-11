@@ -2,6 +2,8 @@
 
 Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust client in `crates/cheatarium-client`. It is not an emulator and does not modify emulator repositories.
 
+The 58-platform bulk distribution includes PS5-native etaHEN, original PS Vita rinCheat runtime text/save-editor Lua, and complete source-declared PS2 CheatDevice game sections. PS2's 1,483 separately searchable records come from **one original 6.4 MB source file** and retain the same original provenance hash; per-record source IDs include exact original game-section ordinals. The PS2 parser groups contiguous native hexadecimal device-code lines under source labels; code-group counts are not raw line counts, distinct validated effects, or evidence that a code executes. Vita Lua is indexed as inert original source data, never executed. Each imported record remains unverified, and actual game-build compatibility must be established separately.
+
 ## SNES files
 
 - `generated/v1/catalog.json`: the machine-readable console catalog.
