@@ -213,6 +213,60 @@
       "state": "link_only_rights_review",
       "repo_license": "No redistribution license identified",
       "notes": "74 native Gran Turismo 3 PCSX2 PNACH originals and revisions, including extensive bundled cheat recipes. No LICENSE or explicit redistribution permission; link-only pending rights review and duplicate/derivation audit."
+    },
+    {
+      "id": "kittymaya-gecko-codes",
+      "repo": "https://github.com/kittymaya/gecko-codes",
+      "platforms": [
+        "wii",
+        "gamecube"
+      ],
+      "formats": [
+        "gecko-code-text",
+        "powerpc-assembly"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "Source description self-attributes the codes, but no LICENSE or explicit redistribution permission was found.",
+      "notes": "Two short source-authored Wii/GameCube Gecko code.txt originals with corresponding source.asm and README files, for HAPE and RMCE. Review original authorship and request a public license before rehosting."
+    },
+    {
+      "id": "asaenzm-gow-psp-cheats",
+      "repo": "https://github.com/asaenzm1327-svg/GOW_PSP_Cheats_Pack",
+      "platforms": [
+        "psp"
+      ],
+      "formats": [
+        "psp-cwcheat-ini"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "No root LICENSE or explicit redistribution permission found.",
+      "notes": "Four labeled PSP CWCheat INIs for God of War Chains of Olympus and Ghost of Sparta (English and Spanish labels). Authorship/rights for individual cheats need verification before archival; no payload imported."
+    },
+    {
+      "id": "asaenzm-resistance-psp-cheats",
+      "repo": "https://github.com/asaenzm1327-svg/Resistance_Retribution_Cheats_Pack",
+      "platforms": [
+        "psp"
+      ],
+      "formats": [
+        "psp-cwcheat-ini"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "No root LICENSE or explicit redistribution permission found.",
+      "notes": "Two bilingual PSP CWCheat INI source files; investigate individual code authorship and repository reuse terms before copying."
+    },
+    {
+      "id": "xenia-canary-game-patches",
+      "repo": "https://github.com/xenia-canary/game-patches",
+      "platforms": [
+        "xbox360"
+      ],
+      "formats": [
+        "xenia-game-patches"
+      ],
+      "state": "link_only_rights_review",
+      "rights": "No repository-wide LICENSE reported on review; multi-author game patch provenance must be assessed per file.",
+      "notes": "Potential Xbox 360 game patch source collection, not all patch entries are cheats. Keep link-only until code authorship, native patch types and redistribution terms are verified."
     }
   ]
 }
