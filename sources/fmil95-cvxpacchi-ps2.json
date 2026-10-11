@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "fmil95-cvxpacchi-ps2",
+  "repository": "https://github.com/fmil95/cvxpacchi",
+  "snapshot_commit": "30bf6bb1a60070b128c3b058d432a160b5e473cd",
+  "license": "MIT (Federico Milesi / Frozen Burnside; original LICENSE retained)",
+  "archive_prefix": "archive/fmil95-cvxpacchi-ps2/",
+  "scope_note": "One original PlayStation 2 PCSX2 PNACH file with author-written Resident Evil: Code Veronica X (US SLUS-20184) motion-blur, fog and text rendering controls. Original README and MIT LICENSE preserved; native PNACH filename 24036809.pnach retained.",
+  "rights_note": "The original PNACH attributes Frozen Burnside, consistent with fmil95's GitHub author identity, and the accompanying MIT LICENSE identifies Federico Milesi. No game's executable or assets are included. Source states US release target; cheat effects and CRC/build suitability are unverified by Cheatarium.",
+  "native_cheat_counts": {
+    "ps2": 1
+  },
+  "files": [
+    {
+      "upstream_path": "24036809.pnach",
+      "archive_path": "archive/fmil95-cvxpacchi-ps2/24036809.pnach",
+      "git_blob_sha": "41281f19b4caac9284c89116ea18b8e5bff0da73"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/fmil95-cvxpacchi-ps2/LICENSE",
+      "git_blob_sha": "85bd735fe8d8ee685284427b31d6b1c22525a8fd"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/fmil95-cvxpacchi-ps2/README.md",
+      "git_blob_sha": "2e504944f4a739560ae6bfdbe1cce1f84a4f0199"
+    }
+  ]
+}

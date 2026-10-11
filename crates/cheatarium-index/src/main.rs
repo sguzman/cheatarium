@@ -798,6 +798,7 @@ fn run() -> Result<()> {
         "igor-misc-pcsx2-cheats",
         "aerowidescreen-pcsx2-cheats",
         "salustlab-ps2-mods",
+        "fmil95-cvxpacchi-ps2",
         "made-in-slovakia-ratchet-ps2",
         "xan1242-sonic-unleashed-ps2",
         "xan1242-nfsmw-opm-demo-ps2",
@@ -861,6 +862,7 @@ fn run() -> Result<()> {
                 "igor-misc-pcsx2-cheats"
                 | "aerowidescreen-pcsx2-cheats"
                 | "salustlab-ps2-mods"
+                | "fmil95-cvxpacchi-ps2"
                 | "made-in-slovakia-ratchet-ps2"
                 | "xan1242-sonic-unleashed-ps2"
                 | "xan1242-nfsmw-opm-demo-ps2"
