@@ -1,0 +1,89 @@
+gametitle=Driven (SLUS-20239)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901C8064,extended,0C07E0D6
+
+[Have All Levels (Story Mode)]
+patch=1,EE,103CBD3C,extended,0000FFFF
+
+[Have All Racers]
+patch=1,EE,103CBE0C,extended,0000FFFF
+
+[Have Arcade Modes]
+patch=1,EE,003CBD70,extended,000000FF
+
+[Infinite Lives]
+patch=1,EE,1031E274,extended,00000063
+
+[Always Low Time]
+patch=1,EE,4031E614,extended,00030001
+patch=1,EE,00000000,extended,00000000
+patch=1,EE,4032B454,extended,00040084
+patch=1,EE,00000000,extended,00000000
+
+[Always In The Zone]
+patch=1,EE,2031E2D4,extended,000000C8
+
+[Press {R1}+{R2} To Be On Lap 4]
+patch=1,EE,E002F5FF,extended,003169C2
+patch=1,EE,2031E410,extended,00000003
+patch=1,EE,2031E440,extended,00000003
+
+[Press {L1}+{L2} To Be On Lap 8]
+patch=1,EE,E002FAFF,extended,003169C2
+patch=1,EE,2031E410,extended,00000007
+patch=1,EE,2031E440,extended,00000007
+
+[2 Laps]
+patch=1,EE,1031E40C,extended,00000002
+
+[3 Laps]
+patch=1,EE,1031E40C,extended,00000003
+
+[4 Laps]
+patch=1,EE,1031E40C,extended,00000004
+
+[5 Laps]
+patch=1,EE,1031E40C,extended,00000005
+
+[10 Laps]
+patch=1,EE,1031E40C,extended,0000000A
+
+[None]
+patch=1,EE,103CBB9C,extended,00000000
+
+[1 Car]
+patch=1,EE,103CBB9C,extended,00000001
+
+[2 Cars]
+patch=1,EE,103CBB9C,extended,00000002
+
+[3 Cars]
+patch=1,EE,103CBB9C,extended,00000003
+
+[4 Cars]
+patch=1,EE,103CBB9C,extended,00000004
+
+[5 Cars]
+patch=1,EE,103CBB9C,extended,00000005
+
+[6 Cars]
+patch=1,EE,103CBB9C,extended,00000006
+
+[7 Cars]
+patch=1,EE,103CBB9C,extended,00000007
+
+[8 Cars]
+patch=1,EE,103CBB9C,extended,00000008
+
+[9 Cars]
+patch=1,EE,103CBB9C,extended,00000009
+
+[10 Cars]
+patch=1,EE,103CBB9C,extended,0000000A
+
+[11 Cars]
+patch=1,EE,103CBB9C,extended,0000000B

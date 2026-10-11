@@ -1,0 +1,19 @@
+gametitle=IGPX Immortal Grand Prix (SLUS-21430)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9025BB40,extended,00832021
+
+[Infinite Boost]
+patch=1,EE,201738C8,extended,00000000
+
+[Max Points]
+patch=1,EE,204B20E4,extended,000F423F
+
+[Buying Items Doesnt Decrease Points]
+patch=1,EE,201184BC,extended,00000000
+
+[Buying Items Increases Points]
+patch=1,EE,201184B4,extended,00701821

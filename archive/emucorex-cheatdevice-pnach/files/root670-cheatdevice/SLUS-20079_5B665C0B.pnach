@@ -1,0 +1,36 @@
+gametitle=Dynasty Warriors 2 (SLUS-20079)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9031236C,extended,0C0C8886
+
+[Disable FMV]
+patch=1,EE,20313E98,extended,24020001
+
+[Have All Characters]
+patch=1,EE,203A78CC,extended,00000001
+
+[Stage Select]
+patch=1,EE,203A78D0,extended,00000001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,A546000C
+patch=1,EE,200C0224,extended,080B0D80
+patch=1,EE,200C0228,extended,8547000C
+patch=1,EE,202C35F8,extended,08030088
+
+[Infinite Musou (On Fillup)]
+patch=1,EE,2022B958,extended,00000000
+
+[Can Use Musou All The Time]
+patch=1,EE,2022B7C0,extended,00000000
+patch=1,EE,2022B950,extended,95220010
+
+[Infinite Arrows]
+patch=1,EE,0033AF02,extended,00000063
+
+[Idiot AI]
+patch=1,EE,2023B07C,extended,00000000
+patch=1,EE,2023B090,extended,00000000

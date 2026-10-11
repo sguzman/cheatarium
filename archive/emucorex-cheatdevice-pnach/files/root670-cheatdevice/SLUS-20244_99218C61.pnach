@@ -1,0 +1,215 @@
+gametitle=Robotech-Battlecry (SLUS-20244)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9028E99C,extended,0C0A79D8
+
+[Infinite Health]
+patch=1,EE,20215C7C,extended,3C0246EA
+patch=1,EE,20215C84,extended,AC820174
+
+[Infinite Primary Weapon]
+patch=1,EE,20195784,extended,00000000
+
+[Infinite Secondary Weapon]
+patch=1,EE,20193D30,extended,00000000
+
+[Infinite Special Ability]
+patch=1,EE,2024AD94,extended,00000000
+
+[Infinite Health (Most Escorts)]
+patch=1,EE,200C0220,extended,3C010146
+patch=1,EE,200C0224,extended,0061082B
+patch=1,EE,200C0228,extended,10200005
+patch=1,EE,200C022C,extended,3C0246EA
+patch=1,EE,200C0230,extended,AC620174
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,00000000
+patch=1,EE,201863B0,extended,0C030088
+
+[Train Depot]
+patch=1,EE,002BBB54,extended,00000021
+
+[Flood City]
+patch=1,EE,002BBBFC,extended,00000021
+
+[Bursting Point]
+patch=1,EE,002BBCA4,extended,00000021
+
+[Graveyard]
+patch=1,EE,002BBD4C,extended,00000021
+
+[Graystone]
+patch=1,EE,002BBDF4,extended,00000021
+
+[Factory]
+patch=1,EE,002BBE9C,extended,00000021
+
+[Debris Field]
+patch=1,EE,002BBF44,extended,00000021
+
+[City In Space]
+patch=1,EE,002BBFEC,extended,00000021
+
+[Chapter 1-Boobytrap]
+patch=1,EE,002BA7F8,extended,00000001
+
+[Chapter 1-Countdown]
+patch=1,EE,002BA84C,extended,00000001
+
+[Chapter 1-Busting Point]
+patch=1,EE,002BA8A0,extended,00000001
+
+[Chapter 1-Force Of Arms]
+patch=1,EE,002BA948,extended,00000001
+
+[Chapter 2-Ambush Hills]
+patch=1,EE,002BA9F0,extended,00000001
+
+[Chapter 2-Trouble In Graystone]
+patch=1,EE,002BAA44,extended,00000001
+
+[Chapter 2-Special Delivery]
+patch=1,EE,002BAA98,extended,00000001
+
+[Chapter 2-Destroids In Danger]
+patch=1,EE,002BAAEC,extended,00000001
+
+[Chapter 2-Unwanted Guest]
+patch=1,EE,002BAB40,extended,00000001
+
+[Chapter 2-Dark Skies]
+patch=1,EE,002BAB94,extended,00000001
+
+[Chapter 2-Flood City]
+patch=1,EE,002BAC3C,extended,00000001
+patch=1,EE,002BAC90,extended,00000001
+
+[Chapter 2-Knife's Edge]
+patch=1,EE,002BACE4,extended,00000001
+
+[Chapter 3-Rebel Revenge]
+patch=1,EE,002BAD38,extended,00000001
+
+[Chapter 3-Sabotage]
+patch=1,EE,002BAD8C,extended,00000001
+
+[Chapter 3-Call To Arms]
+patch=1,EE,002BADE0,extended,00000001
+
+[Chapter 3-Power Struggle]
+patch=1,EE,002BAE34,extended,00000001
+
+[Chapter 3-Cat Scan]
+patch=1,EE,002BAE88,extended,00000001
+
+[Chapter 3-Trial By Fire]
+patch=1,EE,002BAEDC,extended,00000001
+
+[Chapter 3-Hostage Crisis]
+patch=1,EE,002BAF30,extended,00000001
+
+[Chapter 3-Daring Rescue]
+patch=1,EE,002BAF84,extended,00000001
+
+[Chapter 3-Party Crashers]
+patch=1,EE,002BAFD8,extended,00000001
+
+[Chapter 3-Road To Ruin]
+patch=1,EE,002BB02C,extended,00000001
+
+[Chapter 3-Deadly Storm]
+patch=1,EE,002BB080,extended,00000001
+
+[Chapter 3-Graveyard]
+patch=1,EE,002BB0D4,extended,00000001
+
+[Chapter 3-Little Mesa Massacre]
+patch=1,EE,002BB128,extended,00000001
+
+[Chapter 3-The Enemy Within]
+patch=1,EE,002BB17C,extended,00000001
+
+[Chapter 4-Goodbye Graystone]
+patch=1,EE,002BB1D0,extended,00000001
+
+[Chapter 4-Narrow Escape]
+patch=1,EE,002BB224,extended,00000001
+
+[Chapter 4-Burning Bridges]
+patch=1,EE,002BB278,extended,00000001
+
+[Chapter 4-Double Agent]
+patch=1,EE,002BB2CC,extended,00000001
+
+[Chapter 4-Hidden Agenda]
+patch=1,EE,002BB320,extended,00000001
+
+[Chapter 4-Mutiny]
+patch=1,EE,002BB374,extended,00000001
+
+[Chapter 4-Backlash]
+patch=1,EE,002BB3C8,extended,00000001
+
+[Chapter 4-Lightning Strike]
+patch=1,EE,002BB41C,extended,00000001
+
+[Chapter 4-None Shall Pass]
+patch=1,EE,002BB470,extended,00000001
+
+[Chapter 4-Vengeance]
+patch=1,EE,002BB4C4,extended,00000001
+
+[Chapter 4-Cat And Mouse]
+patch=1,EE,002BB518,extended,00000001
+
+[Chapter 4-Stormy Friendship]
+patch=1,EE,002BB56C,extended,00000001
+
+[Chapter 4-Defiance]
+patch=1,EE,002BB5C0,extended,00000001
+
+[Chapter 4-Attrition]
+patch=1,EE,002BB614,extended,00000001
+
+[Chapter 5-Besieged]
+patch=1,EE,002BB668,extended,00000001
+
+[Chapter 5-Showdown]
+patch=1,EE,002BB6BC,extended,00000001
+
+[Chapter 5-No Escape]
+patch=1,EE,002BB710,extended,00000001
+
+[Chapter 5-Warpath]
+patch=1,EE,002BB764,extended,00000001
+
+[Chapter 5-Welcome To Zen City]
+patch=1,EE,002BB7B8,extended,00000001
+
+[Chapter 5-To The Death]
+patch=1,EE,002BB80C,extended,00000001
+
+[Training-Practice 1]
+patch=1,EE,002BB860,extended,00000001
+
+[Training-Bursting Point]
+patch=1,EE,002BB8B4,extended,00000001
+
+[Training-Practice 2]
+patch=1,EE,002BB908,extended,00000001
+
+[Training-Bursting Point 2]
+patch=1,EE,002BB95C,extended,00000001
+
+[Training-Practice 3]
+patch=1,EE,002BB9B0,extended,00000001
+
+[Training-Bursting Point 3]
+patch=1,EE,002BBA04,extended,00000001
+
+[Have All Awards]
+patch=1,EE,4035AC8C,extended,00090001
+patch=1,EE,00030003,extended,00000000

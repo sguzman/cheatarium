@@ -1,0 +1,250 @@
+gametitle=Y's-The Ark Of Napishtim (SLUS-20980)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011BC9C,extended,0C04858C
+
+[Max Gold]
+patch=1,EE,202B5CD8,extended,000F423F
+
+[Max Emel]
+patch=1,EE,202B5EBC,extended,000F423F
+
+[Infinite Health]
+patch=1,EE,202B5CB4,extended,4479C000
+
+[Level 99]
+patch=1,EE,202B5CDC,extended,00000063
+
+[Level 999]
+patch=1,EE,202B5CDC,extended,000003E7
+
+[Long Sword]
+patch=1,EE,202B5D0C,extended,00000001
+
+[Livart]
+patch=1,EE,202B5D10,extended,00000001
+
+[Blirante]
+patch=1,EE,202B5D14,extended,00000001
+
+[Ericcil]
+patch=1,EE,202B5D18,extended,00000001
+
+[All Swords]
+patch=1,EE,402B5D0C,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Buckler]
+patch=1,EE,202B5D20,extended,00000001
+
+[Round Shield]
+patch=1,EE,202B5D24,extended,00000001
+
+[Rehdam Shield]
+patch=1,EE,202B5D28,extended,00000001
+
+[Kite Shield]
+patch=1,EE,202B5D2C,extended,00000001
+
+[Galba Shield]
+patch=1,EE,202B5D30,extended,00000001
+
+[Emelas Shield]
+patch=1,EE,202B5D34,extended,00000001
+
+[All Shields]
+patch=1,EE,402B5D20,extended,00060001
+patch=1,EE,00000001,extended,00000000
+
+[Hard Leather]
+patch=1,EE,202B5D38,extended,00000001
+
+[Ring Mail]
+patch=1,EE,202B5D3C,extended,00000001
+
+[Bandit's Mail]
+patch=1,EE,202B5D40,extended,00000001
+
+[Breast Plate]
+patch=1,EE,202B5D44,extended,00000001
+
+[Galba Armor]
+patch=1,EE,202B5D48,extended,00000001
+
+[Emelas Armor]
+patch=1,EE,202B5D4C,extended,00000001
+
+[All Armor]
+patch=1,EE,402B5D38,extended,00060001
+patch=1,EE,00000001,extended,00000000
+
+[Titonuts]
+patch=1,EE,202B5D50,extended,00000063
+
+[Honey]
+patch=1,EE,202B5D54,extended,00000063
+
+[Herb]
+patch=1,EE,202B5D58,extended,00000063
+
+[Wild Fowl Meat]
+patch=1,EE,202B5D5C,extended,00000063
+
+[Blue Potion]
+patch=1,EE,202B5D60,extended,00000063
+
+[Capla Water]
+patch=1,EE,202B5D64,extended,00000063
+
+[Seed Of Vitality]
+patch=1,EE,202B5D68,extended,00000063
+
+[Seed Of Power]
+patch=1,EE,202B5D6C,extended,00000063
+
+[Seed Of Defense]
+patch=1,EE,202B5D70,extended,00000063
+
+[Kamio Flower]
+patch=1,EE,202B5D74,extended,00000063
+
+[Oroi Fruit]
+patch=1,EE,202B5D78,extended,00000063
+
+[Limurian Mushroom]
+patch=1,EE,202B5D7C,extended,00000063
+
+[All Tools]
+patch=1,EE,402B5D50,extended,000C0001
+patch=1,EE,00000063,extended,00000000
+
+[Wooden Bracelet]
+patch=1,EE,202B5D80,extended,00000001
+
+[Emel Mallet]
+patch=1,EE,202B5D84,extended,00000001
+
+[Bloody Nail]
+patch=1,EE,202B5D88,extended,00000001
+
+[Lucky Silver Coin]
+patch=1,EE,202B5D8C,extended,00000001
+
+[Bell Of Silence]
+patch=1,EE,202B5D90,extended,00000001
+
+[Thief's Glove]
+patch=1,EE,202B5D94,extended,00000001
+
+[Rainbow Fragment]
+patch=1,EE,202B5D98,extended,00000001
+
+[Eldian Orb]
+patch=1,EE,202B5D9C,extended,00000001
+
+[Starlight Medal]
+patch=1,EE,202B5DA0,extended,00000001
+
+[Silver Amulet]
+patch=1,EE,202B5DA4,extended,00000001
+
+[Emelas Glove]
+patch=1,EE,202B5DA8,extended,00000001
+
+[Emelas Guard]
+patch=1,EE,202B5DAC,extended,00000001
+
+[Emelas Crown]
+patch=1,EE,202B5DB0,extended,00000001
+
+[Galba Hand]
+patch=1,EE,202B5DB4,extended,00000001
+
+[Runed Earring]
+patch=1,EE,202B5DB8,extended,00000001
+
+[Magic Talisman]
+patch=1,EE,202B5DBC,extended,00000001
+
+[Heavy Belt]
+patch=1,EE,202B5DC0,extended,00000001
+
+[Daylight Stone]
+patch=1,EE,202B5DC4,extended,00000001
+
+[Sylphen Boots]
+patch=1,EE,202B5DC8,extended,00000001
+
+[Winged God Emblem]
+patch=1,EE,202B5DCC,extended,00000001
+
+[All Accessories]
+patch=1,EE,402B5D80,extended,00140001
+patch=1,EE,00000001,extended,00000000
+
+[Mirror Of Zeme]
+patch=1,EE,202B5DD0,extended,00000001
+
+[Mirror Fragment-Grana-Vallis]
+patch=1,EE,202B5DD4,extended,00000001
+
+[Mirror Fragment-Ruins Of Amnesia]
+patch=1,EE,202B5DD8,extended,00000001
+
+[Mirror Fragment-Limewater Cave]
+patch=1,EE,202B5DDC,extended,00000001
+
+[Blue Tabulas]
+patch=1,EE,202B5DE0,extended,00000001
+
+[Red Tabulas]
+patch=1,EE,202B5DE4,extended,00000001
+
+[Gold Tabulas]
+patch=1,EE,202B5DE8,extended,00000001
+
+[Black Tabulas]
+patch=1,EE,202B5DEC,extended,00000001
+
+[White Tabulas]
+patch=1,EE,202B5DF0,extended,00000001
+
+[Wing Of Alma]
+patch=1,EE,202B5DF4,extended,00000001
+
+[Letter To Baslam]
+patch=1,EE,202B5DF8,extended,00000001
+
+[Gratios Talisman]
+patch=1,EE,202B5DFC,extended,00000001
+
+[Key Of Romun]
+patch=1,EE,202B5E00,extended,00000001
+
+[Admiral's Key]
+patch=1,EE,202B5E04,extended,00000001
+
+[Pikkard]
+patch=1,EE,202B5E08,extended,00000001
+
+[Wyvern Medaille]
+patch=1,EE,202B5E0C,extended,00000001
+
+[Rose's Influence]
+patch=1,EE,202B5E10,extended,00000001
+
+[Pirate's Firewater]
+patch=1,EE,202B5E14,extended,00000001
+
+[Gold Locket]
+patch=1,EE,202B5E18,extended,00000001
+
+[Map Of Canaan]
+patch=1,EE,202B5E1C,extended,00000001
+
+[All Event Items]
+patch=1,EE,402B5DD0,extended,00140001
+patch=1,EE,00000001,extended,00000000

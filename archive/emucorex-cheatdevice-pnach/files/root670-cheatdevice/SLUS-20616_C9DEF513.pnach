@@ -1,0 +1,239 @@
+gametitle=Virtua Fighter 4-Evolution (SLUS-20616)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90113A2C,extended,0C048A86
+
+[Infinite Time]
+patch=1,EE,20737718,extended,44E10000
+
+[Always Low Overall Time]
+patch=1,EE,20737710,extended,00000000
+
+[Access Dural]
+patch=1,EE,2023DE34,extended,24020001
+
+[Start On Final Stage (Arcade Mode)]
+patch=1,EE,D0737788,extended,00000000
+patch=1,EE,10737788,extended,00000009
+
+[Start On Bonus Stage (Arcade Mode)]
+patch=1,EE,D0737788,extended,00000000
+patch=1,EE,10737788,extended,0000000A
+
+[Infinite Health P1]
+patch=1,EE,10732910,extended,000000C9
+
+[No Health P1]
+patch=1,EE,10732910,extended,00000000
+
+[75% Health P1]
+patch=1,EE,D0732910,extended,000000C9
+patch=1,EE,10732910,extended,00000096
+
+[50% Health P1]
+patch=1,EE,D0732910,extended,000000C9
+patch=1,EE,10732910,extended,00000064
+
+[25% Health P1]
+patch=1,EE,D0732910,extended,000000C9
+patch=1,EE,10732910,extended,00000032
+
+[1-Hit Death P1]
+patch=1,EE,D0732910,extended,000000C9
+patch=1,EE,10732910,extended,00000001
+
+[P1 Never Wins]
+patch=1,EE,00737750,extended,00000000
+
+[P1 Starts With 1 Win]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737750,extended,00000001
+
+[P1 Starts With 2 Wins]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737750,extended,00000002
+
+[P1 Starts With 3 Wins]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737750,extended,00000003
+
+[P1 Starts With 4 Wins]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737750,extended,00000004
+
+[Infinite Health P2]
+patch=1,EE,10733140,extended,000000C9
+
+[No Health P2]
+patch=1,EE,10733140,extended,00000000
+
+[75% Health P2]
+patch=1,EE,D0733140,extended,000000C9
+patch=1,EE,10733140,extended,00000096
+
+[50% Health P2]
+patch=1,EE,D0733140,extended,000000C9
+patch=1,EE,10733140,extended,00000064
+
+[25% Health P2]
+patch=1,EE,D0733140,extended,000000C9
+patch=1,EE,10733140,extended,00000032
+
+[1-Hit Death P2]
+patch=1,EE,D0733140,extended,000000C9
+patch=1,EE,10733140,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,00737751,extended,00000000
+
+[P2 Starts With 1 Wins]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737751,extended,00000001
+
+[P2 Starts With 2 Wins]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737751,extended,00000002
+
+[P2 Starts With 3 Wins]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737751,extended,00000003
+
+[P2 Starts With 4 Wins]
+patch=1,EE,D0737750,extended,00000000
+patch=1,EE,00737751,extended,00000004
+
+[Akira Yuki]
+patch=1,EE,2061F060,extended,FFFFFFFF
+patch=1,EE,2061F064,extended,FFFFFFFF
+patch=1,EE,2061F068,extended,FFFFFFFF
+patch=1,EE,2061F06C,extended,FFFFFFFF
+patch=1,EE,1061F070,extended,0000FFFF
+
+[Sarah Bryant]
+patch=1,EE,20621108,extended,FFFFFFFF
+patch=1,EE,2062110C,extended,FFFFFFFF
+patch=1,EE,20621110,extended,FFFFFFFF
+patch=1,EE,20621114,extended,FFFFFFFF
+patch=1,EE,10621118,extended,0000FFFF
+
+[Lau Chan]
+patch=1,EE,206231B0,extended,FFFFFFFF
+patch=1,EE,206231B4,extended,FFFFFFFF
+patch=1,EE,206231B8,extended,FFFFFFFF
+patch=1,EE,206231BC,extended,FFFFFFFF
+patch=1,EE,106231C0,extended,0000FFFF
+
+[Shun Di]
+patch=1,EE,20625258,extended,FFFFFFFF
+patch=1,EE,2062525C,extended,FFFFFFFF
+patch=1,EE,20625260,extended,FFFFFFFF
+patch=1,EE,20625264,extended,FFFFFFFF
+patch=1,EE,10625268,extended,0000FFFF
+
+[Jerry Mcwild]
+patch=1,EE,20627300,extended,FFFFFFFF
+patch=1,EE,20627304,extended,FFFFFFFF
+patch=1,EE,20627308,extended,FFFFFFFF
+patch=1,EE,2062730C,extended,FFFFFFFF
+patch=1,EE,10627310,extended,0000FFFF
+
+[Pai Chan]
+patch=1,EE,206293A8,extended,FFFFFFFF
+patch=1,EE,206293AC,extended,FFFFFFFF
+patch=1,EE,206293B0,extended,FFFFFFFF
+patch=1,EE,206293B4,extended,FFFFFFFF
+patch=1,EE,106293B8,extended,0000FFFF
+
+[Jacky Bryant]
+patch=1,EE,2062B450,extended,FFFFFFFF
+patch=1,EE,2062B454,extended,FFFFFFFF
+patch=1,EE,2062B458,extended,FFFFFFFF
+patch=1,EE,2062B45C,extended,FFFFFFFF
+patch=1,EE,1062B460,extended,0000FFFF
+
+[Kage Maru]
+patch=1,EE,2062D4F8,extended,FFFFFFFF
+patch=1,EE,2062D4FC,extended,FFFFFFFF
+patch=1,EE,2062D500,extended,FFFFFFFF
+patch=1,EE,2062D504,extended,FFFFFFFF
+patch=1,EE,1062D508,extended,0000FFFF
+
+[Lion Rafale]
+patch=1,EE,2062F5A0,extended,FFFFFFFF
+patch=1,EE,2062F5A4,extended,FFFFFFFF
+patch=1,EE,2062F5A8,extended,FFFFFFFF
+patch=1,EE,2062F5AC,extended,FFFFFFFF
+patch=1,EE,1062F5B0,extended,0000FFFF
+
+[Wolf Hawkfield]
+patch=1,EE,20631648,extended,FFFFFFFF
+patch=1,EE,2063164C,extended,FFFFFFFF
+patch=1,EE,20631650,extended,FFFFFFFF
+patch=1,EE,20631654,extended,FFFFFFFF
+patch=1,EE,10631658,extended,0000FFFF
+
+[Aoi Umenokouji]
+patch=1,EE,206336F0,extended,FFFFFFFF
+patch=1,EE,206336F4,extended,FFFFFFFF
+patch=1,EE,206336F8,extended,FFFFFFFF
+patch=1,EE,206336FC,extended,FFFFFFFF
+patch=1,EE,10633700,extended,0000FFFF
+
+[Lei Fei]
+patch=1,EE,20635798,extended,FFFFFFFF
+patch=1,EE,2063579C,extended,FFFFFFFF
+patch=1,EE,206357A0,extended,FFFFFFFF
+patch=1,EE,206357A4,extended,FFFFFFFF
+patch=1,EE,106357A8,extended,0000FFFF
+
+[Vanessa Lewis]
+patch=1,EE,20637840,extended,FFFFFFFF
+patch=1,EE,20637844,extended,FFFFFFFF
+patch=1,EE,20637848,extended,FFFFFFFF
+patch=1,EE,2063784C,extended,FFFFFFFF
+patch=1,EE,10637850,extended,0000FFFF
+
+[Goh Hinogami]
+patch=1,EE,206398E8,extended,FFFFFFFF
+patch=1,EE,206398EC,extended,FFFFFFFF
+patch=1,EE,206398F0,extended,FFFFFFFF
+patch=1,EE,206398F4,extended,FFFFFFFF
+patch=1,EE,106398F8,extended,0000FFFF
+
+[Brad Burns]
+patch=1,EE,2063B990,extended,FFFFFFFF
+patch=1,EE,2063B994,extended,FFFFFFFF
+patch=1,EE,2063B998,extended,FFFFFFFF
+patch=1,EE,2063B99C,extended,FFFFFFFF
+patch=1,EE,1063B9A0,extended,0000FFFF
+
+[Always Grandmaster Rank]
+patch=1,EE,107544D4,extended,0000001E
+
+[Max Wins]
+patch=1,EE,107544D6,extended,0000C350
+
+[No Wins]
+patch=1,EE,107544D6,extended,00000000
+
+[Max Losses]
+patch=1,EE,107544D8,extended,0000C350
+
+[No Losses]
+patch=1,EE,107544D8,extended,00000000
+
+[Have All Items Collected]
+patch=1,EE,20619840,extended,FFFFFFFF
+patch=1,EE,107544DA,extended,0000FFFF
+patch=1,EE,207544DC,extended,FFFFFFFF
+patch=1,EE,207544E0,extended,FFFFFFFF
+patch=1,EE,207544E4,extended,FFFFFFFF
+
+[Infinite Money]
+patch=1,EE,10754524,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,20754524,extended,05F5E0FF

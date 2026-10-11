@@ -1,0 +1,5256 @@
+gametitle=Dynasty Warriors 5-Xtreme Legends (SLUS-21299)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90130740,extended,0C04223C
+
+[Max Infinite Interrim Saves]
+patch=1,EE,00538958,extended,00000003
+
+[Infinite Interim Save Usage]
+patch=1,EE,D067D4B8,extended,0000982D
+patch=1,EE,2067D4C0,extended,00000000
+
+[Infinite Mission Time Left]
+patch=1,EE,201E047C,extended,AC20895C
+
+[Infinite Powerups (On Pickup)]
+patch=1,EE,20191E08,extended,00000000
+
+[Infinite Arrows (Both Characters)]
+patch=1,EE,20194FF0,extended,00000000
+
+[1-Hit Death (Enemies)]
+patch=1,EE,200C02B0,extended,34219504
+patch=1,EE,200C02B4,extended,0201082B
+patch=1,EE,200C02B8,extended,50200003
+patch=1,EE,200C02BC,extended,24020000
+patch=1,EE,200C02C0,extended,0043082A
+patch=1,EE,200C02C4,extended,0061100A
+patch=1,EE,200C02C8,extended,03E00008
+patch=1,EE,200C02CC,extended,00000000
+patch=1,EE,201A5E7C,extended,0C0300AC
+patch=1,EE,201A5E80,extended,3C01004B
+
+[1-Hit Death (Enemies) & Infinite Health P1/P2]
+patch=1,EE,200C02B0,extended,34219504
+patch=1,EE,200C02B4,extended,0201082B
+patch=1,EE,200C02B8,extended,50200003
+patch=1,EE,200C02BC,extended,24020000
+patch=1,EE,200C02C0,extended,0043082A
+patch=1,EE,200C02C4,extended,0061100A
+patch=1,EE,200C02C8,extended,03E00008
+patch=1,EE,200C02CC,extended,00000000
+patch=1,EE,201A5E7C,extended,0C0300AC
+patch=1,EE,201A5E80,extended,3C01004B
+
+[Max Health P1]
+patch=1,EE,104B94B0,extended,00000190
+
+[Infinite Health P1]
+patch=1,EE,104B94B2,extended,00001900
+
+[Max Infinite Health P1]
+patch=1,EE,204B94B0,extended,19000190
+
+[Max Musou P1]
+patch=1,EE,104B94B6,extended,000000C8
+
+[Infinite Musou P1]
+patch=1,EE,104B94B8,extended,00000C80
+
+[Max Infinite Musou P1]
+patch=1,EE,104B94B6,extended,000000C8
+patch=1,EE,104B94B8,extended,00000C80
+
+[Infinite Offense X2 P1 (On Pickup)]
+patch=1,EE,104B945C,extended,00000708
+
+[Infinite Defense X2 P1 (On Pickup)]
+patch=1,EE,104B9460,extended,00000708
+
+[Infinite Speed Up P1 (On Pickup)]
+patch=1,EE,104B9464,extended,00000708
+
+[Infinite Musou Max P1 (On Pickup)]
+patch=1,EE,104B9468,extended,00000708
+
+[Always Have Offense X2 P1]
+patch=1,EE,704B9441,extended,00000080
+patch=1,EE,204B945C,extended,07080708
+
+[Always Have Defense X2 P1]
+patch=1,EE,704B9442,extended,00000001
+patch=1,EE,204B9460,extended,07080708
+
+[Always Have Speed Up X2 P1]
+patch=1,EE,704B9442,extended,00000002
+patch=1,EE,204B9464,extended,07080708
+
+[Always Have Musou Max X2 P1]
+patch=1,EE,704B9442,extended,00000004
+patch=1,EE,204B9468,extended,07080708
+
+[Always Have All Powerups P1]
+patch=1,EE,704B9441,extended,00000080
+patch=1,EE,704B9442,extended,00000007
+patch=1,EE,404B945C,extended,00040001
+patch=1,EE,07080708,extended,00000000
+
+[Max KO Count P1]
+patch=1,EE,1047B2A4,extended,0000270F
+
+[No KO Count P1]
+patch=1,EE,1047B2A4,extended,00000000
+
+[Infinite Arrows P1]
+patch=1,EE,004F3446,extended,00000063
+
+[Always Musou Rage Mode P1]
+patch=1,EE,204B946C,extended,03840384
+
+[Never Musou Rage Mode P1]
+patch=1,EE,204B946C,extended,00000000
+
+[Always Have Musou Token P1]
+patch=1,EE,D04B946C,extended,00000000
+patch=1,EE,104B946C,extended,0000FFFF
+
+[Max Health P2]
+patch=1,EE,104B9760,extended,00000190
+
+[Infinite Health P2]
+patch=1,EE,104B9762,extended,00001900
+
+[Max Infinite Health P2]
+patch=1,EE,204B9760,extended,19000190
+
+[Max Musou P2]
+patch=1,EE,104B9766,extended,000000C8
+
+[Infinite Musou P2]
+patch=1,EE,104B9768,extended,00000C80
+
+[Max Infinite Musou P2]
+patch=1,EE,104B9766,extended,000000C8
+patch=1,EE,104B9768,extended,00000C80
+
+[Infinite Offense X2 P2 (On Pickup)]
+patch=1,EE,104B970C,extended,00000708
+
+[Infinite Defense X2 P2 (On Pickup)]
+patch=1,EE,104B9710,extended,00000708
+
+[Infinite Speed Up P2 (On Pickup)]
+patch=1,EE,104B9714,extended,00000708
+
+[Infinite Musou Max P2 (On Pickup)]
+patch=1,EE,104B9718,extended,00000708
+
+[Always Have Offense X2 P2]
+patch=1,EE,704B96F1,extended,00000080
+patch=1,EE,204B970C,extended,07080708
+
+[Always Have Defense X2 P2]
+patch=1,EE,704B96F2,extended,00000001
+patch=1,EE,204B9710,extended,07080708
+
+[Always Have Speed Up X2 P2]
+patch=1,EE,704B96F2,extended,00000002
+patch=1,EE,204B9714,extended,07080708
+
+[Always Have Musou Max X2 P2]
+patch=1,EE,704B96F2,extended,00000004
+patch=1,EE,204B9718,extended,07080708
+
+[Always Have All Powerups P2]
+patch=1,EE,704B96F1,extended,00000080
+patch=1,EE,704B96F2,extended,00000007
+patch=1,EE,404B970C,extended,00040001
+patch=1,EE,07080708,extended,00000000
+
+[Max KO Count P2]
+patch=1,EE,1047B2EC,extended,0000270F
+
+[No KO Count P2]
+patch=1,EE,1047B2EC,extended,00000000
+
+[Infinite Arrows P2]
+patch=1,EE,004F346E,extended,00000063
+
+[Always Musou Rage Mode P2]
+patch=1,EE,204B971C,extended,03840384
+
+[Never Musou Rage Mode P2]
+patch=1,EE,204B971C,extended,00000000
+
+[Always Have Musou Token P2]
+patch=1,EE,D04B971C,extended,00000000
+patch=1,EE,104B971C,extended,0000FFFF
+
+[Unlock All Movies]
+patch=1,EE,404DE1AC,extended,00030001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[P1 Press {R1} For Super Weapon Modifier]
+patch=1,EE,200C0220,extended,94410000
+patch=1,EE,200C0224,extended,240300E4
+patch=1,EE,200C0228,extended,50230001
+patch=1,EE,200C022C,extended,A0400000
+patch=1,EE,200C0230,extended,0806B500
+patch=1,EE,200C0234,extended,94420000
+patch=1,EE,201AD3F8,extended,08030088
+patch=1,EE,200C0238,extended,3C010037
+patch=1,EE,200C023C,extended,8422999C
+patch=1,EE,200C0240,extended,2401FFFF
+patch=1,EE,200C0244,extended,50220013
+patch=1,EE,200C0248,extended,24020000
+patch=1,EE,200C024C,extended,3C01000C
+patch=1,EE,200C0250,extended,8C210000
+patch=1,EE,200C0254,extended,14200011
+patch=1,EE,200C0258,extended,30410800
+patch=1,EE,200C025C,extended,50200005
+patch=1,EE,200C0260,extended,24170001
+patch=1,EE,200C0264,extended,30410400
+patch=1,EE,200C0268,extended,50200002
+patch=1,EE,200C026C,extended,2417FFFF
+patch=1,EE,200C0270,extended,1000000A
+patch=1,EE,200C0274,extended,96820000
+patch=1,EE,200C0278,extended,00571021
+patch=1,EE,200C027C,extended,04420005
+patch=1,EE,200C0280,extended,24020001
+patch=1,EE,200C0284,extended,2C4100C8
+patch=1,EE,200C0288,extended,54200001
+patch=1,EE,200C028C,extended,A6820000
+patch=1,EE,200C0290,extended,24020001
+patch=1,EE,200C0294,extended,3C01000C
+patch=1,EE,200C0298,extended,AC220000
+patch=1,EE,200C029C,extended,08188EB6
+patch=1,EE,200C02A0,extended,96820000
+patch=1,EE,D0623AD0,extended,00009021
+patch=1,EE,20623AD4,extended,0803008E
+
+[Peacock Amulet]
+patch=1,EE,004DF634,extended,00000062
+
+[Dragon Amulet]
+patch=1,EE,004DF635,extended,00000062
+
+[Tiger Amulet]
+patch=1,EE,004DF636,extended,00000062
+
+[Tortoise Amulet]
+patch=1,EE,004DF637,extended,00000062
+
+[Speed Scroll]
+patch=1,EE,004DF638,extended,00000062
+
+[Huang's Bow]
+patch=1,EE,004DF639,extended,00000062
+
+[Horned Helm]
+patch=1,EE,004DF63A,extended,00000062
+
+[Seven Star Sash]
+patch=1,EE,004DF63B,extended,00000062
+
+[Ginseng]
+patch=1,EE,004DF63C,extended,00000062
+
+[Herbal Remedy]
+patch=1,EE,004DF63D,extended,00000062
+
+[Fire Orb]
+patch=1,EE,004DF63E,extended,00000000
+
+[Ice Orb]
+patch=1,EE,004DF63F,extended,00000000
+
+[Shadow Orb]
+patch=1,EE,004DF640,extended,00000000
+
+[Light Orb]
+patch=1,EE,004DF641,extended,00000000
+
+[Red Hare Harness]
+patch=1,EE,004DF642,extended,00000000
+
+[Hex Mark Harness]
+patch=1,EE,004DF643,extended,00000000
+
+[Storm Harness]
+patch=1,EE,004DF644,extended,00000000
+
+[Shadow Harness]
+patch=1,EE,004DF645,extended,00000000
+
+[Elephant Harness]
+patch=1,EE,004DF646,extended,00000000
+
+[Art Of War]
+patch=1,EE,004DF647,extended,00000000
+
+[Survival Guide]
+patch=1,EE,004DF648,extended,00000000
+
+[Bodyguard Manual]
+patch=1,EE,004DF649,extended,00000000
+
+[Demon Band]
+patch=1,EE,004DF64A,extended,00000000
+
+[Way Of Musou]
+patch=1,EE,004DF64B,extended,00000000
+
+[Wind Scroll]
+patch=1,EE,004DF64C,extended,00000000
+
+[Fire Arrows]
+patch=1,EE,004DF64D,extended,00000000
+
+[Arm Guards]
+patch=1,EE,004DF64E,extended,00000000
+
+[Tiger Collar]
+patch=1,EE,004DF64F,extended,00000000
+
+[Green Scroll]
+patch=1,EE,004DF650,extended,00000000
+
+[Musou Armor]
+patch=1,EE,004DF651,extended,00000000
+
+[Tribal Remedy]
+patch=1,EE,004DF652,extended,00000000
+
+[Serpent Earrings]
+patch=1,EE,004DF653,extended,00000000
+
+[Naga Earrings]
+patch=1,EE,004DF654,extended,00000000
+
+[Dragon Arms]
+patch=1,EE,004DF655,extended,00000000
+
+[True Way Of Musou]
+patch=1,EE,004DF656,extended,00000000
+
+[Ice Arrows]
+patch=1,EE,004DF657,extended,00000000
+
+[Vampire Arms]
+patch=1,EE,004DF658,extended,00000000
+
+[Meat Bun Sack]
+patch=1,EE,004DF659,extended,00000000
+
+[Kirin Hoof]
+patch=1,EE,004DF65A,extended,00000000
+
+[All Items]
+patch=1,EE,204DF634,extended,62626262
+patch=1,EE,204DF638,extended,62626262
+patch=1,EE,104DF63C,extended,00006262
+patch=1,EE,104DF63E,extended,00000000
+patch=1,EE,404DF640,extended,00060001
+patch=1,EE,00079784,extended,00000000
+patch=1,EE,104D6F58,extended,00000000
+patch=1,EE,004D6F5A,extended,00000000
+
+[Max Life]
+patch=1,EE,104DE1EE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE1F0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE1F2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE1F3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE1F4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE240,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE202,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE203,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE205,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE207,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE209,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE20B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE20D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE212,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE213,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE215,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE217,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE219,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE21B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE21D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE222,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE223,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE225,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE227,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE229,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE22B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE22D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE232,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE233,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE235,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE237,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE239,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE23B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE23D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE246,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE248,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE24A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE24B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE24C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE298,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE25A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE25B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE25D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE25F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE261,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE263,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE265,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE26A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE26B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE26D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE26F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE271,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE273,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE275,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE27A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE27B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE27D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE27F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE281,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE283,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE285,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE28A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE28B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE28D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE28F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE291,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE293,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE295,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE29E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE2A0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE2A2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE2A3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE2A4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE2F0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE2B2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE2B3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE2B5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE2B7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE2B9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE2BB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE2BD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE2C2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE2C3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE2C5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE2C7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE2C9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE2CB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE2CD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE2D2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE2D3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE2D5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE2D7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE2D9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE2DB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE2DD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE2E2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE2E3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE2E5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE2E7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE2E9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE2EB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE2ED,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE2F6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE2F8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE2FA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE2FB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE2FC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE348,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE30A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE30B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE30D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE30F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE311,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE313,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE315,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE31A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE31B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE31D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE31F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE321,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE323,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE325,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE32A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE32B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE32D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE32F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE331,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE333,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE335,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE33A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE33B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE33D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE33F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE341,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE343,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE345,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE34E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE350,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE352,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE353,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE354,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE3A0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE362,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE363,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE365,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE367,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE369,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE36B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE36D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE372,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE373,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE375,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE377,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE379,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE37B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE37D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE382,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE383,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE385,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE387,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE389,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE38B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE38D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE392,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE393,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE395,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE397,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE399,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE39B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE39D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE3A6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE3A8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE3AA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE3AB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE3AC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE3F8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE3BA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE3BB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE3BD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE3BF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE3C1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE3C3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE3C5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE3CA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE3CB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE3CD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE3CF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE3D1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE3D3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE3D5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE3DA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE3DB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE3DD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE3DF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE3E1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE3E3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE3E5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE3EA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE3EB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE3ED,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE3EF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE3F1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE3F3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE3F5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE3FE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE400,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE402,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE403,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE404,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE450,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE412,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE413,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE415,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE417,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE419,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE41B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE41D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE422,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE423,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE425,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE427,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE429,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE42B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE42D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE432,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE433,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE435,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE437,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE439,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE43B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE43D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE442,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE443,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE445,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE447,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE449,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE44B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE44D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE456,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE458,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE45A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE45B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE45C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE4A8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE46A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE46B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE46D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE46F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE471,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE473,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE475,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE47A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE47B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE47D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE47F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE481,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE483,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE485,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE48A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE48B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE48D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE48F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE491,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE493,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE495,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE49A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE49B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE49D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE49F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE4A1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE4A3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE4A5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE4AE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE4B0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE4B2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE4B3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE4B4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE500,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE4C2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE4C3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE4C5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE4C7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE4C9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE4CB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE4CD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE4D2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE4D3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE4D5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE4D7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE4D9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE4DB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE4DD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE4E2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE4E3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE4E5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE4E7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE4E9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE4EB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE4ED,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE4F2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE4F3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE4F5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE4F7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE4F9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE4FB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE4FD,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE506,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE508,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE50A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE50B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE50C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE558,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE51A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE51B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE51D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE51F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE521,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE523,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE525,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE52A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE52B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE52D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE52F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE531,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE533,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE535,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE53A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE53B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE53D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE53F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE541,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE543,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE545,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE54A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE54B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE54D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE54F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE551,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE553,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE555,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE55E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE560,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE562,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE563,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE564,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE5B0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE572,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE573,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE575,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE577,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE579,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE57B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE57D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE582,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE583,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE585,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE587,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE589,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE58B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE58D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE592,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE593,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE595,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE597,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE599,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE59B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE59D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE5A2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE5A3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE5A5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE5A7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE5A9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE5AB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE5AD,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE5B6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE5B8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE5BA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE5BB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE5BC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE608,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE5CA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE5CB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE5CD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE5CF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE5D1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE5D3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE5D5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE5DA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE5DB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE5DD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE5DF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE5E1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE5E3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE5E5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE5EA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE5EB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE5ED,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE5EF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE5F1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE5F3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE5F5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE5FA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE5FB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE5FD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE5FF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE601,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE603,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE605,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE60E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE610,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE612,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE613,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE614,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE660,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE622,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE623,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE625,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE627,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE629,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE62B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE62D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE632,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE633,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE635,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE637,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE639,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE63B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE63D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE642,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE643,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE645,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE647,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE649,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE64B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE64D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE652,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE653,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE655,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE657,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE659,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE65B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE65D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE666,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE668,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE66A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE66B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE66C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE6B8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE67A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE67B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE67D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE67F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE681,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE683,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE685,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE68A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE68B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE68D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE68F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE691,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE693,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE695,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE69A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE69B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE69D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE69F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE6A1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE6A3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE6A5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE6AA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE6AB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE6AD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE6AF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE6B1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE6B3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE6B5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE6BE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE6C0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE6C2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE6C3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE6C4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE710,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE6D2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE6D3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE6D5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE6D7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE6D9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE6DB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE6DD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE6E2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE6E3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE6E5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE6E7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE6E9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE6EB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE6ED,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE6F2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE6F3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE6F5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE6F7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE6F9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE6FB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE6FD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE702,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE703,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE705,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE707,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE709,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE70B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE70D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE716,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE718,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE71A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE71B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE71C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE768,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE72A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE72B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE72D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE72F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE731,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE733,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE735,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE73A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE73B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE73D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE73F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE741,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE743,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE745,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE74A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE74B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE74D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE74F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE751,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE753,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE755,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE75A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE75B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE75D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE75F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE761,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE763,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE765,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE76E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE770,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE772,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE773,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE774,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE7C0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE782,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE783,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE785,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE787,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE789,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE78B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE78D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE792,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE793,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE795,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE797,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE799,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE79B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE79D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE7A2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE7A3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE7A5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE7A7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE7A9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE7AB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE7AD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE7B2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE7B3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE7B5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE7B7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE7B9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE7BB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE7BD,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE7C6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE7C8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE7CA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE7CB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE7CC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE818,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE7DA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE7DB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE7DD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE7DF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE7E1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE7E3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE7E5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE7EA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE7EB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE7ED,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE7EF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE7F1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE7F3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE7F5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE7FA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE7FB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE7FD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE7FF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE801,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE803,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE805,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE80A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE80B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE80D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE80F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE811,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE813,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE815,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE81E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE820,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE822,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE823,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE824,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE870,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE832,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE833,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE835,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE837,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE839,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE83B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE83D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE842,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE843,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE845,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE847,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE849,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE84B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE84D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE852,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE853,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE855,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE857,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE859,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE85B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE85D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE862,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE863,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE865,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE867,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE869,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE86B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE86D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE876,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE878,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE87A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE87B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE87C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE8C8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE88A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE88B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE88D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE88F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE891,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE893,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE895,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE89A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE89B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE89D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE89F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE8A1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE8A3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE8A5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE8AA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE8AB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE8AD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE8AF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE8B1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE8B3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE8B5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE8BA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE8BB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE8BD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE8BF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE8C1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE8C3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE8C5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE8CE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE8D0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE8D2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE8D3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE8D4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE920,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE8E2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE8E3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE8E5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE8E7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE8E9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE8EB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE8ED,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE8F2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE8F3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE8F5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE8F7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE8F9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE8FB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE8FD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE902,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE903,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE905,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE907,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE909,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE90B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE90D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE912,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE913,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE915,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE917,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE919,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE91B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE91D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE926,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE928,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE92A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE92B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE92C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE978,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE93A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE93B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE93D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE93F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE941,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE943,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE945,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE94A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE94B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE94D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE94F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE951,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE953,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE955,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE95A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE95B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE95D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE95F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE961,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE963,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE965,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE96A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE96B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE96D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE96F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE971,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE973,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE975,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE97E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE980,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE982,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE983,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE984,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DE9D0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE992,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE993,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE995,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE997,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE999,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE99B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE99D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE9A2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE9A3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE9A5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE9A7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE9A9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE9AB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE9AD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE9B2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE9B3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE9B5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE9B7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE9B9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE9BB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE9BD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE9C2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE9C3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE9C5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE9C7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE9C9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE9CB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE9CD,extended,00000013
+
+[Max Life]
+patch=1,EE,104DE9D6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DE9D8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DE9DA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DE9DB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DE9DC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEA28,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DE9EA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE9EB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE9ED,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE9EF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DE9F1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DE9F3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DE9F5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DE9FA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DE9FB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DE9FD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DE9FF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEA01,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEA03,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEA05,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEA0A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEA0B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEA0D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEA0F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEA11,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEA13,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEA15,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEA1A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEA1B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEA1D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEA1F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEA21,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEA23,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEA25,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEA2E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEA30,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEA32,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEA33,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEA34,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEA80,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEA42,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEA43,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEA45,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEA47,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEA49,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEA4B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEA4D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEA52,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEA53,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEA55,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEA57,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEA59,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEA5B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEA5D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEA62,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEA63,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEA65,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEA67,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEA69,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEA6B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEA6D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEA72,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEA73,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEA75,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEA77,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEA79,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEA7B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEA7D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEA86,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEA88,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEA8A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEA8B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEA8C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEAD8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEA9A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEA9B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEA9D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEA9F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEAA1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEAA3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEAA5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEAAA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEAAB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEAAD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEAAF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEAB1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEAB3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEAB5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEABA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEABB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEABD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEABF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEAC1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEAC3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEAC5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEACA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEACB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEACD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEACF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEAD1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEAD3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEAD5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEADE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEAE0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEAE2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEAE3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEAE4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEB30,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEAF2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEAF3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEAF5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEAF7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEAF9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEAFB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEAFD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEB02,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEB03,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEB05,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEB07,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEB09,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEB0B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEB0D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEB12,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEB13,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEB15,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEB17,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEB19,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEB1B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEB1D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEB22,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEB23,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEB25,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEB27,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEB29,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEB2B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEB2D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEB36,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEB38,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEB3A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEB3B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEB3C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEB88,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEB4A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEB4B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEB4D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEB4F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEB51,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEB53,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEB55,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEB5A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEB5B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEB5D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEB5F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEB61,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEB63,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEB65,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEB6A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEB6B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEB6D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEB6F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEB71,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEB73,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEB75,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEB7A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEB7B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEB7D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEB7F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEB81,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEB83,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEB85,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEB8E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEB90,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEB92,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEB93,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEB94,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEBE0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEBA2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEBA3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEBA5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEBA7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEBA9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEBAB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEBAD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEBB2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEBB3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEBB5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEBB7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEBB9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEBBB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEBBD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEBC2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEBC3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEBC5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEBC7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEBC9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEBCB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEBCD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEBD2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEBD3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEBD5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEBD7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEBD9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEBDB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEBDD,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEBE6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEBE8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEBEA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEBEB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEBEC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEC38,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEBFA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEBFB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEBFD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEBFF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC01,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC03,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC05,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEC0A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEC0B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEC0D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEC0F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC11,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC13,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC15,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEC1A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEC1B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEC1D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEC1F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC21,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC23,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC25,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEC2A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEC2B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEC2D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEC2F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC31,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC33,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC35,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEC3E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEC40,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEC42,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEC43,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEC44,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEC90,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEC52,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEC53,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEC55,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEC57,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC59,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC5B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC5D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEC62,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEC63,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEC65,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEC67,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC69,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC6B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC6D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEC72,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEC73,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEC75,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEC77,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC79,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC7B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC7D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEC82,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEC83,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEC85,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEC87,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEC89,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEC8B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEC8D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEC96,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEC98,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEC9A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEC9B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEC9C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DECE8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DECAA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DECAB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DECAD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DECAF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DECB1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DECB3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DECB5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DECBA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DECBB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DECBD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DECBF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DECC1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DECC3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DECC5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DECCA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DECCB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DECCD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DECCF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DECD1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DECD3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DECD5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DECDA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DECDB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DECDD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DECDF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DECE1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DECE3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DECE5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DECEE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DECF0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DECF2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DECF3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DECF4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DED40,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DED02,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED03,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED05,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED07,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED09,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED0B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED0D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DED12,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED13,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED15,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED17,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED19,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED1B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED1D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DED22,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED23,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED25,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED27,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED29,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED2B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED2D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DED32,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED33,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED35,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED37,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED39,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED3B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED3D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DED46,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DED48,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DED4A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DED4B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DED4C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DED98,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DED5A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED5B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED5D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED5F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED61,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED63,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED65,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DED6A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED6B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED6D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED6F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED71,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED73,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED75,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DED7A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED7B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED7D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED7F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED81,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED83,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED85,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DED8A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DED8B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DED8D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DED8F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DED91,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DED93,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DED95,extended,00000013
+
+[Max Life]
+patch=1,EE,104DED9E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEDA0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEDA2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEDA3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEDA4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEDF0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEDB2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEDB3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEDB5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEDB7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEDB9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEDBB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEDBD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEDC2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEDC3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEDC5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEDC7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEDC9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEDCB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEDCD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEDD2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEDD3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEDD5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEDD7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEDD9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEDDB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEDDD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEDE2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEDE3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEDE5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEDE7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEDE9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEDEB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEDED,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEDF6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEDF8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEDFA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEDFB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEDFC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEE48,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEE0A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE0B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE0D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE0F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE11,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE13,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE15,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEE1A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE1B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE1D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE1F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE21,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE23,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE25,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEE2A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE2B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE2D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE2F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE31,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE33,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE35,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEE3A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE3B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE3D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE3F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE41,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE43,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE45,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEE4E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEE50,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEE52,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEE53,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEE54,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEEA0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEE62,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE63,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE65,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE67,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE69,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE6B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE6D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEE72,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE73,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE75,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE77,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE79,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE7B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE7D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEE82,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE83,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE85,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE87,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE89,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE8B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE8D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEE92,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEE93,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEE95,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEE97,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEE99,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEE9B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEE9D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEEA6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEEA8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEEAA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEEAB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEEAC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEEF8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEEBA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEEBB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEEBD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEEBF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEEC1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEEC3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEEC5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEECA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEECB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEECD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEECF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEED1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEED3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEED5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEEDA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEEDB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEEDD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEEDF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEEE1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEEE3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEEE5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEEEA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEEEB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEEED,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEEEF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEEF1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEEF3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEEF5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEEFE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEF00,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEF02,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEF03,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEF04,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEF50,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEF12,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF13,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF15,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF17,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEF19,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEF1B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEF1D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEF22,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF23,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF25,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF27,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEF29,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEF2B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEF2D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEF32,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF33,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF35,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF37,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEF39,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEF3B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEF3D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEF42,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF43,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF45,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF47,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEF49,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEF4B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEF4D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEF56,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEF58,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEF5A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEF5B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEF5C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DEFA8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEF6A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF6B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF6D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF6F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEF71,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEF73,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEF75,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEF7A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF7B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF7D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF7F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEF81,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEF83,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEF85,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEF8A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF8B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF8D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF8F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEF91,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEF93,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEF95,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEF9A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEF9B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEF9D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEF9F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEFA1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEFA3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEFA5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DEFAE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DEFB0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DEFB2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DEFB3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DEFB4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF000,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DEFC2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEFC3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEFC5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEFC7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEFC9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEFCB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEFCD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEFD2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEFD3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEFD5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEFD7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEFD9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEFDB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEFDD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEFE2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEFE3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEFE5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEFE7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEFE9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEFEB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEFED,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DEFF2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DEFF3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DEFF5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DEFF7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DEFF9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DEFFB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DEFFD,extended,00000013
+
+[Max Life]
+patch=1,EE,104DF006,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DF008,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DF00A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DF00B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DF00C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF058,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DF01A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF01B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF01D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF01F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF021,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF023,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF025,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF02A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF02B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF02D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF02F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF031,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF033,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF035,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF03A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF03B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF03D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF03F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF041,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF043,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF045,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF04A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF04B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF04D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF04F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF051,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF053,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF055,extended,00000013
+
+[Max Life]
+patch=1,EE,104DF05E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DF060,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DF062,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DF063,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DF064,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF0B0,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DF072,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF073,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF075,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF077,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF079,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF07B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF07D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF082,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF083,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF085,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF087,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF089,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF08B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF08D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF092,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF093,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF095,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF097,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF099,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF09B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF09D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF0A2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF0A3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF0A5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF0A7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF0A9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF0AB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF0AD,extended,00000013
+
+[Max Life]
+patch=1,EE,104DF0B6,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DF0B8,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DF0BA,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DF0BB,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DF0BC,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF108,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DF0CA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF0CB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF0CD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF0CF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF0D1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF0D3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF0D5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF0DA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF0DB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF0DD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF0DF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF0E1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF0E3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF0E5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF0EA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF0EB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF0ED,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF0EF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF0F1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF0F3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF0F5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF0FA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF0FB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF0FD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF0FF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF101,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF103,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF105,extended,00000013
+
+[Max Life]
+patch=1,EE,104DF10E,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DF110,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DF112,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DF113,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DF114,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF160,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DF122,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF123,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF125,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF127,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF129,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF12B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF12D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF132,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF133,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF135,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF137,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF139,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF13B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF13D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF142,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF143,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF145,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF147,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF149,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF14B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF14D,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF152,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF153,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF155,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF157,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF159,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF15B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF15D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DF166,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DF168,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DF16A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DF16B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DF16C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF1B8,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DF17A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF17B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF17D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF17F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF181,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF183,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF185,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF18A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF18B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF18D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF18F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF191,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF193,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF195,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF19A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF19B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF19D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF19F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF1A1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF1A3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF1A5,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF1AA,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF1AB,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF1AD,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF1AF,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF1B1,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF1B3,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF1B5,extended,00000013
+
+[Max Life]
+patch=1,EE,104DF1BE,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DF1C0,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DF1C2,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DF1C3,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DF1C4,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF210,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DF1D2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF1D3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF1D5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF1D7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF1D9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF1DB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF1DD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF1E2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF1E3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF1E5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF1E7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF1E9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF1EB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF1ED,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF1F2,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF1F3,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF1F5,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF1F7,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF1F9,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF1FB,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF1FD,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF202,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF203,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF205,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF207,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF209,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF20B,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF20D,extended,00000013
+
+[Max Life]
+patch=1,EE,104DF216,extended,00000190
+
+[Max Musou]
+patch=1,EE,104DF218,extended,000000C8
+
+[Max Attack]
+patch=1,EE,004DF21A,extended,000000C8
+
+[Max Defense]
+patch=1,EE,004DF21B,extended,000000C8
+
+[Max Points]
+patch=1,EE,104DF21C,extended,0000EA60
+
+[Max K.O. Count]
+patch=1,EE,204DF268,extended,05F5E0FF
+
+[Weight-Light]
+patch=1,EE,004DF22A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF22B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF22D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF22F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF231,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF233,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF235,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF23A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF23B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF23D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF23F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF241,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF243,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF245,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF24A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF24B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF24D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF24F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF251,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF253,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF255,extended,00000013
+
+[Weight-Light]
+patch=1,EE,004DF25A,extended,00000000
+
+[Have Evolution Attack Ability]
+patch=1,EE,004DF25B,extended,00000001
+
+[Slot 1]
+patch=1,EE,004DF25D,extended,00000013
+
+[Slot 2]
+patch=1,EE,004DF25F,extended,00000013
+
+[Slot 3]
+patch=1,EE,004DF261,extended,00000013
+
+[Slot 4]
+patch=1,EE,004DF263,extended,00000013
+
+[Slot 5]
+patch=1,EE,004DF265,extended,00000013

@@ -1,0 +1,110 @@
+gametitle=Medal Of Honor-Rising Sun (SLUS-20753)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9035327C,extended,0C0C9CCD
+
+[Infinite Ammo]
+patch=1,EE,20250680,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,1025067C,extended,00000001
+
+[Infinite Health]
+patch=1,EE,203CB9F0,extended,00000001
+
+[Infinite Ammo (Alternate)]
+patch=1,EE,203CB9F4,extended,00000001
+
+[Always Sniper]
+patch=1,EE,203CB9F8,extended,00000001
+
+[Matrix Jumping (Slow Motion)]
+patch=1,EE,203CB9FC,extended,00000001
+
+[Bullet Shield]
+patch=1,EE,203CBA04,extended,00000001
+
+[Men With Hats]
+patch=1,EE,203CBA08,extended,00000001
+
+[Rubber Grenades]
+patch=1,EE,203CBA0C,extended,00000001
+
+[Silver Bullet]
+patch=1,EE,203CBA10,extended,00000001
+
+[Achilles Head]
+patch=1,EE,203CBA14,extended,00000001
+
+[Perfectionist Mode]
+patch=1,EE,203CBA18,extended,00000001
+
+[Invisible Soldiers]
+patch=1,EE,203CBA1C,extended,00000001
+
+[All Replay Items]
+patch=1,EE,203CBA24,extended,00000001
+
+[Disable HUD]
+patch=1,EE,203CBB7C,extended,00000000
+
+[Guards Have No Ammo]
+patch=1,EE,201C38D8,extended,00000000
+
+[Press {L1}+{SELECT} For Super Game Speed]
+patch=1,EE,D04D1FC2,extended,0000FBFE
+patch=1,EE,20359DDC,extended,41000000
+
+[Press {L2}+{SELECT} For Ultra Game Speed]
+patch=1,EE,D04D1FC2,extended,0000FEFE
+patch=1,EE,20359DDC,extended,42C80000
+
+[Press {R1}+{SELECT} For Normal Game Speed]
+patch=1,EE,D04D1FC2,extended,0000F7FE
+patch=1,EE,20359DDC,extended,3F800000
+
+[Press {R2}+{SELECT} For Slower Game Speed]
+patch=1,EE,D04D1FC2,extended,0000FDFE
+patch=1,EE,20359DDC,extended,3F400000
+
+[Have All Medals]
+patch=1,EE,2010BF50,extended,FFFFFFFF
+
+[Unlock All Levels]
+patch=1,EE,2010BF54,extended,FFFFFFFF
+
+[Unlock All Valor In History]
+patch=1,EE,2010BF58,extended,FFFFFFFF
+
+[Unlock All Storyboards]
+patch=1,EE,2010BF5C,extended,FFFFFFFF
+
+[Unlock All Bonus]
+patch=1,EE,2010BF64,extended,FFFFFFFF
+
+[Pearl Harbor]
+patch=1,EE,0010C4F2,extended,00000001
+
+[Fall Of The Philippines]
+patch=1,EE,0010C4FA,extended,00000001
+
+[Midnight Raid On Guadalcanal]
+patch=1,EE,0010C502,extended,00000001
+
+[Pistol Pete Showdown]
+patch=1,EE,0010C50A,extended,00000001
+
+[Singapore Sling]
+patch=1,EE,0010C512,extended,00000001
+
+[In Search Of Yamashita's Gold]
+patch=1,EE,0010C522,extended,00000001
+
+[A Bridge On The River Kwai]
+patch=1,EE,0010C52A,extended,00000001
+
+[Supercarrier Sabotage]
+patch=1,EE,0010C532,extended,00000001

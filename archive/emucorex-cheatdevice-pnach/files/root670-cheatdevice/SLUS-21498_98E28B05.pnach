@@ -1,0 +1,128 @@
+gametitle=Naruto-Uzumaki Chronicles (SLUS-21498)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901194D4,extended,0C047A7A
+
+[Infinite Time]
+patch=1,EE,2034D404,extended,00000000
+
+[Infinite Health]
+patch=1,EE,10350A00,extended,000003E7
+
+[Max Health]
+patch=1,EE,10350A02,extended,000003E7
+
+[Max Infinite Health]
+patch=1,EE,20350A00,extended,03E703E7
+
+[Infinite Stamina]
+patch=1,EE,10350A0E,extended,000003E7
+
+[Max Stamina]
+patch=1,EE,10350A12,extended,000003E7
+
+[Infinite Virtue]
+patch=1,EE,10350A14,extended,0000FFFF
+
+[Max Virtue]
+patch=1,EE,20350A14,extended,0098967F
+
+[Infinite Health]
+patch=1,EE,10350A30,extended,000003E7
+
+[Max Health]
+patch=1,EE,10350A32,extended,000003E7
+
+[Max Infinite Health]
+patch=1,EE,20350A30,extended,03E703E7
+
+[Infinite Stamina]
+patch=1,EE,10350A3E,extended,000003E7
+
+[Max Stamina]
+patch=1,EE,10350A42,extended,000003E7
+
+[Infinite Virtue]
+patch=1,EE,10350A44,extended,0000FFFF
+
+[Max Virtue]
+patch=1,EE,20350A44,extended,0098967F
+
+[Infinite Health]
+patch=1,EE,10350A60,extended,000003E7
+
+[Max Health]
+patch=1,EE,10350A62,extended,000003E7
+
+[Max Infinite Health]
+patch=1,EE,20350A60,extended,03E703E7
+
+[Infinite Stamina]
+patch=1,EE,10350A6E,extended,000003E7
+
+[Max Stamina]
+patch=1,EE,10350A72,extended,000003E7
+
+[Infinite Virtue]
+patch=1,EE,10350A74,extended,0000FFFF
+
+[Max Virtue]
+patch=1,EE,20350A74,extended,0098967F
+
+[Infinite Health]
+patch=1,EE,10350A90,extended,000003E7
+
+[Max Health]
+patch=1,EE,10350A92,extended,000003E7
+
+[Max Infinite Health]
+patch=1,EE,20350A90,extended,03E703E7
+
+[Infinite Stamina]
+patch=1,EE,10350A9E,extended,000003E7
+
+[Max Stamina]
+patch=1,EE,10350AA2,extended,000003E7
+
+[Infinite Virtue]
+patch=1,EE,10350AA4,extended,0000FFFF
+
+[Max Virtue]
+patch=1,EE,20350AA4,extended,0098967F
+
+[Infinite Health]
+patch=1,EE,10350AC0,extended,000003E7
+
+[Max Health]
+patch=1,EE,10350AC2,extended,000003E7
+
+[Max Infinite Health]
+patch=1,EE,20350AC0,extended,03E703E7
+
+[Infinite Stamina]
+patch=1,EE,10350ACE,extended,000003E7
+
+[Max Stamina]
+patch=1,EE,10350AD2,extended,000003E7
+
+[Infinite Virtue]
+patch=1,EE,10350AD4,extended,0000FFFF
+
+[Max Virtue]
+patch=1,EE,20350AD4,extended,0098967F
+
+[Max All Items]
+patch=1,EE,00350B6D,extended,00000063
+patch=1,EE,10350B6E,extended,00006363
+patch=1,EE,20350B70,extended,63636363
+patch=1,EE,20350B74,extended,63636363
+patch=1,EE,00350B78,extended,00000063
+patch=1,EE,00350BAB,extended,00000063
+
+[Max All Equip Attack Items]
+patch=1,EE,40350BAC,extended,00040001
+patch=1,EE,09090909,extended,00000000
+patch=1,EE,10350BBC,extended,00000909

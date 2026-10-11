@@ -1,0 +1,54 @@
+gametitle=Call Of Duty 2-Big Red One (SLUS-21228)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9032D408,extended,00832021
+patch=1,EE,903DB710,extended,00832021
+
+[Unlock All Chapters/Bonus Materials]
+patch=1,EE,D0100238,extended,00002335
+patch=1,EE,20393CA4,extended,0000000E
+
+[Infinite Health]
+patch=1,EE,E002902D,extended,00205D60
+patch=1,EE,20205D90,extended,8E620108
+patch=1,EE,20205D94,extended,AE420350
+
+[Infinite Ammo]
+patch=1,EE,D017A15C,extended,00001821
+patch=1,EE,2017A168,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,D017A15C,extended,00001821
+patch=1,EE,2017A164,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,D017A15C,extended,00001821
+patch=1,EE,2017A164,extended,00521021
+
+[Never Reload/Infinite Grenades]
+patch=1,EE,D017A1BC,extended,0000802D
+patch=1,EE,2017A1E8,extended,00000000
+
+[Infinite Health]
+patch=1,EE,E002902D,extended,001F4BB4
+patch=1,EE,201F4BE4,extended,8E620108
+patch=1,EE,201F4BE8,extended,AE420350
+
+[Infinite Ammo]
+patch=1,EE,D016323C,extended,00001821
+patch=1,EE,20163248,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,D016323C,extended,00001821
+patch=1,EE,20163244,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,D016323C,extended,00001821
+patch=1,EE,20163244,extended,00521021
+
+[Never Reload/Infinite Grenades]
+patch=1,EE,D016329C,extended,0000802D
+patch=1,EE,201632C8,extended,00000000

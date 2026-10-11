@@ -1,0 +1,74 @@
+gametitle=Nicktoons Unite! (SLUS-21284)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903E24D8,extended,00832021
+
+[Infinite Health (All Characters)]
+patch=1,EE,200C0220,extended,C44C017C
+patch=1,EE,200C0224,extended,080BE64B
+patch=1,EE,200C0228,extended,E44C0180
+patch=1,EE,202F9928,extended,08030088
+
+[Infinite Power (All Characters)]
+patch=1,EE,200C0230,extended,C44C02E0
+patch=1,EE,200C0234,extended,080BFFBA
+patch=1,EE,200C0238,extended,E44C02E4
+patch=1,EE,202FFEE4,extended,0803008C
+
+[Infinite Lives]
+patch=1,EE,202BE530,extended,00000000
+
+[Max Infinite Lives]
+patch=1,EE,202BE528,extended,24020063
+
+[Extra Lives]
+patch=1,EE,202BE528,extended,00451021
+
+[Max Infinite Lives (Alternate)]
+patch=1,EE,D08979E2,extended,00000088
+patch=1,EE,208979E4,extended,00000063
+
+[Max Infinite Tokens]
+patch=1,EE,D0893AC6,extended,00000089
+patch=1,EE,20893AD4,extended,000003E7
+
+[Tokens Worth 100]
+patch=1,EE,202C07F4,extended,24420064
+
+[Tokens Worth 50]
+patch=1,EE,202C07F4,extended,24420032
+
+[Tokens Worth 25]
+patch=1,EE,202C07F4,extended,24420019
+
+[Tokens Worth 10]
+patch=1,EE,202C07F4,extended,2442000A
+
+[Tokens Worth 5]
+patch=1,EE,202C07F4,extended,24420005
+
+[Tokens Worth 2]
+patch=1,EE,202C07F4,extended,24420002
+
+[Pickup 1 Token For Max Tokens]
+patch=1,EE,202C07F8,extended,240203E7
+
+[Unlock All Cross Save Extras]
+patch=1,EE,D08978FC,extended,00000000
+patch=1,EE,708978FC,extended,00000007
+
+[Infinite Lives]
+patch=1,EE,204884A8,extended,00000001
+
+[Infinite Power]
+patch=1,EE,20486B3C,extended,00000001
+
+[Super Slam]
+patch=1,EE,20486B44,extended,00000001
+
+[Give All Weapons]
+patch=1,EE,D0893322,extended,00000089
+patch=1,EE,20893318,extended,00000001

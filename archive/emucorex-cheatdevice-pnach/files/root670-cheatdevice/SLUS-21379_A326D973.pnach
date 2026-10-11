@@ -1,0 +1,98 @@
+gametitle=Cabela's African Safari (SLUS-21379)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012A8BC,extended,0C041188
+
+[Infinite Ammo]
+patch=1,EE,20517918,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,20517914,extended,00651821
+
+[Max Infinite Ammo]
+patch=1,EE,20517914,extended,24030063
+
+[Never Reload]
+patch=1,EE,2051AC10,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D06CD7C2,extended,0000FBFE
+patch=1,EE,205A0D90,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D06CD7C2,extended,0000FEFE
+patch=1,EE,205A0D90,extended,E6400228
+
+[Max Score]
+patch=1,EE,206FE7F8,extended,05F5E0FF
+
+[HUD Always On]
+patch=1,EE,20616708,extended,00000001
+
+[HUD Always Off]
+patch=1,EE,20616708,extended,00000000
+
+[Hit Camera Always On]
+patch=1,EE,20616DA0,extended,00000001
+
+[Hit Camera Always Off]
+patch=1,EE,20616DA0,extended,00000000
+
+[P1 Press {R1}+{SELECT} For No Clipping On]
+patch=1,EE,D06CD7C2,extended,0000F7FE
+patch=1,EE,206D2700,extended,00000001
+
+[P1 Press {R2}+{SELECT} For No Clipping Off]
+patch=1,EE,D06CD7C2,extended,0000FDFE
+patch=1,EE,206D2700,extended,00000000
+
+[God Mode Always On]
+patch=1,EE,206D2708,extended,00000001
+
+[God Mode Always Off]
+patch=1,EE,206D2708,extended,00000000
+
+[Stealthy Always On]
+patch=1,EE,206F5450,extended,00000001
+
+[Stealthy Always Off]
+patch=1,EE,206F5450,extended,00000000
+
+[Mo Ammo Always On]
+patch=1,EE,206F6598,extended,00000001
+
+[Mo Ammo Always Off]
+patch=1,EE,206F6598,extended,00000000
+
+[Cheat Cannon Always On]
+patch=1,EE,207046A0,extended,00000001
+
+[Cheat Cannon Always Off]
+patch=1,EE,207046A0,extended,00000000
+
+[Cheat Torpedo Always On]
+patch=1,EE,207046A8,extended,00000001
+
+[Cheat Torpedo Always Off]
+patch=1,EE,207046A8,extended,00000000
+
+[Stop Time Always On]
+patch=1,EE,207048F8,extended,00000001
+
+[Stop Time Always Off]
+patch=1,EE,207048F8,extended,00000000
+
+[Show Daily Missions]
+patch=1,EE,206F55A8,extended,00000001
+
+[Show Statistics]
+patch=1,EE,206FFD60,extended,00000001
+
+[Show Tropy]
+patch=1,EE,206FFD68,extended,00000001
+
+[Show Class]
+patch=1,EE,206FFD70,extended,00000001

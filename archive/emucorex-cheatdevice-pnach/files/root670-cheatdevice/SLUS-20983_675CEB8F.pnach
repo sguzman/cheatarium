@@ -1,0 +1,88 @@
+gametitle=Musashi-Samurai Legend (SLUS-20983)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90292E90,extended,00832021
+
+[Disable FMV]
+patch=1,EE,20285338,extended,24020001
+
+[Max HP]
+patch=1,EE,206C6B88,extended,43960000
+
+[Infinite HP]
+patch=1,EE,206C6B8C,extended,43960000
+
+[Max MP]
+patch=1,EE,206C6B90,extended,43960000
+
+[Infinite MP]
+patch=1,EE,206C6B94,extended,43960000
+
+[Max Strength]
+patch=1,EE,206C6B98,extended,43480000
+
+[Max Defense]
+patch=1,EE,206C6B9C,extended,43480000
+
+[Max Focus]
+patch=1,EE,206C6BA0,extended,43480000
+
+[Max Luck]
+patch=1,EE,206C6BA4,extended,43480000
+
+[Max All Stats]
+patch=1,EE,406C6B98,extended,00040001
+patch=1,EE,43480000,extended,00000000
+
+[Max Money]
+patch=1,EE,206C6BA8,extended,4CBEBC20
+
+[Level 99]
+patch=1,EE,206C6BAC,extended,42C40000
+
+[Gain 50000 EXP Per Kill]
+patch=1,EE,201D5024,extended,3413C350
+
+[Gain 25000 EXP Per Kill]
+patch=1,EE,201D5024,extended,341361A8
+
+[Gain 10000 EXP Per Kill]
+patch=1,EE,201D5024,extended,34132710
+
+[Gain 5000 EXP Per Kill]
+patch=1,EE,201D5024,extended,34131388
+
+[Gain 1000 EXP Per Kill]
+patch=1,EE,201D5024,extended,341303E8
+
+[Gain 500 EXP Per Kill]
+patch=1,EE,201D5024,extended,341301F4
+
+[Gain 100 EXP Per Kill]
+patch=1,EE,201D5024,extended,34130064
+
+[Have All Rescue List]
+patch=1,EE,106C76E2,extended,0000FFFF
+patch=1,EE,106C76E4,extended,0000FFFF
+patch=1,EE,006C76E6,extended,000000FF
+
+[Have All Weapons]
+patch=1,EE,206C76EC,extended,FFFFFFFF
+
+[Have All Artifacts]
+patch=1,EE,206C76F0,extended,FFFFFFFF
+
+[Iron Parts]
+patch=1,EE,006C74EB,extended,000000E3
+
+[Steel Parts]
+patch=1,EE,006C74EC,extended,000000E3
+
+[Mithril Parts]
+patch=1,EE,006C74ED,extended,000000E3
+
+[Magic Alloy]
+patch=1,EE,006C74EE,extended,000000E3

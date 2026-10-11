@@ -1,0 +1,242 @@
+gametitle=MX World Tour-Featuring Jamie Little (SLUS-21097)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902CD458,extended,00832021
+
+[Start On Lap 2]
+patch=1,EE,D1ED7544,extended,00000001
+patch=1,EE,11ED7544,extended,00000002
+
+[Start On Lap 3]
+patch=1,EE,D1ED7544,extended,00000001
+patch=1,EE,11ED7544,extended,00000003
+
+[Start On Lap 4]
+patch=1,EE,D1ED7544,extended,00000001
+patch=1,EE,11ED7544,extended,00000004
+
+[Quick Win]
+patch=1,EE,21ED7544,extended,00030003
+
+[Always Low Lap Time]
+patch=1,EE,20157CEC,extended,AC400000
+
+[Max Series Points]
+patch=1,EE,204004B4,extended,000003E7
+
+[San Pedro, CA]
+patch=1,EE,20301F30,extended,00000001
+
+[St. Petersburg]
+patch=1,EE,20301F34,extended,00000001
+
+[Chicago]
+patch=1,EE,20301F38,extended,00000001
+
+[Carcelona]
+patch=1,EE,20301F3C,extended,00000001
+
+[Luxor]
+patch=1,EE,20301F40,extended,00000001
+
+[Los Angeles]
+patch=1,EE,20301F44,extended,00000001
+
+[Rome]
+patch=1,EE,20301F48,extended,00000001
+
+[Tijuana]
+patch=1,EE,20301F4C,extended,00000001
+
+[Tokyo]
+patch=1,EE,20301F50,extended,00000001
+
+[Seoul]
+patch=1,EE,20301F54,extended,00000001
+
+[Paris]
+patch=1,EE,20301F58,extended,00000001
+
+[St. Louis]
+patch=1,EE,20301F5C,extended,00000001
+
+[New York City]
+patch=1,EE,20301F60,extended,00000001
+
+[Istanbul]
+patch=1,EE,20301F64,extended,00000001
+
+[London]
+patch=1,EE,20301F68,extended,00000001
+
+[Moscow]
+patch=1,EE,20301F6C,extended,00000001
+
+[Melbourne]
+patch=1,EE,20301F70,extended,00000001
+
+[Big Rock]
+patch=1,EE,20301F74,extended,00000001
+
+[Perth]
+patch=1,EE,20301F78,extended,00000001
+
+[Sydney]
+patch=1,EE,20301F7C,extended,00000001
+
+[Mexico City]
+patch=1,EE,20301F80,extended,00000001
+
+[Osaka]
+patch=1,EE,20301F84,extended,00000001
+
+[Acapulco]
+patch=1,EE,20301F88,extended,00000001
+
+[Monterrey]
+patch=1,EE,20301F8C,extended,00000001
+
+[Bangkok]
+patch=1,EE,20301F90,extended,00000001
+
+[Phoenix]
+patch=1,EE,20301F94,extended,00000001
+
+[Athens]
+patch=1,EE,20301F98,extended,00000001
+
+[Las Vegas]
+patch=1,EE,20301F9C,extended,00000001
+
+[Amsterdam]
+patch=1,EE,20301FA0,extended,00000001
+
+[Black Forest]
+patch=1,EE,20301FA4,extended,00000001
+
+[Mt. Fuji]
+patch=1,EE,20301FA8,extended,00000001
+
+[Great Wall]
+patch=1,EE,20301FAC,extended,00000001
+
+[All Locations]
+patch=1,EE,40301F30,extended,00200001
+patch=1,EE,00000001,extended,00000000
+
+[SX Mexico]
+patch=1,EE,20400530,extended,00000001
+
+[SX USA]
+patch=1,EE,20400534,extended,00000001
+
+[MX USA]
+patch=1,EE,20400538,extended,00000001
+
+[SX Australia]
+patch=1,EE,2040053C,extended,00000001
+
+[SX Asia]
+patch=1,EE,20400540,extended,00000001
+
+[MX Asia]
+patch=1,EE,20400544,extended,00000001
+
+[SX Eurasia]
+patch=1,EE,20400548,extended,00000001
+
+[SX Europe]
+patch=1,EE,2040054C,extended,00000001
+
+[MX Europe]
+patch=1,EE,20400550,extended,00000001
+
+[SuperMoto]
+patch=1,EE,20400554,extended,00000001
+
+[All Series]
+patch=1,EE,40400530,extended,000A0001
+patch=1,EE,00000001,extended,00000000
+
+[Yourself]
+patch=1,EE,20400564,extended,000003E7
+
+[Opponent 1]
+patch=1,EE,20400570,extended,000003E7
+
+[Opponent 2]
+patch=1,EE,2040057C,extended,000003E7
+
+[Opponent 3]
+patch=1,EE,20400588,extended,000003E7
+
+[Opponent 4]
+patch=1,EE,20400594,extended,000003E7
+
+[Opponent 5]
+patch=1,EE,204005A0,extended,000003E7
+
+[Opponent 6]
+patch=1,EE,204005AC,extended,000003E7
+
+[Opponent 7]
+patch=1,EE,204005B8,extended,000003E7
+
+[Opponent 8]
+patch=1,EE,204005C4,extended,000003E7
+
+[Opponent 9]
+patch=1,EE,204005D0,extended,000003E7
+
+[Opponent 10]
+patch=1,EE,204005DC,extended,000003E7
+
+[Opponent 11]
+patch=1,EE,204005E8,extended,000003E7
+
+[All Opponents]
+patch=1,EE,404005D0,extended,000B0003
+patch=1,EE,000003E7,extended,00000000
+
+[Yourself]
+patch=1,EE,20400564,extended,00000000
+
+[Opponent 1]
+patch=1,EE,20400570,extended,00000000
+
+[Opponent 2]
+patch=1,EE,2040057C,extended,00000000
+
+[Opponent 3]
+patch=1,EE,20400588,extended,00000000
+
+[Opponent 4]
+patch=1,EE,20400594,extended,00000000
+
+[Opponent 5]
+patch=1,EE,204005A0,extended,00000000
+
+[Opponent 6]
+patch=1,EE,204005AC,extended,00000000
+
+[Opponent 7]
+patch=1,EE,204005B8,extended,00000000
+
+[Opponent 8]
+patch=1,EE,204005C4,extended,00000000
+
+[Opponent 9]
+patch=1,EE,204005D0,extended,00000000
+
+[Opponent 10]
+patch=1,EE,204005DC,extended,00000000
+
+[Opponent 11]
+patch=1,EE,204005E8,extended,00000000
+
+[All Opponents]
+patch=1,EE,404005D0,extended,000B0003
+patch=1,EE,00000000,extended,00000000

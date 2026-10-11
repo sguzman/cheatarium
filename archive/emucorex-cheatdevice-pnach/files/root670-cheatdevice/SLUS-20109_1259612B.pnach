@@ -1,0 +1,37 @@
+gametitle=Rune-Viking Warlord (SLUS-20109)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code V2 (Must Be On)]
+patch=1,EE,903694EC,extended,0C0DCF99
+patch=1,EE,200C0220,extended,3C01003B
+patch=1,EE,200C0224,extended,8C24A8F0
+patch=1,EE,200C0228,extended,1080000A
+patch=1,EE,200C0254,extended,03E00008
+patch=1,EE,200C0258,extended,00000000
+patch=1,EE,20369504,extended,08030088
+
+[Max Health]
+patch=1,EE,200C022C,extended,2401012C
+patch=1,EE,200C0230,extended,AC810648
+
+[Infinite Health]
+patch=1,EE,200C0234,extended,240100DC
+patch=1,EE,200C0238,extended,AC81063C
+
+[Infinite Bloodlust]
+patch=1,EE,200C023C,extended,24010064
+patch=1,EE,200C0240,extended,AC810640
+
+[Infinite Rune Power]
+patch=1,EE,200C0244,extended,240100C8
+patch=1,EE,200C0248,extended,AC810644
+
+[Max Rune Power]
+patch=1,EE,200C024C,extended,240100C8
+patch=1,EE,200C0250,extended,AC810650
+
+[Infinite Air]
+patch=1,EE,20218AB8,extended,00000000
+patch=1,EE,20218ABC,extended,00000000

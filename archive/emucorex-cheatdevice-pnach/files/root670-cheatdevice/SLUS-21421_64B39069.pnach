@@ -1,0 +1,266 @@
+gametitle=Spy Hunter-Nowhere To Run (SLUS-21421)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90496BF4,extended,0C12C3ED
+
+[Unlock All Missions]
+patch=1,EE,202BFC14,extended,24020001
+patch=1,EE,202BFC68,extended,AE0200F0
+
+[Unlock All Movies]
+patch=1,EE,202C00C0,extended,24050001
+patch=1,EE,202C01A8,extended,AE2500F0
+
+[Unlock All Bonus Levels]
+patch=1,EE,202C04B0,extended,24030001
+patch=1,EE,202C04B4,extended,10000036
+patch=1,EE,202C04B8,extended,AE2300F0
+
+[Unlock All Weapons]
+patch=1,EE,202C0C04,extended,24050001
+patch=1,EE,202C0C0C,extended,AE2500F0
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C013F80
+patch=1,EE,200C0224,extended,00400008
+patch=1,EE,200C0228,extended,AC810610
+patch=1,EE,2042397C,extended,0C030088
+
+[Infinite Ammo]
+patch=1,EE,20421A50,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,20411184,extended,46006300
+
+[Infinite Health]
+patch=1,EE,200C0230,extended,3C013F80
+patch=1,EE,200C0234,extended,00600008
+patch=1,EE,200C0238,extended,AC8101D4
+patch=1,EE,2033F5C4,extended,0C03008C
+
+[Infinite Ammo]
+patch=1,EE,20439938,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2043992C,extended,3C0142C6
+patch=1,EE,20439930,extended,44810000
+patch=1,EE,20439934,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,20439934,extended,46010000
+
+[Something Lost]
+patch=1,EE,2080F510,extended,00000001
+
+[Undercover]
+patch=1,EE,2080F660,extended,00000001
+
+[The Escape]
+patch=1,EE,207FD2E0,extended,00000001
+
+[Surprise Attack]
+patch=1,EE,207FD430,extended,00000001
+
+[Counterattack]
+patch=1,EE,207FD580,extended,00000001
+
+[On The Run]
+patch=1,EE,20AB10B0,extended,00000001
+
+[Cleaning Up]
+patch=1,EE,20AB1200,extended,00000001
+
+[The Chase]
+patch=1,EE,20AB1350,extended,00000001
+
+[Intercepted]
+patch=1,EE,20AB14A0,extended,00000001
+
+[Derailed]
+patch=1,EE,20AB15F0,extended,00000001
+
+[Final Countdown]
+patch=1,EE,20AB1740,extended,00000001
+
+[Something Found]
+patch=1,EE,20AB1890,extended,00000001
+
+[Attract]
+patch=1,EE,20AB19E0,extended,00000001
+
+[Rock Mocap]
+patch=1,EE,20AB1B30,extended,00000001
+
+[Trailer]
+patch=1,EE,20AB1C80,extended,00000001
+
+[Something Lost Movie 1]
+patch=1,EE,20AB2A30,extended,00000001
+
+[Something Lost Movie 2]
+patch=1,EE,20AB2B80,extended,00000001
+
+[Something Lost Movie 3]
+patch=1,EE,20AB2CD0,extended,00000001
+
+[Something Lost Movie 4]
+patch=1,EE,20AB2E20,extended,00000001
+
+[Undercover Movie 1]
+patch=1,EE,20AB2F70,extended,00000001
+
+[Undercover Movie 2]
+patch=1,EE,20AB30C0,extended,00000001
+
+[Undercover Movie 3]
+patch=1,EE,20AB3210,extended,00000001
+
+[Undercover Movie 4]
+patch=1,EE,20AB3360,extended,00000001
+
+[Undercover Movie 5]
+patch=1,EE,20AB34B0,extended,00000001
+
+[Undercover Movie 6]
+patch=1,EE,20AB3600,extended,00000001
+
+[The Escape Movie 1]
+patch=1,EE,20AB3750,extended,00000001
+
+[The Escape Movie 2]
+patch=1,EE,20AB38A0,extended,00000001
+
+[Surprise Attack Movie 1]
+patch=1,EE,20AB39F0,extended,00000001
+
+[Surprise Attack Movie 2]
+patch=1,EE,20AB3B40,extended,00000001
+
+[Surprise Attack Movie 3]
+patch=1,EE,20AB3C90,extended,00000001
+
+[Surprise Attack Movie 4]
+patch=1,EE,20AB3DE0,extended,00000001
+
+[Surprise Attack Movie 5]
+patch=1,EE,20AB3F30,extended,00000001
+
+[Surprise Attack Movie 6]
+patch=1,EE,20AB4080,extended,00000001
+
+[Counterattack Movie 1]
+patch=1,EE,20AB41D0,extended,00000001
+
+[Counterattack Movie 2]
+patch=1,EE,20AB4320,extended,00000001
+
+[Counterattack Movie 3]
+patch=1,EE,20AB4470,extended,00000001
+
+[Counterattack Movie 4]
+patch=1,EE,20AB45C0,extended,00000001
+
+[Counterattack Movie 5]
+patch=1,EE,20AB4710,extended,00000001
+
+[On The Run Movie 1]
+patch=1,EE,20AB4860,extended,00000001
+
+[On The Run Movie 2]
+patch=1,EE,20AB49B0,extended,00000001
+
+[On The Run Movie 3]
+patch=1,EE,20AB4B00,extended,00000001
+
+[On The Run Movie 4]
+patch=1,EE,20AB4C50,extended,00000001
+
+[Cleaning Up Movie 1]
+patch=1,EE,20AB4DA0,extended,00000001
+
+[Cleaning Up Movie 2]
+patch=1,EE,20AB4EF0,extended,00000001
+
+[Cleaning Up Movie 3]
+patch=1,EE,20AB5040,extended,00000001
+
+[The Chase Movie 1]
+patch=1,EE,20AB5190,extended,00000001
+
+[The Chase Movie 2]
+patch=1,EE,20AB52E0,extended,00000001
+
+[The Chase Movie 3]
+patch=1,EE,20AB5430,extended,00000001
+
+[The Chase Movie 4]
+patch=1,EE,20AB5580,extended,00000001
+
+[The Chase Movie 5]
+patch=1,EE,20AB56D0,extended,00000001
+
+[Intercepted Movie 1]
+patch=1,EE,20AB5820,extended,00000001
+
+[Intercepted Movie 2]
+patch=1,EE,20AB5970,extended,00000001
+
+[Derailed Movie 1]
+patch=1,EE,20AB5AC0,extended,00000001
+
+[Derailed Movie 2]
+patch=1,EE,20AB5C10,extended,00000001
+
+[Derailed Movie 3]
+patch=1,EE,20AB5D60,extended,00000001
+
+[Final Countdown Movie 1]
+patch=1,EE,20AB5EB0,extended,00000001
+
+[Final Countdown Movie 2]
+patch=1,EE,20AB6000,extended,00000001
+
+[Final Countdown Movie 3]
+patch=1,EE,20AB6150,extended,00000001
+
+[Final Countdown Movie 4]
+patch=1,EE,20AB62A0,extended,00000001
+
+[Something Found Movie 1]
+patch=1,EE,20AB63F0,extended,00000001
+
+[Something Found Movie 2]
+patch=1,EE,20AB6540,extended,00000001
+
+[Micro]
+patch=1,EE,20AB2700,extended,00000001
+
+[Tactical]
+patch=1,EE,20AB2810,extended,00000001
+
+[Vindicator]
+patch=1,EE,20AB2920,extended,00000001
+
+[Bomb Challenge]
+patch=1,EE,20AB1DD0,extended,00000001
+
+[Boat Challenge]
+patch=1,EE,20AB1F20,extended,00000001
+
+[Tank Challenge]
+patch=1,EE,20AB2070,extended,00000001
+
+[Motorcyle Challenge]
+patch=1,EE,20AB21C0,extended,00000001
+
+[Survival Challenge]
+patch=1,EE,20AB2310,extended,00000001
+
+[Slo Mo Challenge]
+patch=1,EE,20AB2460,extended,00000001
+
+[Spy Hunter Arcade]
+patch=1,EE,20AB25B0,extended,00000001

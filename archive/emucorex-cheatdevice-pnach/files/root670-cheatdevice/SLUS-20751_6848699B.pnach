@@ -1,0 +1,1318 @@
+gametitle=007 Everything Or Nothing (SLUS-20751)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9041853C,extended,0C0F1B18
+patch=1,EE,90416164,extended,0C109B77
+
+[Never Reload]
+patch=1,EE,D012021C,extended,00009C1A
+patch=1,EE,20184F60,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,D012021C,extended,00009C1A
+patch=1,EE,20216CE8,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,D012021C,extended,00009C1A
+patch=1,EE,20216CD8,extended,00461021
+
+[Infinite Health]
+patch=1,EE,E0029C1A,extended,0012021C
+patch=1,EE,20240A10,extended,C62109D0
+patch=1,EE,20240A1C,extended,E62109CC
+
+[Weapons With Zoom Can Zoom HELLA]
+patch=1,EE,D012021C,extended,00009C1A
+patch=1,EE,20186BDC,extended,00000000
+
+[Max Total Score]
+patch=1,EE,D012021C,extended,00009C1A
+patch=1,EE,20488AEC,extended,05F5E0FF
+
+[Unlock All Gadgets/Rewards]
+patch=1,EE,20100858,extended,FFFFFFFF
+
+[Unlock All Cheats]
+patch=1,EE,2010085C,extended,1FFFFFFF
+
+[Completed Level]
+patch=1,EE,00100274,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100275,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100276,extended,00000003
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100278,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010027A,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,1010027C,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010027E,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100280,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100282,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100284,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100288,extended,00000002
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010028A,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,1010028C,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010028E,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100290,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100298,extended,00000009
+
+[Completed Level]
+patch=1,EE,001002BC,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001002BD,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101002BE,extended,0000001F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101002C0,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101002C2,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101002C4,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101002C6,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101002C8,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101002CA,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101002CC,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101002D0,extended,00000005
+
+[Max Current Enemies Subdued]
+patch=1,EE,101002D2,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101002D4,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101002D6,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101002D8,extended,00000000
+
+[Completed Level]
+patch=1,EE,001002E0,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001002E1,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101002E2,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101002E4,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101002E6,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101002E8,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101002EA,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101002EC,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101002EE,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101002F0,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101002F4,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,101002F6,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101002F8,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101002FA,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101002FC,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100304,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100305,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100306,extended,0000000F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100308,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010030A,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,1010030C,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010030E,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100310,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100312,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100314,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100318,extended,00000004
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010031A,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,1010031C,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010031E,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100320,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100328,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100329,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,1010032A,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,1010032C,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010032E,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100330,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100332,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100334,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100336,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100338,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,1010033C,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010033E,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100340,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,10100342,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100344,extended,00000000
+
+[Completed Level]
+patch=1,EE,0010034C,extended,00000009
+
+[Completed Level]
+patch=1,EE,00100370,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100371,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100372,extended,00000003
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100374,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100376,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100378,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010037A,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,1010037C,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010037E,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100380,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100384,extended,00000002
+
+[Max Current Enemies Subdued]
+patch=1,EE,10100386,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100388,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010038A,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,1010038C,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100394,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100395,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100396,extended,0000000F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100398,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010039A,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,1010039C,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010039E,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101003A0,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101003A2,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101003A4,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101003A8,extended,00000004
+
+[Max Current Enemies Subdued]
+patch=1,EE,101003AA,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101003AC,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101003AE,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101003B0,extended,00000000
+
+[Completed Level]
+patch=1,EE,001003B8,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001003B9,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101003BA,extended,0000000F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101003BC,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101003BE,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101003C0,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101003C2,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101003C4,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101003C6,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101003C8,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101003CC,extended,00000004
+
+[Max Current Enemies Subdued]
+patch=1,EE,101003CE,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101003D0,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101003D2,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101003D4,extended,00000000
+
+[Completed Level]
+patch=1,EE,001003DC,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001003DD,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101003DE,extended,0000003F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101003E0,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101003E2,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101003E4,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101003E6,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101003E8,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101003EA,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101003EC,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101003F0,extended,00000006
+
+[Max Current Enemies Subdued]
+patch=1,EE,101003F2,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101003F4,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101003F6,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101003F8,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100400,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100401,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100402,extended,0000001F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100404,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100406,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100408,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010040A,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,1010040C,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010040E,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100410,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100414,extended,00000005
+
+[Max Current Enemies Subdued]
+patch=1,EE,10100416,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100418,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010041A,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,1010041C,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100424,extended,00000009
+
+[Completed Level]
+patch=1,EE,00100448,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100449,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,1010044A,extended,0000000F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,1010044C,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010044E,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100450,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100452,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100454,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100456,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100458,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,1010045C,extended,00000004
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010045E,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100460,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,10100462,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100464,extended,00000000
+
+[Completed Level]
+patch=1,EE,0010046C,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,0010046D,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,1010046E,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100470,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100472,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100474,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100476,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100478,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010047A,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,1010047C,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100480,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,10100482,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100484,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,10100486,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100488,extended,00000000
+
+[Completed Level]
+patch=1,EE,001004B4,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001004B5,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101004B6,extended,0000003F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101004B8,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101004BA,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101004BC,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101004BE,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101004C0,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101004C2,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101004C4,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101004C8,extended,00000006
+
+[Max Current Enemies Subdued]
+patch=1,EE,101004CA,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101004CC,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101004CE,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101004D0,extended,00000000
+
+[Completed Level]
+patch=1,EE,001004D8,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001004D9,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101004DA,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101004DC,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101004DE,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101004E0,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101004E2,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101004E4,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101004E6,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101004E8,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101004EC,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,101004EE,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101004F0,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101004F2,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101004F4,extended,00000000
+
+[Completed Level]
+patch=1,EE,001004FC,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001004FD,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101004FE,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100500,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100502,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100504,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100506,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100508,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010050A,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,1010050C,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100510,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,10100512,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100514,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,10100516,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100518,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100520,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100521,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100522,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100524,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100526,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100528,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010052A,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,1010052C,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010052E,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100530,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100534,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,10100536,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100538,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010053A,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,1010053C,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100544,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100545,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100546,extended,0000000F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100548,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010054A,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,1010054C,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010054E,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100550,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100552,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100554,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100558,extended,00000004
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010055A,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,1010055C,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010055E,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100560,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100568,extended,00000009
+
+[Completed Level]
+patch=1,EE,0010058C,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,0010058D,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,1010058E,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100590,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100592,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100594,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100596,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100598,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010059A,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,1010059C,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101005A0,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,101005A2,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101005A4,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101005A6,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101005A8,extended,00000000
+
+[Completed Level]
+patch=1,EE,001005B0,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001005B1,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101005B2,extended,00000003
+
+[Max Best Mission Duration]
+patch=1,EE,101005C0,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101005C4,extended,00000002
+
+[Always Low Current Mission Duration]
+patch=1,EE,101005CC,extended,00000000
+
+[Completed Level]
+patch=1,EE,001005D4,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001005D5,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101005D6,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101005D8,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101005DA,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101005DC,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101005DE,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101005E0,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101005E2,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101005E4,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101005E8,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,101005EA,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101005EC,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101005EE,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101005F0,extended,00000000
+
+[Completed Level]
+patch=1,EE,001005F8,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001005F9,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101005FA,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101005FC,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101005FE,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100600,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100602,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100604,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100606,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100608,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,1010060C,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010060E,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100610,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,10100612,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100614,extended,00000000
+
+[Completed Level]
+patch=1,EE,0010061C,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,0010061D,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,1010061E,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100620,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100622,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100624,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100626,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100628,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010062A,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,1010062C,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100630,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,10100632,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100634,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,10100636,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100638,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100640,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100641,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100642,extended,00000003
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100644,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,10100646,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100648,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010064A,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,1010064C,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,1010064E,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100650,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100654,extended,00000002
+
+[Max Current Enemies Subdued]
+patch=1,EE,10100656,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100658,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010065A,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,1010065C,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100664,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100665,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,10100666,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,10100668,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010066A,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,1010066C,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,1010066E,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100670,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100672,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100674,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,10100678,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010067A,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,1010067C,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010067E,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,10100680,extended,00000000
+
+[Completed Level]
+patch=1,EE,00100688,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,00100689,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,1010068A,extended,0000003F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,1010068C,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010068E,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100690,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100692,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100694,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100696,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,10100698,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,1010069C,extended,00000006
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010069E,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101006A0,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101006A2,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101006A4,extended,00000000
+
+[Completed Level]
+patch=1,EE,001006AC,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001006AD,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101006AE,extended,0000000F
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101006B0,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101006B2,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101006B4,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101006B6,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101006B8,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101006BA,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101006BC,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101006C0,extended,00000004
+
+[Max Current Enemies Subdued]
+patch=1,EE,101006C2,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101006C4,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101006C6,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101006C8,extended,00000000
+
+[Completed Level]
+patch=1,EE,001006D0,extended,00000009
+
+[Completed Platinum]
+patch=1,EE,001006D1,extended,00000001
+
+[Max Best Bond Moments]
+patch=1,EE,101006D2,extended,00000007
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101006D4,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101006D6,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101006D8,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101006DA,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,101006DC,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,101006DE,extended,0000270F
+
+[Max Best Mission Duration]
+patch=1,EE,101006E0,extended,00000000
+
+[Max Current Bond Moments]
+patch=1,EE,101006E4,extended,00000003
+
+[Max Current Enemies Subdued]
+patch=1,EE,101006E6,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,101006E8,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,101006EA,extended,000003E8
+
+[Always Low Current Mission Duration]
+patch=1,EE,101006EC,extended,00000000
+
+[Completed Level]
+patch=1,EE,001006F4,extended,00000009
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,101006F8,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,101006FA,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,101006FC,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,101006FE,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100700,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100702,extended,0000270F
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010070A,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,1010070C,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,1010070E,extended,000003E8
+
+[Completed Level]
+patch=1,EE,00100718,extended,00000009
+
+[Max Best Stealth Enemies Subdued]
+patch=1,EE,1010071C,extended,000003E7
+
+[Max Best Non-Lethal Enemies Subdued]
+patch=1,EE,1010071E,extended,000003E7
+
+[Max Best Other Enemies Subdued]
+patch=1,EE,10100720,extended,000003E7
+
+[Max Best Weapon Enemies Subdued]
+patch=1,EE,10100722,extended,000003E7
+
+[Max Best Rounds Fired]
+patch=1,EE,10100724,extended,0000270F
+
+[Max Best Rounds Hit]
+patch=1,EE,10100726,extended,0000270F
+
+[Max Current Enemies Subdued]
+patch=1,EE,1010072E,extended,0000270F
+
+[Max Current Weapon Accuracy]
+patch=1,EE,10100730,extended,000003E8
+
+[Max Current Weapon Efficiency]
+patch=1,EE,10100732,extended,000003E8
+
+[Infinite Ammo]
+patch=1,EE,D03A22A4,extended,00000172
+patch=1,EE,202537E4,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,D03A22A4,extended,00000172
+patch=1,EE,102537E0,extended,00000001
+
+[Infinite Health]
+patch=1,EE,D03A22A4,extended,00000172
+
+[Infinite Health]
+patch=1,EE,D03A22A4,extended,00000172
+patch=1,EE,2024B3D8,extended,00000000
+
+[Do More Damage]
+patch=1,EE,D03A22A4,extended,00000172
+patch=1,EE,2024BBE0,extended,00000000

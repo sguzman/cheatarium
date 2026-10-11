@@ -1,0 +1,143 @@
+gametitle=Rayman-Raving Rabbids (SLUS-21576)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,905C0848,extended,00832021
+
+[Points Dont Decrease From Misses]
+patch=1,EE,20486CE0,extended,00000000
+patch=1,EE,20486CEC,extended,00000000
+
+[Quick Score Gain]
+patch=1,EE,20486D34,extended,24030064
+
+[Super Quick Score Gain]
+patch=1,EE,20486D34,extended,240303E8
+
+[Ultra Quick Score Gain]
+patch=1,EE,20486D34,extended,24032710
+
+[Infinite Time]
+patch=1,EE,204EE120,extended,00000000
+
+[Rayman]
+patch=1,EE,20E91EC8,extended,00000001
+
+[Gothic]
+patch=1,EE,20E91EC8,extended,00000002
+
+[Granny]
+patch=1,EE,20E91EC8,extended,00000003
+
+[Disco]
+patch=1,EE,20E91EC8,extended,00000004
+
+[Rock 'n' Roll]
+patch=1,EE,20E91EC8,extended,00000005
+
+[Gangsta]
+patch=1,EE,20E91EC8,extended,00000006
+
+[Dee-Jay]
+patch=1,EE,20E91EC8,extended,00000007
+
+[Raymaninho]
+patch=1,EE,20E91EC8,extended,00000008
+
+[Bunny]
+patch=1,EE,20E91EC8,extended,00000009
+
+[Caramba]
+patch=1,EE,20E91EC8,extended,0000000A
+
+[Rayman]
+patch=1,EE,20E91ECC,extended,00000001
+
+[Gothic]
+patch=1,EE,20E91ECC,extended,00000002
+
+[Granny]
+patch=1,EE,20E91ECC,extended,00000003
+
+[Disco]
+patch=1,EE,20E91ECC,extended,00000004
+
+[Rock 'n' Roll]
+patch=1,EE,20E91ECC,extended,00000005
+
+[Gangsta]
+patch=1,EE,20E91ECC,extended,00000006
+
+[Dee-Jay]
+patch=1,EE,20E91ECC,extended,00000007
+
+[Raymaninho]
+patch=1,EE,20E91ECC,extended,00000008
+
+[Bunny]
+patch=1,EE,20E91ECC,extended,00000009
+
+[Caramba]
+patch=1,EE,20E91ECC,extended,0000000A
+
+[Rayman]
+patch=1,EE,20E91ED0,extended,00000001
+
+[Gothic]
+patch=1,EE,20E91ED0,extended,00000002
+
+[Granny]
+patch=1,EE,20E91ED0,extended,00000003
+
+[Disco]
+patch=1,EE,20E91ED0,extended,00000004
+
+[Rock 'n' Roll]
+patch=1,EE,20E91ED0,extended,00000005
+
+[Gangsta]
+patch=1,EE,20E91ED0,extended,00000006
+
+[Dee-Jay]
+patch=1,EE,20E91ED0,extended,00000007
+
+[Raymaninho]
+patch=1,EE,20E91ED0,extended,00000008
+
+[Bunny]
+patch=1,EE,20E91ED0,extended,00000009
+
+[Caramba]
+patch=1,EE,20E91ED0,extended,0000000A
+
+[Rayman]
+patch=1,EE,20E91ED4,extended,00000001
+
+[Gothic]
+patch=1,EE,20E91ED4,extended,00000002
+
+[Granny]
+patch=1,EE,20E91ED4,extended,00000003
+
+[Disco]
+patch=1,EE,20E91ED4,extended,00000004
+
+[Rock 'n' Roll]
+patch=1,EE,20E91ED4,extended,00000005
+
+[Gangsta]
+patch=1,EE,20E91ED4,extended,00000006
+
+[Dee-Jay]
+patch=1,EE,20E91ED4,extended,00000007
+
+[Raymaninho]
+patch=1,EE,20E91ED4,extended,00000008
+
+[Bunny]
+patch=1,EE,20E91ED4,extended,00000009
+
+[Caramba]
+patch=1,EE,20E91ED4,extended,0000000A

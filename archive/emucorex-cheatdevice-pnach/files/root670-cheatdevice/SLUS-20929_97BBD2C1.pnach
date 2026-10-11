@@ -1,0 +1,432 @@
+gametitle=Battle Assault 3-Featuring Gundam SEED (SLUS-20929)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90118A30,extended,00832021
+
+[Infinite BA]
+patch=1,EE,20308B00,extended,44FA0000
+
+[No BA]
+patch=1,EE,20308B00,extended,00000000
+
+[Infinite AMR]
+patch=1,EE,20308B04,extended,44FA0000
+
+[No AMR]
+patch=1,EE,20308B04,extended,00000000
+
+[Never Overheat]
+patch=1,EE,20308B08,extended,44FA0000
+
+[Always Overheat]
+patch=1,EE,20308B08,extended,00000000
+
+[Infinite Skill Shields]
+patch=1,EE,20308B0C,extended,00000003
+
+[No Skill Shields]
+patch=1,EE,20308B0C,extended,00000000
+
+[OS Version 9]
+patch=1,EE,20308B10,extended,00000009
+
+[OS Version 8]
+patch=1,EE,20308B10,extended,00000008
+
+[OS Version 7]
+patch=1,EE,20308B10,extended,00000007
+
+[OS Version 6]
+patch=1,EE,20308B10,extended,00000006
+
+[OS Version 5]
+patch=1,EE,20308B10,extended,00000005
+
+[OS Version 4]
+patch=1,EE,20308B10,extended,00000004
+
+[OS Version 3]
+patch=1,EE,20308B10,extended,00000003
+
+[OS Version 2]
+patch=1,EE,20308B10,extended,00000002
+
+[OS Version 1]
+patch=1,EE,20308B10,extended,00000001
+
+[OS Version 0]
+patch=1,EE,20308B10,extended,00000000
+
+[Infinite Ability Time]
+patch=1,EE,20308B40,extended,000005DC
+
+[No Ability Time]
+patch=1,EE,20308B40,extended,00000000
+
+[Infinite BA]
+patch=1,EE,20308CC0,extended,44FA0000
+
+[No BA]
+patch=1,EE,20308CC0,extended,00000000
+
+[Infinite AMR]
+patch=1,EE,20308CC4,extended,44FA0000
+
+[No AMR]
+patch=1,EE,20308CC4,extended,00000000
+
+[Never Overheat]
+patch=1,EE,20308CC8,extended,44FA0000
+
+[Always Overheat]
+patch=1,EE,20308CC8,extended,00000000
+
+[Infinite Skill Shields]
+patch=1,EE,20308CCC,extended,00000003
+
+[No Skill Shields]
+patch=1,EE,20308CCC,extended,00000000
+
+[OS Version 9]
+patch=1,EE,20308CD0,extended,00000009
+
+[OS Version 8]
+patch=1,EE,20308CD0,extended,00000008
+
+[OS Version 7]
+patch=1,EE,20308CD0,extended,00000007
+
+[OS Version 6]
+patch=1,EE,20308CD0,extended,00000006
+
+[OS Version 5]
+patch=1,EE,20308CD0,extended,00000005
+
+[OS Version 4]
+patch=1,EE,20308CD0,extended,00000004
+
+[OS Version 3]
+patch=1,EE,20308CD0,extended,00000003
+
+[OS Version 2]
+patch=1,EE,20308CD0,extended,00000002
+
+[OS Version 1]
+patch=1,EE,20308CD0,extended,00000001
+
+[OS Version 0]
+patch=1,EE,20308CD0,extended,00000000
+
+[Infinite Ability Time]
+patch=1,EE,20308D00,extended,000005DC
+
+[No Ability Time]
+patch=1,EE,20308D00,extended,00000000
+
+[Infinite BA]
+patch=1,EE,20308BE0,extended,44FA0000
+
+[No BA]
+patch=1,EE,20308BE0,extended,00000000
+
+[Infinite AMR]
+patch=1,EE,20308BE4,extended,44FA0000
+
+[No AMR]
+patch=1,EE,20308BE4,extended,00000000
+
+[Never Overheat]
+patch=1,EE,20308BE8,extended,44FA0000
+
+[Always Overheat]
+patch=1,EE,20308BE8,extended,00000000
+
+[Infinite Skill Shields]
+patch=1,EE,20308BEC,extended,00000003
+
+[No Skill Shields]
+patch=1,EE,20308BEC,extended,00000000
+
+[OS Version 9]
+patch=1,EE,20308BF0,extended,00000009
+
+[OS Version 8]
+patch=1,EE,20308BF0,extended,00000008
+
+[OS Version 7]
+patch=1,EE,20308BF0,extended,00000007
+
+[OS Version 6]
+patch=1,EE,20308BF0,extended,00000006
+
+[OS Version 5]
+patch=1,EE,20308BF0,extended,00000005
+
+[OS Version 4]
+patch=1,EE,20308BF0,extended,00000004
+
+[OS Version 3]
+patch=1,EE,20308BF0,extended,00000003
+
+[OS Version 2]
+patch=1,EE,20308BF0,extended,00000002
+
+[OS Version 1]
+patch=1,EE,20308BF0,extended,00000001
+
+[OS Version 0]
+patch=1,EE,20308BF0,extended,00000000
+
+[Infinite Ability Time]
+patch=1,EE,20308C20,extended,000005DC
+
+[No Ability Time]
+patch=1,EE,20308C20,extended,00000000
+
+[Infinite BA]
+patch=1,EE,20308DA0,extended,44FA0000
+
+[No BA]
+patch=1,EE,20308DA0,extended,00000000
+
+[Infinite AMR]
+patch=1,EE,20308DA4,extended,44FA0000
+
+[No AMR]
+patch=1,EE,20308DA4,extended,00000000
+
+[Never Overheat]
+patch=1,EE,20308DA8,extended,44FA0000
+
+[Always Overheat]
+patch=1,EE,20308DA8,extended,00000000
+
+[Infinite Skill Shields]
+patch=1,EE,20308DAC,extended,00000003
+
+[No Skill Shields]
+patch=1,EE,20308DAC,extended,00000000
+
+[OS Version 9]
+patch=1,EE,20308DB0,extended,00000009
+
+[OS Version 8]
+patch=1,EE,20308DB0,extended,00000008
+
+[OS Version 7]
+patch=1,EE,20308DB0,extended,00000007
+
+[OS Version 6]
+patch=1,EE,20308DB0,extended,00000006
+
+[OS Version 5]
+patch=1,EE,20308DB0,extended,00000005
+
+[OS Version 4]
+patch=1,EE,20308DB0,extended,00000004
+
+[OS Version 3]
+patch=1,EE,20308DB0,extended,00000003
+
+[OS Version 2]
+patch=1,EE,20308DB0,extended,00000002
+
+[OS Version 1]
+patch=1,EE,20308DB0,extended,00000001
+
+[OS Version 0]
+patch=1,EE,20308DB0,extended,00000000
+
+[Infinite Ability Time]
+patch=1,EE,20308DE0,extended,000005DC
+
+[No Ability Time]
+patch=1,EE,20308DE0,extended,00000000
+
+[Mission]
+patch=1,EE,1030B914,extended,00000001
+
+[Versus]
+patch=1,EE,1030B916,extended,00000001
+
+[Tag Team]
+patch=1,EE,1030B918,extended,00000001
+
+[Time Trial]
+patch=1,EE,1030B91A,extended,00000001
+
+[Survivor]
+patch=1,EE,1030B91C,extended,00000001
+
+[Records]
+patch=1,EE,1030B91E,extended,00000001
+
+[Trailer]
+patch=1,EE,1030B920,extended,00000001
+
+[Options]
+patch=1,EE,1030B922,extended,00000001
+
+[All Options]
+patch=1,EE,4030B914,extended,00040001
+patch=1,EE,00010001,extended,00000000
+
+[Strike Gundam]
+patch=1,EE,1030B956,extended,00000001
+
+[Aile Strike Gundam]
+patch=1,EE,1030B958,extended,00000001
+
+[Sword Strike Gundam]
+patch=1,EE,1030B95A,extended,00000001
+
+[Launcher Strike Gundam]
+patch=1,EE,1030B95C,extended,00000001
+
+[Aegis Gundam]
+patch=1,EE,1030B95E,extended,00000001
+
+[Duel Gundam]
+patch=1,EE,1030B960,extended,00000001
+
+[Due Gundam Assault Shield]
+patch=1,EE,1030B962,extended,00000001
+
+[Buster Gundam]
+patch=1,EE,1030B964,extended,00000001
+
+[Blitz Gundam]
+patch=1,EE,1030B966,extended,00000001
+
+[Freedom Gundam]
+patch=1,EE,1030B968,extended,00000001
+
+[Justice Gundam]
+patch=1,EE,1030B96A,extended,00000001
+
+[Calamity Gundam]
+patch=1,EE,1030B96C,extended,00000001
+
+[Forbidden Gundam]
+patch=1,EE,1030B96E,extended,00000001
+
+[Raider Gundam]
+patch=1,EE,1030B970,extended,00000001
+
+[Providence Gundam]
+patch=1,EE,1030B972,extended,00000001
+
+[Strike Rouge]
+patch=1,EE,1030B974,extended,00000001
+
+[M1 Astray (Asagi)]
+patch=1,EE,1030B976,extended,00000001
+
+[M1 Astray (Juri)]
+patch=1,EE,1030B978,extended,00000001
+
+[M1 Astray (Mayura)]
+patch=1,EE,1030B97A,extended,00000001
+
+[Strike Dagger]
+patch=1,EE,1030B97C,extended,00000001
+
+[Ginn]
+patch=1,EE,1030B9A4,extended,00000001
+
+[Ginn (Miguel)]
+patch=1,EE,1030B9A6,extended,00000001
+
+[Cgue]
+patch=1,EE,1030B9A8,extended,00000001
+
+[BuCue/A]
+patch=1,EE,1030B9AA,extended,00000001
+
+[BuCue/B]
+patch=1,EE,1030B9AC,extended,00000001
+
+[LaGowe]
+patch=1,EE,1030B9AE,extended,00000001
+
+[ZnO]
+patch=1,EE,1030B9B0,extended,00000001
+
+[Dinn]
+patch=1,EE,1030B9B2,extended,00000001
+
+[GuRiz]
+patch=1,EE,1030B9B4,extended,00000001
+
+[Wing Gundam Zero Custom]
+patch=1,EE,1030B9CE,extended,00000001
+
+[Burning Gundam]
+patch=1,EE,1030B9D0,extended,00000001
+
+[Tallgeese III]
+patch=1,EE,1030B9D2,extended,00000001
+
+[Master Gundam]
+patch=1,EE,1030B9D4,extended,00000001
+
+[All Characters]
+patch=1,EE,1030B956,extended,00000001
+patch=1,EE,4030B958,extended,00090001
+patch=1,EE,00010001,extended,00000000
+patch=1,EE,1030B97C,extended,00000001
+patch=1,EE,4030B9A4,extended,00040001
+patch=1,EE,00010001,extended,00000000
+patch=1,EE,1030B9B4,extended,00000001
+patch=1,EE,1030B9CE,extended,00000001
+patch=1,EE,2030B9D0,extended,00010001
+patch=1,EE,1030B9D4,extended,00000001
+
+[1-1 Heliopolois]
+patch=1,EE,1030BA54,extended,00000001
+
+[1-2 Space]
+patch=1,EE,1030BA56,extended,00000001
+
+[1-2 Artemis]
+patch=1,EE,1030BA58,extended,00000001
+
+[1-4 Debris Blt]
+patch=1,EE,1030BA5A,extended,00000001
+
+[1-5 Space]
+patch=1,EE,1030BA5C,extended,00000001
+
+[1-6 Orbit]
+patch=1,EE,1030BA5E,extended,00000001
+
+[2-1 Desert]
+patch=1,EE,1030BA60,extended,00000001
+
+[2-2 Island]
+patch=1,EE,1030BA62,extended,00000001
+
+[2-3 Onog Island]
+patch=1,EE,1030BA64,extended,00000001
+
+[2-4 Alaska Base]
+patch=1,EE,1030BA66,extended,00000001
+
+[2-5 Port Of Ore]
+patch=1,EE,1030BA68,extended,00000001
+
+[3-1 Mendel]
+patch=1,EE,1030BA6A,extended,00000001
+
+[3-2 Space]
+patch=1,EE,1030BA6C,extended,00000001
+
+[3-3 Jachin Due]
+patch=1,EE,1030BA6E,extended,00000001
+
+[All Missions]
+patch=1,EE,4030BA54,extended,00070001
+patch=1,EE,00010001,extended,00000000

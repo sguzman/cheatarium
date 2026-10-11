@@ -1,0 +1,31 @@
+gametitle=ESPN National Hockey Night (SLUS-20166)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00120D1F
+
+[Start On 2nd Period]
+patch=1,EE,D068ADB4,extended,00000000
+patch=1,EE,1068ADB4,extended,00000001
+
+[Start On 3rd Period]
+patch=1,EE,D068ADB4,extended,00000000
+patch=1,EE,1068ADB4,extended,00000002
+
+[P1 Press {L1}+{L2} For More Time]
+patch=1,EE,D0683480,extended,0000FAFF
+patch=1,EE,2068ADA8,extended,463B8000
+
+[P1 Press {R1}+{R2} To End Period]
+patch=1,EE,D0683480,extended,0000F5FF
+patch=1,EE,2068ADA8,extended,3F800000
+
+[P2 Press {L1}+{L2} For More Time]
+patch=1,EE,D0683A80,extended,0000FAFF
+patch=1,EE,2068ADA8,extended,463B8000
+
+[P2 Press {R1}+{R2} To End Period]
+patch=1,EE,D0683A80,extended,0000F5FF
+patch=1,EE,2068ADA8,extended,3F800000

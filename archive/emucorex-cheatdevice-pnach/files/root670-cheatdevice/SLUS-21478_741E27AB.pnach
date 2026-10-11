@@ -1,0 +1,78 @@
+gametitle=Pirates-Legend Of The Black Buccaneer (SLUS-21478)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90134328,extended,00832021
+
+[Max Health]
+patch=1,EE,205FFCE0,extended,0000270F
+
+[Infinite Health]
+patch=1,EE,205FFCE4,extended,0000270F
+
+[Max Energy]
+patch=1,EE,205FFCF0,extended,0000270F
+
+[Infinite Energy]
+patch=1,EE,205FFCF4,extended,0000270F
+
+[Unlock All Cinematics]
+patch=1,EE,204365EC,extended,2401FFFF
+patch=1,EE,204365F0,extended,AC4100C0
+
+[Unlock All Art Gallery]
+patch=1,EE,204365FC,extended,2401FFFF
+patch=1,EE,20436604,extended,AE010010
+
+[Max Possession]
+patch=1,EE,214FDF6C,extended,00000005
+
+[Max Bombs]
+patch=1,EE,214FDFB4,extended,00000005
+
+[Max Player Life Force]
+patch=1,EE,214FDFD8,extended,00000005
+
+[Max Pistol]
+patch=1,EE,214FE044,extended,00000005
+
+[Max Curse]
+patch=1,EE,214FE090,extended,00000005
+
+[Max Black Buccaneer's Fire Attack]
+patch=1,EE,214FE0B0,extended,00000005
+
+[Max Damage With Melee Weapons]
+patch=1,EE,214FE0D4,extended,00000005
+
+[Max Zombie]
+patch=1,EE,214FE0F8,extended,00000005
+
+[Max Offerings]
+patch=1,EE,214FE188,extended,0000270F
+
+[Transformation Item]
+patch=1,EE,214FDCC0,extended,00000001
+
+[Skeleton Statue]
+patch=1,EE,214FE020,extended,00000001
+
+[Thorny Plants]
+patch=1,EE,214FE068,extended,00000001
+
+[Light/Medium/Heavy Obstacles]
+patch=1,EE,214FE08C,extended,00000003
+
+[Black Buccaneer]
+patch=1,EE,214FDEDC,extended,00000006
+
+[La Borgne]
+patch=1,EE,214FDF00,extended,00000008
+
+[Francis]
+patch=1,EE,214FDF24,extended,00000006
+
+[De La Cruz]
+patch=1,EE,214FDF48,extended,00000003

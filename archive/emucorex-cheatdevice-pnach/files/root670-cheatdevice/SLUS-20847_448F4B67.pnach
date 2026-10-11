@@ -1,0 +1,1978 @@
+gametitle=LaPucelle Tactics (SLUS-20847)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011882C,extended,0C0477BA
+
+[Infinite Pr]
+patch=1,EE,10376F70,extended,0000FFFF
+
+[Max Pr]
+patch=1,EE,20376F70,extended,05F5E0FF
+
+[Quick Exp Gain]
+patch=1,EE,1032F0C8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2032F0C8,extended,4876E7FF
+patch=1,EE,2032F0CC,extended,00000017
+
+[Max Level]
+patch=1,EE,2032F0F4,extended,0000270F
+
+[Max HP]
+patch=1,EE,2032F0D4,extended,0000136F
+patch=1,EE,2032F0F8,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,2032F0FC,extended,0000270F
+
+[Max SP]
+patch=1,EE,2032F0D8,extended,0000136F
+patch=1,EE,2032F100,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,2032F104,extended,0000270F
+
+[Max Atk]
+patch=1,EE,2032F0DC,extended,0000136F
+patch=1,EE,2032F108,extended,0000270F
+
+[Max Def]
+patch=1,EE,2032F0E0,extended,0000136F
+patch=1,EE,2032F10C,extended,0000270F
+
+[Max Int]
+patch=1,EE,2032F0E4,extended,0000136F
+patch=1,EE,2032F110,extended,0000270F
+
+[Max Spd]
+patch=1,EE,2032F0E8,extended,0000136F
+patch=1,EE,2032F114,extended,0000270F
+
+[Max Hit]
+patch=1,EE,2032F0EC,extended,0000136F
+patch=1,EE,2032F118,extended,0000270F
+
+[Max Res]
+patch=1,EE,2032F0F0,extended,0000136F
+patch=1,EE,2032F11C,extended,0000270F
+
+[Max Mv]
+patch=1,EE,1032F15E,extended,00000063
+patch=1,EE,1032F160,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,2032F128,extended,00775E5A
+patch=1,EE,1032F148,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,2032F12C,extended,00775E5A
+patch=1,EE,1032F14A,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,2032F130,extended,00775E5A
+patch=1,EE,1032F14C,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,2032F134,extended,00775E5A
+patch=1,EE,1032F14E,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,2032F138,extended,00775E5A
+patch=1,EE,1032F150,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,2032F13C,extended,00775E5A
+patch=1,EE,1032F152,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,2032F140,extended,00775E5A
+patch=1,EE,1032F154,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,2032F144,extended,00775E5A
+patch=1,EE,1032F156,extended,00000063
+
+[Ability 1]
+patch=1,EE,0032F230,extended,00000032
+patch=1,EE,1032F270,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,0032F231,extended,00000032
+patch=1,EE,1032F272,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,0032F232,extended,00000032
+patch=1,EE,1032F274,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,0032F233,extended,00000032
+patch=1,EE,1032F276,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,0032F234,extended,00000032
+patch=1,EE,1032F278,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,0032F235,extended,00000032
+patch=1,EE,1032F27A,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,0032F236,extended,00000032
+patch=1,EE,1032F27C,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,0032F237,extended,00000032
+patch=1,EE,1032F27E,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,0032F238,extended,00000032
+patch=1,EE,1032F280,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,0032F239,extended,00000032
+patch=1,EE,1032F282,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,2032F230,extended,32323232
+patch=1,EE,2032F234,extended,32323232
+patch=1,EE,1032F238,extended,00003232
+patch=1,EE,4032F270,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,1032F710,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2032F710,extended,4876E7FF
+patch=1,EE,2032F714,extended,00000017
+
+[Max Level]
+patch=1,EE,2032F73C,extended,0000270F
+
+[Max HP]
+patch=1,EE,2032F71C,extended,0000136F
+patch=1,EE,2032F740,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,2032F744,extended,0000270F
+
+[Max SP]
+patch=1,EE,2032F720,extended,0000136F
+patch=1,EE,2032F748,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,2032F74C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,2032F724,extended,0000136F
+patch=1,EE,2032F750,extended,0000270F
+
+[Max Def]
+patch=1,EE,2032F728,extended,0000136F
+patch=1,EE,2032F754,extended,0000270F
+
+[Max Int]
+patch=1,EE,2032F72C,extended,0000136F
+patch=1,EE,2032F758,extended,0000270F
+
+[Max Spd]
+patch=1,EE,2032F730,extended,0000136F
+patch=1,EE,2032F75C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,2032F734,extended,0000136F
+patch=1,EE,2032F760,extended,0000270F
+
+[Max Res]
+patch=1,EE,2032F738,extended,0000136F
+patch=1,EE,2032F764,extended,0000270F
+
+[Max Mv]
+patch=1,EE,1032F7A6,extended,00000063
+patch=1,EE,1032F7A8,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,2032F770,extended,00775E5A
+patch=1,EE,1032F790,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,2032F774,extended,00775E5A
+patch=1,EE,1032F792,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,2032F778,extended,00775E5A
+patch=1,EE,1032F794,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,2032F77C,extended,00775E5A
+patch=1,EE,1032F796,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,2032F780,extended,00775E5A
+patch=1,EE,1032F798,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,2032F784,extended,00775E5A
+patch=1,EE,1032F79A,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,2032F788,extended,00775E5A
+patch=1,EE,1032F79C,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,2032F78C,extended,00775E5A
+patch=1,EE,1032F79E,extended,00000063
+
+[Ability 1]
+patch=1,EE,0032F878,extended,00000032
+patch=1,EE,1032F8B8,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,0032F879,extended,00000032
+patch=1,EE,1032F8BA,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,0032F87A,extended,00000032
+patch=1,EE,1032F8BC,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,0032F87B,extended,00000032
+patch=1,EE,1032F8BE,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,0032F87C,extended,00000032
+patch=1,EE,1032F8C0,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,0032F87D,extended,00000032
+patch=1,EE,1032F8C2,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,0032F87E,extended,00000032
+patch=1,EE,1032F8C4,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,0032F87F,extended,00000032
+patch=1,EE,1032F8C6,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,0032F880,extended,00000032
+patch=1,EE,1032F8C8,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,0032F881,extended,00000032
+patch=1,EE,1032F8CA,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,2032F878,extended,32323232
+patch=1,EE,2032F87C,extended,32323232
+patch=1,EE,1032F880,extended,00003232
+patch=1,EE,4032F8B8,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,1032FD58,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2032FD58,extended,4876E7FF
+patch=1,EE,2032FD5C,extended,00000017
+
+[Max Level]
+patch=1,EE,2032FD84,extended,0000270F
+
+[Max HP]
+patch=1,EE,2032FD64,extended,0000136F
+patch=1,EE,2032FD88,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,2032FD8C,extended,0000270F
+
+[Max SP]
+patch=1,EE,2032FD68,extended,0000136F
+patch=1,EE,2032FD90,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,2032FD94,extended,0000270F
+
+[Max Atk]
+patch=1,EE,2032FD6C,extended,0000136F
+patch=1,EE,2032FD98,extended,0000270F
+
+[Max Def]
+patch=1,EE,2032FD70,extended,0000136F
+patch=1,EE,2032FD9C,extended,0000270F
+
+[Max Int]
+patch=1,EE,2032FD74,extended,0000136F
+patch=1,EE,2032FDA0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,2032FD78,extended,0000136F
+patch=1,EE,2032FDA4,extended,0000270F
+
+[Max Hit]
+patch=1,EE,2032FD7C,extended,0000136F
+patch=1,EE,2032FDA8,extended,0000270F
+
+[Max Res]
+patch=1,EE,2032FD80,extended,0000136F
+patch=1,EE,2032FDAC,extended,0000270F
+
+[Max Mv]
+patch=1,EE,1032FDEE,extended,00000063
+patch=1,EE,1032FDF0,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,2032FDB8,extended,00775E5A
+patch=1,EE,1032FDD8,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,2032FDBC,extended,00775E5A
+patch=1,EE,1032FDDA,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,2032FDC0,extended,00775E5A
+patch=1,EE,1032FDDC,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,2032FDC4,extended,00775E5A
+patch=1,EE,1032FDDE,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,2032FDC8,extended,00775E5A
+patch=1,EE,1032FDE0,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,2032FDCC,extended,00775E5A
+patch=1,EE,1032FDE2,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,2032FDD0,extended,00775E5A
+patch=1,EE,1032FDE4,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,2032FDD4,extended,00775E5A
+patch=1,EE,1032FDE6,extended,00000063
+
+[Ability 1]
+patch=1,EE,0032FEC0,extended,00000032
+patch=1,EE,1032FF00,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,0032FEC1,extended,00000032
+patch=1,EE,1032FF02,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,0032FEC2,extended,00000032
+patch=1,EE,1032FF04,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,0032FEC3,extended,00000032
+patch=1,EE,1032FF06,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,0032FEC4,extended,00000032
+patch=1,EE,1032FF08,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,0032FEC5,extended,00000032
+patch=1,EE,1032FF0A,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,0032FEC6,extended,00000032
+patch=1,EE,1032FF0C,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,0032FEC7,extended,00000032
+patch=1,EE,1032FF0E,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,0032FEC8,extended,00000032
+patch=1,EE,1032FF10,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,0032FEC9,extended,00000032
+patch=1,EE,1032FF12,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,2032FEC0,extended,32323232
+patch=1,EE,2032FEC4,extended,32323232
+patch=1,EE,1032FEC8,extended,00003232
+patch=1,EE,4032FF00,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,103303A0,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,203303A0,extended,4876E7FF
+patch=1,EE,203303A4,extended,00000017
+
+[Max Level]
+patch=1,EE,203303CC,extended,0000270F
+
+[Max HP]
+patch=1,EE,203303AC,extended,0000136F
+patch=1,EE,203303D0,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,203303D4,extended,0000270F
+
+[Max SP]
+patch=1,EE,203303B0,extended,0000136F
+patch=1,EE,203303D8,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,203303DC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,203303B4,extended,0000136F
+patch=1,EE,203303E0,extended,0000270F
+
+[Max Def]
+patch=1,EE,203303B8,extended,0000136F
+patch=1,EE,203303E4,extended,0000270F
+
+[Max Int]
+patch=1,EE,203303BC,extended,0000136F
+patch=1,EE,203303E8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,203303C0,extended,0000136F
+patch=1,EE,203303EC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,203303C4,extended,0000136F
+patch=1,EE,203303F0,extended,0000270F
+
+[Max Res]
+patch=1,EE,203303C8,extended,0000136F
+patch=1,EE,203303F4,extended,0000270F
+
+[Max Mv]
+patch=1,EE,10330436,extended,00000063
+patch=1,EE,10330438,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20330400,extended,00775E5A
+patch=1,EE,10330420,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,20330404,extended,00775E5A
+patch=1,EE,10330422,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20330408,extended,00775E5A
+patch=1,EE,10330424,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,2033040C,extended,00775E5A
+patch=1,EE,10330426,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20330410,extended,00775E5A
+patch=1,EE,10330428,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,20330414,extended,00775E5A
+patch=1,EE,1033042A,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20330418,extended,00775E5A
+patch=1,EE,1033042C,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,2033041C,extended,00775E5A
+patch=1,EE,1033042E,extended,00000063
+
+[Ability 1]
+patch=1,EE,00330508,extended,00000032
+patch=1,EE,10330548,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00330509,extended,00000032
+patch=1,EE,1033054A,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,0033050A,extended,00000032
+patch=1,EE,1033054C,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,0033050B,extended,00000032
+patch=1,EE,1033054E,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,0033050C,extended,00000032
+patch=1,EE,10330550,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,0033050D,extended,00000032
+patch=1,EE,10330552,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,0033050E,extended,00000032
+patch=1,EE,10330554,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,0033050F,extended,00000032
+patch=1,EE,10330556,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00330510,extended,00000032
+patch=1,EE,10330558,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00330511,extended,00000032
+patch=1,EE,1033055A,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20330508,extended,32323232
+patch=1,EE,2033050C,extended,32323232
+patch=1,EE,10330510,extended,00003232
+patch=1,EE,40330548,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,103309E8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,203309E8,extended,4876E7FF
+patch=1,EE,203309EC,extended,00000017
+
+[Max Level]
+patch=1,EE,20330A14,extended,0000270F
+
+[Max HP]
+patch=1,EE,203309F4,extended,0000136F
+patch=1,EE,20330A18,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,20330A1C,extended,0000270F
+
+[Max SP]
+patch=1,EE,203309F8,extended,0000136F
+patch=1,EE,20330A20,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,20330A24,extended,0000270F
+
+[Max Atk]
+patch=1,EE,203309FC,extended,0000136F
+patch=1,EE,20330A28,extended,0000270F
+
+[Max Def]
+patch=1,EE,20330A00,extended,0000136F
+patch=1,EE,20330A2C,extended,0000270F
+
+[Max Int]
+patch=1,EE,20330A04,extended,0000136F
+patch=1,EE,20330A30,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20330A08,extended,0000136F
+patch=1,EE,20330A34,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20330A0C,extended,0000136F
+patch=1,EE,20330A38,extended,0000270F
+
+[Max Res]
+patch=1,EE,20330A10,extended,0000136F
+patch=1,EE,20330A3C,extended,0000270F
+
+[Max Mv]
+patch=1,EE,10330A7E,extended,00000063
+patch=1,EE,10330A80,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20330A48,extended,00775E5A
+patch=1,EE,10330A68,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,20330A4C,extended,00775E5A
+patch=1,EE,10330A6A,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20330A50,extended,00775E5A
+patch=1,EE,10330A6C,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,20330A54,extended,00775E5A
+patch=1,EE,10330A6E,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20330A58,extended,00775E5A
+patch=1,EE,10330A70,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,20330A5C,extended,00775E5A
+patch=1,EE,10330A72,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20330A60,extended,00775E5A
+patch=1,EE,10330A74,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,20330A64,extended,00775E5A
+patch=1,EE,10330A76,extended,00000063
+
+[Ability 1]
+patch=1,EE,00330B50,extended,00000032
+patch=1,EE,10330B90,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00330B51,extended,00000032
+patch=1,EE,10330B92,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,00330B52,extended,00000032
+patch=1,EE,10330B94,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,00330B53,extended,00000032
+patch=1,EE,10330B96,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,00330B54,extended,00000032
+patch=1,EE,10330B98,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,00330B55,extended,00000032
+patch=1,EE,10330B9A,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,00330B56,extended,00000032
+patch=1,EE,10330B9C,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,00330B57,extended,00000032
+patch=1,EE,10330B9E,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00330B58,extended,00000032
+patch=1,EE,10330BA0,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00330B59,extended,00000032
+patch=1,EE,10330BA2,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20330B50,extended,32323232
+patch=1,EE,20330B54,extended,32323232
+patch=1,EE,10330B58,extended,00003232
+patch=1,EE,40330B90,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10331030,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20331030,extended,4876E7FF
+patch=1,EE,20331034,extended,00000017
+
+[Max Level]
+patch=1,EE,2033105C,extended,0000270F
+
+[Max HP]
+patch=1,EE,2033103C,extended,0000136F
+patch=1,EE,20331060,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,20331064,extended,0000270F
+
+[Max SP]
+patch=1,EE,20331040,extended,0000136F
+patch=1,EE,20331068,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,2033106C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,20331044,extended,0000136F
+patch=1,EE,20331070,extended,0000270F
+
+[Max Def]
+patch=1,EE,20331048,extended,0000136F
+patch=1,EE,20331074,extended,0000270F
+
+[Max Int]
+patch=1,EE,2033104C,extended,0000136F
+patch=1,EE,20331078,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20331050,extended,0000136F
+patch=1,EE,2033107C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20331054,extended,0000136F
+patch=1,EE,20331080,extended,0000270F
+
+[Max Res]
+patch=1,EE,20331058,extended,0000136F
+patch=1,EE,20331084,extended,0000270F
+
+[Max Mv]
+patch=1,EE,103310C6,extended,00000063
+patch=1,EE,103310C8,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20331090,extended,00775E5A
+patch=1,EE,103310B0,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,20331094,extended,00775E5A
+patch=1,EE,103310B2,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20331098,extended,00775E5A
+patch=1,EE,103310B4,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,2033109C,extended,00775E5A
+patch=1,EE,103310B6,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,203310A0,extended,00775E5A
+patch=1,EE,103310B8,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,203310A4,extended,00775E5A
+patch=1,EE,103310BA,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,203310A8,extended,00775E5A
+patch=1,EE,103310BC,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,203310AC,extended,00775E5A
+patch=1,EE,103310BE,extended,00000063
+
+[Ability 1]
+patch=1,EE,00331198,extended,00000032
+patch=1,EE,103311D8,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00331199,extended,00000032
+patch=1,EE,103311DA,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,0033119A,extended,00000032
+patch=1,EE,103311DC,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,0033119B,extended,00000032
+patch=1,EE,103311DE,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,0033119C,extended,00000032
+patch=1,EE,103311E0,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,0033119D,extended,00000032
+patch=1,EE,103311E2,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,0033119E,extended,00000032
+patch=1,EE,103311E4,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,0033119F,extended,00000032
+patch=1,EE,103311E6,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,003311A0,extended,00000032
+patch=1,EE,103311E8,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,003311A1,extended,00000032
+patch=1,EE,103311EA,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20331198,extended,32323232
+patch=1,EE,2033119C,extended,32323232
+patch=1,EE,103311A0,extended,00003232
+patch=1,EE,403311D8,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10331678,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20331678,extended,4876E7FF
+patch=1,EE,2033167C,extended,00000017
+
+[Max Level]
+patch=1,EE,203316A4,extended,0000270F
+
+[Max HP]
+patch=1,EE,20331684,extended,0000136F
+patch=1,EE,203316A8,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,203316AC,extended,0000270F
+
+[Max SP]
+patch=1,EE,20331688,extended,0000136F
+patch=1,EE,203316B0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,203316B4,extended,0000270F
+
+[Max Atk]
+patch=1,EE,2033168C,extended,0000136F
+patch=1,EE,203316B8,extended,0000270F
+
+[Max Def]
+patch=1,EE,20331690,extended,0000136F
+patch=1,EE,203316BC,extended,0000270F
+
+[Max Int]
+patch=1,EE,20331694,extended,0000136F
+patch=1,EE,203316C0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20331698,extended,0000136F
+patch=1,EE,203316C4,extended,0000270F
+
+[Max Hit]
+patch=1,EE,2033169C,extended,0000136F
+patch=1,EE,203316C8,extended,0000270F
+
+[Max Res]
+patch=1,EE,203316A0,extended,0000136F
+patch=1,EE,203316CC,extended,0000270F
+
+[Max Mv]
+patch=1,EE,1033170E,extended,00000063
+patch=1,EE,10331710,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,203316D8,extended,00775E5A
+patch=1,EE,103316F8,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,203316DC,extended,00775E5A
+patch=1,EE,103316FA,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,203316E0,extended,00775E5A
+patch=1,EE,103316FC,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,203316E4,extended,00775E5A
+patch=1,EE,103316FE,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,203316E8,extended,00775E5A
+patch=1,EE,10331700,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,203316EC,extended,00775E5A
+patch=1,EE,10331702,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,203316F0,extended,00775E5A
+patch=1,EE,10331704,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,203316F4,extended,00775E5A
+patch=1,EE,10331706,extended,00000063
+
+[Ability 1]
+patch=1,EE,003317E0,extended,00000032
+patch=1,EE,10331820,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,003317E1,extended,00000032
+patch=1,EE,10331822,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,003317E2,extended,00000032
+patch=1,EE,10331824,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,003317E3,extended,00000032
+patch=1,EE,10331826,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,003317E4,extended,00000032
+patch=1,EE,10331828,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,003317E5,extended,00000032
+patch=1,EE,1033182A,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,003317E6,extended,00000032
+patch=1,EE,1033182C,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,003317E7,extended,00000032
+patch=1,EE,1033182E,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,003317E8,extended,00000032
+patch=1,EE,10331830,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,003317E9,extended,00000032
+patch=1,EE,10331832,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,203317E0,extended,32323232
+patch=1,EE,203317E4,extended,32323232
+patch=1,EE,103317E8,extended,00003232
+patch=1,EE,40331820,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10331CC0,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20331CC0,extended,4876E7FF
+patch=1,EE,20331CC4,extended,00000017
+
+[Max Level]
+patch=1,EE,20331CEC,extended,0000270F
+
+[Max HP]
+patch=1,EE,20331CCC,extended,0000136F
+patch=1,EE,20331CF0,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,20331CF4,extended,0000270F
+
+[Max SP]
+patch=1,EE,20331CD0,extended,0000136F
+patch=1,EE,20331CF8,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,20331CFC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,20331CD4,extended,0000136F
+patch=1,EE,20331D00,extended,0000270F
+
+[Max Def]
+patch=1,EE,20331CD8,extended,0000136F
+patch=1,EE,20331D04,extended,0000270F
+
+[Max Int]
+patch=1,EE,20331CDC,extended,0000136F
+patch=1,EE,20331D08,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20331CE0,extended,0000136F
+patch=1,EE,20331D0C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20331CE4,extended,0000136F
+patch=1,EE,20331D10,extended,0000270F
+
+[Max Res]
+patch=1,EE,20331CE8,extended,0000136F
+patch=1,EE,20331D14,extended,0000270F
+
+[Max Mv]
+patch=1,EE,10331D56,extended,00000063
+patch=1,EE,10331D58,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20331D20,extended,00775E5A
+patch=1,EE,10331D40,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,20331D24,extended,00775E5A
+patch=1,EE,10331D42,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20331D28,extended,00775E5A
+patch=1,EE,10331D44,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,20331D2C,extended,00775E5A
+patch=1,EE,10331D46,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20331D30,extended,00775E5A
+patch=1,EE,10331D48,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,20331D34,extended,00775E5A
+patch=1,EE,10331D4A,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20331D38,extended,00775E5A
+patch=1,EE,10331D4C,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,20331D3C,extended,00775E5A
+patch=1,EE,10331D4E,extended,00000063
+
+[Ability 1]
+patch=1,EE,00331E28,extended,00000032
+patch=1,EE,10331E68,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00331E29,extended,00000032
+patch=1,EE,10331E6A,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,00331E2A,extended,00000032
+patch=1,EE,10331E6C,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,00331E2B,extended,00000032
+patch=1,EE,10331E6E,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,00331E2C,extended,00000032
+patch=1,EE,10331E70,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,00331E2D,extended,00000032
+patch=1,EE,10331E72,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,00331E2E,extended,00000032
+patch=1,EE,10331E74,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,00331E2F,extended,00000032
+patch=1,EE,10331E76,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00331E30,extended,00000032
+patch=1,EE,10331E78,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00331E31,extended,00000032
+patch=1,EE,10331E7A,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20331E28,extended,32323232
+patch=1,EE,20331E2C,extended,32323232
+patch=1,EE,10331E30,extended,00003232
+patch=1,EE,40331E68,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10332308,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20332308,extended,4876E7FF
+patch=1,EE,2033230C,extended,00000017
+
+[Max Level]
+patch=1,EE,20332334,extended,0000270F
+
+[Max HP]
+patch=1,EE,20332314,extended,0000136F
+patch=1,EE,20332338,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,2033233C,extended,0000270F
+
+[Max SP]
+patch=1,EE,20332318,extended,0000136F
+patch=1,EE,20332340,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,20332344,extended,0000270F
+
+[Max Atk]
+patch=1,EE,2033231C,extended,0000136F
+patch=1,EE,20332348,extended,0000270F
+
+[Max Def]
+patch=1,EE,20332320,extended,0000136F
+patch=1,EE,2033234C,extended,0000270F
+
+[Max Int]
+patch=1,EE,20332324,extended,0000136F
+patch=1,EE,20332350,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20332328,extended,0000136F
+patch=1,EE,20332354,extended,0000270F
+
+[Max Hit]
+patch=1,EE,2033232C,extended,0000136F
+patch=1,EE,20332358,extended,0000270F
+
+[Max Res]
+patch=1,EE,20332330,extended,0000136F
+patch=1,EE,2033235C,extended,0000270F
+
+[Max Mv]
+patch=1,EE,1033239E,extended,00000063
+patch=1,EE,103323A0,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20332368,extended,00775E5A
+patch=1,EE,10332388,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,2033236C,extended,00775E5A
+patch=1,EE,1033238A,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20332370,extended,00775E5A
+patch=1,EE,1033238C,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,20332374,extended,00775E5A
+patch=1,EE,1033238E,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20332378,extended,00775E5A
+patch=1,EE,10332390,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,2033237C,extended,00775E5A
+patch=1,EE,10332392,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20332380,extended,00775E5A
+patch=1,EE,10332394,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,20332384,extended,00775E5A
+patch=1,EE,10332396,extended,00000063
+
+[Ability 1]
+patch=1,EE,00332470,extended,00000032
+patch=1,EE,103324B0,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00332471,extended,00000032
+patch=1,EE,103324B2,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,00332472,extended,00000032
+patch=1,EE,103324B4,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,00332473,extended,00000032
+patch=1,EE,103324B6,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,00332474,extended,00000032
+patch=1,EE,103324B8,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,00332475,extended,00000032
+patch=1,EE,103324BA,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,00332476,extended,00000032
+patch=1,EE,103324BC,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,00332477,extended,00000032
+patch=1,EE,103324BE,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00332478,extended,00000032
+patch=1,EE,103324C0,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00332479,extended,00000032
+patch=1,EE,103324C2,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20332470,extended,32323232
+patch=1,EE,20332474,extended,32323232
+patch=1,EE,10332478,extended,00003232
+patch=1,EE,403324B0,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10332950,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20332950,extended,4876E7FF
+patch=1,EE,20332954,extended,00000017
+
+[Max Level]
+patch=1,EE,2033297C,extended,0000270F
+
+[Max HP]
+patch=1,EE,2033295C,extended,0000136F
+patch=1,EE,20332980,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,20332984,extended,0000270F
+
+[Max SP]
+patch=1,EE,20332960,extended,0000136F
+patch=1,EE,20332988,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,2033298C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,20332964,extended,0000136F
+patch=1,EE,20332990,extended,0000270F
+
+[Max Def]
+patch=1,EE,20332968,extended,0000136F
+patch=1,EE,20332994,extended,0000270F
+
+[Max Int]
+patch=1,EE,2033296C,extended,0000136F
+patch=1,EE,20332998,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20332970,extended,0000136F
+patch=1,EE,2033299C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20332974,extended,0000136F
+patch=1,EE,203329A0,extended,0000270F
+
+[Max Res]
+patch=1,EE,20332978,extended,0000136F
+patch=1,EE,203329A4,extended,0000270F
+
+[Max Mv]
+patch=1,EE,103329E6,extended,00000063
+patch=1,EE,103329E8,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,203329B0,extended,00775E5A
+patch=1,EE,103329D0,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,203329B4,extended,00775E5A
+patch=1,EE,103329D2,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,203329B8,extended,00775E5A
+patch=1,EE,103329D4,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,203329BC,extended,00775E5A
+patch=1,EE,103329D6,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,203329C0,extended,00775E5A
+patch=1,EE,103329D8,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,203329C4,extended,00775E5A
+patch=1,EE,103329DA,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,203329C8,extended,00775E5A
+patch=1,EE,103329DC,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,203329CC,extended,00775E5A
+patch=1,EE,103329DE,extended,00000063
+
+[Ability 1]
+patch=1,EE,00332AB8,extended,00000032
+patch=1,EE,10332AF8,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00332AB9,extended,00000032
+patch=1,EE,10332AFA,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,00332ABA,extended,00000032
+patch=1,EE,10332AFC,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,00332ABB,extended,00000032
+patch=1,EE,10332AFE,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,00332ABC,extended,00000032
+patch=1,EE,10332B00,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,00332ABD,extended,00000032
+patch=1,EE,10332B02,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,00332ABE,extended,00000032
+patch=1,EE,10332B04,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,00332ABF,extended,00000032
+patch=1,EE,10332B06,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00332AC0,extended,00000032
+patch=1,EE,10332B08,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00332AC1,extended,00000032
+patch=1,EE,10332B0A,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20332AB8,extended,32323232
+patch=1,EE,20332ABC,extended,32323232
+patch=1,EE,10332AC0,extended,00003232
+patch=1,EE,40332AF8,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10332F98,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20332F98,extended,4876E7FF
+patch=1,EE,20332F9C,extended,00000017
+
+[Max Level]
+patch=1,EE,20332FC4,extended,0000270F
+
+[Max HP]
+patch=1,EE,20332FA4,extended,0000136F
+patch=1,EE,20332FC8,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,20332FCC,extended,0000270F
+
+[Max SP]
+patch=1,EE,20332FA8,extended,0000136F
+patch=1,EE,20332FD0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,20332FD4,extended,0000270F
+
+[Max Atk]
+patch=1,EE,20332FAC,extended,0000136F
+patch=1,EE,20332FD8,extended,0000270F
+
+[Max Def]
+patch=1,EE,20332FB0,extended,0000136F
+patch=1,EE,20332FDC,extended,0000270F
+
+[Max Int]
+patch=1,EE,20332FB4,extended,0000136F
+patch=1,EE,20332FE0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20332FB8,extended,0000136F
+patch=1,EE,20332FE4,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20332FBC,extended,0000136F
+patch=1,EE,20332FE8,extended,0000270F
+
+[Max Res]
+patch=1,EE,20332FC0,extended,0000136F
+patch=1,EE,20332FEC,extended,0000270F
+
+[Max Mv]
+patch=1,EE,1033302E,extended,00000063
+patch=1,EE,10333030,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20332FF8,extended,00775E5A
+patch=1,EE,10333018,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,20332FFC,extended,00775E5A
+patch=1,EE,1033301A,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20333000,extended,00775E5A
+patch=1,EE,1033301C,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,20333004,extended,00775E5A
+patch=1,EE,1033301E,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20333008,extended,00775E5A
+patch=1,EE,10333020,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,2033300C,extended,00775E5A
+patch=1,EE,10333022,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20333010,extended,00775E5A
+patch=1,EE,10333024,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,20333014,extended,00775E5A
+patch=1,EE,10333026,extended,00000063
+
+[Ability 1]
+patch=1,EE,00333100,extended,00000032
+patch=1,EE,10333140,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00333101,extended,00000032
+patch=1,EE,10333142,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,00333102,extended,00000032
+patch=1,EE,10333144,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,00333103,extended,00000032
+patch=1,EE,10333146,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,00333104,extended,00000032
+patch=1,EE,10333148,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,00333105,extended,00000032
+patch=1,EE,1033314A,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,00333106,extended,00000032
+patch=1,EE,1033314C,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,00333107,extended,00000032
+patch=1,EE,1033314E,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00333108,extended,00000032
+patch=1,EE,10333150,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00333109,extended,00000032
+patch=1,EE,10333152,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20333100,extended,32323232
+patch=1,EE,20333104,extended,32323232
+patch=1,EE,10333108,extended,00003232
+patch=1,EE,40333140,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,103335E0,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,203335E0,extended,4876E7FF
+patch=1,EE,203335E4,extended,00000017
+
+[Max Level]
+patch=1,EE,2033360C,extended,0000270F
+
+[Max HP]
+patch=1,EE,203335EC,extended,0000136F
+patch=1,EE,20333610,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,20333614,extended,0000270F
+
+[Max SP]
+patch=1,EE,203335F0,extended,0000136F
+patch=1,EE,20333618,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,2033361C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,203335F4,extended,0000136F
+patch=1,EE,20333620,extended,0000270F
+
+[Max Def]
+patch=1,EE,203335F8,extended,0000136F
+patch=1,EE,20333624,extended,0000270F
+
+[Max Int]
+patch=1,EE,203335FC,extended,0000136F
+patch=1,EE,20333628,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20333600,extended,0000136F
+patch=1,EE,2033362C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20333604,extended,0000136F
+patch=1,EE,20333630,extended,0000270F
+
+[Max Res]
+patch=1,EE,20333608,extended,0000136F
+patch=1,EE,20333634,extended,0000270F
+
+[Max Mv]
+patch=1,EE,10333676,extended,00000063
+patch=1,EE,10333678,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20333640,extended,00775E5A
+patch=1,EE,10333660,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,20333644,extended,00775E5A
+patch=1,EE,10333662,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20333648,extended,00775E5A
+patch=1,EE,10333664,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,2033364C,extended,00775E5A
+patch=1,EE,10333666,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20333650,extended,00775E5A
+patch=1,EE,10333668,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,20333654,extended,00775E5A
+patch=1,EE,1033366A,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20333658,extended,00775E5A
+patch=1,EE,1033366C,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,2033365C,extended,00775E5A
+patch=1,EE,1033366E,extended,00000063
+
+[Ability 1]
+patch=1,EE,00333748,extended,00000032
+patch=1,EE,10333788,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00333749,extended,00000032
+patch=1,EE,1033378A,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,0033374A,extended,00000032
+patch=1,EE,1033378C,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,0033374B,extended,00000032
+patch=1,EE,1033378E,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,0033374C,extended,00000032
+patch=1,EE,10333790,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,0033374D,extended,00000032
+patch=1,EE,10333792,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,0033374E,extended,00000032
+patch=1,EE,10333794,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,0033374F,extended,00000032
+patch=1,EE,10333796,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00333750,extended,00000032
+patch=1,EE,10333798,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00333751,extended,00000032
+patch=1,EE,1033379A,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20333748,extended,32323232
+patch=1,EE,2033374C,extended,32323232
+patch=1,EE,10333750,extended,00003232
+patch=1,EE,40333788,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10333C28,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20333C28,extended,4876E7FF
+patch=1,EE,20333C2C,extended,00000017
+
+[Max Level]
+patch=1,EE,20333C54,extended,0000270F
+
+[Max HP]
+patch=1,EE,20333C34,extended,0000136F
+patch=1,EE,20333C58,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,20333C5C,extended,0000270F
+
+[Max SP]
+patch=1,EE,20333C38,extended,0000136F
+patch=1,EE,20333C60,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,20333C64,extended,0000270F
+
+[Max Atk]
+patch=1,EE,20333C3C,extended,0000136F
+patch=1,EE,20333C68,extended,0000270F
+
+[Max Def]
+patch=1,EE,20333C40,extended,0000136F
+patch=1,EE,20333C6C,extended,0000270F
+
+[Max Int]
+patch=1,EE,20333C44,extended,0000136F
+patch=1,EE,20333C70,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20333C48,extended,0000136F
+patch=1,EE,20333C74,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20333C4C,extended,0000136F
+patch=1,EE,20333C78,extended,0000270F
+
+[Max Res]
+patch=1,EE,20333C50,extended,0000136F
+patch=1,EE,20333C7C,extended,0000270F
+
+[Max Mv]
+patch=1,EE,10333CBE,extended,00000063
+patch=1,EE,10333CC0,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20333C88,extended,00775E5A
+patch=1,EE,10333CA8,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,20333C8C,extended,00775E5A
+patch=1,EE,10333CAA,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20333C90,extended,00775E5A
+patch=1,EE,10333CAC,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,20333C94,extended,00775E5A
+patch=1,EE,10333CAE,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20333C98,extended,00775E5A
+patch=1,EE,10333CB0,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,20333C9C,extended,00775E5A
+patch=1,EE,10333CB2,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20333CA0,extended,00775E5A
+patch=1,EE,10333CB4,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,20333CA4,extended,00775E5A
+patch=1,EE,10333CB6,extended,00000063
+
+[Ability 1]
+patch=1,EE,00333D90,extended,00000032
+patch=1,EE,10333DD0,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00333D91,extended,00000032
+patch=1,EE,10333DD2,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,00333D92,extended,00000032
+patch=1,EE,10333DD4,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,00333D93,extended,00000032
+patch=1,EE,10333DD6,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,00333D94,extended,00000032
+patch=1,EE,10333DD8,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,00333D95,extended,00000032
+patch=1,EE,10333DDA,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,00333D96,extended,00000032
+patch=1,EE,10333DDC,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,00333D97,extended,00000032
+patch=1,EE,10333DDE,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00333D98,extended,00000032
+patch=1,EE,10333DE0,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00333D99,extended,00000032
+patch=1,EE,10333DE2,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20333D90,extended,32323232
+patch=1,EE,20333D94,extended,32323232
+patch=1,EE,10333D98,extended,00003232
+patch=1,EE,40333DD0,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,10334270,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,20334270,extended,4876E7FF
+patch=1,EE,20334274,extended,00000017
+
+[Max Level]
+patch=1,EE,2033429C,extended,0000270F
+
+[Max HP]
+patch=1,EE,2033427C,extended,0000136F
+patch=1,EE,203342A0,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,203342A4,extended,0000270F
+
+[Max SP]
+patch=1,EE,20334280,extended,0000136F
+patch=1,EE,203342A8,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,203342AC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,20334284,extended,0000136F
+patch=1,EE,203342B0,extended,0000270F
+
+[Max Def]
+patch=1,EE,20334288,extended,0000136F
+patch=1,EE,203342B4,extended,0000270F
+
+[Max Int]
+patch=1,EE,2033428C,extended,0000136F
+patch=1,EE,203342B8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,20334290,extended,0000136F
+patch=1,EE,203342BC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,20334294,extended,0000136F
+patch=1,EE,203342C0,extended,0000270F
+
+[Max Res]
+patch=1,EE,20334298,extended,0000136F
+patch=1,EE,203342C4,extended,0000270F
+
+[Max Mv]
+patch=1,EE,10334306,extended,00000063
+patch=1,EE,10334308,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,203342D0,extended,00775E5A
+patch=1,EE,103342F0,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,203342D4,extended,00775E5A
+patch=1,EE,103342F2,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,203342D8,extended,00775E5A
+patch=1,EE,103342F4,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,203342DC,extended,00775E5A
+patch=1,EE,103342F6,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,203342E0,extended,00775E5A
+patch=1,EE,103342F8,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,203342E4,extended,00775E5A
+patch=1,EE,103342FA,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,203342E8,extended,00775E5A
+patch=1,EE,103342FC,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,203342EC,extended,00775E5A
+patch=1,EE,103342FE,extended,00000063
+
+[Ability 1]
+patch=1,EE,003343D8,extended,00000032
+patch=1,EE,10334418,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,003343D9,extended,00000032
+patch=1,EE,1033441A,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,003343DA,extended,00000032
+patch=1,EE,1033441C,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,003343DB,extended,00000032
+patch=1,EE,1033441E,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,003343DC,extended,00000032
+patch=1,EE,10334420,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,003343DD,extended,00000032
+patch=1,EE,10334422,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,003343DE,extended,00000032
+patch=1,EE,10334424,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,003343DF,extended,00000032
+patch=1,EE,10334426,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,003343E0,extended,00000032
+patch=1,EE,10334428,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,003343E1,extended,00000032
+patch=1,EE,1033442A,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,203343D8,extended,32323232
+patch=1,EE,203343DC,extended,32323232
+patch=1,EE,103343E0,extended,00003232
+patch=1,EE,40334418,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000
+
+[Quick Exp Gain]
+patch=1,EE,103348B8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,203348B8,extended,4876E7FF
+patch=1,EE,203348BC,extended,00000017
+
+[Max Level]
+patch=1,EE,203348E4,extended,0000270F
+
+[Max HP]
+patch=1,EE,203348C4,extended,0000136F
+patch=1,EE,203348E8,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,203348EC,extended,0000270F
+
+[Max SP]
+patch=1,EE,203348C8,extended,0000136F
+patch=1,EE,203348F0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,203348F4,extended,0000270F
+
+[Max Atk]
+patch=1,EE,203348CC,extended,0000136F
+patch=1,EE,203348F8,extended,0000270F
+
+[Max Def]
+patch=1,EE,203348D0,extended,0000136F
+patch=1,EE,203348FC,extended,0000270F
+
+[Max Int]
+patch=1,EE,203348D4,extended,0000136F
+patch=1,EE,20334900,extended,0000270F
+
+[Max Spd]
+patch=1,EE,203348D8,extended,0000136F
+patch=1,EE,20334904,extended,0000270F
+
+[Max Hit]
+patch=1,EE,203348DC,extended,0000136F
+patch=1,EE,20334908,extended,0000270F
+
+[Max Res]
+patch=1,EE,203348E0,extended,0000136F
+patch=1,EE,2033490C,extended,0000270F
+
+[Max Mv]
+patch=1,EE,1033494E,extended,00000063
+patch=1,EE,10334950,extended,00000063
+
+[Max HP Skill]
+patch=1,EE,20334918,extended,00775E5A
+patch=1,EE,10334938,extended,00000063
+
+[Max SP Skill]
+patch=1,EE,2033491C,extended,00775E5A
+patch=1,EE,1033493A,extended,00000063
+
+[Max Atk x1 Skill]
+patch=1,EE,20334920,extended,00775E5A
+patch=1,EE,1033493C,extended,00000063
+
+[Max Def x1 Skill]
+patch=1,EE,20334924,extended,00775E5A
+patch=1,EE,1033493E,extended,00000063
+
+[Max Int Skill]
+patch=1,EE,20334928,extended,00775E5A
+patch=1,EE,10334940,extended,00000063
+
+[Max Spd Skill]
+patch=1,EE,2033492C,extended,00775E5A
+patch=1,EE,10334942,extended,00000063
+
+[Max Hit Skill]
+patch=1,EE,20334930,extended,00775E5A
+patch=1,EE,10334944,extended,00000063
+
+[Max Res Skill]
+patch=1,EE,20334934,extended,00775E5A
+patch=1,EE,10334946,extended,00000063
+
+[Ability 1]
+patch=1,EE,00334A20,extended,00000032
+patch=1,EE,10334A60,extended,00000EF1
+
+[Ability 2]
+patch=1,EE,00334A21,extended,00000032
+patch=1,EE,10334A62,extended,00000EF1
+
+[Ability 3]
+patch=1,EE,00334A22,extended,00000032
+patch=1,EE,10334A64,extended,00000EF1
+
+[Ability 4]
+patch=1,EE,00334A23,extended,00000032
+patch=1,EE,10334A66,extended,00000EF1
+
+[Ability 5]
+patch=1,EE,00334A24,extended,00000032
+patch=1,EE,10334A68,extended,00000EF1
+
+[Ability 6]
+patch=1,EE,00334A25,extended,00000032
+patch=1,EE,10334A6A,extended,00000EF1
+
+[Ability 7]
+patch=1,EE,00334A26,extended,00000032
+patch=1,EE,10334A6C,extended,00000EF1
+
+[Ability 8]
+patch=1,EE,00334A27,extended,00000032
+patch=1,EE,10334A6E,extended,00000EF1
+
+[Ability 9]
+patch=1,EE,00334A28,extended,00000032
+patch=1,EE,10334A70,extended,00000EF1
+
+[Ability 10]
+patch=1,EE,00334A29,extended,00000032
+patch=1,EE,10334A72,extended,00000EF1
+
+[All Abilities]
+patch=1,EE,20334A20,extended,32323232
+patch=1,EE,20334A24,extended,32323232
+patch=1,EE,10334A28,extended,00003232
+patch=1,EE,40334A60,extended,00050001
+patch=1,EE,0EF10EF1,extended,00000000

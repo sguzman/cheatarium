@@ -1,0 +1,251 @@
+gametitle=NBA Ballers-Phenom (SLUS-21186)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011B638,extended,00832021
+
+[Infinite Juice (All Players)]
+patch=1,EE,201B71D0,extended,00000000
+
+[Infinite Shot Clock]
+patch=1,EE,2080D938,extended,5FFFFFFF
+
+[P1 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D0802C02,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D0802C02,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[P2 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D0802DC2,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P2 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D0802DC2,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[P3 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D0802F82,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P3 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D0802F82,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[P4 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D0803142,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P4 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D0803142,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[P5 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D0803302,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P5 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D0803302,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[P6 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D08034C2,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P6 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D08034C2,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[P7 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D0803682,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P7 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D0803682,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[P8 Press {L1}+{SELECT} To Stop Timers]
+patch=1,EE,D0803842,extended,0000FBFE
+patch=1,EE,2018EF88,extended,00000000
+
+[P8 Press {L2}+{SELECT} To Restart Timers]
+patch=1,EE,D0803842,extended,0000FEFE
+patch=1,EE,2018EF88,extended,AE030100
+
+[Shot Clock Length x4]
+patch=1,EE,2080D938,extended,42700000
+
+[Shot Clock Length x2]
+patch=1,EE,2080D938,extended,41F00000
+
+[Shot Clock Length x1/2]
+patch=1,EE,2080D938,extended,40F00000
+
+[Activation Code (Must Be On)]
+patch=1,EE,200C0278,extended,080A7010
+patch=1,EE,200C027C,extended,8CE50004
+patch=1,EE,2029C038,extended,08030088
+
+[P1 Starts With 10]
+patch=1,EE,200C0220,extended,8CE10000
+patch=1,EE,200C0224,extended,50200001
+patch=1,EE,200C0228,extended,2401000A
+patch=1,EE,200C022C,extended,ACE10000
+
+[P1 Starts With 5]
+patch=1,EE,200C0220,extended,8CE10000
+patch=1,EE,200C0224,extended,50200001
+patch=1,EE,200C0228,extended,24010005
+patch=1,EE,200C022C,extended,ACE10000
+
+[P1 Starts With 2]
+patch=1,EE,200C0220,extended,8CE10000
+patch=1,EE,200C0224,extended,50200001
+patch=1,EE,200C0228,extended,24010002
+patch=1,EE,200C022C,extended,ACE10000
+
+[P1 Never Scores]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,ACE10000
+
+[P2 Starts With 10]
+patch=1,EE,200C0230,extended,8CE10004
+patch=1,EE,200C0234,extended,50200001
+patch=1,EE,200C0238,extended,2401000A
+patch=1,EE,200C023C,extended,ACE10004
+
+[P2 Starts With 5]
+patch=1,EE,200C0230,extended,8CE10004
+patch=1,EE,200C0234,extended,50200001
+patch=1,EE,200C0238,extended,24010005
+patch=1,EE,200C023C,extended,ACE10004
+
+[P2 Starts With 2]
+patch=1,EE,200C0230,extended,8CE10004
+patch=1,EE,200C0234,extended,50200001
+patch=1,EE,200C0238,extended,24010002
+patch=1,EE,200C023C,extended,ACE10004
+
+[P2 Never Scores]
+patch=1,EE,200C0230,extended,24010000
+patch=1,EE,200C0234,extended,ACE10004
+
+[P3 Starts With 10]
+patch=1,EE,200C0240,extended,8CE10008
+patch=1,EE,200C0244,extended,50200001
+patch=1,EE,200C0248,extended,2401000A
+patch=1,EE,200C024C,extended,ACE10008
+
+[P3 Starts With 5]
+patch=1,EE,200C0240,extended,8CE10008
+patch=1,EE,200C0244,extended,50200001
+patch=1,EE,200C0248,extended,24010005
+patch=1,EE,200C024C,extended,ACE10008
+
+[P3 Starts With 2]
+patch=1,EE,200C0240,extended,8CE10008
+patch=1,EE,200C0244,extended,50200001
+patch=1,EE,200C0248,extended,24010002
+patch=1,EE,200C024C,extended,ACE10008
+
+[P3 Never Scores]
+patch=1,EE,200C0240,extended,24010000
+patch=1,EE,200C0244,extended,ACE10008
+
+[P4 Starts With 10]
+patch=1,EE,200C0250,extended,8CE1000C
+patch=1,EE,200C0254,extended,50200001
+patch=1,EE,200C0258,extended,2401000A
+patch=1,EE,200C025C,extended,ACE1000C
+
+[P4 Starts With 5]
+patch=1,EE,200C0250,extended,8CE1000C
+patch=1,EE,200C0254,extended,50200001
+patch=1,EE,200C0258,extended,24010005
+patch=1,EE,200C025C,extended,ACE1000C
+
+[P4 Starts With 2]
+patch=1,EE,200C0250,extended,8CE1000C
+patch=1,EE,200C0254,extended,50200001
+patch=1,EE,200C0258,extended,24010002
+patch=1,EE,200C025C,extended,ACE1000C
+
+[P4 Never Scores]
+patch=1,EE,200C0240,extended,24010000
+patch=1,EE,200C0244,extended,ACE1000C
+
+[View My 3-Way For Max Credits]
+patch=1,EE,200C0260,extended,3C0605F5
+patch=1,EE,200C0264,extended,34C6E0FF
+patch=1,EE,200C0268,extended,03E00008
+patch=1,EE,200C026C,extended,AE460064
+patch=1,EE,20407D40,extended,0C030098
+patch=1,EE,20407DA0,extended,0280202D
+
+[Start With 600 Attribute Points]
+patch=1,EE,10374AA4,extended,00000258
+
+[P1 Press {L1}+{L2} For No Attribute Points]
+patch=1,EE,D0802C02,extended,0000FAFF
+patch=1,EE,20832CB8,extended,00000000
+
+[P1 Press {R1}+{R2} For More Attribute Points]
+patch=1,EE,D0802C02,extended,0000F5FF
+patch=1,EE,20832CB8,extended,000003E8
+
+[Max Power]
+patch=1,EE,2073C754,extended,00000064
+
+[Max Speed]
+patch=1,EE,2073C7A4,extended,00000064
+
+[Max Stamina]
+patch=1,EE,2073C7F4,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,2073C844,extended,00000064
+
+[Max 2-Pt Short]
+patch=1,EE,2073C894,extended,00000064
+
+[Max 2-Pt Mid]
+patch=1,EE,2073C8E4,extended,00000064
+
+[Max 3-Pt]
+patch=1,EE,2073C934,extended,00000064
+
+[Max Dunking]
+patch=1,EE,2073C984,extended,00000064
+
+[Max Lay-Up]
+patch=1,EE,2073C9D4,extended,00000064
+
+[Max Low Post Off.]
+patch=1,EE,2073CA24,extended,00000064
+
+[Max Low Post Def.]
+patch=1,EE,2073CA74,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,2073CAC4,extended,00000064
+
+[Max Blocks]
+patch=1,EE,2073CB14,extended,00000064
+
+[Max Steals]
+patch=1,EE,2073CB64,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,2073CBB4,extended,00000064
+
+[Max Clutch]
+patch=1,EE,2073CC04,extended,00000064
+
+[Max All Stats]
+patch=1,EE,4073C754,extended,00100014
+patch=1,EE,00000064,extended,00000000
+patch=1,EE,20832CB8,extended,00000000

@@ -1,0 +1,87 @@
+gametitle=Baldur's Gate-Dark Alliance (SLUS-20035)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90205FC4,extended,0C089205
+
+[Always Human P1]
+patch=1,EE,102979AC,extended,00000000
+patch=1,EE,102979B0,extended,00000000
+
+[Always Elf P1]
+patch=1,EE,102979AC,extended,00000001
+patch=1,EE,102979B0,extended,00000001
+
+[Always Dwarf P1]
+patch=1,EE,102979AC,extended,00000002
+patch=1,EE,102979B0,extended,00000002
+
+[Always Drizzt P1]
+patch=1,EE,102979AC,extended,00000003
+patch=1,EE,102979B0,extended,00000003
+
+[Infinite Health P1]
+patch=1,EE,20297A04,extended,46C80000
+
+[Max Health P1]
+patch=1,EE,20297A08,extended,46C80000
+
+[Infinite Magic P1]
+patch=1,EE,20297A1C,extended,46C80000
+
+[Max Magic P1]
+patch=1,EE,20297A20,extended,46C80000
+
+[Infinite Money P1]
+patch=1,EE,10297A3C,extended,0000FFFF
+
+[Max Money P1]
+patch=1,EE,20297A3C,extended,05F5E0FF
+
+[Infinite Spell Points P1]
+patch=1,EE,00297A40,extended,00000063
+
+[No Weight Carried P1]
+patch=1,EE,10297A86,extended,00000000
+
+[Always Human P2]
+patch=1,EE,1029B28C,extended,00000000
+patch=1,EE,1029B290,extended,00000000
+
+[Always Elf P2]
+patch=1,EE,1029B28C,extended,00000001
+patch=1,EE,1029B290,extended,00000001
+
+[Always Dwarf P2]
+patch=1,EE,1029B28C,extended,00000002
+patch=1,EE,1029B290,extended,00000002
+
+[Always Drizzt P2]
+patch=1,EE,1029B28C,extended,00000003
+patch=1,EE,1029B290,extended,00000003
+
+[Infinite Health P2]
+patch=1,EE,2029B2E4,extended,46C80000
+
+[Max Health P2]
+patch=1,EE,2029B2E8,extended,46C80000
+
+[Infinite Magic P2]
+patch=1,EE,2029B2FC,extended,46C80000
+
+[Max Magic P2]
+patch=1,EE,2029B300,extended,46C80000
+
+[Infinite Money P2]
+patch=1,EE,1029B31C,extended,0000FFFF
+
+[Max Money P2]
+patch=1,EE,2029B31C,extended,05F5E0FF
+
+[Infinite Spell Points P1]
+patch=1,EE,0029B320,extended,00000063
+
+[No Weight Carried P2]
+patch=1,EE,1029B366,extended,00000000

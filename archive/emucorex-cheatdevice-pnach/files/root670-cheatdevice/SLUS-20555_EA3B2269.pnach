@@ -1,0 +1,35 @@
+gametitle=Reel Fishing III (SLUS-20555)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0011E437
+
+[Have All Rods+Reels]
+patch=1,EE,202294C4,extended,24020901
+patch=1,EE,202294C8,extended,A462017E
+
+[Have All Lures]
+patch=1,EE,201C401C,extended,24110901
+patch=1,EE,201C4024,extended,A4710000
+patch=1,EE,202294E0,extended,24020901
+patch=1,EE,202294E4,extended,A4620000
+
+[Have All Fly's]
+patch=1,EE,201C4030,extended,24110901
+patch=1,EE,201C4038,extended,A47100B6
+patch=1,EE,202294FC,extended,24010901
+patch=1,EE,20229500,extended,A441012E
+
+[Have All Baits]
+patch=1,EE,201C404C,extended,24110901
+patch=1,EE,201C4054,extended,A47100B6
+patch=1,EE,20229524,extended,24010901
+patch=1,EE,20229528,extended,A44100B6
+
+[Have All Floats]
+patch=1,EE,20229544,extended,24110901
+patch=1,EE,20229548,extended,A4710192
+patch=1,EE,20229544,extended,24010901
+patch=1,EE,20229548,extended,A4410192

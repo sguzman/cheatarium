@@ -1,0 +1,861 @@
+gametitle=Terminator 3-The Redemption (SLUS-20852)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904766E8,extended,00832021
+
+[Infinite Health (Not Physical Appearance)]
+patch=1,EE,201FC2AC,extended,C64201A0
+patch=1,EE,201FC2B8,extended,E64201A4
+
+[Infinite Health (Vehicles)]
+patch=1,EE,20206AF0,extended,C44001A0
+patch=1,EE,20206AF8,extended,E44001A4
+
+[Instant Death (Most Enemies)]
+patch=1,EE,202295B4,extended,AE2001A4
+
+[P1 Press {L2} To Kill Most Enemies On The Screen]
+patch=1,EE,D0605642,extended,0000FEFF
+patch=1,EE,202295B4,extended,AE2001A4
+patch=1,EE,D0605642,extended,0000FFFF
+patch=1,EE,202295B4,extended,00000000
+
+[View Upgrades For Max Terabytes]
+patch=1,EE,200C0220,extended,3C06000F
+patch=1,EE,200C0224,extended,34C6423F
+patch=1,EE,200C0228,extended,080A78BB
+patch=1,EE,200C022C,extended,AC4603F0
+patch=1,EE,2029E2E8,extended,0C030088
+
+[Always Low CTR]
+patch=1,EE,2010312C,extended,AE000770
+
+[Always Low Game Time]
+patch=1,EE,201DFA38,extended,AE400620
+
+[Access All Levels/Ending Movie/Concept Art/Cheats]
+patch=1,EE,205856DC,extended,00000001
+
+[Permavision]
+patch=1,EE,205853EC,extended,00000001
+
+[Slo-Motion]
+patch=1,EE,2058577C,extended,00000001
+
+[Have All Upgrades]
+patch=1,EE,40585928,extended,00040001
+patch=1,EE,00000003,extended,00000000
+
+[Instant Death]
+patch=1,EE,205857BC,extended,00000001
+
+[Invincibility]
+patch=1,EE,20585764,extended,00000001
+
+[Deathstare]
+patch=1,EE,20583868,extended,00000001
+
+[Infinite Health]
+patch=1,EE,200C0230,extended,C49501A0
+patch=1,EE,200C0234,extended,E49501A4
+patch=1,EE,200C0238,extended,03E00008
+patch=1,EE,200C023C,extended,E49506F8
+patch=1,EE,201CBA98,extended,0C03008C
+
+[Infinite Ammo]
+patch=1,EE,20246938,extended,00000000
+
+[Quick Score Gain P1]
+patch=1,EE,10662A14,extended,0000FFFF
+
+[Max Score P1]
+patch=1,EE,20662A14,extended,05F5E0FF
+
+[Quick Score Gain P2]
+patch=1,EE,10662A18,extended,0000FFFF
+
+[Max Score P2]
+patch=1,EE,20662A18,extended,05F5E0FF
+
+[Recharge 2]
+patch=1,EE,20583368,extended,00000001
+
+[Recharge 3]
+patch=1,EE,2058336C,extended,00000001
+
+[Recharge 4]
+patch=1,EE,20583370,extended,00000001
+
+[Vision Time 2]
+patch=1,EE,20583378,extended,00000001
+
+[Vision Time 3]
+patch=1,EE,2058337C,extended,00000001
+
+[Vision Time 4]
+patch=1,EE,20583380,extended,00000001
+
+[Vision Damage 2]
+patch=1,EE,20583388,extended,00000001
+
+[Vision Damage 3]
+patch=1,EE,2058338C,extended,00000001
+
+[Vision Damage 4]
+patch=1,EE,20583390,extended,00000001
+
+[Vision Charge 2]
+patch=1,EE,20583398,extended,00000001
+
+[Vision Charge 3]
+patch=1,EE,2058339C,extended,00000001
+
+[Vision Charge 4]
+patch=1,EE,205833A0,extended,00000001
+
+[Max Terabytes]
+patch=1,EE,20660EEC,extended,000F423F
+
+[Unlock Ending Movie]
+patch=1,EE,20660AE0,extended,00000014
+
+[Vision Time]
+patch=1,EE,20660E8C,extended,00000003
+
+[Vision Damage]
+patch=1,EE,20660E90,extended,00000003
+
+[Vision Charge]
+patch=1,EE,20660E94,extended,00000003
+
+[Recharge]
+patch=1,EE,20660E98,extended,00000003
+
+[Chapter 1-Hollywood]
+patch=1,EE,20660B2C,extended,00001964
+patch=1,EE,20660B30,extended,00001964
+
+[Chapter 1-Exterior]
+patch=1,EE,20660B5C,extended,00001CE8
+patch=1,EE,20660B60,extended,00001CE8
+
+[Chapter 1-Bunker]
+patch=1,EE,20660B8C,extended,0000251C
+patch=1,EE,20660B90,extended,0000251C
+
+[Chapter 2-L.A. Desert]
+patch=1,EE,20660BBC,extended,00002710
+patch=1,EE,20660BC0,extended,00002710
+
+[Chapter 2-L.A. Town]
+patch=1,EE,20660BEC,extended,00001A2C
+patch=1,EE,20660BF0,extended,00001A2C
+
+[Chapter 2-Cemetary]
+patch=1,EE,20660C1C,extended,00001482
+patch=1,EE,20660C20,extended,00001482
+
+[Chapter 3-FK Titan]
+patch=1,EE,20660C4C,extended,00002710
+patch=1,EE,20660C50,extended,00002710
+
+[Chapter 3-FK Carrier]
+patch=1,EE,20660C7C,extended,00002710
+patch=1,EE,20660C80,extended,00002710
+
+[Chapter 3-Tunnels]
+patch=1,EE,20660CAC,extended,000014B4
+patch=1,EE,20660CB0,extended,000014B4
+
+[Chapter 3-Skynet]
+patch=1,EE,20660CDC,extended,00001D4C
+patch=1,EE,20660CE0,extended,00001D4C
+
+[Chapter 4-CRS Hangar]
+patch=1,EE,20660D0C,extended,00002328
+patch=1,EE,20660D10,extended,00002328
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,20660D3C,extended,00001D4C
+patch=1,EE,20660D40,extended,00001D4C
+
+[Chapter 2-Los Angeles]
+patch=1,EE,20660D6C,extended,00001388
+patch=1,EE,20660D70,extended,00001388
+
+[Chapter 2-Hills]
+patch=1,EE,20660D9C,extended,00002328
+patch=1,EE,20660DA0,extended,00002328
+
+[Chapter 1-Tech-Comm Base]
+patch=1,EE,20660E5C,extended,00001194
+patch=1,EE,20660E60,extended,00001194
+
+[Chapter 1-Hollywood]
+patch=1,EE,20660EFC,extended,00000001
+
+[Chapter 1-Exterior]
+patch=1,EE,20660F00,extended,00000001
+
+[Chapter 1-Bunker]
+patch=1,EE,20660F04,extended,00000001
+
+[Chapter 1-L.A. Desert]
+patch=1,EE,20660F08,extended,00000001
+
+[Chapter 2-L.A. Town]
+patch=1,EE,20660F0C,extended,00000001
+
+[Chapter 2-Cemetery]
+patch=1,EE,20660F10,extended,00000001
+
+[Chapter 2-FK Titan]
+patch=1,EE,20660F14,extended,00000001
+
+[Chapter 3-FK Carrier]
+patch=1,EE,20660F18,extended,00000001
+
+[Chapter 3-Tunnels]
+patch=1,EE,20660F1C,extended,00000001
+
+[Chapter 3-Skynet]
+patch=1,EE,20660F20,extended,00000001
+
+[Chapter 3-CRS Hangar]
+patch=1,EE,20660F24,extended,00000001
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,20660F28,extended,00000001
+
+[Chapter 2-Los Angeles]
+patch=1,EE,20660F2C,extended,00000001
+
+[Chapter 2-Hills]
+patch=1,EE,20660F30,extended,00000001
+
+[All Missions]
+patch=1,EE,40660EFC,extended,000E0001
+patch=1,EE,00000001,extended,00000000
+
+[Max Terabytes]
+patch=1,EE,206613CC,extended,000F423F
+
+[Unlock Ending Movie]
+patch=1,EE,20660FC0,extended,00000014
+
+[Vision Time]
+patch=1,EE,2066136C,extended,00000003
+
+[Vision Damage]
+patch=1,EE,20661370,extended,00000003
+
+[Vision Charge]
+patch=1,EE,20661374,extended,00000003
+
+[Recharge]
+patch=1,EE,20661378,extended,00000003
+
+[Chapter 1-Hollywood]
+patch=1,EE,2066100C,extended,00001964
+patch=1,EE,20661010,extended,00001964
+
+[Chapter 1-Exterior]
+patch=1,EE,2066103C,extended,00001CE8
+patch=1,EE,20661040,extended,00001CE8
+
+[Chapter 1-Bunker]
+patch=1,EE,2066106C,extended,0000251C
+patch=1,EE,20661070,extended,0000251C
+
+[Chapter 2-L.A. Desert]
+patch=1,EE,2066109C,extended,00002710
+patch=1,EE,206610A0,extended,00002710
+
+[Chapter 2-L.A. Town]
+patch=1,EE,206610CC,extended,00001A2C
+patch=1,EE,206610D0,extended,00001A2C
+
+[Chapter 2-Cemetary]
+patch=1,EE,206610FC,extended,00001482
+patch=1,EE,20661100,extended,00001482
+
+[Chapter 3-FK Titan]
+patch=1,EE,2066112C,extended,00002710
+patch=1,EE,20661130,extended,00002710
+
+[Chapter 3-FK Carrier]
+patch=1,EE,2066115C,extended,00002710
+patch=1,EE,20661160,extended,00002710
+
+[Chapter 3-Tunnels]
+patch=1,EE,2066118C,extended,000014B4
+patch=1,EE,20661190,extended,000014B4
+
+[Chapter 3-Skynet]
+patch=1,EE,206611BC,extended,00001D4C
+patch=1,EE,206611C0,extended,00001D4C
+
+[Chapter 4-CRS Hangar]
+patch=1,EE,206611EC,extended,00002328
+patch=1,EE,206611F0,extended,00002328
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,2066121C,extended,00001D4C
+patch=1,EE,20661220,extended,00001D4C
+
+[Chapter 2-Los Angeles]
+patch=1,EE,2066124C,extended,00001388
+patch=1,EE,20661250,extended,00001388
+
+[Chapter 2-Hills]
+patch=1,EE,2066127C,extended,00002328
+patch=1,EE,20661280,extended,00002328
+
+[Chapter 1-Tech-Comm Base]
+patch=1,EE,2066133C,extended,00001194
+patch=1,EE,20661340,extended,00001194
+
+[Chapter 1-Hollywood]
+patch=1,EE,206613DC,extended,00000001
+
+[Chapter 1-Exterior]
+patch=1,EE,206613E0,extended,00000001
+
+[Chapter 1-Bunker]
+patch=1,EE,206613E4,extended,00000001
+
+[Chapter 1-L.A. Desert]
+patch=1,EE,206613E8,extended,00000001
+
+[Chapter 2-L.A. Town]
+patch=1,EE,206613EC,extended,00000001
+
+[Chapter 2-Cemetery]
+patch=1,EE,206613F0,extended,00000001
+
+[Chapter 2-FK Titan]
+patch=1,EE,206613F4,extended,00000001
+
+[Chapter 3-FK Carrier]
+patch=1,EE,206613F8,extended,00000001
+
+[Chapter 3-Tunnels]
+patch=1,EE,206613FC,extended,00000001
+
+[Chapter 3-Skynet]
+patch=1,EE,20661400,extended,00000001
+
+[Chapter 3-CRS Hangar]
+patch=1,EE,20661404,extended,00000001
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,20661408,extended,00000001
+
+[Chapter 2-Los Angeles]
+patch=1,EE,2066140C,extended,00000001
+
+[Chapter 2-Hills]
+patch=1,EE,20661410,extended,00000001
+
+[All Missions]
+patch=1,EE,406613DC,extended,000E0001
+patch=1,EE,00000001,extended,00000000
+
+[Max Terabytes]
+patch=1,EE,206618AC,extended,000F423F
+
+[Unlock Ending Movie]
+patch=1,EE,206614A0,extended,00000014
+
+[Vision Time]
+patch=1,EE,2066184C,extended,00000003
+
+[Vision Damage]
+patch=1,EE,20661850,extended,00000003
+
+[Vision Charge]
+patch=1,EE,20661854,extended,00000003
+
+[Recharge]
+patch=1,EE,20661858,extended,00000003
+
+[Chapter 1-Hollywood]
+patch=1,EE,206614EC,extended,00001964
+patch=1,EE,206614F0,extended,00001964
+
+[Chapter 1-Exterior]
+patch=1,EE,2066151C,extended,00001CE8
+patch=1,EE,20661520,extended,00001CE8
+
+[Chapter 1-Bunker]
+patch=1,EE,2066154C,extended,0000251C
+patch=1,EE,20661550,extended,0000251C
+
+[Chapter 2-L.A. Desert]
+patch=1,EE,2066157C,extended,00002710
+patch=1,EE,20661580,extended,00002710
+
+[Chapter 2-L.A. Town]
+patch=1,EE,206615AC,extended,00001A2C
+patch=1,EE,206615B0,extended,00001A2C
+
+[Chapter 2-Cemetary]
+patch=1,EE,206615DC,extended,00001482
+patch=1,EE,206615E0,extended,00001482
+
+[Chapter 3-FK Titan]
+patch=1,EE,2066160C,extended,00002710
+patch=1,EE,20661610,extended,00002710
+
+[Chapter 3-FK Carrier]
+patch=1,EE,2066163C,extended,00002710
+patch=1,EE,20661640,extended,00002710
+
+[Chapter 3-Tunnels]
+patch=1,EE,2066166C,extended,000014B4
+patch=1,EE,20661670,extended,000014B4
+
+[Chapter 3-Skynet]
+patch=1,EE,2066169C,extended,00001D4C
+patch=1,EE,206616A0,extended,00001D4C
+
+[Chapter 4-CRS Hangar]
+patch=1,EE,206616CC,extended,00002328
+patch=1,EE,206616D0,extended,00002328
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,206616FC,extended,00001D4C
+patch=1,EE,20661700,extended,00001D4C
+
+[Chapter 2-Los Angeles]
+patch=1,EE,2066172C,extended,00001388
+patch=1,EE,20661730,extended,00001388
+
+[Chapter 2-Hills]
+patch=1,EE,2066175C,extended,00002328
+patch=1,EE,20661760,extended,00002328
+
+[Chapter 1-Tech-Comm Base]
+patch=1,EE,2066181C,extended,00001194
+patch=1,EE,20661820,extended,00001194
+
+[Chapter 1-Hollywood]
+patch=1,EE,206618BC,extended,00000001
+
+[Chapter 1-Exterior]
+patch=1,EE,206618C0,extended,00000001
+
+[Chapter 1-Bunker]
+patch=1,EE,206618C4,extended,00000001
+
+[Chapter 1-L.A. Desert]
+patch=1,EE,206618C8,extended,00000001
+
+[Chapter 2-L.A. Town]
+patch=1,EE,206618CC,extended,00000001
+
+[Chapter 2-Cemetery]
+patch=1,EE,206618D0,extended,00000001
+
+[Chapter 2-FK Titan]
+patch=1,EE,206618D4,extended,00000001
+
+[Chapter 3-FK Carrier]
+patch=1,EE,206618D8,extended,00000001
+
+[Chapter 3-Tunnels]
+patch=1,EE,206618DC,extended,00000001
+
+[Chapter 3-Skynet]
+patch=1,EE,206618E0,extended,00000001
+
+[Chapter 3-CRS Hangar]
+patch=1,EE,206618E4,extended,00000001
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,206618E8,extended,00000001
+
+[Chapter 2-Los Angeles]
+patch=1,EE,206618EC,extended,00000001
+
+[Chapter 2-Hills]
+patch=1,EE,206618F0,extended,00000001
+
+[All Missions]
+patch=1,EE,406618BC,extended,000E0001
+patch=1,EE,00000001,extended,00000000
+
+[Max Terabytes]
+patch=1,EE,20661D8C,extended,000F423F
+
+[Unlock Ending Movie]
+patch=1,EE,20661980,extended,00000014
+
+[Vision Time]
+patch=1,EE,20661D2C,extended,00000003
+
+[Vision Damage]
+patch=1,EE,20661D30,extended,00000003
+
+[Vision Charge]
+patch=1,EE,20661D34,extended,00000003
+
+[Recharge]
+patch=1,EE,20661D38,extended,00000003
+
+[Chapter 1-Hollywood]
+patch=1,EE,206619CC,extended,00001964
+patch=1,EE,206619D0,extended,00001964
+
+[Chapter 1-Exterior]
+patch=1,EE,206619FC,extended,00001CE8
+patch=1,EE,20661A00,extended,00001CE8
+
+[Chapter 1-Bunker]
+patch=1,EE,20661A2C,extended,0000251C
+patch=1,EE,20661A30,extended,0000251C
+
+[Chapter 2-L.A. Desert]
+patch=1,EE,20661A5C,extended,00002710
+patch=1,EE,20661A60,extended,00002710
+
+[Chapter 2-L.A. Town]
+patch=1,EE,20661A8C,extended,00001A2C
+patch=1,EE,20661A90,extended,00001A2C
+
+[Chapter 2-Cemetary]
+patch=1,EE,20661ABC,extended,00001482
+patch=1,EE,20661AC0,extended,00001482
+
+[Chapter 3-FK Titan]
+patch=1,EE,20661AEC,extended,00002710
+patch=1,EE,20661AF0,extended,00002710
+
+[Chapter 3-FK Carrier]
+patch=1,EE,20661B1C,extended,00002710
+patch=1,EE,20661B20,extended,00002710
+
+[Chapter 3-Tunnels]
+patch=1,EE,20661B4C,extended,000014B4
+patch=1,EE,20661B50,extended,000014B4
+
+[Chapter 3-Skynet]
+patch=1,EE,20661B7C,extended,00001D4C
+patch=1,EE,20661B80,extended,00001D4C
+
+[Chapter 4-CRS Hangar]
+patch=1,EE,20661BAC,extended,00002328
+patch=1,EE,20661BB0,extended,00002328
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,20661BDC,extended,00001D4C
+patch=1,EE,20661BE0,extended,00001D4C
+
+[Chapter 2-Los Angeles]
+patch=1,EE,20661C0C,extended,00001388
+patch=1,EE,20661C10,extended,00001388
+
+[Chapter 2-Hills]
+patch=1,EE,20661C3C,extended,00002328
+patch=1,EE,20661C40,extended,00002328
+
+[Chapter 1-Tech-Comm Base]
+patch=1,EE,20661CFC,extended,00001194
+patch=1,EE,20661D00,extended,00001194
+
+[Chapter 1-Hollywood]
+patch=1,EE,20661D9C,extended,00000001
+
+[Chapter 1-Exterior]
+patch=1,EE,20661DA0,extended,00000001
+
+[Chapter 1-Bunker]
+patch=1,EE,20661DA4,extended,00000001
+
+[Chapter 1-L.A. Desert]
+patch=1,EE,20661DA8,extended,00000001
+
+[Chapter 2-L.A. Town]
+patch=1,EE,20661DAC,extended,00000001
+
+[Chapter 2-Cemetery]
+patch=1,EE,20661DB0,extended,00000001
+
+[Chapter 2-FK Titan]
+patch=1,EE,20661DB4,extended,00000001
+
+[Chapter 3-FK Carrier]
+patch=1,EE,20661DB8,extended,00000001
+
+[Chapter 3-Tunnels]
+patch=1,EE,20661DBC,extended,00000001
+
+[Chapter 3-Skynet]
+patch=1,EE,20661DC0,extended,00000001
+
+[Chapter 3-CRS Hangar]
+patch=1,EE,20661DC4,extended,00000001
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,20661DC8,extended,00000001
+
+[Chapter 2-Los Angeles]
+patch=1,EE,20661DCC,extended,00000001
+
+[Chapter 2-Hills]
+patch=1,EE,20661DD0,extended,00000001
+
+[All Missions]
+patch=1,EE,40661D9C,extended,000E0001
+patch=1,EE,00000001,extended,00000000
+
+[Max Terabytes]
+patch=1,EE,2066226C,extended,000F423F
+
+[Unlock Ending Movie]
+patch=1,EE,20661E60,extended,00000014
+
+[Vision Time]
+patch=1,EE,2066220C,extended,00000003
+
+[Vision Damage]
+patch=1,EE,20662210,extended,00000003
+
+[Vision Charge]
+patch=1,EE,20662214,extended,00000003
+
+[Recharge]
+patch=1,EE,20662218,extended,00000003
+
+[Chapter 1-Hollywood]
+patch=1,EE,20661EAC,extended,00001964
+patch=1,EE,20661EB0,extended,00001964
+
+[Chapter 1-Exterior]
+patch=1,EE,20661EDC,extended,00001CE8
+patch=1,EE,20661EE0,extended,00001CE8
+
+[Chapter 1-Bunker]
+patch=1,EE,20661F0C,extended,0000251C
+patch=1,EE,20661F10,extended,0000251C
+
+[Chapter 2-L.A. Desert]
+patch=1,EE,20661F3C,extended,00002710
+patch=1,EE,20661F40,extended,00002710
+
+[Chapter 2-L.A. Town]
+patch=1,EE,20661F6C,extended,00001A2C
+patch=1,EE,20661F70,extended,00001A2C
+
+[Chapter 2-Cemetary]
+patch=1,EE,20661F9C,extended,00001482
+patch=1,EE,20661FA0,extended,00001482
+
+[Chapter 3-FK Titan]
+patch=1,EE,20661FCC,extended,00002710
+patch=1,EE,20661FD0,extended,00002710
+
+[Chapter 3-FK Carrier]
+patch=1,EE,20661FFC,extended,00002710
+patch=1,EE,20662000,extended,00002710
+
+[Chapter 3-Tunnels]
+patch=1,EE,2066202C,extended,000014B4
+patch=1,EE,20662030,extended,000014B4
+
+[Chapter 3-Skynet]
+patch=1,EE,2066205C,extended,00001D4C
+patch=1,EE,20662060,extended,00001D4C
+
+[Chapter 4-CRS Hangar]
+patch=1,EE,2066208C,extended,00002328
+patch=1,EE,20662090,extended,00002328
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,206620BC,extended,00001D4C
+patch=1,EE,206620C0,extended,00001D4C
+
+[Chapter 2-Los Angeles]
+patch=1,EE,206620EC,extended,00001388
+patch=1,EE,206620F0,extended,00001388
+
+[Chapter 2-Hills]
+patch=1,EE,2066211C,extended,00002328
+patch=1,EE,20662120,extended,00002328
+
+[Chapter 1-Tech-Comm Base]
+patch=1,EE,206621DC,extended,00001194
+patch=1,EE,206621E0,extended,00001194
+
+[Chapter 1-Hollywood]
+patch=1,EE,2066227C,extended,00000001
+
+[Chapter 1-Exterior]
+patch=1,EE,20662280,extended,00000001
+
+[Chapter 1-Bunker]
+patch=1,EE,20662284,extended,00000001
+
+[Chapter 1-L.A. Desert]
+patch=1,EE,20662288,extended,00000001
+
+[Chapter 2-L.A. Town]
+patch=1,EE,2066228C,extended,00000001
+
+[Chapter 2-Cemetery]
+patch=1,EE,20662290,extended,00000001
+
+[Chapter 2-FK Titan]
+patch=1,EE,20662294,extended,00000001
+
+[Chapter 3-FK Carrier]
+patch=1,EE,20662298,extended,00000001
+
+[Chapter 3-Tunnels]
+patch=1,EE,2066229C,extended,00000001
+
+[Chapter 3-Skynet]
+patch=1,EE,206622A0,extended,00000001
+
+[Chapter 3-CRS Hangar]
+patch=1,EE,206622A4,extended,00000001
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,206622A8,extended,00000001
+
+[Chapter 2-Los Angeles]
+patch=1,EE,206622AC,extended,00000001
+
+[Chapter 2-Hills]
+patch=1,EE,206622B0,extended,00000001
+
+[All Missions]
+patch=1,EE,4066227C,extended,000E0001
+patch=1,EE,00000001,extended,00000000
+
+[Max Terabytes]
+patch=1,EE,2066274C,extended,000F423F
+
+[Unlock Ending Movie]
+patch=1,EE,20662340,extended,00000014
+
+[Vision Time]
+patch=1,EE,206626EC,extended,00000003
+
+[Vision Damage]
+patch=1,EE,206626F0,extended,00000003
+
+[Vision Charge]
+patch=1,EE,206626F4,extended,00000003
+
+[Recharge]
+patch=1,EE,206626F8,extended,00000003
+
+[Chapter 1-Hollywood]
+patch=1,EE,2066238C,extended,00001964
+patch=1,EE,20662390,extended,00001964
+
+[Chapter 1-Exterior]
+patch=1,EE,206623BC,extended,00001CE8
+patch=1,EE,206623C0,extended,00001CE8
+
+[Chapter 1-Bunker]
+patch=1,EE,206623EC,extended,0000251C
+patch=1,EE,206623F0,extended,0000251C
+
+[Chapter 2-L.A. Desert]
+patch=1,EE,2066241C,extended,00002710
+patch=1,EE,20662420,extended,00002710
+
+[Chapter 2-L.A. Town]
+patch=1,EE,2066244C,extended,00001A2C
+patch=1,EE,20662450,extended,00001A2C
+
+[Chapter 2-Cemetary]
+patch=1,EE,2066247C,extended,00001482
+patch=1,EE,20662480,extended,00001482
+
+[Chapter 3-FK Titan]
+patch=1,EE,206624AC,extended,00002710
+patch=1,EE,206624B0,extended,00002710
+
+[Chapter 3-FK Carrier]
+patch=1,EE,206624DC,extended,00002710
+patch=1,EE,206624E0,extended,00002710
+
+[Chapter 3-Tunnels]
+patch=1,EE,2066250C,extended,000014B4
+patch=1,EE,20662510,extended,000014B4
+
+[Chapter 3-Skynet]
+patch=1,EE,2066253C,extended,00001D4C
+patch=1,EE,20662540,extended,00001D4C
+
+[Chapter 4-CRS Hangar]
+patch=1,EE,2066256C,extended,00002328
+patch=1,EE,20662570,extended,00002328
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,2066259C,extended,00001D4C
+patch=1,EE,206625A0,extended,00001D4C
+
+[Chapter 2-Los Angeles]
+patch=1,EE,206625CC,extended,00001388
+patch=1,EE,206625D0,extended,00001388
+
+[Chapter 2-Hills]
+patch=1,EE,206625FC,extended,00002328
+patch=1,EE,20662600,extended,00002328
+
+[Chapter 1-Tech-Comm Base]
+patch=1,EE,206626BC,extended,00001194
+patch=1,EE,206626C0,extended,00001194
+
+[Chapter 1-Hollywood]
+patch=1,EE,2066275C,extended,00000001
+
+[Chapter 1-Exterior]
+patch=1,EE,20662760,extended,00000001
+
+[Chapter 1-Bunker]
+patch=1,EE,20662764,extended,00000001
+
+[Chapter 1-L.A. Desert]
+patch=1,EE,20662768,extended,00000001
+
+[Chapter 2-L.A. Town]
+patch=1,EE,2066276C,extended,00000001
+
+[Chapter 2-Cemetery]
+patch=1,EE,20662770,extended,00000001
+
+[Chapter 2-FK Titan]
+patch=1,EE,20662774,extended,00000001
+
+[Chapter 3-FK Carrier]
+patch=1,EE,20662778,extended,00000001
+
+[Chapter 3-Tunnels]
+patch=1,EE,2066277C,extended,00000001
+
+[Chapter 3-Skynet]
+patch=1,EE,20662780,extended,00000001
+
+[Chapter 3-CRS Hangar]
+patch=1,EE,20662784,extended,00000001
+
+[Chapter 4-Crystal Peak]
+patch=1,EE,20662788,extended,00000001
+
+[Chapter 2-Los Angeles]
+patch=1,EE,2066278C,extended,00000001
+
+[Chapter 2-Hills]
+patch=1,EE,20662790,extended,00000001
+
+[All Missions]
+patch=1,EE,4066275C,extended,000E0001
+patch=1,EE,00000001,extended,00000000

@@ -1,0 +1,786 @@
+gametitle=Nascar Dirt To Daytona (SLUS-20441)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902F9284,extended,0C0C34D9
+
+[Max Money (Career Mode)]
+patch=1,EE,200C0220,extended,3C0205F5
+patch=1,EE,200C0224,extended,3442E0FF
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AC620004
+patch=1,EE,20286F88,extended,08030088
+
+[Buying Parts Doesnt Decrease Money (Career Mode)]
+patch=1,EE,20286F54,extended,00000000
+
+[Buying Parts Increases Money (Career Mode)]
+patch=1,EE,20286F4C,extended,00641821
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,109579A2,extended,00000001
+patch=1,EE,209579A8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,409579AC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,409579C4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,409579DC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10958432,extended,00000001
+patch=1,EE,20958438,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095843C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40958454,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095846C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10958EC2,extended,00000001
+patch=1,EE,20958EC8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40958ECC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40958EE4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40958EFC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10959952,extended,00000001
+patch=1,EE,20959958,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095995C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40959974,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095998C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095A3E2,extended,00000001
+patch=1,EE,2095A3E8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095A3EC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095A404,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095A41C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095AE72,extended,00000001
+patch=1,EE,2095AE78,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095AE7C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095AE94,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095AEAC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095B902,extended,00000001
+patch=1,EE,2095B908,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095B90C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095B924,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095B93C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095C8DA,extended,00000001
+patch=1,EE,2095C8E0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095C8E4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095C8FC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095C914,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095D36A,extended,00000001
+patch=1,EE,2095D370,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095D374,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095D38C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095D3A4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095DDFA,extended,00000001
+patch=1,EE,2095DE00,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095DE04,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095DE1C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095DE34,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095E88A,extended,00000001
+patch=1,EE,2095E890,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095E894,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095E8AC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095E8C4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095F31A,extended,00000001
+patch=1,EE,2095F320,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095F324,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095F33C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095F354,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,109602F2,extended,00000001
+patch=1,EE,209602F8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,409602FC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40960314,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4096032C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10960D82,extended,00000001
+patch=1,EE,20960D88,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40960D8C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40960DA4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40960DBC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,109612CA,extended,00000001
+patch=1,EE,209612D0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,409612D4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,409612EC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40961304,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10962D32,extended,00000001
+patch=1,EE,20962D38,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40962D3C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40962D54,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40962D6C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,109637C2,extended,00000001
+patch=1,EE,209637C8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,409637CC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,409637E4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,409637FC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10964252,extended,00000001
+patch=1,EE,20964258,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4096425C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40964274,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4096428C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10965CBA,extended,00000001
+patch=1,EE,20965CC0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40965CC4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,40965CDC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40965CF4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1096674A,extended,00000001
+patch=1,EE,20966750,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40966754,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4096676C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40966784,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10959E9A,extended,00000001
+patch=1,EE,20959EA0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40959EA4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40959EBC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40959ED4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095C392,extended,00000001
+patch=1,EE,2095C398,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095C39C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095C3B4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095C3CC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095F862,extended,00000001
+patch=1,EE,2095F868,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095F86C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095F884,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095F89C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1096083A,extended,00000001
+patch=1,EE,20960840,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40960844,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4096085C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40960874,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10961D5A,extended,00000001
+patch=1,EE,20961D60,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40961D64,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40961D7C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40961D94,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,109627EA,extended,00000001
+patch=1,EE,209627F0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,409627F4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4096280C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40962824,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1096327A,extended,00000001
+patch=1,EE,20963280,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40963284,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4096329C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,409632B4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10963D0A,extended,00000001
+patch=1,EE,20963D10,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40963D14,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40963D2C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40963D44,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1096479A,extended,00000001
+patch=1,EE,209647A0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,409647A4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,409647BC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,409647D4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1096522A,extended,00000001
+patch=1,EE,20965230,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40965234,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4096524C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40965264,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10965772,extended,00000001
+patch=1,EE,20965778,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4096577C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40965794,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,409657AC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10966202,extended,00000001
+patch=1,EE,20966208,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4096620C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40966224,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4096623C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095745A,extended,00000001
+patch=1,EE,20957460,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40957464,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095747C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40957494,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095897A,extended,00000001
+patch=1,EE,20958980,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40958984,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095899C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,409589B4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095B3BA,extended,00000001
+patch=1,EE,2095B3C0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095B3C4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095B3DC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095B3F4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095CE22,extended,00000001
+patch=1,EE,2095CE28,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095CE2C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095CE44,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095CE5C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095E342,extended,00000001
+patch=1,EE,2095E348,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095E34C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095E364,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095E37C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10961812,extended,00000001
+patch=1,EE,20961818,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4096181C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40961834,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4096184C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,109622A2,extended,00000001
+patch=1,EE,209622A8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,409622AC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,409622C4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,409622DC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10964CE2,extended,00000001
+patch=1,EE,20964CE8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40964CEC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40964D04,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40964D1C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10957EEA,extended,00000001
+patch=1,EE,20957EF0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40957EF4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40957F0C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40957F24,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095940A,extended,00000001
+patch=1,EE,20959410,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40959414,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095942C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40959444,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095A92A,extended,00000001
+patch=1,EE,2095A930,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095A934,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095A94C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095A964,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095BE4A,extended,00000001
+patch=1,EE,2095BE50,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095BE54,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095BE6C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095BE84,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095D8B2,extended,00000001
+patch=1,EE,2095D8B8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095D8BC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095D8D4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095D8EC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095EDD2,extended,00000001
+patch=1,EE,2095EDD8,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095EDDC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095EDF4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095EE0C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,1095FDAA,extended,00000001
+patch=1,EE,2095FDB0,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,4095FDB4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,4095FDCC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,4095FDE4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Fastest Lap Always 0:00.0]
+patch=1,EE,10956F12,extended,00000001
+patch=1,EE,20956F18,extended,00000000
+
+[Have All Wins Completed]
+patch=1,EE,40956F1C,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Top-5 Completed]
+patch=1,EE,40956F34,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have Top-10 All Completed]
+patch=1,EE,40956F4C,extended,00050001
+patch=1,EE,00000001,extended,00000000

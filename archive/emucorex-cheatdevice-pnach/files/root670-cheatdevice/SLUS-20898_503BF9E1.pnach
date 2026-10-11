@@ -1,0 +1,113 @@
+gametitle=Star Wars-Battlefront (SLUS-20898)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904F75C8,extended,0C109949
+
+[Unlock All Special Features]
+patch=1,EE,20643878,extended,FFFFFFFF
+
+[Infinite Health]
+patch=1,EE,202C2A24,extended,8C410004
+patch=1,EE,202C2A28,extended,AC410000
+
+[Infinite Primary Ammo]
+patch=1,EE,20285528,extended,00000000
+
+[Extra Primary Ammo]
+patch=1,EE,20285520,extended,46010000
+
+[Infinite Secondary Ammo]
+patch=1,EE,2028ECCC,extended,00000000
+
+[Extra Secondary Ammo]
+patch=1,EE,2028ECCC,extended,46010000
+
+[Never Reload]
+patch=1,EE,20288F28,extended,00000000
+
+[Never Overheat]
+patch=1,EE,20288F34,extended,00000000
+
+[Infinite Jetpack]
+patch=1,EE,202072A4,extended,00000000
+patch=1,EE,2020958C,extended,00000000
+
+[P1 Press {L3}+Right For Display FPS On]
+patch=1,EE,D06F465C,extended,0000FFDD
+patch=1,EE,205173D4,extended,00000001
+
+[P1 Press {L3}+Left For Display FPS Off]
+patch=1,EE,D06F465C,extended,0000FF7D
+patch=1,EE,205173D4,extended,00000000
+
+[Display FPS Always On]
+patch=1,EE,205173D4,extended,00000001
+
+[P1 Press {L3}+Up For Idiot AI On]
+patch=1,EE,D06F465C,extended,0000FFED
+patch=1,EE,20518320,extended,00000001
+
+[P1 Press {L3}+Down For Idiot AI Off]
+patch=1,EE,D06F465C,extended,0000FFBD
+patch=1,EE,20518320,extended,00000000
+
+[Idiot AI Always On]
+patch=1,EE,20518320,extended,00000001
+
+[P1 Press {R3}+Up For Invincibility On]
+patch=1,EE,D06F465C,extended,0000FFEB
+patch=1,EE,20519060,extended,00000001
+
+[P1 Press {R3}+Down For Invincibility Off]
+patch=1,EE,D06F465C,extended,0000FFBB
+patch=1,EE,20519060,extended,00000000
+
+[Invincibility Always On]
+patch=1,EE,20519060,extended,00000001
+
+[P1 Press {R3}+Right For Unlimited Ammo On]
+patch=1,EE,D06F465C,extended,0000FFDB
+patch=1,EE,20519064,extended,00000001
+
+[P1 Press {R3}+Left For Unlimited Ammo Off]
+patch=1,EE,D06F465C,extended,0000FF7B
+patch=1,EE,20519064,extended,00000000
+
+[Unlimited Ammo Always On]
+patch=1,EE,20519064,extended,00000001
+
+[P1 Press {L2}+Right For Display AI Path On]
+patch=1,EE,D06F465C,extended,0000FEDF
+patch=1,EE,20517CF4,extended,00000001
+
+[P1 Press {L2}+Left For Display AI Path Off]
+patch=1,EE,D06F465C,extended,0000FE7F
+patch=1,EE,20517CF4,extended,00000000
+
+[Display AI Path Always On]
+patch=1,EE,20517CF4,extended,00000001
+
+[P1 Press {L2}+Up For Display Profile Info On]
+patch=1,EE,D06F465C,extended,0000FEEF
+patch=1,EE,205173D8,extended,00000001
+
+[P1 Press {L2}+Down For Display Profile Info Off]
+patch=1,EE,D06F465C,extended,0000FEBF
+patch=1,EE,205173D8,extended,00000000
+
+[Display Profile Info Always On]
+patch=1,EE,205173D8,extended,00000001
+
+[P1 Press {R2}+Right For Demo Mode On]
+patch=1,EE,D06F465C,extended,0000FDDF
+patch=1,EE,20519058,extended,00000001
+
+[P1 Press {R2}+Left For Demo Mode Off]
+patch=1,EE,D06F465C,extended,0000FD7F
+patch=1,EE,20519058,extended,00000001
+
+[Demo Mode Always On]
+patch=1,EE,20519058,extended,00000001

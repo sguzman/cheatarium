@@ -1,0 +1,261 @@
+gametitle=Evil Dead-Regeneration (SLUS-21048)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902E3B98,extended,00832021
+
+[Infinite Health (Ash)]
+patch=1,EE,10C50312,extended,00002710
+
+[Max Health (Ash)]
+patch=1,EE,10C50314,extended,00002710
+
+[Infinite Health (Sam)]
+patch=1,EE,10D9A3C2,extended,00002710
+
+[Max Health (Sam)]
+patch=1,EE,10D9A3C4,extended,00002710
+
+[Max Clip Size]
+patch=1,EE,2056B964,extended,24030063
+
+[Never Reload]
+patch=1,EE,2056B01C,extended,00000000
+
+[Extra 1]
+patch=1,EE,006EB63C,extended,00000000
+patch=1,EE,00718E20,extended,00000000
+
+[Extra 2]
+patch=1,EE,006EB63D,extended,00000000
+patch=1,EE,00718E21,extended,00000000
+
+[Extra 3]
+patch=1,EE,006EB63E,extended,00000000
+patch=1,EE,00718E22,extended,00000000
+
+[Extra 4]
+patch=1,EE,006EB63F,extended,00000000
+patch=1,EE,00718E23,extended,00000000
+
+[Extra 5]
+patch=1,EE,006EB640,extended,00000000
+patch=1,EE,00718E24,extended,00000000
+
+[Extra 6]
+patch=1,EE,006EB641,extended,00000000
+patch=1,EE,00718E25,extended,00000000
+
+[Extra 7]
+patch=1,EE,006EB642,extended,00000000
+patch=1,EE,00718E26,extended,00000000
+
+[Extra 8]
+patch=1,EE,006EB643,extended,00000000
+patch=1,EE,00718E27,extended,00000000
+
+[Extra 9]
+patch=1,EE,006EB644,extended,00000000
+patch=1,EE,00718E28,extended,00000000
+
+[Extra 10]
+patch=1,EE,006EB645,extended,00000000
+patch=1,EE,00718E29,extended,00000000
+
+[Extra 11]
+patch=1,EE,006EB646,extended,00000000
+patch=1,EE,00718E2A,extended,00000000
+
+[Extra 12]
+patch=1,EE,006EB647,extended,00000000
+patch=1,EE,00718E2B,extended,00000000
+
+[Extra 13]
+patch=1,EE,006EB648,extended,00000000
+patch=1,EE,00718E2C,extended,00000000
+
+[Extra 14]
+patch=1,EE,006EB649,extended,00000000
+patch=1,EE,00718E2D,extended,00000000
+
+[Extra 15]
+patch=1,EE,006EB64A,extended,00000000
+patch=1,EE,00718E2E,extended,00000000
+
+[Extra 16]
+patch=1,EE,006EB64B,extended,00000000
+patch=1,EE,00718E2F,extended,00000000
+
+[Extra 17]
+patch=1,EE,006EB64C,extended,00000000
+patch=1,EE,00718E30,extended,00000000
+
+[Extra 18]
+patch=1,EE,006EB64D,extended,00000000
+patch=1,EE,00718E31,extended,00000000
+
+[Extra 19]
+patch=1,EE,006EB64E,extended,00000000
+patch=1,EE,00718E32,extended,00000000
+
+[Extra 20]
+patch=1,EE,006EB64F,extended,00000000
+patch=1,EE,00718E33,extended,00000000
+
+[All Extras]
+patch=1,EE,406EB63C,extended,00050001
+patch=1,EE,00000000,extended,00000000
+patch=1,EE,40718E20,extended,00050001
+patch=1,EE,00000000,extended,00000000
+
+[Cinema 1]
+patch=1,EE,006EB650,extended,00000000
+patch=1,EE,00718E34,extended,00000000
+
+[Cinema 2]
+patch=1,EE,006EB651,extended,00000000
+patch=1,EE,00718E35,extended,00000000
+
+[Cinema 3]
+patch=1,EE,006EB652,extended,00000000
+patch=1,EE,00718E36,extended,00000000
+
+[Cinema 4]
+patch=1,EE,006EB653,extended,00000000
+patch=1,EE,00718E37,extended,00000000
+
+[Cinema 5]
+patch=1,EE,006EB654,extended,00000000
+patch=1,EE,00718E38,extended,00000000
+
+[Cinema 6]
+patch=1,EE,006EB655,extended,00000000
+patch=1,EE,00718E39,extended,00000000
+
+[Cinema 7]
+patch=1,EE,006EB656,extended,00000000
+patch=1,EE,00718E3A,extended,00000000
+
+[Cinema 8]
+patch=1,EE,006EB657,extended,00000000
+patch=1,EE,00718E3B,extended,00000000
+
+[Cinema 9]
+patch=1,EE,006EB658,extended,00000000
+patch=1,EE,00718E3C,extended,00000000
+
+[Cinema 10]
+patch=1,EE,006EB659,extended,00000000
+patch=1,EE,00718E3D,extended,00000000
+
+[Cinema 11]
+patch=1,EE,006EB65A,extended,00000000
+patch=1,EE,00718E3E,extended,00000000
+
+[Cinema 12]
+patch=1,EE,006EB65B,extended,00000000
+patch=1,EE,00718E3F,extended,00000000
+
+[Cinema 13]
+patch=1,EE,006EB65C,extended,00000000
+patch=1,EE,00718E40,extended,00000000
+
+[Cinema 14]
+patch=1,EE,006EB65D,extended,00000000
+patch=1,EE,00718E41,extended,00000000
+
+[Cinema 15]
+patch=1,EE,006EB65E,extended,00000000
+patch=1,EE,00718E42,extended,00000000
+
+[Cinema 16]
+patch=1,EE,006EB65F,extended,00000000
+patch=1,EE,00718E43,extended,00000000
+
+[Cinema 17]
+patch=1,EE,006EB660,extended,00000000
+patch=1,EE,00718E44,extended,00000000
+
+[Cinema 18]
+patch=1,EE,006EB661,extended,00000000
+patch=1,EE,00718E45,extended,00000000
+
+[Cinema 19]
+patch=1,EE,006EB662,extended,00000000
+patch=1,EE,00718E46,extended,00000000
+
+[Cinema 20]
+patch=1,EE,006EB663,extended,00000000
+patch=1,EE,00718E47,extended,00000000
+
+[Cinema 21]
+patch=1,EE,006EB664,extended,00000000
+patch=1,EE,00718E48,extended,00000000
+
+[Cinema 22]
+patch=1,EE,006EB665,extended,00000000
+patch=1,EE,00718E49,extended,00000000
+
+[Cinema 23]
+patch=1,EE,006EB666,extended,00000000
+patch=1,EE,00718E4A,extended,00000000
+
+[Cinema 24]
+patch=1,EE,006EB667,extended,00000000
+patch=1,EE,00718E4B,extended,00000000
+
+[Cinema 25]
+patch=1,EE,006EB668,extended,00000000
+patch=1,EE,00718E4C,extended,00000000
+
+[Cinema 26]
+patch=1,EE,006EB669,extended,00000000
+patch=1,EE,00718E4D,extended,00000000
+
+[Cinema 27]
+patch=1,EE,006EB66A,extended,00000000
+patch=1,EE,00718E4E,extended,00000000
+
+[Cinema 28]
+patch=1,EE,006EB66B,extended,00000000
+patch=1,EE,00718E4F,extended,00000000
+
+[Cinema 29]
+patch=1,EE,006EB66C,extended,00000000
+patch=1,EE,00718E50,extended,00000000
+
+[Cinema 30]
+patch=1,EE,006EB66D,extended,00000000
+patch=1,EE,00718E51,extended,00000000
+
+[Cinema 31]
+patch=1,EE,006EB66E,extended,00000000
+patch=1,EE,00718E52,extended,00000000
+
+[Cinema 32]
+patch=1,EE,006EB66F,extended,00000000
+patch=1,EE,00718E53,extended,00000000
+
+[Cinema 33]
+patch=1,EE,006EB670,extended,00000000
+patch=1,EE,00718E54,extended,00000000
+
+[Cinema 34]
+patch=1,EE,006EB671,extended,00000000
+patch=1,EE,00718E55,extended,00000000
+
+[Cinema 35]
+patch=1,EE,006EB672,extended,00000000
+patch=1,EE,00718E56,extended,00000000
+
+[Cinema 36]
+patch=1,EE,006EB673,extended,00000000
+patch=1,EE,00718E57,extended,00000000
+
+[All Cinemas]
+patch=1,EE,406EB650,extended,00090001
+patch=1,EE,00000000,extended,00000000
+patch=1,EE,40718E34,extended,00090001
+patch=1,EE,00000000,extended,00000000

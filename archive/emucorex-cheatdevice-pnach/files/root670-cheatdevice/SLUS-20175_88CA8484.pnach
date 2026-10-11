@@ -1,0 +1,118 @@
+gametitle=Mobile Suit Gundam-Journey To Jaburo (SLUS-20175)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00107B6F
+patch=1,EE,90107B6C,extended,0C043C14
+patch=1,EE,901113EC,extended,0C046DDE
+patch=1,EE,9011146C,extended,0C04757A
+patch=1,EE,9011146C,extended,0C04754E
+
+[Unlock All Levels]
+patch=1,EE,11FFC036,extended,00000008
+
+[Unlock All Movies]
+patch=1,EE,21FFC018,extended,FFFFFFFF
+patch=1,EE,11FFC01C,extended,0000FFFF
+
+[Unlock All Mobile Suits]
+patch=1,EE,21FFC020,extended,FFFFFFFF
+patch=1,EE,21FFC028,extended,FFFFFFFF
+
+[Story Mission 1]
+patch=1,EE,D018F5D2,extended,0000DE22
+patch=1,EE,2018F5E0,extended,00000000
+
+[Story Mission 2]
+patch=1,EE,D018FB42,extended,0000DE22
+patch=1,EE,2018FB50,extended,00000000
+
+[Story Mission 3]
+patch=1,EE,D018F8A2,extended,0000DE22
+patch=1,EE,2018F8B0,extended,00000000
+
+[Story Missions 4 & 7]
+patch=1,EE,D018F982,extended,0000DE22
+patch=1,EE,2018F990,extended,00000000
+
+[Story Mission 5]
+patch=1,EE,D018F872,extended,0000DE22
+patch=1,EE,2018F880,extended,00000000
+
+[Story Mission 6]
+patch=1,EE,D018F952,extended,0000DE22
+patch=1,EE,2018F960,extended,00000000
+
+[Story Mission 8]
+patch=1,EE,D018F922,extended,0000DE22
+patch=1,EE,2018F930,extended,00000000
+
+[Story Mission 9]
+patch=1,EE,D018F742,extended,0000DE22
+patch=1,EE,2018F750,extended,00000000
+
+[Story Mission 1]
+patch=1,EE,E005AE42,extended,001D1BAA
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D1BAC,extended,0C030088
+patch=1,EE,201D1BB0,extended,240203E8
+
+[Story Mission 2 & 3]
+patch=1,EE,E005AE42,extended,001D32CA
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D32CC,extended,0C030088
+patch=1,EE,201D32D0,extended,240203E8
+
+[Story Mission 4]
+patch=1,EE,E005AE42,extended,001D33CA
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D33CC,extended,0C030088
+patch=1,EE,201D33D0,extended,240203E8
+
+[Story Mission 5]
+patch=1,EE,E005AE42,extended,001D208A
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D208C,extended,0C030088
+patch=1,EE,201D2090,extended,240203E8
+
+[Story Mission 6]
+patch=1,EE,E005AE42,extended,001D2E0A
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D2E0C,extended,0C030088
+patch=1,EE,201D2E10,extended,240203E8
+
+[Story Mission 7]
+patch=1,EE,E005AE42,extended,001D32FA
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D32FC,extended,0C030088
+patch=1,EE,201D3300,extended,240203E8
+
+[Story Mission 8]
+patch=1,EE,E005AE42,extended,001D358A
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D358C,extended,0C030088
+patch=1,EE,201D3590,extended,240203E8
+
+[Story Mission 9]
+patch=1,EE,E005AE42,extended,001D301A
+patch=1,EE,200C0220,extended,FE2202A8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,FE420008
+patch=1,EE,201D301C,extended,0C030088
+patch=1,EE,201D3020,extended,240203E8

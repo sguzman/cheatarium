@@ -1,0 +1,47 @@
+gametitle=Time Crisis-Crisis Zone (SLUS-20927)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0010ECEF
+
+[Infinite Time]
+patch=1,EE,2012EA14,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D07B5882,extended,0000FBFE
+patch=1,EE,2012EA14,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D07B5882,extended,0000FEFE
+patch=1,EE,2012EA14,extended,E422C678
+
+[Infinite Health]
+patch=1,EE,2012ED80,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2015F2C0,extended,00000000
+
+[1-Hit Death (Non-Boss Enemies)]
+patch=1,EE,2017837C,extended,AC800020
+
+[Quick Score Gain]
+patch=1,EE,2020CCD4,extended,240203E7
+
+[Quicker Score Gain]
+patch=1,EE,2020CCD4,extended,2402270F
+
+[Quick Max Score]
+patch=1,EE,2020CCD4,extended,3C020098
+patch=1,EE,2020CCD8,extended,3442967F
+
+[Unlock Everything]
+patch=1,EE,408DDA80,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000
+patch=1,EE,208DDAA0,extended,00000009
+patch=1,EE,208DDAA4,extended,00000009
+
+[Max Hit (Crisis Missions)]
+patch=1,EE,2079C680,extended,000003E7
+patch=1,EE,2079C684,extended,000003E7

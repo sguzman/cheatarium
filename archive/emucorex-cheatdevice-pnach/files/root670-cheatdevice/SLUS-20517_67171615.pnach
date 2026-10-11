@@ -1,0 +1,75 @@
+gametitle=Haven-Call Of The King (SLUS-20517)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F1000860,extended,003371E7
+
+[Infinite Health]
+patch=1,EE,10526D10,extended,00000005
+
+[Max Blue Feathers]
+patch=1,EE,20526B68,extended,00000063
+
+[Max Red Feathers]
+patch=1,EE,20526B6C,extended,00000063
+
+[Infinite Special]
+patch=1,EE,20526B70,extended,00500000
+
+[Max Cogs]
+patch=1,EE,20526B74,extended,00000063
+
+[Infinite Shield]
+patch=1,EE,20526ED8,extended,0000012C
+
+[Special Never Depletes Over Time]
+patch=1,EE,202A1CC8,extended,00000000
+
+[Max Unknown Symbol?]
+patch=1,EE,20571ED4,extended,FFFFFFFF
+
+[Have All Gold Triangles]
+patch=1,EE,00571EDC,extended,000000FF
+
+[Max Silver Keys]
+patch=1,EE,2052D698,extended,00000063
+
+[Pause To Have All Objectives Completed]
+patch=1,EE,202DECE0,extended,2401FFFF
+patch=1,EE,202DECE4,extended,00A71804
+patch=1,EE,202DECEC,extended,AC410140
+
+[Invincible]
+patch=1,EE,1029A52E,extended,00001000
+patch=1,EE,1029A62E,extended,00001000
+patch=1,EE,1029A59E,extended,00001000
+
+[Infinite Double Jumps]
+patch=1,EE,2029AE6C,extended,00000000
+
+[Debug Draw]
+patch=1,EE,2039B8F8,extended,00000001
+
+[Display Debug Info]
+patch=1,EE,204FDE28,extended,00000004
+patch=1,EE,20502490,extended,00000001
+
+[Unlock Old Menu]
+patch=1,EE,2051EC84,extended,00000001
+
+[Disable NPC's]
+patch=1,EE,2051ED68,extended,00000000
+
+[Disable Sun]
+patch=1,EE,2051ED6C,extended,00000000
+
+[Low Gravity]
+patch=1,EE,20526B5C,extended,3A400000
+
+[Hella Low Gravity]
+patch=1,EE,20526B5C,extended,39C00000
+
+[Invisible]
+patch=1,EE,20526C54,extended,00000000

@@ -1,0 +1,113 @@
+gametitle=Mobile Suit Gundam-Federation Vs. Zeon (SLUS-20382)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9010D0B4,extended,0C045DAE
+
+[Infinite Armor P1]
+patch=1,EE,208659D0,extended,03E703E7
+patch=1,EE,108659D4,extended,000003E7
+
+[Infinite Boost P1]
+patch=1,EE,20865B00,extended,0FA00FA0
+
+[Infinite Weapon 1 P1]
+patch=1,EE,10865DFA,extended,000003E7
+patch=1,EE,20865DFC,extended,03E703E7
+
+[Infinite Weapon 2 P1]
+patch=1,EE,10865E06,extended,000003E7
+patch=1,EE,20865E08,extended,03E703E7
+
+[No Armor P1]
+patch=1,EE,208659D0,extended,00000000
+patch=1,EE,108659D4,extended,00000000
+
+[No Weapon 1 P1]
+patch=1,EE,10865DFA,extended,00000000
+patch=1,EE,20865DFC,extended,00000000
+
+[No Weapon 2 P1]
+patch=1,EE,10865E06,extended,00000000
+patch=1,EE,20865E08,extended,00000000
+
+[Infinite Armor P2]
+patch=1,EE,20867AD0,extended,03E703E7
+patch=1,EE,10867AD4,extended,000003E7
+
+[Infinite Boost P2]
+patch=1,EE,20867C00,extended,0FA00FA0
+
+[Infinite Weapon 1 P1]
+patch=1,EE,10867EFA,extended,000003E7
+patch=1,EE,20867EFC,extended,03E703E7
+
+[Infinite Weapon 2 P1]
+patch=1,EE,10867F06,extended,000003E7
+patch=1,EE,20867F08,extended,03E703E7
+
+[No Armor P2]
+patch=1,EE,20867AD0,extended,00000000
+patch=1,EE,10867AD4,extended,00000000
+
+[No Weapon 1 P1]
+patch=1,EE,10867EFA,extended,00000000
+patch=1,EE,20867EFC,extended,00000000
+
+[No Weapon 2 P1]
+patch=1,EE,10867F06,extended,00000000
+patch=1,EE,20867F08,extended,00000000
+
+[Confederation Never Defeated]
+patch=1,EE,208703A0,extended,03E703E7
+patch=1,EE,108703A4,extended,000003E7
+
+[Confederation Always Defeated]
+patch=1,EE,208703A0,extended,00000000
+patch=1,EE,108703A4,extended,00000000
+
+[Confederation 1-Hit Death]
+patch=1,EE,E0020001,extended,308703A2
+patch=1,EE,208703A0,extended,000103E7
+patch=1,EE,108703A4,extended,000003E7
+
+[Zeon Never Defeated]
+patch=1,EE,108703A6,extended,03E703E7
+patch=1,EE,208703A8,extended,000003E7
+
+[Zeon Always Defeated]
+patch=1,EE,108703A6,extended,00000000
+patch=1,EE,208703A8,extended,00000000
+
+[Zeon 1-Hit Death]
+patch=1,EE,E0020001,extended,308703A8
+patch=1,EE,108703A6,extended,000003E7
+patch=1,EE,208703A8,extended,000103E7
+
+[Max Operation Points]
+patch=1,EE,107A6350,extended,0000270F
+
+[Start With 5 Units Defeated]
+patch=1,EE,D07A697C,extended,00000000
+patch=1,EE,007A697D,extended,00000005
+
+[Start With 4 Units Defeated]
+patch=1,EE,D07A697C,extended,00000000
+patch=1,EE,007A697D,extended,00000004
+
+[Start With 3 Units Defeated]
+patch=1,EE,D07A697C,extended,00000000
+patch=1,EE,007A697D,extended,00000003
+
+[Start With 2 Units Defeated]
+patch=1,EE,D07A697C,extended,00000000
+patch=1,EE,007A697D,extended,00000002
+
+[Start With 1 Unit Defeated]
+patch=1,EE,D07A697C,extended,00000000
+patch=1,EE,007A697D,extended,00000001
+
+[Infinite Time]
+patch=1,EE,108703AE,extended,00002F00

@@ -1,0 +1,17 @@
+gametitle=Choro Q (SLUS-20930)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901E2790,extended,0C082305
+
+[Infinite Gold]
+patch=1,EE,1026845C,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,2026845C,extended,05F5E0FF
+
+[Unlock All Custom Parts]
+patch=1,EE,2011ECA4,extended,24010001
+patch=1,EE,2011ECA8,extended,A0410000

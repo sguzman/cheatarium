@@ -1,0 +1,143 @@
+gametitle=Spyro-A Hero's Tail (SLUS-20884)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903F4240,extended,0C101266
+
+[Infinite Health]
+patch=1,EE,20502004,extended,000000A0
+
+[Infinite Gems]
+patch=1,EE,10502008,extended,0000FFFF
+
+[Max Gems]
+patch=1,EE,20502008,extended,05F5E0FF
+
+[Gems Worth 2]
+patch=1,EE,202B33FC,extended,24100002
+
+[Gems Worth 5]
+patch=1,EE,202B33FC,extended,24100005
+
+[Gems Worth 10]
+patch=1,EE,202B33FC,extended,2410000A
+
+[Gems Worth 100]
+patch=1,EE,202B33FC,extended,24100064
+
+[Gems Worth 1000]
+patch=1,EE,202B33FC,extended,241003E8
+
+[Gems Worth 10000]
+patch=1,EE,202B33FC,extended,24102710
+
+[Gems Worth 25000]
+patch=1,EE,202B33FC,extended,241061A8
+
+[Gems Worth 50000]
+patch=1,EE,202B33FC,extended,2410C350
+
+[Gems Worth x2]
+patch=1,EE,202B33FC,extended,00074040
+
+[Gems Worth x4]
+patch=1,EE,202B33FC,extended,00074080
+
+[Gems Worth x8]
+patch=1,EE,202B33FC,extended,000740C0
+
+[Gems Worth x16]
+patch=1,EE,202B33FC,extended,00074100
+
+[Gems Worth x32]
+patch=1,EE,202B33FC,extended,00074140
+
+[Gems Worth x64]
+patch=1,EE,202B33FC,extended,00074180
+
+[Gems Worth x128]
+patch=1,EE,202B33FC,extended,000741C0
+
+[Buying Items Doesnt Decrease Gems]
+patch=1,EE,20302A90,extended,00000000
+patch=1,EE,20302A94,extended,00000000
+
+[Buying Items Increases Gems]
+patch=1,EE,20302A88,extended,00621821
+
+[Have All Power-Ups]
+patch=1,EE,20502028,extended,FFFFFFFF
+
+[Have All Light Gems]
+patch=1,EE,00502056,extended,00000064
+
+[Have All Dark Gems]
+patch=1,EE,00502057,extended,00000028
+
+[Have All Light/Dark Gems]
+patch=1,EE,10502056,extended,00002864
+
+[View Status To Have All Dragon Eggs]
+patch=1,EE,200C0220,extended,AC410030
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,24020001
+patch=1,EE,20106CFC,extended,08030088
+patch=1,EE,20106D00,extended,24010001
+patch=1,EE,20502058,extended,00000050
+
+[Lasers Never Overheat (Blink)]
+patch=1,EE,202FB294,extended,00000000
+patch=1,EE,202FB298,extended,00000000
+
+[Lock-Pick]
+patch=1,EE,00502010,extended,00000063
+
+[Infinite Fire Bomb Ammo]
+patch=1,EE,00502014,extended,00000064
+
+[Max Fire Bomb Ammo]
+patch=1,EE,00502015,extended,00000064
+
+[Max Infinite Fire Bomb Ammo]
+patch=1,EE,10502014,extended,00006464
+
+[Infinite Ice Missile Ammo]
+patch=1,EE,00502018,extended,00000064
+
+[Max Ice Missile Ammo]
+patch=1,EE,00502019,extended,00000064
+
+[Fire Bomb Magazine]
+patch=1,EE,00502017,extended,00000063
+
+[Max Infinite Ice Missile Ammo]
+patch=1,EE,10502018,extended,00006464
+
+[Ice Missile Magazine]
+patch=1,EE,0050201B,extended,00000063
+
+[Infinite Aqua Bomb Ammo]
+patch=1,EE,0050201C,extended,00000064
+
+[Max Aqua Bomb Ammo]
+patch=1,EE,0050201D,extended,00000064
+
+[Max Infinite Aqua Bomb Ammo]
+patch=1,EE,1050201C,extended,00006464
+
+[Aqua Bomb Magazine]
+patch=1,EE,0050201F,extended,00000063
+
+[Infinite Ball Lightning Ammo]
+patch=1,EE,00502020,extended,00000064
+
+[Max Ball Lightning Ammo]
+patch=1,EE,00502021,extended,00000064
+
+[Max Infinite Ball Lightning Ammo]
+patch=1,EE,10502020,extended,00006464
+
+[Ball Lightning Magazine]
+patch=1,EE,00502023,extended,00000063

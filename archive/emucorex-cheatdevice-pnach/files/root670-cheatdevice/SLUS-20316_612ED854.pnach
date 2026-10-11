@@ -1,0 +1,83 @@
+gametitle=WWF Smackdown!-Just Bring It (SLUS-20316)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901115EC,extended,0C04672A
+
+[Save For All Characters]
+patch=1,EE,007245A6,extended,000000FF
+
+[Save For All Special Modes]
+patch=1,EE,007245A8,extended,000000FF
+
+[Have All Movies]
+patch=1,EE,0072B018,extended,000000FF
+
+[Always Low Match Timer]
+patch=1,EE,002E2FC9,extended,00000000
+
+[Infinite Match Time/CPU+Ref Dont Move]
+patch=1,EE,202E2FC8,extended,00000000
+
+[Always Have Specials]
+patch=1,EE,201C0760,extended,24020005
+patch=1,EE,201C0768,extended,AE2201AC
+
+[Infinite Specials]
+patch=1,EE,201AE5EC,extended,00000000
+
+[Extra Specials]
+patch=1,EE,101AE5E8,extended,00000001
+
+[Infinite Ability Points]
+patch=1,EE,20217E90,extended,240203E7
+patch=1,EE,20218580,extended,00000000
+
+[Always Max Smack Down Meters]
+patch=1,EE,2027EA88,extended,24020064
+patch=1,EE,2027EA90,extended,24020064
+
+[Camera Always Overhead View]
+patch=1,EE,2010293C,extended,00000000
+
+[P2 Cant Move]
+patch=1,EE,10725B14,extended,00000E84
+
+[Specials Build Real Slow]
+patch=1,EE,10725BFC,extended,00000EEB
+
+[Rope Break Always On]
+patch=1,EE,10725C04,extended,00000E84
+
+[Give Up Always On]
+patch=1,EE,10725C08,extended,00000E84
+
+[Always Cage Match]
+patch=1,EE,10725C0A,extended,00000E84
+
+[Always I Quit Match]
+patch=1,EE,10725C10,extended,00000E84
+
+[Always Table Match]
+patch=1,EE,10725C14,extended,00000E84
+
+[Always Ladder Match]
+patch=1,EE,10725C16,extended,00000E84
+
+[Always Hell In A Cell & Crown By Name Match]
+patch=1,EE,10725C18,extended,00000E84
+
+[Always Slobber Knocker]
+patch=1,EE,10725C1A,extended,00000E84
+
+[Always TLC Match]
+patch=1,EE,10725C1C,extended,00000E84
+
+[Always Last Man Standing Match]
+patch=1,EE,10725C1E,extended,00000E84
+
+[Always Extreme Death Match]
+patch=1,EE,20725C14,extended,0E840E84
+patch=1,EE,10725C1A,extended,00000E84

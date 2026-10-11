@@ -1,0 +1,75 @@
+gametitle=Star Trek-Encounters (SLUS-21396)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9029D1A8,extended,00832021
+
+[Infinite Health]
+patch=1,EE,20213ED0,extended,3C013F80
+patch=1,EE,20213ED4,extended,44811000
+patch=1,EE,200C0220,extended,3C030032
+patch=1,EE,200C0224,extended,8C6389F0
+patch=1,EE,200C0228,extended,10600006
+patch=1,EE,200C022C,extended,3C013F80
+patch=1,EE,200C0230,extended,AC610164
+patch=1,EE,200C0234,extended,AC610178
+patch=1,EE,200C0238,extended,AC61019C
+patch=1,EE,200C023C,extended,AC6101C0
+patch=1,EE,200C0240,extended,AC6101E4
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,00000000
+patch=1,EE,201FDEAC,extended,08030088
+
+[Infinite Health (Alternate)]
+patch=1,EE,20200DFC,extended,00000000
+patch=1,EE,20213ED0,extended,3C013F80
+patch=1,EE,20213ED4,extended,44811000
+
+[Infinite Phasers]
+patch=1,EE,2021C940,extended,00000000
+
+[Infinite Primary Ammo]
+patch=1,EE,2021D964,extended,00000000
+
+[Extra Primary Ammo]
+patch=1,EE,1021D960,extended,00000001
+
+[Max Infinite Primary Ammo]
+patch=1,EE,2021D960,extended,240203E7
+
+[Infinite Secondary Ammo]
+patch=1,EE,2021D9D0,extended,00000000
+
+[Extra Secondary Ammo]
+patch=1,EE,1021D9C8,extended,00000001
+
+[Max Infinite Secondary Ammo]
+patch=1,EE,2021D9C8,extended,240203E7
+
+[On Screen Display Always Off]
+patch=1,EE,20308728,extended,00000000
+
+[On Screen Display Always On]
+patch=1,EE,20308728,extended,00000001
+
+[Unlock All Character Cards]
+patch=1,EE,2033AB68,extended,FFFFFFFF
+
+[Lock Frame Rate]
+patch=1,EE,2033AB80,extended,00000001
+
+[Enable Truster Mode]
+patch=1,EE,2033AB84,extended,00000001
+
+[Infinite Health]
+patch=1,EE,2033AB88,extended,00000001
+
+[Unlock All Levels]
+patch=1,EE,4033A8F4,extended,00140001
+patch=1,EE,00000001,extended,00000000
+
+[Max Level Completed Rank-All Levels]
+patch=1,EE,4033A948,extended,00140001
+patch=1,EE,00000004,extended,00000000

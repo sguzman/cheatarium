@@ -1,0 +1,112 @@
+gametitle=Fugitive Hunter-War On Terror (SLUS-20464)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9022D904,extended,0C08FD5C
+
+[Infinite Health]
+patch=1,EE,20371CA8,extended,43FA0000
+
+[Infinite Armor]
+patch=1,EE,20371CAC,extended,443B8000
+
+[Infinite Credits]
+patch=1,EE,202833C8,extended,00000009
+
+[Extra Credits]
+patch=1,EE,101120B0,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,20173DD0,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,20173DD0,extended,00512821
+
+[Never Reload]
+patch=1,EE,20172D70,extended,00000000
+
+[Max First Aid Kits]
+patch=1,EE,10371CDE,extended,00000063
+
+[Access Special Features-Cheats]
+patch=1,EE,20112C34,extended,24050001
+
+[Unlock Cheats Menu]
+patch=1,EE,20346D0C,extended,00000001
+
+[Have All Weapons]
+patch=1,EE,20371CC0,extended,00010001
+patch=1,EE,20371CC4,extended,00010001
+patch=1,EE,10371CCC,extended,00000001
+patch=1,EE,10371CD6,extended,00000001
+patch=1,EE,20371CD8,extended,00010001
+
+[Have All Scopes]
+patch=1,EE,20371CE0,extended,00010001
+patch=1,EE,20371CE4,extended,00010001
+patch=1,EE,10371CE8,extended,00000001
+
+[Have All Silencers]
+patch=1,EE,10371CF6,extended,00000001
+patch=1,EE,20371CF8,extended,00010001
+patch=1,EE,10371CFC,extended,00000001
+
+[Shotgun Ammo]
+patch=1,EE,10371D44,extended,000003E7
+
+[Rifle Ammo]
+patch=1,EE,10371D48,extended,000003E7
+
+[Airburst Grenades]
+patch=1,EE,10371D4C,extended,000003E7
+
+[RPG-7 Rockets]
+patch=1,EE,10371D50,extended,000003E7
+
+[Homing Grenades]
+patch=1,EE,10371D52,extended,000003E7
+
+[Sniper Rifle Ammo]
+patch=1,EE,10371D54,extended,000003E7
+
+[Dragon Fuel]
+patch=1,EE,10371D56,extended,000003E7
+
+[TV Grenades]
+patch=1,EE,10371D58,extended,000003E7
+
+[TAC Shotgun]
+patch=1,EE,10371D28,extended,0000000A
+
+[CAR4 Assault Rifle]
+patch=1,EE,10371D2A,extended,0000001E
+
+[Sniper]
+patch=1,EE,10371D2C,extended,00000008
+
+[Grenade Launcher]
+patch=1,EE,10371D2E,extended,00000006
+
+[Dragon]
+patch=1,EE,10371D3E,extended,00000064
+
+[AKS-74U]
+patch=1,EE,10371D40,extended,0000002D
+
+[RPG-7]
+patch=1,EE,10371D42,extended,00000001
+
+[All Fugitives]
+patch=1,EE,20283424,extended,00000001
+patch=1,EE,20348054,extended,00000001
+
+[All Weapons]
+patch=1,EE,20347F34,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,20347F38,extended,00000001
+
+[Invincible]
+patch=1,EE,20348044,extended,00000001

@@ -1,0 +1,129 @@
+gametitle=Samurai Jack-The Shadow Of Aku (SLUS-20899)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0030A227
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,240100C8
+patch=1,EE,200C0224,extended,AC41022C
+patch=1,EE,200C0228,extended,3C014348
+patch=1,EE,200C022C,extended,03E00008
+patch=1,EE,200C0230,extended,44810000
+patch=1,EE,2020DEC4,extended,0C030088
+
+[Infinite Zen]
+patch=1,EE,200C0240,extended,3C0144FA
+patch=1,EE,200C0244,extended,44810000
+patch=1,EE,200C0248,extended,03E00008
+patch=1,EE,200C024C,extended,E4600080
+patch=1,EE,2020DEE8,extended,0C030090
+
+[Max Health]
+patch=1,EE,21AFBA98,extended,00000003
+
+[Max Power]
+patch=1,EE,21AFBA9C,extended,00000003
+
+[Max Zen]
+patch=1,EE,21AFBAA0,extended,00000003
+
+[Powered Up Health]
+patch=1,EE,21AFBAB0,extended,42C80000
+
+[Powered Up Power]
+patch=1,EE,21AFBAC0,extended,42C80000
+
+[Powered Up Zen]
+patch=1,EE,21AFBAD0,extended,42C80000
+
+[Max Current Rescues]
+patch=1,EE,21AFBA6C,extended,000000F0
+patch=1,EE,21AFBA70,extended,000000F0
+
+[Max Overall Rescues]
+patch=1,EE,21AFBA74,extended,000000F0
+patch=1,EE,21AFBA78,extended,000000F0
+
+[Max Current Relics]
+patch=1,EE,21AFBA80,extended,00000546
+patch=1,EE,21AFBA94,extended,00000546
+
+[Max Overall Relics]
+patch=1,EE,21AFBA88,extended,00000546
+patch=1,EE,21AFBA94,extended,00000546
+
+[Can Throw Ninja Star With 0 Quantity]
+patch=1,EE,201E30D0,extended,24020032
+
+[Throw Ninja Star For Max Quantity]
+patch=1,EE,101DCB62,extended,00001000
+
+[Infinite Ninja Stars (Upon Pickup)]
+patch=1,EE,201DCB70,extended,00000000
+
+[Can Shoot Arrows With 0 Quantity]
+patch=1,EE,201DDEA8,extended,24020032
+patch=1,EE,201DE090,extended,24020032
+
+[Shoot Arrow For Max Quantity]
+patch=1,EE,101DD2D6,extended,00001000
+
+[Infinite Arrows (Upon Pickup)]
+patch=1,EE,201DD2E8,extended,00000000
+
+[Reach The Village]
+patch=1,EE,21AFBA10,extended,00000001
+
+[Rescue The King]
+patch=1,EE,21AFBA14,extended,00000001
+
+[The Burning Building]
+patch=1,EE,21AFBA18,extended,00000001
+
+[Destroy The Statue]
+patch=1,EE,21AFBA1C,extended,00000001
+
+[Free The Priest]
+patch=1,EE,21AFBA20,extended,00000001
+
+[Break The Siege]
+patch=1,EE,21AFBA24,extended,00000001
+
+[The Greenhouse]
+patch=1,EE,21AFBA28,extended,00000001
+
+[Find The Tree Spirit]
+patch=1,EE,21AFBA2C,extended,00000001
+
+[Defeat The Foreman]
+patch=1,EE,21AFBA30,extended,00000001
+
+[Rescue THe Archaeologist]
+patch=1,EE,21AFBA38,extended,00000001
+
+[Find The Map Tablet]
+patch=1,EE,21AFBA3C,extended,00000001
+
+[Disable Security System]
+patch=1,EE,21AFBA40,extended,00000001
+
+[Find The Time Portal]
+patch=1,EE,21AFBA44,extended,00000001
+
+[Enter The City]
+patch=1,EE,21AFBA4C,extended,00000001
+
+[Free The Scotsman]
+patch=1,EE,21AFBA50,extended,00000001
+
+[Stop The Designer]
+patch=1,EE,21AFBA54,extended,00000001
+
+[Break Into The Central Computer]
+patch=1,EE,21AFBA58,extended,00000001
+
+[Penetrate Aku's Fortress]
+patch=1,EE,21AFBA5C,extended,00000001

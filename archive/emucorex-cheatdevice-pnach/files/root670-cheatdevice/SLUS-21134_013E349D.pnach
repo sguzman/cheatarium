@@ -1,0 +1,180 @@
+gametitle=Resident Evil 4 (SLUS-21134)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902A6E88,extended,00832021
+
+[Infinite Ammo]
+patch=1,EE,201200AC,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2012009C,extended,24020318
+
+[Extra Ammo]
+patch=1,EE,1012009C,extended,00000001
+
+[Infinite Grenades/RPG]
+patch=1,EE,2011EF30,extended,00000000
+patch=1,EE,1011EF3E,extended,00001000
+
+[Max Infinite Grenades/RPG]
+patch=1,EE,2011EF30,extended,24020063
+
+[Infinite Pesetas]
+patch=1,EE,1042DA6C,extended,0000FFFF
+
+[Max Pesetas]
+patch=1,EE,2042DA6C,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease Pesetas]
+patch=1,EE,2012ACFC,extended,00000000
+
+[Buying Items Increases Pesetas]
+patch=1,EE,2012ACF8,extended,00451021
+
+[All Items Sell For 30000]
+patch=1,EE,2012A910,extended,24627530
+
+[All Items Sell For 25000]
+patch=1,EE,2012A910,extended,246261A8
+
+[All Items Sell For 20000]
+patch=1,EE,2012A910,extended,24624E20
+
+[All Items Sell For 15000]
+patch=1,EE,2012A910,extended,24623A98
+
+[All Items Sell For 10000]
+patch=1,EE,2012A910,extended,24622710
+
+[All Items Sell For 5000]
+patch=1,EE,2012A910,extended,24621388
+
+[Sell Item For Max Pesetas]
+patch=1,EE,2012A90C,extended,3C0205F5
+patch=1,EE,2012A910,extended,3442E0FF
+
+[Equip Weapon For Max Ammo]
+patch=1,EE,2011FA60,extended,24021F38
+
+[Equip Weapon For Red Rounds]
+patch=1,EE,2011FA64,extended,34420001
+
+[1-Hit Death (Enemies)]
+patch=1,EE,201C2A9C,extended,24020000
+
+[Infinite Time For Button Masher Scenes]
+patch=1,EE,101DE596,extended,00001000
+
+[Always Low Game Save Time]
+patch=1,EE,2042DA54,extended,00000000
+
+[No Times Saved Recorded]
+patch=1,EE,1042DA5A,extended,00000000
+
+[Unlock Extras Menu]
+patch=1,EE,70430F67,extended,00000080
+
+[Unlock Ada's Reports (Extras)]
+patch=1,EE,70430F66,extended,00000001
+
+[Have All Ada's Reports]
+patch=1,EE,00430F6D,extended,00000004
+
+[Albert Wesker]
+patch=1,EE,70430F67,extended,00000001
+
+[Jack Krauser]
+patch=1,EE,70430F67,extended,00000002
+
+[Hunk]
+patch=1,EE,70430F67,extended,00000004
+
+[Ada Wong]
+patch=1,EE,70430F67,extended,00000008
+
+[All Characters]
+patch=1,EE,70430F67,extended,0000000F
+
+[Infinite Health]
+patch=1,EE,1042DA76,extended,00000960
+
+[Max Health]
+patch=1,EE,1042DA78,extended,00000960
+
+[Super Infinite Health]
+patch=1,EE,10246F36,extended,00001000
+
+[Infinite Health (Alternate)]
+patch=1,EE,201C27FC,extended,00000000
+
+[Leon]
+patch=1,EE,0042DA8A,extended,00000000
+
+[Ashley]
+patch=1,EE,0042DA8A,extended,00000001
+
+[Ada]
+patch=1,EE,0042DA8A,extended,00000002
+
+[Hunk]
+patch=1,EE,0042DA8A,extended,00000003
+
+[Krauser]
+patch=1,EE,0042DA8A,extended,00000004
+
+[Wesker]
+patch=1,EE,0042DA8A,extended,00000005
+
+[Always Costume 1]
+patch=1,EE,0042DA8B,extended,00000000
+
+[Always Costume 2]
+patch=1,EE,0042DA8B,extended,00000001
+
+[Always Costume 3]
+patch=1,EE,0042DA8B,extended,00000002
+
+[Always Costume 4 (Leon Only)]
+patch=1,EE,0042DA8B,extended,00000003
+
+[Infinite Health]
+patch=1,EE,1042DA7A,extended,000004B0
+
+[Max Health]
+patch=1,EE,1042DA7C,extended,000004B0
+
+[Super Infinite Health]
+patch=1,EE,10163C3A,extended,00001000
+
+[Infinite Health (Alternate)]
+patch=1,EE,201C2940,extended,00000000
+
+[Always Present]
+patch=1,EE,0042DAFF,extended,00000004
+
+[Never Present]
+patch=1,EE,0042DAFF,extended,00000000
+
+[Always Costume 1]
+patch=1,EE,0042DA8D,extended,00000000
+
+[Always Costume 2]
+patch=1,EE,0042DA8D,extended,00000001
+
+[Always Costume 3]
+patch=1,EE,0042DA8D,extended,00000002
+
+[Always Costume 4 (Leon Only)]
+patch=1,EE,0042DA8D,extended,00000003
+
+[Quick Score Gain]
+patch=1,EE,103CFA6C,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,203CFA6C,extended,0098967F
+
+[Infinite Time]
+patch=1,EE,2041B668,extended,00000E00

@@ -1,0 +1,25 @@
+gametitle=Oni (SLUS-20064)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902B12D0,extended,0C0AECCE
+
+[Have Easy Kills]
+patch=1,EE,0033A932,extended,00000001
+
+[Have Gauge Info]
+patch=1,EE,0033B35C,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,006E55EC,extended,00000063
+
+[Infinite Health]
+patch=1,EE,106E5620,extended,00000190
+
+[Infinite Hypos]
+patch=1,EE,006E578C,extended,00000004
+
+[Invisible]
+patch=1,EE,106E57A2,extended,0000FFFF

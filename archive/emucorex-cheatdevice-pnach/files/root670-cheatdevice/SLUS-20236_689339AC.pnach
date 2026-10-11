@@ -1,0 +1,329 @@
+gametitle=Taz-Wanted (SLUS-20236)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9032451C,extended,0C0CD421
+
+[Always Have All Sandwiches]
+patch=1,EE,2024A6DC,extended,24030064
+patch=1,EE,2024A6E0,extended,AC430F80
+
+[P1 Press {R3} To Activate Fly Mode]
+patch=1,EE,E002FFFB,extended,00514FC2
+patch=1,EE,20285770,extended,2404002A
+patch=1,EE,20285774,extended,AC6400B0
+
+[P1 Press {L3} To Deactivate Fly Mode]
+patch=1,EE,E002FFFD,extended,00514FC2
+patch=1,EE,20285770,extended,8C4301C8
+patch=1,EE,20285774,extended,1485002A
+
+[Display Position Info]
+patch=1,EE,00412638,extended,00000001
+
+[Display Debug Info]
+patch=1,EE,004752B0,extended,00000001
+
+[Infinite Time (Bonus Games)]
+patch=1,EE,20385950,extended,00000000
+
+[Access All Gallery]
+patch=1,EE,203FF2EC,extended,00000001
+
+[Gallery 1]
+patch=1,EE,203FFD74,extended,00000001
+
+[Gallery 2]
+patch=1,EE,203FFD78,extended,00000001
+
+[Gallery 3]
+patch=1,EE,203FFD7C,extended,00000001
+
+[Gallery 4]
+patch=1,EE,203FFD80,extended,00000001
+
+[Gallery 5]
+patch=1,EE,203FFD84,extended,00000001
+
+[Gallery 6]
+patch=1,EE,203FFD88,extended,00000001
+
+[Gallery 7]
+patch=1,EE,203FFD8C,extended,00000001
+
+[Gallery 8]
+patch=1,EE,203FFD90,extended,00000001
+
+[Gallery 9]
+patch=1,EE,203FFD94,extended,00000001
+
+[Gallery 10]
+patch=1,EE,203FFD98,extended,00000001
+
+[Ice Burg]
+patch=1,EE,20408DC8,extended,00000064
+
+[Zooney Tunes]
+patch=1,EE,20409000,extended,00000064
+
+[Looney Lagoon]
+patch=1,EE,20409238,extended,00000064
+
+[Looningdale's]
+patch=1,EE,204098E0,extended,00000064
+
+[Samsonia Museum]
+patch=1,EE,20409B18,extended,00000064
+
+[Bank Of Samerica]
+patch=1,EE,20409D50,extended,00000064
+
+[Taz-Haunted]
+patch=1,EE,2040A3F8,extended,00000064
+
+[Cartoon Strip-Mine]
+patch=1,EE,2040A630,extended,00000064
+
+[Granny Canyon]
+patch=1,EE,2040A868,extended,00000064
+
+[Have Level Completed]
+patch=1,EE,2040067C,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,20400860,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,40400864,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,2040088C,extended,00000007
+
+[Max Captured]
+patch=1,EE,20400890,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,20400898,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,204008A4,extended,00000001
+
+[Always Low Time]
+patch=1,EE,204008B0,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,204008B4,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,20400A98,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,40400A9C,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,20400AC4,extended,00000007
+
+[Max Captured]
+patch=1,EE,20400AC8,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,20400AD0,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,20400ADC,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20400AE8,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,20400AEC,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,20400CD0,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,40400CD4,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,20400CFC,extended,00000007
+
+[Max Captured]
+patch=1,EE,20400D00,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,20400D08,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,20400D14,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20400D20,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,20400D24,extended,00000001
+
+[Have Level Completed]
+patch=1,EE,20401194,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,20401378,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,4040137C,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,204013A4,extended,00000007
+
+[Max Captured]
+patch=1,EE,204013A8,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,204013B0,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,204013BC,extended,00000001
+
+[Always Low Time]
+patch=1,EE,204013C8,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,204013CC,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,204015B0,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,404015B4,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,204015DC,extended,00000007
+
+[Max Captured]
+patch=1,EE,204015E0,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,204015E8,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,204015F4,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20401600,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,20401604,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,204017E8,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,404017EC,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,20401814,extended,00000007
+
+[Max Captured]
+patch=1,EE,20401818,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,20401820,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,2040182C,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20401838,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,2040183C,extended,00000001
+
+[Have Level Completed]
+patch=1,EE,20401CAC,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,20401E90,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,40401E94,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,20401EBC,extended,00000007
+
+[Max Captured]
+patch=1,EE,20401EC0,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,20401EC8,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,20401ED4,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20401EE0,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,20401EE4,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,204020C8,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,404020CC,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,204020F4,extended,00000007
+
+[Max Captured]
+patch=1,EE,204020F8,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,20402100,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,2040210C,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20402118,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,2040211C,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,20402300,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,40402304,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,2040232C,extended,00000007
+
+[Max Captured]
+patch=1,EE,20402330,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,20402338,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,20402344,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20402350,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,20402354,extended,00000001
+
+[Have Level Completed]
+patch=1,EE,2040258C,extended,00000001
+
+[Have All Sandwiches]
+patch=1,EE,20402770,extended,00000064
+
+[Have All Posters Destroyed]
+patch=1,EE,40402774,extended,00090001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,2040279C,extended,00000007
+
+[Max Captured]
+patch=1,EE,204027A0,extended,05F5E0FF
+
+[Have Boxes Completed]
+patch=1,EE,204027A8,extended,00000032
+
+[Have Treasure Found]
+patch=1,EE,204027B4,extended,00000001
+
+[Always Low Time]
+patch=1,EE,204027C0,extended,00000000

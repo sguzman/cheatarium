@@ -1,0 +1,127 @@
+gametitle=Tom Clancy's Rainbow Six-Lockdown (SLUS-21144)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,905F21E8,extended,00832021
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,24030014
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,A04303F4
+patch=1,EE,203AD7D4,extended,0C030088
+
+[Infinite Ammo]
+patch=1,EE,2026FB54,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2026FB50,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,2026FB50,extended,00511021
+
+[Never Reload]
+patch=1,EE,2026FB98,extended,00000000
+
+[Infinite Grenades]
+patch=1,EE,202725E8,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,202725E4,extended,24020063
+
+[Extra Grenades]
+patch=1,EE,202725E4,extended,00621021
+
+[Unlock All Levels]
+patch=1,EE,200C0250,extended,24020001
+patch=1,EE,200C0254,extended,0809889E
+patch=1,EE,200C0258,extended,A0220058
+patch=1,EE,20262270,extended,00670821
+patch=1,EE,20262274,extended,08030094
+
+[View Mission To Have All Intel Found]
+patch=1,EE,200C0260,extended,24020001
+patch=1,EE,200C0264,extended,08098836
+patch=1,EE,200C0268,extended,A0220059
+patch=1,EE,202620C8,extended,01020821
+patch=1,EE,202620D0,extended,08030098
+
+[Fast Movement]
+patch=1,EE,2024ED94,extended,3C014000
+patch=1,EE,2024ED98,extended,44810800
+patch=1,EE,20223BE4,extended,3C014000
+patch=1,EE,20223BE8,extended,44810800
+
+[Super Fast Movement]
+patch=1,EE,2024ED94,extended,3C014080
+patch=1,EE,2024ED98,extended,44810800
+patch=1,EE,20223BE4,extended,3C014080
+patch=1,EE,20223BE8,extended,44810800
+
+[Ultra Fast Movement]
+patch=1,EE,2024ED94,extended,3C014100
+patch=1,EE,2024ED98,extended,44810800
+patch=1,EE,20223BE4,extended,3C014100
+patch=1,EE,20223BE8,extended,44810800
+
+[Ghost Mode]
+patch=1,EE,203026D0,extended,24020001
+
+[Increased Force]
+patch=1,EE,20307D20,extended,44800800
+patch=1,EE,20307DDC,extended,44801000
+
+[Unlimited Ammo]
+patch=1,EE,2030B164,extended,24020001
+
+[1-Hit Kills]
+patch=1,EE,20310328,extended,24020001
+
+[God Mode]
+patch=1,EE,2031118C,extended,24020001
+
+[Team God Mode]
+patch=1,EE,203111BC,extended,24020001
+
+[Invisibility]
+patch=1,EE,20320ECC,extended,24020001
+
+[Unlimited Items]
+patch=1,EE,20338E7C,extended,24020001
+
+[Max Intel Points]
+patch=1,EE,200C0230,extended,10400003
+patch=1,EE,200C0234,extended,3421E0FF
+patch=1,EE,200C0238,extended,AC41004C
+patch=1,EE,200C023C,extended,8C52004C
+patch=1,EE,200C0240,extended,03E00008
+patch=1,EE,200C0244,extended,00000000
+patch=1,EE,204384AC,extended,0C03008C
+patch=1,EE,204384B0,extended,3C0105F5
+
+[Buying Unlockables Doesnt Decrease Intel Points]
+patch=1,EE,20437034,extended,00000000
+
+[Buying Unlockables Increases Intel Points]
+patch=1,EE,20437030,extended,00431021
+
+[View Weapon To Unlock It]
+patch=1,EE,20436E0C,extended,24020001
+patch=1,EE,20436E10,extended,54400037
+patch=1,EE,20436E14,extended,A0620020
+
+[View Concept Art To Unlock It]
+patch=1,EE,20262300,extended,00400821
+patch=1,EE,20262304,extended,24020001
+patch=1,EE,2026230C,extended,A02203D0
+
+[View Cheat Code To Unlock It]
+patch=1,EE,202623E0,extended,00400821
+patch=1,EE,202623E4,extended,24020001
+patch=1,EE,202623EC,extended,A0220410
+
+[View Character To Unlock It]
+patch=1,EE,202624B8,extended,00400821
+patch=1,EE,202624BC,extended,24020001
+patch=1,EE,202624C4,extended,A0220444

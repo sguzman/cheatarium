@@ -1,0 +1,242 @@
+gametitle=Harry Potter-Quidditch World Cup (SLUS-20769)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0034A227
+
+[Home Team Scores 999]
+patch=1,EE,20399608,extended,000003E7
+
+[Home Team Scores 200]
+patch=1,EE,20399608,extended,000000C8
+
+[Home Team Scores 0]
+patch=1,EE,20399608,extended,00000000
+
+[Home Team Start With Score 200]
+patch=1,EE,D0399608,extended,00000000
+patch=1,EE,20399608,extended,000000C8
+
+[Home Team Start With Score 100]
+patch=1,EE,D0399608,extended,00000000
+patch=1,EE,20399608,extended,00000064
+
+[Home Team Start With Score 50]
+patch=1,EE,D0399608,extended,00000000
+patch=1,EE,20399608,extended,00000032
+
+[Home Team Start With Score 20]
+patch=1,EE,D0399608,extended,00000000
+patch=1,EE,20399608,extended,00000014
+
+[Away Team Scores 999]
+patch=1,EE,2039960C,extended,000003E7
+
+[Away Team Scores 200]
+patch=1,EE,2039960C,extended,000000C8
+
+[Away Team Scores 0]
+patch=1,EE,2039960C,extended,00000000
+
+[Away Team Start With Score 200]
+patch=1,EE,D039960C,extended,00000000
+patch=1,EE,2039960C,extended,000000C8
+
+[Away Team Start With Score 100]
+patch=1,EE,D039960C,extended,00000000
+patch=1,EE,2039960C,extended,00000096
+
+[Away Team Start With Score 50]
+patch=1,EE,D039960C,extended,00000000
+patch=1,EE,2039960C,extended,00000032
+
+[Away Team Start With Score 20]
+patch=1,EE,D039960C,extended,00000000
+patch=1,EE,2039960C,extended,00000014
+
+[Have All Cards]
+patch=1,EE,21DF3D80,extended,FFFFFFFF
+patch=1,EE,21DF3D84,extended,FFFFFFFF
+patch=1,EE,21DF3D88,extended,FFFFFFFF
+patch=1,EE,21DF3D8C,extended,FFFFFFFF
+patch=1,EE,21DF3D90,extended,FFFFFFFF
+patch=1,EE,21DF3D94,extended,FFFFFFFF
+patch=1,EE,21DF3D98,extended,FFFFFFFF
+patch=1,EE,11DF3D9C,extended,0000FFFF
+
+[Always Low Time]
+patch=1,EE,20462C98,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,E004FBFE,extended,0054C2C2
+patch=1,EE,2018BD74,extended,00000000
+patch=1,EE,2018D95C,extended,00000000
+patch=1,EE,2018D9C4,extended,00000000
+patch=1,EE,2018DA2C,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Start Timer]
+patch=1,EE,E004FEFE,extended,0054C2C2
+patch=1,EE,2018BD74,extended,ACC30038
+patch=1,EE,2018D95C,extended,AD030038
+patch=1,EE,2018D9C4,extended,AD030038
+patch=1,EE,2018DA2C,extended,AD030038
+
+[P2 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,E004FBFE,extended,0054C7C2
+patch=1,EE,2018BD74,extended,00000000
+patch=1,EE,2018D95C,extended,00000000
+patch=1,EE,2018D9C4,extended,00000000
+patch=1,EE,2018DA2C,extended,00000000
+
+[P2 Press {L1}+{SELECT} To Start Timer]
+patch=1,EE,E004FEFE,extended,0054C7C2
+patch=1,EE,2018BD74,extended,ACC30038
+patch=1,EE,2018D95C,extended,AD030038
+patch=1,EE,2018D9C4,extended,AD030038
+patch=1,EE,2018DA2C,extended,AD030038
+
+[Gryffindor-Passing]
+patch=1,EE,21DF8160,extended,00000001
+
+[Gryffindor-Tackle And Shoot]
+patch=1,EE,21DF817C,extended,00000001
+
+[Gryffindor-Seeker]
+patch=1,EE,21DF8198,extended,00000001
+
+[Gryffindor-Beaters And Bludgers]
+patch=1,EE,21DF81B4,extended,00000001
+
+[Gryffindor-Special Moves]
+patch=1,EE,21DF81D0,extended,00000001
+
+[Gryffindor-Combos]
+patch=1,EE,21DF81EC,extended,00000001
+
+[Slytherin-Passing]
+patch=1,EE,21DF829C,extended,00000001
+
+[Slytherin-Tackle And Shoot]
+patch=1,EE,21DF82B8,extended,00000001
+
+[Slytherin-Seeker]
+patch=1,EE,21DF82D4,extended,00000001
+
+[Slytherin-Beaters And Bludgers]
+patch=1,EE,21DF82F0,extended,00000001
+
+[Slytherin-Special Moves]
+patch=1,EE,21DF830C,extended,00000001
+
+[Slytherin-Combos]
+patch=1,EE,21DF8328,extended,00000001
+
+[Hufflepuff-Passing]
+patch=1,EE,21DF83D8,extended,00000001
+
+[Hufflepuff-Tackle And Shoot]
+patch=1,EE,21DF83F4,extended,00000001
+
+[Hufflepuff-Seeker]
+patch=1,EE,21DF8410,extended,00000001
+
+[Hufflepuff-Beaters And Bludgers]
+patch=1,EE,21DF842C,extended,00000001
+
+[Hufflepuff-Special Moves]
+patch=1,EE,21DF8448,extended,00000001
+
+[Hufflepuff-Combos]
+patch=1,EE,21DF8464,extended,00000001
+
+[Ravenclaw-Passing]
+patch=1,EE,21DF8514,extended,00000001
+
+[Ravenclaw-Tackle And Shoot]
+patch=1,EE,21DF8530,extended,00000001
+
+[Ravenclaw-Seeker]
+patch=1,EE,21DF854C,extended,00000001
+
+[Ravenclaw-Beaters And Bludgers]
+patch=1,EE,21DF8568,extended,00000001
+
+[Ravenclaw-Special Moves]
+patch=1,EE,21DF8584,extended,00000001
+
+[Ravenclaw-Combos]
+patch=1,EE,21DF85A0,extended,00000001
+
+[Gryffindor-Passing]
+patch=1,EE,21DF8164,extended,3C000000
+
+[Gryffindor-Tackle And Shoot]
+patch=1,EE,21DF8180,extended,3C000000
+
+[Gryffindor-Seeker]
+patch=1,EE,21DF819C,extended,3C000000
+
+[Gryffindor-Beaters And Bludgers]
+patch=1,EE,21DF81B8,extended,3C000000
+
+[Gryffindor-Special Moves]
+patch=1,EE,21DF81D4,extended,3C000000
+
+[Gryffindor-Combos]
+patch=1,EE,21DF81F0,extended,3C000000
+
+[Slytherin-Passing]
+patch=1,EE,21DF82A0,extended,3C000000
+
+[Slytherin-Tackle And Shoot]
+patch=1,EE,21DF82BC,extended,3C000000
+
+[Slytherin-Seeker]
+patch=1,EE,21DF82D8,extended,3C000000
+
+[Slytherin-Beaters And Bludgers]
+patch=1,EE,21DF82F4,extended,3C000000
+
+[Slytherin-Special Moves]
+patch=1,EE,21DF8310,extended,3C000000
+
+[Slytherin-Combos]
+patch=1,EE,21DF832C,extended,3C000000
+
+[Hufflepuff-Passing]
+patch=1,EE,21DF83DC,extended,3C000000
+
+[Hufflepuff-Tackle And Shoot]
+patch=1,EE,21DF83F8,extended,3C000000
+
+[Hufflepuff-Seeker]
+patch=1,EE,21DF8414,extended,3C000000
+
+[Hufflepuff-Beaters And Bludgers]
+patch=1,EE,21DF8430,extended,3C000000
+
+[Hufflepuff-Special Moves]
+patch=1,EE,21DF844C,extended,3C000000
+
+[Hufflepuff-Combos]
+patch=1,EE,21DF8468,extended,3C000000
+
+[Ravenclaw-Passing]
+patch=1,EE,21DF8518,extended,3C000000
+
+[Ravenclaw-Tackle And Shoot]
+patch=1,EE,21DF8534,extended,3C000000
+
+[Ravenclaw-Seeker]
+patch=1,EE,21DF8550,extended,3C000000
+
+[Ravenclaw-Beaters And Bludgers]
+patch=1,EE,21DF856C,extended,3C000000
+
+[Ravenclaw-Special Moves]
+patch=1,EE,21DF8588,extended,3C000000
+
+[Ravenclaw-Combos]
+patch=1,EE,21DF85A4,extended,3C000000

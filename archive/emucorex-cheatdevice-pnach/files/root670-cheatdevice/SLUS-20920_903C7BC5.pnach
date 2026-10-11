@@ -1,0 +1,1171 @@
+gametitle=ESPN NBA 2K5 (SLUS-20920)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,009CE4FF
+
+[Home Team Infinite Time-Outs]
+patch=1,EE,20A18840,extended,00000006
+
+[Home Team No Time-Outs]
+patch=1,EE,20A18840,extended,00000000
+
+[Away Team Infinite Time-Outs]
+patch=1,EE,20A1885C,extended,00000006
+
+[Away Team No Time-Outs]
+patch=1,EE,20A1885C,extended,00000000
+
+[Infinite Time-Outs (Both Teams)]
+patch=1,EE,201574F0,extended,00000000
+
+[Only Allowed 1 Time-Out (Both Teams)]
+patch=1,EE,201574F0,extended,AC600010
+
+[3-Pointer's Score 10 Points]
+patch=1,EE,20A18C78,extended,0000000A
+
+[3-Pointer's Score 5 Points]
+patch=1,EE,20A18C78,extended,00000005
+
+[3-Pointer's Score 1 Point]
+patch=1,EE,20A18C78,extended,00000001
+
+[2-Pointer's Score 10 Points]
+patch=1,EE,20A18C7C,extended,0000000A
+
+[2-Pointer's Score 5 Points]
+patch=1,EE,20A18C7C,extended,00000005
+
+[2-Pointer's Score 1 Point]
+patch=1,EE,20A18C7C,extended,00000001
+
+[Free Throw's Score 10 Points]
+patch=1,EE,20A18C80,extended,0000000A
+
+[Free Throw's Score 5 Points]
+patch=1,EE,20A18C80,extended,00000005
+
+[Free Throw's Score 1 Point]
+patch=1,EE,20A18C80,extended,00000001
+
+[Unlock All Unlockables]
+patch=1,EE,20895E54,extended,FFFFFFFF
+patch=1,EE,20895E5C,extended,FFFFFFFF
+
+[P1 Press {L1}+{L2} For More Time]
+patch=1,EE,D08124C2,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P1 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D08124C2,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[P2 Press {L1}+{L2} For More Time]
+patch=1,EE,D0812842,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P2 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D0812842,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[P3 Press {L1}+{L2} For More Time]
+patch=1,EE,D0812BC2,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P3 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D0812BC2,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[P4 Press {L1}+{L2} For More Time]
+patch=1,EE,D0812F42,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P4 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D0812F42,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[P5 Press {L1}+{L2} For More Time]
+patch=1,EE,D08132C2,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P5 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D08132C2,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[P6 Press {L1}+{L2} For More Time]
+patch=1,EE,D0813642,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P6 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D0813642,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[P7 Press {L1}+{L2} For More Time]
+patch=1,EE,D08139C2,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P7 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D08139C2,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[P8 Press {L1}+{L2} For More Time]
+patch=1,EE,D0813D42,extended,0000FAFF
+patch=1,EE,2085BA00,extended,43960000
+
+[P8 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D0813D42,extended,0000F5FF
+patch=1,EE,2085BA00,extended,00000000
+
+[Infinite Shot Clock]
+patch=1,EE,2085BA20,extended,41C00000
+
+[P1 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D08124C2,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P1 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D08124C2,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[P2 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D0812842,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P2 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D0812842,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[P3 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D0812BC2,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P3 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D0812BC2,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[P4 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D0812F42,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P4 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D0812F42,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[P5 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D08132C2,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P5 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D08132C2,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[P6 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D0813642,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P6 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D0813642,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[P7 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D08139C2,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P7 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D08139C2,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[P8 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D0813D42,extended,0000F3FF
+patch=1,EE,2085BA20,extended,41C00000
+
+[P8 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D0813D42,extended,0000FCFF
+patch=1,EE,2085BA20,extended,00000000
+
+[Start On 2nd Quarter]
+patch=1,EE,D085B9DC,extended,00000001
+patch=1,EE,1085B9DC,extended,00000002
+
+[Start On 3rd Quarter]
+patch=1,EE,D085B9DC,extended,00000001
+patch=1,EE,1085B9DC,extended,00000003
+
+[Start On 4th Quarter]
+patch=1,EE,D085B9DC,extended,00000001
+patch=1,EE,1085B9DC,extended,00000004
+
+[Max Games Won]
+patch=1,EE,20895E78,extended,0000270F
+
+[No Games Won]
+patch=1,EE,20895E78,extended,00000000
+
+[Max Games Lost]
+patch=1,EE,20895E7C,extended,0000270F
+
+[No Games Lost]
+patch=1,EE,20895E7C,extended,00000000
+
+[Max Winning Percentage]
+patch=1,EE,20895E80,extended,3F800000
+
+[No Winning Percentage]
+patch=1,EE,20895E80,extended,00000000
+
+[Max Winning Streak]
+patch=1,EE,20895E84,extended,0000270F
+
+[No Winning Streak]
+patch=1,EE,20895E84,extended,00000000
+
+[Max Losing Streak]
+patch=1,EE,20895E88,extended,0000270F
+
+[No Losing Streak]
+patch=1,EE,20895E88,extended,00000000
+
+[Max Exhibition GameS won]
+patch=1,EE,20895E8C,extended,0000270F
+
+[No Exhibition GameS won]
+patch=1,EE,20895E8C,extended,00000000
+
+[Max Atlantic Division Games Won]
+patch=1,EE,20895E90,extended,0000270F
+
+[No Atlantic Division Games Won]
+patch=1,EE,20895E90,extended,00000000
+
+[Max Central Division Games Won]
+patch=1,EE,20895E94,extended,0000270F
+
+[No Central Division Games Won]
+patch=1,EE,20895E94,extended,00000000
+
+[Max Southeast Division Games Won]
+patch=1,EE,20895E98,extended,0000270F
+
+[No Southeast Division Games Won]
+patch=1,EE,20895E98,extended,00000000
+
+[Max Southwest Division Games Won]
+patch=1,EE,20895E9C,extended,0000270F
+
+[No Southwest Division Games Won]
+patch=1,EE,20895E9C,extended,00000000
+
+[Max Northwest Division Games Won]
+patch=1,EE,20895EA0,extended,0000270F
+
+[No Northwest Division Games Won]
+patch=1,EE,20895EA0,extended,00000000
+
+[Max Pacific Division Games Won]
+patch=1,EE,20895EA4,extended,0000270F
+
+[No Pacific Division Games Won]
+patch=1,EE,20895EA4,extended,00000000
+
+[Max Points]
+patch=1,EE,20895EA8,extended,0000270F
+
+[No Points]
+patch=1,EE,20895EA8,extended,00000000
+
+[Max Rebounds]
+patch=1,EE,20895EAC,extended,0000270F
+
+[No Rebounds]
+patch=1,EE,20895EAC,extended,00000000
+
+[Max Assists]
+patch=1,EE,20895EB0,extended,0000270F
+
+[No Assists]
+patch=1,EE,20895EB0,extended,00000000
+
+[Max Blocks]
+patch=1,EE,20895EB4,extended,0000270F
+
+[No Blocks]
+patch=1,EE,20895EB4,extended,00000000
+
+[Max Steals]
+patch=1,EE,20895EB8,extended,0000270F
+
+[No Steals]
+patch=1,EE,20895EB8,extended,00000000
+
+[Max Three Point Shots Made]
+patch=1,EE,20895EBC,extended,0000270F
+
+[No Three Point Shots Made]
+patch=1,EE,20895EBC,extended,00000000
+
+[Max Three Point Shots Attempted]
+patch=1,EE,20895EC0,extended,0000270F
+
+[No Three Point Shots Attempted]
+patch=1,EE,20895EC0,extended,00000000
+
+[Max Two Point Shots Made]
+patch=1,EE,20895EC4,extended,0000270F
+
+[No Two Point Shots Made]
+patch=1,EE,20895EC4,extended,00000000
+
+[Max Two Point Shots Attempted]
+patch=1,EE,20895EC8,extended,0000270F
+
+[No Two Point Shots Attempted]
+patch=1,EE,20895EC8,extended,00000000
+
+[Max Free Throws Made]
+patch=1,EE,20895ECC,extended,0000270F
+
+[No Free Throws Made]
+patch=1,EE,20895ECC,extended,00000000
+
+[Max Free Throws Attempted]
+patch=1,EE,20895ED0,extended,0000270F
+
+[No Free Throws Attempted]
+patch=1,EE,20895ED0,extended,00000000
+
+[Max Double Doubles]
+patch=1,EE,20895ED4,extended,0000270F
+
+[No Double Doubles]
+patch=1,EE,20895ED4,extended,00000000
+
+[Max Triple Doubles]
+patch=1,EE,20895ED8,extended,0000270F
+
+[No Triple Doubles]
+patch=1,EE,20895ED8,extended,00000000
+
+[Max Street Games Played]
+patch=1,EE,20895EDC,extended,0000270F
+
+[No Street Games Played]
+patch=1,EE,20895EDC,extended,00000000
+
+[Max NBA Seasons Played]
+patch=1,EE,20895EE0,extended,0000270F
+
+[No NBA Seasons Played]
+patch=1,EE,20895EE0,extended,00000000
+
+[Max Consecutive 127+ Point Games]
+patch=1,EE,20895EE4,extended,0000270F
+
+[No Consecutive 127+ Point Games]
+patch=1,EE,20895EE4,extended,00000000
+
+[P1 Scores 100]
+patch=1,EE,2090DFCC,extended,00000064
+
+[P1 Scores 50]
+patch=1,EE,2090DFCC,extended,00000032
+
+[P1 Scores 20]
+patch=1,EE,2090DFCC,extended,00000014
+
+[P1 Scores 0]
+patch=1,EE,2090DFCC,extended,00000000
+
+[P2 Scores 100]
+patch=1,EE,2090E254,extended,00000064
+
+[P2 Scores 50]
+patch=1,EE,2090E254,extended,00000032
+
+[P2 Scores 20]
+patch=1,EE,2090E254,extended,00000014
+
+[P2 Scores 0]
+patch=1,EE,2090E254,extended,00000000
+
+[P3 Scores 100]
+patch=1,EE,2090E4DC,extended,00000064
+
+[P3 Scores 50]
+patch=1,EE,2090E4DC,extended,00000032
+
+[P3 Scores 20]
+patch=1,EE,2090E4DC,extended,00000014
+
+[P3 Scores 0]
+patch=1,EE,2090E4DC,extended,00000000
+
+[P4 Scores 100]
+patch=1,EE,2090E764,extended,00000064
+
+[P4 Scores 50]
+patch=1,EE,2090E764,extended,00000032
+
+[P4 Scores 20]
+patch=1,EE,2090E764,extended,00000014
+
+[P4 Scores 0]
+patch=1,EE,2090E764,extended,00000000
+
+[P5 Scores 100]
+patch=1,EE,2090E9EC,extended,00000064
+
+[P5 Scores 50]
+patch=1,EE,2090E9EC,extended,00000032
+
+[P5 Scores 20]
+patch=1,EE,2090E9EC,extended,00000014
+
+[P5 Scores 0]
+patch=1,EE,2090E9EC,extended,00000000
+
+[P6 Scores 100]
+patch=1,EE,2090EC74,extended,00000064
+
+[P6 Scores 50]
+patch=1,EE,2090EC74,extended,00000032
+
+[P6 Scores 20]
+patch=1,EE,2090EC74,extended,00000014
+
+[P6 Scores 0]
+patch=1,EE,2090EC74,extended,00000000
+
+[P7 Scores 100]
+patch=1,EE,2090EEFC,extended,00000064
+
+[P7 Scores 50]
+patch=1,EE,2090EEFC,extended,00000032
+
+[P7 Scores 20]
+patch=1,EE,2090EEFC,extended,00000014
+
+[P7 Scores 0]
+patch=1,EE,2090EEFC,extended,00000000
+
+[P8 Scores 100]
+patch=1,EE,2090F184,extended,00000064
+
+[P8 Scores 50]
+patch=1,EE,2090F184,extended,00000032
+
+[P8 Scores 20]
+patch=1,EE,2090F184,extended,00000014
+
+[P8 Scores 0]
+patch=1,EE,2090F184,extended,00000000
+
+[P9 Scores 100]
+patch=1,EE,2090F40C,extended,00000064
+
+[P9 Scores 150]
+patch=1,EE,2090F40C,extended,00000032
+
+[P9 Scores 20]
+patch=1,EE,2090F40C,extended,00000014
+
+[P9 Scores 0]
+patch=1,EE,2090F40C,extended,00000000
+
+[P10 Scores 100]
+patch=1,EE,2090F694,extended,00000064
+
+[P10 Scores 50]
+patch=1,EE,2090F694,extended,00000032
+
+[P10 Scores 20]
+patch=1,EE,2090F694,extended,00000014
+
+[P10 Scores 0]
+patch=1,EE,2090F694,extended,00000000
+
+[P11 Scores 100]
+patch=1,EE,2090F91C,extended,00000064
+
+[P11 Scores 150]
+patch=1,EE,2090F91C,extended,00000032
+
+[P11 Scores 20]
+patch=1,EE,2090F91C,extended,00000014
+
+[P11 Scores 0]
+patch=1,EE,2090F91C,extended,00000000
+
+[P12 Scores 100]
+patch=1,EE,2090FBA4,extended,00000064
+
+[P12 Scores 50]
+patch=1,EE,2090FBA4,extended,00000032
+
+[P12 Scores 20]
+patch=1,EE,2090FBA4,extended,00000014
+
+[P12 Scores 0]
+patch=1,EE,2090FBA4,extended,00000000
+
+[P1 Scores 100]
+patch=1,EE,2090FE2C,extended,00000064
+
+[P1 Scores 50]
+patch=1,EE,2090FE2C,extended,00000032
+
+[P1 Scores 20]
+patch=1,EE,2090FE2C,extended,00000014
+
+[P1 Scores 0]
+patch=1,EE,2090FE2C,extended,00000000
+
+[P2 Scores 100]
+patch=1,EE,209100B4,extended,00000064
+
+[P2 Scores 50]
+patch=1,EE,209100B4,extended,00000032
+
+[P2 Scores 20]
+patch=1,EE,209100B4,extended,00000014
+
+[P2 Scores 0]
+patch=1,EE,209100B4,extended,00000000
+
+[P3 Scores 100]
+patch=1,EE,2091033C,extended,00000064
+
+[P3 Scores 50]
+patch=1,EE,2091033C,extended,00000032
+
+[P3 Scores 20]
+patch=1,EE,2091033C,extended,00000014
+
+[P3 Scores 0]
+patch=1,EE,2091033C,extended,00000000
+
+[P4 Scores 100]
+patch=1,EE,209105C4,extended,00000064
+
+[P4 Scores 50]
+patch=1,EE,209105C4,extended,00000032
+
+[P4 Scores 20]
+patch=1,EE,209105C4,extended,00000014
+
+[P4 Scores 0]
+patch=1,EE,209105C4,extended,00000000
+
+[P5 Scores 100]
+patch=1,EE,2091084C,extended,00000064
+
+[P5 Scores 50]
+patch=1,EE,2091084C,extended,00000032
+
+[P5 Scores 20]
+patch=1,EE,2091084C,extended,00000014
+
+[P5 Scores 0]
+patch=1,EE,2091084C,extended,00000000
+
+[P6 Scores 100]
+patch=1,EE,20910AD4,extended,00000064
+
+[P6 Scores 50]
+patch=1,EE,20910AD4,extended,00000032
+
+[P6 Scores 20]
+patch=1,EE,20910AD4,extended,00000014
+
+[P6 Scores 0]
+patch=1,EE,20910AD4,extended,00000000
+
+[P7 Scores 100]
+patch=1,EE,20910D5C,extended,00000064
+
+[P7 Scores 50]
+patch=1,EE,20910D5C,extended,00000032
+
+[P7 Scores 20]
+patch=1,EE,20910D5C,extended,00000014
+
+[P7 Scores 0]
+patch=1,EE,20910D5C,extended,00000000
+
+[P8 Scores 100]
+patch=1,EE,20910FE4,extended,00000064
+
+[P8 Scores 50]
+patch=1,EE,20910FE4,extended,00000032
+
+[P8 Scores 20]
+patch=1,EE,20910FE4,extended,00000014
+
+[P8 Scores 0]
+patch=1,EE,20910FE4,extended,00000000
+
+[P9 Scores 100]
+patch=1,EE,2091126C,extended,00000064
+
+[P9 Scores 50]
+patch=1,EE,2091126C,extended,00000032
+
+[P9 Scores 20]
+patch=1,EE,2091126C,extended,00000014
+
+[P9 Scores 0]
+patch=1,EE,2091126C,extended,00000000
+
+[P10 Scores 100]
+patch=1,EE,209114F4,extended,00000064
+
+[P10 Scores 50]
+patch=1,EE,209114F4,extended,00000032
+
+[P10 Scores 20]
+patch=1,EE,209114F4,extended,00000014
+
+[P10 Scores 0]
+patch=1,EE,209114F4,extended,00000000
+
+[P11 Scores 100]
+patch=1,EE,2091177C,extended,00000064
+
+[P11 Scores 50]
+patch=1,EE,2091177C,extended,00000032
+
+[P11 Scores 20]
+patch=1,EE,2091177C,extended,00000014
+
+[P11 Scores 0]
+patch=1,EE,2091177C,extended,00000000
+
+[P12 Scores 100]
+patch=1,EE,20911A04,extended,00000064
+
+[P12 Scores 50]
+patch=1,EE,20911A04,extended,00000032
+
+[P12 Scores 20]
+patch=1,EE,20911A04,extended,00000014
+
+[P12 Scores 0]
+patch=1,EE,20911A04,extended,00000000
+
+[P1]
+patch=1,EE,2090E1C8,extended,3F800000
+
+[P2]
+patch=1,EE,2090E450,extended,3F800000
+
+[P3]
+patch=1,EE,2090E6D8,extended,3F800000
+
+[P4]
+patch=1,EE,2090E960,extended,3F800000
+
+[P5]
+patch=1,EE,2090EBE8,extended,3F800000
+
+[P6]
+patch=1,EE,2090EE70,extended,3F800000
+
+[P7]
+patch=1,EE,2090F0F8,extended,3F800000
+
+[P8]
+patch=1,EE,2090F380,extended,3F800000
+
+[P9]
+patch=1,EE,2090F608,extended,3F800000
+
+[P10]
+patch=1,EE,2090F890,extended,3F800000
+
+[P11]
+patch=1,EE,2090FB18,extended,3F800000
+
+[P12]
+patch=1,EE,2090FDA0,extended,3F800000
+
+[P1]
+patch=1,EE,2090E1C8,extended,00000000
+
+[P2]
+patch=1,EE,2090E450,extended,00000000
+
+[P3]
+patch=1,EE,2090E6D8,extended,00000000
+
+[P4]
+patch=1,EE,2090E960,extended,00000000
+
+[P5]
+patch=1,EE,2090EBE8,extended,00000000
+
+[P6]
+patch=1,EE,2090EE70,extended,00000000
+
+[P7]
+patch=1,EE,2090F0F8,extended,00000000
+
+[P8]
+patch=1,EE,2090F380,extended,00000000
+
+[P9]
+patch=1,EE,2090F608,extended,00000000
+
+[P10]
+patch=1,EE,2090F890,extended,00000000
+
+[P11]
+patch=1,EE,2090FB18,extended,00000000
+
+[P12]
+patch=1,EE,2090FDA0,extended,00000000
+
+[P1]
+patch=1,EE,20910028,extended,3F800000
+
+[P2]
+patch=1,EE,209102B0,extended,3F800000
+
+[P3]
+patch=1,EE,20910538,extended,3F800000
+
+[P4]
+patch=1,EE,209107C0,extended,3F800000
+
+[P5]
+patch=1,EE,20910A48,extended,3F800000
+
+[P6]
+patch=1,EE,20910CD0,extended,3F800000
+
+[P7]
+patch=1,EE,20910F58,extended,3F800000
+
+[P8]
+patch=1,EE,209111E0,extended,3F800000
+
+[P9]
+patch=1,EE,20911468,extended,3F800000
+
+[P10]
+patch=1,EE,209116F0,extended,3F800000
+
+[P11]
+patch=1,EE,20911978,extended,3F800000
+
+[P12]
+patch=1,EE,20911C00,extended,3F800000
+
+[P1]
+patch=1,EE,20910028,extended,00000000
+
+[P2]
+patch=1,EE,209102B0,extended,00000000
+
+[P3]
+patch=1,EE,20910538,extended,00000000
+
+[P4]
+patch=1,EE,209107C0,extended,00000000
+
+[P5]
+patch=1,EE,20910A48,extended,00000000
+
+[P6]
+patch=1,EE,20910CD0,extended,00000000
+
+[P7]
+patch=1,EE,20910F58,extended,00000000
+
+[P8]
+patch=1,EE,209111E0,extended,00000000
+
+[P9]
+patch=1,EE,20911468,extended,00000000
+
+[P10]
+patch=1,EE,209116F0,extended,00000000
+
+[P11]
+patch=1,EE,20911978,extended,00000000
+
+[P12]
+patch=1,EE,20911C00,extended,00000000
+
+[P1]
+patch=1,EE,2090E1CC,extended,3F800000
+
+[P2]
+patch=1,EE,2090E454,extended,3F800000
+
+[P3]
+patch=1,EE,2090E6DC,extended,3F800000
+
+[P4]
+patch=1,EE,2090E964,extended,3F800000
+
+[P5]
+patch=1,EE,2090EBEC,extended,3F800000
+
+[P6]
+patch=1,EE,2090EE74,extended,3F800000
+
+[P7]
+patch=1,EE,2090F0FC,extended,3F800000
+
+[P8]
+patch=1,EE,2090F384,extended,3F800000
+
+[P9]
+patch=1,EE,2090F60C,extended,3F800000
+
+[P10]
+patch=1,EE,2090F894,extended,3F800000
+
+[P11]
+patch=1,EE,2090FB1C,extended,3F800000
+
+[P12]
+patch=1,EE,2090FDA4,extended,3F800000
+
+[P1]
+patch=1,EE,2090E1CC,extended,00000000
+
+[P2]
+patch=1,EE,2090E454,extended,00000000
+
+[P3]
+patch=1,EE,2090E6DC,extended,00000000
+
+[P4]
+patch=1,EE,2090E964,extended,00000000
+
+[P5]
+patch=1,EE,2090EBEC,extended,00000000
+
+[P6]
+patch=1,EE,2090EE74,extended,00000000
+
+[P7]
+patch=1,EE,2090F0FC,extended,00000000
+
+[P8]
+patch=1,EE,2090F384,extended,00000000
+
+[P9]
+patch=1,EE,2090F60C,extended,00000000
+
+[P10]
+patch=1,EE,2090F894,extended,00000000
+
+[P11]
+patch=1,EE,2090FB1C,extended,00000000
+
+[P12]
+patch=1,EE,2090FDA4,extended,00000000
+
+[P1]
+patch=1,EE,2091002C,extended,3F800000
+
+[P2]
+patch=1,EE,209102B4,extended,3F800000
+
+[P3]
+patch=1,EE,2091053C,extended,3F800000
+
+[P4]
+patch=1,EE,209107C4,extended,3F800000
+
+[P5]
+patch=1,EE,20910A4C,extended,3F800000
+
+[P6]
+patch=1,EE,20910CD4,extended,3F800000
+
+[P7]
+patch=1,EE,20910F5C,extended,3F800000
+
+[P8]
+patch=1,EE,209111E4,extended,3F800000
+
+[P9]
+patch=1,EE,2091146C,extended,3F800000
+
+[P10]
+patch=1,EE,209116F4,extended,3F800000
+
+[P11]
+patch=1,EE,2091197C,extended,3F800000
+
+[P12]
+patch=1,EE,20911C04,extended,3F800000
+
+[P1]
+patch=1,EE,2091002C,extended,00000000
+
+[P2]
+patch=1,EE,209102B4,extended,00000000
+
+[P3]
+patch=1,EE,2091053C,extended,00000000
+
+[P4]
+patch=1,EE,209107C4,extended,00000000
+
+[P5]
+patch=1,EE,20910A4C,extended,00000000
+
+[P6]
+patch=1,EE,20910CD4,extended,00000000
+
+[P7]
+patch=1,EE,20910F5C,extended,00000000
+
+[P8]
+patch=1,EE,209111E4,extended,00000000
+
+[P9]
+patch=1,EE,2091146C,extended,00000000
+
+[P10]
+patch=1,EE,209116F4,extended,00000000
+
+[P11]
+patch=1,EE,2091197C,extended,00000000
+
+[P12]
+patch=1,EE,20911C04,extended,00000000
+
+[Shooting (Close)]
+patch=1,EE,00B42F21,extended,00000064
+
+[Shooting (Med.)]
+patch=1,EE,00B42F22,extended,00000064
+
+[Shooting (3 Pt.)]
+patch=1,EE,00B42F23,extended,00000064
+
+[Free Trhows]
+patch=1,EE,00B42F24,extended,00000064
+
+[Layups]
+patch=1,EE,00B42F25,extended,00000064
+
+[Dunking]
+patch=1,EE,00B42F26,extended,00000064
+
+[Ballhandling]
+patch=1,EE,00B42F29,extended,00000064
+
+[Passing]
+patch=1,EE,00B42F2A,extended,00000064
+
+[Low Post Off.]
+patch=1,EE,00B42F2D,extended,00000064
+
+[Low Post Def.]
+patch=1,EE,00B42F2E,extended,00000064
+
+[Blocking]
+patch=1,EE,00B42F2F,extended,00000064
+
+[Stealing]
+patch=1,EE,00B42F30,extended,00000064
+
+[Off. Rebounding]
+patch=1,EE,00B42F32,extended,00000064
+
+[Def. Rebounding]
+patch=1,EE,00B42F33,extended,00000064
+
+[Speed]
+patch=1,EE,00B42F34,extended,00000064
+
+[Stamina]
+patch=1,EE,00B42F35,extended,00000064
+
+[Durability]
+patch=1,EE,00B42F37,extended,00000064
+
+[Def. Awareness]
+patch=1,EE,00B42F39,extended,00000064
+
+[Off. Awareness]
+patch=1,EE,00B42F3A,extended,00000064
+
+[Shooting (Close)]
+patch=1,EE,00B42F21,extended,000000FF
+
+[Shooting (Med.)]
+patch=1,EE,00B42F22,extended,000000FF
+
+[Shooting (3 Pt.)]
+patch=1,EE,00B42F23,extended,000000FF
+
+[Free Trhows]
+patch=1,EE,00B42F24,extended,000000FF
+
+[Layups]
+patch=1,EE,00B42F25,extended,000000FF
+
+[Dunking]
+patch=1,EE,00B42F26,extended,000000FF
+
+[Ballhandling]
+patch=1,EE,00B42F29,extended,000000FF
+
+[Passing]
+patch=1,EE,00B42F2A,extended,000000FF
+
+[Low Post Off.]
+patch=1,EE,00B42F2D,extended,000000FF
+
+[Low Post Def.]
+patch=1,EE,00B42F2E,extended,000000FF
+
+[Blocking]
+patch=1,EE,00B42F2F,extended,000000FF
+
+[Stealing]
+patch=1,EE,00B42F30,extended,000000FF
+
+[Off. Rebounding]
+patch=1,EE,00B42F32,extended,000000FF
+
+[Def. Rebounding]
+patch=1,EE,00B42F33,extended,000000FF
+
+[Speed]
+patch=1,EE,00B42F34,extended,000000FF
+
+[Stamina]
+patch=1,EE,00B42F35,extended,000000FF
+
+[Durability]
+patch=1,EE,00B42F37,extended,000000FF
+
+[Def. Awareness]
+patch=1,EE,00B42F39,extended,000000FF
+
+[Off. Awareness]
+patch=1,EE,00B42F3A,extended,000000FF
+
+[Shooting (Close)]
+patch=1,EE,00B42FB5,extended,00000064
+
+[Shooting (Med.)]
+patch=1,EE,00B42FB6,extended,00000064
+
+[Shooting (3 Pt.)]
+patch=1,EE,00B42FB7,extended,00000064
+
+[Free Trhows]
+patch=1,EE,00B42FB8,extended,00000064
+
+[Layups]
+patch=1,EE,00B42FB9,extended,00000064
+
+[Dunking]
+patch=1,EE,00B42FBA,extended,00000064
+
+[Ballhandling]
+patch=1,EE,00B42FBD,extended,00000064
+
+[Passing]
+patch=1,EE,00B42FBE,extended,00000064
+
+[Low Post Off.]
+patch=1,EE,00B42FC1,extended,00000064
+
+[Low Post Def.]
+patch=1,EE,00B42FC2,extended,00000064
+
+[Blocking]
+patch=1,EE,00B42FC3,extended,00000064
+
+[Stealing]
+patch=1,EE,00B42FC4,extended,00000064
+
+[Off. Rebounding]
+patch=1,EE,00B42FC6,extended,00000064
+
+[Def. Rebounding]
+patch=1,EE,00B42FC7,extended,00000064
+
+[Speed]
+patch=1,EE,00B42FC8,extended,00000064
+
+[Stamina]
+patch=1,EE,00B42FC9,extended,00000064
+
+[Durability]
+patch=1,EE,00B42FCB,extended,00000064
+
+[Def. Awareness]
+patch=1,EE,00B42FCD,extended,00000064
+
+[Off. Awareness]
+patch=1,EE,00B42FCE,extended,00000064
+
+[Shooting (Close)]
+patch=1,EE,00B42FB5,extended,000000FF
+
+[Shooting (Med.)]
+patch=1,EE,00B42FB6,extended,000000FF
+
+[Shooting (3 Pt.)]
+patch=1,EE,00B42FB7,extended,000000FF
+
+[Free Trhows]
+patch=1,EE,00B42FB8,extended,000000FF
+
+[Layups]
+patch=1,EE,00B42FB9,extended,000000FF
+
+[Dunking]
+patch=1,EE,00B42FBA,extended,000000FF
+
+[Ballhandling]
+patch=1,EE,00B42FBD,extended,000000FF
+
+[Passing]
+patch=1,EE,00B42FBE,extended,000000FF
+
+[Low Post Off.]
+patch=1,EE,00B42FC1,extended,000000FF
+
+[Low Post Def.]
+patch=1,EE,00B42FC2,extended,000000FF
+
+[Blocking]
+patch=1,EE,00B42FC3,extended,000000FF
+
+[Stealing]
+patch=1,EE,00B42FC4,extended,000000FF
+
+[Off. Rebounding]
+patch=1,EE,00B42FC6,extended,000000FF
+
+[Def. Rebounding]
+patch=1,EE,00B42FC7,extended,000000FF
+
+[Speed]
+patch=1,EE,00B42FC8,extended,000000FF
+
+[Stamina]
+patch=1,EE,00B42FC9,extended,000000FF
+
+[Durability]
+patch=1,EE,00B42FCB,extended,000000FF
+
+[Def. Awareness]
+patch=1,EE,00B42FCD,extended,000000FF
+
+[Off. Awareness]
+patch=1,EE,00B42FCE,extended,000000FF

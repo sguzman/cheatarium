@@ -1,0 +1,271 @@
+gametitle=007 From Russia With Love (SLUS-21282)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902F74B8,extended,00832021
+
+[Infinite Research Points]
+patch=1,EE,10A82218,extended,0000FFFF
+
+[Max Research Points]
+patch=1,EE,20A82218,extended,05F5E0FF
+
+[Upgrading Weapons Doesnt Decrease Points]
+patch=1,EE,201C6ACC,extended,00000000
+
+[Upgrading Weapons Increases Points]
+patch=1,EE,201C6AC4,extended,00C71021
+
+[Infinite Skill Points]
+patch=1,EE,10A82860,extended,0000FFFF
+
+[Max Skill Points]
+patch=1,EE,20A82860,extended,05F5E0FF
+
+[Buying Extras Doesnt Decrease Skill Points]
+patch=1,EE,201C7548,extended,00000000
+
+[Buying Extras Increases Skill Points]
+patch=1,EE,201C7540,extended,00661821
+
+[Unlock All Characters]
+patch=1,EE,20A7D358,extended,FFFFFFFF
+
+[Have All Weapons Upgrades]
+patch=1,EE,20A821A0,extended,FFFFFFFF
+
+[Have All Gadgets Upgrades]
+patch=1,EE,20A821A4,extended,FFFFFFFF
+
+[Unlock All Media/Concept]
+patch=1,EE,20A82864,extended,FFFFFFFF
+
+[Always Low Game Time]
+patch=1,EE,20AB5854,extended,00000000
+
+[Max Disables]
+patch=1,EE,20AB595C,extended,461C3C00
+
+[Max Combo Hits]
+patch=1,EE,20AB59B4,extended,4479C000
+
+[Max Stealth]
+patch=1,EE,20AB5A0C,extended,4479C000
+
+[Max Focus Shots]
+patch=1,EE,20AB5A64,extended,4479C000
+
+[London]
+patch=1,EE,20A82250,extended,00000000
+
+[Hedgemaze]
+patch=1,EE,20A822A0,extended,00000000
+
+[Istanbul Pt. 1]
+patch=1,EE,20A822F0,extended,00000000
+
+[Station T]
+patch=1,EE,20A82340,extended,00000000
+
+[Istanbul Pt. 2]
+patch=1,EE,20A82390,extended,00000000
+
+[Underground]
+patch=1,EE,20A823E0,extended,00000000
+
+[Gypsy Camp]
+patch=1,EE,20A82430,extended,00000000
+
+[Sniper Alley]
+patch=1,EE,20A82480,extended,00000000
+
+[Consulate]
+patch=1,EE,20A824D0,extended,00000000
+
+[Istanbul Pt. 3]
+patch=1,EE,20A82520,extended,00000000
+
+[Train]
+patch=1,EE,20A82570,extended,00000000
+
+[Factory]
+patch=1,EE,20A825C0,extended,00000000
+
+[Border]
+patch=1,EE,20A82610,extended,00000000
+
+[Octopus Base]
+patch=1,EE,20A82660,extended,00000000
+
+[Tunnels]
+patch=1,EE,20A826B0,extended,00000000
+
+[Ruins]
+patch=1,EE,20A82700,extended,00000000
+
+[Plaza]
+patch=1,EE,20A82750,extended,00000000
+
+[Airport]
+patch=1,EE,20A827A0,extended,00000000
+
+[All Levels]
+patch=1,EE,40A82250,extended,00120014
+patch=1,EE,00000000,extended,00000000
+
+[London]
+patch=1,EE,20A82254,extended,FFFFFFFF
+
+[Hedgemaze]
+patch=1,EE,20A822A4,extended,FFFFFFFF
+
+[Istanbul Pt. 1]
+patch=1,EE,20A822F4,extended,FFFFFFFF
+
+[Station T]
+patch=1,EE,20A82344,extended,FFFFFFFF
+
+[Istanbul Pt. 2]
+patch=1,EE,20A82394,extended,FFFFFFFF
+
+[Underground]
+patch=1,EE,20A823E4,extended,FFFFFFFF
+
+[Gypsy Camp]
+patch=1,EE,20A82434,extended,FFFFFFFF
+
+[Sniper Alley]
+patch=1,EE,20A82484,extended,FFFFFFFF
+
+[Consulate]
+patch=1,EE,20A824D4,extended,FFFFFFFF
+
+[Istanbul Pt. 3]
+patch=1,EE,20A82524,extended,FFFFFFFF
+
+[Train]
+patch=1,EE,20A82574,extended,FFFFFFFF
+
+[Factory]
+patch=1,EE,20A825C4,extended,FFFFFFFF
+
+[Border]
+patch=1,EE,20A82614,extended,FFFFFFFF
+
+[Octopus Base]
+patch=1,EE,20A82664,extended,FFFFFFFF
+
+[Tunnels]
+patch=1,EE,20A826B4,extended,FFFFFFFF
+
+[Ruins]
+patch=1,EE,20A82704,extended,FFFFFFFF
+
+[Plaza]
+patch=1,EE,20A82754,extended,FFFFFFFF
+
+[Airport]
+patch=1,EE,20A827A4,extended,FFFFFFFF
+
+[All Levels]
+patch=1,EE,40A82254,extended,00120014
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[London]
+patch=1,EE,00A821A8,extended,00000001
+
+[Hedgemaze]
+patch=1,EE,00A821A9,extended,0000000F
+
+[Istanbul Pt. 1]
+patch=1,EE,00A821AA,extended,00000003
+
+[Station T]
+patch=1,EE,00A821AB,extended,0000000F
+
+[Istanbul Pt. 2]
+patch=1,EE,00A821AC,extended,0000000F
+
+[Underground]
+patch=1,EE,00A821AD,extended,00000007
+
+[Gypsy Camp]
+patch=1,EE,00A821AE,extended,0000000F
+
+[Sniper Alley]
+patch=1,EE,00A821AF,extended,00000003
+
+[Consulate]
+patch=1,EE,00A821B0,extended,0000000F
+
+[Train]
+patch=1,EE,00A821B2,extended,0000000F
+
+[Factory]
+patch=1,EE,00A821B3,extended,0000000F
+
+[Border]
+patch=1,EE,00A821B4,extended,00000003
+
+[Octopus Base]
+patch=1,EE,00A821B5,extended,0000000F
+
+[Tunnels]
+patch=1,EE,00A821B6,extended,00000001
+
+[Ruins]
+patch=1,EE,00A821B7,extended,00000001
+
+[Airport]
+patch=1,EE,00A821B9,extended,00000001
+
+[All Schematics]
+patch=1,EE,20A821A8,extended,0F030F01
+patch=1,EE,20A821AC,extended,030F070F
+patch=1,EE,20A821B0,extended,0F0F000F
+patch=1,EE,20A821B4,extended,01010F03
+patch=1,EE,10A821B8,extended,00000100
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,8C410008
+patch=1,EE,200C0224,extended,0807AF0C
+patch=1,EE,200C0228,extended,AC410000
+patch=1,EE,201DC1F0,extended,0C030088
+
+[Infinite Armor]
+patch=1,EE,200C0230,extended,8C410014
+patch=1,EE,200C0234,extended,0807AF0E
+patch=1,EE,200C0238,extended,AC41000C
+patch=1,EE,201DC208,extended,0C03008C
+
+[Infinite Ammo]
+patch=1,EE,2017CB9C,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2017CB94,extended,240B0063
+
+[Extra Ammo]
+patch=1,EE,2017CB94,extended,01665821
+
+[Never Reload]
+patch=1,EE,2017F284,extended,00000000
+
+[Never Reload/Max Clip]
+patch=1,EE,2017F27C,extended,24020063
+
+[Infinite Health]
+patch=1,EE,200C0240,extended,8C8104F4
+patch=1,EE,200C0244,extended,00600008
+patch=1,EE,200C0248,extended,AC8104F8
+patch=1,EE,202193A8,extended,0C030090
+
+[Infinite Ammo]
+patch=1,EE,2021D2BC,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2021D2B8,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,1021D2B8,extended,00000001

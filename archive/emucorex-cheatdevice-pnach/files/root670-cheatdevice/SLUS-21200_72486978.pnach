@@ -1,0 +1,202 @@
+gametitle=Armored Core-Nine Breaker (SLUS-21200)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901383A4,extended,0C045A4E
+
+[Infinite Training Points]
+patch=1,EE,10484960,extended,0000FFFF
+
+[Max Training Points]
+patch=1,EE,20484960,extended,05F5E0FF
+
+[Infinite Arena Points]
+patch=1,EE,10484BC0,extended,0000FFFF
+
+[Max Arena Points]
+patch=1,EE,20484BC0,extended,05F5E0FF
+
+[Infinite Ammo (All Weapons)]
+patch=1,EE,20169384,extended,00000000
+
+[Max Infinite Ammo (All Weapons)]
+patch=1,EE,20169380,extended,240203E7
+
+[Extra Ammo (All Weapons)]
+patch=1,EE,10169380,extended,00000001
+
+[Infinite AP (In-Game Cheat)]
+patch=1,EE,70292832,extended,00000002
+
+[1-Hit Death (Enemies/P2)]
+patch=1,EE,200C0220,extended,3C010029
+patch=1,EE,200C0224,extended,34211AF0
+patch=1,EE,200C0228,extended,10300005
+patch=1,EE,200C022C,extended,8E030004
+patch=1,EE,200C0230,extended,2C610001
+patch=1,EE,200C0234,extended,50200001
+patch=1,EE,200C0238,extended,24030001
+patch=1,EE,200C023C,extended,AE030004
+patch=1,EE,200C0240,extended,03E00008
+patch=1,EE,200C0244,extended,00000000
+patch=1,EE,20157FD8,extended,0C030088
+
+[P1 Press {L1}+{SELECT} For 1-Hit Death P2/CPU 1]
+patch=1,EE,D028AB02,extended,0000FBFE
+patch=1,EE,102940F4,extended,00000001
+
+[P1 Press {L2}+{SELECT} For 1-Hit Death CPU 2]
+patch=1,EE,D028AB02,extended,0000FEFE
+patch=1,EE,102966F4,extended,00000001
+
+[Infinite AP]
+patch=1,EE,10291AF4,extended,00009C3C
+
+[Infinite Power]
+patch=1,EE,10291B00,extended,00009C3C
+
+[Never Overheat]
+patch=1,EE,20291BB0,extended,41A00000
+
+[Infinite Right Ammo]
+patch=1,EE,10292374,extended,000003E7
+
+[Max Right Ammo]
+patch=1,EE,10292376,extended,000003E7
+
+[Max Infinite Right Ammo]
+patch=1,EE,20292374,extended,03E703E7
+
+[Infinite Back L Ammo]
+patch=1,EE,1029240C,extended,000003E7
+
+[Max Back L Ammo]
+patch=1,EE,1029240E,extended,000003E7
+
+[Max Infinite Back L Ammo]
+patch=1,EE,2029240C,extended,03E703E7
+
+[Infinite Back R Ammo]
+patch=1,EE,102924A4,extended,000003E7
+
+[Max Back R Ammo]
+patch=1,EE,102924A6,extended,000003E7
+
+[Max Infinite Back R Ammo]
+patch=1,EE,202924A4,extended,03E703E7
+
+[Infinite Inside Ammo]
+patch=1,EE,1029253C,extended,000003E7
+
+[Max Inside Ammo]
+patch=1,EE,1029253E,extended,000003E7
+
+[Max Infinite Inside Ammo]
+patch=1,EE,2029253C,extended,03E703E7
+
+[Infinite Extension Ammo]
+patch=1,EE,102925D4,extended,000003E7
+
+[Max Extension Ammo]
+patch=1,EE,102925D6,extended,000003E7
+
+[Max Infinite Extension Ammo]
+patch=1,EE,202925D4,extended,03E703E7
+
+[Infinite Left Ammo]
+patch=1,EE,1029CD98,extended,000003E7
+
+[Max Left Ammo]
+patch=1,EE,1029CD9A,extended,000003E7
+
+[Max Infinite Left Ammo]
+patch=1,EE,2029CD98,extended,03E703E7
+
+[Infinite AP]
+patch=1,EE,102940F4,extended,00009C3C
+
+[Infinite Power]
+patch=1,EE,10294100,extended,00009C3C
+
+[Never Overheat]
+patch=1,EE,202941B0,extended,41A00000
+
+[Infinite Right Ammo]
+patch=1,EE,10294974,extended,000003E7
+
+[Max Right Ammo]
+patch=1,EE,10294976,extended,000003E7
+
+[Max Infinite Right Ammo]
+patch=1,EE,20294974,extended,03E703E7
+
+[Infinite Back L Ammo]
+patch=1,EE,10294A0C,extended,000003E7
+
+[Max Back L Ammo]
+patch=1,EE,10294A0E,extended,000003E7
+
+[Max Infinite Back L Ammo]
+patch=1,EE,20294A0C,extended,03E703E7
+
+[Infinite Back R Ammo]
+patch=1,EE,10294AA4,extended,000003E7
+
+[Max Back R Ammo]
+patch=1,EE,10294AA6,extended,000003E7
+
+[Max Infinite Back R Ammo]
+patch=1,EE,20294AA4,extended,03E703E7
+
+[Infinite Inside Ammo]
+patch=1,EE,10294B3C,extended,000003E7
+
+[Max Inside Ammo]
+patch=1,EE,10294B3E,extended,000003E7
+
+[Max Infinite Inside Ammo]
+patch=1,EE,20294B3C,extended,03E703E7
+
+[Infinite Extension Ammo]
+patch=1,EE,10294BD4,extended,000003E7
+
+[Max Extension Ammo]
+patch=1,EE,10294BD6,extended,000003E7
+
+[Max Infinite Extension Ammo]
+patch=1,EE,20294BD4,extended,03E703E7
+
+[Infinite Left Ammo]
+patch=1,EE,1029F398,extended,000003E7
+
+[Max Left Ammo]
+patch=1,EE,1029F39A,extended,000003E7
+
+[Max Infinite Left Ammo]
+patch=1,EE,2029F398,extended,03E703E7
+
+[Max Total Battles]
+patch=1,EE,10484BB0,extended,0000270F
+
+[No Total Battles]
+patch=1,EE,10484BB0,extended,00000000
+
+[Max Wins]
+patch=1,EE,10484BB2,extended,0000270F
+
+[No Wins]
+patch=1,EE,10484BB2,extended,00000000
+
+[Max Losses]
+patch=1,EE,10484BB4,extended,0000270F
+
+[No Losses]
+patch=1,EE,10484BB4,extended,00000000
+
+[Max Draws]
+patch=1,EE,10484BB6,extended,0000270F
+
+[No Draws]
+patch=1,EE,10484BB6,extended,00000000

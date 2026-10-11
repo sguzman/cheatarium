@@ -1,0 +1,190 @@
+gametitle=Power Rangers-Dino Thunder (SLUS-20944)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9013DE4C,extended,0C043FF8
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,94C305B0
+patch=1,EE,200C0224,extended,080636BA
+patch=1,EE,200C0228,extended,A4C305B4
+patch=1,EE,2018DAE4,extended,08030088
+
+[Max Health]
+patch=1,EE,200C0230,extended,24120005
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,A4B205B0
+patch=1,EE,2018D8A0,extended,0C03008C
+
+[Infinite Dino Bolts]
+patch=1,EE,10606E42,extended,00000063
+
+[Infinite Dino Darts]
+patch=1,EE,10606E44,extended,00000063
+
+[Infinite Dino Claws]
+patch=1,EE,10606E46,extended,00000063
+
+[Wild Force-Animarium]
+patch=1,EE,70606E34,extended,00000002
+
+[Ninja Storm-Rock Quarry]
+patch=1,EE,70606E38,extended,00000001
+
+[Ninja Storm-Blue Bay Harbor]
+patch=1,EE,70606E39,extended,00000001
+
+[Dino Thunder-Reefside Canyon]
+patch=1,EE,70606E40,extended,00000002
+
+[Dino Thunder-Reefside City]
+patch=1,EE,70606E40,extended,00000004
+
+[Dino Thunder-Jungle Island]
+patch=1,EE,70606E40,extended,00000008
+
+[Dino Thunder-Lava Fields]
+patch=1,EE,70606E40,extended,00000010
+
+[Dino Thunder-Volcana Core]
+patch=1,EE,70606E40,extended,00000020
+
+[All Power Games]
+patch=1,EE,70606E34,extended,00000002
+patch=1,EE,70606E38,extended,00100101
+patch=1,EE,70606E40,extended,0000003E
+
+[Wild Force-Red Lion Zord]
+patch=1,EE,70606E34,extended,00000001
+
+[Wild Force-Yellow Eagle Zord]
+patch=1,EE,70606E34,extended,00000002
+
+[Wild Force-Blue Shark Zord]
+patch=1,EE,70606E34,extended,00000004
+
+[Wild Force-White Tiger Zord]
+patch=1,EE,70606E34,extended,00000008
+
+[Wild Force-Black Bison Zord]
+patch=1,EE,70606E34,extended,00000010
+
+[Wild Force-Silver Wolf Zord]
+patch=1,EE,70606E34,extended,00000020
+
+[Ninja Storm-Red Hawk Zord]
+patch=1,EE,70606E38,extended,00000001
+
+[Ninja Storm-Yellow Lion Zord]
+patch=1,EE,70606E38,extended,00000002
+
+[Ninja Storm-Blue Dolphin Zord]
+patch=1,EE,70606E38,extended,00000004
+
+[Ninja Storm-Crimson Insectazord]
+patch=1,EE,70606E38,extended,00000008
+
+[Ninja Storm-Navy Beetlezord]
+patch=1,EE,70606E38,extended,00000010
+
+[Ninja Storm-Green Samurai Star MegaZord]
+patch=1,EE,70606E38,extended,00000020
+
+[Dino Thunder-Ptera Zord]
+patch=1,EE,70606E3C,extended,00000002
+
+[Dino Thunder-Tricera Zord]
+patch=1,EE,70606E3C,extended,00000004
+
+[Dino Thunder-Parasaur Zord]
+patch=1,EE,70606E3C,extended,00000008
+
+[Dino Thunder-Dimetro Zord]
+patch=1,EE,70606E3C,extended,00000010
+
+[Dino Thunder-Cephala Zord]
+patch=1,EE,70606E3C,extended,00000020
+
+[Dino Thunder-Thundersaurus MegaZord 1]
+patch=1,EE,70606E60,extended,00000008
+
+[Dino Thunder-Thundersaurus MegaZord 2]
+patch=1,EE,70606E60,extended,00000040
+
+[All Zords]
+patch=1,EE,70606E34,extended,0000003F
+patch=1,EE,70606E38,extended,0000003F
+patch=1,EE,70606E3C,extended,0000003E
+patch=1,EE,70606E60,extended,00000048
+
+[Lobber]
+patch=1,EE,70606E60,extended,00000001
+
+[FreezerWorm]
+patch=1,EE,70606E60,extended,00000002
+
+[Tagger]
+patch=1,EE,70606E60,extended,00000004
+
+[Zeltrax]
+patch=1,EE,70606E60,extended,00000008
+
+[Mine Dropper]
+patch=1,EE,70606E60,extended,00000010
+
+[Razor Worm]
+patch=1,EE,70606E60,extended,00000020
+
+[All Mesogog's Army]
+patch=1,EE,70606E60,extended,0000003F
+
+[Win Mission 24]
+patch=1,EE,70606E65,extended,00000002
+
+[Win Mission 12]
+patch=1,EE,70606E65,extended,00000004
+
+[Win Mission 23]
+patch=1,EE,70606E65,extended,00000008
+
+[Win Any Power Game With Red Tyranno Zord]
+patch=1,EE,70606E65,extended,00000010
+
+[Win Any Power Game With Yellow Ptera Zord]
+patch=1,EE,70606E65,extended,00000020
+
+[Win Any Power Game with Blue Tricera Zord]
+patch=1,EE,70606E65,extended,00000040
+
+[Win Any Power Game With Green Parasaur Zord]
+patch=1,EE,70606E65,extended,00000080
+
+[Win Any Power Game With Cyan Dimetro Zord]
+patch=1,EE,70606E66,extended,00000001
+
+[Win Any Power Game With Purple Cephala Zord]
+patch=1,EE,70606E66,extended,00000002
+
+[Win Any Power Game With Red Hawk Zord]
+patch=1,EE,70606E66,extended,00000004
+
+[Win Any Power Game With Yellow Lion Zord]
+patch=1,EE,70606E66,extended,00000008
+
+[Win Any Power Game With Blue Dolphin Zord]
+patch=1,EE,70606E66,extended,00000010
+
+[Win Any Power Game With Crimson InsectaZord]
+patch=1,EE,70606E66,extended,00000020
+
+[Win Any Power Game With Navy BeetleZord]
+patch=1,EE,70606E66,extended,00000040
+
+[Win Any Power Game With Samurai Star MegaZord]
+patch=1,EE,70606E66,extended,00000080
+
+[All Movies]
+patch=1,EE,70606E65,extended,000000FE
+patch=1,EE,70606E66,extended,000000FF

@@ -1,0 +1,122 @@
+gametitle=Cabela's Dangerous Hunts (SLUS-20736)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0012BEBF
+
+[Infinite Hydration]
+patch=1,EE,204392B0,extended,00000000
+
+[Infinite Stamina]
+patch=1,EE,204393E0,extended,00000000
+
+[Infinite Nutrition]
+patch=1,EE,204394CC,extended,00000000
+
+[Infinite Condition]
+patch=1,EE,204396E4,extended,00000000
+
+[Infinite Health]
+patch=1,EE,20439550,extended,3C0142C8
+patch=1,EE,20439554,extended,AE61023C
+
+[Never Reload]
+patch=1,EE,20450094,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2044FE60,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,2044FE5C,extended,00651821
+
+[Stop Timer]
+patch=1,EE,006B8CD8,extended,00000000
+
+[AI Disable-Everything]
+patch=1,EE,006BAFA0,extended,00000001
+
+[AI Disable Sight]
+patch=1,EE,006BB270,extended,00000001
+
+[AI Disable Hear]
+patch=1,EE,006BB278,extended,00000001
+
+[AI Disable Smell]
+patch=1,EE,006BB280,extended,00000001
+
+[Automatic Reload Always Off]
+patch=1,EE,0060EAF0,extended,00000000
+
+[Automatic Reload Always On]
+patch=1,EE,0060EAF0,extended,00000001
+
+[Trophy Beacon Always Off]
+patch=1,EE,00611B88,extended,00000000
+
+[Trophy Beacon Always On]
+patch=1,EE,00611B88,extended,00000001
+
+[Camera's Always Off]
+patch=1,EE,00611BC0,extended,00000000
+
+[Camera's Always On]
+patch=1,EE,00611BC0,extended,0000001F
+
+[Vibration Always Off]
+patch=1,EE,0069D680,extended,00000000
+
+[Vibration Always On]
+patch=1,EE,0069D680,extended,00000001
+
+[Invert Axis Always Off]
+patch=1,EE,0069D681,extended,00000000
+
+[Invert Axis Always On]
+patch=1,EE,0069D681,extended,00000001
+
+[Auto Claim Trophy Always Off]
+patch=1,EE,0069E580,extended,00000000
+
+[Auto Claim Trophy Always On]
+patch=1,EE,0069E580,extended,00000001
+
+[Infinite Credits]
+patch=1,EE,1069D29C,extended,0000FFFF
+
+[Max Credits]
+patch=1,EE,2069D29C,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease Credits]
+patch=1,EE,20493D2C,extended,00000000
+
+[Buying Items Increases Credits]
+patch=1,EE,20493D28,extended,00641821
+
+[Unlock All Charters]
+patch=1,EE,206B2054,extended,00000000
+
+[Infinite Creation Points]
+patch=1,EE,2069D2AC,extended,000003E7
+
+[Dont Decrease Creation Points When Used]
+patch=1,EE,2041C5EC,extended,00000000
+
+[Gain Creation Points When Used]
+patch=1,EE,2041C5E8,extended,00641821
+
+[Max Shooting]
+patch=1,EE,2069D248,extended,42C80000
+
+[Max Strength]
+patch=1,EE,2069D254,extended,42C80000
+
+[Max Stealth]
+patch=1,EE,2069D260,extended,42C80000
+
+[Max Resilence]
+patch=1,EE,2069D26C,extended,42C80000
+
+[Max Tracking]
+patch=1,EE,2069D278,extended,42C80000

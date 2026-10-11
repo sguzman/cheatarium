@@ -1,0 +1,263 @@
+gametitle=Onimusha-Warlords (SLUS-20018)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901108DC,extended,0C046CA2
+
+[Max Enemies Killed]
+patch=1,EE,10287E74,extended,000003E7
+
+[Max Health]
+patch=1,EE,1028859E,extended,000000FF
+
+[Infinite Health]
+patch=1,EE,102885A0,extended,000000FF
+
+[Super Low Time]
+patch=1,EE,202876B4,extended,00000000
+
+[Max Magic]
+patch=1,EE,102876BE,extended,000000FF
+
+[Infinite Lightning Magic]
+patch=1,EE,10287E6E,extended,00000080
+
+[Infinite Fire Magic]
+patch=1,EE,10287E70,extended,00000080
+
+[Infinite Wind Magic]
+patch=1,EE,10287E72,extended,00000080
+
+[Max Enhancement Points]
+patch=1,EE,10287CB4,extended,0000270F
+
+[Max Injected Souls]
+patch=1,EE,10287CB8,extended,0000270F
+
+[Easy Pass-Oni Spirit]
+patch=1,EE,1028722A,extended,00000FFF
+
+[1-Hit Death (Last Boss)]
+patch=1,EE,D0B67AF0,extended,00002EE0
+patch=1,EE,10B67AF0,extended,00000000
+
+[Normal Sword]
+patch=1,EE,10287CDC,extended,00006310
+
+[Bishamon Sword]
+patch=1,EE,10287CE0,extended,00006314
+
+[Thunder Orb]
+patch=1,EE,10287CE8,extended,00006311
+
+[Fire Orb]
+patch=1,EE,10287CEC,extended,00006312
+
+[Wind Orb]
+patch=1,EE,10287CF0,extended,00006313
+
+[Normal Armor]
+patch=1,EE,10287CF4,extended,0000631B
+
+[Holy Armor]
+patch=1,EE,10287CF8,extended,0000631C
+
+[Great Armor]
+patch=1,EE,10287CFC,extended,0000631D
+
+[Bow]
+patch=1,EE,10287D00,extended,00006315
+
+[Normal Arrows]
+patch=1,EE,10287D04,extended,00006317
+
+[Fire Arrows]
+patch=1,EE,10287D08,extended,00006318
+
+[Matchlock]
+patch=1,EE,10287D0C,extended,00006316
+
+[Bullets]
+patch=1,EE,10287D10,extended,00006319
+
+[Burst Bullets]
+patch=1,EE,10287D14,extended,0000631A
+
+[Kunai]
+patch=1,EE,10287D18,extended,0000631E
+
+[Knife]
+patch=1,EE,10287D1C,extended,0000631F
+
+[Sacred Knife]
+patch=1,EE,10287D20,extended,00006320
+
+[Herb]
+patch=1,EE,10287D24,extended,00006301
+
+[Medicine]
+patch=1,EE,10287D28,extended,00006302
+
+[Power Jewel]
+patch=1,EE,10287D2C,extended,00006305
+
+[Magic Jewel]
+patch=1,EE,10287D30,extended,00006306
+
+[Soul Absorber]
+patch=1,EE,10287D34,extended,00006304
+
+[Talisman]
+patch=1,EE,10287D38,extended,00006303
+
+[Red Key]
+patch=1,EE,10287D3C,extended,00006330
+
+[Blue Key]
+patch=1,EE,10287D40,extended,00006331
+
+[Green Key]
+patch=1,EE,10287D44,extended,00006332
+
+[Shinobi Kit]
+patch=1,EE,10287D48,extended,00006333
+
+[Fluorite]
+patch=1,EE,10287D4C,extended,00006307
+
+[Bishamon O.]
+patch=1,EE,10287D50,extended,00006350
+
+[Vision Staff]
+patch=1,EE,10287D54,extended,0000634F
+
+[Great Arrows]
+patch=1,EE,10287D58,extended,0000634E
+
+[Decorated Arrows]
+patch=1,EE,10287D5C,extended,0000634D
+
+[Great Bow]
+patch=1,EE,10287D60,extended,0000634C
+
+[Silver Plate]
+patch=1,EE,10287D64,extended,0000634B
+
+[Gold Plate]
+patch=1,EE,10287D68,extended,0000634A
+
+[Gear]
+patch=1,EE,10287D6C,extended,00006349
+
+[L. Crest Piece]
+patch=1,EE,10287D70,extended,00006348
+
+[R. Crest Piece]
+patch=1,EE,10287D74,extended,00006347
+
+[Statue Head]
+patch=1,EE,10287D78,extended,00006346
+
+[Decorated Sword]
+patch=1,EE,10287D7C,extended,00006345
+
+[Evil Plate]
+patch=1,EE,10287D80,extended,00006344
+
+[Purifier Bell]
+patch=1,EE,10287D84,extended,00006343
+
+[Rosary Of Com.]
+patch=1,EE,10287D88,extended,00006342
+
+[Wood Ladder]
+patch=1,EE,10287D8C,extended,00006341
+
+[Rope Ladder]
+patch=1,EE,10287D90,extended,00006340
+
+[Nanamagari]
+patch=1,EE,20287DE0,extended,0000FF80
+
+[Und. Temple]
+patch=1,EE,20287DE4,extended,0000FF81
+
+[South Area]
+patch=1,EE,20287DE8,extended,0000FF82
+
+[Keep]
+patch=1,EE,20287DEC,extended,0000FF83
+
+[Keep Und.]
+patch=1,EE,20287DF0,extended,0000FF84
+
+[West Area]
+patch=1,EE,20287DF4,extended,0000FF85
+
+[East Area]
+patch=1,EE,20287DF8,extended,0000FF86
+
+[Dark Realm]
+patch=1,EE,20287DFC,extended,0000FF87
+
+[Yuki's Letter]
+patch=1,EE,20287E00,extended,0000FF90
+
+[Instructions]
+patch=1,EE,20287E04,extended,0000FF91
+
+[Sougen's Note]
+patch=1,EE,20287E08,extended,0000FF92
+
+[Journal #1]
+patch=1,EE,20287E0C,extended,0000FF93
+
+[Journal #2]
+patch=1,EE,20287E10,extended,0000FF94
+
+[Journal #3]
+patch=1,EE,20287E14,extended,0000FF95
+
+[Journal #4]
+patch=1,EE,20287E18,extended,0000FF96
+
+[Journal #5]
+patch=1,EE,20287E1C,extended,0000FF97
+
+[Journal #6]
+patch=1,EE,20287E20,extended,0000FF98
+
+[Blue Book]
+patch=1,EE,20287E24,extended,0000FF99
+
+[Red Book]
+patch=1,EE,20287E28,extended,0000FF9A
+
+[Green Book]
+patch=1,EE,20287E2C,extended,0000FF9B
+
+[Orange Book]
+patch=1,EE,20287E30,extended,0000FF9C
+
+[White Book]
+patch=1,EE,20287E34,extended,0000FF9D
+
+[Apocalypse #1]
+patch=1,EE,20287E38,extended,0000FF9E
+
+[Apocalypse #2]
+patch=1,EE,20287E3C,extended,0000FF9F
+
+[Seiryu]
+patch=1,EE,20287E40,extended,0000FFA0
+
+[Suzaku]
+patch=1,EE,20287E44,extended,0000FFA1
+
+[Byakko]
+patch=1,EE,20287E48,extended,0000FFA2
+
+[Genbu]
+patch=1,EE,20287E4C,extended,0000FFA3

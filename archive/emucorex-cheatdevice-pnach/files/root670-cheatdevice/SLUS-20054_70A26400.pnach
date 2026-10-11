@@ -1,0 +1,89 @@
+gametitle=Ready 2 Rumble Boxing-Round 2 (SLUS-20054)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00197B7F
+
+[Infinite Health P1]
+patch=1,EE,101EE8A0,extended,00000064
+
+[25% Health P1]
+patch=1,EE,D01EE8A0,extended,00000064
+patch=1,EE,101EE8A0,extended,00000019
+
+[50% Health P1]
+patch=1,EE,D01EE8A0,extended,00000064
+patch=1,EE,101EE8A0,extended,00000032
+
+[75% Health P1]
+patch=1,EE,D01EE8A0,extended,00000064
+patch=1,EE,101EE8A0,extended,0000004B
+
+[1-Hit Death P1]
+patch=1,EE,D01EE8A0,extended,00000064
+patch=1,EE,101EE8A0,extended,00000001
+
+[No Health P1]
+patch=1,EE,101EE8A0,extended,00000000
+
+[Infinite Stamina P1]
+patch=1,EE,101EE8A4,extended,00000064
+
+[No Stamina P1]
+patch=1,EE,101EE8A4,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,101F1110,extended,00000064
+
+[25% Health P2]
+patch=1,EE,D01F1110,extended,00000064
+patch=1,EE,101F1132,extended,00000019
+
+[50% Health P2]
+patch=1,EE,D01F1110,extended,00000064
+patch=1,EE,101F1132,extended,00000032
+
+[75% Health P2]
+patch=1,EE,D01F1110,extended,00000064
+patch=1,EE,101F1132,extended,0000004B
+
+[1-Hit Death P2]
+patch=1,EE,D01F1110,extended,00000064
+patch=1,EE,101F1132,extended,00000001
+
+[No Health P2]
+patch=1,EE,101F1110,extended,00000000
+
+[Infinite Stamina P2]
+patch=1,EE,101F1114,extended,00000064
+
+[No Stamina P2]
+patch=1,EE,101F1114,extended,00000000
+
+[Have All Characters]
+patch=1,EE,401EBF0C,extended,000B0001
+patch=1,EE,00000003,extended,00000000
+
+[Start At Last Fight (Arcade Mode)]
+patch=1,EE,D02052D0,extended,00000000
+patch=1,EE,102052D0,extended,0000000B
+
+[Infinite Money]
+patch=1,EE,101D8BD8,extended,0000FFFF
+
+[Max Strength]
+patch=1,EE,101D8BDE,extended,0000447A
+
+[Max Stamina]
+patch=1,EE,101D8BE2,extended,0000447A
+
+[Max Endurance]
+patch=1,EE,101D8BE6,extended,0000447A
+
+[Max Dexterity]
+patch=1,EE,101D8BEA,extended,0000447A
+
+[Max Experience]
+patch=1,EE,101D8BEE,extended,0000447A

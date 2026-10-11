@@ -1,0 +1,220 @@
+gametitle=Cabela's Deer Hunt 2005 Season (SLUS-21011)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012BB3C,extended,0C041210
+
+[Infinite Nutrition]
+patch=1,EE,2046C9B0,extended,00000000
+
+[Infinite Condition]
+patch=1,EE,2046CA94,extended,00000000
+
+[Infinite Hydration]
+patch=1,EE,2046CC90,extended,00000000
+
+[Infinite Stamina]
+patch=1,EE,2046CE50,extended,00000000
+
+[Never Reload]
+patch=1,EE,2048A648,extended,00000000
+
+[Buying Items Doesnt Decrease Money]
+patch=1,EE,2050DF48,extended,00000000
+
+[Buying Items Increases Money]
+patch=1,EE,2050DF40,extended,00641821
+
+[View Gear To Unlock Them]
+patch=1,EE,2050B7CC,extended,24030000
+patch=1,EE,2050B7DC,extended,AE630484
+
+[View Contests To Unlock Them]
+patch=1,EE,200C0220,extended,24110001
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,A0D101BC
+patch=1,EE,20518A5C,extended,0C030088
+
+[View Missions To Unlock Them]
+patch=1,EE,200C0230,extended,24100001
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,A05001AA
+patch=1,EE,20517A1C,extended,0C03008C
+
+[View Locations To Unlock Them]
+patch=1,EE,205156F8,extended,24030001
+patch=1,EE,205156FC,extended,A04301C6
+
+[Infinite Money]
+patch=1,EE,106584F8,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,206584F8,extended,05F5E0FF
+
+[Widescreen Mode]
+patch=1,EE,206034D4,extended,00000023
+
+[Inverty Y Always Off]
+patch=1,EE,20643500,extended,00000000
+
+[Inverty Y Always On]
+patch=1,EE,20643500,extended,00000001
+
+[Trophy Beacon Always Off]
+patch=1,EE,20643510,extended,00000000
+
+[Trophy Beacon Always On]
+patch=1,EE,20643510,extended,00000001
+
+[Auto Claim Trophy Always Off]
+patch=1,EE,20643514,extended,00000000
+
+[Auto Claim Trophy Always On]
+patch=1,EE,20643514,extended,00000001
+
+[Vibration Always Off]
+patch=1,EE,20643518,extended,00000000
+
+[Vibration Always On]
+patch=1,EE,20643518,extended,00000001
+
+[Show Hud Always Off]
+patch=1,EE,2064351C,extended,00000000
+
+[Show Hud Always On]
+patch=1,EE,2064351C,extended,00000001
+
+[Bullet Camera Always Off]
+patch=1,EE,20643520,extended,00000000
+
+[Bullet Camera Always On]
+patch=1,EE,20643520,extended,00000001
+
+[Mission 1]
+patch=1,EE,00C5E64A,extended,00000001
+
+[Mission 2]
+patch=1,EE,00C5E64B,extended,00000001
+
+[Mission 3]
+patch=1,EE,00C5E64C,extended,00000001
+
+[Mission 4]
+patch=1,EE,00C5E64D,extended,00000001
+
+[Mission 5]
+patch=1,EE,00C5E64E,extended,00000001
+
+[Mission 6]
+patch=1,EE,00C5E64F,extended,00000001
+
+[Mission 7]
+patch=1,EE,00C5E650,extended,00000001
+
+[Mission 8]
+patch=1,EE,00C5E651,extended,00000001
+
+[Mission 9]
+patch=1,EE,00C5E652,extended,00000001
+
+[Mission 10]
+patch=1,EE,00C5E653,extended,00000001
+
+[Mission 11]
+patch=1,EE,00C5E654,extended,00000001
+
+[Mission 12]
+patch=1,EE,00C5E655,extended,00000001
+
+[Mission 13]
+patch=1,EE,00C5E656,extended,00000001
+
+[Mission 14]
+patch=1,EE,00C5E657,extended,00000001
+
+[Mission 15]
+patch=1,EE,00C5E658,extended,00000001
+
+[Mission 16]
+patch=1,EE,00C5E659,extended,00000001
+
+[Mission 17]
+patch=1,EE,00C5E65A,extended,00000001
+
+[Mission 18]
+patch=1,EE,00C5E65B,extended,00000001
+
+[All Missions]
+patch=1,EE,10C5E64A,extended,00000101
+patch=1,EE,40C5E64C,extended,00040001
+patch=1,EE,01010101,extended,00000000
+
+[Contest 1]
+patch=1,EE,00C5E65C,extended,00000001
+
+[Contest 2]
+patch=1,EE,00C5E65D,extended,00000001
+
+[Contest 3]
+patch=1,EE,00C5E65E,extended,00000001
+
+[Contest 4]
+patch=1,EE,00C5E65F,extended,00000001
+
+[Contest 5]
+patch=1,EE,00C5E660,extended,00000001
+
+[Contest 6]
+patch=1,EE,00C5E661,extended,00000001
+
+[Contest 7]
+patch=1,EE,00C5E662,extended,00000001
+
+[Contest 8]
+patch=1,EE,00C5E663,extended,00000001
+
+[Contest 9]
+patch=1,EE,00C5E664,extended,00000001
+
+[Contest 10]
+patch=1,EE,00C5E665,extended,00000001
+
+[All Contests]
+patch=1,EE,20C5E65C,extended,01010101
+patch=1,EE,20C5E660,extended,01010101
+patch=1,EE,10C5E664,extended,00000101
+
+[Montana]
+patch=1,EE,00C5E666,extended,00000001
+
+[New Mexico]
+patch=1,EE,00C5E667,extended,00000001
+
+[Colorado]
+patch=1,EE,00C5E668,extended,00000001
+
+[Oregon-]
+patch=1,EE,00C5E669,extended,00000001
+
+[British Columbia]
+patch=1,EE,00C5E66A,extended,00000001
+
+[Texas]
+patch=1,EE,00C5E66B,extended,00000001
+
+[Nebraska]
+patch=1,EE,00C5E66C,extended,00000001
+
+[Florida]
+patch=1,EE,00C5E66D,extended,00000001
+
+[Arizona]
+patch=1,EE,00C5E66E,extended,00000001
+
+[All Locations]
+patch=1,EE,10C5E666,extended,00000101
+patch=1,EE,20C5E668,extended,01010101
+patch=1,EE,10C5E66C,extended,00000101
+patch=1,EE,00C5E66E,extended,00000001

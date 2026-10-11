@@ -1,0 +1,507 @@
+gametitle=Need For Speed-Most Wanted-Black Edition (SLUS-21351)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90494824,extended,0C1298E3
+
+[Infinite Cash]
+patch=1,EE,10AAFF10,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,20AAFF10,extended,05F5E0FF
+
+[Have All Blacklist Completed]
+patch=1,EE,00AAFF0C,extended,00000000
+
+[Max Bounty]
+patch=1,EE,20AB8F10,extended,05F5E0FF
+
+[Gain $1000000 Per Race]
+patch=1,EE,202D7374,extended,3C03000F
+patch=1,EE,202D7378,extended,34634240
+
+[Gain $500000 Per Race]
+patch=1,EE,202D7374,extended,3C030007
+patch=1,EE,202D7378,extended,3463A120
+
+[Gain $100000 Per Race]
+patch=1,EE,202D7374,extended,3C030001
+patch=1,EE,202D7378,extended,346386A0
+
+[Buying Cars Doesnt Decrease Cash]
+patch=1,EE,2026DC64,extended,00000000
+
+[Buying Cars Increases Cash]
+patch=1,EE,2026DC54,extended,00651021
+
+[Infinite NOS Usage]
+patch=1,EE,2036F0DC,extended,00000000
+
+[Max Infinite NOS]
+patch=1,EE,2037F60C,extended,3C013F80
+patch=1,EE,2037F610,extended,AC610010
+patch=1,EE,2036F108,extended,3C0142C8
+patch=1,EE,2036F10C,extended,AE010178
+patch=1,EE,1036F112,extended,00001000
+
+[Super NOS Acceleration]
+patch=1,EE,2037F61C,extended,3C014000
+patch=1,EE,2037F620,extended,AC610004
+
+[Ultra NOS Acceleration]
+patch=1,EE,2037F61C,extended,3C014100
+patch=1,EE,2037F620,extended,AC610004
+
+[Infinite Speedbreaker]
+patch=1,EE,203963D4,extended,00000000
+
+[All Races Only Have 1 Racer]
+patch=1,EE,202D7948,extended,24020001
+patch=1,EE,202D794C,extended,AC821C30
+
+[Have Game 100% Completed]
+patch=1,EE,200C0230,extended,00300825
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AC410004
+patch=1,EE,202B47FC,extended,0C03008C
+patch=1,EE,202B4800,extended,8C410004
+patch=1,EE,20270E1C,extended,24030004
+patch=1,EE,20270E20,extended,A0430008
+patch=1,EE,200C0240,extended,3421E0FF
+patch=1,EE,200C0244,extended,AC410000
+patch=1,EE,200C0248,extended,0809C778
+patch=1,EE,200C024C,extended,8C420000
+patch=1,EE,20271D90,extended,08030090
+patch=1,EE,20271D94,extended,3C0105F5
+patch=1,EE,200C0250,extended,8C83000C
+patch=1,EE,200C0254,extended,00651825
+patch=1,EE,200C0258,extended,0809D146
+patch=1,EE,200C025C,extended,AC83000C
+patch=1,EE,20274510,extended,08030094
+patch=1,EE,200C0260,extended,3C010064
+patch=1,EE,200C0264,extended,34210064
+patch=1,EE,200C0268,extended,AC810000
+patch=1,EE,200C026C,extended,AC810004
+patch=1,EE,200C0270,extended,AC810008
+patch=1,EE,200C0274,extended,0809D2BA
+patch=1,EE,200C0278,extended,AC81000C
+patch=1,EE,202727A0,extended,0C030098
+patch=1,EE,200C0280,extended,3C0305F5
+patch=1,EE,200C0284,extended,3463E0FF
+patch=1,EE,200C0288,extended,03E00008
+patch=1,EE,200C028C,extended,AE030CA0
+patch=1,EE,20272894,extended,0C0300A0
+patch=1,EE,20272898,extended,24050002
+
+[Access All Cars (Not Saveable)]
+patch=1,EE,20574624,extended,00000001
+
+[Challenge Series 1]
+patch=1,EE,70A81BA4,extended,00000004
+
+[Challenge Series 2]
+patch=1,EE,70A81E04,extended,00000004
+
+[Challenge Series 3]
+patch=1,EE,70A823E4,extended,00000004
+
+[Challenge Series 4]
+patch=1,EE,70A82434,extended,00000004
+
+[Challenge Series 5]
+patch=1,EE,70A82554,extended,00000004
+
+[Challenge Series 6]
+patch=1,EE,70A82464,extended,00000004
+
+[Challenge Series 7]
+patch=1,EE,70A82684,extended,00000004
+
+[Challenge Series 8]
+patch=1,EE,70A826E4,extended,00000004
+
+[Challenge Series 9]
+patch=1,EE,70A824F4,extended,00000004
+
+[Challenge Series 10]
+patch=1,EE,70A825C4,extended,00000004
+
+[Challenge Series 11]
+patch=1,EE,70A82444,extended,00000004
+
+[Challenge Series 12]
+patch=1,EE,70A82504,extended,00000004
+
+[Challenge Series 13]
+patch=1,EE,70A825B4,extended,00000004
+
+[Challenge Series 14]
+patch=1,EE,70A82754,extended,00000004
+
+[Challenge Series 15]
+patch=1,EE,70A827D4,extended,00000004
+
+[Challenge Series 16]
+patch=1,EE,70A826A4,extended,00000004
+
+[Challenge Series 17]
+patch=1,EE,70A82544,extended,00000004
+
+[Challenge Series 18]
+patch=1,EE,70A82724,extended,00000004
+
+[Challenge Series 19]
+patch=1,EE,70A82634,extended,00000004
+
+[Challenge Series 20]
+patch=1,EE,70A82654,extended,00000004
+
+[Challenge Series 21]
+patch=1,EE,70A825E4,extended,00000004
+
+[Challenge Series 22]
+patch=1,EE,70A82564,extended,00000004
+
+[Challenge Series 23]
+patch=1,EE,70A82774,extended,00000004
+
+[Challenge Series 24]
+patch=1,EE,70A82604,extended,00000004
+
+[Challenge Series 25]
+patch=1,EE,70A825F4,extended,00000004
+
+[Challenge Series 26]
+patch=1,EE,70A82674,extended,00000004
+
+[Challenge Series 27]
+patch=1,EE,70A826F4,extended,00000004
+
+[Challenge Series 28]
+patch=1,EE,70A82664,extended,00000004
+
+[Challenge Series 29]
+patch=1,EE,70A82404,extended,00000004
+
+[Challenge Series 30]
+patch=1,EE,70A826C4,extended,00000004
+
+[Challenge Series 31]
+patch=1,EE,70A82474,extended,00000004
+
+[Challenge Series 32]
+patch=1,EE,70A824B4,extended,00000004
+
+[Challenge Series 33]
+patch=1,EE,70A82514,extended,00000004
+
+[Challenge Series 34]
+patch=1,EE,70A824E4,extended,00000004
+
+[Challenge Series 35]
+patch=1,EE,70A82734,extended,00000004
+
+[Challenge Series 36]
+patch=1,EE,70A827C4,extended,00000004
+
+[Challenge Series 37]
+patch=1,EE,70A82624,extended,00000004
+
+[Challenge Series 38]
+patch=1,EE,70A827B4,extended,00000004
+
+[Challenge Series 39]
+patch=1,EE,70A82414,extended,00000004
+
+[Challenge Series 40]
+patch=1,EE,70A82424,extended,00000004
+
+[Challenge Series 41]
+patch=1,EE,70A82784,extended,00000004
+
+[Challenge Series 42]
+patch=1,EE,70A82794,extended,00000004
+
+[Challenge Series 43]
+patch=1,EE,70A826D4,extended,00000004
+
+[Challenge Series 44]
+patch=1,EE,70A824C4,extended,00000004
+
+[Challenge Series 45]
+patch=1,EE,70A82574,extended,00000004
+
+[Challenge Series 46]
+patch=1,EE,70A82484,extended,00000004
+
+[Challenge Series 47]
+patch=1,EE,70A827A4,extended,00000004
+
+[Challenge Series 48]
+patch=1,EE,70A82744,extended,00000004
+
+[Challenge Series 49]
+patch=1,EE,70A82494,extended,00000004
+
+[Challenge Series 50]
+patch=1,EE,70A823D4,extended,00000004
+
+[Challenge Series 51]
+patch=1,EE,70A82524,extended,00000004
+
+[Challenge Series 52]
+patch=1,EE,70A82694,extended,00000004
+
+[Challenge Series 53]
+patch=1,EE,70A82584,extended,00000004
+
+[Challenge Series 54]
+patch=1,EE,70A82764,extended,00000004
+
+[Challenge Series 55]
+patch=1,EE,70A82704,extended,00000004
+
+[Challenge Series 56]
+patch=1,EE,70A82644,extended,00000004
+
+[Challenge Series 57]
+patch=1,EE,70A823C4,extended,00000004
+
+[Challenge Series 58]
+patch=1,EE,70A823F4,extended,00000004
+
+[Challenge Series 59]
+patch=1,EE,70A825D4,extended,00000004
+
+[Challenge Series 60]
+patch=1,EE,70A82614,extended,00000004
+
+[Challenge Series 61]
+patch=1,EE,70A82454,extended,00000004
+
+[Challenge Series 62]
+patch=1,EE,70A825A4,extended,00000004
+
+[Challenge Series 63]
+patch=1,EE,70A82534,extended,00000004
+
+[Challenge Series 64]
+patch=1,EE,70A82714,extended,00000004
+
+[Challenge Series 65]
+patch=1,EE,70A824A4,extended,00000004
+
+[Challenge Series 66]
+patch=1,EE,70A82594,extended,00000004
+
+[Challenge Series 67]
+patch=1,EE,70A826B4,extended,00000004
+
+[Challenge Series 68]
+patch=1,EE,70A824D4,extended,00000004
+
+[Challenge Series 1]
+patch=1,EE,70A81BA4,extended,00000001
+
+[Challenge Series 2]
+patch=1,EE,70A81E04,extended,00000001
+
+[Challenge Series 3]
+patch=1,EE,70A823E4,extended,00000001
+
+[Challenge Series 4]
+patch=1,EE,70A82434,extended,00000001
+
+[Challenge Series 5]
+patch=1,EE,70A82554,extended,00000001
+
+[Challenge Series 6]
+patch=1,EE,70A82464,extended,00000001
+
+[Challenge Series 7]
+patch=1,EE,70A82684,extended,00000001
+
+[Challenge Series 8]
+patch=1,EE,70A826E4,extended,00000001
+
+[Challenge Series 9]
+patch=1,EE,70A824F4,extended,00000001
+
+[Challenge Series 10]
+patch=1,EE,70A825C4,extended,00000001
+
+[Challenge Series 11]
+patch=1,EE,70A82444,extended,00000001
+
+[Challenge Series 12]
+patch=1,EE,70A82504,extended,00000001
+
+[Challenge Series 13]
+patch=1,EE,70A825B4,extended,00000001
+
+[Challenge Series 14]
+patch=1,EE,70A82754,extended,00000001
+
+[Challenge Series 15]
+patch=1,EE,70A827D4,extended,00000001
+
+[Challenge Series 16]
+patch=1,EE,70A826A4,extended,00000001
+
+[Challenge Series 17]
+patch=1,EE,70A82544,extended,00000001
+
+[Challenge Series 18]
+patch=1,EE,70A82724,extended,00000001
+
+[Challenge Series 19]
+patch=1,EE,70A82634,extended,00000001
+
+[Challenge Series 20]
+patch=1,EE,70A82654,extended,00000001
+
+[Challenge Series 21]
+patch=1,EE,70A825E4,extended,00000001
+
+[Challenge Series 22]
+patch=1,EE,70A82564,extended,00000001
+
+[Challenge Series 23]
+patch=1,EE,70A82774,extended,00000001
+
+[Challenge Series 24]
+patch=1,EE,70A82604,extended,00000001
+
+[Challenge Series 25]
+patch=1,EE,70A825F4,extended,00000001
+
+[Challenge Series 26]
+patch=1,EE,70A82674,extended,00000001
+
+[Challenge Series 27]
+patch=1,EE,70A826F4,extended,00000001
+
+[Challenge Series 28]
+patch=1,EE,70A82664,extended,00000001
+
+[Challenge Series 29]
+patch=1,EE,70A82404,extended,00000001
+
+[Challenge Series 30]
+patch=1,EE,70A826C4,extended,00000001
+
+[Challenge Series 31]
+patch=1,EE,70A82474,extended,00000001
+
+[Challenge Series 32]
+patch=1,EE,70A824B4,extended,00000001
+
+[Challenge Series 33]
+patch=1,EE,70A82514,extended,00000001
+
+[Challenge Series 34]
+patch=1,EE,70A824E4,extended,00000001
+
+[Challenge Series 35]
+patch=1,EE,70A82734,extended,00000001
+
+[Challenge Series 36]
+patch=1,EE,70A827C4,extended,00000001
+
+[Challenge Series 37]
+patch=1,EE,70A82624,extended,00000001
+
+[Challenge Series 38]
+patch=1,EE,70A827B4,extended,00000001
+
+[Challenge Series 39]
+patch=1,EE,70A82414,extended,00000001
+
+[Challenge Series 40]
+patch=1,EE,70A82424,extended,00000001
+
+[Challenge Series 41]
+patch=1,EE,70A82784,extended,00000001
+
+[Challenge Series 42]
+patch=1,EE,70A82794,extended,00000001
+
+[Challenge Series 43]
+patch=1,EE,70A826D4,extended,00000001
+
+[Challenge Series 44]
+patch=1,EE,70A824C4,extended,00000001
+
+[Challenge Series 45]
+patch=1,EE,70A82574,extended,00000001
+
+[Challenge Series 46]
+patch=1,EE,70A82484,extended,00000001
+
+[Challenge Series 47]
+patch=1,EE,70A827A4,extended,00000001
+
+[Challenge Series 48]
+patch=1,EE,70A82744,extended,00000001
+
+[Challenge Series 49]
+patch=1,EE,70A82494,extended,00000001
+
+[Challenge Series 50]
+patch=1,EE,70A823D4,extended,00000001
+
+[Challenge Series 51]
+patch=1,EE,70A82524,extended,00000001
+
+[Challenge Series 52]
+patch=1,EE,70A82694,extended,00000001
+
+[Challenge Series 53]
+patch=1,EE,70A82584,extended,00000001
+
+[Challenge Series 54]
+patch=1,EE,70A82764,extended,00000001
+
+[Challenge Series 55]
+patch=1,EE,70A82704,extended,00000001
+
+[Challenge Series 56]
+patch=1,EE,70A82644,extended,00000001
+
+[Challenge Series 57]
+patch=1,EE,70A823C4,extended,00000001
+
+[Challenge Series 58]
+patch=1,EE,70A823F4,extended,00000001
+
+[Challenge Series 59]
+patch=1,EE,70A825D4,extended,00000001
+
+[Challenge Series 60]
+patch=1,EE,70A82614,extended,00000001
+
+[Challenge Series 61]
+patch=1,EE,70A82454,extended,00000001
+
+[Challenge Series 62]
+patch=1,EE,70A825A4,extended,00000001
+
+[Challenge Series 63]
+patch=1,EE,70A82534,extended,00000001
+
+[Challenge Series 64]
+patch=1,EE,70A82714,extended,00000001
+
+[Challenge Series 65]
+patch=1,EE,70A824A4,extended,00000001
+
+[Challenge Series 66]
+patch=1,EE,70A82594,extended,00000001
+
+[Challenge Series 67]
+patch=1,EE,70A826B4,extended,00000001
+
+[Challenge Series 68]
+patch=1,EE,70A824D4,extended,00000001

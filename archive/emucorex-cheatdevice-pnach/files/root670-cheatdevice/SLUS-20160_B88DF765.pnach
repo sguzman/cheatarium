@@ -1,0 +1,101 @@
+gametitle=Winback-Covert Operations (SLUS-20160)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9025442C,extended,0C09A4D4
+
+[Unlock All Characters (VS. Mode)]
+patch=1,EE,203CD10C,extended,FFFFFFFF
+
+[Infinite Health P1]
+patch=1,EE,002D3B19,extended,00000064
+
+[Never Reload-Machine Gun P1]
+patch=1,EE,002D3AFB,extended,0000001E
+
+[P1 Press {L1}+Up For Handgun Equipped]
+patch=1,EE,D042A3C2,extended,0000FBEF
+patch=1,EE,002D3B04,extended,00000000
+
+[P1 Press {L1}+Right For Machine Gun Equipped]
+patch=1,EE,D042A3C2,extended,0000FBDF
+patch=1,EE,002D3B04,extended,00000001
+
+[P1 Press {L1}+Down For Shotgun Equipped]
+patch=1,EE,D042A3C2,extended,0000FBBF
+patch=1,EE,002D3B04,extended,00000002
+
+[P1 Press {L1}+Left For Rocket Launcher Equipped]
+patch=1,EE,D042A3C2,extended,0000FB7F
+patch=1,EE,002D3B04,extended,00000003
+
+[P1 Press {L1}+{L3} For Handgun W/Silencer Equipped]
+patch=1,EE,D042A3C2,extended,0000FBFD
+patch=1,EE,002D3B04,extended,00000014
+
+[Never Reload-Rocket Launcher P1]
+patch=1,EE,002D3B0F,extended,00000004
+
+[Never Reload-Shotgun P1]
+patch=1,EE,002D3B11,extended,00000008
+
+[Never Reload-Handgun P1]
+patch=1,EE,002D3B15,extended,00000009
+
+[Infinite Health P2]
+patch=1,EE,002D6F49,extended,00000064
+
+[Never Reload-Machine Gun P2]
+patch=1,EE,002D6F2B,extended,0000001E
+
+[P2 Press {L1}+Up For Handgun Equipped]
+patch=1,EE,D042A4C2,extended,0000FBEF
+patch=1,EE,002D6F34,extended,00000000
+
+[P2 Press {L1}+Right For Machine Gun Equipped]
+patch=1,EE,D042A4C2,extended,0000FBDF
+patch=1,EE,002D6F34,extended,00000001
+
+[P2 Press {L1}+Down For Shotgun Equipped]
+patch=1,EE,D042A4C2,extended,0000FBBF
+patch=1,EE,002D6F34,extended,00000002
+
+[P2 Press {L1}+Left For Rocket Launcher Equipped]
+patch=1,EE,D042A4C2,extended,0000FB7F
+patch=1,EE,002D6F34,extended,00000003
+
+[P2 Press {L1}+{L3} For Handgun W/Silencer Equipped]
+patch=1,EE,D042A4C2,extended,0000FBFD
+patch=1,EE,002D6F34,extended,00000014
+
+[Never Reload-Rocket Launcher P2]
+patch=1,EE,002D6F3F,extended,00000004
+
+[Never Reload-Shotgun P2]
+patch=1,EE,002D6F41,extended,00000008
+
+[Never Reload-Handgun P2]
+patch=1,EE,002D6F45,extended,00000009
+
+[Infinite C4 P1]
+patch=1,EE,00347413,extended,00000063
+
+[Have Handgun W/Silencer P1]
+patch=1,EE,00347414,extended,00000063
+
+[Flashlight P1]
+patch=1,EE,00347415,extended,00000001
+
+[C4 Detector P1]
+patch=1,EE,00347418,extended,00000001
+
+[Key P1]
+patch=1,EE,00347419,extended,00000001
+
+[Card Key P1]
+patch=1,EE,0034741A,extended,00000001
+
+[Have Rocket Launcher P1]
+patch=1,EE,0034741B,extended,00000004

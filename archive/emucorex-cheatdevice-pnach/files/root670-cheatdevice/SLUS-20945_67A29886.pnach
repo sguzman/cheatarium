@@ -1,0 +1,310 @@
+gametitle=Destroy All Humans! (SLUS-20945)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90198A80,extended,0C06B3DD
+
+[Infinite Health]
+patch=1,EE,200C0880,extended,8C8100DC
+patch=1,EE,200C0884,extended,01E00008
+patch=1,EE,200C0888,extended,AC8100D8
+patch=1,EE,202390E0,extended,0C030220
+
+[Infinite Concentration Bar]
+patch=1,EE,202316BC,extended,3C013F80
+patch=1,EE,202316C0,extended,AE010008
+
+[Infinite Jetpack]
+patch=1,EE,202242E0,extended,00000000
+
+[Infinite Zap-O-Matic]
+patch=1,EE,2029FBD0,extended,00000000
+
+[Infinite Disintegrator Ray]
+patch=1,EE,20296AB4,extended,00000000
+
+[Infinite Ion Detonator]
+patch=1,EE,2029AE8C,extended,00000000
+
+[1-Hit Deaths (Enemies)]
+patch=1,EE,200C0890,extended,54C00001
+patch=1,EE,200C0894,extended,AE4000D8
+patch=1,EE,200C0898,extended,03E00008
+patch=1,EE,200C089C,extended,C64900D8
+patch=1,EE,202A9800,extended,0C030224
+
+[Infinite Death Ray]
+patch=1,EE,2028EF54,extended,00000000
+
+[Infinite Sonic Boom/Quantum Deconstructor]
+patch=1,EE,2029D990,extended,00000000
+
+[Activation Code (Must Be On For Below Codes)]
+patch=1,EE,200C0800,extended,3C01003E
+patch=1,EE,200C0804,extended,24243548
+patch=1,EE,200C0808,extended,3C05000C
+patch=1,EE,200C080C,extended,24060100
+patch=1,EE,200C0810,extended,8C810000
+patch=1,EE,200C0814,extended,10200009
+patch=1,EE,200C0818,extended,8CA30000
+patch=1,EE,200C081C,extended,8CA70004
+patch=1,EE,200C0820,extended,50230004
+patch=1,EE,200C0824,extended,AC870008
+patch=1,EE,200C0828,extended,24C6FFFF
+patch=1,EE,200C082C,extended,1CC0FFF8
+patch=1,EE,200C0830,extended,24A50008
+patch=1,EE,200C0834,extended,1000FFF4
+patch=1,EE,200C0838,extended,2484000C
+patch=1,EE,200C083C,extended,03E00008
+patch=1,EE,200C0840,extended,00000000
+patch=1,EE,20198ACC,extended,08030200
+
+[Max Town Crazies Killed]
+patch=1,EE,200C0000,extended,0892E145
+patch=1,EE,200C0004,extended,4CBEBC20
+
+[No Town Crazies Killed]
+patch=1,EE,200C0000,extended,0892E145
+patch=1,EE,200C0004,extended,00000000
+
+[Max Civilians Killed]
+patch=1,EE,200C0008,extended,66271AF6
+patch=1,EE,200C000C,extended,4CBEBC20
+
+[No Civilians Killed]
+patch=1,EE,200C0008,extended,66271AF6
+patch=1,EE,200C000C,extended,00000000
+
+[Max Mission Attemps]
+patch=1,EE,200C0010,extended,264022EA
+patch=1,EE,200C0014,extended,4CBEBC20
+
+[No Mission Attemps]
+patch=1,EE,200C0010,extended,264022EA
+patch=1,EE,200C0014,extended,00000000
+
+[Max Thoughts Scanned]
+patch=1,EE,200C0018,extended,6F1751C9
+patch=1,EE,200C001C,extended,4CBEBC20
+
+[No Thoughts Scanned]
+patch=1,EE,200C0018,extended,6F1751C9
+patch=1,EE,200C001C,extended,00000000
+
+[Max Total Humans Destroyed]
+patch=1,EE,200C0020,extended,76D34624
+patch=1,EE,200C0024,extended,4CBEBC20
+
+[No Total Humans Destroyed]
+patch=1,EE,200C0020,extended,76D34624
+patch=1,EE,200C0024,extended,00000000
+
+[Max Current DNA Collected]
+patch=1,EE,200C0028,extended,82C928F9
+patch=1,EE,200C002C,extended,4CBEBC20
+
+[No Current DNA Collected]
+patch=1,EE,200C0028,extended,82C928F9
+patch=1,EE,200C002C,extended,00000000
+
+[Max Crypto Clones Created]
+patch=1,EE,200C0030,extended,85A89092
+patch=1,EE,200C0034,extended,4CBEBC20
+
+[No Crypto Clones Created]
+patch=1,EE,200C0030,extended,85A89092
+patch=1,EE,200C0034,extended,00000000
+
+[Max Cops Capped]
+patch=1,EE,200C0038,extended,9977E8E2
+patch=1,EE,200C003C,extended,4CBEBC20
+
+[No Cops Capped]
+patch=1,EE,200C0038,extended,9977E8E2
+patch=1,EE,200C003C,extended,00000000
+
+[Max Cows Tipped]
+patch=1,EE,200C0040,extended,9B74A5B7
+patch=1,EE,200C0044,extended,4CBEBC20
+
+[No Cows Tipped]
+patch=1,EE,200C0040,extended,9B74A5B7
+patch=1,EE,200C0044,extended,00000000
+
+[Max Enemies Electrocuted]
+patch=1,EE,200C0048,extended,BE1ED001
+patch=1,EE,200C004C,extended,4CBEBC20
+
+[No Enemies Electrocuted]
+patch=1,EE,200C0048,extended,BE1ED001
+patch=1,EE,200C004C,extended,00000000
+
+[Max Soldiers Killed]
+patch=1,EE,200C0050,extended,A77D260C
+patch=1,EE,200C0054,extended,4CBEBC20
+
+[No Soldiers Killed]
+patch=1,EE,200C0050,extended,A77D260C
+patch=1,EE,200C0054,extended,00000000
+
+[Max Total Vehicles Destroyed]
+patch=1,EE,200C0058,extended,44AAA7DF
+patch=1,EE,200C005C,extended,4CBEBC20
+
+[No Total Vehicles Destroyed]
+patch=1,EE,200C0058,extended,44AAA7DF
+patch=1,EE,200C005C,extended,00000000
+
+[Max Army Vehicles Destroyed]
+patch=1,EE,200C0060,extended,928CA8EB
+patch=1,EE,200C0064,extended,4CBEBC20
+
+[No Army Vehicles Destroyed]
+patch=1,EE,200C0060,extended,928CA8EB
+patch=1,EE,200C0064,extended,00000000
+
+[Max Civilian Vehicles Destroyed]
+patch=1,EE,200C0068,extended,16F25F65
+patch=1,EE,200C006C,extended,4CBEBC20
+
+[No Civilian Vehicles Destroyed]
+patch=1,EE,200C0068,extended,16F25F65
+patch=1,EE,200C006C,extended,00000000
+
+[Max Majestic Vehicles Destroyed]
+patch=1,EE,200C0070,extended,D91DCE64
+patch=1,EE,200C0074,extended,4CBEBC20
+
+[No Majestic Vehicles Destroyed]
+patch=1,EE,200C0070,extended,D91DCE64
+patch=1,EE,200C0074,extended,00000000
+
+[Max Buildings Destroyed]
+patch=1,EE,200C0078,extended,D28D60DB
+patch=1,EE,200C007C,extended,4CBEBC20
+
+[No Buildings Destroyed]
+patch=1,EE,200C0078,extended,D28D60DB
+patch=1,EE,200C007C,extended,00000000
+
+[Max Enemies Incinerated]
+patch=1,EE,200C0080,extended,F3ED9304
+patch=1,EE,200C0084,extended,4CBEBC20
+
+[No Enemies Incinerated]
+patch=1,EE,200C0080,extended,F3ED9304
+patch=1,EE,200C0084,extended,00000000
+
+[Max Identities Assumed]
+patch=1,EE,200C0088,extended,49345989
+patch=1,EE,200C008C,extended,4CBEBC20
+
+[No Identities Assumed]
+patch=1,EE,200C0088,extended,49345989
+patch=1,EE,200C008C,extended,00000000
+
+[Max Scientists Killed]
+patch=1,EE,200C0090,extended,25496916
+patch=1,EE,200C0094,extended,4CBEBC20
+
+[No Scientists Killed]
+patch=1,EE,200C0090,extended,25496916
+patch=1,EE,200C0094,extended,00000000
+
+[Max Politicians Assassinated]
+patch=1,EE,200C0098,extended,220B73CD
+patch=1,EE,200C009C,extended,4CBEBC20
+
+[No Politicians Assassinated]
+patch=1,EE,200C0098,extended,220B73CD
+patch=1,EE,200C009C,extended,00000000
+
+[Max G-Men Erased]
+patch=1,EE,200C00A0,extended,ECEC4083
+patch=1,EE,200C00A4,extended,4CBEBC20
+
+[No G-Men Erased]
+patch=1,EE,200C00A0,extended,ECEC4083
+patch=1,EE,200C00A4,extended,00000000
+
+[Max Police Cars Destroyed]
+patch=1,EE,200C00A8,extended,E9A2AD71
+patch=1,EE,200C00AC,extended,4CBEBC20
+
+[No Police Cars Destroyed]
+patch=1,EE,200C00A8,extended,E9A2AD71
+patch=1,EE,200C00AC,extended,00000000
+
+[Max Robots Destroyed]
+patch=1,EE,200C00B0,extended,D306BFEB
+patch=1,EE,200C00B4,extended,4CBEBC20
+
+[No Robots Destroyed]
+patch=1,EE,200C00B0,extended,D306BFEB
+patch=1,EE,200C00B4,extended,00000000
+
+[Max Enemies Disintegrated]
+patch=1,EE,200C00B8,extended,8667DB5A
+patch=1,EE,200C00BC,extended,4CBEBC20
+
+[No Enemies Disintegrated]
+patch=1,EE,200C00B8,extended,8667DB5A
+patch=1,EE,200C00BC,extended,00000000
+
+[Max Enemies Ionized]
+patch=1,EE,200C00C0,extended,D6393274
+patch=1,EE,200C00C4,extended,4CBEBC20
+
+[No Enemies Ionized]
+patch=1,EE,200C00C0,extended,D6393274
+patch=1,EE,200C00C4,extended,00000000
+
+[Max Enemies Liquified]
+patch=1,EE,200C00C8,extended,F8520210
+patch=1,EE,200C00CC,extended,4CBEBC20
+
+[No Enemies Liquified]
+patch=1,EE,200C00C8,extended,F8520210
+patch=1,EE,200C00CC,extended,00000000
+
+[Max Enemies Deconstructed]
+patch=1,EE,200C00D0,extended,31C294B6
+patch=1,EE,200C00D4,extended,4CBEBC20
+
+[No Enemies Deconstructed]
+patch=1,EE,200C00D0,extended,31C294B6
+patch=1,EE,200C00D4,extended,00000000
+
+[Max Brains Extracted]
+patch=1,EE,200C00D8,extended,59A5D3C3
+patch=1,EE,200C00DC,extended,4CBEBC20
+
+[No Brains Extracted]
+patch=1,EE,200C00D8,extended,59A5D3C3
+patch=1,EE,200C00DC,extended,00000000
+
+[Max UFO Landings]
+patch=1,EE,200C00E0,extended,4C5E3A16
+patch=1,EE,200C00E4,extended,4CBEBC20
+
+[No UFO Landings]
+patch=1,EE,200C00E0,extended,4C5E3A16
+patch=1,EE,200C00E4,extended,00000000
+
+[Max Thoughts Implanted]
+patch=1,EE,200C00E8,extended,0AD55027
+patch=1,EE,200C00EC,extended,4CBEBC20
+
+[No Thoughts Implanted]
+patch=1,EE,200C00E8,extended,0AD55027
+patch=1,EE,200C00EC,extended,00000000
+
+[Max Side Mission Attempts]
+patch=1,EE,200C00F0,extended,C5445042
+patch=1,EE,200C00F4,extended,4CBEBC20
+
+[No Side Mission Attempts]
+patch=1,EE,200C00F0,extended,C5445042
+patch=1,EE,200C00F4,extended,00000000

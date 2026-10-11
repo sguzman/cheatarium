@@ -1,0 +1,99 @@
+gametitle=Reign Of Fire (SLUS-20556)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012911C,extended,0C047EE0
+
+[Unlock All Levels (Unlock Dragon)]
+patch=1,EE,20275AF0,extended,FFFFFFFF
+
+[Always Max Primary Ammo]
+patch=1,EE,201AF2E0,extended,24060063
+patch=1,EE,201AF2E8,extended,AC660328
+
+[Always Max Secondary Ammo]
+patch=1,EE,201AF358,extended,24060063
+patch=1,EE,201AF360,extended,AC66032C
+
+[Infinite Primary Ammo (On-Pickup)]
+patch=1,EE,201DC194,extended,00000000
+
+[Extra Primary Ammo (On-Pickup)]
+patch=1,EE,101DC18C,extended,00000001
+
+[Infinite Secondary Ammo (On-Pickup)]
+patch=1,EE,201DC514,extended,00000000
+
+[Extra Secondary Ammo (On-Pickup)]
+patch=1,EE,101DC510,extended,00000001
+
+[Infinite Health]
+patch=1,EE,201D6FB4,extended,3C014448
+patch=1,EE,201D6FB8,extended,03E00008
+patch=1,EE,201D6FBC,extended,AC81008C
+
+[Infinite Napalm Breath]
+patch=1,EE,201CFC48,extended,00000000
+
+[Infinite Fireball]
+patch=1,EE,201CFDB4,extended,00000000
+patch=1,EE,201CFF64,extended,00000000
+
+[Infinite Stamina]
+patch=1,EE,201D2B0C,extended,00000000
+patch=1,EE,201D462C,extended,00000000
+
+[Infinite Health]
+patch=1,EE,201CD210,extended,3C014516
+patch=1,EE,201CD214,extended,03E00008
+patch=1,EE,201CD218,extended,AC81008C
+
+[Basic Training]
+patch=1,EE,00275BFD,extended,00000004
+
+[Into The Breach]
+patch=1,EE,00275BFE,extended,00000004
+
+[Fallen Angels]
+patch=1,EE,00275BFF,extended,00000004
+
+[Firefight]
+patch=1,EE,00275C00,extended,00000004
+
+[Storm Front]
+patch=1,EE,00275C01,extended,00000004
+
+[Origin Of Species]
+patch=1,EE,00275C02,extended,00000004
+
+[London's Burning]
+patch=1,EE,00275C03,extended,00000004
+
+[Bullfight]
+patch=1,EE,00275C04,extended,00000004
+
+[Ashes To Ashes]
+patch=1,EE,00275C06,extended,00000004
+
+[Proving Grounds]
+patch=1,EE,00275C07,extended,00000004
+
+[The Tower]
+patch=1,EE,00275C08,extended,00000004
+
+[Terminus]
+patch=1,EE,00275C09,extended,00000004
+
+[Retribution]
+patch=1,EE,00275C0A,extended,00000004
+
+[Slipping The Net]
+patch=1,EE,00275C0B,extended,00000004
+
+[Bitter Harvest]
+patch=1,EE,00275C0C,extended,00000004
+
+[Apocalypse]
+patch=1,EE,00275C0D,extended,00000004

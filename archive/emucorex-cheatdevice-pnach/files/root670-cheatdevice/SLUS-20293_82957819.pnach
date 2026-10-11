@@ -1,0 +1,394 @@
+gametitle=Star Wars-Jedi Starfighter (SLUS-20293)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903EBD6C,extended,0C103FB0
+
+[Infinite Health]
+patch=1,EE,20339BF8,extended,3C0142C8
+patch=1,EE,20339C08,extended,AC610020
+
+[Infinite Shield]
+patch=1,EE,20339C34,extended,3C01437A
+patch=1,EE,20339C44,extended,AC610018
+
+[Infinite Weapon Energy]
+patch=1,EE,20339D00,extended,AC400028
+patch=1,EE,20339D88,extended,AC400028
+
+[Always Low Time]
+patch=1,EE,204591D4,extended,AEA000A8
+
+[Have All 2P Missions Completed]
+patch=1,EE,204DC704,extended,24020001
+
+[Have All Gold Medals]
+patch=1,EE,204DC734,extended,24020001
+
+[Have All Green Medals]
+patch=1,EE,204DC764,extended,24020001
+
+[Have All Blue Medals]
+patch=1,EE,204DC794,extended,24020001
+
+[2P Completed]
+patch=1,EE,009FF576,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF577,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF578,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF579,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF57A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF596,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF597,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF598,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF599,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF59A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF5D6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF5D7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF5D8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF5D9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF5DA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF5E6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF5E7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF5E8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF5E9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF5EA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF5B6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF5B7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF5B8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF5B9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF5BA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF566,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF567,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF568,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF569,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF56A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009D9DE6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009D9DE7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009D9DE8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009D9DE9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009D9DEA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF306,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF307,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF308,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF309,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF30A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FEF66,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FEF67,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FEF68,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FEF69,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FEF6A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FEF56,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FEF57,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FEF58,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FEF59,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FEF5A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF626,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF627,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF628,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF629,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF62A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF646,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF647,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF648,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF649,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF64A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF686,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF687,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF688,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF689,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF68A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF606,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF607,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF608,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF609,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF60A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF6B6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF6B7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF6B8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF6B9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF6BA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF696,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF697,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF698,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF699,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF69A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF6F6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF6F7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF6F8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF6F9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF6FA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF726,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF727,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF728,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF729,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF72A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF6E6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF6E7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF6E8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF6E9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF6EA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF7B6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF7B7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF7B8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF7B9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF7BA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF7C6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF7C7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF7C8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF7C9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF7CA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF7D6,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF7D7,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF7D8,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF7D9,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF7DA,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF806,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF807,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF808,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF809,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF80A,extended,00000003
+
+[2P Completed]
+patch=1,EE,009FF786,extended,00000001
+
+[Gold Medal]
+patch=1,EE,009FF787,extended,00000001
+
+[Green Medal]
+patch=1,EE,009FF788,extended,00000001
+
+[Blue Medal]
+patch=1,EE,009FF789,extended,00000001
+
+[Hard Completed]
+patch=1,EE,009FF78A,extended,00000003

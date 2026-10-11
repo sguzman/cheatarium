@@ -1,0 +1,275 @@
+gametitle=Backyard Wrestling 2-There Goes The Neighborhood (SLUS-21043)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90355098,extended,00832021
+
+[Always Low Match Time]
+patch=1,EE,2054B640,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,105501C8,extended,00001F40
+
+[75% Health P1]
+patch=1,EE,D05501C8,extended,00001F40
+patch=1,EE,105501C8,extended,00001770
+
+[50% Health P1]
+patch=1,EE,D05501C8,extended,00001F40
+patch=1,EE,105501C8,extended,00000FA0
+
+[25% Health P1]
+patch=1,EE,D05501C8,extended,00001F40
+patch=1,EE,105501C8,extended,000007D0
+
+[1-Hit Death P1]
+patch=1,EE,D05501C8,extended,00001F40
+patch=1,EE,105501C8,extended,00000001
+
+[No Health P1]
+patch=1,EE,105501C8,extended,00000000
+
+[Infinite Turbo P1]
+patch=1,EE,20550A90,extended,000007D0
+
+[No Turbo P1]
+patch=1,EE,20550A90,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,10552F18,extended,00001F40
+
+[75% Health P2]
+patch=1,EE,D0552F18,extended,00001F40
+patch=1,EE,10552F18,extended,00001770
+
+[50% Health P2]
+patch=1,EE,D0552F18,extended,00001F40
+patch=1,EE,10552F18,extended,00000FA0
+
+[25% Health P2]
+patch=1,EE,D0552F18,extended,00001F40
+patch=1,EE,10552F18,extended,000007D0
+
+[1-Hit Death P2]
+patch=1,EE,D0552F18,extended,00001F40
+patch=1,EE,10552F18,extended,00000001
+
+[No Health P2]
+patch=1,EE,10552F18,extended,00000000
+
+[Infinite Turbo P2]
+patch=1,EE,205537E0,extended,000007D0
+
+[No Turbo P2]
+patch=1,EE,205537E0,extended,00000000
+
+[Live From City Hall]
+patch=1,EE,2043E034,extended,00000001
+
+[Jumpy Burgers]
+patch=1,EE,2043E03C,extended,00000001
+
+[Eastern Champ]
+patch=1,EE,2043E044,extended,00000001
+
+[Al's Truck Stop]
+patch=1,EE,2043E04C,extended,00000001
+
+[Western Champ]
+patch=1,EE,2043E054,extended,00000001
+
+[Live From Mini Golf]
+patch=1,EE,2043E05C,extended,00000001
+
+[Northern Champ]
+patch=1,EE,2043E064,extended,00000001
+
+[Walk To The Carnival]
+patch=1,EE,2043E06C,extended,00000001
+
+[The Aftermath]
+patch=1,EE,2043E074,extended,00000001
+
+[Infinite Money]
+patch=1,EE,10539BB0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,20539BB0,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease Money]
+patch=1,EE,2013DF00,extended,00000000
+
+[Buying Items Increases Money]
+patch=1,EE,2013DEFC,extended,00451021
+
+[Top Hat]
+patch=1,EE,2052F730,extended,00000001
+
+[Cowboy Hat]
+patch=1,EE,2052F754,extended,00000001
+
+[Football Helmet]
+patch=1,EE,2052F778,extended,00000001
+
+[Do Rag]
+patch=1,EE,2052F79C,extended,00000001
+
+[Skater Helmet]
+patch=1,EE,2052F7C0,extended,00000001
+
+[Headband]
+patch=1,EE,2052F7E4,extended,00000001
+
+[Bowler]
+patch=1,EE,2052F808,extended,00000001
+
+[Visor]
+patch=1,EE,2052F82C,extended,00000001
+
+[Sun Hat]
+patch=1,EE,2052F850,extended,00000001
+
+[Beanie]
+patch=1,EE,2052F874,extended,00000001
+
+[Beret]
+patch=1,EE,2052F898,extended,00000001
+
+[Headphones]
+patch=1,EE,2052F8BC,extended,00000001
+
+[Hard Hat]
+patch=1,EE,2052F8E0,extended,00000001
+
+[Baseball Cap]
+patch=1,EE,2052F904,extended,00000001
+
+[Ear Muffs]
+patch=1,EE,2052F928,extended,00000001
+
+[Biker's Helmet]
+patch=1,EE,2052F94C,extended,00000001
+
+[All Head Items]
+patch=1,EE,4052F730,extended,000F0009
+patch=1,EE,00000001,extended,00000000
+
+[Sunset Shades]
+patch=1,EE,2052FDF0,extended,00000001
+
+[Round Glasses]
+patch=1,EE,2052FE14,extended,00000001
+
+[3-D Glasses]
+patch=1,EE,2052FE38,extended,00000001
+
+[Eye Patch]
+patch=1,EE,2052FE5C,extended,00000001
+
+[Painter's Mask]
+patch=1,EE,2052FE80,extended,00000001
+
+[Clown Nose]
+patch=1,EE,2052FEA4,extended,00000001
+
+[Corn Cob Pipe]
+patch=1,EE,2052FEC8,extended,00000001
+
+[Bandage]
+patch=1,EE,2052FEEC,extended,00000001
+
+[Big Ears]
+patch=1,EE,2052FF10,extended,00000001
+
+[Tiny Shades]
+patch=1,EE,2052FF34,extended,00000001
+
+[All Face Items]
+patch=1,EE,4052FDF0,extended,000A0009
+patch=1,EE,00000001,extended,00000000
+
+[Left Arm Band]
+patch=1,EE,205304B0,extended,00000001
+
+[Double Elbow Pads]
+patch=1,EE,205304D4,extended,00000001
+
+[Double Wrist Bands]
+patch=1,EE,205304F8,extended,00000001
+
+[Gauntlets]
+patch=1,EE,2053051C,extended,00000001
+
+[Biker Gloves]
+patch=1,EE,20530540,extended,00000001
+
+[Bandoleer]
+patch=1,EE,20530564,extended,00000001
+
+[Messenger Bag]
+patch=1,EE,20530588,extended,00000001
+
+[Backpack]
+patch=1,EE,205305AC,extended,00000001
+
+[Bow Tie]
+patch=1,EE,205305D0,extended,00000001
+
+[All Upper Body]
+patch=1,EE,405304B0,extended,00090009
+patch=1,EE,00000001,extended,00000000
+
+[Single Gun Belt]
+patch=1,EE,20530B70,extended,00000001
+
+[Double Knee Pads]
+patch=1,EE,20530B94,extended,00000001
+
+[Shin Guards]
+patch=1,EE,20530BB8,extended,00000001
+
+[Wallet Chain]
+patch=1,EE,20530BDC,extended,00000001
+
+[Tool Belt]
+patch=1,EE,20530C00,extended,00000001
+
+[Knee Brace]
+patch=1,EE,20530C24,extended,00000001
+
+[Spurs]
+patch=1,EE,20530C48,extended,00000001
+
+[Leg Garter]
+patch=1,EE,20530C6C,extended,00000001
+
+[Studded Belt]
+patch=1,EE,20530C90,extended,00000001
+
+[Snow Shoes]
+patch=1,EE,20530CB4,extended,00000001
+
+[All Lower Body]
+patch=1,EE,40530B70,extended,000A0009
+patch=1,EE,00000001,extended,00000000
+
+[Zandig]
+patch=1,EE,205313E0,extended,00000001
+
+[Ryuji Ito]
+patch=1,EE,20531404,extended,00000001
+
+[Sick Nick Mondo]
+patch=1,EE,20531428,extended,00000001
+
+[Vic Grimes]
+patch=1,EE,2053144C,extended,00000001
+
+[Sandman]
+patch=1,EE,20531470,extended,00000001
+
+[All Movies]
+patch=1,EE,405313E0,extended,00050009
+patch=1,EE,00000001,extended,00000000

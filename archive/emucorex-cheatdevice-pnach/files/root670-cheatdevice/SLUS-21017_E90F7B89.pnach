@@ -1,0 +1,55 @@
+gametitle=Showdown-Legends Of Wrestling (SLUS-21017)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901154B4,extended,0C048B0C
+
+[Infinite Health P1]
+patch=1,EE,20379DD0,extended,00000FFF
+
+[No Health P1]
+patch=1,EE,20379DD0,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,20379DD4,extended,00000FFF
+
+[No Health P2]
+patch=1,EE,20379DD4,extended,00000000
+
+[Infinite Health P3]
+patch=1,EE,20379DD8,extended,00000FFF
+
+[No Health P3]
+patch=1,EE,20379DD8,extended,00000000
+
+[Infinite Health P4]
+patch=1,EE,20379DDC,extended,00000FFF
+
+[No Health P4]
+patch=1,EE,20379DDC,extended,00000000
+
+[Infinite Health P5]
+patch=1,EE,20379DE0,extended,00000FFF
+
+[No Health P5]
+patch=1,EE,20379DE0,extended,00000000
+
+[Infinite Health P6]
+patch=1,EE,20379DE4,extended,00000FFF
+
+[No Health P6]
+patch=1,EE,20379DE4,extended,00000000
+
+[Infinite Health P7]
+patch=1,EE,20379DE8,extended,00000FFF
+
+[No Health P7]
+patch=1,EE,20379DE8,extended,00000000
+
+[Infinite Health P8]
+patch=1,EE,20379DEC,extended,00000FFF
+
+[No Health P8]
+patch=1,EE,20379DEC,extended,00000000

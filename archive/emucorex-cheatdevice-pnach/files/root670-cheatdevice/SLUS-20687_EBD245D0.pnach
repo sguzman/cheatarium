@@ -1,0 +1,569 @@
+gametitle=Road Kill (SLUS-20687)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0031574F
+
+[Infinite Salvage]
+patch=1,EE,104714BC,extended,0000FFFF
+
+[Max Salvage]
+patch=1,EE,204714BC,extended,05F5E0FF
+
+[Unlock All Vehicles]
+patch=1,EE,40597F9C,extended,00400024
+patch=1,EE,00000001,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,20442370,extended,3F800000
+
+[75% Health P1]
+patch=1,EE,D0442372,extended,00003F80
+patch=1,EE,20442370,extended,3F400000
+
+[50% Health P1]
+patch=1,EE,D0442372,extended,00003F80
+patch=1,EE,20442370,extended,3F000000
+
+[25% Health P1]
+patch=1,EE,D0442372,extended,00003F80
+patch=1,EE,20442370,extended,3E800000
+
+[1-Hit Death P1]
+patch=1,EE,D0442372,extended,00003F80
+patch=1,EE,20442370,extended,3C23D70A
+
+[No Health P1]
+patch=1,EE,20442370,extended,00000000
+
+[Infinite Turbo P1]
+patch=1,EE,20442418,extended,40000000
+
+[No Turbo P1]
+patch=1,EE,20442418,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20471340,extended,00000063
+
+[Shotgun]
+patch=1,EE,20471344,extended,00000063
+
+[Taser]
+patch=1,EE,20471348,extended,00000063
+
+[Sentry Gun]
+patch=1,EE,2047134C,extended,00000063
+
+[Twisting Missiles]
+patch=1,EE,20471350,extended,00000063
+
+[Cluster Missiles]
+patch=1,EE,20471354,extended,00000063
+
+[Normal Missiles]
+patch=1,EE,20471358,extended,00000063
+
+[Cam Missiles]
+patch=1,EE,2047135C,extended,00000063
+
+[Timed Mines]
+patch=1,EE,20471360,extended,00000063
+
+[Land Mines]
+patch=1,EE,20471364,extended,00000063
+
+[Cluster Mines]
+patch=1,EE,20471368,extended,00000063
+
+[Bombs]
+patch=1,EE,2047136C,extended,00000063
+
+[Flash Mines]
+patch=1,EE,20471370,extended,00000063
+
+[Detonated Mines]
+patch=1,EE,20471374,extended,00000063
+
+[Sniper Rifle]
+patch=1,EE,20471378,extended,00000063
+
+[Air Strike]
+patch=1,EE,2047137C,extended,00000063
+
+[Flamethrower]
+patch=1,EE,20471380,extended,00000063
+
+[All Weapons]
+patch=1,EE,40471340,extended,00120001
+patch=1,EE,00000063,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20471340,extended,00000000
+
+[Shotgun]
+patch=1,EE,20471344,extended,00000000
+
+[Taser]
+patch=1,EE,20471348,extended,00000000
+
+[Sentry Gun]
+patch=1,EE,2047134C,extended,00000000
+
+[Twisting Missiles]
+patch=1,EE,20471350,extended,00000000
+
+[Cluster Missiles]
+patch=1,EE,20471354,extended,00000000
+
+[Normal Missiles]
+patch=1,EE,20471358,extended,00000000
+
+[Cam Missiles]
+patch=1,EE,2047135C,extended,00000000
+
+[Timed Mines]
+patch=1,EE,20471360,extended,00000000
+
+[Land Mines]
+patch=1,EE,20471364,extended,00000000
+
+[Cluster Mines]
+patch=1,EE,20471368,extended,00000000
+
+[Bombs]
+patch=1,EE,2047136C,extended,00000000
+
+[Flash Mines]
+patch=1,EE,20471370,extended,00000000
+
+[Detonated Mines]
+patch=1,EE,20471374,extended,00000000
+
+[Sniper Rifle]
+patch=1,EE,20471378,extended,00000000
+
+[Air Strike]
+patch=1,EE,2047137C,extended,00000000
+
+[Flamethrower]
+patch=1,EE,20471380,extended,00000000
+
+[All Weapons]
+patch=1,EE,40471340,extended,00120001
+patch=1,EE,00000000,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,20445030,extended,3F800000
+
+[75% Health P2]
+patch=1,EE,D0445032,extended,00003F80
+patch=1,EE,20445030,extended,3F400000
+
+[50% Health P2]
+patch=1,EE,D0445032,extended,00003F80
+patch=1,EE,20445030,extended,3F000000
+
+[25% Health P2]
+patch=1,EE,D0445032,extended,00003F80
+patch=1,EE,20445030,extended,3E800000
+
+[1-Hit Death P2]
+patch=1,EE,D0445032,extended,00003F80
+patch=1,EE,20445030,extended,3C23D70A
+
+[No Health P2]
+patch=1,EE,20445030,extended,00000000
+
+[Infinite Turbo P2]
+patch=1,EE,204450D8,extended,40000000
+
+[No Turbo P2]
+patch=1,EE,204450D8,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20472CD4,extended,00000063
+
+[Shotgun]
+patch=1,EE,20472CD8,extended,00000063
+
+[Taser]
+patch=1,EE,20472CDC,extended,00000063
+
+[Sentry Gun]
+patch=1,EE,20472CE0,extended,00000063
+
+[Twisting Missiles]
+patch=1,EE,20472CE4,extended,00000063
+
+[Cluster Missiles]
+patch=1,EE,20472CE8,extended,00000063
+
+[Normal Missiles]
+patch=1,EE,20472CEC,extended,00000063
+
+[Cam Missiles]
+patch=1,EE,20472CF0,extended,00000063
+
+[Timed Mines]
+patch=1,EE,20472CF4,extended,00000063
+
+[Land Mines]
+patch=1,EE,20472CF8,extended,00000063
+
+[Cluster Mines]
+patch=1,EE,20472CFC,extended,00000063
+
+[Bombs]
+patch=1,EE,20472D00,extended,00000063
+
+[Flash Mines]
+patch=1,EE,20472D04,extended,00000063
+
+[Detonated Mines]
+patch=1,EE,20472D08,extended,00000063
+
+[Sniper Rifle]
+patch=1,EE,20472D0C,extended,00000063
+
+[Air Strike]
+patch=1,EE,20472D10,extended,00000063
+
+[Flamethrower]
+patch=1,EE,20472D14,extended,00000063
+
+[All Weapons]
+patch=1,EE,40472CD4,extended,00120001
+patch=1,EE,00000063,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20472CD4,extended,00000000
+
+[Shotgun]
+patch=1,EE,20472CD8,extended,00000000
+
+[Taser]
+patch=1,EE,20472CDC,extended,00000000
+
+[Sentry Gun]
+patch=1,EE,20472CE0,extended,00000000
+
+[Twisting Missiles]
+patch=1,EE,20472CE4,extended,00000000
+
+[Cluster Missiles]
+patch=1,EE,20472CE8,extended,00000000
+
+[Normal Missiles]
+patch=1,EE,20472CEC,extended,00000000
+
+[Cam Missiles]
+patch=1,EE,20472CF0,extended,00000000
+
+[Timed Mines]
+patch=1,EE,20472CF4,extended,00000000
+
+[Land Mines]
+patch=1,EE,20472CF8,extended,00000000
+
+[Cluster Mines]
+patch=1,EE,20472CFC,extended,00000000
+
+[Bombs]
+patch=1,EE,20472D00,extended,00000000
+
+[Flash Mines]
+patch=1,EE,20472D04,extended,00000000
+
+[Detonated Mines]
+patch=1,EE,20472D08,extended,00000000
+
+[Sniper Rifle]
+patch=1,EE,20472D0C,extended,00000000
+
+[Air Strike]
+patch=1,EE,20472D10,extended,00000000
+
+[Flamethrower]
+patch=1,EE,20472D14,extended,00000000
+
+[All Weapons]
+patch=1,EE,40472CD4,extended,00120001
+patch=1,EE,00000000,extended,00000000
+
+[Infinite Health P3]
+patch=1,EE,20447CF0,extended,3F800000
+
+[75% Health P3]
+patch=1,EE,D0447CF2,extended,00003F80
+patch=1,EE,20447CF0,extended,3F400000
+
+[50% Health P3]
+patch=1,EE,D0447CF2,extended,00003F80
+patch=1,EE,20447CF0,extended,3F000000
+
+[25% Health P3]
+patch=1,EE,D0447CF2,extended,00003F80
+patch=1,EE,20447CF0,extended,3E800000
+
+[1-Hit Death P3]
+patch=1,EE,D0447CF2,extended,00003F80
+patch=1,EE,20447CF0,extended,3C23D70A
+
+[No Health P3]
+patch=1,EE,20447CF0,extended,00000000
+
+[Infinite Turbo P3]
+patch=1,EE,20447D98,extended,40000000
+
+[No Turbo P3]
+patch=1,EE,20447D98,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20474668,extended,00000063
+
+[Shotgun]
+patch=1,EE,2047466C,extended,00000063
+
+[Taser]
+patch=1,EE,20474670,extended,00000063
+
+[Sentry Gun]
+patch=1,EE,20474674,extended,00000063
+
+[Twisting Missiles]
+patch=1,EE,20474678,extended,00000063
+
+[Cluster Missiles]
+patch=1,EE,2047467C,extended,00000063
+
+[Normal Missiles]
+patch=1,EE,20474680,extended,00000063
+
+[Cam Missiles]
+patch=1,EE,20474684,extended,00000063
+
+[Timed Mines]
+patch=1,EE,20474688,extended,00000063
+
+[Land Mines]
+patch=1,EE,2047468C,extended,00000063
+
+[Cluster Mines]
+patch=1,EE,20474690,extended,00000063
+
+[Bombs]
+patch=1,EE,20474694,extended,00000063
+
+[Flash Mines]
+patch=1,EE,20474698,extended,00000063
+
+[Detonated Mines]
+patch=1,EE,2047469C,extended,00000063
+
+[Sniper Rifle]
+patch=1,EE,204746A0,extended,00000063
+
+[Air Strike]
+patch=1,EE,204746A4,extended,00000063
+
+[Flamethrower]
+patch=1,EE,204746A8,extended,00000063
+
+[All Weapons]
+patch=1,EE,40474668,extended,00120001
+patch=1,EE,00000063,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20474668,extended,00000000
+
+[Shotgun]
+patch=1,EE,2047466C,extended,00000000
+
+[Taser]
+patch=1,EE,20474670,extended,00000000
+
+[Sentry Gun]
+patch=1,EE,20474674,extended,00000000
+
+[Twisting Missiles]
+patch=1,EE,20474678,extended,00000000
+
+[Cluster Missiles]
+patch=1,EE,2047467C,extended,00000000
+
+[Normal Missiles]
+patch=1,EE,20474680,extended,00000000
+
+[Cam Missiles]
+patch=1,EE,20474684,extended,00000000
+
+[Timed Mines]
+patch=1,EE,20474688,extended,00000000
+
+[Land Mines]
+patch=1,EE,2047468C,extended,00000000
+
+[Cluster Mines]
+patch=1,EE,20474690,extended,00000000
+
+[Bombs]
+patch=1,EE,20474694,extended,00000000
+
+[Flash Mines]
+patch=1,EE,20474698,extended,00000000
+
+[Detonated Mines]
+patch=1,EE,2047469C,extended,00000000
+
+[Sniper Rifle]
+patch=1,EE,204746A0,extended,00000000
+
+[Air Strike]
+patch=1,EE,204746A4,extended,00000000
+
+[Flamethrower]
+patch=1,EE,204746A8,extended,00000000
+
+[All Weapons]
+patch=1,EE,40474668,extended,00120001
+patch=1,EE,00000000,extended,00000000
+
+[Infinite Health P4]
+patch=1,EE,2044A9B0,extended,3F800000
+
+[75% Health P4]
+patch=1,EE,D044A9B2,extended,00003F80
+patch=1,EE,2044A9B0,extended,3F400000
+
+[50% Health P4]
+patch=1,EE,D044A9B2,extended,00003F80
+patch=1,EE,2044A9B0,extended,3F000000
+
+[25% Health P4]
+patch=1,EE,D044A9B2,extended,00003F80
+patch=1,EE,2044A9B0,extended,3E800000
+
+[1-Hit Death P4]
+patch=1,EE,D044A9B2,extended,00003F80
+patch=1,EE,2044A9B0,extended,3C23D70A
+
+[No Health P4]
+patch=1,EE,2044A9B0,extended,00000000
+
+[Infinite Turbo P4]
+patch=1,EE,2044AA58,extended,40000000
+
+[No Turbo P4]
+patch=1,EE,2044AA58,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20475FFC,extended,00000063
+
+[Shotgun]
+patch=1,EE,20476000,extended,00000063
+
+[Taser]
+patch=1,EE,20476004,extended,00000063
+
+[Sentry Gun]
+patch=1,EE,20476008,extended,00000063
+
+[Twisting Missiles]
+patch=1,EE,2047600C,extended,00000063
+
+[Cluster Missiles]
+patch=1,EE,20476010,extended,00000063
+
+[Normal Missiles]
+patch=1,EE,20476014,extended,00000063
+
+[Cam Missiles]
+patch=1,EE,20476018,extended,00000063
+
+[Timed Mines]
+patch=1,EE,2047601C,extended,00000063
+
+[Land Mines]
+patch=1,EE,20476020,extended,00000063
+
+[Cluster Mines]
+patch=1,EE,20476024,extended,00000063
+
+[Bombs]
+patch=1,EE,20476028,extended,00000063
+
+[Flash Mines]
+patch=1,EE,2047602C,extended,00000063
+
+[Detonated Mines]
+patch=1,EE,20476030,extended,00000063
+
+[Sniper Rifle]
+patch=1,EE,20476034,extended,00000063
+
+[Air Strike]
+patch=1,EE,20476038,extended,00000063
+
+[Flamethrower]
+patch=1,EE,2047603C,extended,00000063
+
+[All Weapons]
+patch=1,EE,40475FFC,extended,00120001
+patch=1,EE,00000063,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,20475FFC,extended,00000000
+
+[Shotgun]
+patch=1,EE,20476000,extended,00000000
+
+[Taser]
+patch=1,EE,20476004,extended,00000000
+
+[Sentry Gun]
+patch=1,EE,20476008,extended,00000000
+
+[Twisting Missiles]
+patch=1,EE,2047600C,extended,00000000
+
+[Cluster Missiles]
+patch=1,EE,20476010,extended,00000000
+
+[Normal Missiles]
+patch=1,EE,20476014,extended,00000000
+
+[Cam Missiles]
+patch=1,EE,20476018,extended,00000000
+
+[Timed Mines]
+patch=1,EE,2047601C,extended,00000000
+
+[Land Mines]
+patch=1,EE,20476020,extended,00000000
+
+[Cluster Mines]
+patch=1,EE,20476024,extended,00000000
+
+[Bombs]
+patch=1,EE,20476028,extended,00000000
+
+[Flash Mines]
+patch=1,EE,2047602C,extended,00000000
+
+[Detonated Mines]
+patch=1,EE,20476030,extended,00000000
+
+[Sniper Rifle]
+patch=1,EE,20476034,extended,00000000
+
+[Air Strike]
+patch=1,EE,20476038,extended,00000000
+
+[Flamethrower]
+patch=1,EE,2047603C,extended,00000000
+
+[All Weapons]
+patch=1,EE,40475FFC,extended,00120001
+patch=1,EE,00000000,extended,00000000

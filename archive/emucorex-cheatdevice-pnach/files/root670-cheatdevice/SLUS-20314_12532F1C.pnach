@@ -1,0 +1,100 @@
+gametitle=Time Splitters 2 (SLUS-20314)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9044D32C,extended,0C123E4B
+
+[Infinite Ammo]
+patch=1,EE,202DBCA0,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,202DBC9C,extended,00671821
+
+[Never Reload]
+patch=1,EE,202DA928,extended,00000000
+
+[Infinite Alternate Ammo]
+patch=1,EE,202DA908,extended,00000000
+
+[Extra Alternate Ammo]
+patch=1,EE,202DA900,extended,00471021
+
+[Unlock All Single Player Easy Levels]
+patch=1,EE,205CC268,extended,FFFFFFFF
+
+[Unlock All Single Player Normal Levels]
+patch=1,EE,205CC26C,extended,FFFFFFFF
+
+[Unlock All Single Player Hard Levels]
+patch=1,EE,205CC270,extended,FFFFFFFF
+
+[Unlock All Challenge Levels]
+patch=1,EE,105CC280,extended,0000FFFF
+
+[Unlock All Arcade Custom Game Types]
+patch=1,EE,105CC282,extended,0000FFFF
+patch=1,EE,105CC284,extended,0000FFFF
+
+[Unlock All Characters]
+patch=1,EE,105CC278,extended,0000FFFF
+patch=1,EE,205CC290,extended,FFFFFFFF
+patch=1,EE,205CC294,extended,FFFFFFFF
+patch=1,EE,105CC298,extended,0000FFFF
+patch=1,EE,105CC2A2,extended,0000FFFF
+patch=1,EE,205CC2A4,extended,FFFFFFFF
+
+[Unlock Everything]
+patch=1,EE,2059D6FC,extended,FFFFFFFF
+
+[Infinite Health]
+patch=1,EE,2023FCA4,extended,C44101A0
+patch=1,EE,2023FCAC,extended,E441019C
+
+[Infinite Armor]
+patch=1,EE,203382FC,extended,C4620014
+patch=1,EE,20338308,extended,E4620010
+
+[Unlock All Characters]
+patch=1,EE,105CC278,extended,0000FFFF
+patch=1,EE,205CC290,extended,FFFFFFFF
+patch=1,EE,205CC294,extended,FFFFFFFF
+patch=1,EE,105CC298,extended,0000FFFF
+patch=1,EE,105CC2A2,extended,0000FFFF
+patch=1,EE,205CC2A4,extended,FFFFFFFF
+
+[Big Head Size]
+patch=1,EE,20228220,extended,00000000
+
+[Small Head Size]
+patch=1,EE,2022828C,extended,00000000
+
+[Big Hands]
+patch=1,EE,202282F8,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,202DA9A8,extended,10000007
+
+[Paintball]
+patch=1,EE,20306670,extended,00000000
+patch=1,EE,20307AD4,extended,00000000
+
+[Fat Characters]
+patch=1,EE,20228830,extended,00000000
+
+[All Characters Cloaked]
+patch=1,EE,20323028,extended,00000000
+patch=1,EE,2032302C,extended,00000000
+
+[Slow Motion Deaths]
+patch=1,EE,202C681C,extended,00000000
+
+[Cardboard Characters]
+patch=1,EE,202281D4,extended,00000000
+
+[Rotating Heads]
+patch=1,EE,20228950,extended,00000000
+
+[Silly Hats]
+patch=1,EE,202C5470,extended,00000000

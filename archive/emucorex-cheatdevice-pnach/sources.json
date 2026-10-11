@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "xs1l3n7x-pcsx2-cheats-collection",
+      "name": "PCSX2 Cheats Collection",
+      "author": "xs1l3n7x",
+      "url": "https://github.com/xs1l3n7x/pcsx2_cheats_collection",
+      "notes": "PNACH formatting by xs1l3n7x; individual files credit their original code sources. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "complicatiion-pcsx2-europe-cheats-collection",
+      "name": "PCSX2 Europe Cheats Collection",
+      "author": "complicatiion",
+      "url": "https://github.com/complicatiion/pcsx2_europe_cheats_collection",
+      "notes": "PAL and language-specific PNACH variants. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "fuzzywuggzy-pcsx2-cheats",
+      "name": "FuzzyWuggzy PCSX2 Cheats",
+      "author": "FuzzyWuggzy and upstream code authors",
+      "url": "https://github.com/FuzzyWuggzy/pcsx2_cheats_collection",
+      "notes": "A curated CRC-only PNACH for The Adventures of Cookie & Cream. The catalog pins the author's exact commit and downloads from upstream because no redistribution license is declared."
+    },
+    {
+      "id": "paynssj4-pcsx2-cheats",
+      "name": "paynssj4 PCSX2 Cheats",
+      "author": "paynssj4 and upstream code authors",
+      "url": "https://github.com/paynssj4/pcsx2_cheats_collection",
+      "notes": "Curated Drakengard, Dragon Ball Z: Budokai 3 and Kingdom Hearts II Final Mix PNACH variants. Exact upstream commit URLs are used because no redistribution license is declared."
+    },
+    {
+      "id": "souvlaki42-pcsx2-cheats",
+      "name": "Souvlaki42 PCSX2 Cheats",
+      "author": "Souvlaki42 and the code authors named in each PNACH",
+      "url": "https://github.com/Souvlaki42/pcsx2_cheats_collection",
+      "notes": "Curated Xenosaga Episodes I-III PNACH files with per-block author credits. Exact upstream commit URLs are used because no redistribution license is declared."
+    },
+    {
+      "id": "nexxus-drako-pcsx2-cheats",
+      "name": "Nexxus-Drako PCSX2 Cheats Community Fork",
+      "author": "Nexxus-Drako and upstream code authors",
+      "url": "https://github.com/Nexxus-Drako/pcsx2_cheats_collection",
+      "notes": "Curated Let's Make A Soccer Team, Virtua Pro Football and Guitar Hero Encore variants. Exact upstream commit URLs are used because no redistribution license is declared."
+    },
+    {
+      "id": "ps2-widescreen-pnach-db",
+      "name": "PS2 Widescreen PNACH Database",
+      "author": "PS2-Widescreen community and original patch authors",
+      "url": "https://github.com/PS2-Widescreen/pnach-DB",
+      "notes": "Curated ready-to-use widescreen PNACH variants pinned to an exact upstream commit. Staging files are accepted only when a single serial filename and explicit ELF CRC identify the emulator build, syntax is supported, and the patch has meaningful novelty. Direct upstream URLs are used because no redistribution license is declared."
+    },
+    {
+      "id": "root670-cheatdevice-ps2",
+      "name": "Cheat Device PS2 Gameplay Codes",
+      "author": "root670, Cheat Device PS2 contributors and original code authors",
+      "url": "https://github.com/root670/CheatDevicePS2",
+      "notes": "GPL-3.0 gameplay codes converted reproducibly from the pinned CheatDatabase.txt source. Only exact NTSC-U title matches with one unambiguous serial and verified CRC mapping are included; near-duplicate packs are excluded by normalized patch-line comparison."
+    },
+    {
+      "id": "pcsx2-patches-crc-mapping",
+      "name": "PCSX2 Patches CRC Mapping",
+      "author": "PCSX2 team and patch contributors",
+      "url": "https://github.com/PCSX2/pcsx2_patches",
+      "notes": "Pinned serial-and-CRC filenames provide compatibility evidence for generated gameplay packs. A separately audited selection of user-facing widescreen, frame-rate, deinterlacing, presentation, control and gameplay options is linked directly to immutable upstream files; disabled or malformed files and normalized duplicates are excluded."
+    },
+    {
+      "id": "dieskaarj-ps2pnaches",
+      "name": "DieSkaarj PS2 PNACH Files",
+      "author": "DieSkaarj and original patch authors",
+      "url": "https://github.com/DieSkaarj/PS2Pnaches",
+      "notes": "Curated PAL widescreen PNACH files with serial and CRC verified against the pinned PCSX2 patch mapping. Direct immutable upstream URLs are used because no redistribution license is declared."
+    },
+    {
+      "id": "robotshateme-pcsx2-cheats",
+      "name": "robotshateme Gran Turismo 4 Spec II Tweaks",
+      "author": "robotshateme and original patch authors",
+      "url": "https://github.com/robotshateme/PCSX2-Cheats",
+      "notes": "Distinct single-purpose tweaks for the SCUS-97436 Spec II modded build. Each file has unique active patch content and uses an immutable upstream URL because no redistribution license is declared."
+    },
+    {
+      "id": "kimcs17-pnach-db",
+      "name": "kimcs17 PS2 Widescreen PNACH Database",
+      "author": "kimcs17 and original patch authors",
+      "url": "https://github.com/kimcs17/pnach-DB",
+      "notes": "Curated ready-to-use widescreen variants with independently verified serial and CRC mappings. A duplicate typo-CRC copy and files awaiting mastercodes are excluded."
+    },
+    {
+      "id": "cw-b-w-pcsx2-cheats",
+      "name": "CW-B-W PCSX2 Cheats",
+      "author": "CW-B-W and original code authors",
+      "url": "https://github.com/CW-B-W/pcsx2_cheats_collection",
+      "notes": "A curated The Baseball 2003 gameplay pack pinned to its exact source commit and identified by the source's serial and CRC filename."
+    },
+    {
+      "id": "windroid-emu-pcsx2oid-cheats",
+      "name": "WINDROID-EMU PCSX2OID Cheats",
+      "author": "WINDROID-EMU, GameHacking.org and named code authors",
+      "url": "https://github.com/WINDROID-EMU/PCSX2OID-CHEATS",
+      "notes": "Curated gameplay packs whose game titles are preserved from their leading source comments. Exact pinned upstream files are used without repackaging because no redistribution license is declared."
+    },
+    {
+      "id": "nangenx-pcsx2-cheats",
+      "name": "NangenX PCSX2 Cheats",
+      "author": "NangenX and original code authors",
+      "url": "https://github.com/NangenX/pcsx2_cheats_collection",
+      "notes": "A curated Ace Combat Zero Japanese-build gameplay pack with serial and CRC verified from both the source and the pinned PCSX2 patch index."
+    },
+    {
+      "id": "gabominated-pcsx2-enhancements",
+      "name": "Gabominated PCSX2 Enhancement Patches",
+      "author": "Gabominated and the patch authors named in each file",
+      "url": "https://github.com/Gabominated/PCSX2",
+      "notes": "Frame-rate, video-mode, presentation, debug and gameplay enhancements with serial-and-CRC filenames. Only content-distinct files use direct immutable upstream URLs."
+    },
+    {
+      "id": "saramagrean-nethersx2-cheats",
+      "name": "NetherSX2 Separated Enhancement Patches",
+      "author": "Saramagrean, PCSX2 contributors and original patch authors",
+      "url": "https://github.com/Saramagrean/NetherSX2-cheats",
+      "notes": "PCSX2-derived widescreen, no-interlacing and miscellaneous options separated for NetherSX2. CRC-only files require an unambiguous pre-batch serial mapping and at least 20 percent patch-line novelty; immutable upstream files are used directly."
+    },
+    {
+      "id": "shadowninja826-pcsx2-pnach-cheats",
+      "name": "PS2 Cheats PNACH Collection",
+      "author": "shadowninja826",
+      "url": "https://github.com/shadowninja826/pcsx2_pnach_cheats",
+      "notes": "Alternative serial and CRC variants are preserved and pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "theadmiester-pcsx2-cheats",
+      "name": "TheAdmiester PCSX2 Cheats",
+      "author": "TheAdmiester",
+      "url": "https://github.com/TheAdmiester/PCSX2-Cheats",
+      "notes": "Focused Gran Turismo 4, Gran Turismo 4 Online and Enthusia gameplay tweaks. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "scottadkin-gran-turismo-3-pal-pnach",
+      "name": "Gran Turismo 3 PAL PNACH",
+      "author": "scottadkin",
+      "url": "https://github.com/scottadkin/Gran-Turismo-3-PAL-pnach",
+      "notes": "Gran Turismo 3 money, power multiplier and AI behavior codes. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "xgamingdragon93x-pcsx2-ultimate-cheats",
+      "name": "PCSX2 Ultimate Cheats Collection",
+      "author": "xGamingDragon93x and original code authors",
+      "url": "https://github.com/xGamingDragon93x/PCSX2-Ultimative-Cheats-Collection-PNACH",
+      "notes": "Upstream distributes a RAR5 bundle. Individual PNACH files are mirrored for one-tap Android installation while retaining the original collection as the source."
+    },
+    {
+      "id": "aero-widescreen-pcsx2-cheats",
+      "name": "Aero PCSX2 Cheats and Patches",
+      "author": "Aero_",
+      "url": "https://github.com/AeroWidescreen/PCSX2-Cheats",
+      "notes": "MIT-licensed gameplay, controller, presentation and unlock patches for Gran Turismo, Burnout and Need for Speed releases. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "ike9000e-game-patches-or-codes",
+      "name": "GT4 Game Patches and Codes",
+      "author": "ike9000e",
+      "url": "https://github.com/ike9000e/game-patches-or-codes",
+      "notes": "Focused Gran Turismo 4 Online and Spec II credits, licenses, mileage, events and tyre-wear codes. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "eszuri-cheat-game-ps2",
+      "name": "CHEAT GAME PS2",
+      "author": "Eszuri and upstream code authors",
+      "url": "https://github.com/Eszuri/CHEAT_GAME_PS2",
+      "notes": "Additional PNACH variants with their original source retained. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "yukixxl-ps2-modding",
+      "name": "YukiXXL PS2 Modding Codes",
+      "author": "YukiXXL and upstream code authors",
+      "url": "https://github.com/YukiXXL/PS2-modding",
+      "notes": "Consolidated main PNACH files for Jak X, Ratchet & Clank, Syphon Filter, Tekken, God Hand and other games. The hundreds of separated one-code variants are intentionally excluded to keep the in-app catalog usable."
+    },
+    {
+      "id": "kya-dark-lineage-cheats",
+      "name": "Kya: Dark Lineage Cheats",
+      "author": "KyaDLFiles and upstream code authors",
+      "url": "https://github.com/KyaDLFiles/Kya_DL_cheats",
+      "notes": "Focused PCSX2 cheat files for Kya: Dark Lineage. Pinned copies are mirrored for catalog reliability."
+    },
+    {
+      "id": "batch006-peterdelta-pcsx2",
+      "name": "PeterDelta PCSX2 Enhancements",
+      "author": "PeterDelta and named patch authors",
+      "url": "https://github.com/PeterDelta/PCSX2",
+      "notes": "Strictly deduplicated enhancement variants pinned by batch 006."
+    },
+    {
+      "id": "batch006-peterdelta-pcsx2-patches",
+      "name": "PeterDelta PCSX2 Patch Contributions",
+      "author": "PeterDelta and named patch authors",
+      "url": "https://github.com/PeterDelta/pcsx2_patches",
+      "notes": "Author-focused PCSX2 patch contributions pinned by batch 006."
+    },
+    {
+      "id": "batch006-weed-sheet",
+      "name": "Sly Cooper Weed Sheet Mods",
+      "author": "zami3333 and named mod authors",
+      "url": "https://github.com/zzamizz/weed-sheet",
+      "notes": "Content-distinct Sly Cooper modifications pinned by batch 006."
+    },
+    {
+      "id": "batch006-gt3-ntsc",
+      "name": "Gran Turismo 3 NTSC Patches",
+      "author": "scottadkin and named patch authors",
+      "url": "https://github.com/scottadkin/Gran-Turismo-3-NTSC-Patches",
+      "notes": "NTSC-specific Gran Turismo 3 patches pinned by batch 006."
+    },
+    {
+      "id": "batch006-sly2-cutscene-skip",
+      "name": "Sly 2 Cutscene Skip",
+      "author": "andshrew",
+      "url": "https://github.com/andshrew/Sly2-Cutscene-Skip",
+      "notes": "Focused Sly 2 cutscene-skip variants pinned by batch 006."
+    },
+    {
+      "id": "batch006-rac",
+      "name": "Ratchet & Clank PNACH Patches",
+      "author": "Made-in-Slovakia contributors",
+      "url": "https://github.com/Made-in-Slovakia/rac",
+      "notes": "Ratchet & Clank patches pinned by batch 006."
+    },
+    {
+      "id": "batch006-karmas-pnach",
+      "name": "Karma's PNACH Patches",
+      "author": "karma12gaming",
+      "url": "https://github.com/karma12gaming/karmas_pnach",
+      "notes": "Content-distinct PNACH patches pinned by batch 006."
+    },
+    {
+      "id": "batch006-nethersx2-history",
+      "name": "NetherSX2 Historical Enhancement Archives",
+      "author": "Trixarian and PCSX2 patch contributors",
+      "url": "https://github.com/Trixarian/NetherSX2-patch",
+      "notes": "Strictly deduplicated historical widescreen and no-interlacing revisions mirrored by batch 006."
+    },
+    {
+      "id": "batch006-pcsx2-legacy-archives",
+      "name": "PCSX2 Legacy Enhancement Archives",
+      "author": "PCSX2 patch contributors and original patch authors",
+      "url": "https://github.com/PCSX2/pcsx2",
+      "notes": "Pinned legacy widescreen and no-interlacing archives converted into individually installable PNACH files by batch 006."
+    },
+    {
+      "id": "batch006-blacknroses",
+      "name": "BlackNRoses PCSX2 Patch Contributions",
+      "author": "BlackNRoses and named patch authors",
+      "url": "https://github.com/BlackNRoses/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-crasharki",
+      "name": "CRASHARKI PCSX2 Patch Contributions",
+      "author": "CRASHARKI and named patch authors",
+      "url": "https://github.com/CRASHARKI/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-drinkinggreentea",
+      "name": "DrinkingGreenTea PCSX2 Patch Contributions",
+      "author": "DrinkingGreenTea and named patch authors",
+      "url": "https://github.com/DrinkingGreenTea/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-heitof",
+      "name": "Heitof PCSX2 Patch Contributions",
+      "author": "Heitof and named patch authors",
+      "url": "https://github.com/Heitof/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-immersion95",
+      "name": "Immersion95 PCSX2 Patch Contributions",
+      "author": "Immersion95 and named patch authors",
+      "url": "https://github.com/Immersion95/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-j-mcfc",
+      "name": "J-McFc PCSX2 Patch Contributions",
+      "author": "J-McFc and named patch authors",
+      "url": "https://github.com/J-McFc/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-josh1billion",
+      "name": "Josh1billion PCSX2 Patch Contributions",
+      "author": "Josh1billion and named patch authors",
+      "url": "https://github.com/Josh1billion/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-kingbald",
+      "name": "Kingbald PCSX2 Patch Contributions",
+      "author": "Kingbald and named patch authors",
+      "url": "https://github.com/Kingbald/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-lammykat",
+      "name": "LammyKat PCSX2 Patch Contributions",
+      "author": "LammyKat and named patch authors",
+      "url": "https://github.com/LammyKat/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-mahim2000",
+      "name": "Mahim2000 PCSX2 Patch Contributions",
+      "author": "Mahim2000 and named patch authors",
+      "url": "https://github.com/Mahim2000/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-marcoestevez",
+      "name": "MarcoEstevez PCSX2 Patch Contributions",
+      "author": "MarcoEstevez and named patch authors",
+      "url": "https://github.com/MarcoEstevez/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-martyste",
+      "name": "Martyste PCSX2 Patch Contributions",
+      "author": "Martyste and named patch authors",
+      "url": "https://github.com/Martyste/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-nomnom17",
+      "name": "NomNom17 PCSX2 Patch Contributions",
+      "author": "NomNom17 and named patch authors",
+      "url": "https://github.com/NomNom17/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-player1041",
+      "name": "Player1041 PCSX2 Patch Contributions",
+      "author": "Player1041 and named patch authors",
+      "url": "https://github.com/Player1041/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-pliskindev",
+      "name": "PliskinDev PCSX2 Patch Contributions",
+      "author": "PliskinDev and named patch authors",
+      "url": "https://github.com/PliskinDev/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-r1c3r21",
+      "name": "R1C3R21 PCSX2 Patch Contributions",
+      "author": "R1C3R21 and named patch authors",
+      "url": "https://github.com/R1C3R21/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-silverkeeper",
+      "name": "SilverKeeper PCSX2 Patch Contributions",
+      "author": "SilverKeeper and named patch authors",
+      "url": "https://github.com/SilverKeeper/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-unstablezero",
+      "name": "UnstableZero PCSX2 Patch Contributions",
+      "author": "UnstableZero and named patch authors",
+      "url": "https://github.com/UnstableZero/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-wiinansa",
+      "name": "Wiinansa PCSX2 Patch Contributions",
+      "author": "Wiinansa and named patch authors",
+      "url": "https://github.com/Wiinansa/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-backgamon",
+      "name": "backgamon PCSX2 Patch Contributions",
+      "author": "backgamon and named patch authors",
+      "url": "https://github.com/backgamon/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-bizarf",
+      "name": "bizarf PCSX2 Patch Contributions",
+      "author": "bizarf and named patch authors",
+      "url": "https://github.com/bizarf/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-cassiojsl",
+      "name": "cassiojsl PCSX2 Patch Contributions",
+      "author": "cassiojsl and named patch authors",
+      "url": "https://github.com/cassiojsl/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-igorciz777",
+      "name": "igorciz777 PCSX2 Patch Contributions",
+      "author": "igorciz777 and named patch authors",
+      "url": "https://github.com/igorciz777/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-mahoneyt944",
+      "name": "mahoneyt944 PCSX2 Patch Contributions",
+      "author": "mahoneyt944 and named patch authors",
+      "url": "https://github.com/mahoneyt944/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    },
+    {
+      "id": "batch006-mthsk",
+      "name": "mthsk PCSX2 Patch Contributions",
+      "author": "mthsk and named patch authors",
+      "url": "https://github.com/mthsk/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-penguino118",
+      "name": "penguino118 PCSX2 Patch Contributions",
+      "author": "penguino118 and named patch authors",
+      "url": "https://github.com/penguino118/pcsx2_patches",
+      "notes": "Pinned author contributions selected by batch 006."
+    },
+    {
+      "id": "batch006-udon01",
+      "name": "udon01 PCSX2 Patch Contributions",
+      "author": "udon01 and named patch authors",
+      "url": "https://github.com/udon01/pcsx2_patches",
+      "notes": "Pinned author contribution selected by batch 006."
+    }
+  ]
+}

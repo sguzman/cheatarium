@@ -1,0 +1,429 @@
+gametitle=Leisure Suit Larry-Magna Cum Laude (SLUS-20956)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011C3B4,extended,0C0AA124
+
+[Never Drunk]
+patch=1,EE,209763FC,extended,00000000
+
+[Always Drunk]
+patch=1,EE,209763FC,extended,00000063
+
+[Max Secret Tokens]
+patch=1,EE,2097640C,extended,0000270F
+
+[Max Money]
+patch=1,EE,2097641C,extended,0000270F
+
+[Max Confidence]
+patch=1,EE,209777CC,extended,42C80000
+
+[Lady Friend Always Drunk]
+patch=1,EE,2097654C,extended,00000064
+
+[Always Max Heart (Talking To Ladies)]
+patch=1,EE,201A2510,extended,2403000A
+patch=1,EE,201A257C,extended,2403000A
+
+[Max Objects Examined]
+patch=1,EE,2094B25C,extended,0000270F
+
+[No Objects Examined]
+patch=1,EE,2094B25C,extended,00000000
+
+[Max Alcohol Consumed]
+patch=1,EE,2094B26C,extended,0000270F
+
+[No Alcohol Consumed]
+patch=1,EE,2094B26C,extended,00000000
+
+[Max Money Spent]
+patch=1,EE,2094B27C,extended,0000270F
+
+[No Money Spent]
+patch=1,EE,2094B27C,extended,00000000
+
+[Max Stuff Kicked]
+patch=1,EE,2094B2AC,extended,0000270F
+
+[No Stuff Kicked]
+patch=1,EE,2094B2AC,extended,00000000
+
+[Max Gallons Peed]
+patch=1,EE,2094B2BC,extended,0032DCB0
+
+[No Gallons Peed]
+patch=1,EE,2094B2BC,extended,00000000
+
+[Max Hackeys Ruined]
+patch=1,EE,2094B2CC,extended,0000270F
+
+[No Hackeys Ruined]
+patch=1,EE,2094B2CC,extended,00000000
+
+[Always Low Play Time]
+patch=1,EE,2094B2DC,extended,00000000
+
+[Max Farts]
+patch=1,EE,2094B2EC,extended,0000270F
+
+[No Farts]
+patch=1,EE,2094B2EC,extended,00000000
+
+[Super Nude Mode]
+patch=1,EE,204751B0,extended,00000000
+patch=1,EE,204751B4,extended,00000000
+patch=1,EE,2094B6CC,extended,00000001
+
+[Remove Censored Bar (Character Viewer)]
+patch=1,EE,10181ED6,extended,00001000
+
+[Unlock Naughty Mode (Bonus Options)]
+patch=1,EE,20948A6C,extended,00000001
+
+[Unlock Nude Mode (Bonus Options)]
+patch=1,EE,20948A7C,extended,00000001
+
+[Larry (Main)]
+patch=1,EE,20415138,extended,00000000
+
+[Larry (Cool)]
+patch=1,EE,20415178,extended,00000000
+
+[Larry (Geek)]
+patch=1,EE,204151B8,extended,00000000
+
+[Larry (Mime)]
+patch=1,EE,204151F8,extended,00000000
+
+[Larry (Mascot)]
+patch=1,EE,20415238,extended,00000000
+
+[Larry (Prep)]
+patch=1,EE,20415278,extended,00000000
+
+[Larry (Suit)]
+patch=1,EE,204152B8,extended,00000000
+
+[Girl 1 (Maid)]
+patch=1,EE,204152F8,extended,00000000
+
+[Girl 1 (Nude)]
+patch=1,EE,20415338,extended,00000000
+
+[Girl 2 (Cheerleader)]
+patch=1,EE,20415378,extended,00000000
+
+[Girl 2 (White Dress)]
+patch=1,EE,204153B8,extended,00000000
+
+[Girl 2 (Nude)]
+patch=1,EE,204153F8,extended,00000000
+
+[Girl 3 (Casual)]
+patch=1,EE,20415438,extended,00000000
+
+[Girl 3 (Nude)]
+patch=1,EE,20415478,extended,00000000
+
+[Girl 4 (All Black)]
+patch=1,EE,204154B8,extended,00000000
+
+[Girl 4 (Clown)]
+patch=1,EE,204154F8,extended,00000000
+
+[Girl 4 (Nude)]
+patch=1,EE,20415538,extended,00000000
+
+[Girl 5 (Dirndl Dress)]
+patch=1,EE,20415578,extended,00000000
+
+[Girl 5 (Nude)]
+patch=1,EE,204155B8,extended,00000000
+
+[Girl 6 (Cowgirl)]
+patch=1,EE,204155F8,extended,00000000
+
+[Girl 6 (Nude)]
+patch=1,EE,20415638,extended,00000000
+
+[Girl 7 (Dressed)]
+patch=1,EE,20415678,extended,00000000
+
+[Girl 7 (Nude)]
+patch=1,EE,204156B8,extended,00000000
+
+[Girl 8 (Marching)]
+patch=1,EE,204156F8,extended,00000000
+
+[Girl 8 (Nude)]
+patch=1,EE,20415738,extended,00000000
+
+[Girl 9 (Casual)]
+patch=1,EE,20415778,extended,00000000
+
+[Girl 9 (Nude)]
+patch=1,EE,204157B8,extended,00000000
+
+[Girl 10 (Casual)]
+patch=1,EE,204157F8,extended,00000000
+
+[Girl 10 (Nude)]
+patch=1,EE,20415838,extended,00000000
+
+[Girl 11 (Black Skirt)]
+patch=1,EE,20415878,extended,00000000
+
+[Girl 11 (Nude)]
+patch=1,EE,204158B8,extended,00000000
+
+[Girl 12 (Office)]
+patch=1,EE,204158F8,extended,00000000
+
+[Girl 12 (Nude)]
+patch=1,EE,20415938,extended,00000000
+
+[Girl 13 (Nerd)]
+patch=1,EE,20415978,extended,00000000
+
+[Girl 13 (Lingerie)]
+patch=1,EE,204159B8,extended,00000000
+
+[Girl 13 (Nude)]
+patch=1,EE,204159F8,extended,00000000
+
+[Girl 14 (Casual)]
+patch=1,EE,20415A38,extended,00000000
+
+[Girl 14 (Nude)]
+patch=1,EE,20415A78,extended,00000000
+
+[Girl 15 (Casual)]
+patch=1,EE,20415AB8,extended,00000000
+
+[Girl 15 (Nude)]
+patch=1,EE,20415AF8,extended,00000000
+
+[Girl 16 (Biker)]
+patch=1,EE,20415B38,extended,00000000
+
+[Girl 16 (Lingerie)]
+patch=1,EE,20415B78,extended,00000000
+
+[Girl 16 (Nude)]
+patch=1,EE,20415BB8,extended,00000000
+
+[Girl 17 (Casual)]
+patch=1,EE,20415BF8,extended,00000000
+
+[Girl 17 (Nude)]
+patch=1,EE,20415C38,extended,00000000
+
+[Girl 18 (Casual)]
+patch=1,EE,20415C78,extended,00000000
+
+[Girl 18 (Nude)]
+patch=1,EE,20415CB8,extended,00000000
+
+[All Character Models]
+patch=1,EE,40415138,extended,002F0010
+patch=1,EE,00000000,extended,00000000
+
+[Pic 1]
+patch=1,EE,209507B0,extended,00000001
+
+[Pic 2]
+patch=1,EE,209507B4,extended,00000001
+
+[Pic 3]
+patch=1,EE,209507B8,extended,00000001
+
+[Pic 4]
+patch=1,EE,209507BC,extended,00000001
+
+[Pic 5]
+patch=1,EE,209507C0,extended,00000001
+
+[Pic 6]
+patch=1,EE,209507C4,extended,00000001
+
+[Pic 7]
+patch=1,EE,209507C8,extended,00000001
+
+[Pic 8]
+patch=1,EE,209507CC,extended,00000001
+
+[Pic 9]
+patch=1,EE,209507D0,extended,00000001
+
+[Pic 10]
+patch=1,EE,209507D4,extended,00000001
+
+[Pic 11]
+patch=1,EE,209507D8,extended,00000001
+
+[Pic 12]
+patch=1,EE,209507DC,extended,00000001
+
+[Pic 13]
+patch=1,EE,209507E0,extended,00000001
+
+[Pic 14]
+patch=1,EE,209507E4,extended,00000001
+
+[Pic 15]
+patch=1,EE,209507E8,extended,00000001
+
+[Pic 16]
+patch=1,EE,209507EC,extended,00000001
+
+[Pic 17]
+patch=1,EE,209507F0,extended,00000001
+
+[Pic 18]
+patch=1,EE,209507F4,extended,00000001
+
+[Pic 19]
+patch=1,EE,209507F8,extended,00000001
+
+[Pic 20]
+patch=1,EE,209507FC,extended,00000001
+
+[Pic 21]
+patch=1,EE,20950800,extended,00000001
+
+[Pic 22]
+patch=1,EE,20950804,extended,00000001
+
+[Pic 23]
+patch=1,EE,20950808,extended,00000001
+
+[Pic 24]
+patch=1,EE,2095080C,extended,00000001
+
+[Pic 25]
+patch=1,EE,20950810,extended,00000001
+
+[Pic 26]
+patch=1,EE,20950814,extended,00000001
+
+[Pic 27]
+patch=1,EE,20950818,extended,00000001
+
+[Pic 28]
+patch=1,EE,2095081C,extended,00000001
+
+[Pic 29]
+patch=1,EE,20950820,extended,00000001
+
+[Pic 30]
+patch=1,EE,20950824,extended,00000001
+
+[Pic 31]
+patch=1,EE,20950828,extended,00000001
+
+[Pic 32]
+patch=1,EE,2095082C,extended,00000001
+
+[Pic 33]
+patch=1,EE,20950830,extended,00000001
+
+[Pic 34]
+patch=1,EE,20950834,extended,00000001
+
+[Pic 35]
+patch=1,EE,20950838,extended,00000001
+
+[Pic 36]
+patch=1,EE,2095083C,extended,00000001
+
+[Pic 37]
+patch=1,EE,20950840,extended,00000001
+
+[Pic 38]
+patch=1,EE,20950844,extended,00000001
+
+[Pic 39]
+patch=1,EE,20950848,extended,00000001
+
+[Pic 40]
+patch=1,EE,2095084C,extended,00000001
+
+[Pic 41]
+patch=1,EE,20950850,extended,00000001
+
+[Pic 42]
+patch=1,EE,20950854,extended,00000001
+
+[Pic 43]
+patch=1,EE,20950858,extended,00000001
+
+[Pic 44]
+patch=1,EE,2095085C,extended,00000001
+
+[Pic 45]
+patch=1,EE,20950860,extended,00000001
+
+[Pic 46]
+patch=1,EE,20950864,extended,00000001
+
+[Pic 47]
+patch=1,EE,20950868,extended,00000001
+
+[Pic 48]
+patch=1,EE,2095086C,extended,00000001
+
+[Pic 49]
+patch=1,EE,20950870,extended,00000001
+
+[Pic 50]
+patch=1,EE,20950874,extended,00000001
+
+[Pic 51]
+patch=1,EE,20950878,extended,00000001
+
+[Pic 52]
+patch=1,EE,2095087C,extended,00000001
+
+[Pic 53]
+patch=1,EE,20950880,extended,00000001
+
+[Pic 54]
+patch=1,EE,20950884,extended,00000001
+
+[Pic 55]
+patch=1,EE,20950888,extended,00000001
+
+[Pic 56]
+patch=1,EE,2095088C,extended,00000001
+
+[Pic 57]
+patch=1,EE,20950890,extended,00000001
+
+[Pic 58]
+patch=1,EE,20950894,extended,00000001
+
+[Pic 59]
+patch=1,EE,20950898,extended,00000001
+
+[Pic 60]
+patch=1,EE,2095089C,extended,00000001
+
+[Pic 61]
+patch=1,EE,209508A0,extended,00000001
+
+[Pic 62]
+patch=1,EE,209508A4,extended,00000001
+
+[Pic 63]
+patch=1,EE,209508A8,extended,00000001
+
+[Pic 64]
+patch=1,EE,209508AC,extended,00000001
+
+[All Pics]
+patch=1,EE,409507B0,extended,00400001
+patch=1,EE,00000001,extended,00000000

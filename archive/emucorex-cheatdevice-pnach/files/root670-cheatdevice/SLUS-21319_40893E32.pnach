@@ -1,0 +1,1170 @@
+gametitle=Flow-Urban Dance Uprising (SLUS-21319)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012C0E4,extended,0C04E758
+
+[Always Max Misses]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116ACB4,extended,2403270F
+
+[Always No Misses]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116ACB4,extended,24030000
+
+[Always Max Sloppy]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116ACF0,extended,2403270F
+
+[Always No Sloppy]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116ACF0,extended,24030000
+
+[Always Max Average]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116AD48,extended,2403270F
+
+[Always No Average]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116AD48,extended,24030000
+
+[Always Max Fine]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116ADB0,extended,2403270F
+
+[Always No Fine]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116ADB0,extended,24030000
+
+[Always Max Superb]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116AE18,extended,2403270F
+
+[Always No Superb]
+patch=1,EE,D1169730,extended,00007548
+patch=1,EE,2116AE18,extended,24030000
+
+[PS 51 Elementary]
+patch=1,EE,20435260,extended,00000001
+
+[Rag District]
+patch=1,EE,20435290,extended,00000001
+
+[The Pit]
+patch=1,EE,204352C0,extended,00000001
+
+[Top Of The World]
+patch=1,EE,204352F0,extended,00000001
+
+[The Spot]
+patch=1,EE,20435320,extended,00000001
+
+[Franklin High]
+patch=1,EE,20435350,extended,00000001
+
+[North Dock]
+patch=1,EE,20435380,extended,00000001
+
+[City Hall]
+patch=1,EE,204353B0,extended,00000001
+
+[The Yard]
+patch=1,EE,204353E0,extended,00000001
+
+[All Levels]
+patch=1,EE,40435260,extended,0009000C
+patch=1,EE,00000001,extended,00000000
+
+[Mo-Shun-Outfit 1]
+patch=1,EE,20435440,extended,00000001
+
+[Mo-Shun-Outfit 2]
+patch=1,EE,20435444,extended,00000001
+
+[Mo-Shun-Outfit 3]
+patch=1,EE,20435448,extended,00000001
+
+[Mahagany-Outfit 1]
+patch=1,EE,2043544C,extended,00000001
+
+[Mahagany-Outfit 2]
+patch=1,EE,20435450,extended,00000001
+
+[Mahagany-Outfit 3]
+patch=1,EE,20435454,extended,00000001
+
+[Miss Clean-Outfit 1]
+patch=1,EE,20435458,extended,00000001
+
+[Miss Clean-Outfit 2]
+patch=1,EE,2043545C,extended,00000001
+
+[Miss Clean-Outfit 3]
+patch=1,EE,20435460,extended,00000001
+
+[Pedro-Outfit 1]
+patch=1,EE,20435464,extended,00000001
+
+[Pedro-Outfit 2]
+patch=1,EE,20435468,extended,00000001
+
+[Pedro-Outfit 3]
+patch=1,EE,2043546C,extended,00000001
+
+[Menace-Outfit 1]
+patch=1,EE,20435470,extended,00000001
+
+[Menace-Outfit 2]
+patch=1,EE,20435474,extended,00000001
+
+[Menace-Outfit 3]
+patch=1,EE,20435478,extended,00000001
+
+[Lollipop-Outfit 1]
+patch=1,EE,2043547C,extended,00000001
+
+[Lollipop-Outfit 2]
+patch=1,EE,20435480,extended,00000001
+
+[Lollipop-Outfit 3]
+patch=1,EE,20435484,extended,00000001
+
+[Frantic Frantz-Outfit 1]
+patch=1,EE,20435488,extended,00000001
+
+[Frantic Frantz-Outfit 2]
+patch=1,EE,2043548C,extended,00000001
+
+[Frantic Frantz-Outfit 3]
+patch=1,EE,20435490,extended,00000001
+
+[Toots-Outfit 1]
+patch=1,EE,20435494,extended,00000001
+
+[Toots-Outfit 2]
+patch=1,EE,20435498,extended,00000001
+
+[Toots-Outfit 3]
+patch=1,EE,2043549C,extended,00000001
+
+[Mach-S-Outfit 1]
+patch=1,EE,204354A0,extended,00000001
+
+[Mach-S-Outfit 2]
+patch=1,EE,204354A4,extended,00000001
+
+[Mach-S-Outfit 3]
+patch=1,EE,204354A8,extended,00000001
+
+[Craze-Outfit 1]
+patch=1,EE,204354AC,extended,00000001
+
+[Craze-Outfit 2]
+patch=1,EE,204354B0,extended,00000001
+
+[Craze-Outfit 3]
+patch=1,EE,204354B4,extended,00000001
+
+[All Characters-All Outfits]
+patch=1,EE,40435440,extended,001E0001
+patch=1,EE,00000001,extended,00000000
+
+[Kwiz-Dueling DJ's]
+patch=1,EE,204354CC,extended,00000001
+
+[J Wells-How We Do]
+patch=1,EE,204354DC,extended,00000001
+
+[Greenskeepers-5 Slippin]
+patch=1,EE,204354E8,extended,00000001
+
+[Ming & FS-Freak]
+patch=1,EE,204354F4,extended,00000001
+
+[J Boogie's DS-Purple Perpendicular Phonics]
+patch=1,EE,204354FC,extended,00000001
+
+[People Under The Stairs-8 Is Enuff]
+patch=1,EE,20435504,extended,00000001
+
+[J Boogie's DS-Movin' To My Beat]
+patch=1,EE,20435508,extended,00000001
+
+[Bass Nectar-Udu Shuffle]
+patch=1,EE,2043550C,extended,00000001
+
+[DAS EFX-They Want EFX]
+patch=1,EE,20435510,extended,00000001
+
+[Newcleus-Jam On It]
+patch=1,EE,20435518,extended,00000001
+
+[Kurtis Blow-The Breaks]
+patch=1,EE,20435520,extended,00000001
+
+[Eric B. & Rakim-Don't Sweat The Technique]
+patch=1,EE,20435524,extended,00000001
+
+[Pfilbryte-Right Where]
+patch=1,EE,20435528,extended,00000001
+
+[St. John-Smashing]
+patch=1,EE,20435534,extended,00000001
+
+[Young MC-Without Doubt]
+patch=1,EE,20435538,extended,00000001
+
+[Rochester Aka Juice-Do It (Remix)]
+patch=1,EE,2043553C,extended,00000001
+
+[Troy Dunnit-Not Gangsta]
+patch=1,EE,20435540,extended,00000001
+
+[Simahlak Ft. Theo3-Under Pressure]
+patch=1,EE,20435544,extended,00000001
+
+[DJ Serious Ft. D-Sisive-Popped]
+patch=1,EE,20435548,extended,00000001
+
+[Obscure Disorder-Back To The Lab]
+patch=1,EE,2043554C,extended,00000001
+
+[Bless-What You Gonna Do Feat. Mr Wiggles]
+patch=1,EE,20435554,extended,00000001
+
+[Pfilbryte-OG Side]
+patch=1,EE,2043555C,extended,00000001
+
+[Nonpareilyx-Get Up NP]
+patch=1,EE,20435564,extended,00000001
+
+[Gary G-Wiz & Amani K. Smith-Hardcore]
+patch=1,EE,20435568,extended,00000001
+
+[Lex Stayl-Break A Leg]
+patch=1,EE,2043556C,extended,00000001
+
+[DJ Twitch-On The Rhodes]
+patch=1,EE,20435574,extended,00000001
+
+[All Songs]
+patch=1,EE,404354CC,extended,002B0001
+patch=1,EE,00000001,extended,00000000
+
+[Mo-Shun-Power Move A1]
+patch=1,EE,204355CC,extended,00000001
+
+[Mo-Shun-Power Move A2]
+patch=1,EE,204355D0,extended,00000001
+
+[Mo-Shun-Power Move A3]
+patch=1,EE,204355D4,extended,00000001
+
+[Mo-Shun-Power Move B1]
+patch=1,EE,204355E4,extended,00000001
+
+[Mo-Shun-Power Move B2]
+patch=1,EE,204355E8,extended,00000001
+
+[Mo-Shun-Power Move B3]
+patch=1,EE,204355EC,extended,00000001
+
+[Mo-Shun-Power Move C1]
+patch=1,EE,204355F0,extended,00000001
+
+[Mo-Shun-Power Move C2]
+patch=1,EE,204355F4,extended,00000001
+
+[Mo-Shun-Power Move C3]
+patch=1,EE,204355F8,extended,00000001
+
+[Mahogany-Power Move A1]
+patch=1,EE,20435620,extended,00000001
+
+[Mahogany-Power Move A2]
+patch=1,EE,20435624,extended,00000001
+
+[Mahogany-Power Move A3]
+patch=1,EE,20435628,extended,00000001
+
+[Mahogany-Power Move B1]
+patch=1,EE,20435638,extended,00000001
+
+[Mahogany-Power Move B2]
+patch=1,EE,2043563C,extended,00000001
+
+[Mahogany-Power Move B3]
+patch=1,EE,20435640,extended,00000001
+
+[Mahogany-Power Move C1]
+patch=1,EE,20435650,extended,00000001
+
+[Mahogany-Power Move C2]
+patch=1,EE,20435654,extended,00000001
+
+[Mahogany-Power Move C3]
+patch=1,EE,20435658,extended,00000001
+
+[Miss Clean-Power Move A1]
+patch=1,EE,2043565C,extended,00000001
+
+[Miss Clean-Power Move A2]
+patch=1,EE,20435660,extended,00000001
+
+[Miss Clean-Power Move A3]
+patch=1,EE,20435664,extended,00000001
+
+[Miss Clean-Power Move B1]
+patch=1,EE,20435668,extended,00000001
+
+[Miss Clean-Power Move B2]
+patch=1,EE,2043566C,extended,00000001
+
+[Miss Clean-Power Move B3]
+patch=1,EE,20435670,extended,00000001
+
+[Miss Clean-Power Move C1]
+patch=1,EE,20435680,extended,00000001
+
+[Miss Clean-Power Move C2]
+patch=1,EE,20435684,extended,00000001
+
+[Miss Clean-Power Move C3]
+patch=1,EE,20435688,extended,00000001
+
+[Pedro-Power Move A1]
+patch=1,EE,204356BC,extended,00000001
+
+[Pedro-Power Move A2]
+patch=1,EE,204356C0,extended,00000001
+
+[Pedro-Power Move A3]
+patch=1,EE,204356C4,extended,00000001
+
+[Pedro-Power Move B1]
+patch=1,EE,204356D4,extended,00000001
+
+[Pedro-Power Move B2]
+patch=1,EE,204356D8,extended,00000001
+
+[Pedro-Power Move B3]
+patch=1,EE,204356DC,extended,00000001
+
+[Pedro-Power Move C1]
+patch=1,EE,204356E0,extended,00000001
+
+[Pedro-Power Move C2]
+patch=1,EE,204356E4,extended,00000001
+
+[Pedro-Power Move C3]
+patch=1,EE,204356E8,extended,00000001
+
+[Menace-Power Move A1]
+patch=1,EE,204356F8,extended,00000001
+
+[Menace-Power Move A2]
+patch=1,EE,204356FC,extended,00000001
+
+[Menace-Power Move A3]
+patch=1,EE,20435700,extended,00000001
+
+[Menace-Power Move B1]
+patch=1,EE,20435704,extended,00000001
+
+[Menace-Power Move B2]
+patch=1,EE,20435708,extended,00000001
+
+[Menace-Power Move B3]
+patch=1,EE,2043570C,extended,00000001
+
+[Menace-Power Move C1]
+patch=1,EE,2043571C,extended,00000001
+
+[Menace-Power Move C2]
+patch=1,EE,20435720,extended,00000001
+
+[Menace-Power Move C3]
+patch=1,EE,20435724,extended,00000001
+
+[Lollipop-Power Move A1]
+patch=1,EE,2043574C,extended,00000001
+
+[Lollipop-Power Move A2]
+patch=1,EE,20435750,extended,00000001
+
+[Lollipop-Power Move A3]
+patch=1,EE,20435754,extended,00000001
+
+[Lollipop-Power Move B1]
+patch=1,EE,20435758,extended,00000001
+
+[Lollipop-Power Move B2]
+patch=1,EE,2043575C,extended,00000001
+
+[Lollipop-Power Move B3]
+patch=1,EE,20435760,extended,00000001
+
+[Lollipop-Power Move C1]
+patch=1,EE,20435770,extended,00000001
+
+[Lollipop-Power Move C2]
+patch=1,EE,20435774,extended,00000001
+
+[Lollipop-Power Move C3]
+patch=1,EE,20435778,extended,00000001
+
+[Frantic Frantz-Power Move A1]
+patch=1,EE,2043577C,extended,00000001
+
+[Frantic Frantz-Power Move A2]
+patch=1,EE,20435780,extended,00000001
+
+[Frantic Frantz-Power Move A3]
+patch=1,EE,20435784,extended,00000001
+
+[Frantic Frantz-Power Move B1]
+patch=1,EE,20435788,extended,00000001
+
+[Frantic Frantz-Power Move B2]
+patch=1,EE,2043578C,extended,00000001
+
+[Frantic Frantz-Power Move B3]
+patch=1,EE,20435790,extended,00000001
+
+[Frantic Frantz-Power Move C1]
+patch=1,EE,204357AC,extended,00000001
+
+[Frantic Frantz-Power Move C2]
+patch=1,EE,204357B0,extended,00000001
+
+[Frantic Frantz-Power Move C3]
+patch=1,EE,204357B4,extended,00000001
+
+[Toots-Power Move A1]
+patch=1,EE,204357D0,extended,00000001
+
+[Toots-Power Move A2]
+patch=1,EE,204357D4,extended,00000001
+
+[Toots-Power Move A3]
+patch=1,EE,204357D8,extended,00000001
+
+[Toots-Power Move B1]
+patch=1,EE,204357E8,extended,00000001
+
+[Toots-Power Move B2]
+patch=1,EE,204357EC,extended,00000001
+
+[Toots-Power Move B3]
+patch=1,EE,204357F0,extended,00000001
+
+[Toots-Power Move C1]
+patch=1,EE,204357F4,extended,00000001
+
+[Toots-Power Move C2]
+patch=1,EE,204357F8,extended,00000001
+
+[Toots-Power Move C3]
+patch=1,EE,204357FC,extended,00000001
+
+[Mach-9-Power Move A1]
+patch=1,EE,2043580C,extended,00000001
+
+[Mach-9-Power Move A2]
+patch=1,EE,20435810,extended,00000001
+
+[Mach-9-Power Move A2]
+patch=1,EE,20435814,extended,00000001
+
+[Mach-9-Power Move B1]
+patch=1,EE,20435824,extended,00000001
+
+[Mach-9-Power Move B2]
+patch=1,EE,20435828,extended,00000001
+
+[Mach-9-Power Move B2]
+patch=1,EE,2043582C,extended,00000001
+
+[Mach-9-Power Move C1]
+patch=1,EE,20435848,extended,00000001
+
+[Mach-9-Power Move C2]
+patch=1,EE,2043584C,extended,00000001
+
+[Mach-9-Power Move C2]
+patch=1,EE,20435850,extended,00000001
+
+[Craze-Power Move A1]
+patch=1,EE,20435854,extended,00000001
+
+[Craze-Power Move A2]
+patch=1,EE,20435858,extended,00000001
+
+[Craze-Power Move A3]
+patch=1,EE,2043585C,extended,00000001
+
+[Craze-Power Move B1]
+patch=1,EE,20435878,extended,00000001
+
+[Craze-Power Move B2]
+patch=1,EE,2043587C,extended,00000001
+
+[Craze-Power Move B3]
+patch=1,EE,20435880,extended,00000001
+
+[Craze-Power Move C1]
+patch=1,EE,20435890,extended,00000001
+
+[Craze-Power Move C2]
+patch=1,EE,20435894,extended,00000001
+
+[Craze-Power Move C3]
+patch=1,EE,20435898,extended,00000001
+
+[All Moves]
+patch=1,EE,404355CC,extended,00B40001
+patch=1,EE,00000001,extended,00000000
+
+[Mo-Shun-Custom Cue Box]
+patch=1,EE,2043589C,extended,00000001
+
+[Mahogany-Custom Cue Box]
+patch=1,EE,204358A0,extended,00000001
+
+[Miss Clean-Custom Cue Box]
+patch=1,EE,204358A4,extended,00000001
+
+[Pedro-Custom Cue Box]
+patch=1,EE,204358A8,extended,00000001
+
+[Menace-Custom Cue Box]
+patch=1,EE,204358AC,extended,00000001
+
+[Lollipop-Custom Cue Box]
+patch=1,EE,204358B0,extended,00000001
+
+[Frantic Frantz-Custom Cue Box]
+patch=1,EE,204358B4,extended,00000001
+
+[Toots-Custom Cue Box]
+patch=1,EE,204358B8,extended,00000001
+
+[Mach-9-Custom Cue Box]
+patch=1,EE,204358BC,extended,00000001
+
+[Craze-Custom Cue Box]
+patch=1,EE,204358C0,extended,00000001
+
+[All Misc.]
+patch=1,EE,4043589C,extended,000A0001
+patch=1,EE,00000001,extended,00000000
+
+[106th Street-Challenge 1]
+patch=1,EE,204349C8,extended,00000001
+
+[106th Street-Challenge 2]
+patch=1,EE,204349DC,extended,00000001
+
+[106th Street-Challenge 3]
+patch=1,EE,204349F0,extended,00000001
+
+[106th Street-Challenge 4]
+patch=1,EE,20434A04,extended,00000001
+
+[106th Street-Challenge 5]
+patch=1,EE,20434A18,extended,00000001
+
+[106th Street-Challenge 6]
+patch=1,EE,20434A2C,extended,00000001
+
+[106th Street-Challenge 7]
+patch=1,EE,20434A40,extended,00000001
+
+[106th Street-Challenge 8]
+patch=1,EE,20434A54,extended,00000001
+
+[106th Street-Challenge 9]
+patch=1,EE,20434A68,extended,00000001
+
+[106th Street-Challenge 10]
+patch=1,EE,20434A7C,extended,00000001
+
+[PS 51 Elementary-Challenge 1]
+patch=1,EE,20434A90,extended,00000001
+
+[PS 51 Elementary-Challenge 2]
+patch=1,EE,20434AA4,extended,00000001
+
+[PS 51 Elementary-Challenge 3]
+patch=1,EE,20434AB8,extended,00000001
+
+[PS 51 Elementary-Challenge 4]
+patch=1,EE,20434ACC,extended,00000001
+
+[PS 51 Elementary-Challenge 5]
+patch=1,EE,20434AE0,extended,00000001
+
+[PS 51 Elementary-Challenge 6]
+patch=1,EE,20434AF4,extended,00000001
+
+[PS 51 Elementary-Challenge 7]
+patch=1,EE,20434B08,extended,00000001
+
+[PS 51 Elementary-Challenge 8]
+patch=1,EE,20434B1C,extended,00000001
+
+[PS 51 Elementary-Challenge 9]
+patch=1,EE,20434B30,extended,00000001
+
+[PS 51 Elementary-Challenge 10]
+patch=1,EE,20434B44,extended,00000001
+
+[Rag District-Challenge 1]
+patch=1,EE,20434B58,extended,00000001
+
+[Rag District-Challenge 2]
+patch=1,EE,20434B6C,extended,00000001
+
+[Rag District-Challenge 3]
+patch=1,EE,20434B80,extended,00000001
+
+[Rag District-Challenge 4]
+patch=1,EE,20434B94,extended,00000001
+
+[Rag District-Challenge 5]
+patch=1,EE,20434BA8,extended,00000001
+
+[Rag District-Challenge 6]
+patch=1,EE,20434BBC,extended,00000001
+
+[Rag District-Challenge 7]
+patch=1,EE,20434BD0,extended,00000001
+
+[Rag District-Challenge 8]
+patch=1,EE,20434BE4,extended,00000001
+
+[Rag District-Challenge 9]
+patch=1,EE,20434BF8,extended,00000001
+
+[Rag District-Challenge 10]
+patch=1,EE,20434C0C,extended,00000001
+
+[The Pit-Challenge 1]
+patch=1,EE,20434C20,extended,00000001
+
+[The Pit-Challenge 2]
+patch=1,EE,20434C34,extended,00000001
+
+[The Pit-Challenge 3]
+patch=1,EE,20434C48,extended,00000001
+
+[The Pit-Challenge 4]
+patch=1,EE,20434C5C,extended,00000001
+
+[The Pit-Challenge 5]
+patch=1,EE,20434C70,extended,00000001
+
+[The Pit-Challenge 6]
+patch=1,EE,20434C84,extended,00000001
+
+[The Pit-Challenge 7]
+patch=1,EE,20434C98,extended,00000001
+
+[The Pit-Challenge 8]
+patch=1,EE,20434CAC,extended,00000001
+
+[The Pit-Challenge 9]
+patch=1,EE,20434CC0,extended,00000001
+
+[The Pit-Challenge 10]
+patch=1,EE,20434CD4,extended,00000001
+
+[Top Of The World-Challenge 1]
+patch=1,EE,20434CE8,extended,00000001
+
+[Top Of The World-Challenge 2]
+patch=1,EE,20434CFC,extended,00000001
+
+[Top Of The World-Challenge 3]
+patch=1,EE,20434D10,extended,00000001
+
+[Top Of The World-Challenge 4]
+patch=1,EE,20434D24,extended,00000001
+
+[Top Of The World-Challenge 5]
+patch=1,EE,20434D38,extended,00000001
+
+[Top Of The World-Challenge 6]
+patch=1,EE,20434D4C,extended,00000001
+
+[Top Of The World-Challenge 7]
+patch=1,EE,20434D60,extended,00000001
+
+[Top Of The World-Challenge 8]
+patch=1,EE,20434D74,extended,00000001
+
+[Top Of The World-Challenge 9]
+patch=1,EE,20434D88,extended,00000001
+
+[Top Of The World-Challenge 10]
+patch=1,EE,20434D9C,extended,00000001
+
+[The Spot-Challenge 1]
+patch=1,EE,20434DB0,extended,00000001
+
+[The Spot-Challenge 2]
+patch=1,EE,20434DC4,extended,00000001
+
+[The Spot-Challenge 3]
+patch=1,EE,20434DD8,extended,00000001
+
+[The Spot-Challenge 4]
+patch=1,EE,20434DEC,extended,00000001
+
+[The Spot-Challenge 5]
+patch=1,EE,20434E00,extended,00000001
+
+[The Spot-Challenge 6]
+patch=1,EE,20434E14,extended,00000001
+
+[The Spot-Challenge 7]
+patch=1,EE,20434E28,extended,00000001
+
+[The Spot-Challenge 8]
+patch=1,EE,20434E3C,extended,00000001
+
+[The Spot-Challenge 9]
+patch=1,EE,20434E50,extended,00000001
+
+[The Spot-Challenge 10]
+patch=1,EE,20434E64,extended,00000001
+
+[Franklin High-Challenge 1]
+patch=1,EE,20434E78,extended,00000001
+
+[Franklin High-Challenge 2]
+patch=1,EE,20434E8C,extended,00000001
+
+[Franklin High-Challenge 3]
+patch=1,EE,20434EA0,extended,00000001
+
+[Franklin High-Challenge 4]
+patch=1,EE,20434EB4,extended,00000001
+
+[Franklin High-Challenge 5]
+patch=1,EE,20434EC8,extended,00000001
+
+[Franklin High-Challenge 6]
+patch=1,EE,20434EDC,extended,00000001
+
+[Franklin High-Challenge 7]
+patch=1,EE,20434EF0,extended,00000001
+
+[Franklin High-Challenge 8]
+patch=1,EE,20434F04,extended,00000001
+
+[Franklin High-Challenge 9]
+patch=1,EE,20434F18,extended,00000001
+
+[Franklin High-Challenge 10]
+patch=1,EE,20434F2C,extended,00000001
+
+[North Dock-Challenge 1]
+patch=1,EE,20434F40,extended,00000001
+
+[North Dock-Challenge 2]
+patch=1,EE,20434F54,extended,00000001
+
+[North Dock-Challenge 3]
+patch=1,EE,20434F68,extended,00000001
+
+[North Dock-Challenge 4]
+patch=1,EE,20434F7C,extended,00000001
+
+[North Dock-Challenge 5]
+patch=1,EE,20434F90,extended,00000001
+
+[North Dock-Challenge 6]
+patch=1,EE,20434FA4,extended,00000001
+
+[North Dock-Challenge 7]
+patch=1,EE,20434FB8,extended,00000001
+
+[North Dock-Challenge 8]
+patch=1,EE,20434FCC,extended,00000001
+
+[North Dock-Challenge 9]
+patch=1,EE,20434FE0,extended,00000001
+
+[North Dock-Challenge 10]
+patch=1,EE,20434FF4,extended,00000001
+
+[City Hall-Challenge 1]
+patch=1,EE,20435008,extended,00000001
+
+[City Hall-Challenge 2]
+patch=1,EE,2043501C,extended,00000001
+
+[City Hall-Challenge 3]
+patch=1,EE,20435030,extended,00000001
+
+[City Hall-Challenge 4]
+patch=1,EE,20435044,extended,00000001
+
+[City Hall-Challenge 5]
+patch=1,EE,20435058,extended,00000001
+
+[City Hall-Challenge 6]
+patch=1,EE,2043506C,extended,00000001
+
+[City Hall-Challenge 7]
+patch=1,EE,20435080,extended,00000001
+
+[City Hall-Challenge 8]
+patch=1,EE,20435094,extended,00000001
+
+[City Hall-Challenge 9]
+patch=1,EE,204350A8,extended,00000001
+
+[City Hall-Challenge 10]
+patch=1,EE,204350BC,extended,00000001
+
+[The Yard-Challenge 1]
+patch=1,EE,204350D0,extended,00000001
+
+[The Yard-Challenge 2]
+patch=1,EE,204350E4,extended,00000001
+
+[The Yard-Challenge 3]
+patch=1,EE,204350F8,extended,00000001
+
+[The Yard-Challenge 4]
+patch=1,EE,2043510C,extended,00000001
+
+[The Yard-Challenge 5]
+patch=1,EE,20435120,extended,00000001
+
+[The Yard-Challenge 6]
+patch=1,EE,20435134,extended,00000001
+
+[The Yard-Challenge 7]
+patch=1,EE,20435148,extended,00000001
+
+[The Yard-Challenge 8]
+patch=1,EE,2043515C,extended,00000001
+
+[The Yard-Challenge 9]
+patch=1,EE,20435170,extended,00000001
+
+[The Yard-Challenge 10]
+patch=1,EE,20435184,extended,00000001
+
+[All Challenges]
+patch=1,EE,404349C8,extended,00640005
+patch=1,EE,00000001,extended,00000000
+
+[106th Street-Challenge 1]
+patch=1,EE,204349CC,extended,00000002
+
+[106th Street-Challenge 2]
+patch=1,EE,204349E0,extended,00000002
+
+[106th Street-Challenge 3]
+patch=1,EE,204349F4,extended,00000002
+
+[106th Street-Challenge 4]
+patch=1,EE,20434A08,extended,00000002
+
+[106th Street-Challenge 5]
+patch=1,EE,20434A1C,extended,00000002
+
+[106th Street-Challenge 6]
+patch=1,EE,20434A30,extended,00000002
+
+[106th Street-Challenge 7]
+patch=1,EE,20434A44,extended,00000002
+
+[106th Street-Challenge 8]
+patch=1,EE,20434A58,extended,00000002
+
+[106th Street-Challenge 9]
+patch=1,EE,20434A6C,extended,00000002
+
+[106th Street-Challenge 10]
+patch=1,EE,20434A80,extended,00000002
+
+[PS 51 Elementary-Challenge 1]
+patch=1,EE,20434A94,extended,00000002
+
+[PS 51 Elementary-Challenge 2]
+patch=1,EE,20434AA8,extended,00000002
+
+[PS 51 Elementary-Challenge 3]
+patch=1,EE,20434ABC,extended,00000002
+
+[PS 51 Elementary-Challenge 4]
+patch=1,EE,20434AD0,extended,00000002
+
+[PS 51 Elementary-Challenge 5]
+patch=1,EE,20434AE4,extended,00000002
+
+[PS 51 Elementary-Challenge 6]
+patch=1,EE,20434AF8,extended,00000002
+
+[PS 51 Elementary-Challenge 7]
+patch=1,EE,20434B0C,extended,00000002
+
+[PS 51 Elementary-Challenge 8]
+patch=1,EE,20434B20,extended,00000002
+
+[PS 51 Elementary-Challenge 9]
+patch=1,EE,20434B34,extended,00000002
+
+[PS 51 Elementary-Challenge 10]
+patch=1,EE,20434B48,extended,00000002
+
+[Rag District-Challenge 1]
+patch=1,EE,20434B5C,extended,00000002
+
+[Rag District-Challenge 2]
+patch=1,EE,20434B70,extended,00000002
+
+[Rag District-Challenge 3]
+patch=1,EE,20434B84,extended,00000002
+
+[Rag District-Challenge 4]
+patch=1,EE,20434B98,extended,00000002
+
+[Rag District-Challenge 5]
+patch=1,EE,20434BAC,extended,00000002
+
+[Rag District-Challenge 6]
+patch=1,EE,20434BC0,extended,00000002
+
+[Rag District-Challenge 7]
+patch=1,EE,20434BD4,extended,00000002
+
+[Rag District-Challenge 8]
+patch=1,EE,20434BE8,extended,00000002
+
+[Rag District-Challenge 9]
+patch=1,EE,20434BFC,extended,00000002
+
+[Rag District-Challenge 10]
+patch=1,EE,20434C10,extended,00000002
+
+[The Pit-Challenge 1]
+patch=1,EE,20434C24,extended,00000002
+
+[The Pit-Challenge 2]
+patch=1,EE,20434C38,extended,00000002
+
+[The Pit-Challenge 3]
+patch=1,EE,20434C4C,extended,00000002
+
+[The Pit-Challenge 4]
+patch=1,EE,20434C60,extended,00000002
+
+[The Pit-Challenge 5]
+patch=1,EE,20434C74,extended,00000002
+
+[The Pit-Challenge 6]
+patch=1,EE,20434C88,extended,00000002
+
+[The Pit-Challenge 7]
+patch=1,EE,20434C9C,extended,00000002
+
+[The Pit-Challenge 8]
+patch=1,EE,20434CB0,extended,00000002
+
+[The Pit-Challenge 9]
+patch=1,EE,20434CC4,extended,00000002
+
+[The Pit-Challenge 10]
+patch=1,EE,20434CD8,extended,00000002
+
+[Top Of The World-Challenge 1]
+patch=1,EE,20434CEC,extended,00000002
+
+[Top Of The World-Challenge 2]
+patch=1,EE,20434D00,extended,00000002
+
+[Top Of The World-Challenge 3]
+patch=1,EE,20434D14,extended,00000002
+
+[Top Of The World-Challenge 4]
+patch=1,EE,20434D28,extended,00000002
+
+[Top Of The World-Challenge 5]
+patch=1,EE,20434D3C,extended,00000002
+
+[Top Of The World-Challenge 6]
+patch=1,EE,20434D50,extended,00000002
+
+[Top Of The World-Challenge 7]
+patch=1,EE,20434D64,extended,00000002
+
+[Top Of The World-Challenge 8]
+patch=1,EE,20434D78,extended,00000002
+
+[Top Of The World-Challenge 9]
+patch=1,EE,20434D8C,extended,00000002
+
+[Top Of The World-Challenge 10]
+patch=1,EE,20434DA0,extended,00000002
+
+[The Spot-Challenge 1]
+patch=1,EE,20434DB4,extended,00000002
+
+[The Spot-Challenge 2]
+patch=1,EE,20434DC8,extended,00000002
+
+[The Spot-Challenge 3]
+patch=1,EE,20434DDC,extended,00000002
+
+[The Spot-Challenge 4]
+patch=1,EE,20434DF0,extended,00000002
+
+[The Spot-Challenge 5]
+patch=1,EE,20434E04,extended,00000002
+
+[The Spot-Challenge 6]
+patch=1,EE,20434E18,extended,00000002
+
+[The Spot-Challenge 7]
+patch=1,EE,20434E2C,extended,00000002
+
+[The Spot-Challenge 8]
+patch=1,EE,20434E40,extended,00000002
+
+[The Spot-Challenge 9]
+patch=1,EE,20434E54,extended,00000002
+
+[The Spot-Challenge 10]
+patch=1,EE,20434E68,extended,00000002
+
+[Franklin High-Challenge 1]
+patch=1,EE,20434E7C,extended,00000002
+
+[Franklin High-Challenge 2]
+patch=1,EE,20434E90,extended,00000002
+
+[Franklin High-Challenge 3]
+patch=1,EE,20434EA4,extended,00000002
+
+[Franklin High-Challenge 4]
+patch=1,EE,20434EB8,extended,00000002
+
+[Franklin High-Challenge 5]
+patch=1,EE,20434ECC,extended,00000002
+
+[Franklin High-Challenge 6]
+patch=1,EE,20434EE0,extended,00000002
+
+[Franklin High-Challenge 7]
+patch=1,EE,20434EF4,extended,00000002
+
+[Franklin High-Challenge 8]
+patch=1,EE,20434F08,extended,00000002
+
+[Franklin High-Challenge 9]
+patch=1,EE,20434F1C,extended,00000002
+
+[Franklin High-Challenge 10]
+patch=1,EE,20434F30,extended,00000002
+
+[North Dock-Challenge 1]
+patch=1,EE,20434F44,extended,00000002
+
+[North Dock-Challenge 2]
+patch=1,EE,20434F58,extended,00000002
+
+[North Dock-Challenge 3]
+patch=1,EE,20434F6C,extended,00000002
+
+[North Dock-Challenge 4]
+patch=1,EE,20434F80,extended,00000002
+
+[North Dock-Challenge 5]
+patch=1,EE,20434F94,extended,00000002
+
+[North Dock-Challenge 6]
+patch=1,EE,20434FA8,extended,00000002
+
+[North Dock-Challenge 7]
+patch=1,EE,20434FBC,extended,00000002
+
+[North Dock-Challenge 8]
+patch=1,EE,20434FD0,extended,00000002
+
+[North Dock-Challenge 9]
+patch=1,EE,20434FE4,extended,00000002
+
+[North Dock-Challenge 10]
+patch=1,EE,20434FF8,extended,00000002
+
+[City Hall-Challenge 1]
+patch=1,EE,2043500C,extended,00000002
+
+[City Hall-Challenge 2]
+patch=1,EE,20435020,extended,00000002
+
+[City Hall-Challenge 3]
+patch=1,EE,20435034,extended,00000002
+
+[City Hall-Challenge 4]
+patch=1,EE,20435048,extended,00000002
+
+[City Hall-Challenge 5]
+patch=1,EE,2043505C,extended,00000002
+
+[City Hall-Challenge 6]
+patch=1,EE,20435070,extended,00000002
+
+[City Hall-Challenge 7]
+patch=1,EE,20435084,extended,00000002
+
+[City Hall-Challenge 8]
+patch=1,EE,20435098,extended,00000002
+
+[City Hall-Challenge 9]
+patch=1,EE,204350AC,extended,00000002
+
+[City Hall-Challenge 10]
+patch=1,EE,204350C0,extended,00000002
+
+[The Yard-Challenge 1]
+patch=1,EE,204350D4,extended,00000002
+
+[The Yard-Challenge 2]
+patch=1,EE,204350E8,extended,00000002
+
+[The Yard-Challenge 3]
+patch=1,EE,204350FC,extended,00000002
+
+[The Yard-Challenge 4]
+patch=1,EE,20435110,extended,00000002
+
+[The Yard-Challenge 5]
+patch=1,EE,20435124,extended,00000002
+
+[The Yard-Challenge 6]
+patch=1,EE,20435138,extended,00000002
+
+[The Yard-Challenge 7]
+patch=1,EE,2043514C,extended,00000002
+
+[The Yard-Challenge 8]
+patch=1,EE,20435160,extended,00000002
+
+[The Yard-Challenge 9]
+patch=1,EE,20435174,extended,00000002
+
+[The Yard-Challenge 10]
+patch=1,EE,20435188,extended,00000002
+
+[All Challenges]
+patch=1,EE,404349CC,extended,00640005
+patch=1,EE,00000002,extended,00000000

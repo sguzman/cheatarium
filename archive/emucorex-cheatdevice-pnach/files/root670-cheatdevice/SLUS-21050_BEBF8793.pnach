@@ -1,0 +1,795 @@
+gametitle=Burnout 3-Takedown (SLUS-21050)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902158E8,extended,0C048FAA
+
+[Display World Time]
+patch=1,EE,20134B08,extended,00000000
+patch=1,EE,20134C44,extended,00000000
+
+[Dont Lose Extra Max Boost When Crashing]
+patch=1,EE,2014E084,extended,00000000
+
+[Crash For x4 Boost Meter]
+patch=1,EE,2014E07C,extended,24030003
+
+[Can Do Crash Breakers Instantly]
+patch=1,EE,2015BB88,extended,00000000
+
+[Drive Through Cars]
+patch=1,EE,201B7220,extended,03E00008
+patch=1,EE,201B7224,extended,00000000
+
+[Hopping Wrecks]
+patch=1,EE,204E068C,extended,40000000
+
+[Wreck For Going, Going, GONE!]
+patch=1,EE,204E068C,extended,42C80000
+
+[Easy Wrecks With Other Vehicles]
+patch=1,EE,204E1634,extended,00000000
+
+[Almost Immune To Wrecks With Other Vehicles]
+patch=1,EE,204E1634,extended,7FFFFFFF
+
+[P1 Press {R1}+{CROSS} For Nitrous Boost]
+patch=1,EE,D04F50DC,extended,0000B7FF
+patch=1,EE,2057C5AC,extended,43FA0000
+
+[P1 Press {R1}+{CROSS} For Super Nitrous Boost]
+patch=1,EE,D04F50DC,extended,0000B7FF
+patch=1,EE,2057C5AC,extended,447A0000
+
+[Outrageous Boost Gain]
+patch=1,EE,2057CEC4,extended,447A0000
+
+[Infinite Boost]
+patch=1,EE,2064E574,extended,43700000
+
+[Max Infinite Boost]
+patch=1,EE,2064E56C,extended,00000003
+patch=1,EE,2064E570,extended,44340000
+patch=1,EE,2064E574,extended,44340000
+
+[Quick Score Gain]
+patch=1,EE,1064E4BC,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,2064E4BC,extended,05F5E0FF
+
+[Hyper Mode (Wreck Immediately To Fix Camera)]
+patch=1,EE,104E2742,extended,00003D48
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D04F50DC,extended,0000FBFE
+patch=1,EE,201D3D2C,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D04F50DC,extended,0000FEFE
+patch=1,EE,201D3D2C,extended,AF83A0CC
+
+[Start On Lap 2]
+patch=1,EE,D064E484,extended,00000000
+patch=1,EE,1064E484,extended,00000001
+
+[Start On Lap 3]
+patch=1,EE,D064E484,extended,00000000
+patch=1,EE,1064E484,extended,00000002
+
+[P1 Press {R1}+Up For Faster Game Speed]
+patch=1,EE,D04F50DC,extended,0000F7EF
+patch=1,EE,2052267C,extended,3D088889
+
+[P1 Press {R1}+Right For Super Game Speed]
+patch=1,EE,D04F50DC,extended,0000F7DF
+patch=1,EE,2052267C,extended,3D888889
+
+[P1 Press {R1}+Up For Slow Game Speed]
+patch=1,EE,D04F50DC,extended,0000F7BF
+patch=1,EE,2052267C,extended,3C088889
+
+[P1 Press {R1}+Left For Normal Speed]
+patch=1,EE,D04F50DC,extended,0000F77F
+patch=1,EE,2052267C,extended,3C888889
+
+[P1 Press {R2}+Up For Further Back Camera]
+patch=1,EE,D04F50DC,extended,0000FDEF
+patch=1,EE,20665FC0,extended,40000000
+
+[P1 Press {R2}+Right For Even Further Back Camera]
+patch=1,EE,D04F50DC,extended,0000FDDF
+patch=1,EE,20665FC0,extended,40800000
+
+[P1 Press {R2}+Down For Closer Camera]
+patch=1,EE,D04F50DC,extended,0000FDBF
+patch=1,EE,20665FC0,extended,3E800000
+
+[P1 Press {R2}+Left For Normal Camera]
+patch=1,EE,D04F50DC,extended,0000FD7F
+patch=1,EE,20665FC0,extended,3F800000
+
+[Have All Gold Medals]
+patch=1,EE,1051BE86,extended,00000303
+patch=1,EE,4051BE88,extended,002A0001
+patch=1,EE,03030303,extended,00000000
+patch=1,EE,1051BF30,extended,00000303
+patch=1,EE,0051BF32,extended,00000003
+
+[Max Burnout Points]
+patch=1,EE,2051BB40,extended,05F5E0FF
+
+[Max Crash Damage]
+patch=1,EE,2051BB44,extended,05F5E0FF
+
+[Max # Of Takedowns]
+patch=1,EE,2051C124,extended,05F5E0FF
+
+[Silver Lake-Race]
+patch=1,EE,0051BE86,extended,00000003
+
+[Downtown-Preview Lap 1]
+patch=1,EE,0051BE87,extended,00000003
+
+[Waterfront-Burning Lap]
+patch=1,EE,0051BE88,extended,00000003
+
+[Downtown-Road Rage 1]
+patch=1,EE,0051BE89,extended,00000003
+
+[Downtown-Race 1]
+patch=1,EE,0051BE8A,extended,00000003
+
+[Waterfront-Face-Off]
+patch=1,EE,0051BE8C,extended,00000003
+
+[Kings Of The Road]
+patch=1,EE,0051BE8E,extended,00000003
+
+[Silver Lake-Compact Grand Prix]
+patch=1,EE,0051BE8F,extended,00000003
+
+[Lakeside Getaway]
+patch=1,EE,0051BE90,extended,00000003
+
+[Downtown-Race 2]
+patch=1,EE,0051BE91,extended,00000003
+
+[Silver Lake-Compact Grand Prix]
+patch=1,EE,0051BE92,extended,00000003
+
+[Downtown-Road Rage 2]
+patch=1,EE,0051BE94,extended,00000003
+
+[Lakeside-Getaway]
+patch=1,EE,0051BE96,extended,00000003
+
+[Kings Of The Road-Race]
+patch=1,EE,0051BE98,extended,00000003
+
+[Mountain Parkway-Face-Off 1]
+patch=1,EE,0051BE99,extended,00000003
+
+[Mountain Parkway-Road Rage]
+patch=1,EE,0051BE9A,extended,00000003
+
+[Lakeside Getaway-Face-Off 2]
+patch=1,EE,0051BE9B,extended,00000003
+
+[Waterfront-Muscle Grand Prix]
+patch=1,EE,0051BE9C,extended,00000003
+
+[Mountain Parkway-Face-Off 2]
+patch=1,EE,0051BE9D,extended,00000003
+
+[Silver Lake-Special Event]
+patch=1,EE,0051BEA2,extended,00000003
+
+[Mountain Parkway-Special event]
+patch=1,EE,0051BEB7,extended,00000003
+
+[Downtown-Preview Lap 2]
+patch=1,EE,0051BEBE,extended,00000003
+
+[Waterfront-Preview Lap]
+patch=1,EE,0051BECB,extended,00000003
+
+[Lakeside Getaway]
+patch=1,EE,0051BECD,extended,00000003
+
+[Kings Of The Road-Gold Medal GP]
+patch=1,EE,0051BECE,extended,00000003
+
+[Silver Lake-Trailer Trash]
+patch=1,EE,0051BECF,extended,00000003
+
+[Downtown-Cross Traffic]
+patch=1,EE,0051BED0,extended,00000003
+
+[Waterfront-Marina Mayhem]
+patch=1,EE,0051BED1,extended,00000003
+
+[Waterfront-Twister]
+patch=1,EE,0051BED2,extended,00000003
+
+[Downtown-Demolition]
+patch=1,EE,0051BED3,extended,00000003
+
+[Silver Lake-Shut Up And Jump]
+patch=1,EE,0051BED4,extended,00000003
+
+[Silver Lake-Showdown]
+patch=1,EE,0051BEE3,extended,00000003
+
+[Waterfront-Leap Of Faith]
+patch=1,EE,0051BEE4,extended,00000003
+
+[Downtown-Deadend]
+patch=1,EE,0051BEE5,extended,00000003
+
+[Silver Lake-Ticket To Collide]
+patch=1,EE,0051BEE6,extended,00000003
+
+[Downtown-Wrecks City]
+patch=1,EE,0051BEE7,extended,00000003
+
+[Waterfront-Danger Zone]
+patch=1,EE,0051BEE8,extended,00000003
+
+[Downtown-Hate To Be Late]
+patch=1,EE,0051BEF7,extended,00000003
+
+[Silver Lake-3 Ways To Fly]
+patch=1,EE,0051BEF8,extended,00000003
+
+[Watefront-Bay-Side Blitz]
+patch=1,EE,0051BEF9,extended,00000003
+
+[Downtown-Hold Tight]
+patch=1,EE,0051BEFA,extended,00000003
+
+[Silver Lake-Bridge Too Far]
+patch=1,EE,0051BEFB,extended,00000003
+
+[Downtown-Traffic Jammed]
+patch=1,EE,0051BEFC,extended,00000003
+
+[Silver Lake-Out Of Control]
+patch=1,EE,0051BF0B,extended,00000003
+
+[Downtown-Bus Blockade]
+patch=1,EE,0051BF0C,extended,00000003
+
+[Waterfront-Falling Down]
+patch=1,EE,0051BF0D,extended,00000003
+
+[Silver Lake-Fearfactor]
+patch=1,EE,0051BF0E,extended,00000003
+
+[Waterfront-T-Boned]
+patch=1,EE,0051BF0F,extended,00000003
+
+[Waterfront-Sunshine Smash]
+patch=1,EE,0051BF10,extended,00000003
+
+[Silver Lake-Pick Up The Pieces]
+patch=1,EE,0051BF1F,extended,00000003
+
+[Downtown-Grid Locked]
+patch=1,EE,0051BF20,extended,00000003
+
+[Downtown-Air Rage]
+patch=1,EE,0051BF21,extended,00000003
+
+[Downtown-Hit And Run]
+patch=1,EE,0051BF22,extended,00000003
+
+[Waterfront-Look Then Leap]
+patch=1,EE,0051BF23,extended,00000003
+
+[Waterfronto-Tram-Pulled]
+patch=1,EE,0051BF24,extended,00000003
+
+[Vineyard-Special Event]
+patch=1,EE,0051BE8B,extended,00000003
+
+[Alpine-Special Event]
+patch=1,EE,0051BE93,extended,00000003
+
+[Coastal Dream-Preview Lap]
+patch=1,EE,0051BE95,extended,00000003
+
+[Winter City-Race]
+patch=1,EE,0051BE9E,extended,00000003
+
+[Vineyard-Road Rage 1]
+patch=1,EE,0051BE9F,extended,00000003
+
+[Alpine-Road Rage]
+patch=1,EE,0051BEA0,extended,00000003
+
+[Alpine-Race]
+patch=1,EE,0051BEA1,extended,00000003
+
+[Alpine Expressway-Race]
+patch=1,EE,0051BEA3,extended,00000003
+
+[Winter City-Special Event]
+patch=1,EE,0051BEA4,extended,00000003
+
+[Riviera-Road Rage 1]
+patch=1,EE,0051BEA5,extended,00000003
+
+[Vineyard-Face-Off]
+patch=1,EE,0051BEA7,extended,00000003
+
+[Frozen Park-Face-Off 1]
+patch=1,EE,0051BEA8,extended,00000003
+
+[Winter City-Eliminator]
+patch=1,EE,0051BEA9,extended,00000003
+
+[Vineyard-Coupe Grand Prix]
+patch=1,EE,0051BEAA,extended,00000003
+
+[Continental Run-Face-Off 1]
+patch=1,EE,0051BEAB,extended,00000003
+
+[Riviera-Burning Lap]
+patch=1,EE,0051BEAC,extended,00000003
+
+[Vineyard-Road Rage 2]
+patch=1,EE,0051BEAD,extended,00000003
+
+[Coasta Dream-Race]
+patch=1,EE,0051BEAE,extended,00000003
+
+[Vineyard-Eliminator]
+patch=1,EE,0051BEAF,extended,00000003
+
+[Riviera-Eliminator]
+patch=1,EE,0051BEB1,extended,00000003
+
+[Contintental Run-Race 1]
+patch=1,EE,0051BEB2,extended,00000003
+
+[Riviera-Road Rage 2]
+patch=1,EE,0051BEB3,extended,00000003
+
+[Alpine-Face-Off]
+patch=1,EE,0051BEB4,extended,00000003
+
+[Coastal Dream-Road Rage 1]
+patch=1,EE,0051BEB5,extended,00000003
+
+[Coastal Dream-Road Rage 2]
+patch=1,EE,0051BEB6,extended,00000003
+
+[Continental Run-Race 2]
+patch=1,EE,0051BEB8,extended,00000003
+
+[Continental Run-Special Event]
+patch=1,EE,0051BEB9,extended,00000003
+
+[Continental Run-Face-Off 2]
+patch=1,EE,0051BEBA,extended,00000003
+
+[Alpine Expressway-Sports Grand Prix]
+patch=1,EE,0051BEBB,extended,00000003
+
+[Frozen Park-Face-Off 2]
+patch=1,EE,0051BEBC,extended,00000003
+
+[Winter City-Slip And Slide]
+patch=1,EE,0051BED5,extended,00000003
+
+[Riviera-Grand Slam]
+patch=1,EE,0051BED6,extended,00000003
+
+[Apline-Roadblock]
+patch=1,EE,0051BED7,extended,00000003
+
+[Vineyard-Grapes Of Wrath]
+patch=1,EE,0051BED8,extended,00000003
+
+[Winter City-Pump Up The Tram]
+patch=1,EE,0051BED9,extended,00000003
+
+[Riviera-Get Bent]
+patch=1,EE,0051BEDA,extended,00000003
+
+[Winter City-Corner Chaos]
+patch=1,EE,0051BEDB,extended,00000003
+
+[Vineyard-Jack Knife City]
+patch=1,EE,0051BEDC,extended,00000003
+
+[Riviera-Riviera Rampage]
+patch=1,EE,0051BEE9,extended,00000003
+
+[Winter City-Riverside Wreck]
+patch=1,EE,0051BEEA,extended,00000003
+
+[Vineyard-Grape Fear]
+patch=1,EE,0051BEEB,extended,00000003
+
+[Apline-Don't Look Down]
+patch=1,EE,0051BEEC,extended,00000003
+
+[Riviera-Spin The Wheel]
+patch=1,EE,0051BEED,extended,00000003
+
+[Vineyard-Field Of Screams]
+patch=1,EE,0051BEEE,extended,00000003
+
+[Winter City-Snow Joke]
+patch=1,EE,0051BEEF,extended,00000003
+
+[Alpine-Chilly Crash]
+patch=1,EE,0051BEF0,extended,00000003
+
+[Alpine-Exact Change]
+patch=1,EE,0051BEFD,extended,00000003
+
+[Vineyard-Country Chaos]
+patch=1,EE,0051BEFE,extended,00000003
+
+[Riviera-Cliff Hanger]
+patch=1,EE,0051BEFF,extended,00000003
+
+[Winter City-Market Crash]
+patch=1,EE,0051BF00,extended,00000003
+
+[Winter City-Winter Wipe-Out]
+patch=1,EE,0051BF01,extended,00000003
+
+[Riviera-High Roller]
+patch=1,EE,0051BF02,extended,00000003
+
+[Vineyard-Haul Ass]
+patch=1,EE,0051BF03,extended,00000003
+
+[Alpine-Laneslunacy]
+patch=1,EE,0051BF04,extended,00000003
+
+[Alpine-Snow Plough]
+patch=1,EE,0051BF11,extended,00000003
+
+[Winter City-Crash Landing]
+patch=1,EE,0051BF12,extended,00000003
+
+[Riviera-Break The Bank]
+patch=1,EE,0051BF13,extended,00000003
+
+[Vineyard-Bale Out]
+patch=1,EE,0051BF14,extended,00000003
+
+[Riviera-Go For Broke]
+patch=1,EE,0051BF15,extended,00000003
+
+[Vineyard-Medieval Mash]
+patch=1,EE,0051BF16,extended,00000003
+
+[Winter City-Run For The Bus]
+patch=1,EE,0051BF17,extended,00000003
+
+[Alpine-Corkscrewed]
+patch=1,EE,0051BF18,extended,00000003
+
+[Winter City-On Rampage]
+patch=1,EE,0051BF25,extended,00000003
+
+[Alpine-Jump The Toll]
+patch=1,EE,0051BF26,extended,00000003
+
+[Riviera-Jumping Jam]
+patch=1,EE,0051BF27,extended,00000003
+
+[Vineyard-Crash Au Van]
+patch=1,EE,0051BF28,extended,00000003
+
+[Winter City-Cool For Crash]
+patch=1,EE,0051BF29,extended,00000003
+
+[Riviera-Ship Wrecked]
+patch=1,EE,0051BF2A,extended,00000003
+
+[Vineyard-Gate Crasher]
+patch=1,EE,0051BF2B,extended,00000003
+
+[Alpine-Highway To Hell]
+patch=1,EE,0051BF2C,extended,00000003
+
+[Dockside-Special Event]
+patch=1,EE,0051BE8D,extended,00000003
+
+[Golden City-Special Event]
+patch=1,EE,0051BE97,extended,00000003
+
+[Island Paradise-Special Event]
+patch=1,EE,0051BEA6,extended,00000003
+
+[Tropical Drive-Preview Lap]
+patch=1,EE,0051BEB0,extended,00000003
+
+[Golden City-Road Rage]
+patch=1,EE,0051BEBD,extended,00000003
+
+[Dockside-Eliminator]
+patch=1,EE,0051BEBF,extended,00000003
+
+[Island Paradise-Race]
+patch=1,EE,0051BEC0,extended,00000003
+
+[Golden City-Race]
+patch=1,EE,0051BEC1,extended,00000003
+
+[Dockside-Road Rage 1]
+patch=1,EE,0051BEC2,extended,00000003
+
+[Island Paradise-Face-Off]
+patch=1,EE,0051BEC3,extended,00000003
+
+[Dockside-Face-Off]
+patch=1,EE,0051BEC4,extended,00000003
+
+[Island Paradise-Eliminator]
+patch=1,EE,0051BEC5,extended,00000003
+
+[Tropical Drive-Race 1]
+patch=1,EE,0051BEC6,extended,00000003
+
+[Tropical Drive-Race 2]
+patch=1,EE,0051BEC7,extended,00000003
+
+[Tropical Drive-Road Rage]
+patch=1,EE,0051BEC8,extended,00000003
+
+[Golden City-Face-Off]
+patch=1,EE,0051BEC9,extended,00000003
+
+[Dockside-Road Rage 2]
+patch=1,EE,0051BECA,extended,00000003
+
+[Tropical Drive-Super Grand Prix]
+patch=1,EE,0051BECC,extended,00000003
+
+[Golden City-Neon Nightmare]
+patch=1,EE,0051BEDD,extended,00000003
+
+[Island Paradise-Paradise Peril]
+patch=1,EE,0051BEDE,extended,00000003
+
+[Dockside-Rock The Dock]
+patch=1,EE,0051BEDF,extended,00000003
+
+[Island Paradise-Ruined Holidy]
+patch=1,EE,0051BEE0,extended,00000003
+
+[Golden City-Tuk Down]
+patch=1,EE,0051BEE1,extended,00000003
+
+[Golden City-Handle With Care]
+patch=1,EE,0051BEE2,extended,00000003
+
+[Golden City-Turn & Burn]
+patch=1,EE,0051BEF1,extended,00000003
+
+[Dockside-Exit The Dragon]
+patch=1,EE,0051BEF2,extended,00000003
+
+[Island Paradise-Tropical Storm]
+patch=1,EE,0051BEF3,extended,00000003
+
+[Golden City-Crossing Crush]
+patch=1,EE,0051BEF4,extended,00000003
+
+[Golden City-Freeway Thunder]
+patch=1,EE,0051BEF5,extended,00000003
+
+[Island Paradise-Drive Angry]
+patch=1,EE,0051BEF6,extended,00000003
+
+[Golden City-Road To Ruin]
+patch=1,EE,0051BF05,extended,00000003
+
+[Island Paradise-Jungle Rumble]
+patch=1,EE,0051BF06,extended,00000003
+
+[Dockside-Reiko Chet]
+patch=1,EE,0051BF07,extended,00000003
+
+[Island Paradise-Airstrike]
+patch=1,EE,0051BF08,extended,00000003
+
+[Golden City-Trash Smash]
+patch=1,EE,0051BF09,extended,00000003
+
+[Dockside-Whirlwind]
+patch=1,EE,0051BF0A,extended,00000003
+
+[Dockside-Look Both Ways]
+patch=1,EE,0051BF19,extended,00000003
+
+[Golden City-Heavy Hitter]
+patch=1,EE,0051BF1A,extended,00000003
+
+[Island Paradise-Steel Tsunami]
+patch=1,EE,0051BF1B,extended,00000003
+
+[Dockside-Buckle Up]
+patch=1,EE,0051BF1C,extended,00000003
+
+[Island Paradise-Uphill Struggle]
+patch=1,EE,0051BF1D,extended,00000003
+
+[Golden City-Eastern Block]
+patch=1,EE,0051BF1E,extended,00000003
+
+[Golden City-Crash Fu]
+patch=1,EE,0051BF2D,extended,00000003
+
+[Dockside-The Crate Escape]
+patch=1,EE,0051BF2E,extended,00000003
+
+[Island Paradise-Tourist Trap]
+patch=1,EE,0051BF2F,extended,00000003
+
+[Island Paradise-Pure Scores]
+patch=1,EE,0051BF30,extended,00000003
+
+[Island Paradise-Lost Luggage]
+patch=1,EE,0051BF31,extended,00000003
+
+[Dockside-Crashed Out]
+patch=1,EE,0051BF32,extended,00000003
+
+[Takedown 1]
+patch=1,EE,0051BF33,extended,00000001
+
+[Takedown 2]
+patch=1,EE,0051BF34,extended,00000001
+
+[Takedown 3]
+patch=1,EE,0051BF35,extended,00000001
+
+[Takedown 4]
+patch=1,EE,0051BF36,extended,00000001
+
+[Takedown 5]
+patch=1,EE,0051BF37,extended,00000001
+
+[Takedown 6]
+patch=1,EE,0051BF38,extended,00000001
+
+[Takedown 7]
+patch=1,EE,0051BF39,extended,00000001
+
+[Takedown 8]
+patch=1,EE,0051BF3A,extended,00000001
+
+[Takedown 9]
+patch=1,EE,0051BF3B,extended,00000001
+
+[Takedown 10]
+patch=1,EE,0051BF3C,extended,00000001
+
+[Takedown 11]
+patch=1,EE,0051BF3D,extended,00000001
+
+[Takedown 12]
+patch=1,EE,0051BF3E,extended,00000001
+
+[Takedown 13]
+patch=1,EE,0051BF3F,extended,00000001
+
+[Takedown 14]
+patch=1,EE,0051BF40,extended,00000001
+
+[Takedown 15]
+patch=1,EE,0051BF41,extended,00000001
+
+[Takedown 16]
+patch=1,EE,0051BF42,extended,00000001
+
+[Takedown 17]
+patch=1,EE,0051BF43,extended,00000001
+
+[Takedown 18]
+patch=1,EE,0051BF44,extended,00000001
+
+[Takedown 19]
+patch=1,EE,0051BF45,extended,00000001
+
+[Takedown 20]
+patch=1,EE,0051BF46,extended,00000001
+
+[All Signature Takedowns]
+patch=1,EE,0051BF33,extended,00000001
+patch=1,EE,4051BF34,extended,00040001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1051BF44,extended,00000101
+patch=1,EE,0051BF46,extended,00000001
+
+[Headline 1]
+patch=1,EE,0051BF47,extended,00000001
+
+[Headline 2]
+patch=1,EE,0051BF48,extended,00000001
+
+[Headline 3]
+patch=1,EE,0051BF49,extended,00000001
+
+[Headline 4]
+patch=1,EE,0051BF4A,extended,00000001
+
+[Headline 5]
+patch=1,EE,0051BF4B,extended,00000001
+
+[Headline 6]
+patch=1,EE,0051BF4C,extended,00000001
+
+[Headline 7]
+patch=1,EE,0051BF4D,extended,00000001
+
+[Headline 8]
+patch=1,EE,0051BF4E,extended,00000001
+
+[Headline 9]
+patch=1,EE,0051BF4F,extended,00000001
+
+[Headline 10]
+patch=1,EE,0051BF50,extended,00000001
+
+[All Headlines]
+patch=1,EE,0051BF47,extended,00000001
+patch=1,EE,2051BF48,extended,01010101
+patch=1,EE,2051BF4C,extended,01010101
+patch=1,EE,0051BF50,extended,00000001
+
+[Easy Takedowns-2 Wall Takedowns In A Race]
+patch=1,EE,2051BE58,extended,00000002
+
+[Easy Takedowns-1st Car Takedown]
+patch=1,EE,2051BE44,extended,00000001
+
+[Easy/Expert Takedowns-1st/3rd Aftertouch Takedown]
+patch=1,EE,2051BE5C,extended,00000003
+
+[All Takedowns-5/10/15 Takedowns In A Race]
+patch=1,EE,2051BE68,extended,0000000F
+
+[Easy Takedowns-1st Takedown Rampage]
+patch=1,EE,2051BE78,extended,00000001
+
+[Advanced Takedowns-1st Revenge Takedown]
+patch=1,EE,2051BE7C,extended,00000001
+
+[Advanced Takedowns-1st Psyche Out Takedown]
+patch=1,EE,2051BE60,extended,00000001
+
+[Advanced Takedowns-1st Big Rig Takedown]
+patch=1,EE,2051BE50,extended,00000001
+
+[Advanced Takedowns-2 Bus Takedowns In A Race]
+patch=1,EE,2051BE48,extended,00000002
+
+[Expert Takedowns-1st Double Takedown]
+patch=1,EE,2051BE70,extended,00000001
+
+[Expert Takedowns-2 Tram Takedowns In A Race]
+patch=1,EE,2051BE4C,extended,00000002
+
+[Expert Takedowns-2 Trailer Takedowns In A Race]
+patch=1,EE,2051BE54,extended,00000002
+
+[Takedowns-20/40 Takedowns In A Road Rage Event]
+patch=1,EE,2051BE6C,extended,00000028
+
+[Champion Takedowns-1st Triple Takedown]
+patch=1,EE,2051BE74,extended,00000001
+
+[Champion Takedowns-1500/2000 Total Takedowns]
+patch=1,EE,2051BC60,extended,05F5E0FF

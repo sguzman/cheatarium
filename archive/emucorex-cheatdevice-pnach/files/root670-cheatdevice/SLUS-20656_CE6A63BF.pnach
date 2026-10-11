@@ -1,0 +1,445 @@
+gametitle=X-Men-Legends (SLUS-20656)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011838C,extended,0C048FC6
+
+[Infinite Health]
+patch=1,EE,204D540C,extended,E480023C
+
+[Infinite Energy]
+patch=1,EE,203CEE3C,extended,E4810244
+
+[Infinite All Health Packs]
+patch=1,EE,20389F98,extended,00000000
+
+[Max All Health Packs]
+patch=1,EE,20389F98,extended,24030063
+patch=1,EE,20389F9C,extended,A243001C
+
+[Infinite Health Packs]
+patch=1,EE,0079A130,extended,00000063
+
+[Infinite Energy Packs]
+patch=1,EE,0079A154,extended,00000063
+
+[Max Tech Bits]
+patch=1,EE,2079A5A0,extended,000F423F
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D0C92D42,extended,0000FBFE
+patch=1,EE,201414C8,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D0C92D42,extended,0000FEFE
+patch=1,EE,201414C8,extended,E61405D8
+
+[Max Credits (Danger Room)]
+patch=1,EE,20716AA8,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,11031B48,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21031B48,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01031B50,extended,00000063
+
+[Max Strike]
+patch=1,EE,01031B53,extended,00000063
+
+[Max Agility]
+patch=1,EE,01031B54,extended,00000063
+
+[Max Body]
+patch=1,EE,01031B55,extended,00000063
+
+[Max Focus]
+patch=1,EE,01031B56,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01031B63,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01031B64,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,110320B8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,210320B8,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,010320C0,extended,00000063
+
+[Max Strike]
+patch=1,EE,010320C3,extended,00000063
+
+[Max Agility]
+patch=1,EE,010320C4,extended,00000063
+
+[Max Body]
+patch=1,EE,010320C5,extended,00000063
+
+[Max Focus]
+patch=1,EE,010320C6,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,010320D3,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,010320D4,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11032628,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21032628,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01032630,extended,00000063
+
+[Max Strike]
+patch=1,EE,01032633,extended,00000063
+
+[Max Agility]
+patch=1,EE,01032634,extended,00000063
+
+[Max Body]
+patch=1,EE,01032635,extended,00000063
+
+[Max Focus]
+patch=1,EE,01032636,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01032643,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01032644,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11032B98,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21032B98,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01032BA0,extended,00000063
+
+[Max Strike]
+patch=1,EE,01032BA3,extended,00000063
+
+[Max Agility]
+patch=1,EE,01032BA4,extended,00000063
+
+[Max Body]
+patch=1,EE,01032BA5,extended,00000063
+
+[Max Focus]
+patch=1,EE,01032BA6,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01032BB3,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01032BB4,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11033108,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21033108,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01033110,extended,00000063
+
+[Max Strike]
+patch=1,EE,01033113,extended,00000063
+
+[Max Agility]
+patch=1,EE,01033114,extended,00000063
+
+[Max Body]
+patch=1,EE,01033115,extended,00000063
+
+[Max Focus]
+patch=1,EE,01033116,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01033123,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01033124,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11033678,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21033678,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01033680,extended,00000063
+
+[Max Strike]
+patch=1,EE,01033683,extended,00000063
+
+[Max Agility]
+patch=1,EE,01033684,extended,00000063
+
+[Max Body]
+patch=1,EE,01033685,extended,00000063
+
+[Max Focus]
+patch=1,EE,01033686,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01033693,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01033694,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11033BE8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21033BE8,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01033BF0,extended,00000063
+
+[Max Strike]
+patch=1,EE,01033BF3,extended,00000063
+
+[Max Agility]
+patch=1,EE,01033BF4,extended,00000063
+
+[Max Body]
+patch=1,EE,01033BF5,extended,00000063
+
+[Max Focus]
+patch=1,EE,01033BF6,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01033C03,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01033C04,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11034158,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21034158,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01034160,extended,00000063
+
+[Max Strike]
+patch=1,EE,01034163,extended,00000063
+
+[Max Agility]
+patch=1,EE,01034164,extended,00000063
+
+[Max Body]
+patch=1,EE,01034165,extended,00000063
+
+[Max Focus]
+patch=1,EE,01034166,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01034173,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01034174,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,110346C8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,210346C8,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,010346D0,extended,00000063
+
+[Max Strike]
+patch=1,EE,010346D3,extended,00000063
+
+[Max Agility]
+patch=1,EE,010346D4,extended,00000063
+
+[Max Body]
+patch=1,EE,010346D5,extended,00000063
+
+[Max Focus]
+patch=1,EE,010346D6,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,010346E3,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,010346E4,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11034C38,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21034C38,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01034C40,extended,00000063
+
+[Max Strike]
+patch=1,EE,01034C43,extended,00000063
+
+[Max Agility]
+patch=1,EE,01034C44,extended,00000063
+
+[Max Body]
+patch=1,EE,01034C45,extended,00000063
+
+[Max Focus]
+patch=1,EE,01034C46,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01034C53,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01034C54,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,110351A8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,210351A8,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,010351B0,extended,00000063
+
+[Max Strike]
+patch=1,EE,010351B3,extended,00000063
+
+[Max Agility]
+patch=1,EE,010351B4,extended,00000063
+
+[Max Body]
+patch=1,EE,010351B5,extended,00000063
+
+[Max Focus]
+patch=1,EE,010351B6,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,010351C3,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,010351C4,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11035718,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21035718,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01035720,extended,00000063
+
+[Max Strike]
+patch=1,EE,01035723,extended,00000063
+
+[Max Agility]
+patch=1,EE,01035724,extended,00000063
+
+[Max Body]
+patch=1,EE,01035725,extended,00000063
+
+[Max Focus]
+patch=1,EE,01035726,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01035733,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01035734,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11035C88,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21035C88,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01035C90,extended,00000063
+
+[Max Strike]
+patch=1,EE,01035C93,extended,00000063
+
+[Max Agility]
+patch=1,EE,01035C94,extended,00000063
+
+[Max Body]
+patch=1,EE,01035C95,extended,00000063
+
+[Max Focus]
+patch=1,EE,01035C96,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01035CA3,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01035CA4,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,110361F8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,210361F8,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01036200,extended,00000063
+
+[Max Strike]
+patch=1,EE,01036203,extended,00000063
+
+[Max Agility]
+patch=1,EE,01036204,extended,00000063
+
+[Max Body]
+patch=1,EE,01036205,extended,00000063
+
+[Max Focus]
+patch=1,EE,01036206,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01036213,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01036214,extended,00000063
+
+[Quick Exp Gain]
+patch=1,EE,11036768,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,21036768,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,01036770,extended,00000063
+
+[Max Strike]
+patch=1,EE,01036773,extended,00000063
+
+[Max Agility]
+patch=1,EE,01036774,extended,00000063
+
+[Max Body]
+patch=1,EE,01036775,extended,00000063
+
+[Max Focus]
+patch=1,EE,01036776,extended,00000063
+
+[Infinite Skill Points]
+patch=1,EE,01036783,extended,00000063
+
+[Infinite Stat Points]
+patch=1,EE,01036784,extended,00000063

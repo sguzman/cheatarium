@@ -1,0 +1,135 @@
+gametitle=007 Nightfire (SLUS-20579)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90A13A04,extended,0C2814E7
+patch=1,EE,902274D4,extended,0C08D8E2
+patch=1,EE,902C8EB4,extended,0C0A9FA1
+
+[Never Reload]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,201A1978,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,201A1A44,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202582F8,extended,01441821
+
+[Infinite Health]
+patch=1,EE,E0022420,extended,0022433C
+patch=1,EE,2019BD24,extended,3C0142C8
+patch=1,EE,2019BD2C,extended,AE610894
+
+[Weapons With Zoom Can Zoom HELLA]
+patch=1,EE,E0022420,extended,0022433C
+patch=1,EE,201A1B84,extended,00000000
+patch=1,EE,201A1BC0,extended,00000000
+
+[Super Jump & Infinite Health]
+patch=1,EE,E0032420,extended,0022433C
+patch=1,EE,201918B8,extended,3C01BF80
+patch=1,EE,201960F8,extended,3C0142C8
+patch=1,EE,20196100,extended,AE010894
+
+[Mega Jump & Infinite Health]
+patch=1,EE,E0032420,extended,0022433C
+patch=1,EE,201918B8,extended,3C01C000
+patch=1,EE,201960F8,extended,3C0142C8
+patch=1,EE,20196100,extended,AE010894
+
+[Ultra Jump & Infinite Health]
+patch=1,EE,E0032420,extended,0022433C
+patch=1,EE,201918B8,extended,3C01C080
+patch=1,EE,201960F8,extended,3C0142C8
+patch=1,EE,20196100,extended,AE010894
+
+[Infinite Health]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202A3738,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202A3740,extended,00000001
+
+[Paris Prelude]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF2F0,extended,00000001
+
+[The Exchange]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF308,extended,00000001
+
+[Alpine Escape]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF320,extended,00000001
+
+[Enemies Vanquished]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF338,extended,00000001
+
+[Double Cross]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF350,extended,00000001
+
+[Night Shift]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF368,extended,00000001
+
+[Chain Reaction]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF380,extended,00000001
+
+[Phoenix Fire]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF398,extended,00000001
+
+[Deep Descent]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF3B0,extended,00000001
+
+[Island Infiltration]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF3C8,extended,00000001
+
+[Countdown]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF3E0,extended,00000001
+
+[Equinox]
+patch=1,EE,D022433C,extended,10002420
+patch=1,EE,202DF3F8,extended,00000001
+
+[All Levels]
+patch=1,EE,E00C2420,extended,0022433C
+patch=1,EE,202DF2F0,extended,00000001
+patch=1,EE,202DF308,extended,00000001
+patch=1,EE,202DF320,extended,00000001
+patch=1,EE,202DF338,extended,00000001
+patch=1,EE,202DF350,extended,00000001
+patch=1,EE,202DF368,extended,00000001
+patch=1,EE,202DF380,extended,00000001
+patch=1,EE,202DF398,extended,00000001
+patch=1,EE,202DF3B0,extended,00000001
+patch=1,EE,202DF3C8,extended,00000001
+patch=1,EE,202DF3E0,extended,00000001
+patch=1,EE,202DF3F8,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,D024C174,extended,1000D2FC
+patch=1,EE,2020E5C8,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,D024C174,extended,1000D2FC
+patch=1,EE,2020E5C4,extended,00501021
+
+[Infinite Health]
+patch=1,EE,E004D2FC,extended,0024C174
+patch=1,EE,200C0220,extended,3C01453B
+patch=1,EE,200C0224,extended,08082622
+patch=1,EE,200C0228,extended,AC610378
+patch=1,EE,20209868,extended,08030088

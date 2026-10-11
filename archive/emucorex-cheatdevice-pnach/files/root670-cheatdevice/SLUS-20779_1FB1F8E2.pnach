@@ -1,0 +1,256 @@
+gametitle=Dragonball Z-Budokai 2 (SLUS-20779)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90115524,extended,0C048E98
+
+[Unlock All Characters]
+patch=1,EE,20693EF8,extended,FFFFFFFF
+patch=1,EE,20693EFC,extended,FFFFFFFF
+
+[Infinite Money]
+patch=1,EE,10693FF8,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,20693FF8,extended,05F5E0FF
+
+[Buying Skills Doesnt Decrease Money]
+patch=1,EE,2028A1CC,extended,00000000
+
+[Buying Skills Increases Money]
+patch=1,EE,2028A1C8,extended,00621021
+
+[Infinite Health P1]
+patch=1,EE,203E9A84,extended,453B8000
+
+[75% Health P1]
+patch=1,EE,D03E9A86,extended,0000453B
+patch=1,EE,203E9A84,extended,450CA000
+
+[50% Health P1]
+patch=1,EE,D03E9A86,extended,0000453B
+patch=1,EE,203E9A84,extended,44BB8000
+
+[25% Health P1]
+patch=1,EE,D03E9A86,extended,0000453B
+patch=1,EE,203E9A84,extended,443B8000
+
+[1-Hit Death P1]
+patch=1,EE,D03E9A86,extended,0000453B
+patch=1,EE,203E9A84,extended,3F800000
+
+[No Health P1]
+patch=1,EE,203E9A84,extended,00000000
+
+[Max Level 7 KI Energy P1]
+patch=1,EE,203E9A8C,extended,442F0000
+
+[No KI Energy P1]
+patch=1,EE,203E9A8C,extended,00000000
+
+[Level 1 KI Energy P1]
+patch=1,EE,203E9A8C,extended,42C80000
+
+[Level 2 KI Energy P1]
+patch=1,EE,203E9A8C,extended,43480000
+
+[Level 3 KI Energy P1]
+patch=1,EE,203E9A8C,extended,43960000
+
+[Level 4 KI Energy P1]
+patch=1,EE,203E9A8C,extended,43C80000
+
+[Level 5 KI Energy P1]
+patch=1,EE,203E9A8C,extended,43FA0000
+
+[Level 6 KI Energy P1]
+patch=1,EE,203E9A8C,extended,44160000
+
+[Infinite Health P2]
+patch=1,EE,203F39D4,extended,453B8000
+
+[75% Health P2]
+patch=1,EE,D03F39D6,extended,0000453B
+patch=1,EE,203F39D4,extended,450CA000
+
+[50% Health P2]
+patch=1,EE,D03F39D6,extended,0000453B
+patch=1,EE,203F39D4,extended,44BB8000
+
+[25% Health P2]
+patch=1,EE,D03F39D6,extended,0000453B
+patch=1,EE,203F39D4,extended,443B8000
+
+[1-Hit Death P2]
+patch=1,EE,D03F39D6,extended,0000453B
+patch=1,EE,203F39D4,extended,3F800000
+
+[No Health P2]
+patch=1,EE,203F39D4,extended,00000000
+
+[Max Level 7 KI Energy P2]
+patch=1,EE,203F39DC,extended,442F0000
+
+[No KI Energy P2]
+patch=1,EE,203F39DC,extended,00000000
+
+[Level 1 KI Energy P2]
+patch=1,EE,203F39DC,extended,42C80000
+
+[Level 2 KI Energy P2]
+patch=1,EE,203F39DC,extended,43480000
+
+[Level 3 KI Energy P2]
+patch=1,EE,203F39DC,extended,43960000
+
+[Level 4 KI Energy P2]
+patch=1,EE,203F39DC,extended,43C80000
+
+[Level 5 KI Energy P2]
+patch=1,EE,203F39DC,extended,43FA0000
+
+[Level 6 KI Energy P2]
+patch=1,EE,203F39DC,extended,44160000
+
+[Have All Ability & Physical Capsules]
+patch=1,EE,00694875,extended,00000001
+patch=1,EE,10694876,extended,00000101
+patch=1,EE,40694878,extended,00300001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,10694938,extended,00000101
+patch=1,EE,0069493A,extended,00000001
+patch=1,EE,00694949,extended,00000001
+patch=1,EE,1069494A,extended,00000101
+patch=1,EE,0069494B,extended,00000001
+patch=1,EE,2069494C,extended,01010101
+
+[Have All Support Capsules]
+patch=1,EE,00694950,extended,00000001
+patch=1,EE,00694961,extended,00000001
+patch=1,EE,00694971,extended,00000001
+patch=1,EE,0069497E,extended,00000001
+patch=1,EE,0069498B,extended,00000001
+patch=1,EE,00694996,extended,00000001
+patch=1,EE,006949A1,extended,00000001
+patch=1,EE,106949AE,extended,00000101
+patch=1,EE,406949B0,extended,00240001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00694A40,extended,00000001
+
+[Have All System Capsules]
+patch=1,EE,00694A41,extended,00000001
+patch=1,EE,10694A42,extended,00000101
+patch=1,EE,40694A44,extended,000D0001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,10694A78,extended,00000101
+patch=1,EE,00694A7A,extended,00000001
+
+[Infinite Health]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A84,extended,453B8000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39D4,extended,453B8000
+
+[Max Level 7 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,442F0000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,442F0000
+
+[No KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,00000000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,00000000
+
+[Level 1 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,42C80000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,42C80000
+
+[Level 2 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,43480000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,43480000
+
+[Level 3 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,43960000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,43960000
+
+[Level 4 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,43C80000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,43C80000
+
+[Level 5 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,43FA0000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,43FA0000
+
+[Level 6 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203E9A8C,extended,44160000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203F39DC,extended,44160000
+
+[Infinite Health]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39D4,extended,453B8000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A84,extended,453B8000
+
+[Max Level 7 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,442F0000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,442F0000
+
+[No KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,00000000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,00000000
+
+[Level 1 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,42C80000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,42C80000
+
+[Level 2 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,43480000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,43480000
+
+[Level 3 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,43960000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,43960000
+
+[Level 4 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,43C80000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,43C80000
+
+[Level 5 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,43FA0000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,43FA0000
+
+[Level 6 KI Energy]
+patch=1,EE,D03B6328,extended,00000000
+patch=1,EE,203F39DC,extended,44160000
+patch=1,EE,D03B6328,extended,00000001
+patch=1,EE,203E9A8C,extended,44160000

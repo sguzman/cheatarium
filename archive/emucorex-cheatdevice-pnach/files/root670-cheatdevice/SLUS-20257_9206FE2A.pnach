@@ -1,0 +1,34 @@
+gametitle=Frogger-The Great Quest (SLUS-20257)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,001A369F
+
+[Have All Stones]
+patch=1,EE,0044285D,extended,000000FF
+
+[Have All Coins]
+patch=1,EE,00442844,extended,000000FF
+patch=1,EE,0044285F,extended,000000FF
+patch=1,EE,10442860,extended,0000FFFF
+
+[Have All Gems]
+patch=1,EE,00442845,extended,000000FF
+patch=1,EE,10442862,extended,0000FFFF
+patch=1,EE,10442864,extended,0000FFFF
+
+[Infinite Stones]
+patch=1,EE,0044283D,extended,00000002
+patch=1,EE,1044283E,extended,00000202
+patch=1,EE,00442840,extended,00000002
+
+[Have Key]
+patch=1,EE,00442849,extended,00000001
+patch=1,EE,00442866,extended,00000001
+
+[Infinite Health]
+patch=1,EE,201325F0,extended,24020064
+patch=1,EE,201325F4,extended,03E00008
+patch=1,EE,201325F8,extended,AC8202CC

@@ -1,0 +1,463 @@
+gametitle=Harry Potter And The Sorcerer's Stone (SLUS-20826)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902F7674,extended,0C0C2318
+
+[Infinite Health]
+patch=1,EE,203949A0,extended,447A0000
+
+[Max Health]
+patch=1,EE,203949A4,extended,447A0000
+
+[Infinite Bertie Bott's Every Flavour Bean]
+patch=1,EE,10394998,extended,0000270F
+
+[Max Bertie Bott's Every Flavour Bean]
+patch=1,EE,1039499A,extended,0000270F
+
+[Max Infinite Bertie Bott's Every Flavour Bean]
+patch=1,EE,20394998,extended,270F270F
+
+[Slot 1]
+patch=1,EE,10394980,extended,00000063
+
+[Slot 2]
+patch=1,EE,10394982,extended,00000063
+
+[Slot 3]
+patch=1,EE,10394984,extended,00000063
+
+[Slot 4]
+patch=1,EE,10394986,extended,00000063
+
+[Slot 5]
+patch=1,EE,10394988,extended,00000063
+
+[Slot 6]
+patch=1,EE,1039498A,extended,00000063
+
+[Slot 7]
+patch=1,EE,1039498C,extended,00000063
+
+[Slot 8]
+patch=1,EE,1039498E,extended,00000063
+
+[Slot 9]
+patch=1,EE,10394990,extended,00000063
+
+[Slot 10]
+patch=1,EE,10394992,extended,00000063
+
+[Slot 11]
+patch=1,EE,10394994,extended,00000063
+
+[Slot 12]
+patch=1,EE,10394996,extended,00000063
+
+[Folio Magi]
+patch=1,EE,103949A8,extended,00000003
+
+[Completed Task & Hints]
+patch=1,EE,103949AA,extended,00000010
+
+[School Rewards]
+patch=1,EE,103949AC,extended,00000005
+
+[Spell Book]
+patch=1,EE,103949AE,extended,00000001
+
+[Folio Bruti Volume I]
+patch=1,EE,103949B0,extended,00000002
+
+[Potions Ingredients]
+patch=1,EE,103949B2,extended,00000004
+
+[The Standard Book Of Spells]
+patch=1,EE,103949B4,extended,00000006
+
+[Invisibility Cloak]
+patch=1,EE,103949B6,extended,00000007
+
+[Wiggentree Bark]
+patch=1,EE,103949B8,extended,00000008
+
+[Dittany]
+patch=1,EE,103949BA,extended,00000009
+
+[Asphodel]
+patch=1,EE,103949BC,extended,0000000A
+
+[Flobberworm Mucus]
+patch=1,EE,103949BE,extended,0000000B
+
+[Moondew]
+patch=1,EE,103949C0,extended,0000000C
+
+[Puffapod Spores]
+patch=1,EE,103949C2,extended,0000000D
+
+[A Study Of Recent Developments In Wizardry]
+patch=1,EE,103949C4,extended,0000000E
+
+[Philosophersstone]
+patch=1,EE,103949C6,extended,0000000F
+
+[All Quest Items]
+patch=1,EE,203949A8,extended,00100003
+patch=1,EE,203949AC,extended,00010005
+patch=1,EE,203949B0,extended,00040002
+patch=1,EE,203949B4,extended,00070006
+patch=1,EE,203949B8,extended,00090008
+patch=1,EE,203949BC,extended,000B000A
+patch=1,EE,203949C0,extended,000D000C
+patch=1,EE,203949C4,extended,000F000E
+
+[Merlin]
+patch=1,EE,103949E4,extended,00000009
+
+[Cornelius Agrippa]
+patch=1,EE,103949E6,extended,00000009
+
+[Elfrida Clagg]
+patch=1,EE,103949E8,extended,00000009
+
+[Grogan Stump]
+patch=1,EE,103949EA,extended,00000009
+
+[Gulliver Pokeby]
+patch=1,EE,103949EC,extended,00000009
+
+[Glanmore Peakes]
+patch=1,EE,103949EE,extended,00000009
+
+[Hesper Starkey]
+patch=1,EE,103949F0,extended,00000009
+
+[Derwent Shimpling]
+patch=1,EE,103949F2,extended,00000009
+
+[Gunhilda Of Gorsemoor]
+patch=1,EE,103949F4,extended,00000009
+
+[Burdock Muldoon]
+patch=1,EE,103949F6,extended,00000009
+
+[Herpo The Foul]
+patch=1,EE,103949F8,extended,00000009
+
+[Merwyn The Malicious]
+patch=1,EE,103949FA,extended,00000009
+
+[Andros The Invincible]
+patch=1,EE,103949FC,extended,00000009
+
+[Fulbert The Fearful]
+patch=1,EE,103949FE,extended,00000009
+
+[Paracelsus]
+patch=1,EE,10394A00,extended,00000009
+
+[Cliodne]
+patch=1,EE,10394A02,extended,00000009
+
+[Morgan Le Fay]
+patch=1,EE,10394A04,extended,00000009
+
+[Uric The Oddball]
+patch=1,EE,10394A06,extended,00000009
+
+[Newt Scamander]
+patch=1,EE,10394A08,extended,00000009
+
+[Wendelin The Weird]
+patch=1,EE,10394A0A,extended,00000009
+
+[Lord Stoddard Withers]
+patch=1,EE,10394A0C,extended,00000009
+
+[Circe]
+patch=1,EE,10394A0E,extended,00000009
+
+[Glenda Chittock]
+patch=1,EE,10394A10,extended,00000009
+
+[Adalbert Waffling]
+patch=1,EE,10394A12,extended,00000009
+
+[Perpetua Fancourt]
+patch=1,EE,10394A14,extended,00000009
+
+[Almerick Sawbridge]
+patch=1,EE,10394A16,extended,00000009
+
+[Mirabella Plunkett]
+patch=1,EE,10394A18,extended,00000009
+
+[Tilly TOke]
+patch=1,EE,10394A1A,extended,00000009
+
+[Archibald Alderton]
+patch=1,EE,10394A1C,extended,00000009
+
+[Artemisia Lufkin]
+patch=1,EE,10394A1E,extended,00000009
+
+[Balfour Blane]
+patch=1,EE,10394A20,extended,00000009
+
+[Bridget Wenlock]
+patch=1,EE,10394A22,extended,00000009
+
+[Beaumont Majoribanks]
+patch=1,EE,10394A24,extended,00000009
+
+[Donaghan Tremlett]
+patch=1,EE,10394A26,extended,00000009
+
+[Bowman Wright]
+patch=1,EE,10394A28,extended,00000009
+
+[Joscelind Wadcock]
+patch=1,EE,10394A2A,extended,00000009
+
+[Cassandra Vablatsky]
+patch=1,EE,10394A2C,extended,00000009
+
+[Chauncey Oldridge]
+patch=1,EE,10394A2E,extended,00000009
+
+[Gwenog Jones]
+patch=1,EE,10394A30,extended,00000009
+
+[Carlotta Pinkstone]
+patch=1,EE,10394A32,extended,00000009
+
+[Godrick Gryffindor]
+patch=1,EE,10394A34,extended,00000009
+
+[Crispin Cronk]
+patch=1,EE,10394A36,extended,00000009
+
+[Cyprian Youdle]
+patch=1,EE,10394A38,extended,00000009
+
+[Devlin Whitehorn]
+patch=1,EE,10394A3A,extended,00000009
+
+[Dunbar Oglethorpe]
+patch=1,EE,10394A3C,extended,00000009
+
+[Miranda Goshawk]
+patch=1,EE,10394A3E,extended,00000009
+
+[Edgar Stroulger]
+patch=1,EE,10394A40,extended,00000009
+
+[Salazar Slytherin]
+patch=1,EE,10394A42,extended,00000009
+
+[Elladora Ketteridge]
+patch=1,EE,10394A44,extended,00000009
+
+[Musidora Barkwith]
+patch=1,EE,10394A46,extended,00000009
+
+[Ethelred The Ever-Ready]
+patch=1,EE,10394A48,extended,00000009
+
+[Felix Summerbee]
+patch=1,EE,10394A4A,extended,00000009
+
+[Greta Catchlove]
+patch=1,EE,10394A4C,extended,00000009
+
+[Gaspard Shingleton]
+patch=1,EE,10394A4E,extended,00000009
+
+[Honoria Nutcombe]
+patch=1,EE,10394A50,extended,00000009
+
+[Gideon Crumb]
+patch=1,EE,10394A52,extended,00000009
+
+[Gifford Ollerton]
+patch=1,EE,10394A54,extended,00000009
+
+[Glower Hipworth]
+patch=1,EE,10394A56,extended,00000009
+
+[Gregory The Smarmy]
+patch=1,EE,10394A58,extended,00000009
+
+[Laverne De Montmorency]
+patch=1,EE,10394A5A,extended,00000009
+
+[Havelock Sweeting]
+patch=1,EE,10394A5C,extended,00000009
+
+[Ignatia Wildsmith]
+patch=1,EE,10394A5E,extended,00000009
+
+[Herman Wintringham]
+patch=1,EE,10394A60,extended,00000009
+
+[Jocunda Sykes]
+patch=1,EE,10394A62,extended,00000009
+
+[Gondoline Oliphant]
+patch=1,EE,10394A64,extended,00000009
+
+[Flavius Belby]
+patch=1,EE,10394A66,extended,00000009
+
+[Justus Pilliwickle]
+patch=1,EE,10394A68,extended,00000009
+
+[Kirley Duke]
+patch=1,EE,10394A6A,extended,00000009
+
+[Bertie Bott]
+patch=1,EE,10394A6C,extended,00000009
+
+[Leopoldina Smethwyck]
+patch=1,EE,10394A6E,extended,00000009
+
+[Queen Maeve]
+patch=1,EE,10394A70,extended,00000009
+
+[Helga Hufflepuff]
+patch=1,EE,10394A72,extended,00000009
+
+[Mopsus]
+patch=1,EE,10394A74,extended,00000009
+
+[Montague Knightley]
+patch=1,EE,10394A76,extended,00000009
+
+[Mungo Bonham]
+patch=1,EE,10394A78,extended,00000009
+
+[Myron Wagtail]
+patch=1,EE,10394A7A,extended,00000009
+
+[Norvel Twonk]
+patch=1,EE,10394A7C,extended,00000009
+
+[Orsino Thruston]
+patch=1,EE,10394A7E,extended,00000009
+
+[Oswald Beamish]
+patch=1,EE,10394A80,extended,00000009
+
+[Beatrix Bloxam]
+patch=1,EE,10394A82,extended,00000009
+
+[Quong Po]
+patch=1,EE,10394A84,extended,00000009
+
+[Rowena Ravenclaw]
+patch=1,EE,10394A86,extended,00000009
+
+[Roderick Plumpton]
+patch=1,EE,10394A88,extended,00000009
+
+[Roland Kegg]
+patch=1,EE,10394A8A,extended,00000009
+
+[Blenheim Stalk]
+patch=1,EE,10394A8C,extended,00000009
+
+[Dorcas Wellbeloved]
+patch=1,EE,10394A8E,extended,00000009
+
+[Thaddeus Thurkell]
+patch=1,EE,10394A90,extended,00000009
+
+[Celestina Warbeck]
+patch=1,EE,10394A92,extended,00000009
+
+[Alberta Toothill]
+patch=1,EE,10394A94,extended,00000009
+
+[Sacharissa Tugwood]
+patch=1,EE,10394A96,extended,00000009
+
+[Wilfred Elphick]
+patch=1,EE,10394A98,extended,00000009
+
+[Xavier Rastrick]
+patch=1,EE,10394A9A,extended,00000009
+
+[Heathcote Barbary]
+patch=1,EE,10394A9C,extended,00000009
+
+[Merton Graves]
+patch=1,EE,10394A9E,extended,00000009
+
+[Yardley Platt]
+patch=1,EE,10394AA0,extended,00000009
+
+[Hengist Of Woodcroft]
+patch=1,EE,10394AA2,extended,00000009
+
+[Alberic Grunnion]
+patch=1,EE,10394AA4,extended,00000009
+
+[Dymphna Furmage]
+patch=1,EE,10394AA6,extended,00000009
+
+[Daisy Dodderidge]
+patch=1,EE,10394AA8,extended,00000009
+
+[Harry Potter]
+patch=1,EE,10394AAA,extended,00000009
+
+[Albus Dumbledore]
+patch=1,EE,10394AAC,extended,00000009
+
+[All Folio Magi Cards]
+patch=1,EE,403949E4,extended,00320001
+patch=1,EE,00090009,extended,00000000
+patch=1,EE,10394AAC,extended,00000009
+
+[Volume I-Ghosts]
+patch=1,EE,20394BE8,extended,00000001
+
+[Volume I-Flying BOoks]
+patch=1,EE,20394BEC,extended,00000001
+
+[Volume I-Gnome]
+patch=1,EE,20394BF0,extended,00000001
+
+[Volume I-Imp]
+patch=1,EE,20394BF4,extended,00000001
+
+[Volume I-Doxy]
+patch=1,EE,20394BF8,extended,00000001
+
+[Volume I-Bowtruckle]
+patch=1,EE,20394BFC,extended,00000001
+
+[Volume I-Gytrash]
+patch=1,EE,20394C00,extended,00000001
+
+[Volume I-Fire Crab]
+patch=1,EE,20394C04,extended,00000001
+
+[Volume I-Puffapod]
+patch=1,EE,20394C08,extended,00000001
+
+[Volume I-Horklump]
+patch=1,EE,20394C0C,extended,00000001
+
+[Volume I-Venemous Tentacula]
+patch=1,EE,20394C10,extended,00000001
+
+[Volume I-Trolls]
+patch=1,EE,20394C14,extended,00000001
+
+[Volume I-Flobberworm]
+patch=1,EE,20394C18,extended,00000001

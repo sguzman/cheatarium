@@ -1,0 +1,246 @@
+gametitle=MDK 2-Armageddon (SLUS-20105)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9019FE34,extended,0C06BD97
+
+[Boxer Mode]
+patch=1,EE,101EF8D0,extended,00000001
+
+[Freeze Time]
+patch=1,EE,201EF0CC,extended,00000001
+
+[Vector Mode]
+patch=1,EE,201EF280,extended,00000003
+
+[Use Real Shadows]
+patch=1,EE,201EFBA8,extended,00000001
+
+[Infinite Health-Kurt (Normal Mode)]
+patch=1,EE,2013F218,extended,03E00008
+patch=1,EE,2013F21C,extended,00000000
+
+[Infinite Health-Kurt (Sniper Mode)]
+patch=1,EE,201413E0,extended,03E00008
+patch=1,EE,201413E4,extended,00000000
+
+[Infinite Health-Max]
+patch=1,EE,2014AA08,extended,03E00008
+patch=1,EE,2014AA0C,extended,00000000
+
+[Infinite Health-Dr. Fluke]
+patch=1,EE,2012EB98,extended,03E00008
+patch=1,EE,2012EB9C,extended,00000000
+
+[Infinite Health-Hyde]
+patch=1,EE,2013AFF8,extended,03E00008
+patch=1,EE,2013AFFC,extended,00000000
+
+[Infinite Ammo-Kurt (Sniper Mode)]
+patch=1,EE,20140EB8,extended,24020000
+
+[Infinite Ammo-Max]
+patch=1,EE,2014B3DC,extended,24020000
+
+[Max Always Has Missiles]
+patch=1,EE,2014B080,extended,00000000
+
+[Infinite Jetpack-Max]
+patch=1,EE,201493F0,extended,00000000
+patch=1,EE,201493F4,extended,00000000
+
+[Kurt Infinite Items/Ammo Usage]
+patch=1,EE,2013FDB0,extended,00000000
+patch=1,EE,2013F5F0,extended,00000000
+
+[Dr. Fluke Infinite Items Usage]
+patch=1,EE,20130960,extended,00000000
+patch=1,EE,20130A80,extended,00000000
+
+[1-Hit Death (Enemies)]
+patch=1,EE,20135950,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Enable Infinite Ammo/Items]
+patch=1,EE,E002FBFE,extended,001F9502
+patch=1,EE,2013C0F8,extended,03E00008
+patch=1,EE,2013C0FC,extended,00000000
+
+[P1 Press {R2}+{SELECT} To Disable Infinite Ammo/Items]
+patch=1,EE,E002F7FE,extended,001F9502
+patch=1,EE,2013C0F8,extended,27BDFF80
+patch=1,EE,2013C0FC,extended,FFB30050
+
+[P1 Press {L1}+{L1}+{R1}+{R2}+{SELECT} To Save Anywhere]
+patch=1,EE,E002F0FE,extended,001F9502
+patch=1,EE,001F03D4,extended,00000001
+patch=1,EE,001F0418,extended,00000001
+
+[Magnum]
+patch=1,EE,201CEE28,extended,447A0000
+patch=1,EE,201CEE2C,extended,00000000
+
+[Uzi]
+patch=1,EE,201CEE5C,extended,447A0000
+patch=1,EE,201CEE60,extended,00000000
+
+[Magnum (The Always Have One)]
+patch=1,EE,201CEE90,extended,447A0000
+patch=1,EE,201CEE94,extended,00000000
+
+[Gatling Gun]
+patch=1,EE,201CEEC4,extended,447A0000
+patch=1,EE,201CEEC8,extended,00000000
+
+[Shotgun]
+patch=1,EE,201CEEF8,extended,447A0000
+patch=1,EE,201CEEFC,extended,00000000
+
+[Laser Gatling?]
+patch=1,EE,201CEF2C,extended,447A0000
+patch=1,EE,201CEF30,extended,00000000
+
+[Guided Rocket]
+patch=1,EE,201CEF60,extended,447A0000
+patch=1,EE,201CEF64,extended,00000000
+
+[All Weapons]
+patch=1,EE,401CEE28,extended,0007000D
+patch=1,EE,447A0000,extended,00000000
+patch=1,EE,401CEE2C,extended,0007000D
+patch=1,EE,00000000,extended,00000000
+
+[Magnum]
+patch=1,EE,201CEE30,extended,0000270F
+
+[Uzi]
+patch=1,EE,201CEE64,extended,0000270F
+
+[Gatling Gun]
+patch=1,EE,201CEECC,extended,0000270F
+
+[Shotgun]
+patch=1,EE,201CEF00,extended,0000270F
+
+[Laser Gatling?]
+patch=1,EE,201CEF34,extended,0000270F
+
+[Guided Rocket]
+patch=1,EE,201CEF68,extended,0000270F
+
+[All Weapons]
+patch=1,EE,201CEE30,extended,0000270F
+patch=1,EE,201CEE64,extended,0000270F
+patch=1,EE,401CEECC,extended,0004000D
+patch=1,EE,0000270F,extended,00000000
+
+[Sniper Bullet]
+patch=1,EE,201CF1D0,extended,447A0000
+patch=1,EE,201CF1D4,extended,00000000
+
+[Sniper Grenade]
+patch=1,EE,201CF204,extended,447A0000
+patch=1,EE,201CF208,extended,00000000
+
+[Sniper Homing]
+patch=1,EE,201CF238,extended,447A0000
+patch=1,EE,201CF23C,extended,00000000
+
+[Sniper Mortar]
+patch=1,EE,201CF26C,extended,447A0000
+patch=1,EE,201CF270,extended,00000000
+
+[Sniper Bounce Mortar]
+patch=1,EE,201CF2A0,extended,447A0000
+patch=1,EE,201CF2A4,extended,00000000
+
+[Super Chaingun]
+patch=1,EE,201CF6B0,extended,447A0000
+patch=1,EE,201CF6B4,extended,00000000
+
+[Laser Chaingun]
+patch=1,EE,201CF6E4,extended,447A0000
+patch=1,EE,201CF6E8,extended,00000000
+
+[All Weapons]
+patch=1,EE,401CF1D0,extended,0005000D
+patch=1,EE,447A0000,extended,00000000
+patch=1,EE,401CF1D4,extended,0005000D
+patch=1,EE,00000000,extended,00000000
+patch=1,EE,201CF6B0,extended,447A0000
+patch=1,EE,201CF6B4,extended,00000000
+patch=1,EE,201CF6E4,extended,447A0000
+patch=1,EE,201CF6E8,extended,00000000
+
+[Sniper Grenade]
+patch=1,EE,201CF20C,extended,0000270F
+
+[Sniper Homing]
+patch=1,EE,201CF240,extended,0000270F
+
+[Sniper Mortar]
+patch=1,EE,201CF274,extended,0000270F
+
+[Sniper Bounce Mortar]
+patch=1,EE,201CF2A8,extended,0000270F
+
+[Super Chaingun]
+patch=1,EE,201CF6B8,extended,0000270F
+
+[Laser Chaingun]
+patch=1,EE,201CF6EC,extended,0000270F
+
+[All Weapons]
+patch=1,EE,401CF20C,extended,0004000D
+patch=1,EE,0000270F,extended,00000000
+patch=1,EE,201CF6B8,extended,0000270F
+patch=1,EE,201CF6EC,extended,0000270F
+
+[Black Hole]
+patch=1,EE,201CF0D4,extended,00000063
+
+[Grenade]
+patch=1,EE,201CF108,extended,00000063
+
+[Decoy]
+patch=1,EE,201CF13C,extended,00000063
+
+[Cloak]
+patch=1,EE,201CF170,extended,00000063
+
+[Sniper Shield]
+patch=1,EE,201CF1A4,extended,00000063
+
+[All Items]
+patch=1,EE,401CF0D4,extended,0005000D
+patch=1,EE,00000063,extended,00000000
+
+[Toaster]
+patch=1,EE,201CF33C,extended,447A0000
+patch=1,EE,201CF340,extended,00000000
+
+[Atomic Toaster]
+patch=1,EE,201CF4DC,extended,447A0000
+patch=1,EE,201CF4E0,extended,00000000
+
+[Booze]
+patch=1,EE,201CF378,extended,00000063
+
+[Plutonium]
+patch=1,EE,201CF414,extended,00000063
+
+[Pop]
+patch=1,EE,201CF47C,extended,00000063
+
+[Molotov]
+patch=1,EE,201CF518,extended,00000063
+
+[Toast]
+patch=1,EE,201CF720,extended,00000063
+
+[Baguette]
+patch=1,EE,201CF788,extended,00000063
+
+[Pumpernickel]
+patch=1,EE,201CF7BC,extended,00000063

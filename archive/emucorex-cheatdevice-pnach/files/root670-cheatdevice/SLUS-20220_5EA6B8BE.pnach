@@ -1,0 +1,61 @@
+gametitle=Dead To Rights (SLUS-20220)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90229C1C,extended,0C08B460
+
+[Infinite Ammo]
+patch=1,EE,2020AF44,extended,00000000
+patch=1,EE,2020AF5C,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,1020AE28,extended,00000001
+
+[Infinite Life]
+patch=1,EE,20172F2C,extended,E4430208
+
+[Infinite Armor]
+patch=1,EE,2017319C,extended,E442020C
+
+[Infinite Adrenaline]
+patch=1,EE,2042B39C,extended,42C80000
+
+[Unlock All Chapters]
+patch=1,EE,20276390,extended,0000000F
+
+[Unlock All Movies]
+patch=1,EE,40276394,extended,00130001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Mini-Games]
+patch=1,EE,402763E0,extended,00070001
+patch=1,EE,00000001,extended,00000000
+
+[Infinite Bouncer Destraction (Hildy Dancing)]
+patch=1,EE,2042B244,extended,3F800000
+
+[Max Hits (Speedbag)]
+patch=1,EE,1042D19A,extended,0000270F
+
+[Absolute Max Hits (Speedbag)]
+patch=1,EE,1042D19A,extended,0000FFFF
+
+[Max Speed (Speedbag)]
+patch=1,EE,2042D1D4,extended,3F800000
+
+[Max Strength Meter (Weightlifting)]
+patch=1,EE,2042DC30,extended,3F800000
+
+[Max Current Strength (Weightlifting)]
+patch=1,EE,2042DC34,extended,3F800000
+
+[Max Strength (Arm Wrestling)]
+patch=1,EE,2042D728,extended,3F800000
+
+[Infinite Time (Bomb Disarm)]
+patch=1,EE,20286808,extended,00008C80
+
+[Infinite Oxygen (Drowning)]
+patch=1,EE,2042B48C,extended,3F800000

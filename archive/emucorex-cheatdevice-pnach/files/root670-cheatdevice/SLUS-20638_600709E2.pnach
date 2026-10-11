@@ -1,0 +1,128 @@
+gametitle=Backyard Wrestling-Don't Try This At Home (SLUS-20638)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902EBFE4,extended,0C0D93FB
+
+[Always Low Match Time]
+patch=1,EE,203C2820,extended,00000000
+
+[Show Debug Info]
+patch=1,EE,2046B10C,extended,00000001
+
+[Disable HUD]
+patch=1,EE,2047768C,extended,00000001
+
+[Infinite Health P1]
+patch=1,EE,103CBEA8,extended,000009C4
+
+[75% Health P1]
+patch=1,EE,D03CBEA8,extended,000009C4
+patch=1,EE,103CBEA8,extended,00000753
+
+[50% Health P1]
+patch=1,EE,D03CBEA8,extended,000009C4
+patch=1,EE,103CBEA8,extended,000004E2
+
+[25% Health P1]
+patch=1,EE,D03CBEA8,extended,000009C4
+patch=1,EE,103CBEA8,extended,00000271
+
+[1-Hit Death P1]
+patch=1,EE,D03CBEA8,extended,000009C4
+patch=1,EE,103CBEA8,extended,00000001
+
+[No Health P1]
+patch=1,EE,103CBEA8,extended,00000000
+
+[Never Light Stunned P1]
+patch=1,EE,103CC882,extended,00000000
+
+[Always Light Stunned P1]
+patch=1,EE,D03CC882,extended,00000000
+patch=1,EE,103CC882,extended,0000012C
+
+[Never Medium Stunned P1]
+patch=1,EE,103CC884,extended,00000000
+
+[Always Medium Stunned P1]
+patch=1,EE,D03CC884,extended,00000000
+patch=1,EE,103CC884,extended,000001C2
+
+[Never Large Stunned P1]
+patch=1,EE,103CC886,extended,00000000
+
+[Always Large Stunned P1]
+patch=1,EE,D03CC886,extended,00000000
+patch=1,EE,103CC886,extended,00000258
+
+[Infinite Health P2]
+patch=1,EE,103CEFE8,extended,000009C4
+
+[75% Health P2]
+patch=1,EE,D03CEFE8,extended,000009C4
+patch=1,EE,103CEFE8,extended,00000753
+
+[50% Health P2]
+patch=1,EE,D03CEFE8,extended,000009C4
+patch=1,EE,103CEFE8,extended,000004E2
+
+[25% Health P2]
+patch=1,EE,D03CEFE8,extended,000009C4
+patch=1,EE,103CEFE8,extended,00000271
+
+[1-Hit Death P2]
+patch=1,EE,D03CEFE8,extended,000009C4
+patch=1,EE,103CEFE8,extended,00000001
+
+[No Health P2]
+patch=1,EE,103CEFE8,extended,00000000
+
+[Never Light Stunned P2]
+patch=1,EE,103CF9C2,extended,00000000
+
+[Always Light Stunned P2]
+patch=1,EE,D03CF9C2,extended,00000000
+patch=1,EE,103CF9C2,extended,0000012C
+
+[Never Medium Stunned P2]
+patch=1,EE,103CF9C4,extended,00000000
+
+[Always Medium Stunned P2]
+patch=1,EE,D03CF9C4,extended,00000000
+patch=1,EE,103CF9C4,extended,000001C2
+
+[Never Large Stunned P2]
+patch=1,EE,103CF9C6,extended,00000000
+
+[Always Large Stunned P2]
+patch=1,EE,D03CF9C6,extended,00000000
+patch=1,EE,103CF9C6,extended,00000258
+
+[Unlock Talk Show Mode All Segments]
+patch=1,EE,403AF700,extended,00070003
+patch=1,EE,00000000,extended,00000000
+
+[Unlock Exhibition All Arenas]
+patch=1,EE,403BF958,extended,00070003
+patch=1,EE,00000000,extended,00000000
+
+[Media Room-Unlock All Movies]
+patch=1,EE,403BF9B0,extended,00090003
+patch=1,EE,00000000,extended,00000000
+
+[Unlock All Wrestlers]
+patch=1,EE,403BFD9C,extended,00240004
+patch=1,EE,00000000,extended,00000000
+patch=1,EE,203BFFDC,extended,00000000
+
+[Survival Mode]
+patch=1,EE,203C0730,extended,00000000
+
+[King Of The Hill]
+patch=1,EE,203C073C,extended,00000000
+
+[Tag]
+patch=1,EE,203C0748,extended,00000000

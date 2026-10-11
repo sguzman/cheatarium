@@ -1,0 +1,22 @@
+gametitle=Tokobot Plus-Mysteries Of The Karakuri (SLUS-21471)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902604F8,extended,00832021
+
+[Infinite Health]
+patch=1,EE,206B6BD0,extended,00000064
+
+[Max Health]
+patch=1,EE,206B6BD4,extended,00000064
+
+[Max Money]
+patch=1,EE,206B6FBC,extended,000F423F
+
+[Buying Items Doesnt Decrease Money]
+patch=1,EE,2016D4A8,extended,24050000
+
+[Buying Items Increases Money]
+patch=1,EE,2016D4A8,extended,26250000

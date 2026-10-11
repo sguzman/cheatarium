@@ -1,0 +1,35 @@
+gametitle=Bionicle-Heroes (SLUS-21428)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9044B3C8,extended,0C116C1F
+
+[Infinite Health]
+patch=1,EE,2037FD98,extended,E60112B8
+
+[Infinite Lego Pieces]
+patch=1,EE,1065E43C,extended,0000FFFF
+
+[Max Lego Pieces]
+patch=1,EE,2065E43C,extended,0098967F
+
+[Buying Upgrades Doesnt Decrease Lego Pieces]
+patch=1,EE,20350F94,extended,00000000
+
+[Buying Hints/Goodies Doesnt Decrease Lego Pieces]
+patch=1,EE,203510FC,extended,00000000
+
+[Have All Hints]
+patch=1,EE,4065E2A8,extended,00050001
+patch=1,EE,01010101,extended,00000000
+
+[Have All Goodies]
+patch=1,EE,4065E2E8,extended,00040001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0065E2F8,extended,00000001
+
+[Have All Upgrades]
+patch=1,EE,4065E41C,extended,00050001
+patch=1,EE,01010101,extended,00000000

@@ -1,0 +1,363 @@
+gametitle=Resident Evil-Dead Aim (SLUS-20669)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90106D04,extended,0C04A299
+
+[Disable FMV]
+patch=1,EE,2010A248,extended,24020001
+
+[Infinite Time (Timed Battles)]
+patch=1,EE,20224CC4,extended,00000000
+
+[Infinite Ammo (All Guns)]
+patch=1,EE,D031D682,extended,0000F7FF
+patch=1,EE,202383AC,extended,00000000
+patch=1,EE,D031D682,extended,0010F7FF
+patch=1,EE,202383AC,extended,AC640000
+
+[C.P. Rifle Always Charged]
+patch=1,EE,202280B0,extended,00000000
+patch=1,EE,202280F0,extended,00000000
+
+[C.P. Rifle Never Dead]
+patch=1,EE,202A407C,extended,00000000
+
+[No Times Saved Recorded]
+patch=1,EE,202DE130,extended,00000000
+
+[Infinite Health]
+patch=1,EE,202DE054,extended,00000000
+
+[Have All Weapons]
+patch=1,EE,202DE058,extended,000000FF
+
+[Handgun]
+patch=1,EE,202DE09C,extended,0000000F
+
+[Shotgun]
+patch=1,EE,202DE0A0,extended,00000007
+
+[Semi-Automatic Handgun]
+patch=1,EE,202DE0A4,extended,00000012
+
+[Silencer Handgun]
+patch=1,EE,202DE0A8,extended,00000008
+
+[Magnum]
+patch=1,EE,202DE0AC,extended,00000007
+
+[Grenade Launcher]
+patch=1,EE,202DE0B0,extended,00000006
+
+[Assault Rifle]
+patch=1,EE,202DE0B4,extended,00000064
+
+[Green Herb]
+patch=1,EE,202DE060,extended,00000063
+
+[Herbal Medicine]
+patch=1,EE,202DE064,extended,00000063
+
+[Medicinal Spray]
+patch=1,EE,202DE068,extended,00000063
+
+[Slot 1]
+patch=1,EE,202DE070,extended,00000063
+
+[Slot 2]
+patch=1,EE,202DE078,extended,00000063
+
+[Slot 3]
+patch=1,EE,202DE080,extended,00000063
+
+[Slot 4]
+patch=1,EE,202DE088,extended,00000063
+
+[Slot 5]
+patch=1,EE,202DE090,extended,00000063
+
+[Slot 6]
+patch=1,EE,202DE098,extended,00000063
+
+[Guest Keycard]
+patch=1,EE,D02A3E00,extended,00000000
+patch=1,EE,202A3E00,extended,00000001
+
+[ID Card]
+patch=1,EE,D02A3E04,extended,00000000
+patch=1,EE,202A3E04,extended,00000001
+
+[Maintenance Key]
+patch=1,EE,D02A3E08,extended,00000000
+patch=1,EE,202A3E08,extended,00000001
+
+[Handle]
+patch=1,EE,D02A3E0C,extended,00000000
+patch=1,EE,202A3E0C,extended,00000001
+
+[Crowbar]
+patch=1,EE,D02A3E10,extended,00000000
+patch=1,EE,202A3E10,extended,00000001
+
+[Crewman's Keycard]
+patch=1,EE,D02A3E14,extended,00000000
+patch=1,EE,202A3E14,extended,00000001
+
+[Recreation Room Key]
+patch=1,EE,D02A3E18,extended,00000000
+patch=1,EE,202A3E18,extended,00000001
+
+[1st Class Key]
+patch=1,EE,D02A3E1C,extended,00000000
+patch=1,EE,202A3E1C,extended,00000001
+
+[Sector Admin Key]
+patch=1,EE,D02A3E20,extended,00000000
+patch=1,EE,202A3E20,extended,00000001
+
+[Eleveator Keycard]
+patch=1,EE,D02A3E24,extended,00000000
+patch=1,EE,202A3E24,extended,00000001
+
+[Pod Bay Keycard]
+patch=1,EE,D02A3E28,extended,00000000
+patch=1,EE,202A3E28,extended,00000001
+
+[Digital Recorder]
+patch=1,EE,D02A3E2C,extended,00000000
+patch=1,EE,202A3E2C,extended,00000001
+
+[Digital Recorder (Full)]
+patch=1,EE,D02A3E30,extended,00000000
+patch=1,EE,202A3E30,extended,00000001
+
+[Backyard Key]
+patch=1,EE,D02A3E34,extended,00000000
+patch=1,EE,202A3E34,extended,00000001
+
+[Intelligence Operations Manual]
+patch=1,EE,202A3E38,extended,00000001
+
+[Emergency FAX From Paris Branch]
+patch=1,EE,202A3E3C,extended,00000001
+
+[Regular Report No. 1162]
+patch=1,EE,202A3E40,extended,00000001
+
+[Admin Report]
+patch=1,EE,202A3E44,extended,00000001
+
+[Walter's Letter]
+patch=1,EE,202A3E48,extended,00000001
+
+[Freight Crewman's Diary]
+patch=1,EE,202A3E4C,extended,00000001
+
+[Research Report #220329]
+patch=1,EE,202A3E50,extended,00000001
+
+[Restructuring Notice]
+patch=1,EE,202A3E54,extended,00000001
+
+[Ship's Log]
+patch=1,EE,202A3E58,extended,00000001
+
+[Operator's Notebook]
+patch=1,EE,202A3E5C,extended,00000001
+
+[Biological Report 1]
+patch=1,EE,202A3E60,extended,00000001
+
+[Biological Report 2]
+patch=1,EE,202A3E64,extended,00000001
+
+[Experiment Alpha Log]
+patch=1,EE,202A3E68,extended,00000001
+
+[Transport Orders]
+patch=1,EE,202A3E6C,extended,00000001
+
+[Architect's Memo]
+patch=1,EE,202A3E70,extended,00000001
+
+[Research Report #220120]
+patch=1,EE,202A3E74,extended,00000001
+
+[Orders From Morpheus]
+patch=1,EE,202A3E78,extended,00000001
+
+[Charged Particle Rifle User's Manual]
+patch=1,EE,202A3E7C,extended,00000001
+
+[Morpheus's Journal]
+patch=1,EE,202A3E80,extended,00000001
+
+[Infinite Health]
+patch=1,EE,202DE0C8,extended,00000000
+
+[Have All Weapons]
+patch=1,EE,102DE0CC,extended,000000FF
+
+[Handgun]
+patch=1,EE,202DE110,extended,0000000F
+
+[Shotgun]
+patch=1,EE,202DE114,extended,00000007
+
+[Semi-Automatic Handgun]
+patch=1,EE,202DE118,extended,00000012
+
+[Silencer Handgun]
+patch=1,EE,202DE11C,extended,00000008
+
+[Magnum]
+patch=1,EE,202DE120,extended,00000007
+
+[Grenade Launcher]
+patch=1,EE,202DE124,extended,00000006
+
+[Assault Rifle]
+patch=1,EE,202DE128,extended,00000064
+
+[Green Herb]
+patch=1,EE,202DE0D4,extended,00000063
+
+[Herbal Medicine]
+patch=1,EE,202DE0D8,extended,00000063
+
+[Medicinal Spray]
+patch=1,EE,202DE0DC,extended,00000063
+
+[Slot 1]
+patch=1,EE,202DE0E4,extended,00000063
+
+[Slot 2]
+patch=1,EE,202DE0EC,extended,00000063
+
+[Slot 3]
+patch=1,EE,202DE0F4,extended,00000063
+
+[Slot 4]
+patch=1,EE,202DE0FC,extended,00000063
+
+[Slot 5]
+patch=1,EE,202DE104,extended,00000063
+
+[Slot 6]
+patch=1,EE,202DE10C,extended,00000063
+
+[Guest Keycard]
+patch=1,EE,D02A3EBC,extended,00000000
+patch=1,EE,202A3EBC,extended,00000001
+
+[ID Card]
+patch=1,EE,D02A3EC0,extended,00000000
+patch=1,EE,202A3EC0,extended,00000001
+
+[Maintenance Key]
+patch=1,EE,D02A3EC4,extended,00000000
+patch=1,EE,202A3EC4,extended,00000001
+
+[Handle]
+patch=1,EE,D02A3EC8,extended,00000000
+patch=1,EE,202A3EC8,extended,00000001
+
+[Crowbar]
+patch=1,EE,D02A3ECC,extended,00000000
+patch=1,EE,202A3ECC,extended,00000001
+
+[Crewman's Keycard]
+patch=1,EE,D02A3ED0,extended,00000000
+patch=1,EE,202A3ED0,extended,00000001
+
+[Recreation Room Key]
+patch=1,EE,D02A3ED4,extended,00000000
+patch=1,EE,202A3ED4,extended,00000001
+
+[1st Class Key]
+patch=1,EE,D02A3ED8,extended,00000000
+patch=1,EE,202A3ED8,extended,00000001
+
+[Sector Admin Key]
+patch=1,EE,D02A3EDC,extended,00000000
+patch=1,EE,202A3EDC,extended,00000001
+
+[Elevator Keycard]
+patch=1,EE,D02A3EE0,extended,00000000
+patch=1,EE,202A3EE0,extended,00000001
+
+[Pod Bay Keycard]
+patch=1,EE,D02A3EE4,extended,00000000
+patch=1,EE,202A3EE4,extended,00000001
+
+[Digital Recorder]
+patch=1,EE,D02A3EE8,extended,00000000
+patch=1,EE,202A3EE8,extended,00000001
+
+[Digital Recorder (Full)]
+patch=1,EE,D02A3EEC,extended,00000000
+patch=1,EE,202A3EEC,extended,00000001
+
+[Backyard Key]
+patch=1,EE,D02A3EF0,extended,00000000
+patch=1,EE,202A3EF0,extended,00000001
+
+[Intelligence Operations Manual]
+patch=1,EE,202A3EF4,extended,00000001
+
+[Emergency FAX From Paris Branch]
+patch=1,EE,202A3EF8,extended,00000001
+
+[Regular Report No. 1162]
+patch=1,EE,202A3EFC,extended,00000001
+
+[Admin Report]
+patch=1,EE,202A3F00,extended,00000001
+
+[Walter's Letter]
+patch=1,EE,202A3F04,extended,00000001
+
+[Freight Crewman's Diary]
+patch=1,EE,202A3F08,extended,00000001
+
+[Research Report #220329]
+patch=1,EE,202A3F0C,extended,00000001
+
+[Restructuring Notice]
+patch=1,EE,202A3F10,extended,00000001
+
+[Ship's Log]
+patch=1,EE,202A3F14,extended,00000001
+
+[Operator's Notebook]
+patch=1,EE,202A3F18,extended,00000001
+
+[Biological Report 1]
+patch=1,EE,202A3F1C,extended,00000001
+
+[Biological Report 2]
+patch=1,EE,202A3F20,extended,00000001
+
+[Experiment Alpha Log]
+patch=1,EE,202A3F24,extended,00000001
+
+[Transport Orders]
+patch=1,EE,202A3F28,extended,00000001
+
+[Architect's Memo]
+patch=1,EE,202A3F2C,extended,00000001
+
+[Research Report #220120]
+patch=1,EE,202A3F30,extended,00000001
+
+[Orders From Morpheus]
+patch=1,EE,202A3F34,extended,00000001
+
+[Charged Particle Rifle User's Manual]
+patch=1,EE,202A3F38,extended,00000001
+
+[Morpheus's Journal]
+patch=1,EE,202A3F3C,extended,00000001

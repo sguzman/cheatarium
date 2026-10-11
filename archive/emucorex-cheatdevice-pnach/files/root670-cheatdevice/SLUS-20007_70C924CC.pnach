@@ -1,0 +1,73 @@
+gametitle=World Destruction League-WarJetz (SLUS-20007)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902AADB4,extended,0C0A2896
+
+[P1 Max Kills]
+patch=1,EE,103BECDC,extended,0000270F
+
+[Max Starting Bux]
+patch=1,EE,103BECCE,extended,0000270F
+
+[Max Bux Grabbed]
+patch=1,EE,103BECD0,extended,0000270F
+
+[No Bux Spent]
+patch=1,EE,1031F8AA,extended,00000000
+
+[No Bux For Enemy]
+patch=1,EE,103BECEC,extended,00000000
+
+[No Kills For Enemy]
+patch=1,EE,103BECF8,extended,00000000
+
+[Max Kill Bounty]
+patch=1,EE,103B59CC,extended,0000270F
+
+[Max Total Kills]
+patch=1,EE,103BE8EA,extended,0000270F
+
+[Max Next Starting Bux]
+patch=1,EE,1031F244,extended,0000270F
+
+[Max Arena Winnings]
+patch=1,EE,2031F3D8,extended,00007FFF
+
+[Max Total Winnings]
+patch=1,EE,2031F7D4,extended,05F5E0FF
+
+[Infinite Health]
+patch=1,EE,002D9B74,extended,00000005
+
+[Thick Armor]
+patch=1,EE,002D9B76,extended,00000005
+
+[Quick Planes]
+patch=1,EE,002D9B7C,extended,00000005
+
+[Biggest Guns]
+patch=1,EE,002D9B7F,extended,00000005
+
+[Rapid Fire]
+patch=1,EE,002D9B80,extended,00000005
+
+[Speed Shots]
+patch=1,EE,002D9B81,extended,00000005
+
+[Stealth Mode]
+patch=1,EE,002D9B86,extended,00000005
+
+[Dual Shots]
+patch=1,EE,002D9B87,extended,00000005
+
+[Quick Weapon Up]
+patch=1,EE,002D9B91,extended,00000005
+
+[Plane Switches Respawn]
+patch=1,EE,002D9B94,extended,00000005
+
+[Shields On Roll]
+patch=1,EE,002D9B95,extended,00000005

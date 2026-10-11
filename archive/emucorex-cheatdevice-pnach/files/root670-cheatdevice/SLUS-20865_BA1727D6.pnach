@@ -1,0 +1,123 @@
+gametitle=Backyard Baseball (SLUS-20865)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903BB43C,extended,0C0EFFA0
+
+[Home Team Scores 50]
+patch=1,EE,200C0220,extended,24010032
+patch=1,EE,200C0224,extended,0805BCC0
+patch=1,EE,200C0228,extended,AC81008C
+patch=1,EE,201CD0A8,extended,0C030088
+patch=1,EE,201CCF30,extended,0C030088
+
+[Home Team Scores 20]
+patch=1,EE,200C0220,extended,24010014
+patch=1,EE,200C0224,extended,0805BCC0
+patch=1,EE,200C0228,extended,AC81008C
+patch=1,EE,201CD0A8,extended,0C030088
+patch=1,EE,201CCF30,extended,0C030088
+
+[Home Team Scores 0]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,0805BCC0
+patch=1,EE,200C0228,extended,AC81008C
+patch=1,EE,201CD0A8,extended,0C030088
+patch=1,EE,201CCF30,extended,0C030088
+
+[Away Team Scores 50]
+patch=1,EE,200C0230,extended,24010032
+patch=1,EE,200C0234,extended,0805BCC0
+patch=1,EE,200C0238,extended,AC810090
+patch=1,EE,201CCF88,extended,0C03008C
+patch=1,EE,201CD100,extended,0C03008C
+
+[Away Team Scores 20]
+patch=1,EE,200C0230,extended,24010014
+patch=1,EE,200C0234,extended,0805BCC0
+patch=1,EE,200C0238,extended,AC810090
+patch=1,EE,201CCF88,extended,0C03008C
+patch=1,EE,201CD100,extended,0C03008C
+
+[Away Team Scores 0]
+patch=1,EE,200C0230,extended,24010000
+patch=1,EE,200C0234,extended,0805BCC0
+patch=1,EE,200C0238,extended,AC810090
+patch=1,EE,201CCF88,extended,0C03008C
+patch=1,EE,201CD100,extended,0C03008C
+
+[Infinite Balls]
+patch=1,EE,200C0240,extended,24020000
+patch=1,EE,200C0244,extended,08073200
+patch=1,EE,200C0248,extended,AC6200A0
+patch=1,EE,201CC7FC,extended,0C030090
+
+[1 Ball And You Walk]
+patch=1,EE,200C0240,extended,8C6200A0
+patch=1,EE,200C0244,extended,50400001
+patch=1,EE,200C0248,extended,24020003
+patch=1,EE,200C024C,extended,08073200
+patch=1,EE,200C0250,extended,AC6200A0
+patch=1,EE,201CC7FC,extended,0C030090
+
+[2 Balls And You Walk]
+patch=1,EE,200C0240,extended,8C6200A0
+patch=1,EE,200C0244,extended,50400001
+patch=1,EE,200C0248,extended,24020002
+patch=1,EE,200C024C,extended,08073200
+patch=1,EE,200C0250,extended,AC6200A0
+patch=1,EE,201CC7FC,extended,0C030090
+
+[3 Balls And You Walk]
+patch=1,EE,200C0240,extended,8C6200A0
+patch=1,EE,200C0244,extended,50400001
+patch=1,EE,200C0248,extended,24020001
+patch=1,EE,200C024C,extended,08073200
+patch=1,EE,200C0250,extended,AC6200A0
+patch=1,EE,201CC7FC,extended,0C030090
+
+[Infinite Strikes]
+patch=1,EE,200C0260,extended,24020000
+patch=1,EE,200C0264,extended,08073217
+patch=1,EE,200C0268,extended,AC620090
+patch=1,EE,201CC858,extended,0C030098
+
+[1 Strike And You Are Out]
+patch=1,EE,200C0260,extended,8C620090
+patch=1,EE,200C0264,extended,50400001
+patch=1,EE,200C0268,extended,24020002
+patch=1,EE,200C026C,extended,08073217
+patch=1,EE,200C0270,extended,AC620090
+patch=1,EE,201CC858,extended,0C030098
+
+[2 Strikes And You Are Out]
+patch=1,EE,200C0260,extended,8C620090
+patch=1,EE,200C0264,extended,50400001
+patch=1,EE,200C0268,extended,24020001
+patch=1,EE,200C026C,extended,08073217
+patch=1,EE,200C0270,extended,AC620090
+patch=1,EE,201CC858,extended,0C030098
+
+[Infinite Outs]
+patch=1,EE,200C0280,extended,24020000
+patch=1,EE,200C0284,extended,0807322F
+patch=1,EE,200C0288,extended,AC620094
+patch=1,EE,201CC8B8,extended,0C0300A0
+
+[1 Out And You Are Out]
+patch=1,EE,200C0280,extended,8C620094
+patch=1,EE,200C0284,extended,50400001
+patch=1,EE,200C0288,extended,24020002
+patch=1,EE,200C028C,extended,0807322F
+patch=1,EE,200C0290,extended,AC620094
+patch=1,EE,201CC8B8,extended,0C0300A0
+
+[2 Outs And You Are Out]
+patch=1,EE,200C0280,extended,8C620094
+patch=1,EE,200C0284,extended,50400001
+patch=1,EE,200C0288,extended,24020001
+patch=1,EE,200C028C,extended,0807322F
+patch=1,EE,200C0290,extended,AC620094
+patch=1,EE,201CC8B8,extended,0C0300A0

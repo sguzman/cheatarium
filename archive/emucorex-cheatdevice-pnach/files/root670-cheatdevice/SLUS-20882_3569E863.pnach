@@ -1,0 +1,69 @@
+gametitle=Hitman-Contracts (SLUS-20882)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90450C0C,extended,0C1172ED
+
+[Disable FMV]
+patch=1,EE,20455C28,extended,24020001
+
+[Never Reload]
+patch=1,EE,2020F9B4,extended,00000000
+
+[Infinite Health]
+patch=1,EE,203A3990,extended,00000000
+
+[Saves Left Dont Decrease When Saving]
+patch=1,EE,2037BDA0,extended,00000000
+
+[Extra Saves When Saving]
+patch=1,EE,1037BD94,extended,00000001
+
+[Save Once For 99 Saves Left]
+patch=1,EE,2037BD94,extended,24050063
+
+[Always Have 99 Saves Left]
+patch=1,EE,200C0220,extended,24070063
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AE670C00
+patch=1,EE,2042EA1C,extended,0C030088
+
+[P1 Press {R1}+Right For God Mode On]
+patch=1,EE,D0483D42,extended,0000F7DF
+patch=1,EE,20507318,extended,3F800000
+
+[P1 Press {R1}+Left For God Mode On]
+patch=1,EE,D0483D42,extended,0000F77F
+patch=1,EE,20507318,extended,3F800000
+
+[P1 Press {R1}+Up For Invisible Mode On]
+patch=1,EE,D0483D42,extended,0000F7EF
+patch=1,EE,20506A40,extended,3F800000
+
+[P1 Press {R1}+Down For Invisible Mode Off]
+patch=1,EE,D0483D42,extended,0000F7BF
+patch=1,EE,20506A40,extended,00000000
+
+[P1 Press {L3}+{R3} For Level Select (Main Menu)]
+patch=1,EE,D0483D42,extended,0000FFF9
+patch=1,EE,2041F9F0,extended,00000000
+patch=1,EE,D0483D42,extended,0000FFFF
+patch=1,EE,2041F9F0,extended,10400032
+
+[Slow Motion ({R2}+Up=On & {R2}+Down=Off)]
+patch=1,EE,200C0240,extended,3C0800A0
+patch=1,EE,200C0244,extended,00000000
+patch=1,EE,200C0248,extended,00000000
+patch=1,EE,200C024C,extended,00000000
+patch=1,EE,200C0250,extended,00000000
+patch=1,EE,200C0254,extended,00000000
+patch=1,EE,200C0258,extended,1D00FFFD
+patch=1,EE,200C025C,extended,2508FFFF
+patch=1,EE,200C0260,extended,03E00008
+patch=1,EE,200C0264,extended,00000000
+patch=1,EE,D0483D42,extended,0000FDEF
+patch=1,EE,20450C24,extended,08030090
+patch=1,EE,D0483D42,extended,0000FDBF
+patch=1,EE,20450C24,extended,03E00008

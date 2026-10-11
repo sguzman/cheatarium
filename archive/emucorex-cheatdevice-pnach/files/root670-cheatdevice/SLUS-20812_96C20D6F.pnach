@@ -1,0 +1,1027 @@
+gametitle=Dynasty Warriors 4-Xtreme Legends (SLUS-20812)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90216530,extended,0C049CAC
+
+[Infinite Gold]
+patch=1,EE,10465D98,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,20465D98,extended,0098967F
+
+[Bodyguards Have Same Weapon As Your Character]
+patch=1,EE,1013DB6C,extended,00000001
+patch=1,EE,1013DBE4,extended,00000001
+
+[Aggressive Enemies & Allies!]
+patch=1,EE,1015FFD0,extended,00000001
+patch=1,EE,1015FFF8,extended,00000001
+patch=1,EE,10160030,extended,00000001
+patch=1,EE,10160038,extended,00000001
+
+[Have All Movies]
+patch=1,EE,20463F80,extended,FFFFFFFF
+
+[Can Always Do Musou Move (Press {CIRCLE})]
+patch=1,EE,201C48CC,extended,00000000
+
+[Max K.O. Count P1]
+patch=1,EE,1046E4F8,extended,0000270F
+
+[Infinite Health P1]
+patch=1,EE,105384FE,extended,00001C00
+
+[Max Health P1]
+patch=1,EE,105384FC,extended,000001C0
+
+[Max Infinite Health P1]
+patch=1,EE,205384FC,extended,1C0001C0
+
+[Infinite Musou P1]
+patch=1,EE,10538504,extended,00000C00
+
+[Max Musou P1]
+patch=1,EE,10538502,extended,000000C0
+
+[Max Infinite Musou P1]
+patch=1,EE,10538502,extended,000000C0
+patch=1,EE,10538504,extended,00000C00
+
+[Have All Powerups P1]
+patch=1,EE,005384C0,extended,000000F0
+
+[Have All Orb Powers P1]
+patch=1,EE,005384C1,extended,0000005F
+
+[Infinite Attack X2 P1 (On Pickup)]
+patch=1,EE,105384D0,extended,00000708
+
+[Infinite Defense X2 P1 (On Pickup)]
+patch=1,EE,105384D4,extended,00000708
+
+[Infinite Speed Up P1 (On Pickup)]
+patch=1,EE,105384D8,extended,00000708
+
+[Infinite Musou Max P1 (On Pickup)]
+patch=1,EE,105384DC,extended,00000708
+
+[Infinite Arrows P1]
+patch=1,EE,0055B85C,extended,00000063
+
+[Max K.O. Count P2]
+patch=1,EE,1046E6DA,extended,0000270F
+
+[Infinite Health P2]
+patch=1,EE,1053872E,extended,00001C00
+
+[Max Health P2]
+patch=1,EE,1053872C,extended,000001C0
+
+[Max Infinite Health P2]
+patch=1,EE,2053872C,extended,1C0001C0
+
+[Infinite Musou P2]
+patch=1,EE,10538734,extended,00000C00
+
+[Max Musou P2]
+patch=1,EE,10538732,extended,000000C0
+
+[Max Infinite Musou P2]
+patch=1,EE,10538732,extended,000000C0
+patch=1,EE,10538734,extended,00000C00
+
+[Have All Powerups P2]
+patch=1,EE,005386F0,extended,000000F0
+
+[Have All Orb Powers P2]
+patch=1,EE,005386F1,extended,0000005F
+
+[Infinite Attack X2 P2 (On Pickup)]
+patch=1,EE,10538700,extended,00000708
+
+[Infinite Defense X2 P2 (On Pickup)]
+patch=1,EE,10538704,extended,00000708
+
+[Infinite Speed Up P2 (On Pickup)]
+patch=1,EE,10538708,extended,00000708
+
+[Infinite Musou Max P2 (On Pickup)]
+patch=1,EE,1053870C,extended,00000708
+
+[Infinite Arrows P2]
+patch=1,EE,0055BA8C,extended,00000063
+
+[Infinite Arrows (Both Players)]
+patch=1,EE,201C3CF4,extended,00000000
+
+[Extra Arrows (Both Players)]
+patch=1,EE,101C3CF0,extended,00000001
+
+[Bodyguard 1]
+patch=1,EE,10464456,extended,0000270F
+
+[Bodyguard 2]
+patch=1,EE,104644B6,extended,0000270F
+
+[Bodyguard 3]
+patch=1,EE,10464516,extended,0000270F
+
+[Bodyguard 4]
+patch=1,EE,10464576,extended,0000270F
+
+[Peacock Urn]
+patch=1,EE,004646E6,extended,00000062
+
+[Dragon Amulet]
+patch=1,EE,004646E7,extended,00000062
+
+[Tiger Amulet]
+patch=1,EE,004646E8,extended,00000062
+
+[Tortoise Amulet]
+patch=1,EE,004646E9,extended,00000062
+
+[Speed Scroll]
+patch=1,EE,004646EA,extended,00000062
+
+[Wing Boots]
+patch=1,EE,004646EB,extended,00000062
+
+[Huang's Bow]
+patch=1,EE,004646EC,extended,00000062
+
+[Nanman Armor]
+patch=1,EE,004646ED,extended,00000062
+
+[Horned Helm]
+patch=1,EE,004646EE,extended,00000062
+
+[Cavalry Armor]
+patch=1,EE,004646EF,extended,00000062
+
+[Seven Star Sash]
+patch=1,EE,004646F0,extended,00000062
+
+[Elixir]
+patch=1,EE,004646F1,extended,00000062
+
+[Herbal Remedy]
+patch=1,EE,004646F2,extended,00000062
+
+[Fire Orb]
+patch=1,EE,004646F3,extended,00000062
+
+[Lightning Orb]
+patch=1,EE,004646F4,extended,00000062
+
+[Vorpal Orb]
+patch=1,EE,004646F5,extended,00000062
+
+[Ice Orb]
+patch=1,EE,004646F6,extended,00000062
+
+[Blast Orb]
+patch=1,EE,004646F7,extended,00000062
+
+[Poison Orb]
+patch=1,EE,004646F8,extended,00000062
+
+[Red Hare Harness]
+patch=1,EE,004646F9,extended,00000000
+
+[Hex Mark Harness]
+patch=1,EE,004646FA,extended,00000000
+
+[Storm Harness]
+patch=1,EE,004646FB,extended,00000000
+
+[Shadow Harness]
+patch=1,EE,004646FC,extended,00000000
+
+[Elephant Harness]
+patch=1,EE,004646FD,extended,00000000
+
+[Art Of War]
+patch=1,EE,004646FE,extended,00000000
+
+[Survival Guide]
+patch=1,EE,004646FF,extended,00000000
+
+[Bodyguard Manual]
+patch=1,EE,00464700,extended,00000000
+
+[Way Of Musou]
+patch=1,EE,00464701,extended,00000000
+
+[Power Scroll]
+patch=1,EE,00464702,extended,00000000
+
+[Wind Scroll]
+patch=1,EE,00464703,extended,00000000
+
+[Fire Arrows]
+patch=1,EE,00464704,extended,00000000
+
+[Charge Bracer]
+patch=1,EE,00464705,extended,00000000
+
+[Power Rune]
+patch=1,EE,00464706,extended,00000000
+
+[Code Of Chivalry]
+patch=1,EE,00464707,extended,00000000
+
+[Meat Bun Sack]
+patch=1,EE,00464708,extended,00000000
+
+[Musou Armor]
+patch=1,EE,00464709,extended,00000000
+
+[Master Of Musou]
+patch=1,EE,0046470A,extended,00000000
+
+[War Drum]
+patch=1,EE,0046470B,extended,00000000
+
+[Secret Of Orbs]
+patch=1,EE,0046470C,extended,00000000
+
+[Helm Of Might]
+patch=1,EE,0046470D,extended,00000000
+
+[Horseshoes]
+patch=1,EE,0046470E,extended,00000000
+
+[Zhao Yun]
+patch=1,EE,00463FA9,extended,000000FF
+
+[Guan Yu]
+patch=1,EE,00463FC1,extended,000000FF
+
+[Zhang Fei]
+patch=1,EE,00463FD9,extended,000000FF
+
+[Xiahou Dun]
+patch=1,EE,00463FF1,extended,000000FF
+
+[Dian Wei]
+patch=1,EE,00464009,extended,000000FF
+
+[Xu Zhu]
+patch=1,EE,00464021,extended,000000FF
+
+[Zhou Yu]
+patch=1,EE,00464039,extended,000000FF
+
+[Lu Xun]
+patch=1,EE,00464051,extended,000000FF
+
+[Taishi Ci]
+patch=1,EE,00464069,extended,000000FF
+
+[Diao Chan]
+patch=1,EE,00464081,extended,000000FF
+
+[Zhuge Liang]
+patch=1,EE,00464099,extended,000000FF
+
+[Cao Cao]
+patch=1,EE,004640B1,extended,000000FF
+
+[Lu Bu]
+patch=1,EE,004640C9,extended,000000FF
+
+[Sun Shang Xiang]
+patch=1,EE,004640E1,extended,000000FF
+
+[Liu Bei]
+patch=1,EE,004640F9,extended,000000FF
+
+[Sun Jian]
+patch=1,EE,00464111,extended,000000FF
+
+[Sun Quan]
+patch=1,EE,00464129,extended,000000FF
+
+[Dong Zhuo]
+patch=1,EE,00464141,extended,000000FF
+
+[Yuan Shao]
+patch=1,EE,00464159,extended,000000FF
+
+[Ma Chao]
+patch=1,EE,00464171,extended,000000FF
+
+[Huang Zhong]
+patch=1,EE,00464189,extended,000000FF
+
+[Xiahou Yuan]
+patch=1,EE,004641A1,extended,000000FF
+
+[Zhang Liao]
+patch=1,EE,004641B9,extended,000000FF
+
+[Sim Yi]
+patch=1,EE,004641D1,extended,000000FF
+
+[Lu Meng]
+patch=1,EE,004641E9,extended,000000FF
+
+[Gan Ning]
+patch=1,EE,00464201,extended,000000FF
+
+[Jiang Wei]
+patch=1,EE,00464219,extended,000000FF
+
+[Zhang Jiao]
+patch=1,EE,00464231,extended,000000FF
+
+[Xu Huang]
+patch=1,EE,00464249,extended,000000FF
+
+[Zhang He]
+patch=1,EE,00464261,extended,000000FF
+
+[Zhen Ji-Wei]
+patch=1,EE,00464279,extended,000000FF
+
+[Huang Gai]
+patch=1,EE,00464291,extended,000000FF
+
+[Sun Ce]
+patch=1,EE,004642A9,extended,000000FF
+
+[Wei Yan]
+patch=1,EE,004642C1,extended,000000FF
+
+[Pang Tong]
+patch=1,EE,004642D9,extended,000000FF
+
+[Meng Huo]
+patch=1,EE,004642F1,extended,000000FF
+
+[Zhu Rong]
+patch=1,EE,00464309,extended,000000FF
+
+[Da Qiao]
+patch=1,EE,00464321,extended,000000FF
+
+[Xiao Qiao]
+patch=1,EE,00464339,extended,000000FF
+
+[Cao Ren]
+patch=1,EE,00464351,extended,000000FF
+
+[Zhou Tai]
+patch=1,EE,00464369,extended,000000FF
+
+[Yue Ying]
+patch=1,EE,00464381,extended,000000FF
+
+[Zhao Yun]
+patch=1,EE,00463FAA,extended,000000FF
+
+[Guan Yu]
+patch=1,EE,00463FC2,extended,000000FF
+
+[Zhang Fei]
+patch=1,EE,00463FDA,extended,000000FF
+
+[Xiahou Dun]
+patch=1,EE,00463FF2,extended,000000FF
+
+[Dian Wei]
+patch=1,EE,0046400A,extended,000000FF
+
+[Xu Zhu]
+patch=1,EE,00464022,extended,000000FF
+
+[Zhou Yu]
+patch=1,EE,0046403A,extended,000000FF
+
+[Lu Xun]
+patch=1,EE,00464052,extended,000000FF
+
+[Taishi Ci]
+patch=1,EE,0046406A,extended,000000FF
+
+[Diao Chan]
+patch=1,EE,00464082,extended,000000FF
+
+[Zhuge Liang]
+patch=1,EE,0046409A,extended,000000FF
+
+[Cao Cao]
+patch=1,EE,004640B2,extended,000000FF
+
+[Lu Bu]
+patch=1,EE,004640CA,extended,000000FF
+
+[Sun Shang Xiang]
+patch=1,EE,004640E2,extended,000000FF
+
+[Liu Bei]
+patch=1,EE,004640FA,extended,000000FF
+
+[Sun Jian]
+patch=1,EE,00464112,extended,000000FF
+
+[Sun Quan]
+patch=1,EE,0046412A,extended,000000FF
+
+[Dong Zhuo]
+patch=1,EE,00464142,extended,000000FF
+
+[Yuan Shao]
+patch=1,EE,0046415A,extended,000000FF
+
+[Ma Chao]
+patch=1,EE,00464172,extended,000000FF
+
+[Huang Zhong]
+patch=1,EE,0046418A,extended,000000FF
+
+[Xiahou Yuan]
+patch=1,EE,004641A2,extended,000000FF
+
+[Zhang Liao]
+patch=1,EE,004641BA,extended,000000FF
+
+[Sim Yi]
+patch=1,EE,004641D2,extended,000000FF
+
+[Lu Meng]
+patch=1,EE,004641EA,extended,000000FF
+
+[Gan Ning]
+patch=1,EE,00464202,extended,000000FF
+
+[Jiang Wei]
+patch=1,EE,0046421A,extended,000000FF
+
+[Zhang Jiao]
+patch=1,EE,00464232,extended,000000FF
+
+[Xu Huang]
+patch=1,EE,0046424A,extended,000000FF
+
+[Zhang He]
+patch=1,EE,00464262,extended,000000FF
+
+[Zhen Ji-Wei]
+patch=1,EE,0046427A,extended,000000FF
+
+[Huang Gai]
+patch=1,EE,00464292,extended,000000FF
+
+[Sun Ce]
+patch=1,EE,004642AA,extended,000000FF
+
+[Wei Yan]
+patch=1,EE,004642C2,extended,000000FF
+
+[Pang Tong]
+patch=1,EE,004642DA,extended,000000FF
+
+[Meng Huo]
+patch=1,EE,004642F2,extended,000000FF
+
+[Zhu Rong]
+patch=1,EE,0046430A,extended,000000FF
+
+[Da Qiao]
+patch=1,EE,00464322,extended,000000FF
+
+[Xiao Qiao]
+patch=1,EE,0046433A,extended,000000FF
+
+[Cao Ren]
+patch=1,EE,00464352,extended,000000FF
+
+[Zhou Tai]
+patch=1,EE,0046436A,extended,000000FF
+
+[Yue Ying]
+patch=1,EE,00464382,extended,000000FF
+
+[Zhao Yun]
+patch=1,EE,00463FAB,extended,000000FF
+
+[Guan Yu]
+patch=1,EE,00463FC3,extended,000000FF
+
+[Zhang Fei]
+patch=1,EE,00463FDB,extended,000000FF
+
+[Xiahou Dun]
+patch=1,EE,00463FF3,extended,000000FF
+
+[Dian Wei]
+patch=1,EE,0046400B,extended,000000FF
+
+[Xu Zhu]
+patch=1,EE,00464023,extended,000000FF
+
+[Zhou Yu]
+patch=1,EE,0046403B,extended,000000FF
+
+[Lu Xun]
+patch=1,EE,00464053,extended,000000FF
+
+[Taishi Ci]
+patch=1,EE,0046406B,extended,000000FF
+
+[Diao Chan]
+patch=1,EE,00464083,extended,000000FF
+
+[Zhuge Liang]
+patch=1,EE,0046409B,extended,000000FF
+
+[Cao Cao]
+patch=1,EE,004640B3,extended,000000FF
+
+[Lu Bu]
+patch=1,EE,004640CB,extended,000000FF
+
+[Sun Shang Xiang]
+patch=1,EE,004640E3,extended,000000FF
+
+[Liu Bei]
+patch=1,EE,004640FB,extended,000000FF
+
+[Sun Jian]
+patch=1,EE,00464113,extended,000000FF
+
+[Sun Quan]
+patch=1,EE,0046412B,extended,000000FF
+
+[Dong Zhuo]
+patch=1,EE,00464143,extended,000000FF
+
+[Yuan Shao]
+patch=1,EE,0046415B,extended,000000FF
+
+[Ma Chao]
+patch=1,EE,00464173,extended,000000FF
+
+[Huang Zhong]
+patch=1,EE,0046418B,extended,000000FF
+
+[Xiahou Yuan]
+patch=1,EE,004641A3,extended,000000FF
+
+[Zhang Liao]
+patch=1,EE,004641BB,extended,000000FF
+
+[Sim Yi]
+patch=1,EE,004641D3,extended,000000FF
+
+[Lu Meng]
+patch=1,EE,004641EB,extended,000000FF
+
+[Gan Ning]
+patch=1,EE,00464203,extended,000000FF
+
+[Jiang Wei]
+patch=1,EE,0046421B,extended,000000FF
+
+[Zhang Jiao]
+patch=1,EE,00464233,extended,000000FF
+
+[Xu Huang]
+patch=1,EE,0046424B,extended,000000FF
+
+[Zhang He]
+patch=1,EE,00464263,extended,000000FF
+
+[Zhen Ji-Wei]
+patch=1,EE,0046427B,extended,000000FF
+
+[Huang Gai]
+patch=1,EE,00464293,extended,000000FF
+
+[Sun Ce]
+patch=1,EE,004642AB,extended,000000FF
+
+[Wei Yan]
+patch=1,EE,004642C3,extended,000000FF
+
+[Pang Tong]
+patch=1,EE,004642DB,extended,000000FF
+
+[Meng Huo]
+patch=1,EE,004642F3,extended,000000FF
+
+[Zhu Rong]
+patch=1,EE,0046430B,extended,000000FF
+
+[Da Qiao]
+patch=1,EE,00464323,extended,000000FF
+
+[Xiao Qiao]
+patch=1,EE,0046433B,extended,000000FF
+
+[Cao Ren]
+patch=1,EE,00464353,extended,000000FF
+
+[Zhou Tai]
+patch=1,EE,0046436B,extended,000000FF
+
+[Yue Ying]
+patch=1,EE,00464383,extended,000000FF
+
+[Zhao Yun]
+patch=1,EE,00463FAC,extended,000000FF
+
+[Guan Yu]
+patch=1,EE,00463FC4,extended,000000FF
+
+[Zhang Fei]
+patch=1,EE,00463FDC,extended,000000FF
+
+[Xiahou Dun]
+patch=1,EE,00463FF4,extended,000000FF
+
+[Dian Wei]
+patch=1,EE,0046400C,extended,000000FF
+
+[Xu Zhu]
+patch=1,EE,00464024,extended,000000FF
+
+[Zhou Yu]
+patch=1,EE,0046403C,extended,000000FF
+
+[Lu Xun]
+patch=1,EE,00464054,extended,000000FF
+
+[Taishi Ci]
+patch=1,EE,0046406C,extended,000000FF
+
+[Diao Chan]
+patch=1,EE,00464084,extended,000000FF
+
+[Zhuge Liang]
+patch=1,EE,0046409C,extended,000000FF
+
+[Cao Cao]
+patch=1,EE,004640B4,extended,000000FF
+
+[Lu Bu]
+patch=1,EE,004640CC,extended,000000FF
+
+[Sun Shang Xiang]
+patch=1,EE,004640E4,extended,000000FF
+
+[Liu Bei]
+patch=1,EE,004640FC,extended,000000FF
+
+[Sun Jian]
+patch=1,EE,00464114,extended,000000FF
+
+[Sun Quan]
+patch=1,EE,0046412C,extended,000000FF
+
+[Dong Zhuo]
+patch=1,EE,00464144,extended,000000FF
+
+[Yuan Shao]
+patch=1,EE,0046415C,extended,000000FF
+
+[Ma Chao]
+patch=1,EE,00464174,extended,000000FF
+
+[Huang Zhong]
+patch=1,EE,0046418C,extended,000000FF
+
+[Xiahou Yuan]
+patch=1,EE,004641A4,extended,000000FF
+
+[Zhang Liao]
+patch=1,EE,004641BC,extended,000000FF
+
+[Sim Yi]
+patch=1,EE,004641D4,extended,000000FF
+
+[Lu Meng]
+patch=1,EE,004641EC,extended,000000FF
+
+[Gan Ning]
+patch=1,EE,00464204,extended,000000FF
+
+[Jiang Wei]
+patch=1,EE,0046421C,extended,000000FF
+
+[Zhang Jiao]
+patch=1,EE,00464234,extended,000000FF
+
+[Xu Huang]
+patch=1,EE,0046424C,extended,000000FF
+
+[Zhang He]
+patch=1,EE,00464264,extended,000000FF
+
+[Zhen Ji-Wei]
+patch=1,EE,0046427C,extended,000000FF
+
+[Huang Gai]
+patch=1,EE,00464294,extended,000000FF
+
+[Sun Ce]
+patch=1,EE,004642AC,extended,000000FF
+
+[Wei Yan]
+patch=1,EE,004642C4,extended,000000FF
+
+[Pang Tong]
+patch=1,EE,004642DC,extended,000000FF
+
+[Meng Huo]
+patch=1,EE,004642F4,extended,000000FF
+
+[Zhu Rong]
+patch=1,EE,0046430C,extended,000000FF
+
+[Da Qiao]
+patch=1,EE,00464324,extended,000000FF
+
+[Xiao Qiao]
+patch=1,EE,0046433C,extended,000000FF
+
+[Cao Ren]
+patch=1,EE,00464354,extended,000000FF
+
+[Zhou Tai]
+patch=1,EE,0046436C,extended,000000FF
+
+[Yue Ying]
+patch=1,EE,00464384,extended,000000FF
+
+[Zhao Yun]
+patch=1,EE,20463FB8,extended,0001869F
+
+[Guan Yu]
+patch=1,EE,20463FD0,extended,0001869F
+
+[Zhang Fei]
+patch=1,EE,20463FE8,extended,0001869F
+
+[Xiahou Dun]
+patch=1,EE,20464000,extended,0001869F
+
+[Dian Wei]
+patch=1,EE,20464018,extended,0001869F
+
+[Xu Zhu]
+patch=1,EE,20464030,extended,0001869F
+
+[Zhou Yu]
+patch=1,EE,20464048,extended,0001869F
+
+[Lu Xun]
+patch=1,EE,20464060,extended,0001869F
+
+[Taishi Ci]
+patch=1,EE,20464078,extended,0001869F
+
+[Diao Chan]
+patch=1,EE,20464090,extended,0001869F
+
+[Zhuge Liang]
+patch=1,EE,204640A8,extended,0001869F
+
+[Cao Cao]
+patch=1,EE,204640C0,extended,0001869F
+
+[Lu Bu]
+patch=1,EE,204640D8,extended,0001869F
+
+[Sun Shang Xiang]
+patch=1,EE,204640F0,extended,0001869F
+
+[Liu Bei]
+patch=1,EE,20464108,extended,0001869F
+
+[Sun Jian]
+patch=1,EE,20464120,extended,0001869F
+
+[Sun Quan]
+patch=1,EE,20464138,extended,0001869F
+
+[Dong Zhuo]
+patch=1,EE,20464150,extended,0001869F
+
+[Yuan Shao]
+patch=1,EE,20464168,extended,0001869F
+
+[Ma Chao]
+patch=1,EE,20464180,extended,0001869F
+
+[Huang Zhong]
+patch=1,EE,20464198,extended,0001869F
+
+[Xiahou Yuan]
+patch=1,EE,204641B0,extended,0001869F
+
+[Zhang Liao]
+patch=1,EE,204641C8,extended,0001869F
+
+[Sim Yi]
+patch=1,EE,204641E0,extended,0001869F
+
+[Lu Meng]
+patch=1,EE,204641F8,extended,0001869F
+
+[Gan Ning]
+patch=1,EE,20464210,extended,0001869F
+
+[Jiang Wei]
+patch=1,EE,20464228,extended,0001869F
+
+[Zhang Jiao]
+patch=1,EE,20464240,extended,0001869F
+
+[Xu Huang]
+patch=1,EE,20464258,extended,0001869F
+
+[Zhang He]
+patch=1,EE,20464270,extended,0001869F
+
+[Zhen Ji-Wei]
+patch=1,EE,20464288,extended,0001869F
+
+[Huang Gai]
+patch=1,EE,204642A0,extended,0001869F
+
+[Sun Ce]
+patch=1,EE,204642B8,extended,0001869F
+
+[Wei Yan]
+patch=1,EE,204642D0,extended,0001869F
+
+[Pang Tong]
+patch=1,EE,204642E8,extended,0001869F
+
+[Meng Huo]
+patch=1,EE,20464300,extended,0001869F
+
+[Zhu Rong]
+patch=1,EE,20464318,extended,0001869F
+
+[Da Qiao]
+patch=1,EE,20464330,extended,0001869F
+
+[Xiao Qiao]
+patch=1,EE,20464348,extended,0001869F
+
+[Cao Ren]
+patch=1,EE,20464360,extended,0001869F
+
+[Zhou Tai]
+patch=1,EE,20464378,extended,0001869F
+
+[Yue Ying]
+patch=1,EE,20464390,extended,0001869F
+
+[Zhao Yun]
+patch=1,EE,10464688,extended,0000FFFF
+
+[Guan Yu]
+patch=1,EE,1046468A,extended,0000FFFF
+
+[Zhang Fei]
+patch=1,EE,1046468C,extended,0000FFFF
+
+[Xiahou Dun]
+patch=1,EE,1046468E,extended,0000FFFF
+
+[Dian Wei]
+patch=1,EE,10464690,extended,0000FFFF
+
+[Xu Zhu]
+patch=1,EE,10464692,extended,0000FFFF
+
+[Zhou Yu]
+patch=1,EE,10464694,extended,0000FFFF
+
+[Lu Xun]
+patch=1,EE,10464696,extended,0000FFFF
+
+[Taishi Ci]
+patch=1,EE,10464698,extended,0000FFFF
+
+[Diao Chan]
+patch=1,EE,1046469A,extended,0000FFFF
+
+[Zhuge Liang]
+patch=1,EE,1046469C,extended,0000FFFF
+
+[Cao Cao]
+patch=1,EE,1046469E,extended,0000FFFF
+
+[Lu Bu]
+patch=1,EE,104646A0,extended,0000FFFF
+
+[Sun Shang Xiang]
+patch=1,EE,104646A2,extended,0000FFFF
+
+[Liu Bei]
+patch=1,EE,104646A4,extended,0000FFFF
+
+[Sun Jian]
+patch=1,EE,104646A6,extended,0000FFFF
+
+[Sun Quan]
+patch=1,EE,104646A8,extended,0000FFFF
+
+[Dong Zhuo]
+patch=1,EE,104646AA,extended,0000FFFF
+
+[Yuan Shao]
+patch=1,EE,104646AC,extended,0000FFFF
+
+[Ma Chao]
+patch=1,EE,104646AE,extended,0000FFFF
+
+[Huang Zhong]
+patch=1,EE,104646B0,extended,0000FFFF
+
+[Xiahou Yuan]
+patch=1,EE,104646B2,extended,0000FFFF
+
+[Zhang Liao]
+patch=1,EE,104646B4,extended,0000FFFF
+
+[Sim Yi]
+patch=1,EE,104646B6,extended,0000FFFF
+
+[Lu Meng]
+patch=1,EE,104646B8,extended,0000FFFF
+
+[Gan Ning]
+patch=1,EE,104646BA,extended,0000FFFF
+
+[Jiang Wei]
+patch=1,EE,104646BC,extended,0000FFFF
+
+[Zhang Jiao]
+patch=1,EE,104646BE,extended,0000FFFF
+
+[Xu Huang]
+patch=1,EE,104646C0,extended,0000FFFF
+
+[Zhang He]
+patch=1,EE,104646C2,extended,0000FFFF
+
+[Zhen Ji-Wei]
+patch=1,EE,104646C4,extended,0000FFFF
+
+[Huang Gai]
+patch=1,EE,104646C6,extended,0000FFFF
+
+[Sun Ce]
+patch=1,EE,104646C8,extended,0000FFFF
+
+[Wei Yan]
+patch=1,EE,104646CA,extended,0000FFFF
+
+[Pang Tong]
+patch=1,EE,104646CC,extended,0000FFFF
+
+[Meng Huo]
+patch=1,EE,104646CE,extended,0000FFFF
+
+[Zhu Rong]
+patch=1,EE,104646D0,extended,0000FFFF
+
+[Da Qiao]
+patch=1,EE,104646D2,extended,0000FFFF
+
+[Xiao Qiao]
+patch=1,EE,104646D4,extended,0000FFFF
+
+[Cao Ren]
+patch=1,EE,104646D6,extended,0000FFFF
+
+[Zhou Tai]
+patch=1,EE,104646D8,extended,0000FFFF
+
+[Yue Ying]
+patch=1,EE,104646DA,extended,0000FFFF
+
+[Edit 1]
+patch=1,EE,104646DC,extended,0000FFFF
+
+[Edit 2]
+patch=1,EE,104646DE,extended,0000FFFF
+
+[Edit 3]
+patch=1,EE,104646E0,extended,0000FFFF
+
+[Edit 4]
+patch=1,EE,104646E2,extended,0000FFFF
+
+[Edit 5]
+patch=1,EE,104646E4,extended,0000FFFF

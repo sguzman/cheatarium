@@ -1,0 +1,172 @@
+gametitle=Codename-Kids Next Door-Operation VIDEOGAME (SLUS-21155)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011FDF8,extended,00832021
+patch=1,EE,200C0278,extended,080A9C24
+patch=1,EE,200C027C,extended,00000000
+patch=1,EE,20213670,extended,0C030088
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,8C82000C
+patch=1,EE,200C0228,extended,52210001
+patch=1,EE,200C022C,extended,AC820014
+
+[Infinite Damage]
+patch=1,EE,200C0230,extended,24010001
+patch=1,EE,200C0234,extended,8C82000C
+patch=1,EE,200C0238,extended,52210001
+patch=1,EE,200C023C,extended,AC820014
+
+[Infinite Powuh]
+patch=1,EE,200C0240,extended,24010002
+patch=1,EE,200C0244,extended,8C82000C
+patch=1,EE,200C0248,extended,52210001
+patch=1,EE,200C024C,extended,AC820014
+
+[Infinite 2x4]
+patch=1,EE,200C0250,extended,24010003
+patch=1,EE,200C0254,extended,8C82000C
+patch=1,EE,200C0258,extended,52210001
+patch=1,EE,200C025C,extended,AC820014
+
+[Rainbow Monkies Worth 100]
+patch=1,EE,2086D7CC,extended,42C80000
+
+[Enable All Unlockables]
+patch=1,EE,204F9820,extended,00000001
+
+[Invincibility]
+patch=1,EE,208383EC,extended,00000001
+
+[Infinite Powuh]
+patch=1,EE,2083840C,extended,00000001
+
+[Invisibility]
+patch=1,EE,2083841C,extended,00000001
+
+[Invincibility]
+patch=1,EE,2083838C,extended,00000001
+
+[Infinite Powuh]
+patch=1,EE,2083839C,extended,00000001
+
+[Invisibility]
+patch=1,EE,208383AC,extended,00000001
+
+[Attract Mode]
+patch=1,EE,208383FC,extended,00000001
+
+[Item Movies]
+patch=1,EE,208383DC,extended,00000001
+
+[Operation-T.U.T.O.R.I.A.L.]
+patch=1,EE,2083852C,extended,00000001
+
+[Operation-D.O.N.U.T.T.Y.]
+patch=1,EE,2083848C,extended,00000001
+
+[Operation-B.O.O.G.I.F.I.C.A.T.I.O.N.]
+patch=1,EE,2083859C,extended,00000001
+
+[Operation-S.N.O.T. B.O.M.B.E.R.]
+patch=1,EE,208384CC,extended,00000001
+
+[Operation-S.P.A.N.K. H.A.P.P.Y.]
+patch=1,EE,2083855C,extended,00000001
+
+[Operation-H.A.M.S.T.E.R.A.M.A.]
+patch=1,EE,2083853C,extended,00000001
+
+[Operation-S.P.A.N.K.A.R.I.F.F.I.C.]
+patch=1,EE,2083842C,extended,00000001
+
+[Operation-T.A.R.P.O.O.N.]
+patch=1,EE,208384EC,extended,00000001
+
+[Operation S.H.I.P. S.H.A.P.E.]
+patch=1,EE,208384BC,extended,00000001
+
+[Operation-B.R.U.S.H. O.F.F.]
+patch=1,EE,2083844C,extended,00000001
+
+[Operation-C.A.V.I.T.Y. C.A.V.E.]
+patch=1,EE,2083846C,extended,00000001
+
+[Operation-O.V.E.R.F.L.O.W.]
+patch=1,EE,2083857C,extended,00000001
+
+[Operation-M.O.O.N.T.R.I.P.]
+patch=1,EE,2083850C,extended,00000001
+
+[Operation-L.U.N.A.R.U.M.B.L.E.]
+patch=1,EE,208384AC,extended,00000001
+
+[Operation-T.U.T.O.R.I.A.L.]
+patch=1,EE,2083924C,extended,00000004
+
+[Operation-D.O.N.U.T.T.Y.]
+patch=1,EE,208391EC,extended,00000004
+
+[Operation-B.O.O.G.I.F.I.C.A.T.I.O.N.]
+patch=1,EE,208392EC,extended,00000004
+
+[Operation-S.N.O.T. B.O.M.B.E.R.]
+patch=1,EE,2083921C,extended,00000004
+
+[Operation-S.P.A.N.K. H.A.P.P.Y.]
+patch=1,EE,208392AC,extended,00000004
+
+[Operation-H.A.M.S.T.E.R.A.M.A.]
+patch=1,EE,2083927C,extended,00000004
+
+[Operation-S.P.A.N.K.A.R.I.F.F.I.C.]
+patch=1,EE,2083910C,extended,00000004
+
+[Operation-T.A.R.P.O.O.N.]
+patch=1,EE,2083922C,extended,00000004
+
+[Operation S.H.I.P. S.H.A.P.E.]
+patch=1,EE,2083920C,extended,00000004
+
+[Operation-B.R.U.S.H. O.F.F.]
+patch=1,EE,2083916C,extended,00000004
+
+[Operation-C.A.V.I.T.Y. C.A.V.E.]
+patch=1,EE,208391AC,extended,00000004
+
+[Operation-O.V.E.R.F.L.O.W.]
+patch=1,EE,208392DC,extended,00000004
+
+[Operation-M.O.O.N.T.R.I.P.]
+patch=1,EE,2083923C,extended,00000004
+
+[Operation-C.R.E.D.I.T.S.]
+patch=1,EE,2083931C,extended,00000004
+
+[Numbuh 1-Sooper Deformed]
+patch=1,EE,2083A590,extended,00000001
+
+[Numbuh 1-Vampire]
+patch=1,EE,2083A594,extended,00000001
+
+[Numbuh 1-Numbuh 86]
+patch=1,EE,2083A598,extended,00000001
+
+[Numbuh 3-Super Deformed]
+patch=1,EE,2083A5E0,extended,00000001
+
+[Numbuh 4-Super Deformed]
+patch=1,EE,2083A630,extended,00000001
+
+[Numbuh 4-Vampire]
+patch=1,EE,2083A634,extended,00000001
+
+[Numbuh 5-Super Deformed]
+patch=1,EE,2083A680,extended,00000001
+
+[Numbuh 5-Vampire]
+patch=1,EE,2083A684,extended,00000001

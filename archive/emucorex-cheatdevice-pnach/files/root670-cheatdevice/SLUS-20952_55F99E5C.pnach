@@ -1,0 +1,133 @@
+gametitle=Tak 2-The Staff Of Dreams (SLUS-20952)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9043F644,extended,0C113477
+
+[Infinite Health]
+patch=1,EE,20210468,extended,C6410264
+patch=1,EE,20210474,extended,E6410260
+
+[Max Infinite Mana]
+patch=1,EE,20218C7C,extended,C6000110
+
+[Infinite Mana Usage]
+patch=1,EE,20218E84,extended,00000000
+
+[P1 Press {CROSS} For Moon Jump]
+patch=1,EE,20364204,extended,3C0140C0
+patch=1,EE,D05237C2,extended,0000BFFF
+patch=1,EE,2036420C,extended,AC810084
+patch=1,EE,D05237C2,extended,0010BFFF
+patch=1,EE,2036420C,extended,00000000
+
+[Infinite Double Jumps]
+patch=1,EE,202298AC,extended,00000000
+
+[Infinite Bugs]
+patch=1,EE,2052067C,extended,4479C000
+
+[Infinite Crystals]
+patch=1,EE,20520688,extended,4479C000
+
+[Infinite Fruits]
+patch=1,EE,20520694,extended,4479C000
+
+[Access All Extras]
+patch=1,EE,2051AA84,extended,00000001
+
+[Flea Flyer-One Player]
+patch=1,EE,204BB3DC,extended,00000001
+
+[View Tak 2 Opening Cinematic]
+patch=1,EE,204BB404,extended,00000001
+
+[Balloon Head Showdown-One And Two Player]
+patch=1,EE,204BB42C,extended,00000001
+
+[Tak's Feather Color]
+patch=1,EE,204BB454,extended,00000001
+
+[Vine Climb-Two Player]
+patch=1,EE,204BB47C,extended,00000001
+
+[Lok Character For Dinky Games]
+patch=1,EE,204BB4A4,extended,00000001
+
+[Increased Mana Magnet]
+patch=1,EE,204BB4CC,extended,00000001
+
+[Gloomleaf Arena-One Player]
+patch=1,EE,204BB4F4,extended,00000001
+
+[Krash Kourse-Two Player]
+patch=1,EE,204BB51C,extended,00000001
+
+[View Commercials]
+patch=1,EE,204BB544,extended,00000001
+
+[Catapult Chaos-Two Player]
+patch=1,EE,204BB56C,extended,00000001
+
+[Game Music]
+patch=1,EE,204BB594,extended,00000001
+
+[New Particle Effects]
+patch=1,EE,204BB5BC,extended,00000001
+
+[Barrel Blitz-One Player]
+patch=1,EE,204BB5E4,extended,00000001
+
+[Chuckin' Chickens-One & Two Player]
+patch=1,EE,204BB60C,extended,00000001
+
+[Sound Effects Set 1]
+patch=1,EE,204BB634,extended,00000001
+
+[Dart Tomb Dodgem-Two Player]
+patch=1,EE,204BB65C,extended,00000001
+
+[JB Characters For Dinky Games]
+patch=1,EE,204BB684,extended,00000001
+
+[Pictures Of The Tak Suit]
+patch=1,EE,204BB6AC,extended,00000001
+
+[Glide Ride-One Player]
+patch=1,EE,204BB6D4,extended,00000001
+
+[Fauna Character For Dinky Games]
+patch=1,EE,204BB6FC,extended,00000001
+
+[Chicken Tennis-Two Player]
+patch=1,EE,204BB724,extended,00000001
+
+[View Concept Art]
+patch=1,EE,204BB74C,extended,00000001
+
+[Frog Derby-One & Two Player]
+patch=1,EE,204BB774,extended,00000001
+
+[Dead Juju Character For Dinky Games]
+patch=1,EE,204BB79C,extended,00000001
+
+[View Tak 1 Game Cinematic]
+patch=1,EE,204BB7C4,extended,00000001
+
+[Snowboard Air Time-One & Two Player]
+patch=1,EE,204BB7EC,extended,00000001
+
+[Sound Effects Set 2]
+patch=1,EE,204BB814,extended,00000001
+
+[View Tak 1 Opening Cinematic]
+patch=1,EE,204BB83C,extended,00000001
+
+[Tlaloc Character For Dinky Games]
+patch=1,EE,204BB864,extended,00000001
+
+[All Juju Potions]
+patch=1,EE,404BB3DC,extended,001E000A
+patch=1,EE,00000001,extended,00000000

@@ -1,0 +1,317 @@
+gametitle=Suzuki TT-Superbikes-Real Road Racing (SLUS-20912)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901A3E60,extended,0C06C092
+
+[Infinite Fuel]
+patch=1,EE,2016DC9C,extended,00000000
+
+[Always Low Race Time]
+patch=1,EE,2010E758,extended,AC600000
+
+[Always Low Lap Time]
+patch=1,EE,2010E760,extended,AC6001E4
+
+[Unlock All Events]
+patch=1,EE,2013E7EC,extended,AC600000
+patch=1,EE,1013E7F2,extended,00001000
+
+[Unlock All Bikes]
+patch=1,EE,20152108,extended,A4400000
+patch=1,EE,20152110,extended,00000000
+
+[Unlock All Wheels]
+patch=1,EE,20151CD4,extended,A4400000
+patch=1,EE,10151CDA,extended,00001000
+
+[Unlock All Helmets]
+patch=1,EE,20152364,extended,A4400000
+patch=1,EE,1015236A,extended,00001000
+
+[Unlock All Leathers]
+patch=1,EE,20152524,extended,A4400000
+patch=1,EE,1015252A,extended,00001000
+
+[In-Game Debug Info Enabled]
+patch=1,EE,201F4694,extended,00000001
+
+[Auto Pilot Enabled ({R3} Button)]
+patch=1,EE,201F47A4,extended,00000001
+
+[Boost Enabled ({L3} Button)]
+patch=1,EE,201F47BC,extended,00000001
+
+[Mega Boost Enabled ({L3} Button)]
+patch=1,EE,201F47BC,extended,00000002
+
+[Any Stage Enabled]
+patch=1,EE,201F4E34,extended,00000001
+
+[Part 1]
+patch=1,EE,201DE9A8,extended,00000001
+
+[Part 2]
+patch=1,EE,201DEA0C,extended,00000001
+
+[Part 3]
+patch=1,EE,201DEA70,extended,00000001
+
+[Part 4]
+patch=1,EE,201DEAD4,extended,00000001
+
+[Part 5]
+patch=1,EE,201DEB38,extended,00000001
+
+[Part 6]
+patch=1,EE,201DEB9C,extended,00000001
+
+[Part 7]
+patch=1,EE,201DEC00,extended,00000001
+
+[All Master Class Videos]
+patch=1,EE,401DE9A8,extended,00070019
+patch=1,EE,00000001,extended,00000000
+
+[Adrian Archibald]
+patch=1,EE,201DEC68,extended,00000001
+
+[Ian Lougher]
+patch=1,EE,201DECCC,extended,00000001
+
+[John McGuinness]
+patch=1,EE,201DED30,extended,00000001
+
+[Ryan Farquhar]
+patch=1,EE,201DED94,extended,00000001
+
+[Richard Britton]
+patch=1,EE,201DEDF8,extended,00000001
+
+[Jason Griffiths]
+patch=1,EE,201DEE5C,extended,00000001
+
+[Shaun Harris]
+patch=1,EE,201DEEC0,extended,00000001
+
+[Bruce Anstey]
+patch=1,EE,201DEF24,extended,00000001
+
+[Chris Palmer]
+patch=1,EE,201DEF88,extended,00000001
+
+[Dave Molyneux]
+patch=1,EE,201DEFEC,extended,00000001
+
+[Ian Bell]
+patch=1,EE,201DF050,extended,00000001
+
+[TT Action]
+patch=1,EE,201DF0B4,extended,00000001
+
+[Mad Sunday]
+patch=1,EE,201DF118,extended,00000001
+
+[All Rider Videos]
+patch=1,EE,401DEC68,extended,000D0019
+patch=1,EE,00000001,extended,00000000
+
+[Adrian Archibald-Still 1]
+patch=1,EE,201DF164,extended,00000001
+
+[Adrian Archibald-Still 2]
+patch=1,EE,201DF168,extended,00000001
+
+[Adrian Archibald-Still 3]
+patch=1,EE,201DF16C,extended,00000001
+
+[Adrian Archibald-Still 4]
+patch=1,EE,201DF170,extended,00000001
+
+[Ian Lougher-Still 1]
+patch=1,EE,201DF1F8,extended,00000001
+
+[Ian Lougher-Still 2]
+patch=1,EE,201DF1FC,extended,00000001
+
+[Ian Lougher-Still 3]
+patch=1,EE,201DF200,extended,00000001
+
+[Ian Lougher-Still 4]
+patch=1,EE,201DF204,extended,00000001
+
+[John McGuinness-Still 1]
+patch=1,EE,201DF28C,extended,00000001
+
+[John McGuinness-Still 2]
+patch=1,EE,201DF290,extended,00000001
+
+[John McGuinness-Still 3]
+patch=1,EE,201DF294,extended,00000001
+
+[John McGuinness-Still 4]
+patch=1,EE,201DF298,extended,00000001
+
+[Ryan Farquhar-Still 1]
+patch=1,EE,201DF320,extended,00000001
+
+[Ryan Farquhar-Still 2]
+patch=1,EE,201DF324,extended,00000001
+
+[Ryan Farquhar-Still 3]
+patch=1,EE,201DF328,extended,00000001
+
+[Ryan Farquhar-Still 4]
+patch=1,EE,201DF32C,extended,00000001
+
+[Richard Britton-Still 1]
+patch=1,EE,201DF3B4,extended,00000001
+
+[Richard Britton-Still 2]
+patch=1,EE,201DF3B8,extended,00000001
+
+[Richard Britton-Still 3]
+patch=1,EE,201DF3BC,extended,00000001
+
+[Richard Britton-Still 4]
+patch=1,EE,201DF3C0,extended,00000001
+
+[Jason Griffiths-Still 1]
+patch=1,EE,201DF448,extended,00000001
+
+[Jason Griffiths-Still 2]
+patch=1,EE,201DF44C,extended,00000001
+
+[Jason Griffiths-Still 3]
+patch=1,EE,201DF450,extended,00000001
+
+[Jason Griffiths-Still 4]
+patch=1,EE,201DF454,extended,00000001
+
+[Shaun Harris-Still 1]
+patch=1,EE,201DF4DC,extended,00000001
+
+[Shaun Harris-Still 2]
+patch=1,EE,201DF4E0,extended,00000001
+
+[Shaun Harris-Still 3]
+patch=1,EE,201DF4E4,extended,00000001
+
+[Shaun Harris-Still 4]
+patch=1,EE,201DF4E8,extended,00000001
+
+[Bruce Anstey-Still 1]
+patch=1,EE,201DF570,extended,00000001
+
+[Bruce Anstey-Still 2]
+patch=1,EE,201DF574,extended,00000001
+
+[Bruce Anstey-Still 3]
+patch=1,EE,201DF578,extended,00000001
+
+[Bruce Anstey-Still 4]
+patch=1,EE,201DF57C,extended,00000001
+
+[Chris Palmer-Still 1]
+patch=1,EE,201DF604,extended,00000001
+
+[Chris Palmer-Still 2]
+patch=1,EE,201DF608,extended,00000001
+
+[Chris Palmer-Still 3]
+patch=1,EE,201DF60C,extended,00000001
+
+[Chris Palmer-Still 4]
+patch=1,EE,201DF610,extended,00000001
+
+[Dave Molyneux-Still 1]
+patch=1,EE,201DF698,extended,00000001
+
+[Dave Molyneux-Still 2]
+patch=1,EE,201DF69C,extended,00000001
+
+[Dave Molyneux-Still 3]
+patch=1,EE,201DF6A0,extended,00000001
+
+[Dave Molyneux-Still 4]
+patch=1,EE,201DF6A4,extended,00000001
+
+[Ian Bell-Still 1]
+patch=1,EE,201DF72C,extended,00000001
+
+[Ian Bell-Still 2]
+patch=1,EE,201DF730,extended,00000001
+
+[Ian Bell-Still 3]
+patch=1,EE,201DF734,extended,00000001
+
+[Ian Bell-Still 4]
+patch=1,EE,201DF738,extended,00000001
+
+[Bonus-Still 1]
+patch=1,EE,201DF7C0,extended,00000001
+
+[Bonus-Still 2]
+patch=1,EE,201DF7C4,extended,00000001
+
+[Bonus-Still 3]
+patch=1,EE,201DF7C8,extended,00000001
+
+[Bonus-Still 4]
+patch=1,EE,201DF7CC,extended,00000001
+
+[Bonus-Still 5]
+patch=1,EE,201DF7D0,extended,00000001
+
+[Bonus-Still 6]
+patch=1,EE,201DF7D4,extended,00000001
+
+[Bonus-Still 7]
+patch=1,EE,201DF7D8,extended,00000001
+
+[Bonus-Still 8]
+patch=1,EE,201DF7DC,extended,00000001
+
+[Bonus-Still 9]
+patch=1,EE,201DF7E0,extended,00000001
+
+[Bonus-Still 10]
+patch=1,EE,201DF7E4,extended,00000001
+
+[Bonus-Still 11]
+patch=1,EE,201DF7E8,extended,00000001
+
+[Bonus-Still 12]
+patch=1,EE,201DF7EC,extended,00000001
+
+[Bonus-Still 13]
+patch=1,EE,201DF7F0,extended,00000001
+
+[Bonus-Still 14]
+patch=1,EE,201DF7F4,extended,00000001
+
+[Bonus-Still 15]
+patch=1,EE,201DF7F8,extended,00000001
+
+[Bonus-Still 16]
+patch=1,EE,201DF7FC,extended,00000001
+
+[Bonus-Still 17]
+patch=1,EE,201DF800,extended,00000001
+
+[Bonus-Still 18]
+patch=1,EE,201DF804,extended,00000001
+
+[All Rider Stills]
+patch=1,EE,401DF164,extended,000B0029
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,401DF168,extended,000B0029
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,401DF16C,extended,000B0029
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,401DF170,extended,000B0029
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,401DF7C0,extended,00120001
+patch=1,EE,00000001,extended,00000000

@@ -1,0 +1,69 @@
+gametitle=Red-Dead Revolver (SLUS-20500)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903C8CC4,extended,0C097D3A
+
+[Access All Journal Entries]
+patch=1,EE,1011C4D2,extended,00001000
+
+[Access All Multiplayer Missions]
+patch=1,EE,10131E66,extended,00001000
+
+[Access All Multiplayer Characters]
+patch=1,EE,2013F31C,extended,00000000
+
+[Disable Powerups]
+patch=1,EE,1022A74A,extended,00001000
+
+[Disable Water]
+patch=1,EE,1022AE72,extended,00001000
+
+[Disable Rain]
+patch=1,EE,1022AF22,extended,00001000
+
+[Disable Snow]
+patch=1,EE,1022AFB2,extended,00001000
+
+[Disable Grass]
+patch=1,EE,1022B03E,extended,00001000
+
+[Disable Wind]
+patch=1,EE,1022B116,extended,00001000
+
+[Access Video Mode Select Screen]
+patch=1,EE,202341E8,extended,00000000
+
+[Disable Subtitles]
+patch=1,EE,10237ABA,extended,00001000
+
+[Disable Slow Multi Duel]
+patch=1,EE,20266A70,extended,00000000
+
+[Big Money]
+patch=1,EE,2035B48C,extended,00000000
+
+[Invulnerable]
+patch=1,EE,2035B528,extended,00000000
+patch=1,EE,2035BB70,extended,00000000
+
+[Infinite Health]
+patch=1,EE,203627D0,extended,03E00008
+patch=1,EE,203627D4,extended,00000000
+
+[Never Reload]
+patch=1,EE,2039BBC8,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2039DC44,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,2039DC38,extended,00651821
+
+[Friendly Fire Always Off]
+patch=1,EE,004FA5C2,extended,00000000
+
+[Friendly Fire Always On]
+patch=1,EE,004FA5C2,extended,00000001

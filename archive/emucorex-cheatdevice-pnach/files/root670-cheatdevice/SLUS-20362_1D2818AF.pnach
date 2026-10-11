@@ -1,0 +1,311 @@
+gametitle=Need For Speed-Hot Pursuit 2 (SLUS-20362)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90282304,extended,0C0A5B85
+
+[Max NFS Points]
+patch=1,EE,2030CE54,extended,05F5E0FF
+
+[Get Busted Once To Get Arrested]
+patch=1,EE,202270C8,extended,00000000
+
+[Infinite Times Getting Busted]
+patch=1,EE,202272B0,extended,00000000
+
+[Cops Cant Bust You]
+patch=1,EE,20226F30,extended,03E00008
+patch=1,EE,20226F34,extended,00000000
+
+[Always Low Time]
+patch=1,EE,201A369C,extended,00000000
+
+[Idiot Cop AI]
+patch=1,EE,20225078,extended,03E00008
+patch=1,EE,2022507C,extended,00000000
+patch=1,EE,2022FF58,extended,03E00008
+patch=1,EE,2022FF5C,extended,00000000
+
+[Infinite Time]
+patch=1,EE,202280DC,extended,00000000
+
+[Start/Stop Timer]
+patch=1,EE,D02DEB82,extended,0000FFFD
+patch=1,EE,202280DC,extended,00000000
+patch=1,EE,D02DEB82,extended,0000FFFE
+patch=1,EE,202280DC,extended,E66028F0
+
+[Infinite Helicopter Assistances]
+patch=1,EE,20224F60,extended,00000000
+
+[Event 1]
+patch=1,EE,202FC2D8,extended,00000001
+
+[Event 2]
+patch=1,EE,202FC2DC,extended,00000001
+
+[Event 3]
+patch=1,EE,202FC2E0,extended,00000001
+
+[Event 4]
+patch=1,EE,202FC2E4,extended,00000001
+
+[Event 5]
+patch=1,EE,202FC2F4,extended,00000001
+
+[Event 6]
+patch=1,EE,202FC2F8,extended,00000001
+
+[Event 7]
+patch=1,EE,002FC394,extended,00000001
+
+[Event 8]
+patch=1,EE,202FC308,extended,00000001
+
+[Event 9]
+patch=1,EE,202FC318,extended,00000001
+
+[Event 10]
+patch=1,EE,002FC395,extended,00000001
+
+[Event 11]
+patch=1,EE,002FC396,extended,00000001
+
+[Event 12]
+patch=1,EE,002FC397,extended,00000001
+
+[Event 13]
+patch=1,EE,202FC31C,extended,00000001
+
+[Event 14]
+patch=1,EE,202FC320,extended,FFFFFFFF
+
+[Event 15]
+patch=1,EE,202FC330,extended,FFFFFFFF
+
+[Event 16]
+patch=1,EE,002FC398,extended,00000001
+
+[Event 17]
+patch=1,EE,202FC340,extended,00000001
+
+[Event 18]
+patch=1,EE,202FC344,extended,00000001
+
+[Event 19]
+patch=1,EE,202FC348,extended,00000001
+
+[Event 20]
+patch=1,EE,002FC399,extended,00000001
+
+[Event 21]
+patch=1,EE,002FC39A,extended,00000001
+
+[Event 22]
+patch=1,EE,002FC39B,extended,00000001
+
+[Event 23]
+patch=1,EE,002FC39C,extended,00000001
+
+[Event 24]
+patch=1,EE,202FC34C,extended,00000001
+
+[Event 25]
+patch=1,EE,202FC350,extended,00000001
+
+[Event 26]
+patch=1,EE,202FC360,extended,00000001
+
+[Event 27]
+patch=1,EE,202FC370,extended,00000001
+
+[Event 28]
+patch=1,EE,202FC374,extended,FFFFFFFF
+
+[Event 29]
+patch=1,EE,202FC384,extended,FFFFFFFF
+
+[Event 30]
+patch=1,EE,002FC39D,extended,00000001
+
+[Event 31]
+patch=1,EE,002FC39E,extended,00000001
+
+[Event 32]
+patch=1,EE,002FC2C6,extended,00000001
+
+[Event 1]
+patch=1,EE,002FC2B8,extended,00000001
+
+[Event 2]
+patch=1,EE,202FC1D8,extended,00000001
+
+[Event 3]
+patch=1,EE,002FC2B9,extended,00000001
+
+[Event 4]
+patch=1,EE,002FC2BA,extended,00000001
+
+[Event 5]
+patch=1,EE,202FC1DC,extended,00000001
+
+[Event 6]
+patch=1,EE,202FC1EC,extended,FFFFFFFF
+
+[Event 7]
+patch=1,EE,002FC2BB,extended,00000001
+
+[Event 8]
+patch=1,EE,202FC1FC,extended,00000001
+
+[Event 9]
+patch=1,EE,202FC200,extended,FFFFFFFF
+
+[Event 10]
+patch=1,EE,202FC210,extended,FFFFFFFF
+
+[Event 11]
+patch=1,EE,202FC220,extended,00000001
+
+[Event 12]
+patch=1,EE,202FC224,extended,00000001
+
+[Event 13]
+patch=1,EE,002FC2BC,extended,00000001
+
+[Event 14]
+patch=1,EE,202FC234,extended,00000001
+
+[Event 15]
+patch=1,EE,202FC244,extended,FFFFFFFF
+
+[Event 16]
+patch=1,EE,002FC2BD,extended,00000001
+
+[Event 17]
+patch=1,EE,002FC254,extended,00000001
+
+[Event 18]
+patch=1,EE,202FC264,extended,FFFFFFFF
+
+[Event 19]
+patch=1,EE,002FC2BE,extended,00000001
+
+[Event 20]
+patch=1,EE,002FC2BF,extended,00000001
+
+[Event 21]
+patch=1,EE,002FC2C0,extended,00000001
+
+[Event 22]
+patch=1,EE,002FC2C1,extended,00000001
+
+[Event 23]
+patch=1,EE,002FC2C2,extended,00000001
+
+[Event 24]
+patch=1,EE,202FC274,extended,00000001
+
+[Event 25]
+patch=1,EE,202FC278,extended,00000001
+
+[Event 26]
+patch=1,EE,202FC288,extended,00000001
+
+[Event 27]
+patch=1,EE,202FC298,extended,FFFFFFFF
+
+[Event 28]
+patch=1,EE,202FC2A8,extended,FFFFFFFF
+
+[Event 29]
+patch=1,EE,002FC2C3,extended,00000001
+
+[Event 30]
+patch=1,EE,002FC2C4,extended,00000001
+
+[Event 31]
+patch=1,EE,002FC2C5,extended,00000001
+
+[Event 32]
+patch=1,EE,002FC2C6,extended,00000001
+
+[BMW M5 (Cop Car)]
+patch=1,EE,2030C710,extended,00000001
+
+[Mercedes-Benz CL SS AMG NFS]
+patch=1,EE,2030C714,extended,00000001
+
+[Mustant SVT Cobra R (Cop Car)]
+patch=1,EE,2030C718,extended,00000001
+
+[Vauxhall VX 220 NFS]
+patch=1,EE,2030C71C,extended,00000001
+
+[Ferrari F50 NFS]
+patch=1,EE,2030C720,extended,00000001
+
+[Lamborghini Murcielago (Cop Car)]
+patch=1,EE,2030C724,extended,00000001
+
+[Ford T550 NFS]
+patch=1,EE,2030C728,extended,00000001
+
+[Corvette Z06 (Cop Car)]
+patch=1,EE,2030C72C,extended,00000001
+
+[HSV GTS Coupe]
+patch=1,EE,2030C730,extended,00000001
+
+[BMW Z8]
+patch=1,EE,2030C734,extended,00000001
+
+[Jaguar XKR Coupe NFS]
+patch=1,EE,2030C738,extended,00000001
+
+[Ferrari 550 Barchatta]
+patch=1,EE,2030C73C,extended,00000001
+
+[Lotus Elise]
+patch=1,EE,2030C740,extended,00000001
+
+[Ferrari F50]
+patch=1,EE,2030C744,extended,00000001
+
+[Aston Martin V12 Vanquish]
+patch=1,EE,2030C748,extended,00000001
+
+[Mustang SVT Cobra R NFS]
+patch=1,EE,2030C74C,extended,00000001
+
+[Porsche 911 Turbo NFS]
+patch=1,EE,2030C750,extended,00000001
+
+[Ferrari 550 Barchatta NFS]
+patch=1,EE,2030C754,extended,00000001
+
+[Dodge Viper GTS NFS]
+patch=1,EE,2030C758,extended,00000001
+
+[Lamborghini Diablo 6.0 NFS]
+patch=1,EE,2030C75C,extended,00000001
+
+[Corvette Z06 NFS]
+patch=1,EE,2030C760,extended,00000001
+
+[Lamborghini Murcielago NFS]
+patch=1,EE,2030C764,extended,00000001
+
+[Porsche Carrera GT Concept Version NFS]
+patch=1,EE,2030C768,extended,00000001
+
+[McLaren Cars Limited McLaren F1 NFS]
+patch=1,EE,2030C76C,extended,00000001
+
+[Mercedes-Benz CLK GTR NFS]
+patch=1,EE,2030C770,extended,00000001
+
+[McLaren Cars Limited McLaren F1LM NFS]
+patch=1,EE,2030C774,extended,00000001

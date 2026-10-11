@@ -1,0 +1,637 @@
+gametitle=Lethal Skies II (SLUS-20735)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9027C1F4,extended,0C0A5370
+
+[Disable FMV]
+patch=1,EE,2027FF68,extended,24020001
+
+[Guns Never Overheat]
+patch=1,EE,20186CD8,extended,00000000
+
+[Press {SELECT}+{L2} To Complete Mission]
+patch=1,EE,D0453842,extended,0000FEFE
+patch=1,EE,204393BC,extended,00000002
+
+[Have All Planes]
+patch=1,EE,4039B130,extended,00140001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Campaign Missions]
+patch=1,EE,4039B180,extended,00190001
+patch=1,EE,00000000,extended,00000001
+
+[Always Low Total Time (Easy Missions)]
+patch=1,EE,4039B2EC,extended,00190007
+patch=1,EE,00000000,extended,00000000
+
+[Always Low Total Time (Normal Missions)]
+patch=1,EE,4039B5A8,extended,00190007
+patch=1,EE,00000000,extended,00000000
+
+[Always Low Total Time (Hard Missions)]
+patch=1,EE,4039B864,extended,00190007
+patch=1,EE,00000000,extended,00000000
+
+[Always Low Time]
+patch=1,EE,203C99FC,extended,00000000
+
+[Rank S]
+patch=1,EE,203C9A00,extended,00000000
+
+[Max Aircraft Shot]
+patch=1,EE,203C9A0C,extended,00000063
+
+[Max Ground Shot]
+patch=1,EE,203C9A10,extended,00000063
+
+[Max Vessel Shot]
+patch=1,EE,203C9A14,extended,00000063
+
+[Max Other Shot]
+patch=1,EE,203C9A18,extended,00000063
+
+[F-14D]
+patch=1,EE,2039B130,extended,00000001
+
+[F-16]
+patch=1,EE,2039B134,extended,00000001
+
+[A-10]
+patch=1,EE,2039B138,extended,00000001
+
+[F/A-18]
+patch=1,EE,2039B13C,extended,00000001
+
+[F-15E]
+patch=1,EE,2039B140,extended,00000001
+
+[F/A-22]
+patch=1,EE,2039B144,extended,00000001
+
+[F-25]
+patch=1,EE,2039B148,extended,00000001
+
+[YF23]
+patch=1,EE,2039B14C,extended,00000001
+
+[EF2000]
+patch=1,EE,2039B150,extended,00000001
+
+[JAS39]
+patch=1,EE,2039B154,extended,00000001
+
+[MiG29]
+patch=1,EE,2039B158,extended,00000001
+
+[Su27]
+patch=1,EE,2039B15C,extended,00000001
+
+[Su35]
+patch=1,EE,2039B160,extended,00000001
+
+[S-37]
+patch=1,EE,2039B164,extended,00000001
+
+[X29Z]
+patch=1,EE,2039B168,extended,00000001
+
+[F-5Z]
+patch=1,EE,2039B16C,extended,00000001
+
+[AV8B]
+patch=1,EE,2039B174,extended,00000001
+
+[F-35(tm)]
+patch=1,EE,2039B178,extended,00000001
+
+[S-47]
+patch=1,EE,2039B17C,extended,00000001
+
+[Mission 01]
+patch=1,EE,2039B180,extended,00000000
+
+[Mission 02]
+patch=1,EE,2039B184,extended,00000001
+
+[Mission 03]
+patch=1,EE,2039B188,extended,00000002
+
+[Mission 04]
+patch=1,EE,2039B18C,extended,00000003
+
+[Mission 05]
+patch=1,EE,2039B190,extended,00000004
+
+[Mission 06-1]
+patch=1,EE,2039B194,extended,00000005
+
+[Mission 06-2]
+patch=1,EE,2039B198,extended,00000006
+
+[Mission SP-1]
+patch=1,EE,2039B19C,extended,00000007
+
+[Mission 07]
+patch=1,EE,2039B1A0,extended,00000008
+
+[Mission 08]
+patch=1,EE,2039B1A4,extended,00000009
+
+[Mission 09-1]
+patch=1,EE,2039B1A8,extended,0000000A
+
+[Mission 09-2]
+patch=1,EE,2039B1AC,extended,0000000B
+
+[Mission 10]
+patch=1,EE,2039B1B0,extended,0000000C
+
+[Mission SP-2]
+patch=1,EE,2039B1B4,extended,0000000D
+
+[Mission 11]
+patch=1,EE,2039B1B8,extended,0000000E
+
+[Mission 12]
+patch=1,EE,2039B1BC,extended,0000000F
+
+[Mission 13]
+patch=1,EE,2039B1C0,extended,00000010
+
+[Mission 14]
+patch=1,EE,2039B1C4,extended,00000011
+
+[Mission 15]
+patch=1,EE,2039B1C8,extended,00000012
+
+[Mission 16]
+patch=1,EE,2039B1CC,extended,00000013
+
+[Mission EX-1]
+patch=1,EE,2039B1D0,extended,00000014
+
+[Mission EX-2]
+patch=1,EE,2039B1D4,extended,00000015
+
+[Mission EX-3]
+patch=1,EE,2039B1D8,extended,00000016
+
+[Mission EX-4]
+patch=1,EE,2039B1DC,extended,00000017
+
+[Mission EX-5]
+patch=1,EE,2039B1E0,extended,00000018
+
+[Mission 01]
+patch=1,EE,2039B2EC,extended,00000000
+
+[Mission 02]
+patch=1,EE,2039B308,extended,00000000
+
+[Mission 03]
+patch=1,EE,2039B324,extended,00000000
+
+[Mission 04]
+patch=1,EE,2039B340,extended,00000000
+
+[Mission 05]
+patch=1,EE,2039B35C,extended,00000000
+
+[Mission 06-1]
+patch=1,EE,2039B378,extended,00000000
+
+[Mission 06-2]
+patch=1,EE,2039B394,extended,00000000
+
+[Mission SP-1]
+patch=1,EE,2039B3B0,extended,00000000
+
+[Mission 07]
+patch=1,EE,2039B3CC,extended,00000000
+
+[Mission 08]
+patch=1,EE,2039B3E8,extended,00000000
+
+[Mission 09-1]
+patch=1,EE,2039B404,extended,00000000
+
+[Mission 09-2]
+patch=1,EE,2039B420,extended,00000000
+
+[Mission 10]
+patch=1,EE,2039B43C,extended,00000000
+
+[Mission SP-2]
+patch=1,EE,2039B458,extended,00000000
+
+[Mission 11]
+patch=1,EE,2039B474,extended,00000000
+
+[Mission 12]
+patch=1,EE,2039B490,extended,00000000
+
+[Mission 13]
+patch=1,EE,2039B4AC,extended,00000000
+
+[Mission 14]
+patch=1,EE,2039B4C8,extended,00000000
+
+[Mission 15]
+patch=1,EE,2039B4E4,extended,00000000
+
+[Mission 16]
+patch=1,EE,2039B500,extended,00000000
+
+[Mission EX-1]
+patch=1,EE,2039B51C,extended,00000000
+
+[Mission EX-2]
+patch=1,EE,2039B538,extended,00000000
+
+[Mission EX-3]
+patch=1,EE,2039B554,extended,00000000
+
+[Mission EX-4]
+patch=1,EE,2039B570,extended,00000000
+
+[Mission EX-5]
+patch=1,EE,2039B58C,extended,00000000
+
+[Mission 01]
+patch=1,EE,2039B5A8,extended,00000000
+
+[Mission 02]
+patch=1,EE,2039B5C4,extended,00000000
+
+[Mission 03]
+patch=1,EE,2039B5E0,extended,00000000
+
+[Mission 04]
+patch=1,EE,2039B5FC,extended,00000000
+
+[Mission 05]
+patch=1,EE,2039B618,extended,00000000
+
+[Mission 06-1]
+patch=1,EE,2039B634,extended,00000000
+
+[Mission 06-2]
+patch=1,EE,2039B650,extended,00000000
+
+[Mission SP-1]
+patch=1,EE,2039B66C,extended,00000000
+
+[Mission 07]
+patch=1,EE,2039B688,extended,00000000
+
+[Mission 08]
+patch=1,EE,2039B6A4,extended,00000000
+
+[Mission 09-1]
+patch=1,EE,2039B6C0,extended,00000000
+
+[Mission 09-2]
+patch=1,EE,2039B6DC,extended,00000000
+
+[Mission 10]
+patch=1,EE,2039B6F8,extended,00000000
+
+[Mission SP-2]
+patch=1,EE,2039B714,extended,00000000
+
+[Mission 11]
+patch=1,EE,2039B730,extended,00000000
+
+[Mission 12]
+patch=1,EE,2039B74C,extended,00000000
+
+[Mission 13]
+patch=1,EE,2039B768,extended,00000000
+
+[Mission 14]
+patch=1,EE,2039B784,extended,00000000
+
+[Mission 15]
+patch=1,EE,2039B7A0,extended,00000000
+
+[Mission 16]
+patch=1,EE,2039B7BC,extended,00000000
+
+[Mission EX-1]
+patch=1,EE,2039B7D8,extended,00000000
+
+[Mission EX-2]
+patch=1,EE,2039B7F4,extended,00000000
+
+[Mission EX-3]
+patch=1,EE,2039B810,extended,00000000
+
+[Mission EX-4]
+patch=1,EE,2039B82C,extended,00000000
+
+[Mission EX-5]
+patch=1,EE,2039B848,extended,00000000
+
+[Mission 01]
+patch=1,EE,2039B864,extended,00000000
+
+[Mission 02]
+patch=1,EE,2039B880,extended,00000000
+
+[Mission 03]
+patch=1,EE,2039B89C,extended,00000000
+
+[Mission 04]
+patch=1,EE,2039B8B8,extended,00000000
+
+[Mission 05]
+patch=1,EE,2039B8D4,extended,00000000
+
+[Mission 06-1]
+patch=1,EE,2039B8F0,extended,00000000
+
+[Mission 06-2]
+patch=1,EE,2039B90C,extended,00000000
+
+[Mission SP-1]
+patch=1,EE,2039B928,extended,00000000
+
+[Mission 07]
+patch=1,EE,2039B944,extended,00000000
+
+[Mission 08]
+patch=1,EE,2039B960,extended,00000000
+
+[Mission 09-1]
+patch=1,EE,2039B97C,extended,00000000
+
+[Mission 09-2]
+patch=1,EE,2039B998,extended,00000000
+
+[Mission 10]
+patch=1,EE,2039B9B4,extended,00000000
+
+[Mission SP-2]
+patch=1,EE,2039B9D0,extended,00000000
+
+[Mission 11]
+patch=1,EE,2039B9EC,extended,00000000
+
+[Mission 12]
+patch=1,EE,2039BA08,extended,00000000
+
+[Mission 13]
+patch=1,EE,2039BA24,extended,00000000
+
+[Mission 14]
+patch=1,EE,2039BA40,extended,00000000
+
+[Mission 15]
+patch=1,EE,2039BA5C,extended,00000000
+
+[Mission 16]
+patch=1,EE,2039BA78,extended,00000000
+
+[Mission EX-1]
+patch=1,EE,2039BA94,extended,00000000
+
+[Mission EX-2]
+patch=1,EE,2039BAB0,extended,00000000
+
+[Mission EX-3]
+patch=1,EE,2039BACC,extended,00000000
+
+[Mission EX-4]
+patch=1,EE,2039BAE8,extended,00000000
+
+[Mission EX-5]
+patch=1,EE,2039BB04,extended,00000000
+
+[Mission 01]
+patch=1,EE,2039B2F0,extended,00000000
+
+[Mission 02]
+patch=1,EE,2039B30C,extended,00000000
+
+[Mission 03]
+patch=1,EE,2039B328,extended,00000000
+
+[Mission 04]
+patch=1,EE,2039B344,extended,00000000
+
+[Mission 05]
+patch=1,EE,2039B360,extended,00000000
+
+[Mission 06-1]
+patch=1,EE,2039B37C,extended,00000000
+
+[Mission 06-2]
+patch=1,EE,2039B398,extended,00000000
+
+[Mission SP-1]
+patch=1,EE,2039B3B4,extended,00000000
+
+[Mission 07]
+patch=1,EE,2039B3D0,extended,00000000
+
+[Mission 08]
+patch=1,EE,2039B3EC,extended,00000000
+
+[Mission 09-1]
+patch=1,EE,2039B408,extended,00000000
+
+[Mission 09-2]
+patch=1,EE,2039B424,extended,00000000
+
+[Mission 10]
+patch=1,EE,2039B440,extended,00000000
+
+[Mission SP-2]
+patch=1,EE,2039B45C,extended,00000000
+
+[Mission 11]
+patch=1,EE,2039B478,extended,00000000
+
+[Mission 12]
+patch=1,EE,2039B494,extended,00000000
+
+[Mission 13]
+patch=1,EE,2039B4B0,extended,00000000
+
+[Mission 14]
+patch=1,EE,2039B4CC,extended,00000000
+
+[Mission 15]
+patch=1,EE,2039B4E8,extended,00000000
+
+[Mission 16]
+patch=1,EE,2039B504,extended,00000000
+
+[Mission EX-1]
+patch=1,EE,2039B520,extended,00000000
+
+[Mission EX-2]
+patch=1,EE,2039B53C,extended,00000000
+
+[Mission EX-3]
+patch=1,EE,2039B558,extended,00000000
+
+[Mission EX-4]
+patch=1,EE,2039B574,extended,00000000
+
+[Mission EX-5]
+patch=1,EE,2039B590,extended,00000000
+
+[Mission 01]
+patch=1,EE,2039B5AC,extended,00000000
+
+[Mission 02]
+patch=1,EE,2039B5C8,extended,00000000
+
+[Mission 03]
+patch=1,EE,2039B5E4,extended,00000000
+
+[Mission 04]
+patch=1,EE,2039B600,extended,00000000
+
+[Mission 05]
+patch=1,EE,2039B61C,extended,00000000
+
+[Mission 06-1]
+patch=1,EE,2039B638,extended,00000000
+
+[Mission 06-2]
+patch=1,EE,2039B654,extended,00000000
+
+[Mission SP-1]
+patch=1,EE,2039B670,extended,00000000
+
+[Mission 07]
+patch=1,EE,2039B68C,extended,00000000
+
+[Mission 08]
+patch=1,EE,2039B6A8,extended,00000000
+
+[Mission 09-1]
+patch=1,EE,2039B6C4,extended,00000000
+
+[Mission 09-2]
+patch=1,EE,2039B6E0,extended,00000000
+
+[Mission 10]
+patch=1,EE,2039B6FC,extended,00000000
+
+[Mission SP-2]
+patch=1,EE,2039B718,extended,00000000
+
+[Mission 11]
+patch=1,EE,2039B734,extended,00000000
+
+[Mission 12]
+patch=1,EE,2039B750,extended,00000000
+
+[Mission 13]
+patch=1,EE,2039B76C,extended,00000000
+
+[Mission 14]
+patch=1,EE,2039B788,extended,00000000
+
+[Mission 15]
+patch=1,EE,2039B7A4,extended,00000000
+
+[Mission 16]
+patch=1,EE,2039B7C0,extended,00000000
+
+[Mission EX-1]
+patch=1,EE,2039B7DC,extended,00000000
+
+[Mission EX-2]
+patch=1,EE,2039B7F8,extended,00000000
+
+[Mission EX-3]
+patch=1,EE,2039B814,extended,00000000
+
+[Mission EX-4]
+patch=1,EE,2039B830,extended,00000000
+
+[Mission EX-5]
+patch=1,EE,2039B84C,extended,00000000
+
+[Mission 01]
+patch=1,EE,2039B868,extended,00000000
+
+[Mission 02]
+patch=1,EE,2039B884,extended,00000000
+
+[Mission 03]
+patch=1,EE,2039B8A0,extended,00000000
+
+[Mission 04]
+patch=1,EE,2039B8BC,extended,00000000
+
+[Mission 05]
+patch=1,EE,2039B8D8,extended,00000000
+
+[Mission 06-1]
+patch=1,EE,2039B8F4,extended,00000000
+
+[Mission 06-2]
+patch=1,EE,2039B910,extended,00000000
+
+[Mission SP-1]
+patch=1,EE,2039B92C,extended,00000000
+
+[Mission 07]
+patch=1,EE,2039B948,extended,00000000
+
+[Mission 08]
+patch=1,EE,2039B964,extended,00000000
+
+[Mission 09-1]
+patch=1,EE,2039B980,extended,00000000
+
+[Mission 09-2]
+patch=1,EE,2039B99C,extended,00000000
+
+[Mission 10]
+patch=1,EE,2039B9B8,extended,00000000
+
+[Mission SP-2]
+patch=1,EE,2039B9D4,extended,00000000
+
+[Mission 11]
+patch=1,EE,2039B9F0,extended,00000000
+
+[Mission 12]
+patch=1,EE,2039BA0C,extended,00000000
+
+[Mission 13]
+patch=1,EE,2039BA28,extended,00000000
+
+[Mission 14]
+patch=1,EE,2039BA44,extended,00000000
+
+[Mission 15]
+patch=1,EE,2039BA60,extended,00000000
+
+[Mission 16]
+patch=1,EE,2039BA7C,extended,00000000
+
+[Mission EX-1]
+patch=1,EE,2039BA98,extended,00000000
+
+[Mission EX-2]
+patch=1,EE,2039BAB4,extended,00000000
+
+[Mission EX-3]
+patch=1,EE,2039BAD0,extended,00000000
+
+[Mission EX-4]
+patch=1,EE,2039BAEC,extended,00000000
+
+[Mission EX-5]
+patch=1,EE,2039BB08,extended,00000000

@@ -1,0 +1,1021 @@
+gametitle=ESPN Winter X Games-Snowboarding (SLUS-20089)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0012E08B
+
+[Infinite Money]
+patch=1,EE,1077557C,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2077557C,extended,05F5E0FF
+
+[A-1 143]
+patch=1,EE,0077583C,extended,00000002
+
+[A-1 158]
+patch=1,EE,0077583D,extended,00000002
+
+[Champ 161]
+patch=1,EE,0077583E,extended,00000002
+
+[Champ 165]
+patch=1,EE,0077583F,extended,00000002
+
+[Select 145]
+patch=1,EE,00775840,extended,00000002
+
+[Select 150]
+patch=1,EE,00775841,extended,00000002
+
+[Matrix 160]
+patch=1,EE,00775842,extended,00000002
+
+[Seven 50]
+patch=1,EE,00775843,extended,00000002
+
+[Seven 54]
+patch=1,EE,00775844,extended,00000002
+
+[Seven 57]
+patch=1,EE,00775845,extended,00000002
+
+[Seven 58]
+patch=1,EE,00775846,extended,00000002
+
+[Seven 62]
+patch=1,EE,00775847,extended,00000002
+
+[Troop 46]
+patch=1,EE,00775848,extended,00000002
+
+[Troop 52]
+patch=1,EE,00775849,extended,00000002
+
+[Troop 57]
+patch=1,EE,0077584A,extended,00000002
+
+[Dragon 47]
+patch=1,EE,0077584B,extended,00000002
+
+[Dragon 52]
+patch=1,EE,0077584C,extended,00000002
+
+[Dragon 56]
+patch=1,EE,0077584D,extended,00000002
+
+[Dragon 59]
+patch=1,EE,0077584E,extended,00000002
+
+[Balance 45]
+patch=1,EE,0077584F,extended,00000002
+
+[Balance 48.5]
+patch=1,EE,00775850,extended,00000002
+
+[Balance 53]
+patch=1,EE,00775851,extended,00000002
+
+[Balance 57.5]
+patch=1,EE,00775852,extended,00000002
+
+[Balance 61]
+patch=1,EE,00775853,extended,00000002
+
+[Rush 55]
+patch=1,EE,00775854,extended,00000002
+
+[Rush 60]
+patch=1,EE,00775855,extended,00000002
+
+[Rush 64]
+patch=1,EE,00775856,extended,00000002
+
+[BMC 56]
+patch=1,EE,00775857,extended,00000002
+
+[BMC 62]
+patch=1,EE,00775858,extended,00000002
+
+[Feel Good 45]
+patch=1,EE,00775859,extended,00000002
+
+[Feel Good 49]
+patch=1,EE,0077585A,extended,00000002
+
+[Feel Good 52]
+patch=1,EE,0077585B,extended,00000002
+
+[Feel Good 56]
+patch=1,EE,0077585C,extended,00000002
+
+[Feel Good 61]
+patch=1,EE,0077585D,extended,00000002
+
+[Custom 47]
+patch=1,EE,0077585E,extended,00000002
+
+[Custom 51]
+patch=1,EE,0077585F,extended,00000002
+
+[Custom 56.5]
+patch=1,EE,00775860,extended,00000002
+
+[Custom 60.5]
+patch=1,EE,00775861,extended,00000002
+
+[Custom 64.5]
+patch=1,EE,00775862,extended,00000002
+
+[Custom 68.5]
+patch=1,EE,00775863,extended,00000002
+
+[Canyon 68]
+patch=1,EE,00775864,extended,00000002
+
+[Canyon 73]
+patch=1,EE,00775865,extended,00000002
+
+[Canyon 81]
+patch=1,EE,00775866,extended,00000002
+
+[Motion 51]
+patch=1,EE,00775867,extended,00000002
+
+[Motion 56]
+patch=1,EE,00775868,extended,00000002
+
+[Motion 62]
+patch=1,EE,00775869,extended,00000002
+
+[Floater 59]
+patch=1,EE,0077586A,extended,00000002
+
+[Floater 67]
+patch=1,EE,0077586B,extended,00000002
+
+[Charger 42]
+patch=1,EE,0077586C,extended,00000002
+
+[Charger 48]
+patch=1,EE,0077586D,extended,00000002
+
+[Charger 52]
+patch=1,EE,0077586E,extended,00000002
+
+[Charger 56]
+patch=1,EE,0077586F,extended,00000002
+
+[Charger 61]
+patch=1,EE,00775870,extended,00000002
+
+[Cascade 63]
+patch=1,EE,00775871,extended,00000002
+
+[Cascade 68]
+patch=1,EE,00775872,extended,00000002
+
+[Cascade 67]
+patch=1,EE,00775873,extended,00000002
+
+[Frontier 66]
+patch=1,EE,00775874,extended,00000002
+
+[Frontier 75]
+patch=1,EE,00775875,extended,00000002
+
+[Frontier 85]
+patch=1,EE,00775876,extended,00000002
+
+[PL 146cm Twin Tip]
+patch=1,EE,00775877,extended,00000002
+
+[PL 151cm Twin Tip]
+patch=1,EE,00775878,extended,00000002
+
+[PL 155cm Twin Tip]
+patch=1,EE,00775879,extended,00000002
+
+[PL 155Wcm Twin Tip]
+patch=1,EE,0077587A,extended,00000002
+
+[PL 159cm Directional]
+patch=1,EE,0077587B,extended,00000002
+
+[PL 159Wcm Directional]
+patch=1,EE,0077587C,extended,00000002
+
+[DW 153cm Twin Tip]
+patch=1,EE,0077587D,extended,00000002
+
+[DW 157cm Twin Tip]
+patch=1,EE,0077587E,extended,00000002
+
+[JP 147cm Twin Tip]
+patch=1,EE,0077587F,extended,00000002
+
+[JP 154cm Directional]
+patch=1,EE,00775880,extended,00000002
+
+[BJ 152cm Directional]
+patch=1,EE,00775881,extended,00000002
+
+[BJ 156cm Directional]
+patch=1,EE,00775882,extended,00000002
+
+[IS 154cm Directional]
+patch=1,EE,00775883,extended,00000002
+
+[IS 157cm Direction]
+patch=1,EE,00775884,extended,00000002
+
+[TS 144cm]
+patch=1,EE,00775885,extended,00000002
+
+[TS 154cm]
+patch=1,EE,00775886,extended,00000002
+
+[Barrett 144]
+patch=1,EE,00775887,extended,00000002
+
+[Barrett 148]
+patch=1,EE,00775888,extended,00000002
+
+[Barrett 152]
+patch=1,EE,00775889,extended,00000002
+
+[Barrett 155]
+patch=1,EE,0077588A,extended,00000002
+
+[Electra 154]
+patch=1,EE,0077588B,extended,00000002
+
+[Electra 157]
+patch=1,EE,0077588C,extended,00000002
+
+[Electra 161]
+patch=1,EE,0077588D,extended,00000002
+
+[Electra 164]
+patch=1,EE,0077588E,extended,00000002
+
+[Electra 167]
+patch=1,EE,0077588F,extended,00000002
+
+[Zeppelin 147]
+patch=1,EE,00775890,extended,00000002
+
+[Zeppelin 152]
+patch=1,EE,00775891,extended,00000002
+
+[Zeppelin 156]
+patch=1,EE,00775892,extended,00000002
+
+[Trucker 163]
+patch=1,EE,00775893,extended,00000002
+
+[Trucker 175]
+patch=1,EE,00775894,extended,00000002
+
+[A Star 144]
+patch=1,EE,00775895,extended,00000002
+
+[A Star 152]
+patch=1,EE,00775896,extended,00000002
+
+[A Star 156]
+patch=1,EE,00775897,extended,00000002
+
+[Eldorado 169]
+patch=1,EE,00775898,extended,00000002
+
+[Eldorado 182]
+patch=1,EE,00775899,extended,00000002
+
+[Fatbob 158]
+patch=1,EE,0077589A,extended,00000002
+
+[Fatbob 162]
+patch=1,EE,0077589B,extended,00000002
+
+[Luna 138]
+patch=1,EE,0077589C,extended,00000002
+
+[Luna 143]
+patch=1,EE,0077589D,extended,00000002
+
+[Luna 147]
+patch=1,EE,0077589E,extended,00000002
+
+[Spitfire 145]
+patch=1,EE,0077589F,extended,00000002
+
+[Spitfire 155]
+patch=1,EE,007758A0,extended,00000002
+
+[Jamie 151]
+patch=1,EE,007758A1,extended,00000002
+
+[Jamie 157]
+patch=1,EE,007758A2,extended,00000002
+
+[Jamie 157W]
+patch=1,EE,007758A3,extended,00000002
+
+[Jamie 160]
+patch=1,EE,007758A4,extended,00000002
+
+[Truth 48]
+patch=1,EE,007758A5,extended,00000002
+
+[Truth 53]
+patch=1,EE,007758A6,extended,00000002
+
+[Truth 56]
+patch=1,EE,007758A7,extended,00000002
+
+[Truth 59]
+patch=1,EE,007758A8,extended,00000002
+
+[Truth 62]
+patch=1,EE,007758A9,extended,00000002
+
+[Blaze 55]
+patch=1,EE,007758AA,extended,00000002
+
+[Blaze 65]
+patch=1,EE,007758AB,extended,00000002
+
+[Lithium 45]
+patch=1,EE,007758AC,extended,00000002
+
+[Lithium 52]
+patch=1,EE,007758AD,extended,00000002
+
+[Lithium 57]
+patch=1,EE,007758AE,extended,00000002
+
+[Lithium 61]
+patch=1,EE,007758AF,extended,00000002
+
+[Dimension 45]
+patch=1,EE,007758B0,extended,00000002
+
+[Dimension 54]
+patch=1,EE,007758B1,extended,00000002
+
+[Dimension 62]
+patch=1,EE,007758B2,extended,00000002
+
+[Dimension 67]
+patch=1,EE,007758B3,extended,00000002
+
+[Wildflower 42]
+patch=1,EE,007758B4,extended,00000002
+
+[Wildflower 46]
+patch=1,EE,007758B5,extended,00000002
+
+[Wildflower 52]
+patch=1,EE,007758B6,extended,00000002
+
+[Focus 47]
+patch=1,EE,007758B7,extended,00000002
+
+[Focus 58]
+patch=1,EE,007758B8,extended,00000002
+
+[Radium 46]
+patch=1,EE,007758B9,extended,00000002
+
+[Radium 57]
+patch=1,EE,007758BA,extended,00000002
+
+[The Collection 44]
+patch=1,EE,007758BB,extended,00000002
+
+[The Collection 49]
+patch=1,EE,007758BC,extended,00000002
+
+[The Collection 54]
+patch=1,EE,007758BD,extended,00000002
+
+[FusionX 46]
+patch=1,EE,007758BE,extended,00000002
+
+[FusionX 51]
+patch=1,EE,007758BF,extended,00000002
+
+[FusionX 55]
+patch=1,EE,007758C0,extended,00000002
+
+[FusionX 58]
+patch=1,EE,007758C1,extended,00000002
+
+[FusionX 61]
+patch=1,EE,007758C2,extended,00000002
+
+[Infinity 53]
+patch=1,EE,007758C3,extended,00000002
+
+[Infinity 57]
+patch=1,EE,007758C4,extended,00000002
+
+[Infinity 59]
+patch=1,EE,007758C5,extended,00000002
+
+[Infinity 63]
+patch=1,EE,007758C6,extended,00000002
+
+[Daytona 66]
+patch=1,EE,007758C7,extended,00000002
+
+[Daytona 72]
+patch=1,EE,007758C8,extended,00000002
+
+[T. Sims 59]
+patch=1,EE,007758C9,extended,00000002
+
+[T. Sims 69]
+patch=1,EE,007758CA,extended,00000002
+
+[Descender 53]
+patch=1,EE,007758CB,extended,00000002
+
+[Descender 57]
+patch=1,EE,007758CC,extended,00000002
+
+[Descender 62]
+patch=1,EE,007758CD,extended,00000002
+
+[CD 44]
+patch=1,EE,007758CE,extended,00000002
+
+[CD 56]
+patch=1,EE,007758CF,extended,00000002
+
+[Pro LTD]
+patch=1,EE,007758D0,extended,00000002
+
+[Pro]
+patch=1,EE,007758D1,extended,00000002
+
+[Mid]
+patch=1,EE,007758D2,extended,00000002
+
+[CFX]
+patch=1,EE,007758D3,extended,00000002
+
+[C14]
+patch=1,EE,007758D4,extended,00000002
+
+[Mission GT]
+patch=1,EE,007758D5,extended,00000002
+
+[Mission]
+patch=1,EE,007758D6,extended,00000002
+
+[Custom]
+patch=1,EE,007758D7,extended,00000002
+
+[Freestyle]
+patch=1,EE,007758D8,extended,00000002
+
+[F60 LTD]
+patch=1,EE,007758D9,extended,00000002
+
+[F60]
+patch=1,EE,007758DA,extended,00000002
+
+[F50]
+patch=1,EE,007758DB,extended,00000002
+
+[Podium]
+patch=1,EE,007758DC,extended,00000002
+
+[F40 LTD]
+patch=1,EE,007758DD,extended,00000002
+
+[F40]
+patch=1,EE,007758DE,extended,00000002
+
+[F50 Lady]
+patch=1,EE,007758DF,extended,00000002
+
+[F40 Lady]
+patch=1,EE,007758E0,extended,00000002
+
+[ATF Binding]
+patch=1,EE,007758E1,extended,00000002
+
+[ATP Binding]
+patch=1,EE,007758E2,extended,00000002
+
+[V 12 Magma]
+patch=1,EE,007758E3,extended,00000002
+
+[V 10 Magma]
+patch=1,EE,007758E4,extended,00000002
+
+[V 8 Plasma]
+patch=1,EE,007758E5,extended,00000002
+
+[V 6 Plasma]
+patch=1,EE,007758E6,extended,00000002
+
+[Icon]
+patch=1,EE,007758E7,extended,00000002
+
+[Virtue]
+patch=1,EE,007758E8,extended,00000002
+
+[Posi-Link]
+patch=1,EE,007758E9,extended,00000002
+
+[Link]
+patch=1,EE,007758EA,extended,00000002
+
+[C4]
+patch=1,EE,007758EB,extended,00000002
+
+[Freeride]
+patch=1,EE,007758EC,extended,00000002
+
+[Butte]
+patch=1,EE,007758ED,extended,00000002
+
+[Advantage]
+patch=1,EE,007758EE,extended,00000002
+
+[Sonar]
+patch=1,EE,007758EF,extended,00000002
+
+[Ion]
+patch=1,EE,007758F0,extended,00000002
+
+[Driver (M)]
+patch=1,EE,007758F1,extended,00000002
+
+[Driver (F)]
+patch=1,EE,007758F2,extended,00000002
+
+[Zone (M)]
+patch=1,EE,007758F3,extended,00000002
+
+[Zone (F)]
+patch=1,EE,007758F4,extended,00000002
+
+[Sly]
+patch=1,EE,007758F5,extended,00000002
+
+[Ruler (M)]
+patch=1,EE,007758F6,extended,00000002
+
+[Ruler (F)]
+patch=1,EE,007758F7,extended,00000002
+
+[Freestyle (M)]
+patch=1,EE,007758F8,extended,00000002
+
+[Freestyle (F)]
+patch=1,EE,007758F9,extended,00000002
+
+[Ace]
+patch=1,EE,007758FA,extended,00000002
+
+[Brabus]
+patch=1,EE,007758FB,extended,00000002
+
+[Petra2]
+patch=1,EE,007758FC,extended,00000002
+
+[Permier2]
+patch=1,EE,007758FD,extended,00000002
+
+[Revolution]
+patch=1,EE,007758FE,extended,00000002
+
+[Devun Walsh Pro Boot]
+patch=1,EE,007758FF,extended,00000002
+
+[JP Walker Pro Boot]
+patch=1,EE,00775900,extended,00000002
+
+[Team Boot]
+patch=1,EE,00775901,extended,00000002
+
+[Eclipse]
+patch=1,EE,00775902,extended,00000002
+
+[Firebird (M)]
+patch=1,EE,00775903,extended,00000002
+
+[Firebird (F)]
+patch=1,EE,00775904,extended,00000002
+
+[Raider]
+patch=1,EE,00775905,extended,00000002
+
+[Truth]
+patch=1,EE,00775906,extended,00000002
+
+[Soul]
+patch=1,EE,00775907,extended,00000002
+
+[Soul (F)]
+patch=1,EE,00775908,extended,00000002
+
+[Air Meru]
+patch=1,EE,00775909,extended,00000002
+
+[Focus]
+patch=1,EE,0077590A,extended,00000002
+
+[Reset]
+patch=1,EE,0077590B,extended,00000002
+
+[Legend]
+patch=1,EE,0077590C,extended,00000002
+
+[Supra]
+patch=1,EE,0077590D,extended,00000002
+
+[Spirit (F)]
+patch=1,EE,0077590E,extended,00000002
+
+[Legend Ladies]
+patch=1,EE,0077590F,extended,00000002
+
+[Surpa Ladies]
+patch=1,EE,00775910,extended,00000002
+
+[Freedom Ladies]
+patch=1,EE,00775911,extended,00000002
+
+[Revolver]
+patch=1,EE,00775912,extended,00000002
+
+[Rogue (M)]
+patch=1,EE,00775913,extended,00000002
+
+[Rogue (F)]
+patch=1,EE,00775914,extended,00000002
+
+[Fall Line]
+patch=1,EE,00775915,extended,00000002
+
+[Fusion Jacket]
+patch=1,EE,00775916,extended,00000002
+
+[Glacier Jacket]
+patch=1,EE,00775917,extended,00000002
+
+[Metal Jacket]
+patch=1,EE,00775918,extended,00000002
+
+[Spin Jacket]
+patch=1,EE,00775919,extended,00000002
+
+[Ranger Jacket]
+patch=1,EE,0077591A,extended,00000002
+
+[Influence]
+patch=1,EE,0077591B,extended,00000002
+
+[Isere]
+patch=1,EE,0077591C,extended,00000002
+
+[Delta]
+patch=1,EE,0077591D,extended,00000002
+
+[Emulsion]
+patch=1,EE,0077591E,extended,00000002
+
+[Juliet (F)]
+patch=1,EE,0077591F,extended,00000002
+
+[Venus (F)]
+patch=1,EE,00775920,extended,00000002
+
+[Vee 8]
+patch=1,EE,00775921,extended,00000002
+
+[3-D]
+patch=1,EE,00775922,extended,00000002
+
+[Toast Hooded Jacket]
+patch=1,EE,00775923,extended,00000002
+
+[Analog Hal Jacket]
+patch=1,EE,00775924,extended,00000002
+
+[AK 3L Jacket]
+patch=1,EE,00775925,extended,00000002
+
+[Templest Jacket]
+patch=1,EE,00775926,extended,00000002
+
+[Access Jacket]
+patch=1,EE,00775927,extended,00000002
+
+[Tri-Lite Jacket]
+patch=1,EE,00775928,extended,00000002
+
+[OSI Stretch Jacket]
+patch=1,EE,00775929,extended,00000002
+
+[Pipe Moto Jersey (M)]
+patch=1,EE,0077592A,extended,00000002
+
+[Pipe Moto Jersey (F)]
+patch=1,EE,0077592B,extended,00000002
+
+[Technical Vent]
+patch=1,EE,0077592C,extended,00000002
+
+[Hooded Piping]
+patch=1,EE,0077592D,extended,00000002
+
+[Down]
+patch=1,EE,0077592E,extended,00000002
+
+[Fade]
+patch=1,EE,0077592F,extended,00000002
+
+[04]
+patch=1,EE,00775930,extended,00000002
+
+[Side Block]
+patch=1,EE,00775931,extended,00000002
+
+[Yoke Jacket]
+patch=1,EE,00775932,extended,00000002
+
+[Insulated Jacket]
+patch=1,EE,00775933,extended,00000002
+
+[Cheststripe Jacket]
+patch=1,EE,00775934,extended,00000002
+
+[Women's Jacket]
+patch=1,EE,00775935,extended,00000002
+
+[Freestyle (M)]
+patch=1,EE,00775936,extended,00000002
+
+[Freestyle (F)]
+patch=1,EE,00775937,extended,00000002
+
+[All Mountain 2120]
+patch=1,EE,00775938,extended,00000002
+
+[Storm-Fit Vert (M)]
+patch=1,EE,00775939,extended,00000002
+
+[Storm-Fit Vert (F)]
+patch=1,EE,0077593A,extended,00000002
+
+[Storm-Fit Pinnacle]
+patch=1,EE,0077593B,extended,00000002
+
+[Convertible Quilted]
+patch=1,EE,0077593C,extended,00000002
+
+[Quattro]
+patch=1,EE,0077593D,extended,00000002
+
+[SM Terminal]
+patch=1,EE,0077593E,extended,00000002
+
+[Epoch]
+patch=1,EE,0077593F,extended,00000002
+
+[Lateral]
+patch=1,EE,00775940,extended,00000002
+
+[Moto (F)]
+patch=1,EE,00775941,extended,00000002
+
+[Boister (F)]
+patch=1,EE,00775942,extended,00000002
+
+[Crystal (F)]
+patch=1,EE,00775943,extended,00000002
+
+[Onset (F)]
+patch=1,EE,00775944,extended,00000002
+
+[Baseball 2]
+patch=1,EE,00775945,extended,00000002
+
+[Select]
+patch=1,EE,00775946,extended,00000002
+
+[Hemisphere]
+patch=1,EE,00775947,extended,00000002
+
+[Cornice]
+patch=1,EE,00775948,extended,00000002
+
+[Ridge]
+patch=1,EE,00775949,extended,00000002
+
+[Glacier]
+patch=1,EE,0077594A,extended,00000002
+
+[Half Cab]
+patch=1,EE,0077594B,extended,00000002
+
+[Platinum (F)]
+patch=1,EE,0077594C,extended,00000002
+
+[Diamond (F)]
+patch=1,EE,0077594D,extended,00000002
+
+[Crystal (F)]
+patch=1,EE,0077594E,extended,00000002
+
+[Misty (F)]
+patch=1,EE,0077594F,extended,00000002
+
+[Team]
+patch=1,EE,00775950,extended,00000002
+
+[Hittie (F)]
+patch=1,EE,00775951,extended,00000002
+
+[Air Flow]
+patch=1,EE,00775952,extended,00000002
+
+[Hooded Band]
+patch=1,EE,00775953,extended,00000002
+
+[X-Wing]
+patch=1,EE,00775954,extended,00000002
+
+[Storm-Trooper]
+patch=1,EE,00775955,extended,00000002
+
+[Han's Old]
+patch=1,EE,00775956,extended,00000002
+
+[Base Pant]
+patch=1,EE,00775957,extended,00000002
+
+[Slack Plant]
+patch=1,EE,00775958,extended,00000002
+
+[Gear Pants]
+patch=1,EE,00775959,extended,00000002
+
+[Cascade Pants]
+patch=1,EE,0077595A,extended,00000002
+
+[Flash Pants]
+patch=1,EE,0077595B,extended,00000002
+
+[Road Trip]
+patch=1,EE,0077595C,extended,00000002
+
+[Frequency]
+patch=1,EE,0077595D,extended,00000002
+
+[Sierra Cargo (F)]
+patch=1,EE,0077595E,extended,00000002
+
+[Tactic 4/2 Vent]
+patch=1,EE,0077595F,extended,00000002
+
+[Analog Cargo]
+patch=1,EE,00775960,extended,00000002
+
+[AK 3L Vent]
+patch=1,EE,00775961,extended,00000002
+
+[Tempest 2/1 Full-Zip]
+patch=1,EE,00775962,extended,00000002
+
+[Access]
+patch=1,EE,00775963,extended,00000002
+
+[Tri-Lite 2/1 Vent]
+patch=1,EE,00775964,extended,00000002
+
+[Bio-Lite Cargo]
+patch=1,EE,00775965,extended,00000002
+
+[OSI Agent]
+patch=1,EE,00775966,extended,00000002
+
+[Technical Cargo]
+patch=1,EE,00775967,extended,00000002
+
+[Full Zip Vent]
+patch=1,EE,00775968,extended,00000002
+
+[Altitude Side Zip Pant]
+patch=1,EE,00775969,extended,00000002
+
+[Vent Cargo Pant]
+patch=1,EE,0077596A,extended,00000002
+
+[Cyclone Pant]
+patch=1,EE,0077596B,extended,00000002
+
+[Painter Pant]
+patch=1,EE,0077596C,extended,00000002
+
+[Women's Pant]
+patch=1,EE,0077596D,extended,00000002
+
+[Storm-Fit Trooper]
+patch=1,EE,0077596E,extended,00000002
+
+[Storm-Fit Tank (M)]
+patch=1,EE,0077596F,extended,00000002
+
+[Storm-Fit Tank (F)]
+patch=1,EE,00775970,extended,00000002
+
+[Dragster]
+patch=1,EE,00775971,extended,00000002
+
+[SM Velocity]
+patch=1,EE,00775972,extended,00000002
+
+[Method]
+patch=1,EE,00775973,extended,00000002
+
+[Mack Lite]
+patch=1,EE,00775974,extended,00000002
+
+[Cisco]
+patch=1,EE,00775975,extended,00000002
+
+[Allure (F)]
+patch=1,EE,00775976,extended,00000002
+
+[Rage (F)]
+patch=1,EE,00775977,extended,00000002
+
+[GI Jane (F)]
+patch=1,EE,00775978,extended,00000002
+
+[Zelaous (F)]
+patch=1,EE,00775979,extended,00000002
+
+[Veteran]
+patch=1,EE,0077597A,extended,00000002
+
+[Kyber]
+patch=1,EE,0077597B,extended,00000002
+
+[Drift]
+patch=1,EE,0077597C,extended,00000002
+
+[Hit]
+patch=1,EE,0077597D,extended,00000002
+
+[Gold (F)]
+patch=1,EE,0077597E,extended,00000002
+
+[Emerald (F)]
+patch=1,EE,0077597F,extended,00000002
+
+[Indy (F)]
+patch=1,EE,00775980,extended,00000002
+
+[Frontside]
+patch=1,EE,00775981,extended,00000002
+
+[Zip Cargo]
+patch=1,EE,00775982,extended,00000002
+
+[Lhando]
+patch=1,EE,00775983,extended,00000002
+
+[Alpha Goggle]
+patch=1,EE,00775984,extended,00000002
+
+[Siries-2]
+patch=1,EE,00775985,extended,00000002
+
+[Goggle]
+patch=1,EE,00775986,extended,00000002
+
+[A Frame Snow Goggle]
+patch=1,EE,00775987,extended,00000002
+
+[O Frame Snow Goggle]
+patch=1,EE,00775988,extended,00000002
+
+[Epic Regulator]
+patch=1,EE,00775989,extended,00000002
+
+[Cascade Regulator]
+patch=1,EE,0077598A,extended,00000002
+
+[Scoop Snow Goggle]
+patch=1,EE,0077598B,extended,00000002

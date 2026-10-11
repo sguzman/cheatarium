@@ -1,0 +1,95 @@
+gametitle=Castlevania-Lament Of Innocence (SLUS-20733)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,906EA264,extended,0C1BC637
+
+[Always Low Time]
+patch=1,EE,20B35C24,extended,00000000
+
+[Infinite Double Jumps]
+patch=1,EE,20462414,extended,00000000
+patch=1,EE,2046242C,extended,00000000
+patch=1,EE,D0B635F0,extended,00300020
+patch=1,EE,20B635F0,extended,00000000
+
+[Max Health]
+patch=1,EE,20B64800,extended,4479C000
+
+[Infinite Health]
+patch=1,EE,20B64AE8,extended,4479C000
+
+[Max Heart]
+patch=1,EE,20B64804,extended,4479C000
+
+[Infinite Heart]
+patch=1,EE,20B64AEC,extended,4479C000
+
+[Status Always Good]
+patch=1,EE,20B64AF0,extended,00000000
+patch=1,EE,20B64AF4,extended,00000000
+patch=1,EE,20B64AF8,extended,00000000
+
+[Infinite Gold]
+patch=1,EE,10B64820,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,20B64820,extended,0098967F
+
+[Max MP]
+patch=1,EE,20B64844,extended,000003E7
+
+[Infinite MP]
+patch=1,EE,20B64848,extended,000003E7
+
+[Have All Skills]
+patch=1,EE,20B64AA4,extended,FFFFFFFF
+
+[Max Atk]
+patch=1,EE,20B64B80,extended,4479C000
+
+[Max Int]
+patch=1,EE,20B64B84,extended,4479C000
+
+[Max Con]
+patch=1,EE,20B64B8C,extended,4479C000
+
+[Max Lck]
+patch=1,EE,20B64B90,extended,4479C000
+
+[Max Def]
+patch=1,EE,20B64BA0,extended,4479C000
+
+[Have All Whips]
+patch=1,EE,40B64850,extended,00050001
+patch=1,EE,00010001,extended,00000001
+
+[Have All Armor]
+patch=1,EE,40B64864,extended,00040001
+patch=1,EE,00010006,extended,00000001
+
+[Have All Accessories]
+patch=1,EE,40B64874,extended,00190001
+patch=1,EE,0001000A,extended,00000001
+
+[Have All Items]
+patch=1,EE,40B648F4,extended,00230001
+patch=1,EE,0001002A,extended,00000001
+
+[Have All Event Items]
+patch=1,EE,40B649A0,extended,001F0001
+patch=1,EE,00010055,extended,00000001
+
+[Have All Orbs]
+patch=1,EE,40B64A60,extended,00070001
+patch=1,EE,0001007F,extended,00000001
+
+[Have All Relics]
+patch=1,EE,40B64A7C,extended,000A0001
+patch=1,EE,00010086,extended,00000001
+
+[Unlock Encyclopedia-All Enemies]
+patch=1,EE,40B7B12C,extended,00710003
+patch=1,EE,000000FF,extended,00000000

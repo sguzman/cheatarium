@@ -1,0 +1,111 @@
+gametitle=Tiger Woods PGA Tour 2002 (SLUS-20364)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90112634,extended,0C046FB2
+
+[Only One Shot Recorded (All Players)]
+patch=1,EE,201F5320,extended,00000000
+
+[Shots Worth 10 (All Players)]
+patch=1,EE,101F531C,extended,0000000A
+
+[Shots Worth 5 (All Players)]
+patch=1,EE,101F531C,extended,00000005
+
+[Shots Worth 2 (All Players)]
+patch=1,EE,101F531C,extended,00000002
+
+[All Attributes Are Free (Edit Golfer)]
+patch=1,EE,20141DB4,extended,AE600000
+
+[Super Tiger Woods]
+patch=1,EE,0028431C,extended,00000001
+
+[Cedric 'Ace' Andrews]
+patch=1,EE,0028431D,extended,00000001
+
+[Stuart Appleby]
+patch=1,EE,0028431E,extended,00000001
+
+[Notah Begay III]
+patch=1,EE,0028431F,extended,00000001
+
+[Brad Faxon]
+patch=1,EE,00284323,extended,00000001
+
+[Jim Furyk]
+patch=1,EE,00284324,extended,00000001
+
+[Lee Janzen]
+patch=1,EE,00284325,extended,00000001
+
+[Justin Leonard]
+patch=1,EE,00284326,extended,00000001
+
+[Solita Lopez]
+patch=1,EE,00284327,extended,00000001
+
+[Colin Montgomerie]
+patch=1,EE,00284328,extended,00000001
+
+[Kellie Newman]
+patch=1,EE,00284329,extended,00000001
+
+[Jesper Parnevik]
+patch=1,EE,0028432A,extended,00000001
+
+[Vijay Singh]
+patch=1,EE,0028432B,extended,00000001
+
+[Moa 'Big Mo' Ta'a Vatu]
+patch=1,EE,0028432D,extended,00000001
+
+[Melvin 'Yosh' Tanigawa]
+patch=1,EE,0028432E,extended,00000001
+
+[Erika 'Ice' Von Severin]
+patch=1,EE,0028432F,extended,00000001
+
+[Princeville]
+patch=1,EE,00284331,extended,00000001
+
+[Black Rock Cove]
+patch=1,EE,00284334,extended,00000001
+
+[Royal Birkdale]
+patch=1,EE,00284336,extended,00000001
+
+[Always Hole In One P1-All Holes]
+patch=1,EE,4026FAA0,extended,00120001
+patch=1,EE,00000000,extended,00000000
+
+[Always 9 Strokes Recorded P1-All Holes]
+patch=1,EE,4026FAA0,extended,00120001
+patch=1,EE,00000009,extended,00000000
+
+[Always Hole In One P2-All Holes]
+patch=1,EE,402706D0,extended,00120001
+patch=1,EE,00000000,extended,00000000
+
+[Always 9 Strokes Recorded P2-All Holes]
+patch=1,EE,402706D0,extended,00120001
+patch=1,EE,00000009,extended,00000000
+
+[Always Hole In One P3-All Holes]
+patch=1,EE,40271300,extended,00120001
+patch=1,EE,00000000,extended,00000000
+
+[Always 9 Strokes Recorded P3-All Holes]
+patch=1,EE,40271300,extended,00120001
+patch=1,EE,00000009,extended,00000000
+
+[Always Hole In One P4-All Holes]
+patch=1,EE,40271F30,extended,00120001
+patch=1,EE,00000000,extended,00000000
+
+[Always 9 Strokes Recorded P4-All Holes]
+patch=1,EE,40271F30,extended,00120001
+patch=1,EE,00000009,extended,00000000

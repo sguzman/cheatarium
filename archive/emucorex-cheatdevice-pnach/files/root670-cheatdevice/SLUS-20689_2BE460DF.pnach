@@ -1,0 +1,145 @@
+gametitle=Conflict Desert Storm II-Back To Baghdad (SLUS-20689)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9030014C,extended,0C0E6111
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C024316
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AE020060
+patch=1,EE,201A9CD0,extended,0C030088
+patch=1,EE,201A9CD4,extended,4600B034
+
+[Infinite Health (Alternate)]
+patch=1,EE,200C0230,extended,3C024318
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AE020060
+patch=1,EE,20167BD0,extended,0C03008C
+patch=1,EE,20167BD4,extended,46000832
+
+[Infinite Ammo]
+patch=1,EE,201B0434,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,101B0430,extended,00000001
+
+[Never Reload]
+patch=1,EE,201B04E4,extended,00000000
+
+[Infinite Medi-Kits]
+patch=1,EE,201B4D58,extended,00000000
+
+[Extra Medi-Kits]
+patch=1,EE,201B4D54,extended,00451021
+
+[Infinite Grenades]
+patch=1,EE,201AFF08,extended,00000000
+
+[Extra Grenades]
+patch=1,EE,101AFF04,extended,00000001
+
+[Weapons Are Automatic]
+patch=1,EE,201B04F0,extended,00000000
+
+[Rapid Fire (Both Players)]
+patch=1,EE,201B0384,extended,00000000
+
+[Rapid Fire P1]
+patch=1,EE,D0668C82,extended,0000F7FF
+patch=1,EE,201B0384,extended,00000000
+patch=1,EE,D0668C82,extended,0000FFFF
+patch=1,EE,201B0384,extended,AE020064
+
+[Rapid Fire P2]
+patch=1,EE,D0669082,extended,0000F7FF
+patch=1,EE,201B0384,extended,00000000
+patch=1,EE,D0669082,extended,0000FFFF
+patch=1,EE,201B0384,extended,AE020064
+
+[Debug Area Messages]
+patch=1,EE,20114700,extended,00000000
+patch=1,EE,20114728,extended,00000000
+
+[Enable Cheat Menu]
+patch=1,EE,203CEA58,extended,00000001
+
+[Enable Route Marker Display]
+patch=1,EE,203D0724,extended,00000001
+
+[Idiot AI]
+patch=1,EE,203D30AC,extended,00000001
+
+[Enable Debug Mappings]
+patch=1,EE,203D31FC,extended,00000001
+
+[Enable Lighting]
+patch=1,EE,203EB1DC,extended,00000001
+
+[Infinite Plastic/C4]
+patch=1,EE,20143A34,extended,24450000
+
+[Max Infinite Plastic/C4]
+patch=1,EE,20143A34,extended,240503E7
+patch=1,EE,20143A48,extended,240503E7
+
+[Extra Plastic/C4]
+patch=1,EE,20143A34,extended,24450001
+
+[God Mode (Including Vechicles)]
+patch=1,EE,203CEA3C,extended,00000000
+
+[Enemies Dont Shoot You]
+patch=1,EE,203CEA48,extended,00000000
+
+[Play As Army Men 3D]
+patch=1,EE,201F8FDC,extended,24050001
+
+[P1 Press {L1}+{SELECT} For Hyper Speed]
+patch=1,EE,D0668C82,extended,0000FBFE
+patch=1,EE,203EA5E8,extended,40000000
+
+[P1 Press {L2}+{SELECT} For Super Hyper Speed]
+patch=1,EE,D0668C82,extended,0000FEFE
+patch=1,EE,203EA5E8,extended,40800000
+
+[P1 Press {R1}+{SELECT} For Slow Speed]
+patch=1,EE,D0668C82,extended,0000F7FE
+patch=1,EE,203EA5E8,extended,3F400000
+
+[P1 Press {R2}+{SELECT} For Super Slow Speed]
+patch=1,EE,D0668C82,extended,0000FDFE
+patch=1,EE,203EA5E8,extended,3F000000
+
+[P1 Press {L3}+{SELECT} For Normal Speed]
+patch=1,EE,D0668C82,extended,0000FFFC
+patch=1,EE,203EA5E8,extended,3F800000
+
+[Super Hyper Speed]
+patch=1,EE,203EA5E8,extended,40800000
+
+[Hyper Speed]
+patch=1,EE,203EA5E8,extended,40000000
+
+[Normal Speed]
+patch=1,EE,203EA5E8,extended,3F800000
+
+[Slow Speed]
+patch=1,EE,203EA5E8,extended,3F400000
+
+[Super Slow Speed]
+patch=1,EE,203EA5E8,extended,3F000000
+
+[Infinite Ammo]
+patch=1,EE,203CEA40,extended,00000001
+
+[Idiot AI]
+patch=1,EE,203CEA4C,extended,00000001
+
+[Infinite Saves]
+patch=1,EE,203CEA54,extended,00000001
+
+[Max Trooper Level]
+patch=1,EE,203CEA50,extended,00000009

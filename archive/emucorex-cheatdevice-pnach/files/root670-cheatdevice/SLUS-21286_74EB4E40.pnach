@@ -1,0 +1,634 @@
+gametitle=WWE Smackdown! Vs. Raw 2006 (SLUS-21286)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9013DF70,extended,00832021
+
+[Quick WWE Cash Gain]
+patch=1,EE,10437034,extended,0000FFFF
+
+[Max WWE Cash]
+patch=1,EE,20437034,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease WWE Cash]
+patch=1,EE,201DD3F0,extended,00000000
+
+[Buying Items Increases WWE Cash]
+patch=1,EE,201DD3E4,extended,00901821
+
+[Infinite Stamina]
+patch=1,EE,E002802D,extended,0061D3AC
+patch=1,EE,2061D3BC,extended,3C013F80
+patch=1,EE,2061D3C0,extended,44810800
+
+[P1 Press {R1}+{SELECT} For Hyper Mode]
+patch=1,EE,D1FABA02,extended,0000F7FE
+patch=1,EE,201BFF6C,extended,00000000
+
+[P1 Press {R2}+{SELECT} For Normal Speed]
+patch=1,EE,D1FABA02,extended,0000FDFE
+patch=1,EE,201BFF6C,extended,0320F809
+
+[Quick EXP Gain]
+patch=1,EE,201DD4D8,extended,34022710
+
+[Super Quick EXP Gain]
+patch=1,EE,201DD4D8,extended,3402C350
+
+[Quick Max EXP Gain]
+patch=1,EE,201DD4EC,extended,00000000
+
+[Idiot AI]
+patch=1,EE,E002802D,extended,005C397C
+patch=1,EE,205C3970,extended,03E00008
+patch=1,EE,205C3974,extended,00000000
+
+[Always Have Finisher Moves]
+patch=1,EE,E002182D,extended,006043CC
+patch=1,EE,206043D4,extended,24020001
+patch=1,EE,206043DC,extended,AE0202EC
+
+[Infinite Time Out Of Ring]
+patch=1,EE,E0029924,extended,0060CD50
+patch=1,EE,2060CD5C,extended,00000000
+patch=1,EE,2060CE88,extended,00000000
+
+[Infinite Health (Human Players)]
+patch=1,EE,E001F02D,extended,0061DF40
+patch=1,EE,2061DF60,extended,104001E0
+
+[Infinite Health Human/Super Damage Against CPU]
+patch=1,EE,E002F02D,extended,0061DF40
+patch=1,EE,2061DF60,extended,104001E0
+patch=1,EE,2061E2F0,extended,A5000000
+
+[Always Low Ring Time]
+patch=1,EE,2039B500,extended,00000000
+
+[Alien Wrestlers]
+patch=1,EE,0011E240,extended,00000000
+
+[Unlock Everything]
+patch=1,EE,40445304,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000
+patch=1,EE,10445304,extended,0000FFFF
+
+[Entrances Always On]
+patch=1,EE,00445351,extended,00000001
+
+[Entrances Always Off]
+patch=1,EE,00445351,extended,00000000
+
+[KO Always On]
+patch=1,EE,00445352,extended,00000001
+
+[KO Always Off]
+patch=1,EE,00445352,extended,00000000
+
+[Give Up Always On]
+patch=1,EE,00445353,extended,00000001
+
+[Give Up Always Off]
+patch=1,EE,00445353,extended,00000000
+
+[Rope Break Always On]
+patch=1,EE,00445354,extended,00000001
+
+[Rope Break Always Off]
+patch=1,EE,00445354,extended,00000000
+
+[DQ Always On]
+patch=1,EE,00445355,extended,00000001
+
+[DQ Always Off]
+patch=1,EE,00445355,extended,00000000
+
+[Ring Out Count Always On]
+patch=1,EE,00445356,extended,0000000A
+
+[Ring Out Count Always Off]
+patch=1,EE,00445356,extended,00000000
+
+[Ring Out Always On]
+patch=1,EE,00445357,extended,00000001
+
+[Ring Out Always Off]
+patch=1,EE,00445357,extended,00000000
+
+[Interference Always On]
+patch=1,EE,00445358,extended,00000001
+
+[Interference Always Off]
+patch=1,EE,00445358,extended,00000000
+
+[Escape From Cage Door Always On]
+patch=1,EE,0044535A,extended,00000001
+
+[Escape From Cage Door Always Off]
+patch=1,EE,0044535A,extended,00000000
+
+[ECW]
+patch=1,EE,70445305,extended,00000080
+
+[Wrestlemania 21]
+patch=1,EE,70445306,extended,00000001
+
+[Wrestlemania IX]
+patch=1,EE,70445306,extended,00000002
+
+[All Arenas]
+patch=1,EE,70445305,extended,00000080
+patch=1,EE,70445306,extended,00000003
+
+[Steve Austin-T-Shirt & Short Jeans]
+patch=1,EE,70445306,extended,00000004
+
+[J.B. Layfield-Suit]
+patch=1,EE,70445306,extended,00000008
+
+[Triple H & Kain-Suits]
+patch=1,EE,70445306,extended,00000010
+
+[All Extra Costumes]
+patch=1,EE,70445306,extended,0000001C
+
+[Andre The Giant]
+patch=1,EE,70445304,extended,00000008
+
+[Bret 'Hit Man' Hart]
+patch=1,EE,70445304,extended,00000010
+
+[Mankind]
+patch=1,EE,70445304,extended,00000020
+
+[The Rock]
+patch=1,EE,70445304,extended,00000040
+
+[British Bulldog 'Davey Boy Smith']
+patch=1,EE,70445304,extended,00000080
+
+[Jimmy Hart]
+patch=1,EE,70445305,extended,00000001
+
+[Steve Austin]
+patch=1,EE,70445305,extended,00000002
+
+[Hulk Hogan 80's]
+patch=1,EE,70445305,extended,00000004
+
+[Hollywood Hogan]
+patch=1,EE,70445305,extended,00000008
+
+[Junkyard Dog]
+patch=1,EE,70445305,extended,00000010
+
+['The Million Dollar Man' Ted DiBiase]
+patch=1,EE,70445305,extended,00000020
+
+[Jake 'The Snake' Roberts]
+patch=1,EE,70445305,extended,00000040
+
+[All Legends]
+patch=1,EE,70445304,extended,00107FF8
+
+[John Cena Jersey]
+patch=1,EE,70445306,extended,00000020
+
+[Carlito T-Shirt]
+patch=1,EE,70445306,extended,00000040
+
+[All 2P Costumes]
+patch=1,EE,70445306,extended,00000060
+
+[The Million Dollar Championship]
+patch=1,EE,70445307,extended,00000040
+
+[Hardcore Championship]
+patch=1,EE,70445307,extended,00000080
+
+[All Legend Belts]
+patch=1,EE,70445307,extended,000000C0
+
+[The Rock Bobblehead]
+patch=1,EE,7044530C,extended,00000008
+
+[Hulk Hogan Bobblehead]
+patch=1,EE,7044530C,extended,00000010
+
+[Eddie Lowrider]
+patch=1,EE,7044530C,extended,00000020
+
+[JBL Limousine]
+patch=1,EE,7044530C,extended,00000040
+
+[Undertaker Motorcycle]
+patch=1,EE,7044530C,extended,00000080
+
+[Carlito Apple]
+patch=1,EE,7044530D,extended,00000001
+
+[JBL $100 Bill]
+patch=1,EE,7044530D,extended,00000002
+
+[Eugene Stuffed Animal]
+patch=1,EE,7044530D,extended,00000004
+
+[Regal Brass Knuckles]
+patch=1,EE,7044530D,extended,00000008
+
+[Jimmy Hart Megaphone]
+patch=1,EE,7044530D,extended,00000010
+
+[Bret Hart Sunglasses]
+patch=1,EE,7044530D,extended,00000020
+
+[British Bulldog's Bulldog]
+patch=1,EE,7044530D,extended,00000040
+
+[Kane Mask]
+patch=1,EE,7044530D,extended,00000080
+
+[Batisita Figure]
+patch=1,EE,7044530E,extended,00000001
+
+[John Cena Figure]
+patch=1,EE,7044530E,extended,00000002
+
+[John Cena Lock Chain]
+patch=1,EE,7044530E,extended,00000004
+
+[Kurt Angle Gold Medal]
+patch=1,EE,7044530E,extended,00000008
+
+[All Collection Items]
+patch=1,EE,7044530C,extended,0010FFF8
+patch=1,EE,7044530E,extended,0000000F
+
+[Stacy Stand Cut-Out]
+patch=1,EE,7044530E,extended,00000010
+
+[Trish Stand Cut-Out]
+patch=1,EE,7044530E,extended,00000020
+
+[Lava Lamp]
+patch=1,EE,7044530E,extended,00000040
+
+[Leather Couch]
+patch=1,EE,7044530E,extended,00000080
+
+[Furry Couch]
+patch=1,EE,7044530F,extended,00000001
+
+[Lowrider Couch]
+patch=1,EE,7044530F,extended,00000002
+
+[Glass Coffee Table]
+patch=1,EE,7044530F,extended,00000004
+
+[Casino Table]
+patch=1,EE,7044530F,extended,00000008
+
+[All Furniture]
+patch=1,EE,7044530E,extended,00100FF0
+
+[Tiger Skin Rug]
+patch=1,EE,7044530F,extended,00000010
+
+[Fancy Component Stereo Set]
+patch=1,EE,70445314,extended,00000080
+
+[Ceiling Fan]
+patch=1,EE,70445315,extended,00000001
+
+[Sledgehammer]
+patch=1,EE,7044530F,extended,00000020
+
+[Barbie Weapon]
+patch=1,EE,7044530F,extended,00000040
+
+[Guitar]
+patch=1,EE,7044530F,extended,00000080
+
+[John Cena Football Jersey]
+patch=1,EE,70445310,extended,00000001
+
+[John Cena Baseball Jersey]
+patch=1,EE,70445310,extended,00000002
+
+[Y2J Hockey Jersey]
+patch=1,EE,70445310,extended,00000004
+
+[Rey Mysterio Basketball Jersey]
+patch=1,EE,70445310,extended,00000008
+
+[Rey Mysterio Baseball Jersey]
+patch=1,EE,70445310,extended,00000010
+
+[Shane McMahon Jersey]
+patch=1,EE,70445310,extended,00000020
+
+[ECW T-Shirt]
+patch=1,EE,70445310,extended,00000040
+
+[Torrie Poster 1]
+patch=1,EE,70445310,extended,00000080
+
+[Torrie Poster 2]
+patch=1,EE,70445311,extended,00000001
+
+[Trish Poster 1]
+patch=1,EE,70445311,extended,00000002
+
+[Trish Poster 2]
+patch=1,EE,70445311,extended,00000004
+
+[Trish Poster 3]
+patch=1,EE,70445311,extended,00000008
+
+[Stacy Poster 1]
+patch=1,EE,70445311,extended,00000010
+
+[Stacy Poster 2]
+patch=1,EE,70445311,extended,00000020
+
+[Christy Poster 1]
+patch=1,EE,70445311,extended,00000040
+
+[Christy Poster 2]
+patch=1,EE,70445311,extended,00000080
+
+[Lita Poster]
+patch=1,EE,70445312,extended,00000001
+
+[Michelle Poster]
+patch=1,EE,70445312,extended,00000002
+
+[Bret Hart Poster]
+patch=1,EE,70445312,extended,00000004
+
+[The Rock Poster]
+patch=1,EE,70445312,extended,00000008
+
+[Mankind Poster]
+patch=1,EE,70445312,extended,00000010
+
+[Austin Poster]
+patch=1,EE,70445312,extended,00000020
+
+[Hogan Poster]
+patch=1,EE,70445312,extended,00000040
+
+[D-X Poster]
+patch=1,EE,70445312,extended,00000080
+
+[Evolution Poster]
+patch=1,EE,70445313,extended,00000001
+
+[N.W.O. Poster]
+patch=1,EE,70445313,extended,00000002
+
+[Hall Of Fame Poster]
+patch=1,EE,70445313,extended,00000004
+
+[All Walls]
+patch=1,EE,7044530F,extended,000000E0
+patch=1,EE,10445310,extended,0000FFFF
+patch=1,EE,70445312,extended,001007FF
+
+[Metal Locker]
+patch=1,EE,70445313,extended,00000008
+
+[Glass Locker]
+patch=1,EE,70445313,extended,00000010
+
+[Survivor Series Steel Chair]
+patch=1,EE,70445313,extended,00000020
+
+[SummerSlam Steel Chair]
+patch=1,EE,70445313,extended,00000040
+
+[RoyalRumble Steel Chair]
+patch=1,EE,70445313,extended,00000080
+
+[WrestleMania 21 Steel Chair]
+patch=1,EE,70445314,extended,00000001
+
+[All Lockers]
+patch=1,EE,70445313,extended,000000F8
+patch=1,EE,70445314,extended,00000001
+
+[Metal Trophy Case]
+patch=1,EE,70445314,extended,00000002
+
+[Glass Trophy Case]
+patch=1,EE,70445314,extended,00000004
+
+[All Tropy Cases]
+patch=1,EE,70445314,extended,00000006
+
+[Metal Belt Case]
+patch=1,EE,70445314,extended,00000008
+
+[Glass Belt Case]
+patch=1,EE,70445314,extended,00000010
+
+[All Belt Cases]
+patch=1,EE,70445314,extended,00000018
+
+[Training Machine 1]
+patch=1,EE,70445314,extended,00000020
+
+[Training Machine 2]
+patch=1,EE,70445314,extended,00000040
+
+[All Training Machines]
+patch=1,EE,70445314,extended,00000060
+
+[Mr. McMahon]
+patch=1,EE,003DBD44,extended,00000001
+
+[Eric Bischoff]
+patch=1,EE,003DBDE4,extended,00000001
+
+[Brian Hebner]
+patch=1,EE,003DCEC4,extended,00000001
+
+[Michael Cole]
+patch=1,EE,003DCF64,extended,00000001
+
+[Earl Hebner]
+patch=1,EE,003DD004,extended,00000001
+
+[Jim Ross]
+patch=1,EE,003DD0A4,extended,00000001
+
+[Jerry Lawler]
+patch=1,EE,003DD144,extended,00000001
+
+[Jonathan Coachman]
+patch=1,EE,003DD1E4,extended,00000001
+
+[Tazz]
+patch=1,EE,003DD284,extended,00000001
+
+[Theodore Long]
+patch=1,EE,003DE5E4,extended,00000001
+
+[Tony Chimmel]
+patch=1,EE,003DE724,extended,00000001
+
+[Lilian Garcia]
+patch=1,EE,003DE7C4,extended,00000001
+
+[P1 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FABA02
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FABA02
+patch=1,EE,20514C5C,extended,54820025
+
+[P1 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FEFE,extended,01FABA02
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FFFF,extended,01FABA02
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[P2 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FABBE2
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FABBE2
+patch=1,EE,20514C5C,extended,54820025
+
+[P2 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FEFE,extended,01FABBE2
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FFFF,extended,01FABBE2
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[P3 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FABDC2
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FABDC2
+patch=1,EE,20514C5C,extended,54820025
+
+[P3 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FEFE,extended,01FABDC2
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FFFF,extended,01FABDC2
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[P4 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FABFA2
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FABFA2
+patch=1,EE,20514C5C,extended,54820025
+
+[P4 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FEFE,extended,01FABFA2
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FFFF,extended,01FABFA2
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[P5 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FAC182
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FAC182
+patch=1,EE,20514C5C,extended,54820025
+
+[P5 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FBFE,extended,01FAC182
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FEFE,extended,01FAC182
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[P6 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FAC362
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FAC362
+patch=1,EE,20514C5C,extended,54820025
+
+[P6 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FEFE,extended,01FAC362
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FFFF,extended,01FAC362
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[P7 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FAC542
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FAC542
+patch=1,EE,20514C5C,extended,54820025
+
+[P7 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FEFE,extended,01FAC542
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FFFF,extended,01FAC542
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[P8 Press {L1}+{SELECT} While Pinning For Instant 3 Count]
+patch=1,EE,E001FBFE,extended,01FAC722
+patch=1,EE,20514C5C,extended,00000000
+patch=1,EE,E001FFFF,extended,01FAC722
+patch=1,EE,20514C5C,extended,54820025
+
+[P8 Press {L1}+{SELECT} While Pinning To Reset Pin Count]
+patch=1,EE,E002FEFE,extended,01FAC722
+patch=1,EE,20514C58,extended,24040000
+patch=1,EE,20514C60,extended,AE240054
+patch=1,EE,E002FFFF,extended,01FAC722
+patch=1,EE,20514C58,extended,8E240054
+patch=1,EE,20514C60,extended,8E230058
+
+[Infinite Starting Cash (RAW GM)]
+patch=1,EE,1042F830,extended,0000FFFF
+
+[Max Starting Cash (RAW GM)]
+patch=1,EE,2042F830,extended,05F5E0FF
+
+[Infinite Starting Cash (Smackdown GM)]
+patch=1,EE,10431E40,extended,0000FFFF
+
+[Max Starting Cash (Smackdown GM)]
+patch=1,EE,20431E40,extended,05F5E0FF
+
+[View Roster For All Characters On RAW]
+patch=1,EE,E0028021,extended,005A89F4
+patch=1,EE,205A8A04,extended,24020000
+patch=1,EE,205A8A0C,extended,A20256A4
+
+[View Roster For All Characters On Smackdown]
+patch=1,EE,E0028021,extended,005A89F4
+patch=1,EE,205A8A04,extended,24020001
+patch=1,EE,205A8A0C,extended,A20256A4
+
+[View Roster For Max Popularity (All Wrestlers)]
+patch=1,EE,E0022021,extended,005ACA20
+patch=1,EE,205ACA34,extended,00000000
+patch=1,EE,205ACA44,extended,AC82569C
+
+[View Roster For Never Fatigued (All Wrestlers)]
+patch=1,EE,D05FBC78,extended,00001021
+patch=1,EE,205FBC80,extended,A04056AD
+patch=1,EE,D05E9AF4,extended,0000982D
+patch=1,EE,205E9AFC,extended,24120000
+
+[View Roster For No Injuries (All Wrestlers)]
+patch=1,EE,E0031021,extended,005FB92C
+patch=1,EE,205FB938,extended,00540821
+patch=1,EE,205FB93C,extended,24020000
+patch=1,EE,205FB944,extended,A02256AE

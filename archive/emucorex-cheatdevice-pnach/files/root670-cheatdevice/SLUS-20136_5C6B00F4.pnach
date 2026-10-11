@@ -1,0 +1,30 @@
+gametitle=Barbarian (SLUS-20136)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90258764,extended,0C09F49D
+
+[Infinite AP]
+patch=1,EE,20499D8C,extended,0000270F
+
+[Max Damage]
+patch=1,EE,2048322C,extended,FFFFFFFF
+patch=1,EE,20483234,extended,0000000A
+
+[Max Life]
+patch=1,EE,2048325C,extended,FFFFFFFF
+patch=1,EE,20483264,extended,0000000A
+
+[Max Defense]
+patch=1,EE,2048328C,extended,FFFFFFFF
+patch=1,EE,20483294,extended,0000000A
+
+[Max Magic]
+patch=1,EE,204832BC,extended,FFFFFFFF
+patch=1,EE,204832C4,extended,0000000A
+
+[Max Lift]
+patch=1,EE,204832EC,extended,FFFFFFFF
+patch=1,EE,204832F4,extended,0000000A

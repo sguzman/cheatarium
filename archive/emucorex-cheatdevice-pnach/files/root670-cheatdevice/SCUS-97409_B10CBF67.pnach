@@ -1,0 +1,371 @@
+gametitle=Gretzky NHL 2005 (SCUS-97409)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90384804,extended,0C12E0C9
+
+[Home Team Scores 50]
+patch=1,EE,1090E9B0,extended,00000032
+
+[Home Team Scores 20]
+patch=1,EE,1090E9B0,extended,00000014
+
+[Home Team Scores 0]
+patch=1,EE,1090E9B0,extended,00000000
+
+[Home Team Start With 50]
+patch=1,EE,D090E9B0,extended,00000000
+patch=1,EE,1090E9B0,extended,00000032
+
+[Home Team Start With 20]
+patch=1,EE,D090E9B0,extended,00000000
+patch=1,EE,1090E9B0,extended,00000014
+
+[Home Team Start With 10]
+patch=1,EE,D090E9B0,extended,00000000
+patch=1,EE,1090E9B0,extended,0000000A
+
+[Home Team Start With 5]
+patch=1,EE,D090E9B0,extended,00000000
+patch=1,EE,1090E9B0,extended,00000005
+
+[Away Team Scores 50]
+patch=1,EE,1090E9B4,extended,00000032
+
+[Away Team Scores 20]
+patch=1,EE,1090E9B4,extended,00000014
+
+[Away Team Scores 0]
+patch=1,EE,1090E9B4,extended,00000000
+
+[Away Team Start With 50]
+patch=1,EE,D090E9B4,extended,00000000
+patch=1,EE,1090E9B4,extended,00000032
+
+[Away Team Start With 20]
+patch=1,EE,D090E9B4,extended,00000000
+patch=1,EE,1090E9B4,extended,00000014
+
+[Away Team Start With 10]
+patch=1,EE,D090E9B4,extended,00000000
+patch=1,EE,1090E9B4,extended,0000000A
+
+[Away Team Start With 5]
+patch=1,EE,D090E9B4,extended,00000000
+patch=1,EE,1090E9B4,extended,00000005
+
+[All Goal's Score For Home Team]
+patch=1,EE,202DA398,extended,24060000
+
+[All Goal's Score For Away Team]
+patch=1,EE,202DA398,extended,24060004
+
+[Goal's Score 10]
+patch=1,EE,102DA3A4,extended,0000000A
+
+[Goal's Score 5]
+patch=1,EE,102DA3A4,extended,00000005
+
+[Goal's Score 2]
+patch=1,EE,102DA3A4,extended,00000002
+
+[P1 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929142,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P1 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929142,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[P2 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929242,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P2 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929242,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[P3 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929342,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P3 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929342,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[P4 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929442,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P4 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929442,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[P5 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929542,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P5 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929542,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[P6 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929642,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P6 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929642,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[P7 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929742,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P7 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929742,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[P8 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0929842,extended,0000FBFE
+patch=1,EE,2090C834,extended,00000000
+
+[P8 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0929842,extended,0000FEFE
+patch=1,EE,2090C834,extended,4495E000
+
+[View Challenges To Have Them Completed]
+patch=1,EE,2026D78C,extended,240500FF
+patch=1,EE,2026D794,extended,00A21024
+patch=1,EE,2026D798,extended,03E00008
+patch=1,EE,2026D79C,extended,A0850000
+
+[Buying Unlockables Doesnt Decrease Gretzky Points]
+patch=1,EE,20272440,extended,00000000
+
+[Buying Unlockables Increases Gretzky Points]
+patch=1,EE,20272430,extended,00711021
+
+[Infinite Creation Points]
+patch=1,EE,2023C748,extended,24020000
+
+[Max Time Of Possession]
+patch=1,EE,10911188,extended,0000EA5F
+
+[No Time Of Possession]
+patch=1,EE,10911188,extended,00000000
+
+[Max Offense Zone Time]
+patch=1,EE,1091118C,extended,0000EA5F
+
+[No Offense Zone Time]
+patch=1,EE,1091118C,extended,00000000
+
+[Max Scoring Chances]
+patch=1,EE,1091119C,extended,0000270F
+
+[Max Scoring Chances]
+patch=1,EE,1091119C,extended,0000270F
+
+[Max Passes Attempted]
+patch=1,EE,109111A8,extended,0000270F
+
+[No Passes Attempted]
+patch=1,EE,109111A8,extended,00000000
+
+[Max Passes Completed]
+patch=1,EE,109111AC,extended,0000270F
+
+[No Passes Completed]
+patch=1,EE,109111AC,extended,00000000
+
+[Max Time Of Possession]
+patch=1,EE,1091118A,extended,0000EA5F
+
+[No Time Of Possession]
+patch=1,EE,1091118A,extended,00000000
+
+[Max Offense Zone Time]
+patch=1,EE,1091118E,extended,0000EA5F
+
+[No Offense Zone Time]
+patch=1,EE,1091118E,extended,00000000
+
+[Max Scoring Chances]
+patch=1,EE,1091119E,extended,0000270F
+
+[Max Scoring Chances]
+patch=1,EE,1091119E,extended,0000270F
+
+[Max Passes Attempted]
+patch=1,EE,109111AA,extended,0000270F
+
+[No Passes Attempted]
+patch=1,EE,109111AA,extended,00000000
+
+[Max Passes Completed]
+patch=1,EE,109111AE,extended,0000270F
+
+[No Passes Completed]
+patch=1,EE,109111AE,extended,00000000
+
+[Infinite Gretzky Points]
+patch=1,EE,10902074,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902074,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,20901F58,extended,FFFFFFFF
+patch=1,EE,20901F5C,extended,FFFFFFFF
+patch=1,EE,10901F60,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,20902068,extended,FFFFFFFF
+patch=1,EE,2090206C,extended,FFFFFFFF
+patch=1,EE,10902070,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,10902220,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902220,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,20902104,extended,FFFFFFFF
+patch=1,EE,20902108,extended,FFFFFFFF
+patch=1,EE,1090210C,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,20902214,extended,FFFFFFFF
+patch=1,EE,20902218,extended,FFFFFFFF
+patch=1,EE,1090201C,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,109023CC,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,209023CC,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,209022B0,extended,FFFFFFFF
+patch=1,EE,209022B4,extended,FFFFFFFF
+patch=1,EE,109022B8,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,209023C0,extended,FFFFFFFF
+patch=1,EE,209023C4,extended,FFFFFFFF
+patch=1,EE,109023C8,extended,000FFFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,10902578,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902578,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,2090245C,extended,FFFFFFFF
+patch=1,EE,20902460,extended,FFFFFFFF
+patch=1,EE,10902464,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,2090256C,extended,FFFFFFFF
+patch=1,EE,20902570,extended,FFFFFFFF
+patch=1,EE,10902570,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,10902724,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902724,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,20902608,extended,FFFFFFFF
+patch=1,EE,2090260C,extended,FFFFFFFF
+patch=1,EE,10902610,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,20902718,extended,FFFFFFFF
+patch=1,EE,2090271C,extended,FFFFFFFF
+patch=1,EE,1090271C,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,109028D0,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,209028D0,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,209027B4,extended,FFFFFFFF
+patch=1,EE,209027B8,extended,FFFFFFFF
+patch=1,EE,109027BC,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,209028C4,extended,FFFFFFFF
+patch=1,EE,209028C8,extended,FFFFFFFF
+patch=1,EE,109028C8,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,10902A7C,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902A7C,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,20902960,extended,FFFFFFFF
+patch=1,EE,20902964,extended,FFFFFFFF
+patch=1,EE,10902968,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,20902A70,extended,FFFFFFFF
+patch=1,EE,20902A74,extended,FFFFFFFF
+patch=1,EE,10902A74,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,10902C28,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902C28,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,20902B0C,extended,FFFFFFFF
+patch=1,EE,20902B10,extended,FFFFFFFF
+patch=1,EE,10902B14,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,20902C1C,extended,FFFFFFFF
+patch=1,EE,20902C20,extended,FFFFFFFF
+patch=1,EE,10902C20,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,10902DD4,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902DD4,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,20902CB8,extended,FFFFFFFF
+patch=1,EE,20902CBC,extended,FFFFFFFF
+patch=1,EE,10902CC0,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,20902DC8,extended,FFFFFFFF
+patch=1,EE,20902DCC,extended,FFFFFFFF
+patch=1,EE,10902DCC,extended,0000FFFF
+
+[Infinite Gretzky Points]
+patch=1,EE,10902F80,extended,0000FFFF
+
+[Max Gretzky Points]
+patch=1,EE,20902F80,extended,05F5E0FF
+
+[Have All Challenges Completed]
+patch=1,EE,20902E64,extended,FFFFFFFF
+patch=1,EE,20902E68,extended,FFFFFFFF
+patch=1,EE,10902E6C,extended,0000FFFF
+
+[Have All Unlockables]
+patch=1,EE,20902F74,extended,FFFFFFFF
+patch=1,EE,20902F78,extended,FFFFFFFF
+patch=1,EE,10902F78,extended,0000FFFF

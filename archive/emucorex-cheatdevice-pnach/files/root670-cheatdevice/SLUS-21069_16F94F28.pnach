@@ -1,0 +1,156 @@
+gametitle=American Chopper (SLUS-21069)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011E470,extended,0C0A8236
+
+[Idiot AI-Cars]
+patch=1,EE,20230680,extended,03E00008
+patch=1,EE,20230684,extended,00000000
+
+[Cars Always Should Avoid You]
+patch=1,EE,202D2F10,extended,03E00008
+patch=1,EE,202D2F14,extended,24020001
+
+[Cars Should Never Break To Avoid Collisions]
+patch=1,EE,202D3B00,extended,03E00008
+patch=1,EE,202D3B04,extended,24020000
+
+[Cars Should Never Break Before Crossroads]
+patch=1,EE,202D31C0,extended,03E00008
+patch=1,EE,202D31C4,extended,24020000
+
+[Infinite Style Points]
+patch=1,EE,10A6EC8C,extended,0000FFFF
+
+[Max Style Points]
+patch=1,EE,20A6EC8C,extended,0098967F
+
+[Access All Bikes]
+patch=1,EE,202B9180,extended,03E00008
+patch=1,EE,202B9184,extended,24020001
+
+[Access All Chapters]
+patch=1,EE,2034CEBC,extended,24020001
+
+[Max Total Mission Points]
+patch=1,EE,20A45628,extended,0098967F
+
+[No Total Mission Points]
+patch=1,EE,20A45628,extended,00000000
+
+[Max Time Played]
+patch=1,EE,20A457A4,extended,0000EA5F
+
+[No Time Played]
+patch=1,EE,20A457A4,extended,00000000
+
+[Max Distance Traveled]
+patch=1,EE,20A457E4,extended,0098967F
+
+[No Distance Traveled]
+patch=1,EE,20A457E4,extended,00000000
+
+[Max Friendly Bikers Down]
+patch=1,EE,20A45864,extended,0098967F
+
+[No Friendly Bikers Down]
+patch=1,EE,20A45864,extended,00000000
+
+[Max Traffic Hits]
+patch=1,EE,20A458A4,extended,0098967F
+
+[No Traffic Hits]
+patch=1,EE,20A458A4,extended,00000000
+
+[Max Falls]
+patch=1,EE,20A458E4,extended,0098967F
+
+[No Falls]
+patch=1,EE,20A458E4,extended,00000000
+
+[Max Pedestrians Down]
+patch=1,EE,20A45924,extended,0098967F
+
+[No Pedestrians Down]
+patch=1,EE,20A45924,extended,00000000
+
+[Max Police Chases Lost]
+patch=1,EE,20A45964,extended,0098967F
+
+[No Police Chases Lost]
+patch=1,EE,20A45964,extended,00000000
+
+[Max Fuel Canisters]
+patch=1,EE,20A459E4,extended,0098967F
+
+[No Fuel Canisters]
+patch=1,EE,20A459E4,extended,00000000
+
+[Max Repairs Kits]
+patch=1,EE,20A45A24,extended,0098967F
+
+[No Repairs Kits]
+patch=1,EE,20A45A24,extended,00000000
+
+[Max Enemy Bikers Down]
+patch=1,EE,20A45AA4,extended,0098967F
+
+[No Enemy Bikers Down]
+patch=1,EE,20A45AA4,extended,00000000
+
+[Max Pedestrians Scared]
+patch=1,EE,20A45AE4,extended,0098967F
+
+[No Pedestrians Scared]
+patch=1,EE,20A45AE4,extended,00000000
+
+[Max Clean Driving]
+patch=1,EE,20A45B24,extended,0000EA5F
+
+[No Clean Driving]
+patch=1,EE,20A45B24,extended,00000000
+
+[Max Max Speed]
+patch=1,EE,20A45B64,extended,0000EA5F
+
+[No Max Speed]
+patch=1,EE,20A45B64,extended,00000000
+
+[Max Near Misses]
+patch=1,EE,20A45BA4,extended,0098967F
+
+[No Near Misses]
+patch=1,EE,20A45BA4,extended,00000000
+
+[Max Near Miss Chain x2]
+patch=1,EE,20A45BE4,extended,0098967F
+
+[No Near Miss Chain x2]
+patch=1,EE,20A45BE4,extended,00000000
+
+[Max Near Miss Chain x3]
+patch=1,EE,20A45C24,extended,0098967F
+
+[No Near Miss Chain x3]
+patch=1,EE,20A45C24,extended,00000000
+
+[Max Near Miss Chain x4]
+patch=1,EE,20A45C64,extended,0098967F
+
+[No Near Miss Chain x4]
+patch=1,EE,20A45C64,extended,00000000
+
+[Max Near Miss Ultimate Chain]
+patch=1,EE,20A45CA4,extended,0098967F
+
+[No Near Miss Ultimate Chain]
+patch=1,EE,20A45CA4,extended,00000000
+
+[Max Police Evasions]
+patch=1,EE,20A45CE4,extended,0098967F
+
+[No Police Evasions]
+patch=1,EE,20A45CE4,extended,00000000

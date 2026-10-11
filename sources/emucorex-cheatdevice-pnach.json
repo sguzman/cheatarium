@@ -1,0 +1,2394 @@
+{
+  "schema_version": 1,
+  "id": "emucorex-cheatdevice-pnach",
+  "repository": "https://github.com/sashkinbro/EmuCoreX-Cheat",
+  "snapshot_commit": "e1803c3bab8352d3e032194efeca03aaa489b8a5",
+  "license": "GPL-3.0-only (derived from root670 CheatDevice; historic code writers' rights unresolved)",
+  "archive_prefix": "archive/emucorex-cheatdevice-pnach/",
+  "scope": "All 473 distinct serial-CRC-labeled PNACH originals from the complete CheatDevice conversion folder",
+  "rights_note": "The original converter output identifies GPL-derived CheatDevice code authors; the GPL notice and sources metadata are preserved. Some historical contributors may have independent rights. Game serial/CRC mapping and operation unverified by Cheatarium; substantial overlap with the already archived raw root670 dataset.",
+  "source_pnach_files": 473,
+  "missing_embedded_spdx_markers": 0,
+  "files": [
+    {
+      "upstream_path": "LICENSES/GPL-3.0.txt",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/LICENSES/GPL-3.0.txt",
+      "git_blob_sha": "20d40b6bceca3a6c0237d7455ebf1820aeff3680"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/README.md",
+      "git_blob_sha": "308b857395d3ad244dbeeeb34d625dbb9ef1e8e4"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97109_88889BAA.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97109_88889BAA.pnach",
+      "git_blob_sha": "554ff374a31236eaa8f098782bb00a1b29b27ecd"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97113_6F8545DB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97113_6F8545DB.pnach",
+      "git_blob_sha": "e638998ea24c9a80e0b49ccdca6f1037442d97ba"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97128_4167D813.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97128_4167D813.pnach",
+      "git_blob_sha": "4bc784b1a445efa96c3c1572d6390fc0098b8e3d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97129_E0426FC6.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97129_E0426FC6.pnach",
+      "git_blob_sha": "03bdd9a4c799e49b823bdc17cf4dcbf5410d4686"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97136_3397DEFF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97136_3397DEFF.pnach",
+      "git_blob_sha": "d22daa5086cb3f0a63db60b919d70d07456c3e8b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97146_B489E1CD.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97146_B489E1CD.pnach",
+      "git_blob_sha": "292b939fcf15ad8162b356d3c8e165ff9bb7e4b6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97172_9E95A8C0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97172_9E95A8C0.pnach",
+      "git_blob_sha": "e7085577637b0c4a8f227c522b903a591d973c25"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97199_CE4933D0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97199_CE4933D0.pnach",
+      "git_blob_sha": "ca4933d781d479d11be3a1eb361c1843d76ec988"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97204_B505A479.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97204_B505A479.pnach",
+      "git_blob_sha": "810bbc05471cf24f627bbe7171b45774c786759c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97231_E7B6CFA2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97231_E7B6CFA2.pnach",
+      "git_blob_sha": "2d86f116e9698725e3f1ff6b80c9e566bd246eed"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97233_D41EE761.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97233_D41EE761.pnach",
+      "git_blob_sha": "64a3345b2d413bbe260890607a7d6a038f83e92a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97258_2F7B4DB8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97258_2F7B4DB8.pnach",
+      "git_blob_sha": "8460cc566c415c5da5a7a9aef42ba96bcb3b013b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97275_0F6FC6CF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97275_0F6FC6CF.pnach",
+      "git_blob_sha": "f637803a5f8f5198f84e4f2ce3d5232411517e3e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97326_DD0513A4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97326_DD0513A4.pnach",
+      "git_blob_sha": "879050643195416f1d66a63285741679acc670dd"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97355_D6C48447.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97355_D6C48447.pnach",
+      "git_blob_sha": "142dac63a0987b3d0d2cd3f9e64f6adda40a38cc"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97367_934F9081.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97367_934F9081.pnach",
+      "git_blob_sha": "40f8916812ee4d88679a6adb0b065c4b2cb2efce"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97401_D7F42600.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97401_D7F42600.pnach",
+      "git_blob_sha": "f0d2534873d58424bca3b33718b33106b8173220"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97402_CAAEC49C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97402_CAAEC49C.pnach",
+      "git_blob_sha": "9b91e3e1d637e209c6796cc90a915df3067e9b1f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97409_B10CBF67.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97409_B10CBF67.pnach",
+      "git_blob_sha": "b1014868cbd78505b47f2fc078db82fa9800126a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SCUS-97464_8BC95883.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SCUS-97464_8BC95883.pnach",
+      "git_blob_sha": "4093aaa9b0865d2dc5acad34e640232f61a5166c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20004_DC03D71F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20004_DC03D71F.pnach",
+      "git_blob_sha": "227d6c5f74f07479a11229449dae38b4d6f289b6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20005_F22A8886.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20005_F22A8886.pnach",
+      "git_blob_sha": "7b9b41deaca2b58af59a745eb7fb462e423a0959"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20007_70C924CC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20007_70C924CC.pnach",
+      "git_blob_sha": "10d8aefa1726119c9df2167d14c674c3f8894f6d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20008_193623F8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20008_193623F8.pnach",
+      "git_blob_sha": "43ba9751ab15fde4baebbbb4479862d1e51e7a78"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20011_7BF65F9C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20011_7BF65F9C.pnach",
+      "git_blob_sha": "33fdc55e9182e9e44bacf6d8c23274f42a65e80d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20017_0958556B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20017_0958556B.pnach",
+      "git_blob_sha": "337ed3958e8ec4f7736c1fd745505345bc001498"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20018_A07A5057.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20018_A07A5057.pnach",
+      "git_blob_sha": "196375c34ac5f3bc5867733438c5d955f2cf1828"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20021_BF3542FE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20021_BF3542FE.pnach",
+      "git_blob_sha": "f89090e83599ca8e1b97698b874211a7a225fa71"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20034_5751CAC1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20034_5751CAC1.pnach",
+      "git_blob_sha": "5947bebae737c27c0c2010801aae55670c0036b2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20035_773A8DAB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20035_773A8DAB.pnach",
+      "git_blob_sha": "c993220f50566384fab5679cb4fee0b7dfcf696b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20048_C4ECF541.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20048_C4ECF541.pnach",
+      "git_blob_sha": "ab6ffa771a73c7ff17e3ce5ef49d9539bc554b09"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20049_E07A0594.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20049_E07A0594.pnach",
+      "git_blob_sha": "6da05ebc24dcc7306ba65a9920d910527969ccb6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20050_29B9FAD3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20050_29B9FAD3.pnach",
+      "git_blob_sha": "70d3ad53a3d0cc48c050ff3bfbcafb5cb579f677"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20054_70A26400.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20054_70A26400.pnach",
+      "git_blob_sha": "98d1c4c7c2e2d19922b86c2eedff5169812ad5ef"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20058_B9BD4B3B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20058_B9BD4B3B.pnach",
+      "git_blob_sha": "d77ac59821543a0d28226c3642b04e64afd383d6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20063_DFD26C76.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20063_DFD26C76.pnach",
+      "git_blob_sha": "5ba200a625bfdcfc0bd0678fed8305cd62bbb2b0"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20064_FD9CD8FC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20064_FD9CD8FC.pnach",
+      "git_blob_sha": "3e72493936e15231cba2ea78453cafa8e64da4c8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20065_0E7F91DA.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20065_0E7F91DA.pnach",
+      "git_blob_sha": "7994af66b952234b134da2937fbf25da9287eb88"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20066_A880AE9B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20066_A880AE9B.pnach",
+      "git_blob_sha": "292fba8b622a83c3cabbab6e6cb1f5899ba151a6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20074_13E2774E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20074_13E2774E.pnach",
+      "git_blob_sha": "ce21b21c5a473b7971dfc6315f02df8c7118fadf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20076_9CF6FA75.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20076_9CF6FA75.pnach",
+      "git_blob_sha": "887d657502b05daf28c0f07ca87c1396f860462c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20077_C573F3A2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20077_C573F3A2.pnach",
+      "git_blob_sha": "502aaf8f575cd83e20e39113a2b906a64ccf1147"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20078_53CB5976.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20078_53CB5976.pnach",
+      "git_blob_sha": "55a8c5e7493e8b5490a139befeeae7af8ed44f1c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20079_5B665C0B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20079_5B665C0B.pnach",
+      "git_blob_sha": "88304a0a998b5fed62ea21e800978b9df74390c8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20084_B0D6C2C2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20084_B0D6C2C2.pnach",
+      "git_blob_sha": "e0843a8311544fdb0ed9eb06c4a15d3a9d8a56c1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20085_80CE4A4D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20085_80CE4A4D.pnach",
+      "git_blob_sha": "9838897e3fdc05b62bd517167838d75cead22eec"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20089_5F491DD1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20089_5F491DD1.pnach",
+      "git_blob_sha": "c3aa41cd29e9f553cc1443e7922bc4800e8a9c83"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20094_238FFAAE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20094_238FFAAE.pnach",
+      "git_blob_sha": "cd600603ccf32a2888d9e545d024c36bf16ab4f8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20102_823BFFD3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20102_823BFFD3.pnach",
+      "git_blob_sha": "be82eabaeeb84a414b8b4c4171fe73fceb421bfa"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20105_F191AFBC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20105_F191AFBC.pnach",
+      "git_blob_sha": "6433890c0deea8577a8f1180cd6f634fb195db51"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20109_1259612B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20109_1259612B.pnach",
+      "git_blob_sha": "f41ec44e9377832a1cdcf6dec781a12eae916800"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20128_E3BC4CEE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20128_E3BC4CEE.pnach",
+      "git_blob_sha": "661f294269944904e78167b8399a5c3fe37037b2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20131_38E20A00.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20131_38E20A00.pnach",
+      "git_blob_sha": "e3a7b5a71ee93a7903ec2dda1277facd65d66cfb"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20132_FB307F03.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20132_FB307F03.pnach",
+      "git_blob_sha": "97a0586b4c18ebbbe377f21733086157fc9e8db0"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20133_0EAB545E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20133_0EAB545E.pnach",
+      "git_blob_sha": "96a06d90e03a6d10776c4dbc6cb9ec0e91202c37"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20136_5C6B00F4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20136_5C6B00F4.pnach",
+      "git_blob_sha": "68e0645436729342a0412e0b4063287c706378cc"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20143_6CC36213.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20143_6CC36213.pnach",
+      "git_blob_sha": "1aa67c35214a1a2c22d6c8ec5200c0a0a77ab37a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20145_EB653BE2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20145_EB653BE2.pnach",
+      "git_blob_sha": "88b1b7652000ca7a21885fd47869b9376aea56e4"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20147_64DA78A3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20147_64DA78A3.pnach",
+      "git_blob_sha": "237bff9da97982c4e18584b6e98b0868646f241f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20149_2B58234D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20149_2B58234D.pnach",
+      "git_blob_sha": "174ca1f0d5b607b565a9d13323852953ea0abbac"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20151_2F56CBC9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20151_2F56CBC9.pnach",
+      "git_blob_sha": "5f14c592c05b732aaa33723ff97dd740b0119650"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20159_CEC42835.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20159_CEC42835.pnach",
+      "git_blob_sha": "899d4c2f1708f07fd359d41e1f30009e58746bc7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20160_B88DF765.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20160_B88DF765.pnach",
+      "git_blob_sha": "835049c7801cf921e24524301bbb32237f2cb97a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20166_0414648B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20166_0414648B.pnach",
+      "git_blob_sha": "0d53bf262a51f665b6faadc421aa796930936ff6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20172_51706243.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20172_51706243.pnach",
+      "git_blob_sha": "7c8ff19e584f440965be2fa4dea34b0bfb13ad70"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20175_88CA8484.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20175_88CA8484.pnach",
+      "git_blob_sha": "920449b4f53036090a979374adb3f20fe3eed724"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20177_0DDFE767.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20177_0DDFE767.pnach",
+      "git_blob_sha": "6d8d564cdf8880b51d5b29ebbce2b801ef3c831f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20184_24036809.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20184_24036809.pnach",
+      "git_blob_sha": "198093fee70ecd8dadde1818dbe7f366ef271e2f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20194_160076FE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20194_160076FE.pnach",
+      "git_blob_sha": "57e37f4a5a932294c230594c38fa67ed425848e5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20198_18720162.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20198_18720162.pnach",
+      "git_blob_sha": "79c0df594eb2ef53bf83c32b5d8a1c6b41e34d79"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20204_0EF2C216.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20204_0EF2C216.pnach",
+      "git_blob_sha": "9b10b69ddade58a9143a999d28d48d7748fb59c8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20205_5C06B9F3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20205_5C06B9F3.pnach",
+      "git_blob_sha": "c3d8e960243138f083e4aa77d7edbd7338895741"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20206_49DC3D25.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20206_49DC3D25.pnach",
+      "git_blob_sha": "c6ddbd51463cfbb5561b195e7925fddebdb1e69f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20207_67835861.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20207_67835861.pnach",
+      "git_blob_sha": "aa59b9586d76260732d6604ceadbc52df1e5594e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20210_E0DADD1A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20210_E0DADD1A.pnach",
+      "git_blob_sha": "ce0ae62f4503b86d64051d85d0eaaf7aac62c43b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20219_D5D560FF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20219_D5D560FF.pnach",
+      "git_blob_sha": "b5ea3eec3a4674176fd716f720a5aa0432fa8cee"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20220_5EA6B8BE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20220_5EA6B8BE.pnach",
+      "git_blob_sha": "9dfa76736bead4db1d2ae25d9d4140600cd0b18a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20227_9F70EE4F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20227_9F70EE4F.pnach",
+      "git_blob_sha": "813a8bfe61e11a9f21f63dd0f4bc059c6d695e3e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20233_23FFE14B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20233_23FFE14B.pnach",
+      "git_blob_sha": "1542545c8e2fede5f84ada868f4dfc9605b43e5e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20234_FE0E9B39.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20234_FE0E9B39.pnach",
+      "git_blob_sha": "9513fe8190dcf8644bcbf100326930c6b75c91b8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20235_3C12661F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20235_3C12661F.pnach",
+      "git_blob_sha": "91dee38a987ddbfdc6439c1871a7b1a31de6269b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20236_689339AC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20236_689339AC.pnach",
+      "git_blob_sha": "2664247a300827a07007239e56688626cdd3e60a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20237_C801FB9F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20237_C801FB9F.pnach",
+      "git_blob_sha": "515bf05d4aad6c4bf898455135f85df13760f02f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20239_EAB0862D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20239_EAB0862D.pnach",
+      "git_blob_sha": "80aa6a50ff14bfda7930168b145c6028b4d7fcbe"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20240_7DBA914D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20240_7DBA914D.pnach",
+      "git_blob_sha": "1329e744a71a1a782b032206204e007adff6b24d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20244_99218C61.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20244_99218C61.pnach",
+      "git_blob_sha": "dcb30b80fbb6e2434c0a3c882c86ea8c7f43dd3b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20249_9545216B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20249_9545216B.pnach",
+      "git_blob_sha": "5f1437cadfdd3f8078a4a875d0deae4ea9174fc5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20251_F0A6D880.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20251_F0A6D880.pnach",
+      "git_blob_sha": "2dc91a925a488c025ecf22c12163fc5c622f6b5f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20257_9206FE2A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20257_9206FE2A.pnach",
+      "git_blob_sha": "07f38c8bbd15674a18abbe6670098d185e03c481"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20259_E914BEF4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20259_E914BEF4.pnach",
+      "git_blob_sha": "3febe423b26b947fa2f6f3d76f264d70f4efba01"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20261_162CDF86.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20261_162CDF86.pnach",
+      "git_blob_sha": "61e5a28d7e17baf1cd37fbd87d4238af2ce8bbb8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20264_2870C248.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20264_2870C248.pnach",
+      "git_blob_sha": "1639e26c11d939c162716706d931c28153081829"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20265_79646C72.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20265_79646C72.pnach",
+      "git_blob_sha": "b779a5f13fcf56b8f82e33cd4ff17a6bcc58a5a7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20268_A7F6E4C8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20268_A7F6E4C8.pnach",
+      "git_blob_sha": "b475541fdb687d307949fd9b744d6b92b1c970a2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20274_9B87ACF8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20274_9B87ACF8.pnach",
+      "git_blob_sha": "b1f0f56e564a0680565ae180dc1a00413b98e606"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20275_53A803AF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20275_53A803AF.pnach",
+      "git_blob_sha": "d95a93e2be9e86c7cc915337607c9d895c1caa90"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20277_4A35E19F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20277_4A35E19F.pnach",
+      "git_blob_sha": "150fd64ea6896ff340402087c35934eca25d3e54"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20278_12BCE532.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20278_12BCE532.pnach",
+      "git_blob_sha": "0120ac1824cd07b3a8dd8326d7b5786c81ac487a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20279_36240AE2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20279_36240AE2.pnach",
+      "git_blob_sha": "009ae6afe5c727b13ed92f3ef47e979bc9b0a15f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20281_533584A7.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20281_533584A7.pnach",
+      "git_blob_sha": "7a6cad71fb9ae586eb3d2323e13671446c265bb5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20285_586EA828.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20285_586EA828.pnach",
+      "git_blob_sha": "07187006f25fbaf510e2c56456d311c093652d4d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20286_AD3294F9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20286_AD3294F9.pnach",
+      "git_blob_sha": "c3da1baf977d8b50a53af927df9d75c783a1943b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20292_9D57694E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20292_9D57694E.pnach",
+      "git_blob_sha": "c5e35841ee17b73989cad649475d0394e06836d5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20293_82957819.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20293_82957819.pnach",
+      "git_blob_sha": "c52ed84ee111c4f433cca077ed49e8bbe5905387"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20294_7130C553.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20294_7130C553.pnach",
+      "git_blob_sha": "0f2892edb15b50ac2c5fd00e58f648b2fe46a334"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20298_2DB5A0F4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20298_2DB5A0F4.pnach",
+      "git_blob_sha": "27cfaad28ce5ae5239f2b8b5e3f0b6104e9092a1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20299_AD955489.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20299_AD955489.pnach",
+      "git_blob_sha": "ba84a221efd3c36134b0dade559fb2b43d49387e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20303_78B0222C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20303_78B0222C.pnach",
+      "git_blob_sha": "c4642d78639113b24b62d76060e4fc3fa33f9d82"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20309_CA91718B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20309_CA91718B.pnach",
+      "git_blob_sha": "66a46aad2af109b79812563262be8b00e3d9a5c5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20310_57BF965B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20310_57BF965B.pnach",
+      "git_blob_sha": "25347c3ca2e311fa4d856d83dab2e1ffeec766e5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20311_E0A54502.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20311_E0A54502.pnach",
+      "git_blob_sha": "ef653cd386ea32337073c469082af50f04f58d28"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20312_BB3D833A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20312_BB3D833A.pnach",
+      "git_blob_sha": "98ce70958252582f9b816e0fd81cc5b07b40b1e7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20314_12532F1C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20314_12532F1C.pnach",
+      "git_blob_sha": "8331c4b9b2713aaf4ef3e914c57e0f0d12f2078d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20315_4B8E0DE8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20315_4B8E0DE8.pnach",
+      "git_blob_sha": "269e7519b1407e6eb4d4716ed57648ca925fe653"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20316_612ED854.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20316_612ED854.pnach",
+      "git_blob_sha": "609f3ea858afa8c8e39b88903c2a4704499514d9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20320_B03280F6.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20320_B03280F6.pnach",
+      "git_blob_sha": "ee0e522645c45d94070be474f89335bbfb7d9d78"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20324_EC3E8E86.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20324_EC3E8E86.pnach",
+      "git_blob_sha": "db387e5239edb87e8a53b0d2bf8d42a8fc1a175d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20328_833FE0A4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20328_833FE0A4.pnach",
+      "git_blob_sha": "5d670edf1e0015f65aff419fd2bc02478e977f0f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20333_296E2C81.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20333_296E2C81.pnach",
+      "git_blob_sha": "42f6ab4d015ecead73ac703e552cc6c8dbe157d2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20334_EC474179.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20334_EC474179.pnach",
+      "git_blob_sha": "666def9cfeb3bb0b39d70ed4b19e2e66a659454f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20336_015CB6F4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20336_015CB6F4.pnach",
+      "git_blob_sha": "287d1623670cfb8fe8593e3450828259afac188e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20337_16FB9855.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20337_16FB9855.pnach",
+      "git_blob_sha": "b03f2cf7ac98a3bd4bc7086aa8207883ba01e61c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20349_10B1F370.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20349_10B1F370.pnach",
+      "git_blob_sha": "09ba46a1758ea3cb00cd95e58440e3a996e1a915"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20356_66B7B74E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20356_66B7B74E.pnach",
+      "git_blob_sha": "dc866ec0ea57b4dd402592dc24951a42fec448db"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20360_6D0E5F2D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20360_6D0E5F2D.pnach",
+      "git_blob_sha": "7e6c1b7a1db9a799a5e00974fc084694b7f7c61b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20362_1D2818AF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20362_1D2818AF.pnach",
+      "git_blob_sha": "50948da90b1f9b45feaaa2b8f2675dbffbe75622"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20364_50C6B393.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20364_50C6B393.pnach",
+      "git_blob_sha": "ee94384de8437721d4146644a16b6c6d8a64579b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20365_4DD2DD77.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20365_4DD2DD77.pnach",
+      "git_blob_sha": "b30bd2dd8a161277a86105911d10e6ea7c7e52ea"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20368_E9348A11.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20368_E9348A11.pnach",
+      "git_blob_sha": "0ea9ea74017c6291f812ab7744d3f570ba91809e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20373_69CF7BDF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20373_69CF7BDF.pnach",
+      "git_blob_sha": "174074c35334e1339c328b9d43e226106cd22ae7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20376_D2E4255A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20376_D2E4255A.pnach",
+      "git_blob_sha": "0f2bc17c244dfb6edf3aba3195209516e252257d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20379_29BA2F04.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20379_29BA2F04.pnach",
+      "git_blob_sha": "56393dd51d057a03952f99dfe62a5530639adfdd"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20380_A99B8FE7.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20380_A99B8FE7.pnach",
+      "git_blob_sha": "c74c8a681c80183ac457a53edffffbb4383fd635"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20382_1B791836.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20382_1B791836.pnach",
+      "git_blob_sha": "35d226706e093e132f5c6b5f109828b9859d8607"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20383_B6580DA4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20383_B6580DA4.pnach",
+      "git_blob_sha": "875d78115d8c704fd7dac0dd435ef4f59e347309"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20384_A9461CB2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20384_A9461CB2.pnach",
+      "git_blob_sha": "29900bc6b6632bed2119da91766016deba9bb67a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20386_7ABEFA85.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20386_7ABEFA85.pnach",
+      "git_blob_sha": "bc28bbe1cbdee763a0a1995fd5101429af52cb97"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20393_5848889C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20393_5848889C.pnach",
+      "git_blob_sha": "05a541714d9ca95aba1ccbb8fefbcf016c231c9b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20400_B82A0B91.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20400_B82A0B91.pnach",
+      "git_blob_sha": "fbb8b27afa035c8b57056b6c3dba0a71e26df842"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20405_EAB359C1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20405_EAB359C1.pnach",
+      "git_blob_sha": "e89622e60d95326dcc28cb44c6699a1f1cd7474b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20408_394F402E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20408_394F402E.pnach",
+      "git_blob_sha": "60c0815e66548195416869f55607f7bbdbb990e5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20412_E7273BFA.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20412_E7273BFA.pnach",
+      "git_blob_sha": "caa365bc21f20986c1db28c82b0af0f82c20bc97"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20413_60AD8FA7.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20413_60AD8FA7.pnach",
+      "git_blob_sha": "3a0e126f666d86e2d61ec683a5fc91471e3885fc"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20414_F2EEC598.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20414_F2EEC598.pnach",
+      "git_blob_sha": "26b2f7e0ada496af79edabc8330f8e9c05fb4e4a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20419_5838E074.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20419_5838E074.pnach",
+      "git_blob_sha": "d366f672185cc856d311733935ad172434b9bd89"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20420_A1030867.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20420_A1030867.pnach",
+      "git_blob_sha": "11254ba7152004889660e8780458e4852876a313"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20431_DDE57BDF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20431_DDE57BDF.pnach",
+      "git_blob_sha": "2f95d75a820057b91f413f64ddcad50395e15f52"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20433_6E762B3C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20433_6E762B3C.pnach",
+      "git_blob_sha": "1f0162ddad66798f473f2a69b982ed003eef72bf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20435_FDB4D261.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20435_FDB4D261.pnach",
+      "git_blob_sha": "1777ffc9733570286646d4bb826e2e8938d46cee"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20438_8EA2C9FB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20438_8EA2C9FB.pnach",
+      "git_blob_sha": "9eff1de75226e6ca9dd41c0f6582e2a3920587d9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20441_2EA87CC5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20441_2EA87CC5.pnach",
+      "git_blob_sha": "c76c16c56964a77c9e269865c7457d2dae7561b9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20443_7AACBFD4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20443_7AACBFD4.pnach",
+      "git_blob_sha": "9b3fe39ea39e2a0631d0ec3453533f6759cacc3e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20446_954C0106.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20446_954C0106.pnach",
+      "git_blob_sha": "8a7e9bb05b235232537c947d50b222aa28c85a6a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20448_93551583.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20448_93551583.pnach",
+      "git_blob_sha": "900618e5cbd602f5d2903cab8dc9055823a3f50d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20455_8FF059A1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20455_8FF059A1.pnach",
+      "git_blob_sha": "50d121114df057b8e509dd9e52fe46908a6487c8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20461_17244B57.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20461_17244B57.pnach",
+      "git_blob_sha": "2c4193dc705781cae7a046ddf62769cb3e932140"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20464_09745632.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20464_09745632.pnach",
+      "git_blob_sha": "abf342f50ca25f19d3860ba924829191b368af4c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20468_470FDAAD.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20468_470FDAAD.pnach",
+      "git_blob_sha": "e1b7cfd5c1601db8d3ab180584354f9b0f9f226c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20471_3E2A42FA.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20471_3E2A42FA.pnach",
+      "git_blob_sha": "5eaad2935cfea99062cac0ab3cb40a3f72de5ec2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20474_49A00204.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20474_49A00204.pnach",
+      "git_blob_sha": "d165e94d8e1124e7fa394e720b3ecd80f1ecab81"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20483_B0AE1898.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20483_B0AE1898.pnach",
+      "git_blob_sha": "6bb353c95e3ae1b1b9abbb5b8610159e071ce736"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20487_3EDA6DE7.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20487_3EDA6DE7.pnach",
+      "git_blob_sha": "13d6b11f3e915db09294547112e2fcbfa2d1aa66"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20500_E169BAF8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20500_E169BAF8.pnach",
+      "git_blob_sha": "efc64019ec1ce7903b84e25136ce106e2e5cec37"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20506_D2CA77B8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20506_D2CA77B8.pnach",
+      "git_blob_sha": "1772f7610e1c5bde1d34ceb06818e631519d1d02"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20511_255F391C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20511_255F391C.pnach",
+      "git_blob_sha": "aca318f6e4f51bca206671a562308951138613b9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20513_4507B732.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20513_4507B732.pnach",
+      "git_blob_sha": "b5b3636f6c1f76adc8d31f839dcf8adba7a4ec3d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20517_67171615.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20517_67171615.pnach",
+      "git_blob_sha": "e0a8ccbbf4e17044c7602efe6a75155c304cd543"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20528_66026B1B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20528_66026B1B.pnach",
+      "git_blob_sha": "09ae77d69b3d76a685a8ec580ba83aef0c03f341"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20533_DDAC3815.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20533_DDAC3815.pnach",
+      "git_blob_sha": "b993cb3c46802e92befcbc44caac738ea627b5ef"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20536_0BBDBE84.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20536_0BBDBE84.pnach",
+      "git_blob_sha": "7c3d0f180d683424bf276ff142f59e8a0c0f7f56"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20539_6E9D2844.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20539_6E9D2844.pnach",
+      "git_blob_sha": "a299e640a971fcf3f0cedd4ab141d4efe1c9a0c3"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20547_11E88D60.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20547_11E88D60.pnach",
+      "git_blob_sha": "1ccfe89d2908d210bfcddddd8632fdbd55dd6085"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20548_421EB501.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20548_421EB501.pnach",
+      "git_blob_sha": "c0efe7e8fdcd6bdf73012037b2adcb64c33c0a7c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20549_49AF964B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20549_49AF964B.pnach",
+      "git_blob_sha": "101dda94f45afe85ffbb287efd569c5b108d4255"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20550_EB7854F1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20550_EB7854F1.pnach",
+      "git_blob_sha": "e1ef8e84dabec1d336bcf50875ac8b2333f9b8e9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20555_EA3B2269.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20555_EA3B2269.pnach",
+      "git_blob_sha": "7ef2e3243535242ac84524af04e76f9268036419"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20556_D10945CE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20556_D10945CE.pnach",
+      "git_blob_sha": "1153141ad54f7b2f4aa697900ea44125cfbee5ec"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20560_B506C936.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20560_B506C936.pnach",
+      "git_blob_sha": "f4f455a99caa970c8b95a4a1ff198b24440d4db5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20568_683845A3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20568_683845A3.pnach",
+      "git_blob_sha": "1e6267e2464eb983a3e4af0661a6c454d2e1db37"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20569_3A38CD1A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20569_3A38CD1A.pnach",
+      "git_blob_sha": "b57435488445ab009791d6cb61ccff3a0baa13fd"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20579_5B86BB62.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20579_5B86BB62.pnach",
+      "git_blob_sha": "954836b361f5d88f881ccee518e18938bca359f9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20587_7566BFB0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20587_7566BFB0.pnach",
+      "git_blob_sha": "a92cefc4faa8d2ff0f50bf230df3be6655f085a0"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20591_2FF8E31F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20591_2FF8E31F.pnach",
+      "git_blob_sha": "d77d1f95d3beb14d07c832a807b724cfbeff2e6e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20593_6CE0EEED.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20593_6CE0EEED.pnach",
+      "git_blob_sha": "f2f4bee82c76f9830f65fdef48a7f9ca08cb4259"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20597_2253465E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20597_2253465E.pnach",
+      "git_blob_sha": "9865113e377aead245a51da608b7de78dbd87a46"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20602_0AF91FC6.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20602_0AF91FC6.pnach",
+      "git_blob_sha": "a8af350999a207eee43a206443f5f7cdd62d697f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20604_66DA0D78.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20604_66DA0D78.pnach",
+      "git_blob_sha": "df995cfb35ce202b1e573a0f23f4b822612317ce"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20614_9729A03A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20614_9729A03A.pnach",
+      "git_blob_sha": "3cfdd8ee7073d3d566babdc9d015fc1ddbdacc17"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20616_C9DEF513.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20616_C9DEF513.pnach",
+      "git_blob_sha": "34f1203d1c82d70f71f4affddec96b3726e66fab"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20617_C22D5152.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20617_C22D5152.pnach",
+      "git_blob_sha": "9b08e7b005be973c81a4151fc53b5bb02a0c7388"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20618_C774219F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20618_C774219F.pnach",
+      "git_blob_sha": "c29dff8aa680d061c24195c5a049e783d1f7ec2e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20619_455398AB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20619_455398AB.pnach",
+      "git_blob_sha": "40436d97f0e0f32678f1e55a242c28c76a361517"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20620_1E4F42FF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20620_1E4F42FF.pnach",
+      "git_blob_sha": "011786eb0395c7d62fb0fdb2d4b38c7e5e70181c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20622_2498951B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20622_2498951B.pnach",
+      "git_blob_sha": "86283b538d970424a588dd4a03324d50eb61a33d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20625_46B7FEC5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20625_46B7FEC5.pnach",
+      "git_blob_sha": "9e836b9ec12882628868b6cf94ff02adea8049f7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20633_274E5444.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20633_274E5444.pnach",
+      "git_blob_sha": "28eedcbd3b6b3a0e496079c031b75cadb2238bc7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20634_4C73FB6B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20634_4C73FB6B.pnach",
+      "git_blob_sha": "cf4618bc84c5a47d572aa7f267c5003774363c86"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20638_600709E2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20638_600709E2.pnach",
+      "git_blob_sha": "d7509b20a31cf4ce92f71d925acfca0e7e31c3e5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20647_E498DD6E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20647_E498DD6E.pnach",
+      "git_blob_sha": "73b98e2b410f848e4df4d0b5e94d84f1263f69ec"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20649_8F943CF3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20649_8F943CF3.pnach",
+      "git_blob_sha": "ad6b75171a0957df1d494795d984db8f33613eaa"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20650_55493524.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20650_55493524.pnach",
+      "git_blob_sha": "f02e5892b85508bccfbafb291e9490dda5f501f1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20656_CE6A63BF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20656_CE6A63BF.pnach",
+      "git_blob_sha": "abf3fb6d658f7bc960a82a92f4a69080f77104a2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20659_004B2E96.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20659_004B2E96.pnach",
+      "git_blob_sha": "6a78f6781ceab93c7fd5ed941d6cc1a0a541e496"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20663_E1D9B618.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20663_E1D9B618.pnach",
+      "git_blob_sha": "987494fde91534c3465d0667c883ca625bf43fba"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20665_658D8BB8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20665_658D8BB8.pnach",
+      "git_blob_sha": "b6ab776aca6628ca867bdd00501268b561ebd7b8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20666_4D2CAC9D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20666_4D2CAC9D.pnach",
+      "git_blob_sha": "88a06557fc1c99789fc9910fd1cc44a31bf26258"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20669_FBB5290C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20669_FBB5290C.pnach",
+      "git_blob_sha": "01ef1764781935cf0ba734ca9e7e9a21a2505d3d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20672_48FE0C71.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20672_48FE0C71.pnach",
+      "git_blob_sha": "6f4664fa76cb9b85cfdfc864976d1270b5e37ed5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20676_87D87E3F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20676_87D87E3F.pnach",
+      "git_blob_sha": "58ce91fd51505ae0fb5799701ac18ef1d836165a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20677_FCD97245.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20677_FCD97245.pnach",
+      "git_blob_sha": "fcccb42a6622263007ec3089dc829a6ea256392a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20683_90E92030.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20683_90E92030.pnach",
+      "git_blob_sha": "5ac7a93075f32cb471a32a149bc5f522ca1803fb"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20684_4D22DB95.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20684_4D22DB95.pnach",
+      "git_blob_sha": "33abea9320841ac38a049b18cee49c81b0102477"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20687_EBD245D0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20687_EBD245D0.pnach",
+      "git_blob_sha": "0a016b4813bb9ab93f91e92b06cb7f91ab683001"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20688_9C71B59E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20688_9C71B59E.pnach",
+      "git_blob_sha": "e2fe8782622eda69f5709b633a79fe0795d768d6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20689_2BE460DF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20689_2BE460DF.pnach",
+      "git_blob_sha": "eb779f339030d01584a56ae4630d4e05b6e5b41a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20694_6BF11378.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20694_6BF11378.pnach",
+      "git_blob_sha": "9eaf36cecc7878aeebaf4b338e87c5295f21d84e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20698_C2C630E5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20698_C2C630E5.pnach",
+      "git_blob_sha": "d73023fd0a64ea43851932f19f08f6d8210135b8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20701_8F6A1960.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20701_8F6A1960.pnach",
+      "git_blob_sha": "9e1c874e608c3e10555d25e00dee063b7a433338"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20703_3EC45D14.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20703_3EC45D14.pnach",
+      "git_blob_sha": "2808b9127da037879d442271c783d2401256ffb2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20707_B7E7D66F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20707_B7E7D66F.pnach",
+      "git_blob_sha": "f3c80a62f050836904157c0cd4208d790c8327b2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20709_24280F22.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20709_24280F22.pnach",
+      "git_blob_sha": "a01b528069200bf6fe214f8cb51232feb672a707"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20710_CE7451A4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20710_CE7451A4.pnach",
+      "git_blob_sha": "5667ffafcb64798631d8cbae87b3ff7c70ed1bf2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20714_6B0F338D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20714_6B0F338D.pnach",
+      "git_blob_sha": "1925c03c6f201984e0e453d795de9d023fb813ec"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20716_F20A2A25.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20716_F20A2A25.pnach",
+      "git_blob_sha": "52651c3eb905a33c2746275da715e3f33297bd13"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20721_C6DDDB74.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20721_C6DDDB74.pnach",
+      "git_blob_sha": "c44474b20693eb3a959bb2419cf9a4c8b2d3cd04"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20723_77E3CBB4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20723_77E3CBB4.pnach",
+      "git_blob_sha": "7738c6468889089fde6c07a5686788637e23d664"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20725_30AE5278.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20725_30AE5278.pnach",
+      "git_blob_sha": "faaf29806a04c3e29dfe5443be789e32a952e662"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20733_28270F7D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20733_28270F7D.pnach",
+      "git_blob_sha": "e1850ab4b5f7c93d67cb756e5929ee1b5af50527"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20734_9F53F96D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20734_9F53F96D.pnach",
+      "git_blob_sha": "be659cc3650571563a5a2428da24e47f6ca71184"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20735_F523DBC9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20735_F523DBC9.pnach",
+      "git_blob_sha": "4f13102aaada376b08af9c63ca5091ce21d1f57e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20736_744175F0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20736_744175F0.pnach",
+      "git_blob_sha": "971bc4e373714feba1183b7083743d4c87261448"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20737_F803C7BC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20737_F803C7BC.pnach",
+      "git_blob_sha": "d69e8fdd6de91dfb4e90c067ad5f8bedff552cf1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20738_901ECEFC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20738_901ECEFC.pnach",
+      "git_blob_sha": "9e38f574534a6838353b54444a92d48385e0e4fa"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20740_0B4B46AC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20740_0B4B46AC.pnach",
+      "git_blob_sha": "d514456df8f62d2301934280446ef28b668160c5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20746_FCEA8119.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20746_FCEA8119.pnach",
+      "git_blob_sha": "e005804bab0464e5c22ff41692be1c2032589361"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20751_6848699B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20751_6848699B.pnach",
+      "git_blob_sha": "63e0d2d9aaff32a6f86f645f191ca2567b16a520"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20753_F22C1E3B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20753_F22C1E3B.pnach",
+      "git_blob_sha": "d697f3addc6044b51dd6846b37303d2b203bfc50"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20755_09F914F1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20755_09F914F1.pnach",
+      "git_blob_sha": "4090fa4f776a0d1a4fc6d1f363a9670d6452400d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20764_FB55E35C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20764_FB55E35C.pnach",
+      "git_blob_sha": "361579ae7e9451a07485289da9a7234f81194441"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20769_39E7ECF4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20769_39E7ECF4.pnach",
+      "git_blob_sha": "d3666d994ffafd01d1df2f91e18a84efd74aa0b7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20779_1FB1F8E2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20779_1FB1F8E2.pnach",
+      "git_blob_sha": "5848ada09b86204b3ac63fb854d8902711ea138b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20780_85E994DD.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20780_85E994DD.pnach",
+      "git_blob_sha": "479bea22a7c1ec389fc2c28027033bd6c2b0e740"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20786_E8C504C8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20786_E8C504C8.pnach",
+      "git_blob_sha": "d865215219b9178984efb91c29b87345ee35a119"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20787_9B85B093.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20787_9B85B093.pnach",
+      "git_blob_sha": "3971fe82067182f931e57c453415da7c0edeffc1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20793_C5DAD771.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20793_C5DAD771.pnach",
+      "git_blob_sha": "c4ebcb0d85110ab45bbf6bf41f9a904ef711b228"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20796_0CEDE605.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20796_0CEDE605.pnach",
+      "git_blob_sha": "570a69493828550c2cf94c66752953b7f4e5c481"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20809_1025D50A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20809_1025D50A.pnach",
+      "git_blob_sha": "8db0f2913cfa642aef337d3ee9d068a164eaba74"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20812_96C20D6F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20812_96C20D6F.pnach",
+      "git_blob_sha": "913e6a517c18e3a30e7583661b5eb74b9860c5df"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20814_CD68E44A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20814_CD68E44A.pnach",
+      "git_blob_sha": "fbbbbc70688834427a4563ed4f088abe205a5a45"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20817_2F5EB1FF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20817_2F5EB1FF.pnach",
+      "git_blob_sha": "17c66df41e3d48ab4bb8e2bc4ed3b4b1ef47af59"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20820_DE1E4DEE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20820_DE1E4DEE.pnach",
+      "git_blob_sha": "379439c0a81555116283ab85370d27818de4bfd8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20821_59319476.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20821_59319476.pnach",
+      "git_blob_sha": "090df996c2abc54a1499627768ced5a76eb4a06a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20826_C71A6146.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20826_C71A6146.pnach",
+      "git_blob_sha": "b45680e24eba0dc78f4a961ea9d2cc24a3e2bf61"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20837_78764E9C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20837_78764E9C.pnach",
+      "git_blob_sha": "cd54c4d26abf2a126d00da2ecd00dd49ca9e536d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20843_F68268F1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20843_F68268F1.pnach",
+      "git_blob_sha": "7033bc04261f70d2f84cff3cab601d85e00ae6b3"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20846_B96EDBE5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20846_B96EDBE5.pnach",
+      "git_blob_sha": "092cb97575c6248236e99a45c47252c4ef512c42"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20847_448F4B67.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20847_448F4B67.pnach",
+      "git_blob_sha": "3b268bc0a1d0ab263733b7e4d7b5eb3466194b99"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20848_FD0936BF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20848_FD0936BF.pnach",
+      "git_blob_sha": "ecad3c071aa91c95149c118f9127f4f9612462ff"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20851_39B574F0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20851_39B574F0.pnach",
+      "git_blob_sha": "913b3c687464df2fda7cef57caee13abf95900b8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20852_B993C212.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20852_B993C212.pnach",
+      "git_blob_sha": "8122910d4a9a49fb5ee2c7dae3d1a5ea58066703"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20853_0BB7AE9B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20853_0BB7AE9B.pnach",
+      "git_blob_sha": "1256b936f443979554f815da133152ad49b020c1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20855_82162759.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20855_82162759.pnach",
+      "git_blob_sha": "e61a4e695546d55025e1099f8ae43d13763eeeea"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20865_BA1727D6.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20865_BA1727D6.pnach",
+      "git_blob_sha": "a33d99ab9fd6e0e2756c39ad6c41c2d4d60ed6cf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20866_7884CDB0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20866_7884CDB0.pnach",
+      "git_blob_sha": "ca0ddaf588a0ebb6c1f7d9e54988a0291a59de1f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20868_753A1E73.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20868_753A1E73.pnach",
+      "git_blob_sha": "b23c5868a5688b4acb8e561e15f73c6a319d90d4"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20869_759F05CB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20869_759F05CB.pnach",
+      "git_blob_sha": "e9e15ed9430ee1932158b8095c47a7a0d0e242c9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20873_3919136D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20873_3919136D.pnach",
+      "git_blob_sha": "20d0e4890de03b6c8066a8c30282a9140e6f9c29"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20874_E36751DA.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20874_E36751DA.pnach",
+      "git_blob_sha": "d98caad9cf7da7ade1a3f9c3a2d098f4fdd0bc11"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20875_9798D85A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20875_9798D85A.pnach",
+      "git_blob_sha": "57ecffa81a18798a3f644a4e4b12019e307fc1ca"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20882_3569E863.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20882_3569E863.pnach",
+      "git_blob_sha": "604c88cb4c886d668014e26ad3c7a7979f2eaf81"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20884_94C56923.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20884_94C56923.pnach",
+      "git_blob_sha": "34c0a970c7a665044c98a3bbbb7fea079ef77a63"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20890_166EC9E6.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20890_166EC9E6.pnach",
+      "git_blob_sha": "e808a1c10e6dee577a3656c08d0d5c24230d0520"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20895_521D40D2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20895_521D40D2.pnach",
+      "git_blob_sha": "b81ab05bd7a67c75eb5d5c25dc2fb8ee234669bf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20898_503BF9E1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20898_503BF9E1.pnach",
+      "git_blob_sha": "0e3582f842f85a4eccfbaecc81eb6a413ef5c49c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20899_51B675DE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20899_51B675DE.pnach",
+      "git_blob_sha": "c5a18f73a601ec9bf08a16b08ac5e86db415cb38"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20903_C3553F46.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20903_C3553F46.pnach",
+      "git_blob_sha": "b128b10b177c2aa6045db00d4ec13dac47491d55"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20907_155466E8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20907_155466E8.pnach",
+      "git_blob_sha": "59aec01ccf989fde8fbbec56c9ea5e6700835c83"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20910_5D0244D3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20910_5D0244D3.pnach",
+      "git_blob_sha": "a63b497900a03e869aa319ef6bedf3019c4a6834"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20912_8201A07C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20912_8201A07C.pnach",
+      "git_blob_sha": "e0dab1fc87f32237c42bcc788d4041616361c0b4"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20920_903C7BC5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20920_903C7BC5.pnach",
+      "git_blob_sha": "7c0815b9e3079789ab1c572f5c2ce7bd51988fa4"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20923_833DDCD5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20923_833DDCD5.pnach",
+      "git_blob_sha": "f2cdf2bed9e9c2158157ec3104f376351eaa79ac"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20927_E0D4421A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20927_E0D4421A.pnach",
+      "git_blob_sha": "25e1fcca69138080a6f54de5b47638b0219906b7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20928_2DE16D21.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20928_2DE16D21.pnach",
+      "git_blob_sha": "bf419619a7b7f1127d9585d34d90fd93c1d8562b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20929_97BBD2C1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20929_97BBD2C1.pnach",
+      "git_blob_sha": "69d30c57bb24ee3985032a3a23dffe70dbda7b46"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20930_56E9A705.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20930_56E9A705.pnach",
+      "git_blob_sha": "4473044c1819bce338225386c77f790fa8434f09"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20932_23510F99.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20932_23510F99.pnach",
+      "git_blob_sha": "df797e9e1eb974c308279eeabf70c57c45c1292f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20937_DAA49CDC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20937_DAA49CDC.pnach",
+      "git_blob_sha": "2af4b920a9a180b1b8e1a2cf57ec4f57d2b73335"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20938_BD3DBCF9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20938_BD3DBCF9.pnach",
+      "git_blob_sha": "1d6d7837fc469e15537ed84db5a69b17492ce1a5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20939_1B7DA82A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20939_1B7DA82A.pnach",
+      "git_blob_sha": "97093c0926bb357a42d61a008972f142a6724ae8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20940_63F6B523.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20940_63F6B523.pnach",
+      "git_blob_sha": "5b2b2f97c16eefc291bdb6674af1680de8d59133"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20944_024BF3B4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20944_024BF3B4.pnach",
+      "git_blob_sha": "8b275b414be7edc534605804e00376c6dc856d4d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20945_67A29886.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20945_67A29886.pnach",
+      "git_blob_sha": "82bd1386b1727f92861c80f07e6513d09dda0d77"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20947_A90B7E3F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20947_A90B7E3F.pnach",
+      "git_blob_sha": "afa53b8d53482c3c1e260d397e2a18918ca2542e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20948_D31904C2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20948_D31904C2.pnach",
+      "git_blob_sha": "e79b45ca8dd66c2acbdb5ea54130a55c86fa4abb"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20951_080D5356.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20951_080D5356.pnach",
+      "git_blob_sha": "da226d774e1a6ce0695b3d259f23f33c28c067f8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20952_55F99E5C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20952_55F99E5C.pnach",
+      "git_blob_sha": "c77532fd2f6412b91d3a074b62df57deeccbf34e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20953_076604F3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20953_076604F3.pnach",
+      "git_blob_sha": "ab49d78c1182e9a0dd13562ed51b7b2027fd331c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20954_E798B2D5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20954_E798B2D5.pnach",
+      "git_blob_sha": "3d61a47dd38720b8e2a82d7315fc8b40cda6d6c6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20956_A1736B07.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20956_A1736B07.pnach",
+      "git_blob_sha": "be74ab1a04db9eff884a83a11000cca511b7f230"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20961_08901101.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20961_08901101.pnach",
+      "git_blob_sha": "c2c96da4ceef342e2fd835bb75654ff02b68e220"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20964_0BED0AF9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20964_0BED0AF9.pnach",
+      "git_blob_sha": "f20317ac9b9e589db9053772e458d6bb06fa31f5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20969_A9A55B5E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20969_A9A55B5E.pnach",
+      "git_blob_sha": "47eef03691b9828f69964b2e1b63b88af6413602"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20970_B95C635E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20970_B95C635E.pnach",
+      "git_blob_sha": "46928b54a21d13aa589726755cd13de7275b3e56"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20975_B049DD5E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20975_B049DD5E.pnach",
+      "git_blob_sha": "a9ffb3f259f9ab8c7703630ea9f22410d7d0dece"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20980_EF9E43EF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20980_EF9E43EF.pnach",
+      "git_blob_sha": "50980ae393b69a76010762b86b41a1fbb5b04306"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20981_EE628509.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20981_EE628509.pnach",
+      "git_blob_sha": "2ea305eebe0702c995128ff764af29181475a413"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20982_8AD9D4B1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20982_8AD9D4B1.pnach",
+      "git_blob_sha": "c56578b06b4e84095c661aa2bfbf6cf87b4532b5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20983_675CEB8F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20983_675CEB8F.pnach",
+      "git_blob_sha": "bf607988e5049911b8d85df50b1f5fa47cf84219"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-20985_C54CC888.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-20985_C54CC888.pnach",
+      "git_blob_sha": "4e43fc15010f77216f86ce19b397f6e0c5d04631"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21004_4538436F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21004_4538436F.pnach",
+      "git_blob_sha": "7569c6da15f36b9ed43ce2bbaf81d4493afe3254"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21005_DA0535FD.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21005_DA0535FD.pnach",
+      "git_blob_sha": "bb3a34fafee2f03fcd5211bac464696573592a0a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21006_95CC86EF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21006_95CC86EF.pnach",
+      "git_blob_sha": "4a1143ec34088abf2180742cf337362d96abff20"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21010_98C7B76D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21010_98C7B76D.pnach",
+      "git_blob_sha": "a10f2d445fdf52be6b40e76e8d36551b169665bf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21011_F1F4D83F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21011_F1F4D83F.pnach",
+      "git_blob_sha": "49bf187ae0afe2bb7d4da89f5bd0f8e3376bc993"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21017_E90F7B89.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21017_E90F7B89.pnach",
+      "git_blob_sha": "1bbd5370e875c0cab158629a4b4bdb28399a3f0f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21018_35CB5180.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21018_35CB5180.pnach",
+      "git_blob_sha": "530078f82fa25c366b4d4ff6b6e7a41a71781054"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21020_83C9749E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21020_83C9749E.pnach",
+      "git_blob_sha": "f6ae62bff0515ac71205ceb23db7900f44f6850a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21026_AE1F3139.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21026_AE1F3139.pnach",
+      "git_blob_sha": "02d8bb19d9a98c0e6ca6d09af1675e48401c0f3e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21031_157ECF54.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21031_157ECF54.pnach",
+      "git_blob_sha": "2c898418c5025cc106089d046cc9a0e240c9a0d1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21032_1CF99B88.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21032_1CF99B88.pnach",
+      "git_blob_sha": "752f2f7bff45c097ba3704edab105d272ec31f73"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21033_16E3BE78.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21033_16E3BE78.pnach",
+      "git_blob_sha": "b5515a3bea3278ceeeac6cdecffc54bddadbc767"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21037_7849F069.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21037_7849F069.pnach",
+      "git_blob_sha": "5b656b09a69961a3aa57095e3b2967e41d3da3fc"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21043_DEEC725E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21043_DEEC725E.pnach",
+      "git_blob_sha": "f1ae041324a878e518a5358a10b2d1caeb5406c6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21047_ECFBAB36.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21047_ECFBAB36.pnach",
+      "git_blob_sha": "739234586750530e6ed0df51c02607e279ef1d98"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21048_9DE65987.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21048_9DE65987.pnach",
+      "git_blob_sha": "f7c84cfaf00f85b990c52b0448c168890a44996d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21049_6690A8BE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21049_6690A8BE.pnach",
+      "git_blob_sha": "824d0e9583de56147e3cff07cfbc8d8fc536afa5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21050_BEBF8793.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21050_BEBF8793.pnach",
+      "git_blob_sha": "3b70f4aa4edde86a44fe5abcd7d245b719c9110d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21057_5A1BB2A1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21057_5A1BB2A1.pnach",
+      "git_blob_sha": "13070f3e2bb74d3c6f9426d1333941ea3afb2f17"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21058_3DF2B0BE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21058_3DF2B0BE.pnach",
+      "git_blob_sha": "ca62b8daea2fc800181c26be68361eceb061dabf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21064_3BEBCCAC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21064_3BEBCCAC.pnach",
+      "git_blob_sha": "cb78ae50043660ea19463d77a231fc6caf8178f8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21068_3C8B93DF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21068_3C8B93DF.pnach",
+      "git_blob_sha": "e36ce0d52116de45d7991a5002b59cded8458ec3"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21069_16F94F28.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21069_16F94F28.pnach",
+      "git_blob_sha": "cf595a1ea99361af078c451b9f22bab4675c6121"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21072_0199EC27.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21072_0199EC27.pnach",
+      "git_blob_sha": "66e3648ab285d09e41bbae24b6097c90010a7483"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21077_A8C4C0A9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21077_A8C4C0A9.pnach",
+      "git_blob_sha": "5e9a0f60b4ad1a48da38666293d4270f6e06f7a0"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21078_4835F048.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21078_4835F048.pnach",
+      "git_blob_sha": "4512ee7f0497b76e03534c33c39831bc4b5561e2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21080_0442B1BD.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21080_0442B1BD.pnach",
+      "git_blob_sha": "494a16ebfdd05f2a2b793cf742af837cd66bbf39"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21086_6332499C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21086_6332499C.pnach",
+      "git_blob_sha": "d861ba60e5f026699c880022bd747cf5f11f7829"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21087_455DD546.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21087_455DD546.pnach",
+      "git_blob_sha": "50b2799b09d23cea5bde0376930ba8ca1ee7532d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21088_AD96FA2F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21088_AD96FA2F.pnach",
+      "git_blob_sha": "8c1a313a2ca7f4b512120003153829253ad955a8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21090_190DF20A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21090_190DF20A.pnach",
+      "git_blob_sha": "0243b44c052eb11d311e73c77d30e198bec2d146"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21091_FE0030D6.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21091_FE0030D6.pnach",
+      "git_blob_sha": "4d5ef40d3fa885dfea692ced4598ba0d9f620ab5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21093_A99BACE1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21093_A99BACE1.pnach",
+      "git_blob_sha": "e2c892905ffd7d5cf22d16d6cb6717c6c1ab0b68"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21097_383176C2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21097_383176C2.pnach",
+      "git_blob_sha": "b5017dd426c2d99dccf40de7c3c5e448a8044c8c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21098_D233C793.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21098_D233C793.pnach",
+      "git_blob_sha": "b1dee9fb6bc53a854e813e49b45fd9bd3f3e713a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21106_42A9C4EC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21106_42A9C4EC.pnach",
+      "git_blob_sha": "94d6682ff10f5e0fe4e440727a374d702018c8e7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21108_13E1AD6A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21108_13E1AD6A.pnach",
+      "git_blob_sha": "6c84bef42e9e129e48fa2d42ca73de4cddf61a85"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21110_632E3976.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21110_632E3976.pnach",
+      "git_blob_sha": "d3747026cc284520a65affcc4c74376f24abc889"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21111_41F4A178.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21111_41F4A178.pnach",
+      "git_blob_sha": "191cc0e51c8906559db96a35ecda4a382d285491"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21113_E3981DBB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21113_E3981DBB.pnach",
+      "git_blob_sha": "157d06632ac89f298c2f03c20c1eb709a18d185a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21116_FD2CF599.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21116_FD2CF599.pnach",
+      "git_blob_sha": "2892452e266365fd91284e9aeace8a5386e3dfdf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21119_FB539DD4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21119_FB539DD4.pnach",
+      "git_blob_sha": "675c149f1632092f4fbed9771bff077e1183241c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21124_FAF7FA20.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21124_FAF7FA20.pnach",
+      "git_blob_sha": "bae57a45eb6d615b3188b6e76caf2263e69432dd"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21125_C5CE56CD.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21125_C5CE56CD.pnach",
+      "git_blob_sha": "cc642fa7c7f17f1985c4ebea61c68ee2c9a99caa"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21128_5AD4E46F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21128_5AD4E46F.pnach",
+      "git_blob_sha": "09da5dd2159bfb9b5721ac6b281f09076bcfe4a3"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21132_0C5D220A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21132_0C5D220A.pnach",
+      "git_blob_sha": "1178a147bc8daaefa725f5e381fe9aff345118e5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21134_013E349D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21134_013E349D.pnach",
+      "git_blob_sha": "0ae21fd682442bda86d85dd1de501cb47f10d616"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21135_0544E001.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21135_0544E001.pnach",
+      "git_blob_sha": "9977126d50706ab8ab5e28fb6ca1fa3bd1b46ff8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21138_0E707DA4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21138_0E707DA4.pnach",
+      "git_blob_sha": "bf5de36de4cbf7ae10f1ebf6fe6a586e9fd4d367"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21140_3A0E75E5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21140_3A0E75E5.pnach",
+      "git_blob_sha": "add5d70b85062bb99f064d89a5389f54cb9e15d0"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21143_976EA156.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21143_976EA156.pnach",
+      "git_blob_sha": "1320028ea48450a50a36c15f56ac1026e6eb0e30"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21144_A80FBAAC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21144_A80FBAAC.pnach",
+      "git_blob_sha": "661c2ab2173cfbcc1084f0bee45a747de8dce693"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21150_C9F6EF9A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21150_C9F6EF9A.pnach",
+      "git_blob_sha": "bbd99f5ffb72b1c159f6db93774f1cd9ec677340"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21154_467BC7D8.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21154_467BC7D8.pnach",
+      "git_blob_sha": "536ccc40a33e4c8a823d84c4793165b0122bac62"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21155_9AC20A5B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21155_9AC20A5B.pnach",
+      "git_blob_sha": "e35b58c0fef25360c8aed1a9b2cd99f3763d69e9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21157_EADDB48E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21157_EADDB48E.pnach",
+      "git_blob_sha": "7ea7dad646af9de983f31556702b82cd4e8c7d81"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21163_DFC0888A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21163_DFC0888A.pnach",
+      "git_blob_sha": "80fa93e9af80b0d078a5d60aa9713fea94da64f2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21165_E69E7F58.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21165_E69E7F58.pnach",
+      "git_blob_sha": "9bf02d472f0c7fbc5175932929425a8c35c5adc6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21166_35AABF2E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21166_35AABF2E.pnach",
+      "git_blob_sha": "ddc2ec84e2fff895dfcb8513e151b4fe2ba5b2f5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21168_3A446111.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21168_3A446111.pnach",
+      "git_blob_sha": "3ea80eae77c97c7e57592b1760f0276a21b6474e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21170_121AFAF5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21170_121AFAF5.pnach",
+      "git_blob_sha": "a9f1af81440b9fc5020b344daf79651e92be1d7c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21172_005AA020.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21172_005AA020.pnach",
+      "git_blob_sha": "312c29e0466282ba6c27dc2d6705a00a031bd894"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21179_9285A8D6.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21179_9285A8D6.pnach",
+      "git_blob_sha": "46f4e153ad77c58a12f8ffb710f200a25022f52d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21186_B9BCD679.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21186_B9BCD679.pnach",
+      "git_blob_sha": "dc7908512c75ce69528119b47f79b4780ed9abed"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21187_9EE4D67B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21187_9EE4D67B.pnach",
+      "git_blob_sha": "07249de0638ce98aa0f9ca8ce8510e0f0fa6d14f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21193_E246AA30.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21193_E246AA30.pnach",
+      "git_blob_sha": "360190b5307bdf0d2ff18b2cdebc9d2b678a3457"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21195_A07F8571.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21195_A07F8571.pnach",
+      "git_blob_sha": "32401dc5875be45818dbd4c113be61b686beb6a9"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21199_BB70FFB9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21199_BB70FFB9.pnach",
+      "git_blob_sha": "0ac923460f20389b9cd930683b58443f6154944f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21200_72486978.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21200_72486978.pnach",
+      "git_blob_sha": "5d1cee32c3191485ce9a86c558fd6479a0bf1d83"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21201_43AB7214.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21201_43AB7214.pnach",
+      "git_blob_sha": "def4c09a4a9093df248e16c3a8ba1ed789fc3d67"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21204_DC2C7C01.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21204_DC2C7C01.pnach",
+      "git_blob_sha": "53191c7ee59e31aab7456975b01ac20c428cce86"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21208_21278F5B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21208_21278F5B.pnach",
+      "git_blob_sha": "987ef69163ea4b5c0a402e7cd9bace50ec0d7180"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21212_08277A9E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21212_08277A9E.pnach",
+      "git_blob_sha": "3591a8bb53ca7be86b6d1efa0cc928cd1f2d82ac"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21219_91ECC411.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21219_91ECC411.pnach",
+      "git_blob_sha": "6179f2ec5e7852e860462f0ea49cddc5ca0289a4"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21222_D8BBFFF3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21222_D8BBFFF3.pnach",
+      "git_blob_sha": "094033c5761d389a3ee4b09c487f40bdea7d8911"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21225_9CA89C19.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21225_9CA89C19.pnach",
+      "git_blob_sha": "4b0f7d31814d5718866a0d7d7e230240251993dc"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21227_7B0E28D0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21227_7B0E28D0.pnach",
+      "git_blob_sha": "f79c0e160953a310bde2109f4787a4d541ce4a8a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21228_E66C9699.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21228_E66C9699.pnach",
+      "git_blob_sha": "ffe7e910510c32573e9f82ece8f4538b7f325f5e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21237_A542271D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21237_A542271D.pnach",
+      "git_blob_sha": "784ecaa0e304199feaf9e423703bfbe26c5efee1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21238_FB236A46.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21238_FB236A46.pnach",
+      "git_blob_sha": "3287319fc0502ffab01b7c4950d2cf8e966f65ca"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21240_249540F3.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21240_249540F3.pnach",
+      "git_blob_sha": "e9cdb1b2b90b397132ab094113f5f3a6397695ec"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21244_2ADBA7BC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21244_2ADBA7BC.pnach",
+      "git_blob_sha": "97a32cd8bb8f31dcf306cbb1a592c73c239cc31d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21248_F4807B40.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21248_F4807B40.pnach",
+      "git_blob_sha": "2c9b1fa75c597136949f4bf2612d6f52465db8cf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21250_5D153990.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21250_5D153990.pnach",
+      "git_blob_sha": "17399ff6e46427e073c30b1b131fa80d365667ef"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21251_45DEB7AC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21251_45DEB7AC.pnach",
+      "git_blob_sha": "7b0a25c09c6613c96bdfd599440ee5b0f32a470c"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21253_CA8872BA.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21253_CA8872BA.pnach",
+      "git_blob_sha": "d41017393a5785309ed739d511f11ab3e4a68449"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21254_282CF16E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21254_282CF16E.pnach",
+      "git_blob_sha": "b743460548419c6cd87f0d304a9044da835fee8d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21256_E2C71FD9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21256_E2C71FD9.pnach",
+      "git_blob_sha": "26b5360209d6b3304f68419e2c675ab7a5fad69b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21260_B0AE2D8A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21260_B0AE2D8A.pnach",
+      "git_blob_sha": "2af9ca1d7c539aab05b2855d54f4b5b38c84fb34"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21268_F1C7201E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21268_F1C7201E.pnach",
+      "git_blob_sha": "606d284392671847703f5e68b114e5732cfe4108"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21270_9F18CBC5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21270_9F18CBC5.pnach",
+      "git_blob_sha": "8c09c8d79e328bcfe1195c69341f0672713691bf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21271_D720770D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21271_D720770D.pnach",
+      "git_blob_sha": "eed81c0138fe51385d366b861b0d9abeb3990d40"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21275_D926BF85.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21275_D926BF85.pnach",
+      "git_blob_sha": "6c3827c7ef11390c13cd02b73eeb38eebbaef5ef"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21277_EC8EF2DE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21277_EC8EF2DE.pnach",
+      "git_blob_sha": "0893f3fd93111c5a9093118ad666fbdb5d42ebd1"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21278_0F27ED9B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21278_0F27ED9B.pnach",
+      "git_blob_sha": "ca9c6876914520ec2cf6785f2e14fc9e6db26cf4"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21282_22DC8EAC.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21282_22DC8EAC.pnach",
+      "git_blob_sha": "a8a4165dd91049af318ce80b1f0d0b8c361f1191"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21284_28D09BF9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21284_28D09BF9.pnach",
+      "git_blob_sha": "632353f6914e3fab41876632a16a1af4d1c12278"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21285_FDD12792.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21285_FDD12792.pnach",
+      "git_blob_sha": "a15371ac349f654e8047f80cd677fddb52e2fe42"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21286_74EB4E40.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21286_74EB4E40.pnach",
+      "git_blob_sha": "70832d7e00e02b5964f74999860617305e82ebb2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21287_84F3309D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21287_84F3309D.pnach",
+      "git_blob_sha": "f39762ae8f59804e30323e65d89b8b7e4161d6b7"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21288_ADFDCCD7.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21288_ADFDCCD7.pnach",
+      "git_blob_sha": "264df524c443e1547eddf2853cd933428ebf7d20"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21299_A719D130.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21299_A719D130.pnach",
+      "git_blob_sha": "4cef62e0aa05e2b251e388585bafc58e19266207"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21303_5B048038.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21303_5B048038.pnach",
+      "git_blob_sha": "67926a1b49114e1051c6fcb3326dcb7bd822efb5"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21305_8EBA521C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21305_8EBA521C.pnach",
+      "git_blob_sha": "f1a56dc6ce780b1e8fab391deeedcc7910a17f71"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21307_EEC195CA.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21307_EEC195CA.pnach",
+      "git_blob_sha": "4fefe40ed3a537ab0d6a2eef63e930fb0284e144"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21310_D371F4DF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21310_D371F4DF.pnach",
+      "git_blob_sha": "62d4bf989e0ad14ff5a9317e7d687a42553bcd4b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21314_F73488D5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21314_F73488D5.pnach",
+      "git_blob_sha": "d9a6322fcf147487c9ad6e0345a3b11b372edc9d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21315_E24FC804.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21315_E24FC804.pnach",
+      "git_blob_sha": "21bb3dd8c23b46a3454a2f24e5b63fee68623bcf"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21317_72CE7A78.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21317_72CE7A78.pnach",
+      "git_blob_sha": "0e5e37f561696d4e7966e46f53e6d29fa62e010b"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21319_40893E32.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21319_40893E32.pnach",
+      "git_blob_sha": "a89b324eae9f8b335a96ccb583fdb3d00e49e783"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21323_E389B921.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21323_E389B921.pnach",
+      "git_blob_sha": "82638fa10d8388339c3f959a771f4a99dd0f8e07"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21326_C3D28EB9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21326_C3D28EB9.pnach",
+      "git_blob_sha": "32ba3e809c704871a020a2ae8dd840dea9c91398"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21327_9AC65D6A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21327_9AC65D6A.pnach",
+      "git_blob_sha": "787c0da19928aef4bd7982a0ed53b04fa2f66055"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21328_99BD2C0C.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21328_99BD2C0C.pnach",
+      "git_blob_sha": "7efb8d1141ad0c49ece6b33348f0fce529406ac6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21330_BDFB1507.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21330_BDFB1507.pnach",
+      "git_blob_sha": "c0347d093039148b1e34ecf4b5f2a74f9d0a0689"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21336_844EDE02.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21336_844EDE02.pnach",
+      "git_blob_sha": "61065e0ccb71cf25488f75acc2bce1a3a4faa9ce"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21338_1F34E107.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21338_1F34E107.pnach",
+      "git_blob_sha": "d31974d41517e38cd22f9db2210ad9645afaf523"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21341_4C7A8693.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21341_4C7A8693.pnach",
+      "git_blob_sha": "f259ff94472503c6d19145d826a98441b97c3e0d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21343_7A5B4F80.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21343_7A5B4F80.pnach",
+      "git_blob_sha": "0994bf904ad0509984911c4d1ca246d23d434a3e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21346_65729657.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21346_65729657.pnach",
+      "git_blob_sha": "40c87ed4186205b8a6b69ec4ddbd3f296d3a44e8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21350_B8F7EC73.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21350_B8F7EC73.pnach",
+      "git_blob_sha": "69cc6a489bd9d109a5c943d7d3869d225734c47d"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21351_0518D274.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21351_0518D274.pnach",
+      "git_blob_sha": "dff9e679c5187654c9ba9ccc23cf7009b1788114"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21353_88DD7C86.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21353_88DD7C86.pnach",
+      "git_blob_sha": "2b3218527707b3ce55bd68396844214a0854ecf8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21355_60A42FF5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21355_60A42FF5.pnach",
+      "git_blob_sha": "cf36c5a324da20b1d7717828a56a46f6813cbde6"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21356_0198F1AD.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21356_0198F1AD.pnach",
+      "git_blob_sha": "38618b746cdc0728791885642b4692f4d51e9798"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21358_7377BC6F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21358_7377BC6F.pnach",
+      "git_blob_sha": "65711b6ea7d519f93c4f63e2b64dc619cc0c7167"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21361_25FC361B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21361_25FC361B.pnach",
+      "git_blob_sha": "1ff33a5f99bfc357715bd12133e9ef9073cee7a3"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21363_13E18BC1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21363_13E18BC1.pnach",
+      "git_blob_sha": "913d98a70e89cc9b10f81b0e03765ea811f773d3"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21364_7C87580D.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21364_7C87580D.pnach",
+      "git_blob_sha": "0a746e41b3fd238fc85e4db4ad41993b3076c418"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21376_5C891FF1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21376_5C891FF1.pnach",
+      "git_blob_sha": "226bf22da597bbc658e959cce85a01472b6f84f2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21377_23EFA2AF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21377_23EFA2AF.pnach",
+      "git_blob_sha": "0a672827a2f903d8cc6a23a76f5b821847d663e8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21379_A326D973.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21379_A326D973.pnach",
+      "git_blob_sha": "48af76cd2e4e72f4a5e3048d4223a035b0a28893"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21384_CACC5766.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21384_CACC5766.pnach",
+      "git_blob_sha": "ae9e3480a6eb301f152e31f13cad2439897acd8f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21390_17493C04.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21390_17493C04.pnach",
+      "git_blob_sha": "7ecb83f509c92bd3d436890f0513994321688288"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21395_52AC9729.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21395_52AC9729.pnach",
+      "git_blob_sha": "89e5fa42e6c56fb6e5f5ad9da49aeada4d2ba2db"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21396_E91EAFEE.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21396_E91EAFEE.pnach",
+      "git_blob_sha": "24f882bab47847818a81493c6eac8b5e5115b84f"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21397_951555A0.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21397_951555A0.pnach",
+      "git_blob_sha": "9760c1629b38362dc695a631e6664c43c0c2d992"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21398_F0EA2271.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21398_F0EA2271.pnach",
+      "git_blob_sha": "a25cff474be6ccab57f95fc33a18d1df5a691e18"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21409_DBC0EE78.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21409_DBC0EE78.pnach",
+      "git_blob_sha": "0f69a7fb3cc79886985ca2d9861c17942ab02de2"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21410_104F08F4.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21410_104F08F4.pnach",
+      "git_blob_sha": "0b9cbd2a6869300aaa95a1f37ab85b9a228ad202"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21414_3115A446.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21414_3115A446.pnach",
+      "git_blob_sha": "914e76cb17b337d31eca043ef8b39d8751f2e0ba"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21416_2D7A8F3E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21416_2D7A8F3E.pnach",
+      "git_blob_sha": "436e939508d3c14e2db7f3167d9ab24ed9c20f28"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21420_07E37616.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21420_07E37616.pnach",
+      "git_blob_sha": "cfb21876f5c10757ca1bedc47f2f2b02bd9ce947"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21421_64B39069.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21421_64B39069.pnach",
+      "git_blob_sha": "5d7551ac971e2f576efd70f970a94d0ccd2db967"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21422_75A5436A.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21422_75A5436A.pnach",
+      "git_blob_sha": "3da87dec81d609c5d1d0c8039275697120dffd4e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21423_7EA439F5.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21423_7EA439F5.pnach",
+      "git_blob_sha": "27ecfcce140754bfaa1b3348238a99a3e491c65e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21427_9D5AC274.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21427_9D5AC274.pnach",
+      "git_blob_sha": "26b79da5e5ec21d6d8a4026b6ce3defcbb20626a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21428_EB6C8519.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21428_EB6C8519.pnach",
+      "git_blob_sha": "7924586baa1532a22950d1b9827f732dde0781a3"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21430_F23579D9.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21430_F23579D9.pnach",
+      "git_blob_sha": "4c242533ad33fee04fea2e009e703ab99e7d0f24"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21437_86B490D1.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21437_86B490D1.pnach",
+      "git_blob_sha": "0965814f9b46b6e435f31cb0265088e34e749c78"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21440_4E838541.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21440_4E838541.pnach",
+      "git_blob_sha": "50218fe9fbc19734bd2376169a9fc2778b5c5f48"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21441_FE961D28.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21441_FE961D28.pnach",
+      "git_blob_sha": "e8ba2baf1200a7e71c8a10ca47f993c19616db48"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21447_2A6C845B.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21447_2A6C845B.pnach",
+      "git_blob_sha": "02d6da7157ab98622fb8f7ea2fba06d234a8e0fb"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21455_BAFEFC57.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21455_BAFEFC57.pnach",
+      "git_blob_sha": "8bb5418ef3459c958b1ed815272d0da4ab78e1fd"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21469_CAF1432F.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21469_CAF1432F.pnach",
+      "git_blob_sha": "135591f8b5c077848b61c0d96ddf93f1019ce566"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21471_AE0148F7.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21471_AE0148F7.pnach",
+      "git_blob_sha": "fe583dafa1aef198b8b6a6c8d52c71854ae2f720"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21478_741E27AB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21478_741E27AB.pnach",
+      "git_blob_sha": "51b626112a0003ed0be9f6382338c831b1baf813"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21491_802ED9C2.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21491_802ED9C2.pnach",
+      "git_blob_sha": "cbef57e6dca17243f9c2970316588a554813374e"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21493_7841A89E.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21493_7841A89E.pnach",
+      "git_blob_sha": "46b79493f45bf8e5c72cd8ac6a39bdd030e48cff"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21494_52565480.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21494_52565480.pnach",
+      "git_blob_sha": "95ae0122db7ae2424ed1416807aa24d7fe67a2d8"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21498_98E28B05.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21498_98E28B05.pnach",
+      "git_blob_sha": "0b8303d5a1c648297e9a428a506c50fb734f4900"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21539_40181DDF.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21539_40181DDF.pnach",
+      "git_blob_sha": "cdd56fc699ef612b6834e0365b56874d2b6d2254"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21543_EFCFAEBB.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21543_EFCFAEBB.pnach",
+      "git_blob_sha": "36557432dd9fdee475c17d48b87c8d35f11ec73a"
+    },
+    {
+      "upstream_path": "files/root670-cheatdevice/SLUS-21576_53591072.pnach",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/files/root670-cheatdevice/SLUS-21576_53591072.pnach",
+      "git_blob_sha": "f4f5bafc474be5927c89acee409fd14e58fdbfac"
+    },
+    {
+      "upstream_path": "sources.json",
+      "archive_path": "archive/emucorex-cheatdevice-pnach/sources.json",
+      "git_blob_sha": "1303ea265d09b91cc12cf79c2dbbdea592b9b72d"
+    }
+  ]
+}

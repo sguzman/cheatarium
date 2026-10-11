@@ -1,0 +1,97 @@
+gametitle=Rygar-The Legendary Adventure (SLUS-20471)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9020799C,extended,0C089689
+
+[Max Points]
+patch=1,EE,204B1318,extended,0000270F
+
+[Max Life]
+patch=1,EE,204B12F0,extended,0000270F
+
+[Infinite Life]
+patch=1,EE,204B12F4,extended,0000270F
+
+[Max Icol]
+patch=1,EE,204B12F8,extended,0000270F
+
+[Infinite Icol]
+patch=1,EE,204B12FC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,204B1304,extended,000003E7
+
+[Max Defense]
+patch=1,EE,204B1308,extended,000003E7
+
+[Have Slide Ability ({R1}+{CROSS})]
+patch=1,EE,004B148A,extended,00000001
+
+[Have Charging Dash Ability ({R1}+{CIRCLE}/Square)]
+patch=1,EE,004B148E,extended,00000001
+
+[Super Jump]
+patch=1,EE,203F3118,extended,40000000
+
+[Ultra Jump]
+patch=1,EE,203F3118,extended,3F800000
+
+[Super Ultra Jump]
+patch=1,EE,203F3118,extended,3F400000
+
+[Hella Ultra Jump]
+patch=1,EE,203F3118,extended,3F000000
+
+[Tablet 1]
+patch=1,EE,104B1468,extended,00000125
+
+[Tablet 2]
+patch=1,EE,104B146A,extended,00000126
+
+[Tablet 3]
+patch=1,EE,104B146C,extended,00000127
+
+[Vellum Scroll 1]
+patch=1,EE,104B146E,extended,00000128
+
+[Vellum Scroll 2]
+patch=1,EE,104B1470,extended,00000129
+
+[Vellum Scroll 3]
+patch=1,EE,104B1472,extended,0000012A
+
+[Vellum Scroll 4]
+patch=1,EE,104B1474,extended,0000012B
+
+[Vellum Scroll 5]
+patch=1,EE,104B1476,extended,0000012C
+
+[Vellum Scroll 6]
+patch=1,EE,104B1478,extended,0000012D
+
+[Vellum Scroll 7]
+patch=1,EE,104B147A,extended,0000012E
+
+[Vellum Scroll 8]
+patch=1,EE,104B147C,extended,0000012F
+
+[Letter 1]
+patch=1,EE,104B147E,extended,00000130
+
+[Letter 2]
+patch=1,EE,104B1480,extended,00000131
+
+[Letter 3]
+patch=1,EE,104B1482,extended,00000132
+
+[Letter 4]
+patch=1,EE,104B1484,extended,00000133
+
+[Ancient Tablet 1]
+patch=1,EE,104B1486,extended,00000134
+
+[Ancient Tablet 2]
+patch=1,EE,104B1488,extended,00000135

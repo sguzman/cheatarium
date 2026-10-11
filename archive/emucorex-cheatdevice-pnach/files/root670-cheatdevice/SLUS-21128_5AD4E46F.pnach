@@ -1,0 +1,662 @@
+gametitle=Blitz-The League (SLUS-21128)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90140AB0,extended,0C045892
+patch=1,EE,2033B5E4,extended,24020001
+patch=1,EE,200C0230,extended,03E00008
+patch=1,EE,200C0234,extended,00000000
+patch=1,EE,202620B0,extended,08030088
+
+[Home Team Scores 255]
+patch=1,EE,200C0220,extended,240100FF
+patch=1,EE,200C0224,extended,A081000C
+
+[Home Team Scores 150]
+patch=1,EE,200C0220,extended,24010096
+patch=1,EE,200C0224,extended,A081000C
+
+[Home Team Scores 0]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,A081000C
+
+[Away Team Scores 255]
+patch=1,EE,200C0228,extended,240100FF
+patch=1,EE,200C022C,extended,A081000D
+
+[Away Team Scores 150]
+patch=1,EE,200C0228,extended,24010096
+patch=1,EE,200C022C,extended,A081000D
+
+[Away Team Scores 0]
+patch=1,EE,200C0228,extended,24010000
+patch=1,EE,200C022C,extended,A081000D
+
+[P1 Press {L1}+Up For 1st Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FBEF,extended,0070EAC2
+patch=1,EE,20208E5C,extended,24020001
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[P1 Press {L1}+Right For 2nd Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FBDF,extended,0070EAC2
+patch=1,EE,20208E5C,extended,24020002
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[P1 Press {L1}+Down For 3rd Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FBBF,extended,0070EAC2
+patch=1,EE,20208E5C,extended,24020003
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[P1 Press {L1}+Left For 4th Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FB7F,extended,0070EAC2
+patch=1,EE,20208E5C,extended,24020004
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[P2 Press {L1}+Up For 1st Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FBEF,extended,0070EBC2
+patch=1,EE,20208E5C,extended,24020001
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[P2 Press {L1}+Right For 2nd Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FBDF,extended,0070EBC2
+patch=1,EE,20208E5C,extended,24020002
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[P2 Press {L1}+Down For 3rd Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FBBF,extended,0070EBC2
+patch=1,EE,20208E5C,extended,24020003
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[P2 Press {L1}+Left For 4th Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,E002FB7F,extended,0070EBC2
+patch=1,EE,20208E5C,extended,24020004
+patch=1,EE,20208E64,extended,AC41001B
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,20208E5C,extended,9041001B
+patch=1,EE,20208E64,extended,00000000
+
+[Always 1st Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,20208E5C,extended,24020001
+patch=1,EE,20208E64,extended,AC41001B
+
+[Always 4th Down]
+patch=1,EE,20208E58,extended,8C41001B
+patch=1,EE,20208E5C,extended,24020001
+patch=1,EE,20208E64,extended,AC41001B
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,E002FBFE,extended,0070EAC2
+patch=1,EE,2025DCB0,extended,00000000
+patch=1,EE,2025DCC8,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Restart Timer]
+patch=1,EE,E002FEFE,extended,0070EAC2
+patch=1,EE,2025DCB0,extended,A622001E
+patch=1,EE,2025DCC8,extended,A622001E
+
+[P2 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,E002FBFE,extended,0070EBC2
+patch=1,EE,2025DCB0,extended,00000000
+patch=1,EE,2025DCC8,extended,00000000
+
+[P2 Press {L1}+{SELECT} To Restart Timer]
+patch=1,EE,E002FEFE,extended,0070EBC2
+patch=1,EE,2025DCB0,extended,A622001E
+patch=1,EE,2025DCC8,extended,A622001E
+
+[P1 Press {R1}+Up For 1st Quarter]
+patch=1,EE,E002F7EF,extended,0070EAC2
+patch=1,EE,2020825C,extended,24030001
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P1 Press {R1}+Right For 2nd Quarter]
+patch=1,EE,E002F7DF,extended,0070EAC2
+patch=1,EE,2020825C,extended,24030002
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P1 Press {R1}+Down For 3rd Quarter]
+patch=1,EE,E002F7BF,extended,0070EAC2
+patch=1,EE,2020825C,extended,24030003
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P1 Press {R1}+Left For 4th Quarter]
+patch=1,EE,E002F77F,extended,0070EAC2
+patch=1,EE,2020825C,extended,24030004
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EAC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P2 Press {R1}+Up For 1st Quarter]
+patch=1,EE,E002F7EF,extended,0070EBC2
+patch=1,EE,2020825C,extended,24030001
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P2 Press {R1}+Right For 2nd Quarter]
+patch=1,EE,E002F7DF,extended,0070EBC2
+patch=1,EE,2020825C,extended,24030002
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P2 Press {R1}+Down For 3rd Quarter]
+patch=1,EE,E002F7BF,extended,0070EBC2
+patch=1,EE,2020825C,extended,24030003
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P2 Press {R1}+Left For 4th Quarter]
+patch=1,EE,E002F77F,extended,0070EBC2
+patch=1,EE,2020825C,extended,24030004
+patch=1,EE,20208260,extended,A043001A
+patch=1,EE,E002FFFF,extended,0070EBC2
+patch=1,EE,2020825C,extended,00000000
+patch=1,EE,20208260,extended,9043001A
+
+[P1 Press {R1}+{SELECT} To Restart Play Choose Timer]
+patch=1,EE,E001F7FE,extended,0070EAC2
+patch=1,EE,202707CC,extended,00000000
+
+[P1 Press {R1}+{SELECT} To Stop Play Choose Timer]
+patch=1,EE,E001FDFE,extended,0070EAC2
+patch=1,EE,202707CC,extended,AE0200E0
+
+[P2 Press {R1}+{SELECT} To Restart Play Choose Timer]
+patch=1,EE,E001F7FE,extended,0070EBC2
+patch=1,EE,202707CC,extended,00000000
+
+[P2 Press {R1}+{SELECT} To Stop Play Choose Timer]
+patch=1,EE,E001FDFE,extended,0070EBC2
+patch=1,EE,202707CC,extended,AE0200E0
+
+[Infinite Time To Choose Your Play]
+patch=1,EE,202707CC,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,11CC3D94,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,21CC3D94,extended,05F5E0FF
+
+[All Teams]
+patch=1,EE,203A8E78,extended,00000000
+
+[Arizona Outlaws ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020001
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Baltimore Bearcats ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020002
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Carolina Copperheads ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020003
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Cincinnati Crusaders ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020004
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Chicago Marauders ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020005
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Dallas Aztecs ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020006
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Detroit Devils ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020007
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Denver Grizzlies ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020008
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Kansas City Crossfire ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020009
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Vegas Aces ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,2402000A
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Minnesota Reapers ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,2402000B
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[New York Nightmare ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,2402000C
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[New England Regulars ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,2402000D
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Orlando Hammerheads ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,2402000E
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[San Diego Cyclones ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,2402000F
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Seattle Reign ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020010
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Washington Redhawks ONLY]
+patch=1,EE,200C0240,extended,8E610018
+patch=1,EE,200C0244,extended,24020011
+patch=1,EE,200C0248,extended,50220001
+patch=1,EE,200C024C,extended,44800000
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,C6610604
+patch=1,EE,203A8E68,extended,0C030090
+
+[Buttafingaz]
+patch=1,EE,71AD4BF8,extended,00000001
+
+[Windbreakers]
+patch=1,EE,71AD4BF8,extended,00000002
+
+[No Injuries]
+patch=1,EE,71AD4BF8,extended,00000004
+
+[Deuces Wild]
+patch=1,EE,71AD4BF8,extended,00000008
+
+[David Vs. Goliath]
+patch=1,EE,71AD4BF8,extended,00000020
+
+[Lucky 7's]
+patch=1,EE,71AD4BF8,extended,00000040
+
+[Bonecrushers]
+patch=1,EE,71AD4BF8,extended,00000080
+
+[Pain]
+patch=1,EE,71AD4BF9,extended,00000001
+
+[Domination]
+patch=1,EE,71AD4BF9,extended,00000002
+
+[Big Head]
+patch=1,EE,71AD4BF9,extended,00000004
+
+[All Or Nothing]
+patch=1,EE,71AD4BF9,extended,00000008
+
+[All Playmodes]
+patch=1,EE,71AD4BF8,extended,00100FEF
+
+[Cyberball Arcade Game]
+patch=1,EE,71AD4BF8,extended,00000010
+
+[Captain Movie Redhawks]
+patch=1,EE,71AD4BF9,extended,00000010
+
+[Captain Movie Outlaws]
+patch=1,EE,71AD4BF9,extended,00000020
+
+[Captain Movie Crusaders]
+patch=1,EE,71AD4BF9,extended,00000040
+
+[Captain Movie Marauders]
+patch=1,EE,71AD4BF9,extended,00000080
+
+[Captain Movie Bearcats]
+patch=1,EE,71AD4BFA,extended,00000001
+
+[Captain Movie Aces]
+patch=1,EE,71AD4BFA,extended,00000002
+
+[Captain Movie Reapers]
+patch=1,EE,71AD4BFA,extended,00000004
+
+[Captain Movie Copperheads]
+patch=1,EE,71AD4BFA,extended,00000008
+
+[Captain Movie Crossfire]
+patch=1,EE,71AD4BFA,extended,00000010
+
+[Captain Movie Cyclones]
+patch=1,EE,71AD4BFA,extended,00000020
+
+[Captain Movie Nightmare]
+patch=1,EE,71AD4BFA,extended,00000040
+
+[Captain Movie Regulars]
+patch=1,EE,71AD4BFA,extended,00000080
+
+[Captain Movie Reign]
+patch=1,EE,71AD4BFB,extended,00000001
+
+[Captain Movie Aztecs]
+patch=1,EE,71AD4BFB,extended,00000002
+
+[Captain Movie Devils]
+patch=1,EE,71AD4BFB,extended,00000004
+
+[Motion Capture Sessions]
+patch=1,EE,71AD4BFB,extended,00000008
+
+[Dev Team Pictures]
+patch=1,EE,71AD4BFB,extended,00000010
+
+[L.T. Behind The Mic]
+patch=1,EE,71AD4BFB,extended,00000020
+
+[FHM Photo Shoot]
+patch=1,EE,71AD4BFB,extended,00000040
+
+[Marketing Trailer]
+patch=1,EE,71AD4BFC,extended,00000008
+
+[E3 Trailer]
+patch=1,EE,71AD4BFC,extended,00000010
+
+[Trailer Animatic]
+patch=1,EE,71AD4C02,extended,00000080
+
+[All Media]
+patch=1,EE,71AD4BF8,extended,0010F010
+patch=1,EE,71AD4BFA,extended,00107FFF
+patch=1,EE,71AD4BFC,extended,00000018
+patch=1,EE,71AD4C02,extended,00000080
+
+[Cheerleader Concepts]
+patch=1,EE,71AD4BFB,extended,00000080
+
+[Concept Moodboards]
+patch=1,EE,71AD4BFC,extended,00000001
+
+[Character Concepts]
+patch=1,EE,71AD4BFC,extended,00000002
+
+[Environment Concepts]
+patch=1,EE,71AD4BFC,extended,00000004
+
+[All Concepts]
+patch=1,EE,71AD4BFB,extended,00000080
+patch=1,EE,71AD4BFC,extended,00000007
+
+[Amy]
+patch=1,EE,71AD4BFC,extended,00000080
+
+[Abigail]
+patch=1,EE,71AD4BFD,extended,00000001
+
+[Page]
+patch=1,EE,71AD4BFD,extended,00000002
+
+[Racquel]
+patch=1,EE,71AD4BFD,extended,00000004
+
+[Mellanie]
+patch=1,EE,71AD4BFD,extended,00000008
+
+[Caroline]
+patch=1,EE,71AD4BFD,extended,00000010
+
+[Diana]
+patch=1,EE,71AD4BFD,extended,00000020
+
+[Tatiana]
+patch=1,EE,71AD4BFD,extended,00000040
+
+[All Cheerleaders]
+patch=1,EE,71AD4BFC,extended,00107F80
+
+[Costume 1]
+patch=1,EE,71AD4BFD,extended,00000080
+
+[Costume 3]
+patch=1,EE,71AD4BFE,extended,00000001
+
+[Costume 3]
+patch=1,EE,71AD4BFE,extended,00000002
+
+[All Bonus Cheerleader Costumes]
+patch=1,EE,71AD4BFD,extended,00000080
+patch=1,EE,71AD4BFE,extended,00000003
+
+[Janine]
+patch=1,EE,71AD4BFE,extended,00000004
+
+[Shannon]
+patch=1,EE,71AD4BFE,extended,00000008
+
+[Raven]
+patch=1,EE,71AD4BFE,extended,00000010
+
+[Amy]
+patch=1,EE,71AD4BFE,extended,00000020
+
+[Abigail]
+patch=1,EE,71AD4BFE,extended,00000040
+
+[Page]
+patch=1,EE,71AD4BFE,extended,00000080
+
+[Racquel]
+patch=1,EE,71AD4BFF,extended,00000001
+
+[Mellanie]
+patch=1,EE,71AD4BFF,extended,00000002
+
+[Caroline]
+patch=1,EE,71AD4BFF,extended,00000004
+
+[Diana]
+patch=1,EE,71AD4BFF,extended,00000008
+
+[Tatiana]
+patch=1,EE,71AD4BFF,extended,00000010
+
+[All Cheerleader Pictorials]
+patch=1,EE,71AD4BFE,extended,00101FFC
+
+[Buttafingaz]
+patch=1,EE,71AD4BF8,extended,00000001
+
+[Windbreakers]
+patch=1,EE,71AD4BF8,extended,00000002
+
+[No Injuries]
+patch=1,EE,71AD4BF8,extended,00000004
+
+[Deuces Wild]
+patch=1,EE,71AD4BF8,extended,00000008
+
+[David Vs. Goliath]
+patch=1,EE,71AD4BF8,extended,00000020
+
+[Lucky 7's]
+patch=1,EE,71AD4BF8,extended,00000040
+
+[Bonecrushers]
+patch=1,EE,71AD4BF8,extended,00000080
+
+[Pain]
+patch=1,EE,71AD4BF9,extended,00000001
+
+[Domination]
+patch=1,EE,71AD4BF9,extended,00000002
+
+[Big Head]
+patch=1,EE,71AD4BF9,extended,00000004
+
+[All Or Nothing]
+patch=1,EE,71AD4BF9,extended,00000008
+
+[Super Clash Code]
+patch=1,EE,71AD4C03,extended,00000001
+
+[Super Unleash Clash Code]
+patch=1,EE,71AD4C03,extended,00000002
+
+[Double Unleash Icons Code]
+patch=1,EE,71AD4C03,extended,00000004
+
+[Stamina OFF Code]
+patch=1,EE,71AD4C03,extended,00000008
+
+[Ball Trail Always On]
+patch=1,EE,71AD4C03,extended,00000020
+
+[Beach Ball Code]
+patch=1,EE,71AD4C03,extended,00000040
+
+[Two-Player Co-Op]
+patch=1,EE,71AD4C04,extended,00000001
+
+[All Cheats]
+patch=1,EE,71AD4BF8,extended,00100FEF
+patch=1,EE,71AD4C03,extended,0000006F
+patch=1,EE,71AD4C04,extended,00000001
+
+[Super Clash Code (Team 1)]
+patch=1,EE,1025877E,extended,00001660
+
+[Super Clash Code (Team 2)]
+patch=1,EE,1025877E,extended,00001260
+
+[Super Clash Code (Both Teams)]
+patch=1,EE,1025877E,extended,00001000
+
+[Super Unleash Clash (Team 1)]
+patch=1,EE,102587C2,extended,00001660
+
+[Super Unleash Clash (Team 2)]
+patch=1,EE,102587C2,extended,00001260
+
+[Super Unleash Clash (Both Teams)]
+patch=1,EE,102587C2,extended,00001000

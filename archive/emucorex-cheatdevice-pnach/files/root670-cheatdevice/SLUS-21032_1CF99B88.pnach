@@ -1,0 +1,106 @@
+gametitle=Marc Ecko's Getting Up-Contents Under Pressure (SLUS-21032)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90120724,extended,0C0417C4
+
+[Infinite Health]
+patch=1,EE,E002282D,extended,009498E8
+patch=1,EE,209498FC,extended,C6620138
+patch=1,EE,20949910,extended,E6620134
+
+[Max Health]
+patch=1,EE,E002282D,extended,009498E8
+patch=1,EE,20949914,extended,3C014596
+patch=1,EE,20949920,extended,AE610138
+
+[Infinite Stamina]
+patch=1,EE,200C0280,extended,8C410A80
+patch=1,EE,200C0284,extended,03E00008
+patch=1,EE,200C0288,extended,AC410A7C
+patch=1,EE,207EFCE8,extended,080300A0
+
+[Max Stamina]
+patch=1,EE,200C0290,extended,3C014596
+patch=1,EE,200C0294,extended,03E00008
+patch=1,EE,200C0298,extended,AC410A80
+patch=1,EE,207EFCF8,extended,080300A4
+
+[View Unlock List For Max Total Reputation]
+patch=1,EE,E0051021,extended,0092CA38
+patch=1,EE,200C0200,extended,2403270F
+patch=1,EE,200C0204,extended,A4430938
+patch=1,EE,200C0208,extended,0824B290
+patch=1,EE,200C020C,extended,24C60001
+patch=1,EE,2092CA3C,extended,08030080
+
+[View Ipod Songs To Unlock All]
+patch=1,EE,E0021821,extended,0024ABDC
+patch=1,EE,2024ABE0,extended,A0600724
+patch=1,EE,2024ABE4,extended,00000000
+
+[View Mission Select To Unlock All Levels]
+patch=1,EE,E0021021,extended,0092C404
+patch=1,EE,2092C408,extended,A0400934
+patch=1,EE,2092C410,extended,00000000
+
+[View Movies To Unlock All Movies]
+patch=1,EE,E002182D,extended,0092CEE4
+patch=1,EE,2092CEE8,extended,A0600934
+patch=1,EE,2092CEF0,extended,00000000
+
+[View Graffiti Legends To Unlock All]
+patch=1,EE,E002182D,extended,0092CF64
+patch=1,EE,2092CF6C,extended,A0400564
+patch=1,EE,1092CF72,extended,00001000
+
+[Activation Code (Must Be On)]
+patch=1,EE,200C0220,extended,8F83A6F8
+patch=1,EE,200C0224,extended,54600001
+patch=1,EE,200C0228,extended,8C630000
+patch=1,EE,200C022C,extended,10600012
+patch=1,EE,200C0230,extended,24010001
+patch=1,EE,200C0278,extended,03E00008
+patch=1,EE,200C027C,extended,00000000
+patch=1,EE,2012075C,extended,08030088
+
+[Unlock All Movies]
+patch=1,EE,200C0234,extended,A06102D2
+
+[Unlock All Concept Art]
+patch=1,EE,200C0238,extended,A06102D3
+
+[Unlock All Versus Arenas]
+patch=1,EE,200C023C,extended,A06102D4
+
+[Unlock All Versus Characters]
+patch=1,EE,200C0240,extended,A06102D5
+
+[Unlock All Black Book]
+patch=1,EE,200C0244,extended,A06102D6
+
+[Unlock All Combat Upgrades]
+patch=1,EE,200C0248,extended,A06102D7
+
+[Unlock All Levels]
+patch=1,EE,200C024C,extended,A06102D8
+
+[Unlock All Legends]
+patch=1,EE,200C0250,extended,A06102D9
+
+[Unlock All Ipod Songs]
+patch=1,EE,200C0254,extended,A06102DA
+
+[Max Health]
+patch=1,EE,200C0258,extended,A06102DB
+
+[Max Skills]
+patch=1,EE,200C025C,extended,A06102DC
+
+[Infinite Health]
+patch=1,EE,200C0260,extended,A06102DD
+
+[Infinite Skills]
+patch=1,EE,200C0264,extended,A06102DE

@@ -1,0 +1,61 @@
+gametitle=Avatar-The Last Airbender (SLUS-21395)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90119240,extended,00832021
+
+[Infinite Health]
+patch=1,EE,201746A4,extended,94430092
+patch=1,EE,201746A8,extended,A4430090
+
+[1-Hit Kills]
+patch=1,EE,20194C84,extended,00000000
+
+[Max Health]
+patch=1,EE,201DB754,extended,2402270F
+patch=1,EE,201DB758,extended,A4820092
+
+[Max Chi]
+patch=1,EE,201DB7B8,extended,2402270F
+patch=1,EE,201DB7BC,extended,A4820096
+
+[Infinite Chi]
+patch=1,EE,201DB7C4,extended,94820096
+patch=1,EE,201DB7CC,extended,A4820094
+
+[Max Armor]
+patch=1,EE,201E08CC,extended,2402270F
+patch=1,EE,201E08D4,extended,A6620098
+
+[Max Life]
+patch=1,EE,201E0974,extended,24070064
+patch=1,EE,201E0980,extended,A26700DD
+
+[Max Focus]
+patch=1,EE,201E09D0,extended,24070064
+patch=1,EE,201E09D8,extended,A26700DE
+
+[Max Agility]
+patch=1,EE,201E0A34,extended,24070064
+patch=1,EE,201E0A3C,extended,A26700DC
+
+[Max Strength]
+patch=1,EE,201E0A9C,extended,24040064
+patch=1,EE,201E0AA0,extended,A26400DB
+
+[Unlock All Treasure Maps]
+patch=1,EE,201FB470,extended,24020001
+patch=1,EE,201FB478,extended,A2A20084
+
+[Max Copper]
+patch=1,EE,2020BAD8,extended,2402270F
+patch=1,EE,2020BADC,extended,AC820308
+
+[Unlock All Unlockables]
+patch=1,EE,204F59F8,extended,01010101
+patch=1,EE,204F59FC,extended,01010101
+patch=1,EE,104F5A00,extended,00000101
+patch=1,EE,004D59C9,extended,00000001
+patch=1,EE,104D59CA,extended,00000101

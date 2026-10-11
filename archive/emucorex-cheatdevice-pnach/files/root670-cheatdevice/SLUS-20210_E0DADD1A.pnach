@@ -1,0 +1,23 @@
+gametitle=18 Wheeler-American Pro Trucker (SLUS-20210)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901EE10C,extended,0C07FBF0
+
+[Infinite Money]
+patch=1,EE,1030379C,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2030379C,extended,0098967F
+
+[Infinite Time]
+patch=1,EE,203037A4,extended,00001740
+
+[Press {R1}+{CROSS} For Hella Speed]
+patch=1,EE,D05F8D02,extended,0000B7FF
+patch=1,EE,20754588,extended,42C80000
+
+[Max Value]
+patch=1,EE,203037C0,extended,0001869F

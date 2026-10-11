@@ -1,0 +1,51 @@
+gametitle=Army Men-Air Attack 2 (SLUS-20004)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9014470C,extended,0C05BE5B
+
+[Have All Levels]
+patch=1,EE,202E0D20,extended,00000014
+patch=1,EE,202E0E58,extended,00000014
+
+[Have All Co-Pilots]
+patch=1,EE,202E0D0C,extended,0000001F
+patch=1,EE,202E0E44,extended,0000001F
+
+[Access All Helicopters]
+patch=1,EE,2014FD54,extended,2410000F
+
+[Bee Mode]
+patch=1,EE,10A86DB4,extended,00000003
+
+[Infinite Health]
+patch=1,EE,D0A51AAE,extended,000000A1
+patch=1,EE,20A51A8C,extended,000F5000
+
+[Infinite Ammo (Helicopter)]
+patch=1,EE,D0A46442,extended,000000A1
+patch=1,EE,00A4642A,extended,00000063
+
+[Infinite Ammo (Co-Pilot)]
+patch=1,EE,D0A46522,extended,000000A1
+patch=1,EE,00A4650A,extended,00000063
+
+[Infinite Health P1]
+patch=1,EE,20A50E4C,extended,000F5000
+
+[Infinite Health P2]
+patch=1,EE,20A512CC,extended,000F5000
+
+[Infinite Ammo P1 (Helicopter)]
+patch=1,EE,00A457EA,extended,00000063
+
+[Infinite Ammo P2 (Helicopter)]
+patch=1,EE,00A45B6A,extended,00000063
+
+[Infinite Ammo P1 (Co-Pilot)]
+patch=1,EE,00A458CA,extended,00000063
+
+[Infinite Ammo P2 (Co-Pilot)]
+patch=1,EE,00A45C4A,extended,00000063

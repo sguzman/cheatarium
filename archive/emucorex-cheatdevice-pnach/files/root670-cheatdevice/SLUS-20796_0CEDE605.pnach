@@ -1,0 +1,153 @@
+gametitle=Monster 4x4-Masters Of Metal (SLUS-20796)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00118127
+
+[Disable FMV]
+patch=1,EE,2010AF10,extended,24020001
+
+[Number Of Opponents = 9]
+patch=1,EE,20395BCC,extended,00000009
+
+[Number Of Opponents = 5]
+patch=1,EE,20395BCC,extended,00000005
+
+[Number Of Opponents = 1]
+patch=1,EE,20395BCC,extended,00000001
+
+[Access All Trucks/Tracks]
+patch=1,EE,0039DAD9,extended,00000001
+
+[Infinite Time (Exchibition Mode)]
+patch=1,EE,D03D1D30,extended,0000D148
+patch=1,EE,203D1D48,extended,00000000
+
+[Always Low Lap Time (Stadium Mode)]
+patch=1,EE,D03EE2E0,extended,00006506
+patch=1,EE,203EE2FC,extended,AE800550
+
+[Unlock All Trucks]
+patch=1,EE,4039DA74,extended,00050001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1039DA88,extended,00000101
+patch=1,EE,0039DA8A,extended,00000001
+
+[Have All Offroad Stars]
+patch=1,EE,4039D2AC,extended,000D0001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1039D2E0,extended,00000101
+
+[Always Low Lap Time]
+patch=1,EE,D03E1BB0,extended,00006506
+patch=1,EE,203E1BCC,extended,AE80056C
+
+[Cross 1 Checkpoint To Win]
+patch=1,EE,D03F00C4,extended,00001021
+patch=1,EE,203F00EC,extended,00000000
+
+[Infinite Powerups]
+patch=1,EE,203D65A0,extended,00000000
+
+[Infinite Powerup Usage]
+patch=1,EE,203D6774,extended,3C013F80
+patch=1,EE,203D6778,extended,44810000
+
+[Gold $$ Worth 9999]
+patch=1,EE,D03DB5E0,extended,00001140
+patch=1,EE,103DB5F0,extended,0000270F
+
+[Gold $$ Worth 999]
+patch=1,EE,D03DB5E0,extended,00001140
+patch=1,EE,103DB5F0,extended,000003E7
+
+[Get 1 Gold $$ For Max Money]
+patch=1,EE,203DB5DC,extended,3C030001
+patch=1,EE,203DB5F0,extended,3462869F
+
+[Green $$ Worth 9999]
+patch=1,EE,D03DB668,extended,00001140
+patch=1,EE,103DB678,extended,0000270F
+
+[Green $$ Worth 999]
+patch=1,EE,D03DB668,extended,00001140
+patch=1,EE,103DB678,extended,000003E7
+
+[Get 1 Green $$ For Max Money]
+patch=1,EE,203DB664,extended,3C030001
+patch=1,EE,203DB678,extended,3462869F
+
+[Infinite Cash]
+patch=1,EE,1039D1D0,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,2039D1D0,extended,05F5E0FF
+
+[Buying Trucks Doesnt Decrease Cash]
+patch=1,EE,2019CC04,extended,00000000
+
+[Buying Trucks Increases Cash]
+patch=1,EE,2019CC00,extended,00641821
+
+[Buying Tracks Doesnt Decrease Cash]
+patch=1,EE,2019E748,extended,00000000
+
+[Buying Tracks Increases Cash]
+patch=1,EE,2019E744,extended,00A31021
+
+[P1 Press {L1}+{SELECT} For More Tanks To Assign]
+patch=1,EE,D02C19C2,extended,0000FBFE
+patch=1,EE,20394970,extended,0000000C
+
+[P1 Press {L2}+{SELECT} For No Tanks To Assign]
+patch=1,EE,D02C19C2,extended,0000FEFE
+patch=1,EE,20394970,extended,00000000
+
+[All Trucks Cost $0]
+patch=1,EE,4039D31C,extended,00170015
+patch=1,EE,00000000,extended,00000000
+
+[Unlock All Offroad Tracks]
+patch=1,EE,2039D28C,extended,01010101
+patch=1,EE,2039D290,extended,01010101
+patch=1,EE,0039D294,extended,00000001
+
+[Unlock All Stadium Tracks]
+patch=1,EE,1039D296,extended,00000101
+patch=1,EE,2039D298,extended,01010101
+patch=1,EE,2039D29C,extended,01010101
+
+[Unlock All Exhibition Tracks]
+patch=1,EE,2039D2A0,extended,01010101
+patch=1,EE,2039D2A4,extended,01010101
+patch=1,EE,0039D2A8,extended,00000001
+
+[Unlock All Offroad/Stadium/Exhibition Tracks]
+patch=1,EE,4039D28C,extended,00070001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0039D2A8,extended,00000001
+
+[Unlock All Offroad Tracks]
+patch=1,EE,1039D18E,extended,00000101
+patch=1,EE,2039D190,extended,01010101
+patch=1,EE,2039D194,extended,01010101
+
+[Unlock All Stadium Tracks]
+patch=1,EE,2039D198,extended,01010101
+patch=1,EE,2039D19C,extended,01010101
+patch=1,EE,1039D1A0,extended,00000101
+
+[Unlock All Exhibition Tracks]
+patch=1,EE,1039D1A2,extended,00000101
+patch=1,EE,2039D1A4,extended,01010101
+patch=1,EE,1039D1A8,extended,00000101
+patch=1,EE,0039D1AA,extended,00000001
+
+[Unlock All Offroad/Stadium/Exhibition Tracks]
+patch=1,EE,1039D18E,extended,00000101
+patch=1,EE,4039D190,extended,00060001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1039D1A8,extended,00000101
+patch=1,EE,0039D1AA,extended,00000001

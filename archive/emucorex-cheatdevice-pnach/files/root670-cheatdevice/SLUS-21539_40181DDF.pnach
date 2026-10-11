@@ -1,0 +1,60 @@
+gametitle=Greg Hastings' Tournament Paintball Max'D (SLUS-21539)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90298BE0,extended,00832021
+
+[Infinite Turbo]
+patch=1,EE,201D8A5C,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,201D92D8,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,101D92C8,extended,00000001
+
+[Max Infinite Ammo]
+patch=1,EE,201D92C8,extended,24020088
+
+[Infinite Refills]
+patch=1,EE,201DB294,extended,00000000
+
+[Extra Refills]
+patch=1,EE,101DB28C,extended,00000001
+
+[Max Infinite Refills]
+patch=1,EE,201DB28C,extended,24030063
+
+[Unlock God Mode]
+patch=1,EE,200C0220,extended,24050001
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,A20502C7
+patch=1,EE,2024829C,extended,0C030088
+
+[Unlock Slow Motion Mode]
+patch=1,EE,200C0230,extended,24050001
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,A20502C8
+patch=1,EE,202482C0,extended,0C03008C
+
+[Unlock Extra Logos]
+patch=1,EE,200C0240,extended,24050001
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,A20502C9
+patch=1,EE,202482E4,extended,0C030090
+
+[Max Experience Points]
+patch=1,EE,20248314,extended,2402270F
+patch=1,EE,20248318,extended,AE0202B8
+
+[Max Credits Available]
+patch=1,EE,200C0250,extended,3C0605F5
+patch=1,EE,200C0254,extended,34C6E0FF
+patch=1,EE,200C0258,extended,080BAAEC
+patch=1,EE,200C025C,extended,AE0602BC
+patch=1,EE,20258D2C,extended,0C030094
+
+[Infinite Experience Points]
+patch=1,EE,202336E4,extended,00000000

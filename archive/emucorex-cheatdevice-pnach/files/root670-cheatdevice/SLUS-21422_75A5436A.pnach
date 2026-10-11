@@ -1,0 +1,51 @@
+gametitle=Tom Clancy's Ghost Recon-Advanced Warfighter (SLUS-21422)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9014B5FC,extended,0C0505A8
+
+[Disable FMV]
+patch=1,EE,20129620,extended,24020001
+
+[Infinite Health]
+patch=1,EE,204C4030,extended,24020078
+patch=1,EE,204C4034,extended,AD420384
+patch=1,EE,104C403A,extended,00001000
+
+[Infinite Health (Your Team)]
+patch=1,EE,200C0220,extended,8C410380
+patch=1,EE,200C0224,extended,AC410384
+patch=1,EE,200C0228,extended,0811D32F
+patch=1,EE,200C022C,extended,24220000
+patch=1,EE,20474CB8,extended,08030088
+
+[Infinite Running Stamina]
+patch=1,EE,20473A84,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,204C6A28,extended,24060063
+patch=1,EE,104C6A2E,extended,00001000
+patch=1,EE,204C6A30,extended,AE060504
+
+[Max Infinite Clip]
+patch=1,EE,20105DA0,extended,24030063
+
+[Never Reload]
+patch=1,EE,20105DA4,extended,00000000
+
+[Disable Ammo HUD]
+patch=1,EE,104C78AE,extended,00001000
+
+[Idiot AI]
+patch=1,EE,20232954,extended,24020000
+
+[Display FPS Debug Info]
+patch=1,EE,20352724,extended,00000000
+
+[No Enemies]
+patch=1,EE,203FFC20,extended,24020001
+
+[Unlock All Quick Start Missions]
+patch=1,EE,207B5F0C,extended,00000016

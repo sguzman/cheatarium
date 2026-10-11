@@ -1,0 +1,26 @@
+gametitle=Midnight Club-Street Racing (SLUS-20063)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902B76E8,extended,0C0A9852
+
+[Infinite Damage]
+patch=1,EE,201B0E34,extended,AC400038
+
+[Always Low Time]
+patch=1,EE,20117938,extended,AE800018
+
+[Have All Vehicles (Career Mode)]
+patch=1,EE,202C3C88,extended,FFFFFFFF
+
+[Have All Vehicles]
+patch=1,EE,202C2270,extended,FFFFFFFF
+patch=1,EE,202C2274,extended,FFFFFFFF
+
+[Have All New York Head To Head Races]
+patch=1,EE,202C227C,extended,FFFFFFFF
+
+[Have All London Head To Head Races]
+patch=1,EE,202C2280,extended,FFFFFFFF

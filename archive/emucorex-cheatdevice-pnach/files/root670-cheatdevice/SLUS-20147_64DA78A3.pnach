@@ -1,0 +1,45 @@
+gametitle=Aliens Versus Predator-Extinction (SLUS-20147)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902BE8DC,extended,0C0B1C26
+
+[Disable FMV]
+patch=1,EE,202B2170,extended,24020001
+
+[Max Money]
+patch=1,EE,200C0220,extended,3C0147C3
+patch=1,EE,200C0224,extended,34214F80
+patch=1,EE,200C0228,extended,080B370A
+patch=1,EE,200C022C,extended,AC410190
+patch=1,EE,202811D8,extended,0C030088
+
+[Infinite Health (All Selected Units)]
+patch=1,EE,201B1038,extended,C4410100
+patch=1,EE,201B105C,extended,E44100FC
+
+[Shadows On]
+patch=1,EE,10367784,extended,00000001
+
+[Show All Landing Zones (Drop Ships)]
+patch=1,EE,103678DC,extended,00000001
+
+[Spawn Off]
+patch=1,EE,10368498,extended,00000001
+
+[No AI]
+patch=1,EE,10367574,extended,00000001
+
+[Super Track Mode]
+patch=1,EE,103676F8,extended,00000001
+
+[Unit Spy]
+patch=1,EE,10367798,extended,00000001
+
+[No Unit AI]
+patch=1,EE,103677B0,extended,00000001
+
+[Invulnerable]
+patch=1,EE,103677B4,extended,00000001

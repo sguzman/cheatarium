@@ -1,0 +1,46 @@
+gametitle=Gitaroo Man (SLUS-20294)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,001350A7
+
+[Have All Collection]
+patch=1,EE,2029C0A0,extended,FFFFFFFF
+
+[Movie 1]
+patch=1,EE,2026EA20,extended,00000001
+
+[Movie 2]
+patch=1,EE,2026EA30,extended,00000001
+
+[Movie 3]
+patch=1,EE,2026EA40,extended,00000001
+
+[Movie 4]
+patch=1,EE,2026EA50,extended,00000001
+
+[Movie 5]
+patch=1,EE,2026EA60,extended,00000001
+
+[Movie 6]
+patch=1,EE,2026EA70,extended,00000001
+
+[Movie 7]
+patch=1,EE,2026EA80,extended,00000001
+
+[Movie 8]
+patch=1,EE,2026EA90,extended,00000001
+
+[Movie 9]
+patch=1,EE,2026EAA0,extended,00000001
+
+[Movie 10]
+patch=1,EE,2026EAB0,extended,00000001
+
+[Movie 11]
+patch=1,EE,2026EAC0,extended,00000001
+
+[Movie 12]
+patch=1,EE,2026EAD0,extended,00000001

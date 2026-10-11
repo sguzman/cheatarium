@@ -1,0 +1,31 @@
+gametitle=Harvest Moon-Save The Homeland (SLUS-20251)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0010A44F
+
+[Never Tired]
+patch=1,EE,20267830,extended,64646464
+
+[Infinite Money]
+patch=1,EE,10267864,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,20267864,extended,000F423F
+
+[Max Fodder]
+patch=1,EE,00267838,extended,00000063
+
+[Infinite Potato Seeds]
+patch=1,EE,0085A2DB,extended,00000063
+
+[Infinite Tomato Seeds]
+patch=1,EE,0085A2DC,extended,00000063
+
+[Infinite Corn Seeds]
+patch=1,EE,0085A2DD,extended,00000063
+
+[Infinite Breadfruit Seeds]
+patch=1,EE,0085A2DE,extended,00000063

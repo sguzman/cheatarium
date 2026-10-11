@@ -1,0 +1,1695 @@
+gametitle=Dragonball Z-Budokai-Tenkaichi 2 (SLUS-21441)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90314638,extended,0C0C944B
+patch=1,EE,200C0278,extended,03E00008
+patch=1,EE,200C027C,extended,8E460000
+patch=1,EE,2010D9E8,extended,0C030088
+
+[P1 Press {L1}+{SELECT} For Death Blow P2]
+patch=1,EE,E003FBFE,extended,003B0B1C
+patch=1,EE,200C0244,extended,24010000
+patch=1,EE,200C0248,extended,56800001
+patch=1,EE,200C024C,extended,AE410000
+patch=1,EE,E001FFFF,extended,0022611C
+patch=1,EE,200C024C,extended,00000000
+
+[P1 Press {L1}+{SELECT} For Death Blow P1]
+patch=1,EE,E003FEFE,extended,003B0B1C
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,52800001
+patch=1,EE,200C0228,extended,AE410000
+patch=1,EE,E001FFFF,extended,0022611C
+patch=1,EE,200C0228,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,200C0220,extended,8E410004
+patch=1,EE,200C0224,extended,52800001
+patch=1,EE,200C0228,extended,AE410000
+
+[No Health P1]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,52800001
+patch=1,EE,200C0228,extended,AE410000
+
+[1-Hit Death P1]
+patch=1,EE,200C0220,extended,24010001
+patch=1,EE,200C0224,extended,52800001
+patch=1,EE,200C0228,extended,AE410000
+
+[Infinite Ki P1]
+patch=1,EE,200C022C,extended,8E410010
+patch=1,EE,200C0230,extended,52800001
+patch=1,EE,200C0234,extended,AE41000C
+
+[No Ki P1]
+patch=1,EE,200C022C,extended,24010000
+patch=1,EE,200C0230,extended,52800001
+patch=1,EE,200C0234,extended,AE41000C
+
+[Max Energy P1]
+patch=1,EE,200C0238,extended,8E410018
+patch=1,EE,200C023C,extended,52800001
+patch=1,EE,200C0240,extended,AE410014
+
+[No Energy P1]
+patch=1,EE,200C0238,extended,24010000
+patch=1,EE,200C023C,extended,52800001
+patch=1,EE,200C0240,extended,AE410014
+
+[Infinite Health P2]
+patch=1,EE,200C0244,extended,8E410004
+patch=1,EE,200C0248,extended,56800001
+patch=1,EE,200C024C,extended,AE410000
+
+[No Health P2]
+patch=1,EE,200C0244,extended,24010000
+patch=1,EE,200C0248,extended,56800001
+patch=1,EE,200C024C,extended,AE410000
+
+[1-Hit Death P2]
+patch=1,EE,200C0244,extended,24010001
+patch=1,EE,200C0248,extended,56800001
+patch=1,EE,200C024C,extended,AE410000
+
+[Infinite Ki P2]
+patch=1,EE,200C0250,extended,8E410010
+patch=1,EE,200C0254,extended,56800001
+patch=1,EE,200C0258,extended,AE41000C
+
+[No Ki P2]
+patch=1,EE,200C0250,extended,24010000
+patch=1,EE,200C0254,extended,56800001
+patch=1,EE,200C0258,extended,AE41000C
+
+[Max Energy P2]
+patch=1,EE,200C025C,extended,8E410018
+patch=1,EE,200C0260,extended,56800001
+patch=1,EE,200C0264,extended,AE410014
+
+[No Energy P2]
+patch=1,EE,200C025C,extended,24010000
+patch=1,EE,200C0260,extended,56800001
+patch=1,EE,200C0264,extended,AE410014
+
+[Infinite Ki Usage (Both Players)]
+patch=1,EE,202038E4,extended,00000000
+
+[Unlock All Ultimate Battle Z Courses]
+patch=1,EE,406312C0,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Infinite Zeni]
+patch=1,EE,1063383C,extended,0000FFFF
+
+[Max Zeni]
+patch=1,EE,2063383C,extended,0098967F
+
+[Health +1]
+patch=1,EE,20632F30,extended,03E70001
+
+[Health +2]
+patch=1,EE,20632F34,extended,03E70001
+
+[Health +3]
+patch=1,EE,20632F38,extended,03E70001
+
+[Health +4]
+patch=1,EE,20632F3C,extended,03E70001
+
+[Health +5]
+patch=1,EE,20632F40,extended,03E70001
+
+[Health +6]
+patch=1,EE,20632F44,extended,03E70001
+
+[Health +7]
+patch=1,EE,20632F48,extended,03E70001
+
+[Health +8]
+patch=1,EE,20632F4C,extended,03E70001
+
+[Health +9]
+patch=1,EE,20632F50,extended,03E70001
+
+[Health +10]
+patch=1,EE,20632F54,extended,03E70001
+
+[Health +11]
+patch=1,EE,20632F58,extended,03E70001
+
+[Health +12]
+patch=1,EE,20632F5C,extended,03E70001
+
+[Health +13]
+patch=1,EE,20632F60,extended,03E70001
+
+[Health +14]
+patch=1,EE,20632F64,extended,03E70001
+
+[Health +15]
+patch=1,EE,20632F68,extended,03E70001
+
+[Health +16]
+patch=1,EE,20632F6C,extended,03E70001
+
+[Health +17]
+patch=1,EE,20632F70,extended,03E70001
+
+[Health +18]
+patch=1,EE,20632F74,extended,03E70001
+
+[Health +19]
+patch=1,EE,20632F78,extended,03E70001
+
+[Ki +1]
+patch=1,EE,20632F7C,extended,03E70001
+
+[Ki +2]
+patch=1,EE,20632F80,extended,03E70001
+
+[Ki +3]
+patch=1,EE,20632F84,extended,03E70001
+
+[Ki +4]
+patch=1,EE,20632F88,extended,03E70001
+
+[Ki +5]
+patch=1,EE,20632F8C,extended,03E70001
+
+[Ki +6]
+patch=1,EE,20632F90,extended,03E70001
+
+[Ki +7]
+patch=1,EE,20632F94,extended,03E70001
+
+[Ki +8]
+patch=1,EE,20632F98,extended,03E70001
+
+[Ki +9]
+patch=1,EE,20632F9C,extended,03E70001
+
+[Ki +10]
+patch=1,EE,20632FA0,extended,03E70001
+
+[Ki +11]
+patch=1,EE,20632FA4,extended,03E70001
+
+[Ki +12]
+patch=1,EE,20632FA8,extended,03E70001
+
+[Ki +13]
+patch=1,EE,20632FAC,extended,03E70001
+
+[Ki +14]
+patch=1,EE,20632FB0,extended,03E70001
+
+[Ki +15]
+patch=1,EE,20632FB4,extended,03E70001
+
+[Ki +16]
+patch=1,EE,20632FB8,extended,03E70001
+
+[Ki +17]
+patch=1,EE,20632FBC,extended,03E70001
+
+[Ki +18]
+patch=1,EE,20632FC0,extended,03E70001
+
+[Ki +19]
+patch=1,EE,20632FC4,extended,03E70001
+
+[Attack +1]
+patch=1,EE,20632FC8,extended,03E70001
+
+[Attack +2]
+patch=1,EE,20632FCC,extended,03E70001
+
+[Attack +3]
+patch=1,EE,20632FD0,extended,03E70001
+
+[Attack +4]
+patch=1,EE,20632FD4,extended,03E70001
+
+[Attack +5]
+patch=1,EE,20632FD8,extended,03E70001
+
+[Attack +6]
+patch=1,EE,20632FDC,extended,03E70001
+
+[Attack +7]
+patch=1,EE,20632FE0,extended,03E70001
+
+[Attack +8]
+patch=1,EE,20632FE4,extended,03E70001
+
+[Attack +9]
+patch=1,EE,20632FE8,extended,03E70001
+
+[Attack +10]
+patch=1,EE,20632FEC,extended,03E70001
+
+[Attack +11]
+patch=1,EE,20632FF0,extended,03E70001
+
+[Attack +12]
+patch=1,EE,20632FF4,extended,03E70001
+
+[Attack +13]
+patch=1,EE,20632FF8,extended,03E70001
+
+[Attack +14]
+patch=1,EE,20632FFC,extended,03E70001
+
+[Attack +15]
+patch=1,EE,20633000,extended,03E70001
+
+[Attack +16]
+patch=1,EE,20633004,extended,03E70001
+
+[Attack +17]
+patch=1,EE,20633008,extended,03E70001
+
+[Attack +18]
+patch=1,EE,2063300C,extended,03E70001
+
+[Attack +19]
+patch=1,EE,20633010,extended,03E70001
+
+[Defense +1]
+patch=1,EE,20633014,extended,03E70001
+
+[Defense +2]
+patch=1,EE,20633018,extended,03E70001
+
+[Defense +3]
+patch=1,EE,2063301C,extended,03E70001
+
+[Defense +4]
+patch=1,EE,20633020,extended,03E70001
+
+[Defense +5]
+patch=1,EE,20633024,extended,03E70001
+
+[Defense +6]
+patch=1,EE,20633028,extended,03E70001
+
+[Defense +7]
+patch=1,EE,2063302C,extended,03E70001
+
+[Defense +8]
+patch=1,EE,20633030,extended,03E70001
+
+[Defense +9]
+patch=1,EE,20633034,extended,03E70001
+
+[Defense +10]
+patch=1,EE,20633038,extended,03E70001
+
+[Defense +11]
+patch=1,EE,2063303C,extended,03E70001
+
+[Defense +12]
+patch=1,EE,20633040,extended,03E70001
+
+[Defense +13]
+patch=1,EE,20633044,extended,03E70001
+
+[Defense +14]
+patch=1,EE,20633048,extended,03E70001
+
+[Defense +15]
+patch=1,EE,2063304C,extended,03E70001
+
+[Defense +16]
+patch=1,EE,20633050,extended,03E70001
+
+[Defense +17]
+patch=1,EE,20633054,extended,03E70001
+
+[Defense +18]
+patch=1,EE,20633058,extended,03E70001
+
+[Defense +19]
+patch=1,EE,2063305C,extended,03E70001
+
+[Speed +1]
+patch=1,EE,20633060,extended,03E70001
+
+[Speed +2]
+patch=1,EE,20633064,extended,03E70001
+
+[Speed +3]
+patch=1,EE,20633068,extended,03E70001
+
+[Speed +4]
+patch=1,EE,2063306C,extended,03E70001
+
+[Speed +5]
+patch=1,EE,20633070,extended,03E70001
+
+[Speed +6]
+patch=1,EE,20633074,extended,03E70001
+
+[Speed +7]
+patch=1,EE,20633078,extended,03E70001
+
+[Speed +8]
+patch=1,EE,2063307C,extended,03E70001
+
+[Speed +9]
+patch=1,EE,20633080,extended,03E70001
+
+[Speed +10]
+patch=1,EE,20633084,extended,03E70001
+
+[Speed +11]
+patch=1,EE,20633088,extended,03E70001
+
+[Speed +12]
+patch=1,EE,2063308C,extended,03E70001
+
+[Speed +13]
+patch=1,EE,20633090,extended,03E70001
+
+[Speed +14]
+patch=1,EE,20633094,extended,03E70001
+
+[Speed +15]
+patch=1,EE,20633098,extended,03E70001
+
+[Speed +16]
+patch=1,EE,2063309C,extended,03E70001
+
+[Speed +17]
+patch=1,EE,206330A0,extended,03E70001
+
+[Speed +18]
+patch=1,EE,206330A4,extended,03E70001
+
+[Speed +19]
+patch=1,EE,206330A8,extended,03E70001
+
+[Equipment Slots +1]
+patch=1,EE,206330AC,extended,03E70001
+
+[Equipment Slots +2]
+patch=1,EE,206330B0,extended,03E70001
+
+[Equipment Slots +3]
+patch=1,EE,206330B4,extended,03E70001
+
+[Equipment Slots +4]
+patch=1,EE,206330B8,extended,03E70001
+
+[Blast 1 +1]
+patch=1,EE,206330BC,extended,03E70001
+
+[Blast 1 +2]
+patch=1,EE,206330C0,extended,03E70001
+
+[Blast 1 +3]
+patch=1,EE,206330C4,extended,03E70001
+
+[Blast 1 +4]
+patch=1,EE,206330C8,extended,03E70001
+
+[Blast 1 +5]
+patch=1,EE,206330CC,extended,03E70001
+
+[Blast 1 +6]
+patch=1,EE,206330D0,extended,03E70001
+
+[Blast 1 +7]
+patch=1,EE,206330D4,extended,03E70001
+
+[Blast 1 +8]
+patch=1,EE,206330D8,extended,03E70001
+
+[Blast 1 +9]
+patch=1,EE,206330DC,extended,03E70001
+
+[Blast 1 +10]
+patch=1,EE,206330E0,extended,03E70001
+
+[Blast 1 +11]
+patch=1,EE,206330E4,extended,03E70001
+
+[Blast 1 +12]
+patch=1,EE,206330E8,extended,03E70001
+
+[Blast 1 +13]
+patch=1,EE,206330EC,extended,03E70001
+
+[Blast 1 +14]
+patch=1,EE,206330F0,extended,03E70001
+
+[Blast 1 +15]
+patch=1,EE,206330F4,extended,03E70001
+
+[Blast 1 +16]
+patch=1,EE,206330F8,extended,03E70001
+
+[Blast 1 +17]
+patch=1,EE,206330FC,extended,03E70001
+
+[Blast 1 +18]
+patch=1,EE,20633100,extended,03E70001
+
+[Blast 1 +19]
+patch=1,EE,20633104,extended,03E70001
+
+[Blast 2 +1]
+patch=1,EE,20633108,extended,03E70001
+
+[Blast 2 +2]
+patch=1,EE,2063310C,extended,03E70001
+
+[Blast 2 +3]
+patch=1,EE,20633110,extended,03E70001
+
+[Blast 2 +4]
+patch=1,EE,20633114,extended,03E70001
+
+[Blast 2 +5]
+patch=1,EE,20633118,extended,03E70001
+
+[Blast 2 +6]
+patch=1,EE,2063311C,extended,03E70001
+
+[Blast 2 +7]
+patch=1,EE,20633120,extended,03E70001
+
+[Blast 2 +8]
+patch=1,EE,20633124,extended,03E70001
+
+[Blast 2 +9]
+patch=1,EE,20633128,extended,03E70001
+
+[Blast 2 +10]
+patch=1,EE,2063312C,extended,03E70001
+
+[Blast 2 +11]
+patch=1,EE,20633130,extended,03E70001
+
+[Blast 2 +12]
+patch=1,EE,20633134,extended,03E70001
+
+[Blast 2 +13]
+patch=1,EE,20633138,extended,03E70001
+
+[Blast 2 +14]
+patch=1,EE,2063313C,extended,03E70001
+
+[Blast 2 +15]
+patch=1,EE,20633140,extended,03E70001
+
+[Blast 2 +16]
+patch=1,EE,20633144,extended,03E70001
+
+[Blast 2 +17]
+patch=1,EE,20633148,extended,03E70001
+
+[Blast 2 +18]
+patch=1,EE,2063314C,extended,03E70001
+
+[Blast 2 +19]
+patch=1,EE,20633150,extended,03E70001
+
+[Ultimate Blast +1]
+patch=1,EE,20633154,extended,03E70001
+
+[Ultimate Blast +2]
+patch=1,EE,20633158,extended,03E70001
+
+[Ultimate Blast +3]
+patch=1,EE,2063315C,extended,03E70001
+
+[Ultimate Blast +4]
+patch=1,EE,20633160,extended,03E70001
+
+[Ultimate Blast +5]
+patch=1,EE,20633164,extended,03E70001
+
+[Ultimate Blast +6]
+patch=1,EE,20633168,extended,03E70001
+
+[Ultimate Blast +7]
+patch=1,EE,2063316C,extended,03E70001
+
+[Ultimate Blast +8]
+patch=1,EE,20633170,extended,03E70001
+
+[Ultimate Blast +9]
+patch=1,EE,20633174,extended,03E70001
+
+[Ultimate Blast +10]
+patch=1,EE,20633178,extended,03E70001
+
+[Ultimate Blast +11]
+patch=1,EE,2063317C,extended,03E70001
+
+[Ultimate Blast +12]
+patch=1,EE,20633180,extended,03E70001
+
+[Ultimate Blast +13]
+patch=1,EE,20633184,extended,03E70001
+
+[Ultimate Blast +14]
+patch=1,EE,20633188,extended,03E70001
+
+[Ultimate Blast +15]
+patch=1,EE,2063318C,extended,03E70001
+
+[Ultimate Blast +16]
+patch=1,EE,20633190,extended,03E70001
+
+[Ultimate Blast +17]
+patch=1,EE,20633194,extended,03E70001
+
+[Ultimate Blast +18]
+patch=1,EE,20633198,extended,03E70001
+
+[Ultimate Blast +19]
+patch=1,EE,2063319C,extended,03E70001
+
+[All Ability TYpe Z Items]
+patch=1,EE,40632F30,extended,009C0001
+patch=1,EE,03E70001,extended,00000000
+
+[Dragon Homing Uses +1]
+patch=1,EE,206331A0,extended,03E70001
+
+[Dragon Homing Uses +2]
+patch=1,EE,206331A4,extended,03E70001
+
+[Lock On Range Englargement]
+patch=1,EE,206331A8,extended,03E70001
+
+[Master's Skills]
+patch=1,EE,206331AC,extended,03E70001
+
+[Regeneration Ability]
+patch=1,EE,206331B0,extended,03E70001
+
+[Eternal Energy Device]
+patch=1,EE,206331B4,extended,03E70001
+
+[Tension Up]
+patch=1,EE,206331B8,extended,03E70001
+
+[I Am Champion!!]
+patch=1,EE,206331BC,extended,03E70001
+
+[Warrior Race]
+patch=1,EE,206331C0,extended,03E70001
+
+[Indomitable Spirit]
+patch=1,EE,206331C4,extended,03E70001
+
+[Fighting Spirit Elevation]
+patch=1,EE,206331CC,extended,03E70001
+
+[Ki Control]
+patch=1,EE,206331D0,extended,03E70001
+
+[Miracle Z]
+patch=1,EE,206331D4,extended,03E70001
+
+[Gravity Device]
+patch=1,EE,206331D8,extended,03E70001
+
+[Magic Beast Yakon]
+patch=1,EE,206331DC,extended,03E70001
+
+[Max Power Plus]
+patch=1,EE,206331E0,extended,03E70001
+
+[Abandonment Essence]
+patch=1,EE,206331E4,extended,03E70001
+
+[Hit Essence]
+patch=1,EE,206331E8,extended,03E70001
+
+[Miracle Z Plus]
+patch=1,EE,206331EC,extended,03E70001
+
+[Cool Mind]
+patch=1,EE,206331F0,extended,03E70001
+
+[Stealth Mode]
+patch=1,EE,206331F4,extended,03E70001
+
+[Aura Barrier]
+patch=1,EE,206331F8,extended,03E70001
+
+[Advanced Senses]
+patch=1,EE,206331FC,extended,03E70001
+
+[Powerful Style]
+patch=1,EE,20633200,extended,03E70001
+
+[Energy Breaker]
+patch=1,EE,20633204,extended,03E70001
+
+[Fighting Charisma]
+patch=1,EE,20633208,extended,03E70001
+
+[Heavy Pressure]
+patch=1,EE,2063320C,extended,03E70001
+
+[Active Heart]
+patch=1,EE,20633210,extended,03E70001
+
+[Mind Breaker]
+patch=1,EE,20633214,extended,03E70001
+
+[Conversion Attack]
+patch=1,EE,20633218,extended,03E70001
+
+[Desperation]
+patch=1,EE,2063321C,extended,03E70001
+
+[Perfect Guard]
+patch=1,EE,20633220,extended,03E70001
+
+[Quick Recover]
+patch=1,EE,20633224,extended,03E70001
+
+[Raging Hurricane Strike]
+patch=1,EE,20633228,extended,03E70001
+
+[Inescapable Menace]
+patch=1,EE,2063322C,extended,03E70001
+
+[Dende's Healing]
+patch=1,EE,20633230,extended,03E70001
+
+[Kibitokai's Secret Arts]
+patch=1,EE,20633234,extended,03E70001
+
+[Self-Confidence]
+patch=1,EE,20633238,extended,03E70001
+
+[Master's Essence]
+patch=1,EE,2063323C,extended,03E70001
+
+[Master's Spirit]
+patch=1,EE,20633240,extended,03E70001
+
+[Master's Pressure]
+patch=1,EE,20633244,extended,03E70001
+
+[Master's Presence]
+patch=1,EE,20633248,extended,03E70001
+
+[Master's Trump Card]
+patch=1,EE,2063324C,extended,03E70001
+
+[Master's Secret Plan]
+patch=1,EE,20633250,extended,03E70001
+
+[Master's Protection]
+patch=1,EE,20633254,extended,03E70001
+
+[Succession Technique]
+patch=1,EE,20633258,extended,03E70001
+
+[Everyone's Hopes]
+patch=1,EE,2063325C,extended,03E70001
+
+[Halo]
+patch=1,EE,20633260,extended,03E70001
+
+[Majin Seal]
+patch=1,EE,20633264,extended,03E70001
+
+[Hints Of Martial Arts]
+patch=1,EE,20633268,extended,03E70001
+
+[Title (Tenkaichi)]
+patch=1,EE,2063326C,extended,03E70001
+
+[Title (Top Fighter)]
+patch=1,EE,20633270,extended,03E70001
+
+[Title (Elite)]
+patch=1,EE,20633274,extended,03E70001
+
+[Title (Super Fighter)]
+patch=1,EE,20633278,extended,03E70001
+
+[The God Of Justice]
+patch=1,EE,2063327C,extended,03E70001
+
+[Myster Of Shenron]
+patch=1,EE,20633280,extended,03E70001
+
+[The Sacred Water]
+patch=1,EE,20633284,extended,03E70001
+
+[Master Piece (Roshi)]
+patch=1,EE,20633288,extended,03E70001
+
+[Master Piece (Crane Hermit)]
+patch=1,EE,2063328C,extended,03E70001
+
+[Puar's Support]
+patch=1,EE,20633290,extended,03E70001
+
+[Oolong's Support]
+patch=1,EE,20633294,extended,03E70001
+
+[Chichi's Support]
+patch=1,EE,20633298,extended,03E70001
+
+[Bulma's Support]
+patch=1,EE,2063329C,extended,03E70001
+
+[Muuri's Support]
+patch=1,EE,206332A0,extended,03E70001
+
+[King Cold's Support]
+patch=1,EE,206332A4,extended,03E70001
+
+[Kiss Of #18]
+patch=1,EE,206332A8,extended,03E70001
+
+[Spopovich]
+patch=1,EE,206332AC,extended,03E70001
+
+[Yamu]
+patch=1,EE,206332B0,extended,03E70001
+
+[Puipui]
+patch=1,EE,206332B4,extended,03E70001
+
+[Zoonama's Barb]
+patch=1,EE,206332B8,extended,03E70001
+
+[Micro Band]
+patch=1,EE,206332C0,extended,03E70001
+
+[The Turtle Stone]
+patch=1,EE,206332C4,extended,03E70001
+
+[Vicious Desire]
+patch=1,EE,206332C8,extended,03E70001
+
+[The Emperor's Aura]
+patch=1,EE,206332CC,extended,03E70001
+
+[Eternal Life]
+patch=1,EE,206332D0,extended,03E70001
+
+[Z Fighter's Bond]
+patch=1,EE,206332D4,extended,03E70001
+
+[Ginyu Force's Bond]
+patch=1,EE,206332D8,extended,03E70001
+
+[Genuine Power]
+patch=1,EE,206332DC,extended,03E70001
+
+[Result Of Training]
+patch=1,EE,206332E0,extended,03E70001
+
+[Ki!]
+patch=1,EE,206332E4,extended,03E70001
+
+[Rage!]
+patch=1,EE,206332E8,extended,03E70001
+
+[Charge!]
+patch=1,EE,206332EC,extended,03E70001
+
+[Guts!]
+patch=1,EE,206332F0,extended,03E70001
+
+[Finish!]
+patch=1,EE,206332F4,extended,03E70001
+
+[Potential Power!]
+patch=1,EE,206332F8,extended,03E70001
+
+[Unbelievable Attack!]
+patch=1,EE,206332FC,extended,03E70001
+
+[Great Saver!]
+patch=1,EE,20633300,extended,03E70001
+
+[Don't Monkey Around With Me!]
+patch=1,EE,20633304,extended,03E70001
+
+[I Won't Forgive You!]
+patch=1,EE,20633308,extended,03E70001
+
+[Fighter's Pride]
+patch=1,EE,2063330C,extended,03E70001
+
+[Tougher Than Ever]
+patch=1,EE,20633310,extended,03E70001
+
+[Speedy & Heavy Blow]
+patch=1,EE,20633314,extended,03E70001
+
+[Unleash Ki]
+patch=1,EE,20633318,extended,03E70001
+
+[Furious Power]
+patch=1,EE,2063331C,extended,03E70001
+
+[Turtle Hermit's Uniform]
+patch=1,EE,20633320,extended,03E70001
+
+[Piccolo's Uniform]
+patch=1,EE,20633324,extended,03E70001
+
+[Fighting Jacket]
+patch=1,EE,20633328,extended,03E70001
+
+[The Bravest Sword]
+patch=1,EE,2063332C,extended,03E70001
+
+[Limitless Power]
+patch=1,EE,20633334,extended,03E70001
+
+[Shenron's Record]
+patch=1,EE,2063333C,extended,03E70001
+
+[Gero's Lab Data]
+patch=1,EE,20633340,extended,03E70001
+
+[Babidi's Magic]
+patch=1,EE,20633344,extended,03E70001
+
+[Bibidi's Magic]
+patch=1,EE,20633348,extended,03E70001
+
+[Gohan's Teacher]
+patch=1,EE,2063334C,extended,03E70001
+
+[Perfect Stance]
+patch=1,EE,20633350,extended,03E70001
+
+[All Support Type Z Items]
+patch=1,EE,406331A0,extended,006D0001
+patch=1,EE,03E70001,extended,00000000
+
+[Z Item Fusion]
+patch=1,EE,20633354,extended,03E70001
+
+[Miracle]
+patch=1,EE,20633358,extended,03E70001
+
+[Dragon Power]
+patch=1,EE,2063335C,extended,03E70001
+
+[Wicket Heart Revealed]
+patch=1,EE,20633368,extended,03E70001
+
+[Babidi's Brainwashing]
+patch=1,EE,2063336C,extended,03E70001
+
+[One Who Loves Justice]
+patch=1,EE,20633370,extended,03E70001
+
+[King Yemma's Stamp]
+patch=1,EE,20633374,extended,03E70001
+
+[Tortoise Shell]
+patch=1,EE,20633378,extended,03E70001
+
+[Ultimate God Water]
+patch=1,EE,2063337C,extended,03E70001
+
+[Elder Releases Potential]
+patch=1,EE,20633380,extended,03E70001
+
+[100G Training]
+patch=1,EE,20633384,extended,03E70001
+
+[Elder Kai's Ritual]
+patch=1,EE,20633388,extended,03E70001
+
+[Unsealed]
+patch=1,EE,2063338C,extended,03E70001
+
+[Ultimate Transformation]
+patch=1,EE,20633390,extended,03E70001
+
+[Remodeling Surgery]
+patch=1,EE,20633394,extended,03E70001
+
+[Super Saiyan]
+patch=1,EE,2063339C,extended,03E70001
+
+[Human Gunman's Gun]
+patch=1,EE,206333A0,extended,03E70001
+
+[Frieza's Brother]
+patch=1,EE,206333B0,extended,03E70001
+
+[Galactic Warrior]
+patch=1,EE,206333B4,extended,03E70001
+
+[Saike Demon]
+patch=1,EE,206333B8,extended,03E70001
+
+[People's Bad Energy]
+patch=1,EE,206333BC,extended,03E70001
+
+[Artificial Blutz Wave]
+patch=1,EE,206333C0,extended,03E70001
+
+[Breakthrough The Limit]
+patch=1,EE,206333C4,extended,03E70001
+
+[Self Destruction]
+patch=1,EE,206333C8,extended,03E70001
+
+[Power Ball]
+patch=1,EE,206333DC,extended,03E70001
+
+[Lower Class Saiyan]
+patch=1,EE,206333E0,extended,03E70001
+
+[HFIL Fighter #17]
+patch=1,EE,206333F0,extended,03E70001
+
+[Power From Lower Class]
+patch=1,EE,206333F4,extended,03E70001
+
+[Absorb Gotenks]
+patch=1,EE,20633400,extended,03E70001
+
+[Absorb Gohan]
+patch=1,EE,20633404,extended,03E70001
+
+[Bros. Of Crane Hermit]
+patch=1,EE,20633410,extended,03E70001
+
+[Memorial Campaign]
+patch=1,EE,20633414,extended,03E70001
+
+[Makyo Star]
+patch=1,EE,20633418,extended,03E70001
+
+[Dead Zone]
+patch=1,EE,2063341C,extended,03E70001
+
+[Giant Form]
+patch=1,EE,20633420,extended,03E70001
+
+[Hatred Of Goku]
+patch=1,EE,20633424,extended,03E70001
+
+[Big Gete Star]
+patch=1,EE,20633428,extended,03E70001
+
+[Seriousness]
+patch=1,EE,2063342C,extended,03E70001
+
+[Namekian]
+patch=1,EE,20633430,extended,03E70001
+
+[Mutation]
+patch=1,EE,20633434,extended,03E70001
+
+[The Flowers Of Evil]
+patch=1,EE,20633438,extended,03E70001
+
+[Armored Cavalry]
+patch=1,EE,2063343C,extended,03E70001
+
+[Cooler's Soldier]
+patch=1,EE,20633440,extended,03E70001
+
+[Son Of Paragas]
+patch=1,EE,20633444,extended,03E70001
+
+[Lower Class Saiyan]
+patch=1,EE,20633448,extended,03E70001
+
+[Frieza's Soldier]
+patch=1,EE,2063344C,extended,03E70001
+
+[Vegeta's Rival]
+patch=1,EE,20633450,extended,03E70001
+
+[Evil Dragon]
+patch=1,EE,20633470,extended,03E70001
+
+[Negative Energy]
+patch=1,EE,20633474,extended,03E70001
+
+[Ultimate Dragonball]
+patch=1,EE,20633478,extended,03E70001
+
+[Computer]
+patch=1,EE,2063347C,extended,03E70001
+
+[Hatred]
+patch=1,EE,20633480,extended,03E70001
+
+[Parts Of #14/#15]
+patch=1,EE,20633484,extended,03E70001
+
+[Fruit Of The Tree Of Might]
+patch=1,EE,20633488,extended,03E70001
+
+[Kibito]
+patch=1,EE,2063348C,extended,03E70001
+
+[Hirudegarn's Top Half]
+patch=1,EE,20633490,extended,03E70001
+
+[Hirudegarn's Lower Half]
+patch=1,EE,20633494,extended,03E70001
+
+[Master Roshi's Pupil]
+patch=1,EE,2063349C,extended,03E70001
+
+[Fox Mask]
+patch=1,EE,206334A0,extended,03E70001
+
+[Baby]
+patch=1,EE,206334A4,extended,03E70001
+
+[All Fusion Type Z Items]
+patch=1,EE,40633354,extended,00550001
+patch=1,EE,03E70001,extended,00000000
+
+[1 Star Dragonball]
+patch=1,EE,206334C0,extended,03E70001
+
+[2 Star Dragonball]
+patch=1,EE,206334C4,extended,03E70001
+
+[3 Star Dragonball]
+patch=1,EE,206334C8,extended,03E70001
+
+[4 Star Dragonball]
+patch=1,EE,206334CC,extended,03E70001
+
+[5 Star Dragonball]
+patch=1,EE,206334D0,extended,03E70001
+
+[6 Star Dragonball]
+patch=1,EE,206334D4,extended,03E70001
+
+[7 Star Dragonball]
+patch=1,EE,206334D8,extended,03E70001
+
+[All Dragon Ball Z Items]
+patch=1,EE,406334C0,extended,00070001
+patch=1,EE,03E70001,extended,00000000
+
+[Member's Card (Normal)]
+patch=1,EE,206334DC,extended,03E70001
+
+[Member's Card (Bronze)]
+patch=1,EE,206334E0,extended,03E70001
+
+[Member's Card (Silver)]
+patch=1,EE,206334E4,extended,03E70001
+
+[Member's Card (Gold)]
+patch=1,EE,206334E8,extended,03E70001
+
+[Hercule's Autograph]
+patch=1,EE,206334EC,extended,03E70001
+
+[Girl's Panties]
+patch=1,EE,206334F0,extended,03E70001
+
+[Hercules' Secrets]
+patch=1,EE,206334F4,extended,03E70001
+
+[Champion Belt]
+patch=1,EE,206334F8,extended,03E70001
+
+[Candid Photo Of 18]
+patch=1,EE,206334FC,extended,03E70001
+
+[Pirate Treasure]
+patch=1,EE,20633500,extended,03E70001
+
+[Saibamen Set]
+patch=1,EE,20633504,extended,03E70001
+
+[Saiyan Spaceship]
+patch=1,EE,20633508,extended,03E70001
+
+[Katchinko]
+patch=1,EE,2063350C,extended,03E70001
+
+[Alien Cells]
+patch=1,EE,20633510,extended,03E70001
+
+[Android Wreckage]
+patch=1,EE,20633514,extended,03E70001
+
+[Frieza's Spaceship]
+patch=1,EE,20633518,extended,03E70001
+
+[Wrecked Time Machine]
+patch=1,EE,2063351C,extended,03E70001
+
+[Mysterious Blueprints]
+patch=1,EE,20633520,extended,03E70001
+
+[Dragon Radar]
+patch=1,EE,20633524,extended,03E70001
+
+[Saiyan Saga]
+patch=1,EE,20633548,extended,03E70001
+
+[Tree Of Might]
+patch=1,EE,2063354C,extended,03E70001
+
+[Lord Slug]
+patch=1,EE,20633550,extended,03E70001
+
+[Final Battle]
+patch=1,EE,20633554,extended,03E70001
+
+[Frieza Saga]
+patch=1,EE,20633558,extended,03E70001
+
+[Makyo Star]
+patch=1,EE,2063355C,extended,03E70001
+
+[Cooler's Revenge]
+patch=1,EE,20633560,extended,03E70001
+
+[Return Of Cooler]
+patch=1,EE,20633564,extended,03E70001
+
+[The History Of Trunks]
+patch=1,EE,20633568,extended,03E70001
+
+[Android Saga]
+patch=1,EE,2063356C,extended,03E70001
+
+[Super Android 13]
+patch=1,EE,20633570,extended,03E70001
+
+[Broly-The Legendary Super Saiyan]
+patch=1,EE,20633574,extended,03E70001
+
+[Ultimate Future Warrior]
+patch=1,EE,20633578,extended,03E70001
+
+[Bojack Unbound]
+patch=1,EE,2063357C,extended,03E70001
+
+[Majin Buu Saga]
+patch=1,EE,20633580,extended,03E70001
+
+[Broly-The Second Coming]
+patch=1,EE,20633584,extended,03E70001
+
+[Fusion Reborn]
+patch=1,EE,20633588,extended,03E70001
+
+[Wrath Of The Dragon]
+patch=1,EE,2063358C,extended,03E70001
+
+[Baby, The Avenger]
+patch=1,EE,20633590,extended,03E70001
+
+[Ultimate Android]
+patch=1,EE,20633594,extended,03E70001
+
+[Evil Dragon Of Absolute Destruction]
+patch=1,EE,20633598,extended,03E70001
+
+[Fateful Brothers]
+patch=1,EE,2063359C,extended,03E70001
+
+[Beautiful Treachery..]
+patch=1,EE,206335A0,extended,03E70001
+
+[Destined Rivals]
+patch=1,EE,206335A8,extended,03E70001
+
+[Wasteland]
+patch=1,EE,206335AC,extended,03E70001
+
+[Rocky Area]
+patch=1,EE,206335B0,extended,03E70001
+
+[Namek]
+patch=1,EE,206335B4,extended,03E70001
+
+[World Tournament Stage]
+patch=1,EE,206335B8,extended,03E70001
+
+[City (Ruins)]
+patch=1,EE,206335BC,extended,03E70001
+
+[Mountain Road]
+patch=1,EE,206335C0,extended,03E70001
+
+[Islands]
+patch=1,EE,206335C4,extended,03E70001
+
+[Cell Games Arena]
+patch=1,EE,206335C8,extended,03E70001
+
+[Kami's Lookout]
+patch=1,EE,206335CC,extended,03E70001
+
+[Hyperbolic Time Chamber]
+patch=1,EE,206335D0,extended,03E70001
+
+[Supreme Kai's World]
+patch=1,EE,206335D4,extended,03E70001
+
+[Dying Namek]
+patch=1,EE,206335D8,extended,03E70001
+
+[Kame House]
+patch=1,EE,206335DC,extended,03E70001
+
+[Planet]
+patch=1,EE,206335E0,extended,03E70001
+
+[Glacier]
+patch=1,EE,206335E4,extended,03E70001
+
+[Goku]
+patch=1,EE,206335E8,extended,03E70001
+
+[Super Saiyan Goku]
+patch=1,EE,206335EC,extended,03E70001
+
+[Super Saiyan 2 Goku]
+patch=1,EE,206335F0,extended,03E70001
+
+[Super Saiyan 3 Goku]
+patch=1,EE,206335F4,extended,03E70001
+
+[Kid Gohan]
+patch=1,EE,206335F8,extended,03E70001
+
+[Teen Gohan]
+patch=1,EE,206335FC,extended,03E70001
+
+[Super Saiyan Teen Gohan]
+patch=1,EE,20633600,extended,03E70001
+
+[Super Saiyan 2 Teen Gohan]
+patch=1,EE,20633604,extended,03E70001
+
+[Piccolo]
+patch=1,EE,20633608,extended,03E70001
+
+[Krillin]
+patch=1,EE,2063360C,extended,03E70001
+
+[Yamcha]
+patch=1,EE,20633610,extended,03E70001
+
+[Tien]
+patch=1,EE,20633614,extended,03E70001
+
+[Chiaotzu]
+patch=1,EE,20633618,extended,03E70001
+
+[Raditz]
+patch=1,EE,2063361C,extended,03E70001
+
+[Saibamen]
+patch=1,EE,20633620,extended,03E70001
+
+[Nappa]
+patch=1,EE,20633624,extended,03E70001
+
+[Vegeta]
+patch=1,EE,20633628,extended,03E70001
+
+[Super Saiyan Vegeta]
+patch=1,EE,2063362C,extended,03E70001
+
+[Super Vegeta]
+patch=1,EE,20633630,extended,03E70001
+
+[Zarbon]
+patch=1,EE,20633634,extended,03E70001
+
+[Zarbon Post Transformation]
+patch=1,EE,20633638,extended,03E70001
+
+[Dodoria]
+patch=1,EE,2063363C,extended,03E70001
+
+[Ginyu]
+patch=1,EE,20633640,extended,03E70001
+
+[Recoome]
+patch=1,EE,20633644,extended,03E70001
+
+[Burter]
+patch=1,EE,20633648,extended,03E70001
+
+[Jeice]
+patch=1,EE,2063364C,extended,03E70001
+
+[Guldo]
+patch=1,EE,20633650,extended,03E70001
+
+[Frieza 1st Form]
+patch=1,EE,20633654,extended,03E70001
+
+[Frieza 2nd Form]
+patch=1,EE,20633658,extended,03E70001
+
+[Frieza 3rd Form]
+patch=1,EE,2063365C,extended,03E70001
+
+[Frieza Final Form]
+patch=1,EE,20633660,extended,03E70001
+
+[Full Power Frieza]
+patch=1,EE,20633664,extended,03E70001
+
+[Mecha Frieza]
+patch=1,EE,20633668,extended,03E70001
+
+[Trunks (Sword)]
+patch=1,EE,2063366C,extended,03E70001
+
+[Super Saiyan Trunks (Sword)]
+patch=1,EE,20633670,extended,03E70001
+
+[Super Trunks]
+patch=1,EE,20633674,extended,03E70001
+
+[Android #16]
+patch=1,EE,20633678,extended,03E70001
+
+[Android #17]
+patch=1,EE,2063367C,extended,03E70001
+
+[Android #18]
+patch=1,EE,20633680,extended,03E70001
+
+[Android #19]
+patch=1,EE,20633684,extended,03E70001
+
+[Dr. Gero]
+patch=1,EE,20633688,extended,03E70001
+
+[Cell 1st Form]
+patch=1,EE,2063368C,extended,03E70001
+
+[Cell 2nd Form]
+patch=1,EE,20633690,extended,03E70001
+
+[Cell Perfect Form]
+patch=1,EE,20633694,extended,03E70001
+
+[Perfect Cell]
+patch=1,EE,20633698,extended,03E70001
+
+[Cell Jr.]
+patch=1,EE,2063369C,extended,03E70001
+
+[Jercule]
+patch=1,EE,206336A0,extended,03E70001
+
+[Gohan]
+patch=1,EE,206336A4,extended,03E70001
+
+[Super Saiyan Gohan]
+patch=1,EE,206336A8,extended,03E70001
+
+[Super Saiyan 2 Gohan]
+patch=1,EE,206336AC,extended,03E70001
+
+[Great Saiyaman]
+patch=1,EE,206336B0,extended,03E70001
+
+[Ultimate Gohan]
+patch=1,EE,206336B4,extended,03E70001
+
+[Goten]
+patch=1,EE,206336B8,extended,03E70001
+
+[Super Saiyan Goten]
+patch=1,EE,206336BC,extended,03E70001
+
+[Kid Trunks]
+patch=1,EE,206336C0,extended,03E70001
+
+[Super Saiyan Kid Trunks]
+patch=1,EE,206336C4,extended,03E70001
+
+[Gotenks]
+patch=1,EE,206336C8,extended,03E70001
+
+[Super Gotenks]
+patch=1,EE,206336CC,extended,03E70001
+
+[Super Gotenks 3]
+patch=1,EE,206336D0,extended,03E70001
+
+[Videl]
+patch=1,EE,206336D4,extended,03E70001
+
+[Demon King Dabura]
+patch=1,EE,206336D8,extended,03E70001
+
+[Majin Buu]
+patch=1,EE,206336DC,extended,03E70001
+
+[Majin Buu (Pure Evil)]
+patch=1,EE,206336E0,extended,03E70001
+
+[SUper Buu]
+patch=1,EE,206336E4,extended,03E70001
+
+[Kid Buu]
+patch=1,EE,206336E8,extended,03E70001
+
+[Vegito]
+patch=1,EE,206336EC,extended,03E70001
+
+[Super Vegetto]
+patch=1,EE,206336F0,extended,03E70001
+
+[Super Saiyan 2 Vegeta]
+patch=1,EE,206336F4,extended,03E70001
+
+[Super Gogeta]
+patch=1,EE,206336F8,extended,03E70001
+
+[Great Ape]
+patch=1,EE,206336FC,extended,03E70001
+
+[Great Ape Vegeta]
+patch=1,EE,20633700,extended,03E70001
+
+[Legendary Super Saiyan Broly]
+patch=1,EE,20633704,extended,03E70001
+
+[Full Power Bojack]
+patch=1,EE,20633708,extended,03E70001
+
+[Cooler Final Form]
+patch=1,EE,2063370C,extended,03E70001
+
+[Super Janemba]
+patch=1,EE,20633710,extended,03E70001
+
+[Super Saiyan 4 Goku]
+patch=1,EE,20633714,extended,03E70001
+
+[Super Saiyan 4 Vegeta]
+patch=1,EE,20633718,extended,03E70001
+
+[Super Saiyan 4 Gogeta]
+patch=1,EE,2063371C,extended,03E70001
+
+[Bardock]
+patch=1,EE,20633720,extended,03E70001
+
+[Vegeta (Scouter)]
+patch=1,EE,20633724,extended,03E70001
+
+[Majin Vegeta]
+patch=1,EE,20633728,extended,03E70001
+
+[Trunks]
+patch=1,EE,2063372C,extended,03E70001
+
+[Super Saiyan Trunks]
+patch=1,EE,20633730,extended,03E70001
+
+[Super 17]
+patch=1,EE,20633734,extended,03E70001
+
+[Super Baby 2]
+patch=1,EE,20633738,extended,03E70001
+
+[Kid Goku]
+patch=1,EE,2063373C,extended,03E70001
+
+[Super Buu 1]
+patch=1,EE,20633740,extended,03E70001
+
+[Super Buu 2]
+patch=1,EE,20633744,extended,03E70001
+
+[Master Roshi]
+patch=1,EE,20633748,extended,03E70001
+
+[General Tao]
+patch=1,EE,2063374C,extended,03E70001
+
+[Garlic Jr.]
+patch=1,EE,20633750,extended,03E70001
+
+[Super Garlic Jr.]
+patch=1,EE,20633754,extended,03E70001
+
+[Pan]
+patch=1,EE,20633758,extended,03E70001
+
+[Cooler]
+patch=1,EE,2063375C,extended,03E70001
+
+[Meta-Cooler]
+patch=1,EE,20633760,extended,03E70001
+
+[Max Power Master Roshi]
+patch=1,EE,20633764,extended,03E70001
+
+[Slug]
+patch=1,EE,20633768,extended,03E70001
+
+[Super Slug]
+patch=1,EE,2063376C,extended,03E70001
+
+[Zangya]
+patch=1,EE,20633770,extended,03E70001
+
+[Salza]
+patch=1,EE,20633774,extended,03E70001
+
+[Broly]
+patch=1,EE,20633778,extended,03E70001
+
+[Super Saiyan Broly]
+patch=1,EE,2063377C,extended,03E70001
+
+[Bojack]
+patch=1,EE,20633780,extended,03E70001
+
+[Janemba]
+patch=1,EE,20633784,extended,03E70001
+
+[Super Baby 1]
+patch=1,EE,20633788,extended,03E70001
+
+[Great Ape Baby]
+patch=1,EE,2063378C,extended,03E70001
+
+[Great Ape Raditz]
+patch=1,EE,20633790,extended,03E70001
+
+[Great Ape Nappa]
+patch=1,EE,20633794,extended,03E70001
+
+[Great Ape Bardock]
+patch=1,EE,20633798,extended,03E70001
+
+[Great Saiyaman 2]
+patch=1,EE,2063379C,extended,03E70001
+
+[Cui]
+patch=1,EE,206337A0,extended,03E70001
+
+[Pikkon]
+patch=1,EE,206337A4,extended,03E70001
+
+[Yajirobe]
+patch=1,EE,206337A8,extended,03E70001
+
+[Uub]
+patch=1,EE,206337AC,extended,03E70001
+
+[Majuub]
+patch=1,EE,206337B0,extended,03E70001
+
+[Syn Shenron]
+patch=1,EE,206337B4,extended,03E70001
+
+[Omega Shenron]
+patch=1,EE,206337B8,extended,03E70001
+
+[Android 13]
+patch=1,EE,206337BC,extended,03E70001
+
+[Fusion Android 13]
+patch=1,EE,206337C0,extended,03E70001
+
+[Turles]
+patch=1,EE,206337C4,extended,03E70001
+
+[Great Ape Turles]
+patch=1,EE,206337C8,extended,03E70001
+
+[Supreme Kai]
+patch=1,EE,206337CC,extended,03E70001
+
+[Kibitokai]
+patch=1,EE,206337D0,extended,03E70001
+
+[Hirudegarn]
+patch=1,EE,206337D4,extended,03E70001
+
+[Tapion]
+patch=1,EE,206337D8,extended,03E70001
+
+[Grandpa Gohan]
+patch=1,EE,206337DC,extended,03E70001
+
+[Vegeta (Second Form)]
+patch=1,EE,206337E0,extended,03E70001
+
+[Super Saiyan Vegeta (Second Form)]
+patch=1,EE,206337E4,extended,03E70001
+
+[Baby Vegeta]
+patch=1,EE,206337E8,extended,03E70001
+
+[Cell Games]
+patch=1,EE,206337EC,extended,03E70001
+
+[World Martial Arts Big Tournament]
+patch=1,EE,206337F0,extended,03E70001
+
+[Advanced License]
+patch=1,EE,206337F4,extended,03E70001
+
+[Master License]
+patch=1,EE,206337F8,extended,03E70001
+
+[Bulla]
+patch=1,EE,206337FC,extended,03E70001
+
+[Desert Costume]
+patch=1,EE,20633800,extended,03E70001
+
+[Ruined Earth]
+patch=1,EE,20633804,extended,03E70001
+
+[All Secret Type Z Items]
+patch=1,EE,406334DC,extended,00CB0001
+patch=1,EE,03E70001,extended,00000000

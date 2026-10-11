@@ -1,0 +1,138 @@
+gametitle=ESPN X Games Skateboarding (SLUS-20237)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9013D45C,extended,0C044BB6
+
+[Have All Boards]
+patch=1,EE,108B6D30,extended,00000101
+patch=1,EE,408B6D10,extended,00080001
+patch=1,EE,01010101,extended,00000000
+
+[Easy Crash Targets]
+patch=1,EE,D1C712BE,extended,00000001
+patch=1,EE,11C712BE,extended,00000005
+
+[Easy Checkpoints]
+patch=1,EE,D1C712C0,extended,00000001
+patch=1,EE,11C712C0,extended,00000006
+
+[Max Special]
+patch=1,EE,11C7141C,extended,0000012C
+
+[Max Score]
+patch=1,EE,11C712C4,extended,0000FFFF
+
+[Max Combo]
+patch=1,EE,D1C712D0,extended,00200003
+patch=1,EE,01C712D0,extended,00000063
+
+[Alien]
+patch=1,EE,008B7850,extended,00000010
+
+[Bartender John]
+patch=1,EE,008B7850,extended,00000009
+
+[Bighead Bob]
+patch=1,EE,008B7850,extended,00000012
+
+[Bighead Carlos]
+patch=1,EE,008B7850,extended,00000013
+
+[Bighead Chad]
+patch=1,EE,008B7850,extended,00000014
+
+[Bighead Chris]
+patch=1,EE,008B7850,extended,00000015
+
+[Bighead Colin]
+patch=1,EE,008B7850,extended,00000016
+
+[Bighead Kerry]
+patch=1,EE,008B7850,extended,00000017
+
+[Bighead Lincoln]
+patch=1,EE,008B7850,extended,00000018
+
+[Bighead Rick]
+patch=1,EE,008B7850,extended,00000019
+
+[Carrot-Top]
+patch=1,EE,008B7850,extended,0000000D
+
+[Chaquita]
+patch=1,EE,008B7850,extended,0000000B
+
+[Evil Carrot-Top]
+patch=1,EE,008B7850,extended,0000000A
+
+[Gov. Ventura]
+patch=1,EE,008B7850,extended,0000000C
+
+[Helmet Skater]
+patch=1,EE,008B7850,extended,00000027
+
+[Jughead]
+patch=1,EE,008B7850,extended,00000008
+
+[Mr. Gallagher]
+patch=1,EE,008B7850,extended,0000000E
+
+[Padded Skater]
+patch=1,EE,008B7850,extended,00000024
+
+[Alien]
+patch=1,EE,008B7851,extended,00000010
+
+[Bartender John]
+patch=1,EE,008B7851,extended,00000009
+
+[Bighead Bob]
+patch=1,EE,008B7851,extended,00000012
+
+[Bighead Carlos]
+patch=1,EE,008B7851,extended,00000013
+
+[Bighead Chad]
+patch=1,EE,008B7851,extended,00000014
+
+[Bighead Chris]
+patch=1,EE,008B7851,extended,00000015
+
+[Bighead Colin]
+patch=1,EE,008B7851,extended,00000016
+
+[Bighead Kerry]
+patch=1,EE,008B7851,extended,00000017
+
+[Bighead Lincoln]
+patch=1,EE,008B7851,extended,00000018
+
+[Bighead Rick]
+patch=1,EE,008B7851,extended,00000019
+
+[Carrot-Top]
+patch=1,EE,008B7851,extended,0000000D
+
+[Chaquita]
+patch=1,EE,008B7851,extended,0000000B
+
+[Evil Carrot-Top]
+patch=1,EE,008B7851,extended,0000000A
+
+[Gov. Ventura]
+patch=1,EE,008B7851,extended,0000000C
+
+[Helmet Skater]
+patch=1,EE,008B7851,extended,00000027
+
+[Jughead]
+patch=1,EE,008B7851,extended,00000008
+
+[Mr. Gallagher]
+patch=1,EE,008B7851,extended,0000000E
+
+[Padded Skater]
+patch=1,EE,008B7851,extended,00000024

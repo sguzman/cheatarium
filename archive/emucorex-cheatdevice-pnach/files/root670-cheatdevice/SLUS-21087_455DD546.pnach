@@ -1,0 +1,368 @@
+gametitle=Mortal Kombat-Shaolin Monks (SLUS-21087)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902069F8,extended,00832021
+
+[Infinite Health]
+patch=1,EE,201EB0B0,extended,8C8203A0
+patch=1,EE,201EB0B4,extended,AC820398
+
+[Infinite Energy]
+patch=1,EE,20169514,extended,00000000
+
+[Have All Moves (Minus Fatalities)]
+patch=1,EE,201BB438,extended,00430821
+patch=1,EE,201BB43C,extended,24020005
+patch=1,EE,201BB444,extended,A02200E0
+
+[Always Low Game Time]
+patch=1,EE,201D7464,extended,AC800000
+
+[Quick Exp Gain]
+patch=1,EE,201744DC,extended,34112710
+
+[Max Exp Gain]
+patch=1,EE,20174508,extended,3C1105F5
+patch=1,EE,20174510,extended,3631E0FF
+
+[Buying Moves Does Not Decrease Exp]
+patch=1,EE,20174C64,extended,00000000
+
+[Always Max Enemies Killed]
+patch=1,EE,2017452C,extended,2403270F
+
+[Enemies Killed Worth 100]
+patch=1,EE,2017452C,extended,24030064
+
+[Enemies Killed Worth 50]
+patch=1,EE,2017452C,extended,24030032
+
+[Enemies Killed Worth 20]
+patch=1,EE,2017452C,extended,24030014
+
+[Enemies Killed Worth 10]
+patch=1,EE,2017452C,extended,2403000A
+
+[1-Hit Deaths (Enemies)]
+patch=1,EE,20160C3C,extended,24010001
+patch=1,EE,20160C48,extended,AC810398
+
+[View Movies To Unlock Them]
+patch=1,EE,201C1DD4,extended,00431025
+patch=1,EE,201C1DD8,extended,AC820000
+patch=1,EE,201C1DE0,extended,24020001
+
+[View Arena Art To Unlock Them]
+patch=1,EE,201C1E2C,extended,00431025
+patch=1,EE,201C1E30,extended,AC820000
+patch=1,EE,201C1E38,extended,24020001
+
+[View Concept Art To Unlock Them]
+patch=1,EE,201C1E84,extended,00431025
+patch=1,EE,201C1E88,extended,AC820000
+patch=1,EE,201C1E90,extended,24020001
+
+[View Photos To Unlock Them]
+patch=1,EE,201C1EDC,extended,00431025
+patch=1,EE,201C1EE0,extended,AC820000
+patch=1,EE,201C1EE8,extended,24020001
+
+[Unlock Mortal Kombat II]
+patch=1,EE,205D82B0,extended,00000001
+
+[Sub-Zero]
+patch=1,EE,205D82B4,extended,00000001
+
+[Scorpion]
+patch=1,EE,205D82B8,extended,00000001
+
+[Scorpion]
+patch=1,EE,705D828A,extended,00000004
+
+[Baraka]
+patch=1,EE,705D828A,extended,00000008
+
+[Reptile]
+patch=1,EE,705D828A,extended,00000010
+
+[Sub-Zero]
+patch=1,EE,705D828B,extended,00000001
+
+[Kitana]
+patch=1,EE,705D828B,extended,00000002
+
+[Johnny Cage]
+patch=1,EE,705D828B,extended,00000004
+
+[All Vs. Mode Characters]
+patch=1,EE,705D828A,extended,0010071C
+
+[Enable Code (Must Be On)]
+patch=1,EE,FE129B51,extended,800813BF
+patch=1,EE,000FFFFE,extended,0000014C
+patch=1,EE,000FFFFF,extended,0000014C
+patch=1,EE,904D4DF0,extended,0C13C87F
+
+[Infinite Time To Play]
+patch=1,EE,20106CF0,extended,00000000
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,03E00008
+patch=1,EE,200C0224,extended,E4800018
+patch=1,EE,2037DB50,extended,08030088
+patch=1,EE,2037DB54,extended,C480001C
+
+[Infinite Health Kits/Ammo]
+patch=1,EE,202BAC98,extended,00000000
+
+[Extra Health Kits/Amo]
+patch=1,EE,202BAC90,extended,00511021
+
+[Max Infinite Health Kits/Ammo]
+patch=1,EE,202BAC90,extended,24020063
+
+[Never Reload]
+patch=1,EE,202EB820,extended,24050000
+
+[Infinite Flashlight Power]
+patch=1,EE,20275978,extended,00000000
+
+[Enemies Don�t Do Close Range Attacks]
+patch=1,EE,2050BA88,extended,03E00008
+patch=1,EE,2050BA8C,extended,00000000
+
+[Infinite Insanity]
+patch=1,EE,203067DC,extended,00000000
+
+[Enable Code (Must Be On)]
+patch=1,EE,FE129B51,extended,800813BF
+patch=1,EE,000FFFFE,extended,0000014C
+patch=1,EE,000FFFFF,extended,0000014C
+patch=1,EE,9013FC18,extended,00832021
+
+[Infinite Health P1]
+patch=1,EE,10519CA0,extended,000000A1
+patch=1,EE,1051A05E,extended,000000A1
+
+[75% Health P1]
+patch=1,EE,E00200A1,extended,0051A05E
+patch=1,EE,10519CA0,extended,00000078
+patch=1,EE,1051A05E,extended,00000078
+
+[50% Health P1]
+patch=1,EE,E00200A1,extended,0051A05E
+patch=1,EE,10519CA0,extended,00000050
+patch=1,EE,1051A05E,extended,00000050
+
+[25% Health P1]
+patch=1,EE,E00200A1,extended,0051A05E
+patch=1,EE,10519CA0,extended,00000028
+patch=1,EE,1051A05E,extended,00000028
+
+[1-Hit Death P1]
+patch=1,EE,E00200A1,extended,0051A05E
+patch=1,EE,10519CA0,extended,00000001
+patch=1,EE,1051A05E,extended,00000001
+
+[No Health P1]
+patch=1,EE,10519CA0,extended,00000000
+patch=1,EE,1051A05E,extended,00000000
+
+[P1 Needs 1 Win To Win]
+patch=1,EE,D051A062,extended,00000000
+patch=1,EE,1051A062,extended,00000001
+
+[P1 Press {L1}+{SELECT} To Kill Opponent]
+patch=1,EE,E001FBFE,extended,002E97C2
+patch=1,EE,1051A1D8,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Finish Him]
+patch=1,EE,E002FEFE,extended,002E97C2
+patch=1,EE,1051A062,extended,00000001
+patch=1,EE,1051A1D8,extended,00000000
+
+[P1 Never Wins]
+patch=1,EE,1051A062,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,10519C88,extended,000000A1
+patch=1,EE,1051A1D8,extended,000000A1
+
+[75% Health P2]
+patch=1,EE,E00200A1,extended,0051A1D8
+patch=1,EE,10519C88,extended,00000078
+patch=1,EE,1051A1D8,extended,00000078
+
+[50% Health P2]
+patch=1,EE,E00200A1,extended,0051A1D8
+patch=1,EE,10519C88,extended,00000050
+patch=1,EE,1051A1D8,extended,00000050
+
+[25% Health P2]
+patch=1,EE,E00200A1,extended,0051A1D8
+patch=1,EE,10519C88,extended,00000028
+patch=1,EE,1051A1D8,extended,00000028
+
+[1-Hit Death P2]
+patch=1,EE,E00200A1,extended,0051A1D8
+patch=1,EE,10519C88,extended,00000001
+patch=1,EE,1051A1D8,extended,00000001
+
+[No Health P2]
+patch=1,EE,10519C88,extended,000000A1
+patch=1,EE,1051A1D8,extended,000000A1
+
+[P2 Needs 1 Win To Win]
+patch=1,EE,D051A1DC,extended,00000000
+patch=1,EE,1051A1DC,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,1051A1DC,extended,00000000
+
+[P2 Press {L1}+{SELECT} To Kill Opponent]
+patch=1,EE,E001FBFE,extended,002E9902
+patch=1,EE,1051A05E,extended,00000000
+
+[P2 Press {L1}+{SELECT} To Finish Him]
+patch=1,EE,E002FEFE,extended,002E9902
+patch=1,EE,1051A1DC,extended,00000001
+patch=1,EE,1051A05E,extended,00000000
+
+[Liu Kang]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000000
+
+[Kung Lao]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000001
+
+[Johnny Kage]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000002
+
+[Baraka]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000003
+
+[Kitana]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000004
+
+[Mileena]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000005
+
+[Shang Tsung]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000006
+
+[Raiden]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000007
+
+[Sub-Zero]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000008
+
+[Reptile]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000009
+
+[Scorpion]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,0000000A
+
+[Jax]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,0000000B
+
+[Kintaro (Hangs When Doing Moves)]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,0000000C
+
+[Shao Kahn (Hangs When Doing Moves)]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,0000000D
+
+[Smoke (Hangs When Doing Some Moves)]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,0000000E
+
+[Noob Saibot]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,0000000F
+
+[Jade]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A050,extended,00000010
+
+[Liu Kang]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000000
+
+[Kung Lao]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000001
+
+[Johnny Kage]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000002
+
+[Baraka]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000003
+
+[Kitana]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000004
+
+[Mileena]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000005
+
+[Shang Tsung]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000006
+
+[Raiden]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000007
+
+[Sub-Zero]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000008
+
+[Reptile]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000009
+
+[Scorpion]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,0000000A
+
+[Jax]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,0000000B
+
+[Kintaro (Hangs When Doing Moves)]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,0000000C
+
+[Shao Kahn (Hangs When Doing Moves)]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,0000000D
+
+[Smoke (Hangs When Doing Some Moves)]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,0000000E
+
+[Noob Saibot]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,0000000F
+
+[Jade]
+patch=1,EE,D0515100,extended,00100801
+patch=1,EE,1051A1CA,extended,00000010

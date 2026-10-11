@@ -1,0 +1,61 @@
+gametitle=IHRA Drag Racing-Sportsman Edition (SLUS-21256)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901123C0,extended,0C04607E
+
+[Max Money]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA20,extended,4B18967F
+
+[Buy 1 Car For Max Money]
+patch=1,EE,2043D408,extended,3C014B18
+patch=1,EE,2043D40C,extended,3421967F
+patch=1,EE,2043D410,extended,44810000
+
+[Buying Cars Doesnt Decrease Money]
+patch=1,EE,2043D41C,extended,00000000
+
+[Buying Cars Increases Money]
+patch=1,EE,2043D410,extended,46010000
+
+[Buy 1 Part For Max Money]
+patch=1,EE,20446A04,extended,3C014B18
+patch=1,EE,20446A08,extended,3421967F
+patch=1,EE,20446A0C,extended,44810000
+
+[Buying Parts Doesnt Decrease Money]
+patch=1,EE,20446A10,extended,00000000
+
+[Buying Parts Increases Money]
+patch=1,EE,20446A0C,extended,46010000
+
+[Max Money Earned]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA24,extended,4B18967F
+
+[Max Season Completed]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA2C,extended,05F5E0FF
+
+[Max Wins]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA30,extended,000003E7
+
+[No Wins]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA30,extended,00000000
+
+[Max Losses]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA34,extended,000003E7
+
+[No Losses]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA34,extended,00000000
+
+[Max Miles Driven]
+patch=1,EE,D09DE9F2,extended,00000051
+patch=1,EE,209DEA38,extended,4CBEBC20

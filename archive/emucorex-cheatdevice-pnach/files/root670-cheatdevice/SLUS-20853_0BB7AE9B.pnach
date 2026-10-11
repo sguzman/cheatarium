@@ -1,0 +1,230 @@
+gametitle=Looney Tunes-Back In Action (SLUS-20853)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0029FA07
+
+[Start With 19 Trophies]
+patch=1,EE,D0303918,extended,00000000
+patch=1,EE,20303918,extended,00000013
+
+[Max Trophies]
+patch=1,EE,20303918,extended,00000014
+
+[Max Roadrunner Bird Seeds]
+patch=1,EE,20303B44,extended,00000007
+
+[Infinite Lives (Traffic Attack)]
+patch=1,EE,2030FB98,extended,00000003
+
+[Access All Areas (Progress Will Not Be Saved.)]
+patch=1,EE,202CF804,extended,00000001
+
+[Invulnerability]
+patch=1,EE,202CF808,extended,00000001
+
+[Hens Grenades]
+patch=1,EE,202CF80C,extended,00000001
+
+[Gossamer Doors Revealed]
+patch=1,EE,202CF810,extended,00000001
+
+[Cannonball Costume]
+patch=1,EE,202CF814,extended,00000001
+
+[Duck Danger Battle Unlocked]
+patch=1,EE,202CF818,extended,00000001
+
+[Slappy Fish]
+patch=1,EE,202CF81C,extended,00000001
+
+[Duck Danger Costume]
+patch=1,EE,202CF820,extended,00000001
+
+[Wile E. Coyote Game Unlocked]
+patch=1,EE,202CF824,extended,00000001
+
+[Free Costume Doors]
+patch=1,EE,202CF828,extended,00000001
+
+[500 Granted]
+patch=1,EE,202CF82C,extended,00000001
+
+[Acme Shrink Ray]
+patch=1,EE,202CF830,extended,00000001
+
+[Unlock All Levels]
+patch=1,EE,202F6138,extended,0000001F
+
+[Quick Money Gain]
+patch=1,EE,002F613C,extended,000000FF
+
+[Max Money]
+patch=1,EE,202F613C,extended,000F423F
+
+[Warner Bros. Studios]
+patch=1,EE,102F6110,extended,000003FF
+
+[Paris & The Louvre]
+patch=1,EE,102F6114,extended,000003FF
+
+[Wooden Nickel]
+patch=1,EE,102F6118,extended,000003FF
+
+[Area 52]
+patch=1,EE,102F611C,extended,000003FF
+
+[Jungle Ruins]
+patch=1,EE,102F6120,extended,000003FF
+
+[Warner Bros. Studios]
+patch=1,EE,102F6112,extended,000003FF
+
+[Paris & The Louvre]
+patch=1,EE,102F6116,extended,000003FF
+
+[Wooden Nickel]
+patch=1,EE,102F611A,extended,000003FF
+
+[Area 52]
+patch=1,EE,102F611E,extended,000003FF
+
+[Jungle Ruins]
+patch=1,EE,102F6122,extended,000003FF
+
+[Warner Bros. Studios]
+patch=1,EE,202F6140,extended,000000FF
+
+[Paris & The Louvre]
+patch=1,EE,202F6144,extended,000001FF
+
+[Wooden Nickel]
+patch=1,EE,202F6148,extended,000001FF
+
+[Area 52]
+patch=1,EE,202F614C,extended,000001FF
+
+[Jungle Ruins]
+patch=1,EE,202F6150,extended,000003FF
+
+[Have All Michigan]
+patch=1,EE,402F6154,extended,00050001
+patch=1,EE,000FFFFF,extended,00000000
+
+[Unlock All Levels]
+patch=1,EE,202F6198,extended,0000001F
+
+[Quick Money Gain]
+patch=1,EE,002F619C,extended,000000FF
+
+[Max Money]
+patch=1,EE,202F619C,extended,000F423F
+
+[Warner Bros. Studios]
+patch=1,EE,102F6170,extended,000003FF
+
+[Paris & The Louvre]
+patch=1,EE,102F6174,extended,000003FF
+
+[Wooden Nickel]
+patch=1,EE,102F6178,extended,000003FF
+
+[Area 52]
+patch=1,EE,102F617C,extended,000003FF
+
+[Jungle Ruins]
+patch=1,EE,102F6180,extended,000003FF
+
+[Warner Bros. Studios]
+patch=1,EE,102F6172,extended,000003FF
+
+[Paris & The Louvre]
+patch=1,EE,102F6176,extended,000003FF
+
+[Wooden Nickel]
+patch=1,EE,102F617A,extended,000003FF
+
+[Area 52]
+patch=1,EE,102F617E,extended,000003FF
+
+[Jungle Ruins]
+patch=1,EE,102F6182,extended,000003FF
+
+[Warner Bros. Studios]
+patch=1,EE,202F61A0,extended,000000FF
+
+[Paris & The Louvre]
+patch=1,EE,202F61A4,extended,000001FF
+
+[Wooden Nickel]
+patch=1,EE,202F61A8,extended,000001FF
+
+[Area 52]
+patch=1,EE,202F61AC,extended,000001FF
+
+[Jungle Ruins]
+patch=1,EE,202F61B0,extended,000003FF
+
+[Have All Michigan]
+patch=1,EE,402F61B4,extended,00050001
+patch=1,EE,000FFFFF,extended,00000000
+
+[Unlock All Levels]
+patch=1,EE,202F61F8,extended,0000001F
+
+[Quick Money Gain]
+patch=1,EE,002F61FC,extended,000000FF
+
+[Max Money]
+patch=1,EE,202F61FC,extended,000F423F
+
+[Warner Bros. Studios]
+patch=1,EE,102F61D0,extended,000003FF
+
+[Paris & The Louvre]
+patch=1,EE,102F61D4,extended,000003FF
+
+[Wooden Nickel]
+patch=1,EE,102F61D8,extended,000003FF
+
+[Area 52]
+patch=1,EE,102F61DC,extended,000003FF
+
+[Jungle Ruins]
+patch=1,EE,102F61E0,extended,000003FF
+
+[Warner Bros. Studios]
+patch=1,EE,102F61D2,extended,000003FF
+
+[Paris & The Louvre]
+patch=1,EE,102F61D6,extended,000003FF
+
+[Wooden Nickel]
+patch=1,EE,102F61DA,extended,000003FF
+
+[Area 52]
+patch=1,EE,102F61DE,extended,000003FF
+
+[Jungle Ruins]
+patch=1,EE,102F61E2,extended,000003FF
+
+[Warner Bros. Studios]
+patch=1,EE,202F6200,extended,000000FF
+
+[Paris & The Louvre]
+patch=1,EE,202F6204,extended,000001FF
+
+[Wooden Nickel]
+patch=1,EE,202F6208,extended,000001FF
+
+[Area 52]
+patch=1,EE,202F620C,extended,000001FF
+
+[Jungle Ruins]
+patch=1,EE,202F6210,extended,000003FF
+
+[Have All Michigan]
+patch=1,EE,402F6214,extended,00050001
+patch=1,EE,000FFFFF,extended,00000000

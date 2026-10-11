@@ -1,0 +1,125 @@
+gametitle=Call Of Duty-Finest Hour (SLUS-20725)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90263778,extended,00832021
+patch=1,EE,90388CD8,extended,00832021
+patch=1,EE,903B62D8,extended,00832021
+
+[Unlock All Gallery/Cheats]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,20113E38,extended,FFFFFFFF
+
+[Unlock All Levels]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,20113E5C,extended,00000026
+
+[Big Heads]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,70113E34,extended,00000001
+
+[Ricochet]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,70113E34,extended,00000002
+
+[Head Shots]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,70113E34,extended,00000004
+
+[Ricohet (All)]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,70113E34,extended,00000008
+
+[Shrink Shot]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,70113E34,extended,00000010
+
+[Dead Eye]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,70113E34,extended,00000020
+
+[Big N' Small]
+patch=1,EE,D0141030,extended,00102825
+patch=1,EE,70113E34,extended,00000040
+
+[Infinite Health]
+patch=1,EE,E002B0F6,extended,00141030
+patch=1,EE,201F990C,extended,3C013F80
+patch=1,EE,201F9914,extended,AC8119BC
+
+[Infinite Health (Tank)]
+patch=1,EE,E003B0F6,extended,00141030
+patch=1,EE,203D7B8C,extended,8C822608
+patch=1,EE,203D7B90,extended,03E00008
+patch=1,EE,203D7B94,extended,AC822604
+
+[Infinite Armor (Tank)]
+patch=1,EE,E003B0F6,extended,00141030
+patch=1,EE,203D7BB4,extended,8C822610
+patch=1,EE,203D7BB8,extended,03E00008
+patch=1,EE,203D7BBC,extended,AC82260C
+
+[Infinite Ammo]
+patch=1,EE,D0141030,extended,0000B0F6
+patch=1,EE,20235A84,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,D0141030,extended,0000B0F6
+patch=1,EE,20235A80,extended,240503E7
+
+[Extra Ammo]
+patch=1,EE,D0141030,extended,0000B0F6
+patch=1,EE,20235A80,extended,00A22821
+
+[Never Reload]
+patch=1,EE,D0141030,extended,0000B0F6
+patch=1,EE,20234780,extended,00000000
+
+[Infinite Grenades]
+patch=1,EE,D0141030,extended,0000B0F6
+patch=1,EE,20231FD8,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,D0141030,extended,0000B0F6
+patch=1,EE,20231FD0,extended,24060063
+
+[Extra Grenades]
+patch=1,EE,D0141030,extended,0000B0F6
+patch=1,EE,10231FD0,extended,00000001
+
+[Infinite Health]
+patch=1,EE,200C0230,extended,3C013F80
+patch=1,EE,200C0234,extended,AC8119BC
+patch=1,EE,200C0238,extended,03E00008
+patch=1,EE,200C023C,extended,C48019BC
+patch=1,EE,201BF65C,extended,0C03008C
+
+[Infinite Ammo]
+patch=1,EE,D0141030,extended,00002825
+patch=1,EE,201F80DC,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,D0141030,extended,00002825
+patch=1,EE,201F80D8,extended,240503E7
+
+[Extra Ammo]
+patch=1,EE,D0141030,extended,00002825
+patch=1,EE,201F80D8,extended,00A22821
+
+[Never Reload]
+patch=1,EE,D0141030,extended,00002825
+patch=1,EE,201F6E18,extended,00000000
+
+[Infinite Grenades]
+patch=1,EE,D0141030,extended,00002825
+patch=1,EE,201F4688,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,D0141030,extended,00002825
+patch=1,EE,201F4680,extended,24060063
+
+[Extra Grenades]
+patch=1,EE,D0141030,extended,00002825
+patch=1,EE,101F4680,extended,00000001

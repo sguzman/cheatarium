@@ -1,0 +1,23 @@
+gametitle=Happy Feet (SLUS-21455)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011DE64,extended,0C04AC48
+
+[Unlock All Levels]
+patch=1,EE,2079AE24,extended,448D58C6
+
+[Infinite Grace Meter]
+patch=1,EE,D146E130,extended,0000F02D
+patch=1,EE,2146E174,extended,00000000
+
+[Always Low Time]
+patch=1,EE,D1211C90,extended,0000202D
+patch=1,EE,21211D7C,extended,24030001
+patch=1,EE,21211D80,extended,AC430060
+
+[Infinite Air]
+patch=1,EE,D17CEB74,extended,00002023
+patch=1,EE,217CEB78,extended,00000000

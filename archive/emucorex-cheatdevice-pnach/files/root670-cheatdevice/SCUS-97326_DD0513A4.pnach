@@ -1,0 +1,441 @@
+gametitle=MLB 2005 (SCUS-97326)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901E8B34,extended,0C07FFBD
+
+[Away Team Scores 50]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736744,extended,00000032
+
+[Away Team Scores 20]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736744,extended,00000014
+
+[Away Team Scores 0]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736744,extended,00000000
+
+[Away Team Start With 50]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736744,extended,00000000
+patch=1,EE,20736744,extended,00000032
+
+[Away Team Start With 20]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736744,extended,00000000
+patch=1,EE,20736744,extended,00000014
+
+[Away Team Start With 10]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736744,extended,00000000
+patch=1,EE,20736744,extended,0000000A
+
+[Away Team Start With 5]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736744,extended,00000000
+patch=1,EE,20736744,extended,00000005
+
+[Home Team Scores 50]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736748,extended,00000032
+
+[Home Team Scores 20]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736748,extended,00000014
+
+[Home Team Scores 0]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736748,extended,00000000
+
+[Home Team Start With 50]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736748,extended,00000000
+patch=1,EE,20736748,extended,00000032
+
+[Home Team Start With 20]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736748,extended,00000000
+patch=1,EE,20736748,extended,00000014
+
+[Home Team Start With 10]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736748,extended,00000000
+patch=1,EE,20736748,extended,0000000A
+
+[Home Team Start With 5]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736748,extended,00000000
+patch=1,EE,20736748,extended,00000005
+
+[All Runs Score For Home Team]
+patch=1,EE,D045164C,extended,0000202D
+patch=1,EE,2045165C,extended,24A50004
+
+[All Runs Score For Away Team]
+patch=1,EE,D045164C,extended,0000202D
+patch=1,EE,2045165C,extended,24A50000
+
+[Runs Score 10]
+patch=1,EE,D045164C,extended,0000202D
+patch=1,EE,10451664,extended,0000000A
+
+[Runs Score 5]
+patch=1,EE,D045164C,extended,0000202D
+patch=1,EE,10451664,extended,00000005
+
+[Runs Score 2]
+patch=1,EE,D045164C,extended,0000202D
+patch=1,EE,10451664,extended,00000002
+
+[Infinite Outs]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736738,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736738,extended,00000000
+patch=1,EE,20736738,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736738,extended,00000000
+patch=1,EE,20736738,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,2073673C,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000001
+
+[Infinite Strikes]
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736740,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736740,extended,00000000
+patch=1,EE,20736740,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736740,extended,00000000
+patch=1,EE,20736740,extended,00000001
+
+[Always Full Count]
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,2073673C,extended,00000003
+patch=1,EE,20736740,extended,00000002
+
+[Always Full Count & 2 Outs]
+patch=1,EE,E0030087,extended,0073672E
+patch=1,EE,20736738,extended,00000002
+patch=1,EE,2073673C,extended,00000003
+patch=1,EE,20736740,extended,00000002
+
+[Infinite Outs]
+patch=1,EE,E0020001,extended,50736730
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736738,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736738,extended,00000000
+patch=1,EE,20736738,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736738,extended,00000000
+patch=1,EE,20736738,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,E0020001,extended,50736730
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,2073673C,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000001
+
+[Infinite Strikes]
+patch=1,EE,E0020001,extended,50736730
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736740,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736740,extended,00000000
+patch=1,EE,20736740,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736740,extended,00000000
+patch=1,EE,20736740,extended,00000001
+
+[Always Full Count]
+patch=1,EE,E0030001,extended,50736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,2073673C,extended,00000003
+patch=1,EE,20736740,extended,00000002
+
+[Always Full Count & 2 Outs]
+patch=1,EE,E0040001,extended,50736730
+patch=1,EE,E0030087,extended,0073672E
+patch=1,EE,20736738,extended,00000002
+patch=1,EE,2073673C,extended,00000003
+patch=1,EE,20736740,extended,00000002
+
+[Infinite Outs]
+patch=1,EE,E0020001,extended,40736730
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736738,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736738,extended,00000000
+patch=1,EE,20736738,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736738,extended,00000000
+patch=1,EE,20736738,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,E0020001,extended,40736730
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,2073673C,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D073673C,extended,00000000
+patch=1,EE,2073673C,extended,00000001
+
+[Infinite Strikes]
+patch=1,EE,E0020001,extended,40736730
+patch=1,EE,E0010087,extended,0073672E
+patch=1,EE,20736740,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736740,extended,00000000
+patch=1,EE,20736740,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,D0736740,extended,00000000
+patch=1,EE,20736740,extended,00000001
+
+[Always Full Count]
+patch=1,EE,E0030001,extended,40736730
+patch=1,EE,E0020087,extended,0073672E
+patch=1,EE,2073673C,extended,00000003
+patch=1,EE,20736740,extended,00000002
+
+[Always Full Count & 2 Outs]
+patch=1,EE,E0040001,extended,40736730
+patch=1,EE,E0030087,extended,0073672E
+patch=1,EE,20736738,extended,00000002
+patch=1,EE,2073673C,extended,00000003
+patch=1,EE,20736740,extended,00000002
+
+[Infinite Points Remaining]
+patch=1,EE,D069B63C,extended,000001F5
+patch=1,EE,2069B644,extended,00000000
+
+[H/9]
+patch=1,EE,D063FE14,extended,0000202D
+patch=1,EE,2063FE1C,extended,24060063
+
+[HR/9]
+patch=1,EE,D063FEA4,extended,0000202D
+patch=1,EE,2063FEAC,extended,24060063
+
+[Stamina]
+patch=1,EE,D063FF34,extended,0000202D
+patch=1,EE,2063FF3C,extended,24060063
+
+[Pitch Clutch]
+patch=1,EE,D063FFC4,extended,0000202D
+patch=1,EE,2063FFCC,extended,24060063
+
+[K/9]
+patch=1,EE,D0640054,extended,0000202D
+patch=1,EE,2064005C,extended,24060063
+
+[Durability]
+patch=1,EE,D06400E4,extended,0000202D
+patch=1,EE,206400EC,extended,24060063
+
+[Speed]
+patch=1,EE,D0640174,extended,0000202D
+patch=1,EE,2064017C,extended,24060063
+
+[Arm Str.]
+patch=1,EE,D0640204,extended,0000202D
+patch=1,EE,2064020C,extended,24060063
+
+[Arm Acc.]
+patch=1,EE,D0640294,extended,0000202D
+patch=1,EE,2064029C,extended,24060063
+
+[Reaction]
+patch=1,EE,D0640324,extended,0000202D
+patch=1,EE,2064032C,extended,24060063
+
+[FLD Ability]
+patch=1,EE,D06403B4,extended,0000202D
+patch=1,EE,206403BC,extended,24060063
+
+[Pitch 1-Accuracy]
+patch=1,EE,D06404CC,extended,0000202D
+patch=1,EE,206404D0,extended,24050063
+
+[Pitch 1-Break]
+patch=1,EE,D06405D8,extended,0000202D
+patch=1,EE,206405DC,extended,24050063
+
+[Pitch 2-Accuracy]
+patch=1,EE,D06406EC,extended,0000202D
+patch=1,EE,206406F0,extended,24050063
+
+[Pitch 2-Break]
+patch=1,EE,D06407F8,extended,0000202D
+patch=1,EE,206407FC,extended,24050063
+
+[Pitch 3-Accuracy]
+patch=1,EE,D064090C,extended,0000202D
+patch=1,EE,20640910,extended,24050063
+
+[Pitch 3-Break]
+patch=1,EE,D0640A18,extended,0000202D
+patch=1,EE,20640A1C,extended,24050063
+
+[Pitch 4-Accuracy]
+patch=1,EE,D0640B2C,extended,0000202D
+patch=1,EE,20640B30,extended,24050063
+
+[Pitch 4-Break]
+patch=1,EE,D0640C38,extended,0000202D
+patch=1,EE,20640C3C,extended,24050063
+
+[Pitch 5-Accuracy]
+patch=1,EE,D0640D4C,extended,0000202D
+patch=1,EE,20640D50,extended,24050063
+
+[Pitch 5-Break]
+patch=1,EE,D0640E58,extended,0000202D
+patch=1,EE,20640E5C,extended,24050063
+
+[Pitches-Speed]
+patch=1,EE,D0641614,extended,0000202D
+patch=1,EE,20641618,extended,2405003C
+
+[RT Contact]
+patch=1,EE,D0641D08,extended,0000202D
+patch=1,EE,20641D10,extended,24060063
+
+[LT Contact]
+patch=1,EE,D0641D98,extended,0000202D
+patch=1,EE,20641DA0,extended,24060063
+
+[RT Power]
+patch=1,EE,D0641E28,extended,0000202D
+patch=1,EE,20641E30,extended,24060063
+
+[LT Power]
+patch=1,EE,D0641EB8,extended,0000202D
+patch=1,EE,20641EC0,extended,24060063
+
+[Plate Vision]
+patch=1,EE,D0641F48,extended,0000202D
+patch=1,EE,20641F50,extended,24060063
+
+[Plate Disc.]
+patch=1,EE,D0641FD8,extended,0000202D
+patch=1,EE,20641FE0,extended,24060063
+
+[Clutch]
+patch=1,EE,D0642068,extended,0000202D
+patch=1,EE,20642070,extended,24060063
+
+[Durability]
+patch=1,EE,D06420F8,extended,0000202D
+patch=1,EE,20642100,extended,24060063
+
+[Speed]
+patch=1,EE,D0642188,extended,0000202D
+patch=1,EE,20642190,extended,24060063
+
+[Arm Str.]
+patch=1,EE,D0642218,extended,0000202D
+patch=1,EE,20642220,extended,24060063
+
+[Arm Acc.]
+patch=1,EE,D06422A8,extended,0000202D
+patch=1,EE,206422B0,extended,24060063
+
+[Reaction]
+patch=1,EE,D0642338,extended,0000202D
+patch=1,EE,20642340,extended,24060063
+
+[FLD Ability]
+patch=1,EE,D06423C8,extended,0000202D
+patch=1,EE,206423D0,extended,24060063
+
+[BR Ability]
+patch=1,EE,D0642458,extended,0000202D
+patch=1,EE,20642460,extended,24060063
+
+[BR Agg.]
+patch=1,EE,D06424E8,extended,0000202D
+patch=1,EE,206424F0,extended,24060063

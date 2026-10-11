@@ -1,0 +1,1033 @@
+gametitle=All-Star Baseball 2004 (SLUS-20569)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90418364,extended,0C10782E
+
+[Home Team Box Scores 50]
+patch=1,EE,200C0290,extended,24010032
+patch=1,EE,200C0294,extended,080794A8
+patch=1,EE,200C0298,extended,A6210780
+patch=1,EE,201E6AF4,extended,0C0300A8
+
+[Home Team Box Scores 20]
+patch=1,EE,200C0290,extended,24010014
+patch=1,EE,200C0294,extended,080794A8
+patch=1,EE,200C0298,extended,A6210780
+patch=1,EE,201E6AF4,extended,0C0300A8
+
+[Home Team Box Scores 0]
+patch=1,EE,200C0290,extended,24010000
+patch=1,EE,200C0294,extended,080794A8
+patch=1,EE,200C0298,extended,A6210780
+patch=1,EE,201E6AF4,extended,0C0300A8
+
+[Away Team Box Scores 50]
+patch=1,EE,200C0280,extended,24010032
+patch=1,EE,200C0284,extended,080794A8
+patch=1,EE,200C0288,extended,A621077E
+patch=1,EE,201E6AC0,extended,0C0300A0
+
+[Away Team Box Scores 20]
+patch=1,EE,200C0280,extended,24010014
+patch=1,EE,200C0284,extended,080794A8
+patch=1,EE,200C0288,extended,A621077E
+patch=1,EE,201E6AC0,extended,0C0300A0
+
+[Away Team Box Scores 0]
+patch=1,EE,200C0280,extended,24010000
+patch=1,EE,200C0284,extended,080794A8
+patch=1,EE,200C0288,extended,A621077E
+patch=1,EE,201E6AC0,extended,0C0300A0
+
+[Infinite Strikes]
+patch=1,EE,201E6AB8,extended,A2200130
+
+[1 Strike And You Are Out]
+patch=1,EE,200C0220,extended,92260130
+patch=1,EE,200C0224,extended,50C00001
+patch=1,EE,200C0228,extended,24060002
+patch=1,EE,200C022C,extended,03E00008
+patch=1,EE,200C0230,extended,A2260130
+patch=1,EE,201E6AB8,extended,0C030088
+
+[2 Strikes And You Are Out]
+patch=1,EE,200C0220,extended,92260130
+patch=1,EE,200C0224,extended,50C00001
+patch=1,EE,200C0228,extended,24060001
+patch=1,EE,200C022C,extended,03E00008
+patch=1,EE,200C0230,extended,A2260130
+patch=1,EE,201E6AB8,extended,0C030088
+
+[Infinite Balls]
+patch=1,EE,201E6B20,extended,A2200131
+
+[1 Ball And You Walk]
+patch=1,EE,200C0240,extended,92260131
+patch=1,EE,200C0244,extended,50C00001
+patch=1,EE,200C0248,extended,24060003
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,A2260131
+patch=1,EE,201E6B20,extended,0C030090
+
+[2 Balls And You Walk]
+patch=1,EE,200C0240,extended,92260131
+patch=1,EE,200C0244,extended,50C00001
+patch=1,EE,200C0248,extended,24060002
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,A2260131
+patch=1,EE,201E6B20,extended,0C030090
+
+[3 Balls And You Walk]
+patch=1,EE,200C0240,extended,92260131
+patch=1,EE,200C0244,extended,50C00001
+patch=1,EE,200C0248,extended,24060001
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,A2260131
+patch=1,EE,201E6B20,extended,0C030090
+
+[Infinite Outs]
+patch=1,EE,201E6AEC,extended,A2200132
+
+[1 Out And You Are Out]
+patch=1,EE,200C0260,extended,92260132
+patch=1,EE,200C0264,extended,50C00001
+patch=1,EE,200C0268,extended,24060002
+patch=1,EE,200C026C,extended,03E00008
+patch=1,EE,200C0270,extended,A2260132
+patch=1,EE,201E6AEC,extended,0C030098
+
+[2 Outs And You Are Out]
+patch=1,EE,200C0260,extended,92260132
+patch=1,EE,200C0264,extended,50C00001
+patch=1,EE,200C0268,extended,24060001
+patch=1,EE,200C026C,extended,03E00008
+patch=1,EE,200C0270,extended,A2260132
+patch=1,EE,201E6AEC,extended,0C030098
+
+[All Runs Score For Away Team]
+patch=1,EE,2010D534,extended,24020000
+
+[All Runs Score For Home Team]
+patch=1,EE,2010D534,extended,24020002
+
+[Runs Score 10]
+patch=1,EE,1010D540,extended,0000000A
+
+[Runs Score 5]
+patch=1,EE,1010D540,extended,00000005
+
+[Runs Score 2]
+patch=1,EE,1010D540,extended,00000002
+
+[Infinite Trading Card Points]
+patch=1,EE,106654D0,extended,0000FFFF
+
+[Max Trading Card Points]
+patch=1,EE,206654D0,extended,05F5E0FF
+
+[Have All Trading Cards]
+patch=1,EE,406654D4,extended,00450001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,106655E8,extended,00006363
+patch=1,EE,006655EA,extended,00000063
+
+[No Cheats Allowed]
+patch=1,EE,20629A54,extended,00000000
+
+[Maximum Height]
+patch=1,EE,20629A54,extended,00000001
+
+[Minimum Height]
+patch=1,EE,20629A54,extended,00000002
+
+[Maximum Weight]
+patch=1,EE,20629A54,extended,00000003
+
+[Minimum Weight]
+patch=1,EE,20629A54,extended,00000004
+
+[Hockey Helmets]
+patch=1,EE,20629A54,extended,00000005
+
+[Stickball Bat]
+patch=1,EE,20629A54,extended,00000006
+
+[Aluminum Bat]
+patch=1,EE,20629A54,extended,00000007
+
+[Backwards Hats]
+patch=1,EE,20629A54,extended,00000008
+
+[Football Helmets]
+patch=1,EE,20629A54,extended,00000009
+
+[Bobble Heads]
+patch=1,EE,20629A54,extended,0000000A
+
+[Big Feet]
+patch=1,EE,20629A54,extended,0000000B
+
+[Big Legs]
+patch=1,EE,20629A54,extended,0000000C
+
+[Big Arms]
+patch=1,EE,20629A54,extended,0000000D
+
+[Big Hands]
+patch=1,EE,20629A54,extended,0000000E
+
+[Paper People]
+patch=1,EE,20629A54,extended,0000000F
+
+[Overtime Broom]
+patch=1,EE,20629A54,extended,00000010
+
+[Have All Scenario Gold Medals]
+patch=1,EE,40665660,extended,00050001
+patch=1,EE,04040404,extended,00000000
+
+[Unlock All Movies]
+patch=1,EE,406655DC,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,106655E8,extended,00000101
+patch=1,EE,006655EA,extended,00000001
+
+[Slot 1]
+patch=1,EE,006654D4,extended,00000063
+
+[Slot 2]
+patch=1,EE,006654D5,extended,00000063
+
+[Slot 3]
+patch=1,EE,006654D6,extended,00000063
+
+[Slot 4]
+patch=1,EE,006654D7,extended,00000063
+
+[Slot 5]
+patch=1,EE,006654D8,extended,00000063
+
+[Slot 6]
+patch=1,EE,006654D9,extended,00000063
+
+[Slot 7]
+patch=1,EE,006654DA,extended,00000063
+
+[Slot 8]
+patch=1,EE,006654DB,extended,00000063
+
+[Slot 9]
+patch=1,EE,006654DC,extended,00000063
+
+[Slot 10]
+patch=1,EE,006654DD,extended,00000063
+
+[Slot 11]
+patch=1,EE,006654DE,extended,00000063
+
+[Slot 12]
+patch=1,EE,006654DF,extended,00000063
+
+[Slot 13]
+patch=1,EE,006654E0,extended,00000063
+
+[Slot 14]
+patch=1,EE,006654E1,extended,00000063
+
+[Slot 15]
+patch=1,EE,006654E2,extended,00000063
+
+[Slot 16]
+patch=1,EE,006654E3,extended,00000063
+
+[Slot 17]
+patch=1,EE,006654E4,extended,00000063
+
+[Slot 18]
+patch=1,EE,006654E5,extended,00000063
+
+[Slot 19]
+patch=1,EE,006654E6,extended,00000063
+
+[Slot 20]
+patch=1,EE,006654E7,extended,00000063
+
+[Slot 21]
+patch=1,EE,006654E8,extended,00000063
+
+[Slot 22]
+patch=1,EE,006654E9,extended,00000063
+
+[Slot 23]
+patch=1,EE,006654EA,extended,00000063
+
+[Slot 24]
+patch=1,EE,006654EB,extended,00000063
+
+[Slot 25]
+patch=1,EE,006654EC,extended,00000063
+
+[Slot 26]
+patch=1,EE,006654ED,extended,00000063
+
+[Slot 27]
+patch=1,EE,006654EE,extended,00000063
+
+[Slot 28]
+patch=1,EE,006654EF,extended,00000063
+
+[Slot 29]
+patch=1,EE,006654F0,extended,00000063
+
+[Slot 30]
+patch=1,EE,006654F1,extended,00000063
+
+[Slot 31]
+patch=1,EE,006654F2,extended,00000063
+
+[Slot 32]
+patch=1,EE,006654F3,extended,00000063
+
+[Slot 33]
+patch=1,EE,006654F4,extended,00000063
+
+[Slot 34]
+patch=1,EE,006654F5,extended,00000063
+
+[Slot 35]
+patch=1,EE,006654F6,extended,00000063
+
+[Slot 36]
+patch=1,EE,006654F7,extended,00000063
+
+[Slot 37]
+patch=1,EE,006654F8,extended,00000063
+
+[Slot 38]
+patch=1,EE,006654F9,extended,00000063
+
+[Slot 39]
+patch=1,EE,006654FA,extended,00000063
+
+[Slot 40]
+patch=1,EE,006654FB,extended,00000063
+
+[Slot 41]
+patch=1,EE,006654FC,extended,00000063
+
+[Slot 42]
+patch=1,EE,006654FD,extended,00000063
+
+[Slot 43]
+patch=1,EE,006654FE,extended,00000063
+
+[Slot 44]
+patch=1,EE,006654FF,extended,00000063
+
+[Slot 45]
+patch=1,EE,00665500,extended,00000063
+
+[Slot 46]
+patch=1,EE,00665501,extended,00000063
+
+[Slot 47]
+patch=1,EE,00665502,extended,00000063
+
+[Slot 48]
+patch=1,EE,00665503,extended,00000063
+
+[Slot 49]
+patch=1,EE,00665504,extended,00000063
+
+[Slot 50]
+patch=1,EE,00665505,extended,00000063
+
+[Slot 51]
+patch=1,EE,00665506,extended,00000063
+
+[Slot 52]
+patch=1,EE,00665507,extended,00000063
+
+[Slot 53]
+patch=1,EE,00665508,extended,00000063
+
+[Slot 54]
+patch=1,EE,00665509,extended,00000063
+
+[Slot 55]
+patch=1,EE,0066550A,extended,00000063
+
+[Slot 56]
+patch=1,EE,0066550B,extended,00000063
+
+[Slot 57]
+patch=1,EE,0066550C,extended,00000063
+
+[Slot 58]
+patch=1,EE,0066550D,extended,00000063
+
+[Slot 59]
+patch=1,EE,0066550E,extended,00000063
+
+[Slot 60]
+patch=1,EE,0066550F,extended,00000063
+
+[Slot 61]
+patch=1,EE,00665510,extended,00000063
+
+[Slot 62]
+patch=1,EE,00665511,extended,00000063
+
+[Slot 63]
+patch=1,EE,00665512,extended,00000063
+
+[Slot 64]
+patch=1,EE,00665513,extended,00000063
+
+[Slot 65]
+patch=1,EE,00665514,extended,00000063
+
+[Slot 66]
+patch=1,EE,00665515,extended,00000063
+
+[Slot 67]
+patch=1,EE,00665516,extended,00000063
+
+[Slot 68]
+patch=1,EE,00665517,extended,00000063
+
+[Slot 69]
+patch=1,EE,00665518,extended,00000063
+
+[Slot 70]
+patch=1,EE,00665519,extended,00000063
+
+[Slot 71]
+patch=1,EE,0066551A,extended,00000063
+
+[Slot 72]
+patch=1,EE,0066551B,extended,00000063
+
+[Slot 73]
+patch=1,EE,0066551C,extended,00000063
+
+[Slot 74]
+patch=1,EE,0066551D,extended,00000063
+
+[Slot 75]
+patch=1,EE,0066551E,extended,00000063
+
+[Slot 76]
+patch=1,EE,0066551F,extended,00000063
+
+[Slot 77]
+patch=1,EE,00665520,extended,00000063
+
+[Slot 78]
+patch=1,EE,00665521,extended,00000063
+
+[Slot 79]
+patch=1,EE,00665522,extended,00000063
+
+[Slot 80]
+patch=1,EE,00665523,extended,00000063
+
+[Slot 81]
+patch=1,EE,00665524,extended,00000063
+
+[Slot 82]
+patch=1,EE,00665525,extended,00000063
+
+[Slot 83]
+patch=1,EE,00665526,extended,00000063
+
+[Slot 84]
+patch=1,EE,00665527,extended,00000063
+
+[Slot 85]
+patch=1,EE,00665528,extended,00000063
+
+[Slot 86]
+patch=1,EE,00665529,extended,00000063
+
+[Slot 87]
+patch=1,EE,0066552A,extended,00000063
+
+[Slot 88]
+patch=1,EE,0066552B,extended,00000063
+
+[Slot 89]
+patch=1,EE,0066552C,extended,00000063
+
+[Slot 90]
+patch=1,EE,0066552D,extended,00000063
+
+[Slot 91]
+patch=1,EE,0066552E,extended,00000063
+
+[Slot 92]
+patch=1,EE,0066552F,extended,00000063
+
+[Slot 93]
+patch=1,EE,00665530,extended,00000063
+
+[Slot 94]
+patch=1,EE,00665531,extended,00000063
+
+[Slot 95]
+patch=1,EE,00665532,extended,00000063
+
+[Slot 96]
+patch=1,EE,00665533,extended,00000063
+
+[Slot 97]
+patch=1,EE,00665534,extended,00000063
+
+[Slot 98]
+patch=1,EE,00665535,extended,00000063
+
+[Slot 99]
+patch=1,EE,00665536,extended,00000063
+
+[Slot 100]
+patch=1,EE,00665537,extended,00000063
+
+[Slot 101]
+patch=1,EE,00665538,extended,00000063
+
+[Slot 102]
+patch=1,EE,00665539,extended,00000063
+
+[Slot 103]
+patch=1,EE,0066553A,extended,00000063
+
+[Slot 104]
+patch=1,EE,0066553B,extended,00000063
+
+[Slot 105]
+patch=1,EE,0066553C,extended,00000063
+
+[Slot 106]
+patch=1,EE,0066553D,extended,00000063
+
+[Slot 107]
+patch=1,EE,0066553E,extended,00000063
+
+[Slot 108]
+patch=1,EE,0066553F,extended,00000063
+
+[Slot 109]
+patch=1,EE,00665540,extended,00000063
+
+[Slot 110]
+patch=1,EE,00665541,extended,00000063
+
+[Slot 111]
+patch=1,EE,00665542,extended,00000063
+
+[Slot 112]
+patch=1,EE,00665543,extended,00000063
+
+[Slot 113]
+patch=1,EE,00665544,extended,00000063
+
+[Slot 114]
+patch=1,EE,00665545,extended,00000063
+
+[Slot 115]
+patch=1,EE,00665546,extended,00000063
+
+[Slot 116]
+patch=1,EE,00665547,extended,00000063
+
+[Slot 117]
+patch=1,EE,00665548,extended,00000063
+
+[Slot 118]
+patch=1,EE,00665549,extended,00000063
+
+[Slot 119]
+patch=1,EE,0066554A,extended,00000063
+
+[Slot 120]
+patch=1,EE,0066554B,extended,00000063
+
+[Slot 121]
+patch=1,EE,0066554C,extended,00000063
+
+[Slot 122]
+patch=1,EE,0066554D,extended,00000063
+
+[Slot 123]
+patch=1,EE,0066554E,extended,00000063
+
+[Slot 124]
+patch=1,EE,0066554F,extended,00000063
+
+[Slot 125]
+patch=1,EE,00665550,extended,00000063
+
+[Slot 126]
+patch=1,EE,00665551,extended,00000063
+
+[Slot 127]
+patch=1,EE,00665552,extended,00000063
+
+[Slot 128]
+patch=1,EE,00665553,extended,00000063
+
+[Slot 129]
+patch=1,EE,00665554,extended,00000063
+
+[Slot 130]
+patch=1,EE,00665555,extended,00000063
+
+[Slot 131]
+patch=1,EE,00665556,extended,00000063
+
+[Slot 132]
+patch=1,EE,00665557,extended,00000063
+
+[Slot 133]
+patch=1,EE,00665558,extended,00000063
+
+[Slot 134]
+patch=1,EE,00665559,extended,00000063
+
+[Slot 135]
+patch=1,EE,0066555A,extended,00000063
+
+[Slot 136]
+patch=1,EE,0066555B,extended,00000063
+
+[Slot 137]
+patch=1,EE,0066555C,extended,00000063
+
+[Slot 138]
+patch=1,EE,0066555D,extended,00000063
+
+[Slot 139]
+patch=1,EE,0066555E,extended,00000063
+
+[Slot 140]
+patch=1,EE,0066555F,extended,00000063
+
+[Slot 141]
+patch=1,EE,00665560,extended,00000063
+
+[Slot 142]
+patch=1,EE,00665561,extended,00000063
+
+[Slot 143]
+patch=1,EE,00665562,extended,00000063
+
+[Slot 144]
+patch=1,EE,00665563,extended,00000063
+
+[Slot 145]
+patch=1,EE,00665564,extended,00000063
+
+[Slot 146]
+patch=1,EE,00665565,extended,00000063
+
+[Slot 147]
+patch=1,EE,00665566,extended,00000063
+
+[Slot 148]
+patch=1,EE,00665567,extended,00000063
+
+[Slot 149]
+patch=1,EE,00665568,extended,00000063
+
+[Slot 150]
+patch=1,EE,00665569,extended,00000063
+
+[Slot 151]
+patch=1,EE,0066556A,extended,00000063
+
+[Slot 152]
+patch=1,EE,0066556B,extended,00000063
+
+[Slot 153]
+patch=1,EE,0066556C,extended,00000063
+
+[Slot 154]
+patch=1,EE,0066556D,extended,00000063
+
+[Slot 155]
+patch=1,EE,0066556E,extended,00000063
+
+[Slot 156]
+patch=1,EE,0066556F,extended,00000063
+
+[Slot 157]
+patch=1,EE,00665570,extended,00000063
+
+[Slot 158]
+patch=1,EE,00665571,extended,00000063
+
+[Slot 159]
+patch=1,EE,00665572,extended,00000063
+
+[Slot 160]
+patch=1,EE,00665573,extended,00000063
+
+[Slot 161]
+patch=1,EE,00665574,extended,00000063
+
+[Slot 162]
+patch=1,EE,00665575,extended,00000063
+
+[Slot 163]
+patch=1,EE,00665576,extended,00000063
+
+[Slot 164]
+patch=1,EE,00665577,extended,00000063
+
+[Slot 165]
+patch=1,EE,00665578,extended,00000063
+
+[Slot 166]
+patch=1,EE,00665579,extended,00000063
+
+[Slot 167]
+patch=1,EE,0066557A,extended,00000063
+
+[Slot 168]
+patch=1,EE,0066557B,extended,00000063
+
+[Slot 169]
+patch=1,EE,0066557C,extended,00000063
+
+[Slot 170]
+patch=1,EE,0066557D,extended,00000063
+
+[Slot 171]
+patch=1,EE,0066557E,extended,00000063
+
+[Slot 172]
+patch=1,EE,0066557F,extended,00000063
+
+[Slot 173]
+patch=1,EE,00665580,extended,00000063
+
+[Slot 174]
+patch=1,EE,00665581,extended,00000063
+
+[Slot 175]
+patch=1,EE,00665582,extended,00000063
+
+[Slot 176]
+patch=1,EE,00665583,extended,00000063
+
+[Slot 177]
+patch=1,EE,00665584,extended,00000063
+
+[Slot 178]
+patch=1,EE,00665585,extended,00000063
+
+[Slot 179]
+patch=1,EE,00665586,extended,00000063
+
+[Slot 180]
+patch=1,EE,00665587,extended,00000063
+
+[Slot 181]
+patch=1,EE,00665588,extended,00000063
+
+[Slot 182]
+patch=1,EE,00665589,extended,00000063
+
+[Slot 183]
+patch=1,EE,0066558A,extended,00000063
+
+[Slot 184]
+patch=1,EE,0066558B,extended,00000063
+
+[Slot 185]
+patch=1,EE,0066558C,extended,00000063
+
+[Slot 186]
+patch=1,EE,0066558D,extended,00000063
+
+[Slot 187]
+patch=1,EE,0066558E,extended,00000063
+
+[Slot 188]
+patch=1,EE,0066558F,extended,00000063
+
+[Slot 189]
+patch=1,EE,00665590,extended,00000063
+
+[Slot 190]
+patch=1,EE,00665591,extended,00000063
+
+[Slot 191]
+patch=1,EE,00665592,extended,00000063
+
+[Slot 192]
+patch=1,EE,00665593,extended,00000063
+
+[Slot 193]
+patch=1,EE,00665594,extended,00000063
+
+[Slot 194]
+patch=1,EE,00665595,extended,00000063
+
+[Slot 195]
+patch=1,EE,00665596,extended,00000063
+
+[Slot 196]
+patch=1,EE,00665597,extended,00000063
+
+[Slot 197]
+patch=1,EE,00665598,extended,00000063
+
+[Slot 198]
+patch=1,EE,00665599,extended,00000063
+
+[Slot 199]
+patch=1,EE,0066559A,extended,00000063
+
+[Slot 200]
+patch=1,EE,0066559B,extended,00000063
+
+[Slot 201]
+patch=1,EE,0066559C,extended,00000063
+
+[Slot 202]
+patch=1,EE,0066559D,extended,00000063
+
+[Slot 203]
+patch=1,EE,0066559E,extended,00000063
+
+[Slot 204]
+patch=1,EE,0066559F,extended,00000063
+
+[Slot 205]
+patch=1,EE,006655A0,extended,00000063
+
+[Slot 206]
+patch=1,EE,006655A1,extended,00000063
+
+[Slot 207]
+patch=1,EE,006655A2,extended,00000063
+
+[Slot 208]
+patch=1,EE,006655A3,extended,00000063
+
+[Slot 209]
+patch=1,EE,006655A4,extended,00000063
+
+[Slot 210]
+patch=1,EE,006655A5,extended,00000063
+
+[Slot 211]
+patch=1,EE,006655A6,extended,00000063
+
+[Slot 212]
+patch=1,EE,006655A7,extended,00000063
+
+[Slot 213]
+patch=1,EE,006655A8,extended,00000063
+
+[Slot 214]
+patch=1,EE,006655A9,extended,00000063
+
+[Slot 215]
+patch=1,EE,006655AA,extended,00000063
+
+[Slot 216]
+patch=1,EE,006655AB,extended,00000063
+
+[Slot 217]
+patch=1,EE,006655AC,extended,00000063
+
+[Slot 218]
+patch=1,EE,006655AD,extended,00000063
+
+[Slot 219]
+patch=1,EE,006655AE,extended,00000063
+
+[Slot 220]
+patch=1,EE,006655AF,extended,00000063
+
+[Slot 221]
+patch=1,EE,006655B0,extended,00000063
+
+[Slot 222]
+patch=1,EE,006655B1,extended,00000063
+
+[Slot 223]
+patch=1,EE,006655B2,extended,00000063
+
+[Slot 224]
+patch=1,EE,006655B3,extended,00000063
+
+[Slot 225]
+patch=1,EE,006655B4,extended,00000063
+
+[Slot 226]
+patch=1,EE,006655B5,extended,00000063
+
+[Slot 227]
+patch=1,EE,006655B6,extended,00000063
+
+[Slot 228]
+patch=1,EE,006655B7,extended,00000063
+
+[Slot 229]
+patch=1,EE,006655B8,extended,00000063
+
+[Slot 230]
+patch=1,EE,006655B9,extended,00000063
+
+[Slot 231]
+patch=1,EE,006655BA,extended,00000063
+
+[Slot 232]
+patch=1,EE,006655BB,extended,00000063
+
+[Slot 233]
+patch=1,EE,006655BC,extended,00000063
+
+[Slot 234]
+patch=1,EE,006655BD,extended,00000063
+
+[Slot 235]
+patch=1,EE,006655BE,extended,00000063
+
+[Slot 236]
+patch=1,EE,006655BF,extended,00000063
+
+[Slot 237]
+patch=1,EE,006655C0,extended,00000063
+
+[Slot 238]
+patch=1,EE,006655C1,extended,00000063
+
+[Slot 239]
+patch=1,EE,006655C2,extended,00000063
+
+[Slot 240]
+patch=1,EE,006655C3,extended,00000063
+
+[Slot 241]
+patch=1,EE,006655C4,extended,00000063
+
+[Slot 242]
+patch=1,EE,006655C5,extended,00000063
+
+[Slot 243]
+patch=1,EE,006655C6,extended,00000063
+
+[Slot 244]
+patch=1,EE,006655C7,extended,00000063
+
+[Slot 245]
+patch=1,EE,006655C8,extended,00000063
+
+[Slot 246]
+patch=1,EE,006655C9,extended,00000063
+
+[Slot 247]
+patch=1,EE,006655CA,extended,00000063
+
+[Slot 248]
+patch=1,EE,006655CB,extended,00000063
+
+[Slot 249]
+patch=1,EE,006655CC,extended,00000063
+
+[Slot 250]
+patch=1,EE,006655CD,extended,00000063
+
+[Slot 251]
+patch=1,EE,006655CE,extended,00000063
+
+[Slot 252]
+patch=1,EE,006655CF,extended,00000063
+
+[Slot 253]
+patch=1,EE,006655D0,extended,00000063
+
+[Slot 254]
+patch=1,EE,006655D1,extended,00000063
+
+[Slot 255]
+patch=1,EE,006655D2,extended,00000063
+
+[Slot 256]
+patch=1,EE,006655D3,extended,00000063
+
+[Slot 257]
+patch=1,EE,006655D4,extended,00000063
+
+[Slot 258]
+patch=1,EE,006655D5,extended,00000063
+
+[Slot 259]
+patch=1,EE,006655D6,extended,00000063
+
+[Slot 260]
+patch=1,EE,006655D7,extended,00000063
+
+[Slot 261]
+patch=1,EE,006655D8,extended,00000063
+
+[Slot 262]
+patch=1,EE,006655D9,extended,00000063
+
+[Slot 263]
+patch=1,EE,006655DA,extended,00000063
+
+[Slot 264]
+patch=1,EE,006655DB,extended,00000063
+
+[Slot 265]
+patch=1,EE,006655DC,extended,00000063
+
+[Slot 266]
+patch=1,EE,006655DD,extended,00000063
+
+[Slot 267]
+patch=1,EE,006655DE,extended,00000063
+
+[Slot 268]
+patch=1,EE,006655DF,extended,00000063
+
+[Slot 269]
+patch=1,EE,006655E0,extended,00000063
+
+[Slot 270]
+patch=1,EE,006655E1,extended,00000063
+
+[Slot 271]
+patch=1,EE,006655E2,extended,00000063
+
+[Slot 272]
+patch=1,EE,006655E3,extended,00000063
+
+[Slot 273]
+patch=1,EE,006655E4,extended,00000063
+
+[Slot 274]
+patch=1,EE,006655E5,extended,00000063
+
+[Slot 275]
+patch=1,EE,006655E6,extended,00000063
+
+[Slot 276]
+patch=1,EE,006655E7,extended,00000063
+
+[Slot 277]
+patch=1,EE,006655E8,extended,00000063
+
+[Slot 278]
+patch=1,EE,006655E9,extended,00000063
+
+[Slot 279]
+patch=1,EE,006655EA,extended,00000063

@@ -1,0 +1,110 @@
+gametitle=MVP Baseball 2003 (SLUS-20650)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90520644,extended,0C14B3BB
+
+[Home Team Box Scores 50]
+patch=1,EE,200C0250,extended,24040032
+patch=1,EE,200C0254,extended,080FBD2C
+patch=1,EE,200C0258,extended,AC440010
+patch=1,EE,2036A5F0,extended,0C030094
+
+[Home Team Box Scores 20]
+patch=1,EE,200C0250,extended,24040014
+patch=1,EE,200C0254,extended,080FBD2C
+patch=1,EE,200C0258,extended,AC440010
+patch=1,EE,2036A5F0,extended,0C030094
+
+[Home Team Box Scores 0]
+patch=1,EE,200C0250,extended,24040000
+patch=1,EE,200C0254,extended,080FBD2C
+patch=1,EE,200C0258,extended,AC440010
+patch=1,EE,2036A5F0,extended,0C030094
+
+[Away Team Box Scores 50]
+patch=1,EE,200C0260,extended,24040032
+patch=1,EE,200C0264,extended,080FBD2C
+patch=1,EE,200C0268,extended,AE440000
+patch=1,EE,2036A64C,extended,0C030098
+
+[Away Team Box Scores 20]
+patch=1,EE,200C0260,extended,24040014
+patch=1,EE,200C0264,extended,080FBD2C
+patch=1,EE,200C0268,extended,AE440000
+patch=1,EE,2036A64C,extended,0C030098
+
+[Away Team Box Scores 0]
+patch=1,EE,200C0260,extended,24040000
+patch=1,EE,200C0264,extended,080FBD2C
+patch=1,EE,200C0268,extended,AE440000
+patch=1,EE,2036A64C,extended,0C030098
+
+[Infinite Strikes]
+patch=1,EE,200C0220,extended,24040000
+patch=1,EE,200C0228,extended,080FBD2C
+patch=1,EE,200C022C,extended,AE840010
+patch=1,EE,2036A56C,extended,0C030088
+
+[1 Strike And You Are Out]
+patch=1,EE,200C0220,extended,50800001
+patch=1,EE,200C0224,extended,24040002
+patch=1,EE,200C0228,extended,080FBD2C
+patch=1,EE,200C022C,extended,8E840010
+patch=1,EE,2036A56C,extended,0C030088
+
+[2 Strikes And You Are Out]
+patch=1,EE,200C0220,extended,50800001
+patch=1,EE,200C0224,extended,24040001
+patch=1,EE,200C0228,extended,080FBD2C
+patch=1,EE,200C022C,extended,8E840010
+patch=1,EE,2036A56C,extended,0C030088
+
+[Infinite Balls]
+patch=1,EE,200C0230,extended,24040000
+patch=1,EE,200C0238,extended,080FBD2C
+patch=1,EE,200C023C,extended,AE84000C
+patch=1,EE,2036A580,extended,0C03008C
+
+[1 Ball And You Walk]
+patch=1,EE,200C0230,extended,50800001
+patch=1,EE,200C0234,extended,24040003
+patch=1,EE,200C0238,extended,080FBD2C
+patch=1,EE,200C023C,extended,8E84000C
+patch=1,EE,2036A580,extended,0C03008C
+
+[2 Balls And You Walk]
+patch=1,EE,200C0230,extended,50800001
+patch=1,EE,200C0234,extended,24040002
+patch=1,EE,200C0238,extended,080FBD2C
+patch=1,EE,200C023C,extended,8E84000C
+patch=1,EE,2036A580,extended,0C03008C
+
+[3 Balls And You Walk]
+patch=1,EE,200C0230,extended,50800001
+patch=1,EE,200C0234,extended,24040001
+patch=1,EE,200C0238,extended,080FBD2C
+patch=1,EE,200C023C,extended,8E84000C
+patch=1,EE,2036A580,extended,0C03008C
+
+[Infinite Balls]
+patch=1,EE,200C0240,extended,24040000
+patch=1,EE,200C0248,extended,080FBD2C
+patch=1,EE,200C024C,extended,AE84001C
+patch=1,EE,2036A594,extended,0C030090
+
+[1 Out And You Are Out]
+patch=1,EE,200C0240,extended,50800001
+patch=1,EE,200C0244,extended,24040002
+patch=1,EE,200C0248,extended,080FBD2C
+patch=1,EE,200C024C,extended,8E84001C
+patch=1,EE,2036A594,extended,0C030090
+
+[2 Outs And You Are Out]
+patch=1,EE,200C0240,extended,50800001
+patch=1,EE,200C0244,extended,24040001
+patch=1,EE,200C0248,extended,080FBD2C
+patch=1,EE,200C024C,extended,8E84001C
+patch=1,EE,2036A594,extended,0C030090

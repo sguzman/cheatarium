@@ -1,0 +1,291 @@
+gametitle=R-Racing Evolution (SLUS-20721)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903DBA34,extended,0C0FFC85
+
+[Infinite RP]
+patch=1,EE,104FDBA4,extended,0000FFFF
+
+[Max RP]
+patch=1,EE,204FDBA4,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease RP]
+patch=1,EE,2021D8E0,extended,00000000
+
+[Buying Items Increases RP]
+patch=1,EE,2021D8D8,extended,00C43023
+
+[Always Low Lap Time]
+patch=1,EE,202F63EC,extended,AC400060
+
+[Unlock All Chapters/Movies]
+patch=1,EE,404FE3D4,extended,000E0001
+patch=1,EE,00000001,extended,00000000
+
+[White Pantera CTS 5]
+patch=1,EE,204FD30C,extended,00000001
+
+[Orange Pantera CTS 5]
+patch=1,EE,204FD310,extended,00000001
+
+[Light Blue Pantera CTS 5]
+patch=1,EE,204FD318,extended,00000001
+
+[Orange Acura RSX Type-S (DC5)]
+patch=1,EE,204FD324,extended,00000001
+
+[White Acura RSX Type-S (DC5)]
+patch=1,EE,204FD328,extended,00000001
+
+[Blue Acura RSX Type-S (DC5)]
+patch=1,EE,204FD330,extended,00000001
+
+[Red Mini Cooper S]
+patch=1,EE,204FD33C,extended,00000001
+
+[White Mini Cooper S]
+patch=1,EE,204FD340,extended,00000001
+
+[Blue Mini Cooper S]
+patch=1,EE,204FD348,extended,00000001
+
+[Orange Audi TT 1.8T]
+patch=1,EE,204FD354,extended,00000001
+
+[Red Audi TT 1.8T]
+patch=1,EE,204FD358,extended,00000001
+
+[White Audi TT 1.8T]
+patch=1,EE,204FD360,extended,00000001
+
+[Green Lotus Sports Elise]
+patch=1,EE,204FD36C,extended,00000001
+
+[Black Lotus Sports Elise]
+patch=1,EE,204FD370,extended,00000001
+
+[White Lotus Sports Elise]
+patch=1,EE,204FD378,extended,00000001
+
+[Orange Toyota VM 180]
+patch=1,EE,204FD384,extended,00000001
+
+[Blue Toyota VM 180]
+patch=1,EE,204FD388,extended,00000001
+
+[White Toyota VM 180]
+patch=1,EE,204FD390,extended,00000001
+
+[Red Alfa Romeo 156 GTA]
+patch=1,EE,204FD39C,extended,00000001
+
+[Bright Red Alfa Romeo 156 GTA]
+patch=1,EE,204FD3A8,extended,00000001
+
+[White BMW M3 GTR]
+patch=1,EE,204FD3B4,extended,00000001
+
+[Red BMW M3 GTR]
+patch=1,EE,204FD3C0,extended,00000001
+
+[White Honda S2000]
+patch=1,EE,204FD3CC,extended,00000001
+
+[Yellow Honda S2000]
+patch=1,EE,204FD3D0,extended,00000001
+
+[Dark Blue Honda S2000]
+patch=1,EE,204FD3D8,extended,00000001
+
+[Blue Mazda RX-7]
+patch=1,EE,204FD3E4,extended,00000001
+
+[Red Mazda RX-7]
+patch=1,EE,204FD3F0,extended,00000001
+
+[White Ford Focus]
+patch=1,EE,204FD3FC,extended,00000001
+
+[Blue Ford Focus]
+patch=1,EE,204FD400,extended,00000001
+
+[Dark Purple Ford Focus]
+patch=1,EE,204FD404,extended,00000001
+
+[Red-Rally Mitsubishi Lancer Evolution VIII]
+patch=1,EE,204FD414,extended,00000001
+
+[Red-GT Class 2 Mitsubishi Lancer Evolution VIII]
+patch=1,EE,204FD418,extended,00000001
+
+[Black Mitsubishi Lancer Evolution VIII]
+patch=1,EE,204FD41C,extended,00000001
+
+[White Peugeot 206]
+patch=1,EE,204FD42C,extended,00000001
+
+[Blue Peugeot 206]
+patch=1,EE,204FD430,extended,00000001
+
+[Red Peugeot 206]
+patch=1,EE,204FD434,extended,00000001
+
+[Blue Subaru WRX ST7 Impreza]
+patch=1,EE,204FD444,extended,00000001
+
+[White/Blue Subaru WRX ST7 Impreza]
+patch=1,EE,204FD448,extended,00000001
+
+[White/Turquoise Subaru WRX ST7 Impreza]
+patch=1,EE,204FD44C,extended,00000001
+
+[Orange Chevrolet Corvette C5-R]
+patch=1,EE,204FD45C,extended,00000001
+
+[Blue Chevrolet Corvette C5-R]
+patch=1,EE,204FD460,extended,00000001
+
+[Green Chevrolet Corvette C5-R]
+patch=1,EE,204FD464,extended,00000001
+
+[Red Dodge Viper Competition Coupe]
+patch=1,EE,204FD474,extended,00000001
+
+[Black Dodge Viper Competition Coupe]
+patch=1,EE,204FD478,extended,00000001
+
+[Purple Dodge Viper Competition Coupe]
+patch=1,EE,204FD47C,extended,00000001
+
+[Orange Honda NSX]
+patch=1,EE,204FD48C,extended,00000001
+
+[White BMC McLaren F1]
+patch=1,EE,204FD4A4,extended,00000001
+
+[Blue Calsonic Skyline]
+patch=1,EE,204FD4BC,extended,00000001
+
+[White S7 R]
+patch=1,EE,204FD4D4,extended,00000001
+
+[Black S7 R]
+patch=1,EE,204FD4D8,extended,00000001
+
+[Blue Toyota Supra]
+patch=1,EE,204FD4EC,extended,00000001
+
+[Red Volkswagen W12]
+patch=1,EE,204FD504,extended,00000001
+
+[Black Volkswagen W12]
+patch=1,EE,204FD508,extended,00000001
+
+[White Volkswagen W12]
+patch=1,EE,204FD510,extended,00000001
+
+[White Infineon Audi R8]
+patch=1,EE,204FD51C,extended,00000001
+
+[Grey Infineon Audi R8]
+patch=1,EE,204FD520,extended,00000001
+
+[Black Infineon Audi R8]
+patch=1,EE,204FD524,extended,00000001
+
+[Black Exp Speed 8]
+patch=1,EE,204FD534,extended,00000001
+
+[Red/Black Dodge Charger]
+patch=1,EE,204FD538,extended,00000001
+
+[White/Blue Dodge Charger]
+patch=1,EE,204FD53C,extended,00000001
+
+[Red Dodge Charger]
+patch=1,EE,204FD544,extended,00000001
+
+[White/Red Shelby G.T. 500]
+patch=1,EE,204FD550,extended,00000001
+
+[Light Blue/Blue Shelby G.T. 500]
+patch=1,EE,204FD554,extended,00000001
+
+[Blue Shelby G.T. 500]
+patch=1,EE,204FD55C,extended,00000001
+
+[Red Alfa Romeo Giulia GTA Junior']
+patch=1,EE,204FD568,extended,00000001
+
+[White Alfa Romeo Giulia GTA Junior']
+patch=1,EE,204FD56C,extended,00000001
+
+[White/Red Alfa Romeo Giulia GTA Junior']
+patch=1,EE,204FD574,extended,00000001
+
+[White/Red Fiat 500]
+patch=1,EE,204FD580,extended,00000001
+
+[White Fiat 500]
+patch=1,EE,204FD584,extended,00000001
+
+[Red Fiat 500]
+patch=1,EE,204FD58C,extended,00000001
+
+[Blue/Orange Renault A110]
+patch=1,EE,204FD598,extended,00000001
+
+[Orange Renault A110]
+patch=1,EE,204FD59C,extended,00000001
+
+[Blue/White Renault A110]
+patch=1,EE,204FD5A4,extended,00000001
+
+[Black DMC DeLorean]
+patch=1,EE,204FD5B0,extended,00000001
+
+[Green Mazda RX-7]
+patch=1,EE,204FD5B8,extended,00000001
+
+[Red Nissan 350 Z]
+patch=1,EE,204FD5C4,extended,00000001
+
+[Blue Nissan 350 Z]
+patch=1,EE,204FD5C8,extended,00000001
+
+[Blue/Black Nissan 350 Z]
+patch=1,EE,204FD5D0,extended,00000001
+
+[Black Advan Kondo S101]
+patch=1,EE,204FD5DC,extended,00000001
+
+[Have All Single Races Completed]
+patch=1,EE,404FE910,extended,00430001
+patch=1,EE,00000007,extended,00000000
+
+[Have All Time Trials Completed]
+patch=1,EE,404FEA1C,extended,00280001
+patch=1,EE,00000007,extended,00000000
+
+[Have All One-Make Races Completed]
+patch=1,EE,404FEABC,extended,000A0001
+patch=1,EE,00000007,extended,00000000
+
+[Have All VS. Rivals Completed]
+patch=1,EE,404FEAE4,extended,000A0001
+patch=1,EE,00000007,extended,00000000
+
+[Have All Tour Races Completed]
+patch=1,EE,404FEB0C,extended,000A0001
+patch=1,EE,00000007,extended,00000000
+
+[Have All Tournaments Completed]
+patch=1,EE,404FEB90,extended,000F0001
+patch=1,EE,00000007,extended,00000000
+
+[Have All Extras Completed]
+patch=1,EE,404FEC84,extended,000E0001
+patch=1,EE,00000007,extended,00000000

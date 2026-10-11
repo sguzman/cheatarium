@@ -1,0 +1,19 @@
+gametitle=Le Mans 24 Hours (SLUS-20207)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90132A74,extended,0C048F22
+
+[Idiot AI]
+patch=1,EE,20135A80,extended,03E00008
+patch=1,EE,20135A84,extended,00000000
+
+[Always Good Tires]
+patch=1,EE,20214A70,extended,03E00008
+patch=1,EE,20214A74,extended,00000000
+
+[Infinite Fuel]
+patch=1,EE,20215350,extended,03E00008
+patch=1,EE,20215354,extended,00000000

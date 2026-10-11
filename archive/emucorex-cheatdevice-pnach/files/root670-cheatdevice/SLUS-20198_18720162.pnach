@@ -1,0 +1,121 @@
+gametitle=Fire Blade (SLUS-20198)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0200008,extended,00225C4F
+
+[Infinite Rockets & Missiles]
+patch=1,EE,20270208,extended,00000000
+
+[Extra Rockets & Missiles]
+patch=1,EE,10270204,extended,00000001
+
+[Infinite Health]
+patch=1,EE,202C8330,extended,00000000
+
+[Have All Medals]
+patch=1,EE,20363060,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363071,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203630DC,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003630ED,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363158,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363169,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203631D4,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003631E5,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363250,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363261,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203632CC,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003632DD,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363348,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363359,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203633C4,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003633D5,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363440,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363451,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203634BC,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003634CD,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363538,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363549,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203635B4,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003635C5,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363630,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363641,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203636AC,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003636BD,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363728,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363739,extended,00000001
+
+[Have All Medals]
+patch=1,EE,203637A4,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,003637B5,extended,00000001
+
+[Have All Medals]
+patch=1,EE,20363820,extended,FFFFFFFF
+
+[Unlock Mission]
+patch=1,EE,00363831,extended,00000001
+
+[Have All Medals]
+patch=1,EE,2036389C,extended,FFFFFFFF

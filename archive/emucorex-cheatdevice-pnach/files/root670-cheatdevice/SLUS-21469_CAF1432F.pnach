@@ -1,0 +1,46 @@
+gametitle=Nicktoons Battle For Volcano Island (SLUS-21469)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902BA760,extended,00832021
+
+[Infinite Health]
+patch=1,EE,20725238,extended,00000014
+
+[Infinite Power]
+patch=1,EE,2072522C,extended,40A00000
+
+[Idiot AI]
+patch=1,EE,2032DF8C,extended,00000001
+
+[Damage x100]
+patch=1,EE,2032DF8C,extended,00000064
+
+[Damage x5]
+patch=1,EE,2032DF8C,extended,00000005
+
+[Damage x4]
+patch=1,EE,2032DF8C,extended,00000004
+
+[Damage x3]
+patch=1,EE,2032DF8C,extended,00000003
+
+[Damage x2]
+patch=1,EE,2032DF8C,extended,00000002
+
+[Player Unlimited Health]
+patch=1,EE,203564DC,extended,00000001
+
+[Player Unlimited Power]
+patch=1,EE,203564E8,extended,00000001
+
+[Player Damage Boost]
+patch=1,EE,203564F4,extended,00000001
+
+[Player Half Power Drain]
+patch=1,EE,20356500,extended,00000001
+
+[Player Extra Ammo Slot]
+patch=1,EE,2035650C,extended,00000001

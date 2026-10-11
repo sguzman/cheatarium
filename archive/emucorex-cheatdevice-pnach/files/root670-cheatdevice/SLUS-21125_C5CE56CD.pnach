@@ -1,0 +1,14 @@
+gametitle=Airborne Troops-Countdown To D-Day (SLUS-21125)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901318F4,extended,0C04916A
+
+[Infinite Health]
+patch=1,EE,20371660,extended,24010190
+patch=1,EE,20371664,extended,AC4100E4
+
+[Never Reload]
+patch=1,EE,203F1240,extended,00000000

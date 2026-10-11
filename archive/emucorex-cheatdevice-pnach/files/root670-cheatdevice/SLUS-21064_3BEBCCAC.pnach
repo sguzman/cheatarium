@@ -1,0 +1,419 @@
+gametitle=Goldeneye-Rogue Agent (SLUS-21064)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9057683C,extended,0C14DC95
+
+[Disable FMV]
+patch=1,EE,20552F88,extended,24020001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C0142C8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC410000
+patch=1,EE,201B5520,extended,08030088
+
+[Infinite Armor]
+patch=1,EE,200C0230,extended,3C0142C8
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AC410004
+patch=1,EE,201B5648,extended,0803008C
+
+[Infinite Ammo]
+patch=1,EE,201AF018,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,201AF010,extended,240303E7
+
+[Extra Ammo]
+patch=1,EE,201AF010,extended,02361823
+
+[Idiot AI]
+patch=1,EE,2022B720,extended,03E00008
+patch=1,EE,2022B724,extended,00000000
+
+[Infinite Mechanical Juice]
+patch=1,EE,201CF740,extended,00000000
+
+[Enemies Cant Move]
+patch=1,EE,201656F0,extended,03E00008
+patch=1,EE,201656F4,extended,00000000
+
+[Enemies Move Very Slowly]
+patch=1,EE,2059C09C,extended,3E000000
+
+[Invisible Weapons]
+patch=1,EE,2059C2C4,extended,00000000
+
+[P1 Press {L1}+Up For Game Speed x1/8]
+patch=1,EE,E002FBEF,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C013E00
+patch=1,EE,202EA5E0,extended,44810800
+
+[P1 Press {L1}+Right For Game Speed x1/4]
+patch=1,EE,E002FBDF,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C013E80
+patch=1,EE,202EA5E0,extended,44810800
+
+[P1 Press {L1}+Down For Game Speed x1/2]
+patch=1,EE,E002FBBF,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C013F00
+patch=1,EE,202EA5E0,extended,44810800
+
+[P1 Press {L1}+Left For Game Speed Normal]
+patch=1,EE,E002FB7F,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C013F80
+patch=1,EE,202EA5E0,extended,44810800
+
+[P1 Press {R1}+Up For Game Speed x2]
+patch=1,EE,E002F7EF,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C014000
+patch=1,EE,202EA5E0,extended,44810800
+
+[P1 Press {R1}+Right For Game Speed x4]
+patch=1,EE,E002F7DF,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C014080
+patch=1,EE,202EA5E0,extended,44810800
+
+[P1 Press {R1}+Down For Game Speed x8]
+patch=1,EE,E002F7BF,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C014100
+patch=1,EE,202EA5E0,extended,44810800
+
+[P1 Press {R1}+Left For Game Speed x16]
+patch=1,EE,E002F77F,extended,0076E202
+patch=1,EE,202EA5DC,extended,3C014180
+patch=1,EE,202EA5E0,extended,44810800
+
+[Never Reload/Infinite Grenades]
+patch=1,EE,202A8100,extended,00000000
+
+[Limb Shot Multiplier x2]
+patch=1,EE,2059C434,extended,40000000
+
+[Limb Shot Multiplier x4]
+patch=1,EE,2059C434,extended,40800000
+
+[Limb Shot Multiplier x8]
+patch=1,EE,2059C434,extended,41000000
+
+[Limb Shot Multiplier x16]
+patch=1,EE,2059C434,extended,41800000
+
+[Limb Shot Multiplier x32]
+patch=1,EE,2059C434,extended,42000000
+
+[Limb Shot Multiplier x50]
+patch=1,EE,2059C434,extended,42480000
+
+[Limb Shot Multiplier x100]
+patch=1,EE,2059C434,extended,42C80000
+
+[Limb Shot Multiplier x1000]
+patch=1,EE,2059C434,extended,447A0000
+
+[Limb Shot Multiplier xMax]
+patch=1,EE,2059C434,extended,4CBEBC20
+
+[Head Shot Multiplier x2]
+patch=1,EE,2059C438,extended,40000000
+
+[Head Shot Multiplier x4]
+patch=1,EE,2059C438,extended,40800000
+
+[Head Shot Multiplier x8]
+patch=1,EE,2059C438,extended,41000000
+
+[Head Shot Multiplier x16]
+patch=1,EE,2059C438,extended,41800000
+
+[Head Shot Multiplier x32]
+patch=1,EE,2059C438,extended,42000000
+
+[Head Shot Multiplier x50]
+patch=1,EE,2059C438,extended,42480000
+
+[Head Shot Multiplier x100]
+patch=1,EE,2059C438,extended,42C80000
+
+[Head Shot Multiplier x1000]
+patch=1,EE,2059C438,extended,447A0000
+
+[Head Shot Multiplier xMax]
+patch=1,EE,2059C438,extended,4CBEBC20
+
+[Body Shot Multiplier x2]
+patch=1,EE,2059C43C,extended,40000000
+
+[Body Shot Multiplier x4]
+patch=1,EE,2059C43C,extended,40800000
+
+[Body Shot Multiplier x8]
+patch=1,EE,2059C43C,extended,41000000
+
+[Body Shot Multiplier x16]
+patch=1,EE,2059C43C,extended,41800000
+
+[Body Shot Multiplier x32]
+patch=1,EE,2059C43C,extended,42000000
+
+[Body Shot Multiplier x50]
+patch=1,EE,2059C43C,extended,42480000
+
+[Body Shot Multiplier x100]
+patch=1,EE,2059C43C,extended,42C80000
+
+[Body Shot Multiplier x1000]
+patch=1,EE,2059C43C,extended,447A0000
+
+[Body Shot Multiplier xMax]
+patch=1,EE,2059C43C,extended,4CBEBC20
+
+[Unlock All Missions]
+patch=1,EE,20100044,extended,FFFFFFFF
+
+[Fort Knox Art Pack 1]
+patch=1,EE,00100FEC,extended,00000002
+
+[Fort Knox Art Pack 2]
+patch=1,EE,00100FED,extended,00000002
+
+[Auric Art Pack 1]
+patch=1,EE,00100FEE,extended,00000002
+
+[Auric Art Pack 2]
+patch=1,EE,00100FEF,extended,00000002
+
+[Hong Kong Art Pack 1]
+patch=1,EE,00100FF0,extended,00000002
+
+[Hong Kong Art Pack 2]
+patch=1,EE,00100FF1,extended,00000002
+
+[Midas Casino Art Pack 1]
+patch=1,EE,00100FF2,extended,00000002
+
+[Midas Casino Art Pack 2]
+patch=1,EE,00100FF3,extended,00000002
+
+[Hoover Dam Art Pack 1]
+patch=1,EE,00100FF4,extended,00000002
+
+[Hoover Dam Art Pack 2]
+patch=1,EE,00100FF5,extended,00000002
+
+[Octopus Art Pack 1]
+patch=1,EE,00100FF6,extended,00000002
+
+[Octopus Art Pack 2]
+patch=1,EE,00100FF7,extended,00000002
+
+[Crab Key Art Pack 1]
+patch=1,EE,00100FF8,extended,00000002
+
+[Crab Key Art Pack 2]
+patch=1,EE,00100FF9,extended,00000002
+
+[Volcano Lair Art Pack 1]
+patch=1,EE,00100FFA,extended,00000002
+
+[Volcano Lair Art Pack 2]
+patch=1,EE,00100FFB,extended,00000002
+
+[All Unlocked Content]
+patch=1,EE,40100FEC,extended,00040001
+patch=1,EE,02020202,extended,00000000
+
+[Max Rogue Bonuses]
+patch=1,EE,20100EF8,extended,4CBEBC20
+
+[No Rogue Bonuses]
+patch=1,EE,20100EF8,extended,00000000
+
+[Max Your Accuracy]
+patch=1,EE,20100EFC,extended,00000064
+
+[No Your Accuracy]
+patch=1,EE,20100EFC,extended,00000000
+
+[Max Accuracy Bonus]
+patch=1,EE,20100F04,extended,05F5E0FF
+
+[No Accuracy Bonus]
+patch=1,EE,20100F04,extended,00000000
+
+[Max Difficulty Bonus]
+patch=1,EE,20100F08,extended,05F5E0FF
+
+[No Difficulty Bonus]
+patch=1,EE,20100F08,extended,00000000
+
+[Quick Score Gain]
+patch=1,EE,10100F0C,extended,0000FFFF
+
+[Max Total Score]
+patch=1,EE,20100F0C,extended,05F5E0FF
+
+[Max Overall]
+patch=1,EE,10100E92,extended,0000270F
+
+[No Overall]
+patch=1,EE,10100E92,extended,00000000
+
+[Max AR4 Commando]
+patch=1,EE,10100D78,extended,0000270F
+
+[No AR4 Commando]
+patch=1,EE,10100D78,extended,00000000
+
+[Max Jackal .357]
+patch=1,EE,10100D88,extended,0000270F
+
+[No Jackal .357]
+patch=1,EE,10100D88,extended,00000000
+
+[Max Mk2 Detonator]
+patch=1,EE,10100D98,extended,0000270F
+
+[No Mk2 Detonator]
+patch=1,EE,10100D98,extended,00000000
+
+[Max Type-S Frag]
+patch=1,EE,10100DA8,extended,0000270F
+
+[No Type-S Frag]
+patch=1,EE,10100DA8,extended,00000000
+
+[Max Predator MG]
+patch=1,EE,10100DB8,extended,0000270F
+
+[No Predator MG]
+patch=1,EE,10100DB8,extended,00000000
+
+[Max Omen XR]
+patch=1,EE,10100DC8,extended,0000270F
+
+[No Omen XR]
+patch=1,EE,10100DC8,extended,00000000
+
+[Max Tesla EM]
+patch=1,EE,10100DD8,extended,0000270F
+
+[No Tesla EM]
+patch=1,EE,10100DD8,extended,00000000
+
+[Max HS-90]
+patch=1,EE,10100DE8,extended,0000270F
+
+[No HS-90]
+patch=1,EE,10100DE8,extended,00000000
+
+[Max Harpoon RL]
+patch=1,EE,10100DF8,extended,0000270F
+
+[No Harpoon RL]
+patch=1,EE,10100DF8,extended,00000000
+
+[Max Mag-Rail]
+patch=1,EE,10100E08,extended,0000270F
+
+[No Mag-Rail]
+patch=1,EE,10100E08,extended,00000000
+
+[Max Longbow SR]
+patch=1,EE,10100E18,extended,0000270F
+
+[No Longbow SR]
+patch=1,EE,10100E18,extended,00000000
+
+[Max Mamba 12g]
+patch=1,EE,10100E28,extended,0000270F
+
+[No Mamba 12g]
+patch=1,EE,10100E28,extended,00000000
+
+[Max Venom 200ml]
+patch=1,EE,10100E38,extended,0000270F
+
+[No Venom 200ml]
+patch=1,EE,10100E38,extended,00000000
+
+[Max Spec 9]
+patch=1,EE,10100E48,extended,0000270F
+
+[No Spec 9]
+patch=1,EE,10100E48,extended,00000000
+
+[Max Perfect Shots]
+patch=1,EE,10100E70,extended,0000270F
+
+[No Perfect Shots]
+patch=1,EE,10100E70,extended,00000000
+
+[Max Machine Traps]
+patch=1,EE,10100E72,extended,0000270F
+
+[No Machine Traps]
+patch=1,EE,10100E72,extended,00000000
+
+[Max Melee Throws]
+patch=1,EE,10100E74,extended,0000270F
+
+[No Melee Throws]
+patch=1,EE,10100E74,extended,00000000
+
+[Max Hostages]
+patch=1,EE,10100E76,extended,0000270F
+
+[No Hostages]
+patch=1,EE,10100E76,extended,00000000
+
+[Max Intimidations]
+patch=1,EE,10100E78,extended,0000270F
+
+[No Intimidations]
+patch=1,EE,10100E78,extended,00000000
+
+[Max Knockouts]
+patch=1,EE,10100E7A,extended,0000270F
+
+[No Knockouts]
+patch=1,EE,10100E7A,extended,00000000
+
+[Max In Transit]
+patch=1,EE,10100E7C,extended,0000270F
+
+[No In Transit]
+patch=1,EE,10100E7C,extended,00000000
+
+[Max Explosions]
+patch=1,EE,10100E7E,extended,0000270F
+
+[No Explosions]
+patch=1,EE,10100E7E,extended,00000000
+
+[Max Shield Bash]
+patch=1,EE,10100E82,extended,0000270F
+
+[No Shield Bash]
+patch=1,EE,10100E82,extended,00000000
+
+[Max Magnetic Field]
+patch=1,EE,10100E84,extended,0000270F
+
+[No Magnetic Field]
+patch=1,EE,10100E84,extended,00000000
+
+[Max Cheap Shots]
+patch=1,EE,10100E86,extended,0000270F
+
+[No Cheap Shots]
+patch=1,EE,10100E86,extended,00000000
+
+[Max Hack]
+patch=1,EE,10100E88,extended,0000270F
+
+[No Hack]
+patch=1,EE,10100E88,extended,00000000

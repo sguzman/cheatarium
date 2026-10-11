@@ -1,0 +1,48 @@
+gametitle=Project-Snowblind (SLUS-21037)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90404FD0,extended,0C1048DB
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,C6410498
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,E6410490
+patch=1,EE,20129F20,extended,0C030088
+
+[Infinite Bio-Energy]
+patch=1,EE,20129F60,extended,8E010018
+patch=1,EE,20129F64,extended,AE01000C
+
+[Infinite Ammo]
+patch=1,EE,2024CCDC,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2024CCD8,extended,240503E7
+
+[Extra Ammo]
+patch=1,EE,2024CCD8,extended,00A42821
+
+[Never Reload-Primary Ammo]
+patch=1,EE,20274234,extended,00000000
+
+[Never Reload-Secondary Ammo]
+patch=1,EE,20275C24,extended,00000000
+
+[Infinite Grenades]
+patch=1,EE,20266F74,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,20266F70,extended,24030063
+
+[Extra Grenades]
+patch=1,EE,10266F70,extended,00000001
+
+[1-Hit Death (Enemies)]
+patch=1,EE,201A1380,extended,44800000
+
+[Halo-Legacy Controls Mode]
+patch=1,EE,003FADD0,extended,00000010
+patch=1,EE,003FAEB4,extended,00000012

@@ -1,0 +1,352 @@
+gametitle=Psi-Ops-The Mindgate Conspiracy (SLUS-20688)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9057CEA0,extended,0C162CC6
+
+[Infinite Health]
+patch=1,EE,20226FC0,extended,C601000C
+patch=1,EE,20226FD0,extended,E6010008
+
+[Infinite PSI]
+patch=1,EE,20227914,extended,00000000
+
+[Never Reload]
+patch=1,EE,2055116C,extended,00000000
+
+[Unlock Everything]
+patch=1,EE,40C96630,extended,00260001
+patch=1,EE,01010101,extended,00000000
+
+[1-Hit Kills (Enemies & Bosses)]
+patch=1,EE,2010E300,extended,03E00008
+patch=1,EE,2010E304,extended,00000000
+
+[Can�t Be Hit By Most Gunfire Or Energy Beams]
+patch=1,EE,20101DF4,extended,24020000
+
+[Enemies Cant Move]
+patch=1,EE,201110F0,extended,03E00008
+patch=1,EE,201110F4,extended,00000000
+
+[Bosses Cant Move]
+patch=1,EE,20104310,extended,03E00008
+patch=1,EE,20104314,extended,00000000
+
+[Bullet Resistant]
+patch=1,EE,00C96630,extended,00000001
+
+[Super PSI]
+patch=1,EE,00C96631,extended,00000001
+
+[All Powers]
+patch=1,EE,00C96632,extended,00000001
+
+[Unlimited Ammo]
+patch=1,EE,00C96633,extended,00000001
+
+[No Head]
+patch=1,EE,00C96635,extended,00000001
+
+[All Cheats]
+patch=1,EE,20C96630,extended,01010101
+patch=1,EE,00C96635,extended,00000001
+
+[Mission Select]
+patch=1,EE,00C96639,extended,00000001
+
+[Arcade Mode]
+patch=1,EE,00C9663A,extended,00000001
+
+[Cooperative Play]
+patch=1,EE,00C9663B,extended,00000001
+
+[Dark Mode]
+patch=1,EE,00C9663C,extended,00000001
+
+[Training]
+patch=1,EE,00C9663D,extended,00000001
+
+[Boss Fight]
+patch=1,EE,00C9663E,extended,00000001
+
+[Boss Rush]
+patch=1,EE,00C9663F,extended,00000001
+
+[All Modes]
+patch=1,EE,00C96639,extended,00000001
+patch=1,EE,10C9663A,extended,00000101
+patch=1,EE,20C9663C,extended,01010101
+
+[Welcome To The Movement]
+patch=1,EE,00C96669,extended,00000001
+
+[Something's Gone Wrong]
+patch=1,EE,00C9666A,extended,00000001
+
+[Unfinished Business]
+patch=1,EE,00C9666B,extended,00000001
+
+[Assembling The Pieces]
+patch=1,EE,00C9666C,extended,00000001
+
+[Fears Don't Lie]
+patch=1,EE,00C9666D,extended,00000001
+
+[Everything We've Worked For]
+patch=1,EE,00C9666E,extended,00000001
+
+[From The Ether And Beyond]
+patch=1,EE,00C9666F,extended,00000001
+
+[The Ultimate Power]
+patch=1,EE,00C96670,extended,00000001
+
+[All Missions]
+patch=1,EE,00C96669,extended,00000001
+patch=1,EE,10C9666A,extended,00000101
+patch=1,EE,20C9666C,extended,01010101
+patch=1,EE,00C96670,extended,00000001
+
+[Jov Leonov]
+patch=1,EE,00C96672,extended,00000001
+
+[Edgar Barret]
+patch=1,EE,00C96673,extended,00000001
+
+[Wei Lu]
+patch=1,EE,00C96674,extended,00000001
+
+[Marlena Kessler]
+patch=1,EE,00C96675,extended,00000001
+
+[Nicolas Wrightson]
+patch=1,EE,00C96676,extended,00000001
+
+[The General]
+patch=1,EE,00C96677,extended,00000001
+
+[All Boss Fights]
+patch=1,EE,10C96672,extended,00000101
+patch=1,EE,20C96674,extended,01010101
+
+[-Floor Of Death-]
+patch=1,EE,00C96679,extended,00000001
+
+[-Panic Room-]
+patch=1,EE,00C9667A,extended,00000001
+
+[-Up & Over-]
+patch=1,EE,00C9667B,extended,00000001
+
+[-Stoplights-]
+patch=1,EE,00C9667D,extended,00000001
+
+[-Gasoline-]
+patch=1,EE,00C9667E,extended,00000001
+
+[-Bottomless Pit-]
+patch=1,EE,00C9667F,extended,00000001
+
+[-TK Alley-]
+patch=1,EE,00C96680,extended,00000001
+
+[-Gearshift-]
+patch=1,EE,00C96682,extended,00000001
+
+[-Tip The Idol-]
+patch=1,EE,00C96685,extended,00000001
+
+[-PSI Pool]
+patch=1,EE,00C96688,extended,00000001
+
+[-Aura Pool-]
+patch=1,EE,00C96689,extended,00000001
+
+[-Bouncy, Bouncy-]
+patch=1,EE,00C9668C,extended,00000001
+
+[-Gnomotron-]
+patch=1,EE,00C9668D,extended,00000001
+
+[-Survival-]
+patch=1,EE,00C9668E,extended,00000001
+
+[All Extra Missions]
+patch=1,EE,00C96679,extended,00000001
+patch=1,EE,10C9667A,extended,00000101
+patch=1,EE,00C9667D,extended,00000001
+patch=1,EE,10C9667E,extended,00000101
+patch=1,EE,00C96680,extended,00000001
+patch=1,EE,00C96682,extended,00000001
+patch=1,EE,00C96685,extended,00000001
+patch=1,EE,10C96688,extended,00000101
+patch=1,EE,10C9668C,extended,00000101
+patch=1,EE,00C9668E,extended,00000001
+
+[PSI Practice Room]
+patch=1,EE,00C96690,extended,00000001
+
+[Telekinesis Training]
+patch=1,EE,00C96691,extended,00000001
+
+[Remote Viewing Training]
+patch=1,EE,00C96692,extended,00000001
+
+[Mind Drain Training]
+patch=1,EE,00C96693,extended,00000001
+
+[Mind Control Training]
+patch=1,EE,00C96694,extended,00000001
+
+[Pyrokinesis Training]
+patch=1,EE,00C96695,extended,00000001
+
+[Aura View Training]
+patch=1,EE,00C96696,extended,00000001
+
+[All Training Missions]
+patch=1,EE,20C96690,extended,01010101
+patch=1,EE,10C96694,extended,00000101
+patch=1,EE,00C96696,extended,00000001
+
+[The Mindgate Process]
+patch=1,EE,00C96699,extended,00000001
+
+[The Abduction]
+patch=1,EE,00C9669A,extended,00000001
+
+[The General's Welcome]
+patch=1,EE,00C9669B,extended,00000001
+
+[Trust This]
+patch=1,EE,00C9669C,extended,00000001
+
+[Prisoner Transfer]
+patch=1,EE,00C9669D,extended,00000001
+
+[A Shot In The Arm]
+patch=1,EE,00C9669E,extended,00000001
+
+[You're Not Dead?]
+patch=1,EE,00C9669F,extended,00000001
+
+[Closed-Door Meeting]
+patch=1,EE,00C966A0,extended,00000001
+
+[An Explosive Situation]
+patch=1,EE,00C966A1,extended,00000001
+
+[Leonov's Puppets]
+patch=1,EE,00C966A2,extended,00000001
+
+[I Have Your Mind]
+patch=1,EE,00C966A3,extended,00000001
+
+[Escape From The Silo]
+patch=1,EE,00C966A4,extended,00000001
+
+[Arrival At The Black Sea]
+patch=1,EE,00C966A5,extended,00000001
+
+[Insider Information]
+patch=1,EE,00C966A6,extended,00000001
+
+[Disconnected]
+patch=1,EE,00C966A7,extended,00000001
+
+[Luna-1]
+patch=1,EE,00C966A8,extended,00000001
+
+[A Warning From The General]
+patch=1,EE,00C966A9,extended,00000001
+
+[I'll Keep This Safe]
+patch=1,EE,00C966AA,extended,00000001
+
+[Old Friends-New Enemies]
+patch=1,EE,00C966AB,extended,00000001
+
+[Escape From The Black Sea]
+patch=1,EE,00C966AC,extended,00000001
+
+[Arrival In Hong Kong]
+patch=1,EE,00C966AD,extended,00000001
+
+[Dr. Kimiko Jones]
+patch=1,EE,00C966AE,extended,00000001
+
+[A Download Of History]
+patch=1,EE,00C966AF,extended,00000001
+
+[The Horrors Of War]
+patch=1,EE,00C966B0,extended,00000001
+
+[Fighting The Past]
+patch=1,EE,00C966B1,extended,00000001
+
+[Wei Lu's Transformation]
+patch=1,EE,00C966B2,extended,00000001
+
+[Fading Illusions]
+patch=1,EE,00C966B3,extended,00000001
+
+[Do You Like Playing With Fire?]
+patch=1,EE,00C966B4,extended,00000001
+
+[Whose Side Are You On?]
+patch=1,EE,00C966B5,extended,00000001
+
+[The Fusion Of The Monolith]
+patch=1,EE,00C966B6,extended,00000001
+
+[Escape From Hong Kong]
+patch=1,EE,00C966B7,extended,00000001
+
+[Arrival In The Himalayas]
+patch=1,EE,00C966B8,extended,00000001
+
+[Held Hostage]
+patch=1,EE,00C966B9,extended,00000001
+
+[Wrightson's Hostile Take-Over]
+patch=1,EE,00C966BA,extended,00000001
+
+[Rendezvou On The Terrace]
+patch=1,EE,00C966BB,extended,00000001
+
+[A True God Of The Ether]
+patch=1,EE,00C966BC,extended,00000001
+
+[The Psychotronic Device]
+patch=1,EE,00C966BD,extended,00000001
+
+[Family Reunion]
+patch=1,EE,00C966BE,extended,00000001
+
+[You-re Insane!]
+patch=1,EE,00C966BF,extended,00000001
+
+[The Passing Of Wrightson]
+patch=1,EE,00C966C0,extended,00000001
+
+[The Struggle For Power]
+patch=1,EE,00C966C1,extended,00000001
+
+[The Culmination Of Power]
+patch=1,EE,00C966C2,extended,00000001
+
+[The Fall From Power]
+patch=1,EE,00C966C3,extended,00000001
+
+[Game Credits]
+patch=1,EE,00C966C4,extended,00000001
+
+[All Movies]
+patch=1,EE,00C96699,extended,00000001
+patch=1,EE,10C9669A,extended,00000101
+patch=1,EE,40C9669C,extended,000A0001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00C966C4,extended,00000001

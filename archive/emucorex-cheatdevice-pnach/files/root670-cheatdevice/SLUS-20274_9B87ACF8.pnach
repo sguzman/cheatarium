@@ -1,0 +1,50 @@
+gametitle=City Crisis (SLUS-20274)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9021708C,extended,0C089554
+
+[Max Score]
+patch=1,EE,203BA8C8,extended,05F5E0FF
+
+[Infinite Time]
+patch=1,EE,203BAB78,extended,00000000
+
+[Infinite Passengers]
+patch=1,EE,003BACA4,extended,00000000
+
+[Infinite Water Bombs]
+patch=1,EE,103BADBC,extended,00000032
+
+[Infinite Water]
+patch=1,EE,103BADC6,extended,00003F80
+
+[Infinite Damage]
+patch=1,EE,103CBD2C,extended,000003E8
+
+[Have All Levels]
+patch=1,EE,105B2230,extended,0000FFFF
+patch=1,EE,105B2238,extended,0000FFFF
+
+[Have All Machines]
+patch=1,EE,205B223C,extended,001F001F
+patch=1,EE,205B2240,extended,001F001F
+
+[Press {SELECT} For No Time Remaining]
+patch=1,EE,D03BA738,extended,00000100
+patch=1,EE,203BAB78,extended,FFFFFFFF
+
+[Max Fire Spot Rescued]
+patch=1,EE,103BA8D4,extended,00000063
+
+[Max Others Rescued]
+patch=1,EE,103BA8DC,extended,00000063
+
+[None Dead]
+patch=1,EE,103BA928,extended,00000000
+
+[1 Rescue To Complete]
+patch=1,EE,D03BA92C,extended,00000001
+patch=1,EE,103BA92C,extended,0000001E

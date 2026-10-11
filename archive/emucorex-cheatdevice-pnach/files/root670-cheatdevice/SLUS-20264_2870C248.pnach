@@ -1,0 +1,15 @@
+gametitle=F1 2001 (SLUS-20264)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,001171B7
+
+[Have Training Complete]
+patch=1,EE,403B2738,extended,00060001
+patch=1,EE,64646464,extended,00000000
+
+[Have Track Challenge Complete]
+patch=1,EE,403B2750,extended,00050001
+patch=1,EE,64646464,extended,00000000

@@ -1,0 +1,61 @@
+gametitle=24-The Game (SLUS-21268)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90486D50,extended,00832021
+
+[Disable FMV]
+patch=1,EE,2047C288,extended,24020001
+
+[Infinite Health]
+patch=1,EE,201941B8,extended,E66002C0
+
+[Infinite Body Armor]
+patch=1,EE,201941BC,extended,E660030C
+
+[Infinite Air]
+patch=1,EE,20154138,extended,00000000
+
+[Infinite Ammo/Health Packs]
+patch=1,EE,2036FBA4,extended,00000000
+
+[Max Infinite Ammo/Health Packs]
+patch=1,EE,2036FBA0,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,2036FBA0,extended,00701021
+
+[Never Reload]
+patch=1,EE,201706F0,extended,00000000
+
+[Never Reload With Max Ammo Clip]
+patch=1,EE,201706EC,extended,24020063
+
+[Infinite Time (Timed Missions)]
+patch=1,EE,20311D84,extended,00000000
+
+[God Mode]
+patch=1,EE,2019417C,extended,24020001
+patch=1,EE,205F60AC,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,1017309A,extended,00001000
+
+[Access All Levels]
+patch=1,EE,20245960,extended,00000000
+patch=1,EE,20249448,extended,00000000
+patch=1,EE,20249BD4,extended,00000000
+patch=1,EE,2024A094,extended,00000000
+patch=1,EE,1024A2D6,extended,00001000
+patch=1,EE,2024A57C,extended,00000000
+patch=1,EE,1024A60E,extended,00001000
+patch=1,EE,2024B404,extended,00000000
+patch=1,EE,2024B598,extended,00000000
+
+[Access All Bonuses]
+patch=1,EE,20245B84,extended,00000000
+patch=1,EE,20249E60,extended,00000000
+patch=1,EE,2024A06C,extended,00000000
+patch=1,EE,2024A314,extended,00000000

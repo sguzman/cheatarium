@@ -1,0 +1,39 @@
+gametitle=Stuart Little 3-Big Photo Adventure (SLUS-21341)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902F17B0,extended,00832021
+
+[Max Flash/Charge/Spark Counter]
+patch=1,EE,203A4308,extended,00000063
+
+[Max Cat Snack Counter]
+patch=1,EE,203A4344,extended,00000006
+
+[Max Electric Counter]
+patch=1,EE,203A4358,extended,000007D0
+
+[Have All Photos]
+patch=1,EE,203A42CC,extended,00000032
+patch=1,EE,203A42D0,extended,0302010A
+patch=1,EE,203A42D4,extended,07060504
+patch=1,EE,203A42D8,extended,0A0A0908
+patch=1,EE,203A42DC,extended,0E0D0C0B
+patch=1,EE,203A42E0,extended,1211100F
+patch=1,EE,203A42E4,extended,150A1413
+patch=1,EE,203A42E8,extended,19181716
+patch=1,EE,203A42EC,extended,1D1C1B1A
+patch=1,EE,203A42F0,extended,201F0A1E
+patch=1,EE,203A42F4,extended,24232221
+patch=1,EE,203A42F8,extended,28252627
+patch=1,EE,203A42FC,extended,2B2A290A
+patch=1,EE,203A4300,extended,2F2E2D2C
+patch=1,EE,203A4304,extended,00323130
+
+[Unlock All Levels]
+patch=1,EE,2031E11C,extended,00000001
+
+[Show XYZ]
+patch=1,EE,203418C8,extended,00000001

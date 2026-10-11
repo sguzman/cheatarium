@@ -1,0 +1,231 @@
+gametitle=MLB Slugfest 20-03 (SLUS-20049)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0030FD27
+
+[Home Team Scores 50]
+patch=1,EE,103D3140,extended,00000032
+
+[Home Team Scores 20]
+patch=1,EE,103D3140,extended,00000014
+
+[Home Team Scores 0]
+patch=1,EE,103D3140,extended,00000000
+
+[Home Team Start With 50 Runs]
+patch=1,EE,D03D3140,extended,00000000
+patch=1,EE,103D3140,extended,00000032
+
+[Home Team Start With 20 Runs]
+patch=1,EE,D03D3140,extended,00000000
+patch=1,EE,103D3140,extended,00000014
+
+[Home Team Start With 10 Runs]
+patch=1,EE,D03D3140,extended,00000000
+patch=1,EE,103D3140,extended,0000000A
+
+[Home Team Start With 5 Runs]
+patch=1,EE,D03D3140,extended,00000000
+patch=1,EE,103D3140,extended,00000005
+
+[Away Team Scores 50]
+patch=1,EE,103D3144,extended,00000032
+
+[Away Team Scores 20]
+patch=1,EE,103D3144,extended,00000014
+
+[Away Team Scores 0]
+patch=1,EE,103D3144,extended,00000000
+
+[Away Team Start With 50 Runs]
+patch=1,EE,D03D3144,extended,00000000
+patch=1,EE,103D3144,extended,00000032
+
+[Away Team Start With 20 Runs]
+patch=1,EE,D03D3144,extended,00000000
+patch=1,EE,103D3144,extended,00000014
+
+[Away Team Start With 10 Runs]
+patch=1,EE,D03D3144,extended,00000000
+patch=1,EE,103D3144,extended,0000000A
+
+[Away Team Start With 5 Runs]
+patch=1,EE,D03D3144,extended,00000000
+patch=1,EE,103D3144,extended,00000005
+
+[Home Team Infinite Turbo]
+patch=1,EE,203D0FE0,extended,42C80000
+
+[Home Team No Turbo]
+patch=1,EE,203D0FE0,extended,00000000
+
+[Away Team Infinite Turbo]
+patch=1,EE,203D0FE4,extended,42C80000
+
+[Away Team No Turbo]
+patch=1,EE,203D0FE4,extended,00000000
+
+[Infinite Strikes]
+patch=1,EE,103D3168,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,D03D3168,extended,00000000
+patch=1,EE,103D3168,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,D03D3168,extended,00000000
+patch=1,EE,103D3168,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,103D316C,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000001
+
+[Infinite Outs]
+patch=1,EE,103D3170,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,D03D3170,extended,00000000
+patch=1,EE,103D3170,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,D03D3170,extended,00000000
+patch=1,EE,103D3170,extended,00000001
+
+[Always Full Count]
+patch=1,EE,103D3168,extended,00000002
+patch=1,EE,103D316C,extended,00000003
+
+[Always Full Count & 2 Outs]
+patch=1,EE,103D3168,extended,00000002
+patch=1,EE,103D316C,extended,00000003
+patch=1,EE,103D3170,extended,00000002
+
+[Infinite Strikes]
+patch=1,EE,E0010001,extended,003D2604
+patch=1,EE,103D3168,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,D03D3168,extended,00000000
+patch=1,EE,103D3168,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,D03D3168,extended,00000000
+patch=1,EE,103D3168,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,E0010001,extended,003D2604
+patch=1,EE,103D316C,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000001
+
+[Infinite Outs]
+patch=1,EE,E0010001,extended,003D2604
+patch=1,EE,103D3170,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,D03D3170,extended,00000000
+patch=1,EE,103D3170,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,D03D3170,extended,00000000
+patch=1,EE,103D3170,extended,00000001
+
+[Always Full Count]
+patch=1,EE,E0020001,extended,003D2604
+patch=1,EE,103D3168,extended,00000002
+patch=1,EE,103D316C,extended,00000003
+
+[Always Full Count & 2 Outs]
+patch=1,EE,E0030001,extended,003D2604
+patch=1,EE,103D3168,extended,00000002
+patch=1,EE,103D316C,extended,00000003
+patch=1,EE,103D3170,extended,00000002
+
+[Infinite Strikes]
+patch=1,EE,E0010000,extended,003D2604
+patch=1,EE,103D3168,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,D03D3168,extended,00000000
+patch=1,EE,103D3168,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,D03D3168,extended,00000000
+patch=1,EE,103D3168,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,E0010000,extended,003D2604
+patch=1,EE,103D316C,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,D03D316C,extended,00000000
+patch=1,EE,103D316C,extended,00000001
+
+[Infinite Outs]
+patch=1,EE,E0010000,extended,003D2604
+patch=1,EE,103D3170,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,D03D3170,extended,00000000
+patch=1,EE,103D3170,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,D03D3170,extended,00000000
+patch=1,EE,103D3170,extended,00000001
+
+[Always Full Count]
+patch=1,EE,E0020000,extended,003D2604
+patch=1,EE,103D3168,extended,00000002
+patch=1,EE,103D316C,extended,00000003
+
+[Always Full Count & 2 Outs]
+patch=1,EE,E0030000,extended,003D2604
+patch=1,EE,103D3168,extended,00000002
+patch=1,EE,103D316C,extended,00000003
+patch=1,EE,103D3170,extended,00000002

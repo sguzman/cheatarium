@@ -1,0 +1,874 @@
+gametitle=SSX On Tour (SLUS-21278)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904889F8,extended,00832021
+
+[Infinite Boost]
+patch=1,EE,20115E40,extended,00000000
+patch=1,EE,20116154,extended,00000000
+
+[Quick Score Gain]
+patch=1,EE,2010BCC4,extended,2463270F
+
+[Gain 30000 Score Per Trick]
+patch=1,EE,2010BCC4,extended,24637530
+patch=1,EE,2010BF14,extended,24637530
+
+[Gain 25000 Score Per Trick]
+patch=1,EE,2010BCC4,extended,246361A8
+patch=1,EE,2010BF14,extended,246361A8
+
+[Gain 20000 Score Per Trick]
+patch=1,EE,2010BCC4,extended,24634E20
+patch=1,EE,2010BF14,extended,24634E20
+
+[Gain 15000 Score Per Trick]
+patch=1,EE,2010BCC4,extended,24633A98
+patch=1,EE,2010BF14,extended,24633A98
+
+[Gain 10000 Score Per Trick]
+patch=1,EE,2010BCC4,extended,24632710
+patch=1,EE,2010BF14,extended,24632710
+
+[Gain 5000 Score Per Trick]
+patch=1,EE,2010BCC4,extended,24631388
+patch=1,EE,2010BF14,extended,24631388
+
+[Max Score After 1 Trick]
+patch=1,EE,2010BCB4,extended,3C0305F5
+patch=1,EE,2010BCC4,extended,3463E0FF
+patch=1,EE,2010BF04,extended,3C0305F5
+patch=1,EE,2010BF14,extended,3463E0FF
+
+[Unlock All Characters]
+patch=1,EE,2053BF60,extended,00000000
+
+[Full Boost, Full Time]
+patch=1,EE,204BA960,extended,00000001
+
+[Monsters Are Loose]
+patch=1,EE,204BA964,extended,00000001
+
+[Snowball Fight]
+patch=1,EE,204BA968,extended,00000001
+
+[Feel The Power]
+patch=1,EE,204BA96C,extended,00000001
+
+[Show Time]
+patch=1,EE,205AE528,extended,00000001
+
+[Characters Are Loose]
+patch=1,EE,205AE52C,extended,00000001
+
+[The World Is Yours]
+patch=1,EE,205AE530,extended,00000001
+
+[New Threads]
+patch=1,EE,205AE538,extended,00000001
+
+[Bling Bling]
+patch=1,EE,205AE53C,extended,00000001
+
+[Have All Shreds & Medals]
+patch=1,EE,4053B338,extended,00C90003
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Movies]
+patch=1,EE,2053C064,extended,00000000
+
+[Quick Hype Points Gain]
+patch=1,EE,1053C06C,extended,0000FFFF
+
+[Max Hype Points]
+patch=1,EE,2053C06C,extended,05F5E0FF
+
+[Quick $ Earned]
+patch=1,EE,1053C070,extended,0000FFFF
+
+[Max Total $ Earned]
+patch=1,EE,2053C070,extended,05F5E0FF
+
+[Max Number Of Grabs]
+patch=1,EE,2053C074,extended,05F5E0FF
+
+[No Number Of Grabs]
+patch=1,EE,2053C074,extended,00000000
+
+[Max Number Of Handplants]
+patch=1,EE,2053C078,extended,05F5E0FF
+
+[No Number Of Handplants]
+patch=1,EE,2053C078,extended,00000000
+
+[Max Number Of Rails]
+patch=1,EE,2053C07C,extended,05F5E0FF
+
+[No Number Of Rails]
+patch=1,EE,2053C07C,extended,00000000
+
+[Max Number Of Tricks]
+patch=1,EE,2053C080,extended,05F5E0FF
+
+[No Number Of Tricks]
+patch=1,EE,2053C080,extended,00000000
+
+[Max Number Of Monster Tricks]
+patch=1,EE,2053C084,extended,05F5E0FF
+
+[No Number Of Monster Tricks]
+patch=1,EE,2053C084,extended,00000000
+
+[Max Number Of Wipeouts]
+patch=1,EE,2053C088,extended,05F5E0FF
+
+[No Number Of Wipeouts]
+patch=1,EE,2053C088,extended,00000000
+
+[Max Number Of Knockdowns]
+patch=1,EE,2053C08C,extended,05F5E0FF
+
+[No Number Of Knockdowns]
+patch=1,EE,2053C08C,extended,00000000
+
+[Max Longest Combo Chain]
+patch=1,EE,2053C0B0,extended,05F5E0FF
+
+[No Longest Combo Chain]
+patch=1,EE,2053C0B0,extended,00000000
+
+[Max Best Combo Points]
+patch=1,EE,2053C0B4,extended,05F5E0FF
+
+[No Best Combo Points]
+patch=1,EE,2053C0B4,extended,05F5E0FF
+
+[Max Best 00000000Points]
+patch=1,EE,2053C0B8,extended,05F5E0FF
+
+[No Best Trick Points]
+patch=1,EE,2053C0B8,extended,00000000
+
+[Max Total Points]
+patch=1,EE,2053C0BC,extended,05F5E0FF
+
+[No Total Points]
+patch=1,EE,2053C0BC,extended,00000000
+
+[Medal 1]
+patch=1,EE,2053B338,extended,00000001
+
+[Medal 2]
+patch=1,EE,2053B344,extended,00000001
+
+[Medal 3]
+patch=1,EE,2053B350,extended,00000001
+
+[Meal 4]
+patch=1,EE,2053B35C,extended,00000001
+
+[Medal 5]
+patch=1,EE,2053B368,extended,00000001
+
+[Medal 6]
+patch=1,EE,2053B374,extended,00000001
+
+[Medal 7]
+patch=1,EE,2053B380,extended,00000001
+
+[Medal 8]
+patch=1,EE,2053B410,extended,00000001
+
+[Medal 9]
+patch=1,EE,2053B41C,extended,00000001
+
+[Medal 10]
+patch=1,EE,2053B428,extended,00000001
+
+[Medal 11]
+patch=1,EE,2053B434,extended,00000001
+
+[Medal 12]
+patch=1,EE,2053B440,extended,00000001
+
+[Medal 13]
+patch=1,EE,2053B4F4,extended,00000001
+
+[Medal 14]
+patch=1,EE,2053B500,extended,00000001
+
+[Medal 15]
+patch=1,EE,2053B50C,extended,00000001
+
+[Medal 16]
+patch=1,EE,2053B518,extended,00000001
+
+[Medal 17]
+patch=1,EE,2053B5A8,extended,00000001
+
+[Medal 18]
+patch=1,EE,2053B5B4,extended,00000001
+
+[Medal 19]
+patch=1,EE,2053B5C0,extended,00000001
+
+[Medal 20]
+patch=1,EE,2053B65C,extended,00000001
+
+[Medal 21]
+patch=1,EE,2053B698,extended,00000001
+
+[Medal 22]
+patch=1,EE,2053B728,extended,00000001
+
+[Medal 23]
+patch=1,EE,2053B734,extended,00000001
+
+[Medal 24]
+patch=1,EE,2053B740,extended,00000001
+
+[Medal 25]
+patch=1,EE,2053B74C,extended,00000001
+
+[Medal 26]
+patch=1,EE,2053B758,extended,00000001
+
+[Medal 27]
+patch=1,EE,2053B7D0,extended,00000001
+
+[Medal 28]
+patch=1,EE,2053B7DC,extended,00000001
+
+[Medal 29]
+patch=1,EE,2053B7E8,extended,00000001
+
+[Medal 30]
+patch=1,EE,2053B854,extended,00000001
+
+[Medal 31]
+patch=1,EE,2053B8FC,extended,00000001
+
+[Medal 32]
+patch=1,EE,2053B908,extended,00000001
+
+[Medal 33]
+patch=1,EE,2053B980,extended,00000001
+
+[Medal 34]
+patch=1,EE,2053B9B0,extended,00000001
+
+[Medal 35]
+patch=1,EE,2053B9BC,extended,00000001
+
+[Medal 36]
+patch=1,EE,2053B9C8,extended,00000001
+
+[Medal 37]
+patch=1,EE,2053B9D4,extended,00000001
+
+[Medal 38]
+patch=1,EE,2053B9E0,extended,00000001
+
+[Medal 39]
+patch=1,EE,2053BA94,extended,00000001
+
+[Medal 40]
+patch=1,EE,2053BAA0,extended,00000001
+
+[Medal 41]
+patch=1,EE,2053BAAC,extended,00000001
+
+[Medal 42]
+patch=1,EE,2053BAB8,extended,00000001
+
+[Medal 43]
+patch=1,EE,2053BB54,extended,00000001
+
+[Medal 44]
+patch=1,EE,2053BB60,extended,00000001
+
+[Medal 45]
+patch=1,EE,2053BB6C,extended,00000001
+
+[Medal 46]
+patch=1,EE,2053BB78,extended,00000001
+
+[Medal 47]
+patch=1,EE,2053BBC0,extended,00000001
+
+[Medal 48]
+patch=1,EE,2053BBCC,extended,00000001
+
+[Medal 49]
+patch=1,EE,2053BBD8,extended,00000001
+
+[Medal 50]
+patch=1,EE,2053BBE4,extended,00000001
+
+[Medal 51]
+patch=1,EE,2053BBF0,extended,00000001
+
+[Shred 1]
+patch=1,EE,2053B38C,extended,00000001
+
+[Shred 2]
+patch=1,EE,2053B398,extended,00000001
+
+[Shred 3]
+patch=1,EE,2053B3A4,extended,00000001
+
+[Shred 4]
+patch=1,EE,2053B3B0,extended,00000001
+
+[Shred 5]
+patch=1,EE,2053B3BC,extended,00000001
+
+[Shred 6]
+patch=1,EE,2053B3C8,extended,00000001
+
+[Shred 7]
+patch=1,EE,2053B3D4,extended,00000001
+
+[Shred 8]
+patch=1,EE,2053B3E0,extended,00000001
+
+[Shred 9]
+patch=1,EE,2053B3EC,extended,00000001
+
+[Shred 10]
+patch=1,EE,2053B3F8,extended,00000001
+
+[Shred 11]
+patch=1,EE,2053B404,extended,00000001
+
+[Shred 12]
+patch=1,EE,2053B44C,extended,00000001
+
+[Shred 13]
+patch=1,EE,2053B458,extended,00000001
+
+[Shred 14]
+patch=1,EE,2053B464,extended,00000001
+
+[Shred 15]
+patch=1,EE,2053B470,extended,00000001
+
+[Shred 16]
+patch=1,EE,2053B47C,extended,00000001
+
+[Shred 17]
+patch=1,EE,2053B488,extended,00000001
+
+[Shred 18]
+patch=1,EE,2053B494,extended,00000001
+
+[Shred 19]
+patch=1,EE,2053B4A0,extended,00000001
+
+[Shred 20]
+patch=1,EE,2053B4AC,extended,00000001
+
+[Shred 21]
+patch=1,EE,2053B4B8,extended,00000001
+
+[Shred 22]
+patch=1,EE,2053B4C4,extended,00000001
+
+[Shred 23]
+patch=1,EE,2053B4D0,extended,00000001
+
+[Shred 24]
+patch=1,EE,2053B4DC,extended,00000001
+
+[Shred 25]
+patch=1,EE,2053B4E8,extended,00000001
+
+[Shred 26]
+patch=1,EE,2053B524,extended,00000001
+
+[Shred 27]
+patch=1,EE,2053B530,extended,00000001
+
+[Shred 28]
+patch=1,EE,2053B53C,extended,00000001
+
+[Shred 29]
+patch=1,EE,2053B548,extended,00000001
+
+[Shred 30]
+patch=1,EE,2053B554,extended,00000001
+
+[Shred 31]
+patch=1,EE,2053B560,extended,00000001
+
+[Shred 32]
+patch=1,EE,2053B56C,extended,00000001
+
+[Shred 33]
+patch=1,EE,2053B578,extended,00000001
+
+[Shred 34]
+patch=1,EE,2053B584,extended,00000001
+
+[Shred 35]
+patch=1,EE,2053B590,extended,00000001
+
+[Shred 36]
+patch=1,EE,2053B59C,extended,00000001
+
+[Shred 37]
+patch=1,EE,2053B5CC,extended,00000001
+
+[Shred 38]
+patch=1,EE,2053B5D8,extended,00000001
+
+[Shred 39]
+patch=1,EE,2053B5E4,extended,00000001
+
+[Shred 40]
+patch=1,EE,2053B5F0,extended,00000001
+
+[Shred 41]
+patch=1,EE,2053B5FC,extended,00000001
+
+[Shred 42]
+patch=1,EE,2053B608,extended,00000001
+
+[Shred 43]
+patch=1,EE,2053B614,extended,00000001
+
+[Shred 44]
+patch=1,EE,2053B620,extended,00000001
+
+[Shred 45]
+patch=1,EE,2053B62C,extended,00000001
+
+[Shred 46]
+patch=1,EE,2053B638,extended,00000001
+
+[Shred 47]
+patch=1,EE,2053B644,extended,00000001
+
+[Shred 48]
+patch=1,EE,2053B650,extended,00000001
+
+[Medal 50]
+patch=1,EE,2053B668,extended,00000001
+
+[Shred 51]
+patch=1,EE,2053B674,extended,00000001
+
+[Shred 52]
+patch=1,EE,2053B680,extended,00000001
+
+[Shred 53]
+patch=1,EE,2053B68C,extended,00000001
+
+[Shred 54]
+patch=1,EE,2053B6A4,extended,00000001
+
+[Shred 55]
+patch=1,EE,2053B6B0,extended,00000001
+
+[Shred 56]
+patch=1,EE,2053B6BC,extended,00000001
+
+[Shred 57]
+patch=1,EE,2053B6C8,extended,00000001
+
+[Shred 58]
+patch=1,EE,2053B6D4,extended,00000001
+
+[Shred 59]
+patch=1,EE,2053B6E0,extended,00000001
+
+[Shred 60]
+patch=1,EE,2053B6EC,extended,00000001
+
+[Shred 61]
+patch=1,EE,2053B6F8,extended,00000001
+
+[Shred 62]
+patch=1,EE,2053B704,extended,00000001
+
+[Shred 63]
+patch=1,EE,2053B710,extended,00000001
+
+[Shred 64]
+patch=1,EE,2053B71C,extended,00000001
+
+[Shred 65]
+patch=1,EE,2053B764,extended,00000001
+
+[Shred 66]
+patch=1,EE,2053B770,extended,00000001
+
+[Shred 67]
+patch=1,EE,2053B77C,extended,00000001
+
+[Shred 68]
+patch=1,EE,2053B788,extended,00000001
+
+[Shred 69]
+patch=1,EE,2053B794,extended,00000001
+
+[Shred 70]
+patch=1,EE,2053B7A0,extended,00000001
+
+[Shred 71]
+patch=1,EE,2053B7AC,extended,00000001
+
+[Shred 72]
+patch=1,EE,2053B7B8,extended,00000001
+
+[Shred 73]
+patch=1,EE,2053B7C4,extended,00000001
+
+[Shred 74]
+patch=1,EE,2053B7F4,extended,00000001
+
+[Shred 75]
+patch=1,EE,2053B800,extended,00000001
+
+[Shred 76]
+patch=1,EE,2053B80C,extended,00000001
+
+[Shred 77]
+patch=1,EE,2053B818,extended,00000001
+
+[Shred 78]
+patch=1,EE,2053B824,extended,00000001
+
+[Shred 79]
+patch=1,EE,2053B830,extended,00000001
+
+[Shred 80]
+patch=1,EE,2053B83C,extended,00000001
+
+[Shred 81]
+patch=1,EE,2053B848,extended,00000001
+
+[Shred 82]
+patch=1,EE,2053B860,extended,00000001
+
+[Shred 83]
+patch=1,EE,2053B86C,extended,00000001
+
+[Shred 84]
+patch=1,EE,2053B878,extended,00000001
+
+[Shred 85]
+patch=1,EE,2053B884,extended,00000001
+
+[Shred 86]
+patch=1,EE,2053B890,extended,00000001
+
+[Shred 87]
+patch=1,EE,2053B89C,extended,00000001
+
+[Shred 88]
+patch=1,EE,2053B8A8,extended,00000001
+
+[Shred 89]
+patch=1,EE,2053B8B4,extended,00000001
+
+[Shred 90]
+patch=1,EE,2053B8C0,extended,00000001
+
+[Shred 91]
+patch=1,EE,2053B8CC,extended,00000001
+
+[Shred 92]
+patch=1,EE,2053B8D8,extended,00000001
+
+[Shred 93]
+patch=1,EE,2053B8E4,extended,00000001
+
+[Shred 94]
+patch=1,EE,2053B8F0,extended,00000001
+
+[Shred 95]
+patch=1,EE,2053B914,extended,00000001
+
+[Shred 96]
+patch=1,EE,2053B920,extended,00000001
+
+[Shred 97]
+patch=1,EE,2053B92C,extended,00000001
+
+[Shred 98]
+patch=1,EE,2053B938,extended,00000001
+
+[Shred 99]
+patch=1,EE,2053B944,extended,00000001
+
+[Shred 100]
+patch=1,EE,2053B950,extended,00000001
+
+[Shred 101]
+patch=1,EE,2053B95C,extended,00000001
+
+[Shred 102]
+patch=1,EE,2053B968,extended,00000001
+
+[Shred 103]
+patch=1,EE,2053B974,extended,00000001
+
+[Shred 104]
+patch=1,EE,2053B98C,extended,00000001
+
+[Shred 105]
+patch=1,EE,2053B998,extended,00000001
+
+[Shred 106]
+patch=1,EE,2053B9A4,extended,00000001
+
+[Shred 107]
+patch=1,EE,2053B9EC,extended,00000001
+
+[Shred 108]
+patch=1,EE,2053B9F8,extended,00000001
+
+[Shred 109]
+patch=1,EE,2053BA04,extended,00000001
+
+[Shred 110]
+patch=1,EE,2053BA10,extended,00000001
+
+[Shred 111]
+patch=1,EE,2053BA1C,extended,00000001
+
+[Shred 112]
+patch=1,EE,2053BA28,extended,00000001
+
+[Shred 113]
+patch=1,EE,2053BA34,extended,00000001
+
+[Shred 114]
+patch=1,EE,2053BA40,extended,00000001
+
+[Shred 115]
+patch=1,EE,2053BA4C,extended,00000001
+
+[Shred 116]
+patch=1,EE,2053BA58,extended,00000001
+
+[Shred 117]
+patch=1,EE,2053BA64,extended,00000001
+
+[Shred 118]
+patch=1,EE,2053BA70,extended,00000001
+
+[Shred 119]
+patch=1,EE,2053BA7C,extended,00000001
+
+[Shred 120]
+patch=1,EE,2053BA88,extended,00000001
+
+[Shred 121]
+patch=1,EE,2053BAC4,extended,00000001
+
+[Shred 122]
+patch=1,EE,2053BAD0,extended,00000001
+
+[Shred 123]
+patch=1,EE,2053BADC,extended,00000001
+
+[Shred 124]
+patch=1,EE,2053BAE8,extended,00000001
+
+[Shred 125]
+patch=1,EE,2053BAF4,extended,00000001
+
+[Shred 126]
+patch=1,EE,2053BB00,extended,00000001
+
+[Shred 127]
+patch=1,EE,2053BB0C,extended,00000001
+
+[Shred 128]
+patch=1,EE,2053BB18,extended,00000001
+
+[Shred 129]
+patch=1,EE,2053BB24,extended,00000001
+
+[Shred 130]
+patch=1,EE,2053BB30,extended,00000001
+
+[Shred 131]
+patch=1,EE,2053BB3C,extended,00000001
+
+[Shred 132]
+patch=1,EE,2053BB48,extended,00000001
+
+[Shred 133]
+patch=1,EE,2053BB84,extended,00000001
+
+[Shred 134]
+patch=1,EE,2053BB90,extended,00000001
+
+[Shred 135]
+patch=1,EE,2053BB9C,extended,00000001
+
+[Shred 136]
+patch=1,EE,2053BBA8,extended,00000001
+
+[Shred 137]
+patch=1,EE,2053BBB4,extended,00000001
+
+[Shred 138]
+patch=1,EE,2053BBFC,extended,00000001
+
+[Shred 139]
+patch=1,EE,2053BC08,extended,00000001
+
+[Shred 140]
+patch=1,EE,2053BC14,extended,00000001
+
+[Shred 141]
+patch=1,EE,2053BC20,extended,00000001
+
+[Shred 141]
+patch=1,EE,2053BC2C,extended,00000001
+
+[Shred 142]
+patch=1,EE,2053BC38,extended,00000001
+
+[Shred 143]
+patch=1,EE,2053BC44,extended,00000001
+
+[Shred 144]
+patch=1,EE,2053BC50,extended,00000001
+
+[Shred 145]
+patch=1,EE,2053BC5C,extended,00000001
+
+[Shred 146]
+patch=1,EE,2053BC68,extended,00000001
+
+[Shred 147]
+patch=1,EE,2053BC74,extended,00000001
+
+[Shred 148]
+patch=1,EE,2053BC80,extended,00000001
+
+[Shred 149]
+patch=1,EE,2053BC8C,extended,00000001
+
+[Shred 150]
+patch=1,EE,2053BC98,extended,00000001
+
+[Boast 1]
+patch=1,EE,0053BF38,extended,00000001
+
+[Boast 2]
+patch=1,EE,0053BF39,extended,00000001
+
+[Boast 3]
+patch=1,EE,0053BF3A,extended,00000001
+
+[Boast 4]
+patch=1,EE,0053BF3B,extended,00000001
+
+[Boast 5]
+patch=1,EE,0053BF3C,extended,00000001
+
+[Boast 6]
+patch=1,EE,0053BF3D,extended,00000001
+
+[Boast 7]
+patch=1,EE,0053BF3E,extended,00000001
+
+[Boast 8]
+patch=1,EE,0053BF3F,extended,00000001
+
+[Boast 9]
+patch=1,EE,0053BF40,extended,00000001
+
+[Boast 10]
+patch=1,EE,0053BF41,extended,00000001
+
+[Boast 11]
+patch=1,EE,0053BF42,extended,00000001
+
+[Boast 12]
+patch=1,EE,0053BF43,extended,00000001
+
+[Boast 13]
+patch=1,EE,0053BF44,extended,00000001
+
+[Boast 14]
+patch=1,EE,0053BF45,extended,00000001
+
+[Boast 15]
+patch=1,EE,0053BF46,extended,00000001
+
+[Boast 16]
+patch=1,EE,0053BF47,extended,00000001
+
+[Boast 17]
+patch=1,EE,0053BF48,extended,00000001
+
+[Boast 18]
+patch=1,EE,0053BF49,extended,00000001
+
+[Boast 19]
+patch=1,EE,0053BF4A,extended,00000001
+
+[Boast 20]
+patch=1,EE,0053BF4B,extended,00000001
+
+[Boast 21]
+patch=1,EE,0053BF4C,extended,00000001
+
+[Boast 22]
+patch=1,EE,0053BF4D,extended,00000001
+
+[Boast 23]
+patch=1,EE,0053BF4E,extended,00000001
+
+[Boast 24]
+patch=1,EE,0053BF4F,extended,00000001
+
+[Boast 25]
+patch=1,EE,0053BF50,extended,00000001
+
+[Boast 26]
+patch=1,EE,0053BF51,extended,00000001
+
+[Boast 27]
+patch=1,EE,0053BF52,extended,00000001
+
+[Boast 28]
+patch=1,EE,0053BF53,extended,00000001
+
+[Boast 29]
+patch=1,EE,0053BF54,extended,00000001
+
+[Boast 30]
+patch=1,EE,0053BF55,extended,00000001
+
+[Boast 31]
+patch=1,EE,0053BF56,extended,00000001
+
+[Boast 32]
+patch=1,EE,0053BF57,extended,00000001
+
+[Boast 33]
+patch=1,EE,0053BF58,extended,00000001
+
+[Boast 34]
+patch=1,EE,0053BF59,extended,00000001
+
+[Boast 35]
+patch=1,EE,0053BF5A,extended,00000001
+
+[Boast 36]
+patch=1,EE,0053BF5B,extended,00000001
+
+[All Boasts]
+patch=1,EE,4053BF38,extended,00090001
+patch=1,EE,01010101,extended,00000000

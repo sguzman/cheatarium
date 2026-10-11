@@ -1,0 +1,33 @@
+gametitle=Crash Nitro Kart (SLUS-20649)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90447474,extended,0C10A1F8
+
+[Always Low Lap Timer]
+patch=1,EE,20186E94,extended,24010000
+patch=1,EE,20186E98,extended,AC41000C
+
+[Max Fruit]
+patch=1,EE,200C0220,extended,8E220010
+patch=1,EE,200C0224,extended,24010063
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AC4100B0
+patch=1,EE,20138804,extended,0C030088
+
+[Have All Collectables]
+patch=1,EE,207937E0,extended,DEFFBDFF
+patch=1,EE,207937E4,extended,F7BFEF7F
+patch=1,EE,207937E8,extended,FDEFFBDF
+patch=1,EE,207937EC,extended,FF7BFEF7
+patch=1,EE,207937F0,extended,7FDEFFBD
+patch=1,EE,207937F4,extended,DFF7BFEF
+patch=1,EE,207937F8,extended,F7FDEFFB
+patch=1,EE,207937FC,extended,BDFF7BFE
+patch=1,EE,20793800,extended,EF7FDEFF
+patch=1,EE,20793804,extended,FBDFF7BF
+patch=1,EE,20793808,extended,FEF7FDEF
+patch=1,EE,2079380C,extended,FFBDFF7B
+patch=1,EE,20793810,extended,000F7FDE

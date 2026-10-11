@@ -1,0 +1,80 @@
+gametitle=D1 Grand Prix Series-Professional Drift (SLUS-21416)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902BC080,extended,00832021
+
+[Always Low Time]
+patch=1,EE,20131210,extended,AE60003C
+
+[Press {L1}+{SELECT} For Max Drift Points P1]
+patch=1,EE,D05BF402,extended,0000FBFE
+patch=1,EE,2050C4F8,extended,447A0000
+
+[Press {L2}+{SELECT} For No Drift Points Opponent]
+patch=1,EE,D05BF402,extended,0000FEFE
+patch=1,EE,2050C560,extended,00000000
+
+[Unlock All Cars]
+patch=1,EE,20568E68,extended,FFFFFFFF
+
+[Unlock D1 Series]
+patch=1,EE,20568540,extended,00000001
+
+[Training 1]
+patch=1,EE,D0568658,extended,00010000
+patch=1,EE,00568658,extended,00000001
+
+[Training 2]
+patch=1,EE,D0568659,extended,00010000
+patch=1,EE,00568659,extended,00000001
+
+[Training 3]
+patch=1,EE,D056865A,extended,00010000
+patch=1,EE,0056865A,extended,00000001
+
+[Training 4]
+patch=1,EE,D056865B,extended,00010000
+patch=1,EE,0056865B,extended,00000001
+
+[Training 5]
+patch=1,EE,D056865C,extended,00010000
+patch=1,EE,0056865C,extended,00000001
+
+[Training 6]
+patch=1,EE,D056865D,extended,00010000
+patch=1,EE,0056865D,extended,00000001
+
+[Training 7]
+patch=1,EE,D056865E,extended,00010000
+patch=1,EE,0056865E,extended,00000001
+
+[Training 8]
+patch=1,EE,D056865F,extended,00010000
+patch=1,EE,0056865F,extended,00000001
+
+[Training 9]
+patch=1,EE,D0568660,extended,00010000
+patch=1,EE,00568660,extended,00000001
+
+[Training 10]
+patch=1,EE,D0568661,extended,00010000
+patch=1,EE,00568661,extended,00000001
+
+[Training 11]
+patch=1,EE,D0568662,extended,00010000
+patch=1,EE,00568662,extended,00000001
+
+[Training 12]
+patch=1,EE,D0568663,extended,00010000
+patch=1,EE,00568663,extended,00000001
+
+[Have All Training Completed]
+patch=1,EE,40568658,extended,00030001
+patch=1,EE,02020202,extended,00000000
+
+[Unlock All Movies]
+patch=1,EE,20568C48,extended,FFFFFFFF
+patch=1,EE,20568C4C,extended,FFFFFFFF

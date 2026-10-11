@@ -1,0 +1,1779 @@
+gametitle=Trans World Surf (SLUS-20356)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00267B7F
+
+[Unlock Super Kook]
+patch=1,EE,200C0220,extended,24050001
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AE0500F4
+patch=1,EE,2013362C,extended,0C030088
+
+[Paddle Faster]
+patch=1,EE,20279810,extended,00000001
+
+[Perfect Floater Balance]
+patch=1,EE,20279828,extended,00000001
+
+[Press {L1}+{R2} To Wipeout! & Restart]
+patch=1,EE,20279834,extended,00000001
+
+[Max Trick Meter]
+patch=1,EE,20279840,extended,00000001
+
+[Stop Timer]
+patch=1,EE,20279844,extended,00000001
+
+[Disable HUD]
+patch=1,EE,20279850,extended,00000001
+
+[Invisible Surfer]
+patch=1,EE,20279864,extended,00000001
+
+[Invisible Surfboard]
+patch=1,EE,20279868,extended,00000001
+
+[Shark Surfboard]
+patch=1,EE,2027986C,extended,00000001
+
+[Complete All Goals (Current Level)]
+patch=1,EE,20279870,extended,00000001
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE4C8,extended,0000F900
+patch=1,EE,21FFE4BC,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204BF900,extended,00000001
+
+[Fort Point]
+patch=1,EE,204BF920,extended,00000001
+
+[Tavarua]
+patch=1,EE,204BF940,extended,00000001
+
+[Hossegor]
+patch=1,EE,204BF960,extended,00000001
+
+[G-Land]
+patch=1,EE,204BF980,extended,00000001
+
+[Huntington]
+patch=1,EE,204BF9A0,extended,00000001
+
+[Pipeline]
+patch=1,EE,204BF9C0,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204BF9E0,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204BFA00,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204BFA20,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004BF906,extended,00000001
+
+[Fort Point]
+patch=1,EE,004BF926,extended,00000001
+
+[Tavarua]
+patch=1,EE,004BF946,extended,00000001
+
+[Hossegor]
+patch=1,EE,004BF966,extended,00000001
+
+[G-Land]
+patch=1,EE,004BF986,extended,00000001
+
+[Huntington]
+patch=1,EE,004BF9A6,extended,00000001
+
+[Pipeline]
+patch=1,EE,004BF9C6,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004BF9E6,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004BFA06,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004BFA26,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004BF908,extended,00000001
+
+[Fort Point]
+patch=1,EE,004BF928,extended,00000001
+
+[Tavarua]
+patch=1,EE,004BF948,extended,00000001
+
+[Hossegor]
+patch=1,EE,004BF968,extended,00000001
+
+[G-Land]
+patch=1,EE,004BF988,extended,00000001
+
+[Huntington]
+patch=1,EE,004BF9A8,extended,00000001
+
+[Pipeline]
+patch=1,EE,004BF9C8,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004BF9E8,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004BFA08,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004BFA28,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204BF918,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204BF938,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204BF958,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204BF978,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204BF998,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204BF9B8,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204BF9D8,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204BF9F8,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204BFA18,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204BFA38,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE4E8,extended,0000FA50
+patch=1,EE,21FFE4DC,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204BFA50,extended,00000001
+
+[Fort Point]
+patch=1,EE,204BFA70,extended,00000001
+
+[Tavarua]
+patch=1,EE,204BFA90,extended,00000001
+
+[Hossegor]
+patch=1,EE,204BFAB0,extended,00000001
+
+[G-Land]
+patch=1,EE,204BFAD0,extended,00000001
+
+[Huntington]
+patch=1,EE,204BFAF0,extended,00000001
+
+[Pipeline]
+patch=1,EE,204BFB10,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204BFB30,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204BFB50,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204BFB70,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004BFA56,extended,00000001
+
+[Fort Point]
+patch=1,EE,004BFA76,extended,00000001
+
+[Tavarua]
+patch=1,EE,004BFA96,extended,00000001
+
+[Hossegor]
+patch=1,EE,004BFAB6,extended,00000001
+
+[G-Land]
+patch=1,EE,004BFAD6,extended,00000001
+
+[Huntington]
+patch=1,EE,004BFAF6,extended,00000001
+
+[Pipeline]
+patch=1,EE,004BFB16,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004BFB36,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004BFB56,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004BFB76,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004BFA58,extended,00000001
+
+[Fort Point]
+patch=1,EE,004BFA78,extended,00000001
+
+[Tavarua]
+patch=1,EE,004BFA98,extended,00000001
+
+[Hossegor]
+patch=1,EE,004BFAB8,extended,00000001
+
+[G-Land]
+patch=1,EE,004BFAD8,extended,00000001
+
+[Huntington]
+patch=1,EE,004BFAF8,extended,00000001
+
+[Pipeline]
+patch=1,EE,004BFB18,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004BFB38,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004BFB58,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004BFB78,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204BFA68,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204BFA88,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204BFAA8,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204BFAC8,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204BFAE8,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204BFB08,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204BFB28,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204BFB48,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204BFB68,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204BFB88,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE508,extended,00002360
+patch=1,EE,21FFE4FC,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2360,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C2380,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C23A0,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C23C0,extended,00000001
+
+[G-Land]
+patch=1,EE,204C23E0,extended,00000001
+
+[Huntington]
+patch=1,EE,204C2400,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2420,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2440,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2460,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2480,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2366,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2386,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C23A6,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C23C6,extended,00000001
+
+[G-Land]
+patch=1,EE,004C23E6,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2406,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2426,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2446,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2466,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2486,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2368,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2388,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C23A8,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C23C8,extended,00000001
+
+[G-Land]
+patch=1,EE,004C23E8,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2408,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2428,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2448,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2468,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2488,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2378,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C2398,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C23B8,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C23D8,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C23F8,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2418,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2438,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C2458,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2478,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2498,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE528,extended,000024B0
+patch=1,EE,21FFE51C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C24B0,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C24D0,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C24F0,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C2510,extended,00000001
+
+[G-Land]
+patch=1,EE,204C2530,extended,00000001
+
+[Huntington]
+patch=1,EE,204C2550,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2570,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2590,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C25B0,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C25D0,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C24B6,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C24D6,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C24F6,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2516,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2536,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2556,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2576,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2596,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C25B6,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C25D6,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C24B8,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C24D8,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C24F8,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2518,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2538,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2558,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2578,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2598,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C25B8,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C25D8,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C24C8,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C24E8,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C2508,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C2528,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C2548,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2568,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2588,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C25A8,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C25C8,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C25E8,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE548,extended,00002600
+patch=1,EE,21FFE53C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2600,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C2620,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C2640,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C2660,extended,00000001
+
+[G-Land]
+patch=1,EE,204C2680,extended,00000001
+
+[Huntington]
+patch=1,EE,204C26A0,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C26C0,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C26E0,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2700,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2720,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2606,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2626,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2646,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2666,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2686,extended,00000001
+
+[Huntington]
+patch=1,EE,004C26A6,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C26C6,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C26E6,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2706,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2726,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2608,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2628,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2648,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2668,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2688,extended,00000001
+
+[Huntington]
+patch=1,EE,004C26A8,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C26C8,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C26E8,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2708,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2728,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2618,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C2638,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C2658,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C2678,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C2698,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C26B8,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C26D8,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C26F8,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2718,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2738,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE568,extended,00002750
+patch=1,EE,21FFE55C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2750,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C2770,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C2790,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C27B0,extended,00000001
+
+[G-Land]
+patch=1,EE,204C27D0,extended,00000001
+
+[Huntington]
+patch=1,EE,204C27F0,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2810,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2830,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2850,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2870,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2756,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2776,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2796,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C27B6,extended,00000001
+
+[G-Land]
+patch=1,EE,004C27D6,extended,00000001
+
+[Huntington]
+patch=1,EE,004C27F6,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2816,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2836,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2856,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2876,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2758,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2778,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2798,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C27B8,extended,00000001
+
+[G-Land]
+patch=1,EE,004C27D8,extended,00000001
+
+[Huntington]
+patch=1,EE,004C27F8,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2818,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2838,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2858,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2878,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2768,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C2788,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C27A8,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C27C8,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C27E8,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2808,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2828,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C2848,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2868,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2888,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE588,extended,00002980
+patch=1,EE,21FFE57C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2980,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C29A0,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C29C0,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C29E0,extended,00000001
+
+[G-Land]
+patch=1,EE,204C2A00,extended,00000001
+
+[Huntington]
+patch=1,EE,204C2A20,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2A40,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2A60,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2A80,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2AA0,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2986,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C29A6,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C29C6,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C29E6,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2A06,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2A26,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2A46,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2A66,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2A86,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2AA6,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2988,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C29A8,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C29C8,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C29E8,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2A08,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2A28,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2A48,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2A68,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2A88,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2AA8,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2998,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C29B8,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C29D8,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C29F8,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C2A18,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2A38,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2A58,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C2A78,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2A98,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2AB8,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE5A8,extended,00002AD0
+patch=1,EE,21FFE59C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2AD0,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C2AF0,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C2B10,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C2B30,extended,00000001
+
+[G-Land]
+patch=1,EE,204C2B50,extended,00000001
+
+[Huntington]
+patch=1,EE,204C2B70,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2B90,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2BB0,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2BD0,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2BF0,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2AD6,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2AF6,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2B16,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2B36,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2B56,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2B76,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2B96,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2BB6,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2BD6,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2BF6,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2AD8,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2AF8,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2B18,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2B38,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2B58,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2B78,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2B98,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2BB8,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2BD8,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2BF8,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2AE8,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C2B08,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C2B28,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C2B48,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C2B68,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2B88,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2BA8,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C2BC8,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2BE8,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2C08,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE5C8,extended,00002C20
+patch=1,EE,21FFE5BC,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2C20,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C2C40,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C2C60,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C2C80,extended,00000001
+
+[G-Land]
+patch=1,EE,204C2CA0,extended,00000001
+
+[Huntington]
+patch=1,EE,204C2CC0,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2CE0,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2D00,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2D20,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2D40,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2C26,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2C46,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2C66,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2C86,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2CA6,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2CC6,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2CE6,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2D06,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2D26,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2D46,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2C28,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2C48,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2C68,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2C88,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2CA8,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2CC8,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2CE8,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2D08,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2D28,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2D48,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2C38,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C2C58,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C2C78,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C2C98,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C2CB8,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2CD8,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2CF8,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C2D18,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2D38,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2D58,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE5E8,extended,00002D70
+patch=1,EE,21FFE5DC,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2D70,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C2D90,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C2DB0,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C2DD0,extended,00000001
+
+[G-Land]
+patch=1,EE,204C2DF0,extended,00000001
+
+[Huntington]
+patch=1,EE,204C2E10,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2E30,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2E50,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2E70,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2E90,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2D76,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2D96,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2DB6,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2DD6,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2DF6,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2E16,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2E36,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2E56,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2E76,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2E96,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2D78,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2D98,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2DB8,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2DD8,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2DF8,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2E18,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2E38,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2E58,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2E78,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2E98,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2D88,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C2DA8,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C2DC8,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C2DE8,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C2E08,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2E28,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2E48,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C2E68,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2E88,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2EA8,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE608,extended,00002EC0
+patch=1,EE,21FFE5FC,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C2EC0,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C2EE0,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C2F00,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C2F20,extended,00000001
+
+[G-Land]
+patch=1,EE,204C2F40,extended,00000001
+
+[Huntington]
+patch=1,EE,204C2F60,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C2F80,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C2FA0,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C2FC0,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C2FE0,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2EC6,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2EE6,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2F06,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2F26,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2F46,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2F66,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2F86,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2FA6,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2FC6,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2FE6,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C2EC8,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C2EE8,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C2F08,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C2F28,extended,00000001
+
+[G-Land]
+patch=1,EE,004C2F48,extended,00000001
+
+[Huntington]
+patch=1,EE,004C2F68,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C2F88,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C2FA8,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C2FC8,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C2FE8,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C2ED8,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C2EF8,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C2F18,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C2F38,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C2F58,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C2F78,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C2F98,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C2FB8,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C2FD8,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C2FF8,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE628,extended,00003010
+patch=1,EE,21FFE61C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C3010,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C3030,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C3050,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C3070,extended,00000001
+
+[G-Land]
+patch=1,EE,204C3090,extended,00000001
+
+[Huntington]
+patch=1,EE,204C30B0,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C30D0,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C30F0,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C3110,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C3130,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C3016,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C3036,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C3056,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C3076,extended,00000001
+
+[G-Land]
+patch=1,EE,004C3096,extended,00000001
+
+[Huntington]
+patch=1,EE,004C30B6,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C30D6,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C30F6,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C3116,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C3136,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C3018,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C3038,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C3058,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C3078,extended,00000001
+
+[G-Land]
+patch=1,EE,004C3098,extended,00000001
+
+[Huntington]
+patch=1,EE,004C30B8,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C30D8,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C30F8,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C3118,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C3138,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C3028,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C3048,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C3068,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C3088,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C30A8,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C30C8,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C30E8,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C3108,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C3128,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C3148,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE648,extended,00003160
+patch=1,EE,21FFE63C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C3160,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C3180,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C31A0,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C31C0,extended,00000001
+
+[G-Land]
+patch=1,EE,204C31E0,extended,00000001
+
+[Huntington]
+patch=1,EE,204C3200,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C3220,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C3240,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C3260,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C3280,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C3166,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C3186,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C31A6,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C31C6,extended,00000001
+
+[G-Land]
+patch=1,EE,004C31E6,extended,00000001
+
+[Huntington]
+patch=1,EE,004C3206,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C3226,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C3246,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C3266,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C3286,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C3168,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C3188,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C31A8,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C31C8,extended,00000001
+
+[G-Land]
+patch=1,EE,004C31E8,extended,00000001
+
+[Huntington]
+patch=1,EE,004C3208,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C3228,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C3248,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C3268,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C3288,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C3178,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C3198,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C31B8,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C31D8,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C31F8,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C3218,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C3238,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C3258,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C3278,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C3298,extended,FFFFFFFF
+
+[Have All Total Career Goals]
+patch=1,EE,D1FFE668,extended,000032B0
+patch=1,EE,21FFE65C,extended,00000050
+
+[Kirra Point]
+patch=1,EE,204C32B0,extended,00000001
+
+[Fort Point]
+patch=1,EE,204C32D0,extended,00000001
+
+[Tavarua]
+patch=1,EE,204C32F0,extended,00000001
+
+[Hossegor]
+patch=1,EE,204C3310,extended,00000001
+
+[G-Land]
+patch=1,EE,204C3330,extended,00000001
+
+[Huntington]
+patch=1,EE,204C3350,extended,00000001
+
+[Pipeline]
+patch=1,EE,204C3370,extended,00000001
+
+[Witches Rock]
+patch=1,EE,204C3390,extended,00000001
+
+[Teahupoo]
+patch=1,EE,204C33B0,extended,00000001
+
+[Todos Santos]
+patch=1,EE,204C33D0,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C32B6,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C32D6,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C32F6,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C3316,extended,00000001
+
+[G-Land]
+patch=1,EE,004C3336,extended,00000001
+
+[Huntington]
+patch=1,EE,004C3356,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C3376,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C3396,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C33B6,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C33D6,extended,00000001
+
+[Kirra Point]
+patch=1,EE,004C32B8,extended,00000001
+
+[Fort Point]
+patch=1,EE,004C32D8,extended,00000001
+
+[Tavarua]
+patch=1,EE,004C32F8,extended,00000001
+
+[Hossegor]
+patch=1,EE,004C3318,extended,00000001
+
+[G-Land]
+patch=1,EE,004C3338,extended,00000001
+
+[Huntington]
+patch=1,EE,004C3358,extended,00000001
+
+[Pipeline]
+patch=1,EE,004C3378,extended,00000001
+
+[Witches Rock]
+patch=1,EE,004C3398,extended,00000001
+
+[Teahupoo]
+patch=1,EE,004C33B8,extended,00000001
+
+[Todos Santos]
+patch=1,EE,004C33D8,extended,00000001
+
+[Kirra Point]
+patch=1,EE,204C32C8,extended,FFFFFFFF
+
+[Fort Point]
+patch=1,EE,204C32E8,extended,FFFFFFFF
+
+[Tavarua]
+patch=1,EE,204C3308,extended,FFFFFFFF
+
+[Hossegor]
+patch=1,EE,204C3328,extended,FFFFFFFF
+
+[G-Land]
+patch=1,EE,204C3348,extended,FFFFFFFF
+
+[Huntington]
+patch=1,EE,204C3368,extended,FFFFFFFF
+
+[Pipeline]
+patch=1,EE,204C3388,extended,FFFFFFFF
+
+[Witches Rock]
+patch=1,EE,204C33A8,extended,FFFFFFFF
+
+[Teahupoo]
+patch=1,EE,204C33C8,extended,FFFFFFFF
+
+[Todos Santos]
+patch=1,EE,204C33E8,extended,FFFFFFFF

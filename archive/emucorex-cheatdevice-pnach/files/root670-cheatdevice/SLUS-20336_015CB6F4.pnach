@@ -1,0 +1,412 @@
+gametitle=Spider-Man (SLUS-20336)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904A0E64,extended,0C12D167
+
+[Infinite Health]
+patch=1,EE,2050A498,extended,00000001
+
+[Have Costumes (Secret Store)]
+patch=1,EE,2194B45C,extended,00000019
+
+[Field Goal]
+patch=1,EE,2194B4C4,extended,00000001
+
+[Gravity Slam]
+patch=1,EE,2194B4C8,extended,00000001
+
+[Web Hit]
+patch=1,EE,2194B4CC,extended,00000001
+
+[Backflip Kick]
+patch=1,EE,2194B4D0,extended,00000001
+
+[Sting]
+patch=1,EE,2194B4D4,extended,00000001
+
+[Palm]
+patch=1,EE,2194B4D8,extended,00000001
+
+[High Web Hit]
+patch=1,EE,2194B4DC,extended,00000001
+
+[Dive-Bomb]
+patch=1,EE,2194B4E0,extended,00000001
+
+[Head Hammer]
+patch=1,EE,2194B4E4,extended,00000001
+
+[Dive Kick]
+patch=1,EE,2194B4E8,extended,00000001
+
+[Uppercut]
+patch=1,EE,2194B4F4,extended,00000001
+
+[Flip Mule]
+patch=1,EE,2194B4F8,extended,00000001
+
+[Low Web Hit]
+patch=1,EE,2194B4FC,extended,00000001
+
+[Elbow Slam]
+patch=1,EE,2194B500,extended,00000001
+
+[Scissor Kick]
+patch=1,EE,2194B504,extended,00000001
+
+[High Stomp]
+patch=1,EE,2194B508,extended,00000001
+
+[Tackle]
+patch=1,EE,2194B510,extended,00000001
+
+[Handspring]
+patch=1,EE,2194B514,extended,00000001
+
+[Haymaker]
+patch=1,EE,2194B518,extended,00000001
+
+[Web Dome]
+patch=1,EE,2194B524,extended,00000001
+
+[Adv Web Dome]
+patch=1,EE,2194B528,extended,00000001
+
+[Web Gloves]
+patch=1,EE,2194B52C,extended,00000001
+
+[Adv Web Gloves]
+patch=1,EE,2194B530,extended,00000001
+
+[Impact Web]
+patch=1,EE,2194B534,extended,00000001
+
+[Vulture Movie]
+patch=1,EE,2194B770,extended,00000001
+
+[Shocker Movie]
+patch=1,EE,2194B774,extended,00000001
+
+[Peter Parker]
+patch=1,EE,2194B778,extended,00000001
+
+[Wrestler Spider-Man]
+patch=1,EE,2194B77C,extended,00000001
+
+[Alex Ross Spider-Man]
+patch=1,EE,2194B780,extended,00000001
+
+[Green Goblin]
+patch=1,EE,2194B784,extended,00000001
+
+[MJ Spidey]
+patch=1,EE,2194B788,extended,00000001
+
+[Shock Spidey]
+patch=1,EE,2194B78C,extended,00000001
+
+[Sci Cpidey]
+patch=1,EE,2194B790,extended,00000001
+
+[Thug Spidey]
+patch=1,EE,2194B794,extended,00000001
+
+[Btg Spidey]
+patch=1,EE,2194B798,extended,00000001
+
+[Sth Spidey]
+patch=1,EE,2194B79C,extended,00000001
+
+[Heli Spidey]
+patch=1,EE,2194B7A0,extended,00000001
+
+[Freak Spidey]
+patch=1,EE,2194B7A4,extended,00000001
+
+[Cop Spidey]
+patch=1,EE,2194B7A8,extended,00000001
+
+[Unlimited Webbing]
+patch=1,EE,2194B7AC,extended,00000001
+
+[Spider-Man Eats His Spinach!]
+patch=1,EE,2194B7B0,extended,00000001
+
+[Next Level (When Paused)]
+patch=1,EE,2194B7B4,extended,00000001
+
+[Gimme All Levels!]
+patch=1,EE,2194B7B8,extended,00000001
+
+[Spider-Man Takes The Red Pill!]
+patch=1,EE,2194B7BC,extended,00000001
+
+[Over-Sized Egos All Around!]
+patch=1,EE,2194B7C0,extended,00000001
+
+[Bigger Isn't Always Better!]
+patch=1,EE,2194B7C4,extended,00000001
+
+[Send In The Clowns!]
+patch=1,EE,2194B7C8,extended,00000001
+
+[Through The Eyes Of Spider-Man!]
+patch=1,EE,2194B7CC,extended,00000001
+
+[Super Coolant!]
+patch=1,EE,2194B7D0,extended,00000001
+
+[Max Level Completion]
+patch=1,EE,1194B5DA,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B5DC,extended,0000270F
+
+[Max Combat]
+patch=1,EE,1194B5DE,extended,0000270F
+
+[Max Secret(s) Found]
+patch=1,EE,1194B5E0,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B5E2,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B5E4,extended,0000270F
+
+[Max Stealth Bonus]
+patch=1,EE,1194B5E6,extended,0000270F
+
+[Max Secret(s) Found]
+patch=1,EE,1194B5E8,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B5EA,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B5EC,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B5EE,extended,0000270F
+
+[Max Secret(s) Found]
+patch=1,EE,1194B5F0,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B5F2,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B5F4,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B5F6,extended,0000270F
+
+[Max Defeated HKs]
+patch=1,EE,1194B5F8,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B5FA,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B5FC,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B5FE,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B600,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B602,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B604,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B606,extended,0000270F
+
+[Max Secret(s) Found]
+patch=1,EE,1194B608,extended,0000270F
+
+[Max Combat]
+patch=1,EE,1194B60A,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B60C,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B60E,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B610,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B612,extended,0000270F
+
+[Max Secret(s) Found]
+patch=1,EE,1194B614,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B616,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B618,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B61A,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B61C,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B620,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B622,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B624,extended,0000270F
+
+[Max Vulture Proximity]
+patch=1,EE,1194B626,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B62A,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B62C,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B62E,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B630,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B632,extended,0000270F
+
+[Max Secret(s) Found]
+patch=1,EE,1194B69A,extended,0000270F
+
+[Max Protected Scorpion]
+patch=1,EE,1194B69C,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B69E,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B634,extended,0000270F
+
+[Max No Pickups Used]
+patch=1,EE,1194B6A2,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B698,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B636,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B638,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B63A,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B63C,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B63E,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B640,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B642,extended,0000270F
+
+[Max Ride Goblin]
+patch=1,EE,1194B6A8,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B644,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B646,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B648,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B64A,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B65C,extended,0000270F
+
+[Max R-Bats Destroyed]
+patch=1,EE,1194B65E,extended,0000270F
+
+[Max Remaining Health]
+patch=1,EE,1194B660,extended,0000270F
+
+[Max Pickups Used]
+patch=1,EE,1194B662,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B664,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B666,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B668,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B66A,extended,0000270F
+
+[Max Secret(s) Found]
+patch=1,EE,1194B66C,extended,0000270F
+
+[Max Stealth Bonus]
+patch=1,EE,1194B66E,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B672,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B674,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B676,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B67A,extended,0000270F
+
+[Max Time]
+patch=1,EE,1194B67C,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B67E,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B680,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B682,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B684,extended,0000270F
+
+[Max Supersoldiers Killed]
+patch=1,EE,1194B686,extended,0000270F
+
+[Max Style]
+patch=1,EE,1194B688,extended,0000270F
+
+[Max Level Completion]
+patch=1,EE,1194B68A,extended,0000270F
+
+[Max Perfect]
+patch=1,EE,1194B68C,extended,0000270F

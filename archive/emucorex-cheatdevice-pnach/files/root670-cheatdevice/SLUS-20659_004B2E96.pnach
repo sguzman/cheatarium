@@ -1,0 +1,16 @@
+gametitle=Piglet's Big Game (SLUS-20659)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0011C87F
+
+[Max Cookies (Overall)]
+patch=1,EE,204F39B8,extended,0000270F
+
+[Max Cookies (Pooh)]
+patch=1,EE,2054D6A0,extended,0000009B
+
+[Max Cookies (Little Roo)]
+patch=1,EE,2054DB74,extended,000000E1

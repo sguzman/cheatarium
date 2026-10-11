@@ -1,0 +1,148 @@
+gametitle=All-Star Baseball 2003 (SLUS-20311)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9034C04C,extended,0C0E801B
+
+[Home Team Box Scores 50]
+patch=1,EE,200C0280,extended,24010032
+patch=1,EE,200C0284,extended,08099D2D
+patch=1,EE,200C0288,extended,A681077A
+patch=1,EE,2026700C,extended,0C0300A0
+
+[Home Team Box Scores 20]
+patch=1,EE,200C0280,extended,24010014
+patch=1,EE,200C0284,extended,08099D2D
+patch=1,EE,200C0288,extended,A681077A
+patch=1,EE,2026700C,extended,0C0300A0
+
+[Home Team Box Scores 0]
+patch=1,EE,200C0280,extended,24010000
+patch=1,EE,200C0284,extended,08099D2D
+patch=1,EE,200C0288,extended,A681077A
+patch=1,EE,2026700C,extended,0C0300A0
+
+[Away Team Box Scores 50]
+patch=1,EE,200C0290,extended,24010032
+patch=1,EE,200C0294,extended,08099D2D
+patch=1,EE,200C0298,extended,A6810778
+patch=1,EE,2026701C,extended,0C0300A8
+
+[Away Team Box Scores 20]
+patch=1,EE,200C0290,extended,24010014
+patch=1,EE,200C0294,extended,08099D2D
+patch=1,EE,200C0298,extended,A6810778
+patch=1,EE,2026701C,extended,0C0300A8
+
+[Away Team Box Scores 0]
+patch=1,EE,200C0290,extended,24010000
+patch=1,EE,200C0294,extended,08099D2D
+patch=1,EE,200C0298,extended,A6810778
+patch=1,EE,2026701C,extended,0C0300A8
+
+[All Runs Score For Away Team]
+patch=1,EE,2010DB60,extended,24030000
+
+[All Runs Score For Home Team]
+patch=1,EE,2010DB60,extended,24030002
+
+[Runs Score 10]
+patch=1,EE,1010DB6C,extended,0000000A
+
+[Runs Score 5]
+patch=1,EE,1010DB6C,extended,00000005
+
+[Runs Score 2]
+patch=1,EE,1010DB6C,extended,00000002
+
+[Infinite Strikes]
+patch=1,EE,20267004,extended,A2800130
+
+[1 Strike And You Are Out]
+patch=1,EE,200C0220,extended,92860130
+patch=1,EE,200C0224,extended,50C00001
+patch=1,EE,200C0228,extended,24060002
+patch=1,EE,200C022C,extended,03E00008
+patch=1,EE,200C0230,extended,A2860130
+patch=1,EE,20267004,extended,0C030088
+
+[2 Strikes And You Are Out]
+patch=1,EE,200C0220,extended,92860130
+patch=1,EE,200C0224,extended,50C00001
+patch=1,EE,200C0228,extended,24060001
+patch=1,EE,200C022C,extended,03E00008
+patch=1,EE,200C0230,extended,A2860130
+patch=1,EE,20267004,extended,0C030088
+
+[Infinite Outs]
+patch=1,EE,20267014,extended,A2800132
+
+[1 Out And You Are Out]
+patch=1,EE,200C0260,extended,92860132
+patch=1,EE,200C0264,extended,50C00001
+patch=1,EE,200C0268,extended,24060002
+patch=1,EE,200C026C,extended,03E00008
+patch=1,EE,200C0270,extended,A2860132
+patch=1,EE,201E6AEC,extended,0C030098
+
+[2 Outs And You Are Out]
+patch=1,EE,200C0260,extended,92860132
+patch=1,EE,200C0264,extended,50C00001
+patch=1,EE,200C0268,extended,24060001
+patch=1,EE,200C026C,extended,03E00008
+patch=1,EE,200C0270,extended,A2860132
+patch=1,EE,201E6AEC,extended,0C030098
+
+[Infinite Balls]
+patch=1,EE,20267024,extended,A2800131
+
+[1 Ball And You Walk]
+patch=1,EE,200C0240,extended,92860131
+patch=1,EE,200C0244,extended,50C00001
+patch=1,EE,200C0248,extended,24060003
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,A2860131
+patch=1,EE,20267024,extended,0C030090
+
+[2 Balls And You Walk]
+patch=1,EE,200C0240,extended,92860131
+patch=1,EE,200C0244,extended,50C00001
+patch=1,EE,200C0248,extended,24060002
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,A2860131
+patch=1,EE,20267024,extended,0C030090
+
+[3 Balls And You Walk]
+patch=1,EE,200C0240,extended,92860131
+patch=1,EE,200C0244,extended,50C00001
+patch=1,EE,200C0248,extended,24060001
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,A2860131
+patch=1,EE,20267024,extended,0C030090
+
+[Infinite Trading Card Points]
+patch=1,EE,10AC6114,extended,0000FFFF
+
+[Max Trading Card Points]
+patch=1,EE,20AC6114,extended,05F5E0FF
+
+[Have All Cards]
+patch=1,EE,40AC6118,extended,004E0001
+patch=1,EE,63636363,extended,00000000
+
+[Infinite Creation Points (Non-Pitchers)]
+patch=1,EE,201AF8D4,extended,00000000
+
+[Infinite Creation Points (Pitchers)]
+patch=1,EE,201B5564,extended,00000000
+patch=1,EE,201B5754,extended,00000000
+patch=1,EE,201B59CC,extended,00000000
+patch=1,EE,201B5C44,extended,00000000
+patch=1,EE,201B62D0,extended,00000000
+patch=1,EE,201B63C0,extended,00000000
+patch=1,EE,201B64B0,extended,00000000
+patch=1,EE,201B65A0,extended,00000000
+patch=1,EE,201B6690,extended,00000000
+patch=1,EE,201B6780,extended,00000000

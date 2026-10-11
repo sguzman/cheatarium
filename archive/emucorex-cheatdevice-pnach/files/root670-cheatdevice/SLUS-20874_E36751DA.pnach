@@ -1,0 +1,26 @@
+gametitle=Dragonball Z-Sagas (SLUS-20874)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90397810,extended,00832021
+
+[Infinite Health]
+patch=1,EE,2019A6C8,extended,C46002C8
+patch=1,EE,2019A6D0,extended,E46002C4
+
+[Infinite Ki]
+patch=1,EE,201F3AF4,extended,E44102D0
+
+[Max Z-Coins]
+patch=1,EE,2048243C,extended,0000270F
+
+[Instant Death (Enemies)]
+patch=1,EE,20135CD8,extended,AE2002C4
+
+[Unlock All Levels/Extras]
+patch=1,EE,2048253C,extended,00000016
+
+[Unlock Pendulum]
+patch=1,EE,204825BC,extended,00000001

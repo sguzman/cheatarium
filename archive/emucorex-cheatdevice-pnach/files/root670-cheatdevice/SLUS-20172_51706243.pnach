@@ -1,0 +1,70 @@
+gametitle=Pryzm-Chapter One-The Dark Unicorn (SLUS-20172)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903705FC,extended,0C0E2CCF
+
+[Have Level Select]
+patch=1,EE,203AE1A4,extended,00000001
+
+[Quin-To-Me Storm Havens]
+patch=1,EE,203ADF14,extended,00000001
+
+[Quin-Oh-By Guard Wood]
+patch=1,EE,203ADF20,extended,00000001
+
+[Quin-Lo-Fe Forest Village]
+patch=1,EE,203ADF2C,extended,00000001
+
+[Quin-Do-Ky High Tree]
+patch=1,EE,203ADF38,extended,00000001
+
+[Quil-Fee-Ut King's Glen]
+patch=1,EE,203ADF68,extended,00000001
+
+[Tay-Moo Hog Hollow]
+patch=1,EE,203ADF74,extended,00000001
+
+[Bay-Moo Sunset Vineyards]
+patch=1,EE,203ADF80,extended,00000001
+
+[Fay-Moo Windy Hills]
+patch=1,EE,203ADF8C,extended,00000001
+
+[Kay-Moo Harvest Town]
+patch=1,EE,203ADF98,extended,00000001
+
+[Kee-Nu Meeting Circle]
+patch=1,EE,203ADFC8,extended,00000001
+
+[Say-Sun Whispering Marsh]
+patch=1,EE,203ADFD4,extended,00000001
+
+[Sim-See Singing Falls]
+patch=1,EE,203ADFE0,extended,00000001
+
+[Sis-Sas Muttering Earth]
+patch=1,EE,203ADFEC,extended,00000001
+
+[Suz-Soo Sighing Willows]
+patch=1,EE,203ADFF8,extended,00000001
+
+[Zi-Yil Queen's Mirror]
+patch=1,EE,203AE028,extended,00000001
+
+[Kal-Mas-A Cutters Keep]
+patch=1,EE,203AE034,extended,00000001
+
+[Lun-Mas-A Burning Lands]
+patch=1,EE,203AE040,extended,00000001
+
+[Pec-Mas-A Iron Blood]
+patch=1,EE,203AE04C,extended,00000001
+
+[Zuc-Mas-A Blizzard Gorge]
+patch=1,EE,203AE058,extended,00000001
+
+[Gac-Mis-Um Frozen Fang]
+patch=1,EE,203AE088,extended,00000001

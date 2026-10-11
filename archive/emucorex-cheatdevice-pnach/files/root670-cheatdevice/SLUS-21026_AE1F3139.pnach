@@ -1,0 +1,796 @@
+gametitle=Battlefield 2-Modern Combat (SLUS-21026)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9027E5C0,extended,0C139F25
+
+[Infinite Health]
+patch=1,EE,20146278,extended,3C01447A
+patch=1,EE,20146280,extended,AC810000
+
+[Infinite Ammo]
+patch=1,EE,203F332C,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,203F3328,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,203F3328,extended,00511021
+
+[Never Reload]
+patch=1,EE,203F34D8,extended,00000000
+
+[Max Score]
+patch=1,EE,200C0220,extended,3C13000F
+patch=1,EE,200C0224,extended,3673423F
+patch=1,EE,200C0228,extended,0813A60C
+patch=1,EE,200C022C,extended,AE9305B0
+patch=1,EE,20329DA8,extended,0C030088
+
+[Have All Medals]
+patch=1,EE,2075C084,extended,0000004E
+patch=1,EE,20331250,extended,24100001
+patch=1,EE,20331258,extended,A0700000
+
+[Have Level Completed]
+patch=1,EE,71CD6B88,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD6B98,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD6BAC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD6BB0,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD6BB4,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD6BB8,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD6BBC,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD6CF8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD6D08,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD6D1C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD6D20,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD6D24,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD6D28,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD6D2C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD6E68,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD6E78,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD6E8C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD6E90,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD6E94,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD6E98,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD6E9C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD6FD8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD6FE8,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD6FFC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7000,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7004,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7008,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD700C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7148,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7158,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD716C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7170,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7174,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7178,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD717C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD72B8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD72C8,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD72DC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD72E0,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD72E4,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD72E8,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD72EC,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7428,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7438,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD744C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7450,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7454,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7458,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD745C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7598,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD75A8,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD75BC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD75C0,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD75C4,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD75C8,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD75CC,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7708,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7718,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD772C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7730,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7734,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7738,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD773C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7878,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7888,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD789C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD78A0,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD78A4,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD78A8,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD78AC,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD79E8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD79F8,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD7A0C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7A10,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7A14,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7A18,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD7A1C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7B58,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7B68,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD7B7C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7B80,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7B84,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7B88,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD7B8C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7CB8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7CD8,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD7CEC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7CF0,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7CF4,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7CF8,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD7CFC,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7E38,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7E48,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD7E5C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7E60,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7E64,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7E68,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD7E6C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD7FA8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD7FB8,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD7FCC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD7FD0,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD7FD4,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD7FD8,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD7FDC,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD8118,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD8128,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD813C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD8140,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD8144,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD8148,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD814C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD8288,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD8298,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD82AC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD82B0,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD82B4,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD82B8,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD82BC,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD83F8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD8408,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD841C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD8420,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD8424,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD8428,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD842C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD8568,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD8578,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD858C,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD8590,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD8594,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD8598,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD859C,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,71CD86D8,extended,00000001
+
+[Max Stars]
+patch=1,EE,21CD86E8,extended,0000000A
+
+[Max Score]
+patch=1,EE,21CD86FC,extended,05F5E0FF
+
+[Lowest Finish Time]
+patch=1,EE,21CD8700,extended,00000001
+
+[Best Style]
+patch=1,EE,21CD8704,extended,40800000
+
+[Max Accuracy]
+patch=1,EE,21CD8708,extended,00000064
+
+[No Losses]
+patch=1,EE,21CD870C,extended,00000000
+
+[Enable Level]
+patch=1,EE,71CD8848,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD8858,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD886C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD89B8,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD89C8,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD89DC,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD8B28,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD8B38,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD8B4C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD8C98,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD8CA8,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD8CBC,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD8E08,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD8E18,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD8E2C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD8F78,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD8F88,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD8F9C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD90E8,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD90F8,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD910C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9258,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9268,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD927C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD93C8,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD93D8,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD93EC,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9538,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9548,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD955C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD96A8,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD96B8,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD96CC,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9818,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9828,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD983C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9988,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9998,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD99AC,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9AF8,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9B08,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD9B1C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9C68,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9C78,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD9C8C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9DD8,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9DE8,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD9DFC,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CD9F48,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CD9F58,extended,00000003
+
+[Max Score]
+patch=1,EE,21CD9F6C,extended,05F5E0FF
+
+[Enable Level]
+patch=1,EE,71CDA0B8,extended,00000008
+
+[Max Stars]
+patch=1,EE,21CDA0C8,extended,00000003
+
+[Max Score]
+patch=1,EE,21CDA0DC,extended,05F5E0FF
+
+[Water Towers]
+patch=1,EE,1075CDCC,extended,00000303
+
+[Burning Barrels]
+patch=1,EE,1075CDD4,extended,00000505
+
+[Ammo Huts]
+patch=1,EE,1075CDDC,extended,00000505
+
+[Signs]
+patch=1,EE,1075CDE4,extended,00001A1A
+
+[Aerials]
+patch=1,EE,1075CDEC,extended,00001F1F
+
+[Buoys]
+patch=1,EE,1075CDF4,extended,00000505
+
+[Mines]
+patch=1,EE,1075CDFC,extended,00000A0A
+
+[Speakers]
+patch=1,EE,1075CE04,extended,00000B0B
+
+[Bells]
+patch=1,EE,1075CE0C,extended,00000303
+
+[Billboards]
+patch=1,EE,1075CE14,extended,00001111
+
+[Oil Wells]
+patch=1,EE,1075CE1C,extended,00000303
+
+[Statues]
+patch=1,EE,1075CE24,extended,00000202
+
+[Flags]
+patch=1,EE,1075CE2C,extended,00000303
+
+[Assault-Enfield L85A2 Assault Rifle]
+patch=1,EE,0075D011,extended,00000001
+
+[Assault-M203 Grenade Launcher]
+patch=1,EE,0075D012,extended,00000001
+
+[Assault-G-17 Pistol]
+patch=1,EE,0075D013,extended,00000001
+
+[Assault-M61 Frag Grenade]
+patch=1,EE,0075D014,extended,00000001
+
+[Assault-AN-M8 Smoke Grenade]
+patch=1,EE,0075D015,extended,00000001
+
+[Engineer-B-M3 Shotgun]
+patch=1,EE,0075D016,extended,00000001
+
+[Engineer-C-V M3 Rocket Launcher]
+patch=1,EE,0075D017,extended,00000001
+
+[Engineer-G-17 Pistol]
+patch=1,EE,0075D018,extended,00000001
+
+[Engineer-Vehicle Mines]
+patch=1,EE,0075D019,extended,00000001
+
+[Engineer-Blowtorch Repair Kit]
+patch=1,EE,0075D01A,extended,00000001
+
+[Sniper-D-SVU Sniper Rifle]
+patch=1,EE,0075D01B,extended,00000001
+
+[Sniper-Laser Target Designator]
+patch=1,EE,0075D01C,extended,00000001
+
+[Sniper-G-17 Pistol]
+patch=1,EE,0075D01D,extended,00000001
+
+[Sniper-M61 Frag Grenade]
+patch=1,EE,0075D01E,extended,00000001
+
+[Sniper-Forward Observer]
+patch=1,EE,0075D01F,extended,00000001
+
+[Special Ops-HK UMP45 Submachine Gun]
+patch=1,EE,0075D020,extended,00000001
+
+[Special Ops-C4 Explosive]
+patch=1,EE,0075D021,extended,00000001
+
+[Special Ops-G-17 Pistol]
+patch=1,EE,0075D022,extended,00000001
+
+[Special Ops-XM84 Stun Grenade]
+patch=1,EE,0075D023,extended,00000001
+
+[Special Ops-Randall Model 1 Knife]
+patch=1,EE,0075D024,extended,00000001
+
+[Support-M249 Machine Gun]
+patch=1,EE,0075D025,extended,00000001
+
+[Support-Mortal Strike]
+patch=1,EE,0075D026,extended,00000001
+
+[Support-G-17 Pistol]
+patch=1,EE,0075D027,extended,00000001
+
+[Support-M61 Frag Grenade]
+patch=1,EE,0075D028,extended,00000001
+
+[Support-Auto Injector]
+patch=1,EE,0075D029,extended,00000001
+
+[All Equipment]
+patch=1,EE,0075D011,extended,00000001
+patch=1,EE,1075D012,extended,00000101
+patch=1,EE,4075D014,extended,00050001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1075D028,extended,00000101
+
+[G-17 Pistol]
+patch=1,EE,2075CFA4,extended,FFFFFFFF
+
+[Enfield L85A2 Assault Rifle]
+patch=1,EE,2075CFA8,extended,FFFFFFFF
+
+[D-SVU Sniper Rifle]
+patch=1,EE,2075CFAC,extended,FFFFFFFF
+
+[M249 Machine Gun]
+patch=1,EE,2075CFB0,extended,FFFFFFFF
+
+[M203 Grenade Launcher]
+patch=1,EE,2075CFB4,extended,FFFFFFFF
+
+[C-V M3 Rocket Launcher]
+patch=1,EE,2075CFB8,extended,FFFFFFFF
+
+[HK UMP45 Submachine Gun]
+patch=1,EE,2075CFC0,extended,FFFFFFFF
+
+[Laser Target Designator]
+patch=1,EE,2075CFC4,extended,FFFFFFFF
+
+[B-M3 Shotgun]
+patch=1,EE,2075CFCC,extended,FFFFFFFF
+
+[C4 Explosive]
+patch=1,EE,2075CFD0,extended,FFFFFFFF
+
+[M61 Frag Grenade]
+patch=1,EE,2075CFD4,extended,FFFFFFFF
+
+[Forward Observer]
+patch=1,EE,2075CFD8,extended,FFFFFFFF
+
+[Mortal Strike]
+patch=1,EE,2075CFDC,extended,FFFFFFFF
+
+[XM84 Stun Grenade]
+patch=1,EE,2075CFE0,extended,FFFFFFFF
+
+[AN-M8 Smoke Grenade]
+patch=1,EE,2075CFE4,extended,FFFFFFFF
+
+[Blowtorch Repair Kit]
+patch=1,EE,2075CFE8,extended,FFFFFFFF
+
+[Auto Injector]
+patch=1,EE,2075CFEC,extended,FFFFFFFF
+
+[Vehicle Mines]
+patch=1,EE,2075CFF4,extended,FFFFFFFF
+
+[All Equipment Upgrades]
+patch=1,EE,4075CFA4,extended,00150001
+patch=1,EE,FFFFFFFF,extended,00000000

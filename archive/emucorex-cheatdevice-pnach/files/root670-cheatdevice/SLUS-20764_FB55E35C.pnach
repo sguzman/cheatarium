@@ -1,0 +1,62 @@
+gametitle=Bombastic (SLUS-20764)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,001F40CF
+
+[Quick Score Gain P1]
+patch=1,EE,10352874,extended,0000FFFF
+patch=1,EE,1055F820,extended,0000FFFF
+
+[Max Score P1]
+patch=1,EE,20352874,extended,05F5E0FF
+patch=1,EE,2055F820,extended,05F5E0FF
+
+[No Score P1]
+patch=1,EE,20352874,extended,00000000
+patch=1,EE,2055F820,extended,00000000
+
+[Max Combo P1]
+patch=1,EE,203528A4,extended,000003E7
+
+[No Combo P1]
+patch=1,EE,203528A4,extended,00000000
+
+[Quick Score Gain P2]
+patch=1,EE,10352994,extended,0000FFFF
+patch=1,EE,1055F824,extended,0000FFFF
+
+[Max Score P2]
+patch=1,EE,20352994,extended,05F5E0FF
+patch=1,EE,2055F824,extended,05F5E0FF
+
+[No Score P2]
+patch=1,EE,20352994,extended,00000000
+patch=1,EE,2055F824,extended,00000000
+
+[Max Combo P2]
+patch=1,EE,203529C4,extended,000003E7
+
+[No Combo P2]
+patch=1,EE,203529C4,extended,00000000
+
+[Infinite Time]
+patch=1,EE,202F829C,extended,00000000
+
+[Unlock All World Maps]
+patch=1,EE,404A1D58,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Worlds Completed]
+patch=1,EE,404A1D88,extended,00040001
+patch=1,EE,00000004,extended,00000000
+patch=1,EE,404A1DB0,extended,00040001
+patch=1,EE,00000004,extended,00000000
+patch=1,EE,404A1DD8,extended,00040001
+patch=1,EE,00000004,extended,00000000
+patch=1,EE,404A1E00,extended,00040001
+patch=1,EE,00000004,extended,00000000
+patch=1,EE,404A1E28,extended,00040001
+patch=1,EE,00000004,extended,00000000

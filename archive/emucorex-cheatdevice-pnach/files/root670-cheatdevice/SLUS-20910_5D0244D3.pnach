@@ -1,0 +1,91 @@
+gametitle=Test Drive-Eve Of Destruction (SLUS-20910)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90390064,extended,0C0E9787
+
+[Max Reputation Rating/Unlock All Cars]
+patch=1,EE,203CC150,extended,000F423F
+patch=1,EE,203CC158,extended,000F423F
+
+[Unlock All Videos]
+patch=1,EE,203D8180,extended,00000001
+
+[Unlock All Feats]
+patch=1,EE,203D18E0,extended,FFFFFFFF
+
+[Unlock All Chapters]
+patch=1,EE,004A8AF9,extended,0000001F
+
+[A Crash Course]
+patch=1,EE,004A8AFA,extended,0000001F
+
+[The Technical Circuit]
+patch=1,EE,004A8AFB,extended,0000007F
+
+[The Destruction Circuit]
+patch=1,EE,004A8AFC,extended,0000007F
+
+[The Specialty Circuit]
+patch=1,EE,004A8AFD,extended,0000007F
+
+[Good Luck Out There!]
+patch=1,EE,004A8AFE,extended,0000001F
+
+[All Chapters]
+patch=1,EE,104A8AFA,extended,00007F1F
+patch=1,EE,104A8AFC,extended,00007F7F
+patch=1,EE,004A8AFE,extended,0000001F
+
+[Max Money]
+patch=1,EE,200C0220,extended,3C0205F5
+patch=1,EE,200C0224,extended,3442E0FF
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AC620004
+patch=1,EE,202E1DA0,extended,08030088
+
+[Buying Items Doesnt Decrease Money]
+patch=1,EE,202E1D5C,extended,00000000
+
+[Always Ranked 1st]
+patch=1,EE,200C0230,extended,03E00008
+patch=1,EE,200C0234,extended,AC600000
+patch=1,EE,202E0F18,extended,0803008C
+
+[View Repair Menu To Fix All Cars Normal Damage]
+patch=1,EE,200C0240,extended,AC800294
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,C4800294
+patch=1,EE,202DD710,extended,08030090
+
+[View Repair Menu To Fix All Cars Irrepairable Damage]
+patch=1,EE,200C0250,extended,AC800298
+patch=1,EE,200C0254,extended,03E00008
+patch=1,EE,200C0258,extended,C4800298
+patch=1,EE,202DD708,extended,08030094
+
+[Turbo Boost]
+patch=1,EE,203D80E0,extended,00000001
+
+[Deadly Ambition]
+patch=1,EE,203D80E4,extended,00000001
+
+[Buh-Kwawk]
+patch=1,EE,203D80E8,extended,00000001
+
+[Chicken Fight]
+patch=1,EE,203D80EC,extended,00000001
+
+[Hardcore Mode]
+patch=1,EE,203D80F0,extended,00000001
+
+[Fast Forward]
+patch=1,EE,203D80F4,extended,00000001
+
+[Olde Tyme Racyng]
+patch=1,EE,203D80F8,extended,00000001
+
+[AI Vengeance]
+patch=1,EE,203D80FC,extended,00000001

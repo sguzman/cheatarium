@@ -1,0 +1,384 @@
+gametitle=Ace Combat 5-The Unsung War (SLUS-20851)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9033BB08,extended,0C0E0175
+
+[Invincible (Able To Fly Through The Ground)]
+patch=1,EE,20128230,extended,34428000
+patch=1,EE,20128234,extended,AC620198
+patch=1,EE,1012823A,extended,00001000
+
+[Infinite Primary Missiles]
+patch=1,EE,20127C34,extended,00000000
+
+[Extra Primary Missiles]
+patch=1,EE,10127C28,extended,00000001
+
+[Max Infinite Primary Missiles]
+patch=1,EE,20127C28,extended,24020063
+
+[Rapid Fire Primary Missiles]
+patch=1,EE,20127490,extended,A6E00004
+patch=1,EE,2012751C,extended,A6C00004
+
+[Infinite Secondary Missiles]
+patch=1,EE,201294F4,extended,00000000
+
+[Extra Secondary Missiles]
+patch=1,EE,101294EC,extended,00000001
+
+[Max Infinite Secondary Missiles]
+patch=1,EE,201294EC,extended,24020063
+
+[Rapid Fire Secondary Missiles]
+patch=1,EE,20128DB8,extended,A4800004
+
+[Infinite Mission Time]
+patch=1,EE,2017FE74,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Complete Mission]
+patch=1,EE,D0487CDC,extended,0000FBFE
+patch=1,EE,201804E4,extended,00000000
+patch=1,EE,D0487CDC,extended,0000FFFF
+patch=1,EE,201804E4,extended,12A00456
+
+[Infinite Money]
+patch=1,EE,105C8CB0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,205C8CB0,extended,3B9AC9FF
+
+[Money Doesnt Decrease When Buying Items]
+patch=1,EE,2029C18C,extended,00000000
+
+[Money Increases When Buying Items]
+patch=1,EE,2029C188,extended,0072102D
+
+[Unlock All Aircraft Categories]
+patch=1,EE,405CB8F0,extended,00060001
+patch=1,EE,01010101,extended,00000000
+
+[Have All Aircraft Purchased]
+patch=1,EE,405CA541,extended,00360015
+patch=1,EE,00000109,extended,00000000
+
+[F-4E-Fighter]
+patch=1,EE,005CA541,extended,00000001
+
+[F-4G-Attacker]
+patch=1,EE,005CA595,extended,00000001
+
+[F-4X-Fighter]
+patch=1,EE,005CA5E9,extended,00000001
+
+[F-5E-Fighter]
+patch=1,EE,005CA63D,extended,00000001
+
+[F-14A-Fighter]
+patch=1,EE,005CA691,extended,00000001
+
+[F-14B-Attacker]
+patch=1,EE,005CA6E5,extended,00000001
+
+[F-14D-Fighter]
+patch=1,EE,005CA739,extended,00000001
+
+[F-15C-Fighter]
+patch=1,EE,005CA78D,extended,00000001
+
+[F-15E-Attacker]
+patch=1,EE,005CA7E1,extended,00000001
+
+[F-15S/MTD-Fighter]
+patch=1,EE,005CA835,extended,00000001
+
+[F-16C-Fighter]
+patch=1,EE,005CA889,extended,00000001
+
+[F-16C Block 60-Fighter]
+patch=1,EE,005CA8DD,extended,00000001
+
+[F-16XL-Attacker]
+patch=1,EE,005CA931,extended,00000001
+
+[F-117A-Attacker]
+patch=1,EE,005CA985,extended,00000001
+
+[F/A-18C-Multirole]
+patch=1,EE,005CA9D9,extended,00000001
+
+[F/A-18E-Multirole]
+patch=1,EE,005CAA2D,extended,00000001
+
+[EA-18G-Jammer]
+patch=1,EE,005CAA81,extended,00000001
+
+[F-20A-Fighter]
+patch=1,EE,005CAAD5,extended,00000001
+
+[F/A-22A-Fighter]
+patch=1,EE,005CAB29,extended,00000001
+
+[FB-22 Concept]
+patch=1,EE,005CAB7D,extended,00000001
+
+[YF-23A-Fighter]
+patch=1,EE,005CABD1,extended,00000001
+
+[F-35C-Multirole]
+patch=1,EE,005CAC25,extended,00000001
+
+[A-6E-Attacker]
+patch=1,EE,005CAC79,extended,00000001
+
+[EA-6B-Jammer]
+patch=1,EE,005CACCD,extended,00000001
+
+[A-10A-Attacker]
+patch=1,EE,005CAD21,extended,00000001
+
+[YA-10B-Attacker]
+patch=1,EE,005CAD75,extended,00000001
+
+[X-29A-Fighter]
+patch=1,EE,005CADC9,extended,00000001
+
+[Mirage 2000-Fighter]
+patch=1,EE,005CAE1D,extended,00000001
+
+[Mirage 2000D-Attacker]
+patch=1,EE,005CAE71,extended,00000001
+
+[Rafale B-Multirole]
+patch=1,EE,005CAEC5,extended,00000001
+
+[Rafale M-Multirole]
+patch=1,EE,005CAF19,extended,00000001
+
+[Tornado GR.1-Attacker]
+patch=1,EE,005CAF6D,extended,00000001
+
+[Tornado GR.4-Attacker]
+patch=1,EE,005CAFC1,extended,00000001
+
+[Tornado F3-Fighter]
+patch=1,EE,005CB015,extended,00000001
+
+[Tornado ECR-Jammer]
+patch=1,EE,005CB069,extended,00000001
+
+[Typhoon-Fighter]
+patch=1,EE,005CB0BD,extended,00000001
+
+[JAS-39C-Multirole]
+patch=1,EE,005CB111,extended,00000001
+
+[F-2A-Attacker]
+patch=1,EE,005CB165,extended,00000001
+
+[Su-27-Fighter]
+patch=1,EE,005CB1B9,extended,00000001
+
+[Su-32-Attacker]
+patch=1,EE,005CB20D,extended,00000001
+
+[Su-35-Fighter]
+patch=1,EE,005CB261,extended,00000001
+
+[Su-37-Fighter]
+patch=1,EE,005CB2B5,extended,00000001
+
+[Su-47-Fighter]
+patch=1,EE,005CB309,extended,00000001
+
+[S-32-Fighter]
+patch=1,EE,005CB35D,extended,00000001
+
+[MiG-21bis-Fighter]
+patch=1,EE,005CB3B1,extended,00000001
+
+[MiG-21-93-Fighter]
+patch=1,EE,005CB405,extended,00000001
+
+[MiG-29A-Fighter]
+patch=1,EE,005CB459,extended,00000001
+
+[MiG-31-Fighter]
+patch=1,EE,005CB555,extended,00000001
+
+[MiG-31M-Fighter]
+patch=1,EE,005CB5A9,extended,00000001
+
+[HAWK-Fighter]
+patch=1,EE,005CB651,extended,00000001
+
+[MiG-144-Multirole]
+patch=1,EE,005CB6A5,extended,00000001
+
+[F-4E-Fighter]
+patch=1,EE,005CA540,extended,00000009
+
+[F-4G-Attacker]
+patch=1,EE,005CA594,extended,00000009
+
+[F-4X-Fighter]
+patch=1,EE,005CA5E8,extended,00000009
+
+[F-5E-Fighter]
+patch=1,EE,005CA63C,extended,00000009
+
+[F-14A-Fighter]
+patch=1,EE,005CA690,extended,00000009
+
+[F-14B-Attacker]
+patch=1,EE,005CA6E4,extended,00000009
+
+[F-14D-Fighter]
+patch=1,EE,005CA738,extended,00000009
+
+[F-15C-Fighter]
+patch=1,EE,005CA78C,extended,00000009
+
+[F-15E-Attacker]
+patch=1,EE,005CA7E0,extended,00000009
+
+[F-15S/MTD-Fighter]
+patch=1,EE,005CA834,extended,00000009
+
+[F-16C-Fighter]
+patch=1,EE,005CA888,extended,00000009
+
+[F-16C Block 60-Fighter]
+patch=1,EE,005CA8DC,extended,00000009
+
+[F-16XL-Attacker]
+patch=1,EE,005CA930,extended,00000009
+
+[F-117A-Attacker]
+patch=1,EE,005CA984,extended,00000009
+
+[F/A-18C-Multirole]
+patch=1,EE,005CA9D8,extended,00000009
+
+[F/A-18E-Multirole]
+patch=1,EE,005CAA2C,extended,00000009
+
+[EA-18G-Jammer]
+patch=1,EE,005CAA80,extended,00000009
+
+[F-20A-Fighter]
+patch=1,EE,005CAAD4,extended,00000009
+
+[F/A-22A-Fighter]
+patch=1,EE,005CAB28,extended,00000009
+
+[FB-22 Concept]
+patch=1,EE,005CAB7C,extended,00000009
+
+[YF-23A-Fighter]
+patch=1,EE,005CABD0,extended,00000009
+
+[F-35C-Multirole]
+patch=1,EE,005CAC24,extended,00000009
+
+[A-6E-Attacker]
+patch=1,EE,005CAC78,extended,00000009
+
+[EA-6B-Jammer]
+patch=1,EE,005CACCC,extended,00000009
+
+[A-10A-Attacker]
+patch=1,EE,005CAD20,extended,00000009
+
+[YA-10B-Attacker]
+patch=1,EE,005CAD74,extended,00000009
+
+[X-29A-Fighter]
+patch=1,EE,005CADC8,extended,00000009
+
+[Mirage 2000-Fighter]
+patch=1,EE,005CAE1C,extended,00000009
+
+[Mirage 2000D-Attacker]
+patch=1,EE,005CAE70,extended,00000009
+
+[Rafale B-Multirole]
+patch=1,EE,005CAEC4,extended,00000009
+
+[Rafale M-Multirole]
+patch=1,EE,005CAF18,extended,00000009
+
+[Tornado GR.1-Attacker]
+patch=1,EE,005CAF6C,extended,00000009
+
+[Tornado GR.4-Attacker]
+patch=1,EE,005CAFC0,extended,00000009
+
+[Tornado F3-Fighter]
+patch=1,EE,005CB014,extended,00000009
+
+[Tornado ECR-Jammer]
+patch=1,EE,005CB068,extended,00000009
+
+[Typhoon-Fighter]
+patch=1,EE,005CB0BC,extended,00000009
+
+[JAS-39C-Multirole]
+patch=1,EE,005CB110,extended,00000009
+
+[F-2A-Attacker]
+patch=1,EE,005CB164,extended,00000009
+
+[Su-27-Fighter]
+patch=1,EE,005CB1B8,extended,00000009
+
+[Su-32-Attacker]
+patch=1,EE,005CB20C,extended,00000009
+
+[Su-35-Fighter]
+patch=1,EE,005CB260,extended,00000009
+
+[Su-37-Fighter]
+patch=1,EE,005CB2B4,extended,00000009
+
+[Su-47-Fighter]
+patch=1,EE,005CB308,extended,00000009
+
+[S-32-Fighter]
+patch=1,EE,005CB35C,extended,00000009
+
+[MiG-21bis-Fighter]
+patch=1,EE,005CB3B0,extended,00000009
+
+[MiG-21-93-Fighter]
+patch=1,EE,005CB404,extended,00000009
+
+[MiG-29A-Fighter]
+patch=1,EE,005CB458,extended,00000009
+
+[MiG-31-Fighter]
+patch=1,EE,005CB554,extended,00000009
+
+[MiG-31M-Fighter]
+patch=1,EE,005CB5A8,extended,00000009
+
+[HAWK-Fighter]
+patch=1,EE,005CB650,extended,00000009
+
+[MiG-144-Multirole]
+patch=1,EE,005CB6A4,extended,00000009
+
+[Max Kill Score]
+patch=1,EE,20987480,extended,000F423F
+
+[Max Time Bonus]
+patch=1,EE,20987484,extended,0001869F
+
+[Max Stage Score]
+patch=1,EE,20987488,extended,000F423F
+
+[Max Total Score]
+patch=1,EE,2098748C,extended,05F5E0FF

@@ -1,0 +1,2502 @@
+gametitle=Disgaea 2-Cursed Memories (SLUS-21397)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90123C50,extended,00832021
+patch=1,EE,20130F08,extended,00000000
+
+[Infinite Hell]
+patch=1,EE,10333330,extended,0000FFFF
+
+[Max Hell]
+patch=1,EE,20333330,extended,4E729FFF
+patch=1,EE,20333334,extended,00000918
+
+[Super Abramoff (Bills Always Approved)]
+patch=1,EE,201D7990,extended,00000000
+patch=1,EE,201D7938,extended,00000000
+
+[Debug Menu]
+patch=1,EE,20137410,extended,8C43A1A0
+patch=1,EE,20137414,extended,34630002
+patch=1,EE,20137418,extended,1000000B
+patch=1,EE,2013741C,extended,0000202D
+patch=1,EE,2013744C,extended,AC43A1A0
+
+[Unlock All Normal Classes]
+patch=1,EE,200C3000,extended,7FB10020
+patch=1,EE,200C3004,extended,3C10003B
+patch=1,EE,200C3008,extended,8E115790
+patch=1,EE,200C300C,extended,8E125788
+patch=1,EE,200C3010,extended,0000802D
+patch=1,EE,200C3014,extended,3C13000C
+patch=1,EE,200C3018,extended,96240062
+patch=1,EE,200C301C,extended,96653802
+patch=1,EE,200C3020,extended,14850017
+patch=1,EE,200C3024,extended,96653800
+patch=1,EE,200C3028,extended,02058021
+patch=1,EE,200C302C,extended,34040114
+patch=1,EE,200C3030,extended,00852818
+patch=1,EE,200C3034,extended,02258821
+patch=1,EE,200C3038,extended,10000014
+patch=1,EE,200C303C,extended,26730004
+patch=1,EE,200C3080,extended,0C08F378
+patch=1,EE,200C3084,extended,26310114
+patch=1,EE,200C3088,extended,26100001
+patch=1,EE,200C308C,extended,0212082A
+patch=1,EE,200C3090,extended,1420FFE1
+patch=1,EE,200C3094,extended,00000000
+patch=1,EE,200C3098,extended,0807156D
+patch=1,EE,200C309C,extended,3C02003D
+patch=1,EE,201C55AC,extended,08030C00
+patch=1,EE,200C3800,extended,00010039
+patch=1,EE,200C3804,extended,08FC018C
+
+[Bonus EXP x2]
+patch=1,EE,1016878C,extended,0000307C
+
+[Bonus EXP x4]
+patch=1,EE,1016878C,extended,000030BC
+
+[Bonus EXP x8]
+patch=1,EE,1016878C,extended,000030FC
+
+[Bonus EXP x18]
+patch=1,EE,1016878C,extended,0000313C
+
+[Bonus EXP x32]
+patch=1,EE,1016878C,extended,0000317C
+
+[Bonus EXP x64]
+patch=1,EE,1016878C,extended,000031BC
+
+[Bonus EXP x128]
+patch=1,EE,1016878C,extended,000031FC
+
+[Bonus EXP x256]
+patch=1,EE,1016878C,extended,0000323C
+
+[Bonus EXP x512]
+patch=1,EE,1016878C,extended,0000327C
+
+[Bonus EXP x1024]
+patch=1,EE,1016878C,extended,000032BC
+
+[Bonus EXP x2048]
+patch=1,EE,1016878C,extended,000032FC
+
+[Bonus EXP x4096]
+patch=1,EE,1016878C,extended,0000333C
+
+[Bonus EXP x8192]
+patch=1,EE,1016878C,extended,0000337C
+
+[Quicker Mana Gain]
+patch=1,EE,201B1474,extended,3402FFFF
+
+[Max Mana After Kill]
+patch=1,EE,101B148A,extended,00000020
+
+[Skill Max EXP After Use]
+patch=1,EE,201A01EC,extended,3C037FFF
+
+[Skill EXP Applied To All Skills]
+patch=1,EE,001A01C2,extended,00000059
+patch=1,EE,001A01C6,extended,00000019
+patch=1,EE,201A01D8,extended,00000000
+patch=1,EE,201A01DC,extended,00000000
+patch=1,EE,201A01F0,extended,24E70001
+patch=1,EE,001A01FA,extended,000000F9
+
+[Quick Weapon EXP Gain]
+patch=1,EE,201A00CC,extended,64717FFF
+
+[Weapon Mastered After 1 Use]
+patch=1,EE,101A00DC,extended,00000001
+
+[Bonus Guage Max]
+patch=1,EE,103A85EE,extended,00000009
+patch=1,EE,103A85F2,extended,00000009
+
+[Infinite Dispatch]
+patch=1,EE,003A8602,extended,00000064
+
+[P1 Press {START}+Up To Enable Infinite Item Usage]
+patch=1,EE,D02D9D82,extended,0000FFE7
+patch=1,EE,20234138,extended,00000000
+
+[P1 Press {START}+Down To Disable Infinite Item Usage]
+patch=1,EE,D02D9D82,extended,0000FFB7
+patch=1,EE,20234138,extended,0C08CEC4
+
+[Infinite Actions]
+patch=1,EE,201791D4,extended,A6000366
+patch=1,EE,20179200,extended,A2000377
+patch=1,EE,20179220,extended,2407FFFF
+patch=1,EE,20179228,extended,00004821
+patch=1,EE,20179230,extended,A509052A
+
+[Super Item Modifier (READ NOTE ON SITE)]
+patch=1,EE,200C2100,extended,3C19002E
+patch=1,EE,200C2104,extended,97399D82
+patch=1,EE,200C2108,extended,3C18000D
+patch=1,EE,200C210C,extended,970F0000
+patch=1,EE,200C2110,extended,11F9001B
+patch=1,EE,200C2114,extended,A7190000
+patch=1,EE,200C2118,extended,340FFFF3
+patch=1,EE,200C211C,extended,51F90004
+patch=1,EE,200C2120,extended,240F0001
+patch=1,EE,200C2124,extended,340FFFFA
+patch=1,EE,200C2128,extended,15F90015
+patch=1,EE,200C212C,extended,240FFFFF
+patch=1,EE,200C2130,extended,0C068998
+patch=1,EE,200C2134,extended,86440090
+patch=1,EE,200C2138,extended,3C07003B
+patch=1,EE,200C213C,extended,8CE65728
+patch=1,EE,200C2140,extended,004F2021
+patch=1,EE,200C2144,extended,0086082A
+patch=1,EE,200C2148,extended,0001200A
+patch=1,EE,200C214C,extended,0080082A
+patch=1,EE,200C2150,extended,24C6FFFF
+patch=1,EE,200C2154,extended,00C1200B
+patch=1,EE,200C2158,extended,340100BC
+patch=1,EE,200C215C,extended,00240018
+patch=1,EE,200C2160,extended,34060006
+patch=1,EE,200C2164,extended,0240202D
+patch=1,EE,200C2168,extended,00002812
+patch=1,EE,200C216C,extended,8CE15730
+patch=1,EE,200C2170,extended,00A12821
+patch=1,EE,200C2174,extended,84A500B0
+patch=1,EE,200C2178,extended,0C08D31C
+patch=1,EE,200C217C,extended,34070001
+patch=1,EE,200C2180,extended,0C0689AC
+patch=1,EE,200C2184,extended,86440090
+patch=1,EE,200C2188,extended,080780DE
+patch=1,EE,201E0370,extended,08030840
+
+[Super Skill Modifier (READ NOTE ON SITE)]
+patch=1,EE,200C2500,extended,3C19002E
+patch=1,EE,200C2504,extended,97399D82
+patch=1,EE,200C2508,extended,3C18000D
+patch=1,EE,200C250C,extended,970F0000
+patch=1,EE,200C2510,extended,11F9003B
+patch=1,EE,200C2514,extended,A7190000
+patch=1,EE,200C2518,extended,0040702D
+patch=1,EE,200C251C,extended,0080C02D
+patch=1,EE,200C2520,extended,340FFFDB
+patch=1,EE,200C2524,extended,11F90016
+patch=1,EE,200C2528,extended,340FFFFA
+patch=1,EE,200C252C,extended,15F90032
+patch=1,EE,200C2530,extended,0280202D
+patch=1,EE,200C2534,extended,34050001
+patch=1,EE,200C2538,extended,0C08E6A4
+patch=1,EE,200C253C,extended,24060001
+patch=1,EE,200C2540,extended,1000002D
+patch=1,EE,200C2580,extended,3C0F003B
+patch=1,EE,200C2584,extended,8DEF57C0
+patch=1,EE,200C2588,extended,28810FA5
+patch=1,EE,200C258C,extended,5020000C
+patch=1,EE,200C2590,extended,65EF0154
+patch=1,EE,200C2594,extended,0C068E38
+patch=1,EE,200C259C,extended,644F00AA
+patch=1,EE,200C25C0,extended,95E40000
+patch=1,EE,200C25C4,extended,340F0388
+patch=1,EE,200C25C8,extended,11E40009
+patch=1,EE,200C25CC,extended,340F041D
+patch=1,EE,200C25D0,extended,51E40008
+patch=1,EE,200C25D4,extended,34040425
+patch=1,EE,200C25D8,extended,340F0461
+patch=1,EE,200C25DC,extended,108F0004
+patch=1,EE,200C25E0,extended,340F04E4
+patch=1,EE,200C25E4,extended,51E40003
+patch=1,EE,200C25E8,extended,340404ED
+patch=1,EE,200C25EC,extended,54000001
+patch=1,EE,200C25F0,extended,24840001
+patch=1,EE,200C25F4,extended,10000002
+patch=1,EE,200C25F8,extended,01C0102D
+patch=1,EE,200C25FC,extended,0300202D
+patch=1,EE,200C2600,extended,0C068E38
+patch=1,EE,200C2604,extended,A44406CC
+patch=1,EE,200C2608,extended,08077E7A
+patch=1,EE,201DF9E0,extended,08030940
+
+[Super Specialists Modifier (READ NOTE ON SITE)]
+patch=1,EE,200C6000,extended,10030022
+patch=1,EE,200C6004,extended,3C02003B
+patch=1,EE,200C6008,extended,8C4756E0
+patch=1,EE,200C600C,extended,10E0001F
+patch=1,EE,200C6010,extended,3C19002E
+patch=1,EE,200C6014,extended,97399D82
+patch=1,EE,200C6018,extended,3C18000D
+patch=1,EE,200C601C,extended,970F0000
+patch=1,EE,200C6020,extended,11F9001A
+patch=1,EE,200C6024,extended,A7190000
+patch=1,EE,200C6028,extended,340FFFDF
+patch=1,EE,200C602C,extended,11F9000D
+patch=1,EE,200C6030,extended,340FF7FF
+patch=1,EE,200C6034,extended,51F90012
+patch=1,EE,200C6038,extended,34080001
+patch=1,EE,200C603C,extended,340FFFF7
+patch=1,EE,200C6040,extended,51F9000F
+patch=1,EE,200C6044,extended,34080032
+patch=1,EE,200C6048,extended,340FFFFB
+patch=1,EE,200C604C,extended,51F9000C
+patch=1,EE,200C6050,extended,340801F4
+patch=1,EE,200C6054,extended,340FFFFD
+patch=1,EE,200C6058,extended,51F9000C
+patch=1,EE,200C605C,extended,AE200000
+patch=1,EE,200C6060,extended,1000000A
+patch=1,EE,200C6064,extended,24A50001
+patch=1,EE,200C6068,extended,50A70001
+patch=1,EE,200C606C,extended,8C5056E8
+patch=1,EE,200C6070,extended,26100044
+patch=1,EE,200C6074,extended,8603003E
+patch=1,EE,200C6078,extended,A6230004
+patch=1,EE,200C607C,extended,10000003
+patch=1,EE,200C6080,extended,8E210000
+patch=1,EE,200C6084,extended,00280821
+patch=1,EE,200C6088,extended,AE210000
+patch=1,EE,200C608C,extended,08068AE8
+patch=1,EE,201DB518,extended,0C031800
+
+[Quick Exp Gain]
+patch=1,EE,10333C58,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,20333C58,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,20333C58,extended,4E729FFF
+patch=1,EE,20333C5C,extended,00000918
+
+[Level 9999]
+patch=1,EE,103344F0,extended,0000270F
+
+[Level 999]
+patch=1,EE,103344F0,extended,000003E7
+
+[Level 99]
+patch=1,EE,103344F0,extended,00000063
+
+[No Felonies]
+patch=1,EE,00334500,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00334500,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00334500,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,20334444,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20334448,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033444C,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20334450,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,20334454,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20334458,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033445C,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20334460,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,20334464,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20334468,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033448C,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20334490,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,20334494,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20334498,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033449C,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,203344A0,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,203344A4,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,203344AC,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,003344C8,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,003344C9,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,003344CA,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,003344CB,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,003344CC,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,003344CD,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,003344CE,extended,00000063
+
+[Max JM]
+patch=1,EE,10334508,extended,00006363
+
+[Max MV]
+patch=1,EE,1033450A,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033450D,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,10334570,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,20334570,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,20334570,extended,4E729FFF
+patch=1,EE,20334574,extended,00000918
+
+[Level 9999]
+patch=1,EE,10334E08,extended,0000270F
+
+[Level 999]
+patch=1,EE,10334E08,extended,000003E7
+
+[Level 99]
+patch=1,EE,10334E08,extended,00000063
+
+[No Felonies]
+patch=1,EE,00334E18,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00334E18,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00334E18,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,20334D5C,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20334D60,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,20334D64,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20334D68,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,20334D6C,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20334D70,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,20334D74,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20334D78,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,20334D7C,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20334D80,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20334DA4,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20334DA8,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,20334DAC,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20334DB0,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20334DB4,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20334DB8,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,20334DBC,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20334DC4,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00334DE0,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00334DE1,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,00334DE2,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,00334DE3,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,00334DE4,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,00334DE5,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,00334DE6,extended,00000063
+
+[Max JM]
+patch=1,EE,10334E20,extended,00006363
+
+[Max MV]
+patch=1,EE,10334E22,extended,00006363
+
+[Max Counter]
+patch=1,EE,00334E25,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,10334E88,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,20334E88,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,20334E88,extended,4E729FFF
+patch=1,EE,20334E8C,extended,00000918
+
+[Level 9999]
+patch=1,EE,10335720,extended,0000270F
+
+[Level 999]
+patch=1,EE,10335720,extended,000003E7
+
+[Level 99]
+patch=1,EE,10335720,extended,00000063
+
+[No Felonies]
+patch=1,EE,00335730,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00335730,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00335730,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,20335674,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20335678,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033567C,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20335680,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,20335684,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20335688,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033568C,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20335690,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,20335694,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20335698,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,203356BC,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,203356C0,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,203356C4,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,203356C8,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,203356CC,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,203356D0,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,203356D4,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,203356DC,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,003356F8,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,003356F9,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,003356FA,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,003356FB,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,003356FC,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,003356FD,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,003356FE,extended,00000063
+
+[Max JM]
+patch=1,EE,10335738,extended,00006363
+
+[Max MV]
+patch=1,EE,1033573A,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033573D,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,103357A0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,203357A0,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,203357A0,extended,4E729FFF
+patch=1,EE,203357A4,extended,00000918
+
+[Level 9999]
+patch=1,EE,10336038,extended,0000270F
+
+[Level 999]
+patch=1,EE,10336038,extended,000003E7
+
+[Level 99]
+patch=1,EE,10336038,extended,00000063
+
+[No Felonies]
+patch=1,EE,00336048,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00336048,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00336048,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,20335F8C,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20335F90,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,20335F94,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20335F98,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,20335F9C,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20335FA0,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,20335FA4,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20335FA8,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,20335FAC,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20335FB0,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20335FD4,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20335FD8,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,20335FDC,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20335FE0,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20335FE4,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20335FE8,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,20335FEC,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20335FF4,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00336010,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00336011,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,00336012,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,00336013,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,00336014,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,00336015,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,00336016,extended,00000063
+
+[Max JM]
+patch=1,EE,10336050,extended,00006363
+
+[Max MV]
+patch=1,EE,10336052,extended,00006363
+
+[Max Counter]
+patch=1,EE,00336055,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,103360B8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,203360B8,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,203360B8,extended,4E729FFF
+patch=1,EE,203360BC,extended,00000918
+
+[Level 9999]
+patch=1,EE,10336950,extended,0000270F
+
+[Level 999]
+patch=1,EE,10336950,extended,000003E7
+
+[Level 99]
+patch=1,EE,10336950,extended,00000063
+
+[No Felonies]
+patch=1,EE,00336960,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00336960,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00336960,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,203368A4,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,203368A8,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,203368AC,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,203368B0,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,203368B4,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,203368B8,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,203368BC,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,203368C0,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,203368C4,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,203368C8,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,203368EC,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,203368F0,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,203368F4,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,203368F8,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,203368FC,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20336900,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,20336904,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033690C,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00336928,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00336929,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033692A,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033692B,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033692C,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033692D,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033692E,extended,00000063
+
+[Max JM]
+patch=1,EE,10336968,extended,00006363
+
+[Max MV]
+patch=1,EE,1033696A,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033696D,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,103369D0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,203369D0,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,203369D0,extended,4E729FFF
+patch=1,EE,203369D4,extended,00000918
+
+[Level 9999]
+patch=1,EE,10337268,extended,0000270F
+
+[Level 999]
+patch=1,EE,10337268,extended,000003E7
+
+[Level 99]
+patch=1,EE,10337268,extended,00000063
+
+[No Felonies]
+patch=1,EE,00337278,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00337278,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00337278,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,203371BC,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,203371C0,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,203371C4,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,203371C8,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,203371CC,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,203371D0,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,203371D4,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,203371D8,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,203371DC,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,203371E0,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20337204,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20337208,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033720C,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20337210,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20337214,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20337218,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033721C,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20337224,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00337240,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00337241,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,00337242,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,00337243,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,00337244,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,00337245,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,00337246,extended,00000063
+
+[Max JM]
+patch=1,EE,10337280,extended,00006363
+
+[Max MV]
+patch=1,EE,10337282,extended,00006363
+
+[Max Counter]
+patch=1,EE,00337285,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,103372E8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,203372E8,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,203372E8,extended,4E729FFF
+patch=1,EE,203372EC,extended,00000918
+
+[Level 9999]
+patch=1,EE,10337B80,extended,0000270F
+
+[Level 999]
+patch=1,EE,10337B80,extended,000003E7
+
+[Level 99]
+patch=1,EE,10337B80,extended,00000063
+
+[No Felonies]
+patch=1,EE,00337B90,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00337B90,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00337B90,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,20337AD4,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20337AD8,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,20337ADC,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20337AE0,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,20337AE4,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20337AE8,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,20337AEC,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20337AF0,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,20337AF4,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20337AF8,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20337B1C,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20337B20,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,20337B24,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20337B28,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20337B2C,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20337B30,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,20337B34,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20337B3C,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00337B58,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00337B59,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,00337B5A,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,00337B5B,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,00337B5C,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,00337B5D,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,00337B5E,extended,00000063
+
+[Max JM]
+patch=1,EE,10337B98,extended,00006363
+
+[Max MV]
+patch=1,EE,10337B9A,extended,00006363
+
+[Max Counter]
+patch=1,EE,00337B9D,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,10337C00,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,20337C00,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,20337C00,extended,4E729FFF
+patch=1,EE,20337C04,extended,00000918
+
+[Level 9999]
+patch=1,EE,10338498,extended,0000270F
+
+[Level 999]
+patch=1,EE,10338498,extended,000003E7
+
+[Level 99]
+patch=1,EE,10338498,extended,00000063
+
+[No Felonies]
+patch=1,EE,003384A8,extended,00000000
+
+[99 Felonies]
+patch=1,EE,003384A8,extended,00000063
+
+[Max Felonies]
+patch=1,EE,003384A8,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,203383EC,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,203383F0,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,203383F4,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,203383F8,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,203383FC,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20338400,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,20338404,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20338408,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033840C,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20338410,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20338434,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20338438,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033843C,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20338440,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20338444,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20338448,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033844C,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20338454,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00338470,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00338471,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,00338472,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,00338473,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,00338474,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,00338475,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,00338476,extended,00000063
+
+[Max JM]
+patch=1,EE,103384B0,extended,00006363
+
+[Max MV]
+patch=1,EE,103384B2,extended,00006363
+
+[Max Counter]
+patch=1,EE,003384B5,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,10338518,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,20338518,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,20338518,extended,4E729FFF
+patch=1,EE,2033851C,extended,00000918
+
+[Level 9999]
+patch=1,EE,10338DB0,extended,0000270F
+
+[Level 999]
+patch=1,EE,10338DB0,extended,000003E7
+
+[Level 99]
+patch=1,EE,10338DB0,extended,00000063
+
+[No Felonies]
+patch=1,EE,00338DC0,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00338DC0,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00338DC0,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,20338D04,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20338D08,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,20338D0C,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20338D10,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,20338D14,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20338D18,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,20338D1C,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20338D20,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,20338D24,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20338D28,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20338D4C,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20338D50,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,20338D54,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20338D58,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20338D5C,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20338D60,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,20338D64,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20338D6C,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00338D88,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00338D89,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,00338D8A,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,00338D8B,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,00338D8C,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,00338D8D,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,00338D8E,extended,00000063
+
+[Max JM]
+patch=1,EE,10338DC8,extended,00006363
+
+[Max MV]
+patch=1,EE,10338DCA,extended,00006363
+
+[Max Counter]
+patch=1,EE,00338DCD,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,10338E30,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,20338E30,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,20338E30,extended,4E729FFF
+patch=1,EE,20338E34,extended,00000918
+
+[Level 9999]
+patch=1,EE,103396C8,extended,0000270F
+
+[Level 999]
+patch=1,EE,103396C8,extended,000003E7
+
+[Level 99]
+patch=1,EE,103396C8,extended,00000063
+
+[No Felonies]
+patch=1,EE,003396D8,extended,00000000
+
+[99 Felonies]
+patch=1,EE,003396D8,extended,00000063
+
+[Max Felonies]
+patch=1,EE,003396D8,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033961C,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20339620,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,20339624,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20339628,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033962C,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20339630,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,20339634,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20339638,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033963C,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20339640,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20339664,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20339668,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033966C,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20339670,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20339674,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20339678,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033967C,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20339684,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,003396A0,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,003396A1,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,003396A2,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,003396A3,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,003396A4,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,003396A5,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,003396A6,extended,00000063
+
+[Max JM]
+patch=1,EE,103396E0,extended,00006363
+
+[Max MV]
+patch=1,EE,103396E2,extended,00006363
+
+[Max Counter]
+patch=1,EE,003396E5,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,10339748,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,20339748,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,20339748,extended,4E729FFF
+patch=1,EE,2033974C,extended,00000918
+
+[Level 9999]
+patch=1,EE,10339FE0,extended,0000270F
+
+[Level 999]
+patch=1,EE,10339FE0,extended,000003E7
+
+[Level 99]
+patch=1,EE,10339FE0,extended,00000063
+
+[No Felonies]
+patch=1,EE,00339FF0,extended,00000000
+
+[99 Felonies]
+patch=1,EE,00339FF0,extended,00000063
+
+[Max Felonies]
+patch=1,EE,00339FF0,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,20339F34,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,20339F38,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,20339F3C,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,20339F40,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,20339F44,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,20339F48,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,20339F4C,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,20339F50,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,20339F54,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,20339F58,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,20339F7C,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,20339F80,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,20339F84,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,20339F88,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,20339F8C,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,20339F90,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,20339F94,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,20339F9C,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,00339FB8,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,00339FB9,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,00339FBA,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,00339FBB,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,00339FBC,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,00339FBD,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,00339FBE,extended,00000063
+
+[Max JM]
+patch=1,EE,10339FF8,extended,00006363
+
+[Max MV]
+patch=1,EE,10339FFA,extended,00006363
+
+[Max Counter]
+patch=1,EE,00339FFD,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033A060,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033A060,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033A060,extended,4E729FFF
+patch=1,EE,2033A064,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033A8F8,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033A8F8,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033A8F8,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033A908,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033A908,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033A908,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033A84C,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033A850,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033A854,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033A858,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033A85C,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033A860,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033A864,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033A868,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033A86C,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033A870,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033A894,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033A898,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033A89C,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033A8A0,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033A8A4,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033A8A8,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033A8AC,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033A8B4,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033A8D0,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033A8D1,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033A8D2,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033A8D3,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033A8D4,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033A8D5,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033A8D6,extended,00000063
+
+[Max JM]
+patch=1,EE,1033A910,extended,00006363
+
+[Max MV]
+patch=1,EE,1033A912,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033A915,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033A978,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033A978,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033A978,extended,4E729FFF
+patch=1,EE,2033A97C,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033B210,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033B210,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033B210,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033B220,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033B220,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033B220,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033B164,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033B168,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033B16C,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033B170,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033B174,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033B178,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033B17C,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033B180,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033B184,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033B188,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033B1AC,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033B1B0,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033B1B4,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033B1B8,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033B1BC,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033B1C0,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033B1C4,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033B1CC,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033B1E8,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033B1E9,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033B1EA,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033B1EB,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033B1EC,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033B1ED,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033B1EE,extended,00000063
+
+[Max JM]
+patch=1,EE,1033B228,extended,00006363
+
+[Max MV]
+patch=1,EE,1033B22A,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033B22D,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033B290,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033B290,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033B290,extended,4E729FFF
+patch=1,EE,2033B294,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033BB28,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033BB28,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033BB28,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033BB38,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033BB38,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033BB38,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033BA7C,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033BA80,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033BA84,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033BA88,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033BA8C,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033BA90,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033BA94,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033BA98,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033BA9C,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033BAA0,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033BAC4,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033BAC8,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033BACC,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033BAD0,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033BAD4,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033BAD8,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033BADC,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033BAE4,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033BB00,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033BB01,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033BB02,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033BB03,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033BB04,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033BB05,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033BB06,extended,00000063
+
+[Max JM]
+patch=1,EE,1033BB40,extended,00006363
+
+[Max MV]
+patch=1,EE,1033BB42,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033BB45,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033BBA8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033BBA8,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033BBA8,extended,4E729FFF
+patch=1,EE,2033BBAC,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033C440,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033C440,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033C440,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033C450,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033C450,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033C450,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033C394,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033C398,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033C39C,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033C3A0,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033C3A4,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033C3A8,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033C3AC,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033C3B0,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033C3B4,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033C3B8,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033C3DC,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033C3E0,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033C3E4,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033C3E8,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033C3EC,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033C3F0,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033C3F4,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033C3FC,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033C418,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033C419,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033C41A,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033C41B,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033C41C,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033C41D,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033C41E,extended,00000063
+
+[Max JM]
+patch=1,EE,1033C458,extended,00006363
+
+[Max MV]
+patch=1,EE,1033C45A,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033C45D,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033C4C0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033C4C0,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033C4C0,extended,4E729FFF
+patch=1,EE,2033C4C4,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033CD58,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033CD58,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033CD58,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033CD68,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033CD68,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033CD68,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033CCAC,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033CCB0,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033CCB4,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033CCB8,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033CCBC,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033CCC0,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033CCC4,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033CCC8,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033CCCC,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033CCD0,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033CCF4,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033CCF8,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033CCFC,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033CD00,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033CD04,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033CD08,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033CD0C,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033CD14,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033CD30,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033CD31,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033CD32,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033CD33,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033CD34,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033CD35,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033CD36,extended,00000063
+
+[Max JM]
+patch=1,EE,1033CD70,extended,00006363
+
+[Max MV]
+patch=1,EE,1033CD72,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033CD75,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033CDD8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033CDD8,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033CDD8,extended,4E729FFF
+patch=1,EE,2033CDDC,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033D670,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033D670,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033D670,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033D680,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033D680,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033D680,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033D5C4,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033D5C8,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033D5CC,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033D5D0,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033D5D4,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033D5D8,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033D5DC,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033D5E0,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033D5E4,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033D5E8,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033D60C,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033D610,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033D614,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033D618,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033D61C,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033D620,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033D624,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033D62C,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033D648,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033D649,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033D64A,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033D64B,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033D64C,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033D64D,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033D64E,extended,00000063
+
+[Max JM]
+patch=1,EE,1033D688,extended,00006363
+
+[Max MV]
+patch=1,EE,1033D68A,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033D68D,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033D6F0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033D6F0,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033D6F0,extended,4E729FFF
+patch=1,EE,2033D6F4,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033DF88,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033DF88,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033DF88,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033DF98,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033DF98,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033DF98,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033DEDC,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033DEE0,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033DEE4,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033DEE8,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033DEEC,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033DEF0,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033DEF4,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033DEF8,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033DEFC,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033DF00,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033DF24,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033DF28,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033DF2C,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033DF30,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033DF34,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033DF38,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033DF3C,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033DF44,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033DF60,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033DF61,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033DF62,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033DF63,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033DF64,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033DF65,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033DF66,extended,00000063
+
+[Max JM]
+patch=1,EE,1033DFA0,extended,00006363
+
+[Max MV]
+patch=1,EE,1033DFA2,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033DFA5,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033E008,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033E008,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033E008,extended,4E729FFF
+patch=1,EE,2033E00C,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033E8A0,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033E8A0,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033E8A0,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033E8B0,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033E8B0,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033E8B0,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033E7F4,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033E7F8,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033E7FC,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033E800,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033E804,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033E808,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033E80C,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033E810,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033E814,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033E818,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033E83C,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033E840,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033E844,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033E848,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033E84C,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033E850,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033E854,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033E85C,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033E878,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033E879,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033E87A,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033E87B,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033E87C,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033E87D,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033E87E,extended,00000063
+
+[Max JM]
+patch=1,EE,1033E8B8,extended,00006363
+
+[Max MV]
+patch=1,EE,1033E8BA,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033E8BD,extended,00000009
+
+[Quick Exp Gain]
+patch=1,EE,1033E920,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,2033E920,extended,FFFFFFFF
+
+[Max Exp]
+patch=1,EE,2033E920,extended,4E729FFF
+patch=1,EE,2033E924,extended,00000918
+
+[Level 9999]
+patch=1,EE,1033F1B8,extended,0000270F
+
+[Level 999]
+patch=1,EE,1033F1B8,extended,000003E7
+
+[Level 99]
+patch=1,EE,1033F1B8,extended,00000063
+
+[No Felonies]
+patch=1,EE,0033F1C8,extended,00000000
+
+[99 Felonies]
+patch=1,EE,0033F1C8,extended,00000063
+
+[Max Felonies]
+patch=1,EE,0033F1C8,extended,000000FF
+
+[Infinite HP]
+patch=1,EE,2033F10C,extended,3B9AC9FF
+
+[Infinite SP]
+patch=1,EE,2033F110,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,2033F114,extended,3B9AC9FF
+
+[Max SP]
+patch=1,EE,2033F118,extended,3B9AC9FF
+
+[Max Atk]
+patch=1,EE,2033F11C,extended,3B9AC9FF
+
+[Max Def]
+patch=1,EE,2033F120,extended,3B9AC9FF
+
+[Max Int]
+patch=1,EE,2033F124,extended,3B9AC9FF
+
+[Max Spd]
+patch=1,EE,2033F128,extended,3B9AC9FF
+
+[Max Hit]
+patch=1,EE,2033F12C,extended,3B9AC9FF
+
+[Max Res]
+patch=1,EE,2033F130,extended,3B9AC9FF
+
+[Max Glove Mastery Exp]
+patch=1,EE,2033F154,extended,3B9AC9FF
+
+[Max Sword Mastery Exp]
+patch=1,EE,2033F158,extended,3B9AC9FF
+
+[Max Spear Mastery Exp]
+patch=1,EE,2033F15C,extended,3B9AC9FF
+
+[Max Bow Mastery Exp]
+patch=1,EE,2033F160,extended,3B9AC9FF
+
+[Max Gun Mastery Exp]
+patch=1,EE,2033F164,extended,3B9AC9FF
+
+[Max Axe Mastery Exp]
+patch=1,EE,2033F168,extended,3B9AC9FF
+
+[Max Staff Mastery Exp]
+patch=1,EE,2033F16C,extended,3B9AC9FF
+
+[Max Mana]
+patch=1,EE,2033F174,extended,05F5E0FF
+
+[Max Glove Mastery Level]
+patch=1,EE,0033F190,extended,00000063
+
+[Max Sword Mastery Level]
+patch=1,EE,0033F191,extended,00000063
+
+[Max Spear Mastery Level]
+patch=1,EE,0033F192,extended,00000063
+
+[Max Bow Mastery Level]
+patch=1,EE,0033F193,extended,00000063
+
+[Max Gun Mastery Level]
+patch=1,EE,0033F194,extended,00000063
+
+[Max Axe Mastery Level]
+patch=1,EE,0033F195,extended,00000063
+
+[Max Staff Mastery Level]
+patch=1,EE,0033F196,extended,00000063
+
+[Max JM]
+patch=1,EE,1033F1D0,extended,00006363
+
+[Max MV]
+patch=1,EE,1033F1D2,extended,00006363
+
+[Max Counter]
+patch=1,EE,0033F1D5,extended,00000009

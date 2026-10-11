@@ -1,0 +1,1291 @@
+gametitle=Onimusha-Blade Warriors (SLUS-20710)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9028A22C,extended,0C0A3DF2
+
+[Infinite Health P1]
+patch=1,EE,10509AB8,extended,000000C8
+
+[No Health P1]
+patch=1,EE,10509AB8,extended,00000000
+
+[Max Health P1]
+patch=1,EE,10509ABA,extended,000000C8
+
+[Max Infinite Health P1]
+patch=1,EE,20509AB8,extended,00C800C8
+
+[Infinite Special P1]
+patch=1,EE,10509AC0,extended,000000C8
+
+[No Special P1]
+patch=1,EE,10509AC0,extended,00000000
+
+[Max Special P1]
+patch=1,EE,10509AC2,extended,000000C8
+
+[Max Infinite Special P1]
+patch=1,EE,20509AC0,extended,00C800C8
+
+[Infinite Health P2]
+patch=1,EE,1050ADF8,extended,000000C8
+
+[No Health P2]
+patch=1,EE,1050ADF8,extended,00000000
+
+[Max Health P2]
+patch=1,EE,1050ADFA,extended,000000C8
+
+[Max Infinite Health P2]
+patch=1,EE,2050ADF8,extended,00C800C8
+
+[Infinite Special P2]
+patch=1,EE,1050AE00,extended,000000C8
+
+[No Special P2]
+patch=1,EE,1050AE00,extended,00000000
+
+[Max Special P2]
+patch=1,EE,1050AE02,extended,000000C8
+
+[Max Infinite Special P2]
+patch=1,EE,2050AE00,extended,00C800C8
+
+[Infinite Health P3]
+patch=1,EE,1050C138,extended,000000C8
+
+[No Health P3]
+patch=1,EE,1050C138,extended,00000000
+
+[Max Health P3]
+patch=1,EE,1050C13A,extended,000000C8
+
+[Max Infinite Health P3]
+patch=1,EE,2050C138,extended,00C800C8
+
+[Infinite Special P3]
+patch=1,EE,1050C140,extended,000000C8
+
+[No Special P3]
+patch=1,EE,1050C140,extended,00000000
+
+[Max Special P3]
+patch=1,EE,1050C142,extended,000000C8
+
+[Max Infinite Special P3]
+patch=1,EE,2050C140,extended,00C800C8
+
+[Infinite Health P4]
+patch=1,EE,1050D478,extended,000000C8
+
+[No Health P4]
+patch=1,EE,1050D478,extended,00000000
+
+[Max Health P4]
+patch=1,EE,1050D47A,extended,000000C8
+
+[Max Infinite Health P4]
+patch=1,EE,2050D478,extended,00C800C8
+
+[Infinite Special P4]
+patch=1,EE,1050D480,extended,000000C8
+
+[No Special P4]
+patch=1,EE,1050D480,extended,00000000
+
+[Max Special P4]
+patch=1,EE,1050D482,extended,000000C8
+
+[Max Infinite Special P4]
+patch=1,EE,2050D480,extended,00C800C8
+
+[Super Weapon Modifier (Hold {R1} Or L1)]
+patch=1,EE,200C0220,extended,3C08000C
+patch=1,EE,200C0224,extended,8D010000
+patch=1,EE,200C0228,extended,24210001
+patch=1,EE,200C022C,extended,AD010000
+patch=1,EE,200C0230,extended,24030010
+patch=1,EE,200C0234,extended,14230012
+patch=1,EE,200C0238,extended,3C01004F
+patch=1,EE,200C023C,extended,AD000000
+patch=1,EE,200C0240,extended,94214F82
+patch=1,EE,200C0244,extended,3821FFFF
+patch=1,EE,200C0248,extended,94492706
+patch=1,EE,200C024C,extended,24030800
+patch=1,EE,200C0250,extended,50230004
+patch=1,EE,200C0254,extended,25290001
+patch=1,EE,200C0258,extended,24030400
+patch=1,EE,200C025C,extended,50230001
+patch=1,EE,200C0260,extended,2529FFFF
+patch=1,EE,200C0264,extended,05220001
+patch=1,EE,200C0268,extended,24090000
+patch=1,EE,200C026C,extended,24030048
+patch=1,EE,200C0270,extended,0123182B
+patch=1,EE,200C0274,extended,50600002
+patch=1,EE,200C0278,extended,24090047
+patch=1,EE,200C027C,extended,A4492706
+patch=1,EE,200C0280,extended,94422706
+patch=1,EE,200C0284,extended,18400003
+patch=1,EE,200C0288,extended,00000000
+patch=1,EE,200C028C,extended,080F911B
+patch=1,EE,200C0290,extended,00000000
+patch=1,EE,200C0294,extended,080F9138
+patch=1,EE,200C0298,extended,00000000
+patch=1,EE,203E4464,extended,08030088
+patch=1,EE,203E4468,extended,00000000
+
+[Samanosuke]
+patch=1,EE,00500DC9,extended,00000001
+
+[Kaede]
+patch=1,EE,00500DCA,extended,00000001
+
+[Keijiro]
+patch=1,EE,00500DCB,extended,00000001
+
+[Jubei]
+patch=1,EE,00500DCC,extended,00000001
+
+[Oyu]
+patch=1,EE,00500DCD,extended,00000001
+
+[Kotaro]
+patch=1,EE,00500DCE,extended,00000001
+
+[Magoichi]
+patch=1,EE,00500DCF,extended,00000001
+
+[Ekei]
+patch=1,EE,00500DD0,extended,00000001
+
+[Musashi]
+patch=1,EE,00500DD2,extended,00000001
+
+[Kojiro]
+patch=1,EE,00500DD3,extended,00000001
+
+[MegaMan EXE]
+patch=1,EE,00500DD5,extended,00000001
+
+[MegaMan Zero]
+patch=1,EE,00500DD6,extended,00000001
+
+[Grunt]
+patch=1,EE,00500DD7,extended,00000001
+
+[Zombie]
+patch=1,EE,00500DD9,extended,00000001
+
+[Jaid]
+patch=1,EE,00500DDA,extended,00000001
+
+[Three-Eyes]
+patch=1,EE,00500DDB,extended,00000001
+
+[Musaid]
+patch=1,EE,00500DDC,extended,00000001
+
+[Marcellus]
+patch=1,EE,00500DDD,extended,00000001
+
+[Jujudormah]
+patch=1,EE,00500DDE,extended,00000001
+
+[Gogandantess]
+patch=1,EE,00500DDF,extended,00000001
+
+[Nobunaga]
+patch=1,EE,00500DE1,extended,00000001
+
+[Gargant]
+patch=1,EE,00500DE5,extended,00000001
+
+[Juju-Ran]
+patch=1,EE,00500DE7,extended,00000001
+
+[All Characters]
+patch=1,EE,40500DC8,extended,00080001
+patch=1,EE,01010101,extended,00000000
+
+[Yagyu Village]
+patch=1,EE,00500DF9,extended,00000001
+
+[Mist Valley]
+patch=1,EE,00500DFA,extended,00000001
+
+[Bamboo Forest]
+patch=1,EE,00500DFB,extended,00000001
+
+[Silver Grass Plain]
+patch=1,EE,00500DFC,extended,00000001
+
+[Ancient Castle (Moon)]
+patch=1,EE,00500DFD,extended,00000001
+
+[Oni Tortoise]
+patch=1,EE,00500DFF,extended,00000001
+
+[Imajo Village]
+patch=1,EE,00500E00,extended,00000001
+
+[Ankoku-Ji Temple]
+patch=1,EE,00500E02,extended,00000001
+
+[Three Story Pagoda]
+patch=1,EE,00500E03,extended,00000001
+
+[Waterfall]
+patch=1,EE,00500E04,extended,00000001
+
+[Mystic Forest]
+patch=1,EE,00500E05,extended,00000001
+
+[Sea Vessel]
+patch=1,EE,00500E06,extended,00000001
+
+[Oni Island]
+patch=1,EE,00500E07,extended,00000001
+
+[Ice Chamber]
+patch=1,EE,00500E08,extended,00000001
+
+[Pipe Corridor]
+patch=1,EE,00500E09,extended,00000001
+
+[Upper Tower]
+patch=1,EE,00500E0A,extended,00000001
+
+[Demon's World]
+patch=1,EE,00500E0B,extended,00000001
+
+[Phantom Realm]
+patch=1,EE,00500E0D,extended,00000001
+
+[Exe]
+patch=1,EE,00500E0F,extended,00000001
+
+[Zero]
+patch=1,EE,00500E10,extended,00000001
+
+[All Stages]
+patch=1,EE,40500DF8,extended,00070001
+patch=1,EE,01010101,extended,00000000
+
+[Samanosuke-Normal Sword]
+patch=1,EE,0050275D,extended,00000081
+
+[Samanosuke-Raizan]
+patch=1,EE,0050275E,extended,00000081
+
+[Samanosuke-Enryuu]
+patch=1,EE,0050275F,extended,00000081
+
+[Samanosuke-Bishamon Sword]
+patch=1,EE,00502760,extended,00000081
+
+[Samanosuke-Muramasa]
+patch=1,EE,00502761,extended,00000081
+
+[Samanosuke-Excalibur]
+patch=1,EE,00502762,extended,00000081
+
+[Samanosuke-True Shippuu]
+patch=1,EE,005027A2,extended,00000081
+
+[Samanosuke-Blue Saber]
+patch=1,EE,005027A3,extended,00000081
+
+[Samanosuke-Bamboo Sword]
+patch=1,EE,005027EE,extended,00000081
+
+[Kaede-Knife]
+patch=1,EE,00502763,extended,00000081
+
+[Kaede-Jambiya]
+patch=1,EE,00502764,extended,00000081
+
+[Kaede-Hocho Masamune]
+patch=1,EE,00502765,extended,00000081
+
+[Kaede-Sacred Knife]
+patch=1,EE,00502766,extended,00000081
+
+[Keijiro-Nagamaki]
+patch=1,EE,00502767,extended,00000081
+
+[Keijiro-Long Nagamaki]
+patch=1,EE,00502768,extended,00000081
+
+[Keijiro-Ichimonji]
+patch=1,EE,00502769,extended,00000081
+
+[Keijiro-Blue Dragon]
+patch=1,EE,0050276A,extended,00000081
+
+[Grunt-Katana]
+patch=1,EE,0050276B,extended,00000081
+
+[Grunt-Nodachi]
+patch=1,EE,0050276C,extended,00000081
+
+[Grunt-Dotanuki]
+patch=1,EE,0050276D,extended,00000081
+
+[Grunt-Blue Saber]
+patch=1,EE,005027E4,extended,00000081
+
+[Grunt-Bamboo Sword]
+patch=1,EE,005027EF,extended,00000081
+
+[Jubei-Yagyu Sword]
+patch=1,EE,0050276E,extended,00000081
+
+[Jubei-Buraitou]
+patch=1,EE,0050276F,extended,00000081
+
+[Jubei-Rekka-Ken]
+patch=1,EE,00502770,extended,00000081
+
+[Jubei-Dojikiri]
+patch=1,EE,00502771,extended,00000081
+
+[Jubei-Soshu Masamune]
+patch=1,EE,00502772,extended,00000081
+
+[Jubei-True Senpumaru]
+patch=1,EE,005027B2,extended,00000081
+
+[Jubei-Red Saber]
+patch=1,EE,005027B3,extended,00000081
+
+[Jubei-Bamboo Sword]
+patch=1,EE,005027F0,extended,00000081
+
+[Jubei-Bishamon Sword]
+patch=1,EE,005027B4,extended,00000081
+
+[Oyu-Broad Sword]
+patch=1,EE,00502773,extended,00000081
+
+[Oyu-Phirangi]
+patch=1,EE,00502774,extended,00000081
+
+[Oyu-Gladius]
+patch=1,EE,00502775,extended,00000081
+
+[Oyu-Lion's Heart]
+patch=1,EE,00502776,extended,00000081
+
+[Oyu-Chinese Combo]
+patch=1,EE,005027B8,extended,00000081
+
+[Oyu-Bamboo Sword]
+patch=1,EE,005027F1,extended,00000081
+
+[Kotaro-Kunai]
+patch=1,EE,0050277B,extended,00000081
+
+[Kotaro-Gabishi]
+patch=1,EE,0050277C,extended,00000081
+
+[Kotaro-Roga-Kunai]
+patch=1,EE,0050277D,extended,00000081
+
+[Kotaro-Swordbreaker]
+patch=1,EE,0050277E,extended,00000081
+
+[Kotaro-Dinner Special]
+patch=1,EE,005027C1,extended,00000081
+
+[Kotaro-Hungry Wolf]
+patch=1,EE,005027C2,extended,00000081
+
+[Kotaro-Swordeater]
+patch=1,EE,005027C3,extended,00000081
+
+[Magoichi-Tri-Barrel Gun]
+patch=1,EE,0050277F,extended,00000081
+
+[Magoichi-Machine Gun]
+patch=1,EE,005027C4,extended,00000081
+
+[Magoichi-Beam Rifle]
+patch=1,EE,005027C5,extended,00000081
+
+[Ekei-Normal Spear]
+patch=1,EE,00502777,extended,00000081
+
+[Ekei-Houtengeki]
+patch=1,EE,00502778,extended,00000081
+
+[Ekei-Halberd]
+patch=1,EE,00502779,extended,00000081
+
+[Ekei-Snake Spear]
+patch=1,EE,0050277A,extended,00000081
+
+[Musashi-Musashi Blade]
+patch=1,EE,00502780,extended,00000081
+
+[Musashi-Onikiri]
+patch=1,EE,00502781,extended,00000081
+
+[Musashi-Kansho/Bakuya]
+patch=1,EE,00502782,extended,00000081
+
+[Musashi-Scallion & Ladle]
+patch=1,EE,005027C6,extended,00000081
+
+[Musashi-Raiden]
+patch=1,EE,005027C7,extended,00000081
+
+[Musashi-Bakuen]
+patch=1,EE,005027C8,extended,00000081
+
+[Musashi-Suzukaze]
+patch=1,EE,005027C9,extended,00000081
+
+[Musashi-Basara]
+patch=1,EE,005027CA,extended,00000081
+
+[Musashi-W Saber]
+patch=1,EE,00502816,extended,00000081
+
+[Kojiro-Nagamitsu]
+patch=1,EE,00502783,extended,00000081
+
+[Kojiro-Kogitsunemaru]
+patch=1,EE,00502784,extended,00000081
+
+[Kojiro-Death Bringer]
+patch=1,EE,00502785,extended,00000081
+
+[Kojiro-Raizan]
+patch=1,EE,005027CB,extended,00000081
+
+[Kojiro-Enryuu]
+patch=1,EE,005027CC,extended,00000081
+
+[Kojiro-True Shippuu]
+patch=1,EE,005027CD,extended,00000081
+
+[Kojiro-Bishamon Sword]
+patch=1,EE,005027CF,extended,00000081
+
+[Kojiro-Blue Saber]
+patch=1,EE,005027CE,extended,00000081
+
+[Kojiro-Bamboo Sword]
+patch=1,EE,005027F2,extended,00000081
+
+[MegaMan EXE-Long Sword]
+patch=1,EE,005027E9,extended,00000081
+
+[MegaMan EXE-Muramasa Blade]
+patch=1,EE,005027EA,extended,00000081
+
+[MegaMan EXE-Paladin Sword]
+patch=1,EE,005027EB,extended,00000081
+
+[MegaMan Zero-Z-Weapon 1]
+patch=1,EE,005027EC,extended,00000081
+
+[MegaMan Zero-Z-Weapon 2]
+patch=1,EE,005027ED,extended,00000081
+
+[Zombie-Broken Nodachi]
+patch=1,EE,00502786,extended,00000081
+
+[Zombie-Nobunaga Sword]
+patch=1,EE,00502787,extended,00000081
+
+[Zombie-Blood Sword]
+patch=1,EE,00502788,extended,00000081
+
+[Zombie-Bamboo Sword]
+patch=1,EE,005027F3,extended,00000081
+
+[Three-Eyes-Arm Blade]
+patch=1,EE,00502789,extended,00000081
+
+[Three-Eyes-Yin-Yang Claws]
+patch=1,EE,0050278A,extended,00000081
+
+[Three-Eyes-Adam Eve Claws]
+patch=1,EE,0050278B,extended,00000081
+
+[Three-Eyes-Life And Death]
+patch=1,EE,00502803,extended,00000081
+
+[Marcellus-Man Killer]
+patch=1,EE,0050278C,extended,00000081
+
+[Marcellus-Oni's Bane]
+patch=1,EE,0050278E,extended,00000081
+
+[Marcellus-Extinction]
+patch=1,EE,00502790,extended,00000081
+
+[Marcellus-Horse Killer]
+patch=1,EE,0050278D,extended,00000081
+
+[Marcellus-Claymore]
+patch=1,EE,0050278F,extended,00000081
+
+[Marcellus-Despair]
+patch=1,EE,00502791,extended,00000081
+
+[Marcellus-Oni Splitter]
+patch=1,EE,0050279F,extended,00000081
+
+[Marcellus-Morning Star]
+patch=1,EE,005027A0,extended,00000081
+
+[Marcellus-Metal Club]
+patch=1,EE,005027D8,extended,00000081
+
+[Marcellus-Rhomphair]
+patch=1,EE,005027A1,extended,00000081
+
+[Jujudormah-Spring Tide]
+patch=1,EE,00502792,extended,00000081
+
+[Jujudormah-Grace]
+patch=1,EE,00502793,extended,00000081
+
+[Gogandantess-Oni Slayer]
+patch=1,EE,00502796,extended,00000081
+
+[Gogandantess-Oni Eater]
+patch=1,EE,00502797,extended,00000081
+
+[Gogandantess-Red Saber]
+patch=1,EE,005027DF,extended,00000081
+
+[Gogandantess-Bamboo Sword]
+patch=1,EE,005027F5,extended,00000081
+
+[Nobunaga-Heshikiri]
+patch=1,EE,00502798,extended,00000081
+
+[Nobunaga-Provider]
+patch=1,EE,00502799,extended,00000081
+
+[Nobunaga-Red saber]
+patch=1,EE,005027AD,extended,00000081
+
+[Nobunaga-Bamboo Sword]
+patch=1,EE,005027F6,extended,00000081
+
+[Gargant-Garblade]
+patch=1,EE,0050279A,extended,00000081
+
+[Juju-Ran-Beauty]
+patch=1,EE,00502794,extended,00000081
+
+[Juju-Ran-Patriarch]
+patch=1,EE,00502795,extended,00000081
+
+[Juju-Ran-Bamboo Sword]
+patch=1,EE,005027F4,extended,00000081
+
+[All Weapons]
+patch=1,EE,4050275C,extended,002F0001
+patch=1,EE,81818181,extended,00000000
+
+[Anti-Shell 1]
+patch=1,EE,00502827,extended,00000081
+
+[Anti-SHell 2]
+patch=1,EE,00502828,extended,00000081
+
+[Anti-Shell 3]
+patch=1,EE,00502829,extended,00000081
+
+[Purity Charm 1]
+patch=1,EE,0050282A,extended,00000081
+
+[Purity Charm 2]
+patch=1,EE,0050282B,extended,00000081
+
+[Purity Charm 3]
+patch=1,EE,0050282C,extended,00000081
+
+[Red Rosary]
+patch=1,EE,0050282D,extended,00000081
+
+[Blue Rosary]
+patch=1,EE,0050282E,extended,00000081
+
+[Green Rosary]
+patch=1,EE,0050282F,extended,00000081
+
+[Yellow Rosary]
+patch=1,EE,00502830,extended,00000081
+
+[Yang Soul 1]
+patch=1,EE,00502831,extended,00000081
+
+[Yang Soul 2]
+patch=1,EE,00502832,extended,00000081
+
+[Yin Soul 1]
+patch=1,EE,00502833,extended,00000081
+
+[Yin Soul 2]
+patch=1,EE,00502834,extended,00000081
+
+[Red Necklace]
+patch=1,EE,00502835,extended,00000081
+
+[Blue Necklace]
+patch=1,EE,00502836,extended,00000081
+
+[Green Necklace]
+patch=1,EE,00502837,extended,00000081
+
+[Purple Necklace]
+patch=1,EE,00502838,extended,00000081
+
+[Orange Necklace]
+patch=1,EE,00502839,extended,00000081
+
+[White Necklace 1]
+patch=1,EE,0050283A,extended,00000081
+
+[White Necklace 2]
+patch=1,EE,0050283B,extended,00000081
+
+[Black Necklace 1]
+patch=1,EE,0050283C,extended,00000081
+
+[Black Necklace 2]
+patch=1,EE,0050283D,extended,00000081
+
+[Sacred Gem 1]
+patch=1,EE,0050283E,extended,00000081
+
+[Sacred Gem 2]
+patch=1,EE,0050283F,extended,00000081
+
+[Sacred Gem 3]
+patch=1,EE,00502840,extended,00000081
+
+[Gold Chicken]
+patch=1,EE,00502841,extended,00000081
+
+[Bell Of Warding]
+patch=1,EE,00502842,extended,00000081
+
+[Exorcism Flute]
+patch=1,EE,00502843,extended,00000081
+
+[Oni Incense 1]
+patch=1,EE,00502844,extended,00000081
+
+[Oni Incense 2]
+patch=1,EE,00502845,extended,00000081
+
+[Oni Incense 3]
+patch=1,EE,00502846,extended,00000081
+
+[Seiryu Scroll]
+patch=1,EE,00502847,extended,00000081
+
+[Byakko Scroll]
+patch=1,EE,00502848,extended,00000081
+
+[Suzaku Scroll]
+patch=1,EE,00502849,extended,00000081
+
+[Genbu Scroll]
+patch=1,EE,0050284A,extended,00000081
+
+[All Items]
+patch=1,EE,40502824,extended,000A0001
+patch=1,EE,81818181,extended,00000000
+
+[Always Low Stage Clear Time]
+patch=1,EE,2050296C,extended,00000000
+
+[Max Total Kills]
+patch=1,EE,205029B8,extended,0000270F
+
+[Max Total Victory Souls]
+patch=1,EE,205029BC,extended,0000270F
+
+[Always Low Play Time]
+patch=1,EE,205029C0,extended,00000000
+
+[Max Exp]
+patch=1,EE,10509AC8,extended,0000270F
+
+[Max Level]
+patch=1,EE,20500E6C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,10500E7A,extended,00000000
+
+[Max Exp]
+patch=1,EE,20500E7C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20500E80,extended,00001130
+
+[Max Defense]
+patch=1,EE,20500E84,extended,00001130
+
+[Max Magic]
+patch=1,EE,20500E88,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,20500E8C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20500E98,extended,0000270F
+
+[Max Souls]
+patch=1,EE,20500E9C,extended,0000270F
+
+[Max Level]
+patch=1,EE,20500F9C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,10500FAA,extended,00000000
+
+[Max Exp]
+patch=1,EE,20500FAC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20500FB0,extended,00001130
+
+[Max Defense]
+patch=1,EE,20500FB4,extended,00001130
+
+[Max Magic]
+patch=1,EE,20500FB8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,20500FBC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20500FC8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,20500FCC,extended,0000270F
+
+[Max Level]
+patch=1,EE,205010CC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,105010DA,extended,00000000
+
+[Max Exp]
+patch=1,EE,205010DC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,205010E0,extended,00001130
+
+[Max Defense]
+patch=1,EE,205010E4,extended,00001130
+
+[Max Magic]
+patch=1,EE,205010E8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,205010EC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,205010F8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,205010FC,extended,0000270F
+
+[Max Level]
+patch=1,EE,205011FC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050120A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050120C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501210,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501214,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501218,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050121C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501228,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050122C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050132C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050133A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050133C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501340,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501344,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501348,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050134C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501358,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050135C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050145C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050146A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050146C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501470,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501474,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501478,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050147C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501488,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050148C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050158C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050159A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050159C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,205015A0,extended,00001130
+
+[Max Defense]
+patch=1,EE,205015A4,extended,00001130
+
+[Max Magic]
+patch=1,EE,205015A8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,205015AC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,205015B8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,205015BC,extended,0000270F
+
+[Max Level]
+patch=1,EE,205016BC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,105016CA,extended,00000000
+
+[Max Exp]
+patch=1,EE,205016CC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,205016D0,extended,00001130
+
+[Max Defense]
+patch=1,EE,205016D4,extended,00001130
+
+[Max Magic]
+patch=1,EE,205016D8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,205016DC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,205016E8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,205016EC,extended,0000270F
+
+[Max Level]
+patch=1,EE,205017EC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,105017FA,extended,00000000
+
+[Max Exp]
+patch=1,EE,205017FC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501800,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501804,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501808,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050180C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501818,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050181C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050191C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050192A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050192C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501930,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501934,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501938,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050193C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501948,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050194C,extended,0000270F
+
+[Max Level]
+patch=1,EE,20501A4C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,10501A5A,extended,00000000
+
+[Max Exp]
+patch=1,EE,20501A5C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501A60,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501A64,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501A68,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,20501A6C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501A78,extended,0000270F
+
+[Max Souls]
+patch=1,EE,20501A7C,extended,0000270F
+
+[Max Level]
+patch=1,EE,20501B7C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,10501B8A,extended,00000000
+
+[Max Exp]
+patch=1,EE,20501B8C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501B90,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501B94,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501B98,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,20501B9C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501BA8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,20501BAC,extended,0000270F
+
+[Max Level]
+patch=1,EE,20501CAC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,10501CBA,extended,00000000
+
+[Max Exp]
+patch=1,EE,20501CBC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501CC0,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501CC4,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501CC8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,20501CCC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501CD8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,20501CDC,extended,0000270F
+
+[Max Level]
+patch=1,EE,20501DDC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,10501DEA,extended,00000000
+
+[Max Exp]
+patch=1,EE,20501DEC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501DF0,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501DF4,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501DF8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,20501DFC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501E08,extended,0000270F
+
+[Max Souls]
+patch=1,EE,20501E0C,extended,0000270F
+
+[Max Level]
+patch=1,EE,20501F0C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,10501F1A,extended,00000000
+
+[Max Exp]
+patch=1,EE,20501F1C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20501F20,extended,00001130
+
+[Max Defense]
+patch=1,EE,20501F24,extended,00001130
+
+[Max Magic]
+patch=1,EE,20501F28,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,20501F2C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20501F38,extended,0000270F
+
+[Max Souls]
+patch=1,EE,20501F3C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050203C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050204A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050204C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20502050,extended,00001130
+
+[Max Defense]
+patch=1,EE,20502054,extended,00001130
+
+[Max Magic]
+patch=1,EE,20502058,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050205C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20502068,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050206C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050216C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050217A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050217C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20502180,extended,00001130
+
+[Max Defense]
+patch=1,EE,20502184,extended,00001130
+
+[Max Magic]
+patch=1,EE,20502188,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050218C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20502198,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050219C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050229C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,105022AA,extended,00000000
+
+[Max Exp]
+patch=1,EE,205022AC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,205022B0,extended,00001130
+
+[Max Defense]
+patch=1,EE,205022B4,extended,00001130
+
+[Max Magic]
+patch=1,EE,205022B8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,205022BC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,205022C8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,205022CC,extended,0000270F
+
+[Max Level]
+patch=1,EE,205023CC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,105023DA,extended,00000000
+
+[Max Exp]
+patch=1,EE,205023DC,extended,0000270F
+
+[Max Attack]
+patch=1,EE,205023E0,extended,00001130
+
+[Max Defense]
+patch=1,EE,205023E4,extended,00001130
+
+[Max Magic]
+patch=1,EE,205023E8,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,205023EC,extended,0001869F
+
+[Max Kills]
+patch=1,EE,205023F8,extended,0000270F
+
+[Max Souls]
+patch=1,EE,205023FC,extended,0000270F
+
+[Max Level]
+patch=1,EE,205024FC,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050250A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050250C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20502510,extended,00001130
+
+[Max Defense]
+patch=1,EE,20502514,extended,00001130
+
+[Max Magic]
+patch=1,EE,20502518,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050251C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20502528,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050252C,extended,0000270F
+
+[Max Level]
+patch=1,EE,2050262C,extended,00000003
+
+[No Continues Used]
+patch=1,EE,1050263A,extended,00000000
+
+[Max Exp]
+patch=1,EE,2050263C,extended,0000270F
+
+[Max Attack]
+patch=1,EE,20502640,extended,00001130
+
+[Max Defense]
+patch=1,EE,20502644,extended,00001130
+
+[Max Magic]
+patch=1,EE,20502648,extended,00001130
+
+[Max Soul Points]
+patch=1,EE,2050264C,extended,0001869F
+
+[Max Kills]
+patch=1,EE,20502658,extended,0000270F
+
+[Max Souls]
+patch=1,EE,2050265C,extended,0000270F

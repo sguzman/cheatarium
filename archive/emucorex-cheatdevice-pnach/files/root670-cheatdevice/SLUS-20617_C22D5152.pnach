@@ -1,0 +1,735 @@
+gametitle=Dynasty Warriors 3-Xtreme Legends (SLUS-20617)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901AE3AC,extended,0C08E93E
+
+[Infinite Health (All Human Players)]
+patch=1,EE,200C0220,extended,94A70220
+patch=1,EE,200C0224,extended,08073D8D
+patch=1,EE,200C0228,extended,A4A7021C
+patch=1,EE,201CF62C,extended,08030088
+
+[Infinite Musou (All Human Players)]
+patch=1,EE,200C0230,extended,24070FFF
+patch=1,EE,200C0234,extended,08073DAD
+patch=1,EE,200C0238,extended,A4A70222
+patch=1,EE,201CF6AC,extended,0803008C
+
+[Have All Levels]
+patch=1,EE,402B182C,extended,00090001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,102B1850,extended,00000101
+
+[Have All Movies]
+patch=1,EE,202B1898,extended,FFFFFFFF
+
+[Speed Scroll]
+patch=1,EE,102B0350,extended,00006300
+
+[Wing Boots]
+patch=1,EE,102B0352,extended,00006301
+
+[Dragon Amulet]
+patch=1,EE,102B0354,extended,00006302
+
+[Peacock Urn]
+patch=1,EE,102B0356,extended,00006303
+
+[Tiger Amulet]
+patch=1,EE,102B0358,extended,00006304
+
+[Tortois Amulet]
+patch=1,EE,102B035A,extended,00006305
+
+[Huang's Bow]
+patch=1,EE,102B035C,extended,00006306
+
+[Shell Armor]
+patch=1,EE,102B035E,extended,00006307
+
+[Horned Helm]
+patch=1,EE,102B0360,extended,00006308
+
+[Cavalry Armor]
+patch=1,EE,102B0362,extended,00006309
+
+[Seven Star Orb]
+patch=1,EE,102B0364,extended,0000630A
+
+[Wind Scroll]
+patch=1,EE,102B0366,extended,0000630B
+
+[Elixir]
+patch=1,EE,102B0368,extended,0000630C
+
+[Red Hare Saddle]
+patch=1,EE,102B036A,extended,0000010D
+
+[Hex Mark Saddle]
+patch=1,EE,102B036C,extended,0000010E
+
+[Imperial Saddle]
+patch=1,EE,102B036E,extended,0000010F
+
+[The Art Of War]
+patch=1,EE,102B0370,extended,00000110
+
+[Bodyguard Manual]
+patch=1,EE,102B0372,extended,00000111
+
+[The Way Of Musou]
+patch=1,EE,102B0374,extended,00000112
+
+[Survival Guide]
+patch=1,EE,102B0376,extended,00000113
+
+[Defender]
+patch=1,EE,102B0378,extended,00000114
+
+[Fire Arrows]
+patch=1,EE,102B037A,extended,00000115
+
+[Buckler]
+patch=1,EE,102B037C,extended,00000116
+
+[Power Scroll]
+patch=1,EE,102B037E,extended,00000117
+
+[Gold Harness]
+patch=1,EE,102B0380,extended,00000118
+
+[Mountain Quiver]
+patch=1,EE,102B0382,extended,00006319
+
+[Mountain Pouch]
+patch=1,EE,102B0384,extended,0000631A
+
+[Bronze Flask]
+patch=1,EE,102B0386,extended,0000631B
+
+[Divine Helm]
+patch=1,EE,102B0388,extended,0000011C
+
+[Scroll Of Accuracy]
+patch=1,EE,102B038A,extended,0000011D
+
+[Imperial Harness]
+patch=1,EE,102B038C,extended,0000011E
+
+[Seven Stars Blade]
+patch=1,EE,102B038E,extended,0000011F
+
+[Lightning Bow]
+patch=1,EE,102B0390,extended,00000120
+
+[Seal Of Darkness]
+patch=1,EE,102B0392,extended,00000121
+
+[Beast Harness]
+patch=1,EE,102B0394,extended,00000122
+
+[Marching Drum]
+patch=1,EE,102B0396,extended,00000123
+
+[Divine Gauntlet]
+patch=1,EE,102B0398,extended,00000124
+
+[Master's Cloak]
+patch=1,EE,102B039A,extended,00000125
+
+[Legendary Scroll]
+patch=1,EE,102B039C,extended,00000126
+
+[Musou Armor]
+patch=1,EE,102B039E,extended,00000127
+
+[Iron Sword]
+patch=1,EE,102B13CA,extended,00000000
+
+[Long Sword]
+patch=1,EE,102B13E2,extended,00000101
+
+[Elder Sword]
+patch=1,EE,102B13FA,extended,00000202
+
+[Spear]
+patch=1,EE,102B1412,extended,00000303
+
+[Dragon Spear]
+patch=1,EE,102B142A,extended,00000404
+
+[Crescent Blade]
+patch=1,EE,102B1442,extended,00000505
+
+[Long Pike]
+patch=1,EE,102B145A,extended,00000606
+
+[Heavenly Spear]
+patch=1,EE,102B1472,extended,00000707
+
+[Tiger's Chin]
+patch=1,EE,102B148A,extended,00000808
+
+[Iron Bow]
+patch=1,EE,102B14A2,extended,00000909
+
+[Steel Bow]
+patch=1,EE,102B14BA,extended,00000A0A
+
+[Gale Bow]
+patch=1,EE,102B14D2,extended,00000B0B
+
+[Iron Crossbow]
+patch=1,EE,102B14EA,extended,00000C0C
+
+[Steel Crossbow]
+patch=1,EE,102B1502,extended,00000D0D
+
+[Wind Crossbow]
+patch=1,EE,102B151A,extended,00000E0E
+
+[BG Peacock Urn]
+patch=1,EE,102B13A8,extended,00006300
+
+[BG Dragon Amulet]
+patch=1,EE,102B13AA,extended,00006301
+
+[BG Tiger Amulet]
+patch=1,EE,102B13AC,extended,00006302
+
+[BG Tortoise Amulet]
+patch=1,EE,102B13AE,extended,00006303
+
+[Huang's Bow (BG)]
+patch=1,EE,102B13B0,extended,00006304
+
+[BG Shell Armor]
+patch=1,EE,102B13B2,extended,00006305
+
+[BG Speed Scroll]
+patch=1,EE,102B13B4,extended,00006306
+
+[BG Wind Scroll]
+patch=1,EE,102B13B6,extended,00006307
+
+[BG Elixir]
+patch=1,EE,102B13B8,extended,00006308
+
+[BG Healing Scroll]
+patch=1,EE,102B13BA,extended,00000109
+
+[Iron Sword]
+patch=1,EE,102B03AA,extended,00000000
+
+[Steel Sword]
+patch=1,EE,102B03C2,extended,00000101
+
+[Board Sword]
+patch=1,EE,102B03DA,extended,00000202
+
+[Long Sword]
+patch=1,EE,102B03F2,extended,00000303
+
+[Scimitar]
+patch=1,EE,102B040A,extended,00000404
+
+[Great Scimitar]
+patch=1,EE,102B0422,extended,00000505
+
+[Spear]
+patch=1,EE,102B043A,extended,00000606
+
+[Long Spear]
+patch=1,EE,102B0452,extended,00000707
+
+[Halberd]
+patch=1,EE,102B046A,extended,00000808
+
+[Great Halberd]
+patch=1,EE,102B0482,extended,00000909
+
+[Hand Aze]
+patch=1,EE,102B049A,extended,00000A0A
+
+[Strike Axe]
+patch=1,EE,102B04B2,extended,00000B0B
+
+[Club]
+patch=1,EE,102B04CA,extended,00000C0C
+
+[Spiked Club]
+patch=1,EE,102B04E2,extended,00000D0D
+
+[Twin Sabers]
+patch=1,EE,102B04FA,extended,00000E0E
+
+[Wing Sabers]
+patch=1,EE,102B0512,extended,00000F0F
+
+[Twin Rods]
+patch=1,EE,102B052A,extended,00001010
+
+[Spira Rods]
+patch=1,EE,102B0542,extended,00001111
+
+[Mace]
+patch=1,EE,102B055A,extended,00001212
+
+[Great Mace]
+patch=1,EE,102B0572,extended,00001313
+
+[War Fan]
+patch=1,EE,102B058A,extended,00001414
+
+[Warlord Fan]
+patch=1,EE,102B05A2,extended,00001515
+
+[Chakram]
+patch=1,EE,102B05BA,extended,00001616
+
+[Crescent Chakram]
+patch=1,EE,102B05D2,extended,00001717
+
+[Battle Axe]
+patch=1,EE,102B05EA,extended,00001818
+
+[War Axe]
+patch=1,EE,102B0602,extended,00001919
+
+[Bronze Claw]
+patch=1,EE,102B061A,extended,00001A1A
+
+[Steel Claw]
+patch=1,EE,102B0632,extended,00001B1B
+
+[Iron Flute]
+patch=1,EE,102B064A,extended,00001C1C
+
+[Steel Flute]
+patch=1,EE,102B0662,extended,00001D1D
+
+[Iron Rod]
+patch=1,EE,102B067A,extended,00001E1E
+
+[Steel Rod]
+patch=1,EE,102B0692,extended,00001F1F
+
+[Tonfa]
+patch=1,EE,102B06AA,extended,00002020
+
+[Studded Tonfa]
+patch=1,EE,102B06C2,extended,00002121
+
+[Double Voulge]
+patch=1,EE,102B06DA,extended,00002222
+
+[Strike Voulge]
+patch=1,EE,102B06F2,extended,00002323
+
+[Staff]
+patch=1,EE,102B070A,extended,00002424
+
+[Mirage Staff]
+patch=1,EE,102B0722,extended,00002525
+
+[Nanman Gauntlet]
+patch=1,EE,102B073A,extended,00002626
+
+[Beast Gauntlet]
+patch=1,EE,102B0752,extended,00002727
+
+[Boomerang]
+patch=1,EE,102B076A,extended,00002828
+
+[Hawk Boomberang]
+patch=1,EE,102B0782,extended,00002929
+
+[Twin Fans]
+patch=1,EE,102B079A,extended,00002A2A
+
+[Violet Fans]
+patch=1,EE,102B07B2,extended,00002B2B
+
+[Bastard Sword]
+patch=1,EE,102B07CA,extended,00002C2C
+
+[Great Sword]
+patch=1,EE,102B07E2,extended,00002D2D
+
+[Rapier]
+patch=1,EE,102B07FA,extended,00002E2E
+
+[Swift Rapier]
+patch=1,EE,102B0812,extended,00002F2F
+
+[Dragon Spear]
+patch=1,EE,102B082A,extended,00003030
+
+[Blue Dragon]
+patch=1,EE,102B0842,extended,00003131
+
+[Snake Blade]
+patch=1,EE,102B085A,extended,00003232
+
+[Kirin Sword]
+patch=1,EE,102B0872,extended,00003333
+
+[Bull]
+patch=1,EE,102B088A,extended,00003434
+
+[Bone Crusher]
+patch=1,EE,102B08A2,extended,00003535
+
+[Elder Sword]
+patch=1,EE,102B08BA,extended,00003636
+
+[Eagle]
+patch=1,EE,102B08D2,extended,00003737
+
+[Wolf Slayer]
+patch=1,EE,102B08EA,extended,00003838
+
+[Gold Orb]
+patch=1,EE,102B0902,extended,00003939
+
+[White Feather]
+patch=1,EE,102B091A,extended,00003A3A
+
+[Sword Of Heaven]
+patch=1,EE,102B0932,extended,00003B3B
+
+[Sky Piercer]
+patch=1,EE,102B094A,extended,00003C3C
+
+[Luna Charm]
+patch=1,EE,102B0962,extended,00003D3D
+
+[Gold Dragon]
+patch=1,EE,102B097A,extended,00003E3E
+
+[Lone Wolf]
+patch=1,EE,102B0992,extended,00003F3F
+
+[King Wolf]
+patch=1,EE,102B09AA,extended,00004040
+
+[Star Sword]
+patch=1,EE,102B09C2,extended,00004141
+
+[Master Sword]
+patch=1,EE,102B09DA,extended,00004242
+
+[Steel Stallion]
+patch=1,EE,102B09F2,extended,00004343
+
+[Sage Sword]
+patch=1,EE,102B0A0A,extended,00004444
+
+[Demon Sword]
+patch=1,EE,102B0A22,extended,00004545
+
+[Dragon Blade]
+patch=1,EE,102B0A3A,extended,00004646
+
+[Black Feather]
+patch=1,EE,102B0A52,extended,00004747
+
+[Tiger Hook]
+patch=1,EE,102B0A6A,extended,00004848
+
+[River Master]
+patch=1,EE,102B0A82,extended,00004949
+
+[Vapor]
+patch=1,EE,102B0A9A,extended,00004A4A
+
+[Staff Of Fire]
+patch=1,EE,102B0AB2,extended,00004B4B
+
+[Destroyer]
+patch=1,EE,102B0ACA,extended,00004C4C
+
+[Peacock Claw]
+patch=1,EE,102B0AE2,extended,00004D4D
+
+[Moon Flute]
+patch=1,EE,102B0AFA,extended,00004E4E
+
+[Shadow Rod]
+patch=1,EE,102B0B12,extended,00004F4F
+
+[Conqueror]
+patch=1,EE,102B0B2A,extended,00005050
+
+[Double Star]
+patch=1,EE,102B0B42,extended,00005151
+
+[Staff Of Wind]
+patch=1,EE,102B0B5A,extended,00005252
+
+[Beast Master]
+patch=1,EE,102B0B72,extended,00005353
+
+[Fire Wheel]
+patch=1,EE,102B0B8A,extended,00005454
+
+[Beauty]
+patch=1,EE,102B0BA2,extended,00005555
+
+[Grace]
+patch=1,EE,102B0BBA,extended,00005656
+
+[Holy Avenger]
+patch=1,EE,102B0BD2,extended,00005757
+
+[Celestial Blade]
+patch=1,EE,102B0BEA,extended,00005858
+
+[Fierce Dragon]
+patch=1,EE,102B0C02,extended,00005959
+
+[Blue Moon Dragon]
+patch=1,EE,102B0C1A,extended,00005A5A
+
+[Viper Blade]
+patch=1,EE,102B0C32,extended,00005B5B
+
+[Kirin Fang]
+patch=1,EE,102B0C4A,extended,00005C5C
+
+[Mad Bull]
+patch=1,EE,102B0C62,extended,00005D5D
+
+[Stone Crusher]
+patch=1,EE,102B0C7A,extended,00005E5E
+
+[Ancients Sword]
+patch=1,EE,102B0C92,extended,00005F5F
+
+[Falcon]
+patch=1,EE,102B0CAA,extended,00006060
+
+[Tiger Slayer]
+patch=1,EE,102B0CC2,extended,00006161
+
+[Gold Globe]
+patch=1,EE,102B0CDA,extended,00006262
+
+[Peacock Feather]
+patch=1,EE,102B0CF2,extended,00006363
+
+[Wrath Of Heaven]
+patch=1,EE,102B0D0A,extended,00006464
+
+[Sky Scorcher]
+patch=1,EE,102B0D22,extended,00006565
+
+[Sol Chakram]
+patch=1,EE,102B0D3A,extended,00006666
+
+[Gold Moon Dragon]
+patch=1,EE,102B0D52,extended,00006767
+
+[Savage Wolf]
+patch=1,EE,102B0D6A,extended,00006868
+
+[Master Wolf]
+patch=1,EE,102B0D82,extended,00006969
+
+[Grand Star]
+patch=1,EE,102B0D9A,extended,00006A6A
+
+[Grand Master]
+patch=1,EE,102B0DB2,extended,00006B6B
+
+[Steel Dragon]
+patch=1,EE,102B0DCA,extended,00006C6C
+
+[Oracle Sword]
+patch=1,EE,102B0DE2,extended,00006D6D
+
+[Demon Fang]
+patch=1,EE,102B0DFA,extended,00006E6E
+
+[Dragon Breath]
+patch=1,EE,102B0E12,extended,00006F6F
+
+[Dark Feather]
+patch=1,EE,102B0E2A,extended,00007070
+
+[White Tiger]
+patch=1,EE,102B0E42,extended,00007171
+
+[Sea Master]
+patch=1,EE,102B0E5A,extended,00007272
+
+[Blink]
+patch=1,EE,102B0E72,extended,00007373
+
+[Volcano Staff]
+patch=1,EE,102B0E8A,extended,00007474
+
+[Marauder]
+patch=1,EE,102B0EA2,extended,00007575
+
+[Peacock Talon]
+patch=1,EE,102B0EBA,extended,00007676
+
+[Dark Moon Flute]
+patch=1,EE,102B0ED2,extended,00007777
+
+[Black Shadow]
+patch=1,EE,102B0EEA,extended,00007878
+
+[Overlord]
+patch=1,EE,102B0F02,extended,00007979
+
+[Double Comet]
+patch=1,EE,102B0F1A,extended,00007A7A
+
+[Tornado Staff]
+patch=1,EE,102B0F32,extended,00007B7B
+
+[King Of Beasts]
+patch=1,EE,102B0F4A,extended,00007C7C
+
+[Magma Wheel]
+patch=1,EE,102B0F62,extended,00007D7D
+
+[True Beauty]
+patch=1,EE,102B0F7A,extended,00007E7E
+
+[True Grace]
+patch=1,EE,102B0F92,extended,00007F7F
+
+[Fu Xis Sword]
+patch=1,EE,102B0FAA,extended,00008080
+
+[Nu Wa's Rapier]
+patch=1,EE,102B0FC2,extended,00008181
+
+[War Dragon]
+patch=1,EE,102B0FDA,extended,00008282
+
+[Divine Dragon]
+patch=1,EE,102B0FF2,extended,00008383
+
+[Serpent Blade]
+patch=1,EE,102B100A,extended,00008484
+
+[Tempest Sword]
+patch=1,EE,102B1022,extended,00008585
+
+[Beast Axe]
+patch=1,EE,102B103A,extended,00008686
+
+[Earthly Mace]
+patch=1,EE,102B1052,extended,00008787
+
+[Elder Moon]
+patch=1,EE,102B106A,extended,00008888
+
+[Flash Blade]
+patch=1,EE,102B1082,extended,00008989
+
+[Tiger Wolf]
+patch=1,EE,102B109A,extended,00008A8A
+
+[Imperial Mace]
+patch=1,EE,102B10B2,extended,00008B8B
+
+[Griffin Feather]
+patch=1,EE,102B10CA,extended,00008C8C
+
+[Blue Steel]
+patch=1,EE,102B10E2,extended,00008D8D
+
+[Demon Slayer]
+patch=1,EE,102B10FA,extended,00008E8E
+
+[Dragon Chakram]
+patch=1,EE,102B1112,extended,00008F8F
+
+[Dragon Star]
+patch=1,EE,102B112A,extended,00009090
+
+[Wolf Blade]
+patch=1,EE,102B1142,extended,00009191
+
+[Heavenly Wolf]
+patch=1,EE,102B115A,extended,00009292
+
+[Black Steel]
+patch=1,EE,102B1172,extended,00009393
+
+[Imperial Saber]
+patch=1,EE,102B118A,extended,00009494
+
+[Lightning Spear]
+patch=1,EE,102B11A2,extended,00009595
+
+[Mystic Blade]
+patch=1,EE,102B11BA,extended,00009696
+
+[Mystic Fang]
+patch=1,EE,102B11D2,extended,00009797
+
+[Dragon God]
+patch=1,EE,102B11EA,extended,00009898
+
+[Raven Feather]
+patch=1,EE,102B1202,extended,00009999
+
+[Fighting Tiger]
+patch=1,EE,102B121A,extended,00009A9A
+
+[Seven Seas Blade]
+patch=1,EE,102B1232,extended,00009B9B
+
+[Starlight Pike]
+patch=1,EE,102B124A,extended,00009C9C
+
+[Thunder Staff]
+patch=1,EE,102B1262,extended,00009D9D
+
+[Tiger Fang]
+patch=1,EE,102B127A,extended,00009E9E
+
+[Phoenix Talon]
+patch=1,EE,102B1292,extended,00009F9F
+
+[Half Moon Flute]
+patch=1,EE,102B12AA,extended,0000A0A0
+
+[Spiked Mace]
+patch=1,EE,102B12C2,extended,0000A1A1
+
+[God Of War]
+patch=1,EE,102B12DA,extended,0000A2A2
+
+[Twin Stars]
+patch=1,EE,102B12F2,extended,0000A3A3
+
+[Lightning Staff]
+patch=1,EE,102B130A,extended,0000A4A4
+
+[Shadow Beast]
+patch=1,EE,102B1322,extended,0000A5A5
+
+[Tri Blade]
+patch=1,EE,102B133A,extended,0000A6A6
+
+[Yellow Beauty]
+patch=1,EE,102B1352,extended,0000A7A7
+
+[Blue Grace]
+patch=1,EE,102B136A,extended,0000A8A8
+
+[Dragon Slayer]
+patch=1,EE,102B1382,extended,0000A9A9
+
+[Draon Rapier]
+patch=1,EE,102B139A,extended,0000AAAA

@@ -1,0 +1,411 @@
+gametitle=Delta Force-Black Hawk Down (SLUS-21124)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903B333C,extended,0C0EF339
+
+[Infinite Health (You Only)]
+patch=1,EE,20276670,extended,3C014348
+patch=1,EE,20276678,extended,AC610028
+
+[Infinite Air]
+patch=1,EE,20277D8C,extended,00000000
+
+[Guns Never Overheat (Your Tank)]
+patch=1,EE,2035E060,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2035B468,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2035B464,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,2035B464,extended,00461021
+
+[Never Reload]
+patch=1,EE,200C0220,extended,24010063
+patch=1,EE,200C0224,extended,AC81000C
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AE420004
+patch=1,EE,D04F8482,extended,0000F7FF
+patch=1,EE,2034E158,extended,0C030088
+patch=1,EE,D04F8482,extended,0010F7FF
+patch=1,EE,2034E158,extended,AE420004
+
+[Infinite Grenades]
+patch=1,EE,2035A868,extended,00000000
+patch=1,EE,203580E4,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,2035A860,extended,24020009
+patch=1,EE,203580E0,extended,24020009
+
+[Extra Grenades]
+patch=1,EE,1035A860,extended,00000001
+patch=1,EE,203580E0,extended,00851021
+
+[Infinite Attribute Points]
+patch=1,EE,20305658,extended,00000000
+patch=1,EE,20305688,extended,00000000
+patch=1,EE,203056C8,extended,00000000
+patch=1,EE,203056F0,extended,00000000
+
+[Can Raise All Normal Attributes To Max]
+patch=1,EE,20307358,extended,00000000
+
+[Can Raise All Weapon Attributes]
+patch=1,EE,103074C2,extended,00001000
+
+[Infinite Ammo Packs]
+patch=1,EE,201FEAB4,extended,00000000
+
+[Max Infinite Ammo Packs]
+patch=1,EE,201FEAAC,extended,24020009
+
+[Extra Ammo Packs]
+patch=1,EE,101FEAAC,extended,00000001
+
+[Infinite Medi Packs]
+patch=1,EE,201F19EC,extended,00000000
+patch=1,EE,201FEFE4,extended,00000000
+
+[Max Infinite Medi Packs]
+patch=1,EE,201F19E4,extended,24030009
+patch=1,EE,201FEFE0,extended,24020009
+
+[Extra Media Packs]
+patch=1,EE,101F19E4,extended,00000001
+patch=1,EE,101FEFE0,extended,00000001
+
+[Boot Camp]
+patch=1,EE,2045CF50,extended,00000001
+
+[Marka Breakdown]
+patch=1,EE,2045CF58,extended,00000001
+
+[Bandit's Crossing]
+patch=1,EE,2045CF60,extended,00000001
+
+[River Raid]
+patch=1,EE,2045CF68,extended,00000001
+
+[Besieged]
+patch=1,EE,2045CF70,extended,00000001
+
+[Gasoline Alley]
+patch=1,EE,2045CF78,extended,00000001
+
+[Radio Aidid]
+patch=1,EE,2045CF80,extended,00000001
+
+[Russian Underground]
+patch=1,EE,2045CF88,extended,00000001
+
+[Shattered Palace]
+patch=1,EE,2045CF90,extended,00000001
+
+[Diplomatic Immunity]
+patch=1,EE,2045CF98,extended,00000001
+
+[Shore Patrol]
+patch=1,EE,2045CFA0,extended,00000001
+
+[Irene]
+patch=1,EE,2045CFA8,extended,00000001
+
+[Lost Convoy]
+patch=1,EE,2045CFB0,extended,00000001
+
+[Valiant Soldiers]
+patch=1,EE,2045CFB8,extended,00000001
+
+[Last Stand]
+patch=1,EE,2045CFC0,extended,00000001
+
+[Mogadishu Mile]
+patch=1,EE,2045CFC8,extended,00000001
+
+[Aidid Takedown]
+patch=1,EE,2045CFD0,extended,00000001
+
+[All Easy Levels]
+patch=1,EE,4045CF50,extended,00110002
+patch=1,EE,00000001,extended,00000000
+
+[Boot Camp]
+patch=1,EE,2045CF54,extended,00000003
+
+[Marka Breakdown]
+patch=1,EE,2045CF5C,extended,00000003
+
+[Bandit's Crossing]
+patch=1,EE,2045CF64,extended,00000003
+
+[River Raid]
+patch=1,EE,2045CF6C,extended,00000003
+
+[Besieged]
+patch=1,EE,2045CF74,extended,00000003
+
+[Gasoline Alley]
+patch=1,EE,2045CF7C,extended,00000003
+
+[Radio Aidid]
+patch=1,EE,2045CF84,extended,00000003
+
+[Russian Underground]
+patch=1,EE,2045CF8C,extended,00000003
+
+[Shattered Palace]
+patch=1,EE,2045CF94,extended,00000003
+
+[Diplomatic Immunity]
+patch=1,EE,2045CF9C,extended,00000003
+
+[Shore Patrol]
+patch=1,EE,2045CFA4,extended,00000003
+
+[Irene]
+patch=1,EE,2045CFAC,extended,00000003
+
+[Lost Convoy]
+patch=1,EE,2045CFB4,extended,00000003
+
+[Valiant Soldiers]
+patch=1,EE,2045CFBC,extended,00000003
+
+[Last Stand]
+patch=1,EE,2045CFC4,extended,00000003
+
+[Mogadishu Mile]
+patch=1,EE,2045CFCC,extended,00000003
+
+[Aidid Takedown]
+patch=1,EE,2045CFD4,extended,00000003
+
+[All Easy Levels]
+patch=1,EE,4045CF54,extended,00110002
+patch=1,EE,00000003,extended,00000000
+
+[Boot Camp]
+patch=1,EE,2045D280,extended,00000001
+
+[Marka Breakdown]
+patch=1,EE,2045D288,extended,00000001
+
+[Bandit's Crossing]
+patch=1,EE,2045D290,extended,00000001
+
+[River Raid]
+patch=1,EE,2045D298,extended,00000001
+
+[Besieged]
+patch=1,EE,2045D2A0,extended,00000001
+
+[Gasoline Alley]
+patch=1,EE,2045D2A8,extended,00000001
+
+[Radio Aidid]
+patch=1,EE,2045D2B0,extended,00000001
+
+[Russian Underground]
+patch=1,EE,2045D2B8,extended,00000001
+
+[Shattered Palace]
+patch=1,EE,2045D2C0,extended,00000001
+
+[Diplomatic Immunity]
+patch=1,EE,2045D2C8,extended,00000001
+
+[Shore Patrol]
+patch=1,EE,2045D2D0,extended,00000001
+
+[Irene]
+patch=1,EE,2045D2D8,extended,00000001
+
+[Lost Convoy]
+patch=1,EE,2045D2E0,extended,00000001
+
+[Valiant Soldiers]
+patch=1,EE,2045D2E8,extended,00000001
+
+[Last Stand]
+patch=1,EE,2045D2F0,extended,00000001
+
+[Mogadishu Mile]
+patch=1,EE,2045D2F8,extended,00000001
+
+[Aidid Takedown]
+patch=1,EE,2045D300,extended,00000001
+
+[All Medium Levels]
+patch=1,EE,4045D280,extended,00110002
+patch=1,EE,00000001,extended,00000000
+
+[Boot Camp]
+patch=1,EE,2045D284,extended,00000003
+
+[Marka Breakdown]
+patch=1,EE,2045D28C,extended,00000003
+
+[Bandit's Crossing]
+patch=1,EE,2045D294,extended,00000003
+
+[River Raid]
+patch=1,EE,2045D29C,extended,00000003
+
+[Besieged]
+patch=1,EE,2045D2A4,extended,00000003
+
+[Gasoline Alley]
+patch=1,EE,2045D2AC,extended,00000003
+
+[Radio Aidid]
+patch=1,EE,2045D2B4,extended,00000003
+
+[Russian Underground]
+patch=1,EE,2045D2BC,extended,00000003
+
+[Shattered Palace]
+patch=1,EE,2045D2C4,extended,00000003
+
+[Diplomatic Immunity]
+patch=1,EE,2045D2CC,extended,00000003
+
+[Shore Patrol]
+patch=1,EE,2045D2D4,extended,00000003
+
+[Irene]
+patch=1,EE,2045D2DC,extended,00000003
+
+[Lost Convoy]
+patch=1,EE,2045D2E4,extended,00000003
+
+[Valiant Soldiers]
+patch=1,EE,2045D2EC,extended,00000003
+
+[Last Stand]
+patch=1,EE,2045D2F4,extended,00000003
+
+[Mogadishu Mile]
+patch=1,EE,2045D2FC,extended,00000003
+
+[Aidid Takedown]
+patch=1,EE,2045D304,extended,00000003
+
+[All Medium Levels]
+patch=1,EE,4045D284,extended,00110002
+patch=1,EE,00000003,extended,00000000
+
+[Boot Camp]
+patch=1,EE,2045D5B0,extended,00000001
+
+[Marka Breakdown]
+patch=1,EE,2045D5B8,extended,00000001
+
+[Bandit's Crossing]
+patch=1,EE,2045D5C0,extended,00000001
+
+[River Raid]
+patch=1,EE,2045D5C8,extended,00000001
+
+[Besieged]
+patch=1,EE,2045D5D0,extended,00000001
+
+[Gasoline Alley]
+patch=1,EE,2045D5D8,extended,00000001
+
+[Radio Aidid]
+patch=1,EE,2045D5E0,extended,00000001
+
+[Russian Underground]
+patch=1,EE,2045D5E8,extended,00000001
+
+[Shattered Palace]
+patch=1,EE,2045D5F0,extended,00000001
+
+[Diplomatic Immunity]
+patch=1,EE,2045D5F8,extended,00000001
+
+[Shore Patrol]
+patch=1,EE,2045D600,extended,00000001
+
+[Irene]
+patch=1,EE,2045D608,extended,00000001
+
+[Lost Convoy]
+patch=1,EE,2045D610,extended,00000001
+
+[Valiant Soldiers]
+patch=1,EE,2045D618,extended,00000001
+
+[Last Stand]
+patch=1,EE,2045D620,extended,00000001
+
+[Mogadishu Mile]
+patch=1,EE,2045D628,extended,00000001
+
+[Aidid Takedown]
+patch=1,EE,2045D630,extended,00000001
+
+[All Hard Levels]
+patch=1,EE,4045D5B0,extended,00110002
+patch=1,EE,00000001,extended,00000000
+
+[Boot Camp]
+patch=1,EE,2045D5B4,extended,00000003
+
+[Marka Breakdown]
+patch=1,EE,2045D5BC,extended,00000003
+
+[Bandit's Crossing]
+patch=1,EE,2045D5C4,extended,00000003
+
+[River Raid]
+patch=1,EE,2045D5CC,extended,00000003
+
+[Besieged]
+patch=1,EE,2045D5D4,extended,00000003
+
+[Gasoline Alley]
+patch=1,EE,2045D5DC,extended,00000003
+
+[Radio Aidid]
+patch=1,EE,2045D5E4,extended,00000003
+
+[Russian Underground]
+patch=1,EE,2045D5EC,extended,00000003
+
+[Shattered Palace]
+patch=1,EE,2045D5F4,extended,00000003
+
+[Diplomatic Immunity]
+patch=1,EE,2045D5FC,extended,00000003
+
+[Shore Patrol]
+patch=1,EE,2045D604,extended,00000003
+
+[Irene]
+patch=1,EE,2045D60C,extended,00000003
+
+[Lost Convoy]
+patch=1,EE,2045D614,extended,00000003
+
+[Valiant Soldiers]
+patch=1,EE,2045D61C,extended,00000003
+
+[Last Stand]
+patch=1,EE,2045D624,extended,00000003
+
+[Mogadishu Mile]
+patch=1,EE,2045D62C,extended,00000003
+
+[Aidid Takedown]
+patch=1,EE,2045D634,extended,00000003
+
+[All Hard Levels]
+patch=1,EE,4045D5B4,extended,00110002
+patch=1,EE,00000003,extended,00000000

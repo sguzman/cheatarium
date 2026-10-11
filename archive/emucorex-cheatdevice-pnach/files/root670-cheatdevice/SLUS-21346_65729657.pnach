@@ -1,0 +1,638 @@
+gametitle=Ace Combat Zero-The Belkan War (SLUS-21346)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90309AB8,extended,0C0CBA89
+
+[P1 Press {SELECT} To Skip FMV]
+patch=1,EE,D069751C,extended,0000EFFF
+patch=1,EE,2030E030,extended,24020001
+patch=1,EE,D069751C,extended,0000FFFF
+patch=1,EE,2030E030,extended,8C620000
+
+[Infinite Health]
+patch=1,EE,20231B2C,extended,240E0065
+patch=1,EE,20231B34,extended,A6EE0398
+patch=1,EE,10231B3A,extended,00001000
+
+[Invincible]
+patch=1,EE,200C0220,extended,8E0F01F8
+patch=1,EE,200C0224,extended,35EF8000
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AE0F01F8
+patch=1,EE,2027B39C,extended,0C030088
+
+[Infinite Missiles]
+patch=1,EE,202310EC,extended,00000000
+
+[Max Infinite Missiles]
+patch=1,EE,202310E8,extended,240F0063
+
+[Infinite Gun Ammo]
+patch=1,EE,20232ED0,extended,00000000
+
+[Max Infinite Gun Ammo]
+patch=1,EE,20232ECC,extended,240F0063
+
+[Infinite Secondary Missiles]
+patch=1,EE,20233D3C,extended,00000000
+
+[Max Infinite Secondary Missiles]
+patch=1,EE,20233D34,extended,240F0063
+
+[Rapid Fire For Missiles]
+patch=1,EE,20230C58,extended,240E0000
+patch=1,EE,20230C78,extended,240E0000
+
+[Rapid Fire For Secondary Missiles]
+patch=1,EE,20233478,extended,00000000
+
+[Max Money]
+patch=1,EE,203B3868,extended,05F5E0FF
+
+[Buying Aircraft Doesnt Decrease Money]
+patch=1,EE,202BE1CC,extended,00000000
+
+[Buying Aircraft Increases Money]
+patch=1,EE,202BE1C8,extended,01C27021
+
+[Buying SP Weapons Doesnt Decrease Money]
+patch=1,EE,202BE2FC,extended,00000000
+
+[Buying SP Weapons Increases Money]
+patch=1,EE,202BE2F8,extended,01C27021
+
+[Infinite Time]
+patch=1,EE,201DD414,extended,00000000
+
+[Always Finish Missions Instantly]
+patch=1,EE,201DDBFC,extended,00000000
+patch=1,EE,201DDDC0,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Complete Mission]
+patch=1,EE,E002FBFE,extended,0069751C
+patch=1,EE,201DDBFC,extended,00000000
+patch=1,EE,201DDDC0,extended,00000000
+patch=1,EE,E002FFFF,extended,0069751C
+patch=1,EE,201DDBFC,extended,52C00086
+patch=1,EE,201DDDC0,extended,06200014
+
+[Ghost World]
+patch=1,EE,201F1B2C,extended,AE0F01F8
+
+[No Collision Damage]
+patch=1,EE,202326D8,extended,00000000
+
+[F-5E Tiger II]
+patch=1,EE,003B38B7,extended,00000001
+
+[J35J Draken]
+patch=1,EE,003B386C,extended,00000001
+
+[F-1]
+patch=1,EE,003B3907,extended,00000001
+
+[MiG-21bis Fishbed]
+patch=1,EE,003B38F8,extended,00000001
+
+[F-4E Phantom II]
+patch=1,EE,003B3880,extended,00000001
+
+[MiG-29A Fulcrum]
+patch=1,EE,003B38FD,extended,00000001
+
+[F-20A Tigershark]
+patch=1,EE,003B38BC,extended,00000001
+
+[F-16C Fighting Falcon]
+patch=1,EE,003B389E,extended,00000001
+
+[F/A-18C Hornet]
+patch=1,EE,003B3894,extended,00000001
+
+[A-10A Thunderbolt II]
+patch=1,EE,003B38D5,extended,00000001
+
+[MiG-31 Foxhound]
+patch=1,EE,003B3902,extended,00000001
+
+[Mirage 2000D]
+patch=1,EE,003B38DA,extended,00000001
+
+[EA-6B Prowler]
+patch=1,EE,003B38D0,extended,00000001
+
+[Su-27 Flanker]
+patch=1,EE,003B38E4,extended,00000001
+
+[F-16C Eagle]
+patch=1,EE,003B3885,extended,00000001
+
+[X-29A]
+patch=1,EE,003B38C1,extended,00000001
+
+[F-14D Super Tomcat]
+patch=1,EE,003B38C6,extended,00000001
+
+[Gripen C]
+patch=1,EE,003B3871,extended,00000001
+
+[F-16XL]
+patch=1,EE,003B38A3,extended,00000001
+
+[Tornado GR.4]
+patch=1,EE,003B387B,extended,00000001
+
+[F-2A]
+patch=1,EE,003B390C,extended,00000001
+
+[F-15E Strike Eagle]
+patch=1,EE,003B388A,extended,00000001
+
+[F-117A Nighthawk]
+patch=1,EE,003B38A8,extended,00000001
+
+[F-35C]
+patch=1,EE,003B38B2,extended,00000001
+
+[EA-18G]
+patch=1,EE,003B3899,extended,00000001
+
+[Rafale M]
+patch=1,EE,003B38DF,extended,00000001
+
+[Typhoon]
+patch=1,EE,003B3876,extended,00000001
+
+[Su-32 Strike Flanker]
+patch=1,EE,003B38E9,extended,00000001
+
+[YF-28A Black Widow II]
+patch=1,EE,003B38CB,extended,00000001
+
+[F-15S/MTD]
+patch=1,EE,003B388F,extended,00000001
+
+[Su-47 Berkut]
+patch=1,EE,003B38F3,extended,00000001
+
+[Su-37 Terminator]
+patch=1,EE,003B38EE,extended,00000001
+
+[F/A-22A Raptor]
+patch=1,EE,003B38AD,extended,00000001
+
+[X-02 Wyvern]
+patch=1,EE,003B3911,extended,00000001
+
+[ADFX-01 Morgan]
+patch=1,EE,003B391B,extended,00000001
+
+[ADF-01 Falken]
+patch=1,EE,003B3916,extended,00000001
+
+[All Aircraft]
+patch=1,EE,202BBF9C,extended,240E0001
+patch=1,EE,202BBFA4,extended,A1EE0008
+
+[F-5E Tiger II]
+patch=1,EE,003B39D7,extended,00000001
+
+[J35J Draken]
+patch=1,EE,003B398C,extended,00000001
+
+[F-1]
+patch=1,EE,003B3A27,extended,00000001
+
+[MiG-21bis Fishbed]
+patch=1,EE,003B3A18,extended,00000001
+
+[F-4E Phantom II]
+patch=1,EE,003B39A0,extended,00000001
+
+[MiG-29A Fulcrum]
+patch=1,EE,003B3A1D,extended,00000001
+
+[F-20A Tigershark]
+patch=1,EE,003B39DC,extended,00000001
+
+[F-16C Fighting Falcon]
+patch=1,EE,003B39BE,extended,00000001
+
+[F/A-18C Hornet]
+patch=1,EE,003B39B4,extended,00000001
+
+[A-10A Thunderbolt II]
+patch=1,EE,003B39F5,extended,00000001
+
+[MiG-31 Foxhound]
+patch=1,EE,003B3A22,extended,00000001
+
+[Mirage 2000D]
+patch=1,EE,003B39FA,extended,00000001
+
+[EA-6B Prowler]
+patch=1,EE,003B39F0,extended,00000001
+
+[Su-27 Flanker]
+patch=1,EE,003B3A04,extended,00000001
+
+[F-16C Eagle]
+patch=1,EE,003B39A5,extended,00000001
+
+[X-29A]
+patch=1,EE,003B39E1,extended,00000001
+
+[F-14D Super Tomcat]
+patch=1,EE,003B39E6,extended,00000001
+
+[Gripen C]
+patch=1,EE,003B3991,extended,00000001
+
+[F-16XL]
+patch=1,EE,003B39C3,extended,00000001
+
+[Tornado GR.4]
+patch=1,EE,003B399B,extended,00000001
+
+[F-2A]
+patch=1,EE,003B3A2C,extended,00000001
+
+[F-15E Strike Eagle]
+patch=1,EE,003B39AA,extended,00000001
+
+[F-117A Nighthawk]
+patch=1,EE,003B39C8,extended,00000001
+
+[F-35C]
+patch=1,EE,003B39D2,extended,00000001
+
+[EA-18G]
+patch=1,EE,003B39B9,extended,00000001
+
+[Rafale M]
+patch=1,EE,003B39FF,extended,00000001
+
+[Typhoon]
+patch=1,EE,003B3996,extended,00000001
+
+[Su-32 Strike Flanker]
+patch=1,EE,003B3A09,extended,00000001
+
+[YF-28A Black Widow II]
+patch=1,EE,003B39EB,extended,00000001
+
+[F-15S/MTD]
+patch=1,EE,003B39AF,extended,00000001
+
+[Su-47 Berkut]
+patch=1,EE,003B3A13,extended,00000001
+
+[Su-37 Terminator]
+patch=1,EE,003B3A0E,extended,00000001
+
+[F/A-22A Raptor]
+patch=1,EE,003B39CD,extended,00000001
+
+[X-02 Wyvern]
+patch=1,EE,003B3A31,extended,00000001
+
+[ADFX-01 Morgan]
+patch=1,EE,003B3A3B,extended,00000001
+
+[ADF-01 Falken]
+patch=1,EE,003B3A36,extended,00000001
+
+[All Aircraft]
+patch=1,EE,202BBF74,extended,240E0001
+patch=1,EE,202BBF7C,extended,A1EE0128
+
+[F-5E Tiger II-Weapon 1]
+patch=1,EE,003B3A6D,extended,00000001
+
+[F-5E Tiger II-Weapon 2]
+patch=1,EE,003B3A6E,extended,00000001
+
+[F-5E Tiger II-Weapon 3]
+patch=1,EE,003B3A6F,extended,00000001
+
+[J35J Draken-Weapon 1]
+patch=1,EE,003B3A40,extended,00000001
+
+[J35J Draken-Weapon 2]
+patch=1,EE,003B3A41,extended,00000001
+
+[J35J Draken-Weapon 3]
+patch=1,EE,003B3A42,extended,00000001
+
+[F-1-Weapon 1]
+patch=1,EE,003B3A9D,extended,00000001
+
+[F-1-Weapon 2]
+patch=1,EE,003B3A9E,extended,00000001
+
+[F-1-Weapon 3]
+patch=1,EE,003B3A9F,extended,00000001
+
+[MiG-21bis Fishbed-Weapon 1]
+patch=1,EE,003B3A94,extended,00000001
+
+[MiG-21bis Fishbed-Weapon 2]
+patch=1,EE,003B3A95,extended,00000001
+
+[MiG-21bis Fishbed-Weapon 3]
+patch=1,EE,003B3A96,extended,00000001
+
+[F-4E Phantom II-Weapon 1]
+patch=1,EE,003B3A4C,extended,00000001
+
+[F-4E Phantom II-Weapon 2]
+patch=1,EE,003B3A4D,extended,00000001
+
+[F-4E Phantom II-Weapon 3]
+patch=1,EE,003B3A4E,extended,00000001
+
+[MiG-29A Fulcrum-Weapon 1]
+patch=1,EE,003B3A97,extended,00000001
+
+[MiG-29A Fulcrum-Weapon 2]
+patch=1,EE,003B3A98,extended,00000001
+
+[MiG-29A Fulcrum-Weapon 3]
+patch=1,EE,003B3A99,extended,00000001
+
+[F-20A Tigershark-Weapon 1]
+patch=1,EE,003B3A70,extended,00000001
+
+[F-20A Tigershark-Weapon 2]
+patch=1,EE,003B3A71,extended,00000001
+
+[F-20A Tigershark-Weapon 3]
+patch=1,EE,003B3A72,extended,00000001
+
+[F-16C Fighting Falcon-Weapon 1]
+patch=1,EE,003B3A5E,extended,00000001
+
+[F-16C Fighting Falcon-Weapon 2]
+patch=1,EE,003B3A5F,extended,00000001
+
+[F-16C Fighting Falcon-Weapon 3]
+patch=1,EE,003B3A60,extended,00000001
+
+[F/A-18C Hornet-Weapon 1]
+patch=1,EE,003B3A58,extended,00000001
+
+[F/A-18C Hornet-Weapon 2]
+patch=1,EE,003B3A59,extended,00000001
+
+[F/A-18C Hornet-Weapon 3]
+patch=1,EE,003B3A5A,extended,00000001
+
+[A-10A Thunderbolt II-Weapon 1]
+patch=1,EE,003B3A7F,extended,00000001
+
+[A-10A Thunderbolt II-Weapon 2]
+patch=1,EE,003B3A80,extended,00000001
+
+[A-10A Thunderbolt II-Weapon 3]
+patch=1,EE,003B3A81,extended,00000001
+
+[MiG-31 Foxhound-Weapon 1]
+patch=1,EE,003B3A9A,extended,00000001
+
+[MiG-31 Foxhound-Weapon 2]
+patch=1,EE,003B3A9B,extended,00000001
+
+[MiG-31 Foxhound-Weapon 3]
+patch=1,EE,003B3A9C,extended,00000001
+
+[Mirage 2000D-Weapon 1]
+patch=1,EE,003B3A82,extended,00000001
+
+[Mirage 2000D-Weapon 2]
+patch=1,EE,003B3A83,extended,00000001
+
+[Mirage 2000D-Weapon 3]
+patch=1,EE,003B3A84,extended,00000001
+
+[EA-6B Prowler-Weapon 1]
+patch=1,EE,003B3A7C,extended,00000001
+
+[EA-6B Prowler-Weapon 2]
+patch=1,EE,003B3A7D,extended,00000001
+
+[EA-6B Prowler-Weapon 3]
+patch=1,EE,003B3A7E,extended,00000001
+
+[Su-27 Flanker-Weapon 1]
+patch=1,EE,003B3A88,extended,00000001
+
+[Su-27 Flanker-Weapon 2]
+patch=1,EE,003B3A89,extended,00000001
+
+[Su-27 Flanker-Weapon 3]
+patch=1,EE,003B3A8A,extended,00000001
+
+[F-16C Eagle-Weapon 1]
+patch=1,EE,003B3A4F,extended,00000001
+
+[F-16C Eagle-Weapon 2]
+patch=1,EE,003B3A50,extended,00000001
+
+[F-16C Eagle-Weapon 3]
+patch=1,EE,003B3A51,extended,00000001
+
+[X-29A-Weapon 1]
+patch=1,EE,003B3A73,extended,00000001
+
+[X-29A-Weapon 2]
+patch=1,EE,003B3A74,extended,00000001
+
+[X-29A-Weapon 3]
+patch=1,EE,003B3A75,extended,00000001
+
+[F-14D Super Tomcat-Weapon 1]
+patch=1,EE,003B3A76,extended,00000001
+
+[F-14D Super Tomcat-Weapon 2]
+patch=1,EE,003B3A77,extended,00000001
+
+[F-14D Super Tomcat-Weapon 3]
+patch=1,EE,003B3A78,extended,00000001
+
+[Gripen C-Weapon 1]
+patch=1,EE,003B3A43,extended,00000001
+
+[Gripen C-Weapon 2]
+patch=1,EE,003B3A44,extended,00000001
+
+[Gripen C-Weapon 3]
+patch=1,EE,003B3A45,extended,00000001
+
+[F-16XL-Weapon 1]
+patch=1,EE,003B3A61,extended,00000001
+
+[F-16XL-Weapon 2]
+patch=1,EE,003B3A62,extended,00000001
+
+[F-16XL-Weapon 3]
+patch=1,EE,003B3A63,extended,00000001
+
+[Tornado GR.4-Weapon 1]
+patch=1,EE,003B3A49,extended,00000001
+
+[Tornado GR.4-Weapon 2]
+patch=1,EE,003B3A4A,extended,00000001
+
+[Tornado GR.4-Weapon 3]
+patch=1,EE,003B3A4B,extended,00000001
+
+[F-2A-Weapon 1]
+patch=1,EE,003B3AA0,extended,00000001
+
+[F-2A-Weapon 2]
+patch=1,EE,003B3AA1,extended,00000001
+
+[F-2A-Weapon 3]
+patch=1,EE,003B3AA2,extended,00000001
+
+[F-15E Strike Eagle-Weapon 1]
+patch=1,EE,003B3A52,extended,00000001
+
+[F-15E Strike Eagle-Weapon 2]
+patch=1,EE,003B3A53,extended,00000001
+
+[F-15E Strike Eagle-Weapon 3]
+patch=1,EE,003B3A54,extended,00000001
+
+[F-117A Nighthawk-Weapon 1]
+patch=1,EE,003B3A64,extended,00000001
+
+[F-117A Nighthawk-Weapon 2]
+patch=1,EE,003B3A65,extended,00000001
+
+[F-117A Nighthawk-Weapon 3]
+patch=1,EE,003B3A66,extended,00000001
+
+[F-35C-Weapon 1]
+patch=1,EE,003B3A6A,extended,00000001
+
+[F-35C-Weapon 2]
+patch=1,EE,003B3A6B,extended,00000001
+
+[F-35C-Weapon 3]
+patch=1,EE,003B3A6C,extended,00000001
+
+[EA-18G-Weapon 1]
+patch=1,EE,003B3A5B,extended,00000001
+
+[EA-18G-Weapon 2]
+patch=1,EE,003B3A5C,extended,00000001
+
+[EA-18G-Weapon 3]
+patch=1,EE,003B3A5D,extended,00000001
+
+[Rafale M-Weapon 1]
+patch=1,EE,003B3A85,extended,00000001
+
+[Rafale M-Weapon 2]
+patch=1,EE,003B3A86,extended,00000001
+
+[Rafale M-Weapon 3]
+patch=1,EE,003B3A87,extended,00000001
+
+[Typhoon-Weapon 1]
+patch=1,EE,003B3A46,extended,00000001
+
+[Typhoon-Weapon 2]
+patch=1,EE,003B3A47,extended,00000001
+
+[Typhoon-Weapon 3]
+patch=1,EE,003B3A48,extended,00000001
+
+[Su-32 Strike Flanker-Weapon 1]
+patch=1,EE,003B3A8B,extended,00000001
+
+[Su-32 Strike Flanker-Weapon 2]
+patch=1,EE,003B3A8C,extended,00000001
+
+[Su-32 Strike Flanker-Weapon 3]
+patch=1,EE,003B3A8D,extended,00000001
+
+[YF-28A Black Widow II-Weapon 1]
+patch=1,EE,003B3A79,extended,00000001
+
+[YF-28A Black Widow II-Weapon 2]
+patch=1,EE,003B3A7A,extended,00000001
+
+[YF-28A Black Widow II-Weapon 3]
+patch=1,EE,003B3A7B,extended,00000001
+
+[F-15S/MTD-Weapon 1]
+patch=1,EE,003B3A55,extended,00000001
+
+[F-15S/MTD-Weapon 2]
+patch=1,EE,003B3A56,extended,00000001
+
+[F-15S/MTD-Weapon 3]
+patch=1,EE,003B3A57,extended,00000001
+
+[Su-47 Berkut-Weapon 1]
+patch=1,EE,003B3A91,extended,00000001
+
+[Su-47 Berkut-Weapon 2]
+patch=1,EE,003B3A92,extended,00000001
+
+[Su-47 Berkut-Weapon 3]
+patch=1,EE,003B3A93,extended,00000001
+
+[Su-37 Terminator-Weapon 1]
+patch=1,EE,003B3A8E,extended,00000001
+
+[Su-37 Terminator-Weapon 2]
+patch=1,EE,003B3A8F,extended,00000001
+
+[Su-37 Terminator-Weapon 3]
+patch=1,EE,003B3A90,extended,00000001
+
+[F/A-22A Raptor-Weapon 1]
+patch=1,EE,003B3A67,extended,00000001
+
+[F/A-22A Raptor-Weapon 2]
+patch=1,EE,003B3A68,extended,00000001
+
+[F/A-22A Raptor-Weapon 3]
+patch=1,EE,003B3A69,extended,00000001
+
+[X-02 Wyvern-Weapon 1]
+patch=1,EE,003B3AA3,extended,00000001
+
+[X-02 Wyvern-Weapon 2]
+patch=1,EE,003B3AA4,extended,00000001
+
+[X-02 Wyvern-Weapon 3]
+patch=1,EE,003B3AA5,extended,00000001
+
+[ADFX-01 Morgan-Weapon 1]
+patch=1,EE,003B3AA9,extended,00000001
+
+[ADFX-01 Morgan-Weapon 2]
+patch=1,EE,003B3AAA,extended,00000001
+
+[ADFX-01 Morgan-Weapon 3]
+patch=1,EE,003B3AAB,extended,00000001
+
+[ADF-01 Falken-Weapon 1]
+patch=1,EE,003B3AA6,extended,00000001
+
+[ADF-01 Falken-Weapon 2]
+patch=1,EE,003B3AA7,extended,00000001
+
+[ADF-01 Falken-Weapon 3]
+patch=1,EE,003B3AA8,extended,00000001
+
+[All SP Weapons]
+patch=1,EE,202BB728,extended,240E0001
+patch=1,EE,202BB738,extended,A1EE01DC

@@ -1,0 +1,21 @@
+gametitle=Silpheed-The Lost Planet (SLUS-20085)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90266B08,extended,0C09C6B3
+
+[Infinite Shields]
+patch=1,EE,102BF4D4,extended,0000000A
+
+[Have All Weapons]
+patch=1,EE,202BF52C,extended,FFFFFFFF
+
+[Quick Score Gain]
+patch=1,EE,11F41C00,extended,0000FFFF
+patch=1,EE,11F41C08,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,21F41C00,extended,05F5E0FF
+patch=1,EE,21F41C08,extended,05F5E0FF

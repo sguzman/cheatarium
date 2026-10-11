@@ -1,0 +1,126 @@
+gametitle=MVP Baseball 2004 (SLUS-20868)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0060AB57
+
+[Away Team Box Scores 50]
+patch=1,EE,200C0280,extended,24040032
+patch=1,EE,200C0284,extended,080B41D0
+patch=1,EE,200C0288,extended,AC440000
+patch=1,EE,202CED34,extended,0C0300A0
+
+[Away Team Box Scores 20]
+patch=1,EE,200C0280,extended,24040014
+patch=1,EE,200C0284,extended,080B41D0
+patch=1,EE,200C0288,extended,AC440000
+patch=1,EE,202CED34,extended,0C0300A0
+
+[Away Team Box Scores 0]
+patch=1,EE,200C0280,extended,24040000
+patch=1,EE,200C0284,extended,080B41D0
+patch=1,EE,200C0288,extended,AC440000
+patch=1,EE,202CED34,extended,0C0300A0
+
+[Home Team Box Scores 50]
+patch=1,EE,200C0290,extended,24040032
+patch=1,EE,200C0294,extended,080B41D0
+patch=1,EE,200C0298,extended,AC440000
+patch=1,EE,202CEDB4,extended,0C0300A4
+
+[Home Team Box Scores 20]
+patch=1,EE,200C0290,extended,24040014
+patch=1,EE,200C0294,extended,080B41D0
+patch=1,EE,200C0298,extended,AC440000
+patch=1,EE,202CEDB4,extended,0C0300A4
+
+[Home Team Box Scores 0]
+patch=1,EE,200C0290,extended,24040000
+patch=1,EE,200C0294,extended,080B41D0
+patch=1,EE,200C0298,extended,AC440000
+patch=1,EE,202CEDB4,extended,0C0300A4
+
+[Infinite Strikes]
+patch=1,EE,200C0220,extended,24100000
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AED00010
+patch=1,EE,202CEC40,extended,0C030088
+
+[1 Strike And You Are Out]
+patch=1,EE,200C0220,extended,8ED00010
+patch=1,EE,200C0224,extended,52000001
+patch=1,EE,200C0228,extended,24100002
+patch=1,EE,200C022C,extended,03E00008
+patch=1,EE,200C0230,extended,AED00010
+patch=1,EE,202CEC40,extended,0C030088
+
+[2 Strikes And You Are Out]
+patch=1,EE,200C0220,extended,8ED00010
+patch=1,EE,200C0224,extended,52000001
+patch=1,EE,200C0228,extended,24100001
+patch=1,EE,200C022C,extended,03E00008
+patch=1,EE,200C0230,extended,AED00010
+patch=1,EE,202CEC40,extended,0C030088
+
+[Infinite Balls]
+patch=1,EE,200C0240,extended,24120000
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,AED2000C
+patch=1,EE,202CEC48,extended,0C030090
+
+[1 Ball And You Walk]
+patch=1,EE,200C0240,extended,8ED2000C
+patch=1,EE,200C0244,extended,52400001
+patch=1,EE,200C0248,extended,24120003
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,AED2000C
+patch=1,EE,202CEC48,extended,0C030090
+
+[2 Balls And You Walk]
+patch=1,EE,200C0240,extended,8ED2000C
+patch=1,EE,200C0244,extended,52400001
+patch=1,EE,200C0248,extended,24120002
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,AED2000C
+patch=1,EE,202CEC48,extended,0C030090
+
+[3 Balls And You Walk]
+patch=1,EE,200C0240,extended,8ED2000C
+patch=1,EE,200C0244,extended,52400001
+patch=1,EE,200C0248,extended,24120001
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,AED2000C
+patch=1,EE,202CEC48,extended,0C030090
+
+[Infinite Outs]
+patch=1,EE,200C0260,extended,8E030004
+patch=1,EE,200C0260,extended,24110000
+patch=1,EE,200C0260,extended,03E00008
+patch=1,EE,200C0260,extended,AED10020
+patch=1,EE,202CEC2C,extended,0C030098
+
+[1 Out And You Are Out]
+patch=1,EE,200C0260,extended,8E030004
+patch=1,EE,200C0264,extended,8ED10020
+patch=1,EE,200C0268,extended,52200001
+patch=1,EE,200C026C,extended,24110002
+patch=1,EE,200C0270,extended,03E00008
+patch=1,EE,200C0274,extended,AED10020
+patch=1,EE,202CEC2C,extended,0C030098
+
+[2 Outs And You Are Out]
+patch=1,EE,200C0260,extended,8E030004
+patch=1,EE,200C0264,extended,8ED10020
+patch=1,EE,200C0268,extended,52200001
+patch=1,EE,200C026C,extended,24110001
+patch=1,EE,200C0270,extended,03E00008
+patch=1,EE,200C0274,extended,AED10020
+patch=1,EE,202CEC2C,extended,0C030098
+
+[Unlock All MVP Rewards]
+patch=1,EE,20CB08EC,extended,FFFFFFFF
+patch=1,EE,20CB08F0,extended,FFFFFFFF
+patch=1,EE,20CB08F4,extended,FFFFFFFF
+patch=1,EE,20CB08F8,extended,FFFFFFFF

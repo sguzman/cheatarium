@@ -1,0 +1,136 @@
+gametitle=Finny The Fish & The Seven Waters (SLUS-21072)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90168364,extended,0C08D6A8
+
+[Infinite Life]
+patch=1,EE,200C0220,extended,8E0115E4
+patch=1,EE,200C0224,extended,0807DD04
+patch=1,EE,200C0228,extended,AE0115EC
+patch=1,EE,20190710,extended,0C030088
+
+[Infinite Tummy]
+patch=1,EE,200C0230,extended,8E0115E8
+patch=1,EE,200C0234,extended,0807B8D8
+patch=1,EE,200C0238,extended,AE0115F0
+patch=1,EE,20190728,extended,0C03008C
+
+[Have All Green Scales]
+patch=1,EE,207D25B4,extended,FFFFFFFF
+
+[Have All Yellow Scales]
+patch=1,EE,207D25B8,extended,FFFFFFFF
+
+[Have All Blue Scales]
+patch=1,EE,207D25BC,extended,FFFFFFFF
+
+[Have All Red Scales]
+patch=1,EE,207D25C0,extended,FFFFFFFF
+
+[Have All White Scales]
+patch=1,EE,207D25C4,extended,000003FF
+
+[Max Driftline Crab Eaten]
+patch=1,EE,207D25E0,extended,000003E7
+
+[No Driftline Crab Eaten]
+patch=1,EE,207D25E0,extended,00000000
+
+[Max Fire Bell Newt Eaten]
+patch=1,EE,207D25E4,extended,000003E7
+
+[Max Fire Bell Newt Eaten]
+patch=1,EE,207D25E4,extended,00000000
+
+[Max Silver Crucian Carp Eaten]
+patch=1,EE,207D264C,extended,000003E7
+
+[No Silver Crucian Carp Eaten]
+patch=1,EE,207D264C,extended,00000000
+
+[Max Water Beetle Eaten]
+patch=1,EE,207D2674,extended,000003E7
+
+[No Water Beetle Eaten]
+patch=1,EE,207D2674,extended,00000000
+
+[Max Shiokara Dragonfly Eaten]
+patch=1,EE,207D268C,extended,000003E7
+
+[No Shiokara Dragonfly Eaten]
+patch=1,EE,207D268C,extended,00000000
+
+[Max Spotted Sunfish Eaten]
+patch=1,EE,207D26AC,extended,000003E7
+
+[No Spotted Sunfish Eaten]
+patch=1,EE,207D26AC,extended,00000000
+
+[Max Black-Spotted Pond Frog Eaten]
+patch=1,EE,207D26CC,extended,000003E7
+
+[No Black-Spotted Pond Frog Eaten]
+patch=1,EE,207D26CC,extended,00000000
+
+[Max Nigoro-buna Eaten]
+patch=1,EE,207D26E4,extended,000003E7
+
+[No Nigoro-buna Eaten]
+patch=1,EE,207D26E4,extended,00000000
+
+[Max Japanese Crawfish Eaten]
+patch=1,EE,207D26EC,extended,000003E7
+
+[No Japanese Crawfish Eaten]
+patch=1,EE,207D26EC,extended,00000000
+
+[Max Hiratetenagaebi Eaten]
+patch=1,EE,207D2704,extended,000003E7
+
+[No Hiratetenagaebi Eaten]
+patch=1,EE,207D2704,extended,00000000
+
+[Max Bitterling Eaten]
+patch=1,EE,207D2708,extended,000003E7
+
+[No Bitterling Eaten]
+patch=1,EE,207D2708,extended,00000000
+
+[Max Siberian Stone Loach Eaten]
+patch=1,EE,207D2714,extended,000003E7
+
+[No Siberian Stone Loach Eaten]
+patch=1,EE,207D2714,extended,00000000
+
+[Max Honmoroko Eaten]
+patch=1,EE,207D2738,extended,000003E7
+
+[No Honmoroko Eaten]
+patch=1,EE,207D2738,extended,00000000
+
+[Max Topmouth Gudgeon Eaten]
+patch=1,EE,207D2764,extended,000003E7
+
+[No Topmouth Gudgeon Eaten]
+patch=1,EE,207D2764,extended,00000000
+
+[Max Amur Goby Eaten]
+patch=1,EE,207D276C,extended,000003E7
+
+[No Amur Goby Eaten]
+patch=1,EE,207D276C,extended,00000000
+
+[Max Northern Snakehead Eaten]
+patch=1,EE,207D2770,extended,000003E7
+
+[No Northern Snakehead Eaten]
+patch=1,EE,207D2770,extended,00000000
+
+[Max Pond Smelt Eaten]
+patch=1,EE,207D2780,extended,000003E7
+
+[No Pond Smelt Eaten]
+patch=1,EE,207D2780,extended,00000000

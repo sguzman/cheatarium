@@ -1,0 +1,333 @@
+gametitle=Ribbit King (SLUS-20837)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901DC080,extended,0C07BADC
+
+[Infinite Money]
+patch=1,EE,10218A80,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,20218A80,extended,000F423F
+
+[P1 Max Score]
+patch=1,EE,2043D6D8,extended,0098967F
+
+[P1 No Score]
+patch=1,EE,2043D6D8,extended,00000000
+
+[P1 Only One Shot Recorded]
+patch=1,EE,2043D670,extended,00000000
+
+[P1 Start On 2nd Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000101
+
+[P1 Start On 3rd Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000202
+
+[P1 Start On 4th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000303
+
+[P1 Start On 5th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000404
+
+[P1 Start On 6th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000505
+
+[P1 Start On 7th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000606
+
+[P1 Start On 8th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000707
+
+[CPU Max Score]
+patch=1,EE,2043D5F8,extended,0098967F
+
+[CPU No Score]
+patch=1,EE,2043D5F8,extended,00000000
+
+[CPU Only One Shot Recorded]
+patch=1,EE,2043D590,extended,00000000
+
+[CPU Start On 2nd Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000101
+
+[CPU Start On 3rd Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000202
+
+[CPU Start On 4th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000303
+
+[CPU Start On 5th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000404
+
+[CPU Start On 6th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000505
+
+[CPU Start On 7th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000606
+
+[CPU Start On 8th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000707
+
+[Skitter]
+patch=1,EE,00218A19,extended,00000001
+
+[Sebastion]
+patch=1,EE,00218A1A,extended,00000003
+
+[Slugger]
+patch=1,EE,00218A1B,extended,00000003
+
+[Pouncer]
+patch=1,EE,00218A1C,extended,00000003
+
+[Dipsy]
+patch=1,EE,00218A1D,extended,00000003
+
+[Li'l Lunk]
+patch=1,EE,00218A1E,extended,00000003
+
+[Binky]
+patch=1,EE,00218A1F,extended,00000003
+
+[Wadsworth]
+patch=1,EE,00218A20,extended,00000003
+
+[Snakey]
+patch=1,EE,00218A21,extended,00000003
+
+[Atom]
+patch=1,EE,00218A22,extended,00000003
+
+[Flippy]
+patch=1,EE,00218A23,extended,00000003
+
+[Fly Guy]
+patch=1,EE,00218A24,extended,00000003
+
+[Scrappy]
+patch=1,EE,00218A25,extended,00000003
+
+[Frog-Fuel]
+patch=1,EE,00218A2E,extended,00000063
+
+[Power-Fuel]
+patch=1,EE,00218A2F,extended,00000063
+
+[Beta-Ribbotin]
+patch=1,EE,00218A30,extended,00000063
+
+[Jump-Pump]
+patch=1,EE,00218A31,extended,00000063
+
+[Wing]
+patch=1,EE,00218A32,extended,00000063
+
+[FlyDar]
+patch=1,EE,00218A33,extended,00000063
+
+[Frog-Guard]
+patch=1,EE,00218A34,extended,00000063
+
+[Slo-Mo Maker]
+patch=1,EE,00218A35,extended,00000063
+
+[Super-Spring]
+patch=1,EE,00218A36,extended,00000063
+
+[Insta-Ice]
+patch=1,EE,00218A37,extended,00000063
+
+[Fly-Bye]
+patch=1,EE,00218A38,extended,00000063
+
+[Frocket]
+patch=1,EE,00218A39,extended,00000063
+
+[Scuba-Frog]
+patch=1,EE,00218A3A,extended,00000063
+
+[De-Bouncer]
+patch=1,EE,00218A3B,extended,00000063
+
+[Power-Star]
+patch=1,EE,00218A3C,extended,00000063
+
+[Rock]
+patch=1,EE,00218A3D,extended,00000063
+
+[Lucky Plaque]
+patch=1,EE,00218A3E,extended,00000063
+
+[Big 10 Bang]
+patch=1,EE,00218A3F,extended,00000063
+
+[All Items]
+patch=1,EE,10218A2E,extended,00006363
+patch=1,EE,40218A30,extended,00040001
+patch=1,EE,63636363,extended,00000000
+
+[P1 Max Score]
+patch=1,EE,2043D5F8,extended,0098967F
+
+[P1 No Score]
+patch=1,EE,2043D5F8,extended,00000000
+
+[P1 Only One Shot Recorded]
+patch=1,EE,2043D590,extended,00000000
+
+[P1 Start On 2nd Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000101
+
+[P1 Start On 3rd Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000202
+
+[P1 Start On 4th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000303
+
+[P1 Start On 5th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000404
+
+[P1 Start On 6th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000505
+
+[P1 Start On 7th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000606
+
+[P1 Start On 8th Shot Recorded]
+patch=1,EE,D043D590,extended,00000000
+patch=1,EE,2043D590,extended,00000707
+
+[P2 Max Score]
+patch=1,EE,2043D6D8,extended,0098967F
+
+[P2 No Score]
+patch=1,EE,2043D6D8,extended,00000000
+
+[P2 Only One Shot Recorded]
+patch=1,EE,2043D670,extended,00000000
+
+[P2 Start On 2nd Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000101
+
+[P2 Start On 3rd Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000202
+
+[P2 Start On 4th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000303
+
+[P2 Start On 5th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000404
+
+[P2 Start On 6th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000505
+
+[P2 Start On 7th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000606
+
+[P2 Start On 8th Shot Recorded]
+patch=1,EE,D043D670,extended,00000000
+patch=1,EE,2043D670,extended,00000707
+
+[P3 Max Score]
+patch=1,EE,2043D7B8,extended,0098967F
+
+[P3 No Score]
+patch=1,EE,2043D7B8,extended,00000000
+
+[P3 Only One Shot Recorded]
+patch=1,EE,2043D750,extended,00000000
+
+[P3 Start On 2nd Shot Recorded]
+patch=1,EE,D043D750,extended,00000000
+patch=1,EE,2043D750,extended,00000101
+
+[P3 Start On 3rd Shot Recorded]
+patch=1,EE,D043D750,extended,00000000
+patch=1,EE,2043D750,extended,00000202
+
+[P3 Start On 4th Shot Recorded]
+patch=1,EE,D043D750,extended,00000000
+patch=1,EE,2043D750,extended,00000303
+
+[P3 Start On 5th Shot Recorded]
+patch=1,EE,D043D750,extended,00000000
+patch=1,EE,2043D750,extended,00000404
+
+[P3 Start On 6th Shot Recorded]
+patch=1,EE,D043D750,extended,00000000
+patch=1,EE,2043D750,extended,00000505
+
+[P3 Start On 7th Shot Recorded]
+patch=1,EE,D043D750,extended,00000000
+patch=1,EE,2043D750,extended,00000606
+
+[P3 Start On 8th Shot Recorded]
+patch=1,EE,D043D750,extended,00000000
+patch=1,EE,2043D750,extended,00000707
+
+[P4 Max Score]
+patch=1,EE,2043D898,extended,0098967F
+
+[P4 No Score]
+patch=1,EE,2043D898,extended,00000000
+
+[P4 Only One Shot Recorded]
+patch=1,EE,2043D830,extended,00000000
+
+[P4 Start On 2nd Shot Recorded]
+patch=1,EE,D043D830,extended,00000000
+patch=1,EE,2043D830,extended,00000101
+
+[P4 Start On 3rd Shot Recorded]
+patch=1,EE,D043D830,extended,00000000
+patch=1,EE,2043D830,extended,00000202
+
+[P4 Start On 4th Shot Recorded]
+patch=1,EE,D043D830,extended,00000000
+patch=1,EE,2043D830,extended,00000303
+
+[P4 Start On 5th Shot Recorded]
+patch=1,EE,D043D830,extended,00000000
+patch=1,EE,2043D830,extended,00000404
+
+[P4 Start On 6th Shot Recorded]
+patch=1,EE,D043D830,extended,00000000
+patch=1,EE,2043D830,extended,00000505
+
+[P4 Start On 7th Shot Recorded]
+patch=1,EE,D043D830,extended,00000000
+patch=1,EE,2043D830,extended,00000606
+
+[P4 Start On 8th Shot Recorded]
+patch=1,EE,D043D830,extended,00000000
+patch=1,EE,2043D830,extended,00000707

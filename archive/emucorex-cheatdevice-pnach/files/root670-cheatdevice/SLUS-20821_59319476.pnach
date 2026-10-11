@@ -1,0 +1,275 @@
+gametitle=Mobile Suit Gundam-Gundam Vs. Zeta Gundam (SLUS-20821)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9029DC58,extended,0C046756
+
+[Infinite Time]
+patch=1,EE,107963E6,extended,00007530
+
+[Max Armor P1]
+patch=1,EE,107969A0,extended,000003E7
+
+[Infinite Armor P1]
+patch=1,EE,107969A2,extended,000003E7
+
+[Max Infinite Armor P1]
+patch=1,EE,207969A0,extended,03E703E7
+
+[Low Max Armor P1]
+patch=1,EE,107969A0,extended,00000001
+
+[Low Armor P1]
+patch=1,EE,D07969A2,extended,00200001
+patch=1,EE,107969A2,extended,00000001
+
+[No Armor P1]
+patch=1,EE,107969A2,extended,00000000
+
+[Infinite Boost P1]
+patch=1,EE,10796AE8,extended,00000FA0
+
+[No Boost P1]
+patch=1,EE,10796AE8,extended,00000000
+
+[Max Ammo-Main Weapon P1]
+patch=1,EE,10796DD6,extended,000003E7
+
+[Low Max Ammo-Main Weapon P1]
+patch=1,EE,10796DD6,extended,00000001
+
+[Infinite Ammo-Main Weapon P1]
+patch=1,EE,10796DD8,extended,000003E7
+
+[No Ammo-Main Weapon P1]
+patch=1,EE,10796DD8,extended,00000000
+
+[Main Weapon-Quicker Recharge P1]
+patch=1,EE,20796DDC,extended,0000012C
+
+[Main Weapon-Never Recharges P1]
+patch=1,EE,20796DDC,extended,00000000
+
+[Max Ammo-Sub Weapon P1]
+patch=1,EE,10796DE6,extended,000003E7
+
+[Low Max Ammo-Sub Weapon P1]
+patch=1,EE,10796DE6,extended,00000001
+
+[Infinite Ammo-Sub Weapon P1]
+patch=1,EE,10796DE8,extended,000003E7
+
+[No Ammo-Sub Weapon P1]
+patch=1,EE,10796DE8,extended,00000000
+
+[Sub Weapon-Quicker Recharge P1]
+patch=1,EE,20796DEC,extended,0000012C
+
+[Sub Weapon-Never Recharges P1]
+patch=1,EE,20796DEC,extended,00000000
+
+[Max Armor P2]
+patch=1,EE,10798BA0,extended,000003E7
+
+[Infinite Armor P2]
+patch=1,EE,10798BA2,extended,000003E7
+
+[Max Infinite Armor P2]
+patch=1,EE,20798BA0,extended,03E703E7
+
+[Low Max Armor P2]
+patch=1,EE,10798BA0,extended,00000001
+
+[Low Armor P2]
+patch=1,EE,D0798BA2,extended,00200001
+patch=1,EE,10798BA2,extended,00000001
+
+[No Armor P2]
+patch=1,EE,10798BA2,extended,00000000
+
+[Infinite Boost P2]
+patch=1,EE,10798CE8,extended,00000FA0
+
+[No Boost P2]
+patch=1,EE,10798CE8,extended,00000000
+
+[Max Ammo-Main Weapon P2]
+patch=1,EE,10798FD6,extended,000003E7
+
+[Low Max Ammo-Main Weapon P2]
+patch=1,EE,10798FD6,extended,00000001
+
+[Infinite Ammo-Main Weapon P2]
+patch=1,EE,10798FD8,extended,000003E7
+
+[No Ammo-Main Weapon P2]
+patch=1,EE,10798FD8,extended,00000000
+
+[Main Weapon-Quicker Recharge P2]
+patch=1,EE,20798FDC,extended,0000012C
+
+[Main Weapon-Never Recharges P2]
+patch=1,EE,20798FDC,extended,00000000
+
+[Max Ammo-Sub Weapon P2]
+patch=1,EE,10798FE6,extended,000003E7
+
+[Low Max Ammo-Sub Weapon P2]
+patch=1,EE,10798FE6,extended,00000001
+
+[Infinite Ammo-Sub Weapon P2]
+patch=1,EE,10798FE8,extended,000003E7
+
+[No Ammo-Sub Weapon P2]
+patch=1,EE,10798FE8,extended,00000000
+
+[Sub Weapon-Quicker Recharge P2]
+patch=1,EE,20798FEC,extended,0000012C
+
+[Sub Weapon-Never Recharges P2]
+patch=1,EE,20798FEC,extended,00000000
+
+[Max Armor P3]
+patch=1,EE,1079ADA0,extended,000003E7
+
+[Infinite Armor P3]
+patch=1,EE,1079ADA2,extended,000003E7
+
+[Max Infinite Armor P3]
+patch=1,EE,2079ADA0,extended,03E703E7
+
+[Low Max Armor P3]
+patch=1,EE,1079ADA0,extended,00000001
+
+[Low Armor P3]
+patch=1,EE,D079ADA2,extended,00200001
+patch=1,EE,1079ADA2,extended,00000001
+
+[No Armor P3]
+patch=1,EE,1079ADA2,extended,00000000
+
+[Infinite Boost P3]
+patch=1,EE,1079AEE8,extended,00000FA0
+
+[No Boost P3]
+patch=1,EE,1079AEE8,extended,00000000
+
+[Max Ammo-Main Weapon P3]
+patch=1,EE,1079B1D6,extended,000003E7
+
+[Low Max Ammo-Main Weapon P3]
+patch=1,EE,1079B1D6,extended,00000001
+
+[Infinite Ammo-Main Weapon P3]
+patch=1,EE,1079B1D8,extended,000003E7
+
+[No Ammo-Main Weapon P3]
+patch=1,EE,1079B1D8,extended,00000000
+
+[Main Weapon-Quicker Recharge P3]
+patch=1,EE,2079B1DC,extended,0000012C
+
+[Main Weapon-Never Recharges P3]
+patch=1,EE,2079B1DC,extended,00000000
+
+[Max Ammo-Sub Weapon P3]
+patch=1,EE,1079B1E6,extended,000003E7
+
+[Low Max Ammo-Sub Weapon P3]
+patch=1,EE,1079B1E6,extended,00000001
+
+[Infinite Ammo-Sub Weapon P3]
+patch=1,EE,1079B1E8,extended,000003E7
+
+[No Ammo-Sub Weapon P3]
+patch=1,EE,1079B1E8,extended,00000000
+
+[Sub Weapon-Quicker Recharge P3]
+patch=1,EE,2079B1EC,extended,0000012C
+
+[Sub Weapon-Never Recharges P3]
+patch=1,EE,2079B1EC,extended,00000000
+
+[Max Armor P4]
+patch=1,EE,1079CFA0,extended,000003E7
+
+[Infinite Armor P4]
+patch=1,EE,1079CFA2,extended,000003E7
+
+[Max Infinite Armor P4]
+patch=1,EE,2079CFA0,extended,03E703E7
+
+[Low Max Armor P4]
+patch=1,EE,1079CFA0,extended,00000001
+
+[Low Armor P4]
+patch=1,EE,D079CFA2,extended,00200001
+patch=1,EE,1079CFA2,extended,00000001
+
+[No Armor P4]
+patch=1,EE,1079CFA2,extended,00000000
+
+[Infinite Boost P4]
+patch=1,EE,1079D0E8,extended,00000FA0
+
+[No Boost P4]
+patch=1,EE,1079D0E8,extended,00000000
+
+[Max Ammo-Main Weapon P4]
+patch=1,EE,1079D3D6,extended,000003E7
+
+[Low Max Ammo-Main Weapon P4]
+patch=1,EE,1079D3D6,extended,00000001
+
+[Infinite Ammo-Main Weapon P4]
+patch=1,EE,1079D3D8,extended,000003E7
+
+[No Ammo-Main Weapon P4]
+patch=1,EE,1079D3D8,extended,00000000
+
+[Main Weapon-Quicker Recharge P3]
+patch=1,EE,2079D3DC,extended,0000012C
+
+[Main Weapon-Never Recharges P3]
+patch=1,EE,2079D3DC,extended,00000000
+
+[Max Ammo-Sub Weapon P4]
+patch=1,EE,1079D3E6,extended,000003E7
+
+[Low Max Ammo-Sub Weapon P4]
+patch=1,EE,1079D3E6,extended,00000001
+
+[Infinite Ammo-Sub Weapon P4]
+patch=1,EE,1079D3E8,extended,000003E7
+
+[No Ammo-Sub Weapon P4]
+patch=1,EE,1079D3E8,extended,00000000
+
+[Sub Weapon-Quicker Recharge P4]
+patch=1,EE,2079D3EC,extended,0000012C
+
+[Sub Weapon-Never Recharges P4]
+patch=1,EE,2079D3EC,extended,00000000
+
+[Infinite Ammo (All Players)]
+patch=1,EE,2031C3B4,extended,00000000
+
+[Max Infinite Ammo (All Players)]
+patch=1,EE,2031C3B0,extended,86020006
+
+[Extra Ammo (All Players)]
+patch=1,EE,2031C3B0,extended,00621021
+
+[Max Gallery Points]
+patch=1,EE,200C0220,extended,3C0105F5
+patch=1,EE,200C0224,extended,3421E0FF
+patch=1,EE,200C0228,extended,080C1508
+patch=1,EE,200C022C,extended,AE010074
+patch=1,EE,203049F0,extended,0C030088
+
+[Unlock All Gallery]
+patch=1,EE,2030497C,extended,24010001
+patch=1,EE,20304980,extended,A0410081
+patch=1,EE,203049A4,extended,00000000

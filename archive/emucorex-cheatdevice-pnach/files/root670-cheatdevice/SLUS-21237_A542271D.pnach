@@ -1,0 +1,696 @@
+gametitle=AND1-Streetball (SLUS-21237)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903F7BF0,extended,00832021
+
+[Home Team Scores 255]
+patch=1,EE,20669908,extended,000000FF
+
+[Home Team Scores 150]
+patch=1,EE,20669908,extended,00000096
+
+[Home Team Scores 0]
+patch=1,EE,20669908,extended,00000000
+
+[Home Team Starts With 150]
+patch=1,EE,D0669908,extended,00000000
+patch=1,EE,20669908,extended,00000096
+
+[Home Team Starts With 100]
+patch=1,EE,D0669908,extended,00000000
+patch=1,EE,20669908,extended,00000064
+
+[Home Team Starts With 50]
+patch=1,EE,D0669908,extended,00000000
+patch=1,EE,20669908,extended,00000032
+
+[Home Team Starts With 20]
+patch=1,EE,D0669908,extended,00000000
+patch=1,EE,20669908,extended,00000014
+
+[Away Team Scores 255]
+patch=1,EE,2066990C,extended,000000FF
+
+[Away Team Scores 150]
+patch=1,EE,2066990C,extended,00000096
+
+[Away Team Scores 0]
+patch=1,EE,2066990C,extended,00000000
+
+[Away Team Starts With 150]
+patch=1,EE,D066990C,extended,00000000
+patch=1,EE,2066990C,extended,00000096
+
+[Away Team Starts With 100]
+patch=1,EE,D066990C,extended,00000000
+patch=1,EE,2066990C,extended,00000064
+
+[Away Team Starts With 50]
+patch=1,EE,D066990C,extended,00000000
+patch=1,EE,2066990C,extended,00000032
+
+[Away Team Starts With 20]
+patch=1,EE,D066990C,extended,00000000
+patch=1,EE,2066990C,extended,00000014
+
+[P1 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0730CC2,extended,0000FBFE
+patch=1,EE,20666248,extended,470CA000
+
+[P1 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0730CC2,extended,0000FEFE
+patch=1,EE,20666248,extended,3F800000
+
+[P2 Press {L1}+{SELECT} For More Time]
+patch=1,EE,D0730DC2,extended,0000FBFE
+patch=1,EE,20666248,extended,470CA000
+
+[P2 Press {L2}+{SELECT} For Low Time]
+patch=1,EE,D0730DC2,extended,0000FEFE
+patch=1,EE,20666248,extended,3F800000
+
+[P1 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D0730CC2,extended,0000F7FE
+patch=1,EE,20658768,extended,44E10000
+
+[P1 Press {R2}+{SELECT} For No Shot Clock]
+patch=1,EE,D0730CC2,extended,0000FDFE
+patch=1,EE,20658768,extended,3F800000
+
+[P2 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D0730DC2,extended,0000F7FE
+patch=1,EE,20658768,extended,44E10000
+
+[P2 Press {R2}+{SELECT} For No Shot Clock]
+patch=1,EE,D0730DC2,extended,0000FDFE
+patch=1,EE,20658768,extended,3F800000
+
+[Infinite Shot Clock]
+patch=1,EE,20658768,extended,44E10000
+
+[Infinite Turbo (All Players)]
+patch=1,EE,202B5AA8,extended,00000000
+
+[Buying Attributes Doesnt Decrease Cash]
+patch=1,EE,201FF124,extended,00000000
+
+[Buying Attributes Increases Cash]
+patch=1,EE,201FF124,extended,02022821
+
+[Max Power]
+patch=1,EE,206E3E70,extended,00000064
+
+[Max Speed]
+patch=1,EE,206E3E74,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206E3E78,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206E3E7C,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206E3E80,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206E3E84,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206E3E88,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206E3E8C,extended,00000064
+
+[Max Hops]
+patch=1,EE,206E3E90,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206E3E94,extended,00000064
+
+[Max Steals]
+patch=1,EE,206E3E98,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206E3E9C,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206E3EA0,extended,00000064
+
+[Max Defense]
+patch=1,EE,206E3EA4,extended,00000064
+
+[Max Passing]
+patch=1,EE,206E3EA8,extended,00000064
+
+[Infinite Cash]
+patch=1,EE,106D9198,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206D9198,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206D9978,extended,00000064
+
+[Max Speed]
+patch=1,EE,206D997C,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206D9980,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206D9984,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206D9988,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206D998C,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206D9990,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206D9994,extended,00000064
+
+[Max Hops]
+patch=1,EE,206D9998,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206D999C,extended,00000064
+
+[Max Steals]
+patch=1,EE,206D99A0,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206D99A4,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206D99A8,extended,00000064
+
+[Max Defense]
+patch=1,EE,206D99AC,extended,00000064
+
+[Max Passing]
+patch=1,EE,206D99B0,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406D9978,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106D99D4,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206D99D4,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DA1B4,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DA1B8,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DA1BC,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DA1C0,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DA1C4,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DA1C8,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DA1CC,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DA1D0,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DA1D4,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DA1D8,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DA1DC,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DA1E0,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DA1E4,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DA1E8,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DA1EC,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DA1B4,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DA210,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DA210,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DA9F0,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DA9F4,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DA9F8,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DA9FC,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DAA00,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DAA04,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DAA08,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DAA0C,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DAA10,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DAA14,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DAA18,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DAA1C,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DAA20,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DAA24,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DAA28,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DA9F0,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DAA4C,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DAA4C,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DB22C,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DB230,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DB234,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DB238,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DB23C,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DB240,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DB244,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DB248,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DB24C,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DB250,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DB254,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DB258,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DB25C,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DB260,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DB264,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DB22C,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DB288,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DB288,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DBA68,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DBA6C,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DBA70,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DBA74,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DBA78,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DBA7C,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DBA80,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DBA84,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DBA88,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DBA8C,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DBA90,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DBA94,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DBA98,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DBA9C,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DBAA0,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DBA68,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DBAC4,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DBAC4,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DC2A4,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DC2A8,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DC2AC,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DC2B0,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DC2B4,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DC2B8,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DC2BC,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DC2C0,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DC2C4,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DC2C8,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DC2CC,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DC2D0,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DC2D4,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DC2D8,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DC2DC,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DC2A4,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DC300,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DC300,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DCAE0,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DCAE4,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DCAE8,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DCAEC,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DCAF0,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DCAF4,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DCAF8,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DCAFC,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DCB00,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DCB04,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DCB08,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DCB0C,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DCB10,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DCB14,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DCB18,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DCAE0,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DCB3C,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DCB3C,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DD31C,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DD320,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DD324,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DD328,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DD32C,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DD330,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DD334,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DD338,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DD33C,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DD340,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DD344,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DD348,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DD34C,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DD350,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DD354,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DD31C,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DD378,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DD378,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DDB58,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DDB5C,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DDB60,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DDB64,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DDB68,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DDB6C,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DDB70,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DDB74,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DDB78,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DDB7C,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DDB80,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DDB84,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DDB88,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DDB8C,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DDB90,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DDB58,extended,000F0001
+patch=1,EE,00000064,extended,00000000
+
+[Infinite Cash]
+patch=1,EE,106DDBB4,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,206DDBB4,extended,05F5E0FF
+
+[Max Power]
+patch=1,EE,206DE394,extended,00000064
+
+[Max Speed]
+patch=1,EE,206DE398,extended,00000064
+
+[Max Stamina]
+patch=1,EE,206DE39C,extended,00000064
+
+[Max Ball Handling]
+patch=1,EE,206DE3A0,extended,00000064
+
+[Max Shot Range]
+patch=1,EE,206DE3A4,extended,00000064
+
+[Max Accuracy]
+patch=1,EE,206DE3A8,extended,00000064
+
+[Max Dunking]
+patch=1,EE,206DE3AC,extended,00000064
+
+[Max Rebounding]
+patch=1,EE,206DE3B0,extended,00000064
+
+[Max Hops]
+patch=1,EE,206DE3B4,extended,00000064
+
+[Max Blocks]
+patch=1,EE,206DE3B8,extended,00000064
+
+[Max Steals]
+patch=1,EE,206DE3BC,extended,00000064
+
+[Max Free Throws]
+patch=1,EE,206DE3C0,extended,00000064
+
+[Max Clutch]
+patch=1,EE,206DE3C4,extended,00000064
+
+[Max Defense]
+patch=1,EE,206DE3C8,extended,00000064
+
+[Max Passing]
+patch=1,EE,206DE3CC,extended,00000064
+
+[Max All Stats]
+patch=1,EE,406DE394,extended,000F0001
+patch=1,EE,00000064,extended,00000000

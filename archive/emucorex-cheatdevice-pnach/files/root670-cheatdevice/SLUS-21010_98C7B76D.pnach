@@ -1,0 +1,170 @@
+gametitle=Nano Breaker (SLUS-21010)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011C120,extended,0C101A54
+
+[Max Life Gauge]
+patch=1,EE,204CF610,extended,4479C000
+
+[Max Booster Gauge]
+patch=1,EE,204CF614,extended,4479C000
+
+[Infinite Life Gauge]
+patch=1,EE,204CF618,extended,4479C000
+
+[Infinite Booster Gauge]
+patch=1,EE,204CF61C,extended,4479C000
+
+[Infinite Health (Michelle)]
+patch=1,EE,204A8AB8,extended,4479C000
+
+[1-Hit Death (Non-Boss Enemies)]
+patch=1,EE,200C0220,extended,080EFC33
+patch=1,EE,200C0224,extended,AC400168
+patch=1,EE,203BF09C,extended,08030088
+
+[Blue-Lv. 1]
+patch=1,EE,1061570C,extended,00000009
+
+[Turquoise-Lv. 2]
+patch=1,EE,1061570E,extended,00000009
+
+[Green-Lv. 3]
+patch=1,EE,10615710,extended,00000009
+
+[Orange Lv. 4]
+patch=1,EE,10615712,extended,00000009
+
+[Red Lv. 5]
+patch=1,EE,10615714,extended,00000009
+
+[Silver-Lv. X]
+patch=1,EE,10615716,extended,00000009
+
+[All Chips]
+patch=1,EE,4061570C,extended,00030001
+patch=1,EE,00090009,extended,00000000
+
+[Always Low Play Time]
+patch=1,EE,20616B28,extended,00000000
+
+[Max Total Gallons]
+patch=1,EE,20616B2C,extended,05F5E0FF
+
+[No Total Gallons]
+patch=1,EE,20616B2C,extended,00000000
+
+[Max Continues]
+patch=1,EE,20616B38,extended,05F5E0FF
+
+[No Continues]
+patch=1,EE,20616B38,extended,00000000
+
+[Max Saves]
+patch=1,EE,20616B3C,extended,05F5E0FF
+
+[No Saves]
+patch=1,EE,20616B3C,extended,00000000
+
+[Max Enemies Defeated]
+patch=1,EE,204BFC64,extended,05F5E0FF
+
+[No Enemies Defeated]
+patch=1,EE,204BFC64,extended,00000000
+
+[Max Enemies Sliced-Horizontal]
+patch=1,EE,204BFC68,extended,05F5E0FF
+
+[No Enemies Sliced-Horizontal]
+patch=1,EE,204BFC68,extended,00000000
+
+[Max Enemies Sliced-Vertical]
+patch=1,EE,204BFC6C,extended,05F5E0FF
+
+[No Enemies Sliced-Vertical]
+patch=1,EE,204BFC6C,extended,00000000
+
+[Max Enemies Smashed]
+patch=1,EE,204BFC70,extended,05F5E0FF
+
+[No Enemies Smashed]
+patch=1,EE,204BFC70,extended,00000000
+
+[Max Laser Reflects]
+patch=1,EE,204CF654,extended,0001869F
+
+[No Laser Reflects]
+patch=1,EE,204CF654,extended,00000000
+
+[Max Capture-Counters]
+patch=1,EE,204CF658,extended,0001869F
+
+[No Capture-Counters]
+patch=1,EE,204CF658,extended,00000000
+
+[Unlock Splatter Mode]
+patch=1,EE,704CB5DC,extended,00000008
+
+[Unlock Movie Viewer]
+patch=1,EE,704CB5DC,extended,00000010
+
+[Unlock All Movies (In Movie Viewer)]
+patch=1,EE,204CB5D0,extended,FFFFFFFF
+
+[Have Keith Playable]
+patch=1,EE,704CB5DD,extended,00000001
+
+[Have Jaguar Playable]
+patch=1,EE,704CB5DD,extended,00000002
+
+[Fauchard Rampage-Slot 1]
+patch=1,EE,204CF68C,extended,00010014
+
+[Plasma Storm-Slot 2]
+patch=1,EE,204CF690,extended,00010015
+
+[Plasma Orbs-Slot 3]
+patch=1,EE,204CF694,extended,00010016
+
+[Aut-Laser Reflect-Slot 4]
+patch=1,EE,204CF698,extended,00010017
+
+[Capture Critical-Slot 5]
+patch=1,EE,204CF69C,extended,00010018
+
+[Speed Up-Slot 6]
+patch=1,EE,204CF6A0,extended,00010019
+
+[Status Boost-Slot 7]
+patch=1,EE,204CF6A4,extended,0001001B
+
+[Laser Shower-Slot 8]
+patch=1,EE,204CF6A8,extended,0001001C
+
+[Gatling Gun-Slot 9]
+patch=1,EE,204CF6AC,extended,0001001D
+
+[Plasma Storm]
+patch=1,EE,204CF6B8,extended,00000046
+
+[Plasma Orbs]
+patch=1,EE,204CF6BC,extended,00000046
+
+[Aut-Laser Reflect]
+patch=1,EE,204CF6C0,extended,00000046
+
+[Capture Critical]
+patch=1,EE,204CF6C4,extended,00000046
+
+[Speed Up]
+patch=1,EE,204CF6C8,extended,00000046
+
+[Status Boost]
+patch=1,EE,204CF6D0,extended,00000046
+
+[All Booster Levels]
+patch=1,EE,404CF6B8,extended,00070001
+patch=1,EE,00000046,extended,00000000

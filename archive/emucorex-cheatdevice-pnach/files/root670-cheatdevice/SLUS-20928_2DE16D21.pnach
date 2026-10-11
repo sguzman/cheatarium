@@ -1,0 +1,19 @@
+gametitle=Echo Night-Beyond (SLUS-20928)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90121E84,extended,0C049DFC
+
+[Always Low Elapsed Time]
+patch=1,EE,202ADBE8,extended,00000000
+
+[Always Low Heart Rate]
+patch=1,EE,209D5FD4,extended,00000000
+
+[Infinite Battery]
+patch=1,EE,20AD6DEC,extended,42C80000
+
+[Heart Rate Doesnt Increase Over Time]
+patch=1,EE,202176A0,extended,00000000

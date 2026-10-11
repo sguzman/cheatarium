@@ -1,0 +1,49 @@
+gametitle=Breeders' Cup-World Thoroughbred Championships (SLUS-21195)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901F5860,extended,00832021
+
+[Citation]
+patch=1,EE,21EC6EE0,extended,00000001
+
+[Funny Cide]
+patch=1,EE,21EC6EE4,extended,00000001
+
+[Ghostzapper]
+patch=1,EE,21EC6EE8,extended,00000001
+
+[Man O' War]
+patch=1,EE,21EC6EEC,extended,00000001
+
+[Native Dancer]
+patch=1,EE,21EC6EF0,extended,00000001
+
+[Personal Ensign]
+patch=1,EE,21EC6EF4,extended,00000001
+
+[Ruffian]
+patch=1,EE,21EC6EF8,extended,00000001
+
+[Winning Colors]
+patch=1,EE,21EC6EFC,extended,00000001
+
+[Silver Charm]
+patch=1,EE,21EC6F00,extended,00000001
+
+[Smarty Jones]
+patch=1,EE,21EC6F04,extended,00000001
+
+[Tiznow]
+patch=1,EE,21EC6F08,extended,00000001
+
+[Seabiscuit]
+patch=1,EE,21EC6F0C,extended,00000001
+
+[Infinite Money]
+patch=1,EE,11E9E71C,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,21E9E71C,extended,05F5E0FF

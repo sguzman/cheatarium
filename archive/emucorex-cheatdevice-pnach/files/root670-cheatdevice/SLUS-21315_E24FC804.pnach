@@ -1,0 +1,928 @@
+gametitle=50 Cent-Bulletproof (SLUS-21315)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9038D218,extended,0C0FF6CB
+
+[Infinite Health]
+patch=1,EE,20235474,extended,C6400544
+patch=1,EE,2023547C,extended,E6400534
+
+[Infinite Armor]
+patch=1,EE,20235484,extended,C6410548
+patch=1,EE,20235488,extended,E6410538
+
+[Infinite Stamina]
+patch=1,EE,20235490,extended,3C013F80
+patch=1,EE,20235494,extended,AE41053C
+patch=1,EE,1023549A,extended,00001000
+
+[Infinite Ammo]
+patch=1,EE,20104ED0,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,20104ECC,extended,240303E7
+
+[Extra Ammo]
+patch=1,EE,20104ECC,extended,00641821
+
+[Never Reload]
+patch=1,EE,20105528,extended,00000000
+
+[Quick Money Gain]
+patch=1,EE,201D32C8,extended,244203E7
+
+[Super Quick Money Gain]
+patch=1,EE,201D32C8,extended,2442270F
+
+[Ultra Quick Money Gain]
+patch=1,EE,201D32C8,extended,244261A8
+
+[Quick Max Money]
+patch=1,EE,201D32C4,extended,3C0405F5
+patch=1,EE,201D32C8,extended,3484E0FF
+
+[Infinite Painkillers]
+patch=1,EE,201C3DBC,extended,00000000
+
+[Max Infinite Painkillers]
+patch=1,EE,201C3DB8,extended,2402000A
+
+[Extra Painkillers]
+patch=1,EE,101C3DB8,extended,00000001
+
+[Can Always Use Pain Killers]
+patch=1,EE,201C3CFC,extended,2403000B
+patch=1,EE,201C3D00,extended,AC430000
+
+[Quick Score Gain (Arcade Mode)]
+patch=1,EE,10426BA0,extended,0000FFFF
+
+[Max Score (Arcade Mode)]
+patch=1,EE,20426BA0,extended,05F5E0FF
+
+[Unlock All Arcade Levels]
+patch=1,EE,204FCE28,extended,FFFFFFFF
+patch=1,EE,204FCE2C,extended,FFFFFFFF
+
+[Bulletproof]
+patch=1,EE,004FB1A0,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,004FB1A1,extended,00000001
+
+[Invisible Enemies]
+patch=1,EE,004FB1A2,extended,00000001
+
+[Ghost Mode]
+patch=1,EE,004FB1A3,extended,00000001
+
+[Dual Wield Anything]
+patch=1,EE,004FB1A4,extended,00000001
+
+[All Weapons]
+patch=1,EE,004FB1A5,extended,00000001
+
+[Mike Mode?]
+patch=1,EE,004FB1A6,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,204FCFE0,extended,00000001
+
+[Bulletproof]
+patch=1,EE,204FCFE4,extended,00000001
+
+[Mike Mode?]
+patch=1,EE,204FCFE8,extended,00000001
+
+[Invisible Enemies]
+patch=1,EE,204FCFEC,extended,00000001
+
+[Ghost Mode]
+patch=1,EE,204FCFF0,extended,00000001
+
+[Mini Character]
+patch=1,EE,204FCFF4,extended,00000001
+
+[Dual Wield Anything]
+patch=1,EE,204FCFF8,extended,00000001
+
+[All Weapons]
+patch=1,EE,204FCFFC,extended,00000001
+
+[50 Cent-Gangsta]
+patch=1,EE,104F9AAE,extended,00000001
+
+[50 Cent-Wifebeater]
+patch=1,EE,104F9AD2,extended,00000001
+
+[50 Cent-Inked]
+patch=1,EE,104F9AF6,extended,00000001
+
+[Grizz]
+patch=1,EE,104F9B1A,extended,00000001
+
+[Aaron McVicar]
+patch=1,EE,104F9B3E,extended,00000001
+
+[Tony Yayo]
+patch=1,EE,104F9B62,extended,00000001
+
+[Young Buck]
+patch=1,EE,104F9B86,extended,00000001
+
+[Lloyd Banks]
+patch=1,EE,104F9BAA,extended,00000001
+
+[DJ Whoo Kid]
+patch=1,EE,104F9BCE,extended,00000001
+
+[The Iceberm]
+patch=1,EE,104F9BF2,extended,00000001
+
+[Booker]
+patch=1,EE,104F9C16,extended,00000001
+
+[Popcorn]
+patch=1,EE,104F9C3A,extended,00000001
+
+[Von Sykes]
+patch=1,EE,104F9C5E,extended,00000001
+
+[Frank Capidilupo]
+patch=1,EE,104F9C82,extended,00000001
+
+[Mugtada Muhammed]
+patch=1,EE,104F9CA6,extended,00000001
+
+[Lou Petra]
+patch=1,EE,104F9CCA,extended,00000001
+
+[G-Unit Benedetti]
+patch=1,EE,104F9CEE,extended,00000001
+
+[G-Unit Moore]
+patch=1,EE,104F9D12,extended,00000001
+
+[Spider]
+patch=1,EE,104F9D36,extended,00000001
+
+[Masked Elite Cowan]
+patch=1,EE,104F9D5A,extended,00000001
+
+[Gangbanger Han]
+patch=1,EE,104F9D7E,extended,00000001
+
+[Gangbanger Lebel]
+patch=1,EE,104F9DA2,extended,00000001
+
+[Gangbanger Batiste]
+patch=1,EE,104F9DC6,extended,00000001
+
+[Wu Jang]
+patch=1,EE,104F9DEA,extended,00000001
+
+[Wo Kotevski]
+patch=1,EE,104F9E0E,extended,00000001
+
+[Gangbanger Dollack]
+patch=1,EE,104F9E32,extended,00000001
+
+[The Hooded Dalton]
+patch=1,EE,104F9E56,extended,00000001
+
+[Officer Reininger]
+patch=1,EE,104F9E7A,extended,00000001
+
+[Officer Broadhurst]
+patch=1,EE,104F9E9E,extended,00000001
+
+[Security Officer Clark]
+patch=1,EE,104F9EC2,extended,00000001
+
+[K-Dog Aka Feng Hu]
+patch=1,EE,104F9EE6,extended,00000001
+
+[Moreno Aka 'Bodybag']
+patch=1,EE,104F9F0A,extended,00000001
+
+[O'Hare]
+patch=1,EE,104F9F2E,extended,00000001
+
+[All Characters]
+patch=1,EE,200C0220,extended,24020001
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,A4A2001E
+patch=1,EE,201C6D70,extended,08030088
+
+[Nine]
+patch=1,EE,104FAC48,extended,00000019
+
+[Gat]
+patch=1,EE,104FAC4A,extended,00000019
+
+[SN Special]
+patch=1,EE,104FAC4C,extended,00000019
+
+[Scavenger]
+patch=1,EE,104FAC4E,extended,00000019
+
+[Buster]
+patch=1,EE,104FAC50,extended,00000019
+
+[Bulldog]
+patch=1,EE,104FAC52,extended,00000019
+
+[Sawed-off Shotgun]
+patch=1,EE,104FAC54,extended,00000019
+
+[MP]
+patch=1,EE,104FAC56,extended,00000019
+
+[Phantom]
+patch=1,EE,104FAC58,extended,00000019
+
+[Mac]
+patch=1,EE,104FAC5A,extended,00000019
+
+[Pumpgun]
+patch=1,EE,104FAC5C,extended,00000019
+
+[Painkiller]
+patch=1,EE,104FAC5E,extended,00000019
+
+[Blaz]
+patch=1,EE,104FAC60,extended,00000019
+
+[Big Smokey]
+patch=1,EE,104FAC62,extended,00000019
+
+[AK]
+patch=1,EE,104FAC64,extended,00000019
+
+[Old Vet]
+patch=1,EE,104FAC66,extended,00000019
+
+[Li'l Smokey]
+patch=1,EE,104FAC68,extended,00000019
+
+[Ghost Dawg]
+patch=1,EE,104FAC6A,extended,00000019
+
+[Bazooka]
+patch=1,EE,104FAC6C,extended,00000019
+
+[Hornet]
+patch=1,EE,104FAC6E,extended,00000019
+
+[All Weapons]
+patch=1,EE,404FAC48,extended,000A0001
+patch=1,EE,00190019,extended,00000000
+
+[Dead Can't Talk]
+patch=1,EE,004FB182,extended,00000001
+
+[Stay Down]
+patch=1,EE,004FB183,extended,00000001
+
+[Gunz Come Out]
+patch=1,EE,004FB184,extended,00000001
+
+[Ski Mask Way]
+patch=1,EE,004FB185,extended,00000001
+
+[Undercut]
+patch=1,EE,004FB187,extended,00000001
+
+[Heat]
+patch=1,EE,004FB188,extended,00000001
+
+[Stuntin']
+patch=1,EE,004FB189,extended,00000001
+
+[Wanksta]
+patch=1,EE,004FB18A,extended,00000001
+
+[Like My Style]
+patch=1,EE,004FB18B,extended,00000001
+
+[Guillotine]
+patch=1,EE,004FB18C,extended,00000001
+
+[Bad News]
+patch=1,EE,004FB18D,extended,00000001
+
+[Stomp]
+patch=1,EE,004FB18E,extended,00000001
+
+[Beg For Mercy]
+patch=1,EE,004FB18F,extended,00000001
+
+[Gettin' Mine]
+patch=1,EE,004FB190,extended,00000001
+
+[Gangsta Shit]
+patch=1,EE,004FB191,extended,00000001
+
+[G'd Up]
+patch=1,EE,004FB192,extended,00000001
+
+[Bloodhound]
+patch=1,EE,004FB193,extended,00000001
+
+[Closed Casket]
+patch=1,EE,004FB196,extended,00000001
+
+[Back Down]
+patch=1,EE,004FB197,extended,00000001
+
+[The Hit]
+patch=1,EE,004FB198,extended,00000001
+
+[Repercussions]
+patch=1,EE,004FB199,extended,00000001
+
+[Grand Slam]
+patch=1,EE,004FB19B,extended,00000001
+
+[Empty'n Clips]
+patch=1,EE,004FB19C,extended,00000001
+
+[Gettin' Low]
+patch=1,EE,004FB19D,extended,00000001
+
+[Open Wide]
+patch=1,EE,004FB19E,extended,00000001
+
+[All Counter Kills]
+patch=1,EE,404FB180,extended,00080001
+patch=1,EE,01010101,extended,00000000
+
+[Bulletproof Trailer Part 1]
+patch=1,EE,004FB060,extended,00000001
+
+[Bulletproof Trailer Part 2]
+patch=1,EE,004FB061,extended,00000001
+
+[Candy Shop]
+patch=1,EE,004FB062,extended,00000001
+
+[Heat (Street Version)]
+patch=1,EE,004FB063,extended,00000001
+
+[I'm So Fly]
+patch=1,EE,004FB064,extended,00000001
+
+[In Da Club]
+patch=1,EE,004FB065,extended,00000001
+
+[Just A Lil Bit]
+patch=1,EE,004FB066,extended,00000001
+
+[Let Me In]
+patch=1,EE,004FB067,extended,00000001
+
+[P.I.M.P.]
+patch=1,EE,004FB068,extended,00000001
+
+[Poppin' Them Thangs]
+patch=1,EE,004FB069,extended,00000001
+
+[Shorty Wanna Ride]
+patch=1,EE,004FB06A,extended,00000001
+
+[So Seductive]
+patch=1,EE,004FB06B,extended,00000001
+
+[Stunt 101]
+patch=1,EE,004FB06C,extended,00000001
+
+[Wanksta]
+patch=1,EE,004FB06D,extended,00000001
+
+[Smile]
+patch=1,EE,004FB06E,extended,00000001
+
+[My Buddy]
+patch=1,EE,004FB06F,extended,00000001
+
+[Look At Me Now / Bonafide Hustler]
+patch=1,EE,004FB070,extended,00000001
+
+[Ain't No Click]
+patch=1,EE,004FB071,extended,00000001
+
+[All Videos]
+patch=1,EE,404FB060,extended,00040001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,104FB070,extended,00000101
+
+[Don't Make Me]
+patch=1,EE,004FB074,extended,00000001
+
+[Grew Up]
+patch=1,EE,004FB075,extended,00000001
+
+[Hit Your Ass Up]
+patch=1,EE,004FB076,extended,00000001
+
+[Hole In Yo Back]
+patch=1,EE,004FB077,extended,00000001
+
+[I Run NY]
+patch=1,EE,004FB078,extended,00000001
+
+[I Warned You]
+patch=1,EE,004FB079,extended,00000001
+
+[I'm A Rider]
+patch=1,EE,004FB07A,extended,00000001
+
+[Maybe We Crazy]
+patch=1,EE,004FB07B,extended,00000001
+
+[Pimp Pt2]
+patch=1,EE,004FB07C,extended,00000001
+
+[Simply The Best]
+patch=1,EE,004FB07D,extended,00000001
+
+[Southside G-Unit]
+patch=1,EE,004FB07E,extended,00000001
+
+[When You Hear That]
+patch=1,EE,004FB07F,extended,00000001
+
+[Why Ask Why]
+patch=1,EE,004FB080,extended,00000001
+
+[What Up Gangsta]
+patch=1,EE,004FB081,extended,00000001
+
+[In Da Club]
+patch=1,EE,004FB082,extended,00000001
+
+[Heat]
+patch=1,EE,004FB083,extended,00000001
+
+[If I Can't]
+patch=1,EE,004FB084,extended,00000001
+
+[Blood Hound]
+patch=1,EE,004FB085,extended,00000001
+
+[Back Down]
+patch=1,EE,004FB086,extended,00000001
+
+[P.I.M.P.]
+patch=1,EE,004FB087,extended,00000001
+
+[Like My Style]
+patch=1,EE,004FB088,extended,00000001
+
+[Poor Lil Rich]
+patch=1,EE,004FB089,extended,00000001
+
+[Gotta Make It To Heaven]
+patch=1,EE,004FB08A,extended,00000001
+
+[Wanksta]
+patch=1,EE,004FB08B,extended,00000001
+
+[U Not Like Me]
+patch=1,EE,004FB08C,extended,00000001
+
+[Life's On The Line]
+patch=1,EE,004FB08D,extended,00000001
+
+[This Is 50]
+patch=1,EE,004FB08E,extended,00000001
+
+[Piggy Bank]
+patch=1,EE,004FB08F,extended,00000001
+
+[Candy Shop]
+patch=1,EE,004FB090,extended,00000001
+
+[Get In My Car]
+patch=1,EE,004FB091,extended,00000001
+
+[Ski Mask Way]
+patch=1,EE,004FB092,extended,00000001
+
+[A Baltimore Love Thing]
+patch=1,EE,004FB093,extended,00000001
+
+[Ryder Music]
+patch=1,EE,004FB094,extended,00000001
+
+[Disco Inferno]
+patch=1,EE,004FB095,extended,00000001
+
+[Just A Lil Bit]
+patch=1,EE,004FB096,extended,00000001
+
+[Gunz Come Out]
+patch=1,EE,004FB097,extended,00000001
+
+[Position Of Power]
+patch=1,EE,004FB098,extended,00000001
+
+[God Gave Me Style]
+patch=1,EE,004FB099,extended,00000001
+
+[So Amazing]
+patch=1,EE,004FB09A,extended,00000001
+
+[Poppin' Them Thangs]
+patch=1,EE,004FB09B,extended,00000001
+
+[My Buddy]
+patch=1,EE,004FB09C,extended,00000001
+
+[Stunt 101]
+patch=1,EE,004FB09D,extended,00000001
+
+[I'm So Hood]
+patch=1,EE,004FB09E,extended,00000001
+
+[Salute U]
+patch=1,EE,004FB09F,extended,00000001
+
+[Smile]
+patch=1,EE,004FB0A0,extended,00000001
+
+[Eye For An Eye]
+patch=1,EE,004FB0A1,extended,00000001
+
+[Baby U Got]
+patch=1,EE,004FB0A2,extended,00000001
+
+[G'd Up]
+patch=1,EE,004FB0A3,extended,00000001
+
+[Gangsta Shit]
+patch=1,EE,004FB0A4,extended,00000001
+
+[Ain't No Click]
+patch=1,EE,004FB0A5,extended,00000001
+
+[Playboy]
+patch=1,EE,004FB0A6,extended,00000001
+
+[Warrior]
+patch=1,EE,004FB0A7,extended,00000001
+
+[I'm So Fly]
+patch=1,EE,004FB0A8,extended,00000001
+
+[If You So Gangsta]
+patch=1,EE,004FB0A9,extended,00000001
+
+[Bonafide Hustler]
+patch=1,EE,004FB0AA,extended,00000001
+
+[Let Me In]
+patch=1,EE,004FB0AB,extended,00000001
+
+[Shorty Wanna Ride]
+patch=1,EE,004FB0AC,extended,00000001
+
+[Look At Me Now]
+patch=1,EE,004FB0AD,extended,00000001
+
+[Do It Like Me]
+patch=1,EE,004FB0AE,extended,00000001
+
+[Live By The Gun]
+patch=1,EE,004FB0AF,extended,00000001
+
+[So Seductive]
+patch=1,EE,004FB0B0,extended,00000001
+
+[Don't Make Me (Inst)]
+patch=1,EE,004FB0B1,extended,00000001
+
+[Grew Up (Inst)]
+patch=1,EE,004FB0B2,extended,00000001
+
+[Hit Your Ass Up (Inst)]
+patch=1,EE,004FB0B3,extended,00000001
+
+[Hole In Yo Back (Inst)]
+patch=1,EE,004FB0B4,extended,00000001
+
+[I Run NY (Inst)]
+patch=1,EE,004FB0B5,extended,00000001
+
+[I Warned You (Inst)]
+patch=1,EE,004FB0B6,extended,00000001
+
+[I'm A Rider (Inst)]
+patch=1,EE,004FB0B7,extended,00000001
+
+[Maybe We Crazy (Inst)]
+patch=1,EE,004FB0B8,extended,00000001
+
+[Pimp Pt2 (Inst)]
+patch=1,EE,004FB0B9,extended,00000001
+
+[Simply The Best (Inst)]
+patch=1,EE,004FB0BA,extended,00000001
+
+[Southside G-Unit (Inst)]
+patch=1,EE,004FB0BB,extended,00000001
+
+[When You Hear That (Inst)]
+patch=1,EE,004FB0BC,extended,00000001
+
+[Why Ask Why (Inst)]
+patch=1,EE,004FB0BD,extended,00000001
+
+[What Up Gangsta (Inst)]
+patch=1,EE,004FB0BE,extended,00000001
+
+[In Da Club (Inst)]
+patch=1,EE,004FB0BF,extended,00000001
+
+[If I Can't (Inst)]
+patch=1,EE,004FB0C0,extended,00000001
+
+[Blood Hound (Inst)]
+patch=1,EE,004FB0C1,extended,00000001
+
+[Back Down (Inst)]
+patch=1,EE,004FB0C2,extended,00000001
+
+[P.I.M.P. (Inst)]
+patch=1,EE,004FB0C3,extended,00000001
+
+[Like My Style (Inst)]
+patch=1,EE,004FB0C4,extended,00000001
+
+[Poor Lil Rich (Inst)]
+patch=1,EE,004FB0C5,extended,00000001
+
+[Gotta Make It To Heaven (Inst)]
+patch=1,EE,004FB0C6,extended,00000001
+
+[Wanksta (Inst)]
+patch=1,EE,004FB0C7,extended,00000001
+
+[U Not Like Me (Inst)]
+patch=1,EE,004FB0C8,extended,00000001
+
+[This Is 50 (Inst)]
+patch=1,EE,004FB0C9,extended,00000001
+
+[Piggy Bank (Inst)]
+patch=1,EE,004FB0CA,extended,00000001
+
+[Candy Shop (Inst)]
+patch=1,EE,004FB0CB,extended,00000001
+
+[Get In My Car (Inst)]
+patch=1,EE,004FB0CC,extended,00000001
+
+[Ski Mask Way (Inst)]
+patch=1,EE,004FB0CD,extended,00000001
+
+[A Baltimore Love Thing (Inst)]
+patch=1,EE,004FB0CE,extended,00000001
+
+[Ryder Music (Inst)]
+patch=1,EE,004FB0CF,extended,00000001
+
+[Disco Inferno (Inst)]
+patch=1,EE,004FB0D0,extended,00000001
+
+[Just A Lil Bit (Inst)]
+patch=1,EE,004FB0D1,extended,00000001
+
+[Gunz Come Out (Inst)]
+patch=1,EE,004FB0D2,extended,00000001
+
+[Position Of Power (Inst)]
+patch=1,EE,004FB0D3,extended,00000001
+
+[Build You Up (Inst)]
+patch=1,EE,004FB0D4,extended,00000001
+
+[God Gave Me Style (Inst)]
+patch=1,EE,004FB0D5,extended,00000001
+
+[So Amazing (Inst)]
+patch=1,EE,004FB0D6,extended,00000001
+
+[Poppin' Them Thangs (Inst)]
+patch=1,EE,004FB0D7,extended,00000001
+
+[My Buddy (Inst)]
+patch=1,EE,004FB0D8,extended,00000001
+
+[Stunt 101 (Inst)]
+patch=1,EE,004FB0D9,extended,00000001
+
+[Eye For An Eye (Inst)]
+patch=1,EE,004FB0DA,extended,00000001
+
+[G'd Up (Inst)]
+patch=1,EE,004FB0DB,extended,00000001
+
+[Gangsta Shit (Inst)]
+patch=1,EE,004FB0DC,extended,00000001
+
+[Salute U (Inst)]
+patch=1,EE,004FB0DD,extended,00000001
+
+[Baby U Got (Inst)]
+patch=1,EE,004FB0DE,extended,00000001
+
+[Smile (Inst)]
+patch=1,EE,004FB0DF,extended,00000001
+
+[I'm So Hood (Inst)]
+patch=1,EE,004FB0E0,extended,00000001
+
+[Ain't No Click (Inst)]
+patch=1,EE,004FB0E1,extended,00000001
+
+[Playboy (Inst)]
+patch=1,EE,004FB0E2,extended,00000001
+
+[Warrior (Inst)]
+patch=1,EE,004FB0E3,extended,00000001
+
+[I'm So Fly (Inst)]
+patch=1,EE,004FB0E4,extended,00000001
+
+[If You So Gangsta (Inst)]
+patch=1,EE,004FB0E5,extended,00000001
+
+[Let Me In (Inst)]
+patch=1,EE,004FB0E6,extended,00000001
+
+[Shorty Wanna Ride (Inst)]
+patch=1,EE,004FB0E7,extended,00000001
+
+[Bonafide Hustler (Inst)]
+patch=1,EE,004FB0E8,extended,00000001
+
+[Look At Me Now (Inst)]
+patch=1,EE,004FB0E9,extended,00000001
+
+[Do It Like Me (Inst)]
+patch=1,EE,004FB0EA,extended,00000001
+
+[Live By The Gun (Inst)]
+patch=1,EE,004FB0EB,extended,00000001
+
+[So Seductive (Inst)]
+patch=1,EE,004FB0EC,extended,00000001
+
+[Action 1]
+patch=1,EE,004FB0ED,extended,00000001
+
+[Action 2]
+patch=1,EE,004FB0EE,extended,00000001
+
+[Action 3]
+patch=1,EE,004FB0EF,extended,00000001
+
+[Action 4]
+patch=1,EE,004FB0F0,extended,00000001
+
+[Action 5]
+patch=1,EE,004FB0F1,extended,00000001
+
+[Action 6]
+patch=1,EE,004FB0F2,extended,00000001
+
+[Action 7]
+patch=1,EE,004FB0F3,extended,00000001
+
+[Action 8]
+patch=1,EE,004FB0F4,extended,00000001
+
+[Action 9]
+patch=1,EE,004FB0F5,extended,00000001
+
+[Action 10]
+patch=1,EE,004FB0F6,extended,00000001
+
+[Action 11]
+patch=1,EE,004FB0F7,extended,00000001
+
+[Action 12]
+patch=1,EE,004FB0F8,extended,00000001
+
+[Action 13]
+patch=1,EE,004FB0F9,extended,00000001
+
+[Action 14]
+patch=1,EE,004FB0FA,extended,00000001
+
+[Action 15]
+patch=1,EE,004FB0FB,extended,00000001
+
+[Action 16]
+patch=1,EE,004FB0FC,extended,00000001
+
+[Action 17]
+patch=1,EE,004FB0FD,extended,00000001
+
+[Action 18]
+patch=1,EE,004FB0FE,extended,00000001
+
+[Action 19]
+patch=1,EE,004FB0FF,extended,00000001
+
+[Action 20]
+patch=1,EE,004FB100,extended,00000001
+
+[Action 21]
+patch=1,EE,004FB101,extended,00000001
+
+[Action 22]
+patch=1,EE,004FB102,extended,00000001
+
+[Action 23]
+patch=1,EE,004FB103,extended,00000001
+
+[Action 24]
+patch=1,EE,004FB104,extended,00000001
+
+[Action 25]
+patch=1,EE,004FB105,extended,00000001
+
+[Action 26]
+patch=1,EE,004FB106,extended,00000001
+
+[Action 27]
+patch=1,EE,004FB107,extended,00000001
+
+[Ambient 1]
+patch=1,EE,004FB108,extended,00000001
+
+[Ambient 2]
+patch=1,EE,004FB109,extended,00000001
+
+[Ambient 3]
+patch=1,EE,004FB10A,extended,00000001
+
+[Ambient 4]
+patch=1,EE,004FB10B,extended,00000001
+
+[Ambient 5]
+patch=1,EE,004FB10C,extended,00000001
+
+[Ambient 6]
+patch=1,EE,004FB10D,extended,00000001
+
+[Ambient 7]
+patch=1,EE,004FB10E,extended,00000001
+
+[Ambient 8]
+patch=1,EE,004FB10F,extended,00000001
+
+[Ambient 9]
+patch=1,EE,004FB110,extended,00000001
+
+[Ambient 10]
+patch=1,EE,004FB111,extended,00000001
+
+[Ambient 11]
+patch=1,EE,004FB112,extended,00000001
+
+[Ambient 12]
+patch=1,EE,004FB113,extended,00000001
+
+[Ambient 13]
+patch=1,EE,004FB114,extended,00000001
+
+[Ambient 14]
+patch=1,EE,004FB115,extended,00000001
+
+[Ambient 15]
+patch=1,EE,004FB116,extended,00000001
+
+[Ambient 16]
+patch=1,EE,004FB117,extended,00000001
+
+[Ambient 17]
+patch=1,EE,004FB118,extended,00000001
+
+[Ambient 18]
+patch=1,EE,004FB119,extended,00000001
+
+[Ambient 19]
+patch=1,EE,004FB11A,extended,00000001
+
+[Ambient 20]
+patch=1,EE,004FB11B,extended,00000001
+
+[All Music]
+patch=1,EE,404FB074,extended,002A0001
+patch=1,EE,01010101,extended,00000000

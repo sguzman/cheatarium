@@ -1,0 +1,90 @@
+gametitle=Scooby Doo-Unmasked (SLUS-21091)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012CA64,extended,0C04E84A
+
+[Unlock All Levels]
+patch=1,EE,20411694,extended,FFFFFFFF
+patch=1,EE,20411698,extended,FFFFFFFF
+
+[Max Scooby Medals]
+patch=1,EE,2041169C,extended,0000000D
+
+[Infinite Scooby Medals]
+patch=1,EE,204116A0,extended,0000000D
+
+[Max Scooby Snacks]
+patch=1,EE,204116A4,extended,00000063
+
+[Max Mubber]
+patch=1,EE,204116A8,extended,000003E7
+
+[Max Recipe Ingredients]
+patch=1,EE,204116B0,extended,000003E7
+
+[Have All Monster Profiles]
+patch=1,EE,40411728,extended,000A0001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Max Cabbage]
+patch=1,EE,204116D0,extended,00000009
+
+[Max Carrots]
+patch=1,EE,204116D4,extended,00000009
+
+[Max Cheese]
+patch=1,EE,204116D8,extended,00000009
+
+[Max Chips]
+patch=1,EE,204116DC,extended,00000009
+
+[Max Chocolate]
+patch=1,EE,204116E0,extended,00000009
+
+[Max Cotton Candy]
+patch=1,EE,204116E4,extended,00000009
+
+[Max Eggplant]
+patch=1,EE,204116E8,extended,00000009
+
+[Max Fish]
+patch=1,EE,204116EC,extended,00000009
+
+[Max Ham]
+patch=1,EE,204116F0,extended,00000009
+
+[Max Steak]
+patch=1,EE,204116F4,extended,00000009
+
+[Max Hot Peppers]
+patch=1,EE,204116F8,extended,00000009
+
+[Max Ice Cream]
+patch=1,EE,204116FC,extended,00000009
+
+[Max Lobster]
+patch=1,EE,20411700,extended,00000009
+
+[Max Marshmallows]
+patch=1,EE,20411704,extended,00000009
+
+[Max Onions]
+patch=1,EE,20411708,extended,00000009
+
+[Max Pepperoni]
+patch=1,EE,2041170C,extended,00000009
+
+[Max Pickles]
+patch=1,EE,20411710,extended,00000009
+
+[Max Popcorn]
+patch=1,EE,20411714,extended,00000009
+
+[Max Sausages]
+patch=1,EE,20411718,extended,00000009
+
+[Max Shrimps]
+patch=1,EE,2041171C,extended,00000009

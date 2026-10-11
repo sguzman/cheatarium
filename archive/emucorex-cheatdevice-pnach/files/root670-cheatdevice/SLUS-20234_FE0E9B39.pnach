@@ -1,0 +1,106 @@
+gametitle=MX Rider (SLUS-20234)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00357D77
+
+[Have All Easy Challenges Complete]
+patch=1,EE,2040F648,extended,FFFFFFFF
+patch=1,EE,2040F64C,extended,FFFFFFFF
+patch=1,EE,2040F650,extended,FFFFFFFF
+patch=1,EE,2040F654,extended,FFFFFFFF
+patch=1,EE,2040F658,extended,FFFFFFFF
+patch=1,EE,2040F65C,extended,FFFFFFFF
+patch=1,EE,2040F660,extended,FFFFFFFF
+patch=1,EE,2040F664,extended,FFFFFFFF
+patch=1,EE,2040F668,extended,FFFFFFFF
+patch=1,EE,2040F66C,extended,FFFFFFFF
+patch=1,EE,2040F670,extended,FFFFFFFF
+patch=1,EE,2040F674,extended,FFFFFFFF
+
+[Have All Medium Challenges Complete]
+patch=1,EE,2040F678,extended,FFFFFFFF
+patch=1,EE,2040F67C,extended,FFFFFFFF
+patch=1,EE,2040F680,extended,FFFFFFFF
+patch=1,EE,2040F684,extended,FFFFFFFF
+patch=1,EE,2040F688,extended,FFFFFFFF
+patch=1,EE,2040F68C,extended,FFFFFFFF
+patch=1,EE,2040F690,extended,FFFFFFFF
+patch=1,EE,2040F694,extended,FFFFFFFF
+patch=1,EE,2040F698,extended,FFFFFFFF
+patch=1,EE,2040F69C,extended,FFFFFFFF
+patch=1,EE,2040F6A0,extended,FFFFFFFF
+patch=1,EE,2040F6A4,extended,FFFFFFFF
+
+[Have All Hard Challenges Complete]
+patch=1,EE,2040F6A8,extended,FFFFFFFF
+patch=1,EE,2040F6AC,extended,FFFFFFFF
+patch=1,EE,2040F6B0,extended,FFFFFFFF
+patch=1,EE,2040F6B4,extended,FFFFFFFF
+patch=1,EE,2040F6B8,extended,FFFFFFFF
+patch=1,EE,2040F6BC,extended,FFFFFFFF
+patch=1,EE,2040F6C0,extended,FFFFFFFF
+patch=1,EE,2040F6C4,extended,FFFFFFFF
+patch=1,EE,2040F6C8,extended,FFFFFFFF
+patch=1,EE,2040F6CC,extended,FFFFFFFF
+patch=1,EE,2040F6D0,extended,FFFFFFFF
+patch=1,EE,2040F6D4,extended,FFFFFFFF
+
+[1 Lap]
+patch=1,EE,2040F6F0,extended,00000001
+
+[2 Laps]
+patch=1,EE,2040F6F0,extended,00000002
+
+[3 Laps]
+patch=1,EE,2040F6F0,extended,00000003
+
+[4 Laps]
+patch=1,EE,2040F6F0,extended,00000004
+
+[5 Laps]
+patch=1,EE,2040F6F0,extended,00000005
+
+[6 Laps]
+patch=1,EE,2040F6F0,extended,00000006
+
+[7 Laps]
+patch=1,EE,2040F6F0,extended,00000007
+
+[8 Laps]
+patch=1,EE,2040F6F0,extended,00000008
+
+[9 Laps]
+patch=1,EE,2040F6F0,extended,00000009
+
+[None]
+patch=1,EE,2040F6F8,extended,00000001
+
+[1 Opponent]
+patch=1,EE,2040F6F8,extended,00000002
+
+[2 Opponents]
+patch=1,EE,2040F6F8,extended,00000003
+
+[3 Opponents]
+patch=1,EE,2040F6F8,extended,00000004
+
+[4 Opponents]
+patch=1,EE,2040F6F8,extended,00000005
+
+[5 Opponents]
+patch=1,EE,2040F6F8,extended,00000006
+
+[6 Opponents]
+patch=1,EE,2040F6F8,extended,00000007
+
+[7 Opponents]
+patch=1,EE,2040F6F8,extended,00000008
+
+[8 Opponents]
+patch=1,EE,2040F6F8,extended,00000009
+
+[9 Opponents]
+patch=1,EE,2040F6F8,extended,0000000A

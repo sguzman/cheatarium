@@ -1,0 +1,218 @@
+gametitle=X-Men-Next Dimension (SLUS-20279)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901FB96C,extended,0C083C4B
+
+[Infinite Time]
+patch=1,EE,1024B764,extended,00000063
+
+[Unlock All Characters]
+patch=1,EE,202F1540,extended,FFFFFFFF
+
+[Unlock All Stages]
+patch=1,EE,202F1544,extended,FFFFFFFF
+
+[Unlock All 2nd Set Of Costumes]
+patch=1,EE,202F1548,extended,FFFFFFFF
+
+[Unlock All 3rd Set Of Costumes]
+patch=1,EE,202F154C,extended,FFFFFFFF
+
+[Unlock All 4th Set Of Costumes]
+patch=1,EE,202F1550,extended,FFFFFFFF
+
+[Infinite Health P1]
+patch=1,EE,102E8FFC,extended,00007530
+
+[75% Health P1]
+patch=1,EE,D02E8FFC,extended,00007530
+patch=1,EE,102E8FFC,extended,000057E4
+
+[50% Health P1]
+patch=1,EE,D02E8FFC,extended,00007530
+patch=1,EE,102E8FFC,extended,00003A98
+
+[25% Health P1]
+patch=1,EE,D02E8FFC,extended,00007530
+patch=1,EE,102E8FFC,extended,00001D4C
+
+[1-Hit Death P1]
+patch=1,EE,D02E8FFC,extended,00007530
+patch=1,EE,102E8FFC,extended,00000001
+
+[No Health P1]
+patch=1,EE,102E8FFC,extended,00000000
+
+[P1 Press {L1}+{SELECT} For Death Blow On P2]
+patch=1,EE,D02F1658,extended,00000104
+patch=1,EE,102EB98C,extended,00000000
+
+[Max Level 1 Super P1]
+patch=1,EE,102E95B0,extended,00001400
+
+[No Level 1 Super P1]
+patch=1,EE,102E95B0,extended,00000000
+
+[Max Level 2 Super P1]
+patch=1,EE,102E95B2,extended,00001E00
+
+[No Level 2 Super P1]
+patch=1,EE,102E95B2,extended,00000000
+
+[Max Level 3 Super P1]
+patch=1,EE,102E95B4,extended,00002800
+
+[No Level 3 Super P1]
+patch=1,EE,102E95B4,extended,00000000
+
+[P1 Needs 1 Win To Win]
+patch=1,EE,D02E959C,extended,00000000
+patch=1,EE,102E959C,extended,00000001
+
+[P1 Never Wins]
+patch=1,EE,102E959C,extended,00000000
+
+[Max Health Regeneration P1]
+patch=1,EE,102E8FFE,extended,00007530
+
+[No Health Regeneration P1]
+patch=1,EE,102E8FFE,extended,00000000
+
+[P1 Can Always Use Super]
+patch=1,EE,102E8F72,extended,00000000
+
+[P1 Can Never Use Super]
+patch=1,EE,102E8F72,extended,000000FF
+
+[P1 Infinite Flying]
+patch=1,EE,102E9404,extended,0000025E
+
+[P1 Can Never Fly]
+patch=1,EE,102E9404,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,102EB98C,extended,00007530
+
+[75% Health P2]
+patch=1,EE,D02EB98C,extended,00007530
+patch=1,EE,102EB98C,extended,000057E4
+
+[50% Health P2]
+patch=1,EE,D02EB98C,extended,00007530
+patch=1,EE,102EB98C,extended,00003A98
+
+[25% Health P2]
+patch=1,EE,D02EB98C,extended,00007530
+patch=1,EE,102EB98C,extended,00001D4C
+
+[1-Hit Death P2]
+patch=1,EE,D02EB98C,extended,00007530
+patch=1,EE,102EB98C,extended,00000001
+
+[No Health P2]
+patch=1,EE,102EB98C,extended,00000000
+
+[P2 Press {L1}+{SELECT} For Death Blow On P1]
+patch=1,EE,D02F1664,extended,00000104
+patch=1,EE,102E8FFC,extended,00000000
+
+[Max Level 1 Super P2]
+patch=1,EE,102EBF40,extended,00001400
+
+[No Level 1 Super P2]
+patch=1,EE,102EBF40,extended,00000000
+
+[Max Level 2 Super P2]
+patch=1,EE,102EBF42,extended,00001E00
+
+[No Level 2 Super P2]
+patch=1,EE,102EBF42,extended,00000000
+
+[Max Level 3 Super P2]
+patch=1,EE,102EBF44,extended,00002800
+
+[No Level 3 Super P2]
+patch=1,EE,102EBF44,extended,00000000
+
+[P2 Needs 1 Win To Win]
+patch=1,EE,D02EBF2C,extended,00000000
+patch=1,EE,102EBF2C,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,102EBF2C,extended,00000000
+
+[Quick Health Rebuild To Max Red Bar]
+patch=1,EE,10126C38,extended,000000FF
+
+[Health Never Bebuilds To Max Red Bar]
+patch=1,EE,10126C38,extended,00000000
+
+[Hit Anywhere P1 ONLY]
+patch=1,EE,20144710,extended,0295802B
+
+[Hit Anywhere P2 ONLY]
+patch=1,EE,20144710,extended,02B4802B
+
+[Hit Anywhere P1 & P2]
+patch=1,EE,20144734,extended,00000000
+
+[Max Health Regeneration P2]
+patch=1,EE,102EB98E,extended,00007530
+
+[No Health Regeneration P2]
+patch=1,EE,102EB98E,extended,00000000
+
+[P2 Can Always Use Super]
+patch=1,EE,102EB902,extended,00000000
+
+[P2 Can Never Use Super]
+patch=1,EE,102EB902,extended,000000FF
+
+[P2 Infinite Flying]
+patch=1,EE,102EBD94,extended,0000025E
+
+[P2 Can Never Fly]
+patch=1,EE,102EBD94,extended,00000000
+
+[Stage 2]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000001
+
+[Stage 3]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000002
+
+[Stage 4]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000003
+
+[Stage 5]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000004
+
+[Stage 6]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000005
+
+[Stage 7]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000006
+
+[Stage 8]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000007
+
+[Stage 9]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000008
+
+[Stage 10]
+patch=1,EE,D02B1B10,extended,00000000
+patch=1,EE,102B1B10,extended,00000009
+
+[Unlock All Characters]
+patch=1,EE,4026EE94,extended,00070001
+patch=1,EE,00000000,extended,00000000

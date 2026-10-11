@@ -1,0 +1,129 @@
+gametitle=World Series Of Poker-Tournament Of Champions (SLUS-21491)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9036F798,extended,00832021
+
+[Activation Code (Must Be On)]
+patch=1,EE,200C02F8,extended,08064FC4
+patch=1,EE,200C02FC,extended,00000000
+patch=1,EE,2016FA38,extended,0C030088
+
+[Max Money P1]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,14230003
+patch=1,EE,200C0228,extended,3C0105F5
+patch=1,EE,200C022C,extended,3421E0FF
+patch=1,EE,200C0230,extended,AC811328
+
+[No Money P1]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,14230003
+patch=1,EE,200C022C,extended,24010000
+patch=1,EE,200C0230,extended,AC811328
+
+[Max Money P2]
+patch=1,EE,200C0234,extended,24010001
+patch=1,EE,200C0238,extended,14230003
+patch=1,EE,200C023C,extended,3C0105F5
+patch=1,EE,200C0240,extended,3421E0FF
+patch=1,EE,200C0244,extended,AC811328
+
+[No Money P2]
+patch=1,EE,200C0234,extended,24010001
+patch=1,EE,200C0238,extended,14230003
+patch=1,EE,200C0240,extended,24010000
+patch=1,EE,200C0244,extended,AC811328
+
+[Max Money P3]
+patch=1,EE,200C0248,extended,24010002
+patch=1,EE,200C024C,extended,14230003
+patch=1,EE,200C0250,extended,3C0105F5
+patch=1,EE,200C0254,extended,3421E0FF
+patch=1,EE,200C0258,extended,AC811328
+
+[No Money P3]
+patch=1,EE,200C0248,extended,24010002
+patch=1,EE,200C024C,extended,14230003
+patch=1,EE,200C0254,extended,24010000
+patch=1,EE,200C0258,extended,AC811328
+
+[Max Money P4]
+patch=1,EE,200C025C,extended,24010003
+patch=1,EE,200C0260,extended,14230003
+patch=1,EE,200C0264,extended,3C0105F5
+patch=1,EE,200C0268,extended,3421E0FF
+patch=1,EE,200C026C,extended,AC811328
+
+[No Money P4]
+patch=1,EE,200C025C,extended,24010003
+patch=1,EE,200C0260,extended,14230003
+patch=1,EE,200C0268,extended,24010000
+patch=1,EE,200C026C,extended,AC811328
+
+[Max Money P5]
+patch=1,EE,200C0270,extended,24010004
+patch=1,EE,200C0274,extended,14230003
+patch=1,EE,200C0278,extended,3C0105F5
+patch=1,EE,200C027C,extended,3421E0FF
+patch=1,EE,200C0280,extended,AC811328
+
+[No Money P5]
+patch=1,EE,200C0270,extended,24010004
+patch=1,EE,200C0274,extended,14230003
+patch=1,EE,200C027C,extended,24010000
+patch=1,EE,200C0280,extended,AC811328
+
+[Max Money P6]
+patch=1,EE,200C0284,extended,24010005
+patch=1,EE,200C0288,extended,14230003
+patch=1,EE,200C028C,extended,3C0105F5
+patch=1,EE,200C0290,extended,3421E0FF
+patch=1,EE,200C0294,extended,AC811328
+
+[No Money P6]
+patch=1,EE,200C0284,extended,24010005
+patch=1,EE,200C0288,extended,14230003
+patch=1,EE,200C0290,extended,24010000
+patch=1,EE,200C0294,extended,AC811328
+
+[Max Money P7]
+patch=1,EE,200C0298,extended,24010006
+patch=1,EE,200C029C,extended,14230003
+patch=1,EE,200C02A0,extended,3C0105F5
+patch=1,EE,200C02A4,extended,3421E0FF
+patch=1,EE,200C02A8,extended,AC811328
+
+[No Money P7]
+patch=1,EE,200C0298,extended,24010006
+patch=1,EE,200C029C,extended,14230003
+patch=1,EE,200C02A4,extended,24010000
+patch=1,EE,200C02A8,extended,AC811328
+
+[Max Money P8]
+patch=1,EE,200C02AC,extended,24010007
+patch=1,EE,200C02B0,extended,14230003
+patch=1,EE,200C02B4,extended,3C0105F5
+patch=1,EE,200C02B8,extended,3421E0FF
+patch=1,EE,200C02BC,extended,AC811328
+
+[No Money P8]
+patch=1,EE,200C02AC,extended,24010007
+patch=1,EE,200C02B0,extended,14230003
+patch=1,EE,200C02B8,extended,24010000
+patch=1,EE,200C02BC,extended,AC811328
+
+[Max Money P9]
+patch=1,EE,200C02C0,extended,24010008
+patch=1,EE,200C02C4,extended,14230003
+patch=1,EE,200C02C8,extended,3C0105F5
+patch=1,EE,200C02CC,extended,3421E0FF
+patch=1,EE,200C02D0,extended,AC811328
+
+[No Money P9]
+patch=1,EE,200C02C0,extended,24010008
+patch=1,EE,200C02C4,extended,14230003
+patch=1,EE,200C02CC,extended,24010000
+patch=1,EE,200C02D0,extended,AC811328

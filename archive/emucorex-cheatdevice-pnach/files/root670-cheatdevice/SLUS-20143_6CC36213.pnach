@@ -1,0 +1,34 @@
+gametitle=ESPN NBA 2Night (SLUS-20143)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011259C,extended,0C048376
+
+[Huge Ball]
+patch=1,EE,008310EC,extended,00000001
+
+[Light Mode]
+patch=1,EE,008310EF,extended,00000001
+
+[Bigheads Mode]
+patch=1,EE,008310F0,extended,00000001
+
+[Bighands Mode]
+patch=1,EE,008310F1,extended,00000001
+
+[Bigfeet Mode]
+patch=1,EE,008310F2,extended,00000001
+
+[Flat Mode]
+patch=1,EE,008310F3,extended,00000001
+
+[Tiny Mode]
+patch=1,EE,008310F4,extended,00000001
+
+[Spotlight Mode]
+patch=1,EE,008310F6,extended,00000001
+
+[Easy Dunks]
+patch=1,EE,008310F7,extended,00000001

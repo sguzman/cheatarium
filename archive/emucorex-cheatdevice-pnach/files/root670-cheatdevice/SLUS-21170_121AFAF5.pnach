@@ -1,0 +1,326 @@
+gametitle=Makai Kingdom-Chronicles Of The Sacred Tome (SLUS-21170)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90118DB8,extended,00832021
+patch=1,EE,2013AF50,extended,00000000
+
+[Infinite Money]
+patch=1,EE,102E7AD0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,202E7AD0,extended,107A3FFF
+patch=1,EE,202E7AD4,extended,00005AF3
+
+[Infinite Bonus Points (Character Creation)]
+patch=1,EE,202AAE18,extended,0098967F
+
+[Debug Mode (Use Controller 2 As Well)]
+patch=1,EE,20100540,extended,8F848B84
+patch=1,EE,20100544,extended,34840002
+patch=1,EE,20100548,extended,1000000B
+patch=1,EE,2010054C,extended,AF848B84
+
+[Quick Exp Gain]
+patch=1,EE,20189CA8,extended,3402270F
+
+[Super Quick Exp Gain]
+patch=1,EE,20189CA8,extended,3402FFFF
+
+[Ultra Quick Exp Gain]
+patch=1,EE,20189CA8,extended,3C0205F5
+
+[Insanely Quick Exp Gain]
+patch=1,EE,20189CA8,extended,3402270F
+patch=1,EE,20189CAC,extended,0002103C
+
+[Level 9,999 After 1 Kill]
+patch=1,EE,20189CA8,extended,3C020001
+patch=1,EE,20189CAC,extended,0002103C
+
+[Quick Skill Exp Gain]
+patch=1,EE,2017F594,extended,340603E7
+
+[Super Quick Skill Exp Gain]
+patch=1,EE,2017F594,extended,3406270F
+
+[Ultra Quick Skill Exp Gain]
+patch=1,EE,2017F594,extended,3406FFFF
+
+[Quick Mana Gain]
+patch=1,EE,20189F20,extended,340303E7
+
+[Super Quick Mana Gain]
+patch=1,EE,20189F20,extended,3403270F
+
+[Ultra Quick Mana Gain]
+patch=1,EE,20189F20,extended,3403FFFF
+
+[Insanely Quick Mana Gain]
+patch=1,EE,20189F20,extended,3C0305F5
+
+[P1 Press {L3} To Set HP To Max]
+patch=1,EE,E006FFFD,extended,002BAFC2
+patch=1,EE,200C0220,extended,3C010098
+patch=1,EE,200C0224,extended,3421967F
+patch=1,EE,200C0228,extended,AE610988
+patch=1,EE,200C022C,extended,08044F6C
+patch=1,EE,200C0230,extended,AE6109A8
+patch=1,EE,20163BBC,extended,0C030088
+patch=1,EE,D02BAFC2,extended,0000FFFF
+patch=1,EE,20163BBC,extended,0C044F6C
+
+[P1 Press {R3} To Set HP To Lowest]
+patch=1,EE,E006FFFB,extended,002BAFC2
+patch=1,EE,200C0220,extended,3C010000
+patch=1,EE,200C0224,extended,34210001
+patch=1,EE,200C0228,extended,AE610988
+patch=1,EE,200C022C,extended,08044F6C
+patch=1,EE,200C0230,extended,AE6109A8
+patch=1,EE,20163BBC,extended,0C030088
+patch=1,EE,D02BAFC2,extended,0000FFFF
+patch=1,EE,20163BBC,extended,0C044F6C
+
+[P1 Press {L3} To Set MP To Max]
+patch=1,EE,E006FFFD,extended,002BAFC2
+patch=1,EE,200C0240,extended,3C010098
+patch=1,EE,200C0244,extended,3421967F
+patch=1,EE,200C0248,extended,AE610988
+patch=1,EE,200C024C,extended,08044F6C
+patch=1,EE,200C0250,extended,AE6109A8
+patch=1,EE,20163F98,extended,0C030090
+patch=1,EE,D02BAFC2,extended,0000FFFF
+patch=1,EE,20163F98,extended,0C044F6C
+
+[P1 Press {R3} To Set MP To Lowest]
+patch=1,EE,E006FFFB,extended,002BAFC2
+patch=1,EE,200C0240,extended,3C010000
+patch=1,EE,200C0244,extended,34210001
+patch=1,EE,200C0248,extended,AE610988
+patch=1,EE,200C024C,extended,08044F6C
+patch=1,EE,200C0250,extended,AE6109A8
+patch=1,EE,20163F98,extended,0C030090
+patch=1,EE,D02BAFC2,extended,0000FFFF
+patch=1,EE,20163F98,extended,0C044F6C
+
+[Quick EXP Gain]
+patch=1,EE,102E7B10,extended,0000FFFF
+
+[Hella Quick EXP Gain]
+patch=1,EE,202E7B10,extended,FFFFFFFF
+
+[Max EXP]
+patch=1,EE,202E7B10,extended,FFFFFFFF
+patch=1,EE,202E7B14,extended,7FFFFFFF
+
+[Infinite HP]
+patch=1,EE,202E7B6C,extended,0098967F
+
+[Infinite SP]
+patch=1,EE,202E7B70,extended,0098967F
+
+[Max HP]
+patch=1,EE,202E7B94,extended,0098967F
+
+[Max SP]
+patch=1,EE,202E7B98,extended,0098967F
+
+[Max ATK]
+patch=1,EE,202E7B9C,extended,0098967F
+
+[Max DEF]
+patch=1,EE,202E7BA0,extended,0098967F
+
+[Max INT]
+patch=1,EE,202E7BA4,extended,0098967F
+
+[Max RES]
+patch=1,EE,202E7BA8,extended,0098967F
+
+[Max TEC]
+patch=1,EE,202E7BAC,extended,0098967F
+
+[Max Mana]
+patch=1,EE,202E7BBC,extended,0098967F
+
+[Max Equip-HP Bonus]
+patch=1,EE,002E7BD0,extended,000000FF
+
+[Max Equip-SP Bonus]
+patch=1,EE,002E7BD1,extended,000000FF
+
+[Max Equip-ATK Bonus]
+patch=1,EE,002E7BD2,extended,000000FF
+
+[Max Equip-DEF Bonus]
+patch=1,EE,002E7BD3,extended,000000FF
+
+[Max Equip-INT Bonus]
+patch=1,EE,002E7BD4,extended,000000FF
+
+[Max Equip-RES Bonus]
+patch=1,EE,002E7BD5,extended,000000FF
+
+[Max Equip-TEC Bonus]
+patch=1,EE,002E7BD6,extended,000000FF
+
+[Max Fire Resistance]
+patch=1,EE,102E7BF0,extended,000003E7
+
+[Max Wind Resistance]
+patch=1,EE,102E7BF2,extended,000003E7
+
+[Max Ice Resistance]
+patch=1,EE,102E7BF4,extended,000003E7
+
+[Skill 1]
+patch=1,EE,102E7C1A,extended,000000FF
+
+[Skill 2]
+patch=1,EE,102E7C22,extended,000000FF
+
+[Skill 3]
+patch=1,EE,102E7C2A,extended,000000FF
+
+[Skill 4]
+patch=1,EE,102E7C32,extended,000000FF
+
+[Skill 5]
+patch=1,EE,102E7C3A,extended,000000FF
+
+[Skill 6]
+patch=1,EE,102E7C42,extended,000000FF
+
+[Skill 7]
+patch=1,EE,102E7C4A,extended,000000FF
+
+[Skill 8]
+patch=1,EE,102E7C52,extended,000000FF
+
+[Skill 9]
+patch=1,EE,102E7C5A,extended,000000FF
+
+[Skill 10]
+patch=1,EE,102E7C62,extended,000000FF
+
+[Skill 11]
+patch=1,EE,102E7C6A,extended,000000FF
+
+[Skill 12]
+patch=1,EE,102E7C72,extended,000000FF
+
+[Skill 13]
+patch=1,EE,102E7C7A,extended,000000FF
+
+[Skill 14]
+patch=1,EE,102E7C82,extended,000000FF
+
+[Skill 15]
+patch=1,EE,102E7C8A,extended,000000FF
+
+[Skill 16]
+patch=1,EE,102E7C92,extended,000000FF
+
+[Skill 17]
+patch=1,EE,102E7C9A,extended,000000FF
+
+[Skill 18]
+patch=1,EE,102E7CA2,extended,000000FF
+
+[Skill 19]
+patch=1,EE,102E7CAA,extended,000000FF
+
+[Skill 20]
+patch=1,EE,102E7CB2,extended,000000FF
+
+[Skill 21]
+patch=1,EE,102E7CBA,extended,000000FF
+
+[Skill 22]
+patch=1,EE,102E7CC2,extended,000000FF
+
+[Skill 23]
+patch=1,EE,102E7CCA,extended,000000FF
+
+[Skill 24]
+patch=1,EE,102E7CD2,extended,000000FF
+
+[Skill 25]
+patch=1,EE,102E7CDA,extended,000000FF
+
+[Skill 1]
+patch=1,EE,202E7C1C,extended,00078600
+
+[Skill 2]
+patch=1,EE,202E7C24,extended,00078600
+
+[Skill 3]
+patch=1,EE,202E7C2C,extended,00078600
+
+[Skill 4]
+patch=1,EE,202E7C34,extended,00078600
+
+[Skill 5]
+patch=1,EE,202E7C3C,extended,00078600
+
+[Skill 6]
+patch=1,EE,202E7C44,extended,00078600
+
+[Skill 7]
+patch=1,EE,202E7C4C,extended,00078600
+
+[Skill 8]
+patch=1,EE,202E7C54,extended,00078600
+
+[Skill 9]
+patch=1,EE,202E7C5C,extended,00078600
+
+[Skill 10]
+patch=1,EE,202E7C64,extended,00078600
+
+[Skill 11]
+patch=1,EE,202E7C6C,extended,00078600
+
+[Skill 12]
+patch=1,EE,202E7C74,extended,00078600
+
+[Skill 13]
+patch=1,EE,202E7C7C,extended,00078600
+
+[Skill 14]
+patch=1,EE,202E7C84,extended,00078600
+
+[Skill 15]
+patch=1,EE,202E7C8C,extended,00078600
+
+[Skill 16]
+patch=1,EE,202E7C94,extended,00078600
+
+[Skill 17]
+patch=1,EE,202E7C9C,extended,00078600
+
+[Skill 18]
+patch=1,EE,202E7CA4,extended,00078600
+
+[Skill 19]
+patch=1,EE,202E7CAC,extended,00078600
+
+[Skill 20]
+patch=1,EE,202E7CB4,extended,00078600
+
+[Skill 21]
+patch=1,EE,202E7CBC,extended,00078600
+
+[Skill 22]
+patch=1,EE,202E7CC4,extended,00078600
+
+[Skill 23]
+patch=1,EE,202E7CCC,extended,00078600
+
+[Skill 24]
+patch=1,EE,202E7CD4,extended,00078600
+
+[Skill 25]
+patch=1,EE,202E7CDC,extended,00078600

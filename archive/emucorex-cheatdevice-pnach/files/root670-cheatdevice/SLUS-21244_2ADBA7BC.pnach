@@ -1,0 +1,1089 @@
+gametitle=Fatal Frame III-The Tormented (SLUS-21244)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902826F8,extended,00832021
+
+[Max Health]
+patch=1,EE,2032D020,extended,0001869F
+
+[Infinite Health]
+patch=1,EE,2032D018,extended,0001869F
+
+[Infinite All Film]
+patch=1,EE,201E9C20,extended,00000000
+
+[Max Infinite All Film]
+patch=1,EE,201E9CE0,extended,24050063
+
+[Extra All Film]
+patch=1,EE,201E9CE0,extended,00B12821
+
+[Always Low Game Play Time]
+patch=1,EE,20325280,extended,00000000
+patch=1,EE,20325284,extended,00000000
+patch=1,EE,20325288,extended,00000000
+
+[Max Total Score]
+patch=1,EE,20325278,extended,000F423F
+
+[Max Value-Level 1]
+patch=1,EE,0032D150,extended,00000000
+
+[Max Value-Level 2]
+patch=1,EE,0032D150,extended,00000001
+
+[Max Value-Level 3]
+patch=1,EE,0032D150,extended,00000002
+
+[Max Value-Level 4]
+patch=1,EE,0032D150,extended,00000003
+
+[Sensitivity-Level 1]
+patch=1,EE,0032D151,extended,00000000
+
+[Sensitivity-Level 2]
+patch=1,EE,0032D151,extended,00000001
+
+[Sensitivity-Level 3]
+patch=1,EE,0032D151,extended,00000002
+
+[Sensitivity-Level 4]
+patch=1,EE,0032D151,extended,00000003
+
+[Range-Level 2]
+patch=1,EE,0032D152,extended,00000000
+
+[Range-Level 3]
+patch=1,EE,0032D152,extended,00000001
+
+[Range-Level 4]
+patch=1,EE,0032D152,extended,00000002
+
+[Range-Level 5]
+patch=1,EE,0032D152,extended,00000003
+
+[Store-Level 0]
+patch=1,EE,003E5248,extended,00000000
+
+[Store-Level 1]
+patch=1,EE,003E5248,extended,00000001
+
+[Store-Level 2]
+patch=1,EE,003E5248,extended,00000002
+
+[Store-Level 3]
+patch=1,EE,003E5248,extended,00000003
+
+[Zr Lens]
+patch=1,EE,003E524A,extended,00000001
+
+[Cr Lens]
+patch=1,EE,003E524B,extended,00000001
+
+[Sr Lens]
+patch=1,EE,003E524C,extended,00000001
+
+[St Lens]
+patch=1,EE,003E524E,extended,00000001
+
+[Sl Lens]
+patch=1,EE,003E524F,extended,00000001
+
+[Pi Lense]
+patch=1,EE,003E5250,extended,00000001
+
+[All Upgraded Lens]
+patch=1,EE,103E524A,extended,00000101
+patch=1,EE,003E524C,extended,00000001
+patch=1,EE,103E524E,extended,00000101
+patch=1,EE,003E5250,extended,00000001
+
+[Zr Lens-Level 1]
+patch=1,EE,003E5256,extended,00000001
+
+[Zr Lens-Level 2]
+patch=1,EE,003E5256,extended,00000002
+
+[Zr Lens-Level 3]
+patch=1,EE,003E5256,extended,00000003
+
+[Cr Lens-Level 1]
+patch=1,EE,003E5257,extended,00000001
+
+[Cr Lens-Level 2]
+patch=1,EE,003E5257,extended,00000002
+
+[Cr Lens-Level 3]
+patch=1,EE,003E5257,extended,00000003
+
+[Sr Lens-Level 1]
+patch=1,EE,003E5258,extended,00000001
+
+[Sr Lens-Level 2]
+patch=1,EE,003E5258,extended,00000002
+
+[Sr Lens-Level 3]
+patch=1,EE,003E5258,extended,00000003
+
+[St Lens-Level 1]
+patch=1,EE,003E525A,extended,00000001
+
+[St Lens-Level 2]
+patch=1,EE,003E525A,extended,00000002
+
+[St Lens-Level 3]
+patch=1,EE,003E525A,extended,00000003
+
+[Sl Lens-Level 1]
+patch=1,EE,003E525B,extended,00000001
+
+[Sl Lens-Level 2]
+patch=1,EE,003E525B,extended,00000002
+
+[Sl Lens-Level 3]
+patch=1,EE,003E525B,extended,00000003
+
+[Pi Lens-Level 1]
+patch=1,EE,003E525C,extended,00000001
+
+[Pi Lens-Level 2]
+patch=1,EE,003E525C,extended,00000002
+
+[Pi Lens-Level 3]
+patch=1,EE,003E525C,extended,00000003
+
+[All Upgraded Lense Levels]
+patch=1,EE,103E5256,extended,00000303
+patch=1,EE,003E5258,extended,00000003
+patch=1,EE,103E525A,extended,00000303
+patch=1,EE,003E525C,extended,00000003
+
+[Sw Function]
+patch=1,EE,003E52A4,extended,00000001
+
+[Al Function]
+patch=1,EE,003E52A5,extended,00000001
+
+[Ev Function]
+patch=1,EE,003E52A6,extended,00000001
+
+[Tr Function]
+patch=1,EE,003E52A7,extended,00000001
+
+[Ms Function]
+patch=1,EE,003E52A8,extended,00000001
+
+[Sn Function]
+patch=1,EE,003E52A9,extended,00000001
+
+[Zm Function]
+patch=1,EE,003E52AA,extended,00000001
+
+[In Function]
+patch=1,EE,003E52AB,extended,00000001
+
+[Fs Function]
+patch=1,EE,003E52AC,extended,00000001
+
+[All Equipment Functions]
+patch=1,EE,203E52A4,extended,01010101
+patch=1,EE,203E52A8,extended,01010101
+patch=1,EE,003E52AC,extended,00000001
+
+[Sw Function]
+patch=1,EE,003E52AD,extended,00000001
+
+[Al Function]
+patch=1,EE,003E52AE,extended,00000001
+
+[Ev Function]
+patch=1,EE,003E52AF,extended,00000001
+
+[Tr Function]
+patch=1,EE,003E52B0,extended,00000001
+
+[Ms Function]
+patch=1,EE,003E52B1,extended,00000001
+
+[Sn Function]
+patch=1,EE,003E52B2,extended,00000001
+
+[Zm Function]
+patch=1,EE,003E52B3,extended,00000001
+
+[In Function]
+patch=1,EE,003E52B4,extended,00000001
+
+[Fs Function]
+patch=1,EE,003E52B5,extended,00000001
+
+[All Equipment Functions On]
+patch=1,EE,003E52AD,extended,00000001
+patch=1,EE,103E52AE,extended,00000101
+patch=1,EE,203E52B0,extended,01010101
+patch=1,EE,103E52B4,extended,00000101
+
+[Type-7 Film]
+patch=1,EE,10326CB0,extended,00000063
+
+[Type-14 Film]
+patch=1,EE,10326CB2,extended,00000063
+
+[Type-61 Film]
+patch=1,EE,10326CB4,extended,00000063
+
+[Type-90 Film]
+patch=1,EE,10326CB6,extended,00000063
+
+[Type Zero Film]
+patch=1,EE,10326CB8,extended,00000063
+
+[Herbal Medicine]
+patch=1,EE,10326CBA,extended,00000063
+
+[Sacred Water]
+patch=1,EE,10326CBC,extended,00000063
+
+[Stone Mirror]
+patch=1,EE,10326CBE,extended,00000063
+
+[Purifying Light]
+patch=1,EE,10326CD2,extended,00000063
+
+[All Max Items]
+patch=1,EE,40326CB0,extended,00040001
+patch=1,EE,00630063,extended,00000001
+patch=1,EE,10326CD2,extended,00000063
+
+[Camera Obscura]
+patch=1,EE,10326CC0,extended,00000001
+
+[Professional Camera]
+patch=1,EE,10326CC4,extended,00000001
+
+[Flashlight]
+patch=1,EE,10326CC6,extended,00000001
+
+[Spirit Stone Radio]
+patch=1,EE,10326CC8,extended,00000001
+
+[Purifying Light]
+patch=1,EE,10326CCC,extended,00000001
+
+[Purifying Light 2]
+patch=1,EE,10326CCE,extended,00000001
+
+[Four-Point Well Key]
+patch=1,EE,10326CD4,extended,00000001
+
+[Two Mandarins Key]
+patch=1,EE,10326CD6,extended,00000001
+
+[Simulacrum Mask]
+patch=1,EE,10326CD8,extended,00000001
+
+[Holly Hairpin]
+patch=1,EE,10326CDA,extended,00000001
+
+[Butterfly Key]
+patch=1,EE,10326CDC,extended,00000001
+
+[Bellflower Key]
+patch=1,EE,10326CDE,extended,00000001
+
+[Dianthus Key]
+patch=1,EE,10326CE0,extended,00000001
+
+[Ginger Key]
+patch=1,EE,10326CE2,extended,00000001
+
+[Sunlight Key]
+patch=1,EE,10326CE4,extended,00000001
+
+[Shadow Key]
+patch=1,EE,10326CE6,extended,00000001
+
+[Commandment Tome]
+patch=1,EE,10326CE8,extended,00000001
+
+[Mirror Of Loss]
+patch=1,EE,10326CEA,extended,00000001
+
+[Notched Arrow Key]
+patch=1,EE,10326CEC,extended,00000001
+
+[Holly Key]
+patch=1,EE,10326CEE,extended,00000001
+
+[Kyoka's Earring]
+patch=1,EE,10326CF0,extended,00000001
+
+[Echo Stone Earring]
+patch=1,EE,10326CF2,extended,00000001
+
+[Tattooed Stake 1]
+patch=1,EE,10326CF4,extended,00000001
+
+[Tattooed Stake 2]
+patch=1,EE,10326CF6,extended,00000001
+
+[Tattooed Stake 3]
+patch=1,EE,10326CF8,extended,00000001
+
+[Tattooed Stake 4]
+patch=1,EE,10326CFA,extended,00000001
+
+[Mirror Fragment 1]
+patch=1,EE,10326CFC,extended,00000001
+
+[Mirror Fragment 2]
+patch=1,EE,10326CFE,extended,00000001
+
+[Mirror Fragment 3]
+patch=1,EE,10326D00,extended,00000001
+
+[Mirror Fragment 4]
+patch=1,EE,10326D02,extended,00000001
+
+[Mirror Fragment 5]
+patch=1,EE,10326D04,extended,00000001
+
+[Sleeping Stone (1)]
+patch=1,EE,10326D06,extended,00000001
+
+[Sleeping Stone (2)]
+patch=1,EE,10326D08,extended,00000001
+
+[Sleeping Stone (3)]
+patch=1,EE,10326D0A,extended,00000001
+
+[Twilight Stone]
+patch=1,EE,10326D0C,extended,00000001
+
+[Pinwheel Key]
+patch=1,EE,10326D0E,extended,00000001
+
+[Pinwheel Key 2]
+patch=1,EE,10326D10,extended,00000001
+
+[Purity Stone Green]
+patch=1,EE,10326D12,extended,00000001
+
+[Purity Stone Blue]
+patch=1,EE,10326D14,extended,00000001
+
+[Purity Stone Red]
+patch=1,EE,10326D16,extended,00000001
+
+[Purity Stone L Blue]
+patch=1,EE,10326D18,extended,00000001
+
+[Film-Sacrificial Pillars]
+patch=1,EE,10326D28,extended,00000001
+
+[Film-Ototsuki]
+patch=1,EE,10326D2A,extended,00000001
+
+[Film-Abyss]
+patch=1,EE,10326D2C,extended,00000001
+
+[Film-Piercing Of Soul]
+patch=1,EE,10326D2E,extended,00000001
+
+[Film-Commandment]
+patch=1,EE,10326D30,extended,00000001
+
+[Film-Impalement]
+patch=1,EE,10326D32,extended,00000001
+
+[Film-Unknown]
+patch=1,EE,10326D34,extended,00000001
+
+[Film-Unknown 2]
+patch=1,EE,10326D36,extended,00000001
+
+[Film-Horizon]
+patch=1,EE,10326D38,extended,00000001
+
+[All Key Items]
+patch=1,EE,10326CC0,extended,00000001
+patch=1,EE,20326CC4,extended,00010001
+patch=1,EE,10326CC8,extended,00000001
+patch=1,EE,20326CCC,extended,00010001
+patch=1,EE,40326CD4,extended,00110001
+patch=1,EE,00010001,extended,00000000
+patch=1,EE,10326D18,extended,00000001
+patch=1,EE,40326D28,extended,00050001
+patch=1,EE,00010001,extended,00000000
+
+[Ghost 1]
+patch=1,EE,202F8258,extended,00000001
+
+[Ghost 2]
+patch=1,EE,202F8958,extended,00000001
+
+[Ghost 3]
+patch=1,EE,202F9058,extended,00000001
+
+[Ghost 4]
+patch=1,EE,202F9758,extended,00000001
+
+[Ghost 5]
+patch=1,EE,202F9E58,extended,00000001
+
+[Ghost 6]
+patch=1,EE,202FA558,extended,00000001
+
+[Ghost 7]
+patch=1,EE,202FAC58,extended,00000001
+
+[Ghost 8]
+patch=1,EE,202FB358,extended,00000001
+
+[Ghost 9]
+patch=1,EE,202FBA58,extended,00000001
+
+[Ghost 10]
+patch=1,EE,202FC158,extended,00000001
+
+[Ghost 11]
+patch=1,EE,202FC858,extended,00000001
+
+[Ghost 12]
+patch=1,EE,202FCF58,extended,00000001
+
+[Ghost 13]
+patch=1,EE,202FD658,extended,00000001
+
+[Ghost 14]
+patch=1,EE,202FDD58,extended,00000001
+
+[Ghost 15]
+patch=1,EE,202FE458,extended,00000001
+
+[Ghost 16]
+patch=1,EE,202FEB58,extended,00000001
+
+[All Ghosts]
+patch=1,EE,402F8258,extended,001001C0
+patch=1,EE,00000001,extended,00000000
+
+[Commandment Tome]
+patch=1,EE,00322EA8,extended,00000002
+
+[Commandment Tome 2]
+patch=1,EE,00322EA9,extended,00000002
+
+[The Other World]
+patch=1,EE,00322EAA,extended,00000002
+
+[Tattooed Diary 1]
+patch=1,EE,00322EAB,extended,00000002
+
+[Tattooed Diary 2]
+patch=1,EE,00322EAC,extended,00000002
+
+[Tattooed Diary 3]
+patch=1,EE,00322EAD,extended,00000002
+
+[The Unleashing Tome]
+patch=1,EE,00322EAE,extended,00000002
+
+[Mirror Of Loss Tome]
+patch=1,EE,00322EAF,extended,00000002
+
+[Purifying Light Tome]
+patch=1,EE,00322EB0,extended,00000002
+
+[Rite Of Purple Ink Tome]
+patch=1,EE,00322EB1,extended,00000002
+
+[The Tearing Tome]
+patch=1,EE,00322EB2,extended,00000002
+
+[Piercing The Soul Tome]
+patch=1,EE,00322EB3,extended,00000002
+
+[Calico Notebook 1]
+patch=1,EE,00322EB4,extended,00000002
+
+[Calico Notebook 2]
+patch=1,EE,00322EB5,extended,00000002
+
+[Moriya Tome 1]
+patch=1,EE,00322EB6,extended,00000002
+
+[Moriya Tome 2]
+patch=1,EE,00322EB7,extended,00000002
+
+[Moriya Tome 3]
+patch=1,EE,00322EB8,extended,00000002
+
+[Moriya Tome 4]
+patch=1,EE,00322EB9,extended,00000002
+
+[Red Diary 1]
+patch=1,EE,00322EBA,extended,00000002
+
+[Red Diary 2]
+patch=1,EE,00322EBB,extended,00000002
+
+[Blue Diary 1]
+patch=1,EE,00322EBC,extended,00000002
+
+[Blue Diary 2]
+patch=1,EE,00322EBD,extended,00000002
+
+[Blue Diary 3]
+patch=1,EE,00322EBE,extended,00000002
+
+[Green Diary]
+patch=1,EE,00322EBF,extended,00000002
+
+[Gray Diary]
+patch=1,EE,00322EC0,extended,00000002
+
+[Purple Diary 1]
+patch=1,EE,00322EC1,extended,00000002
+
+[Purple Diary 2]
+patch=1,EE,00322EC2,extended,00000002
+
+[Purple Diary 3]
+patch=1,EE,00322EC3,extended,00000002
+
+[Purple Diary 4]
+patch=1,EE,00322EC4,extended,00000002
+
+[Impalement Tome]
+patch=1,EE,00322EC5,extended,00000002
+
+[Taboo Tome]
+patch=1,EE,00322EC6,extended,00000002
+
+[The Engraver Tome]
+patch=1,EE,00322EC7,extended,00000002
+
+[Folklore Notes 1]
+patch=1,EE,00322EC8,extended,00000002
+
+[Folklore Notes 2]
+patch=1,EE,00322EC9,extended,00000002
+
+[Folklore Notes 3]
+patch=1,EE,00322ECA,extended,00000002
+
+[Crimson Diary]
+patch=1,EE,00322ECB,extended,00000002
+
+[Crimson Sacrifice]
+patch=1,EE,00322ECC,extended,00000002
+
+[Twin Shrine Maidens]
+patch=1,EE,00322ECD,extended,00000002
+
+[All Text]
+patch=1,EE,40322EA8,extended,00090001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,10322ECC,extended,00000202
+
+[Legend Of Song 1]
+patch=1,EE,00322ECF,extended,00000002
+
+[Legend Of Song 2]
+patch=1,EE,00322ED0,extended,00000002
+
+[Legend Of Song 3]
+patch=1,EE,00322ED1,extended,00000002
+
+[Tattoo Folklore]
+patch=1,EE,00322ED2,extended,00000002
+
+[Master And Snake]
+patch=1,EE,00322ED3,extended,00000002
+
+[Rituals And Statues]
+patch=1,EE,00322ED4,extended,00000002
+
+[Bones Found In Well]
+patch=1,EE,00322ED5,extended,00000002
+
+[Skewered Dolls]
+patch=1,EE,00322ED6,extended,00000002
+
+[Many Bones Found]
+patch=1,EE,00322ED7,extended,00000002
+
+[Buried Mummies]
+patch=1,EE,00322ED8,extended,00000002
+
+[Shrine Carpenters]
+patch=1,EE,00322ED9,extended,00000002
+
+[Carpenters Spirited Away]
+patch=1,EE,00322EDA,extended,00000002
+
+[Missing In Minakami]
+patch=1,EE,00322EDB,extended,00000002
+
+[Land Surveyors Missing]
+patch=1,EE,00322EDC,extended,00000002
+
+[Twin Deification]
+patch=1,EE,00322EDD,extended,00000002
+
+[The Rope Priestess]
+patch=1,EE,00322EDE,extended,00000002
+
+[Rescued Woman, Gone]
+patch=1,EE,00322EDF,extended,00000002
+
+[Patient Disappears]
+patch=1,EE,00322EE0,extended,00000002
+
+[Vanishings]
+patch=1,EE,00322EE1,extended,00000002
+
+[Radio Transmissions]
+patch=1,EE,00322EE2,extended,00000002
+
+[The Spirit World]
+patch=1,EE,00322EE3,extended,00000002
+
+[The Camera Obscura]
+patch=1,EE,00322EE4,extended,00000002
+
+[All Data]
+patch=1,EE,00322ECF,extended,00000002
+patch=1,EE,40322ED0,extended,00050001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,00322EE4,extended,00000002
+
+[Kei's Research Notes]
+patch=1,EE,00322EE5,extended,00000002
+
+[Map With A Mark]
+patch=1,EE,00322EE6,extended,00000002
+
+[Scrap Of Paper]
+patch=1,EE,00322EE7,extended,00000002
+
+[Burnt Passport]
+patch=1,EE,00322EE8,extended,00000002
+
+[Yoshino Takigawa's Diary]
+patch=1,EE,00322EE9,extended,00000002
+
+[The Crawling Woman]
+patch=1,EE,00322EEA,extended,00000002
+
+[Yoshino Takigawa]
+patch=1,EE,00322EEB,extended,00000002
+
+[Abandoned House]
+patch=1,EE,00322EEC,extended,00000002
+
+[Letter From Kei 1]
+patch=1,EE,00322EED,extended,00000002
+
+[Letter From Kei 2]
+patch=1,EE,00322EEE,extended,00000002
+
+[Letter From Kei 3]
+patch=1,EE,00322EEF,extended,00000002
+
+[Letter From Kei 4]
+patch=1,EE,00322EF0,extended,00000002
+
+[Letter From Kei 5]
+patch=1,EE,00322EF1,extended,00000002
+
+[Letter From Kei 6]
+patch=1,EE,00322EF2,extended,00000002
+
+[Memo In Shaky Hand]
+patch=1,EE,00322EF3,extended,00000002
+
+[On The Urban Legend]
+patch=1,EE,00322EF4,extended,00000002
+
+[The Manor Of Sleep]
+patch=1,EE,00322EF5,extended,00000002
+
+[The Sleeping Priestess]
+patch=1,EE,00322EF6,extended,00000002
+
+[Red Notebook Part 1]
+patch=1,EE,00322EF7,extended,00000002
+
+[Red Notebook Part 2]
+patch=1,EE,00322EF8,extended,00000002
+
+[Basic Operation]
+patch=1,EE,00322EF9,extended,00000002
+
+[Combat I]
+patch=1,EE,00322EFA,extended,00000002
+
+[Combat II]
+patch=1,EE,00322EFB,extended,00000002
+
+[Hiding Moves]
+patch=1,EE,00322EFC,extended,00000002
+
+[The Purifying Light]
+patch=1,EE,00322EFD,extended,00000002
+
+[Lens-Pressure]
+patch=1,EE,00322EFE,extended,00000002
+
+[Lens-Blast]
+patch=1,EE,00322EFF,extended,00000002
+
+[Lens-Zero]
+patch=1,EE,00322F00,extended,00000002
+
+[Lens-Blow]
+patch=1,EE,00322F01,extended,00000002
+
+[Lens-Crush]
+patch=1,EE,00322F02,extended,00000002
+
+[Lens-Serial]
+patch=1,EE,00322F03,extended,00000002
+
+[Lens-Slow]
+patch=1,EE,00322F04,extended,00000002
+
+[Lens-Pierce]
+patch=1,EE,00322F05,extended,00000002
+
+[Lens-Stop]
+patch=1,EE,00322F06,extended,00000002
+
+[Equipment-Alarm]
+patch=1,EE,00322F07,extended,00000002
+
+[Equipment-Evade]
+patch=1,EE,00322F08,extended,00000002
+
+[Equipment-Switch]
+patch=1,EE,00322F09,extended,00000002
+
+[Equipment-Measure]
+patch=1,EE,00322F0A,extended,00000002
+
+[Equipment-Track]
+patch=1,EE,00322F0B,extended,00000002
+
+[Equipment-Sense]
+patch=1,EE,00322F0C,extended,00000002
+
+[Equipment-Zoom]
+patch=1,EE,00322F0D,extended,00000002
+
+[Equipment-Infinity]
+patch=1,EE,00322F0E,extended,00000002
+
+[Equipment-Festival]
+patch=1,EE,00322F0F,extended,00000002
+
+[Flash]
+patch=1,EE,00322F10,extended,00000002
+
+[The Sacred Stone]
+patch=1,EE,00322F11,extended,00000002
+
+[Double]
+patch=1,EE,00322F12,extended,00000002
+
+[All Other]
+patch=1,EE,00322EE5,extended,00000002
+patch=1,EE,10322EE6,extended,00000202
+patch=1,EE,40322EE8,extended,000A0001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,10322F10,extended,00000202
+patch=1,EE,00322F12,extended,00000002
+
+[Kei Lookalike]
+patch=1,EE,00322F13,extended,00000002
+
+[Hiding Girl]
+patch=1,EE,00322F14,extended,00000002
+
+[Undeveloped Film]
+patch=1,EE,00322F15,extended,00000002
+
+[Hiding Girl 2]
+patch=1,EE,00322F16,extended,00000002
+
+[Yoshino's Photo]
+patch=1,EE,00322F17,extended,00000002
+
+[Undeveloped Film 2]
+patch=1,EE,00322F18,extended,00000002
+
+[The Closet Woman]
+patch=1,EE,00322F19,extended,00000002
+
+[Undeveloped Film 3]
+patch=1,EE,00322F1A,extended,00000002
+
+[Crouching Woman]
+patch=1,EE,00322F1B,extended,00000002
+
+[Undeveloped Film 4]
+patch=1,EE,00322F1C,extended,00000002
+
+[Wounded Man]
+patch=1,EE,00322F1D,extended,00000002
+
+[Undeveloped Film 5]
+patch=1,EE,00322F1E,extended,00000002
+
+[Standing Girl]
+patch=1,EE,00322F1F,extended,00000002
+
+[Undeveloped Film 6]
+patch=1,EE,00322F20,extended,00000002
+
+[Seated Twins]
+patch=1,EE,00322F21,extended,00000002
+
+[Undeveloped Film 7]
+patch=1,EE,00322F22,extended,00000002
+
+[Ceremony Room Buddha]
+patch=1,EE,00322F23,extended,00000002
+
+[Undeveloped Film 8]
+patch=1,EE,00322F24,extended,00000002
+
+[The Altar Tattoo]
+patch=1,EE,00322F25,extended,00000002
+
+[Undeveloped Film 9]
+patch=1,EE,00322F26,extended,00000002
+
+[Woman At Well]
+patch=1,EE,00322F27,extended,00000002
+
+[Undeveloped Film 10]
+patch=1,EE,00322F28,extended,00000002
+
+[Crawling Woman]
+patch=1,EE,00322F29,extended,00000002
+
+[Peephole]
+patch=1,EE,00322F2A,extended,00000002
+
+[Undeveloped Film 11]
+patch=1,EE,00322F2B,extended,00000002
+
+[Skewered Dolls]
+patch=1,EE,00322F2C,extended,00000002
+
+[Undeveloped Film 12]
+patch=1,EE,00322F2D,extended,00000002
+
+[Blood-Stained Platform]
+patch=1,EE,00322F2E,extended,00000002
+
+[Man In Corridor]
+patch=1,EE,00322F2F,extended,00000002
+
+[Four Shadows]
+patch=1,EE,00322F30,extended,00000002
+
+[Undeveloped Film 13]
+patch=1,EE,00322F31,extended,00000002
+
+[Men In White]
+patch=1,EE,00322F32,extended,00000002
+
+[Mirrow Stand]
+patch=1,EE,00322F33,extended,00000002
+
+[Photo Of Mio]
+patch=1,EE,00322F34,extended,00000002
+
+[Photo Of Kei]
+patch=1,EE,00322F35,extended,00000002
+
+[Cloth On Pedestal]
+patch=1,EE,00322F36,extended,00000002
+
+[Undeveloped Film 14]
+patch=1,EE,00322F37,extended,00000002
+
+[Babe In Arms?]
+patch=1,EE,00322F38,extended,00000002
+
+[Undeveloped Film 15]
+patch=1,EE,00322F39,extended,00000002
+
+[Mother And Daughter]
+patch=1,EE,00322F3A,extended,00000002
+
+[Undeveloped Film 16]
+patch=1,EE,00322F3B,extended,00000002
+
+[Shrine Maiden]
+patch=1,EE,00322F3C,extended,00000002
+
+[Hammering Girls]
+patch=1,EE,00322F3D,extended,00000002
+
+[Undeveloped Film 17]
+patch=1,EE,00322F3E,extended,00000002
+
+[Old Projector]
+patch=1,EE,00322F3F,extended,00000002
+
+[Miku With Man]
+patch=1,EE,00322F40,extended,00000002
+
+[Undeveloped Film 18]
+patch=1,EE,00322F41,extended,00000002
+
+[Courtyard Graves]
+patch=1,EE,00322F42,extended,00000002
+
+[Undeveloped Film 19]
+patch=1,EE,00322F43,extended,00000002
+
+[Stains On Wall]
+patch=1,EE,00322F44,extended,00000002
+
+[Form On Stairs]
+patch=1,EE,00322F45,extended,00000002
+
+[Yoshino Takigawa]
+patch=1,EE,00322F46,extended,00000002
+
+[Under The Stairs]
+patch=1,EE,00322F47,extended,00000002
+
+[Camera Obscura]
+patch=1,EE,00322F48,extended,00000002
+
+[Undeveloped Film 20]
+patch=1,EE,00322F49,extended,00000002
+
+[Weeping Woman]
+patch=1,EE,00322F4A,extended,00000002
+
+[Picture Of You]
+patch=1,EE,00322F4B,extended,00000002
+
+[All Photos]
+patch=1,EE,00322F13,extended,00000002
+patch=1,EE,40322F14,extended,000E0001
+patch=1,EE,02020202,extended,00000000
+
+[Incidents-The Bruise Appears]
+patch=1,EE,10328FE0,extended,00000002
+
+[Incidents-Yuu's Research]
+patch=1,EE,10328FE2,extended,00000002
+
+[Incidents-The Lullaby]
+patch=1,EE,10328FE4,extended,00000002
+
+[Incidents-Human Columns]
+patch=1,EE,10328FE6,extended,00000002
+
+[Location-The Abandoned House]
+patch=1,EE,10328FE8,extended,00000002
+
+[Location-The Manor Of Sleep]
+patch=1,EE,10328FEA,extended,00000002
+
+[Location-The Dream Mansion]
+patch=1,EE,10328FEC,extended,00000002
+
+[Location-Voices Behind The Wall]
+patch=1,EE,10328FEE,extended,00000002
+
+[Location-The Skewered Dolls]
+patch=1,EE,10328FF0,extended,00000002
+
+[Location-The Red Doll Room]
+patch=1,EE,10328FF2,extended,00000002
+
+[Location-The Hanging Prison]
+patch=1,EE,10328FF4,extended,00000002
+
+[Location-The Ceremony ROom]
+patch=1,EE,10328FF6,extended,00000002
+
+[Location-The Library Altar]
+patch=1,EE,10328FF8,extended,00000002
+
+[Location-The Rope House]
+patch=1,EE,10328FFA,extended,00000002
+
+[Location-Missing In Minakami]
+patch=1,EE,10328FFC,extended,00000002
+
+[People-Yuu Asou]
+patch=1,EE,10328FFE,extended,00000002
+
+[People-Miku Hinasaki]
+patch=1,EE,10329000,extended,00000002
+
+[People-Kei Amakura]
+patch=1,EE,10329002,extended,00000002
+
+[People-Mafuya Hinasaki]
+patch=1,EE,10329004,extended,00000002
+
+[People-Mio Amakura]
+patch=1,EE,10329006,extended,00000002
+
+[People-The Tattooed Woman]
+patch=1,EE,10329008,extended,00000002
+
+[People-A Man Named Kaname]
+patch=1,EE,1032900A,extended,00000002
+
+[People-Begging For Help]
+patch=1,EE,1032900C,extended,00000002
+
+[People-Mother And Daughter]
+patch=1,EE,1032900E,extended,00000002
+
+[People-Woman With Comb]
+patch=1,EE,10329010,extended,00000002
+
+[People-Shrine Maiden Girl]
+patch=1,EE,10329012,extended,00000002
+
+[People-Woman In The Photo]
+patch=1,EE,10329014,extended,00000002
+
+[People-Men In White]
+patch=1,EE,10329016,extended,00000002
+
+[People-Under The Floor]
+patch=1,EE,10329018,extended,00000002
+
+[People-Kunihiko Asou]
+patch=1,EE,1032901A,extended,00000002
+
+[Articles-Camera Obscura]
+patch=1,EE,1032901C,extended,00000002
+
+[Articles-The Projector]
+patch=1,EE,1032901E,extended,00000002
+
+[Articles-The Old Radio]
+patch=1,EE,10329020,extended,00000002
+
+[All Notes Codes]
+patch=1,EE,40328FE0,extended,00100001
+patch=1,EE,00020002,extended,00000000
+patch=1,EE,10329020,extended,00000002

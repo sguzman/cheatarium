@@ -1,0 +1,60 @@
+gametitle=Time Crisis II (SLUS-20219)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902B04FC,extended,0C0B0014
+
+[Infinite Credits]
+patch=1,EE,10482410,extended,00000009
+
+[Infinite Time]
+patch=1,EE,1064395C,extended,00002E80
+
+[P1 Max Score]
+patch=1,EE,20643954,extended,05F5E0FF
+
+[P1 Infinite Health]
+patch=1,EE,10643958,extended,00000004
+
+[P1 Max Kills (Crisis Missions)]
+patch=1,EE,00645598,extended,00000063
+
+[P1 Press {L1}+{L2} For Less Time (Arcade Mode)]
+patch=1,EE,D03AD55C,extended,0000FAFF
+patch=1,EE,1064395C,extended,00000000
+
+[P1 Press {R1}+{R2} For More Time (Arcade Mode)]
+patch=1,EE,D03AD55C,extended,0000F5FF
+patch=1,EE,1064395C,extended,00002E81
+
+[P1 Always Max Combos (Arcade Mode)]
+patch=1,EE,006439E8,extended,00000063
+patch=1,EE,00643A00,extended,00000063
+
+[P1 Infinite Ammo-Gun 1]
+patch=1,EE,10643ABC,extended,00000009
+
+[P1 Infinite Ammo-Gun 2]
+patch=1,EE,10643AEC,extended,00000009
+
+[P1 Always Has A Machine Gun]
+patch=1,EE,10643AB8,extended,00000008
+
+[P1 Max Hits (Quick Crash)]
+patch=1,EE,104912B4,extended,0000270F
+
+[P1 Max Score (Shoot Away Extra)]
+patch=1,EE,00495050,extended,0000003C
+patch=1,EE,40495274,extended,000F0001
+patch=1,EE,00020002,extended,00000000
+
+[P1 Max Score (Shoot Away Retro)]
+patch=1,EE,10495090,extended,0000270F
+
+[P2 Max Score]
+patch=1,EE,206439B4,extended,05F5E0FF
+
+[P2 Infinite Health]
+patch=1,EE,106439B8,extended,00000004

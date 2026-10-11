@@ -1,0 +1,39 @@
+gametitle=Casper-Spirit Dimensions (SLUS-20205)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0200008,extended,0022940F
+
+[Infinite Fire Enhancer]
+patch=1,EE,10510DA0,extended,0000000A
+
+[Infinite Ice Enhancer]
+patch=1,EE,10510DA4,extended,0000000A
+
+[Infinite Health]
+patch=1,EE,10510DB0,extended,00000032
+
+[Infinite Comet Energy]
+patch=1,EE,10510DB8,extended,000000B4
+
+[Infinite Shield Energy]
+patch=1,EE,10510DC0,extended,00000003
+
+[Infinite Credits]
+patch=1,EE,10510DC4,extended,00000004
+patch=1,EE,10510DAC,extended,00000004
+
+[Infinite Double Enhancer]
+patch=1,EE,10510DCC,extended,0000000A
+
+[Infinite Homing Enhancer]
+patch=1,EE,10510DD0,extended,0000000A
+
+[Infinite Bounce Enhancer]
+patch=1,EE,10510DD4,extended,0000000A
+
+[Start With Max Gems]
+patch=1,EE,D0510DDC,extended,00000001
+patch=1,EE,10510DDC,extended,00000063

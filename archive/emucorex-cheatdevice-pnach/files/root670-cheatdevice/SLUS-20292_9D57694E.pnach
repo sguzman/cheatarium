@@ -1,0 +1,604 @@
+gametitle=Tsugunai-Atonement (SLUS-20292)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00212DC7
+
+[Infinite Money]
+patch=1,EE,10320E68,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,20320E68,extended,05F5E0FF
+
+[A Lot Of Money Gained After Battle]
+patch=1,EE,201C4898,extended,2442270F
+
+[Hella Money Gained After Battle]
+patch=1,EE,201C4898,extended,24427FFF
+
+[Save Anywhere]
+patch=1,EE,20264450,extended,00000001
+
+[Disable FMV]
+patch=1,EE,2020B658,extended,24020001
+
+[Infinite HP]
+patch=1,EE,103247AA,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,103247AE,extended,000003E7
+
+[Level 99]
+patch=1,EE,10324982,extended,00000063
+
+[Max HP]
+patch=1,EE,10324988,extended,0000270F
+
+[Max MP]
+patch=1,EE,1032498C,extended,000003E7
+
+[Max Strength]
+patch=1,EE,10324990,extended,000003E7
+
+[Max Agility]
+patch=1,EE,10324992,extended,000003E7
+
+[Max Mind]
+patch=1,EE,10324994,extended,000003E7
+
+[Quick Level Gain]
+patch=1,EE,103247A4,extended,0000FFFF
+
+[Medicine]
+patch=1,EE,003212A8,extended,00000009
+
+[Special Medicine]
+patch=1,EE,003212A9,extended,00000009
+
+[Secret Medicine]
+patch=1,EE,003212AA,extended,00000009
+
+[Holy Water]
+patch=1,EE,003212AB,extended,00000009
+
+[Refined Holy Water]
+patch=1,EE,003212AC,extended,00000009
+
+[Sacred Water]
+patch=1,EE,003212AD,extended,00000009
+
+[Antidote]
+patch=1,EE,003212AE,extended,00000009
+
+[Eyedrop]
+patch=1,EE,003212AF,extended,00000009
+
+[Water Of Exorcism]
+patch=1,EE,003212B0,extended,00000009
+
+[Wonder Drug]
+patch=1,EE,003212B1,extended,00000009
+
+[Salamander Scale]
+patch=1,EE,003212B2,extended,00000009
+
+[Salamander Eye]
+patch=1,EE,003212B3,extended,00000009
+
+[Diamond Dust]
+patch=1,EE,003212B4,extended,00000009
+
+[Frozen Earth]
+patch=1,EE,003212B5,extended,00000009
+
+[Electric Catfish]
+patch=1,EE,003212B6,extended,00000009
+
+[Lightning Dragon]
+patch=1,EE,003212B7,extended,00000009
+
+[Golem Finger]
+patch=1,EE,003212B8,extended,00000009
+
+[Golem Fist]
+patch=1,EE,003212B9,extended,00000009
+
+[Reactor Core]
+patch=1,EE,003212BA,extended,00000009
+
+[Snake Fank]
+patch=1,EE,003212BB,extended,00000009
+
+[Sleeping Grass]
+patch=1,EE,003212BC,extended,00000009
+
+[Charm Of Seal]
+patch=1,EE,003212BD,extended,00000009
+
+[Troll's Powder]
+patch=1,EE,003212BE,extended,00000009
+
+[Sacrificial Doll]
+patch=1,EE,003212BF,extended,00000009
+
+[Mythril Cloth]
+patch=1,EE,003212C0,extended,00000009
+
+[Quartz Cloth]
+patch=1,EE,003212C1,extended,00000009
+
+[Cloth Of Divinity]
+patch=1,EE,003212C2,extended,00000009
+
+[Shuttlecock]
+patch=1,EE,003212C3,extended,00000009
+
+[Whetstone]
+patch=1,EE,003212C4,extended,00000009
+
+[Smoke Screen]
+patch=1,EE,003212C5,extended,00000009
+
+[Walnut Of Power]
+patch=1,EE,003212C6,extended,00000009
+
+[Seed Of Speed]
+patch=1,EE,003212C7,extended,00000009
+
+[Mental Mushroom]
+patch=1,EE,003212C8,extended,00000009
+
+[Fruit Of Life]
+patch=1,EE,003212C9,extended,00000009
+
+[Simple Spellbook]
+patch=1,EE,003212DA,extended,00000009
+
+[Old Spellbook]
+patch=1,EE,003212DB,extended,00000009
+
+[Clean Spellbook]
+patch=1,EE,003212DC,extended,00000009
+
+[Thick Spellbook]
+patch=1,EE,003212DD,extended,00000009
+
+[Book Of Destroy]
+patch=1,EE,003212DE,extended,00000009
+
+[Book Of Healing]
+patch=1,EE,003212DF,extended,00000009
+
+[Book Of Fire]
+patch=1,EE,003212E0,extended,00000009
+
+[Difficult Spellbook]
+patch=1,EE,003212E1,extended,00000009
+
+[Piece Of Paper]
+patch=1,EE,003212E2,extended,00000009
+
+[Magician's Log]
+patch=1,EE,003212E3,extended,00000009
+
+[Red Magic Stone]
+patch=1,EE,0032130C,extended,00000009
+
+[Blue Magic Stone]
+patch=1,EE,0032130D,extended,00000009
+
+[Yellow Magic Stone]
+patch=1,EE,0032130E,extended,00000009
+
+[White Magic Stone]
+patch=1,EE,0032130F,extended,00000009
+
+[Green Magic Stone]
+patch=1,EE,00321310,extended,00000009
+
+[Dark Magic Stone]
+patch=1,EE,00321311,extended,00000009
+
+[Red Feather Hat]
+patch=1,EE,003213A8,extended,00000009
+
+[Oak Tiara]
+patch=1,EE,003213A9,extended,00000009
+
+[Old Letter]
+patch=1,EE,003213AA,extended,00000009
+
+[Dummy]
+patch=1,EE,003213AB,extended,00000009
+
+[Treasure Orb]
+patch=1,EE,003213AC,extended,00000009
+
+[Key To The Cell]
+patch=1,EE,003213AD,extended,00000009
+
+[Red Crystal]
+patch=1,EE,003213AE,extended,00000009
+
+[Blue Crystal]
+patch=1,EE,003213AF,extended,00000009
+
+[Green Crystal]
+patch=1,EE,003213B0,extended,00000009
+
+[Aquamarine]
+patch=1,EE,003213B1,extended,00000009
+
+[Small Fish]
+patch=1,EE,003213B2,extended,00000009
+
+[Black Mushroom]
+patch=1,EE,003213B3,extended,00000009
+
+[Purple Mushroom]
+patch=1,EE,003213B4,extended,00000009
+
+[Twig Of Ent]
+patch=1,EE,003213B5,extended,00000009
+
+[Crank]
+patch=1,EE,003213B6,extended,00000009
+
+[Empty Lamp]
+patch=1,EE,003213B7,extended,00000009
+
+[Oil Pot]
+patch=1,EE,003213B8,extended,00000009
+
+[Fairy Stone]
+patch=1,EE,003213B9,extended,00000009
+
+[Gamma Goblin Horn]
+patch=1,EE,003213BA,extended,00000009
+
+[Sleeping Beer]
+patch=1,EE,003213BB,extended,00000009
+
+[Key To The Keg]
+patch=1,EE,003213BC,extended,00000009
+
+[Key To The Seashore]
+patch=1,EE,003213BD,extended,00000009
+
+[Key To Lighthouse]
+patch=1,EE,003213BE,extended,00000009
+
+[Oil-Making Memo]
+patch=1,EE,003213BF,extended,00000009
+
+[Oil Urn]
+patch=1,EE,003213C0,extended,00000009
+
+[Key To The Oil Room]
+patch=1,EE,003213C1,extended,00000009
+
+[Kindling Coal]
+patch=1,EE,003213C2,extended,00000009
+
+[Red Oil]
+patch=1,EE,003213C3,extended,00000009
+
+[Blue Oil]
+patch=1,EE,003213C4,extended,00000009
+
+[Transparent Oil]
+patch=1,EE,003213C5,extended,00000009
+
+[Everlasting Oil]
+patch=1,EE,003213C6,extended,00000009
+
+[Scrapped Oil]
+patch=1,EE,003213C7,extended,00000009
+
+[Holy Mirror]
+patch=1,EE,003213C8,extended,00000009
+
+[Triangle Stone]
+patch=1,EE,003213C9,extended,00000009
+
+[Square Stone]
+patch=1,EE,003213CA,extended,00000009
+
+[Pentagon Stone]
+patch=1,EE,003213CB,extended,00000009
+
+[Oil-Filled Lamp]
+patch=1,EE,003213CC,extended,00000009
+
+[Key To The Hold]
+patch=1,EE,003213CD,extended,00000009
+
+[Keystone]
+patch=1,EE,003213CE,extended,00000009
+
+[Book Of Laws]
+patch=1,EE,003213CF,extended,00000009
+
+[Key To The Toolbox]
+patch=1,EE,003213D0,extended,00000009
+
+[Crowbar]
+patch=1,EE,003213D1,extended,00000009
+
+[Marsh]
+patch=1,EE,003213D2,extended,00000009
+
+[Torch]
+patch=1,EE,003213D3,extended,00000009
+
+[Torch Fire]
+patch=1,EE,003213D4,extended,00000009
+
+[Bridge Lever]
+patch=1,EE,003213D5,extended,00000009
+
+[Floodgate Crank]
+patch=1,EE,003213D6,extended,00000009
+
+[Small Key]
+patch=1,EE,003213D7,extended,00000009
+
+[Lithograph Fragment]
+patch=1,EE,003213D8,extended,00000009
+
+[Small Gear]
+patch=1,EE,003213D9,extended,00000009
+
+[Large Gear]
+patch=1,EE,003213DA,extended,00000009
+
+[Book Of Vivian]
+patch=1,EE,003213DB,extended,00000009
+
+[Book Of Lindwurm]
+patch=1,EE,003213DC,extended,00000009
+
+[Book Of Raum Lugh]
+patch=1,EE,003213DD,extended,00000009
+
+[Book Of Shoggoth]
+patch=1,EE,003213DE,extended,00000009
+
+[Key To The Stack]
+patch=1,EE,003213DF,extended,00000009
+
+[Key To The Seashore]
+patch=1,EE,003213E0,extended,00000009
+
+[Key To The Sewer]
+patch=1,EE,003213E1,extended,00000009
+
+[Salt]
+patch=1,EE,003213E2,extended,00000009
+
+[Salty Marsh]
+patch=1,EE,003213E3,extended,00000009
+
+[Small Lithograph]
+patch=1,EE,003213E4,extended,00000009
+
+[Soldier's Medal]
+patch=1,EE,003213E5,extended,00000009
+
+[Hammer]
+patch=1,EE,003213E6,extended,00000009
+
+[Lunch Bag]
+patch=1,EE,003213E7,extended,00000009
+
+[Wooden Board]
+patch=1,EE,003213E8,extended,00000009
+
+[Blue Pass]
+patch=1,EE,003213E9,extended,00000009
+
+[Keepsake Necklace]
+patch=1,EE,003213EA,extended,00000009
+
+[Key To The Waterway]
+patch=1,EE,003213EB,extended,00000009
+
+[Mills's Sketch Book]
+patch=1,EE,003213EC,extended,00000009
+
+[Cole's Memo]
+patch=1,EE,003213ED,extended,00000009
+
+[The Start Of The Order]
+patch=1,EE,003213EE,extended,00000009
+
+[Cooperator]
+patch=1,EE,003213EF,extended,00000009
+
+[Earplugs]
+patch=1,EE,003212CA,extended,00000001
+
+[Ring Of Life]
+patch=1,EE,003212CB,extended,00000001
+
+[Ring Of Magic]
+patch=1,EE,003212CC,extended,00000001
+
+[Ring Of Strength]
+patch=1,EE,003212CD,extended,00000001
+
+[Ring Of Agility]
+patch=1,EE,003212CE,extended,00000001
+
+[Ring Of Mind]
+patch=1,EE,003212CF,extended,00000001
+
+[Sophist's Ring]
+patch=1,EE,003212D0,extended,00000001
+
+[Fighter's Belt]
+patch=1,EE,003212D1,extended,00000001
+
+[Master's Armband]
+patch=1,EE,003212D2,extended,00000001
+
+[Guardian Rock]
+patch=1,EE,003212D3,extended,00000001
+
+[Magic Glasses]
+patch=1,EE,003212D4,extended,00000001
+
+[Neutralizing Stone]
+patch=1,EE,003212D5,extended,00000001
+
+[Counter Band]
+patch=1,EE,003212D6,extended,00000001
+
+[Golden Ring]
+patch=1,EE,003212D7,extended,00000001
+
+[Claymore Sword]
+patch=1,EE,003212E4,extended,00000001
+
+[Coltana Blade]
+patch=1,EE,003212E5,extended,00000001
+
+[Flamberge]
+patch=1,EE,003212E6,extended,00000001
+
+[Tristan]
+patch=1,EE,003212E7,extended,00000001
+
+[Trident]
+patch=1,EE,003212E8,extended,00000001
+
+[Ox Tongue]
+patch=1,EE,003212E9,extended,00000001
+
+[Bardiche]
+patch=1,EE,003212EA,extended,00000001
+
+[Gae Bolg Gungir]
+patch=1,EE,003212EB,extended,00000001
+
+[Battle Mace]
+patch=1,EE,003212EC,extended,00000001
+
+[Mash Hammer]
+patch=1,EE,003212ED,extended,00000001
+
+[Morgenstern]
+patch=1,EE,003212EE,extended,00000001
+
+[Ogre Fist]
+patch=1,EE,003212EF,extended,00000001
+
+[Sting Bow]
+patch=1,EE,003212F0,extended,00000001
+
+[Hawk String]
+patch=1,EE,003212F1,extended,00000001
+
+[Pile Winder]
+patch=1,EE,003212F2,extended,00000001
+
+[Hedwig]
+patch=1,EE,003212F3,extended,00000001
+
+[Heavy Tomahawk]
+patch=1,EE,003212F4,extended,00000001
+
+[Buster Axe]
+patch=1,EE,003212F5,extended,00000001
+
+[Brandish]
+patch=1,EE,003212F6,extended,00000001
+
+[Flazets]
+patch=1,EE,003212F7,extended,00000001
+
+[Leather Armor]
+patch=1,EE,003212F8,extended,00000001
+
+[Cuirboil]
+patch=1,EE,003212F9,extended,00000001
+
+[Chain Mail]
+patch=1,EE,003212FA,extended,00000001
+
+[Plate Mail]
+patch=1,EE,003212FB,extended,00000001
+
+[Fisherman Vest]
+patch=1,EE,003212FC,extended,00000001
+
+[Dress Armor]
+patch=1,EE,003212FD,extended,00000001
+
+[Metal Bustier]
+patch=1,EE,003212FE,extended,00000001
+
+[Viking Guard]
+patch=1,EE,003212FF,extended,00000001
+
+[Cloth Armor]
+patch=1,EE,00321300,extended,00000001
+
+[Hunter Coat]
+patch=1,EE,00321301,extended,00000001
+
+[Leather Plate]
+patch=1,EE,00321302,extended,00000001
+
+[Metal Plate]
+patch=1,EE,00321303,extended,00000001
+
+[Apprentice Robe]
+patch=1,EE,00321304,extended,00000001
+
+[Fighting Robe]
+patch=1,EE,00321305,extended,00000001
+
+[Exorcist Robe]
+patch=1,EE,00321306,extended,00000001
+
+[Holy Robe]
+patch=1,EE,00321307,extended,00000001
+
+[Bandit Mail]
+patch=1,EE,00321308,extended,00000001
+
+[Bronzze Armor]
+patch=1,EE,00321309,extended,00000001
+
+[Troll Armor]
+patch=1,EE,0032130A,extended,00000001
+
+[Rune Armor]
+patch=1,EE,0032130B,extended,00000001
+
+[Each Visge]
+patch=1,EE,00321312,extended,00000001
+
+[Vivian]
+patch=1,EE,00321313,extended,00000001
+
+[Golem]
+patch=1,EE,00321314,extended,00000001
+
+[Shoggoth]
+patch=1,EE,00321315,extended,00000001
+
+[Balrog]
+patch=1,EE,00321316,extended,00000001
+
+[Mumakeem]
+patch=1,EE,00321317,extended,00000001
+
+[Raum Lugh]
+patch=1,EE,00321318,extended,00000001
+
+[Lindwurm]
+patch=1,EE,00321319,extended,00000001

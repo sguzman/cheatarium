@@ -1,0 +1,3892 @@
+gametitle=Monster Rancher-EVO (SLUS-21330)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90312A98,extended,00832021
+
+[Infinite Gold]
+patch=1,EE,1051B360,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,2051B360,extended,05F5E0FF
+
+[Have All Property]
+patch=1,EE,1051B832,extended,00006363
+patch=1,EE,4051B834,extended,01F30001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051C000,extended,00006363
+
+[Have All Book]
+patch=1,EE,4051C668,extended,00080001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[January]
+patch=1,EE,0051B11C,extended,00000001
+
+[February]
+patch=1,EE,0051B11C,extended,00000002
+
+[March]
+patch=1,EE,0051B11C,extended,00000003
+
+[April]
+patch=1,EE,0051B11C,extended,00000004
+
+[May]
+patch=1,EE,0051B11C,extended,00000005
+
+[June]
+patch=1,EE,0051B11C,extended,00000006
+
+[July]
+patch=1,EE,0051B11C,extended,00000007
+
+[August]
+patch=1,EE,0051B11C,extended,00000008
+
+[September]
+patch=1,EE,0051B11C,extended,00000009
+
+[October]
+patch=1,EE,0051B11C,extended,0000000A
+
+[November]
+patch=1,EE,0051B11C,extended,0000000B
+
+[December]
+patch=1,EE,0051B11C,extended,0000000C
+
+[Max Bonding]
+patch=1,EE,1051C800,extended,00006464
+
+[Never Tired]
+patch=1,EE,0051C802,extended,00000000
+
+[Max Pow]
+patch=1,EE,1051C80E,extended,0000270F
+
+[Max Int]
+patch=1,EE,1051C810,extended,0000270F
+
+[Max Spd]
+patch=1,EE,1051C812,extended,0000270F
+
+[Max Acc]
+patch=1,EE,1051C814,extended,0000270F
+
+[Max Def]
+patch=1,EE,1051C816,extended,0000270F
+
+[Max Life]
+patch=1,EE,1051C818,extended,0000270F
+
+[Max AP]
+patch=1,EE,2051C8AC,extended,0000270F
+
+[Max Bonding]
+patch=1,EE,1051C9E4,extended,00006464
+
+[Never Tired]
+patch=1,EE,0051C9E6,extended,00000000
+
+[Max Pow]
+patch=1,EE,1051C9F2,extended,0000270F
+
+[Max Int]
+patch=1,EE,1051C9F4,extended,0000270F
+
+[Max Spd]
+patch=1,EE,1051C9F6,extended,0000270F
+
+[Max Acc]
+patch=1,EE,1051C9F8,extended,0000270F
+
+[Max Def]
+patch=1,EE,1051C9FA,extended,0000270F
+
+[Max Life]
+patch=1,EE,1051C9FC,extended,0000270F
+
+[Max AP]
+patch=1,EE,2051CA90,extended,0000270F
+
+[Max Bonding]
+patch=1,EE,1051CBC8,extended,00006464
+
+[Never Tired]
+patch=1,EE,0051CBCA,extended,00000000
+
+[Max Pow]
+patch=1,EE,1051CBD6,extended,0000270F
+
+[Max Int]
+patch=1,EE,1051CBD8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,1051CBDA,extended,0000270F
+
+[Max Acc]
+patch=1,EE,1051CBDC,extended,0000270F
+
+[Max Def]
+patch=1,EE,1051CBDE,extended,0000270F
+
+[Max Life]
+patch=1,EE,1051CBE0,extended,0000270F
+
+[Max AP]
+patch=1,EE,2051CC74,extended,0000270F
+
+[Max Bonding]
+patch=1,EE,1051CDAC,extended,00006464
+
+[Never Tired]
+patch=1,EE,0051CDAE,extended,00000000
+
+[Max Pow]
+patch=1,EE,1051CDBA,extended,0000270F
+
+[Max Int]
+patch=1,EE,1051CDBC,extended,0000270F
+
+[Max Spd]
+patch=1,EE,1051CDBE,extended,0000270F
+
+[Max Acc]
+patch=1,EE,1051CDC0,extended,0000270F
+
+[Max Def]
+patch=1,EE,1051CDC2,extended,0000270F
+
+[Max Life]
+patch=1,EE,1051CDC4,extended,0000270F
+
+[Max AP]
+patch=1,EE,2051CE58,extended,0000270F
+
+[Max Bonding]
+patch=1,EE,1051CF90,extended,00006464
+
+[Never Tired]
+patch=1,EE,0051CF92,extended,00000000
+
+[Max Pow]
+patch=1,EE,1051CF9E,extended,0000270F
+
+[Max Int]
+patch=1,EE,1051CFA0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,1051CFA2,extended,0000270F
+
+[Max Acc]
+patch=1,EE,1051CFA4,extended,0000270F
+
+[Max Def]
+patch=1,EE,1051CFA6,extended,0000270F
+
+[MaxLife]
+patch=1,EE,1051CFA8,extended,0000270F
+
+[Max AP]
+patch=1,EE,2051D03C,extended,0000270F
+
+[Flower Lv-1]
+patch=1,EE,0051B832,extended,00000063
+
+[Flower Lv-2]
+patch=1,EE,0051B833,extended,00000063
+
+[Flower Lv-3]
+patch=1,EE,0051B834,extended,00000063
+
+[Flower Lv-4]
+patch=1,EE,0051B835,extended,00000063
+
+[Nut Lv-1]
+patch=1,EE,0051B836,extended,00000063
+
+[Nut Lv-2]
+patch=1,EE,0051B837,extended,00000063
+
+[Nut Lv-3]
+patch=1,EE,0051B838,extended,00000063
+
+[Nut Lv-4]
+patch=1,EE,0051B839,extended,00000063
+
+[Branch Lv-1]
+patch=1,EE,0051B83A,extended,00000063
+
+[Branch Lv-2]
+patch=1,EE,0051B83B,extended,00000063
+
+[Branch Lv-3]
+patch=1,EE,0051B83C,extended,00000063
+
+[Branch Lv-4]
+patch=1,EE,0051B83D,extended,00000063
+
+[Meat Lv-1]
+patch=1,EE,0051B83E,extended,00000063
+
+[Meat Lv-2]
+patch=1,EE,0051B83F,extended,00000063
+
+[Meat Lv-3]
+patch=1,EE,0051B840,extended,00000063
+
+[Meat Lv-4]
+patch=1,EE,0051B841,extended,00000063
+
+[Fish Lv-1]
+patch=1,EE,0051B842,extended,00000063
+
+[Fish Lv-2]
+patch=1,EE,0051B843,extended,00000063
+
+[Fish Lv-3]
+patch=1,EE,0051B844,extended,00000063
+
+[Fish Lv-4]
+patch=1,EE,0051B845,extended,00000063
+
+[Fruit Lv-1]
+patch=1,EE,0051B846,extended,00000063
+
+[Fruit Lv-2]
+patch=1,EE,0051B847,extended,00000063
+
+[Fruit Lv-3]
+patch=1,EE,0051B848,extended,00000063
+
+[Fruit Lv-4]
+patch=1,EE,0051B849,extended,00000063
+
+[Clam Lv-1]
+patch=1,EE,0051B84A,extended,00000063
+
+[Clam Lv-2]
+patch=1,EE,0051B84B,extended,00000063
+
+[Clam Lv-3]
+patch=1,EE,0051B84C,extended,00000063
+
+[Clam Lv-4]
+patch=1,EE,0051B84D,extended,00000063
+
+[Fossil Lv-1]
+patch=1,EE,0051B84E,extended,00000063
+
+[Fossil Lv-2]
+patch=1,EE,0051B84F,extended,00000063
+
+[Fossil Lv-3]
+patch=1,EE,0051B850,extended,00000063
+
+[Fossil Lv-4]
+patch=1,EE,0051B851,extended,00000063
+
+[Feather Lv-1]
+patch=1,EE,0051B852,extended,00000063
+
+[Feather Lv-2]
+patch=1,EE,0051B853,extended,00000063
+
+[Feather Lv-3]
+patch=1,EE,0051B854,extended,00000063
+
+[Feather Lv-4]
+patch=1,EE,0051B855,extended,00000063
+
+[Horn Lv-1]
+patch=1,EE,0051B856,extended,00000063
+
+[Horn Lv-2]
+patch=1,EE,0051B857,extended,00000063
+
+[Horn Lv-3]
+patch=1,EE,0051B858,extended,00000063
+
+[Horn Lv-4]
+patch=1,EE,0051B859,extended,00000063
+
+[Fur Lv-1]
+patch=1,EE,0051B85A,extended,00000063
+
+[Fur Lv-2]
+patch=1,EE,0051B85B,extended,00000063
+
+[Fur Lv-3]
+patch=1,EE,0051B85C,extended,00000063
+
+[Fur Lv-4]
+patch=1,EE,0051B85D,extended,00000063
+
+[Insect Lv-1]
+patch=1,EE,0051B85E,extended,00000063
+
+[Insect Lv-2]
+patch=1,EE,0051B85F,extended,00000063
+
+[Insect Lv-3]
+patch=1,EE,0051B860,extended,00000063
+
+[Insect Lv-4]
+patch=1,EE,0051B861,extended,00000063
+
+[Water Lv-1]
+patch=1,EE,0051B862,extended,00000063
+
+[Water Lv-2]
+patch=1,EE,0051B863,extended,00000063
+
+[Water Lv-3]
+patch=1,EE,0051B864,extended,00000063
+
+[Water Lv-4]
+patch=1,EE,0051B865,extended,00000063
+
+[Liquid Lv-1]
+patch=1,EE,0051B866,extended,00000063
+
+[Liquid Lv-2]
+patch=1,EE,0051B867,extended,00000063
+
+[Liquid Lv-3]
+patch=1,EE,0051B868,extended,00000063
+
+[Liquid Lv-4]
+patch=1,EE,0051B869,extended,00000063
+
+[Gas Lv-1]
+patch=1,EE,0051B86A,extended,00000063
+
+[Gas Lv-2]
+patch=1,EE,0051B86B,extended,00000063
+
+[Gas Lv-3]
+patch=1,EE,0051B86C,extended,00000063
+
+[Gas Lv-4]
+patch=1,EE,0051B86D,extended,00000063
+
+[Clay Lv-1]
+patch=1,EE,0051B86E,extended,00000063
+
+[Clay Lv-2]
+patch=1,EE,0051B86F,extended,00000063
+
+[Clay Lv-3]
+patch=1,EE,0051B870,extended,00000063
+
+[Clay Lv-4]
+patch=1,EE,0051B871,extended,00000063
+
+[Stone Lv-1]
+patch=1,EE,0051B872,extended,00000063
+
+[Stone Lv-2]
+patch=1,EE,0051B873,extended,00000063
+
+[Stone Lv-3]
+patch=1,EE,0051B874,extended,00000063
+
+[Stone Lv-4]
+patch=1,EE,0051B875,extended,00000063
+
+[Ore Lv-1]
+patch=1,EE,0051B876,extended,00000063
+
+[Ore Lv-2]
+patch=1,EE,0051B877,extended,00000063
+
+[Ore Lv-3]
+patch=1,EE,0051B878,extended,00000063
+
+[Ore Lv-4]
+patch=1,EE,0051B879,extended,00000063
+
+[Gem Lv-1]
+patch=1,EE,0051B87A,extended,00000063
+
+[Gem Lv-2]
+patch=1,EE,0051B87B,extended,00000063
+
+[Gem Lv-3]
+patch=1,EE,0051B87C,extended,00000063
+
+[Gem Lv-4]
+patch=1,EE,0051B87D,extended,00000063
+
+[Orb Lv-1]
+patch=1,EE,0051B87E,extended,00000063
+
+[Orb Lv-2]
+patch=1,EE,0051B87F,extended,00000063
+
+[Orb Lv-3]
+patch=1,EE,0051B880,extended,00000063
+
+[Orb Lv-4]
+patch=1,EE,0051B881,extended,00000063
+
+[Spirit Lv-1]
+patch=1,EE,0051B882,extended,00000063
+
+[Spirit Lv-2]
+patch=1,EE,0051B883,extended,00000063
+
+[Spirit Lv-3]
+patch=1,EE,0051B884,extended,00000063
+
+[Spirit Lv-4]
+patch=1,EE,0051B885,extended,00000063
+
+[Tablet Lv-1]
+patch=1,EE,0051B886,extended,00000063
+
+[Tablet Lv-2]
+patch=1,EE,0051B887,extended,00000063
+
+[Tablet Lv-3]
+patch=1,EE,0051B888,extended,00000063
+
+[Tablet Lv-4]
+patch=1,EE,0051B889,extended,00000063
+
+[Metal Lv-1]
+patch=1,EE,0051B88A,extended,00000063
+
+[Metal Lv-2]
+patch=1,EE,0051B88B,extended,00000063
+
+[Metal Lv-3]
+patch=1,EE,0051B88C,extended,00000063
+
+[Metal Lv-4]
+patch=1,EE,0051B88D,extended,00000063
+
+[Element Lv-1]
+patch=1,EE,0051B88E,extended,00000063
+
+[Element Lv-2]
+patch=1,EE,0051B88F,extended,00000063
+
+[Element Lv-3]
+patch=1,EE,0051B890,extended,00000063
+
+[Element Lv-4]
+patch=1,EE,0051B891,extended,00000063
+
+[Anc. Relic S]
+patch=1,EE,0051B892,extended,00000063
+
+[Anc. Relic M]
+patch=1,EE,0051B893,extended,00000063
+
+[Anc. Relic L]
+patch=1,EE,0051B894,extended,00000063
+
+[Anc. Relic Sp]
+patch=1,EE,0051B895,extended,00000063
+
+[All Materials]
+patch=1,EE,1051B832,extended,00006363
+patch=1,EE,4051B834,extended,00180001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051B894,extended,00006363
+
+[Juggling Kit]
+patch=1,EE,0051B896,extended,00000063
+
+[Swing Kit]
+patch=1,EE,0051B897,extended,00000063
+
+[Box Kit]
+patch=1,EE,0051B898,extended,00000063
+
+[Baku Kit]
+patch=1,EE,0051B899,extended,00000063
+
+[Balance Kit]
+patch=1,EE,0051B89A,extended,00000063
+
+[Cannon Kit]
+patch=1,EE,0051B89B,extended,00000063
+
+[Drum Kit]
+patch=1,EE,0051B89C,extended,00000063
+
+[Wheel Kit]
+patch=1,EE,0051B89D,extended,00000063
+
+[Trampo. Kit]
+patch=1,EE,0051B89E,extended,00000063
+
+[Knife Kit]
+patch=1,EE,0051B89F,extended,00000063
+
+[Plate Kit]
+patch=1,EE,0051B8A0,extended,00000063
+
+[Prop. Kit]
+patch=1,EE,0051B8A1,extended,00000063
+
+[Sword Kit]
+patch=1,EE,0051B8A2,extended,00000063
+
+[Coropen Kit]
+patch=1,EE,0051B8A3,extended,00000063
+
+[Water Kit]
+patch=1,EE,0051B8A4,extended,00000063
+
+[Bamboo Kit]
+patch=1,EE,0051B8A5,extended,00000063
+
+[Pipe Kit]
+patch=1,EE,0051B8A6,extended,00000063
+
+[Bell Kit]
+patch=1,EE,0051B8A7,extended,00000063
+
+[Barrel Kit]
+patch=1,EE,0051B8A8,extended,00000063
+
+[Gyro Kit]
+patch=1,EE,0051B8A9,extended,00000063
+
+[All Gadget Parts]
+patch=1,EE,1051B896,extended,00006363
+patch=1,EE,4051B898,extended,00040001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051B8A8,extended,00006363
+
+[Strobe Parts]
+patch=1,EE,0051B8AA,extended,00000063
+
+[Strobe P. 2]
+patch=1,EE,0051B8AB,extended,00000063
+
+[Beam Parts]
+patch=1,EE,0051B8AC,extended,00000063
+
+[Beam Parts 2]
+patch=1,EE,0051B8AD,extended,00000063
+
+[Laser Parts]
+patch=1,EE,0051B8AE,extended,00000063
+
+[Laser P. 2]
+patch=1,EE,0051B8AF,extended,00000063
+
+[Light Parts]
+patch=1,EE,0051B8B0,extended,00000063
+
+[Light P. 2]
+patch=1,EE,0051B8B1,extended,00000063
+
+[Shake Parts]
+patch=1,EE,0051B8B2,extended,00000063
+
+[Ball Parts]
+patch=1,EE,0051B8B3,extended,00000063
+
+[Photo Light P.]
+patch=1,EE,0051B8B4,extended,00000063
+
+[Flare Parts]
+patch=1,EE,0051B8B5,extended,00000063
+
+[Dyna Parts]
+patch=1,EE,0051B8B6,extended,00000063
+
+[Perm Parts]
+patch=1,EE,0051B8B7,extended,00000063
+
+[Star Parts]
+patch=1,EE,0051B8B8,extended,00000063
+
+[Globe Parts]
+patch=1,EE,0051B8B9,extended,00000063
+
+[Ice Parts]
+patch=1,EE,0051B8BA,extended,00000063
+
+[Smoke Parts]
+patch=1,EE,0051B8BB,extended,00000063
+
+[Bomb Parts]
+patch=1,EE,0051B8BC,extended,00000063
+
+[Pupl Parts]
+patch=1,EE,0051B8BD,extended,00000063
+
+[Flower Parts]
+patch=1,EE,0051B8BE,extended,00000063
+
+[Rose Parts]
+patch=1,EE,0051B8BF,extended,00000063
+
+[Snow Parts]
+patch=1,EE,0051B8C0,extended,00000063
+
+[Dryad Parts]
+patch=1,EE,0051B8C1,extended,00000063
+
+[Sound Parts]
+patch=1,EE,0051B8C2,extended,00000063
+
+[Soap Parts]
+patch=1,EE,0051B8C3,extended,00000063
+
+[Balloon P.]
+patch=1,EE,0051B8C4,extended,00000063
+
+[Whisp Parts]
+patch=1,EE,0051B8C5,extended,00000063
+
+[Bubble Parts]
+patch=1,EE,0051B8C6,extended,00000063
+
+[Wind Parts]
+patch=1,EE,0051B8C7,extended,00000063
+
+[Ring Parts]
+patch=1,EE,0051B8C8,extended,00000063
+
+[Tornado P.]
+patch=1,EE,0051B8C9,extended,00000063
+
+[All Props]
+patch=1,EE,1051B8AA,extended,00006363
+patch=1,EE,4051B8AC,extended,00070001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051B8C8,extended,00006363
+
+[Pow. Tank S]
+patch=1,EE,0051B8CA,extended,00000063
+
+[Pow. Tank M]
+patch=1,EE,0051B8CB,extended,00000063
+
+[Pow. Tank L]
+patch=1,EE,0051B8CC,extended,00000063
+
+[Int. Tank S]
+patch=1,EE,0051B8CD,extended,00000063
+
+[Int. Tank M]
+patch=1,EE,0051B8CE,extended,00000063
+
+[Int. Tank L]
+patch=1,EE,0051B8CF,extended,00000063
+
+[Def. Tank S]
+patch=1,EE,0051B8D0,extended,00000063
+
+[Def. Tank M]
+patch=1,EE,0051B8D1,extended,00000063
+
+[Def. Tank L]
+patch=1,EE,0051B8D2,extended,00000063
+
+[Lif. Tank S]
+patch=1,EE,0051B8D3,extended,00000063
+
+[Lif. Tank M]
+patch=1,EE,0051B8D4,extended,00000063
+
+[Lif. Tank L]
+patch=1,EE,0051B8D5,extended,00000063
+
+[Acc. Tank S]
+patch=1,EE,0051B8D6,extended,00000063
+
+[Acc. Tank M]
+patch=1,EE,0051B8D7,extended,00000063
+
+[Acc. Tank L]
+patch=1,EE,0051B8D8,extended,00000063
+
+[Spd. Tank S]
+patch=1,EE,0051B8D9,extended,00000063
+
+[Spd. Tank M]
+patch=1,EE,0051B8DA,extended,00000063
+
+[Spd. Tank L]
+patch=1,EE,0051B8DB,extended,00000063
+
+[Might Tank S]
+patch=1,EE,0051B8DC,extended,00000063
+
+[Might Tank M]
+patch=1,EE,0051B8DD,extended,00000063
+
+[Might Tank L]
+patch=1,EE,0051B8DE,extended,00000063
+
+[Tech. Tank S]
+patch=1,EE,0051B8DF,extended,00000063
+
+[Tech. Tank M]
+patch=1,EE,0051B8E0,extended,00000063
+
+[Tech. Tank L]
+patch=1,EE,0051B8E1,extended,00000063
+
+[Mach Tank S]
+patch=1,EE,0051B8E2,extended,00000063
+
+[Mach Tank M]
+patch=1,EE,0051B8E3,extended,00000063
+
+[Mach Tank L]
+patch=1,EE,0051B8E4,extended,00000063
+
+[Champ Tank S]
+patch=1,EE,0051B8E5,extended,00000063
+
+[Champ Tank M]
+patch=1,EE,0051B8E6,extended,00000063
+
+[Champ Tank L]
+patch=1,EE,0051B8E7,extended,00000063
+
+[Genius Tank S]
+patch=1,EE,0051B8E8,extended,00000063
+
+[Genius Tank M]
+patch=1,EE,0051B8E9,extended,00000063
+
+[Genius Tank L]
+patch=1,EE,0051B8EA,extended,00000063
+
+[All Geonyte Tanks]
+patch=1,EE,1051B8CA,extended,00006363
+patch=1,EE,4051B8CC,extended,00070001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051B8E8,extended,00006363
+patch=1,EE,0051B8EA,extended,00000063
+
+[Meat Dish Lv-1]
+patch=1,EE,0051B8EB,extended,00000063
+
+[Meat Dish Lv-2]
+patch=1,EE,0051B8EC,extended,00000063
+
+[Meat Dish Lv-3]
+patch=1,EE,0051B8ED,extended,00000063
+
+[Meat Dish Lv-4]
+patch=1,EE,0051B8EE,extended,00000063
+
+[Fish Dish Lv-1]
+patch=1,EE,0051B8EF,extended,00000063
+
+[Fish Dish Lv-2]
+patch=1,EE,0051B8F0,extended,00000063
+
+[Fish Dish Lv-3]
+patch=1,EE,0051B8F1,extended,00000063
+
+[Fish Dish Lv-4]
+patch=1,EE,0051B8F2,extended,00000063
+
+[Veg. Dish Lv-1]
+patch=1,EE,0051B8F3,extended,00000063
+
+[Veg. Dish Lv-2]
+patch=1,EE,0051B8F4,extended,00000063
+
+[Veg. Dish Lv-3]
+patch=1,EE,0051B8F5,extended,00000063
+
+[Veg. Dish Lv-4]
+patch=1,EE,0051B8F6,extended,00000063
+
+[Fru. Dish Lv-1]
+patch=1,EE,0051B8F7,extended,00000063
+
+[Fru. Dish Lv-2]
+patch=1,EE,0051B8F8,extended,00000063
+
+[Fru. Dish Lv-3]
+patch=1,EE,0051B8F9,extended,00000063
+
+[Fru. Dish Lv-4]
+patch=1,EE,0051B8FA,extended,00000063
+
+[Cake Lv-1]
+patch=1,EE,0051B8FB,extended,00000063
+
+[Cake Lv-2]
+patch=1,EE,0051B8FC,extended,00000063
+
+[Cake Lv-3]
+patch=1,EE,0051B8FD,extended,00000063
+
+[Cake Lv-4]
+patch=1,EE,0051B8FE,extended,00000063
+
+[Soup Lv-1]
+patch=1,EE,0051B8FF,extended,00000063
+
+[Soup Lv-2]
+patch=1,EE,0051B900,extended,00000063
+
+[Soup Lv-3]
+patch=1,EE,0051B901,extended,00000063
+
+[Soup Lv-4]
+patch=1,EE,0051B902,extended,00000063
+
+[Supple. Lv-1]
+patch=1,EE,0051B903,extended,00000063
+
+[Supple. Lv-2]
+patch=1,EE,0051B904,extended,00000063
+
+[Supple. Lv-3]
+patch=1,EE,0051B905,extended,00000063
+
+[Supple. Lv-4]
+patch=1,EE,0051B906,extended,00000063
+
+[Ethnic Lv-1]
+patch=1,EE,0051B907,extended,00000063
+
+[Ethnic Lv-2]
+patch=1,EE,0051B908,extended,00000063
+
+[Ethnic Lv-3]
+patch=1,EE,0051B909,extended,00000063
+
+[Ethnic Lv-4]
+patch=1,EE,0051B90A,extended,00000063
+
+[All Consumables]
+patch=1,EE,0051B8EB,extended,00000063
+patch=1,EE,4051B8EC,extended,00070001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051B908,extended,00006363
+patch=1,EE,0051B90A,extended,00000063
+
+[Object Lv-1]
+patch=1,EE,0051B90B,extended,00000063
+
+[Object Lv-2]
+patch=1,EE,0051B90C,extended,00000063
+
+[Object Lv-3]
+patch=1,EE,0051B90D,extended,00000063
+
+[Object Lv-4]
+patch=1,EE,0051B90E,extended,00000063
+
+[Ingot Lv-1]
+patch=1,EE,0051B90F,extended,00000063
+
+[Ingot Lv-2]
+patch=1,EE,0051B910,extended,00000063
+
+[Ingot Lv-3]
+patch=1,EE,0051B911,extended,00000063
+
+[Ingot Lv-4]
+patch=1,EE,0051B912,extended,00000063
+
+[Jewel Lv-1]
+patch=1,EE,0051B913,extended,00000063
+
+[Jewel Lv-2]
+patch=1,EE,0051B914,extended,00000063
+
+[Jewel Lv-3]
+patch=1,EE,0051B915,extended,00000063
+
+[Jewel Lv-4]
+patch=1,EE,0051B916,extended,00000063
+
+[Book Lv-1]
+patch=1,EE,0051B917,extended,00000063
+
+[Book Lv-2]
+patch=1,EE,0051B918,extended,00000063
+
+[Book Lv-3]
+patch=1,EE,0051B919,extended,00000063
+
+[Book Lv-4]
+patch=1,EE,0051B91A,extended,00000063
+
+[Toy Lv-1]
+patch=1,EE,0051B91B,extended,00000063
+
+[Toy Lv-2]
+patch=1,EE,0051B91C,extended,00000063
+
+[Toy Lv-3]
+patch=1,EE,0051B91D,extended,00000063
+
+[Toy Lv-4]
+patch=1,EE,0051B91E,extended,00000063
+
+[Craft Lv-1]
+patch=1,EE,0051B91F,extended,00000063
+
+[Craft Lv-2]
+patch=1,EE,0051B920,extended,00000063
+
+[Craft Lv-3]
+patch=1,EE,0051B921,extended,00000063
+
+[Craft Lv-4]
+patch=1,EE,0051B922,extended,00000063
+
+[Goods Lv-1]
+patch=1,EE,0051B923,extended,00000063
+
+[Goods Lv-2]
+patch=1,EE,0051B924,extended,00000063
+
+[Goods Lv-3]
+patch=1,EE,0051B925,extended,00000063
+
+[Goods Lv-4]
+patch=1,EE,0051B926,extended,00000063
+
+[Barbell Lv-1]
+patch=1,EE,0051B927,extended,00000063
+
+[Barbell Lv-2]
+patch=1,EE,0051B928,extended,00000063
+
+[Barbell Lv-3]
+patch=1,EE,0051B929,extended,00000063
+
+[Barbell Lv-4]
+patch=1,EE,0051B92A,extended,00000063
+
+[All Treats]
+patch=1,EE,0051B90B,extended,00000063
+patch=1,EE,4051B90C,extended,00070001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051B928,extended,00006363
+patch=1,EE,0051B92A,extended,00000063
+
+[Trokatin]
+patch=1,EE,0051B92B,extended,00000063
+
+[Troka Ace]
+patch=1,EE,0051B92C,extended,00000063
+
+[Troka Star]
+patch=1,EE,0051B92D,extended,00000063
+
+[Troka Royal]
+patch=1,EE,0051B92E,extended,00000063
+
+[Larox]
+patch=1,EE,0051B92F,extended,00000063
+
+[Laro Gold]
+patch=1,EE,0051B930,extended,00000063
+
+[Laro Great]
+patch=1,EE,0051B931,extended,00000063
+
+[Laro Special]
+patch=1,EE,0051B932,extended,00000063
+
+[All Medicines]
+patch=1,EE,0051B92B,extended,00000063
+patch=1,EE,2051B92C,extended,63636363
+patch=1,EE,1051B930,extended,00006363
+patch=1,EE,0051B932,extended,00000063
+
+[Sunshine Gem]
+patch=1,EE,0051B933,extended,00000063
+
+[Moon Gem]
+patch=1,EE,0051B934,extended,00000063
+
+[Star Gem]
+patch=1,EE,0051B935,extended,00000063
+
+[Thunder Gem]
+patch=1,EE,0051B936,extended,00000063
+
+[Wind Gem]
+patch=1,EE,0051B937,extended,00000063
+
+[Warrior Gem]
+patch=1,EE,0051B938,extended,00000063
+
+[Dragon Gem]
+patch=1,EE,0051B939,extended,00000063
+
+[Ruby Bracelet]
+patch=1,EE,0051B93A,extended,00000063
+
+[All Consumables]
+patch=1,EE,0051B933,extended,00000063
+patch=1,EE,2051B934,extended,63636363
+patch=1,EE,1051B938,extended,00006363
+patch=1,EE,0051B93A,extended,00000063
+
+[Lucky Badge]
+patch=1,EE,0051B93B,extended,00000063
+
+[Clean Badge]
+patch=1,EE,0051B93C,extended,00000063
+
+[Magician Badge]
+patch=1,EE,0051B93D,extended,00000063
+
+[Warrior Badge]
+patch=1,EE,0051B93E,extended,00000063
+
+[Calm Badge]
+patch=1,EE,0051B93F,extended,00000063
+
+[Fighter Badge]
+patch=1,EE,0051B940,extended,00000063
+
+[F. Pow. Badge]
+patch=1,EE,0051B941,extended,00000063
+
+[Stun Badge]
+patch=1,EE,0051B942,extended,00000063
+
+[Sniper Badge]
+patch=1,EE,0051B943,extended,00000063
+
+[Shot Badge]
+patch=1,EE,0051B944,extended,00000063
+
+[Shock Badge]
+patch=1,EE,0051B945,extended,00000063
+
+[Support Badge]
+patch=1,EE,0051B946,extended,00000063
+
+[Maxim. Badge]
+patch=1,EE,0051B947,extended,00000063
+
+[Heat Badge]
+patch=1,EE,0051B948,extended,00000063
+
+[Hard Badge]
+patch=1,EE,0051B949,extended,00000063
+
+[Heart Badge]
+patch=1,EE,0051B94A,extended,00000063
+
+[Powful Badge]
+patch=1,EE,0051B94B,extended,00000063
+
+[Intel. Badge]
+patch=1,EE,0051B94C,extended,00000063
+
+[Caution Badge]
+patch=1,EE,0051B94D,extended,00000063
+
+[Tough Badge]
+patch=1,EE,0051B94E,extended,00000063
+
+[Sense Badge]
+patch=1,EE,0051B94F,extended,00000063
+
+[Strong Badge]
+patch=1,EE,0051B950,extended,00000063
+
+[Sight Badge]
+patch=1,EE,0051B951,extended,00000063
+
+[Insight Badge]
+patch=1,EE,0051B952,extended,00000063
+
+[Ent. Badge]
+patch=1,EE,0051B953,extended,00000063
+
+[Push Badge]
+patch=1,EE,0051B954,extended,00000063
+
+[Force Badge]
+patch=1,EE,0051B955,extended,00000063
+
+[Morale Badge]
+patch=1,EE,0051B956,extended,00000063
+
+[Leader Badge]
+patch=1,EE,0051B957,extended,00000063
+
+[Team Badge]
+patch=1,EE,0051B958,extended,00000063
+
+[Guts Badge]
+patch=1,EE,0051B959,extended,00000063
+
+[Speed Badge]
+patch=1,EE,0051B95A,extended,00000063
+
+[Livery Badge]
+patch=1,EE,0051B95B,extended,00000063
+
+[Fire Badge]
+patch=1,EE,0051B95C,extended,00000063
+
+[Water Badge]
+patch=1,EE,0051B95D,extended,00000063
+
+[Wind Badge]
+patch=1,EE,0051B95E,extended,00000063
+
+[Earth Badge]
+patch=1,EE,0051B95F,extended,00000063
+
+[Mettle Badge]
+patch=1,EE,0051B960,extended,00000063
+
+[Pene. Badge]
+patch=1,EE,0051B961,extended,00000063
+
+[Horn Badge]
+patch=1,EE,0051B962,extended,00000063
+
+[Easy Badge]
+patch=1,EE,0051B963,extended,00000063
+
+[Scale Badge]
+patch=1,EE,0051B964,extended,00000063
+
+[Knight Badge]
+patch=1,EE,0051B965,extended,00000063
+
+[Burn Badge]
+patch=1,EE,0051B966,extended,00000063
+
+[Soft Badge]
+patch=1,EE,0051B967,extended,00000063
+
+[Dark Badge]
+patch=1,EE,0051B968,extended,00000063
+
+[Stone Badge]
+patch=1,EE,0051B969,extended,00000063
+
+[Care Badge]
+patch=1,EE,0051B96A,extended,00000063
+
+[Mech Badge]
+patch=1,EE,0051B96B,extended,00000063
+
+[Aura Badge]
+patch=1,EE,0051B96C,extended,00000063
+
+[Will Badge]
+patch=1,EE,0051B96D,extended,00000063
+
+[Skin Badge]
+patch=1,EE,0051B96E,extended,00000063
+
+[Lazy Badge]
+patch=1,EE,0051B96F,extended,00000063
+
+[Airy Badge]
+patch=1,EE,0051B970,extended,00000063
+
+[Leaf Badge]
+patch=1,EE,0051B971,extended,00000063
+
+[Light Badge]
+patch=1,EE,0051B972,extended,00000063
+
+[Flower Badge]
+patch=1,EE,0051B973,extended,00000063
+
+[Wolf Badge]
+patch=1,EE,0051B974,extended,00000063
+
+[Sea Badge]
+patch=1,EE,0051B975,extended,00000063
+
+[Cool Badge]
+patch=1,EE,0051B976,extended,00000063
+
+[Fairy Badge]
+patch=1,EE,0051B977,extended,00000063
+
+[Ice Badge]
+patch=1,EE,0051B978,extended,00000063
+
+[Shine Badge]
+patch=1,EE,0051B979,extended,00000063
+
+[Fool Badge]
+patch=1,EE,0051B97A,extended,00000063
+
+[All Combined]
+patch=1,EE,0051B93B,extended,00000063
+patch=1,EE,4051B93C,extended,000F0001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1051B978,extended,00006363
+patch=1,EE,0051B97A,extended,00000063
+
+[Bromide 01]
+patch=1,EE,0051B97B,extended,00000063
+
+[Bromide 02]
+patch=1,EE,0051B97C,extended,00000063
+
+[Bromide 03]
+patch=1,EE,0051B97D,extended,00000063
+
+[Bromide 04]
+patch=1,EE,0051B97E,extended,00000063
+
+[Bromide 05]
+patch=1,EE,0051B97F,extended,00000063
+
+[Bromide 06]
+patch=1,EE,0051B980,extended,00000063
+
+[Bromide 07]
+patch=1,EE,0051B981,extended,00000063
+
+[Bromide 08]
+patch=1,EE,0051B982,extended,00000063
+
+[Bromide 09]
+patch=1,EE,0051B983,extended,00000063
+
+[Bromide 10]
+patch=1,EE,0051B984,extended,00000063
+
+[Bromide 11]
+patch=1,EE,0051B985,extended,00000063
+
+[Bromide 12]
+patch=1,EE,0051B986,extended,00000063
+
+[Bromide 13]
+patch=1,EE,0051B987,extended,00000063
+
+[Bromide 14]
+patch=1,EE,0051B988,extended,00000063
+
+[Bromide 15]
+patch=1,EE,0051B989,extended,00000063
+
+[Bromide 16]
+patch=1,EE,0051B98A,extended,00000063
+
+[Bromide 17]
+patch=1,EE,0051B98B,extended,00000063
+
+[Bromide 18]
+patch=1,EE,0051B98C,extended,00000063
+
+[Bromide 19]
+patch=1,EE,0051B98D,extended,00000063
+
+[Bromide 20]
+patch=1,EE,0051B98E,extended,00000063
+
+[Bromide 21]
+patch=1,EE,0051B98F,extended,00000063
+
+[Bromide 22]
+patch=1,EE,0051B990,extended,00000063
+
+[Bromide 23]
+patch=1,EE,0051B991,extended,00000063
+
+[Bromide 24]
+patch=1,EE,0051B992,extended,00000063
+
+[Bromide 25]
+patch=1,EE,0051B993,extended,00000063
+
+[Bromide 26]
+patch=1,EE,0051B994,extended,00000063
+
+[Bromide 27]
+patch=1,EE,0051B995,extended,00000063
+
+[Bromide 28]
+patch=1,EE,0051B996,extended,00000063
+
+[Bromide 29]
+patch=1,EE,0051B997,extended,00000063
+
+[Bromide 30]
+patch=1,EE,0051B998,extended,00000063
+
+[Bromide 31]
+patch=1,EE,0051B999,extended,00000063
+
+[Bromide 32]
+patch=1,EE,0051B99A,extended,00000063
+
+[Bromide 33]
+patch=1,EE,0051B99B,extended,00000063
+
+[Bromide 34]
+patch=1,EE,0051B99C,extended,00000063
+
+[Bromide 35]
+patch=1,EE,0051B99D,extended,00000063
+
+[Bromide 36]
+patch=1,EE,0051B99E,extended,00000063
+
+[Bromide 37]
+patch=1,EE,0051B99F,extended,00000063
+
+[Bromide 38]
+patch=1,EE,0051B9A0,extended,00000063
+
+[Bromide 39]
+patch=1,EE,0051B9A1,extended,00000063
+
+[Bromide 40]
+patch=1,EE,0051B9A2,extended,00000063
+
+[Bromide 41]
+patch=1,EE,0051B9A3,extended,00000063
+
+[Bromide 42]
+patch=1,EE,0051B9A4,extended,00000063
+
+[Bromide 43]
+patch=1,EE,0051B9A5,extended,00000063
+
+[Bromide 44]
+patch=1,EE,0051B9A6,extended,00000063
+
+[Bromide 45]
+patch=1,EE,0051B9A7,extended,00000063
+
+[Bromide 46]
+patch=1,EE,0051B9A8,extended,00000063
+
+[Bromide 47]
+patch=1,EE,0051B9A9,extended,00000063
+
+[Bromide 48]
+patch=1,EE,0051B9AA,extended,00000063
+
+[Bromide 49]
+patch=1,EE,0051B9AB,extended,00000063
+
+[Bromide 50]
+patch=1,EE,0051B9AC,extended,00000063
+
+[Bromide 51]
+patch=1,EE,0051B9AD,extended,00000063
+
+[Bromide 52]
+patch=1,EE,0051B9AE,extended,00000063
+
+[Bromide 53]
+patch=1,EE,0051B9AF,extended,00000063
+
+[All Collection]
+patch=1,EE,0051B97B,extended,00000063
+patch=1,EE,4051B97C,extended,000D0001
+patch=1,EE,63636363,extended,00000000
+
+[Stone Pot]
+patch=1,EE,0051BCD0,extended,00000063
+
+[Ultra Geonyte]
+patch=1,EE,0051BCD1,extended,00000063
+
+[Old Mirror]
+patch=1,EE,0051BCD2,extended,00000063
+
+[Desert Bread]
+patch=1,EE,0051BCD3,extended,00000063
+
+[Scorpion Orb]
+patch=1,EE,0051BCD4,extended,00000063
+
+[Maomao Honey]
+patch=1,EE,0051BCD5,extended,00000063
+
+[Mercury Drop]
+patch=1,EE,0051BCD6,extended,00000063
+
+[All Guild]
+patch=1,EE,2051BCD0,extended,63636363
+patch=1,EE,1051BCD4,extended,00006363
+patch=1,EE,0051BCD6,extended,00000063
+
+[Crystal Petal]
+patch=1,EE,0051BCD7,extended,00000063
+
+[Hengar Parts]
+patch=1,EE,0051BCD8,extended,00000063
+
+[Certificate]
+patch=1,EE,0051BCD9,extended,00000063
+
+[Mask Fragment]
+patch=1,EE,0051BCDA,extended,00000063
+
+[Red Feather]
+patch=1,EE,0051BCDB,extended,00000063
+
+[Blue Feather]
+patch=1,EE,0051BCDC,extended,00000063
+
+[Yellow F.]
+patch=1,EE,0051BCDD,extended,00000063
+
+[Red Bell]
+patch=1,EE,0051BCDE,extended,00000063
+
+[Blue Bell]
+patch=1,EE,0051BCDF,extended,00000063
+
+[Yellow Bell]
+patch=1,EE,0051BCE0,extended,00000063
+
+[Gaia Stone]
+patch=1,EE,0051BCE1,extended,00000063
+
+[Corridor Key]
+patch=1,EE,0051BCE2,extended,00000063
+
+[All Events]
+patch=1,EE,0051BCD7,extended,00000063
+patch=1,EE,2051BCD8,extended,63636363
+patch=1,EE,2051BCDC,extended,63636363
+patch=1,EE,1051BCE0,extended,00006363
+patch=1,EE,0051BCE2,extended,00000063
+
+[Blue Gloves 1]
+patch=1,EE,0051B9B0,extended,00000063
+
+[Blue Gloves 2]
+patch=1,EE,0051B9B1,extended,00000063
+
+[Blue Gloves 3]
+patch=1,EE,0051B9B2,extended,00000063
+
+[Blue Gloves 4]
+patch=1,EE,0051B9B3,extended,00000063
+
+[Red Gloves 1]
+patch=1,EE,0051B9B4,extended,00000063
+
+[Red Gloves 2]
+patch=1,EE,0051B9B5,extended,00000063
+
+[Red Gloves 3]
+patch=1,EE,0051B9B6,extended,00000063
+
+[Red Gloves 4]
+patch=1,EE,0051B9B7,extended,00000063
+
+[Gre. Gloves 1]
+patch=1,EE,0051B9B8,extended,00000063
+
+[Gre. Gloves 2]
+patch=1,EE,0051B9B9,extended,00000063
+
+[Gre. Gloves 3]
+patch=1,EE,0051B9BA,extended,00000063
+
+[Gre. Gloves 4]
+patch=1,EE,0051B9BB,extended,00000063
+
+[Yel. Gloves 1]
+patch=1,EE,0051B9BC,extended,00000063
+
+[Yel. Gloves 2]
+patch=1,EE,0051B9BD,extended,00000063
+
+[Yel. Gloves 3]
+patch=1,EE,0051B9BE,extended,00000063
+
+[Yel. Gloves 4]
+patch=1,EE,0051B9BF,extended,00000063
+
+[Bla. Gloves 1]
+patch=1,EE,0051B9C0,extended,00000063
+
+[Bla. Gloves 2]
+patch=1,EE,0051B9C1,extended,00000063
+
+[Bla. Gloves 3]
+patch=1,EE,0051B9C2,extended,00000063
+
+[Bla. Gloves 4]
+patch=1,EE,0051B9C3,extended,00000063
+
+[Whi. Gloves 1]
+patch=1,EE,0051B9C4,extended,00000063
+
+[Whi. Gloves 2]
+patch=1,EE,0051B9C5,extended,00000063
+
+[Whi. Gloves 3]
+patch=1,EE,0051B9C6,extended,00000063
+
+[Whi. Gloves 4]
+patch=1,EE,0051B9C7,extended,00000063
+
+[Sil. Gloves 1]
+patch=1,EE,0051B9C8,extended,00000063
+
+[Sil. Gloves 2]
+patch=1,EE,0051B9C9,extended,00000063
+
+[Sil. Gloves 3]
+patch=1,EE,0051B9CA,extended,00000063
+
+[Sil. Gloves 4]
+patch=1,EE,0051B9CB,extended,00000063
+
+[Gold Gloves 1]
+patch=1,EE,0051B9CC,extended,00000063
+
+[Gold Gloves 2]
+patch=1,EE,0051B9CD,extended,00000063
+
+[Gold Gloves 3]
+patch=1,EE,0051B9CE,extended,00000063
+
+[Gold Gloves 4]
+patch=1,EE,0051B9CF,extended,00000063
+
+[Blue Claw 1]
+patch=1,EE,0051B9D0,extended,00000063
+
+[Blue Claw 2]
+patch=1,EE,0051B9D1,extended,00000063
+
+[Blue Claw 3]
+patch=1,EE,0051B9D2,extended,00000063
+
+[Blue Claw 4]
+patch=1,EE,0051B9D3,extended,00000063
+
+[Red Claw 1]
+patch=1,EE,0051B9D4,extended,00000063
+
+[Red Claw 2]
+patch=1,EE,0051B9D5,extended,00000063
+
+[Red Claw 3]
+patch=1,EE,0051B9D6,extended,00000063
+
+[Red Claw 4]
+patch=1,EE,0051B9D7,extended,00000063
+
+[Gre. Claw 1]
+patch=1,EE,0051B9D8,extended,00000063
+
+[Gre. Claw 2]
+patch=1,EE,0051B9D9,extended,00000063
+
+[Gre. Claw 3]
+patch=1,EE,0051B9DA,extended,00000063
+
+[Gre. Claw 4]
+patch=1,EE,0051B9DB,extended,00000063
+
+[Yel. Claw 1]
+patch=1,EE,0051B9DC,extended,00000063
+
+[Yel. Claw 2]
+patch=1,EE,0051B9DD,extended,00000063
+
+[Yel. Claw 3]
+patch=1,EE,0051B9DE,extended,00000063
+
+[Yel. Claw 4]
+patch=1,EE,0051B9DF,extended,00000063
+
+[Bla. Claw 1]
+patch=1,EE,0051B9E0,extended,00000063
+
+[Bla. Claw 2]
+patch=1,EE,0051B9E1,extended,00000063
+
+[Bla. Claw 3]
+patch=1,EE,0051B9E2,extended,00000063
+
+[Bla. Claw 4]
+patch=1,EE,0051B9E3,extended,00000063
+
+[Whi. Claw 1]
+patch=1,EE,0051B9E4,extended,00000063
+
+[Whi. Claw 2]
+patch=1,EE,0051B9E5,extended,00000063
+
+[Whi. Claw 3]
+patch=1,EE,0051B9E6,extended,00000063
+
+[Whi. Claw 4]
+patch=1,EE,0051B9E7,extended,00000063
+
+[Sil. Claw 1]
+patch=1,EE,0051B9E8,extended,00000063
+
+[Sil. Claw 2]
+patch=1,EE,0051B9E9,extended,00000063
+
+[Sil. Claw 3]
+patch=1,EE,0051B9EA,extended,00000063
+
+[Sil. Claw 4]
+patch=1,EE,0051B9EB,extended,00000063
+
+[Gold Claw 1]
+patch=1,EE,0051B9EC,extended,00000063
+
+[Gold Claw 2]
+patch=1,EE,0051B9ED,extended,00000063
+
+[Gold Claw 3]
+patch=1,EE,0051B9EE,extended,00000063
+
+[Gold Claw 4]
+patch=1,EE,0051B9EF,extended,00000063
+
+[Blue Glasses 1]
+patch=1,EE,0051B9F0,extended,00000063
+
+[Blue Glasses 2]
+patch=1,EE,0051B9F1,extended,00000063
+
+[Blue Glasses 3]
+patch=1,EE,0051B9F2,extended,00000063
+
+[Blue Glasses 4]
+patch=1,EE,0051B9F3,extended,00000063
+
+[Red Glasses 1]
+patch=1,EE,0051B9F4,extended,00000063
+
+[Red Glasses 2]
+patch=1,EE,0051B9F5,extended,00000063
+
+[Red Glasses 3]
+patch=1,EE,0051B9F6,extended,00000063
+
+[Red Glasses 4]
+patch=1,EE,0051B9F7,extended,00000063
+
+[Gre. Glasses 1]
+patch=1,EE,0051B9F8,extended,00000063
+
+[Gre. Glasses 2]
+patch=1,EE,0051B9F9,extended,00000063
+
+[Gre. Glasses 3]
+patch=1,EE,0051B9FA,extended,00000063
+
+[Gre. Glasses 4]
+patch=1,EE,0051B9FB,extended,00000063
+
+[Yel. Glasses 1]
+patch=1,EE,0051B9FC,extended,00000063
+
+[Yel. Glasses 2]
+patch=1,EE,0051B9FD,extended,00000063
+
+[Yel. Glasses 3]
+patch=1,EE,0051B9FE,extended,00000063
+
+[Yel. Glasses 4]
+patch=1,EE,0051B9FF,extended,00000063
+
+[Bla. Glasses 1]
+patch=1,EE,0051BA00,extended,00000063
+
+[Bla. Glasses 2]
+patch=1,EE,0051BA01,extended,00000063
+
+[Bla. Glasses 3]
+patch=1,EE,0051BA02,extended,00000063
+
+[Bla. Glasses 4]
+patch=1,EE,0051BA03,extended,00000063
+
+[Whi. Glasses 1]
+patch=1,EE,0051BA04,extended,00000063
+
+[Whi. Glasses 2]
+patch=1,EE,0051BA05,extended,00000063
+
+[Whi. Glasses 3]
+patch=1,EE,0051BA06,extended,00000063
+
+[Whi. Glasses 4]
+patch=1,EE,0051BA07,extended,00000063
+
+[Sil. Glasses 1]
+patch=1,EE,0051BA08,extended,00000063
+
+[Sil. Glasses 2]
+patch=1,EE,0051BA09,extended,00000063
+
+[Sil. Glasses 3]
+patch=1,EE,0051BA0A,extended,00000063
+
+[Sil. Glasses 4]
+patch=1,EE,0051BA0B,extended,00000063
+
+[Gold Glasses 1]
+patch=1,EE,0051BA0C,extended,00000063
+
+[Gold Glasses 2]
+patch=1,EE,0051BA0D,extended,00000063
+
+[Gold Glasses 3]
+patch=1,EE,0051BA0E,extended,00000063
+
+[Gold Glasses 4]
+patch=1,EE,0051BA0F,extended,00000063
+
+[Blue Bandana 1]
+patch=1,EE,0051BA10,extended,00000063
+
+[Blue Bandana 2]
+patch=1,EE,0051BA11,extended,00000063
+
+[Blue Bandana 3]
+patch=1,EE,0051BA12,extended,00000063
+
+[Blue Bandana 4]
+patch=1,EE,0051BA13,extended,00000063
+
+[Red Bandana 1]
+patch=1,EE,0051BA14,extended,00000063
+
+[Red Bandana 2]
+patch=1,EE,0051BA15,extended,00000063
+
+[Red Bandana 3]
+patch=1,EE,0051BA16,extended,00000063
+
+[Red Bandana 4]
+patch=1,EE,0051BA17,extended,00000063
+
+[Gre. Bandana 1]
+patch=1,EE,0051BA18,extended,00000063
+
+[Gre. Bandana 2]
+patch=1,EE,0051BA19,extended,00000063
+
+[Gre. Bandana 3]
+patch=1,EE,0051BA1A,extended,00000063
+
+[Gre. Bandana 4]
+patch=1,EE,0051BA1B,extended,00000063
+
+[Yel. Bandana 1]
+patch=1,EE,0051BA1C,extended,00000063
+
+[Yel. Bandana 2]
+patch=1,EE,0051BA1D,extended,00000063
+
+[Yel. Bandana 3]
+patch=1,EE,0051BA1E,extended,00000063
+
+[Yel. Bandana 4]
+patch=1,EE,0051BA1F,extended,00000063
+
+[Bla. Bandana 1]
+patch=1,EE,0051BA20,extended,00000063
+
+[Bla. Bandana 2]
+patch=1,EE,0051BA21,extended,00000063
+
+[Bla. Bandana 3]
+patch=1,EE,0051BA22,extended,00000063
+
+[Bla. Bandana 4]
+patch=1,EE,0051BA23,extended,00000063
+
+[Whi. Bandana 1]
+patch=1,EE,0051BA24,extended,00000063
+
+[Whi. Bandana 2]
+patch=1,EE,0051BA25,extended,00000063
+
+[Whi. Bandana 3]
+patch=1,EE,0051BA26,extended,00000063
+
+[Whi. Bandana 4]
+patch=1,EE,0051BA27,extended,00000063
+
+[Sil. Bandana 1]
+patch=1,EE,0051BA28,extended,00000063
+
+[Sil. Bandana 2]
+patch=1,EE,0051BA29,extended,00000063
+
+[Sil. Bandana 3]
+patch=1,EE,0051BA2A,extended,00000063
+
+[Sil. Bandana 4]
+patch=1,EE,0051BA2B,extended,00000063
+
+[Gold Bandana 1]
+patch=1,EE,0051BA2C,extended,00000063
+
+[Gold Bandana 2]
+patch=1,EE,0051BA2D,extended,00000063
+
+[Gold Bandana 3]
+patch=1,EE,0051BA2E,extended,00000063
+
+[Gold Bandana 4]
+patch=1,EE,0051BA2F,extended,00000063
+
+[Blue Tie 1]
+patch=1,EE,0051BA30,extended,00000063
+
+[Blue Tie 2]
+patch=1,EE,0051BA31,extended,00000063
+
+[Blue Tie 3]
+patch=1,EE,0051BA32,extended,00000063
+
+[Blue Tie 4]
+patch=1,EE,0051BA33,extended,00000063
+
+[Red Tie 1]
+patch=1,EE,0051BA34,extended,00000063
+
+[Red Tie 2]
+patch=1,EE,0051BA35,extended,00000063
+
+[Red Tie 3]
+patch=1,EE,0051BA36,extended,00000063
+
+[Red Tie 4]
+patch=1,EE,0051BA37,extended,00000063
+
+[Gre. Tie 1]
+patch=1,EE,0051BA38,extended,00000063
+
+[Gre. Tie 2]
+patch=1,EE,0051BA39,extended,00000063
+
+[Gre. Tie 3]
+patch=1,EE,0051BA3A,extended,00000063
+
+[Gre. Tie 4]
+patch=1,EE,0051BA3B,extended,00000063
+
+[Yel. Tie 1]
+patch=1,EE,0051BA3C,extended,00000063
+
+[Yel. Tie 2]
+patch=1,EE,0051BA3D,extended,00000063
+
+[Yel. Tie 3]
+patch=1,EE,0051BA3E,extended,00000063
+
+[Yel. Tie 4]
+patch=1,EE,0051BA3F,extended,00000063
+
+[Bla. Tie 1]
+patch=1,EE,0051BA40,extended,00000063
+
+[Bla. Tie 2]
+patch=1,EE,0051BA41,extended,00000063
+
+[Bla. Tie 3]
+patch=1,EE,0051BA42,extended,00000063
+
+[Bla. Tie 4]
+patch=1,EE,0051BA43,extended,00000063
+
+[Whi. Tie 1]
+patch=1,EE,0051BA44,extended,00000063
+
+[Whi. Tie 2]
+patch=1,EE,0051BA45,extended,00000063
+
+[Whi. Tie 3]
+patch=1,EE,0051BA46,extended,00000063
+
+[Whi. Tie 4]
+patch=1,EE,0051BA47,extended,00000063
+
+[Sil. Tie 1]
+patch=1,EE,0051BA48,extended,00000063
+
+[Sil. Tie 2]
+patch=1,EE,0051BA49,extended,00000063
+
+[Sil. Tie 3]
+patch=1,EE,0051BA4A,extended,00000063
+
+[Sil. Tie 4]
+patch=1,EE,0051BA4B,extended,00000063
+
+[Gold Tie 1]
+patch=1,EE,0051BA4C,extended,00000063
+
+[Gold Tie 2]
+patch=1,EE,0051BA4D,extended,00000063
+
+[Gold Tie 3]
+patch=1,EE,0051BA4E,extended,00000063
+
+[Gold Tie 4]
+patch=1,EE,0051BA4F,extended,00000063
+
+[Blue Card 1]
+patch=1,EE,0051BA50,extended,00000063
+
+[Blue Card 2]
+patch=1,EE,0051BA51,extended,00000063
+
+[Blue Card 3]
+patch=1,EE,0051BA52,extended,00000063
+
+[Blue Card 4]
+patch=1,EE,0051BA53,extended,00000063
+
+[Red Card 1]
+patch=1,EE,0051BA54,extended,00000063
+
+[Red Card 2]
+patch=1,EE,0051BA55,extended,00000063
+
+[Red Card 3]
+patch=1,EE,0051BA56,extended,00000063
+
+[Red Card 4]
+patch=1,EE,0051BA57,extended,00000063
+
+[Gre. Card 1]
+patch=1,EE,0051BA58,extended,00000063
+
+[Gre. Card 2]
+patch=1,EE,0051BA59,extended,00000063
+
+[Gre. Card 3]
+patch=1,EE,0051BA5A,extended,00000063
+
+[Gre. Card 4]
+patch=1,EE,0051BA5B,extended,00000063
+
+[Yel. Card 1]
+patch=1,EE,0051BA5C,extended,00000063
+
+[Yel. Card 2]
+patch=1,EE,0051BA5D,extended,00000063
+
+[Yel. Card 3]
+patch=1,EE,0051BA5E,extended,00000063
+
+[Yel. Card 4]
+patch=1,EE,0051BA5F,extended,00000063
+
+[Bla. Card 1]
+patch=1,EE,0051BA60,extended,00000063
+
+[Bla. Card 2]
+patch=1,EE,0051BA61,extended,00000063
+
+[Bla. Card 3]
+patch=1,EE,0051BA62,extended,00000063
+
+[Bla. Card 4]
+patch=1,EE,0051BA63,extended,00000063
+
+[Whi. Card 1]
+patch=1,EE,0051BA64,extended,00000063
+
+[Whi. Card 2]
+patch=1,EE,0051BA65,extended,00000063
+
+[Whi. Card 3]
+patch=1,EE,0051BA66,extended,00000063
+
+[Whi. Card 4]
+patch=1,EE,0051BA67,extended,00000063
+
+[Sil. Card 1]
+patch=1,EE,0051BA68,extended,00000063
+
+[Sil. Card 2]
+patch=1,EE,0051BA69,extended,00000063
+
+[Sil. Card 3]
+patch=1,EE,0051BA6A,extended,00000063
+
+[Sil. Card 4]
+patch=1,EE,0051BA6B,extended,00000063
+
+[Gold Card 1]
+patch=1,EE,0051BA6C,extended,00000063
+
+[Gold Card 2]
+patch=1,EE,0051BA6D,extended,00000063
+
+[Gold Card 3]
+patch=1,EE,0051BA6E,extended,00000063
+
+[Gold Card 4]
+patch=1,EE,0051BA6F,extended,00000063
+
+[All Beginner]
+patch=1,EE,4051B9B0,extended,00300001
+patch=1,EE,63636363,extended,00000000
+
+[Blue Bangle 1]
+patch=1,EE,0051BA70,extended,00000063
+
+[Blue Bangle 2]
+patch=1,EE,0051BA71,extended,00000063
+
+[Blue Bangle 3]
+patch=1,EE,0051BA72,extended,00000063
+
+[Blue Bangle 4]
+patch=1,EE,0051BA73,extended,00000063
+
+[Red Bangle 1]
+patch=1,EE,0051BA74,extended,00000063
+
+[Red Bangle 2]
+patch=1,EE,0051BA75,extended,00000063
+
+[Red Bangle 3]
+patch=1,EE,0051BA76,extended,00000063
+
+[Red Bangle 4]
+patch=1,EE,0051BA77,extended,00000063
+
+[Gre. Bangle 1]
+patch=1,EE,0051BA78,extended,00000063
+
+[Gre. Bangle 2]
+patch=1,EE,0051BA79,extended,00000063
+
+[Gre. Bangle 3]
+patch=1,EE,0051BA7A,extended,00000063
+
+[Gre. Bangle 4]
+patch=1,EE,0051BA7B,extended,00000063
+
+[Yel. Bangle 1]
+patch=1,EE,0051BA7C,extended,00000063
+
+[Yel. Bangle 2]
+patch=1,EE,0051BA7D,extended,00000063
+
+[Yel. Bangle 3]
+patch=1,EE,0051BA7E,extended,00000063
+
+[Yel. Bangle 4]
+patch=1,EE,0051BA7F,extended,00000063
+
+[Bla. Bangle 1]
+patch=1,EE,0051BA80,extended,00000063
+
+[Bla. Bangle 2]
+patch=1,EE,0051BA81,extended,00000063
+
+[Bla. Bangle 3]
+patch=1,EE,0051BA82,extended,00000063
+
+[Bla. Bangle 4]
+patch=1,EE,0051BA83,extended,00000063
+
+[Whi. Bangle 1]
+patch=1,EE,0051BA84,extended,00000063
+
+[Whi. Bangle 2]
+patch=1,EE,0051BA85,extended,00000063
+
+[Whi. Bangle 3]
+patch=1,EE,0051BA86,extended,00000063
+
+[Whi. Bangle 4]
+patch=1,EE,0051BA87,extended,00000063
+
+[Sil. Bangle 1]
+patch=1,EE,0051BA88,extended,00000063
+
+[Sil. Bangle 2]
+patch=1,EE,0051BA89,extended,00000063
+
+[Sil. Bangle 3]
+patch=1,EE,0051BA8A,extended,00000063
+
+[Sil. Bangle 4]
+patch=1,EE,0051BA8B,extended,00000063
+
+[Gold Bangle 1]
+patch=1,EE,0051BA8C,extended,00000063
+
+[Gold Bangle 2]
+patch=1,EE,0051BA8D,extended,00000063
+
+[Gold Bangle 3]
+patch=1,EE,0051BA8E,extended,00000063
+
+[Gold Bangle 4]
+patch=1,EE,0051BA8F,extended,00000063
+
+[Blue Knuckle 1]
+patch=1,EE,0051BA90,extended,00000063
+
+[Blue Knuckle 2]
+patch=1,EE,0051BA91,extended,00000063
+
+[Blue Knuckle 3]
+patch=1,EE,0051BA92,extended,00000063
+
+[Blue Knuckle 4]
+patch=1,EE,0051BA93,extended,00000063
+
+[Red Knuckle 1]
+patch=1,EE,0051BA94,extended,00000063
+
+[Red Knuckle 2]
+patch=1,EE,0051BA95,extended,00000063
+
+[Red Knuckle 3]
+patch=1,EE,0051BA96,extended,00000063
+
+[Red Knuckle 4]
+patch=1,EE,0051BA97,extended,00000063
+
+[Gre. Knuckle 1]
+patch=1,EE,0051BA98,extended,00000063
+
+[Gre. Knuckle 2]
+patch=1,EE,0051BA99,extended,00000063
+
+[Gre. Knuckle 3]
+patch=1,EE,0051BA9A,extended,00000063
+
+[Gre. Knuckle 4]
+patch=1,EE,0051BA9B,extended,00000063
+
+[Yel. Knuckle 1]
+patch=1,EE,0051BA9C,extended,00000063
+
+[Yel. Knuckle 2]
+patch=1,EE,0051BA9D,extended,00000063
+
+[Yel. Knuckle 3]
+patch=1,EE,0051BA9E,extended,00000063
+
+[Yel. Knuckle 4]
+patch=1,EE,0051BA9F,extended,00000063
+
+[Bla. Knuckle 1]
+patch=1,EE,0051BAA0,extended,00000063
+
+[Bla. Knuckle 2]
+patch=1,EE,0051BAA1,extended,00000063
+
+[Bla. Knuckle 3]
+patch=1,EE,0051BAA2,extended,00000063
+
+[Bla. Knuckle 4]
+patch=1,EE,0051BAA3,extended,00000063
+
+[Whi. Knuckle 1]
+patch=1,EE,0051BAA4,extended,00000063
+
+[Whi. Knuckle 2]
+patch=1,EE,0051BAA5,extended,00000063
+
+[Whi. Knuckle 3]
+patch=1,EE,0051BAA6,extended,00000063
+
+[Whi. Knuckle 4]
+patch=1,EE,0051BAA7,extended,00000063
+
+[Sil. Knuckle 1]
+patch=1,EE,0051BAA8,extended,00000063
+
+[Sil. Knuckle 2]
+patch=1,EE,0051BAA9,extended,00000063
+
+[Sil. Knuckle 3]
+patch=1,EE,0051BAAA,extended,00000063
+
+[Sil. Knuckle 4]
+patch=1,EE,0051BAAB,extended,00000063
+
+[Gold Knuckle 1]
+patch=1,EE,0051BAAC,extended,00000063
+
+[Gold Knuckle 2]
+patch=1,EE,0051BAAD,extended,00000063
+
+[Gold Knuckle 3]
+patch=1,EE,0051BAAE,extended,00000063
+
+[Gold Knuckle 4]
+patch=1,EE,0051BAAF,extended,00000063
+
+[Blue Sungls. 1]
+patch=1,EE,0051BAB0,extended,00000063
+
+[Blue Sungls. 2]
+patch=1,EE,0051BAB1,extended,00000063
+
+[Blue Sungls. 3]
+patch=1,EE,0051BAB2,extended,00000063
+
+[Blue Sungls. 4]
+patch=1,EE,0051BAB3,extended,00000063
+
+[Red Sungls. 1]
+patch=1,EE,0051BAB4,extended,00000063
+
+[Red Sungls. 2]
+patch=1,EE,0051BAB5,extended,00000063
+
+[Red Sungls. 3]
+patch=1,EE,0051BAB6,extended,00000063
+
+[Red Sungls. 4]
+patch=1,EE,0051BAB7,extended,00000063
+
+[Gre. Sungls. 1]
+patch=1,EE,0051BAB8,extended,00000063
+
+[Gre. Sungls. 2]
+patch=1,EE,0051BAB9,extended,00000063
+
+[Gre. Sungls. 3]
+patch=1,EE,0051BABA,extended,00000063
+
+[Gre. Sungls. 4]
+patch=1,EE,0051BABB,extended,00000063
+
+[Yel. Sungls. 1]
+patch=1,EE,0051BABC,extended,00000063
+
+[Yel. Sungls. 2]
+patch=1,EE,0051BABD,extended,00000063
+
+[Yel. Sungls. 3]
+patch=1,EE,0051BABE,extended,00000063
+
+[Yel. Sungls. 4]
+patch=1,EE,0051BABF,extended,00000063
+
+[Bla. Sungls. 1]
+patch=1,EE,0051BAC0,extended,00000063
+
+[Bla. Sungls. 2]
+patch=1,EE,0051BAC1,extended,00000063
+
+[Bla. Sungls. 3]
+patch=1,EE,0051BAC2,extended,00000063
+
+[Bla. Sungls. 4]
+patch=1,EE,0051BAC3,extended,00000063
+
+[Whi. Sungls. 1]
+patch=1,EE,0051BAC4,extended,00000063
+
+[Whi. Sungls. 2]
+patch=1,EE,0051BAC5,extended,00000063
+
+[Whi. Sungls. 3]
+patch=1,EE,0051BAC6,extended,00000063
+
+[Whi. Sungls. 4]
+patch=1,EE,0051BAC7,extended,00000063
+
+[Sil. Sungls. 1]
+patch=1,EE,0051BAC8,extended,00000063
+
+[Sil. Sungls. 2]
+patch=1,EE,0051BAC9,extended,00000063
+
+[Sil. Sungls. 3]
+patch=1,EE,0051BACA,extended,00000063
+
+[Sil. Sungls. 4]
+patch=1,EE,0051BACB,extended,00000063
+
+[Gold Sungls. 1]
+patch=1,EE,0051BACC,extended,00000063
+
+[Gold Sungls. 2]
+patch=1,EE,0051BACD,extended,00000063
+
+[Gold Sungls. 3]
+patch=1,EE,0051BACE,extended,00000063
+
+[Gold Sungls. 4]
+patch=1,EE,0051BACF,extended,00000063
+
+[Blue Band 1]
+patch=1,EE,0051BAD0,extended,00000063
+
+[Blue Band 2]
+patch=1,EE,0051BAD1,extended,00000063
+
+[Blue Band 3]
+patch=1,EE,0051BAD2,extended,00000063
+
+[Blue Band 4]
+patch=1,EE,0051BAD3,extended,00000063
+
+[Red Band 1]
+patch=1,EE,0051BAD4,extended,00000063
+
+[Red Band 2]
+patch=1,EE,0051BAD5,extended,00000063
+
+[Red Band 3]
+patch=1,EE,0051BAD6,extended,00000063
+
+[Red Band 4]
+patch=1,EE,0051BAD7,extended,00000063
+
+[Gre. Band 1]
+patch=1,EE,0051BAD8,extended,00000063
+
+[Gre. Band 2]
+patch=1,EE,0051BAD9,extended,00000063
+
+[Gre. Band 3]
+patch=1,EE,0051BADA,extended,00000063
+
+[Gre. Band 4]
+patch=1,EE,0051BADB,extended,00000063
+
+[Yel. Band 1]
+patch=1,EE,0051BADC,extended,00000063
+
+[Yel. Band 2]
+patch=1,EE,0051BADD,extended,00000063
+
+[Yel. Band 3]
+patch=1,EE,0051BADE,extended,00000063
+
+[Yel. Band 4]
+patch=1,EE,0051BADF,extended,00000063
+
+[Bla. Band 1]
+patch=1,EE,0051BAE0,extended,00000063
+
+[Bla. Band 2]
+patch=1,EE,0051BAE1,extended,00000063
+
+[Bla. Band 3]
+patch=1,EE,0051BAE2,extended,00000063
+
+[Bla. Band 4]
+patch=1,EE,0051BAE3,extended,00000063
+
+[Whi. Band 1]
+patch=1,EE,0051BAE4,extended,00000063
+
+[Whi. Band 2]
+patch=1,EE,0051BAE5,extended,00000063
+
+[Whi. Band 3]
+patch=1,EE,0051BAE6,extended,00000063
+
+[Whi. Band 4]
+patch=1,EE,0051BAE7,extended,00000063
+
+[Sil. Band 1]
+patch=1,EE,0051BAE8,extended,00000063
+
+[Sil. Band 2]
+patch=1,EE,0051BAE9,extended,00000063
+
+[Sil. Band 3]
+patch=1,EE,0051BAEA,extended,00000063
+
+[Sil. Band 4]
+patch=1,EE,0051BAEB,extended,00000063
+
+[Gold Band 1]
+patch=1,EE,0051BAEC,extended,00000063
+
+[Gold Band 2]
+patch=1,EE,0051BAED,extended,00000063
+
+[Gold Band 3]
+patch=1,EE,0051BAEE,extended,00000063
+
+[Gold Band 4]
+patch=1,EE,0051BAEF,extended,00000063
+
+[Blue Scarf 1]
+patch=1,EE,0051BAF0,extended,00000063
+
+[Blue Scarf 2]
+patch=1,EE,0051BAF1,extended,00000063
+
+[Blue Scarf 3]
+patch=1,EE,0051BAF2,extended,00000063
+
+[Blue Scarf 4]
+patch=1,EE,0051BAF3,extended,00000063
+
+[Red Scarf 1]
+patch=1,EE,0051BAF4,extended,00000063
+
+[Red Scarf 2]
+patch=1,EE,0051BAF5,extended,00000063
+
+[Red Scarf 3]
+patch=1,EE,0051BAF6,extended,00000063
+
+[Red Scarf 4]
+patch=1,EE,0051BAF7,extended,00000063
+
+[Gre. Scarf 1]
+patch=1,EE,0051BAF8,extended,00000063
+
+[Gre. Scarf 2]
+patch=1,EE,0051BAF9,extended,00000063
+
+[Gre. Scarf 3]
+patch=1,EE,0051BAFA,extended,00000063
+
+[Gre. Scarf 4]
+patch=1,EE,0051BAFB,extended,00000063
+
+[Yel. Scarf 1]
+patch=1,EE,0051BAFC,extended,00000063
+
+[Yel. Scarf 2]
+patch=1,EE,0051BAFD,extended,00000063
+
+[Yel. Scarf 3]
+patch=1,EE,0051BAFE,extended,00000063
+
+[Yel. Scarf 4]
+patch=1,EE,0051BAFF,extended,00000063
+
+[Bla. Scarf 1]
+patch=1,EE,0051BB00,extended,00000063
+
+[Bla. Scarf 2]
+patch=1,EE,0051BB01,extended,00000063
+
+[Bla. Scarf 3]
+patch=1,EE,0051BB02,extended,00000063
+
+[Bla. Scarf 4]
+patch=1,EE,0051BB03,extended,00000063
+
+[Whi. Scarf 1]
+patch=1,EE,0051BB04,extended,00000063
+
+[Whi. Scarf 2]
+patch=1,EE,0051BB05,extended,00000063
+
+[Whi. Scarf 3]
+patch=1,EE,0051BB06,extended,00000063
+
+[Whi. Scarf 4]
+patch=1,EE,0051BB07,extended,00000063
+
+[Sil. Scarf 1]
+patch=1,EE,0051BB08,extended,00000063
+
+[Sil. Scarf 2]
+patch=1,EE,0051BB09,extended,00000063
+
+[Sil. Scarf 3]
+patch=1,EE,0051BB0A,extended,00000063
+
+[Sil. Scarf 4]
+patch=1,EE,0051BB0B,extended,00000063
+
+[Gold Scarf 1]
+patch=1,EE,0051BB0C,extended,00000063
+
+[Gold Scarf 2]
+patch=1,EE,0051BB0D,extended,00000063
+
+[Gold Scarf 3]
+patch=1,EE,0051BB0E,extended,00000063
+
+[Gold Scarf 4]
+patch=1,EE,0051BB0F,extended,00000063
+
+[Blue Bell 1]
+patch=1,EE,0051BB10,extended,00000063
+
+[Blue Bell 2]
+patch=1,EE,0051BB11,extended,00000063
+
+[Blue Bell 3]
+patch=1,EE,0051BB12,extended,00000063
+
+[Blue Bell 4]
+patch=1,EE,0051BB13,extended,00000063
+
+[Red Bell 1]
+patch=1,EE,0051BB14,extended,00000063
+
+[Red Bell 2]
+patch=1,EE,0051BB15,extended,00000063
+
+[Red Bell 3]
+patch=1,EE,0051BB16,extended,00000063
+
+[Red Bell 4]
+patch=1,EE,0051BB17,extended,00000063
+
+[Gre. Bell 1]
+patch=1,EE,0051BB18,extended,00000063
+
+[Gre. Bell 2]
+patch=1,EE,0051BB19,extended,00000063
+
+[Gre. Bell 3]
+patch=1,EE,0051BB1A,extended,00000063
+
+[Gre. Bell 4]
+patch=1,EE,0051BB1B,extended,00000063
+
+[Yel. Bell 1]
+patch=1,EE,0051BB1C,extended,00000063
+
+[Yel. Bell 2]
+patch=1,EE,0051BB1D,extended,00000063
+
+[Yel. Bell 3]
+patch=1,EE,0051BB1E,extended,00000063
+
+[Yel. Bell 4]
+patch=1,EE,0051BB1F,extended,00000063
+
+[Bla. Bell 1]
+patch=1,EE,0051BB20,extended,00000063
+
+[Bla. Bell 2]
+patch=1,EE,0051BB21,extended,00000063
+
+[Bla. Bell 3]
+patch=1,EE,0051BB22,extended,00000063
+
+[Bla. Bell 4]
+patch=1,EE,0051BB23,extended,00000063
+
+[Whi. Bell 1]
+patch=1,EE,0051BB24,extended,00000063
+
+[Whi. Bell 2]
+patch=1,EE,0051BB25,extended,00000063
+
+[Whi. Bell 3]
+patch=1,EE,0051BB26,extended,00000063
+
+[Whi. Bell 4]
+patch=1,EE,0051BB27,extended,00000063
+
+[Sil. Bell 1]
+patch=1,EE,0051BB28,extended,00000063
+
+[Sil. Bell 2]
+patch=1,EE,0051BB29,extended,00000063
+
+[Sil. Bell 3]
+patch=1,EE,0051BB2A,extended,00000063
+
+[Sil. Bell 4]
+patch=1,EE,0051BB2B,extended,00000063
+
+[Gold Bell 1]
+patch=1,EE,0051BB2C,extended,00000063
+
+[Gold Bell 2]
+patch=1,EE,0051BB2D,extended,00000063
+
+[Gold Bell 3]
+patch=1,EE,0051BB2E,extended,00000063
+
+[Gold Bell 4]
+patch=1,EE,0051BB2F,extended,00000063
+
+[All Middle]
+patch=1,EE,4051BA70,extended,00300001
+patch=1,EE,63636363,extended,00000000
+
+[Blue Bracer 1]
+patch=1,EE,0051BB30,extended,00000063
+
+[Blue Bracer 2]
+patch=1,EE,0051BB31,extended,00000063
+
+[Blue Bracer 3]
+patch=1,EE,0051BB32,extended,00000063
+
+[Blue Bracer 4]
+patch=1,EE,0051BB33,extended,00000063
+
+[Red Bracer 1]
+patch=1,EE,0051BB34,extended,00000063
+
+[Red Bracer 2]
+patch=1,EE,0051BB35,extended,00000063
+
+[Red Bracer 3]
+patch=1,EE,0051BB36,extended,00000063
+
+[Red Bracer 4]
+patch=1,EE,0051BB37,extended,00000063
+
+[Gre. Bracer 1]
+patch=1,EE,0051BB38,extended,00000063
+
+[Gre. Bracer 2]
+patch=1,EE,0051BB39,extended,00000063
+
+[Gre. Bracer 3]
+patch=1,EE,0051BB3A,extended,00000063
+
+[Gre. Bracer 4]
+patch=1,EE,0051BB3B,extended,00000063
+
+[Yel. Bracer 1]
+patch=1,EE,0051BB3C,extended,00000063
+
+[Yel. Bracer 2]
+patch=1,EE,0051BB3D,extended,00000063
+
+[Yel. Bracer 3]
+patch=1,EE,0051BB3E,extended,00000063
+
+[Yel. Bracer 4]
+patch=1,EE,0051BB3F,extended,00000063
+
+[Bla. Bracer 1]
+patch=1,EE,0051BB40,extended,00000063
+
+[Bla. Bracer 2]
+patch=1,EE,0051BB41,extended,00000063
+
+[Bla. Bracer 3]
+patch=1,EE,0051BB42,extended,00000063
+
+[Bla. Bracer 4]
+patch=1,EE,0051BB43,extended,00000063
+
+[Whi. Bracer 1]
+patch=1,EE,0051BB44,extended,00000063
+
+[Whi. Bracer 2]
+patch=1,EE,0051BB45,extended,00000063
+
+[Whi. Bracer 3]
+patch=1,EE,0051BB46,extended,00000063
+
+[Whi. Bracer 4]
+patch=1,EE,0051BB47,extended,00000063
+
+[Sil. Bracer 1]
+patch=1,EE,0051BB48,extended,00000063
+
+[Sil. Bracer 2]
+patch=1,EE,0051BB49,extended,00000063
+
+[Sil. Bracer 3]
+patch=1,EE,0051BB4A,extended,00000063
+
+[Sil. Bracer 4]
+patch=1,EE,0051BB4B,extended,00000063
+
+[Gold Bracer 1]
+patch=1,EE,0051BB4C,extended,00000063
+
+[Gold Bracer 2]
+patch=1,EE,0051BB4D,extended,00000063
+
+[Gold Bracer 3]
+patch=1,EE,0051BB4E,extended,00000063
+
+[Gold Bracer 4]
+patch=1,EE,0051BB4F,extended,00000063
+
+[Blue Ring 1]
+patch=1,EE,0051BB50,extended,00000063
+
+[Blue Ring 2]
+patch=1,EE,0051BB51,extended,00000063
+
+[Blue Ring 3]
+patch=1,EE,0051BB52,extended,00000063
+
+[Blue Ring 4]
+patch=1,EE,0051BB53,extended,00000063
+
+[Red Ring 1]
+patch=1,EE,0051BB54,extended,00000063
+
+[Red Ring 2]
+patch=1,EE,0051BB55,extended,00000063
+
+[Red Ring 3]
+patch=1,EE,0051BB56,extended,00000063
+
+[Red Ring 4]
+patch=1,EE,0051BB57,extended,00000063
+
+[Gre. Ring 1]
+patch=1,EE,0051BB58,extended,00000063
+
+[Gre. Ring 2]
+patch=1,EE,0051BB59,extended,00000063
+
+[Gre. Ring 3]
+patch=1,EE,0051BB5A,extended,00000063
+
+[Gre. Ring 4]
+patch=1,EE,0051BB5B,extended,00000063
+
+[Yel. Ring 1]
+patch=1,EE,0051BB5C,extended,00000063
+
+[Yel. Ring 2]
+patch=1,EE,0051BB5D,extended,00000063
+
+[Yel. Ring 3]
+patch=1,EE,0051BB5E,extended,00000063
+
+[Yel. Ring 4]
+patch=1,EE,0051BB5F,extended,00000063
+
+[Bla. Ring 1]
+patch=1,EE,0051BB60,extended,00000063
+
+[Bla. Ring 2]
+patch=1,EE,0051BB61,extended,00000063
+
+[Bla. Ring 3]
+patch=1,EE,0051BB62,extended,00000063
+
+[Bla. Ring 4]
+patch=1,EE,0051BB63,extended,00000063
+
+[Whi. Ring 1]
+patch=1,EE,0051BB64,extended,00000063
+
+[Whi. Ring 2]
+patch=1,EE,0051BB65,extended,00000063
+
+[Whi. Ring 3]
+patch=1,EE,0051BB66,extended,00000063
+
+[Whi. Ring 4]
+patch=1,EE,0051BB67,extended,00000063
+
+[Sil. Ring 1]
+patch=1,EE,0051BB68,extended,00000063
+
+[Sil. Ring 2]
+patch=1,EE,0051BB69,extended,00000063
+
+[Sil. Ring 3]
+patch=1,EE,0051BB6A,extended,00000063
+
+[Sil. Ring 4]
+patch=1,EE,0051BB6B,extended,00000063
+
+[Gold Ring 1]
+patch=1,EE,0051BB6C,extended,00000063
+
+[Gold Ring 2]
+patch=1,EE,0051BB6D,extended,00000063
+
+[Gold Ring 3]
+patch=1,EE,0051BB6E,extended,00000063
+
+[Gold Ring 4]
+patch=1,EE,0051BB6F,extended,00000063
+
+[Blue Eyemask 1]
+patch=1,EE,0051BB70,extended,00000063
+
+[Blue Eyemask 2]
+patch=1,EE,0051BB71,extended,00000063
+
+[Blue Eyemask 3]
+patch=1,EE,0051BB72,extended,00000063
+
+[Blue Eyemask 4]
+patch=1,EE,0051BB73,extended,00000063
+
+[Red Eyemask 1]
+patch=1,EE,0051BB74,extended,00000063
+
+[Red Eyemask 2]
+patch=1,EE,0051BB75,extended,00000063
+
+[Red Eyemask 3]
+patch=1,EE,0051BB76,extended,00000063
+
+[Red Eyemask 4]
+patch=1,EE,0051BB77,extended,00000063
+
+[Gre. Eyemask 1]
+patch=1,EE,0051BB78,extended,00000063
+
+[Gre. Eyemask 2]
+patch=1,EE,0051BB79,extended,00000063
+
+[Gre. Eyemask 3]
+patch=1,EE,0051BB7A,extended,00000063
+
+[Gre. Eyemask 4]
+patch=1,EE,0051BB7B,extended,00000063
+
+[Yel. Eyemask 1]
+patch=1,EE,0051BB7C,extended,00000063
+
+[Yel. Eyemask 2]
+patch=1,EE,0051BB7D,extended,00000063
+
+[Yel. Eyemask 3]
+patch=1,EE,0051BB7E,extended,00000063
+
+[Yel. Eyemask 4]
+patch=1,EE,0051BB7F,extended,00000063
+
+[Bla. Eyemask 1]
+patch=1,EE,0051BB80,extended,00000063
+
+[Bla. Eyemask 2]
+patch=1,EE,0051BB81,extended,00000063
+
+[Bla. Eyemask 3]
+patch=1,EE,0051BB82,extended,00000063
+
+[Bla. Eyemask 4]
+patch=1,EE,0051BB83,extended,00000063
+
+[Whi. Eyemask 1]
+patch=1,EE,0051BB84,extended,00000063
+
+[Whi. Eyemask 2]
+patch=1,EE,0051BB85,extended,00000063
+
+[Whi. Eyemask 3]
+patch=1,EE,0051BB86,extended,00000063
+
+[Whi. Eyemask 4]
+patch=1,EE,0051BB87,extended,00000063
+
+[Sil. Eyemask 1]
+patch=1,EE,0051BB88,extended,00000063
+
+[Sil. Eyemask 2]
+patch=1,EE,0051BB89,extended,00000063
+
+[Sil. Eyemask 3]
+patch=1,EE,0051BB8A,extended,00000063
+
+[Sil. Eyemask 4]
+patch=1,EE,0051BB8B,extended,00000063
+
+[Gold Eyemask 1]
+patch=1,EE,0051BB8C,extended,00000063
+
+[Gold Eyemask 2]
+patch=1,EE,0051BB8D,extended,00000063
+
+[Gold Eyemask 3]
+patch=1,EE,0051BB8E,extended,00000063
+
+[Gold Eyemask 4]
+patch=1,EE,0051BB8F,extended,00000063
+
+[Blue Cap 1]
+patch=1,EE,0051BB90,extended,00000063
+
+[Blue Cap 2]
+patch=1,EE,0051BB91,extended,00000063
+
+[Blue Cap 3]
+patch=1,EE,0051BB92,extended,00000063
+
+[Blue Cap 4]
+patch=1,EE,0051BB93,extended,00000063
+
+[Red Cap 1]
+patch=1,EE,0051BB94,extended,00000063
+
+[Red Cap 2]
+patch=1,EE,0051BB95,extended,00000063
+
+[Red Cap 3]
+patch=1,EE,0051BB96,extended,00000063
+
+[Red Cap 4]
+patch=1,EE,0051BB97,extended,00000063
+
+[Gre. Cap 1]
+patch=1,EE,0051BB98,extended,00000063
+
+[Gre. Cap 2]
+patch=1,EE,0051BB99,extended,00000063
+
+[Gre. Cap 3]
+patch=1,EE,0051BB9A,extended,00000063
+
+[Gre. Cap 4]
+patch=1,EE,0051BB9B,extended,00000063
+
+[Yel. Cap 1]
+patch=1,EE,0051BB9C,extended,00000063
+
+[Yel. Cap 2]
+patch=1,EE,0051BB9D,extended,00000063
+
+[Yel. Cap 3]
+patch=1,EE,0051BB9E,extended,00000063
+
+[Yel. Cap 4]
+patch=1,EE,0051BB9F,extended,00000063
+
+[Bla. Cap 1]
+patch=1,EE,0051BBA0,extended,00000063
+
+[Bla. Cap 2]
+patch=1,EE,0051BBA1,extended,00000063
+
+[Bla. Cap 3]
+patch=1,EE,0051BBA2,extended,00000063
+
+[Bla. Cap 4]
+patch=1,EE,0051BBA3,extended,00000063
+
+[Whi. Cap 1]
+patch=1,EE,0051BBA4,extended,00000063
+
+[Whi. Cap 2]
+patch=1,EE,0051BBA5,extended,00000063
+
+[Whi. Cap 3]
+patch=1,EE,0051BBA6,extended,00000063
+
+[Whi. Cap 4]
+patch=1,EE,0051BBA7,extended,00000063
+
+[Sil. Cap 1]
+patch=1,EE,0051BBA8,extended,00000063
+
+[Sil. Cap 2]
+patch=1,EE,0051BBA9,extended,00000063
+
+[Sil. Cap 3]
+patch=1,EE,0051BBAA,extended,00000063
+
+[Sil. Cap 4]
+patch=1,EE,0051BBAB,extended,00000063
+
+[Gold Cap 1]
+patch=1,EE,0051BBAC,extended,00000063
+
+[Gold Cap 2]
+patch=1,EE,0051BBAD,extended,00000063
+
+[Gold Cap 3]
+patch=1,EE,0051BBAE,extended,00000063
+
+[Gold Cap 4]
+patch=1,EE,0051BBAF,extended,00000063
+
+[Blue Choker 1]
+patch=1,EE,0051BBB0,extended,00000063
+
+[Blue Choker 2]
+patch=1,EE,0051BBB1,extended,00000063
+
+[Blue Choker 3]
+patch=1,EE,0051BBB2,extended,00000063
+
+[Blue Choker 4]
+patch=1,EE,0051BBB3,extended,00000063
+
+[Red Choker 1]
+patch=1,EE,0051BBB4,extended,00000063
+
+[Red Choker 2]
+patch=1,EE,0051BBB5,extended,00000063
+
+[Red Choker 3]
+patch=1,EE,0051BBB6,extended,00000063
+
+[Red Choker 4]
+patch=1,EE,0051BBB7,extended,00000063
+
+[Gre. Choker 1]
+patch=1,EE,0051BBB8,extended,00000063
+
+[Gre. Choker 2]
+patch=1,EE,0051BBB9,extended,00000063
+
+[Gre. Choker 3]
+patch=1,EE,0051BBBA,extended,00000063
+
+[Gre. Choker 4]
+patch=1,EE,0051BBBB,extended,00000063
+
+[Yel. Choker 1]
+patch=1,EE,0051BBBC,extended,00000063
+
+[Yel. Choker 2]
+patch=1,EE,0051BBBD,extended,00000063
+
+[Yel. Choker 3]
+patch=1,EE,0051BBBE,extended,00000063
+
+[Yel. Choker 4]
+patch=1,EE,0051BBBF,extended,00000063
+
+[Bla. Choker 1]
+patch=1,EE,0051BBC0,extended,00000063
+
+[Bla. Choker 2]
+patch=1,EE,0051BBC1,extended,00000063
+
+[Bla. Choker 3]
+patch=1,EE,0051BBC2,extended,00000063
+
+[Bla. Choker 4]
+patch=1,EE,0051BBC3,extended,00000063
+
+[Whi. Choker 1]
+patch=1,EE,0051BBC4,extended,00000063
+
+[Whi. Choker 2]
+patch=1,EE,0051BBC5,extended,00000063
+
+[Whi. Choker 3]
+patch=1,EE,0051BBC6,extended,00000063
+
+[Whi. Choker 4]
+patch=1,EE,0051BBC7,extended,00000063
+
+[Sil. Choker 1]
+patch=1,EE,0051BBC8,extended,00000063
+
+[Sil. Choker 2]
+patch=1,EE,0051BBC9,extended,00000063
+
+[Sil. Choker 3]
+patch=1,EE,0051BBCA,extended,00000063
+
+[Sil. Choker 4]
+patch=1,EE,0051BBCB,extended,00000063
+
+[Gold Choker 1]
+patch=1,EE,0051BBCC,extended,00000063
+
+[Gold Choker 2]
+patch=1,EE,0051BBCD,extended,00000063
+
+[Gold Choker 3]
+patch=1,EE,0051BBCE,extended,00000063
+
+[Gold Choker 4]
+patch=1,EE,0051BBCF,extended,00000063
+
+[Blue Brooch 1]
+patch=1,EE,0051BBD0,extended,00000063
+
+[Blue Brooch 2]
+patch=1,EE,0051BBD1,extended,00000063
+
+[Blue Brooch 3]
+patch=1,EE,0051BBD2,extended,00000063
+
+[Blue Brooch 4]
+patch=1,EE,0051BBD3,extended,00000063
+
+[Red Brooch 1]
+patch=1,EE,0051BBD4,extended,00000063
+
+[Red Brooch 2]
+patch=1,EE,0051BBD5,extended,00000063
+
+[Red Brooch 3]
+patch=1,EE,0051BBD6,extended,00000063
+
+[Red Brooch 4]
+patch=1,EE,0051BBD7,extended,00000063
+
+[Gre. Brooch 1]
+patch=1,EE,0051BBD8,extended,00000063
+
+[Gre. Brooch 2]
+patch=1,EE,0051BBD9,extended,00000063
+
+[Gre. Brooch 3]
+patch=1,EE,0051BBDA,extended,00000063
+
+[Gre. Brooch 4]
+patch=1,EE,0051BBDB,extended,00000063
+
+[Yel. Brooch 1]
+patch=1,EE,0051BBDC,extended,00000063
+
+[Yel. Brooch 2]
+patch=1,EE,0051BBDD,extended,00000063
+
+[Yel. Brooch 3]
+patch=1,EE,0051BBDE,extended,00000063
+
+[Yel. Brooch 4]
+patch=1,EE,0051BBDF,extended,00000063
+
+[Bla. Brooch 1]
+patch=1,EE,0051BBE0,extended,00000063
+
+[Bla. Brooch 2]
+patch=1,EE,0051BBE1,extended,00000063
+
+[Bla. Brooch 3]
+patch=1,EE,0051BBE2,extended,00000063
+
+[Bla. Brooch 4]
+patch=1,EE,0051BBE3,extended,00000063
+
+[Whi. Brooch 1]
+patch=1,EE,0051BBE4,extended,00000063
+
+[Whi. Brooch 2]
+patch=1,EE,0051BBE5,extended,00000063
+
+[Whi. Brooch 3]
+patch=1,EE,0051BBE6,extended,00000063
+
+[Whi. Brooch 4]
+patch=1,EE,0051BBE7,extended,00000063
+
+[Sil. Brooch 1]
+patch=1,EE,0051BBE8,extended,00000063
+
+[Sil. Brooch 2]
+patch=1,EE,0051BBE9,extended,00000063
+
+[Sil. Brooch 3]
+patch=1,EE,0051BBEA,extended,00000063
+
+[Sil. Brooch 4]
+patch=1,EE,0051BBEB,extended,00000063
+
+[Gold Brooch 1]
+patch=1,EE,0051BBEC,extended,00000063
+
+[Gold Brooch 2]
+patch=1,EE,0051BBED,extended,00000063
+
+[Gold Brooch 3]
+patch=1,EE,0051BBEE,extended,00000063
+
+[Gold Brooch 4]
+patch=1,EE,0051BBEF,extended,00000063
+
+[All Master]
+patch=1,EE,4051BB30,extended,00300001
+patch=1,EE,63636363,extended,00000000
+
+[Blue Gaunt. 1]
+patch=1,EE,0051BBF0,extended,00000063
+
+[Blue Gaunt. 2]
+patch=1,EE,0051BBF1,extended,00000063
+
+[Blue Gaunt. 3]
+patch=1,EE,0051BBF2,extended,00000063
+
+[Blue Gaunt. 4]
+patch=1,EE,0051BBF3,extended,00000063
+
+[Red Gaunt. 1]
+patch=1,EE,0051BBF4,extended,00000063
+
+[Red Gaunt. 2]
+patch=1,EE,0051BBF5,extended,00000063
+
+[Red Gaunt. 3]
+patch=1,EE,0051BBF6,extended,00000063
+
+[Red Gaunt. 4]
+patch=1,EE,0051BBF7,extended,00000063
+
+[Gre. Gaunt. 1]
+patch=1,EE,0051BBF8,extended,00000063
+
+[Gre. Gaunt. 2]
+patch=1,EE,0051BBF9,extended,00000063
+
+[Gre. Gaunt. 3]
+patch=1,EE,0051BBFA,extended,00000063
+
+[Gre. Gaunt. 4]
+patch=1,EE,0051BBFB,extended,00000063
+
+[Yel. Gaunt. 1]
+patch=1,EE,0051BBFC,extended,00000063
+
+[Yel. Gaunt. 2]
+patch=1,EE,0051BBFD,extended,00000063
+
+[Yel. Gaunt. 3]
+patch=1,EE,0051BBFE,extended,00000063
+
+[Yel. Gaunt. 4]
+patch=1,EE,0051BBFF,extended,00000063
+
+[Bla. Gaunt. 1]
+patch=1,EE,0051BC00,extended,00000063
+
+[Bla. Gaunt. 2]
+patch=1,EE,0051BC01,extended,00000063
+
+[Bla. Gaunt. 3]
+patch=1,EE,0051BC02,extended,00000063
+
+[Bla. Gaunt. 4]
+patch=1,EE,0051BC03,extended,00000063
+
+[Whi. Gaunt. 1]
+patch=1,EE,0051BC04,extended,00000063
+
+[Whi. Gaunt. 2]
+patch=1,EE,0051BC05,extended,00000063
+
+[Whi. Gaunt. 3]
+patch=1,EE,0051BC06,extended,00000063
+
+[Whi. Gaunt. 4]
+patch=1,EE,0051BC07,extended,00000063
+
+[Sil. Gaunt. 1]
+patch=1,EE,0051BC08,extended,00000063
+
+[Sil. Gaunt. 2]
+patch=1,EE,0051BC09,extended,00000063
+
+[Sil. Gaunt. 3]
+patch=1,EE,0051BC0A,extended,00000063
+
+[Sil. Gaunt. 4]
+patch=1,EE,0051BC0B,extended,00000063
+
+[Gold Gaunt. 1]
+patch=1,EE,0051BC0C,extended,00000063
+
+[Gold Gaunt. 2]
+patch=1,EE,0051BC0D,extended,00000063
+
+[Gold Gaunt. 3]
+patch=1,EE,0051BC0E,extended,00000063
+
+[Gold Gaunt. 4]
+patch=1,EE,0051BC0F,extended,00000063
+
+[Blue Charm 1]
+patch=1,EE,0051BC10,extended,00000063
+
+[Blue Charm 2]
+patch=1,EE,0051BC11,extended,00000063
+
+[Blue Charm 3]
+patch=1,EE,0051BC12,extended,00000063
+
+[Blue Charm 4]
+patch=1,EE,0051BC13,extended,00000063
+
+[Red Charm 1]
+patch=1,EE,0051BC14,extended,00000063
+
+[Red Charm 2]
+patch=1,EE,0051BC15,extended,00000063
+
+[Red Charm 3]
+patch=1,EE,0051BC16,extended,00000063
+
+[Red Charm 4]
+patch=1,EE,0051BC17,extended,00000063
+
+[Gre. Charm 1]
+patch=1,EE,0051BC18,extended,00000063
+
+[Gre. Charm 2]
+patch=1,EE,0051BC19,extended,00000063
+
+[Gre. Charm 3]
+patch=1,EE,0051BC1A,extended,00000063
+
+[Gre. Charm 4]
+patch=1,EE,0051BC1B,extended,00000063
+
+[Yel. Charm 1]
+patch=1,EE,0051BC1C,extended,00000063
+
+[Yel. Charm 2]
+patch=1,EE,0051BC1D,extended,00000063
+
+[Yel. Charm 3]
+patch=1,EE,0051BC1E,extended,00000063
+
+[Yel. Charm 4]
+patch=1,EE,0051BC1F,extended,00000063
+
+[Bla. Charm 1]
+patch=1,EE,0051BC20,extended,00000063
+
+[Bla. Charm 2]
+patch=1,EE,0051BC21,extended,00000063
+
+[Bla. Charm 3]
+patch=1,EE,0051BC22,extended,00000063
+
+[Bla. Charm 4]
+patch=1,EE,0051BC23,extended,00000063
+
+[Whi. Charm 1]
+patch=1,EE,0051BC24,extended,00000063
+
+[Whi. Charm 2]
+patch=1,EE,0051BC25,extended,00000063
+
+[Whi. Charm 3]
+patch=1,EE,0051BC26,extended,00000063
+
+[Whi. Charm 4]
+patch=1,EE,0051BC27,extended,00000063
+
+[Sil. Charm 1]
+patch=1,EE,0051BC28,extended,00000063
+
+[Sil. Charm 2]
+patch=1,EE,0051BC29,extended,00000063
+
+[Sil. Charm 3]
+patch=1,EE,0051BC2A,extended,00000063
+
+[Sil. Charm 4]
+patch=1,EE,0051BC2B,extended,00000063
+
+[Gold Charm 1]
+patch=1,EE,0051BC2C,extended,00000063
+
+[Gold Charm 2]
+patch=1,EE,0051BC2D,extended,00000063
+
+[Gold Charm 3]
+patch=1,EE,0051BC2E,extended,00000063
+
+[Gold Charm 4]
+patch=1,EE,0051BC2F,extended,00000063
+
+[Blue Goggles 1]
+patch=1,EE,0051BC30,extended,00000063
+
+[Blue Goggles 2]
+patch=1,EE,0051BC31,extended,00000063
+
+[Blue Goggles 3]
+patch=1,EE,0051BC32,extended,00000063
+
+[Blue Goggles 4]
+patch=1,EE,0051BC33,extended,00000063
+
+[Red Goggles 1]
+patch=1,EE,0051BC34,extended,00000063
+
+[Red Goggles 2]
+patch=1,EE,0051BC35,extended,00000063
+
+[Red Goggles 3]
+patch=1,EE,0051BC36,extended,00000063
+
+[Red Goggles 4]
+patch=1,EE,0051BC37,extended,00000063
+
+[Gre. Goggles 1]
+patch=1,EE,0051BC38,extended,00000063
+
+[Gre. Goggles 2]
+patch=1,EE,0051BC39,extended,00000063
+
+[Gre. Goggles 3]
+patch=1,EE,0051BC3A,extended,00000063
+
+[Gre. Goggles 4]
+patch=1,EE,0051BC3B,extended,00000063
+
+[Yel. Goggles 1]
+patch=1,EE,0051BC3C,extended,00000063
+
+[Yel. Goggles 2]
+patch=1,EE,0051BC3D,extended,00000063
+
+[Yel. Goggles 3]
+patch=1,EE,0051BC3E,extended,00000063
+
+[Yel. Goggles 4]
+patch=1,EE,0051BC3F,extended,00000063
+
+[Bla. Goggles 1]
+patch=1,EE,0051BC40,extended,00000063
+
+[Bla. Goggles 2]
+patch=1,EE,0051BC41,extended,00000063
+
+[Bla. Goggles 3]
+patch=1,EE,0051BC42,extended,00000063
+
+[Bla. Goggles 4]
+patch=1,EE,0051BC43,extended,00000063
+
+[Whi. Goggles 1]
+patch=1,EE,0051BC44,extended,00000063
+
+[Whi. Goggles 2]
+patch=1,EE,0051BC45,extended,00000063
+
+[Whi. Goggles 3]
+patch=1,EE,0051BC46,extended,00000063
+
+[Whi. Goggles 4]
+patch=1,EE,0051BC47,extended,00000063
+
+[Sil. Goggles 1]
+patch=1,EE,0051BC48,extended,00000063
+
+[Sil. Goggles 2]
+patch=1,EE,0051BC49,extended,00000063
+
+[Sil. Goggles 3]
+patch=1,EE,0051BC4A,extended,00000063
+
+[Sil. Goggles 4]
+patch=1,EE,0051BC4B,extended,00000063
+
+[Gold Goggles 1]
+patch=1,EE,0051BC4C,extended,00000063
+
+[Gold Goggles 2]
+patch=1,EE,0051BC4D,extended,00000063
+
+[Gold Goggles 3]
+patch=1,EE,0051BC4E,extended,00000063
+
+[Gold Goggles 4]
+patch=1,EE,0051BC4F,extended,00000063
+
+[Blue Crown 1]
+patch=1,EE,0051BC50,extended,00000063
+
+[Blue Crown 2]
+patch=1,EE,0051BC51,extended,00000063
+
+[Blue Crown 3]
+patch=1,EE,0051BC52,extended,00000063
+
+[Blue Crown 4]
+patch=1,EE,0051BC53,extended,00000063
+
+[Red Crown 1]
+patch=1,EE,0051BC54,extended,00000063
+
+[Red Crown 2]
+patch=1,EE,0051BC55,extended,00000063
+
+[Red Crown 3]
+patch=1,EE,0051BC56,extended,00000063
+
+[Red Crown 4]
+patch=1,EE,0051BC57,extended,00000063
+
+[Gre. Crown 1]
+patch=1,EE,0051BC58,extended,00000063
+
+[Gre. Crown 2]
+patch=1,EE,0051BC59,extended,00000063
+
+[Gre. Crown 3]
+patch=1,EE,0051BC5A,extended,00000063
+
+[Gre. Crown 4]
+patch=1,EE,0051BC5B,extended,00000063
+
+[Yel. Crown 1]
+patch=1,EE,0051BC5C,extended,00000063
+
+[Yel. Crown 2]
+patch=1,EE,0051BC5D,extended,00000063
+
+[Yel. Crown 3]
+patch=1,EE,0051BC5E,extended,00000063
+
+[Yel. Crown 4]
+patch=1,EE,0051BC5F,extended,00000063
+
+[Bla. Crown 1]
+patch=1,EE,0051BC60,extended,00000063
+
+[Bla. Crown 2]
+patch=1,EE,0051BC61,extended,00000063
+
+[Bla. Crown 3]
+patch=1,EE,0051BC62,extended,00000063
+
+[Bla. Crown 4]
+patch=1,EE,0051BC63,extended,00000063
+
+[Whi. Crown 1]
+patch=1,EE,0051BC64,extended,00000063
+
+[Whi. Crown 2]
+patch=1,EE,0051BC65,extended,00000063
+
+[Whi. Crown 3]
+patch=1,EE,0051BC66,extended,00000063
+
+[Whi. Crown 4]
+patch=1,EE,0051BC67,extended,00000063
+
+[Sil. Crown 1]
+patch=1,EE,0051BC68,extended,00000063
+
+[Sil. Crown 2]
+patch=1,EE,0051BC69,extended,00000063
+
+[Sil. Crown 3]
+patch=1,EE,0051BC6A,extended,00000063
+
+[Sil. Crown 4]
+patch=1,EE,0051BC6B,extended,00000063
+
+[Gold Crown 1]
+patch=1,EE,0051BC6C,extended,00000063
+
+[Gold Crown 2]
+patch=1,EE,0051BC6D,extended,00000063
+
+[Gold Crown 3]
+patch=1,EE,0051BC6E,extended,00000063
+
+[Gold Crown 4]
+patch=1,EE,0051BC6F,extended,00000063
+
+[Blue Pendant 1]
+patch=1,EE,0051BC70,extended,00000063
+
+[Blue Pendant 2]
+patch=1,EE,0051BC71,extended,00000063
+
+[Blue Pendant 3]
+patch=1,EE,0051BC72,extended,00000063
+
+[Blue Pendant 4]
+patch=1,EE,0051BC73,extended,00000063
+
+[Red Pendant 1]
+patch=1,EE,0051BC74,extended,00000063
+
+[Red Pendant 2]
+patch=1,EE,0051BC75,extended,00000063
+
+[Red Pendant 3]
+patch=1,EE,0051BC76,extended,00000063
+
+[Red Pendant 4]
+patch=1,EE,0051BC77,extended,00000063
+
+[Gre. Pendant 1]
+patch=1,EE,0051BC78,extended,00000063
+
+[Gre. Pendant 2]
+patch=1,EE,0051BC79,extended,00000063
+
+[Gre. Pendant 3]
+patch=1,EE,0051BC7A,extended,00000063
+
+[Gre. Pendant 4]
+patch=1,EE,0051BC7B,extended,00000063
+
+[Yel. Pendant 1]
+patch=1,EE,0051BC7C,extended,00000063
+
+[Yel. Pendant 2]
+patch=1,EE,0051BC7D,extended,00000063
+
+[Yel. Pendant 3]
+patch=1,EE,0051BC7E,extended,00000063
+
+[Yel. Pendant 4]
+patch=1,EE,0051BC7F,extended,00000063
+
+[Bla. Pendant 1]
+patch=1,EE,0051BC80,extended,00000063
+
+[Bla. Pendant 2]
+patch=1,EE,0051BC81,extended,00000063
+
+[Bla. Pendant 3]
+patch=1,EE,0051BC82,extended,00000063
+
+[Bla. Pendant 4]
+patch=1,EE,0051BC83,extended,00000063
+
+[Whi. Pendant 1]
+patch=1,EE,0051BC84,extended,00000063
+
+[Whi. Pendant 2]
+patch=1,EE,0051BC85,extended,00000063
+
+[Whi. Pendant 3]
+patch=1,EE,0051BC86,extended,00000063
+
+[Whi. Pendant 4]
+patch=1,EE,0051BC87,extended,00000063
+
+[Sil. Pendant 1]
+patch=1,EE,0051BC88,extended,00000063
+
+[Sil. Pendant 2]
+patch=1,EE,0051BC89,extended,00000063
+
+[Sil. Pendant 3]
+patch=1,EE,0051BC8A,extended,00000063
+
+[Sil. Pendant 4]
+patch=1,EE,0051BC8B,extended,00000063
+
+[Gold Pendant 1]
+patch=1,EE,0051BC8C,extended,00000063
+
+[Gold Pendant 2]
+patch=1,EE,0051BC8D,extended,00000063
+
+[Gold Pendant 3]
+patch=1,EE,0051BC8E,extended,00000063
+
+[Gold Pendant 4]
+patch=1,EE,0051BC8F,extended,00000063
+
+[Blue Crystal 1]
+patch=1,EE,0051BC90,extended,00000063
+
+[Blue Crystal 2]
+patch=1,EE,0051BC91,extended,00000063
+
+[Blue Crystal 3]
+patch=1,EE,0051BC92,extended,00000063
+
+[Blue Crystal 4]
+patch=1,EE,0051BC93,extended,00000063
+
+[Red Crystal 1]
+patch=1,EE,0051BC94,extended,00000063
+
+[Red Crystal 2]
+patch=1,EE,0051BC95,extended,00000063
+
+[Red Crystal 3]
+patch=1,EE,0051BC96,extended,00000063
+
+[Red Crystal 4]
+patch=1,EE,0051BC97,extended,00000063
+
+[Gre. Crystal 1]
+patch=1,EE,0051BC98,extended,00000063
+
+[Gre. Crystal 2]
+patch=1,EE,0051BC99,extended,00000063
+
+[Gre. Crystal 3]
+patch=1,EE,0051BC9A,extended,00000063
+
+[Gre. Crystal 4]
+patch=1,EE,0051BC9B,extended,00000063
+
+[Yel. Crystal 1]
+patch=1,EE,0051BC9C,extended,00000063
+
+[Yel. Crystal 2]
+patch=1,EE,0051BC9D,extended,00000063
+
+[Yel. Crystal 3]
+patch=1,EE,0051BC9E,extended,00000063
+
+[Yel. Crystal 4]
+patch=1,EE,0051BC9F,extended,00000063
+
+[Bla. Crystal 1]
+patch=1,EE,0051BCA0,extended,00000063
+
+[Bla. Crystal 2]
+patch=1,EE,0051BCA1,extended,00000063
+
+[Bla. Crystal 3]
+patch=1,EE,0051BCA2,extended,00000063
+
+[Bla. Crystal 4]
+patch=1,EE,0051BCA3,extended,00000063
+
+[Whi. Crystal 1]
+patch=1,EE,0051BCA4,extended,00000063
+
+[Whi. Crystal 2]
+patch=1,EE,0051BCA5,extended,00000063
+
+[Whi. Crystal 3]
+patch=1,EE,0051BCA6,extended,00000063
+
+[Whi. Crystal 4]
+patch=1,EE,0051BCA7,extended,00000063
+
+[Sil. Crystal 1]
+patch=1,EE,0051BCA8,extended,00000063
+
+[Sil. Crystal 2]
+patch=1,EE,0051BCA9,extended,00000063
+
+[Sil. Crystal 3]
+patch=1,EE,0051BCAA,extended,00000063
+
+[Sil. Crystal 4]
+patch=1,EE,0051BCAB,extended,00000063
+
+[Gold Crystal 1]
+patch=1,EE,0051BCAC,extended,00000063
+
+[Gold Crystal 2]
+patch=1,EE,0051BCAD,extended,00000063
+
+[Gold Crystal 3]
+patch=1,EE,0051BCAE,extended,00000063
+
+[Gold Crystal 4]
+patch=1,EE,0051BCAF,extended,00000063
+
+[All Legend]
+patch=1,EE,4051BBF0,extended,00300001
+patch=1,EE,63636363,extended,00000000
+
+[Blue Cape]
+patch=1,EE,0051BCB0,extended,00000063
+
+[Red Cape]
+patch=1,EE,0051BCB1,extended,00000063
+
+[Green Cape]
+patch=1,EE,0051BCB2,extended,00000063
+
+[Yellow Cape]
+patch=1,EE,0051BCB3,extended,00000063
+
+[Black Cape]
+patch=1,EE,0051BCB4,extended,00000063
+
+[White Cape]
+patch=1,EE,0051BCB5,extended,00000063
+
+[Silver Cape]
+patch=1,EE,0051BCB6,extended,00000063
+
+[Gold Cape]
+patch=1,EE,0051BCB7,extended,00000063
+
+[Blue Belt]
+patch=1,EE,0051BCB8,extended,00000063
+
+[Red Belt]
+patch=1,EE,0051BCB9,extended,00000063
+
+[Green Belt]
+patch=1,EE,0051BCBA,extended,00000063
+
+[Yellow Belt]
+patch=1,EE,0051BCBB,extended,00000063
+
+[Black Belt]
+patch=1,EE,0051BCBC,extended,00000063
+
+[White Belt]
+patch=1,EE,0051BCBD,extended,00000063
+
+[Silver Belt]
+patch=1,EE,0051BCBE,extended,00000063
+
+[Gold Belt]
+patch=1,EE,0051BCBF,extended,00000063
+
+[Blue Tattoo]
+patch=1,EE,0051BCC0,extended,00000063
+
+[Red Tattoo]
+patch=1,EE,0051BCC1,extended,00000063
+
+[Green Tattoo]
+patch=1,EE,0051BCC2,extended,00000063
+
+[Yellow Tattoo]
+patch=1,EE,0051BCC3,extended,00000063
+
+[Black Tattoo]
+patch=1,EE,0051BCC4,extended,00000063
+
+[White Tattoo]
+patch=1,EE,0051BCC5,extended,00000063
+
+[Silver Tattoo]
+patch=1,EE,0051BCC6,extended,00000063
+
+[Gold Tattoo]
+patch=1,EE,0051BCC7,extended,00000063
+
+[Blue Aroma]
+patch=1,EE,0051BCC8,extended,00000063
+
+[Red Aroma]
+patch=1,EE,0051BCC9,extended,00000063
+
+[Green Aroma]
+patch=1,EE,0051BCCA,extended,00000063
+
+[Yellow Aroma]
+patch=1,EE,0051BCCB,extended,00000063
+
+[Black Aroma]
+patch=1,EE,0051BCCC,extended,00000063
+
+[White Aroma]
+patch=1,EE,0051BCCD,extended,00000063
+
+[Silver Aroma]
+patch=1,EE,0051BCCE,extended,00000063
+
+[Gold Aroma]
+patch=1,EE,0051BCCF,extended,00000063
+
+[All Illegal]
+patch=1,EE,4051BCB0,extended,00080001
+patch=1,EE,63636363,extended,00000000

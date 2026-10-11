@@ -1,0 +1,53 @@
+gametitle=Metal Arms-Glitch In The System (SLUS-20786)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90410744,extended,0C10729D
+
+[Max Health]
+patch=1,EE,004F552F,extended,00000006
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C01004F
+patch=1,EE,200C0224,extended,9021552F
+patch=1,EE,200C0228,extended,44810000
+patch=1,EE,200C022C,extended,46800020
+patch=1,EE,200C0230,extended,E6400164
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,E6400168
+patch=1,EE,2014870C,extended,0C030088
+
+[P1 Press {CROSS} For Moon Jump]
+patch=1,EE,200C0240,extended,3C0141C8
+patch=1,EE,200C0244,extended,0804E998
+patch=1,EE,200C0248,extended,AE010324
+patch=1,EE,D0543102,extended,0010BFFF
+patch=1,EE,20139E38,extended,0C04E998
+patch=1,EE,D0543102,extended,0000BFFF
+patch=1,EE,20139E38,extended,0C030090
+
+[Infinite Primary Weapon]
+patch=1,EE,20225588,extended,00000000
+
+[Infinite Seconday Weapons]
+patch=1,EE,202184A4,extended,00000000
+
+[Max Washers]
+patch=1,EE,104F583E,extended,0000270F
+
+[Max Chips]
+patch=1,EE,104F5856,extended,0000270F
+
+[Max Secret Chips]
+patch=1,EE,104F586E,extended,0000270F
+
+[Max Arm Servo]
+patch=1,EE,104F5886,extended,0000270F
+
+[Max Det Packs]
+patch=1,EE,104F589E,extended,0000270F
+
+[Max Goff Parts]
+patch=1,EE,104F58B6,extended,0000270F

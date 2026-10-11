@@ -1,0 +1,2364 @@
+gametitle=Serious Sam-Next Encounter (SLUS-20907)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,002FA0EF
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C0142C9
+patch=1,EE,200C0224,extended,AE0100F0
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,C60C00F0
+patch=1,EE,2020E308,extended,0C030088
+
+[Infinite Armor]
+patch=1,EE,200C0230,extended,3C0142C9
+patch=1,EE,200C0234,extended,AE0103D8
+patch=1,EE,200C0238,extended,03E00008
+patch=1,EE,200C023C,extended,C61403D8
+patch=1,EE,2020E3B0,extended,0C03008C
+
+[Quicker Reload]
+patch=1,EE,2016829C,extended,00000000
+patch=1,EE,20168370,extended,00000000
+
+[Never Reload (9mm Handgun)]
+patch=1,EE,201B3044,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,201FC320,extended,00000000
+
+[Have All Weapons]
+patch=1,EE,20212CF8,extended,00000000
+patch=1,EE,20225A88,extended,00000000
+
+[Access All Cheats]
+patch=1,EE,20683ADC,extended,00000001
+
+[Invulnerability]
+patch=1,EE,2020EF20,extended,00000000
+
+[Serious Sam]
+patch=1,EE,20694228,extended,0000001F
+
+[Big Baby]
+patch=1,EE,206947D8,extended,0000001F
+
+[Candy Smiles]
+patch=1,EE,20694D88,extended,0000001F
+
+[Chuck Chuckles]
+patch=1,EE,20695338,extended,0000001F
+
+[Longarm Luke]
+patch=1,EE,206958E8,extended,0000001F
+
+[Bob Wesley]
+patch=1,EE,20695E98,extended,0000001F
+
+[Pumpkin Moonchild]
+patch=1,EE,20696448,extended,0000001F
+
+[Silicon Sam]
+patch=1,EE,206969F8,extended,0000001F
+
+[Bones]
+patch=1,EE,20696FA8,extended,0000001F
+
+[Buzz Altman]
+patch=1,EE,20697558,extended,0000001F
+
+[Suzi Darko]
+patch=1,EE,20697B08,extended,0000001F
+
+[Ball Wraith]
+patch=1,EE,206980B8,extended,0000001F
+
+[Nesbot]
+patch=1,EE,20698668,extended,0000001F
+
+[Superfella]
+patch=1,EE,20698C18,extended,0000001F
+
+[Clarence Corndale]
+patch=1,EE,206991C8,extended,0000001F
+
+[Johnny Drive Through]
+patch=1,EE,20699778,extended,0000001F
+
+[Ted The Fisherman]
+patch=1,EE,20699D28,extended,0000001F
+
+[All Characters]
+patch=1,EE,40694228,extended,0011016C
+patch=1,EE,0000001F,extended,00000000
+
+[Max Best Score]
+patch=1,EE,20693B44,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206943CC,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,2069497C,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694F2C,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206954DC,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695A8C,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,2069603C,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206965EC,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696B9C,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,2069714C,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206976FC,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697CAC,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,2069825C,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,2069880C,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698DBC,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,2069936C,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,2069991C,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699ECC,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693B60,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206943E8,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694998,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694F48,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206954F8,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695AA8,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696058,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696608,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696BB8,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697168,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697718,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697CC8,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698278,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698828,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698DD8,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699388,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699938,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699EE8,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693B7C,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694404,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,206949B4,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694F64,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695514,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695AC4,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696074,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696624,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696BD4,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697184,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697734,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697CE4,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698294,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698844,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698DF4,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206993A4,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699954,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699F04,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693B98,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694420,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,206949D0,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694F80,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695530,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695AE0,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696090,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696640,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696BF0,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206971A0,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697750,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697D00,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206982B0,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698860,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698E10,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206993C0,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699970,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699F20,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693BB4,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694688,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694C38,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,206951E8,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695798,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695D48,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206962F8,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206968A8,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696E58,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697408,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206979B8,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697F68,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698518,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698AC8,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20699078,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699628,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699BD8,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A188,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693BD0,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206946A4,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694C54,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695204,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206957B4,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695D64,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696314,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206968C4,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696E74,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697424,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206979D4,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697F84,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698534,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698AE4,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20699094,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699644,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699BF4,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A1A4,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693BEC,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,2069443C,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,206949EC,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694F9C,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,2069554C,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695AFC,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206960AC,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,2069665C,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696C0C,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206971BC,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,2069776C,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697D1C,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206982CC,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,2069887C,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698E2C,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206993DC,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,2069998C,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699F3C,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693C08,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694458,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694A08,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694FB8,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695568,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695B18,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206960C8,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696678,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696C28,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206971D8,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697788,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697D38,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206982E8,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698898,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698E48,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206993F8,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206999A8,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699F58,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693C24,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694474,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694A24,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694FD4,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695584,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695B34,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206960E4,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696694,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696C44,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206971F4,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206977A4,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697D54,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698304,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206988B4,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698E64,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699414,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206999C4,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699F74,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693C40,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206946C0,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694C70,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695220,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206957D0,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695D80,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696330,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206968E0,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696E90,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697440,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206979F0,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697FA0,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698550,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698B00,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,206990B0,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699660,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699C10,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A1C0,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693C5C,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694490,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694A40,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694FF0,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206955A0,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695B50,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696100,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206966B0,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696C60,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697210,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206977C0,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697D70,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698320,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206988D0,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698E80,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699430,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206999E0,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699F90,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693C78,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206944AC,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694A5C,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,2069500C,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206955BC,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695B6C,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,2069611C,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206966CC,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696C7C,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,2069722C,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206977DC,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697D8C,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,2069833C,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206988EC,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698E9C,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,2069944C,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206999FC,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699FAC,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693C94,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206946DC,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694C8C,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,2069523C,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206957EC,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695D9C,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,2069634C,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206968FC,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696EAC,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,2069745C,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697A0C,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697FBC,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,2069856C,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698B1C,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,206990CC,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,2069967C,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699C2C,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A1DC,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693CB0,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206946F8,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694CA8,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695258,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695808,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695DB8,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696368,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696918,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696EC8,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697478,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697A28,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697FD8,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698588,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698B38,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,206990E8,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699698,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699C48,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A1F8,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693CCC,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206944C8,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694A78,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695028,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206955D8,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695B88,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696138,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206966E8,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696C98,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697248,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206977F8,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697DA8,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698358,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698908,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698EB8,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699468,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699A18,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699FC8,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693CE8,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206944E4,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694A94,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695044,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206955F4,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695BA4,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696154,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696704,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696CB4,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697264,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697814,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697DC4,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698374,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698924,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698ED4,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699484,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699A34,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699FE4,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693D04,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694500,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694AB0,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695060,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695610,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695BC0,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696170,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696720,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696CD0,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697280,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697830,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697DE0,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698390,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698940,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698EF0,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206994A0,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699A50,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A000,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693D20,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694714,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694CC4,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695274,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695824,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695DD4,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696384,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696934,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696EE4,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697494,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697A44,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697FF4,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206985A4,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698B54,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20699104,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206996B4,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699C64,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A214,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693D3C,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694298,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694848,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694DF8,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206953A8,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695958,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695F08,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206964B8,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696A68,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697018,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206975C8,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697B78,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698128,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206986D8,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698C88,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699238,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206997E8,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699D98,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693D58,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206942B4,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694864,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694E14,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206953C4,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695974,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695F24,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206964D4,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696A84,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697034,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206975E4,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697B94,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698144,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206986F4,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698CA4,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699254,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699804,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699DB4,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693D74,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206942D0,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694880,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694E30,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206953E0,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695990,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695F40,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206964F0,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696AA0,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697050,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697600,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697BB0,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698160,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698710,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698CC0,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699270,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699820,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699DD0,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693D90,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206942EC,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,2069489C,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694E4C,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206953FC,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,206959AC,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695F5C,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,2069650C,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696ABC,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,2069706C,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,2069761C,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697BCC,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,2069817C,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,2069872C,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698CDC,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,2069928C,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,2069983C,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699DEC,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693DAC,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694308,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,206948B8,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694E68,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695418,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,206959C8,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695F78,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696528,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696AD8,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697088,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697638,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697BE8,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698198,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698748,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698CF8,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206992A8,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699858,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699E08,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693DC8,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694324,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,206948D4,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694E84,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695434,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,206959E4,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695F94,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696544,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696AF4,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206970A4,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697654,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697C04,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206981B4,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698764,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698D14,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206992C4,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699874,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699E24,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693DE4,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694340,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,206948F0,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694EA0,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695450,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695A00,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695FB0,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696560,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696B10,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206970C0,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697670,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697C20,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206981D0,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698780,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698D30,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206992E0,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699890,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699E40,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693E00,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,2069435C,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,2069490C,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694EBC,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,2069546C,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695A1C,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695FCC,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,2069657C,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696B2C,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206970DC,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,2069768C,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697C3C,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206981EC,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,2069879C,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698D4C,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206992FC,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206998AC,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699E5C,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693E1C,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694378,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694928,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694ED8,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695488,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695A38,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695FE8,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696598,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696B48,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206970F8,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206976A8,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697C58,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698208,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206987B8,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698D68,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699318,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206998C8,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699E78,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693E38,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694394,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694944,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694EF4,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206954A4,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695A54,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696004,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206965B4,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696B64,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697114,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206976C4,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697C74,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698224,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206987D4,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698D84,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699334,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206998E4,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699E94,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693E54,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206943B0,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694960,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694F10,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206954C0,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695A70,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696020,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206965D0,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696B80,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697130,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206976E0,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697C90,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698240,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206987F0,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698DA0,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699350,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699900,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699EB0,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693E70,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694260,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694810,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694DC0,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695370,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695920,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695ED0,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696480,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696A30,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20696FE0,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697590,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697B40,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206980F0,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206986A0,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698C50,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699200,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206997B0,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699D60,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693E8C,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,2069427C,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,2069482C,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20694DDC,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,2069538C,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,2069593C,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20695EEC,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,2069649C,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696A4C,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20696FFC,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206975AC,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697B5C,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,2069810C,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206986BC,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698C6C,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,2069921C,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,206997CC,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,20699D7C,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693EA8,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694538,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694AE8,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695098,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695648,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695BF8,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206961A8,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696758,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696D08,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206972B8,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697868,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697E18,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206983C8,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698978,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698F28,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206994D8,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699A88,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A038,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693EC4,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694554,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694B04,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,206950B4,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695664,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695C14,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206961C4,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696774,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696D24,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206972D4,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697884,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697E34,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206983E4,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698994,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698F44,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206994F4,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699AA4,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A054,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693EE0,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694570,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694B20,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,206950D0,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695680,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695C30,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206961E0,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696790,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696D40,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206972F0,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206978A0,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697E50,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698400,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206989B0,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698F60,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699510,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699AC0,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A070,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693EFC,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,2069458C,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694B3C,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,206950EC,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,2069569C,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695C4C,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206961FC,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206967AC,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696D5C,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,2069730C,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206978BC,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697E6C,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,2069841C,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206989CC,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698F7C,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,2069952C,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699ADC,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A08C,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693F18,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206945A8,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694B58,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695108,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206956B8,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695C68,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696218,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206967C8,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696D78,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697328,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206978D8,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697E88,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698438,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,206989E8,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698F98,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699548,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699AF8,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A0A8,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693F34,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206945C4,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694B74,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695124,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206956D4,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695C84,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696234,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,206967E4,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696D94,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697344,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,206978F4,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697EA4,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698454,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698A04,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698FB4,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699564,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699B14,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A0C4,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693F50,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206945E0,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694B90,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695140,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,206956F0,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695CA0,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696250,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696800,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696DB0,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697360,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697910,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697EC0,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,20698470,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698A20,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698FD0,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,20699580,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699B30,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A0E0,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693F6C,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,206945FC,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694BAC,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,2069515C,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,2069570C,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695CBC,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,2069626C,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,2069681C,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696DCC,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,2069737C,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,2069792C,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697EDC,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,2069848C,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698A3C,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20698FEC,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,2069959C,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699B4C,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A0FC,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693F88,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694618,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694BC8,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695178,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695728,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695CD8,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,20696288,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696838,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696DE8,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,20697398,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697948,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697EF8,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206984A8,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698A58,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20699008,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206995B8,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699B68,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A118,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693FA4,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694634,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694BE4,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,20695194,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695744,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695CF4,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206962A4,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696854,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696E04,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206973B4,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697964,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697F14,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206984C4,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698A74,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20699024,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206995D4,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699B84,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A134,extended,C5F5E0FF
+
+[Max Best Score]
+patch=1,EE,20693FC0,extended,05F5E0FF
+
+[Max Score-Serious Sam]
+patch=1,EE,20694650,extended,C5F5E0FF
+
+[Max Score-Big Baby]
+patch=1,EE,20694C00,extended,C5F5E0FF
+
+[Max Score-Candy Smiles]
+patch=1,EE,206951B0,extended,C5F5E0FF
+
+[Max Score-Chuck Chuckles]
+patch=1,EE,20695760,extended,C5F5E0FF
+
+[Max Score-Longarm Luke]
+patch=1,EE,20695D10,extended,C5F5E0FF
+
+[Max Score-Bob Wesley]
+patch=1,EE,206962C0,extended,C5F5E0FF
+
+[Max Score-Pumpkin Moonchild]
+patch=1,EE,20696870,extended,C5F5E0FF
+
+[Max Score-Silicon Sam]
+patch=1,EE,20696E20,extended,C5F5E0FF
+
+[Max Score-Bones]
+patch=1,EE,206973D0,extended,C5F5E0FF
+
+[Max Score-Buzz Altman]
+patch=1,EE,20697980,extended,C5F5E0FF
+
+[Max Score-Suzi Darko]
+patch=1,EE,20697F30,extended,C5F5E0FF
+
+[Max Score-Ball Wraith]
+patch=1,EE,206984E0,extended,C5F5E0FF
+
+[Max Score-Nesbot]
+patch=1,EE,20698A90,extended,C5F5E0FF
+
+[Max Score-Superfella]
+patch=1,EE,20699040,extended,C5F5E0FF
+
+[Max Score-Clarence Corndale]
+patch=1,EE,206995F0,extended,C5F5E0FF
+
+[Max Score-Johnny Drive Through]
+patch=1,EE,20699BA0,extended,C5F5E0FF
+
+[Max Score-Ted The Fisherman]
+patch=1,EE,2069A150,extended,C5F5E0FF

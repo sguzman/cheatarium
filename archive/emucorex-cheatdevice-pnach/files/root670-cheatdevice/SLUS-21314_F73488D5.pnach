@@ -1,0 +1,72 @@
+gametitle=Ruff Trigger-The Vanocore Conspiracy (SLUS-21314)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902DD350,extended,00832021
+
+[Disable FMV]
+patch=1,EE,202C8458,extended,24020001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,E4400078
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,46800020
+patch=1,EE,2013E958,extended,0C030088
+
+[Health Never Decreases]
+patch=1,EE,2010B70C,extended,00000000
+
+[Infinite Lives]
+patch=1,EE,201388DC,extended,00000000
+
+[Extra Lives]
+patch=1,EE,101388D4,extended,00000001
+
+[Max Infinite Lives]
+patch=1,EE,201388D4,extended,24020064
+
+[Infinite Ammo Usage]
+patch=1,EE,20129FB0,extended,00000000
+
+[Max Current Ammo]
+patch=1,EE,2013E570,extended,8C51000C
+patch=1,EE,2013E574,extended,AC510000
+
+[Max Overall Ammo]
+patch=1,EE,200C0230,extended,240603E7
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AC46000C
+patch=1,EE,2013E5B4,extended,0C03008C
+
+[Infinite Werewolf Power]
+patch=1,EE,2013E7CC,extended,3C013F80
+patch=1,EE,2013E7D4,extended,AC4106E0
+
+[Infinite Werewolf Power Usage]
+patch=1,EE,20111A40,extended,00000000
+
+[Quick Max Tykels]
+patch=1,EE,2010B048,extended,00000000
+
+[Always Gain 10000 Tykels]
+patch=1,EE,2010AFFC,extended,24042710
+
+[Always Gain 5000 Tykels]
+patch=1,EE,2010AFFC,extended,24041388
+
+[Always Gain 1000 Tykels]
+patch=1,EE,2010AFFC,extended,240403E8
+
+[Always Gain 100 Tykels]
+patch=1,EE,2010AFFC,extended,24040064
+
+[Infinite Time]
+patch=1,EE,2019EDE8,extended,00000000
+
+[Infinite Double Jumps]
+patch=1,EE,201A52CC,extended,00000000
+
+[Infinite Oxygen]
+patch=1,EE,201A97FC,extended,00000000

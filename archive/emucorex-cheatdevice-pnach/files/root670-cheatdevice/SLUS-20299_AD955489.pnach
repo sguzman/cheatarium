@@ -1,0 +1,247 @@
+gametitle=Street Hoops-King Of The Court (SLUS-20299)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90234D6C,extended,0C092FC3
+
+[Home Team Scores 255]
+patch=1,EE,102A2A58,extended,000000FF
+
+[Home Team Scores 150]
+patch=1,EE,102A2A58,extended,000000FF
+
+[Home Team Scores 0]
+patch=1,EE,102A2A58,extended,000000FF
+
+[Home Team Start With 200]
+patch=1,EE,D02A2A58,extended,00000000
+patch=1,EE,102A2A58,extended,000000C8
+
+[Home Team Start With 150]
+patch=1,EE,D02A2A58,extended,00000000
+patch=1,EE,102A2A58,extended,00000096
+
+[Home Team Start With 100]
+patch=1,EE,D02A2A58,extended,00000000
+patch=1,EE,102A2A58,extended,00000064
+
+[Home Team Start With 50]
+patch=1,EE,D02A2A58,extended,00000000
+patch=1,EE,102A2A58,extended,00000032
+
+[Away Team Scores 255]
+patch=1,EE,102A2A5C,extended,000000FF
+
+[Away Team Scores 150]
+patch=1,EE,102A2A5C,extended,000000FF
+
+[Away Team Scores 0]
+patch=1,EE,102A2A5C,extended,000000FF
+
+[Away Team Start With Score 200]
+patch=1,EE,D02A2A5C,extended,00000000
+patch=1,EE,102A2A5C,extended,000000C8
+
+[Away Team Start With Score 150]
+patch=1,EE,D02A2A5C,extended,00000000
+patch=1,EE,102A2A5C,extended,00000096
+
+[Away Team Start With Score 100]
+patch=1,EE,D02A2A5C,extended,00000000
+patch=1,EE,102A2A5C,extended,00000064
+
+[Away Team Start With Score 50]
+patch=1,EE,D02A2A5C,extended,00000000
+patch=1,EE,102A2A5C,extended,00000032
+
+[Home Team 3-Pointers Score 10]
+patch=1,EE,10161E74,extended,0000000A
+
+[Home Team 3-Pointers Score 5]
+patch=1,EE,10161E74,extended,00000005
+
+[Home Team 3-Pointers Score 1]
+patch=1,EE,10161E74,extended,00000001
+
+[Away Team 3-Pointers Score 10]
+patch=1,EE,10161E84,extended,0000000A
+
+[Away Team 3-Pointers Score 5]
+patch=1,EE,10161E84,extended,00000005
+
+[Away Team 3-Pointers Score 1]
+patch=1,EE,10161E84,extended,00000001
+
+[Home Team 2-Pointers/Dunks Score 10]
+patch=1,EE,10161E24,extended,0000000A
+
+[Home Team 2-Pointers/Dunks Score 5]
+patch=1,EE,10161E24,extended,00000005
+
+[Home Team 2-Pointers/Dunks Score 1]
+patch=1,EE,10161E24,extended,00000001
+
+[Away Team 2-Pointers/Dunks Score 10]
+patch=1,EE,10161E0C,extended,0000000A
+patch=1,EE,10161E34,extended,0000000A
+
+[Away Team 2-Pointers/Dunks Score 5]
+patch=1,EE,10161E0C,extended,00000005
+patch=1,EE,10161E34,extended,00000005
+
+[Away Team 2-Pointers/Dunks Score 1]
+patch=1,EE,10161E0C,extended,00000001
+patch=1,EE,10161E34,extended,00000001
+
+[Home Team Always On Fire]
+patch=1,EE,20324A10,extended,00000064
+
+[Away Team Always On Fire]
+patch=1,EE,20324A10,extended,FFFFFF9C
+
+[Noone Ever On Fire]
+patch=1,EE,20324A10,extended,00000000
+
+[P1 Press {L1}+{L2} For More Time]
+patch=1,EE,D0342382,extended,0000FAFF
+patch=1,EE,20324A0C,extended,00004650
+
+[P1 Press {R1}+{R2} To End Period]
+patch=1,EE,D0342382,extended,0000F5FF
+patch=1,EE,20324A0C,extended,00000001
+
+[P2 Press {L1}+{L2} For More Time]
+patch=1,EE,D0342402,extended,0000FAFF
+patch=1,EE,20324A0C,extended,00004650
+
+[P2 Press {R1}+{R2} To End Period]
+patch=1,EE,D0342402,extended,0000F5FF
+patch=1,EE,20324A0C,extended,00000001
+
+[Infinite Money]
+patch=1,EE,1033A7E0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2033A7E0,extended,05F5E0FF
+
+[Game 2]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000001
+
+[Game 3]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000002
+
+[Game 4]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000003
+
+[Game 5]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000004
+
+[Game 6]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000005
+
+[Game 7]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000006
+
+[Game 8]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000007
+
+[Game 9]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000008
+
+[Game 10]
+patch=1,EE,D028B280,extended,00000000
+patch=1,EE,1028B280,extended,00000009
+
+[Unlock All Courts]
+patch=1,EE,40264D48,extended,000B0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Players]
+patch=1,EE,40268648,extended,0055005A
+patch=1,EE,00000001,extended,00000000
+
+[Headache]
+patch=1,EE,202BBDBC,extended,00000001
+
+[Hot Sauce]
+patch=1,EE,202BBEC8,extended,00000001
+
+[The Future]
+patch=1,EE,202BBFD4,extended,00000001
+
+[Main Event]
+patch=1,EE,202BC0E0,extended,00000001
+
+[1/2 Man 1/2 Amazing]
+patch=1,EE,202BC1EC,extended,00000001
+
+[Booger]
+patch=1,EE,202BC2F8,extended,00000001
+
+[Speedy]
+patch=1,EE,202BC404,extended,00000001
+
+[A0]
+patch=1,EE,202BC510,extended,00000001
+
+[Street Hoops Unlock 4]
+patch=1,EE,202BD2AC,extended,00000001
+
+[Street Hoops Unlock 3]
+patch=1,EE,202BD3B8,extended,00000001
+
+[Street Hoops Unlock 2]
+patch=1,EE,202BD4C4,extended,00000001
+
+[Street Hoops Unlock 1]
+patch=1,EE,202BD5D0,extended,00000001
+
+[EP E3 2002]
+patch=1,EE,202BD7E8,extended,00000001
+
+[More A0 ...]
+patch=1,EE,202BD8F4,extended,00000001
+
+[More Booger ...]
+patch=1,EE,202DDA00,extended,00000001
+
+[More Future ...]
+patch=1,EE,202DDB0C,extended,00000001
+
+[More Headache ...]
+patch=1,EE,202DDC18,extended,00000001
+
+[More 1/2 Main, 1/2 Amazing ...]
+patch=1,EE,202DDD24,extended,00000001
+
+[More Hot Sauce ...]
+patch=1,EE,202DDE30,extended,00000001
+
+[More Main Event ...]
+patch=1,EE,202DDF3C,extended,00000001
+
+[More Speedy ...]
+patch=1,EE,202DE048,extended,00000001
+
+[Mix Tape Vol. 3]
+patch=1,EE,202BE150,extended,00000001
+
+[Mix Tape Vol. 4]
+patch=1,EE,202BE154,extended,00000001
+
+[Mix Tape Vol. 5]
+patch=1,EE,202BE158,extended,00000001
+
+[All Courts]
+patch=1,EE,4028B240,extended,000E0001
+patch=1,EE,00000001,extended,00000000

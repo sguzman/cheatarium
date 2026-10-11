@@ -1,0 +1,37 @@
+gametitle=World Rally Championship (SLUS-20419)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901A1124,extended,0C0620CA
+
+[Upside Down Cameras]
+patch=1,EE,00B959DC,extended,00000001
+
+[Increased Acceleration And Top Speed]
+patch=1,EE,00B959DD,extended,00000001
+
+[Speeded Up Codriver Calls]
+patch=1,EE,00B959DE,extended,00000001
+
+[Underwater Visual Effect]
+patch=1,EE,00B959DF,extended,00000001
+
+[Top Down Camera]
+patch=1,EE,00B959E0,extended,00000001
+
+[Removed Car Shell]
+patch=1,EE,00B959E1,extended,00000001
+
+[Flying Car In Replay]
+patch=1,EE,00B959E2,extended,00000001
+
+[Psychadelic Visual Effect]
+patch=1,EE,00B959E3,extended,00000001
+
+[All Bonus Stages Unlocked]
+patch=1,EE,00B959E4,extended,00000001
+
+[Everything Unlocked]
+patch=1,EE,00B959E5,extended,00000001

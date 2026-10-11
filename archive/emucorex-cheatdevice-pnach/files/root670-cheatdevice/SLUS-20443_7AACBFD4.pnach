@@ -1,0 +1,20 @@
+gametitle=Rugrats-Royal Ransom (SLUS-20443)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00380167
+
+[Max Tokens]
+patch=1,EE,203F64F8,extended,0000270F
+
+[Max Money]
+patch=1,EE,203F64FC,extended,0000270F
+
+[Max Batteries]
+patch=1,EE,203F6504,extended,0000270F
+
+[Infinite Health]
+patch=1,EE,2011C238,extended,3C013F80
+patch=1,EE,2011C23C,extended,AE8107B4

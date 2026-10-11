@@ -1,0 +1,34 @@
+gametitle=Turok-Evolution (SLUS-20333)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901C9504,extended,0C0D3A26
+
+[Infinite Ammo]
+patch=1,EE,2014FFE8,extended,241303E7
+
+[All Weapons]
+patch=1,EE,207D85C8,extended,00000001
+
+[Unlimited Ammo]
+patch=1,EE,207D85D0,extended,00000001
+
+[Invincible]
+patch=1,EE,207D85D8,extended,00000001
+
+[Invisible]
+patch=1,EE,207D85E0,extended,00000001
+
+[Load Game For Level Select]
+patch=1,EE,207D85E8,extended,00000001
+
+[Big Heads]
+patch=1,EE,207D85F0,extended,00000001
+
+[Enter Cheat Menu For Demo Level]
+patch=1,EE,207D85F8,extended,00000001
+
+[Enter Cheat Menu For Bonus Level]
+patch=1,EE,207D8600,extended,00000001

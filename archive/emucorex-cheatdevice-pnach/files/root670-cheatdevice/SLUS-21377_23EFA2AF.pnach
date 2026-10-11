@@ -1,0 +1,130 @@
+gametitle=Dance Dance Revolution-Supernova (SLUS-21377)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901273B8,extended,00832021
+
+[Max Meter P1]
+patch=1,EE,108FBEB2,extended,000003E8
+
+[No Meter P1]
+patch=1,EE,108FBEB2,extended,00000000
+
+[Max Perfect's P1]
+patch=1,EE,208FBF94,extended,0000270F
+patch=1,EE,208FBF98,extended,0000270F
+
+[No Perfect's P1]
+patch=1,EE,208FBF94,extended,00000000
+patch=1,EE,208FBF98,extended,00000000
+
+[Max Great's P1]
+patch=1,EE,208FBF9C,extended,0000270F
+
+[No Great's P1]
+patch=1,EE,208FBF9C,extended,00000000
+
+[Max Good's P1]
+patch=1,EE,208FBFA0,extended,0000270F
+
+[No Good's P1]
+patch=1,EE,208FBFA0,extended,00000000
+
+[Max Almost's P1]
+patch=1,EE,208FBFA4,extended,0000270F
+
+[No Almost's P1]
+patch=1,EE,208FBFA4,extended,00000000
+
+[Max Boo's P1]
+patch=1,EE,208FBFA8,extended,0000270F
+
+[No Boo's P1]
+patch=1,EE,208FBFA8,extended,00000000
+
+[Max OK's P1]
+patch=1,EE,208FBFAC,extended,0000270F
+
+[No OK's P1]
+patch=1,EE,208FBFAC,extended,00000000
+
+[Max Max Combo's P1]
+patch=1,EE,208FBFD0,extended,0000270F
+
+[No Max Combo's P1]
+patch=1,EE,208FBFD0,extended,00000000
+
+[Max Meter P2]
+patch=1,EE,10962192,extended,000003E8
+
+[No Meter P2]
+patch=1,EE,10962192,extended,00000000
+
+[Max Perfect's P2]
+patch=1,EE,20962274,extended,0000270F
+patch=1,EE,20962278,extended,0000270F
+
+[No Perfect's P2]
+patch=1,EE,20962274,extended,00000000
+patch=1,EE,20962278,extended,00000000
+
+[Max Great's P2]
+patch=1,EE,2096227C,extended,0000270F
+
+[No Great's P2]
+patch=1,EE,2096227C,extended,00000000
+
+[Max Good's P2]
+patch=1,EE,20962280,extended,0000270F
+
+[No Good's P2]
+patch=1,EE,20962280,extended,00000000
+
+[Max Almost's P2]
+patch=1,EE,20962284,extended,0000270F
+
+[No Almost's P2]
+patch=1,EE,20962284,extended,00000000
+
+[Max Boo's P2]
+patch=1,EE,20962288,extended,0000270F
+
+[No Boo's P2]
+patch=1,EE,20962288,extended,00000000
+
+[Max OK's P2]
+patch=1,EE,2096228C,extended,0000270F
+
+[No OK's P2]
+patch=1,EE,2096228C,extended,00000000
+
+[Max Max Combo's P2]
+patch=1,EE,209622B0,extended,0000270F
+
+[No Max Combo's P2]
+patch=1,EE,209622B0,extended,00000000
+
+[Meter Never Decreases (Both Players)]
+patch=1,EE,2018DF70,extended,00000000
+
+[View Song For Max Ratings]
+patch=1,EE,20156820,extended,24010001
+patch=1,EE,20156824,extended,A0410052
+
+[Infinite Shop Points]
+patch=1,EE,10457624,extended,0000FFFF
+
+[Max Shop Points]
+patch=1,EE,20457624,extended,3B9AC9FF
+
+[Have Everything Available For Purchase]
+patch=1,EE,104577EA,extended,00000202
+patch=1,EE,404577EC,extended,00210001
+patch=1,EE,02020202,extended,00000000
+
+[Unlock Everything]
+patch=1,EE,104577EA,extended,00000C0C
+patch=1,EE,404577EC,extended,00210001
+patch=1,EE,0C0C0C0C,extended,00000000

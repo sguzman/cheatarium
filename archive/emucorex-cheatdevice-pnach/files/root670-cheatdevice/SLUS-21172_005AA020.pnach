@@ -1,0 +1,179 @@
+gametitle=Conflict-Global Terror (SLUS-21172)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904E5788,extended,00832021
+
+[Enable Lighting]
+patch=1,EE,2055F980,extended,00000001
+
+[Enable Debug Mappings]
+patch=1,EE,20551AC0,extended,00000001
+
+[Enable Route Marker Display]
+patch=1,EE,205520F4,extended,00000001
+
+[P1 Press {R3}+Left To Disable Compass]
+patch=1,EE,D083DDC2,extended,0000FF7B
+patch=1,EE,20556268,extended,00000000
+
+[P1 Press {R3}+Right To Enable Compass]
+patch=1,EE,D083DDC2,extended,0000FFDB
+patch=1,EE,20556268,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,20236244,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2023623C,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,1023623C,extended,00000001
+
+[Never Reload]
+patch=1,EE,20236248,extended,00000000
+
+[Infinite Medi-Kits]
+patch=1,EE,202429C0,extended,00000000
+
+[Max Infinite Medi-Kits]
+patch=1,EE,202429BC,extended,240203E7
+
+[Extra Medi-Kits]
+patch=1,EE,202429BC,extended,00451021
+
+[Infinite Grenades]
+patch=1,EE,2023564C,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,20235644,extended,240203E7
+
+[Extra Grenades]
+patch=1,EE,10235644,extended,00000001
+
+[Infinite Mines]
+patch=1,EE,201E92A4,extended,24450000
+
+[Max Infinite Mines]
+patch=1,EE,201E92A4,extended,240503E7
+patch=1,EE,201E92B8,extended,240503E7
+
+[Extra Mines]
+patch=1,EE,201E92A4,extended,24450001
+
+[Duplicate Item Slots To Team Mates]
+patch=1,EE,202429D0,extended,00000000
+
+[Infinite Health (Entire Team)]
+patch=1,EE,200C0220,extended,3C024350
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,ACE20180
+patch=1,EE,201DEBEC,extended,0C030088
+patch=1,EE,201DEBF0,extended,46010034
+
+[Infinite Health (Only Current Character)]
+patch=1,EE,200C0230,extended,3C014350
+patch=1,EE,200C0234,extended,AE210180
+patch=1,EE,200C0238,extended,03E00008
+patch=1,EE,200C023C,extended,C6210180
+patch=1,EE,201F4748,extended,0803008C
+
+[Infinite Health (Vehicles)]
+patch=1,EE,200C0240,extended,C6400188
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,E6400180
+patch=1,EE,20258F30,extended,0C030090
+
+[1-Hit Death (Enemies)]
+patch=1,EE,200C0250,extended,8C810180
+patch=1,EE,200C0254,extended,3C023F80
+patch=1,EE,200C0258,extended,0022082B
+patch=1,EE,200C025C,extended,50200001
+patch=1,EE,200C0260,extended,AC820180
+patch=1,EE,200C0264,extended,0807EBF4
+patch=1,EE,200C0268,extended,C4800180
+patch=1,EE,201FAFCC,extended,08030094
+
+[P1 Press {L3}+{R3} To Kill Enemies]
+patch=1,EE,D083DDC2,extended,0000FFF9
+patch=1,EE,201FAFD4,extended,AC800180
+patch=1,EE,D083DDC2,extended,0000FFFF
+patch=1,EE,201FAFD4,extended,00000000
+
+[Rapid Fire P1]
+patch=1,EE,D083DDC2,extended,0000F7FF
+patch=1,EE,20235FEC,extended,00000000
+patch=1,EE,D083DDC2,extended,0000FFFF
+patch=1,EE,20235FEC,extended,AE240058
+
+[Weapon Is Auto/Rapid Grenade Launcher P1]
+patch=1,EE,E002F7FF,extended,0083DDC2
+patch=1,EE,20236508,extended,00000000
+patch=1,EE,20235FEC,extended,00000000
+patch=1,EE,E002FFFF,extended,0083DDC2
+patch=1,EE,20236508,extended,AE220070
+patch=1,EE,20235FEC,extended,AE240058
+patch=1,EE,E002FDFF,extended,0083DDC2
+patch=1,EE,20236508,extended,00000000
+patch=1,EE,20235FEC,extended,00000000
+patch=1,EE,E002FFFF,extended,0083DDC2
+patch=1,EE,20236508,extended,AE220070
+patch=1,EE,20235FEC,extended,AE240058
+
+[Idiot AI]
+patch=1,EE,205544B8,extended,00000001
+
+[Unlock Cheats Menu (Inside Options)]
+patch=1,EE,2054EF8C,extended,00000001
+
+[Unlock Show Movies (Inside Cheats)]
+patch=1,EE,2054EF30,extended,00000001
+
+[God Mode (Including Vechicles)]
+patch=1,EE,2054EF6C,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2054EF70,extended,00000001
+
+[Enemies Dont Shoot You]
+patch=1,EE,2054EF74,extended,00000000
+
+[Infinite Saves]
+patch=1,EE,2054EF80,extended,00000001
+
+[P1 Press {L1}+{SELECT} For Hyper Speed]
+patch=1,EE,D083DDC2,extended,0000FBFE
+patch=1,EE,2057B378,extended,40000000
+
+[P1 Press {L2}+{SELECT} For Super Hyper Speed]
+patch=1,EE,D083DDC2,extended,0000FEFE
+patch=1,EE,2057B378,extended,40800000
+
+[P1 Press {R1}+{SELECT} For Slow Speed]
+patch=1,EE,D083DDC2,extended,0000F7FE
+patch=1,EE,2057B378,extended,3F400000
+
+[P1 Press {R2}+{SELECT} For Super Slow Speed]
+patch=1,EE,D083DDC2,extended,0000FDFE
+patch=1,EE,2057B378,extended,3F000000
+
+[P1 Press {L3}+{SELECT} For Normal Speed]
+patch=1,EE,D083DDC2,extended,0000FFFC
+patch=1,EE,2057B378,extended,3F800000
+
+[Super Hyper Speed]
+patch=1,EE,2057B378,extended,40800000
+
+[Hyper Speed]
+patch=1,EE,2057B378,extended,40000000
+
+[Normal Speed]
+patch=1,EE,2057B378,extended,3F800000
+
+[Slow Speed]
+patch=1,EE,2057B378,extended,3F400000
+
+[Super Slow Speed]
+patch=1,EE,2057B378,extended,3F000000

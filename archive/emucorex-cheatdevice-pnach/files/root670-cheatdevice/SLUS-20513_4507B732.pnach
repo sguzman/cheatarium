@@ -1,0 +1,61 @@
+gametitle=NBA Starting Five (SLUS-20513)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901789F4,extended,0C056178
+
+[Infinite Time-Outs]
+patch=1,EE,204C6CC8,extended,00000000
+
+[Infinite Shot Clock]
+patch=1,EE,204D66CC,extended,00000000
+
+[Infinite Stamina]
+patch=1,EE,204AACE0,extended,00000000
+
+[Infinite Turbo]
+patch=1,EE,204A7274,extended,00000000
+
+[For Endurance]
+patch=1,EE,20449598,extended,00000000
+
+[For Strength]
+patch=1,EE,20449614,extended,00000000
+
+[For Speed]
+patch=1,EE,20449690,extended,00000000
+
+[For Quickness]
+patch=1,EE,2044970C,extended,00000000
+
+[For Jump]
+patch=1,EE,20449788,extended,00000000
+
+[For 2 Point Shots]
+patch=1,EE,20449804,extended,00000000
+
+[For 3 Point Shots]
+patch=1,EE,20449880,extended,00000000
+
+[For Free Throws]
+patch=1,EE,204498FC,extended,00000000
+
+[For Pass]
+patch=1,EE,20449978,extended,00000000
+
+[For Ball Handling]
+patch=1,EE,204499F4,extended,00000000
+
+[For Steal]
+patch=1,EE,20449A70,extended,00000000
+
+[For Shot Block]
+patch=1,EE,20449AEC,extended,00000000
+
+[For Rebound]
+patch=1,EE,20449B68,extended,00000000
+
+[For Awareness]
+patch=1,EE,20449BE4,extended,00000000

@@ -1,0 +1,50 @@
+gametitle=Test Drive Off Road-Wide Open (SLUS-20177)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,002A024F
+
+[Idiot AI]
+patch=1,EE,201067A0,extended,03E00008
+patch=1,EE,201067A4,extended,00000000
+
+[Infinite Retries]
+patch=1,EE,002E2890,extended,00000004
+
+[Max Money (Career Mode)]
+patch=1,EE,202E59CC,extended,05F5E0FF
+
+[Max Points]
+patch=1,EE,102E6FCC,extended,000003E7
+
+[Unlock Everything]
+patch=1,EE,201269F4,extended,00000000
+
+[MERCEDEZ]
+patch=1,EE,201268D8,extended,00000000
+
+[LOWGRAVY]
+patch=1,EE,201268F8,extended,00000000
+
+[KAHNDAWG]
+patch=1,EE,20126918,extended,00000000
+
+[DNOMAID]
+patch=1,EE,20126938,extended,00000000
+
+[1LAPS1]
+patch=1,EE,20126958,extended,00000000
+
+[2LAPS2]
+patch=1,EE,20126978,extended,00000000
+
+[DBLTIME]
+patch=1,EE,20126998,extended,00000000
+
+[FREEPLAY]
+patch=1,EE,201269B8,extended,00000000
+
+[MONSTRUS]
+patch=1,EE,201269D8,extended,00000000

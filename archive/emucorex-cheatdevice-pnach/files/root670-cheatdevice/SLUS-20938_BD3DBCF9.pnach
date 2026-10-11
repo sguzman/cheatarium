@@ -1,0 +1,5134 @@
+gametitle=Dynasty Warriors 4-Empires (SLUS-20938)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90214240,extended,0C049C58
+
+[Max Gold]
+patch=1,EE,104D1CA8,extended,0000FFFF
+
+[Unlock All Artwork]
+patch=1,EE,409815F0,extended,00060001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Pick Up Arrows For Max Quantity (Both Players)]
+patch=1,EE,201B67DC,extended,24020063
+
+[Infinite Arrows (Both Players)]
+patch=1,EE,201C149C,extended,00000000
+
+[Extra Arrows (Both Players)]
+patch=1,EE,101C1498,extended,00000001
+
+[Can Always Do Musou Move (Press {CIRCLE})]
+patch=1,EE,201C2390,extended,00000000
+
+[Infinite All Powerups (On Pickup)]
+patch=1,EE,201C46B0,extended,00000000
+
+[Max K.O. Count P1]
+patch=1,EE,104D7EF2,extended,0000270F
+
+[Infinite Health P1]
+patch=1,EE,105C053E,extended,00001900
+
+[Max Health P1]
+patch=1,EE,105C053C,extended,00000190
+
+[Max Infinite Health P1]
+patch=1,EE,205C053C,extended,19000190
+
+[Infinite Musou P1]
+patch=1,EE,105C0544,extended,00001900
+
+[Max Musou P1]
+patch=1,EE,105C0542,extended,00000190
+
+[Max Infinite Musou P1]
+patch=1,EE,105C0542,extended,00000190
+patch=1,EE,105C0544,extended,00001900
+
+[Infinite Attack X2 P1 (On Pickup)]
+patch=1,EE,105C0510,extended,00000708
+
+[Infinite Defense X2 P1 (On Pickup)]
+patch=1,EE,105C0514,extended,00000708
+
+[Infinite Speed Up P1 (On Pickup)]
+patch=1,EE,105C0518,extended,00000708
+
+[Infinite Musou Max P1 (On Pickup)]
+patch=1,EE,105C051C,extended,00000708
+
+[Always Have Attack X2 P1]
+patch=1,EE,705C0500,extended,00000040
+patch=1,EE,205C0510,extended,07080708
+
+[Always Have Defense X2 P1]
+patch=1,EE,705C0500,extended,00000010
+patch=1,EE,205C0514,extended,07080708
+
+[Always Have Speed Up P1]
+patch=1,EE,705C0500,extended,00000020
+patch=1,EE,205C0518,extended,07080708
+
+[Always Have Musou Max P1]
+patch=1,EE,705C0500,extended,00000008
+patch=1,EE,205C051C,extended,07080708
+
+[Always Have All Powerups P1]
+patch=1,EE,705C0500,extended,00000078
+patch=1,EE,405C0510,extended,00040001
+patch=1,EE,07080708,extended,00000000
+
+[Infinite Arrows P1]
+patch=1,EE,005E38EC,extended,00000063
+
+[Max K.O. Count P2]
+patch=1,EE,104D8132,extended,0000270F
+
+[Infinite Health P2]
+patch=1,EE,105C077E,extended,00001900
+
+[Max Health P2]
+patch=1,EE,105C077C,extended,00000190
+
+[Max Infinite Health P2]
+patch=1,EE,205C077C,extended,19000190
+
+[Infinite Musou P2]
+patch=1,EE,105C0784,extended,00001900
+
+[Max Musou P2]
+patch=1,EE,105C0782,extended,00000190
+
+[Max Infinite Musou P2]
+patch=1,EE,105C0782,extended,00000190
+patch=1,EE,105C0784,extended,00001900
+
+[Infinite Attack X2 P2 (On Pickup)]
+patch=1,EE,105C0750,extended,00000708
+
+[Infinite Defense X2 P2 (On Pickup)]
+patch=1,EE,105C0754,extended,00000708
+
+[Infinite Speed Up P2 (On Pickup)]
+patch=1,EE,105C0758,extended,00000708
+
+[Infinite Musou Max P2 (On Pickup)]
+patch=1,EE,105C075C,extended,00000708
+
+[Always Have Attack X2 P2]
+patch=1,EE,705C0740,extended,00000040
+patch=1,EE,205C0750,extended,07080708
+
+[Always Have Defense X2 P2]
+patch=1,EE,705C0740,extended,00000010
+patch=1,EE,205C0754,extended,07080708
+
+[Always Have Speed Up P2]
+patch=1,EE,705C0740,extended,00000020
+patch=1,EE,205C0758,extended,07080708
+
+[Always Have Musou Max P2]
+patch=1,EE,705C0740,extended,00000008
+patch=1,EE,205C075C,extended,07080708
+
+[Always Have All Powerups P2]
+patch=1,EE,705C0740,extended,00000078
+patch=1,EE,405C0750,extended,00040001
+patch=1,EE,07080948,extended,00000000
+
+[Infinite Arrows P2]
+patch=1,EE,005E3B2C,extended,00000063
+
+[Have More Items]
+patch=1,EE,200C0220,extended,240300FF
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,A2030003
+patch=1,EE,202F41B0,extended,0C030088
+
+[Access All Regions Items]
+patch=1,EE,2030DC48,extended,00000000
+patch=1,EE,0030DD08,extended,00000001
+
+[Your Items Can Be Used Every Turn]
+patch=1,EE,202F3FEC,extended,00430821
+patch=1,EE,202F3FF8,extended,00000000
+patch=1,EE,202F3FFC,extended,24020006
+patch=1,EE,202F4004,extended,03E00008
+patch=1,EE,202F4008,extended,A0220009
+
+[Own All Regions/Instant Win]
+patch=1,EE,202F3BEC,extended,02001021
+patch=1,EE,202F3BF4,extended,A0700001
+
+[Max Points]
+patch=1,EE,108530A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108530A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108530A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108530A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708530AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108530AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108530B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108530B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108530B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108530B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708530BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108530BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108530C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108530C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108530C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108530C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708530CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108530CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108530D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108530D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108530D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108530D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708530DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108530DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108530E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108530E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108530E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108530E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708530EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108530EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108530F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108530F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108530F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108530F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708530FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108530FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853104,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853104,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853106,extended,00001388
+
+[No Troops]
+patch=1,EE,10853106,extended,00000000
+
+[Level 8]
+patch=1,EE,7085310E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085310E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853114,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853114,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853116,extended,00001388
+
+[No Troops]
+patch=1,EE,10853116,extended,00000000
+
+[Level 8]
+patch=1,EE,7085311E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085311E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853124,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853124,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853126,extended,00001388
+
+[No Troops]
+patch=1,EE,10853126,extended,00000000
+
+[Level 8]
+patch=1,EE,7085312E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085312E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853134,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853134,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853136,extended,00001388
+
+[No Troops]
+patch=1,EE,10853136,extended,00000000
+
+[Level 8]
+patch=1,EE,7085313E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085313E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853144,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853144,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853146,extended,00001388
+
+[No Troops]
+patch=1,EE,10853146,extended,00000000
+
+[Level 8]
+patch=1,EE,7085314E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085314E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853154,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853154,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853156,extended,00001388
+
+[No Troops]
+patch=1,EE,10853156,extended,00000000
+
+[Level 8]
+patch=1,EE,7085315E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085315E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853164,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853164,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853166,extended,00001388
+
+[No Troops]
+patch=1,EE,10853166,extended,00000000
+
+[Level 8]
+patch=1,EE,7085316E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085316E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853174,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853174,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853176,extended,00001388
+
+[No Troops]
+patch=1,EE,10853176,extended,00000000
+
+[Level 8]
+patch=1,EE,7085317E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085317E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853184,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853184,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853186,extended,00001388
+
+[No Troops]
+patch=1,EE,10853186,extended,00000000
+
+[Level 8]
+patch=1,EE,7085318E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085318E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853194,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853194,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853196,extended,00001388
+
+[No Troops]
+patch=1,EE,10853196,extended,00000000
+
+[Level 8]
+patch=1,EE,7085319E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085319E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108531A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108531A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108531A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108531A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708531AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108531AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108531B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108531B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108531B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108531B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708531BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108531BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108531C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108531C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108531C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108531C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708531CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108531CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108531D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108531D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108531D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108531D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708531DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108531DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108531E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108531E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108531E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108531E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708531EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108531EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108531F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108531F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108531F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108531F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708531FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108531FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853204,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853204,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853206,extended,00001388
+
+[No Troops]
+patch=1,EE,10853206,extended,00000000
+
+[Level 8]
+patch=1,EE,7085320E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085320E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853214,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853214,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853216,extended,00001388
+
+[No Troops]
+patch=1,EE,10853216,extended,00000000
+
+[Level 8]
+patch=1,EE,7085321E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085321E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853224,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853224,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853226,extended,00001388
+
+[No Troops]
+patch=1,EE,10853226,extended,00000000
+
+[Level 8]
+patch=1,EE,7085322E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085322E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853234,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853234,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853236,extended,00001388
+
+[No Troops]
+patch=1,EE,10853236,extended,00000000
+
+[Level 8]
+patch=1,EE,7085323E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085323E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853244,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853244,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853246,extended,00001388
+
+[No Troops]
+patch=1,EE,10853246,extended,00000000
+
+[Level 8]
+patch=1,EE,7085324E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085324E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853254,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853254,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853256,extended,00001388
+
+[No Troops]
+patch=1,EE,10853256,extended,00000000
+
+[Level 8]
+patch=1,EE,7085325E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085325E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853264,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853264,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853266,extended,00001388
+
+[No Troops]
+patch=1,EE,10853266,extended,00000000
+
+[Level 8]
+patch=1,EE,7085326E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085326E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853274,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853274,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853276,extended,00001388
+
+[No Troops]
+patch=1,EE,10853276,extended,00000000
+
+[Level 8]
+patch=1,EE,7085327E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085327E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853284,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853284,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853286,extended,00001388
+
+[No Troops]
+patch=1,EE,10853286,extended,00000000
+
+[Level 8]
+patch=1,EE,7085328E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085328E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853294,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853294,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853296,extended,00001388
+
+[No Troops]
+patch=1,EE,10853296,extended,00000000
+
+[Level 8]
+patch=1,EE,7085329E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085329E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108532A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108532A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108532A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108532A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708532AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108532AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108532B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108532B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108532B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108532B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708532BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108532BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108532C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108532C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108532C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108532C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708532CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108532CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108532D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108532D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108532D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108532D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708532DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108532DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108532E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108532E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108532E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108532E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708532EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108532EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108532F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108532F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108532F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108532F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708532FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108532FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853304,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853304,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853306,extended,00001388
+
+[No Troops]
+patch=1,EE,10853306,extended,00000000
+
+[Level 8]
+patch=1,EE,7085330E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085330E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853314,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853314,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853316,extended,00001388
+
+[No Troops]
+patch=1,EE,10853316,extended,00000000
+
+[Level 8]
+patch=1,EE,7085331E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085331E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853324,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853324,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853326,extended,00001388
+
+[No Troops]
+patch=1,EE,10853326,extended,00000000
+
+[Level 8]
+patch=1,EE,7085332E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085332E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853334,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853334,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853336,extended,00001388
+
+[No Troops]
+patch=1,EE,10853336,extended,00000000
+
+[Level 8]
+patch=1,EE,7085333E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085333E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853384,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853384,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853386,extended,00001388
+
+[No Troops]
+patch=1,EE,10853386,extended,00000000
+
+[Level 8]
+patch=1,EE,7085338E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085338E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853394,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853394,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853396,extended,00001388
+
+[No Troops]
+patch=1,EE,10853396,extended,00000000
+
+[Level 8]
+patch=1,EE,7085339E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085339E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108533A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108533A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108533A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108533A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708533AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108533AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108533B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108533B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108533B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108533B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708533BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108533BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108533C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108533C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108533C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108533C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708533CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108533CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108533D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108533D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108533D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108533D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708533DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108533DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108533E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108533E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108533E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108533E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708533EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108533EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108533F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108533F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108533F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108533F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708533FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108533FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853404,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853404,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853406,extended,00001388
+
+[No Troops]
+patch=1,EE,10853406,extended,00000000
+
+[Level 8]
+patch=1,EE,7085340E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085340E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853414,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853414,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853416,extended,00001388
+
+[No Troops]
+patch=1,EE,10853416,extended,00000000
+
+[Level 8]
+patch=1,EE,7085341E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085341E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853424,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853424,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853426,extended,00001388
+
+[No Troops]
+patch=1,EE,10853426,extended,00000000
+
+[Level 8]
+patch=1,EE,7085342E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085342E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853434,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853434,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853436,extended,00001388
+
+[No Troops]
+patch=1,EE,10853436,extended,00000000
+
+[Level 8]
+patch=1,EE,7085343E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085343E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853444,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853444,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853446,extended,00001388
+
+[No Troops]
+patch=1,EE,10853446,extended,00000000
+
+[Level 8]
+patch=1,EE,7085344E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085344E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853454,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853454,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853456,extended,00001388
+
+[No Troops]
+patch=1,EE,10853456,extended,00000000
+
+[Level 8]
+patch=1,EE,7085345E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085345E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853464,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853464,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853466,extended,00001388
+
+[No Troops]
+patch=1,EE,10853466,extended,00000000
+
+[Level 8]
+patch=1,EE,7085346E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085346E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853474,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853474,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853476,extended,00001388
+
+[No Troops]
+patch=1,EE,10853476,extended,00000000
+
+[Level 8]
+patch=1,EE,7085347E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085347E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853484,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853484,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853486,extended,00001388
+
+[No Troops]
+patch=1,EE,10853486,extended,00000000
+
+[Level 8]
+patch=1,EE,7085348E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085348E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853494,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853494,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853496,extended,00001388
+
+[No Troops]
+patch=1,EE,10853496,extended,00000000
+
+[Level 8]
+patch=1,EE,7085349E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085349E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108534A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108534A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108534A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108534A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708534AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108534AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108534B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108534B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108534B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108534B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708534BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108534BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108534C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108534C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108534C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108534C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708534CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108534CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108534D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108534D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108534D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108534D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708534DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108534DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108534E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108534E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108534E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108534E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708534EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108534EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108534F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108534F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108534F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108534F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708534FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108534FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853504,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853504,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853506,extended,00001388
+
+[No Troops]
+patch=1,EE,10853506,extended,00000000
+
+[Level 8]
+patch=1,EE,7085350E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085350E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853514,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853514,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853516,extended,00001388
+
+[No Troops]
+patch=1,EE,10853516,extended,00000000
+
+[Level 8]
+patch=1,EE,7085351E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085351E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853524,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853524,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853526,extended,00001388
+
+[No Troops]
+patch=1,EE,10853526,extended,00000000
+
+[Level 8]
+patch=1,EE,7085352E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085352E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853534,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853534,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853536,extended,00001388
+
+[No Troops]
+patch=1,EE,10853536,extended,00000000
+
+[Level 8]
+patch=1,EE,7085353E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085353E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853544,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853544,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853546,extended,00001388
+
+[No Troops]
+patch=1,EE,10853546,extended,00000000
+
+[Level 8]
+patch=1,EE,7085354E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085354E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853554,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853554,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853556,extended,00001388
+
+[No Troops]
+patch=1,EE,10853556,extended,00000000
+
+[Level 8]
+patch=1,EE,7085355E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085355E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853564,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853564,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853566,extended,00001388
+
+[No Troops]
+patch=1,EE,10853566,extended,00000000
+
+[Level 8]
+patch=1,EE,7085356E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085356E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853574,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853574,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853576,extended,00001388
+
+[No Troops]
+patch=1,EE,10853576,extended,00000000
+
+[Level 8]
+patch=1,EE,7085357E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085357E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853584,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853584,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853586,extended,00001388
+
+[No Troops]
+patch=1,EE,10853586,extended,00000000
+
+[Level 8]
+patch=1,EE,7085358E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085358E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853594,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853594,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853596,extended,00001388
+
+[No Troops]
+patch=1,EE,10853596,extended,00000000
+
+[Level 8]
+patch=1,EE,7085359E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085359E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108535A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108535A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108535A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108535A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708535AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108535AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108535B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108535B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108535B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108535B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708535BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108535BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108535C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108535C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108535C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108535C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708535CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108535CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108535D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108535D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108535D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108535D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708535DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108535DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108535E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108535E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108535E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108535E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708535EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108535EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108535F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108535F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108535F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108535F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708535FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108535FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853604,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853604,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853606,extended,00001388
+
+[No Troops]
+patch=1,EE,10853606,extended,00000000
+
+[Level 8]
+patch=1,EE,7085360E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085360E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853614,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853614,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853616,extended,00001388
+
+[No Troops]
+patch=1,EE,10853616,extended,00000000
+
+[Level 8]
+patch=1,EE,7085361E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085361E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853624,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853624,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853626,extended,00001388
+
+[No Troops]
+patch=1,EE,10853626,extended,00000000
+
+[Level 8]
+patch=1,EE,7085362E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085362E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853634,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853634,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853636,extended,00001388
+
+[No Troops]
+patch=1,EE,10853636,extended,00000000
+
+[Level 8]
+patch=1,EE,7085363E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085363E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853644,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853644,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853646,extended,00001388
+
+[No Troops]
+patch=1,EE,10853646,extended,00000000
+
+[Level 8]
+patch=1,EE,7085364E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085364E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853654,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853654,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853656,extended,00001388
+
+[No Troops]
+patch=1,EE,10853656,extended,00000000
+
+[Level 8]
+patch=1,EE,7085365E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085365E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853664,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853664,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853666,extended,00001388
+
+[No Troops]
+patch=1,EE,10853666,extended,00000000
+
+[Level 8]
+patch=1,EE,7085366E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085366E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853674,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853674,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853676,extended,00001388
+
+[No Troops]
+patch=1,EE,10853676,extended,00000000
+
+[Level 8]
+patch=1,EE,7085367E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085367E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853684,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853684,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853686,extended,00001388
+
+[No Troops]
+patch=1,EE,10853686,extended,00000000
+
+[Level 8]
+patch=1,EE,7085368E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085368E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853694,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853694,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853696,extended,00001388
+
+[No Troops]
+patch=1,EE,10853696,extended,00000000
+
+[Level 8]
+patch=1,EE,7085369E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085369E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108536A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108536A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108536A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108536A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708536AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108536AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108536B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108536B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108536B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108536B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708536BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108536BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108536C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108536C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108536C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108536C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708536CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108536CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108536D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108536D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108536D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108536D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708536DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108536DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108536E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108536E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108536E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108536E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708536EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108536EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108536F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108536F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108536F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108536F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708536FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108536FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853704,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853704,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853706,extended,00001388
+
+[No Troops]
+patch=1,EE,10853706,extended,00000000
+
+[Level 8]
+patch=1,EE,7085370E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085370E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853714,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853714,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853716,extended,00001388
+
+[No Troops]
+patch=1,EE,10853716,extended,00000000
+
+[Level 8]
+patch=1,EE,7085371E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085371E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853724,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853724,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853726,extended,00001388
+
+[No Troops]
+patch=1,EE,10853726,extended,00000000
+
+[Level 8]
+patch=1,EE,7085372E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085372E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853734,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853734,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853736,extended,00001388
+
+[No Troops]
+patch=1,EE,10853736,extended,00000000
+
+[Level 8]
+patch=1,EE,7085373E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085373E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853744,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853744,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853746,extended,00001388
+
+[No Troops]
+patch=1,EE,10853746,extended,00000000
+
+[Level 8]
+patch=1,EE,7085374E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085374E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853754,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853754,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853756,extended,00001388
+
+[No Troops]
+patch=1,EE,10853756,extended,00000000
+
+[Level 8]
+patch=1,EE,7085375E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085375E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853764,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853764,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853766,extended,00001388
+
+[No Troops]
+patch=1,EE,10853766,extended,00000000
+
+[Level 8]
+patch=1,EE,7085376E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085376E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853774,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853774,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853776,extended,00001388
+
+[No Troops]
+patch=1,EE,10853776,extended,00000000
+
+[Level 8]
+patch=1,EE,7085377E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085377E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853784,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853784,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853786,extended,00001388
+
+[No Troops]
+patch=1,EE,10853786,extended,00000000
+
+[Level 8]
+patch=1,EE,7085378E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085378E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853794,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853794,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853796,extended,00001388
+
+[No Troops]
+patch=1,EE,10853796,extended,00000000
+
+[Level 8]
+patch=1,EE,7085379E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085379E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108537A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108537A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108537A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108537A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708537AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108537AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108537B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108537B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108537B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108537B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708537BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108537BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108537C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108537C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108537C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108537C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708537CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108537CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108537D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108537D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108537D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108537D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708537DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108537DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108537E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108537E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108537E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108537E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708537EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108537EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108537F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108537F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108537F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108537F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708537FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108537FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853804,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853804,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853806,extended,00001388
+
+[No Troops]
+patch=1,EE,10853806,extended,00000000
+
+[Level 8]
+patch=1,EE,7085380E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085380E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853814,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853814,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853816,extended,00001388
+
+[No Troops]
+patch=1,EE,10853816,extended,00000000
+
+[Level 8]
+patch=1,EE,7085381E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085381E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853824,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853824,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853826,extended,00001388
+
+[No Troops]
+patch=1,EE,10853826,extended,00000000
+
+[Level 8]
+patch=1,EE,7085382E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085382E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853834,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853834,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853836,extended,00001388
+
+[No Troops]
+patch=1,EE,10853836,extended,00000000
+
+[Level 8]
+patch=1,EE,7085383E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085383E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853844,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853844,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853846,extended,00001388
+
+[No Troops]
+patch=1,EE,10853846,extended,00000000
+
+[Level 8]
+patch=1,EE,7085384E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085384E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853854,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853854,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853856,extended,00001388
+
+[No Troops]
+patch=1,EE,10853856,extended,00000000
+
+[Level 8]
+patch=1,EE,7085385E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085385E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853864,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853864,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853866,extended,00001388
+
+[No Troops]
+patch=1,EE,10853866,extended,00000000
+
+[Level 8]
+patch=1,EE,7085386E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085386E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853874,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853874,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853876,extended,00001388
+
+[No Troops]
+patch=1,EE,10853876,extended,00000000
+
+[Level 8]
+patch=1,EE,7085387E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085387E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853884,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853884,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853886,extended,00001388
+
+[No Troops]
+patch=1,EE,10853886,extended,00000000
+
+[Level 8]
+patch=1,EE,7085388E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085388E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853894,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853894,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853896,extended,00001388
+
+[No Troops]
+patch=1,EE,10853896,extended,00000000
+
+[Level 8]
+patch=1,EE,7085389E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085389E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108538A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108538A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108538A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108538A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708538AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108538AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108538B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108538B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108538B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108538B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708538BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108538BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108538C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108538C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108538C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108538C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708538CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108538CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108538D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108538D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108538D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108538D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708538DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108538DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108538E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108538E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108538E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108538E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708538EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108538EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108538F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108538F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108538F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108538F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708538FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108538FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853904,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853904,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853906,extended,00001388
+
+[No Troops]
+patch=1,EE,10853906,extended,00000000
+
+[Level 8]
+patch=1,EE,7085390E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085390E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853914,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853914,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853916,extended,00001388
+
+[No Troops]
+patch=1,EE,10853916,extended,00000000
+
+[Level 8]
+patch=1,EE,7085391E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085391E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853924,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853924,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853926,extended,00001388
+
+[No Troops]
+patch=1,EE,10853926,extended,00000000
+
+[Level 8]
+patch=1,EE,7085392E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085392E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853934,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853934,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853936,extended,00001388
+
+[No Troops]
+patch=1,EE,10853936,extended,00000000
+
+[Level 8]
+patch=1,EE,7085393E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085393E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853944,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853944,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853946,extended,00001388
+
+[No Troops]
+patch=1,EE,10853946,extended,00000000
+
+[Level 8]
+patch=1,EE,7085394E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085394E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853954,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853954,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853956,extended,00001388
+
+[No Troops]
+patch=1,EE,10853956,extended,00000000
+
+[Level 8]
+patch=1,EE,7085395E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085395E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853964,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853964,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853966,extended,00001388
+
+[No Troops]
+patch=1,EE,10853966,extended,00000000
+
+[Level 8]
+patch=1,EE,7085396E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085396E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853974,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853974,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853976,extended,00001388
+
+[No Troops]
+patch=1,EE,10853976,extended,00000000
+
+[Level 8]
+patch=1,EE,7085397E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085397E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853984,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853984,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853986,extended,00001388
+
+[No Troops]
+patch=1,EE,10853986,extended,00000000
+
+[Level 8]
+patch=1,EE,7085398E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085398E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853994,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853994,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853996,extended,00001388
+
+[No Troops]
+patch=1,EE,10853996,extended,00000000
+
+[Level 8]
+patch=1,EE,7085399E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085399E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108539A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108539A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108539A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108539A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708539AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108539AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108539B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108539B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108539B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108539B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708539BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108539BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108539C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108539C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108539C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108539C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708539CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108539CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108539D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108539D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108539D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108539D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708539DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108539DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108539E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108539E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108539E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108539E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708539EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108539EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108539F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108539F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108539F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108539F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708539FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108539FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A04,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A04,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A06,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A06,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A0E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A0E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A14,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A14,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A16,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A16,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A1E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A1E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A24,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A24,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A26,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A26,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A2E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A2E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A34,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A34,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A36,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A36,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A3E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A3E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A44,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A44,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A46,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A46,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A4E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A4E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A54,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A54,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A56,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A56,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A5E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A5E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A64,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A64,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A66,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A66,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A6E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A6E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A74,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A74,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A76,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A76,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A7E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A7E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A84,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A84,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A86,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A86,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A8E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A8E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853A94,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853A94,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853A96,extended,00001388
+
+[No Troops]
+patch=1,EE,10853A96,extended,00000000
+
+[Level 8]
+patch=1,EE,70853A9E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853A9E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853AA4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853AA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853AA6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853AA6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853AAE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853AAE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853AB4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853AB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853AB6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853AB6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853ABE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853ABE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853AC4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853AC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853AC6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853AC6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853ACE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853ACE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853AD4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853AD4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853AD6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853AD6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853ADE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853ADE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853AE4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853AE4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853AE6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853AE6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853AEE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853AEE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853AF4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853AF4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853AF6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853AF6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853AFE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853AFE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B04,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B04,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B06,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B06,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B0E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B0E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B14,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B14,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B16,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B16,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B1E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B1E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B24,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B24,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B26,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B26,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B2E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B2E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B34,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B34,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B36,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B36,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B3E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B3E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B44,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B44,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B46,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B46,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B4E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B4E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B54,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B54,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B56,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B56,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B5E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B5E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B64,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B64,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B66,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B66,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B6E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B6E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B74,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B74,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B76,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B76,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B7E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B7E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B84,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B84,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B86,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B86,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B8E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B8E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853B94,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853B94,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853B96,extended,00001388
+
+[No Troops]
+patch=1,EE,10853B96,extended,00000000
+
+[Level 8]
+patch=1,EE,70853B9E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853B9E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853BA4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853BA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853BA6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853BA6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853BAE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853BAE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853BB4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853BB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853BB6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853BB6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853BBE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853BBE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853BC4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853BC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853BC6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853BC6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853BCE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853BCE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853BD4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853BD4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853BD6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853BD6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853BDE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853BDE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853BE4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853BE4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853BE6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853BE6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853BEE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853BEE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853BF4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853BF4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853BF6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853BF6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853BFE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853BFE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C04,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C04,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C06,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C06,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C0E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C0E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C14,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C14,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C16,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C16,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C1E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C1E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C24,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C24,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C26,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C26,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C2E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C2E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C34,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C34,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C36,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C36,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C3E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C3E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C44,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C44,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C46,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C46,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C4E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C4E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C54,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C54,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C56,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C56,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C5E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C5E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C64,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C64,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C66,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C66,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C6E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C6E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C74,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C74,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C76,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C76,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C7E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C7E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C84,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C84,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C86,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C86,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C8E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C8E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853C94,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853C94,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853C96,extended,00001388
+
+[No Troops]
+patch=1,EE,10853C96,extended,00000000
+
+[Level 8]
+patch=1,EE,70853C9E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853C9E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853CA4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853CA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853CA6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853CA6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853CAE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853CAE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853CB4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853CB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853CB6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853CB6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853CBE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853CBE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853CC4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853CC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853CC6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853CC6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853CCE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853CCE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853CD4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853CD4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853CD6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853CD6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853CDE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853CDE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853CE4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853CE4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853CE6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853CE6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853CEE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853CEE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853CF4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853CF4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853CF6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853CF6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853CFE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853CFE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D04,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D04,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D06,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D06,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D0E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D0E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D14,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D14,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D16,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D16,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D1E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D1E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D24,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D24,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D26,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D26,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D2E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D2E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D34,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D34,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D36,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D36,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D3E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D3E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D44,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D44,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D46,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D46,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D4E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D4E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D54,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D54,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D56,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D56,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D5E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D5E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D64,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D64,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D66,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D66,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D6E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D6E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D74,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D74,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D76,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D76,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D7E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D7E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D84,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D84,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D86,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D86,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D8E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D8E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853D94,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853D94,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853D96,extended,00001388
+
+[No Troops]
+patch=1,EE,10853D96,extended,00000000
+
+[Level 8]
+patch=1,EE,70853D9E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853D9E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853DA4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853DA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853DA6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853DA6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853DAE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853DAE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853DB4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853DB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853DB6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853DB6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853DBE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853DBE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853DC4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853DC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853DC6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853DC6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853DCE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853DCE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853DD4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853DD4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853DD6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853DD6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853DDE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853DDE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853DE4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853DE4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853DE6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853DE6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853DEE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853DEE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853DF4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853DF4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853DF6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853DF6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853DFE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853DFE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E04,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E04,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E06,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E06,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E0E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E0E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E14,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E14,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E16,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E16,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E1E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E1E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E24,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E24,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E26,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E26,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E2E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E2E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E34,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E34,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E36,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E36,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E3E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E3E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E44,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E44,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E46,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E46,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E4E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E4E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E54,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E54,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E56,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E56,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E5E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E5E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E64,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E64,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E66,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E66,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E6E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E6E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E74,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E74,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E76,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E76,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E7E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E7E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E84,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E84,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E86,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E86,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E8E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E8E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853E94,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853E94,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853E96,extended,00001388
+
+[No Troops]
+patch=1,EE,10853E96,extended,00000000
+
+[Level 8]
+patch=1,EE,70853E9E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853E9E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853EA4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853EA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853EA6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853EA6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853EAE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853EAE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853EB4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853EB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853EB6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853EB6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853EBE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853EBE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853EC4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853EC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853EC6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853EC6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853ECE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853ECE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853ED4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853ED4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853ED6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853ED6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853EDE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853EDE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853EE4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853EE4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853EE6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853EE6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853EEE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853EEE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853EF4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853EF4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853EF6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853EF6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853EFE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853EFE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F04,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F04,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F06,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F06,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F0E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F0E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F14,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F14,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F16,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F16,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F1E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F1E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F24,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F24,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F26,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F26,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F2E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F2E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F34,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F34,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F36,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F36,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F3E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F3E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F44,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F44,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F46,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F46,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F4E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F4E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F54,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F54,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F56,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F56,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F5E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F5E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F64,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F64,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F66,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F66,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F6E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F6E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F74,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F74,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F76,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F76,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F7E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F7E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F84,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F84,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F86,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F86,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F8E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F8E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853F94,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853F94,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853F96,extended,00001388
+
+[No Troops]
+patch=1,EE,10853F96,extended,00000000
+
+[Level 8]
+patch=1,EE,70853F9E,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853F9E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853FA4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853FA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853FA6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853FA6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853FAE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853FAE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853FB4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853FB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853FB6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853FB6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853FBE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853FBE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853FC4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853FC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853FC6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853FC6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853FCE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853FCE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853FD4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853FD4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853FD6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853FD6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853FDE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853FDE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853FE4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853FE4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853FE6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853FE6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853FEE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853FEE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10853FF4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10853FF4,extended,00000000
+
+[Max Troops]
+patch=1,EE,10853FF6,extended,00001388
+
+[No Troops]
+patch=1,EE,10853FF6,extended,00000000
+
+[Level 8]
+patch=1,EE,70853FFE,extended,0000000E
+
+[Level 1]
+patch=1,EE,10853FFE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854004,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854004,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854006,extended,00001388
+
+[No Troops]
+patch=1,EE,10854006,extended,00000000
+
+[Level 8]
+patch=1,EE,7085400E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085400E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854014,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854014,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854016,extended,00001388
+
+[No Troops]
+patch=1,EE,10854016,extended,00000000
+
+[Level 8]
+patch=1,EE,7085401E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085401E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854024,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854024,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854026,extended,00001388
+
+[No Troops]
+patch=1,EE,10854026,extended,00000000
+
+[Level 8]
+patch=1,EE,7085402E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085402E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854034,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854034,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854036,extended,00001388
+
+[No Troops]
+patch=1,EE,10854036,extended,00000000
+
+[Level 8]
+patch=1,EE,7085403E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085403E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854044,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854044,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854046,extended,00001388
+
+[No Troops]
+patch=1,EE,10854046,extended,00000000
+
+[Level 8]
+patch=1,EE,7085404E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085404E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854054,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854054,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854056,extended,00001388
+
+[No Troops]
+patch=1,EE,10854056,extended,00000000
+
+[Level 8]
+patch=1,EE,7085405E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085405E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854064,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854064,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854066,extended,00001388
+
+[No Troops]
+patch=1,EE,10854066,extended,00000000
+
+[Level 8]
+patch=1,EE,7085406E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085406E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854074,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854074,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854076,extended,00001388
+
+[No Troops]
+patch=1,EE,10854076,extended,00000000
+
+[Level 8]
+patch=1,EE,7085407E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085407E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854084,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854084,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854086,extended,00001388
+
+[No Troops]
+patch=1,EE,10854086,extended,00000000
+
+[Level 8]
+patch=1,EE,7085408E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085408E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854094,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854094,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854096,extended,00001388
+
+[No Troops]
+patch=1,EE,10854096,extended,00000000
+
+[Level 8]
+patch=1,EE,7085409E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085409E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108540A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108540A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108540A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108540A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708540AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108540AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108540B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108540B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108540B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108540B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708540BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108540BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108540C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108540C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108540C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108540C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708540CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108540CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108540D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108540D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108540D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108540D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708540DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108540DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108540E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108540E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108540E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108540E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708540EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108540EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108540F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108540F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108540F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108540F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708540FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108540FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854104,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854104,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854106,extended,00001388
+
+[No Troops]
+patch=1,EE,10854106,extended,00000000
+
+[Level 8]
+patch=1,EE,7085410E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085410E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854114,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854114,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854116,extended,00001388
+
+[No Troops]
+patch=1,EE,10854116,extended,00000000
+
+[Level 8]
+patch=1,EE,7085411E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085411E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854124,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854124,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854126,extended,00001388
+
+[No Troops]
+patch=1,EE,10854126,extended,00000000
+
+[Level 8]
+patch=1,EE,7085412E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085412E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854134,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854134,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854136,extended,00001388
+
+[No Troops]
+patch=1,EE,10854136,extended,00000000
+
+[Level 8]
+patch=1,EE,7085413E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085413E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854144,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854144,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854146,extended,00001388
+
+[No Troops]
+patch=1,EE,10854146,extended,00000000
+
+[Level 8]
+patch=1,EE,7085414E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085414E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854154,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854154,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854156,extended,00001388
+
+[No Troops]
+patch=1,EE,10854156,extended,00000000
+
+[Level 8]
+patch=1,EE,7085415E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085415E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854164,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854164,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854166,extended,00001388
+
+[No Troops]
+patch=1,EE,10854166,extended,00000000
+
+[Level 8]
+patch=1,EE,7085416E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085416E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854174,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854174,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854176,extended,00001388
+
+[No Troops]
+patch=1,EE,10854176,extended,00000000
+
+[Level 8]
+patch=1,EE,7085417E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085417E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854184,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854184,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854186,extended,00001388
+
+[No Troops]
+patch=1,EE,10854186,extended,00000000
+
+[Level 8]
+patch=1,EE,7085418E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085418E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854194,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854194,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854196,extended,00001388
+
+[No Troops]
+patch=1,EE,10854196,extended,00000000
+
+[Level 8]
+patch=1,EE,7085419E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085419E,extended,002000F1
+
+[Max Points]
+patch=1,EE,108541A4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108541A4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108541A6,extended,00001388
+
+[No Troops]
+patch=1,EE,108541A6,extended,00000000
+
+[Level 8]
+patch=1,EE,708541AE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108541AE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108541B4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108541B4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108541B6,extended,00001388
+
+[No Troops]
+patch=1,EE,108541B6,extended,00000000
+
+[Level 8]
+patch=1,EE,708541BE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108541BE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108541C4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108541C4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108541C6,extended,00001388
+
+[No Troops]
+patch=1,EE,108541C6,extended,00000000
+
+[Level 8]
+patch=1,EE,708541CE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108541CE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108541D4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108541D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108541D6,extended,00001388
+
+[No Troops]
+patch=1,EE,108541D6,extended,00000000
+
+[Level 8]
+patch=1,EE,708541DE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108541DE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108541E4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108541E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108541E6,extended,00001388
+
+[No Troops]
+patch=1,EE,108541E6,extended,00000000
+
+[Level 8]
+patch=1,EE,708541EE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108541EE,extended,002000F1
+
+[Max Points]
+patch=1,EE,108541F4,extended,0000FFFF
+
+[No Points]
+patch=1,EE,108541F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,108541F6,extended,00001388
+
+[No Troops]
+patch=1,EE,108541F6,extended,00000000
+
+[Level 8]
+patch=1,EE,708541FE,extended,0000000E
+
+[Level 1]
+patch=1,EE,108541FE,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854204,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854204,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854206,extended,00001388
+
+[No Troops]
+patch=1,EE,10854206,extended,00000000
+
+[Level 8]
+patch=1,EE,7085420E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085420E,extended,002000F1
+
+[Max Points]
+patch=1,EE,10854214,extended,0000FFFF
+
+[No Points]
+patch=1,EE,10854214,extended,00000000
+
+[Max Troops]
+patch=1,EE,10854216,extended,00001388
+
+[No Troops]
+patch=1,EE,10854216,extended,00000000
+
+[Level 8]
+patch=1,EE,7085421E,extended,0000000E
+
+[Level 1]
+patch=1,EE,1085421E,extended,002000F1

@@ -1,0 +1,31 @@
+gametitle=Army Men-Sarge's Heroes 2 (SLUS-20132)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9018F7DC,extended,0C06E3EC
+
+[Unlock All Movies/Levels]
+patch=1,EE,20216994,extended,00000010
+
+[Infinite Ammo]
+patch=1,EE,201758C4,extended,00000000
+
+[Tiny Mode]
+patch=1,EE,205FD8D4,extended,00000001
+
+[Debug Info]
+patch=1,EE,205FD96C,extended,00000001
+
+[Have All Weapons]
+patch=1,EE,205FD974,extended,00000001
+
+[Invincible]
+patch=1,EE,205FDA5C,extended,00000001
+
+[Predator Mode]
+patch=1,EE,205FDB60,extended,00000001
+
+[Big Mode]
+patch=1,EE,205FDE98,extended,00000001

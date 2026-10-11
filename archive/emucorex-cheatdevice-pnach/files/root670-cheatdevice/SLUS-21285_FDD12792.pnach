@@ -1,0 +1,545 @@
+gametitle=Ultimate Spider-Man-Limited Edition (SLUS-21285)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,905ED9CC,extended,0C17FA8B
+
+[Infinite Health]
+patch=1,EE,2017B604,extended,C4410208
+patch=1,EE,2017B60C,extended,E4410200
+
+[Max Health Upgrades]
+patch=1,EE,2038807C,extended,24030003
+patch=1,EE,20388080,extended,AE030038
+
+[Infinite Double Jumps]
+patch=1,EE,10164418,extended,00000001
+patch=1,EE,10164434,extended,00000001
+
+[Dont Lose Health From Falling High Distances]
+patch=1,EE,2044B940,extended,00000000
+
+[P1 Press {CROSS} For Moon Jump]
+patch=1,EE,200C0220,extended,3C014140
+patch=1,EE,200C0224,extended,AC410004
+patch=1,EE,200C0228,extended,08080D08
+patch=1,EE,200C022C,extended,C4400004
+patch=1,EE,D0698D82,extended,0000BFFF
+patch=1,EE,2020341C,extended,08030088
+patch=1,EE,D0698D82,extended,0000FFFF
+patch=1,EE,2020341C,extended,C4400004
+
+[P1 Press {L1}+{SELECT} To Stop Race Timers]
+patch=1,EE,E002FBFE,extended,00698D82
+patch=1,EE,203C1720,extended,00000000
+patch=1,EE,203C1724,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Stop Race Timers]
+patch=1,EE,E002FEFE,extended,00698D82
+patch=1,EE,203C1720,extended,E6800020
+patch=1,EE,203C1724,extended,E6820020
+
+[Access All Character]
+patch=1,EE,2066FBE8,extended,00000001
+
+[Access All Characters/Covers/Concept Art/Landmarks]
+patch=1,EE,2066FBF8,extended,00000001
+
+[Alex O' Hirn]
+patch=1,EE,20B27008,extended,3F800000
+
+[Beetle]
+patch=1,EE,20B2700C,extended,3F800000
+
+[Boomerang]
+patch=1,EE,20B27010,extended,3F800000
+
+[Carnage]
+patch=1,EE,20B27014,extended,3F800000
+
+[Police Officer]
+patch=1,EE,20B27018,extended,3F800000
+
+[Die-Caste Thug]
+patch=1,EE,20B2701C,extended,3F800000
+
+[Die-Caste Boss]
+patch=1,EE,20B27020,extended,3F800000
+
+[Die-Caste Lieutenant]
+patch=1,EE,20B27024,extended,3F800000
+
+[Eddie Brock Jr.]
+patch=1,EE,20B27028,extended,3F800000
+
+[Eddie Brock Sr.]
+patch=1,EE,20B2702C,extended,3F800000
+
+[Electro Full Power]
+patch=1,EE,20B27030,extended,3F800000
+
+[Electro]
+patch=1,EE,20B27034,extended,3F800000
+
+[Mei Hua Bang Thug]
+patch=1,EE,20B27038,extended,3F800000
+
+[Mei Hua Bang Boss]
+patch=1,EE,20B2703C,extended,3F800000
+
+[Mei Hua Bang Lieutenant]
+patch=1,EE,20B27040,extended,3F800000
+
+[Nick Fury]
+patch=1,EE,20B27044,extended,3F800000
+
+[Green Goblin]
+patch=1,EE,20B27048,extended,3F800000
+
+[Johnny Storm]
+patch=1,EE,20B2704C,extended,3F800000
+
+[Kenny 'Kong' Harlan]
+patch=1,EE,20B27050,extended,3F800000
+
+[Liz Allen]
+patch=1,EE,20B27054,extended,3F800000
+
+[Mary Jane Watson]
+patch=1,EE,20B27058,extended,3F800000
+
+[Peter Parker]
+patch=1,EE,20B2705C,extended,3F800000
+
+[Richard Parker]
+patch=1,EE,20B27060,extended,3F800000
+
+[Rhino]
+patch=1,EE,20B27064,extended,3F800000
+
+[High Rollers Thug]
+patch=1,EE,20B27068,extended,3F800000
+
+[High Rollers Boss]
+patch=1,EE,20B2706C,extended,3F800000
+
+[High Rollers Lieutenant]
+patch=1,EE,20B27070,extended,3F800000
+
+[Silver Sable]
+patch=1,EE,20B27074,extended,3F800000
+
+[Sable Mercenary]
+patch=1,EE,20B27078,extended,3F800000
+
+[Sharon Carter]
+patch=1,EE,20B2707C,extended,3F800000
+
+[S.H.I.E.L.D. Agent]
+patch=1,EE,20B27080,extended,3F800000
+
+[Shocker]
+patch=1,EE,20B27084,extended,3F800000
+
+[Yancy Street Thug]
+patch=1,EE,20B27088,extended,3F800000
+
+[Yancy Street Boss]
+patch=1,EE,20B2708C,extended,3F800000
+
+[Yancy Street Lieutenant]
+patch=1,EE,20B27090,extended,3F800000
+
+[Spider-Man]
+patch=1,EE,20B27094,extended,3F800000
+
+[Adrian Toomes]
+patch=1,EE,20B27098,extended,3F800000
+
+[Bolivar Trask]
+patch=1,EE,20B2709C,extended,3F800000
+
+[Venom]
+patch=1,EE,20B270A0,extended,3F800000
+
+[Wolverine]
+patch=1,EE,20B270A4,extended,3F800000
+
+[All Characters]
+patch=1,EE,40B27008,extended,00280001
+patch=1,EE,3F800000,extended,00000000
+
+[Father's Pride]
+patch=1,EE,20B270A8,extended,3F800000
+
+[Workout]
+patch=1,EE,20B270AC,extended,3F800000
+
+[Feeding Time]
+patch=1,EE,20B270B0,extended,3F800000
+
+[Hell Of A Mess]
+patch=1,EE,20B270B4,extended,3F800000
+
+[Like A Rhinocerous, But Bigger]
+patch=1,EE,20B270B8,extended,3F800000
+
+[Inexpungible]
+patch=1,EE,20B270BC,extended,3F800000
+
+[Class Trip]
+patch=1,EE,20B270C0,extended,3F800000
+
+[Throw Down]
+patch=1,EE,20B270C4,extended,3F800000
+
+[Pursuit]
+patch=1,EE,20B270C8,extended,3F800000
+
+[Mine]
+patch=1,EE,20B270CC,extended,3F800000
+
+[Cool Suit]
+patch=1,EE,20B270D0,extended,3F800000
+
+[Skyscraper Battle]
+patch=1,EE,20B270D4,extended,3F800000
+
+[The Great Escape]
+patch=1,EE,20B270D8,extended,3F800000
+
+[18 And Over]
+patch=1,EE,20B270DC,extended,3F800000
+
+[A Sample]
+patch=1,EE,20B270E0,extended,3F800000
+
+[Crazy]
+patch=1,EE,20B270E4,extended,3F800000
+
+[Rescue]
+patch=1,EE,20B270E8,extended,3F800000
+
+[Brothers]
+patch=1,EE,20B270EC,extended,3F800000
+
+[Final Battle]
+patch=1,EE,20B270F0,extended,3F800000
+
+[All Concept Art]
+patch=1,EE,40B270A8,extended,00130001
+patch=1,EE,3F800000,extended,00000000
+
+[The Baxter Building]
+patch=1,EE,20B270F4,extended,3F800000
+
+[Daily Bugle]
+patch=1,EE,20B270F8,extended,3F800000
+
+[Doctor Strange's Sanctum Sanctorum]
+patch=1,EE,20B270FC,extended,3F800000
+
+[Eastside Tunnel]
+patch=1,EE,20B27100,extended,3F800000
+
+[Empire State Art Museum]
+patch=1,EE,20B27104,extended,3F800000
+
+[Empire State University]
+patch=1,EE,20B27108,extended,3F800000
+
+[Latverian Embassy]
+patch=1,EE,20B2710C,extended,3F800000
+
+[Midtown High School]
+patch=1,EE,20B27110,extended,3F800000
+
+[Park Castle]
+patch=1,EE,20B27114,extended,3F800000
+
+[Parker's House]
+patch=1,EE,20B27118,extended,3F800000
+
+[Queensborough Bridge]
+patch=1,EE,20B2711C,extended,3F800000
+
+[Reed Richards Science Center]
+patch=1,EE,20B27120,extended,3F800000
+
+[Statue Of Liberty]
+patch=1,EE,20B27124,extended,3F800000
+
+[The Place]
+patch=1,EE,20B27128,extended,3F800000
+
+[Trask Tower]
+patch=1,EE,20B2712C,extended,3F800000
+
+[All Landmarks]
+patch=1,EE,40B270F4,extended,000F0001
+patch=1,EE,3F800000,extended,00000000
+
+[Cover 1]
+patch=1,EE,20B27130,extended,3F800000
+
+[Cover 2]
+patch=1,EE,20B27134,extended,3F800000
+
+[Cover 3]
+patch=1,EE,20B27138,extended,3F800000
+
+[Cover 4]
+patch=1,EE,20B2713C,extended,3F800000
+
+[Cover 5]
+patch=1,EE,20B27140,extended,3F800000
+
+[Cover 6]
+patch=1,EE,20B27144,extended,3F800000
+
+[Cover 7]
+patch=1,EE,20B27148,extended,3F800000
+
+[Cover 8]
+patch=1,EE,20B2714C,extended,3F800000
+
+[Cover 9]
+patch=1,EE,20B27150,extended,3F800000
+
+[Cover 10]
+patch=1,EE,20B27154,extended,3F800000
+
+[Cover 11]
+patch=1,EE,20B27158,extended,3F800000
+
+[Cover 12]
+patch=1,EE,20B2715C,extended,3F800000
+
+[Cover 13]
+patch=1,EE,20B27160,extended,3F800000
+
+[Cover 14]
+patch=1,EE,20B27164,extended,3F800000
+
+[Cover 15]
+patch=1,EE,20B27168,extended,3F800000
+
+[Cover 16]
+patch=1,EE,20B2716C,extended,3F800000
+
+[Cover 17]
+patch=1,EE,20B27170,extended,3F800000
+
+[Cover 18]
+patch=1,EE,20B27174,extended,3F800000
+
+[Cover 19]
+patch=1,EE,20B27178,extended,3F800000
+
+[Cover 20]
+patch=1,EE,20B2717C,extended,3F800000
+
+[Cover 21]
+patch=1,EE,20B27180,extended,3F800000
+
+[Cover 22]
+patch=1,EE,20B27184,extended,3F800000
+
+[Cover 23]
+patch=1,EE,20B27188,extended,3F800000
+
+[Cover 24]
+patch=1,EE,20B2718C,extended,3F800000
+
+[Cover 25]
+patch=1,EE,20B27190,extended,3F800000
+
+[Cover 26]
+patch=1,EE,20B27194,extended,3F800000
+
+[Cover 27]
+patch=1,EE,20B27198,extended,3F800000
+
+[Cover 28]
+patch=1,EE,20B2719C,extended,3F800000
+
+[Cover 29]
+patch=1,EE,20B271A0,extended,3F800000
+
+[Cover 30]
+patch=1,EE,20B271A4,extended,3F800000
+
+[Cover 31]
+patch=1,EE,20B271A8,extended,3F800000
+
+[Cover 32]
+patch=1,EE,20B271AC,extended,3F800000
+
+[Cover 33]
+patch=1,EE,20B271B0,extended,3F800000
+
+[Cover 34]
+patch=1,EE,20B271B4,extended,3F800000
+
+[Cover 35]
+patch=1,EE,20B271B8,extended,3F800000
+
+[Cover 36]
+patch=1,EE,20B271BC,extended,3F800000
+
+[Cover 37]
+patch=1,EE,20B271C0,extended,3F800000
+
+[Cover 38]
+patch=1,EE,20B271C4,extended,3F800000
+
+[Cover 39]
+patch=1,EE,20B271C8,extended,3F800000
+
+[Cover 40]
+patch=1,EE,20B271CC,extended,3F800000
+
+[Cover 41]
+patch=1,EE,20B271D0,extended,3F800000
+
+[Cover 42]
+patch=1,EE,20B271D4,extended,3F800000
+
+[Cover 43]
+patch=1,EE,20B271D8,extended,3F800000
+
+[Cover 44]
+patch=1,EE,20B271DC,extended,3F800000
+
+[Cover 45]
+patch=1,EE,20B271E0,extended,3F800000
+
+[Cover 46]
+patch=1,EE,20B271E4,extended,3F800000
+
+[Cover 47]
+patch=1,EE,20B271E8,extended,3F800000
+
+[Cover 48]
+patch=1,EE,20B271EC,extended,3F800000
+
+[Cover 49]
+patch=1,EE,20B271F0,extended,3F800000
+
+[Cover 50]
+patch=1,EE,20B271F4,extended,3F800000
+
+[Cover 51]
+patch=1,EE,20B271F8,extended,3F800000
+
+[Cover 52]
+patch=1,EE,20B271FC,extended,3F800000
+
+[Cover 53]
+patch=1,EE,20B27200,extended,3F800000
+
+[Cover 54]
+patch=1,EE,20B27204,extended,3F800000
+
+[Cover 55]
+patch=1,EE,20B27208,extended,3F800000
+
+[Cover 56]
+patch=1,EE,20B2720C,extended,3F800000
+
+[Cover 57]
+patch=1,EE,20B27210,extended,3F800000
+
+[Cover 58]
+patch=1,EE,20B27214,extended,3F800000
+
+[Cover 59]
+patch=1,EE,20B27218,extended,3F800000
+
+[Cover 60]
+patch=1,EE,20B2721C,extended,3F800000
+
+[Cover 61]
+patch=1,EE,20B27220,extended,3F800000
+
+[Cover 62]
+patch=1,EE,20B27224,extended,3F800000
+
+[Cover 63]
+patch=1,EE,20B27228,extended,3F800000
+
+[Cover 64]
+patch=1,EE,20B2722C,extended,3F800000
+
+[Cover 65]
+patch=1,EE,20B27230,extended,3F800000
+
+[Cover 66]
+patch=1,EE,20B27234,extended,3F800000
+
+[Cover 67]
+patch=1,EE,20B27238,extended,3F800000
+
+[Cover 68]
+patch=1,EE,20B2723C,extended,3F800000
+
+[Cover 69]
+patch=1,EE,20B27240,extended,3F800000
+
+[Cover 70]
+patch=1,EE,20B27244,extended,3F800000
+
+[Cover 71]
+patch=1,EE,20B27248,extended,3F800000
+
+[Cover 72]
+patch=1,EE,20B2724C,extended,3F800000
+
+[Cover 73]
+patch=1,EE,20B27250,extended,3F800000
+
+[Cover 74]
+patch=1,EE,20B27254,extended,3F800000
+
+[Cover 75]
+patch=1,EE,20B27258,extended,3F800000
+
+[Cover 76]
+patch=1,EE,20B2725C,extended,3F800000
+
+[Cover 77]
+patch=1,EE,20B27260,extended,3F800000
+
+[Cover 78]
+patch=1,EE,20B27264,extended,3F800000
+
+[Cover 79]
+patch=1,EE,20B27268,extended,3F800000
+
+[All Covers]
+patch=1,EE,40B27130,extended,004F0001
+patch=1,EE,3F800000,extended,00000000
+
+[Arachnoman]
+patch=1,EE,20B2726C,extended,3F800000
+
+[Peter Parker]
+patch=1,EE,20B27270,extended,3F800000
+
+[Peter Parker Hoodie]
+patch=1,EE,20B27274,extended,3F800000
+
+[Spider-Man]
+patch=1,EE,20B27278,extended,3F800000
+
+[Black Suit]
+patch=1,EE,20B2727C,extended,3F800000
+
+[Wrestling]
+patch=1,EE,20B27280,extended,3F800000
+
+[All Costumes]
+patch=1,EE,40B2726C,extended,00060001
+patch=1,EE,3F800000,extended,00000000

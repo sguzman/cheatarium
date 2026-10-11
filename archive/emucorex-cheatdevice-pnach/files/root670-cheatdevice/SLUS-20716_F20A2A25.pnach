@@ -1,0 +1,122 @@
+gametitle=Teenage Mutant Ninja Turtles (SLUS-20716)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0012BCDB
+
+[Quick Score Gain]
+patch=1,EE,2020B3CC,extended,244203E7
+
+[Super Quick Score Gain]
+patch=1,EE,2020B3CC,extended,2442270F
+
+[Hella Quick Score Gain]
+patch=1,EE,2020B3CC,extended,24427FFF
+
+[Infinite Normal Shurikens]
+patch=1,EE,202132B4,extended,00000000
+
+[Extra Normal Shurikens]
+patch=1,EE,102132B0,extended,00000001
+
+[Infinite Lightning Shurikens]
+patch=1,EE,202132EC,extended,00000000
+
+[Extra Lightning Shurikens]
+patch=1,EE,102132E8,extended,00000001
+
+[Infinite Fire Shurikens]
+patch=1,EE,20213330,extended,00000000
+
+[Extra Fire Shurikens]
+patch=1,EE,1021332C,extended,00000001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,240200C8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC82002C
+patch=1,EE,202035B0,extended,0C030088
+
+[Infinite Continues]
+patch=1,EE,20D596E0,extended,00000009
+
+[Extra Continues]
+patch=1,EE,2015FB78,extended,00641821
+
+[Always Low Time (Bonus Missions)]
+patch=1,EE,20D5983C,extended,00000000
+
+[Unlock All Characters/Extra Modes]
+patch=1,EE,20D59CA0,extended,FFFFFFFF
+
+[P1 Starts With 50 Normal Shurikens]
+patch=1,EE,20D596E4,extended,00000032
+
+[P1 Starts With 20 Normal Shurikens]
+patch=1,EE,20D596E4,extended,00000014
+
+[P1 Starts With 5 Normal Shurikens]
+patch=1,EE,20D596E4,extended,00000005
+
+[P1 Starts With 50 Lightning Shurikens]
+patch=1,EE,20D596E8,extended,00000032
+
+[P1 Starts With 20 Lightning Shurikens]
+patch=1,EE,20D596E8,extended,00000014
+
+[P1 Starts With 5 Lightning Shurikens]
+patch=1,EE,20D596E8,extended,00000005
+
+[P1 Starts With 50 Fire Shurikens]
+patch=1,EE,20D596EC,extended,00000032
+
+[P1 Starts With 20 Fire Shurikens]
+patch=1,EE,20D596EC,extended,00000014
+
+[P1 Starts With 5 Fire Shurikens]
+patch=1,EE,20D596EC,extended,00000005
+
+[P2 Starts With 50 Normal Shurikens]
+patch=1,EE,20D596F0,extended,00000032
+
+[P2 Starts With 20 Normal Shurikens]
+patch=1,EE,20D596F0,extended,00000014
+
+[P2 Starts With 5 Normal Shurikens]
+patch=1,EE,20D596F0,extended,00000005
+
+[P2 Starts With 50 Lightning Shurikens]
+patch=1,EE,20D596F4,extended,00000032
+
+[P2 Starts With 20 Lightning Shurikens]
+patch=1,EE,20D596F4,extended,00000014
+
+[P2 Starts With 5 Lightning Shurikens]
+patch=1,EE,20D596F4,extended,00000005
+
+[P2 Starts With 50 Fire Shurikens]
+patch=1,EE,20D596F8,extended,00000032
+
+[P2 Starts With 20 Fire Shurikens]
+patch=1,EE,20D596F8,extended,00000014
+
+[P2 Starts With 5 Fire Shurikens]
+patch=1,EE,20D596F8,extended,00000005
+
+[Raphael]
+patch=1,EE,20D59BA0,extended,00000025
+
+[Michelangelo]
+patch=1,EE,20D59BD0,extended,00000025
+
+[Donatello]
+patch=1,EE,20D59C00,extended,00000025
+
+[Leonardo]
+patch=1,EE,20D59C30,extended,00000025
+
+[Unlock All Database-All Characters]
+patch=1,EE,40D59CB8,extended,00040005
+patch=1,EE,0000000F,extended,00000000

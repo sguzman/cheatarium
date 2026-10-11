@@ -1,0 +1,353 @@
+gametitle=Dynasty Warriors 5-Empires (SLUS-21398)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90130848,extended,0C04224A
+
+[Max Infinite Interim Saves]
+patch=1,EE,005E75C8,extended,00000003
+
+[Infinite Interim Save Usage]
+patch=1,EE,D078453C,extended,0000982D
+patch=1,EE,20784544,extended,00000000
+
+[Infinite Mission Time Left]
+patch=1,EE,201E92D0,extended,AC2075CC
+
+[Infinite Powerups (On Pickup)]
+patch=1,EE,20199858,extended,00000000
+
+[Infinite Arrows (Both Characters)]
+patch=1,EE,2019C8E0,extended,00000000
+
+[1-Hit Death (Enemies)]
+patch=1,EE,200C02B0,extended,342189A4
+patch=1,EE,200C02B4,extended,0201082B
+patch=1,EE,200C02B8,extended,50200003
+patch=1,EE,200C02BC,extended,24020000
+patch=1,EE,200C02C0,extended,0043082A
+patch=1,EE,200C02C4,extended,0061100A
+patch=1,EE,200C02C8,extended,03E00008
+patch=1,EE,200C02CC,extended,00000000
+patch=1,EE,201AE1BC,extended,0C0300AC
+patch=1,EE,201AE1C0,extended,3C010054
+
+[1-Hit Death (Enemies) & Infinite Health P1/P2]
+patch=1,EE,200C02B0,extended,342189A4
+patch=1,EE,200C02B4,extended,0201082B
+patch=1,EE,200C02B8,extended,50200003
+patch=1,EE,200C02BC,extended,24020000
+patch=1,EE,200C02C0,extended,00000000
+patch=1,EE,200C02C4,extended,00000000
+patch=1,EE,200C02C8,extended,03E00008
+patch=1,EE,200C02CC,extended,00000000
+patch=1,EE,201AE1BC,extended,0C0300AC
+patch=1,EE,201AE1C0,extended,3C010054
+
+[Unlock All Ending Edits]
+patch=1,EE,2058C208,extended,FFFFFFFF
+patch=1,EE,2058C20C,extended,FFFFFFFF
+
+[Unlock All Movies]
+patch=1,EE,2059051C,extended,FFFFFFFF
+patch=1,EE,20590520,extended,FFFFFFFF
+
+[Unlock All Artwork]
+patch=1,EE,40590524,extended,00060001
+patch=1,EE,FFFFFFFF,extended,00000000
+patch=1,EE,0059053C,extended,000000FF
+
+[Max Gold (Empire Mode)]
+patch=1,EE,200C0220,extended,3403EA60
+patch=1,EE,200C0224,extended,A4430006
+patch=1,EE,200C0228,extended,080BC0F7
+patch=1,EE,200C022C,extended,7BB00000
+patch=1,EE,202F03D4,extended,08030088
+
+[Max Health P1]
+patch=1,EE,10548950,extended,00000190
+
+[Infinite Health P1]
+patch=1,EE,10548952,extended,00001900
+
+[Max Infinite Health P1]
+patch=1,EE,20548952,extended,19000190
+
+[Max Musou P1]
+patch=1,EE,10548956,extended,000000C8
+
+[Infinite Musou P1]
+patch=1,EE,10548958,extended,00000C80
+
+[Max Infinite Musou P1]
+patch=1,EE,10548956,extended,000000C8
+patch=1,EE,10548958,extended,00000C80
+
+[Infinite Offense X2 P1 (On Pickup)]
+patch=1,EE,105488FC,extended,00000708
+
+[Infinite Defense X2 P1 (On Pickup)]
+patch=1,EE,10548900,extended,00000708
+
+[Infinite Speed Up P1 (On Pickup)]
+patch=1,EE,10548904,extended,00000708
+
+[Infinite Musou Max P1 (On Pickup)]
+patch=1,EE,10548908,extended,00000708
+
+[Always Have Offense X2 P1]
+patch=1,EE,705488E1,extended,00000080
+patch=1,EE,205488FC,extended,07080708
+
+[Always Have Defense X2 P1]
+patch=1,EE,705488E2,extended,00000001
+patch=1,EE,20548900,extended,07080708
+
+[Always Have Speed Up X2 P1]
+patch=1,EE,705488E2,extended,00000002
+patch=1,EE,20548904,extended,07080708
+
+[Always Have Musou Max X2 P1]
+patch=1,EE,705488E2,extended,00000004
+patch=1,EE,20548908,extended,07080708
+
+[Always Have All Powerups P1]
+patch=1,EE,705488E1,extended,00000080
+patch=1,EE,705488E2,extended,00000007
+patch=1,EE,205488FC,extended,00040001
+patch=1,EE,07080708,extended,00000000
+
+[Max KO Count P1]
+patch=1,EE,1050A584,extended,0000270F
+
+[No KO Count P1]
+patch=1,EE,1050A584,extended,00000000
+
+[Infinite Arrows P1]
+patch=1,EE,005A20E6,extended,00000063
+
+[No Arrows P1]
+patch=1,EE,005A20E6,extended,00000000
+
+[Always Musou Rage Mode P1]
+patch=1,EE,2054890C,extended,03840384
+
+[Never Musou Rage Mode P1]
+patch=1,EE,2054890C,extended,00000000
+
+[Always Have Musou Token P1]
+patch=1,EE,D054890C,extended,00000000
+patch=1,EE,1054890C,extended,0000FFFF
+
+[Max Health P2]
+patch=1,EE,10548C00,extended,00000190
+
+[Infinite Health P2]
+patch=1,EE,10548C02,extended,00001900
+
+[Max Infinite Health P2]
+patch=1,EE,20548C02,extended,19000190
+
+[Max Musou P2]
+patch=1,EE,10548C06,extended,000000C8
+
+[Infinite Musou P2]
+patch=1,EE,10548C08,extended,00000C80
+
+[Max Infinite Musou P2]
+patch=1,EE,10548C06,extended,000000C8
+patch=1,EE,10548C08,extended,00000C80
+
+[Infinite Offense X2 P2 (On Pickup)]
+patch=1,EE,10548BAC,extended,00000708
+
+[Infinite Defense X2 P2 (On Pickup)]
+patch=1,EE,10548BB0,extended,00000708
+
+[Infinite Speed Up P2 (On Pickup)]
+patch=1,EE,10548BB4,extended,00000708
+
+[Infinite Musou Max P2 (On Pickup)]
+patch=1,EE,10548BB8,extended,00000708
+
+[Always Have Offense X2 P2]
+patch=1,EE,70548B91,extended,00000080
+patch=1,EE,20548BAC,extended,07080708
+
+[Always Have Defense X2 P2]
+patch=1,EE,70548B92,extended,00000001
+patch=1,EE,20548BB0,extended,07080708
+
+[Always Have Speed Up X2 P2]
+patch=1,EE,70548B92,extended,00000002
+patch=1,EE,20548BB4,extended,07080708
+
+[Always Have Musou Max X2 P2]
+patch=1,EE,70548B92,extended,00000004
+patch=1,EE,20548BB8,extended,07080708
+
+[Always Have All Powerups P2]
+patch=1,EE,70548B91,extended,00000080
+patch=1,EE,70548B92,extended,00000007
+patch=1,EE,20548BAC,extended,00040001
+patch=1,EE,070809B8,extended,00000000
+
+[Max KO Count P2]
+patch=1,EE,1050A5CE,extended,0000270F
+
+[No KO Count P2]
+patch=1,EE,1050A5CE,extended,00000000
+
+[Infinite Arrows P2]
+patch=1,EE,005A210E,extended,00000063
+
+[No Arrows P2]
+patch=1,EE,005A210E,extended,00000000
+
+[Always Musou Rage Mode P2]
+patch=1,EE,20548BBC,extended,03840384
+
+[Never Musou Rage Mode P2]
+patch=1,EE,20548BBC,extended,00000000
+
+[Always Have Musou Token P2]
+patch=1,EE,D0548BBC,extended,00000000
+patch=1,EE,10548BBC,extended,0000FFFF
+
+[Fire Orb]
+patch=1,EE,7058D66C,extended,00000004
+
+[Ice Orb]
+patch=1,EE,7058D66C,extended,00000008
+
+[Shadow Orb]
+patch=1,EE,7058D66C,extended,00000010
+
+[Light Orb]
+patch=1,EE,7058D66C,extended,00000020
+
+[Red Hare Harness]
+patch=1,EE,7058D66C,extended,00000040
+
+[Hex Mark Harness]
+patch=1,EE,7058D66C,extended,00000080
+
+[Storm Harness]
+patch=1,EE,7058D66D,extended,00000001
+
+[Shadow Harness]
+patch=1,EE,7058D66D,extended,00000002
+
+[Elephant Harness]
+patch=1,EE,7058D66D,extended,00000004
+
+[Art Of War]
+patch=1,EE,7058D66D,extended,00000008
+
+[Survival Guide]
+patch=1,EE,7058D66D,extended,00000010
+
+[Bodyguard Manual]
+patch=1,EE,7058D66D,extended,00000020
+
+[Demon Band]
+patch=1,EE,7058D66D,extended,00000040
+
+[Way Of Musou]
+patch=1,EE,7058D66D,extended,00000080
+
+[Wind Scroll]
+patch=1,EE,7058D66E,extended,00000001
+
+[Fire Arrows]
+patch=1,EE,7058D66E,extended,00000002
+
+[Arm Guards]
+patch=1,EE,7058D66E,extended,00000004
+
+[Tiger Collar]
+patch=1,EE,7058D66E,extended,00000008
+
+[Green Scroll]
+patch=1,EE,7058D66E,extended,00000010
+
+[Musou Armor]
+patch=1,EE,7058D66E,extended,00000020
+
+[Tribal Remedy]
+patch=1,EE,7058D66E,extended,00000040
+
+[Serpent Earrings]
+patch=1,EE,7058D66E,extended,00000080
+
+[Naga Earrings]
+patch=1,EE,7058D66F,extended,00000001
+
+[Dragon Arms]
+patch=1,EE,7058D66F,extended,00000002
+
+[True Way Of Musou]
+patch=1,EE,7058D66F,extended,00000004
+
+[Ice Arrows]
+patch=1,EE,7058D66F,extended,00000008
+
+[Vampire Arms]
+patch=1,EE,7058D66F,extended,00000010
+
+[Meat Bun Sack]
+patch=1,EE,7058D66F,extended,00000020
+
+[Kirin Hoof]
+patch=1,EE,7058D66F,extended,00000040
+
+[Mammoth Harness]
+patch=1,EE,7058D66F,extended,00000080
+
+[Unicorn Hoof]
+patch=1,EE,7058D670,extended,00000001
+
+[Parry Scroll]
+patch=1,EE,7058D670,extended,00000002
+
+[Siberian Collar]
+patch=1,EE,7058D670,extended,00000004
+
+[Peacock Amulet]
+patch=1,EE,0058D671,extended,00000062
+
+[Dragon Amulet]
+patch=1,EE,0058D672,extended,00000062
+
+[Tiger Amulet]
+patch=1,EE,0058D673,extended,00000062
+
+[Tortoise Amulet]
+patch=1,EE,0058D674,extended,00000062
+
+[Speed Scroll]
+patch=1,EE,0058D675,extended,00000062
+
+[Huang's Bow]
+patch=1,EE,0058D676,extended,00000062
+
+[Horned Helm]
+patch=1,EE,0058D677,extended,00000062
+
+[Seven Star Sash]
+patch=1,EE,0058D678,extended,00000062
+
+[Ginseng]
+patch=1,EE,0058D679,extended,00000062
+
+[Herbal Remedy]
+patch=1,EE,0058D67A,extended,00000062
+
+[All Items]
+patch=1,EE,2058D66C,extended,FFFFFFFF
+patch=1,EE,2058D670,extended,626262FF
+patch=1,EE,2058D674,extended,62626262
+patch=1,EE,1058D678,extended,00006262
+patch=1,EE,0058D67A,extended,00000062

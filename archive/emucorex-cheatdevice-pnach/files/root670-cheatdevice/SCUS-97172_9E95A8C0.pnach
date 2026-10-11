@@ -1,0 +1,185 @@
+gametitle=World Tour Soccer 2002 (SCUS-97172)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00338B67
+
+[Home Team Scores 50]
+patch=1,EE,103B4DE4,extended,00000032
+
+[Home Team Scores 20]
+patch=1,EE,103B4DE4,extended,00000014
+
+[Home Team Scores 0]
+patch=1,EE,103B4DE4,extended,00000000
+
+[Home Team Start With Score 50]
+patch=1,EE,D03B4DE4,extended,00000000
+patch=1,EE,103B4DE4,extended,00000032
+
+[Home Team Start With Score 20]
+patch=1,EE,D03B4DE4,extended,00000000
+patch=1,EE,103B4DE4,extended,00000014
+
+[Home Team Start With Score 10]
+patch=1,EE,D03B4DE4,extended,00000000
+patch=1,EE,103B4DE4,extended,0000000A
+
+[Home Team Start With Score 5]
+patch=1,EE,D03B4DE4,extended,00000000
+patch=1,EE,103B4DE4,extended,00000005
+
+[Away Team Scores 50]
+patch=1,EE,103B4DE6,extended,00000032
+
+[Away Team Scores 20]
+patch=1,EE,103B4DE6,extended,00000014
+
+[Away Team Scores 50]
+patch=1,EE,103B4DE6,extended,00000000
+
+[Away Team Start With Score 50]
+patch=1,EE,D03B4DE6,extended,00000000
+patch=1,EE,103B4DE6,extended,00000032
+
+[Away Team Start With Score 20]
+patch=1,EE,D03B4DE6,extended,00000000
+patch=1,EE,103B4DE6,extended,00000014
+
+[Away Team Start With Score 10]
+patch=1,EE,D03B4DE6,extended,00000000
+patch=1,EE,103B4DE6,extended,0000000A
+
+[Away Team Start With Score 5]
+patch=1,EE,D03B4DE6,extended,00000000
+patch=1,EE,103B4DE6,extended,00000005
+
+[P1 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D0651E42,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P1 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D0651E42,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P1 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D0651E42,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P1 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D0651E42,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040
+
+[P2 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D0651FC2,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P2 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D0651FC2,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P2 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D0651FC2,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P2 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D0651FC2,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040
+
+[P3 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D0652142,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P3 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D0652142,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P3 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D0652142,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P3 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D0652142,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040
+
+[P4 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D06522C2,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P4 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D06522C2,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P4 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D06522C2,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P4 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D06522C2,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040
+
+[P5 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D0652442,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P5 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D0652442,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P5 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D0652442,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P5 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D0652442,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040
+
+[P6 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D06525C2,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P6 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D06525C2,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P6 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D06525C2,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P6 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D06525C2,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040
+
+[P7 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D0652742,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P7 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D0652742,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P7 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D0652742,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P7 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D0652742,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040
+
+[P8 Press {L1}+{L2} For More Time (1st Half)]
+patch=1,EE,D06528C2,extended,0000FAFF
+patch=1,EE,103B4DC4,extended,00000000
+
+[P8 Press {R1}+{R2} To End 1st Half]
+patch=1,EE,D06528C2,extended,0000F5FF
+patch=1,EE,103B4DC4,extended,00003800
+
+[P8 Press {L1}+{R1} For More Time (2nd Half)]
+patch=1,EE,D06528C2,extended,0000F3FF
+patch=1,EE,103B4DC4,extended,00003840
+
+[P8 Press {L1}+{R2} To End 2nd Half]
+patch=1,EE,D06528C2,extended,0000FCFF
+patch=1,EE,103B4DC4,extended,00007040

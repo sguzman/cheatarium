@@ -1,0 +1,56 @@
+gametitle=Pitfall-The Lost Expedition (SLUS-20408)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9044E0C4,extended,0C118DDF
+
+[Disable FMV]
+patch=1,EE,20456C38,extended,24020001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,8E610684
+patch=1,EE,200C0224,extended,0805DBC3
+patch=1,EE,200C0228,extended,AE610688
+patch=1,EE,20176EA0,extended,08030088
+
+[Max Health]
+patch=1,EE,200C0230,extended,2401000A
+patch=1,EE,200C0234,extended,AE610684
+patch=1,EE,200C0238,extended,03E00008
+patch=1,EE,200C023C,extended,E7B40040
+patch=1,EE,20176E6C,extended,0C03008C
+
+[1-Hit Death (Bosses)]
+patch=1,EE,20233008,extended,00000000
+
+[Unlock Nicole]
+patch=1,EE,2055C268,extended,00000001
+
+[Unlock Native]
+patch=1,EE,2055C26C,extended,00000001
+
+[Unlock No Gravity Objects]
+patch=1,EE,2055C270,extended,00000001
+
+[Unlock Low Gravity Objects]
+patch=1,EE,2055C274,extended,00000001
+
+[Unlock Slow Mode]
+patch=1,EE,2055C278,extended,00000001
+
+[Unlock Super-Slow Mode]
+patch=1,EE,2055C27C,extended,00000001
+
+[Unlock Fast Mode]
+patch=1,EE,2055C280,extended,00000001
+
+[Unlock Original Harry]
+patch=1,EE,2055C284,extended,00000001
+
+[Unlock Original Pitfall]
+patch=1,EE,2055C288,extended,00000001
+
+[Unlock Pitfall II-The Lost Caverns]
+patch=1,EE,2055C28C,extended,00000001

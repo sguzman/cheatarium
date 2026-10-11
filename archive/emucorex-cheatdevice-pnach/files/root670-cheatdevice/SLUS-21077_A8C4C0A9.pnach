@@ -1,0 +1,124 @@
+gametitle=Gauntlet-Seven Sorrows (SLUS-21077)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90129E3C,extended,0C04C036
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C0143FE
+patch=1,EE,200C0224,extended,AC610180
+patch=1,EE,200C0228,extended,080DD690
+patch=1,EE,200C022C,extended,C4600180
+patch=1,EE,20375A3C,extended,08030088
+
+[Infinite Magic]
+patch=1,EE,200C0230,extended,3C013F80
+patch=1,EE,200C0234,extended,AC610064
+patch=1,EE,200C0238,extended,080DD69B
+patch=1,EE,200C023C,extended,C4600064
+patch=1,EE,20375A68,extended,0803008C
+
+[Infinite Magic Usage]
+patch=1,EE,202045C8,extended,00000000
+
+[Infinite Lives]
+patch=1,EE,201E05D8,extended,00000000
+
+[Max Infinite Lives]
+patch=1,EE,201E05D4,extended,24030063
+
+[Extra Lives]
+patch=1,EE,101E05D4,extended,00000001
+
+[Quick Max Hit Combo Gain]
+patch=1,EE,103E76FC,extended,00000064
+
+[Super Quick Max Hit Combo Gain]
+patch=1,EE,103E76FC,extended,000003E8
+
+[Ultra Quick Max Hit Combo Gain]
+patch=1,EE,103E76FC,extended,00002710
+
+[Invincible Always On]
+patch=1,EE,1020A4FE,extended,00001000
+
+[P1 Press {L2}+Up To Enable Invincibility]
+patch=1,EE,D050C042,extended,0000FEEF
+patch=1,EE,1020A4FE,extended,00001000
+
+[P1 Press {L2}+Down To Disable Invincibility]
+patch=1,EE,D050C042,extended,0000FEBF
+patch=1,EE,1020A4FE,extended,00001000
+
+[Always Disable HUD]
+patch=1,EE,10374D3E,extended,00001000
+
+[P1 Press {L1}+Up To Disable HUD]
+patch=1,EE,D050C042,extended,0000FBEF
+patch=1,EE,10374D3E,extended,00001000
+
+[P1 Press {L1}+Down To Enable HUD]
+patch=1,EE,D050C042,extended,0000FBBF
+patch=1,EE,10374D3E,extended,00001060
+
+[Idiot AI Always On]
+patch=1,EE,207A3838,extended,00000001
+
+[P1 Press {L1}+Right To Enable Idiot AI]
+patch=1,EE,D050C042,extended,0000FBDF
+patch=1,EE,207A3838,extended,00000001
+
+[P1 Press {L1}+Left To Enable Idiot AI]
+patch=1,EE,D050C042,extended,0000FB7F
+patch=1,EE,207A3838,extended,00000000
+
+[Points Dont Decrease When Purchasing Stats]
+patch=1,EE,203EBA88,extended,00000000
+patch=1,EE,203EBB08,extended,00000000
+patch=1,EE,203EBB90,extended,00000000
+
+[Points Increase When Purchasing Stats]
+patch=1,EE,103EBA80,extended,00000001
+patch=1,EE,103EBB00,extended,00000001
+patch=1,EE,103EBB88,extended,00000001
+
+[Max Damage]
+patch=1,EE,200C0240,extended,0804CB56
+patch=1,EE,200C0244,extended,AE0701F0
+patch=1,EE,20377170,extended,0C030090
+
+[Max Mana Regen]
+patch=1,EE,200C0248,extended,0804CB56
+patch=1,EE,200C024C,extended,AE0701F8
+patch=1,EE,20377194,extended,0C030092
+
+[Max Health]
+patch=1,EE,200C0250,extended,0804CB56
+patch=1,EE,200C0254,extended,AE0701F4
+patch=1,EE,203771B8,extended,0C030094
+
+[Max Points To Spend]
+patch=1,EE,200C0258,extended,0804CB56
+patch=1,EE,200C025C,extended,AE07020C
+patch=1,EE,203771E0,extended,2407270F
+patch=1,EE,203771F0,extended,0C030096
+
+[View Attack To Own It]
+patch=1,EE,20377480,extended,2401FFFF
+patch=1,EE,10377486,extended,00001000
+patch=1,EE,20377488,extended,AC410008
+
+[Gold Dont Decrease When Purchasing Attacks]
+patch=1,EE,203EBE10,extended,00000000
+
+[Gold Increases When Purchasing Attacks]
+patch=1,EE,203EBE08,extended,46140000
+
+[Max Gold]
+patch=1,EE,200C0260,extended,3C0147C3
+patch=1,EE,200C0264,extended,34214F80
+patch=1,EE,200C0268,extended,0804CB56
+patch=1,EE,200C026C,extended,AE010314
+patch=1,EE,20377380,extended,0C030098

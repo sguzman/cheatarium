@@ -1,0 +1,50 @@
+gametitle=Warhammer 40,000-Fire Warrior (SLUS-20597)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,001306DF
+
+[NTSC2PAL]
+patch=1,EE,20102650,extended,24120003
+
+[Disable FMV]
+patch=1,EE,2010C880,extended,24020001
+
+[Infinite Health]
+patch=1,EE,200CDE00,extended,8C6401CC
+patch=1,EE,200CDE04,extended,24050063
+patch=1,EE,200CDE08,extended,03E00008
+patch=1,EE,200CDE0C,extended,AC6401C8
+patch=1,EE,2018B21C,extended,0C030808
+
+[Max Ammo]
+patch=1,EE,2018E34C,extended,240203E7
+
+[Invulnerable]
+patch=1,EE,10189D26,extended,00001000
+patch=1,EE,1018F7FA,extended,00001000
+
+[1-Hit Kills]
+patch=1,EE,1018F596,extended,00001000
+
+[Infinite Ammo]
+patch=1,EE,101E5A32,extended,00001000
+patch=1,EE,101E5C9A,extended,00001000
+patch=1,EE,1020229E,extended,00001000
+
+[Flipy (Inverted Controller)]
+patch=1,EE,20198A08,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,70406990,extended,00000002
+
+[Invunerable]
+patch=1,EE,70406990,extended,00000004
+
+[1 Hit Kill]
+patch=1,EE,70406990,extended,00000008
+
+[Flipy]
+patch=1,EE,70406990,extended,00000020

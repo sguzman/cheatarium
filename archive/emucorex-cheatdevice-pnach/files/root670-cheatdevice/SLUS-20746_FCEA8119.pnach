@@ -1,0 +1,76 @@
+gametitle=Rogue Ops (SLUS-20746)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9035A94C,extended,0C0D977F
+
+[Display FPS]
+patch=1,EE,2043C9DC,extended,00000001
+
+[Infinite Battery]
+patch=1,EE,203BD20C,extended,00000000
+
+[Infinite Health]
+patch=1,EE,201C57BC,extended,C4800014
+patch=1,EE,201C57C0,extended,E4800018
+
+[Invincible (Cant Be Shot)]
+patch=1,EE,201C3B80,extended,03E00008
+patch=1,EE,201C3B84,extended,00000000
+
+[Half Damage Taken]
+patch=1,EE,201C3CD0,extended,00000000
+patch=1,EE,201C3CD4,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,201AACB0,extended,24020063
+
+[Infinite Ammo]
+patch=1,EE,201AACB4,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,201AACB0,extended,00451021
+
+[Never Reload]
+patch=1,EE,201AACC8,extended,00000000
+
+[Big Weapons]
+patch=1,EE,201B89E0,extended,00000000
+
+[Blue Enemies]
+patch=1,EE,1016E962,extended,00001000
+
+[Max Ammo Upon Reload]
+patch=1,EE,201AAB14,extended,00000000
+
+[Activate All Cheats]
+patch=1,EE,2043ECD8,extended,0000FFFF
+
+[Disable FMV]
+patch=1,EE,20350C18,extended,24020001
+
+[Japanese]
+patch=1,EE,202B68A0,extended,24020000
+
+[English]
+patch=1,EE,202B68A0,extended,24020001
+
+[French]
+patch=1,EE,202B68A0,extended,24020002
+
+[Italian]
+patch=1,EE,202B68A0,extended,24020003
+
+[German]
+patch=1,EE,202B68A0,extended,24020004
+
+[Spanish]
+patch=1,EE,202B68A0,extended,24020005
+
+[Dutch]
+patch=1,EE,202B68A0,extended,24020006
+
+[Portuguese]
+patch=1,EE,202B68A0,extended,24020007

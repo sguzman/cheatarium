@@ -1,0 +1,140 @@
+gametitle=Kengo-Master Of Bushido (SLUS-20021)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901940B8,extended,0C0674F1
+
+[Easy 1st Lesson]
+patch=1,EE,001E8138,extended,00000005
+
+[Easy 2nd Lesson]
+patch=1,EE,00299C18,extended,0000000A
+
+[Easy 3rd Lesson]
+patch=1,EE,001E810C,extended,00000005
+
+[Easy Strike Post]
+patch=1,EE,1037DB3C,extended,00000000
+
+[Easy Waterfall]
+patch=1,EE,103815A6,extended,00004400
+
+[Easy Zen Meditation]
+patch=1,EE,2035A420,extended,BFE66666
+
+[Max Attack Speed]
+patch=1,EE,102968C4,extended,0000270F
+patch=1,EE,102968CE,extended,0000270F
+
+[Max Agility]
+patch=1,EE,102968C6,extended,0000270F
+patch=1,EE,102968D0,extended,0000270F
+
+[Max Insight]
+patch=1,EE,102968C8,extended,0000270F
+patch=1,EE,102968D2,extended,0000270F
+
+[Max Spirit]
+patch=1,EE,102968CA,extended,0000270F
+patch=1,EE,102968D4,extended,0000270F
+
+[Max Attack Power]
+patch=1,EE,102968CC,extended,0000270F
+patch=1,EE,102968D6,extended,0000270F
+
+[Infinite Health P1]
+patch=1,EE,201EBF80,extended,3F800000
+
+[1-Hit Death P1]
+patch=1,EE,D01EBF82,extended,00303C23
+patch=1,EE,201EBF80,extended,3C230000
+
+[Max Ki P1]
+patch=1,EE,101EBF88,extended,00001000
+
+[No Ki P1]
+patch=1,EE,101EBF88,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,20225AC0,extended,3F800000
+
+[1-Hit Death P2]
+patch=1,EE,D0225AC2,extended,00303C23
+patch=1,EE,20225AC0,extended,3C230000
+
+[Max Ki P2]
+patch=1,EE,10225AC8,extended,00001000
+
+[No Ki P2]
+patch=1,EE,10225AC8,extended,00000000
+
+[Have All Characters]
+patch=1,EE,20296D74,extended,FFFFFFFF
+
+[Taketsune Nakayama]
+patch=1,EE,20352AB8,extended,40000000
+
+[Shozaemon Hyuga]
+patch=1,EE,20352ABC,extended,40000000
+
+[Yasutomo Yoshimura]
+patch=1,EE,20352AC0,extended,40000000
+
+[Juuro Hirata]
+patch=1,EE,20352AC4,extended,40000000
+
+[Kangoro Morobushi]
+patch=1,EE,20352AC8,extended,40000000
+
+[Genpo Moriya]
+patch=1,EE,20352AD0,extended,40000000
+
+[Toranosuke Matsui]
+patch=1,EE,20352AD4,extended,40000000
+
+[Ichiun Kasukabe]
+patch=1,EE,20352ADC,extended,40000000
+
+[Enshiro Tanabe]
+patch=1,EE,20352AE0,extended,40000000
+
+[Gettan Oaishi]
+patch=1,EE,20352AE8,extended,40000000
+
+[Tatsunao Kirigamine]
+patch=1,EE,20352AEC,extended,40000000
+
+[Zesuiken Tanbara]
+patch=1,EE,20352AF4,extended,40000000
+
+[Hideyasu Takagi]
+patch=1,EE,20352AF8,extended,40000000
+
+[Kakuma Udagawa]
+patch=1,EE,20352B00,extended,40000000
+
+[Kotaro Suzucki]
+patch=1,EE,20352B04,extended,40000000
+
+[Jiroemon Tsubaki]
+patch=1,EE,20352B0C,extended,40000000
+
+[Seiichiro Shirai]
+patch=1,EE,20352B10,extended,40000000
+
+[Shigetoshi Kadokura]
+patch=1,EE,20352B18,extended,40000000
+
+[Kanenobu Nimura]
+patch=1,EE,20352B1C,extended,40000000
+
+[Naotsuna Yoshioka]
+patch=1,EE,20352B24,extended,40000000
+
+[Nobtsuna Kamiizumi]
+patch=1,EE,20352B28,extended,40000000
+
+[Jion Nennami]
+patch=1,EE,20352B2C,extended,40000000

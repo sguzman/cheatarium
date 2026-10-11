@@ -1,0 +1,133 @@
+gametitle=Medal Of Honor-Frontline (SLUS-20368)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902362DC,extended,0C086B39
+
+[Infinite Ammo]
+patch=1,EE,201BBBEC,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,101BBBE8,extended,00000001
+
+[Infinite Health]
+patch=1,EE,20240F60,extended,00000001
+
+[Infinite Ammo (Alternate)]
+patch=1,EE,20240F64,extended,00000001
+
+[Matrix Jumping (Slow Motion)]
+patch=1,EE,20240F6C,extended,00000001
+
+[Bursting Bullets]
+patch=1,EE,20240F80,extended,00000001
+
+[Guards Have No Ammo]
+patch=1,EE,20155CA0,extended,00000000
+
+[No Blurriness]
+patch=1,EE,20240F58,extended,00000000
+
+[Press {L1}+{SELECT} For Super Game Speed]
+patch=1,EE,E002FBFE,extended,0033CB82
+patch=1,EE,2010A6BC,extended,00000000
+patch=1,EE,202410B4,extended,41000000
+
+[Press {L1}+{SELECT} For Ultra Game Speed]
+patch=1,EE,E002FEFE,extended,0033CB82
+patch=1,EE,2010A6BC,extended,00000000
+patch=1,EE,202410B4,extended,42C80000
+
+[Press {R1}+{SELECT} For Normal Game Speed]
+patch=1,EE,E002F7FE,extended,0033CB82
+patch=1,EE,2010A6BC,extended,00000000
+patch=1,EE,202410B4,extended,40400000
+
+[Press {R2}+{SELECT} For Slower Game Speed]
+patch=1,EE,E002FDFE,extended,0033CB82
+patch=1,EE,2010A6BC,extended,00000000
+patch=1,EE,202410B4,extended,3FC00000
+
+[Have All Cheats]
+patch=1,EE,D023FA4C,extended,00000000
+patch=1,EE,2023FA4C,extended,00055555
+
+[Have All Medals]
+patch=1,EE,2023FA50,extended,FFFFFFFF
+
+[All Medals Are Gold]
+patch=1,EE,2023FA54,extended,FFFFFFFF
+patch=1,EE,2023FA58,extended,FFFFFFFF
+
+[Unlock All Levels]
+patch=1,EE,2023FA5C,extended,FFFFFFFF
+
+[Unlock All Movies]
+patch=1,EE,40240E10,extended,00040001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00240E20,extended,00000001
+
+[NPC's Cant Shoot Guns]
+patch=1,EE,20169588,extended,03E00008
+patch=1,EE,2016958C,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Enable See Through Walls]
+patch=1,EE,D033CB82,extended,0000FBFE
+patch=1,EE,20125AA0,extended,24080000
+
+[P1 Press {L2}+{SELECT} To Disable See Through Walls]
+patch=1,EE,D033CB82,extended,0000FEFE
+patch=1,EE,20125AA0,extended,8FA80078
+
+[A Storm In The Port-History]
+patch=1,EE,00240E10,extended,00000001
+
+[A Storm In The Port-Making Of]
+patch=1,EE,00240E11,extended,00000001
+
+[Needle In A Haystack-History]
+patch=1,EE,00240E12,extended,00000001
+
+[Needle In A Haystack-Making Of]
+patch=1,EE,00240E13,extended,00000001
+
+[Several Bridges Too Far-History]
+patch=1,EE,00240E14,extended,00000001
+
+[Several Bridges Too Far-Making Of]
+patch=1,EE,00240E15,extended,00000001
+
+[Rolling Thunder-History]
+patch=1,EE,00240E16,extended,00000001
+
+[Rolling Thunder-Making Of]
+patch=1,EE,00240E17,extended,00000001
+
+[The Horten's Nest-History]
+patch=1,EE,00240E18,extended,00000001
+
+[The Horten's Nest-Making Of]
+patch=1,EE,00240E19,extended,00000001
+
+[D-DAY-History]
+patch=1,EE,00240E1A,extended,00000001
+
+[D-DAY-Making Of]
+patch=1,EE,00240E1B,extended,00000001
+
+[Extras-From The Animator's Desk]
+patch=1,EE,00240E1C,extended,00000001
+
+[Extras-A Good Day To 'Dye']
+patch=1,EE,00240E1D,extended,00000001
+
+[Extras-Team Screens]
+patch=1,EE,00240E1E,extended,00000001
+
+[Extras-The Orchestration Of War]
+patch=1,EE,00240E1F,extended,00000001
+
+[Extras-Bit-Chat]
+patch=1,EE,00240E20,extended,00000001

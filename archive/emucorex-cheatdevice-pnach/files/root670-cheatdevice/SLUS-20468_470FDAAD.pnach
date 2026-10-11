@@ -1,0 +1,8595 @@
+gametitle=Dynasty Tactics (SLUS-20468)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901147B4,extended,0C07B78A
+
+[Max Deeds]
+patch=1,EE,109F7148,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7148,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F714A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F714A,extended,00300001
+patch=1,EE,109F714A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7168,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7168,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7169,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7169,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F716A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F716A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7174,extended,00200063
+patch=1,EE,109F7174,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7174,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7184,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7184,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7186,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7186,extended,00300001
+patch=1,EE,109F7186,extended,00000001
+
+[Max STR]
+patch=1,EE,009F71A4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F71A4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F71A5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F71A5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F71A6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F71A6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F71B0,extended,00200063
+patch=1,EE,109F71B0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F71B0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F71C0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F71C0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F71C2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F71C2,extended,00300001
+patch=1,EE,109F71C2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F71E0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F71E0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F71E1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F71E1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F71E2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F71E2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F71EC,extended,00200063
+patch=1,EE,109F71EC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F71EC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F71FC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F71FC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F71FE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F71FE,extended,00300001
+patch=1,EE,109F71FE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F721C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F721C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F721D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F721D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F721E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F721E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7228,extended,00200063
+patch=1,EE,109F7228,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7228,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7238,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7238,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F723A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F723A,extended,00300001
+patch=1,EE,109F723A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7258,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7258,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7259,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7259,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F725A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F725A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7264,extended,00200063
+patch=1,EE,109F7264,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7264,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7274,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7274,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7276,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7276,extended,00300001
+patch=1,EE,109F7276,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7294,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7294,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7295,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7295,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7296,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7296,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F72A0,extended,00200063
+patch=1,EE,109F72A0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F72A0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F72B0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F72B0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F72B2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F72B2,extended,00300001
+patch=1,EE,109F72B2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F72D0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F72D0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F72D1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F72D1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F72D2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F72D2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F72DC,extended,00200063
+patch=1,EE,109F72DC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F72DC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F72EC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F72EC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F72EE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F72EE,extended,00300001
+patch=1,EE,109F72EE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F730C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F730C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F730D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F730D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F730E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F730E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7318,extended,00200063
+patch=1,EE,109F7318,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7318,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7328,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7328,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F732A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F732A,extended,00300001
+patch=1,EE,109F732A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7348,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7348,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7349,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7349,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F734A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F734A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7354,extended,00200063
+patch=1,EE,109F7354,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7354,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7364,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7364,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7366,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7366,extended,00300001
+patch=1,EE,109F7366,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7384,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7384,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7385,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7385,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7386,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7386,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7390,extended,00200063
+patch=1,EE,109F7390,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7390,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F73A0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F73A0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F73A2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F73A2,extended,00300001
+patch=1,EE,109F73A2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F73C0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F73C0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F73C1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F73C1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F73C2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F73C2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F73CC,extended,00200063
+patch=1,EE,109F73CC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F73CC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F73DC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F73DC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F73DE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F73DE,extended,00300001
+patch=1,EE,109F73DE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F73FC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F73FC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F73FD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F73FD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F73FE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F73FE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7408,extended,00200063
+patch=1,EE,109F7408,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7408,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7418,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7418,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F741A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F741A,extended,00300001
+patch=1,EE,109F741A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7438,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7438,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7439,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7439,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F743A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F743A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7444,extended,00200063
+patch=1,EE,109F7444,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7444,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7454,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7454,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7456,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7456,extended,00300001
+patch=1,EE,109F7456,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7474,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7474,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7475,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7475,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7476,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7476,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7480,extended,00200063
+patch=1,EE,109F7480,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7480,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7490,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7490,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7492,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7492,extended,00300001
+patch=1,EE,109F7492,extended,00000001
+
+[Max STR]
+patch=1,EE,009F74B0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F74B0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F74B1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F74B1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F74B2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F74B2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F74BC,extended,00200063
+patch=1,EE,109F74BC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F74BC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F74CC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F74CC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F74CE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F74CE,extended,00300001
+patch=1,EE,109F74CE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F74EC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F74EC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F74ED,extended,000000FF
+
+[No INT]
+patch=1,EE,009F74ED,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F74EE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F74EE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F74F8,extended,00200063
+patch=1,EE,109F74F8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F74F8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7508,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7508,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F750A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F750A,extended,00300001
+patch=1,EE,109F750A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7528,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7528,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7529,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7529,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F752A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F752A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7534,extended,00200063
+patch=1,EE,109F7534,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7534,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7544,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7544,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7546,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7546,extended,00300001
+patch=1,EE,109F7546,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7564,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7564,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7565,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7565,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7566,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7566,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7570,extended,00200063
+patch=1,EE,109F7570,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7570,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7580,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7580,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7582,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7582,extended,00300001
+patch=1,EE,109F7582,extended,00000001
+
+[Max STR]
+patch=1,EE,009F75A0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F75A0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F75A1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F75A1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F75A2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F75A2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F75AC,extended,00200063
+patch=1,EE,109F75AC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F75AC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F75BC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F75BC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F75BE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F75BE,extended,00300001
+patch=1,EE,109F75BE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F75DC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F75DC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F75DD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F75DD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F75DE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F75DE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F75E8,extended,00200063
+patch=1,EE,109F75E8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F75E8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F75F8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F75F8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F75FA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F75FA,extended,00300001
+patch=1,EE,109F75FA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7618,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7618,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7619,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7619,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F761A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F761A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7624,extended,00200063
+patch=1,EE,109F7624,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7624,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7634,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7634,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7636,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7636,extended,00300001
+patch=1,EE,109F7636,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7654,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7654,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7655,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7655,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7656,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7656,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7660,extended,00200063
+patch=1,EE,109F7660,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7660,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7670,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7670,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7672,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7672,extended,00300001
+patch=1,EE,109F7672,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7690,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7690,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7691,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7691,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7692,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7692,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F769C,extended,00200063
+patch=1,EE,109F769C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F769C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F76AC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F76AC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F76AE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F76AE,extended,00300001
+patch=1,EE,109F76AE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F76CC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F76CC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F76CD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F76CD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F76CE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F76CE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F76D8,extended,00200063
+patch=1,EE,109F76D8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F76D8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F76E8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F76E8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F76EA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F76EA,extended,00300001
+patch=1,EE,109F76EA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7708,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7708,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7709,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7709,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F770A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F770A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7714,extended,00200063
+patch=1,EE,109F7714,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7714,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7724,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7724,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7726,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7726,extended,00300001
+patch=1,EE,109F7726,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7744,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7744,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7745,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7745,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7746,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7746,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7750,extended,00200063
+patch=1,EE,109F7750,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7750,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7760,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7760,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7762,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7762,extended,00300001
+patch=1,EE,109F7762,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7780,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7780,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7781,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7781,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7782,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7782,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F778C,extended,00200063
+patch=1,EE,109F778C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F778C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F779C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F779C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F779E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F779E,extended,00300001
+patch=1,EE,109F779E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F77BC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F77BC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F77BD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F77BD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F77BE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F77BE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F77C8,extended,00200063
+patch=1,EE,109F77C8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F77C8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F77D8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F77D8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F77DA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F77DA,extended,00300001
+patch=1,EE,109F77DA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F77F8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F77F8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F77F9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F77F9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F77FA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F77FA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7804,extended,00200063
+patch=1,EE,109F7804,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7804,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7814,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7814,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7816,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7816,extended,00300001
+patch=1,EE,109F7816,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7834,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7834,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7835,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7835,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7836,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7836,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7840,extended,00200063
+patch=1,EE,109F7840,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7840,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7850,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7850,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7852,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7852,extended,00300001
+patch=1,EE,109F7852,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7870,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7870,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7871,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7871,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7872,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7872,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F787C,extended,00200063
+patch=1,EE,109F787C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F787C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F788C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F788C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F788E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F788E,extended,00300001
+patch=1,EE,109F788E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F78AC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F78AC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F78AD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F78AD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F78AE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F78AE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F78B8,extended,00200063
+patch=1,EE,109F78B8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F78B8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F78C8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F78C8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F78CA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F78CA,extended,00300001
+patch=1,EE,109F78CA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F78E8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F78E8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F78E9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F78E9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F78EA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F78EA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F78F4,extended,00200063
+patch=1,EE,109F78F4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F78F4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7904,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7904,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7906,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7906,extended,00300001
+patch=1,EE,109F7906,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7924,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7924,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7925,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7925,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7926,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7926,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7930,extended,00200063
+patch=1,EE,109F7930,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7930,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7940,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7940,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7942,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7942,extended,00300001
+patch=1,EE,109F7942,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7960,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7960,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7961,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7961,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7962,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7962,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F796C,extended,00200063
+patch=1,EE,109F796C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F796C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F797C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F797C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F797E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F797E,extended,00300001
+patch=1,EE,109F797E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F799C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F799C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F799D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F799D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F799E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F799E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F79A8,extended,00200063
+patch=1,EE,109F79A8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F79A8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F79B8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F79B8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F79BA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F79BA,extended,00300001
+patch=1,EE,109F79BA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F79D8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F79D8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F79D9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F79D9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F79DA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F79DA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F79E4,extended,00200063
+patch=1,EE,109F79E4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F79E4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F79F4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F79F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F79F6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F79F6,extended,00300001
+patch=1,EE,109F79F6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7A14,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7A14,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7A15,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7A15,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7A16,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7A16,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7A20,extended,00200063
+patch=1,EE,109F7A20,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7A20,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7A30,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7A30,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7A32,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7A32,extended,00300001
+patch=1,EE,109F7A32,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7A50,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7A50,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7A51,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7A51,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7A52,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7A52,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7A5C,extended,00200063
+patch=1,EE,109F7A5C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7A5C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7A6C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7A6C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7A6E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7A6E,extended,00300001
+patch=1,EE,109F7A6E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7A8C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7A8C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7A8D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7A8D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7A8E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7A8E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7A98,extended,00200063
+patch=1,EE,109F7A98,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7A98,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7AA8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7AA8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7AAA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7AAA,extended,00300001
+patch=1,EE,109F7AAA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7AC8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7AC8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7AC9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7AC9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7ACA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7ACA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7AD4,extended,00200063
+patch=1,EE,109F7AD4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7AD4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7AE4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7AE4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7AE6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7AE6,extended,00300001
+patch=1,EE,109F7AE6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7B04,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7B04,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7B05,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7B05,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7B06,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7B06,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7B10,extended,00200063
+patch=1,EE,109F7B10,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7B10,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7B20,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7B20,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7B22,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7B22,extended,00300001
+patch=1,EE,109F7B22,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7B40,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7B40,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7B41,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7B41,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7B42,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7B42,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7B4C,extended,00200063
+patch=1,EE,109F7B4C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7B4C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7B5C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7B5C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7B5E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7B5E,extended,00300001
+patch=1,EE,109F7B5E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7B7C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7B7C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7B7D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7B7D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7B7E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7B7E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7B88,extended,00200063
+patch=1,EE,109F7B88,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7B88,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7B98,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7B98,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7B9A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7B9A,extended,00300001
+patch=1,EE,109F7B9A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7BB8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7BB8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7BB9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7BB9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7BBA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7BBA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7BC4,extended,00200063
+patch=1,EE,109F7BC4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7BC4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7BD4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7BD4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7BD6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7BD6,extended,00300001
+patch=1,EE,109F7BD6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7BF4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7BF4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7BF5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7BF5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7BF6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7BF6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7C00,extended,00200063
+patch=1,EE,109F7C00,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7C00,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7C10,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7C10,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7C12,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7C12,extended,00300001
+patch=1,EE,109F7C12,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7C30,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7C30,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7C31,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7C31,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7C32,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7C32,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7C3C,extended,00200063
+patch=1,EE,109F7C3C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7C3C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7C4C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7C4C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7C4E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7C4E,extended,00300001
+patch=1,EE,109F7C4E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7C6C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7C6C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7C6D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7C6D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7C6E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7C6E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7C78,extended,00200063
+patch=1,EE,109F7C78,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7C78,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7C88,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7C88,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7C8A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7C8A,extended,00300001
+patch=1,EE,109F7C8A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7CA8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7CA8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7CA9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7CA9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7CAA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7CAA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7CB4,extended,00200063
+patch=1,EE,109F7CB4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7CB4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7CC4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7CC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7CC6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7CC6,extended,00300001
+patch=1,EE,109F7CC6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7CE4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7CE4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7CE5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7CE5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7CE6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7CE6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7CF0,extended,00200063
+patch=1,EE,109F7CF0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7CF0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7D00,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7D00,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7D02,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7D02,extended,00300001
+patch=1,EE,109F7D02,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7D20,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7D20,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7D21,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7D21,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7D22,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7D22,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7D2C,extended,00200063
+patch=1,EE,109F7D2C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7D2C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7D3C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7D3C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7D3E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7D3E,extended,00300001
+patch=1,EE,109F7D3E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7D5C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7D5C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7D5D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7D5D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7D5E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7D5E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7D68,extended,00200063
+patch=1,EE,109F7D68,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7D68,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7D78,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7D78,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7D7A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7D7A,extended,00300001
+patch=1,EE,109F7D7A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7D98,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7D98,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7D99,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7D99,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7D9A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7D9A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7DA4,extended,00200063
+patch=1,EE,109F7DA4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7DA4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7DB4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7DB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7DB6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7DB6,extended,00300001
+patch=1,EE,109F7DB6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7DD4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7DD4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7DD5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7DD5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7DD6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7DD6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7DE0,extended,00200063
+patch=1,EE,109F7DE0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7DE0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7DF0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7DF0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7DF2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7DF2,extended,00300001
+patch=1,EE,109F7DF2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7E10,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7E10,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7E11,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7E11,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7E12,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7E12,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7E1C,extended,00200063
+patch=1,EE,109F7E1C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7E1C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7E2C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7E2C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7E2E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7E2E,extended,00300001
+patch=1,EE,109F7E2E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7E4C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7E4C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7E4D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7E4D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7E4E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7E4E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7E58,extended,00200063
+patch=1,EE,109F7E58,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7E58,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7E68,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7E68,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7E6A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7E6A,extended,00300001
+patch=1,EE,109F7E6A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7E88,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7E88,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7E89,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7E89,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7E8A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7E8A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7E94,extended,00200063
+patch=1,EE,109F7E94,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7E94,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7EA4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7EA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7EA6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7EA6,extended,00300001
+patch=1,EE,109F7EA6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7EC4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7EC4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7EC5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7EC5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7EC6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7EC6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7ED0,extended,00200063
+patch=1,EE,109F7ED0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7ED0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7EE0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7EE0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7EE2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7EE2,extended,00300001
+patch=1,EE,109F7EE2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7F00,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7F00,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7F01,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7F01,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7F02,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7F02,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7F0C,extended,00200063
+patch=1,EE,109F7F0C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7F0C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7F1C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7F1C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7F1E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7F1E,extended,00300001
+patch=1,EE,109F7F1E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7F3C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7F3C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7F3D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7F3D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7F3E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7F3E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7F48,extended,00200063
+patch=1,EE,109F7F48,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7F48,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7F58,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7F58,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7F5A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7F5A,extended,00300001
+patch=1,EE,109F7F5A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7F78,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7F78,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7F79,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7F79,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7F7A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7F7A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7F84,extended,00200063
+patch=1,EE,109F7F84,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7F84,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7F94,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7F94,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7F96,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7F96,extended,00300001
+patch=1,EE,109F7F96,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7FB4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7FB4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7FB5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7FB5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7FB6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7FB6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7FC0,extended,00200063
+patch=1,EE,109F7FC0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7FC0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F7FD0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F7FD0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F7FD2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F7FD2,extended,00300001
+patch=1,EE,109F7FD2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F7FF0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F7FF0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F7FF1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F7FF1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F7FF2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F7FF2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F7FFC,extended,00200063
+patch=1,EE,109F7FFC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F7FFC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F800C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F800C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F800E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F800E,extended,00300001
+patch=1,EE,109F800E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F802C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F802C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F802D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F802D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F802E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F802E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8038,extended,00200063
+patch=1,EE,109F8038,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8038,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8048,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8048,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F804A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F804A,extended,00300001
+patch=1,EE,109F804A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8068,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8068,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8069,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8069,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F806A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F806A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8074,extended,00200063
+patch=1,EE,109F8074,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8074,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8084,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8084,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8086,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8086,extended,00300001
+patch=1,EE,109F8086,extended,00000001
+
+[Max STR]
+patch=1,EE,009F80A4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F80A4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F80A5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F80A5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F80A6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F80A6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F80B0,extended,00200063
+patch=1,EE,109F80B0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F80B0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F80C0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F80C0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F80C2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F80C2,extended,00300001
+patch=1,EE,109F80C2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F80E0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F80E0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F80E1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F80E1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F80E2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F80E2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F80EC,extended,00200063
+patch=1,EE,109F80EC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F80EC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F80FC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F80FC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F80FE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F80FE,extended,00300001
+patch=1,EE,109F80FE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F811C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F811C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F811D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F811D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F811E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F811E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8128,extended,00200063
+patch=1,EE,109F8128,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8128,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8138,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8138,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F813A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F813A,extended,00300001
+patch=1,EE,109F813A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8158,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8158,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8159,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8159,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F815A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F815A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8164,extended,00200063
+patch=1,EE,109F8164,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8164,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8174,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8174,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8176,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8176,extended,00300001
+patch=1,EE,109F8176,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8194,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8194,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8195,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8195,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8196,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8196,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F81A0,extended,00200063
+patch=1,EE,109F81A0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F81A0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F81B0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F81B0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F81B2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F81B2,extended,00300001
+patch=1,EE,109F81B2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F81D0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F81D0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F81D1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F81D1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F81D2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F81D2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F81DC,extended,00200063
+patch=1,EE,109F81DC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F81DC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F81EC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F81EC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F81EE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F81EE,extended,00300001
+patch=1,EE,109F81EE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F820C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F820C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F820D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F820D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F820E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F820E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8218,extended,00200063
+patch=1,EE,109F8218,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8218,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8228,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8228,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F822A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F822A,extended,00300001
+patch=1,EE,109F822A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8248,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8248,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8249,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8249,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F824A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F824A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8254,extended,00200063
+patch=1,EE,109F8254,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8254,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8264,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8264,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8266,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8266,extended,00300001
+patch=1,EE,109F8266,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8284,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8284,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8285,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8285,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8286,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8286,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8290,extended,00200063
+patch=1,EE,109F8290,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8290,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F82A0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F82A0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F82A2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F82A2,extended,00300001
+patch=1,EE,109F82A2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F82C0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F82C0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F82C1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F82C1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F82C2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F82C2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F82CC,extended,00200063
+patch=1,EE,109F82CC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F82CC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F82DC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F82DC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F82DE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F82DE,extended,00300001
+patch=1,EE,109F82DE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F82FC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F82FC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F82FD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F82FD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F82FE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F82FE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8308,extended,00200063
+patch=1,EE,109F8308,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8308,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8318,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8318,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F831A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F831A,extended,00300001
+patch=1,EE,109F831A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8338,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8338,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8339,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8339,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F833A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F833A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8344,extended,00200063
+patch=1,EE,109F8344,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8344,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8354,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8354,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8356,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8356,extended,00300001
+patch=1,EE,109F8356,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8374,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8374,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8375,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8375,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8376,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8376,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8380,extended,00200063
+patch=1,EE,109F8380,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8380,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8390,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8390,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8392,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8392,extended,00300001
+patch=1,EE,109F8392,extended,00000001
+
+[Max STR]
+patch=1,EE,009F83B0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F83B0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F83B1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F83B1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F83B2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F83B2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F83BC,extended,00200063
+patch=1,EE,109F83BC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F83BC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F83CC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F83CC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F83CE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F83CE,extended,00300001
+patch=1,EE,109F83CE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F83EC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F83EC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F83ED,extended,000000FF
+
+[No INT]
+patch=1,EE,009F83ED,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F83EE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F83EE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F83F8,extended,00200063
+patch=1,EE,109F83F8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F83F8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8408,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8408,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F840A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F840A,extended,00300001
+patch=1,EE,109F840A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8428,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8428,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8429,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8429,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F842A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F842A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8434,extended,00200063
+patch=1,EE,109F8434,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8434,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8444,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8444,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8446,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8446,extended,00300001
+patch=1,EE,109F8446,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8464,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8464,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8465,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8465,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8466,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8466,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8470,extended,00200063
+patch=1,EE,109F8470,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8470,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8480,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8480,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8482,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8482,extended,00300001
+patch=1,EE,109F8482,extended,00000001
+
+[Max STR]
+patch=1,EE,009F84A0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F84A0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F84A1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F84A1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F84A2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F84A2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F84AC,extended,00200063
+patch=1,EE,109F84AC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F84AC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F84BC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F84BC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F84BE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F84BE,extended,00300001
+patch=1,EE,109F84BE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F84DC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F84DC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F84DD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F84DD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F84DE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F84DE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F84E8,extended,00200063
+patch=1,EE,109F84E8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F84E8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F84F8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F84F8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F84FA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F84FA,extended,00300001
+patch=1,EE,109F84FA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8518,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8518,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8519,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8519,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F851A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F851A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8524,extended,00200063
+patch=1,EE,109F8524,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8524,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8534,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8534,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8536,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8536,extended,00300001
+patch=1,EE,109F8536,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8554,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8554,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8555,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8555,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8556,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8556,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8560,extended,00200063
+patch=1,EE,109F8560,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8560,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8570,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8570,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8572,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8572,extended,00300001
+patch=1,EE,109F8572,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8590,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8590,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8591,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8591,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8592,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8592,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F859C,extended,00200063
+patch=1,EE,109F859C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F859C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F85AC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F85AC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F85AE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F85AE,extended,00300001
+patch=1,EE,109F85AE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F85CC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F85CC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F85CD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F85CD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F85CE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F85CE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F85D8,extended,00200063
+patch=1,EE,109F85D8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F85D8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F85E8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F85E8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F85EA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F85EA,extended,00300001
+patch=1,EE,109F85EA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8608,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8608,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8609,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8609,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F860A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F860A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8614,extended,00200063
+patch=1,EE,109F8614,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8614,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8624,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8624,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8626,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8626,extended,00300001
+patch=1,EE,109F8626,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8644,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8644,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8645,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8645,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8646,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8646,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8650,extended,00200063
+patch=1,EE,109F8650,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8650,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8660,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8660,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8662,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8662,extended,00300001
+patch=1,EE,109F8662,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8680,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8680,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8681,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8681,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8682,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8682,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F868C,extended,00200063
+patch=1,EE,109F868C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F868C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F869C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F869C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F869E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F869E,extended,00300001
+patch=1,EE,109F869E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F86BC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F86BC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F86BD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F86BD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F86BE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F86BE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F86C8,extended,00200063
+patch=1,EE,109F86C8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F86C8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F86D8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F86D8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F86DA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F86DA,extended,00300001
+patch=1,EE,109F86DA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F86F8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F86F8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F86F9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F86F9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F86FA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F86FA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8704,extended,00200063
+patch=1,EE,109F8704,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8704,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8714,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8714,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8716,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8716,extended,00300001
+patch=1,EE,109F8716,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8734,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8734,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8735,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8735,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8736,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8736,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8740,extended,00200063
+patch=1,EE,109F8740,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8740,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8750,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8750,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8752,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8752,extended,00300001
+patch=1,EE,109F8752,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8770,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8770,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8771,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8771,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8772,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8772,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F877C,extended,00200063
+patch=1,EE,109F877C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F877C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F878C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F878C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F878E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F878E,extended,00300001
+patch=1,EE,109F878E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F87AC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F87AC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F87AD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F87AD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F87AE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F87AE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F87B8,extended,00200063
+patch=1,EE,109F87B8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F87B8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F87C8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F87C8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F87CA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F87CA,extended,00300001
+patch=1,EE,109F87CA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F87E8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F87E8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F87E9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F87E9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F87EA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F87EA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F87F4,extended,00200063
+patch=1,EE,109F87F4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F87F4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8804,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8804,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8806,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8806,extended,00300001
+patch=1,EE,109F8806,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8824,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8824,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8825,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8825,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8826,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8826,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8830,extended,00200063
+patch=1,EE,109F8830,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8830,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8840,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8840,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8842,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8842,extended,00300001
+patch=1,EE,109F8842,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8860,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8860,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8861,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8861,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8862,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8862,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F886C,extended,00200063
+patch=1,EE,109F886C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F886C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F887C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F887C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F887E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F887E,extended,00300001
+patch=1,EE,109F887E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F889C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F889C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F889D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F889D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F889E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F889E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F88A8,extended,00200063
+patch=1,EE,109F88A8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F88A8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F88B8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F88B8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F88BA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F88BA,extended,00300001
+patch=1,EE,109F88BA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F88D8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F88D8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F88D9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F88D9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F88DA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F88DA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F88E4,extended,00200063
+patch=1,EE,109F88E4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F88E4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F88F4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F88F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F88F6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F88F6,extended,00300001
+patch=1,EE,109F88F6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8914,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8914,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8915,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8915,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8916,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8916,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8920,extended,00200063
+patch=1,EE,109F8920,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8920,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8930,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8930,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8932,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8932,extended,00300001
+patch=1,EE,109F8932,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8950,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8950,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8951,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8951,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8952,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8952,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F895C,extended,00200063
+patch=1,EE,109F895C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F895C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F896C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F896C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F896E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F896E,extended,00300001
+patch=1,EE,109F896E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F898C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F898C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F898D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F898D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F898E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F898E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8998,extended,00200063
+patch=1,EE,109F8998,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8998,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F89A8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F89A8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F89AA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F89AA,extended,00300001
+patch=1,EE,109F89AA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F89C8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F89C8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F89C9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F89C9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F89CA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F89CA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F89D4,extended,00200063
+patch=1,EE,109F89D4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F89D4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F89E4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F89E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F89E6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F89E6,extended,00300001
+patch=1,EE,109F89E6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8A04,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8A04,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8A05,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8A05,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8A06,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8A06,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8A10,extended,00200063
+patch=1,EE,109F8A10,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8A10,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8A20,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8A20,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8A22,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8A22,extended,00300001
+patch=1,EE,109F8A22,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8A40,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8A40,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8A41,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8A41,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8A42,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8A42,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8A4C,extended,00200063
+patch=1,EE,109F8A4C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8A4C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8A5C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8A5C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8A5E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8A5E,extended,00300001
+patch=1,EE,109F8A5E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8A7C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8A7C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8A7D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8A7D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8A7E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8A7E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8A88,extended,00200063
+patch=1,EE,109F8A88,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8A88,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8A98,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8A98,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8A9A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8A9A,extended,00300001
+patch=1,EE,109F8A9A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8AB8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8AB8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8AB9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8AB9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8ABA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8ABA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8AC4,extended,00200063
+patch=1,EE,109F8AC4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8AC4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8AD4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8AD4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8AD6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8AD6,extended,00300001
+patch=1,EE,109F8AD6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8AF4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8AF4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8AF5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8AF5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8AF6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8AF6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8B00,extended,00200063
+patch=1,EE,109F8B00,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8B00,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8B10,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8B10,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8B12,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8B12,extended,00300001
+patch=1,EE,109F8B12,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8B30,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8B30,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8B31,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8B31,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8B32,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8B32,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8B3C,extended,00200063
+patch=1,EE,109F8B3C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8B3C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8B4C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8B4C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8B4E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8B4E,extended,00300001
+patch=1,EE,109F8B4E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8B6C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8B6C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8B6D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8B6D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8B6E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8B6E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8B78,extended,00200063
+patch=1,EE,109F8B78,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8B78,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8B88,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8B88,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8B8A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8B8A,extended,00300001
+patch=1,EE,109F8B8A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8BA8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8BA8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8BA9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8BA9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8BAA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8BAA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8BB4,extended,00200063
+patch=1,EE,109F8BB4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8BB4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8BC4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8BC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8BC6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8BC6,extended,00300001
+patch=1,EE,109F8BC6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8BE4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8BE4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8BE5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8BE5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8BE6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8BE6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8BF0,extended,00200063
+patch=1,EE,109F8BF0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8BF0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8C00,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8C00,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8C02,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8C02,extended,00300001
+patch=1,EE,109F8C02,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8C20,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8C20,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8C21,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8C21,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8C22,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8C22,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8C2C,extended,00200063
+patch=1,EE,109F8C2C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8C2C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8C3C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8C3C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8C3E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8C3E,extended,00300001
+patch=1,EE,109F8C3E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8C5C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8C5C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8C5D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8C5D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8C5E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8C5E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8C68,extended,00200063
+patch=1,EE,109F8C68,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8C68,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8C78,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8C78,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8C7A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8C7A,extended,00300001
+patch=1,EE,109F8C7A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8C98,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8C98,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8C99,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8C99,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8C9A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8C9A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8CA4,extended,00200063
+patch=1,EE,109F8CA4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8CA4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8CB4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8CB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8CB6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8CB6,extended,00300001
+patch=1,EE,109F8CB6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8CD4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8CD4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8CD5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8CD5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8CD6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8CD6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8CE0,extended,00200063
+patch=1,EE,109F8CE0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8CE0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8CF0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8CF0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8CF2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8CF2,extended,00300001
+patch=1,EE,109F8CF2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8D10,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8D10,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8D11,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8D11,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8D12,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8D12,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8D1C,extended,00200063
+patch=1,EE,109F8D1C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8D1C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8D2C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8D2C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8D2E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8D2E,extended,00300001
+patch=1,EE,109F8D2E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8D4C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8D4C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8D4D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8D4D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8D4E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8D4E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8D58,extended,00200063
+patch=1,EE,109F8D58,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8D58,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8D68,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8D68,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8D6A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8D6A,extended,00300001
+patch=1,EE,109F8D6A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8D88,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8D88,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8D89,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8D89,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8D8A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8D8A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8D94,extended,00200063
+patch=1,EE,109F8D94,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8D94,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8DA4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8DA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8DA6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8DA6,extended,00300001
+patch=1,EE,109F8DA6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8DC4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8DC4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8DC5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8DC5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8DC6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8DC6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8DD0,extended,00200063
+patch=1,EE,109F8DD0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8DD0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8DE0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8DE0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8DE2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8DE2,extended,00300001
+patch=1,EE,109F8DE2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8E00,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8E00,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8E01,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8E01,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8E02,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8E02,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8E0C,extended,00200063
+patch=1,EE,109F8E0C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8E0C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8E1C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8E1C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8E1E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8E1E,extended,00300001
+patch=1,EE,109F8E1E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8E3C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8E3C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8E3D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8E3D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8E3E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8E3E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8E48,extended,00200063
+patch=1,EE,109F8E48,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8E48,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8E58,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8E58,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8E5A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8E5A,extended,00300001
+patch=1,EE,109F8E5A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8E78,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8E78,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8E79,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8E79,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8E7A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8E7A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8E84,extended,00200063
+patch=1,EE,109F8E84,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8E84,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8E94,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8E94,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8E96,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8E96,extended,00300001
+patch=1,EE,109F8E96,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8EB4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8EB4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8EB5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8EB5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8EB6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8EB6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8EC0,extended,00200063
+patch=1,EE,109F8EC0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8EC0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8ED0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8ED0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8ED2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8ED2,extended,00300001
+patch=1,EE,109F8ED2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8EF0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8EF0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8EF1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8EF1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8EF2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8EF2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8EFC,extended,00200063
+patch=1,EE,109F8EFC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8EFC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8F0C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8F0C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8F0E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8F0E,extended,00300001
+patch=1,EE,109F8F0E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8F2C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8F2C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8F2D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8F2D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8F2E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8F2E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8F38,extended,00200063
+patch=1,EE,109F8F38,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8F38,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8F48,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8F48,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8F4A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8F4A,extended,00300001
+patch=1,EE,109F8F4A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8F68,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8F68,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8F69,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8F69,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8F6A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8F6A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8F74,extended,00200063
+patch=1,EE,109F8F74,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8F74,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8F84,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8F84,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8F86,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8F86,extended,00300001
+patch=1,EE,109F8F86,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8FA4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8FA4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8FA5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8FA5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8FA6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8FA6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8FB0,extended,00200063
+patch=1,EE,109F8FB0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8FB0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8FC0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8FC0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8FC2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8FC2,extended,00300001
+patch=1,EE,109F8FC2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F8FE0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F8FE0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F8FE1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F8FE1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F8FE2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F8FE2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F8FEC,extended,00200063
+patch=1,EE,109F8FEC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F8FEC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F8FFC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F8FFC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F8FFE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F8FFE,extended,00300001
+patch=1,EE,109F8FFE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F901C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F901C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F901D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F901D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F901E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F901E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9028,extended,00200063
+patch=1,EE,109F9028,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9028,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9038,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9038,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F903A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F903A,extended,00300001
+patch=1,EE,109F903A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9058,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9058,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9059,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9059,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F905A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F905A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9064,extended,00200063
+patch=1,EE,109F9064,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9064,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9074,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9074,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9076,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9076,extended,00300001
+patch=1,EE,109F9076,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9094,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9094,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9095,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9095,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9096,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9096,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F90A0,extended,00200063
+patch=1,EE,109F90A0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F90A0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F90B0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F90B0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F90B2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F90B2,extended,00300001
+patch=1,EE,109F90B2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F90D0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F90D0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F90D1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F90D1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F90D2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F90D2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F90DC,extended,00200063
+patch=1,EE,109F90DC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F90DC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F90EC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F90EC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F90EE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F90EE,extended,00300001
+patch=1,EE,109F90EE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F910C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F910C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F910D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F910D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F910E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F910E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9118,extended,00200063
+patch=1,EE,109F9118,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9118,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9128,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9128,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F912A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F912A,extended,00300001
+patch=1,EE,109F912A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9148,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9148,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9149,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9149,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F914A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F914A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9154,extended,00200063
+patch=1,EE,109F9154,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9154,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9164,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9164,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9166,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9166,extended,00300001
+patch=1,EE,109F9166,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9184,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9184,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9185,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9185,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9186,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9186,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9190,extended,00200063
+patch=1,EE,109F9190,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9190,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F91A0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F91A0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F91A2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F91A2,extended,00300001
+patch=1,EE,109F91A2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F91C0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F91C0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F91C1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F91C1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F91C2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F91C2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F91CC,extended,00200063
+patch=1,EE,109F91CC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F91CC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F91DC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F91DC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F91DE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F91DE,extended,00300001
+patch=1,EE,109F91DE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F91FC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F91FC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F91FD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F91FD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F91FE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F91FE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9208,extended,00200063
+patch=1,EE,109F9208,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9208,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9218,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9218,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F921A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F921A,extended,00300001
+patch=1,EE,109F921A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9238,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9238,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9239,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9239,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F923A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F923A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9244,extended,00200063
+patch=1,EE,109F9244,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9244,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9254,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9254,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9256,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9256,extended,00300001
+patch=1,EE,109F9256,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9274,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9274,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9275,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9275,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9276,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9276,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9280,extended,00200063
+patch=1,EE,109F9280,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9280,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9290,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9290,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9292,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9292,extended,00300001
+patch=1,EE,109F9292,extended,00000001
+
+[Max STR]
+patch=1,EE,009F92B0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F92B0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F92B1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F92B1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F92B2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F92B2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F92BC,extended,00200063
+patch=1,EE,109F92BC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F92BC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F92CC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F92CC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F92CE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F92CE,extended,00300001
+patch=1,EE,109F92CE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F92EC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F92EC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F92ED,extended,000000FF
+
+[No INT]
+patch=1,EE,009F92ED,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F92EE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F92EE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F92F8,extended,00200063
+patch=1,EE,109F92F8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F92F8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9308,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9308,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F930A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F930A,extended,00300001
+patch=1,EE,109F930A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9328,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9328,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9329,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9329,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F932A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F932A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9334,extended,00200063
+patch=1,EE,109F9334,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9334,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9344,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9344,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9346,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9346,extended,00300001
+patch=1,EE,109F9346,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9364,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9364,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9365,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9365,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9366,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9366,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9370,extended,00200063
+patch=1,EE,109F9370,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9370,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9380,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9380,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9382,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9382,extended,00300001
+patch=1,EE,109F9382,extended,00000001
+
+[Max STR]
+patch=1,EE,009F93A0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F93A0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F93A1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F93A1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F93A2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F93A2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F93AC,extended,00200063
+patch=1,EE,109F93AC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F93AC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F93BC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F93BC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F93BE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F93BE,extended,00300001
+patch=1,EE,109F93BE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F93DC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F93DC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F93DD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F93DD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F93DE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F93DE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F93E8,extended,00200063
+patch=1,EE,109F93E8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F93E8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F93F8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F93F8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F93FA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F93FA,extended,00300001
+patch=1,EE,109F93FA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9418,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9418,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9419,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9419,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F941A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F941A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9424,extended,00200063
+patch=1,EE,109F9424,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9424,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9434,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9434,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9436,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9436,extended,00300001
+patch=1,EE,109F9436,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9454,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9454,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9455,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9455,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9456,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9456,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9460,extended,00200063
+patch=1,EE,109F9460,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9460,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9470,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9470,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9472,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9472,extended,00300001
+patch=1,EE,109F9472,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9490,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9490,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9491,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9491,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9492,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9492,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F949C,extended,00200063
+patch=1,EE,109F949C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F949C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F94AC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F94AC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F94AE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F94AE,extended,00300001
+patch=1,EE,109F94AE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F94CC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F94CC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F94CD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F94CD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F94CE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F94CE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F94D8,extended,00200063
+patch=1,EE,109F94D8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F94D8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F94E8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F94E8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F94EA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F94EA,extended,00300001
+patch=1,EE,109F94EA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9508,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9508,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9509,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9509,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F950A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F950A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9514,extended,00200063
+patch=1,EE,109F9514,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9514,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9524,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9524,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9526,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9526,extended,00300001
+patch=1,EE,109F9526,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9544,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9544,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9545,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9545,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9546,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9546,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9550,extended,00200063
+patch=1,EE,109F9550,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9550,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9560,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9560,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9562,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9562,extended,00300001
+patch=1,EE,109F9562,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9580,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9580,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9581,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9581,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9582,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9582,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F958C,extended,00200063
+patch=1,EE,109F958C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F958C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F959C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F959C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F959E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F959E,extended,00300001
+patch=1,EE,109F959E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F95BC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F95BC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F95BD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F95BD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F95BE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F95BE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F95C8,extended,00200063
+patch=1,EE,109F95C8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F95C8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F95D8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F95D8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F95DA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F95DA,extended,00300001
+patch=1,EE,109F95DA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F95F8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F95F8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F95F9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F95F9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F95FA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F95FA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9604,extended,00200063
+patch=1,EE,109F9604,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9604,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9614,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9614,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9616,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9616,extended,00300001
+patch=1,EE,109F9616,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9634,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9634,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9635,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9635,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9636,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9636,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9640,extended,00200063
+patch=1,EE,109F9640,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9640,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9650,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9650,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9652,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9652,extended,00300001
+patch=1,EE,109F9652,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9670,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9670,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9671,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9671,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9672,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9672,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F967C,extended,00200063
+patch=1,EE,109F967C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F967C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F968C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F968C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F968E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F968E,extended,00300001
+patch=1,EE,109F968E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F96AC,extended,000000FF
+
+[No STR]
+patch=1,EE,009F96AC,extended,00000000
+
+[Max INT]
+patch=1,EE,009F96AD,extended,000000FF
+
+[No INT]
+patch=1,EE,009F96AD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F96AE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F96AE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F96B8,extended,00200063
+patch=1,EE,109F96B8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F96B8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F96C8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F96C8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F96CA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F96CA,extended,00300001
+patch=1,EE,109F96CA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F96E8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F96E8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F96E9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F96E9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F96EA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F96EA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F96F4,extended,00200063
+patch=1,EE,109F96F4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F96F4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9704,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9704,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9706,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9706,extended,00300001
+patch=1,EE,109F9706,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9724,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9724,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9725,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9725,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9726,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9726,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9730,extended,00200063
+patch=1,EE,109F9730,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9730,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9740,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9740,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9742,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9742,extended,00300001
+patch=1,EE,109F9742,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9760,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9760,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9761,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9761,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9762,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9762,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F976C,extended,00200063
+patch=1,EE,109F976C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F976C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F977C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F977C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F977E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F977E,extended,00300001
+patch=1,EE,109F977E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F979C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F979C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F979D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F979D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F979E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F979E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F97A8,extended,00200063
+patch=1,EE,109F97A8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F97A8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F97B8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F97B8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F97BA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F97BA,extended,00300001
+patch=1,EE,109F97BA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F97D8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F97D8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F97D9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F97D9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F97DA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F97DA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F97E4,extended,00200063
+patch=1,EE,109F97E4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F97E4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F97F4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F97F4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F97F6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F97F6,extended,00300001
+patch=1,EE,109F97F6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9814,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9814,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9815,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9815,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9816,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9816,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9820,extended,00200063
+patch=1,EE,109F9820,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9820,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9830,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9830,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9832,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9832,extended,00300001
+patch=1,EE,109F9832,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9850,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9850,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9851,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9851,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9852,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9852,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F985C,extended,00200063
+patch=1,EE,109F985C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F985C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F986C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F986C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F986E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F986E,extended,00300001
+patch=1,EE,109F986E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F988C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F988C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F988D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F988D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F988E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F988E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9898,extended,00200063
+patch=1,EE,109F9898,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9898,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F98A8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F98A8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F98AA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F98AA,extended,00300001
+patch=1,EE,109F98AA,extended,00000001
+
+[Max STR]
+patch=1,EE,009F98C8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F98C8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F98C9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F98C9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F98CA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F98CA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F98D4,extended,00200063
+patch=1,EE,109F98D4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F98D4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F98E4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F98E4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F98E6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F98E6,extended,00300001
+patch=1,EE,109F98E6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9904,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9904,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9905,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9905,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9906,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9906,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9910,extended,00200063
+patch=1,EE,109F9910,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9910,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9920,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9920,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9922,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9922,extended,00300001
+patch=1,EE,109F9922,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9940,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9940,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9941,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9941,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9942,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9942,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F994C,extended,00200063
+patch=1,EE,109F994C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F994C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F995C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F995C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F995E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F995E,extended,00300001
+patch=1,EE,109F995E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F997C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F997C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F997D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F997D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F997E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F997E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9988,extended,00200063
+patch=1,EE,109F9988,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9988,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9998,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9998,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F999A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F999A,extended,00300001
+patch=1,EE,109F999A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F99B8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F99B8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F99B9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F99B9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F99BA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F99BA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F99C4,extended,00200063
+patch=1,EE,109F99C4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F99C4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F99D4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F99D4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F99D6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F99D6,extended,00300001
+patch=1,EE,109F99D6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F99F4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F99F4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F99F5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F99F5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F99F6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F99F6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9A00,extended,00200063
+patch=1,EE,109F9A00,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9A00,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9A10,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9A10,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9A12,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9A12,extended,00300001
+patch=1,EE,109F9A12,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9A30,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9A30,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9A31,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9A31,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9A32,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9A32,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9A3C,extended,00200063
+patch=1,EE,109F9A3C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9A3C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9A4C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9A4C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9A4E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9A4E,extended,00300001
+patch=1,EE,109F9A4E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9A6C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9A6C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9A6D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9A6D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9A6E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9A6E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9A78,extended,00200063
+patch=1,EE,109F9A78,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9A78,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9A88,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9A88,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9A8A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9A8A,extended,00300001
+patch=1,EE,109F9A8A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9AA8,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9AA8,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9AA9,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9AA9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9AAA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9AAA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9AB4,extended,00200063
+patch=1,EE,109F9AB4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9AB4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9AC4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9AC4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9AC6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9AC6,extended,00300001
+patch=1,EE,109F9AC6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9AE4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9AE4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9AE5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9AE5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9AE6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9AE6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9AF0,extended,00200063
+patch=1,EE,109F9AF0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9AF0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9B00,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9B00,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9B02,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9B02,extended,00300001
+patch=1,EE,109F9B02,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9B20,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9B20,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9B21,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9B21,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9B22,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9B22,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9B2C,extended,00200063
+patch=1,EE,109F9B2C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9B2C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9B3C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9B3C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9B3E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9B3E,extended,00300001
+patch=1,EE,109F9B3E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9B5C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9B5C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9B5D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9B5D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9B5E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9B5E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9B68,extended,00200063
+patch=1,EE,109F9B68,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9B68,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9B78,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9B78,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9B7A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9B7A,extended,00300001
+patch=1,EE,109F9B7A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9B98,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9B98,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9B99,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9B99,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9B9A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9B9A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9BA4,extended,00200063
+patch=1,EE,109F9BA4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9BA4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9BB4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9BB4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9BB6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9BB6,extended,00300001
+patch=1,EE,109F9BB6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9BD4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9BD4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9BD5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9BD5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9BD6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9BD6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9BE0,extended,00200063
+patch=1,EE,109F9BE0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9BE0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9BF0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9BF0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9BF2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9BF2,extended,00300001
+patch=1,EE,109F9BF2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9C10,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9C10,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9C11,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9C11,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9C12,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9C12,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9C1C,extended,00200063
+patch=1,EE,109F9C1C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9C1C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9C2C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9C2C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9C2E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9C2E,extended,00300001
+patch=1,EE,109F9C2E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9C4C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9C4C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9C4D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9C4D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9C4E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9C4E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9C58,extended,00200063
+patch=1,EE,109F9C58,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9C58,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9C68,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9C68,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9C6A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9C6A,extended,00300001
+patch=1,EE,109F9C6A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9C88,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9C88,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9C89,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9C89,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9C8A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9C8A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9C94,extended,00200063
+patch=1,EE,109F9C94,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9C94,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9CA4,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9CA4,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9CA6,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9CA6,extended,00300001
+patch=1,EE,109F9CA6,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9CC4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9CC4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9CC5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9CC5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9CC6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9CC6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9CD0,extended,00200063
+patch=1,EE,109F9CD0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9CD0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9CE0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9CE0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9CE2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9CE2,extended,00300001
+patch=1,EE,109F9CE2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9D00,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9D00,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9D01,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9D01,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9D02,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9D02,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9D0C,extended,00200063
+patch=1,EE,109F9D0C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9D0C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9D1C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9D1C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9D1E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9D1E,extended,00300001
+patch=1,EE,109F9D1E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9D3C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9D3C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9D3D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9D3D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9D3E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9D3E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9D48,extended,00200063
+patch=1,EE,109F9D48,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9D48,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9D58,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9D58,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9D5A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9D5A,extended,00300001
+patch=1,EE,109F9D5A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9D78,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9D78,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9D79,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9D79,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9D7A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9D7A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9D84,extended,00200063
+patch=1,EE,109F9D84,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9D84,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9D94,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9D94,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9D96,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9D96,extended,00300001
+patch=1,EE,109F9D96,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9DB4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9DB4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9DB5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9DB5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9DB6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9DB6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9DC0,extended,00200063
+patch=1,EE,109F9DC0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9DC0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9DD0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9DD0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9DD2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9DD2,extended,00300001
+patch=1,EE,109F9DD2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9DF0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9DF0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9DF1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9DF1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9DF2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9DF2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9DFC,extended,00200063
+patch=1,EE,109F9DFC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9DFC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9E0C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9E0C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9E0E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9E0E,extended,00300001
+patch=1,EE,109F9E0E,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9E2C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9E2C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9E2D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9E2D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9E2E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9E2E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9E38,extended,00200063
+patch=1,EE,109F9E38,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9E38,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9E48,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9E48,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9E4A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9E4A,extended,00300001
+patch=1,EE,109F9E4A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9E68,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9E68,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9E69,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9E69,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9E6A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9E6A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9E74,extended,00200063
+patch=1,EE,109F9E74,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9E74,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9E84,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9E84,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9E86,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9E86,extended,00300001
+patch=1,EE,109F9E86,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9EA4,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9EA4,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9EA5,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9EA5,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9EA6,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9EA6,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9EB0,extended,00200063
+patch=1,EE,109F9EB0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9EB0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9EC0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9EC0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9EC2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9EC2,extended,00300001
+patch=1,EE,109F9EC2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9EE0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9EE0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9EE1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9EE1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9EE2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9EE2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9EEC,extended,00200063
+patch=1,EE,109F9EEC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9EEC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9EFC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9EFC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9EFE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9EFE,extended,00300001
+patch=1,EE,109F9EFE,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9F1C,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9F1C,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9F1D,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9F1D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9F1E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9F1E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9F28,extended,00200063
+patch=1,EE,109F9F28,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9F28,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9F38,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9F38,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9F3A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9F3A,extended,00300001
+patch=1,EE,109F9F3A,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9F58,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9F58,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9F59,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9F59,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9F5A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9F5A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9F64,extended,00200063
+patch=1,EE,109F9F64,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9F64,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9F74,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9F74,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9F76,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9F76,extended,00300001
+patch=1,EE,109F9F76,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9F94,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9F94,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9F95,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9F95,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9F96,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9F96,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9FA0,extended,00200063
+patch=1,EE,109F9FA0,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9FA0,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9FB0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9FB0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9FB2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9FB2,extended,00300001
+patch=1,EE,109F9FB2,extended,00000001
+
+[Max STR]
+patch=1,EE,009F9FD0,extended,000000FF
+
+[No STR]
+patch=1,EE,009F9FD0,extended,00000000
+
+[Max INT]
+patch=1,EE,009F9FD1,extended,000000FF
+
+[No INT]
+patch=1,EE,009F9FD1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009F9FD2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009F9FD2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09F9FDC,extended,00200063
+patch=1,EE,109F9FDC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109F9FDC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109F9FEC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109F9FEC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109F9FEE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09F9FEE,extended,00300001
+patch=1,EE,109F9FEE,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA00C,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA00C,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA00D,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA00D,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA00E,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA00E,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA018,extended,00200063
+patch=1,EE,109FA018,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA018,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA028,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA028,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA02A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA02A,extended,00300001
+patch=1,EE,109FA02A,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA048,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA048,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA049,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA049,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA04A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA04A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA054,extended,00200063
+patch=1,EE,109FA054,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA054,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA064,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA064,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA066,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA066,extended,00300001
+patch=1,EE,109FA066,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA084,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA084,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA085,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA085,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA086,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA086,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA090,extended,00200063
+patch=1,EE,109FA090,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA090,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA0A0,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA0A0,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA0A2,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA0A2,extended,00300001
+patch=1,EE,109FA0A2,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA0C0,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA0C0,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA0C1,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA0C1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA0C2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA0C2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA0CC,extended,00200063
+patch=1,EE,109FA0CC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA0CC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA0DC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA0DC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA0DE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA0DE,extended,00300001
+patch=1,EE,109FA0DE,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA0FC,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA0FC,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA0FD,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA0FD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA0FE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA0FE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA108,extended,00200063
+patch=1,EE,109FA108,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA108,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA118,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA118,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA11A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA11A,extended,00300001
+patch=1,EE,109FA11A,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA138,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA138,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA139,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA139,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA13A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA13A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA144,extended,00200063
+patch=1,EE,109FA144,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA144,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA154,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA154,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA156,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA156,extended,00300001
+patch=1,EE,109FA156,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA174,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA174,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA175,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA175,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA176,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA176,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA180,extended,00200063
+patch=1,EE,109FA180,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA180,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA190,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA190,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA192,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA192,extended,00300001
+patch=1,EE,109FA192,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA1B0,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA1B0,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA1B1,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA1B1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA1B2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA1B2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA1BC,extended,00200063
+patch=1,EE,109FA1BC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA1BC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA1CC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA1CC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA1CE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA1CE,extended,00300001
+patch=1,EE,109FA1CE,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA1EC,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA1EC,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA1ED,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA1ED,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA1EE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA1EE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA1F8,extended,00200063
+patch=1,EE,109FA1F8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA1F8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA208,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA208,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA20A,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA20A,extended,00300001
+patch=1,EE,109FA20A,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA228,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA228,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA229,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA229,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA22A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA22A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA234,extended,00200063
+patch=1,EE,109FA234,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA234,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA244,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA244,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA246,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA246,extended,00300001
+patch=1,EE,109FA246,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA264,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA264,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA265,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA265,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA266,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA266,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA270,extended,00200063
+patch=1,EE,109FA270,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA270,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA280,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA280,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA282,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA282,extended,00300001
+patch=1,EE,109FA282,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA2A0,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA2A0,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA2A1,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA2A1,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA2A2,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA2A2,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA2AC,extended,00200063
+patch=1,EE,109FA2AC,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA2AC,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA2BC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA2BC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA2BE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA2BE,extended,00300001
+patch=1,EE,109FA2BE,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA2DC,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA2DC,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA2DD,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA2DD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA2DE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA2DE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA2E8,extended,00200063
+patch=1,EE,109FA2E8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA2E8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA2F8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA2F8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA2FA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA2FA,extended,00300001
+patch=1,EE,109FA2FA,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA318,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA318,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA319,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA319,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA31A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA31A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA324,extended,00200063
+patch=1,EE,109FA324,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA324,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA334,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA334,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA336,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA336,extended,00300001
+patch=1,EE,109FA336,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA354,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA354,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA355,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA355,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA356,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA356,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA360,extended,00200063
+patch=1,EE,109FA360,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA360,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA370,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA370,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA372,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA372,extended,00300001
+patch=1,EE,109FA372,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA390,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA390,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA391,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA391,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA392,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA392,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA39C,extended,00200063
+patch=1,EE,109FA39C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA39C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA3AC,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA3AC,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA3AE,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA3AE,extended,00300001
+patch=1,EE,109FA3AE,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA3CC,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA3CC,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA3CD,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA3CD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA3CE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA3CE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA3D8,extended,00200063
+patch=1,EE,109FA3D8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA3D8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA3E8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA3E8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA3EA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA3EA,extended,00300001
+patch=1,EE,109FA3EA,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA408,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA408,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA409,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA409,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA40A,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA40A,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA414,extended,00200063
+patch=1,EE,109FA414,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA414,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA424,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA424,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA426,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA426,extended,00300001
+patch=1,EE,109FA426,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA444,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA444,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA445,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA445,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA446,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA446,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA450,extended,00200063
+patch=1,EE,109FA450,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA450,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA460,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA460,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA462,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA462,extended,00300001
+patch=1,EE,109FA462,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA480,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA480,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA481,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA481,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA482,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA482,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA48C,extended,00200063
+patch=1,EE,109FA48C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA48C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA49C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA49C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA49E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA49E,extended,00300001
+patch=1,EE,109FA49E,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA4BC,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA4BC,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA4BD,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA4BD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA4BE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA4BE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA4C8,extended,00200063
+patch=1,EE,109FA4C8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA4C8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA4D8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA4D8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA4DA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA4DA,extended,00300001
+patch=1,EE,109FA4DA,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA4F8,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA4F8,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA4F9,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA4F9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA4FA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA4FA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA504,extended,00200063
+patch=1,EE,109FA504,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA504,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA514,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA514,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA516,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA516,extended,00300001
+patch=1,EE,109FA516,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA534,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA534,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA535,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA535,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA536,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA536,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA540,extended,00200063
+patch=1,EE,109FA540,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA540,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA550,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA550,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA552,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA552,extended,00300001
+patch=1,EE,109FA552,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA570,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA570,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA571,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA571,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA572,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA572,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA57C,extended,00200063
+patch=1,EE,109FA57C,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA57C,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA58C,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA58C,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA58E,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA58E,extended,00300001
+patch=1,EE,109FA58E,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA5AC,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA5AC,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA5AD,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA5AD,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA5AE,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA5AE,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA5B8,extended,00200063
+patch=1,EE,109FA5B8,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA5B8,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA5C8,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA5C8,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA5CA,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA5CA,extended,00300001
+patch=1,EE,109FA5CA,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA5E8,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA5E8,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA5E9,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA5E9,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA5EA,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA5EA,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA5F4,extended,00200063
+patch=1,EE,109FA5F4,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA5F4,extended,00000000
+
+[Max Deeds]
+patch=1,EE,109FA604,extended,0000270F
+
+[No Deeds]
+patch=1,EE,109FA604,extended,00000000
+
+[Max Troops]
+patch=1,EE,109FA606,extended,0000270F
+
+[Low Troops]
+patch=1,EE,D09FA606,extended,00300001
+patch=1,EE,109FA606,extended,00000001
+
+[Max STR]
+patch=1,EE,009FA624,extended,000000FF
+
+[No STR]
+patch=1,EE,009FA624,extended,00000000
+
+[Max INT]
+patch=1,EE,009FA625,extended,000000FF
+
+[No INT]
+patch=1,EE,009FA625,extended,00000000
+
+[Max LEA]
+patch=1,EE,009FA626,extended,000000FF
+
+[No LEA]
+patch=1,EE,009FA626,extended,00000000
+
+[Quick EXP Gain]
+patch=1,EE,D09FA630,extended,00200063
+patch=1,EE,109FA630,extended,00000063
+
+[Never Gain EXP]
+patch=1,EE,109FA630,extended,00000000

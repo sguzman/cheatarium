@@ -1,0 +1,140 @@
+gametitle=Black & Bruised (SLUS-20506)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0010E76F
+
+[Infinite Time]
+patch=1,EE,20274D6C,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,208DD474,extended,461C4000
+
+[1-Hit Knockdown P1]
+patch=1,EE,D08DD476,extended,10103F80
+patch=1,EE,208DD474,extended,3F800000
+
+[No Health P1]
+patch=1,EE,208DD474,extended,00000000
+
+[Max Level 1 Special P1]
+patch=1,EE,208E24CC,extended,41200000
+
+[No Level 1 Special P1]
+patch=1,EE,208E24CC,extended,00000000
+
+[Max Level 2 Special P1]
+patch=1,EE,208E24D0,extended,41200000
+
+[No Level 2 Special P1]
+patch=1,EE,208E24D0,extended,00000000
+
+[Max Level 3 Special P1]
+patch=1,EE,208E24D4,extended,41200000
+
+[No Level 3 Special P1]
+patch=1,EE,208E24D4,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,208E6190,extended,461C4000
+
+[1-Hit Knockdown P2]
+patch=1,EE,D08E6192,extended,10103F80
+patch=1,EE,208E6190,extended,3F800000
+
+[No Health P2]
+patch=1,EE,208E6190,extended,00000000
+
+[Max Level 1 Special P2]
+patch=1,EE,208EB1E8,extended,41200000
+
+[No Level 1 Special P2]
+patch=1,EE,208EB1E8,extended,00000000
+
+[Max Level 2 Special P2]
+patch=1,EE,208EB1EC,extended,41200000
+
+[No Level 2 Special P2]
+patch=1,EE,208EB1EC,extended,00000000
+
+[Max Level 3 Special P2]
+patch=1,EE,208EB1F0,extended,41200000
+
+[No Level 3 Special P2]
+patch=1,EE,208EB1F0,extended,00000000
+
+[Unlock All Characters]
+patch=1,EE,40999F0C,extended,00130004
+patch=1,EE,00000002,extended,00000000
+
+[Have All Boxer's Life-All Characters]
+patch=1,EE,4099A20C,extended,00120002
+patch=1,EE,00000006,extended,00000000
+
+[Intercontinental Mode Unlocked]
+patch=1,EE,2099A8EC,extended,00000001
+
+[Second Skin Unlocked]
+patch=1,EE,2099A8FC,extended,00000001
+
+[All Boxers Are Unlocked]
+patch=1,EE,2099A90C,extended,00000001
+
+[Scrap Yard Scene Unlocked]
+patch=1,EE,2099A91C,extended,00000001
+
+[Conversation Mode Unlocked]
+patch=1,EE,2099A92C,extended,00000001
+
+[Invulnerability For Boxer 1]
+patch=1,EE,2099A93C,extended,00000001
+
+[Invulnerability For Boxer 2]
+patch=1,EE,2099A94C,extended,00000001
+
+[All Boxer's Life Unlocked]
+patch=1,EE,2099A95C,extended,00000001
+
+[Double Speed Active]
+patch=1,EE,2099A96C,extended,00000001
+
+[Constant Powerup For Boxer 1]
+patch=1,EE,2099A97C,extended,00000001
+
+[Constant Powerup For Boxer 2]
+patch=1,EE,2099A98C,extended,00000001
+
+[Intercontinental Mode Unlocked]
+patch=1,EE,2099A8EC,extended,00000000
+
+[Second Skin Unlocked]
+patch=1,EE,2099A8FC,extended,00000000
+
+[All Boxers Are Unlocked]
+patch=1,EE,2099A90C,extended,00000000
+
+[Scrap Yard Scene Unlocked]
+patch=1,EE,2099A91C,extended,00000000
+
+[Conversation Mode Unlocked]
+patch=1,EE,2099A92C,extended,00000000
+
+[Invulnerability For Boxer 1]
+patch=1,EE,2099A93C,extended,00000000
+
+[Invulnerability For Boxer 2]
+patch=1,EE,2099A94C,extended,00000000
+
+[All Boxer's Life Unlocked]
+patch=1,EE,2099A95C,extended,00000000
+
+[Double Speed Active]
+patch=1,EE,2099A96C,extended,00000000
+
+[Constant Powerup For Boxer 1]
+patch=1,EE,2099A97C,extended,00000000
+
+[Constant Powerup For Boxer 2]
+patch=1,EE,2099A98C,extended,00000000

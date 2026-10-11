@@ -1,0 +1,730 @@
+gametitle=Rampage-Total Destruction (SLUS-21323)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901642D8,extended,00832021
+
+[Infinite Health]
+patch=1,EE,202DE988,extended,3C014348
+patch=1,EE,202DE994,extended,AE010A4C
+
+[Max Energy]
+patch=1,EE,202DE91C,extended,00000000
+patch=1,EE,202DE934,extended,3C014348
+patch=1,EE,202DE940,extended,AE010A50
+
+[Infinite Time]
+patch=1,EE,204D17CC,extended,00000000
+
+[Infinite Lives]
+patch=1,EE,204D7BB4,extended,00000063
+
+[QUick Score Gain]
+patch=1,EE,104D7CC4,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,204D7CC4,extended,05F5E0FF
+
+[Unlock All Characters-All Upgrades]
+patch=1,EE,404D7B0C,extended,001E0001
+patch=1,EE,0000008F,extended,00000000
+
+[Have Upgrade Challenge Completed]
+patch=1,EE,204D5094,extended,00000000
+
+[Unlock All Monsters]
+patch=1,EE,704D7E68,extended,00000001
+
+[Unlock All Cities]
+patch=1,EE,704D7E68,extended,00000002
+
+[Immune To Projectiles]
+patch=1,EE,704D7E68,extended,00000004
+
+[Upgrade All Monsters]
+patch=1,EE,704D7E68,extended,00000008
+
+[1-Hit Building Destroy]
+patch=1,EE,704D7E6B,extended,00000040
+
+[All Cheats]
+patch=1,EE,704D7E68,extended,0000000F
+patch=1,EE,704D7E6B,extended,00000040
+
+[Las Vegas]
+patch=1,EE,704D7A90,extended,00000080
+
+[San Francisco]
+patch=1,EE,704D7A94,extended,00000080
+
+[London]
+patch=1,EE,704D7A98,extended,00000080
+
+[Los Angeles]
+patch=1,EE,704D7A9C,extended,00000080
+
+[Chicago]
+patch=1,EE,704D7AA0,extended,00000080
+
+[Hong Kong]
+patch=1,EE,704D7AA4,extended,00000080
+
+[New York]
+patch=1,EE,704D7AA8,extended,00000080
+
+[All Cities]
+patch=1,EE,E0020000,extended,004D7A94
+patch=1,EE,404D7A94,extended,00060001
+patch=1,EE,00000080,extended,00000000
+
+[Las Vegas-Star 1]
+patch=1,EE,704D7A90,extended,00000001
+
+[Las Vegas-Star 2]
+patch=1,EE,704D7A90,extended,00000002
+
+[Las Vegas-Star 3]
+patch=1,EE,704D7A90,extended,00000004
+
+[Las Vegas-Star 4]
+patch=1,EE,704D7A90,extended,00000008
+
+[Las Vegas-All Stars]
+patch=1,EE,704D7A90,extended,0000000F
+
+[San Francisco-Star 1]
+patch=1,EE,704D7A94,extended,00000001
+
+[San Francisco-Star 2]
+patch=1,EE,704D7A94,extended,00000002
+
+[San Francisco-Star 3]
+patch=1,EE,704D7A94,extended,00000004
+
+[San Francisco-Star 4]
+patch=1,EE,704D7A94,extended,00000008
+
+[San Francisco-All Stars]
+patch=1,EE,704D7A94,extended,0000000F
+
+[London-Star 1]
+patch=1,EE,704D7A98,extended,00000001
+
+[London-Star 2]
+patch=1,EE,704D7A98,extended,00000002
+
+[London-Star 3]
+patch=1,EE,704D7A98,extended,00000004
+
+[London-Star 4]
+patch=1,EE,704D7A98,extended,00000008
+
+[London-All Stars]
+patch=1,EE,704D7A98,extended,0000000F
+
+[Los Angeles-Star 1]
+patch=1,EE,704D7A9C,extended,00000001
+
+[Los Angeles-Star 2]
+patch=1,EE,704D7A9C,extended,00000002
+
+[Los Angeles-Star 3]
+patch=1,EE,704D7A9C,extended,00000004
+
+[Los Angeles-Star 4]
+patch=1,EE,704D7A9C,extended,00000008
+
+[Los Angeles-All Stars]
+patch=1,EE,704D7A9C,extended,0000000F
+
+[Chicago-Star 1]
+patch=1,EE,704D7AA0,extended,00000001
+
+[Chicago-Star 2]
+patch=1,EE,704D7AA0,extended,00000002
+
+[Chicago-Star 3]
+patch=1,EE,704D7AA0,extended,00000004
+
+[Chicago-Star 4]
+patch=1,EE,704D7AA0,extended,00000008
+
+[Chicago-All Stars]
+patch=1,EE,704D7AA0,extended,0000000F
+
+[Hong Kong-Star 1]
+patch=1,EE,704D7AA4,extended,00000001
+
+[Hong Kong-Star 2]
+patch=1,EE,704D7AA4,extended,00000002
+
+[Hong Kong-Star 3]
+patch=1,EE,704D7AA4,extended,00000004
+
+[Hong Kong-Star 4]
+patch=1,EE,704D7AA4,extended,00000008
+
+[Hong Kong-All Stars]
+patch=1,EE,704D7AA4,extended,0000000F
+
+[New York-Star 1]
+patch=1,EE,704D7AA8,extended,00000001
+
+[New York-Star 2]
+patch=1,EE,704D7AA8,extended,00000002
+
+[New York-Star 3]
+patch=1,EE,704D7AA8,extended,00000004
+
+[New York-Star 4]
+patch=1,EE,704D7AA8,extended,00000008
+
+[New York-All Stars]
+patch=1,EE,704D7AA8,extended,0000000F
+
+[All Cities]
+patch=1,EE,E003008F,extended,204D7A90
+patch=1,EE,404D7A90,extended,00070001
+patch=1,EE,0000008F,extended,00000000
+
+[George]
+patch=1,EE,704D7B0C,extended,00000080
+
+[Lizzie]
+patch=1,EE,704D7B10,extended,00000080
+
+[Ralph]
+patch=1,EE,704D7B14,extended,00000080
+
+[Ramsey]
+patch=1,EE,704D7B18,extended,00000080
+
+[Gilman]
+patch=1,EE,704D7B1C,extended,00000080
+
+[Rhett]
+patch=1,EE,704D7B20,extended,00000080
+
+[Cal]
+patch=1,EE,704D7B24,extended,00000080
+
+[Leon]
+patch=1,EE,704D7B28,extended,00000080
+
+[Crock]
+patch=1,EE,704D7B2C,extended,00000080
+
+[Kyle]
+patch=1,EE,704D7B30,extended,00000080
+
+[Marco]
+patch=1,EE,704D7B34,extended,00000080
+
+[Rojo]
+patch=1,EE,704D7B38,extended,00000080
+
+[Icky]
+patch=1,EE,704D7B3C,extended,00000080
+
+[Venus]
+patch=1,EE,704D7B40,extended,00000080
+
+[Wally]
+patch=1,EE,704D7B44,extended,00000080
+
+[Harry]
+patch=1,EE,704D7B48,extended,00000080
+
+[Shelby]
+patch=1,EE,704D7B4C,extended,00000080
+
+[Amanda]
+patch=1,EE,704D7B50,extended,00000080
+
+[Kingston]
+patch=1,EE,704D7B54,extended,00000080
+
+[Natalie]
+patch=1,EE,704D7B58,extended,00000080
+
+[Rocky]
+patch=1,EE,704D7B5C,extended,00000080
+
+[Edwin]
+patch=1,EE,704D7B60,extended,00000080
+
+[Joe]
+patch=1,EE,704D7B64,extended,00000080
+
+[Bart]
+patch=1,EE,704D7B68,extended,00000080
+
+[Jack]
+patch=1,EE,704D7B6C,extended,00000080
+
+[Jill]
+patch=1,EE,704D7B70,extended,00000080
+
+[Nick]
+patch=1,EE,704D7B74,extended,00000080
+
+[Philbert]
+patch=1,EE,704D7B78,extended,00000080
+
+[Eyegore]
+patch=1,EE,704D7B7C,extended,00000080
+
+[Bubba]
+patch=1,EE,704D7B80,extended,00000080
+
+[George-Charge Punch]
+patch=1,EE,704D7B0C,extended,00000001
+
+[George-Multi-Spin]
+patch=1,EE,704D7B0C,extended,00000002
+
+[George-Roar Attack]
+patch=1,EE,704D7B0C,extended,00000004
+
+[George-Jump Smash]
+patch=1,EE,704D7B0C,extended,00000008
+
+[George-All Upgrades]
+patch=1,EE,704D7B0C,extended,0000000F
+
+[Lizzie-Charge Punch]
+patch=1,EE,704D7B10,extended,00000001
+
+[Lizzie-Multi-Spin]
+patch=1,EE,704D7B10,extended,00000002
+
+[Lizzie-Roar Attack]
+patch=1,EE,704D7B10,extended,00000004
+
+[Lizzie-Jump Smash]
+patch=1,EE,704D7B10,extended,00000008
+
+[Lizzie-All Upgrades]
+patch=1,EE,704D7B10,extended,0000000F
+
+[Ralph-Charge Punch]
+patch=1,EE,704D7B14,extended,00000001
+
+[Ralph-Multi-Spin]
+patch=1,EE,704D7B14,extended,00000002
+
+[Ralph-Roar Attack]
+patch=1,EE,704D7B14,extended,00000004
+
+[Ralph-Jump Smash]
+patch=1,EE,704D7B14,extended,00000008
+
+[Ralph-All Upgrades]
+patch=1,EE,704D7B14,extended,0000000F
+
+[Ramsey-Charge Punch]
+patch=1,EE,704D7B18,extended,00000001
+
+[Ramsey-Multi-Spin]
+patch=1,EE,704D7B18,extended,00000002
+
+[Ramsey-Roar Attack]
+patch=1,EE,704D7B18,extended,00000004
+
+[Ramsey-Jump Smash]
+patch=1,EE,704D7B18,extended,00000008
+
+[Ramsey-All Upgrades]
+patch=1,EE,704D7B18,extended,0000000F
+
+[Gilman-Charge Punch]
+patch=1,EE,704D7B1C,extended,00000001
+
+[Gilman-Multi-Spin]
+patch=1,EE,704D7B1C,extended,00000002
+
+[Gilman-Roar Attack]
+patch=1,EE,704D7B1C,extended,00000004
+
+[Gilman-Jump Smash]
+patch=1,EE,704D7B1C,extended,00000008
+
+[Gilman-All Upgrades]
+patch=1,EE,704D7B1C,extended,0000000F
+
+[Rhett-Charge Punch]
+patch=1,EE,704D7B20,extended,00000001
+
+[Rhett-Multi-Spin]
+patch=1,EE,704D7B20,extended,00000002
+
+[Rhett-Roar Attack]
+patch=1,EE,704D7B20,extended,00000004
+
+[Rhett-Jump Smash]
+patch=1,EE,704D7B20,extended,00000008
+
+[Rhett-All Upgrades]
+patch=1,EE,704D7B20,extended,0000000F
+
+[Cal-Charge Punch]
+patch=1,EE,704D7B24,extended,00000001
+
+[Cal-Multi-Spin]
+patch=1,EE,704D7B24,extended,00000002
+
+[Cal-Roar Attack]
+patch=1,EE,704D7B24,extended,00000004
+
+[Cal-Jump Smash]
+patch=1,EE,704D7B24,extended,00000008
+
+[Cal-All Upgrades]
+patch=1,EE,704D7B24,extended,0000000F
+
+[Leon-Charge Punch]
+patch=1,EE,704D7B28,extended,00000001
+
+[Leon-Multi-Spin]
+patch=1,EE,704D7B28,extended,00000002
+
+[Leon-Roar Attack]
+patch=1,EE,704D7B28,extended,00000004
+
+[Leon-Jump Smash]
+patch=1,EE,704D7B28,extended,00000008
+
+[Leon-All Upgrades]
+patch=1,EE,704D7B28,extended,0000000F
+
+[Crock-Charge Punch]
+patch=1,EE,704D7B2C,extended,00000001
+
+[Crock-Multi-Spin]
+patch=1,EE,704D7B2C,extended,00000002
+
+[Crock-Roar Attack]
+patch=1,EE,704D7B2C,extended,00000004
+
+[Crock-Jump Smash]
+patch=1,EE,704D7B2C,extended,00000008
+
+[Crock-All Upgrades]
+patch=1,EE,704D7B2C,extended,0000000F
+
+[Kyle-Charge Punch]
+patch=1,EE,704D7B30,extended,00000001
+
+[Kyle-Multi-Spin]
+patch=1,EE,704D7B30,extended,00000002
+
+[Kyle-Roar Attack]
+patch=1,EE,704D7B30,extended,00000004
+
+[Kyle-Jump Smash]
+patch=1,EE,704D7B30,extended,00000008
+
+[Kyle-All Upgrades]
+patch=1,EE,704D7B30,extended,0000000F
+
+[Marco-Charge Punch]
+patch=1,EE,704D7B34,extended,00000001
+
+[Marco-Multi-Spin]
+patch=1,EE,704D7B34,extended,00000002
+
+[Marco-Roar Attack]
+patch=1,EE,704D7B34,extended,00000004
+
+[Marco-Jump Smash]
+patch=1,EE,704D7B34,extended,00000008
+
+[Marco-All Upgrades]
+patch=1,EE,704D7B34,extended,0000000F
+
+[Rojo-Charge Punch]
+patch=1,EE,704D7B38,extended,00000001
+
+[Rojo-Multi-Spin]
+patch=1,EE,704D7B38,extended,00000002
+
+[Rojo-Roar Attack]
+patch=1,EE,704D7B38,extended,00000004
+
+[Rojo-Jump Smash]
+patch=1,EE,704D7B38,extended,00000008
+
+[Rojo-All Upgrades]
+patch=1,EE,704D7B38,extended,0000000F
+
+[Icky-Charge Punch]
+patch=1,EE,704D7B3C,extended,00000001
+
+[Icky-Multi-Spin]
+patch=1,EE,704D7B3C,extended,00000002
+
+[Icky-Roar Attack]
+patch=1,EE,704D7B3C,extended,00000004
+
+[Icky-Jump Smash]
+patch=1,EE,704D7B3C,extended,00000008
+
+[Icky-All Upgrades]
+patch=1,EE,704D7B3C,extended,0000000F
+
+[Venus-Charge Punch]
+patch=1,EE,704D7B40,extended,00000001
+
+[Venus-Multi-Spin]
+patch=1,EE,704D7B40,extended,00000002
+
+[Venus-Roar Attack]
+patch=1,EE,704D7B40,extended,00000004
+
+[Venus-Jump Smash]
+patch=1,EE,704D7B40,extended,00000008
+
+[Venus-All Upgrades]
+patch=1,EE,704D7B40,extended,0000000F
+
+[Wally-Charge Punch]
+patch=1,EE,704D7B44,extended,00000001
+
+[Wally-Multi-Spin]
+patch=1,EE,704D7B44,extended,00000002
+
+[Wally-Roar Attack]
+patch=1,EE,704D7B44,extended,00000004
+
+[Wally-Jump Smash]
+patch=1,EE,704D7B44,extended,00000008
+
+[Wally-All Upgrades]
+patch=1,EE,704D7B44,extended,0000000F
+
+[Harry-Charge Punch]
+patch=1,EE,704D7B48,extended,00000001
+
+[Harry-Multi-Spin]
+patch=1,EE,704D7B48,extended,00000002
+
+[Harry-Roar Attack]
+patch=1,EE,704D7B48,extended,00000004
+
+[Harry-Jump Smash]
+patch=1,EE,704D7B48,extended,00000008
+
+[Harry-All Upgrades]
+patch=1,EE,704D7B48,extended,0000000F
+
+[Shelby-Charge Punch]
+patch=1,EE,704D7B4C,extended,00000001
+
+[Shelby-Multi-Spin]
+patch=1,EE,704D7B4C,extended,00000002
+
+[Shelby-Roar Attack]
+patch=1,EE,704D7B4C,extended,00000004
+
+[Shelby-Jump Smash]
+patch=1,EE,704D7B4C,extended,00000008
+
+[Shelby-All Upgrades]
+patch=1,EE,704D7B4C,extended,0000000F
+
+[Amanda-Charge Punch]
+patch=1,EE,704D7B50,extended,00000001
+
+[Amanda-Multi-Spin]
+patch=1,EE,704D7B50,extended,00000002
+
+[Amanda-Roar Attack]
+patch=1,EE,704D7B50,extended,00000004
+
+[Amanda-Jump Smash]
+patch=1,EE,704D7B50,extended,00000008
+
+[Amanda-All Upgrades]
+patch=1,EE,704D7B50,extended,0000000F
+
+[Kingston-Charge Punch]
+patch=1,EE,704D7B54,extended,00000001
+
+[Kingston-Multi-Spin]
+patch=1,EE,704D7B54,extended,00000002
+
+[Kingston-Roar Attack]
+patch=1,EE,704D7B54,extended,00000004
+
+[Kingston-Jump Smash]
+patch=1,EE,704D7B54,extended,00000008
+
+[Kingston-All Upgrades]
+patch=1,EE,704D7B54,extended,0000000F
+
+[Natalie-Charge Punch]
+patch=1,EE,704D7B58,extended,00000001
+
+[Natalie-Multi-Spin]
+patch=1,EE,704D7B58,extended,00000002
+
+[Natalie-Roar Attack]
+patch=1,EE,704D7B58,extended,00000004
+
+[Natalie-Jump Smash]
+patch=1,EE,704D7B58,extended,00000008
+
+[Natalie-All Upgrades]
+patch=1,EE,704D7B58,extended,0000000F
+
+[Rocky-Charge Punch]
+patch=1,EE,704D7B5C,extended,00000001
+
+[Rocky-Multi-Spin]
+patch=1,EE,704D7B5C,extended,00000002
+
+[Rocky-Roar Attack]
+patch=1,EE,704D7B5C,extended,00000004
+
+[Rocky-Jump Smash]
+patch=1,EE,704D7B5C,extended,00000008
+
+[Rocky-All Upgrades]
+patch=1,EE,704D7B5C,extended,0000000F
+
+[Edwin-Charge Punch]
+patch=1,EE,704D7B60,extended,00000001
+
+[Edwin-Multi-Spin]
+patch=1,EE,704D7B60,extended,00000002
+
+[Edwin-Roar Attack]
+patch=1,EE,704D7B60,extended,00000004
+
+[Edwin-Jump Smash]
+patch=1,EE,704D7B60,extended,00000008
+
+[Edwin-All Upgrades]
+patch=1,EE,704D7B60,extended,0000000F
+
+[Joe-Charge Punch]
+patch=1,EE,704D7B64,extended,00000001
+
+[Joe-Multi-Spin]
+patch=1,EE,704D7B64,extended,00000002
+
+[Joe-Roar Attack]
+patch=1,EE,704D7B64,extended,00000004
+
+[Joe-Jump Smash]
+patch=1,EE,704D7B64,extended,00000008
+
+[Joe-All Upgrades]
+patch=1,EE,704D7B64,extended,0000000F
+
+[Bart-Charge Punch]
+patch=1,EE,704D7B68,extended,00000001
+
+[Bart-Multi-Spin]
+patch=1,EE,704D7B68,extended,00000002
+
+[Bart-Roar Attack]
+patch=1,EE,704D7B68,extended,00000004
+
+[Bart-Jump Smash]
+patch=1,EE,704D7B68,extended,00000008
+
+[Bart-All Upgrades]
+patch=1,EE,704D7B68,extended,0000000F
+
+[Jack-Charge Punch]
+patch=1,EE,704D7B6C,extended,00000001
+
+[Jack-Multi-Spin]
+patch=1,EE,704D7B6C,extended,00000002
+
+[Jack-Roar Attack]
+patch=1,EE,704D7B6C,extended,00000004
+
+[Jack-Jump Smash]
+patch=1,EE,704D7B6C,extended,00000008
+
+[Jack-All Upgrades]
+patch=1,EE,704D7B6C,extended,0000000F
+
+[Jill-Charge Punch]
+patch=1,EE,704D7B70,extended,00000001
+
+[Jill-Multi-Spin]
+patch=1,EE,704D7B70,extended,00000002
+
+[Jill-Roar Attack]
+patch=1,EE,704D7B70,extended,00000004
+
+[Jill-Jump Smash]
+patch=1,EE,704D7B70,extended,00000008
+
+[Jill-All Upgrades]
+patch=1,EE,704D7B70,extended,0000000F
+
+[Nick-Charge Punch]
+patch=1,EE,704D7B74,extended,00000001
+
+[Nick-Multi-Spin]
+patch=1,EE,704D7B74,extended,00000002
+
+[Nick-Roar Attack]
+patch=1,EE,704D7B74,extended,00000004
+
+[Nick-Jump Smash]
+patch=1,EE,704D7B74,extended,00000008
+
+[Nick-All Upgrades]
+patch=1,EE,704D7B74,extended,0000000F
+
+[Philbert-Charge Punch]
+patch=1,EE,704D7B78,extended,00000001
+
+[Philbert-Multi-Spin]
+patch=1,EE,704D7B78,extended,00000002
+
+[Philbert-Roar Attack]
+patch=1,EE,704D7B78,extended,00000004
+
+[Philbert-Jump Smash]
+patch=1,EE,704D7B78,extended,00000008
+
+[Philbert-All Upgrades]
+patch=1,EE,704D7B78,extended,0000000F
+
+[Eyegore-Charge Punch]
+patch=1,EE,704D7B7C,extended,00000001
+
+[Eyegore-Multi-Spin]
+patch=1,EE,704D7B7C,extended,00000002
+
+[Eyegore-Roar Attack]
+patch=1,EE,704D7B7C,extended,00000004
+
+[Eyegore-Jump Smash]
+patch=1,EE,704D7B7C,extended,00000008
+
+[Eyegore-All Upgrades]
+patch=1,EE,704D7B7C,extended,0000000F
+
+[Bubba-Charge Punch]
+patch=1,EE,704D7B80,extended,00000001
+
+[Bubba-Multi-Spin]
+patch=1,EE,704D7B80,extended,00000002
+
+[Bubba-Roar Attack]
+patch=1,EE,704D7B80,extended,00000004
+
+[Bubba-Jump Smash]
+patch=1,EE,704D7B80,extended,00000008
+
+[Bubba-All Upgrades]
+patch=1,EE,704D7B80,extended,0000000F

@@ -1,0 +1,62 @@
+gametitle=Conflict Zone-Modern War Strategy (SLUS-20240)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011C9F4,extended,0C070228
+
+[Infinite Health (Starting Units)]
+patch=1,EE,2023E9E0,extended,3C01461C
+patch=1,EE,2023E9E8,extended,AE4102C0
+
+[Max CP]
+patch=1,EE,200C0220,extended,3C014974
+patch=1,EE,200C0224,extended,342123F0
+patch=1,EE,200C0228,extended,AC810280
+patch=1,EE,200C022C,extended,08084D17
+patch=1,EE,200C0230,extended,C4800280
+patch=1,EE,20213458,extended,08030088
+
+[Max Popularity]
+patch=1,EE,200C0240,extended,3C0142C8
+patch=1,EE,200C0244,extended,AC81027C
+patch=1,EE,200C0248,extended,08084D15
+patch=1,EE,200C024C,extended,C480027C
+patch=1,EE,20213450,extended,08030090
+
+[Always 9900 CP Per Second]
+patch=1,EE,200C0250,extended,3C0142C6
+patch=1,EE,200C0254,extended,AC410000
+patch=1,EE,200C0258,extended,03E00008
+patch=1,EE,200C025C,extended,C4540000
+patch=1,EE,201D9B48,extended,0C030094
+
+[Always 5000 CP Per Second]
+patch=1,EE,200C0250,extended,3C014248
+patch=1,EE,200C0254,extended,AC410000
+patch=1,EE,200C0258,extended,03E00008
+patch=1,EE,200C025C,extended,C4540000
+patch=1,EE,201D9B48,extended,0C030094
+
+[Always 1000 CP Per Second]
+patch=1,EE,200C0250,extended,3C014120
+patch=1,EE,200C0254,extended,AC410000
+patch=1,EE,200C0258,extended,03E00008
+patch=1,EE,200C025C,extended,C4540000
+patch=1,EE,201D9B48,extended,0C030094
+
+[P1 Quick Win (Pause, Hold {SQUARE}, Then Press {CROSS})]
+patch=1,EE,D04FCD02,extended,00003FFF
+patch=1,EE,202B7D28,extended,24020001
+patch=1,EE,D04FCD02,extended,0000FFFF
+patch=1,EE,202B7D28,extended,00000000
+
+[Fast Construction]
+patch=1,EE,2041F5E8,extended,00000001
+
+[See All Enemies On Map]
+patch=1,EE,2041F85C,extended,00000001
+
+[Replay All Missions]
+patch=1,EE,2041F8F4,extended,00000001

@@ -1,0 +1,111 @@
+gametitle=Zatch Bell!-Mamodo Fury (SLUS-21363)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90228C9C,extended,0C08D595
+
+[Infinite Time]
+patch=1,EE,2049D258,extended,00003A98
+
+[Infinite Health P1]
+patch=1,EE,103D8988,extended,00000096
+patch=1,EE,103D87B4,extended,00000096
+
+[75% Health P1]
+patch=1,EE,103D8988,extended,00000096
+patch=1,EE,D03D87B4,extended,00300070
+patch=1,EE,103D87B4,extended,00000070
+
+[75% Health P1]
+patch=1,EE,103D8988,extended,00000096
+patch=1,EE,D03D87B4,extended,0030004B
+patch=1,EE,103D87B4,extended,0000004B
+
+[25% Health P1]
+patch=1,EE,103D8988,extended,00000096
+patch=1,EE,D03D87B4,extended,00300025
+patch=1,EE,103D87B4,extended,00000025
+
+[1-Hit Death P1]
+patch=1,EE,103D8988,extended,00000096
+patch=1,EE,D03D87B4,extended,00300001
+patch=1,EE,103D87B4,extended,00000001
+
+[No Health P1]
+patch=1,EE,103D87B4,extended,00000000
+patch=1,EE,103D8988,extended,00000096
+
+[Max Health P1]
+patch=1,EE,103D8988,extended,00000096
+
+[Infinite Spirit Energy P1]
+patch=1,EE,203D8968,extended,43160000
+patch=1,EE,103D898A,extended,00000096
+
+[No Spirit Energy P1]
+patch=1,EE,203D8968,extended,00000000
+patch=1,EE,103D898A,extended,00000096
+
+[Infinite Health P2]
+patch=1,EE,103D9228,extended,00000096
+patch=1,EE,103D9054,extended,00000096
+
+[75% Health P2]
+patch=1,EE,103D9228,extended,00000096
+patch=1,EE,D03D9054,extended,00300070
+patch=1,EE,103D9054,extended,00000070
+
+[75% Health P2]
+patch=1,EE,103D9228,extended,00000096
+patch=1,EE,D03D9054,extended,0030004B
+patch=1,EE,103D9054,extended,0000004B
+
+[25% Health P2]
+patch=1,EE,103D9228,extended,00000096
+patch=1,EE,D03D9054,extended,00300025
+patch=1,EE,103D9054,extended,00000025
+
+[1-Hit Death P2]
+patch=1,EE,103D9228,extended,00000096
+patch=1,EE,D03D9054,extended,00300001
+patch=1,EE,103D9054,extended,00000001
+
+[No Health P2]
+patch=1,EE,103D9054,extended,00000000
+patch=1,EE,103D9228,extended,00000096
+
+[Max Health P2]
+patch=1,EE,103D9228,extended,00000096
+
+[Infinite Spirit Energy P2]
+patch=1,EE,203D9208,extended,43160000
+patch=1,EE,103D922A,extended,00000096
+
+[No Spirit Energy P2]
+patch=1,EE,203D9208,extended,00000000
+patch=1,EE,103D922A,extended,00000096
+
+[Unlock All Modes]
+patch=1,EE,2049D558,extended,FFFFFFFF
+
+[Unlock All Characters]
+patch=1,EE,2049D55C,extended,FFFFFFFF
+patch=1,EE,2049D560,extended,FFFFFFFF
+
+[Unlock All Model Gallery]
+patch=1,EE,2049D564,extended,FFFFFFFF
+patch=1,EE,2049D568,extended,FFFFFFFF
+
+[Unlock Everything]
+patch=1,EE,4049D558,extended,00050001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[P1 Press {L1}+{SELECT} For 4 Mamodo Points]
+patch=1,EE,D03AFC02,extended,0000FBFE
+patch=1,EE,203D6EEC,extended,00000004
+
+[P1 Press {L2}+{SELECT} For 0 Mamado Points]
+patch=1,EE,D03AFC02,extended,0000FEFE
+patch=1,EE,203D6EEC,extended,00000000

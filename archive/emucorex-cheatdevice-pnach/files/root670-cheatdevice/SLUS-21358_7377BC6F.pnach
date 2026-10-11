@@ -1,0 +1,137 @@
+gametitle=Naruto-Ultimate Ninja (SLUS-21358)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901320DC,extended,0C04DE9C
+
+[Infinite Time]
+patch=1,EE,20246CFC,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,200C0220,extended,3C013F80
+patch=1,EE,200C0224,extended,0805FFC4
+patch=1,EE,200C0228,extended,AC810058
+patch=1,EE,2024A2D4,extended,0C030088
+patch=1,EE,2024A304,extended,0C030088
+
+[No Health P1]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,0805FFC4
+patch=1,EE,200C0228,extended,AC810058
+patch=1,EE,2024A2D4,extended,0C030088
+patch=1,EE,2024A304,extended,0C030088
+
+[Infinite Special P1]
+patch=1,EE,200C0240,extended,3C014180
+patch=1,EE,200C0244,extended,AEC1005C
+patch=1,EE,200C0248,extended,03E00008
+patch=1,EE,200C024C,extended,8E2300FC
+patch=1,EE,2024A418,extended,0C030090
+
+[No Special P1]
+patch=1,EE,200C0240,extended,24010000
+patch=1,EE,200C0244,extended,AEC1005C
+patch=1,EE,200C0248,extended,03E00008
+patch=1,EE,200C024C,extended,8E2300FC
+patch=1,EE,2024A418,extended,0C030090
+
+[Infinite Health P2]
+patch=1,EE,200C0230,extended,3C013F80
+patch=1,EE,200C0234,extended,0805FFC4
+patch=1,EE,200C0238,extended,AC810058
+patch=1,EE,2024A2E4,extended,0C03008C
+patch=1,EE,2024A314,extended,0C03008C
+
+[No Health P2]
+patch=1,EE,200C0230,extended,24010000
+patch=1,EE,200C0234,extended,0805FFC4
+patch=1,EE,200C0238,extended,AC810058
+patch=1,EE,2024A2E4,extended,0C03008C
+patch=1,EE,2024A314,extended,0C03008C
+
+[Infinite Special P2]
+patch=1,EE,200C0250,extended,3C014180
+patch=1,EE,200C0254,extended,AEE1005C
+patch=1,EE,200C0258,extended,03E00008
+patch=1,EE,200C025C,extended,24020002
+patch=1,EE,2024A450,extended,0C030094
+
+[No Special P2]
+patch=1,EE,200C0250,extended,24010000
+patch=1,EE,200C0254,extended,AEE1005C
+patch=1,EE,200C0258,extended,03E00008
+patch=1,EE,200C025C,extended,24020002
+patch=1,EE,2024A450,extended,0C030094
+
+[Max All Shop Items]
+patch=1,EE,200C0260,extended,A0411198
+patch=1,EE,200C0264,extended,080921C7
+patch=1,EE,200C0268,extended,90421198
+patch=1,EE,20248710,extended,08030098
+patch=1,EE,20248714,extended,24010063
+
+[Infinite Item Usage]
+patch=1,EE,2027313C,extended,00000000
+
+[Extra Items]
+patch=1,EE,10273134,extended,00000001
+
+[Unlock All Shop Items]
+patch=1,EE,4083D810,extended,00580001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Infinite Ryo]
+patch=1,EE,10AF912C,extended,0000FFFF
+
+[Max Ryo]
+patch=1,EE,20AF912C,extended,05F5E0FF
+
+[Buying Shop Items Doesnt Decrease Ryo]
+patch=1,EE,2032FAD8,extended,00000000
+
+[Buying Shop Items Increases Ryo]
+patch=1,EE,2032FAD4,extended,00431021
+
+[Naruto]
+patch=1,EE,2083CD80,extended,00000003
+
+[Sasuke]
+patch=1,EE,2083CD84,extended,00000003
+
+[Lee]
+patch=1,EE,2083CD88,extended,00000003
+
+[Gaara]
+patch=1,EE,2083CD8C,extended,00000003
+
+[Shikamaru]
+patch=1,EE,2083CD90,extended,00000003
+
+[Neji]
+patch=1,EE,2083CD94,extended,00000003
+
+[Sakura]
+patch=1,EE,2083CD98,extended,00000003
+
+[Kakashi]
+patch=1,EE,2083CD9C,extended,00000003
+
+[Orochi Maru]
+patch=1,EE,2083CDA0,extended,00000003
+
+[Haku]
+patch=1,EE,2083CDA4,extended,00000003
+
+[Zabuza]
+patch=1,EE,2083CDA8,extended,00000003
+
+[Hinata]
+patch=1,EE,2083CDAC,extended,00000003
+
+[Nine-Tailed Naruto]
+patch=1,EE,2083CDB0,extended,00000003
+
+[Curse Marked Sasuke]
+patch=1,EE,2083CDB4,extended,00000003

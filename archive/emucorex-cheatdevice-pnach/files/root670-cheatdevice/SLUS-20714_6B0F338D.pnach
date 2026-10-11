@@ -1,0 +1,41 @@
+gametitle=Red Ninja-End Of Honor (SLUS-20714)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90434614,extended,0C11541F
+
+[Max Health]
+patch=1,EE,2016D358,extended,2401012C
+patch=1,EE,2016D360,extended,AE211198
+
+[Infinite Health]
+patch=1,EE,203BBD9C,extended,8C821198
+patch=1,EE,203BBDA0,extended,AC821194
+
+[Infinite Ninjitsu]
+patch=1,EE,2016D388,extended,C62C119C
+patch=1,EE,2016D390,extended,E62C11A0
+
+[Max Ninjitsu]
+patch=1,EE,2016D400,extended,3C014396
+patch=1,EE,2016D408,extended,AE21119C
+
+[Have All Items]
+patch=1,EE,203D92B0,extended,24020001
+patch=1,EE,203D92B4,extended,AC620004
+
+[Max Quantity All Items]
+patch=1,EE,203D97D0,extended,24100063
+patch=1,EE,203D97D4,extended,AC70000C
+
+[Infinite Item Usage]
+patch=1,EE,203BD560,extended,00000000
+
+[P1 Press {CROSS} For Moon Jump]
+patch=1,EE,2015D810,extended,3C0141C0
+patch=1,EE,D0677442,extended,0000BFFF
+patch=1,EE,2015D818,extended,AE8100C4
+patch=1,EE,D0677442,extended,0000FFFF
+patch=1,EE,2015D818,extended,00000000

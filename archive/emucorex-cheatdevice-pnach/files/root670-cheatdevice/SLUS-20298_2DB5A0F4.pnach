@@ -1,0 +1,243 @@
+gametitle=High Heat Major League Baseball 2003 (SLUS-20298)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9034474C,extended,0C0CB3D8
+
+[Home Team Scores 50]
+patch=1,EE,11A58760,extended,00000032
+
+[Home Team Scores 20]
+patch=1,EE,11A58760,extended,00000014
+
+[Home Team Scores 0]
+patch=1,EE,11A58760,extended,00000000
+
+[Home Team Start With 50 Runs]
+patch=1,EE,D1A58760,extended,00000000
+patch=1,EE,11A58760,extended,00000032
+
+[Home Team Start With 20 Runs]
+patch=1,EE,D1A58760,extended,00000000
+patch=1,EE,11A58760,extended,00000014
+
+[Home Team Start With 10 Runs]
+patch=1,EE,D1A58760,extended,00000000
+patch=1,EE,11A58760,extended,0000000A
+
+[Home Team Start With 5 Runs]
+patch=1,EE,D1A58760,extended,00000000
+patch=1,EE,11A58760,extended,00000005
+
+[Away Team Scores 50]
+patch=1,EE,11A58764,extended,00000032
+
+[Away Team Scores 20]
+patch=1,EE,11A58764,extended,00000014
+
+[Away Team Scores 0]
+patch=1,EE,11A58764,extended,00000000
+
+[Away Team Start With 50 Runs]
+patch=1,EE,D1A58764,extended,00000000
+patch=1,EE,11A58764,extended,00000032
+
+[Away Team Start With 20 Runs]
+patch=1,EE,D1A58764,extended,00000000
+patch=1,EE,11A58764,extended,00000014
+
+[Away Team Start With 10 Runs]
+patch=1,EE,D1A58764,extended,00000000
+patch=1,EE,11A58764,extended,0000000A
+
+[Away Team Start With 5 Runs]
+patch=1,EE,D1A58764,extended,00000000
+patch=1,EE,11A58764,extended,00000005
+
+[P1 Press {L1}+{R1} For No Outs, No Strikes & 3 Balls]
+patch=1,EE,E003F3FF,extended,00E33462
+patch=1,EE,11A58750,extended,00000000
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000000
+
+[P1 Press {L1}+{R2} For 2 Outs, 2 Strikes & No Balls]
+patch=1,EE,E003FCFF,extended,00E33462
+patch=1,EE,11A58750,extended,00000002
+patch=1,EE,11A58754,extended,00000000
+patch=1,EE,11A58758,extended,00000002
+
+[P2 Press {L1}+{R1} For No Outs, No Strikes & 3 Balls]
+patch=1,EE,E003F3FF,extended,00E334EA
+patch=1,EE,11A58750,extended,00000000
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000000
+
+[P2 Press {L1}+{R2} For 2 Outs, 2 Strikes & No Balls]
+patch=1,EE,E003FCFF,extended,00E334EA
+patch=1,EE,11A58750,extended,00000002
+patch=1,EE,11A58754,extended,00000000
+patch=1,EE,11A58758,extended,00000002
+
+[Infinite Outs]
+patch=1,EE,11A58750,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,D1A58750,extended,00000000
+patch=1,EE,11A58750,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,D1A58750,extended,00000000
+patch=1,EE,11A58750,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,11A58754,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000001
+
+[Infinite Strikes]
+patch=1,EE,11A58758,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,D1A58758,extended,00000000
+patch=1,EE,11A58758,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,D1A58758,extended,00000000
+patch=1,EE,11A58758,extended,00000001
+
+[Always Full Count]
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000002
+
+[Always Full Count & 2 Outs]
+patch=1,EE,11A58750,extended,00000002
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000002
+
+[Infinite Outs]
+patch=1,EE,E0010000,extended,01A58748
+patch=1,EE,11A58750,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,D1A58750,extended,00000000
+patch=1,EE,11A58750,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,D1A58750,extended,00000000
+patch=1,EE,11A58750,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,E0010000,extended,01A58748
+patch=1,EE,11A58754,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000001
+
+[Infinite Strikes]
+patch=1,EE,E0010000,extended,01A58748
+patch=1,EE,11A58758,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,D1A58758,extended,00000000
+patch=1,EE,11A58758,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,D1A58758,extended,00000000
+patch=1,EE,11A58758,extended,00000001
+
+[Always Full Count]
+patch=1,EE,E0020000,extended,01A58748
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000002
+
+[Always Full Count & 2 Outs]
+patch=1,EE,E0030000,extended,01A58748
+patch=1,EE,11A58750,extended,00000002
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000002
+
+[Infinite Outs]
+patch=1,EE,E0010001,extended,01A58748
+patch=1,EE,11A58750,extended,00000000
+
+[1 Out And You Are Out]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,D1A58750,extended,00000000
+patch=1,EE,11A58750,extended,00000002
+
+[2 Outs And You Are Out]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,D1A58750,extended,00000000
+patch=1,EE,11A58750,extended,00000001
+
+[Infinite Balls]
+patch=1,EE,E0010001,extended,01A58748
+patch=1,EE,11A58754,extended,00000000
+
+[1 Ball And You Walk]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000003
+
+[2 Balls And You Walk]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000002
+
+[3 Balls And You Walk]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,D1A58754,extended,00000000
+patch=1,EE,11A58754,extended,00000001
+
+[Infinite Strikes]
+patch=1,EE,E0010001,extended,01A58748
+patch=1,EE,11A58758,extended,00000000
+
+[1 Strike And You Are Out]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,D1A58758,extended,00000000
+patch=1,EE,11A58758,extended,00000002
+
+[2 Strikes And You Are Out]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,D1A58758,extended,00000000
+patch=1,EE,11A58758,extended,00000001
+
+[Always Full Count]
+patch=1,EE,E0020001,extended,01A58748
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000002
+
+[Always Full Count & 2 Outs]
+patch=1,EE,E0030001,extended,01A58748
+patch=1,EE,11A58750,extended,00000002
+patch=1,EE,11A58754,extended,00000003
+patch=1,EE,11A58758,extended,00000002

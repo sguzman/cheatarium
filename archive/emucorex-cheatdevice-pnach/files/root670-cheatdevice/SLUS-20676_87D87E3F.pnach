@@ -1,0 +1,106 @@
+gametitle=Low Rider (SLUS-20676)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0200008,extended,00293AF7
+
+[Max Fans]
+patch=1,EE,20493A84,extended,0000270F
+
+[Max Radical]
+patch=1,EE,20493A88,extended,0000270F
+
+[Infinite Money]
+patch=1,EE,10493A8C,extended,0000FFFF
+patch=1,EE,1056DB24,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,10493A8C,extended,0098967F
+patch=1,EE,1056DB24,extended,0098967F
+
+[Buying Items Doesnt Decrease Money]
+patch=1,EE,2024CBF8,extended,00000000
+
+[Buying Items Increases Money]
+patch=1,EE,2024CBD8,extended,00A21021
+
+[Infinite Time]
+patch=1,EE,2032C7C8,extended,00000E10
+
+[Infinite Battery P1]
+patch=1,EE,2052A808,extended,0000270F
+patch=1,EE,2052A80C,extended,0000270F
+
+[No Battery P1]
+patch=1,EE,2052A808,extended,00000000
+patch=1,EE,2052A80C,extended,0000270F
+
+[Max Inches P1]
+patch=1,EE,2032C878,extended,0000270F
+
+[No Inches P1]
+patch=1,EE,2032C878,extended,00000000
+
+[Max Dance Points P1]
+patch=1,EE,205335B0,extended,0000270F
+
+[No Dance Points P1]
+patch=1,EE,205335B0,extended,00000000
+
+[Infinite Battery P2]
+patch=1,EE,2052A810,extended,0000270F
+patch=1,EE,2052A814,extended,0000270F
+
+[No Battery P2]
+patch=1,EE,2052A810,extended,00000000
+patch=1,EE,2052A814,extended,0000270F
+
+[Max Inches P2]
+patch=1,EE,2032C87C,extended,0000270F
+
+[No Inches P2]
+patch=1,EE,2032C87C,extended,00000000
+
+[Max Dance Points P2]
+patch=1,EE,205335B4,extended,0000270F
+
+[No Dance Points P2]
+patch=1,EE,205335B4,extended,00000000
+
+[San Diego]
+patch=1,EE,10493AB8,extended,00000001
+patch=1,EE,10493AFC,extended,00000001
+
+[Los Angeles]
+patch=1,EE,10493B40,extended,00000001
+
+[San Francisco]
+patch=1,EE,10493B84,extended,00000001
+
+[East Side]
+patch=1,EE,10493BC8,extended,00000001
+
+[Las Vegas]
+patch=1,EE,10493C0C,extended,00000001
+
+[All San Diego]
+patch=1,EE,20493AF4,extended,00010001
+patch=1,EE,20493AF8,extended,00010001
+
+[All Los Angeles]
+patch=1,EE,20493B38,extended,00010001
+patch=1,EE,20493B3C,extended,00010001
+
+[All San Francisco]
+patch=1,EE,20493B7C,extended,00010001
+patch=1,EE,20493B80,extended,00010001
+
+[All East Side]
+patch=1,EE,20493BC0,extended,00010001
+patch=1,EE,20493BC4,extended,00010001
+
+[All Las Vegas]
+patch=1,EE,20493C04,extended,00010001
+patch=1,EE,20493C08,extended,00010001

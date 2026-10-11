@@ -1,0 +1,221 @@
+gametitle=X2 Wolverine's Revenge (SLUS-20337)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902B1BAC,extended,0C0B08D8
+
+[Infinite Health]
+patch=1,EE,2011BCDC,extended,C44000C4
+patch=1,EE,2011BCE4,extended,E44000C0
+
+[Infinite Rage (Hold {SELECT} To Disable)]
+patch=1,EE,E002FFFE,extended,103AC142
+patch=1,EE,203C48C0,extended,42C80000
+patch=1,EE,203C48C4,extended,42C80000
+patch=1,EE,E002FFFE,extended,003AC142
+patch=1,EE,203C48C0,extended,00000000
+patch=1,EE,203C48C4,extended,00000000
+
+[Unlock All Play Movies]
+patch=1,EE,2035F5AC,extended,FFFFFFFF
+
+[Disable Fog]
+patch=1,EE,20360774,extended,00000001
+patch=1,EE,20360778,extended,3F800000
+
+[Have Cheat Menu (Pause Game)]
+patch=1,EE,203616DC,extended,00000001
+
+[Unlock All Challenges]
+patch=1,EE,203AC610,extended,FFFFFFFF
+
+[Unlock All Costumes]
+patch=1,EE,203AC62C,extended,FFFFFFFF
+
+[Unlock All Cerebros]
+patch=1,EE,203AC630,extended,FFFFFFFF
+
+[Unlock All Production Artwork]
+patch=1,EE,203235B8,extended,0000003E
+
+[Show Skeleton]
+patch=1,EE,2035FBB4,extended,00000001
+
+[Show IK Axes]
+patch=1,EE,2035FBB8,extended,00000001
+
+[Show Lights]
+patch=1,EE,2035FBBC,extended,00000001
+
+[Show Shadows]
+patch=1,EE,2035FBC4,extended,00000001
+
+[Show Nearest Light]
+patch=1,EE,2035FBCC,extended,00000001
+
+[Show Mount Points]
+patch=1,EE,2035FBD8,extended,00000001
+
+[Invisible]
+patch=1,EE,2035FBDC,extended,00000001
+
+[Show NPC LOS Line]
+patch=1,EE,2035FBE0,extended,00000001
+
+[Show Last Fight Camera Path]
+patch=1,EE,2035FBE4,extended,00000001
+
+[Show Last Animation Path]
+patch=1,EE,2035FBE8,extended,00000001
+
+[Show Memory Profiles]
+patch=1,EE,2035FC10,extended,00000001
+
+[All Locking/Unlocking Automated]
+patch=1,EE,2035FD58,extended,00000000
+
+[Engage Acts As Lock On & Change Target]
+patch=1,EE,2035FD58,extended,00000001
+
+[Separate Combat Initiate & Target Button]
+patch=1,EE,2035FD58,extended,00000002
+
+[AutoLock Is A Toggle]
+patch=1,EE,2035FD5C,extended,00000001
+
+[Always AutoLock Closest]
+patch=1,EE,2035FD60,extended,00000001
+
+[Dont Always Face Enemy]
+patch=1,EE,2035FD68,extended,00000001
+
+[Force Wolvie To Fight (AutoLocks When Attacked)]
+patch=1,EE,2035FD74,extended,00000001
+
+[Strike From Anywhere]
+patch=1,EE,2035FD8C,extended,00000001
+
+[Steering In Mid-Air In Running Jump]
+patch=1,EE,2035FE0C,extended,00000001
+
+[Foggy]
+patch=1,EE,20360774,extended,00000001
+
+[Show VRAM Usage]
+patch=1,EE,203607E8,extended,00000001
+
+[Show Performance]
+patch=1,EE,20360814,extended,00000001
+
+[Show NPC View Cones]
+patch=1,EE,2036081C,extended,00000001
+
+[Invulnerable]
+patch=1,EE,20360824,extended,00000001
+
+[Baddies Stand Still]
+patch=1,EE,20360828,extended,00000001
+
+[Show Pathfinding Routes]
+patch=1,EE,2036082C,extended,00000001
+
+[No Realtime Lighting]
+patch=1,EE,20360920,extended,00000000
+
+[Dont Convert Dim Lights To Ambient]
+patch=1,EE,20360924,extended,00000000
+
+[No Animated Lights]
+patch=1,EE,20360934,extended,00000000
+
+[No Animation Curves]
+patch=1,EE,20360964,extended,00000000
+
+[No Animation Optimisation]
+patch=1,EE,20360968,extended,00000000
+
+[Show Shadow As Searchlight]
+patch=1,EE,203609E4,extended,00000001
+
+[Show Character Collision Volumes]
+patch=1,EE,20360A20,extended,00000001
+
+[Show Full Character Cylinder]
+patch=1,EE,20360A24,extended,00000001
+
+[Screen Effects Off]
+patch=1,EE,20360A28,extended,00000000
+
+[Disable Rails & Fixed Cameras]
+patch=1,EE,20360AE0,extended,00000001
+
+[Show Camera Bounding Boxes]
+patch=1,EE,20360AE4,extended,00000001
+
+[Unlock All Doors]
+patch=1,EE,20360B10,extended,00000001
+
+[Show Nearest Guns Darta]
+patch=1,EE,20360C38,extended,00000001
+
+[Full Inventory]
+patch=1,EE,20360EE8,extended,00000001
+
+[Show Sound System Stats]
+patch=1,EE,20361168,extended,00000001
+
+[Show Sound Emitters]
+patch=1,EE,2036116C,extended,00000001
+
+[Disable Collisions]
+patch=1,EE,20361690,extended,00000001
+
+[Dont Render Matts Particles]
+patch=1,EE,20361DE8,extended,00000000
+
+[Freeze Objects]
+patch=1,EE,203A120C,extended,00000001
+
+[Have All Strike Levels]
+patch=1,EE,203ABD60,extended,00000003
+
+[1-Hit Kill]
+patch=1,EE,203ACE74,extended,00000001
+
+[Disable HUD]
+patch=1,EE,203ACE78,extended,00000001
+
+[Disable Mission Countdown]
+patch=1,EE,203ACE7C,extended,00000001
+
+[Max Combat Score]
+patch=1,EE,20362454,extended,05F5E0FF
+
+[Max Total Score]
+patch=1,EE,203ABD88,extended,05F5E0FF
+
+[Max Stealth Strikes]
+patch=1,EE,103D85F0,extended,000003E7
+
+[Max Double Strikes]
+patch=1,EE,103D85F2,extended,000003E7
+
+[Max Triple Strikes]
+patch=1,EE,103D85F4,extended,000003E7
+
+[Max Bowling Bonus]
+patch=1,EE,103D85F6,extended,000003E7
+
+[Max Combat Points]
+patch=1,EE,103D85F8,extended,000003E7
+
+[Max Dog Tags]
+patch=1,EE,103D85FA,extended,000003E7
+
+[Max Cerebro File]
+patch=1,EE,103D85FC,extended,000003E7
+
+[Max Comic Cover]
+patch=1,EE,103D85FE,extended,000003E7

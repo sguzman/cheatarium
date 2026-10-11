@@ -1,0 +1,886 @@
+gametitle=Dragonball Z-Budokai (SLUS-20591)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9010B034,extended,0C0462EE
+
+[Unlock All Characters]
+patch=1,EE,2035E1C4,extended,FFFFFFFF
+
+[Infinite Health P1]
+patch=1,EE,20576610,extended,453B8000
+
+[75% Health P1]
+patch=1,EE,D0576610,extended,0000453B
+patch=1,EE,20576610,extended,450CA000
+
+[50% Health P1]
+patch=1,EE,D0576610,extended,0000453B
+patch=1,EE,20576610,extended,44BB8000
+
+[25% Health P1]
+patch=1,EE,D0576610,extended,0000453B
+patch=1,EE,20576610,extended,443B8000
+
+[1-Hit Death P1]
+patch=1,EE,D0576610,extended,0000453B
+patch=1,EE,20576610,extended,3F800000
+
+[No Health P1]
+patch=1,EE,20576610,extended,00000000
+
+[Max Level 7 KI Energy P1]
+patch=1,EE,20576618,extended,442F0000
+
+[No KI Energy P1]
+patch=1,EE,20576618,extended,00000000
+
+[Level 1 KI Energy P1]
+patch=1,EE,20576618,extended,42C80000
+
+[Level 2 KI Energy P1]
+patch=1,EE,20576618,extended,43480000
+
+[Level 3 KI Energy P1]
+patch=1,EE,20576618,extended,43960000
+
+[Level 4 KI Energy P1]
+patch=1,EE,20576618,extended,43C80000
+
+[Level 5 KI Energy P1]
+patch=1,EE,20576618,extended,43FA0000
+
+[Level 6 KI Energy P1]
+patch=1,EE,20576618,extended,44160000
+
+[Infinite Health P2]
+patch=1,EE,2057CC10,extended,453B8000
+
+[75% Health P2]
+patch=1,EE,D057CC10,extended,0000453B
+patch=1,EE,2057CC10,extended,450CA000
+
+[50% Health P2]
+patch=1,EE,D057CC10,extended,0000453B
+patch=1,EE,2057CC10,extended,44BB8000
+
+[25% Health P2]
+patch=1,EE,D057CC10,extended,0000453B
+patch=1,EE,2057CC10,extended,443B8000
+
+[1-Hit Death P2]
+patch=1,EE,D057CC10,extended,0000453B
+patch=1,EE,2057CC10,extended,3F800000
+
+[No Health P2]
+patch=1,EE,2057CC10,extended,00000000
+
+[Max Level 7 KI Energy P2]
+patch=1,EE,2057CC18,extended,442F0000
+
+[No KI Energy P2]
+patch=1,EE,2057CC18,extended,00000000
+
+[Level 1 KI Energy P2]
+patch=1,EE,2057CC18,extended,42C80000
+
+[Level 2 KI Energy P2]
+patch=1,EE,2057CC18,extended,43480000
+
+[Level 3 KI Energy P2]
+patch=1,EE,2057CC18,extended,43960000
+
+[Level 4 KI Energy P2]
+patch=1,EE,2057CC18,extended,43C80000
+
+[Level 5 KI Energy P2]
+patch=1,EE,2057CC18,extended,43FA0000
+
+[Level 6 KI Energy P2]
+patch=1,EE,2057CC18,extended,44160000
+
+[Have All Ability & Physical Capsules]
+patch=1,EE,005E60A9,extended,00000001
+patch=1,EE,105E60AA,extended,00000101
+patch=1,EE,405E60AC,extended,00230001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,105E6138,extended,00000101
+patch=1,EE,005E613A,extended,00000001
+patch=1,EE,105E61AE,extended,00000101
+patch=1,EE,105E61B0,extended,00000101
+patch=1,EE,105E61BA,extended,00000101
+patch=1,EE,205E61BC,extended,01010101
+
+[Have All DragonBalls]
+patch=1,EE,205E618C,extended,01010101
+patch=1,EE,105E6190,extended,00000101
+patch=1,EE,005E6192,extended,00000001
+
+[Have All System Capsules]
+patch=1,EE,005E6193,extended,00000001
+patch=1,EE,405E6194,extended,00060001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,105E61AC,extended,00000101
+
+[Have All Support Capsules]
+patch=1,EE,005E613B,extended,00000001
+patch=1,EE,405E613C,extended,00140001
+patch=1,EE,01010101,extended,00000000
+
+[Unlock All Characters]
+patch=1,EE,405E608C,extended,00050001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,105E60A0,extended,00000101
+patch=1,EE,005E60A4,extended,00000001
+
+[Infinite Health]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576610,extended,453B8000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC10,extended,453B8000
+
+[Max Level 7 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,442F0000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,442F0000
+
+[No KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,00000000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,00000000
+
+[Level 1 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,42C80000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,42C80000
+
+[Level 2 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,43480000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,43480000
+
+[Level 3 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,43960000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,43960000
+
+[Level 4 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,43C80000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,43C80000
+
+[Level 5 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,43FA0000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,43FA0000
+
+[Level 6 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,20576618,extended,44160000
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,2057CC18,extended,44160000
+
+[No Health]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576610,extended,00000000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC10,extended,00000000
+
+[Max Level 7 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,442F0000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,442F0000
+
+[No KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,00000000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,00000000
+
+[Level 1 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,42C80000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,42C80000
+
+[Level 2 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,43480000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,43480000
+
+[Level 3 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,43960000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,43960000
+
+[Level 4 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,43C80000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,43C80000
+
+[Level 5 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,43FA0000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,43FA0000
+
+[Level 6 KI Energy]
+patch=1,EE,D05E5F7C,extended,00000001
+patch=1,EE,20576618,extended,44160000
+patch=1,EE,D05E5F7C,extended,00000000
+patch=1,EE,2057CC18,extended,44160000
+
+[DragonBall 1]
+patch=1,EE,005E618C,extended,00000001
+
+[DragonBall 2]
+patch=1,EE,005E618D,extended,00000001
+
+[DragonBall 3]
+patch=1,EE,005E618E,extended,00000001
+
+[DragonBall 4]
+patch=1,EE,005E618F,extended,00000001
+
+[DragonBall 5]
+patch=1,EE,005E6190,extended,00000001
+
+[DragonBall 6]
+patch=1,EE,005E6191,extended,00000001
+
+[DragonBall 7]
+patch=1,EE,005E6192,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60A9,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60AA,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60AB,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60AC,extended,00000001
+
+[Capsule 5]
+patch=1,EE,005E60AD,extended,00000001
+
+[Capsule 6]
+patch=1,EE,005E60AE,extended,00000001
+
+[Capsule 7]
+patch=1,EE,005E60AF,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60B0,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60B1,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60B2,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60B3,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60B4,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60B5,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60B6,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60B7,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60B8,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60B9,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60BA,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60BB,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60BC,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60BD,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60BE,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60BF,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60C0,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60C1,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60C2,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60C3,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60C4,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60C5,extended,00000001
+
+[Capsule 5]
+patch=1,EE,005E60C6,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60C7,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60C8,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60C9,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60CA,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60CB,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60CC,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60CD,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60CE,extended,00000001
+
+[Capsule 5]
+patch=1,EE,005E60CF,extended,00000001
+
+[Capsule 6]
+patch=1,EE,005E60D0,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60D1,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60D2,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60D3,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60D4,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60D5,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60D6,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60D7,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60D8,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60D9,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60DA,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60DB,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60DC,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60DD,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60DE,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60DF,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60E0,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60E1,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60E2,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60E3,extended,00000001
+
+[Capsule 5]
+patch=1,EE,005E60E4,extended,00000001
+
+[Capsule 6]
+patch=1,EE,005E60E5,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60E6,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60E7,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60E8,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60E9,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60EA,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E61B0,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E61B1,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60EB,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60EC,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60ED,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60EE,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60EF,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E61AE,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E61AF,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60F0,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60F1,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60F2,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60F3,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60F4,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60F5,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60F6,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60F7,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60F8,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E60F9,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60FA,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60FB,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60FC,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E60FD,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E60FE,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E60FF,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6100,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E6101,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6102,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6103,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6104,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E6105,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6106,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6107,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6108,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6109,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E610A,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E610B,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E610C,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E610D,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E610E,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E610F,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6110,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6111,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6112,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6113,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6114,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E61B9,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6115,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6116,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6117,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E6118,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6119,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E611A,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E611B,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E611C,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E611D,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E611E,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E611F,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6120,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6121,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6122,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6123,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6124,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6125,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6126,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6127,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6128,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6129,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E612A,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E612B,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E612C,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E612D,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E612E,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E612F,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6130,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6131,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6132,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6133,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6134,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E6135,extended,00000001
+
+[Capsule 5]
+patch=1,EE,005E6136,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6137,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6138,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6139,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E613A,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E61BE,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E61BF,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E61BA,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E61BB,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E61BC,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E61BD,extended,00000001
+
+[Capsule 1]
+patch=1,EE,005E6193,extended,00000001
+
+[Capsule 2]
+patch=1,EE,005E6194,extended,00000001
+
+[Capsule 3]
+patch=1,EE,005E6195,extended,00000001
+
+[Capsule 4]
+patch=1,EE,005E6196,extended,00000001
+
+[Capsule 5]
+patch=1,EE,005E6197,extended,00000001
+
+[Capsule 6]
+patch=1,EE,005E6198,extended,00000001
+
+[Capsule 7]
+patch=1,EE,005E6199,extended,00000001
+
+[Capsule 8]
+patch=1,EE,005E619A,extended,00000001
+
+[Capsule 9]
+patch=1,EE,005E619B,extended,00000001
+
+[Capsule 10]
+patch=1,EE,005E619C,extended,00000001
+
+[Capsule 11]
+patch=1,EE,005E619D,extended,00000001
+
+[Capsule 12]
+patch=1,EE,005E619E,extended,00000001
+
+[Capsule 13]
+patch=1,EE,005E619F,extended,00000001
+
+[Capsule 14]
+patch=1,EE,005E61A0,extended,00000001
+
+[Capsule 15]
+patch=1,EE,005E61A1,extended,00000001
+
+[Capsule 16]
+patch=1,EE,005E61A2,extended,00000001
+
+[Capsule 17]
+patch=1,EE,005E61A3,extended,00000001
+
+[Capsule 18]
+patch=1,EE,005E61A4,extended,00000001
+
+[Capsule 19]
+patch=1,EE,005E61A5,extended,00000001
+
+[Capsule 20]
+patch=1,EE,005E61A6,extended,00000001
+
+[Capsule 21]
+patch=1,EE,005E61A7,extended,00000001
+
+[Capsule 22]
+patch=1,EE,005E61A8,extended,00000001
+
+[Capsule 23]
+patch=1,EE,005E61A9,extended,00000001
+
+[Capsule 24]
+patch=1,EE,005E61AA,extended,00000001
+
+[Capsule 25]
+patch=1,EE,005E61AB,extended,00000001
+
+[Capsule 26]
+patch=1,EE,005E61AC,extended,00000001
+
+[Capsule 27]
+patch=1,EE,005E61AD,extended,00000001
+
+[Goku]
+patch=1,EE,005E608C,extended,00000001
+
+[Kid Gohan]
+patch=1,EE,005E608D,extended,00000001
+
+[Teen Gohan]
+patch=1,EE,005E608E,extended,00000001
+
+[Vegeta]
+patch=1,EE,005E608F,extended,00000001
+
+[Krillin]
+patch=1,EE,005E6090,extended,00000001
+
+[Trunks]
+patch=1,EE,005E6091,extended,00000001
+
+[Piccolo]
+patch=1,EE,005E6092,extended,00000001
+
+[Tien]
+patch=1,EE,005E6093,extended,00000001
+
+[Yamcha]
+patch=1,EE,005E6094,extended,00000001
+
+[Raditz]
+patch=1,EE,005E6095,extended,00000001
+
+[Nappa]
+patch=1,EE,005E6096,extended,00000001
+
+[Ginyu]
+patch=1,EE,005E6097,extended,00000001
+
+[Recoome]
+patch=1,EE,005E6098,extended,00000001
+
+[Zarbon]
+patch=1,EE,005E6099,extended,00000001
+
+[Dodoria]
+patch=1,EE,005E609A,extended,00000001
+
+[Frieza]
+patch=1,EE,005E609B,extended,00000001
+
+[#16]
+patch=1,EE,005E609C,extended,00000001
+
+[#17]
+patch=1,EE,005E609D,extended,00000001
+
+[#18]
+patch=1,EE,005E609E,extended,00000001
+
+[#19]
+patch=1,EE,005E609F,extended,00000001
+
+[Cell]
+patch=1,EE,005E60A0,extended,00000001
+
+[Hercule]
+patch=1,EE,005E60A1,extended,00000001
+
+[Gt. Saiyaman]
+patch=1,EE,005E60A4,extended,00000001

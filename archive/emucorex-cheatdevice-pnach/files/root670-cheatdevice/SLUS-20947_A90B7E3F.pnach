@@ -1,0 +1,160 @@
+gametitle=Winback 2-Project Poseidon (SLUS-20947)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90321BA8,extended,00832021
+
+[Disable FMV]
+patch=1,EE,2032B160,extended,24020001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,A2450242
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,92460242
+patch=1,EE,20212C08,extended,0C030088
+
+[Infinite Ammo]
+patch=1,EE,2013B96C,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,2013B960,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,1013B960,extended,00000001
+
+[Never Reload]
+patch=1,EE,2013B978,extended,00000000
+
+[Never Reload With Max Clip]
+patch=1,EE,2013B974,extended,24020063
+
+[Infinite Flash Grenades]
+patch=1,EE,2012BFF8,extended,24450000
+
+[Max Infinite Flash Grenades]
+patch=1,EE,2012BFF8,extended,24050009
+
+[Extra Flash Grenades]
+patch=1,EE,2012BFF8,extended,00572823
+
+[Unlock All Episodes]
+patch=1,EE,201A1734,extended,24010001
+patch=1,EE,201A1738,extended,AC419414
+
+[View Episode Mission To Have Rank A]
+patch=1,EE,2019ED64,extended,24110001
+patch=1,EE,2019ED68,extended,AC719414
+patch=1,EE,201A1784,extended,24010001
+patch=1,EE,201A1788,extended,AC419414
+patch=1,EE,201A26EC,extended,24010001
+patch=1,EE,201A26F0,extended,AC419414
+
+[Infinite Mission Time]
+patch=1,EE,2027D2F0,extended,00000000
+
+[Always Low Game Play Time]
+patch=1,EE,201043DC,extended,AE000030
+
+[Unlock All Multi-Player Characters]
+patch=1,EE,200C022C,extended,2401FFFF
+patch=1,EE,200C0230,extended,AC61544C
+patch=1,EE,200C0234,extended,AC615450
+patch=1,EE,200C0238,extended,080AD706
+patch=1,EE,200C023C,extended,24E6002C
+patch=1,EE,202B5C10,extended,0803008B
+
+[Episode 01-Mission 01]
+patch=1,EE,219D9D18,extended,00000001
+
+[Episode 01-Mission 02]
+patch=1,EE,219D9D1C,extended,00000001
+
+[Episode 01-Mission 03]
+patch=1,EE,219D9D20,extended,00000001
+
+[Episode 02-Mission 01]
+patch=1,EE,219D9D24,extended,00000001
+
+[Episode 02-Mission 02]
+patch=1,EE,219D9D28,extended,00000001
+
+[Episode 02-Mission 03]
+patch=1,EE,219D9D2C,extended,00000001
+
+[Episode 03-Mission 01]
+patch=1,EE,219D9D30,extended,00000001
+
+[Episode 03-Mission 02]
+patch=1,EE,219D9D34,extended,00000001
+
+[Episode 03-Mission 03]
+patch=1,EE,219D9D38,extended,00000001
+
+[Episode 04-Mission 01]
+patch=1,EE,219D9D3C,extended,00000001
+
+[Episode 04-Mission 02]
+patch=1,EE,219D9D40,extended,00000001
+
+[Episode 04-Mission 03]
+patch=1,EE,219D9D44,extended,00000001
+
+[Episode 05-Mission 01]
+patch=1,EE,219D9D48,extended,00000001
+
+[Episode 05-Mission 02]
+patch=1,EE,219D9D4C,extended,00000001
+
+[Episode 05-Mission 03]
+patch=1,EE,219D9D50,extended,00000001
+
+[Episode 06-Mission 01]
+patch=1,EE,219D9D54,extended,00000001
+
+[Episode 06-Mission 02]
+patch=1,EE,219D9D58,extended,00000001
+
+[Episode 06-Mission 03]
+patch=1,EE,219D9D5C,extended,00000001
+
+[Episode 07-Mission 01]
+patch=1,EE,219D9D60,extended,00000001
+
+[Episode 07-Mission 02]
+patch=1,EE,219D9D64,extended,00000001
+
+[Episode 07-Mission 03]
+patch=1,EE,219D9D68,extended,00000001
+
+[Episode 08-Mission 01]
+patch=1,EE,219D9D6C,extended,00000001
+
+[Episode 08-Mission 02]
+patch=1,EE,219D9D70,extended,00000001
+
+[Episode 08-Mission 03]
+patch=1,EE,219D9D74,extended,00000001
+
+[Episode 09-Mission 01]
+patch=1,EE,219D9D78,extended,00000001
+
+[Episode 09-Mission 02]
+patch=1,EE,219D9D7C,extended,00000001
+
+[Episode 09-Mission 03]
+patch=1,EE,219D9D80,extended,00000001
+
+[Episode 10-Mission 01]
+patch=1,EE,219D9D84,extended,00000001
+
+[Episode 10-Mission 02]
+patch=1,EE,219D9D88,extended,00000001
+
+[Episode 10-Mission 03]
+patch=1,EE,219D9D8C,extended,00000001
+
+[All Missions]
+patch=1,EE,419D9D18,extended,001E0001
+patch=1,EE,00000001,extended,00000000

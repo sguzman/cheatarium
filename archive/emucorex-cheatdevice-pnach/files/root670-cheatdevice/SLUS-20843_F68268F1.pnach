@@ -1,0 +1,73 @@
+gametitle=Dead To Rights II (SLUS-20843)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9013207C,extended,0C04949E
+
+[Infinite Energy]
+patch=1,EE,200C0220,extended,8C810000
+patch=1,EE,200C0224,extended,0810BF8C
+patch=1,EE,200C0228,extended,AC810004
+patch=1,EE,2045C330,extended,0C030088
+
+[Infinite Armor]
+patch=1,EE,200C0230,extended,8C810000
+patch=1,EE,200C0234,extended,0810BF8C
+patch=1,EE,200C0238,extended,AC810004
+patch=1,EE,2045C348,extended,0C03008C
+
+[Infinite Adrenaline]
+patch=1,EE,200C0240,extended,8C810000
+patch=1,EE,200C0244,extended,0810BF8C
+patch=1,EE,200C0248,extended,AC810004
+patch=1,EE,2045C360,extended,0C030090
+
+[Infinite Adrenaline Usage]
+patch=1,EE,2042FCBC,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,20168920,extended,00000000
+
+[Unlock Art Gallery 1]
+patch=1,EE,719CA548,extended,00000001
+
+[Unlock Art Gallery 2]
+patch=1,EE,719CA548,extended,00000002
+
+[Unlock All Difficulties]
+patch=1,EE,219CA54C,extended,00000003
+
+[Extra Life]
+patch=1,EE,719CA550,extended,00000001
+
+[Extra Adrenaline]
+patch=1,EE,719CA550,extended,00000002
+
+[Extra Ammunition]
+patch=1,EE,719CA550,extended,00000004
+
+[All Cheats]
+patch=1,EE,719CA550,extended,00000007
+
+[Cabal Gun]
+patch=1,EE,719CA554,extended,00000001
+
+[Cabal SMG]
+patch=1,EE,719CA554,extended,00000002
+
+[Cabal Rifle]
+patch=1,EE,719CA554,extended,00000004
+
+[.50 DE]
+patch=1,EE,719CA554,extended,00000008
+
+[Molotov]
+patch=1,EE,719CA554,extended,00000010
+
+[Rocket Launcher]
+patch=1,EE,719CA554,extended,00000020
+
+[All Weapon Cheats]
+patch=1,EE,719CA554,extended,0000003F

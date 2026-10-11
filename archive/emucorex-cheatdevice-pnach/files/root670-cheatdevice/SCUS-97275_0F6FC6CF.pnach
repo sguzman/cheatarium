@@ -1,0 +1,88 @@
+gametitle=SOCOM II-US Navy Seals (SCUS-97275)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901BD810,extended,0C065600
+
+[Night Mode]
+patch=1,EE,D01EFC9C,extended,0000282D
+patch=1,EE,101EFD60,extended,00003F40
+
+[Bright Mode]
+patch=1,EE,D01EFC9C,extended,0000282D
+patch=1,EE,101EFD60,extended,3C024000
+
+[Infinite Health (You & Your Team)]
+patch=1,EE,E004802D,extended,00241CF4
+patch=1,EE,200C0230,extended,3C013F80
+patch=1,EE,200C0234,extended,08090744
+patch=1,EE,200C0238,extended,AE611044
+patch=1,EE,20241D04,extended,0803008C
+
+[Infinite Health (Only You)]
+patch=1,EE,E0041044,extended,005D4FB0
+patch=1,EE,200C0220,extended,3C013F80
+patch=1,EE,200C0224,extended,08177B5C
+patch=1,EE,200C0228,extended,AE811044
+patch=1,EE,205D4FB4,extended,0C030088
+
+[Less Enemies]
+patch=1,EE,D05B7CB4,extended,0000A1B0
+patch=1,EE,205B7CC8,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,D05BF694,extended,000001D4
+patch=1,EE,205BF6A8,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,D05BF694,extended,000001D4
+patch=1,EE,105BF6A0,extended,00000001
+
+[Most Terrorists Have No Ammo]
+patch=1,EE,E002105C,extended,005BD540
+patch=1,EE,205BD530,extended,03E00008
+patch=1,EE,205BD534,extended,00000000
+
+[No Recoil]
+patch=1,EE,D05C2694,extended,00000830
+patch=1,EE,205C26B4,extended,00000000
+
+[Infinite Grenades]
+patch=1,EE,D05C1FDC,extended,000001D4
+patch=1,EE,205C1FEC,extended,00000000
+
+[Extra Grenades]
+patch=1,EE,D05C1FDC,extended,000001D4
+patch=1,EE,105C1FE8,extended,00000001
+
+[Lesser AI]
+patch=1,EE,203DF188,extended,00000000
+
+[Idiot AI]
+patch=1,EE,E0022FCC,extended,0060BC64
+patch=1,EE,2060BC40,extended,03E00008
+patch=1,EE,2060BC44,extended,00000000
+
+[Spiderman Mode]
+patch=1,EE,2044C268,extended,C1200000
+
+[No Clipping]
+patch=1,EE,20249BE8,extended,10000009
+
+[Always Complete Missions]
+patch=1,EE,D0280774,extended,000064F8
+patch=1,EE,20280780,extended,24020001
+
+[Press {L1}+Up On D-Pad For Debug Camera]
+patch=1,EE,D044F15C,extended,0000FBEF
+patch=1,EE,1029B24C,extended,00000006
+
+[Press {L2}+Up On D-Pad For Slightly Higher Camera]
+patch=1,EE,D044F15C,extended,0000FEEF
+patch=1,EE,1029B24C,extended,00000001
+
+[Press {R2}+Up On D-Pad For Normal Camera]
+patch=1,EE,D044F15C,extended,0000FDEF
+patch=1,EE,1029B24C,extended,00000003

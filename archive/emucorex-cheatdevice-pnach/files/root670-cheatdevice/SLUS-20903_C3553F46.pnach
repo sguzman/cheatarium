@@ -1,0 +1,3389 @@
+gametitle=Megaman X-Command Mission (SLUS-20903)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012E538,extended,0C04D144
+
+[Infinite Zenny]
+patch=1,EE,2054FCCC,extended,0000FFFF
+
+[Max Zenny]
+patch=1,EE,2054FCCC,extended,0098967F
+
+[Gain 50000 Zenny Per Battle]
+patch=1,EE,20217228,extended,3403C350
+
+[Gain 10000 Zenny Per Battle]
+patch=1,EE,20217228,extended,34032710
+
+[Gain 5000 Zenny Per Battle]
+patch=1,EE,20217228,extended,34031388
+
+[Gain 1000 Zenny Per Battle]
+patch=1,EE,20217228,extended,340303E8
+
+[Gain 500 Zenny Per Battle]
+patch=1,EE,20217228,extended,340301F4
+
+[Gain 100 Zenny Per Battle]
+patch=1,EE,20217228,extended,34030064
+
+[Max Zenny After 1 Battle]
+patch=1,EE,20217228,extended,24230000
+
+[Gain 50000 EXP Per Battle]
+patch=1,EE,2021728C,extended,3402C350
+
+[Gain 10000 EXP Per Battle]
+patch=1,EE,2021728C,extended,34022710
+
+[Gain 5000 EXP Per Battle]
+patch=1,EE,2021728C,extended,34021388
+
+[Gain 1000 EXP Per Battle]
+patch=1,EE,2021728C,extended,340203E8
+
+[Gain 500 EXP Per Battle]
+patch=1,EE,2021728C,extended,340201F4
+
+[Gain 100 EXP Per Battle]
+patch=1,EE,2021728C,extended,34020064
+
+[Infinite LE (In-Battle)]
+patch=1,EE,201F4BC4,extended,8C610168
+patch=1,EE,201F4BC8,extended,AC610164
+
+[1-Hit Death (Enemies)]
+patch=1,EE,201F94BC,extended,AC600164
+
+[Max Coins]
+patch=1,EE,2054FCD8,extended,000003E7
+
+[Max Sub Tank]
+patch=1,EE,105502D4,extended,0000000A
+
+[Infinite Sub Tank]
+patch=1,EE,105502D6,extended,000003E8
+
+[Max FME]
+patch=1,EE,2054FCD0,extended,0098967F
+
+[Max Figure Tokens]
+patch=1,EE,2054FCD8,extended,00000078
+
+[Have All Figures]
+patch=1,EE,4054FB2C,extended,00390001
+patch=1,EE,00010001,extended,00000000
+
+[Max Total Battles]
+patch=1,EE,20550798,extended,000F423F
+
+[Use Red Scarf]
+patch=1,EE,0054FA38,extended,00000000
+
+[Use Blue Scarf]
+patch=1,EE,0054FA38,extended,00000001
+
+[Use Yellow Scarf]
+patch=1,EE,0054FA38,extended,00000002
+
+[Use Green Scarf]
+patch=1,EE,0054FA38,extended,00000003
+
+[Use Purple Scarf]
+patch=1,EE,0054FA38,extended,00000004
+
+[Use No Scarf]
+patch=1,EE,0054FA38,extended,00000005
+
+[Completed All Challenges]
+patch=1,EE,4054FA68,extended,00240001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Music Discs]
+patch=1,EE,7054FC2A,extended,0010FFFC
+patch=1,EE,2054FC2C,extended,FFFFFFFF
+patch=1,EE,7054FC30,extended,0010001F
+
+[Have All Sketches]
+patch=1,EE,0054FC3D,extended,000000FF
+patch=1,EE,1054FC3E,extended,0000FFFF
+patch=1,EE,2054FC40,extended,FFFFFFFF
+patch=1,EE,2054FC44,extended,FFFFFFFF
+patch=1,EE,7054FC48,extended,00100FFF
+
+[Have All Key Items And Ultimate Armor]
+patch=1,EE,7054F202,extended,0010F800
+patch=1,EE,7054F204,extended,0010C03D
+patch=1,EE,7054F206,extended,00107FFF
+
+[Have Spider Back After Chapter 6]
+patch=1,EE,D008034A,extended,000000E5
+patch=1,EE,20080348,extended,00A7382B
+patch=1,EE,E1030006,extended,3054F104
+patch=1,EE,E1020006,extended,005502CC
+patch=1,EE,005502D3,extended,00000002
+patch=1,EE,005502CC,extended,00000007
+
+[No Random Battles]
+patch=1,EE,2054F220,extended,00000000
+
+[Level 99]
+patch=1,EE,2054FCE0,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,1054FCE8,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,2054FCE8,extended,0098967F
+
+[Infinite LE]
+patch=1,EE,2054FCEC,extended,0000270F
+
+[Max LE]
+patch=1,EE,2054FCF0,extended,0000270F
+patch=1,EE,2054FCF4,extended,0000270F
+
+[Max WE]
+patch=1,EE,2054FCF8,extended,00000064
+
+[Max WE Gain]
+patch=1,EE,2054FCFC,extended,0000004A
+
+[Max Power]
+patch=1,EE,2054FD00,extended,000003E7
+
+[Max Armor]
+patch=1,EE,2054FD04,extended,000003E7
+
+[Max Shield]
+patch=1,EE,2054FD08,extended,000003E7
+
+[Max Speed]
+patch=1,EE,2054FD0C,extended,000003E7
+
+[Have 4 Force Metal Slots]
+patch=1,EE,0054FD9E,extended,00000004
+
+[Max Immunity]
+patch=1,EE,2054FDA8,extended,03E703E7
+
+[Max Hyper]
+patch=1,EE,2054FDB0,extended,03E703E7
+
+[X Buster]
+patch=1,EE,1054FD98,extended,00000019
+
+[Guard Buster]
+patch=1,EE,1054FD98,extended,0000001A
+
+[Fire Buster]
+patch=1,EE,1054FD98,extended,0000001B
+
+[Thunder Buster]
+patch=1,EE,1054FD98,extended,0000001C
+
+[Scope Buster]
+patch=1,EE,1054FD98,extended,0000001D
+
+[Ice Buster]
+patch=1,EE,1054FD98,extended,0000001E
+
+[Guard Buster MKII]
+patch=1,EE,1054FD98,extended,0000001F
+
+[Gatling Buster]
+patch=1,EE,1054FD98,extended,00000020
+
+[X Buster MKII]
+patch=1,EE,1054FD98,extended,00000021
+
+[Aero Buster]
+patch=1,EE,1054FD98,extended,00000022
+
+[Fire Buster MKII]
+patch=1,EE,1054FD98,extended,00000023
+
+[Ice Buster MKII]
+patch=1,EE,1054FD98,extended,00000024
+
+[Thunder Buster MKII]
+patch=1,EE,1054FD98,extended,00000025
+
+[Scope Buster MK II]
+patch=1,EE,1054FD98,extended,00000026
+
+[Limit Buster]
+patch=1,EE,1054FD98,extended,00000027
+
+[Gatling Buster II]
+patch=1,EE,1054FD98,extended,00000028
+
+[Guard Buster MKIII]
+patch=1,EE,1054FD98,extended,00000029
+
+[Aero Buster MKII]
+patch=1,EE,1054FD98,extended,0000002A
+
+[Limit Buster MKII]
+patch=1,EE,1054FD98,extended,0000002B
+
+[Fire Buster MKII]
+patch=1,EE,1054FD98,extended,0000002C
+
+[Ice Buster MKIII]
+patch=1,EE,1054FD98,extended,0000002D
+
+[Thunder Buster MKIII]
+patch=1,EE,1054FD98,extended,0000002E
+
+[X Buster MKIII]
+patch=1,EE,1054FD98,extended,0000002F
+
+[Brave Buster]
+patch=1,EE,1054FD98,extended,00000030
+
+[Turbo Buster]
+patch=1,EE,1054FD98,extended,00000031
+
+[Micro Missile]
+patch=1,EE,1054FD9A,extended,00000001
+
+[Tomahawk]
+patch=1,EE,1054FD9A,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,1054FD9A,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,1054FD9A,extended,00000004
+
+[Force Missiles]
+patch=1,EE,1054FD9A,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,1054FD9A,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,1054FD9A,extended,00000007
+
+[Photo Missile]
+patch=1,EE,1054FD9A,extended,00000008
+
+[Justice Missile]
+patch=1,EE,1054FD9A,extended,00000009
+
+[Fire Missile]
+patch=1,EE,1054FD9A,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,1054FD9A,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,1054FD9A,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,1054FD9A,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,1054FD9A,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,1054FD9A,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,1054FD9A,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,1054FD9A,extended,00000011
+
+[Virus Missile]
+patch=1,EE,1054FD9A,extended,00000012
+
+[Cracker]
+patch=1,EE,1054FD9A,extended,00000013
+
+[Cryogenic]
+patch=1,EE,1054FD9A,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,1054FD9A,extended,00000015
+
+[Get EXP +]
+patch=1,EE,1054FD9A,extended,00000016
+
+[Get FME +]
+patch=1,EE,1054FD9A,extended,00000017
+
+[Rust Missile]
+patch=1,EE,1054FD9A,extended,00000018
+
+[Drill Missile]
+patch=1,EE,1054FD9A,extended,00000019
+
+[Melt Missile]
+patch=1,EE,1054FD9A,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,1054FD9A,extended,0000001B
+
+[Oil Can]
+patch=1,EE,1054FD9A,extended,0000001C
+
+[Item Capture]
+patch=1,EE,1054FD9A,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,1054FD9A,extended,0000001E
+
+[Power Charge]
+patch=1,EE,1054FD9A,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,1054FD9A,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,1054FD9A,extended,00000021
+
+[Heat Haze]
+patch=1,EE,1054FD9A,extended,00000022
+
+[Generator]
+patch=1,EE,1054FD9A,extended,00000023
+
+[Energy Field]
+patch=1,EE,1054FD9A,extended,00000024
+
+[Bait]
+patch=1,EE,1054FD9A,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,1054FD9A,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,1054FD9A,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,1054FD9A,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,1054FD9A,extended,00000029
+
+[Super Absorber]
+patch=1,EE,1054FD9A,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,1054FD9A,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,1054FD9A,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,1054FD9A,extended,00000032
+
+[Shell Buster]
+patch=1,EE,1054FD9A,extended,00000033
+
+[Power Charge]
+patch=1,EE,1054FD9A,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,1054FD9A,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,1054FD9A,extended,00000036
+
+[Brutal Right]
+patch=1,EE,1054FD9A,extended,00000037
+
+[Micro Missile]
+patch=1,EE,1054FD9C,extended,00000001
+
+[Tomahawk]
+patch=1,EE,1054FD9C,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,1054FD9C,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,1054FD9C,extended,00000004
+
+[Force Missiles]
+patch=1,EE,1054FD9C,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,1054FD9C,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,1054FD9C,extended,00000007
+
+[Photo Missile]
+patch=1,EE,1054FD9C,extended,00000008
+
+[Justice Missile]
+patch=1,EE,1054FD9C,extended,00000009
+
+[Fire Missile]
+patch=1,EE,1054FD9C,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,1054FD9C,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,1054FD9C,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,1054FD9C,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,1054FD9C,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,1054FD9C,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,1054FD9C,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,1054FD9C,extended,00000011
+
+[Virus Missile]
+patch=1,EE,1054FD9C,extended,00000012
+
+[Cracker]
+patch=1,EE,1054FD9C,extended,00000013
+
+[Cryogenic]
+patch=1,EE,1054FD9C,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,1054FD9C,extended,00000015
+
+[Get EXP +]
+patch=1,EE,1054FD9C,extended,00000016
+
+[Get FME +]
+patch=1,EE,1054FD9C,extended,00000017
+
+[Rust Missile]
+patch=1,EE,1054FD9C,extended,00000018
+
+[Drill Missile]
+patch=1,EE,1054FD9C,extended,00000019
+
+[Melt Missile]
+patch=1,EE,1054FD9C,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,1054FD9C,extended,0000001B
+
+[Oil Can]
+patch=1,EE,1054FD9C,extended,0000001C
+
+[Item Capture]
+patch=1,EE,1054FD9C,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,1054FD9C,extended,0000001E
+
+[Power Charge]
+patch=1,EE,1054FD9C,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,1054FD9C,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,1054FD9C,extended,00000021
+
+[Heat Haze]
+patch=1,EE,1054FD9C,extended,00000022
+
+[Generator]
+patch=1,EE,1054FD9C,extended,00000023
+
+[Energy Field]
+patch=1,EE,1054FD9C,extended,00000024
+
+[Bait]
+patch=1,EE,1054FD9C,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,1054FD9C,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,1054FD9C,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,1054FD9C,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,1054FD9C,extended,00000029
+
+[Super Absorber]
+patch=1,EE,1054FD9C,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,1054FD9C,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,1054FD9C,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,1054FD9C,extended,00000032
+
+[Shell Buster]
+patch=1,EE,1054FD9C,extended,00000033
+
+[Power Charge]
+patch=1,EE,1054FD9C,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,1054FD9C,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,1054FD9C,extended,00000036
+
+[Brutal Right]
+patch=1,EE,1054FD9C,extended,00000037
+
+[Level 99]
+patch=1,EE,2054FDB4,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,1054FDBC,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,2054FDBC,extended,0098967F
+
+[Infinite LE]
+patch=1,EE,2054FDC0,extended,0000270F
+
+[Max LE]
+patch=1,EE,2054FDC4,extended,0000270F
+patch=1,EE,2054FDC8,extended,0000270F
+
+[Max WE]
+patch=1,EE,2054FDCC,extended,00000064
+
+[Max WE Gain]
+patch=1,EE,2054FDD0,extended,0000004A
+
+[Max Power]
+patch=1,EE,2054FDD4,extended,000003E7
+
+[Max Armor]
+patch=1,EE,2054FDD8,extended,000003E7
+
+[Max Shield]
+patch=1,EE,2054FDDC,extended,000003E7
+
+[Max Speed]
+patch=1,EE,2054FDE0,extended,000003E7
+
+[Have 4 Force Metal Slots]
+patch=1,EE,0054FE72,extended,00000004
+
+[Max Immunity]
+patch=1,EE,2054FE7C,extended,03E703E7
+
+[Max Hyper]
+patch=1,EE,2054FE84,extended,03E703E7
+
+[X Buster]
+patch=1,EE,1054FE6C,extended,00000019
+
+[Guard Buster]
+patch=1,EE,1054FE6C,extended,0000001A
+
+[Fire Buster]
+patch=1,EE,1054FE6C,extended,0000001B
+
+[Thunder Buster]
+patch=1,EE,1054FE6C,extended,0000001C
+
+[Scope Buster]
+patch=1,EE,1054FE6C,extended,0000001D
+
+[Ice Buster]
+patch=1,EE,1054FE6C,extended,0000001E
+
+[Guard Buster MKII]
+patch=1,EE,1054FE6C,extended,0000001F
+
+[Gatling Buster]
+patch=1,EE,1054FE6C,extended,00000020
+
+[X Buster MKII]
+patch=1,EE,1054FE6C,extended,00000021
+
+[Aero Buster]
+patch=1,EE,1054FE6C,extended,00000022
+
+[Fire Buster MKII]
+patch=1,EE,1054FE6C,extended,00000023
+
+[Ice Buster MKII]
+patch=1,EE,1054FE6C,extended,00000024
+
+[Thunder Buster MKII]
+patch=1,EE,1054FE6C,extended,00000025
+
+[Scope Buster MK II]
+patch=1,EE,1054FE6C,extended,00000026
+
+[Limit Buster]
+patch=1,EE,1054FE6C,extended,00000027
+
+[Gatling Buster II]
+patch=1,EE,1054FE6C,extended,00000028
+
+[Guard Buster MKIII]
+patch=1,EE,1054FE6C,extended,00000029
+
+[Aero Buster MKII]
+patch=1,EE,1054FE6C,extended,0000002A
+
+[Limit Buster MKII]
+patch=1,EE,1054FE6C,extended,0000002B
+
+[Fire Buster MKII]
+patch=1,EE,1054FE6C,extended,0000002C
+
+[Ice Buster MKIII]
+patch=1,EE,1054FE6C,extended,0000002D
+
+[Thunder Buster MKIII]
+patch=1,EE,1054FE6C,extended,0000002E
+
+[X Buster MKIII]
+patch=1,EE,1054FE6C,extended,0000002F
+
+[Brave Buster]
+patch=1,EE,1054FE6C,extended,00000030
+
+[Turbo Buster]
+patch=1,EE,1054FE6C,extended,00000031
+
+[Micro Missile]
+patch=1,EE,1054FE6E,extended,00000001
+
+[Tomahawk]
+patch=1,EE,1054FE6E,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,1054FE6E,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,1054FE6E,extended,00000004
+
+[Force Missiles]
+patch=1,EE,1054FE6E,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,1054FE6E,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,1054FE6E,extended,00000007
+
+[Photo Missile]
+patch=1,EE,1054FE6E,extended,00000008
+
+[Justice Missile]
+patch=1,EE,1054FE6E,extended,00000009
+
+[Fire Missile]
+patch=1,EE,1054FE6E,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,1054FE6E,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,1054FE6E,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,1054FE6E,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,1054FE6E,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,1054FE6E,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,1054FE6E,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,1054FE6E,extended,00000011
+
+[Virus Missile]
+patch=1,EE,1054FE6E,extended,00000012
+
+[Cracker]
+patch=1,EE,1054FE6E,extended,00000013
+
+[Cryogenic]
+patch=1,EE,1054FE6E,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,1054FE6E,extended,00000015
+
+[Get EXP +]
+patch=1,EE,1054FE6E,extended,00000016
+
+[Get FME +]
+patch=1,EE,1054FE6E,extended,00000017
+
+[Rust Missile]
+patch=1,EE,1054FE6E,extended,00000018
+
+[Drill Missile]
+patch=1,EE,1054FE6E,extended,00000019
+
+[Melt Missile]
+patch=1,EE,1054FE6E,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,1054FE6E,extended,0000001B
+
+[Oil Can]
+patch=1,EE,1054FE6E,extended,0000001C
+
+[Item Capture]
+patch=1,EE,1054FE6E,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,1054FE6E,extended,0000001E
+
+[Power Charge]
+patch=1,EE,1054FE6E,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,1054FE6E,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,1054FE6E,extended,00000021
+
+[Heat Haze]
+patch=1,EE,1054FE6E,extended,00000022
+
+[Generator]
+patch=1,EE,1054FE6E,extended,00000023
+
+[Energy Field]
+patch=1,EE,1054FE6E,extended,00000024
+
+[Bait]
+patch=1,EE,1054FE6E,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,1054FE6E,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,1054FE6E,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,1054FE6E,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,1054FE6E,extended,00000029
+
+[Super Absorber]
+patch=1,EE,1054FE6E,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,1054FE6E,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,1054FE6E,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,1054FE6E,extended,00000032
+
+[Shell Buster]
+patch=1,EE,1054FE6E,extended,00000033
+
+[Power Charge]
+patch=1,EE,1054FE6E,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,1054FE6E,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,1054FE6E,extended,00000036
+
+[Brutal Right]
+patch=1,EE,1054FE6E,extended,00000037
+
+[Micro Missile]
+patch=1,EE,1054FE70,extended,00000001
+
+[Tomahawk]
+patch=1,EE,1054FE70,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,1054FE70,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,1054FE70,extended,00000004
+
+[Force Missiles]
+patch=1,EE,1054FE70,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,1054FE70,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,1054FE70,extended,00000007
+
+[Photo Missile]
+patch=1,EE,1054FE70,extended,00000008
+
+[Justice Missile]
+patch=1,EE,1054FE70,extended,00000009
+
+[Fire Missile]
+patch=1,EE,1054FE70,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,1054FE70,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,1054FE70,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,1054FE70,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,1054FE70,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,1054FE70,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,1054FE70,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,1054FE70,extended,00000011
+
+[Virus Missile]
+patch=1,EE,1054FE70,extended,00000012
+
+[Cracker]
+patch=1,EE,1054FE70,extended,00000013
+
+[Cryogenic]
+patch=1,EE,1054FE70,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,1054FE70,extended,00000015
+
+[Get EXP +]
+patch=1,EE,1054FE70,extended,00000016
+
+[Get FME +]
+patch=1,EE,1054FE70,extended,00000017
+
+[Rust Missile]
+patch=1,EE,1054FE70,extended,00000018
+
+[Drill Missile]
+patch=1,EE,1054FE70,extended,00000019
+
+[Melt Missile]
+patch=1,EE,1054FE70,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,1054FE70,extended,0000001B
+
+[Oil Can]
+patch=1,EE,1054FE70,extended,0000001C
+
+[Item Capture]
+patch=1,EE,1054FE70,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,1054FE70,extended,0000001E
+
+[Power Charge]
+patch=1,EE,1054FE70,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,1054FE70,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,1054FE70,extended,00000021
+
+[Heat Haze]
+patch=1,EE,1054FE70,extended,00000022
+
+[Generator]
+patch=1,EE,1054FE70,extended,00000023
+
+[Energy Field]
+patch=1,EE,1054FE70,extended,00000024
+
+[Bait]
+patch=1,EE,1054FE70,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,1054FE70,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,1054FE70,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,1054FE70,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,1054FE70,extended,00000029
+
+[Super Absorber]
+patch=1,EE,1054FE70,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,1054FE70,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,1054FE70,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,1054FE70,extended,00000032
+
+[Shell Buster]
+patch=1,EE,1054FE70,extended,00000033
+
+[Power Charge]
+patch=1,EE,1054FE70,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,1054FE70,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,1054FE70,extended,00000036
+
+[Brutal Right]
+patch=1,EE,1054FE70,extended,00000037
+
+[Level 99]
+patch=1,EE,2054FE88,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,1054FE90,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,2054FE90,extended,0098967F
+
+[Infinite LE]
+patch=1,EE,2054FE94,extended,0000270F
+
+[Max LE]
+patch=1,EE,2054FE98,extended,0000270F
+patch=1,EE,2054FE9C,extended,0000270F
+
+[Max WE]
+patch=1,EE,2054FEA0,extended,00000064
+
+[Max WE Gain]
+patch=1,EE,2054FEA4,extended,0000004A
+
+[Max Power]
+patch=1,EE,2054FEA8,extended,000003E7
+
+[Max Armor]
+patch=1,EE,2054FEAC,extended,000003E7
+
+[Max Shield]
+patch=1,EE,2054FEB0,extended,000003E7
+
+[Max Speed]
+patch=1,EE,2054FEB4,extended,000003E7
+
+[Have 4 Force Metal Slots]
+patch=1,EE,0054FF46,extended,00000004
+
+[Max Immunity]
+patch=1,EE,2054FF50,extended,03E703E7
+
+[Max Hyper]
+patch=1,EE,2054FF58,extended,03E703E7
+
+[X Buster]
+patch=1,EE,1054FF40,extended,00000019
+
+[Guard Buster]
+patch=1,EE,1054FF40,extended,0000001A
+
+[Fire Buster]
+patch=1,EE,1054FF40,extended,0000001B
+
+[Thunder Buster]
+patch=1,EE,1054FF40,extended,0000001C
+
+[Scope Buster]
+patch=1,EE,1054FF40,extended,0000001D
+
+[Ice Buster]
+patch=1,EE,1054FF40,extended,0000001E
+
+[Guard Buster MKII]
+patch=1,EE,1054FF40,extended,0000001F
+
+[Gatling Buster]
+patch=1,EE,1054FF40,extended,00000020
+
+[X Buster MKII]
+patch=1,EE,1054FF40,extended,00000021
+
+[Aero Buster]
+patch=1,EE,1054FF40,extended,00000022
+
+[Fire Buster MKII]
+patch=1,EE,1054FF40,extended,00000023
+
+[Ice Buster MKII]
+patch=1,EE,1054FF40,extended,00000024
+
+[Thunder Buster MKII]
+patch=1,EE,1054FF40,extended,00000025
+
+[Scope Buster MK II]
+patch=1,EE,1054FF40,extended,00000026
+
+[Limit Buster]
+patch=1,EE,1054FF40,extended,00000027
+
+[Gatling Buster II]
+patch=1,EE,1054FF40,extended,00000028
+
+[Guard Buster MKIII]
+patch=1,EE,1054FF40,extended,00000029
+
+[Aero Buster MKII]
+patch=1,EE,1054FF40,extended,0000002A
+
+[Limit Buster MKII]
+patch=1,EE,1054FF40,extended,0000002B
+
+[Fire Buster MKII]
+patch=1,EE,1054FF40,extended,0000002C
+
+[Ice Buster MKIII]
+patch=1,EE,1054FF40,extended,0000002D
+
+[Thunder Buster MKIII]
+patch=1,EE,1054FF40,extended,0000002E
+
+[X Buster MKIII]
+patch=1,EE,1054FF40,extended,0000002F
+
+[Brave Buster]
+patch=1,EE,1054FF40,extended,00000030
+
+[Turbo Buster]
+patch=1,EE,1054FF40,extended,00000031
+
+[Micro Missile]
+patch=1,EE,1054FF42,extended,00000001
+
+[Tomahawk]
+patch=1,EE,1054FF42,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,1054FF42,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,1054FF42,extended,00000004
+
+[Force Missiles]
+patch=1,EE,1054FF42,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,1054FF42,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,1054FF42,extended,00000007
+
+[Photo Missile]
+patch=1,EE,1054FF42,extended,00000008
+
+[Justice Missile]
+patch=1,EE,1054FF42,extended,00000009
+
+[Fire Missile]
+patch=1,EE,1054FF42,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,1054FF42,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,1054FF42,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,1054FF42,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,1054FF42,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,1054FF42,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,1054FF42,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,1054FF42,extended,00000011
+
+[Virus Missile]
+patch=1,EE,1054FF42,extended,00000012
+
+[Cracker]
+patch=1,EE,1054FF42,extended,00000013
+
+[Cryogenic]
+patch=1,EE,1054FF42,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,1054FF42,extended,00000015
+
+[Get EXP +]
+patch=1,EE,1054FF42,extended,00000016
+
+[Get FME +]
+patch=1,EE,1054FF42,extended,00000017
+
+[Rust Missile]
+patch=1,EE,1054FF42,extended,00000018
+
+[Drill Missile]
+patch=1,EE,1054FF42,extended,00000019
+
+[Melt Missile]
+patch=1,EE,1054FF42,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,1054FF42,extended,0000001B
+
+[Oil Can]
+patch=1,EE,1054FF42,extended,0000001C
+
+[Item Capture]
+patch=1,EE,1054FF42,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,1054FF42,extended,0000001E
+
+[Power Charge]
+patch=1,EE,1054FF42,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,1054FF42,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,1054FF42,extended,00000021
+
+[Heat Haze]
+patch=1,EE,1054FF42,extended,00000022
+
+[Generator]
+patch=1,EE,1054FF42,extended,00000023
+
+[Energy Field]
+patch=1,EE,1054FF42,extended,00000024
+
+[Bait]
+patch=1,EE,1054FF42,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,1054FF42,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,1054FF42,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,1054FF42,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,1054FF42,extended,00000029
+
+[Super Absorber]
+patch=1,EE,1054FF42,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,1054FF42,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,1054FF42,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,1054FF42,extended,00000032
+
+[Shell Buster]
+patch=1,EE,1054FF42,extended,00000033
+
+[Power Charge]
+patch=1,EE,1054FF42,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,1054FF42,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,1054FF42,extended,00000036
+
+[Brutal Right]
+patch=1,EE,1054FF42,extended,00000037
+
+[Micro Missile]
+patch=1,EE,1054FF44,extended,00000001
+
+[Tomahawk]
+patch=1,EE,1054FF44,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,1054FF44,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,1054FF44,extended,00000004
+
+[Force Missiles]
+patch=1,EE,1054FF44,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,1054FF44,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,1054FF44,extended,00000007
+
+[Photo Missile]
+patch=1,EE,1054FF44,extended,00000008
+
+[Justice Missile]
+patch=1,EE,1054FF44,extended,00000009
+
+[Fire Missile]
+patch=1,EE,1054FF44,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,1054FF44,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,1054FF44,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,1054FF44,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,1054FF44,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,1054FF44,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,1054FF44,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,1054FF44,extended,00000011
+
+[Virus Missile]
+patch=1,EE,1054FF44,extended,00000012
+
+[Cracker]
+patch=1,EE,1054FF44,extended,00000013
+
+[Cryogenic]
+patch=1,EE,1054FF44,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,1054FF44,extended,00000015
+
+[Get EXP +]
+patch=1,EE,1054FF44,extended,00000016
+
+[Get FME +]
+patch=1,EE,1054FF44,extended,00000017
+
+[Rust Missile]
+patch=1,EE,1054FF44,extended,00000018
+
+[Drill Missile]
+patch=1,EE,1054FF44,extended,00000019
+
+[Melt Missile]
+patch=1,EE,1054FF44,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,1054FF44,extended,0000001B
+
+[Oil Can]
+patch=1,EE,1054FF44,extended,0000001C
+
+[Item Capture]
+patch=1,EE,1054FF44,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,1054FF44,extended,0000001E
+
+[Power Charge]
+patch=1,EE,1054FF44,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,1054FF44,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,1054FF44,extended,00000021
+
+[Heat Haze]
+patch=1,EE,1054FF44,extended,00000022
+
+[Generator]
+patch=1,EE,1054FF44,extended,00000023
+
+[Energy Field]
+patch=1,EE,1054FF44,extended,00000024
+
+[Bait]
+patch=1,EE,1054FF44,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,1054FF44,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,1054FF44,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,1054FF44,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,1054FF44,extended,00000029
+
+[Super Absorber]
+patch=1,EE,1054FF44,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,1054FF44,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,1054FF44,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,1054FF44,extended,00000032
+
+[Shell Buster]
+patch=1,EE,1054FF44,extended,00000033
+
+[Power Charge]
+patch=1,EE,1054FF44,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,1054FF44,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,1054FF44,extended,00000036
+
+[Brutal Right]
+patch=1,EE,1054FF44,extended,00000037
+
+[Level 99]
+patch=1,EE,2054FF5C,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,1054FF64,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,2054FF64,extended,0098967F
+
+[Infinite LE]
+patch=1,EE,2054FF68,extended,0000270F
+
+[Max LE]
+patch=1,EE,2054FF6C,extended,0000270F
+patch=1,EE,2054FF70,extended,0000270F
+
+[Max WE]
+patch=1,EE,2054FF74,extended,00000064
+
+[Max WE Gain]
+patch=1,EE,2054FF78,extended,0000004A
+
+[Max Power]
+patch=1,EE,2054FF7C,extended,000003E7
+
+[Max Armor]
+patch=1,EE,2054FF80,extended,000003E7
+
+[Max Shield]
+patch=1,EE,2054FF84,extended,000003E7
+
+[Max Speed]
+patch=1,EE,2054FF88,extended,000003E7
+
+[Have 4 Force Metal Slots]
+patch=1,EE,0055001A,extended,00000004
+
+[Max Immunity]
+patch=1,EE,20550024,extended,03E703E7
+
+[Max Hyper]
+patch=1,EE,2055002C,extended,03E703E7
+
+[X Buster]
+patch=1,EE,10550014,extended,00000019
+
+[Guard Buster]
+patch=1,EE,10550014,extended,0000001A
+
+[Fire Buster]
+patch=1,EE,10550014,extended,0000001B
+
+[Thunder Buster]
+patch=1,EE,10550014,extended,0000001C
+
+[Scope Buster]
+patch=1,EE,10550014,extended,0000001D
+
+[Ice Buster]
+patch=1,EE,10550014,extended,0000001E
+
+[Guard Buster MKII]
+patch=1,EE,10550014,extended,0000001F
+
+[Gatling Buster]
+patch=1,EE,10550014,extended,00000020
+
+[X Buster MKII]
+patch=1,EE,10550014,extended,00000021
+
+[Aero Buster]
+patch=1,EE,10550014,extended,00000022
+
+[Fire Buster MKII]
+patch=1,EE,10550014,extended,00000023
+
+[Ice Buster MKII]
+patch=1,EE,10550014,extended,00000024
+
+[Thunder Buster MKII]
+patch=1,EE,10550014,extended,00000025
+
+[Scope Buster MK II]
+patch=1,EE,10550014,extended,00000026
+
+[Limit Buster]
+patch=1,EE,10550014,extended,00000027
+
+[Gatling Buster II]
+patch=1,EE,10550014,extended,00000028
+
+[Guard Buster MKIII]
+patch=1,EE,10550014,extended,00000029
+
+[Aero Buster MKII]
+patch=1,EE,10550014,extended,0000002A
+
+[Limit Buster MKII]
+patch=1,EE,10550014,extended,0000002B
+
+[Fire Buster MKII]
+patch=1,EE,10550014,extended,0000002C
+
+[Ice Buster MKIII]
+patch=1,EE,10550014,extended,0000002D
+
+[Thunder Buster MKIII]
+patch=1,EE,10550014,extended,0000002E
+
+[X Buster MKIII]
+patch=1,EE,10550014,extended,0000002F
+
+[Brave Buster]
+patch=1,EE,10550014,extended,00000030
+
+[Turbo Buster]
+patch=1,EE,10550014,extended,00000031
+
+[Micro Missile]
+patch=1,EE,10550016,extended,00000001
+
+[Tomahawk]
+patch=1,EE,10550016,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,10550016,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,10550016,extended,00000004
+
+[Force Missiles]
+patch=1,EE,10550016,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,10550016,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,10550016,extended,00000007
+
+[Photo Missile]
+patch=1,EE,10550016,extended,00000008
+
+[Justice Missile]
+patch=1,EE,10550016,extended,00000009
+
+[Fire Missile]
+patch=1,EE,10550016,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,10550016,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,10550016,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,10550016,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,10550016,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,10550016,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,10550016,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,10550016,extended,00000011
+
+[Virus Missile]
+patch=1,EE,10550016,extended,00000012
+
+[Cracker]
+patch=1,EE,10550016,extended,00000013
+
+[Cryogenic]
+patch=1,EE,10550016,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,10550016,extended,00000015
+
+[Get EXP +]
+patch=1,EE,10550016,extended,00000016
+
+[Get FME +]
+patch=1,EE,10550016,extended,00000017
+
+[Rust Missile]
+patch=1,EE,10550016,extended,00000018
+
+[Drill Missile]
+patch=1,EE,10550016,extended,00000019
+
+[Melt Missile]
+patch=1,EE,10550016,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,10550016,extended,0000001B
+
+[Oil Can]
+patch=1,EE,10550016,extended,0000001C
+
+[Item Capture]
+patch=1,EE,10550016,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,10550016,extended,0000001E
+
+[Power Charge]
+patch=1,EE,10550016,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,10550016,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,10550016,extended,00000021
+
+[Heat Haze]
+patch=1,EE,10550016,extended,00000022
+
+[Generator]
+patch=1,EE,10550016,extended,00000023
+
+[Energy Field]
+patch=1,EE,10550016,extended,00000024
+
+[Bait]
+patch=1,EE,10550016,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,10550016,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,10550016,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,10550016,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,10550016,extended,00000029
+
+[Super Absorber]
+patch=1,EE,10550016,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,10550016,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,10550016,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,10550016,extended,00000032
+
+[Shell Buster]
+patch=1,EE,10550016,extended,00000033
+
+[Power Charge]
+patch=1,EE,10550016,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,10550016,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,10550016,extended,00000036
+
+[Brutal Right]
+patch=1,EE,10550016,extended,00000037
+
+[Micro Missile]
+patch=1,EE,10550018,extended,00000001
+
+[Tomahawk]
+patch=1,EE,10550018,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,10550018,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,10550018,extended,00000004
+
+[Force Missiles]
+patch=1,EE,10550018,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,10550018,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,10550018,extended,00000007
+
+[Photo Missile]
+patch=1,EE,10550018,extended,00000008
+
+[Justice Missile]
+patch=1,EE,10550018,extended,00000009
+
+[Fire Missile]
+patch=1,EE,10550018,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,10550018,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,10550018,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,10550018,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,10550018,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,10550018,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,10550018,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,10550018,extended,00000011
+
+[Virus Missile]
+patch=1,EE,10550018,extended,00000012
+
+[Cracker]
+patch=1,EE,10550018,extended,00000013
+
+[Cryogenic]
+patch=1,EE,10550018,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,10550018,extended,00000015
+
+[Get EXP +]
+patch=1,EE,10550018,extended,00000016
+
+[Get FME +]
+patch=1,EE,10550018,extended,00000017
+
+[Rust Missile]
+patch=1,EE,10550018,extended,00000018
+
+[Drill Missile]
+patch=1,EE,10550018,extended,00000019
+
+[Melt Missile]
+patch=1,EE,10550018,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,10550018,extended,0000001B
+
+[Oil Can]
+patch=1,EE,10550018,extended,0000001C
+
+[Item Capture]
+patch=1,EE,10550018,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,10550018,extended,0000001E
+
+[Power Charge]
+patch=1,EE,10550018,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,10550018,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,10550018,extended,00000021
+
+[Heat Haze]
+patch=1,EE,10550018,extended,00000022
+
+[Generator]
+patch=1,EE,10550018,extended,00000023
+
+[Energy Field]
+patch=1,EE,10550018,extended,00000024
+
+[Bait]
+patch=1,EE,10550018,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,10550018,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,10550018,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,10550018,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,10550018,extended,00000029
+
+[Super Absorber]
+patch=1,EE,10550018,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,10550018,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,10550018,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,10550018,extended,00000032
+
+[Shell Buster]
+patch=1,EE,10550018,extended,00000033
+
+[Power Charge]
+patch=1,EE,10550018,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,10550018,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,10550018,extended,00000036
+
+[Brutal Right]
+patch=1,EE,10550018,extended,00000037
+
+[Level 99]
+patch=1,EE,20550030,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,10550038,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,20550038,extended,0098967F
+
+[Infinite LE]
+patch=1,EE,2055003C,extended,0000270F
+
+[Max LE]
+patch=1,EE,20550040,extended,0000270F
+patch=1,EE,20550044,extended,0000270F
+
+[Max WE]
+patch=1,EE,20550048,extended,00000064
+
+[Max WE Gain]
+patch=1,EE,2055004C,extended,0000004A
+
+[Max Power]
+patch=1,EE,20550050,extended,000003E7
+
+[Max Armor]
+patch=1,EE,20550054,extended,000003E7
+
+[Max Shield]
+patch=1,EE,20550058,extended,000003E7
+
+[Max Speed]
+patch=1,EE,2055005C,extended,000003E7
+
+[Have 4 Force Metal Slots]
+patch=1,EE,005500EE,extended,00000004
+
+[Max Immunity]
+patch=1,EE,205500F8,extended,03E703E7
+
+[Max Hyper]
+patch=1,EE,20550100,extended,03E703E7
+
+[X Buster]
+patch=1,EE,105500E8,extended,00000019
+
+[Guard Buster]
+patch=1,EE,105500E8,extended,0000001A
+
+[Fire Buster]
+patch=1,EE,105500E8,extended,0000001B
+
+[Thunder Buster]
+patch=1,EE,105500E8,extended,0000001C
+
+[Scope Buster]
+patch=1,EE,105500E8,extended,0000001D
+
+[Ice Buster]
+patch=1,EE,105500E8,extended,0000001E
+
+[Guard Buster MKII]
+patch=1,EE,105500E8,extended,0000001F
+
+[Gatling Buster]
+patch=1,EE,105500E8,extended,00000020
+
+[X Buster MKII]
+patch=1,EE,105500E8,extended,00000021
+
+[Aero Buster]
+patch=1,EE,105500E8,extended,00000022
+
+[Fire Buster MKII]
+patch=1,EE,105500E8,extended,00000023
+
+[Ice Buster MKII]
+patch=1,EE,105500E8,extended,00000024
+
+[Thunder Buster MKII]
+patch=1,EE,105500E8,extended,00000025
+
+[Scope Buster MK II]
+patch=1,EE,105500E8,extended,00000026
+
+[Limit Buster]
+patch=1,EE,105500E8,extended,00000027
+
+[Gatling Buster II]
+patch=1,EE,105500E8,extended,00000028
+
+[Guard Buster MKIII]
+patch=1,EE,105500E8,extended,00000029
+
+[Aero Buster MKII]
+patch=1,EE,105500E8,extended,0000002A
+
+[Limit Buster MKII]
+patch=1,EE,105500E8,extended,0000002B
+
+[Fire Buster MKII]
+patch=1,EE,105500E8,extended,0000002C
+
+[Ice Buster MKIII]
+patch=1,EE,105500E8,extended,0000002D
+
+[Thunder Buster MKIII]
+patch=1,EE,105500E8,extended,0000002E
+
+[X Buster MKIII]
+patch=1,EE,105500E8,extended,0000002F
+
+[Brave Buster]
+patch=1,EE,105500E8,extended,00000030
+
+[Turbo Buster]
+patch=1,EE,105500E8,extended,00000031
+
+[Micro Missile]
+patch=1,EE,105500EA,extended,00000001
+
+[Tomahawk]
+patch=1,EE,105500EA,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,105500EA,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,105500EA,extended,00000004
+
+[Force Missiles]
+patch=1,EE,105500EA,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,105500EA,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,105500EA,extended,00000007
+
+[Photo Missile]
+patch=1,EE,105500EA,extended,00000008
+
+[Justice Missile]
+patch=1,EE,105500EA,extended,00000009
+
+[Fire Missile]
+patch=1,EE,105500EA,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,105500EA,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,105500EA,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,105500EA,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,105500EA,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,105500EA,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,105500EA,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,105500EA,extended,00000011
+
+[Virus Missile]
+patch=1,EE,105500EA,extended,00000012
+
+[Cracker]
+patch=1,EE,105500EA,extended,00000013
+
+[Cryogenic]
+patch=1,EE,105500EA,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,105500EA,extended,00000015
+
+[Get EXP +]
+patch=1,EE,105500EA,extended,00000016
+
+[Get FME +]
+patch=1,EE,105500EA,extended,00000017
+
+[Rust Missile]
+patch=1,EE,105500EA,extended,00000018
+
+[Drill Missile]
+patch=1,EE,105500EA,extended,00000019
+
+[Melt Missile]
+patch=1,EE,105500EA,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,105500EA,extended,0000001B
+
+[Oil Can]
+patch=1,EE,105500EA,extended,0000001C
+
+[Item Capture]
+patch=1,EE,105500EA,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,105500EA,extended,0000001E
+
+[Power Charge]
+patch=1,EE,105500EA,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,105500EA,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,105500EA,extended,00000021
+
+[Heat Haze]
+patch=1,EE,105500EA,extended,00000022
+
+[Generator]
+patch=1,EE,105500EA,extended,00000023
+
+[Energy Field]
+patch=1,EE,105500EA,extended,00000024
+
+[Bait]
+patch=1,EE,105500EA,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,105500EA,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,105500EA,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,105500EA,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,105500EA,extended,00000029
+
+[Super Absorber]
+patch=1,EE,105500EA,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,105500EA,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,105500EA,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,105500EA,extended,00000032
+
+[Shell Buster]
+patch=1,EE,105500EA,extended,00000033
+
+[Power Charge]
+patch=1,EE,105500EA,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,105500EA,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,105500EA,extended,00000036
+
+[Brutal Right]
+patch=1,EE,105500EA,extended,00000037
+
+[Micro Missile]
+patch=1,EE,105500EC,extended,00000001
+
+[Tomahawk]
+patch=1,EE,105500EC,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,105500EC,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,105500EC,extended,00000004
+
+[Force Missiles]
+patch=1,EE,105500EC,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,105500EC,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,105500EC,extended,00000007
+
+[Photo Missile]
+patch=1,EE,105500EC,extended,00000008
+
+[Justice Missile]
+patch=1,EE,105500EC,extended,00000009
+
+[Fire Missile]
+patch=1,EE,105500EC,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,105500EC,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,105500EC,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,105500EC,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,105500EC,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,105500EC,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,105500EC,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,105500EC,extended,00000011
+
+[Virus Missile]
+patch=1,EE,105500EC,extended,00000012
+
+[Cracker]
+patch=1,EE,105500EC,extended,00000013
+
+[Cryogenic]
+patch=1,EE,105500EC,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,105500EC,extended,00000015
+
+[Get EXP +]
+patch=1,EE,105500EC,extended,00000016
+
+[Get FME +]
+patch=1,EE,105500EC,extended,00000017
+
+[Rust Missile]
+patch=1,EE,105500EC,extended,00000018
+
+[Drill Missile]
+patch=1,EE,105500EC,extended,00000019
+
+[Melt Missile]
+patch=1,EE,105500EC,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,105500EC,extended,0000001B
+
+[Oil Can]
+patch=1,EE,105500EC,extended,0000001C
+
+[Item Capture]
+patch=1,EE,105500EC,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,105500EC,extended,0000001E
+
+[Power Charge]
+patch=1,EE,105500EC,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,105500EC,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,105500EC,extended,00000021
+
+[Heat Haze]
+patch=1,EE,105500EC,extended,00000022
+
+[Generator]
+patch=1,EE,105500EC,extended,00000023
+
+[Energy Field]
+patch=1,EE,105500EC,extended,00000024
+
+[Bait]
+patch=1,EE,105500EC,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,105500EC,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,105500EC,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,105500EC,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,105500EC,extended,00000029
+
+[Super Absorber]
+patch=1,EE,105500EC,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,105500EC,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,105500EC,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,105500EC,extended,00000032
+
+[Shell Buster]
+patch=1,EE,105500EC,extended,00000033
+
+[Power Charge]
+patch=1,EE,105500EC,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,105500EC,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,105500EC,extended,00000036
+
+[Brutal Right]
+patch=1,EE,105500EC,extended,00000037
+
+[Level 99]
+patch=1,EE,20550104,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,1055010C,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,2055010C,extended,0098967F
+
+[Infinite LE]
+patch=1,EE,20550110,extended,0000270F
+
+[Max LE]
+patch=1,EE,20550114,extended,0000270F
+patch=1,EE,20550118,extended,0000270F
+
+[Max WE]
+patch=1,EE,2055011C,extended,00000064
+
+[Max WE Gain]
+patch=1,EE,20550120,extended,0000004A
+
+[Max Power]
+patch=1,EE,20550124,extended,000003E7
+
+[Max Armor]
+patch=1,EE,20550128,extended,000003E7
+
+[Max Shield]
+patch=1,EE,2055012C,extended,000003E7
+
+[Max Speed]
+patch=1,EE,20550130,extended,000003E7
+
+[Have 4 Force Metal Slots]
+patch=1,EE,005501C2,extended,00000004
+
+[Max Immunity]
+patch=1,EE,205501CC,extended,03E703E7
+
+[Max Hyper]
+patch=1,EE,205501D4,extended,03E703E7
+
+[X Buster]
+patch=1,EE,105501BC,extended,00000019
+
+[Guard Buster]
+patch=1,EE,105501BC,extended,0000001A
+
+[Fire Buster]
+patch=1,EE,105501BC,extended,0000001B
+
+[Thunder Buster]
+patch=1,EE,105501BC,extended,0000001C
+
+[Scope Buster]
+patch=1,EE,105501BC,extended,0000001D
+
+[Ice Buster]
+patch=1,EE,105501BC,extended,0000001E
+
+[Guard Buster MKII]
+patch=1,EE,105501BC,extended,0000001F
+
+[Gatling Buster]
+patch=1,EE,105501BC,extended,00000020
+
+[X Buster MKII]
+patch=1,EE,105501BC,extended,00000021
+
+[Aero Buster]
+patch=1,EE,105501BC,extended,00000022
+
+[Fire Buster MKII]
+patch=1,EE,105501BC,extended,00000023
+
+[Ice Buster MKII]
+patch=1,EE,105501BC,extended,00000024
+
+[Thunder Buster MKII]
+patch=1,EE,105501BC,extended,00000025
+
+[Scope Buster MK II]
+patch=1,EE,105501BC,extended,00000026
+
+[Limit Buster]
+patch=1,EE,105501BC,extended,00000027
+
+[Gatling Buster II]
+patch=1,EE,105501BC,extended,00000028
+
+[Guard Buster MKIII]
+patch=1,EE,105501BC,extended,00000029
+
+[Aero Buster MKII]
+patch=1,EE,105501BC,extended,0000002A
+
+[Limit Buster MKII]
+patch=1,EE,105501BC,extended,0000002B
+
+[Fire Buster MKII]
+patch=1,EE,105501BC,extended,0000002C
+
+[Ice Buster MKIII]
+patch=1,EE,105501BC,extended,0000002D
+
+[Thunder Buster MKIII]
+patch=1,EE,105501BC,extended,0000002E
+
+[X Buster MKIII]
+patch=1,EE,105501BC,extended,0000002F
+
+[Brave Buster]
+patch=1,EE,105501BC,extended,00000030
+
+[Turbo Buster]
+patch=1,EE,105501BC,extended,00000031
+
+[Micro Missile]
+patch=1,EE,105501BE,extended,00000001
+
+[Tomahawk]
+patch=1,EE,105501BE,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,105501BE,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,105501BE,extended,00000004
+
+[Force Missiles]
+patch=1,EE,105501BE,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,105501BE,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,105501BE,extended,00000007
+
+[Photo Missile]
+patch=1,EE,105501BE,extended,00000008
+
+[Justice Missile]
+patch=1,EE,105501BE,extended,00000009
+
+[Fire Missile]
+patch=1,EE,105501BE,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,105501BE,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,105501BE,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,105501BE,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,105501BE,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,105501BE,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,105501BE,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,105501BE,extended,00000011
+
+[Virus Missile]
+patch=1,EE,105501BE,extended,00000012
+
+[Cracker]
+patch=1,EE,105501BE,extended,00000013
+
+[Cryogenic]
+patch=1,EE,105501BE,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,105501BE,extended,00000015
+
+[Get EXP +]
+patch=1,EE,105501BE,extended,00000016
+
+[Get FME +]
+patch=1,EE,105501BE,extended,00000017
+
+[Rust Missile]
+patch=1,EE,105501BE,extended,00000018
+
+[Drill Missile]
+patch=1,EE,105501BE,extended,00000019
+
+[Melt Missile]
+patch=1,EE,105501BE,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,105501BE,extended,0000001B
+
+[Oil Can]
+patch=1,EE,105501BE,extended,0000001C
+
+[Item Capture]
+patch=1,EE,105501BE,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,105501BE,extended,0000001E
+
+[Power Charge]
+patch=1,EE,105501BE,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,105501BE,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,105501BE,extended,00000021
+
+[Heat Haze]
+patch=1,EE,105501BE,extended,00000022
+
+[Generator]
+patch=1,EE,105501BE,extended,00000023
+
+[Energy Field]
+patch=1,EE,105501BE,extended,00000024
+
+[Bait]
+patch=1,EE,105501BE,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,105501BE,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,105501BE,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,105501BE,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,105501BE,extended,00000029
+
+[Super Absorber]
+patch=1,EE,105501BE,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,105501BE,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,105501BE,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,105501BE,extended,00000032
+
+[Shell Buster]
+patch=1,EE,105501BE,extended,00000033
+
+[Power Charge]
+patch=1,EE,105501BE,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,105501BE,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,105501BE,extended,00000036
+
+[Brutal Right]
+patch=1,EE,105501BE,extended,00000037
+
+[Micro Missile]
+patch=1,EE,105501C0,extended,00000001
+
+[Tomahawk]
+patch=1,EE,105501C0,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,105501C0,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,105501C0,extended,00000004
+
+[Force Missiles]
+patch=1,EE,105501C0,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,105501C0,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,105501C0,extended,00000007
+
+[Photo Missile]
+patch=1,EE,105501C0,extended,00000008
+
+[Justice Missile]
+patch=1,EE,105501C0,extended,00000009
+
+[Fire Missile]
+patch=1,EE,105501C0,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,105501C0,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,105501C0,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,105501C0,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,105501C0,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,105501C0,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,105501C0,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,105501C0,extended,00000011
+
+[Virus Missile]
+patch=1,EE,105501C0,extended,00000012
+
+[Cracker]
+patch=1,EE,105501C0,extended,00000013
+
+[Cryogenic]
+patch=1,EE,105501C0,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,105501C0,extended,00000015
+
+[Get EXP +]
+patch=1,EE,105501C0,extended,00000016
+
+[Get FME +]
+patch=1,EE,105501C0,extended,00000017
+
+[Rust Missile]
+patch=1,EE,105501C0,extended,00000018
+
+[Drill Missile]
+patch=1,EE,105501C0,extended,00000019
+
+[Melt Missile]
+patch=1,EE,105501C0,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,105501C0,extended,0000001B
+
+[Oil Can]
+patch=1,EE,105501C0,extended,0000001C
+
+[Item Capture]
+patch=1,EE,105501C0,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,105501C0,extended,0000001E
+
+[Power Charge]
+patch=1,EE,105501C0,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,105501C0,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,105501C0,extended,00000021
+
+[Heat Haze]
+patch=1,EE,105501C0,extended,00000022
+
+[Generator]
+patch=1,EE,105501C0,extended,00000023
+
+[Energy Field]
+patch=1,EE,105501C0,extended,00000024
+
+[Bait]
+patch=1,EE,105501C0,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,105501C0,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,105501C0,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,105501C0,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,105501C0,extended,00000029
+
+[Super Absorber]
+patch=1,EE,105501C0,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,105501C0,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,105501C0,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,105501C0,extended,00000032
+
+[Shell Buster]
+patch=1,EE,105501C0,extended,00000033
+
+[Power Charge]
+patch=1,EE,105501C0,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,105501C0,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,105501C0,extended,00000036
+
+[Brutal Right]
+patch=1,EE,105501C0,extended,00000037
+
+[Level 99]
+patch=1,EE,205501D8,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,105501E0,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,205501E0,extended,0098967F
+
+[Infinite LE]
+patch=1,EE,205501E4,extended,0000270F
+
+[Max LE]
+patch=1,EE,205501E8,extended,0000270F
+patch=1,EE,205501EC,extended,0000270F
+
+[Max WE]
+patch=1,EE,205501F0,extended,00000064
+
+[Max WE Gain]
+patch=1,EE,205501F4,extended,0000004A
+
+[Max Power]
+patch=1,EE,205501F8,extended,000003E7
+
+[Max Armor]
+patch=1,EE,205501FC,extended,000003E7
+
+[Max Shield]
+patch=1,EE,20550200,extended,000003E7
+
+[Max Speed]
+patch=1,EE,20550204,extended,000003E7
+
+[Have 4 Force Metal Slots]
+patch=1,EE,00550296,extended,00000004
+
+[Max Immunity]
+patch=1,EE,205502A0,extended,03E703E7
+
+[Max Hyper]
+patch=1,EE,205502A8,extended,03E703E7
+
+[X Buster]
+patch=1,EE,10550290,extended,00000019
+
+[Guard Buster]
+patch=1,EE,10550290,extended,0000001A
+
+[Fire Buster]
+patch=1,EE,10550290,extended,0000001B
+
+[Thunder Buster]
+patch=1,EE,10550290,extended,0000001C
+
+[Scope Buster]
+patch=1,EE,10550290,extended,0000001D
+
+[Ice Buster]
+patch=1,EE,10550290,extended,0000001E
+
+[Guard Buster MKII]
+patch=1,EE,10550290,extended,0000001F
+
+[Gatling Buster]
+patch=1,EE,10550290,extended,00000020
+
+[X Buster MKII]
+patch=1,EE,10550290,extended,00000021
+
+[Aero Buster]
+patch=1,EE,10550290,extended,00000022
+
+[Fire Buster MKII]
+patch=1,EE,10550290,extended,00000023
+
+[Ice Buster MKII]
+patch=1,EE,10550290,extended,00000024
+
+[Thunder Buster MKII]
+patch=1,EE,10550290,extended,00000025
+
+[Scope Buster MK II]
+patch=1,EE,10550290,extended,00000026
+
+[Limit Buster]
+patch=1,EE,10550290,extended,00000027
+
+[Gatling Buster II]
+patch=1,EE,10550290,extended,00000028
+
+[Guard Buster MKIII]
+patch=1,EE,10550290,extended,00000029
+
+[Aero Buster MKII]
+patch=1,EE,10550290,extended,0000002A
+
+[Limit Buster MKII]
+patch=1,EE,10550290,extended,0000002B
+
+[Fire Buster MKII]
+patch=1,EE,10550290,extended,0000002C
+
+[Ice Buster MKIII]
+patch=1,EE,10550290,extended,0000002D
+
+[Thunder Buster MKIII]
+patch=1,EE,10550290,extended,0000002E
+
+[X Buster MKIII]
+patch=1,EE,10550290,extended,0000002F
+
+[Brave Buster]
+patch=1,EE,10550290,extended,00000030
+
+[Turbo Buster]
+patch=1,EE,10550290,extended,00000031
+
+[Micro Missile]
+patch=1,EE,10550292,extended,00000001
+
+[Tomahawk]
+patch=1,EE,10550292,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,10550292,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,10550292,extended,00000004
+
+[Force Missiles]
+patch=1,EE,10550292,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,10550292,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,10550292,extended,00000007
+
+[Photo Missile]
+patch=1,EE,10550292,extended,00000008
+
+[Justice Missile]
+patch=1,EE,10550292,extended,00000009
+
+[Fire Missile]
+patch=1,EE,10550292,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,10550292,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,10550292,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,10550292,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,10550292,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,10550292,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,10550292,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,10550292,extended,00000011
+
+[Virus Missile]
+patch=1,EE,10550292,extended,00000012
+
+[Cracker]
+patch=1,EE,10550292,extended,00000013
+
+[Cryogenic]
+patch=1,EE,10550292,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,10550292,extended,00000015
+
+[Get EXP +]
+patch=1,EE,10550292,extended,00000016
+
+[Get FME +]
+patch=1,EE,10550292,extended,00000017
+
+[Rust Missile]
+patch=1,EE,10550292,extended,00000018
+
+[Drill Missile]
+patch=1,EE,10550292,extended,00000019
+
+[Melt Missile]
+patch=1,EE,10550292,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,10550292,extended,0000001B
+
+[Oil Can]
+patch=1,EE,10550292,extended,0000001C
+
+[Item Capture]
+patch=1,EE,10550292,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,10550292,extended,0000001E
+
+[Power Charge]
+patch=1,EE,10550292,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,10550292,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,10550292,extended,00000021
+
+[Heat Haze]
+patch=1,EE,10550292,extended,00000022
+
+[Generator]
+patch=1,EE,10550292,extended,00000023
+
+[Energy Field]
+patch=1,EE,10550292,extended,00000024
+
+[Bait]
+patch=1,EE,10550292,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,10550292,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,10550292,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,10550292,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,10550292,extended,00000029
+
+[Super Absorber]
+patch=1,EE,10550292,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,10550292,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,10550292,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,10550292,extended,00000032
+
+[Shell Buster]
+patch=1,EE,10550292,extended,00000033
+
+[Power Charge]
+patch=1,EE,10550292,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,10550292,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,10550292,extended,00000036
+
+[Brutal Right]
+patch=1,EE,10550292,extended,00000037
+
+[Micro Missile]
+patch=1,EE,10550294,extended,00000001
+
+[Tomahawk]
+patch=1,EE,10550294,extended,00000002
+
+[Twin Missiles]
+patch=1,EE,10550294,extended,00000003
+
+[Twin Tomahawks]
+patch=1,EE,10550294,extended,00000004
+
+[Force Missiles]
+patch=1,EE,10550294,extended,00000005
+
+[Force Tomahawks]
+patch=1,EE,10550294,extended,00000006
+
+[Hunter Missile]
+patch=1,EE,10550294,extended,00000007
+
+[Photo Missile]
+patch=1,EE,10550294,extended,00000008
+
+[Justice Missile]
+patch=1,EE,10550294,extended,00000009
+
+[Fire Missile]
+patch=1,EE,10550294,extended,0000000A
+
+[Twin Fire]
+patch=1,EE,10550294,extended,0000000B
+
+[Ice Missile]
+patch=1,EE,10550294,extended,0000000C
+
+[Twin Ice]
+patch=1,EE,10550294,extended,0000000D
+
+[Thunder Missile]
+patch=1,EE,10550294,extended,0000000E
+
+[Twin Thunder]
+patch=1,EE,10550294,extended,0000000F
+
+[Tractor Net]
+patch=1,EE,10550294,extended,00000010
+
+[Smoke Missile]
+patch=1,EE,10550294,extended,00000011
+
+[Virus Missile]
+patch=1,EE,10550294,extended,00000012
+
+[Cracker]
+patch=1,EE,10550294,extended,00000013
+
+[Cryogenic]
+patch=1,EE,10550294,extended,00000014
+
+[Get Zenny +]
+patch=1,EE,10550294,extended,00000015
+
+[Get EXP +]
+patch=1,EE,10550294,extended,00000016
+
+[Get FME +]
+patch=1,EE,10550294,extended,00000017
+
+[Rust Missile]
+patch=1,EE,10550294,extended,00000018
+
+[Drill Missile]
+patch=1,EE,10550294,extended,00000019
+
+[Melt Missile]
+patch=1,EE,10550294,extended,0000001A
+
+[Slime Missile]
+patch=1,EE,10550294,extended,0000001B
+
+[Oil Can]
+patch=1,EE,10550294,extended,0000001C
+
+[Item Capture]
+patch=1,EE,10550294,extended,0000001D
+
+[Energy Capture]
+patch=1,EE,10550294,extended,0000001E
+
+[Power Charge]
+patch=1,EE,10550294,extended,0000001F
+
+[Hawkeye]
+patch=1,EE,10550294,extended,00000020
+
+[Turbo Clock]
+patch=1,EE,10550294,extended,00000021
+
+[Heat Haze]
+patch=1,EE,10550294,extended,00000022
+
+[Generator]
+patch=1,EE,10550294,extended,00000023
+
+[Energy Field]
+patch=1,EE,10550294,extended,00000024
+
+[Bait]
+patch=1,EE,10550294,extended,00000025
+
+[Stamina Missile]
+patch=1,EE,10550294,extended,00000026
+
+[Vitality Missiles]
+patch=1,EE,10550294,extended,00000027
+
+[Combat Absorber]
+patch=1,EE,10550294,extended,00000028
+
+[Shot Absorber]
+patch=1,EE,10550294,extended,00000029
+
+[Super Absorber]
+patch=1,EE,10550294,extended,0000002A
+
+[Vengeful Counter]
+patch=1,EE,10550294,extended,0000002B
+
+[Sub Weapon Armor A]
+patch=1,EE,10550294,extended,00000031
+
+[Ultimate Missile]
+patch=1,EE,10550294,extended,00000032
+
+[Shell Buster]
+patch=1,EE,10550294,extended,00000033
+
+[Power Charge]
+patch=1,EE,10550294,extended,00000034
+
+[Strike Bullet]
+patch=1,EE,10550294,extended,00000035
+
+[Impact Cannon]
+patch=1,EE,10550294,extended,00000036
+
+[Brutal Right]
+patch=1,EE,10550294,extended,00000037
+
+[Vaccine Program]
+patch=1,EE,205502E0,extended,00090001
+
+[Anti-Lock]
+patch=1,EE,205502E4,extended,00090002
+
+[Warm-Up]
+patch=1,EE,205502E8,extended,00090003
+
+[Cooler]
+patch=1,EE,205502EC,extended,00090004
+
+[Clear Vision]
+patch=1,EE,205502F0,extended,00090005
+
+[Cure One]
+patch=1,EE,205502F4,extended,00090006
+
+[Cure All]
+patch=1,EE,205502F8,extended,00090007
+
+[Reboot]
+patch=1,EE,205502FC,extended,00090008
+
+[Backup]
+patch=1,EE,20550300,extended,00090009
+
+[Boost Power]
+patch=1,EE,20550304,extended,0009000A
+
+[Boost Armor]
+patch=1,EE,20550308,extended,0009000B
+
+[Boost Shield]
+patch=1,EE,2055030C,extended,0009000C
+
+[Boost Speed]
+patch=1,EE,20550310,extended,0009000D
+
+[Unlock Limiter]
+patch=1,EE,20550314,extended,0009000E
+
+[Build LE]
+patch=1,EE,20550318,extended,0009000F
+
+[Build Power]
+patch=1,EE,2055031C,extended,00090010
+
+[Build Armor]
+patch=1,EE,20550320,extended,00090011
+
+[Build Shield]
+patch=1,EE,20550324,extended,00090012
+
+[Build Speed]
+patch=1,EE,20550328,extended,00090013
+
+[Mega Fire]
+patch=1,EE,2055032C,extended,00090014
+
+[Ultra Fire]
+patch=1,EE,20550330,extended,00090015
+
+[Mega Blizzard]
+patch=1,EE,20550334,extended,00090016
+
+[Ultra Blizzard]
+patch=1,EE,20550338,extended,00090017
+
+[Mega Thunder]
+patch=1,EE,2055033C,extended,00090018
+
+[Ultra Thunder]
+patch=1,EE,20550340,extended,00090019
+
+[Liquid Suffocation]
+patch=1,EE,20550344,extended,0009001A
+
+[Chaff]
+patch=1,EE,20550348,extended,0009001B
+
+[Build WE]
+patch=1,EE,2055034C,extended,0009001C
+
+[Hacking]
+patch=1,EE,20550350,extended,0009001D
+
+[Build Hyper]
+patch=1,EE,20550354,extended,0009001E
+
+[Gain Hyper]
+patch=1,EE,20550358,extended,0009001F
+
+[All Items]
+patch=1,EE,405502E0,extended,001F0001
+patch=1,EE,00090001,extended,00000001
+
+[X Buster]
+patch=1,EE,205504F0,extended,01090019
+
+[Guard Buster]
+patch=1,EE,205504F4,extended,0109001A
+
+[Fire Buster]
+patch=1,EE,205504F8,extended,0109001B
+
+[Thunder Buster]
+patch=1,EE,205504FC,extended,0109001C
+
+[Scope Buster]
+patch=1,EE,20550500,extended,0109001D
+
+[Ice Buster]
+patch=1,EE,20550504,extended,0109001E
+
+[Guard Buster MKII]
+patch=1,EE,20550508,extended,0109001F
+
+[Gatling Buster]
+patch=1,EE,2055050C,extended,01090020
+
+[X Buster MKII]
+patch=1,EE,20550510,extended,01090021
+
+[Aero Buster]
+patch=1,EE,20550514,extended,01090022
+
+[Fire Buster MKII]
+patch=1,EE,20550518,extended,01090023
+
+[Ice Buster MKII]
+patch=1,EE,2055051C,extended,01090024
+
+[Thunder Buster MKII]
+patch=1,EE,20550520,extended,01090025
+
+[Scope Buster MK II]
+patch=1,EE,20550524,extended,01090026
+
+[Limit Buster]
+patch=1,EE,20550528,extended,01090027
+
+[Gatling Buster II]
+patch=1,EE,2055052C,extended,01090028
+
+[Guard Buster MKIII]
+patch=1,EE,20550530,extended,01090029
+
+[Aero Buster MKII]
+patch=1,EE,20550534,extended,0109002A
+
+[Limit Buster MKII]
+patch=1,EE,20550538,extended,0109002B
+
+[Fire Buster MKII]
+patch=1,EE,2055053C,extended,0109002C
+
+[Ice Buster MKIII]
+patch=1,EE,20550540,extended,0109002D
+
+[Thunder Buster MKIII]
+patch=1,EE,20550544,extended,0109002E
+
+[X Buster MKIII]
+patch=1,EE,20550548,extended,0109002F
+
+[Brave Buster]
+patch=1,EE,2055054C,extended,01090030
+
+[Turbo Buster]
+patch=1,EE,20550550,extended,01090031
+
+[All Main Weapons]
+patch=1,EE,405504F0,extended,00190001
+patch=1,EE,01090019,extended,00000001
+
+[Micro Missile]
+patch=1,EE,205506D0,extended,02090001
+
+[Tomahawk]
+patch=1,EE,205506D4,extended,02090002
+
+[Twin Missiles]
+patch=1,EE,205506D8,extended,02090003
+
+[Twin Tomahawks]
+patch=1,EE,205506DC,extended,02090004
+
+[Force Missiles]
+patch=1,EE,205506E0,extended,02090005
+
+[Force Tomahawks]
+patch=1,EE,205506E4,extended,02090006
+
+[Hunter Missile]
+patch=1,EE,205506E8,extended,02090007
+
+[Photo Missile]
+patch=1,EE,205506EC,extended,02090008
+
+[Justice Missile]
+patch=1,EE,205506F0,extended,02090009
+
+[Fire Missile]
+patch=1,EE,205506F4,extended,0209000A
+
+[Twin Fire]
+patch=1,EE,205506F8,extended,0209000B
+
+[Ice Missile]
+patch=1,EE,205506FC,extended,0209000C
+
+[Twin Ice]
+patch=1,EE,20550700,extended,0209000D
+
+[Thunder Missile]
+patch=1,EE,20550704,extended,0209000E
+
+[Twin Thunder]
+patch=1,EE,20550708,extended,0209000F
+
+[Tractor Net]
+patch=1,EE,2055070C,extended,02090010
+
+[Smoke Missile]
+patch=1,EE,20550710,extended,02090011
+
+[Virus Missile]
+patch=1,EE,20550714,extended,02090012
+
+[Cracker]
+patch=1,EE,20550718,extended,02090013
+
+[Cryogenic]
+patch=1,EE,2055071C,extended,02090014
+
+[Get Zenny +]
+patch=1,EE,20550720,extended,02090015
+
+[Get EXP +]
+patch=1,EE,20550724,extended,02090016
+
+[Get FME +]
+patch=1,EE,20550728,extended,02090017
+
+[Rust Missile]
+patch=1,EE,2055072C,extended,02090018
+
+[Drill Missile]
+patch=1,EE,20550730,extended,02090019
+
+[Melt Missile]
+patch=1,EE,20550734,extended,0209001A
+
+[Slime Missile]
+patch=1,EE,20550738,extended,0209001B
+
+[Oil Can]
+patch=1,EE,2055073C,extended,0209001C
+
+[Item Capture]
+patch=1,EE,20550740,extended,0209001D
+
+[Energy Capture]
+patch=1,EE,20550744,extended,0209001E
+
+[Power Charge]
+patch=1,EE,20550748,extended,0209001F
+
+[Hawkeye]
+patch=1,EE,2055074C,extended,02090020
+
+[Turbo Clock]
+patch=1,EE,20550750,extended,02090021
+
+[Heat Haze]
+patch=1,EE,20550754,extended,02090022
+
+[Generator]
+patch=1,EE,20550758,extended,02090023
+
+[Energy Field]
+patch=1,EE,2055075C,extended,02090024
+
+[Bait]
+patch=1,EE,20550760,extended,02090025
+
+[Stamina Missile]
+patch=1,EE,20550764,extended,02090026
+
+[Vitality Missiles]
+patch=1,EE,20550768,extended,02090027
+
+[Combat Absorber]
+patch=1,EE,2055076C,extended,02090028
+
+[Shot Absorber]
+patch=1,EE,20550770,extended,02090029
+
+[Super Absorber]
+patch=1,EE,20550774,extended,0209002A
+
+[Vengeful Counter]
+patch=1,EE,20550778,extended,0209002B
+
+[Sub Weapon Armor A]
+patch=1,EE,2055077C,extended,02090031
+
+[Ultimate Missile]
+patch=1,EE,20550780,extended,02090032
+
+[Shell Buster]
+patch=1,EE,20550784,extended,02090033
+
+[Power Charge]
+patch=1,EE,20550788,extended,02090034
+
+[Strike Bullet]
+patch=1,EE,2055078C,extended,02090035
+
+[Impact Cannon]
+patch=1,EE,20550790,extended,02090036
+
+[Brutal Right]
+patch=1,EE,20550794,extended,02090037
+
+[All Sub Weapons]
+patch=1,EE,405506D0,extended,002B0001
+patch=1,EE,02090001,extended,00000001
+patch=1,EE,4055077C,extended,00070001
+patch=1,EE,02090031,extended,00000001

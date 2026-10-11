@@ -1,0 +1,350 @@
+gametitle=Shaman King-Power Of Spirit (SLUS-20953)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90298884,extended,0C0A8BA2
+
+[Infinite Strength Points Usage]
+patch=1,EE,2033E48C,extended,00000000
+
+[Extra Strength Points]
+patch=1,EE,2033E488,extended,00431021
+
+[View Capabilities For Max Strenth/Furyoku]
+patch=1,EE,200C0220,extended,2406270F
+patch=1,EE,200C0224,extended,A446000C
+patch=1,EE,200C0228,extended,A446000E
+patch=1,EE,200C022C,extended,A6060138
+patch=1,EE,200C0230,extended,080D6320
+patch=1,EE,200C0234,extended,A606013A
+patch=1,EE,2035E464,extended,0C030088
+
+[View Capabilities For Max Strength Points]
+patch=1,EE,2035D44C,extended,24060063
+patch=1,EE,2035D458,extended,A3C60009
+
+[Infinite Strength Points Possessed]
+patch=1,EE,004E3DA1,extended,00000063
+
+[Level 99]
+patch=1,EE,004E3EC1,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,104E3EC2,extended,0000270F
+
+[Infinite Strength]
+patch=1,EE,104E3EC4,extended,0000270F
+
+[Max Strength]
+patch=1,EE,10649428,extended,0000270F
+
+[Infinite Furyoku]
+patch=1,EE,104E3EC6,extended,0000270F
+
+[Max Furyoku]
+patch=1,EE,1064942A,extended,0000270F
+
+[Max AT]
+patch=1,EE,1064942C,extended,000003E7
+
+[Max DF]
+patch=1,EE,1064942E,extended,000003E7
+
+[Always 1 EXP To Next Level]
+patch=1,EE,10649430,extended,00000001
+
+[Max MV]
+patch=1,EE,00649432,extended,00000063
+
+[Infinite Strength Points Possessed]
+patch=1,EE,004E3DB9,extended,00000063
+
+[Level 99]
+patch=1,EE,004E3F01,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,104E3F02,extended,0000270F
+
+[Infinite Strength]
+patch=1,EE,104E3F04,extended,0000270F
+
+[Max Strength]
+patch=1,EE,106496AC,extended,0000270F
+
+[Infinite Furyoku]
+patch=1,EE,104E3F06,extended,0000270F
+
+[Max Furyoku]
+patch=1,EE,106496AE,extended,0000270F
+
+[Max AT]
+patch=1,EE,106496B0,extended,000003E7
+
+[Max DF]
+patch=1,EE,106496B2,extended,000003E7
+
+[Always 1 EXP To Next Level]
+patch=1,EE,106496B4,extended,00000001
+
+[Max MV]
+patch=1,EE,006496B6,extended,00000063
+
+[Infinite Strength Points Possessed]
+patch=1,EE,004E3DD1,extended,00000063
+
+[Level 99]
+patch=1,EE,004E3F41,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,104E3F42,extended,0000270F
+
+[Infinite Strength]
+patch=1,EE,104E3F44,extended,0000270F
+
+[Max Strength]
+patch=1,EE,10649930,extended,0000270F
+
+[Infinite Furyoku]
+patch=1,EE,104E3F46,extended,0000270F
+
+[Max Furyoku]
+patch=1,EE,10649932,extended,0000270F
+
+[Max AT]
+patch=1,EE,10649934,extended,000003E7
+
+[Max DF]
+patch=1,EE,10649936,extended,000003E7
+
+[Always 1 EXP To Next Level]
+patch=1,EE,10649938,extended,00000001
+
+[Max MV]
+patch=1,EE,0064993A,extended,00000063
+
+[Infinite Strength Points Possessed]
+patch=1,EE,004E3DE9,extended,00000063
+
+[Level 99]
+patch=1,EE,004E3F81,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,104E3F82,extended,0000270F
+
+[Infinite Strength]
+patch=1,EE,104E3F84,extended,0000270F
+
+[Max Strength]
+patch=1,EE,10649BB4,extended,0000270F
+
+[Infinite Furyoku]
+patch=1,EE,104E3F86,extended,0000270F
+
+[Max Furyoku]
+patch=1,EE,10649BB6,extended,0000270F
+
+[Max AT]
+patch=1,EE,10649BB8,extended,000003E7
+
+[Max DF]
+patch=1,EE,10649BBA,extended,000003E7
+
+[Always 1 EXP To Next Level]
+patch=1,EE,10649BBC,extended,00000001
+
+[Max MV]
+patch=1,EE,00649BBE,extended,00000063
+
+[Infinite Strength Points Possessed]
+patch=1,EE,004E3E01,extended,00000063
+
+[Level 99]
+patch=1,EE,004E3FC1,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,104E3FC2,extended,0000270F
+
+[Infinite Strength]
+patch=1,EE,104E3FC4,extended,0000270F
+
+[Max Strength]
+patch=1,EE,10649E38,extended,0000270F
+
+[Infinite Furyoku]
+patch=1,EE,104E3FC6,extended,0000270F
+
+[Max Furyoku]
+patch=1,EE,10649E3A,extended,0000270F
+
+[Max AT]
+patch=1,EE,10649E3C,extended,000003E7
+
+[Max DF]
+patch=1,EE,10649E3E,extended,000003E7
+
+[Always 1 EXP To Next Level]
+patch=1,EE,10649E40,extended,00000001
+
+[Max MV]
+patch=1,EE,00649E42,extended,00000063
+
+[Dobie Pickle]
+patch=1,EE,104E3C8E,extended,00000063
+
+[Dobie Bun]
+patch=1,EE,104E3C90,extended,00000063
+
+[Energy Drink]
+patch=1,EE,104E3C92,extended,00000063
+
+[Fish And Banana Soup]
+patch=1,EE,104E3C94,extended,00000063
+
+[Aloe And Mushroom Soup]
+patch=1,EE,104E3C96,extended,00000063
+
+[Cactus Soup]
+patch=1,EE,104E3C98,extended,00000063
+
+[Swiftness Talisman]
+patch=1,EE,104E3C9A,extended,00000063
+
+[Strength Talisman]
+patch=1,EE,104E3C9C,extended,00000063
+
+[Protection Talisman]
+patch=1,EE,104E3C9E,extended,00000063
+
+[Spear Of Gaius]
+patch=1,EE,104E3CA0,extended,00000063
+
+[Spear Of Wind]
+patch=1,EE,104E3CA2,extended,00000063
+
+[Ultrasonic Whisper]
+patch=1,EE,104E3CA4,extended,00000063
+
+[Magnitude 1]
+patch=1,EE,104E3CA6,extended,00000063
+
+[Burst Fruit]
+patch=1,EE,104E3CA8,extended,00000063
+
+[Magnitude 3]
+patch=1,EE,104E3CAA,extended,00000063
+
+[Ultrasonic Lamentation]
+patch=1,EE,104E3CAC,extended,00000063
+
+[Spear Of Water]
+patch=1,EE,104E3CAE,extended,00000063
+
+[Spear Of Flame]
+patch=1,EE,104E3CB0,extended,00000063
+
+[Spear Of Lightning]
+patch=1,EE,104E3CB2,extended,00000063
+
+[Spear Of Light]
+patch=1,EE,104E3CB4,extended,00000063
+
+[Ultrasonic Rebuke]
+patch=1,EE,104E3CB6,extended,00000063
+
+[Ultrasonic Scream]
+patch=1,EE,104E3CB8,extended,00000063
+
+[Ultrasonic Fury]
+patch=1,EE,104E3CBA,extended,00000063
+
+[Magnitude 5]
+patch=1,EE,104E3CBC,extended,00000063
+
+[Detonating Fruit]
+patch=1,EE,104E3CBE,extended,00000063
+
+[Magnitude 7]
+patch=1,EE,104E3CC0,extended,00000063
+
+[Spear Of Stars]
+patch=1,EE,104E3CC2,extended,00000063
+
+[Exploding Fruit]
+patch=1,EE,104E3CC4,extended,00000063
+
+[Sikigami 1]
+patch=1,EE,104E3CF0,extended,00000063
+
+[Sikigami 2]
+patch=1,EE,104E3CF2,extended,00000063
+
+[Sikigami 3]
+patch=1,EE,104E3CF4,extended,00000063
+
+[Sikigami 4]
+patch=1,EE,104E3CF6,extended,00000063
+
+[Sikigami 5]
+patch=1,EE,104E3CF8,extended,00000063
+
+[Sikigami 6]
+patch=1,EE,104E3CFA,extended,00000063
+
+[Sikigami 7]
+patch=1,EE,104E3CFC,extended,00000063
+
+[Sikigami 8]
+patch=1,EE,104E3CFE,extended,00000063
+
+[Sikigami 9]
+patch=1,EE,104E3D00,extended,00000063
+
+[Sikigami 10]
+patch=1,EE,104E3D02,extended,00000063
+
+[Sikigami 11]
+patch=1,EE,104E3D04,extended,00000063
+
+[Sikigami 12]
+patch=1,EE,104E3D06,extended,00000063
+
+[Sikigami 13]
+patch=1,EE,104E3D08,extended,00000063
+
+[Sikigami 14]
+patch=1,EE,104E3D0A,extended,00000063
+
+[Sikigami 15]
+patch=1,EE,104E3D0C,extended,00000063
+
+[Sikigami 16]
+patch=1,EE,104E3D0E,extended,00000063
+
+[Hunbari]
+patch=1,EE,104E3D10,extended,00000063
+
+[Yuru Yuru]
+patch=1,EE,104E3D12,extended,00000063
+
+[Kokutou]
+patch=1,EE,104E3D14,extended,00000063
+
+[Corey]
+patch=1,EE,104E3D16,extended,00000063
+
+[Merakonjyo]
+patch=1,EE,104E3D18,extended,00000063
+
+[Medical Aid]
+patch=1,EE,104E3D1A,extended,00000063
+
+[Kikou]
+patch=1,EE,104E3D1C,extended,00000063
+
+[Treat]
+patch=1,EE,104E3D1E,extended,00000063
+
+[Chloe]
+patch=1,EE,104E3D20,extended,00000063

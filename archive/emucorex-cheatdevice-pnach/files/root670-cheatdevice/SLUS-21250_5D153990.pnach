@@ -1,0 +1,53 @@
+gametitle=Full Spectrum Warrior-Ten Hammers (SLUS-21250)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903D2AE0,extended,00832021
+
+[Unlock All Levels]
+patch=1,EE,20209790,extended,2405FFFF
+patch=1,EE,20209794,extended,AC85002C
+patch=1,EE,20209798,extended,03E00008
+patch=1,EE,2020979C,extended,24020010
+
+[Unlock All Movies]
+patch=1,EE,2020C378,extended,2402FFFF
+patch=1,EE,2020C37C,extended,03E00008
+patch=1,EE,2020C380,extended,AC823914
+
+[God Mode]
+patch=1,EE,0060BD47,extended,00000001
+
+[Unknown Cheat 1]
+patch=1,EE,2022A1A0,extended,24020001
+patch=1,EE,2039C460,extended,24020001
+patch=1,EE,2039F468,extended,24020001
+
+[Unknown Cheat 2]
+patch=1,EE,201FBCB4,extended,24020001
+
+[Unknown Cheat 3]
+patch=1,EE,20119770,extended,24020001
+
+[Unknown Cheat 4]
+patch=1,EE,202307C0,extended,24020001
+
+[Unknown Cheat 5]
+patch=1,EE,201BADC0,extended,24020001
+
+[Unknown Cheat 6]
+patch=1,EE,2022F608,extended,24020001
+
+[Unknown Cheat 7]
+patch=1,EE,20230D20,extended,24020001
+
+[Unknown Cheat 8]
+patch=1,EE,202121E8,extended,24020001
+
+[Unknown Cheat 9]
+patch=1,EE,202121A0,extended,24020001
+
+[Unknown Cheat 10]
+patch=1,EE,202B99BC,extended,24020001

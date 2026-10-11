@@ -1,0 +1,595 @@
+gametitle=Worms Forts-Under Siege (SLUS-21093)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90418B9C,extended,0C10E3B5
+patch=1,EE,200C0220,extended,3C024348
+patch=1,EE,200C02E4,extended,0808D48F
+patch=1,EE,200C02E8,extended,C620024C
+patch=1,EE,20235238,extended,0C030088
+
+[P1 Press {L1}+{SELECT} To Stop Turn Timer]
+patch=1,EE,D08381C2,extended,0000FBFE
+patch=1,EE,20163E2C,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Turn Timer]
+patch=1,EE,D08381C2,extended,0000FEFE
+patch=1,EE,20163E2C,extended,AE220624
+
+[View Percentage Complete To Unlock Everything]
+patch=1,EE,20214564,extended,24020001
+patch=1,EE,20214568,extended,AC82001C
+patch=1,EE,2021456C,extended,A3A00088
+
+[Access Everything]
+patch=1,EE,204985D4,extended,00000001
+
+[Worm 1]
+patch=1,EE,200C0224,extended,24010000
+patch=1,EE,200C0228,extended,50340001
+patch=1,EE,200C022C,extended,AE22024C
+
+[Worm 2]
+patch=1,EE,200C0230,extended,24010001
+patch=1,EE,200C0234,extended,50340001
+patch=1,EE,200C0238,extended,AE22024C
+
+[Worm 3]
+patch=1,EE,200C023C,extended,24010002
+patch=1,EE,200C0240,extended,50340001
+patch=1,EE,200C0244,extended,AE22024C
+
+[Worm 4]
+patch=1,EE,200C0248,extended,24010003
+patch=1,EE,200C024C,extended,50340001
+patch=1,EE,200C0250,extended,AE22024C
+
+[Worm 5]
+patch=1,EE,200C0254,extended,24010004
+patch=1,EE,200C0258,extended,50340001
+patch=1,EE,200C025C,extended,AE22024C
+
+[Worm 6]
+patch=1,EE,200C0260,extended,24010005
+patch=1,EE,200C0264,extended,50340001
+patch=1,EE,200C0268,extended,AE22024C
+
+[Worm 7]
+patch=1,EE,200C026C,extended,24010006
+patch=1,EE,200C0270,extended,50340001
+patch=1,EE,200C0274,extended,AE22024C
+
+[Worm 8]
+patch=1,EE,200C0278,extended,24010007
+patch=1,EE,200C027C,extended,50340001
+patch=1,EE,200C0280,extended,AE22024C
+
+[Worm 9]
+patch=1,EE,200C0284,extended,24010008
+patch=1,EE,200C0288,extended,50340001
+patch=1,EE,200C028C,extended,AE22024C
+
+[Worm 10]
+patch=1,EE,200C0290,extended,24010009
+patch=1,EE,200C0294,extended,50340001
+patch=1,EE,200C0298,extended,AE22024C
+
+[Worm 11]
+patch=1,EE,200C029C,extended,2401000A
+patch=1,EE,200C02A0,extended,50340001
+patch=1,EE,200C02A4,extended,AE22024C
+
+[Worm 12]
+patch=1,EE,200C02A8,extended,2401000B
+patch=1,EE,200C02AC,extended,50340001
+patch=1,EE,200C02B0,extended,AE22024C
+
+[Worm 13]
+patch=1,EE,200C02B4,extended,2401000C
+patch=1,EE,200C02B8,extended,50340001
+patch=1,EE,200C02BC,extended,AE22024C
+
+[Worm 14]
+patch=1,EE,200C02C0,extended,2401000D
+patch=1,EE,200C02C4,extended,50340001
+patch=1,EE,200C02C8,extended,AE22024C
+
+[Worm 15]
+patch=1,EE,200C02CC,extended,2401000E
+patch=1,EE,200C02D0,extended,50340001
+patch=1,EE,200C02D4,extended,AE22024C
+
+[Worm 16]
+patch=1,EE,200C02D8,extended,2401000F
+patch=1,EE,200C02DC,extended,50340001
+patch=1,EE,200C02E0,extended,AE22024C
+
+[Worm 1]
+patch=1,EE,200C0224,extended,24010000
+patch=1,EE,200C0228,extended,50340001
+patch=1,EE,200C022C,extended,AE20024C
+
+[Worm 2]
+patch=1,EE,200C0230,extended,24010001
+patch=1,EE,200C0234,extended,50340001
+patch=1,EE,200C0238,extended,AE20024C
+
+[Worm 3]
+patch=1,EE,200C023C,extended,24010002
+patch=1,EE,200C0240,extended,50340001
+patch=1,EE,200C0244,extended,AE20024C
+
+[Worm 4]
+patch=1,EE,200C0248,extended,24010003
+patch=1,EE,200C024C,extended,50340001
+patch=1,EE,200C0250,extended,AE20024C
+
+[Worm 5]
+patch=1,EE,200C0254,extended,24010004
+patch=1,EE,200C0258,extended,50340001
+patch=1,EE,200C025C,extended,AE20024C
+
+[Worm 6]
+patch=1,EE,200C0260,extended,24010005
+patch=1,EE,200C0264,extended,50340001
+patch=1,EE,200C0268,extended,AE20024C
+
+[Worm 7]
+patch=1,EE,200C026C,extended,24010006
+patch=1,EE,200C0270,extended,50340001
+patch=1,EE,200C0274,extended,AE20024C
+
+[Worm 8]
+patch=1,EE,200C0278,extended,24010007
+patch=1,EE,200C027C,extended,50340001
+patch=1,EE,200C0280,extended,AE20024C
+
+[Worm 9]
+patch=1,EE,200C0284,extended,24010008
+patch=1,EE,200C0288,extended,50340001
+patch=1,EE,200C028C,extended,AE20024C
+
+[Worm 10]
+patch=1,EE,200C0290,extended,24010009
+patch=1,EE,200C0294,extended,50340001
+patch=1,EE,200C0298,extended,AE20024C
+
+[Worm 11]
+patch=1,EE,200C029C,extended,2401000A
+patch=1,EE,200C02A0,extended,50340001
+patch=1,EE,200C02A4,extended,AE20024C
+
+[Worm 12]
+patch=1,EE,200C02A8,extended,2401000B
+patch=1,EE,200C02AC,extended,50340001
+patch=1,EE,200C02B0,extended,AE20024C
+
+[Worm 13]
+patch=1,EE,200C02B4,extended,2401000C
+patch=1,EE,200C02B8,extended,50340001
+patch=1,EE,200C02BC,extended,AE20024C
+
+[Worm 14]
+patch=1,EE,200C02C0,extended,2401000D
+patch=1,EE,200C02C4,extended,50340001
+patch=1,EE,200C02C8,extended,AE20024C
+
+[Worm 15]
+patch=1,EE,200C02CC,extended,2401000E
+patch=1,EE,200C02D0,extended,50340001
+patch=1,EE,200C02D4,extended,AE20024C
+
+[Worm 16]
+patch=1,EE,200C02D8,extended,2401000F
+patch=1,EE,200C02DC,extended,50340001
+patch=1,EE,200C02E0,extended,AE20024C
+
+[Bazooka]
+patch=1,EE,20245428,extended,00000000
+
+[Mortar]
+patch=1,EE,20245430,extended,00000000
+
+[Siege Onager]
+patch=1,EE,20245438,extended,00000000
+
+[Homing Pigeon]
+patch=1,EE,20245440,extended,00000000
+
+[Rocket Launcher]
+patch=1,EE,20245448,extended,00000000
+
+[Grenade]
+patch=1,EE,20245450,extended,00000000
+
+[Cluster Launcher]
+patch=1,EE,20245458,extended,00000000
+
+[Chili Con Carnage]
+patch=1,EE,20245460,extended,00000000
+
+[Fridge Launcher]
+patch=1,EE,20245468,extended,00000000
+
+[Trebuchet]
+patch=1,EE,20245470,extended,00000000
+
+[50 Stone Canary]
+patch=1,EE,20245478,extended,00000000
+
+[Old Woman]
+patch=1,EE,20245480,extended,00000000
+
+[Rhino]
+patch=1,EE,20245488,extended,00000000
+
+[Super Hippo]
+patch=1,EE,20245490,extended,00000000
+
+[Monkey Troop]
+patch=1,EE,20245498,extended,00000000
+
+[Air Strike]
+patch=1,EE,202454A0,extended,00000000
+
+[Napalm Strike]
+patch=1,EE,202454A8,extended,00000000
+
+[Mine Strike]
+patch=1,EE,202454B0,extended,00000000
+
+[Animal Strike]
+patch=1,EE,202454B8,extended,00000000
+
+[Trojan Donkey]
+patch=1,EE,202454C0,extended,00000000
+
+[Electrical Storm]
+patch=1,EE,202454C8,extended,00000000
+
+[Earthquake]
+patch=1,EE,202454D0,extended,00000000
+
+[Flood]
+patch=1,EE,202454D8,extended,00000000
+
+[Nuclear Strike]
+patch=1,EE,202454E0,extended,00000000
+
+[Armageddon]
+patch=1,EE,202454E8,extended,00000000
+
+[Fire Punch]
+patch=1,EE,202454F0,extended,00000000
+
+[Ballista]
+patch=1,EE,202454F8,extended,00000000
+
+[Minigun]
+patch=1,EE,20245500,extended,00000000
+
+[Giant Crossbow]
+patch=1,EE,20245508,extended,00000000
+
+[Giant Laser]
+patch=1,EE,20245510,extended,00000000
+
+[Tower]
+patch=1,EE,20245518,extended,00000000
+
+[Keep]
+patch=1,EE,20245520,extended,00000000
+
+[Castle]
+patch=1,EE,20245528,extended,00000000
+
+[Citadel]
+patch=1,EE,20245530,extended,00000000
+
+[Wall]
+patch=1,EE,20245538,extended,00000000
+
+[Hospital]
+patch=1,EE,20245540,extended,00000000
+
+[Refinery]
+patch=1,EE,20245548,extended,00000000
+
+[Science Laboratory]
+patch=1,EE,20245550,extended,00000000
+
+[Wonder]
+patch=1,EE,20245558,extended,00000000
+
+[Farm]
+patch=1,EE,20245560,extended,00000000
+
+[Siege Workshop]
+patch=1,EE,20245568,extended,00000000
+
+[Storehouse]
+patch=1,EE,20245570,extended,00000000
+
+[Masons Guild]
+patch=1,EE,20245578,extended,00000000
+
+[Market]
+patch=1,EE,20245580,extended,00000000
+
+[Stronghold]
+patch=1,EE,20245588,extended,00000000
+
+[Jetpack]
+patch=1,EE,20245590,extended,00000000
+
+[Freeze]
+patch=1,EE,20245598,extended,00000000
+
+[Worm Select]
+patch=1,EE,202455A0,extended,00000000
+
+[Parachute]
+patch=1,EE,202455A8,extended,00000000
+
+[Girder]
+patch=1,EE,202455B0,extended,00000000
+
+[Repair Building]
+patch=1,EE,202455B8,extended,00000000
+
+[Spawn Worm]
+patch=1,EE,202455C0,extended,00000000
+
+[Skip Go]
+patch=1,EE,202455C8,extended,00000000
+
+[Suicide]
+patch=1,EE,202455D0,extended,00000000
+
+[Surrender]
+patch=1,EE,202455D4,extended,00000000
+
+[Custom Flag 1]
+patch=1,EE,208A731C,extended,00000001
+
+[Custom Flag 2]
+patch=1,EE,208A739C,extended,00000001
+
+[Custom Flag 3]
+patch=1,EE,208A741C,extended,00000001
+
+[Egyptian Flag 1]
+patch=1,EE,208A749C,extended,00000001
+
+[Egyptian Flag 2]
+patch=1,EE,208A751C,extended,00000001
+
+[Egyptian Flag 3]
+patch=1,EE,208A759C,extended,00000001
+
+[Greek Flag 1]
+patch=1,EE,208A761C,extended,00000001
+
+[Greek Flag 2]
+patch=1,EE,208A769C,extended,00000001
+
+[Greek Flag 3]
+patch=1,EE,208A771C,extended,00000001
+
+[Medieval Flag 1]
+patch=1,EE,208A779C,extended,00000001
+
+[Medieval Flag 2]
+patch=1,EE,208A781C,extended,00000001
+
+[Medieval Flag 3]
+patch=1,EE,208A789C,extended,00000001
+
+[Oriental Flag 1]
+patch=1,EE,208A791C,extended,00000001
+
+[Oriental Flag 2]
+patch=1,EE,208A799C,extended,00000001
+
+[Oriental Flag 3]
+patch=1,EE,208A7A1C,extended,00000001
+
+[Fortapedia]
+patch=1,EE,208A7A9C,extended,00000001
+
+[Achilles]
+patch=1,EE,208A7B1C,extended,00000001
+
+[Animal]
+patch=1,EE,208A7B9C,extended,00000001
+
+[Armageddon]
+patch=1,EE,208A7BFC,extended,00000001
+
+[King Arthur]
+patch=1,EE,208A7C7C,extended,00000001
+
+[Ancient Egypt]
+patch=1,EE,208A7CFC,extended,00000001
+
+[Gawain]
+patch=1,EE,208A7D7C,extended,00000001
+
+[Greek Mythology]
+patch=1,EE,208A7DFC,extended,00000001
+
+[Guinevere]
+patch=1,EE,208A7E7C,extended,00000001
+
+[Helen]
+patch=1,EE,208A7EFC,extended,00000001
+
+[Horus]
+patch=1,EE,208A7F7C,extended,00000001
+
+[Lady Of The Lake]
+patch=1,EE,208A7FFC,extended,00000001
+
+[Medieval]
+patch=1,EE,208A807C,extended,00000001
+
+[Menelaus]
+patch=1,EE,208A80FC,extended,00000001
+
+[Merlin]
+patch=1,EE,208A817C,extended,00000001
+
+[Mini Point And Shoot Death]
+patch=1,EE,208A81FC,extended,00000001
+
+[Monkey Troop]
+patch=1,EE,208A827C,extended,00000001
+
+[Mordred]
+patch=1,EE,208A82FC,extended,00000001
+
+[Nuclear Strike]
+patch=1,EE,208A835C,extended,00000001
+
+[Odysseus]
+patch=1,EE,208A83DC,extended,00000001
+
+[Oriental]
+patch=1,EE,208A845C,extended,00000001
+
+[Paris]
+patch=1,EE,208A84DC,extended,00000001
+
+[Point And Shoot Death]
+patch=1,EE,208A853C,extended,00000001
+
+[Puppet Master]
+patch=1,EE,208A85BC,extended,00000001
+
+[Ra]
+patch=1,EE,208A863C,extended,00000001
+
+[Seth]
+patch=1,EE,208A86BC,extended,00000001
+
+[Trojan Donkey]
+patch=1,EE,208A873C,extended,00000001
+
+[Uther Pendragon]
+patch=1,EE,208A87BC,extended,00000001
+
+[Fortpot]
+patch=1,EE,208A883C,extended,00000001
+
+[Egyptian Gravestone]
+patch=1,EE,208A88BC,extended,00000001
+
+[Greek Gravestone]
+patch=1,EE,208A893C,extended,00000001
+
+[Medieval Gravestone]
+patch=1,EE,208A89BC,extended,00000001
+
+[Oriental Gravestone]
+patch=1,EE,208A8A3C,extended,00000001
+
+[Egyptian Hat]
+patch=1,EE,208A8ABC,extended,00000001
+
+[Greek Hat]
+patch=1,EE,208A8B3C,extended,00000001
+
+[Medieval Hat]
+patch=1,EE,208A8BBC,extended,00000001
+
+[Oriental Hat]
+patch=1,EE,208A8C3C,extended,00000001
+
+[Under Construction]
+patch=1,EE,208A8CBC,extended,00000001
+
+[Check Mate]
+patch=1,EE,208A8D3C,extended,00000001
+
+[Tower Of Power]
+patch=1,EE,208A8DBC,extended,00000001
+
+[Best Defense]
+patch=1,EE,208A8E3C,extended,00000001
+
+[Question Of Faith]
+patch=1,EE,208A8EBC,extended,00000001
+
+[Great Wall Brawl]
+patch=1,EE,208A8F3C,extended,00000001
+
+[The Blue Dragon]
+patch=1,EE,208A8FBC,extended,00000001
+
+[Ector]
+patch=1,EE,208A999C,extended,00000001
+
+[Galahad]
+patch=1,EE,208A9A1C,extended,00000001
+
+[Pro]
+patch=1,EE,208A9A9C,extended,00000001
+
+[Air Assault]
+patch=1,EE,208A9B1C,extended,00000001
+
+[Breathing Arsenal]
+patch=1,EE,208A9B9C,extended,00000001
+
+[Construction Junction]
+patch=1,EE,208A9C1C,extended,00000001
+
+[Crossbows And Catapults]
+patch=1,EE,208A9C9C,extended,00000001
+
+[Fire, Fire!]
+patch=1,EE,208A9D1C,extended,00000001
+
+[The Full Gun]
+patch=1,EE,208A9D9C,extended,00000001
+
+[Line Of Sight]
+patch=1,EE,208A9E1C,extended,00000001
+
+[Towers And Castles]
+patch=1,EE,208A9E9C,extended,00000001
+
+[Windy Weapons]
+patch=1,EE,208A9F1C,extended,00000001
+
+[American News Reader]
+patch=1,EE,208A9F9C,extended,00000001
+
+[English Monarch]
+patch=1,EE,208AA01C,extended,00000001
+
+[Mr Tee!]
+patch=1,EE,208AA09C,extended,00000001
+
+[Mario Professor]
+patch=1,EE,208AA11C,extended,00000001
+
+[Great Statesman]
+patch=1,EE,208AA19C,extended,00000001
+
+[Animal Strike]
+patch=1,EE,208AA3FC,extended,00000001
+
+[Armageddon]
+patch=1,EE,208AA47C,extended,00000001
+
+[Monkey]
+patch=1,EE,208AA4FC,extended,00000001
+
+[Nuclear Strike]
+patch=1,EE,208AA57C,extended,00000001
+
+[Trojan Donkey]
+patch=1,EE,208AA5FC,extended,00000001

@@ -1,0 +1,44 @@
+gametitle=Tribes-Aerial Assault (SLUS-20149)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9022DA74,extended,0C06BCB6
+
+[Infinite Jetpack]
+patch=1,EE,20197EF8,extended,00000000
+patch=1,EE,20197F14,extended,00000000
+patch=1,EE,2015B2FC,extended,00000000
+patch=1,EE,2015B35C,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2034E2D8,extended,00000001
+
+[Display Debug Info]
+patch=1,EE,2035D338,extended,00000001
+
+[Hide HUD]
+patch=1,EE,2035D33C,extended,00000001
+
+[Idiot AI]
+patch=1,EE,20369800,extended,00000001
+
+[Legacy Analog Setup]
+patch=1,EE,2018A584,extended,C7A00024
+patch=1,EE,2018A5CC,extended,C7A3001C
+
+[Never Overheat]
+patch=1,EE,20197E74,extended,00000000
+
+[Unlock All Levels]
+patch=1,EE,2031A3AC,extended,00000010
+
+[Enable Maniac Mode]
+patch=1,EE,20337430,extended,00000001
+
+[Dont Take Damage From Falling Great Distances]
+patch=1,EE,10240C80,extended,0000010B
+
+[Always 3rd Person Mode]
+patch=1,EE,2034E348,extended,00000001

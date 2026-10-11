@@ -1,0 +1,306 @@
+gametitle=Urban Chaos-Riot Response (SLUS-21390)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903B6960,extended,00832021
+
+[Infinite Health (Only You)]
+patch=1,EE,202CDCC0,extended,8C810090
+patch=1,EE,202CDCC8,extended,AC81008C
+
+[Infinite Health (You & Your Team)]
+patch=1,EE,2054BFD0,extended,8C810090
+patch=1,EE,2054BFD8,extended,AC81008C
+
+[Infinite Ammo]
+patch=1,EE,20106E8C,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,20106E88,extended,240303E7
+
+[Extra Ammo Ammo]
+patch=1,EE,20106E88,extended,00621821
+
+[Never Reload]
+patch=1,EE,20106E78,extended,00000000
+
+[Never Reload With Max Clip]
+patch=1,EE,20106E70,extended,24020063
+
+[Have All Gang Leaders]
+patch=1,EE,2077CE24,extended,FFFFFFFF
+
+[Unlock All Levels]
+patch=1,EE,2077CE28,extended,0000000A
+
+[Unlock All Rewards]
+patch=1,EE,4077CE90,extended,000E0001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Max Emergencies]
+patch=1,EE,2077CEC8,extended,05F5E0FF
+
+[Have All Levels Completed]
+patch=1,EE,4077CECC,extended,00110002
+patch=1,EE,00000001,extended,00000000
+
+[Have All Medals]
+patch=1,EE,4077CED0,extended,00110002
+patch=1,EE,03030303,extended,00000000
+
+[Have Level Completed]
+patch=1,EE,2077CECC,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CED0,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CED1,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CED2,extended,00000003
+
+[Detective]
+patch=1,EE,0077CED3,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CED4,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CED8,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CED9,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CEDA,extended,00000003
+
+[Detective]
+patch=1,EE,0077CEDB,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CEDC,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CEE0,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CEE1,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CEE2,extended,00000003
+
+[Detective]
+patch=1,EE,0077CEE3,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CEE4,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CEE8,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CEE9,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CEEA,extended,00000003
+
+[Detective]
+patch=1,EE,0077CEEB,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CEEC,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CEF0,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CEF1,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CEF2,extended,00000003
+
+[Detective]
+patch=1,EE,0077CEF3,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CEF4,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CEF8,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CEF9,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CEFA,extended,00000003
+
+[Detective]
+patch=1,EE,0077CEFB,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CEFC,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF00,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF01,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF02,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF03,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF04,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF08,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF09,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF0A,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF0B,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF0C,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF10,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF11,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF12,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF13,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF14,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF18,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF19,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF1A,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF1B,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF1C,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF20,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF21,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF22,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF23,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF24,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF28,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF29,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF2A,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF2B,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF2C,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF30,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF31,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF32,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF33,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF34,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF38,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF39,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF3A,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF3B,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF3C,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF40,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF41,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF42,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF43,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF44,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF48,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF49,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF4A,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF4B,extended,00000003
+
+[Have Level Completed]
+patch=1,EE,2077CF4C,extended,00000001
+
+[Non-Lethal Enforcer]
+patch=1,EE,0077CF50,extended,00000003
+
+[Sharp Shooter]
+patch=1,EE,0077CF51,extended,00000003
+
+[Survivor]
+patch=1,EE,0077CF52,extended,00000003
+
+[Detective]
+patch=1,EE,0077CF53,extended,00000003

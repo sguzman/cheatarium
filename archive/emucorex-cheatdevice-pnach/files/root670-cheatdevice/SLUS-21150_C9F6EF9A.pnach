@@ -1,0 +1,293 @@
+gametitle=Beat Down-Fists Of Vengeance (SLUS-21150)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011A5A0,extended,0C04AE8E
+
+[Always Low Police Detection Indicator]
+patch=1,EE,0060CB68,extended,00000000
+
+[Always Low Mob Detection Indicator]
+patch=1,EE,0060CE64,extended,00000000
+
+[Max All Items]
+patch=1,EE,4060C990,extended,00390001
+patch=1,EE,00630063,extended,00000000
+
+[Infinite Health]
+patch=1,EE,106D3F8C,extended,0000270F
+
+[Max Health]
+patch=1,EE,106D3F8E,extended,0000270F
+
+[Max Infinite Health]
+patch=1,EE,206D3F8C,extended,270F270F
+
+[Infinite Money]
+patch=1,EE,1060D3A0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2060D3A0,extended,05F5E0FF
+
+[Level 99]
+patch=1,EE,1060D3AC,extended,00000063
+
+[Quick Level Up]
+patch=1,EE,2060D3A8,extended,00000064
+
+[Drink R]
+patch=1,EE,1060C992,extended,00000063
+
+[Heal]
+patch=1,EE,1060C994,extended,00000063
+
+[Cash]
+patch=1,EE,1060C998,extended,00000063
+
+[B Knuckles]
+patch=1,EE,1060C99A,extended,00000063
+
+[F Knife]
+patch=1,EE,1060C9A2,extended,00000063
+
+[S Knife]
+patch=1,EE,1060C9A4,extended,00000063
+
+[B Knife]
+patch=1,EE,1060C9A6,extended,00000063
+
+[Glass Shard]
+patch=1,EE,1060C9A8,extended,00000063
+
+[Blackjack]
+patch=1,EE,1060C9AA,extended,00000063
+
+[Nail Bat]
+patch=1,EE,1060C9AC,extended,00000063
+
+[Wrench]
+patch=1,EE,1060C9AE,extended,00000063
+
+[Pan]
+patch=1,EE,1060C9B0,extended,00000063
+
+[Bat]
+patch=1,EE,1060C9B2,extended,00000063
+
+[Pool Cue]
+patch=1,EE,1060C9B4,extended,00000063
+
+[Golf Club]
+patch=1,EE,1060C9B6,extended,00000063
+
+[H Stick]
+patch=1,EE,1060C9B8,extended,00000063
+
+[Broom]
+patch=1,EE,1060C9BA,extended,00000063
+
+[Pipe]
+patch=1,EE,1060C9BC,extended,00000063
+
+[Board]
+patch=1,EE,1060C9BE,extended,00000063
+
+[Crowbar]
+patch=1,EE,1060C9C2,extended,00000063
+
+[Steel Beam]
+patch=1,EE,1060C9C4,extended,00000063
+
+[Log]
+patch=1,EE,1060C9C6,extended,00000063
+
+[Crate]
+patch=1,EE,1060C9C8,extended,00000063
+
+[Concrete]
+patch=1,EE,1060C9CA,extended,00000063
+
+[Drum]
+patch=1,EE,1060C9CC,extended,00000063
+
+[Stun Rod]
+patch=1,EE,1060C9CE,extended,00000063
+
+[Claw]
+patch=1,EE,1060C9D0,extended,00000063
+
+[Katana]
+patch=1,EE,1060C9D2,extended,00000063
+
+[Nightstick]
+patch=1,EE,1060C9D4,extended,00000063
+
+[9MM]
+patch=1,EE,1060C9D6,extended,00000063
+
+[Revolver]
+patch=1,EE,1060C9D8,extended,00000063
+
+[Magnum]
+patch=1,EE,1060C9DC,extended,00000063
+
+[Spy Gun]
+patch=1,EE,1060C9DE,extended,00000063
+
+[Bottle]
+patch=1,EE,1060C9E0,extended,00000063
+
+[Blue Gun]
+patch=1,EE,1060C9E2,extended,00000063
+
+[Scalpel]
+patch=1,EE,1060C9EA,extended,00000063
+
+[Metal Fist]
+patch=1,EE,1060C9EE,extended,00000063
+
+[Shotgun]
+patch=1,EE,1060C9F0,extended,00000063
+
+[Protein (S)]
+patch=1,EE,1060CA46,extended,00000063
+
+[Protein (L)]
+patch=1,EE,1060CA48,extended,00000063
+
+[Med (S)]
+patch=1,EE,1060CA4A,extended,00000063
+
+[Med (M)]
+patch=1,EE,1060CA4C,extended,00000063
+
+[Med (L)]
+patch=1,EE,1060CA4E,extended,00000063
+
+[Drink B]
+patch=1,EE,1060CA50,extended,00000063
+
+[Drink G]
+patch=1,EE,1060CA52,extended,00000063
+
+[Turkey]
+patch=1,EE,1060CA54,extended,00000063
+
+[R Drug]
+patch=1,EE,1060CA58,extended,00000063
+
+[Discount Med]
+patch=1,EE,1060CA5C,extended,00000063
+
+[Pheremones]
+patch=1,EE,1060CA5E,extended,00000063
+
+[Heatdown]
+patch=1,EE,1060CA68,extended,00000063
+
+[Boilermaker]
+patch=1,EE,1060CA6A,extended,00000063
+
+[Backfire]
+patch=1,EE,1060CA6C,extended,00000063
+
+[Draft Beer]
+patch=1,EE,1060CA6E,extended,00000063
+
+[Odd Drink]
+patch=1,EE,1060CA70,extended,00000063
+
+[Lock Picks]
+patch=1,EE,1060C9F2,extended,00000063
+
+[Memento Ring]
+patch=1,EE,1060C9F4,extended,00000063
+
+[Photo Of Man]
+patch=1,EE,1060C9F6,extended,00000063
+
+[Drugs]
+patch=1,EE,1060CA06,extended,00000063
+
+[Butter]
+patch=1,EE,1060CA08,extended,00000063
+
+[M.Gun Parts]
+patch=1,EE,1060CA0A,extended,00000063
+
+[Crown Tablet]
+patch=1,EE,1060CA0C,extended,00000063
+
+[Radio]
+patch=1,EE,1060CA0E,extended,00000063
+
+[Fan]
+patch=1,EE,1060CA10,extended,00000063
+
+[Udon Flour]
+patch=1,EE,1060CA12,extended,00000063
+
+[Disk]
+patch=1,EE,1060CA14,extended,00000063
+
+[Junk No. 1]
+patch=1,EE,1060CA16,extended,00000063
+
+[Junk No. 2]
+patch=1,EE,1060CA18,extended,00000063
+
+[Junk No. 3]
+patch=1,EE,1060CA1A,extended,00000063
+
+[Junk No. 4]
+patch=1,EE,1060CA1C,extended,00000063
+
+[Junk No. 5]
+patch=1,EE,1060CA1E,extended,00000063
+
+[Junk No. 6]
+patch=1,EE,1060CA20,extended,00000063
+
+[Junk No. 7]
+patch=1,EE,1060CA22,extended,00000063
+
+[Gun Object]
+patch=1,EE,1060CA34,extended,00000063
+
+[Envelope]
+patch=1,EE,1060CA36,extended,00000063
+
+[Pig Ring]
+patch=1,EE,1060CA38,extended,00000063
+
+[Pig Ring 2]
+patch=1,EE,1060CA3A,extended,00000063
+
+[Credit Card]
+patch=1,EE,1060CA3C,extended,00000063
+
+[Nice Perfume]
+patch=1,EE,1060CA40,extended,00000063
+
+[Warehouse Key]
+patch=1,EE,1060CA42,extended,00000063
+
+[Drugs 2]
+patch=1,EE,1060CA44,extended,00000063
+
+[Small Bomb]
+patch=1,EE,1060CA60,extended,00000063
+
+[TNT]
+patch=1,EE,1060CA62,extended,00000063
+
+[C Room Key]
+patch=1,EE,1060CA64,extended,00000063
+
+[Service Key]
+patch=1,EE,1060CA66,extended,00000063
+
+[B.List]
+patch=1,EE,1060CA72,extended,00000063

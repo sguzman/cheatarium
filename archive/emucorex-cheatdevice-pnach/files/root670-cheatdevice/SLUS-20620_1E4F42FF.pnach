@@ -1,0 +1,75 @@
+gametitle=Smash Cars (SLUS-20620)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901169EC,extended,0C0B7198
+
+[Always Low Time]
+patch=1,EE,20498988,extended,00000000
+
+[Hits Worth 10 Points]
+patch=1,EE,102CC7D0,extended,00004120
+
+[Hits Worth 20 Points]
+patch=1,EE,102CC7D0,extended,000041A0
+
+[Hits Worth 50 Points]
+patch=1,EE,102CC7D0,extended,00004248
+
+[Hits Worth 100 Points]
+patch=1,EE,102CC7D0,extended,000042C8
+
+[1-Hit For 999 Points]
+patch=1,EE,202CC7D8,extended,3C034479
+patch=1,EE,202CC7DC,extended,3463C000
+patch=1,EE,202CC7E0,extended,44830000
+
+[Infinite Boost]
+patch=1,EE,20306CBC,extended,00000000
+
+[Buying Tracks Doesnt Decrease Cash]
+patch=1,EE,202FB3A4,extended,00000000
+patch=1,EE,202FB3D4,extended,00000000
+
+[Buying Tracks Increases Cash]
+patch=1,EE,202FB3D0,extended,00C52821
+
+[Buying Booster Upgrades Doesnt Decrease Cash]
+patch=1,EE,202CEC9C,extended,00000000
+
+[Buying Booster Upgrades Increases Cash]
+patch=1,EE,202CEC98,extended,00431021
+
+[Buying Tire Upgrades Doesnt Decrease Cash]
+patch=1,EE,202CEE4C,extended,00000000
+
+[Buying Tire Upgrades Doesnt Decrease Cash]
+patch=1,EE,202CEE48,extended,00431021
+
+[Buying Engine Upgrades Doesnt Decrease Cash]
+patch=1,EE,202CEFFC,extended,00000000
+
+[Buying Engine Upgrades Increases Cash]
+patch=1,EE,202CEFF8,extended,00431021
+
+[Can Buy Upgrades With Less Cash Than Cost]
+patch=1,EE,202CF6AC,extended,00000000
+patch=1,EE,102CEC52,extended,00001000
+
+[Max Cash]
+patch=1,EE,20893A28,extended,0001869F
+
+[Unlock All Tracks]
+patch=1,EE,40893910,extended,00050001
+patch=1,EE,02020202,extended,00000000
+
+[Have All Championship Tracks Passed]
+patch=1,EE,408938F0,extended,00050001
+patch=1,EE,02020202,extended,00000000
+
+[Unlock All Cars]
+patch=1,EE,408938F0,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0089393C,extended,00000001

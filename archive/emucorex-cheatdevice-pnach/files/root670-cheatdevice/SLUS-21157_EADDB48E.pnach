@@ -1,0 +1,43 @@
+gametitle=Flipnic-Ultimate Pinball (SLUS-21157)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901F6034,extended,0C07FE0E
+
+[Quick Score Gain]
+patch=1,EE,10449268,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,20449268,extended,4876E7FF
+patch=1,EE,2044926C,extended,00000017
+
+[Max EXP]
+patch=1,EE,20449288,extended,000003E7
+
+[Max Bumpers]
+patch=1,EE,2044928C,extended,000003E7
+
+[Max Lanes]
+patch=1,EE,20449290,extended,000003E7
+
+[Max Coins (Overall)]
+patch=1,EE,20449298,extended,000003E7
+
+[Max Coins (Current Ball In Play)]
+patch=1,EE,2044929C,extended,000003E7
+
+[Max EXP Bonus]
+patch=1,EE,2044932C,extended,000003E7
+
+[Infinite Balls]
+patch=1,EE,20449334,extended,00000009
+
+[Max Stage Select Points]
+patch=1,EE,20446A78,extended,4876E7FF
+patch=1,EE,20446A7C,extended,00000017
+
+[Unlock All Stages]
+patch=1,EE,4044919C,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000

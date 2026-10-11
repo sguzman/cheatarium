@@ -1,0 +1,74 @@
+gametitle=One Piece-Pirates' Carnival (SLUS-21364)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90119F20,extended,00832021
+
+[Unlock All Member's Games]
+patch=1,EE,20367348,extended,FFFFFFFF
+
+[Unlock All Captain Games]
+patch=1,EE,2036734C,extended,FFFFFFFF
+
+[Unlock All Normal Games]
+patch=1,EE,20367350,extended,FFFFFFFF
+
+[Unlock All Middle Games]
+patch=1,EE,20367354,extended,FFFFFFFF
+
+[Unlock All Card Collection]
+patch=1,EE,40367368,extended,00200001
+patch=1,EE,01010101,extended,00000000
+
+[Activation Code (Must Be On)]
+patch=1,EE,E0101821,extended,00386558
+patch=1,EE,200C0000,extended,1620003F
+patch=1,EE,200C0004,extended,24010001
+patch=1,EE,200C00F8,extended,100000C1
+patch=1,EE,200C00FC,extended,00000000
+patch=1,EE,200C0100,extended,1621003F
+patch=1,EE,200C0104,extended,24010002
+patch=1,EE,200C01F8,extended,10000081
+patch=1,EE,200C01FC,extended,00000000
+patch=1,EE,200C0200,extended,1621003F
+patch=1,EE,200C0204,extended,24010003
+patch=1,EE,200C02F8,extended,10000041
+patch=1,EE,200C02FC,extended,00000000
+patch=1,EE,200C0300,extended,1621003F
+patch=1,EE,200C0400,extended,080E1958
+patch=1,EE,200C0404,extended,8C630014
+patch=1,EE,2038655C,extended,08030000
+
+[Max Score P1]
+patch=1,EE,200C0008,extended,240103E7
+patch=1,EE,200C0010,extended,A0610014
+
+[No Score P1]
+patch=1,EE,200C0008,extended,24010000
+patch=1,EE,200C0010,extended,A0610014
+
+[Max Score P2]
+patch=1,EE,200C0108,extended,240103E7
+patch=1,EE,200C0110,extended,A0610014
+
+[No Score P2]
+patch=1,EE,200C0108,extended,24010000
+patch=1,EE,200C0110,extended,A0610014
+
+[Max Score P3]
+patch=1,EE,200C0208,extended,240103E7
+patch=1,EE,200C0210,extended,A0610014
+
+[No Score P3]
+patch=1,EE,200C0208,extended,24010000
+patch=1,EE,200C0210,extended,A0610014
+
+[Max Score P4]
+patch=1,EE,200C0308,extended,240103E7
+patch=1,EE,200C0310,extended,A0610014
+
+[No Score P4]
+patch=1,EE,200C0308,extended,24010000
+patch=1,EE,200C0310,extended,A0610014

@@ -1,0 +1,3619 @@
+gametitle=Yu-Gi-Oh!-Capsule Monster Coliseum (SLUS-20940)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9028E7C4,extended,0C0A6E82
+
+[Infinite Monster Points]
+patch=1,EE,204906D0,extended,0001869F
+
+[View Monster Collection To Have All Monster Cards]
+patch=1,EE,20387500,extended,94A40F08
+patch=1,EE,20387504,extended,34840101
+patch=1,EE,20387508,extended,A4A40F08
+patch=1,EE,2038750C,extended,00000000
+
+[Deploying Monsters Doesnt Decrease MP]
+patch=1,EE,2034A7C0,extended,00000000
+patch=1,EE,2034A900,extended,2403270F
+patch=1,EE,2034A918,extended,A6230000
+patch=1,EE,2034A91C,extended,A6230004
+patch=1,EE,202D8BD0,extended,24020010
+patch=1,EE,102D8BD6,extended,00001000
+patch=1,EE,202D8BD8,extended,A0C20000
+
+[Infinite AP]
+patch=1,EE,104906A8,extended,000003E7
+
+[Max AP]
+patch=1,EE,104906AA,extended,000003E7
+
+[Max Infinite AP]
+patch=1,EE,204906A8,extended,03E703E7
+
+[Max Level]
+patch=1,EE,00490185,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490185,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490188,extended,0000270F
+
+[No PP]
+patch=1,EE,10490188,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490190,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490190,extended,00000700
+
+[Max Level]
+patch=1,EE,004901AD,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004901AD,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104901B0,extended,0000270F
+
+[No PP]
+patch=1,EE,104901B0,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104901B8,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104901B8,extended,00000700
+
+[Max Level]
+patch=1,EE,004901D5,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004901D5,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104901D8,extended,0000270F
+
+[No PP]
+patch=1,EE,104901D8,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104901E0,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104901E0,extended,00000700
+
+[Max Level]
+patch=1,EE,004901FD,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004901FD,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490200,extended,0000270F
+
+[No PP]
+patch=1,EE,10490200,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490208,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490208,extended,00000700
+
+[Max Level]
+patch=1,EE,00490225,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490225,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490228,extended,0000270F
+
+[No PP]
+patch=1,EE,10490228,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490230,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490230,extended,00000700
+
+[Max Level]
+patch=1,EE,0049024D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049024D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490250,extended,0000270F
+
+[No PP]
+patch=1,EE,10490250,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490258,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490258,extended,00000700
+
+[Max Level]
+patch=1,EE,00490275,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490275,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490278,extended,0000270F
+
+[No PP]
+patch=1,EE,10490278,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490280,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490280,extended,00000700
+
+[Max Level]
+patch=1,EE,0049029D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049029D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104902A0,extended,0000270F
+
+[No PP]
+patch=1,EE,104902A0,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104902A8,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104902A8,extended,00000700
+
+[Max Level]
+patch=1,EE,004902C5,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004902C5,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104902C8,extended,0000270F
+
+[No PP]
+patch=1,EE,104902C8,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104902D0,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104902D0,extended,00000700
+
+[Max Level]
+patch=1,EE,004902ED,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004902ED,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104902F0,extended,0000270F
+
+[No PP]
+patch=1,EE,104902F0,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104902F8,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104902F8,extended,00000700
+
+[Max Level]
+patch=1,EE,00490315,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490315,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490318,extended,0000270F
+
+[No PP]
+patch=1,EE,10490318,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490320,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490320,extended,00000700
+
+[Max Level]
+patch=1,EE,0049033D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049033D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490340,extended,0000270F
+
+[No PP]
+patch=1,EE,10490340,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490348,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490348,extended,00000700
+
+[Max Level]
+patch=1,EE,00490365,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490365,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490368,extended,0000270F
+
+[No PP]
+patch=1,EE,10490368,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490370,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490370,extended,00000700
+
+[Max Level]
+patch=1,EE,0049038D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049038D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490390,extended,0000270F
+
+[No PP]
+patch=1,EE,10490390,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490398,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490398,extended,00000700
+
+[Max Level]
+patch=1,EE,004903B5,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004903B5,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104903B8,extended,0000270F
+
+[No PP]
+patch=1,EE,104903B8,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104903C0,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104903C0,extended,00000700
+
+[Max Level]
+patch=1,EE,004903DD,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004903DD,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104903E0,extended,0000270F
+
+[No PP]
+patch=1,EE,104903E0,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104903E8,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104903E8,extended,00000700
+
+[Infinite AP]
+patch=1,EE,104906FC,extended,000003E7
+
+[Max AP]
+patch=1,EE,104906FE,extended,000003E7
+
+[Max Infinite AP]
+patch=1,EE,204906FC,extended,03E703E7
+
+[Max Level]
+patch=1,EE,00490405,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490405,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490408,extended,0000270F
+
+[No PP]
+patch=1,EE,10490408,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490410,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490410,extended,00000700
+
+[Max Level]
+patch=1,EE,0049042D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049042D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490430,extended,0000270F
+
+[No PP]
+patch=1,EE,10490430,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490438,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490438,extended,00000700
+
+[Max Level]
+patch=1,EE,00490455,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490455,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490458,extended,0000270F
+
+[No PP]
+patch=1,EE,10490458,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490460,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490460,extended,00000700
+
+[Max Level]
+patch=1,EE,0049047D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049047D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490480,extended,0000270F
+
+[No PP]
+patch=1,EE,10490480,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490488,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490488,extended,00000700
+
+[Max Level]
+patch=1,EE,004904A5,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004904A5,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104904A8,extended,0000270F
+
+[No PP]
+patch=1,EE,104904A8,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104904B0,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104904B0,extended,00000700
+
+[Max Level]
+patch=1,EE,004904CD,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004904CD,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104904D0,extended,0000270F
+
+[No PP]
+patch=1,EE,104904D0,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104904D8,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104904D8,extended,00000700
+
+[Max Level]
+patch=1,EE,004904F5,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004904F5,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104904F8,extended,0000270F
+
+[No PP]
+patch=1,EE,104904F8,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490500,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490500,extended,00000700
+
+[Max Level]
+patch=1,EE,0049051D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049051D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490520,extended,0000270F
+
+[No PP]
+patch=1,EE,10490520,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490528,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490528,extended,00000700
+
+[Max Level]
+patch=1,EE,00490545,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490545,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490548,extended,0000270F
+
+[No PP]
+patch=1,EE,10490548,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490550,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490550,extended,00000700
+
+[Max Level]
+patch=1,EE,0049056D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049056D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490570,extended,0000270F
+
+[No PP]
+patch=1,EE,10490570,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490578,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490578,extended,00000700
+
+[Max Level]
+patch=1,EE,00490595,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490595,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490598,extended,0000270F
+
+[No PP]
+patch=1,EE,10490598,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104905A0,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104905A0,extended,00000700
+
+[Max Level]
+patch=1,EE,004905BD,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004905BD,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104905C0,extended,0000270F
+
+[No PP]
+patch=1,EE,104905C0,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104905C8,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104905C8,extended,00000700
+
+[Max Level]
+patch=1,EE,004905E5,extended,00000009
+
+[Lowest Level]
+patch=1,EE,004905E5,extended,00000001
+
+[Infinite PP]
+patch=1,EE,104905E8,extended,0000270F
+
+[No PP]
+patch=1,EE,104905E8,extended,00000000
+
+[Can Always Move]
+patch=1,EE,104905F0,extended,00000000
+
+[Can Never Move]
+patch=1,EE,104905F0,extended,00000700
+
+[Max Level]
+patch=1,EE,0049060D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049060D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490610,extended,0000270F
+
+[No PP]
+patch=1,EE,10490610,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490618,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490618,extended,00000700
+
+[Max Level]
+patch=1,EE,00490635,extended,00000009
+
+[Lowest Level]
+patch=1,EE,00490635,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490638,extended,0000270F
+
+[No PP]
+patch=1,EE,10490638,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490640,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490640,extended,00000700
+
+[Max Level]
+patch=1,EE,0049065D,extended,00000009
+
+[Lowest Level]
+patch=1,EE,0049065D,extended,00000001
+
+[Infinite PP]
+patch=1,EE,10490660,extended,0000270F
+
+[No PP]
+patch=1,EE,10490660,extended,00000000
+
+[Can Always Move]
+patch=1,EE,10490668,extended,00000000
+
+[Can Never Move]
+patch=1,EE,10490668,extended,00000700
+
+[Happy Lover-Card 1]
+patch=1,EE,70490CE8,extended,00100101
+
+[Happy Lover-Card 2]
+patch=1,EE,70490CEA,extended,00100101
+
+[Happy Lover-Card 3]
+patch=1,EE,70490CEC,extended,00100101
+
+[Happy Lover-Card 4]
+patch=1,EE,70490CEE,extended,00100101
+
+[Happy Lover-Card 5]
+patch=1,EE,70490CF0,extended,00100101
+
+[Skelengel-Card 1]
+patch=1,EE,70490CF2,extended,00100101
+
+[Skelengel-Card 2]
+patch=1,EE,70490CF4,extended,00100101
+
+[Skelengel-Card 3]
+patch=1,EE,70490CF6,extended,00100101
+
+[Skelengel-Card 4]
+patch=1,EE,70490CF8,extended,00100101
+
+[Skelengel-Card 5]
+patch=1,EE,70490CFA,extended,00100101
+
+[Magician Of Faith-Card 1]
+patch=1,EE,70490D06,extended,00100101
+
+[Magician Of Faith-Card 2]
+patch=1,EE,70490D08,extended,00100101
+
+[Magician Of Faith-Card 3]
+patch=1,EE,70490D0A,extended,00100101
+
+[Magician Of Faith-Card 4]
+patch=1,EE,70490D0C,extended,00100101
+
+[Magician Of Faith-Card 5]
+patch=1,EE,70490D0E,extended,00100101
+
+[Time Wizard-Card 1]
+patch=1,EE,70490D10,extended,00100101
+
+[Time Wizard-Card 2]
+patch=1,EE,70490D12,extended,00100101
+
+[Time Wizard-Card 3]
+patch=1,EE,70490D14,extended,00100101
+
+[Time Wizard-Card 4]
+patch=1,EE,70490D16,extended,00100101
+
+[Time Wizard-Card 5]
+patch=1,EE,70490D18,extended,00100101
+
+[Prisman-Card 1]
+patch=1,EE,70490D1A,extended,00100101
+
+[Prisman-Card 2]
+patch=1,EE,70490D1C,extended,00100101
+
+[Prisman-Card 3]
+patch=1,EE,70490D1E,extended,00100101
+
+[Prisman-Card 4]
+patch=1,EE,70490D20,extended,00100101
+
+[Prisman-Card 5]
+patch=1,EE,70490D22,extended,00100101
+
+[Genin-Card 1]
+patch=1,EE,70490D2E,extended,00100101
+
+[Genin-Card 2]
+patch=1,EE,70490D30,extended,00100101
+
+[Genin-Card 3]
+patch=1,EE,70490D32,extended,00100101
+
+[Genin-Card 4]
+patch=1,EE,70490D34,extended,00100101
+
+[Genin-Card 5]
+patch=1,EE,70490D36,extended,00100101
+
+[LaMoon-Card 1]
+patch=1,EE,70490D42,extended,00100101
+
+[LaMoon-Card 2]
+patch=1,EE,70490D44,extended,00100101
+
+[LaMoon-Card 3]
+patch=1,EE,70490D46,extended,00100101
+
+[LaMoon-Card 4]
+patch=1,EE,70490D48,extended,00100101
+
+[LaMoon-Card 5]
+patch=1,EE,70490D4A,extended,00100101
+
+[Dark Witch-Card 1]
+patch=1,EE,70490D4C,extended,00100101
+
+[Dark Witch-Card 2]
+patch=1,EE,70490D4E,extended,00100101
+
+[Dark Witch-Card 3]
+patch=1,EE,70490D50,extended,00100101
+
+[Dark Witch-Card 4]
+patch=1,EE,70490D52,extended,00100101
+
+[Dark Witch-Card 5]
+patch=1,EE,70490D54,extended,00100101
+
+[Lucky Trinket-Card 1]
+patch=1,EE,70490D56,extended,00100101
+
+[Lucky Trinket-Card 2]
+patch=1,EE,70490D58,extended,00100101
+
+[Lucky Trinket-Card 3]
+patch=1,EE,70490D5A,extended,00100101
+
+[Lucky Trinket-Card 4]
+patch=1,EE,70490D5C,extended,00100101
+
+[Lucky Trinket-Card 5]
+patch=1,EE,70490D5E,extended,00100101
+
+[Seiyaryu-Card 1]
+patch=1,EE,70490D60,extended,00100101
+
+[Seiyaryu-Card 2]
+patch=1,EE,70490D62,extended,00100101
+
+[Seiyaryu-Card 3]
+patch=1,EE,70490D64,extended,00100101
+
+[Seiyaryu-Card 4]
+patch=1,EE,70490D66,extended,00100101
+
+[Seiyaryu-Card 5]
+patch=1,EE,70490D68,extended,00100101
+
+[Petit Angle-Card 1]
+patch=1,EE,70490D74,extended,00100101
+
+[Petit Angle-Card 2]
+patch=1,EE,70490D76,extended,00100101
+
+[Petit Angle-Card 3]
+patch=1,EE,70490D78,extended,00100101
+
+[Petit Angle-Card 4]
+patch=1,EE,70490D7A,extended,00100101
+
+[Petit Angle-Card 5]
+patch=1,EE,70490D7C,extended,00100101
+
+[Fairy's Gift-Card 1]
+patch=1,EE,70490D7E,extended,00100101
+
+[Fairy's Gift-Card 2]
+patch=1,EE,70490D80,extended,00100101
+
+[Fairy's Gift-Card 3]
+patch=1,EE,70490D82,extended,00100101
+
+[Fairy's Gift-Card 4]
+patch=1,EE,70490D84,extended,00100101
+
+[Fairy's Gift-Card 5]
+patch=1,EE,70490D86,extended,00100101
+
+[Rogue Doll-Card 1]
+patch=1,EE,70490D88,extended,00100101
+
+[Rogue Doll-Card 2]
+patch=1,EE,70490D8A,extended,00100101
+
+[Rogue Doll-Card 3]
+patch=1,EE,70490D8C,extended,00100101
+
+[Rogue Doll-Card 4]
+patch=1,EE,70490D8E,extended,00100101
+
+[Rogue Doll-Card 5]
+patch=1,EE,70490D90,extended,00100101
+
+[Fiend Reflection #2-Card 1]
+patch=1,EE,70490D92,extended,00100101
+
+[Fiend Reflection #2-Card 2]
+patch=1,EE,70490D94,extended,00100101
+
+[Fiend Reflection #2-Card 3]
+patch=1,EE,70490D96,extended,00100101
+
+[Fiend Reflection #2-Card 4]
+patch=1,EE,70490D98,extended,00100101
+
+[Fiend Reflection #2-Card 5]
+patch=1,EE,70490D9A,extended,00100101
+
+[Ocubeam-Card 1]
+patch=1,EE,70490DA6,extended,00100101
+
+[Ocubeam-Card 2]
+patch=1,EE,70490DA8,extended,00100101
+
+[Ocubeam-Card 3]
+patch=1,EE,70490DAA,extended,00100101
+
+[Ocubeam-Card 4]
+patch=1,EE,70490DAC,extended,00100101
+
+[Ocubeam-Card 5]
+patch=1,EE,70490DAE,extended,00100101
+
+[Giltia The D. Knight-Card 1]
+patch=1,EE,70490DB0,extended,00100101
+
+[Giltia The D. Knight-Card 2]
+patch=1,EE,70490DB2,extended,00100101
+
+[Giltia The D. Knight-Card 3]
+patch=1,EE,70490DB4,extended,00100101
+
+[Giltia The D. Knight-Card 4]
+patch=1,EE,70490DB6,extended,00100101
+
+[Giltia The D. Knight-Card 5]
+patch=1,EE,70490DB8,extended,00100101
+
+[Mystical Elf-Card 1]
+patch=1,EE,70490DBA,extended,00100101
+
+[Mystical Elf-Card 2]
+patch=1,EE,70490DBC,extended,00100101
+
+[Mystical Elf-Card 3]
+patch=1,EE,70490DBE,extended,00100101
+
+[Mystical Elf-Card 4]
+patch=1,EE,70490DC0,extended,00100101
+
+[Mystical Elf-Card 5]
+patch=1,EE,70490DC2,extended,00100101
+
+[Luminous Soldier-Card 1]
+patch=1,EE,70490DE2,extended,00100101
+
+[Luminous Soldier-Card 2]
+patch=1,EE,70490DE4,extended,00100101
+
+[Luminous Soldier-Card 3]
+patch=1,EE,70490DE6,extended,00100101
+
+[Luminous Soldier-Card 4]
+patch=1,EE,70490DE8,extended,00100101
+
+[Luminous Soldier-Card 5]
+patch=1,EE,70490DEA,extended,00100101
+
+[Skull Guardian-Card 1]
+patch=1,EE,70490DEC,extended,00100101
+
+[Skull Guardian-Card 2]
+patch=1,EE,70490DEE,extended,00100101
+
+[Skull Guardian-Card 3]
+patch=1,EE,70490DF0,extended,00100101
+
+[Skull Guardian-Card 4]
+patch=1,EE,70490DF2,extended,00100101
+
+[Skull Guardian-Card 5]
+patch=1,EE,70490DF4,extended,00100101
+
+[Gyakutenno Megami-Card 1]
+patch=1,EE,70490E00,extended,00100101
+
+[Gyakutenno Megami-Card 2]
+patch=1,EE,70490E02,extended,00100101
+
+[Gyakutenno Megami-Card 3]
+patch=1,EE,70490E04,extended,00100101
+
+[Gyakutenno Megami-Card 4]
+patch=1,EE,70490E06,extended,00100101
+
+[Gyakutenno Megami-Card 5]
+patch=1,EE,70490E08,extended,00100101
+
+[Blue-Eyes White Dragon-Card 1]
+patch=1,EE,70490E14,extended,00100101
+
+[Blue-Eyes White Dragon-Card 2]
+patch=1,EE,70490E16,extended,00100101
+
+[Blue-Eyes White Dragon-Card 3]
+patch=1,EE,70490E18,extended,00100101
+
+[Blue-Eyes White Dragon-Card 4]
+patch=1,EE,70490E1A,extended,00100101
+
+[Blue-Eyes White Dragon-Card 5]
+patch=1,EE,70490E1C,extended,00100101
+
+[Shining Friendship-Card 1]
+patch=1,EE,70490E1E,extended,00100101
+
+[Shining Friendship-Card 2]
+patch=1,EE,70490E20,extended,00100101
+
+[Shining Friendship-Card 3]
+patch=1,EE,70490E22,extended,00100101
+
+[Shining Friendship-Card 4]
+patch=1,EE,70490E24,extended,00100101
+
+[Shining Friendship-Card 5]
+patch=1,EE,70490E26,extended,00100101
+
+[Carat Idol-Card 1]
+patch=1,EE,70490E28,extended,00100101
+
+[Carat Idol-Card 2]
+patch=1,EE,70490E2A,extended,00100101
+
+[Carat Idol-Card 3]
+patch=1,EE,70490E2C,extended,00100101
+
+[Carat Idol-Card 4]
+patch=1,EE,70490E2E,extended,00100101
+
+[Carat Idol-Card 5]
+patch=1,EE,70490E30,extended,00100101
+
+[Blue-Eyes Ultimate Dragon-Card 1]
+patch=1,EE,70490E32,extended,00100101
+
+[Blue-Eyes Ultimate Dragon-Card 2]
+patch=1,EE,70490E34,extended,00100101
+
+[Blue-Eyes Ultimate Dragon-Card 3]
+patch=1,EE,70490E36,extended,00100101
+
+[Blue-Eyes Ultimate Dragon-Card 4]
+patch=1,EE,70490E38,extended,00100101
+
+[Blue-Eyes Ultimate Dragon-Card 5]
+patch=1,EE,70490E3A,extended,00100101
+
+[Kuriboh-Card 1]
+patch=1,EE,70490E3C,extended,00100101
+
+[Kuriboh-Card 2]
+patch=1,EE,70490E3E,extended,00100101
+
+[Kuriboh-Card 3]
+patch=1,EE,70490E40,extended,00100101
+
+[Kuriboh-Card 4]
+patch=1,EE,70490E42,extended,00100101
+
+[Kuriboh-Card 5]
+patch=1,EE,70490E44,extended,00100101
+
+[Feral Imp-Card 1]
+patch=1,EE,70490E46,extended,00100101
+
+[Feral Imp-Card 2]
+patch=1,EE,70490E48,extended,00100101
+
+[Feral Imp-Card 3]
+patch=1,EE,70490E4A,extended,00100101
+
+[Feral Imp-Card 4]
+patch=1,EE,70490E4C,extended,00100101
+
+[Feral Imp-Card 5]
+patch=1,EE,70490E4E,extended,00100101
+
+[Needle Ball-Card 1]
+patch=1,EE,70490E50,extended,00100101
+
+[Needle Ball-Card 2]
+patch=1,EE,70490E52,extended,00100101
+
+[Needle Ball-Card 3]
+patch=1,EE,70490E54,extended,00100101
+
+[Needle Ball-Card 4]
+patch=1,EE,70490E56,extended,00100101
+
+[Needle Ball-Card 5]
+patch=1,EE,70490E58,extended,00100101
+
+[Right Leg Of The Forbidden One-Card 1]
+patch=1,EE,70490E5A,extended,00100101
+
+[Right Leg Of The Forbidden One-Card 2]
+patch=1,EE,70490E5C,extended,00100101
+
+[Right Leg Of The Forbidden One-Card 3]
+patch=1,EE,70490E5E,extended,00100101
+
+[Right Leg Of The Forbidden One-Card 4]
+patch=1,EE,70490E60,extended,00100101
+
+[Right Leg Of The Forbidden One-Card 5]
+patch=1,EE,70490E62,extended,00100101
+
+[Left Leg Of The Forbidden One-Card 1]
+patch=1,EE,70490E64,extended,00100101
+
+[Left Leg Of The Forbidden One-Card 2]
+patch=1,EE,70490E66,extended,00100101
+
+[Left Leg Of The Forbidden One-Card 3]
+patch=1,EE,70490E68,extended,00100101
+
+[Left Leg Of The Forbidden One-Card 4]
+patch=1,EE,70490E6A,extended,00100101
+
+[Left Leg Of The Forbidden One-Card 5]
+patch=1,EE,70490E6C,extended,00100101
+
+[Right Arm Of The Forbidden One-Card 1]
+patch=1,EE,70490E6E,extended,00100101
+
+[Right Arm Of The Forbidden One-Card 2]
+patch=1,EE,70490E70,extended,00100101
+
+[Right Arm Of The Forbidden One-Card 3]
+patch=1,EE,70490E72,extended,00100101
+
+[Right Arm Of The Forbidden One-Card 4]
+patch=1,EE,70490E74,extended,00100101
+
+[Right Arm Of The Forbidden One-Card 5]
+patch=1,EE,70490E76,extended,00100101
+
+[Left Arm Of The Forbidden One-Card 1]
+patch=1,EE,70490E78,extended,00100101
+
+[Left Arm Of The Forbidden One-Card 2]
+patch=1,EE,70490E7A,extended,00100101
+
+[Left Arm Of The Forbidden One-Card 3]
+patch=1,EE,70490E7C,extended,00100101
+
+[Left Arm Of The Forbidden One-Card 4]
+patch=1,EE,70490E7E,extended,00100101
+
+[Left Arm Of The Forbidden One-Card 5]
+patch=1,EE,70490E80,extended,00100101
+
+[Exodia The Forbidden One-Card 1]
+patch=1,EE,70490E82,extended,00100101
+
+[Exodia The Forbidden One-Card 2]
+patch=1,EE,70490E84,extended,00100101
+
+[Exodia The Forbidden One-Card 3]
+patch=1,EE,70490E86,extended,00100101
+
+[Exodia The Forbidden One-Card 4]
+patch=1,EE,70490E88,extended,00100101
+
+[Exodia The Forbidden One-Card 5]
+patch=1,EE,70490E8A,extended,00100101
+
+[Ryu-Kishin-Card 1]
+patch=1,EE,70490E8C,extended,00100101
+
+[Ryu-Kishin-Card 2]
+patch=1,EE,70490E8E,extended,00100101
+
+[Ryu-Kishin-Card 3]
+patch=1,EE,70490E90,extended,00100101
+
+[Ryu-Kishin-Card 4]
+patch=1,EE,70490E92,extended,00100101
+
+[Ryu-Kishin-Card 5]
+patch=1,EE,70490E94,extended,00100101
+
+[Curse Of Dragon-Card 1]
+patch=1,EE,70490EBE,extended,00100101
+
+[Curse Of Dragon-Card 2]
+patch=1,EE,70490EC0,extended,00100101
+
+[Curse Of Dragon-Card 3]
+patch=1,EE,70490EC2,extended,00100101
+
+[Curse Of Dragon-Card 4]
+patch=1,EE,70490EC4,extended,00100101
+
+[Curse Of Dragon-Card 5]
+patch=1,EE,70490EC6,extended,00100101
+
+[Illusionist Faceless Magic-Card 1]
+patch=1,EE,70490ED2,extended,00100101
+
+[Illusionist Faceless Magic-Card 2]
+patch=1,EE,70490ED4,extended,00100101
+
+[Illusionist Faceless Magic-Card 3]
+patch=1,EE,70490ED6,extended,00100101
+
+[Illusionist Faceless Magic-Card 4]
+patch=1,EE,70490ED8,extended,00100101
+
+[Illusionist Faceless Magic-Card 5]
+patch=1,EE,70490EDA,extended,00100101
+
+[Terra The Terrible-Card 1]
+patch=1,EE,70490EDC,extended,00100101
+
+[Terra The Terrible-Card 2]
+patch=1,EE,70490EDE,extended,00100101
+
+[Terra The Terrible-Card 3]
+patch=1,EE,70490EE0,extended,00100101
+
+[Terra The Terrible-Card 4]
+patch=1,EE,70490EE2,extended,00100101
+
+[Terra The Terrible-Card 5]
+patch=1,EE,70490EE4,extended,00100101
+
+[Ryu-Kishin Powered-Card 1]
+patch=1,EE,70490EE6,extended,00100101
+
+[Ryu-Kishin Powered-Card 2]
+patch=1,EE,70490EE8,extended,00100101
+
+[Ryu-Kishin Powered-Card 3]
+patch=1,EE,70490EEA,extended,00100101
+
+[Ryu-Kishin Powered-Card 4]
+patch=1,EE,70490EEC,extended,00100101
+
+[Ryu-Kishin Powered-Card 5]
+patch=1,EE,70490EEE,extended,00100101
+
+[Pumpking The King Of Ghosts-Card 1]
+patch=1,EE,70490EF0,extended,00100101
+
+[Pumpking The King Of Ghosts-Card 2]
+patch=1,EE,70490EF2,extended,00100101
+
+[Pumpking The King Of Ghosts-Card 3]
+patch=1,EE,70490EF4,extended,00100101
+
+[Pumpking The King Of Ghosts-Card 4]
+patch=1,EE,70490EF6,extended,00100101
+
+[Pumpking The King Of Ghosts-Card 5]
+patch=1,EE,70490EF8,extended,00100101
+
+[Summoned Skull-Card 1]
+patch=1,EE,70490EFA,extended,00100101
+
+[Summoned Skull-Card 2]
+patch=1,EE,70490EFC,extended,00100101
+
+[Summoned Skull-Card 3]
+patch=1,EE,70490EFE,extended,00100101
+
+[Summoned Skull-Card 4]
+patch=1,EE,70490F00,extended,00100101
+
+[Summoned Skull-Card 5]
+patch=1,EE,70490F02,extended,00100101
+
+[Ushi Oni-Card 1]
+patch=1,EE,70490F04,extended,00100101
+
+[Ushi Oni-Card 2]
+patch=1,EE,70490F06,extended,00100101
+
+[Ushi Oni-Card 3]
+patch=1,EE,70490F08,extended,00100101
+
+[Ushi Oni-Card 4]
+patch=1,EE,70490F0A,extended,00100101
+
+[Ushi Oni-Card 5]
+patch=1,EE,70490F0C,extended,00100101
+
+[Zoa-Card 1]
+patch=1,EE,70490F0E,extended,00100101
+
+[Zoa-Card 2]
+patch=1,EE,70490F10,extended,00100101
+
+[Zoa-Card 3]
+patch=1,EE,70490F12,extended,00100101
+
+[Zoa-Card 4]
+patch=1,EE,70490F14,extended,00100101
+
+[Zoa-Card 5]
+patch=1,EE,70490F16,extended,00100101
+
+[Dark Magician Girl-Card 1]
+patch=1,EE,70490F22,extended,00100101
+
+[Dark Magician Girl-Card 2]
+patch=1,EE,70490F24,extended,00100101
+
+[Dark Magician Girl-Card 3]
+patch=1,EE,70490F26,extended,00100101
+
+[Dark Magician Girl-Card 4]
+patch=1,EE,70490F28,extended,00100101
+
+[Dark Magician Girl-Card 5]
+patch=1,EE,70490F2A,extended,00100101
+
+[Tri-Horned Dragon-Card 1]
+patch=1,EE,70490F2C,extended,00100101
+
+[Tri-Horned Dragon-Card 2]
+patch=1,EE,70490F2E,extended,00100101
+
+[Tri-Horned Dragon-Card 3]
+patch=1,EE,70490F30,extended,00100101
+
+[Tri-Horned Dragon-Card 4]
+patch=1,EE,70490F32,extended,00100101
+
+[Tri-Horned Dragon-Card 5]
+patch=1,EE,70490F34,extended,00100101
+
+[Red-Eyes B. Dragon-Card 1]
+patch=1,EE,70490F36,extended,00100101
+
+[Red-Eyes B. Dragon-Card 2]
+patch=1,EE,70490F38,extended,00100101
+
+[Red-Eyes B. Dragon-Card 3]
+patch=1,EE,70490F3A,extended,00100101
+
+[Red-Eyes B. Dragon-Card 4]
+patch=1,EE,70490F3C,extended,00100101
+
+[Red-Eyes B. Dragon-Card 5]
+patch=1,EE,70490F3E,extended,00100101
+
+[Slot Machine-Card 1]
+patch=1,EE,70490F4A,extended,00100101
+
+[Slot Machine-Card 2]
+patch=1,EE,70490F4C,extended,00100101
+
+[Slot Machine-Card 3]
+patch=1,EE,70490F4E,extended,00100101
+
+[Slot Machine-Card 4]
+patch=1,EE,70490F50,extended,00100101
+
+[Slot Machine-Card 5]
+patch=1,EE,70490F52,extended,00100101
+
+[Barrel Dragon-Card 1]
+patch=1,EE,70490F54,extended,00100101
+
+[Barrel Dragon-Card 2]
+patch=1,EE,70490F56,extended,00100101
+
+[Barrel Dragon-Card 3]
+patch=1,EE,70490F58,extended,00100101
+
+[Barrel Dragon-Card 4]
+patch=1,EE,70490F5A,extended,00100101
+
+[Barrel Dragon-Card 5]
+patch=1,EE,70490F5C,extended,00100101
+
+[Dark Magician-Card 1]
+patch=1,EE,70490F72,extended,00100101
+
+[Dark Magician-Card 2]
+patch=1,EE,70490F74,extended,00100101
+
+[Dark Magician-Card 3]
+patch=1,EE,70490F76,extended,00100101
+
+[Dark Magician-Card 4]
+patch=1,EE,70490F78,extended,00100101
+
+[Dark Magician-Card 5]
+patch=1,EE,70490F7A,extended,00100101
+
+[Metalzoa-Card 1]
+patch=1,EE,70490F90,extended,00100101
+
+[Metalzoa-Card 2]
+patch=1,EE,70490F92,extended,00100101
+
+[Metalzoa-Card 3]
+patch=1,EE,70490F94,extended,00100101
+
+[Metalzoa-Card 4]
+patch=1,EE,70490F96,extended,00100101
+
+[Metalzoa-Card 5]
+patch=1,EE,70490F98,extended,00100101
+
+[Red-Eyes Black Metal Dragon-Card 1]
+patch=1,EE,70490F9A,extended,00100101
+
+[Red-Eyes Black Metal Dragon-Card 2]
+patch=1,EE,70490F9C,extended,00100101
+
+[Red-Eyes Black Metal Dragon-Card 3]
+patch=1,EE,70490F9E,extended,00100101
+
+[Red-Eyes Black Metal Dragon-Card 4]
+patch=1,EE,70490FA0,extended,00100101
+
+[Red-Eyes Black Metal Dragon-Card 5]
+patch=1,EE,70490FA2,extended,00100101
+
+[Magician Of Black Chaos-Card 1]
+patch=1,EE,70490FA4,extended,00100101
+
+[Magician Of Black Chaos-Card 2]
+patch=1,EE,70490FA6,extended,00100101
+
+[Magician Of Black Chaos-Card 3]
+patch=1,EE,70490FA8,extended,00100101
+
+[Magician Of Black Chaos-Card 4]
+patch=1,EE,70490FAA,extended,00100101
+
+[Magician Of Black Chaos-Card 5]
+patch=1,EE,70490FAC,extended,00100101
+
+[Gate Guardian-Card 1]
+patch=1,EE,70490FAE,extended,00100101
+
+[Gate Guardian-Card 2]
+patch=1,EE,70490FB0,extended,00100101
+
+[Gate Guardian-Card 3]
+patch=1,EE,70490FB2,extended,00100101
+
+[Gate Guardian-Card 4]
+patch=1,EE,70490FB4,extended,00100101
+
+[Gate Guardian-Card 5]
+patch=1,EE,70490FB6,extended,00100101
+
+[Summoned Lord Exodia-Card 1]
+patch=1,EE,70490FB8,extended,00100101
+
+[Summoned Lord Exodia-Card 2]
+patch=1,EE,70490FBA,extended,00100101
+
+[Summoned Lord Exodia-Card 3]
+patch=1,EE,70490FBC,extended,00100101
+
+[Summoned Lord Exodia-Card 4]
+patch=1,EE,70490FBE,extended,00100101
+
+[Summoned Lord Exodia-Card 5]
+patch=1,EE,70490FC0,extended,00100101
+
+[Fire Reaper-Card 1]
+patch=1,EE,70490FC2,extended,00100101
+
+[Fire Reaper-Card 2]
+patch=1,EE,70490FC4,extended,00100101
+
+[Fire Reaper-Card 3]
+patch=1,EE,70490FC6,extended,00100101
+
+[Fire Reaper-Card 4]
+patch=1,EE,70490FC8,extended,00100101
+
+[Fire Reaper-Card 5]
+patch=1,EE,70490FCA,extended,00100101
+
+[Firegrass-Card 1]
+patch=1,EE,70490FD6,extended,00100101
+
+[Firegrass-Card 2]
+patch=1,EE,70490FD8,extended,00100101
+
+[Firegrass-Card 3]
+patch=1,EE,70490FDA,extended,00100101
+
+[Firegrass-Card 4]
+patch=1,EE,70490FDC,extended,00100101
+
+[Firegrass-Card 5]
+patch=1,EE,70490FDE,extended,00100101
+
+[Jigen Bakudan-Card 1]
+patch=1,EE,70490FE0,extended,00100101
+
+[Jigen Bakudan-Card 2]
+patch=1,EE,70490FE2,extended,00100101
+
+[Jigen Bakudan-Card 3]
+patch=1,EE,70490FE4,extended,00100101
+
+[Jigen Bakudan-Card 4]
+patch=1,EE,70490FE6,extended,00100101
+
+[Jigen Bakudan-Card 5]
+patch=1,EE,70490FE8,extended,00100101
+
+[Flame Viper-Card 1]
+patch=1,EE,70490FF4,extended,00100101
+
+[Flame Viper-Card 2]
+patch=1,EE,70490FF6,extended,00100101
+
+[Flame Viper-Card 3]
+patch=1,EE,70490FF8,extended,00100101
+
+[Flame Viper-Card 4]
+patch=1,EE,70490FFA,extended,00100101
+
+[Flame Viper-Card 5]
+patch=1,EE,70490FFC,extended,00100101
+
+[Mechaanical Snail-Card 1]
+patch=1,EE,70491008,extended,00100101
+
+[Mechaanical Snail-Card 2]
+patch=1,EE,7049100A,extended,00100101
+
+[Mechaanical Snail-Card 3]
+patch=1,EE,7049100C,extended,00100101
+
+[Mechaanical Snail-Card 4]
+patch=1,EE,7049100E,extended,00100101
+
+[Mechaanical Snail-Card 5]
+patch=1,EE,70491010,extended,00100101
+
+[Garoozis-Card 1]
+patch=1,EE,7049101C,extended,00100101
+
+[Garoozis-Card 2]
+patch=1,EE,7049101E,extended,00100101
+
+[Garoozis-Card 3]
+patch=1,EE,70491020,extended,00100101
+
+[Garoozis-Card 4]
+patch=1,EE,70491022,extended,00100101
+
+[Garoozis-Card 5]
+patch=1,EE,70491024,extended,00100101
+
+[Flame Manipulator-Card 1]
+patch=1,EE,70491030,extended,00100101
+
+[Flame Manipulator-Card 2]
+patch=1,EE,70491032,extended,00100101
+
+[Flame Manipulator-Card 3]
+patch=1,EE,70491034,extended,00100101
+
+[Flame Manipulator-Card 4]
+patch=1,EE,70491036,extended,00100101
+
+[Flame Manipulator-Card 5]
+patch=1,EE,70491038,extended,00100101
+
+[Darkfire Dragon-Card 1]
+patch=1,EE,7049103A,extended,00100101
+
+[Darkfire Dragon-Card 2]
+patch=1,EE,7049103C,extended,00100101
+
+[Darkfire Dragon-Card 3]
+patch=1,EE,7049103E,extended,00100101
+
+[Darkfire Dragon-Card 4]
+patch=1,EE,70491040,extended,00100101
+
+[Darkfire Dragon-Card 5]
+patch=1,EE,70491042,extended,00100101
+
+[La Jinn The Mystical Genie Of The Lamp-Card 1]
+patch=1,EE,70491044,extended,00100101
+
+[La Jinn The Mystical Genie Of The Lamp-Card 2]
+patch=1,EE,70491046,extended,00100101
+
+[La Jinn The Mystical Genie Of The Lamp-Card 3]
+patch=1,EE,70491048,extended,00100101
+
+[La Jinn The Mystical Genie Of The Lamp-Card 4]
+patch=1,EE,7049104A,extended,00100101
+
+[La Jinn The Mystical Genie Of The Lamp-Card 5]
+patch=1,EE,7049104C,extended,00100101
+
+[Megasonic Eye-Card 1]
+patch=1,EE,7049104E,extended,00100101
+
+[Megasonic Eye-Card 2]
+patch=1,EE,70491050,extended,00100101
+
+[Megasonic Eye-Card 3]
+patch=1,EE,70491052,extended,00100101
+
+[Megasonic Eye-Card 4]
+patch=1,EE,70491054,extended,00100101
+
+[Megasonic Eye-Card 5]
+patch=1,EE,70491056,extended,00100101
+
+[Blast Juggler-Card 1]
+patch=1,EE,70491058,extended,00100101
+
+[Blast Juggler-Card 2]
+patch=1,EE,7049105A,extended,00100101
+
+[Blast Juggler-Card 3]
+patch=1,EE,7049105C,extended,00100101
+
+[Blast Juggler-Card 4]
+patch=1,EE,7049105E,extended,00100101
+
+[Blast Juggler-Card 5]
+patch=1,EE,70491060,extended,00100101
+
+[Charubin The Fire Knight-Card 1]
+patch=1,EE,70491062,extended,00100101
+
+[Charubin The Fire Knight-Card 2]
+patch=1,EE,70491064,extended,00100101
+
+[Charubin The Fire Knight-Card 3]
+patch=1,EE,70491066,extended,00100101
+
+[Charubin The Fire Knight-Card 4]
+patch=1,EE,70491068,extended,00100101
+
+[Charubin The Fire Knight-Card 5]
+patch=1,EE,7049106A,extended,00100101
+
+[Rigras Leever-Card 1]
+patch=1,EE,7049106C,extended,00100101
+
+[Rigras Leever-Card 2]
+patch=1,EE,7049106E,extended,00100101
+
+[Rigras Leever-Card 3]
+patch=1,EE,70491070,extended,00100101
+
+[Rigras Leever-Card 4]
+patch=1,EE,70491072,extended,00100101
+
+[Rigras Leever-Card 5]
+patch=1,EE,70491074,extended,00100101
+
+[Yamadron-Card 1]
+patch=1,EE,70491076,extended,00100101
+
+[Yamadron-Card 2]
+patch=1,EE,70491078,extended,00100101
+
+[Yamadron-Card 3]
+patch=1,EE,7049107A,extended,00100101
+
+[Yamadron-Card 4]
+patch=1,EE,7049107C,extended,00100101
+
+[Yamadron-Card 5]
+patch=1,EE,7049107E,extended,00100101
+
+[Firewing Pegasus-Card 1]
+patch=1,EE,70491094,extended,00100101
+
+[Firewing Pegasus-Card 2]
+patch=1,EE,70491096,extended,00100101
+
+[Firewing Pegasus-Card 3]
+patch=1,EE,70491098,extended,00100101
+
+[Firewing Pegasus-Card 4]
+patch=1,EE,7049109A,extended,00100101
+
+[Firewing Pegasus-Card 5]
+patch=1,EE,7049109C,extended,00100101
+
+[Flame Cerebrus-Card 1]
+patch=1,EE,7049109E,extended,00100101
+
+[Flame Cerebrus-Card 2]
+patch=1,EE,704910A0,extended,00100101
+
+[Flame Cerebrus-Card 3]
+patch=1,EE,704910A2,extended,00100101
+
+[Flame Cerebrus-Card 4]
+patch=1,EE,704910A4,extended,00100101
+
+[Flame Cerebrus-Card 5]
+patch=1,EE,704910A6,extended,00100101
+
+[Fireyarou-Card 1]
+patch=1,EE,704910A8,extended,00100101
+
+[Fireyarou-Card 2]
+patch=1,EE,704910AA,extended,00100101
+
+[Fireyarou-Card 3]
+patch=1,EE,704910AC,extended,00100101
+
+[Fireyarou-Card 4]
+patch=1,EE,704910AE,extended,00100101
+
+[Fireyarou-Card 5]
+patch=1,EE,704910B0,extended,00100101
+
+[Molten Behemoth-Card 1]
+patch=1,EE,704910BC,extended,00100101
+
+[Molten Behemoth-Card 2]
+patch=1,EE,704910BE,extended,00100101
+
+[Molten Behemoth-Card 3]
+patch=1,EE,704910C0,extended,00100101
+
+[Molten Behemoth-Card 4]
+patch=1,EE,704910C2,extended,00100101
+
+[Molten Behemoth-Card 5]
+patch=1,EE,704910C4,extended,00100101
+
+[Tyhone #2-Card 1]
+patch=1,EE,704910C6,extended,00100101
+
+[Tyhone #2-Card 2]
+patch=1,EE,704910C8,extended,00100101
+
+[Tyhone #2-Card 3]
+patch=1,EE,704910CA,extended,00100101
+
+[Tyhone #2-Card 4]
+patch=1,EE,704910CC,extended,00100101
+
+[Tyhone #2-Card 5]
+patch=1,EE,704910CE,extended,00100101
+
+[Crimson Sunbird-Card 1]
+patch=1,EE,704910DA,extended,00100101
+
+[Crimson Sunbird-Card 2]
+patch=1,EE,704910DC,extended,00100101
+
+[Crimson Sunbird-Card 3]
+patch=1,EE,704910DE,extended,00100101
+
+[Crimson Sunbird-Card 4]
+patch=1,EE,704910E0,extended,00100101
+
+[Crimson Sunbird-Card 5]
+patch=1,EE,704910E2,extended,00100101
+
+[Manga Ryu-Ran-Card 1]
+patch=1,EE,704910E4,extended,00100101
+
+[Manga Ryu-Ran-Card 2]
+patch=1,EE,704910E6,extended,00100101
+
+[Manga Ryu-Ran-Card 3]
+patch=1,EE,704910E8,extended,00100101
+
+[Manga Ryu-Ran-Card 4]
+patch=1,EE,704910EA,extended,00100101
+
+[Manga Ryu-Ran-Card 5]
+patch=1,EE,704910EC,extended,00100101
+
+[Launcher Spider-Card 1]
+patch=1,EE,704910EE,extended,00100101
+
+[Launcher Spider-Card 2]
+patch=1,EE,704910F0,extended,00100101
+
+[Launcher Spider-Card 3]
+patch=1,EE,704910F2,extended,00100101
+
+[Launcher Spider-Card 4]
+patch=1,EE,704910F4,extended,00100101
+
+[Launcher Spider-Card 5]
+patch=1,EE,704910F6,extended,00100101
+
+[Flame Swordsman-Card 1]
+patch=1,EE,704910F8,extended,00100101
+
+[Flame Swordsman-Card 2]
+patch=1,EE,704910FA,extended,00100101
+
+[Flame Swordsman-Card 3]
+patch=1,EE,704910FC,extended,00100101
+
+[Flame Swordsman-Card 4]
+patch=1,EE,704910FE,extended,00100101
+
+[Flame Swordsman-Card 5]
+patch=1,EE,70491100,extended,00100101
+
+[Ryu-Ran-Card 1]
+patch=1,EE,70491102,extended,00100101
+
+[Ryu-Ran-Card 2]
+patch=1,EE,70491104,extended,00100101
+
+[Ryu-Ran-Card 3]
+patch=1,EE,70491106,extended,00100101
+
+[Ryu-Ran-Card 4]
+patch=1,EE,70491108,extended,00100101
+
+[Ryu-Ran-Card 5]
+patch=1,EE,7049110A,extended,00100101
+
+[Meteor B. Dragon-Card 1]
+patch=1,EE,7049110C,extended,00100101
+
+[Meteor B. Dragon-Card 2]
+patch=1,EE,7049110E,extended,00100101
+
+[Meteor B. Dragon-Card 3]
+patch=1,EE,70491110,extended,00100101
+
+[Meteor B. Dragon-Card 4]
+patch=1,EE,70491112,extended,00100101
+
+[Meteor B. Dragon-Card 5]
+patch=1,EE,70491114,extended,00100101
+
+[Psychic Kappa-Card 1]
+patch=1,EE,70491120,extended,00100101
+
+[Psychic Kappa-Card 1]
+patch=1,EE,70491122,extended,00100101
+
+[Psychic Kappa-Card 1]
+patch=1,EE,70491124,extended,00100101
+
+[Psychic Kappa-Card 1]
+patch=1,EE,70491126,extended,00100101
+
+[Psychic Kappa-Card 1]
+patch=1,EE,70491128,extended,00100101
+
+[Sinister Serpent-Card 1]
+patch=1,EE,70491134,extended,00100101
+
+[Sinister Serpent-Card 2]
+patch=1,EE,70491136,extended,00100101
+
+[Sinister Serpent-Card 3]
+patch=1,EE,70491138,extended,00100101
+
+[Sinister Serpent-Card 4]
+patch=1,EE,7049113A,extended,00100101
+
+[Sinister Serpent-Card 5]
+patch=1,EE,7049113C,extended,00100101
+
+[Root Water-Card 1]
+patch=1,EE,70491148,extended,00100101
+
+[Root Water-Card 2]
+patch=1,EE,7049114A,extended,00100101
+
+[Root Water-Card 3]
+patch=1,EE,7049114C,extended,00100101
+
+[Root Water-Card 4]
+patch=1,EE,7049114E,extended,00100101
+
+[Root Water-Card 5]
+patch=1,EE,70491150,extended,00100101
+
+[Great White-Card 1]
+patch=1,EE,70491152,extended,00100101
+
+[Great White-Card 2]
+patch=1,EE,70491154,extended,00100101
+
+[Great White-Card 3]
+patch=1,EE,70491156,extended,00100101
+
+[Great White-Card 4]
+patch=1,EE,70491158,extended,00100101
+
+[Great White-Card 5]
+patch=1,EE,7049115A,extended,00100101
+
+[Penguin Soldier-Card 1]
+patch=1,EE,7049115C,extended,00100101
+
+[Penguin Soldier-Card 2]
+patch=1,EE,7049115E,extended,00100101
+
+[Penguin Soldier-Card 3]
+patch=1,EE,70491160,extended,00100101
+
+[Penguin Soldier-Card 4]
+patch=1,EE,70491162,extended,00100101
+
+[Penguin Soldier-Card 5]
+patch=1,EE,70491164,extended,00100101
+
+[Mech Bass-Card 1]
+patch=1,EE,70491166,extended,00100101
+
+[Mech Bass-Card 2]
+patch=1,EE,70491168,extended,00100101
+
+[Mech Bass-Card 3]
+patch=1,EE,7049116A,extended,00100101
+
+[Mech Bass-Card 4]
+patch=1,EE,7049116C,extended,00100101
+
+[Mech Bass-Card 5]
+patch=1,EE,7049116E,extended,00100101
+
+[Yado Karu-Card 1]
+patch=1,EE,70491170,extended,00100101
+
+[Yado Karu-Card 2]
+patch=1,EE,70491172,extended,00100101
+
+[Yado Karu-Card 3]
+patch=1,EE,70491174,extended,00100101
+
+[Yado Karu-Card 4]
+patch=1,EE,70491176,extended,00100101
+
+[Yado Karu-Card 5]
+patch=1,EE,70491178,extended,00100101
+
+[Jellyfish-Card 1]
+patch=1,EE,7049117A,extended,00100101
+
+[Jellyfish-Card 2]
+patch=1,EE,7049117C,extended,00100101
+
+[Jellyfish-Card 3]
+patch=1,EE,7049117E,extended,00100101
+
+[Jellyfish-Card 4]
+patch=1,EE,70491180,extended,00100101
+
+[Jellyfish-Card 5]
+patch=1,EE,70491182,extended,00100101
+
+[White Dolphin-Card 1]
+patch=1,EE,70491184,extended,00100101
+
+[White Dolphin-Card 2]
+patch=1,EE,70491186,extended,00100101
+
+[White Dolphin-Card 3]
+patch=1,EE,70491188,extended,00100101
+
+[White Dolphin-Card 4]
+patch=1,EE,7049118A,extended,00100101
+
+[White Dolphin-Card 5]
+patch=1,EE,7049118C,extended,00100101
+
+[Kappa Avenger-Card 1]
+patch=1,EE,7049118E,extended,00100101
+
+[Kappa Avenger-Card 2]
+patch=1,EE,70491190,extended,00100101
+
+[Kappa Avenger-Card 3]
+patch=1,EE,70491192,extended,00100101
+
+[Kappa Avenger-Card 4]
+patch=1,EE,70491194,extended,00100101
+
+[Kappa Avenger-Card 5]
+patch=1,EE,70491196,extended,00100101
+
+[Akihiron-Card 1]
+patch=1,EE,704911AC,extended,00100101
+
+[Akihiron-Card 2]
+patch=1,EE,704911AE,extended,00100101
+
+[Akihiron-Card 3]
+patch=1,EE,704911B0,extended,00100101
+
+[Akihiron-Card 4]
+patch=1,EE,704911B2,extended,00100101
+
+[Akihiron-Card 5]
+patch=1,EE,704911B4,extended,00100101
+
+[Suijin-Card 1]
+patch=1,EE,704911B6,extended,00100101
+
+[Suijin-Card 2]
+patch=1,EE,704911B8,extended,00100101
+
+[Suijin-Card 3]
+patch=1,EE,704911BA,extended,00100101
+
+[Suijin-Card 4]
+patch=1,EE,704911BC,extended,00100101
+
+[Suijin-Card 5]
+patch=1,EE,704911BE,extended,00100101
+
+[Man-Eating Black Shark-Card 1]
+patch=1,EE,704911D4,extended,00100101
+
+[Man-Eating Black Shark-Card 2]
+patch=1,EE,704911D6,extended,00100101
+
+[Man-Eating Black Shark-Card 3]
+patch=1,EE,704911D8,extended,00100101
+
+[Man-Eating Black Shark-Card 4]
+patch=1,EE,704911DA,extended,00100101
+
+[Man-Eating Black Shark-Card 5]
+patch=1,EE,704911DC,extended,00100101
+
+[Pengiun Knight-Card 1]
+patch=1,EE,704911DE,extended,00100101
+
+[Pengiun Knight-Card 2]
+patch=1,EE,704911E0,extended,00100101
+
+[Pengiun Knight-Card 3]
+patch=1,EE,704911E2,extended,00100101
+
+[Pengiun Knight-Card 4]
+patch=1,EE,704911E4,extended,00100101
+
+[Pengiun Knight-Card 5]
+patch=1,EE,704911E6,extended,00100101
+
+[Toad Master-Card 1]
+patch=1,EE,704911E8,extended,00100101
+
+[Toad Master-Card 2]
+patch=1,EE,704911EA,extended,00100101
+
+[Toad Master-Card 3]
+patch=1,EE,704911EC,extended,00100101
+
+[Toad Master-Card 4]
+patch=1,EE,704911EE,extended,00100101
+
+[Toad Master-Card 5]
+patch=1,EE,704911F0,extended,00100101
+
+[Grappler-Card 1]
+patch=1,EE,704911F2,extended,00100101
+
+[Grappler-Card 2]
+patch=1,EE,704911F4,extended,00100101
+
+[Grappler-Card 3]
+patch=1,EE,704911F6,extended,00100101
+
+[Grappler-Card 4]
+patch=1,EE,704911F8,extended,00100101
+
+[Grappler-Card 5]
+patch=1,EE,704911FA,extended,00100101
+
+[Krokodilus-Card 1]
+patch=1,EE,704911FC,extended,00100101
+
+[Krokodilus-Card 2]
+patch=1,EE,704911FE,extended,00100101
+
+[Krokodilus-Card 3]
+patch=1,EE,70491200,extended,00100101
+
+[Krokodilus-Card 4]
+patch=1,EE,70491202,extended,00100101
+
+[Krokodilus-Card 5]
+patch=1,EE,70491204,extended,00100101
+
+[Kanikabuto-Card 1]
+patch=1,EE,70491206,extended,00100101
+
+[Kanikabuto-Card 2]
+patch=1,EE,70491208,extended,00100101
+
+[Kanikabuto-Card 3]
+patch=1,EE,7049120A,extended,00100101
+
+[Kanikabuto-Card 4]
+patch=1,EE,7049120C,extended,00100101
+
+[Kanikabuto-Card 5]
+patch=1,EE,7049120E,extended,00100101
+
+[Fiend Kraken-Card 1]
+patch=1,EE,70491210,extended,00100101
+
+[Fiend Kraken-Card 2]
+patch=1,EE,70491212,extended,00100101
+
+[Fiend Kraken-Card 3]
+patch=1,EE,70491214,extended,00100101
+
+[Fiend Kraken-Card 4]
+patch=1,EE,70491216,extended,00100101
+
+[Fiend Kraken-Card 5]
+patch=1,EE,70491218,extended,00100101
+
+[High Tide Gyojin-Card 1]
+patch=1,EE,7049121A,extended,00100101
+
+[High Tide Gyojin-Card 2]
+patch=1,EE,7049121C,extended,00100101
+
+[High Tide Gyojin-Card 3]
+patch=1,EE,7049121E,extended,00100101
+
+[High Tide Gyojin-Card 4]
+patch=1,EE,70491220,extended,00100101
+
+[High Tide Gyojin-Card 5]
+patch=1,EE,70491222,extended,00100101
+
+[Hyosube-Card 1]
+patch=1,EE,70491242,extended,00100101
+
+[Hyosube-Card 2]
+patch=1,EE,70491244,extended,00100101
+
+[Hyosube-Card 3]
+patch=1,EE,70491246,extended,00100101
+
+[Hyosube-Card 4]
+patch=1,EE,70491248,extended,00100101
+
+[Hyosube-Card 5]
+patch=1,EE,7049124A,extended,00100101
+
+[Flying Penguin-Card 1]
+patch=1,EE,70491256,extended,00100101
+
+[Flying Penguin-Card 2]
+patch=1,EE,70491258,extended,00100101
+
+[Flying Penguin-Card 3]
+patch=1,EE,7049125A,extended,00100101
+
+[Flying Penguin-Card 4]
+patch=1,EE,7049125C,extended,00100101
+
+[Flying Penguin-Card 5]
+patch=1,EE,7049125E,extended,00100101
+
+[Crab Turtle-Card 1]
+patch=1,EE,70491260,extended,00100101
+
+[Crab Turtle-Card 2]
+patch=1,EE,70491262,extended,00100101
+
+[Crab Turtle-Card 3]
+patch=1,EE,70491264,extended,00100101
+
+[Crab Turtle-Card 4]
+patch=1,EE,70491266,extended,00100101
+
+[Crab Turtle-Card 5]
+patch=1,EE,70491268,extended,00100101
+
+[Fortress Whale-Card 1]
+patch=1,EE,7049126A,extended,00100101
+
+[Fortress Whale-Card 2]
+patch=1,EE,7049126C,extended,00100101
+
+[Fortress Whale-Card 3]
+patch=1,EE,7049126E,extended,00100101
+
+[Fortress Whale-Card 4]
+patch=1,EE,70491270,extended,00100101
+
+[Fortress Whale-Card 5]
+patch=1,EE,70491272,extended,00100101
+
+[Haniwa-Card 1]
+patch=1,EE,70491288,extended,00100101
+
+[Haniwa-Card 2]
+patch=1,EE,7049128A,extended,00100101
+
+[Haniwa-Card 3]
+patch=1,EE,7049128C,extended,00100101
+
+[Haniwa-Card 4]
+patch=1,EE,7049128E,extended,00100101
+
+[Haniwa-Card 5]
+patch=1,EE,70491290,extended,00100101
+
+[Torike-Card 1]
+patch=1,EE,70491292,extended,00100101
+
+[Torike-Card 2]
+patch=1,EE,70491294,extended,00100101
+
+[Torike-Card 3]
+patch=1,EE,70491296,extended,00100101
+
+[Torike-Card 4]
+patch=1,EE,70491298,extended,00100101
+
+[Torike-Card 5]
+patch=1,EE,7049129A,extended,00100101
+
+[Larvas-Card 1]
+patch=1,EE,7049129C,extended,00100101
+
+[Larvas-Card 2]
+patch=1,EE,7049129E,extended,00100101
+
+[Larvas-Card 3]
+patch=1,EE,704912A0,extended,00100101
+
+[Larvas-Card 4]
+patch=1,EE,704912A2,extended,00100101
+
+[Larvas-Card 5]
+patch=1,EE,704912A4,extended,00100101
+
+[Anthrosaurus-Card 1]
+patch=1,EE,704912B0,extended,00100101
+
+[Anthrosaurus-Card 2]
+patch=1,EE,704912B2,extended,00100101
+
+[Anthrosaurus-Card 3]
+patch=1,EE,704912B4,extended,00100101
+
+[Anthrosaurus-Card 4]
+patch=1,EE,704912B6,extended,00100101
+
+[Anthrosaurus-Card 5]
+patch=1,EE,704912B8,extended,00100101
+
+[Mystic Horseman-Card 1]
+patch=1,EE,704912CE,extended,00100101
+
+[Mystic Horseman-Card 2]
+patch=1,EE,704912D0,extended,00100101
+
+[Mystic Horseman-Card 3]
+patch=1,EE,704912D2,extended,00100101
+
+[Mystic Horseman-Card 4]
+patch=1,EE,704912D4,extended,00100101
+
+[Mystic Horseman-Card 5]
+patch=1,EE,704912D6,extended,00100101
+
+[Battle Ox-Card 1]
+patch=1,EE,704912D8,extended,00100101
+
+[Battle Ox-Card 2]
+patch=1,EE,704912DA,extended,00100101
+
+[Battle Ox-Card 3]
+patch=1,EE,704912DC,extended,00100101
+
+[Battle Ox-Card 4]
+patch=1,EE,704912DE,extended,00100101
+
+[Battle Ox-Card 5]
+patch=1,EE,704912E0,extended,00100101
+
+[Battle Steer-Card 1]
+patch=1,EE,704912E2,extended,00100101
+
+[Battle Steer-Card 2]
+patch=1,EE,704912E4,extended,00100101
+
+[Battle Steer-Card 3]
+patch=1,EE,704912E6,extended,00100101
+
+[Battle Steer-Card 4]
+patch=1,EE,704912E8,extended,00100101
+
+[Battle Steer-Card 5]
+patch=1,EE,704912EA,extended,00100101
+
+[Rock Ogre Grotto #1-Card 1]
+patch=1,EE,704912EC,extended,00100101
+
+[Rock Ogre Grotto #1-Card 2]
+patch=1,EE,704912EE,extended,00100101
+
+[Rock Ogre Grotto #1-Card 3]
+patch=1,EE,704912F0,extended,00100101
+
+[Rock Ogre Grotto #1-Card 4]
+patch=1,EE,704912F2,extended,00100101
+
+[Rock Ogre Grotto #1-Card 5]
+patch=1,EE,704912F4,extended,00100101
+
+[Celtic Guardian-Card 1]
+patch=1,EE,704912F6,extended,00100101
+
+[Celtic Guardian-Card 2]
+patch=1,EE,704912F8,extended,00100101
+
+[Celtic Guardian-Card 3]
+patch=1,EE,704912FA,extended,00100101
+
+[Celtic Guardian-Card 4]
+patch=1,EE,704912FC,extended,00100101
+
+[Celtic Guardian-Card 5]
+patch=1,EE,704912FE,extended,00100101
+
+[Destroyer Golem-Card 1]
+patch=1,EE,7049130A,extended,00100101
+
+[Destroyer Golem-Card 2]
+patch=1,EE,7049130C,extended,00100101
+
+[Destroyer Golem-Card 3]
+patch=1,EE,7049130E,extended,00100101
+
+[Destroyer Golem-Card 4]
+patch=1,EE,70491310,extended,00100101
+
+[Destroyer Golem-Card 5]
+patch=1,EE,70491312,extended,00100101
+
+[The Statue Of Easter Island-Card 1]
+patch=1,EE,70491314,extended,00100101
+
+[The Statue Of Easter Island-Card 2]
+patch=1,EE,70491316,extended,00100101
+
+[The Statue Of Easter Island-Card 3]
+patch=1,EE,70491318,extended,00100101
+
+[The Statue Of Easter Island-Card 4]
+patch=1,EE,7049131A,extended,00100101
+
+[The Statue Of Easter Island-Card 5]
+patch=1,EE,7049131C,extended,00100101
+
+[Rock Spirit-Card 1]
+patch=1,EE,7049131E,extended,00100101
+
+[Rock Spirit-Card 2]
+patch=1,EE,70491320,extended,00100101
+
+[Rock Spirit-Card 3]
+patch=1,EE,70491322,extended,00100101
+
+[Rock Spirit-Card 4]
+patch=1,EE,70491324,extended,00100101
+
+[Rock Spirit-Card 5]
+patch=1,EE,70491326,extended,00100101
+
+[Crawling Dragon-Card 1]
+patch=1,EE,70491328,extended,00100101
+
+[Crawling Dragon-Card 2]
+patch=1,EE,7049132A,extended,00100101
+
+[Crawling Dragon-Card 3]
+patch=1,EE,7049132C,extended,00100101
+
+[Crawling Dragon-Card 4]
+patch=1,EE,7049132E,extended,00100101
+
+[Crawling Dragon-Card 5]
+patch=1,EE,70491330,extended,00100101
+
+[Mon Larvas-Card 1]
+patch=1,EE,70491332,extended,00100101
+
+[Mon Larvas-Card 2]
+patch=1,EE,70491334,extended,00100101
+
+[Mon Larvas-Card 3]
+patch=1,EE,70491336,extended,00100101
+
+[Mon Larvas-Card 4]
+patch=1,EE,70491338,extended,00100101
+
+[Mon Larvas-Card 5]
+patch=1,EE,7049133A,extended,00100101
+
+[Gazelle The King Of Mythical Beasts-Card 1]
+patch=1,EE,7049133C,extended,00100101
+
+[Gazelle The King Of Mythical Beasts-Card 2]
+patch=1,EE,7049133E,extended,00100101
+
+[Gazelle The King Of Mythical Beasts-Card 3]
+patch=1,EE,70491340,extended,00100101
+
+[Gazelle The King Of Mythical Beasts-Card 4]
+patch=1,EE,70491342,extended,00100101
+
+[Gazelle The King Of Mythical Beasts-Card 5]
+patch=1,EE,70491344,extended,00100101
+
+[King Tiger Wanghu-Card 1]
+patch=1,EE,70491346,extended,00100101
+
+[King Tiger Wanghu-Card 2]
+patch=1,EE,70491348,extended,00100101
+
+[King Tiger Wanghu-Card 3]
+patch=1,EE,7049134A,extended,00100101
+
+[King Tiger Wanghu-Card 4]
+patch=1,EE,7049134C,extended,00100101
+
+[King Tiger Wanghu-Card 5]
+patch=1,EE,7049134E,extended,00100101
+
+[Hitotsu-Me Giant-Card 1]
+patch=1,EE,70491350,extended,00100101
+
+[Hitotsu-Me Giant-Card 2]
+patch=1,EE,70491352,extended,00100101
+
+[Hitotsu-Me Giant-Card 3]
+patch=1,EE,70491354,extended,00100101
+
+[Hitotsu-Me Giant-Card 4]
+patch=1,EE,70491356,extended,00100101
+
+[Hitotsu-Me Giant-Card 5]
+patch=1,EE,70491358,extended,00100101
+
+[Masaki The Legendary Swordsman-Card 1]
+patch=1,EE,70491364,extended,00100101
+
+[Masaki The Legendary Swordsman-Card 2]
+patch=1,EE,70491366,extended,00100101
+
+[Masaki The Legendary Swordsman-Card 3]
+patch=1,EE,70491368,extended,00100101
+
+[Masaki The Legendary Swordsman-Card 4]
+patch=1,EE,7049136A,extended,00100101
+
+[Masaki The Legendary Swordsman-Card 5]
+patch=1,EE,7049136C,extended,00100101
+
+[Megazowler-Card 1]
+patch=1,EE,70491382,extended,00100101
+
+[Megazowler-Card 2]
+patch=1,EE,70491384,extended,00100101
+
+[Megazowler-Card 3]
+patch=1,EE,70491386,extended,00100101
+
+[Megazowler-Card 4]
+patch=1,EE,70491388,extended,00100101
+
+[Megazowler-Card 5]
+patch=1,EE,7049138A,extended,00100101
+
+[Super War-Lion-Card 1]
+patch=1,EE,7049138C,extended,00100101
+
+[Super War-Lion-Card 2]
+patch=1,EE,7049138E,extended,00100101
+
+[Super War-Lion-Card 3]
+patch=1,EE,70491390,extended,00100101
+
+[Super War-Lion-Card 4]
+patch=1,EE,70491392,extended,00100101
+
+[Super War-Lion-Card 5]
+patch=1,EE,70491394,extended,00100101
+
+[Judge Man-Card 1]
+patch=1,EE,704913A0,extended,00100101
+
+[Judge Man-Card 2]
+patch=1,EE,704913A2,extended,00100101
+
+[Judge Man-Card 3]
+patch=1,EE,704913A4,extended,00100101
+
+[Judge Man-Card 4]
+patch=1,EE,704913A6,extended,00100101
+
+[Judge Man-Card 5]
+patch=1,EE,704913A8,extended,00100101
+
+[Rabid Horseman-Card 1]
+patch=1,EE,704913AA,extended,00100101
+
+[Rabid Horseman-Card 2]
+patch=1,EE,704913AC,extended,00100101
+
+[Rabid Horseman-Card 3]
+patch=1,EE,704913AE,extended,00100101
+
+[Rabid Horseman-Card 4]
+patch=1,EE,704913B0,extended,00100101
+
+[Rabid Horseman-Card 5]
+patch=1,EE,704913B2,extended,00100101
+
+[Sengejin-Card 1]
+patch=1,EE,704913B4,extended,00100101
+
+[Sengejin-Card 2]
+patch=1,EE,704913B6,extended,00100101
+
+[Sengejin-Card 3]
+patch=1,EE,704913B8,extended,00100101
+
+[Sengejin-Card 4]
+patch=1,EE,704913BA,extended,00100101
+
+[Sengejin-Card 5]
+patch=1,EE,704913BC,extended,00100101
+
+[Performance Of Sword-Card 1]
+patch=1,EE,704913BE,extended,00100101
+
+[Performance Of Sword-Card 2]
+patch=1,EE,704913C0,extended,00100101
+
+[Performance Of Sword-Card 3]
+patch=1,EE,704913C2,extended,00100101
+
+[Performance Of Sword-Card 4]
+patch=1,EE,704913C4,extended,00100101
+
+[Performance Of Sword-Card 5]
+patch=1,EE,704913C6,extended,00100101
+
+[Gaia The Fierce Knight-Card 1]
+patch=1,EE,704913C8,extended,00100101
+
+[Gaia The Fierce Knight-Card 2]
+patch=1,EE,704913CA,extended,00100101
+
+[Gaia The Fierce Knight-Card 3]
+patch=1,EE,704913CC,extended,00100101
+
+[Gaia The Fierce Knight-Card 4]
+patch=1,EE,704913CE,extended,00100101
+
+[Gaia The Fierce Knight-Card 5]
+patch=1,EE,704913D0,extended,00100101
+
+[Millennium Golem-Card 1]
+patch=1,EE,704913D2,extended,00100101
+
+[Millennium Golem-Card 2]
+patch=1,EE,704913D4,extended,00100101
+
+[Millennium Golem-Card 3]
+patch=1,EE,704913D6,extended,00100101
+
+[Millennium Golem-Card 4]
+patch=1,EE,704913D8,extended,00100101
+
+[Millennium Golem-Card 5]
+patch=1,EE,704913DA,extended,00100101
+
+[Two-Headed King Rex-Card 1]
+patch=1,EE,704915E4,extended,00100101
+
+[Two-Headed King Rex-Card 2]
+patch=1,EE,704915E6,extended,00100101
+
+[Two-Headed King Rex-Card 3]
+patch=1,EE,704915E8,extended,00100101
+
+[Two-Headed King Rex-Card 4]
+patch=1,EE,704915EA,extended,00100101
+
+[Two-Headed King Rex-Card 5]
+patch=1,EE,704915EC,extended,00100101
+
+[Petit Moth-Card 1]
+patch=1,EE,704913DC,extended,00100101
+
+[Petit Moth-Card 2]
+patch=1,EE,704913DE,extended,00100101
+
+[Petit Moth-Card 3]
+patch=1,EE,704913E0,extended,00100101
+
+[Petit Moth-Card 4]
+patch=1,EE,704913E2,extended,00100101
+
+[Petit Moth-Card 5]
+patch=1,EE,704913E4,extended,00100101
+
+[Man-Eater Bug-Card 1]
+patch=1,EE,70491404,extended,00100101
+
+[Man-Eater Bug-Card 2]
+patch=1,EE,70491406,extended,00100101
+
+[Man-Eater Bug-Card 3]
+patch=1,EE,70491408,extended,00100101
+
+[Man-Eater Bug-Card 4]
+patch=1,EE,7049140A,extended,00100101
+
+[Man-Eater Bug-Card 5]
+patch=1,EE,7049140C,extended,00100101
+
+[Needle Worm-Card 1]
+patch=1,EE,7049140E,extended,00100101
+
+[Needle Worm-Card 2]
+patch=1,EE,70491410,extended,00100101
+
+[Needle Worm-Card 3]
+patch=1,EE,70491412,extended,00100101
+
+[Needle Worm-Card 4]
+patch=1,EE,70491414,extended,00100101
+
+[Needle Worm-Card 5]
+patch=1,EE,70491416,extended,00100101
+
+[Man Eater-Card 1]
+patch=1,EE,70491418,extended,00100101
+
+[Man Eater-Card 2]
+patch=1,EE,7049141A,extended,00100101
+
+[Man Eater-Card 3]
+patch=1,EE,7049141C,extended,00100101
+
+[Man Eater-Card 4]
+patch=1,EE,7049141E,extended,00100101
+
+[Man Eater-Card 5]
+patch=1,EE,70491420,extended,00100101
+
+[Sonic Maid-Card 1]
+patch=1,EE,7049142C,extended,00100101
+
+[Sonic Maid-Card 2]
+patch=1,EE,7049142E,extended,00100101
+
+[Sonic Maid-Card 3]
+patch=1,EE,70491430,extended,00100101
+
+[Sonic Maid-Card 4]
+patch=1,EE,70491432,extended,00100101
+
+[Sonic Maid-Card 5]
+patch=1,EE,70491434,extended,00100101
+
+[Kumootoko-Card 1]
+patch=1,EE,70491440,extended,00100101
+
+[Kumootoko-Card 2]
+patch=1,EE,70491442,extended,00100101
+
+[Kumootoko-Card 3]
+patch=1,EE,70491444,extended,00100101
+
+[Kumootoko-Card 4]
+patch=1,EE,70491446,extended,00100101
+
+[Kumootoko-Card 5]
+patch=1,EE,70491448,extended,00100101
+
+[Cockroach Knight-Card 1]
+patch=1,EE,7049144A,extended,00100101
+
+[Cockroach Knight-Card 2]
+patch=1,EE,7049144C,extended,00100101
+
+[Cockroach Knight-Card 3]
+patch=1,EE,7049144E,extended,00100101
+
+[Cockroach Knight-Card 4]
+patch=1,EE,70491450,extended,00100101
+
+[Cockroach Knight-Card 5]
+patch=1,EE,70491452,extended,00100101
+
+[Larvae Moth-Card 1]
+patch=1,EE,70491454,extended,00100101
+
+[Larvae Moth-Card 2]
+patch=1,EE,70491456,extended,00100101
+
+[Larvae Moth-Card 3]
+patch=1,EE,70491458,extended,00100101
+
+[Larvae Moth-Card 4]
+patch=1,EE,7049145A,extended,00100101
+
+[Larvae Moth-Card 5]
+patch=1,EE,7049145C,extended,00100101
+
+[Gokibore-Card 1]
+patch=1,EE,7049145E,extended,00100101
+
+[Gokibore-Card 2]
+patch=1,EE,70491460,extended,00100101
+
+[Gokibore-Card 3]
+patch=1,EE,70491462,extended,00100101
+
+[Gokibore-Card 4]
+patch=1,EE,70491464,extended,00100101
+
+[Gokibore-Card 5]
+patch=1,EE,70491466,extended,00100101
+
+[Hercules Beetle-Card 1]
+patch=1,EE,70491468,extended,00100101
+
+[Hercules Beetle-Card 2]
+patch=1,EE,7049146A,extended,00100101
+
+[Hercules Beetle-Card 3]
+patch=1,EE,7049146C,extended,00100101
+
+[Hercules Beetle-Card 4]
+patch=1,EE,7049146E,extended,00100101
+
+[Hercules Beetle-Card 5]
+patch=1,EE,70491470,extended,00100101
+
+[Kwagar Hercules-Card 1]
+patch=1,EE,70491472,extended,00100101
+
+[Kwagar Hercules-Card 2]
+patch=1,EE,70491474,extended,00100101
+
+[Kwagar Hercules-Card 3]
+patch=1,EE,70491476,extended,00100101
+
+[Kwagar Hercules-Card 4]
+patch=1,EE,70491478,extended,00100101
+
+[Kwagar Hercules-Card 5]
+patch=1,EE,7049147A,extended,00100101
+
+[Ancient Tree Of Enlightenment-Card 1]
+patch=1,EE,7049147C,extended,00100101
+
+[Ancient Tree Of Enlightenment-Card 2]
+patch=1,EE,7049147E,extended,00100101
+
+[Ancient Tree Of Enlightenment-Card 3]
+patch=1,EE,70491480,extended,00100101
+
+[Ancient Tree Of Enlightenment-Card 4]
+patch=1,EE,70491482,extended,00100101
+
+[Ancient Tree Of Enlightenment-Card 5]
+patch=1,EE,70491484,extended,00100101
+
+[Arsenal Bug-Card 1]
+patch=1,EE,70491486,extended,00100101
+
+[Arsenal Bug-Card 2]
+patch=1,EE,70491488,extended,00100101
+
+[Arsenal Bug-Card 3]
+patch=1,EE,7049148A,extended,00100101
+
+[Arsenal Bug-Card 4]
+patch=1,EE,7049148C,extended,00100101
+
+[Arsenal Bug-Card 5]
+patch=1,EE,7049148E,extended,00100101
+
+[Kuwagala Alpha-Card 1]
+patch=1,EE,70491490,extended,00100101
+
+[Kuwagala Alpha-Card 2]
+patch=1,EE,70491492,extended,00100101
+
+[Kuwagala Alpha-Card 3]
+patch=1,EE,70491494,extended,00100101
+
+[Kuwagala Alpha-Card 4]
+patch=1,EE,70491496,extended,00100101
+
+[Kuwagala Alpha-Card 5]
+patch=1,EE,70491498,extended,00100101
+
+[Spiked Snail-Card 1]
+patch=1,EE,7049149A,extended,00100101
+
+[Spiked Snail-Card 2]
+patch=1,EE,7049149C,extended,00100101
+
+[Spiked Snail-Card 3]
+patch=1,EE,7049149E,extended,00100101
+
+[Spiked Snail-Card 4]
+patch=1,EE,704914A0,extended,00100101
+
+[Spiked Snail-Card 5]
+patch=1,EE,704914A2,extended,00100101
+
+[Green Phantom King-Card 1]
+patch=1,EE,704914A4,extended,00100101
+
+[Green Phantom King-Card 2]
+patch=1,EE,704914A6,extended,00100101
+
+[Green Phantom King-Card 3]
+patch=1,EE,704914A8,extended,00100101
+
+[Green Phantom King-Card 4]
+patch=1,EE,704914AA,extended,00100101
+
+[Green Phantom King-Card 5]
+patch=1,EE,704914AC,extended,00100101
+
+[Kamakiriman-Card 1]
+patch=1,EE,704914AE,extended,00100101
+
+[Kamakiriman-Card 2]
+patch=1,EE,704914B0,extended,00100101
+
+[Kamakiriman-Card 3]
+patch=1,EE,704914B2,extended,00100101
+
+[Kamakiriman-Card 4]
+patch=1,EE,704914B4,extended,00100101
+
+[Kamakiriman-Card 5]
+patch=1,EE,704914B6,extended,00100101
+
+[Hunter Spider-Card 1]
+patch=1,EE,704914C2,extended,00100101
+
+[Hunter Spider-Card 2]
+patch=1,EE,704914C4,extended,00100101
+
+[Hunter Spider-Card 3]
+patch=1,EE,704914C6,extended,00100101
+
+[Hunter Spider-Card 4]
+patch=1,EE,704914C8,extended,00100101
+
+[Hunter Spider-Card 5]
+patch=1,EE,704914CA,extended,00100101
+
+[Queen Of Autumn Leaves-Card 1]
+patch=1,EE,704914E0,extended,00100101
+
+[Queen Of Autumn Leaves-Card 2]
+patch=1,EE,704914E2,extended,00100101
+
+[Queen Of Autumn Leaves-Card 3]
+patch=1,EE,704914E4,extended,00100101
+
+[Queen Of Autumn Leaves-Card 4]
+patch=1,EE,704914E6,extended,00100101
+
+[Queen Of Autumn Leaves-Card 5]
+patch=1,EE,704914E8,extended,00100101
+
+[Dungeon Worm-Card 1]
+patch=1,EE,704914EA,extended,00100101
+
+[Dungeon Worm-Card 2]
+patch=1,EE,704914EC,extended,00100101
+
+[Dungeon Worm-Card 3]
+patch=1,EE,704914EE,extended,00100101
+
+[Dungeon Worm-Card 4]
+patch=1,EE,704914F0,extended,00100101
+
+[Dungeon Worm-Card 5]
+patch=1,EE,704914F2,extended,00100101
+
+[Trent-Card 1]
+patch=1,EE,704914FE,extended,00100101
+
+[Trent-Card 2]
+patch=1,EE,70491500,extended,00100101
+
+[Trent-Card 3]
+patch=1,EE,70491502,extended,00100101
+
+[Trent-Card 4]
+patch=1,EE,70491504,extended,00100101
+
+[Trent-Card 5]
+patch=1,EE,70491506,extended,00100101
+
+[Great Moth-Card 1]
+patch=1,EE,70491508,extended,00100101
+
+[Great Moth-Card 2]
+patch=1,EE,7049150A,extended,00100101
+
+[Great Moth-Card 3]
+patch=1,EE,7049150C,extended,00100101
+
+[Great Moth-Card 4]
+patch=1,EE,7049150E,extended,00100101
+
+[Great Moth-Card 5]
+patch=1,EE,70491510,extended,00100101
+
+[Perfectly Ultimate Green Moch-Card 1]
+patch=1,EE,70491512,extended,00100101
+
+[Perfectly Ultimate Green Moch-Card 2]
+patch=1,EE,70491514,extended,00100101
+
+[Perfectly Ultimate Green Moch-Card 3]
+patch=1,EE,70491516,extended,00100101
+
+[Perfectly Ultimate Green Moch-Card 4]
+patch=1,EE,70491518,extended,00100101
+
+[Perfectly Ultimate Green Moch-Card 5]
+patch=1,EE,7049151A,extended,00100101
+
+[Javelin Beetle-Card 1]
+patch=1,EE,7049151C,extended,00100101
+
+[Javelin Beetle-Card 2]
+patch=1,EE,7049151E,extended,00100101
+
+[Javelin Beetle-Card 3]
+patch=1,EE,70491520,extended,00100101
+
+[Javelin Beetle-Card 4]
+patch=1,EE,70491522,extended,00100101
+
+[Javelin Beetle-Card 5]
+patch=1,EE,70491524,extended,00100101
+
+[Dancing Elf-Card 1]
+patch=1,EE,70491526,extended,00100101
+
+[Dancing Elf-Card 2]
+patch=1,EE,70491528,extended,00100101
+
+[Dancing Elf-Card 3]
+patch=1,EE,7049152A,extended,00100101
+
+[Dancing Elf-Card 4]
+patch=1,EE,7049152C,extended,00100101
+
+[Dancing Elf-Card 5]
+patch=1,EE,7049152E,extended,00100101
+
+[Droll Bird-Card 1]
+patch=1,EE,70491530,extended,00100101
+
+[Droll Bird-Card 2]
+patch=1,EE,70491532,extended,00100101
+
+[Droll Bird-Card 3]
+patch=1,EE,70491534,extended,00100101
+
+[Droll Bird-Card 4]
+patch=1,EE,70491536,extended,00100101
+
+[Droll Bird-Card 5]
+patch=1,EE,70491538,extended,00100101
+
+[Petit Dragon-Card 1]
+patch=1,EE,7049153A,extended,00100101
+
+[Petit Dragon-Card 2]
+patch=1,EE,7049153C,extended,00100101
+
+[Petit Dragon-Card 3]
+patch=1,EE,7049153E,extended,00100101
+
+[Petit Dragon-Card 4]
+patch=1,EE,70491540,extended,00100101
+
+[Petit Dragon-Card 5]
+patch=1,EE,70491542,extended,00100101
+
+[Kurama-Card 1]
+patch=1,EE,70491558,extended,00100101
+
+[Kurama-Card 2]
+patch=1,EE,7049155A,extended,00100101
+
+[Kurama-Card 3]
+patch=1,EE,7049155C,extended,00100101
+
+[Kurama-Card 4]
+patch=1,EE,7049155E,extended,00100101
+
+[Kurama-Card 5]
+patch=1,EE,70491560,extended,00100101
+
+[Baby Dragon-Card 1]
+patch=1,EE,70491562,extended,00100101
+
+[Baby Dragon-Card 2]
+patch=1,EE,70491564,extended,00100101
+
+[Baby Dragon-Card 3]
+patch=1,EE,70491566,extended,00100101
+
+[Baby Dragon-Card 4]
+patch=1,EE,70491568,extended,00100101
+
+[Baby Dragon-Card 5]
+patch=1,EE,7049156A,extended,00100101
+
+[Wicket Dragon With The Ersatz Head-Card 1]
+patch=1,EE,7049156C,extended,00100101
+
+[Wicket Dragon With The Ersatz Head-Card 2]
+patch=1,EE,7049156E,extended,00100101
+
+[Wicket Dragon With The Ersatz Head-Card 3]
+patch=1,EE,70491570,extended,00100101
+
+[Wicket Dragon With The Ersatz Head-Card 4]
+patch=1,EE,70491572,extended,00100101
+
+[Wicket Dragon With The Ersatz Head-Card 5]
+patch=1,EE,70491574,extended,00100101
+
+[One-Eyed Shield Dragon-Card 1]
+patch=1,EE,70491580,extended,00100101
+
+[One-Eyed Shield Dragon-Card 2]
+patch=1,EE,70491582,extended,00100101
+
+[One-Eyed Shield Dragon-Card 3]
+patch=1,EE,70491584,extended,00100101
+
+[One-Eyed Shield Dragon-Card 4]
+patch=1,EE,70491586,extended,00100101
+
+[One-Eyed Shield Dragon-Card 5]
+patch=1,EE,70491588,extended,00100101
+
+[Killer Needle-Card 1]
+patch=1,EE,7049158A,extended,00100101
+
+[Killer Needle-Card 2]
+patch=1,EE,7049158C,extended,00100101
+
+[Killer Needle-Card 3]
+patch=1,EE,7049158E,extended,00100101
+
+[Killer Needle-Card 4]
+patch=1,EE,70491590,extended,00100101
+
+[Killer Needle-Card 5]
+patch=1,EE,70491592,extended,00100101
+
+[Faith Bird-Card 1]
+patch=1,EE,70491594,extended,00100101
+
+[Faith Bird-Card 2]
+patch=1,EE,70491596,extended,00100101
+
+[Faith Bird-Card 3]
+patch=1,EE,70491598,extended,00100101
+
+[Faith Bird-Card 4]
+patch=1,EE,7049159A,extended,00100101
+
+[Faith Bird-Card 5]
+patch=1,EE,7049159C,extended,00100101
+
+[Tyhone-Card 1]
+patch=1,EE,7049159E,extended,00100101
+
+[Tyhone-Card 2]
+patch=1,EE,704915A0,extended,00100101
+
+[Tyhone-Card 3]
+patch=1,EE,704915A2,extended,00100101
+
+[Tyhone-Card 4]
+patch=1,EE,704915A4,extended,00100101
+
+[Tyhone-Card 5]
+patch=1,EE,704915A6,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #1-Card 1]
+patch=1,EE,704915A8,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #1-Card 2]
+patch=1,EE,704915AA,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #1-Card 3]
+patch=1,EE,704915AC,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #1-Card 4]
+patch=1,EE,704915AE,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #1-Card 5]
+patch=1,EE,704915B0,extended,00100101
+
+[Twin-Headed Behemoth-Card 1]
+patch=1,EE,704915B2,extended,00100101
+
+[Twin-Headed Behemoth-Card 2]
+patch=1,EE,704915B4,extended,00100101
+
+[Twin-Headed Behemoth-Card 3]
+patch=1,EE,704915B6,extended,00100101
+
+[Twin-Headed Behemoth-Card 4]
+patch=1,EE,704915B8,extended,00100101
+
+[Twin-Headed Behemoth-Card 5]
+patch=1,EE,704915BA,extended,00100101
+
+[Kazejin-Card 1]
+patch=1,EE,704915C6,extended,00100101
+
+[Kazejin-Card 2]
+patch=1,EE,704915C8,extended,00100101
+
+[Kazejin-Card 3]
+patch=1,EE,704915CA,extended,00100101
+
+[Kazejin-Card 4]
+patch=1,EE,704915CC,extended,00100101
+
+[Kazejin-Card 5]
+patch=1,EE,704915CE,extended,00100101
+
+[Harpie Lady-Card 1]
+patch=1,EE,704915D0,extended,00100101
+
+[Harpie Lady-Card 2]
+patch=1,EE,704915D2,extended,00100101
+
+[Harpie Lady-Card 3]
+patch=1,EE,704915D4,extended,00100101
+
+[Harpie Lady-Card 4]
+patch=1,EE,704915D6,extended,00100101
+
+[Harpie Lady-Card 5]
+patch=1,EE,704915D8,extended,00100101
+
+[Lesser Dragon-Card 1]
+patch=1,EE,704915EE,extended,00100101
+
+[Lesser Dragon-Card 2]
+patch=1,EE,704915F0,extended,00100101
+
+[Lesser Dragon-Card 3]
+patch=1,EE,704915F2,extended,00100101
+
+[Lesser Dragon-Card 4]
+patch=1,EE,704915F4,extended,00100101
+
+[Lesser Dragon-Card 5]
+patch=1,EE,704915F6,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #2-Card 1]
+patch=1,EE,704915F8,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #2-Card 2]
+patch=1,EE,704915FA,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #2-Card 3]
+patch=1,EE,704915FC,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #2-Card 4]
+patch=1,EE,704915FE,extended,00100101
+
+[Winged Dragon, Guardian Of The Fortress #2-Card 5]
+patch=1,EE,70491600,extended,00100101
+
+[Crow Goblin-Card 1]
+patch=1,EE,70491602,extended,00100101
+
+[Crow Goblin-Card 2]
+patch=1,EE,70491604,extended,00100101
+
+[Crow Goblin-Card 3]
+patch=1,EE,70491606,extended,00100101
+
+[Crow Goblin-Card 4]
+patch=1,EE,70491608,extended,00100101
+
+[Crow Goblin-Card 5]
+patch=1,EE,7049160A,extended,00100101
+
+[Sky Dragon-Card 1]
+patch=1,EE,70491620,extended,00100101
+
+[Sky Dragon-Card 2]
+patch=1,EE,70491622,extended,00100101
+
+[Sky Dragon-Card 3]
+patch=1,EE,70491624,extended,00100101
+
+[Sky Dragon-Card 4]
+patch=1,EE,70491626,extended,00100101
+
+[Sky Dragon-Card 5]
+patch=1,EE,70491628,extended,00100101
+
+[Thousand Dragon-Card 1]
+patch=1,EE,7049162A,extended,00100101
+
+[Thousand Dragon-Card 2]
+patch=1,EE,7049162C,extended,00100101
+
+[Thousand Dragon-Card 3]
+patch=1,EE,7049162E,extended,00100101
+
+[Thousand Dragon-Card 4]
+patch=1,EE,70491630,extended,00100101
+
+[Thousand Dragon-Card 5]
+patch=1,EE,70491632,extended,00100101
+
+[Parrot Dragon-Card 1]
+patch=1,EE,70491634,extended,00100101
+
+[Parrot Dragon-Card 2]
+patch=1,EE,70491636,extended,00100101
+
+[Parrot Dragon-Card 3]
+patch=1,EE,70491638,extended,00100101
+
+[Parrot Dragon-Card 4]
+patch=1,EE,7049163A,extended,00100101
+
+[Parrot Dragon-Card 5]
+patch=1,EE,7049163C,extended,00100101
+
+[Harpie Lady Sisters-Card 1]
+patch=1,EE,7049163E,extended,00100101
+
+[Harpie Lady Sisters-Card 2]
+patch=1,EE,70491640,extended,00100101
+
+[Harpie Lady Sisters-Card 3]
+patch=1,EE,70491642,extended,00100101
+
+[Harpie Lady Sisters-Card 4]
+patch=1,EE,70491644,extended,00100101
+
+[Harpie Lady Sisters-Card 5]
+patch=1,EE,70491646,extended,00100101
+
+[Metal Dragon-Card 1]
+patch=1,EE,70491648,extended,00100101
+
+[Metal Dragon-Card 2]
+patch=1,EE,7049164A,extended,00100101
+
+[Metal Dragon-Card 3]
+patch=1,EE,7049164C,extended,00100101
+
+[Metal Dragon-Card 4]
+patch=1,EE,7049164E,extended,00100101
+
+[Metal Dragon-Card 5]
+patch=1,EE,70491650,extended,00100101
+
+[Gaia The Dragon Champion-Card 1]
+patch=1,EE,70491652,extended,00100101
+
+[Gaia The Dragon Champion-Card 2]
+patch=1,EE,70491654,extended,00100101
+
+[Gaia The Dragon Champion-Card 3]
+patch=1,EE,70491656,extended,00100101
+
+[Gaia The Dragon Champion-Card 4]
+patch=1,EE,70491658,extended,00100101
+
+[Gaia The Dragon Champion-Card 5]
+patch=1,EE,7049165A,extended,00100101
+
+[Steel Scorpion-Card 1]
+patch=1,EE,70491666,extended,00100101
+
+[Steel Scorpion-Card 2]
+patch=1,EE,70491668,extended,00100101
+
+[Steel Scorpion-Card 3]
+patch=1,EE,7049166A,extended,00100101
+
+[Steel Scorpion-Card 4]
+patch=1,EE,7049166C,extended,00100101
+
+[Steel Scorpion-Card 5]
+patch=1,EE,7049166E,extended,00100101
+
+[Kaminarikozou-Card 1]
+patch=1,EE,70491670,extended,00100101
+
+[Kaminarikozou-Card 2]
+patch=1,EE,70491672,extended,00100101
+
+[Kaminarikozou-Card 3]
+patch=1,EE,70491674,extended,00100101
+
+[Kaminarikozou-Card 4]
+patch=1,EE,70491676,extended,00100101
+
+[Kaminarikozou-Card 5]
+patch=1,EE,70491678,extended,00100101
+
+[Mega Thunderball-Card 1]
+patch=1,EE,7049167A,extended,00100101
+
+[Mega Thunderball-Card 2]
+patch=1,EE,7049167C,extended,00100101
+
+[Mega Thunderball-Card 3]
+patch=1,EE,7049167E,extended,00100101
+
+[Mega Thunderball-Card 4]
+patch=1,EE,70491680,extended,00100101
+
+[Mega Thunderball-Card 5]
+patch=1,EE,70491682,extended,00100101
+
+[LaLa Li-oon-Card 1]
+patch=1,EE,70491684,extended,00100101
+
+[LaLa Li-oon-Card 2]
+patch=1,EE,70491686,extended,00100101
+
+[LaLa Li-oon-Card 3]
+patch=1,EE,70491688,extended,00100101
+
+[LaLa Li-oon-Card 4]
+patch=1,EE,7049168A,extended,00100101
+
+[LaLa Li-oon-Card 5]
+patch=1,EE,7049168C,extended,00100101
+
+[Oscillo Hero #2-Card 1]
+patch=1,EE,7049168E,extended,00100101
+
+[Oscillo Hero #2-Card 2]
+patch=1,EE,70491690,extended,00100101
+
+[Oscillo Hero #2-Card 3]
+patch=1,EE,70491692,extended,00100101
+
+[Oscillo Hero #2-Card 4]
+patch=1,EE,70491694,extended,00100101
+
+[Oscillo Hero #2-Card 5]
+patch=1,EE,70491696,extended,00100101
+
+[Shovel Crusher-Card 1]
+patch=1,EE,704916AC,extended,00100101
+
+[Shovel Crusher-Card 2]
+patch=1,EE,704916AE,extended,00100101
+
+[Shovel Crusher-Card 3]
+patch=1,EE,704916B0,extended,00100101
+
+[Shovel Crusher-Card 4]
+patch=1,EE,704916B2,extended,00100101
+
+[Shovel Crusher-Card 5]
+patch=1,EE,704916B4,extended,00100101
+
+[Two-Mouth Darkruler-Card 1]
+patch=1,EE,704916B6,extended,00100101
+
+[Two-Mouth Darkruler-Card 2]
+patch=1,EE,704916B8,extended,00100101
+
+[Two-Mouth Darkruler-Card 3]
+patch=1,EE,704916BA,extended,00100101
+
+[Two-Mouth Darkruler-Card 4]
+patch=1,EE,704916BC,extended,00100101
+
+[Two-Mouth Darkruler-Card 5]
+patch=1,EE,704916BE,extended,00100101
+
+[Electric Lizard-Card 1]
+patch=1,EE,704916D4,extended,00100101
+
+[Electric Lizard-Card 2]
+patch=1,EE,704916D6,extended,00100101
+
+[Electric Lizard-Card 3]
+patch=1,EE,704916D8,extended,00100101
+
+[Electric Lizard-Card 4]
+patch=1,EE,704916DA,extended,00100101
+
+[Electric Lizard-Card 5]
+patch=1,EE,704916DC,extended,00100101
+
+[Bolt Penguin-Card 1]
+patch=1,EE,704916DE,extended,00100101
+
+[Bolt Penguin-Card 2]
+patch=1,EE,704916E0,extended,00100101
+
+[Bolt Penguin-Card 3]
+patch=1,EE,704916E2,extended,00100101
+
+[Bolt Penguin-Card 4]
+patch=1,EE,704916E4,extended,00100101
+
+[Bolt Penguin-Card 5]
+patch=1,EE,704916E6,extended,00100101
+
+[Cyber Soldier-Card 1]
+patch=1,EE,704916F2,extended,00100101
+
+[Cyber Soldier-Card 2]
+patch=1,EE,704916F4,extended,00100101
+
+[Cyber Soldier-Card 3]
+patch=1,EE,704916F6,extended,00100101
+
+[Cyber Soldier-Card 4]
+patch=1,EE,704916F8,extended,00100101
+
+[Cyber Soldier-Card 5]
+patch=1,EE,704916FA,extended,00100101
+
+[Sanga Of The Thunder-Card 1]
+patch=1,EE,704916FC,extended,00100101
+
+[Sanga Of The Thunder-Card 2]
+patch=1,EE,704916FE,extended,00100101
+
+[Sanga Of The Thunder-Card 3]
+patch=1,EE,70491700,extended,00100101
+
+[Sanga Of The Thunder-Card 4]
+patch=1,EE,70491702,extended,00100101
+
+[Sanga Of The Thunder-Card 5]
+patch=1,EE,70491704,extended,00100101
+
+[Akakieisu-Card 1]
+patch=1,EE,70491706,extended,00100101
+
+[Akakieisu-Card 2]
+patch=1,EE,70491708,extended,00100101
+
+[Akakieisu-Card 3]
+patch=1,EE,7049170A,extended,00100101
+
+[Akakieisu-Card 4]
+patch=1,EE,7049170C,extended,00100101
+
+[Akakieisu-Card 5]
+patch=1,EE,7049170E,extended,00100101
+
+[The Immortal Of Thunder-Card 1]
+patch=1,EE,7049171A,extended,00100101
+
+[The Immortal Of Thunder-Card 2]
+patch=1,EE,7049171C,extended,00100101
+
+[The Immortal Of Thunder-Card 3]
+patch=1,EE,7049171E,extended,00100101
+
+[The Immortal Of Thunder-Card 4]
+patch=1,EE,70491720,extended,00100101
+
+[The Immortal Of Thunder-Card 5]
+patch=1,EE,70491722,extended,00100101
+
+[Dice Armadillo-Card 1]
+patch=1,EE,7049172E,extended,00100101
+
+[Dice Armadillo-Card 2]
+patch=1,EE,70491730,extended,00100101
+
+[Dice Armadillo-Card 3]
+patch=1,EE,70491732,extended,00100101
+
+[Dice Armadillo-Card 4]
+patch=1,EE,70491734,extended,00100101
+
+[Dice Armadillo-Card 5]
+patch=1,EE,70491736,extended,00100101
+
+[Machine Attacker-Card 1]
+patch=1,EE,70491742,extended,00100101
+
+[Machine Attacker-Card 2]
+patch=1,EE,70491744,extended,00100101
+
+[Machine Attacker-Card 3]
+patch=1,EE,70491746,extended,00100101
+
+[Machine Attacker-Card 4]
+patch=1,EE,70491748,extended,00100101
+
+[Machine Attacker-Card 5]
+patch=1,EE,7049174A,extended,00100101
+
+[Giant Mech-Soldier-Card 1]
+patch=1,EE,7049174C,extended,00100101
+
+[Giant Mech-Soldier-Card 2]
+patch=1,EE,7049174E,extended,00100101
+
+[Giant Mech-Soldier-Card 3]
+patch=1,EE,70491750,extended,00100101
+
+[Giant Mech-Soldier-Card 4]
+patch=1,EE,70491752,extended,00100101
+
+[Giant Mech-Soldier-Card 5]
+patch=1,EE,70491754,extended,00100101
+
+[Gear Golem The Moving Fortress-Card 1]
+patch=1,EE,70491756,extended,00100101
+
+[Gear Golem The Moving Fortress-Card 2]
+patch=1,EE,70491758,extended,00100101
+
+[Gear Golem The Moving Fortress-Card 3]
+patch=1,EE,7049175A,extended,00100101
+
+[Gear Golem The Moving Fortress-Card 4]
+patch=1,EE,7049175C,extended,00100101
+
+[Gear Golem The Moving Fortress-Card 5]
+patch=1,EE,7049175E,extended,00100101
+
+[Steel Ogre Grotto #1-Card 1]
+patch=1,EE,70491760,extended,00100101
+
+[Steel Ogre Grotto #1-Card 2]
+patch=1,EE,70491762,extended,00100101
+
+[Steel Ogre Grotto #1-Card 3]
+patch=1,EE,70491764,extended,00100101
+
+[Steel Ogre Grotto #1-Card 4]
+patch=1,EE,70491766,extended,00100101
+
+[Steel Ogre Grotto #1-Card 5]
+patch=1,EE,70491768,extended,00100101
+
+[Thunder Dragon-Card 1]
+patch=1,EE,7049176A,extended,00100101
+
+[Thunder Dragon-Card 2]
+patch=1,EE,7049176C,extended,00100101
+
+[Thunder Dragon-Card 3]
+patch=1,EE,7049176E,extended,00100101
+
+[Thunder Dragon-Card 4]
+patch=1,EE,70491770,extended,00100101
+
+[Thunder Dragon-Card 5]
+patch=1,EE,70491772,extended,00100101
+
+[Kaminari Attack-Card 1]
+patch=1,EE,70491774,extended,00100101
+
+[Kaminari Attack-Card 2]
+patch=1,EE,70491776,extended,00100101
+
+[Kaminari Attack-Card 3]
+patch=1,EE,70491778,extended,00100101
+
+[Kaminari Attack-Card 4]
+patch=1,EE,7049177A,extended,00100101
+
+[Kaminari Attack-Card 5]
+patch=1,EE,7049177C,extended,00100101
+
+[Steel Ogre Grotto #2-Card 1]
+patch=1,EE,7049177E,extended,00100101
+
+[Steel Ogre Grotto #2-Card 2]
+patch=1,EE,70491780,extended,00100101
+
+[Steel Ogre Grotto #2-Card 3]
+patch=1,EE,70491782,extended,00100101
+
+[Steel Ogre Grotto #2-Card 4]
+patch=1,EE,70491784,extended,00100101
+
+[Steel Ogre Grotto #2-Card 5]
+patch=1,EE,70491786,extended,00100101
+
+[Royal Guard-Card 1]
+patch=1,EE,70491788,extended,00100101
+
+[Royal Guard-Card 2]
+patch=1,EE,7049178A,extended,00100101
+
+[Royal Guard-Card 3]
+patch=1,EE,7049178C,extended,00100101
+
+[Royal Guard-Card 4]
+patch=1,EE,7049178E,extended,00100101
+
+[Royal Guard-Card 5]
+patch=1,EE,70491790,extended,00100101
+
+[Tripwire Beast-Card 1]
+patch=1,EE,70491792,extended,00100101
+
+[Tripwire Beast-Card 2]
+patch=1,EE,70491794,extended,00100101
+
+[Tripwire Beast-Card 3]
+patch=1,EE,70491796,extended,00100101
+
+[Tripwire Beast-Card 4]
+patch=1,EE,70491798,extended,00100101
+
+[Tripwire Beast-Card 5]
+patch=1,EE,7049179A,extended,00100101
+
+[Cyber Saurus-Card 1]
+patch=1,EE,7049179C,extended,00100101
+
+[Cyber Saurus-Card 2]
+patch=1,EE,7049179E,extended,00100101
+
+[Cyber Saurus-Card 3]
+patch=1,EE,704917A0,extended,00100101
+
+[Cyber Saurus-Card 4]
+patch=1,EE,704917A2,extended,00100101
+
+[Cyber Saurus-Card 5]
+patch=1,EE,704917A4,extended,00100101
+
+[Twin-Headed Thunder Dragon-Card 1]
+patch=1,EE,704917A6,extended,00100101
+
+[Twin-Headed Thunder Dragon-Card 2]
+patch=1,EE,704917A8,extended,00100101
+
+[Twin-Headed Thunder Dragon-Card 3]
+patch=1,EE,704917AA,extended,00100101
+
+[Twin-Headed Thunder Dragon-Card 4]
+patch=1,EE,704917AC,extended,00100101
+
+[Twin-Headed Thunder Dragon-Card 5]
+patch=1,EE,704917AE,extended,00100101

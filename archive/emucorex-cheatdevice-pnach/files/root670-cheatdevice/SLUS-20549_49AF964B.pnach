@@ -1,0 +1,94 @@
+gametitle=Conflict Desert Storm (SLUS-20549)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902CED94,extended,0C0CA1AD
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C024316
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AE020060
+patch=1,EE,201A31F8,extended,0C030088
+patch=1,EE,201A31FC,extended,4600B034
+
+[Infinite Ammo]
+patch=1,EE,201A8A70,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,101A8A6C,extended,00000001
+
+[Never Reload]
+patch=1,EE,201A8B14,extended,00000000
+
+[Infinite Medi-Kits]
+patch=1,EE,201AC0B0,extended,00000000
+
+[Extra Medi-Kits]
+patch=1,EE,201AC0AC,extended,00451021
+
+[Infinite Grenades]
+patch=1,EE,201A8644,extended,00000000
+
+[Extra Grenades]
+patch=1,EE,101A8640,extended,00000001
+
+[Weapons Are Automatic]
+patch=1,EE,201A8B20,extended,00000000
+
+[Rapid Fire (Both Players)]
+patch=1,EE,201A8A10,extended,00000000
+
+[Rapid Fire P1]
+patch=1,EE,D03D9402,extended,0000F7FF
+patch=1,EE,201A8A10,extended,00000000
+patch=1,EE,D03D9402,extended,0000FFFF
+patch=1,EE,201A8A10,extended,AE020064
+
+[Rapid Fire P2]
+patch=1,EE,D03D9802,extended,0000F7FF
+patch=1,EE,201A8A10,extended,00000000
+patch=1,EE,D03D9802,extended,0000FFFF
+patch=1,EE,201A8A10,extended,AE020064
+
+[P1 Press {R1}+{R2}+{L1}+{L1}+{SELECT} To Skip Level]
+patch=1,EE,D03D9402,extended,0000F0FE
+patch=1,EE,203CA854,extended,00000001
+patch=1,EE,D03D9402,extended,0000FFFF
+patch=1,EE,203CA854,extended,00000000
+
+[P1 Press {R1}+{R2}+{L1}+{L2} To Disable Damage]
+patch=1,EE,201300D8,extended,00000000
+patch=1,EE,D03D9402,extended,0000F0FF
+patch=1,EE,201300B8,extended,00000000
+patch=1,EE,D03D9402,extended,0000F0FF
+patch=1,EE,201300C8,extended,00000000
+patch=1,EE,D03D9402,extended,0000FFFF
+patch=1,EE,201300B8,extended,10400017
+patch=1,EE,D03D9402,extended,0000FFFF
+patch=1,EE,201300C8,extended,10400013
+
+[Idiot AI]
+patch=1,EE,2034ED40,extended,00000001
+
+[Max Trooper Level]
+patch=1,EE,2034ED44,extended,00000009
+
+[Enable Cheat Menu (Options)]
+patch=1,EE,2034ED4C,extended,00000001
+
+[Enable Bar Graphs Display]
+patch=1,EE,2034F058,extended,00000001
+
+[Enable Grunt State Info]
+patch=1,EE,2034F15C,extended,00000001
+
+[Enable Vehicle State Info]
+patch=1,EE,2034F160,extended,00000001
+
+[Enable Quad Tree Display]
+patch=1,EE,2034F164,extended,00000001
+
+[Enable Debug Mappings]
+patch=1,EE,2034FCE8,extended,00000001

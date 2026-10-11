@@ -1,0 +1,444 @@
+gametitle=Kelly Slater's Pro Surfer (SLUS-20334)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903BB90C,extended,0C0F45C7
+
+[Unlock All Characters]
+patch=1,EE,404270C8,extended,000400A3
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Personality Suits]
+patch=1,EE,40434AA8,extended,0008001E
+patch=1,EE,00000001,extended,00000000
+
+[Antarctica]
+patch=1,EE,20435484,extended,00000001
+
+[Bells]
+patch=1,EE,204357F8,extended,00000001
+
+[Cortez Bank]
+patch=1,EE,20435B6C,extended,00000001
+
+[G-Land]
+patch=1,EE,20435EE0,extended,00000001
+
+[Jaws]
+patch=1,EE,20436254,extended,00000001
+
+[J-Bay]
+patch=1,EE,204365C8,extended,00000001
+
+[Mavericks]
+patch=1,EE,2043693C,extended,00000001
+
+[Mundaka]
+patch=1,EE,20436CB0,extended,00000001
+
+[Pipeline]
+patch=1,EE,20437024,extended,00000001
+
+[Sebastian]
+patch=1,EE,20437398,extended,00000001
+
+[Teahupoo]
+patch=1,EE,2043770C,extended,00000001
+
+[Trestles]
+patch=1,EE,20437A80,extended,00000001
+
+[Wave House]
+patch=1,EE,20437DF4,extended,00000001
+
+[Cosmos]
+patch=1,EE,20438168,extended,00000001
+
+[Currens Point]
+patch=1,EE,204384DC,extended,00000001
+
+[Bells Night]
+patch=1,EE,20438850,extended,00000001
+
+[G-Land Cloudy]
+patch=1,EE,20438BC4,extended,00000001
+
+[Kirra Dusk]
+patch=1,EE,204392AC,extended,00000001
+
+[Kirra]
+patch=1,EE,20439620,extended,00000001
+
+[Mundaka Cloudy]
+patch=1,EE,20439D08,extended,00000001
+
+[Teahupoo B.C.]
+patch=1,EE,2043A07C,extended,00000001
+
+[Teahupoo Evening]
+patch=1,EE,2043A3F0,extended,00000001
+
+[Unlock All Cheats]
+patch=1,EE,4042BD48,extended,00160002
+patch=1,EE,00000000,extended,00000000
+
+[Bruce Irons]
+patch=1,EE,40425710,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Donavon Frankenreiter]
+patch=1,EE,4042599C,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Kalani Robb]
+patch=1,EE,40425C28,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Kelly Slater]
+patch=1,EE,40425EB4,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Lisa Anderson]
+patch=1,EE,40426140,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Nathan Fletcher]
+patch=1,EE,404263CC,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Rob Machado]
+patch=1,EE,40426658,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Tom Carroll]
+patch=1,EE,404268E4,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Tom Curren]
+patch=1,EE,40426B70,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Travis Pastrana]
+patch=1,EE,40427088,extended,00040001
+patch=1,EE,00000014,extended,00000000
+patch=1,EE,40427314,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Tony Hawk]
+patch=1,EE,404275A0,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Surfreak]
+patch=1,EE,4042782C,extended,00040001
+patch=1,EE,00000014,extended,00000000
+
+[Rainbow]
+patch=1,EE,2042BD4C,extended,00000001
+
+[Trippy]
+patch=1,EE,2042BD54,extended,00000001
+
+[Freak]
+patch=1,EE,2042BD5C,extended,00000001
+
+[Tony Hawk]
+patch=1,EE,2042BD64,extended,00000001
+
+[Tiki God]
+patch=1,EE,2042BD6C,extended,00000001
+
+[Pastrana]
+patch=1,EE,2042BD74,extended,00000001
+
+[1st Person]
+patch=1,EE,2042BD7C,extended,00000001
+
+[Balance]
+patch=1,EE,2042BD84,extended,00000001
+
+[Super Bal.]
+patch=1,EE,2042BD8C,extended,00000001
+
+[High Jump]
+patch=1,EE,2042BD94,extended,00000001
+
+[Higher Jump]
+patch=1,EE,2042BD9C,extended,00000001
+
+[Perf Balance]
+patch=1,EE,2042BDA4,extended,00000001
+
+[Pers Suit]
+patch=1,EE,2042BDAC,extended,00000001
+
+[All Suits]
+patch=1,EE,2042BDB4,extended,00000001
+
+[Bails Movie]
+patch=1,EE,2042BDBC,extended,00000001
+
+[Pipe Ses Vid]
+patch=1,EE,2042BDC4,extended,00000001
+
+[All Levels]
+patch=1,EE,2042BDCC,extended,00000001
+
+[All Boards]
+patch=1,EE,2042BDD4,extended,00000001
+
+[All Surfers]
+patch=1,EE,2042BDDC,extended,00000001
+
+[All Tricks]
+patch=1,EE,2042BDE4,extended,00000001
+
+[Max Stats]
+patch=1,EE,2042BDEC,extended,00000001
+
+[Mega Cheat]
+patch=1,EE,2042BDF4,extended,00000001
+
+[Max Spin]
+patch=1,EE,2095A1A0,extended,00000014
+
+[Max Speed]
+patch=1,EE,2095A1A4,extended,00000014
+
+[Max Air]
+patch=1,EE,2095A1A8,extended,00000014
+
+[Max Balance]
+patch=1,EE,2095A1AC,extended,00000014
+
+[Unlock Personality Suit]
+patch=1,EE,2096A330,extended,00000001
+
+[Unlock All Boards]
+patch=1,EE,4095A234,extended,00090001
+patch=1,EE,00000001,extended,00000000
+
+[Tutorial (Beginner)]
+patch=1,EE,2096A354,extended,00000001
+
+[Tutorial (Intermediate)]
+patch=1,EE,2096A378,extended,00000001
+
+[Tutorial (Advanced)]
+patch=1,EE,2096A39C,extended,00000001
+
+[Sebastian (Photo Shoot)]
+patch=1,EE,2096A3C0,extended,00000001
+
+[Trestles (Air Assault)]
+patch=1,EE,2096A3E4,extended,00000001
+
+[Trestles (Falling Blocks]
+patch=1,EE,2096A408,extended,00000001
+
+[Mavericks (Get Ranked)]
+patch=1,EE,2096A42C,extended,00000001
+
+[Mavericks (Nu Skool)]
+patch=1,EE,2096A450,extended,00000001
+
+[Sebastian (Diving Blocks)]
+patch=1,EE,2096A474,extended,00000001
+
+[Antarctica (Frigid Blocks)]
+patch=1,EE,2096A498,extended,00000001
+
+[Antarctica (Pretty Pictures)]
+patch=1,EE,2096A4BC,extended,00000001
+
+[Jaws (Shacked)]
+patch=1,EE,2096A4E0,extended,00000001
+
+[Pipeline (Top Two)]
+patch=1,EE,2096A504,extended,00000001
+
+[Jaws (Click Flash)]
+patch=1,EE,2096A528,extended,00000001
+
+[Teahupoo (Rotations)]
+patch=1,EE,2096A54C,extended,00000001
+
+[Pipeline (Sliding Blocks)]
+patch=1,EE,2096A570,extended,00000001
+
+[Teahupoo (Edukashun)]
+patch=1,EE,2096A594,extended,00000001
+
+[Bells (Descending Blocks)]
+patch=1,EE,2096A5B8,extended,00000001
+
+[Bells (Face Lift)]
+patch=1,EE,2096A5DC,extended,00000001
+
+[Currens Point (Dropping Blocks)]
+patch=1,EE,2096A600,extended,00000001
+
+[Kirra (Photo Op)]
+patch=1,EE,2096A624,extended,00000001
+
+[Kirra (Downward Blocks)]
+patch=1,EE,2096A648,extended,00000001
+
+[G-Land (Superiority)]
+patch=1,EE,2096A66C,extended,00000001
+
+[G-Land (In The Pit)]
+patch=1,EE,2096A690,extended,00000001
+
+[Currens Point (Back Of My Forehead)]
+patch=1,EE,2096A6B4,extended,00000001
+
+[J-Bay (No Posers)]
+patch=1,EE,2096A6D8,extended,00000001
+
+[Mundaka (Cover Shot)]
+patch=1,EE,2096A6FC,extended,00000001
+
+[J-Bay (Maximum Revolution)]
+patch=1,EE,2096A720,extended,00000001
+
+[Mundaka (Block Party)]
+patch=1,EE,2096A744,extended,00000001
+
+[Cortez Bank (Face Off)]
+patch=1,EE,2096A768,extended,00000001
+
+[Teahupoo (Tiki God)]
+patch=1,EE,2096A78C,extended,00000001
+
+[Cosmos (Shambala)]
+patch=1,EE,2096A7B0,extended,00000001
+
+[Tutorial-Goal 1 (Beginner)]
+patch=1,EE,2096A358,extended,00000001
+
+[Tutorial-Goal 1 (Intermediate)]
+patch=1,EE,2096A37C,extended,00000001
+
+[Tutorial-Goal 1 (Advanced)]
+patch=1,EE,2096A3A0,extended,00000001
+
+[Sebastian-All Goals (Photo Shoot)]
+patch=1,EE,4096A3C4,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Trestles-All Goals (Air Assault)]
+patch=1,EE,4096A3E8,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Trestles-All Goals (Falling Blocks)]
+patch=1,EE,4096A40C,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Mavericks-All Goals (Get Ranked)]
+patch=1,EE,4096A430,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Mavericks-All Goals (Nu Skool)]
+patch=1,EE,4096A454,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Sebastian-All Goals (Diving Blocks)]
+patch=1,EE,4096A478,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Antarctica-All Goals (Frigid Blocks)]
+patch=1,EE,4096A49C,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Antarctica-All Goals (Pretty Pictures)]
+patch=1,EE,4096A4C0,extended,00030001
+patch=1,EE,00000001,extended,00000000
+
+[Jaws-All Goals (Shacked)]
+patch=1,EE,4096A4E4,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Pipeline-All Goals (Top Two)]
+patch=1,EE,4096A508,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Jaws-All Goals (Click Flash)]
+patch=1,EE,4096A52C,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Teahupoo-All Goals (Rotations)]
+patch=1,EE,4096A550,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Pipeline-All Goals (Sliding Blocks)]
+patch=1,EE,4096A574,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Teahupoo-All Goals (Edukashun)]
+patch=1,EE,4096A598,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Bells-All Goals (Descending Blocks)]
+patch=1,EE,4096A5BC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Bells-All Goals (Face Lift)]
+patch=1,EE,4096A5E0,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Currens Point-All Goals (Dropping Blocks)]
+patch=1,EE,4096A604,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Kirra-All Goals (Photo Op)]
+patch=1,EE,4096A628,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Kirra-All Goals (Downward Blocks)]
+patch=1,EE,4096A64C,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[G-Land-All Goals (Superiority)]
+patch=1,EE,4096A670,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[G-Land-All Goals (In The Pit)]
+patch=1,EE,4096A694,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Currens Point-Goal 1 (Back Of My Forehead)]
+patch=1,EE,2096A6B8,extended,00000001
+
+[Currens Point-Goal 2 (Back Of My Forehead)]
+patch=1,EE,2096A6BC,extended,00000001
+
+[J-Bay-All Goals (No Posers)]
+patch=1,EE,4096A6DC,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Mundaka-All Goals (Cover Shot)]
+patch=1,EE,4096A700,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[J-Bay-All Goals (Maximum Revolution)]
+patch=1,EE,4096A724,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Mundaka-All Goals (Block Party)]
+patch=1,EE,4096A748,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Cortez Bank-All Goals (Face Off)]
+patch=1,EE,4096A76C,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Teahupoo-Goal 1 (Tiki God)]
+patch=1,EE,2096A790,extended,00000001
+
+[Teahupoo-Goal 2 (Tiki God)]
+patch=1,EE,2096A794,extended,00000001
+
+[Cosmos-Goal 1 (Shambala)]
+patch=1,EE,2096A7B4,extended,00000001

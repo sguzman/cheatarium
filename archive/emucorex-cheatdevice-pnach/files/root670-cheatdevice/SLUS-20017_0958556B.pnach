@@ -1,0 +1,117 @@
+gametitle=Maximo-Ghosts To Glory (SLUS-20017)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9014EB9C,extended,0C046C46
+
+[Unlock Mastery]
+patch=1,EE,101CF904,extended,00000001
+
+[Unlock Gallery]
+patch=1,EE,101CF914,extended,00000001
+
+[Unlock Play Story Sequences]
+patch=1,EE,101CF954,extended,00000001
+
+[Have Most Powerups]
+patch=1,EE,1025CE76,extended,0000FFFF
+patch=1,EE,1025CEBC,extended,0000EFFF
+
+[Infinite Gold Armor (Upon Pickup)]
+patch=1,EE,2025CE88,extended,44A00000
+
+[Tiny Mode]
+patch=1,EE,2025CE90,extended,3E800000
+
+[Huge Mode]
+patch=1,EE,2025CE90,extended,40000000
+
+[Infinite Health]
+patch=1,EE,1025CEA0,extended,00000010
+
+[Infinite Lives]
+patch=1,EE,1025CEA8,extended,00000063
+
+[Max Gold Koins]
+patch=1,EE,1025CEAC,extended,000003E7
+
+[Max Spirits]
+patch=1,EE,1025CEB0,extended,00000063
+
+[Max Red Keys]
+patch=1,EE,1025CEB4,extended,00000063
+
+[Max Red Coins]
+patch=1,EE,1025CEB8,extended,00000063
+
+[Infinite Shield]
+patch=1,EE,1025CEC0,extended,0000000A
+
+[Infinite Sword Energy]
+patch=1,EE,1025CEC4,extended,00000014
+
+[Have Gold Key]
+patch=1,EE,1025CECC,extended,00000001
+
+[Always Double Jump]
+patch=1,EE,1025CF00,extended,00000000
+
+[Easier Kills]
+patch=1,EE,1025CF06,extended,00000005
+
+[Have Flame Tongue]
+patch=1,EE,1025CE9C,extended,00000001
+
+[Have Frostbiter]
+patch=1,EE,1025CE9C,extended,00000002
+
+[Have Pure Blade]
+patch=1,EE,1025CE9C,extended,00000003
+
+[Have Armageddon]
+patch=1,EE,1025CE9C,extended,00000004
+
+[Have Normal Shield]
+patch=1,EE,1025CED0,extended,00000002
+
+[Have Silver Shield]
+patch=1,EE,1025CED0,extended,00000003
+
+[Have Gold Shield]
+patch=1,EE,0025CED0,extended,00000004
+
+[Have Normal Boxers]
+patch=1,EE,1025CEA4,extended,00000001
+
+[Have Normal Armor]
+patch=1,EE,1025CEA4,extended,00000002
+
+[Have Gold Armor]
+patch=1,EE,1025CEA4,extended,00000003
+
+[Have Normal Shield]
+patch=1,EE,1025CED0,extended,00000002
+
+[Have Silver Shield]
+patch=1,EE,1025CED0,extended,00000003
+
+[Have Gold Shield]
+patch=1,EE,0025CED0,extended,00000004
+
+[Have White M Boxers]
+patch=1,EE,1025CEA4,extended,00000001
+patch=1,EE,1025CED8,extended,00000001
+
+[Have Blue Pow Boxers]
+patch=1,EE,1025CEA4,extended,00000001
+patch=1,EE,1025CED8,extended,00000002
+
+[Have Heart Boxers]
+patch=1,EE,1025CEA4,extended,00000001
+patch=1,EE,1025CED8,extended,00000003
+
+[Have Cow Boxers]
+patch=1,EE,1025CEA4,extended,00000001
+patch=1,EE,1025CED8,extended,00000004

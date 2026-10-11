@@ -1,0 +1,380 @@
+gametitle=Driver-Parallel Lines (SLUS-21271)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90375B88,extended,0C0D73B2
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C013F80
+patch=1,EE,200C0224,extended,00A00008
+patch=1,EE,200C0228,extended,AC8106B0
+patch=1,EE,2018AC28,extended,0C030088
+
+[Health Doesnt Decrease From Crashes]
+patch=1,EE,20226010,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2026601C,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,20266014,extended,240207D0
+
+[Extra Ammo]
+patch=1,EE,20266014,extended,00621021
+
+[Never Reload]
+patch=1,EE,20266588,extended,00000000
+
+[Infinite Nitro]
+patch=1,EE,202E1B44,extended,00000000
+
+[Infinite Money]
+patch=1,EE,106E11BC,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,206E11BC,extended,0098967F
+
+[Have All Vehicles In Garage]
+patch=1,EE,406E1808,extended,00610042
+patch=1,EE,00000000,extended,00000001
+
+[Body Snatchers]
+patch=1,EE,706E093A,extended,00000001
+
+[Indestructible Cars]
+patch=1,EE,706E093B,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,706E093C,extended,00000001
+
+[Infinite Nitro]
+patch=1,EE,706E093D,extended,00000001
+
+[Invincibility]
+patch=1,EE,706E093E,extended,00000001
+
+[Weak Cop Cars]
+patch=1,EE,706E093F,extended,00000001
+
+[Zero Cost]
+patch=1,EE,706E0940,extended,00000001
+
+[Gang Warfare]
+patch=1,EE,706E0941,extended,00000001
+
+[Night Night]
+patch=1,EE,706E0942,extended,00000001
+
+[Shortest Day]
+patch=1,EE,706E0943,extended,00000001
+
+[Body Snatchers]
+patch=1,EE,706E093A,extended,00000002
+
+[Indestructible Cars]
+patch=1,EE,706E093B,extended,00000002
+
+[Infinite Ammo]
+patch=1,EE,706E093C,extended,00000002
+
+[Infinite Nitro]
+patch=1,EE,706E093D,extended,00000002
+
+[Invincibility]
+patch=1,EE,706E093E,extended,00000002
+
+[Weak Cop Cars]
+patch=1,EE,706E093F,extended,00000002
+
+[Zero Cost]
+patch=1,EE,706E0940,extended,00000002
+
+[Far Out]
+patch=1,EE,706E0941,extended,00000002
+
+[Night Night]
+patch=1,EE,706E0942,extended,00000002
+
+[Shortest Day]
+patch=1,EE,706E0943,extended,00000002
+
+[Max Felony]
+patch=1,EE,406E180C,extended,00800042
+patch=1,EE,3F800000,extended,00000000
+
+[No Felony]
+patch=1,EE,406E180C,extended,00800042
+patch=1,EE,00000000,extended,00000000
+
+[Max Nitro]
+patch=1,EE,406E182C,extended,00800042
+patch=1,EE,42200000,extended,00000000
+
+[No Nitro]
+patch=1,EE,406E182C,extended,00800042
+patch=1,EE,00000000,extended,00000000
+
+[No Damage]
+patch=1,EE,406E18AC,extended,00800042
+patch=1,EE,00000000,extended,00000000
+
+[Has All Upgrades]
+patch=1,EE,406E1830,extended,00800042
+patch=1,EE,0000FE4E,extended,00000000
+
+[Max Felony]
+patch=1,EE,206E180C,extended,3F800000
+
+[No Felony]
+patch=1,EE,206E180C,extended,00000000
+
+[Max Nitro]
+patch=1,EE,206E182C,extended,42200000
+
+[No Nitro]
+patch=1,EE,206E182C,extended,00000000
+
+[No Damage]
+patch=1,EE,206E18AC,extended,00000000
+
+[Engine-Stage 1]
+patch=1,EE,706E1830,extended,00100002
+
+[Engine-Stage 2]
+patch=1,EE,706E1830,extended,00100008
+
+[Engine-Stage 3]
+patch=1,EE,706E1830,extended,00100004
+
+[Adjustable Springs]
+patch=1,EE,706E1830,extended,00100040
+
+[Adjustable Shocks]
+patch=1,EE,706E1830,extended,00100200
+
+[Adjustable Ride Height]
+patch=1,EE,706E1830,extended,00100400
+
+[Uprated Brakes]
+patch=1,EE,706E1830,extended,00100800
+
+[Nitrous Injection Kit]
+patch=1,EE,706E1830,extended,00101000
+
+[Bullet-proof Tires]
+patch=1,EE,706E1830,extended,00102000
+
+[Bullet-proof Glass]
+patch=1,EE,706E1830,extended,00104000
+
+[Tinted Glass]
+patch=1,EE,706E1830,extended,00108000
+
+[All Upgrades]
+patch=1,EE,706E1830,extended,0010FE4E
+
+[Max Felony]
+patch=1,EE,206E1914,extended,3F800000
+
+[No Felony]
+patch=1,EE,206E1914,extended,00000000
+
+[Max Nitro]
+patch=1,EE,206E1934,extended,42200000
+
+[No Nitro]
+patch=1,EE,206E1934,extended,00000000
+
+[No Damage]
+patch=1,EE,206E19B4,extended,00000000
+
+[Engine-Stage 1]
+patch=1,EE,706E1938,extended,00100002
+
+[Engine-Stage 2]
+patch=1,EE,706E1938,extended,00100008
+
+[Engine-Stage 3]
+patch=1,EE,706E1938,extended,00100004
+
+[Adjustable Springs]
+patch=1,EE,706E1938,extended,00100040
+
+[Adjustable Shocks]
+patch=1,EE,706E1938,extended,00100200
+
+[Adjustable Ride Height]
+patch=1,EE,706E1938,extended,00100400
+
+[Uprated Brakes]
+patch=1,EE,706E1938,extended,00100800
+
+[Nitrous Injection Kit]
+patch=1,EE,706E1938,extended,00101000
+
+[Bullet-proof Tires]
+patch=1,EE,706E1938,extended,00102000
+
+[Bullet-proof Glass]
+patch=1,EE,706E1938,extended,00104000
+
+[Tinted Glass]
+patch=1,EE,706E1938,extended,00108000
+
+[All Upgrades]
+patch=1,EE,706E1938,extended,0010FE4E
+
+[Max Felony]
+patch=1,EE,206E1A1C,extended,3F800000
+
+[No Felony]
+patch=1,EE,206E1A1C,extended,00000000
+
+[Max Nitro]
+patch=1,EE,206E1A3C,extended,42200000
+
+[No Nitro]
+patch=1,EE,206E1A3C,extended,00000000
+
+[No Damage]
+patch=1,EE,206E1ABC,extended,00000000
+
+[Engine-Stage 1]
+patch=1,EE,706E1A40,extended,00100002
+
+[Engine-Stage 2]
+patch=1,EE,706E1A40,extended,00100008
+
+[Engine-Stage 3]
+patch=1,EE,706E1A40,extended,00100004
+
+[Adjustable Springs]
+patch=1,EE,706E1A40,extended,00100040
+
+[Adjustable Shocks]
+patch=1,EE,706E1A40,extended,00100200
+
+[Adjustable Ride Height]
+patch=1,EE,706E1A40,extended,00100400
+
+[Uprated Brakes]
+patch=1,EE,706E1A40,extended,00100800
+
+[Nitrous Injection Kit]
+patch=1,EE,706E1A40,extended,00101000
+
+[Bullet-proof Tires]
+patch=1,EE,706E1A40,extended,00102000
+
+[Bullet-proof Glass]
+patch=1,EE,706E1A40,extended,00104000
+
+[Tinted Glass]
+patch=1,EE,706E1A40,extended,00108000
+
+[All Upgrades]
+patch=1,EE,706E1A40,extended,0010FE4E
+
+[Max Felony]
+patch=1,EE,206E1B24,extended,3F800000
+
+[No Felony]
+patch=1,EE,206E1B24,extended,00000000
+
+[Max Nitro]
+patch=1,EE,206E1B44,extended,42200000
+
+[No Nitro]
+patch=1,EE,206E1B44,extended,00000000
+
+[No Damage]
+patch=1,EE,206E1BC4,extended,00000000
+
+[Engine-Stage 1]
+patch=1,EE,706E1B48,extended,00100002
+
+[Engine-Stage 2]
+patch=1,EE,706E1B48,extended,00100008
+
+[Engine-Stage 3]
+patch=1,EE,706E1B48,extended,00100004
+
+[Adjustable Springs]
+patch=1,EE,706E1B48,extended,00100040
+
+[Adjustable Shocks]
+patch=1,EE,706E1B48,extended,00100200
+
+[Adjustable Ride Height]
+patch=1,EE,706E1B48,extended,00100400
+
+[Uprated Brakes]
+patch=1,EE,706E1B48,extended,00100800
+
+[Nitrous Injection Kit]
+patch=1,EE,706E1B48,extended,00101000
+
+[Bullet-proof Tires]
+patch=1,EE,706E1B48,extended,00102000
+
+[Bullet-proof Glass]
+patch=1,EE,706E1B48,extended,00104000
+
+[Tinted Glass]
+patch=1,EE,706E1B48,extended,00108000
+
+[All Upgrades]
+patch=1,EE,706E1B48,extended,0010FE4E
+
+[Max Felony]
+patch=1,EE,206E1C2C,extended,3F800000
+
+[No Felony]
+patch=1,EE,206E1C2C,extended,00000000
+
+[Max Nitro]
+patch=1,EE,206E1C4C,extended,42200000
+
+[No Nitro]
+patch=1,EE,206E1C4C,extended,00000000
+
+[No Damage]
+patch=1,EE,206E1CCC,extended,00000000
+
+[Engine-Stage 1]
+patch=1,EE,706E1C50,extended,00100002
+
+[Engine-Stage 2]
+patch=1,EE,706E1C50,extended,00100008
+
+[Engine-Stage 3]
+patch=1,EE,706E1C50,extended,00100004
+
+[Adjustable Springs]
+patch=1,EE,706E1C50,extended,00100040
+
+[Adjustable Shocks]
+patch=1,EE,706E1C50,extended,00100200
+
+[Adjustable Ride Height]
+patch=1,EE,706E1C50,extended,00100400
+
+[Uprated Brakes]
+patch=1,EE,706E1C50,extended,00100800
+
+[Nitrous Injection Kit]
+patch=1,EE,706E1C50,extended,00101000
+
+[Bullet-proof Tires]
+patch=1,EE,706E1C50,extended,00102000
+
+[Bullet-proof Glass]
+patch=1,EE,706E1C50,extended,00104000
+
+[Tinted Glass]
+patch=1,EE,706E1C50,extended,00108000
+
+[All Upgrades]
+patch=1,EE,706E1C50,extended,0010FE4E

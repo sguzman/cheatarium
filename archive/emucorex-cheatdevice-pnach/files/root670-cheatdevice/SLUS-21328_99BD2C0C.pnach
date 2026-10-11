@@ -1,0 +1,259 @@
+gametitle=Pac-Man World Rally (SLUS-21328)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901596F8,extended,0C087A9D
+
+[Unlock Pooka]
+patch=1,EE,2024E04C,extended,00000000
+
+[Unlock Fygar]
+patch=1,EE,2024E074,extended,00000000
+
+[Unlock The Prince]
+patch=1,EE,2024E07C,extended,00000000
+
+[Unlock Nightmare Difficulty]
+patch=1,EE,2024E0D0,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024C25C,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024C25C,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024C260,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024C260,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024C264,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024C264,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024C268,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024C268,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024C29C,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024C29C,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024C2AC,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024C2AC,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024C2B0,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024C2B0,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024C2B4,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024C2B4,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024C2B8,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024C2B8,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024C3EC,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024C3EC,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024C3FC,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024C3FC,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024C400,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024C400,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024C404,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024C404,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024C408,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024C408,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024C53C,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024C53C,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024C54C,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024C54C,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024C550,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024C550,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024C554,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024C554,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024C558,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024C558,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024C68C,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024C68C,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024C69C,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024C69C,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024C6A0,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024C6A0,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024C6A4,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024C6A4,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024C6A8,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024C6A8,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024C7DC,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024C7DC,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024C7EC,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024C7EC,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024C7F0,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024C7F0,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024C7F4,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024C7F4,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024C7F8,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024C7F8,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024C92C,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024C92C,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024C93C,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024C93C,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024C940,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024C940,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024C944,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024C944,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024C948,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024C948,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024CA7C,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024CA7C,extended,00000000
+
+[Infinite Pac-Mobile Meter]
+patch=1,EE,2024CA8C,extended,00000001
+
+[No Infinite Pac-Mobile Meter]
+patch=1,EE,2024CA8C,extended,00000000
+
+[Always Have Cherries]
+patch=1,EE,2024CA90,extended,00000001
+
+[Never Have Cherries]
+patch=1,EE,2024CA90,extended,00000000
+
+[Always Have Watermelon]
+patch=1,EE,2024CA94,extended,00000001
+
+[Never Have Watermelon]
+patch=1,EE,2024CA94,extended,00000000
+
+[Always Have Grapes]
+patch=1,EE,2024CA98,extended,00000001
+
+[Never Have Grapes]
+patch=1,EE,2024CA98,extended,00000000
+
+[Max Circuit Points]
+patch=1,EE,2024CBCC,extended,0000270F
+
+[No Circuit Points]
+patch=1,EE,2024CBCC,extended,00000000

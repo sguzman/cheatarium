@@ -1,0 +1,4035 @@
+gametitle=Predator-Concrete Jungle (SLUS-20875)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903A5518,extended,0C0ED37E
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C0142C8
+patch=1,EE,200C0224,extended,AC410CCC
+patch=1,EE,200C0228,extended,0809E19C
+patch=1,EE,200C022C,extended,46010036
+patch=1,EE,20278668,extended,08030088
+
+[Infinite Energy]
+patch=1,EE,200C0230,extended,3C0142C8
+patch=1,EE,200C0234,extended,AE410CD0
+patch=1,EE,200C0238,extended,03E00008
+patch=1,EE,200C023C,extended,C6410CD0
+patch=1,EE,2023B084,extended,0C03008C
+
+[Infinite Health (Alternate)]
+patch=1,EE,2024D858,extended,00000000
+
+[Infinite Energy (Alternate)]
+patch=1,EE,2023C214,extended,00000000
+
+[Infinite Equipment Usage]
+patch=1,EE,2025011C,extended,00000000
+
+[Max Infinite Equipment Usage]
+patch=1,EE,20250114,extended,24020063
+
+[Extra Equipment Usage]
+patch=1,EE,10250114,extended,00000001
+
+[Always Max Active Equipment]
+patch=1,EE,200C0240,extended,24060063
+patch=1,EE,200C0244,extended,080CCF98
+patch=1,EE,200C0248,extended,A4660D0A
+patch=1,EE,201C29FC,extended,0C030090
+
+[Infinite Items/Ammo Usage]
+patch=1,EE,2024F798,extended,00000000
+
+[Max Infinite Items/Ammo]
+patch=1,EE,2024F794,extended,240203E7
+
+[Extra Items/Ammo]
+patch=1,EE,1024F794,extended,00000001
+
+[Unlock All Costumes]
+patch=1,EE,204B0E68,extended,000000FF
+
+[Unlock All Hunting Gear]
+patch=1,EE,404B0E70,extended,00070001
+patch=1,EE,00000002,extended,00000000
+
+[Unlock All Ritual Challenges]
+patch=1,EE,104B0ED0,extended,000001FE
+
+[Have All Chapters Completed]
+patch=1,EE,404B0F48,extended,001B001A
+patch=1,EE,00000001,extended,00000000
+
+[Have Upgrades For All Levels]
+patch=1,EE,202176F8,extended,00000000
+
+[Health Rating]
+patch=1,EE,204B0E58,extended,00000063
+
+[Energy Rating]
+patch=1,EE,204B0E5C,extended,00000063
+
+[Armor]
+patch=1,EE,204B0E60,extended,00000064
+
+[Max Bandolier]
+patch=1,EE,204B0E64,extended,00000063
+
+[Have All Ritual Challenges Completed]
+patch=1,EE,104B0ED4,extended,000001FE
+
+[Have All Upgrades/Costumes]
+patch=1,EE,204B0ED8,extended,FFFFFFFF
+patch=1,EE,204B0EDC,extended,FFFFFFFF
+
+[Always Low Total Game Time]
+patch=1,EE,204B0EE0,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B0EE8,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B0EE8,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B0EEC,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B0EEC,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B0EF0,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B0EF0,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B0EF4,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B0EF4,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B0EF8,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B0EF8,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B0EFC,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B0EFC,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B0F00,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B0F00,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B0F04,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B0F04,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B0F08,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B0F08,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B0F0C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B0F0C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B0F10,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B0F10,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B0F14,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B0F14,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B0F18,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B0F18,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B0F1C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B0F1C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B0F20,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B0F20,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B0F24,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B0F24,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B0F2C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B0F2C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B0F30,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B0F30,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B0F34,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B0F34,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B0F38,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B0F38,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B0F3C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B0F3C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B0F40,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B0F40,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B0F44,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B0F44,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B0F48,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B0F50,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B0F50,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B0F54,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B0F54,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B0F58,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B0F58,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B0F5C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B0F5C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B0F60,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B0F60,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B0F64,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B0F64,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B0F68,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B0F68,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B0F6C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B0F6C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B0F70,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B0F70,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B0F74,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B0F74,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B0F78,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B0F78,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B0F7C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B0F7C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B0F80,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B0F80,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B0F84,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B0F84,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B0F88,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B0F88,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B0F8C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B0F8C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B0F94,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B0F94,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B0F98,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B0F98,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B0F9C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B0F9C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B0FA0,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B0FA0,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B0FA4,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B0FA4,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B0FA8,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B0FA8,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B0FAC,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B0FAC,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B0FB0,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B0FB8,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B0FB8,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B0FBC,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B0FBC,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B0FC0,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B0FC0,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B0FC4,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B0FC4,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B0FC8,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B0FC8,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B0FCC,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B0FCC,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B0FD0,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B0FD0,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B0FD4,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B0FD4,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B0FD8,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B0FD8,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B0FDC,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B0FDC,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B0FE0,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B0FE0,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B0FE4,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B0FE4,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B0FE8,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B0FE8,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B0FEC,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B0FEC,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B0FF0,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B0FF0,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B0FF4,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B0FF4,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B0FFC,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B0FFC,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1000,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1000,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1004,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1004,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1008,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1008,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B100C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B100C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1010,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1010,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1014,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1014,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1018,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1020,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1020,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1024,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1024,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1028,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1028,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B102C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B102C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1030,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1030,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1034,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1034,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1038,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1038,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B103C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B103C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1040,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1040,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1044,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1044,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1048,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1048,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B104C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B104C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1050,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1050,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1054,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1054,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1058,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1058,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B105C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B105C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1064,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1064,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1068,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1068,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B106C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B106C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1070,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1070,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1074,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1074,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1078,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1078,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B107C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B107C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1080,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1088,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1088,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B108C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B108C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1090,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1090,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1094,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1094,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1098,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1098,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B109C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B109C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B10A0,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B10A0,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B10A4,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B10A4,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B10A8,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B10A8,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B10AC,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B10AC,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B10B0,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B10B0,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B10B4,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B10B4,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B10B8,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B10B8,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B10BC,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B10BC,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B10C0,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B10C0,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B10C4,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B10C4,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B10CC,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B10CC,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B10D0,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B10D0,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B10D4,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B10D4,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B10D8,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B10D8,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B10DC,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B10DC,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B10E0,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B10E0,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B10E4,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B10E4,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B10E8,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B10F0,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B10F0,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B10F4,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B10F4,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B10F8,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B10F8,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B10FC,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B10FC,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1100,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1100,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1104,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1104,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1108,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1108,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B110C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B110C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1110,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1110,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1114,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1114,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1118,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1118,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B111C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B111C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1120,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1120,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1124,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1124,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1128,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1128,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B112C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B112C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1134,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1134,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1138,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1138,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B113C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B113C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1140,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1140,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1144,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1144,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1148,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1148,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B114C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B114C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1150,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1158,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1158,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B115C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B115C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1160,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1160,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1164,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1164,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1168,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1168,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B116C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B116C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1170,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1170,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B1174,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B1174,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1178,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1178,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B117C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B117C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1180,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1180,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1184,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1184,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1188,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1188,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B118C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B118C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1190,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1190,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1194,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1194,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B119C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B119C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B11A0,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B11A0,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B11A4,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B11A4,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B11A8,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B11A8,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B11AC,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B11AC,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B11B0,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B11B0,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B11B4,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B11B4,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B11B8,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B11C0,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B11C0,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B11C4,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B11C4,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B11C8,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B11C8,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B11CC,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B11CC,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B11D0,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B11D0,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B11D4,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B11D4,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B11D8,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B11D8,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B11DC,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B11DC,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B11E0,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B11E0,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B11E4,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B11E4,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B11E8,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B11E8,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B11EC,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B11EC,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B11F0,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B11F0,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B11F4,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B11F4,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B11F8,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B11F8,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B11FC,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B11FC,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1204,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1204,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1208,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1208,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B120C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B120C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1210,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1210,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1214,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1214,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1218,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1218,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B121C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B121C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1220,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1228,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1228,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B122C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B122C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1230,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1230,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1234,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1234,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1238,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1238,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B123C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B123C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1240,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1240,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B1244,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B1244,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1248,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1248,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B124C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B124C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1250,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1250,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1254,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1254,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1258,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1258,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B125C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B125C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1260,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1260,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1264,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1264,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B126C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B126C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1270,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1270,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1274,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1274,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1278,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1278,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B127C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B127C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1280,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1280,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1284,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1284,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1288,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1290,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1290,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1294,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1294,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1298,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1298,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B129C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B129C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B12A0,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B12A0,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B12A4,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B12A4,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B12A8,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B12A8,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B12AC,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B12AC,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B12B0,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B12B0,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B12B4,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B12B4,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B12B8,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B12B8,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B12BC,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B12BC,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B12C0,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B12C0,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B12C4,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B12C4,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B12C8,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B12C8,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B12CC,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B12CC,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B12D4,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B12D4,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B12D8,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B12D8,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B12DC,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B12DC,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B12E0,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B12E0,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B12E4,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B12E4,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B12E8,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B12E8,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B12EC,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B12EC,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B12F0,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B12F8,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B12F8,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B12FC,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B12FC,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1300,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1300,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1304,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1304,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1308,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1308,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B130C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B130C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1310,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1310,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B1314,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B1314,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1318,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1318,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B131C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B131C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1320,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1320,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1324,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1324,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1328,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1328,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B132C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B132C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1330,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1330,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1334,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1334,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B133C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B133C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1340,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1340,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1344,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1344,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1348,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1348,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B134C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B134C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1350,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1350,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1354,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1354,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1358,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1360,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1360,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1364,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1364,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1368,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1368,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B136C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B136C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1370,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1370,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1374,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1374,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1378,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1378,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B137C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B137C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1380,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1380,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1384,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1384,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1388,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1388,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B138C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B138C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1390,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1390,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1394,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1394,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1398,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1398,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B139C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B139C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B13A4,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B13A4,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B13A8,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B13A8,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B13AC,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B13AC,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B13B0,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B13B0,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B13B4,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B13B4,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B13B8,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B13B8,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B13BC,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B13BC,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B13C0,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B13C8,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B13C8,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B13CC,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B13CC,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B13D0,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B13D0,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B13D4,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B13D4,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B13D8,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B13D8,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B13DC,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B13DC,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B13E0,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B13E0,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B13E4,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B13E4,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B13E8,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B13E8,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B13EC,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B13EC,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B13F0,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B13F0,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B13F4,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B13F4,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B13F8,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B13F8,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B13FC,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B13FC,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1400,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1400,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1404,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1404,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B140C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B140C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1410,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1410,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1414,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1414,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1418,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1418,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B141C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B141C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1420,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1420,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1424,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1424,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1428,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1430,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1430,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1434,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1434,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1438,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1438,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B143C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B143C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1440,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1440,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1444,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1444,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1448,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1448,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B144C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B144C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1450,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1450,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1454,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1454,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1458,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1458,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B145C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B145C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1460,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1460,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1464,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1464,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1468,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1468,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B146C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B146C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1474,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1474,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1478,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1478,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B147C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B147C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1480,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1480,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1484,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1484,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1488,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1488,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B148C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B148C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1490,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1498,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1498,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B149C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B149C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B14A0,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B14A0,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B14A4,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B14A4,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B14A8,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B14A8,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B14AC,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B14AC,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B14B0,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B14B0,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B14B4,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B14B4,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B14B8,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B14B8,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B14BC,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B14BC,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B14C0,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B14C0,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B14C4,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B14C4,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B14C8,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B14C8,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B14CC,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B14CC,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B14D0,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B14D0,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B14D4,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B14D4,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B14DC,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B14DC,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B14E0,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B14E0,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B14E4,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B14E4,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B14E8,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B14E8,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B14EC,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B14EC,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B14F0,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B14F0,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B14F4,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B14F4,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B14F8,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1500,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1500,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1504,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1504,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1508,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1508,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B150C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B150C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1510,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1510,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1514,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1514,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1518,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1518,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B151C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B151C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1520,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1520,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1524,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1524,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1528,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1528,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B152C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B152C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1530,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1530,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1534,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1534,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1538,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1538,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B153C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B153C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1544,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1544,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1548,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1548,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B154C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B154C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1550,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1550,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1554,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1554,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1558,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1558,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B155C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B155C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1560,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1568,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1568,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B156C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B156C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1570,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1570,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1574,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1574,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1578,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1578,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B157C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B157C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1580,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1580,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B1584,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B1584,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1588,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1588,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B158C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B158C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1590,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1590,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1594,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1594,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1598,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1598,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B159C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B159C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B15A0,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B15A0,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B15A4,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B15A4,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B15AC,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B15AC,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B15B0,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B15B0,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B15B4,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B15B4,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B15B8,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B15B8,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B15BC,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B15BC,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B15C0,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B15C0,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B15C4,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B15C4,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B15C8,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B15D0,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B15D0,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B15D4,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B15D4,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B15D8,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B15D8,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B15DC,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B15DC,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B15E0,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B15E0,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B15E4,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B15E4,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B15E8,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B15E8,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B15EC,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B15EC,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B15F0,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B15F0,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B15F4,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B15F4,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B15F8,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B15F8,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B15FC,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B15FC,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1600,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1600,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1604,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1604,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1608,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1608,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B160C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B160C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1614,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1614,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1618,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1618,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B161C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B161C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1620,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1620,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1624,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1624,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1628,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1628,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B162C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B162C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1630,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1638,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1638,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B163C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B163C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1640,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1640,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1644,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1644,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1648,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1648,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B164C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B164C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1650,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1650,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B1654,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B1654,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1658,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1658,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B165C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B165C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1660,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1660,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1664,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1664,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1668,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1668,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B166C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B166C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1670,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1670,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1674,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1674,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B167C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B167C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1680,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1680,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1684,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1684,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1688,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1688,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B168C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B168C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1690,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1690,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1694,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1694,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1698,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B16A0,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B16A0,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B16A4,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B16A4,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B16A8,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B16A8,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B16AC,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B16AC,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B16B0,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B16B0,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B16B4,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B16B4,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B16B8,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B16B8,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B16BC,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B16BC,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B16C0,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B16C0,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B16C4,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B16C4,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B16C8,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B16C8,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B16CC,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B16CC,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B16D0,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B16D0,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B16D4,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B16D4,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B16D8,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B16D8,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B16DC,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B16DC,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B16E4,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B16E4,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B16E8,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B16E8,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B16EC,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B16EC,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B16F0,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B16F0,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B16F4,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B16F4,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B16F8,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B16F8,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B16FC,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B16FC,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1700,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1708,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1708,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B170C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B170C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1710,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1710,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1714,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1714,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1718,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1718,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B171C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B171C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1720,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1720,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B1724,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B1724,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1728,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1728,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B172C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B172C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1730,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1730,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1734,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1734,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1738,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1738,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B173C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B173C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1740,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1740,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1744,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1744,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B174C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B174C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1750,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1750,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1754,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1754,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1758,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1758,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B175C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B175C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1760,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1760,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1764,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1764,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1768,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1770,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1770,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1774,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1774,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1778,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1778,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B177C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B177C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1780,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1780,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1784,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1784,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1788,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1788,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B178C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B178C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1790,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1790,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1794,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1794,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1798,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1798,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B179C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B179C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B17A0,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B17A0,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B17A4,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B17A4,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B17A8,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B17A8,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B17AC,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B17AC,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B17B4,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B17B4,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B17B8,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B17B8,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B17BC,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B17BC,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B17C0,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B17C0,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B17C4,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B17C4,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B17C8,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B17C8,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B17CC,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B17CC,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B17D0,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B17D8,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B17D8,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B17DC,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B17DC,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B17E0,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B17E0,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B17E4,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B17E4,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B17E8,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B17E8,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B17EC,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B17EC,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B17F0,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B17F0,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B17F4,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B17F4,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B17F8,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B17F8,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B17FC,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B17FC,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1800,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1800,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1804,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1804,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1808,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1808,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B180C,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B180C,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1810,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1810,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1814,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1814,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B181C,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B181C,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1820,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1820,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1824,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1824,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1828,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1828,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B182C,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B182C,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1830,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1830,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1834,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1834,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1838,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1840,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1840,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1844,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1844,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1848,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1848,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B184C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B184C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1850,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1850,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1854,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1854,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1858,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1858,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B185C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B185C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1860,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1860,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1864,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1864,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1868,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1868,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B186C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B186C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1870,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1870,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1874,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1874,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1878,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1878,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B187C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B187C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1884,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1884,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1888,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1888,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B188C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B188C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1890,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1890,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1894,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1894,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1898,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1898,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B189C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B189C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B18A0,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B18A8,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B18A8,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B18AC,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B18AC,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B18B0,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B18B0,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B18B4,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B18B4,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B18B8,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B18B8,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B18BC,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B18BC,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B18C0,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B18C0,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B18C4,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B18C4,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B18C8,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B18C8,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B18CC,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B18CC,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B18D0,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B18D0,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B18D4,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B18D4,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B18D8,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B18D8,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B18DC,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B18DC,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B18E0,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B18E0,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B18E4,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B18E4,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B18EC,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B18EC,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B18F0,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B18F0,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B18F4,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B18F4,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B18F8,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B18F8,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B18FC,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B18FC,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1900,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1900,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1904,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1904,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1908,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1910,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1910,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B1914,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B1914,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1918,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1918,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B191C,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B191C,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1920,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1920,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B1924,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B1924,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1928,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1928,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B192C,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B192C,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1930,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1930,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1934,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1934,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1938,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1938,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B193C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B193C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1940,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1940,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1944,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1944,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1948,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1948,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B194C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B194C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1954,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1954,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1958,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1958,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B195C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B195C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1960,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1960,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1964,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1964,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1968,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1968,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B196C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B196C,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B1970,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B1978,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B1978,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B197C,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B197C,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B1980,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B1980,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B1984,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B1984,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B1988,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B1988,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B198C,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B198C,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B1990,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B1990,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B1994,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B1994,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1998,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1998,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B199C,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B199C,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B19A0,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B19A0,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B19A4,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B19A4,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B19A8,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B19A8,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B19AC,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B19AC,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B19B0,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B19B0,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B19B4,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B19B4,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B19BC,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B19BC,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B19C0,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B19C0,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B19C4,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B19C4,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B19C8,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B19C8,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B19CC,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B19CC,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B19D0,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B19D0,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B19D4,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B19D4,extended,00000000
+
+[Always Low Total Game Time]
+patch=1,EE,204B19D8,extended,00000001
+
+[Max Honorable Kills]
+patch=1,EE,204B19E0,extended,05F5E0FF
+
+[No Honorable Kills]
+patch=1,EE,204B19E0,extended,00000000
+
+[Max Dishonorable Kills]
+patch=1,EE,204B19E4,extended,05F5E0FF
+
+[No Dishonorable Kills]
+patch=1,EE,204B19E4,extended,00000000
+
+[Max Executions]
+patch=1,EE,204B19E8,extended,05F5E0FF
+
+[No Executions]
+patch=1,EE,204B19E8,extended,00000000
+
+[Max Backs Broken]
+patch=1,EE,204B19EC,extended,05F5E0FF
+
+[No Backs Broken]
+patch=1,EE,204B19EC,extended,00000000
+
+[Max Skulls Ripped]
+patch=1,EE,204B19F0,extended,05F5E0FF
+
+[No Skulls Ripped]
+patch=1,EE,204B19F0,extended,00000000
+
+[Max Throats Sliced]
+patch=1,EE,204B19F4,extended,05F5E0FF
+
+[No Throats Sliced]
+patch=1,EE,204B19F4,extended,00000000
+
+[Max Necks Snapped]
+patch=1,EE,204B19F8,extended,05F5E0FF
+
+[No Necks Snapped]
+patch=1,EE,204B19F8,extended,00000000
+
+[Max Heads Curshed]
+patch=1,EE,204B19FC,extended,05F5E0FF
+
+[No Heads Curshed]
+patch=1,EE,204B19FC,extended,00000000
+
+[Max Grapple Kills]
+patch=1,EE,204B1A00,extended,05F5E0FF
+
+[No Grapple Kills]
+patch=1,EE,204B1A00,extended,00000000
+
+[Max Furthest Distance Opponent Thrown]
+patch=1,EE,204B1A04,extended,461C3FF6
+
+[No Furthest Distance Opponent Thrown]
+patch=1,EE,204B1A04,extended,00000000
+
+[Max Furthest Distance Opponent Kicked]
+patch=1,EE,204B1A08,extended,461C3FF6
+
+[No Furthest Distance Opponent Kicked]
+patch=1,EE,204B1A08,extended,00000000
+
+[Max Ground Kills]
+patch=1,EE,204B1A0C,extended,05F5E0FF
+
+[No Ground Kills]
+patch=1,EE,204B1A0C,extended,00000000
+
+[Max Railing Kills]
+patch=1,EE,204B1A10,extended,05F5E0FF
+
+[No Railing Kills]
+patch=1,EE,204B1A10,extended,00000000
+
+[Max Wall Kills]
+patch=1,EE,204B1A14,extended,05F5E0FF
+
+[No Wall Kills]
+patch=1,EE,204B1A14,extended,00000000
+
+[Max Opponents Impaled]
+patch=1,EE,204B1A18,extended,05F5E0FF
+
+[No Opponents Impaled]
+patch=1,EE,204B1A18,extended,00000000
+
+[Max Juggle Kills]
+patch=1,EE,204B1A1C,extended,05F5E0FF
+
+[No Juggle Kills]
+patch=1,EE,204B1A1C,extended,00000000
+
+[Max Headshots]
+patch=1,EE,204B1A24,extended,05F5E0FF
+
+[No Headshots]
+patch=1,EE,204B1A24,extended,00000000
+
+[Max Decapitations]
+patch=1,EE,204B1A28,extended,05F5E0FF
+
+[No Decapitations]
+patch=1,EE,204B1A28,extended,00000000
+
+[Max Arms Severed]
+patch=1,EE,204B1A2C,extended,05F5E0FF
+
+[No Arms Severed]
+patch=1,EE,204B1A2C,extended,00000000
+
+[Max Bodies Split]
+patch=1,EE,204B1A30,extended,05F5E0FF
+
+[No Bodies Split]
+patch=1,EE,204B1A30,extended,00000000
+
+[Max Opponents Burnt To Death]
+patch=1,EE,204B1A34,extended,05F5E0FF
+
+[No Opponents Burnt To Death]
+patch=1,EE,204B1A34,extended,00000000
+
+[Max Healing Charges Used]
+patch=1,EE,204B1A38,extended,05F5E0FF
+
+[No Healing Charges Used]
+patch=1,EE,204B1A38,extended,00000000
+
+[Max Recharge Points Used]
+patch=1,EE,204B1A3C,extended,05F5E0FF
+
+[No Recharge Points Used]
+patch=1,EE,204B1A3C,extended,00000000

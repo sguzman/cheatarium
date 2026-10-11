@@ -1,0 +1,767 @@
+gametitle=Lego Star Wars II-The Original Trilogy (SLUS-21409)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90377B90,extended,0C0E2AFF
+
+[Max Health]
+patch=1,EE,2029671C,extended,24020008
+patch=1,EE,20296720,extended,A1220F34
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,24130008
+patch=1,EE,200C0224,extended,080A59CE
+patch=1,EE,200C0228,extended,A1330F35
+patch=1,EE,20296728,extended,08030088
+
+[Infinite Lego Studs (In-Game)]
+patch=1,EE,105BA390,extended,0000FFFF
+
+[Max Lego Stunds (In-Game)]
+patch=1,EE,205BA390,extended,05F5E0FF
+
+[Unlock All Extras (Pause Menu)]
+patch=1,EE,205BB9D0,extended,FFFFFFFF
+
+[Infinite Lego Studs (Overall)]
+patch=1,EE,105BB9DC,extended,0000FFFF
+
+[Max Lego Studs (Overall)]
+patch=1,EE,205BB9DC,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease Lego Studs]
+patch=1,EE,20349658,extended,00000000
+
+[Buying Items Increases Lego Studs]
+patch=1,EE,20349654,extended,00431021
+
+[Always Low Game Time]
+patch=1,EE,205BB9E4,extended,00000000
+
+[Use Old Save]
+patch=1,EE,003EA502,extended,00000001
+
+[Extra Toggle]
+patch=1,EE,003EA516,extended,00000001
+
+[Fertilizer]
+patch=1,EE,003EA52A,extended,00000001
+
+[Disguise]
+patch=1,EE,003EA53E,extended,00000001
+
+[Daisy Chains]
+patch=1,EE,003EA552,extended,00000001
+
+[Chewbacca Carrying C-3PO]
+patch=1,EE,003EA566,extended,00000001
+
+[Tow Death Star]
+patch=1,EE,003EA57A,extended,00000001
+
+[Super Blasters]
+patch=1,EE,003EA58E,extended,00000001
+
+[Fast Force]
+patch=1,EE,003EA5A2,extended,00000001
+
+[Super Lightsabers]
+patch=1,EE,003EA5B6,extended,00000001
+
+[Tractor Beam]
+patch=1,EE,003EA5CA,extended,00000001
+
+[Invincibility]
+patch=1,EE,003EA5DE,extended,00000001
+
+[Score x2]
+patch=1,EE,003EA5F2,extended,00000001
+
+[Self Destruct]
+patch=1,EE,003EA606,extended,00000001
+
+[Fast Build]
+patch=1,EE,003EA61A,extended,00000001
+
+[Score x4]
+patch=1,EE,003EA62E,extended,00000001
+
+[Regenerate Hearts]
+patch=1,EE,003EA642,extended,00000001
+
+[Minikit Detector]
+patch=1,EE,003EA656,extended,00000001
+
+[Score x6]
+patch=1,EE,003EA66A,extended,00000001
+
+[Super Zapper]
+patch=1,EE,003EA67E,extended,00000001
+
+[Bounty Hunter Rockets]
+patch=1,EE,005EE692,extended,00000001
+
+[Score x8]
+patch=1,EE,003EA6A6,extended,00000001
+
+[Super Ewok Catapult]
+patch=1,EE,003EA6BA,extended,00000001
+
+[Infinite Torpedos]
+patch=1,EE,003EA6CE,extended,00000001
+
+[Score x10]
+patch=1,EE,003EA6E2,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB7D4,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB7D5,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB7D6,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB7D7,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB7D8,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB7D9,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB7DA,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB7E0,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB7E1,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB7E2,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB7E3,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB7E4,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB7E5,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB7E6,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB7EC,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB7ED,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB7EE,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB7EF,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB7F0,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB7F1,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB7F2,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB7F8,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB7F9,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB7FA,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB7FB,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB7FC,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB7FD,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB7FE,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB804,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB805,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB806,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB807,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB808,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB809,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB80A,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB810,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB811,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB812,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB813,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB814,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB815,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB816,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB840,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB841,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB842,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB843,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB844,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB845,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB846,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB84C,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB84D,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB84E,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB84F,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB850,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB851,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB852,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB858,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB859,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB85A,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB85B,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB85C,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB85D,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB85E,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB864,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB865,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB866,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB867,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB868,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB869,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB86A,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB870,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB871,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB872,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB873,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB874,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB875,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB876,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB87C,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB87D,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB87E,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB87F,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB880,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB881,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB882,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB8AC,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB8AD,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB8AE,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB8AF,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB8B0,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB8B1,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB8B2,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB8B8,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB8B9,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB8BA,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB8BB,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB8BC,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB8BD,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB8BE,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB8C4,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB8C5,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB8C6,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB8C7,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB8C8,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB8C9,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB8CA,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB8D0,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB8D1,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB8D2,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB8D3,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB8D4,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB8D5,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB8D6,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB8DC,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB8DD,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB8DE,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB8DF,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB8E0,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB8E1,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB8E2,extended,00000001
+
+[Unlock Story]
+patch=1,EE,005BB8E8,extended,00000001
+
+[Unlock Free Play]
+patch=1,EE,005BB8E9,extended,00000001
+
+[Story Complete]
+patch=1,EE,005BB8EA,extended,00000001
+
+[Free Play Complete]
+patch=1,EE,005BB8EB,extended,00000001
+
+[Have Gold Brick]
+patch=1,EE,005BB8EC,extended,00000001
+
+[Have All Mini-Kit Canisters]
+patch=1,EE,005BB8ED,extended,0000000A
+
+[Have Power Brick]
+patch=1,EE,005BB8EE,extended,00000001
+
+[Rebel Trooper]
+patch=1,EE,005EB7B3,extended,00000001
+
+[Stormtrooper]
+patch=1,EE,005EB80F,extended,00000001
+
+[Imperial Shuttle Pilot]
+patch=1,EE,005EB86B,extended,00000001
+
+[Tusken Raider]
+patch=1,EE,005EB8C7,extended,00000001
+
+[Jawa]
+patch=1,EE,005EB923,extended,00000001
+
+[Sandtrooper]
+patch=1,EE,005EB97F,extended,00000001
+
+[Greedo]
+patch=1,EE,005EB9DB,extended,00000001
+
+[Imperial Spy]
+patch=1,EE,005EBA37,extended,00000001
+
+[Beach Trooper]
+patch=1,EE,005EBA93,extended,00000001
+
+[Death Star Trooper]
+patch=1,EE,005EBAEF,extended,00000001
+
+[TIE Fighter Pilot]
+patch=1,EE,005EBB4B,extended,00000001
+
+[Imperial Officer]
+patch=1,EE,005EBBA7,extended,00000001
+
+[Grand Moff Tarkin]
+patch=1,EE,005EBC03,extended,00000001
+
+[Han Solo (Hood)]
+patch=1,EE,005EBC5F,extended,00000001
+
+[Rebel Trooper (Hoth)]
+patch=1,EE,005EBCBB,extended,00000001
+
+[Rebel Pilot]
+patch=1,EE,005EBD17,extended,00000001
+
+[Snowtrooper]
+patch=1,EE,005EBD73,extended,00000001
+
+[Luke Skywalker (Hoth)]
+patch=1,EE,005EBDCF,extended,00000001
+
+[Lobot]
+patch=1,EE,005EBE2B,extended,00000001
+
+[Ugnaught]
+patch=1,EE,005EBE87,extended,00000001
+
+[Bespin Guard]
+patch=1,EE,005EBEE3,extended,00000001
+
+[Princess Leia (Prisoner)]
+patch=1,EE,005EBF3F,extended,00000001
+
+[Gamorrean Guard]
+patch=1,EE,005EBF9B,extended,00000001
+
+[Bib Fortuna]
+patch=1,EE,005EBFF7,extended,00000001
+
+[Palace Guard]
+patch=1,EE,005EC053,extended,00000001
+
+[Skiff Guard]
+patch=1,EE,005EC0AF,extended,00000001
+
+[Boba Fett]
+patch=1,EE,005EC10B,extended,00000001
+
+[Ewok]
+patch=1,EE,005EC167,extended,00000001
+
+[Imperial Guard]
+patch=1,EE,005EC1C3,extended,00000001
+
+[The Emperor]
+patch=1,EE,005EC21F,extended,00000001
+
+[Admiral Ackbar]
+patch=1,EE,005EC27B,extended,00000001
+
+[Gonk Droid]
+patch=1,EE,005EC2D7,extended,00000001
+
+[Ben Kenobi (Ghost)]
+patch=1,EE,005EC333,extended,00000001
+
+[Anakin Skywalker (Ghost)]
+patch=1,EE,005EC38F,extended,00000001
+
+[Yoda (Ghost)]
+patch=1,EE,005EC3EB,extended,00000001
+
+[IG-88]
+patch=1,EE,005EC447,extended,00000001
+
+[Bossk]
+patch=1,EE,005EC4A3,extended,00000001
+
+[Dengar]
+patch=1,EE,005EC4FF,extended,00000001
+
+[4-LOM]
+patch=1,EE,005EC55B,extended,00000001
+
+[TIE Fighter]
+patch=1,EE,005EC5B7,extended,00000001
+
+[TIE Interceptor]
+patch=1,EE,005EC613,extended,00000001
+
+[TIE Fighter (Darth Vader)]
+patch=1,EE,005EC66F,extended,00000001
+
+[TIE Bomber]
+patch=1,EE,005EC6CB,extended,00000001
+
+[Imperial Shuttle]
+patch=1,EE,005EC727,extended,00000001
+
+[Hint 1]
+patch=1,EE,005ECEB3,extended,00000001
+
+[Hint 2]
+patch=1,EE,005ECF0F,extended,00000001
+
+[Hint 3]
+patch=1,EE,005ECF6B,extended,00000001
+
+[Hint 4]
+patch=1,EE,005ECFC7,extended,00000001
+
+[Hint 5]
+patch=1,EE,005ED023,extended,00000001
+
+[Hint 6]
+patch=1,EE,005ED07F,extended,00000001
+
+[Hint 7]
+patch=1,EE,005ED0DB,extended,00000001
+
+[Hint 8]
+patch=1,EE,005ED137,extended,00000001
+
+[Hint 9]
+patch=1,EE,005ED193,extended,00000001
+
+[Hint 10]
+patch=1,EE,005ED1EF,extended,00000001
+
+[Hint 11]
+patch=1,EE,005ED24B,extended,00000001
+
+[Hint 12]
+patch=1,EE,005ED2A7,extended,00000001
+
+[Hint 13]
+patch=1,EE,005ED303,extended,00000001
+
+[Hint 14]
+patch=1,EE,005ED35F,extended,00000001
+
+[Use Old Save]
+patch=1,EE,005EE5B3,extended,00000001
+
+[Extra Toggle]
+patch=1,EE,005EE60F,extended,00000001
+
+[Fertilizer]
+patch=1,EE,005EE66B,extended,00000001
+
+[Disguise]
+patch=1,EE,005EE6C7,extended,00000001
+
+[Daisy Chains]
+patch=1,EE,005EE723,extended,00000001
+
+[Chewbacca Carrying C-3PO]
+patch=1,EE,005EE77F,extended,00000001
+
+[Tow Death Star]
+patch=1,EE,005EE7DB,extended,00000001
+
+[Super Blasters]
+patch=1,EE,005EE837,extended,00000001
+
+[Fast Force]
+patch=1,EE,005EE893,extended,00000001
+
+[Super Lightsabers]
+patch=1,EE,005EE8EF,extended,00000001
+
+[Tractor Beam]
+patch=1,EE,005EE94B,extended,00000001
+
+[Invincibility]
+patch=1,EE,005EE9A7,extended,00000001
+
+[Score x2]
+patch=1,EE,005EEA03,extended,00000001
+
+[Self Destruct]
+patch=1,EE,005EEA5F,extended,00000001
+
+[Fast Build]
+patch=1,EE,005EEABB,extended,00000001
+
+[Score x4]
+patch=1,EE,005EEB17,extended,00000001
+
+[Regenerate Hearts]
+patch=1,EE,005EEB73,extended,00000001
+
+[Minikit Detector]
+patch=1,EE,005EEBCF,extended,00000001
+
+[Score x6]
+patch=1,EE,005EEC2B,extended,00000001
+
+[Super Zapper]
+patch=1,EE,005EEC87,extended,00000001
+
+[Bounty Hunter Rockets]
+patch=1,EE,005EECE3,extended,00000001
+
+[Score x8]
+patch=1,EE,005EED3F,extended,00000001
+
+[Super Ewok Catapult]
+patch=1,EE,005EED9B,extended,00000001
+
+[Infinite Torpedos]
+patch=1,EE,005EEDF7,extended,00000001
+
+[Score x10]
+patch=1,EE,005EEE53,extended,00000001
+
+[Gold Brick 1]
+patch=1,EE,005EF133,extended,00000001
+
+[Gold Brick 2]
+patch=1,EE,005EF18F,extended,00000001
+
+[Gold Brick 3]
+patch=1,EE,005EF1EB,extended,00000001
+
+[Gold Brick 4]
+patch=1,EE,005EF247,extended,00000001
+
+[Gold Brick 5]
+patch=1,EE,005EF2A3,extended,00000001
+
+[Gold Brick 6]
+patch=1,EE,005EF2FF,extended,00000001
+
+[Gold Brick 7]
+patch=1,EE,005EF35B,extended,00000001
+
+[Gold Brick 8]
+patch=1,EE,005EF3B7,extended,00000001

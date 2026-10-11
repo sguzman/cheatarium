@@ -1,0 +1,158 @@
+gametitle=Disney's Chicken Little (SLUS-21088)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9041D370,extended,00832021
+patch=1,EE,200C0220,extended,0809BEBA
+patch=1,EE,200C0224,extended,240603E7
+patch=1,EE,200C0228,extended,0809BEBA
+patch=1,EE,200C022C,extended,24060001
+
+[Infinite Cluck Luck]
+patch=1,EE,201447B8,extended,24A50000
+
+[Max Infinite Cluck Luck]
+patch=1,EE,201447B8,extended,24050006
+
+[Max Acorns]
+patch=1,EE,205187C4,extended,00000009
+
+[Max Coins]
+patch=1,EE,2051880C,extended,00000063
+
+[Max Card Sets]
+patch=1,EE,20253958,extended,0C030088
+
+[Drone Dash]
+patch=1,EE,20253E38,extended,0C03008A
+patch=1,EE,20253E40,extended,24020000
+
+[Pig Paddle]
+patch=1,EE,20253E60,extended,0C03008A
+patch=1,EE,20253E68,extended,24020000
+
+[Super Speedway]
+patch=1,EE,20253E88,extended,0C03008A
+patch=1,EE,20253E90,extended,24020000
+
+[Saucer Smash]
+patch=1,EE,20253EB0,extended,0C03008A
+patch=1,EE,20253EB8,extended,24020000
+
+[Space Shooter]
+patch=1,EE,20253ED8,extended,0C03008A
+patch=1,EE,20253EE0,extended,24020000
+
+[Walker War]
+patch=1,EE,20253EF8,extended,0C03008A
+patch=1,EE,20253F00,extended,24020000
+
+[God Mode]
+patch=1,EE,20144710,extended,0C03008A
+patch=1,EE,1014471A,extended,00001000
+
+[Big Head]
+patch=1,EE,20140870,extended,0C03008A
+patch=1,EE,20140878,extended,24020001
+
+[Big Feet]
+patch=1,EE,201408B0,extended,0C03008A
+patch=1,EE,201408B8,extended,24020001
+
+[Big Comb]
+patch=1,EE,20140974,extended,0C03008A
+patch=1,EE,2014097C,extended,24020001
+
+[Sunglasses]
+patch=1,EE,201409D8,extended,0C03008A
+patch=1,EE,201409E0,extended,24020001
+
+[Underwear]
+patch=1,EE,20140A6C,extended,0C03008A
+patch=1,EE,20140A74,extended,24020001
+
+[Paper Pants]
+patch=1,EE,20140AA8,extended,0C03008A
+patch=1,EE,20140AB0,extended,24020001
+
+[Feather Cloud]
+patch=1,EE,20140B94,extended,0C03008A
+patch=1,EE,20140B9C,extended,24020001
+
+[Late For School]
+patch=1,EE,20518848,extended,00000004
+
+[Dodgeball Hall-Pail Ride]
+patch=1,EE,20518854,extended,00000004
+
+[Dodgeball Hall-Dodgeball]
+patch=1,EE,20518860,extended,00000004
+
+[Goosey Chase]
+patch=1,EE,2051886C,extended,00000004
+
+[Uniform Hunt]
+patch=1,EE,20518878,extended,00000004
+
+[Baseball Practice-The Big Game]
+patch=1,EE,20518884,extended,00000004
+
+[Carpool Craze]
+patch=1,EE,20518890,extended,00000004
+
+[Backyard Pursuit]
+patch=1,EE,2051889C,extended,00000004
+
+[Space Simulator]
+patch=1,EE,205188A8,extended,00000004
+
+[Alien Abby]
+patch=1,EE,205188B4,extended,00000004
+
+[Runaway Hunt]
+patch=1,EE,205188C0,extended,00000004
+
+[Space Alarm]
+patch=1,EE,205188CC,extended,00000004
+
+[Space Simulator II]
+patch=1,EE,205188D8,extended,00000004
+
+[Tube Surf]
+patch=1,EE,205188E4,extended,00000004
+
+[Cornfield Escape]
+patch=1,EE,205188F0,extended,00000004
+
+[Cannon Chaos]
+patch=1,EE,205188FC,extended,00000004
+
+[Firetruck Frenzy]
+patch=1,EE,20518908,extended,00000004
+
+[Tube Tumble]
+patch=1,EE,20518914,extended,00000004
+
+[Alien Little]
+patch=1,EE,20518920,extended,00000004
+
+[Gravity Grab]
+patch=1,EE,2051892C,extended,00000004
+
+[Space Simulator III]
+patch=1,EE,20518938,extended,00000004
+
+[Final Boss]
+patch=1,EE,20518944,extended,00000004
+
+[Runt's Escape]
+patch=1,EE,20518950,extended,00000004
+
+[Space Armada]
+patch=1,EE,2051895C,extended,00000004
+
+[All Buck Cluck Trading Cards]
+patch=1,EE,40518848,extended,00180003
+patch=1,EE,00000005,extended,00000000

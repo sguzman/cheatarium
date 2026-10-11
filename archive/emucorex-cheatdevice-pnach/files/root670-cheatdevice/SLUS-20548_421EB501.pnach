@@ -1,0 +1,714 @@
+gametitle=Sub Rebellion (SLUS-20548)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901E7E9C,extended,0C080524
+
+[Infinite Decoy's]
+patch=1,EE,002556EC,extended,00000009
+
+[Infinite Shield]
+patch=1,EE,2016A5A8,extended,240207D0
+patch=1,EE,2016A5AC,extended,AFC200FC
+
+[Disable Player Collisions]
+patch=1,EE,20139E48,extended,03E00008
+patch=1,EE,20139E4C,extended,00000000
+
+[Faster Reload]
+patch=1,EE,1013EB4C,extended,00000009
+
+[Super Fast Reload]
+patch=1,EE,1013EB4C,extended,0000001F
+
+[Hella Fast Reload]
+patch=1,EE,1013EB4C,extended,0000007F
+
+[Treasure 1]
+patch=1,EE,00255684,extended,00000002
+
+[Treasure 2]
+patch=1,EE,00255695,extended,00000002
+
+[Treasure 3]
+patch=1,EE,00255699,extended,00000002
+
+[Treasure 4]
+patch=1,EE,002556B0,extended,00000002
+
+[Treasure 5]
+patch=1,EE,002556A9,extended,00000002
+
+[Treasure 6]
+patch=1,EE,002556C3,extended,00000002
+
+[Treasure 7]
+patch=1,EE,002556DB,extended,00000002
+
+[Treasure 8]
+patch=1,EE,0025568B,extended,00000002
+
+[Treasure 9]
+patch=1,EE,00255683,extended,00000002
+
+[Treasure 10]
+patch=1,EE,00255696,extended,00000002
+
+[Treasure 11]
+patch=1,EE,002556A1,extended,00000002
+
+[Treasure 12]
+patch=1,EE,002556A3,extended,00000002
+
+[Treasure 13]
+patch=1,EE,002556B1,extended,00000002
+
+[Treasure 14]
+patch=1,EE,00255690,extended,00000002
+
+[Treasure 15]
+patch=1,EE,00255691,extended,00000002
+
+[Treasure 16]
+patch=1,EE,00255692,extended,00000002
+
+[Treasure 1]
+patch=1,EE,00255687,extended,00000002
+
+[Treasure 2]
+patch=1,EE,00255694,extended,00000002
+
+[Treasure 3]
+patch=1,EE,0025569A,extended,00000002
+
+[Treasure 4]
+patch=1,EE,0025569F,extended,00000002
+
+[Treasure 5]
+patch=1,EE,002556DC,extended,00000002
+
+[Treasure 6]
+patch=1,EE,002556A4,extended,00000002
+
+[Treasure 7]
+patch=1,EE,002556AA,extended,00000002
+
+[Treasure 8]
+patch=1,EE,002556B2,extended,00000002
+
+[Treasure 9]
+patch=1,EE,00255686,extended,00000002
+
+[Treasure 10]
+patch=1,EE,00255693,extended,00000002
+
+[Treasure 11]
+patch=1,EE,002556CE,extended,00000002
+
+[Treasure 12]
+patch=1,EE,002556D0,extended,00000002
+
+[Treasure 13]
+patch=1,EE,002556D1,extended,00000002
+
+[Treasure 14]
+patch=1,EE,0025568E,extended,00000002
+
+[Treasure 15]
+patch=1,EE,0025568F,extended,00000002
+
+[Treasure 16]
+patch=1,EE,002556CB,extended,00000002
+
+[Treasure 1]
+patch=1,EE,002556B3,extended,00000002
+
+[Treasure 2]
+patch=1,EE,002556B6,extended,00000002
+
+[Treasure 3]
+patch=1,EE,002556B9,extended,00000002
+
+[Treasure 4]
+patch=1,EE,002556C1,extended,00000002
+
+[Treasure 5]
+patch=1,EE,002556DD,extended,00000002
+
+[Treasure 6]
+patch=1,EE,002556D5,extended,00000002
+
+[Treasure 7]
+patch=1,EE,0025569B,extended,00000002
+
+[Treasure 8]
+patch=1,EE,002556A5,extended,00000002
+
+[Treasure 9]
+patch=1,EE,002556B4,extended,00000002
+
+[Treasure 10]
+patch=1,EE,002556B7,extended,00000002
+
+[Treasure 11]
+patch=1,EE,002556BA,extended,00000002
+
+[Treasure 12]
+patch=1,EE,002556C6,extended,00000002
+
+[Treasure 13]
+patch=1,EE,002556C9,extended,00000002
+
+[Treasure 14]
+patch=1,EE,00255698,extended,00000002
+
+[Treasure 15]
+patch=1,EE,0025569E,extended,00000002
+
+[Treasure 16]
+patch=1,EE,002556AE,extended,00000002
+
+[Treasure 1]
+patch=1,EE,00255689,extended,00000002
+
+[Treasure 2]
+patch=1,EE,0025568C,extended,00000002
+
+[Treasure 3]
+patch=1,EE,0025569C,extended,00000002
+
+[Treasure 4]
+patch=1,EE,002556BC,extended,00000002
+
+[Treasure 5]
+patch=1,EE,002556C5,extended,00000002
+
+[Treasure 6]
+patch=1,EE,002556A7,extended,00000002
+
+[Treasure 7]
+patch=1,EE,002556BF,extended,00000002
+
+[Treasure 8]
+patch=1,EE,002556C2,extended,00000002
+
+[Treasure 9]
+patch=1,EE,00255688,extended,00000002
+
+[Treasure 10]
+patch=1,EE,0025568D,extended,00000002
+
+[Treasure 11]
+patch=1,EE,002556BD,extended,00000002
+
+[Treasure 12]
+patch=1,EE,002556A8,extended,00000002
+
+[Treasure 13]
+patch=1,EE,002556C0,extended,00000002
+
+[Treasure 14]
+patch=1,EE,002556D9,extended,00000002
+
+[Treasure 15]
+patch=1,EE,002556A0,extended,00000002
+
+[Treasure 16]
+patch=1,EE,002556CC,extended,00000002
+
+[Treasure 1]
+patch=1,EE,00255685,extended,00000002
+
+[Treasure 2]
+patch=1,EE,002556AC,extended,00000002
+
+[Treasure 3]
+patch=1,EE,002556A6,extended,00000002
+
+[Treasure 4]
+patch=1,EE,002556CF,extended,00000002
+
+[Treasure 5]
+patch=1,EE,0025568A,extended,00000002
+
+[Treasure 6]
+patch=1,EE,0025569D,extended,00000002
+
+[Treasure 7]
+patch=1,EE,002556AB,extended,00000002
+
+[Treasure 8]
+patch=1,EE,002556B5,extended,00000002
+
+[Treasure 9]
+patch=1,EE,002556DF,extended,00000002
+
+[Treasure 10]
+patch=1,EE,002556AD,extended,00000002
+
+[Treasure 11]
+patch=1,EE,002556C7,extended,00000002
+
+[Treasure 12]
+patch=1,EE,002556D2,extended,00000002
+
+[Treasure 13]
+patch=1,EE,002556D8,extended,00000002
+
+[Treasure 14]
+patch=1,EE,002556E1,extended,00000002
+
+[Treasure 15]
+patch=1,EE,002556E2,extended,00000002
+
+[Treasure 16]
+patch=1,EE,002556D3,extended,00000002
+
+[Treasure 1]
+patch=1,EE,002556D6,extended,00000002
+
+[Treasure 2]
+patch=1,EE,002556DE,extended,00000002
+
+[Treasure 3]
+patch=1,EE,002556AF,extended,00000002
+
+[Treasure 4]
+patch=1,EE,002556B8,extended,00000002
+
+[Treasure 5]
+patch=1,EE,002556BB,extended,00000002
+
+[Treasure 6]
+patch=1,EE,002556BE,extended,00000002
+
+[Treasure 7]
+patch=1,EE,002556C4,extended,00000002
+
+[Treasure 8]
+patch=1,EE,002556C8,extended,00000002
+
+[Treasure 9]
+patch=1,EE,002556CD,extended,00000002
+
+[Treasure 10]
+patch=1,EE,002556D4,extended,00000002
+
+[Treasure 11]
+patch=1,EE,00255697,extended,00000002
+
+[Treasure 12]
+patch=1,EE,002556D7,extended,00000002
+
+[Treasure 13]
+patch=1,EE,002556E0,extended,00000002
+
+[Treasure 14]
+patch=1,EE,002556CA,extended,00000002
+
+[Treasure 15]
+patch=1,EE,002556A2,extended,00000002
+
+[Treasure 16]
+patch=1,EE,002556DA,extended,00000002
+
+[Unlocked]
+patch=1,EE,0025570A,extended,00000001
+
+[Completed]
+patch=1,EE,00255722,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255723,extended,00000000
+patch=1,EE,00255724,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255725,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255726,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255727,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025570B,extended,00000001
+
+[Completed]
+patch=1,EE,00255728,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255729,extended,00000000
+patch=1,EE,0025572A,extended,00000000
+
+[Max Shield %]
+patch=1,EE,0025572B,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,0025572C,extended,00000064
+
+[Max Found %]
+patch=1,EE,0025572D,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025570C,extended,00000001
+
+[Completed]
+patch=1,EE,0025572E,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,0025572F,extended,00000000
+patch=1,EE,00255730,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255731,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255732,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255733,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025570D,extended,00000001
+
+[Completed]
+patch=1,EE,00255734,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255735,extended,00000000
+patch=1,EE,00255736,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255737,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255738,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255739,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025570E,extended,00000001
+
+[Completed]
+patch=1,EE,0025573A,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,0025573B,extended,00000000
+patch=1,EE,0025573C,extended,00000000
+
+[Max Shield %]
+patch=1,EE,0025573D,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,0025573E,extended,00000064
+
+[Max Found %]
+patch=1,EE,0025573F,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025570F,extended,00000001
+
+[Completed]
+patch=1,EE,00255740,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255741,extended,00000000
+patch=1,EE,00255742,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255743,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255744,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255745,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255710,extended,00000001
+
+[Completed]
+patch=1,EE,00255746,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255747,extended,00000000
+patch=1,EE,00255748,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255749,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,0025574A,extended,00000064
+
+[Max Found %]
+patch=1,EE,0025574B,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255711,extended,00000001
+
+[Completed]
+patch=1,EE,0025574C,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,0025574D,extended,00000000
+patch=1,EE,0025574E,extended,00000000
+
+[Max Shield %]
+patch=1,EE,0025574F,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255750,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255751,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255712,extended,00000001
+
+[Completed]
+patch=1,EE,00255752,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255753,extended,00000000
+patch=1,EE,00255754,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255755,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255756,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255757,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255714,extended,00000001
+
+[Completed]
+patch=1,EE,0025575E,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,0025575F,extended,00000000
+patch=1,EE,00255760,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255761,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255762,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255763,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255716,extended,00000001
+
+[Completed]
+patch=1,EE,0025576A,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,0025576B,extended,00000000
+patch=1,EE,0025576C,extended,00000000
+
+[Max Shield %]
+patch=1,EE,0025576D,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,0025576E,extended,00000064
+
+[Max Found %]
+patch=1,EE,0025576F,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255717,extended,00000001
+
+[Completed]
+patch=1,EE,00255770,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255771,extended,00000000
+patch=1,EE,00255772,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255773,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255774,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255775,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255718,extended,00000001
+
+[Completed]
+patch=1,EE,00255776,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255777,extended,00000000
+patch=1,EE,00255778,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255779,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,0025577A,extended,00000064
+
+[Max Found %]
+patch=1,EE,0025577B,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025571A,extended,00000001
+
+[Completed]
+patch=1,EE,00255782,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255783,extended,00000000
+patch=1,EE,00255784,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255785,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255786,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255787,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025571B,extended,00000001
+
+[Completed]
+patch=1,EE,00255788,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255789,extended,00000000
+patch=1,EE,0025578A,extended,00000000
+
+[Max Shield %]
+patch=1,EE,0025578B,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,0025578C,extended,00000064
+
+[Max Found %]
+patch=1,EE,0025578D,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025571C,extended,00000001
+
+[Completed]
+patch=1,EE,0025578E,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,0025578F,extended,00000000
+patch=1,EE,00255790,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255791,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255792,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255793,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025571D,extended,00000001
+
+[Completed]
+patch=1,EE,00255794,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,00255795,extended,00000000
+patch=1,EE,00255796,extended,00000000
+
+[Max Shield %]
+patch=1,EE,00255797,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,00255798,extended,00000064
+
+[Max Found %]
+patch=1,EE,00255799,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025571E,extended,00000001
+
+[Completed]
+patch=1,EE,0025579A,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,0025579B,extended,00000000
+patch=1,EE,0025579C,extended,00000000
+
+[Max Shield %]
+patch=1,EE,0025579D,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,0025579E,extended,00000064
+
+[Max Found %]
+patch=1,EE,0025579F,extended,00000064
+
+[Unlocked]
+patch=1,EE,0025571F,extended,00000001
+
+[Completed]
+patch=1,EE,002557A0,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,002557A1,extended,00000000
+patch=1,EE,002557A2,extended,00000000
+
+[Max Shield %]
+patch=1,EE,002557A3,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,002557A4,extended,00000064
+
+[Max Found %]
+patch=1,EE,002557A5,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255720,extended,00000001
+
+[Completed]
+patch=1,EE,002557A6,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,002557A7,extended,00000000
+patch=1,EE,002557A8,extended,00000000
+
+[Max Shield %]
+patch=1,EE,002557A9,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,002557AA,extended,00000064
+
+[Max Found %]
+patch=1,EE,002557AB,extended,00000064
+
+[Unlocked]
+patch=1,EE,00255721,extended,00000001
+
+[Completed]
+patch=1,EE,002557AC,extended,00000064
+
+[Low Clear Time]
+patch=1,EE,002557AD,extended,00000000
+patch=1,EE,002557AE,extended,00000000
+
+[Max Shield %]
+patch=1,EE,002557AF,extended,00000064
+
+[Max Destruction %]
+patch=1,EE,002557B0,extended,00000064
+
+[Max Found %]
+patch=1,EE,002557B1,extended,00000064

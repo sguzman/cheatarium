@@ -1,0 +1,51 @@
+gametitle=Hard Hitter Tennis (SLUS-20568)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902AF864,extended,0C0B18FF
+
+[P1 Never Scores]
+patch=1,EE,2037C718,extended,00000000
+
+[P1 Start With 15 Points]
+patch=1,EE,D037C718,extended,00000000
+patch=1,EE,2037C718,extended,00000001
+
+[P1 Start With 30 Points]
+patch=1,EE,D037C718,extended,00000000
+patch=1,EE,2037C718,extended,00000002
+
+[P1 Start With 40 Points]
+patch=1,EE,D037C718,extended,00000000
+patch=1,EE,2037C718,extended,00000003
+
+[P2 Never Scores]
+patch=1,EE,2037C71C,extended,00000000
+
+[P2 Start With 15 Points]
+patch=1,EE,D037C71C,extended,00000000
+patch=1,EE,2037C71C,extended,00000001
+
+[P2 Start With 30 Points]
+patch=1,EE,D037C71C,extended,00000000
+patch=1,EE,2037C71C,extended,00000002
+
+[P2 Start With 40 Points]
+patch=1,EE,D037C71C,extended,00000000
+patch=1,EE,2037C71C,extended,00000003
+
+[Max Score]
+patch=1,EE,2039371C,extended,0001869F
+
+[P1 Press {SELECT} For More Balls]
+patch=1,EE,D03172C2,extended,0000FFFE
+patch=1,EE,20393720,extended,00000005
+
+[Max Score]
+patch=1,EE,203912F4,extended,0001869F
+
+[P1 Press {SELECT} For More Balls]
+patch=1,EE,D03172C2,extended,0000FFFE
+patch=1,EE,20390FF8,extended,0000001E

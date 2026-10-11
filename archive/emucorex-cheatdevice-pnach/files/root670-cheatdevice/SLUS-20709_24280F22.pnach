@@ -1,0 +1,116 @@
+gametitle=Batman-Rise Of Sin Tzu (SLUS-20709)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0011F447
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,00A01821
+patch=1,EE,200C0224,extended,AC850034
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AC850038
+patch=1,EE,2028E14C,extended,0C030088
+patch=1,EE,2028E150,extended,240503E8
+
+[Infinite Continues]
+patch=1,EE,20290B68,extended,00000000
+
+[Extra Continues]
+patch=1,EE,1023999C,extended,00000001
+
+[Buying Upgrades Doesnt Decrease Upgrade Points]
+patch=1,EE,202C84C0,extended,00000000
+
+[Buying Upgrades Increases Upgrade Points]
+patch=1,EE,202C84BC,extended,00661821
+
+[Access All Upgrades]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B84,extended,0000000F
+
+[Infinite Green Tokens]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6AE8,extended,000003E7
+
+[Infinite Red Tokens]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6AEC,extended,000003E7
+
+[Infinite Silver Tokens]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6AF0,extended,000003E7
+
+[Infinite Gold Tokens]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6AF4,extended,000003E7
+
+[Infinite Bronze Tokens]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6AF8,extended,000003E7
+
+[Unlock All 3D Models (Heroes/Gadgets/Vehicles)]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6AFC,extended,FFFFFFFF
+
+[Unlock All 3D Models (Villians)]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B00,extended,FFFFFFFF
+
+[Unlock All Graphic Novels]
+patch=1,EE,E0026AD0,extended,008C6ADC
+patch=1,EE,208C6B04,extended,FFFFFFFF
+patch=1,EE,208C6B08,extended,FFFFFFFF
+
+[Unlock All Toys]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B0C,extended,FFFFFFFF
+
+[Unlock All Cinematics]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B10,extended,FFFFFFFF
+
+[Unlock All Concept Art]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B14,extended,FFFFFFFF
+
+[Unlock All Extra Bonus Features]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B18,extended,FFFFFFFF
+
+[Batman]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B88,extended,05F5E0FF
+
+[Robin]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B8C,extended,05F5E0FF
+
+[Nightwing]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B90,extended,05F5E0FF
+
+[Batgirl]
+patch=1,EE,D08C6ADC,extended,00006AD0
+patch=1,EE,208C6B94,extended,05F5E0FF
+
+[Batman]
+patch=1,EE,E0026AD0,extended,008C6ADC
+patch=1,EE,208C6B98,extended,FFFFFFFF
+patch=1,EE,208C6BA8,extended,FFFFFFFF
+
+[Robin]
+patch=1,EE,E0026AD0,extended,008C6ADC
+patch=1,EE,208C6B9C,extended,FFFFFFFF
+patch=1,EE,208C6BAC,extended,FFFFFFFF
+
+[Nightwing]
+patch=1,EE,E0026AD0,extended,008C6ADC
+patch=1,EE,208C6BA0,extended,FFFFFFFF
+patch=1,EE,208C6BB0,extended,FFFFFFFF
+
+[Batgirl]
+patch=1,EE,E0026AD0,extended,008C6ADC
+patch=1,EE,208C6BA4,extended,FFFFFFFF
+patch=1,EE,208C6BB4,extended,FFFFFFFF

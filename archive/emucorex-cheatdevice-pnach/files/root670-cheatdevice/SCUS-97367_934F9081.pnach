@@ -1,0 +1,53 @@
+gametitle=Neopets-The Darkest Faerie (SCUS-97367)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9029E128,extended,00832021
+
+[Infinite HP]
+patch=1,EE,200C0220,extended,8C820158
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC820154
+patch=1,EE,201E2CD8,extended,0C030088
+
+[Max HP]
+patch=1,EE,200C0230,extended,240201F4
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AC820158
+patch=1,EE,201E2D0C,extended,0C03008C
+
+[Infinite Magic]
+patch=1,EE,200C0240,extended,8C820160
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,AC82015C
+patch=1,EE,201E2E14,extended,0C030090
+
+[Max Magic]
+patch=1,EE,200C0250,extended,240201F4
+patch=1,EE,200C0254,extended,03E00008
+patch=1,EE,200C0258,extended,AC820160
+patch=1,EE,201E2E28,extended,0C030094
+
+[Max Neo Points]
+patch=1,EE,200C0260,extended,3C060098
+patch=1,EE,200C0264,extended,34C6967F
+patch=1,EE,200C0268,extended,0806A37E
+patch=1,EE,200C026C,extended,AC460014
+patch=1,EE,2019EC80,extended,0C030098
+
+[Buying Items Doesnt Decrease Neo Points]
+patch=1,EE,201767AC,extended,24050000
+
+[Buying Items Increases Neo Points]
+patch=1,EE,201767AC,extended,00000000
+
+[Infinite Item Usage]
+patch=1,EE,201AA364,extended,00000000
+
+[Max Infinite Items]
+patch=1,EE,201AA35C,extended,24020064
+
+[Extra Items]
+patch=1,EE,201AA35C,extended,00651021

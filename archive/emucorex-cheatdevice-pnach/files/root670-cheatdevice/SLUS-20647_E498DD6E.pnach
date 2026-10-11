@@ -1,0 +1,86 @@
+gametitle=Wallace & Gromit In Project Zoo (SLUS-20647)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90468034,extended,0C11E743
+
+[Disable FMV]
+patch=1,EE,2046C000,extended,24020001
+
+[Show Debug Behavior]
+patch=1,EE,20587750,extended,00000001
+
+[Show Debug Reset Points]
+patch=1,EE,20587758,extended,00000001
+
+[Disable Heat Haze]
+patch=1,EE,2058ACC0,extended,00000000
+
+[Disable Reverb]
+patch=1,EE,2058E7CC,extended,00000000
+
+[Disable Occlusion]
+patch=1,EE,2058E7D0,extended,00000000
+
+[Show Debug Sound Manager]
+patch=1,EE,2058FFA8,extended,00000001
+
+[Show Debug Text]
+patch=1,EE,2058869C,extended,00000001
+
+[Nuts & Bolts Worth 100]
+patch=1,EE,1021A534,extended,00000064
+patch=1,EE,1021A5A8,extended,00000064
+
+[Nuts & Bolts Worth 50]
+patch=1,EE,1021A534,extended,00000032
+patch=1,EE,1021A5A8,extended,00000032
+
+[Nuts & Bolts Worth 20]
+patch=1,EE,1021A534,extended,00000014
+patch=1,EE,1021A5A8,extended,00000014
+
+[Nuts & Bolts Worth 10]
+patch=1,EE,1021A534,extended,0000000A
+patch=1,EE,1021A5A8,extended,0000000A
+
+[Nuts & Bolts Worth 5]
+patch=1,EE,1021A534,extended,00000005
+patch=1,EE,1021A5A8,extended,00000005
+
+[Nuts & Bolts Worth 2]
+patch=1,EE,1021A534,extended,00000002
+patch=1,EE,1021A5A8,extended,00000002
+
+[Pickup 1 Nut & Bolt For Max Quantity]
+patch=1,EE,2021A534,extended,240203E7
+patch=1,EE,2021A5A8,extended,240303E7
+
+[Have Most Weapons]
+patch=1,EE,20358B90,extended,24050001
+
+[Infinite Ammo]
+patch=1,EE,2034BB40,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,1034BB38,extended,00000001
+
+[Use Ammo Once For Max Ammo]
+patch=1,EE,2034BB38,extended,24020063
+
+[Can Fire Weapons With No Ammo]
+patch=1,EE,1034BB12,extended,00001000
+
+[Access All Extras]
+patch=1,EE,200C0220,extended,03E00008
+patch=1,EE,200C0224,extended,A482013E
+patch=1,EE,202B3660,extended,08030088
+patch=1,EE,202B3664,extended,2402FFFF
+
+[Infinite Health]
+patch=1,EE,200C0230,extended,24010008
+patch=1,EE,200C0234,extended,08081694
+patch=1,EE,200C0238,extended,AC410EB4
+patch=1,EE,20205770,extended,0C03008C

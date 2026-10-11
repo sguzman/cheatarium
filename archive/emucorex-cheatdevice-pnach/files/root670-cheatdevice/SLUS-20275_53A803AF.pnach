@@ -1,0 +1,43 @@
+gametitle=Kessen II (SLUS-20275)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00112FBF
+
+[Max Troop Strength]
+patch=1,EE,006968C1,extended,00000064
+
+[No Troop Strength]
+patch=1,EE,006968C1,extended,00000000
+
+[Max Supply]
+patch=1,EE,006968C2,extended,00000064
+
+[No Supply]
+patch=1,EE,006968C2,extended,00000000
+
+[Max Technology]
+patch=1,EE,006968C3,extended,00000064
+
+[No Technology]
+patch=1,EE,006968C3,extended,00000000
+
+[Max Troop Strength]
+patch=1,EE,006968C5,extended,00000064
+
+[No Troop Strength]
+patch=1,EE,006968C5,extended,00000000
+
+[Max Supply]
+patch=1,EE,006968C6,extended,00000064
+
+[No Supply]
+patch=1,EE,006968C6,extended,00000000
+
+[Max Technology]
+patch=1,EE,006968C7,extended,00000064
+
+[No Technology]
+patch=1,EE,006968C7,extended,00000000

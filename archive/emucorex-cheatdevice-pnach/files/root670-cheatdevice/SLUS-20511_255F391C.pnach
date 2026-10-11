@@ -1,0 +1,76 @@
+gametitle=Hunter The Reckoning-Wayward (SLUS-20511)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90126824,extended,0C046E5A
+
+[Disable FMV]
+patch=1,EE,20107FC0,extended,24020001
+
+[Infinite Health]
+patch=1,EE,2012F9A4,extended,E4800018
+
+[Infinite Special]
+patch=1,EE,2012F9E8,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,2016C134,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,2016C12C,extended,00711821
+
+[Never Reload]
+patch=1,EE,2014CC08,extended,00000000
+
+[Access All Available Area Maps]
+patch=1,EE,101E877A,extended,00001000
+
+[Access Abort Mission]
+patch=1,EE,201E87BC,extended,24020000
+
+[Infinite Continues]
+patch=1,EE,2076EC90,extended,000000C6
+
+[Infinite Continue Usage]
+patch=1,EE,201C60F8,extended,00000000
+
+[Extra Continues]
+patch=1,EE,201C60F4,extended,24630002
+
+[Unlock All Weapons]
+patch=1,EE,4076E8A0,extended,000D0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Model Viewer Models]
+patch=1,EE,4076E948,extended,00180001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Sound Player Sounds]
+patch=1,EE,4076E9A8,extended,000C0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Movie Viewer Movies]
+patch=1,EE,4076E9D8,extended,000C0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Hidden Costumes]
+patch=1,EE,4076EA38,extended,00090001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Hunter-Net Notes]
+patch=1,EE,4076EA84,extended,00240001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Available Area Maps]
+patch=1,EE,4076EB14,extended,00080001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Characters]
+patch=1,EE,4076EB3C,extended,00070001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Levels]
+patch=1,EE,4076EC1C,extended,000B0001
+patch=1,EE,00000001,extended,00000000

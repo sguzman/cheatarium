@@ -1,0 +1,446 @@
+gametitle=Frogger-Ancient Shadow (SLUS-21098)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9010F360,extended,00832021
+
+[Max Gold Coins (Overall)]
+patch=1,EE,2038B02C,extended,000003E7
+
+[Max Gold Coins (On Pickup)]
+patch=1,EE,2023E620,extended,241303E7
+patch=1,EE,2023E6AC,extended,241303E7
+
+[Infinite Lives]
+patch=1,EE,2023E180,extended,00000000
+
+[Max Infinite Lives]
+patch=1,EE,2023E17C,extended,24020004
+
+[Unlock All Levels]
+patch=1,EE,4038B034,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Practice Level]
+patch=1,EE,7038B034,extended,00000020
+
+[Area 1-Level 1]
+patch=1,EE,7038B035,extended,00000010
+
+[Area 1-Level 2]
+patch=1,EE,7038B036,extended,00000004
+
+[Area 1-Level 3]
+patch=1,EE,7038B037,extended,00000001
+
+[Area 1-Boss]
+patch=1,EE,7038B037,extended,00000004
+
+[Area 2-Level 1]
+patch=1,EE,7038B038,extended,00000002
+
+[Area 2-Level 2]
+patch=1,EE,7038B038,extended,00000080
+
+[Area 2-Level 3]
+patch=1,EE,7038B039,extended,00000020
+
+[Area 2-Boss]
+patch=1,EE,7038B039,extended,00000080
+
+[Area 3-Level 1]
+patch=1,EE,7038B03A,extended,00000040
+
+[Area 3-Level 2]
+patch=1,EE,7038B03B,extended,00000001
+
+[Area 3-Level 3]
+patch=1,EE,7038B03B,extended,00000040
+
+[Area 3-Boss]
+patch=1,EE,7038B03C,extended,00000001
+
+[Area 4-Level 1]
+patch=1,EE,7038B03C,extended,00000080
+
+[Area 4-Level 2]
+patch=1,EE,7038B03D,extended,00000020
+
+[Area 4-Level 3]
+patch=1,EE,7038B03D,extended,00000080
+
+[Area 4-Boss]
+patch=1,EE,7038B03E,extended,00000002
+
+[Area 5-Level 1]
+patch=1,EE,7038B03F,extended,00000001
+
+[Area 5-Level 2]
+patch=1,EE,7038B03F,extended,00000040
+
+[Area 5-Level 3]
+patch=1,EE,7038B040,extended,00000001
+
+[Area 5-Boss]
+patch=1,EE,7038B040,extended,00000004
+
+[Area 6-Level 1]
+patch=1,EE,7038B041,extended,00000002
+
+[Area 6-Level 2]
+patch=1,EE,7038B041,extended,00000080
+
+[Area 6-Level 3]
+patch=1,EE,7038B042,extended,00000020
+
+[Area 6-Boss]
+patch=1,EE,7038B042,extended,00000080
+
+[Area 7-Level 1]
+patch=1,EE,7038B043,extended,00000040
+
+[Area 7-Level 2]
+patch=1,EE,7038B044,extended,00000010
+
+[Area 7-Level 3]
+patch=1,EE,7038B044,extended,00000040
+
+[Area 7-Boss]
+patch=1,EE,7038B045,extended,00000002
+
+[All Levels]
+patch=1,EE,7038B034,extended,00101020
+patch=1,EE,7038B036,extended,00100504
+patch=1,EE,7038B038,extended,0010A082
+patch=1,EE,7038B03A,extended,00104140
+patch=1,EE,7038B03C,extended,0010A081
+patch=1,EE,7038B03E,extended,00104102
+patch=1,EE,7038B040,extended,00108205
+patch=1,EE,7038B042,extended,001040A0
+patch=1,EE,7038B044,extended,00100250
+
+[Practice-Coin 1]
+patch=1,EE,7038B034,extended,00000008
+
+[Practice-Coin 2]
+patch=1,EE,7038B034,extended,00000010
+
+[Area 1-Level 1-Coin 1]
+patch=1,EE,7038B035,extended,00000004
+
+[Area 1-Level 1-Coin 2]
+patch=1,EE,7038B035,extended,00000008
+
+[Area 1-Level 2-Coin 1]
+patch=1,EE,7038B036,extended,00000001
+
+[Area 1-Level 2-Coin 2]
+patch=1,EE,7038B036,extended,00000002
+
+[Area 1-Level 3-Coin 1]
+patch=1,EE,7038B036,extended,00000040
+
+[Area 1-Level 3-Coin 2]
+patch=1,EE,7038B036,extended,00000080
+
+[Area 2-Level 1-Coin 1]
+patch=1,EE,7038B037,extended,00000080
+
+[Area 2-Level 1-Coin 2]
+patch=1,EE,7038B038,extended,00000001
+
+[Area 2-Level 2-Coin 1]
+patch=1,EE,7038B038,extended,00000020
+
+[Area 2-Level 2-Coin 2]
+patch=1,EE,7038B038,extended,00000040
+
+[Area 2-Level 3-Coin 1]
+patch=1,EE,7038B039,extended,00000008
+
+[Area 2-Level 3-Coin 3]
+patch=1,EE,7038B039,extended,00000010
+
+[Area 3-Level 1-Coin 1]
+patch=1,EE,7038B03A,extended,00000010
+
+[Area 3-Level 1-Coin 2]
+patch=1,EE,7038B03A,extended,00000020
+
+[Area 3-Level 3-Coin 1]
+patch=1,EE,7038B03B,extended,00000010
+
+[Area 3-Level 3-Coin 2]
+patch=1,EE,7038B03B,extended,00000020
+
+[Area 4-Level 1-Coin 1]
+patch=1,EE,7038B03C,extended,00000020
+
+[Area 4-Level 1-Coin 2]
+patch=1,EE,7038B03C,extended,00000040
+
+[Area 4-Level 2-Coin 1]
+patch=1,EE,7038B03D,extended,00000008
+
+[Area 4-Level 2-Coin 2]
+patch=1,EE,7038B03D,extended,00000010
+
+[Area 5-Level 1-Coin 1]
+patch=1,EE,7038B03E,extended,00000040
+
+[Area 5-Level 1-Coin 2]
+patch=1,EE,7038B03E,extended,00000080
+
+[Area 5-Level 2-Coin 1]
+patch=1,EE,7038B03F,extended,00000010
+
+[Area 5-Level 2-Coin 2]
+patch=1,EE,7038B03F,extended,00000020
+
+[Area 6-Level 1-Coin 1]
+patch=1,EE,7038B040,extended,00000080
+
+[Area 6-Level 1-Coin 2]
+patch=1,EE,7038B041,extended,00000001
+
+[Area 6-Level 2-Coin 1]
+patch=1,EE,7038B041,extended,00000020
+
+[Area 6-Level 2-Coin 2]
+patch=1,EE,7038B041,extended,00000040
+
+[Area 6-Level 3-Coin 1]
+patch=1,EE,7038B042,extended,00000008
+
+[Area 6-Level 3-Coin 2]
+patch=1,EE,7038B042,extended,00000010
+
+[Area 7-Level 1-Coin 1]
+patch=1,EE,7038B043,extended,00000010
+
+[Area 7-Level 1-Coin 2]
+patch=1,EE,7038B043,extended,00000020
+
+[Area 7-Level 2-Coin 1]
+patch=1,EE,7038B044,extended,00000004
+
+[Area 7-Level 2-Coin 2]
+patch=1,EE,7038B044,extended,00000008
+
+[Mask]
+patch=1,EE,7038B04A,extended,00000080
+
+[Lion Statue]
+patch=1,EE,7038B04B,extended,00000001
+
+[Piece Of a Mural]
+patch=1,EE,7038B04B,extended,00000002
+
+[Horippa Cikir's Statue]
+patch=1,EE,7038B04B,extended,00000004
+
+[Firefly Surfboard]
+patch=1,EE,7038B04B,extended,00000008
+
+[Ancient Lamp]
+patch=1,EE,7038B04B,extended,00000010
+
+[Ancient Frog King Masks]
+patch=1,EE,7038B04B,extended,00000020
+
+[Gold Mini Croc Statue]
+patch=1,EE,7038B04B,extended,00000040
+
+[Handmade Frogger Statue]
+patch=1,EE,7038B04B,extended,00000080
+
+[Miniature Monument]
+patch=1,EE,7038B04C,extended,00000001
+
+[Lumpy's Rod And Pail]
+patch=1,EE,7038B04C,extended,00000002
+
+[Ancient Wani Tribe King's Statue]
+patch=1,EE,7038B04C,extended,00000004
+
+[Handmade Lily Statue]
+patch=1,EE,7038B04C,extended,00000008
+
+[Angel's Tear]
+patch=1,EE,7038B04C,extended,00000010
+
+[Cheap Robot Wani]
+patch=1,EE,7038B04C,extended,00000020
+
+[Championship Belt]
+patch=1,EE,7038B04C,extended,00000040
+
+[Giant Fish's Scale]
+patch=1,EE,7038B04C,extended,00000080
+
+[Wing Statue]
+patch=1,EE,7038B04D,extended,00000001
+
+[Tomb Key]
+patch=1,EE,7038B04D,extended,00000002
+
+[Hero's Medal]
+patch=1,EE,7038B04D,extended,00000004
+
+['Thank You' Trophy]
+patch=1,EE,7038B04D,extended,00000008
+
+[Egyptian Frogger Statue]
+patch=1,EE,7038B04D,extended,00000010
+
+[Pot Of Mega-Luck]
+patch=1,EE,7038B04D,extended,00000020
+
+[Toy Sword And Shield]
+patch=1,EE,7038B04D,extended,00000040
+
+[Red-Eyed Statue]
+patch=1,EE,7038B04D,extended,00000080
+
+[All Items]
+patch=1,EE,7038B04A,extended,0010FF80
+patch=1,EE,1038B04C,extended,0000FFFF
+
+[Eyeglasses]
+patch=1,EE,7038B04E,extended,00000001
+
+[Nerdy-Looking Glasses]
+patch=1,EE,7038B04E,extended,00000002
+
+[Sunglasses]
+patch=1,EE,7038B04E,extended,00000004
+
+[The Firefly Swamp Red Vickies Cap]
+patch=1,EE,7038B04E,extended,00000008
+
+[Helmet]
+patch=1,EE,7038B04E,extended,00000010
+
+[Magician's Cap]
+patch=1,EE,7038B04E,extended,00000020
+
+[Graduation Cap]
+patch=1,EE,7038B04E,extended,00000040
+
+[Santa Claus Hat]
+patch=1,EE,7038B04E,extended,00000080
+
+[Halloween Pumpkin]
+patch=1,EE,7038B04F,extended,00000001
+
+[Cheese]
+patch=1,EE,7038B04F,extended,00000002
+
+[Construction Helmet]
+patch=1,EE,7038B04F,extended,00000004
+
+[Spelunker's Helmet]
+patch=1,EE,7038B04F,extended,00000008
+
+[Brown Afro Wig]
+patch=1,EE,7038B04F,extended,00000010
+
+[Fire Afro Wing]
+patch=1,EE,7038B04F,extended,00000020
+
+[Vegentarian Afro Wing]
+patch=1,EE,7038B04F,extended,00000040
+
+[Angel's Wings]
+patch=1,EE,7038B04F,extended,00000080
+
+[Peacock's Feather]
+patch=1,EE,7038B050,extended,00000001
+
+[Devil's Wings]
+patch=1,EE,7038B050,extended,00000002
+
+[Sombrero]
+patch=1,EE,7038B050,extended,00000004
+
+[Silk Hat]
+patch=1,EE,7038B050,extended,00000008
+
+[Mohawk Wig]
+patch=1,EE,7038B050,extended,00000010
+
+[Pirate's Cap]
+patch=1,EE,7038B050,extended,00000020
+
+[Crown]
+patch=1,EE,7038B050,extended,00000040
+
+[Samurai Hairpiece]
+patch=1,EE,7038B050,extended,00000080
+
+[Bull Horns]
+patch=1,EE,7038B051,extended,00000001
+
+[Elk Antlers]
+patch=1,EE,7038B051,extended,00000002
+
+[Antennae]
+patch=1,EE,7038B051,extended,00000004
+
+[Ram Horns]
+patch=1,EE,7038B051,extended,00000008
+
+[Penguin]
+patch=1,EE,7038B051,extended,00000010
+
+[Rabbit Ears]
+patch=1,EE,7038B051,extended,00000020
+
+[Lion Mane]
+patch=1,EE,7038B051,extended,00000040
+
+[Stylin' Hair]
+patch=1,EE,7038B051,extended,00000080
+
+[Kappa]
+patch=1,EE,7038B052,extended,00000001
+
+[Straw Hat]
+patch=1,EE,7038B052,extended,00000002
+
+[Cossack Hat]
+patch=1,EE,7038B052,extended,00000004
+
+[Innuit's Cap (Native Canadian)]
+patch=1,EE,7038B052,extended,00000008
+
+[Party Nose-'N'-Glasses]
+patch=1,EE,7038B052,extended,00000010
+
+[Headphones]
+patch=1,EE,7038B052,extended,00000020
+
+[Frankenstein's Monster]
+patch=1,EE,7038B052,extended,00000040
+
+[Dragon Horns]
+patch=1,EE,7038B052,extended,00000080
+
+[Lobster]
+patch=1,EE,7038B053,extended,00000001
+
+[Bird's Nest]
+patch=1,EE,7038B053,extended,00000002
+
+[Masted Ship]
+patch=1,EE,7038B053,extended,00000004
+
+[Skull]
+patch=1,EE,7038B053,extended,00000008
+
+[All Accessories]
+patch=1,EE,1038B04E,extended,0000FFFF
+patch=1,EE,1038B050,extended,0000FFFF
+patch=1,EE,7038B052,extended,00100FFF

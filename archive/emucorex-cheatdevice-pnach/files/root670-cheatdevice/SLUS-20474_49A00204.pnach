@@ -1,0 +1,180 @@
+gametitle=NFL Blitz 20-03 (SLUS-20474)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9026B3FC,extended,0C093A42
+
+[Home Team Scores 255]
+patch=1,EE,20178848,extended,340200FF
+patch=1,EE,20178850,extended,A6420000
+
+[Home Team Scores 150]
+patch=1,EE,20178848,extended,34020096
+patch=1,EE,20178850,extended,A6420000
+
+[Home Team Scores 0]
+patch=1,EE,20178848,extended,34020000
+patch=1,EE,20178850,extended,A6420000
+
+[Away Team Scores 255]
+patch=1,EE,201788C0,extended,340200FF
+patch=1,EE,201788C8,extended,AE420000
+
+[Away Team Scores 150]
+patch=1,EE,201788C0,extended,34020096
+patch=1,EE,201788C8,extended,AE420000
+
+[Away Team Scores 0]
+patch=1,EE,201788C0,extended,34020000
+patch=1,EE,201788C8,extended,AE420000
+
+[Infinite Turbo (All Players)]
+patch=1,EE,20197EAC,extended,00000000
+
+[Always 1st Down]
+patch=1,EE,2016A46C,extended,24030001
+patch=1,EE,2016A474,extended,A6430006
+
+[Always 4th Down]
+patch=1,EE,2016A46C,extended,24030004
+patch=1,EE,2016A474,extended,A6430006
+
+[Home Team Extra Point's Score 10]
+patch=1,EE,101791FC,extended,0000000A
+
+[Home Team Extra Point's Score 5]
+patch=1,EE,101791FC,extended,00000005
+
+[Home Team Extra Point's Score 12]
+patch=1,EE,101791FC,extended,00000002
+
+[Away Team Extra Point's Score 10]
+patch=1,EE,1017920C,extended,0000000A
+
+[Away Team Extra Point's Score 5]
+patch=1,EE,1017920C,extended,00000005
+
+[Away Team Extra Point's Score 2]
+patch=1,EE,1017920C,extended,00000002
+
+[Home Team 2-Point Conversion's Score 10]
+patch=1,EE,101794F4,extended,0000000A
+patch=1,EE,10179648,extended,0000000A
+
+[Home Team 2-Point Conversion's Score 5]
+patch=1,EE,101794F4,extended,00000005
+patch=1,EE,10179648,extended,00000005
+
+[Home Team 2-Point Conversion's Score 1]
+patch=1,EE,101794F4,extended,00000001
+patch=1,EE,10179648,extended,00000001
+
+[Away Team 2-Point Conversion's Score 10]
+patch=1,EE,10179504,extended,0000000A
+patch=1,EE,10179658,extended,0000000A
+
+[Away Team 2-Point Conversion's Score 5]
+patch=1,EE,10179504,extended,00000005
+patch=1,EE,10179658,extended,00000005
+
+[Away Team 2-Point Conversion's Score 1]
+patch=1,EE,10179504,extended,00000001
+patch=1,EE,10179658,extended,00000001
+
+[Home Team Field Goal's Score 10]
+patch=1,EE,10179918,extended,0000000A
+
+[Home Team Field Goal's Score 5]
+patch=1,EE,10179918,extended,00000005
+
+[Home Team Field Goal's Score 1]
+patch=1,EE,10179918,extended,00000001
+
+[Away Team Field Goal's Score 10]
+patch=1,EE,10179950,extended,0000000A
+
+[Away Team Field Goal's Score 5]
+patch=1,EE,10179950,extended,00000005
+
+[Away Team Field Goal's Score 1]
+patch=1,EE,10179950,extended,00000001
+
+[Home Team Touch Down's Score 15]
+patch=1,EE,101793BC,extended,0000000F
+patch=1,EE,10179AB8,extended,0000000F
+patch=1,EE,1017A578,extended,0000000F
+patch=1,EE,1017ADB8,extended,0000000F
+
+[Home Team Touch Down's Score 10]
+patch=1,EE,101793BC,extended,0000000A
+patch=1,EE,10179AB8,extended,0000000A
+patch=1,EE,1017A578,extended,0000000A
+patch=1,EE,1017ADB8,extended,0000000A
+
+[Home Team Touch Down's Score 5]
+patch=1,EE,101793BC,extended,00000005
+patch=1,EE,10179AB8,extended,00000005
+patch=1,EE,1017A578,extended,00000005
+patch=1,EE,1017ADB8,extended,00000005
+
+[Home Team Touch Down's Score 1]
+patch=1,EE,101793BC,extended,00000001
+patch=1,EE,10179AB8,extended,00000001
+patch=1,EE,1017A578,extended,00000001
+patch=1,EE,1017ADB8,extended,00000001
+
+[Away Team Touch Down's Score 15]
+patch=1,EE,101793AC,extended,0000000F
+patch=1,EE,10179BCC,extended,0000000F
+patch=1,EE,1017A68C,extended,0000000F
+patch=1,EE,1017AECC,extended,0000000F
+
+[Away Team Touch Down's Score 10]
+patch=1,EE,101793AC,extended,0000000A
+patch=1,EE,10179BCC,extended,0000000A
+patch=1,EE,1017A68C,extended,0000000A
+patch=1,EE,1017AECC,extended,0000000A
+
+[Away Team Touch Down's Score 5]
+patch=1,EE,101793AC,extended,00000005
+patch=1,EE,10179BCC,extended,00000005
+patch=1,EE,1017A68C,extended,00000005
+patch=1,EE,1017AECC,extended,00000005
+
+[Away Team Touch Down's Score 1]
+patch=1,EE,101793AC,extended,00000001
+patch=1,EE,10179BCC,extended,00000001
+patch=1,EE,1017A68C,extended,00000001
+patch=1,EE,1017AECC,extended,00000001
+
+[Home Team Safety's Score 10]
+patch=1,EE,10179CE0,extended,0000000A
+patch=1,EE,1017A7A0,extended,0000000A
+patch=1,EE,1017AFE0,extended,0000000A
+
+[Home Team Safety's Score 10]
+patch=1,EE,10179CE0,extended,00000005
+patch=1,EE,1017A7A0,extended,00000005
+patch=1,EE,1017AFE0,extended,00000005
+
+[Home Team Safety's Score 1]
+patch=1,EE,10179CE0,extended,00000001
+patch=1,EE,1017A7A0,extended,00000001
+patch=1,EE,1017AFE0,extended,00000001
+
+[Away Team Safety's Score 10]
+patch=1,EE,10179DE8,extended,0000000A
+patch=1,EE,1017A8A8,extended,0000000A
+patch=1,EE,1017B0E8,extended,0000000A
+
+[Away Team Safety's Score 10]
+patch=1,EE,10179DE8,extended,00000005
+patch=1,EE,1017A8A8,extended,00000005
+patch=1,EE,1017B0E8,extended,00000005
+
+[Away Team Safety's Score 1]
+patch=1,EE,10179DE8,extended,00000001
+patch=1,EE,1017A8A8,extended,00000001
+patch=1,EE,1017B0E8,extended,00000001

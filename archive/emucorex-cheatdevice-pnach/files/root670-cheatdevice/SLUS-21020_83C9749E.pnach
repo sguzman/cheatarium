@@ -1,0 +1,223 @@
+gametitle=Gungrave-Overdose (SLUS-21020)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902838C4,extended,0C0A6D47
+
+[Disable FMV]
+patch=1,EE,2028A318,extended,24020001
+
+[Max Health]
+patch=1,EE,203B1BF8,extended,447A0000
+
+[Infinite Health]
+patch=1,EE,203B1BFC,extended,447A0000
+
+[Max Shield]
+patch=1,EE,203B1C04,extended,447A0000
+
+[Infinite Shield]
+patch=1,EE,203B1C08,extended,447A0000
+
+[Max Beat]
+patch=1,EE,203B1C14,extended,000003E7
+
+[Max Art]
+patch=1,EE,203B1C30,extended,000003E7
+
+[Quick Score Gain]
+patch=1,EE,103B23A8,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,203B23A8,extended,05F5E0FF
+
+[Quick Demolition Shot Gain]
+patch=1,EE,D03B23B2,extended,002044E0
+patch=1,EE,203B23B0,extended,44E10000
+
+[Infinite Demolition Shots]
+patch=1,EE,203B23B4,extended,00000004
+
+[Forward Attack]
+patch=1,EE,103B23D4,extended,00000001
+
+[Surrounding Attack]
+patch=1,EE,103B23D6,extended,00000001
+
+[Slow Time Attack]
+patch=1,EE,103B23D8,extended,00000001
+
+[Forward Attack]
+patch=1,EE,103B23D4,extended,00000002
+
+[Surrounding Attack]
+patch=1,EE,103B23D6,extended,00000002
+
+[Slow Time Attack]
+patch=1,EE,103B23D8,extended,00000002
+
+[Forward Attack]
+patch=1,EE,103B23D4,extended,00000003
+
+[Surrounding Attack]
+patch=1,EE,103B23D6,extended,00000003
+
+[Slow Time Attack]
+patch=1,EE,103B23D8,extended,00000003
+
+[Always Low Time]
+patch=1,EE,203B23C4,extended,00000000
+
+[Max Beat Count]
+patch=1,EE,203B23B8,extended,0000270F
+
+[Max Kills]
+patch=1,EE,203B23BC,extended,0000270F
+
+[Max Artistic Points]
+patch=1,EE,203B23C8,extended,0000270F
+
+[Max Jackpots]
+patch=1,EE,203B23CC,extended,0000270F
+
+[Shot Level 1-4]
+patch=1,EE,002A8576,extended,00000003
+
+[Close Range Level 1-4]
+patch=1,EE,002A8577,extended,00000003
+
+[Invincible]
+patch=1,EE,002A8578,extended,00000000
+
+[Unlimited Demolition]
+patch=1,EE,002A8579,extended,00000000
+
+[Secret Character]
+patch=1,EE,002A857A,extended,00000000
+
+[High Speed]
+patch=1,EE,002A857B,extended,00000000
+
+[All Explode]
+patch=1,EE,002A857C,extended,00000000
+
+[Camera Angle]
+patch=1,EE,002A857D,extended,00000000
+
+[Alternate Characters]
+patch=1,EE,002A857E,extended,00000000
+
+[All Customize]
+patch=1,EE,102A8576,extended,00000303
+patch=1,EE,202A8578,extended,00000000
+patch=1,EE,102A857C,extended,00000000
+patch=1,EE,002A857E,extended,00000000
+
+[Stage Select]
+patch=1,EE,002A857F,extended,00000000
+
+[Boss Rush]
+patch=1,EE,002A8580,extended,00000000
+
+[Enemy Rush]
+patch=1,EE,002A8581,extended,00000000
+
+[Play Movies]
+patch=1,EE,002A8582,extended,00000000
+
+[Play Conversations]
+patch=1,EE,002A8583,extended,00000000
+
+[Play Sound Effects]
+patch=1,EE,002A8584,extended,00000000
+
+[All Customize]
+patch=1,EE,002A857F,extended,00000000
+patch=1,EE,202A8580,extended,00000000
+patch=1,EE,002A8584,extended,00000000
+
+[Invinicible]
+patch=1,EE,002A8578,extended,00000001
+
+[Unlimited Demolition]
+patch=1,EE,002A8579,extended,00000001
+
+[Secret Character]
+patch=1,EE,002A857A,extended,00000001
+
+[High Speed]
+patch=1,EE,002A857B,extended,00000001
+
+[All Explode]
+patch=1,EE,002A857C,extended,00000001
+
+[Camera Angle-Near]
+patch=1,EE,002A857D,extended,00000001
+
+[Alternate Characters]
+patch=1,EE,002A857E,extended,00000001
+
+[Max Score]
+patch=1,EE,202A82C4,extended,05F5E0FF
+
+[Max Beat Count]
+patch=1,EE,202A82C8,extended,05F5E0FF
+
+[Life Remaining 100%]
+patch=1,EE,202A82CC,extended,00000064
+
+[Max Kills]
+patch=1,EE,202A82D0,extended,05F5E0FF
+
+[Max Art Points]
+patch=1,EE,202A82D8,extended,05F5E0FF
+
+[Max Bullets]
+patch=1,EE,202A82DC,extended,05F5E0FF
+
+[Max Jackpot]
+patch=1,EE,202A8330,extended,05F5E0FF
+
+[Max Score]
+patch=1,EE,202A82E4,extended,05F5E0FF
+
+[Max Beat Count]
+patch=1,EE,202A82E8,extended,05F5E0FF
+
+[Life Remaining 100%]
+patch=1,EE,202A82EC,extended,00000064
+
+[Max Kills]
+patch=1,EE,202A82F0,extended,05F5E0FF
+
+[Max Art Points]
+patch=1,EE,202A82F8,extended,05F5E0FF
+
+[Max Bullets]
+patch=1,EE,202A82FC,extended,05F5E0FF
+
+[Max Jackpot]
+patch=1,EE,202A8344,extended,05F5E0FF
+
+[Max Score]
+patch=1,EE,202A8304,extended,05F5E0FF
+
+[Max Beat Count]
+patch=1,EE,202A8308,extended,05F5E0FF
+
+[Life Remaining 100%]
+patch=1,EE,202A830C,extended,00000064
+
+[Max Kills]
+patch=1,EE,202A8310,extended,05F5E0FF
+
+[Max Art Points]
+patch=1,EE,202A8318,extended,05F5E0FF
+
+[Max Bullets]
+patch=1,EE,202A831C,extended,05F5E0FF
+
+[Max Jackpot]
+patch=1,EE,202A8358,extended,05F5E0FF

@@ -1,0 +1,25 @@
+gametitle=Smash Court Tennis Pro Tournament (SLUS-20286)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0025DA3F
+
+[Have All Player's Manuals]
+patch=1,EE,0123ED58,extended,000000FF
+
+[Have All Player's Photos]
+patch=1,EE,0123ED59,extended,000000FF
+
+[Have All View Cameras]
+patch=1,EE,0123ED5A,extended,000000FF
+
+[Have All Original BGM's]
+patch=1,EE,0123ED5B,extended,000000FF
+
+[Have All Player's Outfits]
+patch=1,EE,0123ED5C,extended,000000FF
+
+[Have Stadium Photos, Visual Effects & Soundtrack]
+patch=1,EE,0123ED5D,extended,000000FF

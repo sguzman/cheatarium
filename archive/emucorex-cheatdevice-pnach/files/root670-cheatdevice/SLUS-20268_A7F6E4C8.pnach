@@ -1,0 +1,698 @@
+gametitle=Star Wars-Racer Revenge (SLUS-20268)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903133AC,extended,0C0C18B0
+
+[Clegg Holdfast]
+patch=1,EE,2061BF68,extended,00000001
+
+[Gasgano]
+patch=1,EE,2061BF78,extended,00000001
+
+[Mawhonic]
+patch=1,EE,2061BF80,extended,00000001
+
+[Knire Dark]
+patch=1,EE,2061BFB4,extended,00000001
+
+[Kraid Nemmeso]
+patch=1,EE,2061BFB8,extended,00000001
+
+[Wan Sandage]
+patch=1,EE,2061BF9C,extended,00000001
+
+[Mars Guo]
+patch=1,EE,2061BF7C,extended,00000001
+
+[Scorch Zanales]
+patch=1,EE,2061BFA0,extended,00000001
+
+[Tzikik Wrantojo]
+patch=1,EE,2061BFBC,extended,00000001
+
+[Sebulba]
+patch=1,EE,2061BFA4,extended,00000001
+
+[Young Anakin]
+patch=1,EE,2061BF60,extended,00000001
+
+[Sebulba (Episode I)]
+patch=1,EE,2061BF94,extended,00000001
+
+[Watto]
+patch=1,EE,2061BFC0,extended,00000001
+
+[Darth Maul]
+patch=1,EE,2061BFB0,extended,00000001
+
+[Darth Vader]
+patch=1,EE,2061BFC4,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2061743C,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20617440,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20617444,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,206171BC,extended,3F666666
+
+[Max Top Speed]
+patch=1,EE,206171C0,extended,3F733333
+
+[Max Handling]
+patch=1,EE,206171C4,extended,3F666666
+
+[Max Defense]
+patch=1,EE,206171C8,extended,3F666666
+
+[Max Repair]
+patch=1,EE,206171CC,extended,3F666666
+
+[Max Cooling]
+patch=1,EE,206171D0,extended,3F599999
+
+[Have All Gold Medals]
+patch=1,EE,406171D4,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,006171E0,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20617CD0,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20617CD4,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20617CD8,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20617AA0,extended,3F800000
+
+[Max Top Speed]
+patch=1,EE,20617AA4,extended,3F599999
+
+[Max Handling]
+patch=1,EE,20617AA8,extended,3F599999
+
+[Max Defense]
+patch=1,EE,20617AAC,extended,3F4CCCCD
+
+[Max Repair]
+patch=1,EE,20617AB0,extended,3F800000
+
+[Max Cooling]
+patch=1,EE,20617AB4,extended,3F666666
+
+[Have All Gold Medals]
+patch=1,EE,40617AB8,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00617AC4,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20613830,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20613834,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20613838,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20613380,extended,3F666666
+
+[Max Top Speed]
+patch=1,EE,20613384,extended,3F666666
+
+[Max Handling]
+patch=1,EE,20613388,extended,3F666666
+
+[Max Defense]
+patch=1,EE,2061338C,extended,3F666666
+
+[Max Repair]
+patch=1,EE,20613390,extended,3F599999
+
+[Max Cooling]
+patch=1,EE,20613394,extended,3F666666
+
+[Have All Gold Medals]
+patch=1,EE,40613398,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00613A34,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20612708,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2061270C,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20612710,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,206121B8,extended,3F599999
+
+[Max Top Speed]
+patch=1,EE,206121BC,extended,3F599999
+
+[Max Handling]
+patch=1,EE,206121C0,extended,3F800000
+
+[Max Defense]
+patch=1,EE,206121C4,extended,3F733333
+
+[Max Repair]
+patch=1,EE,206121C8,extended,3F666666
+
+[Max Cooling]
+patch=1,EE,206121CC,extended,3F599999
+
+[Have All Gold Medals]
+patch=1,EE,406121D0,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,006121DC,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2060E268,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2060E26C,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2060E270,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,2060DA98,extended,3F800000
+
+[Max Top Speed]
+patch=1,EE,2060DA9C,extended,3F4CCCCD
+
+[Max Handling]
+patch=1,EE,2060DAA0,extended,3F666666
+
+[Max Defense]
+patch=1,EE,2060DAA4,extended,3F4CCCCD
+
+[Max Repair]
+patch=1,EE,2060DAA8,extended,3F733333
+
+[Max Cooling]
+patch=1,EE,2060DAAC,extended,3F733333
+
+[Have All Gold Medals]
+patch=1,EE,4060DAB0,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0060DABC,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2060F390,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2060F394,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2060F398,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,2060EC60,extended,3F733333
+
+[Max Top Speed]
+patch=1,EE,2060EC64,extended,3F733333
+
+[Max Handling]
+patch=1,EE,2060EC68,extended,3F4CCCCD
+
+[Max Defense]
+patch=1,EE,2060EC6C,extended,3F666666
+
+[Max Repair]
+patch=1,EE,2060EC70,extended,3F599999
+
+[Max Cooling]
+patch=1,EE,2060EC74,extended,3F666666
+
+[Have All Gold Medals]
+patch=1,EE,4060EC78,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0060EC84,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20612F9C,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20612FA0,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20612FA4,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20612A9C,extended,3F4CCCCD
+
+[Max Top Speed]
+patch=1,EE,20612AA0,extended,3F733333
+
+[Max Handling]
+patch=1,EE,20612AA4,extended,3F733333
+
+[Max Defense]
+patch=1,EE,20612AA8,extended,3F666666
+
+[Max Repair]
+patch=1,EE,20612AAC,extended,3F4CCCCD
+
+[Max Cooling]
+patch=1,EE,20612AB0,extended,3F800000
+
+[Have All Gold Medals]
+patch=1,EE,40612AB4,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00612AC0,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,206151EC,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,206151F0,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,206151F4,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20614E2C,extended,3F666666
+
+[Max Top Speed]
+patch=1,EE,20614E30,extended,3F599999
+
+[Max Handling]
+patch=1,EE,20614E34,extended,3F733333
+
+[Max Defense]
+patch=1,EE,20614E38,extended,3F599999
+
+[Max Repair]
+patch=1,EE,20614E3C,extended,3F733333
+
+[Max Cooling]
+patch=1,EE,20614E40,extended,3F666666
+
+[Have All Gold Medals]
+patch=1,EE,40614E44,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00614E50,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2060EAFC,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2060EB00,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2060EB04,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,2060E37C,extended,3F733333
+
+[Max Top Speed]
+patch=1,EE,2060E380,extended,3F4CCCCD
+
+[Max Handling]
+patch=1,EE,2060E384,extended,3F733333
+
+[Max Defense]
+patch=1,EE,2060E388,extended,3F599999
+
+[Max Repair]
+patch=1,EE,2060E38C,extended,3F800000
+
+[Max Cooling]
+patch=1,EE,2060E390,extended,3F599999
+
+[Have All Gold Medals]
+patch=1,EE,4060E394,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0060E3A0,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20610D4C,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20610D50,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20610D54,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,2061070C,extended,3F733333
+
+[Max Top Speed]
+patch=1,EE,20610710,extended,3F666666
+
+[Max Handling]
+patch=1,EE,20610714,extended,3F599999
+
+[Max Defense]
+patch=1,EE,20610718,extended,3F599999
+
+[Max Repair]
+patch=1,EE,2061071C,extended,3F666666
+
+[Max Cooling]
+patch=1,EE,20610720,extended,3F733333
+
+[Have All Gold Medals]
+patch=1,EE,40610724,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00610730,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20611E74,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20611E78,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20611E7C,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,206118D4,extended,3F599999
+
+[Max Top Speed]
+patch=1,EE,206118D8,extended,3F733333
+
+[Max Handling]
+patch=1,EE,206118DC,extended,3F599999
+
+[Max Defense]
+patch=1,EE,206118E0,extended,3F666666
+
+[Max Repair]
+patch=1,EE,206118E4,extended,3F4CCCCD
+
+[Max Cooling]
+patch=1,EE,206118E8,extended,3F733333
+
+[Have All Gold Medals]
+patch=1,EE,406118EC,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,006118F8,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20618DF8,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20618DFC,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20618E00,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20618C68,extended,3F4CCCCD
+
+[Max Top Speed]
+patch=1,EE,20618C6C,extended,3F666666
+
+[Max Handling]
+patch=1,EE,20618C70,extended,3F800000
+
+[Max Defense]
+patch=1,EE,20618C74,extended,3F599999
+
+[Max Repair]
+patch=1,EE,20618C78,extended,3F599999
+
+[Max Cooling]
+patch=1,EE,20618C7C,extended,3F800000
+
+[Have All Gold Medals]
+patch=1,EE,40618C80,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00618C8C,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2061968C,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20619690,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20619694,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,2061954C,extended,3F666666
+
+[Max Top Speed]
+patch=1,EE,20619550,extended,3F733333
+
+[Max Handling]
+patch=1,EE,20619554,extended,3F599999
+
+[Max Defense]
+patch=1,EE,20619558,extended,3F666666
+
+[Max Repair]
+patch=1,EE,2061955C,extended,3F666666
+
+[Max Cooling]
+patch=1,EE,20619560,extended,3F4CCCCD
+
+[Have All Gold Medals]
+patch=1,EE,40619564,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00619570,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20615A80,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20615A84,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20615A88,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20615710,extended,3F733333
+
+[Max Top Speed]
+patch=1,EE,20615714,extended,3F666666
+
+[Max Handling]
+patch=1,EE,20615718,extended,3F666666
+
+[Max Defense]
+patch=1,EE,2061571C,extended,3F733333
+
+[Max Repair]
+patch=1,EE,20615720,extended,3F599999
+
+[Max Cooling]
+patch=1,EE,20615724,extended,3F599999
+
+[Have All Gold Medals]
+patch=1,EE,40615728,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00615734,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,206115E0,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,206115E4,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,206115E8,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20610FF0,extended,3F733333
+
+[Max Top Speed]
+patch=1,EE,20610FF4,extended,3F800000
+
+[Max Handling]
+patch=1,EE,20610FF8,extended,3F400000
+
+[Max Defense]
+patch=1,EE,20610FFC,extended,3F666666
+
+[Max Repair]
+patch=1,EE,20611000,extended,3F4CCCCD
+
+[Max Cooling]
+patch=1,EE,20611004,extended,3F733333
+
+[Have All Gold Medals]
+patch=1,EE,40611008,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00611014,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20616314,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20616318,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2061631C,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20615FF4,extended,3F599999
+
+[Max Top Speed]
+patch=1,EE,20615FF8,extended,3F666666
+
+[Max Handling]
+patch=1,EE,20615FFC,extended,3F733333
+
+[Max Defense]
+patch=1,EE,20616000,extended,3F733333
+
+[Max Repair]
+patch=1,EE,20616004,extended,3F4CCCCD
+
+[Max Cooling]
+patch=1,EE,20616008,extended,3F733333
+
+[Have All Gold Medals]
+patch=1,EE,4061600C,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00616018,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20619F20,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20619F24,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20619F28,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,20619E30,extended,3F733333
+
+[Max Top Speed]
+patch=1,EE,20619E34,extended,3F599999
+
+[Max Handling]
+patch=1,EE,20619E38,extended,3F666666
+
+[Max Defense]
+patch=1,EE,20619E3C,extended,3F666666
+
+[Max Repair]
+patch=1,EE,20619E40,extended,3F599999
+
+[Max Cooling]
+patch=1,EE,20619E44,extended,3F666666
+
+[Have All Gold Medals]
+patch=1,EE,40619E48,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00619E54,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20616BA8,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20616BAC,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20616BB0,extended,05F5E0FF
+
+[Max Acceleration]
+patch=1,EE,206168D8,extended,3F599999
+
+[Max Top Speed]
+patch=1,EE,206168DC,extended,3F800000
+
+[Max Handling]
+patch=1,EE,206168E0,extended,3F733333
+
+[Max Defense]
+patch=1,EE,206168E4,extended,3F733333
+
+[Max Repair]
+patch=1,EE,206168E8,extended,3F599999
+
+[Max Cooling]
+patch=1,EE,206168EC,extended,3F599999
+
+[Have All Gold Medals]
+patch=1,EE,406168F0,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,006168FC,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2060D9D4,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2060D9D8,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2060D9DC,extended,05F5E0FF
+
+[Have All Gold Medals]
+patch=1,EE,4060D1CC,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0060D1D8,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20614958,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2061495C,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,20614960,extended,05F5E0FF
+
+[Have All Gold Medals]
+patch=1,EE,40614560,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0061456C,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2061A7B4,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2061A7B8,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2061A7BC,extended,05F5E0FF
+
+[Have All Gold Medals]
+patch=1,EE,4061A72C,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0061A738,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,20618564,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,20618568,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2061856C,extended,05F5E0FF
+
+[Have All Gold Medals]
+patch=1,EE,4061839C,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,006183A8,extended,00000001
+
+[Max Career Winnings]
+patch=1,EE,2061B048,extended,05F5E0FF
+
+[Max Available Truguts]
+patch=1,EE,2061B04C,extended,05F5E0FF
+
+[Max Career KO's]
+patch=1,EE,2061B048,extended,05F5E0FF
+
+[Have All Gold Medals]
+patch=1,EE,4061B010,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0061B01C,extended,00000001

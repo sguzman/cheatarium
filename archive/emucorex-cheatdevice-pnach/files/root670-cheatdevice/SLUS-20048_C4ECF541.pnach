@@ -1,0 +1,279 @@
+gametitle=Legion-The Legend Of Excalibur (SLUS-20048)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0024615F
+
+[Crown Of The Crusader Quickly Refills HP]
+patch=1,EE,2014355C,extended,24A20000
+
+[Stamina Always Quickly Refills Stamina]
+patch=1,EE,2013C1D0,extended,24820000
+
+[Infinite HP & Stamina (In-Battle)]
+patch=1,EE,201A7DEC,extended,84430002
+patch=1,EE,201A7DF0,extended,00000000
+patch=1,EE,201A7DF4,extended,A4430000
+
+[Infinite Money]
+patch=1,EE,117117D0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,217117D0,extended,05F5E0FF
+
+[Crown Of The Crusader]
+patch=1,EE,21711D0C,extended,00000001
+
+[Fire Ring]
+patch=1,EE,21711D10,extended,00000001
+
+[Belt Of The Mountain King]
+patch=1,EE,21711D14,extended,00000001
+
+[Bleeding Stone]
+patch=1,EE,21711D18,extended,00000001
+
+[Cross Of The True Knight]
+patch=1,EE,21711D1C,extended,00000001
+
+[Amulet Of Ice]
+patch=1,EE,21711D20,extended,00000001
+
+[Amulet Of Fire]
+patch=1,EE,21711D24,extended,00000001
+
+[Amulet Of Poison]
+patch=1,EE,21711D28,extended,00000001
+
+[Mask Of The Minotaur]
+patch=1,EE,21711D2C,extended,00000001
+
+[Death's Coil]
+patch=1,EE,21711D30,extended,00000001
+
+[Death's Guard]
+patch=1,EE,21711D34,extended,00000001
+
+[Death's Cross]
+patch=1,EE,21711D38,extended,00000001
+
+[Crown Of Pain]
+patch=1,EE,21711D3C,extended,00000001
+
+[Death's Face]
+patch=1,EE,21711D40,extended,00000001
+
+[Fist Of Needles]
+patch=1,EE,21711D44,extended,00000001
+
+[Crusher]
+patch=1,EE,21711D48,extended,00000001
+
+[Fist Of Ice]
+patch=1,EE,21711D4C,extended,00000001
+
+[Gwen's Gauntlet]
+patch=1,EE,21711D50,extended,00000001
+
+[Ice Arrows]
+patch=1,EE,21711D54,extended,00000001
+
+[Fire Arrows]
+patch=1,EE,21711D58,extended,00000001
+
+[Iron Arrows]
+patch=1,EE,21711D5C,extended,00000001
+
+[Shock Arrows]
+patch=1,EE,21711D60,extended,00000001
+
+[Gauntlet Of The Mountain King]
+patch=1,EE,21711D64,extended,00000001
+
+[Holy Cross]
+patch=1,EE,21711D68,extended,00000001
+
+[Crusader's Sheath]
+patch=1,EE,21711D6C,extended,00000001
+
+[Golden Eye]
+patch=1,EE,21711D70,extended,00000001
+
+[Amulet Of Transferance]
+patch=1,EE,21711D74,extended,00000001
+
+[Chains Of The Tormented]
+patch=1,EE,21711D78,extended,00000001
+
+[Circle Of Fire]
+patch=1,EE,21711D7C,extended,00000001
+
+[Brodun's Belt]
+patch=1,EE,21711D80,extended,00000001
+
+[Blood Cross]
+patch=1,EE,21711D84,extended,00000001
+
+[Mask Of Ugliness]
+patch=1,EE,21711D88,extended,00000001
+
+[Heavy Belt]
+patch=1,EE,21711D8C,extended,00000001
+
+[Ulik's Fist]
+patch=1,EE,21711D90,extended,00000001
+
+[Loric's Grounding]
+patch=1,EE,21711D94,extended,00000001
+
+[Bracer Of Fire Protection]
+patch=1,EE,21711D98,extended,00000001
+
+[Bracer Of The Double Edge]
+patch=1,EE,21711D9C,extended,00000001
+
+[The Tithing Cross]
+patch=1,EE,21711DA0,extended,00000001
+
+[Cross Of Cleansing]
+patch=1,EE,21711DA4,extended,00000001
+
+[Brother Cedric's Faith]
+patch=1,EE,21711DA8,extended,00000001
+
+[Crown Of The Northern King]
+patch=1,EE,21711DAC,extended,00000001
+
+[Crown Of The Dead]
+patch=1,EE,21711DB0,extended,00000001
+
+[Thorn Fist]
+patch=1,EE,21711DB4,extended,00000001
+
+[Platemail Gauntlet]
+patch=1,EE,21711DB8,extended,00000001
+
+[Burning Fist]
+patch=1,EE,21711DBC,extended,00000001
+
+[Hand Of God]
+patch=1,EE,21711DC0,extended,00000001
+
+[Lord Illoth's Visage]
+patch=1,EE,21711DC4,extended,00000001
+
+[The Plague]
+patch=1,EE,21711DC8,extended,00000001
+
+[Mask Of The Lion]
+patch=1,EE,21711DCC,extended,00000001
+
+[Mask Of The Ancient King]
+patch=1,EE,21711DD0,extended,00000001
+
+[Wolf Clan's Pride]
+patch=1,EE,21711DD4,extended,00000001
+
+[Blessed Arrows]
+patch=1,EE,21711DD8,extended,00000001
+
+[Poison Arrows]
+patch=1,EE,21711DDC,extended,00000001
+
+[Bone Arrows]
+patch=1,EE,21711DE0,extended,00000001
+
+[Blood Ring]
+patch=1,EE,21711DE4,extended,00000001
+
+[Raven's Revenge]
+patch=1,EE,21711DE8,extended,00000001
+
+[Ring Of Three]
+patch=1,EE,21711DEC,extended,00000001
+
+[Constricting Ring]
+patch=1,EE,21711DF0,extended,00000001
+
+[Cleric's Bind]
+patch=1,EE,21711DF4,extended,00000001
+
+[Grolic's Frost]
+patch=1,EE,21711DF8,extended,00000001
+
+[Hadrin's Experience]
+patch=1,EE,21711DFC,extended,00000001
+
+[Serpent's Coil]
+patch=1,EE,21711E00,extended,00000001
+
+[Icy Wrap]
+patch=1,EE,21711E04,extended,00000001
+
+[Burning Sash]
+patch=1,EE,21711E08,extended,00000001
+
+[Royal Cord]
+patch=1,EE,21711E0C,extended,00000001
+
+[Celt's Cloth]
+patch=1,EE,21711E10,extended,00000001
+
+[Heavy Sash]
+patch=1,EE,21711E14,extended,00000001
+
+[Frost Sheath]
+patch=1,EE,21711E18,extended,00000001
+
+[Plague Sheath]
+patch=1,EE,21711E1C,extended,00000001
+
+[Burning Sheath]
+patch=1,EE,21711E20,extended,00000001
+
+[King's Sheath]
+patch=1,EE,21711E24,extended,00000001
+
+[Piercing Gaze]
+patch=1,EE,21711E28,extended,00000001
+
+[Frozen Rune]
+patch=1,EE,21711E2C,extended,00000001
+
+[Poisoned Rune]
+patch=1,EE,21711E30,extended,00000001
+
+[Wounding Rune]
+patch=1,EE,21711E34,extended,00000001
+
+[Burning Rune]
+patch=1,EE,21711E38,extended,00000001
+
+[Charged Rune]
+patch=1,EE,21711E3C,extended,00000001
+
+[Grand Crown]
+patch=1,EE,21711E40,extended,00000001
+
+[Poisoned Laurel]
+patch=1,EE,21711E44,extended,00000001
+
+[Hell's Crown]
+patch=1,EE,21711E48,extended,00000001
+
+[The Holy Grail]
+patch=1,EE,21711E4C,extended,00000001
+
+[Elemental Poison Shard]
+patch=1,EE,21711E50,extended,00000001
+
+[Elemental Fire Shard]
+patch=1,EE,21711E54,extended,00000001
+
+[Elemental Ice Shard]
+patch=1,EE,21711E58,extended,00000001
+
+[Luck Stone]
+patch=1,EE,21711E5C,extended,00000001

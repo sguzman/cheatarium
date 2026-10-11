@@ -1,0 +1,54 @@
+gametitle=Lupin The 3rd-Treasure Of The Sorcerer King (SLUS-20683)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0024EFFF
+
+[Infinite Health]
+patch=1,EE,2028C9F8,extended,00000000
+
+[Have All Items/Equips]
+patch=1,EE,20161F78,extended,24A20000
+patch=1,EE,20161F7C,extended,24440000
+patch=1,EE,20161F98,extended,24030001
+patch=1,EE,20161FA0,extended,00000000
+patch=1,EE,20161FA4,extended,A4430050
+
+[Have Max All Items/Equips]
+patch=1,EE,20161F78,extended,24A20000
+patch=1,EE,20161F7C,extended,24440000
+patch=1,EE,20161F98,extended,24030063
+patch=1,EE,20161FA0,extended,00000000
+patch=1,EE,20161FA4,extended,A4430050
+
+[Infinite Dummy Dolls]
+patch=1,EE,20193508,extended,00000000
+
+[Extra Dummy Dolls]
+patch=1,EE,10193500,extended,00000001
+
+[Infinite Ammo (Shot Shells & Sleep Cylinders)]
+patch=1,EE,201B8848,extended,00000000
+
+[Extra Ammo (Shot Shells & Sleep Cylinders)]
+patch=1,EE,101B883C,extended,00000001
+
+[Never Reload (Shot Shells & Sleep Cylinders)]
+patch=1,EE,201B8824,extended,00000000
+
+[Never Reload (9mm Parabellum & Golden Bullets)]
+patch=1,EE,201B87CC,extended,00000000
+
+[Always Low Danger Meter]
+patch=1,EE,2028E72C,extended,00000000
+
+[First Aid Kit (Low Level)]
+patch=1,EE,1028CB76,extended,00000063
+
+[Dummy Doll]
+patch=1,EE,1028CB9A,extended,00000063
+
+[First Aid Kit (High Level)]
+patch=1,EE,1028CC66,extended,00000063

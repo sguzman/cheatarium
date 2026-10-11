@@ -1,0 +1,127 @@
+gametitle=Shadow Man-2econd Coming (SLUS-20413)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901F6E7C,extended,0C07DEBA
+
+[Infinite Health]
+patch=1,EE,2010C0F0,extended,03E00008
+patch=1,EE,2010C0F4,extended,00000000
+
+[Invincible]
+patch=1,EE,202BBF04,extended,00000001
+
+[Have All Menu Items/Weapons]
+patch=1,EE,202BABCC,extended,00000001
+
+[Super Jump (Configuration 1)]
+patch=1,EE,D02F8002,extended,0000EFFF
+patch=1,EE,201052C8,extended,00000000
+patch=1,EE,D02F8002,extended,0010EFFF
+patch=1,EE,201052C8,extended,E48200CC
+
+[Super Jump (Configuration 2)]
+patch=1,EE,D02F8002,extended,0000BFFF
+patch=1,EE,201052C8,extended,00000000
+patch=1,EE,D02F8002,extended,0010BFFF
+patch=1,EE,201052C8,extended,E48200CC
+
+[Super Jump (Configuration 3+4)]
+patch=1,EE,D02F8002,extended,0000F7FF
+patch=1,EE,201052C8,extended,00000000
+patch=1,EE,D02F8002,extended,0010F7FF
+patch=1,EE,201052C8,extended,E48200CC
+
+[Rapid Fire]
+patch=1,EE,2011F9EC,extended,00000000
+
+[Infinite Ammo Usage]
+patch=1,EE,201414A0,extended,00000000
+
+[Can Use Voodoo When Empty]
+patch=1,EE,20187148,extended,03E00008
+patch=1,EE,2018714C,extended,24020001
+
+[Display Debug Info]
+patch=1,EE,202BB2A4,extended,00000001
+
+[P1 Press {L3}+Up For Baddy Auto Taunt On]
+patch=1,EE,D02F7F82,extended,0000FFED
+patch=1,EE,202BB298,extended,00000001
+
+[P1 Press {L3}+Down For Baddy Auto Taunt Off]
+patch=1,EE,D02F7F82,extended,0000FFBD
+patch=1,EE,202BB298,extended,00000000
+
+[P1 Press {R3}+Up For Baddy No Move On]
+patch=1,EE,D02F7F82,extended,0000FFEB
+patch=1,EE,202BB29C,extended,00000001
+
+[P1 Press {R3}+Down For Baddy No Move On]
+patch=1,EE,D02F7F82,extended,0000FFBB
+patch=1,EE,202BB29C,extended,00000000
+
+[P1 Press {R3}+Left For Baddy Freeze On]
+patch=1,EE,D02F7F82,extended,0000FF7B
+patch=1,EE,202BB2A0,extended,00000001
+
+[P1 Press {R3}+Right For Baddy Freeze Off]
+patch=1,EE,D02F7F82,extended,0000FFDB
+patch=1,EE,202BB2A0,extended,00000000
+
+[Disable Hud]
+patch=1,EE,202EF688,extended,00000000
+
+[P1 Press {L1}+{L2} For Debug 1 Menu Activated]
+patch=1,EE,E002FAFF,extended,002F7F82
+patch=1,EE,203078A4,extended,FFFFFFFF
+patch=1,EE,10161238,extended,00000041
+
+[P1 Press {R1}+{R2} For Debug 2 Menu Activated]
+patch=1,EE,E002F5FF,extended,002F7F82
+patch=1,EE,203078A4,extended,FFFFFFFF
+patch=1,EE,10161238,extended,00000045
+
+[P1 Press {L3}+{R3} For Debug 3 Menu Activated]
+patch=1,EE,E002FFF9,extended,002F7F82
+patch=1,EE,203078A4,extended,FFFFFFFF
+patch=1,EE,10161238,extended,00000049
+
+[Colle]
+patch=1,EE,20179A0C,extended,00000000
+patch=1,EE,20179B70,extended,00000000
+patch=1,EE,20179CCC,extended,00000000
+
+[Exploser]
+patch=1,EE,2017AAB4,extended,00000000
+
+[Faux]
+patch=1,EE,2017B388,extended,00000000
+patch=1,EE,2017B5D8,extended,00000000
+
+[Guerre]
+patch=1,EE,2017C8E0,extended,00000000
+
+[Incinerer]
+patch=1,EE,2017D0B8,extended,00000000
+
+[Inferno]
+patch=1,EE,2017D564,extended,00000000
+
+[Lorage]
+patch=1,EE,2017F634,extended,00000000
+
+[Mort]
+patch=1,EE,2018211C,extended,00000000
+
+[Peste]
+patch=1,EE,201829C4,extended,00000000
+
+[Shadow Life Suck]
+patch=1,EE,20183FD4,extended,00000000
+
+[All Voodoos]
+patch=1,EE,20187200,extended,03E00008
+patch=1,EE,20187204,extended,00000000

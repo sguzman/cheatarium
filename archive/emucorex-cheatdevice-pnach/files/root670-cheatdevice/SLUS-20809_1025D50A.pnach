@@ -1,0 +1,335 @@
+gametitle=Godzilla-Save The Earth (SLUS-20809)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9016505C,extended,0C05AF5A
+
+[Disable FMV]
+patch=1,EE,20150070,extended,24020001
+
+[Infinite Time]
+patch=1,EE,206B0714,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,206E57DC,extended,43FA0000
+
+[75% Health P1]
+patch=1,EE,D06E57DE,extended,000043FA
+patch=1,EE,206E57DC,extended,43BB8000
+
+[50% Health P1]
+patch=1,EE,D06E57DE,extended,000043FA
+patch=1,EE,206E57DC,extended,437A0000
+
+[25% Health P1]
+patch=1,EE,D06E57DE,extended,000043FA
+patch=1,EE,206E57DC,extended,42FA0000
+
+[1-Hit Death P1]
+patch=1,EE,D06E57DE,extended,000043FA
+patch=1,EE,206E57DC,extended,3F800000
+
+[No Health P1]
+patch=1,EE,206E57DC,extended,00000000
+
+[Infinite Energy P1]
+patch=1,EE,206E57E8,extended,3F800000
+
+[No Energy P1]
+patch=1,EE,206E57E8,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,206F27DC,extended,43FA0000
+
+[75% Health P2]
+patch=1,EE,D06F27DE,extended,000043FA
+patch=1,EE,206F27DC,extended,43BB8000
+
+[50% Health P2]
+patch=1,EE,D06F27DE,extended,000043FA
+patch=1,EE,206F27DC,extended,437A0000
+
+[25% Health P2]
+patch=1,EE,D06F27DE,extended,000043FA
+patch=1,EE,206F27DC,extended,42FA0000
+
+[1-Hit Death P2]
+patch=1,EE,D06F27DE,extended,000043FA
+patch=1,EE,206F27DC,extended,3F800000
+
+[No Health P2]
+patch=1,EE,206F27DC,extended,00000000
+
+[Infinite Energy P2]
+patch=1,EE,206F27E8,extended,3F800000
+
+[No Energy P2]
+patch=1,EE,206F27E8,extended,00000000
+
+[Infinite Points]
+patch=1,EE,106A6724,extended,0000FFFF
+patch=1,EE,106A68C4,extended,0000FFFF
+
+[Max Points]
+patch=1,EE,206A6724,extended,05F5E0FF
+patch=1,EE,206A68C4,extended,05F5E0FF
+
+[Arena Package 1]
+patch=1,EE,206A6738,extended,00000000
+
+[Arena Package 1]
+patch=1,EE,206A673C,extended,00000000
+
+[Arena Package 1]
+patch=1,EE,206A6740,extended,00000000
+
+[All Arena Packages]
+patch=1,EE,406A6738,extended,00030001
+patch=1,EE,00000000,extended,00000000
+
+[Monster Island]
+patch=1,EE,206A6744,extended,00000000
+
+[Monster Island Bay]
+patch=1,EE,206A6748,extended,00000000
+
+[Tokyo Bay]
+patch=1,EE,206A674C,extended,00000000
+
+[Tokyo]
+patch=1,EE,206A6750,extended,00000000
+
+[L.A. South]
+patch=1,EE,206A6754,extended,00000000
+
+[Los Angeles]
+patch=1,EE,206A6758,extended,00000000
+
+[Seattle North]
+patch=1,EE,206A675C,extended,00000000
+
+[Seattle]
+patch=1,EE,206A6760,extended,00000000
+
+[Osaka North]
+patch=1,EE,206A6764,extended,00000000
+
+[Osaka]
+patch=1,EE,206A6768,extended,00000000
+
+[Manhattan]
+patch=1,EE,206A676C,extended,00000000
+
+[New York]
+patch=1,EE,206A6770,extended,00000000
+
+[London East]
+patch=1,EE,206A6774,extended,00000000
+
+[London]
+patch=1,EE,206A6778,extended,00000000
+
+[Boston East]
+patch=1,EE,206A677C,extended,00000000
+
+[Boston]
+patch=1,EE,206A6780,extended,00000000
+
+[Mothership]
+patch=1,EE,206A6784,extended,00000000
+
+[Boxing Ring]
+patch=1,EE,206A6788,extended,00000000
+
+[Golden Gate]
+patch=1,EE,206A678C,extended,00000000
+
+[San Francisco]
+patch=1,EE,206A6790,extended,00000000
+
+[All Cities]
+patch=1,EE,406A6744,extended,00140000
+patch=1,EE,00000000,extended,00000000
+
+[Monster Package 1]
+patch=1,EE,206A6794,extended,00000000
+
+[Monster Package 2]
+patch=1,EE,206A6798,extended,00000000
+
+[Monster Package 3]
+patch=1,EE,206A679C,extended,00000000
+
+[All Packages]
+patch=1,EE,406A6794,extended,00030001
+patch=1,EE,00000000,extended,00000000
+
+[Baragon]
+patch=1,EE,206A67D0,extended,00000000
+
+[Destoroyah]
+patch=1,EE,206A6830,extended,00000000
+
+[King Ghidorah]
+patch=1,EE,206A6860,extended,00000000
+
+[Jet Jaguar]
+patch=1,EE,206A6920,extended,00000000
+
+[Mechagodzilla 2]
+patch=1,EE,206A6950,extended,00000000
+
+[Baragon]
+patch=1,EE,206A6980,extended,00000000
+
+[Megaguirus]
+patch=1,EE,206A69B0,extended,00000000
+
+[Mecha-King Ghidorah]
+patch=1,EE,206A6A10,extended,00000000
+
+[Moguera 2]
+patch=1,EE,206A6A40,extended,00000000
+
+[Mothra]
+patch=1,EE,206A6A70,extended,00000000
+
+[Orga]
+patch=1,EE,206A6AA0,extended,00000000
+
+[Space Godzilla]
+patch=1,EE,206A6B00,extended,00000000
+
+[All Monsters]
+patch=1,EE,406A67D0,extended,0012000C
+patch=1,EE,00000000,extended,00000000
+
+[Pic 1]
+patch=1,EE,206A6B30,extended,00000000
+
+[Pic 2]
+patch=1,EE,206A6B34,extended,00000000
+
+[Pic 3]
+patch=1,EE,206A6B38,extended,00000000
+
+[Pic 4]
+patch=1,EE,206A6B3C,extended,00000000
+
+[Pic 5]
+patch=1,EE,206A6B40,extended,00000000
+
+[Pic 6]
+patch=1,EE,206A6B44,extended,00000000
+
+[Pic 7]
+patch=1,EE,206A6B48,extended,00000000
+
+[Pic 8]
+patch=1,EE,206A6B4C,extended,00000000
+
+[Pic 9]
+patch=1,EE,206A6B50,extended,00000000
+
+[Pic 10]
+patch=1,EE,206A6B54,extended,00000000
+
+[Pic 11]
+patch=1,EE,206A6B58,extended,00000000
+
+[Pic 12]
+patch=1,EE,206A6B5C,extended,00000000
+
+[Pic 13]
+patch=1,EE,206A6B60,extended,00000000
+
+[Pic 14]
+patch=1,EE,206A6B64,extended,00000000
+
+[Pic 15]
+patch=1,EE,206A6B68,extended,00000000
+
+[Pic 16]
+patch=1,EE,206A6B6C,extended,00000000
+
+[Pic 17]
+patch=1,EE,206A6B70,extended,00000000
+
+[Pic 18]
+patch=1,EE,206A6B74,extended,00000000
+
+[Pic 19]
+patch=1,EE,206A6B78,extended,00000000
+
+[Pic 20]
+patch=1,EE,206A6B7C,extended,00000000
+
+[Pic 21]
+patch=1,EE,206A6B80,extended,00000000
+
+[Pic 22]
+patch=1,EE,206A6B84,extended,00000000
+
+[Pic 23]
+patch=1,EE,206A6B88,extended,00000000
+
+[Pic 24]
+patch=1,EE,206A6B8C,extended,00000000
+
+[Pic 25]
+patch=1,EE,206A6B90,extended,00000000
+
+[Pic 26]
+patch=1,EE,206A6B94,extended,00000000
+
+[Pic 27]
+patch=1,EE,206A6B98,extended,00000000
+
+[All Pics]
+patch=1,EE,406A6B30,extended,001B0001
+patch=1,EE,00000000,extended,00000000
+
+[Pic 1]
+patch=1,EE,206A6B9C,extended,00000000
+
+[Pic 2]
+patch=1,EE,206A6BA0,extended,00000000
+
+[Pic 3]
+patch=1,EE,206A6BA4,extended,00000000
+
+[Pic 4]
+patch=1,EE,206A6BA8,extended,00000000
+
+[Pic 5]
+patch=1,EE,206A6BAC,extended,00000000
+
+[Pic 6]
+patch=1,EE,206A6BB0,extended,00000000
+
+[Pic 7]
+patch=1,EE,206A6BB4,extended,00000000
+
+[Pic 8]
+patch=1,EE,206A6BB8,extended,00000000
+
+[Pic 9]
+patch=1,EE,206A6BBC,extended,00000000
+
+[Pic 10]
+patch=1,EE,206A6BC0,extended,00000000
+
+[Pic 11]
+patch=1,EE,206A6BC4,extended,00000000
+
+[Pic 12]
+patch=1,EE,206A6BC8,extended,00000000
+
+[Pic 13]
+patch=1,EE,206A6BCC,extended,00000000
+
+[All Pics]
+patch=1,EE,406A6B9C,extended,000D0001
+patch=1,EE,00000000,extended,00000000

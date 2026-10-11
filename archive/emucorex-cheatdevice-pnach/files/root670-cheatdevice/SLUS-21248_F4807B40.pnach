@@ -1,0 +1,432 @@
+gametitle=Legend Of Kay (SLUS-21248)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903CE0C4,extended,0C0F86D3
+
+[Infinite Money]
+patch=1,EE,208B6630,extended,0000270F
+
+[Infinite Lives]
+patch=1,EE,208B6634,extended,00000063
+
+[Infinite Health Points]
+patch=1,EE,208B6638,extended,0000000F
+
+[Max Health Points]
+patch=1,EE,208B663C,extended,0000000F
+
+[Infinite Keys]
+patch=1,EE,208B667C,extended,00000063
+
+[Infinite Armor Points]
+patch=1,EE,208B66AC,extended,0000000F
+
+[Max Armor Points]
+patch=1,EE,208B66B0,extended,0000000F
+
+[Max Score Multiplier]
+patch=1,EE,208B66FC,extended,0000270F
+
+[Quick Score Gain]
+patch=1,EE,108B6704,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,208B6704,extended,05F5E0FF
+
+[Infinite Stamina]
+patch=1,EE,208B66C8,extended,41700000
+
+[Access All Extras]
+patch=1,EE,20509C78,extended,00000001
+
+[Unlock All Extras]
+patch=1,EE,202EF9EC,extended,24020001
+patch=1,EE,202EF9F4,extended,ACA2002C
+
+[Special]
+patch=1,EE,20DED22C,extended,00000001
+
+[Enemies Vol. III]
+patch=1,EE,20E1F6FC,extended,00000001
+
+[Friends]
+patch=1,EE,20E1F73C,extended,00000001
+
+[Enemies Vol. II]
+patch=1,EE,20E1F77C,extended,00000001
+
+[Weapons Armor]
+patch=1,EE,20E1F7BC,extended,00000001
+
+[Cats]
+patch=1,EE,20E1F7FC,extended,00000001
+
+[Enemies Vol. I]
+patch=1,EE,20E1F83C,extended,00000001
+
+[Kay]
+patch=1,EE,20E1F87C,extended,00000001
+
+[Bosses]
+patch=1,EE,20E326AC,extended,00000001
+
+[Rendering]
+patch=1,EE,20E326EC,extended,00000001
+
+[The Happy Ending]
+patch=1,EE,20E1F8BC,extended,00000001
+
+[Launching Dragonmouth]
+patch=1,EE,20E1F8FC,extended,00000001
+
+[The Din-Chi Is Disturbed]
+patch=1,EE,20E1F93C,extended,00000001
+
+[On Board The Mi-Noh]
+patch=1,EE,20E1F97C,extended,00000001
+
+[Shun Inspects]
+patch=1,EE,20E1F9BC,extended,00000001
+
+[The Slavery Trail]
+patch=1,EE,20E1F9FC,extended,00000001
+
+[Kay Embarks]
+patch=1,EE,20E1FA3C,extended,00000001
+
+[Inspectiing The Fountain]
+patch=1,EE,20E1FA7C,extended,00000001
+
+[Prologue]
+patch=1,EE,20E1FABC,extended,00000001
+
+[All Videos]
+patch=1,EE,40E1F8BC,extended,00090010
+patch=1,EE,00000001,extended,00000000
+
+[Shun-Mutation 2]
+patch=1,EE,20E1FAFC,extended,00000001
+
+[Shun-Mutation 1]
+patch=1,EE,20E1FB3C,extended,00000001
+
+[Shun]
+patch=1,EE,20E1FB7C,extended,00000001
+
+[Kay With Hammer]
+patch=1,EE,20E1FBBC,extended,00000001
+
+[Bat]
+patch=1,EE,20E1FBFC,extended,00000001
+
+[Tak]
+patch=1,EE,20E1FC3C,extended,00000001
+
+[Fat Demon]
+patch=1,EE,20E1FC7C,extended,00000001
+
+[Crab]
+patch=1,EE,20E1FCBC,extended,00000001
+
+[Seagull]
+patch=1,EE,20E1FCFC,extended,00000001
+
+[Bodyguard]
+patch=1,EE,20E1FD3C,extended,00000001
+
+[Quian Bei]
+patch=1,EE,20E1FD7C,extended,00000001
+
+[Kaw With Claws]
+patch=1,EE,20E1FDBC,extended,00000001
+
+[Clay Warrior]
+patch=1,EE,20E1FDFC,extended,00000001
+
+[Spider]
+patch=1,EE,20E1FE3C,extended,00000001
+
+[Wolf]
+patch=1,EE,20E1FE7C,extended,00000001
+
+[Han Tou]
+patch=1,EE,20E1FEBC,extended,00000001
+
+[Lightning Demon]
+patch=1,EE,20E1FEFC,extended,00000001
+
+[Hookknife Rat]
+patch=1,EE,20E1FF3C,extended,00000001
+
+[Mace Gorilla]
+patch=1,EE,20E1FF7C,extended,00000001
+
+[Axe Gorilla]
+patch=1,EE,20E1FFBC,extended,00000001
+
+[Kay With Sword]
+patch=1,EE,20E1FFFC,extended,00000001
+
+[Jia-Gu]
+patch=1,EE,20E2003C,extended,00000001
+
+[Fire Demon]
+patch=1,EE,20E2007C,extended,00000001
+
+[Dragonfly]
+patch=1,EE,20E200BC,extended,00000001
+
+[Crocodile]
+patch=1,EE,20E200FC,extended,00000001
+
+[Toad]
+patch=1,EE,20E2013C,extended,00000001
+
+[Turtle Soldier]
+patch=1,EE,20E2017C,extended,00000001
+
+[Ferryman]
+patch=1,EE,20E201BC,extended,00000001
+
+[Gu]
+patch=1,EE,20E201FC,extended,00000001
+
+[Tiao]
+patch=1,EE,20E2023C,extended,00000001
+
+[Kay Without Weapon]
+patch=1,EE,20E2027C,extended,00000001
+
+[Boar]
+patch=1,EE,20E202BC,extended,00000001
+
+[Boarax]
+patch=1,EE,20E202FC,extended,00000001
+
+[Tor Chi]
+patch=1,EE,20E2033C,extended,00000001
+
+[Scratch Bug]
+patch=1,EE,20E2037C,extended,00000001
+
+[Bear]
+patch=1,EE,20E203BC,extended,00000001
+
+[Spear Rat]
+patch=1,EE,20E203FC,extended,00000001
+
+[Tu Lao]
+patch=1,EE,20E2043C,extended,00000001
+
+[Lu Wu]
+patch=1,EE,20E2047C,extended,00000001
+
+[Carnivore Plant]
+patch=1,EE,20E204BC,extended,00000001
+
+[Chicken]
+patch=1,EE,20E204FC,extended,00000001
+
+[Ou Bai]
+patch=1,EE,20E2053C,extended,00000001
+
+[Ai Tan]
+patch=1,EE,20E2057C,extended,00000001
+
+[Sha Ma]
+patch=1,EE,20E205BC,extended,00000001
+
+[Tang Mu]
+patch=1,EE,20E205FC,extended,00000001
+
+[Guo Mei]
+patch=1,EE,20E2063C,extended,00000001
+
+[Nong Bao]
+patch=1,EE,20E2067C,extended,00000001
+
+[Dai]
+patch=1,EE,20E206BC,extended,00000001
+
+[Su Ling]
+patch=1,EE,20E206FC,extended,00000001
+
+[Master]
+patch=1,EE,20E2073C,extended,00000001
+
+[Uncle Shen]
+patch=1,EE,20E2077C,extended,00000001
+
+[All Models]
+patch=1,EE,40E1FAFC,extended,00330010
+patch=1,EE,00000001,extended,00000000
+
+[Shun's Crescendo]
+patch=1,EE,20E207DC,extended,00000001
+
+[Shun's Mutation]
+patch=1,EE,20E2081C,extended,00000001
+
+[Shun's Overture]
+patch=1,EE,20E2085C,extended,00000001
+
+[Gorillas' Percussion]
+patch=1,EE,20E2089C,extended,00000001
+
+[Tak's Overture]
+patch=1,EE,20E208DC,extended,00000001
+
+[Music From The Harbor]
+patch=1,EE,20E2091C,extended,00000001
+
+[At The Beach]
+patch=1,EE,20E2095C,extended,00000001
+
+[Master Your Weapons]
+patch=1,EE,20E2099C,extended,00000001
+
+[Do Re Mi-Noh]
+patch=1,EE,20E209DC,extended,00000001
+
+[Hit'em Hard]
+patch=1,EE,20E20A1C,extended,00000001
+
+[Quian Bei's Song]
+patch=1,EE,20E20A5C,extended,00000001
+
+[Dark Deep Dungeons Vol. II]
+patch=1,EE,20E20A9C,extended,00000001
+
+[Dark Deep Dungeons Vol. I]
+patch=1,EE,20E20ADC,extended,00000001
+
+[Tame The Wolf]
+patch=1,EE,20E20B1C,extended,00000001
+
+[Call Of The Ancients]
+patch=1,EE,20E20B5C,extended,00000001
+
+[Sound Of The Forsaken City Vol. II]
+patch=1,EE,20E20B9C,extended,00000001
+
+[Sound Of The Forsaken City Vol. I]
+patch=1,EE,20E20BDC,extended,00000001
+
+[Windy Tunes]
+patch=1,EE,20E20C1C,extended,00000001
+
+[Turtle March]
+patch=1,EE,20E20C5C,extended,00000001
+
+[Handle Your Weapons]
+patch=1,EE,20E20C9C,extended,00000001
+
+[Hymn Of Death]
+patch=1,EE,20E20CDC,extended,00000001
+
+[Cha Cha Jia-Gu]
+patch=1,EE,20E20D1C,extended,00000001
+
+[Crocodile Style]
+patch=1,EE,20E20D5C,extended,00000001
+
+[Fate Of The Frogs Vol. II]
+patch=1,EE,20E20D9C,extended,00000001
+
+[Fate Of The Frogs Vol. I]
+patch=1,EE,20E20DDC,extended,00000001
+
+[Marshland]
+patch=1,EE,20E20E1C,extended,00000001
+
+[Swampland Melody]
+patch=1,EE,20E20E5C,extended,00000001
+
+[Demons' Realm]
+patch=1,EE,20E20E9C,extended,00000001
+
+[Boom Boom Boarax]
+patch=1,EE,20E20EDC,extended,00000001
+
+[Canyon Cadence]
+patch=1,EE,20E20F1C,extended,00000001
+
+[Fighter's Melody]
+patch=1,EE,20E20F5C,extended,00000001
+
+[Dragoonia]
+patch=1,EE,20E20F9C,extended,00000001
+
+[Inside The Dragon]
+patch=1,EE,20E20FDC,extended,00000001
+
+[There The Hare]
+patch=1,EE,20E2101C,extended,00000001
+
+[Running Rivers]
+patch=1,EE,20E2105C,extended,00000001
+
+[Seven Pillars Clearance]
+patch=1,EE,20E2109C,extended,00000001
+
+[Visiting The Forest]
+patch=1,EE,20E210DC,extended,00000001
+
+[Riding The Boar]
+patch=1,EE,20E2111C,extended,00000001
+
+[Let's Go Shopping]
+patch=1,EE,20E2115C,extended,00000001
+
+[Masters School]
+patch=1,EE,20E2119C,extended,00000001
+
+[Home Town Blues]
+patch=1,EE,20E211DC,extended,00000001
+
+[Cat Village Melody]
+patch=1,EE,20E2121C,extended,00000001
+
+[Main Theme]
+patch=1,EE,20E2125C,extended,00000001
+
+[All Music]
+patch=1,EE,40E207DC,extended,002B0010
+patch=1,EE,00000001,extended,00000000
+
+[Sword-Default]
+patch=1,EE,20E212BC,extended,00000001
+
+[Sword-Special]
+patch=1,EE,20E212FC,extended,00000001
+
+[Claws-Default]
+patch=1,EE,20E2135C,extended,00000001
+
+[Claws-Special]
+patch=1,EE,20E2139C,extended,00000001
+
+[Hammer-Default]
+patch=1,EE,20E213FC,extended,00000001
+
+[Hammer-Special]
+patch=1,EE,20E2143C,extended,00000001
+
+[City Race]
+patch=1,EE,20E2149C,extended,00000001
+
+[Palace Race]
+patch=1,EE,20E214DC,extended,00000001
+
+[Ramp Race]
+patch=1,EE,20E2151C,extended,00000001
+
+[Forest Race]
+patch=1,EE,20E2155C,extended,00000001
+
+[All Races]
+patch=1,EE,40E2149C,extended,00040010
+patch=1,EE,00000001,extended,00000000

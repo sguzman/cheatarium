@@ -1,0 +1,148 @@
+gametitle=Medal Of Honor-European Assault (SLUS-21199)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9047FC04,extended,0C110A93
+
+[Disable FMV]
+patch=1,EE,2045F6F0,extended,24020001
+
+[Infinite Health]
+patch=1,EE,201D9920,extended,3C014348
+patch=1,EE,201D9924,extended,AC8103D0
+patch=1,EE,101D992A,extended,00001000
+
+[Infinite Ammo]
+patch=1,EE,20198C8C,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,20198C88,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,20198C84,extended,01071021
+
+[Never Reload]
+patch=1,EE,2019A5A8,extended,00000000
+
+[Infinite Med Kits]
+patch=1,EE,201D0940,extended,00000000
+
+[Max Infinite Med Kits]
+patch=1,EE,201D0934,extended,24040009
+
+[Extra Med Kits]
+patch=1,EE,201D0934,extended,00852021
+
+[Infinite Revives]
+patch=1,EE,201E7684,extended,00000000
+
+[Max Infinite Revives]
+patch=1,EE,201E7678,extended,24040009
+
+[Extra Revives]
+patch=1,EE,201E7678,extended,00852021
+
+[Max Infinite Revives (Alternate)]
+patch=1,EE,200C0220,extended,24060009
+patch=1,EE,200C0224,extended,0811106E
+patch=1,EE,200C0228,extended,AC461460
+patch=1,EE,2026527C,extended,0C030088
+
+[P1 Press {L1}+{SELECT} For Super Game Speed]
+patch=1,EE,D05FDE82,extended,0000FBFE
+patch=1,EE,20497E00,extended,41000000
+
+[P1 Press {L2}+{SELECT} For Ultra Game Speed]
+patch=1,EE,D05FDE82,extended,0000FEFE
+patch=1,EE,20497E00,extended,42C80000
+
+[P1 Press {R1}+{SELECT} For Normal Game Speed]
+patch=1,EE,D05FDE82,extended,0000F7FE
+patch=1,EE,20497E00,extended,3F800000
+
+[P1 Press {R2}+{SELECT} For Slower Game Speed]
+patch=1,EE,D05FDE82,extended,0000FDFE
+patch=1,EE,20497E00,extended,3F400000
+
+[P1 Press {L1}+{L2} For Max Adrenaline]
+patch=1,EE,200C0220,extended,3C0142C8
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC8113FC
+patch=1,EE,D05FDE82,extended,0000FAFF
+patch=1,EE,20277DDC,extended,08030088
+patch=1,EE,D05FDE82,extended,0000FFFF
+patch=1,EE,20277DDC,extended,03E00008
+
+[Infinite Health]
+patch=1,EE,2056D018,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,2056D020,extended,00000001
+
+[St. Nazairie-1-Operation-Chariot]
+patch=1,EE,70100714,extended,00000001
+
+[St. Nazairie-2-Raid On St. Nazaire]
+patch=1,EE,70100764,extended,00000001
+
+[St. Nazairie-3-Lights OUt In The Port City]
+patch=1,EE,701007B4,extended,00000001
+
+[St. Nazairie-4-Escape At Dawn]
+patch=1,EE,70100804,extended,00000001
+
+[North Africa-1-Operation-Blindfold]
+patch=1,EE,70100854,extended,00000001
+
+[North Africa-2-Operation-V2 Silence]
+patch=1,EE,701008A4,extended,00000001
+
+[Russia-1-Road To Stalingrad]
+patch=1,EE,701008F4,extended,00000001
+
+[Russia-2-Climbing Mamayev Hill]
+patch=1,EE,70100944,extended,00000001
+
+[Battle Of The Bulge-1-Mission To Rocherath]
+patch=1,EE,70100994,extended,00000001
+
+[Battle Of The Bulge-2-Farmhouse Liberation]
+patch=1,EE,701009E4,extended,00000001
+
+[Battle Of The Bulge-3-Operation-Virus House]
+patch=1,EE,70100A34,extended,00000001
+
+[St. Nazairie-1-Operation-Chariot]
+patch=1,EE,70100748,extended,00000003
+
+[St. Nazairie-2-Raid On St. Nazaire]
+patch=1,EE,70100798,extended,00000003
+
+[St. Nazairie-3-Lights OUt In The Port City]
+patch=1,EE,701007E8,extended,00000003
+
+[St. Nazairie-4-Escape At Dawn]
+patch=1,EE,70100838,extended,00000003
+
+[North Africa-1-Operation-Blindfold]
+patch=1,EE,70100888,extended,00000003
+
+[North Africa-2-Operation-V2 Silence]
+patch=1,EE,701008D8,extended,00000003
+
+[Russia-1-Road To Stalingrad]
+patch=1,EE,70100928,extended,00000003
+
+[Russia-2-Climbing Mamayev Hill]
+patch=1,EE,70100978,extended,00000003
+
+[Battle Of The Bulge-1-Mission To Rocherath]
+patch=1,EE,701009C8,extended,00000003
+
+[Battle Of The Bulge-2-Farmhouse Liberation]
+patch=1,EE,70100A18,extended,00000003
+
+[Battle Of The Bulge-3-Operation-Virus House]
+patch=1,EE,70100A68,extended,00000003

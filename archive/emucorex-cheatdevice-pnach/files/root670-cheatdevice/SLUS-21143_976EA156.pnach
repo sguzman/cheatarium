@@ -1,0 +1,134 @@
+gametitle=Star Wars-Episode III-Revenge Of The Sith (SLUS-21143)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90127FF4,extended,0C041826
+
+[Infinite Health]
+patch=1,EE,203DD9EC,extended,C4410134
+patch=1,EE,203DD9F4,extended,E4410130
+
+[Infinite Force]
+patch=1,EE,207B6164,extended,00000000
+patch=1,EE,207B617C,extended,00000000
+
+[Max Skill Meter]
+patch=1,EE,205AAB20,extended,8C810B94
+patch=1,EE,205AAB24,extended,AC810B90
+
+[Higher Jumps]
+patch=1,EE,206B51D0,extended,3C013F80
+patch=1,EE,206B51E0,extended,44810800
+
+[Super Jumps]
+patch=1,EE,206B51D0,extended,3C013F40
+patch=1,EE,206B51E0,extended,44810800
+
+[Ultra Jumps]
+patch=1,EE,206B51D0,extended,3C013F00
+patch=1,EE,206B51E0,extended,44810800
+
+[OMG Jumps]
+patch=1,EE,206B51D0,extended,3C013E80
+patch=1,EE,206B51E0,extended,44810800
+
+[P1 Press {CROSS} For Moon Jump]
+patch=1,EE,206B51D0,extended,3C013F40
+patch=1,EE,D09B5482,extended,0000BFFF
+patch=1,EE,206B51E0,extended,AE810084
+patch=1,EE,D09B5482,extended,0000FFFF
+patch=1,EE,206B51E0,extended,C6810084
+
+[Unlock All Story Missions]
+patch=1,EE,202B7960,extended,24020014
+patch=1,EE,202B7964,extended,AE620020
+
+[Unlock All Bonus Missions]
+patch=1,EE,202AAD78,extended,24030001
+patch=1,EE,202AAD80,extended,A04302B1
+patch=1,EE,2090D010,extended,24030001
+patch=1,EE,1090D016,extended,00001000
+patch=1,EE,2090D018,extended,A04302B1
+
+[Unlock All Multiplayer Duelists]
+patch=1,EE,2027C4EC,extended,24010001
+patch=1,EE,2027C4F0,extended,A04102A8
+patch=1,EE,2027C4F8,extended,24020000
+
+[Unlock All Multiplayer Duelists Arenas]
+patch=1,EE,2027E00C,extended,00000000
+
+[Unlock All Multiplayer Challenge Missions]
+patch=1,EE,202AADF4,extended,24030001
+patch=1,EE,202AADFC,extended,A04302B6
+patch=1,EE,2090E42C,extended,24030001
+patch=1,EE,1090E432,extended,00001000
+patch=1,EE,2090E434,extended,A04302B6
+
+[Unlock All Replay Movies]
+patch=1,EE,20909BDC,extended,24040001
+patch=1,EE,20909BE8,extended,A044002E
+
+[Unlock Concept Art]
+patch=1,EE,202AAE48,extended,24030001
+patch=1,EE,202AAE50,extended,A04302C8
+patch=1,EE,2090A034,extended,24030001
+patch=1,EE,2090A03C,extended,A0A302C8
+
+[Draw Grid]
+patch=1,EE,01FDED1F,extended,00000001
+
+[Blocky Shadows]
+patch=1,EE,01FDED4A,extended,00000001
+
+[Disable Background Textures]
+patch=1,EE,01FDED50,extended,00000001
+
+[Invisible Character]
+patch=1,EE,21FDED60,extended,00000002
+
+[Disable AI]
+patch=1,EE,01FDED94,extended,00000001
+
+[God Mode]
+patch=1,EE,01FDED99,extended,00000001
+
+[Force Push]
+patch=1,EE,20B142BC,extended,00000003
+
+[Force Grasp]
+patch=1,EE,20B1436C,extended,00000003
+
+[Force Stun]
+patch=1,EE,20B1443C,extended,00000003
+
+[Saber Throw]
+patch=1,EE,20B144FC,extended,00000003
+
+[Force Healh]
+patch=1,EE,20B145BC,extended,00000003
+
+[All Force Powers]
+patch=1,EE,40B142BC,extended,0005002C
+patch=1,EE,00000003,extended,00000000
+
+[Jump Attacks]
+patch=1,EE,20B1467C,extended,00000003
+
+[Grapples]
+patch=1,EE,20B1473C,extended,00000003
+
+[Dash Attacks]
+patch=1,EE,20B147FC,extended,00000003
+
+[Area Attacks]
+patch=1,EE,20B148BC,extended,00000003
+
+[Critical Attacks]
+patch=1,EE,20B1497C,extended,00000003
+
+[All Combat Skills]
+patch=1,EE,40B1467C,extended,0005002C
+patch=1,EE,00000003,extended,00000000

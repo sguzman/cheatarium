@@ -1,0 +1,56 @@
+gametitle=Naval Ops-Warship Gunner (SLUS-20663)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00129227
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,AC430054
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AFA30140
+patch=1,EE,202A62A0,extended,0C030088
+patch=1,EE,202A62A4,extended,240301F4
+
+[Infinite Ammo (All Weapons)]
+patch=1,EE,2031601C,extended,00000000
+
+[Infinite Repair Kits]
+patch=1,EE,202C972C,extended,00000000
+
+[Infinite Points]
+patch=1,EE,111BAF64,extended,0000FFFF
+
+[Max Points]
+patch=1,EE,211BAF64,extended,3B9AC9FF
+
+[Infinite Budget]
+patch=1,EE,111BAF68,extended,0000FFFF
+
+[Max Budget]
+patch=1,EE,211BAF68,extended,3B9AC9FF
+
+[Admiral Ranking]
+patch=1,EE,011BAF6E,extended,00000010
+
+[Max Air Tech Level]
+patch=1,EE,011BD764,extended,0000001E
+
+[Max Engine Level]
+patch=1,EE,011BD765,extended,0000001E
+
+[Max Metallurgy Level]
+patch=1,EE,011BD766,extended,0000001E
+
+[Max Weapons Level]
+patch=1,EE,011BD767,extended,0000001E
+
+[Max Electronics Level]
+patch=1,EE,011BD768,extended,0000001E
+
+[Unlock All Areas]
+patch=1,EE,211FA21C,extended,00000003
+
+[Unlock All Stages]
+patch=1,EE,211FA220,extended,0000000A

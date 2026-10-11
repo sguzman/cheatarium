@@ -1,0 +1,400 @@
+gametitle=Teenage Mutant Ninja Turtles 2-Battlenexus (SLUS-20981)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011E0A8,extended,0C048EE0
+
+[Full Energy Gauge]
+patch=1,EE,20570B68,extended,000003E8
+
+[Max Energy Gauge]
+patch=1,EE,20570B6C,extended,000003E8
+
+[No Damage Taken P1]
+patch=1,EE,2078DCA4,extended,00000000
+
+[Infinite Shurikens P1]
+patch=1,EE,2078DCA8,extended,0000000A
+
+[No Damage Taken P2]
+patch=1,EE,2078DCDC,extended,00000000
+
+[Infinite Shurikens P2]
+patch=1,EE,2078DCE0,extended,0000000A
+
+[No Damage Taken P3]
+patch=1,EE,2078DD14,extended,00000000
+
+[Infinite Shurikens P3]
+patch=1,EE,2078DD18,extended,0000000A
+
+[No Damage Taken P4]
+patch=1,EE,2078DD4C,extended,00000000
+
+[Infinite Shurikens P4]
+patch=1,EE,2078DD50,extended,0000000A
+
+[Infinite Shuriken Usage (All Players)]
+patch=1,EE,202CD248,extended,00000000
+
+[Max Infinite Shurikens (All Players)]
+patch=1,EE,202CD244,extended,2402000A
+
+[Extra Shurikens (All Players)]
+patch=1,EE,202CD244,extended,00451023
+
+[No Damage Taken (All Players)]
+patch=1,EE,202CD380,extended,00000000
+
+[Episode 0-1]
+patch=1,EE,10720770,extended,00000602
+
+[Episode 0-2]
+patch=1,EE,10720778,extended,00000602
+
+[Episode 1-1]
+patch=1,EE,10720888,extended,00000602
+
+[Episode 1-2]
+patch=1,EE,10720890,extended,00000602
+
+[Episode 1-3]
+patch=1,EE,10720898,extended,00000602
+
+[Episode 2-1]
+patch=1,EE,107207A0,extended,00000602
+
+[Episode 2-2]
+patch=1,EE,107207A8,extended,00000602
+
+[Episode 2-3]
+patch=1,EE,107207B0,extended,00000602
+
+[Episode 3-1]
+patch=1,EE,107207B8,extended,00000602
+
+[Episode 3-2]
+patch=1,EE,107207C0,extended,00000602
+
+[Episode 3-3]
+patch=1,EE,107207C8,extended,00000602
+
+[Episode 4-1]
+patch=1,EE,107207D0,extended,00000602
+
+[Episode 4-2]
+patch=1,EE,107207D8,extended,00000602
+
+[Episode 4-3]
+patch=1,EE,107207E0,extended,00000602
+
+[Episode 4-4]
+patch=1,EE,107207E8,extended,00000602
+
+[Episode 4-5]
+patch=1,EE,107207F0,extended,00000602
+
+[Episode 4-6]
+patch=1,EE,107207F8,extended,00000602
+
+[Episode 4-7]
+patch=1,EE,10720800,extended,00000602
+
+[Episode 4-8]
+patch=1,EE,10720808,extended,00000602
+
+[Episode 4-9]
+patch=1,EE,10720810,extended,00000602
+
+[Episode 5-1]
+patch=1,EE,10720818,extended,00000602
+
+[Episode 5-4]
+patch=1,EE,10720820,extended,00000602
+
+[Episode 5-5]
+patch=1,EE,10720828,extended,00000602
+
+[Episode 5-2]
+patch=1,EE,10720830,extended,00000602
+
+[Episode 5-3]
+patch=1,EE,10720838,extended,00000602
+
+[Episode 5-6]
+patch=1,EE,10720840,extended,00000602
+
+[Episode 5-7]
+patch=1,EE,10720848,extended,00000602
+
+[Episode 5-8]
+patch=1,EE,10720850,extended,00000602
+
+[Episode 6-1]
+patch=1,EE,10720858,extended,00000602
+
+[Episode 6-4]
+patch=1,EE,10720860,extended,00000602
+
+[Episode 6-5]
+patch=1,EE,10720868,extended,00000602
+
+[Episode 6-2]
+patch=1,EE,10720870,extended,00000602
+
+[Episode 6-3]
+patch=1,EE,10720878,extended,00000602
+
+[Episode 6-6]
+patch=1,EE,10720880,extended,00000602
+
+[Episode 6-7]
+patch=1,EE,10720888,extended,00000602
+
+[Episode 6-8]
+patch=1,EE,10720890,extended,00000602
+
+[Episode 7-1]
+patch=1,EE,10720898,extended,00000602
+
+[Episode 7-2]
+patch=1,EE,107208A0,extended,00000602
+
+[Episode 8-1]
+patch=1,EE,107208A8,extended,00000602
+
+[Episode 8-2]
+patch=1,EE,107208B0,extended,00000602
+
+[Episode 9-1]
+patch=1,EE,107208B8,extended,00000602
+
+[Episode 9-2]
+patch=1,EE,107208C0,extended,00000602
+
+[Episode 9-3]
+patch=1,EE,107208C8,extended,00000602
+
+[Episode 10-1]
+patch=1,EE,107208D0,extended,00000602
+
+[Episode 10-2]
+patch=1,EE,107208D8,extended,00000602
+
+[Episode 10-3]
+patch=1,EE,107208E0,extended,00000602
+
+[Episode 11-1]
+patch=1,EE,107208E8,extended,00000602
+
+[Episode 11-2]
+patch=1,EE,107208F0,extended,00000602
+
+[Episode 11-3]
+patch=1,EE,107208F8,extended,00000602
+
+[Episode 11-4]
+patch=1,EE,10720900,extended,00000602
+
+[Episode 11-5]
+patch=1,EE,10720908,extended,00000602
+
+[Episode 11-6]
+patch=1,EE,10720910,extended,00000602
+
+[Episode 11-7]
+patch=1,EE,10720918,extended,00000602
+
+[New York]
+patch=1,EE,10720950,extended,00000001
+
+[D-Hoonnib]
+patch=1,EE,10720958,extended,00000001
+
+[Triceraton Republic]
+patch=1,EE,10720960,extended,00000001
+
+[Feudal Japan]
+patch=1,EE,10720968,extended,00000001
+
+[Future]
+patch=1,EE,10720970,extended,00000001
+
+[Kuraiyama]
+patch=1,EE,10720978,extended,00000001
+
+[New York To D-Hoonnib]
+patch=1,EE,10720980,extended,00000001
+
+[New York To Feudal Japan]
+patch=1,EE,10720990,extended,00000001
+
+[New York To Future]
+patch=1,EE,10720998,extended,00000001
+
+[New York To Kuraiyama]
+patch=1,EE,107209A0,extended,00000001
+
+[D-Hoonnib To New York]
+patch=1,EE,107209A8,extended,00000001
+
+[D-Hoonnib To Triceraton Republic]
+patch=1,EE,107209B8,extended,00000001
+
+[Triceraton Republic To D-Hoonnib]
+patch=1,EE,107209C0,extended,00000001
+
+[Triceraton Republic To Feudal Japan]
+patch=1,EE,107209C8,extended,00000001
+
+[Feudal Japan To Triceraton Republic]
+patch=1,EE,107209D0,extended,00000001
+
+[Feudal Japan To New York]
+patch=1,EE,107209D8,extended,00000001
+
+[Future To New York]
+patch=1,EE,107209E0,extended,00000001
+
+[Kuraiyama To New York]
+patch=1,EE,107209E8,extended,00000001
+
+[Leonardo]
+patch=1,EE,0072053A,extended,00000002
+
+[Leonardo 2]
+patch=1,EE,0072053B,extended,00000002
+
+[Slashuur]
+patch=1,EE,0072053C,extended,00000002
+
+[Raphael]
+patch=1,EE,0072053D,extended,00000002
+
+[Raphael 2]
+patch=1,EE,0072053E,extended,00000002
+
+[Casey]
+patch=1,EE,0072053F,extended,00000002
+
+[Michelangelo]
+patch=1,EE,00720540,extended,00000002
+
+[Michelangelo]
+patch=1,EE,00720541,extended,00000002
+
+[Karai]
+patch=1,EE,00720542,extended,00000002
+
+[Donatello]
+patch=1,EE,00720543,extended,00000002
+
+[Donatello 2]
+patch=1,EE,00720544,extended,00000002
+
+[Splinter]
+patch=1,EE,00720545,extended,00000002
+
+[April]
+patch=1,EE,00720546,extended,00000002
+
+[Miyamoto Usagi]
+patch=1,EE,00720547,extended,00000002
+
+[All Character Materials]
+patch=1,EE,1072053A,extended,00000202
+patch=1,EE,4072053C,extended,00030001
+patch=1,EE,02020202,extended,00000000
+
+[Shredder]
+patch=1,EE,00720548,extended,00000002
+
+[Drako]
+patch=1,EE,00720549,extended,00000002
+
+[Ninja Rats]
+patch=1,EE,0072054A,extended,00000002
+
+[Traximus]
+patch=1,EE,0072054B,extended,00000002
+
+[Leatherhead]
+patch=1,EE,0072054C,extended,00000002
+
+[Elite Guard]
+patch=1,EE,0072054D,extended,00000002
+
+[Spasmosrur]
+patch=1,EE,0072054E,extended,00000002
+
+[Kun]
+patch=1,EE,0072054F,extended,00000002
+
+[Ultimate Ninja]
+patch=1,EE,00720550,extended,00000002
+
+[Secondary Characters]
+patch=1,EE,00720551,extended,00000002
+
+[Secondary Characters 2]
+patch=1,EE,00720552,extended,00000002
+
+[Others]
+patch=1,EE,00720553,extended,00000002
+
+[All Enemy Materials]
+patch=1,EE,40720548,extended,00030001
+patch=1,EE,02020202,extended,00000000
+
+[NY]
+patch=1,EE,00720554,extended,00000002
+
+[Planet D'Hoonnib]
+patch=1,EE,00720555,extended,00000002
+
+[Feudal Japan]
+patch=1,EE,00720556,extended,00000002
+
+[Kuraiyama]
+patch=1,EE,00720557,extended,00000002
+
+[Battle Nexus]
+patch=1,EE,00720558,extended,00000002
+
+[Vehicles]
+patch=1,EE,00720559,extended,00000002
+
+[Animation Storyboards]
+patch=1,EE,0072055A,extended,00000002
+
+[CG]
+patch=1,EE,0072055B,extended,00000002
+
+[All Background Art Materials]
+patch=1,EE,20720554,extended,02020202
+patch=1,EE,20720558,extended,02020202
+
+[Playmates]
+patch=1,EE,0072055C,extended,00000002
+
+[Playmates 2]
+patch=1,EE,0072055D,extended,00000002
+
+[Playmates 3]
+patch=1,EE,0072055E,extended,00000002
+
+[Playmates 4]
+patch=1,EE,0072055F,extended,00000002
+
+[Gallery]
+patch=1,EE,00720560,extended,00000002
+
+[All Others Materials]
+patch=1,EE,2072055C,extended,02020202
+patch=1,EE,00720560,extended,00000002
+
+[Have All Antiques]
+patch=1,EE,4071FFC8,extended,00370004
+patch=1,EE,00000002,extended,00000000

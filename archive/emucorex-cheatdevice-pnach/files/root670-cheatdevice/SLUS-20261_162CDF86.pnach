@@ -1,0 +1,11 @@
+gametitle=ESPN NBA 2Night 2002 (SLUS-20261)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00144247
+
+[Infinite Creation Points]
+patch=1,EE,11F23240,extended,00000000
+patch=1,EE,11F23D40,extended,00000000

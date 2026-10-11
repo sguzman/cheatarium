@@ -1,0 +1,211 @@
+gametitle=Cabela's Dangerous Hunts 2 (SLUS-21350)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012B2BC,extended,0C041264
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C013F80
+patch=1,EE,200C0224,extended,08101490
+patch=1,EE,200C0228,extended,AC810054
+patch=1,EE,204BCA54,extended,0C030088
+
+[Infinite Ammo]
+patch=1,EE,204E9558,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,204E9554,extended,240303E7
+
+[Extra Ammo]
+patch=1,EE,204E9554,extended,00831823
+
+[Never Reload]
+patch=1,EE,204E9640,extended,00000000
+
+[Disable AI Sense See]
+patch=1,EE,202D73A0,extended,03E00008
+patch=1,EE,202D73A4,extended,24020000
+
+[Disable AI Sense Sight]
+patch=1,EE,202D7AB0,extended,03E00008
+patch=1,EE,202D7AB4,extended,24020000
+
+[Unlock All Missions]
+patch=1,EE,20621F00,extended,00000010
+
+[Max Stumps Shot]
+patch=1,EE,20622088,extended,0000270F
+
+[Shoot 1 Stump For All Stumps Found]
+patch=1,EE,2052B2F4,extended,AC471278
+
+[Eyes Never Injured]
+patch=1,EE,206494B4,extended,00000000
+
+[Eyes Always Injured]
+patch=1,EE,206494B4,extended,00000001
+
+[Body Never Injured]
+patch=1,EE,206494B8,extended,00000000
+
+[Body Always Injured]
+patch=1,EE,206494B8,extended,00000001
+
+[Boots Never Injured]
+patch=1,EE,206494BC,extended,00000000
+
+[Boots Always Injured]
+patch=1,EE,206494BC,extended,00000001
+
+[Hands Never Injured]
+patch=1,EE,206494C0,extended,00000000
+
+[Hands Always Injured]
+patch=1,EE,206494C0,extended,00000001
+
+[Unknown Injury Never Injured]
+patch=1,EE,206494C4,extended,00000000
+
+[Unknown Injury Always Injured]
+patch=1,EE,206494C4,extended,00000001
+
+[Never Have Illness]
+patch=1,EE,206494C8,extended,00000000
+
+[Always Have Illness]
+patch=1,EE,206494C8,extended,00000001
+
+[P1 Press {L1}+{SELECT} To Enable No Clipping]
+patch=1,EE,D05EBBC2,extended,0000FBFE
+patch=1,EE,205EFE30,extended,00000001
+
+[P1 Press {L2}+{SELECT} To Disable No Clipping]
+patch=1,EE,D05EBBC2,extended,0000FEFE
+patch=1,EE,205EFE30,extended,00000000
+
+[P1 Press {R1}+{SELECT} To Enable God Mode]
+patch=1,EE,D05EBBC2,extended,0000F7FE
+patch=1,EE,205EFE38,extended,00000001
+
+[P1 Press {R2}+{SELECT} To Disable God Mode]
+patch=1,EE,D05EBBC2,extended,0000FDFE
+patch=1,EE,205EFE38,extended,00000000
+
+[God Mode Always On]
+patch=1,EE,205EFE38,extended,00000001
+
+[P1 Press {L1}+Up To Enable Debug Camera]
+patch=1,EE,D05EBBC2,extended,0000FBEF
+patch=1,EE,205EFE40,extended,00000001
+
+[P1 Press {L1}+Down To Enable Debug Camera]
+patch=1,EE,D05EBBC2,extended,0000FBBF
+patch=1,EE,205EFE40,extended,00000000
+
+[Auto Save Always On]
+patch=1,EE,20565BF0,extended,00000001
+
+[Auto Save Always Off]
+patch=1,EE,20565BF0,extended,00000000
+
+[Vibrations Always On]
+patch=1,EE,20567158,extended,00000001
+
+[Vibrations Always Off]
+patch=1,EE,20567158,extended,00000000
+
+[Soft Lock Always On]
+patch=1,EE,20567178,extended,00000001
+
+[Soft Lock Always Off]
+patch=1,EE,20567178,extended,00000000
+
+[Show HUD Always On]
+patch=1,EE,20567440,extended,00000001
+
+[Show HUD Always Off]
+patch=1,EE,20567440,extended,00000000
+
+[Subtitles Always On]
+patch=1,EE,20567448,extended,00000001
+
+[Subtitles Always Off]
+patch=1,EE,20567448,extended,00000000
+
+[Idiot AI-Animals]
+patch=1,EE,20600D78,extended,00000001
+
+[P1 Press {L1}+Right To Enable Idiot AI-Animals]
+patch=1,EE,D05EBBC2,extended,0000FBDF
+patch=1,EE,20600D78,extended,00000001
+
+[P1 Press {L1}+Left To Enable Idiot AI-Animals]
+patch=1,EE,D05EBBC2,extended,0000FB7F
+patch=1,EE,20600D78,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,20621A70,extended,00000001
+
+[Zero Gravity]
+patch=1,EE,20621A74,extended,00000001
+
+[Quick Regen]
+patch=1,EE,20621A78,extended,00000001
+
+[Double Damage]
+patch=1,EE,20621A7C,extended,00000001
+
+[Double Health]
+patch=1,EE,20621A80,extended,00000001
+
+[Slow Motion]
+patch=1,EE,20621A84,extended,00000001
+
+[Always Low Time]
+patch=1,EE,20621D98,extended,00000000
+patch=1,EE,20621DA0,extended,00000000
+patch=1,EE,20621DA8,extended,00000000
+
+[Max Shots Fired]
+patch=1,EE,20621DB0,extended,05F5E0FF
+
+[No Shots Fired]
+patch=1,EE,20621DB0,extended,00000000
+
+[Max Clean Shot]
+patch=1,EE,20621DB8,extended,05F5E0FF
+
+[No Clean Shot]
+patch=1,EE,20621DB8,extended,00000000
+
+[Max Fire Accuracy]
+patch=1,EE,20621DC0,extended,00000064
+
+[No Fire Accuracy]
+patch=1,EE,20621DC0,extended,00000000
+
+[Max Blows]
+patch=1,EE,20621DC8,extended,05F5E0FF
+
+[No Blows]
+patch=1,EE,20621DC8,extended,00000000
+
+[Max Hits Taken]
+patch=1,EE,20621DE0,extended,05F5E0FF
+
+[No Hits Taken]
+patch=1,EE,20621DE0,extended,00000000
+
+[Max Hits Taken By Companions]
+patch=1,EE,20621DE8,extended,05F5E0FF
+
+[No Hits Taken By Companions]
+patch=1,EE,20621DE8,extended,00000000
+
+[Max Animals Hunted]
+patch=1,EE,20621DF0,extended,05F5E0FF
+
+[No Animals Hunted]
+patch=1,EE,20621DF0,extended,00000000

@@ -1,0 +1,674 @@
+gametitle=Samurai Champloo-Sidetracked (SLUS-21343)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90385840,extended,00832021
+patch=1,EE,202DBB88,extended,00000000
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,8422758A
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,A4227588
+patch=1,EE,201AA318,extended,08030088
+patch=1,EE,201AA31C,extended,00400821
+
+[Health Doesnt Decrease When Hit]
+patch=1,EE,201B1D58,extended,00000000
+
+[Health Doesnt Decrease (Tate Mode)]
+patch=1,EE,201B1B70,extended,00000000
+
+[Always Max Coins]
+patch=1,EE,200C0230,extended,8C83002C
+patch=1,EE,200C0234,extended,08080245
+patch=1,EE,200C0238,extended,AC830028
+patch=1,EE,20200910,extended,0803008C
+
+[Always Max Kobans]
+patch=1,EE,200C0240,extended,8C830024
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,AC830020
+patch=1,EE,2020091C,extended,08030090
+
+[Quick Max Coins]
+patch=1,EE,10200930,extended,0000002C
+
+[Quick Max Kobans]
+patch=1,EE,1020095C,extended,00000024
+
+[1-Hit Deaths (Enemies)]
+patch=1,EE,201DCD4C,extended,A480070C
+patch=1,EE,203397A4,extended,A680070C
+
+[Max Trick Points]
+patch=1,EE,20271D88,extended,00000000
+patch=1,EE,20270E7C,extended,AE111104
+
+[Max Trick Points Time]
+patch=1,EE,20270E78,extended,00000000
+patch=1,EE,20270E9C,extended,AE131100
+
+[Unlock All Mugen Levels]
+patch=1,EE,004EB728,extended,00000008
+
+[Unlock All Jin Levels]
+patch=1,EE,004EB729,extended,00000008
+
+[Unlock All Full Levels]
+patch=1,EE,004EB72A,extended,00000003
+
+[Unlock Fuu Character]
+patch=1,EE,004EB72B,extended,00000001
+
+[Unlock Death Match Mode]
+patch=1,EE,204EB78C,extended,00000001
+
+[Unlock All Special Rewards]
+patch=1,EE,404EB790,extended,00190001
+patch=1,EE,01010101,extended,00000000
+
+[Unlock All Special Rewards Viewed]
+patch=1,EE,404EB790,extended,00190001
+patch=1,EE,03030303,extended,00000000
+
+[Reward 1]
+patch=1,EE,704EB790,extended,00000001
+
+[Reward 2]
+patch=1,EE,704EB791,extended,00000001
+
+[Reward 3]
+patch=1,EE,704EB792,extended,00000001
+
+[Reward 4]
+patch=1,EE,704EB793,extended,00000001
+
+[Reward 5]
+patch=1,EE,704EB794,extended,00000001
+
+[Reward 6]
+patch=1,EE,704EB795,extended,00000001
+
+[Reward 7]
+patch=1,EE,704EB796,extended,00000001
+
+[Reward 8]
+patch=1,EE,704EB797,extended,00000001
+
+[Reward 9]
+patch=1,EE,704EB798,extended,00000001
+
+[Reward 10]
+patch=1,EE,704EB799,extended,00000001
+
+[Reward 11]
+patch=1,EE,704EB79A,extended,00000001
+
+[Reward 12]
+patch=1,EE,704EB79B,extended,00000001
+
+[Reward 13]
+patch=1,EE,704EB79C,extended,00000001
+
+[Reward 14]
+patch=1,EE,704EB79D,extended,00000001
+
+[Reward 15]
+patch=1,EE,704EB79E,extended,00000001
+
+[Reward 16]
+patch=1,EE,704EB79F,extended,00000001
+
+[Reward 17]
+patch=1,EE,704EB7A0,extended,00000001
+
+[Reward 18]
+patch=1,EE,704EB7A1,extended,00000001
+
+[Reward 19]
+patch=1,EE,704EB7A2,extended,00000001
+
+[Reward 20]
+patch=1,EE,704EB7A3,extended,00000001
+
+[Reward 21]
+patch=1,EE,704EB7A4,extended,00000001
+
+[Reward 22]
+patch=1,EE,704EB7A5,extended,00000001
+
+[Reward 23]
+patch=1,EE,704EB7A6,extended,00000001
+
+[Reward 24]
+patch=1,EE,704EB7A7,extended,00000001
+
+[Reward 25]
+patch=1,EE,704EB7A8,extended,00000001
+
+[Reward 26]
+patch=1,EE,704EB7A9,extended,00000001
+
+[Reward 27]
+patch=1,EE,704EB7AA,extended,00000001
+
+[Reward 28]
+patch=1,EE,704EB7AB,extended,00000001
+
+[Reward 29]
+patch=1,EE,704EB7AC,extended,00000001
+
+[Reward 30]
+patch=1,EE,704EB7AD,extended,00000001
+
+[Reward 31]
+patch=1,EE,704EB7AE,extended,00000001
+
+[Reward 32]
+patch=1,EE,704EB7AF,extended,00000001
+
+[Reward 33]
+patch=1,EE,704EB7B0,extended,00000001
+
+[Reward 34]
+patch=1,EE,704EB7B1,extended,00000001
+
+[Reward 35]
+patch=1,EE,704EB7B2,extended,00000001
+
+[Reward 36]
+patch=1,EE,704EB7B3,extended,00000001
+
+[Reward 37]
+patch=1,EE,704EB7B4,extended,00000001
+
+[Reward 38]
+patch=1,EE,704EB7B5,extended,00000001
+
+[Reward 39]
+patch=1,EE,704EB7B6,extended,00000001
+
+[Reward 40]
+patch=1,EE,704EB7B7,extended,00000001
+
+[Reward 41]
+patch=1,EE,704EB7B8,extended,00000001
+
+[Reward 42]
+patch=1,EE,704EB7B9,extended,00000001
+
+[Reward 43]
+patch=1,EE,704EB7BA,extended,00000001
+
+[Reward 44]
+patch=1,EE,704EB7BB,extended,00000001
+
+[Reward 45]
+patch=1,EE,704EB7BC,extended,00000001
+
+[Reward 46]
+patch=1,EE,704EB7BD,extended,00000001
+
+[Reward 47]
+patch=1,EE,704EB7BE,extended,00000001
+
+[Reward 48]
+patch=1,EE,704EB7BF,extended,00000001
+
+[Reward 49]
+patch=1,EE,704EB7C0,extended,00000001
+
+[Reward 50]
+patch=1,EE,704EB7C1,extended,00000001
+
+[Reward 51]
+patch=1,EE,704EB7C2,extended,00000001
+
+[Reward 52]
+patch=1,EE,704EB7C3,extended,00000001
+
+[Reward 53]
+patch=1,EE,704EB7C4,extended,00000001
+
+[Reward 54]
+patch=1,EE,704EB7C5,extended,00000001
+
+[Reward 55]
+patch=1,EE,704EB7C6,extended,00000001
+
+[Reward 56]
+patch=1,EE,704EB7C7,extended,00000001
+
+[Reward 57]
+patch=1,EE,704EB7C8,extended,00000001
+
+[Reward 58]
+patch=1,EE,704EB7C9,extended,00000001
+
+[Reward 59]
+patch=1,EE,704EB7CA,extended,00000001
+
+[Reward 60]
+patch=1,EE,704EB7CB,extended,00000001
+
+[Reward 61]
+patch=1,EE,704EB7CC,extended,00000001
+
+[Reward 62]
+patch=1,EE,704EB7CD,extended,00000001
+
+[Reward 63]
+patch=1,EE,704EB7CE,extended,00000001
+
+[Reward 64]
+patch=1,EE,704EB7CF,extended,00000001
+
+[Reward 65]
+patch=1,EE,704EB7D0,extended,00000001
+
+[Reward 66]
+patch=1,EE,704EB7D1,extended,00000001
+
+[Reward 67]
+patch=1,EE,704EB7D2,extended,00000001
+
+[Reward 68]
+patch=1,EE,704EB7D3,extended,00000001
+
+[Reward 69]
+patch=1,EE,704EB7D4,extended,00000001
+
+[Reward 70]
+patch=1,EE,704EB7D5,extended,00000001
+
+[Reward 71]
+patch=1,EE,704EB7D6,extended,00000001
+
+[Reward 72]
+patch=1,EE,704EB7D7,extended,00000001
+
+[Reward 73]
+patch=1,EE,704EB7D8,extended,00000001
+
+[Reward 74]
+patch=1,EE,704EB7D9,extended,00000001
+
+[Reward 75]
+patch=1,EE,704EB7DA,extended,00000001
+
+[Reward 76]
+patch=1,EE,704EB7DB,extended,00000001
+
+[Reward 77]
+patch=1,EE,704EB7DC,extended,00000001
+
+[Reward 78]
+patch=1,EE,704EB7DD,extended,00000001
+
+[Reward 79]
+patch=1,EE,704EB7DE,extended,00000001
+
+[Reward 80]
+patch=1,EE,704EB7DF,extended,00000001
+
+[Reward 81]
+patch=1,EE,704EB7E0,extended,00000001
+
+[Reward 82]
+patch=1,EE,704EB7E1,extended,00000001
+
+[Reward 83]
+patch=1,EE,704EB7E2,extended,00000001
+
+[Reward 84]
+patch=1,EE,704EB7E3,extended,00000001
+
+[Reward 85]
+patch=1,EE,704EB7E4,extended,00000001
+
+[Reward 86]
+patch=1,EE,704EB7E5,extended,00000001
+
+[Reward 87]
+patch=1,EE,704EB7E6,extended,00000001
+
+[Reward 88]
+patch=1,EE,704EB7E7,extended,00000001
+
+[Reward 89]
+patch=1,EE,704EB7E8,extended,00000001
+
+[Reward 90]
+patch=1,EE,704EB7E9,extended,00000001
+
+[Reward 91]
+patch=1,EE,704EB7EA,extended,00000001
+
+[Reward 92]
+patch=1,EE,704EB7EB,extended,00000001
+
+[Reward 93]
+patch=1,EE,704EB7EC,extended,00000001
+
+[Reward 94]
+patch=1,EE,704EB7ED,extended,00000001
+
+[Reward 95]
+patch=1,EE,704EB7EE,extended,00000001
+
+[Reward 96]
+patch=1,EE,704EB7EF,extended,00000001
+
+[Reward 97]
+patch=1,EE,704EB7F0,extended,00000001
+
+[Reward 98]
+patch=1,EE,704EB7F1,extended,00000001
+
+[Reward 99]
+patch=1,EE,704EB7F2,extended,00000001
+
+[Reward 100]
+patch=1,EE,704EB7F3,extended,00000001
+
+[Reward 1]
+patch=1,EE,704EB790,extended,00000002
+
+[Reward 2]
+patch=1,EE,704EB791,extended,00000002
+
+[Reward 3]
+patch=1,EE,704EB792,extended,00000002
+
+[Reward 4]
+patch=1,EE,704EB793,extended,00000002
+
+[Reward 5]
+patch=1,EE,704EB794,extended,00000002
+
+[Reward 6]
+patch=1,EE,704EB795,extended,00000002
+
+[Reward 7]
+patch=1,EE,704EB796,extended,00000002
+
+[Reward 8]
+patch=1,EE,704EB797,extended,00000002
+
+[Reward 9]
+patch=1,EE,704EB798,extended,00000002
+
+[Reward 10]
+patch=1,EE,704EB799,extended,00000002
+
+[Reward 11]
+patch=1,EE,704EB79A,extended,00000002
+
+[Reward 12]
+patch=1,EE,704EB79B,extended,00000002
+
+[Reward 13]
+patch=1,EE,704EB79C,extended,00000002
+
+[Reward 14]
+patch=1,EE,704EB79D,extended,00000002
+
+[Reward 15]
+patch=1,EE,704EB79E,extended,00000002
+
+[Reward 16]
+patch=1,EE,704EB79F,extended,00000002
+
+[Reward 17]
+patch=1,EE,704EB7A0,extended,00000002
+
+[Reward 18]
+patch=1,EE,704EB7A1,extended,00000002
+
+[Reward 19]
+patch=1,EE,704EB7A2,extended,00000002
+
+[Reward 20]
+patch=1,EE,704EB7A3,extended,00000002
+
+[Reward 21]
+patch=1,EE,704EB7A4,extended,00000002
+
+[Reward 22]
+patch=1,EE,704EB7A5,extended,00000002
+
+[Reward 23]
+patch=1,EE,704EB7A6,extended,00000002
+
+[Reward 24]
+patch=1,EE,704EB7A7,extended,00000002
+
+[Reward 25]
+patch=1,EE,704EB7A8,extended,00000002
+
+[Reward 26]
+patch=1,EE,704EB7A9,extended,00000002
+
+[Reward 27]
+patch=1,EE,704EB7AA,extended,00000002
+
+[Reward 28]
+patch=1,EE,704EB7AB,extended,00000002
+
+[Reward 29]
+patch=1,EE,704EB7AC,extended,00000002
+
+[Reward 30]
+patch=1,EE,704EB7AD,extended,00000002
+
+[Reward 31]
+patch=1,EE,704EB7AE,extended,00000002
+
+[Reward 32]
+patch=1,EE,704EB7AF,extended,00000002
+
+[Reward 33]
+patch=1,EE,704EB7B0,extended,00000002
+
+[Reward 34]
+patch=1,EE,704EB7B1,extended,00000002
+
+[Reward 35]
+patch=1,EE,704EB7B2,extended,00000002
+
+[Reward 36]
+patch=1,EE,704EB7B3,extended,00000002
+
+[Reward 37]
+patch=1,EE,704EB7B4,extended,00000002
+
+[Reward 38]
+patch=1,EE,704EB7B5,extended,00000002
+
+[Reward 39]
+patch=1,EE,704EB7B6,extended,00000002
+
+[Reward 40]
+patch=1,EE,704EB7B7,extended,00000002
+
+[Reward 41]
+patch=1,EE,704EB7B8,extended,00000002
+
+[Reward 42]
+patch=1,EE,704EB7B9,extended,00000002
+
+[Reward 43]
+patch=1,EE,704EB7BA,extended,00000002
+
+[Reward 44]
+patch=1,EE,704EB7BB,extended,00000002
+
+[Reward 45]
+patch=1,EE,704EB7BC,extended,00000002
+
+[Reward 46]
+patch=1,EE,704EB7BD,extended,00000002
+
+[Reward 47]
+patch=1,EE,704EB7BE,extended,00000002
+
+[Reward 48]
+patch=1,EE,704EB7BF,extended,00000002
+
+[Reward 49]
+patch=1,EE,704EB7C0,extended,00000002
+
+[Reward 50]
+patch=1,EE,704EB7C1,extended,00000002
+
+[Reward 51]
+patch=1,EE,704EB7C2,extended,00000002
+
+[Reward 52]
+patch=1,EE,704EB7C3,extended,00000002
+
+[Reward 53]
+patch=1,EE,704EB7C4,extended,00000002
+
+[Reward 54]
+patch=1,EE,704EB7C5,extended,00000002
+
+[Reward 55]
+patch=1,EE,704EB7C6,extended,00000002
+
+[Reward 56]
+patch=1,EE,704EB7C7,extended,00000002
+
+[Reward 57]
+patch=1,EE,704EB7C8,extended,00000002
+
+[Reward 58]
+patch=1,EE,704EB7C9,extended,00000002
+
+[Reward 59]
+patch=1,EE,704EB7CA,extended,00000002
+
+[Reward 60]
+patch=1,EE,704EB7CB,extended,00000002
+
+[Reward 61]
+patch=1,EE,704EB7CC,extended,00000002
+
+[Reward 62]
+patch=1,EE,704EB7CD,extended,00000002
+
+[Reward 63]
+patch=1,EE,704EB7CE,extended,00000002
+
+[Reward 64]
+patch=1,EE,704EB7CF,extended,00000002
+
+[Reward 65]
+patch=1,EE,704EB7D0,extended,00000002
+
+[Reward 66]
+patch=1,EE,704EB7D1,extended,00000002
+
+[Reward 67]
+patch=1,EE,704EB7D2,extended,00000002
+
+[Reward 68]
+patch=1,EE,704EB7D3,extended,00000002
+
+[Reward 69]
+patch=1,EE,704EB7D4,extended,00000002
+
+[Reward 70]
+patch=1,EE,704EB7D5,extended,00000002
+
+[Reward 71]
+patch=1,EE,704EB7D6,extended,00000002
+
+[Reward 72]
+patch=1,EE,704EB7D7,extended,00000002
+
+[Reward 73]
+patch=1,EE,704EB7D8,extended,00000002
+
+[Reward 74]
+patch=1,EE,704EB7D9,extended,00000002
+
+[Reward 75]
+patch=1,EE,704EB7DA,extended,00000002
+
+[Reward 76]
+patch=1,EE,704EB7DB,extended,00000002
+
+[Reward 77]
+patch=1,EE,704EB7DC,extended,00000002
+
+[Reward 78]
+patch=1,EE,704EB7DD,extended,00000002
+
+[Reward 79]
+patch=1,EE,704EB7DE,extended,00000002
+
+[Reward 80]
+patch=1,EE,704EB7DF,extended,00000002
+
+[Reward 81]
+patch=1,EE,704EB7E0,extended,00000002
+
+[Reward 82]
+patch=1,EE,704EB7E1,extended,00000002
+
+[Reward 83]
+patch=1,EE,704EB7E2,extended,00000002
+
+[Reward 84]
+patch=1,EE,704EB7E3,extended,00000002
+
+[Reward 85]
+patch=1,EE,704EB7E4,extended,00000002
+
+[Reward 86]
+patch=1,EE,704EB7E5,extended,00000002
+
+[Reward 87]
+patch=1,EE,704EB7E6,extended,00000002
+
+[Reward 88]
+patch=1,EE,704EB7E7,extended,00000002
+
+[Reward 89]
+patch=1,EE,704EB7E8,extended,00000002
+
+[Reward 90]
+patch=1,EE,704EB7E9,extended,00000002
+
+[Reward 91]
+patch=1,EE,704EB7EA,extended,00000002
+
+[Reward 92]
+patch=1,EE,704EB7EB,extended,00000002
+
+[Reward 93]
+patch=1,EE,704EB7EC,extended,00000002
+
+[Reward 94]
+patch=1,EE,704EB7ED,extended,00000002
+
+[Reward 95]
+patch=1,EE,704EB7EE,extended,00000002
+
+[Reward 96]
+patch=1,EE,704EB7EF,extended,00000002
+
+[Reward 97]
+patch=1,EE,704EB7F0,extended,00000002
+
+[Reward 98]
+patch=1,EE,704EB7F1,extended,00000002
+
+[Reward 99]
+patch=1,EE,704EB7F2,extended,00000002
+
+[Reward 100]
+patch=1,EE,704EB7F3,extended,00000002

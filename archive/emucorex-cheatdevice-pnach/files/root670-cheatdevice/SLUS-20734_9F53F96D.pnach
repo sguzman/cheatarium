@@ -1,0 +1,32 @@
+gametitle=Frogger's Adventures-The Rescue (SLUS-20734)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00115877
+
+[Infinite Lives]
+patch=1,EE,1040E970,extended,00000009
+
+[Extra Lives]
+patch=1,EE,10152D8C,extended,00000001
+
+[Always Have 49 Coins]
+patch=1,EE,D040E96E,extended,00200031
+patch=1,EE,1040E96E,extended,00000031
+
+[Coins Worth 20]
+patch=1,EE,101434A0,extended,00000014
+
+[Coins Worth 10]
+patch=1,EE,101434A0,extended,0000000A
+
+[Coins Worth 5]
+patch=1,EE,101434A0,extended,00000005
+
+[Coins Worth 2]
+patch=1,EE,101434A0,extended,00000002
+
+[Always Low Time (Challenge Mode)]
+patch=1,EE,2040E9D8,extended,00000000

@@ -1,0 +1,325 @@
+gametitle=Scarface-The World Is Yours (SLUS-21111)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9073F1BC,extended,0C1D1186
+patch=1,EE,200C0000,extended,3C0105F5
+patch=1,EE,200C0004,extended,3421E0FF
+patch=1,EE,200C01F8,extended,08173DC0
+patch=1,EE,200C01FC,extended,00000000
+patch=1,EE,205C76E0,extended,08030000
+
+[Infinite Health (On-Foot)]
+patch=1,EE,2039E9BC,extended,C4820184
+patch=1,EE,2039E9C4,extended,E4820180
+
+[Infinite Health (In-Car)]
+patch=1,EE,20537EA8,extended,3C0142C8
+patch=1,EE,20537EB8,extended,AE610080
+
+[Infinite Ammo]
+patch=1,EE,203CE77C,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,203CE774,extended,240203E7
+
+[Exra Ammo]
+patch=1,EE,203CE774,extended,00511021
+
+[Never Reload]
+patch=1,EE,203D03F4,extended,00000000
+
+[Never Reload With Max Clip]
+patch=1,EE,203D03F0,extended,24030063
+
+[Less Vehicle Damage]
+patch=1,EE,20380CB0,extended,03E00008
+patch=1,EE,20380CB4,extended,00000000
+
+[Vehicles Never Locked]
+patch=1,EE,20380AB0,extended,03E00008
+patch=1,EE,20380AB4,extended,24020000
+
+[Visibility Never Increases]
+patch=1,EE,20475BE0,extended,00000000
+
+[Cop Heat Never Increases]
+patch=1,EE,20475980,extended,03E00008
+patch=1,EE,20475984,extended,00000000
+
+[Always Gain Balls]
+patch=1,EE,1081C6DC,extended,00000064
+
+[P1 Press {L1}+Up To Increase Balls]
+patch=1,EE,D0842502,extended,0000FBEF
+patch=1,EE,1081C6DC,extended,0000000A
+patch=1,EE,D0842502,extended,0000FFFF
+patch=1,EE,1081C6DC,extended,00000000
+
+[P1 Press {L1}+Down To Decrease Balls]
+patch=1,EE,D0842502,extended,0000FBBF
+patch=1,EE,1081C6DC,extended,0000FFF6
+patch=1,EE,D0842502,extended,0000FFFF
+patch=1,EE,1081C6DC,extended,00000000
+
+[Press {R1}+Up To Increase Cop Heat]
+patch=1,EE,D0842502,extended,0000F7EF
+patch=1,EE,1081C6DE,extended,0000000A
+patch=1,EE,D0842502,extended,0000FFFF
+patch=1,EE,1081C6DE,extended,00000000
+
+[Press {R1}+Down To Decrease Cop Heat]
+patch=1,EE,D0842502,extended,0000F7BF
+patch=1,EE,1081C6DE,extended,0000FFF6
+patch=1,EE,D0842502,extended,0000FFFF
+patch=1,EE,1081C6DE,extended,00000000
+
+[Press {R2}+Up To Increase Gang Heat]
+patch=1,EE,D0842502,extended,0000FDEF
+patch=1,EE,1081C6E0,extended,00000001
+patch=1,EE,D0842502,extended,0000FFFF
+patch=1,EE,1081C6E0,extended,00000000
+
+[Press {R2}+Down To Decrease Gang Heat]
+patch=1,EE,D0842502,extended,0000FDBF
+patch=1,EE,1081C6E0,extended,00000001
+patch=1,EE,D0842502,extended,0000FFFF
+patch=1,EE,1081C6E0,extended,00000000
+
+[Max Clean Cash]
+patch=1,EE,200C0008,extended,8C82006C
+patch=1,EE,200C000C,extended,AC410000
+
+[No Clean Cash]
+patch=1,EE,200C0008,extended,8C82006C
+patch=1,EE,200C000C,extended,AC400000
+
+[Max Dirty Cash]
+patch=1,EE,200C0010,extended,8C820074
+patch=1,EE,200C0014,extended,AC410000
+
+[No Dirty Cash]
+patch=1,EE,200C0010,extended,8C820074
+patch=1,EE,200C0014,extended,AC400000
+
+[Max Total Ammo Used]
+patch=1,EE,200C0018,extended,8C82032C
+patch=1,EE,200C001C,extended,AC410000
+
+[No Total Ammo Used]
+patch=1,EE,200C0018,extended,8C82032C
+patch=1,EE,200C001C,extended,AC400000
+
+[Max Total Kills]
+patch=1,EE,200C0020,extended,8C820334
+patch=1,EE,200C0024,extended,AC410000
+
+[No Total Kills]
+patch=1,EE,200C0020,extended,8C820334
+patch=1,EE,200C0024,extended,AC400000
+
+[Max Head Shots]
+patch=1,EE,200C0028,extended,8C82033C
+patch=1,EE,200C002C,extended,AC410000
+
+[No Head Shots]
+patch=1,EE,200C0028,extended,8C82033C
+patch=1,EE,200C002C,extended,AC400000
+
+[Max Left Nut Shots]
+patch=1,EE,200C0030,extended,8C820344
+patch=1,EE,200C0034,extended,AC410000
+
+[No Left Nut Shots]
+patch=1,EE,200C0030,extended,8C820344
+patch=1,EE,200C0034,extended,AC400000
+
+[Max Right Nut Shots]
+patch=1,EE,200C0038,extended,8C82034C
+patch=1,EE,200C003C,extended,AC410000
+
+[No Right Nut Shots]
+patch=1,EE,200C0038,extended,8C82034C
+patch=1,EE,200C003C,extended,AC400000
+
+[Max Groin Shots]
+patch=1,EE,200C0040,extended,8C820354
+patch=1,EE,200C0044,extended,AC410000
+
+[No Groin Shots]
+patch=1,EE,200C0040,extended,8C820354
+patch=1,EE,200C0044,extended,AC400000
+
+[Max Kidney Shots]
+patch=1,EE,200C0048,extended,8C82035C
+patch=1,EE,200C004C,extended,AC410000
+
+[No Kidney Shots]
+patch=1,EE,200C0048,extended,8C82035C
+patch=1,EE,200C004C,extended,AC400000
+
+[Max Arm Shots]
+patch=1,EE,200C0050,extended,8C820364
+patch=1,EE,200C0054,extended,AC410000
+
+[No Arm Shots]
+patch=1,EE,200C0050,extended,8C820364
+patch=1,EE,200C0054,extended,AC400000
+
+[Max Leg Shots]
+patch=1,EE,200C0058,extended,8C82036C
+patch=1,EE,200C005C,extended,AC410000
+
+[No Leg Shots]
+patch=1,EE,200C0058,extended,8C82036C
+patch=1,EE,200C005C,extended,AC400000
+
+[Max Chainsaw Arm Removals]
+patch=1,EE,200C0060,extended,8C820374
+patch=1,EE,200C0064,extended,AC410000
+
+[No Chainsaw Arm Removals]
+patch=1,EE,200C0060,extended,8C820374
+patch=1,EE,200C0064,extended,AC400000
+
+[Max Chainsaw Decapitations]
+patch=1,EE,200C0068,extended,8C82037C
+patch=1,EE,200C006C,extended,AC410000
+
+[No Chainsaw Decapitations]
+patch=1,EE,200C0068,extended,8C82037C
+patch=1,EE,200C006C,extended,AC400000
+
+[Max Chainsaw Leg Removals]
+patch=1,EE,200C0070,extended,8C820384
+patch=1,EE,200C0074,extended,AC410000
+
+[No Chainsaw Leg Removals]
+patch=1,EE,200C0070,extended,8C820384
+patch=1,EE,200C0074,extended,AC400000
+
+[Max Chainsaw Body Dismemberments]
+patch=1,EE,200C0078,extended,8C82038C
+patch=1,EE,200C007C,extended,AC410000
+
+[No Chainsaw Body Dismemberments]
+patch=1,EE,200C0078,extended,8C82038C
+patch=1,EE,200C007C,extended,AC400000
+
+[Max Melee Counters]
+patch=1,EE,200C0080,extended,8C820394
+patch=1,EE,200C0084,extended,AC410000
+
+[No Melee Counters]
+patch=1,EE,200C0080,extended,8C820394
+patch=1,EE,200C0084,extended,AC400000
+
+[Refill Health]
+patch=1,EE,200C0100,extended,8C820524
+patch=1,EE,200C0104,extended,AC400000
+
+[Fill Balls Meter]
+patch=1,EE,200C0108,extended,8C82052C
+patch=1,EE,200C010C,extended,AC400000
+
+[Max Ammo]
+patch=1,EE,200C0110,extended,8C820534
+patch=1,EE,200C0114,extended,AC400000
+
+[Increase Gang Heat]
+patch=1,EE,200C0118,extended,8C82053C
+patch=1,EE,200C011C,extended,AC400000
+
+[Decrease Gang Heat]
+patch=1,EE,200C0120,extended,8C820544
+patch=1,EE,200C0124,extended,AC400000
+
+[Increase Cop Heat]
+patch=1,EE,200C0128,extended,8C82054C
+patch=1,EE,200C012C,extended,AC400000
+
+[Decrease Cop Heat]
+patch=1,EE,200C0130,extended,8C820554
+patch=1,EE,200C0134,extended,AC400000
+
+[Change Time Of Day]
+patch=1,EE,200C0138,extended,8C82055C
+patch=1,EE,200C013C,extended,AC400000
+
+[Toggle Rain]
+patch=1,EE,200C0140,extended,8C820564
+patch=1,EE,200C0144,extended,AC400000
+
+[Toggle Lightning]
+patch=1,EE,200C0148,extended,8C82056C
+patch=1,EE,200C014C,extended,AC400000
+
+[Repair Tony's Vehicle]
+patch=1,EE,200C0150,extended,8C820574
+patch=1,EE,200C0154,extended,AC400000
+
+[BReal-The World Is Yours-Music Track]
+patch=1,EE,200C0158,extended,8C82057C
+patch=1,EE,200C015C,extended,AC400000
+
+[Spawn Bacinari]
+patch=1,EE,200C0160,extended,8C820584
+patch=1,EE,200C0164,extended,AC400000
+
+[Spawn Bulldozer]
+patch=1,EE,200C0168,extended,8C82058C
+patch=1,EE,200C016C,extended,AC400000
+
+[Spawn Ariel MK III]
+patch=1,EE,200C0170,extended,8C820594
+patch=1,EE,200C0174,extended,AC400000
+
+[Spawn Odin VH88]
+patch=1,EE,200C0178,extended,8C82059C
+patch=1,EE,200C017C,extended,AC400000
+
+[Spawn Bodog Stampede]
+patch=1,EE,200C0180,extended,8C8205A4
+patch=1,EE,200C0184,extended,AC400000
+
+[Black Suit Tony]
+patch=1,EE,200C0188,extended,8C8205AC
+patch=1,EE,200C018C,extended,AC400000
+
+[White Suit Tony]
+patch=1,EE,200C0190,extended,8C8205B4
+patch=1,EE,200C0194,extended,AC400000
+
+[White Suit Tony W/Shades]
+patch=1,EE,200C0198,extended,8C8205BC
+patch=1,EE,200C019C,extended,AC400000
+
+[Blue Pinstrike Suit Tony W/Shades]
+patch=1,EE,200C01A8,extended,8C8205CC
+patch=1,EE,200C01AC,extended,AC400000
+
+[Hawaiian Shirt Tony]
+patch=1,EE,200C01B0,extended,8C8205D4
+patch=1,EE,200C01B4,extended,AC400000
+
+[Hawaiian Shirt Tony W/Shades]
+patch=1,EE,200C01B8,extended,8C8205DC
+patch=1,EE,200C01BC,extended,AC400000
+
+[Gray Suit Tony]
+patch=1,EE,200C01C0,extended,8C8205E4
+patch=1,EE,200C01C4,extended,AC400000
+
+[Gray Suit Tony W/Shades]
+patch=1,EE,200C01C8,extended,8C8205EC
+patch=1,EE,200C01CC,extended,AC400000
+
+[Sandy Shirt Tony]
+patch=1,EE,200C01D0,extended,8C8205F4
+patch=1,EE,200C01D4,extended,AC400000
+
+[Sandy Shirt Tony W/Shades]
+patch=1,EE,200C01D8,extended,8C8205FC
+patch=1,EE,200C01DC,extended,AC400000

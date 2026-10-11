@@ -1,0 +1,154 @@
+gametitle=Zapper-One Wicked Cricket (SLUS-20528)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F01E98D0,extended,002395FF
+
+[Infinite Lives]
+patch=1,EE,201B5698,extended,00000000
+
+[Extra Lives]
+patch=1,EE,101B5690,extended,00000001
+
+[Find 1 Firefly For All Freed]
+patch=1,EE,201B3748,extended,24030064
+
+[Unlock All Levels (Story Mode)]
+patch=1,EE,1040BD38,extended,0000FFFF
+
+[Unlock All Levels (Arcade Mode)]
+patch=1,EE,1028E2C8,extended,0000FFFF
+
+[Find 1 Egg To Finish Level]
+patch=1,EE,201B41A0,extended,24030006
+
+[Max Fireflies (Completed Level Screen)]
+patch=1,EE,2040BD40,extended,00000064
+
+[World One-Overgrown Undergrowth]
+patch=1,EE,2028DDB4,extended,00000064
+
+[World One-Half Acre Wood]
+patch=1,EE,2028DDB8,extended,00000064
+
+[World One-White Knuckle Water]
+patch=1,EE,2028DDBC,extended,00000064
+
+[World One-Crazy Apiary]
+patch=1,EE,2028DDE8,extended,00000064
+
+[World Two-Canopy Heights]
+patch=1,EE,2028DDC0,extended,00000064
+
+[World Two-Cutting Edge Inc.]
+patch=1,EE,2028DDC4,extended,00000064
+
+[World Two-Raptor Cavern]
+patch=1,EE,2028DDC8,extended,00000064
+
+[World Two-Zap Pest]
+patch=1,EE,2028DDEC,extended,00000064
+
+[World Three-Spook Ville]
+patch=1,EE,2028DDCC,extended,00000064
+
+[World Three-Voodoo Choo Choo]
+patch=1,EE,2028DDD0,extended,00000064
+
+[World Three-Rockface Chase]
+patch=1,EE,2028DDD4,extended,00000064
+
+[World Four-Laser Maze]
+patch=1,EE,2028DDD8,extended,00000064
+
+[World Four-Pipewerx]
+patch=1,EE,2028DDDC,extended,00000064
+
+[World Four-Chain Reactor]
+patch=1,EE,2028DDE0,extended,00000064
+
+[World One-Overgrown Undergrowth]
+patch=1,EE,2028DEB0,extended,00000064
+
+[World One-Half Acre Wood]
+patch=1,EE,2028DEB4,extended,00000064
+
+[World One-White Knuckle Water]
+patch=1,EE,2028DEB8,extended,00000064
+
+[World One-Crazy Apiary]
+patch=1,EE,2028DEE4,extended,00000064
+
+[World Two-Canopy Heights]
+patch=1,EE,2028DEBC,extended,00000064
+
+[World Two-Cutting Edge Inc.]
+patch=1,EE,2028DEC0,extended,00000064
+
+[World Two-Raptor Cavern]
+patch=1,EE,2028DEC4,extended,00000064
+
+[World Two-Zap Pest]
+patch=1,EE,2028DEE8,extended,00000064
+
+[World Three-Spook Ville]
+patch=1,EE,2028DEC8,extended,00000064
+
+[World Three-Voodoo Choo Choo]
+patch=1,EE,2028DECC,extended,00000064
+
+[World Three-Rockface Chase]
+patch=1,EE,2028DED0,extended,00000064
+
+[World Four-Laser Maze]
+patch=1,EE,2028DED4,extended,00000064
+
+[World Four-Pipewerx]
+patch=1,EE,2028DED8,extended,00000064
+
+[World Four-Chain Reactor]
+patch=1,EE,2028DEDC,extended,00000064
+
+[World One-Overgrown Undergrowth]
+patch=1,EE,2028DFAC,extended,00000064
+
+[World One-Half Acre Wood]
+patch=1,EE,2028DFB0,extended,00000064
+
+[World One-White Knuckle Water]
+patch=1,EE,2028DFB4,extended,00000064
+
+[World One-Crazy Apiary]
+patch=1,EE,2028DFE0,extended,00000064
+
+[World Two-Canopy Heights]
+patch=1,EE,2028DFB8,extended,00000064
+
+[World Two-Cutting Edge Inc.]
+patch=1,EE,2028DFBC,extended,00000064
+
+[World Two-Raptor Cavern]
+patch=1,EE,2028DFC0,extended,00000064
+
+[World Two-Zap Pest]
+patch=1,EE,2028DFE4,extended,00000064
+
+[World Three-Spook Ville]
+patch=1,EE,2028DFC4,extended,00000064
+
+[World Three-Voodoo Choo Choo]
+patch=1,EE,2028DFC8,extended,00000064
+
+[World Three-Rockface Chase]
+patch=1,EE,2028DFCC,extended,00000064
+
+[World Four-Laser Maze]
+patch=1,EE,2028DFD0,extended,00000064
+
+[World Four-Pipewerx]
+patch=1,EE,2028DFD4,extended,00000064
+
+[World Four-Chain Reactor]
+patch=1,EE,2028DFD8,extended,00000064

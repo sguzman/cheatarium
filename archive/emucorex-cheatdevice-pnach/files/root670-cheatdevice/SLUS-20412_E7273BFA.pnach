@@ -1,0 +1,102 @@
+gametitle=Hot Wheels-Velocity X (SLUS-20412)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0200008,extended,0022B59B
+
+[Extra Stunt Points]
+patch=1,EE,10266DC0,extended,244203E7
+
+[Do 1 Stunt For Max Points]
+patch=1,EE,20266DC4,extended,AC65007C
+
+[Max Points]
+patch=1,EE,206675A4,extended,0001869F
+
+[Infinite Ammo]
+patch=1,EE,005589A4,extended,00000001
+
+[Unlock All Cars]
+patch=1,EE,005589A5,extended,00000001
+
+[Unlock All Items]
+patch=1,EE,005589A6,extended,00000001
+
+[Unlock All Worlds]
+patch=1,EE,005589A7,extended,00000001
+
+[Infinite Turbo]
+patch=1,EE,005589A9,extended,00000001
+
+[Infinite Health]
+patch=1,EE,005589AA,extended,00000001
+
+[Timer Speed 50%]
+patch=1,EE,005589AB,extended,00000001
+
+[Timer Speed 10%]
+patch=1,EE,005589AB,extended,00000002
+
+[Laser Upgrade]
+patch=1,EE,005589AC,extended,00000001
+
+[Unlock All Vehicles]
+patch=1,EE,4055A7E0,extended,00080001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0055A800,extended,00000001
+
+[Unlock All Joyrides]
+patch=1,EE,0055A801,extended,00000001
+patch=1,EE,1055A802,extended,00000101
+patch=1,EE,1055A804,extended,00000101
+
+[Unlock All Missions]
+patch=1,EE,1055A806,extended,00000101
+patch=1,EE,4055A808,extended,00030001
+patch=1,EE,01010101,extended,00000000
+
+[Unlock All Battles]
+patch=1,EE,2055A814,extended,01010101
+patch=1,EE,2055A818,extended,01010101
+
+[Unlock All Drag Races]
+patch=1,EE,1055A81E,extended,00000101
+patch=1,EE,2055A820,extended,01010101
+
+[Unlock All Challenges]
+patch=1,EE,4055A828,extended,00040001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1055A838,extended,00000101
+
+[Unlock All Items]
+patch=1,EE,0055A873,extended,00000001
+patch=1,EE,2055A874,extended,01010101
+patch=1,EE,2055A878,extended,01010101
+patch=1,EE,1055A87C,extended,00000101
+patch=1,EE,0055A87E,extended,00000001
+
+[Unlimited Ammo]
+patch=1,EE,0055A87F,extended,00000001
+
+[Unlock All Cars]
+patch=1,EE,0055A880,extended,00000001
+
+[Unlock All Items]
+patch=1,EE,0055A881,extended,00000001
+
+[Unlock All Worlds]
+patch=1,EE,0055A882,extended,00000001
+
+[Unlimited Turbo]
+patch=1,EE,0055A884,extended,00000001
+
+[Unlimited Health]
+patch=1,EE,0055A885,extended,00000001
+
+[Timer Speed]
+patch=1,EE,0055A886,extended,00000001
+
+[Laser Upgrade]
+patch=1,EE,0055A887,extended,00000001

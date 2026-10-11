@@ -1,0 +1,262 @@
+gametitle=Hot Wheels-World Race (SLUS-20737)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,002DDBA7
+
+[Infinite Time (Challenge Mode)]
+patch=1,EE,201A9484,extended,00000000
+
+[Infinite Nitro X2]
+patch=1,EE,201BFDA8,extended,3C013F80
+patch=1,EE,201BFDB0,extended,AC410000
+
+[Get 1 Pickup For Max Pickups]
+patch=1,EE,201A30EC,extended,24020063
+
+[Pickups Worth 20]
+patch=1,EE,101A30EC,extended,00000014
+
+[Pickups Worth 10]
+patch=1,EE,101A30EC,extended,0000000A
+
+[Pickups Worth 5]
+patch=1,EE,101A30EC,extended,00000005
+
+[Pickups Worth 2]
+patch=1,EE,101A30EC,extended,00000002
+
+[Start On Last Lap]
+patch=1,EE,200C0220,extended,00602021
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC440390
+patch=1,EE,201E940C,extended,0C030088
+
+[Always Low Lap Time]
+patch=1,EE,200C0230,extended,0805AEE2
+patch=1,EE,200C0234,extended,AC400000
+patch=1,EE,2014AEF4,extended,0C03008C
+
+[Always Low Race Time]
+patch=1,EE,200C0238,extended,0805AEE2
+patch=1,EE,200C023C,extended,AC400000
+patch=1,EE,2016BA44,extended,0C03008E
+
+[Unlock All Tracks]
+patch=1,EE,408E33D0,extended,000F0208
+patch=1,EE,00000000,extended,00000000
+
+[Jerry Boylan]
+patch=1,EE,208F7478,extended,00000000
+
+[Banjee Castillo]
+patch=1,EE,208F7838,extended,00000000
+
+[Pete Karris]
+patch=1,EE,208F7C38,extended,00000000
+
+[Skeet]
+patch=1,EE,208F8038,extended,00000000
+
+[Ric Handy]
+patch=1,EE,208F8438,extended,00000000
+
+[Vucatan]
+patch=1,EE,208F8838,extended,00000000
+
+[Esmeralda Sanchez]
+patch=1,EE,208F8C38,extended,00000000
+
+[Lani Tam]
+patch=1,EE,208F9038,extended,00000000
+
+[Josef 'Vert' Wheeler]
+patch=1,EE,208F9438,extended,00000000
+
+[Finn Serpa]
+patch=1,EE,208F9838,extended,00000000
+
+[Alec 'Hud' Wood]
+patch=1,EE,208F9C38,extended,00000000
+
+[Felix Sharky]
+patch=1,EE,208FA038,extended,00000000
+
+[Fluke]
+patch=1,EE,208FA438,extended,00000000
+
+[Mark Wylde]
+patch=1,EE,208FA838,extended,00000000
+
+[Taro Kitano]
+patch=1,EE,208FAC38,extended,00000000
+
+[Wayne Casper]
+patch=1,EE,208FB038,extended,00000000
+
+[Vesuvius]
+patch=1,EE,208FB438,extended,00000000
+
+[Krakatoa]
+patch=1,EE,208FB858,extended,00000000
+
+[Everest]
+patch=1,EE,208FBC58,extended,00000000
+
+[Jet Blaney]
+patch=1,EE,208FC058,extended,00000000
+
+[Harrison Lau]
+patch=1,EE,208FC458,extended,00000000
+
+[Chuvo]
+patch=1,EE,208F3BB8,extended,00000000
+
+[Toni Berry]
+patch=1,EE,208F4018,extended,00000000
+
+[Charlie Raffa]
+patch=1,EE,208F4418,extended,00000000
+
+[Rekkas]
+patch=1,EE,208F4818,extended,00000000
+
+[Heralda]
+patch=1,EE,208F4C18,extended,00000000
+
+[Mojave]
+patch=1,EE,208F5018,extended,00000000
+
+[Brian 'Zone' Kadeem]
+patch=1,EE,208F5418,extended,00000000
+
+[Tono]
+patch=1,EE,208F5818,extended,00000000
+
+[Kurt Wylde]
+patch=1,EE,208F5C18,extended,00000000
+
+[Ricky Bell]
+patch=1,EE,208F6078,extended,00000000
+
+[Dan Dresden]
+patch=1,EE,208F6478,extended,00000000
+
+[Bart 'Shrimp' Scampi]
+patch=1,EE,208F6878,extended,00000000
+
+[San Jay Khan]
+patch=1,EE,208F6C78,extended,00000000
+
+[Maximo]
+patch=1,EE,208F7078,extended,00000000
+
+[Item 1]
+patch=1,EE,208ED910,extended,00000000
+
+[Item 2]
+patch=1,EE,208ED960,extended,00000000
+
+[Item 3]
+patch=1,EE,208ED9B0,extended,00000000
+
+[Item 4]
+patch=1,EE,208EDA00,extended,00000000
+
+[Item 5]
+patch=1,EE,208EDA50,extended,00000000
+
+[Item 6]
+patch=1,EE,208EDAA0,extended,00000000
+
+[Item 7]
+patch=1,EE,208EDAF0,extended,00000000
+
+[Item 8]
+patch=1,EE,208EDB40,extended,00000000
+
+[Item 9]
+patch=1,EE,208EDBB0,extended,00000000
+
+[Item 10]
+patch=1,EE,208EDC00,extended,00000000
+
+[Item 11]
+patch=1,EE,208EDC50,extended,00000000
+
+[Item 12]
+patch=1,EE,208EDCA0,extended,00000000
+
+[Item 13]
+patch=1,EE,208EDCF0,extended,00000000
+
+[Item 14]
+patch=1,EE,208EDD40,extended,00000000
+
+[Item 15]
+patch=1,EE,208EDD90,extended,00000000
+
+[Item 16]
+patch=1,EE,208EDDE0,extended,00000000
+
+[Item 17]
+patch=1,EE,208EDE30,extended,00000000
+
+[Item 18]
+patch=1,EE,208EDE80,extended,00000000
+
+[Item 19]
+patch=1,EE,208EDED0,extended,00000000
+
+[Item 20]
+patch=1,EE,208EDF20,extended,00000000
+
+[Item 21]
+patch=1,EE,208EDF70,extended,00000000
+
+[Item 22]
+patch=1,EE,208EDFC0,extended,00000000
+
+[Item 23]
+patch=1,EE,208EE010,extended,00000000
+
+[Item 24]
+patch=1,EE,208EE060,extended,00000000
+
+[Item 25]
+patch=1,EE,208EE0B0,extended,00000000
+
+[Item 26]
+patch=1,EE,208EE120,extended,00000000
+
+[Item 27]
+patch=1,EE,208EE170,extended,00000000
+
+[Item 28]
+patch=1,EE,208EE1C0,extended,00000000
+
+[Item 29]
+patch=1,EE,208EE210,extended,00000000
+
+[Item 30]
+patch=1,EE,208EE260,extended,00000000
+
+[Item 31]
+patch=1,EE,208EE2B0,extended,00000000
+
+[Item 32]
+patch=1,EE,208EE300,extended,00000000
+
+[Item 33]
+patch=1,EE,208EE350,extended,00000000
+
+[Item 34]
+patch=1,EE,208EE3A0,extended,00000000
+
+[Item 35]
+patch=1,EE,208EE3F0,extended,00000000
+
+[Item 36]
+patch=1,EE,208EE440,extended,00000000

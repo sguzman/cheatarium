@@ -1,0 +1,111 @@
+gametitle=Neo Contra (SLUS-20961)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903633D0,extended,0C0DA7A2
+
+[Infinite Credits]
+patch=1,EE,203C831C,extended,00000063
+
+[Infinite Credits Usage]
+patch=1,EE,2012F2A4,extended,00000000
+
+[Extra Credits]
+patch=1,EE,1012F29C,extended,00000001
+
+[Max Hit Rate]
+patch=1,EE,203C8304,extended,00000064
+
+[No Lost Remaining Life]
+patch=1,EE,203C830C,extended,00000000
+
+[Always Low Total Time]
+patch=1,EE,203C8314,extended,00000000
+
+[Quick Score Gain P1]
+patch=1,EE,103C83DC,extended,0000FFFF
+
+[Max Score P1]
+patch=1,EE,203C83DC,extended,0098967F
+
+[Infinite Lives P1]
+patch=1,EE,203C83E4,extended,00000064
+
+[Quick Score Gain P2]
+patch=1,EE,103C841C,extended,0000FFFF
+
+[Max Score P2]
+patch=1,EE,203C841C,extended,0098967F
+
+[Infinite Lives P2]
+patch=1,EE,203C8424,extended,00000064
+
+[Infinite Lives (Both Players)]
+patch=1,EE,20130C38,extended,00000000
+
+[Extra Lives (Both Players)]
+patch=1,EE,10130C34,extended,00000001
+
+[Invincible (Both Players)]
+patch=1,EE,10156482,extended,00001000
+
+[Unlock All Characters & Etc]
+patch=1,EE,203C8364,extended,FFFFFFFF
+patch=1,EE,203C8368,extended,FFFFFFFF
+
+[Always No Deaths Recorded]
+patch=1,EE,20130C24,extended,AE000014
+
+[Max # Of Battles]
+patch=1,EE,203C8328,extended,0098967F
+
+[No # Of Battles]
+patch=1,EE,203C8328,extended,00000000
+
+[Max Total Battle Time]
+patch=1,EE,203C832C,extended,022550FF
+
+[No Total Battle Time]
+patch=1,EE,203C832C,extended,00000000
+
+[Max Shortest Clear Time]
+patch=1,EE,203C8330,extended,022550FF
+
+[No Shortest Clear Time]
+patch=1,EE,203C8330,extended,00000000
+
+[Max Game Clear #]
+patch=1,EE,203C8334,extended,0098967F
+
+[No Game Clear #]
+patch=1,EE,203C8334,extended,00000000
+
+[Max Game Over #]
+patch=1,EE,203C8338,extended,0098967F
+
+[No Game Over #]
+patch=1,EE,203C8338,extended,00000000
+
+[Max Hi Score]
+patch=1,EE,203C833C,extended,0098967F
+
+[Mission 01]
+patch=1,EE,203C8394,extended,00000000
+
+[Mission 02]
+patch=1,EE,203C8398,extended,00000000
+
+[Mission 03]
+patch=1,EE,203C839C,extended,00000000
+
+[Mission 04]
+patch=1,EE,203C83A0,extended,00000000
+
+[Mission 05]
+patch=1,EE,203C83A4,extended,00000000
+
+[All Missions]
+patch=1,EE,403C8394,extended,00050001
+patch=1,EE,00000000,extended,00000000

@@ -1,0 +1,910 @@
+gametitle=Arc The Lad-End Of Darkness (SLUS-21165)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9026ABA8,extended,00832021
+patch=1,EE,1015179A,extended,00001000
+
+[Infinite HP (In-Battle)]
+patch=1,EE,200C0220,extended,2404270F
+patch=1,EE,200C0224,extended,08041946
+patch=1,EE,200C0228,extended,A6240270
+patch=1,EE,201CF260,extended,0C030088
+
+[Max HP (In-Battle)]
+patch=1,EE,2011E1C0,extended,2410270F
+
+[Infinite Gold]
+patch=1,EE,1029D3B0,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,2029D3B0,extended,000F423F
+
+[Infinite SP]
+patch=1,EE,1029D3BC,extended,0000270F
+
+[Rookie]
+patch=1,EE,0029D3B9,extended,00000001
+
+[Apprentice]
+patch=1,EE,0029D3B9,extended,00000002
+
+[Expert]
+patch=1,EE,0029D3B9,extended,00000003
+
+[Veteran]
+patch=1,EE,0029D3B9,extended,00000004
+
+[Master]
+patch=1,EE,0029D3B9,extended,00000005
+
+[Hero]
+patch=1,EE,0029D3B9,extended,00000006
+
+[General]
+patch=1,EE,0029D3B9,extended,00000007
+
+[Legend]
+patch=1,EE,0029D3B9,extended,00000008
+
+[Arc]
+patch=1,EE,0029D3B9,extended,00000009
+
+[Max SP]
+patch=1,EE,1029D3D4,extended,000003E8
+
+[Rookie]
+patch=1,EE,0029D3D1,extended,00000001
+
+[Apprentice]
+patch=1,EE,0029D3D1,extended,00000002
+
+[Expert]
+patch=1,EE,0029D3D1,extended,00000003
+
+[Veteran]
+patch=1,EE,0029D3D1,extended,00000004
+
+[Master]
+patch=1,EE,0029D3D1,extended,00000005
+
+[Hero]
+patch=1,EE,0029D3D1,extended,00000006
+
+[General]
+patch=1,EE,0029D3D1,extended,00000007
+
+[Legend]
+patch=1,EE,0029D3D1,extended,00000008
+
+[Arc]
+patch=1,EE,0029D3D1,extended,00000009
+
+[Max SP]
+patch=1,EE,1029D3EC,extended,000003E8
+
+[Rookie]
+patch=1,EE,0029D3E9,extended,00000001
+
+[Apprentice]
+patch=1,EE,0029D3E9,extended,00000002
+
+[Expert]
+patch=1,EE,0029D3E9,extended,00000003
+
+[Veteran]
+patch=1,EE,0029D3E9,extended,00000004
+
+[Master]
+patch=1,EE,0029D3E9,extended,00000005
+
+[Hero]
+patch=1,EE,0029D3E9,extended,00000006
+
+[General]
+patch=1,EE,0029D3E9,extended,00000007
+
+[Legend]
+patch=1,EE,0029D3E9,extended,00000008
+
+[Arc]
+patch=1,EE,0029D3E9,extended,00000009
+
+[Max SP]
+patch=1,EE,1029D404,extended,000003E8
+
+[Rookie]
+patch=1,EE,0029D401,extended,00000001
+
+[Apprentice]
+patch=1,EE,0029D401,extended,00000002
+
+[Expert]
+patch=1,EE,0029D401,extended,00000003
+
+[Veteran]
+patch=1,EE,0029D401,extended,00000004
+
+[Master]
+patch=1,EE,0029D401,extended,00000005
+
+[Hero]
+patch=1,EE,0029D401,extended,00000006
+
+[General]
+patch=1,EE,0029D401,extended,00000007
+
+[Legend]
+patch=1,EE,0029D401,extended,00000008
+
+[Arc]
+patch=1,EE,0029D401,extended,00000009
+
+[Max SP]
+patch=1,EE,1029D41C,extended,000003E8
+
+[Rookie]
+patch=1,EE,0029D419,extended,00000001
+
+[Apprentice]
+patch=1,EE,0029D419,extended,00000002
+
+[Expert]
+patch=1,EE,0029D419,extended,00000003
+
+[Veteran]
+patch=1,EE,0029D419,extended,00000004
+
+[Master]
+patch=1,EE,0029D419,extended,00000005
+
+[Hero]
+patch=1,EE,0029D419,extended,00000006
+
+[General]
+patch=1,EE,0029D419,extended,00000007
+
+[Legend]
+patch=1,EE,0029D419,extended,00000008
+
+[Arc]
+patch=1,EE,0029D419,extended,00000009
+
+[Max SP]
+patch=1,EE,1029D434,extended,000003E8
+
+[Rookie]
+patch=1,EE,0029D431,extended,00000001
+
+[Apprentice]
+patch=1,EE,0029D431,extended,00000002
+
+[Expert]
+patch=1,EE,0029D431,extended,00000003
+
+[Veteran]
+patch=1,EE,0029D431,extended,00000004
+
+[Master]
+patch=1,EE,0029D431,extended,00000005
+
+[Hero]
+patch=1,EE,0029D431,extended,00000006
+
+[General]
+patch=1,EE,0029D431,extended,00000007
+
+[Legend]
+patch=1,EE,0029D431,extended,00000008
+
+[Arc]
+patch=1,EE,0029D431,extended,00000009
+
+[Kharg]
+patch=1,EE,0029D486,extended,000000E3
+
+[Maru]
+patch=1,EE,0029D487,extended,000000E3
+
+[Paulette]
+patch=1,EE,0029D488,extended,000000E3
+
+[Ganz]
+patch=1,EE,0029D489,extended,000000E3
+
+[Tatjana]
+patch=1,EE,0029D48B,extended,000000E3
+
+[Darc]
+patch=1,EE,0029D48C,extended,000000E3
+
+[Delma]
+patch=1,EE,0029D48D,extended,000000E3
+
+[Volk]
+patch=1,EE,0029D48F,extended,000000E3
+
+[Bebedora]
+patch=1,EE,0029D490,extended,000000E3
+
+[Camellia]
+patch=1,EE,0029D491,extended,000000E3
+
+[Diekbeck]
+patch=1,EE,0029D492,extended,000000E3
+
+[Choco]
+patch=1,EE,0029D493,extended,000000E3
+
+[Lilia]
+patch=1,EE,0029D494,extended,000000E3
+
+[Arc]
+patch=1,EE,0029D499,extended,000000E3
+
+[Tosh]
+patch=1,EE,0029D49A,extended,000000E3
+
+[Cheryl]
+patch=1,EE,0029D49B,extended,000000E3
+
+[Kukuru]
+patch=1,EE,0029D49C,extended,000000E3
+
+[Alec]
+patch=1,EE,0029D49D,extended,000000E3
+
+[Elc]
+patch=1,EE,0029D49E,extended,000000E3
+
+[Lutz]
+patch=1,EE,0029D49F,extended,000000E3
+
+[Shu]
+patch=1,EE,0029D4A1,extended,000000E3
+
+[Leeza]
+patch=1,EE,0029D4A2,extended,000000E3
+
+[Theo]
+patch=1,EE,0029D4A4,extended,000000E3
+
+[Iga]
+patch=1,EE,0029D4A5,extended,000000E3
+
+[All Character Display Cards]
+patch=1,EE,1029D486,extended,0000E3E3
+patch=1,EE,4029D488,extended,00070001
+patch=1,EE,E3E3E3E3,extended,00000000
+patch=1,EE,1029D4A4,extended,0000E3E3
+
+[Windblade Shot]
+patch=1,EE,0029D4A6,extended,000000E3
+
+[Shuffle Shot]
+patch=1,EE,0029D4A7,extended,000000E3
+
+[Heat Cyclone]
+patch=1,EE,0029D4A8,extended,000000E3
+
+[Gigant Bazooka]
+patch=1,EE,0029D4A9,extended,000000E3
+
+[Mirage Field]
+patch=1,EE,0029D4AA,extended,000000E3
+
+[Pyron Summons]
+patch=1,EE,0029D4AB,extended,000000E3
+
+[Crimson Slash]
+patch=1,EE,0029D4AC,extended,000000E3
+
+[Ice Smasher]
+patch=1,EE,0029D4AD,extended,000000E3
+
+[Bloody Thorn]
+patch=1,EE,0029D4AE,extended,000000E3
+
+[Mind Control]
+patch=1,EE,0029D4AF,extended,000000E3
+
+[Diek Missile]
+patch=1,EE,0029D4B0,extended,000000E3
+
+[Vanichoo]
+patch=1,EE,0029D4B1,extended,000000E3
+
+[Total Healing]
+patch=1,EE,0029D4B2,extended,000000E3
+
+[Divine Judgment]
+patch=1,EE,0029D4B3,extended,000000E3
+
+[Sakura Slash]
+patch=1,EE,0029D4B4,extended,000000E3
+
+[Lamda Punishment]
+patch=1,EE,0029D4B5,extended,000000E3
+
+[Heat Wall]
+patch=1,EE,0029D4B6,extended,000000E3
+
+[Ravish]
+patch=1,EE,0029D4B7,extended,000000E3
+
+[Mortal Spray]
+patch=1,EE,0029D4B8,extended,000000E3
+
+[Impulse Bomb]
+patch=1,EE,0029D4B9,extended,000000E3
+
+[Blade Rain]
+patch=1,EE,0029D4BA,extended,000000E3
+
+[Napalm Frenzy]
+patch=1,EE,0029D4BB,extended,000000E3
+
+[Cross Javelin]
+patch=1,EE,0029D4BC,extended,000000E3
+
+[Lilia Spiral]
+patch=1,EE,0029D4BD,extended,000000E3
+
+[Lancer Spirit]
+patch=1,EE,0029D4BE,extended,000000E3
+
+[Earth Spirit]
+patch=1,EE,0029D4BF,extended,000000E3
+
+[Cragh Spirit]
+patch=1,EE,0029D4C0,extended,000000E3
+
+[Flaming Arrow]
+patch=1,EE,0029D4C1,extended,000000E3
+
+[Flaming Arrow II]
+patch=1,EE,0029D4C2,extended,000000E3
+
+[Big Bang]
+patch=1,EE,0029D4C3,extended,000000E3
+
+[Big Bang II]
+patch=1,EE,0029D4C4,extended,000000E3
+
+[Water Bubble]
+patch=1,EE,0029D4C5,extended,000000E3
+
+[Water Bubble II]
+patch=1,EE,0029D4C6,extended,000000E3
+
+[Diamond Dust]
+patch=1,EE,0029D4C7,extended,000000E3
+
+[Diamond Dust II]
+patch=1,EE,0029D4C8,extended,000000E3
+
+[Wind Slash]
+patch=1,EE,0029D4C9,extended,000000E3
+
+[Wind Slash II]
+patch=1,EE,0029D4CA,extended,000000E3
+
+[Tornado]
+patch=1,EE,0029D4CB,extended,000000E3
+
+[Tornado II]
+patch=1,EE,0029D4CC,extended,000000E3
+
+[Golem Hand]
+patch=1,EE,0029D4CD,extended,000000E3
+
+[Golem Hand II]
+patch=1,EE,0029D4CE,extended,000000E3
+
+[Meteor Fall]
+patch=1,EE,0029D4CF,extended,000000E3
+
+[Meteor Fall II]
+patch=1,EE,0029D4D0,extended,000000E3
+
+[Rising Blast]
+patch=1,EE,0029D4D1,extended,000000E3
+
+[Rising Blast II]
+patch=1,EE,0029D4D2,extended,000000E3
+
+[Thunder Storm]
+patch=1,EE,0029D4D3,extended,000000E3
+
+[Thunder Storm II]
+patch=1,EE,0029D4D4,extended,000000E3
+
+[Divide]
+patch=1,EE,0029D4D5,extended,000000E3
+
+[Divide II]
+patch=1,EE,0029D4D6,extended,000000E3
+
+[Dark Sphere]
+patch=1,EE,0029D4D7,extended,000000E3
+
+[Dark Sphere II]
+patch=1,EE,0029D4D8,extended,000000E3
+
+[Cure]
+patch=1,EE,0029D4D9,extended,000000E3
+
+[Cure II]
+patch=1,EE,0029D4DA,extended,000000E3
+
+[Cure III]
+patch=1,EE,0029D4DB,extended,000000E3
+
+[Healing Rain]
+patch=1,EE,0029D4DC,extended,000000E3
+
+[Healing Rain II]
+patch=1,EE,0029D4DD,extended,000000E3
+
+[Healing Rain III]
+patch=1,EE,0029D4DE,extended,000000E3
+
+[Strike Power]
+patch=1,EE,0029D4DF,extended,000000E3
+
+[Protection]
+patch=1,EE,0029D4E0,extended,000000E3
+
+[Stone]
+patch=1,EE,0029D4E1,extended,000000E3
+
+[Transparent Stone]
+patch=1,EE,0029D4E2,extended,000000E3
+
+[Polished Stone]
+patch=1,EE,0029D4E3,extended,000000E3
+
+[Mysterious Ore]
+patch=1,EE,0029D4E4,extended,000000E3
+
+[Small Stone Sack]
+patch=1,EE,0029D4E5,extended,000000E3
+
+[Iron Ball]
+patch=1,EE,0029D4E6,extended,000000E3
+
+[Light Metal]
+patch=1,EE,0029D4E7,extended,000000E3
+
+[Hard Metal]
+patch=1,EE,0029D4E8,extended,000000E3
+
+[Throwing-Knife]
+patch=1,EE,0029D4E9,extended,000000E3
+
+[Bent Throwing-Knife]
+patch=1,EE,0029D4EA,extended,000000E3
+
+[Numbling Ball]
+patch=1,EE,0029D4EB,extended,000000E3
+
+[Oil Orb]
+patch=1,EE,0029D4EC,extended,000000E3
+
+[Gunpowder Orb]
+patch=1,EE,0029D4ED,extended,000000E3
+
+[Hand-Grenade]
+patch=1,EE,0029D4EE,extended,000000E3
+
+[Dilz Bomb]
+patch=1,EE,0029D4EF,extended,000000E3
+
+[Ointment]
+patch=1,EE,0029D4F0,extended,000000E3
+
+[Empty Bottle]
+patch=1,EE,0029D4F1,extended,000000E3
+
+[Firebomb]
+patch=1,EE,0029D4F2,extended,000000E3
+
+[Alraune Seed]
+patch=1,EE,0029D4F3,extended,000000E3
+
+[Time-Bomb]
+patch=1,EE,0029D4F4,extended,000000E3
+
+[Poison Bomb]
+patch=1,EE,0029D4F5,extended,000000E3
+
+[Paralyzing Bomb]
+patch=1,EE,0029D4F6,extended,000000E3
+
+[Slow Bomb]
+patch=1,EE,0029D4F7,extended,000000E3
+
+[Lusah Cane]
+patch=1,EE,0029D4F8,extended,000000E3
+
+[Paralyzer]
+patch=1,EE,0029D4F9,extended,000000E3
+
+[Shockwaver]
+patch=1,EE,0029D4FA,extended,000000E3
+
+[Steel Trap]
+patch=1,EE,0029D4FB,extended,000000E3
+
+[Vilmer's Unit]
+patch=1,EE,0029D4FC,extended,000000E3
+
+[Healing Rod]
+patch=1,EE,0029D4FD,extended,000000E3
+
+[Spray Cannon]
+patch=1,EE,0029D4FE,extended,000000E3
+
+[Flamethrower]
+patch=1,EE,0029D4FF,extended,000000E3
+
+[Discharge Machine]
+patch=1,EE,0029D500,extended,000000E3
+
+[All Ability Display Cards]
+patch=1,EE,1029D4A6,extended,0000E3E3
+patch=1,EE,4029D4A8,extended,00160001
+patch=1,EE,E3E3E3E3,extended,00000000
+patch=1,EE,0029D500,extended,000000E3
+
+[Wristband]
+patch=1,EE,0029D501,extended,000000E3
+
+[Leather Wristband]
+patch=1,EE,0029D502,extended,000000E3
+
+[Power Wristband]
+patch=1,EE,0029D503,extended,000000E3
+
+[Muscle Wristband]
+patch=1,EE,0029D504,extended,000000E3
+
+[Battle Armband]
+patch=1,EE,0029D505,extended,000000E3
+
+[Iron Fang]
+patch=1,EE,0029D506,extended,000000E3
+
+[Monster's Fang]
+patch=1,EE,0029D507,extended,000000E3
+
+[Devil Armband]
+patch=1,EE,0029D508,extended,000000E3
+
+[Borken Beads]
+patch=1,EE,0029D509,extended,000000E3
+
+[Crystal Beads]
+patch=1,EE,0029D50A,extended,000000E3
+
+[Jade Beads]
+patch=1,EE,0029D50B,extended,000000E3
+
+[Bewitching Beads]
+patch=1,EE,0029D50C,extended,000000E3
+
+[Cairngorm Beads]
+patch=1,EE,0029D50D,extended,000000E3
+
+[Silver Rosary]
+patch=1,EE,0029D50E,extended,000000E3
+
+[Shining Cross]
+patch=1,EE,0029D50F,extended,000000E3
+
+[Gold Rosary]
+patch=1,EE,0029D510,extended,000000E3
+
+[Battle Magazine]
+patch=1,EE,0029D511,extended,000000E3
+
+[Fighting Travelog]
+patch=1,EE,0029D512,extended,000000E3
+
+[Survival Guide]
+patch=1,EE,0029D513,extended,000000E3
+
+[Weaponry Manual]
+patch=1,EE,0029D514,extended,000000E3
+
+[Complete Combat]
+patch=1,EE,0029D515,extended,000000E3
+
+[Tome Of Five Rings]
+patch=1,EE,0029D516,extended,000000E3
+
+[War God Tome]
+patch=1,EE,0029D517,extended,000000E3
+
+[Manual Of Warfare]
+patch=1,EE,0029D518,extended,000000E3
+
+[Exorcist's Shaft]
+patch=1,EE,0029D519,extended,000000E3
+
+[Nidellia Hilt]
+patch=1,EE,0029D51A,extended,000000E3
+
+[Dilz Unit]
+patch=1,EE,0029D51B,extended,000000E3
+
+[Chief's Claw]
+patch=1,EE,0029D51C,extended,000000E3
+
+[Popular Stuffed Toy]
+patch=1,EE,0029D51D,extended,000000E3
+
+[Diek's Pencil]
+patch=1,EE,0029D51E,extended,000000E3
+
+[Tactical Glove]
+patch=1,EE,0029D51F,extended,000000E3
+
+[Brain Hilt]
+patch=1,EE,0029D520,extended,000000E3
+
+[Sol's Shaft]
+patch=1,EE,0029D521,extended,000000E3
+
+[High Priest's Crest]
+patch=1,EE,0029D522,extended,000000E3
+
+[Cloth Outfit]
+patch=1,EE,0029D523,extended,000000E3
+
+[Combat Gear]
+patch=1,EE,0029D524,extended,000000E3
+
+[Leather Vest]
+patch=1,EE,0029D525,extended,000000E3
+
+[Chain-Mail Vest]
+patch=1,EE,0029D526,extended,000000E3
+
+[Elven Chain-Mail]
+patch=1,EE,0029D527,extended,000000E3
+
+[Ranger Suit]
+patch=1,EE,0029D528,extended,000000E3
+
+[Ring Armor]
+patch=1,EE,0029D529,extended,000000E3
+
+[Heavy Armor]
+patch=1,EE,0029D52A,extended,000000E3
+
+[Battle Armor]
+patch=1,EE,0029D52B,extended,000000E3
+
+[Rune Armor]
+patch=1,EE,0029D52C,extended,000000E3
+
+[Dragon Guard]
+patch=1,EE,0029D52D,extended,000000E3
+
+[Lizard Guard]
+patch=1,EE,0029D52E,extended,000000E3
+
+[Traveler's Robe]
+patch=1,EE,0029D52F,extended,000000E3
+
+[Sayer's Robe]
+patch=1,EE,0029D530,extended,000000E3
+
+[Magic Robe]
+patch=1,EE,0029D531,extended,000000E3
+
+[Hermit's Robe]
+patch=1,EE,0029D532,extended,000000E3
+
+[Magic Shoes]
+patch=1,EE,0029D533,extended,000000E3
+
+[Blade Boots]
+patch=1,EE,0029D534,extended,000000E3
+
+[Craft Gloves]
+patch=1,EE,0029D535,extended,000000E3
+
+[Leather Gloves]
+patch=1,EE,0029D536,extended,000000E3
+
+[Ninja Hand Guard]
+patch=1,EE,0029D537,extended,000000E3
+
+[Gauntlet]
+patch=1,EE,0029D538,extended,000000E3
+
+[Crause Shield]
+patch=1,EE,0029D539,extended,000000E3
+
+[Dubach Mask]
+patch=1,EE,0029D53A,extended,000000E3
+
+[Mercenary's Boots]
+patch=1,EE,0029D53B,extended,000000E3
+
+[Dragon Bone Armor]
+patch=1,EE,0029D53C,extended,000000E3
+
+[Pianta Petal]
+patch=1,EE,0029D53D,extended,000000E3
+
+[Lupine Cloak]
+patch=1,EE,0029D53E,extended,000000E3
+
+[Largo's Belt]
+patch=1,EE,0029D53F,extended,000000E3
+
+[Smelian Armor]
+patch=1,EE,0029D540,extended,000000E3
+
+[Monji's Coat]
+patch=1,EE,0029D541,extended,000000E3
+
+[Holy Mother's Sash]
+patch=1,EE,0029D542,extended,000000E3
+
+[Pyulka Jacket]
+patch=1,EE,0029D543,extended,000000E3
+
+[Sasha's Tool Bag]
+patch=1,EE,0029D544,extended,000000E3
+
+[Scar Of The Elite]
+patch=1,EE,0029D545,extended,000000E3
+
+[Horn Outfit]
+patch=1,EE,0029D546,extended,000000E3
+
+[Fiona's Outfit]
+patch=1,EE,0029D547,extended,000000E3
+
+[Power Stone]
+patch=1,EE,0029D548,extended,000000E3
+
+[Magical Stone]
+patch=1,EE,0029D549,extended,000000E3
+
+[Techno Stone]
+patch=1,EE,0029D54A,extended,000000E3
+
+[Armor Stone]
+patch=1,EE,0029D54B,extended,000000E3
+
+[Ancient Ring]
+patch=1,EE,0029D54C,extended,000000E3
+
+[Whirlwind Bandana]
+patch=1,EE,0029D54D,extended,000000E3
+
+[Warrior Charm]
+patch=1,EE,0029D54E,extended,000000E3
+
+[Shell]
+patch=1,EE,0029D54F,extended,000000E3
+
+[Toy Ring]
+patch=1,EE,0029D550,extended,000000E3
+
+[Clivis' Book]
+patch=1,EE,0029D551,extended,000000E3
+
+[Dragon's Scales]
+patch=1,EE,0029D552,extended,000000E3
+
+[Violet Racer]
+patch=1,EE,0029D553,extended,000000E3
+
+[Lizard Hide]
+patch=1,EE,0029D554,extended,000000E3
+
+[Universal Cloth]
+patch=1,EE,0029D555,extended,000000E3
+
+[Engineer's Manual]
+patch=1,EE,0029D556,extended,000000E3
+
+[Cloth Belt]
+patch=1,EE,0029D557,extended,000000E3
+
+[Magical Belt]
+patch=1,EE,0029D558,extended,000000E3
+
+[Ninja Scarf]
+patch=1,EE,0029D559,extended,000000E3
+
+[Antidote Ring]
+patch=1,EE,0029D55A,extended,000000E3
+
+[Balance Ring]
+patch=1,EE,0029D55B,extended,000000E3
+
+[Lark Coat Of Arms]
+patch=1,EE,0029D55C,extended,000000E3
+
+[Healing Card]
+patch=1,EE,0029D55D,extended,000000E3
+
+[Healing Pygmy]
+patch=1,EE,0029D55E,extended,000000E3
+
+[Blue Earrings]
+patch=1,EE,0029D55F,extended,000000E3
+
+[Red Earrings]
+patch=1,EE,0029D560,extended,000000E3
+
+[Yellow Earrings]
+patch=1,EE,0029D561,extended,000000E3
+
+[Romantic Stone]
+patch=1,EE,0029D562,extended,000000E3
+
+[Romantic Drop]
+patch=1,EE,0029D563,extended,000000E3
+
+[Angel Statuette]
+patch=1,EE,0029D564,extended,000000E3
+
+[Goddess Statuette]
+patch=1,EE,0029D565,extended,000000E3
+
+[King Statuette]
+patch=1,EE,0029D566,extended,000000E3
+
+[Nidellia Crest]
+patch=1,EE,0029D567,extended,000000E3
+
+[Lamda Crest]
+patch=1,EE,0029D568,extended,000000E3
+
+[Sol's Crest]
+patch=1,EE,0029D569,extended,000000E3
+
+[Sword Secrets]
+patch=1,EE,0029D56A,extended,000000E3
+
+[Blade Secrets]
+patch=1,EE,0029D56B,extended,000000E3
+
+[Shooting Secrets]
+patch=1,EE,0029D56C,extended,000000E3
+
+[Machine Secrets]
+patch=1,EE,0029D56D,extended,000000E3
+
+[Physical Secrets]
+patch=1,EE,0029D56E,extended,000000E3
+
+[Illusion Secrets]
+patch=1,EE,0029D56F,extended,000000E3
+
+[Magic Secrets]
+patch=1,EE,0029D570,extended,000000E3
+
+[Cane Secrets]
+patch=1,EE,0029D571,extended,000000E3
+
+[Mystery Card]
+patch=1,EE,0029D572,extended,000000E3
+
+[All Parts Display Cards]
+patch=1,EE,0029D501,extended,000000E3
+patch=1,EE,1029D502,extended,0000E3E3
+patch=1,EE,4029D504,extended,001B0001
+patch=1,EE,E3E3E3E3,extended,00000000
+patch=1,EE,1029D570,extended,0000E3E3
+patch=1,EE,0029D572,extended,000000E3

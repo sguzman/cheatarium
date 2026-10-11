@@ -1,0 +1,32 @@
+gametitle=Scooby Doo-Night Of 100 Frights (SLUS-20349)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9010E274,extended,0C095CB2
+
+[Infinite Health]
+patch=1,EE,20174D5C,extended,00000000
+
+[Have Map]
+patch=1,EE,20358258,extended,00000001
+
+[Press {SELECT} For Max Health]
+patch=1,EE,D03626C2,extended,00000001
+patch=1,EE,103632E8,extended,00000005
+
+[Max Scooby Snacks]
+patch=1,EE,203635B4,extended,0001869F
+
+[Have All Abilities]
+patch=1,EE,203635B8,extended,FFFFFFFF
+
+[Have All Monster Tokens]
+patch=1,EE,203635BC,extended,FFFFFFFF
+
+[Infinite Bubble Gum]
+patch=1,EE,203635C0,extended,00000005
+
+[Infinite Soap Suds]
+patch=1,EE,203635C4,extended,00000005

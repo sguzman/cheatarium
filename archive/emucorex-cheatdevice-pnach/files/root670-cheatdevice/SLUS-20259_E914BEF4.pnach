@@ -1,0 +1,34 @@
+gametitle=Wizardry-Tale Of The Forsaken Land (SLUS-20259)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,004107EF
+
+[Infinite Money]
+patch=1,EE,104896C0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,204896C0,extended,05F5E0FF
+
+[Makes The Game Think You've Never Saved]
+patch=1,EE,105C185A,extended,00000000
+
+[Have All Weapons For Sale]
+patch=1,EE,00445A99,extended,00000009
+patch=1,EE,10445A9A,extended,00000909
+patch=1,EE,40445A9C,extended,00190001
+patch=1,EE,09090909,extended,00000000
+patch=1,EE,00445B00,extended,00000009
+
+[Have All Armor For Sale]
+patch=1,EE,00445B11,extended,00000009
+patch=1,EE,10445B12,extended,00000909
+patch=1,EE,40445B14,extended,00130001
+patch=1,EE,09090909,extended,00000000
+
+[Have All Accessories For Sale]
+patch=1,EE,40445B70,extended,00060001
+patch=1,EE,09090909,extended,00000000
+patch=1,EE,00445B88,extended,00000009

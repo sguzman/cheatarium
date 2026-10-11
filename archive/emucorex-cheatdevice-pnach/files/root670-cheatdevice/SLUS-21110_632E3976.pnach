@@ -1,0 +1,75 @@
+gametitle=Pirates Of The Caribbean-The Legend Of Jack Sparrow (SLUS-21110)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903A8FEC,extended,0C0E6985
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,8C830010
+patch=1,EE,200C0224,extended,2402006E
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,A462000E
+patch=1,EE,201AE184,extended,0C030088
+
+[Infinite Item Usage]
+patch=1,EE,2023EDBC,extended,00000000
+
+[Infinite Lives]
+patch=1,EE,20261A14,extended,00000000
+
+[Extra Lives]
+patch=1,EE,10261A08,extended,00000001
+
+[Max Infinite Lives]
+patch=1,EE,005A1931,extended,00000007
+
+[Buying Upgrades Doesnt Decrease Gold]
+patch=1,EE,20113BEC,extended,00000000
+
+[Buying Upgrades Increases Gold]
+patch=1,EE,20113BE8,extended,00821021
+
+[Have All Map Pieces]
+patch=1,EE,40675B60,extended,00080001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Infinite Specials]
+patch=1,EE,205A18D0,extended,000A000A
+
+[Infinite Gold]
+patch=1,EE,10675538,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,20675538,extended,05F5E0FF
+
+[Max All Upgrades]
+patch=1,EE,40675C2C,extended,00050001
+patch=1,EE,04040404,extended,00000000
+
+[Infinite Specials]
+patch=1,EE,205A1970,extended,000A000A
+
+[Infinite Gold]
+patch=1,EE,1067553C,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,2067553C,extended,05F5E0FF
+
+[Max All Upgrades]
+patch=1,EE,40675C4C,extended,00050001
+patch=1,EE,04040404,extended,00000000
+
+[Infinite Specials]
+patch=1,EE,205A1A10,extended,000A000A
+
+[Infinite Gold]
+patch=1,EE,10675540,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,20675540,extended,05F5E0FF
+
+[Max All Upgrades]
+patch=1,EE,40675C6C,extended,00050001
+patch=1,EE,04040404,extended,00000000

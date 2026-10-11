@@ -1,0 +1,167 @@
+gametitle=Silent Hill 4-The Room (SLUS-20873)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9010F5B0,extended,0C043D14
+
+[Infinite Health]
+patch=1,EE,2045A548,extended,447A0000
+
+[Max Health]
+patch=1,EE,20624390,extended,447A0000
+
+[1-Hit Kills]
+patch=1,EE,2045A54C,extended,50000000
+
+[Enemy Attacks Do No Damage]
+patch=1,EE,2045A550,extended,50000000
+
+[Never Tired]
+patch=1,EE,2045A554,extended,00000000
+
+[Invincible From Some Attacks]
+patch=1,EE,2045A564,extended,42C80000
+
+[Weapon Always Charged Max]
+patch=1,EE,2045A76C,extended,42C80000
+
+[Invincible From Normal Enemy Attacks]
+patch=1,EE,201E96D0,extended,03E00008
+patch=1,EE,201E96D4,extended,00000000
+
+[Invincible From Ghosts Poking Arms Through You]
+patch=1,EE,201EA030,extended,03E00008
+patch=1,EE,201EA034,extended,00000000
+
+[Invincible From Misc. Attacks]
+patch=1,EE,101DC62A,extended,00001000
+
+[Infinite Ammo]
+patch=1,EE,201B1984,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,201B1984,extended,240203E7
+
+[Extra Ammo]
+patch=1,EE,101B1980,extended,00000001
+
+[Never Reload]
+patch=1,EE,202D1B38,extended,00000000
+
+[Saves Recorded Never Increases]
+patch=1,EE,202BDED4,extended,00000000
+
+[No Saves Recorded]
+patch=1,EE,21EBC798,extended,00000000
+
+[P1 Press {L1}+Up For Pistol]
+patch=1,EE,E002FBEF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,001003E7
+
+[P1 Press {L1}+Right For Richard's Revolver]
+patch=1,EE,E002FBDF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,001103E7
+
+[P1 Press {L1}+Down For Stun Gun]
+patch=1,EE,E002FBBF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,003203E7
+
+[P1 Press {L1}+Left For Bug Spray]
+patch=1,EE,E002FB7F,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,003303E7
+
+[P1 Press {L1}+Up For Chainsaw]
+patch=1,EE,E002FEEF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,003503E7
+
+[P1 Press {L1}+Right For Paper-Cutting Knife]
+patch=1,EE,E002FEDF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,001303E7
+
+[P1 Press {L1}+Down For Aluminum Bat]
+patch=1,EE,E002FEBF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,001403E7
+
+[P1 Press {L1}+Left For 9-Iron]
+patch=1,EE,E002FE7F,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,002503E7
+
+[P1 Press {R1}+Up For Spade]
+patch=1,EE,E002F7EF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,002F03E7
+
+[P1 Press {R1}+Right For Rusty Axe]
+patch=1,EE,E002F7DF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,003003E7
+
+[P1 Press {R1}+Down For Pickaxe]
+patch=1,EE,E002F7BF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,003103E7
+
+[P1 Press {R1}+Left For Torch]
+patch=1,EE,E002F77F,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,003403E7
+
+[P1 Press {R2}+Up For Submachine Gun]
+patch=1,EE,E002FDEF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,008103E7
+
+[P1 Press {R2}+Right For Nightstick]
+patch=1,EE,E002FDDF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,008203E7
+
+[P1 Press {R2}+Down For Riding Crop]
+patch=1,EE,E002FDBF,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,008303E7
+
+[P1 Press {R2}+Up For Chain]
+patch=1,EE,E002FD7F,extended,01F12EC2
+patch=1,EE,205D1030,extended,3F800000
+patch=1,EE,205D1034,extended,008403E7
+
+[Slot 1]
+patch=1,EE,105D1034,extended,000003E7
+
+[Slot 2]
+patch=1,EE,105D103C,extended,000003E7
+
+[Slot 3]
+patch=1,EE,105D1044,extended,000003E7
+
+[Slot 4]
+patch=1,EE,105D104C,extended,000003E7
+
+[Slot 5]
+patch=1,EE,105D1054,extended,000003E7
+
+[Slot 6]
+patch=1,EE,105D105C,extended,000003E7
+
+[Slot 7]
+patch=1,EE,105D1064,extended,000003E7
+
+[Slot 8]
+patch=1,EE,105D106C,extended,000003E7
+
+[Slot 9]
+patch=1,EE,105D1074,extended,000003E7
+
+[Slot 10]
+patch=1,EE,105D107C,extended,000003E7

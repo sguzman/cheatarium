@@ -1,0 +1,92 @@
+gametitle=American Chopper 2-Full Throttle (SLUS-21288)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011E8C0,extended,00832021
+patch=1,EE,200C022C,extended,24010001
+patch=1,EE,200C0298,extended,0807AAC6
+patch=1,EE,200C029C,extended,00000000
+patch=1,EE,201EAB08,extended,08030088
+
+[Idiot AI-Cars]
+patch=1,EE,20214E10,extended,03E00008
+patch=1,EE,20214E14,extended,00000000
+
+[Max Fabrication Points Available]
+patch=1,EE,200C0220,extended,3C0105F5
+patch=1,EE,200C0224,extended,3421E0FF
+patch=1,EE,200C0228,extended,AE210030
+
+[Paul Sr-Race 1]
+patch=1,EE,200C0230,extended,A2210014
+
+[Paul Sr-Race 2]
+patch=1,EE,200C0234,extended,A2210015
+
+[Paul Sr-Race 3]
+patch=1,EE,200C0238,extended,A2210016
+
+[Paul Sr-Race 4]
+patch=1,EE,200C023C,extended,A2210017
+
+[Paul Sr-Race 5]
+patch=1,EE,200C0240,extended,A2210018
+
+[Paul Sr-Race 6]
+patch=1,EE,200C0244,extended,A2210019
+
+[Paul Jr-Race 1]
+patch=1,EE,200C0248,extended,A221001B
+
+[Paul Jr-Race 2]
+patch=1,EE,200C024C,extended,A221001C
+
+[Paul Jr-Race 3]
+patch=1,EE,200C0250,extended,A221001D
+
+[Paul Jr-Race 4]
+patch=1,EE,200C0254,extended,A221001E
+
+[Paul Jr-Race 5]
+patch=1,EE,200C0258,extended,A221001F
+
+[Paul Jr-Race 6]
+patch=1,EE,200C025C,extended,A2210020
+
+[Mikey-Race 1]
+patch=1,EE,200C0260,extended,A2210022
+
+[Mikey-Race 2]
+patch=1,EE,200C0264,extended,A2210023
+
+[Mikey-Race 3]
+patch=1,EE,200C0268,extended,A2210024
+
+[Mikey-Race 4]
+patch=1,EE,200C026C,extended,A2210025
+
+[Mikey-Race 5]
+patch=1,EE,200C0270,extended,A2210026
+
+[Mikey-Race 6]
+patch=1,EE,200C0274,extended,A2210027
+
+[Vinnie-Race 1]
+patch=1,EE,200C0278,extended,A2210029
+
+[Vinnie-Race 2]
+patch=1,EE,200C027C,extended,A221002A
+
+[Vinnie-Race 3]
+patch=1,EE,200C0280,extended,A221002B
+
+[Vinnie-Race 4]
+patch=1,EE,200C0284,extended,A221002C
+
+[Vinnie-Race 5]
+patch=1,EE,200C0288,extended,A221002D
+
+[Vinnie-Race 6]
+patch=1,EE,200C028C,extended,A221002E

@@ -1,0 +1,1801 @@
+gametitle=X-Men-Legends II-Rise Of Apocalypse (SLUS-21138)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90119CA0,extended,00832021
+
+[Infinite Health]
+patch=1,EE,20470F54,extended,E4800278
+
+[Infinite Energy]
+patch=1,EE,2038E53C,extended,E6180284
+
+[Infinite All Health Packs]
+patch=1,EE,20629CD8,extended,00000000
+
+[Max Infinite Health Packs]
+patch=1,EE,0110EF89,extended,00000063
+
+[Max Infinite Energy Packs]
+patch=1,EE,0110EFC5,extended,00000063
+
+[Max All Health Packs (Upon Usage)]
+patch=1,EE,20629CA8,extended,24050063
+
+[Infinite Tech Bits]
+patch=1,EE,111112C0,extended,0000FFFF
+
+[Max Tech Bits]
+patch=1,EE,211112C0,extended,05F5E0FF
+
+[Level Up Once For Level 99]
+patch=1,EE,204D8D88,extended,24020063
+
+[Gain 20 Levels Per Level Up]
+patch=1,EE,104D8D8C,extended,00000014
+
+[Gain 10 Levels Per Level Up]
+patch=1,EE,104D8D8C,extended,0000000A
+
+[Gain 5 Levels Per Level Up]
+patch=1,EE,104D8D8C,extended,00000005
+
+[Gain 4 Levels Per Level Up]
+patch=1,EE,104D8D8C,extended,00000004
+
+[Gain 3 Levels Per Level Up]
+patch=1,EE,104D8D8C,extended,00000003
+
+[Gain 2 Levels Per Level Up]
+patch=1,EE,104D8D8C,extended,00000002
+
+[Gain 50000 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,3411C350
+
+[Gain 40000 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,34119C40
+
+[Gain 30000 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,34117530
+
+[Gain 20000 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,34114E20
+
+[Gain 10000 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,34112710
+
+[Gain 5000 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,34111388
+
+[Gain 1000 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,341103E8
+
+[Gain 500 Exp Per Kill]
+patch=1,EE,204D8ADC,extended,341101F4
+
+[Using Stat Points Doesnt Decrease It]
+patch=1,EE,1063E7BC,extended,00000000
+
+[Using Stat Points Increases It]
+patch=1,EE,1063E7BC,extended,00000001
+
+[Using Skill Points Doesnt Decrease It]
+patch=1,EE,1063EF4C,extended,00000000
+
+[Using Skill Points Increases It]
+patch=1,EE,1063EF4C,extended,00000001
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D0D90F02,extended,0000FBFE
+patch=1,EE,20145A1C,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D0D90F02,extended,0000FEFE
+patch=1,EE,20145A1C,extended,E6140620
+
+[Unlock All Characters (Danger Room)]
+patch=1,EE,40A20000,extended,00090001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Max Strike]
+patch=1,EE,010FA33C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FA33C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FA33D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FA33D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FA33E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FA33E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FA33F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FA33F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FA348,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FA34A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FA34C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FA36A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FA37A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FA38A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FA3AA,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FA3BA,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FA3CA,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FA3DA,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FA3EA,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FA3FA,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FA40A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FA41A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FA42A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FA43A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FA44A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FA45A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FA46A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FA91C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FA91C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FA91D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FA91D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FA91E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FA91E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FA91F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FA91F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FA928,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FA92A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FA92C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FA94A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FA95A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FA96A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FA98A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FA99A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FA9AA,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FA9BA,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FA9CA,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FA9DA,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FA9EA,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FA9FA,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FAA0A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FAA1A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FAA2A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FAA3A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FAA4A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FAEFC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FAEFC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FAEFD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FAEFD,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FAEFE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FAEFE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FAEFF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FAEFF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FAF08,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FAF0A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FAF0C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FAF2A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FAF3A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FAF4A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FAF6A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FAF7A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FAF8A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FAF9A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FAFAA,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FAFBA,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FAFCA,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FAFDA,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FAFEA,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FAFFA,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FB00A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FB01A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FB02A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FB4DC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FB4DC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FB4DD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FB4DD,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FB4DE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FB4DE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FB4DF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FB4DF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FB4E8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FB4EA,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FB4EC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FB50A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FB51A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FB52A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FB54A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FB55A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FB56A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FB57A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FB58A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FB59A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FB5AA,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FB5BA,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FB5CA,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FB5DA,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FB5EA,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FB5FA,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FB60A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FBABC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FBABC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FBABD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FBABD,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FBABE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FBABE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FBABF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FBABF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FBAC8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FBACA,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FBACC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FBAEA,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FBAFA,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FBB0A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FBB2A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FBB3A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FBB4A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FBB5A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FBB6A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FBB7A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FBB8A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FBB9A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FBBAA,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FBBBA,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FBBCA,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FBBDA,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FBBEA,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FC09C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FC09C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FC09D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FC09D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FC09E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FC09E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FC09F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FC09F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FC0A8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FC0AA,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FC0AC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FC0CA,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FC0DA,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FC0EA,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FC10A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FC11A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FC12A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FC13A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FC14A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FC15A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FC16A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FC17A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FC18A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FC19A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FC1AA,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FC1BA,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FC1CA,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FC67C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FC67C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FC67D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FC67D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FC67E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FC67E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FC67F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FC67F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FC688,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FC68A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FC68C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FC6AA,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FC6BA,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FC6CA,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FC6EA,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FC6FA,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FC70A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FC71A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FC72A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FC73A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FC74A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FC75A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FC76A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FC77A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FC78A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FC79A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FC7AA,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FCC5C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FCC5C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FCC5D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FCC5D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FCC5E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FCC5E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FCC5F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FCC5F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FCC68,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FCC6A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FCC6C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FCC8A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FCC9A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FCCAA,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FCCCA,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FCCDA,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FCCEA,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FCCFA,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FCD0A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FCD1A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FCD2A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FCD3A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FCD4A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FCD5A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FCD6A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FCD7A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FCD8A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FD23C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FD23C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FD23D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FD23D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FD23E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FD23E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FD23F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FD23F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FD248,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FD24A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FD24C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FD26A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FD27A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FD28A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FD2AA,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FD2BA,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FD2CA,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FD2DA,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FD2EA,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FD2FA,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FD30A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FD31A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FD32A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FD33A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FD34A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FD35A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FD36A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FD81C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FD81C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FD81D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FD81D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FD81E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FD81E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FD81F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FD81F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FD828,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FD82A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FD82C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FD84A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FD85A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FD86A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FD88A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FD89A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FD8AA,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FD8BA,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FD8CA,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FD8DA,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FD8EA,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FD8FA,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FD90A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FD91A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FD92A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FD93A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FD94A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FDDFC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FDDFC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FDDFD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FDDFD,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FDDFE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FDDFE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FDDFF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FDDFF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FDE08,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FDE0A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FDE0C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FDE2A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FDE3A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FDE4A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FDE6A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FDE7A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FDE8A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FDE9A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FDEAA,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FDEBA,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FDECA,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FDEDA,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FDEEA,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FDEFA,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FDF0A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FDF1A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FDF2A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FE3DC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FE3DC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FE3DD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FE3DD,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FE3DE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FE3DE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FE3DF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FE3DF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FE3E8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FE3EA,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FE3EC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FE40A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FE41A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FE42A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FE44A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FE45A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FE46A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FE47A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FE48A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FE49A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FE4AA,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FE4BA,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FE4CA,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FE4DA,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FE4EA,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FE4FA,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FE50A,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FE9BC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FE9BC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FE9BD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FE9BD,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FE9BE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FE9BE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FE9BF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FE9BF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FE9C8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FE9CA,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FE9CC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FE9EA,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FE9FA,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FEA0A,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FEA2A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FEA3A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FEA4A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FEA5A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FEA6A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FEA7A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FEA8A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FEA9A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FEAAA,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FEABA,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FEACA,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FEADA,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FEAEA,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FEF9C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FEF9C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FEF9D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FEF9D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FEF9E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FEF9E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FEF9F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FEF9F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FEFA8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FEFAA,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FEFAC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FEFCA,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FEFDA,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FEFEA,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FF00A,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FF01A,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FF02A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FF03A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FF04A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FF05A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FF06A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FF07A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FF08A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FF09A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FF0AA,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FF0BA,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FF0CA,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FF57C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FF57C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FF57D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FF57D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FF57E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FF57E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FF57F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FF57F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FF588,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FF58A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FF58C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FF5AA,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FF5BA,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FF5CA,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FF5EA,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FF5FA,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FF60A,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FF61A,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FF62A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FF63A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FF64A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FF65A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FF66A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FF67A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FF68A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FF69A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FF6AA,extended,00001400
+
+[Max Strike]
+patch=1,EE,010FFB5C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,010FFB5C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,010FFB5D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,010FFB5D,extended,000000FF
+
+[Max Body]
+patch=1,EE,010FFB5E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,010FFB5E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,010FFB5F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,010FFB5F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,110FFB68,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,110FFB6A,extended,000003E7
+
+[Level 99]
+patch=1,EE,010FFB6C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,110FFB8A,extended,00001400
+
+[Slot 2]
+patch=1,EE,110FFB9A,extended,00001400
+
+[Slot 3]
+patch=1,EE,110FFBAA,extended,00001400
+
+[Slot 4]
+patch=1,EE,110FFBCA,extended,00001400
+
+[Slot 5]
+patch=1,EE,110FFBDA,extended,00001400
+
+[Slot 6]
+patch=1,EE,110FFBEA,extended,00001400
+
+[Slot 7]
+patch=1,EE,110FFBFA,extended,00001400
+
+[Slot 8]
+patch=1,EE,110FFC0A,extended,00001400
+
+[Slot 9]
+patch=1,EE,110FFC1A,extended,00001400
+
+[Slot 10]
+patch=1,EE,110FFC2A,extended,00001400
+
+[Slot 11]
+patch=1,EE,110FFC3A,extended,00001400
+
+[Slot 12]
+patch=1,EE,110FFC4A,extended,00001400
+
+[Slot 13]
+patch=1,EE,110FFC5A,extended,00001400
+
+[Slot 14]
+patch=1,EE,110FFC6A,extended,00001400
+
+[Slot 15]
+patch=1,EE,110FFC7A,extended,00001400
+
+[Slot 16]
+patch=1,EE,110FFC8A,extended,00001400
+
+[Max Strike]
+patch=1,EE,0110013C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,0110013C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,0110013D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,0110013D,extended,000000FF
+
+[Max Body]
+patch=1,EE,0110013E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,0110013E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,0110013F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,0110013F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,11100148,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,1110014A,extended,000003E7
+
+[Level 99]
+patch=1,EE,0110014C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,1110016A,extended,00001400
+
+[Slot 2]
+patch=1,EE,1110017A,extended,00001400
+
+[Slot 3]
+patch=1,EE,1110018A,extended,00001400
+
+[Slot 4]
+patch=1,EE,111001AA,extended,00001400
+
+[Slot 5]
+patch=1,EE,111001BA,extended,00001400
+
+[Slot 6]
+patch=1,EE,111001CA,extended,00001400
+
+[Slot 7]
+patch=1,EE,111001DA,extended,00001400
+
+[Slot 8]
+patch=1,EE,111001EA,extended,00001400
+
+[Slot 9]
+patch=1,EE,111001FA,extended,00001400
+
+[Slot 10]
+patch=1,EE,1110020A,extended,00001400
+
+[Slot 11]
+patch=1,EE,1110021A,extended,00001400
+
+[Slot 12]
+patch=1,EE,1110022A,extended,00001400
+
+[Slot 13]
+patch=1,EE,1110023A,extended,00001400
+
+[Slot 14]
+patch=1,EE,1110024A,extended,00001400
+
+[Slot 15]
+patch=1,EE,1110025A,extended,00001400
+
+[Slot 16]
+patch=1,EE,1110026A,extended,00001400
+
+[Max Strike]
+patch=1,EE,0110071C,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,0110071C,extended,000000FF
+
+[Max Speed]
+patch=1,EE,0110071D,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,0110071D,extended,000000FF
+
+[Max Body]
+patch=1,EE,0110071E,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,0110071E,extended,000000FF
+
+[Max Focus]
+patch=1,EE,0110071F,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,0110071F,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,11100728,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,1110072A,extended,000003E7
+
+[Level 99]
+patch=1,EE,0110072C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,1110074A,extended,00001400
+
+[Slot 2]
+patch=1,EE,1110075A,extended,00001400
+
+[Slot 3]
+patch=1,EE,1110076A,extended,00001400
+
+[Slot 4]
+patch=1,EE,1110078A,extended,00001400
+
+[Slot 5]
+patch=1,EE,1110079A,extended,00001400
+
+[Slot 6]
+patch=1,EE,111007AA,extended,00001400
+
+[Slot 7]
+patch=1,EE,111007BA,extended,00001400
+
+[Slot 8]
+patch=1,EE,111007CA,extended,00001400
+
+[Slot 9]
+patch=1,EE,111007DA,extended,00001400
+
+[Slot 10]
+patch=1,EE,111007EA,extended,00001400
+
+[Slot 11]
+patch=1,EE,111007FA,extended,00001400
+
+[Slot 12]
+patch=1,EE,1110080A,extended,00001400
+
+[Slot 13]
+patch=1,EE,1110081A,extended,00001400
+
+[Slot 14]
+patch=1,EE,1110082A,extended,00001400
+
+[Slot 15]
+patch=1,EE,1110083A,extended,00001400
+
+[Slot 16]
+patch=1,EE,1110084A,extended,00001400
+
+[Max Strike]
+patch=1,EE,01100CFC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,01100CFC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,01100CFD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,01100CFD,extended,000000FF
+
+[Max Body]
+patch=1,EE,01100CFE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,01100CFE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,01100CFF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,01100CFF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,11100D08,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,11100D0A,extended,000003E7
+
+[Level 99]
+patch=1,EE,01100D0C,extended,000003E7
+
+[Slot 1]
+patch=1,EE,11100D2A,extended,00001400
+
+[Slot 2]
+patch=1,EE,11100D3A,extended,00001400
+
+[Slot 3]
+patch=1,EE,11100D4A,extended,00001400
+
+[Slot 4]
+patch=1,EE,11100D6A,extended,00001400
+
+[Slot 5]
+patch=1,EE,11100D7A,extended,00001400
+
+[Slot 6]
+patch=1,EE,11100D8A,extended,00001400
+
+[Slot 7]
+patch=1,EE,11100D9A,extended,00001400
+
+[Slot 8]
+patch=1,EE,11100DAA,extended,00001400
+
+[Slot 9]
+patch=1,EE,11100DBA,extended,00001400
+
+[Slot 10]
+patch=1,EE,11100DCA,extended,00001400
+
+[Slot 11]
+patch=1,EE,11100DDA,extended,00001400
+
+[Slot 12]
+patch=1,EE,11100DEA,extended,00001400
+
+[Slot 13]
+patch=1,EE,11100DFA,extended,00001400
+
+[Slot 14]
+patch=1,EE,11100E0A,extended,00001400
+
+[Slot 15]
+patch=1,EE,11100E1A,extended,00001400
+
+[Slot 16]
+patch=1,EE,11100E2A,extended,00001400
+
+[Max Strike]
+patch=1,EE,011012DC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,011012DC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,011012DD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,011012DD,extended,000000FF
+
+[Max Body]
+patch=1,EE,011012DE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,011012DE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,011012DF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,011012DF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,111012E8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,111012EA,extended,000003E7
+
+[Level 99]
+patch=1,EE,011012EC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,1110130A,extended,00001400
+
+[Slot 2]
+patch=1,EE,1110131A,extended,00001400
+
+[Slot 3]
+patch=1,EE,1110132A,extended,00001400
+
+[Slot 4]
+patch=1,EE,1110134A,extended,00001400
+
+[Slot 5]
+patch=1,EE,1110135A,extended,00001400
+
+[Slot 6]
+patch=1,EE,1110136A,extended,00001400
+
+[Slot 7]
+patch=1,EE,1110137A,extended,00001400
+
+[Slot 8]
+patch=1,EE,1110138A,extended,00001400
+
+[Slot 9]
+patch=1,EE,1110139A,extended,00001400
+
+[Slot 10]
+patch=1,EE,111013AA,extended,00001400
+
+[Slot 11]
+patch=1,EE,111013BA,extended,00001400
+
+[Slot 12]
+patch=1,EE,111013CA,extended,00001400
+
+[Slot 13]
+patch=1,EE,111013DA,extended,00001400
+
+[Slot 14]
+patch=1,EE,111013EA,extended,00001400
+
+[Slot 15]
+patch=1,EE,111013FA,extended,00001400
+
+[Slot 16]
+patch=1,EE,1110140A,extended,00001400
+
+[Max Strike]
+patch=1,EE,011018BC,extended,00000063
+
+[Ultra Max Strike]
+patch=1,EE,011018BC,extended,000000FF
+
+[Max Speed]
+patch=1,EE,011018BD,extended,00000063
+
+[Ultra Max Speed]
+patch=1,EE,011018BD,extended,000000FF
+
+[Max Body]
+patch=1,EE,011018BE,extended,00000063
+
+[Ultra Max Body]
+patch=1,EE,011018BE,extended,000000FF
+
+[Max Focus]
+patch=1,EE,011018BF,extended,00000063
+
+[Ultra Max Focus]
+patch=1,EE,011018BF,extended,000000FF
+
+[Infinite Skill Points]
+patch=1,EE,111018C8,extended,000003E7
+
+[Infinite Stat Points]
+patch=1,EE,111018CA,extended,000003E7
+
+[Level 99]
+patch=1,EE,011018CC,extended,000003E7
+
+[Slot 1]
+patch=1,EE,111018EA,extended,00001400
+
+[Slot 2]
+patch=1,EE,111018FA,extended,00001400
+
+[Slot 3]
+patch=1,EE,1110190A,extended,00001400
+
+[Slot 4]
+patch=1,EE,1110192A,extended,00001400
+
+[Slot 5]
+patch=1,EE,1110193A,extended,00001400
+
+[Slot 6]
+patch=1,EE,1110194A,extended,00001400
+
+[Slot 7]
+patch=1,EE,1110195A,extended,00001400
+
+[Slot 8]
+patch=1,EE,1110196A,extended,00001400
+
+[Slot 9]
+patch=1,EE,1110197A,extended,00001400
+
+[Slot 10]
+patch=1,EE,1110198A,extended,00001400
+
+[Slot 11]
+patch=1,EE,1110199A,extended,00001400
+
+[Slot 12]
+patch=1,EE,111019AA,extended,00001400
+
+[Slot 13]
+patch=1,EE,111019BA,extended,00001400
+
+[Slot 14]
+patch=1,EE,111019CA,extended,00001400
+
+[Slot 15]
+patch=1,EE,111019DA,extended,00001400
+
+[Slot 16]
+patch=1,EE,111019EA,extended,00001400

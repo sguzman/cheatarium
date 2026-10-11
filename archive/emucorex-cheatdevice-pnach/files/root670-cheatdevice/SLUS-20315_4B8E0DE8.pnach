@@ -1,0 +1,129 @@
+gametitle=Spyro-Enter The Dragonfly (SLUS-20315)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00116937
+
+[Infinite Lives]
+patch=1,EE,2034BDEC,extended,00000063
+
+[Max Treasure]
+patch=1,EE,2034BE3C,extended,000003E7
+
+[Have All Powers]
+patch=1,EE,2034BF90,extended,FFFFFFFF
+
+[Access All Powers (Press {R1} To Change)]
+patch=1,EE,201C3E8C,extended,240700FF
+
+[Infinite Time (Timed Missions)]
+patch=1,EE,201BB610,extended,00000000
+patch=1,EE,201BB618,extended,00000000
+patch=1,EE,201BA748,extended,00000000
+
+[Dragonfly Dojo]
+patch=1,EE,0034C0DD,extended,00000001
+
+[Crop Circle Country]
+patch=1,EE,0034C0DE,extended,00000001
+
+[Luau Island]
+patch=1,EE,0034C0DF,extended,00000001
+
+[Cloud 9]
+patch=1,EE,0034C0E0,extended,00000001
+
+[Monkey Monastery]
+patch=1,EE,0034C0E1,extended,00000001
+
+[Honey Marsh]
+patch=1,EE,0034C0E2,extended,00000001
+
+[Theives Den]
+patch=1,EE,0034C0E3,extended,00000001
+
+[Jurassic Jungle]
+patch=1,EE,0034C0E4,extended,00000001
+
+[Dragon Realms]
+patch=1,EE,2034BDF4,extended,0000000A
+
+[Dragonfly Dojo]
+patch=1,EE,2034BDF8,extended,0000000A
+
+[Crop Circle Country]
+patch=1,EE,2034BDFC,extended,0000000A
+
+[Luau Island]
+patch=1,EE,2034BE00,extended,0000000A
+
+[Cloud 9]
+patch=1,EE,2034BE04,extended,0000000A
+
+[Monkey Monastery]
+patch=1,EE,2034BE08,extended,0000000A
+
+[Honey Marsh]
+patch=1,EE,2034BE0C,extended,0000000A
+
+[Theives Den]
+patch=1,EE,2034BE10,extended,0000000A
+
+[Jurassic Jungle]
+patch=1,EE,2034BE14,extended,0000000A
+
+[Dragon Realms]
+patch=1,EE,2034BE18,extended,00000320
+
+[Dragonfly Dojo]
+patch=1,EE,2034BE1C,extended,000002BC
+
+[Crop Circle Country]
+patch=1,EE,2034BE20,extended,00000320
+
+[Luau Island]
+patch=1,EE,2034BE24,extended,00000384
+
+[Cloud 9]
+patch=1,EE,2034BE28,extended,00000320
+
+[Monkey Monastery]
+patch=1,EE,2034BE2C,extended,00000384
+
+[Honey Marsh]
+patch=1,EE,2034BE30,extended,00000320
+
+[Theives Den]
+patch=1,EE,2034BE34,extended,000002BC
+
+[Jurassic Jungle]
+patch=1,EE,2034BE38,extended,00000258
+
+[Dragon Realms]
+patch=1,EE,2034BE88,extended,FFFFFFFF
+
+[Dragonfly Dojo]
+patch=1,EE,2034BEA8,extended,FFFFFFFF
+
+[Crop Circle Country]
+patch=1,EE,2034BEC8,extended,FFFFFFFF
+
+[Luau Island]
+patch=1,EE,2034BEE8,extended,FFFFFFFF
+
+[Cloud 9]
+patch=1,EE,2034BF08,extended,FFFFFFFF
+
+[Monkey Monastery]
+patch=1,EE,2034BF28,extended,FFFFFFFF
+
+[Honey Marsh]
+patch=1,EE,2034BF48,extended,FFFFFFFF
+
+[Theives Den]
+patch=1,EE,2034BF68,extended,FFFFFFFF
+
+[Jurassic Jungle]
+patch=1,EE,2034BF88,extended,FFFFFFFF

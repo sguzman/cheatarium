@@ -1,0 +1,307 @@
+gametitle=Disney's Treasure Planet (SCUS-97146)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,002AF697
+
+[Infinite Health]
+patch=1,EE,002DD3D0,extended,00000003
+
+[Max Mini Health]
+patch=1,EE,002DD3D2,extended,0000001E
+
+[Extra Mini Health]
+patch=1,EE,101AE1F0,extended,00000002
+
+[Drubloons Worth 2]
+patch=1,EE,101F5804,extended,00000002
+
+[Drubloons Worth 5]
+patch=1,EE,101F5804,extended,00000005
+
+[Drubloons Worth 10]
+patch=1,EE,101F5804,extended,0000000A
+
+[Drubloons Worth 50]
+patch=1,EE,101F5804,extended,00000032
+
+[Green Energies Worth 2]
+patch=1,EE,101F2D10,extended,00000002
+
+[Green Energies Worth 5]
+patch=1,EE,101F2D10,extended,00000005
+
+[Unlock All Levels]
+patch=1,EE,20145ACC,extended,24A20000
+
+[Infinite Time (Time Based Missions)]
+patch=1,EE,20168B60,extended,00000000
+
+[Hold X For Super Jump]
+patch=1,EE,D030B9C2,extended,0000BFFF
+patch=1,EE,20294F18,extended,3C01BB03
+patch=1,EE,D030B9C2,extended,0010BFFF
+patch=1,EE,20294F18,extended,3C01BC03
+
+[Hold X For Ultra Jump]
+patch=1,EE,D030B9C2,extended,0000BFFF
+patch=1,EE,20294F18,extended,3C01BA83
+patch=1,EE,D030B9C2,extended,0010BFFF
+patch=1,EE,20294F18,extended,3C01BC03
+
+[Clifftops-Beacon 1]
+patch=1,EE,202DB494,extended,00000004
+
+[Clifftops-Beacon 2]
+patch=1,EE,202DB498,extended,00000004
+
+[Clifftops-Beacon 3]
+patch=1,EE,202DB49C,extended,00000004
+
+[Clifftops-Beacon 4]
+patch=1,EE,202DB4A0,extended,00000004
+
+[Clifftops-Beacon 5]
+patch=1,EE,202DB4A4,extended,00000004
+
+[Ore Refinery-Beacon 1]
+patch=1,EE,202DB534,extended,00000004
+
+[Ore Refinery-Beacon 2]
+patch=1,EE,202DB538,extended,00000004
+
+[Ore Refinery-Beacon 3]
+patch=1,EE,202DB53C,extended,00000004
+
+[Ore Refinery-Beacon 4]
+patch=1,EE,202DB540,extended,00000004
+
+[Ore Refinery-Beacon 5]
+patch=1,EE,202DB544,extended,00000004
+
+[Hydro Dam-Beacon 1]
+patch=1,EE,202DB5D4,extended,00000004
+
+[Hydro Dam-Beacon 2]
+patch=1,EE,202DB5D8,extended,00000004
+
+[Hydro Dam-Beacon 3]
+patch=1,EE,202DB5DC,extended,00000004
+
+[Hydro Dam-Beacon 4]
+patch=1,EE,202DB5E0,extended,00000004
+
+[Hydro Dam-Beacon 5]
+patch=1,EE,202DB5E4,extended,00000004
+
+[Loading Tower-Beacon 1]
+patch=1,EE,202DB674,extended,00000004
+
+[Loading Tower-Beacon 2]
+patch=1,EE,202DB678,extended,00000004
+
+[Loading Tower-Beacon 3]
+patch=1,EE,202DB67C,extended,00000004
+
+[Loading Tower-Beacon 4]
+patch=1,EE,202DB680,extended,00000004
+
+[Loading Tower-Beacon 5]
+patch=1,EE,202DB684,extended,00000004
+
+[Dockside Race-Beacon 1]
+patch=1,EE,202DB714,extended,00000004
+
+[Dockside Race-Beacon 2]
+patch=1,EE,202DB718,extended,00000004
+
+[Dockside Race-Beacon 3]
+patch=1,EE,202DB71C,extended,00000004
+
+[Dockside Race-Beacon 4]
+patch=1,EE,202DB720,extended,00000004
+
+[Dockside Race-Beacon 5]
+patch=1,EE,202DB724,extended,00000004
+
+[Crescentia Nightside-Beacon 1]
+patch=1,EE,202DB7B4,extended,00000004
+
+[Crescentia Nightside-Beacon 2]
+patch=1,EE,202DB7B8,extended,00000004
+
+[Crescentia Nightside-Beacon 3]
+patch=1,EE,202DB7BC,extended,00000004
+
+[Crescentia Nightside-Beacon 4]
+patch=1,EE,202DB7C0,extended,00000004
+
+[Crescentia Nightside-Beacon 5]
+patch=1,EE,202DB7C4,extended,00000004
+
+[Ferry Port-Beacon 1]
+patch=1,EE,202DB854,extended,00000004
+
+[Ferry Port-Beacon 2]
+patch=1,EE,202DB858,extended,00000004
+
+[Ferry Port-Beacon 3]
+patch=1,EE,202DB85C,extended,00000004
+
+[Ferry Port-Beacon 4]
+patch=1,EE,202DB860,extended,00000004
+
+[Ferry Port-Beacon 5]
+patch=1,EE,202DB864,extended,00000004
+
+[Supernova-Beacon 1]
+patch=1,EE,202DB8F4,extended,00000004
+
+[Supernova-Beacon 2]
+patch=1,EE,202DB8F8,extended,00000004
+
+[Supernova-Beacon 3]
+patch=1,EE,202DB8FC,extended,00000004
+
+[Supernova-Beacon 4]
+patch=1,EE,202DB900,extended,00000004
+
+[Supernova-Beacon 5]
+patch=1,EE,202DB904,extended,00000004
+
+[Meteor Belt-Beacon 1]
+patch=1,EE,202DB994,extended,00000004
+
+[Meteor Belt-Beacon 2]
+patch=1,EE,202DB998,extended,00000004
+
+[Meteor Belt-Beacon 3]
+patch=1,EE,202DB99C,extended,00000004
+
+[Meteor Belt-Beacon 4]
+patch=1,EE,202DB9A0,extended,00000004
+
+[Meteor Belt-Beacon 5]
+patch=1,EE,202DB9A4,extended,00000004
+
+[Arcturian Traider-Beacon 1]
+patch=1,EE,202DBA34,extended,00000004
+
+[Arcturian Traider-Beacon 2]
+patch=1,EE,202DBA38,extended,00000004
+
+[Arcturian Traider-Beacon 3]
+patch=1,EE,202DBA3C,extended,00000004
+
+[Arcturian Traider-Beacon 4]
+patch=1,EE,202DBA40,extended,00000004
+
+[Arcturian Traider-Beacon 5]
+patch=1,EE,202DBA44,extended,00000004
+
+[Jungle Floor-Beacon 1]
+patch=1,EE,202DBB74,extended,00000004
+
+[Jungle Floor-Beacon 2]
+patch=1,EE,202DBB78,extended,00000004
+
+[Jungle Floor-Beacon 3]
+patch=1,EE,202DBB7C,extended,00000004
+
+[Jungle Floor-Beacon 4]
+patch=1,EE,202DBB80,extended,00000004
+
+[Jungle Floor-Beacon 5]
+patch=1,EE,202DBB84,extended,00000004
+
+[Jungle Race-Beacon 1]
+patch=1,EE,202DBC14,extended,00000004
+
+[Jungle Race-Beacon 2]
+patch=1,EE,202DBC18,extended,00000004
+
+[Jungle Race-Beacon 3]
+patch=1,EE,202DBC1C,extended,00000004
+
+[Jungle Race-Beacon 4]
+patch=1,EE,202DBC20,extended,00000004
+
+[Jungle Race-Beacon 5]
+patch=1,EE,202DBC24,extended,00000004
+
+[Helium Swamp-Beacon 1]
+patch=1,EE,202DBCB4,extended,00000004
+
+[Helium Swamp-Beacon 2]
+patch=1,EE,202DBCB8,extended,00000004
+
+[Helium Swamp-Beacon 3]
+patch=1,EE,202DBCBC,extended,00000004
+
+[Helium Swamp-Beacon 4]
+patch=1,EE,202DBCC0,extended,00000004
+
+[Helium Swamp-Beacon 5]
+patch=1,EE,202DBCC4,extended,00000004
+
+[Gateway To Below-Beacon 1]
+patch=1,EE,202DBD54,extended,00000004
+
+[Gateway To Below-Beacon 2]
+patch=1,EE,202DBD58,extended,00000004
+
+[Gateway To Below-Beacon 3]
+patch=1,EE,202DBD5C,extended,00000004
+
+[Gateway To Below-Beacon 4]
+patch=1,EE,202DBD60,extended,00000004
+
+[Gateway To Below-Beacon 5]
+patch=1,EE,202DBD64,extended,00000004
+
+[Rapid Descent-Beacon 1]
+patch=1,EE,202DBDF4,extended,00000004
+
+[Rapid Descent-Beacon 2]
+patch=1,EE,202DBDF8,extended,00000004
+
+[Rapid Descent-Beacon 3]
+patch=1,EE,202DBDFC,extended,00000004
+
+[Rapid Descent-Beacon 4]
+patch=1,EE,202DBE00,extended,00000004
+
+[Rapid Descent-Beacon 5]
+patch=1,EE,202DBE04,extended,00000004
+
+[Centroid-Beacon 1]
+patch=1,EE,202DBE94,extended,00000004
+
+[Centroid-Beacon 2]
+patch=1,EE,202DBE98,extended,00000004
+
+[Centroid-Beacon 3]
+patch=1,EE,202DBE9C,extended,00000004
+
+[Centroid-Beacon 4]
+patch=1,EE,202DBEA0,extended,00000004
+
+[Centroid-Beacon 5]
+patch=1,EE,202DBEA4,extended,00000004
+
+[Ancient Machines-Beacon 1]
+patch=1,EE,202DBF34,extended,00000004
+
+[Ancient Machines-Beacon 2]
+patch=1,EE,202DBF38,extended,00000004
+
+[Ancient Machines-Beacon 3]
+patch=1,EE,202DBF3C,extended,00000004
+
+[Ancient Machines-Beacon 4]
+patch=1,EE,202DBF40,extended,00000004
+
+[Ancient Machines-Beacon 5]
+patch=1,EE,202DBF44,extended,00000004

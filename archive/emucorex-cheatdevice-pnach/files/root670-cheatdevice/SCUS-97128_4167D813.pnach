@@ -1,0 +1,19 @@
+gametitle=Drakan-The Ancients' Gates (SCUS-97128)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904B068C,extended,0C13383B
+
+[Infinite Health]
+patch=1,EE,204FC954,extended,739AA945
+
+[Max Money]
+patch=1,EE,204FC960,extended,E953327E
+
+[Infinite Magic]
+patch=1,EE,204FC964,extended,739AA945
+
+[Max Unspent Skill Points]
+patch=1,EE,204FC974,extended,739AC845

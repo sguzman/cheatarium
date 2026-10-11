@@ -1,0 +1,249 @@
+gametitle=Gallop Racer 2004 (SLUS-21031)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,002E5C57
+
+[Infinite Total Points]
+patch=1,EE,10B47D30,extended,0000FFFF
+
+[Max Total Points]
+patch=1,EE,20B47D30,extended,05F5E0FF
+
+[Infinite Gold]
+patch=1,EE,10B47D38,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,20B47D38,extended,05F5E0FF
+
+[Never Banned]
+patch=1,EE,00B47D2E,extended,00000000
+
+[Max Start EXP]
+patch=1,EE,20B47D4C,extended,05F5E0FF
+
+[Max Feel EXP]
+patch=1,EE,20B47D50,extended,05F5E0FF
+
+[Max Pos EXP]
+patch=1,EE,20B47D54,extended,05F5E0FF
+
+[Max Spurt EXP]
+patch=1,EE,20B47D58,extended,05F5E0FF
+
+[Max Consis EXP]
+patch=1,EE,20B47D5C,extended,05F5E0FF
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D0342F00,extended,0000FBFE
+patch=1,EE,2021D1C0,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D0342F00,extended,0000FEFE
+patch=1,EE,2021D1C0,extended,AF82C418
+
+[Get A Head Start]
+patch=1,EE,200C0220,extended,8C226E70
+patch=1,EE,200C0224,extended,3C034440
+patch=1,EE,200C0228,extended,0043102B
+patch=1,EE,200C022C,extended,54400001
+patch=1,EE,200C0230,extended,AC236E70
+patch=1,EE,200C0234,extended,0808E117
+patch=1,EE,200C0238,extended,C4206E70
+patch=1,EE,20238458,extended,08030088
+
+[Get A Larger Head Start]
+patch=1,EE,200C0220,extended,8C226E70
+patch=1,EE,200C0224,extended,3C034480
+patch=1,EE,200C0228,extended,0043102B
+patch=1,EE,200C022C,extended,54400001
+patch=1,EE,200C0230,extended,AC236E70
+patch=1,EE,200C0234,extended,0808E117
+patch=1,EE,200C0238,extended,C4206E70
+patch=1,EE,20238458,extended,08030088
+
+[Infinite Whip Usage]
+patch=1,EE,201C0B60,extended,AE20000C
+patch=1,EE,201C0B84,extended,AE200010
+patch=1,EE,201C0BAC,extended,AE200014
+
+[P1 Press {L1}+Up For Horse 1 At Start]
+patch=1,EE,D0342F00,extended,0000FBEF
+patch=1,EE,20386E70,extended,00000000
+
+[P1 Press {L1}+Right For Horse 2 At Start]
+patch=1,EE,D0342F00,extended,0000FBDF
+patch=1,EE,20386F60,extended,00000000
+
+[P1 Press {L1}+Down For Horse 3 At Start]
+patch=1,EE,D0342F00,extended,0000FBBF
+patch=1,EE,20387050,extended,00000000
+
+[P1 Press {L1}+Left For Horse 4 At Start]
+patch=1,EE,D0342F00,extended,0000FB7F
+patch=1,EE,20387140,extended,00000000
+
+[P1 Press {L2}+Up For Horse 5 At Start]
+patch=1,EE,D0342F00,extended,0000FEEF
+patch=1,EE,20387230,extended,00000000
+
+[P1 Press {L2}+Right For Horse 6 At Start]
+patch=1,EE,D0342F00,extended,0000FEDF
+patch=1,EE,20387320,extended,00000000
+
+[P1 Press {L2}+Down For Horse 7 At Start]
+patch=1,EE,D0342F00,extended,0000FEBF
+patch=1,EE,20387410,extended,00000000
+
+[P1 Press {L2}+Left For Horse 8 At Start]
+patch=1,EE,D0342F00,extended,0000FE7F
+patch=1,EE,20387500,extended,00000000
+
+[P1 Press {R1}+Up For Horse 9 At Start]
+patch=1,EE,D0342F00,extended,0000F7EF
+patch=1,EE,203875F0,extended,00000000
+
+[P1 Press {R1}+Right For Horse 10 At Start]
+patch=1,EE,D0342F00,extended,0000F7DF
+patch=1,EE,203876E0,extended,00000000
+
+[P1 Press {R1}+Down For Horse 11 At Start]
+patch=1,EE,D0342F00,extended,0000F7BF
+patch=1,EE,203877D0,extended,00000000
+
+[P1 Press {R1}+Left For Horse 12 At Start]
+patch=1,EE,D0342F00,extended,0000F77F
+patch=1,EE,203878C0,extended,00000000
+
+[P1 Press {R2}+Up For Horse 13 At Start]
+patch=1,EE,D0342F00,extended,0000FDEF
+patch=1,EE,203879B0,extended,00000000
+
+[Reading Your Lap Time]
+patch=1,EE,00432D70,extended,00000001
+
+[Judging Place]
+patch=1,EE,00432D71,extended,00000001
+
+[Front]
+patch=1,EE,00432D72,extended,00000001
+
+[Preceder]
+patch=1,EE,00432D73,extended,00000001
+
+[Middle]
+patch=1,EE,00432D74,extended,00000001
+
+[Closer]
+patch=1,EE,00432D75,extended,00000001
+
+[Eval Points]
+patch=1,EE,00432D76,extended,00000001
+
+[Eval Details]
+patch=1,EE,00432D77,extended,00000001
+
+[Traversing]
+patch=1,EE,00432D78,extended,00000001
+
+[Corners And Straights]
+patch=1,EE,00432D79,extended,00000001
+
+[Slope]
+patch=1,EE,00432D7A,extended,00000001
+
+[Rough]
+patch=1,EE,00432D7B,extended,00000001
+
+[Quick Pass]
+patch=1,EE,00432D7C,extended,00000001
+
+[Recovering Over-Eager Horse]
+patch=1,EE,00432D7D,extended,00000001
+
+[Recovering Wild Horse]
+patch=1,EE,00432D7E,extended,00000001
+
+[Head-To_Head]
+patch=1,EE,00432D7F,extended,00000001
+
+[All Lessions]
+patch=1,EE,40432D70,extended,00040001
+patch=1,EE,01010101,extended,00000000
+
+[Year 1]
+patch=1,EE,104125C0,extended,00000000
+
+[Year 2]
+patch=1,EE,104125C0,extended,00000001
+
+[Year 3]
+patch=1,EE,104125C0,extended,00000002
+
+[Year 4]
+patch=1,EE,104125C0,extended,00000003
+
+[Year 5]
+patch=1,EE,104125C0,extended,00000004
+
+[Year 10]
+patch=1,EE,104125C0,extended,00000009
+
+[Year 20]
+patch=1,EE,104125C0,extended,00000013
+
+[Year 50]
+patch=1,EE,104125C0,extended,00000031
+
+[Year 100]
+patch=1,EE,104125C0,extended,00000063
+
+[Month 1]
+patch=1,EE,004125C2,extended,00000000
+
+[Month 2]
+patch=1,EE,004125C2,extended,00000001
+
+[Month 3]
+patch=1,EE,004125C2,extended,00000002
+
+[Month 4]
+patch=1,EE,004125C2,extended,00000003
+
+[Month 5]
+patch=1,EE,004125C2,extended,00000004
+
+[Month 6]
+patch=1,EE,004125C2,extended,00000005
+
+[Month 7]
+patch=1,EE,004125C2,extended,00000006
+
+[Month 8]
+patch=1,EE,004125C2,extended,00000007
+
+[Month 9]
+patch=1,EE,004125C2,extended,00000008
+
+[Month 10]
+patch=1,EE,004125C2,extended,00000009
+
+[Month 11]
+patch=1,EE,004125C2,extended,0000000A
+
+[Month 12]
+patch=1,EE,004125C2,extended,0000000B
+
+[Week 1]
+patch=1,EE,004125C3,extended,00000000
+
+[Week 2]
+patch=1,EE,004125C3,extended,00000001
+
+[Week 3]
+patch=1,EE,004125C3,extended,00000002
+
+[Week 4]
+patch=1,EE,004125C3,extended,00000003

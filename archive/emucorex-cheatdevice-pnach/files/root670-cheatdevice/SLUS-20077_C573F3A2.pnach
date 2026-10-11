@@ -1,0 +1,16 @@
+gametitle=Disney's Donald Duck Goin' Quackers (SLUS-20077)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0200008,extended,00232403
+
+[Infinite Time]
+patch=1,EE,105C2D6C,extended,00009F9F
+
+[Max Cogs]
+patch=1,EE,1087F070,extended,00000064
+
+[Infinite Lives]
+patch=1,EE,1087F074,extended,00000005

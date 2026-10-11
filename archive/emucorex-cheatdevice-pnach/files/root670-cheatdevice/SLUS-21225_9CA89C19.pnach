@@ -1,0 +1,26 @@
+gametitle=Bratz-Rock Angelz (SLUS-21225)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90399084,extended,0C0E9B3D
+
+[Pause For Max Money]
+patch=1,EE,200C0220,extended,3C0205F5
+patch=1,EE,200C0224,extended,3442E0FF
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AC822488
+patch=1,EE,2020CE60,extended,0C030088
+
+[Buying Items Doesnt Decrease Money]
+patch=1,EE,201BEBB8,extended,24050000
+
+[Buying Items Increases Money]
+patch=1,EE,201BEBB8,extended,26250000
+
+[Pause For Max Tokens]
+patch=1,EE,200C0230,extended,2402270F
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AC82248C
+patch=1,EE,2020CE28,extended,0C03008C

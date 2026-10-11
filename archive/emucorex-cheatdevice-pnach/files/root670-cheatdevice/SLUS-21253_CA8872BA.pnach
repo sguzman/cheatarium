@@ -1,0 +1,46 @@
+gametitle=Ty The Tasmanian Tiger 3-Night Of The Quinkan (SLUS-21253)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901FB230,extended,0C081DCA
+
+[Max Health]
+patch=1,EE,20696534,extended,000003E7
+
+[Infinite Health]
+patch=1,EE,2069653C,extended,000003E7
+
+[Always Low Game Time]
+patch=1,EE,2076E4B4,extended,00000000
+
+[Infinite Opals]
+patch=1,EE,1076E4B8,extended,0000FFFF
+
+[Max Opals]
+patch=1,EE,2076E4B8,extended,05F5E0FF
+
+[Have All Gooboo Berries]
+patch=1,EE,2076E5F0,extended,0000000A
+
+[Have All Bilbies Saved]
+patch=1,EE,2076E604,extended,00000028
+
+[Have All Picture Frames]
+patch=1,EE,2076E618,extended,00000078
+
+[Have All Kromium Orbs]
+patch=1,EE,2076E62C,extended,0000001E
+
+[Have All Times Came Across Gooboo Steve]
+patch=1,EE,2076E640,extended,00000006
+
+[Have All Missions Completed]
+patch=1,EE,202C65A0,extended,24020001
+patch=1,EE,202C65A8,extended,AC8201B8
+
+[Have All Frill Spies/Rangs]
+patch=1,EE,20239DF0,extended,24020001
+patch=1,EE,20239DF4,extended,AC820044
+patch=1,EE,20239DF8,extended,AC82004C

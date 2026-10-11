@@ -1,0 +1,49 @@
+gametitle=Scooby Doo-Mystery Mayhem (SLUS-20701)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Never Scared]
+patch=1,EE,208CB144,extended,3F800000
+
+[Infinite Book Power]
+patch=1,EE,208CB148,extended,43340000
+
+[Ghost Type 1]
+patch=1,EE,208CB158,extended,00000063
+
+[Ghost Type 2]
+patch=1,EE,208CB160,extended,00000063
+
+[Ghost Type 3]
+patch=1,EE,208CB168,extended,00000063
+
+[Ghost Type 4]
+patch=1,EE,208CB170,extended,00000063
+
+[Have Complete Sandwich]
+patch=1,EE,708CB1F0,extended,0000001F
+
+[Clue #1]
+patch=1,EE,708CB1F0,extended,00000020
+
+[Clue #2]
+patch=1,EE,708CB1F0,extended,00000040
+
+[Clue #3]
+patch=1,EE,708CB1F0,extended,00000080
+
+[Clue #4]
+patch=1,EE,708CB1F1,extended,00000001
+
+[Clue #5]
+patch=1,EE,708CB1F1,extended,00000002
+
+[Unlock All Mini-Games]
+patch=1,EE,208CB1E4,extended,FFFFFFFF
+
+[Have All Gallery Images/Character Models]
+patch=1,EE,208CB204,extended,FFFFFFFF
+
+[Have All Play Rerun/Movies]
+patch=1,EE,208CB20C,extended,FFFFFFFF

@@ -1,0 +1,207 @@
+gametitle=Bujingai-The Forsaken City (SLUS-20895)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901133B4,extended,0C0685BE
+
+[Infinite Health Gauge]
+patch=1,EE,20141D40,extended,C4A26E04
+patch=1,EE,20141D48,extended,E4A26E00
+
+[Max Health Gauge]
+patch=1,EE,20141D58,extended,3C01007D
+patch=1,EE,20141D5C,extended,ACA16E04
+
+[Infinite Spell Gauge]
+patch=1,EE,2013B4A4,extended,8CA26E0C
+patch=1,EE,2013B4AC,extended,ACA26E08
+
+[Max Spell Gauge]
+patch=1,EE,2013B5D0,extended,3C01007D
+patch=1,EE,2013B5E4,extended,AC816E0C
+
+[Infinite Defense Gauge]
+patch=1,EE,2013B430,extended,8C826E14
+patch=1,EE,2013B434,extended,AC826E10
+
+[Max Defense Gauge]
+patch=1,EE,2024C9B0,extended,2403000A
+patch=1,EE,2024C9B8,extended,AC836E14
+patch=1,EE,2024C9BC,extended,00000000
+
+[Ryuugatou Level]
+patch=1,EE,2021A2E4,extended,24010BB8
+patch=1,EE,2021A2E8,extended,A4416E46
+patch=1,EE,2021A2EC,extended,00000000
+
+[Tenreiken Level]
+patch=1,EE,2021A334,extended,24010BB8
+patch=1,EE,2021A338,extended,A4416E48
+patch=1,EE,2021A33C,extended,00000000
+
+[Health Level]
+patch=1,EE,2021A384,extended,24010BB8
+patch=1,EE,2021A388,extended,A4416E4A
+patch=1,EE,2021A38C,extended,00000000
+
+[Spell Level]
+patch=1,EE,2021A3D4,extended,24010BB8
+patch=1,EE,2021A3D8,extended,A4416E4C
+patch=1,EE,2021A3DC,extended,00000000
+
+[Defense Level]
+patch=1,EE,2021A424,extended,24010BB8
+patch=1,EE,2021A428,extended,A4416E4E
+patch=1,EE,2021A42C,extended,00000000
+
+[Always Low Play Time]
+patch=1,EE,205B0910,extended,00000000
+
+[Always No Continues Used]
+patch=1,EE,205C6FE4,extended,00000000
+
+[Quick Orbs Gain]
+patch=1,EE,005C6FE8,extended,000000FF
+
+[Max Orbs]
+patch=1,EE,205C6FE8,extended,000F423F
+
+[Always No Returns To The Temple]
+patch=1,EE,205C74F4,extended,00000000
+
+[Enable Special Options]
+patch=1,EE,004AB854,extended,000000FF
+
+[Movie Viewer-Motion Capture]
+patch=1,EE,005C6449,extended,00000001
+
+[Movie Viewer-Gackt Interview]
+patch=1,EE,005C644A,extended,00000001
+
+[Movie Viewer-Press Conference]
+patch=1,EE,005C644B,extended,00000001
+
+[Movie Viewer-Koichi Yamadera Interview]
+patch=1,EE,005C644C,extended,00000001
+
+[Movie Viewer-Maaya Sakamoto Interview]
+patch=1,EE,005C644D,extended,00000001
+
+[Movie Viewer-Norio Wakamoto Interview]
+patch=1,EE,005C644E,extended,00000001
+
+[Movie Viewer-TGS Trailer]
+patch=1,EE,005C644F,extended,00000001
+
+[Character Viewer-Lau Wong]
+patch=1,EE,005C6450,extended,00000001
+
+[Character Viewer-Enemies]
+patch=1,EE,005C6451,extended,00000001
+patch=1,EE,105C6452,extended,00000101
+patch=1,EE,105C6454,extended,00000101
+
+[Character Viewer-Lau (Costume 2)]
+patch=1,EE,005C6456,extended,00000001
+
+[Lau Costume Settings (1 & 2)]
+patch=1,EE,005C6459,extended,00000001
+
+[Stage Select]
+patch=1,EE,005C645A,extended,00000001
+
+[High Scores]
+patch=1,EE,005C645B,extended,00000001
+
+[Edit Opening Scene]
+patch=1,EE,005C645C,extended,00000001
+
+[Movie Viewer-Game Movies]
+patch=1,EE,005C645D,extended,00000001
+
+[All Special Options]
+patch=1,EE,405C6449,extended,00060001
+patch=1,EE,01010101,extended,00000000
+
+[Goueken-Level 1]
+patch=1,EE,005C6FEC,extended,00000001
+
+[Goueken-Level 2]
+patch=1,EE,005C6FED,extended,00000001
+
+[Goueken-Level 3]
+patch=1,EE,005C6FEE,extended,00000001
+
+[Dankuuken-Level 2]
+patch=1,EE,005C6FEF,extended,00000001
+
+[Tenseiken-Level 3]
+patch=1,EE,005C6FF0,extended,00000001
+
+[Jinbuken-Level 2]
+patch=1,EE,005C6FF1,extended,00000001
+
+[Ryouseiken-Level 2]
+patch=1,EE,005C6FF2,extended,00000001
+
+[Senranken-Level 1]
+patch=1,EE,005C6FF3,extended,00000001
+
+[Senranken-Level 2]
+patch=1,EE,005C6FF4,extended,00000001
+
+[Senranken-Level 3]
+patch=1,EE,005C6FF5,extended,00000001
+
+[Tekkuken-Level 1]
+patch=1,EE,005C6FF6,extended,00000001
+
+[Gaisenken-Level 1]
+patch=1,EE,005C6FF7,extended,00000001
+
+[Souryuuken-Level 1]
+patch=1,EE,005C6FF8,extended,00000001
+
+[Souryuuken-Level 2]
+patch=1,EE,005C6FF9,extended,00000001
+
+[Souryuuken-Level 3]
+patch=1,EE,005C6FFA,extended,00000001
+
+[All Spells]
+patch=1,EE,405C6FEC,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,105C6FF8,extended,00000101
+patch=1,EE,005C6FFA,extended,00000001
+
+[Sacred Talisman]
+patch=1,EE,005C755B,extended,00000001
+
+[Scorpion Key]
+patch=1,EE,005C755C,extended,00000001
+
+[Mantis Key]
+patch=1,EE,005C755D,extended,00000001
+
+[Dragon Key]
+patch=1,EE,005C755E,extended,00000001
+
+[Turtle Key]
+patch=1,EE,005C755F,extended,00000001
+
+[Golden Sphere]
+patch=1,EE,005C7560,extended,00000001
+
+[Crimson SPhere]
+patch=1,EE,005C7561,extended,00000001
+
+[Azure Sphere]
+patch=1,EE,005C7562,extended,00000001
+
+[Guardian Tablet]
+patch=1,EE,005C7563,extended,00000001
+
+[Phoenix Key]
+patch=1,EE,005C7564,extended,00000001

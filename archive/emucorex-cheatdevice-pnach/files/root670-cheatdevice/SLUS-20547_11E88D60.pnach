@@ -1,0 +1,37 @@
+gametitle=Cubix Robots For Everyone Showdown (SLUS-20547)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0213388,extended,00216307
+
+[Max Energy]
+patch=1,EE,102DF840,extended,00000005
+
+[Infinite HP]
+patch=1,EE,105B625C,extended,000003E7
+
+[Max HP]
+patch=1,EE,105B6258,extended,000003E7
+
+[Max Power]
+patch=1,EE,105B6260,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,105B6284,extended,000003E7
+
+[Max HP]
+patch=1,EE,105B6280,extended,000003E7
+
+[Max Power]
+patch=1,EE,105B6288,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,105B62AC,extended,000003E7
+
+[Max HP]
+patch=1,EE,105B62A8,extended,000003E7
+
+[Max Power]
+patch=1,EE,105B62B0,extended,000003E7

@@ -1,0 +1,271 @@
+gametitle=Tekken 4 (SLUS-20328)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902937CC,extended,0C0A88C5
+
+[Infinite Health P1]
+patch=1,EE,102A9C6E,extended,000000A5
+
+[75% Health P1]
+patch=1,EE,D02A9C6E,extended,000000A5
+patch=1,EE,102A9C6E,extended,0000007B
+
+[50% Health P1]
+patch=1,EE,D02A9C6E,extended,000000A5
+patch=1,EE,102A9C6E,extended,00000052
+
+[25% Health P1]
+patch=1,EE,D02A9C6E,extended,000000A5
+patch=1,EE,102A9C6E,extended,00000029
+
+[1-Hit Death P1]
+patch=1,EE,D02A9C6E,extended,000000A5
+patch=1,EE,102A9C6E,extended,00000001
+
+[No Health P1]
+patch=1,EE,102A9C6E,extended,00000000
+
+[P1 Needs 1 Win To Win]
+patch=1,EE,D02A963E,extended,00000000
+patch=1,EE,102A963E,extended,00000001
+
+[P1 Never Wins]
+patch=1,EE,102A963E,extended,00000000
+
+[Infinite Health P2]
+patch=1,EE,102AAB8E,extended,000000A5
+
+[75% Health P2]
+patch=1,EE,D02AAB8E,extended,000000A5
+patch=1,EE,102AAB8E,extended,0000007B
+
+[50% Health P2]
+patch=1,EE,D02AAB8E,extended,000000A5
+patch=1,EE,102AAB8E,extended,00000052
+
+[25% Health P2]
+patch=1,EE,D02AAB8E,extended,000000A5
+patch=1,EE,102AAB8E,extended,00000029
+
+[1-Hit Death P2]
+patch=1,EE,D02AAB8E,extended,000000A5
+patch=1,EE,102AAB8E,extended,00000001
+
+[No Health P2]
+patch=1,EE,102AAB8E,extended,00000000
+
+[P2 Needs 1 Win To Win]
+patch=1,EE,D02AA55E,extended,00000000
+patch=1,EE,102AA55E,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,102AA55E,extended,00000000
+
+[P1 Press {L1}+{L2} For Death Blow On P2]
+patch=1,EE,D0356020,extended,00000005
+patch=1,EE,102AAB8E,extended,00000000
+
+[P2 Press {L1}+{L2} For Death Blow On P1]
+patch=1,EE,D0356020,extended,00000005
+patch=1,EE,102A9C6E,extended,00000000
+
+[Infinite Time]
+patch=1,EE,10356064,extended,00001788
+
+[Hit Anywhere P1 & P2 Cant Hit P1]
+patch=1,EE,201A5C30,extended,12130024
+
+[Hit Anywhere P2 & P1 Cant Hit P2]
+patch=1,EE,201A5C30,extended,16130024
+
+[Hit Anywhere (Both Players)]
+patch=1,EE,201A5C30,extended,00000000
+
+[Disable All Blocking (Both Players)]
+patch=1,EE,201A4894,extended,1000000C
+
+[Infinite Health (Tekken Force Mode)]
+patch=1,EE,102A9C6E,extended,00000108
+
+[Enable All Movies]
+patch=1,EE,2036C300,extended,FFFFFFFF
+
+[Enable Theater]
+patch=1,EE,0036C32D,extended,00000001
+
+[Always Low Total Time]
+patch=1,EE,202A8C30,extended,00000000
+
+[Start On 2nd To Last Stage (Story Mode)]
+patch=1,EE,D02A8C28,extended,00000000
+patch=1,EE,102A8C28,extended,00000007
+
+[Start On Last Stage (Story Mode)]
+patch=1,EE,D02A8C28,extended,00000000
+patch=1,EE,102A8C28,extended,00000008
+
+[Quick Score Gain (Tekken Force Mode)]
+patch=1,EE,2025CD34,extended,2442270F
+patch=1,EE,2025CE84,extended,2442270F
+
+[Max Score (Tekken Force Mode)]
+patch=1,EE,20260920,extended,3C03000F
+patch=1,EE,20260924,extended,3463423F
+patch=1,EE,20260928,extended,AE631780
+
+[Max Wins (Survival Mode)]
+patch=1,EE,202A8C48,extended,000003E7
+
+[Enable Statue Stage]
+patch=1,EE,0036C311,extended,000000FF
+
+[Enable Non-Maru Stage]
+patch=1,EE,0036C312,extended,000000FF
+
+[P1 Always Have Gold Charged Up Fists]
+patch=1,EE,102A9878,extended,000003E7
+
+[P1 Never Has Golden Charged Up Fists]
+patch=1,EE,102A9878,extended,00000000
+
+[P1 Always Have Normal Charged Up Fists]
+patch=1,EE,102A987A,extended,000003E7
+
+[P1 Never Has Normal Charged Up Fists]
+patch=1,EE,102A987A,extended,00000000
+
+[P2 Always Have Gold Charged Up Fists]
+patch=1,EE,102AA798,extended,000003E7
+
+[P2 Never Has Golden Charged Up Fists]
+patch=1,EE,102AA798,extended,00000000
+
+[P2 Always Have Normal Charged Up Fists]
+patch=1,EE,102AA79A,extended,000003E7
+
+[P2 Never Has Normal Charged Up Fists]
+patch=1,EE,102AA79A,extended,00000000
+
+[Invisible Players]
+patch=1,EE,101824BC,extended,00000000
+
+[Players Fight Off Above The Ground]
+patch=1,EE,101828B8,extended,00003FC0
+
+[Players Fight High Above The Ground]
+patch=1,EE,101828B8,extended,00004000
+
+[Players Fight Super High Above The Ground]
+patch=1,EE,101828B8,extended,00004080
+
+[Invisible Legs]
+patch=1,EE,10186EE0,extended,00000000
+
+[Super Small Legs]
+patch=1,EE,10186EE0,extended,00003F40
+
+[Small Legs]
+patch=1,EE,10186EE0,extended,00003F60
+
+[Big Legs]
+patch=1,EE,10186EE0,extended,00003FA0
+
+[Huge Legs]
+patch=1,EE,10186EE0,extended,00003FB0
+
+[Invisible Lower Legs (About Knees Down)]
+patch=1,EE,1018726C,extended,00000000
+
+[Super Small Feet]
+patch=1,EE,1018726C,extended,00003F00
+
+[Small Feet]
+patch=1,EE,1018726C,extended,00003F40
+
+[Big Feet]
+patch=1,EE,1018726C,extended,00003FA0
+
+[Super Huge Feet]
+patch=1,EE,1018726C,extended,00003FC0
+
+[Invisible Head/Torso]
+patch=1,EE,1018D9E0,extended,00004060
+
+[Super Small Head/Torso]
+patch=1,EE,1018D9E0,extended,00004020
+
+[Small Head/Torso]
+patch=1,EE,1018D9E0,extended,00003FC0
+
+[Big Head/Torso]
+patch=1,EE,1018D9E0,extended,00003F40
+
+[Super Huge Head/Torso]
+patch=1,EE,1018D9E0,extended,00003F20
+
+[Xiaoyu/Miharu Have No Skirt]
+patch=1,EE,101925E4,extended,00007FFF
+
+[Camera Always Far Back]
+patch=1,EE,20355530,extended,41000000
+
+[Camera Always Close Up]
+patch=1,EE,20355530,extended,40000000
+
+[Airport]
+patch=1,EE,10357D5C,extended,00000000
+
+[Building]
+patch=1,EE,10357D5C,extended,00000001
+
+[Mall]
+patch=1,EE,10357D5C,extended,00000002
+
+[Jungle]
+patch=1,EE,10357D5C,extended,00000003
+
+[Shinjuku]
+patch=1,EE,10357D5C,extended,00000004
+
+[Beach]
+patch=1,EE,10357D5C,extended,00000005
+
+[Laboratory]
+patch=1,EE,10357D5C,extended,00000006
+
+[Parking Area]
+patch=1,EE,10357D5C,extended,00000007
+
+[Underground]
+patch=1,EE,10357D5C,extended,00000008
+
+[Arena]
+patch=1,EE,10357D5C,extended,00000009
+
+[Statue]
+patch=1,EE,10357D5C,extended,0000000A
+
+[Statue 2]
+patch=1,EE,10357D5C,extended,0000000B
+
+[Non-Maru]
+patch=1,EE,10357D5C,extended,00000010
+
+[Background Type A (If Available)]
+patch=1,EE,2036C494,extended,00000000
+
+[Always Play Background B (If Available)]
+patch=1,EE,2036C494,extended,00000001
+
+[Always Play Background C (If Available)]
+patch=1,EE,2036C494,extended,00000002
+
+[Enable All Characters]
+patch=1,EE,2036C318,extended,FFFFFFFF
+patch=1,EE,2036C31C,extended,FFFFFFFF
+patch=1,EE,2036C320,extended,FFFFFFFF
+patch=1,EE,2036C324,extended,FFFFFFFF
+patch=1,EE,2036C328,extended,FFFFFFFF

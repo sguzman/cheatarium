@@ -1,0 +1,224 @@
+gametitle=MVP Baseball 2005 (SLUS-21135)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,905C0DDC,extended,0C1732DB
+
+[Away Team Scores 5 Runs Every Inning]
+patch=1,EE,200C0280,extended,24010005
+patch=1,EE,200C0284,extended,A04101B4
+patch=1,EE,200C0288,extended,03E00008
+patch=1,EE,200C028C,extended,904201B4
+patch=1,EE,2023532C,extended,0C0300A0
+
+[Away Team Scores 1 Run Every Inning]
+patch=1,EE,200C0280,extended,24010001
+patch=1,EE,200C0284,extended,A04101B4
+patch=1,EE,200C0288,extended,03E00008
+patch=1,EE,200C028C,extended,904201B4
+patch=1,EE,2023532C,extended,0C0300A0
+
+[Away Team Scores 0 Runs Every Inning]
+patch=1,EE,200C0280,extended,24010000
+patch=1,EE,200C0284,extended,A04101B4
+patch=1,EE,200C0288,extended,03E00008
+patch=1,EE,200C028C,extended,904201B4
+patch=1,EE,2023532C,extended,0C0300A0
+
+[Home Team Scores 5 Runs Every Inning]
+patch=1,EE,200C02A0,extended,24010005
+patch=1,EE,200C02A4,extended,A04101B4
+patch=1,EE,200C02A8,extended,03E00008
+patch=1,EE,200C02AC,extended,904201B4
+patch=1,EE,202353B4,extended,0C0300A8
+
+[Home Team Scores 1 Run Every Inning]
+patch=1,EE,200C02A0,extended,24010001
+patch=1,EE,200C02A4,extended,A04101B4
+patch=1,EE,200C02A8,extended,03E00008
+patch=1,EE,200C02AC,extended,904201B4
+patch=1,EE,202353B4,extended,0C0300A8
+
+[Home Team Scores 0 Runs Every Inning]
+patch=1,EE,200C02A0,extended,24010000
+patch=1,EE,200C02A4,extended,A04101B4
+patch=1,EE,200C02A8,extended,03E00008
+patch=1,EE,200C02AC,extended,904201B4
+patch=1,EE,202353B4,extended,0C0300A8
+
+[Infinite Outs]
+patch=1,EE,200C0220,extended,8E2406FC
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,A0401CC9
+patch=1,EE,20235238,extended,0C030088
+
+[1 Out And You Are Out]
+patch=1,EE,200C0220,extended,8E2406FC
+patch=1,EE,200C0224,extended,90411CC9
+patch=1,EE,200C0228,extended,50200001
+patch=1,EE,200C022C,extended,24010002
+patch=1,EE,200C0230,extended,03E00008
+patch=1,EE,200C0234,extended,A0411CC9
+patch=1,EE,20235238,extended,0C030088
+
+[2 Out And You Are Out]
+patch=1,EE,200C0220,extended,8E2406FC
+patch=1,EE,200C0224,extended,90411CC9
+patch=1,EE,200C0228,extended,50200001
+patch=1,EE,200C022C,extended,24010001
+patch=1,EE,200C0230,extended,03E00008
+patch=1,EE,200C0234,extended,A0411CC9
+patch=1,EE,20235238,extended,0C030088
+
+[Infinite Strikes]
+patch=1,EE,200C0240,extended,8C8303BC
+patch=1,EE,200C0244,extended,03E00008
+patch=1,EE,200C0248,extended,A0401CCA
+patch=1,EE,20235240,extended,0C030090
+
+[1 Strike And You Are Out]
+patch=1,EE,200C0240,extended,8C8303BC
+patch=1,EE,200C0244,extended,90411CCA
+patch=1,EE,200C0248,extended,50200001
+patch=1,EE,200C024C,extended,24010002
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,A0411CCA
+patch=1,EE,20235240,extended,0C030090
+
+[2 Strikes And You Are Out]
+patch=1,EE,200C0240,extended,8C8303BC
+patch=1,EE,200C0244,extended,90411CCA
+patch=1,EE,200C0248,extended,50200001
+patch=1,EE,200C024C,extended,24010001
+patch=1,EE,200C0250,extended,03E00008
+patch=1,EE,200C0254,extended,A0411CCA
+patch=1,EE,20235240,extended,0C030090
+
+[Infinite Balls]
+patch=1,EE,200C0260,extended,8C630024
+patch=1,EE,200C0264,extended,03E00008
+patch=1,EE,200C0268,extended,A0401CCB
+patch=1,EE,20235248,extended,0C030098
+
+[1 Ball And You Walk]
+patch=1,EE,200C0260,extended,8C630024
+patch=1,EE,200C0264,extended,90411CCB
+patch=1,EE,200C0268,extended,50200001
+patch=1,EE,200C026C,extended,24010003
+patch=1,EE,200C0270,extended,03E00008
+patch=1,EE,200C0274,extended,A0411CCB
+patch=1,EE,20235248,extended,0C030098
+
+[2 Balls And You Walk]
+patch=1,EE,200C0260,extended,8C630024
+patch=1,EE,200C0264,extended,90411CCB
+patch=1,EE,200C0268,extended,50200001
+patch=1,EE,200C026C,extended,24010002
+patch=1,EE,200C0270,extended,03E00008
+patch=1,EE,200C0274,extended,A0411CCB
+patch=1,EE,20235248,extended,0C030098
+
+[3 Balls And You Walk]
+patch=1,EE,200C0260,extended,8C630024
+patch=1,EE,200C0264,extended,90411CCB
+patch=1,EE,200C0268,extended,50200001
+patch=1,EE,200C026C,extended,24010001
+patch=1,EE,200C0270,extended,03E00008
+patch=1,EE,200C0274,extended,A0411CCB
+patch=1,EE,20235248,extended,0C030098
+
+[P1 Press {L1}+Up For 0 Strikes]
+patch=1,EE,200C0240,extended,24010000
+patch=1,EE,200C0244,extended,A0411CCA
+patch=1,EE,200C0248,extended,03E00008
+patch=1,EE,200C024C,extended,8C8303BC
+patch=1,EE,D0D8B982,extended,0000FBEF
+patch=1,EE,20235240,extended,0C030090
+patch=1,EE,D0D8B982,extended,0000FFFF
+patch=1,EE,20235240,extended,8C8303BC
+
+[P1 Press {L1}+Down For 2 Strikes]
+patch=1,EE,200C0240,extended,24010002
+patch=1,EE,200C0244,extended,A0411CCA
+patch=1,EE,200C0248,extended,03E00008
+patch=1,EE,200C024C,extended,8C8303BC
+patch=1,EE,D0D8B982,extended,0000FBBF
+patch=1,EE,20235240,extended,0C030090
+patch=1,EE,D0D8B982,extended,0000FFFF
+patch=1,EE,20235240,extended,8C8303BC
+
+[P1 Press {L1}+Left For 0 Balls]
+patch=1,EE,200C0260,extended,24010000
+patch=1,EE,200C0264,extended,A0411CCB
+patch=1,EE,200C0268,extended,03E00008
+patch=1,EE,200C026C,extended,8C630024
+patch=1,EE,D0D8B982,extended,0000FB7F
+patch=1,EE,20235248,extended,0C030098
+patch=1,EE,D0D8B982,extended,0000FFFF
+patch=1,EE,20235248,extended,8C630024
+
+[P1 Press {L1}+Right For 3 Balls]
+patch=1,EE,200C0260,extended,24010003
+patch=1,EE,200C0264,extended,A0411CCB
+patch=1,EE,200C0268,extended,03E00008
+patch=1,EE,200C026C,extended,8C630024
+patch=1,EE,D0D8B982,extended,0000FB7F
+patch=1,EE,20235248,extended,0C030098
+patch=1,EE,D0D8B982,extended,0000FFFF
+patch=1,EE,20235248,extended,8C630024
+
+[P1 Press {L1}+Up For 0 Outs]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,A0411CC9
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,8E2406FC
+patch=1,EE,D0D8B982,extended,0000FEEF
+patch=1,EE,20235238,extended,0C030088
+patch=1,EE,D0D8B982,extended,0000FFFF
+patch=1,EE,20235238,extended,8E2406FC
+
+[P1 Press {L1}+Down For 2 Outs]
+patch=1,EE,200C0220,extended,24010002
+patch=1,EE,200C0224,extended,A0411CC9
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,8E2406FC
+patch=1,EE,D0D8B982,extended,0000FEBF
+patch=1,EE,20235238,extended,0C030088
+patch=1,EE,D0D8B982,extended,0000FFFF
+patch=1,EE,20235238,extended,8E2406FC
+
+[All Retro Jerseys Cost $0]
+patch=1,EE,20742CD8,extended,03E00008
+patch=1,EE,20742CDC,extended,24020000
+
+[All Legendary Players Cost $0]
+patch=1,EE,20742DC8,extended,03E00008
+patch=1,EE,20742DCC,extended,24020000
+
+[All Classic Stadiums Cost $0]
+patch=1,EE,2075A898,extended,03E00008
+patch=1,EE,2075A89C,extended,24020000
+
+[Display Debug Info]
+patch=1,EE,208C825C,extended,00000001
+
+[Max MVP Points]
+patch=1,EE,200C02C0,extended,24044E20
+patch=1,EE,200C02C4,extended,081D699F
+patch=1,EE,200C02C8,extended,A4C40020
+patch=1,EE,2075A650,extended,080300B0
+
+[View MVP Rewards To Unlock All]
+patch=1,EE,200C02D0,extended,2401FFFF
+patch=1,EE,200C02D4,extended,ACC10054
+patch=1,EE,200C02D8,extended,ACC10058
+patch=1,EE,200C02DC,extended,ACC1005C
+patch=1,EE,200C02E0,extended,ACC10060
+patch=1,EE,200C02E4,extended,ACC10064
+patch=1,EE,200C02E8,extended,ACC10068
+patch=1,EE,200C02EC,extended,ACC1006C
+patch=1,EE,200C02F0,extended,081D08EB
+patch=1,EE,200C02F4,extended,3C02008B
+patch=1,EE,207423A4,extended,080300B4

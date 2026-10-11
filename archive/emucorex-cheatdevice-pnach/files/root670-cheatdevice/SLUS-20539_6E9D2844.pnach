@@ -1,0 +1,94 @@
+gametitle=Fallout-Brotherhood Of Steel (SLUS-20539)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901B749C,extended,0C071293
+
+[Using Skill Points Doesnt Decrease Them]
+patch=1,EE,2016B1A4,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,20A59B14,extended,461C3C00
+
+[Max Health P1]
+patch=1,EE,20A59B18,extended,461C3C00
+
+[Max Armor P1]
+patch=1,EE,20A59BF0,extended,461C3C00
+
+[Infinite Pistol Ammo P1]
+patch=1,EE,20A59C34,extended,000003E7
+
+[Infinite Dual Pistol Ammo P1]
+patch=1,EE,20A59C38,extended,000003E7
+
+[Infinite Laser Pistol Ammo P1]
+patch=1,EE,20A59C3C,extended,000003E7
+
+[Infinite Rifle Ammo P1]
+patch=1,EE,20A59C40,extended,000003E7
+
+[Infinite Double Barrel Ammo P1]
+patch=1,EE,20A59C44,extended,000003E7
+
+[Infinite Flamethrower Ammo P1]
+patch=1,EE,20A59C48,extended,000003E7
+
+[Infinite Rocket Launcher Ammo P1]
+patch=1,EE,20A59C4C,extended,000003E7
+
+[Max Exp P1]
+patch=1,EE,20A5A2C0,extended,4B18967F
+
+[Infinite Skill Points P1]
+patch=1,EE,20A5A2C4,extended,44898000
+
+[Infinite Caps P1]
+patch=1,EE,10A5A2E4,extended,0000FFFF
+
+[Max Caps P1]
+patch=1,EE,20A5A2E4,extended,0098967F
+
+[Infinite Health P2]
+patch=1,EE,20A5A694,extended,461C3C00
+
+[Max Health P2]
+patch=1,EE,20A5A698,extended,461C3C00
+
+[Max Armor P2]
+patch=1,EE,20A5A770,extended,461C3C00
+
+[Infinite Pistol Ammo P2]
+patch=1,EE,20A5A7B4,extended,000003E7
+
+[Infinite Dual Pistol Ammo P2]
+patch=1,EE,20A5A7B8,extended,000003E7
+
+[Infinite Laser Pistol Ammo P2]
+patch=1,EE,20A5A7BC,extended,000003E7
+
+[Infinite Rifle Ammo P2]
+patch=1,EE,20A5A7C0,extended,000003E7
+
+[Infinite Double Barrel Ammo P2]
+patch=1,EE,20A5A7C4,extended,000003E7
+
+[Infinite Flamethrower Ammo P2]
+patch=1,EE,20A5A7C8,extended,000003E7
+
+[Infinite Rocket Launcher Ammo P2]
+patch=1,EE,20A5A7CC,extended,000003E7
+
+[Max Exp P2]
+patch=1,EE,20A5AE40,extended,4B18967F
+
+[Infinite Skill Points P2]
+patch=1,EE,20A5AE44,extended,44898000
+
+[Infinite Caps P2]
+patch=1,EE,10A5AE64,extended,0000FFFF
+
+[Max Caps P2]
+patch=1,EE,20A5AE64,extended,0098967F

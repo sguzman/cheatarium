@@ -1,0 +1,428 @@
+gametitle=Atelier Iris 2-The Azoth Of Destiny (SLUS-21327)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902B8370,extended,00832021
+
+[Max Money]
+patch=1,EE,207DB79C,extended,000F423F
+
+[Always Low Game Time]
+patch=1,EE,207DB7A0,extended,00000000
+
+[Max Element Bins]
+patch=1,EE,40B2A400,extended,00060001
+patch=1,EE,00630063,extended,00000000
+patch=1,EE,00B2A418,extended,00000063
+
+[Have All Reference Boo]
+patch=1,EE,40B2A488,extended,00FF0001
+patch=1,EE,02020202,extended,00000000
+
+[Have Most Monster List]
+patch=1,EE,40B2A634,extended,00220001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Max All Items]
+patch=1,EE,40B3AE30,extended,01910005
+patch=1,EE,00FE0062,extended,00000000
+
+[Infinite HP (In-Battle)]
+patch=1,EE,200C0220,extended,240103E7
+patch=1,EE,200C0224,extended,0806F010
+patch=1,EE,200C0228,extended,AE01002C
+patch=1,EE,2025822C,extended,0C030088
+
+[Max HP (In-Battle)]
+patch=1,EE,200C0230,extended,240103E7
+patch=1,EE,200C0234,extended,0806F010
+patch=1,EE,200C0238,extended,AE010030
+patch=1,EE,2025823C,extended,0C03008C
+
+[P1 Press {L1}+{SELECT} To Disable Random Battles]
+patch=1,EE,D07DE202,extended,0000FBFE
+patch=1,EE,2026B188,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Enable Random Battles]
+patch=1,EE,D07DE202,extended,0000FEFE
+patch=1,EE,2026B188,extended,11E00003
+
+[Level 50]
+patch=1,EE,10B29E80,extended,00000032
+
+[Infinite HP]
+patch=1,EE,10B29E82,extended,000003E7
+
+[Max Current HP]
+patch=1,EE,10B29E84,extended,000003E7
+
+[Max Current Attack]
+patch=1,EE,10B29E86,extended,000001F4
+
+[Max Current Magic]
+patch=1,EE,10B29E88,extended,000001F4
+
+[Max Current Defense]
+patch=1,EE,10B29E8A,extended,000001F4
+
+[Max Current Speed]
+patch=1,EE,10B29E8C,extended,000001F4
+
+[Max Current F Res]
+patch=1,EE,10B29E8E,extended,000001F4
+
+[Max Current I Res]
+patch=1,EE,10B29E90,extended,000001F4
+
+[Max Current T Res]
+patch=1,EE,10B29E92,extended,000001F4
+
+[Max Current D Res]
+patch=1,EE,10B29E94,extended,000001F4
+
+[Max Overall HP]
+patch=1,EE,10B29E96,extended,000003E7
+
+[Max Overall ATK]
+patch=1,EE,10B29E98,extended,000001F4
+
+[Max Overall MAG]
+patch=1,EE,10B29E9A,extended,000001F4
+
+[Max Overall DEF]
+patch=1,EE,10B29E9C,extended,000001F4
+
+[Max Overall SPD]
+patch=1,EE,10B29E9E,extended,000001F4
+
+[Max Overall F Res]
+patch=1,EE,10B29EA0,extended,000001F4
+
+[Max Overall I Res]
+patch=1,EE,10B29EA2,extended,000001F4
+
+[Max Overall T Res]
+patch=1,EE,10B29EA4,extended,000001F4
+
+[Max Overall D Res]
+patch=1,EE,10B29EA6,extended,000001F4
+
+[Max EXP]
+patch=1,EE,20B29EA8,extended,000F423F
+
+[Level 50]
+patch=1,EE,10B29F60,extended,00000032
+
+[Infinite HP]
+patch=1,EE,10B29F62,extended,000003E7
+
+[Max Current HP]
+patch=1,EE,10B29F64,extended,000003E7
+
+[Max Current Attack]
+patch=1,EE,10B29F66,extended,000001F4
+
+[Max Current Magic]
+patch=1,EE,10B29F68,extended,000001F4
+
+[Max Current Defense]
+patch=1,EE,10B29F6A,extended,000001F4
+
+[Max Current Speed]
+patch=1,EE,10B29F6C,extended,000001F4
+
+[Max Current F Res]
+patch=1,EE,10B29F6E,extended,000001F4
+
+[Max Current I Res]
+patch=1,EE,10B29F70,extended,000001F4
+
+[Max Current T Res]
+patch=1,EE,10B29F72,extended,000001F4
+
+[Max Current D Res]
+patch=1,EE,10B29F74,extended,000001F4
+
+[Max Overall HP]
+patch=1,EE,10B29F76,extended,000003E7
+
+[Max Overall ATK]
+patch=1,EE,10B29F78,extended,000001F4
+
+[Max Overall MAG]
+patch=1,EE,10B29F7A,extended,000001F4
+
+[Max Overall DEF]
+patch=1,EE,10B29F7C,extended,000001F4
+
+[Max Overall SPD]
+patch=1,EE,10B29F7E,extended,000001F4
+
+[Max Overall F Res]
+patch=1,EE,10B29F80,extended,000001F4
+
+[Max Overall I Res]
+patch=1,EE,10B29F82,extended,000001F4
+
+[Max Overall T Res]
+patch=1,EE,10B29F84,extended,000001F4
+
+[Max Overall D Res]
+patch=1,EE,10B29F86,extended,000001F4
+
+[Max EXP]
+patch=1,EE,20B29F88,extended,000F423F
+
+[Level 50]
+patch=1,EE,10B2A040,extended,00000032
+
+[Infinite HP]
+patch=1,EE,10B2A042,extended,000003E7
+
+[Max Current HP]
+patch=1,EE,10B2A044,extended,000003E7
+
+[Max Current Attack]
+patch=1,EE,10B2A046,extended,000001F4
+
+[Max Current Magic]
+patch=1,EE,10B2A048,extended,000001F4
+
+[Max Current Defense]
+patch=1,EE,10B2A04A,extended,000001F4
+
+[Max Current Speed]
+patch=1,EE,10B2A04C,extended,000001F4
+
+[Max Current F Res]
+patch=1,EE,10B2A04E,extended,000001F4
+
+[Max Current I Res]
+patch=1,EE,10B2A050,extended,000001F4
+
+[Max Current T Res]
+patch=1,EE,10B2A052,extended,000001F4
+
+[Max Current D Res]
+patch=1,EE,10B2A054,extended,000001F4
+
+[Max Overall HP]
+patch=1,EE,10B2A056,extended,000003E7
+
+[Max Overall ATK]
+patch=1,EE,10B2A058,extended,000001F4
+
+[Max Overall MAG]
+patch=1,EE,10B2A05A,extended,000001F4
+
+[Max Overall DEF]
+patch=1,EE,10B2A05C,extended,000001F4
+
+[Max Overall SPD]
+patch=1,EE,10B2A05E,extended,000001F4
+
+[Max Overall F Res]
+patch=1,EE,10B2A060,extended,000001F4
+
+[Max Overall I Res]
+patch=1,EE,10B2A062,extended,000001F4
+
+[Max Overall T Res]
+patch=1,EE,10B2A064,extended,000001F4
+
+[Max Overall D Res]
+patch=1,EE,10B2A066,extended,000001F4
+
+[Max EXP]
+patch=1,EE,20B2A068,extended,000F423F
+
+[Level 50]
+patch=1,EE,10B2A120,extended,00000032
+
+[Infinite HP]
+patch=1,EE,10B2A122,extended,000003E7
+
+[Max Current HP]
+patch=1,EE,10B2A124,extended,000003E7
+
+[Max Current Attack]
+patch=1,EE,10B2A126,extended,000001F4
+
+[Max Current Magic]
+patch=1,EE,10B2A128,extended,000001F4
+
+[Max Current Defense]
+patch=1,EE,10B2A12A,extended,000001F4
+
+[Max Current Speed]
+patch=1,EE,10B2A12C,extended,000001F4
+
+[Max Current F Res]
+patch=1,EE,10B2A12E,extended,000001F4
+
+[Max Current I Res]
+patch=1,EE,10B2A130,extended,000001F4
+
+[Max Current T Res]
+patch=1,EE,10B2A132,extended,000001F4
+
+[Max Current D Res]
+patch=1,EE,10B2A134,extended,000001F4
+
+[Max Overall HP]
+patch=1,EE,10B2A136,extended,000003E7
+
+[Max Overall ATK]
+patch=1,EE,10B2A138,extended,000001F4
+
+[Max Overall MAG]
+patch=1,EE,10B2A13A,extended,000001F4
+
+[Max Overall DEF]
+patch=1,EE,10B2A13C,extended,000001F4
+
+[Max Overall SPD]
+patch=1,EE,10B2A13E,extended,000001F4
+
+[Max Overall F Res]
+patch=1,EE,10B2A140,extended,000001F4
+
+[Max Overall I Res]
+patch=1,EE,10B2A142,extended,000001F4
+
+[Max Overall T Res]
+patch=1,EE,10B2A144,extended,000001F4
+
+[Max Overall D Res]
+patch=1,EE,10B2A146,extended,000001F4
+
+[Max EXP]
+patch=1,EE,20B2A148,extended,000F423F
+
+[Level 50]
+patch=1,EE,10B2A200,extended,00000032
+
+[Infinite HP]
+patch=1,EE,10B2A202,extended,000003E7
+
+[Max Current HP]
+patch=1,EE,10B2A204,extended,000003E7
+
+[Max Current Attack]
+patch=1,EE,10B2A206,extended,000001F4
+
+[Max Current Magic]
+patch=1,EE,10B2A208,extended,000001F4
+
+[Max Current Defense]
+patch=1,EE,10B2A20A,extended,000001F4
+
+[Max Current Speed]
+patch=1,EE,10B2A20C,extended,000001F4
+
+[Max Current F Res]
+patch=1,EE,10B2A20E,extended,000001F4
+
+[Max Current I Res]
+patch=1,EE,10B2A210,extended,000001F4
+
+[Max Current T Res]
+patch=1,EE,10B2A212,extended,000001F4
+
+[Max Current D Res]
+patch=1,EE,10B2A214,extended,000001F4
+
+[Max Overall HP]
+patch=1,EE,10B2A216,extended,000003E7
+
+[Max Overall ATK]
+patch=1,EE,10B2A218,extended,000001F4
+
+[Max Overall MAG]
+patch=1,EE,10B2A21A,extended,000001F4
+
+[Max Overall DEF]
+patch=1,EE,10B2A21C,extended,000001F4
+
+[Max Overall SPD]
+patch=1,EE,10B2A21E,extended,000001F4
+
+[Max Overall F Res]
+patch=1,EE,10B2A220,extended,000001F4
+
+[Max Overall I Res]
+patch=1,EE,10B2A222,extended,000001F4
+
+[Max Overall T Res]
+patch=1,EE,10B2A224,extended,000001F4
+
+[Max Overall D Res]
+patch=1,EE,10B2A226,extended,000001F4
+
+[Max EXP]
+patch=1,EE,20B2A228,extended,000F423F
+
+[Level 50]
+patch=1,EE,10B2A2E0,extended,00000032
+
+[Infinite HP]
+patch=1,EE,10B2A2E2,extended,000003E7
+
+[Max Current HP]
+patch=1,EE,10B2A2E4,extended,000003E7
+
+[Max Current Attack]
+patch=1,EE,10B2A2E6,extended,000001F4
+
+[Max Current Magic]
+patch=1,EE,10B2A2E8,extended,000001F4
+
+[Max Current Defense]
+patch=1,EE,10B2A2EA,extended,000001F4
+
+[Max Current Speed]
+patch=1,EE,10B2A2EC,extended,000001F4
+
+[Max Current F Res]
+patch=1,EE,10B2A2EE,extended,000001F4
+
+[Max Current I Res]
+patch=1,EE,10B2A2F0,extended,000001F4
+
+[Max Current T Res]
+patch=1,EE,10B2A2F2,extended,000001F4
+
+[Max Current D Res]
+patch=1,EE,10B2A2F4,extended,000001F4
+
+[Max Overall HP]
+patch=1,EE,10B2A2F6,extended,000003E7
+
+[Max Overall ATK]
+patch=1,EE,10B2A2F8,extended,000001F4
+
+[Max Overall MAG]
+patch=1,EE,10B2A2FA,extended,000001F4
+
+[Max Overall DEF]
+patch=1,EE,10B2A2FC,extended,000001F4
+
+[Max Overall SPD]
+patch=1,EE,10B2A2FE,extended,000001F4
+
+[Max Overall F Res]
+patch=1,EE,10B2A300,extended,000001F4
+
+[Max Overall I Res]
+patch=1,EE,10B2A302,extended,000001F4
+
+[Max Overall T Res]
+patch=1,EE,10B2A304,extended,000001F4
+
+[Max Overall D Res]
+patch=1,EE,10B2A306,extended,000001F4
+
+[Max EXP]
+patch=1,EE,20B2A308,extended,000F423F

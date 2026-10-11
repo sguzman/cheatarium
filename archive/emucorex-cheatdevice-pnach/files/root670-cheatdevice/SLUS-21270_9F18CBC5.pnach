@@ -1,0 +1,753 @@
+gametitle=MS Saga-A New Dawn (SLUS-21270)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90133094,extended,0C09B3B7
+
+[Gain 1 Exp For Level 50]
+patch=1,EE,403B7438,extended,00310001
+patch=1,EE,00000001,extended,00000000
+
+[Gain 50 Exp For Level 50]
+patch=1,EE,403B7438,extended,00310001
+patch=1,EE,00000001,extended,00000001
+
+[Infinite Money]
+patch=1,EE,11FDD000,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,21FDD000,extended,0098967F
+
+[Always Low Time]
+patch=1,EE,203C9B08,extended,00000000
+patch=1,EE,203C9B0C,extended,00000000
+patch=1,EE,203C9B10,extended,00000000
+patch=1,EE,21FFF460,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Stop Game Timer]
+patch=1,EE,D04386C2,extended,0000FBFE
+patch=1,EE,003C9B04,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Game Timer]
+patch=1,EE,D04386C2,extended,0000FEFE
+patch=1,EE,003C9B04,extended,00000001
+
+[Level 99]
+patch=1,EE,01FDE88E,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDE890,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDE890,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDE894,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDE896,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDE898,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDE89A,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDE89C,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDE89E,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDE906,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDE908,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDE908,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDE90C,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDE90E,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDE910,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDE912,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDE914,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDE916,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDE97E,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDE980,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDE980,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDE984,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDE986,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDE988,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDE98A,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDE98C,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDE98E,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDE9F6,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDE9F8,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDE9F8,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDE9FC,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDE9FE,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDEA00,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDEA02,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDEA04,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDEA06,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDEA6E,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDEA70,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDEA70,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDEA74,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDEA76,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDEA78,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDEA7A,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDEA7C,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDEA7E,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDEAE6,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDEAE8,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDEAE8,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDEAEC,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDEAEE,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDEAF0,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDEAF2,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDEAF4,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDEAF6,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDEB5E,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDEB60,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDEB60,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDEB64,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDEB66,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDEB68,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDEB6A,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDEB6C,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDEB6E,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDEBD6,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDEBD8,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDEBD8,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDEBDC,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDEBDE,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDEBE0,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDEBE2,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDEBE4,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDEBE6,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDEC4E,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDEC50,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDEC50,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDEC54,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDEC56,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDEC58,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDEC5A,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDEC5C,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDEC5E,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDECC6,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDECC8,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDECC8,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDECCC,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDECCE,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDECD0,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDECD2,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDECD4,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDECD6,extended,000003E7
+
+[Level 99]
+patch=1,EE,01FDED3E,extended,00000063
+
+[Quick EXP Gain]
+patch=1,EE,11FDED40,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,21FDED40,extended,05F5E0FF
+
+[Max TP]
+patch=1,EE,11FDED44,extended,000003E7
+
+[Max Melee]
+patch=1,EE,11FDED46,extended,000003E7
+
+[Max Ranged]
+patch=1,EE,11FDED48,extended,000003E7
+
+[Max Reflexes]
+patch=1,EE,11FDED4A,extended,000003E7
+
+[Max Skill]
+patch=1,EE,11FDED4C,extended,000003E7
+
+[Max Mind]
+patch=1,EE,11FDED4E,extended,000003E7
+
+[Infinite EN]
+patch=1,EE,01FDDB91,extended,00000063
+
+[Infinite TP]
+patch=1,EE,11FDDB92,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,11FDDB94,extended,0000270F
+
+[Infinite EN]
+patch=1,EE,01FDDB9D,extended,00000063
+
+[Infinite TP]
+patch=1,EE,11FDDB9E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,11FDDBA0,extended,0000270F
+
+[Infinite EN]
+patch=1,EE,01FDDBA9,extended,00000063
+
+[Infinite TP]
+patch=1,EE,11FDDBAA,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,11FDDBAC,extended,0000270F
+
+[Infinite EN]
+patch=1,EE,01FDDBB5,extended,00000063
+
+[Infinite TP]
+patch=1,EE,11FDDBB6,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,11FDDBB8,extended,0000270F
+
+[Infinite EN]
+patch=1,EE,01FDDBC1,extended,00000063
+
+[Infinite TP]
+patch=1,EE,11FDDBC2,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,11FDDBC4,extended,0000270F
+
+[Infinite EN]
+patch=1,EE,01FDDBCD,extended,00000063
+
+[Infinite TP]
+patch=1,EE,11FDDBCE,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,11FDDBD0,extended,0000270F
+
+[Max Mod Lvl]
+patch=1,EE,01FDEDBC,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDEDBD,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDEDBE,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDEDC0,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDEDC2,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDEDC4,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDEDC6,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDEE38,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDEE39,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDEE3A,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDEE3C,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDEE3E,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDEE40,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDEE42,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDEEB4,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDEEB5,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDEEB6,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDEEB8,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDEEBA,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDEEBC,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDEEBE,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDEF30,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDEF31,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDEF32,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDEF34,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDEF36,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDEF38,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDEF3A,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDEFAC,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDEFAD,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDEFAE,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDEFB0,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDEFB2,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDEFB4,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDEFB6,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDF028,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDF029,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDF02A,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDF02C,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDF02E,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDF030,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDF032,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDF0A4,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDF0A5,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDF0A6,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDF0A8,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDF0AA,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDF0AC,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDF0AE,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDF120,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDF121,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDF122,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDF124,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDF126,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDF128,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDF12A,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDF19C,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDF19D,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDF19E,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDF1A0,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDF1A2,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDF1A4,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDF1A6,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDF218,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDF219,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDF21A,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDF21C,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDF21E,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDF220,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDF222,extended,000003E7
+
+[Max Mod Lvl]
+patch=1,EE,01FDF294,extended,00000063
+
+[Max EN]
+patch=1,EE,01FDF295,extended,00000063
+
+[Max HP]
+patch=1,EE,11FDF296,extended,0000270F
+
+[Max MEL]
+patch=1,EE,11FDF298,extended,000003E7
+
+[Max RNG]
+patch=1,EE,11FDF29A,extended,000003E7
+
+[Max AMR]
+patch=1,EE,11FDF29C,extended,000003E7
+
+[Max SPD]
+patch=1,EE,11FDF29E,extended,000003E7
+
+[Sazabi]
+patch=1,EE,11FDD738,extended,0000039A
+patch=1,EE,01FDDB4C,extended,0000005A
+
+[Shining Gundam]
+patch=1,EE,11FDD73A,extended,0000039B
+patch=1,EE,01FDDB4D,extended,0000005A
+
+[Death Army]
+patch=1,EE,11FDD74A,extended,000003A3
+patch=1,EE,01FDDB55,extended,0000005A
+
+[Master Gundam]
+patch=1,EE,11FDD748,extended,000003A2
+patch=1,EE,01FDDB54,extended,0000005A
+
+[Altron]
+patch=1,EE,11FDD746,extended,000003A1
+patch=1,EE,01FDDB53,extended,0000005A
+
+[Sand Rock]
+patch=1,EE,11FDD744,extended,000003A0
+patch=1,EE,01FDDB52,extended,0000005A
+
+[Heavy Arms]
+patch=1,EE,11FDD742,extended,0000039F
+patch=1,EE,01FDDB51,extended,0000005A
+
+[DeathScythe]
+patch=1,EE,11FDD740,extended,0000039E
+patch=1,EE,01FDDB50,extended,0000005A
+
+[Wing Gundam]
+patch=1,EE,11FDD73E,extended,0000039D
+patch=1,EE,01FDDB4F,extended,0000005A
+
+[God (Burning) Gundam]
+patch=1,EE,11FDD73C,extended,0000039C
+patch=1,EE,01FDDB4E,extended,0000005A
+
+[ZZ Gundam]
+patch=1,EE,11FDD734,extended,00000398
+patch=1,EE,01FDDB4A,extended,0000005A
+
+[Bawoo]
+patch=1,EE,11FDD732,extended,00000397
+patch=1,EE,01FDDB49,extended,0000005A
+
+[Zeta Gundam]
+patch=1,EE,11FDD724,extended,00000390
+patch=1,EE,01FDDB42,extended,0000005A
+
+[Gundam Mark II]
+patch=1,EE,11FDD720,extended,0000038E
+patch=1,EE,01FDDB40,extended,0000005A
+
+[Full Armor Gundam]
+patch=1,EE,11FDD708,extended,00000382
+patch=1,EE,01FDDB34,extended,0000005A
+
+[Gouf]
+patch=1,EE,11FDD702,extended,0000037F
+patch=1,EE,01FDDB31,extended,0000005A
+
+[Hyaku Shiki]
+patch=1,EE,11FDD722,extended,0000038F
+patch=1,EE,01FDDB41,extended,0000005A
+
+[Dreissen]
+patch=1,EE,11FDD72E,extended,00000395
+patch=1,EE,01FDDB47,extended,0000005A
+
+[GM Sniper]
+patch=1,EE,11FDD710,extended,00000386
+patch=1,EE,01FDDB38,extended,0000005A
+
+[R-Jarja]
+patch=1,EE,11FDD730,extended,00000396
+patch=1,EE,01FDDB48,extended,0000005A
+
+[Dom]
+patch=1,EE,11FDD712,extended,00000387
+patch=1,EE,01FDDB39,extended,0000005A
+
+[Gelgoog]
+patch=1,EE,11FDD714,extended,00000388
+patch=1,EE,01FDDB3A,extended,0000005A
+
+[Gelgoog Special]
+patch=1,EE,11FDD716,extended,00000389
+patch=1,EE,01FDDB3B,extended,0000005A
+
+[Gyan]
+patch=1,EE,11FDD718,extended,0000038A
+patch=1,EE,01FDDB3C,extended,0000005A
+
+[Kaempfer]
+patch=1,EE,11FDD71A,extended,0000038B
+patch=1,EE,01FDDB3D,extended,0000005A
+
+[Rick Dias]
+patch=1,EE,11FDD71E,extended,0000038D
+patch=1,EE,01FDDB3F,extended,0000005A
+
+[Hizack]
+patch=1,EE,11FDD726,extended,00000391
+patch=1,EE,01FDDB43,extended,0000005A
+
+[Nu Gundam]
+patch=1,EE,11FDD736,extended,00000399
+patch=1,EE,01FDDB4B,extended,0000005A
+
+[Nemo]
+patch=1,EE,11FDD71C,extended,0000038C
+patch=1,EE,01FDDB3E,extended,0000005A
+
+[Gundam]
+patch=1,EE,11FDD706,extended,00000381
+patch=1,EE,01FDDB33,extended,0000005A
+
+[Marasai]
+patch=1,EE,11FDD728,extended,00000392
+patch=1,EE,01FDDB44,extended,0000005A
+
+[Qubeley]
+patch=1,EE,11FDD72A,extended,00000393
+patch=1,EE,01FDDB45,extended,0000005A
+
+[Zaku III]
+patch=1,EE,11FDD72C,extended,00000394
+patch=1,EE,01FDDB46,extended,0000005A
+
+[Gun Cannon]
+patch=1,EE,11FDD704,extended,00000380
+patch=1,EE,01FDDB32,extended,0000005A

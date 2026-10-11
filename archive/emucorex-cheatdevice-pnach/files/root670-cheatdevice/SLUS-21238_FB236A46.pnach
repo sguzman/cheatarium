@@ -1,0 +1,193 @@
+gametitle=Final Fight-Streetwise (SLUS-21238)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012F260,extended,0C049F78
+
+[Infinite Health/Instinct/Money]
+patch=1,EE,20151100,extended,00000000
+
+[Quick Max Respect]
+patch=1,EE,20151308,extended,3406270F
+
+[Tension Earned Worth 50000]
+patch=1,EE,20155238,extended,3406C350
+
+[Tension Earned Worth 25000]
+patch=1,EE,20155238,extended,340661A8
+
+[Tension Earned Worth 10000]
+patch=1,EE,20155238,extended,34062710
+
+[Tension Earned Worth 1000]
+patch=1,EE,20155238,extended,340603E8
+
+[Tension Earned Worth 500]
+patch=1,EE,20155238,extended,340601F4
+
+[Enemies Defeated Worth 50]
+patch=1,EE,2015524C,extended,34060032
+
+[Enemies Defeated Worth 20]
+patch=1,EE,2015524C,extended,34060014
+
+[Enemies Defeated Worth 10]
+patch=1,EE,2015524C,extended,3406000A
+
+[Enemies Defeated Worth 5]
+patch=1,EE,2015524C,extended,34060005
+
+[Enemies Defeated Worth 2]
+patch=1,EE,2015524C,extended,34060002
+
+[Money Picked Up Worth 50000]
+patch=1,EE,201650D8,extended,3406C350
+
+[Money Picked Up Worth 25000]
+patch=1,EE,201650D8,extended,340661A8
+
+[Money Picked Up Worth 10000]
+patch=1,EE,201650D8,extended,34062710
+
+[Money Picked Up Worth 1000]
+patch=1,EE,201650D8,extended,340603E8
+
+[Money Picked Up Worth 500]
+patch=1,EE,201650D8,extended,340601F4
+
+[Money Gained From Enemies Worth 50000]
+patch=1,EE,2022DB00,extended,3406C350
+
+[Money Gained From Enemies Worth 25000]
+patch=1,EE,2022DB00,extended,340661A8
+
+[Money Gained From Enemies Worth 10000]
+patch=1,EE,2022DB00,extended,34062710
+
+[Money Gained From Enemies Worth 1000]
+patch=1,EE,2022DB00,extended,340603E8
+
+[Money Gained From Enemies Worth 500]
+patch=1,EE,2022DB00,extended,340601F4
+
+[Camera Always Reverse]
+patch=1,EE,20311AB0,extended,00000001
+
+[Camera Always Normal]
+patch=1,EE,20311AB0,extended,00000000
+
+[Vibration Always On]
+patch=1,EE,20311ACC,extended,00000001
+
+[Vibration Always Off]
+patch=1,EE,20311ACC,extended,00000000
+
+[Mono Mode Always On]
+patch=1,EE,20311C70,extended,00000001
+
+[Mono Mode Always Off]
+patch=1,EE,20311C70,extended,00000000
+
+[Original Final Fight]
+patch=1,EE,20311B58,extended,00000001
+
+[Fear Factory--Archetype]
+patch=1,EE,20311B74,extended,00000001
+
+[Shadows Falls--What Drives The Weak]
+patch=1,EE,20311B90,extended,00000001
+
+[Shadows Fall--Inspiration On Demand]
+patch=1,EE,20311BAC,extended,00000001
+
+[Unlock Haggar]
+patch=1,EE,20311BE4,extended,00000001
+
+[Unlock Guy]
+patch=1,EE,20311C00,extended,00000001
+
+[Auto Parry]
+patch=1,EE,20391410,extended,00000001
+
+[1-Hit Kills]
+patch=1,EE,20391418,extended,00000001
+
+[God Mode]
+patch=1,EE,2039141C,extended,00000001
+
+[Poly Debug]
+patch=1,EE,20391420,extended,00000001
+
+[Weapon Debug Mode]
+patch=1,EE,20391424,extended,00000001
+
+[No Damage For CPU Characters]
+patch=1,EE,20391428,extended,00000001
+
+[Instinct Auto Add]
+patch=1,EE,2039142C,extended,00000001
+
+[Final Attack Slow Motion]
+patch=1,EE,20391430,extended,00000001
+
+[Give Player All Moves]
+patch=1,EE,20391434,extended,00000001
+
+[Always Counter Attack]
+patch=1,EE,20391438,extended,00000001
+
+[Infinite Instinct]
+patch=1,EE,20391440,extended,00000001
+
+[Max Respect]
+patch=1,EE,20391444,extended,0000270F
+
+[Infinite Cash]
+patch=1,EE,10391448,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,20391448,extended,05F5E0FF
+
+[Quick Tension Gain]
+patch=1,EE,1039144C,extended,0000FFFF
+
+[Max Tension Earned]
+patch=1,EE,2039144C,extended,05F5E0FF
+
+[Enable Code (Must Be On)]
+patch=1,EE,E43C08DF,extended,C960FB49
+
+[Infinite Time]
+patch=1,EE,508700D4,extended,491C0168
+
+[Infinite Health P1]
+patch=1,EE,C3371598,extended,26610255
+
+[Infinite Lives P1]
+patch=1,EE,7E4BE07E,extended,7EB11EFE
+
+[Quick Score Gain P1]
+patch=1,EE,49ED39A9,extended,F03D4102
+
+[Max Score P1]
+patch=1,EE,96A05356,extended,45F25DEE
+
+[Infinite Health P1]
+patch=1,EE,A2F41996,extended,94C16950
+
+[Infinite Lives P2]
+patch=1,EE,C5544422,extended,54CD51DB
+
+[Quick Score Gain P2]
+patch=1,EE,D9996EC6,extended,471F039F
+
+[Max Score P2]
+patch=1,EE,44815AB9,extended,3C3D3A7D
+
+[Quick High Score Gain]
+patch=1,EE,629A2C1F,extended,C5627458
+
+[Max High Score]
+patch=1,EE,3C85F015,extended,0B14436A

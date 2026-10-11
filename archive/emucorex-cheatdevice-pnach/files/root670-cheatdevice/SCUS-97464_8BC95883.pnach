@@ -1,0 +1,190 @@
+gametitle=Sly 3-Honor Among Thieves (SCUS-97464)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902A1940,extended,0C0A47A3
+
+[Disable FMV]
+patch=1,EE,202AA040,extended,24020001
+
+[Quick Coins Gain]
+patch=1,EE,00468DDC,extended,000000FF
+
+[Super Quick Coins Gain]
+patch=1,EE,10468DDC,extended,0000FFFF
+
+[Max Gold Coins]
+patch=1,EE,20468DDC,extended,05F5E0FF
+
+[Infinite Health]
+patch=1,EE,2021E050,extended,0C07D0FC
+patch=1,EE,2021E05C,extended,AC82016C
+
+[Have All Gadgets]
+patch=1,EE,20468DCC,extended,FFFFFFFF
+patch=1,EE,20468DD0,extended,FFFFFFFF
+
+[Infinite Gadget Usage]
+patch=1,EE,201F444C,extended,24020064
+patch=1,EE,201F44E8,extended,24020064
+
+[Coins Dont Decrease When Buying Gadgets]
+patch=1,EE,2021FFAC,extended,26250000
+
+[Coins Increase When Buying Gadgets]
+patch=1,EE,2021FFAC,extended,02322821
+
+[Infinite Double Jumps]
+patch=1,EE,201B7604,extended,00000000
+
+[Access All Episodes (Not Saveable)]
+patch=1,EE,2025E43C,extended,24100001
+
+[Hazard Room]
+patch=1,EE,20468E94,extended,3F800000
+
+[An Opera Of Fear]
+patch=1,EE,20468EA0,extended,3F800000
+
+[Rumble Down Under]
+patch=1,EE,20468EAC,extended,3F800000
+
+[Flight Of Fancy]
+patch=1,EE,20468EB8,extended,3F800000
+
+[A Cold Alliance]
+patch=1,EE,20468EC4,extended,3F800000
+
+[Dead Mean Tell No Tales]
+patch=1,EE,20468ED0,extended,3F800000
+
+[Honor Among Thieves]
+patch=1,EE,20468EDC,extended,3F800000
+
+[Episode 1-Canal Chase-Expert Course]
+patch=1,EE,2046DF30,extended,00000001
+
+[Episode 1-Air Time]
+patch=1,EE,2046DF20,extended,00000001
+
+[Episode 1-Tower Scramble]
+patch=1,EE,2046DF98,extended,00000001
+
+[Episode 1-Coin Chase]
+patch=1,EE,2046DF90,extended,00000001
+
+[Episode 1-Speed Bombing]
+patch=1,EE,2046DF60,extended,00000001
+
+[Episode 1-Octavio Canal Challenge]
+patch=1,EE,2046DF70,extended,00000001
+
+[Episode 1-Octavio's Last Stand]
+patch=1,EE,2046DF68,extended,00000001
+
+[Episode 1-Venice Treasure Hunt]
+patch=1,EE,2046DF78,extended,00000001
+
+[Episode 2-Rock Run]
+patch=1,EE,2046E028,extended,00000001
+
+[Episode 2-Cave Sprint]
+patch=1,EE,2046DFC8,extended,00000001
+
+[Episode 2-Cave Mayhem]
+patch=1,EE,2046DFD0,extended,00000001
+
+[Episode 2-Scaling The Drill]
+patch=1,EE,2046DFF0,extended,00000001
+
+[Episode 2-Guard Swappin']
+patch=1,EE,2046E038,extended,00000001
+
+[Episode 2-Quick Claw]
+patch=1,EE,2046DFE0,extended,00000001
+
+[Episode 2-Pressure Brawl]
+patch=1,EE,2046DFB0,extended,00000001
+
+[Episode 2-Croc And Coins]
+patch=1,EE,2046E000,extended,00000001
+
+[Episode 2-Carmelita Climb]
+patch=1,EE,2046E010,extended,00000001
+
+[Episode 2-Outback Treasure Hunt]
+patch=1,EE,2046E018,extended,00000001
+
+[Episode 3-Castle Quick Climb]
+patch=1,EE,2046E0B0,extended,00000001
+
+[Episode 3-Muggshot Goon Attack]
+patch=1,EE,2046E068,extended,00000001
+
+[Episode 3-Security Breach]
+patch=1,EE,2046E078,extended,00000001
+
+[Episode 3-Defend The Hangar]
+patch=1,EE,2046E070,extended,00000001
+
+[Episode 3-Precision Air Duel]
+patch=1,EE,2046E0C0,extended,00000001
+
+[Episode 3-Wolf Rampage]
+patch=1,EE,2046E0D8,extended,00000001
+
+[Episode 3-One Woman Army]
+patch=1,EE,2046E0A0,extended,00000001
+
+[Episode 3-Going Out On A Wing]
+patch=1,EE,2046E088,extended,00000001
+
+[Episode 3-Holland Treasure Hunt]
+patch=1,EE,2046E090,extended,00000001
+
+[Episode 4-Big Air In China]
+patch=1,EE,2046E100,extended,00000001
+
+[Episode 4-Sharpshooter]
+patch=1,EE,2046E138,extended,00000001
+
+[Episode 4-Treetop Tangle]
+patch=1,EE,2046E128,extended,00000001
+
+[Episode 4-Tsao Showdown]
+patch=1,EE,2046E120,extended,00000001
+
+[Episode 4-China Treasure Hunt]
+patch=1,EE,2046E0F8,extended,00000001
+
+[Episode 5-Patch Grab]
+patch=1,EE,2046E1B0,extended,00000001
+
+[Episode 5-Stealth Challenge]
+patch=1,EE,2046E1B8,extended,00000001
+
+[Episode 5-Boat Bash]
+patch=1,EE,2046E190,extended,00000001
+
+[Episode 5-Last Ship Sailing]
+patch=1,EE,2046E160,extended,00000001
+
+[Episode 5-Pirate Treasure Hunt]
+patch=1,EE,2046E1A0,extended,00000001
+
+[Episode 6-Beauty Versus The Beast]
+patch=1,EE,2046E210,extended,00000001
+
+[Episode 6-Road Rage]
+patch=1,EE,2046E1F8,extended,00000001
+
+[Episode 6-Dr. M Dogfight]
+patch=1,EE,2046E1D8,extended,00000001
+
+[Episode 6-Ultimate Gauntlet]
+patch=1,EE,2046E220,extended,00000001
+
+[Episode 6-Battle Against Time]
+patch=1,EE,2046E1E8,extended,00000001

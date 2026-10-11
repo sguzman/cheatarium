@@ -1,0 +1,171 @@
+gametitle=Big Mutha Truckers 2 (SLUS-21086)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90270E50,extended,0C0F7155
+
+[Infinite Cash]
+patch=1,EE,11B8D854,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,21B8D854,extended,05F5E0FF
+
+[Cash Never Decreases When Buying Things]
+patch=1,EE,201BB190,extended,00000000
+
+[Cash Increases When Buying Things]
+patch=1,EE,201BB18C,extended,00671823
+
+[Max Items In Stock]
+patch=1,EE,200C0220,extended,24020063
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC820018
+patch=1,EE,201BF190,extended,08030088
+
+[Infinite Time]
+patch=1,EE,2021A290,extended,00000000
+
+[Infinite Damage]
+patch=1,EE,20347308,extended,03E00008
+patch=1,EE,2034730C,extended,00000000
+
+[MISSIONS]
+patch=1,EE,2059A718,extended,00000000
+
+[Unknown]
+patch=1,EE,2059A71C,extended,00000000
+
+[BRIDGE]
+patch=1,EE,2059A720,extended,00000000
+
+[NODAMAGE]
+patch=1,EE,2059A724,extended,00000000
+
+[CASH]
+patch=1,EE,2059A728,extended,00000000
+
+[NOCOPS]
+patch=1,EE,2059A72C,extended,00000000
+
+[EBM]
+patch=1,EE,2059A730,extended,00000000
+
+[PJ]
+patch=1,EE,2059A734,extended,00000000
+
+[PAJ]
+patch=1,EE,2059A738,extended,00000000
+
+[COPS]
+patch=1,EE,2059A73C,extended,00000000
+
+[BIKERS]
+patch=1,EE,2059A740,extended,00000000
+
+[Unknown 2]
+patch=1,EE,2059A744,extended,00000000
+
+[GALLERY]
+patch=1,EE,2059A748,extended,00000000
+
+[Bar Tenders]
+patch=1,EE,2059BD9C,extended,00000001
+
+[Jackson Family]
+patch=1,EE,2059BFAC,extended,00000001
+
+[Jurors]
+patch=1,EE,2059C1BC,extended,00000001
+
+[Store Keepers]
+patch=1,EE,2059C3CC,extended,00000001
+
+[Licensed Music]
+patch=1,EE,2059C5DC,extended,00000001
+
+[Licensed Music II]
+patch=1,EE,2059C7EC,extended,00000001
+
+[Cheats]
+patch=1,EE,2059C9FC,extended,00000001
+
+[Calendar]
+patch=1,EE,2059CC0C,extended,00000001
+
+[Trucks]
+patch=1,EE,2059CE1C,extended,00000001
+
+[Hi-Res Bobbie]
+patch=1,EE,2059D02C,extended,00000001
+
+[Cover Art]
+patch=1,EE,2059D23C,extended,00000001
+
+[Bars]
+patch=1,EE,2059D44C,extended,00000001
+
+[Stores]
+patch=1,EE,2059D65C,extended,00000001
+
+[Trader Videos]
+patch=1,EE,2059D86C,extended,00000001
+
+[Store Keeper Vids]
+patch=1,EE,2059DA7C,extended,00000001
+
+[Bar Tender Vids]
+patch=1,EE,2059DC8C,extended,00000001
+
+[Jackson Vids]
+patch=1,EE,2059DE9C,extended,00000001
+
+[Juror Vids]
+patch=1,EE,2059E0AC,extended,00000001
+
+[Audio Outtakes 1]
+patch=1,EE,2059E2BC,extended,00000001
+
+[Audio Outtakes 2]
+patch=1,EE,2059E4CC,extended,00000001
+
+[Radio Stations]
+patch=1,EE,2059E6DC,extended,00000001
+
+[Traders]
+patch=1,EE,2059E8EC,extended,00000001
+
+[All Gallery]
+patch=1,EE,4059BD9C,extended,00150084
+patch=1,EE,00000001,extended,00000000
+
+[Special Guests]
+patch=1,EE,705B1334,extended,00000004
+
+[Publicity Tour]
+patch=1,EE,705B136C,extended,00000004
+
+[A Censortive Issue]
+patch=1,EE,705B13A4,extended,00000004
+
+[Cold Brouhahaski]
+patch=1,EE,705B13DC,extended,00000004
+
+[Dangerous Downhill Doin's]
+patch=1,EE,705B1414,extended,00000004
+
+[Monkey Mash]
+patch=1,EE,705B144C,extended,00000004
+
+[Breakdown In Communications]
+patch=1,EE,705B1484,extended,00000004
+
+[Home Run]
+patch=1,EE,705B14BC,extended,00000004
+
+[Medial Mayhem!]
+patch=1,EE,705B14F4,extended,00000004
+
+[Attack Of The Banana Men From The Moon!]
+patch=1,EE,705B152C,extended,00000004

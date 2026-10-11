@@ -1,0 +1,40 @@
+gametitle=World Destruction League-Thunder Tanks (SLUS-20005)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100040,extended,001AFB5B
+
+[Infinite Lives]
+patch=1,EE,20F40A0C,extended,00000001
+
+[Invincibility P1]
+patch=1,EE,1021C940,extended,00000001
+
+[Have All Weapons]
+patch=1,EE,1021C944,extended,00000001
+
+[Reverse Gravity]
+patch=1,EE,1021C948,extended,00000001
+
+[Pig Missiles]
+patch=1,EE,1021C94C,extended,00000001
+
+[Matrix Camera]
+patch=1,EE,1021C950,extended,00000001
+
+[Power Up Frenzy]
+patch=1,EE,1021C954,extended,00000001
+
+[Homing Missiles]
+patch=1,EE,1021C958,extended,00000001
+
+[Attack Of The Blur]
+patch=1,EE,1021C95C,extended,00000001
+
+[High Speed Shrapnel]
+patch=1,EE,1021C960,extended,00000001
+
+[Banana Effect]
+patch=1,EE,1021C964,extended,00000001

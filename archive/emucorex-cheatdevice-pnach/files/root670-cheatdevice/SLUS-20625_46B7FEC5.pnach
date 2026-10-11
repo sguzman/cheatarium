@@ -1,0 +1,311 @@
+gametitle=Moto GP 3 (SLUS-20625)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,002E213F
+
+[Challenge 1]
+patch=1,EE,0036CC6C,extended,00000002
+
+[Challenge 2]
+patch=1,EE,0036CC6D,extended,00000002
+
+[Challenge 3]
+patch=1,EE,0036CC6E,extended,00000002
+
+[Challenge 4]
+patch=1,EE,0036CC6F,extended,00000002
+
+[Challenge 5]
+patch=1,EE,0036CC70,extended,00000002
+
+[Challenge 6]
+patch=1,EE,0036CC71,extended,00000002
+
+[Challenge 7]
+patch=1,EE,0036CC72,extended,00000002
+
+[Challenge 8]
+patch=1,EE,0036CC73,extended,00000002
+
+[Challenge 9]
+patch=1,EE,0036CC74,extended,00000002
+
+[Challenge 10]
+patch=1,EE,0036CC75,extended,00000002
+
+[Challenge 11]
+patch=1,EE,0036CC76,extended,00000002
+
+[Challenge 12]
+patch=1,EE,0036CC77,extended,00000002
+
+[Challenge 13]
+patch=1,EE,0036CC78,extended,00000002
+
+[Challenge 14]
+patch=1,EE,0036CC79,extended,00000002
+
+[Challenge 15]
+patch=1,EE,0036CC7A,extended,00000002
+
+[Challenge 16]
+patch=1,EE,0036CC7B,extended,00000002
+
+[Challenge 17]
+patch=1,EE,0036CC7C,extended,00000002
+
+[Challenge 18]
+patch=1,EE,0036CC7D,extended,00000002
+
+[Challenge 19]
+patch=1,EE,0036CC7E,extended,00000002
+
+[Challenge 20]
+patch=1,EE,0036CC7F,extended,00000002
+
+[Challenge 21]
+patch=1,EE,0036CC80,extended,00000002
+
+[Challenge 22]
+patch=1,EE,0036CC81,extended,00000002
+
+[Challenge 23]
+patch=1,EE,0036CC82,extended,00000002
+
+[Challenge 24]
+patch=1,EE,0036CC83,extended,00000002
+
+[Challenge 25]
+patch=1,EE,0036CC84,extended,00000002
+
+[Challenge 26]
+patch=1,EE,0036CC85,extended,00000002
+
+[Challenge 27]
+patch=1,EE,0036CC86,extended,00000002
+
+[Challenge 28]
+patch=1,EE,0036CC87,extended,00000002
+
+[Challenge 29]
+patch=1,EE,0036CC88,extended,00000002
+
+[Challenge 30]
+patch=1,EE,0036CC89,extended,00000002
+
+[Challenge 31]
+patch=1,EE,0036CC8A,extended,00000002
+
+[Challenge 32]
+patch=1,EE,0036CC8B,extended,00000002
+
+[Challenge 33]
+patch=1,EE,0036CC8C,extended,00000002
+
+[Challenge 34]
+patch=1,EE,0036CC8D,extended,00000002
+
+[Challenge 35]
+patch=1,EE,0036CC8E,extended,00000002
+
+[Challenge 36]
+patch=1,EE,0036CC8F,extended,00000002
+
+[Challenge 37]
+patch=1,EE,0036CC90,extended,00000002
+
+[Challenge 38]
+patch=1,EE,0036CC91,extended,00000002
+
+[Challenge 39]
+patch=1,EE,0036CC92,extended,00000002
+
+[Challenge 40]
+patch=1,EE,0036CC93,extended,00000002
+
+[Challenge 41]
+patch=1,EE,0036CC94,extended,00000002
+
+[Challenge 42]
+patch=1,EE,0036CC95,extended,00000002
+
+[Challenge 43]
+patch=1,EE,0036CC96,extended,00000002
+
+[Challenge 44]
+patch=1,EE,0036CC97,extended,00000002
+
+[Challenge 45]
+patch=1,EE,0036CC98,extended,00000002
+
+[Challenge 46]
+patch=1,EE,0036CC99,extended,00000002
+
+[Challenge 47]
+patch=1,EE,0036CC9A,extended,00000002
+
+[Challenge 48]
+patch=1,EE,0036CC9B,extended,00000002
+
+[Challenge 49]
+patch=1,EE,0036CC9C,extended,00000002
+
+[Challenge 50]
+patch=1,EE,0036CC9D,extended,00000002
+
+[Challenge 51]
+patch=1,EE,0036CC9E,extended,00000002
+
+[Challenge 52]
+patch=1,EE,0036CC9F,extended,00000002
+
+[Challenge 53]
+patch=1,EE,0036CCA0,extended,00000002
+
+[Challenge 54]
+patch=1,EE,0036CCA1,extended,00000002
+
+[Challenge 55]
+patch=1,EE,0036CCA2,extended,00000002
+
+[Challenge 56]
+patch=1,EE,0036CCA3,extended,00000002
+
+[Challenge 57]
+patch=1,EE,0036CCA4,extended,00000002
+
+[Challenge 58]
+patch=1,EE,0036CCA5,extended,00000002
+
+[Challenge 59]
+patch=1,EE,0036CCA6,extended,00000002
+
+[Challenge 60]
+patch=1,EE,0036CCA7,extended,00000002
+
+[Challenge 61]
+patch=1,EE,0036CCA8,extended,00000002
+
+[Challenge 62]
+patch=1,EE,0036CCA9,extended,00000002
+
+[Challenge 63]
+patch=1,EE,0036CCAA,extended,00000002
+
+[Challenge 64]
+patch=1,EE,0036CCAB,extended,00000002
+
+[Challenge 65]
+patch=1,EE,0036CCAC,extended,00000002
+
+[Challenge 66]
+patch=1,EE,0036CCAD,extended,00000002
+
+[Challenge 67]
+patch=1,EE,0036CCAE,extended,00000002
+
+[Challenge 68]
+patch=1,EE,0036CCAF,extended,00000002
+
+[Challenge 69]
+patch=1,EE,0036CCB0,extended,00000002
+
+[Challenge 70]
+patch=1,EE,0036CCB1,extended,00000002
+
+[Challenge 71]
+patch=1,EE,0036CCB2,extended,00000002
+
+[Challenge 72]
+patch=1,EE,0036CCB3,extended,00000002
+
+[Challenge 73]
+patch=1,EE,0036CCB4,extended,00000002
+
+[Challenge 74]
+patch=1,EE,0036CCB5,extended,00000002
+
+[Challenge 75]
+patch=1,EE,0036CCB6,extended,00000002
+
+[Challenge 76]
+patch=1,EE,0036CCB7,extended,00000002
+
+[Challenge 77]
+patch=1,EE,0036CCB8,extended,00000002
+
+[Challenge 78]
+patch=1,EE,0036CCB9,extended,00000002
+
+[Challenge 79]
+patch=1,EE,0036CCBA,extended,00000002
+
+[Challenge 80]
+patch=1,EE,0036CCBB,extended,00000002
+
+[Challenge 81]
+patch=1,EE,0036CCBC,extended,00000002
+
+[Challenge 82]
+patch=1,EE,0036CCBD,extended,00000002
+
+[Challenge 83]
+patch=1,EE,0036CCBE,extended,00000002
+
+[Challenge 84]
+patch=1,EE,0036CCBF,extended,00000002
+
+[Challenge 85]
+patch=1,EE,0036CCC0,extended,00000002
+
+[Challenge 86]
+patch=1,EE,0036CCC1,extended,00000002
+
+[Challenge 87]
+patch=1,EE,0036CCC2,extended,00000002
+
+[Challenge 88]
+patch=1,EE,0036CCC3,extended,00000002
+
+[Challenge 89]
+patch=1,EE,0036CCC4,extended,00000002
+
+[Challenge 90]
+patch=1,EE,0036CCC5,extended,00000002
+
+[Challenge 91]
+patch=1,EE,0036CCC6,extended,00000002
+
+[Challenge 92]
+patch=1,EE,0036CCC7,extended,00000002
+
+[Challenge 93]
+patch=1,EE,0036CCC8,extended,00000002
+
+[Challenge 94]
+patch=1,EE,0036CCC9,extended,00000002
+
+[Challenge 95]
+patch=1,EE,0036CCCA,extended,00000002
+
+[Challenge 96]
+patch=1,EE,0036CCCB,extended,00000002
+
+[Challenge 97]
+patch=1,EE,0036CCCC,extended,00000002
+
+[Challenge 98]
+patch=1,EE,0036CCCD,extended,00000002
+
+[Challenge 99]
+patch=1,EE,0036CCCE,extended,00000002
+
+[Challenge 100]
+patch=1,EE,0036CCCF,extended,00000002
+
+[All Challenges]
+patch=1,EE,4036CC6C,extended,00190001
+patch=1,EE,02020202,extended,00000000

@@ -1,0 +1,253 @@
+gametitle=Brothers In Arms-Road To Hill 30 (SLUS-21163)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9014CE94,extended,0C050A4A
+
+[Infinite Health]
+patch=1,EE,20579524,extended,24020064
+patch=1,EE,20579558,extended,AEA2040C
+
+[Infinite Ammo (Overall)]
+patch=1,EE,2041546C,extended,240603E7
+patch=1,EE,20415470,extended,AC460484
+
+[Infinite Ammo (In Clip)]
+patch=1,EE,20415284,extended,24060063
+patch=1,EE,204152C0,extended,AE66049C
+
+[P1 Press {R1} To Fire With No Recoil]
+patch=1,EE,D0665D82,extended,0000F7FF
+patch=1,EE,2020619C,extended,00000000
+patch=1,EE,D0665D82,extended,0010F7FF
+patch=1,EE,2020619C,extended,AE820070
+
+[Unlock All Chapters/Extras]
+patch=1,EE,201541F0,extended,00430821
+patch=1,EE,201541F4,extended,24020001
+patch=1,EE,201541FC,extended,AC220000
+
+[Rendezvous With Destiny-June 6, 1944]
+patch=1,EE,20665448,extended,00000001
+
+[Ambush At Exit 4-June 6, 1944]
+patch=1,EE,2066544C,extended,00000001
+
+[Objective XYZ-June 6, 1944]
+patch=1,EE,20665450,extended,00000001
+
+[Foucarville Blockade-June 6, 1944]
+patch=1,EE,20665454,extended,00000001
+
+[Rommel's Asparagus-June 6, 1944]
+patch=1,EE,20665458,extended,00000001
+
+[Action At Vierville-June 7, 1944]
+patch=1,EE,2066545C,extended,00000001
+
+[Dead Man's Corner-June 7, 1944]
+patch=1,EE,20665460,extended,00000001
+
+[The Crack Of Dawn-June 8, 1944]
+patch=1,EE,20665464,extended,00000001
+
+[The Fall Of St. Come-June e8, 1944]
+patch=1,EE,20665468,extended,00000001
+
+[Buying The Farm-June 9, 1944]
+patch=1,EE,2066546C,extended,00000001
+
+[Alternate Route-June 9, 1044]
+patch=1,EE,20665470,extended,00000001
+
+[Purple Heart Lane-June 10, 1944]
+patch=1,EE,20665474,extended,00000001
+
+[Cole's Charge-June 11, 1944]
+patch=1,EE,20665478,extended,00000001
+
+[Ripe Pickings-June 11, 1944]
+patch=1,EE,2066547C,extended,00000001
+
+[Push Into Carentan-June 12, 1944]
+patch=1,EE,20665480,extended,00000001
+
+[Cat And Mouse-June 12, 1944]
+patch=1,EE,20665484,extended,00000001
+
+[No Better Spot To Die-June 13, 1944]
+patch=1,EE,20665488,extended,00000001
+
+[Victory In Carentan-June 14, 1944]
+patch=1,EE,2066548C,extended,00000001
+
+[All Easy Levels]
+patch=1,EE,40665448,extended,00120001
+patch=1,EE,00000001,extended,00000000
+
+[Rendezvous With Destiny-June 6, 1944]
+patch=1,EE,206654A4,extended,00000001
+
+[Ambush At Exit 4-June 6, 1944]
+patch=1,EE,206654A8,extended,00000001
+
+[Objective XYZ-June 6, 1944]
+patch=1,EE,206654AC,extended,00000001
+
+[Foucarville Blockade-June 6, 1944]
+patch=1,EE,206654B0,extended,00000001
+
+[Rommel's Asparagus-June 6, 1944]
+patch=1,EE,206654B4,extended,00000001
+
+[Action At Vierville-June 7, 1944]
+patch=1,EE,206654B8,extended,00000001
+
+[Dead Man's Corner-June 7, 1944]
+patch=1,EE,206654BC,extended,00000001
+
+[The Crack Of Dawn-June 8, 1944]
+patch=1,EE,206654C0,extended,00000001
+
+[The Fall Of St. Come-June e8, 1944]
+patch=1,EE,206654C4,extended,00000001
+
+[Buying The Farm-June 9, 1944]
+patch=1,EE,206654C8,extended,00000001
+
+[Alternate Route-June 9, 1044]
+patch=1,EE,206654CC,extended,00000001
+
+[Purple Heart Lane-June 10, 1944]
+patch=1,EE,206654D0,extended,00000001
+
+[Cole's Charge-June 11, 1944]
+patch=1,EE,206654D4,extended,00000001
+
+[Ripe Pickings-June 11, 1944]
+patch=1,EE,206654D8,extended,00000001
+
+[Push Into Carentan-June 12, 1944]
+patch=1,EE,206654DC,extended,00000001
+
+[Cat And Mouse-June 12, 1944]
+patch=1,EE,206654E0,extended,00000001
+
+[No Better Spot To Die-June 13, 1944]
+patch=1,EE,206654E4,extended,00000001
+
+[All Normal Levels]
+patch=1,EE,406654A4,extended,00110001
+patch=1,EE,00000001,extended,00000000
+
+[Rendezvous With Destiny-June 6, 1944]
+patch=1,EE,20665500,extended,00000001
+
+[Ambush At Exit 4-June 6, 1944]
+patch=1,EE,20665504,extended,00000001
+
+[Objective XYZ-June 6, 1944]
+patch=1,EE,20665508,extended,00000001
+
+[Foucarville Blockade-June 6, 1944]
+patch=1,EE,2066550C,extended,00000001
+
+[Rommel's Asparagus-June 6, 1944]
+patch=1,EE,20665510,extended,00000001
+
+[Action At Vierville-June 7, 1944]
+patch=1,EE,20665514,extended,00000001
+
+[Dead Man's Corner-June 7, 1944]
+patch=1,EE,20665518,extended,00000001
+
+[The Crack Of Dawn-June 8, 1944]
+patch=1,EE,2066551C,extended,00000001
+
+[The Fall Of St. Come-June e8, 1944]
+patch=1,EE,20665520,extended,00000001
+
+[Buying The Farm-June 9, 1944]
+patch=1,EE,20665524,extended,00000001
+
+[Alternate Route-June 9, 1044]
+patch=1,EE,20665528,extended,00000001
+
+[Purple Heart Lane-June 10, 1944]
+patch=1,EE,2066552C,extended,00000001
+
+[Cole's Charge-June 11, 1944]
+patch=1,EE,20665530,extended,00000001
+
+[Ripe Pickings-June 11, 1944]
+patch=1,EE,20665534,extended,00000001
+
+[Push Into Carentan-June 12, 1944]
+patch=1,EE,20665538,extended,00000001
+
+[Cat And Mouse-June 12, 1944]
+patch=1,EE,2066553C,extended,00000001
+
+[No Better Spot To Die-June 13, 1944]
+patch=1,EE,20665540,extended,00000001
+
+[All Hard Levels]
+patch=1,EE,40665500,extended,00110001
+patch=1,EE,00000001,extended,00000000
+
+[Rendezvous With Destiny-June 6, 1944]
+patch=1,EE,2066555C,extended,00000001
+
+[Ambush At Exit 4-June 6, 1944]
+patch=1,EE,20665560,extended,00000001
+
+[Objective XYZ-June 6, 1944]
+patch=1,EE,20665564,extended,00000001
+
+[Foucarville Blockade-June 6, 1944]
+patch=1,EE,20665568,extended,00000001
+
+[Rommel's Asparagus-June 6, 1944]
+patch=1,EE,2066556C,extended,00000001
+
+[Action At Vierville-June 7, 1944]
+patch=1,EE,20665570,extended,00000001
+
+[Dead Man's Corner-June 7, 1944]
+patch=1,EE,20665574,extended,00000001
+
+[The Crack Of Dawn-June 8, 1944]
+patch=1,EE,20665578,extended,00000001
+
+[The Fall Of St. Come-June e8, 1944]
+patch=1,EE,2066557C,extended,00000001
+
+[Buying The Farm-June 9, 1944]
+patch=1,EE,20665580,extended,00000001
+
+[Alternate Route-June 9, 1044]
+patch=1,EE,20665584,extended,00000001
+
+[Purple Heart Lane-June 10, 1944]
+patch=1,EE,20665588,extended,00000001
+
+[Cole's Charge-June 11, 1944]
+patch=1,EE,2066558C,extended,00000001
+
+[Ripe Pickings-June 11, 1944]
+patch=1,EE,20665590,extended,00000001
+
+[Push Into Carentan-June 12, 1944]
+patch=1,EE,20665594,extended,00000001
+
+[Cat And Mouse-June 12, 1944]
+patch=1,EE,20665598,extended,00000001
+
+[No Better Spot To Die-June 13, 1944]
+patch=1,EE,2066559C,extended,00000001
+
+[All Authentic Levels]
+patch=1,EE,4066555C,extended,00110001
+patch=1,EE,00000001,extended,00000000

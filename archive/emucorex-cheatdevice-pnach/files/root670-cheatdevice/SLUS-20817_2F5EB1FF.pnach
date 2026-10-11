@@ -1,0 +1,154 @@
+gametitle=Headhunter-Redemption (SLUS-20817)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90340238,extended,0C0F1172
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C014400
+patch=1,EE,200C0224,extended,AE010038
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,C6020038
+patch=1,EE,201CDE80,extended,0C030088
+
+[Infinite Ammo]
+patch=1,EE,202364F8,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,202364F0,extended,00822021
+
+[Max Infinite Ammo]
+patch=1,EE,202364F0,extended,240403E7
+
+[Never Reload]
+patch=1,EE,201C4C74,extended,00000000
+
+[Cant Detect Mines]
+patch=1,EE,201C75FC,extended,00000000
+
+[Cant Detect/Never Exploded Mines]
+patch=1,EE,201C88A8,extended,00000000
+
+[Debug Mode (Hold {SELECT})]
+patch=1,EE,0043B8C8,extended,00000001
+
+[Unlock All Artwork & Video/Sound Clips]
+patch=1,EE,200C0230,extended,2401000E
+patch=1,EE,200C0230,extended,A0410018
+patch=1,EE,200C0230,extended,03E00008
+patch=1,EE,200C0230,extended,AE000134
+patch=1,EE,20153970,extended,0C03008C
+
+[P1 Press {R1}+Up For Invulnerable On]
+patch=1,EE,D059BADC,extended,0000F7EF
+patch=1,EE,00494D1D,extended,00000001
+
+[P1 Press {R1}+Down For Invulnerable Off]
+patch=1,EE,D059BADC,extended,0000F7BF
+patch=1,EE,00494D1D,extended,00000000
+
+[Invulnerable Always On]
+patch=1,EE,00494D1D,extended,00000001
+
+[Invulnerable Always Off]
+patch=1,EE,00494D1D,extended,00000000
+
+[P1 Press {L1}+Up For Walk Thru Walls On]
+patch=1,EE,D059BADC,extended,0000FBEF
+patch=1,EE,201CEAF4,extended,24020000
+
+[P1 Press {L1}+Down For Walk Thru Walls Off]
+patch=1,EE,D059BADC,extended,0000FBBF
+patch=1,EE,201CEAF4,extended,8E4201B8
+
+[Walk Thru Walls Always On]
+patch=1,EE,201CEAF4,extended,24020000
+
+[Walk Thru Walls Always Off]
+patch=1,EE,201CEAF4,extended,8E4201B8
+
+[P1 Press {L1}+Right For Debug HUD On]
+patch=1,EE,D059BADC,extended,0000FBDF
+patch=1,EE,201381A0,extended,24020001
+
+[P1 Press {L1}+Left For Debug HUD Off]
+patch=1,EE,D059BADC,extended,0000FB7F
+patch=1,EE,201381A0,extended,90620004
+
+[Debug HUD Always On]
+patch=1,EE,201381A0,extended,24020001
+
+[Debug HUD Always Off]
+patch=1,EE,201381A0,extended,90620004
+
+[P1 Press {R1}+Right For Show MEM On]
+patch=1,EE,D059BADC,extended,0000F7DF
+patch=1,EE,20138678,extended,24020001
+
+[P1 Press {R1}+Left For Show MEM Off]
+patch=1,EE,D059BADC,extended,0000F77F
+patch=1,EE,20138678,extended,90420005
+
+[Show MEM Always On]
+patch=1,EE,20138678,extended,24020001
+
+[Show MEM Always Off]
+patch=1,EE,20138678,extended,90420005
+
+[P1 Press {L2}+Up For HUD Border On]
+patch=1,EE,D059BADC,extended,0000FEEF
+patch=1,EE,2012BC20,extended,24020001
+
+[P1 Press {L2}+Down For HUD Border Off]
+patch=1,EE,D059BADC,extended,0000FEBF
+patch=1,EE,2012BC20,extended,92A20008
+
+[HUD Border Always On]
+patch=1,EE,2012BC20,extended,24020001
+
+[HUD Border Always Off]
+patch=1,EE,2012BC20,extended,92A20008
+
+[P1 Press {L2}+Right For PhysicsVol On]
+patch=1,EE,D059BADC,extended,0000FEDF
+patch=1,EE,0043BA89,extended,00000001
+
+[P1 Press {L2}+Left For PhysicsVol Off]
+patch=1,EE,D059BADC,extended,0000FE7F
+patch=1,EE,0043BA89,extended,00000000
+
+[PhysicsVol Always On]
+patch=1,EE,0043BA89,extended,00000001
+
+[PhysicsVol Always Off]
+patch=1,EE,0043BA89,extended,00000000
+
+[P1 Press {R2}+Up For Idiot AI On]
+patch=1,EE,D059BADC,extended,0000FDEF
+patch=1,EE,004A1840,extended,00000001
+
+[P1 Press {R2}+Down For Idiot AI Off]
+patch=1,EE,D059BADC,extended,0000FDBF
+patch=1,EE,004A1840,extended,00000000
+
+[Idiot AI Always On]
+patch=1,EE,004A1840,extended,00000001
+
+[Idiot AI Always Off]
+patch=1,EE,004A1840,extended,00000000
+
+[P1 Press {R2}+Right For Shadow On]
+patch=1,EE,D059BADC,extended,0000FDDF
+patch=1,EE,0043BA8A,extended,00000001
+
+[P1 Press {R2}+Left For Shadow Off]
+patch=1,EE,D059BADC,extended,0000FD7F
+patch=1,EE,0043BA8A,extended,00000000
+
+[Shadow Always On]
+patch=1,EE,0043BA8A,extended,00000001
+
+[Shadow Always Off]
+patch=1,EE,0043BA8A,extended,00000000

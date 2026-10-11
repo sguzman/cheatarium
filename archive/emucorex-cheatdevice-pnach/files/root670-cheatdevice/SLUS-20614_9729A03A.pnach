@@ -1,0 +1,681 @@
+gametitle=Aero Elite-Combat Academy (SLUS-20614)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9010BD38,extended,0C042EF6
+
+[Infinite Ammo (SRM)]
+patch=1,EE,20176ACC,extended,00000000
+
+[Extra Ammo (SRM)]
+patch=1,EE,10176AC8,extended,00000001
+
+[Infinite Ammo (MRM)]
+patch=1,EE,20176AFC,extended,00000000
+
+[Extra Ammo (MRM)]
+patch=1,EE,10176AF8,extended,00000001
+
+[Infinite Ammo (Guns)]
+patch=1,EE,201787E0,extended,00000000
+
+[Extra Ammo (Guns)]
+patch=1,EE,201787DC,extended,00431021
+
+[Max Score (Training Mode)]
+patch=1,EE,201D0374,extended,24090064
+patch=1,EE,201D037C,extended,00000000
+
+[Max Score (Arcade/Aero Meet 2002 Modes)]
+patch=1,EE,201D0374,extended,3C09000F
+patch=1,EE,201D037C,extended,3529423F
+
+[T-3 Novice Trainer Aircraft]
+patch=1,EE,004F5F60,extended,00000001
+
+[T-3 Special]
+patch=1,EE,004F5F90,extended,00000001
+
+[T-W Supersonic Advanced Trainer Aircraft]
+patch=1,EE,004F5FC0,extended,00000001
+
+[T-2 Aggressor]
+patch=1,EE,004F5FF0,extended,00000001
+
+[T-2 Blue Impulse]
+patch=1,EE,004F6020,extended,00000001
+
+[T-4 Intermediate Trainer Aircraft]
+patch=1,EE,004F6050,extended,00000001
+
+[T-4 Intermediate Trainer Aircraft Red]
+patch=1,EE,004F6080,extended,00000001
+
+[T-4 Blue Impulse]
+patch=1,EE,004F60B0,extended,00000001
+
+[F-1 Support Fighter Aircraft]
+patch=1,EE,004F60E0,extended,00000001
+
+[F-2A Support Fighter Aircraft]
+patch=1,EE,004F6110,extended,00000001
+
+[F-2B Support Fighter Aircraft]
+patch=1,EE,004F6140,extended,00000001
+
+[F-4J Carrier-Based Fighter Aircraft]
+patch=1,EE,004F6170,extended,00000001
+
+[F-4E Fighter Aircraft]
+patch=1,EE,004F61A0,extended,00000001
+
+[F-4EJ Fighter Aircraft]
+patch=1,EE,004F61D0,extended,00000001
+
+[F-4EJ Kai Fighter Aircraft]
+patch=1,EE,004F6200,extended,00000001
+
+[F-15J Fighter Aircraft]
+patch=1,EE,004F6230,extended,00000001
+
+[F-15DJ Fighter Aircraft]
+patch=1,EE,004F6260,extended,00000001
+
+[F-15C Fighter Aircraft]
+patch=1,EE,004F6290,extended,00000001
+
+[F-15E Fighter Bomber Aircraft]
+patch=1,EE,004F62C0,extended,00000001
+
+[F-15DJ Aggressor 1]
+patch=1,EE,004F62F0,extended,00000001
+
+[F-15DJ Aggressor 2]
+patch=1,EE,004F6320,extended,00000001
+
+[F-15DJ Aggressor 3]
+patch=1,EE,004F6350,extended,00000001
+
+[F-15DJ Aggressor 4]
+patch=1,EE,004F6380,extended,00000001
+
+[F-15DJ Aggressor 5]
+patch=1,EE,004F63B0,extended,00000001
+
+[F-15DJ Aggressor 6]
+patch=1,EE,004F63E0,extended,00000001
+
+[F-15DJ Aggressor 7]
+patch=1,EE,004F6410,extended,00000001
+
+[F-14B Carrier-Based Fighter Aircraft]
+patch=1,EE,004F6440,extended,00000001
+
+[F-14B Aggressor]
+patch=1,EE,004F6470,extended,00000001
+
+[F-14B Test Bed]
+patch=1,EE,004F64A0,extended,00000001
+
+[F-16C Fighter Aircraft]
+patch=1,EE,004F64D0,extended,00000001
+
+[F-16C Aggressor]
+patch=1,EE,004F6500,extended,00000001
+
+[F/A-18C Carrier-Based Attack Fighter Aircraft]
+patch=1,EE,004F6530,extended,00000001
+
+[F/A-18C Aggressor]
+patch=1,EE,004F6560,extended,00000001
+
+[F-86F Fighter Aircraft]
+patch=1,EE,004F6590,extended,00000001
+
+[F-86F Fighter Aircraft Air Force]
+patch=1,EE,004F65C0,extended,00000001
+
+[F-86F Blue Impulse]
+patch=1,EE,004F65F0,extended,00000001
+
+[F-104J Fighter Aircraft]
+patch=1,EE,004F6620,extended,00000001
+
+[UF-104J Drone]
+patch=1,EE,004F6650,extended,00000001
+
+[AV-8B Attack Fighter Aircraft]
+patch=1,EE,004F6680,extended,00000001
+
+[AV-8B Attack Fighter Aircraft Low Visibility Paint]
+patch=1,EE,004F66B0,extended,00000001
+
+[C-1 Tactical Transport Aircraft]
+patch=1,EE,004F66E0,extended,00000001
+
+[US-1A Search-And-Rescue Amphibian Plane]
+patch=1,EE,004F6710,extended,00000001
+
+[A-7E Carrier-Based Attack Aircraft]
+patch=1,EE,004F6740,extended,00000001
+
+[A-7E Attack Aircraft]
+patch=1,EE,004F6770,extended,00000001
+
+[A-10 Attack Aircraft]
+patch=1,EE,004F67A0,extended,00000001
+
+[TND-ADV Fighter Aircraft]
+patch=1,EE,004F67D0,extended,00000001
+
+[TND-IDS Attack Aircraft]
+patch=1,EE,004F6800,extended,00000001
+
+[Mr2000C Fighter Aircraft]
+patch=1,EE,004F6830,extended,00000001
+
+[Mr2000C Fighter Aircraft Desert Camouflage]
+patch=1,EE,004F6860,extended,00000001
+
+[MiG-21 Fighter Aircraft]
+patch=1,EE,004F6890,extended,00000001
+
+[MiG-21 Fighter Aircraft Identifying Paint]
+patch=1,EE,004F68C0,extended,00000001
+
+[MiG-29 Fighter Aircraft]
+patch=1,EE,004F68F0,extended,00000001
+
+[MiG-29 Fighter Aircraft Camouflage]
+patch=1,EE,004F6920,extended,00000001
+
+[Su-25 Attack Aircraft]
+patch=1,EE,004F6950,extended,00000001
+
+[Su-27 Fighter Aircraft]
+patch=1,EE,004F6980,extended,00000001
+
+[Su-27 Fighter Aircraft Camouflage]
+patch=1,EE,004F69B0,extended,00000001
+
+[OH-6D Observation Helicopter]
+patch=1,EE,004F6B60,extended,00000001
+
+[OH-6D Observation Helicopter Winter Camouflage]
+patch=1,EE,004F6B90,extended,00000001
+
+[AH-1S Attack Helicopter]
+patch=1,EE,004F6BC0,extended,00000001
+
+[AH-1S Attack Helicopter Winter Camouflage]
+patch=1,EE,004F6BF0,extended,00000001
+
+[AH-64D Attack Helicopter]
+patch=1,EE,004F6C20,extended,00000001
+
+[Primary 1]
+patch=1,EE,004F6C50,extended,00000001
+
+[Primary 2]
+patch=1,EE,004F6C70,extended,00000001
+
+[Primary 3]
+patch=1,EE,004F6C90,extended,00000001
+
+[Primary 4]
+patch=1,EE,004F6CB0,extended,00000001
+
+[Primary 5]
+patch=1,EE,004F6CD0,extended,00000001
+
+[Primary 6]
+patch=1,EE,004F6CF0,extended,00000001
+
+[Basic 1]
+patch=1,EE,004F6D10,extended,00000001
+
+[Basic 2]
+patch=1,EE,004F6D30,extended,00000001
+
+[Basic 3]
+patch=1,EE,004F6D50,extended,00000001
+
+[Basic 4]
+patch=1,EE,004F6D70,extended,00000001
+
+[Basic 5]
+patch=1,EE,004F6D90,extended,00000001
+
+[Basic 6]
+patch=1,EE,004F6DB0,extended,00000001
+
+[Basic 7]
+patch=1,EE,004F6DD0,extended,00000001
+
+[Combat 1]
+patch=1,EE,004F6DF0,extended,00000001
+
+[Combat 2]
+patch=1,EE,004F6E10,extended,00000001
+
+[Combat 3]
+patch=1,EE,004F6E30,extended,00000001
+
+[Combat 4]
+patch=1,EE,004F6E50,extended,00000001
+
+[Combat 5]
+patch=1,EE,004F6ED0,extended,00000001
+
+[Combat 6]
+patch=1,EE,004F6EF0,extended,00000001
+
+[Combat 7]
+patch=1,EE,004F6F10,extended,00000001
+
+[ACM 1]
+patch=1,EE,004F6F30,extended,00000001
+
+[ACM 2]
+patch=1,EE,004F6F50,extended,00000001
+
+[ACM 3]
+patch=1,EE,004F6F70,extended,00000001
+
+[ACM 4]
+patch=1,EE,004F6F90,extended,00000001
+
+[ACM 5]
+patch=1,EE,004F6FB0,extended,00000001
+
+[ACM 6]
+patch=1,EE,004F6FD0,extended,00000001
+
+[Mission 1]
+patch=1,EE,004F6FF0,extended,00000001
+
+[CV Operation 1]
+patch=1,EE,004F7010,extended,00000001
+
+[CV Operation 2]
+patch=1,EE,004F7030,extended,00000001
+
+[CV Operation 3]
+patch=1,EE,004F7050,extended,00000001
+
+[Vtol 1]
+patch=1,EE,004F7070,extended,00000001
+
+[Vtol 2]
+patch=1,EE,004F7090,extended,00000001
+
+[Vtol 3]
+patch=1,EE,004F70B0,extended,00000001
+
+[Vtol 4]
+patch=1,EE,004F70D0,extended,00000001
+
+[Vtol 5]
+patch=1,EE,004F70F0,extended,00000001
+
+[Rotary Wing B 1]
+patch=1,EE,004F7110,extended,00000001
+
+[Rotary Wing B 2]
+patch=1,EE,004F7130,extended,00000001
+
+[Rotary Wing B 3]
+patch=1,EE,004F7150,extended,00000001
+
+[Rotary Wing B 4]
+patch=1,EE,004F7170,extended,00000001
+
+[Rotary Wing B 5]
+patch=1,EE,004F7190,extended,00000001
+
+[Rotary Wing B 6]
+patch=1,EE,004F71B0,extended,00000001
+
+[Rotary Wing B 7]
+patch=1,EE,004F71D0,extended,00000001
+
+[Rotary Wing F 1]
+patch=1,EE,004F71F0,extended,00000001
+
+[Rotary Wing F 2]
+patch=1,EE,004F7210,extended,00000001
+
+[Rotary Wing F 3]
+patch=1,EE,004F7230,extended,00000001
+
+[Rotary Wing F 4]
+patch=1,EE,004F7250,extended,00000001
+
+[Primary 1]
+patch=1,EE,004F6C57,extended,00000064
+
+[Primary 2]
+patch=1,EE,004F6C77,extended,00000064
+
+[Primary 3]
+patch=1,EE,004F6C97,extended,00000064
+
+[Primary 4]
+patch=1,EE,004F6CB7,extended,00000064
+
+[Primary 5]
+patch=1,EE,004F6CD7,extended,00000064
+
+[Primary 6]
+patch=1,EE,004F6CF7,extended,00000064
+
+[Basic 1]
+patch=1,EE,004F6D17,extended,00000064
+
+[Basic 2]
+patch=1,EE,004F6D37,extended,00000064
+
+[Basic 3]
+patch=1,EE,004F6D57,extended,00000064
+
+[Basic 4]
+patch=1,EE,004F6D77,extended,00000064
+
+[Basic 5]
+patch=1,EE,004F6D97,extended,00000064
+
+[Basic 6]
+patch=1,EE,004F6DB7,extended,00000064
+
+[Basic 7]
+patch=1,EE,004F6DD7,extended,00000064
+
+[Combat 1]
+patch=1,EE,004F6DF7,extended,00000064
+
+[Combat 2]
+patch=1,EE,004F6E17,extended,00000064
+
+[Combat 3]
+patch=1,EE,004F6E37,extended,00000064
+
+[Combat 4]
+patch=1,EE,004F6E57,extended,00000064
+
+[Combat 5]
+patch=1,EE,004F6ED7,extended,00000064
+
+[Combat 6]
+patch=1,EE,004F6EF7,extended,00000064
+
+[Combat 7]
+patch=1,EE,004F6F17,extended,00000064
+
+[ACM 1]
+patch=1,EE,004F6F37,extended,00000064
+
+[ACM 2]
+patch=1,EE,004F6F57,extended,00000064
+
+[ACM 3]
+patch=1,EE,004F6F77,extended,00000064
+
+[ACM 4]
+patch=1,EE,004F6F97,extended,00000064
+
+[ACM 5]
+patch=1,EE,004F6FB7,extended,00000064
+
+[ACM 6]
+patch=1,EE,004F6FD7,extended,00000064
+
+[Mission 1]
+patch=1,EE,004F6FF7,extended,00000064
+
+[CV Operation 1]
+patch=1,EE,004F7017,extended,00000064
+
+[CV Operation 2]
+patch=1,EE,004F7037,extended,00000064
+
+[CV Operation 3]
+patch=1,EE,004F7057,extended,00000064
+
+[Vtol 1]
+patch=1,EE,004F7077,extended,00000064
+
+[Vtol 2]
+patch=1,EE,004F7097,extended,00000064
+
+[Vtol 3]
+patch=1,EE,004F70B7,extended,00000064
+
+[Vtol 4]
+patch=1,EE,004F70D7,extended,00000064
+
+[Vtol 5]
+patch=1,EE,004F70F7,extended,00000064
+
+[Rotary Wing B 1]
+patch=1,EE,004F7117,extended,00000064
+
+[Rotary Wing B 2]
+patch=1,EE,004F7137,extended,00000064
+
+[Rotary Wing B 3]
+patch=1,EE,004F7157,extended,00000064
+
+[Rotary Wing B 4]
+patch=1,EE,004F7177,extended,00000064
+
+[Rotary Wing B 5]
+patch=1,EE,004F7197,extended,00000064
+
+[Rotary Wing B 6]
+patch=1,EE,004F71B7,extended,00000064
+
+[Rotary Wing B 7]
+patch=1,EE,004F71D7,extended,00000064
+
+[Rotary Wing F 1]
+patch=1,EE,004F71F7,extended,00000064
+
+[Rotary Wing F 2]
+patch=1,EE,004F7217,extended,00000064
+
+[Rotary Wing F 3]
+patch=1,EE,004F7237,extended,00000064
+
+[Rotary Wing F 4]
+patch=1,EE,004F7257,extended,00000064
+
+[Air To Air 1]
+patch=1,EE,004F7270,extended,00000001
+
+[Air To Air 2]
+patch=1,EE,004F7290,extended,00000001
+
+[Air To Air 3]
+patch=1,EE,004F72B0,extended,00000001
+
+[Air To Air 4]
+patch=1,EE,004F72D0,extended,00000001
+
+[Air To Air 5]
+patch=1,EE,004F72F0,extended,00000001
+
+[Air To Air 6]
+patch=1,EE,004F7310,extended,00000001
+
+[Air To Air 7]
+patch=1,EE,004F7330,extended,00000001
+
+[Air To Air 8]
+patch=1,EE,004F7350,extended,00000001
+
+[Surface 1]
+patch=1,EE,004F7370,extended,00000001
+
+[Surface 2]
+patch=1,EE,004F7390,extended,00000001
+
+[Surface 3]
+patch=1,EE,004F73B0,extended,00000001
+
+[Surface 4]
+patch=1,EE,004F73D0,extended,00000001
+
+[Surface 5]
+patch=1,EE,004F73F0,extended,00000001
+
+[Surface 6]
+patch=1,EE,004F7410,extended,00000001
+
+[Surface 7]
+patch=1,EE,004F7430,extended,00000001
+
+[Surface 8]
+patch=1,EE,004F7450,extended,00000001
+
+[Maneuver 1]
+patch=1,EE,004F7470,extended,00000001
+
+[Maneuver 2]
+patch=1,EE,004F7490,extended,00000001
+
+[Maneuver 3]
+patch=1,EE,004F74D0,extended,00000001
+
+[Maneuver 4]
+patch=1,EE,004F74F0,extended,00000001
+
+[Maneuver 5]
+patch=1,EE,004F7510,extended,00000001
+
+[Maneuver 6]
+patch=1,EE,004F7590,extended,00000001
+
+[Maneuver 7]
+patch=1,EE,004F75B0,extended,00000001
+
+[Maneuver 8]
+patch=1,EE,004F75D0,extended,00000001
+
+[Recon 1]
+patch=1,EE,004F7670,extended,00000001
+
+[Recon 2]
+patch=1,EE,004F7690,extended,00000001
+
+[Recon 3]
+patch=1,EE,004F76B0,extended,00000001
+
+[Air To Air 1]
+patch=1,EE,004F7277,extended,000000AE
+patch=1,EE,104F727C,extended,0000992F
+
+[Air To Air 2]
+patch=1,EE,004F7297,extended,000000AE
+patch=1,EE,104F729C,extended,0000992F
+
+[Air To Air 3]
+patch=1,EE,004F72B7,extended,000000AE
+patch=1,EE,104F72BC,extended,0000992F
+
+[Air To Air 4]
+patch=1,EE,004F72D7,extended,000000AE
+patch=1,EE,104F72DC,extended,0000992F
+
+[Air To Air 5]
+patch=1,EE,004F72F7,extended,000000AE
+patch=1,EE,104F72FC,extended,0000992F
+
+[Air To Air 6]
+patch=1,EE,004F7317,extended,000000AE
+patch=1,EE,104F731C,extended,0000992F
+
+[Air To Air 7]
+patch=1,EE,004F7337,extended,000000AE
+patch=1,EE,104F733C,extended,0000992F
+
+[Air To Air 8]
+patch=1,EE,004F7357,extended,000000AE
+patch=1,EE,104F735C,extended,0000992F
+
+[Surface 1]
+patch=1,EE,004F7377,extended,000000AE
+patch=1,EE,104F737C,extended,0000992F
+
+[Surface 2]
+patch=1,EE,004F7397,extended,000000AE
+patch=1,EE,104F739C,extended,0000992F
+
+[Surface 3]
+patch=1,EE,004F73B7,extended,000000AE
+patch=1,EE,104F73BC,extended,0000992F
+
+[Surface 4]
+patch=1,EE,004F73D7,extended,000000AE
+patch=1,EE,104F73DC,extended,0000992F
+
+[Surface 5]
+patch=1,EE,004F73F7,extended,000000AE
+patch=1,EE,104F73FC,extended,0000992F
+
+[Surface 6]
+patch=1,EE,004F7417,extended,000000AE
+patch=1,EE,104F741C,extended,0000992F
+
+[Surface 7]
+patch=1,EE,004F7437,extended,000000AE
+patch=1,EE,104F743C,extended,0000992F
+
+[Surface 8]
+patch=1,EE,004F7457,extended,000000AE
+patch=1,EE,104F745C,extended,0000992F
+
+[Maneuver 1]
+patch=1,EE,004F7477,extended,000000AE
+patch=1,EE,104F747C,extended,0000992F
+
+[Maneuver 2]
+patch=1,EE,004F7497,extended,000000AE
+patch=1,EE,104F749C,extended,0000992F
+
+[Maneuver 3]
+patch=1,EE,004F74D7,extended,000000AE
+patch=1,EE,104F74DC,extended,0000992F
+
+[Maneuver 4]
+patch=1,EE,004F74F7,extended,000000AE
+patch=1,EE,104F74FC,extended,0000992F
+
+[Maneuver 5]
+patch=1,EE,004F7517,extended,000000AE
+patch=1,EE,104F751C,extended,0000992F
+
+[Maneuver 6]
+patch=1,EE,004F7597,extended,000000AE
+patch=1,EE,104F759C,extended,0000992F
+
+[Maneuver 7]
+patch=1,EE,004F75B7,extended,000000AE
+patch=1,EE,104F75BC,extended,0000992F
+
+[Maneuver 8]
+patch=1,EE,004F75D7,extended,000000AE
+patch=1,EE,104F75DC,extended,0000992F
+
+[Recon 1]
+patch=1,EE,004F7677,extended,000000AE
+patch=1,EE,104F767C,extended,0000992F
+
+[Recon 2]
+patch=1,EE,004F7697,extended,000000AE
+patch=1,EE,104F769C,extended,0000992F
+
+[Recon 3]
+patch=1,EE,004F76B7,extended,000000AE
+patch=1,EE,104F76BC,extended,0000992F

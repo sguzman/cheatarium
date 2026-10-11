@@ -1,0 +1,38 @@
+gametitle=Hot Wheels-Stunt Track Challenge (SLUS-20954)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903C3310,extended,0C10FECD
+
+[P1 Press {L1}+{SELECT} To Stop Lap Timer]
+patch=1,EE,D091A842,extended,0000FBFE
+patch=1,EE,20146870,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Lap Timer]
+patch=1,EE,D091A842,extended,0000FEFE
+patch=1,EE,20146870,extended,E4600000
+
+[P1 Press {R1}+{SELECT} To Stop Overall Timer]
+patch=1,EE,D091A842,extended,0000FEFE
+patch=1,EE,2014688C,extended,00000000
+
+[P1 Press {R1}+{SELECT} To Restart Overall Timer]
+patch=1,EE,D091A842,extended,0000FDFE
+patch=1,EE,2014688C,extended,E60104A8
+
+[Unlock All Events]
+patch=1,EE,20315350,extended,24020001
+patch=1,EE,20315358,extended,AC820004
+
+[Finish Race For Best Score]
+patch=1,EE,200C0220,extended,080DBAB1
+patch=1,EE,200C0224,extended,AC620004
+patch=1,EE,2036EA84,extended,2402270F
+patch=1,EE,2036EA88,extended,08030088
+
+[5 Decals Collected-All Game Break]
+patch=1,EE,203153F0,extended,24030005
+patch=1,EE,203153F4,extended,AC83000C
+patch=1,EE,203153FC,extended,24020000

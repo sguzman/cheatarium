@@ -1,0 +1,27 @@
+gametitle=Ico (SCUS-97113)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9024E5D4,extended,0C09904A
+
+[Press {L1}+{SELECT} To Save Game]
+patch=1,EE,D02811D2,extended,0000FBFE
+patch=1,EE,1063314C,extended,0000001C
+
+[Press {R1}+{SELECT} To Walk On Air]
+patch=1,EE,E002F7FE,extended,002811D2
+patch=1,EE,201E1728,extended,03E00008
+patch=1,EE,201E172C,extended,00000000
+
+[Press {R2}+{SELECT} To Walk Normal]
+patch=1,EE,E002FDFE,extended,002811D2
+patch=1,EE,201E1728,extended,27BDFF70
+patch=1,EE,201E172C,extended,8F83A418
+
+[Idiot AI]
+patch=1,EE,20160720,extended,03E00008
+patch=1,EE,20160724,extended,00000000
+patch=1,EE,201FBB48,extended,03E00008
+patch=1,EE,201FBB4C,extended,00000000

@@ -1,0 +1,196 @@
+gametitle=Pac-Man World 3 (SLUS-21219)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90473A7C,extended,0C11E5BF
+
+[Infinite Lives]
+patch=1,EE,2031D59C,extended,00000000
+
+[Max Infinite Lives]
+patch=1,EE,2031D598,extended,24020003
+
+[Infinite Health]
+patch=1,EE,2031D3F8,extended,00000000
+
+[Quick Max Dots]
+patch=1,EE,2031D6E4,extended,00000000
+
+[Quick Max Fruit Gain]
+patch=1,EE,2027F55C,extended,8C62001C
+
+[Quick Max Statue Gain]
+patch=1,EE,2027F520,extended,8C430080
+
+[Unlock All Collection Cards]
+patch=1,EE,41D98570,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000
+patch=1,EE,41D98598,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Pac-Man Begins]
+patch=1,EE,71D98580,extended,00000001
+patch=1,EE,71D985A8,extended,00000001
+
+[Bite Club]
+patch=1,EE,71D98580,extended,00000002
+patch=1,EE,71D985A8,extended,00000002
+
+[Chomp Le Monde]
+patch=1,EE,71D98580,extended,00000004
+patch=1,EE,71D985A8,extended,00000004
+
+[The Sprite Fantastic]
+patch=1,EE,71D98580,extended,00000008
+patch=1,EE,71D985A8,extended,00000008
+
+[Ghosts In The Cell]
+patch=1,EE,71D98580,extended,00000010
+patch=1,EE,71D985A8,extended,00000010
+
+[Amazing Chase]
+patch=1,EE,71D98580,extended,00000020
+patch=1,EE,71D985A8,extended,00000020
+
+[The Mouth Trap]
+patch=1,EE,71D98580,extended,00000040
+patch=1,EE,71D985A8,extended,00000040
+
+[Maze Of Thunder]
+patch=1,EE,71D98580,extended,00000080
+patch=1,EE,71D985A8,extended,00000080
+
+[Dot Product]
+patch=1,EE,71D98581,extended,00000001
+patch=1,EE,71D985A9,extended,00000001
+
+[Dot Dot Dot / Dash Dash Dash]
+patch=1,EE,71D98581,extended,00000002
+patch=1,EE,71D985A9,extended,00000002
+
+[Chomp Thing]
+patch=1,EE,71D98581,extended,00000004
+patch=1,EE,71D985A9,extended,00000004
+
+[Pac Up Your Troubles]
+patch=1,EE,71D98581,extended,00000008
+patch=1,EE,71D985A9,extended,00000008
+
+[Dot Shots]
+patch=1,EE,71D98581,extended,00000010
+patch=1,EE,71D985A9,extended,00000010
+
+[Dawn Of The Head]
+patch=1,EE,71D98581,extended,00000020
+patch=1,EE,71D985A9,extended,00000020
+
+[Dot Collection Agency]
+patch=1,EE,71D98581,extended,00000040
+patch=1,EE,71D985A9,extended,00000040
+
+[Munch Your Weight]
+patch=1,EE,71D98581,extended,00000080
+patch=1,EE,71D985A9,extended,00000080
+
+[The Space Cowboy]
+patch=1,EE,71D98582,extended,00000001
+patch=1,EE,71D985AA,extended,00000001
+
+[Maze Of Our Lives]
+patch=1,EE,71D98582,extended,00000002
+patch=1,EE,71D985AA,extended,00000002
+
+[All Maze Levels]
+patch=1,EE,21D98580,extended,FFFFFFFF
+patch=1,EE,21D985A8,extended,FFFFFFFF
+
+[Bot Boneyard]
+patch=1,EE,71D98584,extended,00000001
+patch=1,EE,71D985AC,extended,00000001
+
+[Banni Wastelands]
+patch=1,EE,71D98584,extended,00000002
+patch=1,EE,71D985AC,extended,00000002
+
+[The Spectral Cliffs]
+patch=1,EE,71D98584,extended,00000004
+patch=1,EE,71D985AC,extended,00000004
+
+[Gogekka Central]
+patch=1,EE,71D98584,extended,00000008
+patch=1,EE,71D985AC,extended,00000008
+
+[The Spectral Vale]
+patch=1,EE,71D98584,extended,00000010
+patch=1,EE,71D985AC,extended,00000010
+
+[Zephyr Heights]
+patch=1,EE,71D98584,extended,00000020
+patch=1,EE,71D985AC,extended,00000020
+
+[Ancient Catacombs]
+patch=1,EE,71D98584,extended,00000040
+patch=1,EE,71D985AC,extended,00000040
+
+[Gogekka Heights]
+patch=1,EE,71D98584,extended,00000080
+patch=1,EE,71D985AC,extended,00000080
+
+[Banni Canyon]
+patch=1,EE,71D98585,extended,00000001
+patch=1,EE,71D985AD,extended,00000001
+
+[Toc-Man Battle]
+patch=1,EE,71D98585,extended,00000002
+patch=1,EE,71D985AD,extended,00000002
+
+[Cragstone Bridge]
+patch=1,EE,71D98585,extended,00000004
+patch=1,EE,71D985AD,extended,00000004
+
+[Erwin's Fortress]
+patch=1,EE,71D98585,extended,00000008
+patch=1,EE,71D985AD,extended,00000008
+
+[Dungen Gunden]
+patch=1,EE,71D98585,extended,00000010
+patch=1,EE,71D985AD,extended,00000010
+
+[The Spectral Zenith]
+patch=1,EE,71D98585,extended,00000020
+patch=1,EE,71D985AD,extended,00000020
+
+[Shadow Temple]
+patch=1,EE,71D98585,extended,00000040
+patch=1,EE,71D985AD,extended,00000040
+
+[All Levels]
+patch=1,EE,21D98584,extended,FFFFFFFF
+patch=1,EE,21D985AC,extended,FFFFFFFF
+
+[Infinite Lives]
+patch=1,EE,202DC770,extended,00000000
+
+[Max Infinite Lives]
+patch=1,EE,202DC768,extended,24020003
+
+[Quick Max Score]
+patch=1,EE,202882E4,extended,3C0205F5
+patch=1,EE,202882E8,extended,3442E0FF
+
+[Infinite Lives]
+patch=1,EE,202D4120,extended,00000000
+
+[Max Infinite Lives]
+patch=1,EE,202D4118,extended,24020005
+
+[Always Max Infinite Lives]
+patch=1,EE,21BAB654,extended,00000005
+
+[Quick Score Gain]
+patch=1,EE,11BAB650,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,21BAB650,extended,05F5E0FF

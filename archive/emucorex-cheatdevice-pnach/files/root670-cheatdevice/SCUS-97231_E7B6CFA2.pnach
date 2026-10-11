@@ -1,0 +1,565 @@
+gametitle=Arc The Lad-Twilight Of The Spirits (SCUS-97231)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90203FE4,extended,0C084FD5
+
+[Quick Gold Gain]
+patch=1,EE,1023CED4,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,2023CED4,extended,05F5E0FF
+
+[Max Party Items Spirit Stones]
+patch=1,EE,1023CED8,extended,000003E7
+
+[View Special Moves For All]
+patch=1,EE,20178B38,extended,A6530000
+
+[Max All Items]
+patch=1,EE,4023CF00,extended,000D0001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1023CF34,extended,00006363
+patch=1,EE,0023CF36,extended,00000063
+
+[Max All Weapon Parts]
+patch=1,EE,0023CF37,extended,00000063
+patch=1,EE,4023CF38,extended,000C0001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1023CF68,extended,00006363
+
+[Max All Accessories]
+patch=1,EE,0023CF6B,extended,00000063
+patch=1,EE,4023CF6C,extended,00110001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,1023CFB0,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,1023D14C,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D14C,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D152,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D154,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D156,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D158,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D1A8,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D1AA,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D1AC,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D1AE,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D1B0,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D1D8,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D1D8,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D1DE,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D1E0,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D1E2,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D1E4,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D234,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D236,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D238,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D23A,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D23C,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D264,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D264,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D26A,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D26C,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D26E,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D270,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D2C0,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D2C2,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D2C4,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D2C6,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D2C8,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D2F0,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D2F0,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D2F6,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D2F8,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D2FA,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D2FC,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D34C,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D34E,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D350,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D352,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D354,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D37C,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D37C,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D382,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D384,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D386,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D388,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D3D8,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D3DA,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D3DC,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D3DE,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D3E0,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D408,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D408,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D40E,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D410,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D412,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D414,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D464,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D466,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D468,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D46A,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D46C,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D494,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D494,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D49A,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D49C,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D49E,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D4A0,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D4F0,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D4F2,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D4F4,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D4F6,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D4F8,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D520,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D520,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D526,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D528,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D52A,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D52C,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D57C,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D57E,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D580,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D582,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D584,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D5AC,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D5AC,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D5B2,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D5B4,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D5B6,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D5B8,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D608,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D60A,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D60C,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D60E,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D610,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D638,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D638,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D63E,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D640,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D642,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D644,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D694,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D696,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D698,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D69A,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D69C,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D6C4,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D6C4,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D6CA,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D6CC,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D6CE,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D6D0,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D720,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D722,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D724,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D726,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D728,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D750,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D750,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D756,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D758,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D75A,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D75C,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D7AC,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D7AE,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D7B0,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D7B2,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D7B4,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D7DC,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D7DC,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D7E2,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D7E4,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D7E6,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D7E8,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D838,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D83A,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D83C,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D83E,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D840,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D868,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D868,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D86E,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D870,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D872,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D874,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D8C4,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D8C6,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D8C8,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D8CA,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D8CC,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D8F4,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D8F4,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D8FA,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D8FC,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D8FE,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D900,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D950,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D952,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D954,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D956,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D958,extended,0000270F
+
+[Quick Exp Gain]
+patch=1,EE,1023D980,extended,0000FFFF
+
+[Max Exp]
+patch=1,EE,2023D980,extended,0098967F
+
+[Level 99]
+patch=1,EE,1023D986,extended,00000063
+
+[Infinite HP]
+patch=1,EE,1023D988,extended,000003E7
+
+[Infinite Spirit Stones]
+patch=1,EE,1023D98A,extended,000003E7
+
+[Infinite SP]
+patch=1,EE,1023D98C,extended,0000270F
+
+[Max HP]
+patch=1,EE,1023D9DC,extended,0000270F
+
+[Max ATT]
+patch=1,EE,1023D9DE,extended,0000270F
+
+[Max DEF]
+patch=1,EE,1023D9E0,extended,0000270F
+
+[Max MNT]
+patch=1,EE,1023D9E2,extended,0000270F
+
+[Max SPD]
+patch=1,EE,1023D9E4,extended,0000270F

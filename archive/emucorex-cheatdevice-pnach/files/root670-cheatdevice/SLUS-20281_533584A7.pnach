@@ -1,0 +1,1267 @@
+gametitle=NHL 2002 (SLUS-20281)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903828C4,extended,0C0E75CB
+
+[Home Team Scores 50]
+patch=1,EE,1041EB26,extended,00000032
+
+[Home Team Scores 20]
+patch=1,EE,1041EB26,extended,00000014
+
+[Home Team Scores 0]
+patch=1,EE,1041EB26,extended,00000000
+
+[Home Team Start With Score 50]
+patch=1,EE,D041EB26,extended,00000000
+patch=1,EE,1041EB26,extended,00000032
+
+[Home Team Start With Score 20]
+patch=1,EE,D041EB26,extended,00000000
+patch=1,EE,1041EB26,extended,00000014
+
+[Home Team Start With Score 10]
+patch=1,EE,D041EB26,extended,00000000
+patch=1,EE,1041EB26,extended,0000000A
+
+[Home Team Start With Score 5]
+patch=1,EE,D041EB26,extended,00000000
+patch=1,EE,1041EB26,extended,00000005
+
+[Away Team Scores 50]
+patch=1,EE,1041EB82,extended,00000032
+
+[Away Team Scores 20]
+patch=1,EE,1041EB82,extended,00000014
+
+[Away Team Scores 0]
+patch=1,EE,1041EB82,extended,00000000
+
+[Away Team Start With Score 50]
+patch=1,EE,D041EB82,extended,00000000
+patch=1,EE,1041EB82,extended,00000032
+
+[Away Team Start With Score 20]
+patch=1,EE,D041EB82,extended,00000000
+patch=1,EE,1041EB82,extended,00000014
+
+[Away Team Start With Score 10]
+patch=1,EE,D041EB82,extended,00000000
+patch=1,EE,1041EB82,extended,0000000A
+
+[Away Team Start With Score 5]
+patch=1,EE,D041EB82,extended,00000000
+patch=1,EE,1041EB82,extended,00000005
+
+[Goal's Scores 10]
+patch=1,EE,1010CF74,extended,0000000A
+
+[Goal's Scores 5]
+patch=1,EE,1010CF74,extended,00000005
+
+[Goal's Scores 2]
+patch=1,EE,1010CF74,extended,00000002
+
+[Next Goal Wins]
+patch=1,EE,0041B708,extended,00000001
+patch=1,EE,0041B7A0,extended,00000001
+
+[P1 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2542,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P1 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2542,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P2 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2642,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P2 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2642,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P3 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2742,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P3 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2742,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P4 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2842,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P4 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2842,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P5 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2942,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P5 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2942,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P6 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2A42,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P6 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2A42,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P7 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2B42,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P7 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2B42,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P8 Press {L1}+{L2} For More Time]
+patch=1,EE,D04F2C42,extended,0000FAFF
+patch=1,EE,103B156C,extended,000004B0
+
+[P8 Press {R1}+{R2} To End Period]
+patch=1,EE,D04F2C42,extended,0000F5FF
+patch=1,EE,103B156C,extended,00000001
+
+[P1 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2542,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P1 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2542,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[P2 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2642,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P2 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2642,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[P3 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2742,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P3 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2742,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[P4 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2842,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P4 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2842,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[P5 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2942,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P5 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2942,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[P6 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2A42,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P6 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2A42,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[P7 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2B42,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P7 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2B42,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[P8 Press {L1}+{SELECT} For 1st Period]
+patch=1,EE,D04F2C42,extended,0000FBFE
+patch=1,EE,203B1584,extended,00010001
+
+[P8 Press {L2}+{SELECT} For 2nd Period]
+patch=1,EE,D04F2C42,extended,0000FEFE
+patch=1,EE,203B1584,extended,00020002
+
+[Buying NHL Cards Doesnt Decrease Points]
+patch=1,EE,201A54E4,extended,00000000
+
+[Buying NHL Cards Increases Points]
+patch=1,EE,201A54DC,extended,00651021
+
+[View NHL Cards Cardbook For All Cards]
+patch=1,EE,200C0280,extended,3C010101
+patch=1,EE,200C0284,extended,34210101
+patch=1,EE,200C0288,extended,00051080
+patch=1,EE,200C028C,extended,00821021
+patch=1,EE,200C0290,extended,0806959A
+patch=1,EE,200C0294,extended,AC410024
+patch=1,EE,201A5B58,extended,0C0300A0
+
+[View Task List For Max Tasklist Points]
+patch=1,EE,200C0260,extended,3C013B9A
+patch=1,EE,200C0264,extended,3421C9FF
+patch=1,EE,200C0268,extended,AC81001C
+patch=1,EE,200C026C,extended,03E00008
+patch=1,EE,200C0270,extended,8C92001C
+patch=1,EE,202769DC,extended,0C030098
+
+[View Task List To Have All Tasks Completed]
+patch=1,EE,200C0220,extended,24010053
+patch=1,EE,200C0224,extended,24020001
+patch=1,EE,200C0228,extended,00A01821
+patch=1,EE,200C022C,extended,AC620000
+patch=1,EE,200C0230,extended,24630004
+patch=1,EE,200C0234,extended,1C20FFFD
+patch=1,EE,200C0238,extended,2421FFFF
+patch=1,EE,200C023C,extended,00A01821
+patch=1,EE,200C0240,extended,03E00008
+patch=1,EE,200C0244,extended,30620007
+patch=1,EE,20276B7C,extended,0C030088
+patch=1,EE,20276B80,extended,00402821
+
+[Flu Bug]
+patch=1,EE,0041B6E4,extended,00000001
+patch=1,EE,0041B77C,extended,00000001
+
+[Emotional Charge]
+patch=1,EE,0041B6E8,extended,00000001
+patch=1,EE,0041B780,extended,00000001
+
+[Momentum Masher]
+patch=1,EE,0041B6EC,extended,00000001
+patch=1,EE,0041B784,extended,00000001
+
+[Penalty Free]
+patch=1,EE,0041B6F0,extended,00000001
+patch=1,EE,0041B788,extended,00000001
+
+[Off Target]
+patch=1,EE,0041B6F4,extended,00000001
+patch=1,EE,0041B78C,extended,00000001
+
+[Man Advantage]
+patch=1,EE,0041B6F8,extended,00000001
+patch=1,EE,0041B790,extended,00000001
+
+[Frozen In Time]
+patch=1,EE,0041B6FC,extended,00000001
+patch=1,EE,0041B794,extended,00000001
+
+[Bash Boom Bonanza]
+patch=1,EE,0041B700,extended,00000001
+patch=1,EE,0041B798,extended,00000001
+
+[Instant Penalty Shot]
+patch=1,EE,0041B704,extended,00000001
+patch=1,EE,0041B79C,extended,00000001
+
+[Flu Bug]
+patch=1,EE,0041B710,extended,00000001
+patch=1,EE,0041B7A8,extended,00000001
+
+[Emotional Charge]
+patch=1,EE,0041B714,extended,00000001
+patch=1,EE,0041B7AC,extended,00000001
+
+[Momentum Masher]
+patch=1,EE,0041B718,extended,00000001
+patch=1,EE,0041B7B0,extended,00000001
+
+[Penalty Free]
+patch=1,EE,0041B71C,extended,00000001
+patch=1,EE,0041B7B4,extended,00000001
+
+[Off Target]
+patch=1,EE,0041B720,extended,00000001
+patch=1,EE,0041B7B8,extended,00000001
+
+[Man Advantage]
+patch=1,EE,0041B724,extended,00000001
+patch=1,EE,0041B7BC,extended,00000001
+
+[Frozen In Time]
+patch=1,EE,0041B728,extended,00000001
+patch=1,EE,0041B7C0,extended,00000001
+
+[Bash Boom Bonanza]
+patch=1,EE,0041B72C,extended,00000001
+patch=1,EE,0041B7C4,extended,00000001
+
+[Instant Penalty Shot]
+patch=1,EE,0041B730,extended,00000001
+patch=1,EE,0041B7C8,extended,00000001
+
+[P1 Power Shot]
+patch=1,EE,2041B1E4,extended,00000001
+
+[P1 Peashooter]
+patch=1,EE,2041B1E8,extended,00000001
+
+[P1 Bonecrusher]
+patch=1,EE,2041B1EC,extended,00000001
+
+[P1 Crusher To Usher]
+patch=1,EE,2041B1F0,extended,00000001
+
+[P1 Muscles And Missiles]
+patch=1,EE,2041B1F4,extended,00000001
+
+[P1 Fired Up]
+patch=1,EE,2041B1F8,extended,00000001
+
+[P1 Ice Cold]
+patch=1,EE,2041B1FC,extended,00000001
+
+[P1 Hero (Player)]
+patch=1,EE,2041B200,extended,00000001
+
+[P2 Power Shot]
+patch=1,EE,2041B204,extended,00000001
+
+[P2 Peashooter]
+patch=1,EE,2041B208,extended,00000001
+
+[P2 Bonecrusher]
+patch=1,EE,2041B20C,extended,00000001
+
+[P2 Crusher To Usher]
+patch=1,EE,2041B210,extended,00000001
+
+[P2 Muscles And Missiles]
+patch=1,EE,2041B214,extended,00000001
+
+[P2 Fired Up]
+patch=1,EE,2041B218,extended,00000001
+
+[P2 Ice Cold]
+patch=1,EE,2041B21C,extended,00000001
+
+[P2 Hero (Player)]
+patch=1,EE,2041B220,extended,00000001
+
+[P3 Power Shot]
+patch=1,EE,2041B224,extended,00000001
+
+[P3 Peashooter]
+patch=1,EE,2041B228,extended,00000001
+
+[P3 Bonecrusher]
+patch=1,EE,2041B22C,extended,00000001
+
+[P3 Crusher To Usher]
+patch=1,EE,2041B230,extended,00000001
+
+[P3 Muscles And Missiles]
+patch=1,EE,2041B234,extended,00000001
+
+[P3 Fired Up]
+patch=1,EE,2041B238,extended,00000001
+
+[P3 Ice Cold]
+patch=1,EE,2041B23C,extended,00000001
+
+[P3 Hero (Player)]
+patch=1,EE,2041B240,extended,00000001
+
+[P4 Power Shot]
+patch=1,EE,2041B244,extended,00000001
+
+[P4 Peashooter]
+patch=1,EE,2041B248,extended,00000001
+
+[P4 Bonecrusher]
+patch=1,EE,2041B24C,extended,00000001
+
+[P4 Crusher To Usher]
+patch=1,EE,2041B250,extended,00000001
+
+[P4 Muscles And Missiles]
+patch=1,EE,2041B254,extended,00000001
+
+[P4 Fired Up]
+patch=1,EE,2041B258,extended,00000001
+
+[P4 Ice Cold]
+patch=1,EE,2041B25C,extended,00000001
+
+[P4 Hero (Player)]
+patch=1,EE,2041B260,extended,00000001
+
+[P5 Power Shot]
+patch=1,EE,2041B264,extended,00000001
+
+[P5 Peashooter]
+patch=1,EE,2041B268,extended,00000001
+
+[P5 Bonecrusher]
+patch=1,EE,2041B26C,extended,00000001
+
+[P5 Crusher To Usher]
+patch=1,EE,2041B270,extended,00000001
+
+[P5 Muscles And Missiles]
+patch=1,EE,2041B274,extended,00000001
+
+[P5 Fired Up]
+patch=1,EE,2041B278,extended,00000001
+
+[P5 Ice Cold]
+patch=1,EE,2041B27C,extended,00000001
+
+[P5 Hero (Player)]
+patch=1,EE,2041B280,extended,00000001
+
+[P6 Power Shot]
+patch=1,EE,2041B284,extended,00000001
+
+[P6 Peashooter]
+patch=1,EE,2041B288,extended,00000001
+
+[P6 Bonecrusher]
+patch=1,EE,2041B28C,extended,00000001
+
+[P6 Crusher To Usher]
+patch=1,EE,2041B290,extended,00000001
+
+[P6 Muscles And Missiles]
+patch=1,EE,2041B294,extended,00000001
+
+[P6 Fired Up]
+patch=1,EE,2041B298,extended,00000001
+
+[P6 Ice Cold]
+patch=1,EE,2041B29C,extended,00000001
+
+[P6 Hero (Player)]
+patch=1,EE,2041B2A0,extended,00000001
+
+[P7 Power Shot]
+patch=1,EE,2041B2A4,extended,00000001
+
+[P7 Peashooter]
+patch=1,EE,2041B2A8,extended,00000001
+
+[P7 Bonecrusher]
+patch=1,EE,2041B2AC,extended,00000001
+
+[P7 Crusher To Usher]
+patch=1,EE,2041B2B0,extended,00000001
+
+[P7 Muscles And Missiles]
+patch=1,EE,2041B2B4,extended,00000001
+
+[P7 Fired Up]
+patch=1,EE,2041B2B8,extended,00000001
+
+[P7 Ice Cold]
+patch=1,EE,2041B2BC,extended,00000001
+
+[P7 Hero (Player)]
+patch=1,EE,2041B2C0,extended,00000001
+
+[P8 Power Shot]
+patch=1,EE,2041B2C4,extended,00000001
+
+[P8 Peashooter]
+patch=1,EE,2041B2C8,extended,00000001
+
+[P8 Bonecrusher]
+patch=1,EE,2041B2CC,extended,00000001
+
+[P8 Crusher To Usher]
+patch=1,EE,2041B2D0,extended,00000001
+
+[P8 Muscles And Missiles]
+patch=1,EE,2041B2D4,extended,00000001
+
+[P8 Fired Up]
+patch=1,EE,2041B2D8,extended,00000001
+
+[P8 Ice Cold]
+patch=1,EE,2041B2DC,extended,00000001
+
+[P8 Hero (Player)]
+patch=1,EE,2041B2E0,extended,00000001
+
+[P9 Power Shot]
+patch=1,EE,2041B2E4,extended,00000001
+
+[P9 Peashooter]
+patch=1,EE,2041B2E8,extended,00000001
+
+[P9 Bonecrusher]
+patch=1,EE,2041B2EC,extended,00000001
+
+[P9 Crusher To Usher]
+patch=1,EE,2041B2F0,extended,00000001
+
+[P9 Muscles And Missiles]
+patch=1,EE,2041B2F4,extended,00000001
+
+[P9 Fired Up]
+patch=1,EE,2041B2F8,extended,00000001
+
+[P9 Ice Cold]
+patch=1,EE,2041B2FC,extended,00000001
+
+[P9 Hero (Player)]
+patch=1,EE,2041B300,extended,00000001
+
+[P10 Power Shot]
+patch=1,EE,2041B304,extended,00000001
+
+[P10 Peashooter]
+patch=1,EE,2041B308,extended,00000001
+
+[P10 Bonecrusher]
+patch=1,EE,2041B30C,extended,00000001
+
+[P10 Crusher To Usher]
+patch=1,EE,2041B310,extended,00000001
+
+[P10 Muscles And Missiles]
+patch=1,EE,2041B314,extended,00000001
+
+[P10 Fired Up]
+patch=1,EE,2041B318,extended,00000001
+
+[P10 Ice Cold]
+patch=1,EE,2041B31C,extended,00000001
+
+[P10 Hero (Player)]
+patch=1,EE,2041B320,extended,00000001
+
+[P11 Power Shot]
+patch=1,EE,2041B324,extended,00000001
+
+[P11 Peashooter]
+patch=1,EE,2041B328,extended,00000001
+
+[P11 Bonecrusher]
+patch=1,EE,2041B32C,extended,00000001
+
+[P11 Crusher To Usher]
+patch=1,EE,2041B330,extended,00000001
+
+[P11 Muscles And Missiles]
+patch=1,EE,2041B334,extended,00000001
+
+[P11 Fired Up]
+patch=1,EE,2041B338,extended,00000001
+
+[P11 Ice Cold]
+patch=1,EE,2041B33C,extended,00000001
+
+[P11 Hero (Player)]
+patch=1,EE,2041B340,extended,00000001
+
+[P12 Power Shot]
+patch=1,EE,2041B344,extended,00000001
+
+[P12 Peashooter]
+patch=1,EE,2041B348,extended,00000001
+
+[P12 Bonecrusher]
+patch=1,EE,2041B34C,extended,00000001
+
+[P12 Crusher To Usher]
+patch=1,EE,2041B350,extended,00000001
+
+[P12 Muscles And Missiles]
+patch=1,EE,2041B354,extended,00000001
+
+[P12 Fired Up]
+patch=1,EE,2041B358,extended,00000001
+
+[P12 Ice Cold]
+patch=1,EE,2041B35C,extended,00000001
+
+[P12 Hero (Player)]
+patch=1,EE,2041B360,extended,00000001
+
+[P13 Power Shot]
+patch=1,EE,2041B364,extended,00000001
+
+[P13 Peashooter]
+patch=1,EE,2041B368,extended,00000001
+
+[P13 Bonecrusher]
+patch=1,EE,2041B36C,extended,00000001
+
+[P13 Crusher To Usher]
+patch=1,EE,2041B370,extended,00000001
+
+[P13 Muscles And Missiles]
+patch=1,EE,2041B374,extended,00000001
+
+[P13 Fired Up]
+patch=1,EE,2041B378,extended,00000001
+
+[P13 Ice Cold]
+patch=1,EE,2041B37C,extended,00000001
+
+[P13 Hero (Player)]
+patch=1,EE,2041B380,extended,00000001
+
+[P14 Power Shot]
+patch=1,EE,2041B384,extended,00000001
+
+[P14 Peashooter]
+patch=1,EE,2041B388,extended,00000001
+
+[P14 Bonecrusher]
+patch=1,EE,2041B38C,extended,00000001
+
+[P14 Crusher To Usher]
+patch=1,EE,2041B390,extended,00000001
+
+[P14 Muscles And Missiles]
+patch=1,EE,2041B394,extended,00000001
+
+[P14 Fired Up]
+patch=1,EE,2041B398,extended,00000001
+
+[P14 Ice Cold]
+patch=1,EE,2041B39C,extended,00000001
+
+[P14 Hero (Player)]
+patch=1,EE,2041B3A0,extended,00000001
+
+[P15 Power Shot]
+patch=1,EE,2041B3A4,extended,00000001
+
+[P15 Peashooter]
+patch=1,EE,2041B3A8,extended,00000001
+
+[P15 Bonecrusher]
+patch=1,EE,2041B3AC,extended,00000001
+
+[P15 Crusher To Usher]
+patch=1,EE,2041B3B0,extended,00000001
+
+[P15 Muscles And Missiles]
+patch=1,EE,2041B3B4,extended,00000001
+
+[P15 Fired Up]
+patch=1,EE,2041B3B8,extended,00000001
+
+[P15 Ice Cold]
+patch=1,EE,2041B3BC,extended,00000001
+
+[P15 Hero (Player)]
+patch=1,EE,2041B3C0,extended,00000001
+
+[P16 Power Shot]
+patch=1,EE,2041B3C4,extended,00000001
+
+[P16 Peashooter]
+patch=1,EE,2041B3C8,extended,00000001
+
+[P16 Bonecrusher]
+patch=1,EE,2041B3CC,extended,00000001
+
+[P16 Crusher To Usher]
+patch=1,EE,2041B3D0,extended,00000001
+
+[P16 Muscles And Missiles]
+patch=1,EE,2041B3D4,extended,00000001
+
+[P16 Fired Up]
+patch=1,EE,2041B3D8,extended,00000001
+
+[P16 Ice Cold]
+patch=1,EE,2041B3DC,extended,00000001
+
+[P16 Hero (Player)]
+patch=1,EE,2041B3E0,extended,00000001
+
+[P17 Power Shot]
+patch=1,EE,2041B3E4,extended,00000001
+
+[P17 Peashooter]
+patch=1,EE,2041B3E8,extended,00000001
+
+[P17 Bonecrusher]
+patch=1,EE,2041B3EC,extended,00000001
+
+[P17 Crusher To Usher]
+patch=1,EE,2041B3F0,extended,00000001
+
+[P17 Muscles And Missiles]
+patch=1,EE,2041B3F4,extended,00000001
+
+[P17 Fired Up]
+patch=1,EE,2041B3F8,extended,00000001
+
+[P17 Ice Cold]
+patch=1,EE,2041B3FC,extended,00000001
+
+[P17 Hero (Player)]
+patch=1,EE,2041B400,extended,00000001
+
+[P18 Power Shot]
+patch=1,EE,2041B404,extended,00000001
+
+[P18 Peashooter]
+patch=1,EE,2041B408,extended,00000001
+
+[P18 Bonecrusher]
+patch=1,EE,2041B40C,extended,00000001
+
+[P18 Crusher To Usher]
+patch=1,EE,2041B410,extended,00000001
+
+[P18 Muscles And Missiles]
+patch=1,EE,2041B414,extended,00000001
+
+[P18 Fired Up]
+patch=1,EE,2041B418,extended,00000001
+
+[P18 Ice Cold]
+patch=1,EE,2041B41C,extended,00000001
+
+[P18 Hero (Player)]
+patch=1,EE,2041B420,extended,00000001
+
+[P19 Power Shot]
+patch=1,EE,2041B424,extended,00000001
+
+[P19 Peashooter]
+patch=1,EE,2041B428,extended,00000001
+
+[P19 Bonecrusher]
+patch=1,EE,2041B42C,extended,00000001
+
+[P19 Crusher To Usher]
+patch=1,EE,2041B430,extended,00000001
+
+[P19 Muscles And Missiles]
+patch=1,EE,2041B434,extended,00000001
+
+[P19 Fired Up]
+patch=1,EE,2041B438,extended,00000001
+
+[P19 Ice Cold]
+patch=1,EE,2041B43C,extended,00000001
+
+[P19 Hero (Player)]
+patch=1,EE,2041B440,extended,00000001
+
+[P20 Power Shot]
+patch=1,EE,2041B444,extended,00000001
+
+[P20 Peashooter]
+patch=1,EE,2041B448,extended,00000001
+
+[P20 Bonecrusher]
+patch=1,EE,2041B44C,extended,00000001
+
+[P20 Crusher To Usher]
+patch=1,EE,2041B450,extended,00000001
+
+[P20 Muscles And Missiles]
+patch=1,EE,2041B454,extended,00000001
+
+[P20 Fired Up]
+patch=1,EE,2041B458,extended,00000001
+
+[P20 Ice Cold]
+patch=1,EE,2041B45C,extended,00000001
+
+[P20 Hero (Player)]
+patch=1,EE,2041B460,extended,00000001
+
+[P1 Power Shot]
+patch=1,EE,2041B464,extended,00000001
+
+[P1 Peashooter]
+patch=1,EE,2041B468,extended,00000001
+
+[P1 Bonecrusher]
+patch=1,EE,2041B46C,extended,00000001
+
+[P1 Crusher To Usher]
+patch=1,EE,2041B470,extended,00000001
+
+[P1 Muscles And Missiles]
+patch=1,EE,2041B474,extended,00000001
+
+[P1 Fired Up]
+patch=1,EE,2041B478,extended,00000001
+
+[P1 Ice Cold]
+patch=1,EE,2041B47C,extended,00000001
+
+[P1 Hero (Player)]
+patch=1,EE,2041B480,extended,00000001
+
+[P2 Power Shot]
+patch=1,EE,2041B484,extended,00000001
+
+[P2 Peashooter]
+patch=1,EE,2041B488,extended,00000001
+
+[P2 Bonecrusher]
+patch=1,EE,2041B48C,extended,00000001
+
+[P2 Crusher To Usher]
+patch=1,EE,2041B490,extended,00000001
+
+[P2 Muscles And Missiles]
+patch=1,EE,2041B494,extended,00000001
+
+[P2 Fired Up]
+patch=1,EE,2041B498,extended,00000001
+
+[P2 Ice Cold]
+patch=1,EE,2041B49C,extended,00000001
+
+[P2 Hero (Player)]
+patch=1,EE,2041B4A0,extended,00000001
+
+[P3 Power Shot]
+patch=1,EE,2041B4A4,extended,00000001
+
+[P3 Peashooter]
+patch=1,EE,2041B4A8,extended,00000001
+
+[P3 Bonecrusher]
+patch=1,EE,2041B4AC,extended,00000001
+
+[P3 Crusher To Usher]
+patch=1,EE,2041B4B0,extended,00000001
+
+[P3 Muscles And Missiles]
+patch=1,EE,2041B4B4,extended,00000001
+
+[P3 Fired Up]
+patch=1,EE,2041B4B8,extended,00000001
+
+[P3 Ice Cold]
+patch=1,EE,2041B4BC,extended,00000001
+
+[P3 Hero (Player)]
+patch=1,EE,2041B4C0,extended,00000001
+
+[P4 Power Shot]
+patch=1,EE,2041B4C4,extended,00000001
+
+[P4 Peashooter]
+patch=1,EE,2041B4C8,extended,00000001
+
+[P4 Bonecrusher]
+patch=1,EE,2041B4CC,extended,00000001
+
+[P4 Crusher To Usher]
+patch=1,EE,2041B4D0,extended,00000001
+
+[P4 Muscles And Missiles]
+patch=1,EE,2041B4D4,extended,00000001
+
+[P4 Fired Up]
+patch=1,EE,2041B4D8,extended,00000001
+
+[P4 Ice Cold]
+patch=1,EE,2041B4DC,extended,00000001
+
+[P4 Hero (Player)]
+patch=1,EE,2041B4E0,extended,00000001
+
+[P5 Power Shot]
+patch=1,EE,2041B4E4,extended,00000001
+
+[P5 Peashooter]
+patch=1,EE,2041B4E8,extended,00000001
+
+[P5 Bonecrusher]
+patch=1,EE,2041B4EC,extended,00000001
+
+[P5 Crusher To Usher]
+patch=1,EE,2041B4F0,extended,00000001
+
+[P5 Muscles And Missiles]
+patch=1,EE,2041B4F4,extended,00000001
+
+[P5 Fired Up]
+patch=1,EE,2041B4F8,extended,00000001
+
+[P5 Ice Cold]
+patch=1,EE,2041B4FC,extended,00000001
+
+[P5 Hero (Player)]
+patch=1,EE,2041B500,extended,00000001
+
+[P6 Power Shot]
+patch=1,EE,2041B504,extended,00000001
+
+[P6 Peashooter]
+patch=1,EE,2041B508,extended,00000001
+
+[P6 Bonecrusher]
+patch=1,EE,2041B50C,extended,00000001
+
+[P6 Crusher To Usher]
+patch=1,EE,2041B510,extended,00000001
+
+[P6 Muscles And Missiles]
+patch=1,EE,2041B514,extended,00000001
+
+[P6 Fired Up]
+patch=1,EE,2041B518,extended,00000001
+
+[P6 Ice Cold]
+patch=1,EE,2041B51C,extended,00000001
+
+[P6 Hero (Player)]
+patch=1,EE,2041B520,extended,00000001
+
+[P7 Power Shot]
+patch=1,EE,2041B524,extended,00000001
+
+[P7 Peashooter]
+patch=1,EE,2041B528,extended,00000001
+
+[P7 Bonecrusher]
+patch=1,EE,2041B52C,extended,00000001
+
+[P7 Crusher To Usher]
+patch=1,EE,2041B530,extended,00000001
+
+[P7 Muscles And Missiles]
+patch=1,EE,2041B534,extended,00000001
+
+[P7 Fired Up]
+patch=1,EE,2041B538,extended,00000001
+
+[P7 Ice Cold]
+patch=1,EE,2041B53C,extended,00000001
+
+[P7 Hero (Player)]
+patch=1,EE,2041B540,extended,00000001
+
+[P8 Power Shot]
+patch=1,EE,2041B544,extended,00000001
+
+[P8 Peashooter]
+patch=1,EE,2041B548,extended,00000001
+
+[P8 Bonecrusher]
+patch=1,EE,2041B54C,extended,00000001
+
+[P8 Crusher To Usher]
+patch=1,EE,2041B550,extended,00000001
+
+[P8 Muscles And Missiles]
+patch=1,EE,2041B554,extended,00000001
+
+[P8 Fired Up]
+patch=1,EE,2041B558,extended,00000001
+
+[P8 Ice Cold]
+patch=1,EE,2041B55C,extended,00000001
+
+[P8 Hero (Player)]
+patch=1,EE,2041B560,extended,00000001
+
+[P9 Power Shot]
+patch=1,EE,2041B564,extended,00000001
+
+[P9 Peashooter]
+patch=1,EE,2041B568,extended,00000001
+
+[P9 Bonecrusher]
+patch=1,EE,2041B56C,extended,00000001
+
+[P9 Crusher To Usher]
+patch=1,EE,2041B570,extended,00000001
+
+[P9 Muscles And Missiles]
+patch=1,EE,2041B574,extended,00000001
+
+[P9 Fired Up]
+patch=1,EE,2041B578,extended,00000001
+
+[P9 Ice Cold]
+patch=1,EE,2041B57C,extended,00000001
+
+[P9 Hero (Player)]
+patch=1,EE,2041B580,extended,00000001
+
+[P10 Power Shot]
+patch=1,EE,2041B584,extended,00000001
+
+[P10 Peashooter]
+patch=1,EE,2041B588,extended,00000001
+
+[P10 Bonecrusher]
+patch=1,EE,2041B58C,extended,00000001
+
+[P10 Crusher To Usher]
+patch=1,EE,2041B590,extended,00000001
+
+[P10 Muscles And Missiles]
+patch=1,EE,2041B594,extended,00000001
+
+[P10 Fired Up]
+patch=1,EE,2041B598,extended,00000001
+
+[P10 Ice Cold]
+patch=1,EE,2041B59C,extended,00000001
+
+[P10 Hero (Player)]
+patch=1,EE,2041B5A0,extended,00000001
+
+[P11 Power Shot]
+patch=1,EE,2041B5A4,extended,00000001
+
+[P11 Peashooter]
+patch=1,EE,2041B5A8,extended,00000001
+
+[P11 Bonecrusher]
+patch=1,EE,2041B5AC,extended,00000001
+
+[P11 Crusher To Usher]
+patch=1,EE,2041B5B0,extended,00000001
+
+[P11 Muscles And Missiles]
+patch=1,EE,2041B5B4,extended,00000001
+
+[P11 Fired Up]
+patch=1,EE,2041B5B8,extended,00000001
+
+[P11 Ice Cold]
+patch=1,EE,2041B5BC,extended,00000001
+
+[P11 Hero (Player)]
+patch=1,EE,2041B5C0,extended,00000001
+
+[P12 Power Shot]
+patch=1,EE,2041B5C4,extended,00000001
+
+[P12 Peashooter]
+patch=1,EE,2041B5C8,extended,00000001
+
+[P12 Bonecrusher]
+patch=1,EE,2041B5CC,extended,00000001
+
+[P12 Crusher To Usher]
+patch=1,EE,2041B5D0,extended,00000001
+
+[P12 Muscles And Missiles]
+patch=1,EE,2041B5D4,extended,00000001
+
+[P12 Fired Up]
+patch=1,EE,2041B5D8,extended,00000001
+
+[P12 Ice Cold]
+patch=1,EE,2041B5DC,extended,00000001
+
+[P12 Hero (Player)]
+patch=1,EE,2041B5E0,extended,00000001
+
+[P13 Power Shot]
+patch=1,EE,2041B5E4,extended,00000001
+
+[P13 Peashooter]
+patch=1,EE,2041B5E8,extended,00000001
+
+[P13 Bonecrusher]
+patch=1,EE,2041B5EC,extended,00000001
+
+[P13 Crusher To Usher]
+patch=1,EE,2041B5F0,extended,00000001
+
+[P13 Muscles And Missiles]
+patch=1,EE,2041B5F4,extended,00000001
+
+[P13 Fired Up]
+patch=1,EE,2041B5F8,extended,00000001
+
+[P13 Ice Cold]
+patch=1,EE,2041B5FC,extended,00000001
+
+[P13 Hero (Player)]
+patch=1,EE,2041B600,extended,00000001
+
+[P14 Power Shot]
+patch=1,EE,2041B604,extended,00000001
+
+[P14 Peashooter]
+patch=1,EE,2041B608,extended,00000001
+
+[P14 Bonecrusher]
+patch=1,EE,2041B60C,extended,00000001
+
+[P14 Crusher To Usher]
+patch=1,EE,2041B610,extended,00000001
+
+[P14 Muscles And Missiles]
+patch=1,EE,2041B614,extended,00000001
+
+[P14 Fired Up]
+patch=1,EE,2041B618,extended,00000001
+
+[P14 Ice Cold]
+patch=1,EE,2041B61C,extended,00000001
+
+[P14 Hero (Player)]
+patch=1,EE,2041B620,extended,00000001
+
+[P15 Power Shot]
+patch=1,EE,2041B624,extended,00000001
+
+[P15 Peashooter]
+patch=1,EE,2041B628,extended,00000001
+
+[P15 Bonecrusher]
+patch=1,EE,2041B62C,extended,00000001
+
+[P15 Crusher To Usher]
+patch=1,EE,2041B630,extended,00000001
+
+[P15 Muscles And Missiles]
+patch=1,EE,2041B634,extended,00000001
+
+[P15 Fired Up]
+patch=1,EE,2041B638,extended,00000001
+
+[P15 Ice Cold]
+patch=1,EE,2041B63C,extended,00000001
+
+[P15 Hero (Player)]
+patch=1,EE,2041B640,extended,00000001
+
+[P16 Power Shot]
+patch=1,EE,2041B644,extended,00000001
+
+[P16 Peashooter]
+patch=1,EE,2041B648,extended,00000001
+
+[P16 Bonecrusher]
+patch=1,EE,2041B64C,extended,00000001
+
+[P16 Crusher To Usher]
+patch=1,EE,2041B650,extended,00000001
+
+[P16 Muscles And Missiles]
+patch=1,EE,2041B654,extended,00000001
+
+[P16 Fired Up]
+patch=1,EE,2041B658,extended,00000001
+
+[P16 Ice Cold]
+patch=1,EE,2041B65C,extended,00000001
+
+[P16 Hero (Player)]
+patch=1,EE,2041B660,extended,00000001
+
+[P17 Power Shot]
+patch=1,EE,2041B664,extended,00000001
+
+[P17 Peashooter]
+patch=1,EE,2041B668,extended,00000001
+
+[P17 Bonecrusher]
+patch=1,EE,2041B66C,extended,00000001
+
+[P17 Crusher To Usher]
+patch=1,EE,2041B670,extended,00000001
+
+[P17 Muscles And Missiles]
+patch=1,EE,2041B674,extended,00000001
+
+[P17 Fired Up]
+patch=1,EE,2041B678,extended,00000001
+
+[P17 Ice Cold]
+patch=1,EE,2041B67C,extended,00000001
+
+[P17 Hero (Player)]
+patch=1,EE,2041B680,extended,00000001
+
+[P18 Power Shot]
+patch=1,EE,2041B684,extended,00000001
+
+[P18 Peashooter]
+patch=1,EE,2041B688,extended,00000001
+
+[P18 Bonecrusher]
+patch=1,EE,2041B68C,extended,00000001
+
+[P18 Crusher To Usher]
+patch=1,EE,2041B690,extended,00000001
+
+[P18 Muscles And Missiles]
+patch=1,EE,2041B694,extended,00000001
+
+[P18 Fired Up]
+patch=1,EE,2041B698,extended,00000001
+
+[P18 Ice Cold]
+patch=1,EE,2041B69C,extended,00000001
+
+[P18 Hero (Player)]
+patch=1,EE,2041B6A0,extended,00000001
+
+[P19 Power Shot]
+patch=1,EE,2041B6A4,extended,00000001
+
+[P19 Peashooter]
+patch=1,EE,2041B6A8,extended,00000001
+
+[P19 Bonecrusher]
+patch=1,EE,2041B6AC,extended,00000001
+
+[P19 Crusher To Usher]
+patch=1,EE,2041B6B0,extended,00000001
+
+[P19 Muscles And Missiles]
+patch=1,EE,2041B6B4,extended,00000001
+
+[P19 Fired Up]
+patch=1,EE,2041B6B8,extended,00000001
+
+[P19 Ice Cold]
+patch=1,EE,2041B6BC,extended,00000001
+
+[P19 Hero (Player)]
+patch=1,EE,2041B6C0,extended,00000001
+
+[P20 Power Shot]
+patch=1,EE,2041B6C4,extended,00000001
+
+[P20 Peashooter]
+patch=1,EE,2041B6C8,extended,00000001
+
+[P20 Bonecrusher]
+patch=1,EE,2041B6CC,extended,00000001
+
+[P20 Crusher To Usher]
+patch=1,EE,2041B6D0,extended,00000001
+
+[P20 Muscles And Missiles]
+patch=1,EE,2041B6D4,extended,00000001
+
+[P20 Fired Up]
+patch=1,EE,2041B6D8,extended,00000001
+
+[P20 Ice Cold]
+patch=1,EE,2041B6DC,extended,00000001
+
+[P20 Hero (Player)]
+patch=1,EE,2041B6E0,extended,00000001

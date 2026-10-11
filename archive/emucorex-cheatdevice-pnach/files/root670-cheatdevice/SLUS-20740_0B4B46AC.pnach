@@ -1,0 +1,73 @@
+gametitle=Mobile Suit Gundam-Encounters In Space (SLUS-20740)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00126B3F
+
+[Disable FMV]
+patch=1,EE,201160D0,extended,24020001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,8CA31E34
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,ACA31E38
+patch=1,EE,201DF56C,extended,0C030088
+
+[Infinite Shield]
+patch=1,EE,200C0230,extended,8E431E40
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AE431E44
+patch=1,EE,201DF59C,extended,0C03008C
+
+[Infinite SP]
+patch=1,EE,200C0240,extended,0804D816
+patch=1,EE,200C0244,extended,E64C2690
+patch=1,EE,201DF614,extended,0C030090
+patch=1,EE,201DF618,extended,C64C2694
+
+[Infinite Weapons]
+patch=1,EE,201466C0,extended,00000000
+
+[Extra Weapons]
+patch=1,EE,101466BC,extended,00000001
+
+[Always Low Overall Time]
+patch=1,EE,203C0470,extended,00000000
+
+[Infinite Time (Timed Missions)]
+patch=1,EE,203C0474,extended,00004650
+
+[Quick Score Gain]
+patch=1,EE,103C04B8,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,203C04B8,extended,05F5E0FF
+
+[Max Special Bonus]
+patch=1,EE,203C04C8,extended,05F5E0FF
+
+[Unlock All E.F.S.F. Units]
+patch=1,EE,2042FBD0,extended,FFFFFFFF
+patch=1,EE,2042FBD4,extended,FFFFFFFF
+
+[Unlock All Zeon Units]
+patch=1,EE,2042FBD8,extended,FFFFFFFF
+patch=1,EE,2042FBDC,extended,FFFFFFFF
+
+[Unlock All White Base Movies]
+patch=1,EE,2042FBF8,extended,FFFFFFFF
+patch=1,EE,2042FBFC,extended,FFFFFFFF
+
+[Unlock All Thoroughbred Movies]
+patch=1,EE,2042FC00,extended,FFFFFFFF
+patch=1,EE,2042FC04,extended,FFFFFFFF
+
+[Unlock All Ace Pilot Movies]
+patch=1,EE,2042FC08,extended,FFFFFFFF
+patch=1,EE,2042FC0C,extended,FFFFFFFF
+
+[Unlock All Ace Pilots]
+patch=1,EE,2042FC10,extended,FFFFFFFF
+patch=1,EE,2042FC14,extended,FFFFFFFF

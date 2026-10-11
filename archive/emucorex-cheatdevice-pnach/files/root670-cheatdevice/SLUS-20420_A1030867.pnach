@@ -1,0 +1,110 @@
+gametitle=Star Wars-Bounty Hunter (SLUS-20420)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901992EC,extended,0C083A60
+
+[Infinite Health]
+patch=1,EE,202F78C0,extended,3C014348
+patch=1,EE,202F78C4,extended,AE2101E8
+
+[Infinite Ammo]
+patch=1,EE,2017D4BC,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,102DA624,extended,00000001
+
+[Infinite Jetpack]
+patch=1,EE,20206038,extended,00000000
+patch=1,EE,20206774,extended,00000000
+
+[Have All Levels Complete]
+patch=1,EE,203F0638,extended,FFFFFFFF
+
+[Have All Secrets Found]
+patch=1,EE,203F063C,extended,FFFFFFFF
+
+[Always 19 Enemies Killed]
+patch=1,EE,403F0640,extended,00090001
+patch=1,EE,00010001,extended,00000000
+patch=1,EE,103F0664,extended,00000001
+
+[Always No Non-Enemies Killed]
+patch=1,EE,103F0666,extended,00000000
+patch=1,EE,403F0668,extended,00090001
+patch=1,EE,00000000,extended,00000000
+
+[Max Secondary Bounties-0 Killed]
+patch=1,EE,203F0714,extended,0000000B
+
+[Max Secondary Bounties-0 Captured]
+patch=1,EE,203F0760,extended,05F5E0FF
+
+[Always Low Total Game Time]
+patch=1,EE,203F07B0,extended,00000000
+
+[Infinite Continues]
+patch=1,EE,103C6404,extended,00000009
+
+[1-Hit Death (Enemies)]
+patch=1,EE,200C0220,extended,3C01003C
+patch=1,EE,200C0224,extended,8C21636C
+patch=1,EE,200C0228,extended,50330002
+patch=1,EE,200C022C,extended,27FF0004
+patch=1,EE,200C0230,extended,46000506
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,232300FF
+patch=1,EE,2014A92C,extended,0C030088
+
+[Chapter 1-Pit Fight Arena]
+patch=1,EE,003F06EC,extended,00000005
+
+[Chapter 1-Merchant Row]
+patch=1,EE,003F06ED,extended,0000000A
+
+[Chapter 1-Docking Bays]
+patch=1,EE,003F06EE,extended,0000000A
+
+[Chapter 2-Entertainment District]
+patch=1,EE,003F06EF,extended,0000000F
+
+[Chapter 2-Industrial District]
+patch=1,EE,003F06F0,extended,00000005
+
+[Chapter 2-Upper City]
+patch=1,EE,003F06F1,extended,00000005
+
+[Chapter 3-The Breakin]
+patch=1,EE,003F06F2,extended,00000005
+
+[Chapter 3-The Break Out]
+patch=1,EE,003F06F3,extended,0000000A
+
+[Chapter 3-The Escape]
+patch=1,EE,003F06F4,extended,00000005
+
+[Chapter 4-Jungle Trek]
+patch=1,EE,003F06F5,extended,0000000F
+
+[Chapter 4-Sebolto's Compound]
+patch=1,EE,003F06F6,extended,0000000F
+
+[Chapter 4-The Death Stick Factory]
+patch=1,EE,003F06F7,extended,0000000F
+
+[Chapter 5-Longo Two-Guns]
+patch=1,EE,003F06F8,extended,0000000F
+
+[Chapter 5-Tusken Canyon]
+patch=1,EE,003F06F9,extended,0000000A
+
+[Chapter 6-Gardulla's Palace]
+patch=1,EE,003F06FA,extended,0000000A
+
+[All Bounties]
+patch=1,EE,203F06EC,extended,0F0A0A05
+patch=1,EE,203F06F0,extended,0A050505
+patch=1,EE,203F06F4,extended,0F0F0F05
+patch=1,EE,203F06F8,extended,000A0A0F

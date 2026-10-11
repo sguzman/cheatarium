@@ -1,0 +1,50 @@
+gametitle=Robin Hood-Defender Of The Crown (SLUS-20723)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00159B77
+
+[Archery Kills Worth 999]
+patch=1,EE,2019A408,extended,240203E7
+
+[Archery Kills Worth 99]
+patch=1,EE,2019A408,extended,24020063
+
+[Archery Kills Worth 9]
+patch=1,EE,2019A408,extended,24020009
+
+[Archery Kills Worth 5]
+patch=1,EE,2019A408,extended,24020005
+
+[Archery Kills Worth 2]
+patch=1,EE,2019A408,extended,24020002
+
+[Start With Archery Kills 9999]
+patch=1,EE,200C0220,extended,2401270F
+patch=1,EE,200C0224,extended,080813F8
+patch=1,EE,200C0228,extended,AC4100FC
+patch=1,EE,2019A804,extended,0C030088
+
+[Start With Archery Kills 999]
+patch=1,EE,200C0220,extended,240103E7
+patch=1,EE,200C0224,extended,080813F8
+patch=1,EE,200C0228,extended,AC4100FC
+patch=1,EE,2019A804,extended,0C030088
+
+[Start With Archery Kills 99]
+patch=1,EE,200C0220,extended,24010063
+patch=1,EE,200C0224,extended,080813F8
+patch=1,EE,200C0228,extended,AC4100FC
+patch=1,EE,2019A804,extended,0C030088
+
+[Start With Archery Kills 9]
+patch=1,EE,200C0220,extended,24010009
+patch=1,EE,200C0224,extended,080813F8
+patch=1,EE,200C0228,extended,AC4100FC
+patch=1,EE,2019A804,extended,0C030088
+
+[Infinite Health (Swordfights)]
+patch=1,EE,20173B80,extended,2402005A
+patch=1,EE,20173B88,extended,AC8202B4

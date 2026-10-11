@@ -1,0 +1,529 @@
+gametitle=WWE Smackdown!-Here Comes The Pain (SLUS-20787)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011F5AC,extended,0C049348
+
+[Infinite Specials (All Players)]
+patch=1,EE,201BB3E8,extended,00000000
+
+[Extra Specials (All Players)]
+patch=1,EE,10152EA0,extended,00000001
+
+[Easy Special Gain (All Players)]
+patch=1,EE,201E5560,extended,00000000
+
+[All Players Can Hold 5 Specials]
+patch=1,EE,201E5504,extended,24030005
+
+[Infinite Creation Points]
+patch=1,EE,202EDEBC,extended,00000000
+patch=1,EE,102EDA3A,extended,00001000
+
+[Max Creation Points]
+patch=1,EE,200C0230,extended,240603E7
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AEA6004C
+patch=1,EE,202EE7E8,extended,0C03008C
+
+[Max Cash (Shopzone)]
+patch=1,EE,200C0220,extended,3463967F
+patch=1,EE,200C0224,extended,AC830278
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,8C850270
+patch=1,EE,20309BCC,extended,0C030088
+patch=1,EE,20309BD0,extended,3C030098
+
+[Buying Items Doesnt Decrease Cash (Shopzone)]
+patch=1,EE,20309BAC,extended,00000000
+
+[Have All Shopzone Items Bought]
+patch=1,EE,004FB3B3,extended,000000FF
+patch=1,EE,204FB3B4,extended,FFFFFFFF
+patch=1,EE,104FB3B8,extended,0000FFFF
+
+[Infinite Health (Human Players)]
+patch=1,EE,201F45D0,extended,104001EC
+
+[Infinite Health Human/Super Damage Against CPU]
+patch=1,EE,201F45D0,extended,104001EC
+patch=1,EE,201F47F0,extended,A6A00000
+
+[Infinite Time Out Of Ring]
+patch=1,EE,201EB458,extended,00000000
+
+[Always Low Ring Time]
+patch=1,EE,20527AE0,extended,00000000
+
+[100 Wins (Slobber Knocker)]
+patch=1,EE,20492374,extended,00000064
+
+[Alien Wrestlers]
+patch=1,EE,001039C8,extended,00000000
+
+[Paper Wrestlers & Crowd In The Ring]
+patch=1,EE,001039E4,extended,00000000
+
+[Ring Is On An Angle]
+patch=1,EE,00103DB0,extended,00000000
+
+[Invisible Ropes]
+patch=1,EE,202185B0,extended,03E00008
+patch=1,EE,202185B4,extended,00000000
+
+[Invisible Ring]
+patch=1,EE,20219B40,extended,03E00008
+patch=1,EE,20219B44,extended,00000000
+
+[Invisible Weapons]
+patch=1,EE,2020B5B0,extended,03E00008
+patch=1,EE,2020B5B4,extended,00000000
+
+[Invisible Cage]
+patch=1,EE,2021A990,extended,03E00008
+patch=1,EE,2021A994,extended,00000000
+
+[DQ Never Set]
+patch=1,EE,201C4980,extended,03E00008
+patch=1,EE,201C4984,extended,00000000
+
+[Idiot AI (CPU Wrestlers)]
+patch=1,EE,20268E90,extended,03E00008
+patch=1,EE,20268E94,extended,00000000
+
+[P1 Press {R3} For Idiot AI (CPU Wrestlers)]
+patch=1,EE,E002FFFB,extended,004FE282
+patch=1,EE,20268E90,extended,03E00008
+patch=1,EE,20268E94,extended,00000000
+
+[P1 Press {L3} For Normal AI (CPU Wrestlers)]
+patch=1,EE,E002FFFD,extended,004FE282
+patch=1,EE,20268E94,extended,3C010053
+patch=1,EE,20268E90,extended,27BDFFC0
+
+[P2 Press {R3} For Idiot AI (CPU Wrestlers)]
+patch=1,EE,E002FFFB,extended,004FE402
+patch=1,EE,20268E90,extended,03E00008
+patch=1,EE,20268E94,extended,00000000
+
+[P2 Press {L3} For Normal AI (CPU Wrestlers)]
+patch=1,EE,E002FFFD,extended,004FE402
+patch=1,EE,20268E94,extended,3C010053
+patch=1,EE,20268E90,extended,27BDFFC0
+
+[P3 Press {R3} For Idiot AI (CPU Wrestlers)]
+patch=1,EE,E002FFFB,extended,004FE582
+patch=1,EE,20268E90,extended,03E00008
+patch=1,EE,20268E94,extended,00000000
+
+[P3 Press {L3} For Normal AI (CPU Wrestlers)]
+patch=1,EE,E002FFFD,extended,004FE582
+patch=1,EE,20268E94,extended,3C010053
+patch=1,EE,20268E90,extended,27BDFFC0
+
+[P4 Press {R3} For Idiot AI (CPU Wrestlers)]
+patch=1,EE,E002FFFB,extended,004FE702
+patch=1,EE,20268E90,extended,03E00008
+patch=1,EE,20268E94,extended,00000000
+
+[P4 Press {L3} For Normal AI (CPU Wrestlers)]
+patch=1,EE,E002FFFD,extended,004FE702
+patch=1,EE,20268E94,extended,3C010053
+patch=1,EE,20268E90,extended,27BDFFC0
+
+[P5 Press {R3} For Idiot AI (CPU Wrestlers)]
+patch=1,EE,E002FFFB,extended,004FE882
+patch=1,EE,20268E90,extended,03E00008
+patch=1,EE,20268E94,extended,00000000
+
+[P5 Press {L3} For Normal AI (CPU Wrestlers)]
+patch=1,EE,E002FFFD,extended,004FE882
+patch=1,EE,20268E94,extended,3C010053
+patch=1,EE,20268E90,extended,27BDFFC0
+
+[P6 Press {R3} For Idiot AI (CPU Wrestlers)]
+patch=1,EE,E002FFFB,extended,004FEA02
+patch=1,EE,20268E90,extended,03E00008
+patch=1,EE,20268E94,extended,00000000
+
+[P6 Press {L3} For Normal AI (CPU Wrestlers)]
+patch=1,EE,E002FFFD,extended,004FEA02
+patch=1,EE,20268E94,extended,3C010053
+patch=1,EE,20268E90,extended,27BDFFC0
+
+[Idiot AI (CPU Referees)]
+patch=1,EE,202FD020,extended,03E00008
+patch=1,EE,202FD024,extended,00000000
+
+[Always Have 12 Tables]
+patch=1,EE,201FAD84,extended,0C07E7EC
+patch=1,EE,201FAD8C,extended,0C07E7EC
+patch=1,EE,201FAD90,extended,00000000
+patch=1,EE,201FADA0,extended,0C07E7EC
+patch=1,EE,201FADA8,extended,0C07E7EC
+patch=1,EE,201FADAC,extended,00000000
+patch=1,EE,201FADB4,extended,0C07E7EC
+
+[Always Have 10 Tables]
+patch=1,EE,201FAD84,extended,0C07E7EC
+patch=1,EE,201FAD8C,extended,0C07E7EC
+patch=1,EE,201FAD90,extended,00000000
+patch=1,EE,201FADA8,extended,0C07E7EC
+patch=1,EE,201FADAC,extended,00000000
+patch=1,EE,201FADB4,extended,0C07E7EC
+
+[Always Have 8 Tables]
+patch=1,EE,201FAD84,extended,0C07E7EC
+patch=1,EE,201FAD8C,extended,0C07E7EC
+patch=1,EE,201FAD90,extended,00000000
+patch=1,EE,201FADAC,extended,00000000
+patch=1,EE,201FADB4,extended,0C07E7EC
+
+[Always Have 6 Tables]
+patch=1,EE,201FAD84,extended,0C07E7EC
+patch=1,EE,201FAD8C,extended,0C07E7EC
+patch=1,EE,201FAD90,extended,00000000
+
+[Always Have 4 Tables]
+patch=1,EE,201FAD84,extended,0C07E7EC
+patch=1,EE,201FAD8C,extended,00000000
+
+[Always Have 2 Tables]
+patch=1,EE,201FAD8C,extended,00000000
+
+[Door On Hiac Already Opened]
+patch=1,EE,201D2220,extended,03E00008
+patch=1,EE,201D2224,extended,00000000
+
+[Both Players Can Climb The Same Ladder Side]
+patch=1,EE,001D1920,extended,00000000
+
+[CPU Just Sits There]
+patch=1,EE,20277940,extended,03E00008
+patch=1,EE,20277944,extended,00000000
+
+[CPU Cant Counter]
+patch=1,EE,20294000,extended,03E00008
+patch=1,EE,20294004,extended,00000000
+
+[Cant Move With A Weapon In Your Hand]
+patch=1,EE,201D14B0,extended,03E00008
+patch=1,EE,201D14B4,extended,00000000
+
+[Disabled Weapons]
+patch=1,EE,001D14A0,extended,00000000
+
+[CPU Cant Tag]
+patch=1,EE,20277770,extended,03E00008
+patch=1,EE,20277774,extended,00000000
+
+[Pins Always Off]
+patch=1,EE,004920C1,extended,00000000
+
+[Pins Always On]
+patch=1,EE,004920C1,extended,00000001
+
+[KO Always Off]
+patch=1,EE,004920C2,extended,00000000
+
+[KO Always On]
+patch=1,EE,004920C2,extended,00000001
+
+[Rope Break Always Off]
+patch=1,EE,004920C3,extended,00000000
+
+[Rope Break Always On]
+patch=1,EE,004920C3,extended,00000001
+
+[Ring Out Always Off]
+patch=1,EE,004920C4,extended,00000000
+
+[Ring Out Always On]
+patch=1,EE,004920C4,extended,00000001
+
+[Ring Out Count Always Off]
+patch=1,EE,004920C5,extended,00000000
+
+[Ring Out Count Always 10]
+patch=1,EE,004920C5,extended,0000000A
+
+[Give Up Always Off]
+patch=1,EE,004920C7,extended,00000000
+
+[Give Up Always On]
+patch=1,EE,004920C7,extended,00000001
+
+[Match Length Always 10]
+patch=1,EE,004920C8,extended,0000000A
+
+[Match Length Always 15]
+patch=1,EE,004920C8,extended,0000000F
+
+[Match Length Always 20]
+patch=1,EE,004920C8,extended,00000014
+
+[Match Length Always 30]
+patch=1,EE,004920C8,extended,0000001E
+
+[Match Length No Limit]
+patch=1,EE,004920C8,extended,00000000
+
+[Cage Always Off]
+patch=1,EE,004920C9,extended,00000000
+
+[Cage Always On]
+patch=1,EE,004920C9,extended,00000001
+
+[Table Match Always Off]
+patch=1,EE,004920D2,extended,00000000
+
+[Table Match Always On]
+patch=1,EE,004920D2,extended,00000001
+
+[HIAC Always Off]
+patch=1,EE,004920D4,extended,00000000
+
+[HIAC Always On]
+patch=1,EE,004920D4,extended,00000001
+
+[TLC Always Off]
+patch=1,EE,004920D8,extended,00000000
+
+[TLC Always On]
+patch=1,EE,004920D8,extended,00000001
+
+[DQ's Always Off]
+patch=1,EE,004920DD,extended,00000000
+
+[DQ's Always On]
+patch=1,EE,004920DD,extended,00000001
+
+[Interference Always Off]
+patch=1,EE,004920E0,extended,00000000
+
+[Interference Always Manual]
+patch=1,EE,004920E0,extended,00000001
+
+[Bra & Panties Always Off]
+patch=1,EE,004920E7,extended,00000001
+
+[Bra & Panties Always On]
+patch=1,EE,004920E7,extended,00000001
+
+[First Blood Always Off]
+patch=1,EE,004920E8,extended,00000000
+
+[First Blood Always On]
+patch=1,EE,004920E8,extended,00000001
+
+[Infinite Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C132DC,extended,00000005
+
+[No Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C132DC,extended,00000000
+
+[Can Hold 5 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C132E0,extended,00000005
+
+[Can Hold 0 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C132E0,extended,00000000
+
+[Quick Special Gain]
+patch=1,EE,E0020000,extended,10422348
+patch=1,EE,D0C132E4,extended,00200063
+patch=1,EE,20C132E4,extended,00000063
+
+[Infinite Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C8B2DC,extended,00000005
+
+[No Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C8B2DC,extended,00000000
+
+[Can Hold 5 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C8B2E0,extended,00000005
+
+[Can Hold 0 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20C8B2E0,extended,00000000
+
+[Quick Special Gain]
+patch=1,EE,E0020000,extended,10422348
+patch=1,EE,D0C8B2E4,extended,00200063
+patch=1,EE,20C8B2E4,extended,00000063
+
+[Infinite Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D0338C,extended,00000005
+
+[No Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D0338C,extended,00000000
+
+[Can Hold 5 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D03390,extended,00000005
+
+[Can Hold 0 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D03390,extended,00000000
+
+[Quick Special Gain]
+patch=1,EE,E0020000,extended,10422348
+patch=1,EE,D0D03394,extended,00200063
+patch=1,EE,20D03394,extended,00000063
+
+[Infinite Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D7B2DC,extended,00000005
+
+[No Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D7B2DC,extended,00000000
+
+[Can Hold 5 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D7B2E0,extended,00000005
+
+[Can Hold 0 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20D7B2E0,extended,00000000
+
+[Quick Special Gain]
+patch=1,EE,E0020000,extended,10422348
+patch=1,EE,D0D7B2E4,extended,00200063
+patch=1,EE,20D7B2E4,extended,00000063
+
+[Infinite Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20DF336C,extended,00000005
+
+[No Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20DF336C,extended,00000000
+
+[Can Hold 5 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20DF3370,extended,00000005
+
+[Can Hold 0 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20DF3370,extended,00000000
+
+[Quick Special Gain]
+patch=1,EE,E0020000,extended,10422348
+patch=1,EE,D0DF3374,extended,00200063
+patch=1,EE,20DF3374,extended,00000063
+
+[Infinite Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20E6B2DC,extended,00000005
+
+[No Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20E6B2DC,extended,00000000
+
+[Can Hold 5 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20E6B2E0,extended,00000005
+
+[Can Hold 0 Specials]
+patch=1,EE,D0422348,extended,00100000
+patch=1,EE,20E6B2E0,extended,00000000
+
+[Quick Special Gain]
+patch=1,EE,E0020000,extended,10422348
+patch=1,EE,D0E6B2E4,extended,00200063
+patch=1,EE,20E6B2E4,extended,00000063
+
+[P1 Press {L1}+{SELECT} While Pinning For 3 Count]
+patch=1,EE,E001FBFE,extended,104FE282
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,E001FBFE,extended,004FE282
+patch=1,EE,201F91E8,extended,00000000
+
+[P1 Press {L1}+{SELECT} While Pinning For 0 Count]
+patch=1,EE,E002FEFE,extended,104FE282
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,201F91EC,extended,00000000
+patch=1,EE,E002FEFE,extended,004FE282
+patch=1,EE,201F91E8,extended,10000017
+patch=1,EE,201F91EC,extended,AE20002C
+
+[P2 Press {L1}+{SELECT} While Pinning For 3 Count]
+patch=1,EE,E001FBFE,extended,104FE402
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,E001FBFE,extended,004FE402
+patch=1,EE,201F91E8,extended,00000000
+
+[P2 Press {L1}+{SELECT} While Pinning For 0 Count]
+patch=1,EE,E002FEFE,extended,104FE402
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,201F91EC,extended,00000000
+patch=1,EE,E002FEFE,extended,004FE402
+patch=1,EE,201F91E8,extended,10000017
+patch=1,EE,201F91EC,extended,AE20002C
+
+[P3 Press {L1}+{SELECT} While Pinning For 3 Count]
+patch=1,EE,E001FBFE,extended,104FE582
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,E001FBFE,extended,004FE582
+patch=1,EE,201F91E8,extended,00000000
+
+[P3 Press {L1}+{SELECT} While Pinning For 0 Count]
+patch=1,EE,E002FEFE,extended,104FE582
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,201F91EC,extended,00000000
+patch=1,EE,E002FEFE,extended,004FE582
+patch=1,EE,201F91E8,extended,10000017
+patch=1,EE,201F91EC,extended,AE20002C
+
+[P4 Press {L1}+{SELECT} While Pinning For 3 Count]
+patch=1,EE,E001FBFE,extended,104FE702
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,E001FBFE,extended,004FE702
+patch=1,EE,201F91E8,extended,00000000
+
+[P4 Press {L1}+{SELECT} While Pinning For 0 Count]
+patch=1,EE,E002FEFE,extended,104FE702
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,201F91EC,extended,00000000
+patch=1,EE,E002FEFE,extended,004FE702
+patch=1,EE,201F91E8,extended,10000017
+patch=1,EE,201F91EC,extended,AE20002C
+
+[P5 Press {L1}+{SELECT} While Pinning For 3 Count]
+patch=1,EE,E001FBFE,extended,104FE882
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,E001FBFE,extended,004FE882
+patch=1,EE,201F91E8,extended,00000000
+
+[P5 Press {L1}+{SELECT} While Pinning For 0 Count]
+patch=1,EE,E002FEFE,extended,104FE882
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,201F91EC,extended,00000000
+patch=1,EE,E002FEFE,extended,004FE882
+patch=1,EE,201F91E8,extended,10000017
+patch=1,EE,201F91EC,extended,AE20002C
+
+[P6 Press {L1}+{SELECT} While Pinning For 3 Count]
+patch=1,EE,E001FBFE,extended,104FEA02
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,E001FBFE,extended,004FEA02
+patch=1,EE,201F91E8,extended,00000000
+
+[P6 Press {L1}+{SELECT} While Pinning For 0 Count]
+patch=1,EE,E002FEFE,extended,104FEA02
+patch=1,EE,201F91E8,extended,14850017
+patch=1,EE,201F91EC,extended,00000000
+patch=1,EE,E002FEFE,extended,004FEA02
+patch=1,EE,201F91E8,extended,10000017
+patch=1,EE,201F91EC,extended,AE20002C

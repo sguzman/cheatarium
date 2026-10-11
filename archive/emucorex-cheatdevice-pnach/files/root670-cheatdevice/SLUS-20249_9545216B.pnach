@@ -1,0 +1,210 @@
+gametitle=Armored Core 2-Another Age (SLUS-20249)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902C390C,extended,0C0B6B32
+
+[Infinite Money]
+patch=1,EE,1031A700,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2031A700,extended,05F5E0FF
+
+[Infinite AP]
+patch=1,EE,10306F44,extended,00009C3C
+
+[Infinite Power]
+patch=1,EE,10306F48,extended,00009C3C
+
+[Infinite Right Ammo]
+patch=1,EE,10307808,extended,000003E7
+
+[Max Right Ammo]
+patch=1,EE,1030780A,extended,000003E7
+
+[Max Infinite Right Ammo]
+patch=1,EE,20307808,extended,03E703E7
+
+[Infinite Back Ammo]
+patch=1,EE,10307888,extended,00000063
+patch=1,EE,10307908,extended,00000063
+
+[Max Back Ammo]
+patch=1,EE,1030788A,extended,00000063
+patch=1,EE,1030790A,extended,00000063
+
+[Max Infinite Back Ammo]
+patch=1,EE,20307888,extended,00630063
+patch=1,EE,20307908,extended,00630063
+
+[Infinite Ammo (All Weapons)]
+patch=1,EE,2014E7CC,extended,00000000
+
+[Extra Ammo (All Weapons)]
+patch=1,EE,1014E7C8,extended,00000001
+
+[Infinite Part Slots]
+patch=1,EE,104DA28C,extended,00000000
+
+[Able To Make Overweight Mechs]
+patch=1,EE,1048F3E0,extended,0000270F
+patch=1,EE,1048F6E2,extended,0000270F
+patch=1,EE,1048FAF8,extended,0000270F
+
+[Have All Heads]
+patch=1,EE,40483C70,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,10483C7C,extended,00000101
+
+[Have All Cores]
+patch=1,EE,00483CB0,extended,00000001
+patch=1,EE,10483CB2,extended,00000101
+patch=1,EE,10483CB4,extended,00000101
+
+[Have All Arms]
+patch=1,EE,40483CF0,extended,00060001
+patch=1,EE,01010101,extended,00000000
+
+[Have All Legs]
+patch=1,EE,40483D30,extended,00080001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,10483D50,extended,00010101
+patch=1,EE,00483D52,extended,00000001
+
+[Have All Boosters]
+patch=1,EE,20483D70,extended,01010101
+patch=1,EE,20483D74,extended,00010101
+
+[Have All FCS]
+patch=1,EE,20483DB0,extended,01010101
+patch=1,EE,20483DB4,extended,01010101
+patch=1,EE,10483DB8,extended,00000101
+
+[Have All Generators]
+patch=1,EE,20483DF0,extended,01010101
+patch=1,EE,20483DF4,extended,01010101
+
+[Have All Radiators]
+patch=1,EE,20483E30,extended,01010101
+patch=1,EE,20483E34,extended,01010101
+
+[Have All Inside Parts]
+patch=1,EE,20483E70,extended,01010101
+patch=1,EE,20483E74,extended,01010101
+patch=1,EE,10483E78,extended,00000101
+
+[Have All Extensions]
+patch=1,EE,20483EB0,extended,01010101
+patch=1,EE,20483EB4,extended,01010101
+patch=1,EE,10483EB8,extended,00000101
+
+[Have All Back Units R]
+patch=1,EE,40483EF0,extended,000A0001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,10483F18,extended,00000202
+
+[Have All Back Units L]
+patch=1,EE,40483F30,extended,000A0001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,10483F58,extended,00000202
+
+[Have All Arm Units R]
+patch=1,EE,40483F70,extended,00070001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,00483F8C,extended,00000001
+
+[Have All Arm Units L]
+patch=1,EE,20483FB0,extended,01010101
+patch=1,EE,20483FB4,extended,01010101
+patch=1,EE,10483FB8,extended,00000101
+
+[Have All Optional Parts]
+patch=1,EE,40483FF0,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,20483FFC,extended,01010101
+
+[Max Sorties]
+patch=1,EE,1031A70A,extended,000003E7
+
+[Max Successful Sorties]
+patch=1,EE,1031A70C,extended,000003E7
+
+[Have All Objectives Complete]
+patch=1,EE,1031A8F2,extended,00000202
+patch=1,EE,4031A8F4,extended,00180001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,1031A954,extended,00000202
+
+[Have All Heads]
+patch=1,EE,40484470,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1048447C,extended,00000101
+
+[Have All Cores]
+patch=1,EE,004844B0,extended,00000001
+patch=1,EE,104844B2,extended,00000101
+patch=1,EE,104844B4,extended,00000101
+
+[Have All Arms]
+patch=1,EE,404844F0,extended,00060001
+patch=1,EE,01010101,extended,00000000
+
+[Have All Legs]
+patch=1,EE,40484530,extended,00080001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,10484550,extended,00010101
+patch=1,EE,00484552,extended,00000001
+
+[Have All Boosters]
+patch=1,EE,20484570,extended,01010101
+patch=1,EE,20484574,extended,00010101
+
+[Have All FCS]
+patch=1,EE,204845B0,extended,01010101
+patch=1,EE,204845B4,extended,01010101
+patch=1,EE,104845B8,extended,00000101
+
+[Have All Generators]
+patch=1,EE,204845F0,extended,01010101
+patch=1,EE,204845F4,extended,01010101
+
+[Have All Radiators]
+patch=1,EE,20484630,extended,01010101
+patch=1,EE,20484634,extended,01010101
+
+[Have All Inside Parts]
+patch=1,EE,20484670,extended,01010101
+patch=1,EE,20484674,extended,01010101
+patch=1,EE,10484678,extended,00000101
+
+[Have All Extensions]
+patch=1,EE,204846B0,extended,01010101
+patch=1,EE,204846B4,extended,01010101
+patch=1,EE,104846B8,extended,00000101
+
+[Have All Back Units R]
+patch=1,EE,404846F0,extended,000A0001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,10484718,extended,00000202
+
+[Have All Back Units L]
+patch=1,EE,40484730,extended,000A0001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,10484758,extended,00000202
+
+[Have All Arm Units R]
+patch=1,EE,40484770,extended,00070001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,0048478C,extended,00000001
+
+[Have All Arm Units L]
+patch=1,EE,204847B0,extended,01010101
+patch=1,EE,204847B4,extended,01010101
+patch=1,EE,104847B8,extended,00000101
+
+[Have All Optional Parts]
+patch=1,EE,404847F0,extended,00030001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,204847FC,extended,01010101

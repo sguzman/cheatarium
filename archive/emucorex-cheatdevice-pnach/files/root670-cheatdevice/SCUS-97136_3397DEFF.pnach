@@ -1,0 +1,261 @@
+gametitle=NCAA Final Four 2002 (SCUS-97136)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9020FEAC,extended,0C08C9E2
+
+[Infinite Creation Points]
+patch=1,EE,002C65E0,extended,00000063
+
+[Home Team Scores 255]
+patch=1,EE,1026F640,extended,000000FF
+
+[Home Team Scores 150]
+patch=1,EE,1026F640,extended,00000096
+
+[Home Team Scores 0]
+patch=1,EE,1026F640,extended,00000000
+
+[Home Team Start With Score 150]
+patch=1,EE,D026F640,extended,00000000
+patch=1,EE,1026F640,extended,00000096
+
+[Home Team Start With Score 100]
+patch=1,EE,D026F640,extended,00000000
+patch=1,EE,1026F640,extended,00000064
+
+[Home Team Start With Score 50]
+patch=1,EE,D026F640,extended,00000000
+patch=1,EE,1026F640,extended,00000032
+
+[Home Team Start With Score 20]
+patch=1,EE,D026F640,extended,00000000
+patch=1,EE,1026F640,extended,00000014
+
+[Away Team Scores 255]
+patch=1,EE,1027015C,extended,000000FF
+
+[Away Team Scores 150]
+patch=1,EE,1027015C,extended,00000096
+
+[Away Team Scores 0]
+patch=1,EE,1027015C,extended,00000000
+
+[Away Team Start With Score 150]
+patch=1,EE,D027015C,extended,00000000
+patch=1,EE,1027015C,extended,00000096
+
+[Away Team Start With Score 100]
+patch=1,EE,D027015C,extended,00000000
+patch=1,EE,1027015C,extended,00000064
+
+[Away Team Start With Score 50]
+patch=1,EE,D027015C,extended,00000000
+patch=1,EE,1027015C,extended,00000032
+
+[Away Team Start With Score 20]
+patch=1,EE,D027015C,extended,00000000
+patch=1,EE,1027015C,extended,00000014
+
+[Home Team Infinite Time-Outs]
+patch=1,EE,1026F664,extended,00000005
+
+[Home Team No Time-Outs]
+patch=1,EE,1026F664,extended,00000000
+
+[Away Team Infinite Time-Outs]
+patch=1,EE,10270138,extended,00000005
+
+[Away Team No Time-Outs]
+patch=1,EE,10270138,extended,00000000
+
+[Infinite Time-Outs (Both Teams)]
+patch=1,EE,20127900,extended,00000000
+
+[Free Throw's Score 10]
+patch=1,EE,1015D1C8,extended,0000000A
+
+[Free Throw's Score 5]
+patch=1,EE,1015D1C8,extended,00000005
+
+[Free Throw's Score 2]
+patch=1,EE,1015D1C8,extended,00000002
+
+[2-Pointer's Score 10]
+patch=1,EE,1015D1CC,extended,0000000A
+
+[2-Pointer's Score 5]
+patch=1,EE,1015D1CC,extended,00000005
+
+[2-Pointer's Score 1]
+patch=1,EE,1015D1CC,extended,00000001
+
+[3-Pointer's Score 10]
+patch=1,EE,1015D1C0,extended,0000000A
+
+[3-Pointer's Score 5]
+patch=1,EE,1015D1C0,extended,00000005
+
+[3-Pointer's Score 1]
+patch=1,EE,1015D1C0,extended,00000001
+
+[Home Team Shot's Score 10]
+patch=1,EE,10276B20,extended,0000000A
+
+[Home Team Shot's Score 5]
+patch=1,EE,10276B20,extended,00000005
+
+[Home Team Shot's Score 1]
+patch=1,EE,10276B20,extended,00000001
+
+[Away Team Shot's Score 10]
+patch=1,EE,10276ACC,extended,0000000A
+
+[Away Team Shot's Score 5]
+patch=1,EE,10276ACC,extended,00000005
+
+[Away Team Shot's Score 1]
+patch=1,EE,10276ACC,extended,00000001
+
+[P1 Press {L1}+{L2} For More Time]
+patch=1,EE,D032F9C2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P1 Press {R1}+{R2} To End Half]
+patch=1,EE,D032F9C2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[P2 Press {L1}+{L2} For More Time]
+patch=1,EE,D032FAC2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P2 Press {R1}+{R2} To End Half]
+patch=1,EE,D032FAC2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[P3 Press {L1}+{L2} For More Time]
+patch=1,EE,D032FBC2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P3 Press {R1}+{R2} To End Half]
+patch=1,EE,D032FBC2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[P4 Press {L1}+{L2} For More Time]
+patch=1,EE,D032FCC2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P4 Press {R1}+{R2} To End Half]
+patch=1,EE,D032FCC2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[P5 Press {L1}+{L2} For More Time]
+patch=1,EE,D032FDC2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P5 Press {R1}+{R2} To End Half]
+patch=1,EE,D032FDC2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[P6 Press {L1}+{L2} For More Time]
+patch=1,EE,D032FEC2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P6 Press {R1}+{R2} To End Half]
+patch=1,EE,D032FEC2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[P7 Press {L1}+{L2} For More Time]
+patch=1,EE,D032FFC2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P7 Press {R1}+{R2} To End Half]
+patch=1,EE,D032FFC2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[P8 Press {L1}+{L2} For More Time]
+patch=1,EE,D03300C2,extended,0000FAFF
+patch=1,EE,1027A3F8,extended,0000000A
+
+[P8 Press {R1}+{R2} To End Half]
+patch=1,EE,D03300C2,extended,0000F5FF
+patch=1,EE,1027A3F8,extended,00000100
+
+[Start On 2nd Half]
+patch=1,EE,D027A3F0,extended,00000000
+patch=1,EE,1027A3F0,extended,00000001
+
+[P1 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D032F9C2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P1 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D032F9C2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[P2 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D032FAC2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P2 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D032FAC2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[P3 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D032FBC2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P3 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D032FBC2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[P4 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D032FCC2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P4 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D032FCC2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[P5 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D032FDC2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P5 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D032FDC2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[P6 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D032FEC2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P6 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D032FEC2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[P7 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D032FFC2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P7 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D032FFC2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[P8 Press {L1}+{SELECT} For Very Low Shot Clock]
+patch=1,EE,D03300C2,extended,0000FBFE
+patch=1,EE,1027A3F4,extended,00000023
+
+[P8 Press {R1}+{SELECT} For More Shot Clock]
+patch=1,EE,D03300C2,extended,0000F7FE
+patch=1,EE,1027A3F4,extended,00000001
+
+[Infinite Creation Points]
+patch=1,EE,002C65E0,extended,00000063
+
+[Max All Stats]
+patch=1,EE,002C65BB,extended,00000063
+patch=1,EE,402C65BC,extended,00030001
+patch=1,EE,63636363,extended,00000000
+patch=1,EE,102C65C8,extended,00006363

@@ -1,0 +1,185 @@
+gametitle=Sky Gunner (SLUS-20384)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901276C4,extended,0C04F9DB
+
+[Always Low Total Time]
+patch=1,EE,201667C0,extended,00000000
+
+[Have All Modes & Planes]
+patch=1,EE,201667CC,extended,FFFFFFFF
+
+[Have All Ventre's Photos]
+patch=1,EE,20166830,extended,FFFFFFFF
+
+[Scene 1]
+patch=1,EE,E0022021,extended,001B3E50
+patch=1,EE,201B3E58,extended,3C0205F5
+patch=1,EE,201B3E68,extended,3442E0FF
+
+[Scene 2]
+patch=1,EE,E0022021,extended,001B4168
+patch=1,EE,201B4170,extended,3C0205F5
+patch=1,EE,201B4180,extended,3442E0FF
+
+[Scene 3]
+patch=1,EE,E0022021,extended,001B6BB8
+patch=1,EE,201B6BC0,extended,3C0205F5
+patch=1,EE,201B6BD0,extended,3442E0FF
+
+[Scene 4]
+patch=1,EE,E0022021,extended,001B54E0
+patch=1,EE,201B54E8,extended,3C0205F5
+patch=1,EE,201B54F8,extended,3442E0FF
+
+[Scene 5]
+patch=1,EE,E0022021,extended,001B5088
+patch=1,EE,201B5090,extended,3C0205F5
+patch=1,EE,201B50A0,extended,3442E0FF
+
+[Scene 1]
+patch=1,EE,D01BA100,extended,0000202D
+patch=1,EE,201BA108,extended,00000000
+
+[Scene 2]
+patch=1,EE,D01BA3A0,extended,0000202D
+patch=1,EE,201BA3A8,extended,00000000
+
+[Scene 3]
+patch=1,EE,D01BD020,extended,0000202D
+patch=1,EE,201BD028,extended,00000000
+
+[Scene 4]
+patch=1,EE,D01BB6E0,extended,0000202D
+patch=1,EE,201BB6E8,extended,00000000
+
+[Scene 5]
+patch=1,EE,D01BB318,extended,0000202D
+patch=1,EE,201BB320,extended,00000000
+
+[Scene 1]
+patch=1,EE,D01D85D0,extended,0000102A
+patch=1,EE,201D85E0,extended,00000000
+
+[Scene 2]
+patch=1,EE,D01D8760,extended,0000102A
+patch=1,EE,201D8770,extended,00000000
+
+[Scene 3]
+patch=1,EE,D01DF430,extended,0000102A
+patch=1,EE,201DF440,extended,00000000
+
+[Scene 4]
+patch=1,EE,D01DA528,extended,0000102A
+patch=1,EE,201DA538,extended,00000000
+
+[Scene 5]
+patch=1,EE,D01D9878,extended,0000102A
+patch=1,EE,201D9888,extended,00000000
+
+[Scene 1]
+patch=1,EE,D01D9FDC,extended,00000869
+patch=1,EE,201D9FE4,extended,00000000
+patch=1,EE,D01DA00C,extended,00000869
+patch=1,EE,201DA010,extended,00000000
+
+[Scene 2]
+patch=1,EE,D01DA16C,extended,00000869
+patch=1,EE,201DA174,extended,00000000
+patch=1,EE,D01DA19C,extended,00000869
+patch=1,EE,201DA1A0,extended,00000000
+
+[Scene 3]
+patch=1,EE,D01E0E5C,extended,00000869
+patch=1,EE,201E0E64,extended,00000000
+patch=1,EE,D01E0E8C,extended,00000869
+patch=1,EE,201E0E90,extended,00000000
+
+[Scene 4]
+patch=1,EE,D01DBF34,extended,00000869
+patch=1,EE,201DBF3C,extended,00000000
+patch=1,EE,D01DFB64,extended,00000869
+patch=1,EE,201DFB68,extended,00000000
+
+[Scene 5]
+patch=1,EE,D01DB284,extended,00000869
+patch=1,EE,201DB28C,extended,00000000
+patch=1,EE,D01DB2B4,extended,00000869
+patch=1,EE,201DB2B8,extended,00000000
+
+[Scene 1]
+patch=1,EE,20166834,extended,FFFFFFFF
+
+[Scene 2]
+patch=1,EE,20166838,extended,FFFFFFFF
+
+[Scene 3]
+patch=1,EE,2016683C,extended,FFFFFFFF
+
+[Scene 4]
+patch=1,EE,20166840,extended,FFFFFFFF
+
+[Scene 5]
+patch=1,EE,20166844,extended,FFFFFFFF
+
+[All Scenes]
+patch=1,EE,20166834,extended,FFFFFFFF
+patch=1,EE,20166838,extended,FFFFFFFF
+patch=1,EE,2016683C,extended,FFFFFFFF
+patch=1,EE,20166840,extended,FFFFFFFF
+patch=1,EE,20166844,extended,FFFFFFFF
+
+[Slot 1]
+patch=1,EE,0017E840,extended,00000063
+
+[Slot 2]
+patch=1,EE,0017E841,extended,00000063
+
+[Slot 3]
+patch=1,EE,0017E842,extended,00000063
+
+[Slot 4]
+patch=1,EE,0017E843,extended,00000063
+
+[Slot 5]
+patch=1,EE,0017E844,extended,00000063
+
+[Slot 6]
+patch=1,EE,0017E845,extended,00000063
+
+[Slot 7]
+patch=1,EE,0017E846,extended,00000063
+
+[Slot 8]
+patch=1,EE,0017E847,extended,00000063
+
+[Slot 9]
+patch=1,EE,0017E848,extended,00000063
+
+[Slot 10]
+patch=1,EE,0017E849,extended,00000063
+
+[Slot 11]
+patch=1,EE,0017E84A,extended,00000063
+
+[Slot 12]
+patch=1,EE,0017E84B,extended,00000063
+
+[Slot 13]
+patch=1,EE,0017E84C,extended,00000063
+
+[Slot 14]
+patch=1,EE,0017E84D,extended,00000063
+
+[Slot 15]
+patch=1,EE,0017E84E,extended,00000063
+
+[Slot 16]
+patch=1,EE,0017E84F,extended,00000063
+
+[All Slots]
+patch=1,EE,4017E840,extended,00040001
+patch=1,EE,63636363,extended,00000000

@@ -1,0 +1,62 @@
+gametitle=Prince Of Persia-The Two Thrones (SLUS-21287)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90103F10,extended,0C046740
+
+[Infinite Health]
+patch=1,EE,20425534,extended,2403012C
+patch=1,EE,2042553C,extended,AE0302B0
+
+[Max Health]
+patch=1,EE,200C0220,extended,2401012C
+patch=1,EE,200C0224,extended,08056090
+patch=1,EE,200C0228,extended,AE011BFC
+patch=1,EE,204255A8,extended,0C030088
+
+[Dont Die From Falling High Distances]
+patch=1,EE,2018E768,extended,00000000
+
+[Infinite Sand Meter]
+patch=1,EE,200C0230,extended,2401000C
+patch=1,EE,200C0234,extended,08051AC0
+patch=1,EE,200C0238,extended,AE010D08
+patch=1,EE,204255B4,extended,0C03008C
+
+[Infinite Check Point Meter]
+patch=1,EE,204C8898,extended,00000000
+patch=1,EE,204C98E0,extended,00000000
+patch=1,EE,204C99A8,extended,00000000
+
+[Infinite Sand Usage]
+patch=1,EE,203268A4,extended,00000000
+
+[1-Hit Death (Bosses)]
+patch=1,EE,201FCD24,extended,24020000
+
+[Infinite Weapon Usage]
+patch=1,EE,202416B4,extended,00000000
+
+[Max Sand Credits]
+patch=1,EE,20A952B4,extended,0001869F
+
+[Unlock Video Gallery]
+patch=1,EE,70AB76F4,extended,00000001
+
+[P1 Press {L1}+{SELECT} For Normal Speed]
+patch=1,EE,D0AD34C2,extended,0000FBFE
+patch=1,EE,20A90808,extended,3F800000
+
+[P1 Press {L2}+{SELECT} For Super Speed]
+patch=1,EE,D0AD34C2,extended,0000FEFE
+patch=1,EE,20A90808,extended,3FC00000
+
+[P1 Press {R1}+{SELECT} For Turbo Speed]
+patch=1,EE,D0AD34C2,extended,0000F7FE
+patch=1,EE,20A90808,extended,40000000
+
+[P1 Press {R2}+{SELECT} For Ultra Speed]
+patch=1,EE,D0AD34C2,extended,0000FDFE
+patch=1,EE,20A90808,extended,40800000

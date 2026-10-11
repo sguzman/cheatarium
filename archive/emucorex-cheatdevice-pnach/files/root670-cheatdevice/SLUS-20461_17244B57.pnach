@@ -1,0 +1,49 @@
+gametitle=Blood Rayne (SLUS-20461)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902E1D94,extended,0C0BEB09
+
+[Infinite Health]
+patch=1,EE,201B8AA8,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,202BFF10,extended,00000000
+
+[Unlock All Cheats]
+patch=1,EE,103BA0A0,extended,0000FFFF
+
+[Show Debug Mode]
+patch=1,EE,20327B80,extended,00000001
+
+[Show Triggers]
+patch=1,EE,20327B8C,extended,00000001
+
+[Show Safe Area]
+patch=1,EE,20327B90,extended,00000001
+
+[Show Character Debug]
+patch=1,EE,20327B98,extended,00000001
+
+[Show Motion Debug]
+patch=1,EE,203BA3C0,extended,00000001
+
+[Unlock All Debug Stuff In Cheat Menu]
+patch=1,EE,20327B78,extended,00000001
+
+[God Mode]
+patch=1,EE,20327B40,extended,00000001
+
+[Enemies Frozen]
+patch=1,EE,20327B48,extended,00000001
+
+[Show Weapons On Body]
+patch=1,EE,203278DC,extended,00000001
+
+[Juggy Mode]
+patch=1,EE,20327B94,extended,00000001
+
+[Gratuitous Dismemberment]
+patch=1,EE,20327B5C,extended,00000001

@@ -1,0 +1,154 @@
+gametitle=Cabela's Alaskan Adventures (SLUS-21384)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012A9BC,extended,0C041188
+
+[Infinite Health]
+patch=1,EE,2058C4AC,extended,3C0142C8
+patch=1,EE,2058C4B4,extended,AC81017C
+
+[Infinite Stamina]
+patch=1,EE,2058CC64,extended,00000000
+patch=1,EE,2058CC8C,extended,00000000
+patch=1,EE,2058CCAC,extended,00000000
+
+[Never Reload]
+patch=1,EE,20599BF0,extended,00000000
+patch=1,EE,20599C24,extended,00000000
+patch=1,EE,20599C3C,extended,00000000
+
+[Can Zoom Ultra Close]
+patch=1,EE,105B234C,extended,00000000
+patch=1,EE,205B28C0,extended,3C0142C8
+patch=1,EE,205B28C8,extended,AC41007C
+
+[Invert Axis Always Off]
+patch=1,EE,2072FD80,extended,00000000
+
+[Invert Axis Always On]
+patch=1,EE,2072FD80,extended,00000001
+
+[Vibrations Always Off]
+patch=1,EE,2072FD84,extended,00000000
+
+[Vibrations Always On]
+patch=1,EE,2072FD84,extended,00000001
+
+[Always Max Sensitivity]
+patch=1,EE,2072FD88,extended,42C80000
+
+[HUD Always Off]
+patch=1,EE,2072FD8C,extended,00000000
+
+[HUD Always On]
+patch=1,EE,2072FD8C,extended,00000001
+
+[Subtitles Always Off]
+patch=1,EE,2072FD90,extended,00000000
+
+[Subtitles Always On]
+patch=1,EE,2072FD90,extended,00000001
+
+[Bullet Cam Always Off]
+patch=1,EE,2072FD94,extended,00000000
+
+[Bullet Cam Always On]
+patch=1,EE,2072FD94,extended,00000001
+
+[Tip-Up Timer Always Off]
+patch=1,EE,2072FD98,extended,00000000
+
+[Tip-Up Timer Always On]
+patch=1,EE,2072FD98,extended,00000001
+
+[Animal Radar Always Off]
+patch=1,EE,2072FD9C,extended,00000000
+
+[Animal Radar Always On]
+patch=1,EE,2072FD9C,extended,00000001
+
+[Aim Help Always Off]
+patch=1,EE,2072FDA0,extended,00000000
+
+[Aim Help Always On]
+patch=1,EE,2072FDA0,extended,00000001
+
+[Autoclaim Always Off]
+patch=1,EE,2072FDA4,extended,00000000
+
+[Autoclaim Always On]
+patch=1,EE,2072FDA4,extended,00000001
+
+[P1 Press {L1}+{SELECT} To Enable No Clipping]
+patch=1,EE,D07069C2,extended,0000FBFE
+patch=1,EE,2070B710,extended,00000001
+
+[P1 Press {L2}+{SELECT} To Disble No Clipping]
+patch=1,EE,D07069C2,extended,0000FEFE
+patch=1,EE,2070B710,extended,00000000
+
+[God Mode]
+patch=1,EE,2070B718,extended,00000001
+
+[Infinite Credits]
+patch=1,EE,10730F78,extended,0000FFFF
+
+[Max Credits]
+patch=1,EE,20730F78,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease Credits]
+patch=1,EE,2052D044,extended,00000000
+
+[Buying Items Increases Credits]
+patch=1,EE,2052D040,extended,00641821
+
+[Have All Hunts]
+patch=1,EE,10730F12,extended,00000003
+
+[Have All Special Hunts]
+patch=1,EE,10730F22,extended,00000003
+
+[Have All Fishing]
+patch=1,EE,10730F32,extended,00000002
+
+[Have All Contests]
+patch=1,EE,10730F42,extended,00000002
+
+[Have All Hunts]
+patch=1,EE,10730F14,extended,00000003
+
+[Have All Special Hunts]
+patch=1,EE,10730F24,extended,00000003
+
+[Have All Fishing]
+patch=1,EE,10730F34,extended,00000002
+
+[Have All Contests]
+patch=1,EE,10730F44,extended,00000002
+
+[Have All Hunts]
+patch=1,EE,10730F16,extended,00000003
+
+[Have All Special Hunts]
+patch=1,EE,10730F26,extended,00000006
+
+[Have All Fishing]
+patch=1,EE,10730F36,extended,00000002
+
+[Have All Contests]
+patch=1,EE,10730F46,extended,00000002
+
+[Have All Hunts]
+patch=1,EE,10730F18,extended,00000003
+
+[Have All Special Hunts]
+patch=1,EE,10730F28,extended,00000006
+
+[Have All Fishing]
+patch=1,EE,10730F38,extended,00000002
+
+[Have All Contests]
+patch=1,EE,10730F48,extended,00000002

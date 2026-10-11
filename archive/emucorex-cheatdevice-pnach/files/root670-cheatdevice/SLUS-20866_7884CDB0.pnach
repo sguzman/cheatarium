@@ -1,0 +1,43 @@
+gametitle=Asterix & Obelix-Kick Buttix (SLUS-20866)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011BDF4,extended,0C041A04
+
+[Max Roman Helmets Collected]
+patch=1,EE,2072C088,extended,0000270F
+
+[Max Energy Gauge (Combo)]
+patch=1,EE,2072BCD0,extended,0000001E
+
+[Max Helmet Multiplier]
+patch=1,EE,2072C0A4,extended,00000063
+
+[Have Helmet Multiplier]
+patch=1,EE,2072C0B8,extended,42C60000
+
+[Always Under Magic Potion]
+patch=1,EE,2072C0BC,extended,42C80000
+
+[Infinite Health]
+patch=1,EE,0072C070,extended,0000001E
+
+[P1 Press {L1}+{SELECT} To Get Magic Potition Effects]
+patch=1,EE,D051F082,extended,0000FBFE
+patch=1,EE,2072C0BC,extended,42C80000
+
+[P1 Press {L2}+{SELECT} To Remove Magic Potition Effects]
+patch=1,EE,D051F082,extended,0000FEFE
+patch=1,EE,2072C0BC,extended,00000000
+
+[P1 Press {CROSS} For Moon Jump]
+patch=1,EE,D051F082,extended,0000BFFF
+patch=1,EE,20293AD0,extended,00000000
+patch=1,EE,D051F082,extended,0000FFFF
+patch=1,EE,20293AD0,extended,E48200A8
+
+[Infinite Double Jumps]
+patch=1,EE,202A20F0,extended,00000000
+patch=1,EE,102A20FE,extended,00001000

@@ -1,0 +1,2050 @@
+gametitle=Inuyasha-Feudal Combat (SLUS-21193)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9030C188,extended,00832021
+patch=1,EE,200C0220,extended,8E020000
+patch=1,EE,200C0298,extended,0807609F
+patch=1,EE,200C029C,extended,8E021BE4
+patch=1,EE,201D8278,extended,0C030088
+
+[Infinite Health P1]
+patch=1,EE,200C0224,extended,24010000
+patch=1,EE,200C0228,extended,50220001
+patch=1,EE,200C022C,extended,AE031BE4
+
+[No Health P1]
+patch=1,EE,200C0224,extended,24010000
+patch=1,EE,200C0228,extended,50220001
+patch=1,EE,200C022C,extended,AE001BE4
+
+[Infinite Health P2]
+patch=1,EE,200C0230,extended,24010001
+patch=1,EE,200C0234,extended,50220001
+patch=1,EE,200C0238,extended,AE031BE4
+
+[No Health P2]
+patch=1,EE,200C0230,extended,24010001
+patch=1,EE,200C0234,extended,50220001
+patch=1,EE,200C0238,extended,AE001BE4
+
+[Infinite Health P1-Partner]
+patch=1,EE,200C023C,extended,24010002
+patch=1,EE,200C0240,extended,50220001
+patch=1,EE,200C0244,extended,AE031BE4
+
+[No Health P1-Partner]
+patch=1,EE,200C023C,extended,24010002
+patch=1,EE,200C0240,extended,50220001
+patch=1,EE,200C0244,extended,AE001BE4
+
+[Infinite Health P2-Partner]
+patch=1,EE,200C023C,extended,24010003
+patch=1,EE,200C0240,extended,50220001
+patch=1,EE,200C0244,extended,AE031BE4
+
+[No Health P2-Partner]
+patch=1,EE,200C023C,extended,24010003
+patch=1,EE,200C0240,extended,50220001
+patch=1,EE,200C0244,extended,AE001BE4
+
+[Infinite Spirit Power P1]
+patch=1,EE,200C0248,extended,24010000
+patch=1,EE,200C024C,extended,50220001
+patch=1,EE,200C0250,extended,AE031BF4
+
+[No Spirit Power P1]
+patch=1,EE,200C0248,extended,24010000
+patch=1,EE,200C024C,extended,50220001
+patch=1,EE,200C0250,extended,AE001BF4
+
+[Infinite Spirit Power P2]
+patch=1,EE,200C0254,extended,24010001
+patch=1,EE,200C0258,extended,50220001
+patch=1,EE,200C025C,extended,AE031BF4
+
+[No Spirit Power P2]
+patch=1,EE,200C0254,extended,24010001
+patch=1,EE,200C0258,extended,50220001
+patch=1,EE,200C025C,extended,AE001BF4
+
+[Naraku]
+patch=1,EE,20434210,extended,00000002
+
+[Bankotsu]
+patch=1,EE,20434218,extended,00000002
+
+[Human Inuyasha]
+patch=1,EE,2043421C,extended,00000002
+
+[Demon Inuyasha]
+patch=1,EE,20434220,extended,00000002
+
+[All Characters]
+patch=1,EE,40434210,extended,00050001
+patch=1,EE,00000002,extended,00000000
+
+[Miroku-Sango's Chapter]
+patch=1,EE,2043425C,extended,00000002
+
+[Sesshomaru's Chapter]
+patch=1,EE,20434254,extended,00000002
+
+[Shippo's Chapter]
+patch=1,EE,20434258,extended,00000002
+
+[All Chapters]
+patch=1,EE,40434254,extended,00030001
+patch=1,EE,00000002,extended,00000000
+
+[Max Wind Level]
+patch=1,EE,204320DC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204320E0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204320E4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204320E8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432110,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432074,extended,00000063
+
+[Max DF]
+patch=1,EE,20432078,extended,00000063
+
+[Max HP]
+patch=1,EE,2043207C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432080,extended,00000063
+
+[Max ATK]
+patch=1,EE,204320C8,extended,00000063
+
+[Max DF]
+patch=1,EE,204320CC,extended,00000063
+
+[Max HP]
+patch=1,EE,204320D0,extended,00000063
+
+[Max SPD]
+patch=1,EE,204320D4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432184,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432188,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043218C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432190,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204321B8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043211C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432120,extended,00000063
+
+[Max HP]
+patch=1,EE,20432124,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432128,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432170,extended,00000063
+
+[Max DF]
+patch=1,EE,20432174,extended,00000063
+
+[Max HP]
+patch=1,EE,20432178,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043217C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043222C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432230,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432234,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432238,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432260,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204321C4,extended,00000063
+
+[Max DF]
+patch=1,EE,204321C8,extended,00000063
+
+[Max HP]
+patch=1,EE,204321CC,extended,00000063
+
+[Max SPD]
+patch=1,EE,204321D0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432218,extended,00000063
+
+[Max DF]
+patch=1,EE,2043221C,extended,00000063
+
+[Max HP]
+patch=1,EE,20432220,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432224,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204322D4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204322D8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204322DC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204322E0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432308,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043226C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432270,extended,00000063
+
+[Max HP]
+patch=1,EE,20432274,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432278,extended,00000063
+
+[Max ATK]
+patch=1,EE,204322C0,extended,00000063
+
+[Max DF]
+patch=1,EE,204322C4,extended,00000063
+
+[Max HP]
+patch=1,EE,204322C8,extended,00000063
+
+[Max SPD]
+patch=1,EE,204322CC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043237C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432380,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432384,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432388,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204323B0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432314,extended,00000063
+
+[Max DF]
+patch=1,EE,20432318,extended,00000063
+
+[Max HP]
+patch=1,EE,2043231C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432320,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432368,extended,00000063
+
+[Max DF]
+patch=1,EE,2043236C,extended,00000063
+
+[Max HP]
+patch=1,EE,20432370,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432374,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432424,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432428,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043242C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432430,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432458,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204323BC,extended,00000063
+
+[Max DF]
+patch=1,EE,204323C0,extended,00000063
+
+[Max HP]
+patch=1,EE,204323C4,extended,00000063
+
+[Max SPD]
+patch=1,EE,204323C8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432410,extended,00000063
+
+[Max DF]
+patch=1,EE,20432414,extended,00000063
+
+[Max HP]
+patch=1,EE,20432418,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043241C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204324CC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204324D0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204324D4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204324D8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432500,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432464,extended,00000063
+
+[Max DF]
+patch=1,EE,20432468,extended,00000063
+
+[Max HP]
+patch=1,EE,2043246C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432470,extended,00000063
+
+[Max ATK]
+patch=1,EE,204324B8,extended,00000063
+
+[Max DF]
+patch=1,EE,204324BC,extended,00000063
+
+[Max HP]
+patch=1,EE,204324C0,extended,00000063
+
+[Max SPD]
+patch=1,EE,204324C4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432574,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432578,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043257C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432580,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204325A8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043250C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432510,extended,00000063
+
+[Max HP]
+patch=1,EE,20432514,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432518,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432560,extended,00000063
+
+[Max DF]
+patch=1,EE,20432564,extended,00000063
+
+[Max HP]
+patch=1,EE,20432568,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043256C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043261C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432620,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432624,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432628,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432650,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204325B4,extended,00000063
+
+[Max DF]
+patch=1,EE,204325B8,extended,00000063
+
+[Max HP]
+patch=1,EE,204325BC,extended,00000063
+
+[Max SPD]
+patch=1,EE,204325C0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432608,extended,00000063
+
+[Max DF]
+patch=1,EE,2043260C,extended,00000063
+
+[Max HP]
+patch=1,EE,20432610,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432614,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204326C4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204326C8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204326CC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204326D0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204326F8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043265C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432660,extended,00000063
+
+[Max HP]
+patch=1,EE,20432664,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432668,extended,00000063
+
+[Max ATK]
+patch=1,EE,204326B0,extended,00000063
+
+[Max DF]
+patch=1,EE,204326B4,extended,00000063
+
+[Max HP]
+patch=1,EE,204326B8,extended,00000063
+
+[Max SPD]
+patch=1,EE,204326BC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043276C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432770,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432774,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432778,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204327A0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432704,extended,00000063
+
+[Max DF]
+patch=1,EE,20432708,extended,00000063
+
+[Max HP]
+patch=1,EE,2043270C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432710,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432758,extended,00000063
+
+[Max DF]
+patch=1,EE,2043275C,extended,00000063
+
+[Max HP]
+patch=1,EE,20432760,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432764,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432814,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432818,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043281C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432820,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432848,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204327AC,extended,00000063
+
+[Max DF]
+patch=1,EE,204327B0,extended,00000063
+
+[Max HP]
+patch=1,EE,204327B4,extended,00000063
+
+[Max SPD]
+patch=1,EE,204327B8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432800,extended,00000063
+
+[Max DF]
+patch=1,EE,20432804,extended,00000063
+
+[Max HP]
+patch=1,EE,20432808,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043280C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204328BC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204328C0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204328C4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204328C8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204328F0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432854,extended,00000063
+
+[Max DF]
+patch=1,EE,20432858,extended,00000063
+
+[Max HP]
+patch=1,EE,2043285C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432860,extended,00000063
+
+[Max ATK]
+patch=1,EE,204328A8,extended,00000063
+
+[Max DF]
+patch=1,EE,204328AC,extended,00000063
+
+[Max HP]
+patch=1,EE,204328B0,extended,00000063
+
+[Max SPD]
+patch=1,EE,204328B4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432964,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432968,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043296C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432970,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432998,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204328FC,extended,00000063
+
+[Max DF]
+patch=1,EE,20432900,extended,00000063
+
+[Max HP]
+patch=1,EE,20432904,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432908,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432950,extended,00000063
+
+[Max DF]
+patch=1,EE,20432954,extended,00000063
+
+[Max HP]
+patch=1,EE,20432958,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043295C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432A0C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432A10,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432A14,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432A18,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432A40,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204329A4,extended,00000063
+
+[Max DF]
+patch=1,EE,204329A8,extended,00000063
+
+[Max HP]
+patch=1,EE,204329AC,extended,00000063
+
+[Max SPD]
+patch=1,EE,204329B0,extended,00000063
+
+[Max ATK]
+patch=1,EE,204329F8,extended,00000063
+
+[Max DF]
+patch=1,EE,204329FC,extended,00000063
+
+[Max HP]
+patch=1,EE,20432A00,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432A04,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432AB4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432AB8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432ABC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432AC0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432AE8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432A4C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432A50,extended,00000063
+
+[Max HP]
+patch=1,EE,20432A54,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432A58,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432AA0,extended,00000063
+
+[Max DF]
+patch=1,EE,20432AA4,extended,00000063
+
+[Max HP]
+patch=1,EE,20432AA8,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432AAC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432B5C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432B60,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432B64,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432B68,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432B90,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432AF4,extended,00000063
+
+[Max DF]
+patch=1,EE,20432AF8,extended,00000063
+
+[Max HP]
+patch=1,EE,20432AFC,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432B00,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432B48,extended,00000063
+
+[Max DF]
+patch=1,EE,20432B4C,extended,00000063
+
+[Max HP]
+patch=1,EE,20432B50,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432B54,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432C04,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432C08,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432C0C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432C10,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432C38,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432B9C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432BA0,extended,00000063
+
+[Max HP]
+patch=1,EE,20432BA4,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432BA8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432BF0,extended,00000063
+
+[Max DF]
+patch=1,EE,20432BF4,extended,00000063
+
+[Max HP]
+patch=1,EE,20432BF8,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432BFC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432CAC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432CB0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432CB4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432CB8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432CE0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432C44,extended,00000063
+
+[Max DF]
+patch=1,EE,20432C48,extended,00000063
+
+[Max HP]
+patch=1,EE,20432C4C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432C50,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432C98,extended,00000063
+
+[Max DF]
+patch=1,EE,20432C9C,extended,00000063
+
+[Max HP]
+patch=1,EE,20432CA0,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432CA4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432D54,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432D58,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432D5C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432D60,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432D88,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432CEC,extended,00000063
+
+[Max DF]
+patch=1,EE,20432CF0,extended,00000063
+
+[Max HP]
+patch=1,EE,20432CF4,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432CF8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432D40,extended,00000063
+
+[Max DF]
+patch=1,EE,20432D44,extended,00000063
+
+[Max HP]
+patch=1,EE,20432D48,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432D4C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432DFC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432E00,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432E04,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432E08,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432E30,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432D94,extended,00000063
+
+[Max DF]
+patch=1,EE,20432D98,extended,00000063
+
+[Max HP]
+patch=1,EE,20432D9C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432DA0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432DE8,extended,00000063
+
+[Max DF]
+patch=1,EE,20432DEC,extended,00000063
+
+[Max HP]
+patch=1,EE,20432DF0,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432DF4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432EA4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432EA8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432EAC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432EB0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432ED8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432E3C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432E40,extended,00000063
+
+[Max HP]
+patch=1,EE,20432E44,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432E48,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432E90,extended,00000063
+
+[Max DF]
+patch=1,EE,20432E94,extended,00000063
+
+[Max HP]
+patch=1,EE,20432E98,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432E9C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432F4C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432F50,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432F54,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20432F58,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20432F80,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432EE4,extended,00000063
+
+[Max DF]
+patch=1,EE,20432EE8,extended,00000063
+
+[Max HP]
+patch=1,EE,20432EEC,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432EF0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432F38,extended,00000063
+
+[Max DF]
+patch=1,EE,20432F3C,extended,00000063
+
+[Max HP]
+patch=1,EE,20432F40,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432F44,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20432FF4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20432FF8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20432FFC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433000,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433028,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20432F8C,extended,00000063
+
+[Max DF]
+patch=1,EE,20432F90,extended,00000063
+
+[Max HP]
+patch=1,EE,20432F94,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432F98,extended,00000063
+
+[Max ATK]
+patch=1,EE,20432FE0,extended,00000063
+
+[Max DF]
+patch=1,EE,20432FE4,extended,00000063
+
+[Max HP]
+patch=1,EE,20432FE8,extended,00000063
+
+[Max SPD]
+patch=1,EE,20432FEC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043309C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204330A0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204330A4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204330A8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204330D0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433034,extended,00000063
+
+[Max DF]
+patch=1,EE,20433038,extended,00000063
+
+[Max HP]
+patch=1,EE,2043303C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433040,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433088,extended,00000063
+
+[Max DF]
+patch=1,EE,2043308C,extended,00000063
+
+[Max HP]
+patch=1,EE,20433090,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433094,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433144,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433148,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043314C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433150,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433178,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204330DC,extended,00000063
+
+[Max DF]
+patch=1,EE,204330E0,extended,00000063
+
+[Max HP]
+patch=1,EE,204330E4,extended,00000063
+
+[Max SPD]
+patch=1,EE,204330E8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433130,extended,00000063
+
+[Max DF]
+patch=1,EE,20433134,extended,00000063
+
+[Max HP]
+patch=1,EE,20433138,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043313C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204331EC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204331F0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204331F4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204331F8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433220,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433184,extended,00000063
+
+[Max DF]
+patch=1,EE,20433188,extended,00000063
+
+[Max HP]
+patch=1,EE,2043318C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433190,extended,00000063
+
+[Max ATK]
+patch=1,EE,204331D8,extended,00000063
+
+[Max DF]
+patch=1,EE,204331DC,extended,00000063
+
+[Max HP]
+patch=1,EE,204331E0,extended,00000063
+
+[Max SPD]
+patch=1,EE,204331E4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433294,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433298,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043329C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204332A0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204332C8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043322C,extended,00000063
+
+[Max DF]
+patch=1,EE,20433230,extended,00000063
+
+[Max HP]
+patch=1,EE,20433234,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433238,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433280,extended,00000063
+
+[Max DF]
+patch=1,EE,20433284,extended,00000063
+
+[Max HP]
+patch=1,EE,20433288,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043328C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043333C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433340,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433344,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433348,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433370,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204332D4,extended,00000063
+
+[Max DF]
+patch=1,EE,204332D8,extended,00000063
+
+[Max HP]
+patch=1,EE,204332DC,extended,00000063
+
+[Max SPD]
+patch=1,EE,204332E0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433328,extended,00000063
+
+[Max DF]
+patch=1,EE,2043332C,extended,00000063
+
+[Max HP]
+patch=1,EE,20433330,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433334,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204333E4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204333E8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204333EC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204333F0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433418,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043337C,extended,00000063
+
+[Max DF]
+patch=1,EE,20433380,extended,00000063
+
+[Max HP]
+patch=1,EE,20433384,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433388,extended,00000063
+
+[Max ATK]
+patch=1,EE,204333D0,extended,00000063
+
+[Max DF]
+patch=1,EE,204333D4,extended,00000063
+
+[Max HP]
+patch=1,EE,204333D8,extended,00000063
+
+[Max SPD]
+patch=1,EE,204333DC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043348C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433490,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433494,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433498,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204334C0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433424,extended,00000063
+
+[Max DF]
+patch=1,EE,20433428,extended,00000063
+
+[Max HP]
+patch=1,EE,2043342C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433430,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433478,extended,00000063
+
+[Max DF]
+patch=1,EE,2043347C,extended,00000063
+
+[Max HP]
+patch=1,EE,20433480,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433484,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433534,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433538,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043353C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433540,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433568,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204334CC,extended,00000063
+
+[Max DF]
+patch=1,EE,204334D0,extended,00000063
+
+[Max HP]
+patch=1,EE,204334D4,extended,00000063
+
+[Max SPD]
+patch=1,EE,204334D8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433520,extended,00000063
+
+[Max DF]
+patch=1,EE,20433524,extended,00000063
+
+[Max HP]
+patch=1,EE,20433528,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043352C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204335DC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204335E0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204335E4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204335E8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433610,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433574,extended,00000063
+
+[Max DF]
+patch=1,EE,20433578,extended,00000063
+
+[Max HP]
+patch=1,EE,2043357C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433580,extended,00000063
+
+[Max ATK]
+patch=1,EE,204335C8,extended,00000063
+
+[Max DF]
+patch=1,EE,204335CC,extended,00000063
+
+[Max HP]
+patch=1,EE,204335D0,extended,00000063
+
+[Max SPD]
+patch=1,EE,204335D4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433684,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433688,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043368C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433690,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204336B8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043361C,extended,00000063
+
+[Max DF]
+patch=1,EE,20433620,extended,00000063
+
+[Max HP]
+patch=1,EE,20433624,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433628,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433670,extended,00000063
+
+[Max DF]
+patch=1,EE,20433674,extended,00000063
+
+[Max HP]
+patch=1,EE,20433678,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043367C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043372C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433730,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433734,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433738,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433760,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204336C4,extended,00000063
+
+[Max DF]
+patch=1,EE,204336C8,extended,00000063
+
+[Max HP]
+patch=1,EE,204336CC,extended,00000063
+
+[Max SPD]
+patch=1,EE,204336D0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433718,extended,00000063
+
+[Max DF]
+patch=1,EE,2043371C,extended,00000063
+
+[Max HP]
+patch=1,EE,20433720,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433724,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204337D4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204337D8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204337DC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204337E0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433808,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043376C,extended,00000063
+
+[Max DF]
+patch=1,EE,20433770,extended,00000063
+
+[Max HP]
+patch=1,EE,20433774,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433778,extended,00000063
+
+[Max ATK]
+patch=1,EE,204337C0,extended,00000063
+
+[Max DF]
+patch=1,EE,204337C4,extended,00000063
+
+[Max HP]
+patch=1,EE,204337C8,extended,00000063
+
+[Max SPD]
+patch=1,EE,204337CC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043387C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433880,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433884,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433888,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,204338B0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433814,extended,00000063
+
+[Max DF]
+patch=1,EE,20433818,extended,00000063
+
+[Max HP]
+patch=1,EE,2043381C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433820,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433868,extended,00000063
+
+[Max DF]
+patch=1,EE,2043386C,extended,00000063
+
+[Max HP]
+patch=1,EE,20433870,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433874,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433924,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433928,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043392C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433930,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433958,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,204338BC,extended,00000063
+
+[Max DF]
+patch=1,EE,204338C0,extended,00000063
+
+[Max HP]
+patch=1,EE,204338C4,extended,00000063
+
+[Max SPD]
+patch=1,EE,204338C8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433910,extended,00000063
+
+[Max DF]
+patch=1,EE,20433914,extended,00000063
+
+[Max HP]
+patch=1,EE,20433918,extended,00000063
+
+[Max SPD]
+patch=1,EE,2043391C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,204339CC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,204339D0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,204339D4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,204339D8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433A00,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433964,extended,00000063
+
+[Max DF]
+patch=1,EE,20433968,extended,00000063
+
+[Max HP]
+patch=1,EE,2043396C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433970,extended,00000063
+
+[Max ATK]
+patch=1,EE,204339B8,extended,00000063
+
+[Max DF]
+patch=1,EE,204339BC,extended,00000063
+
+[Max HP]
+patch=1,EE,204339C0,extended,00000063
+
+[Max SPD]
+patch=1,EE,204339C4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433A74,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433A78,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433A7C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433A80,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433AA8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433A0C,extended,00000063
+
+[Max DF]
+patch=1,EE,20433A10,extended,00000063
+
+[Max HP]
+patch=1,EE,20433A14,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433A18,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433A60,extended,00000063
+
+[Max DF]
+patch=1,EE,20433A64,extended,00000063
+
+[Max HP]
+patch=1,EE,20433A68,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433A6C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433B1C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433B20,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433B24,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433B28,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433B50,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433AB4,extended,00000063
+
+[Max DF]
+patch=1,EE,20433AB8,extended,00000063
+
+[Max HP]
+patch=1,EE,20433ABC,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433AC0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433B08,extended,00000063
+
+[Max DF]
+patch=1,EE,20433B0C,extended,00000063
+
+[Max HP]
+patch=1,EE,20433B10,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433B14,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433BC4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433BC8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433BCC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433BD0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433BF8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433B5C,extended,00000063
+
+[Max DF]
+patch=1,EE,20433B60,extended,00000063
+
+[Max HP]
+patch=1,EE,20433B64,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433B68,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433BB0,extended,00000063
+
+[Max DF]
+patch=1,EE,20433BB4,extended,00000063
+
+[Max HP]
+patch=1,EE,20433BB8,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433BBC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433C6C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433C70,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433C74,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433C78,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433CA0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433C04,extended,00000063
+
+[Max DF]
+patch=1,EE,20433C08,extended,00000063
+
+[Max HP]
+patch=1,EE,20433C0C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433C10,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433C58,extended,00000063
+
+[Max DF]
+patch=1,EE,20433C5C,extended,00000063
+
+[Max HP]
+patch=1,EE,20433C60,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433C64,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433D14,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433D18,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433D1C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433D20,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433D48,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433CAC,extended,00000063
+
+[Max DF]
+patch=1,EE,20433CB0,extended,00000063
+
+[Max HP]
+patch=1,EE,20433CB4,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433CB8,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433D00,extended,00000063
+
+[Max DF]
+patch=1,EE,20433D04,extended,00000063
+
+[Max HP]
+patch=1,EE,20433D08,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433D0C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433DBC,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433DC0,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433DC4,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433DC8,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433DF0,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433D54,extended,00000063
+
+[Max DF]
+patch=1,EE,20433D58,extended,00000063
+
+[Max HP]
+patch=1,EE,20433D5C,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433D60,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433DA8,extended,00000063
+
+[Max DF]
+patch=1,EE,20433DAC,extended,00000063
+
+[Max HP]
+patch=1,EE,20433DB0,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433DB4,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433E64,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433E68,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433E6C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433E70,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433E98,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433DFC,extended,00000063
+
+[Max DF]
+patch=1,EE,20433E00,extended,00000063
+
+[Max HP]
+patch=1,EE,20433E04,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433E08,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433E50,extended,00000063
+
+[Max DF]
+patch=1,EE,20433E54,extended,00000063
+
+[Max HP]
+patch=1,EE,20433E58,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433E5C,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433F0C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433F10,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433F14,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433F18,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433F40,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433EA4,extended,00000063
+
+[Max DF]
+patch=1,EE,20433EA8,extended,00000063
+
+[Max HP]
+patch=1,EE,20433EAC,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433EB0,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433EF8,extended,00000063
+
+[Max DF]
+patch=1,EE,20433EFC,extended,00000063
+
+[Max HP]
+patch=1,EE,20433F00,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433F04,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20433FB4,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20433FB8,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20433FBC,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20433FC0,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20433FE8,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433F4C,extended,00000063
+
+[Max DF]
+patch=1,EE,20433F50,extended,00000063
+
+[Max HP]
+patch=1,EE,20433F54,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433F58,extended,00000063
+
+[Max ATK]
+patch=1,EE,20433FA0,extended,00000063
+
+[Max DF]
+patch=1,EE,20433FA4,extended,00000063
+
+[Max HP]
+patch=1,EE,20433FA8,extended,00000063
+
+[Max SPD]
+patch=1,EE,20433FAC,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,2043405C,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20434060,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,20434064,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20434068,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20434090,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,20433FF4,extended,00000063
+
+[Max DF]
+patch=1,EE,20433FF8,extended,00000063
+
+[Max HP]
+patch=1,EE,20433FFC,extended,00000063
+
+[Max SPD]
+patch=1,EE,20434000,extended,00000063
+
+[Max ATK]
+patch=1,EE,20434048,extended,00000063
+
+[Max DF]
+patch=1,EE,2043404C,extended,00000063
+
+[Max HP]
+patch=1,EE,20434050,extended,00000063
+
+[Max SPD]
+patch=1,EE,20434054,extended,00000063
+
+[Max Wind Level]
+patch=1,EE,20434104,extended,00000064
+
+[Max Forest Level]
+patch=1,EE,20434108,extended,00000064
+
+[Max Fire Level]
+patch=1,EE,2043410C,extended,00000064
+
+[Max Mountain Level]
+patch=1,EE,20434110,extended,00000064
+
+[Have Cleared 100%]
+patch=1,EE,20434138,extended,FFFFFFFF
+
+[Max ATK]
+patch=1,EE,2043409C,extended,00000063
+
+[Max DF]
+patch=1,EE,204340A0,extended,00000063
+
+[Max HP]
+patch=1,EE,204340A4,extended,00000063
+
+[Max SPD]
+patch=1,EE,204340A8,extended,00000063
+
+[Max ATK]
+patch=1,EE,204340F0,extended,00000063
+
+[Max DF]
+patch=1,EE,204340F4,extended,00000063
+
+[Max HP]
+patch=1,EE,204340F8,extended,00000063
+
+[Max SPD]
+patch=1,EE,204340FC,extended,00000063

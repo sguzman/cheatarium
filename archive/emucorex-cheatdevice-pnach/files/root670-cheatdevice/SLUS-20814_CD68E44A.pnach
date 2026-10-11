@@ -1,0 +1,114 @@
+gametitle=Max Payne 2-The Fall Of Max Payne (SLUS-20814)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90133880,extended,0C049EA0
+
+[Disable FMV]
+patch=1,EE,2010B7E0,extended,24020001
+
+[Infinite Health]
+patch=1,EE,20365EEC,extended,3C02447A
+patch=1,EE,20365EF0,extended,AC8200DC
+
+[Infinite Bullet Time]
+patch=1,EE,20295270,extended,00000000
+patch=1,EE,202955A0,extended,00000000
+
+[Never Reload]
+patch=1,EE,203ED8B0,extended,00000000
+
+[Enable Bullet Time Aid Always Off]
+patch=1,EE,005964F0,extended,00000000
+
+[Enable Bullet Time Aid Always On]
+patch=1,EE,005964F0,extended,00000001
+
+[Enable Subtitles Always Off]
+patch=1,EE,005964F8,extended,00000000
+
+[Enable Subtitles Always On]
+patch=1,EE,005964F8,extended,00000001
+
+[Auto Weapon Change Always Off]
+patch=1,EE,005A2728,extended,00000000
+
+[Auto Weapon Change Always On]
+patch=1,EE,005A2728,extended,00000001
+
+[Enable Auto Aiming Always Off]
+patch=1,EE,005A2730,extended,00000000
+
+[Enable Auto Aiming Always On]
+patch=1,EE,005A2730,extended,00000001
+
+[Enable Auto Lock Always Off]
+patch=1,EE,005A2738,extended,00000000
+
+[Enable Auto Lock Always On]
+patch=1,EE,005A2738,extended,00000001
+
+[Enable Vibration Always Off]
+patch=1,EE,204416A4,extended,24020000
+
+[Enable Vibration Always On]
+patch=1,EE,204416A4,extended,24020001
+
+[Invert Aiming Always Off]
+patch=1,EE,204416F4,extended,24020000
+
+[Invert Aiming Always On]
+patch=1,EE,204416F4,extended,24020001
+
+[1-Hit Death's Enemies]
+patch=1,EE,20385430,extended,AC8000DC
+
+[Moon Gravity/Infinite Double Jumps]
+patch=1,EE,205BB258,extended,41000000
+patch=1,EE,205BB260,extended,41000000
+patch=1,EE,205BB268,extended,00000000
+
+[P1 Press {L1}+{SELECT} For Super Speed]
+patch=1,EE,D072E99C,extended,0000FBFE
+patch=1,EE,10291F04,extended,00004000
+
+[P1 Press {L2}+{SELECT} For Turbo Speed]
+patch=1,EE,D072E99C,extended,0000FEFE
+patch=1,EE,10291F04,extended,00004080
+
+[P1 Press {R1}+{SELECT} For Ultra Speed]
+patch=1,EE,D072E99C,extended,0000F7FE
+patch=1,EE,10291F04,extended,00004100
+
+[P1 Press {R2}+{SELECT} For Normal Speed]
+patch=1,EE,D072E99C,extended,0000FDFE
+patch=1,EE,10291F04,extended,00003F80
+
+[Idiot AI]
+patch=1,EE,1027785E,extended,00001000
+
+[Hard-Boiled]
+patch=1,EE,007B71F0,extended,00000001
+
+[Dead On Arrival]
+patch=1,EE,007B71F1,extended,00000001
+
+[New York Minute & Dead Man Walking]
+patch=1,EE,007B71F2,extended,00000001
+
+[Jump To Chapter]
+patch=1,EE,007B71F3,extended,00000001
+
+[All Game Modes]
+patch=1,EE,207B71F0,extended,01010101
+
+[Infinite Item/Ammo Usage]
+patch=1,EE,203EC190,extended,00000000
+
+[Extra Items/Ammo Usage]
+patch=1,EE,203EC190,extended,00651821
+
+[Max Items/Ammo Usage]
+patch=1,EE,203EC190,extended,24030063

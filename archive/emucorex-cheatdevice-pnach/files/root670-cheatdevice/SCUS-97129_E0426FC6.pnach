@@ -1,0 +1,571 @@
+gametitle=Okage Shadow King (SCUS-97129)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901E6408,extended,0C0798AA
+
+[Max Money]
+patch=1,EE,205C1B6C,extended,3B9AC9FF
+
+[Max HP]
+patch=1,EE,105C1C18,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,105C1C1C,extended,000003E7
+
+[Max HP]
+patch=1,EE,105C1C68,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,105C1C6C,extended,000003E7
+
+[Max HP]
+patch=1,EE,105C1CB8,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,105C1CBC,extended,000003E7
+
+[1st Fight Charm]
+patch=1,EE,005C1B4A,extended,00000032
+
+[1st Star Badge]
+patch=1,EE,005C1B5A,extended,00000032
+
+[Nuts]
+patch=1,EE,005C1A61,extended,00000032
+
+[Miracle Nuts]
+patch=1,EE,005C1A63,extended,00000032
+
+[Bountiful Nuts]
+patch=1,EE,005C1A64,extended,00000032
+
+[Wild Strawberries]
+patch=1,EE,005C1A65,extended,00000032
+
+[Whim Berries]
+patch=1,EE,005C1A66,extended,00000032
+
+[Energy Flowers]
+patch=1,EE,005C1A67,extended,00000032
+
+[Energy Bouquet]
+patch=1,EE,005C1A68,extended,00000032
+
+[Clarity Charm]
+patch=1,EE,005C1A69,extended,00000032
+
+[Bunny Charm]
+patch=1,EE,005C1A6A,extended,00000032
+
+[Villains Charm]
+patch=1,EE,005C1A6B,extended,00000032
+
+[Rust Off Charm]
+patch=1,EE,005C1A6C,extended,00000032
+
+[Sommelier Charm]
+patch=1,EE,005C1A6D,extended,00000032
+
+[Angel Charm]
+patch=1,EE,005C1A6E,extended,00000032
+
+[Alarm Charm]
+patch=1,EE,005C1A6F,extended,00000032
+
+[Big Boss's Charm]
+patch=1,EE,005C1A70,extended,00000032
+
+[Writeoff Charm]
+patch=1,EE,005C1A71,extended,00000032
+
+[Mega Charm]
+patch=1,EE,005C1A72,extended,00000032
+
+[Purging Stone]
+patch=1,EE,005C1A73,extended,00000032
+
+[Awakening Stone]
+patch=1,EE,005C1A74,extended,00000032
+
+[Liberation Stone]
+patch=1,EE,005C1A75,extended,00000032
+
+[Cheerful Stone]
+patch=1,EE,005C1A76,extended,00000032
+
+[Mega Stone]
+patch=1,EE,005C1A77,extended,00000032
+
+[Black Cat Jewel]
+patch=1,EE,005C1A78,extended,00000032
+
+[White Cat Jewel]
+patch=1,EE,005C1A79,extended,00000032
+
+[Life Candy]
+patch=1,EE,005C1A7A,extended,00000032
+
+[Heart Candy]
+patch=1,EE,005C1A7B,extended,00000032
+
+[Power Candy]
+patch=1,EE,005C1A7C,extended,00000032
+
+[Defense Candy]
+patch=1,EE,005C1A7D,extended,00000032
+
+[Agility Candy]
+patch=1,EE,005C1A7E,extended,00000032
+
+[Lucky Candy]
+patch=1,EE,005C1A7F,extended,00000032
+
+[Guidance Jewel]
+patch=1,EE,005C1A80,extended,00000032
+
+[Healing Crystal]
+patch=1,EE,005C1A81,extended,00000032
+
+[Burned Bottle]
+patch=1,EE,005C1A93,extended,00000032
+
+[Frozen Bottle]
+patch=1,EE,005C1A94,extended,00000032
+
+[Glaring Bottle]
+patch=1,EE,005C1A95,extended,00000032
+
+[Skull Bottle]
+patch=1,EE,005C1A96,extended,00000032
+
+[Sleeping Bottle]
+patch=1,EE,005C1A97,extended,00000032
+
+[Ordinary Bottle]
+patch=1,EE,005C1A98,extended,00000032
+
+[Chained Bottle]
+patch=1,EE,005C1A99,extended,00000032
+
+[Swift Bottle]
+patch=1,EE,005C1A9A,extended,00000032
+
+[Mega Luck Bottle]
+patch=1,EE,005C1A9B,extended,00000032
+
+[Map Of Evil Kings]
+patch=1,EE,005C1AA7,extended,00000032
+
+[Miniature Statue]
+patch=1,EE,005C1AA8,extended,00000032
+
+[Platinum Ticket]
+patch=1,EE,005C1AA9,extended,00000032
+
+[Gear Tower Key]
+patch=1,EE,005C1AAA,extended,00000032
+
+[Voice Recorder]
+patch=1,EE,005C1AAB,extended,00000032
+
+[Recorder 2]
+patch=1,EE,005C1AAC,extended,00000032
+
+[Ordinary Card]
+patch=1,EE,005C1AAD,extended,00000032
+
+[Official Card]
+patch=1,EE,005C1AAE,extended,00000032
+
+[Gaudy Card]
+patch=1,EE,005C1AAF,extended,00000032
+
+[Mere Pebble]
+patch=1,EE,005C1AB0,extended,00000032
+
+[Bread Crust]
+patch=1,EE,005C1AB1,extended,00000032
+
+[Worn Brush]
+patch=1,EE,005C1AB2,extended,00000032
+
+[Letter Bottle]
+patch=1,EE,005C1AB3,extended,00000032
+
+[Cyphertext 1]
+patch=1,EE,005C1AB4,extended,00000032
+
+[Cyphertext 2]
+patch=1,EE,005C1AB5,extended,00000032
+
+[Cyphertext 3]
+patch=1,EE,005C1AB6,extended,00000032
+
+[Cyphertext 4]
+patch=1,EE,005C1AB7,extended,00000032
+
+[Cyphertext 5]
+patch=1,EE,005C1AB8,extended,00000032
+
+[Cyphertext 6]
+patch=1,EE,005C1AB9,extended,00000032
+
+[Punk Wig]
+patch=1,EE,005C1ABA,extended,00000032
+
+[Cholesterol]
+patch=1,EE,005C1ABB,extended,00000032
+
+[Chick Suspenders]
+patch=1,EE,005C1ABC,extended,00000032
+
+[Lustrous Hair]
+patch=1,EE,005C1ABD,extended,00000032
+
+[Gorgeous Mascara]
+patch=1,EE,005C1ABE,extended,00000032
+
+[Cool Vest]
+patch=1,EE,005C1ABF,extended,00000032
+
+[Ground Beef]
+patch=1,EE,005C1AC0,extended,00000032
+
+[Loaf For Pickup]
+patch=1,EE,005C1AC1,extended,00000032
+
+[Fruit Knife]
+patch=1,EE,005C1AC2,extended,00000032
+
+[Swanky Mirror]
+patch=1,EE,005C1AC3,extended,00000032
+
+[Shiny Lens]
+patch=1,EE,005C1AC4,extended,00000032
+
+[Tiny Gear]
+patch=1,EE,005C1AC5,extended,00000032
+
+[Silver Gear]
+patch=1,EE,005C1AC6,extended,00000032
+
+[Gold Gear]
+patch=1,EE,005C1AC7,extended,00000032
+
+[Rare Gear]
+patch=1,EE,005C1AC8,extended,00000032
+
+[Old Stone Doll]
+patch=1,EE,005C1AC9,extended,00000032
+
+[Garnet Key]
+patch=1,EE,005C1ACA,extended,00000032
+
+[Emerald Key]
+patch=1,EE,005C1ACB,extended,00000032
+
+[Sapphire Key]
+patch=1,EE,005C1ACC,extended,00000032
+
+[Amethyst Key]
+patch=1,EE,005C1ACD,extended,00000032
+
+[Cow Bone]
+patch=1,EE,005C1ACE,extended,00000032
+
+[Filet Mignon]
+patch=1,EE,005C1ACF,extended,00000032
+
+[Old Music Box]
+patch=1,EE,005C1AD0,extended,00000032
+
+[Eh, It's OK Card]
+patch=1,EE,005C1AD1,extended,00000032
+
+[Odd Glass Tube]
+patch=1,EE,005C1AD2,extended,00000032
+
+[Spiral Wire]
+patch=1,EE,005C1AD3,extended,00000032
+
+[Bell Tube]
+patch=1,EE,005C1AD4,extended,00000032
+
+[Manual Handle]
+patch=1,EE,005C1AD5,extended,00000032
+
+[Long Screw]
+patch=1,EE,005C1AD6,extended,00000032
+
+[Dial W/One Hand]
+patch=1,EE,005C1AD7,extended,00000032
+
+[Pedestal Of Stone]
+patch=1,EE,005C1AD8,extended,00000032
+
+[Penlight]
+patch=1,EE,005C1AD9,extended,00000032
+
+[Broken Gun]
+patch=1,EE,005C1ADA,extended,00000032
+
+[Friendship Bond]
+patch=1,EE,005C1ADB,extended,00000032
+
+[Picked Up Branch]
+patch=1,EE,005C1AE3,extended,00000032
+
+[Leftover Sword]
+patch=1,EE,005C1AE4,extended,00000032
+
+[Ordinary Sword]
+patch=1,EE,005C1AE5,extended,00000032
+
+[Nameless Sword]
+patch=1,EE,005C1AE6,extended,00000032
+
+[Omnislice Sword]
+patch=1,EE,005C1AE7,extended,00000032
+
+[Brand Sword]
+patch=1,EE,005C1AE8,extended,00000032
+
+[Rustic Sword]
+patch=1,EE,005C1AE9,extended,00000032
+
+[Mastermold Sword]
+patch=1,EE,005C1AEA,extended,00000032
+
+[Forgotten Sword]
+patch=1,EE,005C1AEB,extended,00000032
+
+[Sword Of Gear]
+patch=1,EE,005C1AEC,extended,00000032
+
+[Ordinary Rapier]
+patch=1,EE,005C1AEF,extended,00000032
+
+[Hardy Rapier]
+patch=1,EE,005C1AF0,extended,00000032
+
+[Slim Rapier]
+patch=1,EE,005C1AF1,extended,00000032
+
+[Sparkling Rapier]
+patch=1,EE,005C1AF2,extended,00000032
+
+[WhiteRose Rapier]
+patch=1,EE,005C1AF3,extended,00000032
+
+[Gallant Rapier]
+patch=1,EE,005C1AF4,extended,00000032
+
+[Ghost Basics]
+patch=1,EE,005C1AF7,extended,00000032
+
+[Ghost Pictorial]
+patch=1,EE,005C1AF8,extended,00000032
+
+[Ghostologos]
+patch=1,EE,005C1AF9,extended,00000032
+
+[Worldly Ghost]
+patch=1,EE,005C1AFA,extended,00000032
+
+[Ghostosystem II]
+patch=1,EE,005C1AFB,extended,00000032
+
+[Ghostonomicon]
+patch=1,EE,005C1AFC,extended,00000032
+
+[Battle Manual]
+patch=1,EE,005C1AFF,extended,00000032
+
+[Mike O' Hope]
+patch=1,EE,005C1B03,extended,00000032
+
+[Mike O' Happiness]
+patch=1,EE,005C1B04,extended,00000032
+
+[Love Mike]
+patch=1,EE,005C1B05,extended,00000032
+
+[J Of Diamonds]
+patch=1,EE,005C1B09,extended,00000032
+
+[Q Of Hearts]
+patch=1,EE,005C1B0A,extended,00000032
+
+[K Of Clubs]
+patch=1,EE,005C1B0B,extended,00000032
+
+[A Of Spades]
+patch=1,EE,005C1B0C,extended,00000032
+
+[Ordinary Outfit]
+patch=1,EE,005C1B0E,extended,00000032
+
+[Clean Outfit]
+patch=1,EE,005C1B0F,extended,00000032
+
+[Fancy Outfit]
+patch=1,EE,005C1B10,extended,00000032
+
+[Durable Outfit]
+patch=1,EE,005C1B11,extended,00000032
+
+[Custom-Made Wear]
+patch=1,EE,005C1B12,extended,00000032
+
+[Latest Outfit]
+patch=1,EE,005C1B13,extended,00000032
+
+[Natural Outfit]
+patch=1,EE,005C1B14,extended,00000032
+
+[Reunion Outfit]
+patch=1,EE,005C1B15,extended,00000032
+
+[Swordsman Armor]
+patch=1,EE,005C1B18,extended,00000032
+
+[Chief's Armor]
+patch=1,EE,005C1B19,extended,00000032
+
+[Magical Armor]
+patch=1,EE,005C1B1A,extended,00000032
+
+[Honorable Armor]
+patch=1,EE,005C1B1B,extended,00000032
+
+[Hero's Armor]
+patch=1,EE,005C1B1C,extended,00000032
+
+[Wornout Coat]
+patch=1,EE,005C1B20,extended,00000032
+
+[Starchy Coat]
+patch=1,EE,005C1B21,extended,00000032
+
+[Battlefront Coat]
+patch=1,EE,005C1B22,extended,00000032
+
+[Stately Coat]
+patch=1,EE,005C1B23,extended,00000032
+
+[Basics Only Coat]
+patch=1,EE,005C1B24,extended,00000032
+
+[Infantry Pants]
+patch=1,EE,005C1B28,extended,00000032
+
+[Blood&Sweat Pants]
+patch=1,EE,005C1B29,extended,00000032
+
+[Inferno Pants]
+patch=1,EE,005C1B2A,extended,00000032
+
+[Stage Dress]
+patch=1,EE,005C1B2E,extended,00000032
+
+[Treasured Dress]
+patch=1,EE,005C1B2F,extended,00000032
+
+[Celeb Dress]
+patch=1,EE,005C1B30,extended,00000032
+
+[Dazzling Tux]
+patch=1,EE,005C1B34,extended,00000032
+
+[Conjurer Tux]
+patch=1,EE,005C1B35,extended,00000032
+
+[Mongoose Whisker]
+patch=1,EE,005C1B3D,extended,00000032
+
+[Pharaoh's Hair]
+patch=1,EE,005C1B3E,extended,00000032
+
+[Rooster Feathers]
+patch=1,EE,005C1B3F,extended,00000032
+
+[Sun Medal]
+patch=1,EE,005C1B40,extended,00000032
+
+[Weed Resistance]
+patch=1,EE,005C1B41,extended,00000032
+
+[Touch Of Earth]
+patch=1,EE,005C1B42,extended,00000032
+
+[Flake Of Snow]
+patch=1,EE,005C1B43,extended,00000032
+
+[Full Moon Medal]
+patch=1,EE,005C1B44,extended,00000032
+
+[Guardian Crystal]
+patch=1,EE,005C1B45,extended,00000032
+
+[Unicorn's Horn]
+patch=1,EE,005C1B46,extended,00000032
+
+[Wildcat's Fang]
+patch=1,EE,005C1B47,extended,00000032
+
+[Panther's Fang]
+patch=1,EE,005C1B48,extended,00000032
+
+[Cerebus' Fang]
+patch=1,EE,005C1B49,extended,00000032
+
+[Defense Necklace]
+patch=1,EE,005C1B4B,extended,00000032
+
+[Iron Necklace]
+patch=1,EE,005C1B4C,extended,00000032
+
+[Bandit's Shoes]
+patch=1,EE,005C1B4D,extended,00000032
+
+[Pegasus' Shoes]
+patch=1,EE,005C1B4E,extended,00000032
+
+[Divine Shoes]
+patch=1,EE,005C1B4F,extended,00000032
+
+[Holly]
+patch=1,EE,005C1B50,extended,00000032
+
+[Laurel]
+patch=1,EE,005C1B51,extended,00000032
+
+[Legendary Leaf]
+patch=1,EE,005C1B52,extended,00000032
+
+[Heatwave Ring]
+patch=1,EE,005C1B53,extended,00000032
+
+[Mirage Ring]
+patch=1,EE,005C1B54,extended,00000032
+
+[Daymare Ring]
+patch=1,EE,005C1B55,extended,00000032
+
+[Aves Amulet]
+patch=1,EE,005C1B56,extended,00000032
+
+[Crow's Amulet]
+patch=1,EE,005C1B57,extended,00000032
+
+[Owl's Amulet]
+patch=1,EE,005C1B58,extended,00000032
+
+[Hand Knit Cap]
+patch=1,EE,005C1B59,extended,00000032
+
+[Omnibooster]
+patch=1,EE,005C1B5B,extended,00000032

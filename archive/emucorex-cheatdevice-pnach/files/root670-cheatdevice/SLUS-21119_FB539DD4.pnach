@@ -1,0 +1,158 @@
+gametitle=Kessen III (SLUS-21119)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90123808,extended,00832021
+
+[Disable FMV]
+patch=1,EE,2010AFC0,extended,24020001
+
+[Infinite Time]
+patch=1,EE,20190970,extended,00000000
+
+[Infinite Troops]
+patch=1,EE,200C0220,extended,96410004
+patch=1,EE,200C0224,extended,2C210016
+patch=1,EE,200C0228,extended,10200002
+patch=1,EE,200C022C,extended,3C01447A
+patch=1,EE,200C0230,extended,AC41006C
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,44800000
+patch=1,EE,201EE5F4,extended,0C030088
+
+[Max Gold]
+patch=1,EE,20188B50,extended,3C0205F5
+patch=1,EE,20188B54,extended,3442E0FF
+patch=1,EE,20188B58,extended,03E00008
+patch=1,EE,20188B5C,extended,AC820000
+
+[Always Gain 5000 Exp]
+patch=1,EE,2018B38C,extended,24A31388
+patch=1,EE,2018B3B8,extended,24631388
+
+[Always Gain 10000 Exp]
+patch=1,EE,2018B38C,extended,24A32710
+patch=1,EE,2018B3B8,extended,24632710
+
+[Always Gain 15000 Exp]
+patch=1,EE,2018B38C,extended,24A33A98
+patch=1,EE,2018B3B8,extended,24633A98
+
+[Always Gain 20000 Exp]
+patch=1,EE,2018B38C,extended,24A34E20
+patch=1,EE,2018B3B8,extended,24634E20
+
+[Always Gain 25000 Exp]
+patch=1,EE,2018B38C,extended,24A361A8
+patch=1,EE,2018B3B8,extended,246361A8
+
+[Always Gain 30000 Exp]
+patch=1,EE,2018B38C,extended,24A37530
+patch=1,EE,2018B3B8,extended,24637530
+
+[Quick Level Up]
+patch=1,EE,2018B394,extended,00000000
+
+[Super Tiny Army Size]
+patch=1,EE,4057E240,extended,00040005
+patch=1,EE,3F000000,extended,00000000
+
+[Tiny Army Size]
+patch=1,EE,4057E240,extended,00040005
+patch=1,EE,3F400000,extended,00000000
+
+[Super Army Size]
+patch=1,EE,4057E240,extended,00040005
+patch=1,EE,3FC00000,extended,00000000
+
+[Ultra Army Size]
+patch=1,EE,4057E240,extended,00040005
+patch=1,EE,40000000,extended,00000000
+
+[Super Movement]
+patch=1,EE,200C0260,extended,3C01469C
+patch=1,EE,200C0264,extended,0806F888
+patch=1,EE,200C0268,extended,AE21014C
+patch=1,EE,201ED854,extended,0C030098
+patch=1,EE,201ED78C,extended,00000000
+patch=1,EE,201ED808,extended,00000000
+
+[Ultra Movement]
+patch=1,EE,200C0260,extended,3C014743
+patch=1,EE,200C0264,extended,0806F888
+patch=1,EE,200C0268,extended,AE21014C
+patch=1,EE,201ED854,extended,0C030098
+patch=1,EE,201ED78C,extended,00000000
+patch=1,EE,201ED808,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D0BD7642,extended,0000FBFE
+patch=1,EE,2021D308,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D0BD7642,extended,0000FEFE
+patch=1,EE,2021D308,extended,E4204B18
+
+[Infinite Life]
+patch=1,EE,20ED4EFC,extended,00000FFF
+patch=1,EE,20ED4F00,extended,00000FFF
+
+[Super Jump/Movement]
+patch=1,EE,20ED4D70,extended,40000000
+
+[Ultra Jump/Movement]
+patch=1,EE,20ED4D70,extended,41000000
+
+[1-Hit Deaths (Enemies)]
+patch=1,EE,200C0240,extended,8C8202AC
+patch=1,EE,200C0244,extended,2C410002
+patch=1,EE,200C0248,extended,14200002
+patch=1,EE,200C024C,extended,24010001
+patch=1,EE,200C0250,extended,AC8102AC
+patch=1,EE,200C0254,extended,03E00008
+patch=1,EE,200C0258,extended,00000000
+patch=1,EE,201987C8,extended,0C030090
+
+[1-Hit Death (Boss)]
+patch=1,EE,D0ED55AC,extended,00200001
+patch=1,EE,20ED55AC,extended,00000001
+
+[Have All Biographies]
+patch=1,EE,2040298C,extended,24010003
+patch=1,EE,20402990,extended,A0410000
+patch=1,EE,20402994,extended,24020001
+
+[Have All Battle List]
+patch=1,EE,2040265C,extended,24010003
+patch=1,EE,20402660,extended,A041029E
+patch=1,EE,20402664,extended,24020001
+
+[Have Completed-Expert-All Battle List]
+patch=1,EE,2040236C,extended,24080002
+patch=1,EE,20402390,extended,AC480B94
+patch=1,EE,20402394,extended,24020002
+patch=1,EE,204022EC,extended,24010001
+patch=1,EE,204022F0,extended,A0411BD4
+patch=1,EE,204022F4,extended,24020001
+
+[Have Max Points-All Battle List]
+patch=1,EE,204023BC,extended,240803E7
+patch=1,EE,204023E0,extended,AC480374
+patch=1,EE,204023E4,extended,240203E7
+
+[Have All Catalogue]
+patch=1,EE,2040216C,extended,24010003
+patch=1,EE,20402170,extended,A0411DDC
+patch=1,EE,20402174,extended,24020001
+
+[Have All Movie Gallery]
+patch=1,EE,204020BC,extended,24010003
+patch=1,EE,204020C0,extended,A0411F46
+patch=1,EE,204020C4,extended,24020001
+
+[Have All Auditorium]
+patch=1,EE,20401E0C,extended,24010003
+patch=1,EE,20401E10,extended,A0411FCB
+patch=1,EE,20401E14,extended,24020001

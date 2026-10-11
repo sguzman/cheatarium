@@ -1,0 +1,250 @@
+gametitle=Brothers In Arms-Earned In Blood (SLUS-21310)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9014CBD4,extended,0C05099A
+
+[Infinite Health]
+patch=1,EE,2055CFF4,extended,24020064
+patch=1,EE,2055D028,extended,AEA203FC
+
+[Infinite Ammo (Overall)]
+patch=1,EE,203F8C34,extended,240603E7
+patch=1,EE,203F8C38,extended,AC460474
+
+[Infinite Ammo (In Clip)]
+patch=1,EE,203F8A4C,extended,24060063
+patch=1,EE,203F8A88,extended,AE66048C
+
+[P1 Press {R1} To Fire With No Recoil]
+patch=1,EE,D0646DC2,extended,0000F7FF
+patch=1,EE,20203CFC,extended,00000000
+patch=1,EE,D0646DC2,extended,0010F7FF
+patch=1,EE,20203CFC,extended,AE820060
+
+[Unlock All Chapters/Extras]
+patch=1,EE,201547B8,extended,00430821
+patch=1,EE,201547BC,extended,24020001
+patch=1,EE,201547C4,extended,AC220000
+
+[Bookends-June 21, 1944]
+patch=1,EE,2064641C,extended,00000001
+
+[Roses All The Way-June 6, 1944]
+patch=1,EE,20646420,extended,00000001
+
+[Action At St. Martin-June 6, 1944]
+patch=1,EE,20646424,extended,00000001
+
+[Three Patrol Action-June 6, 1944]
+patch=1,EE,20646428,extended,00000001
+
+[Hell's Corners-June 7, 1944]
+patch=1,EE,2064642C,extended,00000001
+
+[Chateau Colombieres-June 8, 1944]
+patch=1,EE,20646430,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,20646434,extended,00000001
+
+[Bloody Gulch-June 13, 1944]
+patch=1,EE,20646438,extended,00000001
+
+[Eviction Notice-June 14, 1944]
+patch=1,EE,2064643C,extended,00000001
+
+[Close Quarters-June 14, 1944]
+patch=1,EE,20646440,extended,00000001
+
+[Baupte-June 15, 1944]
+patch=1,EE,20646444,extended,00000001
+
+[Hedgerow Hell-June 15, 1944]
+patch=1,EE,20646448,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,2064644C,extended,00000001
+
+[Run Of The Mill-June 16, 1944]
+patch=1,EE,20646450,extended,00000001
+
+[The All Americans-Part 1-June 16, 1944]
+patch=1,EE,20646454,extended,00000001
+
+[The All Americans-Part 2-June 16, 1944]
+patch=1,EE,20646458,extended,00000001
+
+[Bookends-June 21, 1944 (Brothers In Arms)]
+patch=1,EE,2064645C,extended,00000001
+
+[All Easy Levels]
+patch=1,EE,4064641C,extended,00110001
+patch=1,EE,00000001,extended,00000000
+
+[Bookends-June 21, 1944]
+patch=1,EE,20646478,extended,00000001
+
+[Roses All The Way-June 6, 1944]
+patch=1,EE,2064647C,extended,00000001
+
+[Action At St. Martin-June 6, 1944]
+patch=1,EE,20646480,extended,00000001
+
+[Three Patrol Action-June 6, 1944]
+patch=1,EE,20646484,extended,00000001
+
+[Hell's Corners-June 7, 1944]
+patch=1,EE,20646488,extended,00000001
+
+[Chateau Colombieres-June 8, 1944]
+patch=1,EE,2064648C,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,20646490,extended,00000001
+
+[Bloody Gulch-June 13, 1944]
+patch=1,EE,20646494,extended,00000001
+
+[Eviction Notice-June 14, 1944]
+patch=1,EE,20646498,extended,00000001
+
+[Close Quarters-June 14, 1944]
+patch=1,EE,2064649C,extended,00000001
+
+[Baupte-June 15, 1944]
+patch=1,EE,206464A0,extended,00000001
+
+[Hedgerow Hell-June 15, 1944]
+patch=1,EE,206464A4,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,206464A8,extended,00000001
+
+[Run Of The Mill-June 16, 1944]
+patch=1,EE,206464AC,extended,00000001
+
+[The All Americans-Part 1-June 16, 1944]
+patch=1,EE,206464B0,extended,00000001
+
+[The All Americans-Part 2-June 16, 1944]
+patch=1,EE,206464B4,extended,00000001
+
+[Bookends-June 21, 1944 (Brothers In Arms)]
+patch=1,EE,206464B8,extended,00000001
+
+[All Normal Levels]
+patch=1,EE,40646478,extended,00110001
+patch=1,EE,00000001,extended,00000000
+
+[Bookends-June 21, 1944]
+patch=1,EE,206464D4,extended,00000001
+
+[Roses All The Way-June 6, 1944]
+patch=1,EE,206464D8,extended,00000001
+
+[Action At St. Martin-June 6, 1944]
+patch=1,EE,206464DC,extended,00000001
+
+[Three Patrol Action-June 6, 1944]
+patch=1,EE,206464E0,extended,00000001
+
+[Hell's Corners-June 7, 1944]
+patch=1,EE,206464E4,extended,00000001
+
+[Chateau Colombieres-June 8, 1944]
+patch=1,EE,206464E8,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,206464EC,extended,00000001
+
+[Bloody Gulch-June 13, 1944]
+patch=1,EE,206464F0,extended,00000001
+
+[Eviction Notice-June 14, 1944]
+patch=1,EE,206464F4,extended,00000001
+
+[Close Quarters-June 14, 1944]
+patch=1,EE,206464F8,extended,00000001
+
+[Baupte-June 15, 1944]
+patch=1,EE,206464FC,extended,00000001
+
+[Hedgerow Hell-June 15, 1944]
+patch=1,EE,20646500,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,20646504,extended,00000001
+
+[Run Of The Mill-June 16, 1944]
+patch=1,EE,20646508,extended,00000001
+
+[The All Americans-Part 1-June 16, 1944]
+patch=1,EE,2064650C,extended,00000001
+
+[The All Americans-Part 2-June 16, 1944]
+patch=1,EE,20646510,extended,00000001
+
+[Bookends-June 21, 1944 (Brothers In Arms)]
+patch=1,EE,20646514,extended,00000001
+
+[All HardLevels]
+patch=1,EE,406464D4,extended,00110001
+patch=1,EE,00000001,extended,00000000
+
+[Bookends-June 21, 1944]
+patch=1,EE,20646530,extended,00000001
+
+[Roses All The Way-June 6, 1944]
+patch=1,EE,20646534,extended,00000001
+
+[Action At St. Martin-June 6, 1944]
+patch=1,EE,20646538,extended,00000001
+
+[Three Patrol Action-June 6, 1944]
+patch=1,EE,2064653C,extended,00000001
+
+[Hell's Corners-June 7, 1944]
+patch=1,EE,20646540,extended,00000001
+
+[Chateau Colombieres-June 8, 1944]
+patch=1,EE,20646544,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,20646548,extended,00000001
+
+[Bloody Gulch-June 13, 1944]
+patch=1,EE,2064654C,extended,00000001
+
+[Eviction Notice-June 14, 1944]
+patch=1,EE,20646550,extended,00000001
+
+[Close Quarters-June 14, 1944]
+patch=1,EE,20646554,extended,00000001
+
+[Baupte-June 15, 1944]
+patch=1,EE,20646558,extended,00000001
+
+[Hedgerow Hell-June 15, 1944]
+patch=1,EE,2064655C,extended,00000001
+
+[Bookends-June 21, 1944]
+patch=1,EE,20646560,extended,00000001
+
+[Run Of The Mill-June 16, 1944]
+patch=1,EE,20646564,extended,00000001
+
+[The All Americans-Part 1-June 16, 1944]
+patch=1,EE,20646568,extended,00000001
+
+[The All Americans-Part 2-June 16, 1944]
+patch=1,EE,2064656C,extended,00000001
+
+[Bookends-June 21, 1944 (Brothers In Arms)]
+patch=1,EE,20646570,extended,00000001
+
+[All Authentic Levels]
+patch=1,EE,40646530,extended,00110001
+patch=1,EE,00000001,extended,00000000

@@ -1,0 +1,434 @@
+gametitle=Rocky-Legends (SLUS-20890)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901155E4,extended,0C046BAC
+
+[Infinite Health P1]
+patch=1,EE,20440178,extended,3F800000
+
+[75% Health P1]
+patch=1,EE,D044017A,extended,00003F80
+patch=1,EE,20440178,extended,3F400000
+
+[50% Health P1]
+patch=1,EE,D044017A,extended,00003F80
+patch=1,EE,20440178,extended,3F000000
+
+[25% Health P1]
+patch=1,EE,D044017A,extended,00003F80
+patch=1,EE,20440178,extended,3E800000
+
+[No Health P1]
+patch=1,EE,20440178,extended,00000000
+
+[Max Health Rebuild P1]
+patch=1,EE,2044017C,extended,3F800000
+
+[No Health Rebuild P1]
+patch=1,EE,2044017C,extended,00000000
+
+[Infinite Punch Power P1]
+patch=1,EE,20440190,extended,3F800000
+
+[No Punch Power P1]
+patch=1,EE,20440190,extended,00000000
+
+[Always 0 Knockdowns P1]
+patch=1,EE,2043FFCC,extended,00000000
+
+[Start With 1 Knockdown P1]
+patch=1,EE,D043FFCC,extended,00000000
+patch=1,EE,2043FFCC,extended,00000001
+
+[Start With 2 Knockdown P1]
+patch=1,EE,D043FFCC,extended,00000000
+patch=1,EE,2043FFCC,extended,00000002
+
+[Start With 3 Knockdown P1]
+patch=1,EE,D043FFCC,extended,00000000
+patch=1,EE,2043FFCC,extended,00000003
+
+[Infinite Health P2]
+patch=1,EE,20442178,extended,3F800000
+
+[75% Health P2]
+patch=1,EE,D044217A,extended,00003F80
+patch=1,EE,20442178,extended,3F400000
+
+[50% Health P2]
+patch=1,EE,D044217A,extended,00003F80
+patch=1,EE,20442178,extended,3F000000
+
+[25% Health P2]
+patch=1,EE,D044217A,extended,00003F80
+patch=1,EE,20442178,extended,3E800000
+
+[No Health P2]
+patch=1,EE,20442178,extended,00000000
+
+[Max Health Rebuild P2]
+patch=1,EE,2044217C,extended,3F800000
+
+[No Health Rebuild P2]
+patch=1,EE,2044217C,extended,00000000
+
+[Infinite Punch Power P2]
+patch=1,EE,20442190,extended,3F800000
+
+[No Punch Power P2]
+patch=1,EE,20442190,extended,00000000
+
+[Always 0 Knockdowns P2]
+patch=1,EE,20441FCC,extended,00000000
+
+[Start With 1 Knockdown P2]
+patch=1,EE,D0441FCC,extended,00000000
+patch=1,EE,20441FCC,extended,00000001
+
+[Start With 2 Knockdown P2]
+patch=1,EE,D0441FCC,extended,00000000
+patch=1,EE,20441FCC,extended,00000002
+
+[Start With 3 Knockdown P2]
+patch=1,EE,D0441FCC,extended,00000000
+patch=1,EE,20441FCC,extended,00000003
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D041A5C2,extended,0000FBFE
+patch=1,EE,201EB894,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Stop Timer]
+patch=1,EE,D041A5C2,extended,0000FEFE
+patch=1,EE,201EB894,extended,E44000B4
+
+[P2 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D041A742,extended,0000FBFE
+patch=1,EE,201EB894,extended,00000000
+
+[P2 Press {L2}+{SELECT} To Stop Timer]
+patch=1,EE,D041A742,extended,0000FEFE
+patch=1,EE,201EB894,extended,E44000B4
+
+[Infinite Current Funds]
+patch=1,EE,1059BFE4,extended,0000FFFF
+
+[Max Current Funds]
+patch=1,EE,2059BFE4,extended,05F5E0FF
+
+[Buying Items Does Not Decrease Funds]
+patch=1,EE,2029B00C,extended,00000000
+
+[Buying Items Increases Funds]
+patch=1,EE,2029B008,extended,00441021
+
+[Max Strength]
+patch=1,EE,2059C300,extended,00000064
+
+[Max Speed]
+patch=1,EE,2059C304,extended,00000064
+
+[Max Determination]
+patch=1,EE,2059C308,extended,00000064
+
+[Max Stamina]
+patch=1,EE,2059C30C,extended,00000064
+
+[Max Movement]
+patch=1,EE,2059C310,extended,00000064
+
+[Max Strength]
+patch=1,EE,2059C32C,extended,00000064
+
+[Max Speed]
+patch=1,EE,2059C330,extended,00000064
+
+[Max Determination]
+patch=1,EE,2059C334,extended,00000064
+
+[Max Stamina]
+patch=1,EE,2059C338,extended,00000064
+
+[Max Movement]
+patch=1,EE,2059C33C,extended,00000064
+
+[Max Strength]
+patch=1,EE,2059C358,extended,00000064
+
+[Max Speed]
+patch=1,EE,2059C35C,extended,00000064
+
+[Max Determination]
+patch=1,EE,2059C360,extended,00000064
+
+[Max Stamina]
+patch=1,EE,2059C364,extended,00000064
+
+[Max Movement]
+patch=1,EE,2059C368,extended,00000064
+
+[Max Strength]
+patch=1,EE,2059C384,extended,00000064
+
+[Max Speed]
+patch=1,EE,2059C388,extended,00000064
+
+[Max Determination]
+patch=1,EE,2059C388,extended,00000064
+
+[Max Stamina]
+patch=1,EE,2059C38C,extended,00000064
+
+[Max Movement]
+patch=1,EE,2059C390,extended,00000064
+
+[Apollo Creed]
+patch=1,EE,2059B38C,extended,00000001
+
+[Ernie Roman]
+patch=1,EE,2059B39C,extended,00000001
+
+[Billy Snow]
+patch=1,EE,2059B3AC,extended,00000001
+
+[Yuri Denisov]
+patch=1,EE,2059B3BC,extended,00000001
+
+[Floyd McCallum]
+patch=1,EE,2059B3CC,extended,00000001
+
+[Jose Mendoza]
+patch=1,EE,2059B3DC,extended,00000001
+
+[Carlos Arguello]
+patch=1,EE,2059B3EC,extended,00000001
+
+[Clubber Lang]
+patch=1,EE,2059B3FC,extended,00000001
+
+[Ivan Drago]
+patch=1,EE,2059B40C,extended,00000001
+
+[Joe Zale]
+patch=1,EE,2059B41C,extended,00000001
+
+[John Barkley]
+patch=1,EE,2059B43C,extended,00000001
+
+[Brendan Doyle]
+patch=1,EE,2059B44C,extended,00000001
+
+[Tony Duke]
+patch=1,EE,2059B45C,extended,00000001
+
+[Dipper Brow]
+patch=1,EE,2059B46C,extended,00000001
+
+[Burt Judge]
+patch=1,EE,2059B47C,extended,00000001
+
+[Jack Jarrell]
+patch=1,EE,2059B48C,extended,00000001
+
+[George Fullmer]
+patch=1,EE,2059B49C,extended,00000001
+
+[Salvador Martinez]
+patch=1,EE,2059B4AC,extended,00000001
+
+[Alexel Baluk]
+patch=1,EE,2059B4BC,extended,00000001
+
+[Wolfgang Peltzer]
+patch=1,EE,2059B4CC,extended,00000001
+
+[Ken Kiaassen]
+patch=1,EE,2059B4DC,extended,00000001
+
+[Big Yank Ball]
+patch=1,EE,2059B4EC,extended,00000001
+
+[Troy Miller]
+patch=1,EE,2059B4FC,extended,00000001
+
+[Virgil Abrams]
+patch=1,EE,2059B52C,extended,00000001
+
+[Tommy Gunn]
+patch=1,EE,2059B54C,extended,00000001
+
+[Paulie Klein]
+patch=1,EE,2059B56C,extended,00000001
+
+[Marco Chavez]
+patch=1,EE,2059B57C,extended,00000001
+
+[Kofi Langton]
+patch=1,EE,2059B58C,extended,00000001
+
+[Maurizio Medina]
+patch=1,EE,2059B59C,extended,00000001
+
+[Union Cane]
+patch=1,EE,2059B5AC,extended,00000001
+
+[Spider Rico]
+patch=1,EE,2059B5BC,extended,00000001
+
+[Big Chuck Smith]
+patch=1,EE,2059B5CC,extended,00000001
+
+[Sergei Ishora]
+patch=1,EE,2059B5FC,extended,00000001
+
+[Mickey Goldmill]
+patch=1,EE,2059B60C,extended,00000001
+
+[Sam Monroe]
+patch=1,EE,2059B61C,extended,00000001
+
+[Jack Czak]
+patch=1,EE,2059B62C,extended,00000001
+
+[All Boxers]
+patch=1,EE,4059B38C,extended,002B0004
+patch=1,EE,00000001,extended,00000000
+
+[Rocky Balboa, 1978]
+patch=1,EE,2059B65C,extended,00000001
+
+[Rocky Balboa, 1983]
+patch=1,EE,2059B66C,extended,00000001
+
+[Rocky Balboa, 1985]
+patch=1,EE,2059B67C,extended,00000001
+
+[Apollo Creed, 1972]
+patch=1,EE,2059B68C,extended,00000001
+
+[Apollo Creed, 1985]
+patch=1,EE,2059B69C,extended,00000001
+
+[Alexei Baluk III]
+patch=1,EE,2059B6AC,extended,00000001
+
+[Union Cane III]
+patch=1,EE,2059B6BC,extended,00000001
+
+[Bob Cray III]
+patch=1,EE,2059B6CC,extended,00000001
+
+[Ivan Drago III]
+patch=1,EE,2059B6DC,extended,00000001
+
+[Burt Judge III]
+patch=1,EE,2059B6EC,extended,00000001
+
+[Clubber Lang III]
+patch=1,EE,2059B6FC,extended,00000001
+
+[Jose Mendoza III]
+patch=1,EE,2059B70C,extended,00000001
+
+[Troy Miller III]
+patch=1,EE,2059B71C,extended,00000001
+
+[Sam Monroe III]
+patch=1,EE,2059B72C,extended,00000001
+
+[Razor Robinson III]
+patch=1,EE,2059B73C,extended,00000001
+
+[Big Chuck Smith III]
+patch=1,EE,2059B74C,extended,00000001
+
+[Rocky I Trailer]
+patch=1,EE,2059B75C,extended,00000001
+
+[Rocky II Trailer]
+patch=1,EE,2059B76C,extended,00000001
+
+[Rocky III Trailer]
+patch=1,EE,2059B77C,extended,00000001
+
+[Rocky IV Trailer]
+patch=1,EE,2059B78C,extended,00000001
+
+[Rocky V Trailer]
+patch=1,EE,2059B79C,extended,00000001
+
+[Chicken Chase]
+patch=1,EE,2059B7AC,extended,00000001
+
+[Survival Mode]
+patch=1,EE,2059B7BC,extended,00000001
+
+[All Misc.]
+patch=1,EE,4059B65C,extended,00170004
+patch=1,EE,00000001,extended,00000000
+
+[Alley At Night]
+patch=1,EE,2059B7CC,extended,00000001
+
+[On The Docks]
+patch=1,EE,2059B7DC,extended,00000001
+
+[Ice Arena]
+patch=1,EE,2059B7EC,extended,00000001
+
+[Philadelphia 76]
+patch=1,EE,2059B7FC,extended,00000001
+
+[Philadelphia 77]
+patch=1,EE,2059B80C,extended,00000001
+
+[New York]
+patch=1,EE,2059B81C,extended,00000001
+
+[Moscow]
+patch=1,EE,2059B82C,extended,00000001
+
+[McCarthy Hall]
+patch=1,EE,2059B84C,extended,00000001
+
+[City Hall]
+patch=1,EE,2059B85C,extended,00000001
+
+[MGM Grand Hotel]
+patch=1,EE,2059B86C,extended,00000001
+
+[Times Square]
+patch=1,EE,2059B87C,extended,00000001
+
+[Chicago State Pen.]
+patch=1,EE,2059B88C,extended,00000001
+
+[Warehouse]
+patch=1,EE,2059B89C,extended,00000001
+
+[Carnival]
+patch=1,EE,2059B8AC,extended,00000001
+
+[Art Museum]
+patch=1,EE,2059B8BC,extended,00000001
+
+[Siberian Barn]
+patch=1,EE,2059B8CC,extended,00000001
+
+[Odessa Stadium]
+patch=1,EE,2059B8DC,extended,00000001
+
+[Tank Factory]
+patch=1,EE,2059B8EC,extended,00000001
+
+[Aircraft Carrier]
+patch=1,EE,2059B8FC,extended,00000001
+
+[Mickeys Gym]
+patch=1,EE,2059B90C,extended,00000001
+
+[All Venues]
+patch=1,EE,4059B7CC,extended,00150004
+patch=1,EE,00000001,extended,00000000

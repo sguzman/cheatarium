@@ -1,0 +1,558 @@
+gametitle=Legaia 2-Duel Saga (SLUS-20414)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902C9B04,extended,0C0B707C
+
+[Infinite Money]
+patch=1,EE,103FC3B8,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,203FC3B8,extended,0098967F
+
+[Save Anywhere]
+patch=1,EE,10422D28,extended,00000001
+
+[No Random Battles]
+patch=1,EE,102BC80E,extended,00001000
+
+[Walk Twice As Fast]
+patch=1,EE,204A3EA0,extended,40000000
+
+[Max HP]
+patch=1,EE,1041752C,extended,0000270F
+
+[Max MP]
+patch=1,EE,10417530,extended,0000270F
+
+[Max STR]
+patch=1,EE,10417538,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,20417540,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,20417544,extended,000003E7
+
+[Max INT]
+patch=1,EE,20417548,extended,000003E7
+
+[Max MEN]
+patch=1,EE,2041754C,extended,000003E7
+
+[Max AGL]
+patch=1,EE,20417550,extended,000003E7
+
+[Max CHA]
+patch=1,EE,20417554,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,10417560,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,10417564,extended,0000270F
+
+[Infinite AP]
+patch=1,EE,2041758C,extended,00000064
+
+[Max HP]
+patch=1,EE,104175DC,extended,0000270F
+
+[Max MP]
+patch=1,EE,104175E0,extended,0000270F
+
+[Max STR]
+patch=1,EE,104175E8,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,204175F0,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,204175F4,extended,000003E7
+
+[Max INT]
+patch=1,EE,204175F8,extended,000003E7
+
+[Max MEN]
+patch=1,EE,204175FC,extended,000003E7
+
+[Max AGL]
+patch=1,EE,20417600,extended,000003E7
+
+[Max CHA]
+patch=1,EE,20417604,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,10417610,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,10417614,extended,0000270F
+
+[Infinite AP]
+patch=1,EE,2041763C,extended,00000064
+
+[Max HP]
+patch=1,EE,1041768C,extended,0000270F
+
+[Max MP]
+patch=1,EE,10417690,extended,0000270F
+
+[Max STR]
+patch=1,EE,10417698,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,204176A0,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,204176A4,extended,000003E7
+
+[Max INT]
+patch=1,EE,204176A8,extended,000003E7
+
+[Max MEN]
+patch=1,EE,204176AC,extended,000003E7
+
+[Max AGL]
+patch=1,EE,204176B0,extended,000003E7
+
+[Max CHA]
+patch=1,EE,204176B4,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,104176C0,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,104176C4,extended,0000270F
+
+[Infinite AP]
+patch=1,EE,204176EC,extended,00000064
+
+[Max HP]
+patch=1,EE,103FB7D0,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,103FB7D2,extended,0000270F
+
+[Max Infinite HP]
+patch=1,EE,203FB7D0,extended,270F270F
+
+[Max MP]
+patch=1,EE,103FB7D4,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,103FB7D6,extended,0000270F
+
+[Max Infinite MP]
+patch=1,EE,203FB7D4,extended,270F270F
+
+[Max STR]
+patch=1,EE,103FB7D8,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,103FB7DA,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,103FB7DC,extended,000003E7
+
+[Max INT]
+patch=1,EE,103FB7DE,extended,000003E7
+
+[Max MEN]
+patch=1,EE,103FB7E0,extended,000003E7
+
+[Max AGL]
+patch=1,EE,103FB7E2,extended,000003E7
+
+[Max CHA]
+patch=1,EE,103FB7E4,extended,000003E7
+
+[Max Total Weight]
+patch=1,EE,003FB7F0,extended,000000FF
+
+[Always Low Current Weight]
+patch=1,EE,003FB7F1,extended,00000000
+
+[Max AP]
+patch=1,EE,003FB7F2,extended,000000FF
+
+[Infinite AP]
+patch=1,EE,003FB7F3,extended,000000FF
+
+[Max Infinite AP]
+patch=1,EE,103FB7F2,extended,0000FFFF
+
+[Have All Nicknames]
+patch=1,EE,203FDD30,extended,C0001FFF
+patch=1,EE,203FDD34,extended,7FFFFFFF
+
+[Quick Level Up]
+patch=1,EE,103FDD3C,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,203FDD3C,extended,0098967F
+
+[Max Origin EXP]
+patch=1,EE,203FDD40,extended,05F5E0FF
+
+[Always 1 For Next Level]
+patch=1,EE,203FDD44,extended,00000001
+
+[Have All Origin Abilities]
+patch=1,EE,203FDE20,extended,03020105
+patch=1,EE,203FDE24,extended,00000504
+
+[Have All Arts]
+patch=1,EE,203FDE30,extended,02011900
+patch=1,EE,203FDE34,extended,06050403
+patch=1,EE,203FDE38,extended,0A090807
+patch=1,EE,203FDE3C,extended,0E0D0C0B
+patch=1,EE,203FDE40,extended,1211100F
+patch=1,EE,203FDE44,extended,16151413
+patch=1,EE,203FDE48,extended,00191817
+
+[Level 99]
+patch=1,EE,003FDE52,extended,00000063
+
+[Max HP]
+patch=1,EE,103FB818,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,103FB81A,extended,0000270F
+
+[Max Infinite HP]
+patch=1,EE,203FB818,extended,270F270F
+
+[Max MP]
+patch=1,EE,103FB81C,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,103FB81E,extended,0000270F
+
+[Max Infinite MP]
+patch=1,EE,203FB81C,extended,270F270F
+
+[Max STR]
+patch=1,EE,103FB820,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,103FB822,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,103FB824,extended,000003E7
+
+[Max INT]
+patch=1,EE,103FB826,extended,000003E7
+
+[Max MEN]
+patch=1,EE,103FB828,extended,000003E7
+
+[Max AGL]
+patch=1,EE,103FB82A,extended,000003E7
+
+[Max CHA]
+patch=1,EE,103FB82C,extended,000003E7
+
+[Max Total Weight]
+patch=1,EE,003FB838,extended,000000FF
+
+[Always Low Current Weight]
+patch=1,EE,003FB839,extended,00000000
+
+[Max AP]
+patch=1,EE,003FB83A,extended,000000FF
+
+[Infinite AP]
+patch=1,EE,003FB83B,extended,000000FF
+
+[Max Infinite AP]
+patch=1,EE,103FB83A,extended,0000FFFF
+
+[Have All Nicknames]
+patch=1,EE,203FDF08,extended,C0001FFF
+patch=1,EE,203FDF0C,extended,0001FFFF
+
+[Quick Level Up]
+patch=1,EE,103FDF14,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,203FDF14,extended,0098967F
+
+[Max Origin EXP]
+patch=1,EE,203FDF18,extended,05F5E0FF
+
+[Always 1 For Next Level]
+patch=1,EE,203FDF1C,extended,00000001
+
+[Have All Origin Abilities]
+patch=1,EE,203FDFF8,extended,13121105
+patch=1,EE,203FDFFC,extended,00001514
+
+[Have All Arts]
+patch=1,EE,203FE008,extended,7A791B00
+patch=1,EE,203FE00C,extended,7E7D7C7B
+patch=1,EE,203FE010,extended,8281807F
+patch=1,EE,203FE014,extended,86858483
+patch=1,EE,203FE018,extended,8A898887
+patch=1,EE,203FE01C,extended,8E8D8C8B
+patch=1,EE,203FE020,extended,9291908F
+patch=1,EE,103FE024,extended,00000093
+
+[Level 99]
+patch=1,EE,003FE02A,extended,00000063
+
+[Max HP]
+patch=1,EE,103FB860,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,103FB862,extended,0000270F
+
+[Max Infinite HP]
+patch=1,EE,203FB860,extended,270F270F
+
+[Max MP]
+patch=1,EE,103FB864,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,103FB866,extended,0000270F
+
+[Max Infinite MP]
+patch=1,EE,203FB864,extended,270F270F
+
+[Max STR]
+patch=1,EE,103FB868,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,103FB86A,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,103FB86C,extended,000003E7
+
+[Max INT]
+patch=1,EE,103FB86E,extended,000003E7
+
+[Max MEN]
+patch=1,EE,103FB870,extended,000003E7
+
+[Max AGL]
+patch=1,EE,103FB872,extended,000003E7
+
+[Max CHA]
+patch=1,EE,103FB874,extended,000003E7
+
+[Max Total Weight]
+patch=1,EE,003FB880,extended,000000FF
+
+[Always Low Current Weight]
+patch=1,EE,003FB881,extended,00000000
+
+[Max AP]
+patch=1,EE,003FB882,extended,000000FF
+
+[Infinite AP]
+patch=1,EE,003FB883,extended,000000FF
+
+[Max Infinite AP]
+patch=1,EE,103FB882,extended,0000FFFF
+
+[Have All Nicknames]
+patch=1,EE,203FE0E0,extended,C0001FFF
+patch=1,EE,203FE0E4,extended,00007FFF
+
+[Quick Level Up]
+patch=1,EE,103FE0EC,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,203FE0EC,extended,0098967F
+
+[Max Origin EXP]
+patch=1,EE,203FE0F0,extended,05F5E0FF
+
+[Always 1 For Next Level]
+patch=1,EE,203FE0F4,extended,00000001
+
+[Have All Origin Abilities]
+patch=1,EE,203FE1D0,extended,23222104
+patch=1,EE,203FE1D4,extended,00000024
+
+[Have All Arts]
+patch=1,EE,203FE1E0,extended,201F1500
+patch=1,EE,203FE1E4,extended,24232221
+patch=1,EE,203FE1E8,extended,28272625
+patch=1,EE,203FE1EC,extended,2C2B2A29
+patch=1,EE,203FE1F0,extended,302F2E2D
+patch=1,EE,203FE1F4,extended,00333231
+
+[Level 99]
+patch=1,EE,003FE202,extended,00000063
+
+[Max HP]
+patch=1,EE,103FB8A8,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,103FB8AA,extended,0000270F
+
+[Max Infinite HP]
+patch=1,EE,203FB8A8,extended,270F270F
+
+[Max MP]
+patch=1,EE,103FB8AC,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,103FB8AE,extended,0000270F
+
+[Max Infinite MP]
+patch=1,EE,203FB8AC,extended,270F270F
+
+[Max STR]
+patch=1,EE,103FB8B0,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,103FB8B2,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,103FB8B4,extended,000003E7
+
+[Max INT]
+patch=1,EE,103FB8B6,extended,000003E7
+
+[Max MEN]
+patch=1,EE,103FB8B8,extended,000003E7
+
+[Max AGL]
+patch=1,EE,103FB8BA,extended,000003E7
+
+[Max CHA]
+patch=1,EE,103FB8BC,extended,000003E7
+
+[Max Total Weight]
+patch=1,EE,003FB8C8,extended,000000FF
+
+[Always Low Current Weight]
+patch=1,EE,003FB8C9,extended,00000000
+
+[Max AP]
+patch=1,EE,003FB8CA,extended,000000FF
+
+[Infinite AP]
+patch=1,EE,003FB8CB,extended,000000FF
+
+[Max Infinite AP]
+patch=1,EE,103FB8CA,extended,0000FFFF
+
+[Have All Nicknames]
+patch=1,EE,203FE2B8,extended,C0001FFF
+patch=1,EE,203FE2BC,extended,00001FFF
+
+[Quick Level Up]
+patch=1,EE,103FE2C4,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,203FE2C4,extended,0098967F
+
+[Max Origin EXP]
+patch=1,EE,203FE2C8,extended,05F5E0FF
+
+[Always 1 For Next Level]
+patch=1,EE,203FE2CC,extended,00000001
+
+[Have All Origin Abilities]
+patch=1,EE,203FE3A8,extended,31323303
+patch=1,EE,203FE3A0,extended,00000000
+
+[Have All Arts]
+patch=1,EE,203FE3B8,extended,3E3D1700
+patch=1,EE,203FE3BC,extended,4241403F
+patch=1,EE,203FE3C0,extended,46454443
+patch=1,EE,203FE3C4,extended,4A494847
+patch=1,EE,203FE3C8,extended,4E4D4C4B
+patch=1,EE,203FE3CC,extended,5251504F
+patch=1,EE,103FE3D0,extended,00000053
+
+[Level 99]
+patch=1,EE,003FE3DA,extended,00000063
+
+[Max HP]
+patch=1,EE,103FB8F0,extended,0000270F
+
+[Infinite HP]
+patch=1,EE,103FB8F2,extended,0000270F
+
+[Max Infinite HP]
+patch=1,EE,203FB8F0,extended,270F270F
+
+[Max MP]
+patch=1,EE,103FB8F4,extended,0000270F
+
+[Infinite MP]
+patch=1,EE,103FB8F6,extended,0000270F
+
+[Max Infinite MP]
+patch=1,EE,203FB8F4,extended,270F270F
+
+[Max STR]
+patch=1,EE,103FB8F8,extended,000003E7
+
+[Max Defense High]
+patch=1,EE,103FB8FA,extended,000003E7
+
+[Max Defense Low]
+patch=1,EE,103FB8FC,extended,000003E7
+
+[Max INT]
+patch=1,EE,103FB8FE,extended,000003E7
+
+[Max MEN]
+patch=1,EE,103FB900,extended,000003E7
+
+[Max AGL]
+patch=1,EE,103FB902,extended,000003E7
+
+[Max CHA]
+patch=1,EE,103FB904,extended,000003E7
+
+[Max Total Weight]
+patch=1,EE,003FB910,extended,000000FF
+
+[Always Low Current Weight]
+patch=1,EE,003FB911,extended,00000000
+
+[Max AP]
+patch=1,EE,003FB912,extended,000000FF
+
+[Infinite AP]
+patch=1,EE,003FB913,extended,000000FF
+
+[Max Infinite AP]
+patch=1,EE,103FB912,extended,0000FFFF
+
+[Have All Nicknames]
+patch=1,EE,203FE490,extended,C0001FFF
+patch=1,EE,203FE494,extended,000003FF
+
+[Quick Level Up]
+patch=1,EE,103FE49C,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,203FE49C,extended,0098967F
+
+[Max Origin EXP]
+patch=1,EE,203FE4A0,extended,05F5E0FF
+
+[Always 1 For Next Level]
+patch=1,EE,203FE4A4,extended,00000001
+
+[Have All Origin Abilities]
+patch=1,EE,203FE580,extended,43424106
+patch=1,EE,203FE584,extended,00464544
+
+[Have All Arts]
+patch=1,EE,203FE590,extended,5C5B0E00
+patch=1,EE,203FE594,extended,605F5E5D
+patch=1,EE,203FE598,extended,64636261
+patch=1,EE,203FE59C,extended,68676665
+patch=1,EE,003FE5A0,extended,00000000
+
+[Level 99]
+patch=1,EE,003FE5B2,extended,00000063

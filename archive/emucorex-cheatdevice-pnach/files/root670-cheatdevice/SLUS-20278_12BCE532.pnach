@@ -1,0 +1,150 @@
+gametitle=Yanya Caballista-City Skater (SLUS-20278)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902DAE74,extended,0C0BA161
+
+[Have Gawoo & King Gawoo]
+patch=1,EE,0030644F,extended,000000FF
+
+[Unlock All Missions]
+patch=1,EE,20306460,extended,01010101
+patch=1,EE,00306464,extended,00000001
+
+[Challenge 1]
+patch=1,EE,00370EC0,extended,00000001
+
+[Challenge 2]
+patch=1,EE,00370EC1,extended,00000001
+
+[Challenge 3]
+patch=1,EE,00370EC2,extended,00000001
+
+[Challenge 4]
+patch=1,EE,00370EC3,extended,00000001
+
+[Challenge 5]
+patch=1,EE,00370EC4,extended,00000001
+
+[Challenge 6]
+patch=1,EE,00370EC5,extended,00000001
+
+[Challenge 7]
+patch=1,EE,00370EC6,extended,00000001
+
+[Challenge 8]
+patch=1,EE,00370EC7,extended,00000001
+
+[Challenge 9]
+patch=1,EE,00370EC8,extended,00000001
+
+[Challenge 10]
+patch=1,EE,00370EC9,extended,00000001
+
+[Final Exam 1]
+patch=1,EE,00370ECA,extended,00000001
+
+[Challenge 1]
+patch=1,EE,00370ECB,extended,00000001
+
+[Challenge 2]
+patch=1,EE,00370ECC,extended,00000001
+
+[Challenge 3]
+patch=1,EE,00370ECD,extended,00000001
+
+[Challenge 4]
+patch=1,EE,00370ECE,extended,00000001
+
+[Challenge 5]
+patch=1,EE,00370ECF,extended,00000001
+
+[Challenge 6]
+patch=1,EE,00370ED0,extended,00000001
+
+[Challenge 7]
+patch=1,EE,00370ED1,extended,00000001
+
+[Challenge 8]
+patch=1,EE,00370ED2,extended,00000001
+
+[Challenge 9]
+patch=1,EE,00370ED3,extended,00000001
+
+[Challenge 10]
+patch=1,EE,00370ED4,extended,00000001
+
+[Final Exam 2]
+patch=1,EE,00370ED5,extended,00000001
+
+[Challenge 1]
+patch=1,EE,00370ED6,extended,00000001
+
+[Challenge 2]
+patch=1,EE,00370ED7,extended,00000001
+
+[Challenge 3]
+patch=1,EE,00370ED8,extended,00000001
+
+[Challenge 4]
+patch=1,EE,00370ED9,extended,00000001
+
+[Challenge 5]
+patch=1,EE,00370EDA,extended,00000001
+
+[Challenge 6]
+patch=1,EE,00370EDB,extended,00000001
+
+[Challenge 7]
+patch=1,EE,00370EDC,extended,00000001
+
+[Challenge 8]
+patch=1,EE,00370EDD,extended,00000001
+
+[Challenge 9]
+patch=1,EE,00370EDE,extended,00000001
+
+[Challenge 10]
+patch=1,EE,00370EDF,extended,00000001
+
+[Final Exam 3]
+patch=1,EE,00370EE0,extended,00000001
+
+[Challenge 1]
+patch=1,EE,00370EE1,extended,00000001
+
+[Challenge 2]
+patch=1,EE,00370EE2,extended,00000001
+
+[Challenge 3]
+patch=1,EE,00370EE3,extended,00000001
+
+[Challenge 4]
+patch=1,EE,00370EE4,extended,00000001
+
+[Challenge 5]
+patch=1,EE,00370EE5,extended,00000001
+
+[Challenge 6]
+patch=1,EE,00370EE6,extended,00000001
+
+[Challenge 7]
+patch=1,EE,00370EE7,extended,00000001
+
+[Challenge 8]
+patch=1,EE,00370EE8,extended,00000001
+
+[Challenge 9]
+patch=1,EE,00370EE9,extended,00000001
+
+[Challenge 10]
+patch=1,EE,00370EEA,extended,00000001
+
+[Final Exam 4]
+patch=1,EE,00370EEB,extended,00000001
+
+[Have All Challenges Complete]
+patch=1,EE,40370EC0,extended,000B0001
+patch=1,EE,01010101,extended,00000000

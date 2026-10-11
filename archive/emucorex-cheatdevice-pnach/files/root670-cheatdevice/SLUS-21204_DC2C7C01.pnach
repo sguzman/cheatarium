@@ -1,0 +1,22 @@
+gametitle=Victorious Boxers 2-Fighting Spirit (SLUS-21204)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901107F0,extended,00832021
+
+[Unlock All Stages]
+patch=1,EE,2043DC8C,extended,0000003B
+patch=1,EE,2043DC98,extended,FFE7FFBF
+patch=1,EE,2043DC9C,extended,07FFFBFF
+
+[Unlock Everything]
+patch=1,EE,4043DCA0,extended,00060001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Unlock Story Mode Extra]
+patch=1,EE,7043DCA0,extended,00000020
+
+[Unlock All Characters]
+patch=1,EE,2043DCB0,extended,FFFFFFFF

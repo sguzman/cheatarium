@@ -1,0 +1,456 @@
+gametitle=Colosseum-Road To Freedom (SLUS-21179)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904D6360,extended,00832021
+
+[Infinite Time]
+patch=1,EE,20518180,extended,426C0000
+patch=1,EE,20518184,extended,426C0000
+
+[Infinite Damage]
+patch=1,EE,2070AACC,extended,461C4000
+
+[Max Damage]
+patch=1,EE,2070AAD0,extended,461C4000
+
+[Infinite Stamina]
+patch=1,EE,2070AB24,extended,461C4000
+
+[Max Stamina]
+patch=1,EE,2070AB28,extended,461C4000
+
+[Infinite Money]
+patch=1,EE,1078380C,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2078380C,extended,3B9AC9FF
+
+[Infinite Training Points]
+patch=1,EE,20784A70,extended,000003E7
+
+[Infinite Training Points Usage]
+patch=1,EE,20322924,extended,00000000
+
+[Max Infinite Training Points]
+patch=1,EE,20322920,extended,240303E7
+
+[Extra Training Points]
+patch=1,EE,20322920,extended,02431821
+
+[Max STR]
+patch=1,EE,20701C50,extended,000000FF
+patch=1,EE,20701C54,extended,000000FF
+
+[Max Extra STR]
+patch=1,EE,20701C58,extended,000003E7
+
+[Max DEX]
+patch=1,EE,20701C60,extended,000000FF
+patch=1,EE,20701C64,extended,000000FF
+
+[Max Extra DEX]
+patch=1,EE,20701C68,extended,000003E7
+
+[Max AGI]
+patch=1,EE,20701C70,extended,000000FF
+patch=1,EE,20701C74,extended,000000FF
+
+[Max Extra AGI]
+patch=1,EE,20701C78,extended,000003E7
+
+[Max VIT]
+patch=1,EE,20701C80,extended,000000FF
+patch=1,EE,20701C84,extended,000000FF
+
+[Max Extra VIT]
+patch=1,EE,20701C88,extended,000003E7
+
+[Max STA]
+patch=1,EE,20701C90,extended,000000FF
+patch=1,EE,20701C94,extended,000000FF
+
+[Max Extra STA]
+patch=1,EE,20701C88,extended,000003E7
+
+[Max Neck Level]
+patch=1,EE,20701CC0,extended,0000000A
+
+[Max Extra Neck Level]
+patch=1,EE,20701CC4,extended,0000000A
+
+[Quick Neck Level Up]
+patch=1,EE,20701CC0,extended,00000010
+
+[Max Arms Level]
+patch=1,EE,20701CE0,extended,0000000A
+
+[Max Extra Arms Level]
+patch=1,EE,20701CE4,extended,0000000A
+
+[Quick Arms Level Up]
+patch=1,EE,20701CE8,extended,00000010
+
+[Max Body Level]
+patch=1,EE,20701D20,extended,0000000A
+
+[Max Extra Body Level]
+patch=1,EE,20701D24,extended,0000000A
+
+[Quick Body Level Up]
+patch=1,EE,20701D28,extended,00000010
+
+[Max Legs Level]
+patch=1,EE,20701D40,extended,0000000A
+
+[Max Extra Legs Level]
+patch=1,EE,20701D44,extended,0000000A
+
+[Quick Legs Level Up]
+patch=1,EE,20701D48,extended,00000010
+
+[Max Sword Style Level]
+patch=1,EE,20701DA0,extended,000003E7
+
+[Quick Sword Style Level Up]
+patch=1,EE,20701DA4,extended,00000064
+
+[Max Two Hand Style Level]
+patch=1,EE,20701DB0,extended,000003E7
+
+[Quick Two Hand Style Level Up]
+patch=1,EE,20701DB4,extended,00000064
+
+[Max Shield Style Level]
+patch=1,EE,20701DC0,extended,000003E7
+
+[Quick Shield Style Level Up]
+patch=1,EE,20701DC4,extended,00000064
+
+[Max Striker Style Level]
+patch=1,EE,20701DD0,extended,000003E7
+
+[Quick Striker Style Level Up]
+patch=1,EE,20701DD4,extended,00000064
+
+[Bash]
+patch=1,EE,20785B10,extended,00000001
+
+[Hilt Thrust]
+patch=1,EE,20785B20,extended,00000001
+
+[Body Blow]
+patch=1,EE,20785B30,extended,00000001
+
+[Uppercut]
+patch=1,EE,20785B40,extended,00000001
+
+[Evade Thrust]
+patch=1,EE,20785B50,extended,00000001
+
+[Splitter]
+patch=1,EE,20785B60,extended,00000001
+
+[Power Slash]
+patch=1,EE,20785B70,extended,00000001
+
+[Disarm Slash]
+patch=1,EE,20785B80,extended,00000001
+
+[Glorious Glint]
+patch=1,EE,20785B90,extended,00000001
+
+[Daisy Cutter]
+patch=1,EE,20785BA0,extended,00000001
+
+[Wild Splash]
+patch=1,EE,20785BB0,extended,00000001
+
+[Doppler Sence]
+patch=1,EE,20785BC0,extended,00000001
+
+[All Sword Skills]
+patch=1,EE,40785B10,extended,000C0004
+patch=1,EE,00000001,extended,00000000
+
+[Bash]
+patch=1,EE,20785B14,extended,00000063
+
+[Hilt Thrust]
+patch=1,EE,20785B24,extended,00000063
+
+[Body Blow]
+patch=1,EE,20785B34,extended,00000063
+
+[Uppercut]
+patch=1,EE,20785B44,extended,00000063
+
+[Evade Thrust]
+patch=1,EE,20785B54,extended,00000063
+
+[Splitter]
+patch=1,EE,20785B64,extended,00000063
+
+[Power Slash]
+patch=1,EE,20785B74,extended,00000063
+
+[Disarm Slash]
+patch=1,EE,20785B84,extended,00000063
+
+[Glorious Glint]
+patch=1,EE,20785B94,extended,00000063
+
+[Daisy Cutter]
+patch=1,EE,20785BA4,extended,00000063
+
+[Wild Splash]
+patch=1,EE,20785BB4,extended,00000063
+
+[Doppler Sence]
+patch=1,EE,20785BC4,extended,00000063
+
+[All Sword Skill Levels]
+patch=1,EE,40785B14,extended,000C0004
+patch=1,EE,00000063,extended,00000000
+
+[Charge]
+patch=1,EE,20785BF0,extended,00000001
+
+[Shield Ram]
+patch=1,EE,20785C00,extended,00000001
+
+[Shield Bash]
+patch=1,EE,20785C10,extended,00000001
+
+[Double Stinger]
+patch=1,EE,20785C20,extended,00000001
+
+[Turn]
+patch=1,EE,20785C30,extended,00000001
+
+[Ground Pound]
+patch=1,EE,20785C40,extended,00000001
+
+[Piercing Thrust]
+patch=1,EE,20785C50,extended,00000001
+
+[Cyclone]
+patch=1,EE,20785C60,extended,00000001
+
+[Edge]
+patch=1,EE,20785C70,extended,00000001
+
+[Duel Spirits]
+patch=1,EE,20785C80,extended,00000001
+
+[Rumble Roll]
+patch=1,EE,20785C90,extended,00000001
+
+[Hidden Clow]
+patch=1,EE,20785CA0,extended,00000001
+
+[All Shield Skills]
+patch=1,EE,40785BF0,extended,000C0004
+patch=1,EE,00000001,extended,00000000
+
+[Charge]
+patch=1,EE,20785BF4,extended,00000063
+
+[Shield Ram]
+patch=1,EE,20785C04,extended,00000063
+
+[Shield Bash]
+patch=1,EE,20785C14,extended,00000063
+
+[Double Stinger]
+patch=1,EE,20785C24,extended,00000063
+
+[Turn]
+patch=1,EE,20785C34,extended,00000063
+
+[Ground Pound]
+patch=1,EE,20785C44,extended,00000063
+
+[Piercing Thrust]
+patch=1,EE,20785C54,extended,00000063
+
+[Cyclone]
+patch=1,EE,20785C64,extended,00000063
+
+[Edge]
+patch=1,EE,20785C74,extended,00000063
+
+[Duel Spirits]
+patch=1,EE,20785C84,extended,00000063
+
+[Rumble Roll]
+patch=1,EE,20785C94,extended,00000063
+
+[Hidden Clow]
+patch=1,EE,20785CA4,extended,00000063
+
+[All Shield Skill Levels]
+patch=1,EE,40785BF4,extended,000C0004
+patch=1,EE,00000063,extended,00000000
+
+[Wild Dance]
+patch=1,EE,20785CD0,extended,00000001
+
+[Sting]
+patch=1,EE,20785CE0,extended,00000001
+
+[Twin Spikes]
+patch=1,EE,20785CF0,extended,00000001
+
+[Scissor Lifter]
+patch=1,EE,20785D00,extended,00000001
+
+[Back Thrust]
+patch=1,EE,20785D10,extended,00000001
+
+[Sweep Slash]
+patch=1,EE,20785D20,extended,00000001
+
+[Fury]
+patch=1,EE,20785D30,extended,00000001
+
+[Stunning Blow]
+patch=1,EE,20785D40,extended,00000001
+
+[Double Axe]
+patch=1,EE,20785D50,extended,00000001
+
+[Double Slice]
+patch=1,EE,20785D60,extended,00000001
+
+[Tornado]
+patch=1,EE,20785D70,extended,00000001
+
+[Dolphin]
+patch=1,EE,20785D80,extended,00000001
+
+[All Two Hand Skills]
+patch=1,EE,40785CD0,extended,000C0004
+patch=1,EE,00000001,extended,00000000
+
+[Wild Dance]
+patch=1,EE,20785CD4,extended,00000063
+
+[Sting]
+patch=1,EE,20785CE4,extended,00000063
+
+[Twin Spikes]
+patch=1,EE,20785CF4,extended,00000063
+
+[Scissor Lifter]
+patch=1,EE,20785D04,extended,00000063
+
+[Back Thrust]
+patch=1,EE,20785D14,extended,00000063
+
+[Sweep Slash]
+patch=1,EE,20785D24,extended,00000063
+
+[Fury]
+patch=1,EE,20785D34,extended,00000063
+
+[Stunning Blow]
+patch=1,EE,20785D44,extended,00000063
+
+[Double Axe]
+patch=1,EE,20785D54,extended,00000063
+
+[Double Slice]
+patch=1,EE,20785D64,extended,00000063
+
+[Tornado]
+patch=1,EE,20785D74,extended,00000063
+
+[Dolphin]
+patch=1,EE,20785D84,extended,00000063
+
+[All Two Hand Skill Levels]
+patch=1,EE,40785CD4,extended,000C0004
+patch=1,EE,00000063,extended,00000000
+
+[White Fang]
+patch=1,EE,20785DB0,extended,00000001
+
+[Sway]
+patch=1,EE,20785DC0,extended,00000001
+
+[Double Kick]
+patch=1,EE,20785DD0,extended,00000001
+
+[Iron Knuckle]
+patch=1,EE,20785DE0,extended,00000001
+
+[Right Pistons]
+patch=1,EE,20785DF0,extended,00000001
+
+[Left Pistons]
+patch=1,EE,20785E00,extended,00000001
+
+[Shoulder Tackle]
+patch=1,EE,20785E10,extended,00000001
+
+[Flying Knee]
+patch=1,EE,20785E20,extended,00000001
+
+[Lariat]
+patch=1,EE,20785E30,extended,00000001
+
+[Head Butt]
+patch=1,EE,20785E40,extended,00000001
+
+[Sobat]
+patch=1,EE,20785E50,extended,00000001
+
+[Stomping]
+patch=1,EE,20785E60,extended,00000001
+
+[All Striker Skills]
+patch=1,EE,40785DB0,extended,000C0004
+patch=1,EE,00000001,extended,00000000
+
+[White Fang]
+patch=1,EE,20785DB4,extended,00000063
+
+[Sway]
+patch=1,EE,20785DC4,extended,00000063
+
+[Double Kick]
+patch=1,EE,20785DD4,extended,00000063
+
+[Iron Knuckle]
+patch=1,EE,20785DE4,extended,00000063
+
+[Right Pistons]
+patch=1,EE,20785DF4,extended,00000063
+
+[Left Pistons]
+patch=1,EE,20785E04,extended,00000063
+
+[Shoulder Tackle]
+patch=1,EE,20785E14,extended,00000063
+
+[Flying Knee]
+patch=1,EE,20785E24,extended,00000063
+
+[Lariat]
+patch=1,EE,20785E34,extended,00000063
+
+[Head Butt]
+patch=1,EE,20785E44,extended,00000063
+
+[Sobat]
+patch=1,EE,20785E54,extended,00000063
+
+[Stomping]
+patch=1,EE,20785E64,extended,00000063
+
+[All Striker Skill Levels]
+patch=1,EE,40785DB4,extended,000C0004
+patch=1,EE,00000063,extended,00000000

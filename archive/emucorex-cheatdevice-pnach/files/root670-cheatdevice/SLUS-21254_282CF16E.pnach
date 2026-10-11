@@ -1,0 +1,671 @@
+gametitle=Zatch Bell!-Mamodo Battles (SLUS-21254)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90341E00,extended,0C0D5BB1
+patch=1,EE,200C0220,extended,8E020004
+patch=1,EE,200C0278,extended,03E00008
+patch=1,EE,200C027C,extended,C60103A8
+patch=1,EE,2013DAC0,extended,0C030088
+
+[P1 Press {L1}+{SELECT} For Death Blow On P2]
+patch=1,EE,E003FBFE,extended,00456602
+patch=1,EE,200C0248,extended,2401BF80
+patch=1,EE,200C024C,extended,54400001
+patch=1,EE,200C0250,extended,AE0103A8
+patch=1,EE,E001FFFF,extended,00456602
+patch=1,EE,200C0250,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,200C0224,extended,8E0103AC
+patch=1,EE,200C0228,extended,50400001
+patch=1,EE,200C022C,extended,AE0103A8
+
+[No Health P1]
+patch=1,EE,200C0224,extended,2401BF80
+patch=1,EE,200C0228,extended,50400001
+patch=1,EE,200C022C,extended,AE0103A8
+
+[Infinite Partner Gauge P1]
+patch=1,EE,200C0230,extended,8E0103BC
+patch=1,EE,200C0234,extended,50400001
+patch=1,EE,200C0238,extended,AE0103B0
+
+[No Partner Gauge P1]
+patch=1,EE,200C0230,extended,24010000
+patch=1,EE,200C0234,extended,50400001
+patch=1,EE,200C0238,extended,AE0103B0
+
+[Max Devotion P1]
+patch=1,EE,200C023C,extended,8E0103BC
+patch=1,EE,200C0240,extended,50400001
+patch=1,EE,200C0244,extended,AE0103B8
+
+[No Devotion P1]
+patch=1,EE,200C023C,extended,24010000
+patch=1,EE,200C0240,extended,50400001
+patch=1,EE,200C0244,extended,AE0103B8
+
+[Infinite Health P2]
+patch=1,EE,200C0248,extended,8E0103AC
+patch=1,EE,200C024C,extended,54400001
+patch=1,EE,200C0250,extended,AE0103A8
+
+[No Health P2]
+patch=1,EE,200C0248,extended,2401BF80
+patch=1,EE,200C024C,extended,54400001
+patch=1,EE,200C0250,extended,AE0103A8
+
+[Infinite Partner Gauge P2]
+patch=1,EE,200C0254,extended,8E0103BC
+patch=1,EE,200C0258,extended,54400001
+patch=1,EE,200C025C,extended,AE0103B0
+
+[No Partner Gauge P2]
+patch=1,EE,200C0254,extended,24010000
+patch=1,EE,200C0258,extended,54400001
+patch=1,EE,200C025C,extended,AE0103B0
+
+[Max Devotion P2]
+patch=1,EE,200C0260,extended,8E0103BC
+patch=1,EE,200C0264,extended,54400001
+patch=1,EE,200C0268,extended,AE0103B8
+
+[No Devotion P2]
+patch=1,EE,200C0260,extended,24010000
+patch=1,EE,200C0264,extended,54400001
+patch=1,EE,200C0268,extended,AE0103B8
+
+[Infinite Time]
+patch=1,EE,2012FAE0,extended,00000000
+
+[Max Points In Posession]
+patch=1,EE,204625BC,extended,0000270F
+
+[Zena]
+patch=1,EE,7046295C,extended,00000001
+
+[Ponygon]
+patch=1,EE,7046295C,extended,00000002
+
+[Wonrei]
+patch=1,EE,7046295C,extended,00000004
+
+[Kido]
+patch=1,EE,7046295C,extended,00000008
+
+[Victoream]
+patch=1,EE,7046295C,extended,00000010
+
+[Laila]
+patch=1,EE,7046295C,extended,00000020
+
+[Laila 2]
+patch=1,EE,7046295C,extended,00000040
+
+[Miordo-Z]
+patch=1,EE,7046295C,extended,00000080
+
+[All Characters]
+patch=1,EE,0046295C,extended,000000FF
+
+[Buying Upgrades Dont Decrease Points]
+patch=1,EE,201B6738,extended,00000000
+
+[Buying Upgrades Increases Points]
+patch=1,EE,201B6730,extended,00501021
+
+[Max HP]
+patch=1,EE,204625E0,extended,00000005
+
+[Max Strike]
+patch=1,EE,204625E8,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,204625F0,extended,00000005
+
+[Max HP]
+patch=1,EE,20462618,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462620,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462628,extended,00000005
+
+[Max HP]
+patch=1,EE,20462650,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462658,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462660,extended,00000005
+
+[Max HP]
+patch=1,EE,20462688,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462690,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462698,extended,00000005
+
+[Max HP]
+patch=1,EE,204626C0,extended,00000005
+
+[Max Strike]
+patch=1,EE,204626C8,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,204626D0,extended,00000005
+
+[Max HP]
+patch=1,EE,204626F8,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462700,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462708,extended,00000005
+
+[Max HP]
+patch=1,EE,20462730,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462738,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462740,extended,00000005
+
+[Max HP]
+patch=1,EE,20462768,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462770,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462778,extended,00000005
+
+[Max HP]
+patch=1,EE,204627D8,extended,00000005
+
+[Max Strike]
+patch=1,EE,204627E0,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,204627E8,extended,00000005
+
+[Max HP]
+patch=1,EE,20462810,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462818,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462820,extended,00000005
+
+[Max HP]
+patch=1,EE,20462848,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462850,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462858,extended,00000005
+
+[Max HP]
+patch=1,EE,20462880,extended,00000005
+
+[Max Strike]
+patch=1,EE,20462888,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462890,extended,00000005
+
+[Max HP]
+patch=1,EE,204628B8,extended,00000005
+
+[Max Strike]
+patch=1,EE,204628C0,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,204628C8,extended,00000005
+
+[Max HP]
+patch=1,EE,204628F0,extended,00000005
+
+[Max Strike]
+patch=1,EE,204628F8,extended,00000005
+
+[Max Spell Power]
+patch=1,EE,20462900,extended,00000005
+
+[Buying Cards Dont Decrease Points]
+patch=1,EE,20190B98,extended,00000000
+
+[Buying Cards Increases Points]
+patch=1,EE,20190B90,extended,00431021
+
+[Card 1]
+patch=1,EE,70462FD8,extended,00000001
+
+[Card 2]
+patch=1,EE,70462FD8,extended,00000002
+
+[Card 3]
+patch=1,EE,70462FD8,extended,00000004
+
+[Card 4]
+patch=1,EE,70462FD8,extended,00000008
+
+[Card 5]
+patch=1,EE,70462FD8,extended,00000010
+
+[Card 6]
+patch=1,EE,70462FD8,extended,00000020
+
+[Card 7]
+patch=1,EE,70462FD8,extended,00000040
+
+[Card 8]
+patch=1,EE,70462FD8,extended,00000080
+
+[Card 9]
+patch=1,EE,70462FD9,extended,00000001
+
+[Card 10]
+patch=1,EE,70462FD9,extended,00000002
+
+[Card 11]
+patch=1,EE,70462FD9,extended,00000004
+
+[Card 12]
+patch=1,EE,70462FD9,extended,00000008
+
+[Card 13]
+patch=1,EE,70462FD9,extended,00000010
+
+[Card 14]
+patch=1,EE,70462FD9,extended,00000020
+
+[Card 15]
+patch=1,EE,70462FD9,extended,00000040
+
+[Card 16]
+patch=1,EE,70462FD9,extended,00000080
+
+[Card 17]
+patch=1,EE,70462FDA,extended,00000001
+
+[Card 18]
+patch=1,EE,70462FDA,extended,00000002
+
+[Card 19]
+patch=1,EE,70462FDA,extended,00000004
+
+[Card 20]
+patch=1,EE,70462FDA,extended,00000008
+
+[Card 21]
+patch=1,EE,70462FDA,extended,00000010
+
+[Card 22]
+patch=1,EE,70462FDA,extended,00000020
+
+[Card 23]
+patch=1,EE,70462FDA,extended,00000040
+
+[Card 24]
+patch=1,EE,70462FDA,extended,00000080
+
+[Card 25]
+patch=1,EE,70462FDB,extended,00000001
+
+[Card 26]
+patch=1,EE,70462FDB,extended,00000002
+
+[Card 27]
+patch=1,EE,70462FDB,extended,00000004
+
+[Card 28]
+patch=1,EE,70462FDB,extended,00000008
+
+[Card 29]
+patch=1,EE,70462FDB,extended,00000010
+
+[Card 30]
+patch=1,EE,70462FDB,extended,00000020
+
+[Card 31]
+patch=1,EE,70462FDB,extended,00000040
+
+[All Mamado Cards]
+patch=1,EE,10462FD8,extended,0000FFFF
+patch=1,EE,70462FDA,extended,00107FFF
+
+[Card 1]
+patch=1,EE,70462FDB,extended,00000080
+
+[Card 2]
+patch=1,EE,70462FDC,extended,00000001
+
+[Card 3]
+patch=1,EE,70462FDC,extended,00000002
+
+[Card 4]
+patch=1,EE,70462FDC,extended,00000004
+
+[Card 5]
+patch=1,EE,70462FDC,extended,00000008
+
+[Card 6]
+patch=1,EE,70462FDC,extended,00000010
+
+[Card 7]
+patch=1,EE,70462FDC,extended,00000020
+
+[Card 8]
+patch=1,EE,70462FDC,extended,00000040
+
+[Card 9]
+patch=1,EE,70462FDC,extended,00000080
+
+[Card 10]
+patch=1,EE,70462FDD,extended,00000001
+
+[Card 11]
+patch=1,EE,70462FDD,extended,00000002
+
+[Card 12]
+patch=1,EE,70462FDD,extended,00000004
+
+[Card 13]
+patch=1,EE,70462FDD,extended,00000008
+
+[Card 14]
+patch=1,EE,70462FDD,extended,00000010
+
+[Card 15]
+patch=1,EE,70462FDD,extended,00000020
+
+[Card 16]
+patch=1,EE,70462FDD,extended,00000040
+
+[Card 17]
+patch=1,EE,70462FDD,extended,00000080
+
+[Card 18]
+patch=1,EE,70462FDE,extended,00000001
+
+[Card 19]
+patch=1,EE,70462FDE,extended,00000002
+
+[All Partner Cards]
+patch=1,EE,70462FDB,extended,00000080
+patch=1,EE,10462FDC,extended,0000FFFF
+patch=1,EE,70462FDE,extended,00000003
+
+[Card 1]
+patch=1,EE,70462FDE,extended,00000004
+
+[Card 2]
+patch=1,EE,70462FDE,extended,00000008
+
+[Card 3]
+patch=1,EE,70462FDE,extended,00000010
+
+[Card 4]
+patch=1,EE,70462FDE,extended,00000020
+
+[Card 5]
+patch=1,EE,70462FDE,extended,00000040
+
+[Card 6]
+patch=1,EE,70462FDE,extended,00000080
+
+[Card 7]
+patch=1,EE,70462FDF,extended,00000001
+
+[Card 8]
+patch=1,EE,70462FDF,extended,00000002
+
+[Card 9]
+patch=1,EE,70462FDF,extended,00000004
+
+[Card 10]
+patch=1,EE,70462FDF,extended,00000008
+
+[Card 11]
+patch=1,EE,70462FDF,extended,00000010
+
+[Card 12]
+patch=1,EE,70462FDF,extended,00000020
+
+[Card 13]
+patch=1,EE,70462FDF,extended,00000040
+
+[Card 14]
+patch=1,EE,70462FDF,extended,00000080
+
+[Card 15]
+patch=1,EE,70462FE0,extended,00000001
+
+[Card 16]
+patch=1,EE,70462FE0,extended,00000002
+
+[Card 17]
+patch=1,EE,70462FE0,extended,00000004
+
+[Card 18]
+patch=1,EE,70462FE0,extended,00000008
+
+[Card 19]
+patch=1,EE,70462FE0,extended,00000010
+
+[Card 20]
+patch=1,EE,70462FE0,extended,00000020
+
+[Card 21]
+patch=1,EE,70462FE0,extended,00000040
+
+[Card 22]
+patch=1,EE,70462FE0,extended,00000080
+
+[Card 23]
+patch=1,EE,70462FE1,extended,00000001
+
+[Card 24]
+patch=1,EE,70462FE1,extended,00000002
+
+[Card 25]
+patch=1,EE,70462FE1,extended,00000004
+
+[Card 26]
+patch=1,EE,70462FE1,extended,00000008
+
+[Card 27]
+patch=1,EE,70462FE1,extended,00000010
+
+[Card 28]
+patch=1,EE,70462FE1,extended,00000020
+
+[Card 29]
+patch=1,EE,70462FE1,extended,00000040
+
+[Card 30]
+patch=1,EE,70462FE1,extended,00000080
+
+[Card 31]
+patch=1,EE,70462FE2,extended,00000001
+
+[Card 32]
+patch=1,EE,70462FE2,extended,00000002
+
+[Card 33]
+patch=1,EE,70462FE2,extended,00000004
+
+[Card 34]
+patch=1,EE,70462FE2,extended,00000008
+
+[Card 35]
+patch=1,EE,70462FE2,extended,00000010
+
+[Card 36]
+patch=1,EE,70462FE2,extended,00000020
+
+[Card 37]
+patch=1,EE,70462FE2,extended,00000040
+
+[Card 38]
+patch=1,EE,70462FE2,extended,00000080
+
+[Card 39]
+patch=1,EE,70462FE3,extended,00000001
+
+[Card 40]
+patch=1,EE,70462FE3,extended,00000002
+
+[Card 41]
+patch=1,EE,70462FE3,extended,00000004
+
+[Card 42]
+patch=1,EE,70462FE3,extended,00000008
+
+[Card 43]
+patch=1,EE,70462FE3,extended,00000010
+
+[Card 44]
+patch=1,EE,70462FE3,extended,00000020
+
+[Card 45]
+patch=1,EE,70462FE3,extended,00000040
+
+[Card 46]
+patch=1,EE,70462FE3,extended,00000080
+
+[Card 47]
+patch=1,EE,70462FE4,extended,00000001
+
+[Card 48]
+patch=1,EE,70462FE4,extended,00000002
+
+[Card 49]
+patch=1,EE,70462FE4,extended,00000004
+
+[Card 50]
+patch=1,EE,70462FE4,extended,00000008
+
+[Card 51]
+patch=1,EE,70462FE4,extended,00000010
+
+[Card 52]
+patch=1,EE,70462FE4,extended,00000020
+
+[Card 53]
+patch=1,EE,70462FE4,extended,00000040
+
+[Card 54]
+patch=1,EE,70462FE4,extended,00000080
+
+[Card 55]
+patch=1,EE,70462FE5,extended,00000001
+
+[Card 56]
+patch=1,EE,70462FE5,extended,00000002
+
+[Card 57]
+patch=1,EE,70462FE5,extended,00000004
+
+[All Spell Cards]
+patch=1,EE,70426FDE,extended,0010FFFC
+patch=1,EE,20462FE0,extended,FFFFFFFF
+patch=1,EE,70462FE4,extended,001007FF
+
+[Card 1]
+patch=1,EE,70462FE5,extended,00000008
+
+[Card 4]
+patch=1,EE,70462FE5,extended,00000010
+
+[Card 5]
+patch=1,EE,70462FE5,extended,00000020
+
+[Card 6]
+patch=1,EE,70462FE5,extended,00000040
+
+[Card 7]
+patch=1,EE,70462FE5,extended,00000080
+
+[Card 8]
+patch=1,EE,70462FE6,extended,00000001
+
+[Card 9]
+patch=1,EE,70462FE6,extended,00000002
+
+[Card 10]
+patch=1,EE,70462FE6,extended,00000004
+
+[Card 11]
+patch=1,EE,70462FE6,extended,00000008
+
+[Card 12]
+patch=1,EE,70462FE6,extended,00000010
+
+[Card 13]
+patch=1,EE,70462FE6,extended,00000020
+
+[Card 14]
+patch=1,EE,70462FE6,extended,00000040
+
+[Card 15]
+patch=1,EE,70462FE6,extended,00000080
+
+[Card 16]
+patch=1,EE,70462FE7,extended,00000001
+
+[Card 17]
+patch=1,EE,70462FE7,extended,00000002
+
+[Card 18]
+patch=1,EE,70462FE7,extended,00000004
+
+[Card 19]
+patch=1,EE,70462FE7,extended,00000008
+
+[Card 20]
+patch=1,EE,70462FE7,extended,00000010
+
+[Card 21]
+patch=1,EE,70462FE7,extended,00000020
+
+[Card 22]
+patch=1,EE,70462FE7,extended,00000040
+
+[Card 23]
+patch=1,EE,70462FE7,extended,00000080
+
+[Card 24]
+patch=1,EE,70462FE8,extended,00000001
+
+[Card 25]
+patch=1,EE,70462FE8,extended,00000002
+
+[Card 26]
+patch=1,EE,70462FE8,extended,00000004
+
+[Card 27]
+patch=1,EE,70462FE8,extended,00000008
+
+[Card 28]
+patch=1,EE,70462FE8,extended,00000010
+
+[Card 29]
+patch=1,EE,70462FE8,extended,00000020
+
+[All Event Cards]
+patch=1,EE,70462FE5,extended,000000F8
+patch=1,EE,10462FE6,extended,0000FFFF
+patch=1,EE,70462FE8,extended,0000003F

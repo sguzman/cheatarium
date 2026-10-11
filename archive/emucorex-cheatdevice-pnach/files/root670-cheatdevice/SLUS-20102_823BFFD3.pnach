@@ -1,0 +1,416 @@
+gametitle=NBA Live 2001 (SLUS-20102)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9026D840,extended,0C04A990
+
+[Home Team Scores 255]
+patch=1,EE,0081AE98,extended,000000FF
+
+[Home Team Scores 150]
+patch=1,EE,0081AE98,extended,00000096
+
+[Home Team Scores 0]
+patch=1,EE,0081AE98,extended,00000000
+
+[Home Team Start With Score 150]
+patch=1,EE,D081AE98,extended,00000000
+patch=1,EE,1081AE98,extended,00000096
+
+[Home Team Start With Score 100]
+patch=1,EE,D081AE98,extended,00000000
+patch=1,EE,1081AE98,extended,00000064
+
+[Home Team Start With Score 50]
+patch=1,EE,D081AE98,extended,00000000
+patch=1,EE,1081AE98,extended,00000032
+
+[Home Team Start With Score 20]
+patch=1,EE,D081AE98,extended,00000000
+patch=1,EE,1081AE98,extended,00000014
+
+[Away Team Scores 255]
+patch=1,EE,0081AE9C,extended,000000FF
+
+[Away Team Scores 150]
+patch=1,EE,0081AE9C,extended,000000FF
+
+[Away Team Scores 0]
+patch=1,EE,0081AE9C,extended,000000FF
+
+[Away Team Start With Score 150]
+patch=1,EE,D081AE9C,extended,00000000
+patch=1,EE,1081AE9C,extended,00000096
+
+[Away Team Start With Score 100]
+patch=1,EE,D081AE9C,extended,00000000
+patch=1,EE,1081AE9C,extended,00000064
+
+[Away Team Start With Score 50]
+patch=1,EE,D081AE9C,extended,00000000
+patch=1,EE,1081AE9C,extended,00000032
+
+[Away Team Start With Score 20]
+patch=1,EE,D081AE9C,extended,00000000
+patch=1,EE,1081AE9C,extended,00000014
+
+[Home Team Infinite Time-Outs]
+patch=1,EE,103FC22E,extended,00000006
+
+[Home Team No Time-Outs]
+patch=1,EE,103FC22E,extended,00000000
+
+[Away Team Infinite Time-Outs]
+patch=1,EE,103FC316,extended,00000006
+
+[Away Team No Time-Outs]
+patch=1,EE,103FC316,extended,00000000
+
+[P1 Press {L1}+{L2} For More Time]
+patch=1,EE,D049F642,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P1 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049F642,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[P2 Press {L1}+{L2} For More Time]
+patch=1,EE,D049F742,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P2 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049F742,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[P3 Press {L1}+{L2} For More Time]
+patch=1,EE,D049F842,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P3 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049F842,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[P4 Press {L1}+{L2} For More Time]
+patch=1,EE,D049F942,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P4 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049F942,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[P5 Press {L1}+{L2} For More Time]
+patch=1,EE,D049FA42,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P5 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049FA42,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[P6 Press {L1}+{L2} For More Time]
+patch=1,EE,D049FB42,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P6 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049FB42,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[P7 Press {L1}+{L2} For More Time]
+patch=1,EE,D049FC42,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P7 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049FC42,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[P8 Press {L1}+{L2} For More Time]
+patch=1,EE,D049FD42,extended,0000FAFF
+patch=1,EE,203DD980,extended,00002A30
+
+[P8 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D049FD42,extended,0000F5FF
+patch=1,EE,203DD980,extended,00000001
+
+[Infinite Shot Clock]
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P1 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049F642,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P1 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049F642,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[P2 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049F742,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P2 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049F742,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[P3 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049F842,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P3 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049F842,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[P4 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049F942,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P4 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049F942,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[P5 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049FA42,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P5 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049FA42,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[P6 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049FB42,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P6 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049FB42,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[P7 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049FC42,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P7 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049FC42,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[P8 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D049FD42,extended,0000F3FF
+patch=1,EE,203DD9F4,extended,000005A0
+
+[P8 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D049FD42,extended,0000FCFF
+patch=1,EE,203DD9F4,extended,00000000
+
+[Start On 2nd Quarter]
+patch=1,EE,D03DD990,extended,00000000
+patch=1,EE,103DD990,extended,00000001
+
+[Start On 3rd Quarter]
+patch=1,EE,D03DD990,extended,00000000
+patch=1,EE,103DD990,extended,00000002
+
+[Start On 4th Quarter]
+patch=1,EE,D03DD990,extended,00000000
+patch=1,EE,103DD990,extended,00000003
+
+[P1]
+patch=1,EE,103DE272,extended,00007FFF
+
+[P2]
+patch=1,EE,103DEA12,extended,00007FFF
+
+[P3]
+patch=1,EE,103DF1B2,extended,00007FFF
+
+[P4]
+patch=1,EE,103DF952,extended,00007FFF
+
+[P5]
+patch=1,EE,103E00F2,extended,00007FFF
+
+[P1]
+patch=1,EE,103DE272,extended,00000000
+
+[P2]
+patch=1,EE,103DEA12,extended,00000000
+
+[P3]
+patch=1,EE,103DF1B2,extended,00000000
+
+[P4]
+patch=1,EE,103DF952,extended,00000000
+
+[P5]
+patch=1,EE,103E00F2,extended,00000000
+
+[P1]
+patch=1,EE,103E0892,extended,00007FFF
+
+[P2]
+patch=1,EE,103E1032,extended,00007FFF
+
+[P3]
+patch=1,EE,103E17D2,extended,00007FFF
+
+[P4]
+patch=1,EE,103E1F72,extended,00007FFF
+
+[P5]
+patch=1,EE,103E2712,extended,00007FFF
+
+[P1]
+patch=1,EE,103E0892,extended,00000000
+
+[P2]
+patch=1,EE,103E1032,extended,00000000
+
+[P3]
+patch=1,EE,103E17D2,extended,00000000
+
+[P4]
+patch=1,EE,103E1F72,extended,00000000
+
+[P5]
+patch=1,EE,103E2712,extended,00000000
+
+[P1]
+patch=1,EE,103FCC88,extended,00007FFF
+
+[P2]
+patch=1,EE,103FCCB2,extended,00007FFF
+
+[P3]
+patch=1,EE,103FCCDC,extended,00007FFF
+
+[P4]
+patch=1,EE,103FCD06,extended,00007FFF
+
+[P5]
+patch=1,EE,103FCD30,extended,00007FFF
+
+[P6]
+patch=1,EE,103FCD5A,extended,00007FFF
+
+[P7]
+patch=1,EE,103FCD84,extended,00007FFF
+
+[P8]
+patch=1,EE,103FCDAE,extended,00007FFF
+
+[P9]
+patch=1,EE,103FCDD8,extended,00007FFF
+
+[P10]
+patch=1,EE,103FCE02,extended,00007FFF
+
+[P11]
+patch=1,EE,103FCE2C,extended,00007FFF
+
+[P12]
+patch=1,EE,103FCE56,extended,00007FFF
+
+[P1]
+patch=1,EE,103FCC88,extended,00000000
+
+[P2]
+patch=1,EE,103FCCB2,extended,00000000
+
+[P3]
+patch=1,EE,103FCCDC,extended,00000000
+
+[P4]
+patch=1,EE,103FCD06,extended,00000000
+
+[P5]
+patch=1,EE,103FCD30,extended,00000000
+
+[P6]
+patch=1,EE,103FCD5A,extended,00000000
+
+[P7]
+patch=1,EE,103FCD84,extended,00000000
+
+[P8]
+patch=1,EE,103FCDAE,extended,00000000
+
+[P9]
+patch=1,EE,103FCDD8,extended,00000000
+
+[P10]
+patch=1,EE,103FCE02,extended,00000000
+
+[P11]
+patch=1,EE,103FCE2C,extended,00000000
+
+[P12]
+patch=1,EE,103FCE56,extended,00000000
+
+[P1]
+patch=1,EE,103FCE80,extended,00007FFF
+
+[P2]
+patch=1,EE,103FCEAA,extended,00007FFF
+
+[P3]
+patch=1,EE,103FCED4,extended,00007FFF
+
+[P4]
+patch=1,EE,103FCEFE,extended,00007FFF
+
+[P5]
+patch=1,EE,103FCF28,extended,00007FFF
+
+[P6]
+patch=1,EE,103FCF52,extended,00007FFF
+
+[P7]
+patch=1,EE,103FCF7C,extended,00007FFF
+
+[P8]
+patch=1,EE,103FCFA6,extended,00007FFF
+
+[P9]
+patch=1,EE,103FCFD0,extended,00007FFF
+
+[P10]
+patch=1,EE,103FCFFA,extended,00007FFF
+
+[P11]
+patch=1,EE,103FD024,extended,00007FFF
+
+[P12]
+patch=1,EE,103FD04E,extended,00007FFF
+
+[P1]
+patch=1,EE,103FCE80,extended,00000000
+
+[P2]
+patch=1,EE,103FCEAA,extended,00000000
+
+[P3]
+patch=1,EE,103FCED4,extended,00000000
+
+[P4]
+patch=1,EE,103FCEFE,extended,00000000
+
+[P5]
+patch=1,EE,103FCF28,extended,00000000
+
+[P6]
+patch=1,EE,103FCF52,extended,00000000
+
+[P7]
+patch=1,EE,103FCF7C,extended,00000000
+
+[P8]
+patch=1,EE,103FCFA6,extended,00000000
+
+[P9]
+patch=1,EE,103FCFD0,extended,00000000
+
+[P10]
+patch=1,EE,103FCFFA,extended,00000000
+
+[P11]
+patch=1,EE,103FD024,extended,00000000
+
+[P12]
+patch=1,EE,103FD04E,extended,00000000

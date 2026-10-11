@@ -1,0 +1,171 @@
+gametitle=Soldier Of Fortune-Gold Edition (SLUS-20084)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90435A5C,extended,0C110DE5
+patch=1,EE,200C0298,extended,03E00008
+patch=1,EE,200C029C,extended,3C040056
+patch=1,EE,2025CAD8,extended,0C030088
+
+[Infinite Armor]
+patch=1,EE,203B920C,extended,00000000
+
+[Infinite Stealth]
+patch=1,EE,202D0870,extended,E61500CC
+patch=1,EE,202D0874,extended,E60000CC
+
+[Infinite Ammo (9MM Pistol)]
+patch=1,EE,203B9144,extended,00000000
+
+[Max Infinite Ammo-9MM Pistol]
+patch=1,EE,203B913C,extended,24030063
+
+[Extra Ammo (9MM Pistol)]
+patch=1,EE,203B913C,extended,00431021
+
+[Infinite Ammo (Throwing Knives)]
+patch=1,EE,203C1FC4,extended,00000000
+
+[Max Infinite Throwing Knives]
+patch=1,EE,203C1FC0,extended,240203E7
+
+[Extra Ammo (Throwing Knives)]
+patch=1,EE,103C1FC0,extended,00000001
+
+[Infinite Ammo (Shotgun)]
+patch=1,EE,203B909C,extended,00000000
+
+[Max Infinite Ammo-Shotgun]
+patch=1,EE,203B9098,extended,240303E7
+
+[Extra Ammo (Shotgun)]
+patch=1,EE,103B9098,extended,00000001
+
+[Infinite Flash Pak & Plastique]
+patch=1,EE,203B6F0C,extended,00000000
+
+[Max Infinite Flash Pak & Plastique]
+patch=1,EE,203B6F04,extended,24020063
+
+[Extra Flash Paks & Plastiques]
+patch=1,EE,103B6F04,extended,00000001
+
+[Never Reload (MPG-Secondary Fire)]
+patch=1,EE,203C0F50,extended,00000000
+
+[Never Reload (Shotgun-Primary Fire)]
+patch=1,EE,203C0074,extended,00000000
+
+[Never Reload (Heavy MG-Secondary Fire)]
+patch=1,EE,203C2390,extended,00000000
+
+[Never Reload (Slugthrower-Secondary Fire)]
+patch=1,EE,203C2098,extended,00000000
+
+[Never Reload (Flame Thrower-Primary Fire)]
+patch=1,EE,203C16BC,extended,00000000
+
+[Never Reload (Flame Thrower-Secondary Fire)]
+patch=1,EE,203C17CC,extended,00000000
+
+[Never Reload (Rocket Launcher-Secondary Fire)]
+patch=1,EE,203C3F98,extended,00000000
+
+[Never Reload (All Other Weapons-Primary Fire)]
+patch=1,EE,203C3ED0,extended,00000000
+
+[Change Weapons For Max Ammo In Clip]
+patch=1,EE,203C4220,extended,00000000
+patch=1,EE,203C4228,extended,24020063
+patch=1,EE,203C4230,extended,AE020000
+
+[God Mode]
+patch=1,EE,200C0220,extended,8C4101A0
+patch=1,EE,200C0224,extended,34210010
+patch=1,EE,200C0228,extended,AC4101A0
+
+[No Target]
+patch=1,EE,200C022C,extended,8C4101A0
+patch=1,EE,200C0230,extended,34210020
+patch=1,EE,200C0234,extended,AC4101A0
+
+[P1 Press {L1}+{L2} To Have All Weapons]
+patch=1,EE,200C02A0,extended,24030001
+patch=1,EE,200C02A4,extended,24050063
+patch=1,EE,200C02A8,extended,AC830044
+patch=1,EE,200C02AC,extended,AC850040
+patch=1,EE,200C02B0,extended,24630001
+patch=1,EE,200C02B4,extended,2C61000D
+patch=1,EE,200C02B8,extended,1420FFFB
+patch=1,EE,200C02BC,extended,2484000C
+patch=1,EE,200C02C0,extended,080EF4F4
+patch=1,EE,200C02C4,extended,8C420004
+patch=1,EE,D06CF482,extended,0000FAFF
+patch=1,EE,203BD3C8,extended,080300A8
+patch=1,EE,D06CF482,extended,0000FFFF
+patch=1,EE,203BD3C8,extended,8C420004
+
+[P1 Press {L1}+{SELECT} For No Clipping On]
+patch=1,EE,D043A1C2,extended,0000FBFE
+patch=1,EE,202DC27C,extended,24030001
+
+[P1 Press {L2}+{SELECT} For No Clipping Off]
+patch=1,EE,D043A1C2,extended,0000FEFE
+patch=1,EE,202DC27C,extended,8E23019C
+
+[P1 Press {L3}+Down For Slow Animations]
+patch=1,EE,D06CF482,extended,0000FFBD
+patch=1,EE,2036FBEC,extended,3C014400
+
+[P1 Press {R3}+Up For Fast Animations]
+patch=1,EE,D06CF482,extended,0000FFEB
+patch=1,EE,2036FBEC,extended,3C0144FF
+
+[P1 Press {R3}+Down For Hyper Animations]
+patch=1,EE,D06CF482,extended,0000FFBB
+patch=1,EE,2036FBEC,extended,3C014EFF
+
+[P1 Press {L3}+{R3} For Normal Motion]
+patch=1,EE,D06CF482,extended,0000FFF9
+patch=1,EE,2036FBEC,extended,3C01447A
+
+[Show High clamp]
+patch=1,EE,10175634,extended,0000000A
+
+[Show Low clamp]
+patch=1,EE,101756B0,extended,00000009
+
+[Show Moving Entity]
+patch=1,EE,10216960,extended,00000004
+
+[Show Rotating Entity]
+patch=1,EE,10216E24,extended,00000004
+
+[Show Debug Location]
+patch=1,EE,20113F28,extended,00000000
+
+[Show Trace/Points]
+patch=1,EE,203CF468,extended,00000000
+
+[Show More Info]
+patch=1,EE,203F6A40,extended,00000000
+
+[Show Packets]
+patch=1,EE,20117D74,extended,00000000
+
+[Show Frame Delta]
+patch=1,EE,201735D8,extended,00000000
+
+[Show Delta]
+patch=1,EE,20172B58,extended,00000000
+
+[Show Baseline]
+patch=1,EE,20172BE4,extended,00000000
+
+[Show Remove]
+patch=1,EE,20172AF0,extended,00000000
+
+[Show Unchanged]
+patch=1,EE,20172A54,extended,00000000

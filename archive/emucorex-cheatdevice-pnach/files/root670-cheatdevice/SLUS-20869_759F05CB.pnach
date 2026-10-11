@@ -1,0 +1,93 @@
+gametitle=Judge Dredd-Dredd Vs. Death (SLUS-20869)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902D1174,extended,0C0B87E4
+
+[Infinite Health (Arcade & Story Mode)]
+patch=1,EE,202329D8,extended,3C0142C8
+patch=1,EE,202329E0,extended,AE41003C
+
+[Infinite Primary Ammo]
+patch=1,EE,202AF3D0,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,202AF3CC,extended,2402270F
+
+[Extra Ammo]
+patch=1,EE,102AF3CC,extended,00000001
+
+[Infinite Medi-Paks]
+patch=1,EE,20201524,extended,00000000
+
+[Use Medi-Pak For Max Medi-Paks]
+patch=1,EE,2020151C,extended,24020003
+
+[Infinite Grenades]
+patch=1,EE,202BA970,extended,00000000
+patch=1,EE,202BC6E0,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,202BA96C,extended,24020003
+patch=1,EE,202BC6DC,extended,24020003
+
+[Unlock All Cheats]
+patch=1,EE,202362D4,extended,24020001
+patch=1,EE,202362D8,extended,03E00008
+patch=1,EE,202362DC,extended,A062017C
+
+[Lawgiver]
+patch=1,EE,202AE08C,extended,00000000
+patch=1,EE,202AE090,extended,00000000
+
+[Pistol]
+patch=1,EE,202AFFC8,extended,00000000
+patch=1,EE,202AFFCC,extended,00000000
+
+[Shotgun]
+patch=1,EE,202B0DD0,extended,00000000
+patch=1,EE,202B0DD4,extended,00000000
+
+[Las Rifle]
+patch=1,EE,202B16B0,extended,00000000
+patch=1,EE,202B16B4,extended,00000000
+
+[Grenade Launcher]
+patch=1,EE,202B1C00,extended,00000000
+patch=1,EE,202B1C04,extended,00000000
+
+[Stump Gun]
+patch=1,EE,202B3E78,extended,00000000
+patch=1,EE,202B3E7C,extended,00000000
+
+[Ghost]
+patch=1,EE,00386160,extended,00000001
+
+[Deformed Mode]
+patch=1,EE,00386161,extended,00000001
+
+[Low Gravity Ragdoll]
+patch=1,EE,00386162,extended,00000001
+
+[Pinhead]
+patch=1,EE,00386163,extended,00000001
+
+[Headless]
+patch=1,EE,00386164,extended,00000001
+
+[Touch Of Mortis]
+patch=1,EE,00386165,extended,00000001
+
+[Mirror World]
+patch=1,EE,00386166,extended,00000001
+
+[Infinite Lawmeter]
+patch=1,EE,00386167,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,00386168,extended,00000001
+
+[Infinite Med-Paks]
+patch=1,EE,00386169,extended,00000001

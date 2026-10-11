@@ -1,0 +1,185 @@
+gametitle=World Tour Soccer 2003 (SCUS-97233)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0043D7A7
+
+[Home Team Scores 50]
+patch=1,EE,0050399A,extended,00000032
+
+[Home Team Scores 20]
+patch=1,EE,0050399A,extended,00000014
+
+[Home Team Scores 0]
+patch=1,EE,0050399A,extended,00000000
+
+[Home Team Start With 50]
+patch=1,EE,D050399A,extended,00000000
+patch=1,EE,0050399A,extended,00000032
+
+[Home Team Start With 20]
+patch=1,EE,D050399A,extended,00000000
+patch=1,EE,0050399A,extended,00000014
+
+[Home Team Start With 10]
+patch=1,EE,D050399A,extended,00000000
+patch=1,EE,0050399A,extended,0000000A
+
+[Home Team Start With 5]
+patch=1,EE,D050399A,extended,00000000
+patch=1,EE,0050399A,extended,00000005
+
+[Away Team Scores 50]
+patch=1,EE,005035B0,extended,00000032
+
+[Away Team Scores 20]
+patch=1,EE,005035B0,extended,00000014
+
+[Away Team Scores 0]
+patch=1,EE,005035B0,extended,00000000
+
+[Away Team Start With 50]
+patch=1,EE,D05035B0,extended,00000000
+patch=1,EE,005035B0,extended,00000032
+
+[Away Team Start With 20]
+patch=1,EE,D05035B0,extended,00000000
+patch=1,EE,005035B0,extended,00000014
+
+[Away Team Start With 10]
+patch=1,EE,D05035B0,extended,00000000
+patch=1,EE,005035B0,extended,0000000A
+
+[Away Team Start With 5]
+patch=1,EE,D05035B0,extended,00000000
+patch=1,EE,005035B0,extended,00000005
+
+[P1 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062E6C2,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P1 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062E6C2,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P1 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062E6C2,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P1 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062E6C2,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040
+
+[P2 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062E842,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P2 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062E842,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P2 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062E842,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P2 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062E842,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040
+
+[P3 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062E9C2,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P3 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062E9C2,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P3 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062E9C2,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P3 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062E9C2,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040
+
+[P4 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062EB42,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P4 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062EB42,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P4 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062EB42,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P4 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062EB42,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040
+
+[P5 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062ECC2,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P5 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062ECC2,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P5 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062ECC2,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P5 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062ECC2,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040
+
+[P6 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062EE42,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P6 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062EE42,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P6 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062EE42,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P6 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062EE42,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040
+
+[P7 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062EFC2,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P7 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062EFC2,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P7 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062EFC2,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P7 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062EFC2,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040
+
+[P8 Press {L1}+{SELECT} For Time Low 1st Half]
+patch=1,EE,D062F142,extended,0000FBFE
+patch=1,EE,105584B0,extended,00000000
+
+[P8 Press {L2}+{SELECT} To End 1st Half]
+patch=1,EE,D062F142,extended,0000FEFE
+patch=1,EE,105584B0,extended,00003820
+
+[P8 Press {R1}+{SELECT} For Time Low 2nd Half]
+patch=1,EE,D062F142,extended,0000F7FE
+patch=1,EE,105584B0,extended,00003840
+
+[P8 Press {R2}+{SELECT} To End 2nd Half]
+patch=1,EE,D062F142,extended,0000FDFE
+patch=1,EE,105584B0,extended,00007040

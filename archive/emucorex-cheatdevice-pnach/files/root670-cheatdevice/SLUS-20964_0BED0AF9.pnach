@@ -1,0 +1,548 @@
+gametitle=Devil May Cry 3-Dante's Awakening (SLUS-20964)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90122A14,extended,0C04A0B4
+
+[Infinite Health]
+patch=1,EE,2021EB5C,extended,C6212AA8
+patch=1,EE,2021EB64,extended,E6212AD4
+
+[Invincible & 1-Hit Death (Enemies)]
+patch=1,EE,202E7978,extended,1000001F
+patch=1,EE,202E91C8,extended,AC400004
+
+[Infinite Devil Trigger Usage]
+patch=1,EE,2021CCD8,extended,00000000
+
+[Max Infinite Devil Trigger]
+patch=1,EE,20240B98,extended,C60128C8
+patch=1,EE,20240BA8,extended,E60128C4
+
+[Dante Can Use Devil Trigger From The Start]
+patch=1,EE,202408D0,extended,24020001
+patch=1,EE,202408D8,extended,A20228AF
+patch=1,EE,20240BC0,extended,E60028C8
+patch=1,EE,20599298,extended,0021E5A0
+
+[Gain 5000 Style EXP Each Time]
+patch=1,EE,200C0230,extended,3C01459C
+patch=1,EE,200C0234,extended,44816000
+patch=1,EE,200C0238,extended,080B642E
+patch=1,EE,200C023C,extended,460C0000
+patch=1,EE,202D90B4,extended,0C03008C
+
+[Gain 1000 Style EXP Each Time]
+patch=1,EE,200C0230,extended,3C01447A
+patch=1,EE,200C0234,extended,44816000
+patch=1,EE,200C0238,extended,080B642E
+patch=1,EE,200C023C,extended,460C0000
+patch=1,EE,202D90B4,extended,0C03008C
+
+[Gain 500 Style EXP Each Time]
+patch=1,EE,200C0230,extended,3C0143FA
+patch=1,EE,200C0234,extended,44816000
+patch=1,EE,200C0238,extended,080B642E
+patch=1,EE,200C023C,extended,460C0000
+patch=1,EE,202D90B4,extended,0C03008C
+
+[Red Orbs Worth 1000]
+patch=1,EE,202EACA8,extended,340403E8
+
+[Red Orbs Worth 100]
+patch=1,EE,202EACA8,extended,34040064
+
+[Red Orbs Worth 50]
+patch=1,EE,202EACA8,extended,34040032
+
+[Red Orbs Worth 20]
+patch=1,EE,202EACA8,extended,34040014
+
+[Red Orbs Worth 10]
+patch=1,EE,202EACA8,extended,3404000A
+
+[Red Orbs Worth 5]
+patch=1,EE,202EACA8,extended,34040005
+
+[Red Orbs Worth 2]
+patch=1,EE,202EACA8,extended,34040002
+
+[Max Red Orbs]
+patch=1,EE,2073168C,extended,000F423F
+
+[Buying Items Doesnt Decrease Red Orbs]
+patch=1,EE,2044ACFC,extended,00000000
+
+[Buying Items Increases Red Orbs]
+patch=1,EE,2044ACF8,extended,00431021
+
+[Buying Gun Enhancments Doesnt Decrease Red Orbs]
+patch=1,EE,2047E804,extended,00000000
+
+[Buying Gun Enhancements Increases Red Orbs]
+patch=1,EE,2047E800,extended,00651821
+
+[Have All Actions]
+patch=1,EE,40731780,extended,00080001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[P1 Press {CROSS} For Moon Jump]
+patch=1,EE,200C0220,extended,3C0141B8
+patch=1,EE,200C0224,extended,AE210064
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,C6200064
+patch=1,EE,D0666482,extended,0000BFFF
+patch=1,EE,202DA444,extended,0C030088
+patch=1,EE,D0666482,extended,0000FFFF
+patch=1,EE,202DA444,extended,C6200064
+
+[Infinite Double Jumps]
+patch=1,EE,2021C4C0,extended,00000000
+patch=1,EE,2021C4C8,extended,00000000
+
+[Unlock All Extras]
+patch=1,EE,41CB0520,extended,00040001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Low Time]
+patch=1,EE,207316F8,extended,00000000
+
+[Max Orbs]
+patch=1,EE,20731700,extended,000F423F
+
+[Max Stylish PTS.]
+patch=1,EE,207317B4,extended,4CBEBC20
+
+[No Damage]
+patch=1,EE,207316FC,extended,00000000
+
+[No Items Used]
+patch=1,EE,20731704,extended,24050000
+
+[Yellow Orbs]
+patch=1,EE,00731696,extended,00000063
+
+[Blue Orbs]
+patch=1,EE,00731697,extended,00000006
+
+[Purple Orbs]
+patch=1,EE,00731698,extended,00000007
+
+[Vital Star L]
+patch=1,EE,007316A0,extended,0000001E
+
+[Vital Star S]
+patch=1,EE,007316A1,extended,0000001E
+
+[Devil Star]
+patch=1,EE,007316A2,extended,0000000A
+
+[Holy Water]
+patch=1,EE,007316A3,extended,0000001E
+
+[Rebellion]
+patch=1,EE,007316A6,extended,00000001
+
+[Cerberus]
+patch=1,EE,007316A7,extended,00000001
+
+[Agni & Rudra]
+patch=1,EE,007316A8,extended,00000001
+
+[Nevan]
+patch=1,EE,007316AA,extended,00000001
+
+[Beowulf]
+patch=1,EE,007316AB,extended,00000001
+
+[All Devil Arms]
+patch=1,EE,107316A6,extended,00000101
+patch=1,EE,207316A8,extended,01010101
+
+[Ebony & Ivory]
+patch=1,EE,007316AC,extended,00000001
+
+[Shotgun]
+patch=1,EE,007316AD,extended,00000001
+
+[Artemis]
+patch=1,EE,007316AE,extended,00000001
+
+[Spiral]
+patch=1,EE,007316AF,extended,00000001
+
+[Kalina Ann]
+patch=1,EE,007316B1,extended,00000001
+
+[All Guns]
+patch=1,EE,207316AC,extended,01010101
+patch=1,EE,107316B0,extended,00000101
+
+[Quicksilver]
+patch=1,EE,007316B2,extended,00000001
+
+[Doppelganger]
+patch=1,EE,007316B3,extended,00000001
+
+[All Styles]
+patch=1,EE,107316B2,extended,00000101
+
+[Ebony & Ivory]
+patch=1,EE,00731716,extended,00000002
+
+[Shotgun]
+patch=1,EE,00731717,extended,00000002
+
+[Artemis]
+patch=1,EE,00731718,extended,00000002
+
+[Spiral]
+patch=1,EE,00731719,extended,00000002
+
+[Kalina Ann]
+patch=1,EE,0073171A,extended,00000002
+
+[All Guns]
+patch=1,EE,10731716,extended,00000202
+patch=1,EE,10731718,extended,00000202
+patch=1,EE,0073171A,extended,00000002
+
+[Swordmaster]
+patch=1,EE,20731734,extended,47C34F80
+
+[Gunslinger]
+patch=1,EE,20731738,extended,47C34F80
+
+[Trickster]
+patch=1,EE,2073173C,extended,47C34F80
+patch=1,EE,207317A0,extended,47C34F80
+
+[Royalguard]
+patch=1,EE,20731740,extended,47C34F80
+
+[All Styles]
+patch=1,EE,40731734,extended,00040001
+patch=1,EE,47C34F80,extended,00000000
+patch=1,EE,207317A0,extended,47C34F80
+
+[Easy-Overall]
+patch=1,EE,01CB0490,extended,00000005
+
+[Easy-Mission 1]
+patch=1,EE,01CB0491,extended,00000005
+
+[Easy-Mission 2]
+patch=1,EE,01CB0492,extended,00000005
+
+[Easy-Mission 3]
+patch=1,EE,01CB0493,extended,00000005
+
+[Easy-Mission 4]
+patch=1,EE,01CB0494,extended,00000005
+
+[Easy-Mission 5]
+patch=1,EE,01CB0495,extended,00000005
+
+[Easy-Mission 6]
+patch=1,EE,01CB0496,extended,00000005
+
+[Easy-Mission 7]
+patch=1,EE,01CB0497,extended,00000005
+
+[Easy-Mission 8]
+patch=1,EE,01CB0498,extended,00000005
+
+[Easy-Mission 9]
+patch=1,EE,01CB0499,extended,00000005
+
+[Easy-Mission 10]
+patch=1,EE,01CB049A,extended,00000005
+
+[Easy-Mission 11]
+patch=1,EE,01CB049B,extended,00000005
+
+[Easy-Mission 12]
+patch=1,EE,01CB049C,extended,00000005
+
+[Easy-Mission 13]
+patch=1,EE,01CB049D,extended,00000005
+
+[Easy-Mission 14]
+patch=1,EE,01CB049E,extended,00000005
+
+[Easy-Mission 15]
+patch=1,EE,01CB049F,extended,00000005
+
+[Easy-Mission 16]
+patch=1,EE,01CB04A0,extended,00000005
+
+[Easy-Mission 17]
+patch=1,EE,01CB04A1,extended,00000005
+
+[Easy-Mission 18]
+patch=1,EE,01CB04A2,extended,00000005
+
+[Easy-Mission 19]
+patch=1,EE,01CB04A3,extended,00000005
+
+[Easy-Mission 20]
+patch=1,EE,01CB04A4,extended,00000005
+
+[Normal-Overall]
+patch=1,EE,01CB04A5,extended,00000005
+
+[Normal-Mission 1]
+patch=1,EE,01CB04A6,extended,00000005
+
+[Normal-Mission 2]
+patch=1,EE,01CB04A7,extended,00000005
+
+[Normal-Mission 3]
+patch=1,EE,01CB04A8,extended,00000005
+
+[Normal-Mission 4]
+patch=1,EE,01CB04A9,extended,00000005
+
+[Normal-Mission 5]
+patch=1,EE,01CB04AA,extended,00000005
+
+[Normal-Mission 6]
+patch=1,EE,01CB04AB,extended,00000005
+
+[Normal-Mission 7]
+patch=1,EE,01CB04AC,extended,00000005
+
+[Normal-Mission 8]
+patch=1,EE,01CB04AD,extended,00000005
+
+[Normal-Mission 9]
+patch=1,EE,01CB04AE,extended,00000005
+
+[Normal-Mission 10]
+patch=1,EE,01CB04AF,extended,00000005
+
+[Normal-Mission 11]
+patch=1,EE,01CB04B0,extended,00000005
+
+[Normal-Mission 12]
+patch=1,EE,01CB04B1,extended,00000005
+
+[Normal-Mission 13]
+patch=1,EE,01CB04B2,extended,00000005
+
+[Normal-Mission 14]
+patch=1,EE,01CB04B3,extended,00000005
+
+[Normal-Mission 15]
+patch=1,EE,01CB04B4,extended,00000005
+
+[Normal-Mission 16]
+patch=1,EE,01CB04B5,extended,00000005
+
+[Normal-Mission 17]
+patch=1,EE,01CB04B6,extended,00000005
+
+[Normal-Mission 18]
+patch=1,EE,01CB04B7,extended,00000005
+
+[Normal-Mission 19]
+patch=1,EE,01CB04B8,extended,00000005
+
+[Normal-Mission 20]
+patch=1,EE,01CB04B9,extended,00000005
+
+[Hard-Over]
+patch=1,EE,01CB04BA,extended,00000005
+
+[Hard-Mission 1]
+patch=1,EE,01CB04BB,extended,00000005
+
+[Hard-Mission 2]
+patch=1,EE,01CB04BC,extended,00000005
+
+[Hard-Mission 3]
+patch=1,EE,01CB04BD,extended,00000005
+
+[Hard-Mission 4]
+patch=1,EE,01CB04BE,extended,00000005
+
+[Hard-Mission 5]
+patch=1,EE,01CB04BF,extended,00000005
+
+[Hard-Mission 6]
+patch=1,EE,01CB04C0,extended,00000005
+
+[Hard-Mission 7]
+patch=1,EE,01CB04C1,extended,00000005
+
+[Hard-Mission 8]
+patch=1,EE,01CB04C2,extended,00000005
+
+[Hard-Mission 9]
+patch=1,EE,01CB04C3,extended,00000005
+
+[Hard-Mission 10]
+patch=1,EE,01CB04C4,extended,00000005
+
+[Hard-Mission 11]
+patch=1,EE,01CB04C5,extended,00000005
+
+[Hard-Mission 12]
+patch=1,EE,01CB04C6,extended,00000005
+
+[Hard-Mission 13]
+patch=1,EE,01CB04C7,extended,00000005
+
+[Hard-Mission 14]
+patch=1,EE,01CB04C8,extended,00000005
+
+[Hard-Mission 15]
+patch=1,EE,01CB04C9,extended,00000005
+
+[Hard-Mission 16]
+patch=1,EE,01CB04CA,extended,00000005
+
+[Hard-Mission 17]
+patch=1,EE,01CB04CB,extended,00000005
+
+[Hard-Mission 18]
+patch=1,EE,01CB04CC,extended,00000005
+
+[Hard-Mission 19]
+patch=1,EE,01CB04CD,extended,00000005
+
+[Hard-Mission 20]
+patch=1,EE,01CB04CE,extended,00000005
+
+[Dante Must Die-Overall]
+patch=1,EE,01CB04CF,extended,00000005
+
+[Dante Must Die-Mission 1]
+patch=1,EE,01CB04D0,extended,00000005
+
+[Dante Must Die-Mission 2]
+patch=1,EE,01CB04D1,extended,00000005
+
+[Dante Must Die-Mission 3]
+patch=1,EE,01CB04D2,extended,00000005
+
+[Dante Must Die-Mission 4]
+patch=1,EE,01CB04D3,extended,00000005
+
+[Dante Must Die-Mission 5]
+patch=1,EE,01CB04D4,extended,00000005
+
+[Dante Must Die-Mission 6]
+patch=1,EE,01CB04D5,extended,00000005
+
+[Dante Must Die-Mission 7]
+patch=1,EE,01CB04D6,extended,00000005
+
+[Dante Must Die-Mission 8]
+patch=1,EE,01CB04D7,extended,00000005
+
+[Dante Must Die-Mission 9]
+patch=1,EE,01CB04D8,extended,00000005
+
+[Dante Must Die-Mission 10]
+patch=1,EE,01CB04D9,extended,00000005
+
+[Dante Must Die-Mission 11]
+patch=1,EE,01CB04DA,extended,00000005
+
+[Dante Must Die-Mission 12]
+patch=1,EE,01CB04DB,extended,00000005
+
+[Dante Must Die-Mission 13]
+patch=1,EE,01CB04DC,extended,00000005
+
+[Dante Must Die-Mission 14]
+patch=1,EE,01CB04DD,extended,00000005
+
+[Dante Must Die-Mission 15]
+patch=1,EE,01CB04DE,extended,00000005
+
+[Dante Must Die-Mission 16]
+patch=1,EE,01CB04DF,extended,00000005
+
+[Dante Must Die-Mission 17]
+patch=1,EE,01CB04E0,extended,00000005
+
+[Dante Must Die-Mission 18]
+patch=1,EE,01CB04E1,extended,00000005
+
+[Dante Must Die-Mission 19]
+patch=1,EE,01CB04E2,extended,00000005
+
+[Dante Must Die-Mission 20]
+patch=1,EE,01CB04E3,extended,00000005
+
+[Heaven Or Hell-Overall]
+patch=1,EE,01CB04E4,extended,00000005
+
+[Heaven Or Hell-Mission 1]
+patch=1,EE,01CB04E5,extended,00000005
+
+[Heaven Or Hell-Mission 2]
+patch=1,EE,01CB04E6,extended,00000005
+
+[Heaven Or Hell-Mission 3]
+patch=1,EE,01CB04E7,extended,00000005
+
+[Heaven Or Hell-Mission 4]
+patch=1,EE,01CB04E8,extended,00000005
+
+[Heaven Or Hell-Mission 5]
+patch=1,EE,01CB04E9,extended,00000005
+
+[Heaven Or Hell-Mission 6]
+patch=1,EE,01CB04EA,extended,00000005
+
+[Heaven Or Hell-Mission 7]
+patch=1,EE,01CB04EB,extended,00000005
+
+[Heaven Or Hell-Mission 8]
+patch=1,EE,01CB04EC,extended,00000005
+
+[Heaven Or Hell-Mission 9]
+patch=1,EE,01CB04ED,extended,00000005
+
+[Heaven Or Hell-Mission 10]
+patch=1,EE,01CB04EE,extended,00000005
+
+[Heaven Or Hell-Mission 11]
+patch=1,EE,01CB04EF,extended,00000005
+
+[Heaven Or Hell-Mission 12]
+patch=1,EE,01CB04F0,extended,00000005
+
+[Heaven Or Hell-Mission 13]
+patch=1,EE,01CB04F1,extended,00000005
+
+[Heaven Or Hell-Mission 14]
+patch=1,EE,01CB04F2,extended,00000005
+
+[Heaven Or Hell-Mission 15]
+patch=1,EE,01CB04F3,extended,00000005
+
+[Heaven Or Hell-Mission 16]
+patch=1,EE,01CB04F4,extended,00000005
+
+[Heaven Or Hell-Mission 17]
+patch=1,EE,01CB04F5,extended,00000005
+
+[Heaven Or Hell-Mission 18]
+patch=1,EE,01CB04F6,extended,00000005
+
+[Heaven Or Hell-Mission 19]
+patch=1,EE,01CB04F7,extended,00000005
+
+[Heaven Or Hell-Mission 20]
+patch=1,EE,01CB04F8,extended,00000005
+
+[All Missions Completed]
+patch=1,EE,41CB0490,extended,001A0001
+patch=1,EE,05050505,extended,00000000
+patch=1,EE,11CB04F8,extended,00000505

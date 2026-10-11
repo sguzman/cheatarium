@@ -1,0 +1,288 @@
+gametitle=007 Agent Under Fire (SLUS-20265)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9034539C,extended,0C04EC72
+patch=1,EE,90277E24,extended,0C090ABB
+
+[Never Reload]
+patch=1,EE,D01200B4,extended,10001DC0
+patch=1,EE,202D7C48,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,D01200B4,extended,10001DC0
+patch=1,EE,20258300,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,D01200B4,extended,10001DC0
+patch=1,EE,202582F8,extended,00451021
+
+[Infinite Health]
+patch=1,EE,E0051DC0,extended,001200B4
+patch=1,EE,200C0220,extended,3C0143FA
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC6102EC
+patch=1,EE,202730EC,extended,0C030088
+patch=1,EE,202730F0,extended,46020034
+
+[Start With 9 Lives]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F610,extended,00000009
+
+[Infinite Lives]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20412248,extended,00000000
+
+[Default Analog Stick Controls (Like Halo)]
+patch=1,EE,E0041DC0,extended,001200B4
+patch=1,EE,00132114,extended,00000024
+patch=1,EE,00132124,extended,00000027
+patch=1,EE,00132134,extended,00000026
+patch=1,EE,00132144,extended,00000025
+
+[Southpaw Analog Stick Controls (Like Halo)]
+patch=1,EE,E0041DC0,extended,001200B4
+patch=1,EE,00132114,extended,00000024
+patch=1,EE,00132124,extended,00000025
+patch=1,EE,00132134,extended,00000026
+patch=1,EE,00132144,extended,00000027
+
+[Legacy Soutpaw Analog Stick Controls (Like Halo)]
+patch=1,EE,E0041DC0,extended,001200B4
+patch=1,EE,00132114,extended,00000026
+patch=1,EE,00132124,extended,00000025
+patch=1,EE,00132134,extended,00000024
+patch=1,EE,00132144,extended,00000027
+
+[Unlock All Levels]
+patch=1,EE,E0021DC0,extended,001200B4
+patch=1,EE,40381230,extended,000C0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Rewards]
+patch=1,EE,E0021DC0,extended,001200B4
+patch=1,EE,4037F790,extended,00180001
+patch=1,EE,00000001,extended,00000000
+
+[Max Score-All Levels]
+patch=1,EE,E0021DC0,extended,001200B4
+patch=1,EE,4037F7F0,extended,000C0002
+patch=1,EE,05F5E0FF,extended,00000000
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381230,extended,00000001
+
+[Unlocked-MP Map-Rocket Manor]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F790,extended,00000001
+
+[Unlocked-Golden Gun]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7C0,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7F0,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381234,extended,00000001
+
+[Unlock-MP Game Mode-Golden Gun]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F794,extended,00000001
+
+[Unlocked-Golden CH-6]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7C4,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7F8,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381238,extended,00000001
+
+[Unlock-MP Model-Stealth Bond]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F798,extended,00000001
+
+[Unlocked-Unlimited Missiles]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7C8,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F800,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2038123C,extended,00000001
+
+[Unlock-MP Powerup-Gravity Boots]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F79C,extended,00000001
+
+[Unlocked-Golden Accuracy]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7CC,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F808,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381240,extended,00000001
+
+[Unlock-MP Model-Guard]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7A0,extended,00000001
+
+[Unlocked-Golden Clip]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7D0,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F810,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381244,extended,00000001
+
+[Unlock-MP Weapon-Viper]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7A4,extended,00000001
+
+[Unlocked-Golden Grenades]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7D4,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F818,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381248,extended,00000001
+
+[Unlock-MP Model-Alpine Guard]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7A8,extended,00000001
+
+[Unlocked-Lotus Esprit]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7D8,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F820,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2038124C,extended,00000001
+
+[Unlock-MP Weapon-Calypso]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7AC,extended,00000001
+
+[Unlocked-Rapid Fire]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7DC,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F828,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381250,extended,00000001
+
+[Unlock-MP Modifier-Full Arsenal]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7B0,extended,00000001
+
+[Unlocked-Golden Armor]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7E0,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F830,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381254,extended,00000001
+
+[Unlock-MP Model-Cyclops Oil Guard]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7B4,extended,00000001
+
+[Unlocked-Golden Bullets]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7E4,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F838,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,20381258,extended,00000001
+
+[Unlock-MP Model-Poseidon Guard]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7B8,extended,00000001
+
+[Unlocked-Regenerative Armor]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7E8,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F840,extended,05F5E0FF
+
+[Unlock Level]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2038125C,extended,00000001
+
+[Unlock-MP Model-Carrier Guard]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7BC,extended,00000001
+
+[Unlocked-Unlimited Ammo]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F7EC,extended,00000001
+
+[Max High Score]
+patch=1,EE,D01200B4,extended,00001DC0
+patch=1,EE,2037F848,extended,05F5E0FF
+
+[Never Reload]
+patch=1,EE,D01040A0,extended,100095E0
+patch=1,EE,201538B8,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,D01040A0,extended,100095E0
+patch=1,EE,20153880,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,D01040A0,extended,100095E0
+patch=1,EE,1015387C,extended,00000001
+
+[Infinite Health]
+patch=1,EE,E00595E0,extended,001040A0
+patch=1,EE,200C0220,extended,3C01453B
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,AC410008
+patch=1,EE,2017BB34,extended,0C030088
+patch=1,EE,2017BB38,extended,46031034
+
+[Infinite Lives]
+patch=1,EE,D01040A0,extended,100095E0
+patch=1,EE,2010009C,extended,0000000A

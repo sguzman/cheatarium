@@ -1,0 +1,950 @@
+gametitle=Hot Shots Golf Fore! (SCUS-97401)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F010027C,extended,00230963
+
+[Max Points]
+patch=1,EE,205127D8,extended,000F423F
+patch=1,EE,205127DC,extended,000F423F
+
+[Shots Worth 10]
+patch=1,EE,1055F3F4,extended,0000000A
+
+[Shots Worth 5]
+patch=1,EE,1055F3F4,extended,00000005
+
+[Shots Worth 4]
+patch=1,EE,1055F3F4,extended,00000004
+
+[Shots Worth 3]
+patch=1,EE,1055F3F4,extended,00000003
+
+[Shots Worth 2]
+patch=1,EE,1055F3F4,extended,00000002
+
+[Max Shop Points]
+patch=1,EE,2051BED0,extended,000F423F
+
+[Max Pinch-Hit Coupons]
+patch=1,EE,0051BF0F,extended,00000063
+
+[Always No Wind]
+patch=1,EE,206CDAB4,extended,00000000
+
+[Infinite Power Shots (All Players)]
+patch=1,EE,20563418,extended,00000000
+
+[Infinite Power Shots P1]
+patch=1,EE,2051BD00,extended,0000000A
+
+[No Power Shots P1]
+patch=1,EE,2051BD00,extended,00000000
+
+[Infinite Power Shots P2]
+patch=1,EE,2051BD38,extended,0000000A
+
+[No Power Shots P2]
+patch=1,EE,2051BD38,extended,00000000
+
+[Infinite Power Shots P3]
+patch=1,EE,2051BD70,extended,0000000A
+
+[No Power Shots P3]
+patch=1,EE,2051BD70,extended,00000000
+
+[Infinite Power Shots P4]
+patch=1,EE,2051BDA8,extended,0000000A
+
+[No Power Shots P4]
+patch=1,EE,2051BDA8,extended,00000000
+
+[Buying Items In Shop Doesnt Decrease Points]
+patch=1,EE,202E4A88,extended,00000000
+
+[Buying Items In Shop Increases Points]
+patch=1,EE,202E4A80,extended,00451021
+
+[Unlock All Loading Messages (Options Menu)]
+patch=1,EE,2051C030,extended,FFFFFFFF
+patch=1,EE,2051C034,extended,FFFFFFFF
+
+[Unlock All Movie Theater (Options Menu)]
+patch=1,EE,0051C03B,extended,000000FF
+
+[Max No. Of Games Played]
+patch=1,EE,2051BEA4,extended,0000270F
+
+[No Games Played Yet]
+patch=1,EE,2051BEA4,extended,00000000
+
+[Max No. Of Wins]
+patch=1,EE,1051BEA8,extended,0000270F
+
+[No Wins Recorded Yet]
+patch=1,EE,1051BEA8,extended,00000000
+
+[Phoebe]
+patch=1,EE,0051BED5,extended,00000005
+
+[Mike]
+patch=1,EE,0051BED6,extended,00000005
+
+[Emma]
+patch=1,EE,0051BED7,extended,00000005
+
+[Sam]
+patch=1,EE,0051BED8,extended,00000005
+
+[Misaki]
+patch=1,EE,0051BED9,extended,00000005
+
+[Brad]
+patch=1,EE,0051BEDA,extended,00000005
+
+[Chaos]
+patch=1,EE,0051BEDB,extended,00000005
+
+[Regis]
+patch=1,EE,0051BEDC,extended,00000005
+
+[Maya]
+patch=1,EE,0051BEDD,extended,00000005
+
+[Falcon]
+patch=1,EE,0051BEDE,extended,00000005
+
+[Renee]
+patch=1,EE,0051BEDF,extended,00000005
+
+[Z]
+patch=1,EE,0051BEE0,extended,00000005
+
+[Mel]
+patch=1,EE,0051BEE1,extended,00000005
+
+[Allan]
+patch=1,EE,0051BEE2,extended,00000005
+
+[Tiffany]
+patch=1,EE,0051BEE3,extended,00000005
+
+[Kamala]
+patch=1,EE,0051BEE4,extended,00000005
+
+[Toni]
+patch=1,EE,0051BEE5,extended,00000005
+
+[T-Bone]
+patch=1,EE,0051BEE6,extended,00000005
+
+[Lin]
+patch=1,EE,0051BEE7,extended,00000005
+
+[Louise]
+patch=1,EE,0051BEE8,extended,00000005
+
+[Zeus]
+patch=1,EE,0051BEE9,extended,00000005
+
+[Hubert]
+patch=1,EE,0051BEEA,extended,00000005
+
+[All Costumes]
+patch=1,EE,0051BED5,extended,00000005
+patch=1,EE,1051BED6,extended,00000505
+patch=1,EE,4051BED8,extended,00040001
+patch=1,EE,05050505,extended,00000000
+patch=1,EE,1051BEE8,extended,00000505
+patch=1,EE,0051BEEA,extended,00000005
+
+[Macaw]
+patch=1,EE,0051BEED,extended,00000005
+
+[Tumbleweed]
+patch=1,EE,0051BEEE,extended,00000005
+
+[Pirarucu]
+patch=1,EE,0051BEEF,extended,00000005
+
+[Pirate Ship]
+patch=1,EE,0051BEF0,extended,00000005
+
+[Panda]
+patch=1,EE,0051BEF1,extended,00000005
+
+[Hippo]
+patch=1,EE,0051BEF2,extended,00000005
+
+[Hermit]
+patch=1,EE,0051BEF3,extended,00000005
+
+[Super Jet]
+patch=1,EE,0051BEF4,extended,00000005
+
+[Parasailer]
+patch=1,EE,0051BEF5,extended,00000005
+
+[Mystery Train]
+patch=1,EE,0051BEF6,extended,00000005
+
+[Balloon]
+patch=1,EE,0051BEF7,extended,00000005
+
+[All Capsules]
+patch=1,EE,0051BEED,extended,00000005
+patch=1,EE,1051BEEE,extended,00000505
+patch=1,EE,2051BEF0,extended,05050505
+patch=1,EE,2051BEF4,extended,05050505
+
+[Wallpaper Set 1]
+patch=1,EE,0051BEF8,extended,00000005
+
+[Wallpaper Set 2]
+patch=1,EE,0051BEF9,extended,00000005
+
+[HSG CD/Music]
+patch=1,EE,0051BEFA,extended,00000005
+
+[HSG CD/Voice]
+patch=1,EE,0051BEFB,extended,00000005
+
+[HSG Rules]
+patch=1,EE,0051BEFC,extended,00000005
+
+[Hecklets]
+patch=1,EE,0051BEFD,extended,00000005
+
+[Voice Changer]
+patch=1,EE,0051BEFE,extended,00000005
+
+[Landing Grid]
+patch=1,EE,0051BEFF,extended,00000005
+
+[Extra Video]
+patch=1,EE,0051BF00,extended,00000005
+
+[Replay Cam A]
+patch=1,EE,0051BF01,extended,00000005
+
+[Replay Cam B]
+patch=1,EE,0051BF02,extended,00000005
+
+[Replay Cam C]
+patch=1,EE,0051BF03,extended,00000005
+
+[Etra Pose Cam]
+patch=1,EE,0051BF04,extended,00000005
+
+[Extra Swing Cam]
+patch=1,EE,0051BF05,extended,00000005
+
+[Hot Tip 1]
+patch=1,EE,0051BF06,extended,00000005
+
+[Hot Tip 2]
+patch=1,EE,0051BF07,extended,00000005
+
+[Hot Tip 3]
+patch=1,EE,0051BF08,extended,00000005
+
+[Hot Tip 4]
+patch=1,EE,0051BF09,extended,00000005
+
+[Hot Tip 5]
+patch=1,EE,0051BF0A,extended,00000005
+
+[Menu Phoebe]
+patch=1,EE,0051BF0B,extended,00000005
+
+[Menu Brad]
+patch=1,EE,0051BF0C,extended,00000005
+
+[Menu Renee]
+patch=1,EE,0051BF0D,extended,00000005
+
+[All Other]
+patch=1,EE,1051BF0C,extended,00000505
+patch=1,EE,4051BEF8,extended,00060001
+patch=1,EE,05050505,extended,00000000
+
+[Standard]
+patch=1,EE,0051BF18,extended,00000001
+
+[Beginners]
+patch=1,EE,0051BF19,extended,00000001
+
+[Big Air]
+patch=1,EE,0051BF1A,extended,00000001
+
+[Pin Hole]
+patch=1,EE,0051BF1B,extended,00000001
+
+[Turbo Spin]
+patch=1,EE,0051BF1C,extended,00000001
+
+[Infinity]
+patch=1,EE,0051BF1D,extended,00000001
+
+[100t Hammer]
+patch=1,EE,0051BF1E,extended,00000001
+
+[Everybody's]
+patch=1,EE,0051BF1F,extended,00000001
+
+[All Clubs]
+patch=1,EE,2051BF18,extended,01010101
+patch=1,EE,2051BF1C,extended,01010101
+
+[Standard]
+patch=1,EE,0051BF20,extended,00000005
+
+[Beginners]
+patch=1,EE,0051BF21,extended,00000005
+
+[Big Air]
+patch=1,EE,0051BF22,extended,00000005
+
+[Pin Hole]
+patch=1,EE,0051BF23,extended,00000005
+
+[Turbo Spin]
+patch=1,EE,0051BF24,extended,00000005
+
+[Infinity]
+patch=1,EE,0051BF25,extended,00000005
+
+[Sidespin]
+patch=1,EE,0051BF26,extended,00000005
+
+[Straight]
+patch=1,EE,0051BF27,extended,00000005
+
+[All Balls]
+patch=1,EE,2051BF20,extended,05050505
+patch=1,EE,2051BF24,extended,05050505
+
+[Mini-Golf 2]
+patch=1,EE,0051BED4,extended,00000005
+
+[Mt. Sakura C.C.]
+patch=1,EE,0051BF28,extended,00000005
+
+[Aloha Beach Resort]
+patch=1,EE,0051BF29,extended,00000005
+
+[Western Valley C.C.]
+patch=1,EE,0051BF2A,extended,00000005
+
+[Bagpipe Classic]
+patch=1,EE,0051BF2B,extended,00000005
+
+[United Forest G.C.]
+patch=1,EE,0051BF2C,extended,00000005
+
+[Northern Fox C.C.]
+patch=1,EE,0051BF2D,extended,00000005
+
+[Day Dream G.C.]
+patch=1,EE,0051BF2E,extended,00000005
+
+[Wild Green C.C.]
+patch=1,EE,0051BF2F,extended,00000005
+
+[Silk Road Classic]
+patch=1,EE,0051BF30,extended,00000005
+
+[Blue Lagoon C.C.]
+patch=1,EE,0051BF31,extended,00000005
+
+[Fujizakura C.C.]
+patch=1,EE,0051BF32,extended,00000005
+
+[Kawana Hotel G.C.]
+patch=1,EE,0051BF33,extended,00000005
+
+[Samurai Golf Club]
+patch=1,EE,0051BF34,extended,00000005
+
+[All Courses]
+patch=1,EE,0051BED4,extended,00000005
+patch=1,EE,4051BF28,extended,00030001
+patch=1,EE,05050505,extended,00000000
+patch=1,EE,0051BF34,extended,00000005
+
+[Amy]
+patch=1,EE,0051BF5C,extended,00000005
+
+[Bertha]
+patch=1,EE,0051BF5D,extended,00000005
+
+[Kayla]
+patch=1,EE,0051BF5E,extended,00000005
+
+[Greg]
+patch=1,EE,0051BF5F,extended,00000005
+
+[Simon]
+patch=1,EE,0051BF60,extended,00000005
+
+[Sophie]
+patch=1,EE,0051BF61,extended,00000005
+
+[Kaz]
+patch=1,EE,0051BF62,extended,00000005
+
+[Mochi]
+patch=1,EE,0051BF63,extended,00000005
+
+[Clank]
+patch=1,EE,0051BF64,extended,00000005
+
+[Daxter]
+patch=1,EE,0051BF65,extended,00000005
+
+[All Caddies]
+patch=1,EE,2051BF5C,extended,05050505
+patch=1,EE,2051BF60,extended,05050505
+patch=1,EE,1051BF64,extended,00000505
+
+[Phoebe]
+patch=1,EE,0051BF70,extended,00000002
+
+[Mike]
+patch=1,EE,0051BF71,extended,00000002
+
+[Emma]
+patch=1,EE,0051BF72,extended,00000002
+
+[Sam]
+patch=1,EE,0051BF73,extended,00000002
+
+[Misaki]
+patch=1,EE,0051BF74,extended,00000002
+
+[Brad]
+patch=1,EE,0051BF75,extended,00000002
+
+[Chaos]
+patch=1,EE,0051BF76,extended,00000002
+
+[Regis]
+patch=1,EE,0051BF77,extended,00000002
+
+[Maya]
+patch=1,EE,0051BF78,extended,00000002
+
+[Falcon]
+patch=1,EE,0051BF79,extended,00000002
+
+[Renee]
+patch=1,EE,0051BF7A,extended,00000002
+
+[Z]
+patch=1,EE,0051BF7B,extended,00000002
+
+[Mel]
+patch=1,EE,0051BF7C,extended,00000002
+
+[Alan]
+patch=1,EE,0051BF7D,extended,00000002
+
+[Tiffany]
+patch=1,EE,0051BF7E,extended,00000002
+
+[Kamala]
+patch=1,EE,0051BF7F,extended,00000002
+
+[Toni]
+patch=1,EE,0051BF80,extended,00000002
+
+[T-Bone]
+patch=1,EE,0051BF81,extended,00000002
+
+[Lin]
+patch=1,EE,0051BF82,extended,00000002
+
+[Louise]
+patch=1,EE,0051BF83,extended,00000002
+
+[Zeus]
+patch=1,EE,0051BF84,extended,00000002
+
+[Hubert]
+patch=1,EE,0051BF85,extended,00000002
+
+[Ratchet]
+patch=1,EE,0051BF86,extended,00000002
+
+[Jak]
+patch=1,EE,0051BF87,extended,00000002
+
+[All Characters]
+patch=1,EE,4050BF70,extended,00060001
+patch=1,EE,02020202,extended,00000000
+
+[Hole 1]
+patch=1,EE,2051250C,extended,00000001
+
+[Hole 2]
+patch=1,EE,20512534,extended,00000001
+
+[Hole 3]
+patch=1,EE,2051255C,extended,00000001
+
+[Hole 4]
+patch=1,EE,20512584,extended,00000001
+
+[Hole 5]
+patch=1,EE,205125AC,extended,00000001
+
+[Hole 6]
+patch=1,EE,205125D4,extended,00000001
+
+[Hole 7]
+patch=1,EE,205125FC,extended,00000001
+
+[Hole 8]
+patch=1,EE,20512624,extended,00000001
+
+[Hole 9]
+patch=1,EE,2051264C,extended,00000001
+
+[Hole 10]
+patch=1,EE,20512674,extended,00000001
+
+[Hole 11]
+patch=1,EE,2051269C,extended,00000001
+
+[Hole 12]
+patch=1,EE,205126C4,extended,00000001
+
+[Hole 13]
+patch=1,EE,205126EC,extended,00000001
+
+[Hole 14]
+patch=1,EE,20512714,extended,00000001
+
+[Hole 15]
+patch=1,EE,2051273C,extended,00000001
+
+[Hole 16]
+patch=1,EE,20512764,extended,00000001
+
+[Hole 17]
+patch=1,EE,2051278C,extended,00000001
+
+[Hole 18]
+patch=1,EE,205127B4,extended,00000001
+
+[All Holes]
+patch=1,EE,4051250C,extended,0012000A
+patch=1,EE,00000001,extended,00000000
+
+[Hole 1]
+patch=1,EE,2051250C,extended,00000009
+
+[Hole 2]
+patch=1,EE,20512534,extended,00000009
+
+[Hole 3]
+patch=1,EE,2051255C,extended,00000009
+
+[Hole 4]
+patch=1,EE,20512584,extended,00000009
+
+[Hole 5]
+patch=1,EE,205125AC,extended,00000009
+
+[Hole 6]
+patch=1,EE,205125D4,extended,00000009
+
+[Hole 7]
+patch=1,EE,205125FC,extended,00000009
+
+[Hole 8]
+patch=1,EE,20512624,extended,00000009
+
+[Hole 9]
+patch=1,EE,2051264C,extended,00000009
+
+[Hole 10]
+patch=1,EE,20512674,extended,00000009
+
+[Hole 11]
+patch=1,EE,2051269C,extended,00000009
+
+[Hole 12]
+patch=1,EE,205126C4,extended,00000009
+
+[Hole 13]
+patch=1,EE,205126EC,extended,00000009
+
+[Hole 14]
+patch=1,EE,20512714,extended,00000009
+
+[Hole 15]
+patch=1,EE,2051273C,extended,00000009
+
+[Hole 16]
+patch=1,EE,20512764,extended,00000009
+
+[Hole 17]
+patch=1,EE,2051278C,extended,00000009
+
+[Hole 18]
+patch=1,EE,205127B4,extended,00000009
+
+[All Holes]
+patch=1,EE,4051250C,extended,0012000A
+patch=1,EE,00000009,extended,00000000
+
+[Hole 1]
+patch=1,EE,20512884,extended,00000001
+
+[Hole 2]
+patch=1,EE,205128AC,extended,00000001
+
+[Hole 3]
+patch=1,EE,205128D4,extended,00000001
+
+[Hole 4]
+patch=1,EE,205128FC,extended,00000001
+
+[Hole 5]
+patch=1,EE,20512924,extended,00000001
+
+[Hole 6]
+patch=1,EE,2051294C,extended,00000001
+
+[Hole 7]
+patch=1,EE,20512974,extended,00000001
+
+[Hole 8]
+patch=1,EE,2051299C,extended,00000001
+
+[Hole 9]
+patch=1,EE,205129C4,extended,00000001
+
+[Hole 10]
+patch=1,EE,205129EC,extended,00000001
+
+[Hole 11]
+patch=1,EE,20512A14,extended,00000001
+
+[Hole 12]
+patch=1,EE,20512A3C,extended,00000001
+
+[Hole 13]
+patch=1,EE,20512A64,extended,00000001
+
+[Hole 14]
+patch=1,EE,20512A8C,extended,00000001
+
+[Hole 15]
+patch=1,EE,20512AB4,extended,00000001
+
+[Hole 16]
+patch=1,EE,20512ADC,extended,00000001
+
+[Hole 17]
+patch=1,EE,20512B04,extended,00000001
+
+[Hole 18]
+patch=1,EE,20512B2C,extended,00000001
+
+[All Holes]
+patch=1,EE,40512884,extended,0012000A
+patch=1,EE,00000001,extended,00000000
+
+[Hole 1]
+patch=1,EE,20512884,extended,00000009
+
+[Hole 2]
+patch=1,EE,205128AC,extended,00000009
+
+[Hole 3]
+patch=1,EE,205128D4,extended,00000009
+
+[Hole 4]
+patch=1,EE,205128FC,extended,00000009
+
+[Hole 5]
+patch=1,EE,20512924,extended,00000009
+
+[Hole 6]
+patch=1,EE,2051294C,extended,00000009
+
+[Hole 7]
+patch=1,EE,20512974,extended,00000009
+
+[Hole 8]
+patch=1,EE,2051299C,extended,00000009
+
+[Hole 9]
+patch=1,EE,205129C4,extended,00000009
+
+[Hole 10]
+patch=1,EE,205129EC,extended,00000009
+
+[Hole 11]
+patch=1,EE,20512A14,extended,00000009
+
+[Hole 12]
+patch=1,EE,20512A3C,extended,00000009
+
+[Hole 13]
+patch=1,EE,20512A64,extended,00000009
+
+[Hole 14]
+patch=1,EE,20512A8C,extended,00000009
+
+[Hole 15]
+patch=1,EE,20512AB4,extended,00000009
+
+[Hole 16]
+patch=1,EE,20512ADC,extended,00000009
+
+[Hole 17]
+patch=1,EE,20512B04,extended,00000009
+
+[Hole 18]
+patch=1,EE,20512B2C,extended,00000009
+
+[All Holes]
+patch=1,EE,40512884,extended,0012000A
+patch=1,EE,00000009,extended,00000000
+
+[Hole 1]
+patch=1,EE,20512BFC,extended,00000001
+
+[Hole 2]
+patch=1,EE,20512C24,extended,00000001
+
+[Hole 3]
+patch=1,EE,20512C4C,extended,00000001
+
+[Hole 4]
+patch=1,EE,20512C74,extended,00000001
+
+[Hole 5]
+patch=1,EE,20512C9C,extended,00000001
+
+[Hole 6]
+patch=1,EE,20512CC4,extended,00000001
+
+[Hole 7]
+patch=1,EE,20512CEC,extended,00000001
+
+[Hole 8]
+patch=1,EE,20512D14,extended,00000001
+
+[Hole 9]
+patch=1,EE,20512D3C,extended,00000001
+
+[Hole 10]
+patch=1,EE,20512D64,extended,00000001
+
+[Hole 11]
+patch=1,EE,20512D8C,extended,00000001
+
+[Hole 12]
+patch=1,EE,20512DB4,extended,00000001
+
+[Hole 13]
+patch=1,EE,20512DDC,extended,00000001
+
+[Hole 14]
+patch=1,EE,20512E04,extended,00000001
+
+[Hole 15]
+patch=1,EE,20512E2C,extended,00000001
+
+[Hole 16]
+patch=1,EE,20512E54,extended,00000001
+
+[Hole 17]
+patch=1,EE,20512E7C,extended,00000001
+
+[Hole 18]
+patch=1,EE,20512EA4,extended,00000001
+
+[All Holes]
+patch=1,EE,40512BFC,extended,0012000A
+patch=1,EE,00000001,extended,00000000
+
+[Hole 1]
+patch=1,EE,20512BFC,extended,00000009
+
+[Hole 2]
+patch=1,EE,20512C24,extended,00000009
+
+[Hole 3]
+patch=1,EE,20512C4C,extended,00000009
+
+[Hole 4]
+patch=1,EE,20512C74,extended,00000009
+
+[Hole 5]
+patch=1,EE,20512C9C,extended,00000009
+
+[Hole 6]
+patch=1,EE,20512CC4,extended,00000009
+
+[Hole 7]
+patch=1,EE,20512CEC,extended,00000009
+
+[Hole 8]
+patch=1,EE,20512D14,extended,00000009
+
+[Hole 9]
+patch=1,EE,20512D3C,extended,00000009
+
+[Hole 10]
+patch=1,EE,20512D64,extended,00000009
+
+[Hole 11]
+patch=1,EE,20512D8C,extended,00000009
+
+[Hole 12]
+patch=1,EE,20512DB4,extended,00000009
+
+[Hole 13]
+patch=1,EE,20512DDC,extended,00000009
+
+[Hole 14]
+patch=1,EE,20512E04,extended,00000009
+
+[Hole 15]
+patch=1,EE,20512E2C,extended,00000009
+
+[Hole 16]
+patch=1,EE,20512E54,extended,00000009
+
+[Hole 17]
+patch=1,EE,20512E7C,extended,00000009
+
+[Hole 18]
+patch=1,EE,20512EA4,extended,00000009
+
+[All Holes]
+patch=1,EE,40512BFC,extended,0012000A
+patch=1,EE,00000009,extended,00000000
+
+[Hole 1]
+patch=1,EE,20512F74,extended,00000001
+
+[Hole 2]
+patch=1,EE,20512F9C,extended,00000001
+
+[Hole 3]
+patch=1,EE,20512FC4,extended,00000001
+
+[Hole 4]
+patch=1,EE,20512FEC,extended,00000001
+
+[Hole 5]
+patch=1,EE,20513014,extended,00000001
+
+[Hole 6]
+patch=1,EE,2051303C,extended,00000001
+
+[Hole 7]
+patch=1,EE,20513064,extended,00000001
+
+[Hole 8]
+patch=1,EE,2051308C,extended,00000001
+
+[Hole 9]
+patch=1,EE,205130B4,extended,00000001
+
+[Hole 10]
+patch=1,EE,205130DC,extended,00000001
+
+[Hole 11]
+patch=1,EE,20513104,extended,00000001
+
+[Hole 12]
+patch=1,EE,2051312C,extended,00000001
+
+[Hole 13]
+patch=1,EE,20513154,extended,00000001
+
+[Hole 14]
+patch=1,EE,2051317C,extended,00000001
+
+[Hole 15]
+patch=1,EE,205131A4,extended,00000001
+
+[Hole 16]
+patch=1,EE,205131CC,extended,00000001
+
+[Hole 17]
+patch=1,EE,205131F4,extended,00000001
+
+[Hole 18]
+patch=1,EE,2051321C,extended,00000001
+
+[All Holes]
+patch=1,EE,40512F74,extended,0012000A
+patch=1,EE,00000001,extended,00000000
+
+[Hole 1]
+patch=1,EE,20512F74,extended,00000009
+
+[Hole 2]
+patch=1,EE,20512F9C,extended,00000009
+
+[Hole 3]
+patch=1,EE,20512FC4,extended,00000009
+
+[Hole 4]
+patch=1,EE,20512FEC,extended,00000009
+
+[Hole 5]
+patch=1,EE,20513014,extended,00000009
+
+[Hole 6]
+patch=1,EE,2051303C,extended,00000009
+
+[Hole 7]
+patch=1,EE,20513064,extended,00000009
+
+[Hole 8]
+patch=1,EE,2051308C,extended,00000009
+
+[Hole 9]
+patch=1,EE,205130B4,extended,00000009
+
+[Hole 10]
+patch=1,EE,205130DC,extended,00000009
+
+[Hole 11]
+patch=1,EE,20513104,extended,00000009
+
+[Hole 12]
+patch=1,EE,2051312C,extended,00000009
+
+[Hole 13]
+patch=1,EE,20513154,extended,00000009
+
+[Hole 14]
+patch=1,EE,2051317C,extended,00000009
+
+[Hole 15]
+patch=1,EE,205131A4,extended,00000009
+
+[Hole 16]
+patch=1,EE,205131CC,extended,00000009
+
+[Hole 17]
+patch=1,EE,205131F4,extended,00000009
+
+[Hole 18]
+patch=1,EE,2051321C,extended,00000009
+
+[All Holes]
+patch=1,EE,40512F74,extended,0012000A
+patch=1,EE,00000009,extended,00000000

@@ -1,0 +1,68 @@
+gametitle=NHL Hitz 20-03 (SLUS-20438)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90469D14,extended,0C11C077
+
+[Goal's Score 10]
+patch=1,EE,102AF744,extended,0000000A
+
+[Goal's Score 5]
+patch=1,EE,102AF744,extended,00000005
+
+[Goal's Score 2]
+patch=1,EE,102AF744,extended,00000002
+
+[All Goal's Score For Home Team]
+patch=1,EE,202AF734,extended,24040000
+
+[All Goal's Score For Away Team]
+patch=1,EE,202AF734,extended,24040004
+
+[Disable Checking]
+patch=1,EE,2026C7F0,extended,03E00008
+patch=1,EE,2026C7F4,extended,00000000
+
+[Infinite Turbo (All Players)]
+patch=1,EE,20272C94,extended,00000000
+patch=1,EE,20272D9C,extended,00000000
+patch=1,EE,20272DD0,extended,00000000
+patch=1,EE,2027301C,extended,00000000
+
+[Home Team Always Full Fire Meter]
+patch=1,EE,200C0220,extended,24010064
+patch=1,EE,200C0224,extended,AC4100D0
+patch=1,EE,200C0228,extended,24010001
+patch=1,EE,200C022C,extended,080DFBCD
+patch=1,EE,200C0230,extended,AC4100D4
+patch=1,EE,2037EEF4,extended,00A01021
+patch=1,EE,2037EEF8,extended,08030088
+
+[Away Team Always Full Fire Meter]
+patch=1,EE,200C0240,extended,24010064
+patch=1,EE,200C0244,extended,AC4100D0
+patch=1,EE,200C0248,extended,24010001
+patch=1,EE,200C024C,extended,080DFC11
+patch=1,EE,200C0250,extended,AC4100D4
+patch=1,EE,2037EFE8,extended,00A01021
+patch=1,EE,2037EFEC,extended,08030090
+
+[Replay Always On]
+patch=1,EE,207211A8,extended,00000001
+
+[Replay Always Off]
+patch=1,EE,207211A8,extended,00000000
+
+[Offsides Always On]
+patch=1,EE,20721474,extended,00000001
+
+[Offsides Always Off]
+patch=1,EE,20721474,extended,00000000
+
+[High Max Turbo]
+patch=1,EE,20721F84,extended,447A0000
+
+[Super Max Puck Speed]
+patch=1,EE,20728358,extended,447A0000

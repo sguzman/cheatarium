@@ -1,0 +1,1058 @@
+gametitle=SWAT Global Strike Team (SLUS-20433)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902F33B4,extended,0C0E3801
+
+[Max Weapon Customize Points Available]
+patch=1,EE,21B23F40,extended,0000270F
+
+[Infinite Continues]
+patch=1,EE,01B2B9A9,extended,00000009
+
+[Extra Continues]
+patch=1,EE,203BCBFC,extended,00621821
+
+[Unlock All Extras]
+patch=1,EE,01B2BC10,extended,000000FF
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,3C01447A
+patch=1,EE,200C0224,extended,080A39C0
+patch=1,EE,200C0228,extended,AC810130
+patch=1,EE,20226D28,extended,0C030088
+
+[Infinite Health (Partner)]
+patch=1,EE,200C0230,extended,3C01447A
+patch=1,EE,200C0234,extended,080A39C0
+patch=1,EE,200C0238,extended,AC810130
+patch=1,EE,20208AE8,extended,0C03008C
+
+[Infinite Ammo]
+patch=1,EE,20178B28,extended,00000000
+
+[Max Infinite Ammo]
+patch=1,EE,20178B20,extended,24020063
+
+[Extra Ammo]
+patch=1,EE,10178B20,extended,00000001
+
+[Infinite Grenades]
+patch=1,EE,2017A134,extended,00000000
+
+[Max Infinite Grenades]
+patch=1,EE,2017A130,extended,24020009
+
+[Extra Grenades]
+patch=1,EE,1017A130,extended,00000001
+
+[Have All Medals Unlocked]
+patch=1,EE,201DA570,extended,24010001
+patch=1,EE,201DA574,extended,A0A2010D
+
+[Unlock All Missions]
+patch=1,EE,200C0000,extended,08076BD1
+patch=1,EE,200C0004,extended,A041010C
+patch=1,EE,201DAEB0,extended,08030000
+patch=1,EE,201DAEB4,extended,24010001
+
+[Enable Gore]
+patch=1,EE,202750B4,extended,24040001
+
+[Infinite Health (Tim)]
+patch=1,EE,2028E6D0,extended,46000000
+
+[Infinite Health (Alternate)]
+patch=1,EE,2028E6C8,extended,10000007
+
+[Debug Menu (Options, Use {CIRCLE}+{CROSS} Buttons)]
+patch=1,EE,203BAB60,extended,8C45340C
+
+[P1 Press {L1}+Up To Activate Negative Effect]
+patch=1,EE,D1AC40C2,extended,0000FBEF
+patch=1,EE,00443268,extended,00000001
+
+[P1 Press {L1}+Down To Deactivate Negative Effect]
+patch=1,EE,D1AC40C2,extended,0000FBBF
+patch=1,EE,00443268,extended,00000000
+
+[P1 Press {L2}+Up To Activate Glow Effect]
+patch=1,EE,D1AC40C2,extended,0000FEEF
+patch=1,EE,00443269,extended,00000001
+
+[P1 Press {L2}+Up To Deactivate Glow Effect]
+patch=1,EE,D1AC40C2,extended,0000FEBF
+patch=1,EE,00443269,extended,00000000
+
+[P1 Press {R1}+Up To Activate Black & White Effect]
+patch=1,EE,D1AC40C2,extended,0000F7EF
+patch=1,EE,0044326A,extended,00000001
+
+[P1 Press {R1}+Down To Activate Black & White Effect]
+patch=1,EE,D1AC40C2,extended,0000F7BF
+patch=1,EE,0044326A,extended,00000000
+
+[P1 Press {L1}+{L2} For All Cheat Effects Off]
+patch=1,EE,D1AC40C2,extended,0000FAFF
+patch=1,EE,20443268,extended,00000000
+
+[P1 Press {L1}+{SELECT} To Disable HUD]
+patch=1,EE,D1AC40C2,extended,0000FBFE
+patch=1,EE,004433E5,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Enable HUD]
+patch=1,EE,D1AC40C2,extended,0000FEFE
+patch=1,EE,004433E5,extended,00000001
+
+[P1 Press {R1}+{SELECT} To Display Debug Info]
+patch=1,EE,D1AC40C2,extended,0000F7FE
+patch=1,EE,00443FD0,extended,00000001
+
+[P1 Press {R2}+{SELECT} To Hide Debug Info]
+patch=1,EE,D1AC40C2,extended,0000FDFE
+patch=1,EE,00443FD0,extended,00000000
+
+[All Campaign Missions Complete]
+patch=1,EE,01B239AD,extended,00000021
+
+[All Time Attack Missions Complete]
+patch=1,EE,01B239AE,extended,00000021
+
+[All Cooperative Missions Complete]
+patch=1,EE,01B239AF,extended,00000021
+
+[All Cooperative Time Attack Missions Complete]
+patch=1,EE,01B239B0,extended,00000021
+
+[Always No Total Saves]
+patch=1,EE,21B239BC,extended,00000000
+
+[Always Low Time]
+patch=1,EE,21B239C0,extended,00000000
+
+[Infinite Health (Partner-Alternate Version)]
+patch=1,EE,2028E6E0,extended,00000000
+patch=1,EE,2028E6E4,extended,00000000
+
+[Infinite Time]
+patch=1,EE,2039F858,extended,00000000
+
+[Infinite Time (Time Attack Mode)]
+patch=1,EE,2018B1D8,extended,00000000
+
+[Invulnerable]
+patch=1,EE,004433E8,extended,00000001
+
+[Infinite Ammo]
+patch=1,EE,004433E9,extended,00000001
+
+[Infinite Ammo & Invulnerable]
+patch=1,EE,104433E8,extended,00000101
+
+[All Campaign Missions Complete]
+patch=1,EE,01B239AD,extended,00000021
+
+[All Time Attack Missions Complete]
+patch=1,EE,01B239AE,extended,00000021
+
+[All Cooperative Missions Complete]
+patch=1,EE,01B239AF,extended,00000021
+
+[All Cooperative Time Attack Missions Complete]
+patch=1,EE,01B239B0,extended,00000021
+
+[Always No Total Saves]
+patch=1,EE,21B239BC,extended,00000000
+
+[Always Low Time]
+patch=1,EE,21B239C0,extended,00000000
+
+[Small Clip]
+patch=1,EE,01B23F59,extended,00000001
+
+[Medium Clip]
+patch=1,EE,01B23F5A,extended,00000001
+
+[Double Clip]
+patch=1,EE,01B23F5B,extended,00000001
+
+[Rifle Drum]
+patch=1,EE,01B23F5C,extended,00000001
+
+[Normal]
+patch=1,EE,01B23F5D,extended,00000001
+
+[Magnum]
+patch=1,EE,01B23F5E,extended,00000001
+
+[Magnum Tracer]
+patch=1,EE,01B23F5F,extended,00000001
+
+[Armor Piercing]
+patch=1,EE,01B23F60,extended,00000001
+
+[Normal]
+patch=1,EE,01B23F61,extended,00000001
+
+[Small Upgrade]
+patch=1,EE,01B23F62,extended,00000001
+
+[Medium Upgrade]
+patch=1,EE,01B23F63,extended,00000001
+
+[Large Upgrade]
+patch=1,EE,01B23F64,extended,00000001
+
+[Partial]
+patch=1,EE,01B23F65,extended,00000001
+
+[Full]
+patch=1,EE,01B23F66,extended,00000001
+
+[Scope]
+patch=1,EE,01B23F67,extended,00000001
+
+[Small Tube]
+patch=1,EE,01B23F6D,extended,00000001
+
+[Medium Tube]
+patch=1,EE,01B23F6E,extended,00000001
+
+[Large Tube]
+patch=1,EE,01B23F6F,extended,00000001
+
+[Drum]
+patch=1,EE,01B23F70,extended,00000001
+
+[Scatter]
+patch=1,EE,01B23F71,extended,00000001
+
+[Slug]
+patch=1,EE,01B23F72,extended,00000001
+
+[Slug Tracer]
+patch=1,EE,01B23F73,extended,00000001
+
+[Beehive]
+patch=1,EE,01B23F74,extended,00000001
+
+[Normal]
+patch=1,EE,01B23F75,extended,00000001
+
+[Small Upgrade]
+patch=1,EE,01B23F76,extended,00000001
+
+[Medium Upgrade]
+patch=1,EE,01B23F77,extended,00000001
+
+[Large Upgrade]
+patch=1,EE,01B23F78,extended,00000001
+
+[Partial]
+patch=1,EE,01B23F79,extended,00000001
+
+[Full]
+patch=1,EE,01B23F7A,extended,00000001
+
+[Small Clip]
+patch=1,EE,01B23F95,extended,00000001
+
+[Medium Clip]
+patch=1,EE,01B23F96,extended,00000001
+
+[Double Clip]
+patch=1,EE,01B23F97,extended,00000001
+
+[Rifle Drum]
+patch=1,EE,01B23F98,extended,00000001
+
+[Normal]
+patch=1,EE,01B23F99,extended,00000001
+
+[Magnum]
+patch=1,EE,01B23F9A,extended,00000001
+
+[Magnum Tracer]
+patch=1,EE,01B23F9B,extended,00000001
+
+[Armor Piercing]
+patch=1,EE,01B23F9C,extended,00000001
+
+[Normal]
+patch=1,EE,01B23F9D,extended,00000001
+
+[Small Upgrade]
+patch=1,EE,01B23F9E,extended,00000001
+
+[Medium Upgrade]
+patch=1,EE,01B23F9F,extended,00000001
+
+[Large Upgrade]
+patch=1,EE,01B23FA0,extended,00000001
+
+[Partial]
+patch=1,EE,01B23FA1,extended,00000001
+
+[Full]
+patch=1,EE,01B23FA2,extended,00000001
+
+[Scope]
+patch=1,EE,01B23FA3,extended,00000001
+
+[Unlock Mission]
+patch=1,EE,01B23AB8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23AB9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23ABA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23ABB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23ABC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23ABD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23ABE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23ABF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23AC0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23AC1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23AC2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23AC3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23AC8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23AC9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23ACA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23ACB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23ACC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23ACD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23ACE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23ACF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23AD0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23AD1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23AD2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23AD3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23AD8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23AD9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23ADA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23ADB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23ADC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23ADD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23ADE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23ADF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23AE0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23AE1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23AE2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23AE3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23AE8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23AE9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23AEA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23AEB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23AEC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23AED,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23AEE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23AEF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23AF0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23AF1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23AF2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23AF3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23AF8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23AF9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23AFA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23AFB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23AFC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23AFD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23AFE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23AFF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B00,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B01,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B02,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B03,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B08,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B09,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B0A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B0B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B0C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B0D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B0E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B0F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B10,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B11,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B12,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B13,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B18,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B19,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B1A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B1B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B1C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B1D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B1E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B1F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B20,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B21,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B22,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B23,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B28,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B29,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B2A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B2B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B2C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B2D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B2E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B2F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B30,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B31,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B32,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B33,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B38,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B39,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B3A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B3B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B3C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B3D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B3E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B3F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B40,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B41,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B42,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B43,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B48,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B49,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B4A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B4B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B4C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B4D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B4E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B4F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B50,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B51,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B52,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B53,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B58,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B59,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B5A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B5B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B5C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B5D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B5E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B5F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B60,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B61,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B62,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B63,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B68,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B69,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B6A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B6B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B6C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B6D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B6E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B6F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B70,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B71,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B72,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B73,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B78,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B79,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B7A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B7B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B7C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B7D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B7E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B7F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B80,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B81,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B82,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B83,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B88,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B89,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B8A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B8B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B8C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B8D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B8E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B8F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23B90,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23B91,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23B92,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23B93,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23B98,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23B99,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23B9A,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23B9B,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23B9C,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23B9D,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23B9E,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23B9F,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23BA0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23BA1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23BA2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23BA3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23BA8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23BA9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23BAA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23BAB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23BAC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23BAD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23BAE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23BAF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23BB0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23BB1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23BB2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23BB3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23BB8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23BB9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23BBA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23BBB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23BBC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23BBD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23BBE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23BBF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23BC0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23BC1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23BC2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23BC3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23BC8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23BC9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23BCA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23BCB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23BCC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23BCD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23BCE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23BCF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23BD0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23BD1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23BD2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23BD3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23BD8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23BD9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23BDA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23BDB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23BDC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23BDD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23BDE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23BDF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23BE0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23BE1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23BE2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23BE3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23BE8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23BE9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23BEA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23BEB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23BEC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23BED,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23BEE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23BEF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23BF0,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23BF1,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23BF2,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23BF3,extended,00000003
+
+[Unlock Mission]
+patch=1,EE,01B23BF8,extended,00000001
+
+[Platinum Strike]
+patch=1,EE,01B23BF9,extended,00000001
+
+[Medal Of Valor]
+patch=1,EE,01B23BFA,extended,00000001
+
+[Humane Combat Award]
+patch=1,EE,01B23BFB,extended,00000001
+
+[Vanguard Award]
+patch=1,EE,01B23BFC,extended,00000001
+
+[Close Combat Award]
+patch=1,EE,01B23BFD,extended,00000001
+
+[Dark Medal 1-Headhunter]
+patch=1,EE,01B23BFE,extended,00000001
+
+[Dark Medal 2-Executioner]
+patch=1,EE,01B23BFF,extended,00000001
+
+[Rookie Grade A]
+patch=1,EE,01B23C00,extended,00000005
+
+[Veteran Grade A]
+patch=1,EE,01B23C01,extended,00000005
+
+[Elite Grade A]
+patch=1,EE,01B23C02,extended,00000005
+
+[Captured All]
+patch=1,EE,01B23C03,extended,00000003

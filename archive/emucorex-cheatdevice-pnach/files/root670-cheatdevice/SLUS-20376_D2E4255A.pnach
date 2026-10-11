@@ -1,0 +1,34 @@
+gametitle=Mad Maestro! (SLUS-20376)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9010DD4C,extended,0C041304
+
+[Infinite Meter]
+patch=1,EE,104AD148,extended,00000032
+patch=1,EE,104AD3A0,extended,00000032
+
+[View Store Mode Level Select]
+patch=1,EE,20333454,extended,00000001
+
+[Unlock All Free Play Levels]
+patch=1,EE,4033345C,extended,00220001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Bonus Games Levels]
+patch=1,EE,403334E8,extended,000A0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Music Room Levels]
+patch=1,EE,40333510,extended,00220001
+patch=1,EE,00000001,extended,00000000
+
+[Easy Difficulty Story Rank S-All Stages]
+patch=1,EE,4033367C,extended,000A0001
+patch=1,EE,00000005,extended,00000000
+
+[Normal Difficulty Story Rank S-All Stages]
+patch=1,EE,403336AC,extended,000A0001
+patch=1,EE,00000005,extended,00000000

@@ -1,0 +1,68 @@
+gametitle=Men In Black II-Alien Escape (SLUS-20373)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90134234,extended,0C04A104
+
+[Infinite Lives]
+patch=1,EE,008E1D84,extended,00000009
+
+[Infinite Health]
+patch=1,EE,208E1D8C,extended,42C80000
+
+[Infinite Bombs]
+patch=1,EE,008E1DAC,extended,00000009
+
+[Max Score]
+patch=1,EE,208E1DB8,extended,3B9AC9FF
+
+[Quick Score Gain]
+patch=1,EE,108E1DB8,extended,0000FFFF
+
+[Extra Bombs]
+patch=1,EE,10288710,extended,00000001
+
+[Extra Lives]
+patch=1,EE,10289EA8,extended,00000001
+
+[Level 1]
+patch=1,EE,0061ADC7,extended,00000001
+
+[Level 2]
+patch=1,EE,0061ADCA,extended,00000001
+
+[Level 3]
+patch=1,EE,0061ADCE,extended,00000001
+
+[Level 4]
+patch=1,EE,0061ADD3,extended,00000001
+
+[Level 5]
+patch=1,EE,0061ADD7,extended,00000001
+
+[Unlock All CST Missions]
+patch=1,EE,0061ADC1,extended,00000001
+patch=1,EE,1061ADC2,extended,00000101
+patch=1,EE,1061ADC4,extended,00000101
+patch=1,EE,0061ADC6,extended,00000001
+
+[Unlock Boss Modes]
+patch=1,EE,0061ADDC,extended,00000001
+
+[Unlock All Agent Data]
+patch=1,EE,1061ADE0,extended,00000101
+
+[Unlock All Alien Data]
+patch=1,EE,1061ADE2,extended,00000101
+patch=1,EE,4061ADE4,extended,00060001
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,1061ADFC,extended,00000101
+patch=1,EE,0061ADFE,extended,00000001
+
+[Unlock All Making Of]
+patch=1,EE,0061ADFF,extended,00000001
+patch=1,EE,4061AE00,extended,00080001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,1061AE20,extended,00000101

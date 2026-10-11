@@ -1,0 +1,144 @@
+gametitle=Hitman-Blood Money (SLUS-21108)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9041A308,extended,00832021
+
+[Infinite Ammo]
+patch=1,EE,201C5664,extended,26A60000
+
+[Max Infinite Ammo]
+patch=1,EE,201C5664,extended,240603E7
+
+[Extra Ammo]
+patch=1,EE,201C5664,extended,02153021
+
+[Never Reload]
+patch=1,EE,201B339C,extended,00000000
+
+[Never Reload With Max Clip]
+patch=1,EE,201B3398,extended,240F03E7
+
+[Infinite Health]
+patch=1,EE,20323438,extended,00000000
+
+[Always 1st Save]
+patch=1,EE,20534A28,extended,00000000
+
+[Quick Money Gain]
+patch=1,EE,1063A904,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2063A904,extended,05F5E0FF
+
+[Buying Items Doesnt Decrease Money]
+patch=1,EE,203E163C,extended,00000000
+
+[Buying Items Increases Money]
+patch=1,EE,203E162C,extended,01E57823
+
+[Slow Motion ({R2}+Up=On & {R2}+Down=Off)]
+patch=1,EE,200C0240,extended,3C0800A0
+patch=1,EE,200C0244,extended,00000000
+patch=1,EE,200C0248,extended,00000000
+patch=1,EE,200C024C,extended,00000000
+patch=1,EE,200C0250,extended,00000000
+patch=1,EE,200C0254,extended,00000000
+patch=1,EE,200C0258,extended,1D00FFFD
+patch=1,EE,200C025C,extended,2508FFFF
+patch=1,EE,200C0260,extended,03E00008
+patch=1,EE,200C0264,extended,00000000
+patch=1,EE,D052DBC2,extended,0000FDEF
+patch=1,EE,2041A34C,extended,08030090
+patch=1,EE,D052DBC2,extended,0000FDBF
+patch=1,EE,2041A34C,extended,03E00008
+
+[Infinite Clip]
+patch=1,EE,204E6288,extended,00000001
+
+[God Mode]
+patch=1,EE,204FED80,extended,00000001
+
+[P1 Press {R1}+Right For God Mode On]
+patch=1,EE,D052DBC2,extended,0000F7DF
+patch=1,EE,204FED80,extended,00000001
+
+[P1 Press {R1}+Left For God Mode Off]
+patch=1,EE,D052DBC2,extended,0000F77F
+patch=1,EE,204FED80,extended,00000000
+
+[Invisible Mode]
+patch=1,EE,204FF258,extended,00000001
+
+[P1 Press {R1}+Up For Invisible Mode On]
+patch=1,EE,D052DBC2,extended,0000F7EF
+patch=1,EE,204FF258,extended,00000001
+
+[P1 Press {R1}+Down For Invisible Mode Off]
+patch=1,EE,D052DBC2,extended,0000F7BF
+patch=1,EE,204FF258,extended,00000000
+
+[Nail Gun Mode]
+patch=1,EE,2050C6A8,extended,3F800000
+
+[P1 Press {L1}+Right For Nail Gun Mode On]
+patch=1,EE,D052DBC2,extended,0000FBDF
+patch=1,EE,2050C6A8,extended,3F800000
+
+[P1 Press {L1}+Left For Nail Gun Mode Off]
+patch=1,EE,D052DBC2,extended,0000FB7F
+patch=1,EE,2050C6A8,extended,3F800000
+
+[Rookie Difficulty]
+patch=1,EE,206391E8,extended,FFFFFFFF
+
+[Normal Difficulty]
+patch=1,EE,2063A8D8,extended,FFFFFFFF
+
+[Expert Difficulty]
+patch=1,EE,2063BFC8,extended,FFFFFFFF
+
+[Pro Difficulty]
+patch=1,EE,2063D6B8,extended,FFFFFFFF
+
+[Rookie Difficulty]
+patch=1,EE,E0070022,extended,20639210
+patch=1,EE,20639210,extended,00000021
+patch=1,EE,40639FC0,extended,00060008
+patch=1,EE,00000002,extended,00000001
+patch=1,EE,4063A080,extended,00120008
+patch=1,EE,0000000A,extended,00000001
+patch=1,EE,4063A2C0,extended,00090008
+patch=1,EE,0000001D,extended,00000001
+
+[Normal Difficulty]
+patch=1,EE,E0070022,extended,2063A900
+patch=1,EE,2063A900,extended,00000021
+patch=1,EE,4063B6B0,extended,00060008
+patch=1,EE,00000002,extended,00000001
+patch=1,EE,4063B770,extended,00120008
+patch=1,EE,0000000A,extended,00000001
+patch=1,EE,4063B9B0,extended,00090008
+patch=1,EE,0000001D,extended,00000001
+
+[Expert Difficulty]
+patch=1,EE,E0070022,extended,2063BFF0
+patch=1,EE,2063BFF0,extended,00000021
+patch=1,EE,4063CDA0,extended,00060008
+patch=1,EE,00000002,extended,00000001
+patch=1,EE,4063CE60,extended,00120008
+patch=1,EE,0000000A,extended,00000001
+patch=1,EE,4063D0A0,extended,00090008
+patch=1,EE,0000001D,extended,00000001
+
+[Pro Difficulty]
+patch=1,EE,E0070022,extended,2063D6E0
+patch=1,EE,2063D6E0,extended,00000021
+patch=1,EE,4063E490,extended,00060008
+patch=1,EE,00000002,extended,00000001
+patch=1,EE,4063E550,extended,00120008
+patch=1,EE,0000000A,extended,00000001
+patch=1,EE,4063E790,extended,00090008
+patch=1,EE,0000001D,extended,00000001

@@ -1,0 +1,205 @@
+gametitle=Strike Force Bowling (SLUS-20846)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90240B4C,extended,0C093EA9
+
+[Unlock All Hidden Stages & Characters]
+patch=1,EE,407DDA58,extended,00130001
+patch=1,EE,00000001,extended,00000000
+
+[Always 1st Attemp (All Players)]
+patch=1,EE,2013A0B0,extended,00000000
+
+[Always 1st Attempt P1]
+patch=1,EE,203D3760,extended,00000000
+
+[Start On Attempt 4]
+patch=1,EE,D03D3760,extended,00000000
+patch=1,EE,203D3760,extended,00000003
+
+[Start On Attempt 3]
+patch=1,EE,D03D3760,extended,00000000
+patch=1,EE,203D3760,extended,00000002
+
+[Start On Attempt 2]
+patch=1,EE,D03D3760,extended,00000000
+patch=1,EE,203D3760,extended,00000001
+
+[Always 1st Attempt P2]
+patch=1,EE,203D892C,extended,00000000
+
+[Start On Attempt 4]
+patch=1,EE,D03D892C,extended,00000000
+patch=1,EE,203D892C,extended,00000003
+
+[Start On Attempt 3]
+patch=1,EE,D03D892C,extended,00000000
+patch=1,EE,203D892C,extended,00000002
+
+[Start On Attempt 2]
+patch=1,EE,D03D892C,extended,00000000
+patch=1,EE,203D892C,extended,00000001
+
+[Always 1st Attempt P3]
+patch=1,EE,203DDAF8,extended,00000000
+
+[Start On Attempt 4]
+patch=1,EE,D03DDAF8,extended,00000000
+patch=1,EE,203DDAF8,extended,00000003
+
+[Start On Attempt 3]
+patch=1,EE,D03DDAF8,extended,00000000
+patch=1,EE,203DDAF8,extended,00000002
+
+[Start On Attempt 2]
+patch=1,EE,D03DDAF8,extended,00000000
+patch=1,EE,203DDAF8,extended,00000001
+
+[Always 1st Attempt P4]
+patch=1,EE,203E2CC4,extended,00000000
+
+[Start On Attempt 4]
+patch=1,EE,D03E2CC4,extended,00000000
+patch=1,EE,203E2CC4,extended,00000003
+
+[Start On Attempt 3]
+patch=1,EE,D03E2CC4,extended,00000000
+patch=1,EE,203E2CC4,extended,00000002
+
+[Start On Attempt 2]
+patch=1,EE,D03E2CC4,extended,00000000
+patch=1,EE,203E2CC4,extended,00000001
+
+[Shots Never Recorded (All Players)]
+patch=1,EE,2014FC4C,extended,00000000
+
+[Always Hole In One P1]
+patch=1,EE,203D3704,extended,00000000
+
+[Always 9 Strokes Recorded P1]
+patch=1,EE,203D3704,extended,00000009
+
+[Quick Score Gain P1]
+patch=1,EE,103D3710,extended,0000FFFF
+
+[Max Score P1]
+patch=1,EE,203D3710,extended,05F5E0FF
+
+[No Score P1]
+patch=1,EE,203D3710,extended,00000000
+
+[Always Hole In One P2]
+patch=1,EE,203D88D0,extended,00000000
+
+[Always 9 Strokes Recorded P2]
+patch=1,EE,203D88D0,extended,00000009
+
+[Quick Score Gain P2]
+patch=1,EE,103D88DC,extended,0000FFFF
+
+[Max Score P2]
+patch=1,EE,203D88DC,extended,05F5E0FF
+
+[No Score P2]
+patch=1,EE,203D88DC,extended,00000000
+
+[Always Hole In One P3]
+patch=1,EE,203DDA9C,extended,00000000
+
+[Always 9 Strokes Recorded P3]
+patch=1,EE,203DDA9C,extended,00000009
+
+[Quick Score Gain P3]
+patch=1,EE,103DDAA8,extended,0000FFFF
+
+[Max Score P3]
+patch=1,EE,203DDAA8,extended,05F5E0FF
+
+[No Score P3]
+patch=1,EE,203DDAA8,extended,00000000
+
+[Always Hole In One P4]
+patch=1,EE,203E2C68,extended,00000000
+
+[Always 9 Strokes Recorded P4]
+patch=1,EE,203E2C68,extended,00000009
+
+[Quick Score Gain P4]
+patch=1,EE,103E2C74,extended,0000FFFF
+
+[Max Score P4]
+patch=1,EE,203E2C74,extended,05F5E0FF
+
+[No Score P4]
+patch=1,EE,203E2C74,extended,00000000
+
+[Max Strength]
+patch=1,EE,203773F8,extended,00000014
+
+[Max Accuracy]
+patch=1,EE,203773FC,extended,00000014
+
+[Max Curve]
+patch=1,EE,20377400,extended,00000014
+
+[Super Max Strength]
+patch=1,EE,203773F8,extended,00000064
+
+[Super Max Accuracy]
+patch=1,EE,203773FC,extended,00000064
+
+[Super Max Curve]
+patch=1,EE,20377400,extended,00000064
+
+[Ultra Max Strength]
+patch=1,EE,203773F8,extended,000000C8
+
+[Ultra Max Accuracy]
+patch=1,EE,203773FC,extended,000000C8
+
+[Ultra Max Curve]
+patch=1,EE,20377400,extended,000000C8
+
+[Stage 1]
+patch=1,EE,207DDA5C,extended,00000001
+
+[Stage 2]
+patch=1,EE,207DDA64,extended,00000001
+
+[Stage 3]
+patch=1,EE,207DDA6C,extended,00000001
+
+[Stage 4]
+patch=1,EE,207DDA74,extended,00000001
+
+[Stage 5]
+patch=1,EE,207DDA7C,extended,00000001
+
+[Stage 6]
+patch=1,EE,207DDA84,extended,00000001
+
+[Stage 7]
+patch=1,EE,207DDA8C,extended,00000001
+
+[Stage 8]
+patch=1,EE,207DDA94,extended,00000001
+
+[All Stages]
+patch=1,EE,407DDA5C,extended,00080002
+patch=1,EE,00000001,extended,00000000
+
+[Bones]
+patch=1,EE,207DDA98,extended,00000001
+
+[Newton]
+patch=1,EE,207DDA9C,extended,00000001
+
+[7-10]
+patch=1,EE,207DDAA0,extended,00000001
+
+[All Characters]
+patch=1,EE,407DDA98,extended,00030001
+patch=1,EE,00000001,extended,00000000

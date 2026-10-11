@@ -1,0 +1,144 @@
+gametitle=Klonoa 2-Lunatea's Veil (SLUS-20151)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90303E94,extended,0C0C7F6C
+
+[Infinite Health]
+patch=1,EE,00366850,extended,00000006
+
+[Infinite Lives]
+patch=1,EE,00366858,extended,00000063
+
+[Infinite Air]
+patch=1,EE,1036687A,extended,00003F80
+
+[Always Low Attack Time]
+patch=1,EE,D0366884,extended,003001E0
+patch=1,EE,20366884,extended,00000001
+
+[Have Momett Doll Bells]
+patch=1,EE,003FBB78,extended,00000006
+
+[Have All Photo Album Pics/Stones (Every Vision)]
+patch=1,EE,00350791,extended,000000FF
+patch=1,EE,10350792,extended,0000FFFF
+patch=1,EE,20350794,extended,FFFFFFFF
+patch=1,EE,20350798,extended,FFFFFFFF
+patch=1,EE,2035079C,extended,FFFFFFFF
+patch=1,EE,003507A0,extended,000000FF
+
+[Have All Momett Dolls]
+patch=1,EE,003507A3,extended,00000006
+patch=1,EE,203507A4,extended,06060606
+patch=1,EE,203507A8,extended,06060606
+patch=1,EE,203507AC,extended,06060606
+patch=1,EE,103507B0,extended,00000606
+patch=1,EE,003507B2,extended,00000006
+
+[Press {R1} For Extras Unlocked (Momett House)]
+patch=1,EE,20350788,extended,FFFFFFFF
+
+[Sea Of Tears]
+patch=1,EE,00350791,extended,000000FF
+
+[La-Loosha]
+patch=1,EE,00350792,extended,000000FF
+
+[Joilant Fun Park]
+patch=1,EE,00350793,extended,000000FF
+
+[Jungle Slider]
+patch=1,EE,00350794,extended,000000FF
+
+[Underground Factory]
+patch=1,EE,00350795,extended,000000FF
+
+[Volk City]
+patch=1,EE,00350796,extended,000000FF
+
+[Volkan Inferno]
+patch=1,EE,00350797,extended,000000FF
+
+[Ishras Ark]
+patch=1,EE,00350798,extended,000000FF
+
+[Chamber Of Fun]
+patch=1,EE,003507A1,extended,000000FF
+
+[Chamber Of Horrors]
+patch=1,EE,003507A2,extended,000000FF
+
+[Mts. Of Mira-Mira]
+patch=1,EE,00350799,extended,000000FF
+
+[Maze Of Memories]
+patch=1,EE,0035079A,extended,000000FF
+
+[Noxisous]
+patch=1,EE,0035079B,extended,000000FF
+
+[Dark Sea]
+patch=1,EE,0035079C,extended,000000FF
+
+[Empty Sea]
+patch=1,EE,0035079D,extended,000000FF
+
+[Ark Revisited]
+patch=1,EE,0035079E,extended,000000FF
+
+[Kingdom Of Sorrow]
+patch=1,EE,0035079F,extended,000000FF
+
+[Forgotten Path]
+patch=1,EE,003507A0,extended,000000FF
+
+[Vision 1]
+patch=1,EE,003507A3,extended,00000006
+
+[Vision 2]
+patch=1,EE,003507A4,extended,00000006
+
+[Vision 3]
+patch=1,EE,003507A5,extended,00000006
+
+[Vision 4]
+patch=1,EE,003507A6,extended,00000006
+
+[Vision 5]
+patch=1,EE,003507A7,extended,00000006
+
+[Vision 6]
+patch=1,EE,003507A8,extended,00000006
+
+[Vision 7]
+patch=1,EE,003507A9,extended,00000006
+
+[Vision 8]
+patch=1,EE,003507AA,extended,00000006
+
+[Vision 9]
+patch=1,EE,003507AB,extended,00000006
+
+[Vision 10]
+patch=1,EE,003507AC,extended,00000006
+
+[Vision 11]
+patch=1,EE,003507AD,extended,00000006
+
+[Vision 12]
+patch=1,EE,003507AE,extended,00000006
+
+[Vision 13]
+patch=1,EE,003507AF,extended,00000006
+
+[Vision 14]
+patch=1,EE,003507B0,extended,00000006
+
+[Vision 15]
+patch=1,EE,003507B1,extended,00000006
+
+[Vision 16]
+patch=1,EE,003507B2,extended,00000006

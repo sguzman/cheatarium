@@ -1,0 +1,2180 @@
+gametitle=Disgaea-Hour Of Darkness (SLUS-20666)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,00112C4F
+patch=1,EE,20147078,extended,00000000
+
+[Infinite Money]
+patch=1,EE,102A20C0,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,202A20C0,extended,3B9AC9FF
+
+[Infinite Item Usage]
+patch=1,EE,201B8258,extended,00000000
+
+[Access All Areas]
+patch=1,EE,20245B88,extended,00000018
+
+[Quick Exp Gain]
+patch=1,EE,102A29E8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A29E8,extended,0000FFFF
+patch=1,EE,002A29EA,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A29E8,extended,C06D3E0F
+patch=1,EE,202A29EC,extended,00000011
+
+[Poison]
+patch=1,EE,102A2D76,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A2D78,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A2D7A,extended,000003E7
+
+[Forget]
+patch=1,EE,102A2D7C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A2D7E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A3090,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A3094,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A3098,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A309C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A30A0,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A30A4,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A30A8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A30AC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A30B0,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A30B4,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A30F8,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A3134,extended,00000063
+
+[Level 999]
+patch=1,EE,102A3134,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A3134,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A3134,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A314E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A3150,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A3152,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A31B0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A31B0,extended,0000FFFF
+patch=1,EE,002A31B2,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A31B0,extended,C06D3E0F
+patch=1,EE,202A31B4,extended,00000011
+
+[Poison]
+patch=1,EE,102A353E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A3540,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A3542,extended,000003E7
+
+[Forget]
+patch=1,EE,102A3544,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A3546,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A3858,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A385C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A3860,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A3864,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A3868,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A386C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A3870,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A3874,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A3878,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A387C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A38C0,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A38FC,extended,00000063
+
+[Level 999]
+patch=1,EE,102A38FC,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A38FC,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A38FC,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A3916,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A3918,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A391A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A3978,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A3978,extended,0000FFFF
+patch=1,EE,002A397A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A3978,extended,C06D3E0F
+patch=1,EE,202A397C,extended,00000011
+
+[Poison]
+patch=1,EE,102A3D06,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A3D08,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A3D0A,extended,000003E7
+
+[Forget]
+patch=1,EE,102A3D0C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A3D0E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A4020,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A4024,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A4028,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A402C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A4030,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A4034,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A4038,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A403C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A4040,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A4044,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A4088,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A40C4,extended,00000063
+
+[Level 999]
+patch=1,EE,102A40C4,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A40C4,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A40C4,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A40DE,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A40E0,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A40E2,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A4140,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A4140,extended,0000FFFF
+patch=1,EE,002A4142,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A4140,extended,C06D3E0F
+patch=1,EE,202A4144,extended,00000011
+
+[Poison]
+patch=1,EE,102A44CE,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A44D0,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A44D2,extended,000003E7
+
+[Forget]
+patch=1,EE,102A44D4,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A44D6,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A47E8,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A47EC,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A47F0,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A47F4,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A47F8,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A47FC,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A4800,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A4804,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A4808,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A480C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A4850,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A488C,extended,00000063
+
+[Level 999]
+patch=1,EE,102A488C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A488C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A488C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A48A6,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A48A8,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A48AA,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A4908,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A4908,extended,0000FFFF
+patch=1,EE,002A490A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A4908,extended,C06D3E0F
+patch=1,EE,202A490C,extended,00000011
+
+[Poison]
+patch=1,EE,102A4C96,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A4C98,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A4C9A,extended,000003E7
+
+[Forget]
+patch=1,EE,102A4C9C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A4C9E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A4FB0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A4FB4,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A4FB8,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A4FBC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A4FC0,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A4FC4,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A4FC8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A4FCC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A4FD0,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A4FD4,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A5018,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A5054,extended,00000063
+
+[Level 999]
+patch=1,EE,102A5054,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A5054,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A5054,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A506E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A5070,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A5072,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A50D0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A50D0,extended,0000FFFF
+patch=1,EE,002A50D2,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A50D0,extended,C06D3E0F
+patch=1,EE,202A50D4,extended,00000011
+
+[Poison]
+patch=1,EE,102A545E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A5460,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A5462,extended,000003E7
+
+[Forget]
+patch=1,EE,102A5464,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A5466,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A5778,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A577C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A5780,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A5784,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A5788,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A578C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A5790,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A5794,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A5798,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A579C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A57E0,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A581C,extended,00000063
+
+[Level 999]
+patch=1,EE,102A581C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A581C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A581C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A5836,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A5838,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A583A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A5898,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A5898,extended,0000FFFF
+patch=1,EE,002A589A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A5898,extended,C06D3E0F
+patch=1,EE,202A589C,extended,00000011
+
+[Poison]
+patch=1,EE,102A5C26,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A5C28,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A5C2A,extended,000003E7
+
+[Forget]
+patch=1,EE,102A5C2C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A5C2E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A5F40,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A5F44,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A5F48,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A5F4C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A5F50,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A5F54,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A5F58,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A5F5C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A5F60,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A5F64,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A5FA8,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A5FE4,extended,00000063
+
+[Level 999]
+patch=1,EE,102A5FE4,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A5FE4,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A5FE4,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A5FFE,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A6000,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A6002,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A6060,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A6060,extended,0000FFFF
+patch=1,EE,002A6062,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A6060,extended,C06D3E0F
+patch=1,EE,202A6064,extended,00000011
+
+[Poison]
+patch=1,EE,102A63EE,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A63F0,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A63F2,extended,000003E7
+
+[Forget]
+patch=1,EE,102A63F4,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A63F6,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A6708,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A670C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A6710,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A6714,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A6718,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A671C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A6720,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A6724,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A6728,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A672C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A6770,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A67AC,extended,00000063
+
+[Level 999]
+patch=1,EE,102A67AC,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A67AC,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A67AC,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A67C6,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A67C8,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A67CA,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A6828,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A6828,extended,0000FFFF
+patch=1,EE,002A682A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A6828,extended,C06D3E0F
+patch=1,EE,202A682C,extended,00000011
+
+[Poison]
+patch=1,EE,102A6BB6,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A6BB8,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A6BBA,extended,000003E7
+
+[Forget]
+patch=1,EE,102A6BBC,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A6BBE,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A6ED0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A6ED4,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A6ED8,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A6EDC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A6EE0,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A6EE4,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A6EE8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A6EEC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A6EF0,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A6EF4,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A6F38,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A6F74,extended,00000063
+
+[Level 999]
+patch=1,EE,102A6F74,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A6F74,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A6F74,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A6F8E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A6F90,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A6F92,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A6FF0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A6FF0,extended,0000FFFF
+patch=1,EE,002A6FF2,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A6FF0,extended,C06D3E0F
+patch=1,EE,202A6FF4,extended,00000011
+
+[Poison]
+patch=1,EE,102A737E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A7380,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A7382,extended,000003E7
+
+[Forget]
+patch=1,EE,102A7384,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A7386,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A7698,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A769C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A76A0,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A76A4,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A76A8,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A76AC,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A76B0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A76B4,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A76B8,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A76BC,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A7700,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A773C,extended,00000063
+
+[Level 999]
+patch=1,EE,102A773C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A773C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A773C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A7756,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A7758,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A775A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A77B8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A77B8,extended,0000FFFF
+patch=1,EE,002A77BA,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A77B8,extended,C06D3E0F
+patch=1,EE,202A77BC,extended,00000011
+
+[Poison]
+patch=1,EE,102A7B46,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A7B48,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A7B4A,extended,000003E7
+
+[Forget]
+patch=1,EE,102A7B4C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A7B4E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A7E60,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A7E64,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A7E68,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A7E6C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A7E70,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A7E74,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A7E78,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A7E7C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A7E80,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A7E84,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A7EC8,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A7F04,extended,00000063
+
+[Level 999]
+patch=1,EE,102A7F04,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A7F04,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A7F04,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A7F1E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A7F20,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A7F22,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A7F80,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A7F80,extended,0000FFFF
+patch=1,EE,002A7F82,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A7F80,extended,C06D3E0F
+patch=1,EE,202A7F84,extended,00000011
+
+[Poison]
+patch=1,EE,102A830E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A8310,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A8312,extended,000003E7
+
+[Forget]
+patch=1,EE,102A8314,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A8316,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A8628,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A862C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A8630,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A8634,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A8638,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A863C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A8640,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A8644,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A8648,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A864C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A8690,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A86CC,extended,00000063
+
+[Level 999]
+patch=1,EE,102A86CC,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A86CC,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A86CC,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A86E6,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A86E8,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A86EA,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A8748,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A8748,extended,0000FFFF
+patch=1,EE,002A874A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A8748,extended,C06D3E0F
+patch=1,EE,202A874C,extended,00000011
+
+[Poison]
+patch=1,EE,102A8AD6,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A8AD8,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A8ADA,extended,000003E7
+
+[Forget]
+patch=1,EE,102A8ADC,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A8ADE,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A8DF0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A8DF4,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A8DF8,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A8DFC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A8E00,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A8E04,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A8E08,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A8E0C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A8E10,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A8E14,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A8E58,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A8E94,extended,00000063
+
+[Level 999]
+patch=1,EE,102A8E94,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A8E94,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A8E94,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A8EAE,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A8EB0,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A8EB2,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A8F10,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A8F10,extended,0000FFFF
+patch=1,EE,002A8F12,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A8F10,extended,C06D3E0F
+patch=1,EE,202A8F14,extended,00000011
+
+[Poison]
+patch=1,EE,102A929E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A92A0,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A92A2,extended,000003E7
+
+[Forget]
+patch=1,EE,102A92A4,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A92A6,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A95B8,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A95BC,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A95C0,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A95C4,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A95C8,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A95CC,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A95D0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A95D4,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A95D8,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A95DC,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A9620,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A965C,extended,00000063
+
+[Level 999]
+patch=1,EE,102A965C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A965C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A965C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A9676,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A9678,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A967A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A96D8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A96D8,extended,0000FFFF
+patch=1,EE,002A96DA,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A96D8,extended,C06D3E0F
+patch=1,EE,202A96DC,extended,00000011
+
+[Poison]
+patch=1,EE,102A9A66,extended,000003E7
+
+[Sleep]
+patch=1,EE,102A9A68,extended,000003E7
+
+[Deprave]
+patch=1,EE,102A9A6A,extended,000003E7
+
+[Forget]
+patch=1,EE,102A9A6C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102A9A6E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202A9D80,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202A9D84,extended,0000270F
+
+[Max HP]
+patch=1,EE,202A9D88,extended,0000270F
+
+[Max SP]
+patch=1,EE,202A9D8C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202A9D90,extended,0000270F
+
+[Max Def]
+patch=1,EE,202A9D94,extended,0000270F
+
+[Max Int]
+patch=1,EE,202A9D98,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202A9D9C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202A9DA0,extended,0000270F
+
+[Max Res]
+patch=1,EE,202A9DA4,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202A9DE8,extended,0000270F
+
+[Level 99]
+patch=1,EE,102A9E24,extended,00000063
+
+[Level 999]
+patch=1,EE,102A9E24,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102A9E24,extended,00001388
+
+[Level 9999]
+patch=1,EE,102A9E24,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102A9E3E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102A9E40,extended,00006363
+
+[Max Counter]
+patch=1,EE,102A9E42,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102A9EA0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102A9EA0,extended,0000FFFF
+patch=1,EE,002A9EA2,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202A9EA0,extended,C06D3E0F
+patch=1,EE,202A9EA4,extended,00000011
+
+[Poison]
+patch=1,EE,102AA22E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AA230,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AA232,extended,000003E7
+
+[Forget]
+patch=1,EE,102AA234,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AA236,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AA548,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AA54C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AA550,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AA554,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AA558,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AA55C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AA560,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AA564,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AA568,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AA56C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AA5B0,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AA5EC,extended,00000063
+
+[Level 999]
+patch=1,EE,102AA5EC,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AA5EC,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AA5EC,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AA606,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AA608,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AA60A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AA668,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AA668,extended,0000FFFF
+patch=1,EE,002AA66A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AA668,extended,C06D3E0F
+patch=1,EE,202AA66C,extended,00000011
+
+[Poison]
+patch=1,EE,102AA9F6,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AA9F8,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AA9FA,extended,000003E7
+
+[Forget]
+patch=1,EE,102AA9FC,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AA9FE,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AAD10,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AAD14,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AAD18,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AAD1C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AAD20,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AAD24,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AAD28,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AAD2C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AAD30,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AAD34,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AAD78,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AADB4,extended,00000063
+
+[Level 999]
+patch=1,EE,102AADB4,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AADB4,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AADB4,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AADCE,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AADD0,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AADD2,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AAE30,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AAE30,extended,0000FFFF
+patch=1,EE,002AAE32,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AAE30,extended,C06D3E0F
+patch=1,EE,202AAE34,extended,00000011
+
+[Poison]
+patch=1,EE,102AB1BE,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AB1C0,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AB1C2,extended,000003E7
+
+[Forget]
+patch=1,EE,102AB1C4,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AB1C6,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AB4D8,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AB4DC,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AB4E0,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AB4E4,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AB4E8,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AB4EC,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AB4F0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AB4F4,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AB4F8,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AB4FC,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AB540,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AB57C,extended,00000063
+
+[Level 999]
+patch=1,EE,102AB57C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AB57C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AB57C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AB596,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AB598,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AB59A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AB5F8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AB5F8,extended,0000FFFF
+patch=1,EE,002AB5FA,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AB5F8,extended,C06D3E0F
+patch=1,EE,202AB5FC,extended,00000011
+
+[Poison]
+patch=1,EE,102AB986,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AB988,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AB98A,extended,000003E7
+
+[Forget]
+patch=1,EE,102AB98C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AB98E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202ABCA0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202ABCA4,extended,0000270F
+
+[Max HP]
+patch=1,EE,202ABCA8,extended,0000270F
+
+[Max SP]
+patch=1,EE,202ABCAC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202ABCB0,extended,0000270F
+
+[Max Def]
+patch=1,EE,202ABCB4,extended,0000270F
+
+[Max Int]
+patch=1,EE,202ABCB8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202ABCBC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202ABCC0,extended,0000270F
+
+[Max Res]
+patch=1,EE,202ABCC4,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202ABD08,extended,0000270F
+
+[Level 99]
+patch=1,EE,102ABD44,extended,00000063
+
+[Level 999]
+patch=1,EE,102ABD44,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102ABD44,extended,00001388
+
+[Level 9999]
+patch=1,EE,102ABD44,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102ABD5E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102ABD60,extended,00006363
+
+[Max Counter]
+patch=1,EE,102ABD62,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102ABDC0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102ABDC0,extended,0000FFFF
+patch=1,EE,002ABDC2,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202ABDC0,extended,C06D3E0F
+patch=1,EE,202ABDC4,extended,00000011
+
+[Poison]
+patch=1,EE,102AC14E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AC150,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AC152,extended,000003E7
+
+[Forget]
+patch=1,EE,102AC154,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AC156,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AC468,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AC46C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AC470,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AC474,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AC478,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AC47C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AC480,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AC484,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AC488,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AC48C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AC4D0,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AC50C,extended,00000063
+
+[Level 999]
+patch=1,EE,102AC50C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AC50C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AC50C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AC526,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AC528,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AC52A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AC588,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AC588,extended,0000FFFF
+patch=1,EE,002AC58A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AC588,extended,C06D3E0F
+patch=1,EE,202AC58C,extended,00000011
+
+[Poison]
+patch=1,EE,102AC916,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AC918,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AC91A,extended,000003E7
+
+[Forget]
+patch=1,EE,102AC91C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AC91E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202ACC30,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202ACC34,extended,0000270F
+
+[Max HP]
+patch=1,EE,202ACC38,extended,0000270F
+
+[Max SP]
+patch=1,EE,202ACC3C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202ACC40,extended,0000270F
+
+[Max Def]
+patch=1,EE,202ACC44,extended,0000270F
+
+[Max Int]
+patch=1,EE,202ACC48,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202ACC4C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202ACC50,extended,0000270F
+
+[Max Res]
+patch=1,EE,202ACC54,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202ACC98,extended,0000270F
+
+[Level 99]
+patch=1,EE,102ACCD4,extended,00000063
+
+[Level 999]
+patch=1,EE,102ACCD4,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102ACCD4,extended,00001388
+
+[Level 9999]
+patch=1,EE,102ACCD4,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102ACCEE,extended,00006363
+
+[Max Mv]
+patch=1,EE,102ACCF0,extended,00006363
+
+[Max Counter]
+patch=1,EE,102ACCF2,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102ACD50,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102ACD50,extended,0000FFFF
+patch=1,EE,002ACD52,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202ACD50,extended,C06D3E0F
+patch=1,EE,202ACD54,extended,00000011
+
+[Poison]
+patch=1,EE,102AD0DE,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AD0E0,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AD0E2,extended,000003E7
+
+[Forget]
+patch=1,EE,102AD0E4,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AD0E6,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AD3F8,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AD3FC,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AD400,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AD404,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AD408,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AD40C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AD410,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AD414,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AD418,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AD41C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AD460,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AD49C,extended,00000063
+
+[Level 999]
+patch=1,EE,102AD49C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AD49C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AD49C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AD4B6,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AD4B8,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AD4BA,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AD518,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AD518,extended,0000FFFF
+patch=1,EE,002AD51A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AD518,extended,C06D3E0F
+patch=1,EE,202AD51C,extended,00000011
+
+[Poison]
+patch=1,EE,102AD8A6,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AD8A8,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AD8AA,extended,000003E7
+
+[Forget]
+patch=1,EE,102AD8AC,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AD8AE,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202ADBC0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202ADBC4,extended,0000270F
+
+[Max HP]
+patch=1,EE,202ADBC8,extended,0000270F
+
+[Max SP]
+patch=1,EE,202ADBCC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202ADBD0,extended,0000270F
+
+[Max Def]
+patch=1,EE,202ADBD4,extended,0000270F
+
+[Max Int]
+patch=1,EE,202ADBD8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202ADBDC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202ADBE0,extended,0000270F
+
+[Max Res]
+patch=1,EE,202ADBE4,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202ADC28,extended,0000270F
+
+[Level 99]
+patch=1,EE,102ADC64,extended,00000063
+
+[Level 999]
+patch=1,EE,102ADC64,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102ADC64,extended,00001388
+
+[Level 9999]
+patch=1,EE,102ADC64,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102ADC7E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102ADC80,extended,00006363
+
+[Max Counter]
+patch=1,EE,102ADC82,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102ADCE0,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102ADCE0,extended,0000FFFF
+patch=1,EE,002ADCE2,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202ADCE0,extended,C06D3E0F
+patch=1,EE,202ADCE4,extended,00000011
+
+[Poison]
+patch=1,EE,102AE06E,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AE070,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AE072,extended,000003E7
+
+[Forget]
+patch=1,EE,102AE074,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AE076,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AE388,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AE38C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AE390,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AE394,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AE398,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AE39C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AE3A0,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AE3A4,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AE3A8,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AE3AC,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AE3F0,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AE42C,extended,00000063
+
+[Level 999]
+patch=1,EE,102AE42C,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AE42C,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AE42C,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AE446,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AE448,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AE44A,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AE4A8,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AE4A8,extended,0000FFFF
+patch=1,EE,002AE4AA,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AE4A8,extended,C06D3E0F
+patch=1,EE,202AE4AC,extended,00000011
+
+[Poison]
+patch=1,EE,102AE836,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AE838,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AE83A,extended,000003E7
+
+[Forget]
+patch=1,EE,102AE83C,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AE83E,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AEB50,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AEB54,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AEB58,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AEB5C,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AEB60,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AEB64,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AEB68,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AEB6C,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AEB70,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AEB74,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AEBB8,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AEBF4,extended,00000063
+
+[Level 999]
+patch=1,EE,102AEBF4,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AEBF4,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AEBF4,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AEC0E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AEC10,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AEC12,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AEC70,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AEC70,extended,0000FFFF
+patch=1,EE,002AEC72,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AEC70,extended,C06D3E0F
+patch=1,EE,202AEC74,extended,00000011
+
+[Poison]
+patch=1,EE,102AEFFE,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AF000,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AF002,extended,000003E7
+
+[Forget]
+patch=1,EE,102AF004,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AF006,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AF318,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AF31C,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AF320,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AF324,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AF328,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AF32C,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AF330,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AF334,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AF338,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AF33C,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AF380,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AF3BC,extended,00000063
+
+[Level 999]
+patch=1,EE,102AF3BC,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AF3BC,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AF3BC,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AF3D6,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AF3D8,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AF3DA,extended,00006363
+
+[Quick Exp Gain]
+patch=1,EE,102AF438,extended,0000FFFF
+
+[Super Quick Exp Gain]
+patch=1,EE,102AF438,extended,0000FFFF
+patch=1,EE,002AF43A,extended,000000FF
+
+[Max Exp]
+patch=1,EE,202AF438,extended,C06D3E0F
+patch=1,EE,202AF43C,extended,00000011
+
+[Poison]
+patch=1,EE,102AF7C6,extended,000003E7
+
+[Sleep]
+patch=1,EE,102AF7C8,extended,000003E7
+
+[Deprave]
+patch=1,EE,102AF7CA,extended,000003E7
+
+[Forget]
+patch=1,EE,102AF7CC,extended,000003E7
+
+[Paralyze]
+patch=1,EE,102AF7CE,extended,000003E7
+
+[Infinite HP]
+patch=1,EE,202AFAE0,extended,0000270F
+
+[Infinite SP]
+patch=1,EE,202AFAE4,extended,0000270F
+
+[Max HP]
+patch=1,EE,202AFAE8,extended,0000270F
+
+[Max SP]
+patch=1,EE,202AFAEC,extended,0000270F
+
+[Max Atk]
+patch=1,EE,202AFAF0,extended,0000270F
+
+[Max Def]
+patch=1,EE,202AFAF4,extended,0000270F
+
+[Max Int]
+patch=1,EE,202AFAF8,extended,0000270F
+
+[Max Spd]
+patch=1,EE,202AFAFC,extended,0000270F
+
+[Max Hit]
+patch=1,EE,202AFB00,extended,0000270F
+
+[Max Res]
+patch=1,EE,202AFB04,extended,0000270F
+
+[Infinite Mana]
+patch=1,EE,202AFB48,extended,0000270F
+
+[Level 99]
+patch=1,EE,102AFB84,extended,00000063
+
+[Level 999]
+patch=1,EE,102AFB84,extended,000003E7
+
+[Level 5000]
+patch=1,EE,102AFB84,extended,00001388
+
+[Level 9999]
+patch=1,EE,102AFB84,extended,0000270F
+
+[Max Jm]
+patch=1,EE,102AFB9E,extended,00006363
+
+[Max Mv]
+patch=1,EE,102AFBA0,extended,00006363
+
+[Max Counter]
+patch=1,EE,102AFBA2,extended,00006363

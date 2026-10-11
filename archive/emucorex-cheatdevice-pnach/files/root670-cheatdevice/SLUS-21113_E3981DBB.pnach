@@ -1,0 +1,2494 @@
+gametitle=Atelier Iris-Eternal Mana (SLUS-21113)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902C4604,extended,0C0B72CB
+patch=1,EE,20106F38,extended,00000000
+
+[Max Gold]
+patch=1,EE,20F7F508,extended,000F423F
+
+[Always Low Time]
+patch=1,EE,20F7F50C,extended,00000000
+
+[Infinite Health (In-Battle)]
+patch=1,EE,201C3C10,extended,240203E7
+patch=1,EE,201C3C20,extended,240203E7
+
+[Infinite Mana (In-Battle)]
+patch=1,EE,201C3C18,extended,240203E7
+patch=1,EE,201C3C28,extended,240203E7
+
+[1-Hit Kills (Enemies)]
+patch=1,EE,201C3DC0,extended,24020000
+
+[Easier Manual Blocking]
+patch=1,EE,202027DC,extended,00000000
+
+[Auto Blocking]
+patch=1,EE,202028C4,extended,00000000
+patch=1,EE,20202910,extended,00000000
+patch=1,EE,2020294C,extended,00000000
+
+[Easier Critical Hits]
+patch=1,EE,2020815C,extended,00000000
+
+[Critical Hits x1000 Damage]
+patch=1,EE,10208184,extended,0000447A
+
+[Critical Hits x500 Damage]
+patch=1,EE,10208184,extended,000043FA
+
+[Critical Hits x100 Damage]
+patch=1,EE,10208184,extended,000042C8
+
+[Critical Hits x50 Damage]
+patch=1,EE,10208184,extended,00004248
+
+[Critical Hits x10 Damage]
+patch=1,EE,10208184,extended,00004120
+
+[Critical Hits x4 Damage]
+patch=1,EE,10208184,extended,00004080
+
+[Critical Hits x3 Damage]
+patch=1,EE,10208184,extended,00004040
+
+[Critical Hits x2 Damage]
+patch=1,EE,10208184,extended,00004000
+
+[Infinite Elements Usage]
+patch=1,EE,20162FC4,extended,00000000
+
+[Synthesize 1 Element For Max Elements]
+patch=1,EE,20162FC0,extended,24020064
+
+[Infinite Mana Items Usage]
+patch=1,EE,201637B4,extended,00000000
+
+[Use 1 Mana Item For Max Mana Items]
+patch=1,EE,201637B0,extended,24030009
+
+[Infinite Item Usage]
+patch=1,EE,20163ACC,extended,00000000
+
+[Use 1 Item For Max Items]
+patch=1,EE,20163AC8,extended,24030009
+
+[Quick Frienship Meter Gain]
+patch=1,EE,2017FB38,extended,24040064
+
+[Quick Super Man Condition]
+patch=1,EE,2017FAD4,extended,24040064
+
+[Lita Never Tires Out]
+patch=1,EE,20186BD0,extended,00000000
+
+[Lita Transforms To Winged Form]
+patch=1,EE,201EEEF4,extended,1000000D
+patch=1,EE,201EEEF8,extended,24060001
+
+[Hyper Mode]
+patch=1,EE,202B5984,extended,00000000
+
+[Have All Monster Log Collection]
+patch=1,EE,10F81D7E,extended,00000202
+patch=1,EE,40F81D80,extended,001E0001
+patch=1,EE,02020202,extended,00000000
+
+[Quick Level Up To 99]
+patch=1,EE,201495D4,extended,00000000
+
+[Gain 30000 Exp Per Battle]
+patch=1,EE,201495B8,extended,24657530
+
+[Gain 25000 Exp Per Battle]
+patch=1,EE,201495B8,extended,246561A8
+
+[Gain 20000 Exp Per Battle]
+patch=1,EE,201495B8,extended,24654E20
+
+[Gain 15000 Exp Per Battle]
+patch=1,EE,201495B8,extended,24653A98
+
+[Gain 10000 Exp Per Battle]
+patch=1,EE,201495B8,extended,24652710
+
+[Gain 5000 Exp Per Battle]
+patch=1,EE,201495B8,extended,24651388
+
+[Gain 1000 Exp Per Battle]
+patch=1,EE,201495B8,extended,246503E8
+
+[Always Get 300 Skill Points For Level Up]
+patch=1,EE,201498A8,extended,2443012C
+
+[Always Get 200 Skill Points For Level Up]
+patch=1,EE,201498A8,extended,244300C8
+
+[Always Get 100 Skill Points For Level Up]
+patch=1,EE,201498A8,extended,24430064
+
+[Always Get 50 Skill Points For Level Up]
+patch=1,EE,201498A8,extended,24430032
+
+[Always Get 25 Skill Points For Level Up]
+patch=1,EE,201498A8,extended,24430019
+
+[Always Get 10 Skill Points For Level Up]
+patch=1,EE,201498A8,extended,2443000A
+
+[Unlock All Ablities In Wheel]
+patch=1,EE,20F831F8,extended,02010B01
+patch=1,EE,20F831FC,extended,06050403
+patch=1,EE,20F83200,extended,0A090807
+patch=1,EE,20F83204,extended,0000FF0B
+
+[Unlock All Characters]
+patch=1,EE,40F7F814,extended,00060001
+patch=1,EE,00000001,extended,00000001
+
+[Unlock All Bonus]
+patch=1,EE,10F7F504,extended,00000300
+patch=1,EE,40F7F470,extended,001E0001
+patch=1,EE,01010101,extended,00000000
+
+[P1 Press {SELECT} For Mana Character Transformation]
+patch=1,EE,E004FFFE,extended,00E03102
+patch=1,EE,40F80EBC,extended,00050002
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,40F80F04,extended,00050002
+patch=1,EE,00000001,extended,00000000
+
+[P1 Press {L1}+{SELECT} For Mana Char Unmetamorphosis]
+patch=1,EE,E004FBFE,extended,00E03102
+patch=1,EE,40F80EBC,extended,00050002
+patch=1,EE,00000000,extended,00000000
+patch=1,EE,40F80F04,extended,00050002
+patch=1,EE,00000000,extended,00000000
+
+[Level 99]
+patch=1,EE,10F7F528,extended,00000063
+
+[Infinite Life]
+patch=1,EE,10F7F52A,extended,000003E7
+
+[Infinite Mana]
+patch=1,EE,10F7F52C,extended,000003E7
+
+[Max Life]
+patch=1,EE,10F7F52E,extended,000003E7
+
+[Max Mana]
+patch=1,EE,10F7F530,extended,000003E7
+
+[Max ATK]
+patch=1,EE,10F7F532,extended,000001F4
+
+[Max Magic]
+patch=1,EE,10F7F534,extended,000001F4
+
+[Max DEF]
+patch=1,EE,10F7F536,extended,000001F4
+
+[Max SPD]
+patch=1,EE,10F7F538,extended,000001F4
+
+[Max F RES]
+patch=1,EE,10F7F53A,extended,000001F4
+
+[Max I RES]
+patch=1,EE,10F7F53C,extended,000001F4
+
+[Max L RES]
+patch=1,EE,10F7F53E,extended,000001F4
+
+[Max D RES]
+patch=1,EE,10F7F540,extended,000001F4
+
+[Max HP Overall]
+patch=1,EE,10F7F542,extended,000003E7
+
+[Max MP Overall]
+patch=1,EE,10F7F544,extended,000003E7
+
+[Max ATK Overall]
+patch=1,EE,10F7F546,extended,000003E7
+
+[Max Magic Overall]
+patch=1,EE,10F7F548,extended,000001F4
+
+[Max DEF Overall]
+patch=1,EE,10F7F54A,extended,000001F4
+
+[Max SPD Overall]
+patch=1,EE,10F7F54C,extended,000001F4
+
+[Max F RES Overall]
+patch=1,EE,10F7F54E,extended,000001F4
+
+[Max I RES Overall]
+patch=1,EE,10F7F550,extended,000001F4
+
+[Max L RES Overall]
+patch=1,EE,10F7F552,extended,000001F4
+
+[Max D RES Overall]
+patch=1,EE,10F7F554,extended,000001F4
+
+[Quick EXP Gain]
+patch=1,EE,10F7F558,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,20F7F558,extended,000F423F
+
+[Infinite Skill Points]
+patch=1,EE,10F7F584,extended,000003E7
+
+[Skill 1]
+patch=1,EE,10F7F55E,extended,00000064
+
+[Skill 2]
+patch=1,EE,10F7F562,extended,00000064
+
+[Skill 3]
+patch=1,EE,10F7F566,extended,00000064
+
+[Skill 4]
+patch=1,EE,10F7F56A,extended,00000064
+
+[Skill 5]
+patch=1,EE,10F7F56E,extended,00000064
+
+[Skill 6]
+patch=1,EE,10F7F572,extended,00000064
+
+[Skill 7]
+patch=1,EE,10F7F576,extended,00000064
+
+[Skill 8]
+patch=1,EE,10F7F57A,extended,00000064
+
+[Level 99]
+patch=1,EE,10F7F5A4,extended,00000063
+
+[Infinite Life]
+patch=1,EE,10F7F5A6,extended,000003E7
+
+[Infinite Mana]
+patch=1,EE,10F7F5A8,extended,000003E7
+
+[Max Life]
+patch=1,EE,10F7F5AA,extended,000003E7
+
+[Max Mana]
+patch=1,EE,10F7F5AC,extended,000003E7
+
+[Max ATK]
+patch=1,EE,10F7F5AE,extended,000001F4
+
+[Max Magic]
+patch=1,EE,10F7F5B0,extended,000001F4
+
+[Max DEF]
+patch=1,EE,10F7F5B2,extended,000001F4
+
+[Max SPD]
+patch=1,EE,10F7F5B4,extended,000001F4
+
+[Max F RES]
+patch=1,EE,10F7F5B6,extended,000001F4
+
+[Max I RES]
+patch=1,EE,10F7F5B8,extended,000001F4
+
+[Max L RES]
+patch=1,EE,10F7F5BA,extended,000001F4
+
+[Max D RES]
+patch=1,EE,10F7F5BC,extended,000001F4
+
+[Max HP Overall]
+patch=1,EE,10F7F5BE,extended,000003E7
+
+[Max MP Overall]
+patch=1,EE,10F7F5C0,extended,000003E7
+
+[Max ATK Overall]
+patch=1,EE,10F7F5C2,extended,000003E7
+
+[Max Magic Overall]
+patch=1,EE,10F7F5C4,extended,000001F4
+
+[Max DEF Overall]
+patch=1,EE,10F7F5C6,extended,000001F4
+
+[Max SPD Overall]
+patch=1,EE,10F7F5C8,extended,000001F4
+
+[Max F RES Overall]
+patch=1,EE,10F7F5CA,extended,000001F4
+
+[Max I RES Overall]
+patch=1,EE,10F7F5CC,extended,000001F4
+
+[Max L RES Overall]
+patch=1,EE,10F7F5CE,extended,000001F4
+
+[Max D RES Overall]
+patch=1,EE,10F7F5D0,extended,000001F4
+
+[Quick EXP Gain]
+patch=1,EE,10F7F5D4,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,20F7F5D4,extended,000F423F
+
+[Infinite Skill Points]
+patch=1,EE,10F7F600,extended,000003E7
+
+[Skill 1]
+patch=1,EE,10F7F5DA,extended,00000064
+
+[Skill 2]
+patch=1,EE,10F7F5DE,extended,00000064
+
+[Skill 3]
+patch=1,EE,10F7F5E2,extended,00000064
+
+[Skill 4]
+patch=1,EE,10F7F5E6,extended,00000064
+
+[Skill 5]
+patch=1,EE,10F7F5EA,extended,00000064
+
+[Skill 6]
+patch=1,EE,10F7F5EE,extended,00000064
+
+[Skill 7]
+patch=1,EE,10F7F5F2,extended,00000064
+
+[Skill 8]
+patch=1,EE,10F7F5F6,extended,00000064
+
+[Level 99]
+patch=1,EE,10F7F620,extended,00000063
+
+[Infinite Life]
+patch=1,EE,10F7F622,extended,000003E7
+
+[Infinite Mana]
+patch=1,EE,10F7F624,extended,000003E7
+
+[Max Life]
+patch=1,EE,10F7F626,extended,000003E7
+
+[Max Mana]
+patch=1,EE,10F7F628,extended,000003E7
+
+[Max ATK]
+patch=1,EE,10F7F62A,extended,000001F4
+
+[Max Magic]
+patch=1,EE,10F7F62C,extended,000001F4
+
+[Max DEF]
+patch=1,EE,10F7F62E,extended,000001F4
+
+[Max SPD]
+patch=1,EE,10F7F630,extended,000001F4
+
+[Max F RES]
+patch=1,EE,10F7F632,extended,000001F4
+
+[Max I RES]
+patch=1,EE,10F7F634,extended,000001F4
+
+[Max L RES]
+patch=1,EE,10F7F636,extended,000001F4
+
+[Max D RES]
+patch=1,EE,10F7F638,extended,000001F4
+
+[Max HP Overall]
+patch=1,EE,10F7F63A,extended,000003E7
+
+[Max MP Overall]
+patch=1,EE,10F7F63C,extended,000003E7
+
+[Max ATK Overall]
+patch=1,EE,10F7F63E,extended,000003E7
+
+[Max Magic Overall]
+patch=1,EE,10F7F640,extended,000001F4
+
+[Max DEF Overall]
+patch=1,EE,10F7F642,extended,000001F4
+
+[Max SPD Overall]
+patch=1,EE,10F7F644,extended,000001F4
+
+[Max F RES Overall]
+patch=1,EE,10F7F646,extended,000001F4
+
+[Max I RES Overall]
+patch=1,EE,10F7F648,extended,000001F4
+
+[Max L RES Overall]
+patch=1,EE,10F7F64A,extended,000001F4
+
+[Max D RES Overall]
+patch=1,EE,10F7F64C,extended,000001F4
+
+[Quick EXP Gain]
+patch=1,EE,10F7F650,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,20F7F650,extended,000F423F
+
+[Infinite Skill Points]
+patch=1,EE,10F7F67C,extended,000003E7
+
+[Skill 1]
+patch=1,EE,10F7F656,extended,00000064
+
+[Skill 2]
+patch=1,EE,10F7F65A,extended,00000064
+
+[Skill 3]
+patch=1,EE,10F7F65E,extended,00000064
+
+[Skill 4]
+patch=1,EE,10F7F662,extended,00000064
+
+[Skill 5]
+patch=1,EE,10F7F666,extended,00000064
+
+[Skill 6]
+patch=1,EE,10F7F66A,extended,00000064
+
+[Skill 7]
+patch=1,EE,10F7F66E,extended,00000064
+
+[Skill 8]
+patch=1,EE,10F7F672,extended,00000064
+
+[Level 99]
+patch=1,EE,10F7F69C,extended,00000063
+
+[Infinite Life]
+patch=1,EE,10F7F69E,extended,000003E7
+
+[Infinite Mana]
+patch=1,EE,10F7F6A0,extended,000003E7
+
+[Max Life]
+patch=1,EE,10F7F6A2,extended,000003E7
+
+[Max Mana]
+patch=1,EE,10F7F6A4,extended,000003E7
+
+[Max ATK]
+patch=1,EE,10F7F6A6,extended,000001F4
+
+[Max Magic]
+patch=1,EE,10F7F6A8,extended,000001F4
+
+[Max DEF]
+patch=1,EE,10F7F6AA,extended,000001F4
+
+[Max SPD]
+patch=1,EE,10F7F6AC,extended,000001F4
+
+[Max F RES]
+patch=1,EE,10F7F6AE,extended,000001F4
+
+[Max I RES]
+patch=1,EE,10F7F6B0,extended,000001F4
+
+[Max L RES]
+patch=1,EE,10F7F6B2,extended,000001F4
+
+[Max D RES]
+patch=1,EE,10F7F6B4,extended,000001F4
+
+[Max HP Overall]
+patch=1,EE,10F7F6B6,extended,000003E7
+
+[Max MP Overall]
+patch=1,EE,10F7F6B8,extended,000003E7
+
+[Max ATK Overall]
+patch=1,EE,10F7F6BA,extended,000003E7
+
+[Max Magic Overall]
+patch=1,EE,10F7F6BC,extended,000001F4
+
+[Max DEF Overall]
+patch=1,EE,10F7F6BE,extended,000001F4
+
+[Max SPD Overall]
+patch=1,EE,10F7F6C0,extended,000001F4
+
+[Max F RES Overall]
+patch=1,EE,10F7F6C2,extended,000001F4
+
+[Max I RES Overall]
+patch=1,EE,10F7F6C4,extended,000001F4
+
+[Max L RES Overall]
+patch=1,EE,10F7F6C6,extended,000001F4
+
+[Max D RES Overall]
+patch=1,EE,10F7F6C8,extended,000001F4
+
+[Quick EXP Gain]
+patch=1,EE,10F7F6CC,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,20F7F6CC,extended,000F423F
+
+[Infinite Skill Points]
+patch=1,EE,10F7F6F8,extended,000003E7
+
+[Skill 1]
+patch=1,EE,10F7F6D2,extended,00000064
+
+[Skill 2]
+patch=1,EE,10F7F6D6,extended,00000064
+
+[Skill 3]
+patch=1,EE,10F7F6DA,extended,00000064
+
+[Skill 4]
+patch=1,EE,10F7F6DE,extended,00000064
+
+[Skill 5]
+patch=1,EE,10F7F6E2,extended,00000064
+
+[Skill 6]
+patch=1,EE,10F7F6E6,extended,00000064
+
+[Skill 7]
+patch=1,EE,10F7F6EA,extended,00000064
+
+[Skill 8]
+patch=1,EE,10F7F6EE,extended,00000064
+
+[Level 99]
+patch=1,EE,10F7F718,extended,00000063
+
+[Infinite Life]
+patch=1,EE,10F7F71A,extended,000003E7
+
+[Infinite Mana]
+patch=1,EE,10F7F71C,extended,000003E7
+
+[Max Life]
+patch=1,EE,10F7F71E,extended,000003E7
+
+[Max Mana]
+patch=1,EE,10F7F720,extended,000003E7
+
+[Max ATK]
+patch=1,EE,10F7F722,extended,000001F4
+
+[Max Magic]
+patch=1,EE,10F7F724,extended,000001F4
+
+[Max DEF]
+patch=1,EE,10F7F726,extended,000001F4
+
+[Max SPD]
+patch=1,EE,10F7F728,extended,000001F4
+
+[Max F RES]
+patch=1,EE,10F7F72A,extended,000001F4
+
+[Max I RES]
+patch=1,EE,10F7F72C,extended,000001F4
+
+[Max L RES]
+patch=1,EE,10F7F72E,extended,000001F4
+
+[Max D RES]
+patch=1,EE,10F7F730,extended,000001F4
+
+[Max HP Overall]
+patch=1,EE,10F7F732,extended,000003E7
+
+[Max MP Overall]
+patch=1,EE,10F7F734,extended,000003E7
+
+[Max ATK Overall]
+patch=1,EE,10F7F736,extended,000003E7
+
+[Max Magic Overall]
+patch=1,EE,10F7F738,extended,000001F4
+
+[Max DEF Overall]
+patch=1,EE,10F7F73A,extended,000001F4
+
+[Max SPD Overall]
+patch=1,EE,10F7F73C,extended,000001F4
+
+[Max F RES Overall]
+patch=1,EE,10F7F73E,extended,000001F4
+
+[Max I RES Overall]
+patch=1,EE,10F7F740,extended,000001F4
+
+[Max L RES Overall]
+patch=1,EE,10F7F742,extended,000001F4
+
+[Max D RES Overall]
+patch=1,EE,10F7F744,extended,000001F4
+
+[Quick EXP Gain]
+patch=1,EE,10F7F748,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,20F7F748,extended,000F423F
+
+[Infinite Skill Points]
+patch=1,EE,10F7F774,extended,000003E7
+
+[Skill 1]
+patch=1,EE,10F7F74E,extended,00000064
+
+[Skill 2]
+patch=1,EE,10F7F752,extended,00000064
+
+[Skill 3]
+patch=1,EE,10F7F756,extended,00000064
+
+[Skill 4]
+patch=1,EE,10F7F75A,extended,00000064
+
+[Skill 5]
+patch=1,EE,10F7F75E,extended,00000064
+
+[Skill 6]
+patch=1,EE,10F7F762,extended,00000064
+
+[Skill 7]
+patch=1,EE,10F7F766,extended,00000064
+
+[Skill 8]
+patch=1,EE,10F7F76A,extended,00000064
+
+[Level 99]
+patch=1,EE,10F7F794,extended,00000063
+
+[Infinite Life]
+patch=1,EE,10F7F796,extended,000003E7
+
+[Infinite Mana]
+patch=1,EE,10F7F798,extended,000003E7
+
+[Max Life]
+patch=1,EE,10F7F79A,extended,000003E7
+
+[Max Mana]
+patch=1,EE,10F7F79C,extended,000003E7
+
+[Max ATK]
+patch=1,EE,10F7F79E,extended,000001F4
+
+[Max Magic]
+patch=1,EE,10F7F7A0,extended,000001F4
+
+[Max DEF]
+patch=1,EE,10F7F7A2,extended,000001F4
+
+[Max SPD]
+patch=1,EE,10F7F7A4,extended,000001F4
+
+[Max F RES]
+patch=1,EE,10F7F7A6,extended,000001F4
+
+[Max I RES]
+patch=1,EE,10F7F7A8,extended,000001F4
+
+[Max L RES]
+patch=1,EE,10F7F7AA,extended,000001F4
+
+[Max D RES]
+patch=1,EE,10F7F7AC,extended,000001F4
+
+[Max HP Overall]
+patch=1,EE,10F7F7AE,extended,000003E7
+
+[Max MP Overall]
+patch=1,EE,10F7F7B0,extended,000003E7
+
+[Max ATK Overall]
+patch=1,EE,10F7F7B2,extended,000003E7
+
+[Max Magic Overall]
+patch=1,EE,10F7F7B4,extended,000001F4
+
+[Max DEF Overall]
+patch=1,EE,10F7F7B6,extended,000001F4
+
+[Max SPD Overall]
+patch=1,EE,10F7F7B8,extended,000001F4
+
+[Max F RES Overall]
+patch=1,EE,10F7F7BA,extended,000001F4
+
+[Max I RES Overall]
+patch=1,EE,10F7F7BC,extended,000001F4
+
+[Max L RES Overall]
+patch=1,EE,10F7F7BE,extended,000001F4
+
+[Max D RES Overall]
+patch=1,EE,10F7F7C0,extended,000001F4
+
+[Quick EXP Gain]
+patch=1,EE,10F7F7C4,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,20F7F7C4,extended,000F423F
+
+[Infinite Skill Points]
+patch=1,EE,10F7F7F0,extended,000003E7
+
+[Skill 1]
+patch=1,EE,10F7F7CA,extended,00000064
+
+[Skill 2]
+patch=1,EE,10F7F7CE,extended,00000064
+
+[Skill 3]
+patch=1,EE,10F7F7D2,extended,00000064
+
+[Skill 4]
+patch=1,EE,10F7F7D6,extended,00000064
+
+[Skill 5]
+patch=1,EE,10F7F7DA,extended,00000064
+
+[Skill 6]
+patch=1,EE,10F7F7DE,extended,00000064
+
+[Skill 7]
+patch=1,EE,10F7F7E2,extended,00000064
+
+[Skill 8]
+patch=1,EE,10F7F7E6,extended,00000064
+
+[Fire Element]
+patch=1,EE,00F81B88,extended,00000002
+
+[Air Element]
+patch=1,EE,00F81B89,extended,00000002
+
+[Water Element]
+patch=1,EE,00F81B8A,extended,00000002
+
+[Light Element]
+patch=1,EE,00F81B8B,extended,00000002
+
+[Dark Element]
+patch=1,EE,00F81B8C,extended,00000002
+
+[Stone Element]
+patch=1,EE,00F81B8D,extended,00000002
+
+[Wood Element]
+patch=1,EE,00F81B8E,extended,00000002
+
+[Life Element]
+patch=1,EE,00F81B8F,extended,00000002
+
+[Time Element]
+patch=1,EE,00F81B90,extended,00000002
+
+[Power Element]
+patch=1,EE,00F81B91,extended,00000002
+
+[Lightning Element]
+patch=1,EE,00F81B92,extended,00000002
+
+[Spirit Element]
+patch=1,EE,00F81B93,extended,00000002
+
+[Holy Element]
+patch=1,EE,00F81B94,extended,00000002
+
+[Evil Element]
+patch=1,EE,00F81B95,extended,00000002
+
+[All Mana Elements]
+patch=1,EE,40F81B88,extended,00030001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,10F81B94,extended,00000202
+
+[Fire Element]
+patch=1,EE,10F80E98,extended,00000063
+
+[Air Element]
+patch=1,EE,10F80E9A,extended,00000063
+
+[Water Element]
+patch=1,EE,10F80E9C,extended,00000063
+
+[Light Element]
+patch=1,EE,10F80E9E,extended,00000063
+
+[Dark Element]
+patch=1,EE,10F80EA0,extended,00000063
+
+[Stone Element]
+patch=1,EE,10F80EA2,extended,00000063
+
+[Wood Element]
+patch=1,EE,10F80EA4,extended,00000063
+
+[Life Element]
+patch=1,EE,10F80EA6,extended,00000063
+
+[Time Element]
+patch=1,EE,10F80EA8,extended,00000063
+
+[Power Element]
+patch=1,EE,10F80EAA,extended,00000063
+
+[Lightning Element]
+patch=1,EE,10F80EAC,extended,00000063
+
+[Spirit Element]
+patch=1,EE,10F80EAE,extended,00000063
+
+[Holy Element]
+patch=1,EE,10F80EB0,extended,00000063
+
+[Evil Element]
+patch=1,EE,10F80EB2,extended,00000063
+
+[All Mana Elements]
+patch=1,EE,40F80E98,extended,00070001
+patch=1,EE,00630063,extended,00000000
+
+[Heal Jar]
+patch=1,EE,10F80F28,extended,00000009
+
+[Heal Bulb]
+patch=1,EE,10F80F2A,extended,00000009
+
+[Elixir]
+patch=1,EE,10F80F2C,extended,00000009
+
+[Mana Jar]
+patch=1,EE,10F80F2E,extended,00000009
+
+[Aeroangel]
+patch=1,EE,10F80F30,extended,00000009
+
+[Ether Bulb]
+patch=1,EE,10F80F32,extended,00000009
+
+[Meteor]
+patch=1,EE,10F80F34,extended,00000009
+
+[Heaven Geode]
+patch=1,EE,10F80F36,extended,00000009
+
+[Flame]
+patch=1,EE,10F80F38,extended,00000009
+
+[Dragon Gem]
+patch=1,EE,10F80F3A,extended,00000009
+
+[Bomb Ice]
+patch=1,EE,10F80F3C,extended,00000009
+
+[Lightning Rod]
+patch=1,EE,10F80F3E,extended,00000009
+
+[Dirk]
+patch=1,EE,10F80F40,extended,00000009
+
+[Obake Bag]
+patch=1,EE,10F80F42,extended,00000009
+
+[Vamp Fangs]
+patch=1,EE,10F80F44,extended,00000009
+
+[Unholy Water]
+patch=1,EE,10F80F46,extended,00000009
+
+[Sleepaid]
+patch=1,EE,10F80F48,extended,00000009
+
+[Basilisk Eye]
+patch=1,EE,10F80F4A,extended,00000009
+
+[Love Gem]
+patch=1,EE,10F80F4C,extended,00000009
+
+[Laruba Key]
+patch=1,EE,10F80F4E,extended,00000009
+
+[Cure Jar]
+patch=1,EE,10F80F50,extended,00000009
+
+[Herbal Drop]
+patch=1,EE,10F80F52,extended,00000009
+
+[Movagain]
+patch=1,EE,10F80F54,extended,00000009
+
+[Uroborus]
+patch=1,EE,10F80F56,extended,00000009
+
+[Newlife]
+patch=1,EE,10F80F58,extended,00000009
+
+[Refractor]
+patch=1,EE,10F80F5A,extended,00000009
+
+[Diselement]
+patch=1,EE,10F80F5C,extended,00000009
+
+[Divine Shield]
+patch=1,EE,10F80F5E,extended,00000009
+
+[Mark Of Courage]
+patch=1,EE,10F80F60,extended,00000009
+
+[Mark Of Weakness]
+patch=1,EE,10F80F62,extended,00000009
+
+[All Mana Items Owned]
+patch=1,EE,40F80F28,extended,000F0001
+patch=1,EE,00090009,extended,00000000
+
+[Fest Rock]
+patch=1,EE,10F80F68,extended,00000009
+
+[Fest Stone]
+patch=1,EE,10F80F6A,extended,00000009
+
+[Silver Legien]
+patch=1,EE,10F80F6C,extended,00000009
+
+[Red Legien]
+patch=1,EE,10F80F6E,extended,00000009
+
+[Gold Legien]
+patch=1,EE,10F80F70,extended,00000009
+
+[Comet Stone]
+patch=1,EE,10F80F72,extended,00000009
+
+[Pure Water]
+patch=1,EE,10F80F74,extended,00000009
+
+[Foul Water]
+patch=1,EE,10F80F76,extended,00000009
+
+[Well Water]
+patch=1,EE,10F80F78,extended,00000009
+
+[River Water]
+patch=1,EE,10F80F7A,extended,00000009
+
+[Frozen Rain]
+patch=1,EE,10F80F7C,extended,00000009
+
+[Fresh Dancing]
+patch=1,EE,10F80F7E,extended,00000009
+
+[Old Dancing]
+patch=1,EE,10F80F80,extended,00000009
+
+[Fresh Smoking]
+patch=1,EE,10F80F82,extended,00000009
+
+[Old Smoking]
+patch=1,EE,10F80F84,extended,00000009
+
+[Fresh Poison]
+patch=1,EE,10F80F86,extended,00000009
+
+[Old Poison]
+patch=1,EE,10F80F88,extended,00000009
+
+[Extreme Poison]
+patch=1,EE,10F80F8A,extended,00000009
+
+[Kankari Nuts]
+patch=1,EE,10F80F8C,extended,00000009
+
+[Garigari Nuts]
+patch=1,EE,10F80F8E,extended,00000009
+
+[Red Pepper]
+patch=1,EE,10F80F90,extended,00000009
+
+[Green Pepper]
+patch=1,EE,10F80F92,extended,00000009
+
+[Lando]
+patch=1,EE,10F80F94,extended,00000009
+
+[Sweet Lando]
+patch=1,EE,10F80F96,extended,00000009
+
+[Lovely Lando]
+patch=1,EE,10F80F98,extended,00000009
+
+[Twisted Lando]
+patch=1,EE,10F80F9A,extended,00000009
+
+[Tingleberry]
+patch=1,EE,10F80F9C,extended,00000009
+
+[Stained Glass]
+patch=1,EE,10F80F9E,extended,00000009
+
+[Pretty Stained]
+patch=1,EE,10F80FA0,extended,00000009
+
+[Glow Stained]
+patch=1,EE,10F80FA2,extended,00000009
+
+[Shatter Stained]
+patch=1,EE,10F80FA4,extended,00000009
+
+[Log]
+patch=1,EE,10F80FA6,extended,00000009
+
+[Big Log]
+patch=1,EE,10F80FA8,extended,00000009
+
+[Skinny Log]
+patch=1,EE,10F80FAA,extended,00000009
+
+[Magi Grass]
+patch=1,EE,10F80FAC,extended,00000009
+
+[Tall Magi Grass]
+patch=1,EE,10F80FAE,extended,00000009
+
+[Pinenuts]
+patch=1,EE,10F80FB0,extended,00000009
+
+[Old Pinenuts]
+patch=1,EE,10F80FB2,extended,00000009
+
+[Unue]
+patch=1,EE,10F80FB4,extended,00000009
+
+[Nue]
+patch=1,EE,10F80FB6,extended,00000009
+
+[Spoiled Neu]
+patch=1,EE,10F80FB8,extended,00000009
+
+[Dunkelhite]
+patch=1,EE,10F80FBA,extended,00000009
+
+[Raflesia]
+patch=1,EE,10F80FBC,extended,00000009
+
+[Big Pumpking]
+patch=1,EE,10F80FBE,extended,00000009
+
+[Hollow Pumpkin]
+patch=1,EE,10F80FC0,extended,00000009
+
+[Carrot]
+patch=1,EE,10F80FC2,extended,00000009
+
+[Spoiled Carrot]
+patch=1,EE,10F80FC4,extended,00000009
+
+[Hard Carrot]
+patch=1,EE,10F80FC6,extended,00000009
+
+[Kavo Potato]
+patch=1,EE,10F80FC8,extended,00000009
+
+[Belgrade Potato]
+patch=1,EE,10F80FCA,extended,00000009
+
+[Joker Fish]
+patch=1,EE,10F80FCC,extended,00000009
+
+[Fish Island]
+patch=1,EE,10F80FCE,extended,00000009
+
+[Devil Fish]
+patch=1,EE,10F80FD0,extended,00000009
+
+[Mountain Fish]
+patch=1,EE,10F80FD2,extended,00000009
+
+[Palm Fish]
+patch=1,EE,10F80FD4,extended,00000009
+
+[Aqua Snowbug]
+patch=1,EE,10F80FD6,extended,00000009
+
+[Snowbug]
+patch=1,EE,10F80FD8,extended,00000009
+
+[Palm Snowbug]
+patch=1,EE,10F80FDA,extended,00000009
+
+[Puniball]
+patch=1,EE,10F80FDC,extended,00000009
+
+[Faux Puniball]
+patch=1,EE,10F80FDE,extended,00000009
+
+[Wild Meat]
+patch=1,EE,10F80FE0,extended,00000009
+
+[Spoiled Meat]
+patch=1,EE,10F80FE2,extended,00000009
+
+[Animal Paw]
+patch=1,EE,10F80FE4,extended,00000009
+
+[Baji Poison]
+patch=1,EE,10F80FE6,extended,00000009
+
+[Baji Serum]
+patch=1,EE,10F80FE8,extended,00000009
+
+[Pikohammer]
+patch=1,EE,10F80FEA,extended,00000009
+
+[Shifty Eye]
+patch=1,EE,10F80FEC,extended,00000009
+
+[Cat Eye]
+patch=1,EE,10F80FEE,extended,00000009
+
+[Phoenix Quill]
+patch=1,EE,10F80FF0,extended,00000009
+
+[Phoenix Tail]
+patch=1,EE,10F80FF2,extended,00000009
+
+[Crank Snake]
+patch=1,EE,10F80FF4,extended,00000009
+
+[Love Poems]
+patch=1,EE,10F80FF6,extended,00000009
+
+[Hit List]
+patch=1,EE,10F80FF8,extended,00000009
+
+[Swimsuit]
+patch=1,EE,10F80FFA,extended,00000009
+
+[Scandal Bikini]
+patch=1,EE,10F80FFC,extended,00000009
+
+[Sexy Bikini]
+patch=1,EE,10F80FFE,extended,00000009
+
+[Red Pants]
+patch=1,EE,10F81000,extended,00000009
+
+[Passion Pants]
+patch=1,EE,10F81002,extended,00000009
+
+[Dragon Tongue]
+patch=1,EE,10F81004,extended,00000009
+
+[Dragon Horn]
+patch=1,EE,10F81006,extended,00000009
+
+[Demon Ring]
+patch=1,EE,10F81008,extended,00000009
+
+[Astral Sphere]
+patch=1,EE,10F8100A,extended,00000009
+
+[Infinite Wings]
+patch=1,EE,10F8100C,extended,00000009
+
+[Spice Powder]
+patch=1,EE,10F8100E,extended,00000009
+
+[Green Powder]
+patch=1,EE,10F81010,extended,00000009
+
+[Red Powder]
+patch=1,EE,10F81012,extended,00000009
+
+[Wax]
+patch=1,EE,10F81014,extended,00000009
+
+[Salt]
+patch=1,EE,10F81016,extended,00000009
+
+[Flour]
+patch=1,EE,10F81018,extended,00000009
+
+[Goat Milk]
+patch=1,EE,10F8101A,extended,00000009
+
+[Milk]
+patch=1,EE,10F8101C,extended,00000009
+
+[Canola Oil]
+patch=1,EE,10F8101E,extended,00000009
+
+[Machine Oil]
+patch=1,EE,10F81020,extended,00000009
+
+[Castor Oil]
+patch=1,EE,10F81022,extended,00000009
+
+[Ale]
+patch=1,EE,10F81024,extended,00000009
+
+[Red Wine]
+patch=1,EE,10F81026,extended,00000009
+
+[Rock Sugar]
+patch=1,EE,10F81028,extended,00000009
+
+[Brown Sugar]
+patch=1,EE,10F8102A,extended,00000009
+
+[Honey]
+patch=1,EE,10F8102C,extended,00000009
+
+[Maple Syrup]
+patch=1,EE,10F8102E,extended,00000009
+
+[Flax Cloth]
+patch=1,EE,10F81030,extended,00000009
+
+[Cotton Cloth]
+patch=1,EE,10F81032,extended,00000009
+
+[Silk]
+patch=1,EE,10F81034,extended,00000009
+
+[String]
+patch=1,EE,10F81036,extended,00000009
+
+[Thin Metal Rod]
+patch=1,EE,10F81038,extended,00000009
+
+[Thick Metal Rod]
+patch=1,EE,10F8103A,extended,00000009
+
+[Gold Metal Rod]
+patch=1,EE,10F8103C,extended,00000009
+
+[Small Gear]
+patch=1,EE,10F8103E,extended,00000009
+
+[Tiny Gear]
+patch=1,EE,10F81040,extended,00000009
+
+[Invisible Gear]
+patch=1,EE,10F81042,extended,00000009
+
+[Large Gear]
+patch=1,EE,10F81044,extended,00000009
+
+[Metallic Gear]
+patch=1,EE,10F81046,extended,00000009
+
+[Gear Sans-Gears]
+patch=1,EE,10F81048,extended,00000009
+
+[Golden Gear]
+patch=1,EE,10F8104A,extended,00000009
+
+[Broken Handle]
+patch=1,EE,10F8104C,extended,00000009
+
+[Gold Handle]
+patch=1,EE,10F8104E,extended,00000009
+
+[Gold Cog]
+patch=1,EE,10F81050,extended,00000009
+
+[Pendelock]
+patch=1,EE,10F81052,extended,00000009
+
+[Mini Pendelock]
+patch=1,EE,10F81054,extended,00000009
+
+[Glowgrass]
+patch=1,EE,10F81056,extended,00000009
+
+[Dry Glowgrass]
+patch=1,EE,10F81058,extended,00000009
+
+[Sweet Glowgrass]
+patch=1,EE,10F8105A,extended,00000009
+
+[Moust Glowgrass]
+patch=1,EE,10F8105C,extended,00000009
+
+[Crystalite]
+patch=1,EE,10F8105E,extended,00000009
+
+[Crystaleavy]
+patch=1,EE,10F81060,extended,00000009
+
+[Star Piece]
+patch=1,EE,10F81062,extended,00000009
+
+[Sylph's Kiss]
+patch=1,EE,10F81064,extended,00000009
+
+[Groovecube]
+patch=1,EE,10F81066,extended,00000009
+
+[Cueparts]
+patch=1,EE,10F81068,extended,00000009
+
+[Prismoon]
+patch=1,EE,10F8106A,extended,00000009
+
+[Star Prism]
+patch=1,EE,10F8106C,extended,00000009
+
+[Spirit Protect]
+patch=1,EE,10F8106E,extended,00000009
+
+[Spirit Prary]
+patch=1,EE,10F81070,extended,00000009
+
+[Mana Moebius]
+patch=1,EE,10F81072,extended,00000009
+
+[Magic In 7 Days]
+patch=1,EE,10F81074,extended,00000009
+
+[Me, Myself & Bomb]
+patch=1,EE,10F81076,extended,00000009
+
+[Master Of Magic]
+patch=1,EE,10F81078,extended,00000009
+
+[Strange Dict]
+patch=1,EE,10F8107A,extended,00000009
+
+[Peach Cocktail]
+patch=1,EE,10F8107C,extended,00000009
+
+[Lando Sour]
+patch=1,EE,10F8107E,extended,00000009
+
+[Karikari Liquor]
+patch=1,EE,10F81080,extended,00000009
+
+[Garigari Liquor]
+patch=1,EE,10F81082,extended,00000009
+
+[Stardust]
+patch=1,EE,10F81084,extended,00000009
+
+[Tinglecannon]
+patch=1,EE,10F81086,extended,00000009
+
+[Hell Soju]
+patch=1,EE,10F81088,extended,00000009
+
+[Herbal Elixer]
+patch=1,EE,10F8108A,extended,00000009
+
+[Nectar]
+patch=1,EE,10F8108C,extended,00000009
+
+[God's Dance]
+patch=1,EE,10F8108E,extended,00000009
+
+[Dragon Slayer]
+patch=1,EE,10F81090,extended,00000009
+
+[? Slayer]
+patch=1,EE,10F81092,extended,00000009
+
+[? Slayer 1]
+patch=1,EE,10F81094,extended,00000009
+
+[Toma Sake]
+patch=1,EE,10F81096,extended,00000009
+
+[Nekotreat]
+patch=1,EE,10F81098,extended,00000009
+
+[Hot Nekotreat]
+patch=1,EE,10F8109A,extended,00000009
+
+[Nekotreat EX]
+patch=1,EE,10F8109C,extended,00000009
+
+[Powder]
+patch=1,EE,10F8109E,extended,00000009
+
+[Sashimi]
+patch=1,EE,10F810A0,extended,00000009
+
+[Sashimi 2]
+patch=1,EE,10F810A2,extended,00000009
+
+[Sashimi 3]
+patch=1,EE,10F810A4,extended,00000009
+
+[Sashimi 4]
+patch=1,EE,10F810A6,extended,00000009
+
+[Sashimi 5]
+patch=1,EE,10F810A8,extended,00000009
+
+[Grilled Fungo]
+patch=1,EE,10F810AA,extended,00000009
+
+[Grilled ? Fungo]
+patch=1,EE,10F810AC,extended,00000009
+
+[Grilled ? Fungo 2]
+patch=1,EE,10F810AE,extended,00000009
+
+[Grilled ? Fungo 3]
+patch=1,EE,10F810B0,extended,00000009
+
+[Grilled ? Fungo 4]
+patch=1,EE,10F810B2,extended,00000009
+
+[Meuniere]
+patch=1,EE,10F810B4,extended,00000009
+
+[Jaja Bowl]
+patch=1,EE,10F810B6,extended,00000009
+
+[Bitter Steak]
+patch=1,EE,10F810B8,extended,00000009
+
+[Japanese Meal]
+patch=1,EE,10F810BA,extended,00000009
+
+[Eyescargo]
+patch=1,EE,10F810BC,extended,00000009
+
+[Dragon Tongue]
+patch=1,EE,10F810BE,extended,00000009
+
+[The Last Supper]
+patch=1,EE,10F810C0,extended,00000009
+
+[Purgaroni]
+patch=1,EE,10F810C2,extended,00000009
+
+[Shangri-La]
+patch=1,EE,10F810C4,extended,00000009
+
+[Full House]
+patch=1,EE,10F810C6,extended,00000009
+
+[Sitar]
+patch=1,EE,10F810C8,extended,00000009
+
+[Eidaltone]
+patch=1,EE,10F810CA,extended,00000009
+
+[Bread Crumbs]
+patch=1,EE,10F810CC,extended,00000009
+
+[Baking Powder]
+patch=1,EE,10F810CE,extended,00000009
+
+[Secret Ingredient]
+patch=1,EE,10F810D0,extended,00000009
+
+[Fluffy Roll]
+patch=1,EE,10F810D2,extended,00000009
+
+[Poofy Bread]
+patch=1,EE,10F810D4,extended,00000009
+
+[Baked Pie]
+patch=1,EE,10F810D6,extended,00000009
+
+[Fruit Pie]
+patch=1,EE,10F810D8,extended,00000009
+
+[Blaire Special]
+patch=1,EE,10F810DA,extended,00000009
+
+[Bun Ala Fran]
+patch=1,EE,10F810DC,extended,00000009
+
+[Teddybear Roll]
+patch=1,EE,10F810DE,extended,00000009
+
+[Rosie Ann Bun]
+patch=1,EE,10F810E0,extended,00000009
+
+[Rosie Ann Bun 2]
+patch=1,EE,10F810E2,extended,00000009
+
+[Rosie Ann Bun 3]
+patch=1,EE,10F810E4,extended,00000009
+
+[Rosie Ann Bun 4]
+patch=1,EE,10F810E6,extended,00000009
+
+[Rosie Ann Bun 5]
+patch=1,EE,10F810E8,extended,00000009
+
+[Rosie Ann Bun 6]
+patch=1,EE,10F810EA,extended,00000009
+
+[Rosie Ann Bun 7]
+patch=1,EE,10F810EC,extended,00000009
+
+[Rosie Ann Bun 8]
+patch=1,EE,10F810EE,extended,00000009
+
+[Cookie Sandwich]
+patch=1,EE,10F810F0,extended,00000009
+
+[Leheruun Cream]
+patch=1,EE,10F810F2,extended,00000009
+
+[Yogurt Pocket]
+patch=1,EE,10F810F4,extended,00000009
+
+[Amalgam Candy]
+patch=1,EE,10F810F6,extended,00000009
+
+[Golden Sugar]
+patch=1,EE,10F810F8,extended,00000009
+
+[Caramel Cube]
+patch=1,EE,10F810FA,extended,00000009
+
+[Sour Block]
+patch=1,EE,10F810FC,extended,00000009
+
+[Salty Frieds]
+patch=1,EE,10F810FE,extended,00000009
+
+[Twister Candy]
+patch=1,EE,10F81100,extended,00000009
+
+[Dog Candy]
+patch=1,EE,10F81102,extended,00000009
+
+[Animal Crackers]
+patch=1,EE,10F81104,extended,00000009
+
+[Astral Crackers]
+patch=1,EE,10F81106,extended,00000009
+
+[Cheesecake]
+patch=1,EE,10F81108,extended,00000009
+
+[Berry Mousse]
+patch=1,EE,10F8110A,extended,00000009
+
+[Bavarian Banana]
+patch=1,EE,10F8110C,extended,00000009
+
+[Pumpkin Tart]
+patch=1,EE,10F8110E,extended,00000009
+
+[Tiramisu]
+patch=1,EE,10F81110,extended,00000009
+
+[Chocolate Cake]
+patch=1,EE,10F81112,extended,00000009
+
+[Unipuni Pudding]
+patch=1,EE,10F81114,extended,00000009
+
+[Wedding Cake]
+patch=1,EE,10F81116,extended,00000009
+
+[Snickerdoodle]
+patch=1,EE,10F81118,extended,00000009
+
+[Sweet House]
+patch=1,EE,10F8111A,extended,00000009
+
+[Dead Bread]
+patch=1,EE,10F8111C,extended,00000009
+
+[Offensive Bun]
+patch=1,EE,10F8111E,extended,00000009
+
+[Offensive Roll]
+patch=1,EE,10F81120,extended,00000009
+
+[Hute's Favorite]
+patch=1,EE,10F81122,extended,00000009
+
+[Toasted Bagel]
+patch=1,EE,10F81124,extended,00000009
+
+[Burnt Bagel]
+patch=1,EE,10F81126,extended,00000009
+
+[Ration Bun]
+patch=1,EE,10F81128,extended,00000009
+
+[Ration Snack]
+patch=1,EE,10F8112A,extended,00000009
+
+[Flute Candy]
+patch=1,EE,10F8112C,extended,00000009
+
+[Drum Crackers]
+patch=1,EE,10F8112E,extended,00000009
+
+[Leftovers]
+patch=1,EE,10F81130,extended,00000009
+
+[Medicine]
+patch=1,EE,10F81132,extended,00000009
+
+[Blue Bull]
+patch=1,EE,10F81134,extended,00000009
+
+[For Lita]
+patch=1,EE,10F81136,extended,00000009
+
+[To Lita]
+patch=1,EE,10F81138,extended,00000009
+
+[Tranquilizer]
+patch=1,EE,10F8113A,extended,00000009
+
+[Strong Medicine]
+patch=1,EE,10F8113C,extended,00000009
+
+[Crazy Bull !]
+patch=1,EE,10F8113E,extended,00000009
+
+[Love Bun]
+patch=1,EE,10F81140,extended,00000009
+
+[Love Bun 2]
+patch=1,EE,10F81142,extended,00000009
+
+[Love Bun 3]
+patch=1,EE,10F81144,extended,00000009
+
+[Love Bun 4]
+patch=1,EE,10F81146,extended,00000009
+
+[Love Bun 5]
+patch=1,EE,10F81148,extended,00000009
+
+[Love Bun 6]
+patch=1,EE,10F8114A,extended,00000009
+
+[Amel]
+patch=1,EE,10F8114C,extended,00000009
+
+[For Lita 2]
+patch=1,EE,10F8114E,extended,00000009
+
+[For Klein]
+patch=1,EE,10F81150,extended,00000009
+
+[Pendant]
+patch=1,EE,10F81152,extended,00000009
+
+[Pendant 2]
+patch=1,EE,10F81154,extended,00000009
+
+[Don's Clothes]
+patch=1,EE,10F81156,extended,00000009
+
+[Clothes]
+patch=1,EE,10F81158,extended,00000009
+
+[Stage Costume]
+patch=1,EE,10F8115A,extended,00000009
+
+[Outfit For Lita]
+patch=1,EE,10F8115C,extended,00000009
+
+[Fairy Clothes]
+patch=1,EE,10F8115E,extended,00000009
+
+[Fairy Clothes 2]
+patch=1,EE,10F81160,extended,00000009
+
+[War Tuxedo]
+patch=1,EE,10F81162,extended,00000009
+
+[Fairy Clothes 3]
+patch=1,EE,10F81164,extended,00000009
+
+[Bunny Ears]
+patch=1,EE,10F81166,extended,00000009
+
+[Paw Gloves]
+patch=1,EE,10F81168,extended,00000009
+
+[Bunny Suit]
+patch=1,EE,10F8116A,extended,00000009
+
+[Fairy Clothes 4]
+patch=1,EE,10F8116C,extended,00000009
+
+[Veola's Simwear]
+patch=1,EE,10F8116E,extended,00000009
+
+[Veola Brand]
+patch=1,EE,10F81170,extended,00000009
+
+[Empty Box]
+patch=1,EE,10F81172,extended,00000009
+
+[Vacuum Cleaner]
+patch=1,EE,10F81174,extended,00000009
+
+[Vacuum Cleaner 2]
+patch=1,EE,10F81176,extended,00000009
+
+[Paint]
+patch=1,EE,10F81178,extended,00000009
+
+[Vampire's Kiss]
+patch=1,EE,10F8117A,extended,00000009
+
+[6 String Accoustic]
+patch=1,EE,10F8117C,extended,00000009
+
+[Imitation Sitar]
+patch=1,EE,10F8117E,extended,00000009
+
+[Virum Horn]
+patch=1,EE,10F81180,extended,00000009
+
+[World Atlas]
+patch=1,EE,10F81182,extended,00000009
+
+[Map Of The Stars]
+patch=1,EE,10F81184,extended,00000009
+
+[Vigilant Eye]
+patch=1,EE,10F81186,extended,00000009
+
+[Stretch/Stretchy]
+patch=1,EE,10F81188,extended,00000009
+
+[Slingshot]
+patch=1,EE,10F8118A,extended,00000009
+
+[Magic Paper]
+patch=1,EE,10F8118C,extended,00000009
+
+[Liquid Emptiness]
+patch=1,EE,10F8118E,extended,00000009
+
+[Angel Quill Pen]
+patch=1,EE,10F81190,extended,00000009
+
+[Devil Quill Pen]
+patch=1,EE,10F81192,extended,00000009
+
+[Nonbouncy Ball]
+patch=1,EE,10F81194,extended,00000009
+
+[Globe Frame]
+patch=1,EE,10F81196,extended,00000009
+
+[Globe]
+patch=1,EE,10F81198,extended,00000009
+
+[Globe 2]
+patch=1,EE,10F8119A,extended,00000009
+
+[Globe 3]
+patch=1,EE,10F8119C,extended,00000009
+
+[Felios Globe]
+patch=1,EE,10F8119E,extended,00000009
+
+[Bomb]
+patch=1,EE,10F811A0,extended,00000009
+
+[Bomb 2]
+patch=1,EE,10F811A2,extended,00000009
+
+[Bomb 3]
+patch=1,EE,10F811A4,extended,00000009
+
+[Spike Bomb]
+patch=1,EE,10F811A6,extended,00000009
+
+[Spike Bomb 2]
+patch=1,EE,10F811A8,extended,00000009
+
+[Spike Bomb 3]
+patch=1,EE,10F811AA,extended,00000009
+
+[???? Craft]
+patch=1,EE,10F811AC,extended,00000009
+
+[?? Craft]
+patch=1,EE,10F811AE,extended,00000009
+
+[Nano Craft]
+patch=1,EE,10F811B0,extended,00000009
+
+[Craft]
+patch=1,EE,10F811B2,extended,00000009
+
+[Deka Craft]
+patch=1,EE,10F811B4,extended,00000009
+
+[?? Craft 2]
+patch=1,EE,10F811B6,extended,00000009
+
+[?? Craft 3]
+patch=1,EE,10F811B8,extended,00000009
+
+[?? Craft 4]
+patch=1,EE,10F811BA,extended,00000009
+
+[??? Craft]
+patch=1,EE,10F811BC,extended,00000009
+
+[?? Craft 5]
+patch=1,EE,10F811BE,extended,00000009
+
+[Rocket Flame]
+patch=1,EE,10F811C0,extended,00000009
+
+[Milk Scope]
+patch=1,EE,10F811C2,extended,00000009
+
+[Milk Scope 2]
+patch=1,EE,10F811C4,extended,00000009
+
+[Comet Jewel]
+patch=1,EE,10F811C6,extended,00000009
+
+[Metal Pipe]
+patch=1,EE,10F811C8,extended,00000009
+
+[Magic Pipe]
+patch=1,EE,10F811CA,extended,00000009
+
+[Rainbow Disk]
+patch=1,EE,10F811CC,extended,00000009
+
+[Spiteful Stone]
+patch=1,EE,10F811CE,extended,00000009
+
+[Moebius Bolt]
+patch=1,EE,10F811D0,extended,00000009
+
+[Magnifying Prism]
+patch=1,EE,10F811D2,extended,00000009
+
+[Un-Microfier]
+patch=1,EE,10F811D4,extended,00000009
+
+[Organite]
+patch=1,EE,10F811D6,extended,00000009
+
+[Annual Gear]
+patch=1,EE,10F811D8,extended,00000009
+
+[Twilight Board]
+patch=1,EE,10F811DA,extended,00000009
+
+[Chronolex]
+patch=1,EE,10F811DC,extended,00000009
+
+[Klein's Cane]
+patch=1,EE,10F811DE,extended,00000009
+
+[Wing Staff]
+patch=1,EE,10F811E0,extended,00000009
+
+[Iron Mace]
+patch=1,EE,10F811E2,extended,00000009
+
+[Battle Mace]
+patch=1,EE,10F811E4,extended,00000009
+
+[Heavy Mace]
+patch=1,EE,10F811E6,extended,00000009
+
+[Fire Cane]
+patch=1,EE,10F811E8,extended,00000009
+
+[Blizzard Cane]
+patch=1,EE,10F811EA,extended,00000009
+
+[Lightning Cane]
+patch=1,EE,10F811EC,extended,00000009
+
+[Fairy Cane]
+patch=1,EE,10F811EE,extended,00000009
+
+[Hulking Smasher]
+patch=1,EE,10F811F0,extended,00000009
+
+[Legendary Cane]
+patch=1,EE,10F811F2,extended,00000009
+
+[Wisdom Cane]
+patch=1,EE,10F811F4,extended,00000009
+
+[Astral Cane]
+patch=1,EE,10F811F6,extended,00000009
+
+[Prsim Staff]
+patch=1,EE,10F811F8,extended,00000009
+
+[Mute Staff]
+patch=1,EE,10F811FA,extended,00000009
+
+[Divine Cane]
+patch=1,EE,10F811FC,extended,00000009
+
+[Zeldalia's cane]
+patch=1,EE,10F811FE,extended,00000009
+
+[Claw]
+patch=1,EE,10F81200,extended,00000009
+
+[Sistus]
+patch=1,EE,10F81202,extended,00000009
+
+[Eagle Gauntlet]
+patch=1,EE,10F81204,extended,00000009
+
+[Knuckle Blade]
+patch=1,EE,10F81206,extended,00000009
+
+[Fairy Claw]
+patch=1,EE,10F81208,extended,00000009
+
+[Dragon Claw]
+patch=1,EE,10F8120A,extended,00000009
+
+[Crystal Claw]
+patch=1,EE,10F8120C,extended,00000009
+
+[Astral Gauntlet]
+patch=1,EE,10F8120E,extended,00000009
+
+[Zagenhend]
+patch=1,EE,10F81210,extended,00000009
+
+[Ebony Claw]
+patch=1,EE,10F81212,extended,00000009
+
+[Whip Sword]
+patch=1,EE,10F81214,extended,00000009
+
+[Long Sword]
+patch=1,EE,10F81216,extended,00000009
+
+[Falcutta]
+patch=1,EE,10F81218,extended,00000009
+
+[Robin's Sword]
+patch=1,EE,10F8121A,extended,00000009
+
+[Poison Blade]
+patch=1,EE,10F8121C,extended,00000009
+
+[Claymore]
+patch=1,EE,10F8121E,extended,00000009
+
+[Fairy Blade]
+patch=1,EE,10F81220,extended,00000009
+
+[Gilded Sword]
+patch=1,EE,10F81222,extended,00000009
+
+[Demon Horn]
+patch=1,EE,10F81224,extended,00000009
+
+[Flamberg]
+patch=1,EE,10F81226,extended,00000009
+
+[Phantom Blade]
+patch=1,EE,10F81228,extended,00000009
+
+[Para Sword]
+patch=1,EE,10F8122A,extended,00000009
+
+[Angel Blade]
+patch=1,EE,10F8122C,extended,00000009
+
+[Dragon Slayer]
+patch=1,EE,10F8122E,extended,00000009
+
+[Devil Sword Gram]
+patch=1,EE,10F81230,extended,00000009
+
+[Dilvine]
+patch=1,EE,10F81232,extended,00000009
+
+[Eden Blade]
+patch=1,EE,10F81234,extended,00000009
+
+[Bow Gun]
+patch=1,EE,10F81236,extended,00000009
+
+[Crossbow]
+patch=1,EE,10F81238,extended,00000009
+
+[Heavy Bow]
+patch=1,EE,10F8123A,extended,00000009
+
+[Edge Cast]
+patch=1,EE,10F8123C,extended,00000009
+
+[Catapult]
+patch=1,EE,10F8123E,extended,00000009
+
+[Devil Bow]
+patch=1,EE,10F81240,extended,00000009
+
+[Flame Bow]
+patch=1,EE,10F81242,extended,00000009
+
+[Galgazit Bow]
+patch=1,EE,10F81244,extended,00000009
+
+[Fairy Bracer]
+patch=1,EE,10F81246,extended,00000009
+
+[Sigils Breath]
+patch=1,EE,10F81248,extended,00000009
+
+[Red Bracer]
+patch=1,EE,10F8124A,extended,00000009
+
+[Blue Bracer]
+patch=1,EE,10F8124C,extended,00000009
+
+[Speedstar]
+patch=1,EE,10F8124E,extended,00000009
+
+[Soul Ring]
+patch=1,EE,10F81250,extended,00000009
+
+[Buffer Ring]
+patch=1,EE,10F81252,extended,00000009
+
+[Zeilia Ring]
+patch=1,EE,10F81254,extended,00000009
+
+[Sylvan Ring]
+patch=1,EE,10F81256,extended,00000009
+
+[Damn Ring]
+patch=1,EE,10F81258,extended,00000009
+
+[Mana Booster]
+patch=1,EE,10F8125A,extended,00000009
+
+[Ankh]
+patch=1,EE,10F8125C,extended,00000009
+
+[Magic Ankh]
+patch=1,EE,10F8125E,extended,00000009
+
+[Warlord Support]
+patch=1,EE,10F81260,extended,00000009
+
+[Ice Orb]
+patch=1,EE,10F81262,extended,00000009
+
+[Lightning Orb]
+patch=1,EE,10F81264,extended,00000009
+
+[Devil's Eye]
+patch=1,EE,10F81266,extended,00000009
+
+[Feather Charm]
+patch=1,EE,10F81268,extended,00000009
+
+[Angel Feather]
+patch=1,EE,10F8126A,extended,00000009
+
+[Sorcerer Support]
+patch=1,EE,10F8126C,extended,00000009
+
+[Dragon Fangs]
+patch=1,EE,10F8126E,extended,00000009
+
+[Ancient Mask]
+patch=1,EE,10F81270,extended,00000009
+
+[Evil Sigil]
+patch=1,EE,10F81272,extended,00000009
+
+[Dark Mana]
+patch=1,EE,10F81274,extended,00000009
+
+[Black Mana]
+patch=1,EE,10F81276,extended,00000009
+
+[Red Mana]
+patch=1,EE,10F81278,extended,00000009
+
+[Yellow Mana]
+patch=1,EE,10F8127A,extended,00000009
+
+[Blue Mana]
+patch=1,EE,10F8127C,extended,00000009
+
+[Green Mana]
+patch=1,EE,10F8127E,extended,00000009
+
+[Glowing Mana]
+patch=1,EE,10F81280,extended,00000009
+
+[Silver Mana]
+patch=1,EE,10F81282,extended,00000009
+
+[Gold Mana]
+patch=1,EE,10F81284,extended,00000009
+
+[Jade Mana]
+patch=1,EE,10F81286,extended,00000009
+
+[Crimson Mana]
+patch=1,EE,10F81288,extended,00000009
+
+[Mana Crystal]
+patch=1,EE,10F8128A,extended,00000009
+
+[Broken Grass]
+patch=1,EE,10F8128C,extended,00000009
+
+[Visa]
+patch=1,EE,10F8128E,extended,00000009
+
+[Daphne's Book]
+patch=1,EE,10F81290,extended,00000009
+
+[Super Puri Ball]
+patch=1,EE,10F81292,extended,00000009
+
+[Flame Sphere]
+patch=1,EE,10F81294,extended,00000009
+
+[Ore]
+patch=1,EE,10F81296,extended,00000009
+
+[Twilight Mirror]
+patch=1,EE,10F81298,extended,00000009
+
+[Dawn Mirrow]
+patch=1,EE,10F8129A,extended,00000009
+
+[Dragon Hall Key]
+patch=1,EE,10F8129C,extended,00000009
+
+[Gust Sphere]
+patch=1,EE,10F8129E,extended,00000009
+
+[Primal Gem]
+patch=1,EE,10F812A0,extended,00000009
+
+[Ring Of Iris]
+patch=1,EE,10F812A2,extended,00000009
+
+[Aroma Material]
+patch=1,EE,10F812A4,extended,00000009
+
+[Silka Doll]
+patch=1,EE,10F812A6,extended,00000009
+
+[Pyramod]
+patch=1,EE,10F812A8,extended,00000009
+
+[Gurgu's Cane]
+patch=1,EE,10F812AA,extended,00000009
+
+[Reptile Egg]
+patch=1,EE,10F812AC,extended,00000009
+
+[Ruby Prism]
+patch=1,EE,10F812AE,extended,00000009
+
+[Treasure Map?]
+patch=1,EE,10F812B0,extended,00000009
+
+[Treasure Map]
+patch=1,EE,10F812B2,extended,00000009
+
+[Picture Diary]
+patch=1,EE,10F812B4,extended,00000009
+
+[Kitchet Knife]
+patch=1,EE,10F812B6,extended,00000009
+
+[Chinzu Knife]
+patch=1,EE,10F812B8,extended,00000009
+
+[Package]
+patch=1,EE,10F812BA,extended,00000009
+
+[Fresh Milk]
+patch=1,EE,10F812BC,extended,00000009
+
+[Sushi Platter]
+patch=1,EE,10F812BE,extended,00000009
+
+[Herb Cocktail]
+patch=1,EE,10F812C0,extended,00000009
+
+[Sphere Of Life]
+patch=1,EE,10F812C2,extended,00000009
+
+[Old Drawing]
+patch=1,EE,10F812C4,extended,00000009
+
+[White Flower]
+patch=1,EE,10F812C6,extended,00000009
+
+[Arcose Metal]
+patch=1,EE,10F812C8,extended,00000009
+
+[Tingleberry]
+patch=1,EE,10F812CA,extended,00000009
+
+[Villa's Candy]
+patch=1,EE,10F812CC,extended,00000009
+
+[Veola's Panty]
+patch=1,EE,10F812CE,extended,00000009
+
+[Veola's Thong]
+patch=1,EE,10F812D0,extended,00000009
+
+[Veloa's Lingerie]
+patch=1,EE,10F812D2,extended,00000009
+
+[Blaire's Panty]
+patch=1,EE,10F812D4,extended,00000009
+
+[Blaire's Thong]
+patch=1,EE,10F812D6,extended,00000009
+
+[Blaire's Silk Panty]
+patch=1,EE,10F812D8,extended,00000009
+
+[Costume Jacket]
+patch=1,EE,10F812DA,extended,00000009
+
+[Costume Pants]
+patch=1,EE,10F812DC,extended,00000009
+
+[Heavy Metal]
+patch=1,EE,10F812DE,extended,00000009
+
+[All Main Items]
+patch=1,EE,40F80F68,extended,00C80001
+patch=1,EE,00090009,extended,00000000
+patch=1,EE,10F81288,extended,00000009
+
+[All Key Items]
+patch=1,EE,10F8128A,extended,00000009
+patch=1,EE,40F8128C,extended,00150001
+patch=1,EE,00090009,extended,00000000
+
+[All Mana Stones]
+patch=1,EE,40F81274,extended,00040001
+patch=1,EE,00090009,extended,00000000
+patch=1,EE,10F81288,extended,00000009
+
+[All Items]
+patch=1,EE,40F80F68,extended,00DE0001
+patch=1,EE,00090009,extended,00000000
+
+[Uru]
+patch=1,EE,00F81B96,extended,00000002
+
+[Silwest]
+patch=1,EE,00F81B97,extended,00000002
+
+[Nymph]
+patch=1,EE,00F81B98,extended,00000002
+
+[Eital]
+patch=1,EE,00F81B99,extended,00000002
+
+[Plua]
+patch=1,EE,00F81B9A,extended,00000002
+
+[Diemia]
+patch=1,EE,00F81B9B,extended,00000002
+
+[Popo]
+patch=1,EE,00F81B9C,extended,00000002
+
+[Aion]
+patch=1,EE,00F81B9D,extended,00000002
+
+[Luplus]
+patch=1,EE,00F81B9E,extended,00000002
+
+[All Mana Characters]
+patch=1,EE,10F81B96,extended,00000202
+patch=1,EE,20F81B98,extended,02020202
+patch=1,EE,10F81B9C,extended,00000202
+patch=1,EE,00F81B9E,extended,00000002
+
+[Heal Jar]
+patch=1,EE,00F81D60,extended,00000001
+
+[Heal Bulb]
+patch=1,EE,00F81D61,extended,00000001
+
+[Elixir]
+patch=1,EE,00F81D62,extended,00000001
+
+[Mana Jar]
+patch=1,EE,00F81D63,extended,00000001
+
+[Aeroangel]
+patch=1,EE,00F81D64,extended,00000001
+
+[Ether Bulb]
+patch=1,EE,00F81D65,extended,00000001
+
+[Meteor]
+patch=1,EE,00F81D66,extended,00000001
+
+[Heaven Geode]
+patch=1,EE,00F81D67,extended,00000001
+
+[Flame]
+patch=1,EE,00F81D68,extended,00000001
+
+[Dragon Gem]
+patch=1,EE,00F81D69,extended,00000001
+
+[Bomb Ice]
+patch=1,EE,00F81D6A,extended,00000001
+
+[Lightning Rod]
+patch=1,EE,00F81D6B,extended,00000001
+
+[Dirk]
+patch=1,EE,00F81D6C,extended,00000001
+
+[Obake Bag]
+patch=1,EE,00F81D6D,extended,00000001
+
+[Vamp Fangs]
+patch=1,EE,00F81D6E,extended,00000001
+
+[Unholy Water]
+patch=1,EE,00F81D6F,extended,00000001
+
+[Sleepaid]
+patch=1,EE,00F81D70,extended,00000001
+
+[Basilisk Eye]
+patch=1,EE,00F81D71,extended,00000001
+
+[Love Gem]
+patch=1,EE,00F81D72,extended,00000001
+
+[Laruba Key]
+patch=1,EE,00F81D73,extended,00000001
+
+[Cure Jar]
+patch=1,EE,00F81D74,extended,00000001
+
+[Herbal Drop]
+patch=1,EE,00F81D75,extended,00000001
+
+[Movagain]
+patch=1,EE,00F81D76,extended,00000001
+
+[Uroborus]
+patch=1,EE,00F81D77,extended,00000001
+
+[Newlife]
+patch=1,EE,00F81D78,extended,00000001
+
+[Refractor]
+patch=1,EE,00F81D79,extended,00000001
+
+[Diselement]
+patch=1,EE,00F81D7A,extended,00000001
+
+[Divine Shield]
+patch=1,EE,00F81D7B,extended,00000001
+
+[Mark Of Courage]
+patch=1,EE,00F81D7C,extended,00000001
+
+[Mark Of Weakness]
+patch=1,EE,00F81D7D,extended,00000001
+
+[All Mana Items]
+patch=1,EE,40F81D60,extended,00070001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,10F81D7C,extended,00000101
+
+[Uru]
+patch=1,EE,20F80EB8,extended,00640064
+
+[SilWest]
+patch=1,EE,20F80EC0,extended,00640064
+
+[Nymph]
+patch=1,EE,20F80EC8,extended,00640064
+
+[Eital]
+patch=1,EE,20F80ED0,extended,00640064
+
+[Plua]
+patch=1,EE,20F80ED8,extended,00640064
+
+[Diemia]
+patch=1,EE,20F80EE0,extended,00640064
+
+[Popo]
+patch=1,EE,20F80EE8,extended,00640064
+
+[Aion]
+patch=1,EE,20F80EF0,extended,00640064
+
+[Lupus]
+patch=1,EE,20F80EF8,extended,00640064
+
+[Grupt (Uru)]
+patch=1,EE,20F80F00,extended,00640064
+
+[Zeilia (Silwest)]
+patch=1,EE,20F80F08,extended,00640064
+
+[Flay (Nymph)]
+patch=1,EE,20F80F10,extended,00640064
+
+[Paltia (Eital)]
+patch=1,EE,20F80F18,extended,00640064
+
+[Fanatos (Plua)]
+patch=1,EE,20F80F20,extended,00640064
+
+[All Mana Characters]
+patch=1,EE,40F80EB8,extended,000E0002
+patch=1,EE,00640064,extended,00000000

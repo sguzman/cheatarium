@@ -1,0 +1,168 @@
+gametitle=Need For Speed-Carbon-Collector's Edition (SLUS-21494)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90541964,extended,0C154BF1
+
+[Infinite Cash]
+patch=1,EE,10A6E8F4,extended,0000FFFF
+
+[Max Cash]
+patch=1,EE,20A6E8F4,extended,05F5E0FF
+
+[Buying Parts Doesnt Decrease Cash]
+patch=1,EE,205D3D98,extended,24060000
+patch=1,EE,205D3DB8,extended,24060000
+
+[Buying Parts Increases Cash]
+patch=1,EE,205D3D98,extended,0220302D
+patch=1,EE,205D3DB8,extended,0220302D
+
+[Infinite NOS Usage]
+patch=1,EE,203E4C74,extended,00000000
+
+[Max Infinite NOS]
+patch=1,EE,203F31DC,extended,3C0142C8
+patch=1,EE,203F31E0,extended,AC610010
+patch=1,EE,203E4CA4,extended,3C013F80
+patch=1,EE,203E4CA8,extended,AE210178
+patch=1,EE,103E4CAE,extended,00001000
+
+[Normal NOS Acceleration]
+patch=1,EE,203F31EC,extended,3C013F80
+patch=1,EE,203F31F0,extended,AC610004
+
+[Super NOS Acceleration]
+patch=1,EE,203F31EC,extended,3C014000
+patch=1,EE,203F31F0,extended,AC610004
+
+[Ultra NOS Acceleration]
+patch=1,EE,203F31EC,extended,3C014100
+patch=1,EE,203F31F0,extended,AC610004
+
+[Infinite Speedbreaker]
+patch=1,EE,204225A8,extended,00000000
+
+[Infinite Crew Charge Bar]
+patch=1,EE,201403DC,extended,00000000
+
+[All Races Only Have 1 Racer]
+patch=1,EE,20344090,extended,24020001
+patch=1,EE,20344094,extended,AC820F00
+
+[Have All Challenges Completed]
+patch=1,EE,200C0230,extended,00300825
+patch=1,EE,200C0234,extended,03E00008
+patch=1,EE,200C0238,extended,AC410004
+patch=1,EE,2030B9DC,extended,0C03008C
+patch=1,EE,2030B9E0,extended,8C410004
+
+[Max Pursuits Evaded]
+patch=1,EE,20A6EC10,extended,05F5E0FF
+
+[No Pursuits Evaded]
+patch=1,EE,20A6EC10,extended,00000000
+
+[Max Times Busted]
+patch=1,EE,20A6EC14,extended,05F5E0FF
+
+[No Times Busted]
+patch=1,EE,20A6EC14,extended,00000000
+
+[Max Spike Strips Dodged (Single Pursuit)]
+patch=1,EE,20A6EC20,extended,05F5E0FF
+
+[No Spike Strips Dodged (Single Pursuit)]
+patch=1,EE,20A6EC20,extended,00000000
+
+[Max Spike Strips Dodged (Total)]
+patch=1,EE,20A6EC24,extended,05F5E0FF
+
+[No Spike Strips Dodged (Total)]
+patch=1,EE,20A6EC24,extended,00000000
+
+[Max Road Blocks Dodged (Single Pursuit)]
+patch=1,EE,20A6EC28,extended,05F5E0FF
+
+[No Road Blocks Dodged (Single Pursuit)]
+patch=1,EE,20A6EC28,extended,00000000
+
+[Max Road Blocks Dodged (Total)]
+patch=1,EE,20A6EC2C,extended,05F5E0FF
+
+[No Road Blocks Dodged (Total)]
+patch=1,EE,20A6EC2C,extended,00000000
+
+[Max Cops Rammed (Single Pursuit)]
+patch=1,EE,20A6EC30,extended,05F5E0FF
+
+[No Cops Rammed (Single Pursuit)]
+patch=1,EE,20A6EC30,extended,00000000
+
+[Max Cops Rammed (Total)]
+patch=1,EE,20A6EC34,extended,05F5E0FF
+
+[No Cops Rammed (Total)]
+patch=1,EE,20A6EC34,extended,00000000
+
+[Max Cops Disabled (Single Pursuit)]
+patch=1,EE,20A6EC38,extended,05F5E0FF
+
+[No Cops Disabled (Single Pursuit)]
+patch=1,EE,20A6EC38,extended,00000000
+
+[Max Cops Disabled (Total)]
+patch=1,EE,20A6EC3C,extended,05F5E0FF
+
+[No Cops Disabled (Total)]
+patch=1,EE,20A6EC3C,extended,00000000
+
+[Max Bounty (Single Pursuit)]
+patch=1,EE,20A6EC40,extended,05F5E0FF
+
+[No Bounty (Single Pursuit)]
+patch=1,EE,20A6EC40,extended,00000000
+
+[Max Bounty (Total)]
+patch=1,EE,20A6EC44,extended,05F5E0FF
+
+[No Bounty (Total)]
+patch=1,EE,20A6EC44,extended,00000000
+
+[Max Cost To State (Single Pursuit)]
+patch=1,EE,20A6EC48,extended,05F5E0FF
+
+[No Cost To State (Single Pursuit)]
+patch=1,EE,20A6EC48,extended,00000000
+
+[Max Cost To State (Total)]
+patch=1,EE,20A6EC4C,extended,05F5E0FF
+
+[No Cost To State (Total)]
+patch=1,EE,20A6EC4C,extended,00000000
+
+[Max Infractions (Single Pursuit)]
+patch=1,EE,20A6EC50,extended,05F5E0FF
+
+[No Infractions (Single Pursuit)]
+patch=1,EE,20A6EC50,extended,00000000
+
+[Max Infractions (Total)]
+patch=1,EE,20A6EC54,extended,05F5E0FF
+
+[No Infractions (Total)]
+patch=1,EE,20A6EC54,extended,00000000
+
+[Max Highest Heat Level]
+patch=1,EE,20A6EC60,extended,05F5E0FF
+
+[No Highest Heat Level]
+patch=1,EE,20A6EC60,extended,00000000
+
+[Max Highest Fine Paid]
+patch=1,EE,20A6EC64,extended,05F5E0FF
+
+[No Highest Fine Paid]
+patch=1,EE,20A6EC64,extended,00000000

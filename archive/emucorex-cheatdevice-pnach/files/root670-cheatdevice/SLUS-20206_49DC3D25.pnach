@@ -1,0 +1,50 @@
+gametitle=Army Men-RTS (SLUS-20206)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9019905C,extended,0C04D0E3
+
+[Always Low Mission Time]
+patch=1,EE,20403E3C,extended,000002C0
+
+[Allow All To Be Used Together]
+patch=1,EE,202E7658,extended,00000000
+patch=1,EE,202E766C,extended,00000000
+patch=1,EE,202E7680,extended,00000000
+patch=1,EE,202E7684,extended,3C02437D
+patch=1,EE,202E76C4,extended,00000000
+patch=1,EE,202E76DC,extended,00000000
+patch=1,EE,202E76FC,extended,00000000
+patch=1,EE,202E7724,extended,00000000
+patch=1,EE,202E773C,extended,00000000
+patch=1,EE,202E7754,extended,00000000
+patch=1,EE,202E777C,extended,00000000
+patch=1,EE,202E77A4,extended,00000000
+patch=1,EE,202E77BC,extended,00000000
+patch=1,EE,202E77E4,extended,00000000
+
+[{TRIANGLE} For 5000 More Plastic]
+patch=1,EE,102E7670,extended,00004247
+patch=1,EE,102E7674,extended,00002B70
+
+[{CIRCLE} For 2000 More Electricity]
+patch=1,EE,102E7648,extended,0000251D
+patch=1,EE,102E764C,extended,00003B61
+
+[{SQUARE} For Super Soldiers]
+patch=1,EE,102E772C,extended,00005C00
+patch=1,EE,102E7730,extended,00007B75
+
+[{CROSS} For Paratroopers]
+patch=1,EE,102E77FC,extended,0000774B
+patch=1,EE,102E7780,extended,0000B014
+
+[{TRIANGLE}, {TRIANGLE} For Extra Dump Truck Resources]
+patch=1,EE,102E765C,extended,00003868
+patch=1,EE,102E7660,extended,00001069
+
+[{CIRCLE}, {CIRCLE} For Green Army Is Blue]
+patch=1,EE,102E77C4,extended,0000B7C0
+patch=1,EE,102E77C8,extended,000087EA

@@ -1,0 +1,30 @@
+gametitle=Arthur And The Invisibles-The Game (SLUS-21305)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011D8E8,extended,0C0416BC
+
+[Infinite Health (Arthur)]
+patch=1,EE,0091B3B4,extended,00000006
+
+[Infinite Health (Selenia)]
+patch=1,EE,0091B3B5,extended,00000006
+
+[Infinite Health (Betameche)]
+patch=1,EE,0091B3B6,extended,00000006
+
+[Infinite Health (All Characters)]
+patch=1,EE,2091B3B4,extended,00060606
+
+[Max Overall Eggs]
+patch=1,EE,1091B3B8,extended,0000270F
+
+[Infintie Eggs]
+patch=1,EE,1091B3BC,extended,0000270F
+
+[Infinite Eggs (Alternate)]
+patch=1,EE,203C228C,extended,84430098
+patch=1,EE,203C2290,extended,A443009C
+patch=1,EE,203C2298,extended,24020001

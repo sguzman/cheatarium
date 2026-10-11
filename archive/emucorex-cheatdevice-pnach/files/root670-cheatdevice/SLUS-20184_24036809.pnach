@@ -1,0 +1,720 @@
+gametitle=Resident Evil-Code Veronica X (SLUS-20184)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9011166C,extended,0C048FF6
+
+[Infinite Health]
+patch=1,EE,104326FC,extended,000000A0
+
+[First Person View]
+patch=1,EE,0043315C,extended,000000C2
+
+[Always Low Time]
+patch=1,EE,204339A0,extended,00000000
+
+[Press {L1}+{SQUARE} For Item Box Anywhere]
+patch=1,EE,D1E0DBC2,extended,0000FFFD
+patch=1,EE,00433166,extended,00000004
+
+[Press {L1}+{SQUARE} For Security Box 1 Anywhere]
+patch=1,EE,D1E0DBC2,extended,00007EFF
+patch=1,EE,00433166,extended,0000000C
+
+[Press {L1}+{CROSS} For Security Box 2 Anywhere]
+patch=1,EE,D1E0DBC2,extended,0000BEFF
+patch=1,EE,00433166,extended,00000014
+
+[Press {L1}+{CROSS} To Save Anywhere]
+patch=1,EE,D1E0DBC2,extended,0000BBFF
+patch=1,EE,00433166,extended,00000020
+
+[No Times Saved Recorded]
+patch=1,EE,10433180,extended,00000000
+
+[Infinite Item Usage]
+patch=1,EE,2028AD68,extended,00000000
+patch=1,EE,2028AD7C,extended,00000000
+
+[Extra Items]
+patch=1,EE,1028AD00,extended,00000001
+patch=1,EE,1028AD0C,extended,00000001
+patch=1,EE,1028AD1C,extended,00000001
+
+[Enemies Can Walk Thru Walls]
+patch=1,EE,201790C0,extended,03E00008
+patch=1,EE,201790C4,extended,00000000
+
+[Slot 1]
+patch=1,EE,10433378,extended,000000FF
+
+[Slot 2]
+patch=1,EE,1043337C,extended,000000FF
+
+[Slot 3]
+patch=1,EE,10433380,extended,000000FF
+
+[Slot 4]
+patch=1,EE,10433384,extended,000000FF
+
+[Slot 5]
+patch=1,EE,10433388,extended,000000FF
+
+[Slot 6]
+patch=1,EE,1043338C,extended,000000FF
+
+[Slot 7]
+patch=1,EE,10433390,extended,000000FF
+
+[Slot 8]
+patch=1,EE,10433394,extended,000000FF
+
+[Slot 1]
+patch=1,EE,104333B8,extended,000000FF
+
+[Slot 2]
+patch=1,EE,104333BC,extended,000000FF
+
+[Slot 3]
+patch=1,EE,104333C0,extended,000000FF
+
+[Slot 4]
+patch=1,EE,104333C4,extended,000000FF
+
+[Slot 5]
+patch=1,EE,104333C8,extended,000000FF
+
+[Slot 6]
+patch=1,EE,104333CC,extended,000000FF
+
+[Slot 7]
+patch=1,EE,104333D0,extended,000000FF
+
+[Slot 8]
+patch=1,EE,104333D4,extended,000000FF
+
+[Slot 1]
+patch=1,EE,104333F8,extended,000000FF
+
+[Slot 2]
+patch=1,EE,104333FC,extended,000000FF
+
+[Slot 3]
+patch=1,EE,10433400,extended,000000FF
+
+[Slot 4]
+patch=1,EE,10433404,extended,000000FF
+
+[Slot 5]
+patch=1,EE,10433408,extended,000000FF
+
+[Slot 6]
+patch=1,EE,1043340C,extended,000000FF
+
+[Slot 7]
+patch=1,EE,10433410,extended,000000FF
+
+[Slot 8]
+patch=1,EE,10433414,extended,000000FF
+
+[Slot 1]
+patch=1,EE,10433438,extended,000000FF
+
+[Slot 2]
+patch=1,EE,1043343C,extended,000000FF
+
+[Slot 3]
+patch=1,EE,10433440,extended,000000FF
+
+[Slot 4]
+patch=1,EE,10433444,extended,000000FF
+
+[Slot 5]
+patch=1,EE,10433448,extended,000000FF
+
+[Slot 6]
+patch=1,EE,1043344C,extended,000000FF
+
+[Slot 7]
+patch=1,EE,10433450,extended,000000FF
+
+[Slot 8]
+patch=1,EE,10433454,extended,000000FF
+
+[Slot 1]
+patch=1,EE,10433470,extended,000000FF
+
+[Slot 2]
+patch=1,EE,10433474,extended,000000FF
+
+[Slot 3]
+patch=1,EE,10433478,extended,000000FF
+
+[Slot 4]
+patch=1,EE,1043347C,extended,000000FF
+
+[Slot 5]
+patch=1,EE,10433480,extended,000000FF
+
+[Slot 6]
+patch=1,EE,10433484,extended,000000FF
+
+[Slot 7]
+patch=1,EE,10433488,extended,000000FF
+
+[Slot 8]
+patch=1,EE,1043348C,extended,000000FF
+
+[Slot 9]
+patch=1,EE,10433490,extended,000000FF
+
+[Slot 10]
+patch=1,EE,10433494,extended,000000FF
+
+[Slot 11]
+patch=1,EE,10433498,extended,000000FF
+
+[Slot 12]
+patch=1,EE,1043349C,extended,000000FF
+
+[Slot 13]
+patch=1,EE,104334A0,extended,000000FF
+
+[Slot 14]
+patch=1,EE,104334A4,extended,000000FF
+
+[Slot 15]
+patch=1,EE,104334A8,extended,000000FF
+
+[Slot 16]
+patch=1,EE,104334AC,extended,000000FF
+
+[Slot 17]
+patch=1,EE,104334B0,extended,000000FF
+
+[Slot 18]
+patch=1,EE,104334B4,extended,000000FF
+
+[Slot 19]
+patch=1,EE,104334B8,extended,000000FF
+
+[Slot 20]
+patch=1,EE,104334BC,extended,000000FF
+
+[Slot 21]
+patch=1,EE,104334C0,extended,000000FF
+
+[Slot 22]
+patch=1,EE,104334C4,extended,000000FF
+
+[Slot 23]
+patch=1,EE,104334C8,extended,000000FF
+
+[Slot 24]
+patch=1,EE,104334CC,extended,000000FF
+
+[Slot 25]
+patch=1,EE,104334D0,extended,000000FF
+
+[Slot 26]
+patch=1,EE,104334D4,extended,000000FF
+
+[Slot 27]
+patch=1,EE,104334D8,extended,000000FF
+
+[Slot 28]
+patch=1,EE,104334DC,extended,000000FF
+
+[Slot 29]
+patch=1,EE,104334E0,extended,000000FF
+
+[Slot 30]
+patch=1,EE,104334E4,extended,000000FF
+
+[Slot 31]
+patch=1,EE,104334E8,extended,000000FF
+
+[Slot 32]
+patch=1,EE,104334EC,extended,000000FF
+
+[Slot 33]
+patch=1,EE,104334F0,extended,000000FF
+
+[Slot 34]
+patch=1,EE,104334F4,extended,000000FF
+
+[Slot 35]
+patch=1,EE,104334F8,extended,000000FF
+
+[Slot 36]
+patch=1,EE,104334FC,extended,000000FF
+
+[Slot 37]
+patch=1,EE,10433500,extended,000000FF
+
+[Slot 38]
+patch=1,EE,10433504,extended,000000FF
+
+[Slot 39]
+patch=1,EE,10433508,extended,000000FF
+
+[Slot 40]
+patch=1,EE,1043350C,extended,000000FF
+
+[Slot 41]
+patch=1,EE,10433510,extended,000000FF
+
+[Slot 42]
+patch=1,EE,10433514,extended,000000FF
+
+[Slot 43]
+patch=1,EE,10433518,extended,000000FF
+
+[Slot 44]
+patch=1,EE,1043351C,extended,000000FF
+
+[Slot 45]
+patch=1,EE,10433520,extended,000000FF
+
+[Slot 46]
+patch=1,EE,10433524,extended,000000FF
+
+[Slot 47]
+patch=1,EE,10433528,extended,000000FF
+
+[Slot 48]
+patch=1,EE,1043352C,extended,000000FF
+
+[Slot 49]
+patch=1,EE,10433530,extended,000000FF
+
+[Slot 50]
+patch=1,EE,10433534,extended,000000FF
+
+[Slot 51]
+patch=1,EE,10433538,extended,000000FF
+
+[Slot 52]
+patch=1,EE,1043353C,extended,000000FF
+
+[Slot 53]
+patch=1,EE,10433540,extended,000000FF
+
+[Slot 54]
+patch=1,EE,10433544,extended,000000FF
+
+[Slot 55]
+patch=1,EE,10433548,extended,000000FF
+
+[Slot 56]
+patch=1,EE,1043354C,extended,000000FF
+
+[Slot 57]
+patch=1,EE,10433550,extended,000000FF
+
+[Slot 58]
+patch=1,EE,10433554,extended,000000FF
+
+[Slot 59]
+patch=1,EE,10433558,extended,000000FF
+
+[Slot 60]
+patch=1,EE,1043355C,extended,000000FF
+
+[Slot 61]
+patch=1,EE,10433560,extended,000000FF
+
+[Slot 62]
+patch=1,EE,10433564,extended,000000FF
+
+[Slot 63]
+patch=1,EE,10433568,extended,000000FF
+
+[Slot 64]
+patch=1,EE,1043356C,extended,000000FF
+
+[Slot 65]
+patch=1,EE,10433570,extended,000000FF
+
+[Slot 66]
+patch=1,EE,10433574,extended,000000FF
+
+[Slot 67]
+patch=1,EE,10433578,extended,000000FF
+
+[Slot 68]
+patch=1,EE,1043357C,extended,000000FF
+
+[Slot 69]
+patch=1,EE,10433580,extended,000000FF
+
+[Slot 70]
+patch=1,EE,10433584,extended,000000FF
+
+[Slot 71]
+patch=1,EE,10433588,extended,000000FF
+
+[Slot 72]
+patch=1,EE,1043358C,extended,000000FF
+
+[Slot 73]
+patch=1,EE,10433590,extended,000000FF
+
+[Slot 74]
+patch=1,EE,10433594,extended,000000FF
+
+[Slot 75]
+patch=1,EE,10433598,extended,000000FF
+
+[Slot 76]
+patch=1,EE,1043359C,extended,000000FF
+
+[Slot 77]
+patch=1,EE,104335A0,extended,000000FF
+
+[Slot 78]
+patch=1,EE,104335A4,extended,000000FF
+
+[Slot 79]
+patch=1,EE,104335A8,extended,000000FF
+
+[Slot 80]
+patch=1,EE,104335AC,extended,000000FF
+
+[Slot 81]
+patch=1,EE,104335B0,extended,000000FF
+
+[Slot 82]
+patch=1,EE,104335B4,extended,000000FF
+
+[Slot 83]
+patch=1,EE,104335B8,extended,000000FF
+
+[Slot 84]
+patch=1,EE,104335BC,extended,000000FF
+
+[Slot 85]
+patch=1,EE,104335C0,extended,000000FF
+
+[Slot 86]
+patch=1,EE,104335C4,extended,000000FF
+
+[Slot 87]
+patch=1,EE,104335C8,extended,000000FF
+
+[Slot 88]
+patch=1,EE,104335CC,extended,000000FF
+
+[Slot 89]
+patch=1,EE,104335D0,extended,000000FF
+
+[Slot 90]
+patch=1,EE,104335D4,extended,000000FF
+
+[Slot 91]
+patch=1,EE,104335D8,extended,000000FF
+
+[Slot 92]
+patch=1,EE,104335DC,extended,000000FF
+
+[Slot 93]
+patch=1,EE,104335E0,extended,000000FF
+
+[Slot 94]
+patch=1,EE,104335E4,extended,000000FF
+
+[Slot 95]
+patch=1,EE,104335E8,extended,000000FF
+
+[Slot 96]
+patch=1,EE,104335EC,extended,000000FF
+
+[Slot 97]
+patch=1,EE,104335F0,extended,000000FF
+
+[Slot 98]
+patch=1,EE,104335F4,extended,000000FF
+
+[Slot 99]
+patch=1,EE,104335F8,extended,000000FF
+
+[Slot 100]
+patch=1,EE,104335FC,extended,000000FF
+
+[Slot 101]
+patch=1,EE,10433600,extended,000000FF
+
+[Slot 102]
+patch=1,EE,10433604,extended,000000FF
+
+[Slot 103]
+patch=1,EE,10433608,extended,000000FF
+
+[Slot 104]
+patch=1,EE,1043360C,extended,000000FF
+
+[Slot 105]
+patch=1,EE,10433610,extended,000000FF
+
+[Slot 106]
+patch=1,EE,10433614,extended,000000FF
+
+[Slot 107]
+patch=1,EE,10433618,extended,000000FF
+
+[Slot 108]
+patch=1,EE,1043361C,extended,000000FF
+
+[Slot 109]
+patch=1,EE,10433620,extended,000000FF
+
+[Slot 110]
+patch=1,EE,10433624,extended,000000FF
+
+[Slot 111]
+patch=1,EE,10433628,extended,000000FF
+
+[Slot 112]
+patch=1,EE,1043362C,extended,000000FF
+
+[Slot 113]
+patch=1,EE,10433630,extended,000000FF
+
+[Slot 114]
+patch=1,EE,10433634,extended,000000FF
+
+[Slot 115]
+patch=1,EE,10433638,extended,000000FF
+
+[Slot 116]
+patch=1,EE,1043363C,extended,000000FF
+
+[Slot 117]
+patch=1,EE,10433640,extended,000000FF
+
+[Slot 118]
+patch=1,EE,10433644,extended,000000FF
+
+[Slot 119]
+patch=1,EE,10433648,extended,000000FF
+
+[Slot 120]
+patch=1,EE,1043364C,extended,000000FF
+
+[Slot 121]
+patch=1,EE,10433650,extended,000000FF
+
+[Slot 122]
+patch=1,EE,10433654,extended,000000FF
+
+[Slot 123]
+patch=1,EE,10433658,extended,000000FF
+
+[Slot 124]
+patch=1,EE,1043365C,extended,000000FF
+
+[Slot 125]
+patch=1,EE,10433660,extended,000000FF
+
+[Slot 126]
+patch=1,EE,10433664,extended,000000FF
+
+[Slot 127]
+patch=1,EE,10433668,extended,000000FF
+
+[Slot 128]
+patch=1,EE,1043366C,extended,000000FF
+
+[Slot 1]
+patch=1,EE,10433670,extended,000000FF
+
+[Slot 2]
+patch=1,EE,10433674,extended,000000FF
+
+[Slot 3]
+patch=1,EE,10433678,extended,000000FF
+
+[Slot 4]
+patch=1,EE,1043367C,extended,000000FF
+
+[Slot 5]
+patch=1,EE,10433680,extended,000000FF
+
+[Slot 6]
+patch=1,EE,10433684,extended,000000FF
+
+[Slot 7]
+patch=1,EE,10433688,extended,000000FF
+
+[Slot 8]
+patch=1,EE,1043368C,extended,000000FF
+
+[Slot 9]
+patch=1,EE,10433690,extended,000000FF
+
+[Slot 10]
+patch=1,EE,10433694,extended,000000FF
+
+[Slot 11]
+patch=1,EE,10433698,extended,000000FF
+
+[Slot 12]
+patch=1,EE,1043369C,extended,000000FF
+
+[Slot 13]
+patch=1,EE,104336A0,extended,000000FF
+
+[Slot 14]
+patch=1,EE,104336A4,extended,000000FF
+
+[Slot 15]
+patch=1,EE,104336A8,extended,000000FF
+
+[Slot 16]
+patch=1,EE,104336AC,extended,000000FF
+
+[Slot 17]
+patch=1,EE,104336B0,extended,000000FF
+
+[Slot 18]
+patch=1,EE,104336B4,extended,000000FF
+
+[Slot 19]
+patch=1,EE,104336B8,extended,000000FF
+
+[Slot 20]
+patch=1,EE,104336BC,extended,000000FF
+
+[Slot 21]
+patch=1,EE,104336C0,extended,000000FF
+
+[Slot 22]
+patch=1,EE,104336C4,extended,000000FF
+
+[Slot 23]
+patch=1,EE,104336C8,extended,000000FF
+
+[Slot 24]
+patch=1,EE,104336CC,extended,000000FF
+
+[Slot 25]
+patch=1,EE,104336D0,extended,000000FF
+
+[Slot 26]
+patch=1,EE,104336D4,extended,000000FF
+
+[Slot 27]
+patch=1,EE,104336D8,extended,000000FF
+
+[Slot 28]
+patch=1,EE,104336DC,extended,000000FF
+
+[Slot 29]
+patch=1,EE,104336E0,extended,000000FF
+
+[Slot 30]
+patch=1,EE,104336E4,extended,000000FF
+
+[Slot 31]
+patch=1,EE,104336E8,extended,000000FF
+
+[Slot 32]
+patch=1,EE,104336EC,extended,000000FF
+
+[Slot 1]
+patch=1,EE,104336F0,extended,000000FF
+
+[Slot 2]
+patch=1,EE,104336F4,extended,000000FF
+
+[Slot 3]
+patch=1,EE,104336F8,extended,000000FF
+
+[Slot 4]
+patch=1,EE,104336FC,extended,000000FF
+
+[Slot 5]
+patch=1,EE,10433700,extended,000000FF
+
+[Slot 6]
+patch=1,EE,10433704,extended,000000FF
+
+[Slot 7]
+patch=1,EE,10433708,extended,000000FF
+
+[Slot 8]
+patch=1,EE,1043370C,extended,000000FF
+
+[Slot 9]
+patch=1,EE,10433710,extended,000000FF
+
+[Slot 10]
+patch=1,EE,10433714,extended,000000FF
+
+[Slot 11]
+patch=1,EE,10433718,extended,000000FF
+
+[Slot 12]
+patch=1,EE,1043371C,extended,000000FF
+
+[Slot 13]
+patch=1,EE,10433720,extended,000000FF
+
+[Slot 14]
+patch=1,EE,10433724,extended,000000FF
+
+[Slot 15]
+patch=1,EE,10433728,extended,000000FF
+
+[Slot 16]
+patch=1,EE,1043372C,extended,000000FF
+
+[Slot 17]
+patch=1,EE,10433730,extended,000000FF
+
+[Slot 18]
+patch=1,EE,10433734,extended,000000FF
+
+[Slot 19]
+patch=1,EE,10433738,extended,000000FF
+
+[Slot 20]
+patch=1,EE,1043373C,extended,000000FF
+
+[Slot 21]
+patch=1,EE,10433740,extended,000000FF
+
+[Slot 22]
+patch=1,EE,10433744,extended,000000FF
+
+[Slot 23]
+patch=1,EE,10433748,extended,000000FF
+
+[Slot 24]
+patch=1,EE,1043374C,extended,000000FF
+
+[Slot 25]
+patch=1,EE,10433750,extended,000000FF
+
+[Slot 26]
+patch=1,EE,10433754,extended,000000FF
+
+[Slot 27]
+patch=1,EE,10433758,extended,000000FF
+
+[Slot 28]
+patch=1,EE,1043375C,extended,000000FF
+
+[Slot 29]
+patch=1,EE,10433760,extended,000000FF
+
+[Slot 30]
+patch=1,EE,10433764,extended,000000FF
+
+[Slot 31]
+patch=1,EE,10433768,extended,000000FF
+
+[Slot 32]
+patch=1,EE,1043376C,extended,000000FF

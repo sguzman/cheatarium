@@ -1,0 +1,27 @@
+gametitle=Smuggler's Run (SLUS-20065)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90278C60,extended,0C099DF2
+
+[Quick Score Gain]
+patch=1,EE,10285D6C,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,20285D6C,extended,05F5E0FF
+
+[Invisibility]
+patch=1,EE,20108528,extended,00000000
+
+[Infinite Time]
+patch=1,EE,20149EE8,extended,00000000
+patch=1,EE,2014BA28,extended,00000000
+
+[No Gravity]
+patch=1,EE,101338BA,extended,00001000
+
+[Max All Level Scores]
+patch=1,EE,4028AD30,extended,00220004
+patch=1,EE,05F5E0FF,extended,00000000

@@ -1,0 +1,67 @@
+gametitle=SD Gundam Force-Showdown! (SLUS-20698)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901228DC,extended,0C04A39C
+
+[Infinite Time]
+patch=1,EE,2065D69C,extended,4479C000
+
+[P1 Press {L1}+{SELECT} To Stop Timer]
+patch=1,EE,D0670242,extended,0000FBFE
+patch=1,EE,20432FF8,extended,00000000
+
+[P1 Press {L2}+{SELECT} To Restart Timer]
+patch=1,EE,D0670242,extended,0000FEFE
+patch=1,EE,20432FF8,extended,E781AAAC
+
+[Full Energy Charge]
+patch=1,EE,10697680,extended,000000C8
+
+[Max Energy Charge]
+patch=1,EE,10697682,extended,000000C8
+
+[Max Full Energy Charge]
+patch=1,EE,20697680,extended,00C800C8
+
+[Full Healing Charge]
+patch=1,EE,1065D6B8,extended,000000C8
+
+[Max Healing Charge]
+patch=1,EE,1065D6BA,extended,000000C8
+
+[Max Full Healing Charge]
+patch=1,EE,2065D6B8,extended,00C800C8
+
+[Max Attack Skill]
+patch=1,EE,2065D6C0,extended,42C80000
+
+[Have All Enemy S.D.G. Reports]
+patch=1,EE,20697520,extended,FFFFFFFF
+patch=1,EE,20697524,extended,FFFFFFFF
+
+[Have All Form S.D.G. Reports]
+patch=1,EE,20697528,extended,FFFFFFFF
+
+[Have All Items S.D.G. Reports]
+patch=1,EE,2069752C,extended,FFFFFFFF
+
+[Infinite HP Sphere]
+patch=1,EE,106974DE,extended,0000002D
+
+[Level S]
+patch=1,EE,00697438,extended,00000003
+
+[Infinite HP Sphere]
+patch=1,EE,106974E0,extended,0000002D
+
+[Level S]
+patch=1,EE,00697440,extended,00000003
+
+[Infinite HP Sphere]
+patch=1,EE,106974E2,extended,0000002D
+
+[Level S]
+patch=1,EE,00697448,extended,00000003

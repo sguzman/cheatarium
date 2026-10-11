@@ -1,0 +1,183 @@
+gametitle=NBA Live 2003 (SLUS-20536)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902C8D0C,extended,0C0AC8D9
+
+[Invisible Players]
+patch=1,EE,20244844,extended,00000000
+
+[Home Team Scores 255]
+patch=1,EE,10F12BFC,extended,000000FF
+
+[Home Team Scores 150]
+patch=1,EE,10F12BFC,extended,00000096
+
+[Home Team Scores 0]
+patch=1,EE,10F12BFC,extended,00000000
+
+[Away Team Scores 255]
+patch=1,EE,10F12C00,extended,000000FF
+
+[Away Team Scores 150]
+patch=1,EE,10F12C00,extended,00000096
+
+[Away Team Scores 0]
+patch=1,EE,10F12C00,extended,00000000
+
+[2-Pointer's Score 10]
+patch=1,EE,103B3CC4,extended,0000000A
+
+[2-Pointer's Score 5]
+patch=1,EE,103B3CC4,extended,00000005
+
+[2-Pointer's Score 1]
+patch=1,EE,103B3CC4,extended,00000001
+
+[3-Pointer's Score 10]
+patch=1,EE,103B3A68,extended,0000000A
+
+[3-Pointer's Score 5]
+patch=1,EE,103B3A68,extended,00000005
+
+[3-Pointer's Score 1]
+patch=1,EE,103B3A68,extended,00000001
+
+[Free Throw's Score 10]
+patch=1,EE,103B3CA4,extended,0000000A
+
+[Free Throw's Score 5]
+patch=1,EE,103B3CA4,extended,00000005
+
+[Free Throw's Score 2]
+patch=1,EE,103B3CA4,extended,00000002
+
+[Dunk's Score 10]
+patch=1,EE,10387470,extended,0000000A
+
+[Dunk's Score 5]
+patch=1,EE,10387470,extended,00000005
+
+[Dunk's Score 1]
+patch=1,EE,10387470,extended,00000001
+
+[Home Team Infinite Time-Outs]
+patch=1,EE,104AEB9C,extended,00000006
+
+[Home Team No Time-Outs]
+patch=1,EE,104AEB9C,extended,00000000
+
+[Away Team Infinite Time-Outs]
+patch=1,EE,104AECBC,extended,00000006
+
+[Away Team No Time-Outs]
+patch=1,EE,104AECBC,extended,00000000
+
+[P1 Press {L1}+{L2} For More Time]
+patch=1,EE,D047291C,extended,00000005
+patch=1,EE,20499200,extended,00004650
+
+[P1 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D047291C,extended,0000000A
+patch=1,EE,20499200,extended,00000001
+
+[P2 Press {L1}+{L2} For More Time]
+patch=1,EE,D047299C,extended,00000005
+patch=1,EE,20499200,extended,00004650
+
+[P2 Press {R1}+{R2} To End Quarter]
+patch=1,EE,D047299C,extended,0000000A
+patch=1,EE,20499200,extended,00000001
+
+[Infinite Shot Clock]
+patch=1,EE,20499274,extended,000005A0
+
+[P1 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D047291C,extended,0000000C
+patch=1,EE,20499274,extended,000005A0
+
+[P1 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D047291C,extended,00000003
+patch=1,EE,20499274,extended,00000000
+
+[P2 Press {L1}+{R1} For More Shot Clock Time]
+patch=1,EE,D047299C,extended,0000000C
+patch=1,EE,20499274,extended,000005A0
+
+[P2 Press {L1}+{R2} For No Shot Clock Time]
+patch=1,EE,D047299C,extended,00000003
+patch=1,EE,20499274,extended,00000000
+
+[Start On 2nd Quarter]
+patch=1,EE,D0499210,extended,00000000
+patch=1,EE,10499210,extended,00000001
+
+[Start On 3rd Quarter]
+patch=1,EE,D0499210,extended,00000000
+patch=1,EE,10499210,extended,00000002
+
+[Start On 4th Quarter]
+patch=1,EE,D0499210,extended,00000000
+patch=1,EE,10499210,extended,00000003
+
+[Player 1]
+patch=1,EE,104B59E4,extended,00007FFF
+
+[Player 2]
+patch=1,EE,104B5A0E,extended,00007FFF
+
+[Player 3]
+patch=1,EE,104B5A38,extended,00007FFF
+
+[Player 4]
+patch=1,EE,104B5A62,extended,00007FFF
+
+[Player 5]
+patch=1,EE,104B5A8C,extended,00007FFF
+
+[Player 1]
+patch=1,EE,104B59E4,extended,00000000
+
+[Player 2]
+patch=1,EE,104B5A0E,extended,00000000
+
+[Player 3]
+patch=1,EE,104B5A38,extended,00000000
+
+[Player 4]
+patch=1,EE,104B5A62,extended,00000000
+
+[Player 5]
+patch=1,EE,104B5A8C,extended,00000000
+
+[Player 1]
+patch=1,EE,104B5BDC,extended,00007FFF
+
+[Player 2]
+patch=1,EE,104B5C06,extended,00007FFF
+
+[Player 3]
+patch=1,EE,104B5C30,extended,00007FFF
+
+[Player 4]
+patch=1,EE,104B5C5A,extended,00007FFF
+
+[Player 5]
+patch=1,EE,104B5C84,extended,00007FFF
+
+[Player 1]
+patch=1,EE,104B5BDC,extended,00000000
+
+[Player 2]
+patch=1,EE,104B5C06,extended,00000000
+
+[Player 3]
+patch=1,EE,104B5C30,extended,00000000
+
+[Player 4]
+patch=1,EE,104B5C5A,extended,00000000
+
+[Player 5]
+patch=1,EE,104B5C84,extended,00000000

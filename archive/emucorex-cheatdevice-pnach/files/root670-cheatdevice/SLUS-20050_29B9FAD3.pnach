@@ -1,0 +1,106 @@
+gametitle=NBA Hoopz (SLUS-20050)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,001B38FF
+
+[Infinite Turbo Team 1]
+patch=1,EE,004F1AFC,extended,00000001
+
+[Infinite Turbo Team 2]
+patch=1,EE,004F1AFC,extended,00000002
+
+[Infinite Turbo Team 1 & 2]
+patch=1,EE,004F1AFC,extended,00000003
+
+[No Replays]
+patch=1,EE,004F1B00,extended,00000001
+
+[No Goaltending Team 1]
+patch=1,EE,004F1B08,extended,00000001
+
+[No Goaltending Team 2]
+patch=1,EE,004F1B08,extended,00000002
+
+[No Goaltending Team 1 & 2]
+patch=1,EE,004F1B08,extended,00000003
+
+[Small Heads Team 1]
+patch=1,EE,004F1B10,extended,00000001
+
+[Small Heads Team 2]
+patch=1,EE,004F1B10,extended,00000002
+
+[Small Heads Team 1 & 2]
+patch=1,EE,004F1B10,extended,00000003
+
+[Small Players Team 1]
+patch=1,EE,004F1B14,extended,00000001
+
+[Small Players Team 2]
+patch=1,EE,004F1B14,extended,00000002
+
+[Small Players Team 1 & 2]
+patch=1,EE,004F1B14,extended,00000003
+
+[Ultra Quarters]
+patch=1,EE,004F1B1C,extended,00000001
+
+[Granny Shots]
+patch=1,EE,004F1B20,extended,00000001
+
+[Beach Court]
+patch=1,EE,004F1B24,extended,00000001
+
+[Blizzard Beach Court]
+patch=1,EE,004F1B24,extended,00000001
+patch=1,EE,104F1B74,extended,00000001
+
+[Snowy Beach Court]
+patch=1,EE,004F1B24,extended,00000001
+patch=1,EE,004F1B78,extended,00000001
+
+[Rainy Beach Court]
+patch=1,EE,004F1B24,extended,00000001
+patch=1,EE,004F1B7C,extended,00000001
+
+[Street Court]
+patch=1,EE,004F1B28,extended,00000001
+
+[Blizzard Street Court]
+patch=1,EE,004F1B28,extended,00000001
+patch=1,EE,104F1B74,extended,00000001
+
+[Snowy Street Court]
+patch=1,EE,004F1B28,extended,00000001
+patch=1,EE,004F1B78,extended,00000001
+
+[Rainy Street Court]
+patch=1,EE,004F1B28,extended,00000001
+patch=1,EE,004F1B7C,extended,00000001
+
+[Tournament Mode]
+patch=1,EE,004F1B2C,extended,00000001
+
+[Show Shot % Team 1]
+patch=1,EE,004F1B34,extended,00000001
+
+[Show Shot % Team 2]
+patch=1,EE,004F1B34,extended,00000002
+
+[Show Shot % Team 1 & 2]
+patch=1,EE,004F1B34,extended,00000003
+
+[No Pushes]
+patch=1,EE,004F1B38,extended,00000003
+
+[Show Hotspots]
+patch=1,EE,004F1B3C,extended,00000001
+
+[No Hotspots]
+patch=1,EE,004F1B40,extended,00000001
+
+[No Fouls]
+patch=1,EE,004F1B68,extended,00000001

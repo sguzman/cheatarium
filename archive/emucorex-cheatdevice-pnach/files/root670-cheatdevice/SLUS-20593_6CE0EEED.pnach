@@ -1,0 +1,130 @@
+gametitle=Magic Pengel-The Quest For Color (SLUS-20593)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901159EC,extended,0C0489DE
+
+[Have All Parts]
+patch=1,EE,2083A4D0,extended,FFFFFFFF
+
+[Have All Paint Colors]
+patch=1,EE,2083A4D4,extended,FFFFFFFF
+
+[Have All Paint Brushes/Stances]
+patch=1,EE,2083A4D8,extended,FFFFFFFF
+
+[Hella Lines Remaining]
+patch=1,EE,2083A558,extended,4B18967F
+
+[Infinite Money]
+patch=1,EE,1083A584,extended,0000FFFF
+
+[Max Money]
+patch=1,EE,2083A584,extended,05F5E0FF
+
+[Black]
+patch=1,EE,2083A4E0,extended,461C3C00
+
+[Gray]
+patch=1,EE,2083A4E4,extended,461C3C00
+
+[White]
+patch=1,EE,2083A4E8,extended,461C3C00
+
+[Dark Red]
+patch=1,EE,2083A4EC,extended,461C3C00
+
+[Red]
+patch=1,EE,2083A4F0,extended,461C3C00
+
+[Coral]
+patch=1,EE,2083A4F4,extended,461C3C00
+
+[Purple]
+patch=1,EE,2083A4F8,extended,461C3C00
+
+[Rose]
+patch=1,EE,2083A4FC,extended,461C3C00
+
+[Pink]
+patch=1,EE,2083A500,extended,461C3C00
+
+[Dark Blue]
+patch=1,EE,2083A504,extended,461C3C00
+
+[Blue]
+patch=1,EE,2083A508,extended,461C3C00
+
+[Indigo]
+patch=1,EE,2083A50C,extended,461C3C00
+
+[Sea Blue]
+patch=1,EE,2083A510,extended,461C3C00
+
+[Aquamarine]
+patch=1,EE,2083A514,extended,461C3C00
+
+[Sky Blue]
+patch=1,EE,2083A518,extended,461C3C00
+
+[Olive]
+patch=1,EE,2083A51C,extended,461C3C00
+
+[Pea Green]
+patch=1,EE,2083A520,extended,461C3C00
+
+[Light Green]
+patch=1,EE,2083A524,extended,461C3C00
+
+[Dark Green]
+patch=1,EE,2083A528,extended,461C3C00
+
+[Green]
+patch=1,EE,2083A52C,extended,461C3C00
+
+[Sea Green]
+patch=1,EE,2083A530,extended,461C3C00
+
+[Light Brown]
+patch=1,EE,2083A534,extended,461C3C00
+
+[Yellow]
+patch=1,EE,2083A538,extended,461C3C00
+
+[Cream]
+patch=1,EE,2083A53C,extended,461C3C00
+
+[Brown]
+patch=1,EE,2083A540,extended,461C3C00
+
+[Orange]
+patch=1,EE,2083A544,extended,461C3C00
+
+[Peach]
+patch=1,EE,2083A548,extended,461C3C00
+
+[Infinite HP]
+patch=1,EE,10948FF0,extended,000003E7
+
+[Max HP]
+patch=1,EE,10948FF4,extended,000003E7
+
+[Infinite NP]
+patch=1,EE,10948FF2,extended,000003E7
+
+[Max MP]
+patch=1,EE,10948FF6,extended,000003E7
+
+[Max Attack]
+patch=1,EE,10948FF8,extended,000003E7
+
+[Max Defense]
+patch=1,EE,10948FFC,extended,000003E7
+
+[Max Agility]
+patch=1,EE,10949002,extended,000003E7
+
+[Max Luck]
+patch=1,EE,10949004,extended,000003E7

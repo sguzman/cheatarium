@@ -1,0 +1,93 @@
+gametitle=Delta Force-Black Hawk Down-Team Sabre (SLUS-21414)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,903D126C,extended,0C0F6BE5
+
+[Infinite Health]
+patch=1,EE,201FD748,extended,3C014348
+patch=1,EE,201FD74C,extended,AC410028
+
+[Infinite Air]
+patch=1,EE,20297234,extended,00000000
+
+[Guns Never Overheat]
+patch=1,EE,20375804,extended,00000000
+
+[Infinite Ammo]
+patch=1,EE,20373010,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,2037300C,extended,00461021
+
+[Max Infinite Ammo]
+patch=1,EE,2037300C,extended,240203E7
+
+[Never Reload]
+patch=1,EE,200C0220,extended,24010063
+patch=1,EE,200C0224,extended,AC81000C
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,AE420004
+patch=1,EE,D052CA42,extended,0000F7FF
+patch=1,EE,2033F410,extended,0C030088
+patch=1,EE,D052CA42,extended,0010F7FF
+patch=1,EE,2033F410,extended,AE420004
+
+[Infinite Grenades]
+patch=1,EE,2036FCB8,extended,00000000
+patch=1,EE,203723B0,extended,00000000
+
+[Extra Grenades]
+patch=1,EE,2036FCB4,extended,00851021
+patch=1,EE,103723A8,extended,00000001
+
+[Max Infinite Grenades]
+patch=1,EE,2036FCB4,extended,24020009
+patch=1,EE,203723A8,extended,24020009
+
+[Infinite Ammo Packs]
+patch=1,EE,20200820,extended,00000000
+
+[Extra Ammo Packs]
+patch=1,EE,10200818,extended,00000001
+
+[Max Infinite Ammo Packs]
+patch=1,EE,20200818,extended,24020009
+
+[Infinite Medi Packs]
+patch=1,EE,20204008,extended,00000000
+patch=1,EE,20200D60,extended,00000000
+
+[Extra Media Packs]
+patch=1,EE,10204000,extended,00000001
+patch=1,EE,10200D5C,extended,00000001
+
+[Max Infinite Medi Packs]
+patch=1,EE,20204000,extended,24030009
+patch=1,EE,20200D5C,extended,24020009
+
+[Unlock All Easy Levels]
+patch=1,EE,404871E0,extended,000C0002
+patch=1,EE,00000001,extended,00000000
+
+[Max Stars-All Easy Levels]
+patch=1,EE,404871E4,extended,000C0002
+patch=1,EE,00000003,extended,00000000
+
+[Unlock All Medium Levels]
+patch=1,EE,40487490,extended,000C0002
+patch=1,EE,00000001,extended,00000000
+
+[Max Stars-All Medium Levels]
+patch=1,EE,40487494,extended,000C0002
+patch=1,EE,00000003,extended,00000000
+
+[Unlock All Hard Levels]
+patch=1,EE,40487740,extended,000C0002
+patch=1,EE,00000001,extended,00000000
+
+[Max Stars-All Hard Levels]
+patch=1,EE,40487744,extended,000C0002
+patch=1,EE,00000003,extended,00000000

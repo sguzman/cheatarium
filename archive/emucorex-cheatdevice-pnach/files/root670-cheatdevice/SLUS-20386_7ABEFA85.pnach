@@ -1,0 +1,477 @@
+gametitle=Lethal Skies-Elite Pilot-Team SW (SLUS-20386)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,902890D4,extended,0C0A9174
+
+[Press {SELECT}+{L2} To Complete Mission]
+patch=1,EE,D04AD342,extended,0000FEFE
+patch=1,EE,20498F30,extended,00000002
+
+[Aircraft]
+patch=1,EE,0040C890,extended,00000063
+patch=1,EE,00467044,extended,00000063
+
+[Gnd Weapon]
+patch=1,EE,0040C891,extended,00000063
+patch=1,EE,00467048,extended,00000063
+
+[Vessel]
+patch=1,EE,0040C893,extended,00000063
+patch=1,EE,0046704C,extended,00000063
+
+[Structure]
+patch=1,EE,0040C892,extended,00000063
+patch=1,EE,00467050,extended,00000063
+
+[X-16S]
+patch=1,EE,204586A4,extended,00000001
+
+[F-15E]
+patch=1,EE,204586AC,extended,00000001
+
+[F-22]
+patch=1,EE,204586B0,extended,00000001
+
+[F-25]
+patch=1,EE,204586B4,extended,00000001
+
+[YF-23]
+patch=1,EE,204586B8,extended,00000001
+
+[EF2000]
+patch=1,EE,204586BC,extended,00000001
+
+[JAS39]
+patch=1,EE,204586C0,extended,00000001
+
+[MIG29]
+patch=1,EE,204586C4,extended,00000001
+
+[Su27K]
+patch=1,EE,204586C8,extended,00000001
+
+[S37]
+patch=1,EE,204586D0,extended,00000001
+
+[The Messenger]
+patch=1,EE,204586D8,extended,00000001
+
+[Frontier Century]
+patch=1,EE,204586DC,extended,00000002
+
+[Easter Parade]
+patch=1,EE,204586E0,extended,00000003
+
+[Jetroller Dest.]
+patch=1,EE,204586E4,extended,00000004
+
+[Belzebub]
+patch=1,EE,204586E8,extended,00000005
+
+[New Beginning]
+patch=1,EE,204586EC,extended,00000006
+
+[Death City]
+patch=1,EE,204586F0,extended,00000007
+
+[Powerbalance]
+patch=1,EE,204586F4,extended,00000008
+
+[Whitestorm]
+patch=1,EE,204586F8,extended,00000009
+
+[Setting Sun]
+patch=1,EE,204586FC,extended,0000000A
+
+[Mission Of The L.A.]
+patch=1,EE,20458700,extended,0000000B
+
+[Jetroller 2]
+patch=1,EE,20458704,extended,0000000C
+
+[Aurora Attack]
+patch=1,EE,20458708,extended,0000000D
+
+[Silent Touchdown]
+patch=1,EE,2045870C,extended,0000000E
+
+[Easy Operation]
+patch=1,EE,20458710,extended,0000000F
+
+[Babel]
+patch=1,EE,20458714,extended,00000010
+
+[Shadow Of Leviathan]
+patch=1,EE,20458718,extended,00000011
+
+[Moby Dick]
+patch=1,EE,2045871C,extended,00000012
+
+[Hopeless]
+patch=1,EE,20458720,extended,00000013
+
+[Shining Wings]
+patch=1,EE,20458724,extended,00000014
+
+[The Messenger]
+patch=1,EE,204587D0,extended,00000000
+
+[Frontier Century]
+patch=1,EE,204587D8,extended,00000000
+
+[Easter Parade]
+patch=1,EE,204587E0,extended,00000000
+
+[Jetroller Destruction]
+patch=1,EE,204587E8,extended,00000000
+
+[Belzebub]
+patch=1,EE,204587F0,extended,00000000
+
+[New Beginning]
+patch=1,EE,204587F8,extended,00000000
+
+[Death City]
+patch=1,EE,20458800,extended,00000000
+
+[Powerbalance]
+patch=1,EE,20458808,extended,00000000
+
+[Whitestorm]
+patch=1,EE,20458810,extended,00000000
+
+[Setting Sun]
+patch=1,EE,20458818,extended,00000000
+
+[Mission Of The L.A.]
+patch=1,EE,20458820,extended,00000000
+
+[Jetroller 2]
+patch=1,EE,20458828,extended,00000000
+
+[Aurora Attack]
+patch=1,EE,20458830,extended,00000000
+
+[Silent Touchdown]
+patch=1,EE,20458838,extended,00000000
+
+[Easy Operation]
+patch=1,EE,20458840,extended,00000000
+
+[Babel]
+patch=1,EE,20458848,extended,00000000
+
+[Shadow Of Leviathan]
+patch=1,EE,20458850,extended,00000000
+
+[Moby Dick]
+patch=1,EE,20458858,extended,00000000
+
+[Hopeless]
+patch=1,EE,20458860,extended,00000000
+
+[Shining Wings]
+patch=1,EE,20458868,extended,00000000
+
+[The Messenger]
+patch=1,EE,20458870,extended,00000000
+
+[Frontier Century]
+patch=1,EE,20458878,extended,00000000
+
+[Easter Parade]
+patch=1,EE,20458880,extended,00000000
+
+[Jetroller Dest.]
+patch=1,EE,20458888,extended,00000000
+
+[Belzebub]
+patch=1,EE,20458890,extended,00000000
+
+[New Beginning]
+patch=1,EE,20458898,extended,00000000
+
+[Death City]
+patch=1,EE,204588A0,extended,00000000
+
+[Powerbalance]
+patch=1,EE,204588A8,extended,00000000
+
+[Whitestorm]
+patch=1,EE,204588B0,extended,00000000
+
+[Setting Sun]
+patch=1,EE,204588B8,extended,00000000
+
+[Mission Of The L.A.]
+patch=1,EE,204588C0,extended,00000000
+
+[Jetroller 2]
+patch=1,EE,204588C8,extended,00000000
+
+[Aurora Attack]
+patch=1,EE,204588D0,extended,00000000
+
+[Silent Touchdown]
+patch=1,EE,204588D8,extended,00000000
+
+[Easy Operation]
+patch=1,EE,204588E0,extended,00000000
+
+[Babel]
+patch=1,EE,204588E8,extended,00000000
+
+[Shadow Of Leviathan]
+patch=1,EE,204588F0,extended,00000000
+
+[Moby Dick]
+patch=1,EE,204588F8,extended,00000000
+
+[Hopeless]
+patch=1,EE,20458900,extended,00000000
+
+[Shining Wings]
+patch=1,EE,20458908,extended,00000000
+
+[The Messenger]
+patch=1,EE,20458910,extended,00000000
+
+[Frontier Century]
+patch=1,EE,20458918,extended,00000000
+
+[Easter Parade]
+patch=1,EE,20458920,extended,00000000
+
+[Jetroller Dest.]
+patch=1,EE,20458928,extended,00000000
+
+[Belzebub]
+patch=1,EE,20458930,extended,00000000
+
+[New Beginning]
+patch=1,EE,20458938,extended,00000000
+
+[Death City]
+patch=1,EE,20458940,extended,00000000
+
+[Powerbalance]
+patch=1,EE,20458948,extended,00000000
+
+[Whitestorm]
+patch=1,EE,20458950,extended,00000000
+
+[Setting Sun]
+patch=1,EE,20458958,extended,00000000
+
+[Mission Of The L.A.]
+patch=1,EE,20458960,extended,00000000
+
+[Jetroller 2]
+patch=1,EE,20458968,extended,00000000
+
+[Aurora Attack]
+patch=1,EE,20458970,extended,00000000
+
+[Silent Touchdown]
+patch=1,EE,20458978,extended,00000000
+
+[Easy Operation]
+patch=1,EE,20458980,extended,00000000
+
+[Babel]
+patch=1,EE,20458988,extended,00000000
+
+[Shadow Of Leviathan]
+patch=1,EE,20458990,extended,00000000
+
+[Moby Dick]
+patch=1,EE,20458998,extended,00000000
+
+[Hopeless]
+patch=1,EE,204589A0,extended,00000000
+
+[Shining Wings]
+patch=1,EE,204589A8,extended,00000000
+
+[The Messenger]
+patch=1,EE,204587D4,extended,00000000
+
+[Frontier Century]
+patch=1,EE,204587DC,extended,00000000
+
+[Easter Parade]
+patch=1,EE,204587E4,extended,00000000
+
+[Jetroller Dest.]
+patch=1,EE,204587EC,extended,00000000
+
+[Belzebub]
+patch=1,EE,204587F4,extended,00000000
+
+[New Beginning]
+patch=1,EE,204587FC,extended,00000000
+
+[Death City]
+patch=1,EE,20458804,extended,00000000
+
+[Powerbalance]
+patch=1,EE,2045880C,extended,00000000
+
+[Whitestorm]
+patch=1,EE,20458814,extended,00000000
+
+[Setting Sun]
+patch=1,EE,2045881C,extended,00000000
+
+[Mission Of The L.A.]
+patch=1,EE,20458824,extended,00000000
+
+[Jetroller 2]
+patch=1,EE,2045882C,extended,00000000
+
+[Aurora Attack]
+patch=1,EE,20458834,extended,00000000
+
+[Silent Touchdown]
+patch=1,EE,2045883C,extended,00000000
+
+[Easy Operation]
+patch=1,EE,20458844,extended,00000000
+
+[Babel]
+patch=1,EE,2045884C,extended,00000000
+
+[Shadow Of Leviathan]
+patch=1,EE,20458854,extended,00000000
+
+[Moby Dick]
+patch=1,EE,2045885C,extended,00000000
+
+[Hopeless]
+patch=1,EE,20458864,extended,00000000
+
+[Shining Wings]
+patch=1,EE,2045886C,extended,00000000
+
+[The Messenger]
+patch=1,EE,20458874,extended,00000000
+
+[Frontier Century]
+patch=1,EE,2045887C,extended,00000000
+
+[Easter Parade]
+patch=1,EE,20458884,extended,00000000
+
+[Jetroller Dest.]
+patch=1,EE,2045888C,extended,00000000
+
+[Belzebub]
+patch=1,EE,20458894,extended,00000000
+
+[New Beginning]
+patch=1,EE,2045889C,extended,00000000
+
+[Death City]
+patch=1,EE,204588A4,extended,00000000
+
+[Powerbalance]
+patch=1,EE,204588AC,extended,00000000
+
+[Whitestorm]
+patch=1,EE,204588B4,extended,00000000
+
+[Setting Sun]
+patch=1,EE,204588BC,extended,00000000
+
+[Mission Of The L.A.]
+patch=1,EE,204588C4,extended,00000000
+
+[Jetroller 2]
+patch=1,EE,204588CC,extended,00000000
+
+[Aurora Attack]
+patch=1,EE,204588D4,extended,00000000
+
+[Silent Touchdown]
+patch=1,EE,204588DC,extended,00000000
+
+[Easy Operation]
+patch=1,EE,204588E4,extended,00000000
+
+[Babel]
+patch=1,EE,204588EC,extended,00000000
+
+[Shadow Of Leviathan]
+patch=1,EE,204588F4,extended,00000000
+
+[Moby Dick]
+patch=1,EE,204588FC,extended,00000000
+
+[Hopeless]
+patch=1,EE,20458904,extended,00000000
+
+[Shining Wings]
+patch=1,EE,2045890C,extended,00000000
+
+[The Messenger]
+patch=1,EE,20458914,extended,00000000
+
+[Frontier Century]
+patch=1,EE,2045891C,extended,00000000
+
+[Easter Parade]
+patch=1,EE,20458924,extended,00000000
+
+[Jetroller Dest.]
+patch=1,EE,2045892C,extended,00000000
+
+[Belzebub]
+patch=1,EE,20458934,extended,00000000
+
+[New Beginning]
+patch=1,EE,2045893C,extended,00000000
+
+[Death City]
+patch=1,EE,20458944,extended,00000000
+
+[Powerbalance]
+patch=1,EE,2045894C,extended,00000000
+
+[Whitestorm]
+patch=1,EE,20458954,extended,00000000
+
+[Setting Sun]
+patch=1,EE,2045895C,extended,00000000
+
+[Mission Of The L.A.]
+patch=1,EE,20458964,extended,00000000
+
+[Jetroller 2]
+patch=1,EE,2045896C,extended,00000000
+
+[Aurora Attack]
+patch=1,EE,20458974,extended,00000000
+
+[Silent Touchdown]
+patch=1,EE,2045897C,extended,00000000
+
+[Easy Operation]
+patch=1,EE,20458984,extended,00000000
+
+[Babel]
+patch=1,EE,2045898C,extended,00000000
+
+[Shadow Of Leviathan]
+patch=1,EE,20458994,extended,00000000
+
+[Moby Dick]
+patch=1,EE,2045899C,extended,00000000
+
+[Hopeless]
+patch=1,EE,204589A4,extended,00000000
+
+[Shining Wings]
+patch=1,EE,204589AC,extended,00000000

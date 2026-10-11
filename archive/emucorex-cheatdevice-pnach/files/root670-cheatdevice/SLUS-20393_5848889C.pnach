@@ -1,0 +1,876 @@
+gametitle=Onimusha 2-Samurai's Destiny (SLUS-20393)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90286068,extended,0C0A054C
+
+[Always 1st Time You've Saved]
+patch=1,EE,2184B078,extended,00000000
+
+[Always Low Play Time]
+patch=1,EE,2184AF04,extended,00000001
+
+[Infinite Health]
+patch=1,EE,117DC1C0,extended,00001388
+
+[Max Health]
+patch=1,EE,117DC1C2,extended,00001388
+
+[Max Infinite Health]
+patch=1,EE,217DC1C0,extended,13881388
+
+[Infinite Health (Alternate)]
+patch=1,EE,201746F8,extended,24020500
+patch=1,EE,20174700,extended,A60200E0
+
+[Infinite Gold]
+patch=1,EE,117DE9C4,extended,0000FFFF
+
+[Max Gold]
+patch=1,EE,217DE9C4,extended,000F423F
+
+[Max Souls]
+patch=1,EE,217DE860,extended,00018400
+patch=1,EE,217DE864,extended,00018400
+
+[Max Ogre Power]
+patch=1,EE,117DE602,extended,00000A00
+
+[Infinite Ogre Power]
+patch=1,EE,117DE85A,extended,00000A00
+
+[Herbs]
+patch=1,EE,217DF65C,extended,00000063
+
+[Medicine]
+patch=1,EE,217DF664,extended,00000063
+
+[Secret Medicine]
+patch=1,EE,217DF66C,extended,00000063
+
+[Perfect Medicine]
+patch=1,EE,217DF674,extended,00000063
+
+[Magic Liquid]
+patch=1,EE,217DF67C,extended,00000063
+
+[Special M. Liquid]
+patch=1,EE,217DF684,extended,00000063
+
+[Super M. Liquid]
+patch=1,EE,217DF68C,extended,00000063
+
+[Mountain Permit]
+patch=1,EE,217DF694,extended,00000063
+
+[Red Ring]
+patch=1,EE,217DF69C,extended,00000063
+
+[Talisman]
+patch=1,EE,217DF6BC,extended,00000063
+
+[Red Stone Pole]
+patch=1,EE,217DF6DC,extended,00000063
+
+[Blue Stone Pole]
+patch=1,EE,217DF6E4,extended,00000063
+
+[Saiga Bomb]
+patch=1,EE,217DF6FC,extended,00000063
+
+[Power Jewel]
+patch=1,EE,217DF8BC,extended,00000063
+
+[Magic Jewel]
+patch=1,EE,217DF8C4,extended,00000063
+
+[Great Powder Tube]
+patch=1,EE,217DF974,extended,00000063
+
+[Red Wedge]
+patch=1,EE,217DF97C,extended,00000063
+
+[Blue Wedge]
+patch=1,EE,217DF984,extended,00000063
+
+[Green Wedge]
+patch=1,EE,217DF98C,extended,00000063
+
+[Purple Wedge]
+patch=1,EE,217DF994,extended,00000063
+
+[Fossilized Bone]
+patch=1,EE,217DFA24,extended,00000063
+
+[Purify Charm]
+patch=1,EE,217DFA7C,extended,00000063
+
+[Ring Of Takajo]
+patch=1,EE,217DFA84,extended,00000063
+
+[Ekei's Keepsake]
+patch=1,EE,217DFDDC,extended,00000063
+
+[Charity Orb]
+patch=1,EE,217DFF54,extended,00000063
+
+[Faith Orb]
+patch=1,EE,217DFF5C,extended,00000063
+
+[Honesty Orb]
+patch=1,EE,217DFF64,extended,00000063
+
+[Respect Orb]
+patch=1,EE,217DFF6C,extended,00000063
+
+[Strenth Orb]
+patch=1,EE,217DFF74,extended,00000063
+
+[Bronze Mask (Right)]
+patch=1,EE,217DFF7C,extended,00000063
+
+[Bronze Mask (Left)]
+patch=1,EE,217DFF84,extended,00000063
+
+[Gold Scale]
+patch=1,EE,217DFF8C,extended,00000063
+
+[Cherry Key]
+patch=1,EE,217DFF9C,extended,00000063
+
+[Crescent Key]
+patch=1,EE,217DFFA4,extended,00000063
+
+[Sacred Flute]
+patch=1,EE,217DFFAC,extended,00000063
+
+[Nobunaga's Knowledge]
+patch=1,EE,217DFFB4,extended,00000063
+
+[Nobunaga's Reign]
+patch=1,EE,217DFFBC,extended,00000063
+
+[Nobunaga's Dignity]
+patch=1,EE,217DFFC4,extended,00000063
+
+[Fashionable Goods]
+patch=1,EE,217DFFCC,extended,00000063
+
+[Scarlet Key]
+patch=1,EE,217DFFD4,extended,00000063
+
+[Key Plate]
+patch=1,EE,217DFFDC,extended,00000063
+
+[Circle Key]
+patch=1,EE,217DFFE4,extended,00000063
+
+[Gold Key]
+patch=1,EE,217DFFEC,extended,00000063
+
+[Snake Key]
+patch=1,EE,217DFFFC,extended,00000063
+
+[Normal Bullet]
+patch=1,EE,217E0014,extended,00000063
+
+[Burst Bullet]
+patch=1,EE,217E001C,extended,00000063
+
+[Normal Arrow]
+patch=1,EE,217E0034,extended,00000063
+
+[Fire Arrow]
+patch=1,EE,217E003C,extended,00000063
+
+[Buraitou Tech.1]
+patch=1,EE,217E014C,extended,00000063
+
+[Buraitou Tech.2]
+patch=1,EE,217E0154,extended,00000063
+
+[Hyoujin-Yari Tech.1]
+patch=1,EE,217E0164,extended,00000063
+
+[Hyoujin-Yari Tech.2]
+patch=1,EE,217E016C,extended,00000063
+
+[Senpumaru Tech.1]
+patch=1,EE,217E017C,extended,00000063
+
+[Senpumaru Tech.2]
+patch=1,EE,217E0184,extended,00000063
+
+[Dokoutusi Tech.1]
+patch=1,EE,217E0194,extended,00000063
+
+[Dokoutusi Tech.2]
+patch=1,EE,217E019C,extended,00000063
+
+[Buraitou Secret]
+patch=1,EE,217E01BC,extended,00000063
+
+[Hyoujin-Yari Secret]
+patch=1,EE,217E01C4,extended,00000063
+
+[Senpumaru Secret]
+patch=1,EE,217E01CC,extended,00000063
+
+[Dokoutusui Secret]
+patch=1,EE,217E01D4,extended,00000063
+
+[Red Bracelet]
+patch=1,EE,217E01E4,extended,00000063
+
+[Green Bracelet]
+patch=1,EE,217E01EC,extended,00000063
+
+[Blue Bracelet]
+patch=1,EE,217E01F4,extended,00000063
+
+[Yellow Bracelet]
+patch=1,EE,217E01FC,extended,00000063
+
+[Film 1]
+patch=1,EE,217E0284,extended,00000063
+
+[Film 2]
+patch=1,EE,217E028C,extended,00000063
+
+[Film 3]
+patch=1,EE,217E0294,extended,00000063
+
+[Film 4]
+patch=1,EE,217E029C,extended,00000063
+
+[Film 5]
+patch=1,EE,217E02A4,extended,00000063
+
+[Film 6]
+patch=1,EE,217E02AC,extended,00000063
+
+[Film 7]
+patch=1,EE,217E02B4,extended,00000063
+
+[Film 8]
+patch=1,EE,217E02BC,extended,00000063
+
+[Film 9]
+patch=1,EE,217E02C4,extended,00000063
+
+[Film 10]
+patch=1,EE,217E02CC,extended,00000063
+
+[Film 11]
+patch=1,EE,217E02D4,extended,00000063
+
+[Film 12]
+patch=1,EE,217E02DC,extended,00000063
+
+[Film 13]
+patch=1,EE,217E02E4,extended,00000063
+
+[Film 14]
+patch=1,EE,217E02EC,extended,00000063
+
+[Film 15]
+patch=1,EE,217E02F4,extended,00000063
+
+[Film 16]
+patch=1,EE,217E02FC,extended,00000063
+
+[Film 17]
+patch=1,EE,217E0304,extended,00000063
+
+[Film 18]
+patch=1,EE,217E030C,extended,00000063
+
+[Film 19]
+patch=1,EE,217E0314,extended,00000063
+
+[Film 20]
+patch=1,EE,217E031C,extended,00000063
+
+[Potassium Nitrate]
+patch=1,EE,217DF6A4,extended,00000001
+
+[Incense]
+patch=1,EE,217DF6AC,extended,00000001
+
+[Stamina Drink]
+patch=1,EE,217DF6F4,extended,00000001
+
+[Dumpling Cake]
+patch=1,EE,217DF70C,extended,00000001
+
+[Conch Shell]
+patch=1,EE,217DF714,extended,00000001
+
+[Wonder Flower]
+patch=1,EE,217DF72C,extended,00000001
+
+[Black Beer]
+patch=1,EE,217DF744,extended,00000001
+
+[Vodka]
+patch=1,EE,217DF74C,extended,00000001
+
+[Sake From Kaga]
+patch=1,EE,217DF754,extended,00000001
+
+[Wine]
+patch=1,EE,217DF75C,extended,00000001
+
+[Oolong Tea]
+patch=1,EE,217DF764,extended,00000001
+
+[Tea]
+patch=1,EE,217DF76C,extended,00000001
+
+[Sponge Cake]
+patch=1,EE,217DF774,extended,00000001
+
+[Pickled Plum]
+patch=1,EE,217DF77C,extended,00000001
+
+[Bread]
+patch=1,EE,217DF784,extended,00000001
+
+[Melon]
+patch=1,EE,217DF78C,extended,00000001
+
+[Music Box]
+patch=1,EE,217DF794,extended,00000001
+
+[Pipe]
+patch=1,EE,217DF79C,extended,00000001
+
+[Glass]
+patch=1,EE,217DF7A4,extended,00000001
+
+[Globe]
+patch=1,EE,217DF7AC,extended,00000001
+
+[European Hat]
+patch=1,EE,217DF7B4,extended,00000001
+
+[Crown]
+patch=1,EE,217DF7BC,extended,00000001
+
+[Emblem]
+patch=1,EE,217DF7C4,extended,00000001
+
+[Kaleidoscope]
+patch=1,EE,217DF7CC,extended,00000001
+
+[Chinese Fiddle]
+patch=1,EE,217DF7D4,extended,00000001
+
+[Copper Coin]
+patch=1,EE,217DF7DC,extended,00000001
+
+[Ancient Coin]
+patch=1,EE,217DF7E4,extended,00000001
+
+[Silver Coin]
+patch=1,EE,217DF7EC,extended,00000001
+
+[Gold Coin]
+patch=1,EE,217DF7F4,extended,00000001
+
+[Brown Egg]
+patch=1,EE,217DF7FC,extended,00000001
+
+[Broken Bell]
+patch=1,EE,217DF804,extended,00000001
+
+[Folding Fan]
+patch=1,EE,217DF80C,extended,00000001
+
+[Abacus]
+patch=1,EE,217DF814,extended,00000001
+
+[Raw Fish]
+patch=1,EE,217DF81C,extended,00000001
+
+[Recorder]
+patch=1,EE,217DF824,extended,00000001
+
+[The Analects]
+patch=1,EE,217DF82C,extended,00000001
+
+[History Books (All)]
+patch=1,EE,217DF834,extended,00000001
+
+[History Book (Vol. 1)]
+patch=1,EE,217DF83C,extended,00000001
+
+[History Book (Vol. 2)]
+patch=1,EE,217DF844,extended,00000001
+
+[History Book (Vol. 3)]
+patch=1,EE,217DF84C,extended,00000001
+
+[History Book (Vol. 4)]
+patch=1,EE,217DF854,extended,00000001
+
+[History Book (Vol. 5)]
+patch=1,EE,217DF85C,extended,00000001
+
+[History Book (Vol. 6)]
+patch=1,EE,217DF864,extended,00000001
+
+[History Book (Vol. 7)]
+patch=1,EE,217DF86C,extended,00000001
+
+[History Book (Vol. 8)]
+patch=1,EE,217DF874,extended,00000001
+
+[History Book (Vol. 9)]
+patch=1,EE,217DF87C,extended,00000001
+
+[History Book (Vol. 10)]
+patch=1,EE,217DF884,extended,00000001
+
+[Taliheiki]
+patch=1,EE,217DF88C,extended,00000001
+
+[Fairy Tale Book]
+patch=1,EE,217DF894,extended,00000001
+
+[Strategy Book]
+patch=1,EE,217DF89C,extended,00000001
+
+[Brown Chick]
+patch=1,EE,217DF8A4,extended,00000001
+
+[Tale Of The Heike]
+patch=1,EE,217DF8AC,extended,00000001
+
+[Naughty Novel]
+patch=1,EE,217DF8B4,extended,00000001
+
+[Comb]
+patch=1,EE,217DF8CC,extended,00000001
+
+[Wind Bell]
+patch=1,EE,217DF8DC,extended,00000001
+
+[Pair Ring]
+patch=1,EE,217DF8E4,extended,00000001
+
+[Telescope]
+patch=1,EE,217DF8EC,extended,00000001
+
+[Tengu Mask]
+patch=1,EE,217DF8F4,extended,00000001
+
+[Magnetic Compass]
+patch=1,EE,217DF8FC,extended,00000001
+
+[Pocket Watch]
+patch=1,EE,217DF904,extended,00000001
+
+[Dice]
+patch=1,EE,217DF90C,extended,00000001
+
+[Ancient Documents]
+patch=1,EE,217DF914,extended,00000001
+
+[Plant Book]
+patch=1,EE,217DF91C,extended,00000001
+
+[Love Potion]
+patch=1,EE,217DF924,extended,00000001
+
+[Cameo]
+patch=1,EE,217DF92C,extended,00000001
+
+[Hair Ornament]
+patch=1,EE,217DF934,extended,00000001
+
+[Loaded Dice]
+patch=1,EE,217DF93C,extended,00000001
+
+[Gourd]
+patch=1,EE,217DF944,extended,00000001
+
+[Mirror]
+patch=1,EE,217DF964,extended,00000001
+
+[Crystal Ball]
+patch=1,EE,217DF96C,extended,00000001
+
+[Tube For Pigeon]
+patch=1,EE,217DF99C,extended,00000001
+
+[Black Pill]
+patch=1,EE,217DF9A4,extended,00000001
+
+[Confetti]
+patch=1,EE,217DF9AC,extended,00000001
+
+[Salt]
+patch=1,EE,217DF9B4,extended,00000001
+
+[Grilled Fish]
+patch=1,EE,217DF9BC,extended,00000001
+
+[Water Melon]
+patch=1,EE,217DF9C4,extended,00000001
+
+[Pickled Vegetables]
+patch=1,EE,217DF9CC,extended,00000001
+
+[Wasabi]
+patch=1,EE,217DF9D4,extended,00000001
+
+[Unique Mushroom]
+patch=1,EE,217DF9DC,extended,00000001
+
+[Rouge]
+patch=1,EE,217DF9E4,extended,00000001
+
+[Fur Skin]
+patch=1,EE,217DF9EC,extended,00000001
+
+[Scarf]
+patch=1,EE,217DF9F4,extended,00000001
+
+[Persian Carpet]
+patch=1,EE,217DF9FC,extended,00000001
+
+[Taizo Mandala]
+patch=1,EE,217DFA04,extended,00000001
+
+[Playing Cards]
+patch=1,EE,217DFA0C,extended,00000001
+
+[Textile Fabrics]
+patch=1,EE,217DFA14,extended,00000001
+
+[Cloth]
+patch=1,EE,217DFA1C,extended,00000001
+
+[Hair Oil]
+patch=1,EE,217DFA2C,extended,00000001
+
+[Brown Chicken]
+patch=1,EE,217DFA34,extended,00000001
+
+[Calligraphy Kit]
+patch=1,EE,217DFA3C,extended,00000001
+
+[Bouquet]
+patch=1,EE,217DFA44,extended,00000001
+
+[Dead Flowers]
+patch=1,EE,217DFA4C,extended,00000001
+
+[Rotten Fish]
+patch=1,EE,217DFA54,extended,00000001
+
+[Chalk]
+patch=1,EE,217DFA64,extended,00000001
+
+[Phirangi]
+patch=1,EE,217DFD54,extended,00000001
+
+[River Fish]
+patch=1,EE,217DFD6C,extended,00000001
+
+[Silver Armor]
+patch=1,EE,217DFD7C,extended,00000001
+
+[Hard Boots]
+patch=1,EE,217DFD94,extended,00000001
+
+[Gabishi]
+patch=1,EE,217DFDC4,extended,00000001
+
+[Hien Kyahan]
+patch=1,EE,217DFE04,extended,00000001
+
+[Keimyo Hachimaki]
+patch=1,EE,217DFE1C,extended,00000001
+
+[Houtengeki]
+patch=1,EE,217DFE34,extended,00000001
+
+[Ashura Garment]
+patch=1,EE,217DFE5C,extended,00000001
+
+[Fudo Leg Guard]
+patch=1,EE,217DFE74,extended,00000001
+
+[Goraishinki]
+patch=1,EE,217DFEA4,extended,00000001
+
+[Pirate Costume]
+patch=1,EE,217DFED4,extended,00000001
+
+[Western Boots]
+patch=1,EE,217DFEEC,extended,00000001
+
+[Gold Egg]
+patch=1,EE,217DFF94,extended,00000001
+
+[Fancy Paper]
+patch=1,EE,217DFFF4,extended,00000001
+
+[Pick]
+patch=1,EE,217E0204,extended,00000001
+
+[Beetle]
+patch=1,EE,217E020C,extended,00000001
+
+[Gold Chick]
+patch=1,EE,217E0214,extended,00000001
+
+[Frog]
+patch=1,EE,217E021C,extended,00000001
+
+[Deer Horn]
+patch=1,EE,217E0224,extended,00000001
+
+[Fish Rice]
+patch=1,EE,217E022C,extended,00000001
+
+[Pandora's Box]
+patch=1,EE,217E0234,extended,00000001
+
+[Fork]
+patch=1,EE,217E023C,extended,00000001
+
+[Egg]
+patch=1,EE,217E0244,extended,00000001
+
+[Chick]
+patch=1,EE,217E024C,extended,00000001
+
+[Chicken]
+patch=1,EE,217E0254,extended,00000001
+
+[Lemon]
+patch=1,EE,217E025C,extended,00000001
+
+[Red Parrot]
+patch=1,EE,217E0264,extended,00000001
+
+[Green Parrot]
+patch=1,EE,217E026C,extended,00000001
+
+[Blue Parrot]
+patch=1,EE,217E0274,extended,00000001
+
+[Gold Chicken]
+patch=1,EE,217E027C,extended,00000001
+
+[Tanegashima]
+patch=1,EE,217DF94C,extended,00000001
+
+[Tri-Barrel Gun]
+patch=1,EE,217DF954,extended,00000001
+
+[Bow]
+patch=1,EE,217DF95C,extended,00000001
+
+[Yagyu Sword]
+patch=1,EE,217DFC44,extended,00000001
+
+[Buraitou Lv1]
+patch=1,EE,217DFC4C,extended,00000001
+
+[Buraitou Lv2]
+patch=1,EE,217DFC54,extended,00000001
+
+[Buraitou Lv3]
+patch=1,EE,217DFC5C,extended,00000001
+
+[Hyoujin-Yari Lv1]
+patch=1,EE,217DFC64,extended,00000001
+
+[Hyoujin-Yari Lv2]
+patch=1,EE,217DFC6C,extended,00000001
+
+[Hyoujin-Yari Lv3]
+patch=1,EE,217DFC74,extended,00000001
+
+[Rekka-Ken]
+patch=1,EE,217DFC7C,extended,00000001
+
+[Senpumaru Lv1]
+patch=1,EE,217DFC94,extended,00000001
+
+[Senpumaru Lv2]
+patch=1,EE,217DFC9C,extended,00000001
+
+[Senpumaru Lv3]
+patch=1,EE,217DFCA4,extended,00000001
+
+[Dokoutsui Lv1]
+patch=1,EE,217DFCAC,extended,00000001
+
+[Dokoutsui Lv2]
+patch=1,EE,217DFCB4,extended,00000001
+
+[Dokoutsui Lv3]
+patch=1,EE,217DFCBC,extended,00000001
+
+[Bow+Arrow]
+patch=1,EE,217DFCC4,extended,00000001
+
+[Bow+Fire Arrow]
+patch=1,EE,217DFCCC,extended,00000001
+
+[Tanegashima+NB]
+patch=1,EE,217DFCE4,extended,00000001
+
+[Tri-Barrel+BB]
+patch=1,EE,217DFCEC,extended,00000001
+
+[Sponge Stick]
+patch=1,EE,217DFCF4,extended,00000001
+
+[Hat & Sunglasses]
+patch=1,EE,217DFCFC,extended,00000001
+
+[Yagyu Armor]
+patch=1,EE,217DFD04,extended,00000001
+
+[Yagyu Armor 2]
+patch=1,EE,217DFD0C,extended,00000001
+
+[Yagyu Armor 3]
+patch=1,EE,217DFD14,extended,00000001
+
+[Yagyu Foot Armor]
+patch=1,EE,217DFD1C,extended,00000001
+
+[Yagyu Foot Armor 2]
+patch=1,EE,217DFD24,extended,00000001
+
+[Yagyu Foot Armor 3]
+patch=1,EE,217DFD2C,extended,00000001
+
+[Yagyu Arm Armor]
+patch=1,EE,217DFD34,extended,00000001
+
+[Yagyu Arm Armor 2]
+patch=1,EE,217DFD3C,extended,00000001
+
+[Yagyu Arm Armor 3]
+patch=1,EE,217DFD44,extended,00000001
+
+[Red Necklace]
+patch=1,EE,217DFF14,extended,00000001
+
+[Blue Necklace]
+patch=1,EE,217DFF1C,extended,00000001
+
+[Yellow Necklace]
+patch=1,EE,217DFF24,extended,00000001
+
+[Green Necklace]
+patch=1,EE,217DFF2C,extended,00000001
+
+[White Necklace]
+patch=1,EE,217DFF34,extended,00000001
+
+[Black Necklace]
+patch=1,EE,217DFF3C,extended,00000001
+
+[Purple Necklace]
+patch=1,EE,217DFF44,extended,00000001
+
+[Orange Necklace]
+patch=1,EE,217DFF4C,extended,00000001
+
+[Play Instruments]
+patch=1,EE,217E00A4,extended,00000001
+
+[Gift Exchange]
+patch=1,EE,217E00AC,extended,00000001
+
+[Demon Wall Scroll]
+patch=1,EE,217E00B4,extended,00000001
+
+[Fortinbras Book]
+patch=1,EE,217E00BC,extended,00000001
+
+[Jujudormah's Diary]
+patch=1,EE,217E00C4,extended,00000001
+
+[Oni's Sacred Place]
+patch=1,EE,217E00CC,extended,00000001
+
+[Oni's Super Weapon]
+patch=1,EE,217E00D4,extended,00000001
+
+[Lift Instructions]
+patch=1,EE,217E00DC,extended,00000001
+
+[Gogandantess Shield]
+patch=1,EE,217E00E4,extended,00000001
+
+[Five Oni Orbs]
+patch=1,EE,217E0104,extended,00000001
+
+[Demons' History]
+patch=1,EE,217E010C,extended,00000001
+
+[Hunting Schedule]
+patch=1,EE,217E0114,extended,00000001
+
+[Human As Food]
+patch=1,EE,217E011C,extended,00000001
+
+[Golden Evil Statue]
+patch=1,EE,217E0124,extended,00000001
+
+[Tokichrio's Diary]
+patch=1,EE,217E012C,extended,00000001
+
+[Guildenstern Letter]
+patch=1,EE,217E0134,extended,00000001
+
+[Yagyu Village Map]
+patch=1,EE,217E0054,extended,00000001
+
+[Imasho Town Map]
+patch=1,EE,217E005C,extended,00000001
+
+[Gold Mine Map]
+patch=1,EE,217E0064,extended,00000001
+
+[Demon Cave Map]
+patch=1,EE,217E006C,extended,00000001
+
+[Gifu Keep Tower Map]
+patch=1,EE,217E0074,extended,00000001
+
+[Gifu East Area Map]
+patch=1,EE,217E007C,extended,00000001
+
+[Fog Valley Map]
+patch=1,EE,217E0084,extended,00000001
+
+[Oni's Place Map #1]
+patch=1,EE,217E008C,extended,00000001
+
+[Oni's Place Map #2]
+patch=1,EE,217E0094,extended,00000001
+
+[Oni's Place Map #3]
+patch=1,EE,217E009C,extended,00000001
+
+[Four Guardians:Right]
+patch=1,EE,217E00EC,extended,00000001
+
+[Four Guardians:Left]
+patch=1,EE,217E00F4,extended,00000001
+
+[Four Guardians Art]
+patch=1,EE,217E00FC,extended,00000001

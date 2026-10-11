@@ -1,0 +1,245 @@
+gametitle=Spartan-Total Warrior (SLUS-21212)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9021EC90,extended,0C087ACC
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,8F838B90
+patch=1,EE,200C0224,extended,A46402FA
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,000427C7
+patch=1,EE,203BB660,extended,0C030088
+
+[Infinite Arrows]
+patch=1,EE,2030DDB0,extended,00000000
+
+[Max Infinite Arrows]
+patch=1,EE,2030DDAC,extended,24020063
+
+[Extra Arrows]
+patch=1,EE,2030DDAC,extended,00441021
+
+[Max Kills]
+patch=1,EE,2057CB0C,extended,000003E7
+
+[Kills Worth 50]
+patch=1,EE,102A0BF4,extended,00000032
+
+[Kills Worth 25]
+patch=1,EE,102A0BF4,extended,00000019
+
+[Kills Worth 10]
+patch=1,EE,102A0BF4,extended,0000000A
+
+[Kills Worth 5]
+patch=1,EE,102A0BF4,extended,00000005
+
+[Kills Worth 2]
+patch=1,EE,102A0BF4,extended,00000002
+
+[Weakest Enemies]
+patch=1,EE,2057CB04,extended,3C000000
+
+[Weaker Enemies]
+patch=1,EE,2057CB04,extended,3E000000
+
+[Stronger Enemies]
+patch=1,EE,2057CB04,extended,41000000
+
+[Strongest Enemies]
+patch=1,EE,2057CB04,extended,42C80000
+
+[Unlock All Single Mission Replay]
+patch=1,EE,20381330,extended,2406000E
+patch=1,EE,005EC1E8,extended,0000000E
+
+[Unlock All Arena Challenges]
+patch=1,EE,20381344,extended,24060005
+patch=1,EE,005EC238,extended,00000005
+
+[Disable Hud]
+patch=1,EE,005EA685,extended,00000001
+
+[Debug Free Camera]
+patch=1,EE,005EA689,extended,00000001
+
+[Stop Game (Press {START} To Resume)]
+patch=1,EE,005EA6AB,extended,00000001
+
+[No Background]
+patch=1,EE,005EA6AE,extended,00000001
+
+[Unlock Everything]
+patch=1,EE,005EC1E8,extended,0000000E
+patch=1,EE,205EC238,extended,01010105
+patch=1,EE,405EC23C,extended,00100001
+patch=1,EE,01010101,extended,00000000
+
+[Super Max Rage]
+patch=1,EE,205BB4C4,extended,00002710
+
+[Infinite Rage]
+patch=1,EE,205BB4CC,extended,00002710
+
+[Max Infinite Rage]
+patch=1,EE,20451250,extended,00000000
+patch=1,EE,2045125C,extended,8E030000
+
+[Rage Meter Doesnt Decrease Over Time]
+patch=1,EE,20451260,extended,00000000
+patch=1,EE,20451268,extended,00000000
+
+[Benny Hill Mode]
+patch=1,EE,005EA671,extended,00000001
+
+[Infinite Arrows]
+patch=1,EE,005EA677,extended,00000001
+
+[Invinicible]
+patch=1,EE,005EA67C,extended,00000001
+
+[{L3} Refills Power]
+patch=1,EE,005EA67D,extended,00000001
+
+[{L3} Turns Everyone To Stone]
+patch=1,EE,005EA67E,extended,00000001
+
+[1st place Set at 99999998]
+patch=1,EE,205EC200,extended,05F5E0FE
+
+[2nd place Set at 99999997]
+patch=1,EE,205EC204,extended,05F5E0FD
+
+[3rd place Set at 99999996]
+patch=1,EE,205EC208,extended,05F5E0FC
+
+[4th place Set at 99999995]
+patch=1,EE,205EC20C,extended,05F5E0FB
+
+[5th place Set at 99999994]
+patch=1,EE,205EC210,extended,05F5E0FA
+
+[6th place Set at 99999993]
+patch=1,EE,205EC214,extended,05F5E0F9
+
+[7th place Set at 99999992]
+patch=1,EE,205EC218,extended,05F5E0F8
+
+[Pic 1]
+patch=1,EE,005EC252,extended,00000001
+
+[Pic 2]
+patch=1,EE,005EC253,extended,00000001
+
+[Pic 3]
+patch=1,EE,005EC254,extended,00000001
+
+[Pic 4]
+patch=1,EE,005EC255,extended,00000001
+
+[Pic 5]
+patch=1,EE,005EC256,extended,00000001
+
+[Pic 6]
+patch=1,EE,005EC257,extended,00000001
+
+[Pic 7]
+patch=1,EE,005EC258,extended,00000001
+
+[Pic 8]
+patch=1,EE,005EC259,extended,00000001
+
+[Pic 9]
+patch=1,EE,005EC25A,extended,00000001
+
+[Pic 10]
+patch=1,EE,005EC25B,extended,00000001
+
+[Pic 11]
+patch=1,EE,005EC25C,extended,00000001
+
+[Pic 12]
+patch=1,EE,005EC25D,extended,00000001
+
+[Pic 13]
+patch=1,EE,005EC25E,extended,00000001
+
+[Pic 14]
+patch=1,EE,005EC261,extended,00000001
+
+[Pic 15]
+patch=1,EE,005EC262,extended,00000001
+
+[Pic 16]
+patch=1,EE,005EC263,extended,00000001
+
+[Pic 17]
+patch=1,EE,005EC264,extended,00000001
+
+[Pic 18]
+patch=1,EE,005EC265,extended,00000001
+
+[Pic 19]
+patch=1,EE,005EC266,extended,00000001
+
+[Pic 20]
+patch=1,EE,005EC26A,extended,00000001
+
+[Pic 21]
+patch=1,EE,005EC26B,extended,00000001
+
+[Pic 22]
+patch=1,EE,005EC26C,extended,00000001
+
+[Pic 23]
+patch=1,EE,005EC26D,extended,00000001
+
+[Pic 24]
+patch=1,EE,005EC26E,extended,00000001
+
+[Pic 25]
+patch=1,EE,005EC26F,extended,00000001
+
+[Pic 26]
+patch=1,EE,005EC270,extended,00000001
+
+[Pic 27]
+patch=1,EE,005EC271,extended,00000001
+
+[Pic 28]
+patch=1,EE,005EC272,extended,00000001
+
+[Pic 29]
+patch=1,EE,005EC273,extended,00000001
+
+[Pic 30]
+patch=1,EE,005EC274,extended,00000001
+
+[Pic 31]
+patch=1,EE,005EC275,extended,00000001
+
+[Pic 32]
+patch=1,EE,005EC276,extended,00000001
+
+[Pic 33]
+patch=1,EE,005EC277,extended,00000001
+
+[Pic 34]
+patch=1,EE,005EC278,extended,00000001
+
+[Pic 35]
+patch=1,EE,005EC279,extended,00000001
+
+[Pic 36]
+patch=1,EE,005EC27A,extended,00000001
+
+[Pic 37]
+patch=1,EE,005EC27B,extended,00000001
+
+[All Gallery]
+patch=1,EE,105EC252,extended,00000101
+patch=1,EE,405EC254,extended,000A0001
+patch=1,EE,01010101,extended,00000000

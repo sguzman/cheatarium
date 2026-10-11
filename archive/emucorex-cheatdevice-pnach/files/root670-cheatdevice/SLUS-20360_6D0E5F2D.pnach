@@ -1,0 +1,37 @@
+gametitle=Blade II (SLUS-20360)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F0100008,extended,0012A517
+
+[Infinite Health]
+patch=1,EE,1048C522,extended,00000101
+
+[Rage Always On]
+patch=1,EE,1048C532,extended,00000101
+
+[Invulnerability]
+patch=1,EE,1048C542,extended,00000101
+
+[Infinite Ammo]
+patch=1,EE,1048C552,extended,00000101
+
+[Unlock Missions]
+patch=1,EE,1048C562,extended,00000101
+
+[Unlock Weapons]
+patch=1,EE,1048C572,extended,00000101
+
+[Unlock Daywalker]
+patch=1,EE,1048C582,extended,00000101
+
+[Quick Score Gain]
+patch=1,EE,1075BD1C,extended,0000FFFF
+
+[Max Score]
+patch=1,EE,2075BD1C,extended,05F5E0FF
+
+[Unlock All Campaign Levels]
+patch=1,EE,0075BD6E,extended,00000013

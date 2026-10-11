@@ -1,0 +1,31 @@
+gametitle=River King-A Wonderful Journey (SLUS-21275)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90421864,extended,0C109B86
+
+[Infinite HP]
+patch=1,EE,2018D2FC,extended,2402270F
+patch=1,EE,2018D300,extended,A4820000
+
+[Level 99]
+patch=1,EE,201B7FB8,extended,24020063
+patch=1,EE,201B7FBC,extended,A0820000
+
+[Max Money]
+patch=1,EE,201B26C8,extended,8FA10000
+patch=1,EE,201B26CC,extended,3C0205F5
+patch=1,EE,201B26D4,extended,3442E0FF
+patch=1,EE,201B26D8,extended,03E00008
+patch=1,EE,201B26DC,extended,AC220000
+
+[Max Fishing Technique]
+patch=1,EE,201C4EF8,extended,24020005
+patch=1,EE,201C4EFC,extended,A0820000
+
+[Have All Bait]
+patch=1,EE,20213688,extended,00430821
+patch=1,EE,2021368C,extended,24020063
+patch=1,EE,2021369C,extended,A0220014

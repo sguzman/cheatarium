@@ -1,0 +1,649 @@
+gametitle=Street Fighter Alpha-Anthology (SLUS-21317)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90121048,extended,0C046298
+
+[Infinite Time]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,0060AE09,extended,00000063
+
+[Mid-Air Moves P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,0060842F,extended,00000001
+
+[Infinite Health P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,10608440,extended,00000090
+
+[75% Health P1]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608440,extended,00000090
+patch=1,EE,10608440,extended,0000006C
+
+[50% Health P1]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608440,extended,00000090
+patch=1,EE,10608440,extended,00000048
+
+[25% Health P1]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608440,extended,00000090
+patch=1,EE,10608440,extended,00000024
+
+[1-Hit Death P1]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608440,extended,00000090
+patch=1,EE,10608440,extended,00000001
+
+[No Health P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,10608440,extended,00000000
+
+[Quick Score Gain P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106084B0,extended,00009999
+
+[Max Score P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,206084B0,extended,09999999
+
+[Always Max Super P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106084BE,extended,00000090
+
+[Always Level 2 Super P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106084BE,extended,00000060
+
+[Always Level 1 Super P1]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106084BE,extended,00000030
+
+[Always No Super P1]
+patch=1,EE,106084BE,extended,00000000
+
+[P1 Needs 1 Win To Win]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D06084C6,extended,00010000
+patch=1,EE,006084C6,extended,00000001
+
+[P1 Never Wins]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,006084C6,extended,00000000
+
+[Mid-Air Moves P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,0060882F,extended,00000001
+
+[Infinite Health P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,10608840,extended,00000090
+
+[75% Health P2]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608840,extended,00000090
+patch=1,EE,10608840,extended,0000006C
+
+[50% Health P2]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608840,extended,00000090
+patch=1,EE,10608840,extended,00000048
+
+[25% Health P2]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608840,extended,00000090
+patch=1,EE,10608840,extended,00000024
+
+[1-Hit Death P2]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D0608840,extended,00000090
+patch=1,EE,10608840,extended,00000001
+
+[No Health P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,10608840,extended,00000000
+
+[Quick Score Gain P2]
+patch=1,EE,106088B0,extended,00009999
+
+[Max Score P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,206088B0,extended,09999999
+
+[Always Max Super P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106088BE,extended,00000090
+
+[Always Level 2 Super P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106088BE,extended,00000060
+
+[Always Level 1 Super P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106088BE,extended,00000030
+
+[Always No Super P2]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,106088BE,extended,00000000
+
+[P2 Needs 1 Win To Win]
+patch=1,EE,E0020060,extended,0050DDFA
+patch=1,EE,D06088C6,extended,00010000
+patch=1,EE,006088C6,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,E0010060,extended,0050DDFA
+patch=1,EE,006088C6,extended,00000000
+
+[Hit Anywhere (Both Players)]
+patch=1,EE,D02DE970,extended,0000263F
+patch=1,EE,202DE984,extended,00000000
+
+[Mid-Air Moves (Both Players)]
+patch=1,EE,D0267DC0,extended,00001C3F
+patch=1,EE,20267DFC,extended,00000000
+
+[Infinite Time]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,00808109,extended,00000063
+
+[Mid-Air Moves P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,00808431,extended,00000001
+
+[Infinite Health P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,10808450,extended,00000090
+
+[75% Health P1]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,0000006C
+
+[50% Health P1]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,00000048
+
+[25% Health P1]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,00000024
+
+[1-Hit Death P1]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,00000001
+
+[No Health P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,10808450,extended,00000000
+
+[Quick Score Gain P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,10808490,extended,00009999
+
+[Max Score P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,20808490,extended,09999999
+
+[Always Max Super P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080849E,extended,00000090
+
+[Always Level 2 Super P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080849E,extended,00000060
+
+[Always Level 1 Super P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080849E,extended,00000030
+
+[Always No Super P1]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080849E,extended,00000000
+
+[P1 Needs 1 Win To Win]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D08084A6,extended,00010000
+patch=1,EE,008084A6,extended,00000001
+
+[P1 Never Wins]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,008084A6,extended,00000000
+
+[Mid-Air Moves P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,00808831,extended,00000001
+
+[Infinite Health P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,10808850,extended,00000090
+
+[75% Health P2]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,0000006C
+
+[50% Health P2]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,00000048
+
+[25% Health P2]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,00000024
+
+[1-Hit Death P2]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,00000001
+
+[No Health P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,10808850,extended,00000000
+
+[Quick Score Gain P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,10808890,extended,00009999
+
+[Max Score P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,20808890,extended,09999999
+
+[Always Max Super P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080889E,extended,00000090
+
+[Always Level 2 Super P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080889E,extended,00000060
+
+[Always Level 1 Super P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080889E,extended,00000030
+
+[Always No Super P2]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,1080889E,extended,00000000
+
+[P2 Needs 1 Win To Win]
+patch=1,EE,E0020080,extended,00775172
+patch=1,EE,D08088A6,extended,00010000
+patch=1,EE,008088A6,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,E0010080,extended,00775172
+patch=1,EE,008088A6,extended,00000000
+
+[Hit Anywhere (Both Players)]
+patch=1,EE,D0229A38,extended,0000263F
+patch=1,EE,20229A4C,extended,00000000
+
+[Mid-Air Moves (Both Players)]
+patch=1,EE,D03C7804,extended,00001C3F
+patch=1,EE,203C784C,extended,00000000
+
+[Infinite Time]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,00808109,extended,00000063
+
+[Mid-Air Moves P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,00808431,extended,00000001
+
+[Infinite Health P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,10808450,extended,00000090
+
+[75% Health P1]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,0000006C
+
+[50% Health P1]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,00000048
+
+[25% Health P1]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,00000024
+
+[1-Hit Death P1]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808450,extended,00000090
+patch=1,EE,10808450,extended,00000001
+
+[No Health P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,10808450,extended,00000000
+
+[Quick Score Gain P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,10808490,extended,00009999
+
+[Max Score P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,20808490,extended,09999999
+
+[Always Max Super P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080849E,extended,00000090
+
+[Always Level 2 Super P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080849E,extended,00000060
+
+[Always Level 1 Super P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080849E,extended,00000030
+
+[Always No Super P1]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080849E,extended,00000000
+
+[P1 Needs 1 Win To Win]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D08084A6,extended,00010000
+patch=1,EE,008084A6,extended,00000001
+
+[P1 Never Wins]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,008084A6,extended,00000000
+
+[Mid-Air Moves P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,00808831,extended,00000001
+
+[Infinite Health P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,10808850,extended,00000090
+
+[75% Health P2]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,0000006C
+
+[50% Health P2]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,00000048
+
+[25% Health P2]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,00000024
+
+[1-Hit Death P2]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D0808850,extended,00000090
+patch=1,EE,10808850,extended,00000001
+
+[No Health P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,10808850,extended,00000000
+
+[Quick Score Gain P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,10808890,extended,00009999
+
+[Max Score P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,20808890,extended,09999999
+
+[Always Max Super P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080889E,extended,00000090
+
+[Always Level 2 Super P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080889E,extended,00000060
+
+[Always Level 1 Super P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080889E,extended,00000030
+
+[Always No Super P2]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,1080889E,extended,00000000
+
+[P2 Needs 1 Win To Win]
+patch=1,EE,E0020080,extended,00782BCA
+patch=1,EE,D08088A6,extended,00010000
+patch=1,EE,008088A6,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,E0010080,extended,00782BCA
+patch=1,EE,008088A6,extended,00000000
+
+[Hit Anywhere (Both Players)]
+patch=1,EE,D01F6E4C,extended,0000263F
+patch=1,EE,201F6E60,extended,00000000
+
+[Mid-Air Moves (Both Players)]
+patch=1,EE,D03463B0,extended,00001C3F
+patch=1,EE,203463F8,extended,00000000
+
+[Infinite Time]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,00908109,extended,00000063
+
+[Mid-Air Moves P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,00908431,extended,00000001
+
+[Infinite Health P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,10908450,extended,00000090
+
+[75% Health P1]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908450,extended,00000090
+patch=1,EE,10908450,extended,0000006C
+
+[50% Health P1]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908450,extended,00000090
+patch=1,EE,10908450,extended,00000048
+
+[25% Health P1]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908450,extended,00000090
+patch=1,EE,10908450,extended,00000024
+
+[1-Hit Death P1]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908450,extended,00000090
+patch=1,EE,10908450,extended,00000001
+
+[No Health P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,10908450,extended,00000000
+
+[Quick Score Gain P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,10908510,extended,00009999
+
+[Max Score P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,20908510,extended,09999999
+
+[Always Max Super P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090851E,extended,00000090
+
+[Always Level 2 Super P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090851E,extended,00000060
+
+[Always Level 1 Super P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090851E,extended,00000030
+
+[Always No Super P1]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090851E,extended,00000000
+
+[P1 Needs 1 Win To Win]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908526,extended,00010000
+patch=1,EE,00908526,extended,00000001
+
+[P1 Never Wins]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,00908526,extended,00000000
+
+[Mid-Air Moves P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,00908831,extended,00000001
+
+[Infinite Health P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,10908850,extended,00000090
+
+[75% Health P2]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908850,extended,00000090
+patch=1,EE,10908850,extended,0000006C
+
+[50% Health P2]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908850,extended,00000090
+patch=1,EE,10908850,extended,00000048
+
+[25% Health P2]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908850,extended,00000090
+patch=1,EE,10908850,extended,00000024
+
+[1-Hit Death P2]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908850,extended,00000090
+patch=1,EE,10908850,extended,00000001
+
+[No Health P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,10908850,extended,00000000
+
+[Quick Score Gain P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,10909190,extended,00009999
+
+[Max Score P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,20909190,extended,09999999
+
+[Always Max Super P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090919E,extended,00000090
+
+[Always Level 2 Super P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090919E,extended,00000060
+
+[Always Level 1 Super P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090919E,extended,00000030
+
+[Always No Super P2]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,1090919E,extended,00000000
+
+[P2 Needs 1 Win To Win]
+patch=1,EE,E0020090,extended,0088C75A
+patch=1,EE,D0908926,extended,00010000
+patch=1,EE,00908926,extended,00000001
+
+[P2 Never Wins]
+patch=1,EE,E0010090,extended,0088C75A
+patch=1,EE,00908926,extended,00000000
+
+[Hit Anywhere (Both Players)]
+patch=1,EE,D0221BD4,extended,0000263F
+patch=1,EE,10221BEA,extended,00001000
+
+[Mid-Air Moves (Both Players)]
+patch=1,EE,D03BE180,extended,00001E3F
+patch=1,EE,203BE1C8,extended,00000000
+
+[Infinite Time]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,00668188,extended,00000099
+
+[Infinite Health P1]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,10668440,extended,00000090
+
+[75% Health P1]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668440,extended,00000090
+patch=1,EE,10668440,extended,0000006C
+
+[50% Health P1]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668440,extended,00000090
+patch=1,EE,10668440,extended,00000048
+
+[25% Health P1]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668440,extended,00000090
+patch=1,EE,10668440,extended,00000024
+
+[1-Hit Death P1]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668440,extended,00000090
+patch=1,EE,10668440,extended,00000001
+
+[No Health P1]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,10668440,extended,00000000
+
+[Quick Score Gain P1]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,10668790,extended,00009999
+
+[Max Score P1]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,20668790,extended,09999999
+
+[Infinite Health P2]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,10668840,extended,00000090
+
+[75% Health P2]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668840,extended,00000090
+patch=1,EE,10668840,extended,0000006C
+
+[50% Health P2]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668840,extended,00000090
+patch=1,EE,10668840,extended,00000048
+
+[25% Health P2]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668840,extended,00000090
+patch=1,EE,10668840,extended,00000024
+
+[1-Hit Death P2]
+patch=1,EE,E0020066,extended,0064C1EA
+patch=1,EE,D0668840,extended,00000090
+patch=1,EE,10668840,extended,00000001
+
+[No Health P2]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,10668840,extended,00000000
+
+[Quick Score Gain P2]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,10668B90,extended,00009999
+
+[Max Score P2]
+patch=1,EE,E0010066,extended,0064C1EA
+patch=1,EE,20668B90,extended,09999999

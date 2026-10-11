@@ -1,0 +1,112 @@
+gametitle=Disney's Chicken Little-Ace In Action (SLUS-21420)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90438A98,extended,00832021
+
+[Infinite Shield Power]
+patch=1,EE,203CCB04,extended,3C0142C8
+patch=1,EE,203CCB20,extended,AC810030
+
+[Infinite Secondary Ammo]
+patch=1,EE,2027D2E4,extended,00000000
+
+[Extra Secondary Ammo]
+patch=1,EE,2027D2E0,extended,00511021
+
+[Max Infinite Secondary Ammo]
+patch=1,EE,2027D2E0,extended,240203E7
+
+[Always Gain 1000 Items]
+patch=1,EE,203C3954,extended,241303E8
+
+[Always Gain 500 Items]
+patch=1,EE,203C3954,extended,241301F4
+
+[Always Gain 100 Items]
+patch=1,EE,203C3954,extended,24130064
+
+[Always Gain 50 Items]
+patch=1,EE,203C3954,extended,24130032
+
+[Always Gain 10 Items]
+patch=1,EE,203C3954,extended,2413000A
+
+[Quick Max Items]
+patch=1,EE,203C39DC,extended,2402270F
+
+[Never Lose Items]
+patch=1,EE,203C3ACC,extended,00000000
+
+[Max Account]
+patch=1,EE,21C6B994,extended,0098967F
+
+[Buying Items Doesnt Decrease Account]
+patch=1,EE,2014C9B8,extended,00000000
+patch=1,EE,2014CAA8,extended,00000000
+
+[Buying Items Increases Account]
+patch=1,EE,2014C9B8,extended,0283A021
+patch=1,EE,2014CAA8,extended,0283A021
+
+[Unlock All Missions]
+patch=1,EE,202B82D0,extended,00430821
+patch=1,EE,202B82D4,extended,24020001
+patch=1,EE,202B82D8,extended,AC220D2C
+
+[Have All Ace's Gun Upgrades]
+patch=1,EE,41C6B998,extended,00090001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Runt's Tank Upgrades]
+patch=1,EE,41C6B9C8,extended,00090001
+patch=1,EE,00000001,extended,00000000
+
+[Have All Abby's Ship Upgrades]
+patch=1,EE,41C6B9F8,extended,00090001
+patch=1,EE,00000001,extended,00000000
+
+[Hovership 2]
+patch=1,EE,21C6BA28,extended,00000001
+
+[Tank 2]
+patch=1,EE,21C6BA2C,extended,00000001
+
+[Hovership 3]
+patch=1,EE,21C6BA30,extended,00000001
+
+[Tank 3]
+patch=1,EE,21C6BA34,extended,00000001
+
+[All 2-Player Games]
+patch=1,EE,41C6BA28,extended,00040001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Concept Art]
+patch=1,EE,41C6BA38,extended,00050001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Music]
+patch=1,EE,41C6BA4C,extended,000C0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlock All Movies]
+patch=1,EE,41C6BA84,extended,000D0001
+patch=1,EE,00000001,extended,00000000
+
+[Unlimited Secondary Ammo]
+patch=1,EE,21C6BAB8,extended,00000001
+
+[Unlimited Shields]
+patch=1,EE,21C6BABC,extended,00000001
+
+[Unlock All Levels]
+patch=1,EE,21C6BAC0,extended,00000001
+
+[+50000 Acornium]
+patch=1,EE,21C6BAC4,extended,00000001
+
+[Gain All Weapons]
+patch=1,EE,21C6BAC8,extended,00000001

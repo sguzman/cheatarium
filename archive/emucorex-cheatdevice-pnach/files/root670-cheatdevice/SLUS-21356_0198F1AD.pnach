@@ -1,0 +1,44 @@
+gametitle=Tom Clancy's Splinter Cell-Double Agent (SLUS-21356)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9012A7A0,extended,0C042572
+
+[Infinite Health]
+patch=1,EE,20232A38,extended,240101C2
+patch=1,EE,20232A3C,extended,AC4102C0
+
+[Infinite Health (Alternate)]
+patch=1,EE,200C0220,extended,C4620770
+patch=1,EE,200C0224,extended,03E00008
+patch=1,EE,200C0228,extended,E46202C0
+patch=1,EE,2059AB84,extended,0C030080
+
+[Infinite Ammo]
+patch=1,EE,20498C50,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,10498C4C,extended,0000FFFF
+
+[Max Infinite Ammo]
+patch=1,EE,20498C4C,extended,240200C6
+
+[Never Reload]
+patch=1,EE,20498C44,extended,00000000
+
+[Never Reload With Max Clip]
+patch=1,EE,20498C40,extended,24020063
+
+[Infinite OCP Flasher]
+patch=1,EE,20491FBC,extended,00000000
+
+[Always No Noise]
+patch=1,EE,205EE624,extended,00000000
+
+[Enemies Cant See You]
+patch=1,EE,2039222C,extended,44800000
+
+[Load Game-Unlock All Missions]
+patch=1,EE,2056A640,extended,AE420020

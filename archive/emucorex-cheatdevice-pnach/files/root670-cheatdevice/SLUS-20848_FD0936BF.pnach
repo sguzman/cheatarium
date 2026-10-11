@@ -1,0 +1,162 @@
+gametitle=Lifeline-Voice Action Adventure (SLUS-20848)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Have All Items]
+patch=1,EE,20161398,extended,8C610000
+patch=1,EE,2016139C,extended,00220825
+patch=1,EE,201613A0,extended,AC610000
+
+[Have All Normal/Special Key Words]
+patch=1,EE,20163F28,extended,8C410000
+patch=1,EE,20163F2C,extended,00230825
+patch=1,EE,20163F30,extended,AC410000
+patch=1,EE,20163F34,extended,242103E8
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,240203E8
+patch=1,EE,200C0224,extended,080580BF
+patch=1,EE,200C0228,extended,ACA20008
+patch=1,EE,201602DC,extended,08030088
+
+[Audio Password 2/2]
+patch=1,EE,703E5133,extended,00000020
+
+[Control System Document]
+patch=1,EE,703E5135,extended,00000002
+
+[Joseph's Disc]
+patch=1,EE,703E5135,extended,00000010
+
+[Shooter]
+patch=1,EE,703E5135,extended,00000040
+
+[Shutter Key]
+patch=1,EE,703E5138,extended,00000010
+
+[Manager's Office Key]
+patch=1,EE,703E5139,extended,00000020
+
+[Video Recording Disc]
+patch=1,EE,703E513A,extended,00000040
+
+[Video Recording Disc 2]
+patch=1,EE,703E513B,extended,00000080
+
+[Handgun]
+patch=1,EE,703E513D,extended,00000080
+
+[Audio Password 1/2]
+patch=1,EE,703E5149,extended,00000040
+
+[Allen's Reference Kit]
+patch=1,EE,703E514A,extended,00000001
+
+[Code Note]
+patch=1,EE,703E5154,extended,00000040
+
+[Machine Gun]
+patch=1,EE,703E5162,extended,00000001
+
+[Molotov Cocktail]
+patch=1,EE,703E5167,extended,00000001
+
+[ID Card]
+patch=1,EE,703E5168,extended,00000008
+
+[Warehouse ID Card]
+patch=1,EE,703E5173,extended,00000040
+
+[Restaurant Key]
+patch=1,EE,703E5174,extended,00000008
+
+[Number Note]
+patch=1,EE,703E5179,extended,00000004
+
+[Scientific Document]
+patch=1,EE,703E517B,extended,00000040
+
+[DVD]
+patch=1,EE,703E5181,extended,00000008
+
+[Employee ID (Jonathan)]
+patch=1,EE,703E5183,extended,00000008
+
+[Employee ID (Gustav)]
+patch=1,EE,703E5183,extended,00000010
+
+[Elevator Code]
+patch=1,EE,703E5186,extended,00000040
+
+[Allen's Disc]
+patch=1,EE,703E518A,extended,00000008
+
+[Exhibit Room Key]
+patch=1,EE,703E518A,extended,00000010
+
+[Tanaka's Note]
+patch=1,EE,703E518A,extended,00000020
+
+[Magnesium Chip]
+patch=1,EE,703E51AB,extended,00000040
+
+[Chip]
+patch=1,EE,703E5149,extended,00000001
+
+[Launcher Grenade]
+patch=1,EE,703E5185,extended,00000004
+
+[Heal Capsule]
+patch=1,EE,703E51B9,extended,00000020
+
+[Sexy Pose]
+patch=1,EE,703E514A,extended,00000008
+
+[Camera Check]
+patch=1,EE,703E514A,extended,00000010
+
+[Jumpback]
+patch=1,EE,703E514A,extended,00000020
+
+[Jump]
+patch=1,EE,703E514A,extended,00000040
+
+[Microphone Check]
+patch=1,EE,703E514B,extended,00000001
+
+[Category Game]
+patch=1,EE,703E514B,extended,00000002
+
+[Break Time]
+patch=1,EE,703E514B,extended,00000004
+
+[Strafe]
+patch=1,EE,703E514B,extended,00000008
+
+[Spin The Gun]
+patch=1,EE,703E514B,extended,00000010
+
+[Taunt]
+patch=1,EE,703E514B,extended,00000020
+
+[Auto-Fire]
+patch=1,EE,703E514B,extended,00000040
+
+[Zoom In]
+patch=1,EE,703E514B,extended,00000080
+
+[I'll Leave It To You]
+patch=1,EE,703E514C,extended,00000001
+
+[She Sells]
+patch=1,EE,703E514C,extended,00000002
+
+[Low Kick]
+patch=1,EE,703E514C,extended,00000004
+
+[Launcher]
+patch=1,EE,703E514E,extended,00000001
+
+[Consulation]
+patch=1,EE,703E514E,extended,00000002

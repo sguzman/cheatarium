@@ -1,0 +1,85 @@
+gametitle=Jurassic Park-Operation Genesis (SLUS-20380)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,904C18B8,extended,0C0E9B00
+
+[Timer Has Never Elapsed]
+patch=1,EE,20354C0C,extended,00000000
+
+[Start With Max Money]
+patch=1,EE,20590F04,extended,05F5E0FF
+
+[Buying Items Never Decreases Money]
+patch=1,EE,2027A1B0,extended,00000000
+
+[Instant Win]
+patch=1,EE,200C0220,extended,8C820038
+patch=1,EE,200C0224,extended,0809898C
+patch=1,EE,200C0228,extended,AC820034
+patch=1,EE,201F86A8,extended,0C030088
+
+[Infinite Ammo]
+patch=1,EE,201EBBBC,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,201EBBB8,extended,00A21021
+
+[Tutorial-Welcome To Jurassic Park]
+patch=1,EE,20859344,extended,00000027
+
+[Tutorial-Dinosaur Origins]
+patch=1,EE,20859348,extended,00000027
+
+[Tutorial-What Visitors Want]
+patch=1,EE,2085934C,extended,00000027
+
+[Tutorial-Safe & Secure]
+patch=1,EE,20859350,extended,00000027
+
+[Advanced-Open Range Safari]
+patch=1,EE,20859354,extended,00000023
+
+[Advanced-Jurassic Classic]
+patch=1,EE,20859358,extended,00000023
+
+[Advanced-The Lost World]
+patch=1,EE,2085935C,extended,00000023
+
+[Advanced-Dangerous & Abodes]
+patch=1,EE,20859360,extended,00000023
+
+[Advanced-Any Port In A Storm]
+patch=1,EE,20859364,extended,00000023
+
+[Safari-A Picture's Worth 100 Points]
+patch=1,EE,20859368,extended,000000AB
+
+[Ranger Attack-When Carnivores Attack]
+patch=1,EE,2085936C,extended,0000012B
+
+[Dinomuster-Time To Get Moving]
+patch=1,EE,20859370,extended,0000006B
+
+[Safari-Dinosaurs & Weather]
+patch=1,EE,20859374,extended,0000008B
+
+[Ranger Rescue-Rescue The President]
+patch=1,EE,20859378,extended,0000022B
+
+[Safari-Danger Club Photo Safari]
+patch=1,EE,2085937C,extended,000000AB
+
+[Ranger Rescue-Rescue Hammond]
+patch=1,EE,20859380,extended,0000022B
+
+[Ranger Attack-Cleanup Operation]
+patch=1,EE,20859384,extended,0000012B
+
+[Dinomuster-The Amazing Maze]
+patch=1,EE,20859388,extended,0000006B
+
+[Safari-Jurassic Park Calender]
+patch=1,EE,2085938C,extended,000000AB

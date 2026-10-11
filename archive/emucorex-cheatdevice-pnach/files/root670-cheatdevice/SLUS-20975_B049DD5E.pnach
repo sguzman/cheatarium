@@ -1,0 +1,262 @@
+gametitle=One Piece-Grand Battle (SLUS-20975)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,901E0698,extended,0C0751A6
+patch=1,EE,200C0268,extended,03E00008
+patch=1,EE,200C026C,extended,844200F6
+patch=1,EE,202D75D0,extended,0C030088
+patch=1,EE,202D75D4,extended,844300F4
+
+[Infinite Time]
+patch=1,EE,202D793C,extended,00000000
+
+[Infinite Health P1]
+patch=1,EE,200C0220,extended,24010000
+patch=1,EE,200C0224,extended,52400001
+patch=1,EE,200C0228,extended,A44100F6
+
+[No Health P1]
+patch=1,EE,200C0220,extended,24610000
+patch=1,EE,200C0224,extended,52400001
+patch=1,EE,200C0228,extended,A44100F6
+
+[Max Food Charge Bar P1]
+patch=1,EE,200C0238,extended,844100FA
+patch=1,EE,200C023C,extended,52400001
+patch=1,EE,200C0240,extended,A44100FC
+
+[No Food Charge Bar P1]
+patch=1,EE,200C0238,extended,24010000
+patch=1,EE,200C023C,extended,52400001
+patch=1,EE,200C0240,extended,A44100FC
+
+[Max Food Charges P1]
+patch=1,EE,200C0250,extended,24010002
+patch=1,EE,200C0254,extended,52400001
+patch=1,EE,200C0258,extended,A44100FE
+
+[No Food Charges P1]
+patch=1,EE,200C0250,extended,24010000
+patch=1,EE,200C0254,extended,52400001
+patch=1,EE,200C0258,extended,A44100FE
+
+[Infinite Health P2]
+patch=1,EE,200C022C,extended,24010000
+patch=1,EE,200C0220,extended,56400001
+patch=1,EE,200C0234,extended,A44100F6
+
+[No Health P2]
+patch=1,EE,200C022C,extended,24610000
+patch=1,EE,200C0230,extended,56400001
+patch=1,EE,200C0234,extended,A44100F6
+
+[Infinite Food Charge Bar P2]
+patch=1,EE,200C0244,extended,844100FA
+patch=1,EE,200C0248,extended,56400001
+patch=1,EE,200C024C,extended,A44100FC
+
+[No Food Charge Bar P2]
+patch=1,EE,200C0244,extended,24010000
+patch=1,EE,200C0248,extended,56400001
+patch=1,EE,200C024C,extended,A44100FC
+
+[Max Food Charges P2]
+patch=1,EE,200C025C,extended,24010002
+patch=1,EE,200C0260,extended,56400001
+patch=1,EE,200C0264,extended,A44100FE
+
+[No Food Charges P2]
+patch=1,EE,200C025C,extended,24010000
+patch=1,EE,200C0260,extended,56400001
+patch=1,EE,200C0264,extended,A44100FE
+
+[Monkey D. Luffy]
+patch=1,EE,11CED732,extended,00000000
+
+[Roronoa Zolo]
+patch=1,EE,11CED74E,extended,00000000
+
+[Nami The Navigator]
+patch=1,EE,11CED76A,extended,00000000
+
+[Usopp]
+patch=1,EE,11CED786,extended,00000000
+
+[Sanji]
+patch=1,EE,11CED7A2,extended,00000000
+
+[Tony Tony Chopper]
+patch=1,EE,11CED7BE,extended,00000000
+
+[Chaser]
+patch=1,EE,11CED7DA,extended,00000000
+
+[Red-Haired Shanks]
+patch=1,EE,11CED7F6,extended,00000000
+
+[Mr. 2 Bon Clay]
+patch=1,EE,11CED812,extended,00000000
+
+[Mr. 0 Crocodile]
+patch=1,EE,11CED82E,extended,00000000
+
+[Ms. Sunday]
+patch=1,EE,11CED84A,extended,00000000
+
+[Buggy The Clown]
+patch=1,EE,11CED866,extended,00000000
+
+[Captain Kuro]
+patch=1,EE,11CED882,extended,00000000
+
+[Dong Krieg]
+patch=1,EE,11CED89E,extended,00000000
+
+[Hawk-Eye Mihawk]
+patch=1,EE,11CED8BA,extended,00000000
+
+[Saw-Tooth Arlong]
+patch=1,EE,11CED8D6,extended,00000000
+
+[Monkey D. Luffy]
+patch=1,EE,01CED731,extended,000000FF
+
+[Roronoa Zolo]
+patch=1,EE,01CED74D,extended,000000FF
+
+[Nami The Navigator]
+patch=1,EE,01CED769,extended,000000FF
+
+[Usopp]
+patch=1,EE,01CED785,extended,000000FF
+
+[Sanji]
+patch=1,EE,01CED7A1,extended,000000FF
+
+[Tony Tony Chopper]
+patch=1,EE,01CED7BD,extended,000000FF
+
+[Chaser]
+patch=1,EE,01CED7D9,extended,000000FF
+
+[Red-Haired Shanks]
+patch=1,EE,01CED7F5,extended,000000FF
+
+[Mr. 2 Bon Clay]
+patch=1,EE,01CED811,extended,000000FF
+
+[Mr. 0 Crocodile]
+patch=1,EE,01CED82D,extended,000000FF
+
+[Ms. Sunday]
+patch=1,EE,01CED849,extended,000000FF
+
+[Buggy The Clown]
+patch=1,EE,01CED865,extended,000000FF
+
+[Captain Kuro]
+patch=1,EE,01CED881,extended,000000FF
+
+[Dong Krieg]
+patch=1,EE,01CED89D,extended,000000FF
+
+[Hawk-Eye Mihawk]
+patch=1,EE,01CED8B9,extended,000000FF
+
+[Saw-Tooth Arlong]
+patch=1,EE,01CED8D5,extended,000000FF
+
+[Unlock All Movies]
+patch=1,EE,21CEDA14,extended,FFFFFFFF
+
+[Have All Movies Viewed]
+patch=1,EE,21CDEA18,extended,FFFFFFFF
+
+[Unlock All Luffy-Gallery]
+patch=1,EE,21CED73C,extended,FFFFFFFF
+
+[Have All Luffy-Gallery Viewed]
+patch=1,EE,21CED744,extended,FFFFFFFF
+
+[Unlock All Zolo-Gallery]
+patch=1,EE,21CED758,extended,FFFFFFFF
+
+[Have All Zolo-Gallery Viewed]
+patch=1,EE,21CED760,extended,FFFFFFFF
+
+[Unlock All Nami-Gallery]
+patch=1,EE,21CED774,extended,FFFFFFFF
+
+[Have All Nami-Gallery Viewed]
+patch=1,EE,21CED77C,extended,FFFFFFFF
+
+[Unlock All Usopp-Gallery]
+patch=1,EE,21CED790,extended,FFFFFFFF
+
+[Have All Usopp-Gallery Viewed]
+patch=1,EE,21CED798,extended,FFFFFFFF
+
+[Unlock All Sanji-Gallery]
+patch=1,EE,21CED7AC,extended,FFFFFFFF
+
+[Have All Sanji-Gallery Viewed]
+patch=1,EE,21CED7B4,extended,FFFFFFFF
+
+[Unlock All Chaser-Gallery]
+patch=1,EE,21CED7E4,extended,FFFFFFFF
+
+[Have All Chaser-Gallery Viewed]
+patch=1,EE,21CED7EC,extended,FFFFFFFF
+
+[Unlock All Buggy-Gallery]
+patch=1,EE,21CED870,extended,FFFFFFFF
+
+[Have All Buggy-Gallery Viewed]
+patch=1,EE,21CED878,extended,FFFFFFFF
+
+[Unlock All Kuro-Gallery]
+patch=1,EE,21CED88C,extended,FFFFFFFF
+
+[Have All Kuro-Gallery Viewed]
+patch=1,EE,21CED894,extended,FFFFFFFF
+
+[Unlock All Don Krieg-Gallery]
+patch=1,EE,21CED8A8,extended,FFFFFFFF
+
+[Have All Don Krieg-Gallery Viewed]
+patch=1,EE,21CED8B0,extended,FFFFFFFF
+
+[Unlock All Arlong-Gallery]
+patch=1,EE,21CED8E0,extended,FFFFFFFF
+
+[Have All Arlong-Gallery Viewed]
+patch=1,EE,21CED8E8,extended,FFFFFFFF
+
+[Box Crusher]
+patch=1,EE,01CED994,extended,00000000
+
+[Wootz Smash]
+patch=1,EE,01CED995,extended,00000000
+
+[Usopp Race]
+patch=1,EE,01CED996,extended,00000000
+
+[Snow Shovel]
+patch=1,EE,01CED997,extended,00000000
+
+[Custom Rules]
+patch=1,EE,01CED99C,extended,00000000
+
+[Battle Bowl]
+patch=1,EE,01CED99D,extended,00000000
+
+[Unlock All One Piece Art]
+patch=1,EE,41CED9C8,extended,00070001
+patch=1,EE,FFFFFFFF,extended,00000000
+
+[Have All One Piece Art Viewed]
+patch=1,EE,41CED9E4,extended,00070001
+patch=1,EE,FFFFFFFF,extended,00000000

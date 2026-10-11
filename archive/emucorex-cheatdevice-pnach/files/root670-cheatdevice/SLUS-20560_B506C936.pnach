@@ -1,0 +1,78 @@
+gametitle=Galerians-Ash (SLUS-20560)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9020040C,extended,0C0833C6
+
+[Infinite HP]
+patch=1,EE,10222E80,extended,000007D0
+
+[Max HP]
+patch=1,EE,20222E84,extended,000007D0
+
+[Max AP]
+patch=1,EE,20222E8C,extended,000007D0
+
+[Have Nalcon Serum]
+patch=1,EE,00222F00,extended,00000003
+patch=1,EE,00222F06,extended,00000003
+
+[Have Red Serum]
+patch=1,EE,00222F01,extended,00000003
+patch=1,EE,00222F07,extended,00000003
+
+[Have D-Felon Serum]
+patch=1,EE,00222F02,extended,00000003
+patch=1,EE,00222F08,extended,00000003
+
+[Have Bustanor Serum]
+patch=1,EE,00222F03,extended,00000003
+patch=1,EE,00222F09,extended,00000003
+
+[Have Breakaron Serum]
+patch=1,EE,00222F04,extended,00000003
+patch=1,EE,00222F0A,extended,00000003
+
+[Max Nalcon Serum Gauge]
+patch=1,EE,20222E90,extended,000007D0
+
+[Max Red Serum Gauge]
+patch=1,EE,20222E94,extended,000007D0
+
+[Max D-Felon Serum Gauge]
+patch=1,EE,20222E98,extended,000007D0
+
+[Max Bustanor Serum Gauge]
+patch=1,EE,20222E9C,extended,000007D0
+
+[Max Breakaron Serum Gauge]
+patch=1,EE,20222EA0,extended,000007D0
+
+[Max Nalcon Serum]
+patch=1,EE,20223600,extended,00000063
+
+[Max Red Serum]
+patch=1,EE,20223604,extended,00000063
+
+[Max D-Felon Serum]
+patch=1,EE,20223608,extended,00000063
+
+[Max Bustanor Serum]
+patch=1,EE,2022360C,extended,00000063
+
+[Max Breakaron Serum]
+patch=1,EE,20223610,extended,00000063
+
+[Infinite Recovery Capsules]
+patch=1,EE,20223618,extended,00000063
+
+[Infinite Recovery Plus]
+patch=1,EE,2022361C,extended,00000063
+
+[Infinite Delmetor]
+patch=1,EE,20223620,extended,00000063
+
+[Infinite Appolinar]
+patch=1,EE,20223624,extended,00000063

@@ -1,0 +1,22 @@
+gametitle=Smuggler's Run 2-Hostile Territory (SLUS-20204)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9034E274,extended,0C0CE5EC
+
+[Have All Race Levels]
+patch=1,EE,203B0FA0,extended,FFFFFFFF
+patch=1,EE,203B0FA4,extended,FFFFFFFF
+patch=1,EE,103B0FA8,extended,0000FFFF
+
+[Have All Movies]
+patch=1,EE,103B0FAA,extended,0000FFFF
+
+[Have All Career Levels]
+patch=1,EE,203B0FB0,extended,FFFFFFFF
+
+[Have All Vehicles]
+patch=1,EE,203B0FC0,extended,FFFFFFFF
+patch=1,EE,203B0FC4,extended,FFFFFFFF

@@ -1,0 +1,30 @@
+gametitle=Mission Impossible-Operation Surma (SLUS-20400)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9047D38C,extended,0C12378D
+
+[Disable FMV]
+patch=1,EE,2049FAA0,extended,24020001
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,E4620040
+patch=1,EE,200C0224,extended,C4600040
+patch=1,EE,200C0228,extended,03E00008
+patch=1,EE,200C022C,extended,46020003
+patch=1,EE,2020EE2C,extended,0C030088
+
+[Infinite Ammo]
+patch=1,EE,201E3508,extended,00000000
+
+[Extra Ammo]
+patch=1,EE,204C0698,extended,00893821
+
+[Never Reload]
+patch=1,EE,201E3430,extended,00000000
+
+[Disable Alarm Sounding]
+patch=1,EE,202B8AF8,extended,03E00008
+patch=1,EE,202B8AFC,extended,00000000

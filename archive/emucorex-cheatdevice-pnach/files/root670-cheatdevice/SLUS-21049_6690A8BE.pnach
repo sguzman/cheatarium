@@ -1,0 +1,404 @@
+gametitle=Outlaw Volleyball Remixed (SLUS-21049)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9027EF88,extended,00832021
+
+[Team 1-Instant Win]
+patch=1,EE,2061A38C,extended,00000063
+
+[Team 1-Never Wins]
+patch=1,EE,2061A38C,extended,00000000
+
+[Team 2-Instant Win]
+patch=1,EE,2061A390,extended,00000063
+
+[Team 2-Never Wins]
+patch=1,EE,2061A390,extended,00000000
+
+[P1 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0685D42,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P1 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0685D42,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P1 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0685D42,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P1 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0685D42,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[P2 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0685E82,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P2 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0685E82,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P2 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0685E82,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P2 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0685E82,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[P3 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0685FC2,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P3 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0685FC2,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P3 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0685FC2,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P3 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0685FC2,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[P4 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686102,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P4 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686102,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P4 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686102,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P4 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686102,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[P5 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686242,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P5 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686242,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P5 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686242,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P5 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686242,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[P6 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686382,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P6 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686382,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P6 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686382,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P6 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686382,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[P7 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D06864C2,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P7 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D06864C2,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P7 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D06864C2,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P7 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D06864C2,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[P8 Press {L1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686602,extended,0000FBFE
+patch=1,EE,2061A38C,extended,00000063
+
+[P8 Press {L2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686602,extended,0000FEFE
+patch=1,EE,2061A38C,extended,00000000
+
+[P8 Press {R1}+{SELECT} For Team 1 Scores 99]
+patch=1,EE,D0686602,extended,0000F7FE
+patch=1,EE,2061A390,extended,00000063
+
+[P8 Press {R2}+{SELECT} For Team 1 Scores 0]
+patch=1,EE,D0686602,extended,0000FDFE
+patch=1,EE,2061A390,extended,00000000
+
+[Start With 9999 Drill Points]
+patch=1,EE,D06232CC,extended,00000000
+patch=1,EE,206232CC,extended,0000270F
+
+[Have All Drills Completed]
+patch=1,EE,406191BC,extended,00900001
+patch=1,EE,02020202,extended,00000000
+
+[Unlock All Costumes]
+patch=1,EE,20619438,extended,FFFFFFFF
+
+[Leon]
+patch=1,EE,00619090,extended,00000001
+
+[Lizzy]
+patch=1,EE,00619091,extended,00000001
+
+[El Suave]
+patch=1,EE,00619092,extended,00000001
+
+[Shawnee]
+patch=1,EE,00619093,extended,00000001
+
+[Ice Trey]
+patch=1,EE,00619094,extended,00000001
+
+[Dog Joe]
+patch=1,EE,00619095,extended,00000001
+
+[Summer]
+patch=1,EE,00619096,extended,00000001
+
+[Clem]
+patch=1,EE,00619097,extended,00000001
+
+[Donna]
+patch=1,EE,00619098,extended,00000001
+
+[Chica]
+patch=1,EE,00619099,extended,00000001
+
+[Natasha]
+patch=1,EE,0061909A,extended,00000001
+
+[Harley]
+patch=1,EE,0061909B,extended,00000001
+
+[Harvest]
+patch=1,EE,0061909C,extended,00000001
+
+[Killer]
+patch=1,EE,0061909D,extended,00000001
+
+[Nikki]
+patch=1,EE,0061909E,extended,00000001
+
+[Scrummy]
+patch=1,EE,0061909F,extended,00000001
+
+[Trixie]
+patch=1,EE,006190A0,extended,00000001
+
+[All Characters]
+patch=1,EE,40619090,extended,00040001
+patch=1,EE,01010101,extended,00000000
+patch=1,EE,006190A0,extended,00000001
+
+[Tar Beach]
+patch=1,EE,0061942E,extended,00000001
+
+[The Big House]
+patch=1,EE,0061942F,extended,00000001
+
+[Colon Avenue]
+patch=1,EE,00619430,extended,00000001
+
+[Stiny Falls]
+patch=1,EE,00619431,extended,00000001
+
+[Coney Island]
+patch=1,EE,00619432,extended,00000001
+
+[Third Rail Junction]
+patch=1,EE,00619433,extended,00000001
+
+[The Ice Box]
+patch=1,EE,00619434,extended,00000001
+
+[The Bone Yard]
+patch=1,EE,00619435,extended,00000001
+
+[Jungle Fever]
+patch=1,EE,00619436,extended,00000001
+
+[Casa De Guapo]
+patch=1,EE,00619437,extended,00000001
+
+[All Courts]
+patch=1,EE,1061942E,extended,00000101
+patch=1,EE,20619430,extended,01010101
+patch=1,EE,20619434,extended,01010101
+
+[Bright Lights, Big City]
+patch=1,EE,006193FC,extended,00000002
+
+[The Fort Apache Classic]
+patch=1,EE,006193FD,extended,00000002
+
+[Raise The Roof]
+patch=1,EE,006193FE,extended,00000002
+
+[View From Above]
+patch=1,EE,006193FF,extended,00000002
+
+[Battle In The Bronx]
+patch=1,EE,00619400,extended,00000002
+
+[Girl's Gone Bad]
+patch=1,EE,00619401,extended,00000002
+
+[Pen Pal Reunion]
+patch=1,EE,00619402,extended,00000002
+
+[The Conjugal Visit]
+patch=1,EE,00619403,extended,00000002
+
+[Dead Man Spiking]
+patch=1,EE,00619404,extended,00000002
+
+[Shanks Giving Classic]
+patch=1,EE,00619405,extended,00000002
+
+[Carmela's Cookout]
+patch=1,EE,00619406,extended,00000002
+
+[Summer Jammy '03]
+patch=1,EE,00619407,extended,00000002
+
+[Party At John's]
+patch=1,EE,00619408,extended,00000002
+
+[The Wiener Roast]
+patch=1,EE,00619409,extended,00000002
+
+[Shadlin Showdown]
+patch=1,EE,0061940A,extended,00000002
+
+[Subterranean Surprise]
+patch=1,EE,0061940B,extended,00000002
+
+[The Toilet Bowl]
+patch=1,EE,0061940C,extended,00000002
+
+[Outhouse Open]
+patch=1,EE,0061940D,extended,00000002
+
+[The Plunger]
+patch=1,EE,0061940E,extended,00000002
+
+[Effluent Of Champions]
+patch=1,EE,0061940F,extended,00000002
+
+[Toasted Bun Classic]
+patch=1,EE,00619410,extended,00000002
+
+[Medical Waste Open]
+patch=1,EE,00619411,extended,00000002
+
+[Boardwalk Bender]
+patch=1,EE,00619412,extended,00000002
+
+[Carney's Revenge]
+patch=1,EE,00619413,extended,00000002
+
+[Brooklyn Beach Bash]
+patch=1,EE,00619414,extended,00000002
+
+[Outlaw Express]
+patch=1,EE,00619415,extended,00000002
+
+[Wrong Side D'Tracks]
+patch=1,EE,00619416,extended,00000002
+
+[Irt Invitational]
+patch=1,EE,00619417,extended,00000002
+
+[The Kings Of Queens]
+patch=1,EE,00619418,extended,00000002
+
+[End Of The Line]
+patch=1,EE,00619419,extended,00000002
+
+[The Big Chillout]
+patch=1,EE,0061941A,extended,00000002
+
+[South Pole Open]
+patch=1,EE,0061941B,extended,00000002
+
+[Freezy Freaky]
+patch=1,EE,0061941C,extended,00000002
+
+[Long John Open]
+patch=1,EE,0061941D,extended,00000002
+
+[Forstbite Invitational]
+patch=1,EE,0061941E,extended,00000002
+
+[The Quick And The Dead]
+patch=1,EE,0061941F,extended,00000002
+
+[Dem Bones]
+patch=1,EE,00619420,extended,00000002
+
+[Buried ALive]
+patch=1,EE,00619421,extended,00000002
+
+[Skeletons In The Closet]
+patch=1,EE,00619422,extended,00000002
+
+[Full Moon Fever]
+patch=1,EE,00619423,extended,00000002
+
+[Malaria Madness]
+patch=1,EE,00619424,extended,00000002
+
+[The Shrunken Head]
+patch=1,EE,00619425,extended,00000002
+
+[Blow Dart Open]
+patch=1,EE,00619426,extended,00000002
+
+[The Jungle Hook]
+patch=1,EE,00619427,extended,00000002
+
+[The Cannibal Classic]
+patch=1,EE,00619428,extended,00000002
+
+[Border War]
+patch=1,EE,00619429,extended,00000002
+
+[Fiesta De Outlaw]
+patch=1,EE,0061942A,extended,00000002
+
+[Nafta-Noon Tea]
+patch=1,EE,0061942B,extended,00000002
+
+[Chili Today, Hot Tomale]
+patch=1,EE,0061942C,extended,00000002
+
+[Montezuma's Revenge]
+patch=1,EE,0061942D,extended,00000002
+
+[All Events Completed]
+patch=1,EE,406193FC,extended,000C0001
+patch=1,EE,02020202,extended,00000000
+patch=1,EE,1061942C,extended,00000202

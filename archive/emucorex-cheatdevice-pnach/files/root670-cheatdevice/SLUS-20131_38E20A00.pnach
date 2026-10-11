@@ -1,0 +1,52 @@
+gametitle=Dark Angel-Vampire Apocalypse (SLUS-20131)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9020CA84,extended,0C0883D2
+
+[Infinite Spirit]
+patch=1,EE,1045C5E0,extended,0000040F
+
+[Very Early Year]
+patch=1,EE,10484F62,extended,0000FFFF
+
+[Max Strength]
+patch=1,EE,204880F0,extended,000003E7
+
+[Max Intellect]
+patch=1,EE,204880F4,extended,000003E7
+
+[Max HP]
+patch=1,EE,204880F8,extended,000003E7
+
+[Max Exp]
+patch=1,EE,20488100,extended,05F5E0FF
+
+[Infinite Gold]
+patch=1,EE,20488114,extended,05F5E0FF
+
+[Infinite Necrystal]
+patch=1,EE,10488118,extended,0000270F
+
+[Infinite Power Gem]
+patch=1,EE,1048811C,extended,0000270F
+
+[Infinite Ooze]
+patch=1,EE,10488120,extended,0000270F
+
+[Infinite Ammo]
+patch=1,EE,10488124,extended,0000270F
+
+[Max Research]
+patch=1,EE,20488144,extended,05F5E0FF
+
+[Max Military]
+patch=1,EE,20488148,extended,05F5E0FF
+
+[Max Economic]
+patch=1,EE,2048814C,extended,05F5E0FF
+
+[Infinite HP]
+patch=1,EE,216AD720,extended,0003CEC4

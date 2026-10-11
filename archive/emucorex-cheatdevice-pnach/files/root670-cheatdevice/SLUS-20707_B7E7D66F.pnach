@@ -1,0 +1,118 @@
+gametitle=Spawn Armageddon (SLUS-20707)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9025477C,extended,0C0990B5
+
+[Infinite Health]
+patch=1,EE,200C0220,extended,08087C2C
+patch=1,EE,200C0224,extended,E62D01D4
+patch=1,EE,201614B0,extended,0C030088
+
+[Infinite Necroplasm]
+patch=1,EE,20339580,extended,42C80000
+
+[Infinite Necroplasm Usage]
+patch=1,EE,20177E24,extended,00000000
+
+[Infinite Souls (Powerup Screen)]
+patch=1,EE,20339594,extended,000003E7
+
+[Have All Weapons]
+patch=1,EE,10339944,extended,0000FFFF
+patch=1,EE,1033D3D4,extended,0000FFFF
+
+[Infinite Ammo (All Weapons)]
+patch=1,EE,2016B4EC,extended,00000000
+patch=1,EE,2016C130,extended,00000000
+
+[Press {CROSS} For Moon Jump]
+patch=1,EE,200C0230,extended,3C01002F
+patch=1,EE,200C0234,extended,94210102
+patch=1,EE,200C0238,extended,30214000
+patch=1,EE,200C023C,extended,14200003
+patch=1,EE,200C0240,extended,3C014160
+patch=1,EE,200C0244,extended,AC410024
+patch=1,EE,200C0248,extended,C4400024
+patch=1,EE,200C024C,extended,03E00008
+patch=1,EE,200C0250,extended,46150036
+patch=1,EE,2017EC50,extended,0C03008C
+
+[Infinite Double Jumps]
+patch=1,EE,20173794,extended,00000000
+patch=1,EE,202A320C,extended,00000001
+
+[Unlock All Comic Gallery]
+patch=1,EE,10339946,extended,0000FFFF
+patch=1,EE,20339948,extended,FFFFFFFF
+patch=1,EE,2033994C,extended,FFFFFFFF
+patch=1,EE,20339950,extended,FFFFFFFF
+patch=1,EE,1033D3D6,extended,0000FFFF
+patch=1,EE,2033D3D8,extended,FFFFFFFF
+patch=1,EE,2033D3DC,extended,FFFFFFFF
+patch=1,EE,2033D3E0,extended,FFFFFFFF
+
+[Unlock All Encyclopedia]
+patch=1,EE,0033995F,extended,000000FF
+patch=1,EE,20339960,extended,FFFFFFFF
+patch=1,EE,0033D3EF,extended,000000FF
+patch=1,EE,2033D3F0,extended,FFFFFFFF
+
+[Sawed Off Shotgun]
+patch=1,EE,203398F8,extended,00000014
+
+[Semi-Auto Pistols]
+patch=1,EE,203398FC,extended,0000003C
+
+[Madcap SMG]
+patch=1,EE,20339900,extended,00000078
+
+[Mini-Gun]
+patch=1,EE,20339904,extended,00000096
+
+[Brimstone Cannon]
+patch=1,EE,20339908,extended,0000001E
+
+[Burst Missile Launcher]
+patch=1,EE,2033990C,extended,0000000F
+
+[Inferno Cannon]
+patch=1,EE,20339910,extended,00000003
+
+[Max Souls]
+patch=1,EE,2033D448,extended,4479C000
+
+[Max Enemy Kills]
+patch=1,EE,2033D44C,extended,4479C000
+
+[Max Comic Covers]
+patch=1,EE,2033D450,extended,40400000
+
+[Max Breakable Items]
+patch=1,EE,2033D458,extended,4479C000
+
+[Max Technique Points]
+patch=1,EE,2033D45C,extended,4479C000
+
+[Sawed Off Shotgun]
+patch=1,EE,0033993A,extended,00000003
+
+[Semi-Auto Pistols]
+patch=1,EE,0033993B,extended,00000003
+
+[Madcap SMG]
+patch=1,EE,0033993C,extended,00000003
+
+[Mini-Gun]
+patch=1,EE,0033993D,extended,00000003
+
+[Brimstone Cannon]
+patch=1,EE,0033993E,extended,00000003
+
+[Burst Missile Launcher]
+patch=1,EE,0033993F,extended,00000003
+
+[Inferno Cannon]
+patch=1,EE,00339940,extended,00000003

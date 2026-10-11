@@ -1,0 +1,94 @@
+gametitle=Rebel Raiders-Operation Nighthawk (SLUS-21303)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9015F330,extended,00832021
+
+[Shield Doesnt Decrease Over Time]
+patch=1,EE,20266594,extended,00000000
+
+[Infinite Primary Ammo]
+patch=1,EE,202A5E1C,extended,00000000
+
+[Infinite Gun Ammo]
+patch=1,EE,203089EC,extended,00000000
+
+[YV-21]
+patch=1,EE,00812134,extended,00000001
+
+[YV-21-Blinding-Sun]
+patch=1,EE,00812135,extended,00000001
+
+[F6E-Blinding-Sun]
+patch=1,EE,00812136,extended,00000001
+
+[F6E]
+patch=1,EE,00812137,extended,00000001
+
+[F/A 12-Blinding-Sun]
+patch=1,EE,00812138,extended,00000001
+
+[F/A 12]
+patch=1,EE,00812139,extended,00000001
+
+[F/A 12-Back-Fire]
+patch=1,EE,0081213A,extended,00000001
+
+[All Aircraft]
+patch=1,EE,20811234,extended,01010101
+patch=1,EE,10812138,extended,00000101
+patch=1,EE,0081213A,extended,00000001
+
+[Challenge 1]
+patch=1,EE,20811E64,extended,00000001
+
+[Challenge 2]
+patch=1,EE,20811E8C,extended,00000001
+
+[Challenge 3]
+patch=1,EE,20811EB4,extended,00000001
+
+[Challenge 4]
+patch=1,EE,20811EDC,extended,00000001
+
+[Challenge 5]
+patch=1,EE,20811F04,extended,00000001
+
+[Challenge 6]
+patch=1,EE,20811F2C,extended,00000001
+
+[Challenge 7]
+patch=1,EE,20811F54,extended,00000001
+
+[Challenge 8]
+patch=1,EE,20811F7C,extended,00000001
+
+[Challenge 9]
+patch=1,EE,20811FA4,extended,00000001
+
+[Challenge 10]
+patch=1,EE,20811FCC,extended,00000001
+
+[Challenge 11]
+patch=1,EE,20811FF4,extended,00000001
+
+[Challenge 12]
+patch=1,EE,2081201C,extended,00000001
+
+[Challenge 13]
+patch=1,EE,20812044,extended,00000001
+
+[Challenge 14]
+patch=1,EE,2081206C,extended,00000001
+
+[Challenge 15]
+patch=1,EE,20812094,extended,00000001
+
+[Challenge 16]
+patch=1,EE,208120BC,extended,00000001
+
+[All Challenges]
+patch=1,EE,40811E64,extended,0010000A
+patch=1,EE,00000001,extended,00000000

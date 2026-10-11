@@ -1,0 +1,208 @@
+gametitle=Pirates-The Legend Of Black Kat (SLUS-20365)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,F02A7B70,extended,002C944F
+
+[Max Special]
+patch=1,EE,20411CC8,extended,3F800000
+
+[Infinite Health]
+patch=1,EE,10411CE4,extended,000000E1
+
+[Max Health]
+patch=1,EE,10411CE0,extended,00000007
+patch=1,EE,10411CE8,extended,000000E1
+
+[Max Special (Ship)]
+patch=1,EE,204121E0,extended,3F800000
+
+[Max Wind (Ship)]
+patch=1,EE,204121EC,extended,3F800000
+
+[Infinite Gold Doubloons]
+patch=1,EE,10411D68,extended,0000FFFF
+
+[Max Gold Doubloons]
+patch=1,EE,20411D68,extended,05F5E0FF
+
+[No NPC's]
+patch=1,EE,20258E88,extended,03E00008
+patch=1,EE,20258E8C,extended,00000000
+
+[NPC's Can't Attack You]
+patch=1,EE,2025ABF8,extended,03E00008
+patch=1,EE,2025ABFC,extended,00000000
+
+[Infinite Throwing Knives]
+patch=1,EE,10411D0C,extended,00000063
+
+[Infinite Minikegs]
+patch=1,EE,10411D10,extended,00000063
+
+[Infinite Ghost Bombs]
+patch=1,EE,10411D14,extended,00000063
+
+[Infinite Poisoned Darts]
+patch=1,EE,10411D18,extended,00000063
+
+[Infinite Voodoo Daggers]
+patch=1,EE,10411D1C,extended,00000063
+
+[Infinite Vampire Skulls]
+patch=1,EE,10411D20,extended,00000063
+
+[Infinite Throwing Axes]
+patch=1,EE,10411D24,extended,00000063
+
+[Infinite Fire Bombs]
+patch=1,EE,10411D28,extended,00000063
+
+[Infinite Throwing Hammers]
+patch=1,EE,10411D2C,extended,00000063
+
+[Infinite Megakegs]
+patch=1,EE,10411D30,extended,00000063
+
+[Have Sword 1]
+patch=1,EE,10411D34,extended,00000001
+
+[Have Sword 2]
+patch=1,EE,10411D38,extended,00000001
+
+[Have Sword 3]
+patch=1,EE,10411D3C,extended,00000001
+
+[Have Sword 4]
+patch=1,EE,10411D40,extended,00000001
+
+[Have Sword 5]
+patch=1,EE,10411D44,extended,00000001
+
+[Infinite Chain Shot]
+patch=1,EE,10411D48,extended,00000063
+
+[Infinite Grape Shot]
+patch=1,EE,10411D4C,extended,00000063
+
+[Infinite Stinkbombs]
+patch=1,EE,10411D50,extended,00000063
+
+[Infinite Firepots]
+patch=1,EE,10411D54,extended,00000063
+
+[Have Sloop Upgrade]
+patch=1,EE,10411D58,extended,00000001
+
+[Have Privateer Upgrade]
+patch=1,EE,10411D5C,extended,00000001
+
+[Have Brigantine Upgrade]
+patch=1,EE,10411D60,extended,00000001
+
+[Have Carrack Upgrade]
+patch=1,EE,10411D64,extended,00000001
+
+[Max Scrapbook Shells Found]
+patch=1,EE,10411D6C,extended,000003E7
+
+[Infinite Wind Dancer's Cannons]
+patch=1,EE,10411D70,extended,00000009
+
+[Have Haunted Chart Stone]
+patch=1,EE,10411D74,extended,00000001
+
+[Have Voodoo Chart Stone]
+patch=1,EE,10411D78,extended,00000001
+
+[Have Winter Chart Stone]
+patch=1,EE,10411D7C,extended,00000001
+
+[Have Volcanic Chart Stone]
+patch=1,EE,10411D80,extended,00000001
+
+[Have Skull Cove Chart Stone]
+patch=1,EE,10411D84,extended,00000001
+
+[Have Compass]
+patch=1,EE,10411D88,extended,00000001
+
+[Infinite Lumber]
+patch=1,EE,10411D8C,extended,00000063
+
+[Infinite Sail Cloth]
+patch=1,EE,10411D90,extended,00000063
+
+[Infinite Black Powder]
+patch=1,EE,10411D94,extended,00000063
+
+[Infinite Small Hearts]
+patch=1,EE,10411D98,extended,00000063
+
+[Infinite Voodoo Doll]
+patch=1,EE,10411DA4,extended,00000063
+
+[Infinite Golden Harp]
+patch=1,EE,10411DA8,extended,00000063
+
+[Have King Neptune Figurehead]
+patch=1,EE,10411DAC,extended,00000001
+
+[Have Lion Figurehead]
+patch=1,EE,10411DB0,extended,00000001
+
+[Have Sea Serpent Figurehead]
+patch=1,EE,10411DB4,extended,00000001
+
+[Have Winter Wolf Figurehead]
+patch=1,EE,10411DB8,extended,00000001
+
+[Have Ram Figurehead]
+patch=1,EE,10411DBC,extended,00000001
+
+[Have Dolphin Figurehead]
+patch=1,EE,10411DC0,extended,00000001
+
+[Have Ship In A Bottle]
+patch=1,EE,10411DD0,extended,00000001
+
+[Infinite Fruit]
+patch=1,EE,10411DD4,extended,00000063
+
+[Infinite Grog Half]
+patch=1,EE,10411DD8,extended,00000063
+
+[Infinite Grog Full]
+patch=1,EE,10411DDC,extended,00000063
+
+[Have Iron Key]
+patch=1,EE,10411DE4,extended,00000001
+
+[Have Copper Key]
+patch=1,EE,10411DE8,extended,00000001
+
+[Have Brass Key]
+patch=1,EE,10411DEC,extended,00000001
+
+[Have Skeleton Key]
+patch=1,EE,10411DF0,extended,00000001
+
+[Infinite Magic Sand]
+patch=1,EE,10411E08,extended,00000063
+
+[Infinite Crystal Tiki]
+patch=1,EE,10411E0C,extended,00000063
+
+[Infinite Earth Tiki]
+patch=1,EE,10411E10,extended,00000063
+
+[Infinite Fire Tiki]
+patch=1,EE,10411E14,extended,00000063
+
+[Infinite Ice Tiki]
+patch=1,EE,10411E18,extended,00000063
+
+[Infinite Storm Tiki]
+patch=1,EE,10411E1C,extended,00000063

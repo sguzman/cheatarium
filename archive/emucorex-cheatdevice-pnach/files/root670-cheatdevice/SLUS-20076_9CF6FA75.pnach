@@ -1,0 +1,33 @@
+gametitle=Disney's Tarzan-Untamed (SLUS-20076)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9024225C,extended,0C086352
+
+[Infinite Health]
+patch=1,EE,202DD5F4,extended,00000000
+
+[Infinite Lives]
+patch=1,EE,20314110,extended,00000000
+
+[Max Infinite Lives]
+patch=1,EE,203140F4,extended,00000000
+
+[Extra Lives]
+patch=1,EE,2031410C,extended,24650001
+
+[Infinite Spears]
+patch=1,EE,202D24D8,extended,00000000
+
+[Max Infinite Spears]
+patch=1,EE,202D24EC,extended,00000000
+
+[Extra Spears]
+patch=1,EE,102D2494,extended,00000001
+patch=1,EE,202D24F4,extended,00000000
+
+[Start With Max Spears]
+patch=1,EE,202D1794,extended,00000000
+patch=1,EE,202D17A8,extended,00000000

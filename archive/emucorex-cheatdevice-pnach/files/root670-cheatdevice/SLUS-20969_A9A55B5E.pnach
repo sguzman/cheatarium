@@ -1,0 +1,49 @@
+gametitle=S.L.A.I.-Steel Lancer Arena International (SLUS-20969)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90197EF0,extended,0C04D58A
+
+[Infinite Chips]
+patch=1,EE,2023B164,extended,2403270F
+patch=1,EE,2023B16C,extended,A443003A
+
+[Max Destroyed]
+patch=1,EE,20235874,extended,00000000
+
+[Infinite Armor (Both Players)]
+patch=1,EE,20234220,extended,8C410058
+patch=1,EE,20234228,extended,AC410054
+
+[Camouflage Lasts Longer (Both Players)]
+patch=1,EE,2024CD7C,extended,00000000
+
+[Infinite Ammo-All Weapons (Both Players)]
+patch=1,EE,D0501324,extended,00000801
+patch=1,EE,20501328,extended,00000000
+
+[Infinite Ammo-Right Arm P1]
+patch=1,EE,20725A18,extended,447A0000
+
+[Infinite Ammo-Left Arm P1]
+patch=1,EE,20725D18,extended,447A0000
+
+[Infinite Ammo-Right Shoulder P1]
+patch=1,EE,20726018,extended,447A0000
+
+[Infinite Ammo-Left Shoulder P1]
+patch=1,EE,20726318,extended,447A0000
+
+[Infinite Ammo-Right Arm P2]
+patch=1,EE,207278D8,extended,447A0000
+
+[Infinite Ammo-Left Arm P2]
+patch=1,EE,20727BD8,extended,447A0000
+
+[Infinite Ammo-Right Shoulder P2]
+patch=1,EE,20727ED8,extended,447A0000
+
+[Infinite Ammo-Left Shoulder P2]
+patch=1,EE,207281D8,extended,447A0000

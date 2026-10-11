@@ -1,0 +1,25 @@
+gametitle=Lemony Snicket's A Series Of Unfortunate Events (SLUS-21078)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,9033FBBC,extended,0C0D2B69
+
+[Infinite Misery Meter]
+patch=1,EE,2040872C,extended,42C80000
+
+[Have All Black Puzzle Pieces]
+patch=1,EE,20408610,extended,0000004B
+
+[Have All Yellow Puzzle Pieces]
+patch=1,EE,20408614,extended,00000019
+
+[Have All Green Puzzle Pieces]
+patch=1,EE,20408618,extended,0000004B
+
+[Have All Blue Puzzle Pieces]
+patch=1,EE,2040861C,extended,00000019
+
+[Have All Red Puzzle Pieces]
+patch=1,EE,20408620,extended,00000019

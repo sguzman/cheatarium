@@ -1,0 +1,322 @@
+gametitle=Fullmetal Alchemist 2-Curse Of The Crimson Elixir (SLUS-21166)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90116724,extended,0C046F4A
+
+[Infinite Bonus Points]
+patch=1,EE,102C8A32,extended,000003E7
+
+[Infinite Bonus Points Usage]
+patch=1,EE,201A85B0,extended,00000000
+
+[Max Infinite Bonus Points]
+patch=1,EE,2025E9D8,extended,240503E7
+
+[Extra Bonus Points Usage]
+patch=1,EE,2025E9D8,extended,00432821
+
+[Quick EXP Gain]
+patch=1,EE,102C8A24,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,202C8A24,extended,000F423F
+
+[Infinite HP]
+patch=1,EE,102C8A28,extended,0000270F
+
+[Max HP/VIT]
+patch=1,EE,102C8A2A,extended,0000270F
+
+[Max Infinite HP]
+patch=1,EE,202C8A28,extended,270F270F
+
+[Max ATK]
+patch=1,EE,102C8A2C,extended,0000270F
+
+[Max ALC]
+patch=1,EE,102C8A2E,extended,0000270F
+
+[Max DEF]
+patch=1,EE,102C8A30,extended,0000270F
+
+[Level 99]
+patch=1,EE,102C8A34,extended,00000062
+
+[Have ATK Up]
+patch=1,EE,102C8A3C,extended,00000001
+
+[Have DEF Up]
+patch=1,EE,102C8A3E,extended,00000001
+
+[Have ALC Up]
+patch=1,EE,102C8A40,extended,00000001
+
+[Quick EXP Gain]
+patch=1,EE,102C8A48,extended,0000FFFF
+
+[Max EXP]
+patch=1,EE,202C8A48,extended,000F423F
+
+[Infinite HP]
+patch=1,EE,102C8A4C,extended,0000270F
+
+[Max HP/VIT]
+patch=1,EE,102C8A4E,extended,0000270F
+
+[Max Infinite HP]
+patch=1,EE,202C8A4C,extended,270F270F
+
+[Max ATK]
+patch=1,EE,102C8A50,extended,0000270F
+
+[Max DEF]
+patch=1,EE,102C8A54,extended,0000270F
+
+[Level 99]
+patch=1,EE,102C8A58,extended,00000062
+
+[Have ATK Up]
+patch=1,EE,102C8A60,extended,00000001
+
+[Have DEF Up]
+patch=1,EE,102C8A62,extended,00000001
+
+[Have ALC Up]
+patch=1,EE,102C8A64,extended,00000001
+
+[Elixir (S)]
+patch=1,EE,002C8A69,extended,00000063
+
+[Elixir (M)]
+patch=1,EE,002C8A6A,extended,00000063
+
+[Elixir (L)]
+patch=1,EE,002C8A6B,extended,00000063
+
+[Elixir (XL)]
+patch=1,EE,002C8A6C,extended,00000063
+
+[Teor Of Lebis]
+patch=1,EE,002C8A6D,extended,00000063
+
+[Strength Vial]
+patch=1,EE,002C8A70,extended,00000063
+
+[Protection Vial]
+patch=1,EE,002C8A71,extended,00000063
+
+[Alchemy Vial]
+patch=1,EE,002C8A72,extended,00000063
+
+[Strength Tonic]
+patch=1,EE,002C8A75,extended,00000063
+
+[Protection Tonic]
+patch=1,EE,002C8A76,extended,00000063
+
+[Alchemy Tonic]
+patch=1,EE,002C8A77,extended,00000063
+
+[Essence Tonic]
+patch=1,EE,002C8A78,extended,00000063
+
+[Beef]
+patch=1,EE,002C8A85,extended,00000063
+
+[Reloader]
+patch=1,EE,002C8A86,extended,00000063
+
+[Lead Ring]
+patch=1,EE,002C8AA8,extended,00000063
+
+[Gold Ring]
+patch=1,EE,002C8AA9,extended,00000063
+
+[Fullmetal Ring]
+patch=1,EE,002C8AAA,extended,00000063
+
+[Ring Of Blades]
+patch=1,EE,002C8AAB,extended,00000063
+
+[Lead Bangle]
+patch=1,EE,002C8AAC,extended,00000063
+
+[Gold Bangle]
+patch=1,EE,002C8AAD,extended,00000063
+
+[Fullmetal Bangle]
+patch=1,EE,002C8AAE,extended,00000063
+
+[Bangle Of Blades]
+patch=1,EE,002C8AAF,extended,00000063
+
+[Lead Armor]
+patch=1,EE,002C8AB0,extended,00000063
+
+[Gold Armor]
+patch=1,EE,002C8AB1,extended,00000063
+
+[Fullmetal Armor]
+patch=1,EE,002C8AB2,extended,00000063
+
+[Armor Of Blades]
+patch=1,EE,002C8AB3,extended,00000063
+
+[Lead Earring]
+patch=1,EE,002C8AB4,extended,00000063
+
+[Gold Earring]
+patch=1,EE,002C8AB5,extended,00000063
+
+[Fullmetal Earring]
+patch=1,EE,002C8AB6,extended,00000063
+
+[Earring Of Blades]
+patch=1,EE,002C8AB7,extended,00000063
+
+[Moon Medal]
+patch=1,EE,002C8AB8,extended,00000063
+
+[Sun Medal]
+patch=1,EE,002C8AB9,extended,00000063
+
+[Galazy Medal]
+patch=1,EE,002C8ABA,extended,00000063
+
+[Fullmetal Bracer]
+patch=1,EE,002C8ABB,extended,00000063
+
+[Bulletproof Vest]
+patch=1,EE,002C8ABC,extended,00000063
+
+[Fireguard Cloak]
+patch=1,EE,002C8ABD,extended,00000063
+
+[Armlet Of Piercing]
+patch=1,EE,002C8ABE,extended,00000063
+
+[Armlet Of Absorption]
+patch=1,EE,002C8ABF,extended,00000063
+
+[Armlet Of Retribution]
+patch=1,EE,002C8AC0,extended,00000063
+
+[Armlet Of Perception]
+patch=1,EE,002C8AC1,extended,00000063
+
+[Red Loincloth]
+patch=1,EE,002C8AC2,extended,00000063
+
+[White Loincloth]
+patch=1,EE,002C8AC3,extended,00000063
+
+[Alluring Cologne]
+patch=1,EE,002C8AC4,extended,00000063
+
+[Charm Of Renewal]
+patch=1,EE,002C8AC5,extended,00000063
+
+[Lucky Pouch]
+patch=1,EE,002C8AC6,extended,00000063
+
+[Lucky Haversack]
+patch=1,EE,002C8AC7,extended,00000063
+
+[Glass Samurai]
+patch=1,EE,002C8AC8,extended,00000063
+
+[Whetstone Of Ages]
+patch=1,EE,002C8AC9,extended,00000063
+
+[Crimson Stone]
+patch=1,EE,002C8ACA,extended,00000063
+
+[Advancement Guide]
+patch=1,EE,002C8ACB,extended,00000063
+
+[Journeyman's Guide]
+patch=1,EE,002C8ACC,extended,00000063
+
+[Flurry Guide]
+patch=1,EE,002C8ACD,extended,00000063
+
+[Evasion Guide]
+patch=1,EE,002C8ACE,extended,00000063
+
+[Dog Collar]
+patch=1,EE,002C8ACF,extended,00000063
+
+[Sunglasses]
+patch=1,EE,002C8AD0,extended,00000063
+
+[Knife]
+patch=1,EE,002C8AD1,extended,00000063
+
+[Camaraderie Crest]
+patch=1,EE,002C8AD2,extended,00000063
+
+[Amazon Wrench]
+patch=1,EE,002C8AD3,extended,00000063
+
+[Ring Of Vows-His]
+patch=1,EE,002C8AD4,extended,00000063
+
+[Ring Of Vows-Hers]
+patch=1,EE,002C8AD5,extended,00000063
+
+[Flame Gloves]
+patch=1,EE,002C8AD6,extended,00000063
+
+[Strong-Arm Gauntlet]
+patch=1,EE,002C8AD7,extended,00000063
+
+[Bullet Of Resolve]
+patch=1,EE,002C8AD8,extended,00000063
+
+[Dog Tag]
+patch=1,EE,002C8AD9,extended,00000063
+
+[Bullet Of Discipline]
+patch=1,EE,002C8ADA,extended,00000063
+
+[Milk]
+patch=1,EE,002C8ADB,extended,00000063
+
+[Tama]
+patch=1,EE,002C8ADC,extended,00000063
+
+[Scratches]
+patch=1,EE,002C8ADD,extended,00000063
+
+[Band Of Brotherhood]
+patch=1,EE,002C8ADE,extended,00000063
+
+[Vasthold Gloves]
+patch=1,EE,002C8ADF,extended,00000063
+
+[Bullet Of Faith]
+patch=1,EE,002C8AE0,extended,00000063
+
+[Belcini]
+patch=1,EE,002C8AE1,extended,00000063
+
+[Ryuke]
+patch=1,EE,002C8AE2,extended,00000063
+
+[Antonio]
+patch=1,EE,002C8AE3,extended,00000063
+
+[Roxanne]
+patch=1,EE,002C8AE4,extended,00000063
+
+[Ophelia]
+patch=1,EE,002C8AE5,extended,00000063
+
+[Ring Of Riddles]
+patch=1,EE,002C8AE6,extended,00000063
+
+[Crimson Shard]
+patch=1,EE,002C8AE7,extended,00000063

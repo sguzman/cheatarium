@@ -1,0 +1,339 @@
+gametitle=Mobile Suit Gundam-Zeonic Front (SLUS-20233)
+author=Cheat Device PS2 contributors / original code authors
+// SPDX-License-Identifier: GPL-3.0-only
+// Converted from the pinned CheatDevicePS2 CheatDatabase.txt source.
+
+[Enable Code (Must Be On)]
+patch=1,EE,90211B3C,extended,0C08AE11
+
+[Infinite Health (Retry If Stuck)]
+patch=1,EE,2019991C,extended,24040004
+patch=1,EE,20199924,extended,24030004
+patch=1,EE,20199928,extended,A0430084
+
+[Infinite Ammo]
+patch=1,EE,201964E4,extended,00000000
+
+[Lt. Roher-MS-06F-Zaku II]
+patch=1,EE,00313F09,extended,00000002
+
+[MCPO-Austin-MS-05A-Zaku I (Prototype)]
+patch=1,EE,00313F0A,extended,00000002
+
+[En. Roberto-MS-06F-Zaku II]
+patch=1,EE,00313F0B,extended,00000002
+
+[En. Hepner-MS-06F-Zaku II]
+patch=1,EE,00313F0C,extended,00000002
+
+[PO Swaggard-MS-95A-Zaku I (Prototype)]
+patch=1,EE,00313F0D,extended,00000002
+
+[CPO Manning-MS-05B-Zaku I (G)]
+patch=1,EE,00313F0E,extended,00000002
+
+[Lt. Renchef-MS-07B-Gouf]
+patch=1,EE,00313F0F,extended,00000002
+
+[Lt. Fran-MS-09-Dom]
+patch=1,EE,00313F10,extended,00000002
+
+[Lt. Sandra-MS-06J-Zaku II (G)]
+patch=1,EE,00313F11,extended,00000002
+
+[LC Schmitzer-MS-05S-Zacku I (Schmitzer)]
+patch=1,EE,00313F12,extended,00000002
+
+[Char-MS-06S-Zaku II (Char)]
+patch=1,EE,00313F13,extended,00000002
+
+[Ramba Ral-YMS-07B-Gouf (Ramba)]
+patch=1,EE,00313F14,extended,00000002
+
+[Garma-MS-06FS-Zaku II (Garma)]
+patch=1,EE,00313F15,extended,00000002
+
+[Gaia-MS-09-Dom (Tri-Stars)]
+patch=1,EE,00313F16,extended,00000002
+
+[Ortega-MS-09-Dom (Tri-Stars)]
+patch=1,EE,00313F17,extended,00000002
+
+[Mash-MS-09-Dom (Tri-Stars)]
+patch=1,EE,00313F18,extended,00000002
+
+[Lt. Agar-RX-77-Guncannon]
+patch=1,EE,00313F19,extended,00000002
+
+[Amuro-RX-78-2-Gundam]
+patch=1,EE,00313F1A,extended,00000002
+
+[Kai-RX-77-Guncannon]
+patch=1,EE,00313F1B,extended,00000002
+
+[Hayato-RX-75-Guntank]
+patch=1,EE,00313F1C,extended,00000002
+
+[Sayla-RX-78-2-Gundam]
+patch=1,EE,00313F1D,extended,00000002
+
+[Lt. Roher 2-RX-79(G)-Gundam (G)]
+patch=1,EE,00313F1E,extended,00000002
+
+[MCPO Austin 2-RGM-79(G)-GM (G)]
+patch=1,EE,00313F1F,extended,00000002
+
+[En. Roberto 2-RGM-79-GM]
+patch=1,EE,00313F20,extended,00000002
+
+[En. Hepner 2-RX-75-Guntank MP]
+patch=1,EE,00313F21,extended,00000002
+
+[PO Swaggard 2-RX-77D-Guncannon MP]
+patch=1,EE,00313F22,extended,00000002
+
+[CPO Manning 2-RGM-79SP-GM Sniper II]
+patch=1,EE,00313F23,extended,00000002
+
+[Lt. Renchef 2-RX-79(G)-Gundam (G)]
+patch=1,EE,00313F24,extended,00000002
+
+[Lt. Fran 2-RGM-79-GM S-Armor]
+patch=1,EE,00313F25,extended,00000002
+
+[Lt. Sandra 2-RX-79(G)-Gundam (G)]
+patch=1,EE,00313F26,extended,00000002
+
+[Program 01]
+patch=1,EE,00333334,extended,00000003
+
+[Program 02]
+patch=1,EE,00333335,extended,00000003
+
+[Program 03]
+patch=1,EE,00333336,extended,00000003
+
+[Program 04]
+patch=1,EE,00333337,extended,00000003
+
+[Program 05]
+patch=1,EE,00333338,extended,00000003
+
+[Program 06]
+patch=1,EE,00333339,extended,00000003
+
+[Program 07]
+patch=1,EE,0033333A,extended,00000003
+
+[Program 08]
+patch=1,EE,0033333B,extended,00000003
+
+[Program 09]
+patch=1,EE,0033333C,extended,00000003
+
+[Program 10]
+patch=1,EE,0033333D,extended,00000003
+
+[Program 11]
+patch=1,EE,0033333E,extended,00000003
+
+[Program 12]
+patch=1,EE,0033333F,extended,00000003
+
+[Program 13]
+patch=1,EE,00333340,extended,00000003
+
+[Program 14]
+patch=1,EE,00333341,extended,00000003
+
+[Program 15]
+patch=1,EE,00333342,extended,00000003
+
+[Program 16]
+patch=1,EE,00333343,extended,00000003
+
+[Program 17]
+patch=1,EE,00333344,extended,00000003
+
+[Program 18]
+patch=1,EE,00333345,extended,00000003
+
+[Program 19]
+patch=1,EE,00333346,extended,00000003
+
+[Program 20]
+patch=1,EE,00333347,extended,00000003
+
+[Program 21]
+patch=1,EE,00333348,extended,00000003
+
+[Program 22]
+patch=1,EE,00333349,extended,00000003
+
+[Program 23]
+patch=1,EE,0033334A,extended,00000003
+
+[Program 24]
+patch=1,EE,0033334B,extended,00000003
+
+[Program 25]
+patch=1,EE,0033334C,extended,00000003
+
+[Program 26]
+patch=1,EE,0033334D,extended,00000003
+
+[Program 27]
+patch=1,EE,0033334E,extended,00000003
+
+[Program 28]
+patch=1,EE,0033334F,extended,00000003
+
+[Program 29]
+patch=1,EE,00333350,extended,00000003
+
+[Program 30]
+patch=1,EE,00333351,extended,00000003
+
+[Program 31]
+patch=1,EE,00333352,extended,00000003
+
+[Program 32]
+patch=1,EE,00333353,extended,00000003
+
+[Program 33]
+patch=1,EE,00333354,extended,00000003
+
+[Training 1]
+patch=1,EE,00333355,extended,00000003
+
+[Training 2]
+patch=1,EE,00333356,extended,00000003
+
+[Training 3]
+patch=1,EE,00333357,extended,00000003
+
+[Training 4]
+patch=1,EE,00333358,extended,00000003
+
+[Training 5]
+patch=1,EE,00333359,extended,00000003
+
+[Training 6]
+patch=1,EE,0033335A,extended,00000003
+
+[Program 1]
+patch=1,EE,00333608,extended,00000001
+
+[Program 2]
+patch=1,EE,00333609,extended,00000001
+
+[Program 3]
+patch=1,EE,0033360A,extended,00000001
+
+[Program 4]
+patch=1,EE,0033360B,extended,00000001
+
+[Program 5]
+patch=1,EE,0033360C,extended,00000001
+
+[Program 6]
+patch=1,EE,0033360D,extended,00000001
+
+[Program 7]
+patch=1,EE,0033360E,extended,00000001
+
+[Program 8]
+patch=1,EE,0033360F,extended,00000001
+
+[Program 9]
+patch=1,EE,00333610,extended,00000001
+
+[Program 10]
+patch=1,EE,00333611,extended,00000001
+
+[Program 11]
+patch=1,EE,00333612,extended,00000001
+
+[Program 12]
+patch=1,EE,00333613,extended,00000001
+
+[Program 13]
+patch=1,EE,00333614,extended,00000001
+
+[Program 14]
+patch=1,EE,00333615,extended,00000001
+
+[Program 15]
+patch=1,EE,00333616,extended,00000001
+
+[Program 16]
+patch=1,EE,00333617,extended,00000001
+
+[Program 17]
+patch=1,EE,00333618,extended,00000001
+
+[Program 18]
+patch=1,EE,00333619,extended,00000001
+
+[Program 19]
+patch=1,EE,0033361A,extended,00000001
+
+[Program 20]
+patch=1,EE,0033361B,extended,00000001
+
+[Program 21]
+patch=1,EE,0033361C,extended,00000001
+
+[Program 22]
+patch=1,EE,0033361D,extended,00000001
+
+[Program 23]
+patch=1,EE,0033361E,extended,00000001
+
+[Program 24]
+patch=1,EE,0033361F,extended,00000001
+
+[Program 25]
+patch=1,EE,00333620,extended,00000001
+
+[Program 26]
+patch=1,EE,00333621,extended,00000001
+
+[Program 27]
+patch=1,EE,00333622,extended,00000001
+
+[Program 28]
+patch=1,EE,00333623,extended,00000001
+
+[Program 29]
+patch=1,EE,00333624,extended,00000001
+
+[Program 30]
+patch=1,EE,00333625,extended,00000001
+
+[Program 31]
+patch=1,EE,00333626,extended,00000001
+
+[Program 32]
+patch=1,EE,00333627,extended,00000001
+
+[Program 33]
+patch=1,EE,00333628,extended,00000001
+
+[Training 1]
+patch=1,EE,00333629,extended,00000001
+
+[Training 2]
+patch=1,EE,0033362A,extended,00000001
+
+[Training 3]
+patch=1,EE,0033362B,extended,00000001
+
+[Training 4]
+patch=1,EE,0033362C,extended,00000001
+
+[Training 5]
+patch=1,EE,0033362D,extended,00000001
+
+[Training 6]
+patch=1,EE,0033362E,extended,00000001
