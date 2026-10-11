@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "xan1242-nfsc-ps3",
+  "repository": "https://github.com/xan1242/nfsc-ps3-patches",
+  "snapshot_commit": "7c4e084333f863b6b6d5433b6216aaafef6b279f",
+  "license": "MIT (xan1242; original LICENSE.txt retained)",
+  "archive_prefix": "archive/xan1242-nfsc-ps3/",
+  "scope_note": "Original NFS Carbon PS3 PowerPC patch list for source BLUS30016, including labeled unlock, render, MSAA, and debug effects. Retain the original native Markdown code list and accompanying text patch inputs, source README and license; exclude Windows executable patch-builder binaries.",
+  "rights_note": "Original MIT license, source instructions and author source are retained. BLUS30016 compatibility is an upstream source assertion; no PS3 patch execution, ELF matching or game compatibility verified by Cheatarium. Original patches_data.txt is a supplementary source file, not an independently verified distinct cheat.",
+  "native_cheat_counts": {
+    "ps3": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE.txt",
+      "archive_path": "archive/xan1242-nfsc-ps3/LICENSE.txt",
+      "git_blob_sha": "fdb53bcef39aabdcdabab0e700ac9600b1521c5f"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/xan1242-nfsc-ps3/README.md",
+      "git_blob_sha": "9f11ccc129e1b40b187cde585d4b47b93b5bc98e"
+    },
+    {
+      "upstream_path": "patches/BLUS30016/Patches.md",
+      "archive_path": "archive/xan1242-nfsc-ps3/patches/BLUS30016/Patches.md",
+      "git_blob_sha": "f0bf762223538f395347d932696fbb112af4a4bb"
+    },
+    {
+      "upstream_path": "patches.txt",
+      "archive_path": "archive/xan1242-nfsc-ps3/patches.txt",
+      "git_blob_sha": "d8970a8e10414cdc055c021a7fa21024f0dae7ba"
+    },
+    {
+      "upstream_path": "patches_data.txt",
+      "archive_path": "archive/xan1242-nfsc-ps3/patches_data.txt",
+      "git_blob_sha": "1b061506063cfaf857e00924bc02172de96f7f8b"
+    }
+  ]
+}

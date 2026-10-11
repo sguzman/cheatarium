@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-isz-first-person",
+  "repository": "https://github.com/FoxyXTN/First-person-mode-ISZ-3ds",
+  "snapshot_commit": "70f3057fede83370eb13e00039217111bf13e520",
+  "license": "Apache-2.0 (FoxyXTN; original LICENSE retained)",
+  "archive_prefix": "archive/foxy-isz-first-person/",
+  "scope_note": "Original Ice Station Z beta first-person-mode Nintendo 3DS CTRPF code document, with its original author file title and two separately labeled effects.",
+  "rights_note": "Foxy#XTN describes authoring the code with an idea from Peanut#XTN; retain this credit and source beta caveat. Original LICENSE retained; no title ID, build ID or gameplay effects independently verified.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-isz-first-person/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "First person Mode ISZ -Beta.txt",
+      "archive_path": "archive/foxy-isz-first-person/First person Mode ISZ -Beta.txt",
+      "git_blob_sha": "67bc8c291b363b3f7c3f13bb790e23ecf1745966"
+    }
+  ]
+}

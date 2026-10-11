@@ -849,6 +849,8 @@ fn run() -> Result<()> {
         "shaigem-melee-gecko",
         "foxy-isz-item-chat",
         "foxy-isz-wtw-3ds",
+        "foxy-isz-first-person",
+        "xan1242-nfsc-ps3",
         "gc-007-high-fps",
         "foxy-ice-station-z-itemchanger",
         "xan1242-nfsu-ps2",
@@ -1003,6 +1005,15 @@ fn run() -> Result<()> {
                     // Author-titled Beta file with explicit reuse statement in original text.
                     // No verified retail title/build ID is implied.
                     ("3ds", "gateshark-text", original.to_owned())
+                }
+                "foxy-isz-first-person" if original == "First person Mode ISZ -Beta.txt" => {
+                    // Author-published beta title only; no verified 3DS build identifier.
+                    ("3ds", "gateshark-text", original.to_owned())
+                }
+                "xan1242-nfsc-ps3" if original == "patches/BLUS30016/Patches.md" => {
+                    // Source markdown retains individual PowerPC patch effects and code fences.
+                    // Source BLUS30016 is not a verified dump/build identity.
+                    ("ps3", "ps3-ppc-markdown", original.to_owned())
                 }
                 "foxy-isz-item-chat" if original == "Item Id Chat (Test).txt" => {
                     // Author's test code has no verified retail title/build identifier.
@@ -1198,7 +1209,7 @@ fn run() -> Result<()> {
                     parse_gecko_flat(&decoded)
                 }
                 "dolphin-ini" | "gecko-plain-text" => parse_gecko_ini(&decoded),
-                "gecko-markdown" => parse_gecko_markdown(&decoded),
+                "gecko-markdown" | "ps3-ppc-markdown" => parse_gecko_markdown(&decoded),
                 "pcsx2-pnach" | "ps1-native-cht" | "gateshark-text" => {
                     parse_native_sections(&decoded)
                 }

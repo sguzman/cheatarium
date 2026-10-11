@@ -281,7 +281,7 @@ pub fn parse_gecko_markdown(text: &str) -> ParsedCheats {
     const FENCE: &str = "\x60\x60\x60";
     for line in text.split_inclusive('\n') {
         let trimmed = line.trim();
-        if let Some(heading) = trimmed.strip_prefix("## ") {
+        if let Some(heading) = trimmed.strip_prefix("## ").or_else(|| trimmed.strip_prefix("# ")) {
             title = heading.to_owned();
         }
         if let Some(summary) = trimmed
@@ -324,6 +324,18 @@ pub fn parse_gecko_markdown(text: &str) -> ParsedCheats {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn markdown_fences_keep_one_level_headings_and_original_code() {
+        let src = "# Disable Motion Blur\n\x60\x60\x60\n004D09E8 38000000\n\x60\x60\x60\n# Enable Debug\n\x60\x60\x60\n00663680 60000000\n\x60\x60\x60\n";
+        let parsed = parse_gecko_markdown(src);
+        assert_eq!(parsed.codes.len(), 2);
+        assert_eq!(parsed.codes[0].description.as_deref(), Some("Disable Motion Blur"));
+        assert_eq!(parsed.codes[0].code.as_deref(), Some("004D09E8 38000000\n"));
+        assert_eq!(parsed.codes[1].description.as_deref(), Some("Enable Debug"));
+        assert_eq!(parsed.codes[1].role, "code");
+        assert_eq!(parsed.codes[1].verification, "unverified");
+    }
 
     #[test]
     fn flat_gecko_keeps_original_unsectioned_bytes_and_unverified_status() {

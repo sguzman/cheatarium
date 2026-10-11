@@ -79,6 +79,8 @@ on:
       - "sources/shaigem-melee-gecko.json"
       - "sources/foxy-isz-item-chat.json"
       - "sources/foxy-isz-wtw-3ds.json"
+      - "sources/xan1242-nfsc-ps3.json"
+      - "sources/foxy-isz-first-person.json"
       - "sources/xan1242-nfsu-ps2.json"
       - "sources/xan1242-gt3-no-interlace.json"
       - "sources/xan1242-gt3-freecam.json"
@@ -164,6 +166,8 @@ on:
       - "archive/shaigem-melee-gecko/**"
       - "archive/foxy-isz-item-chat/**"
       - "archive/foxy-isz-wtw-3ds/**"
+      - "archive/xan1242-nfsc-ps3/**"
+      - "archive/foxy-isz-first-person/**"
       - "archive/xan1242-nfsu-ps2/**"
       - "archive/xan1242-gt3-no-interlace/**"
       - "archive/xan1242-gt3-freecam/**"
@@ -670,6 +674,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform wii --source-record-id 'wii-fluidity-gecko:codes/WFLP-sharp.txt' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-fluidity-gecko" and d["provenance"]["upstream_path"] == "codes/WFLP-sharp.txt" and d["declared_format_hint"] == "gecko-plain-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform ps3 --source-record-id 'xan1242-nfsc-ps3:patches/BLUS30016/Patches.md' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps3" and d["provenance"]["source_id"] == "xan1242-nfsc-ps3" and d["provenance"]["upstream_path"] == "patches/BLUS30016/Patches.md" and d["declared_format_hint"] == "ps3-ppc-markdown"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform 3ds --source-record-id 'foxy-isz-first-person:First person Mode ISZ -Beta.txt' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-isz-first-person" and d["provenance"]["upstream_path"] == "First person Mode ISZ -Beta.txt" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'
