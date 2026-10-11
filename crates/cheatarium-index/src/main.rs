@@ -850,6 +850,7 @@ fn run() -> Result<()> {
         "foxy-isz-item-chat",
         "foxy-isz-wtw-3ds",
         "foxy-isz-first-person",
+        "foxy-settings-app-3ds",
         "xan1242-nfsc-ps3",
         "gc-007-high-fps",
         "foxy-ice-station-z-itemchanger",
@@ -940,6 +941,7 @@ fn run() -> Result<()> {
                 | "foxy-re-revelations-3ds"
                 | "foxy-fnaf-remake-3ds"
                 | "foxy-mii-maker-3ds"
+                | "foxy-settings-app-3ds"
                     if original.ends_with(".txt")
                         && original.trim_end_matches(".txt").len() == 16
                         && original

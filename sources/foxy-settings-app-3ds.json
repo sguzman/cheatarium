@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "foxy-settings-app-3ds",
+  "repository": "https://github.com/FoxyXTN/Settings-app-Ctrpf-Hacking-tools",
+  "snapshot_commit": "096f8abee54a8ec42a49fd0398ed80f8fee3527b",
+  "license": "Apache-2.0 (FoxyXTN; original LICENSE and author README retained)",
+  "archive_prefix": "archive/foxy-settings-app-3ds/",
+  "scope_note": "One original Nintendo 3DS system Settings-app CTRPF/Gateshark file under source title ID 0004001000022000. Codes modify or display local wireless and parental-control settings; this is a settings utility source, not a retail game cheat.",
+  "rights_note": "The original README says the cheats were made by Foxy. Original Apache-2.0 notice and source README preserved. Source includes connection-corrupting/deletion and parental-control changes; execution could damage configuration or expose locally stored data. Neither effects, target firmware/version, nor actual device behavior are independently tested.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-settings-app-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/foxy-settings-app-3ds/README.md",
+      "git_blob_sha": "f44c289b801be0fa35eb38cc63ea2fb41e9e5bbe"
+    },
+    {
+      "upstream_path": "0004001000022000.txt",
+      "archive_path": "archive/foxy-settings-app-3ds/0004001000022000.txt",
+      "git_blob_sha": "b80fe41223cb1816badaa354ace8c5a9cd33cc4a"
+    }
+  ]
+}
