@@ -1,0 +1,30 @@
+"Jurassic-The Hunted"
+ELF: SLUS_219.07
+Enable code(Must Be On)
+9049C118 0C126FEE
+Infinite Ammo
+10291D6C 00000000
+Infinite Clips
+20280418 00000000
+Max Clip (After 1 use)
+20280414 240203E7
+999 Rounds (Use With Max Clip)
+202910F8 240603E7
+Infinite Health
+605DA8D0 42C80000
+00020001 00000008
+Note:ll this code does is for the screen not to be all red
+when you take lots of damage. i tested it and works but if
+a dinosaur is on you press the desired button if not your dead.
+Alt. Infinite Health (does not die with grenade)
+2036B1BC 00000000
+Infinite Adrenaline Time
+2036E0F4 00000000
+Infinite Adrenaline Time (not slow camera)
+2036E0C8 00000000
+2036E0F4 00000000
+Weapons Never Overheats
+2024634C AE0001A4
+One Hit Kill Dinosaurs (freezes the game to fight with the boss)
+20351D68 ACC001AC
+

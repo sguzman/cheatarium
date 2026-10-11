@@ -1,0 +1,38 @@
+"Dog's Life"
+Enable Code (Must Be On)
+90343704 0C0D2C3A
+Pause Game, Then View Moves For All Moves
+200C0220 2401FFFF
+200C0224 AEC10BB8
+200C0228 AEC10BBC
+200C022C 03E00008
+200C0230 24630160
+2014FD90 0C030088
+Current Level Scents Worth 10
+10158644 0000000A
+Current Level Scents Worth 5
+10158644 00000005
+Current Level Scents Worth 4
+10158644 00000004
+Current Level Scents Worth 3
+10158644 00000003
+Current Level Scents Worth 2
+10158644 00000002
+Current Scents Worth 10
+1023BFC4 0000000A
+Current Scents Worth 5
+1023BFC4 00000005
+Current Scents Worth 4
+1023BFC4 00000004
+Current Scents Worth 3
+1023BFC4 00000003
+Current Scents Worth 2
+1023BFC4 00000002
+When Controlling Another Dog Codes
+P1 Press L1+Select To Stop Timer
+D04AE9C0 0000FBFE
+2023C200 00000000
+P1 Press L2+Select To Restart Timer
+D04AE9C0 0000FEFE
+2023C200 E620000C
+

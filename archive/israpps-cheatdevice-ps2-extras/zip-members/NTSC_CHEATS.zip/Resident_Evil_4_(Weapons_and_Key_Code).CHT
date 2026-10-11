@@ -1,0 +1,494 @@
+"Resident Evil 4 (Weapons and Key Code)"
+Elf: SLUS_211.34
+Enable Code (Must Be on)
+902A6E88 00832021
+NTSC2PAL
+202A5B08 24020002
+Max/Inf Health (Main)
+1042DA76 00000960
+1042DA78 00000960
+Max/Inf Health (Partners)
+1042DA7A 000004B0
+1042DA7C 000004B0
+Invincible (L1+up=on/L1+down=off)can't have head chopped off
+E0020410 0045160A
+201C2C18 03E00008
+201C2C1C 00000000
+E0020440 0045160A
+201C2C18 27BDFF90
+201C2C1C 7FB00060
+Infinite Ammo
+201200AC 00000000
+Max Infinite Ammo
+2012009C 24020318
+Extra Ammo
+1012009C 00000001
+Infinite Grenades/RPG/Egg
+2011EF30 00000000
+1011EF3E 00001000
+Max Infinite Grenades/RPG/Egg
+2011EF30 24020063
+Never Reload
+2012009C 24420000
+Krauser's Arm is Always Ready
+D086C264 00000546
+2086C264 24020000
+Unlock everything
+10430F66 0000FFFF
+Infinite Ptas (Money)
+1042DA6C 0000FFFF
+Max/Inf Ptas (Money)
+2042DA6C 3B9AC9FF
+Atak Case XL
+210F6540 0001007F
+210F6544 00000001
+Chicago TypeWriter (Only Leon)
+210F65CC 00010034
+210F65D0 60060001
+210F65D4 08171F38
+110F65D8 00000103
+Killer7 (Only Leon)
+210F65B0 0001002A
+210F65B4 22020001
+210F65B8 09031F38
+110F65BC 00000100
+Broken Butterfly (Only Leon)
+210F6674 00010029
+210F6678 33060001
+210F667C 05031F38
+110F6670 00000100
+Mixed Herbs (G+R+Y) 999
+210F67E0 03E70015
+210F67F4 00000001
+Grenada 999 Hand
+210F6620 03E70001
+210F6624 00000001
+Grenada 999 Incendiary Grenade
+210F6620 03E70002
+210F6624 00000001
+Grenada 999 Flash Grenade
+210F6620 03E7000E
+210F6624 00000001
+Keys
+Lion Ornament
+210F671C 0001001E
+210F6720 00000001
+Goat Ornament
+210F6738 0001001F
+210F673C 00000001
+Serpent Ornament
+210F6604 00010039
+210F6608 00000001
+King's Grail
+210F663C 0001006E
+210F6640 00000001
+Queen's Grail
+210F6658 0001006F
+210F665C 00000001
+Insignia Key
+210F66E4 0001003B
+210F66E8 00000001
+False Eye
+210F6594 0001003D
+210F6598 00000001
+Castle Gate Key
+210F6700 000100A7
+210F6704 00000001
+Emergency Lock Card Key
+Stone of Sacrifice
+210F65E8 00010082
+210F65EC 00000001
+Storage Room Card Key
+210F6818 00010083
+210F681C 00000001
+Piece of the Holy Beast, Panther
+210F6834 00010085
+210F6838 00000001
+Piece of the Holy Beast, Serpent
+210F68A4 00010086
+210F68A8 00000001
+Piece of the Holy Beast, Eagle
+210F66AC 00010087
+210F66B0 00000001
+Waste Disposal Card Key
+210F6690 00010092
+210F6694 00000001
+Unlock All Doors
+1042DDA8 0000FFFF
+2042DDC0 FFFFFFFF
+2042DDC4 FFFFFFFF
+2042DDC8 FFFFFFFF
+2042DDCC FFFFFFFF
+2042DDD0 FFFFFFFF
+1-Hit Death (Enemies)
+201C2A9C 24020000
+Equip Weapon For Max Ammo
+2011FA60 24021F38
+Equip Weapon For Red Rounds
+2011FA64 34420001
+1-Hit Death (Enemies) L3=On/R3=Off
+D0451402 0000FFFD
+201C2A9C 24020000
+D0451402 0000FFFB
+201C2A9C 00511023
+Bullet Time Without Ashley (L2 + Up = On, L2 + Down = Off)
+D0451402 0000FEEF
+0042DAFF 00000008
+D0451402 0000FEBF
+0042DAFF 00000000
+Bullet Time With Ashley (L2 + Left = On, L2 + Right = Off)
+D0451402 0000FE7F
+0042DAFF 0000000C
+D0451402 0000FEDF
+0042DAFF 00000004
+(L2 + R2 + Up) (freezes enemies and stuff)
+(L2 + R2 + Right) (freezes environmental stuff)
+(L2 + R2 + Down) (freezes both)
+(L2 + R2 + Left) (turns them off)
+freeze code
+D0451402 0000FCEF
+00425D67 00000020
+D0451402 0000FCDF
+00425D67 0000000F
+D0451402 0000FCBF
+00425D67 0000002F
+D0451402 0000FC7F
+00425D67 00000000
+Thermal Goggles View (L1+Left = On, L1 + Right = Off)
+D0451402 0000FB7F
+0042DAF7 00000004
+D0451402 0000FBDF
+0042DAF7 00000000
+Cant Be Hit By Explosions(Character 1)
+201C1678 00000000
+Immune To Some Fire Damage(Character 1)
+(Mostly Stuff Your Character Causes)
+20166E98 00000000
+Enemies Cant Throw Scythes
+20115B18 03E00008
+20115B1C 00000000
+Enemies Cant Throw Axes
+201158E8 03E00008
+201158EC 00000000
+Enemies Cant Shoot Arrows
+20115CF0 03E00008
+20115CF4 00000000
+Enemies Cant Grab Character 1,Also Bear Traps Wont Hold
+You(You Still Get Damaged)
+201C3E70 03E00008
+201C3E74 00000000
+code is problematic,as in may freeze game,in some later boss
+fights,so dont use the code in the later parts of the game,
+like during fights with Verduga,U3 & the bosses beyond.
+Ashley Cant Be Grabbed At All By Enemies,She's Also Immune
+To Bear Traps
+201C3AF8 03E00008
+201C3AFC 00000000
+Speed Modifier On/Off (R1+Up=On/R1+Down=Off)
+Chapter 4-4 disable the code speed before activating the
+elevator, turn on again after the bridge go down under water
+4x speed
+D0430FA4 00000028
+20425C18 40800000
+D0430FA4 00000024
+20425C18 3F800000
+3x speed
+D0430FA4 00000028
+20425C18 40400000
+D0430FA4 00000024
+20425C18 3F800000
+2x speed
+D0430FA4 00000028
+20425C18 40000000
+D0430FA4 00000024
+20425C18 3F800000
+1.75x speed
+D0430FA4 00000028
+20425C18 3FD00000
+D0430FA4 00000024
+20425C18 3F800000
+1.5x speed
+D0430FA4 00000028
+20425C18 3FB00000
+D0430FA4 00000024
+20425C18 3F800000
+Walk Thru Walls(Character 1)(R3+Up=On/R3+Down=Off)
+D0430FA4 00004008
+201A206C 00000000
+D0430FA4 00004004
+201A206C 0C0688C2
+Enemies Cant Shoot Rockets
+20116180 03E00008
+20116184 00000000
+No get floor/ground changes/can go thru some ground & floors
+(R3+Right=On/R3+Left=Off)
+D045160A 00000024
+201A20DC 00000000
+D045160A 00000084
+201A20DC 0C0689B4
+(Be careful with this code it can get you in trouble,like
+the WTWs code can.)
+Turn Some Effects On/Off
+(R2+Up=Some Effects On/R2+Down=Some Effects Off)
+D045160A 00000210
+0042DAF4 000000FD
+D045160A 00000240
+0042DAF4 00000002
+(WARNING! Any head specific attack seems to freeze the game
+,like chainsaw guys and las plagas.I also donÅft know if this
+code has been made already or not.Did the GC version of this
+code(Disable Hit Detection) have the same problem? I cant
+remember its been awhile since I played RE4 on my GC.)
+Have access to all pick-ups In an area & can open,save,climb
+If that area has those options(R1+Right=On/R1+Left=Off)
+E0020820 0045160A
+2019DC90 03E00008
+2019DC94 00000000
+E0020880 0045160A
+2019DC90 27BDFFF0
+2019DC94 FFBF0000
+Ashley Always Present
+0042DAFF 00000004
+Ashley Never Present
+0042DAFF 00000000
+Have all Bottle Caps need atleast 1 first)
+410F66D4 000C0007
+00DC0000 00020000
+410F66E4 000C0007
+000100DD 00000002
+410F66D8 000C0007
+00010001 00000000
+410F66E8 000C0007
+00000001 00000000
+Freezes All Enemies + Shooting Gallery things + Traps don't
+work + Skip button mashing Boulders
+00425D67 00000020
+Freeze Mostly Environmental Effects
+00425D67 0000000F
+Have weird stuff appear on the map
+0042DAF4 00000000
+Disable a lot of visual effects
+0042DAF4 00000002
+Save Game To Reset game time
+2042DA54 00000000
+Save Times Amount 0
+0042DA5A 00000000
+Have All Ada Reports
+00430F6D 00000004
+Mercs Max score
+203CFA6C 05F5E0FF
+Mercs time R3= 20m / L3= 10s
+D0451402 0000FFFD
+1041B668 00000130
+D0451402 0000FFFB
+1041B668 0C068CFF
+Mercs Max Kills
+203CFA84 0000270F
+Mercs Max Kills in a row
+203CFA70 0000270F
+Results codes
+Times killed
+00430F34 00000000
+Max Enemies Killed
+20430F38 000003E7
+20430F3C 0000270F
+Perfect Hit Ratio
+20430F40 00000064
+20430F44 0000270F
+20430F48 00000064
+20430F4C 0000270F
+Unlock Character Codes
+Albert Wesker
+70430F67 00000001
+Jack Krauser
+70430F67 00000002
+Hunk
+70430F67 00000004
+Ada Wong
+70430F67 00000008
+All Characters
+70430F67 0000000F
+Character Modifier Codes
+Leon
+0042DA8A 00000000
+Ashley
+0042DA8A 00000001
+Ada
+0042DA8A 00000002
+Hunk
+0042DA8A 00000003
+Krauser
+0042DA8A 00000004
+Wesker
+0042DA8A 00000005
+Costume Leon Modifier Codes
+Always Costume Bomber Jacket
+0042DA8B 00000000
+Always Costume No Jacket (too bad it got stolen)
+0042DA8B 00000001
+Always Costume No Jacket
+0042DA8B 00000002
+Always Costume RPD uniform
+0042DA8B 00000003
+Always Costume Mafia outfit
+0042DA8B 00000004
+Always Beta Black Costume
+0042DA8B 00000005
+Partner Ashley Clothing
+Hooded sweater top,green mini skirt(looks like dirty panties)
+0042DA8D 00000000
+Pop sensation (No bounce on PS2)
+0042DA8D 00000001
+Knight Armor Suit (bullet proof plus anti carry away)
+0042DA8D 00000002
+Merchent Slots Max items/Item Mod (save and load)
+Slot 1 Attache Case S
+210F4FE0 03E7007C
+Slot 2 Attache Case M
+210F4FE8 03E7007D
+Slot 3 Attache Case L
+210F4FF0 03E7007E
+Slot 4 Attache Case XL
+210F4FF8 03E7007F
+Slot 5 Tactical Vest
+210F5000 03E700FE
+Slot 6 Rocket Launcher(Special)
+210F5008 03E70017
+Slot 7 Chicago Typewriter
+210F5010 03E70034
+Slot 8 Handcannon
+210F5018 03E70037
+Slot 9 P.R.L 412 (Extra weapon)
+210F5020 03E70041
+Slot 10 Matilda
+210F5028 03E70003
+Slot 11 Infinite Launcher
+210F5030 03E7006D
+Slot 12 Red 9
+210F5038 03E70025
+Slot 13 Punisher
+210F5040 03E70021
+Slot 14 Blacktail
+210F5048 03E70027
+Slot 15 Killer7
+210F5050 03E7002A
+Slot 16 Broken Butterfly
+210F5058 03E70029
+Slot 17 Mine Thrower
+210F5060 03E70036
+Slot 18 Shotgun
+210F5068 03E7002C
+Slot 19 Striker
+210F5070 03E7002D
+Slot 20 TMP
+210F5078 03E70030
+Slot 21 Rifle(semi-auto)
+210F5080 03E7002F
+Slot 22 Rocket Launcher
+210F5088 03E70035
+Slot 23 Infrared Scope
+210F5090 03E700C5
+Slot 24 Scope (Mine Thrower)
+210F5098 03E700AA
+Slot 25 Riot Gun
+210F50A0 03E70094
+Slot 26 Handgun
+210F50A8 03E70023
+Slot 27 Rifle
+210F50B0 03E7002E
+Slot 28 Stock (Red 9)
+210F50B8 03E70042
+Slot 29 Stock (Tmp)
+210F50C0 03E70043
+Slot 30 Scope (Rifle)
+210F50C8 03E70044
+Slot 31 Scope (semi-auto rifle)
+210F50D0 03E70045
+Merchent Max UpGrades (save and load)
+Handgun
+210F51E0 03070023
+110F51E4 00000603
+Shotgun
+210F51E8 0107002C
+110F51EC 00000603
+Rifle
+210F51F0 0107002E
+110F51F4 00000603
+TMP
+210F51F8 01070030
+110F51FC 00000603
+Punisher
+210F5200 03070021
+110F5204 00000603
+Red9
+210F5208 03070025
+110F520C 00000603
+Blacktail
+210F5210 03070027
+110F5214 00000603
+Broken Butterfly
+210F5218 01070029
+110F521C 00000403
+Rifle (Semi-Auto)
+210F5220 0206002F
+110F5224 00000603
+Riot Gun
+210F5228 01070094
+110F522C 00000603
+Mine Thrower
+210F5230 01040036
+110F5234 00000302
+Striker
+210F5238 0106002D
+110F523C 00000703
+Killer7
+210F5240 0103002A
+110F5244 00000303
+Chicago TypeWriter
+210F5248 01070034
+110F524C 00000701
+Matilda
+210F5250 01070003
+110F5254 00000703
+Hand Cannon
+210F5258 01070037
+110F525C 00000703
+Warp To/Room Mod (Hold Select when games loading)
+warp to Last Battle
+D0451402 0000FFFE
+1042DA58 00000332
+warp to Way to castle
+D0451402 0000FFFE
+1042DA58 00000200
+warp to Dragon's Inferno
+D0451402 0000FFFE
+1042DA58 00000222
+warp to Pathway to Bitores Mendez battle
+D0451402 0000FFFE
+1042DA58 0000011F
+warp to Farm
+D0451402 0000FFFE
+1042DA58 00000103
+warp to Pathway to Cabin
+D0451402 0000FFFE
+1042DA58 0000011C
+warp to El Gigante Route
+D0451402 0000FFFE
+1042DA58 0000011E
+warp to Leon waking up after Del Lagos battle
+D0451402 0000FFFE
+1042DA58 0000011B
+warp to Pathway to Salazar's Pit
+D0451402 0000FFFE
+1042DA58 00000215
+warp to Mining Area
+D0451402 0000FFFE
+1042DA58 00000220
+warp to Shooting range
+D0451402 0000FFFE
+1042DA58 0000022C
+warp to Ganados Route
+D0451402 0000FFFE
+1042DA58 0000011D
+Hacked By Skiller, GMO, Szalay, FloydFan, Hiei-YYH
+

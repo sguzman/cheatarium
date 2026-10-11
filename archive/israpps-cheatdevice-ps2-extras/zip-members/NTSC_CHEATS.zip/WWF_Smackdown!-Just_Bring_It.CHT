@@ -1,0 +1,57 @@
+"WWF Smackdown!-Just Bring It"
+Enable Code (Must Be On)
+901115EC 0C04672A
+Save For All Characters
+007245A6 000000FF
+Save For All Special Modes
+007245A8 000000FF
+Have All Movies
+0072B018 000000FF
+Always Low Match Timer
+002E2FC9 00000000
+Infinite Match Time/CPU+Ref Dont Move
+202E2FC8 00000000
+Always Have Specials
+201C0760 24020005
+201C0768 AE2201AC
+Infinite Specials
+201AE5EC 00000000
+Extra Specials
+101AE5E8 00000001
+Infinite Ability Points
+20217E90 240203E7
+20218580 00000000
+Always Max Smack Down Meters
+2027EA88 24020064
+2027EA90 24020064
+Camera Always Overhead View
+2010293C 00000000
+P2 Cant Move
+10725B14 00000E84
+Specials Build Real Slow
+10725BFC 00000EEB
+Always Matches & Stipulation Codes
+Rope Break Always On
+10725C04 00000E84
+Give Up Always On
+10725C08 00000E84
+Always Cage Match
+10725C0A 00000E84
+Always I Quit Match
+10725C10 00000E84
+Always Table Match
+10725C14 00000E84
+Always Ladder Match
+10725C16 00000E84
+Always Hell In A Cell & Crown By Name Match
+10725C18 00000E84
+Always Slobber Knocker
+10725C1A 00000E84
+Always TLC Match
+10725C1C 00000E84
+Always Last Man Standing Match
+10725C1E 00000E84
+Always Extreme Death Match
+20725C14 0E840E84
+10725C1A 00000E84
+

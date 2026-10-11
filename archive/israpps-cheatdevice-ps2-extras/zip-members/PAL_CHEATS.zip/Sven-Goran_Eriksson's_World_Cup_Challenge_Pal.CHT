@@ -1,0 +1,43 @@
+"Sven-Goran Eriksson's World Cup Challenge Pal"
+(M)
+F0100104 00100107
+Home Team Scores 99
+D02C2B00 0000FFBE
+00281010 00000063
+Press Select + Down to activate.
+Home Team Scores 0
+D02C2B00 0000FFEE
+00281010 00000000
+Press Select + Up to activate.
+Away Team Scores 99
+D02C2B00 0000FDFE
+00281012 00000063
+Press Select + R2 to activate.
+Away Team Scores 0
+D02C2B00 0000FEFE
+00281012 00000000
+Press Select + L2 to activate.
+Go To Half Time
+D02C2B00 0000F0FF
+102811A8 00003A00
+Press L1 + L2 + R1 + R2 to activate.
+Dumb A.I.
+2015F90C 03E00008
+2015F910 00000000
+20160228 03E00008
+2016022C 00000000
+Zoom Codes
+Zoom In
+1027CCFE 00004180
+Zoom Out
+1027CCFE 00003F80
+Speedy Ball
+20281204 3F822F1B
+Max Terrain Friction
+20281204 3F420000
+Ball Bounce Codes
+Bouncing Ball
+20281208 3FE00000
+No Rebound
+20281208 30000000
+

@@ -1,0 +1,56 @@
+"Guilty Gear X"
+Enable Code (Must Be On)
+901997F4 0C068AE6
+Infinite Time
+1056D034 00001770
+Quick Score Gain
+10539BFC 0000FFFF
+Max Score P1
+20539BFC 05F5E0FF
+Quick Score Gain P2
+10539CBC 0000FFFF
+Max Score P2
+20539CBC 05F5E0FF
+Always Full Tension Gauge P1
+10539C90 0000270F
+10539D44 0000270F
+Always Empty Tension Gauge P1
+10539C90 00000000
+10539D44 00000000
+Always Full Tension Gauge P2
+10539D50 0000270F
+10539E04 0000270F
+Always Empty Tension Gauge P2
+10539D50 00000000
+10539E04 00000000
+P1 Infinite Upward Jumps
+10539CE8 00000101
+P1 Cant Jump Very High
+10539CE8 00000000
+P2 Infinite Upward Jumps
+10539DA8 00000101
+P2 Cant Jump Very High
+10539DA8 00000000
+P1 Never Dizzy
+10539CF6 00000000
+P1 Always Dizzy (Upon 1st Dizzy)
+10539CF6 000000E8
+P2 Never Dizzy
+10539DB6 00000000
+P2 Always Dizzy (Upon 1st Dizzy)
+10539DB6 000000E8
+Always On Full Guard Break P1
+10539CAA 00000000
+Always On Weak Guard Break P1
+10539CAA 00000080
+Always On Full Guard Break P2
+10539D6A 00000000
+Always On Weak Guard Break P2
+10539D6A 00000080
+P1 Always Has Blue Trails
+10539C9A 00000001
+P2 Always Has Blue Trails
+10539D5A 00000001
+Max Level (Survivor Mode)
+11DF3D00 0000270F
+

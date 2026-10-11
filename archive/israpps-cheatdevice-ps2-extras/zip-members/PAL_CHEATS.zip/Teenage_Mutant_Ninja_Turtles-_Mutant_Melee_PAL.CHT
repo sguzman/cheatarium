@@ -1,0 +1,41 @@
+"Teenage Mutant Ninja Turtles: Mutant Melee PAL"
+(M)
+F01958D0 001958D3
+Player 1
+Player 1 Infinite Health
+2178E300 000001C2
+Player 1 Full Special Meter
+2178E0BC 00000096
+Player 1 Empty Special Meter
+2178E0BC 00000000
+Player 2
+Player 2 Infinite Health
+2178FF00 000001C2
+Player 2 Full Special Meter
+2178FCBC 00000096
+Player 2 Empty Special Meter
+2178FCBC 00000000
+Player 3
+Player 3 Infinite Health
+21790460 000001C2
+Player 3 Full Special Meter
+2179021C 00000096
+Player 3 Empty Special Meter
+2179021C 00000000
+Player 4
+Player 4 Infinite Health
+217909C0 000001C2
+Player 4 Full Special Meter
+2179077C 00000096
+Player 4 Empty Special Meter
+2179077C 00000000
+Timer Codes
+L2 Sets Timer To 5 Minutes
+D044E002 0000FEFF
+204B56A4 43960000
+R2 Sets Timer To 10 Seconds
+D044E002 0000FDFF
+204B56A4 41200000
+Max Tokens
+2044BD34 0098967F
+

@@ -1,0 +1,59 @@
+"Getaway-Black Monday, The"
+Enable Code (Must Be On)
+90433864 0C10DEA4
+Infinite Health
+201DB4F4 3C0142C8
+201DB4FC AC810630
+Infinite Ammo
+201C0FD4 00000000
+Max Infinite Ammo
+201C0FC8 240203E7
+Extra Ammo
+201C0FC8 00431021
+Never Reload
+201ECAD4 00000000
+Infinite Grenades
+201EC3A4 00000000
+Idiot AI-All NPC's
+201C7D50 03E00008
+201C7D54 00000000
+NPC's Cant Shoot
+201C84D0 03E00008
+201C84D4 00000000
+Civilians Turn Into Cops In Cars
+2010EDB8 08043B73
+Civilians Turn Into Cops On Foot
+2010EDB8 08043B7B
+Cops In Cars Turn Into Civilians
+2010EDD8 08043B6C
+Cops In Cars Turn Into Cops On Foot
+2010EDD8 08043B7B
+Cops On Foot Turn Into Civilians
+2010EDEC 1040FFF0
+Cops On Foot Turn Into Cops In Cars
+2010EDEC 1040FFF7
+Faster Characters
+204AAA80 42000000
+Super Fast Characters
+204AAA80 41C00000
+Ultra Fast Characters
+204AAA80 41000000
+Super Slow Characters
+204AAA80 42C80000
+Character Movement Modifier Codes
+P1 Press L1+Select For Faster Movement
+D0550242 0000FBFE
+204AAA80 42000000
+P1 Press L2+Select For Super Fast Movement
+D0550242 0000FEFE
+204AAA80 41C00000
+P1 Press R1+Select For Ultra Fast Movement
+D0550242 0000F7FE
+204AAA80 41400000
+P1 Press R2+Select For Super Slow Movement
+D0550242 0000FDFE
+204AAA80 42C80000
+P1 Press L1+L2 For Normal Movement
+D0550242 0000FAFF
+204AAA80 42700000
+

@@ -1,0 +1,29 @@
+"Taito Legends 2-RayStorm"
+Enable Code (Must Be On)
+90112950 0C0449FC
+Disable FMV
+2010A290 24020001
+Always 9 Credits (Press L1)
+D0231E9C 0000FBFF
+00228128 00000009
+P1 Infinite Lives
+003397D4 00000005
+P1 Infinite Bombs
+00339803 00000010
+P1 Always Maximum Shot Power
+003397D6 00000006
+P1 Always Maximum Laser Power
+003397EA 00000008
+P1 Always Maximum Item Bonus
+00339806 00000009
+P2 Infinite Lives
+00337374 00000005
+P2 Infinite Bombs
+003373A3 00000010
+P2 Always Maximum Shot Power
+00337376 00000006
+P2 Always Maximum Laser Power
+0033738A 00000008
+P2 Always Maximum Item Bonus
+003373A6 00000009
+

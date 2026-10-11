@@ -1,0 +1,28 @@
+"Zombie Virus PAL"
+Enable Code
+90129718 0C04A56E
+Max Combo
+0016B790 00000001
+Max Morale 999
+1020BCD4 000003E7
+Morale Never Decrease
+20149820 24430000
+Fight the Last Boss(First find the 3 politicians)
+0020BCCC 00000005
+fast development
+2016B824 248503E7
+Zombie Killed 9999(Zombie Atk Mode)
+1040129C 0000270F
+max KM
+2020BCD8 4CBEBC20
+Survivor Saved 9999
+1020BCDC 0000270F
+Time Never Decrease(Zombie Atk Mode)
+201BDBC0 00000000
+Time 00:00 (Zombie Atk Mode)
+201BDBC0 24030000
+politico all(stupid code)
+1020BCEC 000003E7
+1000 to save(stupid code)
+1020BFE8 000003E7
+

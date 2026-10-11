@@ -1,0 +1,32 @@
+"Iron Man"
+Enable Code (Must Be On)
+9011ED50 0C047AFC
+INF grenade launcher Ammo
+10EDEDA0 00000000
+INF Basic Ammo
+10ED5458 00000000
+INF Launcher Ammo
+10E739E0 00000000
+Gain grenade launcher Ammo
+10EDEDA0 00000001
+Gain Basic Ammo
+10ED5458 00000001
+Gain Launcher Ammo
+10E739E0 00000001
+INf Weapon Power
+20E957A8 00000000
+INf propulsion
+20E95764 00000000
+INF Armor
+20E94F68 C620000C
+Max EXP On Use
+00E5A64C 00000001
+Gain 10 Enemies Killed Per 1
+10ECC360 0000000A
+Gain 100 Enemies Killed Per 1
+10ECC360 00000064
+Gain 1000 Enemies Killed Per 1
+10ECC360 000003E8
+Gain 10000 Enemies Killed Per 1
+10ECC360 00002710
+

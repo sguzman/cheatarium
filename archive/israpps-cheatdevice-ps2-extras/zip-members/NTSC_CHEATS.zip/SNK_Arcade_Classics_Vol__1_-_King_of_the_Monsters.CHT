@@ -1,0 +1,25 @@
+"SNK Arcade Classics Vol .1 - King of the Monsters"
+ELF: SLUS_217.24
+Enable Code (Must Be On)
+902B0598 0C0AC10E
+*Miscs Codes
+Inf Time
+10F817BE 00003F83
+*Player 1 Codes
+P1 Inf HP
+00F81872 0000003C
+P1 Max Power
+00F818C8 0000000A
+*Player 2 Codes
+P2 Inf HP
+00F81972 0000003C
+P2 Max Power
+00F819C8 0000000A
+*Enemy Codes
+Enemy 1 No HP (P1 Press Start)
+D03D1742 0000FFF7
+00F81A72 00000001
+Enemy 2 No HP (P1 Press Start)
+D03D1742 0000FFF7
+00F81B72 00000001
+

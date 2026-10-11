@@ -1,0 +1,13 @@
+"SNK Arcade Classics Vol .1 - Fatal Fury"
+ELF: SLUS_217.24
+Enable Code (Must Be On)
+902B0598 0C0AC10E
+*Miscs Codes
+P1 Inf HP
+10F803C0 00006060
+P2 Inf HP
+10F805C0 00006060
+P2 No HP (P1 Press Start)
+D03D1742 0000FFF7
+10F805C0 00000000
+

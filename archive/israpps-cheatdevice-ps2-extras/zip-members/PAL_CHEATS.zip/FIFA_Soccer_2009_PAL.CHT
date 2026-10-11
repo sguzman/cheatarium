@@ -1,0 +1,60 @@
+"FIFA Soccer 2009 PAL"
+Enable Code (Must Be On)
+902E8CB0 0C0BA2D4
+Alt. Enable Code
+905899C8 0C0B57A5
+Alt. Enable Code
+F05899C8 005899CB
+(Press: Select+Up) Home Team AI Frozen
+D080F502 0000FFEE
+2038D054 00000000
+(Press: Select+Down) Away Team AI Frozen
+D080F502 0000FFBE
+2038D05C 00000000
+(Press: Select+Left) Enable Both Team AI
+E002FF7E 0080F502
+2038D05C 0C10B788
+2038D054 0C10B788
+Display FPS
+006A57F4 00000001
+Unlock Retro Cam (Overhead)
+201D6434 00000000
+Unlock Debug Cam
+201D64C8 00000000
+206EE724 00000001
+Always Play With Light Balls
+203896C8 00000000
+Always Play With Normal Balls
+203896C8 10000019
+Manager Mode Codes:
+Max Ticket Sales
+205DEE18 3C020400
+Ball Gravity Codes:
+Super Low Gravity
+207E0428 BD75C28F
+Low Gravity
+207E0428 BE05C28F
+High Gravity
+207E0428 BF45C28F
+Invisible Walls Codes:
+Invisible Walls (Indoor Soccer)
+007ECA38 00000001
+Disable Invisible Walls
+007ECA38 00000000
+Game Speed Modifier Codes:
+(Press: R3+Up) Slow Motion
+D080F502 0000FFEB
+207ECB0C 00000020
+(Press: R3+Left) Quicker Game
+D080F502 0000FF7B
+207ECB0C 0000003C
+(Press: R3+right) Much Quicker Game
+D080F502 0000FFDB
+207ECB0C 00000048
+(Press: R3+Down) Hyper Mode
+D080F502 0000FFBB
+207ECB0C 00000060
+(Press: R3+L3) Normal Speed
+D080F502 0000FFF9
+207ECB0C 00000032
+

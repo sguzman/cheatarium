@@ -1,0 +1,89 @@
+"Cabela's Big Game Hunter 2005 Adventures"
+Enable Code (Must Be On)
+9012B0BC 0C0411AA
+Infinite Stamina
+206A3D3C 3F800000
+Infinite Health-Head
+206A3D50 3F800000
+Infinite Health-Right Arm
+206A3D54 3F800000
+Infinite Health-Left Arm
+206A3D58 3F800000
+Infinite Health-Right Leg
+206A3D5C 3F800000
+Infinite Health-Left Leg
+206A3D60 3F800000
+Infinite Stealth
+206A3D7C 3F800000
+Never Reload
+20498D38 00000000
+Infinite Money
+106A3D08 0000FFFF
+Max Money
+206A3D08 05F5E0FF
+Buying Items Doesnt Decrease Money
+203C2FB0 00000000
+Buying Items Increases Money
+203C2FAC 00701821
+Infinite Creation Points
+206A3D80 3F800000
+Disable HUD
+2052F3F0 00000000
+God Mode On
+205AF068 00000001
+P1 Press L1+Select To Activate No Clipping Mode
+D05AAEC2 0000FBFE
+205AF060 00000001
+P1 Press L2+Select To Deactivate No Clipping Mode
+D05AAEC2 0000FEFE
+205AF060 00000000
+Disable AI Think
+205AD590 00000001
+Disable AI Actions
+205AD598 00000001
+Access All Subregions
+206A3F2C 00000001
+Unlock All Subregions
+206A3D00 00000011
+Vibration Always Off
+205C9868 00000000
+Vibration Always On
+205C9868 00000001
+Trophy Beacon Always Off
+205C986C 00000000
+Trophy Beacon Always On
+205C986C 00000001
+Auto Claim Always Off
+205C9870 00000000
+Auto Claim Always On
+205C9870 00000001
+Show HUD Always Off
+205C9874 00000000
+Show HUD Always On
+205C9874 00000001
+Bullet Camera Always Off
+205C9878 00000000
+Bullet Camera Always On
+205C9878 00000001
+Animal Info Always Off
+205C987C 00000000
+Animal Info Always On
+205C987C 00000001
+Status Codes
+Max Shots Fired
+206A3E3C 05F5E0FF
+Always Low Shots Fired
+206A3E3C 00000001
+Always No Shots Fired
+206A3E3C 00000000
+Max Hit Percentage
+206A3E40 00000064
+Max Clean Shots
+206A3E44 05F5E0FF
+Always Low Clean Shots
+206A3E44 00000001
+Always No Clean Shots
+206A3E44 00000000
+Max Longest Shot
+206A3E4C 461C3C00
+

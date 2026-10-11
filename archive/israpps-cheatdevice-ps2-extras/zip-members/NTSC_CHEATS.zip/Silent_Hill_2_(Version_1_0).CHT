@@ -1,0 +1,65 @@
+"Silent Hill 2 (Version 1.0)"
+Enable Code (Must Be On)
+F0100008 002100AF
+Infinite Health
+203E7174 42C80000
+203E717C 42C80000
+Invincible (Can't Be Hit)
+103E7180 000042C8
+Infinite Run (Never Exhausted)
+2111EF8C 42C80000
+Infinite Ammo
+201B4C9C 00000000
+Extra Ammo
+101B4C98 00000001
+No Saves Recorded
+01224BFA 00000000
+Have All Items
+2111EF60 FFFDF3FE
+2111EF64 FFFFFFFF
+2111EF68 00007FFF
+Max Item Codes
+Health Drinks
+1111EF6E 000003E7
+First Aid Kits
+1111EF70 000003E7
+Ampoules
+1111EF72 000003E7
+Handgun
+1111EF74 000003E7
+Handgun Bullets
+1111EF76 000003E7
+Shotgun
+1111EF78 000003E7
+Shotgun Shells
+1111EF7A 000003E7
+Hunting Rifle
+1111EF7C 000003E7
+Rifle Shells
+1111EF7E 000003E7
+Ranking Screen Codes
+Hella Items
+11224BFE 0000270F
+No Items
+11224BFE 00000000
+Hella Enemies Defeated By Shooting
+11224C00 0000270F
+NO Enemies Defeated By Shooting
+11224C00 00000000
+Hella Enemies Defeated By Fighting
+11224C02 0000270F
+No Enemies Defeated By Fighting
+11224C02 00000000
+Always Low Total Time
+21224C04 00000000
+Always Low Walking Distance
+21224C08 00000000
+Always Low Running Distance
+21224C0C 00000000
+Always Low Boat Stage Time
+21224C10 00000000
+Hella Boat Max Speed
+21224C14 447A0000
+Always Low Total Damage
+21224C18 00000000
+

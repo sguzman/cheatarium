@@ -1,0 +1,125 @@
+"Urbz-Sims In The City, The"
+Enable Code (Must Be On)
+9042C85C 0C0F9638
+Max Money
+200C0220 3C03000F
+200C0224 3463423F
+200C0228 0809F6D6
+200C022C 00C0202D
+2027DB50 08030088
+2027DB58 AC830074
+Money Never Decreases
+2027D15C 00000000
+Use Money Once For Max Money
+2027D158 00000000
+Always Max Urb's Needs
+200C0230 3C0142C8
+200C0234 AC410000
+200C0238 54E00001
+200C023C 27FF0014
+200C0240 03E00008
+200C0244 C4440000
+20262B18 0C03008C
+Urb's Bladder Meter Needs Never Decrease
+201F5B00 00000000
+201F5C40 00000000
+Urb's Hygiene Meter Never Decreases
+201F5C3C 00000000
+Urb's Hunger Meter Never Decreases
+201F5B78 00000000
+Urb's Fun Meter Never Decreases
+201F5C38 00000000
+Urb's Energy Meter Never Decreases
+201F5AC8 00000000
+Max Reputation
+20200358 00000000
+P1 Hold L3 To Complete Reputation Goal
+D18D4A42 0000FFFD
+20200358 00000000
+D18D4A42 0000FFFF
+20200358 14600003
+Swim In The Nude
+20478118 001895EC
+Change Formal Wear To Become Nude
+20478120 001895EC
+Sleep In The Nude
+20478124 001895EC
+Workout In The Nude
+2047812C 001895EC
+Do Creative Skill In The Nude
+20478158 001895EC
+Do Mental Skill In The Nude
+2047815C 001895EC
+Do Physical Skill In The Nude
+20478158 001895EC
+Do Everything In The Nude
+201895D4 0806257B
+Enable Display Anim Names
+204C5238 00000001
+Disable Display Anim Names
+204C5238 00000000
+Enable Display Mem Usage
+204C523C 00000001
+Disable Display Mem Usage
+204C523C 00000000
+Enable New Player Ctrls
+204C5244 00000001
+Disable New Player Ctrls
+204C5244 00000000
+Enable 3D Wall Fade
+204C5248 00000001
+Disable 3D Wall Fade
+204C5248 00000000
+Enable Display Performance Metrics
+204C524C 00000001
+Disable Display Performance Metrics
+204C524C 00000000
+Enable Display Text Boundaries
+204C5250 00000001
+Disable Display Text Boundaries
+204C5250 00000000
+Enable Display Motive Values
+204C5258 00000001
+Disable Display Motive Values
+204C5258 00000000
+Enable Object Highlighting
+204C5260 00000000
+Disable Object Highlighting
+204C5260 00000001
+Enable Flash Bounding Boxes
+204C5278 00000001
+Disable Flash Bounding Boxes
+204C5278 00000000
+Enable Free Items
+204C5288 00000001
+Disable Free Items
+204C5288 00000000
+Enable Object Catalog (All Objects)
+204C528C 00000001
+Disable Object Catalog (All Objects)
+204C528C 00000000
+Enable Unlock All XAM Skins & Ringtones
+204C5290 00000001
+Disable Unlock All XAM Skins & Ringtones
+204C5290 00000000
+Enable All Objects Moveable
+204C52A0 00000001
+Disable All Objects Moveable
+204C52A0 00000000
+Enable Unlock All Shopping Items
+204C52A8 00000001
+Disable Unlock All Shopping Items
+204C52A8 00000000
+Enable Player Inventory Requirements
+204C52B0 00000000
+Disable Player Inventory Requirements
+204C52B0 00000001
+Enable God Mode
+204C52BC 00000001
+Disable God Mode
+204C52BC 00000000
+Enable All Player Cheats
+204C52C0 00000001
+Disable All Player Cheats
+204C52C0 00000000
+

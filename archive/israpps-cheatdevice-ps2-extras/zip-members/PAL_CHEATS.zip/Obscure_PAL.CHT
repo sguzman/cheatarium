@@ -1,0 +1,35 @@
+"Obscure PAL"
+All Rooms, Characters, Enemies, Toilets
+Flashlight Brightness enhanced:
+204E55CC 00000000
+204E5624 BB011B50
+204E5628 46C73800
+or use this:
+All Rooms, Characters, Enemies, Toilets etc.
+(Press R3 to enhance Brightness, press L3 to set Brightness to Normal):
+E003FFFD 0057A502
+204E55CC 40490FDB
+204E5624 3B011B50
+204E5628 437F0001
+E003FFFB 0057A502
+204E55CC 00000000
+204E5624 BB011B50
+204E5628 46C73800
+No escaping Steam from Pipes, clearly visible Monsters!:
+204C4A34 00000000
+or use ONE these!:
+No escaping Steam from Pipes, clearly visible Monsters! (alt.):
+204C4A54 00000000
+Color of escaping Steam from Pipes, and Flashlight Cone: RED!:
+204C4A54 FE0000FF
+Color of escaping Steam from Pipes, and Flashlight Cone: GREEN!:
+204C4A54 FE00FF00
+Color of escaping Steam from Pipes, and Flashlight Cone: YELLOW!:
+204C4A54 FE00FFFF
+Color of escaping Steam from Pipes, and Flashlight Cone: BLUE!:
+204C4A54 FEFF0000
+Color of escaping Steam from Pipes, and Flashlight Cone: MAGENTA!:
+204C4A54 FEFF00FF
+Color of escaping Steam from Pipes, and Flashlight Cone: CYAN!:
+204C4A54 FEFFFF00
+

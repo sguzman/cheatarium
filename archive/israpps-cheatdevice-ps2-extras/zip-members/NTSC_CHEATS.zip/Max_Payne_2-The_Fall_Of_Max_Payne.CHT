@@ -1,0 +1,80 @@
+"Max Payne 2-The Fall Of Max Payne"
+Enable Code (Must Be On)
+90133880 0C049EA0
+Disable FMV
+2010B7E0 24020001
+Infinite Health
+20365EEC 3C02447A
+20365EF0 AC8200DC
+Infinite Bullet Time
+20295270 00000000
+202955A0 00000000
+Never Reload
+203ED8B0 00000000
+Enable Bullet Time Aid Always Off
+005964F0 00000000
+Enable Bullet Time Aid Always On
+005964F0 00000001
+Enable Subtitles Always Off
+005964F8 00000000
+Enable Subtitles Always On
+005964F8 00000001
+Auto Weapon Change Always Off
+005A2728 00000000
+Auto Weapon Change Always On
+005A2728 00000001
+Enable Auto Aiming Always Off
+005A2730 00000000
+Enable Auto Aiming Always On
+005A2730 00000001
+Enable Auto Lock Always Off
+005A2738 00000000
+Enable Auto Lock Always On
+005A2738 00000001
+Enable Vibration Always Off
+204416A4 24020000
+Enable Vibration Always On
+204416A4 24020001
+Invert Aiming Always Off
+204416F4 24020000
+Invert Aiming Always On
+204416F4 24020001
+1-Hit Death's Enemies
+20385430 AC8000DC
+Moon Gravity/Infinite Double Jumps
+205BB258 41000000
+205BB260 41000000
+205BB268 00000000
+P1 Press L1+Select For Super Speed
+D072E99C 0000FBFE
+10291F04 00004000
+P1 Press L2+Select For Turbo Speed
+D072E99C 0000FEFE
+10291F04 00004080
+P1 Press R1+Select For Ultra Speed
+D072E99C 0000F7FE
+10291F04 00004100
+P1 Press R2+Select For Normal Speed
+D072E99C 0000FDFE
+10291F04 00003F80
+Idiot AI
+1027785E 00001000
+Access Game Modes
+Hard-Boiled
+007B71F0 00000001
+Dead On Arrival
+007B71F1 00000001
+New York Minute & Dead Man Walking
+007B71F2 00000001
+Jump To Chapter
+007B71F3 00000001
+All Game Modes
+207B71F0 01010101
+Item Usage/Clip Reload Codes
+Infinite Item/Ammo Usage
+203EC190 00000000
+Extra Items/Ammo Usage
+203EC190 00651821
+Max Items/Ammo Usage
+203EC190 24030063
+

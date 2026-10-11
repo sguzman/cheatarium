@@ -1,0 +1,17 @@
+"SNK Arcade Classics Vol .1 - Burning Fight"
+ELF: SLUS_217.24
+Enable Code (Must Be On)
+902B0598 0C0AC10E
+*Miscs Codes
+Inf Time
+00F8D00A 00000099
+*Player Codes
+P1 Inf Lives
+00F80239 00000009
+P1 Inf HP
+00F80228 000000FF
+P2 Inf Lives
+00F802B9 00000009
+P2 Inf HP
+00F802A8 000000FF
+

@@ -1,0 +1,29 @@
+"Plan, The PAL"
+Enable Code
+90175840 0C05EC42
+ALT Code
+F0175840 00175843
+Joker Command
+D0322542 0000????
+Show Energy Bar As Dec originally float
+002F7A2A 00000064
+Gravity Water
+20309150 41F00000
+Size Min
+20309154 41200000
+Size Max
+2030915C 41F00000
+Size Add
+20309158 43C80000
+Size Mult
+20309168 41F00000
+Time As Decimal originally float
+002FB978 00000064
+002FB97D 00000064
+Cash As Dec originally float
+003006B4 00000064
+Show Energy Bar As Float
+002F7A2A 00000066
+Show Energy Bar As Decimal
+002F7A2A 00000064
+

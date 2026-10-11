@@ -1,0 +1,34 @@
+"Monsters Vs. Aliens PAL"
+Credits: Azagthoth
+Enable Code (Must Be On)
+9010FB18 0C043E6E
+Alt. Enable Code
+90120B28 0C049AA8
+Alt. Enable Code
+901208F8 00832021
+Joker Command
+D07FF102 0000F000
+00000000 00000000
+Skip FMV
+201072F0 24020001
+Max Monster DNA
+209CB094 3B9AC9FF
+Max Score Points
+20987B30 3B9AC9FF
+Max/Infinite Health Points
+(Current)
+109CB0D0 0000270F
+Max Health Points
+109CB0D8 0000270F
+Credits: Skiller
+Gain 1000 DNA Each Pickup
+209CA31C 2402270F
+Infinite Health Points
+209C9444 AC830000
+Infinite Gun (ASM) Player 2
+209C9838 E43F8FEC
+Infinite Gun Player 2
+209CB0EC 00000000
+DNA Items Dont Take Money
+209CA0D8 00000000
+

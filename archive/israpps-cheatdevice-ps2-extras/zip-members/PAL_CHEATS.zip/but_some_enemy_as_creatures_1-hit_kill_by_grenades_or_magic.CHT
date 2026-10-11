@@ -1,0 +1,36 @@
+but some enemy as "creatures" 1-hit kill by grenades or magic
+weapons.
+NOTE3 : With this code, you will jump higher and fly thru the
+air.
+Credits: Codejunkies
+Infinite Health
+20272E2C 3C01447A
+20272E48 AC410638
+20272E4C AC41063C
+Speed Modifier Codes
+(Press: Select+Up)
+Slow Motion
+E002FFEE 005B54C0
+2060254C 3F000000
+20602550 3F000000
+(Press: Select+Down)
+Normal Speed
+E002FFBE 005B54C0
+2060254C 3F800000
+20602550 3F800000
+(Press: Select+Left)
+Quicker Game
+E00301FE 005B54C0
+2060254C 3FA00000
+20602550 3FA00000
+(Press: Select+Right)
+Even Quicker Game
+E002FFDE 005B54C0
+2060254C 3FC00000
+20602550 3FC00000
+(Press: Select+R3)
+Hyper Mode
+E002FFFA 005B54C0
+2060254C 40000000
+20602550 40000000
+

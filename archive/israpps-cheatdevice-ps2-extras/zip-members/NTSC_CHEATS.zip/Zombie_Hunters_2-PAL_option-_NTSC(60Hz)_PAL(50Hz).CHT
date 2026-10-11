@@ -1,0 +1,77 @@
+"Zombie Hunters 2-PAL option: NTSC(60Hz) PAL(50Hz)"
+Enable Code
+90275158 0C09D3FE
+Enable Code alt
+F024495C 0024495F
+PAL2NTSC
+202409B8 24120002
+Skip FMV
+2024A150 24020001
+infinite Life
+20136560 02A42021
+20136564 8C820078
+20136568 AC820074
+Life infinite P1 10000
+202DFDE4 00002710
+202DFDE8 00002710
+Life infinite P1 1000
+202DFDE4 000003E8
+202DFDE8 00002710
+Life infinite P2 10000
+20305734 00002710
+20305738 00002710
+Life infinite P2 1000
+20305734 000003E8
+20305738 00002710
+All Costumes
+2010CAE4 24030006
+2010CAE8 AC830000
+2010DE98 2402FFFF
+2010DE9C AC6200F8
+Unlock All 12 Quest Mode
+2010E4B0 2402FFFF
+2010E4B4 AC620110
+Unlock All 6 Stages
+20133B90 2403FFFF
+Automatic recovery
+201929C0 08064A20
+Attack of the enemy it does not hit
+20135E40 100000D9
+Attack power
+2013EA3C 3C020098
+Sword range 8x
+2013EC54 3C014100
+2013EC64 4481A000
+Walk speed 3x
+2013EBD4 3C0141A2
+2013EBE4 4481A800
+Multi-stage jump possibility
+20133B90 2403FFFF
+The number + of HIT increases 1000
+2012E38C 244203E8
+The number + of connected stopping increases 1000
+2012E3EC 244203E8
+one experience value maximum
+20116804 00000000
+The sword it does not deteriorate
+201194EC 24020000
+At the time of sword deterioration there is no phenomenon
+which it does not come out
+201249A4 24100000
+Attack to have to leave Cool
+20125738 1000002B
+Character is huge
+202DFE28 40000000
+The storm walks cannot explode
+202DFDEC 00000000
+Degree of hardness all
+002909BD 00000005
+The sword it does not deteriorate
+202DFDF4 00000000
+The sword it does not deteriorate P2
+20305744 00000000
+The storm walks cannot explode P2
+2030573C 00000000
+Enlargement P2
+20305778 00000000
+

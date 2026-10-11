@@ -1,0 +1,133 @@
+Infinite "X Command"
+D0451800 0000FFFD
+20221820 00000000
+D0451800 0000FFFB
+20221820 AC820004
+(Hold: Select When Game Is Loading)
+Warp To Last Battle
+D0451800 0000FFFE
+1042DE56 00000332
+Cash Codes
+Infinite Cash
+1042DE6A 0000FFFF
+Max Cash
+2042DE6A 05F5E0FF
+Max/Infinite Cash
+2042DE6A 3B9AC9FF
+Buying Items Doesnt Decrease Cash
+2012AF7C 00000000
+Buying Items Increases Cash
+2012AF78 00451021
+Sell Item For Max Cash
+2012AB8C 3C0205F5
+2012AB90 3442E0FF
+Time Codes
+Infinite Time
+2041BA66 00000E00
+Always Low Game Save Time
+2042DE52 00000000
+No Times Saved Recorded
+1042DE58 00000000
+Infinite Time For Button Masher Scenes
+101DE816 00001000
+Unlock Codes
+Unlock Everything
+10431364 0000FFFF
+Unlock All Doors
+1042E1A6 0000FFFF
+2042E1BE FFFFFFFF
+2042E1C2 FFFFFFFF
+2042E1C6 FFFFFFFF
+2042E1CA FFFFFFFF
+2042E1CE FFFFFFFF
+Unlock Extras Menu
+70431365 00000080
+Unlock Ada's Reports (Extras)
+70431364 00000001
+Have All Ada's Reports
+0043136B 00000004
+The Mercenaries Codes
+Mercs Score Max
+203CFE6C 05F5E0FF
+Mercs Timer Freezed
+1041BA66 00000DD0
+Mercs Max Kills
+203CFC84 0000270F
+Mercs Max Kills In A Row
+203CFE70 0000270F
+Unlock Character Codes
+Unlock All Characters
+70431365 0000000F
+Albert Wesker
+70431365 00000001
+Jack Krauser
+70431365 00000002
+Hunk
+70431365 00000004
+Ada Wong
+70431365 00000008
+Character 1 Codes
+Infinite Health
+1042DE74 00000960
+Max Health
+1042DE76 00000960
+Super Infinite Health
+102471B6 00001000
+Infinite Health (Alternate)
+201C2A7C 00000000
+Character 1 Modifier Codes
+Leon
+0042DE88 00000000
+Ashley
+0042DE88 00000001
+Ada
+0042DE88 00000002
+Hunk
+0042DE88 00000003
+Krauser
+0042DE88 00000004
+Wesker
+0042DE88 00000005
+Character 1 Costume Modifier Codes
+Always Costume 1
+0042DE89 00000000
+Always Costume 2
+0042DE89 00000001
+Always Costume 3
+0042DE89 00000002
+Always Costume 4 (Leon Only)
+0042DE89 00000003
+Character 2 Codes
+Infinite Health
+1042DE78 000004B0
+Max Health
+1042DE7A 000004B0
+Super Infinite Health
+10163EBA 00001000
+Infinite Health (Alternate)
+201C2BC0 00000000
+Always Present
+0042DEFD 00000004
+Never Present
+0042DEFD 00000000
+Character 2 Costume Modifier Codes
+Always Costume 1
+0042DE89 00000000
+Always Costume 2
+0042DE89 00000001
+Always Costume 3
+0042DE89 00000002
+Always Costume 4 (Leon Only)
+0042DE89 00000003
+Stats/Results Codes
+Zero Times Killed
+00431330 00000000
+Max Enemies Killed
+20431338 000003E7
+2043133C 0000270F
+Perfect Hit Ratio
+20431340 00000064
+20431344 0000270F
+20431348 00000064
+2043134C 0000270F
+

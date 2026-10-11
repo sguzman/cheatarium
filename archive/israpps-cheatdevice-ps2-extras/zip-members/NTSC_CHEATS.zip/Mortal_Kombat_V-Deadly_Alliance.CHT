@@ -1,0 +1,314 @@
+"Mortal Kombat V-Deadly Alliance"
+Enable Code (Must Be On)
+90115A74 0C0807E0
+Infinite Time
+1040A39C 0000003C
+Infinite Health P1
+2040A394 3F800000
+75% Health P1
+D040A396 00003F80
+2040A394 3F400000
+50% Health P1
+D040A396 00003F80
+2040A394 3F000000
+25% Health P1
+D040A396 00003F80
+2040A394 3E800000
+1-Hit Death P1
+D040A396 00003F80
+2040A394 3C23D70A
+No Health P1
+2040A394 00000000
+Infinite Health P2
+2040A390 3F800000
+75% Health P2
+D040A392 00003F80
+2040A390 3F400000
+50% Health P2
+D040A392 00003F80
+2040A390 3F000000
+25% Health P2
+D040A392 00003F80
+2040A390 3E800000
+1-Hit Death P2
+D040A392 00003F80
+2040A390 3C23D70A
+No Health P2
+2040A390 00000000
+P1 Needs 1 Win To Win
+D040A38C 00000000
+2040A38C 00000001
+P1 Never Wins
+2040A38C 00000000
+P2 Never Wins
+2040A388 00000000
+P2 Needs 1 Win To Win
+D040A388 00000000
+2040A388 00000001
+Start On Last Battle (Arcade Mode)
+D040AF10 00000000
+1040AF10 0000000A
+Unlock All Characters
+20409024 FFFFFFFF
+Infinite Koin Usage
+2026BBF0 00000000
+Unlock All Outfits
+20527654 FFFFFFFF
+No Fatality Time
+1014E8B4 00000001
+Fatality Time X2
+1014E8B4 00000258
+Fatality Time X3
+1014E8B4 00000384
+Fatality Time X4
+1014E8B4 000004B0
+Fatality Time X5
+1014E8B4 000005DC
+Fatality Time X6
+1014E8B4 00000708
+Fatality Time X7
+1014E8B4 00000834
+Fatality Time X8
+1014E8B4 00000960
+Fatality Time X9
+1014E8B4 00000A8C
+Fatality Time X10
+1014E8B4 00000BB8
+Mini Game After Only 1 Match
+1040A210 00000001
+Mini Game After 2 Matches
+1040A210 00000002
+Mini Game After 3 Matches
+1040A210 00000003
+Mini Game After 4 Matches
+1040A210 00000004
+Mini Game After 5 Matches
+1040A210 00000005
+Mini Game After 6 Matches
+1040A210 00000006
+Mini Game After 10 Matches
+1040A210 0000000A
+Always Success At Test Your Might P1
+2040AE54 3FC00000
+Always Success At Test Your Might P2
+2040AE50 3FC00000
+Invisible Fighters
+20323AD0 3FE00000
+Shadow Fighters
+20323B40 00000000
+Currently Loaded Profile Codes
+Unlock All Costumes/Arenas/Concept Arts/Extras
+20550F08 FFFFFFFF
+20550F0C FFFFFFFF
+20550F10 FFFFFFFF
+20550F14 FFFFFFFF
+20550F18 FFFFFFFF
+20550F1C FFFFFFFF
+20550F20 FFFFFFFF
+20550F24 FFFFFFFF
+20550F28 FFFFFFFF
+20550F2C FFFFFFFF
+20550F30 FFFFFFFF
+20550F34 FFFFFFFF
+20550F38 FFFFFFFF
+20550F3C FFFFFFFF
+20550F40 FFFFFFFF
+20550F44 FFFFFFFF
+20550F48 FFFFFFFF
+20550F4C FFFFFFFF
+20550F50 FFFFFFFF
+20550F54 FFFFFFFF
+20550F58 FFFFFFFF
+20550F5C FFFFFFFF
+Have All Character Endings
+20551040 FFFFFFFF
+Infinite Platinum Koins
+20550E90 0000270F
+Infinite Onyx Koins
+20550E94 0000270F
+Infinite Sapphire Koins
+20550E98 0000270F
+Infinite Jade Koins
+20550E9C 0000270F
+Infinite Ruby Koins
+20550EA0 0000270F
+Infinite Gold Koins
+20550EA4 0000270F
+Impaled Codes
+Always Impaled P1
+20424FA8 B9DA740E
+Never Impaled P1
+20424FA8 00000000
+Always Impaled P2
+20425DD4 B9DA740E
+Never Impaled P2
+20425DD4 00000000
+1-Button Fatality Codes
+Kitana-Press Triangle
+203AEDAC FFFFFFFF
+Sonya-Press Triangle
+203AEDEC FFFFFFFF
+Kung Lao-Press X
+203AEE4C FFFFFFFF
+Cyrax-Press Triangle
+203AEEBC FFFFFFFF
+Raiden-Press X
+203AEF4C FFFFFFFF
+Nitara-Press Square
+203AEF8C FFFFFFFF
+Johnny Cage-Press Triangle
+203AF00C FFFFFFFF
+Jax-Press Triangle
+203AF06C FFFFFFFF
+Scorpion-Press Circle
+203AF12C FFFFFFFF
+Quan Chi-Press X
+203AF16C FFFFFFFF
+Sub-Zero-Press X
+203AF1EC FFFFFFFF
+Kenshi-Press X
+203AF26C FFFFFFFF
+Drahmin-Press X
+203AF2FC FFFFFFFF
+Li Mei-Press Circle
+203AF3B0 FFFFFFFF
+Bo' Rai Cho-Press Circle
+203AF450 FFFFFFFF
+Frost-Press Square
+203AF47C FFFFFFFF
+Mavado-Press Square
+203AF4DC FFFFFFFF
+Hsu Hao-Press Triangle
+203AF55C FFFFFFFF
+Kano-Press Square
+203AF5B0 FFFFFFFF
+Reptile-Press X
+203AF61C FFFFFFFF
+Shang Tsung-Press Triangle
+203AF69C FFFFFFFF
+1-Button Special Moves
+Blaze-Flame Ball-Press Square
+203AECCC FFFFFFFF
+Blaze-Flame Uppercut-Press Triangle
+203AECEC FFFFFFFF
+Blaze-Flame Charge-Press X
+203AED0C FFFFFFFF
+Mokap-Fireball-Press Square
+203AED2C FFFFFFFF
+Mokap-Charge Punch-Press X
+203AED4C FFFFFFFF
+Mokap-Flipkick-Press Circle
+203AED6C FFFFFFFF
+Kitana-Fan Lift-Press Square
+203AED8C FFFFFFFF
+Sonya-Kiss Of Death-Press Square
+203AEDCC FFFFFFFF
+Sonya-Fly Kick-Press X
+203AEE0C FFFFFFFF
+Kung Lao-Hat Throw-Press Square
+203AEE2C FFFFFFFF
+Kung Lao-Whirlwind Kicks-Press Circle
+203AEE6C FFFFFFFF
+Cyrax-Detonator (Far)-Press Square
+203AEE8C FFFFFFFF
+Cyrax-Detonator (Close)-Press Square
+203AEEA0 FFFFFFFF
+Cyrax-Spinkicks-Press X
+203AEEDC FFFFFFFF
+Cyrax-Slice And Dice-Press Circle
+203AEEFC FFFFFFFF
+Raiden-Shocker-Press Square
+203AEF1C FFFFFFFF
+Raiden-Lightning Bolt-Press Square
+203AEF30 FFFFFFFF
+Raiden-Lightning Dash-Press Circle
+203AEF6C FFFFFFFF
+Nitara-Blood Spit-Press Triangle
+203AEFAC FFFFFFFF
+Nitara-Unicorn Kick-Press Circle
+203AEFCC FFFFFFFF
+Johnny Cage-Forceball-Press Square
+203AEFEC FFFFFFFF
+Johnny Cage-Shadow Kick-Press Circle
+203AF02C FFFFFFFF
+Jax-Piston Punch-Press Square
+203AF04C FFFFFFFF
+Jax-Ground Punch-Press X
+203AF08C FFFFFFFF
+Jax-Machine Gun-Press Circle
+203AF0AC FFFFFFFF
+Scorpion-Spear-Press Square
+203AF0CC FFFFFFFF
+Scorpion-Summon Hellfire-Press Triangle
+203AF0EC FFFFFFFF
+Scorpion-Backflip Kick-Press X
+203AF10C FFFFFFFF
+Quan Chi-Skull Fireball-Press Square
+203AF14C FFFFFFFF
+Quan Chi-Rising Star-Press Circle
+203AF18C FFFFFFFF
+Sub-Zero-Freeze-Press Square
+203AF1AC FFFFFFFF
+Sub-Zero-Ice Shaker-Press Triangle
+203AF1CC FFFFFFFF
+Sub-Zero-Cold Shoulder-Press Circle
+203AF20C FFFFFFFF
+Kenshi-Telekenetic Slam-Press Square
+203AF22C FFFFFFFF
+Kenshi-Telekenetic Push-Press Triangle
+203AF24C FFFFFFFF
+Kenshi-Telekenetic Toss-Press Circle
+203AF28C FFFFFFFF
+Drahmin-Supper Uppercut-Press Square
+203AF2AC FFFFFFFF
+Drahmin-Propeller Clock-Press Triangle
+203AF2CC FFFFFFFF
+Drahmin-Ball-O-Flies-Press Triangle
+203AF2E0 FFFFFFFF
+Drahmin-Ground Smash-Press Circle
+203AF31C FFFFFFFF
+Li Mei-Sparkler-Press Square
+203AF33C FFFFFFFF
+Li Mei-Flying Fist-Press Triangle
+203AF35C FFFFFFFF
+Li Mei-Klock Kick-Press X
+203AF37C FFFFFFFF
+Li Mei-Kart Wheel-Press Circle
+203AF39C FFFFFFFF
+Bo' Rai Cho-Flip-Flop-Press Square
+203AF3DC FFFFFFFF
+Bo' Rai Cho-Puke Puddle-Press Triangle
+203AF3FC FFFFFFFF
+Bo' Rai Cho-Ground Stomp-Press X
+203AF41C FFFFFFFF
+Bo' Rai Cho-Belly Bash-Press Circle
+203AF43C FFFFFFFF
+Frost-Ground Ice-Press X
+203AF49C FFFFFFFF
+Frost-Slide-Press Circle
+203AF4BC FFFFFFFF
+Mavado-Change Sides Hook-Press Triangle
+203AF4FC FFFFFFFF
+Mavado-Grappling Hook Strike-Press X
+203AF51C FFFFFFFF
+Hsu Hao-Kahn Klap-Press Square
+203AF53C FFFFFFFF
+Hsu Hao-Cyrus Stomp-Press X
+203AF57C FFFFFFFF
+Kano-Cannon Ball-Press Square
+203AF59C FFFFFFFF
+Kano-Eye Laser-Press Triangle
+203AF5DC FFFFFFFF
+Reptile-Acid Spit-Press Square
+203AF5FC FFFFFFFF
+Reptile-Lizard Ball-Press Circle
+203AF63C FFFFFFFF
+Shang Tsung-3D Fire (Far)-Press Square
+203AF65C FFFFFFFF
+Shang Tsung-3D Fire (Close)-Press Square
+203AF670 FFFFFFFF
+Shang Tsung-Straight Fire-Press Square
+203AF684 FFFFFFFF
+Shang Tsung-Soul Steal-Press X
+203AF6BC FFFFFFFF
+

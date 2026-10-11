@@ -1,0 +1,26 @@
+"Sega Genesis Collection - Comix Zone"
+ELF: SLUS_215.42
+Enable Code (Must Be On)
+90152000 00832021
+200C0580 3C01000E
+200C0584 3404D166
+200C0588 03E00008
+200C058C AC240000
+201590AC 08030160
+C00E0000 0000D166
+*Misc Codes
+Infinite Health
+6026BF30 0000FF04
+00010001 0001BF14
+Invincible
+6026BF30 00000016
+00000001 0001BF77
+Invincibility Cheat Enabled
+6026BF30 000000FF
+00000001 0001BEF7
+Level Select Cheat Enabled (ABC Mode)
+In the Jukebox, select the sound number that corresponds to
+desired level and press C. Exit and start the game.
+6026BF30 000000FF
+00000001 0001BEF8
+

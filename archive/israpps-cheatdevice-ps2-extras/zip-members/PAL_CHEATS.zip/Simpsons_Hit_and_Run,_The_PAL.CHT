@@ -1,0 +1,91 @@
+"Simpsons Hit and Run, The PAL"
+Enable Code (Must Be On)
+9040878C 0C0FC431
+Open Chapters
+00425EF4 000000FF
+Have All Levels Complete
+005E8B70 00000006
+005E8B74 00000006
+Infinite Coins
+105E8B7C 000003E7
+Tiny Characters
+10107E24 00003F00
+Large Characters
+10107E24 00004000
+Ultra Large Characters
+10107E24 00004040
+Press Square To Modify Character
+20107FD0 00000000
+Stop All Timers
+20173F14 00000000
+Coin Codes
+Infinite Coins
+105E8B7C 000003E7
+Max Coins
+105E8BFC 05F00000
+Infinite Coin Usage
+2018987C 00000000
+20189880 00000000
+Using Coins Increases Coins
+20189874 00461021
+Coins Worth Modifier
+x50
+2018984C 24420032
+x 100
+2018984C 24420064
+x 200
+2018984C 244200C8
+x 250
+2018984C 244200FA
+Display Codes
+Display Vehicle Speed
+201D4FBC 00000000
+Display Level Outline
+201EF8CC 00000000
+Display Section Lines
+2021CE60 00000000
+Display Grid
+201EF8CC 00000000
+Blurred Vision
+2021C9CC 00000000
+Car Codes
+Faster Vehicle Acceleration
+10152170 00004040
+Press L3 To Jump While In Car
+20254C20 00000000
+Turbo Vehicle Speed
+20281534 00000000
+Hiting A Car Makes It Explode
+2028A948 00000000
+Cars Takes No Damage
+2028AD3C 00000000
+P1 Press R1+Select To Enable Drive Thru Walls
+D0516048 0000F7FE
+102D185C 00001000
+P1 Press L1+Select To Disable Drive Thru Walls
+D0516048 0000FBFE
+102D03F4 00001000
+Walk/Jump Codes
+Super Jump
+204AF3B0 40800000
+Ultra Jump
+204AF3B0 41000000
+Super Ultra Jump
+204AF3B0 41800000
+Super Running Speed
+204AF434 41400000
+Ultra Running Speed
+204AF434 41800000
+Ultra Running Speed
+204AF434 41C00000
+Moon Gravity
+204AF438 C1000000
+Super Moon Gravity
+204AF438 C0000000
+Super Double Jump
+204AF454 40800000
+Ultra Double Jump
+204AF454 41000000
+Infinite Double Jumps
+20125BC8 00000000
+

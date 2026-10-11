@@ -1,0 +1,23 @@
+"SNK Arcade Classics Vol .1 - World Heroes"
+ELF: SLUS_217.24
+Enable Code (Must Be On)
+902B0598 0C0AC10E
+*Miscs Codes
+Player 1 Infinite Health
+0118BC13 00000068
+0118BC37 00000068
+Player 2 Infinite Health
+0118BD13 00000068
+0118BD37 00000068
+Player 2 - No Health (P1 Press Start)
+E002FFF7 003D1742
+0118BD13 00000001
+0118BD37 00000001
+*Character Mod Codes
+P1 Play as Geegus (Press L2+R2)
+D03D1742 0000FCFF
+0118BC15 00000009
+P2 Play as Geegus (Press L2+R2)
+D03D1B42 0000FCFF
+0118BD15 00000009
+

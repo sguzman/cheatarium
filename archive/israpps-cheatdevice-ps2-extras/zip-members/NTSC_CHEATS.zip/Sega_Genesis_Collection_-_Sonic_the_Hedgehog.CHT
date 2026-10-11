@@ -1,0 +1,30 @@
+"Sega Genesis Collection - Sonic the Hedgehog"
+ELF: SLUS_215.42
+Enable Code (Must Be On)
+90151998 00832021
+200C0580 3C01000E
+200C0584 3404D166
+200C0588 03E00008
+200C058C AC240000
+20158A0C 08030160
+C00E0000 0000D166
+*Misc Codes
+Infinite Lives
+6026BC48 00000003
+00000001 0001FE22
+Infinite Air
+6026BC48 0000001E
+00000001 0001FE25
+All Chaos Emeralds Collected
+6026BC48 00000006
+00000001 0001FE67
+Level Select/In-Game Reset/Debug Mode Enabled (ABC Mode)
+At the title screen, hold A and press Start for level select;
+while in-game, pause and press A to reset game; before the
+stage loads, hold A until it is displayed to enable debug mode.
+6026BC48 00010101
+00020001 0001FFF0
+INF HP/99 Coins
+6026BC48 00000063
+00000001 0001FE31
+

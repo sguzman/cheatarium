@@ -1,0 +1,618 @@
+"Tekken 5 (Jinpachi Code)"
+Enable Code (Must Be On)
+9010C1D0 00832021
+P1 holding down R1 using one of the four attack buttons
+Player 1 Jinpachi
+DA27C242 B200160F
+1A16C179 0000004B
+DA27C242 B20F860F
+1A16C179 0000004C
+DA27C242 B20FD60F
+1A16C179 0000004D
+DA27C242 B20FF60F
+1A16C179 0000004E
+DA27C243 B200160E
+1A16C17A 0000004B
+DA27C243 B20F860E
+1A16C17A 0000004C
+DA27C243 B20FD60E
+1A16C17A 0000004D
+DA27C243 B20FF60E
+1A16C17A 0000004E
+1st Player Always Plays As:
+Jinpachi (Demon 1)
+1A16C179 0000004B
+Jinpachi (Demon 2)
+1A16C179 0000004C
+Jinpachi (Human 1)
+1A16C179 0000004D
+Jinpachi (Human 2)
+1A16C179 0000004E
+Metal Mokujin (freeze mod History)
+1A16C179 0000004F
+2nd Player Always Plays As:
+Jinpachi (Demon 1)
+1A86C17A 0000004B
+Jinpachi (Demon 2)
+1A86C17A 0000004C
+Jinpachi (Human 1)
+1A86C17A 0000004D
+Jinpachi (Human 2)
+1A86C17A 0000004E
+Metal Mokujin (freeze mod History)
+1A86C17A 0000004F
+Infinite Health P1
+203A916C 00910000
+75% Health P1
+D03A916E 00000091
+103A916E 0000006C
+50% Health P1
+D03A916E 00000091
+103A916E 00000048
+25% Health P1
+D03A916E 00000091
+103A916E 00000024
+1-Hit Death P1
+D03A916E 00000091
+203A916C 00000001
+No Health P1
+203A916C 00000000
+P1 Needs 1 Win To Win
+D03A8B60 00000000
+103A8B60 00000001
+P1 Never Wins
+103A8B60 00000000
+Infinite Health P2
+203A9A3C 00910000
+75% Health P2
+D03A9A3E 00000091
+103A9A3E 0000006C
+50% Health P2
+D03A9A3E 00000091
+103A9A3E 00000048
+25% Health P2
+D03A9A3E 00000091
+103A9A3E 00000024
+1-Hit Death P2
+D03A9A3E 00000091
+203A9A3C 00000001
+No Health P2
+203A9A3C 00000000
+P2 Needs 1 Win To Win
+D02A9430 00000000
+102A9430 00000001
+P2 Never Wins
+102A9430 00000000
+P1 Press L1+L2 For Death Blow On P2
+D015D402 0000FAFF
+203A9A3C 00000000
+P2 Press L1+L2 For Death Blow On P1
+D015D502 0000FAFF
+203A916C 00000000
+Infinite Time
+10151F98 00001788
+Always Low Total Time
+203A8400 00000000
+Hit Anywhere P1 & P2 Cant Hit P1
+D01F55CC 0000282D
+201F55D8 12140017
+Hit Anywhere P2 & P1 Cant Hit P2
+D01F55CC 0000282D
+201F55D8 16140017
+Hit Anywhere (Both Players)
+D01F55CC 0000282D
+201F55D8 00000000
+Disable All Blocking (Both Players)
+D01F42B8 00001012
+201F42C4 1000000C
+Max Wins (Survival Mode)
+2015515C 000003E7
+Unlock Devil Jin
+201553C0 00000001
+Unlock All Characters
+203E4568 FFFFFFFF
+Unlock All Theater
+203E4570 FFFFFFFF
+Story Mode Codes
+Start On Stage 2
+D03A83F8 00000000
+103A83F8 00000001
+Start On Stage 3
+D03A83F8 00000000
+103A83F8 00000002
+Start On Stage 4
+D03A83F8 00000000
+103A83F8 00000003
+Start On Stage 5
+D03A83F8 00000000
+103A83F8 00000004
+Start On Stage 6
+D03A83F8 00000000
+103A83F8 00000005
+Start On Stage 7
+D03A83F8 00000000
+103A83F8 00000006
+Start On Stage 8
+D03A83F8 00000000
+103A83F8 00000007
+Start On Stage 9
+D03A83F8 00000000
+103A83F8 00000008
+Character Customize Codes
+Infinite Fight Money
+103E4638 0000FFFF
+Max Fight Money
+203E4638 05F5E0FF
+Paul Phoenix Codes
+Have All Head Items
+103E49E6 0000FFFF
+Have All Face Items
+103E49E8 0000FFFF
+Have All Upper Body Items
+103E49EA 0000FFFF
+Have All Lower Body Items
+103E49EC 0000FFFF
+Have All Color 1 Items
+003E49F2 000000FF
+Have All Color 2 Items
+003E49F3 000000FF
+Have All Color 3 Items
+003E49F4 000000FF
+Marshall Law Codes
+Have All Head Items
+103E4A0E 0000FFFF
+Have All Face Items
+103E4A10 0000FFFF
+Have All Upper Body Items
+103E4A12 0000FFFF
+Have All Lower Body Items
+103E4A14 0000FFFF
+Have All Color 1 Items
+003E4A1A 000000FF
+Have All Color 2 Items
+003E4A1B 000000FF
+Have All Color 3 Items
+003E4A1C 000000FF
+Have Extra Costume
+203E4A20 00000001
+Lei Wulong Codes
+Have All Head Items
+103E4A36 0000FFFF
+Have All Face Items
+103E4A38 0000FFFF
+Have All Upper Body Items
+103E4A3A 0000FFFF
+Have All Lower Body Items
+103E4A3C 0000FFFF
+Have All Color 1 Items
+003E4A42 000000FF
+Have All Color 2 Items
+003E4A43 000000FF
+Have All Color 3 Items
+003E4A44 000000FF
+King Codes
+Have All Head Items
+103E4A5E 0000FFFF
+Have All Face Items
+103E4A60 0000FFFF
+Have All Upper Body Items
+103E4A62 0000FFFF
+Have All Lower Body Items
+103E4A64 0000FFFF
+Have All Color 1 Items
+003E4A6A 000000FF
+Have All Color 2 Items
+003E4A6B 000000FF
+Have All Color 3 Items
+003E4A6C 000000FF
+Yoshimitsu Codes
+Have All Head Items
+103E4A86 0000FFFF
+Have All Face Items
+103E4A88 0000FFFF
+Have All Upper Body Items
+103E4A8A 0000FFFF
+Have All Lower Body Items
+103E4A8C 0000FFFF
+Have All Color 1 Items
+003E4A92 000000FF
+Have All Color 2 Items
+003E4A93 000000FF
+Have All Color 3 Items
+003E4A94 000000FF
+Have Extra Costume
+203E4A98 00000001
+Nina Williams Codes
+Have All Head Items
+103E4AAE 0000FFFF
+Have All Face Items
+103E4AB0 0000FFFF
+Have All Upper Body Items
+103E4AB2 0000FFFF
+Have All Lower Body Items
+103E4AB4 0000FFFF
+Have All Color 1 Items
+003E4ABA 000000FF
+Have All Color 2 Items
+003E4ABB 000000FF
+Have All Color 3 Items
+003E4ABC 000000FF
+Hwoarang Codes
+Have All Head Items
+103E4AD6 0000FFFF
+Have All Face Items
+103E4AD8 0000FFFF
+Have All Upper Body Items
+103E4ADA 0000FFFF
+Have All Lower Body Items
+103E4ADC 0000FFFF
+Have All Color 1 Items
+003E4AE2 000000FF
+Have All Color 2 Items
+003E4AE3 000000FF
+Have All Color 3 Items
+003E4AE4 000000FF
+Ling Xiaoyu Codes
+Have All Head Items
+103E4AFE 0000FFFF
+Have All Face Items
+103E4B00 0000FFFF
+Have All Upper Body Items
+103E4B02 0000FFFF
+Have All Lower Body Items
+103E4B04 0000FFFF
+Have All Color 1 Items
+003E4B0A 000000FF
+Have All Color 2 Items
+003E4B0B 000000FF
+Have All Color 3 Items
+003E4B0C 000000FF
+Have Extra Costume
+203E4B10 00000001
+Christie Monteiro Codes
+Have All Head Items
+103E4B26 0000FFFF
+Have All Face Items
+103E4B28 0000FFFF
+Have All Upper Body Items
+103E4B2A 0000FFFF
+Have All Lower Body Items
+103E4B2C 0000FFFF
+Have All Color 1 Items
+003E4B32 000000FF
+Have All Color 2 Items
+003E4B33 000000FF
+Have All Color 3 Items
+003E4B34 000000FF
+Have Extra Costume
+203E4B38 00000001
+Jin Kazama Codes
+Have All Head Items
+103E4B4E 0000FFFF
+Have All Face Items
+103E4B50 0000FFFF
+Have All Upper Body Items
+103E4B52 0000FFFF
+Have All Lower Body Items
+103E4B54 0000FFFF
+Have All Color 1 Items
+003E4B5A 000000FF
+Have All Color 2 Items
+003E4B5B 000000FF
+Have All Color 3 Items
+003E4B5C 000000FF
+Have Extra Costume
+203E4B60 00000001
+Julia Chang Codes
+Have All Head Items
+103E4B76 0000FFFF
+Have All Face Items
+103E4B78 0000FFFF
+Have All Upper Body Items
+103E4B7A 0000FFFF
+Have All Lower Body Items
+103E4B7C 0000FFFF
+Have All Color 1 Items
+003E4B82 000000FF
+Have All Color 2 Items
+003E4B83 000000FF
+Have All Color 3 Items
+003E4B84 000000FF
+Kuma Codes
+Have All Head Items
+103E4B9E 0000FFFF
+Have All Face Items
+103E4BA0 0000FFFF
+Have All Upper Body Items
+103E4BA2 0000FFFF
+Have All Lower Body Items
+103E4BA4 0000FFFF
+Have All Color 1 Items
+003E4BAA 000000FF
+Have All Color 2 Items
+003E4BAB 000000FF
+Have All Color 3 Items
+003E4BAC 000000FF
+Bryan Fury Codes
+Have All Head Items
+103E4BC6 0000FFFF
+Have All Face Items
+103E4BC8 0000FFFF
+Have All Upper Body Items
+103E4BCA 0000FFFF
+Have All Lower Body Items
+103E4BCC 0000FFFF
+Have All Color 1 Items
+003E4BD2 000000FF
+Have All Color 2 Items
+003E4BD3 000000FF
+Have All Color 3 Items
+003E4BD4 000000FF
+Heihachi Mishima Codes
+Have All Head Items
+103E4BEE 0000FFFF
+Have All Face Items
+103E4BF0 0000FFFF
+Have All Upper Body Items
+103E4BF2 0000FFFF
+Have All Lower Body Items
+103E4BF4 0000FFFF
+Have All Color 1 Items
+003E4BFA 000000FF
+Have All Color 2 Items
+003E4BFB 000000FF
+Have All Color 3 Items
+003E4BFC 000000FF
+Kazuya Mishima Codes
+Have All Head Items
+103E4C16 0000FFFF
+Have All Face Items
+103E4C18 0000FFFF
+Have All Upper Body Items
+103E4C1A 0000FFFF
+Have All Lower Body Items
+103E4C1C 0000FFFF
+Have All Color 1 Items
+003E4C22 000000FF
+Have All Color 2 Items
+003E4C23 000000FF
+Have All Color 3 Items
+003E4C24 000000FF
+Lee Chaolan Codes
+Have All Head Items
+103E4C3E 0000FFFF
+Have All Face Items
+103E4C40 0000FFFF
+Have All Upper Body Items
+103E4C42 0000FFFF
+Have All Lower Body Items
+103E4C44 0000FFFF
+Have All Color 1 Items
+003E4C4A 000000FF
+Have All Color 2 Items
+003E4C4B 000000FF
+Have All Color 3 Items
+003E4C4C 000000FF
+Have Extra Costume
+203E4C50 00000001
+Steve Fox Codes
+Have All Head Items
+103E4C66 0000FFFF
+Have All Face Items
+103E4C68 0000FFFF
+Have All Upper Body Items
+103E4C6A 0000FFFF
+Have All Lower Body Items
+103E4C6C 0000FFFF
+Have All Color 1 Items
+003E4C72 000000FF
+Have All Color 2 Items
+003E4C73 000000FF
+Have All Color 3 Items
+003E4C74 000000FF
+Craig Murdak Codes
+Have All Head Items
+103E4C8E 0000FFFF
+Have All Face Items
+103E4C90 0000FFFF
+Have All Upper Body Items
+103E4C92 0000FFFF
+Have All Lower Body Items
+103E4C94 0000FFFF
+Have All Color 1 Items
+003E4C9A 000000FF
+Have All Color 2 Items
+003E4C9B 000000FF
+Have All Color 3 Items
+003E4C9C 000000FF
+Mokujin Codes Codes
+Have All Head Items
+103E4CB6 0000FFFF
+Have All Face Items
+103E4CB8 0000FFFF
+Have All Upper Body Items
+103E4CBA 0000FFFF
+Have All Lower Body Items
+103E4CBC 0000FFFF
+Have All Color 1 Items
+003E4CC2 000000FF
+Have All Color 2 Items
+003E4CC3 000000FF
+Have All Color 3 Items
+003E4CC4 000000FF
+Jack-5 Codes
+Have All Head Items
+103E4CDE 0000FFFF
+Have All Face Items
+103E4CE0 0000FFFF
+Have All Upper Body Items
+103E4CE2 0000FFFF
+Have All Lower Body Items
+103E4CE4 0000FFFF
+Have All Color 1 Items
+003E4CEA 000000FF
+Have All Color 2 Items
+003E4CEB 000000FF
+Have All Color 3 Items
+003E4CEC 000000FF
+Roger Jr. Codes
+Have All Head Items
+103E4D06 0000FFFF
+Have All Face Items
+103E4D08 0000FFFF
+Have All Upper Body Items
+103E4D0A 0000FFFF
+Have All Lower Body Items
+103E4D0C 0000FFFF
+Have All Color 1 Items
+003E4D12 000000FF
+Have All Color 2 Items
+003E4D13 000000FF
+Have All Color 3 Items
+003E4D14 000000FF
+Anna Williams Codes
+Have All Head Items
+103E4D2E 0000FFFF
+Have All Face Items
+103E4D30 0000FFFF
+Have All Upper Body Items
+103E4D32 0000FFFF
+Have All Lower Body Items
+103E4D34 0000FFFF
+Have All Color 1 Items
+003E4D3A 000000FF
+Have All Color 2 Items
+003E4D3B 000000FF
+Have All Color 3 Items
+003E4D3C 000000FF
+Have Extra Costume
+203E4D40 00000001
+Wang Jinrei Codes
+Have All Head Items
+103E4D56 0000FFFF
+Have All Face Items
+103E4D58 0000FFFF
+Have All Upper Body Items
+103E4D5A 0000FFFF
+Have All Lower Body Items
+103E4D5C 0000FFFF
+Have All Color 1 Items
+003E4D62 000000FF
+Have All Color 2 Items
+003E4D63 000000FF
+Have All Color 3 Items
+003E4D64 000000FF
+Ganryu Codes
+Have All Head Items
+103E4D7E 0000FFFF
+Have All Face Items
+103E4D80 0000FFFF
+Have All Upper Body Items
+103E4D82 0000FFFF
+Have All Lower Body Items
+103E4D84 0000FFFF
+Have All Color 1 Items
+003E4D8A 000000FF
+Have All Color 2 Items
+003E4D8B 000000FF
+Have All Color 3 Items
+003E4D8C 000000FF
+Have Extra Costume
+203E4D90 00000001
+Asuka Kazama Codes
+Have All Head Items
+103E4DA6 0000FFFF
+Have All Face Items
+103E4DA8 0000FFFF
+Have All Upper Body Items
+103E4DAA 0000FFFF
+Have All Lower Body Items
+103E4DAC 0000FFFF
+Have All Color 1 Items
+003E4DB2 000000FF
+Have All Color 2 Items
+003E4DB3 000000FF
+Have All Color 3 Items
+003E4DB4 000000FF
+Have Extra Costume
+203E4DB8 00000001
+Bruce Irvin Codes
+Have All Head Items
+103E4DCE 0000FFFF
+Have All Face Items
+103E4DD0 0000FFFF
+Have All Upper Body Items
+103E4DD2 0000FFFF
+Have All Lower Body Items
+103E4DD4 0000FFFF
+Have All Color 1 Items
+003E4DDA 000000FF
+Have All Color 2 Items
+003E4DDB 000000FF
+Have All Color 3 Items
+003E4DDC 000000FF
+Have Extra Costume
+203E4DE0 00000001
+Baek Doo San Codes
+Have All Head Items
+103E4DF6 0000FFFF
+Have All Face Items
+103E4DF8 0000FFFF
+Have All Upper Body Items
+103E4DFA 0000FFFF
+Have All Lower Body Items
+103E4DFC 0000FFFF
+Have All Color 1 Items
+003E4E02 000000FF
+Have All Color 2 Items
+003E4E03 000000FF
+Have All Color 3 Items
+003E4E04 000000FF
+Devil Jin Codes
+Have All Head Items
+103E4E1E 0000FFFF
+Have All Face Items
+103E4E20 0000FFFF
+Have All Upper Body Items
+103E4E22 0000FFFF
+Have All Lower Body Items
+103E4E24 0000FFFF
+Have All Color 1 Items
+003E4E2A 000000FF
+Have All Color 2 Items
+003E4E2B 000000FF
+Have All Color 3 Items
+003E4E2C 000000FF
+Raven Codes
+Have All Head Items
+103E4E46 0000FFFF
+Have All Face Items
+103E4E48 0000FFFF
+Have All Upper Body Items
+103E4E4A 0000FFFF
+Have All Lower Body Items
+103E4E4C 0000FFFF
+Have All Color 1 Items
+003E4E52 000000FF
+Have All Color 2 Items
+003E4E53 000000FF
+Have All Color 3 Items
+003E4E54 000000FF
+Have Extra Costume
+203E4E58 00000001
+Feng Wei Codes
+Have All Head Items
+103E4E6E 0000FFFF
+Have All Face Items
+103E4E70 0000FFFF
+Have All Upper Body Items
+103E4E72 0000FFFF
+Have All Lower Body Items
+103E4E74 0000FFFF
+Have All Color 1 Items
+003E4E7A 000000FF
+Have All Color 2 Items
+003E4E7B 000000FF
+Have All Color 3 Items
+003E4E7C 000000FF
+

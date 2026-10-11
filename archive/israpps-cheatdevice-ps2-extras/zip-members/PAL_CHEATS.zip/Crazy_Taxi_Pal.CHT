@@ -1,0 +1,46 @@
+"Crazy Taxi Pal"
+(M)
+F01A7A14 001A7A17
+Infinite Arcade Time
+102F40CC 00000B9A
+Set The Arcade Time to 18 mins
+D030E4D2 00000001
+102F40CC 0000FFFF
+Press R2 to activate.
+Set The Arcade Time to 0
+D030E4D2 00000002
+102F40CC 00000000
+Press L2 to activate.
+Infinite Passenger Time
+102F4104 000008FE
+Infinite Game Time
+102F40CC 00000EBF
+Unlock The Crazy Bike
+10218740 00000401
+Crazy Box Complete And Open
+10218754 0000FFFF
+Have A 15x Combo In The Crazy Challenge
+1047FE48 0000000F
+Have A 30x Combo In The Crazy Challenge
+1047FE48 0000001E
+All Balloons Are Popped
+10480004 00000000
+No Textures/Collision
+10480314 000000FF
+This will crash the game if you pick up a passenger.
+'G' Suspension
+1030E1FE 0000FFFF
+Engine Never Peaks On
+20174F3C 00000000
+CPU Cars Don't Steer
+2012C1C0 00000000
+Driver Position Modifer Codes
+Stunt Driver
+103009B8 00000000
+Sleepy Driver
+103009B8 00000001
+Foot Driver
+103009B8 0000001A
+No Hands
+103009B8 000000A8
+

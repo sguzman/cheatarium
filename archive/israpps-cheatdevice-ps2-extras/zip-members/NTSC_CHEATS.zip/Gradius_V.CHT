@@ -1,0 +1,30 @@
+"Gradius V"
+Enable Code (Must Be On)
+9010EAF4 0C04653C
+Infinite Lives (Both Players)
+20287C3C 00000000
+Extra Lives (Both Players)
+10287C34 00000001
+Max Infinite Lives
+20287C34 24030063
+Quick Score Gain
+20287A6C 246303E7
+Super Quick Score Gain
+20287A6C 2463270F
+Hella Quick Score Gain
+20287A6C 24637FFF
+Kill 1 Enemy For Max Score (Both Players)
+20287A68 3C0305F5
+20287A6C 3463E0FF
+Invincible (Both Players)
+102C725E 00001000
+Infinite Credits
+202885BC 00000000
+Max Infinite Credits
+202885B0 24030063
+Extra Credits
+102885B0 00000001
+Unlock All Stage Select Levels
+103C2938 0000FFFF
+003C293A 000000FF
+

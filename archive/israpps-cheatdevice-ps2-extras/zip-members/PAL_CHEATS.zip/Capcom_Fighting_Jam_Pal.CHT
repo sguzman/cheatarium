@@ -1,0 +1,28 @@
+"Capcom Fighting Jam Pal"
+(M)
+F02990F8 002990FB
+Player 1 Codes
+Infinite Health
+20342F94 35E835E8
+Infinite Power
+003430A0 000000FF
+Player 2 Codes
+1 Hit Kill
+No Power Gauge
+00343660 00000000
+Player 1 Size Modifier Codes
+R3 to Grow
+E002FFFB 003F39DC
+30400000 00342E98
+30400000 00342E9C
+D03F39DC 0000FFFB
+30400000 00342EA0
+Press R3 To make your character grow
+L3 to Shrink
+E002FFFD 003F39DC
+30400000 00342E9C
+30400000 00342E98
+D03F39DC 0000FFFD
+30400000 00342EA0
+Press L3 To make your character shrink
+

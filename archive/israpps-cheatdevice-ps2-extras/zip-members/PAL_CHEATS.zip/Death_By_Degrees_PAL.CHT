@@ -1,0 +1,285 @@
+"Death By Degrees PAL"
+Mastercode
+901DF54C 0C045CE0
+200C2034 03E00008
+200C2038 3C024120
+2012E16C 0C030800
+PAL2NTSC
+20102818 24120002
+Y FIX 2
+200FFFC0 3C020002
+200FFFC4 0062182F
+200FFFC8 64638000
+200FFFCC FCA30000
+200FFFD0 DE020020
+200FFFD4 03E00008
+20102A90 0C03FFF0
+20102A94 00000000
+Infinite Health
+200C2000 8C610000
+200C2004 AC610004
+Infinite Focus
+200C2008 8C610008
+200C200C AC61000C
+Infinite Air
+200C2010 8C610010
+200C2014 AC610014
+Max Health
+E002A1C0 00539998
+20EDA1DC 00000F00
+20EDA1E0 00000F00
+Max Focus
+E002A1C0 00539998
+20EDA1E4 00000B40
+20EDA1E8 00000B40
+Max Air
+E002A1C0 00539998
+20EDA1EC 00000B40
+20EDA1F0 00000B40
+1-Hit Death (Enemies and Partner)
+2015DBB4 8E2200B4
+End Results Codes
+Max Total Points
+D0539998 0000A1C0
+20EDA204 000F423F
+Max Combo
+D0539998 0000A1C0
+10EDA208 000003E7
+Always 1st Save
+20430E98 24020001
+Always Low Game Time
+D0539998 0000A1C0
+20EDA1C4 00000000
+Difficulty Level
+D0539998 0000A1C0
+00EDA1C8 000000??
+Replace ?? with
+00 = Beginner
+01 = Normal
+02 = Hard
+03 = Expert
+Number Times Played
+D0539998 0000A1C0
+00EDA1C9 000000??
+Replace ?? with
+01 = 1st Times
+02 = 2nd Times
+03 = 3rd Times
+No Continues
+D0539998 0000A1C0
+10EDA1CA 00000000
+Misc Codes
+Quick Level Up
+D0539998 0000A1C0
+10EDA1FC 0000270F
+Infinite Skill Points
+D0539998 0000A1C0
+20EDA200 000F423F
+Disable FMV
+20109C80 8C620000
+D0571642 0000FFF7
+20109C80 24020001
+Unlock Codes (Save & turn off)
+All Menu Options/Extras
+405B0BF4 00030001
+FFFFFFFF 00000000
+Mini-Game Codes
+Always Low Mission Timer
+20468D44 00000000
+Challenge Codes
+Infinite Time
+203EE624 46001046
+203EE8E4 46001046
+Sniper Codes
+Infinite Health (Sniper)
+202548B4 8E8104D0
+202548B8 AE8104D8
+Infinite Health (Partner)
+202548E4 00540821
+202548E8 C420095C
+2025490C 24020064
+20254910 AC22095C
+Never Reload / Infinite Ammo
+20252870 00000000
+Infinite Time (Sniper)
+20251EA0 00000000
+Stingray Codes
+Infinite Damage
+20288428 00000000
+Infinite Battery
+20288944 E60121C4
+Get 1 Green cyrstal Finish level
+20288120 8E422454
+Item Codes
+Have All Health Items
+E002A1C0 00539998
+40EDA238 00060001
+62626262 00000000
+Have All Key Items
+E002A1C0 00539998
+00EDA268 00000001
+40EDA250 00060001
+01010101 00000000
+Have Data Card (Anna Game)
+D0539998 0000A1C0
+00EDA269 00000062
+Have Defibrillator
+D0539998 0000A1C0
+00EDA273 00000062
+Have Gold Coin
+D0539998 0000A1C0
+00EDA274 00000062
+Have Garment Bag & All Costumes (Nina Game)
+E004A1C0 00539998
+00EDA26B 00000001
+20EDA26C 01010101
+10EDA270 00000101
+00EDA272 00000001
+Have All Skills
+E003A1C0 00539998
+00EDEEB4 00000001
+40EDEE84 000C0001
+01010101 00000000
+Have All Finger Prints
+E003A1C0 00539998
+10EDA2AA 0000FFFF
+40EDA2AC 00030001
+FFFFFFFF 00000000
+Have 8 Firearm Slots
+D0539998 0000A1C0
+20EDED90 00000008
+Have 8 Melee Weapon Slots
+D0539998 0000A1C0
+20EDEDD4 00000008
+Infinite-Ammo Firearm Slots
+E002A1C0 00539998
+40EDED98 00080002
+000???00 00000000
+Infinite-Durability Melee Weapon Slots
+E002A1C0 00539998
+40EDEDDC 00080002
+000???00 00000000
+Infinite Weapon Slots Digits ???
+003 = Normal one hand
+083 = Normal two hands
+203 = Infinite one hand
+283 = Infinite two hands
+Weapon Slot Modifier Codes
+Weapon Slot 1
+D0539998 0000A1C0
+00EDED94 000000??
+Weapon Slot 2
+D0539998 0000A1C0
+00EDED9C 000000??
+Weapon Slot 3
+D0539998 0000A1C0
+00EDEDA4 000000??
+Weapon Slot 4
+D0539998 0000A1C0
+00EDEDAC 000000??
+Weapon Slot 5
+D0539998 0000A1C0
+00EDEDB4 000000??
+Weapon Slot 6
+D0539998 0000A1C0
+00EDEDBC 000000??
+Weapon Slot 7
+D0539998 0000A1C0
+00EDEDC4 000000??
+Weapon Slot 8
+D0539998 0000A1C0
+00EDEDCC 000000??
+Weapon Slot Modifier Digits ??
+00 = 9mm Handgun
+01 = 9mm 3rd Handgun
+02 = .44 Magnum
+03 = Stun Pistol
+04 = 9mm Sub-machinegun
+05 = 5.56mm Assault Rifle
+06 = 12-Gauge Shotgun
+07 = 40mm Grenade Launcher
+08 = Railgun
+09 = Hand Grenade
+0A = Stun Grenade
+0B = Suitcase Gun
+0C = 9mm Handgun+
+0D = 9mm 3rb Handgun+
+0E = .44 Magnum+
+0F = Stun Pistol+
+10 = 9mm Sub-machinegun+
+11 = 5.56mm Assault Rifle+
+12 = 12-Gauge Shotgun+
+13 = 40mm Grenade Launcher+
+14 = Railgun+
+15 = Hand Grenade+
+16 = Stun Grenade+
+17 = Suitcase Gun+
+18 = 9mm Handgun (Infinity)
+19 = 9mm 3rb Handgun (Infinity)
+1A = .44 Magnum (Infinity)
+1B = Stun Pistol (Infinity)
+1C = 9mm Sub-machinegun (Infinity)
+1D = 5.56mm Assault Rifle (Infinity)
+1E = 12-Gauge Shotgun (Infinity)
+1F = 40mm Grenade Launcher (Infinity)
+20 = Railgun (Infinity)
+21 = Hand Grenade (Infinity)
+22 = Stun Grenade (Infinity)
+23 = Suitcase Gun (Infinity)
+Melee Weapon Slot Modifier Codes
+Melee Weapon Slot 1
+D0539998 0000A1C0
+00EDEDD8 000000??
+Melee Weapon Slot 2
+D0539998 0000A1C0
+00EDEDE0 000000??
+Melee Weapon Slot 3
+D0539998 0000A1C0
+00EDEDE8 000000??
+Melee Weapon Slot 4
+D0539998 0000A1C0
+00EDEDF0 000000??
+Melee Weapon Slot 5
+D0539998 0000A1C0
+00EDEDF8 000000??
+Melee Weapon Slot 6
+D0539998 0000A1C0
+00EDEE00 000000??
+Melee Weapon Slot 7
+D0539998 0000A1C0
+00EDEE08 000000??
+Melee Weapon Slot 8
+D0539998 0000A1C0
+00EDEE10 000000??
+Melee Weapon Slot Modifier Digits ??
+00 = Katana
+01 = Dotanuki
+02 = Ripper Blade
+03 = Manji Sword
+04 = Tonfa
+05 = Stun Baton
+06 = Throwing Knife
+07 = Needle Knife
+08 = Kunai
+09 = Poison Ampule
+0A = Katana+
+0B = Dotanuki+
+0C = Ripper Blade+
+0D = Manji Sword+
+0E = Tonfa+
+0F = Stun Baton+
+10 = Throwing Knife+
+11 = Needle Knife+
+12 = Kunai+
+13 = Poison Ampule+
+14 = Katana (Infinity)
+15 = Dotanuki (Infinity)
+16 = Ripper Blade (Infinity)
+17 = Manji Sword (Infinity)
+18 = Tonfa (Infinity)
+19 = Stun Baton (Infinity)
+1A = Throwing Knife (Infinity)
+1B = Needle Knife (Infinity)
+1C = Kunai (Infinity)
+1D = Poison Ampule (Infinity)
+

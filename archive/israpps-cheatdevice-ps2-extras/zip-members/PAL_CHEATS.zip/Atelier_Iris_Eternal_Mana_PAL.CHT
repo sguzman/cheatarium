@@ -1,0 +1,2071 @@
+"Atelier Iris Eternal Mana PAL"
+Enable Code
+902A5AF8 0C0A89BA
+201069D4 00000000
+Enable Code ALT 2
+F02A5AF8 002A5AFB
+201069D4 00000000
+Enable Code ALT 3
+0E3C7DF2 1456E7A5
+F02A5AF8 002A5AFB
+201069D4 00000000
+Enable Code ALT 4
+902A5C54 00832021
+201069D4 00000000
+Enable Code ALT 5
+F02A5C54 0000000E
+201069D4 00000000
+H. Joker
+D0e122e0 0000????
+D0e122e4 0000????
+DUMP =
+Select 0001
+L3 0002
+R3 0004
+Start 0008
+Up 0010
+Right 0020
+Down 0040
+Left 0080
+L2 0100
+R2 0200
+L1 0400
+R1 0800
+Triangle 1000
+Circle 2000
+X 4000
+Square 8000
+Joker
+D0DE1642 0000????
+D0DE1742 0000????
+Unlock All Ablitys in Wheel
+20F66AF8 02010B01
+20F66AFC 06050403
+20F66B00 0A090807
+20F66B04 0000FF0B
+Unlock All Characters
+40F63114 00060001
+00000001 00000001
+Character Mod
+Activator (Activates all 6 Character slots)
+20F63128 00000006
+Character Slots 1-6
+20F63110 00000???
+20F63114 00000???
+20F63118 00000???
+20F6311C 00000???
+20F63120 00000???
+20F63124 00000???
+Unlock all bonuses
+10F62E04 00000300
+40F62D70 001E0001
+01010101 00000000
+Unlock all Synthesize
+00F6549F 00000002
+40F654A0 00700001
+02020202 00000000
+Have All Monster Log Collection
+10F6567E 00000202
+40F65680 001E0001
+02020202 00000000
+Money
+20F62E08 000F423F
+-=Elements and Mana Codes=-
+Have Mana Character Codes
+10F65496 00000202
+20F65498 02020202
+10F6549C 00000202
+00F6549E 00000002
+Have/Inf Mana Stones
+40F64B74 00040001
+00090009 00000000
+10F64B88 00000009
+All Mana Items Made
+(Does not give u them)
+40F64828 000F0001
+00090009 00000000
+Have Mana Item Codes
+40F65660 00070001
+02020202 00000000
+10F6567C 00000202
+Have all Elements
+(Gives u them not max)
+40F65488 00030001
+02020202 00000000
+10F65494 00000202
+ALL Element Bins Max
+40F64798 00070001
+00630063 00000000
+Max/Inf All Mana Love/Energy
+40F647B8 000E0002
+00640064 00000000
+Mana Transform
+40F647BC 00050002
+00000001 00000000
+40F64804 00050002
+00000001 00000000
+Mana Unmetamorphosis
+40F647BC 00050002
+00000000 00000000
+40F64804 00050002
+00000000 00000000
+Individal Mana Character Stats
+Uru
+20F647B8 00640064
+SilWest
+20F647C0 00640064
+Nymph
+20F647C8 00640064
+Eital
+20F647D0 00640064
+Plua
+20F647D8 00640064
+Diemia
+20F647E0 00640064
+Popo
+20F647E8 00640064
+Aion
+20F647F0 00640064
+Lupus
+20F647F8 00640064
+Grupt (Uru)
+20F64800 00640064
+Zeilia (Silwest)
+20F64808 00640064
+Flay (Nymph)
+20F64810 00640064
+Paltia (Eital)
+20F64818 00640064
+Fanatos (Plua)
+20F64820 00640064
+-=Party Stats Modifier=-
+Klein Stats
+LV
+00F62E28 00000063
+Basic stats
+Hit Points
+10F62E2A 000003E7
+Mana
+10F62E2C 000003E7
+Max Life
+10F62E2E 000003E7
+Max Mana
+10F62E30 000003E7
+Attack
+10F62E32 000001F4
+Magic
+10F62E34 000001F4
+Defense
+10F62E36 000001F4
+Speed
+10F62E38 000001F4
+Flame Resistance
+10F62E3A 000001F4
+Ice resistance
+10F62E3C 000001F4
+Thunder Resistance
+10F62E3E 000001F4
+Dark Resistance
+10F62E40 000001F4
+Final Stats
+Hit Points
+10F62E42 000003E7
+Magic Points
+10F62E44 000003E7
+Attack
+10F62E46 000001F4
+Magic
+10F62E48 000001F4
+Defense
+10F62E4A 000001F4
+Speed
+10F62E4C 000001F4
+Flame Resistance
+10F62E4E 000001F4
+Ice Resistance
+10F62E50 000001F4
+Thunder Resistance
+10F62E52 000001F4
+Dark Resistance
+10F62E54 000001F4
+Total Exp
+20F62E58 000F4240
+Skill Points
+10F62E84 000003E7
+Lita Stats
+LV
+00F62EA4 00000063
+Basic stats
+Hit Points
+10F62EA6 000003E7
+Mana
+10F62EA8 000003E7
+Max Life
+10F62EAA 000003E7
+Max Mana
+10F62EAC 000003E7
+Attack
+10F62EAE 000001F4
+Magic
+10F62EB0 000001F4
+Defense
+10F62EB2 000001F4
+Speed
+10F62EB4 000001F4
+Flame Resistance
+10F62EB6 000001F4
+Ice resistance
+10F62EB8 000001F4
+Thunder Resistance
+10F62EBA 000001F4
+Dark Resistance
+10F62EBC 000001F4
+Final Stats
+Hit Points
+10F62EBE 000003E7
+Magic Points
+10F62EC0 000003E7
+Attack
+10F62EC2 000001F4
+Magic
+10F62EC4 000001F4
+Defense
+10F62EC6 000001F4
+Speed
+10F62EC8 000001F4
+Flame Resistance
+10F62ECA 000001F4
+Ice Resistance
+10F62ECC 000001F4
+Thunder Resistance
+10F62ECE 000001F4
+Dark Resistance
+10F62ED0 000001F4
+Total Exp
+20F62ED4 000F4240
+Skill Points
+10F62F00 000003E7
+Norn Stats
+LV
+00F62F20 00000063
+Basic stats
+Hit Points
+10F62F22 000003E7
+Mana
+10F62F24 000003E7
+Max Life
+10F62F26 000003E7
+Max Mana
+10F62F28 000003E7
+Attack
+10F62F2A 000001F4
+Magic
+10F62F2C 000001F4
+Defense
+10F62F2E 000001F4
+Speed
+10F62F30 000001F4
+Flame Resistance
+10F62F32 000001F4
+Ice resistance
+10F62F34 000001F4
+Thunder Resistance
+10F62F36 000001F4
+Dark Resistance
+10F62F38 000001F4
+Final Stats
+Hit Points
+10F62F3A 000003E7
+Magic Points
+10F62F3C 000003E7
+Attack
+10F62F3E 000001F4
+Magic
+10F62F40 000001F4
+Defense
+10F62F42 000001F4
+Speed
+10F62F44 000001F4
+Flame Resistance
+10F62F46 000001F4
+Ice Resistance
+10F62F48 000001F4
+Thunder Resistance
+10F62F4A 000001F4
+Dark Resistance
+10F62F4C 000001F4
+Total Exp
+20F62F50 000F4240
+Skill Points
+10F62F7C 000003E7
+Marietta Stats
+LV
+00F62F9C 00000063
+Basic stats
+Hit Points
+10F62F9E 000003E7
+Mana
+10F62FA0 000003E7
+Max Life
+10F62FA2 000003E7
+Max Mana
+10F62FA4 000003E7
+Attack
+10F62FA6 000001F4
+Magic
+10F62FA8 000001F4
+Defense
+10F62FAA 000001F4
+Speed
+10F62FAC 000001F4
+Flame Resistance
+10F62FAE 000001F4
+Ice resistance
+10F62FB0 000001F4
+Thunder Resistance
+10F62FB2 000001F4
+Dark Resistance
+10F62FB4 000001F4
+Final Stats
+Hit Points
+10F62FB6 000003E7
+Magic Points
+10F62FB8 000003E7
+Attack
+10F62FBA 000001F4
+Magic
+10F62FBC 000001F4
+Defense
+10F62FBE 000001F4
+Speed
+10F62FC0 000001F4
+Flame Resistance
+10F62FC2 000001F4
+Ice Resistance
+10F62FC4 000001F4
+Thunder Resistance
+10F62FC6 000001F4
+Dark Resistance
+10F62FC8 000001F4
+Total Exp
+20F62FCC 000F4240
+Skill Points
+10F62FF8 000003E7
+Delsus Stats
+LV
+00F63018 00000063
+Basic stats
+Hit Points
+10F6301A 000003E7
+Mana
+10F6301C 000003E7
+Max Life
+10F6301E 000003E7
+Max Mana
+10F63020 000003E7
+Attack
+10F63022 000001F4
+Magic
+10F63024 000001F4
+Defense
+10F63026 000001F4
+Speed
+10F63028 000001F4
+Flame Resistance
+10F6302A 000001F4
+Ice resistance
+10F6302C 000001F4
+Thunder Resistance
+10F6302E 000001F4
+Dark Resistance
+10F63030 000001F4
+Final Stats
+Hit Points
+10F63032 000003E7
+Magic Points
+10F63034 000003E7
+Attack
+10F63036 000001F4
+Magic
+10F63038 000001F4
+Defense
+10F6303A 000001F4
+Speed
+10F6303C 000001F4
+Flame Resistance
+10F6303E 000001F4
+Ice Resistance
+10F63040 000001F4
+Thunder Resistance
+10F63042 000001F4
+Dark Resistance
+10F63044 000001F4
+Total Exp
+20F63048 000F4240
+Skill Points
+10F63074 000003E7
+Arlin Stats
+LV
+00F63094 00000063
+Basic stats
+Hit Points
+10F63096 000003E7
+Mana
+10F63098 000003E7
+Max Life
+10F6309A 000003E7
+Max Mana
+10F6309C 000003E7
+Attack
+10F6309E 000001F4
+Magic
+10F630A0 000001F4
+Defense
+10F630A2 000001F4
+Speed
+10F630A4 000001F4
+Flame Resistance
+10F630A6 000001F4
+Ice resistance
+10F630A8 000001F4
+Thunder Resistance
+10F630AA 000001F4
+Dark Resistance
+10F630AC 000001F4
+Final Stats
+Hit Points
+10F630AE 000003E7
+Magic Points
+10F630B0 000003E7
+Attack
+10F630B2 000001F4
+Magic
+10F630B4 000001F4
+Defense
+10F630B6 000001F4
+Speed
+10F630B8 000001F4
+Flame Resistance
+10F630BA 000001F4
+Ice Resistance
+10F630BC 000001F4
+Thunder Resistance
+10F630BE 000001F4
+Dark Resistance
+10F630C0 000001F4
+Total Exp
+20F630C4 000F4240
+Skill Points
+10F630F0 000003E7
+-=Skill Mods=-
+Klein Skill mods
+Skill Slot 1
+20F62E5C 00xx00yy
+Skill Slot 2
+20F62E60 00??00??
+Skill Slot 3
+20F62E64 00??00??
+Skill Slot 4
+20F62E68 00??00??
+Skill Slot 5
+20F62E6C 00??00??
+Skill Slot 6
+20F62E70 00??00??
+Skill Slot 7
+20F62E74 00??00??
+Skill Slot 8
+20F62E78 00??00??
+Lita Skill mods
+Skill Slot 1
+20F62ED8 00??00??
+Skill Slot 2
+20F62EDC 00??00??
+Skill Slot 3
+20F62EE0 00??00??
+Skill Slot 4
+20F62EE4 00??00??
+Skill Slot 5
+20F62EE8 00??00??
+Skill Slot 6
+20F62EEC 00??00??
+Skill Slot 7
+20F62EF0 00??00??
+Skill Slot 8
+20F62EF4 00??00??
+Norn Skill mods
+Skill Slot 1
+20F62F54 00??00??
+Skill Slot 2
+20F62F58 00??00??
+Skill Slot 3
+20F62F5C 00??00??
+Skill Slot 4
+20F62F60 00??00??
+Skill Slot 5
+20F62F64 00??00??
+Skill Slot 6
+20F62F68 00??00??
+Skill Slot 7
+20F62F6C 00??00??
+Skill Slot 8
+20F62F70 00??00??
+Marietta Skill mods
+Skill Slot 1
+20F62FD0 00??00??
+Skill Slot 2
+20F62FD4 00??00??
+Skill Slot 3
+20F62FD8 00??00??
+Skill Slot 4
+20F62FDC 00??00??
+Skill Slot 5
+20F62FE0 00??00??
+Skill Slot 6
+20F62FE4 00??00??
+Skill Slot 7
+20F62FE8 00??00??
+Skill Slot 8
+20F62FEC 00??00??
+Delsus Skill mods
+Skill Slot 1
+20F6304C 00??00??
+Skill Slot 2
+20F63050 00??00??
+Skill Slot 3
+20F63054 00??00??
+Skill Slot 4
+20F63058 00??00??
+Skill Slot 5
+20F6305C 00??00??
+Skill Slot 6
+20F63060 00??00??
+Skill Slot 7
+20F63064 00??00??
+Skill Slot 8
+20F63068 00??00??
+Arlin Skill mods
+Skill Slot 1
+20F630C8 00xx00yy
+Skill Slot 2
+20F630CC 00??00??
+Skill Slot 3
+20F630D0 00??00??
+Skill Slot 4
+20F630D4 00??00??
+Skill Slot 5
+20F630D8 00??00??
+Skill Slot 6
+20F630DC 00??00??
+Skill Slot 7
+20F630E0 00??00??
+Skill Slot 8
+20F630E4 00??00??
+??=spent skillpoints (00 to FF)
+equals skill proficiency/level
+??=Skill (Look at bottom of page)
+-=Equipment Mods=-
+Klein Kiesling
+Eqp weapon
+10F62E7C 0000????
+Acy1
+10F62E7E 0000????
+Acy2
+10F62E80 0000????
+Lita Blanchimont
+Eqp weapon
+10F62EF8 0000????
+Acy1
+10F62EFA 0000????
+Acy2
+10F62EFC 0000????
+Norn
+Eqp weapon
+10F62F74 0000????
+Acy1
+10F62F76 0000????
+Acy2
+10F62F78 0000????
+Marietta
+Eqp weapon
+10F62FF0 0000????
+Acy1
+10F62FF2 0000????
+Acy2
+10F62FF4 0000????
+Delsus
+Eqp weapon
+10F6306C 0000????
+Acy1
+10F6306E 0000????
+Acy2
+10F63070 0000????
+Arlin
+Eqp weapon
+10F630E8 0000????
+Acy1
+10F630EA 0000????
+Acy2
+10F630EC 0000????
+-=Items=-
+All Items Code (Main Items)
+40F64868 00C80001
+00090009 00000000
+10F64B88 00000009
+Key Items
+10F64B8A 00000009
+40F64B8C 00150001
+00090009 00000000
+Individual Items
+10F64868 00000009 = Fest Rock
+10F6486A 00000009 = Fest Stone
+10F6486C 00000009 = Silver Legien
+10F6486E 00000009 = Red Legien
+10F64870 00000009 = Gold Legien
+10F64872 00000009 = Comet Stone
+10F64874 00000009 = Pure Water
+10F64876 00000009 = Foul Water
+10F64878 00000009 = Well Water
+10F6487A 00000009 = River Water
+10F6487C 00000009 = Frozen Rain
+10F6487E 00000009 = Fresh Dancing
+10F64880 00000009 = Old Dancing
+10F64882 00000009 = Fresh Smoking
+10F64884 00000009 = Old Smoking
+10F64886 00000009 = Fresh Poison
+10F64888 00000009 = Old Poison
+10F6488A 00000009 = Extreme Poison
+10F6488C 00000009 = Kankari Nuts
+10F6488E 00000009 = Garigari Nuts
+10F64890 00000009 = Red Pepper
+10F64892 00000009 = Green Pepper
+10F64894 00000009 = Lando
+10F64896 00000009 = Sweet Lando
+10F64898 00000009 = Lovely Lando
+10F6489A 00000009 = Twisted Lando
+10F6489C 00000009 = Tingleberry
+10F6489E 00000009 = Stained Glass
+10F648A0 00000009 = Pretty Stained
+10F648A2 00000009 = Glow Stained
+10F648A4 00000009 = Shatter Stained
+10F648A6 00000009 = Log
+10F648A8 00000009 = Big Log
+10F648AA 00000009 = Skinny Log
+10F648AC 00000009 = Magi Grass
+10F648AE 00000009 = Tall Magi Grass
+10F648B0 00000009 = Pinenuts
+10F648B2 00000009 = Old Pinenuts
+10F648B4 00000009 = Unue
+10F648B6 00000009 = Nue
+10F648B8 00000009 = Spoiled Neu
+10F648BA 00000009 = Dunkelhite
+10F648BC 00000009 = Raflesia
+10F648BE 00000009 = Big Pumpking
+10F648C0 00000009 = Hollow Pumpkin
+10F648C2 00000009 = Carrot
+10F648C4 00000009 = Spoiled Carrot
+10F648C6 00000009 = Hard Carrot
+10F648C8 00000009 = Kavo Potato
+10F648CA 00000009 = Belgrade Potato
+10F648CC 00000009 = Joker Fish
+10F648CE 00000009 = Fish Island
+10F648D0 00000009 = Devil Fish
+10F648D2 00000009 = Mountain Fish
+10F648D4 00000009 = Palm Fish
+10F648D6 00000009 = Aqua Snowbug
+10F648D8 00000009 = Snowbug
+10F648DA 00000009 = Palm Snowbug
+10F648DC 00000009 = Puniball
+10F648DE 00000009 = Faux Puniball
+10F648E0 00000009 = Wild Meat
+10F648E2 00000009 = Spoiled Meat
+10F648E4 00000009 = Animal Paw
+10F648E6 00000009 = Baji Poison
+10F648E8 00000009 = Baji Serum
+10F648EA 00000009 = Pikohammer
+10F648EC 00000009 = Shifty Eye
+10F648EE 00000009 = Cat Eye
+10F648F0 00000009 = Phoenix Quill
+10F648F2 00000009 = Phoenix Tail
+10F648F4 00000009 = Crank Snake
+10F648F6 00000009 = Love Poems
+10F648F8 00000009 = Hit List
+10F648FA 00000009 = Swimsuit
+10F648FC 00000009 = Scandal Bikini
+10F648FE 00000009 = Sexy Bikini
+10F64900 00000009 = Red Pants
+10F64902 00000009 = Passion Pants
+10F64904 00000009 = Dragon Tongue
+10F64906 00000009 = Dragon Horn
+10F64908 00000009 = Demon Ring
+10F6490A 00000009 = Astral Sphere
+10F6490C 00000009 = Infinite Wings
+10F6490E 00000009 = Spice Powder
+10F64910 00000009 = Green Powder
+10F64912 00000009 = Red Powder
+10F64914 00000009 = Wax
+10F64916 00000009 = Salt
+10F64918 00000009 = Flour
+10F6491A 00000009 = Goat Milk
+10F6491C 00000009 = Milk
+10F6491E 00000009 = Canola Oil
+10F64920 00000009 = Machine Oil
+10F64922 00000009 = Castor Oil
+10F64924 00000009 = Ale
+10F64926 00000009 = Red Wine
+10F64928 00000009 = Rock Sugar
+10F6492A 00000009 = Brown Sugar
+10F6492C 00000009 = Honey
+10F6492E 00000009 = Maple Syrup
+10F64930 00000009 = Flax Cloth
+10F64932 00000009 = Cotton Cloth
+10F64934 00000009 = Silk
+10F64936 00000009 = String
+10F64938 00000009 = Thin Metal Rod
+10F6493A 00000009 = Thick Metal Rod
+10F6493C 00000009 = Gold Metal Rod
+10F6493E 00000009 = Small Gear
+10F64940 00000009 = Tiny Gear
+10F64942 00000009 = Invisible Gear
+10F64944 00000009 = Large Gear
+10F64946 00000009 = Metallic Gear
+10F64948 00000009 = Gear Sans-Gears
+10F6494A 00000009 = Golden Gear
+10F6494C 00000009 = Broken Handle
+10F6494E 00000009 = Gold Handle
+10F64950 00000009 = Gold Cog
+10F64952 00000009 = Pendelock
+10F64954 00000009 = Mini Pendelock
+10F64956 00000009 = Glowgrass
+10F64958 00000009 = Dry Glowgrass
+10F6495A 00000009 = Sweet Glowgrass
+10F6495C 00000009 = Moust Glowgrass
+10F6495E 00000009 = Crystalite
+10F64960 00000009 = Crystaleavy
+10F64962 00000009 = Star Piece
+10F64964 00000009 = Sylph's Kiss
+10F64966 00000009 = Groovecube
+10F64968 00000009 = Cueparts
+10F6496A 00000009 = Prismoon
+10F6496C 00000009 = Star Prism
+10F6496E 00000009 = Spirit Protect
+10F64970 00000009 = Spirit Prary
+10F64972 00000009 = Mana Moebius
+10F64974 00000009 = Magic In 7 Days
+10F64976 00000009 = Me, Myself & Bomb
+10F64978 00000009 = Master Of Magic
+10F6497A 00000009 = Strange Dict
+10F6497C 00000009 = Peach Cocktail
+10F6497E 00000009 = Lando Sour
+10F64980 00000009 = Karikari Liquor
+10F64982 00000009 = Garigari Liquor
+10F64984 00000009 = Stardust
+10F64986 00000009 = Tinglecannon
+10F64988 00000009 = Hell Soju
+10F6498A 00000009 = Herbal Elixer
+10F6498C 00000009 = Nectar
+10F6498E 00000009 = God's Dance
+10F64990 00000009 = Dragon Slayer
+10F64992 00000009 = Demon Slayer
+10F64994 00000009 = Puni Slayer
+10F64996 00000009 = Toma Sake
+10F64998 00000009 = Nekotreat
+10F6499A 00000009 = Hot Nekotreat
+10F6499C 00000009 = Nekotreat EX
+10F6499E 00000009 = Powder
+10F649A0 00000009 = Red Sashimi
+10F649A2 00000009 = White Sashimi
+10F649A4 00000009 = Sashimi
+10F649A6 00000009 = Fresh Sashimi
+10F649A8 00000009 = DeviledSashimi
+10F649AA 00000009 = Grilled Fungo
+10F649AC 00000009 = Charred Fungo
+10F649AE 00000009 = Seuteed Fungo
+10F649B0 00000009 = Aistral Saute
+10F649B2 00000009 = Manly Fungo
+10F649B4 00000009 = Meuniere
+10F649B6 00000009 = Jaja Bowl
+10F649B8 00000009 = Bitter Steak
+10F649BA 00000009 = Veggie Patty
+10F649BC 00000009 = Eyescargo
+10F649BE 00000009 = Dragon Tongue
+10F649C0 00000009 = The Last Supper
+10F649C2 00000009 = Purgaroni
+10F649C4 00000009 = Shangri-La
+10F649C6 00000009 = Chubby Bunny
+10F649C8 00000009 = Moon Star
+10F649CA 00000009 = Eidaltone
+10F649CC 00000009 = Bread Crumbs
+10F649CE 00000009 = Baking Powder
+10F649D0 00000009 = Secret Ingredient
+10F649D2 00000009 = Fluffy Roll
+10F649D4 00000009 = Poofy Bread
+10F649D6 00000009 = Baked Pie
+10F649D8 00000009 = Fruit Pie
+10F649DA 00000009 = Blaire Special
+10F649DC 00000009 = Bun Ala Fran
+10F649DE 00000009 = Teddybear Roll
+10F649E0 00000009 = Rosie Ann Bun A
+10F649E2 00000009 = Rosie Ann Bun B
+10F649E4 00000009 = Rosie Ann Bun C
+10F649E6 00000009 = Rosie Ann Bun D
+10F649E8 00000009 = Rosie Ann Bun E
+10F649EA 00000009 = Rosie Ann Bun F
+10F649EC 00000009 = Rosie Ann Bun G
+10F649EE 00000009 = Rosie Ann Bun H
+10F649F0 00000009 = Cookie Sandwich
+10F649F2 00000009 = White Love
+10F649F4 00000009 = Leheruun Cream
+10F649F6 00000009 = Yogurt Pocket
+10F649F8 00000009 = Amalgam Candy
+10F649FA 00000009 = Golden Sugar
+10F649FC 00000009 = Caramel Cube
+10F649FE 00000009 = Sour Block
+10F64A00 00000009 = Salty Frieds
+10F64A02 00000009 = Twister Candy
+10F64A04 00000009 = Dog Candy
+10F64A06 00000009 = Animal Crackers
+10F64A08 00000009 = Astral Crackers
+10F64A0A 00000009 = Cheesecake
+10F64A0C 00000009 = Berry Mousse
+10F64A0E 00000009 = Bavarian Banana
+10F64A10 00000009 = Pumpkin Tart
+10F64A12 00000009 = Tiramisu
+10F64A14 00000009 = Chocolate Cake
+10F64A16 00000009 = Unipuni Pudding
+10F64A18 00000009 = Wedding Cake
+10F64A1A 00000009 = Snickerdoodle
+10F64A1C 00000009 = Sweet House
+10F64A1E 00000009 = Dead Bread
+10F64A20 00000009 = Rock Bread
+10F64A22 00000009 = Smash Bread
+10F64A24 00000009 = 1 2 AlarmSandwitch
+10F64A26 00000009 = Toasted Bagel
+10F64A28 00000009 = Burnt Bagel
+10F64A2A 00000009 = Bread Pants
+10F64A2C 00000009 = Puddin Cap
+10F64A2E 00000009 = Flute Candy
+10F64A30 00000009 = Drum Crackers
+10F64A32 00000009 = Leftovers
+10F64A34 00000009 = Medicine
+10F64A36 00000009 = Blue Bull
+10F64A38 00000009 = Farewell, love
+10F64A3A 00000009 = Life Pills
+10F64A3C 00000009 = Tranquilizer
+10F64A3E 00000009 = Farewell, Pain
+10F64A40 00000009 = Crazy Bull !
+10F64A42 00000009 = Ingredient X
+10F64A44 00000009 = Tragic Bun
+10F64A46 00000009 = Lumpy Bun
+10F64A48 00000009 = Average Bun
+10F64A4A 00000009 = Penultimate Roll
+10F64A4C 00000009 = Bomb Armor
+10F64A4E 00000009 = Priestess Tiara
+10F64A50 00000009 = Ring of Love
+10F64A52 00000009 = Locket of Love
+10F64A54 00000009 = Locket of Wishes
+10F64A56 00000009 = Don's Clothes
+10F64A58 00000009 = Magoo Clots
+10F64A5A 00000009 = Gogo Suit
+10F64A5C 00000009 = Silver Pants
+10F64A5E 00000009 = Fairy Clothes
+10F64A60 00000009 = Fairy Hat
+10F64A62 00000009 = War Tuxedo
+10F64A64 00000009 = Sexy Robe
+10F64A66 00000009 = Bunny Ears
+10F64A68 00000009 = Paw Gloves
+10F64A6A 00000009 = Bunny Suit
+10F64A6C 00000009 = Blue Swimsuit
+10F64A6E 00000009 = Alluring Bikini
+10F64A70 00000009 = Erotic Bikini
+10F64A72 00000009 = Empty Box
+10F64A74 00000009 = Suxital
+10F64A76 00000009 = BlowMaster
+10F64A78 00000009 = Paint
+10F64A7A 00000009 = Vampire's Kiss
+10F64A7C 00000009 = 6 String Accoustic
+10F64A7E 00000009 = Imitation Sitar
+10F64A80 00000009 = Virum Horn
+10F64A82 00000009 = World Atlas
+10F64A84 00000009 = Map Of The Stars
+10F64A86 00000009 = Vigilant Eye
+10F64A88 00000009 = Stretch/Stretchy
+10F64A8A 00000009 = Slingshot
+10F64A8C 00000009 = Magic Paper
+10F64A8E 00000009 = Liquid Emptiness
+10F64A90 00000009 = Angel Quill Pen
+10F64A92 00000009 = Devil Quill Pen
+10F64A94 00000009 = Nonbouncy Ball
+10F64A96 00000009 = Violet Fungus
+10F64A98 00000009 = Globe
+10F64A9A 00000009 = Astral Globe
+10F64A9C 00000009 = Under Globe
+10F64A9E 00000009 = Felios Globe
+10F64AA0 00000009 = Bomb
+10F64AA2 00000009 = Icy Bomb
+10F64AA4 00000009 = Big Bomb
+10F64AA6 00000009 = Spike Bomb
+10F64AA8 00000009 = Spike Bomber
+10F64AAA 00000009 = Hyper Spike
+10F64AAC 00000009 = Micro Craft
+10F64AAE 00000009 = Mini Craft
+10F64AB0 00000009 = Nano Craft
+10F64AB2 00000009 = Craft
+10F64AB4 00000009 = Deka Craft
+10F64AB6 00000009 = Mega Craft
+10F64AB8 00000009 = Giga Craft
+10F64ABA 00000009 = Tara Craft
+10F64ABC 00000009 = Extra Craft
+10F64ABE 00000009 = Crupt
+10F64AC0 00000009 = Rocket Flame
+10F64AC2 00000009 = Milk Scope
+10F64AC4 00000009 = Milk Bazooka
+10F64AC6 00000009 = Comet Jewel
+10F64AC8 00000009 = Metal Pipe
+10F64ACA 00000009 = Magic Pipe
+10F64ACC 00000009 = Rainbow Disk
+10F64ACE 00000009 = Spiteful Stone
+10F64AD0 00000009 = Moebius Bolt
+10F64AD2 00000009 = Magnifying Prism
+10F64AD4 00000009 = Un-Microfier
+10F64AD6 00000009 = Organite
+10F64AD8 00000009 = Annual Gear
+10F64ADA 00000009 = Twilight Board
+10F64ADC 00000009 = Bio Frame
+10F64ADE 00000009 = Klein's Cane
+10F64AE0 00000009 = Wing Staff
+10F64AE2 00000009 = Iron Mace
+10F64AE4 00000009 = Battle Mace
+10F64AE6 00000009 = Heavy Mace
+10F64AE8 00000009 = Fire Cane
+10F64AEA 00000009 = Blizzard Cane
+10F64AEC 00000009 = Lightning Cane
+10F64AEE 00000009 = Fairy Cane
+10F64AF0 00000009 = Hulking Smasher
+10F64AF2 00000009 = Legendary Cane
+10F64AF4 00000009 = Wisdom Cane
+10F64AF6 00000009 = Astral Cane
+10F64AF8 00000009 = Prsim Staff
+10F64AFA 00000009 = Mute Staff
+10F64AFC 00000009 = Divine Cane
+10F64AFE 00000009 = Zeldalia's cane
+10F64B00 00000009 = Claw
+10F64B02 00000009 = Sistus
+10F64B04 00000009 = Eagle Gauntlet
+10F64B06 00000009 = Knuckle Blade
+10F64B08 00000009 = Fairy Claw
+10F64B0A 00000009 = Dragon Claw
+10F64B0C 00000009 = Crystal Claw
+10F64B0E 00000009 = Astral Gauntlet
+10F64B10 00000009 = Zagenhend
+10F64B12 00000009 = Ebony Claw
+10F64B14 00000009 = Whip Sword
+10F64B16 00000009 = Long Sword
+10F64B18 00000009 = Falcutta
+10F64B1A 00000009 = Robin's Sword
+10F64B1C 00000009 = Poison Blade
+10F64B1E 00000009 = Claymore
+10F64B20 00000009 = Fairy Blade
+10F64B22 00000009 = Gilded Sword
+10F64B24 00000009 = Demon Horn
+10F64B26 00000009 = Flamberg
+10F64B28 00000009 = Phantom Blade
+10F64B2A 00000009 = Para Sword
+10F64B2C 00000009 = Angel Blade
+10F64B2E 00000009 = Dragon Slayer
+10F64B30 00000009 = Devil Sword Gram
+10F64B32 00000009 = Dilvine
+10F64B34 00000009 = Eden Blade
+10F64B36 00000009 = Bow Gun
+10F64B38 00000009 = Crossbow
+10F64B3A 00000009 = Heavy Bow
+10F64B3C 00000009 = Edge Cast
+10F64B3E 00000009 = Catapult
+10F64B40 00000009 = Devil Bow
+10F64B42 00000009 = Flame Bow
+10F64B44 00000009 = Galgazit Bow
+10F64B46 00000009 = Fairy Bracer
+10F64B48 00000009 = Siglis Breath
+10F64B4A 00000009 = Red Bracer
+10F64B4C 00000009 = Blue Bracer
+10F64B4E 00000009 = Speedstar
+10F64B50 00000009 = Soul Ring
+10F64B52 00000009 = Buffer Ring
+10F64B54 00000009 = Zeilia Ring
+10F64B56 00000009 = Sylvan Ring
+10F64B58 00000009 = Damn Ring
+10F64B5A 00000009 = Mana Booster
+10F64B5C 00000009 = Ankh
+10F64B5E 00000009 = Magic Ankh
+10F64B60 00000009 = Warlord Support
+10F64B62 00000009 = Ice Orb
+10F64B64 00000009 = Lightning Orb
+10F64B66 00000009 = Devil's Eye
+10F64B68 00000009 = Feather Charm
+10F64B6A 00000009 = Angel Feather
+10F64B6C 00000009 = Sorcerer Support
+10F64B6E 00000009 = Dragon Fangs
+10F64B70 00000009 = Ancient Mask
+10F64B72 00000009 = Evil Sigil
+10F64B74 00000009 = Dark Mana
+10F64B76 00000009 = Black Mana
+10F64B78 00000009 = Red Mana
+10F64B7A 00000009 = Yellow Mana
+10F64B7C 00000009 = Blue Mana
+10F64B7E 00000009 = Green Mana
+10F64B80 00000009 = Glowing Mana
+10F64B82 00000009 = Silver Mana
+10F64B84 00000009 = Gold Mana
+10F64B86 00000009 = Jade Mana
+10F64B88 00000009 = Crimson Mana
+Key Items Individual
+10F64B8A 00000009 = Mana Crystal
+10F64B8C 00000009 = Broken Grass
+10F64B8E 00000009 = Visa
+10F64B90 00000009 = Daphne's Book
+10F64B92 00000009 = Super Puri Ball
+10F64B94 00000009 = Flame Sphere
+10F64B96 00000009 = Ore
+10F64B98 00000009 = Twilight Mirror
+10F64B9A 00000009 = Dawn Mirrow
+10F64B9C 00000009 = Dragon Hall Key
+10F64B9E 00000009 = Gust Sphere
+10F64BA0 00000009 = Primal Gem
+10F64BA2 00000009 = Ring Of Iris
+10F64BA4 00000009 = Aroma Material
+10F64BA6 00000009 = Silka Doll
+10F64BA8 00000009 = Pyramod
+10F64BAA 00000009 = Gurgu's Cane
+10F64BAC 00000009 = Reptile Egg
+10F64BAE 00000009 = Ruby Prism
+10F64BB0 00000009 = Treasure Map?
+10F64BB2 00000009 = Treasure Map
+10F64BB4 00000009 = Picture Diary
+10F64BB6 00000009 = Kitchet Knife
+10F64BB8 00000009 = Chinzu Knife
+10F64BBA 00000009 = Package
+10F64BBC 00000009 = Fresh Milk
+10F64BBE 00000009 = Sushi Platter
+10F64BC0 00000009 = Herb Cocktail
+10F64BC2 00000009 = Sphere Of Life
+10F64BC4 00000009 = Old Painting
+10F64BC6 00000009 = White Flower
+10F64BC8 00000009 = Arcose Metal
+10F64BCA 00000009 = Tingleberry
+10F64BCC 00000009 = Villa's Candy
+10F64BCE 00000009 = Veola's Panty
+10F64BD0 00000009 = Veola's Thong
+10F64BD2 00000009 = Veloa's Lingerie
+10F64BD4 00000009 = Blaire's Panty
+10F64BD6 00000009 = Blaire's Thong
+10F64BD8 00000009 = Blaire's Silk Panty
+10F64BDA 00000009 = Costume Jacket
+10F64BDC 00000009 = Costume Pants
+10F64BDE 00000009 = Heavy Metal
+-=Have Crystals=-
+Slot 1
+10F65250 0000????
+10F65252 0000????
+10F65254 0000????
+Slot 2
+10F65256 0000????
+10F65258 0000????
+10F6525A 0000????
+Slot 3
+10F6525C 0000????
+10F6525E 0000????
+10F65260 0000????
+Slot 4
+10F65262 0000????
+10F65264 0000????
+10F65266 0000????
+Slot 5
+10F65268 0000????
+10F6526A 0000????
+10F6526C 0000????
+Slot 6
+10F6526E 0000????
+10F65270 0000????
+10F65272 0000????
+Slot 7
+10F65274 0000????
+10F65276 0000????
+10F65278 0000????
+Slot 8
+10F6527A 0000????
+10F6527C 0000????
+10F6527E 0000????
+Slot 9
+10F65280 0000????
+10F65282 0000????
+10F65284 0000????
+Slot 10
+10F65286 0000????
+10F65288 0000????
+10F6528A 0000????
+Slot 11
+10F6528C 0000????
+10F6528E 0000????
+10F65290 0000????
+Slot 12
+10F65292 0000????
+10F65294 0000????
+10F65296 0000????
+Slot 13
+10F65298 0000????
+10F6529A 0000????
+10F6529C 0000????
+Slot 14
+10F6529E 0000????
+10F652A0 0000????
+10F652A2 0000????
+Slot 15
+10F652A4 0000????
+10F652A6 0000????
+10F652A8 0000????
+Slot 16
+10F652AA 0000????
+10F652AC 0000????
+10F652AE 0000????
+Slot 17
+10F652B0 0000????
+10F652B2 0000????
+10F652B4 0000????
+Slot 18
+10F652B6 0000????
+10F652B8 0000????
+10F652BA 0000????
+Slot 19
+10F652BC 0000????
+10F652BE 0000????
+10F652C0 0000????
+Slot 20
+10F652C2 0000????
+10F652C4 0000????
+10F652C6 0000????
+Slot 21
+10F652C8 0000????
+10F652CA 0000????
+10F652CC 0000????
+Slot 22
+10F652CE 0000????
+10F652D0 0000????
+10F652D2 0000????
+Slot 24
+10F652D4 0000????
+10F652D6 0000????
+10F652D8 0000????
+Slot 25
+10F652DA 0000????
+10F652DC 0000????
+10F652DE 0000????
+Slot 26
+10F652E0 0000????
+10F652E2 0000????
+10F652E4 0000????
+Slot 27
+10F652E6 0000????
+10F652E8 0000????
+10F652EA 0000????
+Slot 28
+10F652EC 0000????
+10F652EE 0000????
+10F652F0 0000????
+Slot 29
+10F652F2 0000????
+10F652F4 0000????
+10F652F6 0000????
+Slot 30
+10F652F8 0000????
+10F652FA 0000????
+10F652FC 0000????
+Slot 31
+10F652FE 0000????
+10F65300 0000????
+10F65302 0000????
+Slot 32
+10F65304 0000????
+10F65306 0000????
+10F65308 0000????
+Slot 33
+10F6530A 0000????
+10F6530C 0000????
+10F6530E 0000????
+Slot 34
+10F65310 0000????
+10F65312 0000????
+10F65314 0000????
+Slot 35
+10F65316 0000????
+10F65318 0000????
+10F6531A 0000????
+Slot 36
+10F6531C 0000????
+10F6531E 0000????
+10F65320 0000????
+Slot 37
+10F65322 0000????
+10F65324 0000????
+10F65326 0000????
+Slot 38
+10F65328 0000????
+10F6532A 0000????
+10F6532C 0000????
+Slot 39
+10F6532E 0000????
+10F65330 0000????
+10F65332 0000????
+Slot 40
+10F65334 0000????
+10F65336 0000????
+10F65338 0000????
+Slot 41
+10F6533A 0000????
+10F6533C 0000????
+10F6533E 0000????
+Slot 42
+10F65340 0000????
+10F65342 0000????
+10F65344 0000????
+Slot 43
+10F65346 0000????
+10F65348 0000????
+10F6534A 0000????
+Slot 44
+10F6534C 0000????
+10F6534E 0000????
+10F65350 0000????
+Slot 45
+10F65352 0000????
+10F65354 0000????
+10F65356 0000????
+Slot 46
+10F65358 0000????
+10F6535A 0000????
+10F6535C 0000????
+Slot 47
+10F6535E 0000????
+10F65360 0000????
+10F65362 0000????
+Slot 48
+10F65364 0000????
+10F65366 0000????
+10F65368 0000????
+Slot 49
+10F6536A 0000????
+10F6536C 0000????
+10F6536E 0000????
+Slot 50
+10F65370 0000????
+10F65372 0000????
+10F65374 0000????
+Slot 51
+10F65376 0000????
+10F65378 0000????
+10F6537A 0000????
+Slot 52
+10F6537C 0000????
+10F6537E 0000????
+10F65380 0000????
+Slot 53
+10F65382 0000????
+10F65384 0000????
+10F65386 0000????
+Slot 54
+10F65388 0000????
+10F6538A 0000????
+10F6538C 0000????
+Slot 55
+10F6538E 0000????
+10F65390 0000????
+10F65392 0000????
+Slot 56
+10F65394 0000????
+10F65396 0000????
+10F65398 0000????
+Slot 57
+10F6539A 0000????
+10F6539C 0000????
+10F6539E 0000????
+Slot 58
+10F653A0 0000????
+10F653A2 0000????
+10F653A4 0000????
+Slot 59
+10F653A6 0000????
+10F653A8 0000????
+10F653AA 0000????
+Slot 60
+10F653AC 0000????
+10F653AE 0000????
+10F653B0 0000????
+Slot 61
+10F653B2 0000????
+10F653B4 0000????
+10F653B6 0000????
+Slot 62
+10F653B8 0000????
+10F653BA 0000????
+10F653BC 0000????
+Slot 63
+10F653BE 0000????
+10F653C0 0000????
+10F653C2 0000????
+Slot 64
+10F653C4 0000????
+10F653C6 0000????
+10F653C8 0000????
+Skill Digits
+Klein Skills
+0000 = Mace ATK
+0001 = Delay (always maxed)
+0002 = Wide Item
+0003 = Pass Item
+0004 = Ele Extract
+0005 = Living Item
+0006 = Power Item
+0007 = Magic Resist
+Lita Skills
+0008 = Claw ATK
+0009 = Force Blast
+000A = Jump Kick
+000B = Hyper K. B.
+000C = Stone Blast
+000D = Fast Attack
+000E = Dodge
+000F = Pale Wing(maxed)
+Norn Skills
+0010 = Magical Staff
+0011 = Illusion
+0012 = Telekinesis
+0013 = Turn 2 candy
+0014 = Shrink (L)
+0015 = Sleep
+0016 = Magic Shield
+0017 = Magic Resist
+Marietta Skills
+0018 = Sword Attack
+0019 = Halberd
+001A = Harken
+001B = DimenExtract
+001C = Brave
+001D = Healing
+001E = Thunder God
+001F = Courage
+Delsus Skills
+0020 = Cross Bow
+0021 = First Shot
+0022 = Spirit Blast
+0023 = Dark Arrow
+0024 = Flare Shot
+0025 = Power Shot
+0026 = Feint Shot
+0027 = Counter
+Arlin Skills
+0028 = Sword Atk
+0029 = PAR Strike
+002A = Bulls-Eye(maxed)
+002B = Mana Strike
+002C = Double
+002D = Berserker
+002E = Fast Attack
+002F = Blocking
+Enemy Skills
+0030 = Puni Attack
+0031 - 0036 = Puni Strike
+0037 = Hyper Charge
+0038 = Puni Strike
+0039 = Puni Strike
+003A = Hyper Charge
+003B = Puni Ice Drop
+003C - 003E = Puni Strike
+003F = Head Slam
+0040 = Puni Strike
+0041 = Head Slam
+0042 = Head Slam
+0043 - 0049 = Puni Strike
+004A = Giant Puni
+004B - 0052 = Puni Strike
+0053 = Giant Puni
+0054 - 005A = Puni Strike
+0055 = Puni Strike
+005B - 0060 = Head Slam
+0061 = Flaming Fangs
+0062 = Puni Strike
+0063 = Puni Strike
+0064 = Hide
+0065 = Puni Strike
+0066 = Puni Strike
+0067 = Null Flicker
+0068 = Puni Strike
+0069 = Puni Strike
+006A = Einzel Fan
+006B = Puni Strike
+006C = Puni Strike
+006D = Slap (has points
+006E = Puni Strike
+006F = Puni Strike
+0070 = Einzel Fan
+0071 = Puni Strike
+0072 = Null Flicker
+00F8 = Master Guard
+00F9 = Shadow Edge
+00FA = Courage
+00FB = Air Slash
+00FC = Evacuation
+00FD = Telekinesis
+00FE = Stun Cloud
+00FF = Void Status ATK
+0100 = Force Blast
+0101 = Evacuation
+0102 = Fast Attack
+0103 = Flair Shot
+0104 = Reinforcments
+0105 = Shodow Edge
+0106 = Magic Resist
+0107 = Black Flame
+0108 = Infinite mana
+0109 = MetorStrike
+010A = Shurel Edge
+010B = Auto Cure
+010C = Mana Stike
+010D = Reinforcments
+010E = Null Sphere
+010F = Healing
+0110 = Triple-Blede Axe
+0111 = Absorb Ice
+0112 = Illusion
+0113 = Divine Wind Slash
+0114 = Spark
+0115 = Blocking
+0116 = GunShot
+0117 = Dragon Apocalypse
+0118 = Thunder God
+0119 = Scratch
+011A = Shadow Edge
+011B = Telekinesis
+011C = For Honar
+011D = Zwei Zecksclaw
+011E = (Blank)
+011F = Energy Drain
+0120 = For Justice !
+0121 = Cross bow
+0122 = Jaded Sword
+0123 = Zwei Zecksclaw
+0124 = Shrink (L)
+0125 = Sky Dragon Rage
+0126 = Mighty Fangs
+0127 = (Blank)
+0128 = Vampire Bite
+0129 = Alkavanas Glory
+012A = Firsy Shor
+012B = Blast
+012C = Dragon Division Wave
+012D = Sleep
+012E = Perl IceCream
+012F = Dragon Overlord Slash
+0130 = (Blank)
+0131 = Zone Spiral
+0132 = Brave Song
+0133 = Dark Arrow
+0134 = Energy Drain
+0135 = For Justice !
+0136 = Magic Resist
+0137 = Sky Angel
+0138 = Divine Glowing Thunder Shot
+0139 = (Blank)
+013A = Force Circle
+013B = Guard Neun
+013C = Power Shet
+013D = Ice Vail
+013E = Sky Dragon Evil Bane
+013F = Sword Atk
+0140 = Reasonms Requiem
+0141 = For Alkavana !
+0142 = (Blank)
+0143 = NightMare
+0144 = Ether Light
+0145 = Counter
+0146 = Curse Spiral
+0147 = Sky Angel
+0148 = Sword ATK
+0149 = Ice Rain
+014A = Sky Dragon Evil Bane
+014B = (Blank)
+014C = Cracking Mace
+014D = May Rain
+014E = Sword ATK
+014F = Face !
+0150 = May Rain
+0151 = Harken
+0152 = Mace ATK
+0153 = Dreis Lunch
+0154 = (Blank)
+0155 = Master Guard
+0156 = Mana ATK
+0157 = Mana Strike
+0158 = Paralyze Bite
+0159 = pass item
+015A = Dimen Extract
+015B = Pass Item
+015C = Ether Light
+015D = (Blank)
+015E = Mace ATK
+015F = (Blank)
+0160 = (Blank)
+FFFE = Head Toss
+FFFF = ????????
+0161 - FFFD = Untested
+0073 - 00F7= Untested
+Equipment Mode Digits
+0000 = Klein's Cane
+0001 = Wing Staff
+0002 = Iron Mace
+0003 = Battle Mace
+0004 = Heavy Mace
+0005 = Fire Cane
+0006 = Blizzard Cane
+0007 = Lightning Cane
+0009 = Hulking Smasher
+000A = Legendary Cane
+000B = Wisdom Cane
+000C = Astral Cane
+000D = Prism Staff
+000E = Mute Staff
+000F = Divine Cane
+0010 = Zeldalia's Cane
+0011 = Claw
+0012 = Sistus
+0013 = Eagle Gauntlet
+0014 = Knuckle Blade
+0015 = Fairy Claw
+0016 = Dragon Claw
+0017 = Crystal Claw
+0018 = Astral Gauntlet
+0019 = Zagenhend
+001A = Ebony Claw
+001B = Whip Sword
+001C = Long Sword
+001D = Falcutta
+001E = Robins Sword
+001F = Poison Blade
+0020 = Claymore
+0021 = Fairy Blade
+0022 = Gilded Sword
+0023 = Demon Horn
+0024 = Flamberg
+0025 = Phantom Blade
+0026 = Para Sword
+0027 = Angel Blade
+0028 = Dragon Slayer
+0029 = Devil Sword Gram
+002A = Dilvine
+002B = Eden Blade
+002C = Bow Gun
+002D = Crossbow
+002E = Heavy Bow
+002F = Edge Cast
+0030 = Catapult
+0031 = Devil Bow
+0032 = Flame Bow
+0033 = Galgazit Bow
+0034 = Offensive Bun
+0035 = Offensive Roll
+0036 = Hute's Favorite
+0037 = Toasted Bagel
+0038 = Burnt Bagel
+0039 = Fairy Bracer
+003A = Siglis Breath
+003B = Red Bracer
+003C = Blue Bracer
+003D = Speedster
+003E = Soul Ring
+003F = Buffer Ring
+0040 = Zeilia Ring
+0041 = Sylvan Ring
+0042 = Damn Ring
+0043 = Mana Boost
+0044 = Ankh
+0045 = Magic Ankh
+0046 = Warlord Support
+0047 = Ice Orb
+0048 = Lightninh Orb
+0049 = Devils Eye
+004A = Feather Charm
+004B = Angel Feather
+004C = Sorcerer Support
+004D = Dragon Fangs
+004E = Ancient Mask
+004F = Evil Sigil
+0050 = Ration Bun
+0051 = Ration Snack
+0052 = Amel
+0053 = For Lita 2
+0054 = For Klein
+0055 = Pendant
+0056 = Pendant 2
+0057 = Don's Clothes
+0058 = Clothes
+0059 = Stage Costume
+005A = Outfit For Lita
+005B = Fairy Clothes
+005C = Fairy Clothes 2
+005D = War Tuxedo
+005E = Fairy Clothes
+005F = Bunny Ears
+0060 = Paw Gloves
+0061 = Bunny suit
+0062 = Fairy Clothes
+0063 = Veolas Swimwear
+0064 = Veola Brand
+0065 = Chronolex
+0066 = Gurgus Cane
+0067 = Nothing
+0068 = Nothing
+xx=
+00: = Puni
+01: = Mini Puni
+02: = Giant Puni
+03: = Ice Puni
+04: = Red Puni
+05: = Golden Puni
+06: = Faux Puni
+07: = Invisible Puni
+08: = Mountain Pig
+09: = Baby Pig
+0a: = Sr. Mountain Pig
+0b: = Invisible Pig
+0c: = Wolf
+0d: = Cerberus
+0e: = Wolf Leader
+0f: = Supreme Wolf
+10: = Falcon Hawk
+11: = Vulture
+12: = Roc
+13: = Sun Eagle
+14: = Mandragora
+15: = Vine Trap
+16: = Fly Trapper
+17: = Triffid
+18: = Wood Golem
+19: = Stone Golem
+1a: = Sentry
+1b: = Salamander
+1c: = Basilisk
+1d: = Frozard
+1e: = Totem
+1f: = Totemite
+20: = Witch
+21: = Ghost
+22: = Lantern Jack
+23: = Phantom
+24: = Master Puni
+25: = Master Pig
+26: = Brownie
+27: = Assassin Doll
+28: = Jin
+29: = Were Cat
+2a: = Hell Kitty
+2b: = Mull Beast
+2c: = Thief
+2d: = Rogue
+2e: = Master Thief
+2f: = Mercenary
+30: = Heavy Metal
+31: = Gunner
+32: = Archer
+33: = Banshee
+34: = Elemental
+35: = Succubus
+36: = Lilim
+37: = Blaze Element
+38: = Nocturne Element
+39: = Frigid Element
+3a: = Shock Element
+3b: = Maxwell
+3c: = Bugbear
+3d: = Charon
+3e: = Elda
+3f: = Vilum
+40: = Flame Virum
+41: = Uni Virum
+42: = Mega Virum
+43: = Baphy
+44: = Legion
+45: = Baal
+46: = Falcon Hawk
+47: = Falcon Hawk
+48: = Mandragora
+49: = Ghost
+4a: = Beggur
+4b: = Ein
+4c: = Zwei
+4d: = Norn
+4e: = Super Puni
+4f: = Beggur
+50: = Drei
+51: = Vier
+52: = Neun
+53: = Tonta
+54: = Arlin
+55: = Mr. Brigand
+56: = Jin Rider
+57: = Temple Knight
+58: = Elder Vilum
+59: = Beggur
+5a: = Arlin
+5b: = Prism
+5c: = Book Eater
+5d: = Beggur
+5e: = Water Guardian
+5f: = Wind Guardian
+60: = Fire Guardian
+61: = Earth Guardian
+62: = Quetzalcoati
+63: = Ein
+64: = Zwei
+65: = Neun
+66: = Tonta
+67: = Beggur
+68: = Drei
+69: = Vier
+6a: = Basilord
+6b: = Baroness
+6c: = Amalgam
+6d: = White Belt Kero
+6e: = Black Belt Kero
+6f: = Master Kero
+70: = Kero Lord
+71: = Mana Cluster
+72: = Mana Cluster
+73: = Mana Cluster
+74: = Mull
+75: = Clockwerk
+76: = Golden Pig
+Mana Crystals Digits For (10F819EC)
+0000 = Knight
+0001 = Na Knight
+0002 = Ho Knight
+0003 = Che Knight
+0004 = Bu Knight
+0005 = Pe Knight
+0006 = Po Knight
+0007 = Gi Knight
+0008 = Mo Knight
+0009 = Go Knight
+000A = Xa Knight
+000B = Au Knight
+000C = Ha Knight
+000D = Li Knight
+000E = Ma Knight
+000F = Di Knight
+0010 = Co Knight
+0011 = Lo Knight
+0012 = ?? Knight
+0013 = ?? Knight
+0014 = De Knight
+0015 = Mi Knight
+0016 = Bo Knight
+0017 = Lis Knight
+0018 = Msb Knight
+0019 = Lib Knight
+001A = Cob Knight
+001B = Lob Knight
+001C = Dob Knight
+001D = Au Knight (Sp Res +1)
+001E = Vo Knight (Psn Res +1)
+001F = Pa Knight (Par Res +1)
+0020 = Seb Knight (Speed +2
+0021 = Deb Knight (Def +2)
+0022 = Mib Knight (Magic +2)
+0023 = Bob Knight (Attack +2)
+0024 = Vs Knight (Magic Comply 1??)
+0025 = Vc Knight (ATK Comply 1??)
+0026 = Ja Knight (Avod +1)
+0027 = Ka Knight (Accuracy +1)
+0028 = Wa Knight (??)
+0029 = Wo Knight (Mana ??)
+002A = Fa Knight (F Magic +1)
+002B = Ca Knight (I Magic +1)
+002C = La Knight (L Magic +1)
+002D = Di Knight (D Magic +1)
+002E = Lic Knight (Def +3)
+002F = Mac knight (Mana +3)
+0030 = Fic Knight (F Res +3)
+0031 = Coc Knight (I Res +3)
+0032 = Loc Knight (L Res +3)
+0033 = Doc Knight (D Res +3)
+0034 = Sec Knight (Speed +3
+0035 = Dec Knight (DEF +3)
+0036 = Mic Knight (Magic +3)
+0037 = Boc Knight (Attack +3)
+0038 = He Knight (Heavy)
+0039 = Lid Knight (Def +4)
+003A = Mad Knight (Mana +4)
+003B = Fid Knight (F Res +4)
+003C = Cod Knight (Ice Res +4
+003D = Lod Knight (L Res +4)
+003E = Dod Knight (D Res +4)
+003F = Sub Knight (Sp Res +2)
+0040 = Vob Knight (Psn Res +2)
+0041 = Pab Knight (Par Res +2)
+0042 = Sed Knight (Speed +4)
+0043 = Ded Knight (Def +4)
+0044 = Mid Knight (Magic +4)
+0045 = Bod Knight (Attack +4)
+0046 = Veb Knight (Magic Comp lv2)
+0047 = Vob Knight (ATK Comp Lv2)
+0048 = Jab Knight (Avoid +2)
+0049 = Kab Knight (Accuracy +2)
+004A = Was Knight ( ??? (s) )
+004B = Wos Knight (Mana up xs)
+004C = Fab Knight (F Magic +2)
+004D = Iab Knight (I Magic +2)
+004E = Lab Knight (L Magic +2)
+004F = Dib Knight (D Magic +2)
+0050 = Die Knight (Disesse Curse)
+0051 = IIe Knight (Mental Curse)
+0052 = Lig Knight (Def +5)
+0053 = Meg Knight (Mana +5)
+0054 = Fig Knight (F Res +5)
+0055 = Cog Knight (I Res +5)
+0056 = Log Knight (L Res +5)
+0057 = Dog Knight (D res +5)
+0058 = Seg Knight (Speed +5)
+0059 = Deg Knight (Def +5)
+005A = Mig Knight (Magic +5)
+005B = Bog Knight (Attack +5)
+005C = Lig Knight (Def +6)
+005D = Mak Knight (Mana +6
+005E = Fik Knight (F Res +6)
+005F = Cok Knight (I Magic +6)
+0060 = Lok Knight (L Res +6)
+0061 = Dok Knight (D res +6)
+0062 = Suc Knight (Sp Res +3)
+0063 = Voc Knight (Psn Res +3)
+0064 = Pac Knight (Par Res +3)
+0065 = Sek Knight (Speed +6)
+0066 = Dek Knight (Def +6)
+0067 = Mek Knight (Magic +6)
+0068 = Bok Knight (Attack +6)
+0069 = Hev Knight (Vary Heavy)
+006A = Vac Knight (Magic Comp V3)
+006B = Vog Knight (Attack Comp V3)
+006C = Jac Knight (Avoid +3)
+006D = Kac Knight (Accuracy +3)
+006E = Wam Knight (???)
+006F = Wom Knight (Mana Up (lvl))
+0070 = Fac Knight (F Magic +3)
+0071 = Iac Knight (I Magic +3)
+0072 = Lac Knight (L Magic +3)
+0073 = Dic Knight (D Magic +3)
+0074 = ka Knight (lvl= steris Karma)
+0075 = In Knight (Animal Instincs)
+0076 = Lip Knight (Def +7)
+0077 = Map Knight (Mana +7)
+0078 = Fip Knight (F Res+7
+0079 = Cop Knight (I Res+7)
+007A = Lop Knight (L Res +7)
+007B = Dop Knight (D Res +7)
+007C = Sep Knight (Speed +7)
+007D = Dep Knight (Def +7)
+007E = Mip Knight (Magic +7)
+007F = Bop Knight (Attack +7)
+0080 = Ko Knight (Didy Power)
+0081 = Ki Knight (Blessing Power)
+0082 = Ku Knight (Battle ??? FWR)
+0083 = Lit Knight (Def +8)
+0084 = Mat Knight (Mana +8)
+0085 = Fit Knight (F Res +8)
+0086 = Cot Knight (I Res +8)
+0087 = Lot Knight (L Res +8)
+0088 = Dot Knight (D Res +8)
+0089 = Sud Knight (SP Res +4)
+008A = Vod Knight (PSN Res +4)
+008B = Pad Knight (Par Res +4)
+008C = Set Knight (Speed +8)
+008D = Det Knight (Def +8)
+008E = Mit Knight (Magic +8)
+008F = Bot Knight (Attack +8)
+0090 = Vac Knight (Lvl = Gic Comp +4)
+0091 = Vod Knight (Atk Comp +4)
+0092 = Jad Knight (Avoid +4)
+0093 = Kad Knight (Accuracy +4)
+0094 = Wal Knight (Def up ??)
+0095 = Wol Knight (Mana Up ??)
+0096 = Fad Knight (F Res +4)
+0097 = Iad Knight (I Res +4)
+0098 = Lad Knight (L Res +4)
+0099 = Did Knight (D Res +4)
+009A = Se Knight (Death Curse)
+009B = Su Knight (Lvlind Curse)
+009C = Liv Knight (Def +9)
+009D = M?? Knight (Mana +9)
+009E = Fiv Knight (F Res +9)
+009F = Cov Knight (I Res +9)
+00A0 = Lov Knight (L Res +9)
+00A1 = Dov Knight (D Res +9)
+00A2 = Sev Knight (Speed +9)
+00A3 = Dev Knight (Def +9)
+00A4 = Miv Knight (Magic +9)
+00A5 = Bov Knight (Attack +9)
+00A6 = So Knight (Holy Power)
+00A7 = Sug Knight (Sp Res +5)
+00A8 = Vog Knight (PSN Res +5)
+00A9 = ??? Knight (Par Res +5)
+00AA = Sur Knight (Sleep Res)
+00AB = Vox Knight (Par Res)
+00AC = Dax Knight (Poison Res)
+00AD = V?? Knight (lvl = Gic Comp +5)
+00AE = Vog Knight (ATK Comp +5)
+00AF = Jug Knight (Avoid +5)
+00B0 = Kag Knight (Accuracy +5)
+00B1 = Wax Knight (Def Up ?)
+00B2 = Wox Knight (Mana Up X 2)
+00B3 = Fug Knight (F Magic +5)
+00B4 = Iug Knight (I Magic +5)
+00B5 = Lug Knight (L Magic +5)
+00B6 = Dig Knight (D Magic +5)
+00B7 = Ari Knight (Ancient Curse)
+00B8 = Si knight (Single Power)
+00B9 = Po knight (Holy Power)
+00BA = Sai Knight (Holy Sanctuary)
+00BB = Bst Knight (Battle Protect)
+00BC = Pi Knight (Fire Protect)
+00BD = Pru Knight (Water Protect)
+00BE = Pre Knight (Thunder Protect)
+00BF = Eta Knight (Magic Stone)
+00C0 = do Knight (Spirit Stone)
+00C1 = Eki Knight (Say Sopeta)
+00C2 = Pi Knight (Fierce)
+00C3 = Hey Knight (Heavy Blow)
+00C4 = Etu Knight (Stun Blow)
+00C5 = Wi Knight (Poison Blow)
+00C6 = Wat Knight (Double Attack)
+00C7 = Da Knight (Puni Slayer)
+00C8 = Ce Knight (Beast Killer)
+00C9 = Bus Knight (Dragon Hunter)
+00CA = Elu Knight (Deamon Slayer)
+00CB = Ele Knight (Vlaga Slayer)
+00CC = Elo Knight (Evil Slayer)
+00CD = We Knight (Holy Weapon)
+Junk Ones Below just thought i would put them in
+00CE = JPN (Jpn Weapon)
+00CF = JPN (Jpn Weapon)
+00D0 = Knight (Blank)
+00D1 = Knight (Blank)
+00D2 = Knight (Evil Slayer (JPN)
+00D3 = JPN ( Jpn )
+00D4 = Knight Knight (Blank)
+00D5 = Little Knight (Blank)
+00D6 = Jpn Knight (Very)
+00D7 = Jpn Knight (Blank)
+00D8 = Very Knight (Jap)
+00D9 = Knight (Bitter)
+00DA = JPN (Too)
+00DB = Roky Knight (A Lot)
+00DC = Too Knight (Little)
+00DD = Really KNight (Blank)
+00DE = Little Knight (JPN)
+00DF = JPN Knight (Vary)
+00E0 = JPN (Blank)
+00E1 = Vary Knight (JPN)
+00E2 = Knight (Smells Good)
+00E3 = JPN (too)
+00E4 = Cute Knight (Really)
+00E5 = Too Knight (Little)
+00E6 = Really Knight (Blank)
+00E7 = Little Knight (JPN)
+00E8 = Knight (Very)
+00E9 = Jpn Knight (Blank)
+00EE = Amezingly Knight (Kirca)
+00F6 = Adults Only Knight (Alot) Skillers note: I just found the name funny
+0106 = Knight (Cacles a lox ?)
+0108 = Vomit Flavor Knight (Blank)
+010F = Knight (Not got Cigs)
+0111 = Taetae like.. Knight (Blank)
+0118 = Knight (Heavenly Taste)
+RaSusu Tecto
+0000
+009B
+009B
+Nasusu Tecto = (Nasty - Mind ??? - Mind ??)
+0001
+009B
+009B
+hosusu tecto
+0002
+009B
+009B
+Chesusu tecto
+0003
+009B
+009B
+CoSuSu Tecto
+0010
+009B
+009B
+Sususu tecto
+009B
+009B
+009B
+Susuna Tecto
+00FF
+009B
+009B
+-=Character Mod Digits=-
+??? replace =
+000 = Kline
+001 = Lita
+002 = Norn
+003 = Marietta
+004 = Deisus
+005 = Arlin
+006 = Mull
+007 = Beggur
+008 = Zeldalia
+009 = Iris
+00A = E?n
+00B = Zwe
+00C = Drei
+00D = Vier
+00E = Neun
+00F = Rockie Knight
+010 = Amalgam
+011 = Pamela
+012 = veola
+013 = Veola
+014 = Hage
+015 = Young Man
+016 = Haan
+017 = Foxer
+018 = Fin
+019 = Vilage person
+01A = town Guy
+01B = Loser
+01C = Student
+01D = lyla
+01E = Blaire
+01F = Actress
+020 = Back Door Lady
+021 = Little Boy (Blue Pants)
+022 = Little Boy (Green pants)
+023 = Boy
+024 = hyper kid
+025 = Yach
+026 = Little boy (Green Pants)
+027 = Little Girl
+028 = Little Girl
+029 = Dia
+02A = Princess
+02B = Kid
+02C = Stranger
+02D = City Prison A
+02E = vilage Chief
+02F = Head of Commerce
+030 = Lady
+031 = Lady
+032 = Woman
+033 = Lady
+034 = Information Lady
+035 = Norman
+

@@ -1,0 +1,20 @@
+"Cabela's Deer Hunt 2005 Season-US"
+ELF: SLUS_210.11
+Enable Code(Must Be On)
+9012BB3C 0C041210
+Animal Freeze
+00644F68 00000001
+Stealth Mode
+20635548 00000001
+Note:This is basically Dumb AI deer code
+God Mode
+0062C408 00000001
+Skeleton Mode
+2062D530 00000001
+Half Wireframe Mode
+2062C8C8 00000001
+Note:Gameplay is slower, everything is wireframe including
+animals and you except your head
+Cube Mode
+2062D548 00000001
+

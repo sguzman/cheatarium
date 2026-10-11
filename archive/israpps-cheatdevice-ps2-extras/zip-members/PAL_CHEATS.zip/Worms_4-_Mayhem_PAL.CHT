@@ -1,0 +1,14 @@
+"Worms 4: Mayhem PAL"
+(M)
+F053812C 0053812F
+Have All/Infinite Weapons
+203B0B00 24060009
+Timer Codes
+Unfreeze timer before taking your shot.
+L2+R2 Freeze Round/Go Timer
+D098A242 0000FCFF
+203E3A30 00000000
+L1+R1 Unfreeze Round/Go Timer
+D098A242 0000F3FF
+203E3A30 AC65001C
+

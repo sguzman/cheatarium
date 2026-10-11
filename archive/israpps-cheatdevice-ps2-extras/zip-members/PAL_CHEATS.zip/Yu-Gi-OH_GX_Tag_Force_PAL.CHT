@@ -1,0 +1,1343 @@
+"Yu-Gi-OH GX Tag Force_PAL"
+Credits: Skiller
+Enabler Code (Must be on)
+90112118 0C0447EE
+10 Cards When Moved to Trunk (need minimum 2 cards)
+201B6B38 2706000A
+(Select=ON, load Savegame & activate after you´re at Menu)
+Have All Cards x9
+200A0000 3C01014E
+200A0004 3421C144
+200A0008 94230000
+200A000C 34020FA7
+200A0010 14620019
+200A0038 3C0400AB
+200A003C 34840010
+200A0044 A4830000
+200A0048 24840002
+200A004C 24A50001
+200A0050 A4850000
+200A0054 24840002
+200A0058 34070109
+200A005C A4870000
+200A0060 24840002
+200A0064 24210002
+200A0068 94230000
+200A0070 1403FFF4
+200A0078 03E00008
+200A007C 27BD0050
+E002FFFE 0025E202
+2017ED58 08028000
+2017ED5C 00000000
+Draw Time Codes Activator
+200A0100 12800011
+200A0138 1000000F
+200A0178 03E00008
+D1713B16 000027BD
+21713B10 08028040
+Draw Time
+P1 Instant Win (if P1 enter Battle)
+200A0108 AE000004
+P1 Refill Max HP (if P1 Draw)
+200A0148 34071F40
+P2 No Draw
+200A010C AE000000
+Credits: Godshin
+Skip FMV
+201098F0 24020001
+Duellantenstufe 100
+0035CAA4 00000063
+alt.Duellantenstufe 100
+2015FBDC 24020064
+Duellanten Exp: 99.999.999
+2035CAA8 05F5E0FF
+Name Mod:
+0035CA74 FFFFFFE8
+0035CA76 FFFFFFE8
+0035CA78 FFFFFFE8
+0035CA7A FFFFFFE8
+0035CA7C FFFFFFE8
+0035CA7E FFFFFFE8
+0035CA80 FFFFFFE8
+0035CA82 FFFFFFE8
+0035CA84 FFFFFFE8
+0035CA86 FFFFFFE8
+Angriff Feld 3 auf 9999
+117432B0 0000270F
+1195F600 0000270F
+Abwehr Feld 3 auf 9999
+1195F604 0000270F
+== Player 1 Codes ==
+unendlich LP
+21745510 00001F40
+219766B4 00001F40
+max.LP
+21745510 0001869F
+219766B4 0001869F
+1 LP
+D1745510 00001F40
+21745510 00000001
+D19766B4 00001F40
+219766B4 00000001
+Sofortige Niederlage
+21745510 00000000
+219766B4 00000000
+kein Tribut mehr zahlen
+(Es wird zwar verlangt, das du eine Karte auswählst,
+aber diese verschwindet nic
+(Es müssen trotzdem 2 Karten auf dem Spielfeld liegen)
+017440C8 00000002
+== Player 2 Codes ==
+unendlich LP
+217464BC 00001F40
+219766B8 00001F40
+max.LP
+217464BC 0001869F
+219766B8 0001869F
+1 LP
+D17464BC 00001F40
+217464BC 00000001
+D19766B8 00001F40
+219766B8 00000001
+Sofortige Niederlage
+217464BC 00000000
+219766B8 00000000
+== Karten Codes ==
+(Die Karten sind zwar nicht zusehn, Details und die jeweiligen
+strategieen jedoc diese karte hat zudem unendlich angriff :)
+== Karten Modifizierer Platz 1 ==
+Amphibische Bestie
+21745540 008053CA
+21745544 00000007
+21745548 00000001
+21745550 00210080
+== Karten Modifizierer Platz 2 ==
+Amphibische Bestie
+21745554 008053CA
+21745558 00000007
+2174555C 00000001
+21745564 00210080
+== Karten Modifizierer Platz 3 ==
+Amphibische Bestie
+21745568 008053CA
+2174556C 00000007
+21745570 00000001
+21745578 00210080
+== Karten Modifizierer Platz 4 ==
+Amphibische Bestie
+2174557C 008053CA
+21745580 00000007
+21745584 00000001
+2174558C 00210080
+== Karten Modifizierer Platz 5 ==
+Amphibische Bestie
+21745590 008053CA
+21745594 00000007
+21745598 00000001
+217455A0 00210080
+== True Platz 001 Codes ==
+Karte x99 Platz
+00AA5B04 00000063
+Blauäuguger Weisser Drache
+10AA5B00 00000FA7
+Mystische Elfe
+10AA5B00 00000FA8
+Hitotsu Me Rise
+10AA5B00 00000FA9
+Babydrache
+10AA5B00 00000FAA
+Ryu-Kishin
+10AA5B00 00000FAB
+Wilder Kobold
+10AA5B00 00000FAC
+Geflügelter drache festungswächter
+10AA5B00 00000FAD
+pilzmann
+10AA5B00 00000FAE
+schattengespenst
+10AA5B00 00000FAF
+schwarzer feuerdrache
+10AA5B00 00000FB0
+schwetrdornendrache
+10AA5B00 00000FB1
+sumpfkampfwächter
+10AA5B00 00000FB2
+typone
+10AA5B00 00000FB3
+kampfstier
+10AA5B00 00000FB4
+flammen-schwertkämpfer
+10AA5B00 00000FB5
+zeitzauberer
+10AA5B00 00000FB6
+rechtes bein der verbotenen exodia
+10AA5B00 00000FB7
+linkes bein der verbotenen exodia
+10AA5B00 00000FB8
+rechter arm der verbotenen exodia
+10AA5B00 00000FB9
+linker arm der verbotenen exodia
+10AA5B00 00000FBA
+exodia die verbotene
+10AA5B00 00000FBB
+herbeigerufener totenkopf
+10AA5B00 00000FBC
+böses wurmungeheuer
+10AA5B00 00000FBD
+otenkopfdiener
+10AA5B00 00000FBE
+hornkobold
+10AA5B00 00000FBF
+kampfochse
+10AA5B00 00000FC0
+bieberkrieger
+10AA5B00 00000FC1
+felsen-oger grotte
+10AA5B00 00000FC2
+bergkrieger
+10AA5B00 00000FC3
+zombiekrieger
+10AA5B00 00000FC4
+kumori-drache
+10AA5B00 00000FC5
+zweiköpfiger könig rex
+10AA5B00 00000FC6
+vollstrecker
+10AA5B00 00000FC7
+saggi, dunkler clown
+10AA5B00 00000FC8
+dunkler magier
+10AA5B00 00000FC9
+schlangenhaar
+10AA5B00 00000FCA
+drachenmeister gaia
+10AA5B00 00000FCB
+gaia, zorniger ritter
+10AA5B00 00000FCC
+drachenfluch
+10AA5B00 00000FCD
+drachenpfeifer
+10AA5B00 00000FCE
+keltischer wächter
+10AA5B00 00000FCF
+gesichtsloser illusionist
+10AA5B00 00000FD0
+karbonala krieger
+10AA5B00 00000FD1
+höllenwesenpuppe
+10AA5B00 00000FD2
+oscillo-held
+10AA5B00 00000FD3
+griffore
+10AA5B00 00000FD4
+torike
+10AA5B00 00000FD5
+sangan
+10AA5B00 00000FD6
+riesenameise
+10AA5B00 00000FD7
+basisinsekt
+10AA5B00 00000FD8
+panzerechse
+10AA5B00 00000FD9
+herkuleskäfer
+10AA5B00 00000FDA
+killerbiene
+10AA5B00 00000FDB
+gokibore
+10AA5B00 00000FDC
+riesenfloh
+10AA5B00 00000FDD
+mottenlarve
+10AA5B00 00000FDE
+große motte
+10AA5B00 00000FDF
+kuriboh
+10AA5B00 00000FE0
+mammutfriedhof
+10AA5B00 00000FE1
+großer weiser
+10AA5B00 00000FE2
+wolf
+10AA5B00 00000FE3
+harpyie
+10AA5B00 00000FE4
+harpyien-schwestern
+10AA5B00 00000FE5
+axttiger
+10AA5B00 00000FE6
+silberfang
+10AA5B00 00000FE7
+kojikocy
+10AA5B00 00000FE8
+perfekte ultimative große motte
+10AA5B00 00000FE9
+garoozis
+10AA5B00 00000FEA
+tausenddrache
+10AA5B00 00000FEB
+böser krake
+10AA5B00 00000FEC
+qualle
+10AA5B00 00000FED
+kokon der evolution
+10AA5B00 00000FEE
+kairyu-shin
+10AA5B00 00000FEF
+riesen-steinsoldat
+10AA5B00 00000FF0
+menschen fressende pflanze
+10AA5B00 00000FF1
+krokodilus
+10AA5B00 00000FF2
+würgeschlange
+10AA5B00 00000FF3
+axträuber
+10AA5B00 00000FF4
+megazowler
+10AA5B00 00000FF5
+uraby
+10AA5B00 00000FF6
+kriechdrache
+10AA5B00 00000FF7
+rotäugiger schwrzer drache
+10AA5B00 00000FF8
+schloss der dunklen illusionen
+10AA5B00 00000FF9
+sensenmann der karten
+10AA5B00 00000FFA
+könig von yamimakai
+10AA5B00 00000FFB
+barox
+10AA5B00 00000FFC
+dunkle schimäre
+10AA5B00 00000FFD
+metallwächter
+10AA5B00 00000FFE
+katapult-schildkröte
+10AA5B00 00000FFF
+gyakutenno megami
+10AA5B00 00001000
+mystischer reiter
+10AA5B00 00001001
+tollwütiger reiter
+10AA5B00 00001002
+tanki
+10AA5B00 00001003
+kriechdrache
+10AA5B00 00001004
+grober clown
+10AA5B00 00001005
+panzerzombie
+10AA5B00 00001006
+zombiedrache
+10AA5B00 00001007
+clown-zombie
+10AA5B00 00001008
+pumpkin geisterkönig
+10AA5B00 00001009
+faustkämpfer
+10AA5B00 0000100A
+flügel der bösen flamme
+10AA5B00 0000100B
+maske der finsternis
+10AA5B00 0000100C
+abwehrspiegel
+10AA5B00 0000100D
+vorhang der dunklen
+10AA5B00 0000100E
+tomosaurus
+10AA5B00 0000100F
+geist der winde
+10AA5B00 00001010
+kageningen
+10AA5B00 00001011
+friedhof und die hand des todes
+10AA5B00 00001012
+göttin mit dem dritten auge
+10AA5B00 00001013
+held des ostens
+10AA5B00 00001014
+doma engel der stille
+10AA5B00 00001015
+der leben aussaugt
+10AA5B00 00001016
+dunkelgrau
+10AA5B00 00001017
+weißer zauberhut
+10AA5B00 00001018
+kamionzauberer
+10AA5B00 00001019
+alptraumskorpion
+10AA5B00 0000101A
+geist der bücher
+10AA5B00 0000101B
+helfer im schatten
+10AA5B00 0000101C
+strafe des alptraums
+10AA5B00 0000101D
+traumclown
+10AA5B00 0000101E
+schlafender löwe
+10AA5B00 0000101F
+yamaton rolldrache
+10AA5B00 00001020
+dunkle pflanze
+10AA5B00 00001021
+antike maschine
+10AA5B00 00001022
+glaubensvogel
+10AA5B00 00001023
+orion kampfkönig
+10AA5B00 00001024
+ansatsu
+10AA5B00 00001025
+lamond
+10AA5B00 00001026
+nemuriko
+10AA5B00 00001027
+wetterherrscher
+10AA5B00 00001028
+oktoberser
+10AA5B00 00001029
+das 13.grab
+10AA5B00 0000102A
+feuerritter charubin
+10AA5B00 0000102B
+mystische fangkette
+10AA5B00 0000102C
+des bösen hand
+10AA5B00 0000102D
+gewitztes phantom
+10AA5B00 0000102E
+mysterienhand
+10AA5B00 0000102F
+drachenstatue
+10AA5B00 00001030
+blauäugiger silberzombie
+10AA5B00 00001031
+krötenmeister
+10AA5B00 00001032
+stachelschnecke
+10AA5B00 00001033
+flammen-manipulator
+10AA5B00 00001034
+necrolancer der zeitherrscher
+10AA5B00 00001035
+dschinn, der hüter des windes
+10AA5B00 00001036
+verhexender phantomdieb
+10AA5B00 00001037
+schädeltempel
+10AA5B00 00001038
+monster ei
+10AA5B00 00001039
+schatten, herrscher der dunkelheit
+10AA5B00 0000103A
+gebieter der lampe
+10AA5B00 0000103B
+akihiron
+10AA5B00 0000103C
+raimundos vom roten schwert
+10AA5B00 0000103D
+schmelzender roter schatten
+10AA5B00 0000103E
+dokuroizo, sensenmann
+10AA5B00 0000103F
+feuermäher
+10AA5B00 00001040
+larvas
+10AA5B00 00001041
+harte rüstung
+10AA5B00 00001042
+feuergras
+10AA5B00 00001043
+menschenfresser
+10AA5B00 00001044
+grabschnabel
+10AA5B00 00001045
+m-krieger
+10AA5B00 00001046
+m-krieger
+10AA5B00 00001047
+verborgene weisheit
+10AA5B00 00001048
+lisark
+10AA5B00 00001049
+gebieter der zemia
+10AA5B00 0000104A
+urteilshand
+10AA5B00 0000104B
+mysieriöser puppenspieler
+10AA5B00 0000104C
+antikes gefäß
+10AA5B00 0000104D
+dunkler feuerdrache
+10AA5B00 0000104E
+dunkler könig des abgrunds
+10AA5B00 0000104F
+hafengeist
+10AA5B00 00001050
+großes auge
+10AA5B00 00001051
+armaill
+10AA5B00 00001052
+dunkler gefangener
+10AA5B00 00001053
+hurrikail
+10AA5B00 00001054
+antiker geist
+10AA5B00 00001055
+feuerauge
+10AA5B00 00001056
+monsterschildkröte
+10AA5B00 00001057
+krallenstecker
+10AA5B00 00001058
+phantom dewan
+10AA5B00 00001059
+arlownay
+10AA5B00 0000105A
+dunkler schatten
+10AA5B00 0000105B
+maskenclwon
+10AA5B00 0000105C
+glücksanhänger
+10AA5B00 0000105D
+genin
+10AA5B00 0000105E
+panzerauge
+10AA5B00 0000105F
+unterweltlerreflektion
+10AA5B00 00001060
+tordeeg
+10AA5B00 00001061
+synchar
+10AA5B00 00001062
+verschmelzer
+10AA5B00 00001063
+akakieisu
+10AA5B00 00001064
+lala li-loon
+10AA5B00 00001065
+schlüsselkeule
+10AA5B00 00001066
+turtle-tiger
+10AA5B00 00001067
+schrecklicher terra
+10AA5B00 00001068
+doron
+10AA5B00 00001069
+serritter
+10AA5B00 0000106A
+mechan. maulwurfzombie
+10AA5B00 0000106B
+glückself
+10AA5B00 0000106C
+pingunritter
+10AA5B00 0000106D
+kleiner drache
+10AA5B00 0000106E
+rasender panda
+10AA5B00 0000106F
+erzunterweltler murmeltier der ruchlosigkeit
+10AA5B00 00001070
+phantomgespenst
+10AA5B00 00001071
+mabarrel
+10AA5B00 00001072
+dorover
+10AA5B00 00001073
+langarmgreifer
+10AA5B00 00001074
+komischer vogel
+10AA5B00 00001075
+kleiner engel
+10AA5B00 00001076
+geflügeltes beil
+10AA5B00 00001077
+hinotama seele
+10AA5B00 00001078
+donnerkind
+10AA5B00 00001079
+meotoko
+10AA5B00 0000107A
+aqua madoor
+10AA5B00 0000107B
+kagemusha der blauen flamme
+10AA5B00 0000107C
+flammengeist
+10AA5B00 0000107D
+dryad
+10AA5B00 0000107E
+sch.totenkopfdrache
+10AA5B00 0000107F
+zweischnäuziger dunkler herrscher
+10AA5B00 00001080
+einsamkeit
+10AA5B00 00001081
+masketier hexenmeister
+10AA5B00 00001082
+kumootoko
+10AA5B00 00001083
+mitternachtsgeist
+10AA5B00 00001084
+brüllende seeschnecke
+10AA5B00 00001085
+fallenmeister
+10AA5B00 00001086
+böses schwert
+10AA5B00 00001087
+schädeljäger
+10AA5B00 00001088
+hitodenchak
+10AA5B00 00001089
+lebendes holz
+10AA5B00 0000108A
+sanduhr des lebens
+10AA5B00 0000108B
+seltener fish
+10AA5B00 0000108C
+holzclwon
+10AA5B00 0000108D
+madschinn-gewehr
+10AA5B00 0000108E
+dunkler terrortitan
+10AA5B00 0000108F
+schöne kopfjägerin
+10AA5B00 00001090
+wotan waldbewohner
+10AA5B00 00001091
+wächter des labyrinths
+10AA5B00 00001092
+haniwa
+10AA5B00 00001093
+yashinoki
+10AA5B00 00001094
+vishwar randi
+10AA5B00 00001095
+der drdek
+10AA5B00 00001096
+dunkler angreifer
+10AA5B00 00001097
+schicksalslicht
+10AA5B00 00001098
+wasserelementar
+10AA5B00 00001099
+steinschmelzer
+10AA5B00 0000109A
+meda-bat
+10AA5B00 0000109B
+einer der seelen jagt
+10AA5B00 0000109C
+tiefenwasser
+10AA5B00 0000109D
+miester & experte
+10AA5B00 0000109E
+wasseromotik
+10AA5B00 0000109F
+hyo
+10AA5B00 000010A0
+bezaubernde nixe
+10AA5B00 000010A1
+nekogal
+10AA5B00 000010A2
+elfenhexe
+10AA5B00 000010A3
+embryo monster
+10AA5B00 000010A4
+abwehrratte
+10AA5B00 000010A5
+d.d. krieger
+10AA5B00 000010A6
+steinpanzer-monster
+10AA5B00 000010A7
+bestienkönig der sümpfe
+10AA5B00 000010A8
+antiker hexenmeister
+10AA5B00 000010A9
+mondkönigin elzaim
+10AA5B00 000010AA
+erzunterweltler spiegel
+10AA5B00 000010AB
+kleiner schwertkämpfer von aile
+10AA5B00 000010AC
+felsen oger grotte
+10AA5B00 000010AD
+geflügelter eierschalter elf
+10AA5B00 000010AE
+wütender meereskönig
+10AA5B00 000010AF
+prinzessin von tsurugi
+10AA5B00 000010B0
+unbekannter krieger der unterwelt
+10AA5B00 000010B1
+sektierer der geheimnisse
+10AA5B00 000010B2
+versago, zerstörer
+10AA5B00 000010B3
+wetha
+10AA5B00 000010B4
+megirus licht
+10AA5B00 000010B5
+mavelus
+10AA5B00 000010B6
+antiker baum der erleuchtung
+10AA5B00 000010B7
+grüner phantomkönig
+10AA5B00 000010B8
+bodenangreifer burgroth
+10AA5B00 000010B9
+strahl & temperatur
+10AA5B00 000010BA
+gorgonen-ei
+10AA5B00 000010BB
+kleine motte
+10AA5B00 000010BC
+nebenkönig
+10AA5B00 000010BD
+beschützer des throns
+10AA5B00 000010BE
+mystischer clown
+10AA5B00 000010BF
+mystisches schaf
+10AA5B00 000010C0
+holograph
+10AA5B00 000010C1
+tao sänger
+10AA5B00 000010C2
+plünderschlange
+10AA5B00 000010C3
+torwärter
+10AA5B00 000010C4
+schwarzer schatten oger
+10AA5B00 000010C5
+dunkler künstler
+10AA5B00 000010C6
+verwandlungsschleim
+10AA5B00 000010C7
+mondbote
+10AA5B00 000010C8
+feueryarou
+10AA5B00 000010C9
+übersinnlicher kappa
+10AA5B00 000010CA
+masaki, legendärer schwertkämpfer
+10AA5B00 000010CB
+böse drachenkämpferin
+10AA5B00 000010CC
+monsterpflanze
+10AA5B00 000010CD
+einäugiger schilddrache
+10AA5B00 000010CE
+cybersoldat der finsternis
+10AA5B00 000010CF
+zweiköpfiger böser drache
+10AA5B00 000010D0
+klingende jungfrau
+10AA5B00 000010D1
+kurama
+10AA5B00 000010D2
+schwert der legende
+10AA5B00 000010D3
+schwert der dunklen zerstörung
+10AA5B00 000010D4
+dunkle energie
+10AA5B00 000010D5
+axt der verzweiflung
+10AA5B00 000010D6
+laserkanone
+10AA5B00 000010D7
+panzerinsekt mit laserkanone
+10AA5B00 000010D8
+elfenlicht
+10AA5B00 000010D9
+reißzähne
+10AA5B00 000010DA
+stahlhülle
+10AA5B00 000010DB
+abscheule keime
+10AA5B00 000010DC
+schwarzer anhänger
+10AA5B00 000010DD
+silberpfeil & bogen
+10AA5B00 000010DE
+horn des lichts
+10AA5B00 000010DF
+horn des einhorn
+10AA5B00 000010E0
+drachenschatz
+10AA5B00 000010E1
+elektropeitsche
+10AA5B00 000010E2
+cyberschild
+10AA5B00 000010E3
+vornehmer egoist
+10AA5B00 000010E4
+mystischer mond
+10AA5B00 000010E5
+verteidigung stoppen
+10AA5B00 000010E6
+übelwollender hätscher
+10AA5B00 000010E7
+lila kristall
+10AA5B00 000010E8
+buch der geheimen künste
+10AA5B00 000010E9
+kräftigung
+10AA5B00 000010EA
+maschinenumwandlungsfrabrik
+10AA5B00 000010EB
+körpertemperatur erhöhen
+10AA5B00 000010EC
+folge dem wind
+10AA5B00 000010ED
+macht von kaishin
+10AA5B00 000010EE
+drachenfanggefäß
+10AA5B00 000010EF
+wald
+10AA5B00 000010F0
+ödland
+10AA5B00 000010F1
+berg
+10AA5B00 000010F2
+sogen
+10AA5B00 000010F3
+umi
+10AA5B00 000010F4
+yami
+10AA5B00 000010F5
+schwarzes loch
+10AA5B00 000010F6
+raigeki
+10AA5B00 000010F7
+mooyan curry
+10AA5B00 000010F8
+rote medizin
+10AA5B00 000010F9
+kobolds letzte rettung
+10AA5B00 000010FA
+seele der reinen
+10AA5B00 000010FB
+dian keto, meisterheiler
+10AA5B00 000010FC
+funken
+10AA5B00 000010FD
+hinotama
+10AA5B00 000010FE
+ewige flamme
+10AA5B00 000010FF
+oozaki
+10AA5B00 00001100
+schreckliches feuer
+10AA5B00 00001101
+verräterische schwerter
+10AA5B00 00001102
+faszinierender kreis
+10AA5B00 00001103
+dunkel undurchdringliches licht
+10AA5B00 00001104
+yaranzo
+10AA5B00 00001105
+kanan gebieterin des schwertes
+10AA5B00 00001106
+takriminos
+10AA5B00 00001107
+plüschtier
+10AA5B00 00001108
+megaschallauge
+10AA5B00 00001109
+super kriegslöwe
+10AA5B00 0000110A
+yamadron
+10AA5B00 0000110B
+seiyayu
+10AA5B00 0000110C
+dreibeinige zombies
+10AA5B00 0000110D
+zera der mant
+10AA5B00 0000110E
+fliegender pinguin
+10AA5B00 0000110F
+jahrtausendschild
+10AA5B00 00001110
+elfengabe
+10AA5B00 00001111
+schwarzer glänzender soldat
+10AA5B00 00001112
+feindlicher spiegel
+10AA5B00 00001113
+labyrinthmauern
+10AA5B00 00001114
+jirai gumo
+10AA5B00 00001115
+schatten-leichenfledderer
+10AA5B00 00001116
+mauerschatten
+10AA5B00 00001117
+labyrinthpanzer
+10AA5B00 00001118
+sanga des donners
+10AA5B00 00001119
+kazejin
+10AA5B00 0000111A
+suijin
+10AA5B00 0000111B
+torächter
+10AA5B00 0000111C
+kerkerwurm
+10AA5B00 0000111D
+monsterbändiger
+10AA5B00 0000111E
+ryu-kishin macht
+10AA5B00 0000111F
+schwertkämpfer
+10AA5B00 00001120
+mystischer jinn der lampe
+10AA5B00 00001121
+blauäugiger ultradrache
+10AA5B00 00001122
+toon-alligator
+10AA5B00 00001123
+wilöder kaiser
+10AA5B00 00001124
+papageidrache
+10AA5B00 00001125
+dunkler hase
+10AA5B00 00001126
+bickuribox
+10AA5B00 00001127
+harpyies lieblingsdrache
+10AA5B00 00001128
+mystische lampe
+10AA5B00 00001129
+pendelmaschine
+10AA5B00 0000112A
+gilta, drachenritter
+10AA5B00 0000112B
+raketenwerferspinne
+10AA5B00 0000112C
+zoa
+10AA5B00 0000112D
+metallzoa
+10AA5B00 0000112E
+zonenfresser
+10AA5B00 0000112F
+stahlskorpion
+10AA5B00 00001130
+tanzender elf
+10AA5B00 00001131
+ocubeam
+10AA5B00 00001132
+leghul
+10AA5B00 00001133
+ooguchi
+10AA5B00 00001134
+schwetrkämpfer der fremde
+10AA5B00 00001135
+kaiserd es landes und der see
+10AA5B00 00001136
+ushi oni
+10AA5B00 00001137
+monsterauge
+10AA5B00 00001138
+leogun
+10AA5B00 00001139
+tatsunootoshigo
+10AA5B00 0000113A
+säbelschlitzer
+10AA5B00 0000113B
+yaiba robo
+10AA5B00 0000113C
+maschinenkönig
+10AA5B00 0000113D
+mechanischer riesensoldat
+10AA5B00 0000113E
+metalldrache
+10AA5B00 0000113F
+mechanische spinne
+10AA5B00 00001140
+fledermaus
+10AA5B00 00001141
+gigatech-wolf
+10AA5B00 00001142
+cybersoldat
+10AA5B00 00001143
+schaufelbrecher
+10AA5B00 00001144
+mechanischer jäger
+10AA5B00 00001145
+blocker
+10AA5B00 00001146
+sprenggaukler
+10AA5B00 00001147
+golgoil
+10AA5B00 00001148
+giganto
+10AA5B00 00001149
+cyber-stein
+10AA5B00 0000114A
+cyberkommandeur
+10AA5B00 0000114B
+jinzo
+10AA5B00 0000114C
+würfel armadillo
+10AA5B00 0000114D
+himmelsdrache
+10AA5B00 0000114E
+donnerdrache
+10AA5B00 0000114F
+steindrache
+10AA5B00 00001150
+kaiserdrache
+10AA5B00 00001151
+magier des glaubens
+10AA5B00 00001152
+launische göttin
+10AA5B00 00001153
+wassermagier
+10AA5B00 00001154
+eisnixe
+10AA5B00 00001155
+wasserdrachenelf
+10AA5B00 00001156
+antiker elf
+10AA5B00 00001157
+schöne herrin der bestien
+10AA5B00 00001158
+wassergirl
+10AA5B00 00001159
+weißer delphin
+10AA5B00 0000115A
+tiefsee hai
+10AA5B00 0000115B
+metallfisch
+10AA5B00 0000115C
+meeresgrundbewohner
+10AA5B00 0000115D
+siebenfarbiger fisch
+10AA5B00 0000115E
+mechanischer barsch
+10AA5B00 0000115F
+aquadrache
+10AA5B00 00001160
+seekönigdrache
+10AA5B00 00001161
+turu purun
+10AA5B00 00001162
+beschützer des meeres
+10AA5B00 00001163
+wasserschlange
+10AA5B00 00001164
+riesige rote seeschlange
+10AA5B00 00001165
+stachelseedra
+10AA5B00 00001166
+weiße 30.000-jahr-schildkröte
+10AA5B00 00001167
+kappa rächer
+10AA5B00 00001168
+kanikabuto
+10AA5B00 00001169
+zarigun
+10AA5B00 0000116A
+milleniumgolem
+10AA5B00 0000116B
+zerstörer golem
+10AA5B00 0000116C
+schießfelsen
+10AA5B00 0000116D
+minomushi krieger
+10AA5B00 0000116E
+steingeist
+10AA5B00 0000116F
+kaminari angriff
+10AA5B00 00001170
+stolperdrahtbestie
+10AA5B00 00001171
+bolzenschnecke
+10AA5B00 00001172
+bolzenpinguin
+10AA5B00 00001173
+unsterblicher des donners
+10AA5B00 00001174
+elektrische schlange
+10AA5B00 00001175
+flügeladler
+10AA5B00 00001176
+gestrafter adler
+10AA5B00 00001177
+roter totenkopfvogel
+10AA5B00 00001178
+sonnenvogel crimson
+10AA5B00 00001179
+königinvogel
+10AA5B00 0000117A
+bewaffneter ninja
+10AA5B00 0000117B
+magischer geist
+10AA5B00 0000117C
+seelenjäger
+10AA5B00 0000117D
+luftfresser
+10AA5B00 0000117E
+zinnroter spatz
+10AA5B00 0000117F
+seekamen
+10AA5B00 00001180
+unheilverkündende schlange
+10AA5B00 00001181
+ganigumo
+10AA5B00 00001182
+seekäfer
+10AA5B00 00001183
+insektensoldaten des himmels
+10AA5B00 00001184
+kakerlakenritter
+10AA5B00 00001185
+kuwagata
+10AA5B00 00001186
+einbrecher
+10AA5B00 00001187
+praktikal
+10AA5B00 00001188
+garvas
+10AA5B00 00001189
+ambea
+10AA5B00 0000118A
+korogashi
+10AA5B00 0000118B
+boo koo
+10AA5B00 0000118C
+blumenwolf
+10AA5B00 0000118D
+regenbogenblume
+10AA5B00 0000118E
+schißlilie
+10AA5B00 0000118F
+nadelball
+10AA5B00 00001190
+pfau
+10AA5B00 00001191
+hoshiningen
+10AA5B00 00001192
+maha vailo
+10AA5B00 00001193
+regenbogennixe
+10AA5B00 00001194
+musterkönig
+10AA5B00 00001195
+wilmee
+10AA5B00 00001196
+yado karu
+10AA5B00 00001197
+morinphen
+10AA5B00 00001198
+raupe
+10AA5B00 00001199
+drachensucher
+10AA5B00 0000119A
+menschenfresserkäfer
+10AA5B00 0000119B
+drachenmensch
+10AA5B00 0000119C
+schildkrötenwaschbär
+10AA5B00 0000119D
+moschusfungi
+10AA5B00 0000119E
+prisman
+10AA5B00 0000119F
+sturm dogra
+10AA5B00 000011A0
+verrückter fisch
+10AA5B00 000011A1
+cybersaurier
+10AA5B00 000011A2
+braccchio raidus
+10AA5B00 000011A3
+lachende blume
+10AA5B00 000011A4
+bohnensoldat
+10AA5B00 000011A5
+kanonensoldat
+10AA5B00 000011A6
+wächter des thronsaals
+10AA5B00 000011A7
+scherenkrieger
+10AA5B00 000011A8
+statue der osterinsel
+10AA5B00 000011A9
+muka muka
+10AA5B00 000011AA
+sandstein
+10AA5B00 000011AB
+felsenschildkröte
+10AA5B00 000011AC
+feuerkrake
+10AA5B00 000011AD
+schildkrötenvogel
+10AA5B00 000011AE
+totenkopfvogel
+10AA5B00 000011AF
+riesenvogel
+10AA5B00 000011B0
+bistro schlächter
+10AA5B00 000011B1
+sternenboy
+10AA5B00 000011B2
+berggeist
+10AA5B00 000011B3
+halsjäger
+10AA5B00 000011B4
+milusstrahler
+10AA5B00 000011B5
+toge x
+10AA5B00 000011B6
+flammen zerberus
+10AA5B00 000011B7
+eldeen
+10AA5B00 000011B8
+mystischer sand
+10AA5B00 000011B9
+elfenzwillinge
+10AA5B00 000011BA
+kwaar herkules
+10AA5B00 000011BB
+minar
+10AA5B00 000011BC
+kamakiriman
+10AA5B00 000011BD
+mechaleon
+10AA5B00 000011BE
+mega donnerball
+10AA5B00 000011BF
+niwatori
+10AA5B00 000011C0
+zombie hai
+10AA5B00 000011C1
+skelengel
+10AA5B00 000011C2
+hane hane
+10AA5B00 000011C3
+misairuzame
+10AA5B00 000011C4
+tongyo
+10AA5B00 000011C5
+kanonen dharma
+10AA5B00 000011C6
+skelgon
+10AA5B00 000011C7
+wow-krieger
+10AA5B00 000011C8
+griggle
+10AA5B00 000011C9
+knochenmaus
+10AA5B00 000011CA
+schleimfrosch
+10AA5B00 000011CB
+behegon
+10AA5B00 000011CC
+dunkler elf
+10AA5B00 000011CD
+geflügelter drache festungswächter
+10AA5B00 000011CE
+pilzmann
+10AA5B00 000011CF
+lavakampfwächter
+10AA5B00 000011D0
+ryhon
+10AA5B00 000011D1
+wandernder verdammter
+10AA5B00 000011D2
+stahl oger grotte
+10AA5B00 000011D3
+pot.der helfer
+10AA5B00 000011D4
+ozillo held
+10AA5B00 000011D5
+eindringling einer anderen dimension
+10AA5B00 000011D6
+geringerer drache
+10AA5B00 000011D7
+nadelwurm
+10AA5B00 000011D8
+elender geist des dachbodens
+10AA5B00 000011D9
+großes mammut von goldfine
+10AA5B00 000011DA
+menschen fressender schwarzer hai
+10AA5B00 000011DB
+yamungarde
+10AA5B00 000011DC
+finsterdornen
+10AA5B00 000011DD
+anthrosaurus
+10AA5B00 000011DE
+schleimechse
+10AA5B00 000011DF
+trakadon
+10AA5B00 000011E0
+schw.drachen-dschungelkönig
+10AA5B00 000011E1
+kaiserliche richerin
+10AA5B00 000011E2
+baby t-rex
+10AA5B00 000011E3
+hexe vom schwarzen wald
+10AA5B00 000011E4
+antiker aus dem tiefen wald
+10AA5B00 000011E5
+riesenskorpion der tundra
+10AA5B00 000011E6
+krähenkobold
+10AA5B00 000011E7
+löwenzauberer
+10AA5B00 000011E8
+abgrundblume
+10AA5B00 000011E9
+spähroboter
+10AA5B00 000011EA
+takuhee
+10AA5B00 000011EB
+dunkle hexe
+10AA5B00 000011EC
+wetterbericht
+10AA5B00 000011ED
+bindende kette
+10AA5B00 000011EE
+mechanische schnecke
+10AA5B00 000011EF
+greenkappa
+10AA5B00 000011F0
+mon larvas
+10AA5B00 000011F1
+lebende vase
+10AA5B00 000011F2
+tentakelpflanze
+10AA5B00 000011F3
+schnabelschlange
+10AA5B00 000011F4
+verwandlungskrug
+10AA5B00 000011F5
+a-muse
+10AA5B00 000011F6
+flammen fressende riesenschildkröte
+10AA5B00 000011F7
+rosengespenst von dunn
+10AA5B00 000011F8
+unterweltlerreflektion
+10AA5B00 000011F9
+unersättlicher leichenfledderer
+10AA5B00 000011FA
+bleiche bestie
+10AA5B00 000011FB
+kleine schimäre
+10AA5B00 000011FC
+gewaltätiger regen
+10AA5B00 000011FD
+schlüsselkeule
+10AA5B00 000011FE
+zartheit
+10AA5B00 000011FF
+

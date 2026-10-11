@@ -1,0 +1,26 @@
+"Cabela's Outdoor Adventures 2010"
+Elf: SLUS_219.06
+Enable Code(Must Be On)
+9011F078 0C047BC6
+God Mode
+007CA960 00000001
+God Mode (ASM)
+0050280C 00000001
+Freeze Animals
+00809CE8 00000001
+Freeze Animals (ASM)
+005594A8 00000001
+Stealthy
+007E7458 00000001
+Stealthy (ASM)
+0050AA10 00000001
+Never Reload
+20532E54 24420000
+Trophy Points <-- Needs testing
+207E2BF0 000001B8
+Infinite Time(Disable Clock)
+Green bar will decrease once theres no more time left, the
+clock will disappear
+205435B0 00000000
+Hacked By Azagthoth, Skiller
+

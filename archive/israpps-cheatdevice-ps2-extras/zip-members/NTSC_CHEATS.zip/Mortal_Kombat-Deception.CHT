@@ -1,0 +1,2175 @@
+"Mortal Kombat-Deception"
+Enable Code (Must Be On)
+901188A0 0C079A34
+Infinite Time
+205E4554 0000003C
+Infinite Health P1
+205E4400 3F800000
+75% Health P1
+D05E4402 00003F80
+205E4400 3F400000
+50% Health P1
+D05E4402 00003F80
+205E4400 3F000000
+25% Health P1
+D05E4402 00003F80
+205E4400 3E800000
+1-Hit Death P1
+D05E4402 00003F80
+205E4400 3C23D70A
+No Health P1
+205E4400 00000000
+P1 Needs 1 Win To Win
+D05E4434 00000000
+205E4434 00000001
+P1 Never Wins
+205E4434 00000000
+P1 Press L2+R2 To Go Straight To Finish Him/Her
+E002FCFF 0061E802
+205E4434 00000001
+205E446C 00000000
+Infinite Health P2
+205E446C 3F800000
+75% Health P2
+D05E446E 00003F80
+205E446C 3F400000
+50% Health P2
+D05E446E 00003F80
+205E446C 3F000000
+25% Health P2
+D05E446E 00003F80
+205E446C 3E800000
+1-Hit Death P2
+D05E446E 00003F80
+205E446C 3C23D70A
+No Health P2
+205E446C 00000000
+P2 Needs 1 Win To Win
+D05E44A0 00000000
+205E44A0 00000001
+P2 Never Wins
+205E44A0 00000000
+P2 Press L2+R2 To Go Straight To Finish Him/Her
+E002FCFF 0061E702
+205E44A0 00000001
+205E4400 00000000
+Hit Anywhere-Normal Attacks (Both Players)
+201F7BF4 00000000
+101F7D1E 00001000
+Hit Anywhere-Charging Special Moves (Both Players)
+201F743C 00000000
+101F7532 00001000
+Projectiles Hit Instantly (Both Players)
+103CF496 00001000
+Spear Hits Instantly (Both Players)
+1025EA3A 00001000
+Tele-Kinetic Slam Hit Anywhere-Instantly (Both Players)
+201FB8EC 00000000
+Hyper Mode
+205D628C 40000000
+Super Hyper Mode
+205D628C 40800000
+Slow Motion
+205D628C 3F000000
+P1 Press Up+Select For Hyper Mode
+D061E802 0000FFEE
+205D628C 40000000
+P1 Press Right+Select For Super Hyper Mode
+D061E802 0000FFDE
+205D628C 40800000
+P1 Press Down+Select For Normal Mode
+D061E802 0000FFBE
+205D628C 3F800000
+P1 Press Left+Select For Slow Motion
+D061E802 0000FF7E
+205D628C 3F000000
+No Fatality Time
+1017027C 00000001
+101704A0 00000001
+Fatality Time X2
+1017027C 00000348
+101704A0 00000258
+Fatality Time X3
+1017027C 000004EC
+101704A0 00000384
+Fatality Time X4
+1017027C 00000690
+101704A0 000004B0
+Fatality Time X5
+1017027C 00000834
+101704A0 000005DC
+Fatality Time X6
+1017027C 000009D8
+101704A0 00000708
+Fatality Time X7
+1017027C 00000B7C
+101704A0 00000834
+Fatality Time X8
+1017027C 00000D20
+101704A0 00000960
+Fatality Time X9
+1017027C 00000EC4
+101704A0 00000A8C
+Fatality Time X10
+1017027C 00001068
+101704A0 00000BB8
+Super Long Fatality Time
+1017027C 00004000
+101704A0 00004000
+Infinite Krypt Koins Usage
+203F1F90 00000000
+Buying Krypt Items Increases Koins
+203F1F8C 02541021
+Buy Krypt Item For Max Koins
+203F1F8C 2402270F
+Unlock All Arenas
+205D4D08 FFFFFFFF
+Unlock All Characters
+205D4E10 FFFFFFFF
+Unlock All Puzzle Kombat Characters
+205D4E18 FFFFFFFF
+Unlock All Costumes
+205E47A8 FFFFFFFF
+Unlock All Soundtracks
+205E47B8 FFFFFFFF
+Arcade Mode Codes
+Win 1st Fight To Beat Game
+203E7B24 24100008
+Start On 2nd Fight
+D05D72D4 00000000
+105D72D4 00000001
+Start On 3rd Fight
+D05D72D4 00000000
+105D72D4 00000002
+Start On 4th Fight
+D05D72D4 00000000
+105D72D4 00000003
+Start On 5th Fight
+D05D72D4 00000000
+105D72D4 00000004
+Start On 6th Fight
+D05D72D4 00000000
+105D72D4 00000005
+Start On 7th Fight
+D05D72D4 00000000
+105D72D4 00000006
+Start On 8th Fight
+D05D72D4 00000000
+105D72D4 00000007
+Chess Kombat Mode Codes
+Infinite Spell Usage (Both Sides)
+20398CC8 00000000
+P1 Hold Select, Then Press L1 To Have All Spells
+200C0220 24020000
+200C0224 03E00008
+200C0228 AE22008C
+D061E802 0000FBFE
+20397B00 0C030088
+D061E802 0000FFFF
+20397B00 8E22008C
+Puzzle Kombat Mode Codes
+Max Score P1
+202E3D1C 240203E7
+No Score P1
+202E3D1C 24020000
+Max Score P2
+202E3DC0 240203E7
+No Score P2
+202E3DC0 24020000
+Max Super P1
+202D8330 E46104FC
+No Super P1
+202D8330 AC6004FC
+Max Super P2
+202D8368 E46104FC
+D0315FDE 00001064
+20315FDC 00000000
+No Super P2
+202D8368 AC6004FC
+D0315FDE 00001064
+20315FDC 00000000
+P1 Never Gets Pieces
+202D8334 24010000
+202D833C AC6104DC
+P1 Instant Death
+202D8334 2401000A
+202D833C AC6104DC
+P2 Never Gets Pieces
+202D836C 24010000
+202D8374 AC6104DC
+D0315FDE 00001064
+20315FDC 00000000
+P2 Instant Death
+202D836C 2401000A
+202D8374 AC6104DC
+D0315FDE 00001064
+20315FDC 00000000
+P1 Always Gets Pieces
+200C0230 0212082B
+200C0234 2403000A
+200C0238 50200003
+200C023C AE0304DC
+200C0240 03E00008
+200C0244 00000000
+202DC2C8 0C03008C
+P2 Always Gets Pieces
+200C0250 0212082B
+200C0254 2403000A
+200C0258 54200003
+200C025C AE0304DC
+200C0260 03E00008
+200C0264 00000000
+202DC2DC 0C030094
+Saved Profile Codes
+Memory Card 1-Profile 1 Codes
+Max CPU Fights Won
+205E48A4 0000270F
+Max CPU Fights
+205E48A8 0000270F
+Max 2-Player Fights Won
+205E48AC 0000270F
+Max 2-Player Fights
+205E48B0 0000270F
+Infinite Platinum Koins
+205E48C8 0000270F
+Infinite Onyx Koins
+205E48CC 0000270F
+Infinite Sapphire Koins
+205E48D0 0000270F
+Infinite Jade Koins
+205E48D4 0000270F
+Infinite Ruby Koins
+205E48D8 0000270F
+Infinite Gold Koins
+205E48DC 0000270F
+Have All Krypts Purchased
+405E4940 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205E49E8 FFFFFFFF
+Memory Card 1-Profile 2 Codes
+Max CPU Fights Won
+205E75A4 0000270F
+Max CPU Fights
+205E75A8 0000270F
+Max 2-Player Fights Won
+205E75AC 0000270F
+Max 2-Player Fights
+205E75B0 0000270F
+Infinite Platinum Koins
+205E75C8 0000270F
+Infinite Onyx Koins
+205E75CC 0000270F
+Infinite Sapphire Koins
+205E75D0 0000270F
+Infinite Jade Koins
+205E75D4 0000270F
+Infinite Ruby Koins
+205E75D8 0000270F
+Infinite Gold Koins
+205E75DC 0000270F
+Have All Krypts Purchased
+405E7640 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205E76E8 FFFFFFFF
+Memory Card 1-Profile 3 Codes
+Max CPU Fights Won
+205EA2A4 0000270F
+Max CPU Fights
+205EA2A8 0000270F
+Max 2-Player Fights Won
+205EA2AC 0000270F
+Max 2-Player Fights
+205EA2B0 0000270F
+Infinite Platinum Koins
+205EA2C8 0000270F
+Infinite Onyx Koins
+205EA2CC 0000270F
+Infinite Sapphire Koins
+205EA2D0 0000270F
+Infinite Jade Koins
+205EA2D4 0000270F
+Infinite Ruby Koins
+205EA2D8 0000270F
+Infinite Gold Koins
+205EA2DC 0000270F
+Have All Krypts Purchased
+405EA340 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205EA3E8 FFFFFFFF
+Memory Card 1-Profile 4 Codes
+Max CPU Fights Won
+205ECFA4 0000270F
+Max CPU Fights
+205ECFA8 0000270F
+Max 2-Player Fights Won
+205ECFAC 0000270F
+Max 2-Player Fights
+205ECFB0 0000270F
+Infinite Platinum Koins
+205ECFC8 0000270F
+Infinite Onyx Koins
+205ECFCC 0000270F
+Infinite Sapphire Koins
+205ECFD0 0000270F
+Infinite Jade Koins
+205ECFD4 0000270F
+Infinite Ruby Koins
+205ECFD8 0000270F
+Infinite Gold Koins
+205ECFDC 0000270F
+Have All Krypts Purchased
+405ED040 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205ED0E8 FFFFFFFF
+Memory Card 1-Profile 5 Codes
+Max CPU Fights Won
+205EFCA4 0000270F
+Max CPU Fights
+205EFCA8 0000270F
+Max 2-Player Fights Won
+205EFCAC 0000270F
+Max 2-Player Fights
+205EFCB0 0000270F
+Infinite Platinum Koins
+205EFCC8 0000270F
+Infinite Onyx Koins
+205EFCCC 0000270F
+Infinite Sapphire Koins
+205EFCD0 0000270F
+Infinite Jade Koins
+205EFCD4 0000270F
+Infinite Ruby Koins
+205EFCD8 0000270F
+Infinite Gold Koins
+205EFCDC 0000270F
+Have All Krypts Purchased
+405EFD40 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205EFDE8 FFFFFFFF
+Memory Card 1-Profile 6 Codes
+Max CPU Fights Won
+205F29A4 0000270F
+Max CPU Fights
+205F29A8 0000270F
+Max 2-Player Fights Won
+205F29AC 0000270F
+Max 2-Player Fights
+205F29B0 0000270F
+Infinite Platinum Koins
+205F29C8 0000270F
+Infinite Onyx Koins
+205F29CC 0000270F
+Infinite Sapphire Koins
+205F29D0 0000270F
+Infinite Jade Koins
+205F29D4 0000270F
+Infinite Ruby Koins
+205F29D8 0000270F
+Infinite Gold Koins
+205F29DC 0000270F
+Have All Krypts Purchased
+405F2A40 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205F2AE8 FFFFFFFF
+Memory Card 1-Profile 7 Codes
+Max CPU Fights Won
+205F56A4 0000270F
+Max CPU Fights
+205F56A8 0000270F
+Max 2-Player Fights Won
+205F56AC 0000270F
+Max 2-Player Fights
+205F56B0 0000270F
+Infinite Platinum Koins
+205F56C8 0000270F
+Infinite Onyx Koins
+205F56CC 0000270F
+Infinite Sapphire Koins
+205F56D0 0000270F
+Infinite Jade Koins
+205F56D4 0000270F
+Infinite Ruby Koins
+205F56D8 0000270F
+Infinite Gold Koins
+205F56DC 0000270F
+Have All Krypts Purchased
+405F5740 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205F57E8 FFFFFFFF
+Memory Card 1-Profile 8 Codes
+Max CPU Fights Won
+205F83A4 0000270F
+Max CPU Fights
+205F83A8 0000270F
+Max 2-Player Fights Won
+205F83AC 0000270F
+Max 2-Player Fights
+205F83B0 0000270F
+Infinite Platinum Koins
+205F83C8 0000270F
+Infinite Onyx Koins
+205F83CC 0000270F
+Infinite Sapphire Koins
+205F83D0 0000270F
+Infinite Jade Koins
+205F83D4 0000270F
+Infinite Ruby Koins
+205F83D8 0000270F
+Infinite Gold Koins
+205F83DC 0000270F
+Have All Krypts Purchased
+405F8440 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205F84E8 FFFFFFFF
+Memory Card 2-Profile 1 Codes
+Max CPU Fights Won
+205FB0A4 0000270F
+Max CPU Fights
+205FB0A8 0000270F
+Max 2-Player Fights Won
+205FB0AC 0000270F
+Max 2-Player Fights
+205FB0B0 0000270F
+Infinite Platinum Koins
+205FB0C8 0000270F
+Infinite Onyx Koins
+205FB0CC 0000270F
+Infinite Sapphire Koins
+205FB0D0 0000270F
+Infinite Jade Koins
+205FB0D4 0000270F
+Infinite Ruby Koins
+205FB0D8 0000270F
+Infinite Gold Koins
+205FB0DC 0000270F
+Have All Krypts Purchased
+405FB140 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205FB1E8 FFFFFFFF
+Memory Card 2-Profile 2 Codes
+Max CPU Fights Won
+205FDDA4 0000270F
+Max CPU Fights
+205FDDA8 0000270F
+Max 2-Player Fights Won
+205FDDAC 0000270F
+Max 2-Player Fights
+205FDDB0 0000270F
+Infinite Platinum Koins
+205FDDC8 0000270F
+Infinite Onyx Koins
+205FDDCC 0000270F
+Infinite Sapphire Koins
+205FDDD0 0000270F
+Infinite Jade Koins
+205FDDD4 0000270F
+Infinite Ruby Koins
+205FDDD8 0000270F
+Infinite Gold Koins
+205FDDDC 0000270F
+Have All Krypts Purchased
+405FDE40 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+205FDEE8 FFFFFFFF
+Memory Card 2-Profile 3 Codes
+Max CPU Fights Won
+20600AA4 0000270F
+Max CPU Fights
+20600AA8 0000270F
+Max 2-Player Fights Won
+20600AAC 0000270F
+Max 2-Player Fights
+20600AB0 0000270F
+Infinite Platinum Koins
+20600AC8 0000270F
+Infinite Onyx Koins
+20600ACC 0000270F
+Infinite Sapphire Koins
+20600AD0 0000270F
+Infinite Jade Koins
+20600AD4 0000270F
+Infinite Ruby Koins
+20600AD8 0000270F
+Infinite Gold Koins
+20600ADC 0000270F
+Have All Krypts Purchased
+40600B40 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+20600BE8 FFFFFFFF
+Memory Card 2-Profile 4 Codes
+Max CPU Fights Won
+206037A4 0000270F
+Max CPU Fights
+206037A8 0000270F
+Max 2-Player Fights Won
+206037AC 0000270F
+Max 2-Player Fights
+206037B0 0000270F
+Infinite Platinum Koins
+206037C8 0000270F
+Infinite Onyx Koins
+206037CC 0000270F
+Infinite Sapphire Koins
+206037D0 0000270F
+Infinite Jade Koins
+206037D4 0000270F
+Infinite Ruby Koins
+206037D8 0000270F
+Infinite Gold Koins
+206037DC 0000270F
+Have All Krypts Purchased
+40603840 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+206038E8 FFFFFFFF
+Memory Card 2-Profile 5 Codes
+Max CPU Fights Won
+206064A4 0000270F
+Max CPU Fights
+206064A8 0000270F
+Max 2-Player Fights Won
+206064AC 0000270F
+Max 2-Player Fights
+206064B0 0000270F
+Infinite Platinum Koins
+206064C8 0000270F
+Infinite Onyx Koins
+206064CC 0000270F
+Infinite Sapphire Koins
+206064D0 0000270F
+Infinite Jade Koins
+206064D4 0000270F
+Infinite Ruby Koins
+206064D8 0000270F
+Infinite Gold Koins
+206064DC 0000270F
+Have All Krypts Purchased
+40606540 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+206065E8 FFFFFFFF
+Memory Card 2-Profile 6 Codes
+Max CPU Fights Won
+206091A4 0000270F
+Max CPU Fights
+206091A8 0000270F
+Max 2-Player Fights Won
+206091AC 0000270F
+Max 2-Player Fights
+206091B0 0000270F
+Infinite Platinum Koins
+206091C8 0000270F
+Infinite Onyx Koins
+206091CC 0000270F
+Infinite Sapphire Koins
+206091D0 0000270F
+Infinite Jade Koins
+206091D4 0000270F
+Infinite Ruby Koins
+206091D8 0000270F
+Infinite Gold Koins
+206091DC 0000270F
+Have All Krypts Purchased
+40609240 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+206092E8 FFFFFFFF
+Memory Card 2-Profile 7 Codes
+Max CPU Fights Won
+2060BEA4 0000270F
+Max CPU Fights
+2060BEA8 0000270F
+Max 2-Player Fights Won
+2060BEAC 0000270F
+Max 2-Player Fights
+2060BEB0 0000270F
+Infinite Platinum Koins
+2060BEC8 0000270F
+Infinite Onyx Koins
+2060BECC 0000270F
+Infinite Sapphire Koins
+2060BED0 0000270F
+Infinite Jade Koins
+2060BED4 0000270F
+Infinite Ruby Koins
+2060BED8 0000270F
+Infinite Gold Koins
+2060BEDC 0000270F
+Have All Krypts Purchased
+4060BF40 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+2060BFE8 FFFFFFFF
+Memory Card 2-Profile 8 Codes
+Max CPU Fights Won
+2060EBA4 0000270F
+Max CPU Fights
+2060EBA8 0000270F
+Max 2-Player Fights Won
+2060EBAC 0000270F
+Max 2-Player Fights
+2060EBB0 0000270F
+Infinite Platinum Koins
+2060EBC8 0000270F
+Infinite Onyx Koins
+2060EBCC 0000270F
+Infinite Sapphire Koins
+2060EBD0 0000270F
+Infinite Jade Koins
+2060EBD4 0000270F
+Infinite Ruby Koins
+2060EBD8 0000270F
+Infinite Gold Koins
+2060EBDC 0000270F
+Have All Krypts Purchased
+4060EC40 000E0001
+FFFFFFFF 00000000
+Unlock All Endings
+2060ECE8 FFFFFFFF
+1-Button Hara-Kiri Codes
+Nightwolf-Throw Axe Up, Falls To Stab-Press X
+205016DC FFFFFFFF
+Bo' Rai Chi-Body Exploding-Press Triangle
+205016FC FFFFFFFF
+Scorpion-Neck Break-Press Square
+2050171C FFFFFFFF
+Baraka-Blade Decapitation-Press Circle
+2050173C FFFFFFFF
+Sub-Zero-Freeze & Shatter-Press Triangle
+2050175C FFFFFFFF
+Mileena-Dagger Stabs To The Head-Press Square
+2050177C FFFFFFFF
+Ermac-Head Bang Into The Ground-Press X
+2050179C FFFFFFFF
+Ashrah-Spin Apart-Press Triangle
+205017BC FFFFFFFF
+Sindel-Jump & Land On Head-Press Circle
+205017DC FFFFFFFF
+Li Mei-Throw Sword Up, Falls To Decapitate-Press X
+205017FC FFFFFFFF
+Hotaru-Head Rip-Press Triangle
+2050181C FFFFFFFF
+Kenshi-Sword Slice-Press Circle
+2050183C FFFFFFFF
+Havik-Rip Off Head-Press Triangle
+2050185C FFFFFFFF
+Tanya-Sai Stab-Press X
+2050187C FFFFFFFF
+Liu Kang-Energy Melt-Press X
+2050189C FFFFFFFF
+Kira-Dagger Stab-Press X
+205018BC FFFFFFFF
+Kabal-Head Stab-Press Triangle
+205018DC FFFFFFFF
+Kobra-Rip Heart Out-Press Triangle
+205018FC FFFFFFFF
+Jade-Boomerang Decapitation-Press Triangle
+2050191C FFFFFFFF
+Dairou-Rip Legs Up To Body-Press Square
+2050193C FFFFFFFF
+Raiden-Electrocution Explosion-Press Square
+2050195C FFFFFFFF
+Darrius-Head Smash-Press Triangle
+2050197C FFFFFFFF
+Noob-Smoke-Ninja Stars Up, Falls To Stab-Press Circle
+205019BC FFFFFFFF
+1-Button Fatalities Codes (Use Proper Distance)
+Bo' Rai Cho-Drink, Puke, Flame Thrower-Press Triangle
+20501A10 FFFFFFFF
+Bo' Rai Cho-Fart & Throw Gas-Press X
+20501A3C FFFFFFFF
+Li Mei-Punch Beatdown & Explode-Press Square
+20501AA0 FFFFFFFF
+Li Mei-Fatality 2-Press Circle
+20501B20 FFFFFFFF
+Hotaru-Fatality 1-Press Square
+20501B60 FFFFFFFF
+Hotaru-Fatality 1-Dunno Button
+20501B8C FFFFFFFF
+Nightwolf-Fatality 1-Press Square
+20501BF4 FFFFFFFF
+Nightwolf-Slice Head Off & Catch It-Press Triangle
+20501C1C FFFFFFFF
+Ermac-Float & Smash Into Ground-Press X
+20501CD0 FFFFFFFF
+Ermac-Energy Ball Stretch-Press Circle
+20501D14 FFFFFFFF
+Mileena-Demask, Bite, Head Rip-Press Square
+20501D3C FFFFFFFF
+Mileena-Fatality 2-Press X
+20501D7C FFFFFFFF
+Ashrah-Super Hot Flaming Melt-Press Triangle
+20501DFC FFFFFFFF
+Ashrah-Voodoo Dummy Attack-Press Triangle
+20501E18 FFFFFFFF
+Sindel-Screaming Fan-Press Square
+20501EA4 FFFFFFFF
+Sindel-Fatality 2-Press X
+20501EE0 FFFFFFFF
+Baraka-Slice, Dice & Pull Middle Out-Press Triangle
+20501F2C FFFFFFFF
+Baraka-Decapitate & Catch Head-Press Triangle
+20501F44 FFFFFFFF
+Kenshi-Fatality 1-Press Triangle
+20501FD0 FFFFFFFF
+Kenshi-Fatality 2-Press Triangle
+20501FEC FFFFFFFF
+Sub-Zero-Freeze, Sweep & Smash-Press Square
+20502070 FFFFFFFF
+Sub-Zero-Freeze, Rip & Throw Head-Press Triangle
+2050209C FFFFFFFF
+Jade-Poll Through The Head, Swing, Rip-Press Square
+20502110 FFFFFFFF
+Jade-Fatality 2-Press Triangle
+20502150 FFFFFFFF
+Scorpion-Spine Rip-Press Square
+205021D0 FFFFFFFF
+Scorpion-Spear Arm/Leg Rip-Press Square
+205021EC FFFFFFFF
+Kabal-Punt & Slice-Press Triangle
+20502320 FFFFFFFF
+Kabal-Spin & Slice Head To Toe-Press X
+2050234C FFFFFFFF
+Noob-Fatality 1-Press Triangle
+205023E0 FFFFFFFF
+Smoke-Fatality 1-Press Triangle
+20502420 FFFFFFFF
+Smoke-Fatality 2-Press X
+20502490 FFFFFFFF
+Noob-Ninja Star To Death-Press Circle
+205024BC FFFFFFFF
+Dairou-Stretch & Pull Apart-Press Square
+205024F4 FFFFFFFF
+Dairou-Rip Out Insides & Stab Into Eyes-Press X
+20502550 FFFFFFFF
+Kobra-Kick Box The Head Off-Press Triangle
+205025C4 FFFFFFFF
+Kobra-Rip Out Heart & Make Them Eat It-Press Circle
+20502600 FFFFFFFF
+Tanya-Knee Rip & Stab In The Neck-Press Square
+20502640 FFFFFFFF
+Tanya-Fatality 2-Press Triangle
+20502694 FFFFFFFF
+Liu Kang-Flaming Explosion-Press Triangle
+20502730 FFFFFFFF
+Liu Kang-Fatality 2-Press X
+20502770 FFFFFFFF
+Raiden-Electrocution Suicide Explosion-Press Square
+205027D0 FFFFFFFF
+Raiden-Fatality 2-Press Square
+205027EC FFFFFFFF
+Kira-Slice, Dice, Kick Body Apart-Press X
+205028A0 FFFFFFFF
+Kira-Fatality 2-Press Circle
+205028E0 FFFFFFFF
+Havik-Eat Arms & Puke It Out-Press Triangle
+20502950 FFFFFFFF
+Havik-Fatality 2-Press Circle
+205029B0 FFFFFFFF
+Darrius-Rearrange Body Parts-Press Square
+205029F0 FFFFFFFF
+Darrius-Arm Rip & Beat Up-Press X
+20502A50 FFFFFFFF
+1-Button Special Moves Codes
+Bo' Rai Cho-Monkey Flips-Press Square
+205019DC FFFFFFFF
+Bo' Rai Cho-Puke Puddle-Press Triangle
+205019FC FFFFFFFF
+Bo' Rai Cho-Earthquake-Press X
+20501A54 FFFFFFFF
+Bo' Rai Cho-Belly Bash-Press Circle
+20501A6C FFFFFFFF
+Li Mei-Nova Blast-Press Square
+20501A8C FFFFFFFF
+Li Mei-Flying Flurry-Press Triangle
+20501ACC FFFFFFFF
+Li Mei-Carnival Spin-Press X
+20501AEC FFFFFFFF
+Li Mei-Flipping Heel Kick-Press Circle
+20501B0C FFFFFFFF
+Hotaru-Lava Burst-Press Square
+20501B4C FFFFFFFF
+Hotaru-Grasshopper-Press Circle
+20501BAC FFFFFFFF
+Nightwolf-Spirit Arrow-Press Square
+20501BCC FFFFFFFF
+Nightwolf-Lightning From Above-Press Square
+20501BE0 FFFFFFFF
+Nightwolf-Reflector-Press Triangle
+20501C38 FFFFFFFF
+Nightwolf-Rhino Charge-Press Circle
+20501C5C FFFFFFFF
+Ermac-Hado-Energy-Press Square
+20501C7C FFFFFFFF
+Ermac-Telekinetic Throw-Press Triangle
+20501C9C FFFFFFFF
+Ermac-Mystic Float-Press X
+20501CBC FFFFFFFF
+Ermac-Tele-Kinetic Slam-Press Circle
+20501CFC FFFFFFFF
+Mileena-Soaring Sai-Press Triangle
+20501D5C FFFFFFFF
+Mileena-Kick From Above-Press Circle
+20501D9C FFFFFFFF
+Mileena-Rolling Thunder-Press Circle
+20501DB0 FFFFFFFF
+Ashrah-Heavenly Light-Press Square
+20501DCC FFFFFFFF
+Ashrah-Lightning Blast-Press Square
+20501DE0 FFFFFFFF
+Ashrah-Spin Cycle-Press X
+20501E3C FFFFFFFF
+Ashrah-Nature's Torpedo-Press Circle
+20501E5C FFFFFFFF
+Sindel-Banshee Scream-Press Square
+20501E7C FFFFFFFF
+Sindel-Sliding Foot Grab-Press Square
+20501E90 FFFFFFFF
+Sindel-Star Screamer-Press X
+20501ECC FFFFFFFF
+Baraka-Flying Shard-Press Square
+20501F0C FFFFFFFF
+Baraka-Chop Chop Blades-Press X
+20501F6C FFFFFFFF
+Baraka-Mutant Blades-Press X
+20501F80 FFFFFFFF
+Kenshi-Telekinetic Slam-Press Square
+20501F9C FFFFFFFF
+Kenshi-Telekinetic Push-Press Triangle
+20501FBC FFFFFFFF
+Kenshi-Mind Warp-Press X
+2050200C FFFFFFFF
+Kenshi-Tele-Flurry-Press X
+20502020 FFFFFFFF
+Kenshi-Telekinetic Toss-Press Circle
+2050203C FFFFFFFF
+Sub-Zero-Ice Clone-Press Square
+2050205C FFFFFFFF
+Sub-Zero-Freeze Ball-Press X
+205020BC FFFFFFFF
+Sub-Zero-Cold Shoulder-Press Circle
+205020DC FFFFFFFF
+Jade-Vanishing Winds-Press Square
+205020FC FFFFFFFF
+Jade-Dodging Shadows-Press Triangle
+2050213C FFFFFFFF
+Jade-Razor-Rang-Press X
+2050217C FFFFFFFF
+Jade-Blazing Nitro Kick-Press Circle
+2050219C FFFFFFFF
+Scorpion-Bloody Spear-Press Square
+205021BC FFFFFFFF
+Scorpion-Hellfire-Press Triangle
+2050220C FFFFFFFF
+Scorpion-Backflip Kick-Press X
+2050222C FFFFFFFF
+Scorpion-Teleport Attack-Press X
+20502240 FFFFFFFF
+Monster-Bloody Spear-Press Square
+2050225C FFFFFFFF
+Monster-Hellfire-Press Square
+2050227C FFFFFFFF
+Monster-Backflip Kick-Press X
+2050229C FFFFFFFF
+Monster-Teleport Attack-Press X
+205022B0 FFFFFFFF
+Kabal-Plasma Blast-Press Square
+205022EC FFFFFFFF
+Kabal-Nomad's Touch-Press Triangle
+2050230C FFFFFFFF
+Kabal-Raging Flash-Press Circle
+2050236C FFFFFFFF
+Noob-Darkness-Press Square
+2050238C FFFFFFFF
+Smoke-Stinky Cloud-Press Square
+205023AC FFFFFFFF
+Noob-We Live-Press Triangle
+205023CC FFFFFFFF
+Smoke-Dark Assassin-Press Triangle
+2050240C FFFFFFFF
+Noob-Death From Above-Press X
+2050244C FFFFFFFF
+Noob-Dark Shadows-Press X
+20502460 FFFFFFFF
+Smoke-Smokeycut-Press Circle
+2050247C FFFFFFFF
+Dairou-Tombstone Drop-Press Square
+205024DC FFFFFFFF
+Dairou-Iron Leg-Press Triangle
+2050251C FFFFFFFF
+Dairou-Stealthy Shadows-Press X
+2050253C FFFFFFFF
+Kobra-Chi-Blast-Press Square
+2050256C FFFFFFFF
+Kobra-Crouching Chi-Blast-Press Square
+20502580 FFFFFFFF
+Kobra-Burning Fist-Press Triangle
+2050259C FFFFFFFF
+Kobra-Tele-Punch-Press Triangle
+205025B0 FFFFFFFF
+Kobra-Windmill Kick-Press Circle
+205025EC FFFFFFFF
+Tanya-Find Me-Press Square
+2050262C FFFFFFFF
+Tanya-Surging Blast-Press Triangle
+2050266C FFFFFFFF
+Tanya-Air Fire Blast-Press Triangle
+20502680 FFFFFFFF
+Tanya-Human Cannon Drill-Press X
+205026BC FFFFFFFF
+Tanya-Split Flip Kick-Press Circle
+205026DC FFFFFFFF
+Liu Kang-Low Dragon Fire-Press Square
+205026FC FFFFFFFF
+Liu Kang-High Dragon Fire-Press Triangle
+2050271C FFFFFFFF
+Liu Kang-Flying Bicycle Kick-Press X
+2050275C FFFFFFFF
+Liu Kang-Flying Kick-Press Circle
+2050279C FFFFFFFF
+Raiden-Lightning Bolt-Press Square
+205027BC FFFFFFFF
+Raiden-Shocking Touch-Press Triangle
+2050280C FFFFFFFF
+Raiden-Static Teleport-Press X
+2050282C FFFFFFFF
+Raiden-Flying Thunder God-Press Circle
+2050284C FFFFFFFF
+Kira-Kiss Of Death-Press Square
+2050286C FFFFFFFF
+Kira-Nightshade-Press X
+2050288C FFFFFFFF
+Kira-Black Dragon Ball-Press Circle
+205028CC FFFFFFFF
+Havik-Torso Spin-Press Square
+2050290C FFFFFFFF
+Havik-Diving Corpse-Press Square
+20502920 FFFFFFFF
+Havik-Head Snap-Press Triangle
+2050293C FFFFFFFF
+Havik-Crackling Legs Projectile-Press X
+20502978 FFFFFFFF
+Havik-Corpse Taunt-Press Circle
+2050299C FFFFFFFF
+Darrius-Chest Cruncher-Press Square
+205029DC FFFFFFFF
+Darrius-Tricky Blast-Press Triangle
+20502A1C FFFFFFFF
+Darrius-Target Practice-Press X
+20502A3C FFFFFFFF
+Darrius-Twisty Kick-Press Circle
+20502A7C FFFFFFFF
+Onaga-Ground Stomp-Press Square
+20502B9C FFFFFFFF
+Onaga-Flame Spit-Press Square
+20502BB0 FFFFFFFF
+Onaga-Fireball-Press Square
+20502BC4 FFFFFFFF
+Onaga-Powerslam-Press Triangle
+20502BDC FFFFFFFF
+Onaga-Wind Gust-Press X
+20502BFC FFFFFFFF
+2-Button Special Moves Codes (Part 1)
+Bo' Rai Cho-Monkey Flips-Press Forward+Square
+205019DC 80000001
+205019E0 FFFFFFFF
+Bo' Rai Cho-Puke Puddle-Press Forward+Triangle
+205019FC 80000001
+20501A00 FFFFFFFF
+Bo' Rai Cho-Earthquake-Press Forward+X
+20501A54 80000001
+20501A58 FFFFFFFF
+Bo' Rai Cho-Belly Bash-Press Forward+Circle
+20501A6C 80000001
+20501A70 FFFFFFFF
+Li Mei-Nova Blast-Press Forward+Square
+20501A8C 80000001
+20501A90 FFFFFFFF
+Li Mei-Flying Flurry-Press Forward+Triangle
+20501ACC 80000001
+20501AD0 FFFFFFFF
+Li Mei-Carnival Spin-Press Forward+X
+20501AEC 80000001
+20501AF0 FFFFFFFF
+Li Mei-Flipping Heel Kick-Press Forward+Circle
+20501B0C 80000001
+20501B10 FFFFFFFF
+Hotaru-Lava Burst-Press Forward+Square
+20501B4C 80000001
+20501B50 FFFFFFFF
+Hotaru-Grasshopper-Press Forward+Circle
+20501BAC 80000001
+20501BB0 FFFFFFFF
+Nightwolf-Spirit Arrow-Press Forward+Square
+20501BCC 80000001
+20501BD0 FFFFFFFF
+Nightwolf-Lightning Above-Press Forward+Square
+20501BE0 80000001
+20501BE4 FFFFFFFF
+Nightwolf-Reflector-Press Forward+Triangle
+20501C38 80000001
+20501C3C FFFFFFFF
+Nightwolf-Rhino Charge-Press Forward+Circle
+20501C5C 80000001
+20501C60 FFFFFFFF
+Ermac-Hado-Energy-Press Forward+Square
+20501C7C 80000001
+20501C80 FFFFFFFF
+Ermac-Telekinetic Throw-Press Forward+Triangle
+20501C9C 80000001
+20501CA0 FFFFFFFF
+Ermac-Mystic Float-Press Forward+X
+20501CBC 80000001
+20501CC0 FFFFFFFF
+Ermac-Tele-Kinetic Slam-Press Forward+Circle
+20501CFC 80000001
+20501D00 FFFFFFFF
+Mileena-Soaring Sai-Press Forward+Triangle
+20501D5C 80000001
+20501D60 FFFFFFFF
+Mileena-Kick From Above-Press Forward+Circle
+20501D9C 80000001
+20501DA0 FFFFFFFF
+Mileena-Rolling Thunder-Press Forward+Circle
+20501DB0 80000001
+20501DB4 FFFFFFFF
+Ashrah-Heavenly Light-Press Forward+Square
+20501DCC 80000001
+20501DD0 FFFFFFFF
+Ashrah-Lightning Blast-Press Forward+Square
+20501DE0 80000001
+20501DE4 FFFFFFFF
+Ashrah-Spin Cycle-Press Forward+X
+20501E3C 80000001
+20501E40 FFFFFFFF
+Ashrah-Nature's Torpedo-Press Forward+Circle
+20501E5C 80000001
+20501E60 FFFFFFFF
+Sindel-Banshee Scream-Press Forward+Square
+20501E7C 80000001
+20501E80 FFFFFFFF
+Sindel-Sliding Foot Grab-Press Forward+Square
+20501E90 80000001
+20501E94 FFFFFFFF
+Sindel-Star Screamer-Press Forward+X
+20501ECC 80000001
+20501ED0 FFFFFFFF
+Baraka-Flying Shard-Press Forward+Square
+20501F0C 80000001
+20501F10 FFFFFFFF
+Baraka-Chop Chop Blades-Press Forward+X
+20501F6C 80000001
+20501F70 FFFFFFFF
+Baraka-Mutant Blades-Press Forward+X
+20501F80 80000001
+20501F84 FFFFFFFF
+Kenshi-Telekinetic Slam-Press Forward+Square
+20501F9C 80000001
+20501FA0 FFFFFFFF
+Kenshi-Telekinetic Push-Press Forward+Triangle
+20501FBC 80000001
+20501FC0 FFFFFFFF
+Kenshi-Mind Warp-Press Forward+X
+2050200C 80000001
+20502010 FFFFFFFF
+Kenshi-Tele-Flurry-Press Forward+X
+20502020 80000001
+20502024 FFFFFFFF
+Kenshi-Telekinetic Toss-Press Forward+Circle
+2050203C 80000001
+20502040 FFFFFFFF
+Sub-Zero-Ice Clone-Press Forward+Square
+2050205C 80000001
+20502060 FFFFFFFF
+Sub-Zero-Freeze Ball-Press Forward+X
+205020BC 80000001
+205020C0 FFFFFFFF
+Sub-Zero-Cold Shoulder-Press Forward+Circle
+205020DC 80000001
+205020E0 FFFFFFFF
+Jade-Vanishing Winds-Press Forward+Square
+205020FC 80000001
+20502100 FFFFFFFF
+Jade-Dodging Shadows-Press Forward+Triangle
+2050213C 80000001
+20502140 FFFFFFFF
+Jade-Razor-Rang-Press Forward+X
+2050217C 80000001
+20502180 FFFFFFFF
+Jade-Blazing Nitro Kick-Press Forward+Circle
+2050219C 80000001
+205021A0 FFFFFFFF
+Scorpion-Bloody Spear-Press Forward+Square
+205021BC 80000001
+205021C0 FFFFFFFF
+Scorpion-Hellfire-Press Forward+Triangle
+2050220C 80000001
+20502210 FFFFFFFF
+Scorpion-Backflip Kick-Press Forward+X
+2050222C 80000001
+20502230 FFFFFFFF
+Scorpion-Teleport Attack-Press Forward+X
+20502240 80000001
+20502244 FFFFFFFF
+Monster-Bloody Spear-Press Forward+Square
+2050225C 80000001
+20502260 FFFFFFFF
+Monster-Hellfire-Press Forward+Square
+2050227C 80000001
+20502280 FFFFFFFF
+Monster-Backflip Kick-Press Forward+X
+2050229C 80000001
+205022A0 FFFFFFFF
+Monster-Teleport Attack-Press Forward+X
+205022B0 80000001
+205022B4 FFFFFFFF
+Kabal-Plasma Blast-Press Forward+Square
+205022EC 80000001
+205022F0 FFFFFFFF
+Kabal-Nomad's Touch-Press Forward+Triangle
+2050230C 80000001
+20502310 FFFFFFFF
+Kabal-Raging Flash-Press Forward+Circle
+2050236C 80000001
+20502370 FFFFFFFF
+Noob-Darkness-Press Forward+Square
+2050238C 80000001
+20502390 FFFFFFFF
+Smoke-Stinky Cloud-Press Forward+Square
+205023AC 80000001
+205023B0 FFFFFFFF
+Noob-We Live-Press Forward+Triangle
+205023CC 80000001
+205023D0 FFFFFFFF
+Smoke-Dark Assassin-Press Forward+Triangle
+2050240C 80000001
+20502410 FFFFFFFF
+Noob-Death From Above-Press Forward+X
+2050244C 80000001
+20502450 FFFFFFFF
+Noob-Dark Shadows-Press Forward+X
+20502460 80000001
+20502464 FFFFFFFF
+Smoke-Smokeycut-Press Forward+Circle
+2050247C 80000001
+20502480 FFFFFFFF
+Dairou-Tombstone Drop-Press Forward+Square
+205024DC 80000001
+205024E0 FFFFFFFF
+Dairou-Iron Leg-Press Forward+Triangle
+2050251C 80000001
+20502520 FFFFFFFF
+Dairou-Stealthy Shadows-Press Forward+X
+2050253C 80000001
+20502540 FFFFFFFF
+Kobra-Chi-Blast-Press Forward+Square
+2050256C 80000001
+20502570 FFFFFFFF
+Kobra-Crouching Chi-Blast-Press Forward+Square
+20502580 80000001
+20502584 FFFFFFFF
+Kobra-Burning Fist-Press Forward+Triangle
+2050259C 80000001
+205025A0 FFFFFFFF
+Kobra-Tele-Punch-Press Forward+Triangle
+205025B0 80000001
+205025B4 FFFFFFFF
+Kobra-Windmill Kick-Press Forward+Circle
+205025EC 80000001
+205025F0 FFFFFFFF
+Tanya-Find Me-Press Forward+Square
+2050262C 80000001
+20502630 FFFFFFFF
+Tanya-Surging Blast-Press Forward+Triangle
+2050266C 80000001
+20502670 FFFFFFFF
+Tanya-Air Fire Blast-Press Forward+Triangle
+20502680 80000001
+20502684 FFFFFFFF
+Tanya-Human Cannon Drill-Press Forward+X
+205026BC 80000001
+205026C0 FFFFFFFF
+Tanya-Split Flip Kick-Press Forward+Circle
+205026DC 80000001
+205026E0 FFFFFFFF
+Liu Kang-Low Dragon Fire-Press Forward+Square
+205026FC 80000001
+20502700 FFFFFFFF
+Liu Kang-High Dragon Fire-Press Forward+Triangle
+2050271C 80000001
+20502720 FFFFFFFF
+Liu Kang-Flying Bicycle Kick-Press Forward+X
+2050275C 80000001
+20502760 FFFFFFFF
+Liu Kang-Flying Kick-Press Forward+Circle
+2050279C 80000001
+205027A0 FFFFFFFF
+Raiden-Lightning Bolt-Press Forward+Square
+205027BC 80000001
+205027C0 FFFFFFFF
+Raiden-Shocking Touch-Press Forward+Triangle
+2050280C 80000001
+20502810 FFFFFFFF
+Raiden-Static Teleport-Press Forward+X
+2050282C 80000001
+20502830 FFFFFFFF
+Raiden-Flying Thunder God-Press Forward+Circle
+2050284C 80000001
+20502850 FFFFFFFF
+Kira-Kiss Of Death-Press Forward+Square
+2050286C 80000001
+20502870 FFFFFFFF
+Kira-Nightshade-Press Forward+X
+2050288C 80000001
+20502890 FFFFFFFF
+Kira-Black Dragon Ball-Press Forward+Circle
+205028CC 80000001
+205028D0 FFFFFFFF
+Havik-Torso Spin-Press Forward+Square
+2050290C 80000001
+20502910 FFFFFFFF
+Havik-Diving Corpse-Press Forward+Square
+20502920 80000001
+20502924 FFFFFFFF
+Havik-Head Snap-Press Forward+Triangle
+2050293C 80000001
+20502940 FFFFFFFF
+Havik-Crackling Legs Projectile-Press Forward+X
+20502978 80000001
+2050297C FFFFFFFF
+Havik-Corpse Taunt-Press Forward+Circle
+2050299C 80000001
+205029A0 FFFFFFFF
+Darrius-Chest Cruncher-Press Forward+Square
+205029DC 80000001
+205029E0 FFFFFFFF
+Darrius-Tricky Blast-Press Forward+Triangle
+20502A1C 80000001
+20502A20 FFFFFFFF
+Darrius-Target Practice-Press Forward+X
+20502A3C 80000001
+20502A40 FFFFFFFF
+Darrius-Twisty Kick-Press Forward+Circle
+20502A7C 80000001
+20502A80 FFFFFFFF
+Onaga-Ground Stomp-Press Forward+Square
+20502B9C 80000001
+20502BA0 FFFFFFFF
+Onaga-Flame Spit-Press Forward+Square
+20502BB0 80000001
+20502BB4 FFFFFFFF
+Onaga-Fireball-Press Forward+Square
+20502BC4 80000001
+20502BC8 FFFFFFFF
+Onaga-Powerslam-Press Forward+Triangle
+20502BDC 80000001
+20502BE0 FFFFFFFF
+Onaga-Wind Gust-Press Forward+X
+20502BFC 80000001
+20502C00 FFFFFFFF
+2-Button Special Moves Codes (Part 2)
+Bo' Rai Cho-Monkey Flips-Press Back+Square
+205019DC 80000002
+205019E0 FFFFFFFF
+Bo' Rai Cho-Puke Puddle-Press Back+Triangle
+205019FC 80000002
+20501A00 FFFFFFFF
+Bo' Rai Cho-Earthquake-Press Back+X
+20501A54 80000002
+20501A58 FFFFFFFF
+Bo' Rai Cho-Belly Bash-Press Back+Circle
+20501A6C 80000002
+20501A70 FFFFFFFF
+Li Mei-Nova Blast-Press Back+Square
+20501A8C 80000002
+20501A90 FFFFFFFF
+Li Mei-Flying Flurry-Press Back+Triangle
+20501ACC 80000002
+20501AD0 FFFFFFFF
+Li Mei-Carnival Spin-Press Back+X
+20501AEC 80000002
+20501AF0 FFFFFFFF
+Li Mei-Flipping Heel Kick-Press Back+Circle
+20501B0C 80000002
+20501B10 FFFFFFFF
+Hotaru-Lava Burst-Press Back+Square
+20501B4C 80000002
+20501B50 FFFFFFFF
+Hotaru-Grasshopper-Press Back+Circle
+20501BAC 80000002
+20501BB0 FFFFFFFF
+Nightwolf-Spirit Arrow-Press Back+Square
+20501BCC 80000002
+20501BD0 FFFFFFFF
+Nightwolf-Lightning From Above-Press Back+Square
+20501BE0 80000002
+20501BE4 FFFFFFFF
+Nightwolf-Reflector-Press Back+Triangle
+20501C38 80000002
+20501C3C FFFFFFFF
+Nightwolf-Rhino Charge-Press Back+Circle
+20501C5C 80000002
+20501C60 FFFFFFFF
+Ermac-Hado-Energy-Press Back+Square
+20501C7C 80000002
+20501C80 FFFFFFFF
+Ermac-Telekinetic Throw-Press Back+Triangle
+20501C9C 80000002
+20501CA0 FFFFFFFF
+Ermac-Mystic Float-Press Back+X
+20501CBC 80000002
+20501CC0 FFFFFFFF
+Ermac-Tele-Kinetic Slam-Press Back+Circle
+20501CFC 80000002
+20501D00 FFFFFFFF
+Mileena-Soaring Sai-Press Back+Triangle
+20501D5C 80000002
+20501D60 FFFFFFFF
+Mileena-Kick From Above-Press Back+Circle
+20501D9C 80000002
+20501DA0 FFFFFFFF
+Mileena-Rolling Thunder-Press Back+Circle
+20501DB0 80000002
+20501DB4 FFFFFFFF
+Ashrah-Heavenly Light-Press Back+Square
+20501DCC 80000002
+20501DD0 FFFFFFFF
+Ashrah-Lightning Blast-Press Back+Square
+20501DE0 80000002
+20501DE4 FFFFFFFF
+Ashrah-Spin Cycle-Press Back+X
+20501E3C 80000002
+20501E40 FFFFFFFF
+Ashrah-Nature's Torpedo-Press Back+Circle
+20501E5C 80000002
+20501E60 FFFFFFFF
+Sindel-Banshee Scream-Press Back+Square
+20501E7C 80000002
+20501E80 FFFFFFFF
+Sindel-Sliding Foot Grab-Press Back+Square
+20501E90 80000002
+20501E94 FFFFFFFF
+Sindel-Star Screamer-Press Back+X
+20501ECC 80000002
+20501ED0 FFFFFFFF
+Baraka-Flying Shard-Press Back+Square
+20501F0C 80000002
+20501F10 FFFFFFFF
+Baraka-Chop Chop Blades-Press Back+X
+20501F6C 80000002
+20501F70 FFFFFFFF
+Baraka-Mutant Blades-Press Back+X
+20501F80 80000002
+20501F84 FFFFFFFF
+Kenshi-Telekinetic Slam-Press Back+Square
+20501F9C 80000002
+20501FA0 FFFFFFFF
+Kenshi-Telekinetic Push-Press Back+Triangle
+20501FBC 80000002
+20501FC0 FFFFFFFF
+Kenshi-Mind Warp-Press Back+X
+2050200C 80000002
+20502010 FFFFFFFF
+Kenshi-Tele-Flurry-Press Back+X
+20502020 80000002
+20502024 FFFFFFFF
+Kenshi-Telekinetic Toss-Press Back+Circle
+2050203C 80000002
+20502040 FFFFFFFF
+Sub-Zero-Ice Clone-Press Back+Square
+2050205C 80000002
+20502060 FFFFFFFF
+Sub-Zero-Freeze Ball-Press Back+X
+205020BC 80000002
+205020C0 FFFFFFFF
+Sub-Zero-Cold Shoulder-Press Back+Circle
+205020DC 80000002
+205020E0 FFFFFFFF
+Jade-Vanishing Winds-Press Back+Square
+205020FC 80000002
+20502100 FFFFFFFF
+Jade-Dodging Shadows-Press Back+Triangle
+2050213C 80000002
+20502140 FFFFFFFF
+Jade-Razor-Rang-Press Back+X
+2050217C 80000002
+20502180 FFFFFFFF
+Jade-Blazing Nitro Kick-Press Back+Circle
+2050219C 80000002
+205021A0 FFFFFFFF
+Scorpion-Bloody Spear-Press Back+Square
+205021BC 80000002
+205021C0 FFFFFFFF
+Scorpion-Hellfire-Press Back+Triangle
+2050220C 80000002
+20502210 FFFFFFFF
+Scorpion-Backflip Kick-Press Back+X
+2050222C 80000002
+20502230 FFFFFFFF
+Scorpion-Teleport Attack-Press Back+X
+20502240 80000002
+20502244 FFFFFFFF
+Monster-Bloody Spear-Press Back+Square
+2050225C 80000002
+20502260 FFFFFFFF
+Monster-Hellfire-Press Back+Square
+2050227C 80000002
+20502280 FFFFFFFF
+Monster-Backflip Kick-Press Back+X
+2050229C 80000002
+205022A0 FFFFFFFF
+Monster-Teleport Attack-Press Back+X
+205022B0 80000002
+205022B4 FFFFFFFF
+Kabal-Plasma Blast-Press Back+Square
+205022EC 80000002
+205022F0 FFFFFFFF
+Kabal-Nomad's Touch-Press Back+Triangle
+2050230C 80000002
+20502310 FFFFFFFF
+Kabal-Raging Flash-Press Back+Circle
+2050236C 80000002
+20502370 FFFFFFFF
+Noob-Darkness-Press Back+Square
+2050238C 80000002
+20502390 FFFFFFFF
+Smoke-Stinky Cloud-Press Back+Square
+205023AC 80000002
+205023B0 FFFFFFFF
+Noob-We Live-Press Back+Triangle
+205023CC 80000002
+205023D0 FFFFFFFF
+Smoke-Dark Assassin-Press Back+Triangle
+2050240C 80000002
+20502410 FFFFFFFF
+Noob-Death From Above-Press Back+X
+2050244C 80000002
+20502450 FFFFFFFF
+Noob-Dark Shadows-Press Back+X
+20502460 80000002
+20502464 FFFFFFFF
+Smoke-Smokeycut-Press Back+Circle
+2050247C 80000002
+20502480 FFFFFFFF
+Dairou-Tombstone Drop-Press Back+Square
+205024DC 80000002
+205024E0 FFFFFFFF
+Dairou-Iron Leg-Press Back+Triangle
+2050251C 80000002
+20502520 FFFFFFFF
+Dairou-Stealthy Shadows-Press Back+X
+2050253C 80000002
+20502540 FFFFFFFF
+Kobra-Chi-Blast-Press Back+Square
+2050256C 80000002
+20502570 FFFFFFFF
+Kobra-Crouching Chi-Blast-Press Back+Square
+20502580 80000002
+20502584 FFFFFFFF
+Kobra-Burning Fist-Press Back+Triangle
+2050259C 80000002
+205025A0 FFFFFFFF
+Kobra-Tele-Punch-Press Back+Triangle
+205025B0 80000002
+205025B4 FFFFFFFF
+Kobra-Windmill Kick-Press Back+Circle
+205025EC 80000002
+205025F0 FFFFFFFF
+Tanya-Find Me-Press Back+Square
+2050262C 80000002
+20502630 FFFFFFFF
+Tanya-Surging Blast-Press Back+Triangle
+2050266C 80000002
+20502670 FFFFFFFF
+Tanya-Air Fire Blast-Press Back+Triangle
+20502680 80000002
+20502684 FFFFFFFF
+Tanya-Human Cannon Drill-Press Back+X
+205026BC 80000002
+205026C0 FFFFFFFF
+Tanya-Split Flip Kick-Press Back+Circle
+205026DC 80000002
+205026E0 FFFFFFFF
+Liu Kang-Low Dragon Fire-Press Back+Square
+205026FC 80000002
+20502700 FFFFFFFF
+Liu Kang-High Dragon Fire-Press Back+Triangle
+2050271C 80000002
+20502720 FFFFFFFF
+Liu Kang-Flying Bicycle Kick-Press Back+X
+2050275C 80000002
+20502760 FFFFFFFF
+Liu Kang-Flying Kick-Press Back+Circle
+2050279C 80000002
+205027A0 FFFFFFFF
+Raiden-Lightning Bolt-Press Back+Square
+205027BC 80000002
+205027C0 FFFFFFFF
+Raiden-Shocking Touch-Press Back+Triangle
+2050280C 80000002
+20502810 FFFFFFFF
+Raiden-Static Teleport-Press Back+X
+2050282C 80000002
+20502830 FFFFFFFF
+Raiden-Flying Thunder God-Press Back+Circle
+2050284C 80000002
+20502850 FFFFFFFF
+Kira-Kiss Of Death-Press Back+Square
+2050286C 80000002
+20502870 FFFFFFFF
+Kira-Nightshade-Press Back+X
+2050288C 80000002
+20502890 FFFFFFFF
+Kira-Black Dragon Ball-Press Back+Circle
+205028CC 80000002
+205028D0 FFFFFFFF
+Havik-Torso Spin-Press Back+Square
+2050290C 80000002
+20502910 FFFFFFFF
+Havik-Diving Corpse-Press Back+Square
+20502920 80000002
+20502924 FFFFFFFF
+Havik-Head Snap-Press Back+Triangle
+2050293C 80000002
+20502940 FFFFFFFF
+Havik-Crackling Legs Projectile-Press Back+X
+20502978 80000002
+2050297C FFFFFFFF
+Havik-Corpse Taunt-Press Back+Circle
+2050299C 80000002
+205029A0 FFFFFFFF
+Darrius-Chest Cruncher-Press Back+Square
+205029DC 80000002
+205029E0 FFFFFFFF
+Darrius-Tricky Blast-Press Back+Triangle
+20502A1C 80000002
+20502A20 FFFFFFFF
+Darrius-Target Practice-Press Back+X
+20502A3C 80000002
+20502A40 FFFFFFFF
+Darrius-Twisty Kick-Press Back+Circle
+20502A7C 80000002
+20502A80 FFFFFFFF
+Onaga-Ground Stomp-Press Back+Square
+20502B9C 80000002
+20502BA0 FFFFFFFF
+Onaga-Flame Spit-Press Back+Square
+20502BB0 80000002
+20502BB4 FFFFFFFF
+Onaga-Fireball-Press Back+Square
+20502BC4 80000002
+20502BC8 FFFFFFFF
+Onaga-Powerslam-Press Back+Triangle
+20502BDC 80000002
+20502BE0 FFFFFFFF
+Onaga-Wind Gust-Press Back+X
+20502BFC 80000002
+20502C00 FFFFFFFF
+2-Button Special Moves Codes (Part 3)
+Bo' Rai Cho-Monkey Flips-Press Up+Square
+205019DC 80000003
+205019E0 FFFFFFFF
+Bo' Rai Cho-Puke Puddle-Press Up+Triangle
+205019FC 80000003
+20501A00 FFFFFFFF
+Bo' Rai Cho-Earthquake-Press Up+X
+20501A54 80000003
+20501A58 FFFFFFFF
+Bo' Rai Cho-Belly Bash-Press Up+Circle
+20501A6C 80000003
+20501A70 FFFFFFFF
+Li Mei-Nova Blast-Press Up+Square
+20501A8C 80000003
+20501A90 FFFFFFFF
+Li Mei-Flying Flurry-Press Up+Triangle
+20501ACC 80000003
+20501AD0 FFFFFFFF
+Li Mei-Carnival Spin-Press Up+X
+20501AEC 80000003
+20501AF0 FFFFFFFF
+Li Mei-Flipping Heel Kick-Press Up+Circle
+20501B0C 80000003
+20501B10 FFFFFFFF
+Hotaru-Lava Burst-Press Up+Square
+20501B4C 80000003
+20501B50 FFFFFFFF
+Hotaru-Grasshopper-Press Up+Circle
+20501BAC 80000003
+20501BB0 FFFFFFFF
+Nightwolf-Spirit Arrow-Press Up+Square
+20501BCC 80000003
+20501BD0 FFFFFFFF
+Nightwolf-Lightning From Above-Press Up+Square
+20501BE0 80000003
+20501BE4 FFFFFFFF
+Nightwolf-Reflector-Press Up+Triangle
+20501C38 80000003
+20501C3C FFFFFFFF
+Nightwolf-Rhino Charge-Press Up+Circle
+20501C5C 80000003
+20501C60 FFFFFFFF
+Ermac-Hado-Energy-Press Up+Square
+20501C7C 80000003
+20501C80 FFFFFFFF
+Ermac-Telekinetic Throw-Press Up+Triangle
+20501C9C 80000003
+20501CA0 FFFFFFFF
+Ermac-Mystic Float-Press Up+X
+20501CBC 80000003
+20501CC0 FFFFFFFF
+Ermac-Tele-Kinetic Slam-Press Up+Circle
+20501CFC 80000003
+20501D00 FFFFFFFF
+Mileena-Soaring Sai-Press Up+Triangle
+20501D5C 80000003
+20501D60 FFFFFFFF
+Mileena-Kick From Above-Press Up+Circle
+20501D9C 80000003
+20501DA0 FFFFFFFF
+Mileena-Rolling Thunder-Press Up+Circle
+20501DB0 80000003
+20501DB4 FFFFFFFF
+Ashrah-Heavenly Light-Press Up+Square
+20501DCC 80000003
+20501DD0 FFFFFFFF
+Ashrah-Lightning Blast-Press Up+Square
+20501DE0 80000003
+20501DE4 FFFFFFFF
+Ashrah-Spin Cycle-Press Up+X
+20501E3C 80000003
+20501E40 FFFFFFFF
+Ashrah-Nature's Torpedo-Press Up+Circle
+20501E5C 80000003
+20501E60 FFFFFFFF
+Sindel-Banshee Scream-Press Up+Square
+20501E7C 80000003
+20501E80 FFFFFFFF
+Sindel-Sliding Foot Grab-Press Up+Square
+20501E90 80000003
+20501E94 FFFFFFFF
+Sindel-Star Screamer-Press Up+X
+20501ECC 80000003
+20501ED0 FFFFFFFF
+Baraka-Flying Shard-Press Up+Square
+20501F0C 80000003
+20501F10 FFFFFFFF
+Baraka-Chop Chop Blades-Press Up+X
+20501F6C 80000003
+20501F70 FFFFFFFF
+Baraka-Mutant Blades-Press Up+X
+20501F80 80000003
+20501F84 FFFFFFFF
+Kenshi-Telekinetic Slam-Press Up+Square
+20501F9C 80000003
+20501FA0 FFFFFFFF
+Kenshi-Telekinetic Push-Press Up+Triangle
+20501FBC 80000003
+20501FC0 FFFFFFFF
+Kenshi-Mind Warp-Press Up+X
+2050200C 80000003
+20502010 FFFFFFFF
+Kenshi-Tele-Flurry-Press Up+X
+20502020 80000003
+20502024 FFFFFFFF
+Kenshi-Telekinetic Toss-Press Up+Circle
+2050203C 80000003
+20502040 FFFFFFFF
+Sub-Zero-Ice Clone-Press Up+Square
+2050205C 80000003
+20502060 FFFFFFFF
+Sub-Zero-Freeze Ball-Press Up+X
+205020BC 80000003
+205020C0 FFFFFFFF
+Sub-Zero-Cold Shoulder-Press Up+Circle
+205020DC 80000003
+205020E0 FFFFFFFF
+Jade-Vanishing Winds-Press Up+Square
+205020FC 80000003
+20502100 FFFFFFFF
+Jade-Dodging Shadows-Press Up+Triangle
+2050213C 80000003
+20502140 FFFFFFFF
+Jade-Razor-Rang-Press Up+X
+2050217C 80000003
+20502180 FFFFFFFF
+Jade-Blazing Nitro Kick-Press Up+Circle
+2050219C 80000003
+205021A0 FFFFFFFF
+Scorpion-Bloody Spear-Press Up+Square
+205021BC 80000003
+205021C0 FFFFFFFF
+Scorpion-Hellfire-Press Up+Triangle
+2050220C 80000003
+20502210 FFFFFFFF
+Scorpion-Backflip Kick-Press Up+X
+2050222C 80000003
+20502230 FFFFFFFF
+Scorpion-Teleport Attack-Press Up+X
+20502240 80000003
+20502244 FFFFFFFF
+Monster-Bloody Spear-Press Up+Square
+2050225C 80000003
+20502260 FFFFFFFF
+Monster-Hellfire-Press Up+Square
+2050227C 80000003
+20502280 FFFFFFFF
+Monster-Backflip Kick-Press Up+X
+2050229C 80000003
+205022A0 FFFFFFFF
+Monster-Teleport Attack-Press Up+X
+205022B0 80000003
+205022B4 FFFFFFFF
+Kabal-Plasma Blast-Press Up+Square
+205022EC 80000003
+205022F0 FFFFFFFF
+Kabal-Nomad's Touch-Press Up+Triangle
+2050230C 80000003
+20502310 FFFFFFFF
+Kabal-Raging Flash-Press Up+Circle
+2050236C 80000003
+20502370 FFFFFFFF
+Noob-Darkness-Press Up+Square
+2050238C 80000003
+20502390 FFFFFFFF
+Smoke-Stinky Cloud-Press Up+Square
+205023AC 80000003
+205023B0 FFFFFFFF
+Noob-We Live-Press Up+Triangle
+205023CC 80000003
+205023D0 FFFFFFFF
+Smoke-Dark Assassin-Press Up+Triangle
+2050240C 80000003
+20502410 FFFFFFFF
+Noob-Death From Above-Press Up+X
+2050244C 80000003
+20502450 FFFFFFFF
+Noob-Dark Shadows-Press Up+X
+20502460 80000003
+20502464 FFFFFFFF
+Smoke-Smokeycut-Press Up+Circle
+2050247C 80000003
+20502480 FFFFFFFF
+Dairou-Tombstone Drop-Press Up+Square
+205024DC 80000003
+205024E0 FFFFFFFF
+Dairou-Iron Leg-Press Up+Triangle
+2050251C 80000003
+20502520 FFFFFFFF
+Dairou-Stealthy Shadows-Press Up+X
+2050253C 80000003
+20502540 FFFFFFFF
+Kobra-Chi-Blast-Press Up+Square
+2050256C 80000003
+20502570 FFFFFFFF
+Kobra-Crouching Chi-Blast-Press Up+Square
+20502580 80000003
+20502584 FFFFFFFF
+Kobra-Burning Fist-Press Up+Triangle
+2050259C 80000003
+205025A0 FFFFFFFF
+Kobra-Tele-Punch-Press Up+Triangle
+205025B0 80000003
+205025B4 FFFFFFFF
+Kobra-Windmill Kick-Press Up+Circle
+205025EC 80000003
+205025F0 FFFFFFFF
+Tanya-Find Me-Press Up+Square
+2050262C 80000003
+20502630 FFFFFFFF
+Tanya-Surging Blast-Press Up+Triangle
+2050266C 80000003
+20502670 FFFFFFFF
+Tanya-Air Fire Blast-Press Up+Triangle
+20502680 80000003
+20502684 FFFFFFFF
+Tanya-Human Cannon Drill-Press Up+X
+205026BC 80000003
+205026C0 FFFFFFFF
+Tanya-Split Flip Kick-Press Up+Circle
+205026DC 80000003
+205026E0 FFFFFFFF
+Liu Kang-Low Dragon Fire-Press Up+Square
+205026FC 80000003
+20502700 FFFFFFFF
+Liu Kang-High Dragon Fire-Press Up+Triangle
+2050271C 80000003
+20502720 FFFFFFFF
+Liu Kang-Flying Bicycle Kick-Press Up+X
+2050275C 80000003
+20502760 FFFFFFFF
+Liu Kang-Flying Kick-Press Up+Circle
+2050279C 80000003
+205027A0 FFFFFFFF
+Raiden-Lightning Bolt-Press Up+Square
+205027BC 80000003
+205027C0 FFFFFFFF
+Raiden-Shocking Touch-Press Up+Triangle
+2050280C 80000003
+20502810 FFFFFFFF
+Raiden-Static Teleport-Press Up+X
+2050282C 80000003
+20502830 FFFFFFFF
+Raiden-Flying Thunder God-Press Up+Circle
+2050284C 80000003
+20502850 FFFFFFFF
+Kira-Kiss Of Death-Press Up+Square
+2050286C 80000003
+20502870 FFFFFFFF
+Kira-Nightshade-Press Up+X
+2050288C 80000003
+20502890 FFFFFFFF
+Kira-Black Dragon Ball-Press Up+Circle
+205028CC 80000003
+205028D0 FFFFFFFF
+Havik-Torso Spin-Press Up+Square
+2050290C 80000003
+20502910 FFFFFFFF
+Havik-Diving Corpse-Press Up+Square
+20502920 80000003
+20502924 FFFFFFFF
+Havik-Head Snap-Press Up+Triangle
+2050293C 80000003
+20502940 FFFFFFFF
+Havik-Crackling Legs Projectile-Press Up+X
+20502978 80000003
+2050297C FFFFFFFF
+Havik-Corpse Taunt-Press Up+Circle
+2050299C 80000003
+205029A0 FFFFFFFF
+Darrius-Chest Cruncher-Press Up+Square
+205029DC 80000003
+205029E0 FFFFFFFF
+Darrius-Tricky Blast-Press Up+Triangle
+20502A1C 80000003
+20502A20 FFFFFFFF
+Darrius-Target Practice-Press Up+X
+20502A3C 80000003
+20502A40 FFFFFFFF
+Darrius-Twisty Kick-Press Up+Circle
+20502A7C 80000003
+20502A80 FFFFFFFF
+Onaga-Ground Stomp-Press Up+Square
+20502B9C 80000003
+20502BA0 FFFFFFFF
+Onaga-Flame Spit-Press Up+Square
+20502BB0 80000003
+20502BB4 FFFFFFFF
+Onaga-Fireball-Press Up+Square
+20502BC4 80000003
+20502BC8 FFFFFFFF
+Onaga-Powerslam-Press Up+Triangle
+20502BDC 80000003
+20502BE0 FFFFFFFF
+Onaga-Wind Gust-Press Up+X
+20502BFC 80000003
+20502C00 FFFFFFFF
+2-Button Special Moves Codes (Part 4)
+Bo' Rai Cho-Monkey Flips-Press Down+Square
+205019DC 80000004
+205019E0 FFFFFFFF
+Bo' Rai Cho-Puke Puddle-Press Down+Triangle
+205019FC 80000004
+20501A00 FFFFFFFF
+Bo' Rai Cho-Earthquake-Press Down+X
+20501A54 80000004
+20501A58 FFFFFFFF
+Bo' Rai Cho-Belly Bash-Press Down+Circle
+20501A6C 80000004
+20501A70 FFFFFFFF
+Li Mei-Nova Blast-Press Down+Square
+20501A8C 80000004
+20501A90 FFFFFFFF
+Li Mei-Flying Flurry-Press Down+Triangle
+20501ACC 80000004
+20501AD0 FFFFFFFF
+Li Mei-Carnival Spin-Press Down+X
+20501AEC 80000004
+20501AF0 FFFFFFFF
+Li Mei-Flipping Heel Kick-Press Down+Circle
+20501B0C 80000004
+20501B10 FFFFFFFF
+Hotaru-Lava Burst-Press Down+Square
+20501B4C 80000004
+20501B50 FFFFFFFF
+Hotaru-Grasshopper-Press Down+Circle
+20501BAC 80000004
+20501BB0 FFFFFFFF
+Nightwolf-Spirit Arrow-Press Down+Square
+20501BCC 80000004
+20501BD0 FFFFFFFF
+Nightwolf-Lightning From Above-Press Down+Square
+20501BE0 80000004
+20501BE4 FFFFFFFF
+Nightwolf-Reflector-Press Down+Triangle
+20501C38 80000004
+20501C3C FFFFFFFF
+Nightwolf-Rhino Charge-Press Down+Circle
+20501C5C 80000004
+20501C60 FFFFFFFF
+Ermac-Hado-Energy-Press Down+Square
+20501C7C 80000004
+20501C80 FFFFFFFF
+Ermac-Telekinetic Throw-Press Down+Triangle
+20501C9C 80000004
+20501CA0 FFFFFFFF
+Ermac-Mystic Float-Press Down+X
+20501CBC 80000004
+20501CC0 FFFFFFFF
+Ermac-Tele-Kinetic Slam-Press Down+Circle
+20501CFC 80000004
+20501D00 FFFFFFFF
+Mileena-Soaring Sai-Press Down+Triangle
+20501D5C 80000004
+20501D60 FFFFFFFF
+Mileena-Kick From Above-Press Down+Circle
+20501D9C 80000004
+20501DA0 FFFFFFFF
+Mileena-Rolling Thunder-Press Down+Circle
+20501DB0 80000004
+20501DB4 FFFFFFFF
+Ashrah-Heavenly Light-Press Down+Square
+20501DCC 80000004
+20501DD0 FFFFFFFF
+Ashrah-Lightning Blast-Press Down+Square
+20501DE0 80000004
+20501DE4 FFFFFFFF
+Ashrah-Spin Cycle-Press Down+X
+20501E3C 80000004
+20501E40 FFFFFFFF
+Ashrah-Nature's Torpedo-Press Down+Circle
+20501E5C 80000004
+20501E60 FFFFFFFF
+Sindel-Banshee Scream-Press Down+Square
+20501E7C 80000004
+20501E80 FFFFFFFF
+Sindel-Sliding Foot Grab-Press Down+Square
+20501E90 80000004
+20501E94 FFFFFFFF
+Sindel-Star Screamer-Press Down+X
+20501ECC 80000004
+20501ED0 FFFFFFFF
+Baraka-Flying Shard-Press Down+Square
+20501F0C 80000004
+20501F10 FFFFFFFF
+Baraka-Chop Chop Blades-Press Down+X
+20501F6C 80000004
+20501F70 FFFFFFFF
+Baraka-Mutant Blades-Press Down+X
+20501F80 80000004
+20501F84 FFFFFFFF
+Kenshi-Telekinetic Slam-Press Down+Square
+20501F9C 80000004
+20501FA0 FFFFFFFF
+Kenshi-Telekinetic Push-Press Down+Triangle
+20501FBC 80000004
+20501FC0 FFFFFFFF
+Kenshi-Mind Warp-Press Down+X
+2050200C 80000004
+20502010 FFFFFFFF
+Kenshi-Tele-Flurry-Press Down+X
+20502020 80000004
+20502024 FFFFFFFF
+Kenshi-Telekinetic Toss-Press Down+Circle
+2050203C 80000004
+20502040 FFFFFFFF
+Sub-Zero-Ice Clone-Press Down+Square
+2050205C 80000004
+20502060 FFFFFFFF
+Sub-Zero-Freeze Ball-Press Down+X
+205020BC 80000004
+205020C0 FFFFFFFF
+Sub-Zero-Cold Shoulder-Press Down+Circle
+205020DC 80000004
+205020E0 FFFFFFFF
+Jade-Vanishing Winds-Press Down+Square
+205020FC 80000004
+20502100 FFFFFFFF
+Jade-Dodging Shadows-Press Down+Triangle
+2050213C 80000004
+20502140 FFFFFFFF
+Jade-Razor-Rang-Press Down+X
+2050217C 80000004
+20502180 FFFFFFFF
+Jade-Blazing Nitro Kick-Press Down+Circle
+2050219C 80000004
+205021A0 FFFFFFFF
+Scorpion-Bloody Spear-Press Down+Square
+205021BC 80000004
+205021C0 FFFFFFFF
+Scorpion-Hellfire-Press Down+Triangle
+2050220C 80000004
+20502210 FFFFFFFF
+Scorpion-Backflip Kick-Press Down+X
+2050222C 80000004
+20502230 FFFFFFFF
+Scorpion-Teleport Attack-Press Down+X
+20502240 80000004
+20502244 FFFFFFFF
+Monster-Bloody Spear-Press Down+Square
+2050225C 80000004
+20502260 FFFFFFFF
+Monster-Hellfire-Press Down+Square
+2050227C 80000004
+20502280 FFFFFFFF
+Monster-Backflip Kick-Press Down+X
+2050229C 80000004
+205022A0 FFFFFFFF
+Monster-Teleport Attack-Press Down+X
+205022B0 80000004
+205022B4 FFFFFFFF
+Kabal-Plasma Blast-Press Down+Square
+205022EC 80000004
+205022F0 FFFFFFFF
+Kabal-Nomad's Touch-Press Down+Triangle
+2050230C 80000004
+20502310 FFFFFFFF
+Kabal-Raging Flash-Press Down+Circle
+2050236C 80000004
+20502370 FFFFFFFF
+Noob-Darkness-Press Down+Square
+2050238C 80000004
+20502390 FFFFFFFF
+Smoke-Stinky Cloud-Press Down+Square
+205023AC 80000004
+205023B0 FFFFFFFF
+Noob-We Live-Press Down+Triangle
+205023CC 80000004
+205023D0 FFFFFFFF
+Smoke-Dark Assassin-Press Down+Triangle
+2050240C 80000004
+20502410 FFFFFFFF
+Noob-Death From Above-Press Down+X
+2050244C 80000004
+20502450 FFFFFFFF
+Noob-Dark Shadows-Press Down+X
+20502460 80000004
+20502464 FFFFFFFF
+Smoke-Smokeycut-Press Down+Circle
+2050247C 80000004
+20502480 FFFFFFFF
+Dairou-Tombstone Drop-Press Down+Square
+205024DC 80000004
+205024E0 FFFFFFFF
+Dairou-Iron Leg-Press Down+Triangle
+2050251C 80000004
+20502520 FFFFFFFF
+Dairou-Stealthy Shadows-Press Down+X
+2050253C 80000004
+20502540 FFFFFFFF
+Kobra-Chi-Blast-Press Down+Square
+2050256C 80000004
+20502570 FFFFFFFF
+Kobra-Crouching Chi-Blast-Press Down+Square
+20502580 80000004
+20502584 FFFFFFFF
+Kobra-Burning Fist-Press Down+Triangle
+2050259C 80000004
+205025A0 FFFFFFFF
+Kobra-Tele-Punch-Press Down+Triangle
+205025B0 80000004
+205025B4 FFFFFFFF
+Kobra-Windmill Kick-Press Down+Circle
+205025EC 80000004
+205025F0 FFFFFFFF
+Tanya-Find Me-Press Down+Square
+2050262C 80000004
+20502630 FFFFFFFF
+Tanya-Surging Blast-Press Down+Triangle
+2050266C 80000004
+20502670 FFFFFFFF
+Tanya-Air Fire Blast-Press Down+Triangle
+20502680 80000004
+20502684 FFFFFFFF
+Tanya-Human Cannon Drill-Press Down+X
+205026BC 80000004
+205026C0 FFFFFFFF
+Tanya-Split Flip Kick-Press Down+Circle
+205026DC 80000004
+205026E0 FFFFFFFF
+Liu Kang-Low Dragon Fire-Press Down+Square
+205026FC 80000004
+20502700 FFFFFFFF
+Liu Kang-High Dragon Fire-Press Down+Triangle
+2050271C 80000004
+20502720 FFFFFFFF
+Liu Kang-Flying Bicycle Kick-Press Down+X
+2050275C 80000004
+20502760 FFFFFFFF
+Liu Kang-Flying Kick-Press Down+Circle
+2050279C 80000004
+205027A0 FFFFFFFF
+Raiden-Lightning Bolt-Press Down+Square
+205027BC 80000004
+205027C0 FFFFFFFF
+Raiden-Shocking Touch-Press Down+Triangle
+2050280C 80000004
+20502810 FFFFFFFF
+Raiden-Static Teleport-Press Down+X
+2050282C 80000004
+20502830 FFFFFFFF
+Raiden-Flying Thunder God-Press Down+Circle
+2050284C 80000004
+20502850 FFFFFFFF
+Kira-Kiss Of Death-Press Down+Square
+2050286C 80000004
+20502870 FFFFFFFF
+Kira-Nightshade-Press Down+X
+2050288C 80000004
+20502890 FFFFFFFF
+Kira-Black Dragon Ball-Press Down+Circle
+205028CC 80000004
+205028D0 FFFFFFFF
+Havik-Torso Spin-Press Down+Square
+2050290C 80000004
+20502910 FFFFFFFF
+Havik-Diving Corpse-Press Down+Square
+20502920 80000004
+20502924 FFFFFFFF
+Havik-Head Snap-Press Down+Triangle
+2050293C 80000004
+20502940 FFFFFFFF
+Havik-Crackling Legs Projectile-Press Down+X
+20502978 80000004
+2050297C FFFFFFFF
+Havik-Corpse Taunt-Press Down+Circle
+2050299C 80000004
+205029A0 FFFFFFFF
+Darrius-Chest Cruncher-Press Down+Square
+205029DC 80000004
+205029E0 FFFFFFFF
+Darrius-Tricky Blast-Press Down+Triangle
+20502A1C 80000004
+20502A20 FFFFFFFF
+Darrius-Target Practice-Press Down+X
+20502A3C 80000004
+20502A40 FFFFFFFF
+Darrius-Twisty Kick-Press Down+Circle
+20502A7C 80000004
+20502A80 FFFFFFFF
+Onaga-Ground Stomp-Press Down+Square
+20502B9C 80000004
+20502BA0 FFFFFFFF
+Onaga-Flame Spit-Press Down+Square
+20502BB0 80000004
+20502BB4 FFFFFFFF
+Onaga-Fireball-Press Down+Square
+20502BC4 80000004
+20502BC8 FFFFFFFF
+Onaga-Powerslam-Press Down+Triangle
+20502BDC 80000004
+20502BE0 FFFFFFFF
+Onaga-Wind Gust-Press Down+X
+20502BFC 80000004
+20502C00 FFFFFFFF
+

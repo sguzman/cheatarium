@@ -1,0 +1,548 @@
+"Burnout 3-Takedown"
+Enable Code (Must Be On)
+902158E8 0C048FAA
+Display World Time
+20134B08 00000000
+20134C44 00000000
+Dont Lose Extra Max Boost When Crashing
+2014E084 00000000
+Crash For x4 Boost Meter
+2014E07C 24030003
+Can Do Crash Breakers Instantly
+2015BB88 00000000
+Drive Through Cars
+201B7220 03E00008
+201B7224 00000000
+Hopping Wrecks
+204E068C 40000000
+Wreck For Going, Going, GONE!
+204E068C 42C80000
+Easy Wrecks With Other Vehicles
+204E1634 00000000
+Almost Immune To Wrecks With Other Vehicles
+204E1634 7FFFFFFF
+P1 Press R1+X For Nitrous Boost
+D04F50DC 0000B7FF
+2057C5AC 43FA0000
+P1 Press R1+X For Super Nitrous Boost
+D04F50DC 0000B7FF
+2057C5AC 447A0000
+Outrageous Boost Gain
+2057CEC4 447A0000
+Infinite Boost
+2064E574 43700000
+Max Infinite Boost
+2064E56C 00000003
+2064E570 44340000
+2064E574 44340000
+Quick Score Gain
+1064E4BC 0000FFFF
+Max Score
+2064E4BC 05F5E0FF
+Hyper Mode (Wreck Immediately To Fix Camera)
+104E2742 00003D48
+P1 Press L1+Select To Stop Timer
+D04F50DC 0000FBFE
+201D3D2C 00000000
+P1 Press L2+Select To Restart Timer
+D04F50DC 0000FEFE
+201D3D2C AF83A0CC
+Start On Lap 2
+D064E484 00000000
+1064E484 00000001
+Start On Lap 3
+D064E484 00000000
+1064E484 00000002
+Game Speed Modifier Codes
+P1 Press R1+Up For Faster Game Speed
+D04F50DC 0000F7EF
+2052267C 3D088889
+P1 Press R1+Right For Super Game Speed
+D04F50DC 0000F7DF
+2052267C 3D888889
+P1 Press R1+Up For Slow Game Speed
+D04F50DC 0000F7BF
+2052267C 3C088889
+P1 Press R1+Left For Normal Speed
+D04F50DC 0000F77F
+2052267C 3C888889
+Camera Modifier Codes
+P1 Press R2+Up For Further Back Camera
+D04F50DC 0000FDEF
+20665FC0 40000000
+P1 Press R2+Right For Even Further Back Camera
+D04F50DC 0000FDDF
+20665FC0 40800000
+P1 Press R2+Down For Closer Camera
+D04F50DC 0000FDBF
+20665FC0 3E800000
+P1 Press R2+Left For Normal Camera
+D04F50DC 0000FD7F
+20665FC0 3F800000
+Burnout 3 World Tour Codes
+Have All Gold Medals
+1051BE86 00000303
+4051BE88 002A0001
+03030303 00000000
+1051BF30 00000303
+0051BF32 00000003
+Max Burnout Points
+2051BB40 05F5E0FF
+Max Crash Damage
+2051BB44 05F5E0FF
+Max # Of Takedowns
+2051C124 05F5E0FF
+Have USA Gold Medal Codes
+Silver Lake-Race
+0051BE86 00000003
+Downtown-Preview Lap 1
+0051BE87 00000003
+Waterfront-Burning Lap
+0051BE88 00000003
+Downtown-Road Rage 1
+0051BE89 00000003
+Downtown-Race 1
+0051BE8A 00000003
+Waterfront-Face-Off
+0051BE8C 00000003
+Kings Of The Road
+0051BE8E 00000003
+Silver Lake-Compact Grand Prix
+0051BE8F 00000003
+Lakeside Getaway
+0051BE90 00000003
+Downtown-Race 2
+0051BE91 00000003
+Silver Lake-Compact Grand Prix
+0051BE92 00000003
+Downtown-Road Rage 2
+0051BE94 00000003
+Lakeside-Getaway
+0051BE96 00000003
+Kings Of The Road-Race
+0051BE98 00000003
+Mountain Parkway-Face-Off 1
+0051BE99 00000003
+Mountain Parkway-Road Rage
+0051BE9A 00000003
+Lakeside Getaway-Face-Off 2
+0051BE9B 00000003
+Waterfront-Muscle Grand Prix
+0051BE9C 00000003
+Mountain Parkway-Face-Off 2
+0051BE9D 00000003
+Silver Lake-Special Event
+0051BEA2 00000003
+Mountain Parkway-Special event
+0051BEB7 00000003
+Downtown-Preview Lap 2
+0051BEBE 00000003
+Waterfront-Preview Lap
+0051BECB 00000003
+Lakeside Getaway
+0051BECD 00000003
+Kings Of The Road-Gold Medal GP
+0051BECE 00000003
+Silver Lake-Trailer Trash
+0051BECF 00000003
+Downtown-Cross Traffic
+0051BED0 00000003
+Waterfront-Marina Mayhem
+0051BED1 00000003
+Waterfront-Twister
+0051BED2 00000003
+Downtown-Demolition
+0051BED3 00000003
+Silver Lake-Shut Up And Jump
+0051BED4 00000003
+Silver Lake-Showdown
+0051BEE3 00000003
+Waterfront-Leap Of Faith
+0051BEE4 00000003
+Downtown-Deadend
+0051BEE5 00000003
+Silver Lake-Ticket To Collide
+0051BEE6 00000003
+Downtown-Wrecks City
+0051BEE7 00000003
+Waterfront-Danger Zone
+0051BEE8 00000003
+Downtown-Hate To Be Late
+0051BEF7 00000003
+Silver Lake-3 Ways To Fly
+0051BEF8 00000003
+Watefront-Bay-Side Blitz
+0051BEF9 00000003
+Downtown-Hold Tight
+0051BEFA 00000003
+Silver Lake-Bridge Too Far
+0051BEFB 00000003
+Downtown-Traffic Jammed
+0051BEFC 00000003
+Silver Lake-Out Of Control
+0051BF0B 00000003
+Downtown-Bus Blockade
+0051BF0C 00000003
+Waterfront-Falling Down
+0051BF0D 00000003
+Silver Lake-Fearfactor
+0051BF0E 00000003
+Waterfront-T-Boned
+0051BF0F 00000003
+Waterfront-Sunshine Smash
+0051BF10 00000003
+Silver Lake-Pick Up The Pieces
+0051BF1F 00000003
+Downtown-Grid Locked
+0051BF20 00000003
+Downtown-Air Rage
+0051BF21 00000003
+Downtown-Hit And Run
+0051BF22 00000003
+Waterfront-Look Then Leap
+0051BF23 00000003
+Waterfronto-Tram-Pulled
+0051BF24 00000003
+Have Europe Gold Medal Codes
+Vineyard-Special Event
+0051BE8B 00000003
+Alpine-Special Event
+0051BE93 00000003
+Coastal Dream-Preview Lap
+0051BE95 00000003
+Winter City-Race
+0051BE9E 00000003
+Vineyard-Road Rage 1
+0051BE9F 00000003
+Alpine-Road Rage
+0051BEA0 00000003
+Alpine-Race
+0051BEA1 00000003
+Alpine Expressway-Race
+0051BEA3 00000003
+Winter City-Special Event
+0051BEA4 00000003
+Riviera-Road Rage 1
+0051BEA5 00000003
+Vineyard-Face-Off
+0051BEA7 00000003
+Frozen Park-Face-Off 1
+0051BEA8 00000003
+Winter City-Eliminator
+0051BEA9 00000003
+Vineyard-Coupe Grand Prix
+0051BEAA 00000003
+Continental Run-Face-Off 1
+0051BEAB 00000003
+Riviera-Burning Lap
+0051BEAC 00000003
+Vineyard-Road Rage 2
+0051BEAD 00000003
+Coasta Dream-Race
+0051BEAE 00000003
+Vineyard-Eliminator
+0051BEAF 00000003
+Riviera-Eliminator
+0051BEB1 00000003
+Contintental Run-Race 1
+0051BEB2 00000003
+Riviera-Road Rage 2
+0051BEB3 00000003
+Alpine-Face-Off
+0051BEB4 00000003
+Coastal Dream-Road Rage 1
+0051BEB5 00000003
+Coastal Dream-Road Rage 2
+0051BEB6 00000003
+Continental Run-Race 2
+0051BEB8 00000003
+Continental Run-Special Event
+0051BEB9 00000003
+Continental Run-Face-Off 2
+0051BEBA 00000003
+Alpine Expressway-Sports Grand Prix
+0051BEBB 00000003
+Frozen Park-Face-Off 2
+0051BEBC 00000003
+Winter City-Slip And Slide
+0051BED5 00000003
+Riviera-Grand Slam
+0051BED6 00000003
+Apline-Roadblock
+0051BED7 00000003
+Vineyard-Grapes Of Wrath
+0051BED8 00000003
+Winter City-Pump Up The Tram
+0051BED9 00000003
+Riviera-Get Bent
+0051BEDA 00000003
+Winter City-Corner Chaos
+0051BEDB 00000003
+Vineyard-Jack Knife City
+0051BEDC 00000003
+Riviera-Riviera Rampage
+0051BEE9 00000003
+Winter City-Riverside Wreck
+0051BEEA 00000003
+Vineyard-Grape Fear
+0051BEEB 00000003
+Apline-Don't Look Down
+0051BEEC 00000003
+Riviera-Spin The Wheel
+0051BEED 00000003
+Vineyard-Field Of Screams
+0051BEEE 00000003
+Winter City-Snow Joke
+0051BEEF 00000003
+Alpine-Chilly Crash
+0051BEF0 00000003
+Alpine-Exact Change
+0051BEFD 00000003
+Vineyard-Country Chaos
+0051BEFE 00000003
+Riviera-Cliff Hanger
+0051BEFF 00000003
+Winter City-Market Crash
+0051BF00 00000003
+Winter City-Winter Wipe-Out
+0051BF01 00000003
+Riviera-High Roller
+0051BF02 00000003
+Vineyard-Haul Ass
+0051BF03 00000003
+Alpine-Laneslunacy
+0051BF04 00000003
+Alpine-Snow Plough
+0051BF11 00000003
+Winter City-Crash Landing
+0051BF12 00000003
+Riviera-Break The Bank
+0051BF13 00000003
+Vineyard-Bale Out
+0051BF14 00000003
+Riviera-Go For Broke
+0051BF15 00000003
+Vineyard-Medieval Mash
+0051BF16 00000003
+Winter City-Run For The Bus
+0051BF17 00000003
+Alpine-Corkscrewed
+0051BF18 00000003
+Winter City-On Rampage
+0051BF25 00000003
+Alpine-Jump The Toll
+0051BF26 00000003
+Riviera-Jumping Jam
+0051BF27 00000003
+Vineyard-Crash Au Van
+0051BF28 00000003
+Winter City-Cool For Crash
+0051BF29 00000003
+Riviera-Ship Wrecked
+0051BF2A 00000003
+Vineyard-Gate Crasher
+0051BF2B 00000003
+Alpine-Highway To Hell
+0051BF2C 00000003
+Have Far East Gold Medal Codes
+Dockside-Special Event
+0051BE8D 00000003
+Golden City-Special Event
+0051BE97 00000003
+Island Paradise-Special Event
+0051BEA6 00000003
+Tropical Drive-Preview Lap
+0051BEB0 00000003
+Golden City-Road Rage
+0051BEBD 00000003
+Dockside-Eliminator
+0051BEBF 00000003
+Island Paradise-Race
+0051BEC0 00000003
+Golden City-Race
+0051BEC1 00000003
+Dockside-Road Rage 1
+0051BEC2 00000003
+Island Paradise-Face-Off
+0051BEC3 00000003
+Dockside-Face-Off
+0051BEC4 00000003
+Island Paradise-Eliminator
+0051BEC5 00000003
+Tropical Drive-Race 1
+0051BEC6 00000003
+Tropical Drive-Race 2
+0051BEC7 00000003
+Tropical Drive-Road Rage
+0051BEC8 00000003
+Golden City-Face-Off
+0051BEC9 00000003
+Dockside-Road Rage 2
+0051BECA 00000003
+Tropical Drive-Super Grand Prix
+0051BECC 00000003
+Golden City-Neon Nightmare
+0051BEDD 00000003
+Island Paradise-Paradise Peril
+0051BEDE 00000003
+Dockside-Rock The Dock
+0051BEDF 00000003
+Island Paradise-Ruined Holidy
+0051BEE0 00000003
+Golden City-Tuk Down
+0051BEE1 00000003
+Golden City-Handle With Care
+0051BEE2 00000003
+Golden City-Turn & Burn
+0051BEF1 00000003
+Dockside-Exit The Dragon
+0051BEF2 00000003
+Island Paradise-Tropical Storm
+0051BEF3 00000003
+Golden City-Crossing Crush
+0051BEF4 00000003
+Golden City-Freeway Thunder
+0051BEF5 00000003
+Island Paradise-Drive Angry
+0051BEF6 00000003
+Golden City-Road To Ruin
+0051BF05 00000003
+Island Paradise-Jungle Rumble
+0051BF06 00000003
+Dockside-Reiko Chet
+0051BF07 00000003
+Island Paradise-Airstrike
+0051BF08 00000003
+Golden City-Trash Smash
+0051BF09 00000003
+Dockside-Whirlwind
+0051BF0A 00000003
+Dockside-Look Both Ways
+0051BF19 00000003
+Golden City-Heavy Hitter
+0051BF1A 00000003
+Island Paradise-Steel Tsunami
+0051BF1B 00000003
+Dockside-Buckle Up
+0051BF1C 00000003
+Island Paradise-Uphill Struggle
+0051BF1D 00000003
+Golden City-Eastern Block
+0051BF1E 00000003
+Golden City-Crash Fu
+0051BF2D 00000003
+Dockside-The Crate Escape
+0051BF2E 00000003
+Island Paradise-Tourist Trap
+0051BF2F 00000003
+Island Paradise-Pure Scores
+0051BF30 00000003
+Island Paradise-Lost Luggage
+0051BF31 00000003
+Dockside-Crashed Out
+0051BF32 00000003
+Have Signature Takedowns Codes
+Takedown 1
+0051BF33 00000001
+Takedown 2
+0051BF34 00000001
+Takedown 3
+0051BF35 00000001
+Takedown 4
+0051BF36 00000001
+Takedown 5
+0051BF37 00000001
+Takedown 6
+0051BF38 00000001
+Takedown 7
+0051BF39 00000001
+Takedown 8
+0051BF3A 00000001
+Takedown 9
+0051BF3B 00000001
+Takedown 10
+0051BF3C 00000001
+Takedown 11
+0051BF3D 00000001
+Takedown 12
+0051BF3E 00000001
+Takedown 13
+0051BF3F 00000001
+Takedown 14
+0051BF40 00000001
+Takedown 15
+0051BF41 00000001
+Takedown 16
+0051BF42 00000001
+Takedown 17
+0051BF43 00000001
+Takedown 18
+0051BF44 00000001
+Takedown 19
+0051BF45 00000001
+Takedown 20
+0051BF46 00000001
+All Signature Takedowns
+0051BF33 00000001
+4051BF34 00040001
+01010101 00000000
+1051BF44 00000101
+0051BF46 00000001
+Have Crash Headlines Codes
+Headline 1
+0051BF47 00000001
+Headline 2
+0051BF48 00000001
+Headline 3
+0051BF49 00000001
+Headline 4
+0051BF4A 00000001
+Headline 5
+0051BF4B 00000001
+Headline 6
+0051BF4C 00000001
+Headline 7
+0051BF4D 00000001
+Headline 8
+0051BF4E 00000001
+Headline 9
+0051BF4F 00000001
+Headline 10
+0051BF50 00000001
+All Headlines
+0051BF47 00000001
+2051BF48 01010101
+2051BF4C 01010101
+0051BF50 00000001
+Have Trophies Targets Completed
+Easy Takedowns-2 Wall Takedowns In A Race
+2051BE58 00000002
+Easy Takedowns-1st Car Takedown
+2051BE44 00000001
+Easy/Expert Takedowns-1st/3rd Aftertouch Takedown
+2051BE5C 00000003
+All Takedowns-5/10/15 Takedowns In A Race
+2051BE68 0000000F
+Easy Takedowns-1st Takedown Rampage
+2051BE78 00000001
+Advanced Takedowns-1st Revenge Takedown
+2051BE7C 00000001
+Advanced Takedowns-1st Psyche Out Takedown
+2051BE60 00000001
+Advanced Takedowns-1st Big Rig Takedown
+2051BE50 00000001
+Advanced Takedowns-2 Bus Takedowns In A Race
+2051BE48 00000002
+Expert Takedowns-1st Double Takedown
+2051BE70 00000001
+Expert Takedowns-2 Tram Takedowns In A Race
+2051BE4C 00000002
+Expert Takedowns-2 Trailer Takedowns In A Race
+2051BE54 00000002
+Takedowns-20/40 Takedowns In A Road Rage Event
+2051BE6C 00000028
+Champion Takedowns-1st Triple Takedown
+2051BE74 00000001
+Champion Takedowns-1500/2000 Total Takedowns
+2051BC60 05F5E0FF
+

@@ -1,0 +1,57 @@
+"ATV-Offroad Fury 2"
+Enable Code (Must Be On)
+9037506C 0C0DA82A
+Access All Tracks
+2026C340 24010001
+2026C344 A0410000
+Access All ATV's
+20270148 24010001
+2027014C A0E10000
+Access All Equipment
+20270244 24010001
+20270248 A1A10000
+Access All Games
+2026C380 00000000
+2026D0A4 00000000
+Allow Points For Wheelies
+201E5A9C 00000000
+Disable Land Wrecks
+201E7F70 00000000
+Stop Action Replay Cam Enabled
+201F33F8 00000000
+Agressive AI
+201F909C 00000000
+All Out AI
+201F90C4 00000000
+Widescreen Aspect Ratio
+2021328C 00000000
+Can Always Buy Items (Unlock Items)
+20320BB0 3C0205F5
+20320BB4 3442E0FF
+Points Never Decrease (Unlock Items)
+20320BC0 00000000
+Land Wrecks Always Disabled
+20536C74 00000000
+Land Wrecks Always Enabled
+20536C74 00000001
+Aggressive AI Always Disabled
+20536C78 00000000
+Aggressive AI Always Enabled
+20536C78 00000001
+Widescreen Aspect Ratio Always Disabled
+20536C7C 00000000
+Widescreen Aspect Ratio Always Enabled
+20536C7C 00000001
+Allow Points For Wheelies Always Disabled
+20537ED8 00000000
+Allow Points For Wheelies Always Enabled
+20537ED8 00000001
+Stop Action Replay Cam Enabled Always Disabled
+20537EDC 00000000
+Stop Action Replay Cam Enabled Always Enabled
+20537EDC 00000001
+All Out AI Always Disabled
+20537EE0 00000000
+All Out AI Always Enabled
+20537EE0 00000001
+

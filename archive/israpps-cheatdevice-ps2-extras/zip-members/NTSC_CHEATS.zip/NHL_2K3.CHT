@@ -1,0 +1,48 @@
+"NHL 2K3"
+Enable Code (Must Be On)
+9053618C 0C151E8D
+Home Team Scores 50
+10592CD0 00000032
+Home Team Scores 20
+10592CD0 00000014
+Home Team Scores 0
+10592CD0 00000000
+Away Team Scores 50
+10592CD4 00000032
+Away Team Scores 20
+10592CD4 00000014
+Away Team Scores 0
+10592CD4 00000000
+Start On 2nd Period
+D0592CC4 00000001
+10592CC4 00000002
+Start On 3rd Period
+D0592CC4 00000001
+10592CC4 00000003
+Infinite Time-Outs (Both Teams)
+20356BAC 00000000
+Goal's Score 10
+1033022C 0000000A
+Goal's Score 5
+1033022C 00000005
+Goal's Score 2
+1033022C 00000002
+All Goal's Score For Home Team
+20330220 24030000
+All Goal's Score For Away Team
+20330220 24030004
+Enable Big Heads
+2056E268 00000001
+Always Fight
+205914C0 00000001
+Always Argue Penalties
+2059FCA0 00000001
+Always Grumble About Penalties
+2059FCD4 00000001
+Make Players Invisible
+205A6B1C 00000001
+Maximum Injury Chance (Affects Both Teams)
+205D5934 FFFFFFFF
+Minimum Injury Chance (Affects Both Teams)
+205D5934 00000000
+

@@ -1,0 +1,118 @@
+"Nano Breaker"
+Enable Code (Must Be On)
+9011C120 0C101A54
+Max Life Gauge
+204CF610 4479C000
+Max Booster Gauge
+204CF614 4479C000
+Infinite Life Gauge
+204CF618 4479C000
+Infinite Booster Gauge
+204CF61C 4479C000
+Infinite Health (Michelle)
+204A8AB8 4479C000
+1-Hit Death (Non-Boss Enemies)
+200C0220 080EFC33
+200C0224 AC400168
+203BF09C 08030088
+Infinite Combo Chip Codes
+Blue-Lv. 1
+1061570C 00000009
+Turquoise-Lv. 2
+1061570E 00000009
+Green-Lv. 3
+10615710 00000009
+Orange Lv. 4
+10615712 00000009
+Red Lv. 5
+10615714 00000009
+Silver-Lv. X
+10615716 00000009
+All Chips
+4061570C 00030001
+00090009 00000000
+Info Codes
+Always Low Play Time
+20616B28 00000000
+Max Total Gallons
+20616B2C 05F5E0FF
+No Total Gallons
+20616B2C 00000000
+Max Continues
+20616B38 05F5E0FF
+No Continues
+20616B38 00000000
+Max Saves
+20616B3C 05F5E0FF
+No Saves
+20616B3C 00000000
+Max Enemies Defeated
+204BFC64 05F5E0FF
+No Enemies Defeated
+204BFC64 00000000
+Max Enemies Sliced-Horizontal
+204BFC68 05F5E0FF
+No Enemies Sliced-Horizontal
+204BFC68 00000000
+Max Enemies Sliced-Vertical
+204BFC6C 05F5E0FF
+No Enemies Sliced-Vertical
+204BFC6C 00000000
+Max Enemies Smashed
+204BFC70 05F5E0FF
+No Enemies Smashed
+204BFC70 00000000
+Max Laser Reflects
+204CF654 0001869F
+No Laser Reflects
+204CF654 00000000
+Max Capture-Counters
+204CF658 0001869F
+No Capture-Counters
+204CF658 00000000
+Unlock Splatter Mode
+704CB5DC 00000008
+Unlock Movie Viewer
+704CB5DC 00000010
+Unlock All Movies (In Movie Viewer)
+204CB5D0 FFFFFFFF
+Have Keith Playable
+704CB5DD 00000001
+Have Jaguar Playable
+704CB5DD 00000002
+Have Booster Codes
+Fauchard Rampage-Slot 1
+204CF68C 00010014
+Plasma Storm-Slot 2
+204CF690 00010015
+Plasma Orbs-Slot 3
+204CF694 00010016
+Aut-Laser Reflect-Slot 4
+204CF698 00010017
+Capture Critical-Slot 5
+204CF69C 00010018
+Speed Up-Slot 6
+204CF6A0 00010019
+Status Boost-Slot 7
+204CF6A4 0001001B
+Laser Shower-Slot 8
+204CF6A8 0001001C
+Gatling Gun-Slot 9
+204CF6AC 0001001D
+Max Booster Level Codes
+Plasma Storm
+204CF6B8 00000046
+Plasma Orbs
+204CF6BC 00000046
+Aut-Laser Reflect
+204CF6C0 00000046
+Capture Critical
+204CF6C4 00000046
+Speed Up
+204CF6C8 00000046
+Status Boost
+204CF6D0 00000046
+All Booster Levels
+404CF6B8 00070001
+00000046 00000000
+

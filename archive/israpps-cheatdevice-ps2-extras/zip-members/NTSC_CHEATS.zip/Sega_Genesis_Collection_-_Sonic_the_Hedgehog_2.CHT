@@ -1,0 +1,42 @@
+"Sega Genesis Collection - Sonic the Hedgehog 2"
+ELF: SLUS_215.42
+Enable Code (Must Be On)
+9015C7A0 00832021
+200C0580 3C01000E
+200C0584 3404D166
+200C0588 03E00008
+200C058C AC240000
+20163814 08030160
+C00E0000 0000D166
+*Misc Codes
+Infinite Lives
+6026BE48 00000003
+00000001 0001FE22
+Infinite Air P1
+6026BE48 0000001E
+00000001 0001B038
+Infinite Air P2
+6026BE48 0000001E
+00000001 0001B078
+All Chaos Emeralds Collected
+6026BE48 00000007
+00000001 0001FFC1
+Level Select/In-Game Reset/Debug Mode Enabled (ABC Mode)
+At the title screen, hold A and press Start for level select;
+while in-game, pause and press A to reset game; before the
+stage loads, hold A until it is displayed to enable debug mode.
+6026BE48 00010101
+00020001 0001FFE0
+Disable Water
+6026BE48 00000000
+00000001 0001F740
+Enable Super Sonic Glow
+6026BE48 000000FF
+00000001 0001F66F
+Disable Ring Countdown (Super Sonic)
+6026BE48 0000000B
+00000001 0001F681
+INF HP/99 Coins
+6026BE48 00000063
+00000001 0001FE31
+

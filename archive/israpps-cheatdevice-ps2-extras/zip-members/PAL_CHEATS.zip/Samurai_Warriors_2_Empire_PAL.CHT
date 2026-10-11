@@ -1,0 +1,108 @@
+"Samurai Warriors 2 Empire PAL"
+Enable Code (Must Be On)
+9012B150 0C04ABFC
+Alt. Enable Code
+901711A8 0C047AE0
+Alt. Enable Code
+F01711A8 001711AB
+Kill Enemy for 9999
+2019EBF4 00000000
+Combo 9999
+201D20F8 00000000
+Max Gold
+202F90F8 10000005
+Max HP
+2019C2CC 00000000
+Max Musou
+2019C3E4 00000000
+Max Attack
+2019C4FC 00000000
+Max Defense
+2019C614 00000000
+Max Riding Skill
+2019C72C 00000000
+Max Speed
+2019C844 00000000
+Max Luck
+2019CA74 00000000
+Max Rank (lv 20)
+203AD888 00000000
+Max Musou?
+20270EA8 84420008
+Afterimage
+10156ABC 00003FFF
+After image(modify)
+10156AA8 000000??
+??
+00=Offshoot(Nene)
+01=Offshoot(Hanzo)
+02=Afterimage
+03=Bishamon
+kill one for 9999 KO
+2019EBF4 00000000
+Combo 9999
+201D2288 00000000
+Speed of Upgrading Weapon
+1015ECB0 0000????
+1015ED64 0000????
+????
+3F80= x1
+3FA0= x1.25
+3FC0= x1.5
+3FE0= x1.75
+4000 = x2
+4040 = x3
+Sonic boom running fire 1
+2015A118 10010007
+Shoot running fire
+2015A0D8 10010007
+2015A0E8 10010003
+Part bullet speed
+101598e4 0000????
+????
+3F80=x1
+3FC0=x1.5
+4000=x2
+4040=x3
+4080=x4
+The number of fighting supremacy performing military affairs orders
+0068F004 00000003
+morale rise when kill one enemy
+2017E904 00A0400A
+2017E99C 15000041
+Part physical attack multi-stage hit
+2015A188 1000001A
+Bishamon effective time maximum
+10158C8C 00007FFF
+Part special skill strengthening
+2015F420 240A0001
+The position shape point immediately maximum
+003F6684 00000000
+The direction conversion which is in the midst of attacking
+2015C3EC 00000000
+2015C410 00000000
+Backing type strengthening
+2015B608 00000000
+2015B618 00000000
+General soldier escape speed
+10207bb4 0000????
+????
+3DCC: Normality
+3C00: Slow
+3000: Furthermore slow
+0000: To limit slow
+Even with Kawanaka island always mini- map indication
+D073DCA0 00000400
+1073DCA0 00000000
+Always Win
+2036B270 24020001
+With smithery fluctuation MAX (enemy)
+202F943C 10000006
+At general formation of invasion game
+With R3 the captain can be designated as the secondary military officer
+With L3 dismantling of control OFF
+D05004F4 0000FFFB
+202F3E34 24020000
+D05004F4 0000FFFD
+202F3E34 90820051
+

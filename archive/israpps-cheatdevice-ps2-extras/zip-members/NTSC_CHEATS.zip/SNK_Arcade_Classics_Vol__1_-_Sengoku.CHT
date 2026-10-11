@@ -1,0 +1,73 @@
+"SNK Arcade Classics Vol .1 - Sengoku"
+ELF: SLUS_217.24
+Enable Code (Must Be On)
+902B0598 0C0AC10E
+*Player 1 Codes
+P1 Inf Lives
+00F7FEBA 00000009
+P1 Inf HP
+00F8010C 00000006
+P1 Invincibility
+00F80186 00000050
+P1 Enable Transformations
+00F8013F 0000000F
+P1 Inf Time Ninja
+00F8016C 00000060
+P1 Inf Time Samourai
+00F8016E 00000060
+P1 Inf Time Dog
+00F80170 00000060
+P1 Permanent Weapons
+00F80189 00000004
+*P1 Weapons Mod Codes (choose only one)
+P1 No Weapons
+00F80100 00000000
+P1 Get Red Sphere
+00F80100 00000001
+P1 Get Blue Sphere
+00F80100 00000002
+P1 Get Purple Sphere
+00F80100 00000003
+P1 Get Yellow Sphere
+00F80100 00000004
+P1 Get Unknown Power 1
+00F80100 00000005
+P1 Get Unknown Power 2
+00F80100 00000006
+P1 Get Unknown Power 3
+00F80100 00000007
+*Player 2 Codes
+P2 Inf Lives
+00F7FEBC 00000009
+P2 Inf HP
+00F8020C 00000006
+P2 Invincibility
+00F80286 00000050
+P2 Enable Transformations
+00F8023F 0000000F
+P2 Inf Time Ninja
+00F8026C 00000060
+P2 Inf Time Samourai
+00F8026E 00000060
+P2 Inf Time Dog
+00F80270 00000060
+P2 Permanent Weapons
+00F80289 00000004
+*P2 Weapons Mod Codes (choose only one)
+P2 No Weapons
+00F80200 00000000
+P2 Get Red Sphere
+00F80200 00000001
+P2 Get Blue Sphere
+00F80200 00000002
+P2 Get Purple Sphere
+00F80200 00000003
+P2 Get Yellow Sphere
+00F80200 00000004
+P2 Get Unknown Power 1
+00F80200 00000005
+P2 Get Unknown Power 2
+00F80200 00000006
+P2 Get Unknown Power 3
+00F80200 00000007
+

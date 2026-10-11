@@ -1,0 +1,35 @@
+"Fast And The Furious, The"
+Enable Code (Must Be On)
+903C9AC8 0C111171
+Infinite NOS Usage
+202887F4 00000000
+Infinite Cash
+105CAC30 0000FFFF
+Max Cash
+205CAC30 05F5E0FF
+Buying Cars Doesnt Decrease Cash
+201D0070 00000000
+Buying Cars Increases Cash
+201D0064 00821821
+Buying Upgrades Doesnt Decrease Cash
+20153D04 00000000
+Buying Upgrades Increases Cash
+20153CF4 00831021
+Have All Boss Cars Unlocked
+005CACF8 00000010
+Have All Crew Members Defeated
+005CACF9 00000050
+Max Total Races Won
+205CACFC 05F5E0FF
+No Total Races Won
+205CACFC 00000000
+Max Total Races Lost
+205CAD00 05F5E0FF
+No Total Races Lost
+205CAD00 00000000
+Have All Racers Defeated/Tutorials Completed
+201AAE04 AC430018
+101AAE0A 00001000
+Have All Film Cars Unlocked
+20143A44 AC42000C
+

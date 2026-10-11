@@ -1,0 +1,21 @@
+"Worms Forts: Under Siege PAL"
+(M)
+F04166EC 004166EF
+Press L2 + Select To Set Turn Timer To Normal
+D0834E42 0000FEFE
+20163DD4 2482FFFF
+Press L1 + Select To Freeze Turn Timer
+D0834E42 0000FBFE
+20163DD4 24820000
+Press R2 + Select To Make Turn Timer Increase
+D0834E42 0000FDFE
+20163DD4 24820002
+Press R1 + Select For Faster Turn Timer
+D0834E42 0000F7FE
+20163DD4 2482FFFC
+Have All/Infinite Weapons/Buildings
+20244E50 24020000
+20245000 24020009
+Only use this code in multiplayer. Do not pick
+any item with invalid name
+
