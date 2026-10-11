@@ -822,6 +822,10 @@ fn run() -> Result<()> {
         "wii-tetris-party-gecko",
         "wii-sonic-secret-rings-gecko",
         "wii-mario-galaxy-gecko",
+        "wii-cars-trilogy-gecko",
+        "wii-pikmin-gecko",
+        "wii-kirby-dreamland-gecko",
+        "wii-super-paper-mario-gecko",
         "xan1242-nfsu-ps2",
         "xan1242-gt3-no-interlace",
         "xan1242-gt3-freecam",
@@ -868,6 +872,10 @@ fn run() -> Result<()> {
                 | "wii-tetris-party-gecko"
                 | "wii-sonic-secret-rings-gecko"
                 | "wii-mario-galaxy-gecko"
+                | "wii-cars-trilogy-gecko"
+                | "wii-pikmin-gecko"
+                | "wii-kirby-dreamland-gecko"
+                | "wii-super-paper-mario-gecko"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
                 {
                     let disc = original
