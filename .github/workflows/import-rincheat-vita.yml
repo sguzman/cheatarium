@@ -1,0 +1,46 @@
+name: Bulk import pinned PS Vita cheat sources
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-rincheat-vita.yml"
+      - "tools/import_rincheat_vita.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-vita-bulk-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Import complete pinned runtime/save Vita cheat databases
+        run: python3 tools/import_rincheat_vita.py
+      - name: Validate all archive originals and manifests
+        run: python3 tools/validate.py
+      - name: Commit complete Vita collection
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/rincheat-vita/ sources/rincheat-vita.json
+          if git diff --cached --quiet; then
+            echo "Pinned Vita originals already archived."
+            exit 0
+          fi
+          git commit -m "data(vita): bulk-preserve 58 source-native cheat and save-edit files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi

@@ -792,6 +792,7 @@ fn run() -> Result<()> {
         "artemis-ps3",
         "goldhen",
         "etahen-ps5",
+        "rincheat-vita",
         "admentus-enhancement-codes",
         "mkwcat-gecko-codes",
         "shrub-kar-gecko",
@@ -1104,6 +1105,16 @@ fn run() -> Result<()> {
                         original.trim_start_matches("GC/").to_owned(),
                     )
                 }
+                "rincheat-vita" if original.starts_with("cheats_db/") && original.ends_with(".txt") => (
+                    "vita",
+                    "vita-rincheat-memory",
+                    original.trim_start_matches("cheats_db/").to_owned(),
+                ),
+                "rincheat-vita" if original.starts_with("SE_cheats_db/") && original.ends_with(".lua") => (
+                    "vita",
+                    "vita-rincheat-save-lua",
+                    original.trim_start_matches("SE_cheats_db/").to_owned(),
+                ),
                 "artemis-ps3"
                     if original.starts_with("docs/codes/") && original.ends_with(".ncl") =>
                 {
@@ -1220,6 +1231,22 @@ fn run() -> Result<()> {
                 String::from_utf8_lossy(&raw).into_owned()
             };
             let mut parsed = match format {
+                "vita-rincheat-memory" | "vita-rincheat-save-lua" => cheatarium_index::ParsedCheats {
+                    declared_count: None,
+                    // Source-exact opaque text; not an invented count of individual cheats.
+                    codes: vec![Code {
+                        ordinal: 0,
+                        description: Some("Complete original Vita cheat source; source program only".to_owned()),
+                        code: Some(decoded.clone()),
+                        source_enabled: false,
+                        verification: "unverified",
+                        role: "code",
+                        native_fields: Vec::new(),
+                        snes_decode: None,
+                        composition: None,
+                    }],
+                    warnings: vec!["Original Vita runtime/save-edit source is opaque; do not infer game-build compatibility or activate automatically".to_owned()],
+                },
                 "artemis-ncl" => parse_artemis_ncl(&decoded),
                 "goldhen-json" => parse_goldhen_json(&decoded),
                 "goldhen-mc4" => parse_goldhen_mc4(&decoded),
