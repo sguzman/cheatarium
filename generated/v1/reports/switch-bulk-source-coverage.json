@@ -1,0 +1,47 @@
+{
+  "caveats": [
+    "Source title IDs are author-supplied labels, not independently confirmed game identity.",
+    "Title ID plus build ID overlap does not prove code equivalence, operation, or compatibility.",
+    "Repeated paths and historic one-effect files are not distinct games or tested effects.",
+    "Unknown and nonstandard build-ID paths are not forced into invented matches.",
+    "Independent historical author redistribution rights remain source-specific."
+  ],
+  "comparison_basis": "source_path_title_id_and_16_hex_build_id_only_unverified",
+  "schema_version": 1,
+  "sources": {
+    "bad1dea-nxcheats-switch": {
+      "distinct_title_build_id_pairs": 129,
+      "distinct_title_id_labels": 58,
+      "duplicate_source_paths_for_same_pair": 2863,
+      "native_cheat_source_files": 2992,
+      "noncomparable_native_paths": [],
+      "original_manifest_files_including_noncheats": 3155,
+      "revision": "047cea8d304c3a6f6697e2f60a6c17b42dc96481"
+    },
+    "sharkive": {
+      "distinct_title_build_id_pairs": 488,
+      "distinct_title_id_labels": 318,
+      "duplicate_source_paths_for_same_pair": 0,
+      "native_cheat_source_files": 491,
+      "noncomparable_native_paths": [
+        "switch/01009AA000FAA000/03fd152e17a841c.txt",
+        "switch/0100AE800C9C6000/6e114d3262f052907b44b38434e3236d.txt",
+        "switch/0100E95004038000/6d34a75dbb68d4f.txt"
+      ],
+      "original_manifest_files_including_noncheats": 1137,
+      "revision": "aeab5fd3b001ed22c013efd1a02b092575d825ed"
+    }
+  },
+  "title_build_id_pairs": {
+    "combined_distinct": 617,
+    "only_nxcheats": 129,
+    "only_sharkive": 488,
+    "shared": 0
+  },
+  "title_id_labels": {
+    "combined_distinct": 372,
+    "only_nxcheats": 54,
+    "only_sharkive": 314,
+    "shared": 4
+  }
+}
