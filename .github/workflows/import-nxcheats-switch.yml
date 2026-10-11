@@ -1,0 +1,46 @@
+name: Bulk import pinned Nintendo Switch NXCheats collection
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-nxcheats-switch.yml"
+      - "tools/import_nxcheats_switch.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-switch-nxcheats-bulk-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire complete pinned native Switch source collection
+        run: python3 tools/import_nxcheats_switch.py
+      - name: Validate all source manifests and original archive bytes
+        run: python3 tools/validate.py
+      - name: Commit full original Switch collection and attribution
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/bad1dea-nxcheats-switch/ sources/bad1dea-nxcheats-switch.json
+          if git diff --cached --quiet; then
+            echo "Pinned NXCheats collection is already preserved."
+            exit 0
+          fi
+          git commit -m "data(switch): bulk-preserve 2992 pinned native NXCheats files"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
