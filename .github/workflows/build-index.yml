@@ -29,6 +29,7 @@ on:
       - "sources/made-in-slovakia-ratchet-ps2.json"
       - "sources/xan1242-sonic-unleashed-ps2.json"
       - "sources/xan1242-nfsmw-opm-demo-ps2.json"
+      - "sources/exceen-mhfu-psp-transmog.json"
       - "sources/kh1fm-ps2-drop-rate.json"
       - "sources/igor-txr-controller-tweaks.json"
       - "sources/saupernova-bt3-60fps.json"
@@ -105,6 +106,7 @@ on:
       - "archive/made-in-slovakia-ratchet-ps2/**"
       - "archive/xan1242-sonic-unleashed-ps2/**"
       - "archive/xan1242-nfsmw-opm-demo-ps2/**"
+      - "archive/exceen-mhfu-psp-transmog/**"
       - "archive/kh1fm-ps2-drop-rate/**"
       - "archive/igor-txr-controller-tweaks/**"
       - "archive/saupernova-bt3-60fps/**"
@@ -607,6 +609,9 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform ps2 --source-record-id 'xan1242-nfsmw-opm-demo-ps2:cheats/61D112E4.pnach' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "ps2" and d["provenance"]["source_id"] == "xan1242-nfsmw-opm-demo-ps2" and d["provenance"]["upstream_path"] == "cheats/61D112E4.pnach" and d["declared_format_hint"] == "pcsx2-pnach"; assert d["code_fields"] > 0 and any("patch=1,EE" in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform psp --source-record-id 'exceen-mhfu-psp-transmog:archive/cheat.db' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["provenance"]["source_id"] == "exceen-mhfu-psp-transmog" and d["provenance"]["upstream_path"] == "archive/cheat.db" and d["declared_format_hint"] == "psp-cwcheat-ini"; assert d["code_fields"] > 0 and any("_L " in (e.get("code") or "") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'

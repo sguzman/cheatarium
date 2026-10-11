@@ -801,6 +801,7 @@ fn run() -> Result<()> {
         "made-in-slovakia-ratchet-ps2",
         "xan1242-sonic-unleashed-ps2",
         "xan1242-nfsmw-opm-demo-ps2",
+        "exceen-mhfu-psp-transmog",
         "kh1fm-ps2-drop-rate",
         "igor-txr-controller-tweaks",
         "saupernova-bt3-60fps",
@@ -1011,6 +1012,11 @@ fn run() -> Result<()> {
                         "ps1-native-cht",
                         original.trim_start_matches("PS1/").to_owned(),
                     )
+                }
+                "exceen-mhfu-psp-transmog" if original == "archive/cheat.db" => {
+                    // Native CWCheat cheat.db; upstream _S ULJM-05500 is a source hint
+                    // for an FUComplete mod, not an independently verified game build.
+                    ("psp", "psp-cwcheat-ini", original.to_owned())
                 }
                 "cookieplmonster-console-cheat-codes"
                     if original.starts_with("PSP/") && original.ends_with(".ini") =>

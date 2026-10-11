@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "exceen-mhfu-psp-transmog",
+  "repository": "https://github.com/Exceen/mhfu_transmog",
+  "snapshot_commit": "8da384cfcd1e5fc49bcf980d102613aab1c15007",
+  "license": "MIT (Exceen; original LICENSE retained)",
+  "archive_prefix": "archive/exceen-mhfu-psp-transmog/",
+  "scope_note": "One original PSP CWCheat cheat.db code file containing author-documented Monster Hunter Freedom Unite equipment-transmog examples for FUComplete mod, with source CWCheat _S/_G/_C0/_L lines preserved. Supporting research notes and license retained.",
+  "rights_note": "Author's README documents codes derived from original equipment model table research and the FUComplete v1.4.0 mod; the game, DLC, FUComplete assets, save states, generator source, and extracted game resources are NOT included. Actual compatible build, effects and real PSP behavior unverified by Cheatarium.",
+  "native_cheat_counts": {
+    "psp": 1
+  },
+  "files": [
+    {
+      "upstream_path": "FINDINGS.md",
+      "archive_path": "archive/exceen-mhfu-psp-transmog/FINDINGS.md",
+      "git_blob_sha": "ef0fcc83e7b72d03ad0ce4a49122b041306ac7af"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/exceen-mhfu-psp-transmog/LICENSE",
+      "git_blob_sha": "dce34d2f6b3a691ede18c867490ab483405ca273"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/exceen-mhfu-psp-transmog/README.md",
+      "git_blob_sha": "abb26d3e8d80f3ef96b73ecd483407dfa01167c3"
+    },
+    {
+      "upstream_path": "archive/cheat.db",
+      "archive_path": "archive/exceen-mhfu-psp-transmog/archive/cheat.db",
+      "git_blob_sha": "2db0a9ce72f483e29fe954982f2bc24ed5a5ea21"
+    }
+  ]
+}
