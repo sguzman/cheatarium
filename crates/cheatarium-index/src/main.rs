@@ -141,6 +141,73 @@ struct GameIndex {
     candidates: Vec<GameCandidate>,
 }
 
+
+fn parse_cheatdevice_ps2_games(text: &str) -> Vec<(String, Vec<Code>)> {
+    fn is_native_code_line(line: &str) -> bool {
+        let mut parts = line.split_whitespace();
+        match (parts.next(), parts.next(), parts.next()) {
+            (Some(a), Some(b), None) => {
+                a.len() == 8 && b.len() == 8
+                    && a.bytes().all(|c| c.is_ascii_hexdigit())
+                    && b.bytes().all(|c| c.is_ascii_hexdigit())
+            }
+            _ => false,
+        }
+    }
+    fn parse_game_body(body: &str) -> Vec<Code> {
+        fn flush(result: &mut Vec<Code>, description: &str, code: &mut String) {
+            if code.is_empty() {
+                return;
+            }
+            result.push(Code {
+                ordinal: result.len(),
+                description: Some(description.to_owned()),
+                code: Some(std::mem::take(code)),
+                source_enabled: false,
+                verification: "unverified",
+                role: "code",
+                native_fields: Vec::new(),
+                snes_decode: None,
+                composition: None,
+            });
+        }
+        let mut out = Vec::new();
+        let mut description = "(unnamed original device code)".to_owned();
+        let mut pending = String::new();
+        for line in body.split_inclusive('\n') {
+            let value = line.trim();
+            if is_native_code_line(value) {
+                pending.push_str(line);
+            } else {
+                flush(&mut out, &description, &mut pending);
+                if !value.is_empty() && !value.starts_with("//") && !value.starts_with('#') {
+                    description = value.to_owned();
+                }
+            }
+        }
+        flush(&mut out, &description, &mut pending);
+        out
+    }
+    let mut games = Vec::new();
+    let mut name: Option<String> = None;
+    let mut body = String::new();
+    for line in text.split_inclusive('\n') {
+        let trimmed = line.trim();
+        if trimmed.len() >= 2 && trimmed.starts_with('"') && trimmed.ends_with('"') {
+            if let Some(prior) = name.replace(trimmed[1..trimmed.len()-1].to_owned()) {
+                games.push((prior, parse_game_body(&body)));
+                body.clear();
+            }
+        } else if name.is_some() {
+            body.push_str(line);
+        }
+    }
+    if let Some(final_name) = name {
+        games.push((final_name, parse_game_body(&body)));
+    }
+    games
+}
+
 fn build_game_index(platform: &str, records: &[IndexedFile]) -> GameIndex {
     let mut groups: BTreeMap<String, CandidateAccum> = BTreeMap::new();
     for record in records {
@@ -1336,6 +1403,57 @@ fn run() -> Result<()> {
                 .entry(platform.to_owned())
                 .or_default()
                 .push(record);
+        }
+    }
+
+
+    // Entire original root670 CheatDevicePS2 database: 1 source file, 1,483
+    // source-declared game sections. Each section is indexed separately without
+    // manufacturing ROM/build identity or treating individual memory writes
+    // as known-good. Original bytes and historic code-author uncertainty remain.
+    if wanted.as_ref().is_none_or(|platforms| platforms.contains("ps2")) {
+        let id = "root670-cheatdevice-ps2";
+        let manifest_path = root.join(format!("sources/{id}.json"));
+        let manifest: SourceManifest = serde_json::from_slice(&fs::read(manifest_path)?)?;
+        if manifest.id != id {
+            return Err("Mismatched source manifest for PS2 CheatDevice".into());
+        }
+        let db = manifest.files.iter().find(|x| x.upstream_path == "CheatDatabase.txt")
+            .ok_or("Missing indexed CheatDevicePS2 database source")?;
+        let bytes = fs::read(checked_path(&root, &db.archive_path)?)?;
+        let text = String::from_utf8_lossy(&bytes);
+        let games = parse_cheatdevice_ps2_games(&text);
+        if games.len() != 1483 {
+            return Err(format!("Pinned CheatDevicePS2 game count mismatch: {}", games.len()).into());
+        }
+        for (index, (title, codes)) in games.into_iter().enumerate() {
+            if codes.is_empty() {
+                return Err(format!("Missing raw device code lines in CheatDevicePS2 game {}", index + 1).into());
+            }
+            let record = IndexedFile {
+                id: format!("{id}:CheatDatabase.txt#game-{:04}", index + 1),
+                title_hint: title,
+                candidate_game_key: format!("{id}:game-{:04}", index + 1),
+                identity_confidence: "source-declared-game-name-only",
+                raw_filename: format!("CheatDatabase.txt#game-{:04}", index + 1),
+                region_hint: None,
+                format_hint: Some("cheatdevice-ps2-raw"),
+                declared_cheats: None,
+                parse_warnings: vec![
+                    "Device-code groups are source text, not executed/tested cheats; release/region compatibility unknown".to_owned(),
+                ],
+                codes,
+                provenance: Provenance {
+                    source_id: manifest.id.clone(),
+                    repository: manifest.repository.clone(),
+                    revision: manifest.snapshot_commit.clone(),
+                    license: manifest.license.clone(),
+                    upstream_path: db.upstream_path.clone(),
+                    archive_path: db.archive_path.clone(),
+                    git_blob_sha: db.git_blob_sha.clone(),
+                },
+            };
+            by_platform.entry("ps2".to_owned()).or_default().push(record);
         }
     }
 

@@ -1,0 +1,46 @@
+name: Bulk import pinned PS2 CheatDevice database
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-cheatdevice-ps2.yml"
+      - "tools/import_cheatdevice_ps2.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cheatarium-cheatdevice-ps2-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Acquire complete original PS2 game-cheat database and credits
+        run: python3 tools/import_cheatdevice_ps2.py
+      - name: Verify archive and Git blob provenance
+        run: python3 tools/validate.py
+      - name: Commit bulk PS2 data and source provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/root670-cheatdevice-ps2/ sources/root670-cheatdevice-ps2.json
+          if git diff --cached --quiet; then
+            echo "Complete original PS2 database is already archived."
+            exit 0
+          fi
+          git commit -m "data(ps2): preserve full 1483-game CheatDevice archive"
+          if ! git push origin HEAD:main; then
+            git pull --rebase origin main
+            python3 tools/validate.py
+            git push origin HEAD:main
+          fi
