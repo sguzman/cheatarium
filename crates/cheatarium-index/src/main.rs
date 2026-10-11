@@ -816,6 +816,8 @@ fn run() -> Result<()> {
         "wii-zero-gravity-controller",
         "wii-krusty-krab-controller",
         "wii-okami-controller",
+        "wii-robinsons-controller",
+        "wii-punchout-controller",
         "xan1242-nfsu-ps2",
         "dolphin-game-cheats",
     ] {
@@ -853,6 +855,8 @@ fn run() -> Result<()> {
                 "wii-zero-gravity-controller"
                 | "wii-krusty-krab-controller"
                 | "wii-okami-controller"
+                | "wii-robinsons-controller"
+                | "wii-punchout-controller"
                     if original.starts_with("codes/") && original.ends_with(".ini") =>
                 {
                     let disc = original

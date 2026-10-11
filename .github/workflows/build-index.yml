@@ -44,6 +44,8 @@ on:
       - "sources/wii-zero-gravity-controller.json"
       - "sources/wii-krusty-krab-controller.json"
       - "sources/wii-okami-controller.json"
+      - "sources/wii-robinsons-controller.json"
+      - "sources/wii-punchout-controller.json"
       - "sources/xan1242-nfsu-ps2.json"
       - "sources/dolphin-game-cheats.json"
       - "sources/candidates.json"
@@ -92,6 +94,8 @@ on:
       - "archive/wii-zero-gravity-controller/**"
       - "archive/wii-krusty-krab-controller/**"
       - "archive/wii-okami-controller/**"
+      - "archive/wii-robinsons-controller/**"
+      - "archive/wii-punchout-controller/**"
       - "archive/xan1242-nfsu-ps2/**"
       - "archive/dolphin-game-cheats/**"
   workflow_dispatch:
@@ -461,6 +465,12 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform 3ds --source-record-id 'foxy-mii-maker-3ds:0004001000022700.txt' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "3ds" and d["provenance"]["source_id"] == "foxy-mii-maker-3ds" and d["declared_format_hint"] == "gateshark-text"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-robinsons-controller:codes/RRSE4Q.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-robinsons-controller" and d["provenance"]["upstream_path"] == "codes/RRSE4Q.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
+          cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
+            --db generated/v1 --platform wii --source-record-id 'wii-punchout-controller:codes/R7PE01.ini' --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "wii" and d["provenance"]["source_id"] == "wii-punchout-controller" and d["provenance"]["upstream_path"] == "codes/R7PE01.ini" and d["declared_format_hint"] == "dolphin-ini"; assert d["code_fields"] > 0 and any(e.get("code") for e in d["entries"]) and not d["game_identity_verified"] and not d["cheats_activated"]'
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- source \
             --db generated/v1 --platform psp --source-record-id 'cookieplmonster-console-cheat-codes:PSP/Midnight Club LA Remix/Unlock prototype cheats/ULUS10383_cheats.ini' --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["platform"] == "psp" and d["declared_format_hint"] == "psp-cwcheat-ini" and d["code_fields"] == 1 and d["entries"][1]["description"] == "Unlock prototype cheats" and d["entries"][1]["native_fields"][0]["value"] == "_C1"; assert not d["cheats_activated"]'
