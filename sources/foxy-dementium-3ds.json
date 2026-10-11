@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-dementium-3ds",
+  "repository": "https://github.com/FoxyXTN/Dementium-Remastered-3ds-Ctrpf-Cheat-Codes",
+  "snapshot_commit": "9e2120f124bade8bbdd6062d91baf3d4a722f85e",
+  "license": "Apache-2.0 (original source repository LICENSE)",
+  "archive_prefix": "archive/foxy-dementium-3ds/",
+  "scope_note": "One source-original CTRPF 3DS Gateshark text cheat file with native title-ID filename for Dementium Remastered.",
+  "rights_note": "Preserve author FoxyXTN's original Apache-2.0 notice and source-native descriptions. Cheats include unverified test and potentially unstable variants; never auto-enable or claim title ID/revision compatibility.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-dementium-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "000400000018AB00.txt",
+      "archive_path": "archive/foxy-dementium-3ds/000400000018AB00.txt",
+      "git_blob_sha": "7f175a790bfc7cfe271b35d51e7bdbec03c0d0aa"
+    }
+  ]
+}

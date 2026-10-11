@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "foxy-terraria-3ds",
+  "repository": "https://github.com/FoxyXTN/Terraria-3ds-CTRPF-AR-Codes",
+  "snapshot_commit": "b9655d5c3e5b54a32e9eecee38a286143663c4d5",
+  "license": "Apache-2.0 (original source repository LICENSE)",
+  "archive_prefix": "archive/foxy-terraria-3ds/",
+  "scope_note": "One source-original CTRPF 3DS Gateshark cheat text file for Terraria, including source test/unstable codes and title ID filename.",
+  "rights_note": "Retain author attribution, original README's caution that some codes may not work, and original Apache-2.0 notice. No empirical cheat or build compatibility verification by Cheatarium.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-terraria-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/foxy-terraria-3ds/README.md",
+      "git_blob_sha": "e05c950da93059db9842d04a6ca5b518162f8da3"
+    },
+    {
+      "upstream_path": "000400000016A600.txt",
+      "archive_path": "archive/foxy-terraria-3ds/000400000016A600.txt",
+      "git_blob_sha": "ffe68cb49785b7112817bd6eda507378536e0c53"
+    }
+  ]
+}

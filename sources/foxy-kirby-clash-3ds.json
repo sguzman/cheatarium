@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-kirby-clash-3ds",
+  "repository": "https://github.com/FoxyXTN/Kirby-Clash-Deluxe-3ds-Ctrpf-Ar-Codes",
+  "snapshot_commit": "1beb41fcbd101bc5f551d9a6e1ffe8ea94859f04",
+  "license": "Apache-2.0 (original source repository LICENSE)",
+  "archive_prefix": "archive/foxy-kirby-clash-3ds/",
+  "scope_note": "One source-original CTRPF 3DS Gateshark text cheat file with native title-ID filename for Team Kirby Clash Deluxe.",
+  "rights_note": "Preserve upstream Apache-2.0 notice and original codes verbatim; claims of effect and compatible game/revision remain unverified.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-kirby-clash-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "00040000001AB900.txt",
+      "archive_path": "archive/foxy-kirby-clash-3ds/00040000001AB900.txt",
+      "git_blob_sha": "b622728427096cb6822a6b34b9d26b633822789f"
+    }
+  ]
+}

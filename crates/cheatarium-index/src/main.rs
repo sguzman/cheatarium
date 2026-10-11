@@ -800,6 +800,10 @@ fn run() -> Result<()> {
         "kh1fm-ps2-drop-rate",
         "igor-txr-controller-tweaks",
         "saupernova-bt3-60fps",
+        "e-the-real-gecko",
+        "foxy-dementium-3ds",
+        "foxy-kirby-clash-3ds",
+        "foxy-terraria-3ds",
         "dolphin-game-cheats",
     ] {
         let native: SourceManifest =
@@ -819,6 +823,21 @@ fn run() -> Result<()> {
                     if original.ends_with(".pnach") =>
                 {
                     ("ps2", "pcsx2-pnach", original.to_owned())
+                }
+                "e-the-real-gecko"
+                    if original.ends_with(".ini")
+                        && original.trim_end_matches(".ini").len() == 6 =>
+                {
+                    // Preserve native six-character Wii title/region IDs as source hints.
+                    ("wii", "dolphin-ini", original.trim_end_matches(".ini").to_owned())
+                }
+                "foxy-dementium-3ds" | "foxy-kirby-clash-3ds" | "foxy-terraria-3ds"
+                    if original.ends_with(".txt")
+                        && original.trim_end_matches(".txt").len() == 16
+                        && original.trim_end_matches(".txt").chars().all(|c| c.is_ascii_hexdigit()) =>
+                {
+                    // Native title-ID labels only; not independently confirmed game identity.
+                    ("3ds", "gateshark-text", original.trim_end_matches(".txt").to_owned())
                 }
                 "dolphin-game-cheats"
                     if original.starts_with("Data/Sys/GameSettings/")
@@ -978,7 +997,7 @@ fn run() -> Result<()> {
                 "goldhen-mc4-xml" => parse_goldhen_shn(&decoded),
                 "dolphin-ini" => parse_gecko_ini(&decoded),
                 "gecko-markdown" => parse_gecko_markdown(&decoded),
-                "pcsx2-pnach" | "ps1-native-cht" => parse_native_sections(&decoded),
+                "pcsx2-pnach" | "ps1-native-cht" | "gateshark-text" => parse_native_sections(&decoded),
                 "psp-cwcheat-ini" => parse_cwcheat_ini(&decoded),
                 _ => unreachable!(),
             };
