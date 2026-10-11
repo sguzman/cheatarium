@@ -1505,9 +1505,18 @@ fn run() -> Result<()> {
             count_sources += 1;
             let bytes = fs::read(checked_path(&root, &item.archive_path)?)?;
             let decoded = String::from_utf8_lossy(&bytes);
-            let groups = parse_cheatdevice_ps2_games(&decoded);
+            let mut groups = parse_cheatdevice_ps2_games(&decoded);
+            // Some complete source pack members have no quoted game title:
+            // their filename remains the only supplied identity evidence.
+            // Do not discard otherwise valid original codes or invent a title.
+            let filename_only = groups.is_empty();
+            if filename_only {
+                let filename = original.rsplit('/').next().unwrap_or(original);
+                let label = filename.replace('_', " ").replace('"', "'");
+                groups = parse_cheatdevice_ps2_games(&format!("\"{label}\"\n{decoded}"));
+            }
             if groups.is_empty() {
-                return Err(format!("No source-title game sections in pinned ZIP member: {original}").into());
+                return Err(format!("Unindexable original PS2 ZIP member: {original}").into());
             }
             for (section, (title, codes)) in groups.into_iter().enumerate() {
                 let source_name = original.rsplit('/').next().unwrap_or(original);
@@ -1515,14 +1524,20 @@ fn run() -> Result<()> {
                     id: format!("{id}:{original}#section-{:04}", section + 1),
                     title_hint: title,
                     candidate_game_key: format!("{id}:{original}#section-{:04}", section + 1),
-                    identity_confidence: "source-declared-game-name-only",
+                    identity_confidence: if filename_only {
+                        "source-file-name-only"
+                    } else {
+                        "source-declared-game-name-only"
+                    },
                     raw_filename: source_name.to_owned(),
                     region_hint: region.clone(),
                     format_hint: Some(format),
                     declared_cheats: None,
-                    parse_warnings: vec![
-                        "Pinned CheatDevice ZIP source text; compatibility/effects not gameplay-verified, including required mastercode conditions".to_owned(),
-                    ],
+                    parse_warnings: if filename_only {
+                        vec!["Original lacks quoted game-title header; filename is not a verified game identity, build or compatible code".to_owned()]
+                    } else {
+                        vec!["Pinned CheatDevice ZIP source text; compatibility/effects not gameplay-verified, including required mastercode conditions".to_owned()]
+                    },
                     codes,
                     provenance: Provenance {
                         source_id: manifest.id.clone(),
