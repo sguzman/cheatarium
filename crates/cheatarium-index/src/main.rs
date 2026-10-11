@@ -823,6 +823,8 @@ fn run() -> Result<()> {
         "wii-sonic-secret-rings-gecko",
         "wii-mario-galaxy-gecko",
         "xan1242-nfsu-ps2",
+        "xan1242-gt3-no-interlace",
+        "xan1242-gt3-freecam",
         "dolphin-game-cheats",
     ] {
         let native: SourceManifest =
@@ -841,6 +843,8 @@ fn run() -> Result<()> {
                 | "saupernova-bt3-60fps"
                 | "andshrew-sly2-pnach"
                 | "xan1242-nfsu-ps2"
+                | "xan1242-gt3-no-interlace"
+                | "xan1242-gt3-freecam"
                     if original.ends_with(".pnach") =>
                 {
                     ("ps2", "pcsx2-pnach", original.to_owned())

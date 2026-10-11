@@ -1,0 +1,17 @@
+gametitle=Gran Turismo 3 - A-Spec [SCUS-97102] (U)
+
+[Silence timezone print spam in TTY]
+author=xan1242
+description=Silences the "Timezone" and "SummerTime" spam in TTY.
+patch=1,EE,202747E8,extended,00000000
+patch=1,EE,202748EC,extended,00000000
+
+[Disable UI rendering during races]
+author=xan1242
+patch=1,EE,20187D30,extended,03E00008
+patch=1,EE,20187D34,extended,00000000
+
+[Disable car rendering during races]
+author=xan1242
+patch=1,EE,2017F730,extended,03E00008
+patch=1,EE,2017F734,extended,00000000

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "xan1242-gt3-no-interlace",
+  "repository": "https://github.com/xan1242/GT3NoInterlace",
+  "snapshot_commit": "4e71ec66c0b38efc66e2e68a90f7c0a407b536f5",
+  "license": "GPL-3.0 (xan1242; original LICENSE and README retained)",
+  "archive_prefix": "archive/xan1242-gt3-no-interlace/",
+  "scope_note": "Four original Gran Turismo 3 PS2 PNACH deinterlacing patches covering source USA, Europe and Japan version/CRC variants.",
+  "rights_note": "Author xan1242 describes independently written patches and notes PAL fade/trophy artifacts. Original GPLv3 LICENSE and author's README retained, with unverified source compatibility/test claims. No game images.",
+  "native_cheat_counts": {
+    "ps2": 4
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/xan1242-gt3-no-interlace/LICENSE",
+      "git_blob_sha": "3877ae0a7ff6f94ac222fd704e112723db776114"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/xan1242-gt3-no-interlace/README.md",
+      "git_blob_sha": "1e332e51aebdbe1c28d2fb65add8496f75f0f7ee"
+    },
+    {
+      "upstream_path": "patches/PBPX-95503_8AA991B0.pnach",
+      "archive_path": "archive/xan1242-gt3-no-interlace/patches/PBPX-95503_8AA991B0.pnach",
+      "git_blob_sha": "48fc78c10955530f8bb64e3c42dbbd5bd179e568"
+    },
+    {
+      "upstream_path": "patches/SCES-50294_B590CE04.pnach",
+      "archive_path": "archive/xan1242-gt3-no-interlace/patches/SCES-50294_B590CE04.pnach",
+      "git_blob_sha": "a1da35433d93160875b3814a502f0b590df71750"
+    },
+    {
+      "upstream_path": "patches/SCPS-15009_9DE5CF65.pnach",
+      "archive_path": "archive/xan1242-gt3-no-interlace/patches/SCPS-15009_9DE5CF65.pnach",
+      "git_blob_sha": "283998b7d7e72c54ee03093ed18f3bdac6c0a0c7"
+    },
+    {
+      "upstream_path": "patches/SCUS-97102_85AE91B3.pnach",
+      "archive_path": "archive/xan1242-gt3-no-interlace/patches/SCUS-97102_85AE91B3.pnach",
+      "git_blob_sha": "bea9cc683d00f47613c0698ebe8d4846811b18e3"
+    }
+  ]
+}
