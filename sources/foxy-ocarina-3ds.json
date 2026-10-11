@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "foxy-ocarina-3ds",
+  "repository": "https://github.com/FoxyXTN/The-legend-of-Zelda-Ocarina-Of-time-3DS-Ctrpf-Cheats",
+  "snapshot_commit": "f583c14451d96c990c6cde8dd3145b757c5a66e7",
+  "license": "Apache-2.0 (original upstream LICENSE)",
+  "archive_prefix": "archive/foxy-ocarina-3ds/",
+  "scope_note": "One original 3DS CTRPF Gateshark text cheat file for The Legend of Zelda: Ocarina of Time 3D, with native source title-ID filename 0004000000033600.txt.",
+  "rights_note": "Preserve upstream author FoxyXTN and original Apache-2.0 notice. Upstream descriptions of experimental and potentially unstable codes remain exact; no independent source-build or functional verification.",
+  "native_cheat_counts": {
+    "3ds": 1
+  },
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/foxy-ocarina-3ds/LICENSE",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "upstream_path": "0004000000033600.txt",
+      "archive_path": "archive/foxy-ocarina-3ds/0004000000033600.txt",
+      "git_blob_sha": "f62d7b9c7df3898ca3deba2261b2f53dbe7bd9e3"
+    }
+  ]
+}

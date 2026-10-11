@@ -804,6 +804,8 @@ fn run() -> Result<()> {
         "foxy-dementium-3ds",
         "foxy-kirby-clash-3ds",
         "foxy-terraria-3ds",
+        "foxy-ocarina-3ds",
+        "andshrew-sly2-pnach",
         "dolphin-game-cheats",
     ] {
         let native: SourceManifest =
@@ -820,6 +822,7 @@ fn run() -> Result<()> {
                 | "kh1fm-ps2-drop-rate"
                 | "igor-txr-controller-tweaks"
                 | "saupernova-bt3-60fps"
+                | "andshrew-sly2-pnach"
                     if original.ends_with(".pnach") =>
                 {
                     ("ps2", "pcsx2-pnach", original.to_owned())
@@ -835,7 +838,7 @@ fn run() -> Result<()> {
                         original.trim_end_matches(".ini").to_owned(),
                     )
                 }
-                "foxy-dementium-3ds" | "foxy-kirby-clash-3ds" | "foxy-terraria-3ds"
+                "foxy-dementium-3ds" | "foxy-kirby-clash-3ds" | "foxy-terraria-3ds" | "foxy-ocarina-3ds"
                     if original.ends_with(".txt")
                         && original.trim_end_matches(".txt").len() == 16
                         && original
