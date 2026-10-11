@@ -226,7 +226,8 @@ jobs:
             "test_inspect_snes_joins:test-inspect-snes-joins" \
             "test_snes_publications:test-snes-publications" \
             "test_audit_snes_publication_archive:test-audit-snes-publication-archive" \
-            "test_analyze_snes_patterns:test-analyze-snes-patterns"
+            "test_analyze_snes_patterns:test-analyze-snes-patterns" \
+            "test_measure_switch_bulk_coverage:test-measure-switch-bulk-coverage"
           do
             script="${item%%:*}"
             stage="${item#*:}"
@@ -284,6 +285,8 @@ jobs:
         run: |
           python3 tools/measure_ps2_bulk_coverage.py --write
           python3 tools/measure_ps2_bulk_coverage.py --check
+          python3 tools/measure_switch_bulk_coverage.py --write
+          python3 tools/measure_switch_bulk_coverage.py --check
       - name: Confirm index-generated stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
