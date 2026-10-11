@@ -840,6 +840,7 @@ fn run() -> Result<()> {
         "wii-galaxy2-gecko",
         "wii-twilight-princess-gecko",
         "gamecubing-gecko",
+        "two-gifts-melee-random",
         "foxy-isz-item-chat",
         "gc-007-high-fps",
         "foxy-ice-station-z-itemchanger",
@@ -952,6 +953,13 @@ fn run() -> Result<()> {
                         continue;
                     }
                     ("wii", "dolphin-ini", disc.to_owned())
+                }
+                "two-gifts-melee-random"
+                    if original.starts_with("dist/") && original.ends_with(".ini") =>
+                {
+                    // Both original distribution filenames contain the same Gecko blob.
+                    // GALE01 is a source-provided title ID, not a verified identity.
+                    ("gamecube", "dolphin-ini", "GALE01".to_owned())
                 }
                 "gamecubing-gecko" if original == "Geckos.txt" => {
                     // Multi-game original author source; do not invent a common game ID.

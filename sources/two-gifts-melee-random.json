@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "two-gifts-melee-random",
+  "repository": "https://github.com/2gifts/SSBMEnhancedRandomCharacter",
+  "snapshot_commit": "31e67cf9bccc6e18fe2139bbd7b1c04492ea2049",
+  "license": "MIT (Enhanced Random Character contributors; original LICENSE retained)",
+  "archive_prefix": "archive/two-gifts-melee-random/",
+  "scope_note": "Two original Dolphin/Slippi Gecko INI source paths for Super Smash Bros. Melee NTSC 1.02 random-character selection controls, including the unmodified GALE01.ini and GALE01r2.ini variants. Both are byte-identical payloads but distinct upstream installation filenames; do not claim distinct cheat effects. Original README, changelog, design and source-address notes retained.",
+  "rights_note": "Project identifies code and documentation as original MIT-licensed work and credits prior community reverse engineering including doldecomp/melee, Slippi and CSS code researchers. Source game ID and compatibility statements remain unverified by Cheatarium; no executable, game images, prepatched ISO or binary GCT imported.",
+  "native_cheat_counts": {
+    "gamecube": 2
+  },
+  "files": [
+    {
+      "upstream_path": "CHANGELOG.md",
+      "archive_path": "archive/two-gifts-melee-random/CHANGELOG.md",
+      "git_blob_sha": "72e6c2f3abab330c68cb25066d9670cde2e09d7b"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "archive_path": "archive/two-gifts-melee-random/LICENSE",
+      "git_blob_sha": "26b5c5d7dfa6ab372397594e665cdbe5c68cb05a"
+    },
+    {
+      "upstream_path": "README.md",
+      "archive_path": "archive/two-gifts-melee-random/README.md",
+      "git_blob_sha": "cf9d2ec9cf7a592cd7c395a8aea3b807141c6c79"
+    },
+    {
+      "upstream_path": "dist/GALE01.ini",
+      "archive_path": "archive/two-gifts-melee-random/dist/GALE01.ini",
+      "git_blob_sha": "a4cd1f54455eaf32514d63370613724cf0f14c99"
+    },
+    {
+      "upstream_path": "dist/GALE01r2.ini",
+      "archive_path": "archive/two-gifts-melee-random/dist/GALE01r2.ini",
+      "git_blob_sha": "a4cd1f54455eaf32514d63370613724cf0f14c99"
+    },
+    {
+      "upstream_path": "docs/DESIGN.md",
+      "archive_path": "archive/two-gifts-melee-random/docs/DESIGN.md",
+      "git_blob_sha": "d40d292400eee0e8687a1c064019adc7c53c6cb0"
+    },
+    {
+      "upstream_path": "docs/addresses.md",
+      "archive_path": "archive/two-gifts-melee-random/docs/addresses.md",
+      "git_blob_sha": "4136767e3f2b59a4d14f603e2a483be5ebc4e54a"
+    }
+  ]
+}
