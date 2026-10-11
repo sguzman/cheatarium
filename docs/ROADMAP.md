@@ -14,7 +14,7 @@
 
 ## Acquisition status (2026-10-10)
 
-**33,146 actual original cheat files archived from 33 pinned upstream repositories**. The latest acquisitions add 24 native cheat files from 13 additional sources: 14 Wii Gecko INIs, 8 Nintendo 3DS CTRPF texts and 2 PS2 Need for Speed Underground PNACH files. Earlier additions include 12 native console cheat originals from six upstreams, 19 PS2 PNACH originals, 62 AeroWidescreen PS2 files and 278 Dolphin GameCube/Wii originals. **33,112 files are searchable across 44 console bundles**; 34 original Dolphin INIs have unresolved family labels and remain safely archived. The current published catalog exposes **1,258,506 code-bearing source entries**; it does not assert distinct effects, game compatibility or successful execution. Acquisition and provenance, not interface development, remain the priority.
+**33,203 archived original cheat files**, **33,169 searchable in 44 console bundles** and **46 pinned upstream repositories**. The latest 13 collections contributed **57 additional original files**: 43 Wii Gecko INIs, 9 GameCube Gecko Markdown code documents and 5 Gran Turismo 3 PS2 PNACHs, all with source-specific licenses, exact archive blob hashes and upstream caveats. The generated index includes **1,258,628 code-bearing source entries**. The 34 unclassified Dolphin INIs remain archived and deliberately unassigned. Region/build matching, game-code functionality, and per-contributor redistribution permissions have not been independently confirmed. Collecting legally reusable original cheats remains the priority; no desktop feature work was authorized.
 
 ## Platform queue
 
@@ -31,6 +31,7 @@
 - [x] Preserve 14 original igorciz777 TXR/Kaido controller PNACH files (MIT) and Saupernova13's released Budokai Tenkaichi 3 60 FPS PNACH (CC BY 4.0); exclude WIP experiments and retain differing upstream rights notices.
 - [x] Acquire original Wii Gecko codes from e.the.real (3), 3DS Gateshark texts from four author-licensed FoxyXTN projects (4), and Sly 2 PS2 PNACH reimplementations from andshrew (5), retaining pinned source hashes and original licenses.
 - [x] Archive and index 24 additional independently pinned cheat originals: 14 Wii Gecko INIs from five MIT-licensed sources, 8 3DS CTRPF texts from seven Apache-licensed sources, and 2 Need for Speed Underground PS2 PNACHs from xan1242, with exact original source paths and SHA hashes.
+- [x] Archive and index 57 additional native cheat-bearing source files from 13 more repositories: 43 Wii Gecko INIs, 9 GameCube Gecko Markdown files and 5 Gran Turismo 3 PS2 PNACHs. Confirm original Git blob identity and run live source-lookup smoke checks; preserve external code-author credits and source-level rights limitations.
 - [ ] Resolve redistribution rights of the multi-author Ice Station Z CTRPF compilation before importing its code payload.
 - [ ] Expand GameCube/Wii/Wii U and other missing console source collections beyond these additional authors, and acquire independent 3DS/Switch/Vita sources where original-code reuse rights permit.
 - [x] Add Libretro Master System, Game Gear, Sega CD, 32X, Saturn, Dreamcast and SG-1000.

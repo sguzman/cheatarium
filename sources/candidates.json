@@ -120,6 +120,19 @@
       "state": "needs_file_level_review",
       "repo_license": "Apache-2.0 root, third-party original authorship rights unresolved",
       "notes": "Reviewed pinned revision 0c6bbbc53907c8eb91de6027c3250b99f0bd74f5; main 0004000000199700.txt source is 553445 bytes. README explicitly credits multiple creators (Owl, Foxy, Peanut, Springtrap, Cracko, Darksiders, Megapika) and others. Do not copy until contributor rights established; root license cannot settle every source code author's rights."
+    },
+    {
+      "id": "bucanero-dreamcast-cheats",
+      "repo": "https://github.com/bucanero/dreamcast-cheats",
+      "platforms": [
+        "dreamcast"
+      ],
+      "formats": [
+        "original-markdown-cheat-code-blocks"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "GPL-3.0 project LICENSE; original cheat-code author rights not established",
+      "notes": "Reviewed commit 13c7a5c9957331398252e2a8916be7dd61b68144: 387 per-game native Markdown code documents. Root LICENSE GPLv3, but README is an index of game/code pages with no per-cheat author attribution or evidence that repo owner originated all codes. Do not bulk rehost until original cheat creators' reuse/attribution terms are checked."
     }
   ]
 }
