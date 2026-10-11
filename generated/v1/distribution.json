@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 44,
-  "source_files": 33215,
-  "game_candidate_groups": 26658,
+  "source_files": 33227,
+  "game_candidate_groups": 26670,
   "repeated_raw_code_groups": 395,
   "lexical_effect_tag_matches": 80881,
   "reviewed_snes_revision_alternatives": 27,
@@ -58,7 +58,7 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "628388ca078a2f772c4b9fcb792e22e5dc7d7dd37d18f46c71b8cd49b5879741",
+      "sha256": "a6f2421a491e6551426dd56e08863a715a2fe79e08433d6c55fe45373d5918b6",
       "size_bytes": 20988
     },
     {
@@ -293,8 +293,8 @@
     },
     {
       "path": "games/wii.json.gz",
-      "sha256": "eeb6700ad6865a02e632e7cb921a73c3e4e004028d29b9c65c5b8b535ba12679",
-      "size_bytes": 3006
+      "sha256": "19858a6d824efb66a4635f921fe7b9c1d979607a396396e5414a65b3d9b33cc9",
+      "size_bytes": 3197
     },
     {
       "path": "games/wonderswan-color.json.gz",
@@ -928,8 +928,8 @@
     },
     {
       "path": "wii.json.gz",
-      "sha256": "005c22402420e1913bf798310622c4c0202cd49a2490b9652094f75da403e0dd",
-      "size_bytes": 131006
+      "sha256": "3c32a789490d16d9d97ad393e25d155f7a2555381d9ce0528e7e6e23d8121bee",
+      "size_bytes": 141421
     },
     {
       "path": "wonderswan-color.json.gz",

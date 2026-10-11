@@ -219,7 +219,11 @@ pub fn parse_gecko_flat(text: &str) -> ParsedCheats {
     add(
         &mut out,
         heading.to_owned(),
-        if has_code { Some(text.to_owned()) } else { None },
+        if has_code {
+            Some(text.to_owned())
+        } else {
+            None
+        },
         vec![field("original_unsectioned_gecko_text", text)],
     );
     if !has_code {
