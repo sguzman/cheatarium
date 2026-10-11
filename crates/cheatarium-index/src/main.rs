@@ -823,6 +823,88 @@ fn run() -> Result<()> {
             .push(record);
     }
 
+    // Entire pinned NXCheats source text collection, including historical
+    // single-effect files. Original files remain separate. Grouping is advisory
+    // by upstream title-ID/build-ID names, NEVER proof of installed-game identity.
+    // The manifest is created by the separate bulk importer workflow.
+    if root.join("sources/bad1dea-nxcheats-switch.json").exists() {
+        let nx: SourceManifest = serde_json::from_slice(&fs::read(
+            root.join("sources/bad1dea-nxcheats-switch.json"),
+        )?)?;
+        if nx.id != "bad1dea-nxcheats-switch" {
+            return Err("Unexpected source ID in pinned NXCheats manifest".into());
+        }
+        for item in nx.files {
+            let parts: Vec<&str> = item.upstream_path.split('/').collect();
+            let file_name = parts.last().copied().unwrap_or("");
+            let Some(build) = file_name.strip_suffix(".txt") else {
+                continue;
+            };
+            if !parts.contains(&"cheats")
+                || build.len() != 16
+                || !build.bytes().all(|c| c.is_ascii_hexdigit())
+            {
+                continue;
+            }
+            let title_id = parts.iter().find_map(|part| {
+                let prefix = part.split_whitespace().next().unwrap_or(part);
+                if prefix.len() == 16 && prefix.bytes().all(|c| c.is_ascii_hexdigit()) {
+                    Some(prefix)
+                } else {
+                    None
+                }
+            }).ok_or_else(|| format!("Missing source-native Switch title ID: {}", item.upstream_path))?;
+            if wanted.as_ref().is_some_and(|v| !v.contains("switch")) {
+                continue;
+            }
+            let raw = fs::read(checked_path(&root, &item.archive_path)?)?;
+            let decoded = String::from_utf8_lossy(&raw);
+            let mut parsed = parse_native_sections(&decoded);
+            if std::str::from_utf8(&raw).is_err() {
+                parsed.warnings.push(
+                    "Non-UTF8 source bytes remain preserved in the original archive".into(),
+                );
+            }
+            parsed.warnings.push(
+                "Legacy one-effect files may repeat complete build packs; no effect deduplication or game verification is inferred".into(),
+            );
+            let source_label = if parts.first() == Some(&"_old") {
+                parts.get(1).copied().unwrap_or("Unlabeled Switch source")
+            } else {
+                parts[0].split_once(' ').map_or(parts[0], |(_, name)| name)
+            };
+            let title_hint = format!(
+                "{source_label} [source title] / title ID {title_id} / build {build}"
+            );
+            let record = IndexedFile {
+                id: format!("{}:{}", nx.id, item.upstream_path),
+                title_hint,
+                candidate_game_key: format!(
+                    "title-id-{}-build-{}",
+                    title_id.to_ascii_lowercase(),
+                    build.to_ascii_lowercase(),
+                ),
+                identity_confidence: "source-path-title-and-build-id-unverified",
+                raw_filename: item.upstream_path.clone(),
+                region_hint: None,
+                format_hint: Some("atmosphere"),
+                declared_cheats: None,
+                parse_warnings: parsed.warnings,
+                codes: parsed.codes,
+                provenance: Provenance {
+                    source_id: nx.id.clone(),
+                    repository: nx.repository.clone(),
+                    revision: nx.snapshot_commit.clone(),
+                    license: nx.license.clone(),
+                    upstream_path: item.upstream_path,
+                    archive_path: item.archive_path,
+                    git_blob_sha: item.git_blob_sha,
+                },
+            };
+            by_platform.entry("switch".into()).or_default().push(record);
+        }
+    }
+
     // Original GoldHEN filename-to-title lists supply game labels.
     // These labels are source claims, not independently verified game builds.
     let mut goldhen_titles = BTreeMap::<String, String>::new();
