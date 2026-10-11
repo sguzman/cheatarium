@@ -948,6 +948,41 @@
       "git_blob_sha": "27f12778638b23949ab18a95d455ae6d9126e2c9"
     },
     {
+      "upstream_path": "cht/Atari - 8-bit Family/Alley Cat.cht",
+      "archive_path": "archive/libretro/cht/Atari - 8-bit Family/Alley Cat.cht",
+      "git_blob_sha": "6696b10e8b1cf522b174656a50dbc6406eb2a4ad"
+    },
+    {
+      "upstream_path": "cht/Atari - 8-bit Family/Bruce Lee.cht",
+      "archive_path": "archive/libretro/cht/Atari - 8-bit Family/Bruce Lee.cht",
+      "git_blob_sha": "8acd5a4a50e2209ff086aa6ac2e9cfdf1db4235b"
+    },
+    {
+      "upstream_path": "cht/Atari - 8-bit Family/Dropzone (Executable) (Rumbles).cht",
+      "archive_path": "archive/libretro/cht/Atari - 8-bit Family/Dropzone (Executable) (Rumbles).cht",
+      "git_blob_sha": "a21b9f84e247f93acfeab2d4a7ed2a8592934197"
+    },
+    {
+      "upstream_path": "cht/Atari - 8-bit Family/Dropzone (Executable).cht",
+      "archive_path": "archive/libretro/cht/Atari - 8-bit Family/Dropzone (Executable).cht",
+      "git_blob_sha": "8297e991dd8099777b593543808417afa713fe72"
+    },
+    {
+      "upstream_path": "cht/Atari - 8-bit Family/Qix (Cartridge).cht",
+      "archive_path": "archive/libretro/cht/Atari - 8-bit Family/Qix (Cartridge).cht",
+      "git_blob_sha": "559b1cbd14d20fe62f3ebf037a6f4629963b269c"
+    },
+    {
+      "upstream_path": "cht/Atari - 8-bit Family/Spelunker (Disk) (Rumbles).cht",
+      "archive_path": "archive/libretro/cht/Atari - 8-bit Family/Spelunker (Disk) (Rumbles).cht",
+      "git_blob_sha": "608aff9276342894776d33cbd2c801d0cd74576d"
+    },
+    {
+      "upstream_path": "cht/Atari - 8-bit Family/Spelunker (Disk).cht",
+      "archive_path": "archive/libretro/cht/Atari - 8-bit Family/Spelunker (Disk).cht",
+      "git_blob_sha": "2ea2812bcc4bd13882659e11c7e089558d3be55d"
+    },
+    {
       "upstream_path": "cht/Atari - Jaguar/Aircars.cht",
       "archive_path": "archive/libretro/cht/Atari - Jaguar/Aircars.cht",
       "git_blob_sha": "ca92dd931b1f86878c7b13823e7c9edb43ab4527"
@@ -1743,6 +1778,456 @@
       "git_blob_sha": "df2fd7af075cdfcfcd893baae4c8431947d04355"
     },
     {
+      "upstream_path": "cht/DOS/007 - Licence to Kill (1989).cht",
+      "archive_path": "archive/libretro/cht/DOS/007 - Licence to Kill (1989).cht",
+      "git_blob_sha": "2fd55bfee9a6994a6e5a7a2814e417bf7582af11"
+    },
+    {
+      "upstream_path": "cht/DOS/After Burner (1989).cht",
+      "archive_path": "archive/libretro/cht/DOS/After Burner (1989).cht",
+      "git_blob_sha": "e6cc5ceb541261efc1e79526360d3171c6a12cb0"
+    },
+    {
+      "upstream_path": "cht/DOS/Alien Breed (1993).cht",
+      "archive_path": "archive/libretro/cht/DOS/Alien Breed (1993).cht",
+      "git_blob_sha": "f809946b88cc6ea6b88ffee7992fbac5121ee5c7"
+    },
+    {
+      "upstream_path": "cht/DOS/Alien Carnage (1993).cht",
+      "archive_path": "archive/libretro/cht/DOS/Alien Carnage (1993).cht",
+      "git_blob_sha": "8494ebb5f9f6a54ddfd17901dbb99a46ceb25d8c"
+    },
+    {
+      "upstream_path": "cht/DOS/Crusader - No Remorse (1995).cht",
+      "archive_path": "archive/libretro/cht/DOS/Crusader - No Remorse (1995).cht",
+      "git_blob_sha": "2e1ab99cd2e522c95e7760d63b5771f9b33c67bd"
+    },
+    {
+      "upstream_path": "cht/DOS/DOOM.cht",
+      "archive_path": "archive/libretro/cht/DOS/DOOM.cht",
+      "git_blob_sha": "cd25c9d216e14d9947222a4b0e157f5648365e82"
+    },
+    {
+      "upstream_path": "cht/DOS/Disney's Aladdin (1994).cht",
+      "archive_path": "archive/libretro/cht/DOS/Disney's Aladdin (1994).cht",
+      "git_blob_sha": "215476cfd08c32ead628d6aa9e3797f583166353"
+    },
+    {
+      "upstream_path": "cht/DOS/Elvira - Mistress of the Dark (1990).cht",
+      "archive_path": "archive/libretro/cht/DOS/Elvira - Mistress of the Dark (1990).cht",
+      "git_blob_sha": "e48299c149cd879c88847e9d26c74fdb4471064d"
+    },
+    {
+      "upstream_path": "cht/DOS/Eye of the Beholder (1991).cht",
+      "archive_path": "archive/libretro/cht/DOS/Eye of the Beholder (1991).cht",
+      "git_blob_sha": "4176396ba423742ce04c981904deb5ed83c82b1c"
+    },
+    {
+      "upstream_path": "cht/DOS/Golden Axe (1990).cht",
+      "archive_path": "archive/libretro/cht/DOS/Golden Axe (1990).cht",
+      "git_blob_sha": "9a81d51d474a39f4882d224a366afeb74ad44c90"
+    },
+    {
+      "upstream_path": "cht/DOS/Hocus Pocus (1994).cht",
+      "archive_path": "archive/libretro/cht/DOS/Hocus Pocus (1994).cht",
+      "git_blob_sha": "8ef8b92d51d328410f0902a83dc9bf6c24f805a2"
+    },
+    {
+      "upstream_path": "cht/DOS/Lion King, The (1994).cht",
+      "archive_path": "archive/libretro/cht/DOS/Lion King, The (1994).cht",
+      "git_blob_sha": "df5bb0f123976575d8772453b3138b03cffda9ff"
+    },
+    {
+      "upstream_path": "cht/DOS/Mystic Towers (1994).cht",
+      "archive_path": "archive/libretro/cht/DOS/Mystic Towers (1994).cht",
+      "git_blob_sha": "0d7cc7d6b76d82d1527327bbed8549b583883d43"
+    },
+    {
+      "upstream_path": "cht/DOS/Prehistorik (1991).cht",
+      "archive_path": "archive/libretro/cht/DOS/Prehistorik (1991).cht",
+      "git_blob_sha": "cf806bb45219fd0c6d8bf6ec13ad92e2a1f6e78f"
+    },
+    {
+      "upstream_path": "cht/DOS/Prehistorik 2 (1993).cht",
+      "archive_path": "archive/libretro/cht/DOS/Prehistorik 2 (1993).cht",
+      "git_blob_sha": "042f26d11fac31b18d72b77dd198b80b0b0c0707"
+    },
+    {
+      "upstream_path": "cht/DOS/Prince of Persia (1990).cht",
+      "archive_path": "archive/libretro/cht/DOS/Prince of Persia (1990).cht",
+      "git_blob_sha": "f955c079cacf952e2bc82510fc840ffab77e207f"
+    },
+    {
+      "upstream_path": "cht/DOS/Quake.cht",
+      "archive_path": "archive/libretro/cht/DOS/Quake.cht",
+      "git_blob_sha": "dfc0b64fb6957adaca0e33ed0461e7bcad27fc61"
+    },
+    {
+      "upstream_path": "cht/DOS/Rayman (1995).cht",
+      "archive_path": "archive/libretro/cht/DOS/Rayman (1995).cht",
+      "git_blob_sha": "04bef429979a7e21f2973e6507b6379922f0858c"
+    },
+    {
+      "upstream_path": "cht/DOS/Soldiers of Fortune (1994).cht",
+      "archive_path": "archive/libretro/cht/DOS/Soldiers of Fortune (1994).cht",
+      "git_blob_sha": "9e169364bff3fcf4fb063358a5ad219550067279"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/1941.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/1941.cht",
+      "git_blob_sha": "bdedd9845a5848287014a6dd46b57a9e5c2ac8ff"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/19xx.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/19xx.cht",
+      "git_blob_sha": "da32f041184dbfbd20ddd511ca4bc1a1be2b9968"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/avsp.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/avsp.cht",
+      "git_blob_sha": "921c921ccfe7d4d61b9b246d83a1a157942b1ea9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/chasehq.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/chasehq.cht",
+      "git_blob_sha": "9ae62e6dd689841c1877d8c622f936309532b8cc"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/dstlk.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/dstlk.cht",
+      "git_blob_sha": "4c3bcfeb3b5fff20eaa9eae12a58c09ae8a868ff"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/fatfury2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/fatfury2.cht",
+      "git_blob_sha": "9972f3badbe6223115a130037324372be69eeb1f"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/hsf2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/hsf2.cht",
+      "git_blob_sha": "ff0ae1d6f9c0e607a4219335896c75bb759ea8ec"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/karnovr.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/karnovr.cht",
+      "git_blob_sha": "679a0b176851926503ce14366992969e1301aea0"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/kof94.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/kof94.cht",
+      "git_blob_sha": "e8c63bf7ad461bc346ba9ff4d40468b21bd3877e"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/kof95.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/kof95.cht",
+      "git_blob_sha": "7033edd6e49ef27333e348a41348bad97185e18a"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/mmatrix.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/mmatrix.cht",
+      "git_blob_sha": "a5aaebf210c152fbf3fd8457f561a6641f4b64ab"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/msh.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/msh.cht",
+      "git_blob_sha": "d6b2d8489c666d1f97bcd2f7c840ec6abb7fc0e1"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/mshvsf.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/mshvsf.cht",
+      "git_blob_sha": "6195c908127366c35d22550271f09edc4b2c7435"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/mslug.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/mslug.cht",
+      "git_blob_sha": "2f16eff59179cd691901f209138151ca6e2ba49b"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/mvsc.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/mvsc.cht",
+      "git_blob_sha": "74792b8266ea85836f1af681c4e68591a3d27ebe"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/nwarr.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/nwarr.cht",
+      "git_blob_sha": "9bca396a5db7b292fc9c6ee25cd0170ab046392c"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/outrun.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/outrun.cht",
+      "git_blob_sha": "8b5de080dc17f97ba1694c6f062bbb016e25b0eb"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/samsho.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/samsho.cht",
+      "git_blob_sha": "0c2236278dbcd38ed95ea90a76fa906f8ece8b05"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sci.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sci.cht",
+      "git_blob_sha": "262db3ed5d0902bd5ca979612fdafc8ccb57f651"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf.cht",
+      "git_blob_sha": "d3e16a0e1534509a6934eafb45d016b4f680ca07"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2acc.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2acc.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2accp2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2accp2.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2ce.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2ce.cht",
+      "git_blob_sha": "967213e1ccde1880c421c959bc1e55d8fa6e0b77"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2cej.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2cej.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2ceua.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2ceua.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2ceub.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2ceub.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2ceuc.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2ceuc.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2dkot2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2dkot2.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2hf.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2hf.cht",
+      "git_blob_sha": "09484f37fe5ae31c44889c20dbe6947ab059648c"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2koryu.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2koryu.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2koryu1.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2koryu1.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2koryu2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2koryu2.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2koryu3.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2koryu3.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2m1.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2m1.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2m2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2m2.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2m3.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2m3.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2m4.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2m4.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2m5.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2m5.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2m6.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2m6.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2m7.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2m7.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2mdt.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2mdt.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2rb.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2rb.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2rb2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2rb2.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2rb3.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2rb3.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2red.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2red.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2t.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2t.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2tlonc.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2tlonc.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2v004.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2v004.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sf2yyc.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sf2yyc.cht",
+      "git_blob_sha": "8e13c3b5fdb8f13142e957a1914d0afd5f9337e9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfa.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfa.cht",
+      "git_blob_sha": "09d5aa801f668f39145adf7ebe2cbb53771c422a"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfa2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfa2.cht",
+      "git_blob_sha": "0bb23e08fed4b03438dc193fe05cf75a9a94d47d"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfa2u.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfa2u.cht",
+      "git_blob_sha": "74fb7fb70dbd79bc0692a4668c124caf790169dc"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfa3.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfa3.cht",
+      "git_blob_sha": "1eae473198cd8caea33521eabe119e3552aa5bee"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfiii.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfiii.cht",
+      "git_blob_sha": "29e22c010978cc742a98932474b854be083a56f3"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfiii2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfiii2.cht",
+      "git_blob_sha": "d7c1845eff49bf9fc9f24c1d9731574076547d82"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfiii3.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfiii3.cht",
+      "git_blob_sha": "b370f9aa837d15a6355b0cab65597e82f2da25f8"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfzch.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfzch.cht",
+      "git_blob_sha": "16525de9ea92ac17ea126b33011277f5fbcd6bd0"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sfzj.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sfzj.cht",
+      "git_blob_sha": "f66f3432faff9881d58a6104b96bc17bcca696c6"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/sgemf.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/sgemf.cht",
+      "git_blob_sha": "15af497ead1f17fff4aa073e2c60b24d021016b5"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/shangon.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/shangon.cht",
+      "git_blob_sha": "0138210650fb871a879ddfe53fa412482b8475f9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/shangonle.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/shangonle.cht",
+      "git_blob_sha": "0138210650fb871a879ddfe53fa412482b8475f9"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/spf2t.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/spf2t.cht",
+      "git_blob_sha": "924eee7247e81043f3b69bed9efc8bf0f150fe96"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/ssf2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/ssf2.cht",
+      "git_blob_sha": "3697eae44f1ea69dd789cafdcf81c02e6558359c"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/ssf2t.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/ssf2t.cht",
+      "git_blob_sha": "8016eb8c319edb333ed4907d5ac8aa7b64ef7ebc"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/ssf2tb.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/ssf2tb.cht",
+      "git_blob_sha": "d3c25ae29700eb9a8596169ca59aa9ce965e73b7"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/svc.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/svc.cht",
+      "git_blob_sha": "475e1906c507bdecc54ef13a9193c46e9afb3731"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/toutrun.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/toutrun.cht",
+      "git_blob_sha": "7452529fa0911cd6a30b176e2699839714e3afe1"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/vsav.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/vsav.cht",
+      "git_blob_sha": "265d989e0b6a580c8ec6f7600a34b8a6b5cfbf1b"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/wh2.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/wh2.cht",
+      "git_blob_sha": "d5ac964ac86d776d86d6177a1f72df62ec4b73a2"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/xmcota.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/xmcota.cht",
+      "git_blob_sha": "39af53b79353c68c74f6f7976c498fa169fccd70"
+    },
+    {
+      "upstream_path": "cht/FBNeo - Arcade Games/xmvsf.cht",
+      "archive_path": "archive/libretro/cht/FBNeo - Arcade Games/xmvsf.cht",
+      "git_blob_sha": "71c1cabb68940143367d618feedf44e7bd66828c"
+    },
+    {
       "upstream_path": "cht/Mattel - Intellivision/Advanced D and D - Cloudy Mountain.cht",
       "archive_path": "archive/libretro/cht/Mattel - Intellivision/Advanced D and D - Cloudy Mountain.cht",
       "git_blob_sha": "0475466f7b2d7846611ccdc3767d92881cf0cd08"
@@ -1781,6 +2266,3696 @@
       "upstream_path": "cht/Mattel - Intellivision/Space Armada.cht",
       "archive_path": "archive/libretro/cht/Mattel - Intellivision/Space Armada.cht",
       "git_blob_sha": "12694121831ce08aef4c8966f3426a3eeb842904"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/1942 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/1942 (Japan).cht",
+      "git_blob_sha": "28534cb10d2180a94b069c1a55afeead744ae542"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/3-D Bomberman.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/3-D Bomberman.cht",
+      "git_blob_sha": "2a2fd145c6aafb451f0e568102a458093f61834a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/3D Knockout.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/3D Knockout.cht",
+      "git_blob_sha": "12d7b4d4690ae2721b3e5b0e9db529bd9dbf723a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Abu Simbel Profanation.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Abu Simbel Profanation.cht",
+      "git_blob_sha": "6704d7faa01be0be1c2cb730983804bd0a82c10e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Actman (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Actman (Japan).cht",
+      "git_blob_sha": "7c5b914f643516d1ea80a165ec240fe557ea3076"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Addicta Ball.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Addicta Ball.cht",
+      "git_blob_sha": "813c80a526d82eaff6c46d85953d4c1b97a09311"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/After Burner.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/After Burner.cht",
+      "git_blob_sha": "99c343c27484ef196460093ca6a0e27ceb9823f9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/After the War (Part 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/After the War (Part 1).cht",
+      "git_blob_sha": "f8ae7e8efe8ab53096ed5bf45bea3cc943f606c0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/After the War (Part 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/After the War (Part 2).cht",
+      "git_blob_sha": "d43ab7a754a1a5d6fb35499ec008ffab4d1c917e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Alcazar - The Forgotten Fortress (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Alcazar - The Forgotten Fortress (Japan).cht",
+      "git_blob_sha": "66f01605e06500908bfc4e8f18e22af623e98f49"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ale Hop!.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ale Hop!.cht",
+      "git_blob_sha": "13f1f486a7c4e6a6d18dfca3addf6b531a7abb7f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Alibaba and 40 Thieves (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Alibaba and 40 Thieves (Japan).cht",
+      "git_blob_sha": "fe0555617d0ad82df75fa058b264ab40ca4cee42"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Alien 8 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Alien 8 (Japan).cht",
+      "git_blob_sha": "4abfdf103f0e4b6dd42eab521a1c3d3c2b8c04a1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Aliens - Electric Dreams.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Aliens - Electric Dreams.cht",
+      "git_blob_sha": "5e11e5e267246884b3ea29e27d707dff74466c3a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Aliens 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Aliens 2.cht",
+      "git_blob_sha": "5662e805cb50f01547731e77312002075a5e6bc5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Alpha Blaster.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Alpha Blaster.cht",
+      "git_blob_sha": "223db7a2c275b86f8f9eff881b94008df73f4934"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Alpha Roid (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Alpha Roid (Japan).cht",
+      "git_blob_sha": "e397b86d093d69154b6394177e8b779083f675c3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Altered Beast.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Altered Beast.cht",
+      "git_blob_sha": "255bc782902d02db463ccf4ca39bd9aacb621bc8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/American Truck (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/American Truck (Japan).cht",
+      "git_blob_sha": "d6cadcb7885f3485b2164a318108ab311985d91d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Anaza - Kaleidoscope Special (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Anaza - Kaleidoscope Special (Japan).cht",
+      "git_blob_sha": "030f2a72de7eb83cdc58c80b27f62c00d624a3ef"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Antarctic Adventure (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Antarctic Adventure (Europe).cht",
+      "git_blob_sha": "b312b6a15724c32668e101faf2ecf8317d84c275"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Aramo (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Aramo (Japan).cht",
+      "git_blob_sha": "6aca5fd2fba75323e030e4b7f2b3d2410e4c4e9e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Arkanoid (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Arkanoid (Japan).cht",
+      "git_blob_sha": "b3f4257b6d915208570fe4df38ec4f2a3f5adf15"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Arkos.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Arkos.cht",
+      "git_blob_sha": "40ff4afbf54a98513ac357b1c4fb9c9c66e9436b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Army Moves.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Army Moves.cht",
+      "git_blob_sha": "d639d1a77fae01243ca7d6aa43b00c2bc4f7b348"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Aspar GP Master.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Aspar GP Master.cht",
+      "git_blob_sha": "14bdc0385d72696547d73b5e1d22ec65bf74b187"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Astro Blaster.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Astro Blaster.cht",
+      "git_blob_sha": "23d13dd576d1f742e89f37e36bc6d07acbab2a37"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Astro Marine Corps (Part 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Astro Marine Corps (Part 1).cht",
+      "git_blob_sha": "6dc39f9b8d59a9275c660d9289d89700a1562d72"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Astro Marine Corps (Part 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Astro Marine Corps (Part 2).cht",
+      "git_blob_sha": "2a52c6edbbb5bd6f5e1264e90300a24917b70372"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Athletic Land (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Athletic Land (Japan).cht",
+      "git_blob_sha": "f9a9b86c5bd45e446bf29ff7245cb0f07b0b513e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Auf Wiedersehen Monty.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Auf Wiedersehen Monty.cht",
+      "git_blob_sha": "7a2284b0b9159a76b8e015ef0fd4c6815857c126"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Avenger.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Avenger.cht",
+      "git_blob_sha": "aac0283fac3ead2c9e30156997587150194da4a7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/B.C.'s Quest (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/B.C.'s Quest (Japan).cht",
+      "git_blob_sha": "3a85c6b9eaaefe6b8c1bad226cc1ae43cf79d4ec"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/BMX Simulator.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/BMX Simulator.cht",
+      "git_blob_sha": "9432ad8b93aa252fb93f3097beccf8fc5ed04884"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/BOP!.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/BOP!.cht",
+      "git_blob_sha": "78b4cbc40a09b4f64649b9a348197fc28978fce9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Back to the Future (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Back to the Future (Japan).cht",
+      "git_blob_sha": "ccd24fd50e52108cbec048cf338e21ff1bda9f38"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ball Out 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ball Out 2.cht",
+      "git_blob_sha": "0a1a68ca598c982e8ba77670bf70ef639574f24d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ball Out.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ball Out.cht",
+      "git_blob_sha": "106d56ee96bc76893a54cd441d5ebbcad96e9dbe"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ballblazer.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ballblazer.cht",
+      "git_blob_sha": "5d7d6b5a2e2faff29ff7788e92fbac325a45d245"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bank Panic (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bank Panic (Japan).cht",
+      "git_blob_sha": "459c2dda1eb17d5d0087e3a431400886cc82d799"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Barbarian.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Barbarian.cht",
+      "git_blob_sha": "12009d41f2da1f56751753ed864f1ca56283d313"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Batman (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Batman (Japan).cht",
+      "git_blob_sha": "bb86216e67cba468de910864f5cc12addf62fb36"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Batman - The Movie.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Batman - The Movie.cht",
+      "git_blob_sha": "2e820a1dd822729d7bdbcad163813a92af00fb16"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Batten Tanuki no Daibouken (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Batten Tanuki no Daibouken (Japan).cht",
+      "git_blob_sha": "83986e254ead3110080db40081f6c9fb86c3cd44"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Battle Chopper.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Battle Chopper.cht",
+      "git_blob_sha": "a0ca57a811f647a538f59d5c1a21f707cfa4d0da"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Battleship Clapton II (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Battleship Clapton II (Japan) (Cassette).cht",
+      "git_blob_sha": "0a5496b3490c893c0f836d52c0f01cb4feb30e25"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Battleship Clapton II (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Battleship Clapton II (Japan).cht",
+      "git_blob_sha": "15bef28e5354d51fd6df6519a1ad2b635854afcb"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/BeTiled! (2007) (CEZ GS).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/BeTiled! (2007) (CEZ GS).cht",
+      "git_blob_sha": "6ebe4416e8e24a9c68e3785bd3ea5571b4513a15"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Beam Rider (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Beam Rider (Japan) (Cassette).cht",
+      "git_blob_sha": "54770d83f8f952dc518621b773883672945f3b89"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Beam Rider (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Beam Rider (Japan).cht",
+      "git_blob_sha": "ff74a4df265ea710545c87bc8b22eb2c6e5525f5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bestial Warrior.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bestial Warrior.cht",
+      "git_blob_sha": "603089ad3fa508191b0e859f66681bc75b10f9fa"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Black Beard.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Black Beard.cht",
+      "git_blob_sha": "1dff700f080606a609603cfaccc0e4a5cf05a445"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Blagger.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Blagger.cht",
+      "git_blob_sha": "e2d899c9aa8fd13218b6d37cfe401975f0c80ca0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Blocus.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Blocus.cht",
+      "git_blob_sha": "1299c4089b45b56f276028d326dc1127bbf09d41"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Blow Up.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Blow Up.cht",
+      "git_blob_sha": "33b785638a5785cdc5ff44ad25b45778eff37f5c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Boggy '84 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Boggy '84 (Japan).cht",
+      "git_blob_sha": "8331b1460352def93187ecfe6be8ca0cb6b58f87"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bokosuka Wars (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bokosuka Wars (Japan).cht",
+      "git_blob_sha": "9b777a1160081ce18c11bdc3a0f74ff440d971ca"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bomb Jack.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bomb Jack.cht",
+      "git_blob_sha": "a74f41c424bbf34d73a879d76d03ffbdb2ac3f03"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bomb Man (2005) (Andrea Gasparrini).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bomb Man (2005) (Andrea Gasparrini).cht",
+      "git_blob_sha": "0c980a72ae7b86ffd838c92f42c09d6dd50c1994"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bomber House.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bomber House.cht",
+      "git_blob_sha": "3fcd50abc219654e0974acca42919e9de89327a8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bomber King (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bomber King (Japan).cht",
+      "git_blob_sha": "94c9b43733e1fa07e66cde0af9c55052905668ea"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bomberman (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bomberman (Japan).cht",
+      "git_blob_sha": "1f1093c7b7453ebe1308ff50a874b6a782f56e6b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bomberman Special (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bomberman Special (Japan).cht",
+      "git_blob_sha": "fe7b5650ba617a07227cf87526e1062e5e5b96e5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Boom.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Boom.cht",
+      "git_blob_sha": "0fac49bcd0a9a4c6848c671893b4136bb5834166"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Booty.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Booty.cht",
+      "git_blob_sha": "2cc114876268a8dcee59da5b59d1182246ad32d8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Borfesu (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Borfesu (Japan).cht",
+      "git_blob_sha": "690a2c4bb08a7bf8c4c9a573c92c5b912e7dcabc"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bosconian (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bosconian (Japan).cht",
+      "git_blob_sha": "6c77d61caf67636119225905ebf56d5f0b1f38be"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bouken Roman - Dota (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bouken Roman - Dota (Japan).cht",
+      "git_blob_sha": "42e1b9ad3e5c0bc4b1234938529ddf0e5cab81ee"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Boulder Dash (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Boulder Dash (Japan).cht",
+      "git_blob_sha": "c803d1a12745d795801dd87c09cfe9fe1cd5836d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Boulder Dash 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Boulder Dash 2.cht",
+      "git_blob_sha": "9b0e4177024ea0f9450d1cc04a618a3a97f9eee1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bounce.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bounce.cht",
+      "git_blob_sha": "ab88ddd8bb4417e4e170431e2d75d36bef81961c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bounder.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bounder.cht",
+      "git_blob_sha": "b062b2930cb51bffb5c634f0a2e361eb697e6184"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Break In (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Break In (Japan) (Cassette).cht",
+      "git_blob_sha": "9be470f9dc24f0ef6c489e579c8803a23cf2ccef"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Break In (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Break In (Japan).cht",
+      "git_blob_sha": "8370d3197f49424fcbad255cdf3def28db4833a8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Break Out (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Break Out (Japan).cht",
+      "git_blob_sha": "5404b19be94a8a5057060a85b7bb48905a37d826"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Breaker Breaker.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Breaker Breaker.cht",
+      "git_blob_sha": "e45727be6dd0084534809c84c2ba1accc2cb8779"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Breakout! The Great Computer Adventure.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Breakout! The Great Computer Adventure.cht",
+      "git_blob_sha": "518a91f8db154518f366b359466c3f7428d89c2e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bronx.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bronx.cht",
+      "git_blob_sha": "2dd5a84a0128e7c66f85dfa5326e7f8d8ff126bc"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Brother Adventure (Korea).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Brother Adventure (Korea).cht",
+      "git_blob_sha": "5edbf733197b721c4bdf21d672b8daace8b5ecbf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bruce Lee (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bruce Lee (Japan).cht",
+      "git_blob_sha": "179a669fbc851d20c1efe18a51fd2a3be68326c7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Buck Rogers - Planet of Zoom.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Buck Rogers - Planet of Zoom.cht",
+      "git_blob_sha": "01abaab3956ea822d9b2ab02e03b865454858f44"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Buggy Ranger.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Buggy Ranger.cht",
+      "git_blob_sha": "e74616521bd7cf55a1ac835dd7c320b4d5567b04"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Burgerkill.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Burgerkill.cht",
+      "git_blob_sha": "f3ec49f280900517ecf5c6698d184b435128121d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Bytebusters.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Bytebusters.cht",
+      "git_blob_sha": "1ede6cb4057081890aa5849d15415afece3ec286"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cabbage Patch Kids (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cabbage Patch Kids (Japan).cht",
+      "git_blob_sha": "0e54bc6219790a6cfa899a25ff0e259b2131b8e3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Camelot Warriors.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Camelot Warriors.cht",
+      "git_blob_sha": "a669993f6ccc04fcd32592c5a201cdfab123d8d7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cannon Ball (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cannon Ball (Japan).cht",
+      "git_blob_sha": "f5b1952311c11d2c801dd85e3ac7a6d87056897c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Caos Begins (2007) (Hikaru Games).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Caos Begins (2007) (Hikaru Games).cht",
+      "git_blob_sha": "8076cbe32e01ebd929d75f4e7271e1b7a4776476"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Capitan Sevilla.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Capitan Sevilla.cht",
+      "git_blob_sha": "120d899d48842f1e7a70f539099b02079db2b9c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Captain Chef (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Captain Chef (Japan).cht",
+      "git_blob_sha": "9bf1db7db1e17cb4c4cf62dbe686feab765ffd08"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Car Fighter (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Car Fighter (Japan).cht",
+      "git_blob_sha": "a6fad4b5e494abd538fe29daa2fa7ab1e496ee83"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Casanova.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Casanova.cht",
+      "git_blob_sha": "af25e319b2cda719afc45d66abd0bf3e71f8cbd6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Castle Excellent (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Castle Excellent (Japan).cht",
+      "git_blob_sha": "6e26c8eb83669b0a4790c8f59b938f8ffe7d3726"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Castle, The (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Castle, The (Japan).cht",
+      "git_blob_sha": "6e26c8eb83669b0a4790c8f59b938f8ffe7d3726"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Caverns of Titan (2005) (v1.1) (JLTurSan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Caverns of Titan (2005) (v1.1) (JLTurSan).cht",
+      "git_blob_sha": "4a604d05010e66fbfc6bd7f2849db4a278a74bc7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chack'n Pop (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chack'n Pop (Japan).cht",
+      "git_blob_sha": "c8697b98f3eaa2b177f7007ab191ac9eff388165"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chase H.Q..cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chase H.Q..cht",
+      "git_blob_sha": "e0da74c685a7437167eb6f6d735df636e0107882"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cheating Wives (2005) (Crappysoft).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cheating Wives (2005) (Crappysoft).cht",
+      "git_blob_sha": "e69d2b285b8985908c75205a20c93cfbd9ecc9c3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chicken Chase.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chicken Chase.cht",
+      "git_blob_sha": "610a7bf96c29bfa1280e7c93e36aa6b9fd5af0b0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chiller.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chiller.cht",
+      "git_blob_sha": "382cd29cb59f170aaf5d036a555760fc0c0a6667"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chocobo Racing (2004) (HL-Soft).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chocobo Racing (2004) (HL-Soft).cht",
+      "git_blob_sha": "55837c6977b36a83810b37e62f2180a9fac65e7a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Choplifter (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Choplifter (Japan).cht",
+      "git_blob_sha": "87275f3b336993ed1bf09d755f250f92efd0b2e0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chopper.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chopper.cht",
+      "git_blob_sha": "82c9fe3c63d01fb42c0bddf1b8d4fa47b3c53be2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chubby Gristle.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chubby Gristle.cht",
+      "git_blob_sha": "dc71add16922a0429f4c7615e09cb29173f92410"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Chuckie Egg.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Chuckie Egg.cht",
+      "git_blob_sha": "601f46e3faf0367b0e2160c12760c8565b750121"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Circus Charlie (Japan) (En) (Wii U Virtual Console).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Circus Charlie (Japan) (En) (Wii U Virtual Console).cht",
+      "git_blob_sha": "e460b81457b1a0c57ec1a7fea75b235609ba2847"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Coaster Race (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Coaster Race (Japan).cht",
+      "git_blob_sha": "5b188fd0d551dd35f09b705079295a3374365db5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cocos.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cocos.cht",
+      "git_blob_sha": "d1467a71eeda4569b12e0b07df96faf7511c6ba9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Comando Tracer.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Comando Tracer.cht",
+      "git_blob_sha": "6d1ee6c39daf7574d12cff76efed66973ca05f5e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Combat!.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Combat!.cht",
+      "git_blob_sha": "940da1e074b3d98bf883232f11bba5c41bbfc1fb"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Come On! Picot (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Come On! Picot (Japan).cht",
+      "git_blob_sha": "d1bc7f66240365443340f146f8ede522b54cc481"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Comic Bakery (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Comic Bakery (Japan).cht",
+      "git_blob_sha": "9a81f13288c4fbe2e1bb46072cf1e584c33c0ed1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Congo Bongo.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Congo Bongo.cht",
+      "git_blob_sha": "509a212b6b4aaddeba33c78dc149863cc9f3563b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Corsarios.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Corsarios.cht",
+      "git_blob_sha": "a81ecb1166f68cf55998a2aee8c14ab6561810ba"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cosmic Battle (2005) (Beta) (Vendetta).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cosmic Battle (2005) (Beta) (Vendetta).cht",
+      "git_blob_sha": "b81fb4c6104678bcc952a83c8b169a7e326e0ef7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cosmo-Explorer (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cosmo-Explorer (Japan).cht",
+      "git_blob_sha": "c18483bb36a3ff0844c56997577e37f7c903abb8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Craze (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Craze (Japan).cht",
+      "git_blob_sha": "366828218fbf58ef8513486a02c876697dc67741"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Crazy Buggy (2005) (Crappysoft).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Crazy Buggy (2005) (Crappysoft).cht",
+      "git_blob_sha": "f30626e29014320c1d2bc2467db7f1dc11c1589a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cross Blaim (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cross Blaim (Japan).cht",
+      "git_blob_sha": "26725386e9ae01f3d3277ce3fad12412bb032c0c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Crusader (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Crusader (Japan).cht",
+      "git_blob_sha": "6279b8af3497aa2b1e0944a1d81d3f077b17e9c6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cure, The (2005) (XL2S Entertainment).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cure, The (2005) (XL2S Entertainment).cht",
+      "git_blob_sha": "3776de65929abf13e9a6bae42f0653e93cea174b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Curro Jimenez.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Curro Jimenez.cht",
+      "git_blob_sha": "5f882f0864aeafa1e8edf0cfed496e145daacccb"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Cyberbig.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Cyberbig.cht",
+      "git_blob_sha": "8af7be9e187ef7eb1b5aa3f8bdee0a55d538149d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Daidasso (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Daidasso (Japan) (Cassette).cht",
+      "git_blob_sha": "65b39c150322df8921abb4176535c31bd96784d9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Daidasso (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Daidasso (Japan).cht",
+      "git_blob_sha": "f186045481ca38347b75cbf3355a5df5e5a69ab7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Daiva Story 4 - Asura's Bloodfeud (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Daiva Story 4 - Asura's Bloodfeud (Japan).cht",
+      "git_blob_sha": "59bb1bf26681c3f6fde1912707ea114abd9a6b0f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Danger X4 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Danger X4 (Japan).cht",
+      "git_blob_sha": "2ba7cc87dfa4516e42670359d69210ac946ace79"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/David II (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/David II (Japan).cht",
+      "git_blob_sha": "fef2f2ab63c3d9f81245e3259c71786e2985017a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Death Wish 3.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Death Wish 3.cht",
+      "git_blob_sha": "c6b65f6e61079f992770ef92d5c0f0fb0ec4b88a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Decathlon (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Decathlon (Japan).cht",
+      "git_blob_sha": "eb90397fa4a153f923a0f27812da6daf3e80342e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Deep Dungeon (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Deep Dungeon (Japan).cht",
+      "git_blob_sha": "dbf57a1564e48969a40a31d2deb33f4c05bf7a9e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Deep Dungeon II (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Deep Dungeon II (Japan).cht",
+      "git_blob_sha": "e8839560147d21304d9ac5c8820ab17300b2ef00"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Demon Crystal, The (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Demon Crystal, The (Japan).cht",
+      "git_blob_sha": "42447078e4c701dbe852719e7e812bd2438f7d96"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Demonia.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Demonia.cht",
+      "git_blob_sha": "bde21761d22f476444c2fbcfe932bc502d1a38b5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Desolator.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Desolator.cht",
+      "git_blob_sha": "0ed5d25e638670dc46b6ab8933562b6611732653"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Devil Zone.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Devil Zone.cht",
+      "git_blob_sha": "411556b0721b78c63ad33884950acb60155ecde3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Devil's Heaven (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Devil's Heaven (Japan).cht",
+      "git_blob_sha": "039119d3cd7dea7bfe7e65d75ffd5a0947fa73e7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dig Dug (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dig Dug (Japan).cht",
+      "git_blob_sha": "9d401ca4682019079f5cada66759fd7cadbe6c9a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Digital Devil Monogatari Megami Tensei (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Digital Devil Monogatari Megami Tensei (Japan).cht",
+      "git_blob_sha": "4bf34ecd6afcf5f673077d0c547640a7bb19c120"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Disc Warrior.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Disc Warrior.cht",
+      "git_blob_sha": "67dd450f9b525a10c839690df0302cce420f8556"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Discovery.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Discovery.cht",
+      "git_blob_sha": "04b09c6565098a897f644357d08094e4587d579a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Docteur Galaxie.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Docteur Galaxie.cht",
+      "git_blob_sha": "571a77231e7ba562fcbfe99bf85248c2af53a3da"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dog Fighter.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dog Fighter.cht",
+      "git_blob_sha": "7f51edb02d64bfbd78aa5687ea5d46ee1450f76b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Doki Doki Penguin Land (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Doki Doki Penguin Land (Japan).cht",
+      "git_blob_sha": "532745144c2afcc0ba8090c6b062dcc21dbb9202"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Donkey Kong.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Donkey Kong.cht",
+      "git_blob_sha": "aaf42c717d80e96f5448c047cc957028adbda47d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dorodon (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dorodon (Japan).cht",
+      "git_blob_sha": "ef3f92ead99c8e2f78e3a6423eb0c9c0e1c49290"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Double Dragon (Korea).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Double Dragon (Korea).cht",
+      "git_blob_sha": "87c53bef41c0ea1bd8a8d4e052e20153b6e756b5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Double Dragon II - The Revenge.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Double Dragon II - The Revenge.cht",
+      "git_blob_sha": "cd94d95b659073695bf74746e5cfc42a6f4ead6f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dr. Archie.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dr. Archie.cht",
+      "git_blob_sha": "c0db619b4919c8663fbc9b8e888f5dd10ae096bd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dragon Quest (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dragon Quest (Japan).cht",
+      "git_blob_sha": "9a61fedc7d9d9b20e0f637362bbf95e8329d7066"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dragon Quest II (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dragon Quest II (Japan).cht",
+      "git_blob_sha": "c2e252773140c3b464ac3b7e43e09fb442b0481f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dragon Slayer (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dragon Slayer (Japan).cht",
+      "git_blob_sha": "27eadef0f45f1aaa2344debe48f028ea8484c892"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dragon Slayer IV - Drasle Family (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dragon Slayer IV - Drasle Family (Japan).cht",
+      "git_blob_sha": "cc8110b5e2c504c60f0d08b3122f47648b8da00b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Drainer (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Drainer (Japan).cht",
+      "git_blob_sha": "8b56e4c33cf63cc6bc7eea9cb89752b72212569b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Drome.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Drome.cht",
+      "git_blob_sha": "e6ff6659faba03033cbd3cbd9074f1221f3b5d5b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Duck Hunt (2004) (Karoshi Corp).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Duck Hunt (2004) (Karoshi Corp).cht",
+      "git_blob_sha": "54e0cedd00f0d29d8faaf3d38b2b30bb82b15093"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dustin.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dustin.cht",
+      "git_blob_sha": "c3eb54027ab125c2f80969696afdbed4755ad20c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Dynamite Dan.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Dynamite Dan.cht",
+      "git_blob_sha": "7fb947fd706006a58e9a3a3c1b5e63dcdabcce52"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Eat Blue! (2004) (Paxanga Soft).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Eat Blue! (2004) (Paxanga Soft).cht",
+      "git_blob_sha": "bb5b6ee15e9088cc3e49a864e62c787c9b762cd9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Eat Blue! (2004) - User Levels.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Eat Blue! (2004) - User Levels.cht",
+      "git_blob_sha": "26248eb733e1fec69b2abe0ee2c8a69dc89a5474"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Eggerland Mystery (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Eggerland Mystery (Japan).cht",
+      "git_blob_sha": "6399366198dabf5c19d8c08e6c9b4a9b8bb4d2c2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/El Capitan Trueno.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/El Capitan Trueno.cht",
+      "git_blob_sha": "5febb4b64c9913b07d3f9aa83f1c444c4be27aa6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Elevator Action (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Elevator Action (Japan).cht",
+      "git_blob_sha": "6c5146dbd6afbf0afd287f66f7a6ee64f1bb0e33"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Eric and the Floaters.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Eric and the Floaters.cht",
+      "git_blob_sha": "aa6714fe00ffc50d0243a1d7355acccb2aa30c29"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Escape.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Escape.cht",
+      "git_blob_sha": "af5d23ab3eb6037b603c6611dec072f26f62165c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Exerion (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Exerion (Japan).cht",
+      "git_blob_sha": "1599bf1edaa8f38716ab056f4e1c927d2da2c701"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Exerion 2 - Zorni.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Exerion 2 - Zorni.cht",
+      "git_blob_sha": "1599bf1edaa8f38716ab056f4e1c927d2da2c701"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Exoide-Z (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Exoide-Z (Japan).cht",
+      "git_blob_sha": "07d8d7a22623d04c42b9a16c4b88763f545858a2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Exoide-Z Area 5 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Exoide-Z Area 5 (Japan).cht",
+      "git_blob_sha": "75aaa23ec8b058de7f9475cce15ce3b6b97e01b6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/F-1 Spirit - The Way to Formula-1 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/F-1 Spirit - The Way to Formula-1 (Japan).cht",
+      "git_blob_sha": "0b4f0a684d418d2ad932e0897fda230a757e663b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Factory Infection (2004) (Karoshi Corp).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Factory Infection (2004) (Karoshi Corp).cht",
+      "git_blob_sha": "8651c304268bfcdbdf6fc81db48cb608b91a691f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fairy (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fairy (Japan).cht",
+      "git_blob_sha": "a9cca75d134ee2fb4444df7fbb88fecf7b7aac0d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fairy Land Story, The (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fairy Land Story, The (Japan).cht",
+      "git_blob_sha": "3ec0061940bd9d0559de8f3c4f2285a78482d487"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fantasy Zone (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fantasy Zone (Japan).cht",
+      "git_blob_sha": "a90c5831eb27ea5feda76ae26e5474026a3537e6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fernando Martin Basket Master.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fernando Martin Basket Master.cht",
+      "git_blob_sha": "5b1fbf37038c778a752a36d5cc6e25e7da7f59ce"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fernando Martín Basket Master - Executive Version.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fernando Martín Basket Master - Executive Version.cht",
+      "git_blob_sha": "a0824f38754e09915afb496c80e85fa0ad5c7ad3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Feud.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Feud.cht",
+      "git_blob_sha": "cc7d065662e0dfa93f8ce7c1faa081116181acc0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Final Justice (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Final Justice (Japan).cht",
+      "git_blob_sha": "8901bd1a492d54f2214dd9552c5f1d2c9e745a92"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Final Zone Wolf (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Final Zone Wolf (Japan).cht",
+      "git_blob_sha": "285fea630402ffee38d7043793007db641a2a496"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fire Rescue (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fire Rescue (Japan) (Cassette).cht",
+      "git_blob_sha": "d8cc7959b62f67dc04ed04ee194cb9b531dedba3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fire Rescue (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fire Rescue (Japan).cht",
+      "git_blob_sha": "fcb6fe980e6f14c97bef1b8281a0219b0f74ef06"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Firehawk - Thexder the Second Contact.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Firehawk - Thexder the Second Contact.cht",
+      "git_blob_sha": "7ab63d5118bdb61735526651745d4085ce5b34e5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Firehawk.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Firehawk.cht",
+      "git_blob_sha": "d0467b759114f7235056c58527be6f2f7c1cc968"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Flash Splash (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Flash Splash (Japan).cht",
+      "git_blob_sha": "dd30cf57bbb42c47bad2dafc710819872d89ee8c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Flicky (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Flicky (Japan).cht",
+      "git_blob_sha": "833b7b6b718d06826588fcac4d391616dc592034"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fly-boat.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fly-boat.cht",
+      "git_blob_sha": "b92a3221ee8dc8f096567e9e8e4fd6c1c1fc978d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Freddy Hardest in South Manhattan.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Freddy Hardest in South Manhattan.cht",
+      "git_blob_sha": "e9b29bdbefe5e307cf014a1b944f57694fed2b9a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Freddy Hardest.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Freddy Hardest.cht",
+      "git_blob_sha": "5a05730f1265ae4032b192e4a25f76b6a760352a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Frog (Ace Software).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Frog (Ace Software).cht",
+      "git_blob_sha": "ec9fa5e745d117430fcdcd5ccde418d86646a3da"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Frog.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Frog.cht",
+      "git_blob_sha": "102b3f164c908d42117f4f408d731d8627470a23"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Frogger (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Frogger (Japan).cht",
+      "git_blob_sha": "00e17129e05989496181f7688e2d17ea26848b80"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Front Line (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Front Line (Japan).cht",
+      "git_blob_sha": "bb2c681e1ff25aca0a739ff768820b792f9dea2c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Fruity Frank.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Fruity Frank.cht",
+      "git_blob_sha": "84637302cf485558019217714db0836e64147fc7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Funky Mouse (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Funky Mouse (Japan).cht",
+      "git_blob_sha": "6293a698de2b64e83b9c592230ad765217bade87"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Future Knight.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Future Knight.cht",
+      "git_blob_sha": "2e25b4e56105bb12bc59b206bbf2b8ce048152a6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/GP World (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/GP World (Japan).cht",
+      "git_blob_sha": "898f616809894c2b391df341944f2db12583093a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Galaga (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Galaga (Japan).cht",
+      "git_blob_sha": "73161740b6716bf5fa497601bea1c7828ba51775"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Galaxian (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Galaxian (Japan).cht",
+      "git_blob_sha": "cae4492fbe264181f550863b184822bd773d020c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gall Force.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gall Force.cht",
+      "git_blob_sha": "604817647446724bcf7b9f540635d3d3498b790c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Game Over (Part 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Game Over (Part 1).cht",
+      "git_blob_sha": "9f6939b0accb26df038638c3f3e32898febc9c60"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Game Over (Part 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Game Over (Part 2).cht",
+      "git_blob_sha": "e30420c33f1d68fe1e590f588a66d732ed92d9aa"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Game Over II (Part 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Game Over II (Part 1).cht",
+      "git_blob_sha": "499a5cec9061277ee60ac0343aedebff3f3304a1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Game Over II (Part 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Game Over II (Part 2).cht",
+      "git_blob_sha": "2fd9a809f26f01157d46d512b2da61255b0a45c6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ghostbusters (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ghostbusters (Europe).cht",
+      "git_blob_sha": "5b2482a9a540e7dbbf461a245e0818cc748d4f16"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ghostbusters II.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ghostbusters II.cht",
+      "git_blob_sha": "b339e50d8f6935e17a87ce73993e10dbdfaf41db"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Girl's Garden.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Girl's Garden.cht",
+      "git_blob_sha": "e39ba868f1e735ebdf77886b81b08a11e93304b4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Godzilla-kun.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Godzilla-kun.cht",
+      "git_blob_sha": "fe97c8a64add1715bfce08f9c19f8405fcf6241f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Golvellius (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Golvellius (Japan).cht",
+      "git_blob_sha": "8a1d1e22a6f16677ba8b1cb43472ceba29b11215"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Goody.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Goody.cht",
+      "git_blob_sha": "850b924cc2ce6da5a72feeeac346c32703bf72c4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Goonies, The (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Goonies, The (Japan).cht",
+      "git_blob_sha": "8b74344b59feb68656811e0cf162c8b9dc17f375"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gradius (Japan) (Wii U Virtual Console).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gradius (Japan) (Wii U Virtual Console).cht",
+      "git_blob_sha": "104f8723392685555ee95f9b41aa36b57bcb235a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gradius 2 (Japan, Europe) (En) (Wii U Virtual Console).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gradius 2 (Japan, Europe) (En) (Wii U Virtual Console).cht",
+      "git_blob_sha": "6b59e9a8fe55b0e08d9aa6463877d5a607374ac1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gradius 2 - Nemesis 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gradius 2 - Nemesis 2.cht",
+      "git_blob_sha": "c7e612bca2584b10139b5a86452c6a67301db2da"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Green Beret (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Green Beret (Europe).cht",
+      "git_blob_sha": "395229a30cbd470e7e0a12fe30886392d8443e9b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gremlins 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gremlins 2.cht",
+      "git_blob_sha": "9cff867679f006260f986d8ce520ec5dfc8ca0f4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Griel's Quest for the Sangraal (2005) (Karoshi Corp).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Griel's Quest for the Sangraal (2005) (Karoshi Corp).cht",
+      "git_blob_sha": "92abe214f4eced05ee0e71fff018626b4f916bd4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Grog's Revenge (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Grog's Revenge (Japan).cht",
+      "git_blob_sha": "4a1057c3e68fbf3df81f23d4576fbb43d329a119"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Guardic (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Guardic (Japan).cht",
+      "git_blob_sha": "3fa4d005f27c3d3bcc6d8a919e91064c2234dc16"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gulkave (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gulkave (Japan).cht",
+      "git_blob_sha": "1bf2cbf3031445464e453dcaadb5574c97d4be15"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gun Fright (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gun Fright (Japan).cht",
+      "git_blob_sha": "1234a7641dde830b092352bfdf49fde4f1e49fc3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Guru Logic.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Guru Logic.cht",
+      "git_blob_sha": "e92f65ab10eaa4f13033c3acc1b1b2124e038b27"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gusano.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gusano.cht",
+      "git_blob_sha": "454508c96d9cc7e5ecd517a178ffe9e75a111033"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Guttblaster.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Guttblaster.cht",
+      "git_blob_sha": "8fc644c39aa4deb0ebeb7179023be8415ee17ccd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gyro Adventure.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gyro Adventure.cht",
+      "git_blob_sha": "2e8e9b68b3de6fdda59e0d504edc43c8daf27add"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Gyrodine (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Gyrodine (Japan).cht",
+      "git_blob_sha": "8ce8496cb51c9dff03a84c3654f053c6f7f0ad3a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/H.E.R.O. (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/H.E.R.O. (Japan) (Cassette).cht",
+      "git_blob_sha": "d99627bcbdd4177bd8595d61d496a5fcafe14488"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/H.E.R.O. (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/H.E.R.O. (Japan).cht",
+      "git_blob_sha": "5789ba8b1cc58bdbe027029ba996e9ea199cceae"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hades no Monsho (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hades no Monsho (Japan).cht",
+      "git_blob_sha": "21d784c0b575640f54b77c5bff8134bade49683a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hammer Boy.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hammer Boy.cht",
+      "git_blob_sha": "9fd4558b3b33cb51b5e886e4c3c43159ede3c379"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hang-On (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hang-On (Japan).cht",
+      "git_blob_sha": "0ea9a0d169c30a04f13387e8510725f174877884"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Happy Fret.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Happy Fret.cht",
+      "git_blob_sha": "a94a1026baab4cf51c3c0bf0ab621975b757126b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hard Boiled.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hard Boiled.cht",
+      "git_blob_sha": "bafa8bd7c451b8fffdb9c48e8efdd1789a53e82b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Haunted House.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Haunted House.cht",
+      "git_blob_sha": "557f68282d2cca51ddc09997d7cd0adf22c6768c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Head Over Heels.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Head Over Heels.cht",
+      "git_blob_sha": "9a16714fe44e809188e6c3148998dcb2781b5f36"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Heist, The (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Heist, The (Japan).cht",
+      "git_blob_sha": "54cde6f55c0eb381cc5cd64a59f701d671212319"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hercule.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hercule.cht",
+      "git_blob_sha": "a06fbc8ecc09b23d070b952944b5fd6a7954a2a7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/High Way Star (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/High Way Star (Japan).cht",
+      "git_blob_sha": "bfd0ab03a2de4951554312a99738cdb3b6cdb86a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Highway Encounter.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Highway Encounter.cht",
+      "git_blob_sha": "ed4dc11d496d56f4de82c391584522f23fd14ce3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hole in One Professional (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hole in One Professional (Japan).cht",
+      "git_blob_sha": "76d7e2f2b8eb1727e500cad5bf4872b6b3c7c801"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hopper (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hopper (Europe).cht",
+      "git_blob_sha": "cee8453795075e55ec05323386cf91f29b558b64"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Howard the Duck.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Howard the Duck.cht",
+      "git_blob_sha": "524f2fce6c502201a902e954be0ae59f5f4a8dcb"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Humphrey.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Humphrey.cht",
+      "git_blob_sha": "75fc03c6e9fd230ccc8bb19911a1e65d201e4417"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hunchback.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hunchback.cht",
+      "git_blob_sha": "7608aa7f5778648a6b77d6df2d12e187edfaa2db"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hundra.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hundra.cht",
+      "git_blob_sha": "00f099df441d2c4c44fc2a525efbfdc9216261d0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hustle! Chumy (Japan) (Disk).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hustle! Chumy (Japan) (Disk).cht",
+      "git_blob_sha": "1b225c81e7ae5464eb7b5340962a003ee81b31fa"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hustle! Chumy (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hustle! Chumy (Japan).cht",
+      "git_blob_sha": "d6f1db62cfb219af2c9bba02a0185bf7651df137"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hydlide (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hydlide (Japan).cht",
+      "git_blob_sha": "f10b8661e3adb859ad51a2b251f4238d46ce2f59"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hydlide 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hydlide 2.cht",
+      "git_blob_sha": "516faa85e884b378af1f44774d7c6251f3219507"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hydlide 3 - The Space Memories (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hydlide 3 - The Space Memories (Japan).cht",
+      "git_blob_sha": "df53a883c8cedfa453103693964523af5a565b72"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hype.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hype.cht",
+      "git_blob_sha": "03a663f614cfb17d7440a7104ab2e851d31fc75b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hyper Olympic 1 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hyper Olympic 1 (Japan).cht",
+      "git_blob_sha": "0f1be30bd0b9d52e224046ebc0167bf72ca467b6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hyper Olympic 2 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hyper Olympic 2 (Japan).cht",
+      "git_blob_sha": "3262c5ffbd9746b58d147e66c9207174b4941a72"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hyper Rally (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hyper Rally (Japan).cht",
+      "git_blob_sha": "f957acbe07904197749e4d6a32c3507ec4d3a4bb"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hyper Sports 1 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hyper Sports 1 (Japan).cht",
+      "git_blob_sha": "8648d2024aa8853a96482270eeaa744616c46830"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hyper Sports 2 (Japan) (Wii U Virtual Console).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hyper Sports 2 (Japan) (Wii U Virtual Console).cht",
+      "git_blob_sha": "94663b63979b5518d2f9d4efd42fe59a729f0ce1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Hyper Sports 3 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Hyper Sports 3 (Japan).cht",
+      "git_blob_sha": "f8d4e9cbb5743b5d50da8371b47137c6cb7ea0fd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/ICE.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/ICE.cht",
+      "git_blob_sha": "a24d053f040b04e5433d0250257031867027d725"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/INK (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/INK (Cassette).cht",
+      "git_blob_sha": "416d1ccdf7ff7604dc7275e3e083e210702cb4c4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/INK.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/INK.cht",
+      "git_blob_sha": "3bc82ced9b4d73bb01b668c992a8120de7c605e7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ice World (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ice World (Japan).cht",
+      "git_blob_sha": "64f0d6ac7dffa997ee97f5ac7412d700c77bf30c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Iga Ninpouten 1.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Iga Ninpouten 1.cht",
+      "git_blob_sha": "d4c892f8085aa12ba8465f9d79eac97eefa0c383"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Iga Ninpouten 2 - Small Ninja 2 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Iga Ninpouten 2 - Small Ninja 2 (Japan).cht",
+      "git_blob_sha": "42ef580b3cf2e7229051a6993f9a7ce13c54c5ce"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Iligks Episode IV - The Maze of Illegus.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Iligks Episode IV - The Maze of Illegus.cht",
+      "git_blob_sha": "95e9f8ab2cb619d6e47eda7de608a56c8c32cfc3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Iligks Episode One - Theseus.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Iligks Episode One - Theseus.cht",
+      "git_blob_sha": "d5cf00c4bd53f6bba4736c33e0cf508bd7bf4677"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Illusions.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Illusions.cht",
+      "git_blob_sha": "3418f42af020f5c6529319fd3c55540519dc0120"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Inca.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Inca.cht",
+      "git_blob_sha": "9cbb244dd2a78f188a64a235b08deb2f3bff596e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Indian no Bouken (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Indian no Bouken (Japan).cht",
+      "git_blob_sha": "d1d3a0ee7adc0eff42206dfaadf4293fee1dc1fd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Indiana Jones and the Last Crusade.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Indiana Jones and the Last Crusade.cht",
+      "git_blob_sha": "7ecfd9d9b2d8ecd6e590be8b756ac16b96f21514"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Indiana Jones and the Temple of Doom.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Indiana Jones and the Temple of Doom.cht",
+      "git_blob_sha": "f1a956aae4cb82475dbb41c253c6d3b916f8cde0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Indy 500.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Indy 500.cht",
+      "git_blob_sha": "9f88a16bf19e8f3b491075536d403e2e73c9f6c5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Inspecteur Z.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Inspecteur Z.cht",
+      "git_blob_sha": "82d15191d3885a710854941b2ae23babd06875d7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Iron Star.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Iron Star.cht",
+      "git_blob_sha": "dd44aa2c2451a5ef9e7f258c268ed7efa711babc"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Issunhoushi No Donnamondai (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Issunhoushi No Donnamondai (Japan).cht",
+      "git_blob_sha": "1192e313770e0be451f1af38661189a693f1998d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/J.P. Winkle (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/J.P. Winkle (Japan).cht",
+      "git_blob_sha": "88f1c73ffdc5ac7f945016d72ea3ee49b83f20c8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jack the Nipper II - In Coconut Capers.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jack the Nipper II - In Coconut Capers.cht",
+      "git_blob_sha": "35595ab76c9e9e6dc90e3d659ea1b8ef25df4013"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jack the Nipper.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jack the Nipper.cht",
+      "git_blob_sha": "cd9f6a5868d04d18f630d1642403e861f4fe9f00"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jackson City.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jackson City.cht",
+      "git_blob_sha": "a98b098725002ebc3f4c5b165658fcc709004d71"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jagur (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jagur (Japan).cht",
+      "git_blob_sha": "0cc226f5f1866a1acc77375978949729e523f4e5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jaws.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jaws.cht",
+      "git_blob_sha": "5ded3adebfc4952748812d110d7df153fed8ecd9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jet Bomber.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jet Bomber.cht",
+      "git_blob_sha": "db68cb4f0bae314482e4ee1910d4e1b43b0bb643"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jet Fighter (Eurosoft).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jet Fighter (Eurosoft).cht",
+      "git_blob_sha": "21b418ccb55ba0a1ec143bcaac9ff1674e69e4c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jet Set Willy (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jet Set Willy (Japan).cht",
+      "git_blob_sha": "41edf07ec9c84570a3121bce48374499b069366b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jimmy Quest.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jimmy Quest.cht",
+      "git_blob_sha": "6c327c52450e7c7cb6738a86370ee11a8aa46405"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Joe Blade.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Joe Blade.cht",
+      "git_blob_sha": "bcc29b58fa799b4be8f19a2c4b7ac16a02d589ef"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jungle Hunt.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jungle Hunt.cht",
+      "git_blob_sha": "70679fc2db5f5eae9173a2110a3f9af581d87b03"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Jungle Warrior.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Jungle Warrior.cht",
+      "git_blob_sha": "1db2eb22fae4bd64a0b0099da53f84912e803331"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Kick It (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Kick It (Japan).cht",
+      "git_blob_sha": "663ab3060f6a2d0c04fb05963f86bd0876233612"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/King & Balloon (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/King & Balloon (Japan).cht",
+      "git_blob_sha": "99b8f155ccf2271df85424e681939694b626041b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/King Knight (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/King Knight (Japan).cht",
+      "git_blob_sha": "06ed7b0f2049bfdb0d5be6f350ce2338a700e25f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/King's Valley (Japan, Europe) (En).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/King's Valley (Japan, Europe) (En).cht",
+      "git_blob_sha": "77d56b404d6a4b7935574e0dcd14001b1896b8cf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/King's Valley II (Japan, Europe) (En).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/King's Valley II (Japan, Europe) (En).cht",
+      "git_blob_sha": "33774aaa7e9e327987f167aa728b74ed7d7d9fc1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/King's Valley Plus.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/King's Valley Plus.cht",
+      "git_blob_sha": "aadab7d3407a38d28a313dcdbce83e699fa8ce6e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Kinnikuman.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Kinnikuman.cht",
+      "git_blob_sha": "35d219ca3dcd8416435825b692ee2a00e6bf3d81"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Knight Lore (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Knight Lore (Japan).cht",
+      "git_blob_sha": "6c38b2173da835b97255ca907055fc5b5f1c88be"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Knightmare II - The Maze of Galious (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Knightmare II - The Maze of Galious (Japan).cht",
+      "git_blob_sha": "007ad1b2d6e17fe54c062c6ffd0b343041d0e356"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Knightmare III - Shalom (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Knightmare III - Shalom (Japan).cht",
+      "git_blob_sha": "6a92bf71ccb1a01025e55d87b9ae4e51e2c521e1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Knightmare.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Knightmare.cht",
+      "git_blob_sha": "8c540ef2497c65cc2758e2c30925f02fc4fa45e1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Knither Special (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Knither Special (Japan).cht",
+      "git_blob_sha": "2207cd6ac2eb9003f392602d303a954356d3eaf8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Kobashi.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Kobashi.cht",
+      "git_blob_sha": "f41c72e6ba20b49774c2aa6d5bb8c4896f27f3a8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Konami's Billiards (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Konami's Billiards (Europe).cht",
+      "git_blob_sha": "769400cfe31419922e20a282a543fd3c378c26d8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Konami's Boxing (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Konami's Boxing (Japan).cht",
+      "git_blob_sha": "de9debdbfb777a3ecb01b56ee4c6f64a1dc6ab0d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Konami's Football (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Konami's Football (Europe).cht",
+      "git_blob_sha": "9d59782fb365f0c62f754bd35948600855e51249"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Konami's Golf (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Konami's Golf (Japan).cht",
+      "git_blob_sha": "adeea958717fba06a5d6909f8dc4c5cdd2f9e8d5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Koneko no Daibouken - Catboy (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Koneko no Daibouken - Catboy (Japan).cht",
+      "git_blob_sha": "6b2140792f82b440ffb85b0d31725f36a11bdefe"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Kong.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Kong.cht",
+      "git_blob_sha": "a98ce5db0417937e8225e8c96c6d9f2d99be8ad4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Kralizec 8K Tetris (2004) (Kralizec).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Kralizec 8K Tetris (2004) (Kralizec).cht",
+      "git_blob_sha": "9bf501f01d62b1b092b07204b49d42816fbc9cb7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Kralizec Tetris 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Kralizec Tetris 2.cht",
+      "git_blob_sha": "388f9b20049f445952bea39a6dbeb3dc19c4c7ea"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Kung Fu Master (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Kung Fu Master (Japan).cht",
+      "git_blob_sha": "f123f57e1e5aa04709a8bbb653c74a7173537a05"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/La Espada Sagrada.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/La Espada Sagrada.cht",
+      "git_blob_sha": "6acf7c1afc8a43433d9ad6d819c1ee83cab33d82"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Laptick 2 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Laptick 2 (Japan).cht",
+      "git_blob_sha": "7b02341d70789de04547547c663d0074c5b1262b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Lazy Jones.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Lazy Jones.cht",
+      "git_blob_sha": "cd0b94e29eece68b771a023954495cc08403d072"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Legendly Knight (Korea).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Legendly Knight (Korea).cht",
+      "git_blob_sha": "e7527f4275ffba7a991895754d8fe363f0c29e63"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Life in the fast lane.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Life in the fast lane.cht",
+      "git_blob_sha": "30ce567edd6e63caeea3b94ddfd8bc1101cc529f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Livingstone II.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Livingstone II.cht",
+      "git_blob_sha": "af05e3392b301a276125cd96c296a9dbf99b357d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Lode Run (2005) (Andrea Gasparrini).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Lode Run (2005) (Andrea Gasparrini).cht",
+      "git_blob_sha": "562b0e20119f7d35811650e21510f8ca2d9bea42"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Lode Runner (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Lode Runner (Japan).cht",
+      "git_blob_sha": "fc67e0c476002ba6f6efb450cdfe27034713759e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/M36 - A Life Planet (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/M36 - A Life Planet (Japan).cht",
+      "git_blob_sha": "9431faf490885720af57c3a71b8fcca091579bb7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/MSX Game.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/MSX Game.cht",
+      "git_blob_sha": "2e04bb13b9b39c8146bdb56bab0106218ebebb52"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/MSX-Logo.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/MSX-Logo.cht",
+      "git_blob_sha": "d4c8a52dbcb6c7166c5759dd82d05066ff1599c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mac Attack (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mac Attack (Europe).cht",
+      "git_blob_sha": "bcae3ad353687c553da8ef68826a56a843ce8451"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Macross (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Macross (Japan).cht",
+      "git_blob_sha": "ab7df576137c60f0c86d744cc7ffe006bf3565c5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Magical Kid Wiz (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Magical Kid Wiz (Japan).cht",
+      "git_blob_sha": "d66de51869bab05f0ea514c8cecbe4fb2afba3c9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Magical Tree (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Magical Tree (Japan).cht",
+      "git_blob_sha": "ef09a8ffdec54ce890b84d2b0b8b50a48dc0f004"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Magunam.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Magunam.cht",
+      "git_blob_sha": "511f8c53a1b37857d3b897af5c2b9a31609c5cff"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Majikazo.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Majikazo.cht",
+      "git_blob_sha": "f3284307a572028a1226ffb33081b753f8fc8d64"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Malaika Prehistoric Quest (2006) (v1.3) (Karoshi Corp).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Malaika Prehistoric Quest (2006) (v1.3) (Karoshi Corp).cht",
+      "git_blob_sha": "c70c11580e69f405794c1a8b0a4630b42910b4d7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Manes (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Manes (Japan).cht",
+      "git_blob_sha": "e6e80c872a25cd0eb1ec2defabaf6fe70b2b08e5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mappy (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mappy (Japan).cht",
+      "git_blob_sha": "954e033bcf9bf5575b605b354cdbdc5fe8b04e16"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mario and Fruit (Promo).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mario and Fruit (Promo).cht",
+      "git_blob_sha": "7da2387e5693cb12bdb00fb66335eaf4b64f3e86"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mario and Fruit.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mario and Fruit.cht",
+      "git_blob_sha": "5125a9bf838287e59d5ff1d4995debdb47268cbd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mashou no Tachi Goblin (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mashou no Tachi Goblin (Japan).cht",
+      "git_blob_sha": "4b7ecdc32183fec0c45a57f4e28551850e56be88"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Masters of the Universe.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Masters of the Universe.cht",
+      "git_blob_sha": "8f3df8279a02f90201ff4ebab1b25e03339f3959"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Maze Master.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Maze Master.cht",
+      "git_blob_sha": "de28672c5d7d668dc42a8878931c698104af5b7b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mazes Unlimited.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mazes Unlimited.cht",
+      "git_blob_sha": "9c1dfbb9573af8881284b498d683b6c6aee425a4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mega Phoenix.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mega Phoenix.cht",
+      "git_blob_sha": "79dc5885b7df36ab48246c7c9201105186740ce0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Megalopolis SOS (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Megalopolis SOS (Japan).cht",
+      "git_blob_sha": "4ebb97e8d527a8ce3c5fef1d175bfc73156f5ce9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Meganova.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Meganova.cht",
+      "git_blob_sha": "d58a0063f0b27c991c8d30b5aa00f1cfd1633e84"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Metropolis.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Metropolis.cht",
+      "git_blob_sha": "4e758d5743baa5165ecdb5e520c68fe00b4e1386"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mike Gunner.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mike Gunner.cht",
+      "git_blob_sha": "fd57cc451591f787b04bf55ebf9605e8c637a077"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mine Clearer.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mine Clearer.cht",
+      "git_blob_sha": "69cddbfdc7d2d9700ca7c8455a40fee1c014d1bf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Miner Machine.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Miner Machine.cht",
+      "git_blob_sha": "5a798d6d3463337c22316f893198b46fb980d514"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Missile Command.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Missile Command.cht",
+      "git_blob_sha": "4a3a9f8ddf0a9964ee17723fd2b6818c1307c0f3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Moai no Hibou (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Moai no Hibou (Japan).cht",
+      "git_blob_sha": "37a73aef8f53eb31531946c9dfeb21e4437e3370"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mobile Planet Suthirus - Approach from the Westgate (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mobile Planet Suthirus - Approach from the Westgate (Japan).cht",
+      "git_blob_sha": "bcf5453cfebd4a554adccc7adfd6edda59fcbb36"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Monkey Academy (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Monkey Academy (Japan).cht",
+      "git_blob_sha": "eb4d7e69b7b63442a6d6d6400110d3f0a65d4c75"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Monster Hunter (2006) (Es) (Nerlaska Studio) (Beta).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Monster Hunter (2006) (Es) (Nerlaska Studio) (Beta).cht",
+      "git_blob_sha": "d416f12d9ad6f13be898135348e5d62ad7266d3a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Monster Hunter (2006) (Es) (Nerlaska Studio).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Monster Hunter (2006) (Es) (Nerlaska Studio).cht",
+      "git_blob_sha": "cc54a5db0ba294dcc66e94ab3d4ef402c9b269dc"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Monster's Fair (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Monster's Fair (Japan).cht",
+      "git_blob_sha": "22b945e54b243adc69313c4d60f5d37201126267"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Montana John and the Templar's Treasure (2008) (MRC Ver.) (Infinite).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Montana John and the Templar's Treasure (2008) (MRC Ver.) (Infinite).cht",
+      "git_blob_sha": "32d8cd01ef2ec3235bbe60cf8fb06ce2a9a297f2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Montezuma's Revenge.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Montezuma's Revenge.cht",
+      "git_blob_sha": "babf2b9f1f03c798032ee0bbd74459c8094f09f4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Moon Patrol (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Moon Patrol (Japan).cht",
+      "git_blob_sha": "c1db88ca74f2b888af3caf51cd596f2f1c02b5f2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Moon Rider.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Moon Rider.cht",
+      "git_blob_sha": "65600b5cf6a64abaf03024a97f813d4684681b76"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Moonsweeper (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Moonsweeper (Japan).cht",
+      "git_blob_sha": "fb006e9ea53acca4e10f3091196b3c673444aa9b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mopiranger (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mopiranger (Japan).cht",
+      "git_blob_sha": "21a4446ac626603261e46c478010dec590ee3557"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mr. Chin (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mr. Chin (Japan).cht",
+      "git_blob_sha": "21d1f2f418b05b6fff5c1e65bebf4b67aedff0cf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mr. Wong's Loopy Laundry.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mr. Wong's Loopy Laundry.cht",
+      "git_blob_sha": "c30454dd710e0493efc0f7c5793b0ba59847cf40"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mutant Monty.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mutant Monty.cht",
+      "git_blob_sha": "62ca53e3dd2af610509c7b3a775b81e3c3584b0a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Mythos.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Mythos.cht",
+      "git_blob_sha": "a842de8dbc1841acf43d81777dad14120ee85b9b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/N-Sub.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/N-Sub.cht",
+      "git_blob_sha": "5acdf47408617b4f855acdabebed023897836a6b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Narco Police.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Narco Police.cht",
+      "git_blob_sha": "aa2fffec5f30724e4c13c097fe71429f8f31d5c5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Nausicaa (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Nausicaa (Japan).cht",
+      "git_blob_sha": "66ef3e6943a0a9cf7f326100391a0eaf32c80e5a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Navy Moves (Part 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Navy Moves (Part 1).cht",
+      "git_blob_sha": "2b735e5b6db65ceb94671f118c819f2cb40eabd1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Navy Moves (Part 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Navy Moves (Part 2).cht",
+      "git_blob_sha": "f6c389ca420361b44fc1333ff751b8fc427f990c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Navy Moves - Part 1 (Spanish).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Navy Moves - Part 1 (Spanish).cht",
+      "git_blob_sha": "5ea15f1a59079221472af55c0a384c9b6a115f5a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Navy Moves - Part 2 (Spanish).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Navy Moves - Part 2 (Spanish).cht",
+      "git_blob_sha": "a9c439275b5e1c67a41d836fb74676a864f3d36c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Negrooli Panda.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Negrooli Panda.cht",
+      "git_blob_sha": "7df2ace242ec7124b5ac734120e55f844c2d43cd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Night Flight.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Night Flight.cht",
+      "git_blob_sha": "e29a2cc1ab1ed94ef6a9010b5609940b864cddab"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Night Shade (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Night Shade (Japan).cht",
+      "git_blob_sha": "1e187d8e2e118279c5ad5560c14f31342d776039"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ninja Jajamaru-kun (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ninja Jajamaru-kun (Japan).cht",
+      "git_blob_sha": "2a775db2ee7001329a46547c2346250534e8dc53"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ninja Princess (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ninja Princess (Japan).cht",
+      "git_blob_sha": "b530c70fa6622aa296303b8ca2d649c115b3e405"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ninjakun (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ninjakun (Japan).cht",
+      "git_blob_sha": "208160c00d28ffe9079d7a25c7b8472470f4f58c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ninjya Kage (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ninjya Kage (Japan).cht",
+      "git_blob_sha": "e6d4e381a395660c5f28214cd1332b6d21137f24"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/No Fuss.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/No Fuss.cht",
+      "git_blob_sha": "84d2255ead7c9356495c611222f11a8a20e2f877"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Nonamed.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Nonamed.cht",
+      "git_blob_sha": "4709ac3e2718fe521a08574d44e05b2dbd7e607f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Oberon 69.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Oberon 69.cht",
+      "git_blob_sha": "4a003291f503fbb394c6fd49c91e69a6ac6876fe"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Oh Shit! (1986) (64K) (Asckosoft).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Oh Shit! (1986) (64K) (Asckosoft).cht",
+      "git_blob_sha": "0f5cb2c8c54149ff8dd3d8c0374e327cbdbee0ad"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Oil's Well (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Oil's Well (Japan).cht",
+      "git_blob_sha": "f2e41939d2a2fdddcd1c2e602229b807bc8f2fe5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Operation Wolf (2006) (v3.0) (Toybox).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Operation Wolf (2006) (v3.0) (Toybox).cht",
+      "git_blob_sha": "8a9ed8ab878a73fade6646916a0254c04bf084fc"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Operation Wolf.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Operation Wolf.cht",
+      "git_blob_sha": "717a65ce8ad736ca912f8f3617534405ece13b13"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pac-Man (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pac-Man (Japan).cht",
+      "git_blob_sha": "f372bc9bccfcfcf306f72f1c3a8598d560663dc0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pai Panic (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pai Panic (Japan).cht",
+      "git_blob_sha": "5e2281df951cd27ae81729aa309495c48355a3d6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pair Logic (2005) (Andrea Gasparrini).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pair Logic (2005) (Andrea Gasparrini).cht",
+      "git_blob_sha": "7f4f003305b3cb57d5b98ac97ebec7707bb88962"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pairs (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pairs (Japan).cht",
+      "git_blob_sha": "24b965fdb7d91b16d2d074d81fe11c1d28775ffa"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Panique.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Panique.cht",
+      "git_blob_sha": "1a77ee8069d376e75b0d8348c681139bff279102"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Parodius (Japan) (Alt).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Parodius (Japan) (Alt).cht",
+      "git_blob_sha": "f736a2c7883f4c8f43e1648f0338be2113c55b81"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pastfinder (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pastfinder (Japan).cht",
+      "git_blob_sha": "bb1cd49dd950ca366c5660fe4840ebe8449baac9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pegasus (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pegasus (Japan).cht",
+      "git_blob_sha": "c3fae91c1c79715d677fc6b67b26e1cb9db3b191"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Penguin Adventure (Japan, Europe) (En).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Penguin Adventure (Japan, Europe) (En).cht",
+      "git_blob_sha": "5c15d61406307066896dc294345309a629dc8e7c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Penguin Race (2003) (Dioniso).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Penguin Race (2003) (Dioniso).cht",
+      "git_blob_sha": "142e751de03696c413422c239c12697eae661d98"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Penguin-kun Wars (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Penguin-kun Wars (Japan).cht",
+      "git_blob_sha": "b95511a0de60091bcf1061aef3f3462417f236e1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Penguin.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Penguin.cht",
+      "git_blob_sha": "a24d053f040b04e5433d0250257031867027d725"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pepper 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pepper 2.cht",
+      "git_blob_sha": "4c84e3d3d60deedb14108808e31bcb6e68d9ef66"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Phantis (Part 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Phantis (Part 1).cht",
+      "git_blob_sha": "2fb794d7e2fc6c845669d87eef1da0850a683585"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Phantis (Part 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Phantis (Part 2).cht",
+      "git_blob_sha": "13c6cc2f4a7a823f33950dfedd9f1f94aef8efb6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Phantomas 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Phantomas 2.cht",
+      "git_blob_sha": "c91746907885798d255b3a5946514f2122c303f6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Phantomas Saga - Infinity.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Phantomas Saga - Infinity.cht",
+      "git_blob_sha": "095668528326a663a79b72d1e36c2f3e3bf84880"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pharaoh's Revenge.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pharaoh's Revenge.cht",
+      "git_blob_sha": "0da5801332286182eb2e9175fa1c816d88d36b45"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Picture Puzzle (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Picture Puzzle (Japan).cht",
+      "git_blob_sha": "7dba2e8adf69d7b69f8738ea44928498e8d6d8ee"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pinball Blaster (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pinball Blaster (Europe).cht",
+      "git_blob_sha": "e86c324667cdbd7fd79acab78a77e9aa075e4c19"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pine Applin (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pine Applin (Japan).cht",
+      "git_blob_sha": "8905c53d2a05cf9ca6137db3621fa59fb250f869"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pipi (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pipi (Japan).cht",
+      "git_blob_sha": "104f7de90613a956c42a50e7e80f615066453ae2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pippols (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pippols (Japan).cht",
+      "git_blob_sha": "115bc8fa49b3b6929d9c740443dcfdd1cf122e71"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pitfall II - Lost Caverns.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pitfall II - Lost Caverns.cht",
+      "git_blob_sha": "18771b714c786d2535e55a7228e638a117a197b4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pitfall! (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pitfall! (Japan).cht",
+      "git_blob_sha": "6905f0f43b70b24a3117f31ebbf3595a855d2495"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Polar Star.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Polar Star.cht",
+      "git_blob_sha": "01a70ca2609f02d69fbb7ce2e7197c02e7e24d45"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Police Academy II.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Police Academy II.cht",
+      "git_blob_sha": "4ad118c9be4aeb44b650026661a4b1af89006ae0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Police Academy.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Police Academy.cht",
+      "git_blob_sha": "9386ff05cdafb07e18d1590c4dfbac54c9362471"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Police Story, The (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Police Story, The (Japan).cht",
+      "git_blob_sha": "093d1b64c6474e90e2a7e2b200b27d874d25662a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pooyan (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pooyan (Japan).cht",
+      "git_blob_sha": "e91b14f403785989b2543e5faca270be6435d3c3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Poppaq the Fish (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Poppaq the Fish (Japan).cht",
+      "git_blob_sha": "93c1ef82aa8abd68de9beceaa61453467a3698a4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Poursuite.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Poursuite.cht",
+      "git_blob_sha": "854df3f2c102211f5b00e2cb7170a1ab0761051b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Power Drift.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Power Drift.cht",
+      "git_blob_sha": "54a559669b5b5353f7e3417545273e65319336e2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Psychic War - Cosmic Soldier 2 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Psychic War - Cosmic Soldier 2 (Japan).cht",
+      "git_blob_sha": "850d63ffbae41974525410bdef479d4f37fab9c0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pyramid Warp (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pyramid Warp (Japan) (Cassette).cht",
+      "git_blob_sha": "0e3305d6f46a6f78ae96e73dda60de27ca0f7dc4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Pyramid Warp (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Pyramid Warp (Japan).cht",
+      "git_blob_sha": "f1531e9e104c7a31412b62abac6d5db647987b4f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Q-bert (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Q-bert (Japan).cht",
+      "git_blob_sha": "3679cac215698b6f224b7ae3f60f21e2ea30254c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Quebert.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Quebert.cht",
+      "git_blob_sha": "b754fc914c67d4d9fcda10ef1e944b7edfb56821"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/R-Type (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/R-Type (Japan).cht",
+      "git_blob_sha": "98d27517668525c46dde7c68b0e3d0ebb2680ea0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/RNFF - Running Naked in a Field of Flowers (2006) (Infinite).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/RNFF - Running Naked in a Field of Flowers (2006) (Infinite).cht",
+      "git_blob_sha": "457e420954bc6445523c741ac72ea1766eaccb2b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Raid on Bungeling Bay (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Raid on Bungeling Bay (Japan).cht",
+      "git_blob_sha": "dbcd30daf831f11f70891a46b04c5b8af5f346de"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Rally-X (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Rally-X (Japan).cht",
+      "git_blob_sha": "d217fc41c54c8d31c971e3c1918c07173a8c136b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ramasse-Miettes.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ramasse-Miettes.cht",
+      "git_blob_sha": "878a9d3eeac75c22745e867ddcb894b7e9d0c769"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Rambo (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Rambo (Japan).cht",
+      "git_blob_sha": "b47045c433e7ab53c38310a671edb20d04a6d60d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Rambo III.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Rambo III.cht",
+      "git_blob_sha": "f42eda34a405320ac06506d8163d81c8038dc3d4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Red Zone (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Red Zone (Japan).cht",
+      "git_blob_sha": "ce40fa01b892ea95e779a456569bc8980f45508d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Rise Out.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Rise Out.cht",
+      "git_blob_sha": "4f8111cde3afbeecb98466191646714cabb08e40"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/River Raid (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/River Raid (Japan) (Cassette).cht",
+      "git_blob_sha": "2cc0448901fb35fc38a78223d52328521368b8c2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/River Raid (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/River Raid (Japan).cht",
+      "git_blob_sha": "f3d12abbe4c1ff2f37afb6c0c2003c2671885b75"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Road Fighter (Japan) (Alt).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Road Fighter (Japan) (Alt).cht",
+      "git_blob_sha": "1d6c954b0a5aa6ec652e34116d8a4061c6b6b2ce"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Robocop.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Robocop.cht",
+      "git_blob_sha": "6e49cf2dd896cdc74ea571acf4561cd226a1a9e3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Robot Wars.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Robot Wars.cht",
+      "git_blob_sha": "021483625f92de61982f092655a9a84ec14e2dd6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Robots (2011) (Michel d'Alger).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Robots (2011) (Michel d'Alger).cht",
+      "git_blob_sha": "35fe6cc3432b29de129dc09a801147d6d198eab9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Roboy.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Roboy.cht",
+      "git_blob_sha": "070dc672087b3f23eb5580f261009867bf48b3ee"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Rocket Roger.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Rocket Roger.cht",
+      "git_blob_sha": "2d1c4efd4223ec7f85c8eaf30e72052cbddfef18"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Rotors (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Rotors (Japan).cht",
+      "git_blob_sha": "f07410e7a546112ecfd8c29c5331f345e1186e2a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Saimazoom (2005) (Es) (Karoshi Corp).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Saimazoom (2005) (Es) (Karoshi Corp).cht",
+      "git_blob_sha": "1da481fb63dbc87facb5280d4ace1215d3899b3a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Salamander (Japan) (Wii U Virtual Console).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Salamander (Japan) (Wii U Virtual Console).cht",
+      "git_blob_sha": "cc4de5c27246a9c9b2d8a5a98f7138667762f56c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sammyu Densetsu - Takeru Densetsu.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sammyu Densetsu - Takeru Densetsu.cht",
+      "git_blob_sha": "98c3466761c77bf36bb88cc76ed65732d5a74ec1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sasa (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sasa (Japan).cht",
+      "git_blob_sha": "bc034183ee3315711c740d800e9ccff6faacd375"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Satan.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Satan.cht",
+      "git_blob_sha": "adffa33f5eeb324758bd1179b0cf22045b887f27"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Scarlet 7.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Scarlet 7.cht",
+      "git_blob_sha": "8542ff7a3c169051037355e16e3f768430645844"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Scentipede.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Scentipede.cht",
+      "git_blob_sha": "b5815091b10e88b03a37042bc81edbdb59e9aa88"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Science Fiction.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Science Fiction.cht",
+      "git_blob_sha": "fe331d93f56d20637e88c8e531bd594ca0b794c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Scion (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Scion (Japan).cht",
+      "git_blob_sha": "d8ddc2dceb5115789d338d1870e7cf2f4b95b40b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Scope On.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Scope On.cht",
+      "git_blob_sha": "14947427c4d183ce4756c0e7113a5ab6f71d7505"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Seiken Acho.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Seiken Acho.cht",
+      "git_blob_sha": "e17b2fccd00eef5b02314a270646bda3d445dfb7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Seleniak (2004) (Guzuta Raster Leisure).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Seleniak (2004) (Guzuta Raster Leisure).cht",
+      "git_blob_sha": "4daba646b65d89659bc3fd1bde25b750f4f53f7c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Senjo no Ookami (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Senjo no Ookami (Japan).cht",
+      "git_blob_sha": "2643632056b6b02fc1f285d432c93bf6549ec237"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Shout Match (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Shout Match (Japan).cht",
+      "git_blob_sha": "7530fa4feb88eaa5ba558df264de341bc4ec277b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sinbad (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sinbad (Japan).cht",
+      "git_blob_sha": "5afa9886113035df503104114e786d85df620f7c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sink King (2004) (Guzuta Raster Leisure).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sink King (2004) (Guzuta Raster Leisure).cht",
+      "git_blob_sha": "823372758083da731c3e17c755f80148ab0a9868"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sir Fred.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sir Fred.cht",
+      "git_blob_sha": "891102b32509ad7db71739e880cb5180528ba37e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Skooter (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Skooter (Japan).cht",
+      "git_blob_sha": "03b7dc1b7fcc953c4befc7468695e68eb2abd72a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Skramble.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Skramble.cht",
+      "git_blob_sha": "2db82748ca130c2afece4ed3bcc51f6ccc732c09"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sky Galdo (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sky Galdo (Japan).cht",
+      "git_blob_sha": "3a8fc5321e5752cafd10e8cbe0f800ae5d3e5477"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sky Jaguar (Japan) (Wii U Virtual Console).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sky Jaguar (Japan) (Wii U Virtual Console).cht",
+      "git_blob_sha": "fcd104cd27deda8170545e8f8dfc9da915020b56"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sky Vision.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sky Vision.cht",
+      "git_blob_sha": "9f75b4dca6d6da0114163dd56423c7c6722add40"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Skyhawk.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Skyhawk.cht",
+      "git_blob_sha": "c9c526bfa5787a05a740b656061af79daf85d8ec"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Smack Wacker.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Smack Wacker.cht",
+      "git_blob_sha": "bc32feed203145342831b550246dd9a6732efe6a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Snail Maze (2004) (Demo) (Karoshi Corp).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Snail Maze (2004) (Demo) (Karoshi Corp).cht",
+      "git_blob_sha": "69aa8576980e9875e5281bafacec1c423751ed81"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Snake It (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Snake It (Europe).cht",
+      "git_blob_sha": "c26770cac1f66925c61e1a732a2383005e1a98ae"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sofia (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sofia (Japan).cht",
+      "git_blob_sha": "e279a879da00d3f3b182bab128bbebe3b695be8d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Soukoban Pocket Edition (2004) (Karoshi Corp).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Soukoban Pocket Edition (2004) (Karoshi Corp).cht",
+      "git_blob_sha": "b08411eb45a618970b4fb9799fe69b92bf84192d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Space Busters.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Space Busters.cht",
+      "git_blob_sha": "11d29523148a821d44a15ed1fceb809c78037ff0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Space Camp (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Space Camp (Japan).cht",
+      "git_blob_sha": "0b71b85ab56e6b49184e6e7660c0ea8470c2d384"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Space Invaders (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Space Invaders (Japan).cht",
+      "git_blob_sha": "ea1a904c55eaf73494b03873aff79dfa38e96ee6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Space Rescue.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Space Rescue.cht",
+      "git_blob_sha": "d6c2c013b95fed37bc9bb782be11429ba40a39ea"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Sparkie (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Sparkie (Japan).cht",
+      "git_blob_sha": "557a232364db08dd8b6f3cf5e65b527898eb6af3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Spelunker (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Spelunker (Japan).cht",
+      "git_blob_sha": "60642c421ceb87d6483f4b3862928b69317a0ca6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Splash.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Splash.cht",
+      "git_blob_sha": "2e3990e0d62293efe27cdcce7a11a88a4aecbc18"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Star Blazer (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Star Blazer (Japan).cht",
+      "git_blob_sha": "77993cb581f3846907d17f313f5ceaac77840331"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Star Buggy.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Star Buggy.cht",
+      "git_blob_sha": "65600b5cf6a64abaf03024a97f813d4684681b76"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Star Fighter.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Star Fighter.cht",
+      "git_blob_sha": "d921a736c6dce7763a02ee54c5c86847a82086c9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Star Force (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Star Force (Japan).cht",
+      "git_blob_sha": "afb1a963ff5102829bbd9c940638f388fea9c9dc"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Star Quake.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Star Quake.cht",
+      "git_blob_sha": "885995ddf6f13721622425b0b91819d4a0ab7b3a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Star Soldier (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Star Soldier (Japan).cht",
+      "git_blob_sha": "0f8f0bece059cd0c28ce17ea08d79ecbf6792648"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Star Wars.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Star Wars.cht",
+      "git_blob_sha": "4a3a9f8ddf0a9964ee17723fd2b6818c1307c0f3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Starbite.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Starbite.cht",
+      "git_blob_sha": "2b8a8bfb78810791918c7f351f60f55a6c55df71"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Stepper (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Stepper (Japan).cht",
+      "git_blob_sha": "69cf9fdd17f8cc02850dd15ed94e5119a4bc7975"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Stone of Wisdom, The (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Stone of Wisdom, The (Japan).cht",
+      "git_blob_sha": "56f9a4b0aab3f9916e3f8b5aa9000b6a22a742fa"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Stop the Express.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Stop the Express.cht",
+      "git_blob_sha": "01b1e4fe72460e9befa56c488f2f97f3ac48a257"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Strange Loop (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Strange Loop (Japan).cht",
+      "git_blob_sha": "3c6f4386fa9c3f7dd49b7999354d1271085227fe"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Stratos (2004) (v2.0) (CEZ GS).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Stratos (2004) (v2.0) (CEZ GS).cht",
+      "git_blob_sha": "dcdeb8f54ffe3149051d0a9c016014698659f973"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Super Bioman 4 (Korea).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Super Bioman 4 (Korea).cht",
+      "git_blob_sha": "54fee596bec5ff2c0ba46b2621be0f06b775d021"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Super Boy 3 (Korea).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Super Boy 3 (Korea).cht",
+      "git_blob_sha": "af4ff4e15beb329f0062c6dd58ba0b47eb38b343"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Super Boy I (Korea).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Super Boy I (Korea).cht",
+      "git_blob_sha": "fdf8b13d0e9cf971382592c7e879b21578add879"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Super Boy II.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Super Boy II.cht",
+      "git_blob_sha": "fdf8b13d0e9cf971382592c7e879b21578add879"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Super Cobra (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Super Cobra (Japan).cht",
+      "git_blob_sha": "bae678fbacf41dc6c5eb5aa0dc08fa3e15f6b33a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Super Laydock - Mission Striker (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Super Laydock - Mission Striker (Japan).cht",
+      "git_blob_sha": "ae546b0b0c6f8ac6ac6ee01788343154327ea1a0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Super Pierrot (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Super Pierrot (Japan).cht",
+      "git_blob_sha": "c4129c53299ff512f2b27c06e9423a99488a2730"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Survivors.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Survivors.cht",
+      "git_blob_sha": "ef11605c2ee3f632e86e7827b965beb599d14a90"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Swing (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Swing (Japan).cht",
+      "git_blob_sha": "cefd5aadd6d1a996892e7b31fb518dae0988c964"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/T-Virus (2004) (Dioniso).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/T-Virus (2004) (Dioniso).cht",
+      "git_blob_sha": "3791d157cbbc01aa505619e7c09d2840fa09c422"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/TT Racer.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/TT Racer.cht",
+      "git_blob_sha": "38108ad42cbf7ae32c7a8d821554c089f45f975a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Tank Battalion (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Tank Battalion (Japan).cht",
+      "git_blob_sha": "6ec7dd085d0d99cc65b601d23ab02d21e1b145f9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Tawara-kun (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Tawara-kun (Japan).cht",
+      "git_blob_sha": "c2d949868451519659972a7ea1b89276ae38f644"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Teki Paki (Beta) (2003) (CEZ GS).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Teki Paki (Beta) (2003) (CEZ GS).cht",
+      "git_blob_sha": "2442a2fffd25e7b577e381a65cd915aa0823be52"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Telebunnie (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Telebunnie (Japan).cht",
+      "git_blob_sha": "fd1c47dcaaa2c90798dd054b4e8ce95febf278ac"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Tensai Rabbian Daifunsen (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Tensai Rabbian Daifunsen (Japan).cht",
+      "git_blob_sha": "f456f7dff71c0c07085a8fb1da503385a5fa4ad4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Terramex.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Terramex.cht",
+      "git_blob_sha": "9532bd2e9b234292df20d2e5eb7df15636bbe8d2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/The Ice King.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/The Ice King.cht",
+      "git_blob_sha": "77f2c0b883230a8b4ec97f964775e088e881a76a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/The Legend of Kage.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/The Legend of Kage.cht",
+      "git_blob_sha": "c842a39b4301da6b504c1527b1e6611c43bdf955"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/The Munsters.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/The Munsters.cht",
+      "git_blob_sha": "e22d778e4b0202e52fa4f08f92e8faf33e486138"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/The Protector.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/The Protector.cht",
+      "git_blob_sha": "766ff32ecd91ca18f8755e20853c55a3a871b0bf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/The Three Dragon Story.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/The Three Dragon Story.cht",
+      "git_blob_sha": "827449258d6e979088066918c42cd1c316049157"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/The Tower of Druaga.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/The Tower of Druaga.cht",
+      "git_blob_sha": "2f59e163635181987aefc11aefd260b4f5493c55"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/The Untouchables.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/The Untouchables.cht",
+      "git_blob_sha": "c0108f0f7644a43fe618f699587661b5bad4873e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Thexder (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Thexder (Japan).cht",
+      "git_blob_sha": "67303f1a78a69f40eaf323bf5b66f18c52a3c7cf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Thing Bounces Back.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Thing Bounces Back.cht",
+      "git_blob_sha": "0e948e4f802f2542bfb7e419ce8ffcfa000232d0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Thunderbolt (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Thunderbolt (Japan).cht",
+      "git_blob_sha": "6c8cb2411d510f9473b00bb066c08d7829a8b76c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Time Bomb.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Time Bomb.cht",
+      "git_blob_sha": "0b59342a3bf42b56764a7836f98354d728287dc0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Time Curb.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Time Curb.cht",
+      "git_blob_sha": "25e56f64133c2b4225f3d02404dab6a7c69b082f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Time Pilot (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Time Pilot (Japan).cht",
+      "git_blob_sha": "54531be151019b49cda82d7d2be08c5a2f87f696"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Time Rider.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Time Rider.cht",
+      "git_blob_sha": "b6b6c594e0543ee31cdebd6cfb2c1ae4b1fb3f6a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Time Scanner.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Time Scanner.cht",
+      "git_blob_sha": "a2985eb280cf6aa37a28e58b4f808c58e3a709d3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Time Trax.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Time Trax.cht",
+      "git_blob_sha": "bb5df447899ebfe3a777e86583aa205528edefde"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Titanic.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Titanic.cht",
+      "git_blob_sha": "a5eace523457383af02bf799faf0312e7e8e49d9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Topple Zip (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Topple Zip (Japan).cht",
+      "git_blob_sha": "a933c46f5d626a1dbf4906a9555da4138e82459a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Traffic Jam (2006) (Imanok).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Traffic Jam (2006) (Imanok).cht",
+      "git_blob_sha": "b70d827838b888b5aab9a10f890262d2beebc4c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Trailblazer.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Trailblazer.cht",
+      "git_blob_sha": "4bb841708a83f5c87202dbe3e869ac669704ff76"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Tritorn (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Tritorn (Japan).cht",
+      "git_blob_sha": "7c1ad2d65a9230403f0ab2029b52dec1094ebd3c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Turmoil (Japan) (Alt).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Turmoil (Japan) (Alt).cht",
+      "git_blob_sha": "d2c47031c36b67ba960daff12b8c6b0a418d5bce"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Twin Bee (Japan) (Alt 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Twin Bee (Japan) (Alt 2).cht",
+      "git_blob_sha": "734dda2b9ad6f82cb393a67f55b8407c533a96b8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Txupinazo! (2007) (Imanok).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Txupinazo! (2007) (Imanok).cht",
+      "git_blob_sha": "1deb501247a106cb2f5ffcf079452c6df06df031"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Ulises.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Ulises.cht",
+      "git_blob_sha": "02bc7236eadccdc0936a2b4b811679193e6c0f5d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Universe - Unknown (2005) (v1.1) (Infinite).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Universe - Unknown (2005) (v1.1) (Infinite).cht",
+      "git_blob_sha": "f2faaf45d902cdf599f38ec39cff665ea4197b24"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Valis - The Fantasm Soldier.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Valis - The Fantasm Soldier.cht",
+      "git_blob_sha": "872017cc45a85d68e95423c1f8e7298f60fd73e4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Vampire.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Vampire.cht",
+      "git_blob_sha": "c91746907885798d255b3a5946514f2122c303f6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Vaxol - Heavy Armed Storm Vehicle (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Vaxol - Heavy Armed Storm Vehicle (Japan).cht",
+      "git_blob_sha": "7a9072fa890053103d2b56935d03c40aa65cc8e0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Venom Strikes Back.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Venom Strikes Back.cht",
+      "git_blob_sha": "f72e3ca84eeb4365acbc1db12eb7ad4ed90ff98c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Volguard (Japan) (Cassette).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Volguard (Japan) (Cassette).cht",
+      "git_blob_sha": "4c61d81605f1b86bd3470856dffee6f897f9bbb8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Volguard (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Volguard (Japan).cht",
+      "git_blob_sha": "917dc1dc7123eee75567b760fd0d2a1f83030d2e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Vortex Raider.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Vortex Raider.cht",
+      "git_blob_sha": "d294e70a4560b5f5d002013966f2bdc77f8f51c7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Warp & Warp (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Warp & Warp (Japan).cht",
+      "git_blob_sha": "76ddb513b97361dc7824cc549b000f67f8c1714e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Warroid (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Warroid (Japan).cht",
+      "git_blob_sha": "026d8b79c41f1a85260bbdee68709bf68f85429e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Who Dares Wins 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Who Dares Wins 2.cht",
+      "git_blob_sha": "693a3d024463349498560b2a3b110ba33e858da3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Winter Events.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Winter Events.cht",
+      "git_blob_sha": "2274e2bb605528f08ed833cedf4d68e916b6c121"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Winterhawk.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Winterhawk.cht",
+      "git_blob_sha": "32fcfac870b714551e9c980547901240fe793e9e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Wizard's Lair.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Wizard's Lair.cht",
+      "git_blob_sha": "80c80280e15e751022c04c8e36ed7b555940bb95"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Wonder Boy (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Wonder Boy (Japan).cht",
+      "git_blob_sha": "e35d3612143373fea3e342e48a31f4ee378bc623"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Xyxolog (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Xyxolog (Japan).cht",
+      "git_blob_sha": "7819616d96c98beb2b019cfa7a5ebf4a050432f2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Yie Ar Kung-Fu (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Yie Ar Kung-Fu (Japan).cht",
+      "git_blob_sha": "317096f7fe4eabd4de4cedc9dbf4a29a2b5748c8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Yie Ar Kung-Fu II - The Emperor Yie-Gah (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Yie Ar Kung-Fu II - The Emperor Yie-Gah (Japan).cht",
+      "git_blob_sha": "012ba2fe9a5e2c0e962918242cf8eb1f6d72d720"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Youkai Yashiki.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Youkai Yashiki.cht",
+      "git_blob_sha": "e90932698402ec68cf6afb40510eaebc7006f6d2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zaider - Battle of Peguss (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zaider - Battle of Peguss (Japan).cht",
+      "git_blob_sha": "2d18ec86f28271b1c1dd3a4d0272f1331ce2678d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zambeze.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zambeze.cht",
+      "git_blob_sha": "0f0d7dcdc5c8c861609b92a9ef1b190db7e34773"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zanac (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zanac (Japan).cht",
+      "git_blob_sha": "df326c0954149bf42d7f3a60d804e4e3d171c83f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zaxxon (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zaxxon (Japan).cht",
+      "git_blob_sha": "ead257a666dcf6e4daacc990e55e2c72c6d3de70"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zenji (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zenji (Japan).cht",
+      "git_blob_sha": "654f8ff610ab8bf8a149882ddc951ddc42bfd300"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zexas Limited (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zexas Limited (Japan).cht",
+      "git_blob_sha": "4dae59d6399ea06b41b01c7e2bbd46b42177653e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zexas.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zexas.cht",
+      "git_blob_sha": "98891d67c8f078c497d89e7d21ffd644856763a9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zoom 909 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zoom 909 (Japan).cht",
+      "git_blob_sha": "aed15b1f26405c93ef1e1bdeee8c3704bec216b6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX/Zoot.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX/Zoot.cht",
+      "git_blob_sha": "30afa170cd6bba55deadc3ca52abfc18cd379632"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/1942 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/1942 (Japan).cht",
+      "git_blob_sha": "4f655c393639e0dc3844098b987008b07530bd92"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/3D Car Race (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/3D Car Race (MSX Magazine 2003).cht",
+      "git_blob_sha": "424c84bfe0d82939b6db3d5f4420db3a92d5c2a6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Abu Simbel Profanation.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Abu Simbel Profanation.cht",
+      "git_blob_sha": "9ad4ce177381d0d09e945603f1a2645f6f318e30"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Aleste (Japan) (Demo).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Aleste (Japan) (Demo).cht",
+      "git_blob_sha": "00ca7f48a0ba072f83a1e4235c6b096f678f993c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Aleste (Japan) (Disk).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Aleste (Japan) (Disk).cht",
+      "git_blob_sha": "6bff7a1172287e6d8d47495132bfe8f934bb186e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Aleste (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Aleste (Japan).cht",
+      "git_blob_sha": "d9aa5ff697f127c10b05dbc70053739c438708f1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Aleste 2 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Aleste 2 (Japan).cht",
+      "git_blob_sha": "2e92e4d871fd777a3c65852866e80125ce98b1cb"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Aleste Gaiden.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Aleste Gaiden.cht",
+      "git_blob_sha": "a5ffb2c3268b999a88aec8e0e429737422d309c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Andorogynus.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Andorogynus.cht",
+      "git_blob_sha": "e41247443456308052be7da5e99e05f95f0d1225"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Arkanoid II - Revenge of Doh (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Arkanoid II - Revenge of Doh (Japan).cht",
+      "git_blob_sha": "967ebbe9f953a31c13790726cff2d7a1318c62fa"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/AshGuine - Densetsu no Seisenshi (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/AshGuine - Densetsu no Seisenshi (Japan).cht",
+      "git_blob_sha": "fcf974d8e201c8760a9b8547aad2132bd341ba94"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/AshGuine Story II - Kokuu no Gajou (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/AshGuine Story II - Kokuu no Gajou (Japan).cht",
+      "git_blob_sha": "4e5d264d8efc7e1d0c01a100d7a669a54f53c265"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/AshGuine Story III - Fukushuu no Honoo (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/AshGuine Story III - Fukushuu no Honoo (Japan).cht",
+      "git_blob_sha": "9a33e909f06e3629f3f91ed321494c6137c10a84"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Astro Monsters.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Astro Monsters.cht",
+      "git_blob_sha": "40a3cb3551813a28fa7489414cd03abb324988ca"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bacillus.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bacillus.cht",
+      "git_blob_sha": "0fd7cffb161853828c43f5ff727e05a1ae76bb34"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Ball Out Special.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Ball Out Special.cht",
+      "git_blob_sha": "955791af52c4f25c7243b641d441a74bc8493192"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bank Buster.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bank Buster.cht",
+      "git_blob_sha": "b3e4ffbbaf951da82c81c95e82869b516b67f0d1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Barunba.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Barunba.cht",
+      "git_blob_sha": "f24c25f677c50717d80428ddabf7162e9a19a7c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bastard.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bastard.cht",
+      "git_blob_sha": "7588ea0b41556455f9b57c7516c86a5810b02adf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Black Cyclon.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Black Cyclon.cht",
+      "git_blob_sha": "98a006102a4b0e85941d792442f905bfe6110328"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Black Jack Hentai.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Black Jack Hentai.cht",
+      "git_blob_sha": "b8317dcb60232cf9d6402286ef7aeb04274fac0f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Blade Lords.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Blade Lords.cht",
+      "git_blob_sha": "2e094ec55f6a4c62b39a26ac472c4cab8306dc3f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Blue Warrior.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Blue Warrior.cht",
+      "git_blob_sha": "0205d16ec87787f4344dd831138180981399cfb4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bomb Jack (Promo).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bomb Jack (Promo).cht",
+      "git_blob_sha": "22485b622150b0e115af370c3981cd7403f2696e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bomb Jack.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bomb Jack.cht",
+      "git_blob_sha": "d45217c1d6d7144ed6465e3ec28d2d24d27e0ca6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bombaman (Demo).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bombaman (Demo).cht",
+      "git_blob_sha": "b4e4098e440ded3a8632f0dc7bd0c5bffe122f14"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bombaman.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bombaman.cht",
+      "git_blob_sha": "5a6ea2745a3b635185f2b2d27c7108b3f2ad930d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bozo's Big Adventure.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bozo's Big Adventure.cht",
+      "git_blob_sha": "14001713141ef0c759184ac37e16652659b9d8c8"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Breaker.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Breaker.cht",
+      "git_blob_sha": "fc2e7e06e4abeb39ae8f07179356712f7a7f1751"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Bubble Bobble (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Bubble Bobble (Japan).cht",
+      "git_blob_sha": "ff86d855fc6637a7a0233363a8d92e69023371cd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Castle of Blackburn.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Castle of Blackburn.cht",
+      "git_blob_sha": "e26731ee7c3f2bf1d0572d85a4e0ed58ceb6624e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Chap-kun's Ball-Toss Game (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Chap-kun's Ball-Toss Game (MSX Magazine 2003).cht",
+      "git_blob_sha": "5ff347ddd31bed456c7e0b2f0dfae6ed7e1df6b0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Chopper II.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Chopper II.cht",
+      "git_blob_sha": "cb0d15aec3b3d21fdeb2574423185d070a5e924a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Chuka Taisen.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Chuka Taisen.cht",
+      "git_blob_sha": "0990a4aa667174f7ce2561efea53d0279dff824a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Contra (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Contra (Japan).cht",
+      "git_blob_sha": "27a9e4737d224553d68953a35c36aaa1aeb1377e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Cosmic Sheriff.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Cosmic Sheriff.cht",
+      "git_blob_sha": "2c4c6c3f7cdad8b43b204d73f95e83bd48b32c3e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Crimson (Japan) (Disk).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Crimson (Japan) (Disk).cht",
+      "git_blob_sha": "e75cf7c1db652a79caa059288c2a057236ebf572"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Crimson (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Crimson (Japan).cht",
+      "git_blob_sha": "edc5c004d760fcda54116292a9c5a93c63ca2896"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/D-Dash.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/D-Dash.cht",
+      "git_blob_sha": "2e70cfeb9a2a9bed395db4cc6ec28ac6bdfede87"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/D.A.S.S..cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/D.A.S.S..cht",
+      "git_blob_sha": "9332fbf4c95e647a1ed9c4d4a500d11afea5c572"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Daiva Story 5 - The Cup of Soma.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Daiva Story 5 - The Cup of Soma.cht",
+      "git_blob_sha": "abfaf00e529675389008d46e72719e7be971e9ec"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Darwin 4078 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Darwin 4078 (Japan).cht",
+      "git_blob_sha": "7d1cb617e92805708405d7118da356d05923270a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Deep Forest (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Deep Forest (Japan).cht",
+      "git_blob_sha": "5d3aa6bc4e27d542fbec99942f6e661e4c27c3ee"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Demon of the Dark Castle.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Demon of the Dark Castle.cht",
+      "git_blob_sha": "6b40c5634eb6cdf2ed069d29671265c5c7e293c6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dizzy (Promo 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dizzy (Promo 1).cht",
+      "git_blob_sha": "4cb4442334fe41ef2d65cd0f47b0685bc8519b19"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dizzy (Promo 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dizzy (Promo 2).cht",
+      "git_blob_sha": "451897d1859d8373592339bc876933529f8d5f65"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dizzy.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dizzy.cht",
+      "git_blob_sha": "9586ba5263b81a41aefdc51a1005807a6370b681"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dragon Buster (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dragon Buster (Japan).cht",
+      "git_blob_sha": "ef36749c661661cf6c516e2f245628551feb87e9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dragon Knight.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dragon Knight.cht",
+      "git_blob_sha": "6fb2b026d7ec84ce84fadf3fcbab8c3245016b81"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dragon Quest (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dragon Quest (Japan).cht",
+      "git_blob_sha": "26a32346000a123825c93c6c103bad6181b0851f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dragon Quest II (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dragon Quest II (Japan).cht",
+      "git_blob_sha": "c2e252773140c3b464ac3b7e43e09fb442b0481f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dragon Slayer IV - Drasle Family (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dragon Slayer IV - Drasle Family (Japan).cht",
+      "git_blob_sha": "73e73992c25cb665591d9d941b17357491496f13"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Dragon Slayer VI - The Legend of Heroes.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Dragon Slayer VI - The Legend of Heroes.cht",
+      "git_blob_sha": "997e1187fb42400606cb55591711b162b6c819a1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Druid (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Druid (Japan).cht",
+      "git_blob_sha": "a32d8bcc1a5f541d59b7b5192da8cf091a316f85"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Eggerland 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Eggerland 2.cht",
+      "git_blob_sha": "b1937a44fca7323d34b8134453fa3cfa93b8460c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Eidolon, The (Europe).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Eidolon, The (Europe).cht",
+      "git_blob_sha": "6b0e47910ae85906a5655a24f89ae77a1761fa2f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Eindeloos.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Eindeloos.cht",
+      "git_blob_sha": "8ef377164d56ec5f742eec7020440434a7592454"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Exterlien.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Exterlien.cht",
+      "git_blob_sha": "e9de897af22e70dc0a6f869d9c742f9c3162118c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Exterminator.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Exterminator.cht",
+      "git_blob_sha": "369ed8ea35db3dca7734ca5d0a70552760b44dcf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/F1 Douchuuki - F1 Travel Journal.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/F1 Douchuuki - F1 Travel Journal.cht",
+      "git_blob_sha": "47e14a6e7850a785dd17691102c4a28cfc643c8a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/F1-Spirit.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/F1-Spirit.cht",
+      "git_blob_sha": "d01bfda9a202bf12ecbc5057812c8cb992f24c52"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Famicle Parodic (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Famicle Parodic (Japan).cht",
+      "git_blob_sha": "3838908149405717ac666fd008ec6505075225e5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Famicle Parodic 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Famicle Parodic 2.cht",
+      "git_blob_sha": "7acf689c95f2ddecbf55de9c927667ecb69f42d6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Family Boxing.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Family Boxing.cht",
+      "git_blob_sha": "1c08443af71b4fcea91871da2f7fa114718d5308"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Fantasy Zone 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Fantasy Zone 2.cht",
+      "git_blob_sha": "194560a4c996dd6c86b10b714f0fca278b4f427b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Feedback.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Feedback.cht",
+      "git_blob_sha": "6f453e56ca0f688f595ecc7f13e671eeb7c0be71"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Final Fantasy.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Final Fantasy.cht",
+      "git_blob_sha": "9ace7b3aa91c0d6cff55a52e56a6e2ed8f680d9f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Firebird.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Firebird.cht",
+      "git_blob_sha": "92b21c15e0bebbad6eca2d30a7e8efb81cd97365"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Frantic.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Frantic.cht",
+      "git_blob_sha": "253b66c86173052eaea6b6d85c162871b4a1bb9c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Fray in Magical Adventure.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Fray in Magical Adventure.cht",
+      "git_blob_sha": "e8582a6caba564d75793447a5abedbc92648cde9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Ganbare Goemon! - Karakuri Douchuu (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Ganbare Goemon! - Karakuri Douchuu (Japan).cht",
+      "git_blob_sha": "e6e3bee913b423e8b1ecde964fa103c40e0b1d1d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Garbage Man (Promo).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Garbage Man (Promo).cht",
+      "git_blob_sha": "d83caf5e90691eef64bd3635b35a7f08034749d3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Garbage Man.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Garbage Man.cht",
+      "git_blob_sha": "1b05b20f3ce180b1386f8cf645e39a3cc0406c90"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Garyuu Ou (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Garyuu Ou (Japan).cht",
+      "git_blob_sha": "f46a0dd50a840c286b2ce97640f34b7a8dbd6ba6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Gekitotsu Pennant Race.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Gekitotsu Pennant Race.cht",
+      "git_blob_sha": "28b768a2ccce9893e54f5b8469090bb68c758a70"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Girly Block (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Girly Block (Japan).cht",
+      "git_blob_sha": "d269c0fe04a753daa7c64479ee3c8a2a948c6f2d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Golvellius 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Golvellius 2.cht",
+      "git_blob_sha": "cc6602c8e44b5a84804c700877600ea3b714a5f3"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Goody.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Goody.cht",
+      "git_blob_sha": "989556aa1b3d7a45be6f3796c88b11f988abcd58"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Gradius - Nemesis (SCC).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Gradius - Nemesis (SCC).cht",
+      "git_blob_sha": "1252d10a197321426db4084e7b3dbec9c0ac9e2a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Gradius 3 - Nemesis 3.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Gradius 3 - Nemesis 3.cht",
+      "git_blob_sha": "a99cb44d5b8b8afb11433f555b68c620b1760a84"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Gryzor.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Gryzor.cht",
+      "git_blob_sha": "9e2df0950d5fa414954cac53e3ce97d7d7067ea5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Guru Logic.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Guru Logic.cht",
+      "git_blob_sha": "18a9d933ba489570ed8ff330123f9632293c08d5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Herzog.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Herzog.cht",
+      "git_blob_sha": "bcbdd49acfc8720f4eddb7f082e0c299694a5075"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Higemaru Makai Shima - Nanatsu no Shima Daibouken (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Higemaru Makai Shima - Nanatsu no Shima Daibouken (Japan).cht",
+      "git_blob_sha": "75479d96eddb562f94b2403cb806aacd9a9f6a92"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Hole in One Special (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Hole in One Special (Japan).cht",
+      "git_blob_sha": "6c41da0bcab3a1dc2922e61726098a1318cf2a04"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Hydefos.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Hydefos.cht",
+      "git_blob_sha": "1d55c8d0ba37b67e78477d166e3ce1843853c56f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Hydlide (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Hydlide (Japan).cht",
+      "git_blob_sha": "388e1c88dea2cb4880961462c907e82f5c44058f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Ikari Warriors.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Ikari Warriors.cht",
+      "git_blob_sha": "22b69c4a233c58c8996ddadb7266f1d1f3d726c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Illusion City.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Illusion City.cht",
+      "git_blob_sha": "b96a6e237f306a73cf5970a20707e1ecc485bc21"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Inindo - Way of the Ninja.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Inindo - Way of the Ninja.cht",
+      "git_blob_sha": "cabd73d0945cf3e2c568b7fff5ffb3c50629a7c5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Kiki Kaikai (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Kiki Kaikai (Japan).cht",
+      "git_blob_sha": "dce6a104f101e8cb6cb77a6e1bd3db3baaf4e702"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/King Kong 2.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/King Kong 2.cht",
+      "git_blob_sha": "72c37a88cf5578a01ee1eeb49f6d8bdaa5205c12"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Large Hill Jump (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Large Hill Jump (MSX Magazine 2003).cht",
+      "git_blob_sha": "eaf293c54b6ed552c63072829f6a28454ad47507"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Laydock 2 - Last Attack.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Laydock 2 - Last Attack.cht",
+      "git_blob_sha": "2f66c74f0bb126fdcb6ac82b0af66847dcd040e5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Laydock.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Laydock.cht",
+      "git_blob_sha": "645c8cbffa34cbd2db4160f4e6782e95076a0411"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Leather Skirts.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Leather Skirts.cht",
+      "git_blob_sha": "420ae90e68d8cfe3d210f7ff29bb7ca23aea145d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Legendly Nine Gems.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Legendly Nine Gems.cht",
+      "git_blob_sha": "950d4511fa788d083cd18064f1c84ea898f0068f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Lick and Mick Adventure.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Lick and Mick Adventure.cht",
+      "git_blob_sha": "6e514a21b2596d9933b039f2b0c4bac462a5af40"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Life Game (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Life Game (MSX Magazine 2003).cht",
+      "git_blob_sha": "22a94c7375701877768498c2b97e1d8c8549fc53"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Lupin Sansei - Babylon no Ougon Densetsu (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Lupin Sansei - Babylon no Ougon Densetsu (Japan).cht",
+      "git_blob_sha": "0a8a7b6563435385868f58433fb0eeef82cc2f26"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Lupin Sansei - Cagliostro no Shiro (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Lupin Sansei - Cagliostro no Shiro (Japan).cht",
+      "git_blob_sha": "d2658414066c293d5b700d8f39efa8de74eb1ac5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/MKID - Action Promo (Egypt Stage).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/MKID - Action Promo (Egypt Stage).cht",
+      "git_blob_sha": "e1aeb73714f6ef5f2617b7fd89942a9e7a16dfa4"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/MKID - Puzzle Promo (Egypt Stage).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/MKID - Puzzle Promo (Egypt Stage).cht",
+      "git_blob_sha": "063761883207772dbe16a8a468f27a13c838f81a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Mad Rider (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Mad Rider (Japan).cht",
+      "git_blob_sha": "12a6af530ba00b365e28f062e29a8ffb3de6a216"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Madoushi Lulba - Episode I.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Madoushi Lulba - Episode I.cht",
+      "git_blob_sha": "d439e7bd27e90641abcad55a9bfbfdb3f975f27d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Magnar.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Magnar.cht",
+      "git_blob_sha": "aec2dfee840165bf0ffec090f2e2052f14f688ff"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Malaya no Hibou (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Malaya no Hibou (Japan).cht",
+      "git_blob_sha": "5d80443eb3e4e14fe0422f06a5555b3d3b48a1b6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Metal Gear (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Metal Gear (Japan).cht",
+      "git_blob_sha": "161439bb97fed9b26def473fa4bccc13f0e4fd55"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Metal Gear 2 - Solid Snake (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Metal Gear 2 - Solid Snake (Japan).cht",
+      "git_blob_sha": "2976b41a94070dbf8a12af0982e6827cbbcfd43f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Mirai (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Mirai (Japan).cht",
+      "git_blob_sha": "f767d1a48f1030a013495b82c2d582fcc51ddc0e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Modern Air Combat (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Modern Air Combat (MSX Magazine 2003).cht",
+      "git_blob_sha": "bb64cfa3517c629da3df09037d8339660a4d2784"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Mon Mon Monster.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Mon Mon Monster.cht",
+      "git_blob_sha": "11b6dbb92474c8986cddd6eddb3178f9a4bda86d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Mouse Games.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Mouse Games.cht",
+      "git_blob_sha": "5f60b003ec6d01df9518c2b8bc9341ec5ba10b8a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Mr. Ghost.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Mr. Ghost.cht",
+      "git_blob_sha": "f7b6fb64d3acf5e23ea4a8139c5c4bfb4df37486"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Nosh.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Nosh.cht",
+      "git_blob_sha": "6afa7c588af76506991ca4a346631adfea1f6dc0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Nyancle Racing.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Nyancle Racing.cht",
+      "git_blob_sha": "834156c8aad27cf7d427a1d931e01aaa6c7061a0"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Out Run (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Out Run (Japan).cht",
+      "git_blob_sha": "01220e0b4994e36f92809a48734b1108a5ed5bb1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Pac-Mania (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Pac-Mania (Japan).cht",
+      "git_blob_sha": "1a480f5e0519f1bf7771797af826797d01257513"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Pachi Pro Densetsu (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Pachi Pro Densetsu (Japan).cht",
+      "git_blob_sha": "d6c73cee2968588edcbab7c4912b757a99f0ef88"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Panic Shoot.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Panic Shoot.cht",
+      "git_blob_sha": "3d26c38dab1ab8ed3c25bf18ffca4859e4c35949"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Peach Up #1 - Quiz.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Peach Up #1 - Quiz.cht",
+      "git_blob_sha": "296d92e77f5111c6234d39b0b9f3f20cbdc8ca59"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Penguin-kun Wars 2 (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Penguin-kun Wars 2 (Japan).cht",
+      "git_blob_sha": "dd99a7b2ea852960b8eb0ac5774b8b6c3c9fce9e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Point Crisis.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Point Crisis.cht",
+      "git_blob_sha": "eb0fb55dfd10f30f246513b9575f0e5d20377738"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Predator (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Predator (Japan).cht",
+      "git_blob_sha": "7c845f363739437ce4a368ce42ffda67f9b15784"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Princess Maker.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Princess Maker.cht",
+      "git_blob_sha": "17f01a8a3cbb796f6d5f5fdd965074190a69feb7"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Project A2 - Shijousaidai no Hyouteki (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Project A2 - Shijousaidai no Hyouteki (Japan).cht",
+      "git_blob_sha": "49a7cf8d625da5152d475c6da61baf58791c0081"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Psycho World.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Psycho World.cht",
+      "git_blob_sha": "7dee4c8a834e3194be05bdfb56cf8738fb47044d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Pumpkin Adventure III - Hunt for the Unknown.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Pumpkin Adventure III - Hunt for the Unknown.cht",
+      "git_blob_sha": "3e996a9e0d3a516af97d895f421c195bae09869e"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Quinpl (Japan) (Disk).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Quinpl (Japan) (Disk).cht",
+      "git_blob_sha": "787c1a79b03cf8d33e4a9e2fe17d70aff33d01ad"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Quinpl (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Quinpl (Japan).cht",
+      "git_blob_sha": "f9436b594368cb0da411f0de30eb84b5a6a4fecd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Rastan Saga (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Rastan Saga (Japan).cht",
+      "git_blob_sha": "2b912479d546b3497f93fafc030cd4a4801379db"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Replicart (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Replicart (Japan).cht",
+      "git_blob_sha": "c3626aa999a25871b4266a6c807b93779532ad43"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Rescue the Planet (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Rescue the Planet (MSX Magazine 2003).cht",
+      "git_blob_sha": "32b9dca4080cea4abc41cd24320ca0fbf5719f2a"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Return of Jelda (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Return of Jelda (Japan).cht",
+      "git_blob_sha": "4f1579a67243e24fd1e6c4855189fcd46b4ab665"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Rune Master.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Rune Master.cht",
+      "git_blob_sha": "1a483e89b45b4ce2d30c7a984fd15c704a32fbb5"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Rune Worth.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Rune Worth.cht",
+      "git_blob_sha": "5d4f1967ed6cb4ffe00233dd809ee11342e71ac6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/SD Snatcher.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/SD Snatcher.cht",
+      "git_blob_sha": "896ce8bf7da0c2ec1109a3e558ba03f2d9ce272c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Sa-Zi-Ri.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Sa-Zi-Ri.cht",
+      "git_blob_sha": "8af2d3d3f2bcda51682e5bd65ebd6407866eddda"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Scramble Formation (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Scramble Formation (Japan).cht",
+      "git_blob_sha": "1f6b440d8fa4b55729656877ee2add917a7187cc"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Seikima II Special.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Seikima II Special.cht",
+      "git_blob_sha": "8c70301b093b9ee8ab305226ad383f9def3fe4ac"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Shoot the Flying Windows.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Shoot the Flying Windows.cht",
+      "git_blob_sha": "694edba015af8737058407668283343c9d24c1e2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Silviana.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Silviana.cht",
+      "git_blob_sha": "b793d59abc725755a033bbaa6a57cefe0ee2faac"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Sonyc.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Sonyc.cht",
+      "git_blob_sha": "2e8dca439fdc9d4f3d663ebaa2f45c434aa0d065"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Space Manbow (Japan) (Wii U Virtual Console).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Space Manbow (Japan) (Wii U Virtual Console).cht",
+      "git_blob_sha": "3e5d6adfee7272f2384585050de41142ddacb9e9"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Strategic Mars (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Strategic Mars (Japan).cht",
+      "git_blob_sha": "673c0fdc4208d516b61836952768fef41e3ed970"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Street Neo Fighter II - The World Warrior.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Street Neo Fighter II - The World Warrior.cht",
+      "git_blob_sha": "55a3d7754df9f864394020fec42f75962f7d040f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Super Cooks.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Super Cooks.cht",
+      "git_blob_sha": "206df03e4e7d9d37a4d74cfc2a63a8e78635e73c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Super Rambo Special (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Super Rambo Special (Japan).cht",
+      "git_blob_sha": "318ae9f15de7d907094bedb3d7cde21d77f3a3a6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Super Runner (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Super Runner (Japan).cht",
+      "git_blob_sha": "37446db37df7a2a1b14ce906a4d3005761b55178"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Super Tritorn (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Super Tritorn (Japan).cht",
+      "git_blob_sha": "a8b6929d344bae84cd949e7537ed6edeb8d8af44"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/T.N.T..cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/T.N.T..cht",
+      "git_blob_sha": "045597f1ac41b77fbe2f53ca345146d53c005447"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Tanuki Wars (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Tanuki Wars (MSX Magazine 2003).cht",
+      "git_blob_sha": "6422275e32a8952ccf2531fe12e02e7830ebba9f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Teenage Mutant Hero Turtles.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Teenage Mutant Hero Turtles.cht",
+      "git_blob_sha": "ad4727c6d6d5cafdfc406bd2398c756f7a37e539"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Tengoku Yoitoko (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Tengoku Yoitoko (Japan).cht",
+      "git_blob_sha": "609bfabb6d9bd62397d1ae3404b02a71f7be1d4b"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Tennis (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Tennis (MSX Magazine 2003).cht",
+      "git_blob_sha": "f9641c4f0419d2edd4ab04d2eae8b3f5640dc028"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Testament.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Testament.cht",
+      "git_blob_sha": "aabc95bdaa4a27b8b88cd096208f3d2df7b610eb"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Tetris (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Tetris (Japan).cht",
+      "git_blob_sha": "2bad99462bff5d6f8bba670c7ff0111f93f95a72"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/The Adventure of Randar III.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/The Adventure of Randar III.cht",
+      "git_blob_sha": "eaee6f7742513cdc309540e40c0a6b65a64936ac"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Treasure of Usas, The (Japan, Europe) (En).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Treasure of Usas, The (Japan, Europe) (En).cht",
+      "git_blob_sha": "947c37f34799b7d94c74d300c62959eddc050dbf"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Turtle Mania - Demo.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Turtle Mania - Demo.cht",
+      "git_blob_sha": "c7ae2f5294b75da27cd51e7e8887e5300abd9c40"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Ultra Beigoma (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Ultra Beigoma (MSX Magazine 2003).cht",
+      "git_blob_sha": "3f417a56ba8554b1a87cde2bb9653a55fe329eda"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Undeadline.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Undeadline.cht",
+      "git_blob_sha": "605413d18767db7a75dd6912c1e768c1c6826689"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Uoo-Kun's Kakurenbo Game (MSX Magazine 2003).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Uoo-Kun's Kakurenbo Game (MSX Magazine 2003).cht",
+      "git_blob_sha": "24b8805e34efc8bf24cfa05e8fcbafb868f41b9f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/VSCREEN Platform Game (Demo).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/VSCREEN Platform Game (Demo).cht",
+      "git_blob_sha": "d8dbae353c4fab2071af752699ff88d575829e26"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Valis - The Fantasm Soldier II.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Valis - The Fantasm Soldier II.cht",
+      "git_blob_sha": "610b112276bd728ec8a7c84b0fcddfd25f06d7dd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Vampire Killer (Japan, Europe) (En).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Vampire Killer (Japan, Europe) (En).cht",
+      "git_blob_sha": "1c5224b0f68ccfc2966927782cd361ecb4718900"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/War of the Dead.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/War of the Dead.cht",
+      "git_blob_sha": "2379dc0ac02c09e8e4d892c54d93e5889df8f710"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Wings of Arguis.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Wings of Arguis.cht",
+      "git_blob_sha": "3d74c7804e0a93d781ca4f3dc0b396f91dbd21c1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Woody Poco (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Woody Poco (Japan).cht",
+      "git_blob_sha": "2183c89d7a641d8136d3e3bb6d575773422f122d"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/XYZ - Zukkoke Yajikita Onmitsudoutyuu.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/XYZ - Zukkoke Yajikita Onmitsudoutyuu.cht",
+      "git_blob_sha": "cfddf763927003e3dc6b20d96d77edca570d0344"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/XZR - Idols of Apostate.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/XZR - Idols of Apostate.cht",
+      "git_blob_sha": "ab352b641b9a42b1939bde095bc7a26e027c9a42"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/XZR II - Final Chapter.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/XZR II - Final Chapter.cht",
+      "git_blob_sha": "6ff88d0c1c54ed808d036211548943d40f8d8386"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Xak - The Art of Visual Stage.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Xak - The Art of Visual Stage.cht",
+      "git_blob_sha": "a5b85b2ecddd1353d0df046df0b7cb511117203f"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Xak II - Rising of the Red Moon.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Xak II - Rising of the Red Moon.cht",
+      "git_blob_sha": "a29cc8f8da2cf1ce53da32d01be650c85c0eb5d2"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Xevious - Fardraut Saga (Demo 1).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Xevious - Fardraut Saga (Demo 1).cht",
+      "git_blob_sha": "ad61d6cbcf5ad41431721a9aaa784cd951a5f345"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Xevious - Fardraut Saga (Demo 2).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Xevious - Fardraut Saga (Demo 2).cht",
+      "git_blob_sha": "4ecfde4c1ac645cac62bcb129345ecb66a9dc467"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Xevious - Fardraut Saga (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Xevious - Fardraut Saga (Japan).cht",
+      "git_blob_sha": "8e9522bacb8a9d0340d383892e7fa9e14fa6b849"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Yaksa (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Yaksa (Japan).cht",
+      "git_blob_sha": "b116d6b711dda69716b1cf65e4b0361de45eeaaa"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Youma Kourin - Ninja Dexter.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Youma Kourin - Ninja Dexter.cht",
+      "git_blob_sha": "db13be71993ee33336b08b7d1a3eac341a09c136"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Ys I - Ancient Ys Vanished.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Ys I - Ancient Ys Vanished.cht",
+      "git_blob_sha": "da4adf6108ff7e77eec3ff72a9677e7ffd4bb8e1"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Ys II - Ancient Ys Vanished - The Final Chapter.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Ys II - Ancient Ys Vanished - The Final Chapter.cht",
+      "git_blob_sha": "51930c829d2ddb3be4b0f745d61c9c82ad1855ac"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Ys III - Wanderers from Ys.cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Ys III - Wanderers from Ys.cht",
+      "git_blob_sha": "951e666750d1439cd738d43ae9421bd115d61c1c"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Zanac Ex (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Zanac Ex (Japan).cht",
+      "git_blob_sha": "be1c809f43762d333bcabaad35b35685cb4f14cd"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Zombie Hunter (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Zombie Hunter (Japan).cht",
+      "git_blob_sha": "0c9c919a23776b1fad9ff77ed07d2dca287493b6"
+    },
+    {
+      "upstream_path": "cht/Microsoft - MSX2/Zukkoke Yajikita Onmitsu Douchuu (Japan).cht",
+      "archive_path": "archive/libretro/cht/Microsoft - MSX2/Zukkoke Yajikita Onmitsu Douchuu (Japan).cht",
+      "git_blob_sha": "43567f7482420f4f8b80fe02f2004567354ceaa4"
     },
     {
       "upstream_path": "cht/NEC - PC Engine - TurboGrafx 16/1943 Kai (Japan).cht",
