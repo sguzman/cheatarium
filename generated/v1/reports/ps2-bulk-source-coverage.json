@@ -1,0 +1,42 @@
+{
+  "caveats": [
+    "Raw source code-line counts and executable cheat effect counts are different units.",
+    "The PNACH conversion derives from already archived CheatDevice raw cheats, so code occurrence growth is not code-design novelty.",
+    "Textual title matching cannot verify distinct releases, game regions, serial/CRC hashes or runnable codes.",
+    "Mastercodes enable other codes and are not counted as independent gameplay effects."
+  ],
+  "headerless_files_named_from_source_filename": {
+    "MASTERCODES.zip": 0,
+    "NTSC_CHEATS.zip": 13,
+    "PAL_CHEATS.zip": 11
+  },
+  "interpretation": "source_name_candidates_only_not_verified_unique_games_or_execution",
+  "matching": "simple casefolded letter/digit comparison; optional terminal region-label relaxation; heuristic and collision-prone",
+  "schema_version": 1,
+  "source_name_comparison": {
+    "pnach_distinct_source_game_labels": 473,
+    "pnach_labels_matching_root670_strict": 473,
+    "pnach_labels_unmatched_to_root670_strict": 0,
+    "root670_distinct_normalized_source_labels": 1483,
+    "zip_labels_matching_root670_strict": 1462,
+    "zip_labels_unmatched_to_root670_after_region_relaxation": 950,
+    "zip_labels_unmatched_to_root670_strict": 1743,
+    "zip_ntsc_distinct_normalized_source_labels": 1879,
+    "zip_ntsc_pal_distinct_normalized_source_labels": 3205,
+    "zip_pal_distinct_normalized_source_labels": 1347
+  },
+  "source_original_game_sections": {
+    "mastercode_source_files": 4013,
+    "ntsc_cheat_source_files": 1880,
+    "pal_cheat_source_files": 1349,
+    "pnach_source_files": 473,
+    "root670": 1483,
+    "widescreen_source_files": 1,
+    "widescreen_source_game_sections": 1789
+  },
+  "source_revisions": {
+    "emucorex-cheatdevice-pnach": "e1803c3bab8352d3e032194efeca03aaa489b8a5",
+    "israpps-cheatdevice-ps2-extras": "77b453ad41dace65789ca4c152c94b19f7f55934",
+    "root670-cheatdevice-ps2": "7d9c525a3a8377ff0b8fe782ea692ed0f245b92c"
+  }
+}

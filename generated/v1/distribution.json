@@ -3,10 +3,10 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 58,
-  "source_files": 39387,
-  "game_candidate_groups": 32826,
+  "source_files": 48891,
+  "game_candidate_groups": 42330,
   "repeated_raw_code_groups": 395,
-  "lexical_effect_tag_matches": 97724,
+  "lexical_effect_tag_matches": 118290,
   "reviewed_snes_revision_alternatives": 27,
   "reviewed_snes_source_blobs_audited": 1,
   "reviewed_snes_source_ordinals_audited": 27,
@@ -68,8 +68,8 @@
     },
     {
       "path": "catalog.json",
-      "sha256": "7dd7179e3ddcc910c8d72e3a30eef8f39248fca811b65e62c6156795bb060cb7",
-      "size_bytes": 27596
+      "sha256": "4a2a3faeede71ca6a696a757f3f2fac5d4d57fe2ae7e8f78c7439d66f5803727",
+      "size_bytes": 27599
     },
     {
       "path": "chailove.json.gz",
@@ -273,8 +273,8 @@
     },
     {
       "path": "games/ps2.json.gz",
-      "sha256": "31fb4a8b5b76b737b29f4e3559435df6fb62779ccd496eb9d6df3eab02a8605d",
-      "size_bytes": 37958
+      "sha256": "3774aade3f3948445759d04013210616a76440cb7366bcae102fb2bbd46d0eec",
+      "size_bytes": 295529
     },
     {
       "path": "games/ps3.json.gz",
@@ -498,8 +498,8 @@
     },
     {
       "path": "ps2.json.gz",
-      "sha256": "89555661e3c6fb41176eb00ce45984fcc7ea2a618602e7fa9abd8c513e9dcad6",
-      "size_bytes": 2084620
+      "sha256": "d1adffa8142b13dbef1e874a4de88bf5cc589650f8098254f095f30b9dce708c",
+      "size_bytes": 6642416
     },
     {
       "path": "ps3.json.gz",
@@ -1033,8 +1033,8 @@
     },
     {
       "path": "tags/ps2.json.gz",
-      "sha256": "59fef00d40231bbf31e909c1721232c456d7c05245ae1a14afbd2254d95e3393",
-      "size_bytes": 52328
+      "sha256": "c08986890a51b7428c27dd0e343c126788446809949f955b39828c21ba440c60",
+      "size_bytes": 251607
     },
     {
       "path": "tags/ps3.json.gz",

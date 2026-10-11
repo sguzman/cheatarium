@@ -1177,8 +1177,13 @@ fn run() -> Result<()> {
                     if original.starts_with("files/root670-cheatdevice/")
                         && original.ends_with(".pnach") =>
                 {
-                    ("ps2", "pcsx2-pnach",
-                     original.trim_start_matches("files/root670-cheatdevice/").to_owned())
+                    (
+                        "ps2",
+                        "pcsx2-pnach",
+                        original
+                            .trim_start_matches("files/root670-cheatdevice/")
+                            .to_owned(),
+                    )
                 }
                 "rincheat-vita"
                     if original.starts_with("cheats_db/") && original.ends_with(".txt") =>
@@ -1373,8 +1378,10 @@ fn run() -> Result<()> {
                 goldhen_titles.get(original).cloned()
             } else if manifest_id == "emucorex-cheatdevice-pnach" {
                 decoded.lines().find_map(|line| {
-                    line.strip_prefix("gametitle=").map(str::trim)
-                        .filter(|label| !label.is_empty()).map(str::to_owned)
+                    line.strip_prefix("gametitle=")
+                        .map(str::trim)
+                        .filter(|label| !label.is_empty())
+                        .map(str::to_owned)
                 })
             } else {
                 None
@@ -1484,16 +1491,17 @@ fn run() -> Result<()> {
         }
     }
 
-
     // Import all source-native game sections from the four pinned ZIP packs.
     // Original ZIP blobs and exact extracted member bytes remain separately
     // archived; game names, mastercodes, region hints and revisions are source
     // claims, never verified ROM matches or activation authorizations.
-    if wanted.as_ref().is_none_or(|platforms| platforms.contains("ps2")) {
+    if wanted
+        .as_ref()
+        .is_none_or(|platforms| platforms.contains("ps2"))
+    {
         let id = "israpps-cheatdevice-ps2-extras";
-        let manifest: SourceManifest = serde_json::from_slice(&fs::read(
-            root.join(format!("sources/{id}.json"))
-        )?)?;
+        let manifest: SourceManifest =
+            serde_json::from_slice(&fs::read(root.join(format!("sources/{id}.json")))?)?;
         if manifest.id != id {
             return Err("Mismatched PS2 ZIP source manifest".into());
         }
@@ -1501,16 +1509,20 @@ fn run() -> Result<()> {
         for item in manifest.files {
             let original = &item.upstream_path;
             let (format, region) = if original.starts_with("zip-members/NTSC_CHEATS.zip/")
-                && original.to_ascii_lowercase().ends_with(".cht") {
+                && original.to_ascii_lowercase().ends_with(".cht")
+            {
                 ("ps2-zip-native-ntsc", Some("NTSC".to_owned()))
             } else if original.starts_with("zip-members/PAL_CHEATS.zip/")
-                && original.to_ascii_lowercase().ends_with(".cht") {
+                && original.to_ascii_lowercase().ends_with(".cht")
+            {
                 ("ps2-zip-native-pal", Some("PAL".to_owned()))
             } else if original.starts_with("zip-members/MASTERCODES.zip/")
-                && original.to_ascii_lowercase().ends_with(".txt") {
+                && original.to_ascii_lowercase().ends_with(".txt")
+            {
                 ("ps2-zip-mastercode", None)
             } else if original.starts_with("zip-members/WIDESCREEN.zip/")
-                && original.to_ascii_lowercase().ends_with(".txt") {
+                && original.to_ascii_lowercase().ends_with(".txt")
+            {
                 ("ps2-zip-widescreen", None)
             } else {
                 continue;
@@ -1562,11 +1574,17 @@ fn run() -> Result<()> {
                         git_blob_sha: item.git_blob_sha.clone(),
                     },
                 };
-                by_platform.entry("ps2".to_owned()).or_default().push(record);
+                by_platform
+                    .entry("ps2".to_owned())
+                    .or_default()
+                    .push(record);
             }
         }
         if count_sources != 7243 {
-            return Err(format!("Pinned CheatDevice ZIP index source count mismatch: {count_sources}").into());
+            return Err(format!(
+                "Pinned CheatDevice ZIP index source count mismatch: {count_sources}"
+            )
+            .into());
         }
     }
 
