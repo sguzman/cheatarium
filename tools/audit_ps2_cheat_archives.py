@@ -44,6 +44,13 @@ def main():
                         "top_folders":top.most_common(12)}
                 reports.append(report)
                 print(json.dumps(report,ensure_ascii=False))
+                for sample in entries[:2]:
+                    if sample.filename.lower().endswith((".cht",".txt")):
+                        raw=archive.read(sample)
+                        print("FORMAT SAMPLE",json.dumps({"archive":filename,
+                            "member":sample.filename,"bytes":len(raw),
+                            "first_lines":raw.decode("utf-8","replace").splitlines()[:26]},
+                            ensure_ascii=False))
         print("AUDIT TOTAL:",json.dumps({"archives":len(ZIPS),
              "members":sum(x["entries"] for x in reports),
              "uncompressed_bytes":sum(x["uncompressed_bytes"] for x in reports)}))
