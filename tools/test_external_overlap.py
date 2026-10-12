@@ -12,11 +12,11 @@ class TestExternalOverlap(unittest.TestCase):
 
     def test_fixed_pinned_inventory(self):
         doc = self.data
-        self.assertEqual(doc["reference_files"], 42205)
-        self.assertEqual(doc["source_catalogs"], 24)
+        self.assertEqual(doc["reference_files"], 42473)
+        self.assertEqual(doc["source_catalogs"], 25)
         self.assertEqual(doc["external_platforms"], 12)
         self.assertGreater(doc["distinct_git_blobs"], 26638)
-        self.assertEqual(doc["repeated_blob_excess_occurrences"], 42205 - doc["distinct_git_blobs"])
+        self.assertEqual(doc["repeated_blob_excess_occurrences"], 42473 - doc["distinct_git_blobs"])
         self.assertGreaterEqual(doc["references_in_repeated_blob_groups"], 9076)
         self.assertGreaterEqual(doc["cross_source_shared_blob_groups"], 2759)
         self.assertGreaterEqual(doc["cross_source_shared_references"], 8129)
@@ -26,8 +26,8 @@ class TestExternalOverlap(unittest.TestCase):
 
     def test_platform_and_source_counts_reconcile(self):
         doc = self.data
-        self.assertEqual(sum(x["reference_files"] for x in doc["sources"]), 42205)
-        self.assertEqual(sum(x["reference_files"] for x in doc["platforms"]), 42205)
+        self.assertEqual(sum(x["reference_files"] for x in doc["sources"]), 42473)
+        self.assertEqual(sum(x["reference_files"] for x in doc["platforms"]), 42473)
         hamlet = next(x for x in doc["sources"] if x["id"] == "hamlet-switch-cheatdb")
         self.assertEqual((hamlet["reference_files"], hamlet["distinct_git_blobs"]), (5278, 3046))
         sthetix = next(x for x in doc["sources"] if x["id"] == "sthetix-switch-mirror")

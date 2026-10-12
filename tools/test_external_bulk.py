@@ -31,11 +31,12 @@ class TestExternalBulk(unittest.TestCase):
             "daowace-pcsx2-consolidated": 5483,
             "xs1l3n7x-pcsx2": 579,
             "ps2-widescreen-staging": 3632,
+            "crashgg-ps1-chtdb-delta": 268,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
-        self.assertEqual(indexes[1]["file_counts"], {"patch": 501})
+        self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 42205)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 42473)
 
     def test_widescreen_staging_is_link_only_and_patch_only(self):
         source = next(x for x in load(__import__("external_bulk").ROOT)
@@ -53,6 +54,19 @@ class TestExternalBulk(unittest.TestCase):
         self.assertEqual(found[0]["git_blob_sha"], "8e9f2a29fdec4482c17b9c50e51ba95337a93e3a")
         self.assertTrue(found[0]["upstream_url"].startswith(
             "https://github.com/PS2-Widescreen/pnach-DB/blob/91902dd63"))
+
+    def test_ps1_fork_tracks_only_byte_distinct_delta(self):
+        indexes = load(__import__("external_bulk").ROOT)
+        parent = next(x for x in indexes if x["id"] == "duckstation-chtdb")
+        fork = next(x for x in indexes if x["id"] == "crashgg-ps1-chtdb-delta")
+        known = {sha for _, sha, _ in parent["files"]}
+        self.assertEqual(len(fork["files"]), 268)
+        self.assertEqual(fork["file_counts"], {"cheat": 263, "patch": 5})
+        self.assertTrue(all(sha not in known for _, sha, _ in fork["files"]))
+        result = lookup([fork], "SCES-00242", "ps1", 4)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["kind"], "cheat")
+        self.assertEqual(result[0]["redistribution"], "link_only_rights_review")
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)

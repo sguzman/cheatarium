@@ -21,6 +21,12 @@ SOURCES = {
         "platform": "ps1", "expected": {"cheat": 4497, "patch": 138},
         "rights_note": "The upstream LICENSE explicitly reserves ownership of cheats and patches to original authors; only processing scripts receive its MIT grant. File paths, hashes and byte sizes are indexed here, not code or patch bodies.",
     },
+    "crashgg-ps1-chtdb-delta": {
+        "repository": "crashGG/ps1.chtdb",
+        "commit": "a25a878aac35b3c4c4c9aab43ec266b900259b44",
+        "platform": "ps1", "expected": {"cheat": 263, "patch": 5},
+        "rights_note": "Pinned derivative DuckStation PS1 database: 4,485 original .cht file occurrences, of which 4,217 exact Git blobs are already indexed under duckstation-chtdb; retain only 268 different-byte paths (263 cheats and 5 patches). The upstream LICENSE expressly reserves cheat and patch copyright to original authors and grants MIT only for processing scripts. These different bytes can be older/modified versions of the SAME game and are not new code effects, verified builds or redistributable source contents.",
+    },
     "xenia-canary-game-patches": {
         "repository": "xenia-canary/game-patches",
         "commit": "106bb0a40be27b5a2444162562975e4885e1ce74",
@@ -169,6 +175,11 @@ def classify(source, path):
             return "cheat"
         if re.fullmatch(r"patches/[^/]+\.cht", path):
             return "patch"
+    if source == "crashgg-ps1-chtdb-delta":
+        if re.fullmatch(r"cheats/[^/]+\.cht", path):
+            return "cheat"
+        if re.fullmatch(r"patches/[^/]+\.cht", path):
+            return "patch"
     if source == "xenia-canary-game-patches" and re.fullmatch(r"patches/[^/]+\.patch\.toml", path):
         return "patch"
     if source == "pcsx2-official-patches" and re.fullmatch(r"patches/[^/]+\.pnach", path):
@@ -235,6 +246,17 @@ def make_index(source, tree):
          if item.get("type") == "blob" and classify(source, item.get("path", ""))],
         key=lambda row: row[0],
     )
+    if source == "crashgg-ps1-chtdb-delta":
+        # This is an exact-byte delta of another pinned external collection:
+        # do not publish thousands of unchanged mirror paths as new leads.
+        parent = json.loads((ROOT / FOLDER / "duckstation-chtdb.json").read_text("utf-8"))
+        validate("duckstation-chtdb", parent)
+        known = {sha for _, sha, _ in parent["files"]}
+        if len(rows) != 4485:
+            raise ValueError("Pinned derivative PS1 tree no longer has 4,485 native files")
+        rows = [r for r in rows if r[1] not in known]
+        if len(rows) != 268 or count_types(source, rows) != {"cheat": 263, "patch": 5}:
+            raise ValueError("Pinned PS1 delta no longer contains 268 original byte variants")
     return {
         "schema_version": 1, "id": source,
         "repository": "https://github.com/" + spec["repository"],

@@ -147,6 +147,23 @@
         }
       ],
       "recommended_clearance": "Trace the 3,632 staged PCSX2 widescreen PNACH patch authors and their permission terms; identify whether source is redundant with released PCSX2 patch packages before considering file-level preservation."
+    },
+    {
+      "source_id": "crashgg-ps1-chtdb-delta",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "explicit_original_author_rights_reservation",
+      "root_license_paths_observed": [
+        "LICENSE"
+      ],
+      "root_license_scope_assessment": "processing_scripts_mit_only",
+      "evidence": [
+        {
+          "upstream_path": "LICENSE",
+          "git_blob_sha": "9a7eab2dd2663a82dce1c0857501e8b1671792d0",
+          "evidence_type": "explicit_cheat_author_copyright_reservation"
+        }
+      ],
+      "recommended_clearance": "Identify separately authored PS1 cheat/patch provenance and secure individual reuse terms for the 268 different-byte variants; a derived DuckStation database's MIT grant applies only to processing scripts."
     }
   ]
 }
