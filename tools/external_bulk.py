@@ -287,8 +287,8 @@ def classify(source, path):
                 and segments[0] == "cht" and segments[1] in folders
                 and segments[2].endswith(".cht")):
             return "cheat"
-        if (origin == "smoker1-retroarch-174" and len(segments) == 2
-                and segments[0] in folders and segments[1].endswith(".cht")):
+        if (origin == "smoker1-retroarch-174" and len(segments) >= 2
+                and segments[0] in folders and path.endswith(".cht")):
             return "cheat"
         return None
     if source == "duckstation-chtdb":
