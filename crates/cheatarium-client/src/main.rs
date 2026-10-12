@@ -30,6 +30,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut offset = 0usize;
     let mut args = env::args().skip(1);
     let mode = match args.next().as_deref() {
+        Some("external") => "external",
         Some("search") => "search",
         Some("source") => "source",
         Some("games") => "games",
@@ -47,7 +48,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <discover|platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--region-hint USA] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <external|discover|platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--region-hint USA] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
@@ -97,6 +98,29 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "--json" => json = true,
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if mode == "external" {
+        if effect.is_some() || exact_code.is_some() || game_key.is_some()
+            || entry_role.is_some() || exact_ordinal.is_some()
+            || description_contains.is_some() || category.is_some()
+            || composition_relation.is_some() || source_record_id.is_some()
+            || varying_descriptions || region_hint.is_some() || declared_format.is_some()
+        {
+            return Err("external accepts --db, --platform, --title, --source-id, --offset, --limit and --json only".into());
+        }
+        let query = title.as_deref().ok_or("external requires --title as a filename search query")?;
+        let results = cheatarium_client::external::search(
+            &root, query, platform.as_deref(), source_id.as_deref(), offset, limit
+        )?;
+        if json {
+            println!("{}", serde_json::to_string_pretty(&results)?);
+        } else {
+            println!("{} pinned link-only file references match {:?}; none are archived cheat bodies or gameplay-verified", results.total, query);
+            for item in &results.results {
+                println!("- {} [{}] {} — {}", item.source_id, item.kind, item.path, item.upstream_url);
+            }
+        }
+        return Ok(());
     }
     if mode == "discover" {
         if platform.is_some()

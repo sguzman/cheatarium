@@ -21,6 +21,18 @@ The 58-platform bulk distribution includes PS5-native etaHEN, original PS Vita r
 
 An emulator can download the relevant platform artifacts at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
 
+## External pinned source discovery (metadata only)
+
+Cheatarium's **11,029** copyright-review-blocked original upstream files are published separately from imported cheats in a checksum-checked `generated/v1/external/catalog.json` and five compressed platform bundles. There are **4,635 PS1, 4,710 PS2, 796 Vita, 501 Xbox 360 and 387 Dreamcast** file references, not additional original archive files or verified cheat codes. They contain **only** original file paths, Git blob hashes, byte lengths, pinned source URLs, source IDs, and cheat/patch file categories. A PS2 patch and an Xbox 360 patch are not assumed to be gameplay cheats.
+
+```sh
+cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title "Painkiller" --limit 10 --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform vita --title PCSA --source-id r0ah-vitacheat --limit 10 --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --title SLUS --offset 0 --limit 20 --json
+```
+
+The Rust client checks the exported external catalog and selected platform bundles against `distribution.json` **before** searching. That confirms integrity relative to the pinned manifest, not that the manifest is authenticated or the codes work. Import permissions remain unresolved, so external references must never be silently promoted into source cheat records, a known-game identity or an activatable code.
+
 ## Rust client
 
 The client exposes `load_catalog`, `load_game_candidates`, `load_platform`, `verify_platform_distribution`, `publications::load_snes_publications`, and candidate title searches. Its CLI supports these local-only operations:

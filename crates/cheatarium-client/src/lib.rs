@@ -2,6 +2,7 @@
 //!
 //! No network access, ROM reads, cartridge mutation, or code execution.
 //! All name matching is *advisory* and must not auto-enable cheats.
+pub mod external;
 pub mod identity;
 pub mod inventory;
 pub mod publications;

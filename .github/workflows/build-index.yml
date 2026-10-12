@@ -241,6 +241,7 @@ jobs:
             fi
           done
           python3 tools/test_external_bulk.py
+          python3 tools/test_build_external_distribution.py
           python3 tools/test_import_mohasi_ps3.py
       - name: Confirm python-tests stage
         env:
@@ -292,6 +293,8 @@ jobs:
           python3 tools/measure_switch_bulk_coverage.py --write
           python3 tools/measure_switch_bulk_coverage.py --check
           python3 tools/external_bulk.py --check
+          python3 tools/build_external_distribution.py --write
+          python3 tools/build_external_distribution.py --check
       - name: Confirm index-generated stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -944,6 +947,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: bash tools/report_ci_stage.sh consumer-codecs
+      - name: Smoke-test checksum-verified external bulk filename search
+        run: |
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title 'Painkiller' --limit 4 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["metadata_only"] and not x["gameplay_verified"] and not x["archive_included"] and x["artifact_checksums_verified"] and x["total"] >= 1 and all(r["rights_status"] == "link_only_rights_review" for r in x["results"])'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform vita --title PCSA --limit 5 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 11029'
       - name: Confirm consumer-smoke stage
         env:
           GITHUB_TOKEN: ${{ github.token }}

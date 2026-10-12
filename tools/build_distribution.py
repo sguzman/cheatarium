@@ -96,6 +96,21 @@ def build_manifest(root):
             or review_doc.get("format") != "cheatarium-effect-reviews-v1"
             or not isinstance(review_doc.get("claims"), list)):
         raise ValueError("Unvalidated or changed effect review registry")
+    # Rights-unresolved external catalog artifacts are checked against six
+    # pinned filename-only source manifests; they never enter the cheat bundles.
+    from build_external_distribution import render as render_external
+    external_artifacts = render_external()
+    for rel, expected_bytes in sorted(external_artifacts.items()):
+        actual = safe_path(root, rel).read_bytes()
+        if actual != expected_bytes:
+            raise ValueError(f"Stale or altered link-only external reference artifact: {rel}")
+        if rel in named_paths:
+            raise ValueError(f"Duplicate external artifact: {rel}")
+        named_paths.add(rel)
+        manifest_files.append({"path": rel, **digest(safe_path(root, rel))})
+    external_catalog = checked_json(safe_path(root, "external/catalog.json"))
+    if external_catalog["reference_files"] != 11029:
+        raise ValueError("External reference count disagrees with pinned source snapshots")
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
                 taxonomy_rel, review_rel, composition_rel, queue_rel,
                 "interpretations/snes-published-groups.json"]:
@@ -336,6 +351,8 @@ def build_manifest(root):
         "format": "cheatarium-distribution-v1",
         "compatibility": "filename candidates only; never auto-enable cheat codes",
         "console_bundles": len(entries),
+        "external_reference_files": external_catalog["reference_files"],
+        "external_reference_platforms": len(external_catalog["platforms"]),
         "source_files": source_files,
         "game_candidate_groups": game_groups,
         "repeated_raw_code_groups": repeated_code_groups,
