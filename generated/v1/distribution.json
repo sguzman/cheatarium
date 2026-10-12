@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 58,
-  "external_reference_files": 14357,
-  "external_reference_platforms": 10,
+  "external_reference_files": 17285,
+  "external_reference_platforms": 12,
   "source_files": 56226,
   "game_candidate_groups": 46802,
   "repeated_raw_code_groups": 2973,
@@ -100,8 +100,8 @@
     },
     {
       "path": "external/catalog.json",
-      "sha256": "14096c4ac15bb865f76bc3e84bab38a3247a2b6852177f599de8a28081cf158c",
-      "size_bytes": 1394
+      "sha256": "a8ebe61f74723d424a14aede92e65c0fc945769194da6891b21c9585926eaad9",
+      "size_bytes": 1677
     },
     {
       "path": "external/dreamcast.json.gz",
@@ -110,8 +110,8 @@
     },
     {
       "path": "external/ds.json.gz",
-      "sha256": "a4ffe82a18e997addab1175c4070352d08220a285fbcb2b264f0acb4735ddfcb",
-      "size_bytes": 735
+      "sha256": "be2b99ec2950cf90c576e06536ee02187814a137a11b4075b3d713116eadab32",
+      "size_bytes": 847
     },
     {
       "path": "external/gamecube.json.gz",
@@ -127,6 +127,16 @@
       "path": "external/ps2.json.gz",
       "sha256": "3eea3f64d365eeb9c3fe3e7c8f54a48d38e4cd63e604f2674c421b5e343ff754",
       "size_bytes": 211326
+    },
+    {
+      "path": "external/ps3.json.gz",
+      "sha256": "d93e595538bb4ddf89738652bc4fd8be16a3f61a553303e32511840bf4ec2ccd",
+      "size_bytes": 161323
+    },
+    {
+      "path": "external/psp.json.gz",
+      "sha256": "e147fb12165e1c7f510b1689a40f7b27e0f95fa9439fa13bb483180880876ba3",
+      "size_bytes": 346
     },
     {
       "path": "external/switch.json.gz",
