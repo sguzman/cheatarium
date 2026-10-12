@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "id": "smoker1-fba-official-ini",
+  "repository": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats",
+  "snapshot_commit": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "git_tree_sha": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "platform": "arcade-fba",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Smoker1's pinned RetroArch 1.7.4+ source contains 98 source-native FB Alpha 'Official Cheats' INI file names, but only 45 different Git blob SHA-1s (many exact-byte clone/variant aliases). The repository README calls these FB Alpha cheats and explains manual address adaptation to RetroArch; it contains no grant of redistribution rights from the original FBA cheat authors. These are FBA-native cheat files, NOT automatically compatible with FinalBurn Neo or MAME. Keep source paths, byte sizes and Git IDs only; effects, game identities and license unresolved.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 98
+  },
+  "files": [
+    [
+      "FB Alpha Official Cheats/1941.ini",
+      "628858979ad16ec83d8cbca94a5d4e4bd6e5f88b",
+      1943
+    ],
+    [
+      "FB Alpha Official Cheats/1941j.ini",
+      "628858979ad16ec83d8cbca94a5d4e4bd6e5f88b",
+      1943
+    ],
+    [
+      "FB Alpha Official Cheats/1942.ini",
+      "33b7eec5d0a62c3697d308de188854d37330203e",
+      1532
+    ],
+    [
+      "FB Alpha Official Cheats/1942a.ini",
+      "2e7cc5dba3a47f13327244acd260601499d2c703",
+      1533
+    ],
+    [
+      "FB Alpha Official Cheats/1942abl.ini",
+      "2e7cc5dba3a47f13327244acd260601499d2c703",
+      1533
+    ],
+    [
+      "FB Alpha Official Cheats/1942b.ini",
+      "33b7eec5d0a62c3697d308de188854d37330203e",
+      1532
+    ],
+    [
+      "FB Alpha Official Cheats/1942w.ini",
+      "33b7eec5d0a62c3697d308de188854d37330203e",
+      1532
+    ],
+    [
+      "FB Alpha Official Cheats/1943.ini",
+      "74fecc5eb11cf853c492abf5b1120c3daca6b282",
+      2338
+    ],
+    [
+      "FB Alpha Official Cheats/1943j.ini",
+      "74fecc5eb11cf853c492abf5b1120c3daca6b282",
+      2338
+    ],
+    [
+      "FB Alpha Official Cheats/1943kai.ini",
+      "a11c47b657f6ff5f48376a7d8f708e7980675d4f",
+      2248
+    ],
+    [
+      "FB Alpha Official Cheats/1944.ini",
+      "00808e4e013460c77be4e0fa1cb73f138c463c5d",
+      2141
+    ],
+    [
+      "FB Alpha Official Cheats/1944d.ini",
+      "00808e4e013460c77be4e0fa1cb73f138c463c5d",
+      2141
+    ],
+    [
+      "FB Alpha Official Cheats/1944j.ini",
+      "00808e4e013460c77be4e0fa1cb73f138c463c5d",
+      2141
+    ],
+    [
+      "FB Alpha Official Cheats/1945kiii.ini",
+      "97890a24b5d4eb0161bf1480e0b674347c26002d",
+      5327
+    ],
+    [
+      "FB Alpha Official Cheats/19xx.ini",
+      "b5934b22ca07243e0e792367f7beea7a4ca078d8",
+      2351
+    ],
+    [
+      "FB Alpha Official Cheats/19xxa.ini",
+      "b5934b22ca07243e0e792367f7beea7a4ca078d8",
+      2351
+    ],
+    [
+      "FB Alpha Official Cheats/19xxb.ini",
+      "b5934b22ca07243e0e792367f7beea7a4ca078d8",
+      2351
+    ],
+    [
+      "FB Alpha Official Cheats/19xxd.ini",
+      "b5934b22ca07243e0e792367f7beea7a4ca078d8",
+      2351
+    ],
+    [
+      "FB Alpha Official Cheats/19xxh.ini",
+      "b5934b22ca07243e0e792367f7beea7a4ca078d8",
+      2351
+    ],
+    [
+      "FB Alpha Official Cheats/19xxj.ini",
+      "b5934b22ca07243e0e792367f7beea7a4ca078d8",
+      2351
+    ],
+    [
+      "FB Alpha Official Cheats/19xxjr1.ini",
+      "b5934b22ca07243e0e792367f7beea7a4ca078d8",
+      2351
+    ],
+    [
+      "FB Alpha Official Cheats/aburner.ini",
+      "056e8f0fa1132ba3daaed84d193c0b321249383e",
+      430
+    ],
+    [
+      "FB Alpha Official Cheats/aburner2.ini",
+      "c2f4ac2889d41ed9921d953301f2bb94808d18e9",
+      564
+    ],
+    [
+      "FB Alpha Official Cheats/aof.ini",
+      "203568a3f38a4475371624bb1b6466d1cc1d320e",
+      2153
+    ],
+    [
+      "FB Alpha Official Cheats/aof2.ini",
+      "17700cbab9098e8deada7a3ad71592ef9ff9b70d",
+      3392
+    ],
+    [
+      "FB Alpha Official Cheats/aof2a.ini",
+      "17700cbab9098e8deada7a3ad71592ef9ff9b70d",
+      3392
+    ],
+    [
+      "FB Alpha Official Cheats/aof3.ini",
+      "ed79d0b6b10fb77c82ab97ec7f035e2ecee09b4c",
+      2694
+    ],
+    [
+      "FB Alpha Official Cheats/aof3k.ini",
+      "ed79d0b6b10fb77c82ab97ec7f035e2ecee09b4c",
+      2694
+    ],
+    [
+      "FB Alpha Official Cheats/arkanoid.ini",
+      "01569d04df1325a90e2037d78ef0643b4a945cd7",
+      1435
+    ],
+    [
+      "FB Alpha Official Cheats/arkanoidj.ini",
+      "068ae8e896ff6b5804e735bcf0696cebed0f2cc5",
+      1476
+    ],
+    [
+      "FB Alpha Official Cheats/arkanoidu.ini",
+      "065e71b423e8995c61e819969f5771ecbeb2bc8f",
+      1476
+    ],
+    [
+      "FB Alpha Official Cheats/arkanoiduo.ini",
+      "065e71b423e8995c61e819969f5771ecbeb2bc8f",
+      1476
+    ],
+    [
+      "FB Alpha Official Cheats/arknoid2.ini",
+      "16faa24b9d36c664ee5d79f92bf190947180bc68",
+      2268
+    ],
+    [
+      "FB Alpha Official Cheats/arknoid2j.ini",
+      "16faa24b9d36c664ee5d79f92bf190947180bc68",
+      2268
+    ],
+    [
+      "FB Alpha Official Cheats/arknoid2u.ini",
+      "16faa24b9d36c664ee5d79f92bf190947180bc68",
+      2268
+    ],
+    [
+      "FB Alpha Official Cheats/avsp.ini",
+      "107efbf29867267efa29afa09e07648260071e8d",
+      1911
+    ],
+    [
+      "FB Alpha Official Cheats/avspa.ini",
+      "107efbf29867267efa29afa09e07648260071e8d",
+      1911
+    ],
+    [
+      "FB Alpha Official Cheats/avspd.ini",
+      "107efbf29867267efa29afa09e07648260071e8d",
+      1911
+    ],
+    [
+      "FB Alpha Official Cheats/avsph.ini",
+      "107efbf29867267efa29afa09e07648260071e8d",
+      1911
+    ],
+    [
+      "FB Alpha Official Cheats/avspj.ini",
+      "107efbf29867267efa29afa09e07648260071e8d",
+      1911
+    ],
+    [
+      "FB Alpha Official Cheats/avspu.ini",
+      "107efbf29867267efa29afa09e07648260071e8d",
+      1911
+    ],
+    [
+      "FB Alpha Official Cheats/dstlk.ini",
+      "2508fc98a4685d3d61a14ed612b342190f38afbe",
+      1857
+    ],
+    [
+      "FB Alpha Official Cheats/dstlka.ini",
+      "2508fc98a4685d3d61a14ed612b342190f38afbe",
+      1857
+    ],
+    [
+      "FB Alpha Official Cheats/dstlkh.ini",
+      "2508fc98a4685d3d61a14ed612b342190f38afbe",
+      1857
+    ],
+    [
+      "FB Alpha Official Cheats/dstlku.ini",
+      "2508fc98a4685d3d61a14ed612b342190f38afbe",
+      1857
+    ],
+    [
+      "FB Alpha Official Cheats/dstlku1d.ini",
+      "2508fc98a4685d3d61a14ed612b342190f38afbe",
+      1857
+    ],
+    [
+      "FB Alpha Official Cheats/dstlkur1.ini",
+      "2508fc98a4685d3d61a14ed612b342190f38afbe",
+      1857
+    ],
+    [
+      "FB Alpha Official Cheats/fatfursa.ini",
+      "2a6fde52a78389203b1f2ffb414a8d8fd5099bb2",
+      848
+    ],
+    [
+      "FB Alpha Official Cheats/fatfursp.ini",
+      "2a6fde52a78389203b1f2ffb414a8d8fd5099bb2",
+      848
+    ],
+    [
+      "FB Alpha Official Cheats/fatfury1.ini",
+      "b7fa9ec6a9a588a30c4db5ef8a1774d2ae44525b",
+      2706
+    ],
+    [
+      "FB Alpha Official Cheats/fatfury2.ini",
+      "de7d4018d41271fe2775a88ee4410fa2cf9ebae5",
+      982
+    ],
+    [
+      "FB Alpha Official Cheats/fatfury3.ini",
+      "54ec2c66b06641b62aa2fcc9e829bf62462dff0c",
+      3297
+    ],
+    [
+      "FB Alpha Official Cheats/hangon.ini",
+      "00da72e728b06e399b5961f96573ddd4caa4cd40",
+      385
+    ],
+    [
+      "FB Alpha Official Cheats/hangon1.ini",
+      "00da72e728b06e399b5961f96573ddd4caa4cd40",
+      385
+    ],
+    [
+      "FB Alpha Official Cheats/hsf2.ini",
+      "0ed6eb5c29a03155e1fe3039d6caedb813dffbe5",
+      2869
+    ],
+    [
+      "FB Alpha Official Cheats/hsf2a.ini",
+      "0ed6eb5c29a03155e1fe3039d6caedb813dffbe5",
+      2869
+    ],
+    [
+      "FB Alpha Official Cheats/hsf2d.ini",
+      "0ed6eb5c29a03155e1fe3039d6caedb813dffbe5",
+      2869
+    ],
+    [
+      "FB Alpha Official Cheats/hsf2j.ini",
+      "0ed6eb5c29a03155e1fe3039d6caedb813dffbe5",
+      2869
+    ],
+    [
+      "FB Alpha Official Cheats/karnovr.ini",
+      "d598649084c0049527d11ffa09ae3fc0dacc2807",
+      1422
+    ],
+    [
+      "FB Alpha Official Cheats/kf10thep.ini",
+      "9e73815301cc6500c7fbafb9da46070dfdf56d29",
+      27216
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k2mp.ini",
+      "4e31f2e77aed70f4b77034f69fbd4d0fd3016418",
+      27635
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k2mp2.ini",
+      "4e31f2e77aed70f4b77034f69fbd4d0fd3016418",
+      27635
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k2pla.ini",
+      "4e31f2e77aed70f4b77034f69fbd4d0fd3016418",
+      27635
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k2pls.ini",
+      "4e31f2e77aed70f4b77034f69fbd4d0fd3016418",
+      27635
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k3bl.ini",
+      "51591c8ddd065a972f81ad8e0c1440518d6b5a14",
+      8785
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k3bla.ini",
+      "51591c8ddd065a972f81ad8e0c1440518d6b5a14",
+      8785
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k3pcb.ini",
+      "51591c8ddd065a972f81ad8e0c1440518d6b5a14",
+      8785
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k3pcd.ini",
+      "aa119db77dedb568f2c5872bbe1a30db34e7ac10",
+      20
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k3pl.ini",
+      "51591c8ddd065a972f81ad8e0c1440518d6b5a14",
+      8785
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k3upl.ini",
+      "51591c8ddd065a972f81ad8e0c1440518d6b5a14",
+      8785
+    ],
+    [
+      "FB Alpha Official Cheats/kf2k5uni.ini",
+      "51546c25014ea7f6be8edc4b74d5e6cfb0a4bb5c",
+      27307
+    ],
+    [
+      "FB Alpha Official Cheats/kof10th.ini",
+      "51546c25014ea7f6be8edc4b74d5e6cfb0a4bb5c",
+      27307
+    ],
+    [
+      "FB Alpha Official Cheats/kof10thd.ini",
+      "a7d03d94506c99872a104a5064131cc5fbecc091",
+      19
+    ],
+    [
+      "FB Alpha Official Cheats/kof2000.ini",
+      "24f8de2caa8488d10ad11df944397e49f3d16376",
+      20066
+    ],
+    [
+      "FB Alpha Official Cheats/kof2000d.ini",
+      "22fc9743ea4fa531eca187c4b78d8fcc09af1dbf",
+      20
+    ],
+    [
+      "FB Alpha Official Cheats/kof2000n.ini",
+      "24f8de2caa8488d10ad11df944397e49f3d16376",
+      20066
+    ],
+    [
+      "FB Alpha Official Cheats/kof2001.ini",
+      "a847d114554ce4900e9988529c96b3ae259ec3e0",
+      12818
+    ],
+    [
+      "FB Alpha Official Cheats/kof2001d.ini",
+      "36ab8344cfd6f5063c41572257212f84370583e4",
+      20
+    ],
+    [
+      "FB Alpha Official Cheats/kof2001h.ini",
+      "a847d114554ce4900e9988529c96b3ae259ec3e0",
+      12818
+    ],
+    [
+      "FB Alpha Official Cheats/kof2002.ini",
+      "4e31f2e77aed70f4b77034f69fbd4d0fd3016418",
+      27635
+    ],
+    [
+      "FB Alpha Official Cheats/kof2002b.ini",
+      "4e31f2e77aed70f4b77034f69fbd4d0fd3016418",
+      27635
+    ],
+    [
+      "FB Alpha Official Cheats/kof2002d.ini",
+      "afc09fa4bda3c512500cd5a865093c732b9cf2ca",
+      19
+    ],
+    [
+      "FB Alpha Official Cheats/kof2003.ini",
+      "51591c8ddd065a972f81ad8e0c1440518d6b5a14",
+      8785
+    ],
+    [
+      "FB Alpha Official Cheats/kof2003d.ini",
+      "e7eaa89ee8246dd7ac0061aa32c296b20f564d34",
+      19
+    ],
+    [
+      "FB Alpha Official Cheats/kof2003h.ini",
+      "51591c8ddd065a972f81ad8e0c1440518d6b5a14",
+      8785
+    ],
+    [
+      "FB Alpha Official Cheats/kof2k1d.ini",
+      "5fb095a0a14922d8af8b662cef77b627030a7ca8",
+      19
+    ],
+    [
+      "FB Alpha Official Cheats/kof2k1nd.ini",
+      "36ab8344cfd6f5063c41572257212f84370583e4",
+      20
+    ],
+    [
+      "FB Alpha Official Cheats/kof2k2nd.ini",
+      "afc09fa4bda3c512500cd5a865093c732b9cf2ca",
+      19
+    ],
+    [
+      "FB Alpha Official Cheats/kof2k3hd.ini",
+      "56a705fda4e93a948ffe7890aa6bbf6639460ff6",
+      20
+    ],
+    [
+      "FB Alpha Official Cheats/kof2k3nd.ini",
+      "e7eaa89ee8246dd7ac0061aa32c296b20f564d34",
+      19
+    ],
+    [
+      "FB Alpha Official Cheats/kof2k4se.ini",
+      "4e31f2e77aed70f4b77034f69fbd4d0fd3016418",
+      27635
+    ],
+    [
+      "FB Alpha Official Cheats/kof2knd.ini",
+      "dfe6e27063dafed9ea961c0c05abf084a7c1e6fb",
+      19
+    ],
+    [
+      "FB Alpha Official Cheats/kof94.ini",
+      "7ee45cf020f3bab2705753015b4a039612b5a168",
+      1188
+    ],
+    [
+      "FB Alpha Official Cheats/kof95.ini",
+      "00aad51ddff42a06d519d686bf2eed64b5edf1f3",
+      6262
+    ],
+    [
+      "FB Alpha Official Cheats/kof95h.ini",
+      "00aad51ddff42a06d519d686bf2eed64b5edf1f3",
+      6262
+    ],
+    [
+      "FB Alpha Official Cheats/kof96.ini",
+      "39305c20dad1c551907d117ceaf5881f8d099efd",
+      12696
+    ],
+    [
+      "FB Alpha Official Cheats/kof96h.ini",
+      "39305c20dad1c551907d117ceaf5881f8d099efd",
+      12696
+    ],
+    [
+      "FB Alpha Official Cheats/kof97.ini",
+      "bc1e45b0b587ba02d4d09f73a91560ca81bc5769",
+      12099
+    ]
+  ]
+}

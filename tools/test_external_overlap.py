@@ -12,11 +12,11 @@ class TestExternalOverlap(unittest.TestCase):
 
     def test_fixed_pinned_inventory(self):
         doc = self.data
-        self.assertEqual(doc["reference_files"], 42533)
-        self.assertEqual(doc["source_catalogs"], 30)
+        self.assertEqual(doc["reference_files"], 42632)
+        self.assertEqual(doc["source_catalogs"], 32)
         self.assertEqual(doc["external_platforms"], 13)
         self.assertGreater(doc["distinct_git_blobs"], 26638)
-        self.assertEqual(doc["repeated_blob_excess_occurrences"], 42533 - doc["distinct_git_blobs"])
+        self.assertEqual(doc["repeated_blob_excess_occurrences"], 42632 - doc["distinct_git_blobs"])
         self.assertGreaterEqual(doc["references_in_repeated_blob_groups"], 9076)
         self.assertGreaterEqual(doc["cross_source_shared_blob_groups"], 2759)
         self.assertGreaterEqual(doc["cross_source_shared_references"], 8129)
@@ -26,18 +26,21 @@ class TestExternalOverlap(unittest.TestCase):
 
     def test_platform_and_source_counts_reconcile(self):
         doc = self.data
-        self.assertEqual(sum(x["reference_files"] for x in doc["sources"]), 42533)
-        self.assertEqual(sum(x["reference_files"] for x in doc["platforms"]), 42533)
+        self.assertEqual(sum(x["reference_files"] for x in doc["sources"]), 42632)
+        self.assertEqual(sum(x["reference_files"] for x in doc["platforms"]), 42632)
         hamlet = next(x for x in doc["sources"] if x["id"] == "hamlet-switch-cheatdb")
         self.assertEqual((hamlet["reference_files"], hamlet["distinct_git_blobs"]), (5278, 3046))
         ds = next(x for x in doc["sources"] if x["id"] == "deadskullz-nds-formats")
         self.assertEqual(ds["reference_files"], 9)
         self.assertEqual(ds["distinct_git_blobs"], 8)
         self.assertEqual(ds["repeated_blob_excess_occurrences_within_source"], 1)
+        fba = next(x for x in doc["sources"] if x["id"] == "smoker1-fba-official-ini")
+        self.assertEqual((fba["reference_files"], fba["distinct_git_blobs"]), (98, 45))
+        self.assertEqual(fba["repeated_blob_excess_occurrences_within_source"], 53)
         sthetix = next(x for x in doc["sources"] if x["id"] == "sthetix-switch-mirror")
         self.assertEqual((sthetix["reference_files"], sthetix["distinct_git_blobs"]), (5861, 5468))
         self.assertEqual(
-            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3326
+            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3379
         )
 
     def test_cross_source_matches_keep_paths_and_no_bodies(self):

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "pacnpal-mupen-n64-cheatfile",
+  "repository": "https://github.com/pacnpal/mupen-cheats",
+  "snapshot_commit": "3dd74ad738741979aaf5ac5fda2611fe0ad5c53a",
+  "git_tree_sha": "3dd74ad738741979aaf5ac5fda2611fe0ad5c53a",
+  "platform": "n64",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "One 1,281,051-byte Mupen64Plus-native mupencheat.txt Gameshark cheat database. The README credits new GoldenEye, Perfect Dark and Donkey Kong 64 fixes/code caves alongside preexisting distributed Mupen and late-1990s GameShark FAQ code sources. No root LICENSE file in pinned tree and no original-source author-wide permission established. One file is not one code or one game and neither compatibility nor execution is verified. Read-only pinned link and Git hash only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 1
+  },
+  "files": [
+    [
+      "mupencheat.txt",
+      "5708366419dd50c774b3a323ce8587f66b8533d8",
+      1281051
+    ]
+  ]
+}

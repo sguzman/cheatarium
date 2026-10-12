@@ -1,7 +1,7 @@
 # Bulk cheat acquisition: pinned original-author rights review
 
 The project currently archives 67,834 original files and separately indexes
-42,533 **link-only** external occurrences. Not all are cheats, unique titles,
+42,632 **link-only** external occurrences. Not all are cheats, unique titles,
 or independently verified modifications.
 
 The [priority scorecard](../generated/v1/reports/acquisition-priorities.json)
@@ -57,3 +57,6 @@ included in the SHA-256 distribution.
 ## Additional link-only original archive witnesses
 
 Two Libretro-hosted MAME arcade cheat archives (`mame2010-libretro/metadata/cheat.zip`, 24,981,772 bytes; `mame2003-plus-libretro/metadata/cheat.dat`, 7,810,253 bytes) and 48 novel nonempty PNACH files from the `shadowninja826` PS2 mirror also remain link-only. For MAME, the original emulator-license files are not a contributor-by-contributor clearance of cheat bodies; the MAME 2010 ZIP exactly matches one earlier mirror. The PS2 collection offers no root blanket grant and most of its files exactly duplicate a pinned catalog. The rights-evidence report continues to contain nine explicitly documented pinned source dossiers, **not** blanket approval or a complete legal review of all 30 external catalog IDs.
+
+
+Smoker1's 98 FinalBurn Alpha INI file references (45 distinct source blobs) and pacnpal's one Mupen64Plus N64 native cheat database are now searchable metadata-only, not preserved body files. The former README identifies them as externally sourced official FBA cheat listings; the latter describes modifications atop preexisting Mupen/GameShark FAQ code collections. Neither source establishes blanket reuse permissions for all underlying authors. Keep FBA, FBNeo, MAME, and N64 format/compatibility claims distinct. The nine detailed legal evidence dossiers do not automatically cover these two new sources.

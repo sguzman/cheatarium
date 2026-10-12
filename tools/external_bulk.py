@@ -57,6 +57,18 @@ SOURCES = {
         "platform": "arcade-mame", "expected": {"cheat": 1},
         "rights_note": "Historic MAME 2003-Plus libretro metadata/cheat.dat compiled cheat database. Project's classic MAME license covers emulator source subject to restrictions but does NOT establish contributor rights to all compiled historical cheats. One 7.81 MB source file, not an enumerated or verified game/cheat inventory; link-only.",
     },
+    "smoker1-fba-official-ini": {
+        "repository": "Smoker1/RetroArch-174-and-above-Cheats",
+        "commit": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+        "platform": "arcade-fba", "expected": {"cheat": 98},
+        "rights_note": "Smoker1's pinned RetroArch 1.7.4+ source contains 98 source-native FB Alpha 'Official Cheats' INI file names, but only 45 different Git blob SHA-1s (many exact-byte clone/variant aliases). The repository README calls these FB Alpha cheats and explains manual address adaptation to RetroArch; it contains no grant of redistribution rights from the original FBA cheat authors. These are FBA-native cheat files, NOT automatically compatible with FinalBurn Neo or MAME. Keep source paths, byte sizes and Git IDs only; effects, game identities and license unresolved.",
+    },
+    "pacnpal-mupen-n64-cheatfile": {
+        "repository": "pacnpal/mupen-cheats",
+        "commit": "3dd74ad738741979aaf5ac5fda2611fe0ad5c53a",
+        "platform": "n64", "expected": {"cheat": 1},
+        "rights_note": "One 1,281,051-byte Mupen64Plus-native mupencheat.txt Gameshark cheat database. The README credits new GoldenEye, Perfect Dark and Donkey Kong 64 fixes/code caves alongside preexisting distributed Mupen and late-1990s GameShark FAQ code sources. No root LICENSE file in pinned tree and no original-source author-wide permission established. One file is not one code or one game and neither compatibility nor execution is verified. Read-only pinned link and Git hash only.",
+    },
     "xenia-canary-game-patches": {
         "repository": "xenia-canary/game-patches",
         "commit": "106bb0a40be27b5a2444162562975e4885e1ce74",
@@ -220,6 +232,10 @@ def classify(source, path):
     if source == "libretro-mame2010-cheat-archive" and path == "metadata/cheat.zip":
         return "cheat"
     if source == "libretro-mame2003plus-cheat-archive" and path == "metadata/cheat.dat":
+        return "cheat"
+    if source == "smoker1-fba-official-ini" and re.fullmatch(r"FB Alpha Official Cheats/[^/]+\.ini", path):
+        return "cheat"
+    if source == "pacnpal-mupen-n64-cheatfile" and path == "mupencheat.txt":
         return "cheat"
     if source == "xenia-canary-game-patches" and re.fullmatch(r"patches/[^/]+\.patch\.toml", path):
         return "patch"
@@ -424,7 +440,7 @@ def main():
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--refresh", action="store_true")
     mode.add_argument("--search", metavar="TEXT")
-    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "arcade-mame", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
+    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "arcade-mame", "arcade-fba", "n64", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args()

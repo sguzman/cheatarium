@@ -34,6 +34,8 @@ class TestExternalBulk(unittest.TestCase):
             "crashgg-ps1-chtdb-delta": 268,
             "deadskullz-nds-formats": 9,
             "saramagrean-psp-cwcheat": 1,
+            "smoker1-fba-official-ini": 98,
+            "pacnpal-mupen-n64-cheatfile": 1,
             "shadowninja-ps2-pnach-delta": 48,
             "libretro-mame2010-cheat-archive": 1,
             "libretro-mame2003plus-cheat-archive": 1,
@@ -41,7 +43,7 @@ class TestExternalBulk(unittest.TestCase):
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 42533)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 42632)
 
     def test_widescreen_staging_is_link_only_and_patch_only(self):
         source = next(x for x in load(__import__("external_bulk").ROOT)
@@ -123,6 +125,22 @@ class TestExternalBulk(unittest.TestCase):
                             for x in sources))
         self.assertEqual(len(lookup(indexed, "metadata/cheat.zip", "arcade-mame", 2)), 1)
         self.assertEqual(len(lookup(indexed, "metadata/cheat.dat", "arcade-mame", 2)), 1)
+
+    def test_arcade_fba_clones_and_mupen_native_file_stay_source_scoped(self):
+        sources = load(__import__("external_bulk").ROOT)
+        fba = next(x for x in sources if x["id"] == "smoker1-fba-official-ini")
+        n64 = next(x for x in sources if x["id"] == "pacnpal-mupen-n64-cheatfile")
+        self.assertEqual(len(fba["files"]), 98)
+        self.assertEqual(len({sha for _, sha, _ in fba["files"]}), 45)
+        self.assertEqual(len(n64["files"]), 1)
+        self.assertEqual(n64["files"][0][2], 1281051)
+        self.assertEqual(fba["platform"], "arcade-fba")
+        self.assertEqual(n64["platform"], "n64")
+        self.assertTrue(all(classify(fba["id"], path) == "cheat"
+                            for path, _, _ in fba["files"]))
+        self.assertEqual(len(lookup([fba], "1941", "arcade-fba", 20)), 2)
+        self.assertEqual(len(lookup([n64], "mupencheat.txt", "n64", 20)), 1)
+        self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in (fba, n64)))
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
