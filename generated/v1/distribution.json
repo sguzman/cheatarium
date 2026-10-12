@@ -3,7 +3,7 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 58,
-  "external_reference_files": 22563,
+  "external_reference_files": 22886,
   "external_reference_platforms": 12,
   "source_files": 56226,
   "game_candidate_groups": 46802,
@@ -95,13 +95,13 @@
     },
     {
       "path": "external/3ds.json.gz",
-      "sha256": "48732ae88962a433e865b1108d331256208c710ea493cfccbcf8f27ed0e84eff",
-      "size_bytes": 3847
+      "sha256": "bfff867084870570bfaa49c7d19bc279b00ac9c5c0602041f8564b99c3b230cd",
+      "size_bytes": 19137
     },
     {
       "path": "external/catalog.json",
-      "sha256": "c48a7ed04808d839f294c27d816a80b49499b699161d7187127ad87b30047331",
-      "size_bytes": 1701
+      "sha256": "39ea0e32cd255b83c9189c03685ec146cb536998d06cc085c032b8e586d8a9ab",
+      "size_bytes": 1723
     },
     {
       "path": "external/dreamcast.json.gz",
@@ -140,8 +140,8 @@
     },
     {
       "path": "external/switch.json.gz",
-      "sha256": "a4e63a20a84fb0ca6b4f18b4940c8c0f4297743c5c659cf209a6056e12c7ab57",
-      "size_bytes": 386556
+      "sha256": "14c28ee5fc76456dc02563998206e1b020626ab8ac6f1dbcd466eaef02bd1906",
+      "size_bytes": 391810
     },
     {
       "path": "external/vita.json.gz",
