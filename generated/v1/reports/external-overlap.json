@@ -6,14 +6,14 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 42632,
-  "source_catalogs": 32,
-  "external_platforms": 15,
-  "distinct_git_blobs": 36472,
-  "repeated_blob_excess_occurrences": 6160,
-  "references_in_repeated_blob_groups": 9588,
-  "cross_source_shared_blob_groups": 2781,
-  "cross_source_shared_references": 8173,
+  "reference_files": 42718,
+  "source_catalogs": 39,
+  "external_platforms": 21,
+  "distinct_git_blobs": 36549,
+  "repeated_blob_excess_occurrences": 6169,
+  "references_in_repeated_blob_groups": 9604,
+  "cross_source_shared_blob_groups": 2785,
+  "cross_source_shared_references": 8181,
   "sources": [
     {
       "id": "duckstation-chtdb",
@@ -374,6 +374,83 @@
       "source_declared_file_types": {
         "patch": 3632
       }
+    },
+    {
+      "id": "gcmcom-legacy-gba",
+      "platform": "gba",
+      "reference_files": 2,
+      "distinct_git_blobs": 2,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 2
+      }
+    },
+    {
+      "id": "gcmcom-legacy-nes",
+      "platform": "nes",
+      "reference_files": 8,
+      "distinct_git_blobs": 8,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 8
+      }
+    },
+    {
+      "id": "gcmcom-legacy-snes",
+      "platform": "snes",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
+      }
+    },
+    {
+      "id": "smoker1-legacy-fbneo",
+      "platform": "arcade-fbneo",
+      "reference_files": 32,
+      "distinct_git_blobs": 29,
+      "repeated_blob_excess_occurrences_within_source": 3,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 32
+      }
+    },
+    {
+      "id": "smoker1-legacy-dreamcast",
+      "platform": "dreamcast",
+      "reference_files": 12,
+      "distinct_git_blobs": 10,
+      "repeated_blob_excess_occurrences_within_source": 2,
+      "references_with_blob_shared_by_another_source": 4,
+      "source_declared_file_types": {
+        "cheat": 12
+      }
+    },
+    {
+      "id": "smoker1-legacy-naomi",
+      "platform": "arcade-naomi",
+      "reference_files": 9,
+      "distinct_git_blobs": 9,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 4,
+      "source_declared_file_types": {
+        "cheat": 9
+      }
+    },
+    {
+      "id": "smoker1-legacy-othercores",
+      "platform": "multi-retroarch",
+      "reference_files": 22,
+      "distinct_git_blobs": 22,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 22
+      }
     }
   ],
   "platforms": [
@@ -398,6 +475,15 @@
       ]
     },
     {
+      "platform": "arcade-fbneo",
+      "reference_files": 32,
+      "distinct_git_blobs": 29,
+      "repeated_blob_excess_occurrences": 3,
+      "source_catalogs": [
+        "smoker1-legacy-fbneo"
+      ]
+    },
+    {
       "platform": "arcade-mame",
       "reference_files": 2,
       "distinct_git_blobs": 2,
@@ -408,12 +494,22 @@
       ]
     },
     {
-      "platform": "dreamcast",
-      "reference_files": 387,
-      "distinct_git_blobs": 387,
+      "platform": "arcade-naomi",
+      "reference_files": 9,
+      "distinct_git_blobs": 9,
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
-        "bucanero-dreamcast-cheats"
+        "smoker1-legacy-naomi"
+      ]
+    },
+    {
+      "platform": "dreamcast",
+      "reference_files": 399,
+      "distinct_git_blobs": 397,
+      "repeated_blob_excess_occurrences": 2,
+      "source_catalogs": [
+        "bucanero-dreamcast-cheats",
+        "smoker1-legacy-dreamcast"
       ]
     },
     {
@@ -437,12 +533,39 @@
       ]
     },
     {
+      "platform": "gba",
+      "reference_files": 2,
+      "distinct_git_blobs": 2,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "gcmcom-legacy-gba"
+      ]
+    },
+    {
+      "platform": "multi-retroarch",
+      "reference_files": 22,
+      "distinct_git_blobs": 22,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "smoker1-legacy-othercores"
+      ]
+    },
+    {
       "platform": "n64",
       "reference_files": 1,
       "distinct_git_blobs": 1,
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
         "pacnpal-mupen-n64-cheatfile"
+      ]
+    },
+    {
+      "platform": "nes",
+      "reference_files": 8,
+      "distinct_git_blobs": 8,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "gcmcom-legacy-nes"
       ]
     },
     {
@@ -486,6 +609,15 @@
       "source_catalogs": [
         "apelfactory-ppsspp-cheatdb",
         "saramagrean-psp-cwcheat"
+      ]
+    },
+    {
+      "platform": "snes",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "gcmcom-legacy-snes"
       ]
     },
     {
@@ -21395,6 +21527,26 @@
       ]
     },
     {
+      "git_blob_sha": "4762065cffbd1e30010d278821f9aa02b630fbc0",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "smoker1-legacy-dreamcast",
+          "platform": "dreamcast",
+          "path": "Reicast/Marvel vs. Capcom 2.cht",
+          "git_blob_sha": "4762065cffbd1e30010d278821f9aa02b630fbc0",
+          "bytes": 3956
+        },
+        {
+          "source_id": "smoker1-legacy-naomi",
+          "platform": "arcade-naomi",
+          "path": "Reicast-NAOMI/Marvel vs. Capcom 2.cht",
+          "git_blob_sha": "4762065cffbd1e30010d278821f9aa02b630fbc0",
+          "bytes": 3956
+        }
+      ]
+    },
+    {
       "git_blob_sha": "4780619ed956df24d1da8f147f7f4b1cbe3c2fd5",
       "source_count": 2,
       "references": [
@@ -29227,6 +29379,26 @@
           "path": "cheats_gfx/0100CF801776C000.json",
           "git_blob_sha": "5f529c507c87f1d26c6603ba410a15ea296254ce",
           "bytes": 27451
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "5f633c64c0f3a610d91d7cecb6022ea4e148c51c",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "smoker1-legacy-dreamcast",
+          "platform": "dreamcast",
+          "path": "Reicast/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht",
+          "git_blob_sha": "5f633c64c0f3a610d91d7cecb6022ea4e148c51c",
+          "bytes": 3440
+        },
+        {
+          "source_id": "smoker1-legacy-naomi",
+          "platform": "arcade-naomi",
+          "path": "Reicast-NAOMI/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht",
+          "git_blob_sha": "5f633c64c0f3a610d91d7cecb6022ea4e148c51c",
+          "bytes": 3440
         }
       ]
     },
@@ -48016,6 +48188,26 @@
       ]
     },
     {
+      "git_blob_sha": "a38aeef4ea6d0109995dddbe2a72e132e8eccb5b",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "smoker1-legacy-dreamcast",
+          "platform": "dreamcast",
+          "path": "Reicast/Capcom Vs. SNK Millennium Fight 2000.cht",
+          "git_blob_sha": "a38aeef4ea6d0109995dddbe2a72e132e8eccb5b",
+          "bytes": 3423
+        },
+        {
+          "source_id": "smoker1-legacy-naomi",
+          "platform": "arcade-naomi",
+          "path": "Reicast-NAOMI/Capcom Vs. SNK Millennium Fight 2000 Pro.cht",
+          "git_blob_sha": "a38aeef4ea6d0109995dddbe2a72e132e8eccb5b",
+          "bytes": 3423
+        }
+      ]
+    },
+    {
       "git_blob_sha": "a396372ed0a5b45a71a250d21a87359ddf48cb30",
       "source_count": 2,
       "references": [
@@ -51441,6 +51633,26 @@
           "path": "cheats_gbatemp/010036400DFF0000.json",
           "git_blob_sha": "afcf7a799eb0912cf3728211514edecb907ca79e",
           "bytes": 371
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "afd9195b08024833a50472149e06f1b9399e6448",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "smoker1-legacy-dreamcast",
+          "platform": "dreamcast",
+          "path": "Reicast/Street Fighter Zero 3 Upper.cht",
+          "git_blob_sha": "afd9195b08024833a50472149e06f1b9399e6448",
+          "bytes": 2872
+        },
+        {
+          "source_id": "smoker1-legacy-naomi",
+          "platform": "arcade-naomi",
+          "path": "Reicast-NAOMI/Street Fighter Zero 3 Upper.cht",
+          "git_blob_sha": "afd9195b08024833a50472149e06f1b9399e6448",
+          "bytes": 2872
         }
       ]
     },

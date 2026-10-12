@@ -7,17 +7,17 @@
   "unique_games_or_effects_established": false,
   "gameplay_compatibility_verified": false,
   "filename_kind_is_semantic_cheat_verification": false,
-  "source_file_occurrences": 42632,
-  "source_catalogs": 32,
-  "platforms_count": 15,
-  "all_external_distinct_blob_sha1": 36472,
+  "source_file_occurrences": 42718,
+  "source_catalogs": 39,
+  "platforms_count": 21,
+  "all_external_distinct_blob_sha1": 36549,
   "distinct_blobs_matching_archived_bytes": 56,
-  "distinct_blobs_absent_from_archive": 36416,
-  "distinct_cheat_labeled_blobs_absent_from_archive": 23487,
+  "distinct_blobs_absent_from_archive": 36493,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 23564,
   "distinct_patch_labeled_blobs_absent_from_archive": 13207,
   "blobs_labeled_both_cheat_and_patch": 278,
-  "exclusive_unarchived_blobs_in_one_source": 33635,
-  "shared_unarchived_blobs_in_multiple_sources": 2781,
+  "exclusive_unarchived_blobs_in_one_source": 33708,
+  "shared_unarchived_blobs_in_multiple_sources": 2785,
   "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
   "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
   "sources": [
@@ -549,6 +549,37 @@
       ]
     },
     {
+      "source_id": "smoker1-legacy-fbneo",
+      "platform": "arcade-fbneo",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 32,
+      "cheat_labeled_occurrences": 32,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 32,
+      "distinct_blob_sha1": 29,
+      "distinct_unarchived_blob_sha1": 29,
+      "distinct_unarchived_cheat_labeled_blobs": 29,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 29,
+      "exclusive_unarchived_cheat_labeled_blobs": 29,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "FinalBurn Neo/Fghthist FBNeo.cht",
+          "git_blob_sha": "bcd3cac4bb68f1c57edd8626a3e7f84c496135ab"
+        },
+        {
+          "path": "FinalBurn Neo/fghthist.cht",
+          "git_blob_sha": "d4107bffe080b4b42a96f42f380b7ea5753c8646"
+        },
+        {
+          "path": "FinalBurn Neo/fghthistuc.cht",
+          "git_blob_sha": "bd52321194bc3b40d0d1d7563fa81e8e39eb3b63"
+        }
+      ]
+    },
+    {
       "source_id": "rogamer97-asm-gamecube",
       "platform": "gamecube",
       "rights_status": "link_only_rights_review",
@@ -580,6 +611,37 @@
       ]
     },
     {
+      "source_id": "smoker1-legacy-othercores",
+      "platform": "multi-retroarch",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 22,
+      "cheat_labeled_occurrences": 22,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 22,
+      "distinct_blob_sha1": 22,
+      "distinct_unarchived_blob_sha1": 22,
+      "distinct_unarchived_cheat_labeled_blobs": 22,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 22,
+      "exclusive_unarchived_cheat_labeled_blobs": 22,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Citra/000400000007F500.00000000 Urban Trial Freestyle (CTR-N-AT8P) (W).cht",
+          "git_blob_sha": "b5621eb5d193097ece6dd9f26ae1db7e30dfd030"
+        },
+        {
+          "path": "Gambatte/Street Fighter Alpha - Warriors' Dreams (USA) GG.cht",
+          "git_blob_sha": "7fa9512c350b72a24c37dcacb6578de7d80b2c33"
+        },
+        {
+          "path": "Gambatte/Street Fighter II (USA, Europe) (Rev A).cht",
+          "git_blob_sha": "0de28d51687903373420802343c673e6f25ce88f"
+        }
+      ]
+    },
+    {
       "source_id": "deadskullz-nds-formats",
       "platform": "ds",
       "rights_status": "link_only_rights_review",
@@ -607,6 +669,99 @@
         {
           "path": "Cheat Databases/cheat.db",
           "git_blob_sha": "44c27f11bcf3bfba39f04fc97c70ecb37ac94b6f"
+        }
+      ]
+    },
+    {
+      "source_id": "gcmcom-legacy-nes",
+      "platform": "nes",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 8,
+      "cheat_labeled_occurrences": 8,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 8,
+      "distinct_blob_sha1": 8,
+      "distinct_unarchived_blob_sha1": 8,
+      "distinct_unarchived_cheat_labeled_blobs": 8,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 8,
+      "exclusive_unarchived_cheat_labeled_blobs": 8,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cht/Nintendo - Nintendo Entertainment System/Castlevania II - Simon's Quest (USA, Europe) (Game Genie).cht",
+          "git_blob_sha": "8647674a3b814e4753958354824dfe29656e57b3"
+        },
+        {
+          "path": "cht/Nintendo - Nintendo Entertainment System/Legend of Zelda, The (USA, Europe) (Action Replay).cht",
+          "git_blob_sha": "caabbfeeb8f513f74fa0667fc7af79d659e41ad3"
+        },
+        {
+          "path": "cht/Nintendo - Nintendo Entertainment System/Legend of Zelda, The (USA, Europe) (Game Genie).cht",
+          "git_blob_sha": "e646a1cfcca89f85f25a2100fa5748db9b1e01a9"
+        }
+      ]
+    },
+    {
+      "source_id": "smoker1-legacy-dreamcast",
+      "platform": "dreamcast",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 12,
+      "cheat_labeled_occurrences": 12,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 12,
+      "distinct_blob_sha1": 10,
+      "distinct_unarchived_blob_sha1": 10,
+      "distinct_unarchived_cheat_labeled_blobs": 10,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 6,
+      "exclusive_unarchived_cheat_labeled_blobs": 6,
+      "shared_with_other_external_sources_unarchived_blobs": 4,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Reicast/Capcom vs. SNK (US).cht",
+          "git_blob_sha": "602e4b3512a68e3d2716cf9e834be67fb718e1f1"
+        },
+        {
+          "path": "Reicast/Capcom vs. SNK 2 - Millionaire Fighting 2001 v1.001 (2001)(Capcom)(NTSC)(JP)(en)[!].cht",
+          "git_blob_sha": "93a828b9b2a3470bbef34de72ea4fc36fc2489fa"
+        },
+        {
+          "path": "Reicast/Hydro Thunder Version 1.0 (RetroArch Cheats).cht",
+          "git_blob_sha": "4d99d9dbb6ad01d17daaa98ef2d8db3b2df6a862"
+        }
+      ]
+    },
+    {
+      "source_id": "smoker1-legacy-naomi",
+      "platform": "arcade-naomi",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 9,
+      "cheat_labeled_occurrences": 9,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 9,
+      "distinct_blob_sha1": 9,
+      "distinct_unarchived_blob_sha1": 9,
+      "distinct_unarchived_cheat_labeled_blobs": 9,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 5,
+      "exclusive_unarchived_cheat_labeled_blobs": 5,
+      "shared_with_other_external_sources_unarchived_blobs": 4,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Reicast-NAOMI/CvsS2 NAOMI MAME.cht",
+          "git_blob_sha": "b9620da07dd10f8543ed65ba1953bd176b53e9f5"
+        },
+        {
+          "path": "Reicast-NAOMI/MetalSlug6-NAOMI.cht",
+          "git_blob_sha": "d207ef5e169483719f67af1a509bfde4ef2dc5a4"
+        },
+        {
+          "path": "Reicast-NAOMI/MvsC2 NAOMI MAME.cht",
+          "git_blob_sha": "ec4ed1ac0e53abb27406f940ed2fd2ca897113ce"
         }
       ]
     },
@@ -669,6 +824,33 @@
       ]
     },
     {
+      "source_id": "gcmcom-legacy-gba",
+      "platform": "gba",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 2,
+      "cheat_labeled_occurrences": 2,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 2,
+      "distinct_blob_sha1": 2,
+      "distinct_unarchived_blob_sha1": 2,
+      "distinct_unarchived_cheat_labeled_blobs": 2,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 2,
+      "exclusive_unarchived_cheat_labeled_blobs": 2,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cht/Nintendo - Game Boy Advance/Pokemon - Emerald Version (USA, Europe) (Code Breaker).cht",
+          "git_blob_sha": "6e4dd14c142e5f060a4f46f5ceeaf9773e3c2257"
+        },
+        {
+          "path": "cht/Nintendo - Game Boy Advance/Sims, The - Bustin' Out (USA, Europe) (Code Breaker).cht",
+          "git_blob_sha": "a6e55340ae5e214f08386423365409e968bb52d1"
+        }
+      ]
+    },
+    {
       "source_id": "apelfactory-ppsspp-cheatdb",
       "platform": "psp",
       "rights_status": "link_only_rights_review",
@@ -688,6 +870,29 @@
         {
           "path": "cheat.db",
           "git_blob_sha": "216dc9adb6d9192c7e0abf4a1108ca46f36cf3bc"
+        }
+      ]
+    },
+    {
+      "source_id": "gcmcom-legacy-snes",
+      "platform": "snes",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cht/Nintendo - Super Nintendo Entertainment System/Kirby Super Star (USA) (Game Genie).cht",
+          "git_blob_sha": "fff50a5fa3480de901a236bf8f81ba75b2936df3"
         }
       ]
     },
@@ -945,11 +1150,11 @@
     },
     {
       "platform": "dreamcast",
-      "source_catalogs": 1,
-      "file_occurrences": 387,
-      "distinct_source_blobs": 387,
-      "distinct_blobs_absent_from_archive": 387,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 387,
+      "source_catalogs": 2,
+      "file_occurrences": 399,
+      "distinct_source_blobs": 397,
+      "distinct_blobs_absent_from_archive": 397,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 397,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
@@ -971,6 +1176,15 @@
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
+      "platform": "arcade-fbneo",
+      "source_catalogs": 1,
+      "file_occurrences": 32,
+      "distinct_source_blobs": 29,
+      "distinct_blobs_absent_from_archive": 29,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 29,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
       "platform": "gamecube",
       "source_catalogs": 1,
       "file_occurrences": 30,
@@ -978,6 +1192,15 @@
       "distinct_blobs_absent_from_archive": 30,
       "distinct_cheat_labeled_blobs_absent_from_archive": 28,
       "distinct_patch_labeled_blobs_absent_from_archive": 2
+    },
+    {
+      "platform": "multi-retroarch",
+      "source_catalogs": 1,
+      "file_occurrences": 22,
+      "distinct_source_blobs": 22,
+      "distinct_blobs_absent_from_archive": 22,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 22,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
       "platform": "ds",
@@ -989,8 +1212,35 @@
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
+      "platform": "arcade-naomi",
+      "source_catalogs": 1,
+      "file_occurrences": 9,
+      "distinct_source_blobs": 9,
+      "distinct_blobs_absent_from_archive": 9,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 9,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "nes",
+      "source_catalogs": 1,
+      "file_occurrences": 8,
+      "distinct_source_blobs": 8,
+      "distinct_blobs_absent_from_archive": 8,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 8,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
       "platform": "arcade-mame",
       "source_catalogs": 2,
+      "file_occurrences": 2,
+      "distinct_source_blobs": 2,
+      "distinct_blobs_absent_from_archive": 2,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 2,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "gba",
+      "source_catalogs": 1,
       "file_occurrences": 2,
       "distinct_source_blobs": 2,
       "distinct_blobs_absent_from_archive": 2,
@@ -1008,6 +1258,15 @@
     },
     {
       "platform": "n64",
+      "source_catalogs": 1,
+      "file_occurrences": 1,
+      "distinct_source_blobs": 1,
+      "distinct_blobs_absent_from_archive": 1,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 1,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "snes",
       "source_catalogs": 1,
       "file_occurrences": 1,
       "distinct_source_blobs": 1,
