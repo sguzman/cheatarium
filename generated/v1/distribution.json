@@ -3,8 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 58,
-  "external_reference_files": 11029,
-  "external_reference_platforms": 5,
+  "external_reference_files": 14357,
+  "external_reference_platforms": 10,
   "source_files": 56226,
   "game_candidate_groups": 46802,
   "repeated_raw_code_groups": 2973,
@@ -94,14 +94,29 @@
       "size_bytes": 243883
     },
     {
+      "path": "external/3ds.json.gz",
+      "sha256": "48732ae88962a433e865b1108d331256208c710ea493cfccbcf8f27ed0e84eff",
+      "size_bytes": 3847
+    },
+    {
       "path": "external/catalog.json",
-      "sha256": "64033d36d8a585ba9d58a54a964fe7029e883db1b5d9e278ee18704afb2c2198",
-      "size_bytes": 817
+      "sha256": "14096c4ac15bb865f76bc3e84bab38a3247a2b6852177f599de8a28081cf158c",
+      "size_bytes": 1394
     },
     {
       "path": "external/dreamcast.json.gz",
       "sha256": "3537a823d0351cfa84147a4c4d2b89e94ca2baf24d85d4f8d97611fb2c48a823",
       "size_bytes": 18404
+    },
+    {
+      "path": "external/ds.json.gz",
+      "sha256": "a4ffe82a18e997addab1175c4070352d08220a285fbcb2b264f0acb4735ddfcb",
+      "size_bytes": 735
+    },
+    {
+      "path": "external/gamecube.json.gz",
+      "sha256": "25a3875afc7a5686b89d7472f4cc8375b4ca0966d17c725842d549c34fa51dc1",
+      "size_bytes": 2345
     },
     {
       "path": "external/ps1.json.gz",
@@ -114,9 +129,19 @@
       "size_bytes": 211326
     },
     {
+      "path": "external/switch.json.gz",
+      "sha256": "791c8342fcc01e827f11ea9a9a164a7b2de5a1cf1021c0aa062bbdd2becc8ea2",
+      "size_bytes": 158572
+    },
+    {
       "path": "external/vita.json.gz",
       "sha256": "410fe2a453deedd8a2946e68e96363385d4ce1890695a70deba3cb3a8d5eaacc",
       "size_bytes": 30520
+    },
+    {
+      "path": "external/wii.json.gz",
+      "sha256": "8425ef08ed42048abb6e3cf3b82f678ada3dc57bf9919f4a8d0c0e20ab1ccb1a",
+      "size_bytes": 21157
     },
     {
       "path": "external/xbox-360.json.gz",
