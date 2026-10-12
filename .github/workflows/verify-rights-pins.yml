@@ -1,0 +1,37 @@
+name: Verify pinned acquisition rights documents
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "research/rights-evidence-v1.json"
+      - "tools/audit_acquisition_rights.py"
+      - "tools/test_audit_acquisition_rights.py"
+      - "tools/verify_rights_pins.py"
+      - "tools/test_verify_rights_pins.py"
+      - "tools/build_acquisition_priorities.py"
+      - "sources/external-bulk/**"
+      - ".github/workflows/verify-rights-pins.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - name: Validate local metadata and regression tests
+        run: |
+          set -euo pipefail
+          python3 tools/test_audit_acquisition_rights.py
+          python3 tools/test_verify_rights_pins.py
+          python3 tools/verify_rights_pins.py --offline
+      - name: Recheck frozen upstream root trees and notice blob identities
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 tools/verify_rights_pins.py --verify-upstream

@@ -40,6 +40,11 @@ source manifests, and the current acquisition priorities. `--check` compares
 against the committed artifact. Every documentary witness has an immutable
 upstream commit URL and an exact source Git blob SHA-1, allowing human follow-up.
 
-The offline CI check validates the internal evidence/manifest consistency,
-but does **not** itself re-fetch original legal notices or certify contributor
-permission. The report is included in the SHA-256 distribution.
+The full index build validates the evidence/manifest consistency offline.
+The dedicated **Verify pinned acquisition rights documents** workflow also
+re-fetches only the seven pinned upstream Git *root tree listings* and confirms
+that every cited README/LICENSE/contributor Git blob identity, and each observed
+root license filename list, matches the immutable revision. It never downloads
+cheat files or code bodies. This checks what the documents were, **not**
+whether every code author granted redistribution permission. The report is
+included in the SHA-256 distribution.
