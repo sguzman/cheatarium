@@ -10,6 +10,7 @@ Every successful index build produces the following under `generated/v1/`:
 - `<platform>.json.gz`: complete, unaltered-in-meaning *parsed source occurrences*, including code entries and byte-level upstream provenance.
 - `games/<platform>.json.gz`: small, **advisory filename-derived game groups** with links back to source occurrence IDs, regions, formats, and counts.
 - `reports/snes-codec-coverage.json`: deterministic SNES device/syntax interpretation coverage audit, including rejected/ambiguous codes and source samples.
+- `reports/external-overlap.json`: reproducible exact-Git-blob SHA identity audit across all 22,886 pinned link-only source paths (20,291 distinct byte hashes; 2,595 repeat excess occurrences). Its source and platform subtotals, plus cross-repository exact-byte examples, do not prove independent games or gameplay effects. It includes no cheat bodies and is covered by the distribution SHA-256 manifest.
 - `reviews.json`: independently evidenced effect-review register, currently with five external reports and zero tested observations; separately validated and included in checksums.
 - `taxonomy/effects-v1.json`: versioned lexical effect taxonomy (included once in the manifest).
 - `tags/<platform>.json.gz`: per-console lexical description phrase hits, each linked back to its source occurrence; recomputed from originals during validation.

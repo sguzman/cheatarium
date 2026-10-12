@@ -111,6 +111,17 @@ def build_manifest(root):
     external_catalog = checked_json(safe_path(root, "external/catalog.json"))
     if external_catalog["reference_files"] != 22886:
         raise ValueError("External reference count disagrees with pinned source snapshots")
+    # Check exact SHA-1 Git-blob overlap from pinned filename inventories.
+    # This is metadata-only source-byte identity, never effect equivalence.
+    from audit_external_overlap import build as build_external_overlap
+    overlap_rel = "reports/external-overlap.json"
+    overlap_doc = checked_json(safe_path(root, overlap_rel))
+    if overlap_doc != build_external_overlap(ROOT):
+        raise ValueError("Stale, altered, or miscounted external Git-blob overlap audit")
+    if overlap_doc["reference_files"] != external_catalog["reference_files"]:
+        raise ValueError("External reference overlap and catalog counts disagree")
+    manifest_files.append({"path": overlap_rel, **digest(safe_path(root, overlap_rel))})
+    named_paths.add(overlap_rel)
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
                 taxonomy_rel, review_rel, composition_rel, queue_rel,
                 "interpretations/snes-published-groups.json"]:
@@ -352,6 +363,8 @@ def build_manifest(root):
         "compatibility": "filename candidates only; never auto-enable cheat codes",
         "console_bundles": len(entries),
         "external_reference_files": external_catalog["reference_files"],
+        "external_distinct_git_blobs": overlap_doc["distinct_git_blobs"],
+        "external_repeated_blob_excess_occurrences": overlap_doc["repeated_blob_excess_occurrences"],
         "external_reference_platforms": len(external_catalog["platforms"]),
         "source_files": source_files,
         "game_candidate_groups": game_groups,
