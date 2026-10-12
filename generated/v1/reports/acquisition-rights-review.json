@@ -6,10 +6,10 @@
   "rights_reviews_are_legal_permissions": false,
   "license_absence_proves_copyright_or_prohibition": false,
   "no_automatic_rights_clearance": true,
-  "source_catalogs": 24,
-  "source_reviews_with_pinned_evidence": 8,
-  "source_catalogs_not_yet_documented": 16,
-  "reviewed_exclusive_unarchived_cheat_labeled_blobs": 18621,
+  "source_catalogs": 27,
+  "source_reviews_with_pinned_evidence": 9,
+  "source_catalogs_not_yet_documented": 18,
+  "reviewed_exclusive_unarchived_cheat_labeled_blobs": 18884,
   "priority_ranking_does_not_assert_working_cheats": true,
   "reviewed_sources": [
     {
@@ -216,12 +216,39 @@
       "next_clearance_action": "Check original CTRPF/ActionReplay code authors and possible Sharkive migration before approving any new source-code archive."
     },
     {
+      "source_id": "crashgg-ps1-chtdb-delta",
+      "platform": "ps1",
+      "repository": "https://github.com/crashGG/ps1.chtdb",
+      "pinned_revision": "a25a878aac35b3c4c4c9aab43ec266b900259b44",
+      "pinned_git_tree": "a25a878aac35b3c4c4c9aab43ec266b900259b44",
+      "priority_rank": 12,
+      "exclusive_unarchived_cheat_labeled_blobs": 263,
+      "distinct_unarchived_cheat_labeled_blobs": 263,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "explicit_original_author_rights_reservation",
+      "root_license_paths_observed": [
+        "LICENSE"
+      ],
+      "root_license_scope_assessment": "processing_scripts_mit_only",
+      "documentary_evidence": [
+        {
+          "upstream_path": "LICENSE",
+          "git_blob_sha": "9a7eab2dd2663a82dce1c0857501e8b1671792d0",
+          "evidence_type": "explicit_cheat_author_copyright_reservation",
+          "pinned_url": "https://github.com/crashGG/ps1.chtdb/blob/a25a878aac35b3c4c4c9aab43ec266b900259b44/LICENSE"
+        }
+      ],
+      "next_clearance_action": "Identify separately authored PS1 cheat/patch provenance and secure individual reuse terms for the 268 different-byte variants; a derived DuckStation database's MIT grant applies only to processing scripts."
+    },
+    {
       "source_id": "ps2-widescreen-staging",
       "platform": "ps2",
       "repository": "https://github.com/PS2-Widescreen/pnach-DB",
       "pinned_revision": "91902dd63b67b7c8e2fcdf71b165b8e21f415346",
       "pinned_git_tree": "91902dd63b67b7c8e2fcdf71b165b8e21f415346",
-      "priority_rank": 21,
+      "priority_rank": 24,
       "exclusive_unarchived_cheat_labeled_blobs": 0,
       "distinct_unarchived_cheat_labeled_blobs": 0,
       "rights_status": "link_only_rights_review",
@@ -250,10 +277,12 @@
     "shumnot-vitacheat",
     "rogamer97-asm-3ds",
     "rogamer97-asm-gamecube",
+    "deadskullz-nds-formats",
     "rogamer97-asm-ds",
     "rogamer97-asm-switch",
     "apelfactory-ppsspp-cheatdb",
     "real-f00-usrcheat-ds",
+    "saramagrean-psp-cwcheat",
     "pcsx2-official-patches",
     "dospamu-rpcs3-artemis-patches",
     "xenia-canary-game-patches",

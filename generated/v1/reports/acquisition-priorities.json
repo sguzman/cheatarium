@@ -7,16 +7,16 @@
   "unique_games_or_effects_established": false,
   "gameplay_compatibility_verified": false,
   "filename_kind_is_semantic_cheat_verification": false,
-  "source_file_occurrences": 42205,
-  "source_catalogs": 24,
+  "source_file_occurrences": 42483,
+  "source_catalogs": 27,
   "platforms_count": 12,
-  "all_external_distinct_blob_sha1": 36099,
+  "all_external_distinct_blob_sha1": 36376,
   "distinct_blobs_matching_archived_bytes": 56,
-  "distinct_blobs_absent_from_archive": 36043,
-  "distinct_cheat_labeled_blobs_absent_from_archive": 23119,
-  "distinct_patch_labeled_blobs_absent_from_archive": 13202,
+  "distinct_blobs_absent_from_archive": 36320,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 23391,
+  "distinct_patch_labeled_blobs_absent_from_archive": 13207,
   "blobs_labeled_both_cheat_and_patch": 278,
-  "exclusive_unarchived_blobs_in_one_source": 33262,
+  "exclusive_unarchived_blobs_in_one_source": 33539,
   "shared_unarchived_blobs_in_multiple_sources": 2781,
   "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
   "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
@@ -363,6 +363,37 @@
       ]
     },
     {
+      "source_id": "crashgg-ps1-chtdb-delta",
+      "platform": "ps1",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 268,
+      "cheat_labeled_occurrences": 263,
+      "patch_labeled_occurrences": 5,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 268,
+      "distinct_blob_sha1": 268,
+      "distinct_unarchived_blob_sha1": 268,
+      "distinct_unarchived_cheat_labeled_blobs": 263,
+      "distinct_unarchived_patch_labeled_blobs": 5,
+      "exclusive_unarchived_blob_sha1": 268,
+      "exclusive_unarchived_cheat_labeled_blobs": 263,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheats/SCES-00242.cht",
+          "git_blob_sha": "dd08f8e3e0872a3b55f949938b6da7862828de91"
+        },
+        {
+          "path": "cheats/SCES-00894.cht",
+          "git_blob_sha": "4e4733595190f1cbebc1d3a4ffc7de50754948db"
+        },
+        {
+          "path": "cheats/SCES-00899.cht",
+          "git_blob_sha": "0dcfd7062e575828dc36171774c6f90726c0364d"
+        }
+      ]
+    },
+    {
       "source_id": "ademola-3ds-native",
       "platform": "3ds",
       "rights_status": "link_only_rights_review",
@@ -487,6 +518,37 @@
       ]
     },
     {
+      "source_id": "deadskullz-nds-formats",
+      "platform": "ds",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 9,
+      "cheat_labeled_occurrences": 9,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 9,
+      "distinct_blob_sha1": 8,
+      "distinct_unarchived_blob_sha1": 8,
+      "distinct_unarchived_cheat_labeled_blobs": 8,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 8,
+      "exclusive_unarchived_cheat_labeled_blobs": 8,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Cheat Databases/SCC Cheats.7z",
+          "git_blob_sha": "dfe5a34afac8354a87dfff3ce537156bc4f3d2a5"
+        },
+        {
+          "path": "Cheat Databases/cheat.dat",
+          "git_blob_sha": "b6b769abdaa5692cd2e5f660cb46982693cbf673"
+        },
+        {
+          "path": "Cheat Databases/cheat.db",
+          "git_blob_sha": "44c27f11bcf3bfba39f04fc97c70ecb37ac94b6f"
+        }
+      ]
+    },
+    {
       "source_id": "rogamer97-asm-ds",
       "platform": "ds",
       "rights_status": "link_only_rights_review",
@@ -587,6 +649,29 @@
         {
           "path": "usrcheat.dat",
           "git_blob_sha": "f60bf5e0d9cd8030476d2f5bfa9279e18b808435"
+        }
+      ]
+    },
+    {
+      "source_id": "saramagrean-psp-cwcheat",
+      "platform": "psp",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheat.db",
+          "git_blob_sha": "50863d6fe9ac29535b3cec6d668af698a87090de"
         }
       ]
     },
@@ -702,12 +787,12 @@
     },
     {
       "platform": "ps1",
-      "source_catalogs": 1,
-      "file_occurrences": 4635,
-      "distinct_source_blobs": 4634,
-      "distinct_blobs_absent_from_archive": 4634,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 4497,
-      "distinct_patch_labeled_blobs_absent_from_archive": 137
+      "source_catalogs": 2,
+      "file_occurrences": 4903,
+      "distinct_source_blobs": 4902,
+      "distinct_blobs_absent_from_archive": 4902,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 4760,
+      "distinct_patch_labeled_blobs_absent_from_archive": 142
     },
     {
       "platform": "3ds",
@@ -756,20 +841,20 @@
     },
     {
       "platform": "ds",
-      "source_catalogs": 2,
-      "file_occurrences": 6,
-      "distinct_source_blobs": 6,
-      "distinct_blobs_absent_from_archive": 6,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 6,
+      "source_catalogs": 3,
+      "file_occurrences": 15,
+      "distinct_source_blobs": 14,
+      "distinct_blobs_absent_from_archive": 14,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 14,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
       "platform": "psp",
-      "source_catalogs": 1,
-      "file_occurrences": 1,
-      "distinct_source_blobs": 1,
-      "distinct_blobs_absent_from_archive": 1,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 1,
+      "source_catalogs": 2,
+      "file_occurrences": 2,
+      "distinct_source_blobs": 2,
+      "distinct_blobs_absent_from_archive": 2,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 2,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {

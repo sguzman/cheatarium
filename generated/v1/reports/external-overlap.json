@@ -6,12 +6,12 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 42205,
-  "source_catalogs": 24,
+  "reference_files": 42483,
+  "source_catalogs": 27,
   "external_platforms": 12,
-  "distinct_git_blobs": 36099,
-  "repeated_blob_excess_occurrences": 6106,
-  "references_in_repeated_blob_groups": 9508,
+  "distinct_git_blobs": 36376,
+  "repeated_blob_excess_occurrences": 6107,
+  "references_in_repeated_blob_groups": 9510,
   "cross_source_shared_blob_groups": 2781,
   "cross_source_shared_references": 8173,
   "sources": [
@@ -25,6 +25,40 @@
       "source_declared_file_types": {
         "cheat": 4497,
         "patch": 138
+      }
+    },
+    {
+      "id": "crashgg-ps1-chtdb-delta",
+      "platform": "ps1",
+      "reference_files": 268,
+      "distinct_git_blobs": 268,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 263,
+        "patch": 5
+      }
+    },
+    {
+      "id": "deadskullz-nds-formats",
+      "platform": "ds",
+      "reference_files": 9,
+      "distinct_git_blobs": 8,
+      "repeated_blob_excess_occurrences_within_source": 1,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 9
+      }
+    },
+    {
+      "id": "saramagrean-psp-cwcheat",
+      "platform": "psp",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
       }
     },
     {
@@ -310,10 +344,11 @@
     },
     {
       "platform": "ds",
-      "reference_files": 6,
-      "distinct_git_blobs": 6,
-      "repeated_blob_excess_occurrences": 0,
+      "reference_files": 15,
+      "distinct_git_blobs": 14,
+      "repeated_blob_excess_occurrences": 1,
       "source_catalogs": [
+        "deadskullz-nds-formats",
         "real-f00-usrcheat-ds",
         "rogamer97-asm-ds"
       ]
@@ -329,10 +364,11 @@
     },
     {
       "platform": "ps1",
-      "reference_files": 4635,
-      "distinct_git_blobs": 4634,
+      "reference_files": 4903,
+      "distinct_git_blobs": 4902,
       "repeated_blob_excess_occurrences": 1,
       "source_catalogs": [
+        "crashgg-ps1-chtdb-delta",
         "duckstation-chtdb"
       ]
     },
@@ -360,11 +396,12 @@
     },
     {
       "platform": "psp",
-      "reference_files": 1,
-      "distinct_git_blobs": 1,
+      "reference_files": 2,
+      "distinct_git_blobs": 2,
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
-        "apelfactory-ppsspp-cheatdb"
+        "apelfactory-ppsspp-cheatdb",
+        "saramagrean-psp-cwcheat"
       ]
     },
     {
