@@ -123,6 +123,24 @@ SOURCES = {
         "platform": "switch", "expected": {"cheat":4746, "patch":532},
         "rights_note": "The upstream README explicitly describes mirrors of the GBAtemp Switch cheat collection and ChanseyIsTheBest graphics/FPS cheat database, credits independent cheat authors, and provides no root redistribution LICENSE. Preserve only original JSON filenames, Git blob identities, sizes and links. Cheat/gfx mirrors may repeat content and are not independently verified game titles, cheat effects, or compatible builds.",
     },
+    "ibnux-switch-cheatdb": {
+        "repository": "ibnux/switch-cheat",
+        "commit": "14f899df1cecca3c2359125b5b4876c2deeaab20",
+        "platform": "switch", "expected": {"cheat":3136},
+        "rights_note": "Upstream README identifies a compiled Switch cheat database assembled from LordApple SXOS-CheatDB, WerWolv EdiZon and other independent sources; no root LICENSE is present. Preserve only native title/build-ID cheat source filenames, pinned Git hashes and byte counts. No historical code bodies or game-build compatibility claims are redistributed.",
+    },
+    "sthetix-switch-mirror": {
+        "repository": "sthetix/nx-cheats-db",
+        "commit": "e5587ee6844bf9cb7fc6513a49cbf7385387b3bf",
+        "platform": "switch", "expected": {"cheat":5329,"patch":532},
+        "rights_note": "The upstream README explicitly credits external GBAtemp, ChanseyIsTheBest, HamletDuFromage and Cheatslips authors, and has no root redistribution license. Its JSON files are mirrored community cheat or graphics/60FPS sources: path and Git blob metadata only. Do not count mirrors as independent games, verified cheat effects, or permissions to copy code.",
+    },
+    "journeyover-3ds-ctrpf": {
+        "repository": "JourneyOver/CTRPF-AR-CHEAT-CODES",
+        "commit": "ca51e1de9a0d5b7ea0544da4477b1a11f720165e",
+        "platform": "3ds", "expected": {"cheat":628},
+        "rights_note": "The CTRPF AR collection accepts historically community-authored Nintendo 3DS cheat contributions and has no root LICENSE at this pinned revision. Reuse and attribution rights of individual original code authors remain unresolved; preserve title-ID source paths, Git blob hashes and byte sizes, not cheat codes.",
+    },
 }
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -173,6 +191,15 @@ def classify(source, path):
             return "cheat"
         if re.fullmatch(r"cheats_gfx/[0-9a-fA-F]{16}\.json", path):
             return "patch"
+    if source == "ibnux-switch-cheatdb" and re.fullmatch(r"atmosphere/titles/[0-9a-fA-F]{16}/cheats/[0-9a-fA-F]{16}\.txt", path):
+        return "cheat"
+    if source == "sthetix-switch-mirror":
+        if re.fullmatch(r"(?:cheats|cheats_gbatemp)/[0-9a-fA-F]{16}\.json", path):
+            return "cheat"
+        if re.fullmatch(r"cheats_gfx/[0-9a-fA-F]{16}\.json", path):
+            return "patch"
+    if source == "journeyover-3ds-ctrpf" and re.fullmatch(r"Cheats/[^/]+/[0-9a-fA-F]{16}\.txt", path):
+        return "cheat"
     return None
 
 

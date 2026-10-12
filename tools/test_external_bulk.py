@@ -25,11 +25,14 @@ class TestExternalBulk(unittest.TestCase):
             "apelfactory-ppsspp-cheatdb": 1,
             "real-f00-usrcheat-ds": 1,
             "hamlet-switch-cheatdb": 5278,
+            "ibnux-switch-cheatdb": 3136,
+            "sthetix-switch-mirror": 5861,
+            "journeyover-3ds-ctrpf": 628,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(indexes[1]["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 22886)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 32511)
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
@@ -57,6 +60,8 @@ class TestExternalBulk(unittest.TestCase):
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "0004000000188100", "3ds", 5))
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), ".ips", "switch", 5))
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "USERLIST", "ps3", 5))
+        self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "0100000000010000", "switch", 5))
+        self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "00040000000E7300", "3ds", 5))
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "cheat.db", "psp", 5))
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "usrcheat.dat", "ds", 5))
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "0100000000010000", "switch", 5))

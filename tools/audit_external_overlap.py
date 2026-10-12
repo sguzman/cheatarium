@@ -69,7 +69,7 @@ def build(root=ROOT):
     distinct_global = len(occurrences)
     repeated_occurrences = sum(len(rows) for rows in occurrences.values() if len(rows) > 1)
     cross_source_occurrences = sum(len(row["references"]) for row in shared)
-    if n != 22886 or len(sources) != 18:
+    if n != 32511 or len(sources) != 21:
         raise ValueError("Pinned external source inventory count changed")
     if (n - distinct_global != sum(
             row["repeated_blob_excess_occurrences_within_source"] for row in source_rows
