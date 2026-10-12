@@ -6,6 +6,7 @@
   "external_reference_files": 38573,
   "external_switch_native_pair_labels_not_in_archive": 3436,
   "external_switch_distinct_title_only_mirror_labels": 3105,
+  "external_3ds_title_labels_not_in_archived_sharkive": 108,
   "external_ps2_native_pnach_files": 10772,
   "external_ps2_recognized_crc_filename_occurrences": 10754,
   "external_ps2_crc_labels_shared_between_sources": 3310,
@@ -907,6 +908,11 @@
       "path": "repeats/zx-spectrum.json.gz",
       "sha256": "bd4317ab417431b5cca975122e9fbe4fada92efaf8f37913425a1aaf21da16ed",
       "size_bytes": 147
+    },
+    {
+      "path": "reports/3ds-external-title-id-coverage.json",
+      "sha256": "10cbbabb60fc08528f556c6bddca3f4fe3e20f58794c1e59b09313df239de3cd",
+      "size_bytes": 3328
     },
     {
       "path": "reports/external-overlap.json",

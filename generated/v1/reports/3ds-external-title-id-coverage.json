@@ -1,0 +1,87 @@
+{
+  "archived_sharkive_3ds_files": 644,
+  "archived_sharkive_distinct_title_id_labels": 644,
+  "basis": "exact_16hex_title_id_filename_labels_only",
+  "external": [
+    {
+      "distinct_native_title_id_labels": 241,
+      "link_only_source_files": 257,
+      "native_title_id_file_occurrences": 257,
+      "native_title_id_repeat_file_occurrences": 16,
+      "non_native_markdown_or_asm_documents": 0,
+      "revision": "abd55774c369b9c3a4df960e7afdb0391cb52056",
+      "source_id": "ademola-3ds-native",
+      "source_only_title_id_samples": [
+        "0004000000031e00",
+        "0004000000034d00",
+        "0004000000046400",
+        "0004000000048100",
+        "0004000000053700",
+        "0004000000072000",
+        "0004000000072a00",
+        "0004000000080100",
+        "0004000000081e00",
+        "0004000000086300",
+        "0004000000086400",
+        "0004000000088a00"
+      ],
+      "source_titles_also_in_archived_sharkive": 138,
+      "source_titles_missing_from_archived_sharkive": 103
+    },
+    {
+      "distinct_native_title_id_labels": 0,
+      "link_only_source_files": 53,
+      "native_title_id_file_occurrences": 0,
+      "native_title_id_repeat_file_occurrences": 0,
+      "non_native_markdown_or_asm_documents": 53,
+      "revision": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+      "source_id": "rogamer97-asm-3ds",
+      "source_only_title_id_samples": [],
+      "source_titles_also_in_archived_sharkive": 0,
+      "source_titles_missing_from_archived_sharkive": 0
+    },
+    {
+      "distinct_native_title_id_labels": 628,
+      "link_only_source_files": 628,
+      "native_title_id_file_occurrences": 628,
+      "native_title_id_repeat_file_occurrences": 0,
+      "non_native_markdown_or_asm_documents": 0,
+      "revision": "ca51e1de9a0d5b7ea0544da4477b1a11f720165e",
+      "source_id": "journeyover-3ds-ctrpf",
+      "source_only_title_id_samples": [
+        "0004000000054600",
+        "0004000000066d00",
+        "0004000000086400",
+        "000400000008c400",
+        "0004000000113400",
+        "0004000000153500",
+        "0004000000153600",
+        "00040000001d1e00"
+      ],
+      "source_titles_also_in_archived_sharkive": 620,
+      "source_titles_missing_from_archived_sharkive": 8
+    }
+  ],
+  "format": "cheatarium-3ds-native-title-id-coverage-v1",
+  "game_identity_verified": false,
+  "limitations": [
+    "Title ID filename labels are supplied by different upstream authors, not confirmed ROM hashes.",
+    "Two different file paths for the same ID are not proof of duplicate executable cheat effects.",
+    "Many non-native source documents lack exact title-ID filenames and stay outside ID coverage.",
+    "No rights-blocked cheat bodies are copied or independently verified."
+  ],
+  "region_build_effect_equivalence_verified": false,
+  "rights_blocked_external_codes_not_imported": true,
+  "schema_version": 1,
+  "source_metadata_only": true,
+  "summary": {
+    "archived_title_id_labels_absent_from_external": 19,
+    "combined_distinct_3ds_title_id_labels": 752,
+    "external_distinct_title_id_labels": 733,
+    "external_link_only_original_file_occurrences": 938,
+    "external_native_title_id_file_occurrences": 885,
+    "external_title_id_labels_absent_from_sharkive": 108,
+    "non_native_3ds_code_documents": 53,
+    "title_ids_in_both_archive_and_external": 625
+  }
+}
