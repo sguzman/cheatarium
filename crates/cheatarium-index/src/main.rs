@@ -141,7 +141,6 @@ struct GameIndex {
     candidates: Vec<GameCandidate>,
 }
 
-
 fn parse_mohasi_ps3_compiled(text: &str) -> cheatarium_index::ParsedCheats {
     // The upstream plugin syntax uses name/author/mode/score headers and raw
     // w8/w16/w32/aob commands. Preserve the *entire* source-native block for
@@ -166,7 +165,11 @@ fn parse_mohasi_ps3_compiled(text: &str) -> cheatarium_index::ParsedCheats {
     let mut name = None;
     let mut raw = String::new();
     for line in text.split_inclusive('\n') {
-        if let Some(title) = line.strip_prefix("name: ").map(str::trim).filter(|v| !v.is_empty()) {
+        if let Some(title) = line
+            .strip_prefix("name: ")
+            .map(str::trim)
+            .filter(|v| !v.is_empty())
+        {
             flush(&mut codes, &mut name, &mut raw);
             name = Some(title.to_owned());
         }
@@ -1344,7 +1347,11 @@ fn run() -> Result<()> {
                 "mohasi-ps3-compiled"
                     if original.starts_with("compiled/") && original.ends_with(".txt") =>
                 {
-                    ("ps3", "ps3-mohasi-compiled", original.trim_start_matches("compiled/").to_owned())
+                    (
+                        "ps3",
+                        "ps3-mohasi-compiled",
+                        original.trim_start_matches("compiled/").to_owned(),
+                    )
                 }
                 "artemis-ps3"
                     if original.starts_with("docs/codes/") && original.ends_with(".ncl") =>
@@ -1521,10 +1528,12 @@ fn run() -> Result<()> {
             let source_declared_title = if manifest_id == "goldhen" {
                 goldhen_titles.get(original).cloned()
             } else if manifest_id == "mohasi-ps3-compiled" {
-                decoded.lines().find_map(|line| line.strip_prefix("# ")
-                    .map(str::trim)
-                    .filter(|s| !s.is_empty())
-                    .map(str::to_owned))
+                decoded.lines().find_map(|line| {
+                    line.strip_prefix("# ")
+                        .map(str::trim)
+                        .filter(|s| !s.is_empty())
+                        .map(str::to_owned)
+                })
             } else if manifest_id == "emucorex-cheatdevice-pnach" {
                 decoded.lines().find_map(|line| {
                     line.strip_prefix("gametitle=")
@@ -1908,10 +1917,25 @@ author: another author\nmode: once\naob 0123 4567\n";
         let parsed = parse_mohasi_ps3_compiled(input);
         assert_eq!(parsed.codes.len(), 2);
         assert_eq!(parsed.codes[0].ordinal, 0);
-        assert_eq!(parsed.codes[0].description.as_deref(), Some("Infinite Health"));
-        assert!(parsed.codes[0].code.as_ref().unwrap().contains("score BCES00001"));
-        assert!(parsed.codes[0].code.as_ref().unwrap().contains("author: original creator"));
-        assert!(parsed.codes[1].code.as_ref().unwrap().contains("aob 0123 4567"));
+        assert_eq!(
+            parsed.codes[0].description.as_deref(),
+            Some("Infinite Health")
+        );
+        assert!(parsed.codes[0]
+            .code
+            .as_ref()
+            .unwrap()
+            .contains("score BCES00001"));
+        assert!(parsed.codes[0]
+            .code
+            .as_ref()
+            .unwrap()
+            .contains("author: original creator"));
+        assert!(parsed.codes[1]
+            .code
+            .as_ref()
+            .unwrap()
+            .contains("aob 0123 4567"));
         assert!(parsed.codes.iter().all(|c| c.verification == "unverified"));
         assert!(parsed.codes.iter().all(|c| !c.source_enabled));
     }

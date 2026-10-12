@@ -520,13 +520,13 @@
       "repeat_index_artifact": "repeats/ps3.json.gz",
       "repeat_groups": 0,
       "tag_index_artifact": "tags/ps3.json.gz",
-      "tag_matches": 6696,
-      "game_candidate_groups": 2541,
-      "source_files": 2541,
-      "code_fields": 29527,
+      "tag_matches": 27997,
+      "game_candidate_groups": 6884,
+      "source_files": 6884,
+      "code_fields": 116358,
       "native_memory_entries": 0,
       "decoded_snes_code_fields": 0,
-      "warnings": 62
+      "warnings": 4405
     },
     {
       "platform": "ps4",
