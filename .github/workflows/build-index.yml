@@ -100,7 +100,7 @@ on:
       - "sources/xan1242-gt3-freecam.json"
       - "sources/dolphin-game-cheats.json"
       - "sources/candidates.json"
-      - "sources/rights-evidence-v1.json"
+      - "research/rights-evidence-v1.json"
       - "tools/validate.py"
       - "identities/**"
       - "taxonomy/**"

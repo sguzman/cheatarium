@@ -35,7 +35,7 @@ authorship, or redistribution rights.
 ## Reproduction and validation
 
 Run `python3 tools/audit_acquisition_rights.py --write` to reproduce the
-metadata-only report from `sources/rights-evidence-v1.json`, the pinned
+metadata-only report from `research/rights-evidence-v1.json`, the pinned
 source manifests, and the current acquisition priorities. `--check` compares
 against the committed artifact. Every documentary witness has an immutable
 upstream commit URL and an exact source Git blob SHA-1, allowing human follow-up.

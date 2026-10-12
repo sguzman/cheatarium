@@ -14,7 +14,7 @@ from pathlib import Path
 from build_acquisition_priorities import build as build_priorities
 from external_bulk import ROOT, load
 
-EVIDENCE = Path("sources/rights-evidence-v1.json")
+EVIDENCE = Path("research/rights-evidence-v1.json")
 OUTPUT = Path("generated/v1/reports/acquisition-rights-review.json")
 FORMAT = "cheatarium-acquisition-rights-review-v1"
 INPUT_FORMAT = "cheatarium-pinned-source-rights-evidence-v1"
