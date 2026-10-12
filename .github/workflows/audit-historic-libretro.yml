@@ -8,6 +8,9 @@ on:
       - "tools/test_audit_historic_libretro.py"
       - "tools/export_historic_libretro.py"
       - "tools/test_export_historic_libretro.py"
+      - "tools/audit_historic_external_overlap.py"
+      - "tools/test_audit_historic_external_overlap.py"
+      - "sources/external-bulk/**"
       - "generated/v1/reports/libretro-historical-fork-coverage.json"
       - ".github/workflows/audit-historic-libretro.yml"
   workflow_dispatch:
@@ -25,6 +28,7 @@ jobs:
         run: |
           python3 tools/test_audit_historic_libretro.py
           python3 tools/test_export_historic_libretro.py
+          python3 tools/test_audit_historic_external_overlap.py
           python3 tools/audit_historic_libretro.py --offline-check
       - name: Verify original pinned Git tree metadata and export link-only gaps
         env:
@@ -32,10 +36,13 @@ jobs:
         run: |
           python3 tools/audit_historic_libretro.py --check
           python3 tools/export_historic_libretro.py --output historic-libretro-candidates.json
+          python3 tools/audit_historic_external_overlap.py --output historic-vs-external-blobs.json
       - name: Publish historical link-only reference inventory
         uses: actions/upload-artifact@v4
         with:
           name: historic-libretro-unarchived-metadata
-          path: historic-libretro-candidates.json
+          path: |
+            historic-libretro-candidates.json
+            historic-vs-external-blobs.json
           if-no-files-found: error
           retention-days: 90

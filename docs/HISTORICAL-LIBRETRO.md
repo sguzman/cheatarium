@@ -71,3 +71,19 @@ delta. Next acquisition step: separate rumble/supporting files from
 cheat data and investigate original-author provenance for the remaining
 historical bytes. Preserve unmodified originals and source attribution
 only when redistribution rights can be defended.
+
+
+## Other link-only source overlap
+
+The historical workflow also produces a metadata-only
+`historic-vs-external-blobs.json` report. It compares each of the
+unarchived historical Git blobs with all pinned external Git-blob
+references, excluding the exact bytes already preserved in the archive.
+It records source/folder attribution and bounded matching examples, and
+calculates the distinct byte-gap union **without adding mirror duplicates**.
+
+A shared Git blob is byte identity only. The union is not a count of
+distinct games, functioning codes, or legally redistributable cheat bodies.
+This audit deliberately does not copy any historical or external payload.
+The combined report is published alongside the historical filename
+inventory as a CI artifact, not inserted into archived-cheat bundles.
