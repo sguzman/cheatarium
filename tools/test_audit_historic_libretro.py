@@ -26,7 +26,7 @@ class HistoricalForkTests(unittest.TestCase):
             ("NES/B.cht", "e" * 40, 2),
             ("NES/other.cht", "f" * 40, 3),
         ]
-        r = compile_report(h, modern, {"b" * 40})
+        r = compile_report(h, modern, {"b" * 40}, [])
         self.assertEqual(r["same_path_same_blob_occurrences"], 1)
         self.assertEqual(r["same_path_different_blob_occurrences"], 1)
         self.assertEqual(r["historical_paths_absent_from_baseline"], 3)
@@ -36,6 +36,17 @@ class HistoricalForkTests(unittest.TestCase):
         self.assertEqual(r["candidate_distinct_blobs_absent_from_both"], 2)
         self.assertEqual(r["candidate_occurrences_by_historical_folder"], {"DS": 3})
         self.assertFalse(r["historical_code_redistribution_rights_confirmed"])
+
+    def test_other_archived_sources_exclude_exact_byte_matches(self):
+        h = [("DS/A.cht", "a" * 40, 4),
+             ("DS/B.cht", "b" * 40, 4),
+             ("DS/C.cht", "b" * 40, 4)]
+        r = compile_report(h, [], set(), [("a" * 40, "source-three", "archive/source-three/A")])
+        self.assertEqual(r["candidate_occurrences_absent_from_both"], 3)
+        self.assertEqual(r["candidate_occurrences_already_in_other_archived_sources"], 1)
+        self.assertEqual(r["candidate_occurrences_absent_from_entire_archive"], 2)
+        self.assertEqual(r["candidate_distinct_blobs_absent_from_entire_archive"], 1)
+        self.assertEqual(r["archive_source_collection_count"], 1)
 
     def test_truncated_and_wrong_tree_rejected(self):
         good = {"sha": HIST_TREE, "truncated": False, "tree": [blob("DS/A.cht", "a")]}
@@ -63,7 +74,7 @@ class HistoricalForkTests(unittest.TestCase):
         self.assertEqual(len(parse_cheat_tree(payload, HIST_TREE)), 1)
 
     def test_integrity_and_rights_assertions(self):
-        r = compile_report([("NES/A.cht", "a" * 40, 1)], [], set())
+        r = compile_report([("NES/A.cht", "a" * 40, 1)], [], set(), [])
         r["candidate_occurrences_by_historical_folder"] = {"NES": 2}
         with self.assertRaises(ValueError):
             validate_report(r)

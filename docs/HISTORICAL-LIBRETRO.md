@@ -31,15 +31,16 @@ The historical snapshot contains 15,714 native `.cht` file occurrences,
 versus 27,915 in the modern baseline. An exact byte comparison finds
 4,779 historical occurrences with no matching blob in the baseline.
 Of those, 410 have a matching blob in Cheatarium's already archived
-BitHeX delta. The remaining **4,369 file occurrences (4,057 distinct
-Git blobs)** have no exact byte match in those **two** archived datasets.
+BitHeX delta. A second exact-byte comparison against **all 81 archived
+source collections** found no further matches. The remaining **4,369
+file occurrences (4,057 distinct Git blobs)** have no exact byte match
+in Cheatarium's current 67,831-file archive.
 Most of these belong to Nintendo DS (3,213 occurrences), followed by
 Game Boy Advance (419), ZX Spectrum +3 (393) and MSX-family (317).
 
-These **are not yet proven absent from every Cheatarium source**;
-the audit compares two pinned Libretro-derived source inventories,
-not every one of Cheatarium's independent console collections.
-Some paths may be renames, removed versions or duplicated bytes;
+The archive-wide cross-check uses the original Git blob hashes
+recorded in every pinned source manifest. It shows **byte absence**,
+not semantic novelty. Some paths may be renames, removed versions or duplicated bytes;
 byte inequality does not establish a new game, new effect or valid
 cheat. In particular, the snapshot includes RetroArch rumble files
 alongside cheat-oriented `.cht` filenames.
