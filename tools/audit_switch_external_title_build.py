@@ -108,7 +108,7 @@ def compare(archived, externals):
             "other_cheat_documents_without_exact_native_ids": ignored,
         })
         by_source[source] = (pairs, titles)
-    if link_source_ids != NATIVE | TITLE_ONLY | NON_NATIVE:
+    if link_source_ids != set(NATIVE) | TITLE_ONLY | NON_NATIVE:
         raise ValueError("Incomplete external Switch catalog review")
     if sum(x["link_only_file_occurrences"] for x in source_rows) != sum(
         len(x["files"]) for x in externals if x["platform"] == "switch"
