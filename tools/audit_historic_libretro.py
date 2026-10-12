@@ -7,6 +7,7 @@ already imported BitHeX delta, then against every archived source manifest.
 """
 import argparse
 import json
+import os
 import re
 import urllib.request
 from collections import Counter
@@ -184,10 +185,13 @@ def fetch_tree(repo, revision, *, recursive=False):
     url = f"https://api.github.com/repos/{repo}/git/trees/{revision}"
     if recursive:
         url += "?recursive=1"
-    request = urllib.request.Request(url, headers={
+    headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "Cheatarium-historical-metadata-audit",
-    })
+    }
+    if os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+    request = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(request, timeout=90) as response:
         return json.load(response)
 

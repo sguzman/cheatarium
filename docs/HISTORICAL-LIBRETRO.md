@@ -22,8 +22,19 @@ SHA-1 identities; **no historical cheat payloads were imported**.
 
 Run `python3 tools/audit_historic_libretro.py --offline-check` to
 verify the committed summary without external requests. Run `--check`
-to re-fetch the two immutable Git trees and compare the report; `--write`
-regenerates it. The audit requires no ROMs, no emulator and no cheat execution.
+to re-fetch the two complete, immutable Git cheat trees and compare the report;
+`--write` regenerates it. The audit requires no ROMs, no emulator and no
+cheat execution.
+
+The dedicated historical audit workflow also publishes a downloadable,
+metadata-only `historic-libretro-unarchived-metadata` artifact listing each
+of the 4,369 byte-absent occurrences by pinned original path, Git blob SHA-1
+and byte size. Each row links to the upstream immutable source revision.
+`tools/export_historic_libretro.py --output <file>` recreates the inventory
+from Git metadata; it rejects a source-count mismatch against the committed
+audit. Filename-only `(RetroArch Rumbles)` signals are reported separately,
+but no code or rumble payload is downloaded, imported, or gameplay-verified.
+The artifact is not part of the archived console-cheat totals.
 
 ## Interpretation
 
