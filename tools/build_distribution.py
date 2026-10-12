@@ -151,6 +151,25 @@ def build_manifest(root):
     manifest_files.append({"path": archive_overlap_rel,
                            **digest(safe_path(root, archive_overlap_rel))})
     named_paths.add(archive_overlap_rel)
+    # Independently recompute a licensing-priority queue by distinct original
+    # Git blob identities, discounting mirrors and separating cheat labels
+    # from patch labels. Ranking is NOT a permission grant.
+    from build_acquisition_priorities import build as build_acquisition_priorities
+    priorities_rel = "reports/acquisition-priorities.json"
+    priorities = checked_json(safe_path(root, priorities_rel))
+    if priorities != build_acquisition_priorities(ROOT):
+        raise ValueError("Stale or altered external acquisition priority scorecard")
+    if (priorities["distinct_blobs_absent_from_archive"] !=
+            archive_overlap["external_distinct_git_blobs_without_archive_byte_match"]
+            or priorities["source_file_occurrences"] != external_catalog["reference_files"]
+            or priorities["source_rights_cleared_for_import"] is not False
+            or priorities["unique_games_or_effects_established"] is not False):
+        raise ValueError("External acquisition queue counts or rights claims invalid")
+    if priorities_rel in named_paths:
+        raise ValueError("Duplicate external acquisition priority report")
+    manifest_files.append({"path": priorities_rel,
+                           **digest(safe_path(root, priorities_rel))})
+    named_paths.add(priorities_rel)
     # Strict native 16hex Switch title/build filename comparisons, and
     # separate title-only JSON mirror labels, without copying code bodies.
     from audit_switch_external_title_build import build as audit_switch_external

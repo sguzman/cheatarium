@@ -2,6 +2,25 @@
 
 **North star:** a huge, pleasant, searchable collection, where original cheat files and meaningful game/edition/device relationships are both preserved.
 
+## Rights-review acquisition scorecard (2026-10-12)
+
+The reproducible [acquisition-priorities report](../generated/v1/reports/acquisition-priorities.json)
+ranks the **23 existing link-only catalog IDs** by **distinct, unarchived Git blobs
+with cheat-labeled original filenames that occur in only that source**, rather
+than counting mirrors or unrelated patches as new game cheats. The tie-breaker
+is total cheat-labeled unarchived distinct bytes, then exclusive blobs of any
+kind, then source ID. Platform-level counts and up to three source path
+witnesses per collection identify the best places to investigate contributor
+licenses, not necessarily the best collection to redistribute.
+
+Regenerate offline with `python3 tools/build_acquisition_priorities.py --write`,
+and verify with `--check`. The report independently reconciles its pinned
+blob counts against both previously published external overlap reports.
+It is included in the SHA-256 distribution and rebuilt/verified in CI.
+**All entries remain rights-unresolved**. No external cheat or patch payload
+is fetched, copied, or marked verified. Exact source-byte identity does not
+establish distinct games, valid codes, author rights, or ROM compatibility.
+
 ## Acquisition priority: BULK FIRST (2026-10-11)
 
 Entire licensed/pinned game-cheat collections are the default unit of acquisition. Expand complete platform coverage before single-title work. Evaluate progress by new source files and new filename-derived game candidates (with duplicate and build ambiguity disclosed), never by commit count. Do not hand-curate isolated titles while material bulk coverage opportunities remain. Individual-title sources are a final gap-filling stage, justified only by measured coverage gaps. Rights-unresolved external data remains link-only until it can be redistributed; it must not be presented as acquired files.
