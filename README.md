@@ -51,4 +51,6 @@ Cheatarium preserves **67,831 archived original files, including cheat data, sup
 
 The platform registry covers **67 systems/environments** (including classic consoles, handhelds, arcade, home computers and game engines); three games have manual curated records. SNES research decodes over 66,000 historical fields; see the [SNES audit](generated/v1/reports/snes-codec-coverage.json). **Next priority remains complete bulk console acquisition and measurable coverage expansion, not isolated game-by-game curation.** Earlier source authors' rights cannot automatically be inferred from host repository licenses.
 
+**PS2 filename/CRC coverage:** The [strict external PNACH filename audit](generated/v1/reports/external-ps2-crc-labels.json) compares source-declared CRC labels and exact serial+CRC tokens across the three pinned PS2 catalogues, without loading cheat code bodies or inferring game compatibility. This makes cross-source bulk acquisition overlap measurable independently of byte-level duplicates.
+
 The archive is separate from any particular emulator, but future integrations may make these cheats directly usable in projects such as Starbyte.

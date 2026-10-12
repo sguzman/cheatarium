@@ -21,6 +21,10 @@ The 58-platform bulk distribution includes PS5-native etaHEN, original PS Vita r
 
 An emulator can download the relevant platform artifacts at a **pinned Cheatarium commit**; it does not need the raw archives. Filenames and title-group keys are suggestions, never trusted release/ROM identities.
 
+## External PS2 filename/CRC overlap
+
+`generated/v1/reports/external-ps2-crc-labels.json` measures strict native `.pnach` filename CRC and serial-label overlap across the pinned official PCSX2, consolidated DAOWAce and xs1l3n7x repositories. It accepts only complete eight-digit hexadecimal CRC labels (alone, as a leading code or after a serial) and explicitly leaves malformed names unresolved. CRCs are **source filename tokens, not authenticated ROM hashes**. No cheat payloads or author permissions are inferred; the report is included in the checksum-verified distribution manifest.
+
 ## External pinned source discovery (metadata only)
 
 Cheatarium's **38,573** copyright-review-blocked original upstream files are published separately from imported cheats in a checksum-checked `generated/v1/external/catalog.json` and twelve compressed platform bundles. There are **4,635 PS1, 10,772 PS2, 2,926 PS3 patch, 1 PSP database, 796 Vita, 501 Xbox 360, 387 Dreamcast, 17,275 Switch, 306 Wii, 30 GameCube, 938 3DS and 6 DS** file references, not additional original archive files or verified cheat codes. They contain **only** original file paths, Git blob hashes, byte lengths, pinned source URLs, source IDs, and cheat/patch file categories. PS2, Xbox 360 and Switch graphics/FPS patches are not assumed to be gameplay cheats. Source and binary assembly/IPS patches remain external links, never copied payloads.

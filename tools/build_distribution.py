@@ -136,6 +136,20 @@ def build_manifest(root):
     manifest_files.append({"path": archive_overlap_rel,
                            **digest(safe_path(root, archive_overlap_rel))})
     named_paths.add(archive_overlap_rel)
+    from audit_ps2_external_crc_labels import build as audit_external_ps2_labels
+    ps2_labels_rel = "reports/external-ps2-crc-labels.json"
+    ps2_labels = checked_json(safe_path(root, ps2_labels_rel))
+    if ps2_labels != audit_external_ps2_labels(ROOT):
+        raise ValueError("Stale or modified PS2 PNACH CRC/serial filename audit")
+    if (ps2_labels["source_native_pnach_files"] !=
+            sum(row["source_files"] for row in external_catalog["platforms"]
+                if row["platform"] == "ps2")
+            or not ps2_labels["link_only"]
+            or ps2_labels["filename_labels_are_verified_game_or_rom_build_ids"]):
+        raise ValueError("External PS2 CRC label file counts or safety flags incorrect")
+    manifest_files.append({"path": ps2_labels_rel,
+                           **digest(safe_path(root, ps2_labels_rel))})
+    named_paths.add(ps2_labels_rel)
     manifest_files.append({"path": overlap_rel, **digest(safe_path(root, overlap_rel))})
     named_paths.add(overlap_rel)
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
@@ -379,6 +393,9 @@ def build_manifest(root):
         "compatibility": "filename candidates only; never auto-enable cheat codes",
         "console_bundles": len(entries),
         "external_reference_files": external_catalog["reference_files"],
+        "external_ps2_native_pnach_files": ps2_labels["source_native_pnach_files"],
+        "external_ps2_recognized_crc_filename_occurrences": ps2_labels["recognized_crc_filename_occurrences"],
+        "external_ps2_crc_labels_shared_between_sources": ps2_labels["crc_labels_in_two_or_more_sources"],
         "external_distinct_git_blobs": overlap_doc["distinct_git_blobs"],
         "external_references_matching_archived_bytes": archive_overlap["external_references_matching_archived_bytes"],
         "external_distinct_git_blobs_matching_archive": archive_overlap["external_distinct_git_blobs_matching_archive"],

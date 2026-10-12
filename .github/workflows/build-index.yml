@@ -247,6 +247,7 @@ jobs:
           python3 tools/test_build_external_distribution.py
           python3 tools/test_external_overlap.py
           python3 tools/test_external_archive_overlap.py
+          python3 tools/test_ps2_external_crc_labels.py
           python3 tools/test_import_mohasi_ps3.py
           python3 tools/test_import_bithex_libretro_delta.py
       - name: Confirm python-tests stage
@@ -305,6 +306,8 @@ jobs:
           python3 tools/audit_external_overlap.py --check
           python3 tools/audit_external_archive_overlap.py --write
           python3 tools/audit_external_archive_overlap.py --check
+          python3 tools/audit_ps2_external_crc_labels.py --write
+          python3 tools/audit_ps2_external_crc_labels.py --check
       - name: Confirm index-generated stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
