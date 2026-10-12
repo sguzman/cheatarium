@@ -100,24 +100,41 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         }
     }
     if mode == "external" {
-        if effect.is_some() || exact_code.is_some() || game_key.is_some()
-            || entry_role.is_some() || exact_ordinal.is_some()
-            || description_contains.is_some() || category.is_some()
-            || composition_relation.is_some() || source_record_id.is_some()
-            || varying_descriptions || region_hint.is_some() || declared_format.is_some()
+        if effect.is_some()
+            || exact_code.is_some()
+            || game_key.is_some()
+            || entry_role.is_some()
+            || exact_ordinal.is_some()
+            || description_contains.is_some()
+            || category.is_some()
+            || composition_relation.is_some()
+            || source_record_id.is_some()
+            || varying_descriptions
+            || region_hint.is_some()
+            || declared_format.is_some()
         {
             return Err("external accepts --db, --platform, --title, --source-id, --offset, --limit and --json only".into());
         }
-        let query = title.as_deref().ok_or("external requires --title as a filename search query")?;
+        let query = title
+            .as_deref()
+            .ok_or("external requires --title as a filename search query")?;
         let results = cheatarium_client::external::search(
-            &root, query, platform.as_deref(), source_id.as_deref(), offset, limit
+            &root,
+            query,
+            platform.as_deref(),
+            source_id.as_deref(),
+            offset,
+            limit,
         )?;
         if json {
             println!("{}", serde_json::to_string_pretty(&results)?);
         } else {
             println!("{} pinned link-only file references match {:?}; none are archived cheat bodies or gameplay-verified", results.total, query);
             for item in &results.results {
-                println!("- {} [{}] {} — {}", item.source_id, item.kind, item.path, item.upstream_url);
+                println!(
+                    "- {} [{}] {} — {}",
+                    item.source_id, item.kind, item.path, item.upstream_url
+                );
             }
         }
         return Ok(());

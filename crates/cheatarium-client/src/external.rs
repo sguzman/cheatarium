@@ -102,13 +102,18 @@ pub struct ExternalSearch {
 fn checked_file(root: &Path, dist: &Dist, rel: &str) -> Result<Vec<u8>> {
     // Relatives are program-constructed from validated platform slugs.
     if !(rel == "external/catalog.json"
-        || (rel.starts_with("external/") && rel.ends_with(".json.gz")
-            && rel[9..rel.len()-8].bytes().all(|c| c.is_ascii_lowercase()
-                || c.is_ascii_digit() || c == b'-')))
+        || (rel.starts_with("external/")
+            && rel.ends_with(".json.gz")
+            && rel[9..rel.len() - 8]
+                .bytes()
+                .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')))
     {
         return Err("Unsafe external artifact path".into());
     }
-    let digest = dist.files.iter().find(|f| f.path == rel)
+    let digest = dist
+        .files
+        .iter()
+        .find(|f| f.path == rel)
         .ok_or("External artifact is absent from the distribution manifest")?;
     let bytes = fs::read(root.join(rel))?;
     if bytes.len() as u64 != digest.size_bytes || bytes.len() > MAX_JSON as usize {
@@ -128,14 +133,19 @@ fn read_bundle(root: &Path, dist: &Dist, platform: &ExternalPlatform) -> Result<
     }
     let bytes = checked_file(root, dist, &path)?;
     let mut data = Vec::new();
-    GzDecoder::new(&bytes[..]).take(MAX_JSON + 1).read_to_end(&mut data)?;
+    GzDecoder::new(&bytes[..])
+        .take(MAX_JSON + 1)
+        .read_to_end(&mut data)?;
     if data.len() as u64 > MAX_JSON {
         return Err("Uncompressed external reference bundle exceeds size limit".into());
     }
     let bundle: ExternalBundle = serde_json::from_slice(&data)?;
-    if bundle.schema_version != 1 || bundle.format != FORMAT
-        || bundle.platform != platform.platform || !bundle.metadata_only
-        || bundle.rights_status != STATUS || bundle.gameplay_verified
+    if bundle.schema_version != 1
+        || bundle.format != FORMAT
+        || bundle.platform != platform.platform
+        || !bundle.metadata_only
+        || bundle.rights_status != STATUS
+        || bundle.gameplay_verified
         || bundle.records.len() != platform.source_files
     {
         return Err("Incorrect metadata-only external reference bundle".into());
@@ -154,11 +164,17 @@ fn read_bundle(root: &Path, dist: &Dist, platform: &ExternalPlatform) -> Result<
             || !record.repository.starts_with("https://github.com/")
             || record.revision.len() != 40
             || !record.revision.bytes().all(|c| c.is_ascii_hexdigit())
-            || record.path.is_empty() || record.path.starts_with('/')
-            || record.path.contains('\\') || record.path.contains('\0')
-            || record.path.split('/').any(|seg| seg.is_empty() || seg == "." || seg == "..")
-            || !record.upstream_url.starts_with(
-                &format!("{}/blob/{}/", record.repository, record.revision))
+            || record.path.is_empty()
+            || record.path.starts_with('/')
+            || record.path.contains('\\')
+            || record.path.contains('\0')
+            || record
+                .path
+                .split('/')
+                .any(|seg| seg.is_empty() || seg == "." || seg == "..")
+            || !record
+                .upstream_url
+                .starts_with(&format!("{}/blob/{}/", record.repository, record.revision))
         {
             return Err("Invalid or unsafe external source metadata".into());
         }
@@ -198,8 +214,12 @@ pub fn search(
         return Err("External catalog too large".into());
     }
     let catalog: ExternalCatalog = serde_json::from_slice(&catalog_bytes)?;
-    if catalog.schema_version != 1 || catalog.format != FORMAT || !catalog.metadata_only
-        || catalog.rights_status != STATUS || catalog.gameplay_verified || catalog.archive_included
+    if catalog.schema_version != 1
+        || catalog.format != FORMAT
+        || !catalog.metadata_only
+        || catalog.rights_status != STATUS
+        || catalog.gameplay_verified
+        || catalog.archive_included
     {
         return Err("Invalid or unsafe external reference catalog".into());
     }
@@ -209,8 +229,10 @@ pub fn search(
     let mut matching_platform = false;
     for entry in &catalog.platforms {
         if entry.platform.is_empty()
-            || !entry.platform.bytes().all(|c| c.is_ascii_lowercase()
-                || c.is_ascii_digit() || c == b'-')
+            || !entry
+                .platform
+                .bytes()
+                .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == b'-')
         {
             return Err("Invalid external platform slug".into());
         }
@@ -229,7 +251,8 @@ pub fn search(
             hits.push(reference);
         }
     }
-    if counted != catalog.reference_files || catalog.platforms.is_empty()
+    if counted != catalog.reference_files
+        || catalog.platforms.is_empty()
         || (platform.is_some() && !matching_platform)
     {
         return Err("External catalog count or requested platform mismatch".into());
@@ -237,16 +260,22 @@ pub fn search(
     let total = hits.len();
     let results = hits.into_iter().skip(offset).take(limit).collect();
     Ok(ExternalSearch {
-        schema: FORMAT, query: query.to_owned(),
+        schema: FORMAT,
+        query: query.to_owned(),
         platform_filter: platform.map(str::to_owned),
         source_filter: source_id.map(str::to_owned),
         external_reference_files_total: catalog.reference_files,
         external_platforms: catalog.platforms.len(),
-        total, offset, returned: total.saturating_sub(offset).min(limit),
+        total,
+        offset,
+        returned: total.saturating_sub(offset).min(limit),
         has_more: offset.saturating_add(limit) < total,
-        metadata_only: true, redistribution: STATUS,
-        gameplay_verified: false, archive_included: false,
-        artifact_checksums_verified: true, manifest_authenticated: false,
+        metadata_only: true,
+        redistribution: STATUS,
+        gameplay_verified: false,
+        archive_included: false,
+        artifact_checksums_verified: true,
+        manifest_authenticated: false,
         results,
     })
 }
@@ -264,10 +293,13 @@ mod tests {
             "rights_status": STATUS, "code": "DO NOT REHOST"
         });
         assert!(serde_json::from_value::<ExternalReference>(record).is_err());
-        assert!(serde_json::from_value::<ExternalCatalog>(serde_json::json!({
-            "schema_version": 1, "format": FORMAT, "metadata_only": false,
-            "rights_status": STATUS, "gameplay_verified": false,
-            "archive_included": false, "reference_files": 1, "platforms": []
-        })).is_ok());
+        assert!(
+            serde_json::from_value::<ExternalCatalog>(serde_json::json!({
+                "schema_version": 1, "format": FORMAT, "metadata_only": false,
+                "rights_status": STATUS, "gameplay_verified": false,
+                "archive_included": false, "reference_files": 1, "platforms": []
+            }))
+            .is_ok()
+        );
     }
 }

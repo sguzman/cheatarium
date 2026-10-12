@@ -3,6 +3,8 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 58,
+  "external_reference_files": 11029,
+  "external_reference_platforms": 5,
   "source_files": 56226,
   "game_candidate_groups": 46802,
   "repeated_raw_code_groups": 2973,
@@ -90,6 +92,36 @@
       "path": "dreamcast.json.gz",
       "sha256": "029bb8e3a853221bf5417b40f81fe6769e4c6b1d229d42fd119cb4e2f83c5f56",
       "size_bytes": 243883
+    },
+    {
+      "path": "external/catalog.json",
+      "sha256": "64033d36d8a585ba9d58a54a964fe7029e883db1b5d9e278ee18704afb2c2198",
+      "size_bytes": 817
+    },
+    {
+      "path": "external/dreamcast.json.gz",
+      "sha256": "3537a823d0351cfa84147a4c4d2b89e94ca2baf24d85d4f8d97611fb2c48a823",
+      "size_bytes": 18404
+    },
+    {
+      "path": "external/ps1.json.gz",
+      "sha256": "a7b47599f7e287e41d47c952d810d4d6f8780dcae2d73de5657663a8fbab498d",
+      "size_bytes": 171530
+    },
+    {
+      "path": "external/ps2.json.gz",
+      "sha256": "3eea3f64d365eeb9c3fe3e7c8f54a48d38e4cd63e604f2674c421b5e343ff754",
+      "size_bytes": 211326
+    },
+    {
+      "path": "external/vita.json.gz",
+      "sha256": "410fe2a453deedd8a2946e68e96363385d4ce1890695a70deba3cb3a8d5eaacc",
+      "size_bytes": 30520
+    },
+    {
+      "path": "external/xbox-360.json.gz",
+      "sha256": "bd0db1f7a7a3931b04c26f2bee28b4604df0fad865e61b4849a4e09503cfc567",
+      "size_bytes": 29359
     },
     {
       "path": "fds.json.gz",
