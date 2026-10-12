@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-external-ps2-native-filename-labels-v1",
+  "method": "strict-case-normalized-pnach-filename-crc-and-serial-labels-only",
+  "platform": "ps2",
+  "link_only": true,
+  "cheat_or_patch_payloads_included": false,
+  "independently_verified_games_or_cheat_effects": false,
+  "filename_labels_are_verified_game_or_rom_build_ids": false,
+  "crc_collisions_or_aliases_excluded": false,
+  "source_catalogs": 3,
+  "source_native_pnach_files": 10772,
+  "recognized_crc_filename_occurrences": 10754,
+  "unrecognized_crc_filename_occurrences": 18,
+  "distinct_crc_label_strings": 6668,
+  "crc_labels_in_two_or_more_sources": 3310,
+  "source_rows": [
+    {
+      "source_id": "daowace-pcsx2-consolidated",
+      "native_pnach_file_occurrences": 5483,
+      "recognized_strict_crc_labels": 5473,
+      "recognizable_serial_crc_filenames": 5461,
+      "crc_only_filenames": 8,
+      "crc_prefixed_title_filenames": 4,
+      "unrecognized_or_malformed_filename_labels": 10,
+      "distinct_crc_label_strings": 5255,
+      "distinct_strict_serial_crc_label_pairs": 5461,
+      "unrecognized_samples": [
+        "cheats/40E4D93 - Astro Kyuudan - Kessen!! Victory Kyuudanhen SLPS-25582.pnach",
+        "cheats/4555974 - Tony Hawk's Proving Ground SLES-54964.pnach",
+        "cheats/587693B - America's 10 Most Wanted SLES-52366.pnach",
+        "cheats/AE0E098 - Indiana Jones und die Legende der Kaisergruft SLES-50838.pnach",
+        "cheats/Armored Core 2 (Playstation 2 The Best) SLPS-73403.pnach",
+        "cheats/Dragon Quest VIII - Sora to Umi to Daichi to Norowareshi Himegimi (Ultimate Hits) SLPM-66481.pnach",
+        "cheats/Kiwame Mahjong DXII  (Athena Best Collection Vol. 2) SLPM-62521.pnach",
+        "cheats/Samurai Kanzenban (PlayStation 2 the Best Reprint) SLPM-74222.pnach",
+        "cheats/Star Ocean - Till the End of Time  - Director's Cut SCAJ 20070-1.pnach",
+        "cheats/Wild ARMs - Advanced 3rd PlayStation2 the Best SCPS-19323.pnach"
+      ]
+    },
+    {
+      "source_id": "pcsx2-official-patches",
+      "native_pnach_file_occurrences": 4710,
+      "recognized_strict_crc_labels": 4708,
+      "recognizable_serial_crc_filenames": 4706,
+      "crc_only_filenames": 2,
+      "crc_prefixed_title_filenames": 0,
+      "unrecognized_or_malformed_filename_labels": 2,
+      "distinct_crc_label_strings": 4535,
+      "distinct_strict_serial_crc_label_pairs": 4706,
+      "unrecognized_samples": [
+        "patches/SLES-50396_B6F7BA5.pnach",
+        "patches/SLKA-25059_3CA4D49.pnach"
+      ]
+    },
+    {
+      "source_id": "xs1l3n7x-pcsx2",
+      "native_pnach_file_occurrences": 579,
+      "recognized_strict_crc_labels": 573,
+      "recognizable_serial_crc_filenames": 504,
+      "crc_only_filenames": 69,
+      "crc_prefixed_title_filenames": 0,
+      "unrecognized_or_malformed_filename_labels": 6,
+      "distinct_crc_label_strings": 559,
+      "distinct_strict_serial_crc_label_pairs": 504,
+      "unrecognized_samples": [
+        "cheats/SCUS-97203_6441001.pnach",
+        "cheats/SLUS-20407_6157251.pnach",
+        "cheats/SLUS-20658_9.83E+90.pnach",
+        "cheats/SLUS-20763_3.68E+61.pnach",
+        "cheats/SLUS-20788_15245DF.pnach",
+        "cheats/SLUS-21042_3.27E+13.pnach"
+      ]
+    }
+  ],
+  "pairwise_source_label_overlap": [
+    {
+      "source_a": "daowace-pcsx2-consolidated",
+      "source_b": "pcsx2-official-patches",
+      "shared_crc_label_strings": 3164,
+      "crc_labels_only_a": 2091,
+      "crc_labels_only_b": 1371,
+      "shared_strict_serial_crc_label_pairs": 3140,
+      "serial_crc_label_pairs_only_a": 2321,
+      "serial_crc_label_pairs_only_b": 1566
+    },
+    {
+      "source_a": "daowace-pcsx2-consolidated",
+      "source_b": "xs1l3n7x-pcsx2",
+      "shared_crc_label_strings": 498,
+      "crc_labels_only_a": 4757,
+      "crc_labels_only_b": 61,
+      "shared_strict_serial_crc_label_pairs": 434,
+      "serial_crc_label_pairs_only_a": 5027,
+      "serial_crc_label_pairs_only_b": 70
+    },
+    {
+      "source_a": "pcsx2-official-patches",
+      "source_b": "xs1l3n7x-pcsx2",
+      "shared_crc_label_strings": 390,
+      "crc_labels_only_a": 4145,
+      "crc_labels_only_b": 169,
+      "shared_strict_serial_crc_label_pairs": 345,
+      "serial_crc_label_pairs_only_a": 4361,
+      "serial_crc_label_pairs_only_b": 159
+    }
+  ],
+  "shared_crc_label_examples": [
+    {
+      "crc": "0001171A",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "000B73EE",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "002E402E",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "004B2E96",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "005AA020",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "005B2002",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "0072DD1C",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "00C584CB",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "00C82D94",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "00D5D3E4",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches",
+        "xs1l3n7x-pcsx2"
+      ]
+    },
+    {
+      "crc": "00E9B795",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "xs1l3n7x-pcsx2"
+      ]
+    },
+    {
+      "crc": "010A051A",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "01151ACC",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "013E349D",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "015AC745",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "015CB6F4",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "0194120C",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "019420F7",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "0198F1AD",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "0199EC27",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "019CFA48",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "01A9BF0E",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "01B2FA7F",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "023BB5F6",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "02445B50",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "0245EF6D",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "024BF3B4",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "027C604C",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches",
+        "xs1l3n7x-pcsx2"
+      ]
+    },
+    {
+      "crc": "028AAFC8",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "02A3F34D",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "02BC0382",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "02DEE05F",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "02E1970F",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "xs1l3n7x-pcsx2"
+      ]
+    },
+    {
+      "crc": "02F4B541",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "02F53745",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "02FDFF19",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "031DA682",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "034836F8",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "03487FEE",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "035BF93D",
+      "sources": [
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches"
+      ]
+    }
+  ]
+}

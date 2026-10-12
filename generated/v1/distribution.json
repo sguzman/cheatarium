@@ -4,6 +4,9 @@
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
   "external_reference_files": 38573,
+  "external_ps2_native_pnach_files": 10772,
+  "external_ps2_recognized_crc_filename_occurrences": 10754,
+  "external_ps2_crc_labels_shared_between_sources": 3310,
   "external_distinct_git_blobs": 32467,
   "external_references_matching_archived_bytes": 73,
   "external_distinct_git_blobs_matching_archive": 56,
@@ -907,6 +910,11 @@
       "path": "reports/external-overlap.json",
       "sha256": "11bec3e66ab9b211c8dad1c7bf10abe48f86a51907516d8c9b75ceb7d5027405",
       "size_bytes": 2420716
+    },
+    {
+      "path": "reports/external-ps2-crc-labels.json",
+      "sha256": "e52e5161895e517b44391b4f3e329d7ab058a5c4594f704e1a947da41fb5a567",
+      "size_bytes": 9841
     },
     {
       "path": "reports/external-vs-archive-blobs.json",
