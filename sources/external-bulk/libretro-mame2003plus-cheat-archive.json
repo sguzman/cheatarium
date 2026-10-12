@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "libretro-mame2003plus-cheat-archive",
+  "repository": "https://github.com/libretro/mame2003-plus-libretro",
+  "snapshot_commit": "aa2b32f913ce40daf373c80ad050ff172208005c",
+  "git_tree_sha": "aa2b32f913ce40daf373c80ad050ff172208005c",
+  "platform": "arcade-mame",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Historic MAME 2003-Plus libretro metadata/cheat.dat compiled cheat database. Project's classic MAME license covers emulator source subject to restrictions but does NOT establish contributor rights to all compiled historical cheats. One 7.81 MB source file, not an enumerated or verified game/cheat inventory; link-only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 1
+  },
+  "files": [
+    [
+      "metadata/cheat.dat",
+      "8af625d6220b0abc5f5175f59609fa3b2ac23f71",
+      7810253
+    ]
+  ]
+}

@@ -13,11 +13,11 @@ class TestExternalDistribution(unittest.TestCase):
         cls.catalog = json.loads(cls.files["external/catalog.json"])
 
     def test_full_pinned_collection(self):
-        self.assertEqual(self.catalog["reference_files"], 42483)
-        self.assertEqual(len(self.catalog["platforms"]), 12)
+        self.assertEqual(self.catalog["reference_files"], 42533)
+        self.assertEqual(len(self.catalog["platforms"]), 13)
         self.assertEqual({x["platform"]: x["source_files"] for x in self.catalog["platforms"]},
-                         {"3ds": 938, "dreamcast": 387, "ds": 15, "gamecube": 30,
-                          "ps1": 4903, "ps2": 14404, "ps3": 2926, "psp": 2,
+                         {"3ds": 938, "arcade-mame": 2, "dreamcast": 387, "ds": 15, "gamecube": 30,
+                          "ps1": 4903, "ps2": 14452, "ps3": 2926, "psp": 2,
                           "switch": 17275, "vita": 796, "wii": 306, "xbox-360": 501})
         self.assertTrue(self.catalog["metadata_only"])
         self.assertFalse(self.catalog["archive_included"])

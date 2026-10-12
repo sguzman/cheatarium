@@ -1,7 +1,7 @@
 # Bulk cheat acquisition: pinned original-author rights review
 
 The project currently archives 67,834 original files and separately indexes
-42,483 **link-only** external occurrences. Not all are cheats, unique titles,
+42,533 **link-only** external occurrences. Not all are cheats, unique titles,
 or independently verified modifications.
 
 The [priority scorecard](../generated/v1/reports/acquisition-priorities.json)
@@ -52,3 +52,8 @@ root license filename list, matches the immutable revision. It never downloads
 cheat files or code bodies. This checks what the documents were, **not**
 whether every code author granted redistribution permission. The report is
 included in the SHA-256 distribution.
+
+
+## Additional link-only original archive witnesses
+
+Two Libretro-hosted MAME arcade cheat archives (`mame2010-libretro/metadata/cheat.zip`, 24,981,772 bytes; `mame2003-plus-libretro/metadata/cheat.dat`, 7,810,253 bytes) and 48 novel nonempty PNACH files from the `shadowninja826` PS2 mirror also remain link-only. For MAME, the original emulator-license files are not a contributor-by-contributor clearance of cheat bodies; the MAME 2010 ZIP exactly matches one earlier mirror. The PS2 collection offers no root blanket grant and most of its files exactly duplicate a pinned catalog. The rights-evidence report continues to contain nine explicitly documented pinned source dossiers, **not** blanket approval or a complete legal review of all 30 external catalog IDs.

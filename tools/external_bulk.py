@@ -39,6 +39,24 @@ SOURCES = {
         "platform": "psp", "expected": {"cheat": 1},
         "rights_note": "An 8.9 MB PSP/PPSSPP CWCheat cheat.db aggregation from Saramagrean; its README explicitly credits third-party PPSSPP forums, GameHacking, LunaMoo, Kabuto_Kun, Raing3 and others. No root LICENSE found at pinned revision; the credited creators' code redistribution rights have not been confirmed. This is a binary database reference, not validated individual cheats or author permission.",
     },
+    "shadowninja-ps2-pnach-delta": {
+        "repository": "shadowninja826/pcsx2_pnach_cheats",
+        "commit": "56d328be4c4f048896788f8203703b822656b768",
+        "platform": "ps2", "expected": {"cheat": 48},
+        "rights_note": "Pinned PS2 PNACH mirror: 628 original .pnach file paths, of which 579 exactly match the pinned xs1l3n7x-pcsx2 Git blobs. Exclude those exact mirrors and one additional empty (0-byte) .pnach; retain 48 byte-distinct nonempty original file paths as link-only author-rights leads. No root LICENSE in the pinned tree; README only describes PNACH files for PS2. Different bytes/CRC labels do not establish distinct games, valid effects, source ownership, or permission to redistribute.",
+    },
+    "libretro-mame2010-cheat-archive": {
+        "repository": "libretro/mame2010-libretro",
+        "commit": "dff8aadd1c3f38215af3955746d6e19abe0ddcea",
+        "platform": "arcade-mame", "expected": {"cheat": 1},
+        "rights_note": "Complete upstream MAME 2010 cheat ZIP used by the libretro core. Exact identical Git blob to galisteogames/mame2010_cheat cheat.zip; do NOT count that mirror as another source. Archive members and working cheats are NOT enumerated, and Pugsy/other original code-author rights are not established by an emulator source LICENSE. Pinned filename, bytes and SHA only.",
+    },
+    "libretro-mame2003plus-cheat-archive": {
+        "repository": "libretro/mame2003-plus-libretro",
+        "commit": "aa2b32f913ce40daf373c80ad050ff172208005c",
+        "platform": "arcade-mame", "expected": {"cheat": 1},
+        "rights_note": "Historic MAME 2003-Plus libretro metadata/cheat.dat compiled cheat database. Project's classic MAME license covers emulator source subject to restrictions but does NOT establish contributor rights to all compiled historical cheats. One 7.81 MB source file, not an enumerated or verified game/cheat inventory; link-only.",
+    },
     "xenia-canary-game-patches": {
         "repository": "xenia-canary/game-patches",
         "commit": "106bb0a40be27b5a2444162562975e4885e1ce74",
@@ -197,6 +215,12 @@ def classify(source, path):
         return "cheat"
     if source == "saramagrean-psp-cwcheat" and path == "cheat.db":
         return "cheat"
+    if source == "shadowninja-ps2-pnach-delta" and re.fullmatch(r"[^/]+\.pnach", path):
+        return "cheat"
+    if source == "libretro-mame2010-cheat-archive" and path == "metadata/cheat.zip":
+        return "cheat"
+    if source == "libretro-mame2003plus-cheat-archive" and path == "metadata/cheat.dat":
+        return "cheat"
     if source == "xenia-canary-game-patches" and re.fullmatch(r"patches/[^/]+\.patch\.toml", path):
         return "patch"
     if source == "pcsx2-official-patches" and re.fullmatch(r"patches/[^/]+\.pnach", path):
@@ -274,6 +298,17 @@ def make_index(source, tree):
         rows = [r for r in rows if r[1] not in known]
         if len(rows) != 268 or count_types(source, rows) != {"cheat": 263, "patch": 5}:
             raise ValueError("Pinned PS1 delta no longer contains 268 original byte variants")
+    if source == "shadowninja-ps2-pnach-delta":
+        parent = json.loads((ROOT / FOLDER / "xs1l3n7x-pcsx2.json").read_text("utf-8"))
+        validate("xs1l3n7x-pcsx2", parent)
+        original = len(rows)
+        known = {sha for _, sha, _ in parent["files"]}
+        matches = sum(sha in known for _, sha, _ in rows)
+        excluded_empty = sum(size == 0 and sha not in known for _, sha, size in rows)
+        rows = [r for r in rows if r[1] not in known and r[2] > 0]
+        if (original != 628 or matches != 579 or excluded_empty != 1
+                or len(rows) != 48 or count_types(source, rows) != {"cheat": 48}):
+            raise ValueError("PS2 derivative source no longer matches pinned 579+1 gap audit")
     return {
         "schema_version": 1, "id": source,
         "repository": "https://github.com/" + spec["repository"],
@@ -389,7 +424,7 @@ def main():
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--refresh", action="store_true")
     mode.add_argument("--search", metavar="TEXT")
-    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
+    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "arcade-mame", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args()

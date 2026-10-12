@@ -34,11 +34,14 @@ class TestExternalBulk(unittest.TestCase):
             "crashgg-ps1-chtdb-delta": 268,
             "deadskullz-nds-formats": 9,
             "saramagrean-psp-cwcheat": 1,
+            "shadowninja-ps2-pnach-delta": 48,
+            "libretro-mame2010-cheat-archive": 1,
+            "libretro-mame2003plus-cheat-archive": 1,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 42483)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 42533)
 
     def test_widescreen_staging_is_link_only_and_patch_only(self):
         source = next(x for x in load(__import__("external_bulk").ROOT)
@@ -87,6 +90,39 @@ class TestExternalBulk(unittest.TestCase):
         self.assertEqual(len(lookup([psp], "cheat.db", "psp", 5)), 1)
         self.assertTrue(all(s["rights_status"] == "link_only_rights_review"
                             for s in (ds, psp)))
+
+    def test_ps2_mirror_delta_excludes_exact_duplicates_and_empty_file(self):
+        indexes = load(__import__("external_bulk").ROOT)
+        parent = next(x for x in indexes if x["id"] == "xs1l3n7x-pcsx2")
+        delta = next(x for x in indexes if x["id"] == "shadowninja-ps2-pnach-delta")
+        self.assertEqual(len(delta["files"]), 48)
+        self.assertEqual(delta["file_counts"], {"cheat": 48})
+        self.assertTrue(all(size > 0 and sha not in {p[1] for p in parent["files"]}
+                            for _, sha, size in delta["files"]))
+        self.assertTrue(all(classify(delta["id"], path) == "cheat"
+                            for path, _, _ in delta["files"]))
+        self.assertEqual(lookup([delta], "SLES-54174", "ps2", 10), [])
+        self.assertEqual(lookup([delta], "SLES-50232", "ps2", 10)[0]["redistribution"],
+                         "link_only_rights_review")
+
+    def test_archived_core_mame_collections_are_filename_only(self):
+        indexed = load(__import__("external_bulk").ROOT)
+        sources = [next(x for x in indexed if x["id"] == sid) for sid in (
+            "libretro-mame2010-cheat-archive",
+            "libretro-mame2003plus-cheat-archive",
+        )]
+        self.assertEqual([x["file_counts"] for x in sources],
+                         [{"cheat": 1}, {"cheat": 1}])
+        self.assertEqual([x["files"][0][2] for x in sources],
+                         [24981772, 7810253])
+        self.assertEqual([x["files"][0][1] for x in sources],
+                         ["891d6fb756bea4cdd0ac772b5bba507a868016ff",
+                          "8af625d6220b0abc5f5175f59609fa3b2ac23f71"])
+        self.assertTrue(all(x["platform"] == "arcade-mame" and
+                            x["rights_status"] == "link_only_rights_review"
+                            for x in sources))
+        self.assertEqual(len(lookup(indexed, "metadata/cheat.zip", "arcade-mame", 2)), 1)
+        self.assertEqual(len(lookup(indexed, "metadata/cheat.dat", "arcade-mame", 2)), 1)
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)

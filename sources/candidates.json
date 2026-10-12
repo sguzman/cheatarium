@@ -170,7 +170,7 @@
       ],
       "state": "link_only_rights_review",
       "repo_license": "No root LICENSE found in pinned tree",
-      "notes": "Pinned MAME 2010 (MAME 0.139) EmuELEC distribution with one 24,981,772-byte cheat.zip file, credited by README to ThunderDJr; internal per-game XML count and code-author rights unverified. This might be older content overlapping Pugsy's canonical releases; inspect archive structure and license before treating as novel coverage."
+      "notes": "Pinned MAME 2010 (MAME 0.139) EmuELEC distribution with one 24,981,772-byte cheat.zip file, credited by README to ThunderDJr; internal per-game XML count and code-author rights unverified. This might be older content overlapping Pugsy's canonical releases; inspect archive structure and license before treating as novel coverage. Exact ZIP Git blob 891d6fb756bea4cdd0ac772b5bba507a868016ff now indexed from the canonical pinned libretro/mame2010-libretro source as metadata-only; avoid separately counting this mirror."
     },
     {
       "id": "gamehacking-org",

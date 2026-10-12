@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "libretro-mame2010-cheat-archive",
+  "repository": "https://github.com/libretro/mame2010-libretro",
+  "snapshot_commit": "dff8aadd1c3f38215af3955746d6e19abe0ddcea",
+  "git_tree_sha": "dff8aadd1c3f38215af3955746d6e19abe0ddcea",
+  "platform": "arcade-mame",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Complete upstream MAME 2010 cheat ZIP used by the libretro core. Exact identical Git blob to galisteogames/mame2010_cheat cheat.zip; do NOT count that mirror as another source. Archive members and working cheats are NOT enumerated, and Pugsy/other original code-author rights are not established by an emulator source LICENSE. Pinned filename, bytes and SHA only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 1
+  },
+  "files": [
+    [
+      "metadata/cheat.zip",
+      "891d6fb756bea4cdd0ac772b5bba507a868016ff",
+      24981772
+    ]
+  ]
+}

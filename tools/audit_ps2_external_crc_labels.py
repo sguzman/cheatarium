@@ -134,10 +134,10 @@ def compile_report(sources):
 
 def build(root=ROOT):
     sources = [x for x in load(root) if x["platform"] == "ps2"]
-    if len(sources) != 4:
-        raise ValueError("Four pinned PS2 external native-PNACH catalogs expected")
+    if len(sources) != 5:
+        raise ValueError("Five pinned PS2 external native-PNACH catalogs expected")
     report = compile_report(sources)
-    if report["source_native_pnach_files"] != 14404:
+    if report["source_native_pnach_files"] != 14452:
         raise ValueError("Pinned PS2 native-PNACH file count differs")
     return report
 

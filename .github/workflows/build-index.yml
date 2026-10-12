@@ -985,17 +985,17 @@ jobs:
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title 'Painkiller' --limit 4 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["metadata_only"] and not x["gameplay_verified"] and not x["archive_included"] and x["artifact_checksums_verified"] and x["total"] >= 1 and all(r["rights_status"] == "link_only_rights_review" for r in x["results"])'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform vita --title PCSA --limit 5 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42483'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42533'
       - name: Smoke-test new Switch and Wii external catalogs
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform switch --title 0100000000010000 --limit 10 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42483 and x["metadata_only"] and not x["archive_included"]'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42533 and x["metadata_only"] and not x["archive_included"]'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform wii --title "Mario Kart Wii" --limit 4 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["artifact_checksums_verified"] and not x["gameplay_verified"]'
       - name: Verify PS3, PSP and DS bulk reference integrity
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ps3 --title USERLIST --limit 4 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] > 1000 and x["external_reference_files_total"] == 42483 and x["metadata_only"] and not x["gameplay_verified"]'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] > 1000 and x["external_reference_files_total"] == 42533 and x["metadata_only"] and not x["gameplay_verified"]'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform psp --source-id apelfactory-ppsspp-cheatdb --title cheat.db --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["bytes"] > 8000000 and not x["archive_included"]'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ds --source-id real-f00-usrcheat-ds --title usrcheat.dat --json \
@@ -1003,27 +1003,35 @@ jobs:
       - name: Verify external Switch title-source mirror stays metadata-only
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform switch --source-id hamlet-switch-cheatdb --title 0100000000010000 --limit 5 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42483 and x["metadata_only"] and not x["gameplay_verified"] and all(r["source_id"] == "hamlet-switch-cheatdb" and r["rights_status"] == "link_only_rights_review" for r in x["results"])'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42533 and x["metadata_only"] and not x["gameplay_verified"] and all(r["source_id"] == "hamlet-switch-cheatdb" and r["rights_status"] == "link_only_rights_review" for r in x["results"])'
       - name: Verify added 3DS title-ID and Switch IPS link-only records
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform 3ds --title 0004000000188100 --source-id ademola-3ds-native --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42483 and x["metadata_only"] and not x["archive_included"]'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42533 and x["metadata_only"] and not x["archive_included"]'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform switch --title .ips --source-id ademola-switch-native --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 66 and x["external_reference_files_total"] == 42483 and all(r["kind"] == "patch" for r in x["results"])'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 66 and x["external_reference_files_total"] == 42533 and all(r["kind"] == "patch" for r in x["results"])'
       - name: Verify rights-blocked PS2 widescreen staging sources remain patch-only
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ps2 --source-id ps2-widescreen-staging --title PNACH/0001171A --limit 4 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42483 and x["metadata_only"] and not x["archive_included"] and not x["gameplay_verified"] and all(r["source_id"] == "ps2-widescreen-staging" and r["kind"] == "patch" and r["rights_status"] == "link_only_rights_review" for r in x["results"])'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 42533 and x["metadata_only"] and not x["archive_included"] and not x["gameplay_verified"] and all(r["source_id"] == "ps2-widescreen-staging" and r["kind"] == "patch" and r["rights_status"] == "link_only_rights_review" for r in x["results"])'
       - name: Smoke-test rights-blocked PS1 derivative delta
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ps1 --source-id crashgg-ps1-chtdb-delta --title SCES-00242 --limit 5 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["external_reference_files_total"] == 42483 and x["metadata_only"] and not x["archive_included"] and not x["gameplay_verified"] and all(r["source_id"] == "crashgg-ps1-chtdb-delta" and r["kind"] == "cheat" and r["rights_status"] == "link_only_rights_review" for r in x["results"])'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["external_reference_files_total"] == 42533 and x["metadata_only"] and not x["archive_included"] and not x["gameplay_verified"] and all(r["source_id"] == "crashgg-ps1-chtdb-delta" and r["kind"] == "cheat" and r["rights_status"] == "link_only_rights_review" for r in x["results"])'
       - name: Smoke-test pinned DS and PSP compiled database witnesses
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ds --source-id deadskullz-nds-formats --title usrcheat.dat --json \
-            | python3 -c 'import json,sys; r=json.load(sys.stdin); assert r["total"] == 1 and r["external_reference_files_total"] == 42483 and r["metadata_only"] and not r["archive_included"] and not r["gameplay_verified"] and r["results"][0]["rights_status"] == "link_only_rights_review"'
+            | python3 -c 'import json,sys; r=json.load(sys.stdin); assert r["total"] == 1 and r["external_reference_files_total"] == 42533 and r["metadata_only"] and not r["archive_included"] and not r["gameplay_verified"] and r["results"][0]["rights_status"] == "link_only_rights_review"'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform psp --source-id saramagrean-psp-cwcheat --title cheat.db --json \
             | python3 -c 'import json,sys; r=json.load(sys.stdin); assert r["total"] == 1 and r["results"][0]["bytes"] == 8922567 and r["results"][0]["kind"] == "cheat" and r["metadata_only"] and not r["gameplay_verified"]'
+      - name: Smoke-test MAME archive links and PS2 byte-delta provenance
+        run: |
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform arcade-mame --source-id libretro-mame2010-cheat-archive --title cheat.zip --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["external_reference_files_total"] == 42533 and x["metadata_only"] and not x["archive_included"] and not x["gameplay_verified"]; assert x["results"][0]["bytes"] == 24981772 and x["results"][0]["rights_status"] == "link_only_rights_review"'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform arcade-mame --source-id libretro-mame2003plus-cheat-archive --title cheat.dat --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["bytes"] == 7810253 and x["results"][0]["kind"] == "cheat" and x["metadata_only"]'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ps2 --source-id shadowninja-ps2-pnach-delta --title SLES-50232 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["source_id"] == "shadowninja-ps2-pnach-delta" and x["results"][0]["rights_status"] == "link_only_rights_review" and not x["gameplay_verified"]'
       - name: Confirm consumer-smoke stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
