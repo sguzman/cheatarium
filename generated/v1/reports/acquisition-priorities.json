@@ -1,0 +1,776 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-acquisition-priorities-v1",
+  "method": "pinned-source-original-git-blob-sha1-only",
+  "metadata_only": true,
+  "source_rights_cleared_for_import": false,
+  "unique_games_or_effects_established": false,
+  "gameplay_compatibility_verified": false,
+  "filename_kind_is_semantic_cheat_verification": false,
+  "source_file_occurrences": 38573,
+  "source_catalogs": 23,
+  "platforms_count": 12,
+  "all_external_distinct_blob_sha1": 32467,
+  "distinct_blobs_matching_archived_bytes": 56,
+  "distinct_blobs_absent_from_archive": 32411,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 23119,
+  "distinct_patch_labeled_blobs_absent_from_archive": 9570,
+  "blobs_labeled_both_cheat_and_patch": 278,
+  "exclusive_unarchived_blobs_in_one_source": 29630,
+  "shared_unarchived_blobs_in_multiple_sources": 2781,
+  "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
+  "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
+  "sources": [
+    {
+      "source_id": "daowace-pcsx2-consolidated",
+      "platform": "ps2",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 5483,
+      "cheat_labeled_occurrences": 5483,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 5483,
+      "distinct_blob_sha1": 5272,
+      "distinct_unarchived_blob_sha1": 5272,
+      "distinct_unarchived_cheat_labeled_blobs": 5272,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 5250,
+      "exclusive_unarchived_cheat_labeled_blobs": 5250,
+      "shared_with_other_external_sources_unarchived_blobs": 22,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheats/00000000.pnach",
+          "git_blob_sha": "9507fdcf78a539825d7a29f06b4c71fcfa6804b5"
+        },
+        {
+          "path": "cheats/02E1970F.pnach",
+          "git_blob_sha": "cf7607c28f8e61c2a4c7cf29b76e6af39dabf2f1"
+        },
+        {
+          "path": "cheats/0DEDC3B7.pnach",
+          "git_blob_sha": "9a8a257f6930a8365bd96ecbf1befcd182b9f052"
+        }
+      ]
+    },
+    {
+      "source_id": "duckstation-chtdb",
+      "platform": "ps1",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 4635,
+      "cheat_labeled_occurrences": 4497,
+      "patch_labeled_occurrences": 138,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 4635,
+      "distinct_blob_sha1": 4634,
+      "distinct_unarchived_blob_sha1": 4634,
+      "distinct_unarchived_cheat_labeled_blobs": 4497,
+      "distinct_unarchived_patch_labeled_blobs": 137,
+      "exclusive_unarchived_blob_sha1": 4634,
+      "exclusive_unarchived_cheat_labeled_blobs": 4497,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheats/DEUCEEXE.cht",
+          "git_blob_sha": "c4e1986eff04625fb6b082bae0438073fa135a23"
+        },
+        {
+          "path": "cheats/ESPM-70003.cht",
+          "git_blob_sha": "e1e072ae0a8dc5484f428a6479da54a026973a07"
+        },
+        {
+          "path": "cheats/NYMC-02020.cht",
+          "git_blob_sha": "72d1034808cc40b60f398a6329a4865017683179"
+        }
+      ]
+    },
+    {
+      "source_id": "ibnux-switch-cheatdb",
+      "platform": "switch",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 3136,
+      "cheat_labeled_occurrences": 3136,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 3136,
+      "distinct_blob_sha1": 3042,
+      "distinct_unarchived_blob_sha1": 3042,
+      "distinct_unarchived_cheat_labeled_blobs": 3042,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 3037,
+      "exclusive_unarchived_cheat_labeled_blobs": 3037,
+      "shared_with_other_external_sources_unarchived_blobs": 5,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "atmosphere/titles/0100000000010000/cheats/3ca12dfaaf9c82da.txt",
+          "git_blob_sha": "dec5bc9844029933fb08522b1e7d9996c7627178"
+        },
+        {
+          "path": "atmosphere/titles/0100000000010000/cheats/b424be150a8e7d78.txt",
+          "git_blob_sha": "f919a5bbaa0b633ec32761181ab8f29d217c27dd"
+        },
+        {
+          "path": "atmosphere/titles/0100000000010000/cheats/f5dccddb37e97724.txt",
+          "git_blob_sha": "ca27207ce9c40377976f8bdb94a11aefe4a51c68"
+        }
+      ]
+    },
+    {
+      "source_id": "sthetix-switch-mirror",
+      "platform": "switch",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 5861,
+      "cheat_labeled_occurrences": 5329,
+      "patch_labeled_occurrences": 532,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 5861,
+      "distinct_blob_sha1": 5468,
+      "distinct_unarchived_blob_sha1": 5468,
+      "distinct_unarchived_cheat_labeled_blobs": 5126,
+      "distinct_unarchived_patch_labeled_blobs": 532,
+      "exclusive_unarchived_blob_sha1": 2716,
+      "exclusive_unarchived_cheat_labeled_blobs": 2716,
+      "shared_with_other_external_sources_unarchived_blobs": 2752,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheats/0100000000010000.json",
+          "git_blob_sha": "b0d2ea38d23481c852bafaab9fe8899f1ed418c6"
+        },
+        {
+          "path": "cheats/0100000011D90000.json",
+          "git_blob_sha": "068dfbb4b5b74f6b405721baedcc30ebc9f8be01"
+        },
+        {
+          "path": "cheats/010000100FB62000.json",
+          "git_blob_sha": "75b4919333a7876792c3a4c55a10bf85141212d1"
+        }
+      ]
+    },
+    {
+      "source_id": "ademola-switch-native",
+      "platform": "switch",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 2582,
+      "cheat_labeled_occurrences": 1927,
+      "patch_labeled_occurrences": 655,
+      "occurrences_already_archived_exact_bytes": 2,
+      "occurrences_without_archived_exact_bytes": 2580,
+      "distinct_blob_sha1": 2502,
+      "distinct_unarchived_blob_sha1": 2500,
+      "distinct_unarchived_cheat_labeled_blobs": 1858,
+      "distinct_unarchived_patch_labeled_blobs": 642,
+      "exclusive_unarchived_blob_sha1": 2495,
+      "exclusive_unarchived_cheat_labeled_blobs": 1853,
+      "shared_with_other_external_sources_unarchived_blobs": 5,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "NX-60FPS-RES-GFX-Cheats/titles/0100000000010000/cheats/B424BE150A8E7D78.txt",
+          "git_blob_sha": "49cfcc8a0baa5f415799775c53608000861d1bfd"
+        },
+        {
+          "path": "NX-60FPS-RES-GFX-Cheats/titles/0100000011D90000/cheats/1B5215DF918BA04B.txt",
+          "git_blob_sha": "8f20a8ee04e4ba52475cc86b4ba800a01a7f87f9"
+        },
+        {
+          "path": "NX-60FPS-RES-GFX-Cheats/titles/0100000011D90000/cheats/35B9D8779B195141.txt",
+          "git_blob_sha": "eae7af5b8596656dd28df4533931ee769fadcb5c"
+        }
+      ]
+    },
+    {
+      "source_id": "r0ah-vitacheat",
+      "platform": "vita",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 677,
+      "cheat_labeled_occurrences": 677,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 677,
+      "distinct_blob_sha1": 676,
+      "distinct_unarchived_blob_sha1": 676,
+      "distinct_unarchived_cheat_labeled_blobs": 676,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 674,
+      "exclusive_unarchived_cheat_labeled_blobs": 674,
+      "shared_with_other_external_sources_unarchived_blobs": 2,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "db/PCSA00008.psv",
+          "git_blob_sha": "513bbc4b8ed94715073d85553cd21eb89c5d27fe"
+        },
+        {
+          "path": "db/PCSA00009.psv",
+          "git_blob_sha": "cdd0a545842128da0421a2203e6ff8fa85aabec1"
+        },
+        {
+          "path": "db/PCSA00012.psv",
+          "git_blob_sha": "8fb0a10a2253c11623bbb33afcda029883155311"
+        }
+      ]
+    },
+    {
+      "source_id": "journeyover-3ds-ctrpf",
+      "platform": "3ds",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 628,
+      "cheat_labeled_occurrences": 628,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 628,
+      "distinct_blob_sha1": 594,
+      "distinct_unarchived_blob_sha1": 594,
+      "distinct_unarchived_cheat_labeled_blobs": 594,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 594,
+      "exclusive_unarchived_cheat_labeled_blobs": 594,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Cheats/10-in-1 Arcade Collection (EUR)/00040000000E7300.txt",
+          "git_blob_sha": "5859b112b87b671eaaaa0e75b43cc04cdcbf4693"
+        },
+        {
+          "path": "Cheats/1001 Spikes (USA)/000400000008FE00.txt",
+          "git_blob_sha": "5b916253a9be868ce0df6ada5ffe413ca45ff516"
+        },
+        {
+          "path": "Cheats/3D After Burner II (EUR)/0004000000157A00.txt",
+          "git_blob_sha": "c2d7f7efa749c202899ff373e4fc892696e85594"
+        }
+      ]
+    },
+    {
+      "source_id": "xs1l3n7x-pcsx2",
+      "platform": "ps2",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 579,
+      "cheat_labeled_occurrences": 579,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 579,
+      "distinct_blob_sha1": 579,
+      "distinct_unarchived_blob_sha1": 579,
+      "distinct_unarchived_cheat_labeled_blobs": 579,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 579,
+      "exclusive_unarchived_cheat_labeled_blobs": 579,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheats/02E1970F.pnach",
+          "git_blob_sha": "c060cc17c6e695a009c9f3524f01761ad852e716"
+        },
+        {
+          "path": "cheats/07608CA2.pnach",
+          "git_blob_sha": "778ac9943e2135089864ed1311c285f3ead4f3bb"
+        },
+        {
+          "path": "cheats/0779FBDB.pnach",
+          "git_blob_sha": "6c6df9231baf7bcb8c80a408be6efd1501a0b6c3"
+        }
+      ]
+    },
+    {
+      "source_id": "bucanero-dreamcast-cheats",
+      "platform": "dreamcast",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 387,
+      "cheat_labeled_occurrences": 387,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 387,
+      "distinct_blob_sha1": 387,
+      "distinct_unarchived_blob_sha1": 387,
+      "distinct_unarchived_cheat_labeled_blobs": 387,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 387,
+      "exclusive_unarchived_cheat_labeled_blobs": 387,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "18-wheeler-american-pro-trucker-(import)-(jap).md",
+          "git_blob_sha": "9f2cf2e04cfc6c44657873f996de640f720d66c4"
+        },
+        {
+          "path": "18-wheeler-american-pro-trucker-(usa).md",
+          "git_blob_sha": "7b139613d8f70c1f8ff1b36451e03ca5aea5136f"
+        },
+        {
+          "path": "4-wheel-thunder-(pal).md",
+          "git_blob_sha": "1571ef26307efd4925cf667fdb8d67bcddf5c859"
+        }
+      ]
+    },
+    {
+      "source_id": "rogamer97-asm-wii",
+      "platform": "wii",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 306,
+      "cheat_labeled_occurrences": 305,
+      "patch_labeled_occurrences": 1,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 306,
+      "distinct_blob_sha1": 306,
+      "distinct_unarchived_blob_sha1": 306,
+      "distinct_unarchived_cheat_labeled_blobs": 305,
+      "distinct_unarchived_patch_labeled_blobs": 1,
+      "exclusive_unarchived_blob_sha1": 306,
+      "exclusive_unarchived_cheat_labeled_blobs": 305,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Wii/Mario Kart Wii/1st Place Crown on Minimap and Nametag.md",
+          "git_blob_sha": "f3eb9bd7ef8768c53c042ff34fcac45e6e9acb8b"
+        },
+        {
+          "path": "Wii/Mario Kart Wii/Accurate Item Roulette v2.md",
+          "git_blob_sha": "d5a6f099db15214bf6826b1fd0481a8aa9e51738"
+        },
+        {
+          "path": "Wii/Mario Kart Wii/Allow Collecting Coins After Battle End.md",
+          "git_blob_sha": "aef5ba2f92ebe6fbd1c75488ce09ecd5e34c9c70"
+        }
+      ]
+    },
+    {
+      "source_id": "hamlet-switch-cheatdb",
+      "platform": "switch",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 5278,
+      "cheat_labeled_occurrences": 4746,
+      "patch_labeled_occurrences": 532,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 5278,
+      "distinct_blob_sha1": 3046,
+      "distinct_unarchived_blob_sha1": 3046,
+      "distinct_unarchived_cheat_labeled_blobs": 2770,
+      "distinct_unarchived_patch_labeled_blobs": 532,
+      "exclusive_unarchived_blob_sha1": 294,
+      "exclusive_unarchived_cheat_labeled_blobs": 294,
+      "shared_with_other_external_sources_unarchived_blobs": 2752,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheats/0100000000010000.json",
+          "git_blob_sha": "1abdc86e145e63cd4519d2bdf855b8d51cedb3c1"
+        },
+        {
+          "path": "cheats/0100000011D90000.json",
+          "git_blob_sha": "041b1a09ba9193a18794a60868b6ebd74d1e3214"
+        },
+        {
+          "path": "cheats/0100001017216000.json",
+          "git_blob_sha": "b48d894598b294f047cb4c848f9566ec4086d58d"
+        }
+      ]
+    },
+    {
+      "source_id": "ademola-3ds-native",
+      "platform": "3ds",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 257,
+      "cheat_labeled_occurrences": 257,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 257,
+      "distinct_blob_sha1": 221,
+      "distinct_unarchived_blob_sha1": 221,
+      "distinct_unarchived_cheat_labeled_blobs": 221,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 221,
+      "exclusive_unarchived_cheat_labeled_blobs": 221,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Alphadia (USA)/0004000000188100.txt",
+          "git_blob_sha": "ca62efbac75f0b4ee96f0f5a8e9ececc68de4cef"
+        },
+        {
+          "path": "Animal Crossing - Happy Home Designer (EUR)/000400000014F200.txt",
+          "git_blob_sha": "fb62c190ad30a0599180df8f9acf6aec2ad3420b"
+        },
+        {
+          "path": "Animal Crossing - Happy Home Designer (USA)/000400000014F100.txt",
+          "git_blob_sha": "fb62c190ad30a0599180df8f9acf6aec2ad3420b"
+        }
+      ]
+    },
+    {
+      "source_id": "shumnot-vitacheat",
+      "platform": "vita",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 119,
+      "cheat_labeled_occurrences": 119,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 119,
+      "distinct_blob_sha1": 119,
+      "distinct_unarchived_blob_sha1": 119,
+      "distinct_unarchived_cheat_labeled_blobs": 119,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 117,
+      "exclusive_unarchived_cheat_labeled_blobs": 117,
+      "shared_with_other_external_sources_unarchived_blobs": 2,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "PCSA00012.psv",
+          "git_blob_sha": "d2d96a386820c2ad2d94de9a9c6204d89e94860f"
+        },
+        {
+          "path": "PCSA00014.psv",
+          "git_blob_sha": "1497c1b94f2aff6a072422589ccf0f2b92a3ba95"
+        },
+        {
+          "path": "PCSA00029.psv",
+          "git_blob_sha": "b68364aa3f38804ab05324e313e641facd9b126b"
+        }
+      ]
+    },
+    {
+      "source_id": "rogamer97-asm-3ds",
+      "platform": "3ds",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 53,
+      "cheat_labeled_occurrences": 53,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 53,
+      "distinct_blob_sha1": 53,
+      "distinct_unarchived_blob_sha1": 53,
+      "distinct_unarchived_cheat_labeled_blobs": 53,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 53,
+      "exclusive_unarchived_cheat_labeled_blobs": 53,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "3DS/Mario Kart 7 (USA Rev 1.2)/Angry Wiggler Codes (2 Codes).md",
+          "git_blob_sha": "f7667fee7dd48df7800b1cb99adc728b857a7e6b"
+        },
+        {
+          "path": "3DS/Mario Kart 7 (USA Rev 1.2)/Banana Throws Forward by Default.md",
+          "git_blob_sha": "641f6e82a59a13a2e78c54b8bd8600ebddf7d4ad"
+        },
+        {
+          "path": "3DS/Mario Kart 7 (USA Rev 1.2)/Bullet Bill Sound Codes (2 Codes).md",
+          "git_blob_sha": "d3f385d1985f4420453494940e6d00efbe1877b2"
+        }
+      ]
+    },
+    {
+      "source_id": "rogamer97-asm-gamecube",
+      "platform": "gamecube",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 30,
+      "cheat_labeled_occurrences": 28,
+      "patch_labeled_occurrences": 2,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 30,
+      "distinct_blob_sha1": 30,
+      "distinct_unarchived_blob_sha1": 30,
+      "distinct_unarchived_cheat_labeled_blobs": 28,
+      "distinct_unarchived_patch_labeled_blobs": 2,
+      "exclusive_unarchived_blob_sha1": 30,
+      "exclusive_unarchived_cheat_labeled_blobs": 28,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "GameCube/Mario Kart Double Dash!!/July 5th, 2004 Debug Build/Item Cycler/Item Cycler.md",
+          "git_blob_sha": "6857aee2d4cd1639fb7a3e5ac66a6df83f87d91f"
+        },
+        {
+          "path": "GameCube/Mario Kart Double Dash!!/NTSC-U/Item Cycler/Item Cycler.md",
+          "git_blob_sha": "0610d7cf9b4eed3e24327ad93826b1e797b4c96b"
+        },
+        {
+          "path": "GameCube/Need for Speed Most Wanted (NTSC-U)/All Cars Have Nitro.md",
+          "git_blob_sha": "a1c35727376228acc10a43189d7acee02dff45f6"
+        }
+      ]
+    },
+    {
+      "source_id": "rogamer97-asm-ds",
+      "platform": "ds",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 5,
+      "cheat_labeled_occurrences": 5,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 5,
+      "distinct_blob_sha1": 5,
+      "distinct_unarchived_blob_sha1": 5,
+      "distinct_unarchived_cheat_labeled_blobs": 5,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 5,
+      "exclusive_unarchived_cheat_labeled_blobs": 5,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "DS/Mario Kart DS (USA)/Battle Item Box Item in Race (Anti Crash).md",
+          "git_blob_sha": "75eb118317ab684079d60e6a177f1a2f541d7110"
+        },
+        {
+          "path": "DS/Mario Kart DS (USA)/Drop Items on Command.md",
+          "git_blob_sha": "134957dee65efb94ad598b345281f44adbe7f925"
+        },
+        {
+          "path": "DS/Mario Kart DS (USA)/Future Fly Codes (2 Codes).md",
+          "git_blob_sha": "0177eb8bffc1664803c11bad036366b1ded29e62"
+        }
+      ]
+    },
+    {
+      "source_id": "rogamer97-asm-switch",
+      "platform": "switch",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 418,
+      "cheat_labeled_occurrences": 2,
+      "patch_labeled_occurrences": 416,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 418,
+      "distinct_blob_sha1": 417,
+      "distinct_unarchived_blob_sha1": 417,
+      "distinct_unarchived_cheat_labeled_blobs": 2,
+      "distinct_unarchived_patch_labeled_blobs": 415,
+      "exclusive_unarchived_blob_sha1": 417,
+      "exclusive_unarchived_cheat_labeled_blobs": 2,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Switch/Super Mario Galaxy (Super Mario 3D All-Stars)/1.0.0/Power-Up Transformation Cycler.md",
+          "git_blob_sha": "df6a2eb1d86d78d452e85159299cc85370bbb5dc"
+        },
+        {
+          "path": "Switch/Super Mario Galaxy (Super Mario 3D All-Stars)/1.1.1/Power-Up Transformation Cycler.md",
+          "git_blob_sha": "97ee2768ef2a7f5cd8b656779065c341505353f7"
+        }
+      ]
+    },
+    {
+      "source_id": "apelfactory-ppsspp-cheatdb",
+      "platform": "psp",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheat.db",
+          "git_blob_sha": "216dc9adb6d9192c7e0abf4a1108ca46f36cf3bc"
+        }
+      ]
+    },
+    {
+      "source_id": "real-f00-usrcheat-ds",
+      "platform": "ds",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "usrcheat.dat",
+          "git_blob_sha": "f60bf5e0d9cd8030476d2f5bfa9279e18b808435"
+        }
+      ]
+    },
+    {
+      "source_id": "pcsx2-official-patches",
+      "platform": "ps2",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 4710,
+      "cheat_labeled_occurrences": 0,
+      "patch_labeled_occurrences": 4710,
+      "occurrences_already_archived_exact_bytes": 5,
+      "occurrences_without_archived_exact_bytes": 4705,
+      "distinct_blob_sha1": 4663,
+      "distinct_unarchived_blob_sha1": 4658,
+      "distinct_unarchived_cheat_labeled_blobs": 0,
+      "distinct_unarchived_patch_labeled_blobs": 4658,
+      "exclusive_unarchived_blob_sha1": 4636,
+      "exclusive_unarchived_cheat_labeled_blobs": 0,
+      "shared_with_other_external_sources_unarchived_blobs": 22,
+      "sample_exclusive_cheat_source_paths": []
+    },
+    {
+      "source_id": "dospamu-rpcs3-artemis-patches",
+      "platform": "ps3",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 2687,
+      "cheat_labeled_occurrences": 0,
+      "patch_labeled_occurrences": 2687,
+      "occurrences_already_archived_exact_bytes": 66,
+      "occurrences_without_archived_exact_bytes": 2621,
+      "distinct_blob_sha1": 2494,
+      "distinct_unarchived_blob_sha1": 2445,
+      "distinct_unarchived_cheat_labeled_blobs": 0,
+      "distinct_unarchived_patch_labeled_blobs": 2445,
+      "exclusive_unarchived_blob_sha1": 2445,
+      "exclusive_unarchived_cheat_labeled_blobs": 0,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": []
+    },
+    {
+      "source_id": "xenia-canary-game-patches",
+      "platform": "xbox-360",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 501,
+      "cheat_labeled_occurrences": 0,
+      "patch_labeled_occurrences": 501,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 501,
+      "distinct_blob_sha1": 501,
+      "distinct_unarchived_blob_sha1": 501,
+      "distinct_unarchived_cheat_labeled_blobs": 0,
+      "distinct_unarchived_patch_labeled_blobs": 501,
+      "exclusive_unarchived_blob_sha1": 501,
+      "exclusive_unarchived_cheat_labeled_blobs": 0,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": []
+    },
+    {
+      "source_id": "chidreams-rpcs3-patches",
+      "platform": "ps3",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 239,
+      "cheat_labeled_occurrences": 0,
+      "patch_labeled_occurrences": 239,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 239,
+      "distinct_blob_sha1": 237,
+      "distinct_unarchived_blob_sha1": 237,
+      "distinct_unarchived_cheat_labeled_blobs": 0,
+      "distinct_unarchived_patch_labeled_blobs": 237,
+      "exclusive_unarchived_blob_sha1": 237,
+      "exclusive_unarchived_cheat_labeled_blobs": 0,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": []
+    }
+  ],
+  "platforms": [
+    {
+      "platform": "switch",
+      "source_catalogs": 5,
+      "file_occurrences": 17275,
+      "distinct_source_blobs": 11718,
+      "distinct_blobs_absent_from_archive": 11716,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 10383,
+      "distinct_patch_labeled_blobs_absent_from_archive": 1589
+    },
+    {
+      "platform": "ps2",
+      "source_catalogs": 3,
+      "file_occurrences": 10772,
+      "distinct_source_blobs": 10492,
+      "distinct_blobs_absent_from_archive": 10487,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 5851,
+      "distinct_patch_labeled_blobs_absent_from_archive": 4658
+    },
+    {
+      "platform": "ps1",
+      "source_catalogs": 1,
+      "file_occurrences": 4635,
+      "distinct_source_blobs": 4634,
+      "distinct_blobs_absent_from_archive": 4634,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 4497,
+      "distinct_patch_labeled_blobs_absent_from_archive": 137
+    },
+    {
+      "platform": "3ds",
+      "source_catalogs": 3,
+      "file_occurrences": 938,
+      "distinct_source_blobs": 868,
+      "distinct_blobs_absent_from_archive": 868,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 868,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "vita",
+      "source_catalogs": 2,
+      "file_occurrences": 796,
+      "distinct_source_blobs": 793,
+      "distinct_blobs_absent_from_archive": 793,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 793,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "dreamcast",
+      "source_catalogs": 1,
+      "file_occurrences": 387,
+      "distinct_source_blobs": 387,
+      "distinct_blobs_absent_from_archive": 387,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 387,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "wii",
+      "source_catalogs": 1,
+      "file_occurrences": 306,
+      "distinct_source_blobs": 306,
+      "distinct_blobs_absent_from_archive": 306,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 305,
+      "distinct_patch_labeled_blobs_absent_from_archive": 1
+    },
+    {
+      "platform": "gamecube",
+      "source_catalogs": 1,
+      "file_occurrences": 30,
+      "distinct_source_blobs": 30,
+      "distinct_blobs_absent_from_archive": 30,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 28,
+      "distinct_patch_labeled_blobs_absent_from_archive": 2
+    },
+    {
+      "platform": "ds",
+      "source_catalogs": 2,
+      "file_occurrences": 6,
+      "distinct_source_blobs": 6,
+      "distinct_blobs_absent_from_archive": 6,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 6,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "psp",
+      "source_catalogs": 1,
+      "file_occurrences": 1,
+      "distinct_source_blobs": 1,
+      "distinct_blobs_absent_from_archive": 1,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 1,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "ps3",
+      "source_catalogs": 2,
+      "file_occurrences": 2926,
+      "distinct_source_blobs": 2731,
+      "distinct_blobs_absent_from_archive": 2682,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 0,
+      "distinct_patch_labeled_blobs_absent_from_archive": 2682
+    },
+    {
+      "platform": "xbox-360",
+      "source_catalogs": 1,
+      "file_occurrences": 501,
+      "distinct_source_blobs": 501,
+      "distinct_blobs_absent_from_archive": 501,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 0,
+      "distinct_patch_labeled_blobs_absent_from_archive": 501
+    }
+  ]
+}
