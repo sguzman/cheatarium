@@ -4,6 +4,8 @@
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
   "external_reference_files": 38573,
+  "homebrew_built_in_secret_occurrences": 19,
+  "homebrew_source_title_labels": 16,
   "external_switch_native_pair_labels_not_in_archive": 3436,
   "external_switch_distinct_title_only_mirror_labels": 3105,
   "external_3ds_title_labels_not_in_archived_sharkive": 108,
@@ -926,7 +928,7 @@
     },
     {
       "path": "reports/external-vs-archive-blobs.json",
-      "sha256": "878f29041ce78445f4671ade2a939b7e0a1342685c9b2195b53df86f6308324e",
+      "sha256": "983839d9be7a4d99d96d261cc09831517aba30b44b9e6e4c761ec99e7f96059d",
       "size_bytes": 16896
     },
     {
@@ -958,6 +960,11 @@
       "path": "saturn.json.gz",
       "sha256": "fc5cc8137446043bb9e61ba07d1999b671baee8e7cb520c14e7b40300f065072",
       "size_bytes": 42685
+    },
+    {
+      "path": "secrets/homebrew.json",
+      "sha256": "f9aae64c734977633245ad35191a09116c39136d0805567d94e397cad5589e4c",
+      "size_bytes": 14918
     },
     {
       "path": "segacd.json.gz",
