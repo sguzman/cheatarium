@@ -6,10 +6,10 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 38573,
-  "source_catalogs": 23,
+  "reference_files": 42205,
+  "source_catalogs": 24,
   "external_platforms": 12,
-  "distinct_git_blobs": 32467,
+  "distinct_git_blobs": 36099,
   "repeated_blob_excess_occurrences": 6106,
   "references_in_repeated_blob_groups": 9508,
   "cross_source_shared_blob_groups": 2781,
@@ -274,6 +274,17 @@
       "source_declared_file_types": {
         "cheat": 579
       }
+    },
+    {
+      "id": "ps2-widescreen-staging",
+      "platform": "ps2",
+      "reference_files": 3632,
+      "distinct_git_blobs": 3632,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "patch": 3632
+      }
     }
   ],
   "platforms": [
@@ -327,12 +338,13 @@
     },
     {
       "platform": "ps2",
-      "reference_files": 10772,
-      "distinct_git_blobs": 10492,
+      "reference_files": 14404,
+      "distinct_git_blobs": 14124,
       "repeated_blob_excess_occurrences": 280,
       "source_catalogs": [
         "daowace-pcsx2-consolidated",
         "pcsx2-official-patches",
+        "ps2-widescreen-staging",
         "xs1l3n7x-pcsx2"
       ]
     },

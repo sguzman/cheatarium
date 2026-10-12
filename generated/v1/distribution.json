@@ -3,19 +3,19 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
-  "external_reference_files": 38573,
+  "external_reference_files": 42205,
   "homebrew_built_in_secret_occurrences": 19,
   "homebrew_source_title_labels": 16,
   "external_switch_native_pair_labels_not_in_archive": 3436,
   "external_switch_distinct_title_only_mirror_labels": 3105,
   "external_3ds_title_labels_not_in_archived_sharkive": 108,
-  "external_ps2_native_pnach_files": 10772,
-  "external_ps2_recognized_crc_filename_occurrences": 10754,
-  "external_ps2_crc_labels_shared_between_sources": 3310,
-  "external_distinct_git_blobs": 32467,
+  "external_ps2_native_pnach_files": 14404,
+  "external_ps2_recognized_crc_filename_occurrences": 10986,
+  "external_ps2_crc_labels_shared_between_sources": 3349,
+  "external_distinct_git_blobs": 36099,
   "external_references_matching_archived_bytes": 73,
   "external_distinct_git_blobs_matching_archive": 56,
-  "external_distinct_git_blobs_without_archive_byte_match": 32411,
+  "external_distinct_git_blobs_without_archive_byte_match": 36043,
   "external_repeated_blob_excess_occurrences": 6106,
   "external_reference_platforms": 12,
   "source_files": 57351,
@@ -113,8 +113,8 @@
     },
     {
       "path": "external/catalog.json",
-      "sha256": "7007d0b01ad74f4db9892bea4258edc424f4244e749a3d882272e14b5335b343",
-      "size_bytes": 1842
+      "sha256": "666d40d9c5f48b88cadfcecb6855a6d1dd82d4adc569c1a7c6a9d178c9eb3522",
+      "size_bytes": 1867
     },
     {
       "path": "external/dreamcast.json.gz",
@@ -138,8 +138,8 @@
     },
     {
       "path": "external/ps2.json.gz",
-      "sha256": "5dbf937b3f0aa47feea79409331382a9dc60a57bfcdfceaeb7d3eefb28be8d04",
-      "size_bytes": 483523
+      "sha256": "b3adc1c2c22d4fc631b3aae9b50b26333484aa1cb5e7f09fbd9a5510d8f4037e",
+      "size_bytes": 619887
     },
     {
       "path": "external/ps3.json.gz",
@@ -918,28 +918,28 @@
     },
     {
       "path": "reports/acquisition-priorities.json",
-      "sha256": "91cce14a2f1cc5733367bee33d29c7fb5a8b2d63e59d43c2f075835e2f20d0dd",
-      "size_bytes": 30383
+      "sha256": "62628e90496d495cc63562d9fdcbc3c60cb457edcc78242f11df867dc622fdcb",
+      "size_bytes": 31143
     },
     {
       "path": "reports/acquisition-rights-review.json",
-      "sha256": "12a3e4d2949fc9a0db30e5134c9ac847ee39e14466ac00144fbcd695af53a677",
-      "size_bytes": 11781
+      "sha256": "37d1586339d4a4fc42c6c02e9ffa0f00e2c05919cf0c59892c67b23871d617fc",
+      "size_bytes": 13101
     },
     {
       "path": "reports/external-overlap.json",
-      "sha256": "11bec3e66ab9b211c8dad1c7bf10abe48f86a51907516d8c9b75ceb7d5027405",
-      "size_bytes": 2420716
+      "sha256": "b67c125851dcf766abb8779cabe8d80fece05c774fc3b7273fcc99078f39d082",
+      "size_bytes": 2421076
     },
     {
       "path": "reports/external-ps2-crc-labels.json",
-      "sha256": "e52e5161895e517b44391b4f3e329d7ab058a5c4594f704e1a947da41fb5a567",
-      "size_bytes": 9841
+      "sha256": "ca52b6f8332d07f3d6de7222243ae1ff36514821d132143af03ca665a0306be7",
+      "size_bytes": 11957
     },
     {
       "path": "reports/external-vs-archive-blobs.json",
-      "sha256": "983839d9be7a4d99d96d261cc09831517aba30b44b9e6e4c761ec99e7f96059d",
-      "size_bytes": 16896
+      "sha256": "2bb03dea5efbe964096d063638e0e3fa59385dd860098a1e332421ad9be42ddc",
+      "size_bytes": 17289
     },
     {
       "path": "reports/snes-codec-coverage.json",

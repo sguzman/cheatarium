@@ -8,12 +8,12 @@
   "independently_verified_games_or_cheat_effects": false,
   "filename_labels_are_verified_game_or_rom_build_ids": false,
   "crc_collisions_or_aliases_excluded": false,
-  "source_catalogs": 3,
-  "source_native_pnach_files": 10772,
-  "recognized_crc_filename_occurrences": 10754,
-  "unrecognized_crc_filename_occurrences": 18,
-  "distinct_crc_label_strings": 6668,
-  "crc_labels_in_two_or_more_sources": 3310,
+  "source_catalogs": 4,
+  "source_native_pnach_files": 14404,
+  "recognized_crc_filename_occurrences": 10986,
+  "unrecognized_crc_filename_occurrences": 3418,
+  "distinct_crc_label_strings": 6670,
+  "crc_labels_in_two_or_more_sources": 3349,
   "source_rows": [
     {
       "source_id": "daowace-pcsx2-consolidated",
@@ -54,6 +54,31 @@
       ]
     },
     {
+      "source_id": "ps2-widescreen-staging",
+      "native_pnach_file_occurrences": 3632,
+      "recognized_strict_crc_labels": 232,
+      "recognizable_serial_crc_filenames": 0,
+      "crc_only_filenames": 232,
+      "crc_prefixed_title_filenames": 0,
+      "unrecognized_or_malformed_filename_labels": 3400,
+      "distinct_crc_label_strings": 232,
+      "distinct_strict_serial_crc_label_pairs": 0,
+      "unrecognized_samples": [
+        "PNACH_WITH_ID/PBPX_952.01,SLPM_621.50.pnach",
+        "PNACH_WITH_ID/PBPX_952.01,SLPM_622.23.pnach",
+        "PNACH_WITH_ID/PBPX_952.01,SLPM_623.35.pnach",
+        "PNACH_WITH_ID/PBPX_952.01,SLPS_201.00,PBPX_952.01.pnach",
+        "PNACH_WITH_ID/PBPX_952.01,SLPS_201.35.pnach",
+        "PNACH_WITH_ID/PBPX_952.01,SLPS_202.14.pnach",
+        "PNACH_WITH_ID/PBPX_952.01,SLPS_204.99.pnach",
+        "PNACH_WITH_ID/PBPX_952.01,SLPS_250.04.pnach",
+        "PNACH_WITH_ID/PBPX_952.01.pnach",
+        "PNACH_WITH_ID/PBPX_955.06.pnach",
+        "PNACH_WITH_ID/SCAJ_201.44.pnach",
+        "PNACH_WITH_ID/SCES_500.00.pnach"
+      ]
+    },
+    {
       "source_id": "xs1l3n7x-pcsx2",
       "native_pnach_file_occurrences": 579,
       "recognized_strict_crc_labels": 573,
@@ -86,6 +111,16 @@
     },
     {
       "source_a": "daowace-pcsx2-consolidated",
+      "source_b": "ps2-widescreen-staging",
+      "shared_crc_label_strings": 188,
+      "crc_labels_only_a": 5067,
+      "crc_labels_only_b": 44,
+      "shared_strict_serial_crc_label_pairs": 0,
+      "serial_crc_label_pairs_only_a": 5461,
+      "serial_crc_label_pairs_only_b": 0
+    },
+    {
+      "source_a": "daowace-pcsx2-consolidated",
       "source_b": "xs1l3n7x-pcsx2",
       "shared_crc_label_strings": 498,
       "crc_labels_only_a": 4757,
@@ -96,6 +131,16 @@
     },
     {
       "source_a": "pcsx2-official-patches",
+      "source_b": "ps2-widescreen-staging",
+      "shared_crc_label_strings": 229,
+      "crc_labels_only_a": 4306,
+      "crc_labels_only_b": 3,
+      "shared_strict_serial_crc_label_pairs": 0,
+      "serial_crc_label_pairs_only_a": 4706,
+      "serial_crc_label_pairs_only_b": 0
+    },
+    {
+      "source_a": "pcsx2-official-patches",
       "source_b": "xs1l3n7x-pcsx2",
       "shared_crc_label_strings": 390,
       "crc_labels_only_a": 4145,
@@ -103,6 +148,16 @@
       "shared_strict_serial_crc_label_pairs": 345,
       "serial_crc_label_pairs_only_a": 4361,
       "serial_crc_label_pairs_only_b": 159
+    },
+    {
+      "source_a": "ps2-widescreen-staging",
+      "source_b": "xs1l3n7x-pcsx2",
+      "shared_crc_label_strings": 35,
+      "crc_labels_only_a": 197,
+      "crc_labels_only_b": 524,
+      "shared_strict_serial_crc_label_pairs": 0,
+      "serial_crc_label_pairs_only_a": 0,
+      "serial_crc_label_pairs_only_b": 504
     }
   ],
   "shared_crc_label_examples": [
@@ -110,7 +165,8 @@
       "crc": "0001171A",
       "sources": [
         "daowace-pcsx2-consolidated",
-        "pcsx2-official-patches"
+        "pcsx2-official-patches",
+        "ps2-widescreen-staging"
       ]
     },
     {
@@ -199,6 +255,13 @@
       ]
     },
     {
+      "crc": "013AD7DC",
+      "sources": [
+        "pcsx2-official-patches",
+        "ps2-widescreen-staging"
+      ]
+    },
+    {
       "crc": "013E349D",
       "sources": [
         "daowace-pcsx2-consolidated",
@@ -266,6 +329,13 @@
       "sources": [
         "daowace-pcsx2-consolidated",
         "pcsx2-official-patches"
+      ]
+    },
+    {
+      "crc": "0212D871",
+      "sources": [
+        "pcsx2-official-patches",
+        "ps2-widescreen-staging"
       ]
     },
     {
@@ -369,20 +439,6 @@
     },
     {
       "crc": "034836F8",
-      "sources": [
-        "daowace-pcsx2-consolidated",
-        "pcsx2-official-patches"
-      ]
-    },
-    {
-      "crc": "03487FEE",
-      "sources": [
-        "daowace-pcsx2-consolidated",
-        "pcsx2-official-patches"
-      ]
-    },
-    {
-      "crc": "035BF93D",
       "sources": [
         "daowace-pcsx2-consolidated",
         "pcsx2-official-patches"
