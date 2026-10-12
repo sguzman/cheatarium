@@ -4,6 +4,8 @@
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
   "external_reference_files": 22886,
+  "external_distinct_git_blobs": 20291,
+  "external_repeated_blob_excess_occurrences": 2595,
   "external_reference_platforms": 12,
   "source_files": 57351,
   "game_candidate_groups": 47502,
@@ -897,6 +899,11 @@
       "path": "repeats/zx-spectrum.json.gz",
       "sha256": "bd4317ab417431b5cca975122e9fbe4fada92efaf8f37913425a1aaf21da16ed",
       "size_bytes": 147
+    },
+    {
+      "path": "reports/external-overlap.json",
+      "sha256": "a2e57c8d45e54bff197ed4688ca1c3bae1fbaf01c03c7a1f60e3020c59802245",
+      "size_bytes": 10516
     },
     {
       "path": "reports/snes-codec-coverage.json",

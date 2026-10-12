@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-external-blob-overlap-v1",
+  "metadata_only": true,
+  "rights_status": "link_only_rights_review",
+  "method": "exact-original-git-blob-sha-only",
+  "independently_verified_games_or_effects": false,
+  "archive_payloads_included": false,
+  "reference_files": 22886,
+  "source_catalogs": 18,
+  "external_platforms": 12,
+  "distinct_git_blobs": 20291,
+  "repeated_blob_excess_occurrences": 2595,
+  "references_in_repeated_blob_groups": 5136,
+  "cross_source_shared_blob_groups": 2,
+  "cross_source_shared_references": 4,
+  "sources": [
+    {
+      "id": "duckstation-chtdb",
+      "platform": "ps1",
+      "reference_files": 4635,
+      "distinct_git_blobs": 4634,
+      "repeated_blob_excess_occurrences_within_source": 1,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 4497,
+        "patch": 138
+      }
+    },
+    {
+      "id": "xenia-canary-game-patches",
+      "platform": "xbox-360",
+      "reference_files": 501,
+      "distinct_git_blobs": 501,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "patch": 501
+      }
+    },
+    {
+      "id": "pcsx2-official-patches",
+      "platform": "ps2",
+      "reference_files": 4710,
+      "distinct_git_blobs": 4663,
+      "repeated_blob_excess_occurrences_within_source": 47,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "patch": 4710
+      }
+    },
+    {
+      "id": "r0ah-vitacheat",
+      "platform": "vita",
+      "reference_files": 677,
+      "distinct_git_blobs": 676,
+      "repeated_blob_excess_occurrences_within_source": 1,
+      "references_with_blob_shared_by_another_source": 2,
+      "source_declared_file_types": {
+        "cheat": 677
+      }
+    },
+    {
+      "id": "shumnot-vitacheat",
+      "platform": "vita",
+      "reference_files": 119,
+      "distinct_git_blobs": 119,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 2,
+      "source_declared_file_types": {
+        "cheat": 119
+      }
+    },
+    {
+      "id": "bucanero-dreamcast-cheats",
+      "platform": "dreamcast",
+      "reference_files": 387,
+      "distinct_git_blobs": 387,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 387
+      }
+    },
+    {
+      "id": "ademola-switch-native",
+      "platform": "switch",
+      "reference_files": 2582,
+      "distinct_git_blobs": 2502,
+      "repeated_blob_excess_occurrences_within_source": 80,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "patch": 655,
+        "cheat": 1927
+      }
+    },
+    {
+      "id": "ademola-3ds-native",
+      "platform": "3ds",
+      "reference_files": 257,
+      "distinct_git_blobs": 221,
+      "repeated_blob_excess_occurrences_within_source": 36,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 257
+      }
+    },
+    {
+      "id": "rogamer97-asm-3ds",
+      "platform": "3ds",
+      "reference_files": 53,
+      "distinct_git_blobs": 53,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 53
+      }
+    },
+    {
+      "id": "rogamer97-asm-ds",
+      "platform": "ds",
+      "reference_files": 5,
+      "distinct_git_blobs": 5,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 5
+      }
+    },
+    {
+      "id": "rogamer97-asm-gamecube",
+      "platform": "gamecube",
+      "reference_files": 30,
+      "distinct_git_blobs": 30,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 28,
+        "patch": 2
+      }
+    },
+    {
+      "id": "rogamer97-asm-wii",
+      "platform": "wii",
+      "reference_files": 306,
+      "distinct_git_blobs": 306,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 305,
+        "patch": 1
+      }
+    },
+    {
+      "id": "rogamer97-asm-switch",
+      "platform": "switch",
+      "reference_files": 418,
+      "distinct_git_blobs": 417,
+      "repeated_blob_excess_occurrences_within_source": 1,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "patch": 416,
+        "cheat": 2
+      }
+    },
+    {
+      "id": "dospamu-rpcs3-artemis-patches",
+      "platform": "ps3",
+      "reference_files": 2687,
+      "distinct_git_blobs": 2494,
+      "repeated_blob_excess_occurrences_within_source": 193,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "patch": 2687
+      }
+    },
+    {
+      "id": "chidreams-rpcs3-patches",
+      "platform": "ps3",
+      "reference_files": 239,
+      "distinct_git_blobs": 237,
+      "repeated_blob_excess_occurrences_within_source": 2,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "patch": 239
+      }
+    },
+    {
+      "id": "apelfactory-ppsspp-cheatdb",
+      "platform": "psp",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
+      }
+    },
+    {
+      "id": "real-f00-usrcheat-ds",
+      "platform": "ds",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
+      }
+    },
+    {
+      "id": "hamlet-switch-cheatdb",
+      "platform": "switch",
+      "reference_files": 5278,
+      "distinct_git_blobs": 3046,
+      "repeated_blob_excess_occurrences_within_source": 2232,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 4746,
+        "patch": 532
+      }
+    }
+  ],
+  "platforms": [
+    {
+      "platform": "3ds",
+      "reference_files": 310,
+      "distinct_git_blobs": 274,
+      "repeated_blob_excess_occurrences": 36,
+      "source_catalogs": [
+        "ademola-3ds-native",
+        "rogamer97-asm-3ds"
+      ]
+    },
+    {
+      "platform": "dreamcast",
+      "reference_files": 387,
+      "distinct_git_blobs": 387,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "bucanero-dreamcast-cheats"
+      ]
+    },
+    {
+      "platform": "ds",
+      "reference_files": 6,
+      "distinct_git_blobs": 6,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "real-f00-usrcheat-ds",
+        "rogamer97-asm-ds"
+      ]
+    },
+    {
+      "platform": "gamecube",
+      "reference_files": 30,
+      "distinct_git_blobs": 30,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "rogamer97-asm-gamecube"
+      ]
+    },
+    {
+      "platform": "ps1",
+      "reference_files": 4635,
+      "distinct_git_blobs": 4634,
+      "repeated_blob_excess_occurrences": 1,
+      "source_catalogs": [
+        "duckstation-chtdb"
+      ]
+    },
+    {
+      "platform": "ps2",
+      "reference_files": 4710,
+      "distinct_git_blobs": 4663,
+      "repeated_blob_excess_occurrences": 47,
+      "source_catalogs": [
+        "pcsx2-official-patches"
+      ]
+    },
+    {
+      "platform": "ps3",
+      "reference_files": 2926,
+      "distinct_git_blobs": 2731,
+      "repeated_blob_excess_occurrences": 195,
+      "source_catalogs": [
+        "chidreams-rpcs3-patches",
+        "dospamu-rpcs3-artemis-patches"
+      ]
+    },
+    {
+      "platform": "psp",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "apelfactory-ppsspp-cheatdb"
+      ]
+    },
+    {
+      "platform": "switch",
+      "reference_files": 8278,
+      "distinct_git_blobs": 5965,
+      "repeated_blob_excess_occurrences": 2313,
+      "source_catalogs": [
+        "ademola-switch-native",
+        "hamlet-switch-cheatdb",
+        "rogamer97-asm-switch"
+      ]
+    },
+    {
+      "platform": "vita",
+      "reference_files": 796,
+      "distinct_git_blobs": 793,
+      "repeated_blob_excess_occurrences": 3,
+      "source_catalogs": [
+        "r0ah-vitacheat",
+        "shumnot-vitacheat"
+      ]
+    },
+    {
+      "platform": "wii",
+      "reference_files": 306,
+      "distinct_git_blobs": 306,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "rogamer97-asm-wii"
+      ]
+    },
+    {
+      "platform": "xbox-360",
+      "reference_files": 501,
+      "distinct_git_blobs": 501,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "xenia-canary-game-patches"
+      ]
+    }
+  ],
+  "cross_source_exact_blob_matches": [
+    {
+      "git_blob_sha": "bd9c87c6fcebcd47abd376d76cc6628d03c44019",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "r0ah-vitacheat",
+          "platform": "vita",
+          "path": "db/PCSE01113.psv",
+          "git_blob_sha": "bd9c87c6fcebcd47abd376d76cc6628d03c44019",
+          "bytes": 625
+        },
+        {
+          "source_id": "shumnot-vitacheat",
+          "platform": "vita",
+          "path": "PCSE01113.psv",
+          "git_blob_sha": "bd9c87c6fcebcd47abd376d76cc6628d03c44019",
+          "bytes": 625
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "c4b7d0f01961d2ca240e8f3b6a6e0df10274d5fc",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "r0ah-vitacheat",
+          "platform": "vita",
+          "path": "db/PCSE01224.psv",
+          "git_blob_sha": "c4b7d0f01961d2ca240e8f3b6a6e0df10274d5fc",
+          "bytes": 757
+        },
+        {
+          "source_id": "shumnot-vitacheat",
+          "platform": "vita",
+          "path": "PCSE01224.psv",
+          "git_blob_sha": "c4b7d0f01961d2ca240e8f3b6a6e0df10274d5fc",
+          "bytes": 757
+        }
+      ]
+    }
+  ]
+}
