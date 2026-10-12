@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "saramagrean-psp-cwcheat",
+  "repository": "https://github.com/Saramagrean/CWCheat-Database-Plus-",
+  "snapshot_commit": "5ab71718f01810e7980d29a48b4755463233c55b",
+  "git_tree_sha": "5ab71718f01810e7980d29a48b4755463233c55b",
+  "platform": "psp",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "An 8.9 MB PSP/PPSSPP CWCheat cheat.db aggregation from Saramagrean; its README explicitly credits third-party PPSSPP forums, GameHacking, LunaMoo, Kabuto_Kun, Raing3 and others. No root LICENSE found at pinned revision; the credited creators' code redistribution rights have not been confirmed. This is a binary database reference, not validated individual cheats or author permission.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 1
+  },
+  "files": [
+    [
+      "cheat.db",
+      "50863d6fe9ac29535b3cec6d668af698a87090de",
+      8922567
+    ]
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "deadskullz-nds-formats",
+  "repository": "https://github.com/szTheory/NDS-Cheat-Databases",
+  "snapshot_commit": "0173af14d33e2c045e7c5e30c71d369624a33020",
+  "git_tree_sha": "0173af14d33e2c045e7c5e30c71d369624a33020",
+  "platform": "ds",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Community-converted Nintendo DS Action Replay collections credited to DeadSkullzJr, distributed in nine native flashcart/emulator file formats (eight byte-distinct Git blobs because cheat.db and cheat_EN.db are exact copies). The mirror includes an AGPL-3.0 LICENSE and links to original GBAtemp/Bitbucket creators, but its root notice does not establish permission from every original code author. Whole binary/XML/7z cheat databases are link-only; no binary body or verified title/effect identities copied.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 9
+  },
+  "files": [
+    [
+      "Cheat Databases/SCC Cheats.7z",
+      "dfe5a34afac8354a87dfff3ce537156bc4f3d2a5",
+      1334964
+    ],
+    [
+      "Cheat Databases/cheat.dat",
+      "b6b769abdaa5692cd2e5f660cb46982693cbf673",
+      42983604
+    ],
+    [
+      "Cheat Databases/cheat.db",
+      "44c27f11bcf3bfba39f04fc97c70ecb37ac94b6f",
+      71861539
+    ],
+    [
+      "Cheat Databases/cheat_EN.db",
+      "44c27f11bcf3bfba39f04fc97c70ecb37ac94b6f",
+      71861539
+    ],
+    [
+      "Cheat Databases/cheats.dat",
+      "ab3c5d561b3a0b6fa57f44373bb9885a3b86a754",
+      11501446
+    ],
+    [
+      "Cheat Databases/cheats.xml",
+      "03b00ce966b261a661ce2e1d6b8e907c60127214",
+      103408603
+    ],
+    [
+      "Cheat Databases/ezarcode.dat",
+      "522c5084d537cdccc311588c687c3580a893f88b",
+      42983604
+    ],
+    [
+      "Cheat Databases/user.evoCheats",
+      "7e3d737c53145c90d782a4654682adb481e4dc01",
+      11501478
+    ],
+    [
+      "Cheat Databases/usrcheat.dat",
+      "8d3f1215a4ca02008e0e55d396a18bef6537a0a5",
+      42983604
+    ]
+  ]
+}

@@ -27,6 +27,18 @@ SOURCES = {
         "platform": "ps1", "expected": {"cheat": 263, "patch": 5},
         "rights_note": "Pinned derivative DuckStation PS1 database: 4,485 original .cht file occurrences, of which 4,217 exact Git blobs are already indexed under duckstation-chtdb; retain only 268 different-byte paths (263 cheats and 5 patches). The upstream LICENSE expressly reserves cheat and patch copyright to original authors and grants MIT only for processing scripts. These different bytes can be older/modified versions of the SAME game and are not new code effects, verified builds or redistributable source contents.",
     },
+    "deadskullz-nds-formats": {
+        "repository": "szTheory/NDS-Cheat-Databases",
+        "commit": "0173af14d33e2c045e7c5e30c71d369624a33020",
+        "platform": "ds", "expected": {"cheat": 9},
+        "rights_note": "Community-converted Nintendo DS Action Replay collections credited to DeadSkullzJr, distributed in nine native flashcart/emulator file formats (eight byte-distinct Git blobs because cheat.db and cheat_EN.db are exact copies). The mirror includes an AGPL-3.0 LICENSE and links to original GBAtemp/Bitbucket creators, but its root notice does not establish permission from every original code author. Whole binary/XML/7z cheat databases are link-only; no binary body or verified title/effect identities copied.",
+    },
+    "saramagrean-psp-cwcheat": {
+        "repository": "Saramagrean/CWCheat-Database-Plus-",
+        "commit": "5ab71718f01810e7980d29a48b4755463233c55b",
+        "platform": "psp", "expected": {"cheat": 1},
+        "rights_note": "An 8.9 MB PSP/PPSSPP CWCheat cheat.db aggregation from Saramagrean; its README explicitly credits third-party PPSSPP forums, GameHacking, LunaMoo, Kabuto_Kun, Raing3 and others. No root LICENSE found at pinned revision; the credited creators' code redistribution rights have not been confirmed. This is a binary database reference, not validated individual cheats or author permission.",
+    },
     "xenia-canary-game-patches": {
         "repository": "xenia-canary/game-patches",
         "commit": "106bb0a40be27b5a2444162562975e4885e1ce74",
@@ -180,6 +192,11 @@ def classify(source, path):
             return "cheat"
         if re.fullmatch(r"patches/[^/]+\.cht", path):
             return "patch"
+    if source == "deadskullz-nds-formats" and re.fullmatch(
+            r"Cheat Databases/(?:SCC Cheats\.7z|cheat\.dat|cheat\.db|cheat_EN\.db|cheats\.dat|cheats\.xml|ezarcode\.dat|user\.evoCheats|usrcheat\.dat)", path):
+        return "cheat"
+    if source == "saramagrean-psp-cwcheat" and path == "cheat.db":
+        return "cheat"
     if source == "xenia-canary-game-patches" and re.fullmatch(r"patches/[^/]+\.patch\.toml", path):
         return "patch"
     if source == "pcsx2-official-patches" and re.fullmatch(r"patches/[^/]+\.pnach", path):

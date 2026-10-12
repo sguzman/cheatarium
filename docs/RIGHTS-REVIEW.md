@@ -1,7 +1,7 @@
 # Bulk cheat acquisition: pinned original-author rights review
 
 The project currently archives 67,834 original files and separately indexes
-42,473 **link-only** external occurrences. Not all are cheats, unique titles,
+42,483 **link-only** external occurrences. Not all are cheats, unique titles,
 or independently verified modifications.
 
 The [priority scorecard](../generated/v1/reports/acquisition-priorities.json)
@@ -29,7 +29,9 @@ permissions, or establish who owns the material. A root MIT license may apply
 only to the aggregation author's work, not third-party code. Original-author
 grants can potentially clear a subset without clearing the whole collection.
 
-All nine findings are **rights unresolved, link-only**. The other external
+The new DS multi-format conversion from szTheory (nine linked file occurrences, eight distinct Git blobs) and the Saramagrean PSP compilation (one linked file) also remain unimported. Both depend on code creators beyond the mirror operator: the DS repository's AGPL root notice does not automatically license separately authored historical Action Replay codes, and the PSP collection cites numerous external sources without a blanket license. Their original archive bytes are not copied.
+
+All nine documented findings are **rights unresolved, link-only**. The other external
 catalogs remain link-only and are not silently considered cleared.
 Git hashes establish byte identity only, not distinct games, gameplay effects,
 authorship, or redistribution rights.

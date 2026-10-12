@@ -32,11 +32,13 @@ class TestExternalBulk(unittest.TestCase):
             "xs1l3n7x-pcsx2": 579,
             "ps2-widescreen-staging": 3632,
             "crashgg-ps1-chtdb-delta": 268,
+            "deadskullz-nds-formats": 9,
+            "saramagrean-psp-cwcheat": 1,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 42473)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 42483)
 
     def test_widescreen_staging_is_link_only_and_patch_only(self):
         source = next(x for x in load(__import__("external_bulk").ROOT)
@@ -67,6 +69,24 @@ class TestExternalBulk(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0]["kind"], "cheat")
         self.assertEqual(result[0]["redistribution"], "link_only_rights_review")
+
+    def test_two_bulky_compiled_database_sources_are_metadata_only(self):
+        indexes = load(__import__("external_bulk").ROOT)
+        ds = next(x for x in indexes if x["id"] == "deadskullz-nds-formats")
+        psp = next(x for x in indexes if x["id"] == "saramagrean-psp-cwcheat")
+        self.assertEqual((len(ds["files"]), len(psp["files"])), (9, 1))
+        self.assertEqual((len({r[1] for r in ds["files"]}),
+                          len({r[1] for r in psp["files"]})), (8, 1))
+        self.assertEqual(ds["file_counts"], {"cheat": 9})
+        self.assertEqual(psp["file_counts"], {"cheat": 1})
+        self.assertTrue(all(classify(ds["id"], p) == "cheat"
+                            for p, _, _ in ds["files"]))
+        self.assertTrue(all(classify(psp["id"], p) == "cheat"
+                            for p, _, _ in psp["files"]))
+        self.assertEqual(len(lookup([ds], "usrcheat.dat", "ds", 5)), 1)
+        self.assertEqual(len(lookup([psp], "cheat.db", "psp", 5)), 1)
+        self.assertTrue(all(s["rights_status"] == "link_only_rights_review"
+                            for s in (ds, psp)))
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
