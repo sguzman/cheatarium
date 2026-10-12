@@ -136,6 +136,27 @@ def build_manifest(root):
     manifest_files.append({"path": archive_overlap_rel,
                            **digest(safe_path(root, archive_overlap_rel))})
     named_paths.add(archive_overlap_rel)
+    # Strict native 16hex Switch title/build filename comparisons, and
+    # separate title-only JSON mirror labels, without copying code bodies.
+    from audit_switch_external_title_build import build as audit_switch_external
+    from measure_switch_bulk_coverage import build_report as archived_switch_report
+    switch_external_rel = "reports/switch-external-title-build-coverage.json"
+    switch_external = checked_json(safe_path(root, switch_external_rel))
+    if switch_external != audit_switch_external(ROOT):
+        raise ValueError("Stale external-vs-archived Switch title/build label audit")
+    original_switch = archived_switch_report(ROOT)
+    if (switch_external["summary"]["imported_distinct_native_title_build_pairs"] !=
+            original_switch["title_build_id_pairs"]["combined_distinct"]
+            or sum(row["link_only_file_occurrences"] for row in
+                   switch_external["external_sources"]) !=
+               next(x["source_files"] for x in external_catalog["platforms"]
+                    if x["platform"] == "switch")
+            or switch_external["rights_unresolved_external_payloads_imported"]
+            or switch_external["json_mirror_has_build_id_evidence"]):
+        raise ValueError("Switch pair count, rights status or JSON label scopes disagree")
+    manifest_files.append({"path": switch_external_rel,
+                           **digest(safe_path(root, switch_external_rel))})
+    named_paths.add(switch_external_rel)
     from audit_ps2_external_crc_labels import build as audit_external_ps2_labels
     ps2_labels_rel = "reports/external-ps2-crc-labels.json"
     ps2_labels = checked_json(safe_path(root, ps2_labels_rel))
@@ -393,6 +414,8 @@ def build_manifest(root):
         "compatibility": "filename candidates only; never auto-enable cheat codes",
         "console_bundles": len(entries),
         "external_reference_files": external_catalog["reference_files"],
+        "external_switch_native_pair_labels_not_in_archive": switch_external["summary"]["native_pairs_only_in_external_sources"],
+        "external_switch_distinct_title_only_mirror_labels": switch_external["summary"]["mirror_distinct_title_only_json_labels"],
         "external_ps2_native_pnach_files": ps2_labels["source_native_pnach_files"],
         "external_ps2_recognized_crc_filename_occurrences": ps2_labels["recognized_crc_filename_occurrences"],
         "external_ps2_crc_labels_shared_between_sources": ps2_labels["crc_labels_in_two_or_more_sources"],
