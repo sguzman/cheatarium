@@ -651,6 +651,7 @@ fn run() -> Result<()> {
     }
     known_platforms.insert("3ds".to_owned());
     known_platforms.insert("switch".to_owned());
+    known_platforms.insert("msx-family".to_owned());
     for platform in ["ps2", "ps3", "ps4", "gamecube", "wii", "wii-u"] {
         known_platforms.insert(platform.to_owned());
     }
@@ -773,6 +774,97 @@ fn run() -> Result<()> {
             .entry(system.platform.clone())
             .or_default()
             .push(record);
+    }
+
+    // CC BY-SA Libretro-derived fork delta: only source blobs *not already
+    // present* in our pinned 27,915-file Libretro collection are archived.
+    // Combined MSX/MSX2/MSX2+/Turbo R original folders stay in a distinct
+    // source-family platform until actual machine compatibility is evidenced.
+    if root.join("sources/bithex-libretro-delta.json").exists() {
+        let id = "bithex-libretro-delta";
+        let extra: SourceManifest =
+            serde_json::from_slice(&fs::read(root.join(format!("sources/{id}.json")))?)?;
+        if extra.id != id {
+            return Err("Mismatched pinned Libretro-fork source manifest".into());
+        }
+        let mut original_codes = 0usize;
+        for item in extra.files {
+            if item.upstream_path == "LICENSE" || item.upstream_path == "README.md" {
+                continue;
+            }
+            let source_path = item.upstream_path.strip_prefix("cht/")
+                .ok_or("Invalid original Libretro-fork source path")?;
+            let (dir, file_name) = source_path.split_once('/')
+                .ok_or("Missing original Libretro-fork collection directory")?;
+            if !file_name.ends_with(".cht") || file_name.contains('/') {
+                return Err("Invalid source-native Libretro-fork filename".into());
+            }
+            let platform = if matches!(dir,
+                "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R"
+                | "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R (fMSX core)"
+            ) {
+                "msx-family"
+            } else {
+                source_directories.get(dir)
+                    .ok_or("Unmapped Libretro-fork source collection")?
+                    .platform.as_str()
+            };
+            original_codes += 1;
+            if wanted.as_ref().is_some_and(|v| !v.contains(platform)) {
+                continue;
+            }
+            let raw = fs::read(checked_path(&root, &item.archive_path)?)?;
+            let mut parsed = parse_cht(&String::from_utf8_lossy(&raw));
+            let stem = file_name.trim_end_matches(".cht");
+            if platform == "snes" {
+                let declared_format = format_hint(stem);
+                for code in &mut parsed.codes {
+                    if code.role != "code" {
+                        continue;
+                    }
+                    if let Some(source_code) = &code.code {
+                        if source_code.contains('+') {
+                            // A join has no demonstrated simultaneous execution
+                            // semantics and cannot be folded into memory writes.
+                            code.composition = Some(SourceComposition::unresolved());
+                        } else {
+                            code.snes_decode = match declared_format {
+                                Some(format) => decode_snes(format, source_code).ok(),
+                                None => decode_snes_unlabelled(source_code).ok(),
+                            };
+                        }
+                    }
+                }
+            }
+            let label = title_hint(stem);
+            let record = IndexedFile {
+                id: format!("{id}:{}", item.upstream_path),
+                title_hint: label.clone(),
+                candidate_game_key: candidate_game_key(&label),
+                identity_confidence: "filename_heuristic_only",
+                raw_filename: file_name.to_owned(),
+                region_hint: region_hint(stem),
+                format_hint: format_hint(stem),
+                declared_cheats: parsed.declared_count,
+                parse_warnings: parsed.warnings,
+                codes: parsed.codes,
+                provenance: Provenance {
+                    source_id: id.to_owned(),
+                    repository: extra.repository.clone(),
+                    revision: extra.snapshot_commit.clone(),
+                    license: extra.license.clone(),
+                    upstream_path: item.upstream_path,
+                    archive_path: item.archive_path,
+                    git_blob_sha: item.git_blob_sha,
+                },
+            };
+            by_platform.entry(platform.to_owned()).or_default().push(record);
+        }
+        if original_codes != 1125 {
+            return Err(format!(
+                "Pinned Libretro-fork source count drift: {original_codes}"
+            ).into());
+        }
     }
 
     // Sharkive files are native Gateshark/Atmosphère sections indexed by

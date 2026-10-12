@@ -37,6 +37,8 @@ An indexed code entry has an ordinal, description, optional code string, `source
 
 **Distribution:** `generated/v1/distribution.json` lists SHA-256 and byte length for every artifact, including the ROM evidence registry, created and checked by `tools/build_distribution.py`.
 
+The optional `bithex-libretro-delta` imported collection contains only files whose original Git blob bytes do not appear in the pinned baseline Libretro archive. Source paths stay separate, so no game compatibility is inferred from shared titles; two mixed-generation original MSX/MSX2/MSX2+/Turbo R directories use the advisory `msx-family` platform instead of being silently attributed to either `msx` or `msx2`. The `source_id` preserves that fork's attribution and CC BY-SA notice.
+
 ## Interpretation rules
 
 Source occurrences and filename-derived game groups do not prove game identity, ROM revision, device compatibility, or code function. Group keys may collide; different games must not be merged as verified merely because their slugs match. Different code formats must not be treated as raw memory writes without console-specific decoding.
