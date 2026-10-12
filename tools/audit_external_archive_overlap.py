@@ -27,6 +27,10 @@ def load_archived(root=ROOT):
         doc = json.loads(manifest.read_text("utf-8"))
         source_id = doc.get("id")
         rows = doc.get("files")
+        archive_prefix = doc.get("archive_prefix", f"archive/{source_id}/")
+        if (not isinstance(archive_prefix, str) or not archive_prefix.startswith("archive/")
+                or not archive_prefix.endswith("/") or ".." in archive_prefix.split("/")):
+            raise ValueError(f"Invalid source archive prefix: {manifest}")
         if (not isinstance(source_id, str) or not source_id
                 or not isinstance(rows, list)):
             raise ValueError(f"Malformed archived manifest: {manifest}")
@@ -36,7 +40,7 @@ def load_archived(root=ROOT):
             path = row.get("archive_path")
             sha = row.get("git_blob_sha")
             if (not isinstance(path, str)
-                    or not path.startswith(f"archive/{source_id}/")
+                    or not path.startswith(archive_prefix)
                     or not isinstance(sha, str) or not SHA.fullmatch(sha)):
                 raise ValueError(f"Invalid archived blob evidence: {source_id}, {path!r}")
             if path in seen:
