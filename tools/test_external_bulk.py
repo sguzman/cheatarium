@@ -37,6 +37,23 @@ class TestExternalBulk(unittest.TestCase):
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
         self.assertEqual(sum(len(x["files"]) for x in indexes), 42205)
 
+    def test_widescreen_staging_is_link_only_and_patch_only(self):
+        source = next(x for x in load(__import__("external_bulk").ROOT)
+                      if x["id"] == "ps2-widescreen-staging")
+        self.assertEqual(len(source["files"]), 3632)
+        self.assertEqual(source["file_counts"], {"patch": 3632})
+        self.assertEqual(sum(p.startswith("PNACH/") for p, _, _ in source["files"]), 232)
+        self.assertEqual(sum(p.startswith("PNACH_WITH_ID/") for p, _, _ in source["files"]), 3400)
+        self.assertTrue(all(classify(source["id"], p) == "patch"
+                            for p, _, _ in source["files"]))
+        found = lookup([source], "0001171A", "ps2", 3)
+        self.assertEqual(len(found), 1)
+        self.assertEqual(found[0]["kind"], "patch")
+        self.assertEqual(found[0]["redistribution"], "link_only_rights_review")
+        self.assertEqual(found[0]["git_blob_sha"], "8e9f2a29fdec4482c17b9c50e51ba95337a93e3a")
+        self.assertTrue(found[0]["upstream_url"].startswith(
+            "https://github.com/PS2-Widescreen/pnach-DB/blob/91902dd63"))
+
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
         for key, value in [("payload", "THIS IS NOT METADATA"), ("rights_status", "imported")]:
