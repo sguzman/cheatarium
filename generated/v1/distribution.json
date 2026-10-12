@@ -5,6 +5,9 @@
   "console_bundles": 59,
   "external_reference_files": 32511,
   "external_distinct_git_blobs": 26638,
+  "external_references_matching_archived_bytes": 73,
+  "external_distinct_git_blobs_matching_archive": 56,
+  "external_distinct_git_blobs_without_archive_byte_match": 26582,
   "external_repeated_blob_excess_occurrences": 5873,
   "external_reference_platforms": 12,
   "source_files": 57351,
@@ -904,6 +907,11 @@
       "path": "reports/external-overlap.json",
       "sha256": "96e7e9410fa39e60017732832698d1fac976749b56df85402f322a9cb03d6196",
       "size_bytes": 2406140
+    },
+    {
+      "path": "reports/external-vs-archive-blobs.json",
+      "sha256": "ede423f13d67d6682ecb25638e58a26bf30596ddfe37ad466a24ea1f5b3e5082",
+      "size_bytes": 16114
     },
     {
       "path": "reports/snes-codec-coverage.json",

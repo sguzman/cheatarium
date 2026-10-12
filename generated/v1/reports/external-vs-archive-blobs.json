@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-external-vs-archive-exact-blobs-v1",
+  "method": "git-blob-sha1-exact-original-bytes-only",
+  "no_cheat_payloads_in_report": true,
+  "proves_game_or_cheat_equivalence": false,
+  "establishes_external_redistribution_rights": false,
+  "proves_gameplay_compatibility": false,
+  "archive_manifest_file_occurrences": 67831,
+  "archive_distinct_git_blobs": 57443,
+  "external_reference_files": 32511,
+  "external_distinct_git_blobs": 26638,
+  "external_references_matching_archived_bytes": 73,
+  "external_references_without_archived_byte_match": 32438,
+  "external_distinct_git_blobs_matching_archive": 56,
+  "external_distinct_git_blobs_without_archive_byte_match": 26582,
+  "sources": [
+    {
+      "source_id": "duckstation-chtdb",
+      "platform": "ps1",
+      "reference_files": 4635,
+      "distinct_external_git_blobs": 4634,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 4635,
+      "distinct_git_blobs_without_archived_byte_match": 4634,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "xenia-canary-game-patches",
+      "platform": "xbox-360",
+      "reference_files": 501,
+      "distinct_external_git_blobs": 501,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 501,
+      "distinct_git_blobs_without_archived_byte_match": 501,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "pcsx2-official-patches",
+      "platform": "ps2",
+      "reference_files": 4710,
+      "distinct_external_git_blobs": 4663,
+      "matches_archived_blob": 5,
+      "distinct_git_blobs_already_archived": 5,
+      "references_without_archived_byte_match": 4705,
+      "distinct_git_blobs_without_archived_byte_match": 4658,
+      "exact_byte_match_examples": [
+        {
+          "external_path": "patches/SLES-50539_992B46DC.pnach",
+          "git_blob_sha": "0abc98b70007abbd1c0966c46d96beab74b133c7",
+          "archived_source_id": "cookieplmonster-console-cheat-codes",
+          "archived_path": "archive/cookieplmonster-console-cheat-codes/PS2/007 Agent Under Fire/Widescreen/SLES-50539_992B46DC_widescreen.pnach"
+        },
+        {
+          "external_path": "patches/SLES-54321_ECCEEC09.pnach",
+          "git_blob_sha": "190a27522c6eec2833ff7130f2f0c4f442a7e240",
+          "archived_source_id": "cookieplmonster-console-cheat-codes",
+          "archived_path": "archive/cookieplmonster-console-cheat-codes/PS2/Need for Speed Carbon/Fix Most Wanted Black Edition save detection/SLES-54321_ECCEEC09_bonus.pnach"
+        },
+        {
+          "external_path": "patches/SLPM-67505_60666E72.pnach",
+          "git_blob_sha": "d6caa5d9f7587017de096c760596e786b84e4c34",
+          "archived_source_id": "cookieplmonster-console-cheat-codes",
+          "archived_path": "archive/cookieplmonster-console-cheat-codes/PS2/007 Agent Under Fire/Widescreen/SLPM-67505_60666E72_widescreen.pnach"
+        },
+        {
+          "external_path": "patches/SLUS-20265_79646C72.pnach",
+          "git_blob_sha": "378e77a1a73c9678674c745c2c7ce6851b020cad",
+          "archived_source_id": "cookieplmonster-console-cheat-codes",
+          "archived_path": "archive/cookieplmonster-console-cheat-codes/PS2/007 Agent Under Fire/Widescreen/SLUS-20265_79646C72_widescreen.pnach"
+        }
+      ]
+    },
+    {
+      "source_id": "r0ah-vitacheat",
+      "platform": "vita",
+      "reference_files": 677,
+      "distinct_external_git_blobs": 676,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 677,
+      "distinct_git_blobs_without_archived_byte_match": 676,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "shumnot-vitacheat",
+      "platform": "vita",
+      "reference_files": 119,
+      "distinct_external_git_blobs": 119,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 119,
+      "distinct_git_blobs_without_archived_byte_match": 119,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "bucanero-dreamcast-cheats",
+      "platform": "dreamcast",
+      "reference_files": 387,
+      "distinct_external_git_blobs": 387,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 387,
+      "distinct_git_blobs_without_archived_byte_match": 387,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "ademola-switch-native",
+      "platform": "switch",
+      "reference_files": 2582,
+      "distinct_external_git_blobs": 2502,
+      "matches_archived_blob": 2,
+      "distinct_git_blobs_already_archived": 2,
+      "references_without_archived_byte_match": 2580,
+      "distinct_git_blobs_without_archived_byte_match": 2500,
+      "exact_byte_match_examples": [
+        {
+          "external_path": "Titles/01005FF002E2A000/cheats/F466DA1D713533C2.txt",
+          "git_blob_sha": "dbe04dbad4b6d8ae111cdc4f296eddae6402b677",
+          "archived_source_id": "sharkive",
+          "archived_path": "archive/sharkive/switch/01005FF002E2A000/f466da1d713533c2.txt"
+        },
+        {
+          "external_path": "Titles/0100C510166F0000/cheats/53AECA8D764401D4.txt",
+          "git_blob_sha": "219c3b32710eb60e8b1fa787a3d9cc2f06f60520",
+          "archived_source_id": "bad1dea-nxcheats-switch",
+          "archived_path": "archive/bad1dea-nxcheats-switch/_old/Chained Echoes/0100C510166F0000 for Ryujinx/Chained Echoes (US) v589824/cheats/53AECA8D764401D4.txt"
+        }
+      ]
+    },
+    {
+      "source_id": "ademola-3ds-native",
+      "platform": "3ds",
+      "reference_files": 257,
+      "distinct_external_git_blobs": 221,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 257,
+      "distinct_git_blobs_without_archived_byte_match": 221,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "rogamer97-asm-3ds",
+      "platform": "3ds",
+      "reference_files": 53,
+      "distinct_external_git_blobs": 53,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 53,
+      "distinct_git_blobs_without_archived_byte_match": 53,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "rogamer97-asm-ds",
+      "platform": "ds",
+      "reference_files": 5,
+      "distinct_external_git_blobs": 5,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 5,
+      "distinct_git_blobs_without_archived_byte_match": 5,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "rogamer97-asm-gamecube",
+      "platform": "gamecube",
+      "reference_files": 30,
+      "distinct_external_git_blobs": 30,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 30,
+      "distinct_git_blobs_without_archived_byte_match": 30,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "rogamer97-asm-wii",
+      "platform": "wii",
+      "reference_files": 306,
+      "distinct_external_git_blobs": 306,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 306,
+      "distinct_git_blobs_without_archived_byte_match": 306,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "rogamer97-asm-switch",
+      "platform": "switch",
+      "reference_files": 418,
+      "distinct_external_git_blobs": 417,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 418,
+      "distinct_git_blobs_without_archived_byte_match": 417,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "dospamu-rpcs3-artemis-patches",
+      "platform": "ps3",
+      "reference_files": 2687,
+      "distinct_external_git_blobs": 2494,
+      "matches_archived_blob": 66,
+      "distinct_git_blobs_already_archived": 49,
+      "references_without_archived_byte_match": 2621,
+      "distinct_git_blobs_without_archived_byte_match": 2445,
+      "exact_byte_match_examples": [
+        {
+          "external_path": "PSXPlace Confirmed/Alpha Protocol BLUS30341 01.00.ncl",
+          "git_blob_sha": "03e533ec4cc96ee3fed26bbfccf4c23fa8db2c5d",
+          "archived_source_id": "artemis-ps3",
+          "archived_path": "archive/artemis-ps3/docs/codes/Alpha Protocol BLUS30341 01.00.ncl"
+        },
+        {
+          "external_path": "PSXPlace Confirmed/Brutal Legend BLES00562 01.02.ncl",
+          "git_blob_sha": "936191ed261a0008a9535d37a79f8897ee666f77",
+          "archived_source_id": "artemis-ps3",
+          "archived_path": "archive/artemis-ps3/docs/codes/Brutal Legend BLES00562 01.02.ncl"
+        },
+        {
+          "external_path": "PSXPlace Confirmed/Castle Crashers NPEB00293 01.00.ncl",
+          "git_blob_sha": "9c8fa1247f462427f9f414cb70acd21602266dcd",
+          "archived_source_id": "artemis-ps3",
+          "archived_path": "archive/artemis-ps3/docs/codes/Castle Crashers NPEB00293 01.00.ncl"
+        },
+        {
+          "external_path": "PSXPlace Confirmed/Dead Space 2 BLES01040 01.02.ncl",
+          "git_blob_sha": "85d7215cbe4bbe322bf796b17925a4cc40327495",
+          "archived_source_id": "artemis-ps3",
+          "archived_path": "archive/artemis-ps3/docs/codes/Dead Space 2 BLES01040 01.02.ncl"
+        }
+      ]
+    },
+    {
+      "source_id": "chidreams-rpcs3-patches",
+      "platform": "ps3",
+      "reference_files": 239,
+      "distinct_external_git_blobs": 237,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 239,
+      "distinct_git_blobs_without_archived_byte_match": 237,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "apelfactory-ppsspp-cheatdb",
+      "platform": "psp",
+      "reference_files": 1,
+      "distinct_external_git_blobs": 1,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 1,
+      "distinct_git_blobs_without_archived_byte_match": 1,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "real-f00-usrcheat-ds",
+      "platform": "ds",
+      "reference_files": 1,
+      "distinct_external_git_blobs": 1,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 1,
+      "distinct_git_blobs_without_archived_byte_match": 1,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "hamlet-switch-cheatdb",
+      "platform": "switch",
+      "reference_files": 5278,
+      "distinct_external_git_blobs": 3046,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 5278,
+      "distinct_git_blobs_without_archived_byte_match": 3046,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "ibnux-switch-cheatdb",
+      "platform": "switch",
+      "reference_files": 3136,
+      "distinct_external_git_blobs": 3042,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 3136,
+      "distinct_git_blobs_without_archived_byte_match": 3042,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "sthetix-switch-mirror",
+      "platform": "switch",
+      "reference_files": 5861,
+      "distinct_external_git_blobs": 5468,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 5861,
+      "distinct_git_blobs_without_archived_byte_match": 5468,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "journeyover-3ds-ctrpf",
+      "platform": "3ds",
+      "reference_files": 628,
+      "distinct_external_git_blobs": 594,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 628,
+      "distinct_git_blobs_without_archived_byte_match": 594,
+      "exact_byte_match_examples": []
+    }
+  ],
+  "platforms": [
+    {
+      "platform": "3ds",
+      "reference_files": 938,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 938,
+      "distinct_external_git_blobs": 868,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 868
+    },
+    {
+      "platform": "dreamcast",
+      "reference_files": 387,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 387,
+      "distinct_external_git_blobs": 387,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 387
+    },
+    {
+      "platform": "ds",
+      "reference_files": 6,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 6,
+      "distinct_external_git_blobs": 6,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 6
+    },
+    {
+      "platform": "gamecube",
+      "reference_files": 30,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 30,
+      "distinct_external_git_blobs": 30,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 30
+    },
+    {
+      "platform": "ps1",
+      "reference_files": 4635,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 4635,
+      "distinct_external_git_blobs": 4634,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 4634
+    },
+    {
+      "platform": "ps2",
+      "reference_files": 4710,
+      "matches_archived_blob": 5,
+      "references_without_archived_byte_match": 4705,
+      "distinct_external_git_blobs": 4663,
+      "distinct_git_blobs_already_archived": 5,
+      "distinct_git_blobs_without_archived_byte_match": 4658
+    },
+    {
+      "platform": "ps3",
+      "reference_files": 2926,
+      "matches_archived_blob": 66,
+      "references_without_archived_byte_match": 2860,
+      "distinct_external_git_blobs": 2731,
+      "distinct_git_blobs_already_archived": 49,
+      "distinct_git_blobs_without_archived_byte_match": 2682
+    },
+    {
+      "platform": "psp",
+      "reference_files": 1,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 1,
+      "distinct_external_git_blobs": 1,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 1
+    },
+    {
+      "platform": "switch",
+      "reference_files": 17275,
+      "matches_archived_blob": 2,
+      "references_without_archived_byte_match": 17273,
+      "distinct_external_git_blobs": 11718,
+      "distinct_git_blobs_already_archived": 2,
+      "distinct_git_blobs_without_archived_byte_match": 11716
+    },
+    {
+      "platform": "vita",
+      "reference_files": 796,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 796,
+      "distinct_external_git_blobs": 793,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 793
+    },
+    {
+      "platform": "wii",
+      "reference_files": 306,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 306,
+      "distinct_external_git_blobs": 306,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 306
+    },
+    {
+      "platform": "xbox-360",
+      "reference_files": 501,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 501,
+      "distinct_external_git_blobs": 501,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 501
+    }
+  ]
+}
