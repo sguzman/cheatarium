@@ -3,9 +3,9 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
-  "external_reference_files": 22886,
-  "external_distinct_git_blobs": 20291,
-  "external_repeated_blob_excess_occurrences": 2595,
+  "external_reference_files": 32511,
+  "external_distinct_git_blobs": 26638,
+  "external_repeated_blob_excess_occurrences": 5873,
   "external_reference_platforms": 12,
   "source_files": 57351,
   "game_candidate_groups": 47502,
@@ -97,13 +97,13 @@
     },
     {
       "path": "external/3ds.json.gz",
-      "sha256": "bfff867084870570bfaa49c7d19bc279b00ac9c5c0602041f8564b99c3b230cd",
-      "size_bytes": 19137
+      "sha256": "e30560918290501969f97dded697259b9678e9bac0c1dc9c1d623eb5e45f9b58",
+      "size_bytes": 57734
     },
     {
       "path": "external/catalog.json",
-      "sha256": "39ea0e32cd255b83c9189c03685ec146cb536998d06cc085c032b8e586d8a9ab",
-      "size_bytes": 1723
+      "sha256": "806b0bd66a1e195163e879cab54cf14250a9b1555b4e682b3053bd0b5b7e3987",
+      "size_bytes": 1795
     },
     {
       "path": "external/dreamcast.json.gz",
@@ -142,8 +142,8 @@
     },
     {
       "path": "external/switch.json.gz",
-      "sha256": "14c28ee5fc76456dc02563998206e1b020626ab8ac6f1dbcd466eaef02bd1906",
-      "size_bytes": 391810
+      "sha256": "1c458e92dbceb723673197f1bedc76a1cb1eee12d3122677c2c0ed457b273968",
+      "size_bytes": 808649
     },
     {
       "path": "external/vita.json.gz",
@@ -902,8 +902,8 @@
     },
     {
       "path": "reports/external-overlap.json",
-      "sha256": "a2e57c8d45e54bff197ed4688ca1c3bae1fbaf01c03c7a1f60e3020c59802245",
-      "size_bytes": 10516
+      "sha256": "96e7e9410fa39e60017732832698d1fac976749b56df85402f322a9cb03d6196",
+      "size_bytes": 2406140
     },
     {
       "path": "reports/snes-codec-coverage.json",
