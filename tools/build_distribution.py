@@ -108,6 +108,21 @@ def build_manifest(root):
             raise ValueError(f"Duplicate external artifact: {rel}")
         named_paths.add(rel)
         manifest_files.append({"path": rel, **digest(safe_path(root, rel))})
+    # Built-in homebrew input sequences are indexed separately from memory
+    # cheat codes. Original source files, license, and source IDs are validated.
+    from build_homebrew_secrets import build as build_homebrew_secrets
+    secrets_rel = "secrets/homebrew.json"
+    secrets = checked_json(safe_path(root, secrets_rel))
+    if (secrets != build_homebrew_secrets(ROOT)
+            or secrets.get("source_entries") != 19
+            or secrets.get("built_in_input_sequences_not_memory_writes") is not True
+            or secrets.get("game_identity_or_effect_verified") is not False
+            or secrets.get("metadata_or_code_execution") is not False):
+        raise ValueError("Stale or altered homebrew built-in secrets index")
+    if secrets_rel in named_paths:
+        raise ValueError("Duplicate homebrew secrets artifact")
+    named_paths.add(secrets_rel)
+    manifest_files.append({"path": secrets_rel, **digest(safe_path(root, secrets_rel))})
     external_catalog = checked_json(safe_path(root, "external/catalog.json"))
     if external_catalog["reference_files"] != 38573:
         raise ValueError("External reference count disagrees with pinned source snapshots")
@@ -431,6 +446,8 @@ def build_manifest(root):
         "compatibility": "filename candidates only; never auto-enable cheat codes",
         "console_bundles": len(entries),
         "external_reference_files": external_catalog["reference_files"],
+        "homebrew_built_in_secret_occurrences": secrets["source_entries"],
+        "homebrew_source_title_labels": secrets["distinct_source_game_title_labels"],
         "external_switch_native_pair_labels_not_in_archive": switch_external["summary"]["native_pairs_only_in_external_sources"],
         "external_switch_distinct_title_only_mirror_labels": switch_external["summary"]["mirror_distinct_title_only_json_labels"],
         "external_3ds_title_labels_not_in_archived_sharkive": ds3_external["summary"]["external_title_id_labels_absent_from_sharkive"],

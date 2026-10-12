@@ -45,7 +45,7 @@ Of those, 410 have a matching blob in Cheatarium's already archived
 BitHeX delta. A second exact-byte comparison against **all 81 archived
 source collections** found no further matches. The remaining **4,369
 file occurrences (4,057 distinct Git blobs)** have no exact byte match
-in Cheatarium's current 67,831-file archive.
+in Cheatarium's current 67,834-file archive.
 Most of these belong to Nintendo DS (3,213 occurrences), followed by
 Game Boy Advance (419), ZX Spectrum +3 (393) and MSX-family (317).
 

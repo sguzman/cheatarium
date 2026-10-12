@@ -11,6 +11,8 @@ on:
       - "tools/audit_historic_external_overlap.py"
       - "tools/test_audit_historic_external_overlap.py"
       - "sources/external-bulk/**"
+      - "sources/retro-homebrew-secrets.json"
+      - "archive/retro-homebrew-secrets/**"
       - "generated/v1/reports/libretro-historical-fork-coverage.json"
       - ".github/workflows/audit-historic-libretro.yml"
   workflow_dispatch:

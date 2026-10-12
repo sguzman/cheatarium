@@ -252,6 +252,7 @@ jobs:
           python3 tools/test_ps2_external_crc_labels.py
           python3 tools/test_import_mohasi_ps3.py
           python3 tools/test_import_bithex_libretro_delta.py
+          python3 tools/test_build_homebrew_secrets.py
       - name: Confirm python-tests stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -308,6 +309,8 @@ jobs:
           python3 tools/audit_external_overlap.py --check
           python3 tools/audit_external_archive_overlap.py --write
           python3 tools/audit_external_archive_overlap.py --check
+          python3 tools/build_homebrew_secrets.py --write
+          python3 tools/build_homebrew_secrets.py --check
           python3 tools/audit_switch_external_title_build.py --write
           python3 tools/audit_switch_external_title_build.py --check
           python3 tools/audit_3ds_external_title_ids.py --write
@@ -336,6 +339,8 @@ jobs:
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["witness_filter"] == "witnessed" and d["selected_source_occurrences"] == 3 and d["returned"] == 3; assert all("historical_publication_witness" in x for x in d["occurrences"])'
           python3 tools/build_distribution.py --write
           python3 tools/build_distribution.py --check
+          python3 tools/build_homebrew_secrets.py --search 'Canyon Racer' --platform gb |
+            python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total"] == 1 and d["records"][0]["game_title_source_claim"] == "Canyon Racer" and d["no_auto_activation"] and not d["gameplay_verified"]'
       - name: Confirm distribution-audited stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
