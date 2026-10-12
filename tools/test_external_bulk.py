@@ -13,11 +13,17 @@ class TestExternalBulk(unittest.TestCase):
             "r0ah-vitacheat": 677,
             "shumnot-vitacheat": 119,
             "bucanero-dreamcast-cheats": 387,
+            "ademola-switch-native": 2516,
+            "rogamer97-asm-3ds": 53,
+            "rogamer97-asm-ds": 5,
+            "rogamer97-asm-gamecube": 30,
+            "rogamer97-asm-wii": 306,
+            "rogamer97-asm-switch": 418,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(indexes[1]["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 11029)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 14357)
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
@@ -40,6 +46,8 @@ class TestExternalBulk(unittest.TestCase):
         self.assertEqual(lookup([index], "painkiller", "ps1", 4), [])
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "SLUS-", "ps2", 5))
         self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "PCSA", "vita", 5))
+        self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "0100000000010000", "switch", 5))
+        self.assertTrue(lookup(load(__import__("external_bulk").ROOT), "Mario Kart", "wii", 5))
 
 if __name__ == "__main__":
     unittest.main()

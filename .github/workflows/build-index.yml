@@ -952,7 +952,13 @@ jobs:
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title 'Painkiller' --limit 4 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["metadata_only"] and not x["gameplay_verified"] and not x["archive_included"] and x["artifact_checksums_verified"] and x["total"] >= 1 and all(r["rights_status"] == "link_only_rights_review" for r in x["results"])'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform vita --title PCSA --limit 5 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 11029'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 14357'
+      - name: Smoke-test new Switch and Wii external catalogs
+        run: |
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform switch --title 0100000000010000 --limit 10 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 14357 and x["metadata_only"] and not x["archive_included"]'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform wii --title "Mario Kart Wii" --limit 4 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["artifact_checksums_verified"] and not x["gameplay_verified"]'
       - name: Confirm consumer-smoke stage
         env:
           GITHUB_TOKEN: ${{ github.token }}

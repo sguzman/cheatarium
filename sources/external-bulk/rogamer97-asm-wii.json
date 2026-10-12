@@ -1,0 +1,1547 @@
+{
+  "schema_version": 1,
+  "id": "rogamer97-asm-wii",
+  "repository": "https://github.com/RoGamer97/ASM-Cheats-and-Patches",
+  "snapshot_commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+  "git_tree_sha": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+  "platform": "wii",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 305,
+    "patch": 1
+  },
+  "files": [
+    [
+      "Wii/Mario Kart Wii/1st Place Crown on Minimap and Nametag.md",
+      "f3eb9bd7ef8768c53c042ff34fcac45e6e9acb8b",
+      3299
+    ],
+    [
+      "Wii/Mario Kart Wii/Accurate Item Roulette v2.md",
+      "d5a6f099db15214bf6826b1fd0481a8aa9e51738",
+      661
+    ],
+    [
+      "Wii/Mario Kart Wii/Allow Collecting Coins After Battle End.md",
+      "aef5ba2f92ebe6fbd1c75488ce09ecd5e34c9c70",
+      447
+    ],
+    [
+      "Wii/Mario Kart Wii/Allow Looking Backwards During Respawn.md",
+      "fa7356a8b6de69a0c33b704c60d132695e32606f",
+      441
+    ],
+    [
+      "Wii/Mario Kart Wii/Always Show Friend Roster Button After Race Online.md",
+      "bdd39c661e22d158b077e0f4880ddaa0b42da638",
+      528
+    ],
+    [
+      "Wii/Mario Kart Wii/Always Throw Bombs at Furthest Distance Independently of Stick.md",
+      "e51f60d78760a19dad852d921d5ef0c2343f16e9",
+      575
+    ],
+    [
+      "Wii/Mario Kart Wii/Angry Wigglers.md",
+      "e886cc5c43fe1255debe9f545b1e6239f746ced7",
+      1812
+    ],
+    [
+      "Wii/Mario Kart Wii/Anti Freeze from Bullet Bill and Blue Shell (Battle and No Item Routes).md",
+      "8448d5c6736ed42b56276bfefafc22feec4b4fc1",
+      1730
+    ],
+    [
+      "Wii/Mario Kart Wii/Anti Freeze from Invalid Miis.md",
+      "a43fc2ec3002bc2e421d051c5340a611f6771632",
+      516
+    ],
+    [
+      "Wii/Mario Kart Wii/Anti Infinite Softlock Respawn.md",
+      "0a5d5754de19404869a47ee3199092d7557b5e60",
+      1863
+    ],
+    [
+      "Wii/Mario Kart Wii/Anti Item Route Link Lag.md",
+      "f930cc1247f922dad3c455672f6a79b1a33e6b7d",
+      1858
+    ],
+    [
+      "Wii/Mario Kart Wii/Anti Lag (Late) Start Online.md",
+      "187c0e9c7c6d3590bb84a794ed63fb1c6914ce6b",
+      1402
+    ],
+    [
+      "Wii/Mario Kart Wii/Anti Online Item Delimiters v1.md",
+      "0d94eff606bc15353ae6e893ea4404c9b853a0b9",
+      2815
+    ],
+    [
+      "Wii/Mario Kart Wii/Any Track Works on Moonview Highway Slot (Remove Slot Object & Material Requirements).md",
+      "4d7aabdb45382e8a5439f72eefae401d6625d7d7",
+      1515
+    ],
+    [
+      "Wii/Mario Kart Wii/Auto POW Hop Dodge Bot w Wheelies.md",
+      "aec8ff4e49aaf33cdd74c8e49f5118e4468d4718",
+      5499
+    ],
+    [
+      "Wii/Mario Kart Wii/Battle Blinking Invincibility in VS.md",
+      "bb5b659ca80a9c42c08810e4c151c985313218e9",
+      553
+    ],
+    [
+      "Wii/Mario Kart Wii/Battle Time Duration Modifier.md",
+      "252b865b8e7316f6f192bc99697684fd004dd299",
+      1216
+    ],
+    [
+      "Wii/Mario Kart Wii/Boost Particle Color Modifier.md",
+      "0d153b4dfe7be553beb348b4cde37d5a4f8be746",
+      1365
+    ],
+    [
+      "Wii/Mario Kart Wii/Boost Sound Modifier.md",
+      "44a7ef7b3018a26467263f974458c1c0d3a2c903",
+      1262
+    ],
+    [
+      "Wii/Mario Kart Wii/CPU Control Cycler.md",
+      "a210b75abf1df910ba99ba8d684046978e722457",
+      8628
+    ],
+    [
+      "Wii/Mario Kart Wii/CPUs and Online Players Have High Detail Particles.md",
+      "32a19bc80c1b8e9002bb90153be9e541ac7886d0",
+      493
+    ],
+    [
+      "Wii/Mario Kart Wii/Can Open Friend Room Without Any Friends Added.md",
+      "c7a3a842f3b16274aeffbebeb09868a60eaa250d",
+      505
+    ],
+    [
+      "Wii/Mario Kart Wii/Can Trick on Ground.md",
+      "d5785c3f45489bb0490e217fe336b21987efc52b",
+      509
+    ],
+    [
+      "Wii/Mario Kart Wii/Cancel Friend Room Joining by Pressing B.md",
+      "258a6ed1c377ba41ec9f51c7c23c8d2cd845cb26",
+      1003
+    ],
+    [
+      "Wii/Mario Kart Wii/Cannon Always Kaboom.md",
+      "c9298d1b9f93a17a51bd0d2b22c2be0354c00a12",
+      429
+    ],
+    [
+      "Wii/Mario Kart Wii/Cannon Speed Modifier.md",
+      "a6316ad0bcafc01b2b59041772716cbbea59dc1b",
+      1004
+    ],
+    [
+      "Wii/Mario Kart Wii/Cataquack Doesn't Need Sea Object (poihana without Pseavenice_nami Fix).md",
+      "57cbb755105bed6d5fa247694b793227ce908444",
+      809
+    ],
+    [
+      "Wii/Mario Kart Wii/Change Camera Perspective in Race (Like Live View and Replay).md",
+      "ced0213875805532f7a9f5c4597b700db5ee78f3",
+      817
+    ],
+    [
+      "Wii/Mario Kart Wii/Character Voices Play After Finish.md",
+      "3d4ee9587c045af3955fc296f66bc6540e599d3d",
+      620
+    ],
+    [
+      "Wii/Mario Kart Wii/Cheep Charger, Wild Wing and Super Blooper Wings Flap In Air and Cannon.md",
+      "51efd0d7ec39319269b81ad7df1f43f46671aa7c",
+      4595
+    ],
+    [
+      "Wii/Mario Kart Wii/Clear Exhaust Pipe Boost Particle After Damage.md",
+      "391926d29dfff45ac553b6aaae036fa5432b227a",
+      1564
+    ],
+    [
+      "Wii/Mario Kart Wii/Clear Items, Item Reset v2.md",
+      "b4432f324148b951bc87aa1df893c16dfd433baf",
+      620
+    ],
+    [
+      "Wii/Mario Kart Wii/Course Music Continues After Finish (No Result Music).md",
+      "12a6460a0d53503ef4f91e2821d465448628bbdc",
+      592
+    ],
+    [
+      "Wii/Mario Kart Wii/Course Music Continues in Star and Mega.md",
+      "aa967eda4e12cc59c838d4679b91e17a494e30d5",
+      575
+    ],
+    [
+      "Wii/Mario Kart Wii/Course Music Plays in Live View, Spectating Music is Track Music.md",
+      "a54d02a10545a92876c1ac150c51ed993abf1907",
+      6939
+    ],
+    [
+      "Wii/Mario Kart Wii/Cow Delimiter (Lots of Cows).md",
+      "c9cbfb4f663d7965d235c060b4a4b5828c210c52",
+      542
+    ],
+    [
+      "Wii/Mario Kart Wii/Damage Objects on Command.md",
+      "c105f05eaa0ac680daaae84d6e5363a4427cfc30",
+      1986
+    ],
+    [
+      "Wii/Mario Kart Wii/Dead Goombas Are Visible.md",
+      "c8b16536bd2911b3262d41c83892a7765bece11c",
+      655
+    ],
+    [
+      "Wii/Mario Kart Wii/Dead Inactive Bomb Cars Are Visible.md",
+      "8f353ac0fb3670f934c08830971977ff26e24244",
+      1669
+    ],
+    [
+      "Wii/Mario Kart Wii/Disable Chain Chomp Wheel Rolling Chain Chomp Launch, Shot Sound Effect.md",
+      "1d4d1522eac1a4ebce106ee2ad46025cccb057eb",
+      671
+    ],
+    [
+      "Wii/Mario Kart Wii/Disable Engine Pitch Sound Limit.md",
+      "81e6484b3e6814ca022b5e856b2156f228d194d6",
+      709
+    ],
+    [
+      "Wii/Mario Kart Wii/Disable GBA Shy Guy Beach Camera Height Lock in Specific Slots.md",
+      "914f5f187fc8001c04de525b74a4a36fb81a9409",
+      1216
+    ],
+    [
+      "Wii/Mario Kart Wii/Disable Minimap Searchlight.md",
+      "3015c36654b4b93d4b0de3e4f06fe002358333b0",
+      499
+    ],
+    [
+      "Wii/Mario Kart Wii/Disable Rocket Start & Burn Out in Specific Slots.md",
+      "4539fc74f60247d4537ff0d95fa4960652249a17",
+      1157
+    ],
+    [
+      "Wii/Mario Kart Wii/Disconnecting Redirects Directly to Main Menu.md",
+      "095024df091b64f05ee8e4eb826e7c66140d2e5e",
+      568
+    ],
+    [
+      "Wii/Mario Kart Wii/Display Country ID as Text for Regions Without Text.md",
+      "68abf976347b0eba577b0f35162313a84502a11c",
+      2792
+    ],
+    [
+      "Wii/Mario Kart Wii/Display Country Unknown Flag for Unknown & No Flag Regions.md",
+      "548cf76745d15b93f041344845f6e343e9cd7aca",
+      3082
+    ],
+    [
+      "Wii/Mario Kart Wii/Display Mushroom Gorge Clouds in Specific Slots.md",
+      "848a32caba9eb29dac5d8624dcdebcff4d75507b",
+      1372
+    ],
+    [
+      "Wii/Mario Kart Wii/Don't Hide Character Icon When Disconnected.md",
+      "eb7f32f6f5c36abc658717d42209e006e5556141",
+      555
+    ],
+    [
+      "Wii/Mario Kart Wii/Don't Say Here I Am When Joining FRooms.md",
+      "79eee43d6f2d30436f676ee8e7bd4b9a87a19751",
+      488
+    ],
+    [
+      "Wii/Mario Kart Wii/Drive on Water & Lava.md",
+      "0b17113c2a722e4c64c706fc2bd7ed2ef1678258",
+      1630
+    ],
+    [
+      "Wii/Mario Kart Wii/Drop Coins on Command.md",
+      "47dd18d8f41b1c5cb8bc56593c6a9fa7e46c261d",
+      2106
+    ],
+    [
+      "Wii/Mario Kart Wii/Drop and Give All Coins at Once.md",
+      "687a91cb599895c716193fa9795478a479afc357",
+      786
+    ],
+    [
+      "Wii/Mario Kart Wii/Earth Spins or Doesn't Spin On Zoom.md",
+      "ee026dc510301d4efcf1fe162c20149ee72f6e82",
+      1062
+    ],
+    [
+      "Wii/Mario Kart Wii/Emitted Bob-ombs Explode Offline (Idle Fix).md",
+      "86669fb9fa0ff7abfd6f7354e121b48cbe43c89c",
+      2057
+    ],
+    [
+      "Wii/Mario Kart Wii/Emulate Coin Lag.md",
+      "5f9e961db91f59cda34f9abdfdf277e7e0bfad2e",
+      519
+    ],
+    [
+      "Wii/Mario Kart Wii/Enhanced GP Replay.md",
+      "b11d81a3b53ffe6f0d0bf2668b145c5c3fdfad87",
+      448
+    ],
+    [
+      "Wii/Mario Kart Wii/Enhanced Race & Battle Pause Menu (TT Pause in VS&BT).md",
+      "5de93668f4280de517565ad07fe7418b8b98ac83",
+      2200
+    ],
+    [
+      "Wii/Mario Kart Wii/Fancy MSPT Antifreeze.md",
+      "0db0b3e250e212081c1fb126b917d730a7defbab",
+      1017
+    ],
+    [
+      "Wii/Mario Kart Wii/Fix CPU Slipstream Mission Scoring Bug.md",
+      "e390ee87238fbe6d89365cbd4745f6fd4636080a",
+      867
+    ],
+    [
+      "Wii/Mario Kart Wii/Fix Character Icons in Live View.md",
+      "574648fcf7d230bd686d70acb8f8ef6cc66ade4d",
+      1841
+    ],
+    [
+      "Wii/Mario Kart Wii/Fix Explosion Camera Bug for No Invincibility Frames (No Hit Delay).md",
+      "ad54bf46687072ffe69062986a8d2133b3280330",
+      2191
+    ],
+    [
+      "Wii/Mario Kart Wii/Fix Offroad Affecting Star After Cannon Glitch.md",
+      "811c8c0e34c111b83cf1500b5da74dfad1490936",
+      950
+    ],
+    [
+      "Wii/Mario Kart Wii/Fix Online Players Stuck in Halfpipe (Halfpipe Warp Fix).md",
+      "955a51e343a7ffbfd26d61a3fdf6ae2a684633e9",
+      3286
+    ],
+    [
+      "Wii/Mario Kart Wii/Force Character Animation.md",
+      "c57dff599b72c3ed846639a4909fb54f86b3573e",
+      2568
+    ],
+    [
+      "Wii/Mario Kart Wii/Force Character and Vehicle Color Modifier.md",
+      "a2f1eebde5a35379146fee81334e9485accd3377",
+      1475
+    ],
+    [
+      "Wii/Mario Kart Wii/Force Specific Character Stats.md",
+      "c4b9813c267b57e6898856f7fbf101314e12a5bb",
+      2943
+    ],
+    [
+      "Wii/Mario Kart Wii/Force Specific Player Amount Coin Count.md",
+      "07899ec04c1cd375fbad865551817e153866aae5",
+      785
+    ],
+    [
+      "Wii/Mario Kart Wii/Force Unused Error When Selecting Mario Kart Channel (Can't Enter).md",
+      "60b68945df9bea23f7a85565d4a61974684a9f95",
+      696
+    ],
+    [
+      "Wii/Mario Kart Wii/Force Unused Error When Selecting Nintendo WFC (Can't Enter).md",
+      "9bad7627add96ac1696efb519dc0a9271665b9ed",
+      814
+    ],
+    [
+      "Wii/Mario Kart Wii/Friend Room Message Appear Delay Modifier.md",
+      "b83b4691c4fa16589e174eaa47976a695eff53e9",
+      1060
+    ],
+    [
+      "Wii/Mario Kart Wii/Friend Room Message Duration Modifier (Disappear Timer).md",
+      "4c71dade8eaad0caed2254fdf22eede3be1e55d9",
+      1149
+    ],
+    [
+      "Wii/Mario Kart Wii/Fully Controllable Bullet Bill.md",
+      "bf29236c35190c3c978d55d0da1fbcd0e62c4cc9",
+      3620
+    ],
+    [
+      "Wii/Mario Kart Wii/Future Fly v2.md",
+      "ec85d0f6e7978527c91249391000e74daddb2a9a",
+      6574
+    ],
+    [
+      "Wii/Mario Kart Wii/Galaxy Colosseum Topmen Can Be Pushed Online.md",
+      "32caae1386ece88349fbb650bb75b80e8136f326",
+      1002
+    ],
+    [
+      "Wii/Mario Kart Wii/Ghost Racer (Transparent).md",
+      "198bb147cb631f9295a31c013ea62992b9b07380",
+      702
+    ],
+    [
+      "Wii/Mario Kart Wii/Green Shell Character (Always Koopa Shell Lose Anim).md",
+      "e2b78daf378c50e033324ae0652207b8a032e9ec",
+      1703
+    ],
+    [
+      "Wii/Mario Kart Wii/Grow Loop.md",
+      "82090ead8d66f58e9fe66d22de8b535b03897b2e",
+      1480
+    ],
+    [
+      "Wii/Mario Kart Wii/Hide or Don't Hide Character Icon After Finish.md",
+      "e1a58d415a7394e726578207409032e7f5e7ba0f",
+      947
+    ],
+    [
+      "Wii/Mario Kart Wii/Ice Cube Always Visible in N64 Sherbet Land, Everyone is Frozen.md",
+      "efb27049a3d0d970c6cac460d5cb34a6e605fafa",
+      1879
+    ],
+    [
+      "Wii/Mario Kart Wii/Instant Acceleration and Reverse.md",
+      "f3a839b75d34cb0ad409f45c2968d761a5f70d89",
+      877
+    ],
+    [
+      "Wii/Mario Kart Wii/Instant Bubble Formation (Skip).md",
+      "580cea35df855bdf03e83d51c93dd9d03e481091",
+      610
+    ],
+    [
+      "Wii/Mario Kart Wii/Instant Earth Zoom InOut.md",
+      "68c2cb6ec22e2dd558064facc905fc146c372c65",
+      583
+    ],
+    [
+      "Wii/Mario Kart Wii/Instant Voting Roulette Decide, Skip Voting.md",
+      "09c4974796101611faf7fdf891bcc0bd4953782b",
+      666
+    ],
+    [
+      "Wii/Mario Kart Wii/Invalid Respawn Anti Freeze.md",
+      "da9ab0900e534a5ef2434b77e031c080d168f49e",
+      920
+    ],
+    [
+      "Wii/Mario Kart Wii/Invincibility Period Against Cars & Trucks Objects in All Slots.md",
+      "10fc70fa3c04a4cd30ab053cb9236145c92b9737",
+      1150
+    ],
+    [
+      "Wii/Mario Kart Wii/Item Control (Classic and GCN Only).md",
+      "81bbb63e344a8308de1b95fc3cf8338eb07d3633",
+      12375
+    ],
+    [
+      "Wii/Mario Kart Wii/Item Cycler v2.md",
+      "49941b8eb2082c41e025172170dcdcc87ef385a3",
+      6619
+    ],
+    [
+      "Wii/Mario Kart Wii/Item Usage Allowed in Any State.md",
+      "f92ad0c868ba495638ec12dac7a9b7f0ba19b0fe",
+      1030
+    ],
+    [
+      "Wii/Mario Kart Wii/Item Use Flash Fix for Item Hack.md",
+      "e8a4fab221a322ee3b552f4c13801fefd3f648a2",
+      851
+    ],
+    [
+      "Wii/Mario Kart Wii/Items Can Drop in Time Trials.md",
+      "c8de68b29136839a2b06ba9d95f0537fb673b50e",
+      503
+    ],
+    [
+      "Wii/Mario Kart Wii/Kart Status Stacker.md",
+      "5c1839abdb195e5b76d3018e54fde3bfa1505835",
+      8607
+    ],
+    [
+      "Wii/Mario Kart Wii/Lava Smoke Particle Always Visible.md",
+      "708afae6b9eed0bd27d7344ab1f4c0c716eb16a8",
+      539
+    ],
+    [
+      "Wii/Mario Kart Wii/Lightning Only Shocks Players Ahead (Like POW and Mario Kart World).md",
+      "ef163e5c32459449c3ad277b3029df2b1b05fa4a",
+      2122
+    ],
+    [
+      "Wii/Mario Kart Wii/Lightning Particles Always Visible.md",
+      "7196616ae481ed0f6a75039ad696ca7e2f621b69",
+      622
+    ],
+    [
+      "Wii/Mario Kart Wii/Load Disabled Course Objects.md",
+      "76197aabe31bc6750adb3486bdec0093675c0d08",
+      1007
+    ],
+    [
+      "Wii/Mario Kart Wii/Long Firebars and Firerings (Fireball Delimiter, Lots of Them).md",
+      "84a5a1429f7449137079725d377a766b39d84620",
+      676
+    ],
+    [
+      "Wii/Mario Kart Wii/MKDS Star Character Animation.md",
+      "cd9e475f88a9356f6bf1af9b880a9f678471eb6a",
+      855
+    ],
+    [
+      "Wii/Mario Kart Wii/Matrix Slowdown Online.md",
+      "07c2d25a9abc75ba84b09f091358ba4f6ea2806c",
+      536
+    ],
+    [
+      "Wii/Mario Kart Wii/Minimap Character Icon Rotates with Kart Direction v2.md",
+      "3d5bf5e390fa9530041331a7a012bc232e392fda",
+      2761
+    ],
+    [
+      "Wii/Mario Kart Wii/Minimap Character Opacity Modifier.md",
+      "896966dd3bdab89d2497ea63cc0bd290d1953549",
+      1099
+    ],
+    [
+      "Wii/Mario Kart Wii/Moving Road Doesn't Move You.md",
+      "d575c9705c2795bae18935671bafe2d0bd7e6431",
+      1740
+    ],
+    [
+      "Wii/Mario Kart Wii/Nametags Visible During Respawn and Out of Bounds.md",
+      "b23d043d62ad783df012341d58c2fc6c295a5ff2",
+      472
+    ],
+    [
+      "Wii/Mario Kart Wii/Night Time Courses (Like Texture Hacks).md",
+      "6399f10b0a1372bc372643660088b08c54315cc6",
+      6732
+    ],
+    [
+      "Wii/Mario Kart Wii/No All opponents have been found Text, Skip.md",
+      "769e8b38fcb0f0355611359a30785d30d672520c",
+      655
+    ],
+    [
+      "Wii/Mario Kart Wii/No Bike Turn Tilt.md",
+      "20bc4c44d469c293bb401d68140edd2242fe5e73",
+      1091
+    ],
+    [
+      "Wii/Mario Kart Wii/No Bullet Bill Cancel When Touching Bottom of Rainbow Road.md",
+      "ddacddfb17e61e1fceaada414e341fb6933a6f64",
+      532
+    ],
+    [
+      "Wii/Mario Kart Wii/No Camera Height Shift in Air.md",
+      "3c42a328932f7db2d08443aaa19d7cf2282bf4d4",
+      600
+    ],
+    [
+      "Wii/Mario Kart Wii/No Dragged Item Drop.md",
+      "570855b3643e5b1e39965c8af685b2b108f16163",
+      540
+    ],
+    [
+      "Wii/Mario Kart Wii/No Drift Direction Lock.md",
+      "78a73443458a65fea157447e28b93071c3e277bb",
+      813
+    ],
+    [
+      "Wii/Mario Kart Wii/No Fog.md",
+      "a6203bb68500f675fecee822e981fb0d80f72bc5",
+      420
+    ],
+    [
+      "Wii/Mario Kart Wii/No Item Boxes v2.md",
+      "aa116390867e92299912af64167043e25bacfa4a",
+      1105
+    ],
+    [
+      "Wii/Mario Kart Wii/No Item Loss v2.md",
+      "7970f8405db99925946f845d99086e10a8aa32d9",
+      470
+    ],
+    [
+      "Wii/Mario Kart Wii/No Item Mode (No Item Boxes and No Item Drop from Object).md",
+      "034dd7f23fa7441870b62abdbe7c27e6849fc2f3",
+      680
+    ],
+    [
+      "Wii/Mario Kart Wii/No Item Throw Spread Recoil.md",
+      "22c23decb6576fb60a537b606a3aa297503c34cc",
+      563
+    ],
+    [
+      "Wii/Mario Kart Wii/No Lightning Flash v2.md",
+      "1028eb503594758d389d0bacff28e83aa1039dac",
+      480
+    ],
+    [
+      "Wii/Mario Kart Wii/No Shell Tail Dissolve.md",
+      "dfbc22bf8bae13d8d2d7fc13bde75c7ec9349f95",
+      547
+    ],
+    [
+      "Wii/Mario Kart Wii/No Team Invincibility.md",
+      "b94ea8a0bf709e5d81d0fc9f9db8feeec02a58ef",
+      1620
+    ],
+    [
+      "Wii/Mario Kart Wii/No Toadette Hair.md",
+      "97884b056fcd0fd471d292d29c18e8772b3f6a4d",
+      628
+    ],
+    [
+      "Wii/Mario Kart Wii/Normal Speed While Shocked or Crushed.md",
+      "906787b0dfa602414f77bb57c8e1f4bd05fd0de6",
+      1195
+    ],
+    [
+      "Wii/Mario Kart Wii/Normal Turning During Wheelie.md",
+      "730bd76ac21caa9aa9aad0810adf1d6acc0b1642",
+      457
+    ],
+    [
+      "Wii/Mario Kart Wii/Online Pause Menu (Quit Online Races & Battles).md",
+      "b8736829bd95ae41576e3d602eb7201a5f7bce0d",
+      7684
+    ],
+    [
+      "Wii/Mario Kart Wii/Online Player Bubble Skip Time Modifier.md",
+      "9950aa36c96da90bf95610733a3aeea7163f56c2",
+      1691
+    ],
+    [
+      "Wii/Mario Kart Wii/Pocha Water Splash Effect Reactivation Fix.md",
+      "e54d026afa4528a84cdb35e01b0c4d39e293697c",
+      1517
+    ],
+    [
+      "Wii/Mario Kart Wii/Prevent Item Usage in Bullet Bill.md",
+      "f6af46ade10a9e112a3584a4ae095f68100e393c",
+      2164
+    ],
+    [
+      "Wii/Mario Kart Wii/Real-Time Globe Location, Country Flag & Region ID Customizer.md",
+      "01c1c6f633798f6c931487bc93c8fb73e7b8e484",
+      13391
+    ],
+    [
+      "Wii/Mario Kart Wii/Real-Time VR & BR Customizer in WFC Mode Select.md",
+      "387bbf849015d1693cf8ee909cc3b715d01b7507",
+      4092
+    ],
+    [
+      "Wii/Mario Kart Wii/Remove Invincibility Period After Hitting Cars and Trucks in Moonview Highway.md",
+      "d38245ec3cbfbbd89f5d42596bfb2e550efe1929",
+      771
+    ],
+    [
+      "Wii/Mario Kart Wii/Remove Mushroom Bounce Sound Pitch Limit (Mushroom Gorge).md",
+      "ce2fe64e1a4eda4a6f87dcb970a2a6597f65b17a",
+      662
+    ],
+    [
+      "Wii/Mario Kart Wii/Replace Cow Walk Animation with Unused Run Animation.md",
+      "81abe4c002f0e7e3a03049f4c93a1e307869533c",
+      595
+    ],
+    [
+      "Wii/Mario Kart Wii/Replace FINISH! with YOU WIN or YOU LOSE Based on Result.md",
+      "91b2eb8f5f2cbbd380ddad5f8915266b79f650b0",
+      1485
+    ],
+    [
+      "Wii/Mario Kart Wii/Respawn If Stuck on Top of Wall Collision.md",
+      "b5e2e878a0b4ee1e8afbd710cfaa492b9ea0e036",
+      1430
+    ],
+    [
+      "Wii/Mario Kart Wii/Restore Unused Thwomp Damage Sound.md",
+      "f1133eea4e9251f4b6107e0d1c8cd1bf40da62ca",
+      1183
+    ],
+    [
+      "Wii/Mario Kart Wii/Seagul Delimiter (Lots of Seaguls).md",
+      "04cb482c77d364683d499fd11e072cc09c49c1c2",
+      552
+    ],
+    [
+      "Wii/Mario Kart Wii/See Own Nametags.md",
+      "5e90bfd72f9f1fc8e8038998aace365cc6583d43",
+      566
+    ],
+    [
+      "Wii/Mario Kart Wii/Separated Countdown Count Sounds.md",
+      "6fd9f883cf94b06ef38b3c98896bcc0c2d5cee68",
+      1310
+    ],
+    [
+      "Wii/Mario Kart Wii/Set Item Boxes Respawn Times in KMP.md",
+      "675da536c06527a954212ab78ae23d6150ba2bb0",
+      1496
+    ],
+    [
+      "Wii/Mario Kart Wii/Show Every Object on Minimap.md",
+      "950f7b4306532f311f9f85f327aab32c2e1e333d",
+      2275
+    ],
+    [
+      "Wii/Mario Kart Wii/Show Ice Cube on Online Players' Respawn (N64 Sherbet Land).md",
+      "5719eaec57e90f6d799328f4f66848e3f76da577",
+      1594
+    ],
+    [
+      "Wii/Mario Kart Wii/Show Item Boxes on Minimap v1.5.md",
+      "5c4d13b748b38f1475b9f253e7627e280ef9074d",
+      2709
+    ],
+    [
+      "Wii/Mario Kart Wii/Show Kart Status Effects on Minimap v3.md",
+      "023febb134501fe77fcb62845833cca33666a2c9",
+      16571
+    ],
+    [
+      "Wii/Mario Kart Wii/Show Nametags During Countdown.md",
+      "4a3d97e1037619c94ac030563b4484ff6edf9672",
+      433
+    ],
+    [
+      "Wii/Mario Kart Wii/Show Your Respawn Boost Online.md",
+      "d5a97ad293b09b3ebe6453141e2678f8e10a7b65",
+      1596
+    ],
+    [
+      "Wii/Mario Kart Wii/Skip Mode Select Option Online (Always VS).md",
+      "e2771cf88b9e88bd79ef3160fb1f5a60450b39eb",
+      788
+    ],
+    [
+      "Wii/Mario Kart Wii/Slot Specific Objects Work in All Slots (pylon01, sunDS, FireSnake and begoman_spike).md",
+      "e5b0e62c7dd27f5c1ee1ee8bd454c9c3d80d80be",
+      841
+    ],
+    [
+      "Wii/Mario Kart Wii/Small Items If Shocked.md",
+      "6f0af6fd875a4f70cd83ae800716f23c4bbd1f57",
+      2428
+    ],
+    [
+      "Wii/Mario Kart Wii/Snowing in All Courses.md",
+      "7b0f8a9c52e96314174e4b4fdea8fdf7356e665b",
+      720
+    ],
+    [
+      "Wii/Mario Kart Wii/Sounds Continue After Finish.md",
+      "a82435b1a4005d5fe64603998c1e3583aee5eef3",
+      617
+    ],
+    [
+      "Wii/Mario Kart Wii/Start Other Player's Friend Rooms.md",
+      "bc544923464c50d12b572496de0939331f2a19e4",
+      512
+    ],
+    [
+      "Wii/Mario Kart Wii/Starting Balloon Amount Modifier.md",
+      "65e3a7593f872472b146a110fdf7715d56161ef6",
+      497
+    ],
+    [
+      "Wii/Mario Kart Wii/Statues and Posters Are Always or Never Mii Heads.md",
+      "eeb3f85a556c00178e2e9c428c60c5fdb78de4ac",
+      10659
+    ],
+    [
+      "Wii/Mario Kart Wii/Stop Time.md",
+      "155926395582f90bd2ffa8f8d8ec087abe197ee4",
+      5829
+    ],
+    [
+      "Wii/Mario Kart Wii/Swooper Delimiter (Lots of Bats).md",
+      "f7fa9d73204c53f5588c33b2deee0fe764a28852",
+      555
+    ],
+    [
+      "Wii/Mario Kart Wii/Thunder Clouds Can Drop.md",
+      "232a06728495071e472e77b28d927d90092487be",
+      441
+    ],
+    [
+      "Wii/Mario Kart Wii/Timer Continues After Finish (Visual).md",
+      "3e4b4c87096d1067f63fb96f649b4e711cfc2185",
+      466
+    ],
+    [
+      "Wii/Mario Kart Wii/Total No Invincibility.md",
+      "c131f6ebee564e2b5b590e383b27ae6ca47a43e1",
+      3515
+    ],
+    [
+      "Wii/Mario Kart Wii/Toyota Moving Forward.md",
+      "f5658fcf4b6e35467e3cdc75a24d208fe3f6fb5a",
+      1922
+    ],
+    [
+      "Wii/Mario Kart Wii/Trick Chaining (Multi Air Tricking like Mario Kart World).md",
+      "504189fc3dbc31104c1d389ac0faefe33fa15ce3",
+      2255
+    ],
+    [
+      "Wii/Mario Kart Wii/Trick Sound Modifier.md",
+      "380087484588880dae699249cd610fa21074f4fd",
+      1004
+    ],
+    [
+      "Wii/Mario Kart Wii/Trickable Cannons.md",
+      "e1c480bdfdcdd071c1df9f5429794964945178ef",
+      600
+    ],
+    [
+      "Wii/Mario Kart Wii/Turn in Air.md",
+      "4365e6a6bcfad53a1cb5b5c56217bd6999574f8f",
+      581
+    ],
+    [
+      "Wii/Mario Kart Wii/Turn in Place.md",
+      "f4840e13ddf7c9e04a4fcc5cf2b7d841fe5753f5",
+      1057
+    ],
+    [
+      "Wii/Mario Kart Wii/Unmirrored Mirror Mode Online.md",
+      "5b13daf6dbd1896b4f4eda9cd692073fc7051ae8",
+      1625
+    ],
+    [
+      "Wii/Mario Kart Wii/Upside Down Player.md",
+      "f8b9038fbffc3c10b0ec870abef8b4ef8a8cda71",
+      979
+    ],
+    [
+      "Wii/Mario Kart Wii/Use CPU Voice Clips.md",
+      "15d2279d74e192670274894d340ca88567cce896",
+      625
+    ],
+    [
+      "Wii/Mario Kart Wii/VS Vehicles in Battle Anti-Freeze w Correct Vehicle Textures.md",
+      "d86af6c15c73b48fd7fe54b709ff81d69575524a",
+      941
+    ],
+    [
+      "Wii/Mario Kart Wii/Water Splash When Landing.md",
+      "e0c61898bada23c2ec932199be579c3f8a725d24",
+      588
+    ],
+    [
+      "Wii/Mario Kart Wii/Wiimote Speaker Sound Player & Cycler.md",
+      "8a2b3a146b4d3411246eec061487fa6e42af912d",
+      1212
+    ],
+    [
+      "Wii/Mario Kart Wii/Worldwide & Regional Opponent Zoom in Regional & Worldwide.md",
+      "c097583bdccfae17e89a5b50720638ed37ece495",
+      950
+    ],
+    [
+      "Wii/Mario Kart Wii/Your Kart Standstill Miniturbo is Orange Online.md",
+      "6be1d2ad8ea1d98472ba5655725732904f08b55f",
+      940
+    ],
+    [
+      "Wii/Mii Channel/Classic Controller Support.md",
+      "9fc949e7abcfe4aa7c0f846f4dc88b6943cdc172",
+      1567
+    ],
+    [
+      "Wii/Mii Channel/Fast Keyboard Page Navigation.md",
+      "5f5c3768a1bb6dc4af9dfa107cb5f20c9218445e",
+      258
+    ],
+    [
+      "Wii/Mii Channel/Open Japanese and Korean Keyboard by Command.md",
+      "456ed4a7b789566c24358c5f48c59bcbba64635b",
+      736
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/All Cars Have Nitro.md",
+      "60e2048a4fe8a9830da119b2b7b072f9499cf0b8",
+      290
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Allow World Map Events and Jump to Safe House & Car Lot in Pursuit.md",
+      "c8111ade6fd5b4bf204007a7124c642e967fe8cb",
+      275
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Always Show World Markers and Minimap Icons.md",
+      "faeb2829610b6542236d06664150170f3faa54ca",
+      304
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Auto Pilot.md",
+      "f88959d8062cc5fde9e0560374ed99ebe2083615",
+      212
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Automatic Wii Strap Screen Skip.md",
+      "e2f510233e16d479a4ff85b9573b424c26f08186",
+      179
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Cops Can Always Spawn.md",
+      "7a86b0b78565ff0571f173febdbfcdc4ceb0e683",
+      225
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Debug Car Changer Cycler Switch Vehicle Codes (2 Codes).md",
+      "b9abc7c67d4b8d2c666d828f051896892432c140",
+      2801
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Disable AI Catch Up Rubberband.md",
+      "ec63eaa78c3d8e10b654f7454fc0f4c19f753087",
+      358
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Disable Controller Disconnect Screen.md",
+      "6690d27c84091e7fd26224872c81e33cf06cc106",
+      334
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Disable HUD Shake.md",
+      "da67afb1cc37b5b5bfc76571e4cbe239650eb145",
+      137
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Disable Idle Camera.md",
+      "8a3fc9bf1713dbffeab20ff1586f019fe350557e",
+      217
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Disable Look Back Cam Lag.md",
+      "3fb5973bf3435ab963c473e95cb3e8aaa6560489",
+      240
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Disable Look Back Camera HUD Hide.md",
+      "6609105a163ee7b4bf1de7b08962447f8143aaea",
+      175
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Disable SMS Message Box.md",
+      "9e4fa4532a190580f5ae05481c8e678b4c84e3ee",
+      303
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Drift Codes (3 Codes).md",
+      "c24804f91e35f5583c45bd053f50093050193151",
+      1092
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Drive During Countdown.md",
+      "0ee58b910663bdd51bc704e6a7051d946d169ce0",
+      176
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Drive Through Walls Codes (2 Codes).md",
+      "418e11fe7510c0cd24dbbf4ae00a985f16f45478",
+      517
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Enable Collector Edition.md",
+      "2f99a302a5b99d8916adb80f48b0ede028f5edc3",
+      147
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Enable Debug Car Customize.md",
+      "f8e6499259a9ba24062674c8795672efe72b775e",
+      163
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Every NIS is Skippable.md",
+      "0b1e6ef9c552898b0fe74460ace9972e270e7b1d",
+      191
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Exient's Undercover AI Rubberbanding Port (5 Codes).md",
+      "047ab2668fa6307ee12e72c2a9e07cecacdd3537",
+      4951
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Force Pursuit End.md",
+      "7c7e1c569c87353b1b733ee9f8fa338ca9db276e",
+      491
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Future Fly (Copter Mover).md",
+      "aa83e32af4f0173caac4ccbf7bb70cf5246f05bc",
+      1565
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Game Speed Codes (2 Codes).md",
+      "1fa3ed40a7e7e5c295983f059c8ec35d98efe16c",
+      431
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Heat Level Cycler (Override).md",
+      "c1608ac79a1a5ff488e9e1f0ccc0257790db6f16",
+      1038
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Indestructive Cop Cars No Damage.md",
+      "d716086abfcdcb2e898eae78b75fbea81e827ccf",
+      236
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Infinite Crew Wingman Charge (Always Charged).md",
+      "0b2c6892a12dcd6f6476efc025a3e4e45f2c0898",
+      238
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Infinite Nitro Codes (2 Codes).md",
+      "c28d0c2919f77945df1d3fe06bdb884d1fc82ba2",
+      423
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Infinite Speedbreaker.md",
+      "7d652bac1b2c901032835cc219e776f2ae39db6e",
+      147
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Multiplayer Codes (2 Codes).md",
+      "c801bdc9c695a7d1a44b8a4fe8622828398a1bba",
+      1032
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/No Barriers.md",
+      "d78cdf2209a23f1ff7e48aedb03c646652ca0b91",
+      172
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/No Preset Car.md",
+      "1e14d25896ad7b879b97801eca5c22bb45e0ecce",
+      228
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/No Rev Limiter.md",
+      "9ccb9a0be08b4c8a8e8c5785dff0f565268fcd66",
+      177
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Normal Music on Pursuit No Pursuit Music.md",
+      "d3e99473275b93f303e5ab256e64ebc7f6c71018",
+      217
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Rain Codes (2 Codes).md",
+      "ea8c7eecb9f29673025516c8801dea9cc7686433",
+      288
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Rainbow RGB Color Codes (3 Codes).md",
+      "a4fceb8ebe7cb01b84c207f03c55d39ed454e25d",
+      1692
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Show All Cars in Front End.md",
+      "b9ff8ba302b33dcb6a20f92be303d6a4ffc9ff50",
+      143
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Show Debug Car Customize Help Buttons.md",
+      "e321eeb0a78407a2b30ca8b443a9def43c89d3e1",
+      205
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Show Unused Checkpoint Beams Visible Checkpoints.md",
+      "c8b6db7bdd58f8c28fbccda3e8fa631b6fbc6d20",
+      274
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Skip Front End (SkipFE).md",
+      "628b1b223bc9b7a47af94047b7dc9a8f3f2561f5",
+      275
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Skip Front End Boot Flow (SkipFEBootFlow).md",
+      "172b413ee43ba27d832983ec4f5be5371299cec2",
+      227
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Skip Movies.md",
+      "c012bf0889950b3201cea778bc6a2fec1448c816",
+      125
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Skip NISs Cutscenes.md",
+      "55d076c1ab60ccad20e7e538e4f119615e3dca79",
+      135
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Traffic Codes (2 Codes).md",
+      "09b88f421b7501c4ac42f25b86c24fb12a60f6a6",
+      505
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Unlock All Things.md",
+      "7119b2447bac970072e424afbcb09a274c8ee841",
+      145
+    ],
+    [
+      "Wii/Need for Speed Carbon (NTSC-U)/Warp Player to Wingman.md",
+      "f8bda9ae5fc6fe8fd32577eb69c59cd80d956845",
+      308
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/DisableWaitForButtonPressAtRaceStart/DisableWaitForButtonPressAtRaceStart.md",
+      "47c857064fd7c17b4d87aae926cb687398f9ebd0",
+      277
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFE/SkipFE.md",
+      "d1bad6c1590f4f578219436d09dbf0ff1b48cd16",
+      328
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFEAIControlPlayerCar/SkipFEAIControlPlayerCar.md",
+      "8a9a938695102631439ed26ea6ba8c6a680d9a5d",
+      211
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFEBootFlow/SkipFEBootFlow.md",
+      "98bf3db2a87c20c9b1295ee81495ac901a5b75f9",
+      226
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFEDisableCops/SkipFEDisableCops.md",
+      "2692828d924b069381e81c4fd79851ba4451d473",
+      182
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFENumAICars/SkipFENumAICars.md",
+      "e97eea8705981d7244dce887f21507ba63fb8c4e",
+      173
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFENumLaps/SkipFENumLaps.md",
+      "395f4628894de5a615cb8b52e0bcecacf37da003",
+      185
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFEPlayerCar/SkipFEPlayerCar.md",
+      "cacf9909ce40d89836815c0465b5bbf3d3c2cff3",
+      425
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFERaceID/SkipFERaceID.md",
+      "0d30e1a4908eab57eec06591051b9a944f975db4",
+      382
+    ],
+    [
+      "Wii/Need for Speed Nitro/April 9th, 2009 Prototype/SkipFETrackNumber/SkipFETrackNumber.md",
+      "35b70e3f89ecce5ecf4419934296ee0f842a52dd",
+      225
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFE/SkipFE.md",
+      "c320192ef709e6308f9b1a81461d1870f76bf237",
+      328
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFEAIControlPlayerCar/SkipFEAIControlPlayerCar.md",
+      "68a47111c9461ebdb5226076ab77cf9d5c909405",
+      211
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFEBootFlow/SkipFEBootFlow.md",
+      "7881e632e31ec6820392e06f799186d2ad03858e",
+      226
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFEDisableCops/SkipFEDisableCops.md",
+      "8f5fd3730237cab91c1577b20b0b4bf0658a07ea",
+      182
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFENumAICars/SkipFENumAICars.md",
+      "0d5ed63420f496a3708aef0e57f01670f74bfee4",
+      173
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFENumLaps/SkipFENumLaps.md",
+      "87a190d1c0f7463588b1ec4e2ff170728d757616",
+      185
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFEPlayerCar/SkipFEPlayerCar.md",
+      "3f1a2c0f8cf4c3901efc21522f057f78af09cb24",
+      440
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFERaceID/SkipFERaceID.md",
+      "99fe2302055b284cc17b7bb5f21ee201dfb8bf77",
+      382
+    ],
+    [
+      "Wii/Need for Speed Nitro/March 11, 2009 Focus Test Prototype/SkipFETrackNumber/SkipFETrackNumber.md",
+      "f39451c4ea1c82f0a435469e74c0edac4575053f",
+      225
+    ],
+    [
+      "Wii/Need for Speed Nitro/NTSC-J/Debug Camera/Debug Camera.md",
+      "6ea4d34bbd901b243c8c6a8f67f4036c67f9edb1",
+      1734
+    ],
+    [
+      "Wii/Need for Speed Nitro/NTSC-J/Debug Camera/source.s",
+      "1d986cc428edce8c541a73431142597b932fdf2d",
+      1496
+    ],
+    [
+      "Wii/Need for Speed Nitro/NTSC-J/DisableWaitForButtonPressAtRaceStart/DisableWaitForButtonPressAtRaceStart.md",
+      "3cdf286f24334d359037cba8d281217f453f6c28",
+      277
+    ],
+    [
+      "Wii/Need for Speed Nitro/NTSC-J/SkipFEBootFlow/SkipFEBootFlow.md",
+      "c1dd003d8573c9f8c7534abcfa1377e08d66afe2",
+      226
+    ],
+    [
+      "Wii/Need for Speed Nitro/NTSC-J/UnlockAllThings/UnlockAllThings.md",
+      "997c139db9beae077ca154d14a3b65181dcfcc95",
+      217
+    ],
+    [
+      "Wii/Need for Speed The Run (NTSC-U)/2x Game Speed.md",
+      "a6e0263dd6a72a7c9aa7b7c7cf9da692d8f9f73d",
+      149
+    ],
+    [
+      "Wii/Need for Speed The Run (NTSC-U)/Cycle Through Debug Cameras.md",
+      "ecd77f330a0fcad9177b409c748ced55c4689666",
+      1122
+    ],
+    [
+      "Wii/Need for Speed The Run (NTSC-U)/Drive During Countdown.md",
+      "1ffe0601be04210749d369ca06a9361544d579fc",
+      176
+    ],
+    [
+      "Wii/Need for Speed The Run (NTSC-U)/Infinite Nitro (Always Charged).md",
+      "55c73cc9271898c2c65bb3f00407a5af6e40565e",
+      186
+    ],
+    [
+      "Wii/Need for Speed The Run (NTSC-U)/Instant Start (Skip Countdown).md",
+      "81ae5b9e85a550d43b09ba641708c6da6b8bbb04",
+      183
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/AI Rubberbanding Codes (12 Codes).md",
+      "c4c0f51e5adf52b9823cdd15140771581bb7ae14",
+      6817
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/AI Vehicle Codes (2 Codes).md",
+      "a41802bd43fff04139fc2098e3e8c87d6ea0fcd4",
+      1407
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Add Unused Far Drift Camera Option to Camera Selection.md",
+      "75c9759cd764bf6850a44324b0337c526c9a0a4e",
+      266
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/All Cars Have Nitro.md",
+      "6680a1096819129ed0fc13dd971f455a0166fae1",
+      195
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Allow Jump to Safe House in Pursuit.md",
+      "a37bfbeecd9b41ad7d4ae1bde046ec9713678d57",
+      185
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Allow World Map Events in Pursuit.md",
+      "8641d6a472e54070d13539601f30323f8e04f20c",
+      267
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Always Show World Markers and Minimap Icons.md",
+      "40cee99d9c573ec36abcb64240ed5b3aba46824a",
+      304
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Always Zoomed Out Far Minimap.md",
+      "21470139f90bc9cbc7e97c72f9621628160996e5",
+      228
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Auto Pilot.md",
+      "6fb24bde54cde3a71af63671dec03a16150c6390",
+      219
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Automatic Wii Strap Screen Skip.md",
+      "f7105ef14585c19c989116f5873221fdc1423b99",
+      209
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Bounty Points Multiplier Codes (3 Codes).md",
+      "0a664326b150a67f881b9bd69317a995597c42ac",
+      603
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Car Headlights Are Off.md",
+      "990dbf81c7d3c1d4534e1ba03c63c82dc92c92c5",
+      152
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Car and World Reflection Codes (4 Codes).md",
+      "314ed4f82ccff3fe51f8191293e66799960c0cca",
+      645
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Chasedown Vehicle Codes (2 Codes).md",
+      "423cb63f8436ff46b075ad340372d5b7e012021b",
+      431
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Cop AI Codes (4 Codes).md",
+      "306cfe9cb59faed13c7775de8c91d75edc7d18e9",
+      1987
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Cop Spawn Codes (5 Codes).md",
+      "b808040351738a9b9d82de35319d1dcdd5dba0db",
+      4864
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Cop Vehicle Codes (10 Codes).md",
+      "2870cacddf3e5a0231c4d69eefd3adfa95c39f4a",
+      2267
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Cops Have Health Bar (Car Damage Indicator).md",
+      "fffba848033b68d056629603136233765ad9ba9c",
+      1112
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Debug Car Changer Cycler Switch Vehicle Codes (2 Codes).md",
+      "a192189920ab13d2b869bf38fc7d66b652929813",
+      3253
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Disable Controller Disconnect Screen.md",
+      "98d5f38834454d0826688d339af46479afb04b1e",
+      353
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Disable SMS Message Box.md",
+      "8f840712509e96d939362ddb79cbdea4b409693e",
+      303
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Don't Show Cop Cars Icon Outside of Pursuit on Minimap.md",
+      "8d51dcc13a0ae90aefb7809f42d574c80f8716fd",
+      231
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Drive During Countdown.md",
+      "6ae8ec7c9e572f3eef951410ad585108e4763be8",
+      176
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Drive Through Walls.md",
+      "5300b5aa6c00024c0f257a4b57d1c8fa21a6236d",
+      303
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Game Speed Codes (2 Codes).md",
+      "bd49aca83021b82f55b7f5111d6635c04c491e20",
+      431
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Heat Level 10 (Visual).md",
+      "e7d52bb09bcf49c6f4f8ca6683dcb3bc5fd09913",
+      225
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Heat Level Cycler (Override).md",
+      "96fa6cbd263a090ca175de8283cc2fd134bcdd7c",
+      832
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Indestructive Cop Cars No Damage.md",
+      "fb525334ae0ab4fa7d98c65487915e1c3c5e5f4e",
+      299
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Infinite Nitro Codes (2 Codes).md",
+      "235524560ba6c324d76d90f35da3fa8bd51216a9",
+      501
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Infinite Speedbreaker.md",
+      "8707a8f2d7a4e27e79ff36095c0597a7f39dbe09",
+      146
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Instant Look Back or Around Camera & No HUD Hide.md",
+      "fa914d37583eb3bc9a078b500df77a1feca9494e",
+      267
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Manual Shift Gear.md",
+      "53e95f881a4d0278ace3981e5a134e4d261b4767",
+      1183
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Multiplayer Codes (3 Codes).md",
+      "03bfcc20d5e8817b8eb3021e99acb89020e81e92",
+      1360
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/NFSMW Minimap and Worldmap Player 1 Icon Color.md",
+      "95d6a7313c30bb5e14acbede91335d38d65a81a3",
+      351
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/No Background Distance Fog.md",
+      "126b695b609142bd701405b621ccaa322ca335b2",
+      218
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/No Barriers.md",
+      "26771a14cb1212e5589f02e0d9bc750c23a51e7d",
+      172
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/No Boss Vinyl Error.md",
+      "365d7eb84b772bfb1a6eb8f0e687c1bd51a902aa",
+      179
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/No Preset Car.md",
+      "a26c7bc55c8e15cb7092598dabd3a0fc96ef8405",
+      197
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/No Rev Limiter.md",
+      "c20b36d54ccd32bd3fd95342e87a42519d795b66",
+      177
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/No Visual Look Filter.md",
+      "bc5dbe7152c04ded54dad0db7d64e52de7c0adc8",
+      168
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Normal Music on Pursuit No Pursuit Music.md",
+      "4834aa5f505b5fc6a717e308eb787918bb90be81",
+      217
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Player Controllable Helicopter Codes (7 Codes).md",
+      "cdc637d4220837948547b8b40165e653fbfa0b2a",
+      11379
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Pursuit Codes (6 Codes).md",
+      "e89615b712e8d36a9cd243188da3c5fed469111e",
+      1933
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Rainbow RGB Color Codes (4 Codes).md",
+      "eb889a7d97603a574bfcf14f3ddd45b1d5e62475",
+      2087
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Replace World with Garage.md",
+      "56f586bf9c9cb1b6b15ea871941ea4bf36bca777",
+      401
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Reset Respawn Blink Codes (2 Codes).md",
+      "f47a98749d9fc8f1581e00e1d9a0ab853f21f74d",
+      440
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Restore Autosculpt Chop Top Customization.md",
+      "3632fa84dc613abd3ac2a965ea6dd9f4bfda3aa6",
+      532
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Set Enable Fog (Looks Like Cloudy, Night).md",
+      "23dc4faad285d4548da72dd10747394c091a014e",
+      305
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Show AI Cars Icon on Minimap Outside of Events.md",
+      "5068d19895820271cc0d3ed68442d97bb32fb68d",
+      286
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Show Checkpoints, Visible Checkpoints.md",
+      "e7d6fcbd1a6628df9b2c4b6832fd5a0fa3d30c9f",
+      186
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Show Cop Cars Icon on Worldmap Outside of Pursuit.md",
+      "ddeca7f0664bc1c4c427bf1ce41a789295ae5597",
+      1065
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Show Debug Car Customize Help.md",
+      "8a97d1b3783ed4358d2cd54d7f6e2e9b5dd09a89",
+      217
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Show Destroyed Cop Cars Icon on Minimap.md",
+      "5449692c55e3f00f7a2d39264fdf4adb437b145b",
+      451
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Show Map Icons on Minimap Regardless of Distance.md",
+      "760549e8b9408e93dcf414e02c07797dcd036caa",
+      330
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Skip Front End (SkipFE).md",
+      "ab32f803e8789e9031b06ca70e4ac76778ddd08c",
+      276
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Skip NISs Cutscenes.md",
+      "1aeb5ce27fc961ee66c4b45b304d328b7e1d490f",
+      177
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Traffic Codes (4 Codes).md",
+      "c9d69e22668b9a0e4a1f02a635fbfd4b58a5e277",
+      1012
+    ],
+    [
+      "Wii/Need for Speed Undercover (NTSC-U)/Codes/Turn Player Car Siren On and Off.md",
+      "83fd9adc03b61bf3364528592e426ddcbd9ccc67",
+      600
+    ]
+  ]
+}

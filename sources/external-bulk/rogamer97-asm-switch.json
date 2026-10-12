@@ -1,0 +1,2107 @@
+{
+  "schema_version": 1,
+  "id": "rogamer97-asm-switch",
+  "repository": "https://github.com/RoGamer97/ASM-Cheats-and-Patches",
+  "snapshot_commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+  "git_tree_sha": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+  "platform": "switch",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "patch": 416,
+    "cheat": 2
+  },
+  "files": [
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/1st Place Crown/IPS/MK8D 3.0.5 1st Place Crown/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "d733d405fed71c58c740f58bcd72692b26f584c5",
+      89
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/1st Place Crown/PCHTXT/MK8D 3.0.5 1st Place Crown/3.0.5_1stPlaceCrown.pchtxt",
+      "c74767b42a37b6cc7379f2209d741e0e602b3c54",
+      267
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/1st Place Crown/source.s",
+      "b5ce0595f99cb7f689b142e3632e1243bd56d7ba",
+      2297
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Allow Pause Before Race Start/IPS/MK8D 3.0.5 Allow Pause Before Race Start/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "5eed20437b93ef2673ad6f7c5b8f93097671337e",
+      29
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Allow Pause Before Race Start/PCHTXT/MK8D 3.0.5 Allow Pause Before Race Start/3.0.5_AllowPauseBeforeRace.pchtxt",
+      "b14868b799e6752bd0652dac04daf39b19acaa02",
+      160
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Always Angry Wiggler/IPS/MK8D 3.0.5 Always Angry Wiggler/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "ca859aeb5fd6fab8acd4a4adcef53707b37aab0f",
+      85
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Always Angry Wiggler/PCHTXT/MK8D 3.0.5 Always Angry Wiggler/3.0.5_AlwaysAngryWiggler.pchtxt",
+      "f5782ada633e9aadba0f74ecf164f6abf89a9c4e",
+      264
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Always Angry Wiggler/source.s",
+      "b0c823e24deac5c273ac7247c6227fac683eacf5",
+      1763
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Anti Gravity Tire Color Modifier/PCHTXT/MK8D 3.0.5 Anti Gravity Tire Color Modifier/3.0.5_AntiGravityTireColorMod.pchtxt",
+      "b91911eff87a624587ab8a08f30a283d64af0bd0",
+      999
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Better Rearview Camera/IPS/MK8D 3.0.5 Better Rearview Camera/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "55175a772e01f0aebc0685a8577d3855308edec8",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Better Rearview Camera/PCHTXT/MK8D 3.0.5 Better Rearview Camera/3.0.5_BetterRearviewCam.pchtxt",
+      "369cebc2c0e7c60e34483687d5bc93809cb31aa2",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/CPU Bot (Auto Drive)/IPS/MK8D 3.0.5 CPU Bot (Auto Drive)/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "8dc613a427416c4f8d48a87c4f6896c685bce5b2",
+      69
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/CPU Bot (Auto Drive)/PCHTXT/MK8D 3.0.5 CPU Bot (Auto Drive)/3.0.5_CPUBot.pchtxt",
+      "b9f576cce550b0b9ec2d66f8807237d7ed2749ea",
+      234
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/CPU Bot (Auto Drive)/source.s",
+      "164e8ad90b8bb30dcbcbcfc5f948a676d9b8b2d2",
+      987
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/CPU Combo Modifier/PCHTXT/MK8D 3.0.5 CPU Combo Modifier/3.0.5_CPUComboModifier.pchtxt",
+      "c2802b2ccb9a8eb68f1ff532c86d5c5bcee77f83",
+      3434
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/CPU Combo Modifier/source.s",
+      "95b21117cbdd4b65abc64642fd0e5f9224240421",
+      7018
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/CPUs Have Nametags/IPS/MK8D 3.0.5 CPUs Have Nametags/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "e9ba6c2a2ad85141b435528da46871d94d77bf0e",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/CPUs Have Nametags/PCHTXT/MK8D 3.0.5 CPUs Have Nametags/3.0.5_CPUNametags.pchtxt",
+      "4b08340e5000c556c4862d8b1ce61ef4dcf845c1",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Camera Mode Controller/IPS/MK8D 3.0.5 Camera Mode Controller/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "30d4eb2c83a9b698da240af4ac48d4521957d9aa",
+      759
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Camera Mode Controller/PCHTXT/MK8D 3.0.5 Camera Mode Controller/3.0.5_CameraModeController.pchtxt",
+      "e41ff827239b91de89fd30d21e89e5823352ae7c",
+      1605
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Camera Mode Controller/source.s",
+      "74f95d8d22c46668fced9b2edba584dac0af2ca7",
+      8920
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Character Animation Controller/IPS/MK8D 3.0.5 Character Animation Controller/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "29dd086a972d9a79e1236c76d7af383632d8185c",
+      473
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Character Animation Controller/PCHTXT/MK8D 3.0.5 Character Animation Controller/3.0.5_CharaAnimController.pchtxt",
+      "797af1f7eab6658f5bdf66b10a2156b69a32eca9",
+      1050
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Character Animation Controller/source.s",
+      "268fd910a741387fc5e50aa8d6cb0c1122b8c946",
+      5611
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Coin Stack in Race/IPS/MK8D 3.0.5 Coin Stack in Race/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "d5bd9009b495df39346280f9c39103d1be1bb83e",
+      73
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Coin Stack in Race/PCHTXT/MK8D 3.0.5 Coin Stack in Race/3.0.5_CoinStackInRace.pchtxt",
+      "5cb058613e1d06d44f8b1b7d5e59d5e825f38872",
+      234
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Coin Stack in Race/source.s",
+      "63177d7365e9e724089aef8b0b0f9a4b2d80a10a",
+      1947
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Coins on Minimap/IPS/MK8D 3.0.5 Coins on Minimap/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "c42947b4cb66abb098c6e29ce7c5c45c64fc2d68",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Coins on Minimap/PCHTXT/MK8D 3.0.5 Coins on Minimap/3.0.5_CoinsOnMinimap.pchtxt",
+      "d7066c0d0c1055a44e4efdfa305556549ec86144",
+      127
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Course Music Continues in Star/IPS/MK8D 3.0.5 Course Music Continues in Star/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "bbe37ff7ff2f39d6610bebf0e6e3cc9a0d2a9b5e",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Course Music Continues in Star/PCHTXT/MK8D 3.0.5 Course Music Continues in Star/3.0.5_CourseMusicContinuesStar.pchtxt",
+      "f677a46a7b59c5aaeb9913107716b130ca58a73b",
+      141
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Course Music Speedup on Final Lap/IPS/MK8D 3.0.5 Course Music Speedup on Final Lap/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "8e545870d720c2d4b62119125135c551be6b3623",
+      125
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Course Music Speedup on Final Lap/PCHTXT/MK8D 3.0.5 Course Music Speedup on Final Lap/3.0.5_CourseMusicSpeedup.pchtxt",
+      "a993d7ee0d483876efee097b81f5eea85e7b77a9",
+      355
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Course Music Speedup on Final Lap/source.s",
+      "9cfd2a33c6d82a39b79c1a935bb77147ec5c5591",
+      3002
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Debug Item Cycler/IPS/MK8D 3.0.5 Debug Item Cycler/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "6870ca6d3964d5a51f0a9d7409a218ffc2346609",
+      445
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Debug Item Cycler/PCHTXT/MK8D 3.0.5 Debug Item Cycler/3.0.5_DebugItemCycler.pchtxt",
+      "630bedf27001d0374b88af54387e8cbc9b98220f",
+      983
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Debug Item Cycler/source.s",
+      "d62e7139dd6c5b1490f3453bea77b086cf760ab3",
+      6871
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Coin Type in All Courses/IPS/MK8D 3.0.5 Default Coin Type in All Courses/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "f3fa813464f52b568820a284d79f6505ea63528c",
+      23
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Coin Type in All Courses/PCHTXT/MK8D 3.0.5 Default Coin Type in All Courses/3.0.5_DefaultCoinType.pchtxt",
+      "2235b6c08449f9dff462c5bc9923801369c8b1da",
+      151
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Course Intro Music in Ninja Hideway/IPS/MK8D 3.0.5 Default Course Intro Music in Ninja Hideway/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "8f1f2f32359c205b235bca2b3d81779d4e5f7088",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Course Intro Music in Ninja Hideway/PCHTXT/MK8D 3.0.5 Default Course Intro Music in Ninja Hideway/3.0.5_IntroNinja.pchtxt",
+      "3774ed0c8218691caa1607858e7419bae2e05024",
+      154
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Item Roulette Sounds in All Courses/IPS/MK8D 3.0.5 Default Item Roulette Sounds in All Courses/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "795b4e8dcaeb5d62418757450898a6e468c5f8ce",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Item Roulette Sounds in All Courses/PCHTXT/MK8D 3.0.5 Default Item Roulette Sounds in All Courses/3.0.5_DflIRSFX.pchtxt",
+      "7deda8066024d3a060dd5465cf202425a5379f1f",
+      154
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Start and Result Music in Every Course/IPS/MK8D 3.0.5 Default Start and Result Music in Every Course/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "ddc20f97aa6d997d2401d137850ff975c1ef4792",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Default Start and Result Music in Every Course/PCHTXT/MK8D 3.0.5 Default Start and Result Music in Every Course/3.0.5_DlfBGM.pchtxt",
+      "9459649f1f73c11196c07ccd6b096aac1f00a595",
+      157
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Character Particle Effects/IPS/MK8D 3.0.5 Disable Character Particle Effects/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "211bd35829fdb4925a2022871a30e67cb9171597",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Character Particle Effects/PCHTXT/MK8D 3.0.5 Disable Character Particle Effects/3.0.5_DisableCharaParticle.pchtxt",
+      "f816580bce47bc8c0ffff15c82a6da95ad9b4c9e",
+      145
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Course Music Channel Change/IPS/MK8D 3.0.5 Disable Course Music Channel Change/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "7f024939001811dc20ef6df72e99d875daeca2fe",
+      29
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Course Music Channel Change/PCHTXT/MK8D 3.0.5 Disable Course Music Channel Change/3.0.5_DisableBGMChannel.pchtxt",
+      "02f70f9f099e80bbfb60afb00e862765592b41d2",
+      165
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Course TV Screen/IPS/MK8D 3.0.5 Disable Course TV Screen/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "51090cd57203d739fb35a60e1764122bb4da6a60",
+      16
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Course TV Screen/PCHTXT/3.0.5_DisableCourseTVScreen.pchtxt",
+      "5ede9e3c0a14fd4f975a66249beb37e51814f036",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Dolphin Shoals Lap 2 Music Change/IPS/MK8D 3.0.5 Disable Dolphin Shoals Lap 2 Music Change/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "3cc61345ceb3130ca49010d5db13a86f28bed4cd",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Dolphin Shoals Lap 2 Music Change/PCHTXT/3.0.5_DisableDolphinShoalsLap2MusicChange.pchtxt",
+      "a884f1be1b77f7daa10470bc271130379a4dd42b",
+      152
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Frontrunning Beats/IPS/MK8D 3.0.5 Disable Frontrunning Beats/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "561ad78c6c15c65c070b4ccd11c046f9b5eaece3",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Frontrunning Beats/PCHTXT/MK8D 3.0.5 Disable Frontrunning Beats/3.0.5_DisableFrontrunningBeats.pchtxt",
+      "587f43965d80da8467d9a37783e0f16479a28612",
+      137
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable GCN Baby Park Lap Music Speedup/IPS/MK8D 3.0.5 Disable GCN Baby Park Lap Music Speedup/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "229fb30c45ebc241c11a754bab83732d32ba41e8",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable GCN Baby Park Lap Music Speedup/PCHTXT/MK8D 3.0.5 Disable GCN Baby Park Lap Music Speedup/3.0.5_BParkLap.pchtxt",
+      "3521c6fd234145b72d9a7da47fd0d5993eed7bbf",
+      150
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable MKTV Transition Fade/IPS/MK8D 3.0.5 Disable MKTV Transition Fade/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "ce053ccaf824d59de074ebec9df137170101c368",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable MKTV Transition Fade/PCHTXT/MK8D 3.0.5 Disable MKTV Transition Fade/3.0.5_DisableMKTVTransitionFade.pchtxt",
+      "fcadc4ea11e7a81056c08ca91d3a3f0def7a020f",
+      139
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Result Camera/IPS/MK8D 3.0.5 Disable Result Camera/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "608942d37c47945520879110a3ddfe18fbf84a9a",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Result Camera/PCHTXT/MK8D 3.0.5 Disable Result Camera/3.0.5_DisableResultCam.pchtxt",
+      "e3769eadcce792decaaa7f7e113107087858b048",
+      132
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Start Camera/IPS/MK8D 3.0.5 Disable Start Camera/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "ed0bb4ad37a75c3e15e659d16f2ea498e28ee184",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Start Camera/PCHTXT/MK8D 3.0.5 Disable Start Camera/3.0.5_DisableStartCamera.pchtxt",
+      "239bb82a7471588b7eef373a81ab460d8ccafe6a",
+      131
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Time Trials Ghost Saving/IPS/MK8D 3.0.5 Disable Time Trials Ghost Saving/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "55175a772e01f0aebc0685a8577d3855308edec8",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Time Trials Ghost Saving/PCHTXT/MK8D 3.0.5 Disable Time Trials Ghost Saving/3.0.5_DisableTTGhostSaving.pchtxt",
+      "5ccb3757aa8a7e3c23a3747c8981548ce78ba3c3",
+      143
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Underwater Music/IPS/MK8D 3.0.5 Disable Underwater Music/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "68e4619591316a3a9007bdc9c8e537ff845ac194",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Underwater Music/PCHTXT/MK8D 3.0.5 Disable Underwater Music/3.0.5_DisableUnderwaterMusic.pchtxt",
+      "30d7fe0945ee16b6cf2d1eb32e8ceed295d2b4fa",
+      135
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Wiggler Anger After Damage/IPS/MK8D 3.0.5 Disable Wiggler Anger After Damage/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "e682e2b362575346c887ec0169a810afd047c32e",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Disable Wiggler Anger After Damage/PCHTXT/MK8D 3.0.5 Disable Wiggler Anger After Damage/3.0.5_DisableWigglerAnger.pchtxt",
+      "ecad2afbe2dcbeb7194ce69a6acf3d45159a3f8e",
+      132
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Don't Hide Position Before Finish Online/IPS/MK8D 3.0.5 Don't Hide Position Before Finish Online/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "e27733c49ce8a287418ae4932ec141d7bef31ec1",
+      29
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Don't Hide Position Before Finish Online/PCHTXT/MK8D 3.0.5 Don't Hide Position Before Finish Online/3.0.5_DontHidePosFinishOnline.pchtxt",
+      "b2e62cabf12bf9cc36f8b24927fcc902e3c716f0",
+      170
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Earth Rotates in Lobby/IPS/MK8D 3.0.5 Earth Rotates in Lobby/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "6325a8b1871210e8267c0e10d5ec26d97271533f",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Earth Rotates in Lobby/PCHTXT/MK8D 3.0.5 Earth Rotates in Lobby/3.0.5_EarthRotatesLobby.pchtxt",
+      "3490015d460e5db79227cb0d64fb6ed4c76bc4c8",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Enhanced Ghost Replay (Live Replay)/IPS/MK8D 3.0.5 Enhanced Ghost Replay (Live Replay)/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "0d6d28a93b4147edf872a88d48ab157427e34a13",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Enhanced Ghost Replay (Live Replay)/PCHTXT/MK8D 3.0.5 Enhanced Ghost Replay (Live Replay)/3.0.5_EnhancedGhostReplay.pchtxt",
+      "503edba705d7cc5e8dd2d4f9daf31975e442cb23",
+      373
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Enhanced Ghost Replay (Live Replay)/source.s",
+      "bf39c03383239f3b865f17abb4cb5bd7e03c5e30",
+      2210
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Enhanced VS Pause Menu/IPS/MK8D 3.0.5 Enhanced VS Pause Menu/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "8acc818cef9081c6f5c5592f7892bddde4a98885",
+      241
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Enhanced VS Pause Menu/PCHTXT/MK8D 3.0.5 Enhanced VS Pause Menu/3.0.5_EnhancedPauseMenu.pchtxt",
+      "c849d36246bb0ccfc15e5e580cbe555e2fb28929",
+      556
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Enhanced VS Pause Menu/source.s",
+      "c0f8db4ff5a7aaa5ba63555d19e49d64d5c06665",
+      3944
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Free Camera Toolkit/IPS/MK8D 3.0.5 Free Camera Toolkit/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "31bafe0cb6fbfebde2cb6f6d7a66dbd8c9663a1f",
+      1191
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Free Camera Toolkit/PCHTXT/MK8D 3.0.5 Free Camera Toolkit/3.0.5_FreeCamToolkit.pchtxt",
+      "4580d0cccdf72830d8f90e1b1ae7ca238c1ecdae",
+      2446
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Free Camera Toolkit/source.s",
+      "321685f7345028f7c5b8c695acd406a2ee3c6266",
+      17476
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Hit Commentary in Race/IPS/MK8D 3.0.5 Hit Commentary in Race/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "d5337f716ada5687dd7bf4a76052b49fa9d6a4ce",
+      333
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Hit Commentary in Race/PCHTXT/MK8D 3.0.5 Hit Commentary in Race/3.0.5_HitCommentaryRace.pchtxt",
+      "d981e82baad3e69f32a740e3e4d35ab287ab131d",
+      760
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Hit Commentary in Race/source.s",
+      "b5d74284bedc29aeb67734ae27b236b25c31c8bb",
+      6579
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Less Contrast (No Sun Filter)/IPS/MK8D 3.0.5 Less Contrast (No Sun Filter)/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "672e8e9faab1576f723c2a550ca613fe7fa1a794",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Less Contrast (No Sun Filter)/PCHTXT/MK8D 3.0.5 Less Contrast (No Sun Filter)/3.0.5_LessContrast.pchtxt",
+      "dd7013861d3611a373c6f536bb52504c4a148cc3",
+      140
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Mii Heads on Minimap/IPS/MK8D 3.0.5 Mii Heads on Minimap/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "3acbe5d6aad55e2176e9ac35eaca828fa00bdaf8",
+      69
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Mii Heads on Minimap/PCHTXT/MK8D 3.0.5 Mii Heads on Minimap/3.0.5_MiiHeadsMinimap.pchtxt",
+      "3d8caf63f47a73678a1ee95088afe0227e81b20e",
+      234
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Mii Heads on Minimap/source.s",
+      "c9da77315589ad931ca33ed8be0803cdee20372f",
+      1226
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Mii Heads on Result Screen/IPS/MK8D 3.0.5 Mii Heads on Result/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "9918c59da64244ed1fb47c05d425fff755d0ea11",
+      77
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Mii Heads on Result Screen/PCHTXT/MK8D 3.0.5 Mii Heads on Result/3.0.5_MiiHeadsResult.pchtxt",
+      "c08c676140c568e3ac417c2bc507b61d35106baf",
+      256
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Mii Heads on Result Screen/source.s",
+      "e51ed31c5c89b889a7fda1f9c018cffeae281881",
+      1198
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Direction Arrow/IPS/MK8D 3.0.5 Minimap Character Direction Arrow/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "f4a33d61cd17d5ee005695d65436bb851e8427b1",
+      127
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Direction Arrow/PCHTXT/MK8D 3.0.5 Minimap Character Direction Arrow/3.0.5_MinimapCharaDirArrow.pchtxt",
+      "9bfd312704284a03f2800d1124b66f56cf7d1b77",
+      358
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Direction Arrow/source.s",
+      "7f759e02fdf292940517425577745699a8f67aa0",
+      2402
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Direction Searchlight/IPS/MK8D 3.0.5 Minimap Character Direction Searchlight/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "bc62148fc2b046dee37c99a2403f9de38b621568",
+      203
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Direction Searchlight/PCHTXT/MK8D 3.0.5 Minimap Character Direction Searchlight/3.0.5_MapCharaSLight.pchtxt",
+      "1f51f1981fc6c434f4d73ad8576014010892e8ff",
+      512
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Direction Searchlight/source.s",
+      "08af280cabe99e7bdf6daf372e53f8443ad58ea0",
+      3509
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Faces Kart Direction/IPS/MK8D 3.0.5 Minimap Character Faces Kart Direction/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "e603b502edf897a6efe9032b9d8e4dbde8890f89",
+      171
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Faces Kart Direction/PCHTXT/MK8D 3.0.5 Minimap Character Faces Kart Direction/3.0.5_MapCharaKartDir.pchtxt",
+      "ef0c27e2373b61a49775ab34a2ae53e19686ecab",
+      449
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Minimap Character Faces Kart Direction/source.s",
+      "9d2a048e01d6c4be56be745739e553e0c03c143e",
+      3014
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No COM CPU Option in Singleplayer/IPS/MK8D 3.0.5 No COM CPU Option in Singleplayer/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "b7478ad6c7dc32274fa94f6ad21b09b30b163a78",
+      71
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No COM CPU Option in Singleplayer/PCHTXT/MK8D 3.0.5 No COM CPU Option in Singleplayer/3.0.5_NoCOMCPUOptionSP.pchtxt",
+      "cb975737a53d49ed48cd677f682e54a2f3d19068",
+      248
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No COM CPU Option in Singleplayer/source.s",
+      "99516570c6a4c10750e820f925e94fa7f3de792c",
+      1495
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Course Intro (Skip)/IPS/MK8D 3.0.5 No Course Intro (Skip)/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "cf2660d3e83404f968659a4374e5845eecd6cfbb",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Course Intro (Skip)/PCHTXT/MK8D 3.0.5 No Course Intro (Skip)/3.0.5_NoCourseIntro.pchtxt",
+      "a2018d2a699f762b025eb75fb42f119a30ba537f",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Course Intro UI/IPS/MK8D 3.0.5 No Course Intro UI/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "c5fb6daf2e9883154436a64650b79cb907a44186",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Course Intro UI/PCHTXT/MK8D 3.0.5 No Course Intro UI/3.0.5_NoCourseIntroUI.pchtxt",
+      "ccfa64d847af6800160758858db579f17dd3f3ad",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Menu Kart Base Table/IPS/MK8D 3.0.5 Debug Item Cycler/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "d8ecdff35fabe519978c070e2e9d3143f71af2af",
+      445
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Menu Kart Base Table/IPS/MK8D 3.0.5 No Menu Kart Base Table/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "20a3d1df7f7053abba880811c9663ba528631737",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Menu Kart Base Table/PCHTXT/MK8D 3.0.5 No Menu Kart Base Table/3.0.5_NoCSSKartBaseTable.pchtxt",
+      "a98cb474018142e49a4fc99aa858e6a310ce8414",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Minimap Character Icon Lag Online/IPS/MK8D 3.0.5 No Minimap Character Icon Lag Online/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "b7a208053a706ead25cabe9dfe20c518aed286c4",
+      53
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Minimap Character Icon Lag Online/PCHTXT/MK8D 3.0.5 No Minimap Character Icon Lag Online/3.0.5_NoMapIconLagOnline.pchtxt",
+      "67eef83d69228730f8e8b5943fdac19659593d57",
+      218
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Minimap Character Icon Lag Online/source.s",
+      "809db37eaba45cfc9c482edcfbfb5b6dd67872c4",
+      1702
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Music/IPS/MK8D 3.0.5 No Music/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "1de8545e61a37f25c80d48bf846b838089e707b6",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Music/PCHTXT/MK8D 3.0.5 No Music/3.0.5_NoMusic.pchtxt",
+      "c35d6b9e391412eb12b08cf75a2c647ab747596b",
+      119
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Online Menu Earth/IPS/MK8D 3.0.5 No Online Menu Earth/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "ea0e0f8db855a926f9bfc89070185e1b448a07eb",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Online Menu Earth/PCHTXT/MK8D 3.0.5 No Online Menu Earth/3.0.5_NoOnlineMenuEarth.pchtxt",
+      "d32c0cf0862b29aa8d16f16eafb055a59e712cfc",
+      131
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Online Menu Space Toads/IPS/MK8D 3.0.5 No Online Menu Space Toads/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "1f85d4657c4d850d8509d9b37feb88733895c6fc",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Online Menu Space Toads/PCHTXT/MK8D 3.0.5 No Online Menu Space Toads/3.0.5_NoOnlineMenuSpaceToads.pchtxt",
+      "65a6c363c8693394402722959a0619128d77a379",
+      137
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Online Menu Sun/IPS/MK8D 3.0.5 No Online Menu Sun/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "b586fd9397bf5842b9f94931be05bdd0adae2b0f",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Online Menu Sun/PCHTXT/MK8D 3.0.5 No Online Menu Sun/3.0.5_NoOnlineMenuSun.pchtxt",
+      "48c5909fbb4cd24562f5e01882a486ac5d778226",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Shocked Music Distortion/IPS/MK8D 3.0.5 No Shocked Music Distortion/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "2cd9a327f19a7bf2601384dce79ed7919eddd8fc",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Shocked Music Distortion/PCHTXT/MK8D 3.0.5 No Shocked Music Distortion/3.0.5_NoShockedMusicDistortion.pchtxt",
+      "1594fd19c45b2c6b73b2679ac72f3a786b96ae68",
+      138
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Star Music (Other Players Karts)/IPS/MK8D 3.0.5 No Star Music (Other Players Karts)/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "a56fcd3e8d4cdbfcbc986f49098cab36754c78bb",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Star Music (Other Players Karts)/PCHTXT/MK8D 3.0.5 No Star Music (Other Players Karts)/3.0.5_NoStarMusicOthers.pchtxt",
+      "cf7752a94a14419474c4e3f6d84c529c92a16c24",
+      147
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Star Music (Your Kart)/IPS/MK8D 3.0.5 No Star Music (Your Kart)/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "9f0b177d8e6a5ee88ee8434940cf7f51f3243ab6",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/No Star Music (Your Kart)/PCHTXT/MK8D 3.0.5 No Star Music (Your Kart)/3.0.5_NoStarMusicYou.pchtxt",
+      "e803fe6e4356edb7003b5da83effb562f9dbe1fb",
+      136
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Online Menu Skybox Model Modifier/PCHTXT/MK8D 3.0.5 Online Menu Skybox Model Modifier/3.0.5_OnlineMenuSkyboxMod.pchtxt",
+      "dfb9175498d8fd1f9fb1b81dbf53ef0dcc674aec",
+      447
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Online Menu Sun Model Modifier/PCHTXT/MK8D 3.0.5 Online Menu Sun Model Modifier/3.0.5_OnlineMenuSunMod.pchtxt",
+      "922886cc30d7da208059fbbf03145cfa441e0e55",
+      436
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Position in Battle/IPS/MK8D 3.0.5 Position in Battle/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "61338ccf262f8187a32fe9f2b84deac856514fea",
+      87
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Position in Battle/PCHTXT/MK8D 3.0.5 Position in Battle/3.0.5_PositionBattle.pchtxt",
+      "8da3fc5f04cdefbc433f1035995a33a938039f9a",
+      263
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Position in Battle/source.s",
+      "f0b3e9df1d8fcc421a5f679662d51456e31e2da6",
+      1723
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Racer Amount Modifier/PCHTXT/MK8D 3.0.5 Racer Amount Modifier/3.0.5_RacerAmountModifier.pchtxt",
+      "d40a51b67797eb1724e626ed3a9edcd6b17c72c9",
+      415
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Random CPU Character Variants/IPS/MK8D 3.0.5 Random CPU Character Variants/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "983cfb15da8a8de0fa724af86cf0313bf67a1b91",
+      152
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Random CPU Character Variants/PCHTXT/MK8D 3.0.5 Random CPU Character Variants/3.0.5_RandomCPUVariant.pchtxt",
+      "7f61307bd1e373ae48441f19dc005642ab9311da",
+      403
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Random CPU Character Variants/source.s",
+      "d233c6f969080160ade347969c49ec1ac8cd2389",
+      2201
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/IPS/MK8D 3.0.5 Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "90ba039cd0e18bf746ad23a598e5c755c487afb0",
+      247
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/PCHTXT/MK8D 3.0.5 Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/G.pchtxt",
+      "80c9f9a53c35f5e5a0e680335ce9008c7a6fb21c",
+      628
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/source.s",
+      "339481fefa1c0412ad465131fd9c05d43b1e0748",
+      4174
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Restore Previous Racer Button in Live View/IPS/MK8D 3.0.5 Restore Previous Racer Button in Live View/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "4196503b4d93ade7c07339b72fbd87b31f904840",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Restore Previous Racer Button in Live View/PCHTXT/MK8D 3.0.5 Restore Previous Racer Button in Live View/3.0.5_RestoreLiveViewBButton.pchtxt",
+      "190f68f628c0cba4abeca5bcd56b6aea08976747",
+      153
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Restore Shine Score Counter/IPS/MK8D 3.0.5 Restore Shine Score Counter/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "dfadc54fdee6cc8456d3c88ad745294f48bf835a",
+      43
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Restore Shine Score Counter/PCHTXT/MK8D 3.0.5 Restore Shine Score Counter/3.0.5_RestoreShineScore.pchtxt",
+      "f676ed7d91aafdc9cdafe1bd1a7ef300b28edb07",
+      186
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/See Nametags from Longer Distance/IPS/MK8D 3.0.5 See Nametags from Longer Distance/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "3f6023101cbb0950e84686311f3c09708bcccb02",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/See Nametags from Longer Distance/PCHTXT/MK8D 3.0.5 See Nametags from Longer Distance/3.0.5_LongDistanceNametags.pchtxt",
+      "ebc1410075fa1c61ddd44075a1b6007013205f0b",
+      144
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show HUD Before Countdown/IPS/MK8D 3.0.5 Show HUD Before Countdown/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "e2d903bdbd0d74dfc4b7e4e6749b2c669107fdc9",
+      97
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show HUD Before Countdown/PCHTXT/MK8D 3.0.5 Show HUD Before Countdown/3.0.5_ShowHUDBeforeCountdown.pchtxt",
+      "22aab474cbfbabc474e9a481bddcc7e989a20e1d",
+      293
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show HUD Before Countdown/source.s",
+      "cb6d82a81d939cb9c1b06c29c2ef8ecdb0fe1853",
+      1709
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show Invincibility Frames in Race/IPS/MK8D 3.0.5 Show Invincibility Frames in Race/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "6def759b9ea86caf79618652308a01480637ed2f",
+      55
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show Invincibility Frames in Race/PCHTXT/MK8D 3.0.5 Show Invincibility Frames in Race/3.0.5_InvFramesRace.pchtxt",
+      "807cd3412b4d72d5dad21bc4aa2695fd126349df",
+      220
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show Invincibility Frames in Race/source.s",
+      "01fd1fbadd996a326dc03754fd934b7397e8d4a4",
+      1458
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show More Kart Status Effects on Minimap/IPS/MK8D 3.0.5 Show More Kart Status Effects on Minimap/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "c2ea4e44ac6ae9988e61eabce1e132eaf8bdbfa3",
+      189
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show More Kart Status Effects on Minimap/PCHTXT/MK8D 3.0.5 Show More Kart Status Effects on Minimap/3.0.5_KartMap.pchtxt",
+      "3844d5202e4cca8e85124f5ce2b04dc4d9954641",
+      490
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Show More Kart Status Effects on Minimap/source.s",
+      "abbf157fb2aa0350635a714ca5a100d1491d50b5",
+      2357
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Smaller Minimap Icons/IPS/MK8D 3.0.5 Smaller Minimap Icons/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "57af5fdc480b9d96b6e7e3ef0a71e065eae871e4",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Smaller Minimap Icons/PCHTXT/MK8D 3.0.5 Smaller Minimap Icons/3.0.5_SmallerMapIcons.pchtxt",
+      "4c01f6ccb618f055c7f1cd61aeeba33c004c2857",
+      136
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Timer in Race/IPS/MK8D 3.0.5 Timer in Race/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "a6c07485df78adaf1c87a9a7507eb6f234bf65da",
+      117
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Timer in Race/PCHTXT/MK8D 3.0.5 Timer in Race/3.0.5_TimerRace.pchtxt",
+      "d187c12f572ad75e75dfd2dbc7299d1a5f04c6d5",
+      323
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Timer in Race/source.s",
+      "221a0cc64dd13d61f48a5877a2c0d6b8518e8818",
+      1620
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Toggle HUD Visibility/IPS/MK8D 3.0.5 Toggle HUD Visibility/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "09f4298334f3d6ed3b64f6155646b04d8067471b",
+      81
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Toggle HUD Visibility/PCHTXT/MK8D 3.0.5 Toggle HUD Visibility/3.0.5_ToggleHUDVisibility.pchtxt",
+      "51bbbf504f3a4ef3afd98706822be8165bfe3e60",
+      255
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Toggle HUD Visibility/source.s",
+      "076970cd5226e4f07bd0b40fb7a1ab23a8d7945e",
+      1055
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Trick Chaining (Mario Kart World)/IPS/MK8D 3.0.5 Trick Chaining (Mario Kart World)/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "7604b290272f0b9a59a0bec9da673f218cfbc76c",
+      289
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Trick Chaining (Mario Kart World)/PCHTXT/MK8D 3.0.5 Trick Chaining (Mario Kart World)/3.0.5_TrickChainWorld.pchtxt",
+      "0efef269e19120057d967fc982f99e65d45e3bfe",
+      679
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Trick Chaining (Mario Kart World)/source.s",
+      "07d8e1b0f43f78526528c13c488af94c57ea351f",
+      5121
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Warp Kart to TestStart Points/IPS/MK8D 3.0.5 Warp Kart to TestStart Points/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "673924814db4f455bdbdca11a1ae6ec9e1624b5e",
+      403
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Warp Kart to TestStart Points/PCHTXT/MK8D 3.0.5 Warp Kart to TestStart Points/3.0.5_WarpKartTestStartPoints.pchtxt",
+      "705490b27605bf1817a1ffcbb2e2a1f7326e27c7",
+      906
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/3.0.5/Warp Kart to TestStart Points/source.s",
+      "2be39af33ac738396ea76735e5a18f03426e4f0b",
+      4994
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/1st Place Crown/IPS/MK8D 4.0.0 1st Place Crown/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "eee2f2eb53554d9af26742005797c31c651933b9",
+      89
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/1st Place Crown/PCHTXT/MK8D 4.0.0 1st Place Crown/4.0.0_1stPlaceCrown.pchtxt",
+      "dc20eaee167d542cd05996854372e43f286cff6c",
+      267
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/1st Place Crown/source.s",
+      "e80d02d9a611392c00c22efb2df7e8c5a6dffb8a",
+      2297
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Allow Pause Before Race Start/IPS/MK8D 4.0.0 Allow Pause Before Race Start/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "05d9c5239cc5455d56e97d7d4d094b69d5624cba",
+      29
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Allow Pause Before Race Start/PCHTXT/MK8D 4.0.0 Allow Pause Before Race Start/4.0.0_AllowPauseBeforeRace.pchtxt",
+      "6d292b45a486dfe5b5581aa4e462ec5f5a5f7d25",
+      160
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Always Angry Wiggler/IPS/MK8D 4.0.0 Always Angry Wiggler/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "9253a2a269b697bc96b730e80a13155624e63dc8",
+      85
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Always Angry Wiggler/PCHTXT/MK8D 4.0.0 Always Angry Wiggler/4.0.0_AlwaysAngryWiggler.pchtxt",
+      "f24e5d5db222fd937823a544664a8ea0bb44411d",
+      262
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Always Angry Wiggler/source.s",
+      "389bd6e7019a008a6b296c07e705cc8a520ce489",
+      1764
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Anti Gravity Tire Color Modifier/PCHTXT/MK8D 4.0.0 Anti Gravity Tire Color Modifier/4.0.0_AntiGravityTireColorMod.pchtxt",
+      "5b1af6340c8b59b0312bb641132851f034a444f5",
+      999
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Better Rearview Camera/IPS/MK8D 4.0.0 Better Rearview Camera/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "c1bb26a6327fa4bb4f43bf3f78f5b60221bb65d9",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Better Rearview Camera/PCHTXT/MK8D 4.0.0 Better Rearview Camera/4.0.0_BetterRearviewCam.pchtxt",
+      "eebc3b7e7493d2351014eea31478195a6a6bda7f",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/CPU Bot (Auto Drive)/IPS/MK8D 4.0.0 CPU Bot (Auto Drive)/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "19606329a4748167b1af54ebd93771a7a01d56c9",
+      69
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/CPU Bot (Auto Drive)/PCHTXT/MK8D 4.0.0 CPU Bot (Auto Drive)/4.0.0_CPUBot.pchtxt",
+      "e87e742cd8c899bcb47173e27617adb16ba88166",
+      234
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/CPU Bot (Auto Drive)/source.s",
+      "1f1783e3c50711794aa617775ed9f3f1b54da205",
+      987
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/CPU Combo Modifier/PCHTXT/MK8D 4.0.0 CPU Combo Modifier/4.0.0_CPUComboModifier.pchtxt",
+      "40a71b6d2cb6393be9a9f7582dabfb605ebb9a28",
+      3430
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/CPU Combo Modifier/source.s",
+      "28fb7a450f23e6fcd512a70acff0758be1761301",
+      7018
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/CPUs Have Nametags/IPS/MK8D 4.0.0 CPUs Have Nametags/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "eece789edd5b1b40e1dbb55185b88a892644667b",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/CPUs Have Nametags/PCHTXT/MK8D 4.0.0 CPUs Have Nametags/4.0.0_CPUNametags.pchtxt",
+      "e2b6a04a1ec21d2295e1503d5c9a527669d57eb9",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Camera Mode Controller/IPS/MK8D 4.0.0 Camera Mode Controller/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "43b2421fabe04f8b25a47129d58b0f868b05fd95",
+      759
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Camera Mode Controller/PCHTXT/MK8D 4.0.0 Camera Mode Controller/4.0.0_CameraModeController.pchtxt",
+      "9f25e3944956b6c03464d4b3db7d319d1e569fc8",
+      1601
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Camera Mode Controller/source.s",
+      "c11a3b05eab13a0578709c2c6631bfdeaedf0d4f",
+      8919
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Character Animation Controller/IPS/MK8D 4.0.0 Character Animation Controller/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "43497fb5ca622fcb5b3b0376955a9d701bc39ec1",
+      473
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Character Animation Controller/PCHTXT/MK8D 4.0.0 Character Animation Controller/4.0.0_CharaAnimController.pchtxt",
+      "ac88d7d1a1a3804da7d253f30bf8b4609f84233c",
+      1048
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Character Animation Controller/source.s",
+      "9574468f3d502e4438ad887c32b62aac3ddcc664",
+      5611
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Coin Stack in Race/IPS/MK8D 4.0.0 Coin Stack in Race/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "df2bd09f7084b05e0633be71f70beb0182703c6c",
+      73
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Coin Stack in Race/PCHTXT/MK8D 4.0.0 Coin Stack in Race/4.0.0_CoinStackInRace.pchtxt",
+      "6a87db8de8c1645ce414e633f00e101bd4c28d20",
+      234
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Coin Stack in Race/source.s",
+      "23c14edc4114d1c179834ce5a2ecb79aa9af8c10",
+      1947
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Coins on Minimap/IPS/MK8D 4.0.0 Coins on Minimap/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "0a7b42f82343012804d14918a5925573273cb16a",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Coins on Minimap/PCHTXT/MK8D 4.0.0 Coins on Minimap/4.0.0_CoinsOnMinimap.pchtxt",
+      "ea58eb98654b3a81f10842f82adc9467166300a4",
+      127
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Course Music Continues in Star/IPS/MK8D 4.0.0 Course Music Continues in Star/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "2d0f0eb0ebf08f710cfbd550dc7a46129660a19a",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Course Music Continues in Star/PCHTXT/MK8D 4.0.0 Course Music Continues in Star/4.0.0_CourseMusicContinuesStar.pchtxt",
+      "7f436a5a5dbbdd136c921fbb3fb49b552328a7cf",
+      141
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Course Music Speedup on Final Lap/IPS/MK8D 4.0.0 Course Music Speedup on Final Lap/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "d07686017e5a652ce8b5965b29a6d8cd90992b34",
+      125
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Course Music Speedup on Final Lap/PCHTXT/MK8D 4.0.0 Course Music Speedup on Final Lap/4.0.0_CourseMusicSpeedup.pchtxt",
+      "6c91956b47388efa92139131988ddcb4da556fb8",
+      355
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Course Music Speedup on Final Lap/source.s",
+      "3708c9262b68279c80706fa52b5f6e2971fcb1de",
+      3002
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Debug Item Cycler/IPS/MK8D 4.0.0 Debug Item Cycler/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "a33eef4fb14f5f0b330d59fd725145c3f67e87bd",
+      445
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Debug Item Cycler/PCHTXT/MK8D 4.0.0 Debug Item Cycler/4.0.0_DebugItemCycler.pchtxt",
+      "c0d59373fa2d446d769c98c654a7e308b54e2e1e",
+      983
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Debug Item Cycler/source.s",
+      "572325b4ffc4dd2f8beef1aaf71e62b611a5008d",
+      6872
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Coin Type in All Courses/IPS/MK8D 4.0.0 Default Coin Type in All Courses/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "a45e0aad0a52bcac5e1c5f94a62b4eaafbf73e3a",
+      23
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Coin Type in All Courses/PCHTXT/MK8D 4.0.0 Default Coin Type in All Courses/4.0.0_DefaultCoinType.pchtxt",
+      "642de1d9b11a8773a5316130641e2f180b2a83ae",
+      151
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Course Intro Music in Ninja Hideway/IPS/MK8D 4.0.0 Default Course Intro Music in Ninja Hideway/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "0b37d472cf35c6bdfb1c647aceeb6b00110c9833",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Course Intro Music in Ninja Hideway/PCHTXT/MK8D 4.0.0 Default Course Intro Music in Ninja Hideway/4.0.0_IntroNinja.pchtxt",
+      "37ad0389095e3532318250f30f5678a3c6ef2561",
+      154
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Item Roulette Sounds in All Courses/IPS/MK8D 4.0.0 Default Item Roulette Sounds in All Courses/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "1737bbc52e8edba8ff24f123ff9058e1cb0e4535",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Item Roulette Sounds in All Courses/PCHTXT/MK8D 4.0.0 Default Item Roulette Sounds in All Courses/4.0.0_DflIRSFX.pchtxt",
+      "c2fdb580bb60877ee5265ca766d2c3c2cfa63420",
+      154
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Start and Result Music in Every Course/IPS/MK8D 4.0.0 Default Start and Result Music in Every Course/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "1b23b378bb5d45d0770b0608778f5b252a84a982",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Default Start and Result Music in Every Course/PCHTXT/MK8D 4.0.0 Default Start and Result Music in Every Course/4.0.0_DlfBGM.pchtxt",
+      "f6d3b162c666380eb466fa11cbe59a50ebc90a83",
+      157
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Character Particle Effects/IPS/MK8D 4.0.0 Disable Character Particle Effects/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "3187603b2e17b2c994f421c234c1a64c2b6140e3",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Character Particle Effects/PCHTXT/MK8D 4.0.0 Disable Character Particle Effects/4.0.0_DisableCharaParticle.pchtxt",
+      "46ffcb21508a6fd6cef2fd08733f2bfe16ca9149",
+      145
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Course Music Channel Change/IPS/MK8D 4.0.0 Disable Course Music Channel Change/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "faa980a98f3b699f625e7f4ee1af812a71c4aa99",
+      29
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Course Music Channel Change/PCHTXT/MK8D 4.0.0 Disable Course Music Channel Change/4.0.0_DisableBGMChannel.pchtxt",
+      "707e4291e366f335784ae2206de78c261be7f074",
+      165
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Course TV Screen/IPS/MK8D 4.0.0 Disable Course TV Screen/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "857ac8df130fa190b5eca2a82f89043488cfcb94",
+      16
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Course TV Screen/PCHTXT/MK8D 4.0.0 Disable Course TV Screen/4.0.0_DisableCourseTVScreen.pchtxt",
+      "74b80f8a62e9b3fc8c882b0cb10c9089ce0bf75a",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Dolphin Shoals Lap 2 Music Change/IPS/MK8D 4.0.0 Disable Dolphin Shoals Lap 2 Music Change/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "c3361b80348b5670dedbfce2ab9b4e0d64e92a04",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Dolphin Shoals Lap 2 Music Change/PCHTXT/MK8D 4.0.0 Disable Dolphin Shoals Lap 2 Music Change/4.0.0_DSL2Music.pchtxt",
+      "a5dfce1b07a6c510b253011cf44e39f6b2fac919",
+      152
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Frontrunning Beats/IPS/MK8D 4.0.0 Disable Frontrunning Beats/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "7e437ed12f3821d527dc49fc0e5ae1494b48bda3",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Frontrunning Beats/PCHTXT/MK8D 4.0.0 Disable Frontrunning Beats/4.0.0_DisableFrontrunningBeats.pchtxt",
+      "98e3c2939ff0fa53c0faf789ae4c0dbf4c5e9dbd",
+      137
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable GCN Baby Park Lap Music Speedup/IPS/MK8D 4.0.0 Disable GCN Baby Park Lap Music Speedup/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "746a0241cece5429d34c80441531761412d72ff8",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable GCN Baby Park Lap Music Speedup/PCHTXT/MK8D 4.0.0 Disable GCN Baby Park Lap Music Speedup/4.0.0_BParkLap.pchtxt",
+      "3b9cb3acb55cce122250cca049407477a5f50b6c",
+      150
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable MKTV Transition Fade/IPS/MK8D 4.0.0 Disable MKTV Transition Fade/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "5378ef6caacb98e636737f82cec1e286152e2a9d",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable MKTV Transition Fade/PCHTXT/MK8D 4.0.0 Disable MKTV Transition Fade/4.0.0_DisableMKTVTransitionFade.pchtxt",
+      "9420757831714404bd1929424651a9a82b8f5b5f",
+      139
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Result Camera/IPS/MK8D 4.0.0 Disable Result Camera/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "25dc5479d9a1231ec1b6e3dcc7c20db626083d92",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Result Camera/PCHTXT/MK8D 4.0.0 Disable Result Camera/4.0.0_DisableResultCam.pchtxt",
+      "b8ca56f45d9279ab73ccb1c87c6772cef714a7ca",
+      132
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Start Camera/IPS/MK8D 4.0.0 Disable Start Camera/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "19e5ba4793f8d5b8155139885e257a86fccd1a48",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Start Camera/PCHTXT/MK8D 4.0.0 Disable Start Camera/4.0.0_DisableStartCamera.pchtxt",
+      "3a1d35cf0b3e7d31e06bc7b41d9608bf82320e93",
+      131
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Time Trials Ghost Saving/IPS/MK8D 4.0.0 Disable Time Trials Ghost Saving/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "9f33bb51b2abad9590d0c35a814830d2860cfb3a",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Time Trials Ghost Saving/PCHTXT/MK8D 4.0.0 Disable Time Trials Ghost Saving/4.0.0_DisableTTGhostSaving.pchtxt",
+      "7953c5b920e417719b94d19105afae967952b0ff",
+      143
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Underwater Music/IPS/MK8D 4.0.0 Disable Underwater Music/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "bdcd882cfa464d7d59371c2e213c3514243b312a",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Underwater Music/PCHTXT/MK8D 4.0.0 Disable Underwater Music/4.0.0_DisableUnderwaterMusic.pchtxt",
+      "840015a2943abbfe2b7aae59ebba7cbe08df4e27",
+      135
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Wiggler Anger After Damage/IPS/MK8D 4.0.0 Disable Wiggler Anger After Damage/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "af19d257633426f753f8b6168ec88bb4b5fd12ba",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Disable Wiggler Anger After Damage/PCHTXT/MK8D 4.0.0 Disable Wiggler Anger After Damage/4.0.0_DisableWigglerAnger.pchtxt",
+      "e665c70bdeb2ff9f88c8f90c4464ff6e88d26772",
+      132
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Don't Hide Position Before Finish Online/IPS/MK8D 4.0.0 Don't Hide Position Before Finish Online/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "d83e9942c6293d6fc0626ec1d20c3b96d94c35ff",
+      29
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Don't Hide Position Before Finish Online/PCHTXT/MK8D 4.0.0 Don't Hide Position Before Finish Online/4.0.0_DontHidePosGoal.pchtxt",
+      "b8b2eb142bbbb21780c04726c2a7df8715d7bcba",
+      170
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Earth Rotates in Lobby/IPS/MK8D 4.0.0 Earth Rotates in Lobby/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "661deabd161248f59ce3f708ff15cc94056cfbd7",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Earth Rotates in Lobby/PCHTXT/MK8D 4.0.0 Earth Rotates in Lobby/4.0.0_EarthRotatesLobby.pchtxt",
+      "9e92600531fab2a3b335a80cca820c9983421d67",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Enhanced Ghost Replay (Live Replay)/IPS/MK8D 4.0.0 Enhanced Ghost Replay (Live Replay)/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "79b342182dcbb013a7b91fa54672fcbc2c4b6a64",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Enhanced Ghost Replay (Live Replay)/PCHTXT/MK8D 4.0.0 Enhanced Ghost Replay (Live Replay)/4.0.0_EnhancedGhostReplay.pchtxt",
+      "6444044107874af53f95c93f27ad278b3f75948a",
+      373
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Enhanced Ghost Replay (Live Replay)/source.s",
+      "f8656f2560cd9778c32c9e12e1bb8009f77a5908",
+      2210
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Enhanced VS Pause Menu/IPS/MK8D 4.0.0 Enhanced VS Pause Menu/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "bdac68759a8459f879d68e4655e3a644ae1a544b",
+      241
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Enhanced VS Pause Menu/PCHTXT/MK8D 4.0.0 Enhanced VS Pause Menu/4.0.0_EnhancedPauseMenu.pchtxt",
+      "0a20b5545b0d2234b385c60db218d06144f64b88",
+      555
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Enhanced VS Pause Menu/source.s",
+      "9671b5a380719133c19c9e71148738c1e0305d72",
+      3944
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Free Camera Toolkit/IPS/MK8D 4.0.0 Free Camera Toolkit/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "44e936dfbbfa603952a212814cbdccbda9031be6",
+      1191
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Free Camera Toolkit/PCHTXT/MK8D 4.0.0 Free Camera Toolkit/4.0.0_FreeCamToolkit.pchtxt",
+      "16d6c6f3371db1f63a32de1375b9ad28b92e50db",
+      2446
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Free Camera Toolkit/source.s",
+      "2523b998cebd82d40fe96a974ee72c3c673d6b39",
+      17507
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Hit Commentary in Race/IPS/MK8D 4.0.0 Hit Commentary in Race/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "a69bd5179f9a7577ea70f5c3c1ba69487a1ffba7",
+      333
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Hit Commentary in Race/PCHTXT/MK8D 4.0.0 Hit Commentary in Race/4.0.0_HitCommentaryRace.pchtxt",
+      "84935861ef1cf9175a125f85973b7ed5381083c8",
+      760
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Hit Commentary in Race/source.s",
+      "70884e383833edd50de11f686173ae5c962388d8",
+      6579
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Less Contrast (No Sun Filter)/IPS/MK8D 4.0.0 Less Contrast (No Sun Filter)/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "ca613cb06df28ba92b8750b8302a06f3b4668824",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Less Contrast (No Sun Filter)/PCHTXT/MK8D 4.0.0 Less Contrast (No Sun Filter)/4.0.0_LessContrast.pchtxt",
+      "8e2b6f98328370853a04e8103c91915259e28f5d",
+      140
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Mii Heads on Minimap/IPS/MK8D 4.0.0 Mii Heads on Minimap/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "5c26ad769dc41e6e62e88302ec3110c884fef0c5",
+      69
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Mii Heads on Minimap/PCHTXT/MK8D 4.0.0 Mii Heads on Minimap/4.0.0_MiiHeadsMinimap.pchtxt",
+      "fec1f053453b336d685e1594851eea5fd35159ea",
+      234
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Mii Heads on Minimap/source.s",
+      "c7d69925b409c60f74e9fadd2c6c9b71d9f2fb9a",
+      1232
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Mii Heads on Result Screen/IPS/MK8D 4.0.0 Mii Heads on Result/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "d34c396f8a529f63920fe914dd8509ccdfa135e8",
+      77
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Mii Heads on Result Screen/PCHTXT/MK8D 4.0.0 Mii Heads on Result/4.0.0_MiiHeadsResult.pchtxt",
+      "8e39669b88db91b65d902f02706c4c120b4dc146",
+      256
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Mii Heads on Result Screen/source.s",
+      "5702a7a33949387e3d0328bc00e0fde3b826c097",
+      1204
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Direction Arrow/IPS/MK8D 4.0.0 Minimap Character Direction Arrow/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "a7a4ba1c339d1d2c13f3266935fe3585597df904",
+      127
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Direction Arrow/PCHTXT/MK8D 4.0.0 Minimap Character Direction Arrow/4.0.0_MinimapCharaDirArrow.pchtxt",
+      "cae911fd5d3e7ec0f61db1fa1cf019dd8df44343",
+      358
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Direction Arrow/source.s",
+      "9ef2e785945ffc527ecb0dacef7a8d1559d1519e",
+      2403
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Direction Searchlight/IPS/MK8D 4.0.0 Minimap Character Direction Searchlight/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "90cceb02f07ae3171cb591972571287eb8b5b250",
+      203
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Direction Searchlight/PCHTXT/MK8D 4.0.0 Minimap Character Direction Searchlight/4.0.0_MapCharaSLight.pchtxt",
+      "dd368c5311c34b930609c37f3ec78c0cc7f1a644",
+      510
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Direction Searchlight/source.s",
+      "1c9709927878dbd4429573be30e9389a9152f72b",
+      3510
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Faces Kart Direction/IPS/MK8D 4.0.0 Minimap Character Faces Kart Direction/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "dfe8f72bef85c20b5450321fd6c20c88cefbcda1",
+      171
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Faces Kart Direction/PCHTXT/MK8D 4.0.0 Minimap Character Faces Kart Direction/4.0.0_MapCharaKartDir.pchtxt",
+      "5430dfea614fb7fba149c91bea7f055dca823db0",
+      451
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Minimap Character Faces Kart Direction/source.s",
+      "bb97d98cdcca80578115e2b53b926287eda80aa7",
+      3015
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No COM CPU Option in Singleplayer/IPS/MK8D 4.0.0 No COM CPU Option in Singleplayer/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "aa719f2aaff8b6fc4497429d055d7f86d8757719",
+      71
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No COM CPU Option in Singleplayer/PCHTXT/MK8D 4.0.0 No COM CPU Option in Singleplayer/4.0.0_NoCOMCPUOptionSP.pchtxt",
+      "da03a602178605cb07441f097d392218cd90925e",
+      248
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No COM CPU Option in Singleplayer/source.s",
+      "e29653410f4cb9fb6ade8af84b84f3b0e42e0ff0",
+      1495
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Course Intro (Skip)/IPS/MK8D 4.0.0 No Course Intro (Skip)/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "89be645571fff904e15675671b8551e332f884dc",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Course Intro (Skip)/PCHTXT/MK8D 4.0.0 No Course Intro (Skip)/4.0.0_NoCourseIntro.pchtxt",
+      "41c5b187511923cb182cee750d9f5c12b2dc5bda",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Course Intro UI/IPS/MK8D 4.0.0 No Course Intro UI/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "5a4565076e4b48d2c29739c867c85c237a8a79f2",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Course Intro UI/PCHTXT/MK8D 4.0.0 No Course Intro UI/4.0.0_NoCourseIntroUI.pchtxt",
+      "c6ece3d5d4fb8f54877bf50bb3a63387d4944d8f",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Menu Kart Base Table/IPS/MK8D 4.0.0 No Menu Kart Base Table/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "db86efaa65af96c39033520c689073c736840f00",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Menu Kart Base Table/PCHTXT/MK8D 4.0.0 No Menu Kart Base Table/4.0.0_NoCSSKartBaseTable.pchtxt",
+      "944e57fb38624666a720e56754839ff792e0b16c",
+      133
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Minimap Character Icon Lag Online/IPS/MK8D 4.0.0 No Minimap Character Icon Lag Online/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "249e5560cc41be867261d0010ce5dd3dc2fe67b7",
+      53
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Minimap Character Icon Lag Online/PCHTXT/MK8D 4.0.0 No Minimap Character Icon Lag Online/4.0.0_NoMapIconLagOnline.pchtxt",
+      "53fe7483d1b0c709dcfcd9c0d5b942e0ecdbc5bb",
+      218
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Minimap Character Icon Lag Online/source.s",
+      "7aa56be8cb734e9996007a59ed86e1e66a8ea600",
+      1702
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Music/IPS/MK8D 4.0.0 No Music/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "09d14e1ffec47cd0270b5e3938b5acbf56e0090d",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Music/PCHTXT/MK8D 4.0.0 No Music/4.0.0_NoMusic.pchtxt",
+      "cb2dc27f6d876958035c5977715cebb951b756fb",
+      119
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Online Menu Earth/IPS/MK8D 4.0.0 No Online Menu Earth/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "37584220feab4cce72401b86623b9835d995e597",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Online Menu Earth/PCHTXT/MK8D 4.0.0 No Online Menu Earth/4.0.0_NoOnlineMenuEarth.pchtxt",
+      "84d636cb09d98e4c05bba73823568aee506a99e5",
+      131
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Online Menu Space Toads/IPS/MK8D 4.0.0 No Online Menu Space Toads/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "5ebba3d0ed0518257f49e047e05d145524889372",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Online Menu Space Toads/PCHTXT/MK8D 4.0.0 No Online Menu Space Toads/4.0.0_NoOnlineMenuSpaceToads.pchtxt",
+      "2262ac74c63c31e04f43567c0e86f2883df3bca3",
+      137
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Online Menu Sun/IPS/MK8D 4.0.0 No Online Menu Sun/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "278aacfd3259f12ed69f901591024c1557e7753c",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Online Menu Sun/PCHTXT/MK8D 4.0.0 No Online Menu Sun/4.0.0_NoOnlineMenuSun.pchtxt",
+      "345ab165fbc77f402fa30a2dcec79a82f0c21cdb",
+      129
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Shocked Music Distortion/IPS/MK8D 4.0.0 No Shocked Music Distortion/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "83b689f72ef6a201d70aeb98b7899d1171d6d8c5",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Shocked Music Distortion/PCHTXT/MK8D 4.0.0 No Shocked Music Distortion/4.0.0_NoShockedMusicDistortion.pchtxt",
+      "425bdeef525c3b8b2c6ebac474da87248a4ce0c5",
+      138
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Star Music (Other Players Karts)/IPS/MK8D 4.0.0 No Star Music (Other Players Karts)/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "465fa7bff9d86c61b70d0c178811ce7ab1b7e30d",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Star Music (Other Players Karts)/PCHTXT/MK8D 4.0.0 No Star Music (Other Players Karts)/4.0.0_NoStarMusicOthers.pchtxt",
+      "2e0b1fec0827303aaece1b33b287f41fb7ecc486",
+      147
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Star Music (Your Kart)/IPS/MK8D 4.0.0 No Star Music (Your Kart)/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "507b4089352ebbe1392452252d1dfa0d0fac9ee9",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/No Star Music (Your Kart)/PCHTXT/MK8D 4.0.0 No Star Music (Your Kart)/4.0.0_NoStarMusicYou.pchtxt",
+      "3fb20beaefecc681b292aaaf5592b3c9391e928b",
+      136
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Online Menu Skybox Model Modifier/PCHTXT/MK8D 4.0.0 Online Menu Skybox Model Modifier/4.0.0_OnlineMenuSkyboxMod.pchtxt",
+      "89c13e60cb93406e2f3899f698615d4c5941e944",
+      447
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Online Menu Sun Model Modifier/PCHTXT/MK8D 4.0.0 Online Menu Sun Model Modifier/4.0.0_OnlineMenuSunMod.pchtxt",
+      "996693739d0c9f3866e35ecf50b6e5b3edd9f328",
+      436
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Position in Battle/IPS/MK8D 4.0.0 Position in Battle/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "55a3219403d6bfd6146dc68514400194a5d72460",
+      87
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Position in Battle/PCHTXT/MK8D 4.0.0 Position in Battle/4.0.0_PositionBattle.pchtxt",
+      "cbc1b7e8f987a3af4439af45b859fffaf3ca2af7",
+      263
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Position in Battle/source.s",
+      "53349c488db9a06458f689c886bfae7c87256c7a",
+      1723
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Racer Amount Modifier/PCHTXT/MK8D 4.0.0 Racer Amount Modifier/4.0.0_RacerAmountModifier.pchtxt",
+      "04cbc30d9ee3ed2f0aecec0d2c4d46fd61a8b51c",
+      415
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Random CPU Character Variants/IPS/MK8D 4.0.0 Random CPU Character Variants/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "e79be3a23979c26e8d88415b8a741f1e0a04b40d",
+      152
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Random CPU Character Variants/PCHTXT/MK8D 4.0.0 Random CPU Character Variants/4.0.0_RandomCPUVariant.pchtxt",
+      "d1a4c8a1ad4b07cb96a29018bdbdb4146ab3bb81",
+      403
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Random CPU Character Variants/source.s",
+      "5ea05c95216e14665dddee9744113460c8bd3b88",
+      2201
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/IPS/MK8D 4.0.0 Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "5a93c03125d3d064f623fccf9199952ac245066b",
+      247
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/PCHTXT/MK8D 4.0.0 Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/G.pchtxt",
+      "d7775bd845ca6842c91a89c3b7ac98ad59064e46",
+      628
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Replace FINISH! with YOU WIN! or YOU LOSE Based on Result/source.s",
+      "4363ea18c84abc72479beb683b9403dd66b43d92",
+      4174
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Restore Previous Racer Button in Live View/IPS/MK8D 4.0.0 Restore Previous Racer Button in Live View/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "168f3732a6fc7dadeeb18637e12999014e5bcacc",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Restore Previous Racer Button in Live View/PCHTXT/MK8D 4.0.0 Restore Previous Racer Button in Live View/4.0.0_LiveViewB.pchtxt",
+      "31cdfa49f81899a5dafe964cf1590eea89d54ccc",
+      153
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Restore Shine Score Counter/IPS/MK8D 4.0.0 Restore Shine Score Counter/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "b10237470f494486c138a16b4de2d3cc1132612e",
+      43
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Restore Shine Score Counter/PCHTXT/MK8D 4.0.0 Restore Shine Score Counter/4.0.0_RestoreShineScore.pchtxt",
+      "e4d7c483eb1a422ec7db77b83d47e9fddda4aaa1",
+      186
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/See Nametags from Longer Distance/IPS/MK8D 4.0.0 See Nametags from Longer Distance/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "a655ac3e62dafff30e8a760bb9f29030cdbcd59e",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/See Nametags from Longer Distance/PCHTXT/MK8D 4.0.0 See Nametags from Longer Distance/4.0.0_LongDistanceNametags.pchtxt",
+      "ee31bf097f65846c284e28e2ebc79fb11d26608a",
+      144
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show HUD Before Countdown/IPS/MK8D 4.0.0 Show HUD Before Countdown/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "ba94471e7a75d7afd780660ee972b7c7c5da36a2",
+      97
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show HUD Before Countdown/PCHTXT/MK8D 4.0.0 Show HUD Before Countdown/4.0.0_ShowHUDBeforeCountdown.pchtxt",
+      "da14679c0e5809ef7538d2d74fe1180c9336843c",
+      293
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show HUD Before Countdown/source.s",
+      "c9f3a23e9885a57979d306889f867d94289ac935",
+      1709
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show Invincibility Frames in Race/IPS/MK8D 4.0.0 Show Invincibility Frames in Race/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "dbd99161dad13246601810ab2b98f2b277738a0e",
+      51
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show Invincibility Frames in Race/IPS/MK8D 4.0.0 Show Invincibility Frames in Race/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+      "0c2e81135aaa07ed8ddca50ee7f9988c27d24fc3",
+      51
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show Invincibility Frames in Race/PCHTXT/MK8D 4.0.0 Show Invincibility Frames in Race/4.0.0_InvFramesRace.pchtxt",
+      "5239c74e1de9466643176928380103cf8e22bd01",
+      220
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show Invincibility Frames in Race/source.s",
+      "be1ffda62604447880ea84961967621565b72ba6",
+      1458
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show More Kart Status Effects on Minimap/IPS/MK8D 4.0.0 Show More Kart Status Effects on Minimap/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "5134954636f82affab6b327f4443b911c9a51160",
+      189
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show More Kart Status Effects on Minimap/PCHTXT/MK8D 4.0.0 Show More Kart Status Effects on Minimap/4.0.0_KartMap.pchtxt",
+      "2c4b956648139ff18802b286b69126140413483b",
+      490
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Show More Kart Status Effects on Minimap/source.s",
+      "a723c570c07600350ec292282e4b1db5b9fa8f5f",
+      2357
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Smaller Minimap Icons/IPS/MK8D 4.0.0 Smaller Minimap Icons/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "b400960f7e2fd8a2efaa57d884593b92d7f567bc",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Smaller Minimap Icons/PCHTXT/MK8D 4.0.0 Smaller Minimap Icons/4.0.0_SmallerMapIcons.pchtxt",
+      "17acd6530772841de52c9c8054b5d9a14db0d5fd",
+      136
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Timer in Race/IPS/MK8D 4.0.0 Timer in Race/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "3abe415bc227c7c90782d80a7bbdd106447a5861",
+      117
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Timer in Race/PCHTXT/MK8D 4.0.0 Timer in Race/4.0.0_TimerRace.pchtxt",
+      "0b077eac55f081ffcd8d0157b6ebe4398403e275",
+      321
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Timer in Race/source.s",
+      "8a15564cfcc1540d677c73f33e897f87e9c6de5e",
+      1627
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Toggle HUD Visibility/IPS/MK8D 4.0.0 Toggle HUD Visibility/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "f8f4b6798af31db25663b5f19a97a533b1161b54",
+      81
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Toggle HUD Visibility/PCHTXT/MK8D 4.0.0 Toggle HUD Visibility/4.0.0_ToggleHUDVisibility.pchtxt",
+      "fa1ea96e488b3a1266602abf06781e823a2395f0",
+      255
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Toggle HUD Visibility/source.s",
+      "f28e139a524434606c7ee5cbf5af628dfc4b7907",
+      1055
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Trick Chaining (Mario Kart World)/IPS/MK8D 4.0.0 Trick Chaining (Mario Kart World)/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "e867d76730ea057485b8b5ac994f9444429aac05",
+      289
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Trick Chaining (Mario Kart World)/PCHTXT/MK8D 4.0.0 Trick Chaining (Mario Kart World)/4.0.0_TrickChainWorld.pchtxt",
+      "184344ef88711903aaf98da430217c13c461dabf",
+      679
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Trick Chaining (Mario Kart World)/source.s",
+      "dd145f5a95dc6697e304d1c3aa1f09ced364b0cb",
+      5121
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Warp Kart to TestStart Points/IPS/MK8D 4.0.0 Warp Kart to TestStart Points/2C336A9BCF79C3040CE506CDD391B578.ips",
+      "48534bab7050e79550ae4bb7bcd3497626fc840a",
+      403
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Warp Kart to TestStart Points/PCHTXT/MK8D 4.0.0 Warp Kart to TestStart Points/4.0.0_WarpKartTestStartPoints.pchtxt",
+      "2cf62911b365601b4af3d6fc74b7c5375f24e111",
+      906
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/4.0.0/Warp Kart to TestStart Points/source.s",
+      "d88505533509c8041f6748aca752e89378385310",
+      4996
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto Acessible Online Menu/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "8f60c738ce71c63692c8c53a3e6e5f4f2e4f6d17",
+      39
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto Customizer Wing Menu Makes Glider Visible/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "a25296580080ca966cb65b5628f4a82ef6986fe6",
+      137
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto Debug Controller & Free Cam Fix v1.1/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "0e9b5041bcc091f03d667acc32de2afcf47a3ace",
+      79
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto Force English Language/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "09554e916d66e0d824838c173542b524ec8e06f6",
+      20
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto GPU Stress Analyzer/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "642489e0688bed7a81d94a11622ac7a1100eeb41",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto No Customizer Combo Reset/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "d32b058ec17c9a76ae40773ec5289c4bbd1d31ce",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto No Customizer Crash/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "2640c129d2e94e6ed61dce0850bbded190c99db7",
+      29
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto No System Halt Crash/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "7676ffdde32d87d78dc82b3d72fac125dc258b7a",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto Spring Display (INACCURATE)/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "baed03665223bd5ac5e0021abd5bd0305355aa65",
+      19
+    ],
+    [
+      "Switch/Mario Kart 8 Deluxe/October 18th, 2016 Prototype/IPS Patches/MK8D Proto Test Tracks/5DBD90257B1D94906ABE31C62A8ECEF9.ips",
+      "7b928ea75cef08596faaae253c719997541b81c2",
+      249
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Marching & Leading/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "e7316772936fda9c8ebd1e62fc8064b260336690",
+      1005
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Marching & Leading/PCHTXT/3.1.0_DebugMarching&Leading.pchtxt",
+      "f2f6065d3315dea35feef03a293665d8d2129be6",
+      2041
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Marching & Leading/source.s",
+      "bf8fc0412924cbdcee12eb6e089a4f6c8ef0dc1a",
+      9919
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Moving/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "b1e856ab97b36d4b87a39c69d82a01061efb5292",
+      1687
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Moving/PCHTXT/3.1.0_DebugMoving.pchtxt",
+      "43639455ba481a14da47bbaa0d447fb2b46b2efc",
+      3311
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Moving/source.s",
+      "32274772fe22936244178a6b7073574bebdb777e",
+      22919
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Muteki/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "34f8663964069e220c9976a2f96c249108a12bbc",
+      660
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Muteki/PCHTXT/3.1.0_DebugMuteki.pchtxt",
+      "3da36b27d3cff4aff9fbde3db95c09500a7f6026",
+      1370
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Muteki/source.s",
+      "5d83ccc9f3bcce8c47185e9df353ff3fc7c4b46d",
+      8834
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Player Changer/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "28b94370de02dba889e8c4fc378bbdddc71ea706",
+      279
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Player Changer/PCHTXT/3.1.0_DebugPlayerChanger.pchtxt",
+      "bacf810375ef43c8ef421026199b4c83fdea8ff4",
+      647
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Player Changer/source.s",
+      "902d73d3c06ea0c193b554057f402c92817d22fa",
+      3678
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Scene Reload & Exit/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "1b6a5cdbb248cf8d445854deb98f9b08625ab8e4",
+      337
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Scene Reload & Exit/PCHTXT/3.1.0_DebugSceneReload&Exit.pchtxt",
+      "d8dac86d83449e6edd3da37361ae30929c96b8df",
+      771
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Debug Scene Reload & Exit/source.s",
+      "2d36b835724662f2006c67cee0dd769862ea7862",
+      3070
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Disable Debug Text Draw/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "20863697ccce7380a7c2d4a6bf259a26bfb7094c",
+      19
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Disable Debug Text Draw/PCHTXT/3.1.0_DisableDebugTextDraw.pchtxt",
+      "68af4de50ab1d9ec84dfe0247276c887dc88463b",
+      136
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Display Dirty (D) Debug Mark/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "73d2c33bff7cded30491948aed75aa12317c5b7b",
+      73
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Display Dirty (D) Debug Mark/PCHTXT/3.1.0_DisplayDirty(D)DebugMark.pchtxt",
+      "f07d51f06cc41792168e70735c3ee8c0c3eb5918",
+      246
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/Display Dirty (D) Debug Mark/source.s",
+      "c41c40e11c30d7586cb0329331562f263f7b2251",
+      1247
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/FullOpen (Unlock Everything on Savedata)/IPS/034C8FA7A63B7A87F96F408B2AEFFF6C.ips",
+      "e63ba0135fd1a35922263a16734f5ff85db6930b",
+      49
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/FullOpen (Unlock Everything on Savedata)/PCHTXT/3.1.0_FullOpen.pchtxt",
+      "b19f54d45e49b3bf4e466bd24254d5581d185ca7",
+      181
+    ],
+    [
+      "Switch/Splatoon 2/3.1.0/FullOpen (Unlock Everything on Savedata)/source.s",
+      "c8b43f48ad8476b52f8906915d8a843a85baf394",
+      700
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Marching & Leading/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "7db7ee2d72e1f5d8abec6c733d078d97eca540b2",
+      1272
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Marching & Leading/PCHTXT/5.5.2_DebugMarching&Leading.pchtxt",
+      "0df8f9fdadaa57bc0f8a8c24b5ffebd667869f3a",
+      2569
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Marching & Leading/source.s",
+      "f1a8fbbec81f4fc89b121d69e32225764aaab586",
+      14986
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Moving/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "e9ea45c7d25d7f510d794157d21bcd9af349e35f",
+      2000
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Moving/PCHTXT/5.5.2_DebugMoving.pchtxt",
+      "c6a54f2ef2e204973b567e4de4a0773e75212cbd",
+      3928
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Moving/source.s",
+      "3867f8a1481f1c5ab1cd89c352197db20293d1de",
+      28387
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Muteki/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "afa8254cde75433b0d67b866f65b2be8a7465346",
+      953
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Muteki/PCHTXT/5.5.2_DebugMuteki.pchtxt",
+      "93c69652e4595edb702702902ca7ebb5c8dcf327",
+      1949
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Muteki/source.s",
+      "6bee82684589bc4268c15915ade6c8b961e59ca4",
+      13648
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Player Changer/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "5bb53f1dd15758d698819498c4d0b1e908096782",
+      279
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Player Changer/PCHTXT/5.5.2_DebugPlayerChanger.pchtxt",
+      "dffbb9961a2aa69521ffeb5407e70b51c1979335",
+      647
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Player Changer/source.s",
+      "f9c20db6dc06edc703b027daad8214e20fbe9842",
+      3641
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Scene Reload & Exit/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "c6089cb0127469da4b51030de17c3f908ec370b4",
+      285
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Scene Reload & Exit/PCHTXT/5.5.2_DebugSceneReload&Exit.pchtxt",
+      "71df90819c65e88404eff290a735cef775bb34ea",
+      667
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Debug Scene Reload & Exit/source.s",
+      "f3275ad382c8840ceabe89d7d80bf7fdc83440aa",
+      2737
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Disable Debug Text Draw/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "dc88c839596bd74cac346da29ad295ea276dce42",
+      19
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Disable Debug Text Draw/PCHTXT/5.5.2_DisableDebugTextDraw.pchtxt",
+      "465c375da8de3dffe64af8bb54e73b92d0da49f2",
+      136
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Display Dirty (D) Debug Mark/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "5428781968fad224da7b3c96d8ef99bb75c4bbc9",
+      250
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Display Dirty (D) Debug Mark/PCHTXT/5.5.2_DisplayDirty(D)DebugMark.pchtxt",
+      "d6073192da7a19711cacc05becb9bda2e9e845ef",
+      595
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Display Dirty (D) Debug Mark/source.s",
+      "e466d1f68ccf8c51c93211c374620006b0230c58",
+      3034
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Replace Versus with FreeTest/IPS/592C7051A4E620563D0296096D8F0AC5.ips",
+      "c5119dd83aa34f4c5d331a574527e6e0a7713a55",
+      69
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Replace Versus with FreeTest/PCHTXT/5.5.2_ReplaceVersusWithFreeTest.pchtxt",
+      "5719f41cfa317d0456eeb3c0b5d7daccf67d3d81",
+      261
+    ],
+    [
+      "Switch/Splatoon 2/5.5.2/Replace Versus with FreeTest/source.s",
+      "8f661e08a236adde06a13f0ae30fd8759329fef3",
+      973
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Marching & Leading/IPS/0F129135D8A7621C9E4940B0C3808BF0.ips",
+      "22bcc4de95ed70ab07876ba1cee093ac0ab7cbda",
+      997
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Marching & Leading/PCHTXT/Testfire_DebugMarchingLeading.pchtxt",
+      "17ca2857aea3a11f422172d230850132b7666dfe",
+      2025
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Marching & Leading/source.s",
+      "21345bac3c695e9f4093d3d28448d234b528a3e6",
+      9872
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Moving/IPS/0F129135D8A7621C9E4940B0C3808BF0.ips",
+      "2fdd0429f2ad7bd989386d8d8bc41c90bff9e4e0",
+      1455
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Moving/PCHTXT/Testfire_DebugMoving.pchtxt",
+      "5d7e4688ba94e7f0538543ba45566637f051c8c5",
+      2855
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Moving/source.s",
+      "3cfca820997d32575ef2d2dac5c889b32fea0354",
+      20071
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Muteki/IPS/0F129135D8A7621C9E4940B0C3808BF0.ips",
+      "1b2949574db48dc6edad9cbbce5914f61d36ddfd",
+      628
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Muteki/PCHTXT/Testfire_DebugMuteki.pchtxt",
+      "9217c94c90597bf9032a8186747da2bb9f8caec6",
+      1306
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Muteki/source.s",
+      "d15c0c8a5a9ec4909148e34c53c1594e4988bccb",
+      8276
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Player Changer/IPS/0F129135D8A7621C9E4940B0C3808BF0.ips",
+      "87fb0c3ad9d6fdf18c563321024f16b84d54ef03",
+      279
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Player Changer/PCHTXT/Testfire_DebugPlayerChanger.pchtxt",
+      "36a07fc25babca29323cf31dc6fb9a1d321a4b14",
+      647
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Player Changer/source.s",
+      "5b60b31db1ed12d969ebac8869f19968dd33ef29",
+      3687
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Scene Reload & Exit/IPS/0F129135D8A7621C9E4940B0C3808BF0.ips",
+      "ad1307f02d8f7ec8d6fd770955be28852d19efef",
+      301
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Scene Reload & Exit/PCHTXT/Testfire_DebugSceneReload&Exit.pchtxt",
+      "1d6d3dc9091f7fb969fe13cc0633a051eff017c5",
+      701
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Debug Scene Reload & Exit/source.s",
+      "bd1774f18924c42af7277be8ccc4a4f8439ab35b",
+      3078
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Disable Debug Text Draw/IPS/0F129135D8A7621C9E4940B0C3808BF0.ips",
+      "3825c84d57a430afbc31014f7a44257c4715a3c8",
+      19
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Disable Debug Text Draw/PCHTXT/DisableDebugTextDraw.pchtxt",
+      "eff37b5842fcbbfe9eb3e993dfd8161fff518672",
+      136
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Display Dirty (D) Debug Mark/IPS/0F129135D8A7621C9E4940B0C3808BF0.ips",
+      "9a6c96a9fa19442f908106e77bb07c8a9cb59108",
+      73
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Display Dirty (D) Debug Mark/PCHTXT/Testfire_DisplayDirty(D)DebugMark.pchtxt",
+      "c567c2793df2831c948e90d50b7304cfb160c5eb",
+      246
+    ],
+    [
+      "Switch/Splatoon 2/Global Testfire/Display Dirty (D) Debug Mark/source.s",
+      "6ceda934ee840d53a3ddcd50e215609857bfe03d",
+      1254
+    ],
+    [
+      "Switch/Super Mario Galaxy (Super Mario 3D All-Stars)/1.0.0/Power-Up Transformation Cycler.md",
+      "df6a2eb1d86d78d452e85159299cc85370bbb5dc",
+      3405
+    ],
+    [
+      "Switch/Super Mario Galaxy (Super Mario 3D All-Stars)/1.1.1/Power-Up Transformation Cycler.md",
+      "97ee2768ef2a7f5cd8b656779065c341505353f7",
+      3363
+    ]
+  ]
+}

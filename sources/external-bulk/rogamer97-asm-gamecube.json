@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "id": "rogamer97-asm-gamecube",
+  "repository": "https://github.com/RoGamer97/ASM-Cheats-and-Patches",
+  "snapshot_commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+  "git_tree_sha": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+  "platform": "gamecube",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 28,
+    "patch": 2
+  },
+  "files": [
+    [
+      "GameCube/Mario Kart Double Dash!!/July 5th, 2004 Debug Build/Item Cycler/Item Cycler.md",
+      "6857aee2d4cd1639fb7a3e5ac66a6df83f87d91f",
+      3801
+    ],
+    [
+      "GameCube/Mario Kart Double Dash!!/July 5th, 2004 Debug Build/Item Cycler/source.s",
+      "7bbb7720f078f5193f70166cd0b2a1bb9ed1477f",
+      14830
+    ],
+    [
+      "GameCube/Mario Kart Double Dash!!/NTSC-U/Item Cycler/Item Cycler.md",
+      "0610d7cf9b4eed3e24327ad93826b1e797b4c96b",
+      3763
+    ],
+    [
+      "GameCube/Mario Kart Double Dash!!/NTSC-U/Item Cycler/source.s",
+      "e9eadcbf9379b00177a58d77cbca4b7101aabafe",
+      14587
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/All Cars Have Nitro.md",
+      "a1c35727376228acc10a43189d7acee02dff45f6",
+      307
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Always Show World Markers and Minimap Icons.md",
+      "df5d58b9fac4a64a4147756323666938515566b8",
+      304
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Auto Pilot.md",
+      "e34d51321cbb24be5ea0b68ebd093a57a266d8e6",
+      219
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Cops Can Always Spawn.md",
+      "9ecb2f0e669d7e75424ee76a16ffa27a7d6022e0",
+      224
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Debug Car Changer Cycler Switch Vehicle Codes (2 Codes).md",
+      "b1a17671cd68e0079fb8f0fd4f28b9ed2ccbd3dc",
+      2347
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Disable Look Back Camera HUD Hide.md",
+      "6611252edc32c6e1b53fb34d9f46ed4b53b08548",
+      175
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Disable SMS Message Box.md",
+      "d94322b4b3fa21996a828ce85d6fb257225efe5c",
+      303
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Drive During Countdown.md",
+      "845a175d0bd51763bddf454d24c5acf97d238335",
+      176
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Drive Through Walls.md",
+      "15a5057042ef249542f343ae193e09b63071919b",
+      252
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Enable Collector Edition.md",
+      "e56bf14d1af95cfe595fea641720e44da4fef288",
+      147
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Game Speed Codes (2 Codes).md",
+      "dce2785d259bd3d2974a74787f02bae797c18f33",
+      431
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Heat Level Cycler (Override).md",
+      "e9b048225cc7f0243d5f09fcec889b7ea00d8e73",
+      1033
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Indestructive Cop Cars No Damage.md",
+      "2391e6d9ec8c64dc538bf645bc98d8cda31c5a0f",
+      299
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Infinite Nitro.md",
+      "0fd65b82d51b7fe63e9c52d862c7e21017a3247c",
+      151
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Infinite Speedbreaker.md",
+      "3b135b0c1769f0c922be1ab2713166185301ac29",
+      146
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Multiplayer Codes (2 Codes).md",
+      "2277e3347aa44b3ba6efb0b71dd856978254d5c7",
+      944
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/No Barriers.md",
+      "32b91e2d6269f821ba141e055ab74ce4dd6a7e38",
+      172
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/No Rev Limiter.md",
+      "86fed9bf31d1034649fac62dc05b173c85813e3d",
+      196
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Show All Cars in Front End.md",
+      "545bdb9a90da971f8391f1aaeab63ec2e8151833",
+      143
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Show All Presets in Front End.md",
+      "c7b104c9ddb3c3d9f7948b95afecce45178f6fae",
+      149
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Show Non Pursuit Cops on Minimap.md",
+      "457d49cea6954ae780dee6c594dce0db982580b3",
+      377
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Show Unused Checkpoint Beams Visible Checkpoints.md",
+      "aa45b3fd354d3cf7572b39364f9435f713baa065",
+      274
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Skip Front End (SkipFE).md",
+      "0094f5c3b4796c5118efd2d35d8ea57747988705",
+      275
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Skip Movies.md",
+      "ade5180f629648ed1f66c6fa6678a8b8a9ef4aa1",
+      125
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Sunset Time of Day.md",
+      "2c9d6c876cd9b13e5438b72ff92eb2053a94c67c",
+      151
+    ],
+    [
+      "GameCube/Need for Speed Most Wanted (NTSC-U)/Unlock All Things.md",
+      "56ba00371883b36351a8670741aae62c48e1c3e1",
+      145
+    ]
+  ]
+}

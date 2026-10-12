@@ -109,7 +109,7 @@ def build_manifest(root):
         named_paths.add(rel)
         manifest_files.append({"path": rel, **digest(safe_path(root, rel))})
     external_catalog = checked_json(safe_path(root, "external/catalog.json"))
-    if external_catalog["reference_files"] != 11029:
+    if external_catalog["reference_files"] != 14357:
         raise ValueError("External reference count disagrees with pinned source snapshots")
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
                 taxonomy_rel, review_rel, composition_rel, queue_rel,

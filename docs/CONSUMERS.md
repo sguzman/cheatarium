@@ -23,7 +23,7 @@ An emulator can download the relevant platform artifacts at a **pinned Cheatariu
 
 ## External pinned source discovery (metadata only)
 
-Cheatarium's **11,029** copyright-review-blocked original upstream files are published separately from imported cheats in a checksum-checked `generated/v1/external/catalog.json` and five compressed platform bundles. There are **4,635 PS1, 4,710 PS2, 796 Vita, 501 Xbox 360 and 387 Dreamcast** file references, not additional original archive files or verified cheat codes. They contain **only** original file paths, Git blob hashes, byte lengths, pinned source URLs, source IDs, and cheat/patch file categories. A PS2 patch and an Xbox 360 patch are not assumed to be gameplay cheats.
+Cheatarium's **14,357** copyright-review-blocked original upstream files are published separately from imported cheats in a checksum-checked `generated/v1/external/catalog.json` and ten compressed platform bundles. There are **4,635 PS1, 4,710 PS2, 796 Vita, 501 Xbox 360, 387 Dreamcast, 2,934 Switch, 306 Wii, 30 GameCube, 53 3DS and 5 DS** file references, not additional original archive files or verified cheat codes. They contain **only** original file paths, Git blob hashes, byte lengths, pinned source URLs, source IDs, and cheat/patch file categories. PS2, Xbox 360 and Switch graphics/FPS patches are not assumed to be gameplay cheats. Source and binary assembly/IPS patches remain external links, never copied payloads.
 
 ```sh
 cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title "Painkiller" --limit 10 --json

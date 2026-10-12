@@ -51,6 +51,42 @@ SOURCES = {
         "platform": "dreamcast", "expected": {"cheat":387},
         "rights_note": "The GPL-3.0 repository-wide grant does not independently establish redistribution rights for third-party historical cheats copied or adapted from external authors. The original markdown cheat text remains link-only.",
     },
+    "ademola-switch-native": {
+        "repository": "ADEMOLA200/Switch-Emulator-Mod-Database",
+        "commit": "abd55774c369b9c3a4df960e7afdb0391cb52056",
+        "platform": "switch", "expected": {"cheat":1927,"patch":589},
+        "rights_note": "The MIT-licensed upstream aggregates many separately authored Switch cheat/graphics mods and patch sources; original contributors' redistribution rights are unresolved. Links, paths and hashes only; FPS/resolution patches are not necessarily cheats.",
+    },
+    "rogamer97-asm-3ds": {
+        "repository": "RoGamer97/ASM-Cheats-and-Patches",
+        "commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+        "platform": "3ds", "expected": {"cheat":53},
+        "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+    },
+    "rogamer97-asm-ds": {
+        "repository": "RoGamer97/ASM-Cheats-and-Patches",
+        "commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+        "platform": "ds", "expected": {"cheat":5},
+        "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+    },
+    "rogamer97-asm-gamecube": {
+        "repository": "RoGamer97/ASM-Cheats-and-Patches",
+        "commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+        "platform": "gamecube", "expected": {"cheat":28,"patch":2},
+        "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+    },
+    "rogamer97-asm-wii": {
+        "repository": "RoGamer97/ASM-Cheats-and-Patches",
+        "commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+        "platform": "wii", "expected": {"cheat":305,"patch":1},
+        "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+    },
+    "rogamer97-asm-switch": {
+        "repository": "RoGamer97/ASM-Cheats-and-Patches",
+        "commit": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+        "platform": "switch", "expected": {"cheat":2,"patch":416},
+        "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
+    },
 }
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -71,6 +107,20 @@ def classify(source, path):
         return "cheat"
     if source == "bucanero-dreamcast-cheats" and re.fullmatch(r"[^/]+\.md", path) and path != "README.md":
         return "cheat"
+    if source == "ademola-switch-native":
+        if (re.fullmatch(r"Titles/[0-9a-fA-F]{16}/cheats/[0-9a-fA-F]{16}\.txt", path)
+                or re.fullmatch(r"NX-60FPS-RES-GFX-Cheats/titles/[0-9a-fA-F]{16}/cheats/[0-9a-fA-F]{16}\.txt", path)):
+            return "cheat"
+        if path.endswith(".pchtxt"):
+            return "patch"
+    if source.startswith("rogamer97-asm-"):
+        prefix = {"3ds": "3DS", "ds": "DS", "gamecube": "GameCube",
+                  "switch": "Switch", "wii": "Wii"}.get(source.removeprefix("rogamer97-asm-"))
+        if prefix and path.startswith(prefix + "/"):
+            if path.endswith(".md") and path.rsplit("/", 1)[-1].lower() != "readme.md":
+                return "cheat"
+            if path.endswith((".pchtxt", ".ips", ".s")):
+                return "patch"
     return None
 
 
@@ -127,7 +177,7 @@ def validate(source, index):
         if not (isinstance(row, list) and len(row) == 3):
             raise ValueError("Unexpected field in a metadata-only file record")
         path, blob, size = row
-        if (not isinstance(path, str) or not path.isascii() and "\x00" in path
+        if (not isinstance(path, str) or "\x00" in path
                 or path.startswith("/") or "\\" in path
                 or any(seg in ("", ".", "..") for seg in path.split("/"))
                 or path <= previous or classify(source, path) is None
@@ -199,7 +249,7 @@ def main():
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--refresh", action="store_true")
     mode.add_argument("--search", metavar="TEXT")
-    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "vita", "dreamcast"))
+    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii"))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args()

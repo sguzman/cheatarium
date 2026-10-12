@@ -36,7 +36,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## External bulk reference catalogs (link-only)
 
-- [Pinned external source metadata](sources/external-bulk/) — filename, blob hash and byte-count indexes for 4,497 DuckStation PS1 cheats, 138 PS1 patches, 501 Xenia Xbox 360 patches, 4,710 official PCSX2 PS2 patches, 796 VitaCheat sources from two databases and 387 Dreamcast source documents. These **11,029 upstream files are not archived**: rights are unresolved and some patches are not cheats. Source links are read-only references, not independently tested compatibility evidence. Use `cheatarium-query external --db generated/v1 --platform ps1 --title SLUS --json` for checksum-verified offline filename search, or `python3 tools/external_bulk.py --search "SLUS-" --platform ps1` to search the original source inventories.
+- [Pinned external source metadata](sources/external-bulk/) — filename, blob hash and byte-count indexes for 4,497 DuckStation PS1 cheats, 138 PS1 patches, 501 Xenia Xbox 360 patches, 4,710 official PCSX2 PS2 patches, 796 VitaCheat sources from two databases and 387 Dreamcast source documents. Two further repositories add **2,516 Switch-native cheat/patch filenames** and **812 Nintendo console code/patch references** across Wii, GameCube, DS, 3DS and Switch. These **14,357 upstream files are not archived**: rights are unresolved and some patches are not cheats. Source links are read-only references, not independently tested compatibility evidence. Use `cheatarium-query external --db generated/v1 --platform ps1 --title SLUS --json` for checksum-verified offline filename search, or `python3 tools/external_bulk.py --search "SLUS-" --platform ps1` to search the original source inventories.
 
 ## Status
 
