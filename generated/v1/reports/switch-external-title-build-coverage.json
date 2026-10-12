@@ -1,0 +1,209 @@
+{
+  "archived_sources": {
+    "bad1dea-nxcheats-switch": {
+      "distinct_title_build_id_pairs": 129,
+      "distinct_title_id_labels": 58,
+      "duplicate_source_paths_for_same_pair": 2863,
+      "native_cheat_source_files": 2992,
+      "noncomparable_native_paths": [],
+      "original_manifest_files_including_noncheats": 3155
+    },
+    "sharkive": {
+      "distinct_title_build_id_pairs": 488,
+      "distinct_title_id_labels": 318,
+      "duplicate_source_paths_for_same_pair": 0,
+      "native_cheat_source_files": 491,
+      "noncomparable_native_paths": [
+        "switch/01009AA000FAA000/03fd152e17a841c.txt",
+        "switch/0100AE800C9C6000/6e114d3262f052907b44b38434e3236d.txt",
+        "switch/0100E95004038000/6d34a75dbb68d4f.txt"
+      ],
+      "original_manifest_files_including_noncheats": 1137
+    }
+  },
+  "comparison": "exact_source_filename_title_16hex_and_build_16hex_labels_only",
+  "external_sources": [
+    {
+      "distinct_json_title_labels": 0,
+      "distinct_native_title_build_pairs": 1741,
+      "distinct_native_title_labels": 1339,
+      "id": "ademola-switch-native",
+      "json_titles_also_in_imported_sources": 0,
+      "json_titles_not_in_imported_sources": 0,
+      "link_only_file_occurrences": 2582,
+      "native_pair_repeat_excess": 186,
+      "native_pairs_also_in_imported_sources": 180,
+      "native_pairs_not_in_imported_sources": 1561,
+      "native_title_build_file_occurrences": 1927,
+      "native_unmatched_pairs_sample": [
+        {
+          "build_id_label": "1b5215df918ba04b",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "35b9d8779b195141",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "94ceae325c205c4b",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "bc259f7ee8e79a49",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "d9e96fb92878e345",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "ea058a067cbd6943",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "f87fc6075104ec4d",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "28ca9267fd93e850",
+          "title_id_label": "0100001017216000"
+        }
+      ],
+      "other_cheat_documents_without_exact_native_ids": 0,
+      "patch_file_occurrences_not_assumed_cheats": 655,
+      "revision": "abd55774c369b9c3a4df960e7afdb0391cb52056",
+      "title_only_json_file_occurrences": 0
+    },
+    {
+      "distinct_json_title_labels": 0,
+      "distinct_native_title_build_pairs": 0,
+      "distinct_native_title_labels": 0,
+      "id": "rogamer97-asm-switch",
+      "json_titles_also_in_imported_sources": 0,
+      "json_titles_not_in_imported_sources": 0,
+      "link_only_file_occurrences": 418,
+      "native_pair_repeat_excess": 0,
+      "native_pairs_also_in_imported_sources": 0,
+      "native_pairs_not_in_imported_sources": 0,
+      "native_title_build_file_occurrences": 0,
+      "native_unmatched_pairs_sample": [],
+      "other_cheat_documents_without_exact_native_ids": 2,
+      "patch_file_occurrences_not_assumed_cheats": 416,
+      "revision": "8ec531942871cd4e0aaefe5eb596fb2b49e9ae92",
+      "title_only_json_file_occurrences": 0
+    },
+    {
+      "distinct_json_title_labels": 2501,
+      "distinct_native_title_build_pairs": 0,
+      "distinct_native_title_labels": 0,
+      "id": "hamlet-switch-cheatdb",
+      "json_titles_also_in_imported_sources": 317,
+      "json_titles_not_in_imported_sources": 2184,
+      "link_only_file_occurrences": 5278,
+      "native_pair_repeat_excess": 0,
+      "native_pairs_also_in_imported_sources": 0,
+      "native_pairs_not_in_imported_sources": 0,
+      "native_title_build_file_occurrences": 0,
+      "native_unmatched_pairs_sample": [],
+      "other_cheat_documents_without_exact_native_ids": 0,
+      "patch_file_occurrences_not_assumed_cheats": 532,
+      "revision": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+      "title_only_json_file_occurrences": 4746
+    },
+    {
+      "distinct_json_title_labels": 0,
+      "distinct_native_title_build_pairs": 3136,
+      "distinct_native_title_labels": 2092,
+      "id": "ibnux-switch-cheatdb",
+      "json_titles_also_in_imported_sources": 0,
+      "json_titles_not_in_imported_sources": 0,
+      "link_only_file_occurrences": 3136,
+      "native_pair_repeat_excess": 0,
+      "native_pairs_also_in_imported_sources": 497,
+      "native_pairs_not_in_imported_sources": 2639,
+      "native_title_build_file_occurrences": 3136,
+      "native_unmatched_pairs_sample": [
+        {
+          "build_id_label": "ea058a067cbd6943",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "f87fc6075104ec4d",
+          "title_id_label": "0100000011d90000"
+        },
+        {
+          "build_id_label": "55ee1a69145de04e",
+          "title_id_label": "010000100fb62000"
+        },
+        {
+          "build_id_label": "5b8a84d880998114",
+          "title_id_label": "0100001017216000"
+        },
+        {
+          "build_id_label": "64a8da29d4719019",
+          "title_id_label": "010000300c79c000"
+        },
+        {
+          "build_id_label": "f97054189a86de4f",
+          "title_id_label": "010000401313a000"
+        },
+        {
+          "build_id_label": "d43cc23791bff3e4",
+          "title_id_label": "010000501492e000"
+        },
+        {
+          "build_id_label": "020c7008b8751c4d",
+          "title_id_label": "0100006013a4a000"
+        }
+      ],
+      "other_cheat_documents_without_exact_native_ids": 0,
+      "patch_file_occurrences_not_assumed_cheats": 0,
+      "revision": "14f899df1cecca3c2359125b5b4876c2deeaab20",
+      "title_only_json_file_occurrences": 0
+    },
+    {
+      "distinct_json_title_labels": 3105,
+      "distinct_native_title_build_pairs": 0,
+      "distinct_native_title_labels": 0,
+      "id": "sthetix-switch-mirror",
+      "json_titles_also_in_imported_sources": 357,
+      "json_titles_not_in_imported_sources": 2748,
+      "link_only_file_occurrences": 5861,
+      "native_pair_repeat_excess": 0,
+      "native_pairs_also_in_imported_sources": 0,
+      "native_pairs_not_in_imported_sources": 0,
+      "native_title_build_file_occurrences": 0,
+      "native_unmatched_pairs_sample": [],
+      "other_cheat_documents_without_exact_native_ids": 0,
+      "patch_file_occurrences_not_assumed_cheats": 532,
+      "revision": "e5587ee6844bf9cb7fc6513a49cbf7385387b3bf",
+      "title_only_json_file_occurrences": 5329
+    }
+  ],
+  "format": "cheatarium-switch-external-title-build-coverage-v1",
+  "json_mirror_has_build_id_evidence": false,
+  "limitations": [
+    "All identifiers are supplied by third-party filenames; no independent game-build confirmation.",
+    "Exact title/build label equality does not imply a common executable cheat effect.",
+    "Mirrored JSON title labels contain no comparable native 16-hex build ID in their filename.",
+    "FPS, resolution and graphics patch file occurrences are deliberately not counted as native cheats.",
+    "Rights-unresolved external cheat bodies remain link-only, regardless of apparent label novelty."
+  ],
+  "proves_code_equivalence_or_gameplay_compatibility": false,
+  "proves_distinct_games_or_new_cheats": false,
+  "rights_unresolved_external_payloads_imported": false,
+  "schema_version": 1,
+  "summary": {
+    "combined_distinct_native_title_build_pairs": 4053,
+    "combined_distinct_title_labels_from_all_scope_types": 3161,
+    "external_distinct_native_title_build_pairs": 3965,
+    "external_distinct_native_title_labels": 2442,
+    "imported_distinct_native_title_build_pairs": 617,
+    "imported_distinct_title_labels": 372,
+    "mirror_distinct_title_only_json_labels": 3105,
+    "mirror_title_labels_without_archived_native_title": 2748,
+    "native_pairs_only_in_archived_sources": 88,
+    "native_pairs_only_in_external_sources": 3436,
+    "native_pairs_shared_by_archive_and_external": 529
+  }
+}

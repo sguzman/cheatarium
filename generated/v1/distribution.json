@@ -4,6 +4,8 @@
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
   "external_reference_files": 38573,
+  "external_switch_native_pair_labels_not_in_archive": 3436,
+  "external_switch_distinct_title_only_mirror_labels": 3105,
   "external_ps2_native_pnach_files": 10772,
   "external_ps2_recognized_crc_filename_occurrences": 10754,
   "external_ps2_crc_labels_shared_between_sources": 3310,
@@ -930,6 +932,11 @@
       "path": "reports/snes-composition-review-queue.json",
       "sha256": "9539947f47a98d94718055420f3861589db8031c0dc262d21977dd0c159ae701",
       "size_bytes": 142552
+    },
+    {
+      "path": "reports/switch-external-title-build-coverage.json",
+      "sha256": "74ad7da04dc930603ae064d9e9f23b0d585328afe5187d3aa1b70d9a1f208863",
+      "size_bytes": 8110
     },
     {
       "path": "reviews.json",
