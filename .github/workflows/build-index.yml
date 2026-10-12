@@ -996,9 +996,9 @@ jobs:
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ps3 --title USERLIST --limit 4 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] > 1000 and x["external_reference_files_total"] == 42483 and x["metadata_only"] and not x["gameplay_verified"]'
-          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform psp --title cheat.db --json \
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform psp --source-id apelfactory-ppsspp-cheatdb --title cheat.db --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["bytes"] > 8000000 and not x["archive_included"]'
-          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ds --title usrcheat.dat --json \
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ds --source-id real-f00-usrcheat-ds --title usrcheat.dat --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["bytes"] > 40000000 and x["artifact_checksums_verified"]'
       - name: Verify external Switch title-source mirror stays metadata-only
         run: |
