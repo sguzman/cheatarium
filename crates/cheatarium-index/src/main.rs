@@ -792,22 +792,28 @@ fn run() -> Result<()> {
             if item.upstream_path == "LICENSE" || item.upstream_path == "README.md" {
                 continue;
             }
-            let source_path = item.upstream_path.strip_prefix("cht/")
+            let source_path = item
+                .upstream_path
+                .strip_prefix("cht/")
                 .ok_or("Invalid original Libretro-fork source path")?;
-            let (dir, file_name) = source_path.split_once('/')
+            let (dir, file_name) = source_path
+                .split_once('/')
                 .ok_or("Missing original Libretro-fork collection directory")?;
             if !file_name.ends_with(".cht") || file_name.contains('/') {
                 return Err("Invalid source-native Libretro-fork filename".into());
             }
-            let platform = if matches!(dir,
+            let platform = if matches!(
+                dir,
                 "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R"
-                | "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R (fMSX core)"
+                    | "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R (fMSX core)"
             ) {
                 "msx-family"
             } else {
-                source_directories.get(dir)
+                source_directories
+                    .get(dir)
                     .ok_or("Unmapped Libretro-fork source collection")?
-                    .platform.as_str()
+                    .platform
+                    .as_str()
             };
             original_codes += 1;
             if wanted.as_ref().is_some_and(|v| !v.contains(platform)) {
@@ -858,12 +864,15 @@ fn run() -> Result<()> {
                     git_blob_sha: item.git_blob_sha,
                 },
             };
-            by_platform.entry(platform.to_owned()).or_default().push(record);
+            by_platform
+                .entry(platform.to_owned())
+                .or_default()
+                .push(record);
         }
         if original_codes != 1125 {
-            return Err(format!(
-                "Pinned Libretro-fork source count drift: {original_codes}"
-            ).into());
+            return Err(
+                format!("Pinned Libretro-fork source count drift: {original_codes}").into(),
+            );
         }
     }
 

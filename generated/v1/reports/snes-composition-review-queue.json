@@ -5,9 +5,9 @@
   "identity_confidence": "filename-derived-candidates-only",
   "effect_or_compatibility_verified": false,
   "rank_rule": "descending-unresolved-source-occurrences-then-ascending-candidate-key",
-  "total_unresolved_source_occurrences": 14565,
+  "total_unresolved_source_occurrences": 14715,
   "total_historical_publication_witnesses": 17,
-  "total_without_publication_witness": 14548,
+  "total_without_publication_witness": 14698,
   "candidate_groups_with_unresolved_joins": 928,
   "published_top_limit": 100,
   "top_groups": [
@@ -416,6 +416,42 @@
       ]
     },
     {
+      "candidate_game_key": "super-mario-world",
+      "title_hints": [
+        "Super Mario World"
+      ],
+      "unresolved_source_occurrences": 166,
+      "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 166,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA).cht",
+          "ordinal": 6,
+          "source_code": "7E0F3109+7E0F3209+7E0F3309",
+          "source_git_blob_sha": "e72a494df33f6686e95283cf1f5d8a958c615532"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA).cht",
+          "ordinal": 20,
+          "source_code": "EDA5-0F6F+61A5-040F+61A6-0D6F",
+          "source_git_blob_sha": "e72a494df33f6686e95283cf1f5d8a958c615532"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA).cht",
+          "ordinal": 21,
+          "source_code": "EDA5-0F6F+69A5-040F+69A6-0D6F",
+          "source_git_blob_sha": "e72a494df33f6686e95283cf1f5d8a958c615532"
+        }
+      ]
+    },
+    {
       "candidate_game_key": "liberty-or-death",
       "title_hints": [
         "Liberty or Death"
@@ -523,6 +559,46 @@
       ]
     },
     {
+      "candidate_game_key": "street-fighter-ii",
+      "title_hints": [
+        "Street Fighter II"
+      ],
+      "unresolved_source_occurrences": 149,
+      "distinct_source_records": 7,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 149,
+      "region_hints": [
+        "Europe",
+        "Japan",
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (World) (Action Replay).cht",
+          "ordinal": 133,
+          "source_code": "00DF7A80+00DF7B81",
+          "source_git_blob_sha": "9e81882a0195940b2213de1277f651876c1b07a3"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (World) (Action Replay).cht",
+          "ordinal": 134,
+          "source_code": "01806501+01807501",
+          "source_git_blob_sha": "9e81882a0195940b2213de1277f651876c1b07a3"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (World) (Action Replay).cht",
+          "ordinal": 135,
+          "source_code": "00A81E80+00A81F11",
+          "source_git_blob_sha": "9e81882a0195940b2213de1277f651876c1b07a3"
+        }
+      ]
+    },
+    {
       "candidate_game_key": "chrono-trigger",
       "title_hints": [
         "Chrono Trigger"
@@ -560,6 +636,42 @@
       ]
     },
     {
+      "candidate_game_key": "genghis-khan-ii-clan-of-the-gray-wolf",
+      "title_hints": [
+        "Genghis Khan II - Clan of the Gray Wolf"
+      ],
+      "unresolved_source_occurrences": 142,
+      "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 142,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E3C33+FF+7E3C34+FF",
+          "source_git_blob_sha": "bdd241a4c2350a85d83b19829a756e4d63590b7c"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
+          "ordinal": 3,
+          "source_code": "7E454BOF+7E454C27",
+          "source_git_blob_sha": "bdd241a4c2350a85d83b19829a756e4d63590b7c"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
+          "ordinal": 4,
+          "source_code": "7E39A9OF+7E39AA27",
+          "source_git_blob_sha": "bdd241a4c2350a85d83b19829a756e4d63590b7c"
+        }
+      ]
+    },
+    {
       "candidate_game_key": "dai-3-ji-super-robot-taisen",
       "title_hints": [
         "Dai-3-ji Super Robot Taisen"
@@ -593,42 +705,6 @@
           "ordinal": 2,
           "source_code": "7E18080F+7E180927",
           "source_git_blob_sha": "6a7289f7349d132aa507ec791fff00bbb84e592a"
-        }
-      ]
-    },
-    {
-      "candidate_game_key": "genghis-khan-ii-clan-of-the-gray-wolf",
-      "title_hints": [
-        "Genghis Khan II - Clan of the Gray Wolf"
-      ],
-      "unresolved_source_occurrences": 138,
-      "distinct_source_records": 2,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 138,
-      "region_hints": [
-        "USA"
-      ],
-      "declared_device_hints": [
-        "action-replay"
-      ],
-      "sample_originals": [
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
-          "ordinal": 0,
-          "source_code": "7E3C33+FF+7E3C34+FF",
-          "source_git_blob_sha": "bbfff576e03389b483499448b627770db84d70ed"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
-          "ordinal": 3,
-          "source_code": "7E454B0F+7E454C27",
-          "source_git_blob_sha": "bbfff576e03389b483499448b627770db84d70ed"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Genghis Khan II - Clan of the Gray Wolf (USA) (Action Replay).cht",
-          "ordinal": 4,
-          "source_code": "7E39A90F+7E39AA27",
-          "source_git_blob_sha": "bbfff576e03389b483499448b627770db84d70ed"
         }
       ]
     },
@@ -703,82 +779,6 @@
           "ordinal": 5,
           "source_code": "CE65-4FAD+DF69-CD6F+CE69-C7DF",
           "source_git_blob_sha": "db272f7d7e90e94fd29c86b3317dd9674543bfbb"
-        }
-      ]
-    },
-    {
-      "candidate_game_key": "street-fighter-ii",
-      "title_hints": [
-        "Street Fighter II"
-      ],
-      "unresolved_source_occurrences": 117,
-      "distinct_source_records": 6,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 117,
-      "region_hints": [
-        "Europe",
-        "Japan",
-        "USA",
-        "World"
-      ],
-      "declared_device_hints": [
-        "action-replay",
-        "game-genie"
-      ],
-      "sample_originals": [
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (Europe).cht",
-          "ordinal": 0,
-          "source_code": "CB01-54DF+8D01-540F+6201-546F+4801-54AF+DA01-57DF",
-          "source_git_blob_sha": "ff58679737854e6098ca6a4af42da26d5d268954"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (Japan).cht",
-          "ordinal": 0,
-          "source_code": "CB00-570F+8D00-576F+6200-57AF+4809-5DDF+DA09-5D0F",
-          "source_git_blob_sha": "715534feba55d3ca60822de3a36e4d5b40a71406"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Street Fighter II (USA).cht",
-          "ordinal": 17,
-          "source_code": "6DCF-D764+FFCF-D7A4",
-          "source_git_blob_sha": "238c19680d48eeec8cfb2cb67c2e5d03bfdf8170"
-        }
-      ]
-    },
-    {
-      "candidate_game_key": "super-mario-world",
-      "title_hints": [
-        "Super Mario World"
-      ],
-      "unresolved_source_occurrences": 115,
-      "distinct_source_records": 2,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 115,
-      "region_hints": [
-        "USA"
-      ],
-      "declared_device_hints": [
-        "game-genie"
-      ],
-      "sample_originals": [
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA) (Game Genie).cht",
-          "ordinal": 0,
-          "source_code": "EDA5-0F6F+61A5-040F+61A6-0D6F",
-          "source_git_blob_sha": "15ef970f1dbb5eac3a4d017129b5c52a14ce095f"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA) (Game Genie).cht",
-          "ordinal": 1,
-          "source_code": "EDA5-0F6F+69A5-040F+69A6-0D6F",
-          "source_git_blob_sha": "15ef970f1dbb5eac3a4d017129b5c52a14ce095f"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario World (USA) (Game Genie).cht",
-          "ordinal": 2,
-          "source_code": "2D80-0DE1+ED8B-0D89",
-          "source_git_blob_sha": "15ef970f1dbb5eac3a4d017129b5c52a14ce095f"
         }
       ]
     },
@@ -1111,6 +1111,43 @@
       ]
     },
     {
+      "candidate_game_key": "mortal-kombat",
+      "title_hints": [
+        "Mortal Kombat"
+      ],
+      "unresolved_source_occurrences": 94,
+      "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 94,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA, Europe) (Game Genie).cht",
+          "ordinal": 2,
+          "source_code": "BF66-3DD4+DD66-3D04",
+          "source_git_blob_sha": "79339151fcf0ae6173d8e279fcd63c80c6947516"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA, Europe) (Game Genie).cht",
+          "ordinal": 3,
+          "source_code": "6F66-3DD4+DD66-3D04",
+          "source_git_blob_sha": "79339151fcf0ae6173d8e279fcd63c80c6947516"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA, Europe) (Game Genie).cht",
+          "ordinal": 4,
+          "source_code": "5F66-3DD4+DD66-3D04",
+          "source_git_blob_sha": "79339151fcf0ae6173d8e279fcd63c80c6947516"
+        }
+      ]
+    },
+    {
       "candidate_game_key": "dragon-ball-z-super-saiya-densetsu",
       "title_hints": [
         "Dragon Ball Z - Super Saiya Densetsu"
@@ -1248,6 +1285,43 @@
           "ordinal": 4,
           "source_code": "7E12F7E7+7E12F803",
           "source_git_blob_sha": "e9363a6ae67636827d711b069143bf372223f973"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "killer-instinct",
+      "title_hints": [
+        "Killer Instinct"
+      ],
+      "unresolved_source_occurrences": 83,
+      "distinct_source_records": 4,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 83,
+      "region_hints": [
+        "USA",
+        "USA, Europe"
+      ],
+      "declared_device_hints": [
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA, Europe) (Game Genie).cht",
+          "ordinal": 1,
+          "source_code": "CBEC-37AF+6DE8-3D0F+6D64-44D5",
+          "source_git_blob_sha": "5d9d17b38fd6f89b1a12717307eeb2946271226f"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA, Europe) (Game Genie).cht",
+          "ordinal": 10,
+          "source_code": "C265-1467+60E6-47D2",
+          "source_git_blob_sha": "5d9d17b38fd6f89b1a12717307eeb2946271226f"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA, Europe) (Game Genie).cht",
+          "ordinal": 11,
+          "source_code": "C265-1467+6EE6-47D2",
+          "source_git_blob_sha": "5d9d17b38fd6f89b1a12717307eeb2946271226f"
         }
       ]
     },
@@ -1728,80 +1802,6 @@
       ]
     },
     {
-      "candidate_game_key": "killer-instinct",
-      "title_hints": [
-        "Killer Instinct"
-      ],
-      "unresolved_source_occurrences": 71,
-      "distinct_source_records": 3,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 71,
-      "region_hints": [
-        "USA",
-        "USA, Europe"
-      ],
-      "declared_device_hints": [
-        "game-genie"
-      ],
-      "sample_originals": [
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA) (Rev 1).cht",
-          "ordinal": 0,
-          "source_code": "3DC1-4DA4+DDC1-4FD4+DDC1-4F04",
-          "source_git_blob_sha": "3efc3eac4c629b3e27a8eceb547662911486ae7e"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA) (Rev 1).cht",
-          "ordinal": 2,
-          "source_code": "EDB6-3DD7+D2B6-3D07+0AB6-3D67+CAB6-3DA7+CFB6-3FD7",
-          "source_git_blob_sha": "3efc3eac4c629b3e27a8eceb547662911486ae7e"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Killer Instinct (USA) (Rev 1).cht",
-          "ordinal": 3,
-          "source_code": "3DBB-3F07+DDBB-3F67+EDBB-34D7+A7BB-3407",
-          "source_git_blob_sha": "3efc3eac4c629b3e27a8eceb547662911486ae7e"
-        }
-      ]
-    },
-    {
-      "candidate_game_key": "mortal-kombat",
-      "title_hints": [
-        "Mortal Kombat"
-      ],
-      "unresolved_source_occurrences": 71,
-      "distinct_source_records": 2,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 71,
-      "region_hints": [
-        "USA",
-        "USA, Europe"
-      ],
-      "declared_device_hints": [
-        "game-genie"
-      ],
-      "sample_originals": [
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA).cht",
-          "ordinal": 10,
-          "source_code": "7E002207+9897C4A9+9897C507",
-          "source_git_blob_sha": "d599431ab4599dd88558efd82d099fc7594a5849"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA).cht",
-          "ordinal": 12,
-          "source_code": "7E002209+7E02C101+7E197204",
-          "source_git_blob_sha": "d599431ab4599dd88558efd82d099fc7594a5849"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Mortal Kombat (USA).cht",
-          "ordinal": 19,
-          "source_code": "7E768800+7E768900+7E768C00+7E768D00+7E768E00+7E768F00+7E769000+7E769100+7E769200+7E769300+7E769600+7E769700",
-          "source_git_blob_sha": "d599431ab4599dd88558efd82d099fc7594a5849"
-        }
-      ]
-    },
-    {
       "candidate_game_key": "romancing-sa-ga-3",
       "title_hints": [
         "Romancing Sa-Ga 3"
@@ -2271,6 +2271,44 @@
           "ordinal": 22,
           "source_code": "02A125A9+02A12602",
           "source_git_blob_sha": "fd2e600ffa8e83a32a5918f2b2973502765da5b3"
+        }
+      ]
+    },
+    {
+      "candidate_game_key": "super-mario-kart",
+      "title_hints": [
+        "Super Mario Kart"
+      ],
+      "unresolved_source_occurrences": 57,
+      "distinct_source_records": 4,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 57,
+      "region_hints": [
+        "USA",
+        "World"
+      ],
+      "declared_device_hints": [
+        "action-replay",
+        "game-genie"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (World) (Game Genie).cht",
+          "ordinal": 0,
+          "source_code": "DDEF-1D97+D4EF-1D27+F9EF-1FB7+F9EF-1F27",
+          "source_git_blob_sha": "1e46a17b9f584a984bd5f6a286cdbb122203449c"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (World) (Game Genie).cht",
+          "ordinal": 10,
+          "source_code": "EE3D-EE57+9886-EEB2",
+          "source_git_blob_sha": "1e46a17b9f584a984bd5f6a286cdbb122203449c"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (World) (Game Genie).cht",
+          "ordinal": 16,
+          "source_code": "FDEB-67A7+2CAE-CDA4+4BEB-CDA4+3DEB-CDA4",
+          "source_git_blob_sha": "1e46a17b9f584a984bd5f6a286cdbb122203449c"
         }
       ]
     },
@@ -3193,6 +3231,42 @@
       ]
     },
     {
+      "candidate_game_key": "lufia-the-fortress-of-doom",
+      "title_hints": [
+        "Lufia _ the Fortress of Doom"
+      ],
+      "unresolved_source_occurrences": 43,
+      "distinct_source_records": 3,
+      "historical_publication_witnesses": 0,
+      "occurrences_without_publication_witness": 43,
+      "region_hints": [
+        "USA"
+      ],
+      "declared_device_hints": [
+        "action-replay"
+      ],
+      "sample_originals": [
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E054300+7E054400",
+          "source_git_blob_sha": "ad2cc15a9bcd27e0ffe4597353f72c300dd36aa1"
+        },
+        {
+          "source_record_id": "bithex-libretro-delta:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA) (Action Replay).cht",
+          "ordinal": 2,
+          "source_code": "7E14CF7F+7E14D096+7E14D198",
+          "source_git_blob_sha": "ad2cc15a9bcd27e0ffe4597353f72c300dd36aa1"
+        },
+        {
+          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA) (Action Replay).cht",
+          "ordinal": 0,
+          "source_code": "7E054300+7E054400",
+          "source_git_blob_sha": "cf407d6679e5838cbb449bbe021027039d9ccc1a"
+        }
+      ]
+    },
+    {
       "candidate_game_key": "primal-rage",
       "title_hints": [
         "Primal Rage"
@@ -3226,44 +3300,6 @@
           "ordinal": 26,
           "source_code": "7E1B1206+7E1BD201",
           "source_git_blob_sha": "ddf35f9669881c238b7ece632275a7035af62c70"
-        }
-      ]
-    },
-    {
-      "candidate_game_key": "super-mario-kart",
-      "title_hints": [
-        "Super Mario Kart"
-      ],
-      "unresolved_source_occurrences": 43,
-      "distinct_source_records": 3,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 43,
-      "region_hints": [
-        "USA",
-        "World"
-      ],
-      "declared_device_hints": [
-        "action-replay",
-        "game-genie"
-      ],
-      "sample_originals": [
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (USA).cht",
-          "ordinal": 1,
-          "source_code": "7E019200+7E103100",
-          "source_git_blob_sha": "b9f0bd125390f0e9bd8bf351936d58f5bae05be8"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (USA).cht",
-          "ordinal": 2,
-          "source_code": "7E019400+7E103200",
-          "source_git_blob_sha": "b9f0bd125390f0e9bd8bf351936d58f5bae05be8"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Super Mario Kart (USA).cht",
-          "ordinal": 4,
-          "source_code": "C2BC-C7A9+D0BC-C4A9",
-          "source_git_blob_sha": "b9f0bd125390f0e9bd8bf351936d58f5bae05be8"
         }
       ]
     },
@@ -3339,42 +3375,6 @@
           "ordinal": 36,
           "source_code": "008EA1A9+008EA209+008EA48D+008EA526+008EAAF0",
           "source_git_blob_sha": "56769cd7e39aa12ef5a9b703e762f0d786c795d7"
-        }
-      ]
-    },
-    {
-      "candidate_game_key": "lufia-the-fortress-of-doom",
-      "title_hints": [
-        "Lufia _ the Fortress of Doom"
-      ],
-      "unresolved_source_occurrences": 41,
-      "distinct_source_records": 2,
-      "historical_publication_witnesses": 0,
-      "occurrences_without_publication_witness": 41,
-      "region_hints": [
-        "USA"
-      ],
-      "declared_device_hints": [
-        "action-replay"
-      ],
-      "sample_originals": [
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA) (Action Replay).cht",
-          "ordinal": 0,
-          "source_code": "7E054300+7E054400",
-          "source_git_blob_sha": "cf407d6679e5838cbb449bbe021027039d9ccc1a"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA) (Action Replay).cht",
-          "ordinal": 2,
-          "source_code": "7E14CF7F+7E14D096+7E14D198",
-          "source_git_blob_sha": "cf407d6679e5838cbb449bbe021027039d9ccc1a"
-        },
-        {
-          "source_record_id": "libretro-database:cht/Nintendo - Super Nintendo Entertainment System/Lufia _ the Fortress of Doom (USA).cht",
-          "ordinal": 92,
-          "source_code": "7E054300+7E054400",
-          "source_git_blob_sha": "4e37f9d9846e7c548a421b99f167d705ee8bdc0e"
         }
       ]
     },
