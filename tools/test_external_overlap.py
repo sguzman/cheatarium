@@ -30,10 +30,14 @@ class TestExternalOverlap(unittest.TestCase):
         self.assertEqual(sum(x["reference_files"] for x in doc["platforms"]), 42483)
         hamlet = next(x for x in doc["sources"] if x["id"] == "hamlet-switch-cheatdb")
         self.assertEqual((hamlet["reference_files"], hamlet["distinct_git_blobs"]), (5278, 3046))
+        ds = next(x for x in doc["sources"] if x["id"] == "deadskullz-nds-formats")
+        self.assertEqual(ds["reference_files"], 9)
+        self.assertEqual(ds["distinct_git_blobs"], 8)
+        self.assertEqual(ds["repeated_blob_excess_occurrences_within_source"], 1)
         sthetix = next(x for x in doc["sources"] if x["id"] == "sthetix-switch-mirror")
         self.assertEqual((sthetix["reference_files"], sthetix["distinct_git_blobs"]), (5861, 5468))
         self.assertEqual(
-            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3325
+            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3326
         )
 
     def test_cross_source_matches_keep_paths_and_no_bodies(self):
