@@ -53,6 +53,8 @@ The platform registry covers **67 systems/environments** (including classic cons
 
 **Switch filename/build-ID coverage:** The [strict cross-source audit](generated/v1/reports/switch-external-title-build-coverage.json) compares native 16-hex Switch title/build-ID file labels across imported Sharkive/NXCheats and the blocked Ademola/ibnux collections, keeping title-only JSON mirror labels and graphics patches separate. It does not infer game identity, code effects, or compatibility.
 
+**3DS native title-ID coverage:** A [new source-label report](generated/v1/reports/3ds-external-title-id-coverage.json) compares archived Sharkive title-ID filenames with metadata-only Ademola and JourneyOver native 3DS cheat filenames. Unstructured ASM documents remain outside ID overlap claims; these are not verified games, tested effects, or reproduction rights.
+
 **PS2 filename/CRC coverage:** The [strict external PNACH filename audit](generated/v1/reports/external-ps2-crc-labels.json) compares source-declared CRC labels and exact serial+CRC tokens across the three pinned PS2 catalogues, without loading cheat code bodies or inferring game compatibility. This makes cross-source bulk acquisition overlap measurable independently of byte-level duplicates.
 
 The archive is separate from any particular emulator, but future integrations may make these cheats directly usable in projects such as Starbyte.

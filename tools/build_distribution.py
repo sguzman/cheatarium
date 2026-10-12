@@ -157,6 +157,23 @@ def build_manifest(root):
     manifest_files.append({"path": switch_external_rel,
                            **digest(safe_path(root, switch_external_rel))})
     named_paths.add(switch_external_rel)
+    # Compare source-declared 3DS native title-ID filename labels; no ROM or
+    # author-rights assumptions are introduced by this label-only audit.
+    from audit_3ds_external_title_ids import build as audit_3ds_external
+    ds3_external_rel = "reports/3ds-external-title-id-coverage.json"
+    ds3_external = checked_json(safe_path(root, ds3_external_rel))
+    if ds3_external != audit_3ds_external(ROOT):
+        raise ValueError("Stale or altered 3DS title-ID source coverage audit")
+    if (ds3_external["summary"]["external_link_only_original_file_occurrences"] !=
+            next(x["source_files"] for x in external_catalog["platforms"]
+                 if x["platform"] == "3ds")
+            or ds3_external["archived_sharkive_3ds_files"] != 644
+            or not ds3_external["rights_blocked_external_codes_not_imported"]
+            or ds3_external["game_identity_verified"]):
+        raise ValueError("3DS source identity/rights or imported count mismatch")
+    manifest_files.append({"path": ds3_external_rel,
+                           **digest(safe_path(root, ds3_external_rel))})
+    named_paths.add(ds3_external_rel)
     from audit_ps2_external_crc_labels import build as audit_external_ps2_labels
     ps2_labels_rel = "reports/external-ps2-crc-labels.json"
     ps2_labels = checked_json(safe_path(root, ps2_labels_rel))
@@ -416,6 +433,7 @@ def build_manifest(root):
         "external_reference_files": external_catalog["reference_files"],
         "external_switch_native_pair_labels_not_in_archive": switch_external["summary"]["native_pairs_only_in_external_sources"],
         "external_switch_distinct_title_only_mirror_labels": switch_external["summary"]["mirror_distinct_title_only_json_labels"],
+        "external_3ds_title_labels_not_in_archived_sharkive": ds3_external["summary"]["external_title_id_labels_absent_from_sharkive"],
         "external_ps2_native_pnach_files": ps2_labels["source_native_pnach_files"],
         "external_ps2_recognized_crc_filename_occurrences": ps2_labels["recognized_crc_filename_occurrences"],
         "external_ps2_crc_labels_shared_between_sources": ps2_labels["crc_labels_in_two_or_more_sources"],
