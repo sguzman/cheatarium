@@ -10,6 +10,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 - [Curated games](curated/) — human-friendly cheats grouped by platform and game, including versions and code formats.
 - [Original archives](archive/) — unmodified, attributable imports in their original formats.
+- [Historical Libretro preservation gap](docs/HISTORICAL-LIBRETRO.md) — pinned Emupedia-era byte-overlap audit, rights-limited.
 - [Platforms](platforms/platforms.json) — stable platform identifiers, including console and handheld generations.
 - [Sources](sources/README.md) — upstream repositories, attribution, licenses, and snapshots.
 - [Adding cheats](docs/ADDING-CHEATS.md) — how new collections and individual cheats enter the archive.

@@ -1,0 +1,25 @@
+name: Audit historical Libretro fork
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/audit_historic_libretro.py"
+      - "tools/test_audit_historic_libretro.py"
+      - "generated/v1/reports/libretro-historical-fork-coverage.json"
+      - ".github/workflows/audit-historic-libretro.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - name: Validate historical metadata audit without downloading cheat bodies
+        run: |
+          python3 tools/test_audit_historic_libretro.py
+          python3 tools/audit_historic_libretro.py --offline-check

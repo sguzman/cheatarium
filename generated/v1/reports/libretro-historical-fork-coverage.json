@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-libretro-historical-fork-coverage-v1",
+  "method": "pinned-git-tree-exact-blob-sha1",
+  "historical_repository": "https://github.com/Emupedia/emupedia-docs-libretro-database",
+  "historical_commit": "c68abd0536adbb595bb833594de237e96626020d",
+  "historical_cheat_tree_sha": "f56cd8051f3643998a182493c7ea569f62ba7fd3",
+  "baseline_repository": "https://github.com/libretro/libretro-database",
+  "baseline_commit": "fbeefcb46c2e1b20a7e2945f34a694a41b2d6f90",
+  "baseline_cheat_tree_sha": "82732f21cd5b083ad7b8625fa7c8ca1ca920b6b1",
+  "additional_archived_source": "bithex-libretro-delta",
+  "additional_archived_commit": "837bc5b7b4b872f5b48c6b2e683819ec02db23b8",
+  "historical_root_license_file_present": false,
+  "historical_cheat_file_occurrences": 15714,
+  "baseline_cheat_file_occurrences": 27915,
+  "same_path_same_blob_occurrences": 9505,
+  "same_path_different_blob_occurrences": 1058,
+  "historical_paths_absent_from_baseline": 5151,
+  "historical_occurrences_with_blob_in_baseline": 10935,
+  "historical_occurrences_with_blob_absent_from_baseline": 4779,
+  "baseline_absent_occurrences_already_in_bithex": 410,
+  "candidate_occurrences_absent_from_both": 4369,
+  "candidate_distinct_blobs_absent_from_both": 4057,
+  "candidate_occurrences_by_historical_folder": {
+    "Coleco - ColecoVision": 6,
+    "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R": 317,
+    "Nintendo - Game Boy": 1,
+    "Nintendo - Game Boy Advance": 419,
+    "Nintendo - Nintendo 64": 1,
+    "Nintendo - Nintendo DS": 3213,
+    "Nintendo - Nintendo Entertainment System": 3,
+    "Nintendo - Super Nintendo Entertainment System": 2,
+    "Sega - Master System - Mark III": 2,
+    "Sega - Mega Drive - Genesis": 4,
+    "Sega - Saturn": 1,
+    "Sinclair - ZX Spectrum +3": 393,
+    "Sony - PlayStation": 7
+  },
+  "candidate_examples": [
+    {
+      "upstream_path": "Coleco - ColecoVision/Blockade Runner (Cartridge) (RetroArch Cheats).cht",
+      "git_blob_sha": "e315c89b83bd92985cfc28aba890a7a5e4894ca0",
+      "bytes": 980
+    },
+    {
+      "upstream_path": "Coleco - ColecoVision/Blockade Runner (Cartridge) (RetroArch Rumbles).cht",
+      "git_blob_sha": "127c91712e74a0c0f7947fb06398d3508153a32f",
+      "bytes": 512
+    },
+    {
+      "upstream_path": "Coleco - ColecoVision/Boulder Dash (Cartridge) (RetroArch Cheats).cht",
+      "git_blob_sha": "5e03e36fdd26118b7946dd18faa9e6c724ace3ec",
+      "bytes": 2482
+    },
+    {
+      "upstream_path": "Coleco - ColecoVision/Buck Rogers - Planet Of Zoom (Cartridge) (RetroArch Cheats).cht",
+      "git_blob_sha": "bd3a1ba82e29656b74a4cffd9d1b20c2ca001b64",
+      "bytes": 2009
+    },
+    {
+      "upstream_path": "Coleco - ColecoVision/Zaxxon (Cartridge) (RetroArch Cheats).cht",
+      "git_blob_sha": "a09ab880c079e4409707fa002338e290e21c2e84",
+      "bytes": 2009
+    },
+    {
+      "upstream_path": "Coleco - ColecoVision/Zenji (Cartridge) (RetroArch Cheats).cht",
+      "git_blob_sha": "b7d45feda8d60d9718f7cf279b547a4858b72ab5",
+      "bytes": 2007
+    },
+    {
+      "upstream_path": "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R/1942 (RetroArch Cheats).cht",
+      "git_blob_sha": "6f632dcb50731f859fdb51a1ea4e14a823fe7d7a",
+      "bytes": 9666
+    },
+    {
+      "upstream_path": "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R/3-D Bomber Man (RetroArch Cheats).cht",
+      "git_blob_sha": "fc65dc230952d8f3bc8c40414effcf786d80d655",
+      "bytes": 487
+    },
+    {
+      "upstream_path": "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R/Actman (RetroArch Cheats).cht",
+      "git_blob_sha": "29b0046aa7d7cf05da6def513dd1ae6e6b4179d7",
+      "bytes": 5364
+    },
+    {
+      "upstream_path": "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R/Alcazar - The Forgotten Fortress (RetroArch Cheats).cht",
+      "git_blob_sha": "e478d997997b5c3f62fd88c4c227758e7023d06b",
+      "bytes": 3407
+    },
+    {
+      "upstream_path": "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R/Ale Hop (RetroArch Cheats).cht",
+      "git_blob_sha": "09d45ff90605d6b2820c6f657d85d559b23c6756",
+      "bytes": 1918
+    },
+    {
+      "upstream_path": "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R/Aleste (Msx 2 - Disk) (RetroArch Cheats).cht",
+      "git_blob_sha": "5df6bbff60e0937dc330d426cf2d43703865c6b0",
+      "bytes": 9365
+    }
+  ],
+  "source_payloads_included": false,
+  "compared_against_entire_cheatarium_archive": false,
+  "historical_code_redistribution_rights_confirmed": false,
+  "proves_distinct_cheats_or_games": false,
+  "proves_gameplay_compatibility": false
+}
