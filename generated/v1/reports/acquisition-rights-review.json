@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-acquisition-rights-review-v1",
+  "metadata_only": true,
+  "cheat_or_patch_bodies_included": false,
+  "rights_reviews_are_legal_permissions": false,
+  "license_absence_proves_copyright_or_prohibition": false,
+  "no_automatic_rights_clearance": true,
+  "source_catalogs": 23,
+  "source_reviews_with_pinned_evidence": 7,
+  "source_catalogs_not_yet_documented": 16,
+  "reviewed_exclusive_unarchived_cheat_labeled_blobs": 18621,
+  "priority_ranking_does_not_assert_working_cheats": true,
+  "reviewed_sources": [
+    {
+      "source_id": "daowace-pcsx2-consolidated",
+      "platform": "ps2",
+      "repository": "https://github.com/DAOWAce/pcsx2_cheats_collection",
+      "pinned_revision": "a18b78b3b59ce0f96195606a1ecb6a38744948f5",
+      "pinned_git_tree": "a18b78b3b59ce0f96195606a1ecb6a38744948f5",
+      "priority_rank": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 5250,
+      "distinct_unarchived_cheat_labeled_blobs": 5272,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "mixed_unlicensed_provenance",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "a6ef271c5193ce8ef7632feb5f8c9d3558ab47dd",
+          "evidence_type": "mixed_source_attribution",
+          "pinned_url": "https://github.com/DAOWAce/pcsx2_cheats_collection/blob/a18b78b3b59ce0f96195606a1ecb6a38744948f5/README.md"
+        },
+        {
+          "upstream_path": "FORK_CONSOLIDATION_REPORT.md",
+          "git_blob_sha": "221d0281a39fc9d513ef1b849e64d5a45cfa1aae",
+          "evidence_type": "third_party_fork_integration",
+          "pinned_url": "https://github.com/DAOWAce/pcsx2_cheats_collection/blob/a18b78b3b59ce0f96195606a1ecb6a38744948f5/FORK_CONSOLIDATION_REPORT.md"
+        }
+      ],
+      "next_clearance_action": "Trace complete PNACH cheat groups to originating authors and confirm redistribution terms; a consolidated source filename is not a grant."
+    },
+    {
+      "source_id": "duckstation-chtdb",
+      "platform": "ps1",
+      "repository": "https://github.com/duckstation/chtdb",
+      "pinned_revision": "e3cce509936261808b971199be3a20e84d0b9482",
+      "pinned_git_tree": "e3cce509936261808b971199be3a20e84d0b9482",
+      "priority_rank": 2,
+      "exclusive_unarchived_cheat_labeled_blobs": 4497,
+      "distinct_unarchived_cheat_labeled_blobs": 4497,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "explicit_original_author_rights_reservation",
+      "root_license_paths_observed": [
+        "LICENSE"
+      ],
+      "root_license_scope_assessment": "processing_scripts_mit_only",
+      "documentary_evidence": [
+        {
+          "upstream_path": "LICENSE",
+          "git_blob_sha": "9a7eab2dd2663a82dce1c0857501e8b1671792d0",
+          "evidence_type": "explicit_cheat_author_copyright_reservation",
+          "pinned_url": "https://github.com/duckstation/chtdb/blob/e3cce509936261808b971199be3a20e84d0b9482/LICENSE"
+        },
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "6a8e2149be01cb8307986a5e0491082ce9cb9699",
+          "evidence_type": "user_authored_cheat_catalog",
+          "pinned_url": "https://github.com/duckstation/chtdb/blob/e3cce509936261808b971199be3a20e84d0b9482/README.md"
+        }
+      ],
+      "next_clearance_action": "Resolve original per-code author reuse rights; do not interpret the processing-script MIT license as a cheat-data license."
+    },
+    {
+      "source_id": "ibnux-switch-cheatdb",
+      "platform": "switch",
+      "repository": "https://github.com/ibnux/switch-cheat",
+      "pinned_revision": "14f899df1cecca3c2359125b5b4876c2deeaab20",
+      "pinned_git_tree": "14f899df1cecca3c2359125b5b4876c2deeaab20",
+      "priority_rank": 3,
+      "exclusive_unarchived_cheat_labeled_blobs": 3037,
+      "distinct_unarchived_cheat_labeled_blobs": 3042,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "mixed_unlicensed_provenance",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "6eef86351756e108407cb71b8ef1a816a61eb54f",
+          "evidence_type": "multiple_upstream_cheat_sources",
+          "pinned_url": "https://github.com/ibnux/switch-cheat/blob/14f899df1cecca3c2359125b5b4876c2deeaab20/README.md"
+        }
+      ],
+      "next_clearance_action": "Identify licenses and originating authors behind SXOS-CheatDB, EdiZon and other copied entries; do not infer permission from compilation."
+    },
+    {
+      "source_id": "sthetix-switch-mirror",
+      "platform": "switch",
+      "repository": "https://github.com/sthetix/nx-cheats-db",
+      "pinned_revision": "e5587ee6844bf9cb7fc6513a49cbf7385387b3bf",
+      "pinned_git_tree": "e5587ee6844bf9cb7fc6513a49cbf7385387b3bf",
+      "priority_rank": 4,
+      "exclusive_unarchived_cheat_labeled_blobs": 2716,
+      "distinct_unarchived_cheat_labeled_blobs": 5126,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "third_party_mirror_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "f1ed88eff6f41611ebf272f0a8cb1c44a6d7b05d",
+          "evidence_type": "explicit_external_mirror_credits",
+          "pinned_url": "https://github.com/sthetix/nx-cheats-db/blob/e5587ee6844bf9cb7fc6513a49cbf7385387b3bf/README.md"
+        }
+      ],
+      "next_clearance_action": "Trace cheat JSON and graphics patch records to GBAtemp, Cheatslips, Chansey and Hamlet authors and clear each original dataset."
+    },
+    {
+      "source_id": "ademola-switch-native",
+      "platform": "switch",
+      "repository": "https://github.com/ADEMOLA200/Switch-Emulator-Mod-Database",
+      "pinned_revision": "abd55774c369b9c3a4df960e7afdb0391cb52056",
+      "pinned_git_tree": "abd55774c369b9c3a4df960e7afdb0391cb52056",
+      "priority_rank": 5,
+      "exclusive_unarchived_cheat_labeled_blobs": 1853,
+      "distinct_unarchived_cheat_labeled_blobs": 1858,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "aggregator_license_with_third_party_contributions",
+      "root_license_paths_observed": [
+        "LICENSE"
+      ],
+      "root_license_scope_assessment": "aggregator_mit_no_original_author_clearance",
+      "documentary_evidence": [
+        {
+          "upstream_path": "LICENSE",
+          "git_blob_sha": "0acd3b892a67d020e78118a567d3882cb8107f36",
+          "evidence_type": "root_mit_notice",
+          "pinned_url": "https://github.com/ADEMOLA200/Switch-Emulator-Mod-Database/blob/abd55774c369b9c3a4df960e7afdb0391cb52056/LICENSE"
+        },
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "ab0263dc087de8d5080d21cb0d4c69733ecdc9ad",
+          "evidence_type": "multiple_mod_creator_credits",
+          "pinned_url": "https://github.com/ADEMOLA200/Switch-Emulator-Mod-Database/blob/abd55774c369b9c3a4df960e7afdb0391cb52056/README.md"
+        }
+      ],
+      "next_clearance_action": "Separate author-owned MIT-covered files from third-party mods, and verify original creator grants before copying each independently sourced code."
+    },
+    {
+      "source_id": "r0ah-vitacheat",
+      "platform": "vita",
+      "repository": "https://github.com/r0ah/vitacheat",
+      "pinned_revision": "bb8158a1c696914a8ea2299889d42ab9a57a3ab2",
+      "pinned_git_tree": "bb8158a1c696914a8ea2299889d42ab9a57a3ab2",
+      "priority_rank": 6,
+      "exclusive_unarchived_cheat_labeled_blobs": 674,
+      "distinct_unarchived_cheat_labeled_blobs": 676,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "2cf3581859b97d32f0edbbaf914993eb2727dc5f",
+          "evidence_type": "community_submissions",
+          "pinned_url": "https://github.com/r0ah/vitacheat/blob/bb8158a1c696914a8ea2299889d42ab9a57a3ab2/README.md"
+        },
+        {
+          "upstream_path": "CONTRIBUTORS.md",
+          "git_blob_sha": "d3874ed271072067e1cf7c32fa6eb11433a95555",
+          "evidence_type": "individual_code_author_credits",
+          "pinned_url": "https://github.com/r0ah/vitacheat/blob/bb8158a1c696914a8ea2299889d42ab9a57a3ab2/CONTRIBUTORS.md"
+        }
+      ],
+      "next_clearance_action": "Resolve code authors and submission terms at per-PSV level; preserve attribution and do not treat acceptance of submissions as redistribution permission."
+    },
+    {
+      "source_id": "journeyover-3ds-ctrpf",
+      "platform": "3ds",
+      "repository": "https://github.com/JourneyOver/CTRPF-AR-CHEAT-CODES",
+      "pinned_revision": "ca51e1de9a0d5b7ea0544da4477b1a11f720165e",
+      "pinned_git_tree": "ca51e1de9a0d5b7ea0544da4477b1a11f720165e",
+      "priority_rank": 7,
+      "exclusive_unarchived_cheat_labeled_blobs": 594,
+      "distinct_unarchived_cheat_labeled_blobs": 594,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "community_contributions_without_root_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "15252f4afcd8f1ef2fcebc58b896fac8a5883776",
+          "evidence_type": "community_code_contributions",
+          "pinned_url": "https://github.com/JourneyOver/CTRPF-AR-CHEAT-CODES/blob/ca51e1de9a0d5b7ea0544da4477b1a11f720165e/README.md"
+        }
+      ],
+      "next_clearance_action": "Check original CTRPF/ActionReplay code authors and possible Sharkive migration before approving any new source-code archive."
+    }
+  ],
+  "unreviewed_source_ids_in_priority_order": [
+    "xs1l3n7x-pcsx2",
+    "bucanero-dreamcast-cheats",
+    "rogamer97-asm-wii",
+    "hamlet-switch-cheatdb",
+    "ademola-3ds-native",
+    "shumnot-vitacheat",
+    "rogamer97-asm-3ds",
+    "rogamer97-asm-gamecube",
+    "rogamer97-asm-ds",
+    "rogamer97-asm-switch",
+    "apelfactory-ppsspp-cheatdb",
+    "real-f00-usrcheat-ds",
+    "pcsx2-official-patches",
+    "dospamu-rpcs3-artemis-patches",
+    "xenia-canary-game-patches",
+    "chidreams-rpcs3-patches"
+  ],
+  "limitations": [
+    "README, LICENSE and contributor files are repository claims, not verified original code author grants.",
+    "Absence of a root license file is not proof that copyright exists or that no permission can be obtained.",
+    "Even an MIT root license may cover only the aggregator's own work.",
+    "Root tree/document hashes are pinned research observations; this offline tool does not re-fetch GitHub or certify contributor provenance.",
+    "No file is imported into archived code bundles because of this report."
+  ]
+}
