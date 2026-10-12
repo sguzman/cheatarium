@@ -1,0 +1,667 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-retroarch-pinned-mirror-byte-gaps-v1",
+  "method": "original-git-tree-sha1-identity-only",
+  "metadata_only": true,
+  "cheat_or_archive_bodies_included": false,
+  "rights_clearance_asserted": false,
+  "source_licensing_verified": false,
+  "gameplay_compatibility_verified": false,
+  "distinct_games_or_cheats_established": false,
+  "compared_with": [
+    {
+      "repository": "libretro/libretro-database",
+      "tree_sha": "82732f21cd5b083ad7b8625fa7c8ca1ca920b6b1",
+      "cht_file_occurrences": 27915
+    },
+    {
+      "repository": "Emupedia/emupedia-docs-libretro-database",
+      "tree_sha": "f56cd8051f3643998a182493c7ea569f62ba7fd3",
+      "cht_file_occurrences": 15714
+    },
+    {
+      "repository": "BitHeX0R/Cheat-database",
+      "tree_sha": "not-required-pinned-original-file-manifest",
+      "distinct_known_cheat_blobs": 1113
+    }
+  ],
+  "source_catalogs_not_added_to_external_search": 2,
+  "file_occurrences_not_matching_three_corpora": 86,
+  "distinct_blob_sha1_in_union_not_matching_three_corpora": 77,
+  "absence_from_all_other_archived_corpora_verified": false,
+  "notes": "GCMCom is overwhelmingly a byte-identical subset of the already tracked Emupedia-era source. These few unshared bytes and Smoker1's remaining source occurrences are rights-unresolved research leads only; neither independently verified new games nor permissions to copy source contents.",
+  "sources": [
+    {
+      "id": "gcmcom-libretro-legacy",
+      "repository": "https://github.com/gcmcom/libretro-database",
+      "snapshot_commit": "4667ad6247352f57d44f2ad7b36f19f3e804aba9",
+      "source_git_tree": "73797b1c0be7fa1d6b34fd14919fcf4f4d194877",
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "code_payloads_included": false,
+      "original_cht_file_occurrences": 10872,
+      "occurrences_matching_historical_exact_bytes": 10861,
+      "file_occurrences_not_matching_three_corpora": 11,
+      "distinct_blob_sha1_not_matching_three_corpora": 11,
+      "unmatched_source_file_metadata": [
+        {
+          "source_path": "cht/Nintendo - Game Boy Advance/Pokemon - Emerald Version (USA, Europe) (Code Breaker).cht",
+          "git_blob_sha": "6e4dd14c142e5f060a4f46f5ceeaf9773e3c2257",
+          "bytes": 20218,
+          "original_folder": "Nintendo - Game Boy Advance",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Game Boy Advance/Pokemon - Emerald Version (USA, Europe) (Code Breaker).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Game Boy Advance/Sims, The - Bustin' Out (USA, Europe) (Code Breaker).cht",
+          "git_blob_sha": "a6e55340ae5e214f08386423365409e968bb52d1",
+          "bytes": 1644,
+          "original_folder": "Nintendo - Game Boy Advance",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Game Boy Advance/Sims, The - Bustin' Out (USA, Europe) (Code Breaker).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Castlevania II - Simon's Quest (USA, Europe) (Game Genie).cht",
+          "git_blob_sha": "8647674a3b814e4753958354824dfe29656e57b3",
+          "bytes": 588,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Castlevania II - Simon's Quest (USA, Europe) (Game Genie).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Legend of Zelda, The (USA, Europe) (Action Replay).cht",
+          "git_blob_sha": "caabbfeeb8f513f74fa0667fc7af79d659e41ad3",
+          "bytes": 170,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Legend of Zelda, The (USA, Europe) (Action Replay).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Legend of Zelda, The (USA, Europe) (Game Genie).cht",
+          "git_blob_sha": "e646a1cfcca89f85f25a2100fa5748db9b1e01a9",
+          "bytes": 3257,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Legend of Zelda, The (USA, Europe) (Game Genie).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. (World) (Action Replay).cht",
+          "git_blob_sha": "47037b55714141d50e559f43dd34d8fed3915d25",
+          "bytes": 137,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. (World) (Action Replay).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. (World) (Game Genie).cht",
+          "git_blob_sha": "eea741db456c85edbd734c272f35b6b7204d460b",
+          "bytes": 296,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. (World) (Game Genie).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. 2 (USA, Europe) (Game Genie).cht",
+          "git_blob_sha": "565418981d91d20b8d5bf822ed33828c59075dfb",
+          "bytes": 1814,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. 2 (USA, Europe) (Game Genie).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. 3 (World) (Game Genie).cht",
+          "git_blob_sha": "142850c863aa31e788559045f03c1d6bcdebc107",
+          "bytes": 1585,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Super Mario Bros. 3 (World) (Game Genie).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Nintendo Entertainment System/Tetris (USA, Europe) (Game Genie).cht",
+          "git_blob_sha": "d66efcf4ab03d13185e4867a21de96ae443e3283",
+          "bytes": 880,
+          "original_folder": "Nintendo - Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Nintendo Entertainment System/Tetris (USA, Europe) (Game Genie).cht"
+        },
+        {
+          "source_path": "cht/Nintendo - Super Nintendo Entertainment System/Kirby Super Star (USA) (Game Genie).cht",
+          "git_blob_sha": "fff50a5fa3480de901a236bf8f81ba75b2936df3",
+          "bytes": 604,
+          "original_folder": "Nintendo - Super Nintendo Entertainment System",
+          "pinned_upstream_url": "https://github.com/gcmcom/libretro-database/blob/4667ad6247352f57d44f2ad7b36f19f3e804aba9/cht/Nintendo - Super Nintendo Entertainment System/Kirby Super Star (USA) (Game Genie).cht"
+        }
+      ]
+    },
+    {
+      "id": "smoker1-retroarch-174",
+      "repository": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats",
+      "snapshot_commit": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+      "source_git_tree": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "code_payloads_included": false,
+      "original_cht_file_occurrences": 518,
+      "occurrences_matching_historical_exact_bytes": 441,
+      "file_occurrences_not_matching_three_corpora": 75,
+      "distinct_blob_sha1_not_matching_three_corpora": 66,
+      "unmatched_source_file_metadata": [
+        {
+          "source_path": "Citra/000400000007F500.00000000 Urban Trial Freestyle (CTR-N-AT8P) (W).cht",
+          "git_blob_sha": "b5621eb5d193097ece6dd9f26ae1db7e30dfd030",
+          "bytes": 1743,
+          "original_folder": "Citra",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Citra/000400000007F500.00000000 Urban Trial Freestyle (CTR-N-AT8P) (W).cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/Fghthist FBNeo.cht",
+          "git_blob_sha": "bcd3cac4bb68f1c57edd8626a3e7f84c496135ab",
+          "bytes": 1749,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/Fghthist FBNeo.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/fghthist.cht",
+          "git_blob_sha": "d4107bffe080b4b42a96f42f380b7ea5753c8646",
+          "bytes": 4024,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/fghthist.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/fghthistuc.cht",
+          "git_blob_sha": "bd52321194bc3b40d0d1d7563fa81e8e39eb3b63",
+          "bytes": 1749,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/fghthistuc.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/hsf2.cht",
+          "git_blob_sha": "95b53077e93a5aba4479778e46a175de9d762114",
+          "bytes": 3952,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/hsf2.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/kof94.cht",
+          "git_blob_sha": "6c95dec1ad198f14de462cc243555b3bfc1f287d",
+          "bytes": 2247,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/kof94.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/kof95.cht",
+          "git_blob_sha": "7a4c5fa1d955320e250a69381699909e56d0c2d7",
+          "bytes": 2811,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/kof95.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mk.cht",
+          "git_blob_sha": "6af63beadb61905efad05ec2cdad3524c5b72ce0",
+          "bytes": 1162,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mk.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mk2.cht",
+          "git_blob_sha": "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+          "bytes": 2308,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mk2.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mk2chal.cht",
+          "git_blob_sha": "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+          "bytes": 2308,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mk2chal.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mk2p.cht",
+          "git_blob_sha": "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+          "bytes": 2308,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mk2p.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mk2ute.cht",
+          "git_blob_sha": "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+          "bytes": 2308,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mk2ute.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mk3.cht",
+          "git_blob_sha": "599943cd5b14ec7e4de5012c1910d7b4af359b9a",
+          "bytes": 2339,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mk3.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mkla1.cht",
+          "git_blob_sha": "69bb4cf23db1c6db44a18e6fdb6a69b56112d4d6",
+          "bytes": 593,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mkla1.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mknifty666.cht",
+          "git_blob_sha": "024f29e59c6f2464ccba02f6ed1adddf8629c71d",
+          "bytes": 1164,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mknifty666.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/mktturbo.cht",
+          "git_blob_sha": "6ee38b7c1dcee746486e1fa1531e0945f9612b3c",
+          "bytes": 1161,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/mktturbo.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfa.cht",
+          "git_blob_sha": "cbb22da1b0daf427d47c3fec2791e2c0d6f75c29",
+          "bytes": 5052,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfa.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfa2.cht",
+          "git_blob_sha": "a6add6cff642daa432e333274f22d94b452b2823",
+          "bytes": 2816,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfa2.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfa2u.cht",
+          "git_blob_sha": "9c3786fff5f7e32592ceedcb63598ae31aa7108c",
+          "bytes": 5148,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfa2u.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfa2uhc.cht",
+          "git_blob_sha": "a53e401c759c0909ebb43c080c93e9b5b6edd3f1",
+          "bytes": 4075,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfa2uhc.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfa2ur1.cht",
+          "git_blob_sha": "a392f6bda0718df055812966340a5f9a1bd45f3b",
+          "bytes": 5097,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfa2ur1.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfiii.cht",
+          "git_blob_sha": "d1f6af7230e7b20f22fd049bd20e8cfa20c32436",
+          "bytes": 3378,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfiii.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfiii2.cht",
+          "git_blob_sha": "6ea42f2a2ad0717e921dc98e19063ddeba204887",
+          "bytes": 3394,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfiii2.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfiii3.cht",
+          "git_blob_sha": "443661432129f5e2336ac60b651a20ef5ba225ea",
+          "bytes": 3969,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfiii3.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfzch.cht",
+          "git_blob_sha": "17ae91791ac7c97dba5b537bb2f39d78145e7b84",
+          "bytes": 4510,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfzch.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/sfzcha.cht",
+          "git_blob_sha": "a2387070b4c98bceda1bb9f288c3016c1e930e88",
+          "bytes": 4511,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/sfzcha.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/simpsons2p.cht",
+          "git_blob_sha": "238798d1b431ee84dddd00a5a76c8df52e91c806",
+          "bytes": 3488,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/simpsons2p.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/ssf2tnl.cht",
+          "git_blob_sha": "51cab2f2cb4b7995b5bedf51f80007210769c6d7",
+          "bytes": 5824,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/ssf2tnl.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/umk3.cht",
+          "git_blob_sha": "9cdc0e61b93a6e106b88dadf44d5cf098c1ef75b",
+          "bytes": 2339,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/umk3.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/umk3pb1.cht",
+          "git_blob_sha": "170c0a18603710431b9c7777a856b069fa892eeb",
+          "bytes": 2275,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/umk3pb1.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/umk3uc.cht",
+          "git_blob_sha": "148e8fe00a2b40d604cacaae44cdd3c12b24c0fe",
+          "bytes": 1145,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/umk3uc.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/umk3uk.cht",
+          "git_blob_sha": "ecdfbd76b94d0c8599afe7207ba4d181d0b82b92",
+          "bytes": 2331,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/umk3uk.cht"
+        },
+        {
+          "source_path": "FinalBurn Neo/wh2.cht",
+          "git_blob_sha": "240286456ef08734bfa340a898e87f7e6292aa63",
+          "bytes": 3399,
+          "original_folder": "FinalBurn Neo",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/FinalBurn Neo/wh2.cht"
+        },
+        {
+          "source_path": "Gambatte/Street Fighter Alpha - Warriors' Dreams (USA) GG.cht",
+          "git_blob_sha": "7fa9512c350b72a24c37dcacb6578de7d80b2c33",
+          "bytes": 2808,
+          "original_folder": "Gambatte",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Gambatte/Street Fighter Alpha - Warriors' Dreams (USA) GG.cht"
+        },
+        {
+          "source_path": "Gambatte/Street Fighter II (USA, Europe) (Rev A).cht",
+          "git_blob_sha": "0de28d51687903373420802343c673e6f25ce88f",
+          "bytes": 1379,
+          "original_folder": "Gambatte",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Gambatte/Street Fighter II (USA, Europe) (Rev A).cht"
+        },
+        {
+          "source_path": "Mednafen NeoPop/Fatal Fury F-Contact (JUE) [!].cht",
+          "git_blob_sha": "3e9bfc6744d079cfcb4c5d37b7b941e8d2d54bee",
+          "bytes": 2809,
+          "original_folder": "Mednafen NeoPop",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen NeoPop/Fatal Fury F-Contact (JUE) [!].cht"
+        },
+        {
+          "source_path": "Mednafen NeoPop/King of Fighters R-1 (JUE) [M][!].cht",
+          "git_blob_sha": "b3f4820e823cd04d00ca2f1d9eebacdf44a41664",
+          "bytes": 2245,
+          "original_folder": "Mednafen NeoPop",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen NeoPop/King of Fighters R-1 (JUE) [M][!].cht"
+        },
+        {
+          "source_path": "Mednafen NeoPop/King of Fighters R-2 (JUE) [!].cht",
+          "git_blob_sha": "ec014159803c2357dbecf7bf9bbc85dab006e13f",
+          "bytes": 2313,
+          "original_folder": "Mednafen NeoPop",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen NeoPop/King of Fighters R-2 (JUE) [!].cht"
+        },
+        {
+          "source_path": "Mednafen NeoPop/Metal Slug - 1st Mission (JUE).cht",
+          "git_blob_sha": "4fc18cd97f2a85b47d011e838ded7704d99b5e01",
+          "bytes": 5517,
+          "original_folder": "Mednafen NeoPop",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen NeoPop/Metal Slug - 1st Mission (JUE).cht"
+        },
+        {
+          "source_path": "Mednafen NeoPop/Metal Slug - 2nd Mission (JUE) [!].cht",
+          "git_blob_sha": "56f44450fad48bbd6f9bd79bbb2b12feac3daf86",
+          "bytes": 2877,
+          "original_folder": "Mednafen NeoPop",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen NeoPop/Metal Slug - 2nd Mission (JUE) [!].cht"
+        },
+        {
+          "source_path": "Mednafen NeoPop/SNK Gals' Fighters (USA, Europe).cht",
+          "git_blob_sha": "1c9d914899c8610772d83006caffb85cb8ade15c",
+          "bytes": 2884,
+          "original_folder": "Mednafen NeoPop",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen NeoPop/SNK Gals' Fighters (USA, Europe).cht"
+        },
+        {
+          "source_path": "Mednafen NeoPop/SNK Vs Capcom - Match of The Millennium (JUE) [!].cht",
+          "git_blob_sha": "3c952e7cecbd971929378eca78114539d0d9743a",
+          "bytes": 3362,
+          "original_folder": "Mednafen NeoPop",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen NeoPop/SNK Vs Capcom - Match of The Millennium (JUE) [!].cht"
+        },
+        {
+          "source_path": "Mednafen VB/HF Demo.cht",
+          "git_blob_sha": "0fb92bdc8aec09ba9739d8ad01d2d89e11fb2082",
+          "bytes": 1151,
+          "original_folder": "Mednafen VB",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen VB/HF Demo.cht"
+        },
+        {
+          "source_path": "Mednafen VB/Virtual Boy Wario Land (Japan, USA).cht",
+          "git_blob_sha": "10fb2df5299149becce303d074761395adade4d4",
+          "bytes": 2244,
+          "original_folder": "Mednafen VB",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen VB/Virtual Boy Wario Land (Japan, USA).cht"
+        },
+        {
+          "source_path": "Mednafen VB/Virtual Boy Wario Land.cht",
+          "git_blob_sha": "0bccd9b5246c255be50faec9eb780cb896b2fb61",
+          "bytes": 840,
+          "original_folder": "Mednafen VB",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Mednafen VB/Virtual Boy Wario Land.cht"
+        },
+        {
+          "source_path": "PicoDrive/Mortal Kombat (World) (v1.1).cht",
+          "git_blob_sha": "bd6aed231150bec8098bdc58917971796285485f",
+          "bytes": 1388,
+          "original_folder": "PicoDrive",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/PicoDrive/Mortal Kombat (World) (v1.1).cht"
+        },
+        {
+          "source_path": "PicoDrive/mortalkombatu.cht",
+          "git_blob_sha": "f99d2b29e5b0e4ef361fdb20f0a65ab1c5f2516a",
+          "bytes": 1436,
+          "original_folder": "PicoDrive",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/PicoDrive/mortalkombatu.cht"
+        },
+        {
+          "source_path": "PrBoom/doom.cht",
+          "git_blob_sha": "511a777134133eab2ce00e05d5d8b51819860781",
+          "bytes": 8272,
+          "original_folder": "PrBoom",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/PrBoom/doom.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/Capcom Vs. SNK Millennium Fight 2000 Pro.cht",
+          "git_blob_sha": "a38aeef4ea6d0109995dddbe2a72e132e8eccb5b",
+          "bytes": 3423,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/Capcom Vs. SNK Millennium Fight 2000 Pro.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht",
+          "git_blob_sha": "5f633c64c0f3a610d91d7cecb6022ea4e148c51c",
+          "bytes": 3440,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/CvsS2 NAOMI MAME.cht",
+          "git_blob_sha": "b9620da07dd10f8543ed65ba1953bd176b53e9f5",
+          "bytes": 3541,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/CvsS2 NAOMI MAME.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/Marvel vs. Capcom 2.cht",
+          "git_blob_sha": "4762065cffbd1e30010d278821f9aa02b630fbc0",
+          "bytes": 3956,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/Marvel vs. Capcom 2.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/MetalSlug6-NAOMI.cht",
+          "git_blob_sha": "d207ef5e169483719f67af1a509bfde4ef2dc5a4",
+          "bytes": 1711,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/MetalSlug6-NAOMI.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/MvsC2 NAOMI MAME.cht",
+          "git_blob_sha": "ec4ed1ac0e53abb27406f940ed2fd2ca897113ce",
+          "bytes": 4115,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/MvsC2 NAOMI MAME.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/SFZ3U NAOMI MAME.cht",
+          "git_blob_sha": "b1bc982ebab1667146cd58d18ca6d83662baa3ce",
+          "bytes": 1753,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/SFZ3U NAOMI MAME.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/Street Fighter Zero 3 Upper.cht",
+          "git_blob_sha": "afd9195b08024833a50472149e06f1b9399e6448",
+          "bytes": 2872,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/Street Fighter Zero 3 Upper.cht"
+        },
+        {
+          "source_path": "Reicast-NAOMI/capsnk-NAOMI.cht",
+          "git_blob_sha": "72358b93c3263372dbad0ea30c4a6722e04a1e25",
+          "bytes": 3429,
+          "original_folder": "Reicast-NAOMI",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast-NAOMI/capsnk-NAOMI.cht"
+        },
+        {
+          "source_path": "Reicast/Capcom Vs. SNK Millennium Fight 2000.cht",
+          "git_blob_sha": "a38aeef4ea6d0109995dddbe2a72e132e8eccb5b",
+          "bytes": 3423,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Capcom Vs. SNK Millennium Fight 2000.cht"
+        },
+        {
+          "source_path": "Reicast/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht",
+          "git_blob_sha": "5f633c64c0f3a610d91d7cecb6022ea4e148c51c",
+          "bytes": 3440,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht"
+        },
+        {
+          "source_path": "Reicast/Capcom vs. SNK (US).cht",
+          "git_blob_sha": "602e4b3512a68e3d2716cf9e834be67fb718e1f1",
+          "bytes": 2833,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Capcom vs. SNK (US).cht"
+        },
+        {
+          "source_path": "Reicast/Capcom vs. SNK 2 - Millionaire Fighting 2001 v1.001 (2001)(Capcom)(NTSC)(JP)(en)[!].cht",
+          "git_blob_sha": "93a828b9b2a3470bbef34de72ea4fc36fc2489fa",
+          "bytes": 3311,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Capcom vs. SNK 2 - Millionaire Fighting 2001 v1.001 (2001)(Capcom)(NTSC)(JP)(en)[!].cht"
+        },
+        {
+          "source_path": "Reicast/Hydro Thunder Version 1.0 (RetroArch Cheats).cht",
+          "git_blob_sha": "4d99d9dbb6ad01d17daaa98ef2d8db3b2df6a862",
+          "bytes": 6566,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Hydro Thunder Version 1.0 (RetroArch Cheats).cht"
+        },
+        {
+          "source_path": "Reicast/Hydro Thunder Version 1.1 (RetroArch Cheats).cht",
+          "git_blob_sha": "1dc7d7403b79ac4a3096803e60e8f24d4d8b50a0",
+          "bytes": 6566,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Hydro Thunder Version 1.1 (RetroArch Cheats).cht"
+        },
+        {
+          "source_path": "Reicast/Hydro Thunder v1.020 (1999)(Midway)(NTSC)(US)[!].cht",
+          "git_blob_sha": "0c4b3c1f2fa6edb1237ab31167aa225706772d13",
+          "bytes": 6374,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Hydro Thunder v1.020 (1999)(Midway)(NTSC)(US)[!].cht"
+        },
+        {
+          "source_path": "Reicast/Marvel vs. Capcom 2 v1.001 (2000)(Capcom)(NTSC)(US)[!].cht",
+          "git_blob_sha": "de3678c7d48942f9950b1423cc95052432a1a54f",
+          "bytes": 3779,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Marvel vs. Capcom 2 v1.001 (2000)(Capcom)(NTSC)(US)[!].cht"
+        },
+        {
+          "source_path": "Reicast/Marvel vs. Capcom 2.cht",
+          "git_blob_sha": "4762065cffbd1e30010d278821f9aa02b630fbc0",
+          "bytes": 3956,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Marvel vs. Capcom 2.cht"
+        },
+        {
+          "source_path": "Reicast/Street Fighter Zero 3 Upper.cht",
+          "git_blob_sha": "afd9195b08024833a50472149e06f1b9399e6448",
+          "bytes": 2872,
+          "original_folder": "Reicast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Reicast/Street Fighter Zero 3 Upper.cht"
+        },
+        {
+          "source_path": "Sega - Dreamcast/Hydro Thunder Version 1.0 (RetroArch Cheats).cht",
+          "git_blob_sha": "4d99d9dbb6ad01d17daaa98ef2d8db3b2df6a862",
+          "bytes": 6566,
+          "original_folder": "Sega - Dreamcast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Sega - Dreamcast/Hydro Thunder Version 1.0 (RetroArch Cheats).cht"
+        },
+        {
+          "source_path": "Sega - Dreamcast/Hydro Thunder Version 1.1 (RetroArch Cheats).cht",
+          "git_blob_sha": "1dc7d7403b79ac4a3096803e60e8f24d4d8b50a0",
+          "bytes": 6566,
+          "original_folder": "Sega - Dreamcast",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Sega - Dreamcast/Hydro Thunder Version 1.1 (RetroArch Cheats).cht"
+        },
+        {
+          "source_path": "Sega - Saturn/RomHacking Cheats/Mortal Kombat II (USA).cht",
+          "git_blob_sha": "e8e56c07c9552563a920cf4776dba767064d0b60",
+          "bytes": 3656,
+          "original_folder": "Sega - Saturn",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Sega - Saturn/RomHacking Cheats/Mortal Kombat II (USA).cht"
+        },
+        {
+          "source_path": "Sega - Saturn/RomHacking Cheats/Mortal Kombat Trilogy (USA).cht",
+          "git_blob_sha": "c464d1b7227bb28aebceb92018dbc96cd2c5cb4e",
+          "bytes": 1787,
+          "original_folder": "Sega - Saturn",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Sega - Saturn/RomHacking Cheats/Mortal Kombat Trilogy (USA).cht"
+        },
+        {
+          "source_path": "Sega - Saturn/RomHacking Cheats/Ultimate Mortal Kombat 3 (USA).cht",
+          "git_blob_sha": "aa63b09c8e925b940f2ab762381c883f7509c227",
+          "bytes": 4174,
+          "original_folder": "Sega - Saturn",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Sega - Saturn/RomHacking Cheats/Ultimate Mortal Kombat 3 (USA).cht"
+        },
+        {
+          "source_path": "Snes9x 2010/Mortal Kombat (USA).cht",
+          "git_blob_sha": "cb61c7bad2e3aae5749058d4ac8070e7b4755ca0",
+          "bytes": 941,
+          "original_folder": "Snes9x 2010",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/Snes9x 2010/Mortal Kombat (USA).cht"
+        },
+        {
+          "source_path": "VBA Next/0329 - Super Street Fighter II Turbo Revival (U)(Nobody).cht",
+          "git_blob_sha": "425db3d2bdb8cde09ca60e0ea4c3de69bb5935d9",
+          "bytes": 91056,
+          "original_folder": "VBA Next",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/VBA Next/0329 - Super Street Fighter II Turbo Revival (U)(Nobody).cht"
+        },
+        {
+          "source_path": "ecwolf/WOLF3D.cht",
+          "git_blob_sha": "22bc6d448a5477b1601dabb96178a962563aba53",
+          "bytes": 1687,
+          "original_folder": "ecwolf",
+          "pinned_upstream_url": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats/blob/d07b731562d3a68d089dc0a1ba62311b65a1d312/ecwolf/WOLF3D.cht"
+        }
+      ]
+    }
+  ]
+}

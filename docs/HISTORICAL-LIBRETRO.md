@@ -87,3 +87,10 @@ distinct games, functioning codes, or legally redistributable cheat bodies.
 This audit deliberately does not copy any historical or external payload.
 The combined report is published alongside the historical filename
 inventory as a CI artifact, not inserted into archived-cheat bundles.
+
+
+## Additional historical RetroArch mirror audit (2026-10-12)
+
+Two further pinned GitHub forks have been checked by **Git blob SHA-1**, not assumed game identity. The [research mirror-lead inventory](../research/retroarch-mirror-source-gaps-v1.json) pins original source paths, Git blobs, sizes, repository commits and original source folders. `gcmcom/libretro-database` has 10,872 `.cht` file occurrences, of which **10,861 exactly match byte hashes in the pinned 2019 Emupedia fork**. Eleven occurrences do not match any of the three compared inventories: archived Libretro baseline, Emupedia, or archived BitHeX delta. A second old RetroArch cheats fork, `Smoker1/RetroArch-174-and-above-Cheats`, has 518 `.cht` files, of which 75 (66 distinct Git blobs) are absent from those three compared byte inventories. Across the two sources this is **86 occurrences, 77 distinct candidate blobs**. Smoker1 also has 98 separate `.ini` files, **not included in this `.cht`-specific audit**. None of these counts is an independently verified game count or a comprehensive global archive novelty claim.
+
+Both new forks lack verified original-author blanket redistribution grants; **no cheat bodies are archived or added to the external platform bundles by this research report**. The historical audit workflow now verifies the frozen source Git tree metadata online, independently recomputes the byte overlap, checks the committed metadata-only report, and publishes the standalone file `retroarch-mirror-gaps.json` in its CI artifact. All three Libretro-family comparison corpora remain pinned. A matching SHA records byte identity only, never playable compatibility or legal permission.
