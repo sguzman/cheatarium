@@ -120,6 +120,22 @@ def build_manifest(root):
         raise ValueError("Stale, altered, or miscounted external Git-blob overlap audit")
     if overlap_doc["reference_files"] != external_catalog["reference_files"]:
         raise ValueError("External reference overlap and catalog counts disagree")
+    # Compare Git blobs from archived source manifests to the same pinned
+    # link-only source manifests. Source byte identity is not reuse permission.
+    from audit_external_archive_overlap import build as build_archive_overlap
+    archive_overlap_rel = "reports/external-vs-archive-blobs.json"
+    archive_overlap = checked_json(safe_path(root, archive_overlap_rel))
+    if archive_overlap != build_archive_overlap(ROOT):
+        raise ValueError("External/archive exact-byte comparison is stale or altered")
+    if (archive_overlap["external_reference_files"] != external_catalog["reference_files"]
+            or archive_overlap["external_distinct_git_blobs"] != overlap_doc["distinct_git_blobs"]
+            or archive_overlap["external_references_matching_archived_bytes"] +
+               archive_overlap["external_references_without_archived_byte_match"] !=
+               archive_overlap["external_reference_files"]):
+        raise ValueError("External/archive byte-overlap counts disagree")
+    manifest_files.append({"path": archive_overlap_rel,
+                           **digest(safe_path(root, archive_overlap_rel))})
+    named_paths.add(archive_overlap_rel)
     manifest_files.append({"path": overlap_rel, **digest(safe_path(root, overlap_rel))})
     named_paths.add(overlap_rel)
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
@@ -364,6 +380,9 @@ def build_manifest(root):
         "console_bundles": len(entries),
         "external_reference_files": external_catalog["reference_files"],
         "external_distinct_git_blobs": overlap_doc["distinct_git_blobs"],
+        "external_references_matching_archived_bytes": archive_overlap["external_references_matching_archived_bytes"],
+        "external_distinct_git_blobs_matching_archive": archive_overlap["external_distinct_git_blobs_matching_archive"],
+        "external_distinct_git_blobs_without_archive_byte_match": archive_overlap["external_distinct_git_blobs_without_archive_byte_match"],
         "external_repeated_blob_excess_occurrences": overlap_doc["repeated_blob_excess_occurrences"],
         "external_reference_platforms": len(external_catalog["platforms"]),
         "source_files": source_files,
