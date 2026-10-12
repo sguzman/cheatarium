@@ -78,7 +78,7 @@ class HistoricalForkTests(unittest.TestCase):
         r["candidate_occurrences_by_historical_folder"] = {"NES": 2}
         with self.assertRaises(ValueError):
             validate_report(r)
-        r = compile_report([("NES/A.cht", "a" * 40, 1)], [], set())
+        r = compile_report([("NES/A.cht", "a" * 40, 1)], [], set(), [])
         r["historical_code_redistribution_rights_confirmed"] = True
         with self.assertRaises(ValueError):
             validate_report(r)
