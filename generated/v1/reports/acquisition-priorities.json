@@ -7,16 +7,16 @@
   "unique_games_or_effects_established": false,
   "gameplay_compatibility_verified": false,
   "filename_kind_is_semantic_cheat_verification": false,
-  "source_file_occurrences": 42533,
-  "source_catalogs": 30,
-  "platforms_count": 13,
-  "all_external_distinct_blob_sha1": 36426,
+  "source_file_occurrences": 42632,
+  "source_catalogs": 32,
+  "platforms_count": 15,
+  "all_external_distinct_blob_sha1": 36472,
   "distinct_blobs_matching_archived_bytes": 56,
-  "distinct_blobs_absent_from_archive": 36370,
-  "distinct_cheat_labeled_blobs_absent_from_archive": 23441,
+  "distinct_blobs_absent_from_archive": 36416,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 23487,
   "distinct_patch_labeled_blobs_absent_from_archive": 13207,
   "blobs_labeled_both_cheat_and_patch": 278,
-  "exclusive_unarchived_blobs_in_one_source": 33589,
+  "exclusive_unarchived_blobs_in_one_source": 33635,
   "shared_unarchived_blobs_in_multiple_sources": 2781,
   "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
   "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
@@ -518,6 +518,37 @@
       ]
     },
     {
+      "source_id": "smoker1-fba-official-ini",
+      "platform": "arcade-fba",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 98,
+      "cheat_labeled_occurrences": 98,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 98,
+      "distinct_blob_sha1": 45,
+      "distinct_unarchived_blob_sha1": 45,
+      "distinct_unarchived_cheat_labeled_blobs": 45,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 45,
+      "exclusive_unarchived_cheat_labeled_blobs": 45,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "FB Alpha Official Cheats/1941.ini",
+          "git_blob_sha": "628858979ad16ec83d8cbca94a5d4e4bd6e5f88b"
+        },
+        {
+          "path": "FB Alpha Official Cheats/1941j.ini",
+          "git_blob_sha": "628858979ad16ec83d8cbca94a5d4e4bd6e5f88b"
+        },
+        {
+          "path": "FB Alpha Official Cheats/1942.ini",
+          "git_blob_sha": "33b7eec5d0a62c3697d308de188854d37330203e"
+        }
+      ]
+    },
+    {
       "source_id": "rogamer97-asm-gamecube",
       "platform": "gamecube",
       "rights_status": "link_only_rights_review",
@@ -703,6 +734,29 @@
         {
           "path": "metadata/cheat.zip",
           "git_blob_sha": "891d6fb756bea4cdd0ac772b5bba507a868016ff"
+        }
+      ]
+    },
+    {
+      "source_id": "pacnpal-mupen-n64-cheatfile",
+      "platform": "n64",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "mupencheat.txt",
+          "git_blob_sha": "5708366419dd50c774b3a323ce8587f66b8533d8"
         }
       ]
     },
@@ -908,6 +962,15 @@
       "distinct_patch_labeled_blobs_absent_from_archive": 1
     },
     {
+      "platform": "arcade-fba",
+      "source_catalogs": 1,
+      "file_occurrences": 98,
+      "distinct_source_blobs": 45,
+      "distinct_blobs_absent_from_archive": 45,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 45,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
       "platform": "gamecube",
       "source_catalogs": 1,
       "file_occurrences": 30,
@@ -941,6 +1004,15 @@
       "distinct_source_blobs": 2,
       "distinct_blobs_absent_from_archive": 2,
       "distinct_cheat_labeled_blobs_absent_from_archive": 2,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "n64",
+      "source_catalogs": 1,
+      "file_occurrences": 1,
+      "distinct_source_blobs": 1,
+      "distinct_blobs_absent_from_archive": 1,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 1,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {

@@ -6,12 +6,12 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 42533,
-  "source_catalogs": 30,
-  "external_platforms": 13,
-  "distinct_git_blobs": 36426,
-  "repeated_blob_excess_occurrences": 6107,
-  "references_in_repeated_blob_groups": 9510,
+  "reference_files": 42632,
+  "source_catalogs": 32,
+  "external_platforms": 15,
+  "distinct_git_blobs": 36472,
+  "repeated_blob_excess_occurrences": 6160,
+  "references_in_repeated_blob_groups": 9588,
   "cross_source_shared_blob_groups": 2781,
   "cross_source_shared_references": 8173,
   "sources": [
@@ -86,6 +86,28 @@
     {
       "id": "libretro-mame2003plus-cheat-archive",
       "platform": "arcade-mame",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
+      }
+    },
+    {
+      "id": "smoker1-fba-official-ini",
+      "platform": "arcade-fba",
+      "reference_files": 98,
+      "distinct_git_blobs": 45,
+      "repeated_blob_excess_occurrences_within_source": 53,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 98
+      }
+    },
+    {
+      "id": "pacnpal-mupen-n64-cheatfile",
+      "platform": "n64",
       "reference_files": 1,
       "distinct_git_blobs": 1,
       "repeated_blob_excess_occurrences_within_source": 0,
@@ -367,6 +389,15 @@
       ]
     },
     {
+      "platform": "arcade-fba",
+      "reference_files": 98,
+      "distinct_git_blobs": 45,
+      "repeated_blob_excess_occurrences": 53,
+      "source_catalogs": [
+        "smoker1-fba-official-ini"
+      ]
+    },
+    {
       "platform": "arcade-mame",
       "reference_files": 2,
       "distinct_git_blobs": 2,
@@ -403,6 +434,15 @@
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
         "rogamer97-asm-gamecube"
+      ]
+    },
+    {
+      "platform": "n64",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "pacnpal-mupen-n64-cheatfile"
       ]
     },
     {
