@@ -81,7 +81,8 @@ class TestExternalBulk(unittest.TestCase):
             validate("duckstation-chtdb", broken)
 
     def test_lookup_is_link_only(self):
-        index = load(__import__("external_bulk").ROOT)[1]
+        index = next(x for x in load(__import__("external_bulk").ROOT)
+                     if x["id"] == "xenia-canary-game-patches")
         matches = lookup([index], "painkiller", "xbox-360", 4)
         self.assertTrue(matches)
         self.assertTrue(all(m["redistribution"] == "link_only_rights_review" for m in matches))
