@@ -8,12 +8,12 @@
   "independently_verified_games_or_cheat_effects": false,
   "filename_labels_are_verified_game_or_rom_build_ids": false,
   "crc_collisions_or_aliases_excluded": false,
-  "source_catalogs": 4,
-  "source_native_pnach_files": 14404,
-  "recognized_crc_filename_occurrences": 10986,
-  "unrecognized_crc_filename_occurrences": 3418,
-  "distinct_crc_label_strings": 6670,
-  "crc_labels_in_two_or_more_sources": 3349,
+  "source_catalogs": 5,
+  "source_native_pnach_files": 14452,
+  "recognized_crc_filename_occurrences": 11033,
+  "unrecognized_crc_filename_occurrences": 3419,
+  "distinct_crc_label_strings": 6675,
+  "crc_labels_in_two_or_more_sources": 3353,
   "source_rows": [
     {
       "source_id": "daowace-pcsx2-consolidated",
@@ -79,6 +79,20 @@
       ]
     },
     {
+      "source_id": "shadowninja-ps2-pnach-delta",
+      "native_pnach_file_occurrences": 48,
+      "recognized_strict_crc_labels": 47,
+      "recognizable_serial_crc_filenames": 47,
+      "crc_only_filenames": 0,
+      "crc_prefixed_title_filenames": 0,
+      "unrecognized_or_malformed_filename_labels": 1,
+      "distinct_crc_label_strings": 35,
+      "distinct_strict_serial_crc_label_pairs": 47,
+      "unrecognized_samples": [
+        "SLUS-20675.pnach"
+      ]
+    },
+    {
       "source_id": "xs1l3n7x-pcsx2",
       "native_pnach_file_occurrences": 579,
       "recognized_strict_crc_labels": 573,
@@ -121,6 +135,16 @@
     },
     {
       "source_a": "daowace-pcsx2-consolidated",
+      "source_b": "shadowninja-ps2-pnach-delta",
+      "shared_crc_label_strings": 29,
+      "crc_labels_only_a": 5226,
+      "crc_labels_only_b": 6,
+      "shared_strict_serial_crc_label_pairs": 29,
+      "serial_crc_label_pairs_only_a": 5432,
+      "serial_crc_label_pairs_only_b": 18
+    },
+    {
+      "source_a": "daowace-pcsx2-consolidated",
       "source_b": "xs1l3n7x-pcsx2",
       "shared_crc_label_strings": 498,
       "crc_labels_only_a": 4757,
@@ -141,6 +165,16 @@
     },
     {
       "source_a": "pcsx2-official-patches",
+      "source_b": "shadowninja-ps2-pnach-delta",
+      "shared_crc_label_strings": 27,
+      "crc_labels_only_a": 4508,
+      "crc_labels_only_b": 8,
+      "shared_strict_serial_crc_label_pairs": 27,
+      "serial_crc_label_pairs_only_a": 4679,
+      "serial_crc_label_pairs_only_b": 20
+    },
+    {
+      "source_a": "pcsx2-official-patches",
       "source_b": "xs1l3n7x-pcsx2",
       "shared_crc_label_strings": 390,
       "crc_labels_only_a": 4145,
@@ -151,12 +185,32 @@
     },
     {
       "source_a": "ps2-widescreen-staging",
+      "source_b": "shadowninja-ps2-pnach-delta",
+      "shared_crc_label_strings": 2,
+      "crc_labels_only_a": 230,
+      "crc_labels_only_b": 33,
+      "shared_strict_serial_crc_label_pairs": 0,
+      "serial_crc_label_pairs_only_a": 0,
+      "serial_crc_label_pairs_only_b": 47
+    },
+    {
+      "source_a": "ps2-widescreen-staging",
       "source_b": "xs1l3n7x-pcsx2",
       "shared_crc_label_strings": 35,
       "crc_labels_only_a": 197,
       "crc_labels_only_b": 524,
       "shared_strict_serial_crc_label_pairs": 0,
       "serial_crc_label_pairs_only_a": 0,
+      "serial_crc_label_pairs_only_b": 504
+    },
+    {
+      "source_a": "shadowninja-ps2-pnach-delta",
+      "source_b": "xs1l3n7x-pcsx2",
+      "shared_crc_label_strings": 0,
+      "crc_labels_only_a": 35,
+      "crc_labels_only_b": 559,
+      "shared_strict_serial_crc_label_pairs": 0,
+      "serial_crc_label_pairs_only_a": 47,
       "serial_crc_label_pairs_only_b": 504
     }
   ],

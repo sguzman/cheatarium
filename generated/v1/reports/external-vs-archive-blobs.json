@@ -8,12 +8,12 @@
   "proves_gameplay_compatibility": false,
   "archive_manifest_file_occurrences": 67834,
   "archive_distinct_git_blobs": 57446,
-  "external_reference_files": 42483,
-  "external_distinct_git_blobs": 36376,
+  "external_reference_files": 42533,
+  "external_distinct_git_blobs": 36426,
   "external_references_matching_archived_bytes": 73,
-  "external_references_without_archived_byte_match": 42410,
+  "external_references_without_archived_byte_match": 42460,
   "external_distinct_git_blobs_matching_archive": 56,
-  "external_distinct_git_blobs_without_archive_byte_match": 36320,
+  "external_distinct_git_blobs_without_archive_byte_match": 36370,
   "sources": [
     {
       "source_id": "duckstation-chtdb",
@@ -51,6 +51,39 @@
     {
       "source_id": "saramagrean-psp-cwcheat",
       "platform": "psp",
+      "reference_files": 1,
+      "distinct_external_git_blobs": 1,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 1,
+      "distinct_git_blobs_without_archived_byte_match": 1,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "shadowninja-ps2-pnach-delta",
+      "platform": "ps2",
+      "reference_files": 48,
+      "distinct_external_git_blobs": 48,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 48,
+      "distinct_git_blobs_without_archived_byte_match": 48,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "libretro-mame2010-cheat-archive",
+      "platform": "arcade-mame",
+      "reference_files": 1,
+      "distinct_external_git_blobs": 1,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 1,
+      "distinct_git_blobs_without_archived_byte_match": 1,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "libretro-mame2003plus-cheat-archive",
+      "platform": "arcade-mame",
       "reference_files": 1,
       "distinct_external_git_blobs": 1,
       "matches_archived_blob": 0,
@@ -387,6 +420,15 @@
       "distinct_git_blobs_without_archived_byte_match": 868
     },
     {
+      "platform": "arcade-mame",
+      "reference_files": 2,
+      "matches_archived_blob": 0,
+      "references_without_archived_byte_match": 2,
+      "distinct_external_git_blobs": 2,
+      "distinct_git_blobs_already_archived": 0,
+      "distinct_git_blobs_without_archived_byte_match": 2
+    },
+    {
       "platform": "dreamcast",
       "reference_files": 387,
       "matches_archived_blob": 0,
@@ -424,12 +466,12 @@
     },
     {
       "platform": "ps2",
-      "reference_files": 14404,
+      "reference_files": 14452,
       "matches_archived_blob": 5,
-      "references_without_archived_byte_match": 14399,
-      "distinct_external_git_blobs": 14124,
+      "references_without_archived_byte_match": 14447,
+      "distinct_external_git_blobs": 14172,
       "distinct_git_blobs_already_archived": 5,
-      "distinct_git_blobs_without_archived_byte_match": 14119
+      "distinct_git_blobs_without_archived_byte_match": 14167
     },
     {
       "platform": "ps3",

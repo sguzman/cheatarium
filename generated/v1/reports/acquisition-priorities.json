@@ -7,16 +7,16 @@
   "unique_games_or_effects_established": false,
   "gameplay_compatibility_verified": false,
   "filename_kind_is_semantic_cheat_verification": false,
-  "source_file_occurrences": 42483,
-  "source_catalogs": 27,
-  "platforms_count": 12,
-  "all_external_distinct_blob_sha1": 36376,
+  "source_file_occurrences": 42533,
+  "source_catalogs": 30,
+  "platforms_count": 13,
+  "all_external_distinct_blob_sha1": 36426,
   "distinct_blobs_matching_archived_bytes": 56,
-  "distinct_blobs_absent_from_archive": 36320,
-  "distinct_cheat_labeled_blobs_absent_from_archive": 23391,
+  "distinct_blobs_absent_from_archive": 36370,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 23441,
   "distinct_patch_labeled_blobs_absent_from_archive": 13207,
   "blobs_labeled_both_cheat_and_patch": 278,
-  "exclusive_unarchived_blobs_in_one_source": 33539,
+  "exclusive_unarchived_blobs_in_one_source": 33589,
   "shared_unarchived_blobs_in_multiple_sources": 2781,
   "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
   "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
@@ -487,6 +487,37 @@
       ]
     },
     {
+      "source_id": "shadowninja-ps2-pnach-delta",
+      "platform": "ps2",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 48,
+      "cheat_labeled_occurrences": 48,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 48,
+      "distinct_blob_sha1": 48,
+      "distinct_unarchived_blob_sha1": 48,
+      "distinct_unarchived_cheat_labeled_blobs": 48,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 48,
+      "exclusive_unarchived_cheat_labeled_blobs": 48,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "SLES-50232_78168525.pnach",
+          "git_blob_sha": "b612c8559ba2d8ca1eefef2a2d27af4a7c09d08a"
+        },
+        {
+          "path": "SLES-52535_31F59B31.pnach",
+          "git_blob_sha": "4af5b604bb47f08c93c1e1668476f2366309f047"
+        },
+        {
+          "path": "SLES-53065_AC3C1147.pnach",
+          "git_blob_sha": "76f61b5e37adff9e7370356ac76e1d9bbeb846f1"
+        }
+      ]
+    },
+    {
       "source_id": "rogamer97-asm-gamecube",
       "platform": "gamecube",
       "rights_status": "link_only_rights_review",
@@ -626,6 +657,52 @@
         {
           "path": "cheat.db",
           "git_blob_sha": "216dc9adb6d9192c7e0abf4a1108ca46f36cf3bc"
+        }
+      ]
+    },
+    {
+      "source_id": "libretro-mame2003plus-cheat-archive",
+      "platform": "arcade-mame",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "metadata/cheat.dat",
+          "git_blob_sha": "8af625d6220b0abc5f5175f59609fa3b2ac23f71"
+        }
+      ]
+    },
+    {
+      "source_id": "libretro-mame2010-cheat-archive",
+      "platform": "arcade-mame",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "metadata/cheat.zip",
+          "git_blob_sha": "891d6fb756bea4cdd0ac772b5bba507a868016ff"
         }
       ]
     },
@@ -778,11 +855,11 @@
     },
     {
       "platform": "ps2",
-      "source_catalogs": 4,
-      "file_occurrences": 14404,
-      "distinct_source_blobs": 14124,
-      "distinct_blobs_absent_from_archive": 14119,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 5851,
+      "source_catalogs": 5,
+      "file_occurrences": 14452,
+      "distinct_source_blobs": 14172,
+      "distinct_blobs_absent_from_archive": 14167,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 5899,
       "distinct_patch_labeled_blobs_absent_from_archive": 8290
     },
     {
@@ -846,6 +923,15 @@
       "distinct_source_blobs": 14,
       "distinct_blobs_absent_from_archive": 14,
       "distinct_cheat_labeled_blobs_absent_from_archive": 14,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "arcade-mame",
+      "source_catalogs": 2,
+      "file_occurrences": 2,
+      "distinct_source_blobs": 2,
+      "distinct_blobs_absent_from_archive": 2,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 2,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
