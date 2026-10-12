@@ -170,6 +170,24 @@ def build_manifest(root):
     manifest_files.append({"path": priorities_rel,
                            **digest(safe_path(root, priorities_rel))})
     named_paths.add(priorities_rel)
+    # Record pinned upstream README/LICENSE provenance that explains why the
+    # highest-volume external catalogs still lack verified per-code rights.
+    # This is review evidence only, never an automatic import authorization.
+    from audit_acquisition_rights import build as audit_acquisition_rights
+    rights_rel = "reports/acquisition-rights-review.json"
+    rights = checked_json(safe_path(root, rights_rel))
+    if rights != audit_acquisition_rights(ROOT):
+        raise ValueError("Stale or altered pinned acquisition rights evidence")
+    if (rights["source_catalogs"] != priorities["source_catalogs"]
+            or rights["rights_reviews_are_legal_permissions"] is not False
+            or rights["cheat_or_patch_bodies_included"] is not False
+            or rights["no_automatic_rights_clearance"] is not True):
+        raise ValueError("Acquisition rights evidence incorrectly grants reuse")
+    if rights_rel in named_paths:
+        raise ValueError("Duplicate acquisition rights audit artifact")
+    named_paths.add(rights_rel)
+    manifest_files.append({"path": rights_rel,
+                           **digest(safe_path(root, rights_rel))})
     # Strict native 16hex Switch title/build filename comparisons, and
     # separate title-only JSON mirror labels, without copying code bodies.
     from audit_switch_external_title_build import build as audit_switch_external
