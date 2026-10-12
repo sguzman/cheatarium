@@ -132,6 +132,21 @@
         }
       ],
       "recommended_clearance": "Check original CTRPF/ActionReplay code authors and possible Sharkive migration before approving any new source-code archive."
+    },
+    {
+      "source_id": "ps2-widescreen-staging",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "00677ff9b77294bef890ef56e8721fad0ddc0710",
+          "evidence_type": "multiple_upstream_cheat_sources"
+        }
+      ],
+      "recommended_clearance": "Trace the 3,632 staged PCSX2 widescreen PNACH patch authors and their permission terms; identify whether source is redundant with released PCSX2 patch packages before considering file-level preservation."
     }
   ]
 }

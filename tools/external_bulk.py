@@ -153,6 +153,12 @@ SOURCES = {
         "platform": "ps2", "expected": {"cheat": 579},
         "rights_note": "Original PCSX2 cheat conversion project credits independent Ultimate PCSX2 Cheater and CheatDevice contributors, but the pinned tree has no LICENSE. Keep PNACH file paths, hashes and sizes as link-only references; conversions and CRC labels do not independently verify gameplay compatibility or code authorship.",
     },
+    "ps2-widescreen-staging": {
+        "repository": "PS2-Widescreen/pnach-DB",
+        "commit": "91902dd63b67b7c8e2fcdf71b165b8e21f415346",
+        "platform": "ps2", "expected": {"patch": 3632},
+        "rights_note": "Upstream PS2-Widescreen's pnach-DB stages 3,632 source-native widescreen PNACH patches for PCSX2 and lacks a repository-wide LICENSE at the pinned commit. Patches may derive from numerous independent code authors; filenames/hashes/sizes only. Do not presume gameplay-cheat status, ROM/build compatibility, author permission, or redistribute original patch bodies.",
+    },
 }
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -214,6 +220,8 @@ def classify(source, path):
         return "cheat"
     if source in ("daowace-pcsx2-consolidated", "xs1l3n7x-pcsx2") and re.fullmatch(r"cheats/[^/]+\.pnach", path):
         return "cheat"
+    if source == "ps2-widescreen-staging" and re.fullmatch(r"(?:PNACH|PNACH_WITH_ID)/[^/]+\.pnach", path):
+        return "patch"
     return None
 
 

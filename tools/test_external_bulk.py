@@ -30,11 +30,12 @@ class TestExternalBulk(unittest.TestCase):
             "journeyover-3ds-ctrpf": 628,
             "daowace-pcsx2-consolidated": 5483,
             "xs1l3n7x-pcsx2": 579,
+            "ps2-widescreen-staging": 3632,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(indexes[1]["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 38573)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 42205)
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
