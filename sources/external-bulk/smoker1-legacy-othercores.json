@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "smoker1-legacy-othercores",
+  "repository": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats",
+  "snapshot_commit": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "git_tree_sha": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "platform": "multi-retroarch",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Source-native CHT file references filtered by exact Git-blob identity against three pinned Libretro, Emupedia and BitHeX source sets. This does not establish uniqueness versus every archived/external collection, game compatibility, functional cheat effects, original-author reuse rights, or any permission to copy cheat bodies. Metadata and links only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 22
+  },
+  "files": [
+    [
+      "Citra/000400000007F500.00000000 Urban Trial Freestyle (CTR-N-AT8P) (W).cht",
+      "b5621eb5d193097ece6dd9f26ae1db7e30dfd030",
+      1743
+    ],
+    [
+      "Gambatte/Street Fighter Alpha - Warriors' Dreams (USA) GG.cht",
+      "7fa9512c350b72a24c37dcacb6578de7d80b2c33",
+      2808
+    ],
+    [
+      "Gambatte/Street Fighter II (USA, Europe) (Rev A).cht",
+      "0de28d51687903373420802343c673e6f25ce88f",
+      1379
+    ],
+    [
+      "Mednafen NeoPop/Fatal Fury F-Contact (JUE) [!].cht",
+      "3e9bfc6744d079cfcb4c5d37b7b941e8d2d54bee",
+      2809
+    ],
+    [
+      "Mednafen NeoPop/King of Fighters R-1 (JUE) [M][!].cht",
+      "b3f4820e823cd04d00ca2f1d9eebacdf44a41664",
+      2245
+    ],
+    [
+      "Mednafen NeoPop/King of Fighters R-2 (JUE) [!].cht",
+      "ec014159803c2357dbecf7bf9bbc85dab006e13f",
+      2313
+    ],
+    [
+      "Mednafen NeoPop/Metal Slug - 1st Mission (JUE).cht",
+      "4fc18cd97f2a85b47d011e838ded7704d99b5e01",
+      5517
+    ],
+    [
+      "Mednafen NeoPop/Metal Slug - 2nd Mission (JUE) [!].cht",
+      "56f44450fad48bbd6f9bd79bbb2b12feac3daf86",
+      2877
+    ],
+    [
+      "Mednafen NeoPop/SNK Gals' Fighters (USA, Europe).cht",
+      "1c9d914899c8610772d83006caffb85cb8ade15c",
+      2884
+    ],
+    [
+      "Mednafen NeoPop/SNK Vs Capcom - Match of The Millennium (JUE) [!].cht",
+      "3c952e7cecbd971929378eca78114539d0d9743a",
+      3362
+    ],
+    [
+      "Mednafen VB/HF Demo.cht",
+      "0fb92bdc8aec09ba9739d8ad01d2d89e11fb2082",
+      1151
+    ],
+    [
+      "Mednafen VB/Virtual Boy Wario Land (Japan, USA).cht",
+      "10fb2df5299149becce303d074761395adade4d4",
+      2244
+    ],
+    [
+      "Mednafen VB/Virtual Boy Wario Land.cht",
+      "0bccd9b5246c255be50faec9eb780cb896b2fb61",
+      840
+    ],
+    [
+      "PicoDrive/Mortal Kombat (World) (v1.1).cht",
+      "bd6aed231150bec8098bdc58917971796285485f",
+      1388
+    ],
+    [
+      "PicoDrive/mortalkombatu.cht",
+      "f99d2b29e5b0e4ef361fdb20f0a65ab1c5f2516a",
+      1436
+    ],
+    [
+      "PrBoom/doom.cht",
+      "511a777134133eab2ce00e05d5d8b51819860781",
+      8272
+    ],
+    [
+      "Sega - Saturn/RomHacking Cheats/Mortal Kombat II (USA).cht",
+      "e8e56c07c9552563a920cf4776dba767064d0b60",
+      3656
+    ],
+    [
+      "Sega - Saturn/RomHacking Cheats/Mortal Kombat Trilogy (USA).cht",
+      "c464d1b7227bb28aebceb92018dbc96cd2c5cb4e",
+      1787
+    ],
+    [
+      "Sega - Saturn/RomHacking Cheats/Ultimate Mortal Kombat 3 (USA).cht",
+      "aa63b09c8e925b940f2ab762381c883f7509c227",
+      4174
+    ],
+    [
+      "Snes9x 2010/Mortal Kombat (USA).cht",
+      "cb61c7bad2e3aae5749058d4ac8070e7b4755ca0",
+      941
+    ],
+    [
+      "VBA Next/0329 - Super Street Fighter II Turbo Revival (U)(Nobody).cht",
+      "425db3d2bdb8cde09ca60e0ea4c3de69bb5935d9",
+      91056
+    ],
+    [
+      "ecwolf/WOLF3D.cht",
+      "22bc6d448a5477b1601dabb96178a962563aba53",
+      1687
+    ]
+  ]
+}

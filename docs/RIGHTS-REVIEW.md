@@ -1,7 +1,7 @@
 # Bulk cheat acquisition: pinned original-author rights review
 
 The project currently archives 67,834 original files and separately indexes
-42,632 **link-only** external occurrences. Not all are cheats, unique titles,
+42,718 **link-only** external occurrences. Not all are cheats, unique titles,
 or independently verified modifications.
 
 The [priority scorecard](../generated/v1/reports/acquisition-priorities.json)
@@ -60,3 +60,6 @@ Two Libretro-hosted MAME arcade cheat archives (`mame2010-libretro/metadata/chea
 
 
 Smoker1's 98 FinalBurn Alpha INI file references (45 distinct source blobs) and pacnpal's one Mupen64Plus N64 native cheat database are now searchable metadata-only, not preserved body files. The former README identifies them as externally sourced official FBA cheat listings; the latter describes modifications atop preexisting Mupen/GameShark FAQ code collections. Neither source establishes blanket reuse permissions for all underlying authors. Keep FBA, FBNeo, MAME, and N64 format/compatibility claims distinct. The nine detailed legal evidence dossiers do not automatically cover these two new sources.
+
+
+The seven new folder-scoped historical RetroArch mirror catalogs preserve **86 link-only file occurrences / 77 Git byte hashes** selected from 11,390 original upstream files using an earlier exact-blob comparison with Libretro/Emupedia/BitHeX. Unlike the original upstream homebrew secrets collection, these older CHT forks do not establish individual code-author permission to republish cheat bodies. Their platform labels are based on source folder names; they are not verification of game identity, effects or compatible ROM versions.

@@ -208,10 +208,89 @@ SOURCES = {
         "rights_note": "Upstream PS2-Widescreen's pnach-DB stages 3,632 source-native widescreen PNACH patches for PCSX2 and lacks a repository-wide LICENSE at the pinned commit. Patches may derive from numerous independent code authors; filenames/hashes/sizes only. Do not presume gameplay-cheat status, ROM/build compatibility, author permission, or redistribute original patch bodies.",
     },
 }
+# Filename-only, exact-blob remainder from two historical RetroArch forks.
+# Folder labels remain evidence, not emulator compatibility claims.
+MIRROR_GAP_GROUPS = {
+    "gcmcom-legacy-gba": ("gcmcom-libretro-legacy", ("Nintendo - Game Boy Advance",), "gba", 2),
+    "gcmcom-legacy-nes": ("gcmcom-libretro-legacy", ("Nintendo - Nintendo Entertainment System",), "nes", 8),
+    "gcmcom-legacy-snes": ("gcmcom-libretro-legacy", ("Nintendo - Super Nintendo Entertainment System",), "snes", 1),
+    "smoker1-legacy-fbneo": ("smoker1-retroarch-174", ("FinalBurn Neo",), "arcade-fbneo", 32),
+    "smoker1-legacy-dreamcast": ("smoker1-retroarch-174", ("Reicast", "Sega - Dreamcast"), "dreamcast", 12),
+    "smoker1-legacy-naomi": ("smoker1-retroarch-174", ("Reicast-NAOMI",), "arcade-naomi", 9),
+    "smoker1-legacy-othercores": (
+        "smoker1-retroarch-174",
+        ("Citra", "Gambatte", "Mednafen NeoPop", "Mednafen VB", "PicoDrive",
+         "PrBoom", "Sega - Saturn", "Snes9x 2010", "VBA Next", "ecwolf"),
+        "multi-retroarch", 22,
+    ),
+}
+MIRROR_ORIGINS = {
+    "gcmcom-libretro-legacy": ("gcmcom/libretro-database", "4667ad6247352f57d44f2ad7b36f19f3e804aba9", 10872),
+    "smoker1-retroarch-174": ("Smoker1/RetroArch-174-and-above-Cheats", "d07b731562d3a68d089dc0a1ba62311b65a1d312", 518),
+}
+MIRROR_RIGHTS = (
+    "Source-native CHT file references filtered by exact Git-blob identity against three "
+    "pinned Libretro, Emupedia and BitHeX source sets. This does not establish uniqueness "
+    "versus every archived/external collection, game compatibility, functional cheat effects, "
+    "original-author reuse rights, or any permission to copy cheat bodies. Metadata and links only."
+)
+for _id, (_origin, _folders, _platform, _count) in MIRROR_GAP_GROUPS.items():
+    _repo, _commit, _total = MIRROR_ORIGINS[_origin]
+    SOURCES[_id] = {
+        "repository": _repo, "commit": _commit, "platform": _platform,
+        "expected": {"cheat": _count}, "rights_note": MIRROR_RIGHTS,
+    }
+
+
+def pinned_mirror_gap_rows(source):
+    """Exact file candidates from previously audited, immutable Git trees."""
+    report = json.loads((ROOT / "research/retroarch-mirror-source-gaps-v1.json").read_text("utf-8"))
+    if (report.get("format") != "cheatarium-retroarch-pinned-mirror-byte-gaps-v1"
+            or report.get("schema_version") != 1
+            or report.get("metadata_only") is not True
+            or report.get("cheat_or_archive_bodies_included") is not False
+            or report.get("rights_clearance_asserted") is not False
+            or report.get("file_occurrences_not_matching_three_corpora") != 86):
+        raise ValueError("Pinned RetroArch mirror audit changed")
+    origin, folders, _, expected_count = MIRROR_GAP_GROUPS[source]
+    records = [r for r in report["sources"] if r["id"] == origin]
+    if len(records) != 1:
+        raise ValueError("Missing pinned mirror source")
+    upstream = records[0]
+    _repo, commit, original_file_count = MIRROR_ORIGINS[origin]
+    if (upstream["snapshot_commit"] != commit
+            or upstream["original_cht_file_occurrences"] != original_file_count
+            or upstream["rights_status"] != "link_only_rights_review"
+            or upstream["redistribution_cleared"] is not False
+            or upstream["code_payloads_included"] is not False):
+        raise ValueError("Pinned mirror provenance or rights changed")
+    rows = sorted(
+        [[r["source_path"], r["git_blob_sha"], r["bytes"]]
+         for r in upstream["unmatched_source_file_metadata"]
+         if r["original_folder"] in folders],
+        key=lambda row: row[0],
+    )
+    if (len(rows) != expected_count or
+            any(classify(source, path) != "cheat" for path, _, _ in rows)):
+        raise ValueError("Source-folder gap partition disagrees with metadata audit")
+    return rows
+
+
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
 
 def classify(source, path):
+    if source in MIRROR_GAP_GROUPS:
+        origin, folders, _, _ = MIRROR_GAP_GROUPS[source]
+        segments = path.split("/")
+        if (origin == "gcmcom-libretro-legacy" and len(segments) == 3
+                and segments[0] == "cht" and segments[1] in folders
+                and segments[2].endswith(".cht")):
+            return "cheat"
+        if (origin == "smoker1-retroarch-174" and len(segments) == 2
+                and segments[0] in folders and segments[1].endswith(".cht")):
+            return "cheat"
+        return None
     if source == "duckstation-chtdb":
         if re.fullmatch(r"cheats/[^/]+\.cht", path):
             return "cheat"
@@ -303,6 +382,20 @@ def make_index(source, tree):
          if item.get("type") == "blob" and classify(source, item.get("path", ""))],
         key=lambda row: row[0],
     )
+    if source in MIRROR_GAP_GROUPS:
+        # Compare the selected original paths against a separately pinned
+        # snapshot of three-corpus byte-identity gaps. Never fetch cheat bodies.
+        expected = pinned_mirror_gap_rows(source)
+        lookup_by_path = {path: (sha, size) for path, sha, size in rows}
+        if any(lookup_by_path.get(path) != (sha, size)
+               for path, sha, size in expected):
+            raise ValueError("Historical mirror tree disagrees with pinned gap file hashes")
+        origin = MIRROR_GAP_GROUPS[source][0]
+        _repo, _commit, original_total = MIRROR_ORIGINS[origin]
+        if sum(item.get("type") == "blob" and item.get("path", "").endswith(".cht")
+               for item in tree["tree"]) != original_total:
+            raise ValueError("Historical source CHT file count changed")
+        rows = expected
     if source == "crashgg-ps1-chtdb-delta":
         # This is an exact-byte delta of another pinned external collection:
         # do not publish thousands of unchanged mirror paths as new leads.
@@ -376,6 +469,8 @@ def validate(source, index):
                 or not isinstance(size, int) or isinstance(size, bool) or size < 0):
             raise ValueError(f"Unsafe or invalid record: {row!r}")
         previous = path
+    if source in MIRROR_GAP_GROUPS and rows != pinned_mirror_gap_rows(source):
+        raise ValueError("Historical mirror gap paths/hashes changed")
     if count_types(source, rows) != spec["expected"] or index.get("file_counts") != spec["expected"]:
         raise ValueError("Pinned source counts changed for " + source)
     if set(index) != {"schema_version", "id", "repository", "snapshot_commit",
@@ -440,7 +535,7 @@ def main():
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--refresh", action="store_true")
     mode.add_argument("--search", metavar="TEXT")
-    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "arcade-mame", "arcade-fba", "n64", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
+    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "arcade-mame", "arcade-fba", "arcade-fbneo", "arcade-naomi", "multi-retroarch", "n64", "gba", "nes", "snes", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args()

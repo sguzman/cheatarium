@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "smoker1-legacy-dreamcast",
+  "repository": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats",
+  "snapshot_commit": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "git_tree_sha": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "platform": "dreamcast",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Source-native CHT file references filtered by exact Git-blob identity against three pinned Libretro, Emupedia and BitHeX source sets. This does not establish uniqueness versus every archived/external collection, game compatibility, functional cheat effects, original-author reuse rights, or any permission to copy cheat bodies. Metadata and links only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 12
+  },
+  "files": [
+    [
+      "Reicast/Capcom Vs. SNK Millennium Fight 2000.cht",
+      "a38aeef4ea6d0109995dddbe2a72e132e8eccb5b",
+      3423
+    ],
+    [
+      "Reicast/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht",
+      "5f633c64c0f3a610d91d7cecb6022ea4e148c51c",
+      3440
+    ],
+    [
+      "Reicast/Capcom vs. SNK (US).cht",
+      "602e4b3512a68e3d2716cf9e834be67fb718e1f1",
+      2833
+    ],
+    [
+      "Reicast/Capcom vs. SNK 2 - Millionaire Fighting 2001 v1.001 (2001)(Capcom)(NTSC)(JP)(en)[!].cht",
+      "93a828b9b2a3470bbef34de72ea4fc36fc2489fa",
+      3311
+    ],
+    [
+      "Reicast/Hydro Thunder Version 1.0 (RetroArch Cheats).cht",
+      "4d99d9dbb6ad01d17daaa98ef2d8db3b2df6a862",
+      6566
+    ],
+    [
+      "Reicast/Hydro Thunder Version 1.1 (RetroArch Cheats).cht",
+      "1dc7d7403b79ac4a3096803e60e8f24d4d8b50a0",
+      6566
+    ],
+    [
+      "Reicast/Hydro Thunder v1.020 (1999)(Midway)(NTSC)(US)[!].cht",
+      "0c4b3c1f2fa6edb1237ab31167aa225706772d13",
+      6374
+    ],
+    [
+      "Reicast/Marvel vs. Capcom 2 v1.001 (2000)(Capcom)(NTSC)(US)[!].cht",
+      "de3678c7d48942f9950b1423cc95052432a1a54f",
+      3779
+    ],
+    [
+      "Reicast/Marvel vs. Capcom 2.cht",
+      "4762065cffbd1e30010d278821f9aa02b630fbc0",
+      3956
+    ],
+    [
+      "Reicast/Street Fighter Zero 3 Upper.cht",
+      "afd9195b08024833a50472149e06f1b9399e6448",
+      2872
+    ],
+    [
+      "Sega - Dreamcast/Hydro Thunder Version 1.0 (RetroArch Cheats).cht",
+      "4d99d9dbb6ad01d17daaa98ef2d8db3b2df6a862",
+      6566
+    ],
+    [
+      "Sega - Dreamcast/Hydro Thunder Version 1.1 (RetroArch Cheats).cht",
+      "1dc7d7403b79ac4a3096803e60e8f24d4d8b50a0",
+      6566
+    ]
+  ]
+}

@@ -36,6 +36,13 @@ class TestExternalBulk(unittest.TestCase):
             "saramagrean-psp-cwcheat": 1,
             "smoker1-fba-official-ini": 98,
             "pacnpal-mupen-n64-cheatfile": 1,
+            "gcmcom-legacy-gba": 2,
+            "gcmcom-legacy-nes": 8,
+            "gcmcom-legacy-snes": 1,
+            "smoker1-legacy-fbneo": 32,
+            "smoker1-legacy-dreamcast": 12,
+            "smoker1-legacy-naomi": 9,
+            "smoker1-legacy-othercores": 22,
             "shadowninja-ps2-pnach-delta": 48,
             "libretro-mame2010-cheat-archive": 1,
             "libretro-mame2003plus-cheat-archive": 1,
@@ -43,7 +50,7 @@ class TestExternalBulk(unittest.TestCase):
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 42632)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 42718)
 
     def test_widescreen_staging_is_link_only_and_patch_only(self):
         source = next(x for x in load(__import__("external_bulk").ROOT)
@@ -141,6 +148,22 @@ class TestExternalBulk(unittest.TestCase):
         self.assertEqual(len(lookup([fba], "1941", "arcade-fba", 20)), 2)
         self.assertEqual(len(lookup([n64], "mupencheat.txt", "n64", 20)), 1)
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in (fba, n64)))
+
+    def test_pinned_mirror_gap_groups_match_exact_original_research(self):
+        indexes = load(__import__("external_bulk").ROOT)
+        selected = [x for x in indexes if x["id"].startswith(
+            ("gcmcom-legacy-", "smoker1-legacy-"))]
+        self.assertEqual(len(selected), 7)
+        self.assertEqual(sum(len(x["files"]) for x in selected), 86)
+        self.assertEqual(len({sha for x in selected for _, sha, _ in x["files"]}), 77)
+        self.assertEqual(len(next(x for x in selected if x["id"] ==
+                                  "smoker1-legacy-fbneo")["files"]), 32)
+        self.assertEqual(len(next(x for x in selected if x["id"] ==
+                                  "smoker1-legacy-naomi")["files"]), 9)
+        self.assertEqual(len(lookup(selected, "Mortal Kombat", "multi-retroarch", 10)), 1)
+        self.assertEqual(len(lookup(selected, "Kirby Super Star", "snes", 10)), 1)
+        self.assertTrue(all(x["rights_status"] == "link_only_rights_review"
+                            for x in selected))
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)

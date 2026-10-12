@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "id": "smoker1-legacy-fbneo",
+  "repository": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats",
+  "snapshot_commit": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "git_tree_sha": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "platform": "arcade-fbneo",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Source-native CHT file references filtered by exact Git-blob identity against three pinned Libretro, Emupedia and BitHeX source sets. This does not establish uniqueness versus every archived/external collection, game compatibility, functional cheat effects, original-author reuse rights, or any permission to copy cheat bodies. Metadata and links only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 32
+  },
+  "files": [
+    [
+      "FinalBurn Neo/Fghthist FBNeo.cht",
+      "bcd3cac4bb68f1c57edd8626a3e7f84c496135ab",
+      1749
+    ],
+    [
+      "FinalBurn Neo/fghthist.cht",
+      "d4107bffe080b4b42a96f42f380b7ea5753c8646",
+      4024
+    ],
+    [
+      "FinalBurn Neo/fghthistuc.cht",
+      "bd52321194bc3b40d0d1d7563fa81e8e39eb3b63",
+      1749
+    ],
+    [
+      "FinalBurn Neo/hsf2.cht",
+      "95b53077e93a5aba4479778e46a175de9d762114",
+      3952
+    ],
+    [
+      "FinalBurn Neo/kof94.cht",
+      "6c95dec1ad198f14de462cc243555b3bfc1f287d",
+      2247
+    ],
+    [
+      "FinalBurn Neo/kof95.cht",
+      "7a4c5fa1d955320e250a69381699909e56d0c2d7",
+      2811
+    ],
+    [
+      "FinalBurn Neo/mk.cht",
+      "6af63beadb61905efad05ec2cdad3524c5b72ce0",
+      1162
+    ],
+    [
+      "FinalBurn Neo/mk2.cht",
+      "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+      2308
+    ],
+    [
+      "FinalBurn Neo/mk2chal.cht",
+      "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+      2308
+    ],
+    [
+      "FinalBurn Neo/mk2p.cht",
+      "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+      2308
+    ],
+    [
+      "FinalBurn Neo/mk2ute.cht",
+      "f2562b226da7f5d99dd4ac86c4969ecd1c20a807",
+      2308
+    ],
+    [
+      "FinalBurn Neo/mk3.cht",
+      "599943cd5b14ec7e4de5012c1910d7b4af359b9a",
+      2339
+    ],
+    [
+      "FinalBurn Neo/mkla1.cht",
+      "69bb4cf23db1c6db44a18e6fdb6a69b56112d4d6",
+      593
+    ],
+    [
+      "FinalBurn Neo/mknifty666.cht",
+      "024f29e59c6f2464ccba02f6ed1adddf8629c71d",
+      1164
+    ],
+    [
+      "FinalBurn Neo/mktturbo.cht",
+      "6ee38b7c1dcee746486e1fa1531e0945f9612b3c",
+      1161
+    ],
+    [
+      "FinalBurn Neo/sfa.cht",
+      "cbb22da1b0daf427d47c3fec2791e2c0d6f75c29",
+      5052
+    ],
+    [
+      "FinalBurn Neo/sfa2.cht",
+      "a6add6cff642daa432e333274f22d94b452b2823",
+      2816
+    ],
+    [
+      "FinalBurn Neo/sfa2u.cht",
+      "9c3786fff5f7e32592ceedcb63598ae31aa7108c",
+      5148
+    ],
+    [
+      "FinalBurn Neo/sfa2uhc.cht",
+      "a53e401c759c0909ebb43c080c93e9b5b6edd3f1",
+      4075
+    ],
+    [
+      "FinalBurn Neo/sfa2ur1.cht",
+      "a392f6bda0718df055812966340a5f9a1bd45f3b",
+      5097
+    ],
+    [
+      "FinalBurn Neo/sfiii.cht",
+      "d1f6af7230e7b20f22fd049bd20e8cfa20c32436",
+      3378
+    ],
+    [
+      "FinalBurn Neo/sfiii2.cht",
+      "6ea42f2a2ad0717e921dc98e19063ddeba204887",
+      3394
+    ],
+    [
+      "FinalBurn Neo/sfiii3.cht",
+      "443661432129f5e2336ac60b651a20ef5ba225ea",
+      3969
+    ],
+    [
+      "FinalBurn Neo/sfzch.cht",
+      "17ae91791ac7c97dba5b537bb2f39d78145e7b84",
+      4510
+    ],
+    [
+      "FinalBurn Neo/sfzcha.cht",
+      "a2387070b4c98bceda1bb9f288c3016c1e930e88",
+      4511
+    ],
+    [
+      "FinalBurn Neo/simpsons2p.cht",
+      "238798d1b431ee84dddd00a5a76c8df52e91c806",
+      3488
+    ],
+    [
+      "FinalBurn Neo/ssf2tnl.cht",
+      "51cab2f2cb4b7995b5bedf51f80007210769c6d7",
+      5824
+    ],
+    [
+      "FinalBurn Neo/umk3.cht",
+      "9cdc0e61b93a6e106b88dadf44d5cf098c1ef75b",
+      2339
+    ],
+    [
+      "FinalBurn Neo/umk3pb1.cht",
+      "170c0a18603710431b9c7777a856b069fa892eeb",
+      2275
+    ],
+    [
+      "FinalBurn Neo/umk3uc.cht",
+      "148e8fe00a2b40d604cacaae44cdd3c12b24c0fe",
+      1145
+    ],
+    [
+      "FinalBurn Neo/umk3uk.cht",
+      "ecdfbd76b94d0c8599afe7207ba4d181d0b82b92",
+      2331
+    ],
+    [
+      "FinalBurn Neo/wh2.cht",
+      "240286456ef08734bfa340a898e87f7e6292aa63",
+      3399
+    ]
+  ]
+}

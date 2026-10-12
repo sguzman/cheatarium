@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "smoker1-legacy-naomi",
+  "repository": "https://github.com/Smoker1/RetroArch-174-and-above-Cheats",
+  "snapshot_commit": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "git_tree_sha": "d07b731562d3a68d089dc0a1ba62311b65a1d312",
+  "platform": "arcade-naomi",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Source-native CHT file references filtered by exact Git-blob identity against three pinned Libretro, Emupedia and BitHeX source sets. This does not establish uniqueness versus every archived/external collection, game compatibility, functional cheat effects, original-author reuse rights, or any permission to copy cheat bodies. Metadata and links only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 9
+  },
+  "files": [
+    [
+      "Reicast-NAOMI/Capcom Vs. SNK Millennium Fight 2000 Pro.cht",
+      "a38aeef4ea6d0109995dddbe2a72e132e8eccb5b",
+      3423
+    ],
+    [
+      "Reicast-NAOMI/Capcom vs SNK 2 Millionaire Fighting 2001 (Rev A).cht",
+      "5f633c64c0f3a610d91d7cecb6022ea4e148c51c",
+      3440
+    ],
+    [
+      "Reicast-NAOMI/CvsS2 NAOMI MAME.cht",
+      "b9620da07dd10f8543ed65ba1953bd176b53e9f5",
+      3541
+    ],
+    [
+      "Reicast-NAOMI/Marvel vs. Capcom 2.cht",
+      "4762065cffbd1e30010d278821f9aa02b630fbc0",
+      3956
+    ],
+    [
+      "Reicast-NAOMI/MetalSlug6-NAOMI.cht",
+      "d207ef5e169483719f67af1a509bfde4ef2dc5a4",
+      1711
+    ],
+    [
+      "Reicast-NAOMI/MvsC2 NAOMI MAME.cht",
+      "ec4ed1ac0e53abb27406f940ed2fd2ca897113ce",
+      4115
+    ],
+    [
+      "Reicast-NAOMI/SFZ3U NAOMI MAME.cht",
+      "b1bc982ebab1667146cd58d18ca6d83662baa3ce",
+      1753
+    ],
+    [
+      "Reicast-NAOMI/Street Fighter Zero 3 Upper.cht",
+      "afd9195b08024833a50472149e06f1b9399e6448",
+      2872
+    ],
+    [
+      "Reicast-NAOMI/capsnk-NAOMI.cht",
+      "72358b93c3263372dbad0ea30c4a6722e04a1e25",
+      3429
+    ]
+  ]
+}

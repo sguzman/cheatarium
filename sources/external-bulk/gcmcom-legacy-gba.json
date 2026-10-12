@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "gcmcom-legacy-gba",
+  "repository": "https://github.com/gcmcom/libretro-database",
+  "snapshot_commit": "4667ad6247352f57d44f2ad7b36f19f3e804aba9",
+  "git_tree_sha": "73797b1c0be7fa1d6b34fd14919fcf4f4d194877",
+  "platform": "gba",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Source-native CHT file references filtered by exact Git-blob identity against three pinned Libretro, Emupedia and BitHeX source sets. This does not establish uniqueness versus every archived/external collection, game compatibility, functional cheat effects, original-author reuse rights, or any permission to copy cheat bodies. Metadata and links only.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 2
+  },
+  "files": [
+    [
+      "cht/Nintendo - Game Boy Advance/Pokemon - Emerald Version (USA, Europe) (Code Breaker).cht",
+      "6e4dd14c142e5f060a4f46f5ceeaf9773e3c2257",
+      20218
+    ],
+    [
+      "cht/Nintendo - Game Boy Advance/Sims, The - Bustin' Out (USA, Europe) (Code Breaker).cht",
+      "a6e55340ae5e214f08386423365409e968bb52d1",
+      1644
+    ]
+  ]
+}
