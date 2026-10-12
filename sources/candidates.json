@@ -55,6 +55,19 @@
       "notes": "Reviewed commit 13c7a5c9957331398252e2a8916be7dd61b68144: 387 per-game native Markdown code documents. Root LICENSE GPLv3, but README is an index of game/code pages with no per-cheat author attribution or evidence that repo owner originated all codes. Do not bulk rehost until original cheat creators' reuse/attribution terms are checked."
     },
     {
+      "id": "cheatbase-multisystem-sqlite",
+      "repo": "https://github.com/CheatBase/CheatBase",
+      "platforms": [
+        "multiple"
+      ],
+      "formats": [
+        "sqlite-cheat-database"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No root LICENSE found in examined tree; per-cheat author/credit provenance unresolved",
+      "notes": "Pinned discovery found cheatbase.sqlite at 67,366,912 bytes and a 6,884,860-byte Excel export in a multi-console database built on OpenVGDB. CONTRIBUTING documents cheatCode and cheatCredit, so original code authors may differ from aggregator. Research source game counts and device formats before claiming coverage or copying data; do not mistake openVGDB game metadata for cheat originals."
+    },
+    {
       "id": "chidreams-rpcs3-artemis",
       "repo": "https://github.com/chidreams/Artemis-Patch-Collection-RPCS3",
       "platforms": [
@@ -147,6 +160,19 @@
       "notes": "Reviewed pinned revision 0c6bbbc53907c8eb91de6027c3250b99f0bd74f5; main 0004000000199700.txt source is 553445 bytes. README explicitly credits multiple creators (Owl, Foxy, Peanut, Springtrap, Cracko, Darksiders, Megapika) and others. Do not copy until contributor rights established; root license cannot settle every source code author's rights."
     },
     {
+      "id": "galisteogames-mame2010-cheat",
+      "repo": "https://github.com/galisteogames/mame2010_cheat",
+      "platforms": [
+        "arcade-mame"
+      ],
+      "formats": [
+        "mame-2010-cheat-zip"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No root LICENSE found in pinned tree",
+      "notes": "Pinned MAME 2010 (MAME 0.139) EmuELEC distribution with one 24,981,772-byte cheat.zip file, credited by README to ThunderDJr; internal per-game XML count and code-author rights unverified. This might be older content overlapping Pugsy's canonical releases; inspect archive structure and license before treating as novel coverage."
+    },
+    {
       "id": "gamehacking-org",
       "repo": "https://gamehacking.org/",
       "platforms": [
@@ -188,6 +214,19 @@
       "notes": "Two short source-authored Wii/GameCube Gecko code.txt originals with corresponding source.asm and README files, for HAPE and RMCE. Review original authorship and request a public license before rehosting."
     },
     {
+      "id": "pacnpal-mupen64plus-n64-cheats",
+      "repo": "https://github.com/pacnpal/mupen-cheats",
+      "platforms": [
+        "n64"
+      ],
+      "formats": [
+        "mupen64plus-native-cheat-text"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No repository-wide redistribution LICENSE found in pinned tree",
+      "notes": "Pinned 1,281,051-byte mupencheat.txt text archive. README describes new GoldenEye/Perfect Dark/Donkey Kong 64 cheat modifications and codes adapted from older GameShark FAQs and an existing Mupen source file. Identify the original license and any independently authored additions before importing. One source file is not a one-game collection."
+    },
+    {
       "id": "pcsx2-cheats-collection",
       "repo": "https://github.com/xs1l3n7x/pcsx2_cheats_collection",
       "platforms": [
@@ -212,6 +251,19 @@
       "state": "link_only_rights_review",
       "repo_license": "not_found_in_root",
       "notes": "Reviewed pinned revision 9f82a4d2b8a2aaf83807421f18d5d30263ea826c has 4,710 .pnach files. README explicitly says PCSX2 maintainers distribute third-party patches but neither create nor repair them. No LICENSE/COPYING/NOTICE file found; author-specific redistribution rights unresolved. Link only; do not import payloads."
+    },
+    {
+      "id": "pugsy-mame-cheat-archive",
+      "repo": "https://www.mamecheat.co.uk/",
+      "platforms": [
+        "arcade-mame"
+      ],
+      "formats": [
+        "mame-cheat-xml-json-archives"
+      ],
+      "state": "link_only_rights_review",
+      "repo_license": "No blanket code-author redistribution grant verified",
+      "notes": "Primary long-running MAME cheat archive. Public site has dated release notes including the 2025-07-27 MAME 0.279 XML/JSON archive and historical reference to 7,000+ XML cheat files. Measure exact pinned download/version size, deduplicate older sets, and review original cheat-author permissions before rehosting. Author-maintained release source; not yet part of searchable external Git-blob catalogs."
     },
     {
       "id": "questionblock22-misc-gecko",
