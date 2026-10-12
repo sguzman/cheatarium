@@ -26,6 +26,12 @@ jobs:
       - name: Validate local metadata and regression tests
         run: |
           set -euo pipefail
+          # Source additions may precede the main index's generated snapshot
+          # publication. Rebuild rights-review dependencies from pinned
+          # metadata in this ephemeral CI checkout before verifying evidence.
+          python3 tools/audit_external_overlap.py --write
+          python3 tools/audit_external_archive_overlap.py --write
+          python3 tools/build_acquisition_priorities.py --write
           python3 tools/test_audit_acquisition_rights.py
           python3 tools/test_verify_rights_pins.py
           python3 tools/verify_rights_pins.py --offline
