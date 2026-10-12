@@ -8,12 +8,12 @@
   "proves_gameplay_compatibility": false,
   "archive_manifest_file_occurrences": 67831,
   "archive_distinct_git_blobs": 57443,
-  "external_reference_files": 32511,
-  "external_distinct_git_blobs": 26638,
+  "external_reference_files": 38573,
+  "external_distinct_git_blobs": 32467,
   "external_references_matching_archived_bytes": 73,
-  "external_references_without_archived_byte_match": 32438,
+  "external_references_without_archived_byte_match": 38500,
   "external_distinct_git_blobs_matching_archive": 56,
-  "external_distinct_git_blobs_without_archive_byte_match": 26582,
+  "external_distinct_git_blobs_without_archive_byte_match": 32411,
   "sources": [
     {
       "source_id": "duckstation-chtdb",
@@ -308,6 +308,28 @@
       "references_without_archived_byte_match": 628,
       "distinct_git_blobs_without_archived_byte_match": 594,
       "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "daowace-pcsx2-consolidated",
+      "platform": "ps2",
+      "reference_files": 5483,
+      "distinct_external_git_blobs": 5272,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 5483,
+      "distinct_git_blobs_without_archived_byte_match": 5272,
+      "exact_byte_match_examples": []
+    },
+    {
+      "source_id": "xs1l3n7x-pcsx2",
+      "platform": "ps2",
+      "reference_files": 579,
+      "distinct_external_git_blobs": 579,
+      "matches_archived_blob": 0,
+      "distinct_git_blobs_already_archived": 0,
+      "references_without_archived_byte_match": 579,
+      "distinct_git_blobs_without_archived_byte_match": 579,
+      "exact_byte_match_examples": []
     }
   ],
   "platforms": [
@@ -358,12 +380,12 @@
     },
     {
       "platform": "ps2",
-      "reference_files": 4710,
+      "reference_files": 10772,
       "matches_archived_blob": 5,
-      "references_without_archived_byte_match": 4705,
-      "distinct_external_git_blobs": 4663,
+      "references_without_archived_byte_match": 10767,
+      "distinct_external_git_blobs": 10492,
       "distinct_git_blobs_already_archived": 5,
-      "distinct_git_blobs_without_archived_byte_match": 4658
+      "distinct_git_blobs_without_archived_byte_match": 10487
     },
     {
       "platform": "ps3",

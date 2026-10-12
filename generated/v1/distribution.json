@@ -3,12 +3,12 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
-  "external_reference_files": 32511,
-  "external_distinct_git_blobs": 26638,
+  "external_reference_files": 38573,
+  "external_distinct_git_blobs": 32467,
   "external_references_matching_archived_bytes": 73,
   "external_distinct_git_blobs_matching_archive": 56,
-  "external_distinct_git_blobs_without_archive_byte_match": 26582,
-  "external_repeated_blob_excess_occurrences": 5873,
+  "external_distinct_git_blobs_without_archive_byte_match": 32411,
+  "external_repeated_blob_excess_occurrences": 6106,
   "external_reference_platforms": 12,
   "source_files": 57351,
   "game_candidate_groups": 47502,
@@ -105,8 +105,8 @@
     },
     {
       "path": "external/catalog.json",
-      "sha256": "806b0bd66a1e195163e879cab54cf14250a9b1555b4e682b3053bd0b5b7e3987",
-      "size_bytes": 1795
+      "sha256": "7007d0b01ad74f4db9892bea4258edc424f4244e749a3d882272e14b5335b343",
+      "size_bytes": 1842
     },
     {
       "path": "external/dreamcast.json.gz",
@@ -130,8 +130,8 @@
     },
     {
       "path": "external/ps2.json.gz",
-      "sha256": "3eea3f64d365eeb9c3fe3e7c8f54a48d38e4cd63e604f2674c421b5e343ff754",
-      "size_bytes": 211326
+      "sha256": "5dbf937b3f0aa47feea79409331382a9dc60a57bfcdfceaeb7d3eefb28be8d04",
+      "size_bytes": 483523
     },
     {
       "path": "external/ps3.json.gz",
@@ -905,13 +905,13 @@
     },
     {
       "path": "reports/external-overlap.json",
-      "sha256": "96e7e9410fa39e60017732832698d1fac976749b56df85402f322a9cb03d6196",
-      "size_bytes": 2406140
+      "sha256": "11bec3e66ab9b211c8dad1c7bf10abe48f86a51907516d8c9b75ceb7d5027405",
+      "size_bytes": 2420716
     },
     {
       "path": "reports/external-vs-archive-blobs.json",
-      "sha256": "ede423f13d67d6682ecb25638e58a26bf30596ddfe37ad466a24ea1f5b3e5082",
-      "size_bytes": 16114
+      "sha256": "878f29041ce78445f4671ade2a939b7e0a1342685c9b2195b53df86f6308324e",
+      "size_bytes": 16896
     },
     {
       "path": "reports/snes-codec-coverage.json",

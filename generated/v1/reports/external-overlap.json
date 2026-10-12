@@ -6,14 +6,14 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 32511,
-  "source_catalogs": 21,
+  "reference_files": 38573,
+  "source_catalogs": 23,
   "external_platforms": 12,
-  "distinct_git_blobs": 26638,
-  "repeated_blob_excess_occurrences": 5873,
-  "references_in_repeated_blob_groups": 9076,
-  "cross_source_shared_blob_groups": 2759,
-  "cross_source_shared_references": 8129,
+  "distinct_git_blobs": 32467,
+  "repeated_blob_excess_occurrences": 6106,
+  "references_in_repeated_blob_groups": 9508,
+  "cross_source_shared_blob_groups": 2781,
+  "cross_source_shared_references": 8173,
   "sources": [
     {
       "id": "duckstation-chtdb",
@@ -44,7 +44,7 @@
       "reference_files": 4710,
       "distinct_git_blobs": 4663,
       "repeated_blob_excess_occurrences_within_source": 47,
-      "references_with_blob_shared_by_another_source": 0,
+      "references_with_blob_shared_by_another_source": 22,
       "source_declared_file_types": {
         "patch": 4710
       }
@@ -252,6 +252,28 @@
       "source_declared_file_types": {
         "cheat": 628
       }
+    },
+    {
+      "id": "daowace-pcsx2-consolidated",
+      "platform": "ps2",
+      "reference_files": 5483,
+      "distinct_git_blobs": 5272,
+      "repeated_blob_excess_occurrences_within_source": 211,
+      "references_with_blob_shared_by_another_source": 22,
+      "source_declared_file_types": {
+        "cheat": 5483
+      }
+    },
+    {
+      "id": "xs1l3n7x-pcsx2",
+      "platform": "ps2",
+      "reference_files": 579,
+      "distinct_git_blobs": 579,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 579
+      }
     }
   ],
   "platforms": [
@@ -305,11 +327,13 @@
     },
     {
       "platform": "ps2",
-      "reference_files": 4710,
-      "distinct_git_blobs": 4663,
-      "repeated_blob_excess_occurrences": 47,
+      "reference_files": 10772,
+      "distinct_git_blobs": 10492,
+      "repeated_blob_excess_occurrences": 280,
       "source_catalogs": [
-        "pcsx2-official-patches"
+        "daowace-pcsx2-consolidated",
+        "pcsx2-official-patches",
+        "xs1l3n7x-pcsx2"
       ]
     },
     {
@@ -706,6 +730,26 @@
       ]
     },
     {
+      "git_blob_sha": "01fd1ade13dd58f12ee79ab7febfc4fd4bd4fe50",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-55597_7DEB9F03.pnach",
+          "git_blob_sha": "01fd1ade13dd58f12ee79ab7febfc4fd4bd4fe50",
+          "bytes": 177
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-55597_7DEB9F03.pnach",
+          "git_blob_sha": "01fd1ade13dd58f12ee79ab7febfc4fd4bd4fe50",
+          "bytes": 177
+        }
+      ]
+    },
+    {
       "git_blob_sha": "0201138ee04ec7384e731959eb7aa3a75fc23b2d",
       "source_count": 2,
       "references": [
@@ -979,6 +1023,26 @@
           "path": "cheats_gbatemp/010097C00435C000.json",
           "git_blob_sha": "027ed67eff8d2204c64d2274543ab5cd38c84ff5",
           "bytes": 1114
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "028186123771728f7915ff93c0ced8312886f70e",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLUS-21839_FD37553A.pnach",
+          "git_blob_sha": "028186123771728f7915ff93c0ced8312886f70e",
+          "bytes": 168
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLUS-21839_FD37553A.pnach",
+          "git_blob_sha": "028186123771728f7915ff93c0ced8312886f70e",
+          "bytes": 168
         }
       ]
     },
@@ -7123,6 +7187,26 @@
       ]
     },
     {
+      "git_blob_sha": "1673a7ef21182e5d4ea4d421267c090d033ed530",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-55112_4AF82486.pnach",
+          "git_blob_sha": "1673a7ef21182e5d4ea4d421267c090d033ed530",
+          "bytes": 366
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-55112_4AF82486.pnach",
+          "git_blob_sha": "1673a7ef21182e5d4ea4d421267c090d033ed530",
+          "bytes": 366
+        }
+      ]
+    },
+    {
       "git_blob_sha": "16acfd17d90765634ca76167bc9beb5fcdcf293b",
       "source_count": 2,
       "references": [
@@ -12373,6 +12457,26 @@
       ]
     },
     {
+      "git_blob_sha": "2713737a177ab64752173481e0ebb59cbbf88164",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-54726_95E80315.pnach",
+          "git_blob_sha": "2713737a177ab64752173481e0ebb59cbbf88164",
+          "bytes": 164
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-54726_95E80315.pnach",
+          "git_blob_sha": "2713737a177ab64752173481e0ebb59cbbf88164",
+          "bytes": 164
+        }
+      ]
+    },
+    {
       "git_blob_sha": "272b8014452fe535ce253c3d76d6c66d0ab5f492",
       "source_count": 2,
       "references": [
@@ -17059,6 +17163,26 @@
       ]
     },
     {
+      "git_blob_sha": "3750eaad5933e95d00568c87eef8cc040e371365",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-51348_62F6F886.pnach",
+          "git_blob_sha": "3750eaad5933e95d00568c87eef8cc040e371365",
+          "bytes": 176
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-51348_62F6F886.pnach",
+          "git_blob_sha": "3750eaad5933e95d00568c87eef8cc040e371365",
+          "bytes": 176
+        }
+      ]
+    },
+    {
       "git_blob_sha": "3758ed0de2020162a8e239b7195fddc68f3f2331",
       "source_count": 2,
       "references": [
@@ -17177,6 +17301,26 @@
           "path": "cheats_gbatemp/01000FA00A4E4000.json",
           "git_blob_sha": "37977c5ba43f158233fdfd1d3272ad70b9b4dd6e",
           "bytes": 2830
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "37b7e9875b66bbd42ce9e8f87be3c6241de53267",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-51705_37F695CD.pnach",
+          "git_blob_sha": "37b7e9875b66bbd42ce9e8f87be3c6241de53267",
+          "bytes": 163
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-51705_37F695CD.pnach",
+          "git_blob_sha": "37b7e9875b66bbd42ce9e8f87be3c6241de53267",
+          "bytes": 163
         }
       ]
     },
@@ -20323,6 +20467,26 @@
       ]
     },
     {
+      "git_blob_sha": "438101349b9cfaaa724e9917908c249954446c7c",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-50720_C8AB1868.pnach",
+          "git_blob_sha": "438101349b9cfaaa724e9917908c249954446c7c",
+          "bytes": 164
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-50720_C8AB1868.pnach",
+          "git_blob_sha": "438101349b9cfaaa724e9917908c249954446c7c",
+          "bytes": 164
+        }
+      ]
+    },
+    {
       "git_blob_sha": "439fa50a15b4aea419a7f2bbfbc6953fee1dcf76",
       "source_count": 2,
       "references": [
@@ -22903,6 +23067,26 @@
           "path": "cheats_gbatemp/010062200E912000.json",
           "git_blob_sha": "4d64bf392a4425ca09b894f0c02a0305708336c7",
           "bytes": 1038
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "4d6e0a653796c00146a1dcac2058a8008a532992",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-54888_CD13C390.pnach",
+          "git_blob_sha": "4d6e0a653796c00146a1dcac2058a8008a532992",
+          "bytes": 158
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-54888_CD13C390.pnach",
+          "git_blob_sha": "4d6e0a653796c00146a1dcac2058a8008a532992",
+          "bytes": 158
         }
       ]
     },
@@ -27774,6 +27958,26 @@
       ]
     },
     {
+      "git_blob_sha": "5c23534176bbac37d078aab961e1eb394dc61165",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-52886_381F8A7B.pnach",
+          "git_blob_sha": "5c23534176bbac37d078aab961e1eb394dc61165",
+          "bytes": 320
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-52886_381F8A7B.pnach",
+          "git_blob_sha": "5c23534176bbac37d078aab961e1eb394dc61165",
+          "bytes": 320
+        }
+      ]
+    },
+    {
       "git_blob_sha": "5c2667944b0a8208c13a4eb058729b20498af890",
       "source_count": 2,
       "references": [
@@ -28560,6 +28764,26 @@
           "path": "cheats_gbatemp/010023800FE12000.json",
           "git_blob_sha": "5e43e47a1bfbc1fa9b14a63be7845ee062bfe5d0",
           "bytes": 796
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "5e62fe3eefa938712ac0ab4a58580a9f7fca5c04",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLUS-21878_3488C365.pnach",
+          "git_blob_sha": "5e62fe3eefa938712ac0ab4a58580a9f7fca5c04",
+          "bytes": 257
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLUS-21878_3488C365.pnach",
+          "git_blob_sha": "5e62fe3eefa938712ac0ab4a58580a9f7fca5c04",
+          "bytes": 257
         }
       ]
     },
@@ -34943,6 +35167,26 @@
       ]
     },
     {
+      "git_blob_sha": "755cf27741b8e4ec5513a02a3b2af29d2ff9973d",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-55275_A68EB83E.pnach",
+          "git_blob_sha": "755cf27741b8e4ec5513a02a3b2af29d2ff9973d",
+          "bytes": 211
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-55275_A68EB83E.pnach",
+          "git_blob_sha": "755cf27741b8e4ec5513a02a3b2af29d2ff9973d",
+          "bytes": 211
+        }
+      ]
+    },
+    {
       "git_blob_sha": "756137711639053fa0d80ce6e6f5740793d752d1",
       "source_count": 2,
       "references": [
@@ -35074,6 +35318,26 @@
           "path": "cheats_gbatemp/010032D012602000.json",
           "git_blob_sha": "759fd89692d4abb540b57221d20e5c04954647e7",
           "bytes": 657
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "75af10a43d4275190defbd1db9fc86b51338b957",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-53536_84BFD6D4.pnach",
+          "git_blob_sha": "75af10a43d4275190defbd1db9fc86b51338b957",
+          "bytes": 176
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-53536_84BFD6D4.pnach",
+          "git_blob_sha": "75af10a43d4275190defbd1db9fc86b51338b957",
+          "bytes": 176
         }
       ]
     },
@@ -39327,6 +39591,26 @@
       ]
     },
     {
+      "git_blob_sha": "84b5b826ee2718dfb0755faff481253684de6f2b",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLUS-20944_024BF3B4.pnach",
+          "git_blob_sha": "84b5b826ee2718dfb0755faff481253684de6f2b",
+          "bytes": 321
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLUS-20944_024BF3B4.pnach",
+          "git_blob_sha": "84b5b826ee2718dfb0755faff481253684de6f2b",
+          "bytes": 321
+        }
+      ]
+    },
+    {
       "git_blob_sha": "84b69bb2640925ad2b90cced9e21b8cf00ca50b9",
       "source_count": 2,
       "references": [
@@ -42641,6 +42925,26 @@
           "path": "cheats_gbatemp/01007F4012B84000.json",
           "git_blob_sha": "91496cd451d2dbdcc515e22ff8ab229be516a8d5",
           "bytes": 397
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "91670082fa37da7c6ac2f695cb73c6c83de0adaf",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-54550_82DDC773.pnach",
+          "git_blob_sha": "91670082fa37da7c6ac2f695cb73c6c83de0adaf",
+          "bytes": 162
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-54550_82DDC773.pnach",
+          "git_blob_sha": "91670082fa37da7c6ac2f695cb73c6c83de0adaf",
+          "bytes": 162
         }
       ]
     },
@@ -52085,6 +52389,26 @@
       ]
     },
     {
+      "git_blob_sha": "b5f601dad52879d95d403bb35f1ee54b4f7056c4",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLUS-21717_3340FC2C.pnach",
+          "git_blob_sha": "b5f601dad52879d95d403bb35f1ee54b4f7056c4",
+          "bytes": 298
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLUS-21717_3340FC2C.pnach",
+          "git_blob_sha": "b5f601dad52879d95d403bb35f1ee54b4f7056c4",
+          "bytes": 298
+        }
+      ]
+    },
+    {
       "git_blob_sha": "b610a867bdf296e6bb823f5bf9bead5ecbccb321",
       "source_count": 2,
       "references": [
@@ -60119,6 +60443,26 @@
       ]
     },
     {
+      "git_blob_sha": "d2035f255c2c0cc99fb900858afb1fbd965b529a",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-53318_3EB41444.pnach",
+          "git_blob_sha": "d2035f255c2c0cc99fb900858afb1fbd965b529a",
+          "bytes": 177
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-53318_3EB41444.pnach",
+          "git_blob_sha": "d2035f255c2c0cc99fb900858afb1fbd965b529a",
+          "bytes": 177
+        }
+      ]
+    },
+    {
       "git_blob_sha": "d218cdd44a721f56ab97ce3d8279db5d59248cc0",
       "source_count": 2,
       "references": [
@@ -61583,6 +61927,26 @@
       ]
     },
     {
+      "git_blob_sha": "d64e1ca7354deb97e7564ddc3b038b28d10b383c",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-53963_8A1332C1.pnach",
+          "git_blob_sha": "d64e1ca7354deb97e7564ddc3b038b28d10b383c",
+          "bytes": 162
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-53963_8A1332C1.pnach",
+          "git_blob_sha": "d64e1ca7354deb97e7564ddc3b038b28d10b383c",
+          "bytes": 162
+        }
+      ]
+    },
+    {
       "git_blob_sha": "d65562a7e1267c84c768f41029b5590a25945db2",
       "source_count": 2,
       "references": [
@@ -62716,6 +63080,26 @@
       ]
     },
     {
+      "git_blob_sha": "da3f2a5f8d9da684d24efe2be6050f0f45cd8c89",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SCES-53422_D1003514.pnach",
+          "git_blob_sha": "da3f2a5f8d9da684d24efe2be6050f0f45cd8c89",
+          "bytes": 184
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SCES-53422_D1003514.pnach",
+          "git_blob_sha": "da3f2a5f8d9da684d24efe2be6050f0f45cd8c89",
+          "bytes": 184
+        }
+      ]
+    },
+    {
       "git_blob_sha": "da51485251766c93b8528adfafb347cb315594cd",
       "source_count": 2,
       "references": [
@@ -63795,6 +64179,26 @@
       ]
     },
     {
+      "git_blob_sha": "dd672d66ad7c1a8b4aa862d4f07ce1d131b3bb5c",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-55288_58026BD0.pnach",
+          "git_blob_sha": "dd672d66ad7c1a8b4aa862d4f07ce1d131b3bb5c",
+          "bytes": 366
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-55288_58026BD0.pnach",
+          "git_blob_sha": "dd672d66ad7c1a8b4aa862d4f07ce1d131b3bb5c",
+          "bytes": 366
+        }
+      ]
+    },
+    {
       "git_blob_sha": "dd6780cb29bc554d56cfdd31cb469fe14e65655d",
       "source_count": 2,
       "references": [
@@ -64161,6 +64565,26 @@
           "path": "cheats_gbatemp/01006C600E46E000.json",
           "git_blob_sha": "df0e93c0d32769b45ca75ec6157ec8010bce54df",
           "bytes": 1187
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "df15d26d2725eeabc5bf4b9cc06dc263c8e9ff7a",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-54125_79F6D5C9.pnach",
+          "git_blob_sha": "df15d26d2725eeabc5bf4b9cc06dc263c8e9ff7a",
+          "bytes": 165
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-54125_79F6D5C9.pnach",
+          "git_blob_sha": "df15d26d2725eeabc5bf4b9cc06dc263c8e9ff7a",
+          "bytes": 165
         }
       ]
     },
@@ -68212,6 +68636,26 @@
           "path": "cheats_gbatemp/0100BA5012E54000.json",
           "git_blob_sha": "ed80278de26161cbc48ddefaff01062fe1ab7163",
           "bytes": 3112
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "ed8467517d1a1d7ed8102ca76d9fbcf8455a5e69",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-55598_FFA75E86.pnach",
+          "git_blob_sha": "ed8467517d1a1d7ed8102ca76d9fbcf8455a5e69",
+          "bytes": 177
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-55598_FFA75E86.pnach",
+          "git_blob_sha": "ed8467517d1a1d7ed8102ca76d9fbcf8455a5e69",
+          "bytes": 177
         }
       ]
     },
@@ -73767,6 +74211,26 @@
           "path": "cheats_gbatemp/0100BF500207C000.json",
           "git_blob_sha": "ffaa9e323564110966fad915faa9ec9e09143145",
           "bytes": 13365
+        }
+      ]
+    },
+    {
+      "git_blob_sha": "ffbeda33e4b3592608639bb0cdbeb2d949f5267a",
+      "source_count": 2,
+      "references": [
+        {
+          "source_id": "daowace-pcsx2-consolidated",
+          "platform": "ps2",
+          "path": "cheats/SLES-51633_C7AA13F6.pnach",
+          "git_blob_sha": "ffbeda33e4b3592608639bb0cdbeb2d949f5267a",
+          "bytes": 198
+        },
+        {
+          "source_id": "pcsx2-official-patches",
+          "platform": "ps2",
+          "path": "patches/SLES-51633_C7AA13F6.pnach",
+          "git_blob_sha": "ffbeda33e4b3592608639bb0cdbeb2d949f5267a",
+          "bytes": 198
         }
       ]
     },
