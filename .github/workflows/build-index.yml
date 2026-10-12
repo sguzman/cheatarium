@@ -1044,7 +1044,7 @@ jobs:
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["external_reference_files_total"] == 42718 and x["metadata_only"] and not x["gameplay_verified"]; assert x["results"][0]["source_id"] == "gcmcom-legacy-snes" and x["results"][0]["rights_status"] == "link_only_rights_review"'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform arcade-fbneo --source-id smoker1-legacy-fbneo --title 'fghthist' --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["metadata_only"] and not x["archive_included"]; assert all(r["rights_status"] == "link_only_rights_review" for r in x["results"])'
-          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform multi-retroarch --source-id smoker1-legacy-othercores --title 'Mortal Kombat' --json \
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform multi-retroarch --source-id smoker1-legacy-othercores --title 'Snes9x 2010/Mortal Kombat (USA).cht' --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["kind"] == "cheat" and x["metadata_only"] and not x["gameplay_verified"]'
       - name: Confirm consumer-smoke stage
         env:

@@ -160,7 +160,7 @@ class TestExternalBulk(unittest.TestCase):
                                   "smoker1-legacy-fbneo")["files"]), 32)
         self.assertEqual(len(next(x for x in selected if x["id"] ==
                                   "smoker1-legacy-naomi")["files"]), 9)
-        self.assertEqual(len(lookup(selected, "Mortal Kombat", "multi-retroarch", 10)), 1)
+        self.assertEqual(len(lookup(selected, "Snes9x 2010/Mortal Kombat (USA).cht", "multi-retroarch", 10)), 1)
         self.assertEqual(len(lookup(selected, "Kirby Super Star", "snes", 10)), 1)
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review"
                             for x in selected))
