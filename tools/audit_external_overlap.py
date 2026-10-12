@@ -3,7 +3,7 @@
 
 No upstream payloads are downloaded or read. SHA-1 Git blob IDs describe exact
 byte identity, not distinct games, verified cheat effects, licensing or
-compatibility. All 22,886 inputs are metadata-only pinned source references.
+compatibility. All 38,573 inputs are metadata-only pinned source references.
 """
 import argparse
 import json
@@ -69,7 +69,7 @@ def build(root=ROOT):
     distinct_global = len(occurrences)
     repeated_occurrences = sum(len(rows) for rows in occurrences.values() if len(rows) > 1)
     cross_source_occurrences = sum(len(row["references"]) for row in shared)
-    if n != 32511 or len(sources) != 21:
+    if n != 38573 or len(sources) != 23:
         raise ValueError("Pinned external source inventory count changed")
     if (n - distinct_global != sum(
             row["repeated_blob_excess_occurrences_within_source"] for row in source_rows

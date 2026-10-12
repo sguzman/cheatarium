@@ -141,6 +141,18 @@ SOURCES = {
         "platform": "3ds", "expected": {"cheat":628},
         "rights_note": "The CTRPF AR collection accepts historically community-authored Nintendo 3DS cheat contributions and has no root LICENSE at this pinned revision. Reuse and attribution rights of individual original code authors remain unresolved; preserve title-ID source paths, Git blob hashes and byte sizes, not cheat codes.",
     },
+    "daowace-pcsx2-consolidated": {
+        "repository": "DAOWAce/pcsx2_cheats_collection",
+        "commit": "a18b78b3b59ce0f96195606a1ecb6a38744948f5",
+        "platform": "ps2", "expected": {"cheat": 5483},
+        "rights_note": "Community-consolidated PCSX2 PNACH set deriving from Ultimate PCSX2 Cheater, root670 CheatDevice, a local legacy collection and public forks. No repository LICENSE provides a blanket grant for historical individual cheat authors. Pin original file paths and blob identities only; structural validation or claimed CRC matches do not prove gameplay execution or permit redistributing code.",
+    },
+    "xs1l3n7x-pcsx2": {
+        "repository": "xs1l3n7x/pcsx2_cheats_collection",
+        "commit": "6cb57b55939f47dd91a157bfb6cdc7fd157a780c",
+        "platform": "ps2", "expected": {"cheat": 579},
+        "rights_note": "Original PCSX2 cheat conversion project credits independent Ultimate PCSX2 Cheater and CheatDevice contributors, but the pinned tree has no LICENSE. Keep PNACH file paths, hashes and sizes as link-only references; conversions and CRC labels do not independently verify gameplay compatibility or code authorship.",
+    },
 }
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -199,6 +211,8 @@ def classify(source, path):
         if re.fullmatch(r"cheats_gfx/[0-9a-fA-F]{16}\.json", path):
             return "patch"
     if source == "journeyover-3ds-ctrpf" and re.fullmatch(r"Cheats/[^/]+/[0-9a-fA-F]{16}\.txt", path):
+        return "cheat"
+    if source in ("daowace-pcsx2-consolidated", "xs1l3n7x-pcsx2") and re.fullmatch(r"cheats/[^/]+\.pnach", path):
         return "cheat"
     return None
 

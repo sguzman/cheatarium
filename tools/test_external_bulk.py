@@ -28,11 +28,13 @@ class TestExternalBulk(unittest.TestCase):
             "ibnux-switch-cheatdb": 3136,
             "sthetix-switch-mirror": 5861,
             "journeyover-3ds-ctrpf": 628,
+            "daowace-pcsx2-consolidated": 5483,
+            "xs1l3n7x-pcsx2": 579,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(indexes[1]["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 32511)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 38573)
 
     def test_rejects_payload_and_traversal(self):
         indexes = load(__import__("external_bulk").ROOT)
