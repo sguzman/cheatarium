@@ -179,8 +179,11 @@ def validate_report(doc):
             raise ValueError("Invalid historical example")
 
 
-def fetch_tree(repo, revision):
+def fetch_tree(repo, revision, *, recursive=False):
+    """Fetch a pinned Git tree; cheat subtrees require recursive flattening."""
     url = f"https://api.github.com/repos/{repo}/git/trees/{revision}"
+    if recursive:
+        url += "?recursive=1"
     request = urllib.request.Request(url, headers={
         "Accept": "application/vnd.github+json",
         "User-Agent": "Cheatarium-historical-metadata-audit",
@@ -197,8 +200,8 @@ def build_live():
         x.get("type") == "blob" and x.get("path") in ("LICENSE", "LICENSE.md", "COPYING")
         for x in root["tree"]
     )
-    historic = parse_cheat_tree(fetch_tree(HIST_REPO, HIST_TREE), HIST_TREE)
-    baseline = parse_cheat_tree(fetch_tree(BASE_REPO, BASE_TREE), BASE_TREE)
+    historic = parse_cheat_tree(fetch_tree(HIST_REPO, HIST_TREE, recursive=True), HIST_TREE)
+    baseline = parse_cheat_tree(fetch_tree(BASE_REPO, BASE_TREE, recursive=True), BASE_TREE)
     return compile_report(historic, baseline, load_bithex(), load_archived(), has_license)
 
 

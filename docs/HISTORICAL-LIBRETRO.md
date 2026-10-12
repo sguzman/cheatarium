@@ -54,8 +54,9 @@ permission from every historical cheat author. Keep Emupedia as a
 **historical metadata/provenance lead** pending individual-author and
 upstream-rights review. Do not bulk-copy these code bodies yet.
 
-Next acquisition step: identify which remaining historical blobs are
-already present in other archived sources, separate rumble/supporting
-files from cheat data, and find provenance for genuinely unpreserved
-cheat bytes. Preserve unmodified originals and source attribution
+The cross-check against the entire current archive is complete; no
+additional exact blob matches were found outside the baseline and BitHeX
+delta. Next acquisition step: separate rumble/supporting files from
+cheat data and investigate original-author provenance for the remaining
+historical bytes. Preserve unmodified originals and source attribution
 only when redistribution rights can be defended.

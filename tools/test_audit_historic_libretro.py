@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Offline regression tests for historical Libretro fork comparison."""
+import io
+import json
 import unittest
+from unittest.mock import patch
 
 from audit_historic_libretro import (
-    HIST_TREE, parse_cheat_tree, compile_report, validate_report,
+    HIST_TREE, parse_cheat_tree, compile_report, validate_report, fetch_tree,
 )
 
 
@@ -13,6 +16,24 @@ def blob(name, sha, size=1, mode="100644"):
 
 
 class HistoricalForkTests(unittest.TestCase):
+    def test_fetch_cheat_tree_requests_recursive_git_inventory(self):
+        requested_urls = []
+
+        def fake_urlopen(request, timeout):
+            requested_urls.append(request.full_url)
+            return io.BytesIO(json.dumps({
+                "sha": HIST_TREE, "truncated": False, "tree": [],
+            }).encode("utf-8"))
+
+        with patch("audit_historic_libretro.urllib.request.urlopen",
+                   side_effect=fake_urlopen):
+            self.assertEqual(fetch_tree("Emupedia/test", HIST_TREE,
+                                        recursive=True)["sha"], HIST_TREE)
+            fetch_tree("Emupedia/test", HIST_TREE)
+
+        base = "https://api.github.com/repos/Emupedia/test/git/trees/" + HIST_TREE
+        self.assertEqual(requested_urls, [base + "?recursive=1", base])
+
     def test_archive_delta_and_path_comparisons_are_distinct(self):
         h = [
             ("NES/A.cht", "a" * 40, 1),
