@@ -94,3 +94,40 @@ The newest four Wii sources contributed 16 native Gecko cheat files, including f
 Two further original licensed collections added one PS3 and one Nintendo 3DS native cheat document. The PS3 NFS Carbon patch source is a first-class indexed Markdown PowerPC code list with separately labeled effects; original patch input files remain archive-only accompanying resources. The Ice Station Z source explicitly credits the underlying idea to Peanut#XTN. Each original file, including the non-UTF-8-encoded PS3 license notice, matches the pinned upstream Git SHA. Source lookups passed automated CI, but the codes were not activated or independently validated in game.
 
 The newest three source acquisitions preserve five original Nintendo 3DS cheat files: one FoxyXTN Settings-app CTRPF original with potentially destructive network and parental-settings alterations; three Cracko298 Minecraft 3DS mob-cap CTRPF files that share one exact Git blob across distinct title-ID filenames; and one Cracko298 Minecraft 3DS save-control CTRPF original. Each project retains its native Apache-2.0 LICENSE and README. SHA-matched acquisition and the published index passed CI run 38178494385. This is preservation and search indexing, not verified code execution or a claim of multiple unique cheat designs.
+
+
+## High-volume bulk-source rights decisions (2026-10-12)
+
+This is a source-attribution and reuse-rights checkpoint, **not** an assertion
+that publicly visible cheat material is free to redistribute. Counts below
+are exact-byte, source-ID-exclusive, unarchived, *cheat-labeled* Git blobs
+from the pinned [acquisition ranking](../generated/v1/reports/acquisition-priorities.json),
+not independently identified games, novel executable effects, or verified cheats.
+The external inventories are fixed to immutable revisions. Each named root
+README/LICENSE below was separately inspected for the reuse basis; rights
+conclusions remain conservative and are never inferred solely from GitHub visibility.
+
+| Priority | External source | Exclusive candidate blobs | Source rights evidence | Decision |
+| --- | --- | ---: | --- | --- |
+| 1 | `daowace-pcsx2-consolidated` | 5,250 | [DAOWAce/pcsx2_cheats_collection README.md](https://github.com/DAOWAce/pcsx2_cheats_collection/blob/a18b78b3b59ce0f96195606a1ecb6a38744948f5/README.md) | **Still link-only; rights unresolved** |
+| 2 | `duckstation-chtdb` | 4,497 | [duckstation/chtdb LICENSE](https://github.com/duckstation/chtdb/blob/e3cce509936261808b971199be3a20e84d0b9482/LICENSE) | **Still link-only; rights unresolved** |
+| 3 | `ibnux-switch-cheatdb` | 3,037 | [ibnux/switch-cheat README.md](https://github.com/ibnux/switch-cheat/blob/14f899df1cecca3c2359125b5b4876c2deeaab20/README.md) | **Still link-only; rights unresolved** |
+| 4 | `sthetix-switch-mirror` | 2,716 | [sthetix/nx-cheats-db README.md](https://github.com/sthetix/nx-cheats-db/blob/e5587ee6844bf9cb7fc6513a49cbf7385387b3bf/README.md) | **Still link-only; rights unresolved** |
+| 5 | `ademola-switch-native` | 1,853 | [ADEMOLA200/Switch-Emulator-Mod-Database README.md](https://github.com/ADEMOLA200/Switch-Emulator-Mod-Database/blob/abd55774c369b9c3a4df960e7afdb0391cb52056/README.md) | **Still link-only; rights unresolved** |
+
+**1. daowace-pcsx2-consolidated.** DAOWAce explicitly describes a merged legacy/local PS2 database and fork-network additions from multiple creators; no blanket rights grant for every original cheat was identified. **Next clearance action:** Identify original upstream contributors and separate author-owned instructions from converted historical entries; retain metadata-only until per-portion grants verified.
+
+**2. duckstation-chtdb.** The LICENSE expressly attributes cheat and patch copyright to original authors. Its MIT text licenses only scripts for processing cheat data. **Next clearance action:** Do not treat the MIT license as applying to cheats. Identify author-by-author permissions for any potential imported subcollection.
+
+**3. ibnux-switch-cheatdb.** README calls the data a compilation, names LordApple SXOS-CheatDB, WerWolv EdiZon and blawar titledb as inputs, and describes an automatically generated mirror. **Next clearance action:** Trace each native title/build label to the originating author; do not import mirror payloads under the scraper's authority.
+
+**4. sthetix-switch-mirror.** README identifies a daily mirror sourced from GBAtemp, ChanseyIsTheBest, HamletDuFromage and Cheatslips, and credits original code authors. **Next clearance action:** Review the upstream source author/license per cheat; do not confuse title/update totals or graphics patches with new transferable code rights.
+
+**5. ademola-switch-native.** README lists multiple independent source repositories and labels a mix of FPS, graphics and gameplay mods; a root MIT license does not settle other contributors' rights. **Next clearance action:** Treat original authors and patch/cheat types separately; seek author grants for independently created mods before import.
+
+**Boundary:** No sources in this section have been promoted to an
+archived-cheat source by the audit. The presence of an MIT/GPL license for
+project scripts or independently authored tooling does not automatically
+cover earlier cheat authors. Need evidence at original-author level,
+including scope of redistribution, attribution and any derivative-code terms.
+The bulk ranking is a research queue, not an import authorization.
