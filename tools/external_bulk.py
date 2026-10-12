@@ -54,8 +54,14 @@ SOURCES = {
     "ademola-switch-native": {
         "repository": "ADEMOLA200/Switch-Emulator-Mod-Database",
         "commit": "abd55774c369b9c3a4df960e7afdb0391cb52056",
-        "platform": "switch", "expected": {"cheat":1927,"patch":589},
+        "platform": "switch", "expected": {"cheat":1927,"patch":655},
         "rights_note": "The MIT-licensed upstream aggregates many separately authored Switch cheat/graphics mods and patch sources; original contributors' redistribution rights are unresolved. Links, paths and hashes only; FPS/resolution patches are not necessarily cheats.",
+    },
+    "ademola-3ds-native": {
+        "repository": "ADEMOLA200/Switch-Emulator-Mod-Database",
+        "commit": "abd55774c369b9c3a4df960e7afdb0391cb52056",
+        "platform": "3ds", "expected": {"cheat":257},
+        "rights_note": "The upstream README explicitly credits many independent modding projects and its root MIT license does not establish rights to the community-contributed 3DS title-ID cheats. Preserve only pinned 3DS title-ID file paths, byte sizes and original Git blob hashes; no cheat bodies copied.",
     },
     "rogamer97-asm-3ds": {
         "repository": "RoGamer97/ASM-Cheats-and-Patches",
@@ -141,8 +147,10 @@ def classify(source, path):
         if (re.fullmatch(r"Titles/[0-9a-fA-F]{16}/cheats/[0-9a-fA-F]{16}\.txt", path)
                 or re.fullmatch(r"NX-60FPS-RES-GFX-Cheats/titles/[0-9a-fA-F]{16}/cheats/[0-9a-fA-F]{16}\.txt", path)):
             return "cheat"
-        if path.endswith(".pchtxt"):
+        if path.endswith((".pchtxt", ".ips")):
             return "patch"
+    if source == "ademola-3ds-native" and re.fullmatch(r"[^/]+/000400[0-9a-fA-F]{10}\.txt", path):
+        return "cheat"
     if source.startswith("rogamer97-asm-"):
         prefix = {"3ds": "3DS", "ds": "DS", "gamecube": "GameCube",
                   "switch": "Switch", "wii": "Wii"}.get(source.removeprefix("rogamer97-asm-"))

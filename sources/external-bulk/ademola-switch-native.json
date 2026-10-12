@@ -9,14 +9,24 @@
   "rights_note": "The MIT-licensed upstream aggregates many separately authored Switch cheat/graphics mods and patch sources; original contributors' redistribution rights are unresolved. Links, paths and hashes only; FPS/resolution patches are not necessarily cheats.",
   "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
   "file_counts": {
-    "cheat": 1927,
-    "patch": 589
+    "patch": 655,
+    "cheat": 1927
   },
   "files": [
+    [
+      "AER: Memories of Old/exefs_patches/AER60FPS/15DCB7935B84A141B6CA738DEE0123A7.ips",
+      "1ef88f7ca195ebd2cdc5342a04f604a21b22f195",
+      56
+    ],
     [
       "Advance Wars 1+2 Re-Boot Camp/[0100300012F2A000]/60fps/1.0.0.pchtxt",
       "d3f751fe442a46d30abc7d3c4fe408fea3e3b4c7",
       452
+    ],
+    [
+      "Alien Isolation/60 FPS 1.1.1/exefs_patches/AlienIso-60FPS/EBE18862AE4ECA7536B54FFB2D702A046B8F02E2000000000000000000000000.ips",
+      "37e84fa5c635956294225cf0de9a99ab2858d764",
+      29
     ],
     [
       "Animal Well/010020D01AD24000/2K/exefs/1.0.6.pchtxt",
@@ -84,6 +94,16 @@
       249
     ],
     [
+      "Assassins Creed The Rebel Collection/60FPS 1.0.0/exefs_patches/ACRebel-60FPS/3DEF0E36AA8C659218C86F040CBA74E08946E6EA000000000000000000000000.ips",
+      "a34f67066965280743778d9ef6a5e63177f57e0a",
+      17
+    ],
+    [
+      "Assassins Creed The Rebel Collection/60FPS 1.0.0/exefs_patches/ACRebel-60FPS/85F5D5AB6187F60289071E09D41163E224513C64000000000000000000000000.ips",
+      "6c0c4b9748b781393fb9a6076580165dc6e8c0b2",
+      17
+    ],
+    [
       "Astral Chain - 02/01007300020FA000/1062p/exefs/1.0.1.pchtxt",
       "9407c71b18c468b9ec2d659b3c79bd7d322102bd",
       773
@@ -142,6 +162,31 @@
       "Atelier Ryza Ever Darkness & the Secret Hideout/[0100D1900EC80000]/Uncap FPS/Uncap.pchtxt",
       "3922bb28514cee524c28bd91bd3c017558c1ddd3",
       312
+    ],
+    [
+      "Atelier Ryza Ever Darkness & the Secret Hideout/exefs_patches/AtelierRyza60FPS/3F89E39F6395586437D3F113E8B36DDA61C80FA0000000000000000000000000.ips",
+      "1212759768e1df30ce4dfcce12f392e6dd90d0d1",
+      17
+    ],
+    [
+      "Atelier Ryza Ever Darkness & the Secret Hideout/exefs_patches/AtelierRyza60FPS/4E9E9501D27DD02EBB0377EC4877B736679DFE9F.ips",
+      "4bed8fa603984eb0a4e4dc9d39c6ae3612f559c0",
+      17
+    ],
+    [
+      "Atelier Ryza Ever Darkness & the Secret Hideout/exefs_patches/AtelierRyza60FPS/5017110DB5AAC6CC854D5775A31330566AC631A9.ips",
+      "4ea38979c9cf36802a1a7ee7e781dbdc6ace3608",
+      17
+    ],
+    [
+      "Atelier Ryza Ever Darkness & the Secret Hideout/exefs_patches/AtelierRyza60FPS/78A0EDFBD60C976EBEB2CF8693640970A08C31FC.ips",
+      "e486b5bc3fa6e7a396b0d68ef94c292a6de3eb0a",
+      17
+    ],
+    [
+      "Atelier Ryza Ever Darkness & the Secret Hideout/exefs_patches/AtelierRyza60FPS/BE0EFDE5580470DB3B3374A6251ED7E66A700E85000000000000000000000000.ips",
+      "1212759768e1df30ce4dfcce12f392e6dd90d0d1",
+      17
     ],
     [
       "Atelier Sophie 2 The Alchemist of the Mysterious Dream/[010082A01538E000]/60fps/60fps.pchtxt",
@@ -309,6 +354,21 @@
       338
     ],
     [
+      "Bulletstorm Duke of Switch Edition/exefs_patches/BulletStorm60FPS/32FC35DF1C50E1F139B180E1C938DB97.ips",
+      "fda2ebd6838afd991d44901e9cf0b262f22513bb",
+      19
+    ],
+    [
+      "Call of Juarez Gunslinger/exefs_patches/CallofJuarez60FPS/6BA63EBC3BA1B4DA6018817D9962583F3BFE7444.ips",
+      "96062430607d3eab4f577344bf84415f37fed75e",
+      17
+    ],
+    [
+      "Call of Juarez Gunslinger/exefs_patches/CallofJuarez60FPS/EBF7DE558D554C7EF5DA727BE9B04F1447E6AA3B.ips",
+      "96062430607d3eab4f577344bf84415f37fed75e",
+      17
+    ],
+    [
       "Celeste/01002B30028F6000/1080p/exefs/1.4.1.1.pchtxt",
       "dea04114420190566987eb64881a40f10b881654",
       276
@@ -434,6 +494,16 @@
       405
     ],
     [
+      "Crash Bandicoot N.Sane Trilogy/exefs_patches/CBNT60FPS/29E1A37D84227147A50A18D055FBB032.ips",
+      "a74c4c21f15d7079d844799c656590c34fefd33a",
+      17
+    ],
+    [
+      "Crash Bandicoot N.Sane Trilogy/exefs_patches/CBT720/29E1A37D84227147A50A18D055FBB032.ips",
+      "ac66b24ae0d45b931398bc99eb915d7c389d65ea",
+      34
+    ],
+    [
       "Crash Team Racing Nitro-Fueled/[0100F9F00C696000]/60fps/1.0.0.pchtxt",
       "fb6abb31e7b94a8f0a4f5cb1516d8c4b031ed40c",
       297
@@ -452,6 +522,66 @@
       "Crash Team Racing Nitro-Fueled/[0100F9F00C696000]/Uncap FPS/1.0.15.pchtxt",
       "f5ba7073b09628fbb55a266ef45a46c473512d50",
       306
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR60FPS/20E862BD6C39D8AE4D708B15BBFF6352.ips",
+      "9c32ee68599a539630e208b9f76d70ac84996f1a",
+      19
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR60FPS/22DF179B89611807DA37054F86CE401B.ips",
+      "5929cbb13f58e928a41aeef5365cd9ecf904b293",
+      19
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR60FPS/47E60871471F1CE9E212B81DEC5A6249.ips",
+      "2e249d8aca6628f9a5dd2fa2a1b8f8669210ae5f",
+      19
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR60FPS/64736428D344E78EC1593488EBBF6E9A.ips",
+      "25c47b3cebd5e569f8bf2143f47de64d7e4a81f1",
+      19
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR60FPS/6D693314DAC7B040950D79FA8E9A4A35.ips",
+      "34f7dae92a1732d5444f94e9cc129560b6f1e3e2",
+      19
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR60FPS/D614A20DDE59E4D77F1066ED17329FF5.ips",
+      "94adeede925b4c9a5bc4b9355389d09eea9f359f",
+      19
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR60FPS/DFCFAFF44673EF2BD02AD0D52DA67A64.ips",
+      "1ad82a079f3e1c6188d680da5c2b4559cc96b478",
+      19
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR720-1.0.2/EC79BF385ED287E8D198384D66D28B7B.ips",
+      "f53b817d93657c813ea9a2320edaa273f119fe6b",
+      29
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR720-1.0.3/67813B3F857829913E3344671F23B130.ips",
+      "16918979ae79a27e01ed5aaffacaab8944cb3891",
+      29
+    ],
+    [
+      "Crash Team Racing/exefs_patches/CTR720-1.0.4/BE5EE5A46FCDE180C6DAE642FA5571CC.ips",
+      "2cf5fb46c7ead6dc7eba97029b130bd59e219af1",
+      29
+    ],
+    [
+      "DOOM/DOOM60FPS/exefs_patches/DOOM60FPS/01ACE43E724259C3772742BC7598EE2B.ips",
+      "6508dc3d7c9725f251252e3af848e41aad9af716",
+      19
+    ],
+    [
+      "DOOM/DOOMDynResOff/exefs_patches/DOOMDynResOff/01ACE43E724259C3772742BC7598EE2B.ips",
+      "f63a5e2cd24cf0fbc5e0a8c8bf9abc15a1dbad04",
+      19
     ],
     [
       "DRAGON QUEST MONSTERS The Dark Prince/[0100A77018EA0000]/Aspect Ratio/16.10/1.0.1.pchtxt",
@@ -519,6 +649,21 @@
       247
     ],
     [
+      "Dark Souls/1.0.3/exefs_patches/DarkSouls60FPS/DF3766A2BB651A3E822828ABF10B6F7B.ips",
+      "346cfd639707876674144910bd79ce3ce8fd9240",
+      29
+    ],
+    [
+      "Darksiders 2/1.0.0/exefs_patches/Darksiders2-60FPS/173E2EDEA9E5D9408B125F2CB34364223C399F11000000000000000000000000.ips",
+      "8936ff7b7223b6179203cfa0f9621c9125d46246",
+      79
+    ],
+    [
+      "Darksiders/exefs_patches/Darksiders1-60FPS/A4CC4C44C07AEC14A9EA9D1A3E02AAB7.ips",
+      "69e0690bdfb1281ab03680322dc879d0158d1a13",
+      26
+    ],
+    [
       "Dave The Diver/[010097F018538000]/60FPS/1.0.1.598.pchtxt",
       "d909129e9c4500486aba8e87cc56e2c8ad87d645",
       282
@@ -567,6 +712,16 @@
       "Donkey Kong Country Returns HD/01009D901BC56000/8K/exefs/1.0.0.pchtxt",
       "65b15f3a9a484a939ec7f44f4d02d6cdaed9123f",
       691
+    ],
+    [
+      "Dragon Quest Builders 2/exefs_patches/DQB2-HighRes-1.6.1/1A0B233DC70B7F6E40A9D928538B47C0.ips",
+      "85da2addb6ca2b0b8d909a4002dd1e25d99c2aa7",
+      35
+    ],
+    [
+      "Dragon Quest XI S Demo/exefs_patches/DQXISD60FPS/A7578001B492C2028B722995F3ECA71F.ips",
+      "a74c48210f4f79a53c6b1433e29684627190d227",
+      23
     ],
     [
       "Eiyuden Chronicle - Hundred Heroes/0100ED9018F3E000/2K/exefs/1.0.4.pchtxt",
@@ -704,6 +859,16 @@
       275
     ],
     [
+      "Fire Emblem Three Houses/exefs_patches/FireEmblem3Houses-60FPS/47CA26D2AA77D0BAED0DB5064019F600.ips",
+      "a4fc020dc65e86ef7f249639fa65b2604eb5ec9c",
+      14
+    ],
+    [
+      "Fire Emblem Three Houses/exefs_patches/FireEmblem3Houses-60FPS/CECF500CEA4C214C46ABD94D133939C4.ips",
+      "b7636597586d03f3839f96ee5840729b140aeb0e",
+      14
+    ],
+    [
       "Five Nights at Freddy's Security Breach/[01009060193C4000]/60fps/60fps.pchtxt",
       "44bdfc07a0a281dbbd1c4fc5db657d468a332ef7",
       296
@@ -712,6 +877,11 @@
       "Five Nights at Freddy's Security Breach/[01009060193C4000]/Uncap FPS/Uncap.pchtxt",
       "4cb540d3988bbcf6c7abee35e023a54383991c4c",
       304
+    ],
+    [
+      "GRID Autosport/exefs_patches/GRID-60FPS/6555F3622A3417C91FF4809D85E7961C739685C4000000000000000000000000.ips",
+      "6908089af17c2315a1e726e1c479b8161b386557",
+      29
     ],
     [
       "GRIME Definitive Edition/0100F300169B6000/1080p-720p/exefs/1.3.2.pchtxt",
@@ -732,6 +902,11 @@
       "GRIME Definitive Edition/0100F300169B6000/5K/exefs/1.3.2.pchtxt",
       "c706c3d1f070b40aa6bdd673e1f6789ac7f76260",
       684
+    ],
+    [
+      "God Eater 3/exefs_patches/GE3-HighMod/9ED444678B20813A8FD53556E73E6470.ips",
+      "bbd4ddaad7ce34f816612c140223c8772644b429",
+      26
     ],
     [
       "Hades/0100535012974000/2K/exefs/1.0.38233.pchtxt",
@@ -959,6 +1134,16 @@
       368
     ],
     [
+      "Luigi's Mansion 3/LM3 60FPS/788DD38AD97F1D12EF1FE648F894F897C96D4479000000000000000000000000.ips",
+      "5458df2617f76ddd7ea6a54e2c94355012959300",
+      29
+    ],
+    [
+      "Luigi's Mansion 3/LM3 60FPS/A27C9BA72927796AC58494CE9741D6D8911C2F75000000000000000000000000.ips",
+      "873a951c4cb6e37f1b172e9b8d21b3aa3a0fadb2",
+      29
+    ],
+    [
       "Mario & Luigi Brothership/[01006D0017F7A000]/FPS/60FPS/1.0.0.pchtxt",
       "5e40e7ca353b27dc545231cf2c7e91e68f14c2aa",
       356
@@ -992,6 +1177,11 @@
       "Mario + Rabbids Kingdom Battle/[010067300059A000]/60fps/1.9.589692.pchtxt",
       "ad12f69b90ed8df4d315fbf2e6f135ffc707424b",
       293
+    ],
+    [
+      "Mario + Rabbids Kingdom Battle/exefs_patches/MRKB60FPS/3B39E0C06B8841F1BAF0EA4D54286BFE.ips",
+      "d8a88abbfb328817d9613b4c0928a01948c28b86",
+      19
     ],
     [
       "Mario + Rabbids Sparks of Hope/[0100317013770000]/60fps/60fps.pchtxt",
@@ -1197,6 +1387,11 @@
       "Master Detective Archives RAIN CODE/US [0100149019460000]/60fps/1.4.0.pchtxt",
       "98d6dec5827259d9cfbfdde25af050c88bf3d01b",
       328
+    ],
+    [
+      "Metro Redux/MetroRedux60FPS/85C362CC9790F0EDF23749B041953C514BB926BA000000000000000000000000.ips",
+      "dddada732c4d68e1f7db3fd772ea3c0ea5fa6a03",
+      33
     ],
     [
       "Metroid Dread - 02/010093801237C000/1008p v2/exefs/2.1.0.pchtxt",
@@ -5689,6 +5884,11 @@
       665
     ],
     [
+      "New Super Lucky's Tale/1.3.6/exefs_patches/NewLuckysTale-60FPS/9ACB46936749F5439391156BC8FDA786.ips",
+      "d745d2143c994fdd0ac673f0ded07464af79988b",
+      17
+    ],
+    [
       "Ni No Kuni II - Revenant Kingdom/0100BE7013E06000/1080p/exefs/1.10.pchtxt",
       "b894b4cd475d7ac486500f3101c6d75aab7b48ca",
       387
@@ -5767,6 +5967,11 @@
       "Octopath Traveler/010057D006492000/60 FPS/exefs/1.0.5.pchtxt",
       "fc82404514098a643bd1789510a23e7eb233c97b",
       239
+    ],
+    [
+      "Oninaki/exefs_patches/Oninaki60FPS/C949E2576F532C43A8CFD7A03A5D2383.ips",
+      "e5ad6c012d5608aba5db4ea5240e5322fb6285a2",
+      51
     ],
     [
       "Ori and the Blind Forest/010061D00DB74000/2K-1080p/exefs/1.0.2.pchtxt",
@@ -5899,6 +6104,16 @@
       430
     ],
     [
+      "Paper Mario The Thousand Years Door/Triple Buffer/exefs_patches/PaperMarioTTYD_TripleBuffer/78F37BB55D015BE3B368EC22AF595455F1544DC1000000000000000000000000.ips",
+      "43052a0f887953ca81d58a92ba94f44118a51d85",
+      129
+    ],
+    [
+      "Pawarumi/1.0.1/exefs_patches/Pawarumi60FPS/93301EE57E1E4A4EA79BEE4D9622D0E1.ips",
+      "f4f67be6082769c1a3d04f459240fab68dc597c4",
+      17
+    ],
+    [
       "Persona 3 Portable/0100DCD01525A000/2K-1080p/exefs/1.0.0.pchtxt",
       "07ee48159aa1e5d55c6c21dea17cdcb68daf891f",
       525
@@ -5944,6 +6159,11 @@
       232
     ],
     [
+      "Persona 5 Tactica/[010087701B092000]/60fps IPS File (Only for Switch users)/3053B22935E32DDF15EF81997603E5C267534A90.ips",
+      "0510904093d5baad40da0aa4e298e25f2857e471",
+      19
+    ],
+    [
       "Persona 5 Tactica/[010087701B092000]/60fps/60fps.pchtxt",
       "7cf1cd1f55e778c31479577594175f8a7029f7aa",
       226
@@ -5952,6 +6172,16 @@
       "Persona 5 Tactica/[010087701B092000]/Uncap FPS/Uncap.pchtxt",
       "a469213c2c09a1485fe44f52a8d0e24b92bba692",
       234
+    ],
+    [
+      "Pokemon Lets Go Pikachu/exefs_patches/PokemonLGP_102_TripleBuffer/C208DB6A4EF4361F28B8402BE0F7CD9A.ips",
+      "32424ebbcf4f46f66b4d1fe17ef6a8208f12145a",
+      147
+    ],
+    [
+      "Pokemon Mystery Dungeon DX/1.0.1/exefs_patches/PkDX-60FPS/9DDA1EFEEF70DE46821AEA8429CA22CF.ips",
+      "e60387960fbde4f316e6f86066ae4fc4049dd450",
+      17
     ],
     [
       "Prince of Persia - The Lost Crown/0100210019428000/2K/exefs/1.0.2.pchtxt",
@@ -6569,6 +6799,11 @@
       283
     ],
     [
+      "Red Dead Redemption/[010000B0196AA000]/60fps IPS File (Only for Switch users)/8618895246B420329B77746B960A66ABCBEDE992.ips",
+      "6ce2421d3475dd0f35240dd4a6ac4a29e624a965",
+      19
+    ],
+    [
       "Red Dead Redemption/[010000B0196AA000]/60fps/60fps.pchtxt",
       "4bf1197efaeda74c6593565a579b06916195c4c4",
       228
@@ -6592,6 +6827,11 @@
       "Red Dead Redemption/[010000B0196AA000]/Unlock 60fps Limit/1.0.3.pchtxt",
       "f7fe58674cbf461e3097961a17b6a474affab322",
       434
+    ],
+    [
+      "Red Dead Redemption/[01007820196A6000]/60fps IPS File (Only for Switch users)/8618895246B420329B77746B960A66ABCBEDE992.ips",
+      "6ce2421d3475dd0f35240dd4a6ac4a29e624a965",
+      19
     ],
     [
       "Red Dead Redemption/[01007820196A6000]/60fps/60fps.pchtxt",
@@ -6622,6 +6862,26 @@
       "Red Dead Redemption/[01007820196A6000]/Unlock 60fps Limit/1.0.4.pchtxt",
       "7f501a8f95328af1ec80d95626d5278621b73a91",
       437
+    ],
+    [
+      "Redout/exefs_patches/Redout60FPS/1C81D0BC7BA01EE2DF508FB7529F8C86.ips",
+      "18626b4ee22b605ccd748c72692ede0cd3653ed7",
+      16
+    ],
+    [
+      "Rise: Race The Future/exefs_patches/RiseRace60FPS/6E78E8CE27740144B26E299D79CBE95D.ips",
+      "d5f9bb34d376dbd958a0bb398ba0cda7b0bff82c",
+      17
+    ],
+    [
+      "Risk of Rain 2/exefs_patches/RiskOfRain260FPS/E6A93D88F05CA34692886984DA714A67.ips",
+      "947865d41260b5cde8b44f4c58d6af3653c1e646",
+      23
+    ],
+    [
+      "Senran Kagura Peach Ball/1.0.2 West/exefs_patches/SenranKaguraPB-60FPS/7F8AF4380449F13D8588C059E3906B3B.ips",
+      "270758fc10c4b6272f2da44863d85d706faabf96",
+      21
     ],
     [
       "Shin Chan Me And the Professor On Summer Vacation The Endless Seven-Day Journey/[0100ACC0185FC000]/60fps/60fps.pchtxt",
@@ -6872,6 +7132,11 @@
       "Star Ocean The Second Story R - 02/010065301A2E0000/8K/exefs/1.1.0.pchtxt",
       "9bebd4828e48b1e9864653b1bd057935cc045b86",
       697
+    ],
+    [
+      "Star Ocean The Second Story R/[010065301A2E0000]/60fps IPS File (Only for Switch users)/8618895246B420329B77746B960A66ABCBEDE992.ips",
+      "6ce2421d3475dd0f35240dd4a6ac4a29e624a965",
+      19
     ],
     [
       "Star Ocean The Second Story R/[010065301A2E0000]/60fps/60fps.pchtxt",
@@ -7134,6 +7399,16 @@
       546
     ],
     [
+      "Team Sonic Racing/exefs_patches/TeamSonic-60FPS/AD75285A65EB6FFDDFB7DF4EC09732CF.ips",
+      "0e8a0a7985cd706ed821c9ddaee9285db7878972",
+      17
+    ],
+    [
+      "The Legend Of Zelda Tears of the Kingdom/exefs_patches/ZeldaToTK_TripleBuffer/9B4E43650501A4D4489B4BBFDB740F26AF3CF850000000000000000000000000.ips",
+      "b1ccc8ee886a65ab3964dc00ca1ee5cfc6031df3",
+      27
+    ],
+    [
       "The Legend of Heroes Trails Through Daybreak/China [0100F8A01D068000]/60fps/1.0.0.pchtxt",
       "2ae4bdcede05990c8ef3b3d463d9ddb3ff6e3eff",
       387
@@ -7162,6 +7437,16 @@
       "The Legend of Heroes Trails Through Daybreak/US [010040C01D248000]/60FPS PCHTXT/1.0.1.pchtxt",
       "c83fb1af2324dba34c615dddc104bfe916d840ae",
       309
+    ],
+    [
+      "The Legend of Zelda Breath of The Wild/exefs_patches/ZeldaBOTW_TripleBuffer/8E9978D50BDD20B4C8395A106C27FFDE.ips",
+      "9b3da048efaa8b8c09c5046d0cf6f70464f6645e",
+      34
+    ],
+    [
+      "The Legend of Zelda Breath of The Wild/exefs_patches/ZeldaHighRes-1.6.0/8E9978D50BDD20B4C8395A106C27FFDE.ips",
+      "855227d904d0ded64c865dd4cb04171f8fa40008",
+      26
     ],
     [
       "The Legend of Zelda Echoes of Wisdom/[01008CF01BAAC000]/1.0.1/Bloom/Reduced Bloom/1.0.1.pchtxt",
@@ -12524,6 +12809,11 @@
       235
     ],
     [
+      "Wolfenstein II/exefs_patches/Wolf2DynResOff/F2FE5EF877839F4F9334388D278366B2.ips",
+      "c574723c87e25cbbfb2dcc3bfa4c3d6cac2d0ba6",
+      16
+    ],
+    [
       "World Ends With You, The/0100C1500B82E000/1080p/exefs/1.0.0.pchtxt",
       "1b86b7f18460d9ee9bad9119859212cac0bd136f",
       370
@@ -12532,6 +12822,46 @@
       "Xenoblade Chronicles - Definitive Edition/010065301A2E0000/Remove 'Press Any Button'/exefs/1.1.2.pchtxt",
       "0e976e9de9d14874c2273e6488b6163807b92bd8",
       388
+    ],
+    [
+      "Xenoblade Chronicles 2 Torna Country/Like Docked Mode/Max 540p/exefs_patches/Xenoblade2Graphics/56246A89466A791BA88B1CDBB4B3E6F8.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
+    ],
+    [
+      "Xenoblade Chronicles 2 Torna Country/Like Docked Mode/Max 720p/exefs_patches/Xenoblade2Graphics/56246A89466A791BA88B1CDBB4B3E6F8.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
+    ],
+    [
+      "Xenoblade Chronicles 2 Torna Country/Raw Image/Max 540p/exefs_patches/Xenoblade2Graphics/56246A89466A791BA88B1CDBB4B3E6F8.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
+    ],
+    [
+      "Xenoblade Chronicles 2 Torna Country/Raw Image/Max 720p/exefs_patches/Xenoblade2Graphics/56246A89466A791BA88B1CDBB4B3E6F8.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
+    ],
+    [
+      "Xenoblade Chronicles 2/Like Docked Mode/Max 540p/exefs_patches/Xenoblade2Graphics/D007651BC7C6A51ED7E8F463E02AC2EF.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
+    ],
+    [
+      "Xenoblade Chronicles 2/Like Docked Mode/Max 720p/exefs_patches/Xenoblade2Graphics/D007651BC7C6A51ED7E8F463E02AC2EF.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
+    ],
+    [
+      "Xenoblade Chronicles 2/Raw Image/Max 540p/exefs_patches/Xenoblade2Graphics/D007651BC7C6A51ED7E8F463E02AC2EF.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
+    ],
+    [
+      "Xenoblade Chronicles 2/Raw Image/Max 720p/exefs_patches/Xenoblade2Graphics/D007651BC7C6A51ED7E8F463E02AC2EF.ips",
+      "3048d371dd1694c201c117dd0d110e5286334960",
+      27
     ],
     [
       "Ys VIII Lacrimosa of DANA/[01007F200B0C0000]/60FPS/60FPS.pchtxt",
