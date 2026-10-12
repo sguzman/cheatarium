@@ -952,21 +952,25 @@ jobs:
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title 'Painkiller' --limit 4 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["metadata_only"] and not x["gameplay_verified"] and not x["archive_included"] and x["artifact_checksums_verified"] and x["total"] >= 1 and all(r["rights_status"] == "link_only_rights_review" for r in x["results"])'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform vita --title PCSA --limit 5 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 17285'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 22563'
       - name: Smoke-test new Switch and Wii external catalogs
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform switch --title 0100000000010000 --limit 10 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 17285 and x["metadata_only"] and not x["archive_included"]'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 22563 and x["metadata_only"] and not x["archive_included"]'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform wii --title "Mario Kart Wii" --limit 4 --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["artifact_checksums_verified"] and not x["gameplay_verified"]'
       - name: Verify PS3, PSP and DS bulk reference integrity
         run: |
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ps3 --title USERLIST --limit 4 --json \
-            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] > 1000 and x["external_reference_files_total"] == 17285 and x["metadata_only"] and not x["gameplay_verified"]'
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] > 1000 and x["external_reference_files_total"] == 22563 and x["metadata_only"] and not x["gameplay_verified"]'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform psp --title cheat.db --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["bytes"] > 8000000 and not x["archive_included"]'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ds --title usrcheat.dat --json \
             | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] == 1 and x["results"][0]["bytes"] > 40000000 and x["artifact_checksums_verified"]'
+      - name: Verify external Switch title-source mirror stays metadata-only
+        run: |
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform switch --source-id hamlet-switch-cheatdb --title 0100000000010000 --limit 5 --json \
+            | python3 -c 'import json,sys; x=json.load(sys.stdin); assert x["total"] >= 1 and x["external_reference_files_total"] == 22563 and x["metadata_only"] and not x["gameplay_verified"] and all(r["source_id"] == "hamlet-switch-cheatdb" and r["rights_status"] == "link_only_rights_review" for r in x["results"])'
       - name: Confirm consumer-smoke stage
         env:
           GITHUB_TOKEN: ${{ github.token }}

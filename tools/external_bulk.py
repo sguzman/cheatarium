@@ -111,6 +111,12 @@ SOURCES = {
         "platform": "ds", "expected": {"cheat":1},
         "rights_note": "The repository's Unlicense cannot by itself establish redistribution permission for separately authored cheat codes within its 42.98 MB binary usrcheat.dat DS database. No code, binary cheat payload, or game identities have been copied.",
     },
+    "hamlet-switch-cheatdb": {
+        "repository": "HamletDuFromage/switch-cheats-db",
+        "commit": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+        "platform": "switch", "expected": {"cheat":4746, "patch":532},
+        "rights_note": "The upstream README explicitly describes mirrors of the GBAtemp Switch cheat collection and ChanseyIsTheBest graphics/FPS cheat database, credits independent cheat authors, and provides no root redistribution LICENSE. Preserve only original JSON filenames, Git blob identities, sizes and links. Cheat/gfx mirrors may repeat content and are not independently verified game titles, cheat effects, or compatible builds.",
+    },
 }
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -154,6 +160,11 @@ def classify(source, path):
         return "cheat"
     if source == "real-f00-usrcheat-ds" and path == "usrcheat.dat":
         return "cheat"
+    if source == "hamlet-switch-cheatdb":
+        if re.fullmatch(r"(?:cheats|cheats_gbatemp)/[0-9a-fA-F]{16}\.json", path):
+            return "cheat"
+        if re.fullmatch(r"cheats_gfx/[0-9a-fA-F]{16}\.json", path):
+            return "patch"
     return None
 
 
