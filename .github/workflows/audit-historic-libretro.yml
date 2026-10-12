@@ -38,6 +38,9 @@ jobs:
         run: |
           python3 tools/audit_historic_libretro.py --check
           python3 tools/export_historic_libretro.py --output historic-libretro-candidates.json
+          # Regenerate external/archive overlap in the isolated checkout.
+          # The main index's pinned snapshot may not yet reflect a new source.
+          python3 tools/audit_external_archive_overlap.py --write
           python3 tools/audit_historic_external_overlap.py --output historic-vs-external-blobs.json
       - name: Publish historical link-only reference inventory
         uses: actions/upload-artifact@v4
