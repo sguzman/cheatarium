@@ -1,0 +1,1211 @@
+{
+  "schema_version": 1,
+  "id": "chidreams-rpcs3-patches",
+  "repository": "https://github.com/chidreams/Artemis-Patch-Collection-RPCS3",
+  "snapshot_commit": "c71ea69d28dc04ae8c7bc85cd513a8fa08909ad2",
+  "git_tree_sha": "c71ea69d28dc04ae8c7bc85cd513a8fa08909ad2",
+  "platform": "ps3",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "MIT upstream collates historically sourced Artemis/RPCS3 patches from community authors; original-code rights are not independently confirmed. The 239 root-level named patch blobs have no file extensions; they are links only, not verified cheat effects.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "patch": 239
+  },
+  "files": [
+    [
+      "007 Legends [BLUS30983] v1.01",
+      "3b48102652189cc3eed7d262cabf08259818b60b",
+      1736
+    ],
+    [
+      "1942 Joint Strike [NPEB00026] v1.00",
+      "09935dc2cdd2014197ef0d46adbf404e953724eb",
+      833
+    ],
+    [
+      "3D DOT GAME HEROES [BLES008750 v1.00",
+      "a5fb2888933b0aa245c077aa84dfd6c35ddc84ea",
+      733
+    ],
+    [
+      "A.O.T. Wings of Freedom [NPEB0236] v1.00",
+      "d78225e319cd5819348a9f4ed7d8705ca0fe2bbb",
+      3398
+    ],
+    [
+      "AFRO SAMURAI [BLUS30264] v1.01",
+      "2666ac6c426872983a632eeabbd6af155c23c2a1",
+      1926
+    ],
+    [
+      "AKIBAS TRIP UNDEAD & UNDRESSED [BLUS31425] v1.00",
+      "2fc11ffd746e93c5678186c998b57f365e1994ba",
+      2442
+    ],
+    [
+      "ALIEN BREED [NPUB31085] v1.00",
+      "0aa8d927fa2b25be40357feddb03488be0aa3c0a",
+      1607
+    ],
+    [
+      "ARSLAN THE WARRIORS OF LEGEND [NPUB31797] v1.01",
+      "1300d5beb7d9df4830b9cc05ad09fb6fb664fb38",
+      2082
+    ],
+    [
+      "Alien Breed 2 Assault [NPUB30335] v1.00",
+      "7f02312a556ea4f71b88ecf0997834c4b215e872",
+      997
+    ],
+    [
+      "Alien Breed 3 Descent [NPUB30336] v1.00",
+      "f8058ffdfc18e808c73db45a7aff74a7c2594862",
+      1004
+    ],
+    [
+      "Alien Breed Impact [NPUB30141] v1.0",
+      "123b4cb80d8734c411f276da0a714eebee1269eb",
+      1021
+    ],
+    [
+      "Alien Isolation BLES01697 v1.00",
+      "5efd16c908b185180c977c58fcd2ee59af3d5f5b",
+      3068
+    ],
+    [
+      "Alien Rage [NPUB30863] v1.00",
+      "69c6b3b62bb060b257add3f1304767d300b8a329",
+      704
+    ],
+    [
+      "Aliens Colonial Marines [BLUS30862] v1.05",
+      "92c51f7a21cd389c7e6d8e6742af284f22d7bcc1",
+      1326
+    ],
+    [
+      "Alone in the Dark [BLUS30232] v1.02",
+      "0be6fff68b1f86d48c3336f664e7a3c44c9ba6d6",
+      2089
+    ],
+    [
+      "Assassin's Creed [BLUS30089] v1.00",
+      "641bfaef7d3590181e093112dbccdfc7242eae6c",
+      4017
+    ],
+    [
+      "Assault Heroes [ NPUB30028] v1.00",
+      "05ce94409f14afafab6bc36efbe1c39adfca26da",
+      1711
+    ],
+    [
+      "Asuras Wrath [BLUS30721] v1.02",
+      "3accbc2b2e232ad5174d84fc1b2b054f146b527d",
+      2752
+    ],
+    [
+      "BLADESTORM Nightmare [NPUB31690] v1.00",
+      "7c48e8d9d6c9f6ca527dd78d54755a3ad32dbcbb",
+      1795
+    ],
+    [
+      "Battle Fantasia [NPUB30126] v1.00",
+      "72fb5fe8911d043a3d6af29d3c5df352b68626e6",
+      985
+    ],
+    [
+      "Beowulf [BLUS30091] v1.01",
+      "a16ec7b43cd14f3cc138a2c406a51b9d20a2bdb7",
+      1108
+    ],
+    [
+      "Black Knight Sword [NPEB00859] v1.00",
+      "a2d6b12b3b98c26cf59a412277a0dce67e0a484e",
+      450
+    ],
+    [
+      "Bodycount [BLUS30562] v1.00",
+      "e807527cba685cd83a13d576fbebd072f1958e25",
+      734
+    ],
+    [
+      "Burn Zombie Burn [NPUB30046] v1.00",
+      "4d35ceda7f51b7b589df372b3e218ff655f05819",
+      1582
+    ],
+    [
+      "CLASH OF THE TITANS [BLUS30505] v1.00",
+      "792d1cfe596380c9d03b618c5fbb1abf1730f9af",
+      7759
+    ],
+    [
+      "Call of Duty 3 [BLES00016] v1.02",
+      "73e6c689a3c2005049a7ebe7ba9574d84f43962e",
+      1846
+    ],
+    [
+      "Call of Duty Advanced Warfare [BLUS31466] v1.20",
+      "f9a0599e505e81790b21c631b2427f826fa7fc11",
+      1078
+    ],
+    [
+      "Call of Duty Black Ops BLUS30591 v1.13",
+      "32e8acb9e73f6d88997721cd96e9f40f5b296790",
+      2490
+    ],
+    [
+      "Call of Duty Modern Warfare 3 [BLUS30838] v1.24",
+      "c20663416015a942b7ea40cf93226d138bae42eb",
+      2290
+    ],
+    [
+      "Captain America Super Soldier [BLUS30642] v1.00",
+      "e7fad3aae043ee192df5ecdec500c0fab737a86b",
+      2964
+    ],
+    [
+      "Castlevania Harmony of Despair [NPUB30505] v1.00",
+      "e824c578a6dbe1c287cc0c798a1eba8bf74022d4",
+      4527
+    ],
+    [
+      "Castlevania Lords of Shadow™ [BLUS30339] v1.03",
+      "abb74886dc75eb2bdd2f8949483586c355e87187",
+      1952
+    ],
+    [
+      "Cheats For DEAD NATION™ [NPEA00143] v1.08",
+      "aa53e34d1f49959705aefa8db26e2323d3b3870c",
+      4057
+    ],
+    [
+      "Conan [BLUS30069] v 1.01",
+      "83a40d71b2d48ad7d72cc7123e6e6f751363c03a",
+      1136
+    ],
+    [
+      "DARK SOULS II Scholar of the First Sin [BLUS31528] v1.01",
+      "e41486305d553b09396865025fcd7d39f60f68dc",
+      5738
+    ],
+    [
+      "DARK SOULS [BLUS30782] v1.09",
+      "b124ea980c8c84bc7e1d5e9007b9c65dc555dd34",
+      2518
+    ],
+    [
+      "DEAD NATION™ [NPEA00143] v1.08",
+      "bc87d89f40d0fc318f06c2544c80f1629744fc5d",
+      3955
+    ],
+    [
+      "DEAD OR ALIVE 5 Last Round BLJM61258 v1.05",
+      "653cc9b69f5fdac789ca60fc437ec477d010c2c7",
+      3769
+    ],
+    [
+      "DOOM Classic Complete [NPUB30808] v1.00",
+      "2c51036e7e21fa5819353a617707ea0ba3ed0fd3",
+      6951
+    ],
+    [
+      "DRIVER San Francisco [BLUS30536] v1.00",
+      "e8ecbb7081981c5537dca254eea26e92a09819f6",
+      820
+    ],
+    [
+      "DYNASTY WARRIORS 8 Empires [NPUB31656] v1.04",
+      "0c6ec8d844bebdfe5e421996b861d60f3f5f4c52",
+      4095
+    ],
+    [
+      "Dante's Inferno [BLUS30405] v1.04",
+      "d2e99248037dd7c145ae05558a3a3d2657c17745",
+      2661
+    ],
+    [
+      "Dark Sector [BLUS30116] v1.01",
+      "ac9d692b486bdae1e4a419fecb3c0d6c3b2aca50",
+      2926
+    ],
+    [
+      "Darksiders II [BLUS30829] v1.02",
+      "e10eea04ef6e4e91cef59cbacccd35f0b00bd48c",
+      3151
+    ],
+    [
+      "Dead Island Game of the Year Edition [BLUS31026] v1.00",
+      "3c87db8d82dea76506d251c8a7b7d44eebfd28b7",
+      1720
+    ],
+    [
+      "Dead Island Riptide [BLUS31052] v1.01",
+      "0092289070ce14537bc9ef292d131de39d435be4",
+      2960
+    ],
+    [
+      "Dead Rising 2 Off The Record [BLUS30763] v1.00",
+      "4f8198e32d11611563e3fe54609edacccb80f36c",
+      5549
+    ],
+    [
+      "Dead Rising 2 [BLUS30439] v1.00",
+      "a531d8304f7e3de0439ae0adb2a20d3a200ec2c7",
+      3066
+    ],
+    [
+      "Dead Space 2 Standard [BLUS30717] v1.00",
+      "2903720399ac1edb8e6b952d983e1125e01eecf0",
+      16376
+    ],
+    [
+      "Dead Space 3 [BLES01733] v1.02",
+      "c9cdad1b29482a5282c7d630bd5e256cd1345737",
+      4732
+    ],
+    [
+      "Dead Space Extraction [NPUB30314] v1.00",
+      "32134b02f9fd76043db9fa6118ffe781f692bb18",
+      1987
+    ],
+    [
+      "Dead Space [BLUS30177] v1.01",
+      "54fbd42136e08a061b7f330025dd1d64a74b6e62",
+      7362
+    ],
+    [
+      "Deadpool [BLUS31146] v1.00",
+      "2be0826f1fcac3a2efd77f04549606852f96ba06",
+      1414
+    ],
+    [
+      "Demon's Souls [BLUS30443] v1.00",
+      "2a3469473b96bc5db778fd2685272795bd354193",
+      2282
+    ],
+    [
+      "Devil May Cry 3 HD Collection [BLUS30764] v1.00",
+      "a793abb100918c71f6c5df7782156c30b3511514",
+      7628
+    ],
+    [
+      "Devil May Cry 4 [BLUS30092] v1.01",
+      "3cceeeee985f15bdf265ff862cc457feec6cac7a",
+      5924
+    ],
+    [
+      "Disgaea D2 [BLES01939] v1.30",
+      "4b239aee61328ef709469414557df02d09ebf38c",
+      25367
+    ],
+    [
+      "DmC Devil May Cry [BLUS30723] v1.01",
+      "c7f4b9db3e89826a9a018befda1659dc1c18090b",
+      2275
+    ],
+    [
+      "Doom 3 BFG Edition [BLUS31024] v1.01",
+      "485f57e6f32492c41d5d8e8898e67bacb713c829",
+      3514
+    ],
+    [
+      "Dragon Age II [BLUS30645] v1.05",
+      "bc78f48d3be4e7abe1f8aefbebd10b4df9b16c8b",
+      1135
+    ],
+    [
+      "Dragon Ball Raging Blast [BLUS30431] v1.00",
+      "0588274365e7c9a728e234f033bc36f39697026d",
+      3238
+    ],
+    [
+      "Dragon Ball Z Battle of Z [BLUS31314] v1.00",
+      "5ab0300135594b212fab7787c1effa5e22c23067",
+      1884
+    ],
+    [
+      "Dragon Ball Z Ultimate Tenkaichi [BLES01401] v.100",
+      "73bc251a8077564f3942a30f1685b6a3b850306c",
+      3284
+    ],
+    [
+      "Dragon's Crown [BLUS30767] v1.00",
+      "0fd3db477fee3fd93c76ddbe1785f586eea93be8",
+      2872
+    ],
+    [
+      "EA SPORTS Fight Night Round 3 [BLUS30019] v1.00",
+      "b4273e8b8a12361b586fc503686a871be8d8f868",
+      412
+    ],
+    [
+      "ENCHANTED ARMS [BLUS30028] v1.00",
+      "ef6ac95d25d3f80d2879cde349644bbd6485a72f",
+      812
+    ],
+    [
+      "ETERNAL SONATA [BLUS30161] v1.00",
+      "8337ae8d78020b52bae00fb37cd9a559ad9a8c1b",
+      1890
+    ],
+    [
+      "Earthworm Jim HD [NPUB30120] v1.00",
+      "19bcd22a1a0ee3bd319291d0d7d4f62a9b67269d",
+      1739
+    ],
+    [
+      "F.E.A.R. 3 [BLUS30511] v1.01",
+      "186c4d3106d174be04a327cfe5810603465b8e51",
+      1774
+    ],
+    [
+      "FINAL FANTASY X-2 HD Remaster [BLUS31211]",
+      "ffa2791c00c1621857e4e62188f126d7488736c1",
+      13730
+    ],
+    [
+      "FINAL FANTASY XIII [MRTC00003] v1.00",
+      "18044a3270d56868b5940b176d318138484c31db",
+      7949
+    ],
+    [
+      "FINAL FANTASY XIII-2 [BLUS30776] v1.06",
+      "d5d130e4feb1fc6e2a567fe45c97a9c961f36cab",
+      3849
+    ],
+    [
+      "Final Fantasy X Remaster [BLUS31211] v1.00",
+      "b6de61f8bc4099f8c07b3b7b7a7fd3d1407ef6e4",
+      18117
+    ],
+    [
+      "GHOSTBUSTERS The Video Game [BLUS30307] v 1.03",
+      "cb29893dd65f2d14170d679cd5d27f9038649233",
+      1171
+    ],
+    [
+      "GRID 2 [BLUS31055] 1.04",
+      "41771afa035e4d1f8b10715d92507368d6b1389f",
+      1155
+    ],
+    [
+      "GTA San Andreas [BLUS31584] 1.01",
+      "29df866bb98d3ac0483c94dadd6e134187a9ce03",
+      1720
+    ],
+    [
+      "Galaga Legions DX [NPUB30321] v1.00",
+      "2a2202f70492969ae7f904ac0eb8ce32a498ff48",
+      925
+    ],
+    [
+      "Gatling Gears [ NPUB30454] v1.00",
+      "54cdf8cad8a1eaf7e8fcd2dc54e68e43625a4a87",
+      1470
+    ],
+    [
+      "Genji: Days of the Blade [BCUS98131] v 1.00",
+      "c3d3c946b5dc59fb6dd3912b18bd0395874ffb68",
+      3674
+    ],
+    [
+      "God Of War Collection [BCUS98229] v1.01",
+      "9fa4f32ad10ce2b46a57fb7826039017a7338338",
+      6770
+    ],
+    [
+      "God of War Ascension [BCUS98232] v1.12",
+      "14f877a5deb5e75712e83f2892180bb84de7b85d",
+      17643
+    ],
+    [
+      "God of War Collection Volume II [BCES01277] v1.00",
+      "1a8596a3c447220e454e306c597fd38430424d10",
+      4763
+    ],
+    [
+      "God of War III [BCUS98111] v1.03",
+      "15d1dcfed6a3a8363138d78de6fd3dba9ca5fd2b",
+      7533
+    ],
+    [
+      "Gran Turismo 6 [BCUS98296] v1.09",
+      "e1db62a1efe6810c69bed7432b24b07781920694",
+      876
+    ],
+    [
+      "Grand Theft Auto IV [BLUS30127] v1.08",
+      "a2268b012d7abdde72a77f2add3e240540154eda",
+      2877
+    ],
+    [
+      "Hard Corps: Uprising NPEB00332 v1.00",
+      "33eb2ee29ccbd02c3fd629dba3c9e96edee0d779",
+      4335
+    ],
+    [
+      "Heavenly Sword [BCUS98132] v1.10",
+      "26c4ec368270ecf37d1b731792f4bfd0a3b77d42",
+      7860
+    ],
+    [
+      "Hellboy: The Science of Evil [BLUS30048] v1.00",
+      "0a80740ff1013f1cc1733a6b66e5167dc1347b4f",
+      1123
+    ],
+    [
+      "Homefront [NPUB30572] v1.04",
+      "a6578dfe2ebef391fa77cb966a83d1f3891edd8a",
+      2703
+    ],
+    [
+      "How To Survive [NPUB31240] v1.01",
+      "0054907a4ef21516c050f1e928d6e946a0167736",
+      6405
+    ],
+    [
+      "Hydrophobia: Prophecy [NPUB30233] v1.00",
+      "5c2e3b2748a41992c76e74057b993f769da2d11f",
+      935
+    ],
+    [
+      "James Bond 007 Blood Stone [BLES01017] v1.00",
+      "6b96645e0b04949791ad8491a355f0492c162631",
+      1376
+    ],
+    [
+      "James Cameron's AVATAR THE GAME [BLUS30374] v1.00",
+      "6786afe919ef63ff6a423d526d68f6667d26e6ba",
+      789
+    ],
+    [
+      "Just Cause 2 [BLUS30400] v1.02",
+      "146ea5a41ac230cbb68a37015b0f404ab19f5717",
+      685
+    ],
+    [
+      "Kane & Lynch 2 Dog Days [BLUS30383]  v1.00",
+      "eed23c047ba9bf0fcd1ee4d0acd60d6662170c4e",
+      764
+    ],
+    [
+      "Killzone2 [BCUS98116] v1.29",
+      "6a65eead3fa69eb79ba49e5cc87644526f6329f4",
+      730
+    ],
+    [
+      "Knights Contract [BLES01001] v1.00",
+      "994ec9677de1324678ea7fd553cf91cd3b98ae1d",
+      4294
+    ],
+    [
+      "LICENSE",
+      "6aa7067e41c50564f87006c1f475bc972906f76b",
+      1066
+    ],
+    [
+      "LIGHTNING RETURNS FINAL FANTASY XIII [BLUS31164] v1.00",
+      "1f49707b2dfc107f1b20f6ef17a645ef35580987",
+      1937
+    ],
+    [
+      "LOLLIPOP CHAINSAW [BLUS30917] v1.00",
+      "e82a28fe8f4ee6acd9d11942968b37dfaeb1575b",
+      1610
+    ],
+    [
+      "LOST PLANET 2 [MRTC00002] v1.00",
+      "85e7ee38cf4442d873970737b01d18197dfaf18f",
+      2544
+    ],
+    [
+      "Lara Croft and the Guardian of Light [NPUB30225] v1.01",
+      "aaedeff3ff051c4e098a61ab550022fc96664003",
+      1364
+    ],
+    [
+      "LittleBigPlanet 3 Digital Version [NPUA81116] v1.00",
+      "ccd85039416d6c141f6d3e15acc769b80968a8e6",
+      1215
+    ],
+    [
+      "LittleBigPlanet [NPUA80472] v1.30",
+      "08ee9ebc180e2736a774ae6a32b0b04f23a1578f",
+      349
+    ],
+    [
+      "Lord of the Rings War in the North [BLUS30421] v1.00",
+      "084140b29e18793e74c8e25f883608b6641cd47d",
+      2969
+    ],
+    [
+      "Lost Dimension [BLUS31554] v1.00",
+      "b9621cbb063f9a62fd57df218087bdde54cab991",
+      2297
+    ],
+    [
+      "METAL GEAR RISING: REVENGEANCE [BLUS31045] v1.00",
+      "82df79eadb4b005805f3902e75834ee64c3e4371",
+      22255
+    ],
+    [
+      "METAL GEAR SOLID 4 GUNS OF THE PATRIOTS [BLUS30109] v2.00",
+      "5834cb486cb36420dc092b5f6e880f3a5b80ff06",
+      3604
+    ],
+    [
+      "METAL GEAR SOLID V THE PHANTOM PAIN [BLES02102] v1.11",
+      "89652118e202f529f90e3d42e8abb08f13c03639",
+      8238
+    ],
+    [
+      "Mafia II [BLUS30281] v 1.04",
+      "6f469b5dfa41a317d7ab805b890a8dbfdbf4c643",
+      1602
+    ],
+    [
+      "Majin and the Forsaken Kingdom [BLUS30472] v 1.00",
+      "ba90ae4c90961a390afd946d18457b009cd9e245",
+      2785
+    ],
+    [
+      "Marvel: Ultimate Alliance 2 [BLUS30294] v1.02",
+      "f43cfc6e00ecc566f3a0cab3efdae55f568ea3ce",
+      2808
+    ],
+    [
+      "Middle-Earth™: Shadow of Mordor™ [BLUS31059] v1.02",
+      "b506e15957edaf9c590e9f98b10be7c056dbb9ec",
+      4129
+    ],
+    [
+      "Midnight Club: Los Angeles [BLUS30442] v1.06",
+      "b6c45574deed91eab8a9efcbaabeb0afcea848bc",
+      1078
+    ],
+    [
+      "Mortal Kombat II [NPEB00002] v1.00",
+      "3e58d9be26868dc8163ea2b8c080d40f0fdbbea8",
+      1393
+    ],
+    [
+      "Mortal Kombat Komplete Edition [BLUS30902] v1.07",
+      "df934ecb05ab4c9950eccd68abcc5423973fcdc2",
+      3356
+    ],
+    [
+      "Mortal Kombat [BLUS30522] v1.07",
+      "1fd3174fb8ee21c94d259b1d7d7de27b163d552a",
+      2796
+    ],
+    [
+      "Mortal Kombat vs. DC Universe [BLUS30246] v1.00",
+      "5cf95212cfa68ad60f72ccba2ec76e2ad8e02d88",
+      1278
+    ],
+    [
+      "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 3 Full Burst [BLUS31350] v1.00 - v1.01",
+      "0a7d6d57a6f2702690055ef910de061f4780affd",
+      4096
+    ],
+    [
+      "NBA 2K10 [BLUS30402] v1.00",
+      "fa78b357e80e75729c801283f44c4352bcdbc467",
+      256
+    ],
+    [
+      "NBA JAM: 2020s On Fire Edition [NPUB20260] v6.00",
+      "001ab17b2c997302d91253fca207bac24238908f",
+      1095
+    ],
+    [
+      "NEOGEO STATION METAL SLUG 2 [NPEB00681] v1.00",
+      "1b66416788b22f22d16cf0a9b170cce384b68d9e",
+      2996
+    ],
+    [
+      "NINJA GAIDEN Σ2 [BLUS30380] v1.00",
+      "1d1720511ac6d95fd4f9918618876ddf43e88d4b",
+      2736
+    ],
+    [
+      "NO MORE HEROES HEROES' PARADISE [BLUS30652] v1.00",
+      "4d4afbe62f5ab1c131af72b600b2fe83f2cc7e37",
+      951
+    ],
+    [
+      "Naughty Bear Gold Edition [NPUB31067] v1.00",
+      "b5347f3d3a3e1c9605c6a91ccf1e1bffe9650391",
+      2011
+    ],
+    [
+      "Need for Speed - Hot Pursuit BLUS30566 v1.02",
+      "881f91afcdfb5c653384a5f159bb43553df5fdb9",
+      1831
+    ],
+    [
+      "Need for Speed™ Carbon [BLUS30016] 1.00",
+      "19a44713235daf1045666e669acf1434d563bc82",
+      1193
+    ],
+    [
+      "Need for Speed™ Most Wanted [BLUS31010] v1.00",
+      "dbd028c59ad89ce571f660e486eecb62325a1909",
+      2850
+    ],
+    [
+      "Need for Speed™ Most Wanted [BLUS31010] v1.03",
+      "2c4db060e82fb7ed94fc90d78075d61001aef9ae",
+      3454
+    ],
+    [
+      "Need for Speed™ ProStreet [BLUS30066] v1.30",
+      "19dfcb9de430d617e6b438aaddfd6e03a71eb70f",
+      1119
+    ],
+    [
+      "Need for Speed™ Undercover BLUS30248 v1.02",
+      "cf9b122227896045b085d683aa5cfa88de43f2af",
+      1055
+    ],
+    [
+      "Ni no Kuni: Wrath of the White Witch [BLES01555] v1.00",
+      "0c23288c534c372831f707e50daddadb86911e44",
+      9070
+    ],
+    [
+      "Ni no Kuni: Wrath of the White Witch [BLUS30947] v1.00",
+      "9e87bc2594cc0f2ec086d1538c81e702fd597527",
+      3731
+    ],
+    [
+      "Ninja Gaiden Sigma [NPUB30851] v1.01",
+      "d33b15015da3a997b946d2468edd7ce4e0e12360",
+      1548
+    ],
+    [
+      "ONE PIECE: PIRATE WARRIORS 2 [BLES01913] v1.00",
+      "999e630dc812778aececbb985f52baea4c1de668",
+      3921
+    ],
+    [
+      "ONE PIECE: PIRATE WARRIORS 3 [NPUB31676] v1.00",
+      "ded8054c51bc1e622ec893108e467fe9d0db36ba",
+      4917
+    ],
+    [
+      "PAC-MAN Championship Edition DX [NPEB00315] v1.00",
+      "2d7acccb27b2609c48fa766c6e896c4f93321e29",
+      1270
+    ],
+    [
+      "Persona 5 [NPUB31848] v1.00",
+      "4326dc3307b23b9556b6ff8b67020304f8a37392",
+      10135
+    ],
+    [
+      "Puppeteer [BCES00935] v1.00",
+      "644f2199d32f312fafb26d4ab30a288efaf457b3",
+      1534
+    ],
+    [
+      "Puppeteer [BCES0093] v1.00",
+      "dbbc3138ee5fb1d9fa62c2f1b959df13aa8cbcb0",
+      282
+    ],
+    [
+      "README.md",
+      "00676cc7ca593990e9264013a18edb2298cf1bf7",
+      3115
+    ],
+    [
+      "RESIDENT EVIL 5 GOLD EDITION [BLUS30491] v1.01",
+      "0f3fe03f1a7445364298902610d2d9b8e8345f5a",
+      10043
+    ],
+    [
+      "RESIDENT EVIL 6 [BLUS30855] v1.06",
+      "b32bd21b3def6c446ba1c30fc714bf684495b4e0",
+      10755
+    ],
+    [
+      "RESIDENT EVIL REVELATIONS 2 [BLUS31444] v1.04",
+      "4d311b63be3df16507333df5635ffd4fe047d94f",
+      8688
+    ],
+    [
+      "RESIDENT EVIL THE DARKSIDE CHRONICLES [NPUB30648] v1.00",
+      "0d95e20ebf401765d599fb6fb91ff14dbfd6e688",
+      5082
+    ],
+    [
+      "RESIDENT EVIL THE UMBRELLA CHRONICLES [NPUB30650] v1.00",
+      "adbf656435e65d2d77032d8c2baf3d0e883ad6cf",
+      15001
+    ],
+    [
+      "RESIDENT EVIL® Operation Raccoon City [BLUS30750] v1.03",
+      "62801686c4d47913d4cff8f1abaab145d1c648df",
+      2357
+    ],
+    [
+      "RIDGE RACER 7 [BLUS30001] v01.01",
+      "3d13e64337ca3f0bef0c85936f2e5c7ef2ca4786",
+      1554
+    ],
+    [
+      "Ragnarok Odyssey ACE [BLUS31386] v1.00",
+      "478fdc4b593113895b08ca3dc6e305c2fc057674",
+      2022
+    ],
+    [
+      "Ratchet & Clank: All 4 One (Digital) [NPUA80695] v1.03",
+      "1f9400b63820d7bc6ae42122dc6c78db6f617ebb",
+      4123
+    ],
+    [
+      "Ratchet & Clank: Full Frontal Assault™ [BCUS98380] v1.05",
+      "20ebafa76b1502de206f2d359106b3596879560d",
+      11716
+    ],
+    [
+      "Ratchet & Clank: Into the Nexus [NPUA80908] v 1.01",
+      "49c320c8c77e6d8378e07b2d2f53411f430b90be",
+      2848
+    ],
+    [
+      "Ratchet & Clank™: Up Your Arsenal [NPUA80645] v1.00",
+      "1f98d997d6b0d3bdfebca8a9be0929a431f2f965",
+      981
+    ],
+    [
+      "Rayman® Origins [NPUB30661] v1.00",
+      "05294707560ccb5f94c7e88ccb826b2f25b4dfd9",
+      952
+    ],
+    [
+      "Red Dead Redemption [BLUS30418] v1.07",
+      "45288933795b4650f513c66dd14304ab7f3ac7b0",
+      3881
+    ],
+    [
+      "Remember Me™ [BLUS31012] v1.00",
+      "87dd982de183bdd463ae69f76a85687129b4c3b7",
+      7579
+    ],
+    [
+      "Resident Evil 0 [NPUB31689] v1.00",
+      "d06fe73b5e4e67ab676ceee78a91b51db4244cc1",
+      7641
+    ],
+    [
+      "Resident Evil 4 [NPEB00342] v1.00",
+      "1880d3d1166b1d2c918669a26bbea5c5b4b2ca31",
+      4816
+    ],
+    [
+      "Resident Evil Revelations [BLUS31051] v1.01",
+      "225c61b39b6ded539ac42e12b98e5423587ac91d",
+      1127
+    ],
+    [
+      "Resistance 2™ [BCUS98120] v1.60 (WIP)",
+      "8e305a5c8535aa7319531a84a57f17c042785c4c",
+      649
+    ],
+    [
+      "Rocket Knight [NPUB30123] v1.00",
+      "768a7c2e50de572e2730759979bf96f8cd8f35a1",
+      1412
+    ],
+    [
+      "SAMURAI WARRIORS 4 Empires [NPUB31799] v1.00",
+      "f2d032590612be410e6791bdfffd750a99391e7c",
+      1899
+    ],
+    [
+      "SAMURAI WARRIORS 4 [NPUB31564] v1.00",
+      "cdf550664bdd6c3abee250f21ea472f2711aba80",
+      2495
+    ],
+    [
+      "SAMURAI WARRIORS 4- II [NPUB31751] v1.00",
+      "698453ddba30d39b72b53b4adf334637bc26d32b",
+      2317
+    ],
+    [
+      "SOCOM 4: U.S. Navy SEALs [BCUS98135] v1.00",
+      "e21370f8f4e6c5c00fbc44d93dfa2e7653d9bf48",
+      2245
+    ],
+    [
+      "SONIC UNLEASHED [BLES00425] v1.02",
+      "50a253d1cffd0f95bfa751f3008db13eaea4143b",
+      6980
+    ],
+    [
+      "SOULCALIBUR IV [BLUS30160] v1.03",
+      "a51b46eb4acd2239511957b3fcecfbb7527609c2",
+      2396
+    ],
+    [
+      "SOULCALIBUR Ⅴ [NPEB01363] v1.00",
+      "ae9ab29ada6e66f7b0c673bccc527e9486ee2ae6",
+      829
+    ],
+    [
+      "STRANGLEHOLD™ [BLUS30080] v1.01",
+      "8e5a838780b4b86a356099514677c941cf7e369a",
+      1064
+    ],
+    [
+      "STREET FIGHTER X TEKKEN [BLUS30722] 1.08",
+      "5245f730a0729c65b0d24c104ac94527856c25c8",
+      880
+    ],
+    [
+      "SUPER STARDUST™ HD [NPEA00014] v1.00",
+      "1131ec01f77430dd033075efa3732532d1fe0941",
+      634
+    ],
+    [
+      "Saints Row IV - The Full Package [BLUS31416] v1.00",
+      "a9b116b8bbce29b5d9854cd680d530d5c38f9a41",
+      3022
+    ],
+    [
+      "Saints Row: The Third [BLUS30666] v1.00",
+      "d751c5c099a1970961c0ea8bed3a7319ed7f9a43",
+      3271
+    ],
+    [
+      "Sengoku BASARA: Samurai Heroes [MRTC00005] v1.00",
+      "acdf3a1edc6f395ba488fb5739b65eef8f4129a3",
+      6772
+    ],
+    [
+      "Shadows of the Damned™ [BLUS30653] v1.00",
+      "d568f13c42d64217b2e7f15ad698a97902991a2d",
+      2801
+    ],
+    [
+      "Shining Resonance [BLJM61156] v1.00",
+      "234fae678b06f3738de5e16de68cbe10da6a1ed2",
+      2055
+    ],
+    [
+      "Silent Hill Downpour [BLUS30565] v1.01",
+      "8cde06e0c3a7b171c26f1ff9e7a7ff7cea97e9b5",
+      4885
+    ],
+    [
+      "Silent Hill: Homecoming [BLUS30169] v1.00",
+      "31279a12d7e41b5b917a8a1a0b8a5d20a2d74d7b",
+      10786
+    ],
+    [
+      "Sine Mora™ [NPUB30483] v1.00",
+      "8ff30afc8fb1bf9e819d23b1cb0e33bf62283d3a",
+      1721
+    ],
+    [
+      "Singularity BLUS30296 v1.01",
+      "16f78a14c1191a618f410e2bfbb52add53500242",
+      3529
+    ],
+    [
+      "Sleeping Dogs [BLUS30927] v1.00",
+      "6d51f3e2c047e1099e0f499c6639dd2e875ea93f",
+      5154
+    ],
+    [
+      "Sniper Elite 3 Ultimate Edition [BLUS31532] v1.00",
+      "56e49a69670db90401ed7afbd2032017d26c80bf",
+      1533
+    ],
+    [
+      "Sniper Elite V2 [BLUS30798] v1.04",
+      "03edd3c0c0db6baa81cfed7c7cf5e2ff5f131978",
+      931
+    ],
+    [
+      "Space Invaders Infinity [NPUB30305] v1.00",
+      "0ffda200700c8c033d18a3e597b40623a379b58c",
+      1521
+    ],
+    [
+      "Spider-Man: Web of Shadows [BLUS30218] v1.00",
+      "8782d16bf9b5cf4eab246e5569ddbeb3e212f176",
+      1005
+    ],
+    [
+      "Spider-Man™: Edge of Time [BLUS30760] v1.00",
+      "24d5662c6f7e4c2c31d67653a3971ceaf26428da",
+      1314
+    ],
+    [
+      "Star Wars: The Force Unleashed [BLUS30144] v2.0",
+      "e9fc84d170c5fd0faa308ab40a7e0d4418c24b19",
+      679
+    ],
+    [
+      "Strider [NPUB31139] v1.00",
+      "0f753cf4295390511ce8b3ef64cb3898b88f0af1",
+      1132
+    ],
+    [
+      "Super Street Fighter 2 Turbo HD [NPUB30034] v1.10",
+      "79d4c280b89c3ebed36b01827fd9c9fab7e419da",
+      1495
+    ],
+    [
+      "TEKKEN TAG TOURNAMENT HD v1.00",
+      "8216b168b60c8f7c242e26fd94a6cf82051808eb",
+      555
+    ],
+    [
+      "THE DARKNESS [BLUS30035]v1.03",
+      "e7961754e57b76054dd1029d98dbeb3fef9aef35",
+      4403
+    ],
+    [
+      "THE HOUSE OF THE DEAD 4 [NPUB30603] v1.00",
+      "988300f6e6e7bda776787220d60fcae05cc206e4",
+      657
+    ],
+    [
+      "THE INCREDIBLE HULK™ [BLUS30152] v01.01",
+      "15b659a2589c12ab8b14e3153bd8673ee735017e",
+      1073
+    ],
+    [
+      "TMNT: Turtles In Time Re-Shelled [NPUB30107] v1.00",
+      "1acbc4fd5e523487794005a67f1bb6de44a2f61f",
+      706
+    ],
+    [
+      "Tales of Graces f [NPUB31133] v1.00",
+      "195b483926d2dbe9576d87a2efd74a91b6b49cf1",
+      6448
+    ],
+    [
+      "Tales of Symphonia Chronicles [BLUS31172] v1.00",
+      "6791e561484416187d84cfcc62bde37f90329bde",
+      3195
+    ],
+    [
+      "Tales of Xillia 2 [BLUS31397] v1.00",
+      "3c0053fd5e8a485414bdf58701a9f017af9c4a4d",
+      10084
+    ],
+    [
+      "Tales of Xillia [NPUB31136] v1.00",
+      "1a63d2c637309c53a8e4bc073bc76a4fb9905d35",
+      6666
+    ],
+    [
+      "Teenage Mutant Ninja Turtles: Mutants in Manhattan [BLES02155] v1.00",
+      "9e0ed780263080db8f06600eb3b0114966f82f21",
+      1638
+    ],
+    [
+      "Teenage Mutant Ninja Turtles™: Danger of the Ooze [BLUS31435] v1.00",
+      "0f59a821da408b6c0919d105ab03c91d1a2aaba1",
+      1634
+    ],
+    [
+      "The Amazing Spider-Man 2 BLUS41044 v01.00",
+      "6f0d86d83770c540590f3d1d6563829407357373",
+      5513
+    ],
+    [
+      "The Godfather II [BLUS30261] 1.00",
+      "793bbb1fb9be3ebb9d559d3cad2a1c918437fe3d",
+      2469
+    ],
+    [
+      "The Godfather® The Don’s Edition [BLUS30023] v1.00",
+      "6e5dfc44759679b34dc58a12325307163a61dca6",
+      3392
+    ],
+    [
+      "The House Of The Dead 4 [NPUB30603] v1.00",
+      "988300f6e6e7bda776787220d60fcae05cc206e4",
+      657
+    ],
+    [
+      "The Legend of Korra [NPEB02082] v1.00",
+      "624097c0afcf83986881df274dc0040849efa510",
+      4757
+    ],
+    [
+      "The Legend of Spyro: Dawn of the Dragon [BLUS30205] v1.00",
+      "b89fd78e65e5b630d922709589ea631f7403ed58",
+      1412
+    ],
+    [
+      "The Simpsons Game [BLUS30065] v1.00",
+      "6b3d68020cbeaa133b08cdaef30d79fcbad6621e",
+      1369
+    ],
+    [
+      "The Sly Trilogy™ [BCES00968] v1.00",
+      "3336d0cd8005f20a65170a75fe43a3580fa3b793",
+      8068
+    ],
+    [
+      "The Walking Dead : Survival Instinct [BLUS31065] v1.00",
+      "2868fc20b804a3a7438c2278e904a3097e9893ca",
+      5891
+    ],
+    [
+      "Time Crisis Razing Storm [BLUS30528] v01.01",
+      "6556dd590ee24efdba70e1b9ec8d83d3cbbdb30b",
+      1165
+    ],
+    [
+      "Tiny Troopers Joint Ops [NPUB31483] v1.00",
+      "c8076bffe0083006cdea8b672a4ac101c286a6e5",
+      2448
+    ],
+    [
+      "Tom Clancy's Ghost Recon Future Soldier [BLUS30521] v1.05",
+      "0c489618275740dead5d1cd036db15c57c935a45",
+      1036
+    ],
+    [
+      "Tom Clancy's Splinter Cell® Trilogy HD [NPEB00557] v1.01",
+      "d5a4a2318b18b021d4c5a2e0af7c90251f1a8c75",
+      5050
+    ],
+    [
+      "Tom Clancy's™ Splinter Cell Trilogy HD [BLUS30761] v 1.01",
+      "d5a4a2318b18b021d4c5a2e0af7c90251f1a8c75",
+      5050
+    ],
+    [
+      "Tony Hawk's Pro Skater HD [NPEB01028] v1.01",
+      "e49240c4e08cfe321a069294c94f12f8aea56856",
+      686
+    ],
+    [
+      "Twisted Metal [BCUS98106] v1.00",
+      "a7efb66b457f0aff9c5bb0ed7791b1ddb58b2f69",
+      905
+    ],
+    [
+      "Twisted Metal [BCUS98106] v1.06",
+      "787bf4d1c0559a7a0dd8fb8969e4922299eea01e",
+      865
+    ],
+    [
+      "ULTIMATE MARVEL VS. CAPCOM 3 [BLUS30787] v1.03",
+      "c65e0e3e1954f82b3e2c46f9e094c19d3e0892df",
+      1526
+    ],
+    [
+      "ULTRA STREET FIGHTER IV [BLUS31218] v1.12",
+      "d8e4e78baffc2335dc518e10e4bba119edb9f19b",
+      2484
+    ],
+    [
+      "VANQUISH [BLUS30543] v1.01",
+      "36d309b5114603df4b4f582a2e32648cf87f35a5",
+      2519
+    ],
+    [
+      "Valkyria Chronicles [BLUS30196] v1.20",
+      "7232a103b04f9617be6d894d61f551c11221f7af",
+      4131
+    ],
+    [
+      "Warhammer 40000 Kill Team [NPUB30473] 01.00",
+      "80ee43733fffad8678c1c9535f00a2d99fe0bf83",
+      2065
+    ],
+    [
+      "Warriors: Legends of Troy [BLES01183] v1.00",
+      "5180b41dc6f70f4e0c5118cf202559055210d7fb",
+      1153
+    ],
+    [
+      "White Knight Chronicles™ II [BLUS30784] v1.01",
+      "c4cac75dc4ae783c4c6c07813cd58ae67b959317",
+      4455
+    ],
+    [
+      "White Knight Chronicles™ [BCUS98146] v1.01",
+      "3f1170eca965943f7787fea66d80fa5e6af5aee7",
+      6085
+    ],
+    [
+      "Wolfenstein 3D [NPUB30074] v1.00",
+      "e3c489aaa72736673553fdcd0393df720764b07b",
+      948
+    ],
+    [
+      "Wolfenstein: The New Order [BLUS31220] v1.00",
+      "4d2eba30c01eed1e358c828fd1334a8325d1376d",
+      1334
+    ],
+    [
+      "Wolfenstein™ [BLUS30298] 1.00",
+      "ed13cc16bce2d61a6c48f43afc3332ddbeef6eaf",
+      1423
+    ],
+    [
+      "X-Men Origins Wolverine [BLUS30268] v1.00",
+      "8b1a076c0bc48bd910006391b5f83c69bcd6ff6b",
+      3117
+    ],
+    [
+      "Yaiba: Ninja Gaiden Z [BLUS31203] v1.00",
+      "619756d8ac24b7e031ac8e261edaede92930a3b0",
+      4620
+    ],
+    [
+      "ZOMBIE APOCALYPSE [NPUB30069] v1.01",
+      "28929cf33789c86ba1b7c68e8bff4aa360d205d7",
+      4008
+    ],
+    [
+      "[PROTOTYPE]™ [BLUS30145] v1.00",
+      "075715c8364245185fea89803605dada02851279",
+      7438
+    ],
+    [
+      "[PROTOTYPE]™ [BLUS30145]v1.01",
+      "08a4cd07ce36723f0c883824002bec97d9acecf3",
+      7677
+    ],
+    [
+      "imported_patch.yml",
+      "f180fc64da3bab9ae0cd3cd700f10a60a9aa946e",
+      826556
+    ],
+    [
+      "inFAMOUS 2 [BCUS98125] v1.00",
+      "2443589624b139e6b5c555f9caad6449d06ebc8d",
+      13771
+    ],
+    [
+      "inFAMOUS 2 [BCUS98125] v1.04",
+      "fc88dec2cb5a415e3fc4aaf377e1f97c047f801b",
+      11216
+    ],
+    [
+      "inFAMOUS Festival of Blood [NPUA80657] v1.00",
+      "eb0c3cb2a12b7e379223ff6858ef3e504283663f",
+      1421
+    ],
+    [
+      "inFamous [BCUS98119] v1.01",
+      "461e8ce16da901073c5b935714b3ff4be660b0f0",
+      15503
+    ],
+    [
+      "inFamous [BCUS98119] v2.00",
+      "493c3826321a915cf30c83548077ad0c4bd29268",
+      14080
+    ]
+  ]
+}

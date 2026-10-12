@@ -72,7 +72,7 @@ def render(source_root=ROOT):
         "reference_files": sum(len(v) for v in groups.values()),
         "platforms": catalog_entries,
     }
-    if catalog["reference_files"] != 14357 or len(catalog_entries) != 10:
+    if catalog["reference_files"] != 17285 or len(catalog_entries) != 12:
         raise ValueError("Pinned external bulk inventory coverage changed")
     files["external/catalog.json"] = packed(catalog)
     return files
@@ -92,7 +92,7 @@ def main():
             path.write_bytes(raw)
         elif not path.exists() or path.read_bytes() != raw:
             raise SystemExit("Stale or modified metadata-only external artifact: " + rel)
-    print(f"OK: {len(artifacts)} deterministic external reference artifacts; 14357 link-only records")
+    print(f"OK: {len(artifacts)} deterministic external reference artifacts; 17285 link-only records")
 
 
 if __name__ == "__main__":

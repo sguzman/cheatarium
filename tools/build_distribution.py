@@ -96,7 +96,7 @@ def build_manifest(root):
             or review_doc.get("format") != "cheatarium-effect-reviews-v1"
             or not isinstance(review_doc.get("claims"), list)):
         raise ValueError("Unvalidated or changed effect review registry")
-    # Rights-unresolved external catalog artifacts are checked against six
+    # Rights-unresolved external catalog artifacts are checked against pinned
     # pinned filename-only source manifests; they never enter the cheat bundles.
     from build_external_distribution import render as render_external
     external_artifacts = render_external()
@@ -109,7 +109,7 @@ def build_manifest(root):
         named_paths.add(rel)
         manifest_files.append({"path": rel, **digest(safe_path(root, rel))})
     external_catalog = checked_json(safe_path(root, "external/catalog.json"))
-    if external_catalog["reference_files"] != 14357:
+    if external_catalog["reference_files"] != 17285:
         raise ValueError("External reference count disagrees with pinned source snapshots")
     for rel in ["catalog.json", "reports/snes-codec-coverage.json",
                 taxonomy_rel, review_rel, composition_rel, queue_rel,

@@ -87,6 +87,30 @@ SOURCES = {
         "platform": "switch", "expected": {"cheat":2,"patch":416},
         "rights_note": "No root repository LICENSE at pinned revision. Markdown/ASM/PCHTXT/IPS material has separate original authors; only links, original paths, blob hashes and sizes are indexed. No code bodies copied.",
     },
+    "dospamu-rpcs3-artemis-patches": {
+        "repository": "DoSpamu/RPCS3toArtemisPatches",
+        "commit": "193ad2fc8001296796eb951f054efd855631ba47",
+        "platform": "ps3", "expected": {"patch":2687},
+        "rights_note": "MIT root repository contains RPCS3 and PSXPlace derived community patches by separate credited authors; publisher's MIT notice alone does not establish their redistribution rights. Original Artemis NCL conversions are link-only, may overlap existing Artemis codes, and upstream 'confirmed' labels are unverified by Cheatarium.",
+    },
+    "chidreams-rpcs3-patches": {
+        "repository": "chidreams/Artemis-Patch-Collection-RPCS3",
+        "commit": "c71ea69d28dc04ae8c7bc85cd513a8fa08909ad2",
+        "platform": "ps3", "expected": {"patch":239},
+        "rights_note": "MIT upstream collates historically sourced Artemis/RPCS3 patches from community authors; original-code rights are not independently confirmed. The 239 root-level named patch blobs have no file extensions; they are links only, not verified cheat effects.",
+    },
+    "apelfactory-ppsspp-cheatdb": {
+        "repository": "ApelFactory/ppsspp-psp-cheatdb",
+        "commit": "a0caf4c7e151e813781730046e46dabd815294e3",
+        "platform": "psp", "expected": {"cheat":1},
+        "rights_note": "The 8.7 MB PSP CWCheat cheat.db database has no root redistribution LICENSE at the pinned snapshot and contains historically compiled third-party cheat codes. Retain only its filename, byte size, original Git blob identity and pinned upstream URL.",
+    },
+    "real-f00-usrcheat-ds": {
+        "repository": "real-F-00/usrcheat-mkds",
+        "commit": "c0f4b13d9982add3e155ba99cd9cbeb9ab933f59",
+        "platform": "ds", "expected": {"cheat":1},
+        "rights_note": "The repository's Unlicense cannot by itself establish redistribution permission for separately authored cheat codes within its 42.98 MB binary usrcheat.dat DS database. No code, binary cheat payload, or game identities have been copied.",
+    },
 }
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -121,6 +145,15 @@ def classify(source, path):
                 return "cheat"
             if path.endswith((".pchtxt", ".ips", ".s")):
                 return "patch"
+    if source == "dospamu-rpcs3-artemis-patches" and re.fullmatch(
+            r"(?:USERLIST|PSXPlace Confirmed|Working Artemis Patches)/[^/]+\.ncl", path):
+        return "patch"
+    if source == "chidreams-rpcs3-patches" and path and not path.startswith(".") and "/" not in path:
+        return "patch"
+    if source == "apelfactory-ppsspp-cheatdb" and path == "cheat.db":
+        return "cheat"
+    if source == "real-f00-usrcheat-ds" and path == "usrcheat.dat":
+        return "cheat"
     return None
 
 
@@ -249,7 +282,7 @@ def main():
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--refresh", action="store_true")
     mode.add_argument("--search", metavar="TEXT")
-    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii"))
+    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args()

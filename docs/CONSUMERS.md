@@ -23,12 +23,14 @@ An emulator can download the relevant platform artifacts at a **pinned Cheatariu
 
 ## External pinned source discovery (metadata only)
 
-Cheatarium's **14,357** copyright-review-blocked original upstream files are published separately from imported cheats in a checksum-checked `generated/v1/external/catalog.json` and ten compressed platform bundles. There are **4,635 PS1, 4,710 PS2, 796 Vita, 501 Xbox 360, 387 Dreamcast, 2,934 Switch, 306 Wii, 30 GameCube, 53 3DS and 5 DS** file references, not additional original archive files or verified cheat codes. They contain **only** original file paths, Git blob hashes, byte lengths, pinned source URLs, source IDs, and cheat/patch file categories. PS2, Xbox 360 and Switch graphics/FPS patches are not assumed to be gameplay cheats. Source and binary assembly/IPS patches remain external links, never copied payloads.
+Cheatarium's **17,285** copyright-review-blocked original upstream files are published separately from imported cheats in a checksum-checked `generated/v1/external/catalog.json` and twelve compressed platform bundles. There are **4,635 PS1, 4,710 PS2, 2,926 PS3 patch, 1 PSP database, 796 Vita, 501 Xbox 360, 387 Dreamcast, 2,934 Switch, 306 Wii, 30 GameCube, 53 3DS and 6 DS** file references, not additional original archive files or verified cheat codes. They contain **only** original file paths, Git blob hashes, byte lengths, pinned source URLs, source IDs, and cheat/patch file categories. PS2, Xbox 360 and Switch graphics/FPS patches are not assumed to be gameplay cheats. Source and binary assembly/IPS patches remain external links, never copied payloads.
 
 ```sh
 cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title "Painkiller" --limit 10 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform vita --title PCSA --source-id r0ah-vitacheat --limit 10 --json
 cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --title SLUS --offset 0 --limit 20 --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform ps3 --title USERLIST --limit 10 --json
+cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform psp --title cheat.db --json
 ```
 
 The Rust client checks the exported external catalog and selected platform bundles against `distribution.json` **before** searching. That confirms integrity relative to the pinned manifest, not that the manifest is authenticated or the codes work. Import permissions remain unresolved, so external references must never be silently promoted into source cheat records, a known-game identity or an activatable code.

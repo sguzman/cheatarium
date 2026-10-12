@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "apelfactory-ppsspp-cheatdb",
+  "repository": "https://github.com/ApelFactory/ppsspp-psp-cheatdb",
+  "snapshot_commit": "a0caf4c7e151e813781730046e46dabd815294e3",
+  "git_tree_sha": "a0caf4c7e151e813781730046e46dabd815294e3",
+  "platform": "psp",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "The 8.7 MB PSP CWCheat cheat.db database has no root redistribution LICENSE at the pinned snapshot and contains historically compiled third-party cheat codes. Retain only its filename, byte size, original Git blob identity and pinned upstream URL.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 1
+  },
+  "files": [
+    [
+      "cheat.db",
+      "216dc9adb6d9192c7e0abf4a1108ca46f36cf3bc",
+      8731361
+    ]
+  ]
+}

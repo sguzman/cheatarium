@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "real-f00-usrcheat-ds",
+  "repository": "https://github.com/real-F-00/usrcheat-mkds",
+  "snapshot_commit": "c0f4b13d9982add3e155ba99cd9cbeb9ab933f59",
+  "git_tree_sha": "c0f4b13d9982add3e155ba99cd9cbeb9ab933f59",
+  "platform": "ds",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "The repository's Unlicense cannot by itself establish redistribution permission for separately authored cheat codes within its 42.98 MB binary usrcheat.dat DS database. No code, binary cheat payload, or game identities have been copied.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 1
+  },
+  "files": [
+    [
+      "usrcheat.dat",
+      "f60bf5e0d9cd8030476d2f5bfa9279e18b808435",
+      42983752
+    ]
+  ]
+}
