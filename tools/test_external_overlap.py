@@ -14,7 +14,7 @@ class TestExternalOverlap(unittest.TestCase):
         doc = self.data
         self.assertEqual(doc["reference_files"], 42632)
         self.assertEqual(doc["source_catalogs"], 32)
-        self.assertEqual(doc["external_platforms"], 13)
+        self.assertEqual(doc["external_platforms"], 15)
         self.assertGreater(doc["distinct_git_blobs"], 26638)
         self.assertEqual(doc["repeated_blob_excess_occurrences"], 42632 - doc["distinct_git_blobs"])
         self.assertGreaterEqual(doc["references_in_repeated_blob_groups"], 9076)
