@@ -1,0 +1,33 @@
+name: Verify pinned Wii Gecko local acquisition
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/test-wii-hydration.yml"
+      - "tools/hydrate_wii_bulk.py"
+      - "tools/test_hydrate_wii_bulk.py"
+      - "tools/hydrate_nintendo_bulk.py"
+      - "sources/external-bulk/wii-accf-gecko-native.json"
+      - "sources/external-bulk/wii-metroid-prime-gecko-native.json"
+      - "sources/external-bulk/wii-metroid-other-m-gecko-native.json"
+      - "sources/external-bulk/wii-taiko-gecko-native.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check pinned Wii variants and cache safety without networking
+        run: python3 tools/test_hydrate_wii_bulk.py
+      - name: Verify original 29 Wii Gecko sources in ephemeral private runner cache
+        run: |
+          python3 tools/hydrate_wii_bulk.py --fetch --destination "${RUNNER_TEMP}/cheatarium-wii-originals"
+          python3 tools/hydrate_wii_bulk.py --check --destination "${RUNNER_TEMP}/cheatarium-wii-originals"
+          python3 tools/hydrate_wii_bulk.py --fetch --destination "${RUNNER_TEMP}/cheatarium-wii-originals"
+          test "$(find "${RUNNER_TEMP}/cheatarium-wii-originals/wii" -type f | wc -l)" -eq 29
