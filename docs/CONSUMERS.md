@@ -210,3 +210,7 @@ exact game revision. Original third-party Gecko code ownership is
 rights-unresolved, so private local acquisition does not grant
 permission to redistribute those codes. No game effects have been
 empirically verified by Cheatarium.
+
+### Wii Gecko native-code audit without source-body export
+
+After explicit private acquisition, `python3 tools/audit_wii_gecko_native.py --cache ~/.local/share/cheatarium/wii-originals` verifies the original files against pinned Git SHA-1s and outputs **aggregate code-group and hexadecimal instruction-line counts**. The committed [aggregate audit](../research/wii-gecko-native-syntax-audit-v1.json) contains **45 native Gecko group headers and 5,611 instruction-pair lines** across the 29 source files, with source-family counts. It exports no code text, per-game identifiers, fingerprints, or original cheat bytes; do not interpret its lines as separate executable cheat effects or auto-enable them.

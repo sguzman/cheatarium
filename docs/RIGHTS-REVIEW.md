@@ -126,3 +126,7 @@ cheat-code text. No original source codes were committed.
 ### Wii native original-code provenance (2026-10-13)
 
 The rights audit now documents four additional original Wii source READMEs (Git SHA-1 pinned) for City Folk/Deluxe, Metroid Prime/Trilogy, Metroid: Other M, and Taiko. These four families comprise **29** original Gecko code files, not 29 verified game effects. Upstream author attributions and public GitHub storage alone cannot establish redistribution grants for each original code author. Keep their original executable revision hints and platform distinctions; no third-party code bodies are republished as a result of this discovery.
+
+### Verified Wii native source group inventory (2026-10-13)
+
+An [aggregate-only syntax audit](../research/wii-gecko-native-syntax-audit-v1.json) verified 29 pinned source files and measured 45 source-declared Gecko cheat groups (5,611 eight-hex-word instruction lines). Source compiler notices preserve acknowledgments to older Gecko authors. This establishes concrete source code material that can be acquired privately, **not** original creator permission to redistribute bodies or evidence of gameplay compatibility. Individual code text, hashes, and game title labels are excluded from the committed audit.

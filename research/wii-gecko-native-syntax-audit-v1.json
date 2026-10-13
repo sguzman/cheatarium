@@ -1,0 +1,69 @@
+{
+  "format": "cheatarium-wii-original-gecko-group-syntax-audit-v1",
+  "game_and_revision_identity_verified": false,
+  "gameplay_verified": false,
+  "individual_code_line_values_or_hashes_exported": false,
+  "limitations": [
+    "A $-prefixed native Gecko header is a source-defined cheat group, not a tested gameplay effect.",
+    "Eight-hex-word lines are native syntax elements, not standalone selectable cheat effects.",
+    "INI enabled selectors are source file defaults and not game compatibility evidence.",
+    "Source GameCube/controller patches can comprise many instruction lines per single cheat group."
+  ],
+  "method": "pinned-local-verified-native-gecko-syntax-groups",
+  "private_source_code_bytes_exported": false,
+  "rights_to_republish_original_codes_established": false,
+  "schema_version": 1,
+  "source_families": 4,
+  "source_family_aggregates": {
+    "wii-accf-gecko-native": {
+      "cheat_headers_with_hex_code_pairs": 9,
+      "declared_cheat_header_occurrences": 9,
+      "declared_gecko_ini_sections": 0,
+      "eight_hex_word_pair_line_occurrences": 450,
+      "original_source_file_occurrences": 9,
+      "source_comment_line_occurrences": 108,
+      "source_enabled_selector_name_occurrences": 0,
+      "unrecognized_active_section_lines": 0
+    },
+    "wii-metroid-other-m-gecko-native": {
+      "cheat_headers_with_hex_code_pairs": 6,
+      "declared_cheat_header_occurrences": 6,
+      "declared_gecko_ini_sections": 3,
+      "eight_hex_word_pair_line_occurrences": 1167,
+      "original_source_file_occurrences": 3,
+      "source_comment_line_occurrences": 54,
+      "source_enabled_selector_name_occurrences": 0,
+      "unrecognized_active_section_lines": 0
+    },
+    "wii-metroid-prime-gecko-native": {
+      "cheat_headers_with_hex_code_pairs": 24,
+      "declared_cheat_header_occurrences": 24,
+      "declared_gecko_ini_sections": 12,
+      "eight_hex_word_pair_line_occurrences": 3176,
+      "original_source_file_occurrences": 12,
+      "source_comment_line_occurrences": 168,
+      "source_enabled_selector_name_occurrences": 0,
+      "unrecognized_active_section_lines": 0
+    },
+    "wii-taiko-gecko-native": {
+      "cheat_headers_with_hex_code_pairs": 6,
+      "declared_cheat_header_occurrences": 6,
+      "declared_gecko_ini_sections": 5,
+      "eight_hex_word_pair_line_occurrences": 818,
+      "original_source_file_occurrences": 5,
+      "source_comment_line_occurrences": 17,
+      "source_enabled_selector_name_occurrences": 6,
+      "unrecognized_active_section_lines": 0
+    }
+  },
+  "source_file_occurrences": 29,
+  "audit_run": {
+    "workflow_url": "https://github.com/sguzman/cheatarium/actions/runs/38340497078",
+    "job_id": 115110155781,
+    "source_code_commit": "4f1521f009aa0cd60568f9e3e85dcee9c40ce111",
+    "successful": true,
+    "original_git_blob_hashes_checked": true,
+    "original_codes_exported": false,
+    "date_utc": "2026-10-13"
+  }
+}
