@@ -19,10 +19,17 @@ permissions:
 jobs:
   offline-tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
       - name: Synthetic verification and cache safety regressions
         run: python3 tools/test_hydrate_nintendo_bulk.py
       - name: Verify user-owned cache CLI help (no downloads)
         run: python3 tools/hydrate_nintendo_bulk.py --help
+      - name: Verify full acquisition against actual pinned upstream originals
+        run: |
+          python3 tools/hydrate_nintendo_bulk.py --fetch --destination "${RUNNER_TEMP}/cheatarium-nintendo-source-test"
+          python3 tools/hydrate_nintendo_bulk.py --check --destination "${RUNNER_TEMP}/cheatarium-nintendo-source-test"
+          python3 tools/hydrate_nintendo_bulk.py --fetch --destination "${RUNNER_TEMP}/cheatarium-nintendo-source-test"
+          test "$(find "${RUNNER_TEMP}/cheatarium-nintendo-source-test/gamecube" -type f | wc -l)" -eq 375
+          test "$(find "${RUNNER_TEMP}/cheatarium-nintendo-source-test/wii-u" -type f | wc -l)" -eq 13

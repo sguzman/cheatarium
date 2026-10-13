@@ -8,6 +8,9 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Explore
 
+- **Private Nintendo original-code acquisition:** `python3 tools/hydrate_nintendo_bulk.py --fetch` downloads the three pinned WiiRD GameCube regional source ZIPs and thirteen Wii U XML/JSON documents into `~/.local/share/cheatarium/nintendo-originals/` (or `$XDG_DATA_HOME/cheatarium/nintendo-originals/`). The result is **375 actual GameCube text cheats and 13 Wii U original source files** on the user's filesystem, with verified pinned Git SHA-1, checked ZIP member inventory, and a locally SHA-256-verifiable manifest. Run `--check` offline. The public repository and its packaged distribution do **not** contain these third-party cheat bodies, and no gameplay/ROM compatibility or contributor-wide redistribution rights are inferred. See [local Nintendo acquisition](docs/CONSUMERS.md#private-nintendo-original-source-cache).
+
+
 - [Nintendo GameCube regional member lookup](research/nintendo-gamecube-wiird-member-claims-v1.json) — 375 original WiiRD ZIP member filenames, with NTSC-J/U/PAL regions, original container links and **no** cheat bodies. Search offline with `python3 tools/query_gamecube_wiird_members.py --query GZLE01 --region NTSC-U`. Source filenames do not verify game identity, execution or licensing.
 
 - [Curated games](curated/) — human-friendly cheats grouped by platform and game, including versions and code formats.

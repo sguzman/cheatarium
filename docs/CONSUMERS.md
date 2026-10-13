@@ -141,3 +141,33 @@ its members are inspected separately. All returned codes remain excluded.
 ### Nintendo GameCube regional WiiRD member lookup
 
 Run `python3 tools/query_gamecube_wiird_members.py --query GZLE01 --region NTSC-U --limit 10` or omit the region to search all 375 source ZIP member filename hints. Results provide source path, region and original pinned parent ZIP URL; they are **not** local code payloads, ROM identities, tested cheats or license grants. Full regional counts are verified by a code-free synthetic test. The separate checksum-verified external catalog still indexes the three original regional ZIP containers, not their unarchived members.
+
+### Private Nintendo original source cache
+
+Use `python3 tools/hydrate_nintendo_bulk.py --fetch` to explicitly materialize
+**375 GameCube WiiRD cheat .txt files** into region-specific directories and
+**13 Wii U original XML/JSON cheat documents** into a user-owned,
+non-repository local cache. The default is
+`$XDG_DATA_HOME/cheatarium/nintendo-originals` (typically
+`~/.local/share/cheatarium/nintendo-originals` on EndeavourOS).
+Use `--destination /custom/absolute/path` to select another directory.
+The original source revision and full Git blob SHA-1 are verified before
+extraction; all GameCube ZIP member paths/sizes are cross-checked against
+the pinned 375-member provenance catalog; the 388 output files receive
+SHA-256 digests in a private `manifest.json`. A new cache is published
+only once **all sources validate**, so interrupted downloads leave no
+partially visible cheat library. Existing valid caches are reused without
+re-downloading. `python3 tools/hydrate_nintendo_bulk.py --check`
+checks an already populated cache fully offline and does not access the
+network. If an existing cache is corrupt, the tool refuses to overwrite it.
+
+The cache cannot be placed inside Cheatarium's Git working tree; its
+original cheat data must **not** be committed or published. Only the source
+files and local verification manifest are created, never game images,
+firmware or executables. The cache contains raw native WiiRD/GBAtemp/uCodes
+strings, *not* normalized or independently execution-verified Cheatarium
+code entries, and source-author redistribution rights remain unresolved.
+GameCube source ZIPs have no effect-level emulator QA. A GitHub Actions
+integration test fetches the same pinned original files into an ephemeral
+runner's private path, verifies the manifest twice (including an offline
+`--check`), then discards the cache without artifact publication.
