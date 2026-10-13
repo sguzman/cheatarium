@@ -124,7 +124,7 @@ def build_manifest(root):
     named_paths.add(secrets_rel)
     manifest_files.append({"path": secrets_rel, **digest(safe_path(root, secrets_rel))})
     external_catalog = checked_json(safe_path(root, "external/catalog.json"))
-    if external_catalog["reference_files"] != 42718:
+    if external_catalog["reference_files"] != 43409:
         raise ValueError("External reference count disagrees with pinned source snapshots")
     # Check exact SHA-1 Git-blob overlap from pinned filename inventories.
     # This is metadata-only source-byte identity, never effect equivalence.
@@ -160,7 +160,8 @@ def build_manifest(root):
         raise ValueError("Stale or changed pinned bulk-source byte gap audit")
     if (scout_gaps["scout_source_file_occurrences"] != 691
             or scout_gaps["scout_distinct_git_blobs"] != 487
-            or scout_gaps["existing_external_reference_occurrences"] != external_catalog["reference_files"]
+            or scout_gaps["existing_external_reference_occurrences"] !=
+                external_catalog["reference_files"] - scout_gaps["scout_source_file_occurrences"]
             or scout_gaps["rights_to_redistribute_established"] is not False
             or scout_gaps["source_payloads_included"] is not False):
         raise ValueError("Unreconciled scout gap counts or unsafe rights claims")

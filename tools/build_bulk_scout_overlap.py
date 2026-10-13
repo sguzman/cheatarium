@@ -13,7 +13,7 @@ from pathlib import Path
 
 from audit_bulk_source_scout import FILE as SCOUT_FILE, verify
 from audit_external_archive_overlap import load_archived
-from external_bulk import ROOT, load
+from external_bulk import ROOT, load, SCOUT_GROUPS
 
 REL = Path("generated/v1/reports/bulk-scout-exact-byte-gaps.json")
 FORMAT = "cheatarium-bulk-scout-exact-byte-gaps-v1"
@@ -133,7 +133,11 @@ def compile_report(scout_sources, archived_rows, external_sources):
 def build(root=ROOT):
     doc = json.loads((root / "research/bulk-source-scout-v1.json").read_text("utf-8"))
     verify(doc, root)
-    report = compile_report(doc["sources"], load_archived(root), load(root))
+    # The scouts are now searchable as external references. Keep the original
+    # pre-onboarding byte-gap baseline, excluding those same nine partitions
+    # from self-comparison; otherwise every candidate becomes its own match.
+    baseline = [s for s in load(root) if s["id"] not in SCOUT_GROUPS]
+    report = compile_report(doc["sources"], load_archived(root), baseline)
     if (report["scout_source_file_occurrences"] != doc["source_file_occurrences"]
             or report["scout_distinct_git_blobs"] != doc["distinct_git_blobs_in_source_union"]):
         raise ValueError("Scout byte coverage does not reconcile with pinned source inventory")

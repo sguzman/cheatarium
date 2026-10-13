@@ -46,11 +46,47 @@ class TestExternalBulk(unittest.TestCase):
             "shadowninja-ps2-pnach-delta": 48,
             "libretro-mame2010-cheat-archive": 1,
             "libretro-mame2003plus-cheat-archive": 1,
+            "eignar17-fba-ini": 253,
+            "eignar17-arcade-dat": 368,
+            "riyoway-nintendo-multiformat": 2,
+            "riyoway-3ds-json": 1,
+            "riyoway-nes-json": 1,
+            "riyoway-switch-json": 1,
+            "riyoway-wiiu-export": 2,
+            "slade1972-segacd-zip": 51,
+            "skillercmp-xemu-text": 12,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 42718)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 43409)
+
+    def test_new_pinned_scout_sources_retain_metadata_only_semantics(self):
+        from external_bulk import SCOUT_GROUPS
+        new = [s for s in load(__import__("external_bulk").ROOT) if s["id"] in SCOUT_GROUPS]
+        self.assertEqual(len(new), 9)
+        self.assertEqual(sum(len(s["files"]) for s in new), 691)
+        self.assertEqual(len({blob for s in new for _, blob, _ in s["files"]}), 487)
+        cases = [
+            ("eignar17-fba-ini", "arcade-fba", "1941.ini"),
+            ("eignar17-arcade-dat", "arcade-kawaks", "1941.dat"),
+            ("riyoway-3ds-json", "3ds", "3ds.json"),
+            ("riyoway-nes-json", "nes", "nes.json"),
+            ("riyoway-switch-json", "switch", "switch.json"),
+            ("riyoway-wiiu-export", "wii-u", "AUMJ88.xml"),
+            ("riyoway-nintendo-multiformat", "multi-nintendo", "cheatdb.db"),
+            ("slade1972-segacd-zip", "segacd", "3 Ninjas Kick Back"),
+            ("skillercmp-xemu-text", "xbox", "EA0049-17BDE1940BA65905"),
+        ]
+        for sid, platform, term in cases:
+            with self.subTest(source=sid):
+                source = next(s for s in new if s["id"] == sid)
+                results = lookup([source], term, platform, 10)
+                self.assertEqual(len(results), 1)
+                self.assertEqual(results[0]["kind"], "cheat")
+                self.assertEqual(results[0]["redistribution"], "link_only_rights_review")
+                self.assertTrue(results[0]["upstream_url"].startswith(
+                    source["repository"] + "/blob/"))
 
     def test_widescreen_staging_is_link_only_and_patch_only(self):
         source = next(x for x in load(__import__("external_bulk").ROOT)
