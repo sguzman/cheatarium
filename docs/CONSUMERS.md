@@ -276,3 +276,27 @@ or authorization to redistribute the upstream authors' codes. The
 automatic end-to-end CI integration builds and verifies an ephemeral
 private sidecar but uploads **only aggregate code counts**, never the
 sidecar or its original third-party cheat text.
+
+### Native Rust consumer for the private Wii sidecar
+
+After the private sidecar is generated locally, Cheatarium's Rust client
+can read it **without network, ROM access, or Python during lookup**:
+
+`cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --game-title Metroid`
+
+`cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --game-id RUUE01 --json`
+
+`cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --game-id RUUE01 --revision 0 --show-code --group-index 1`
+
+The binary defaults to
+`$XDG_DATA_HOME/cheatarium/wii-local-sidecar/codes.json`; use
+`--index PATH` to read a different private sidecar. The format has
+**strong fail-closed guards**: expected 29 source files, 45 native
+groups and 5,611 instruction-pair lines; duplicate group identities,
+invalid hexadecimal instruction pairs, enabled executable entries,
+unverified source schema or version ambiguity are rejected. The Rust
+reader validates format and safety invariants but does **not**
+reconstruct independent Git SHA-1 evidence by itself; use
+`python3 tools/export_wii_gecko_local.py --verify` when full local
+source-byte verification is needed. Source compatibility labels are
+never authenticated disc identities, and **no emulator is controlled**.
