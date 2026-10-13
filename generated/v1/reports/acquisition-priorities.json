@@ -7,16 +7,16 @@
   "unique_games_or_effects_established": false,
   "gameplay_compatibility_verified": false,
   "filename_kind_is_semantic_cheat_verification": false,
-  "source_file_occurrences": 43425,
-  "source_catalogs": 51,
+  "source_file_occurrences": 43454,
+  "source_catalogs": 55,
   "platforms_count": 26,
-  "all_external_distinct_blob_sha1": 37051,
+  "all_external_distinct_blob_sha1": 37080,
   "distinct_blobs_matching_archived_bytes": 56,
-  "distinct_blobs_absent_from_archive": 36995,
-  "distinct_cheat_labeled_blobs_absent_from_archive": 24066,
+  "distinct_blobs_absent_from_archive": 37024,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 24095,
   "distinct_patch_labeled_blobs_absent_from_archive": 13207,
   "blobs_labeled_both_cheat_and_patch": 278,
-  "exclusive_unarchived_blobs_in_one_source": 34210,
+  "exclusive_unarchived_blobs_in_one_source": 34239,
   "shared_unarchived_blobs_in_multiple_sources": 2785,
   "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
   "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
@@ -766,6 +766,37 @@
       ]
     },
     {
+      "source_id": "wii-metroid-prime-gecko-native",
+      "platform": "wii",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 12,
+      "cheat_labeled_occurrences": 12,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 12,
+      "distinct_blob_sha1": 12,
+      "distinct_unarchived_blob_sha1": 12,
+      "distinct_unarchived_cheat_labeled_blobs": 12,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 12,
+      "exclusive_unarchived_cheat_labeled_blobs": 12,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "codes/R32J01.ini",
+          "git_blob_sha": "b41a125df24d2e9a0e14c70f8260439bb8031331"
+        },
+        {
+          "path": "codes/R3IJ01.ini",
+          "git_blob_sha": "aad82cc1d5f919a4ffb5cb8e1b8f7cd8ed996331"
+        },
+        {
+          "path": "codes/R3ME01.ini",
+          "git_blob_sha": "7dd5159bd54e2442f46a873a5af162cfdef36be5"
+        }
+      ]
+    },
+    {
       "source_id": "katsumaki-wiiu-xml",
       "platform": "wii-u",
       "rights_status": "link_only_rights_review",
@@ -793,6 +824,37 @@
         {
           "path": "Mario Tennis: Ultra Smash/AVXP01.xml",
           "git_blob_sha": "85dd6fae31366b5297d6f4fe1b586f7839d7fcbc"
+        }
+      ]
+    },
+    {
+      "source_id": "wii-accf-gecko-native",
+      "platform": "wii",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 9,
+      "cheat_labeled_occurrences": 9,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 9,
+      "distinct_blob_sha1": 9,
+      "distinct_unarchived_blob_sha1": 9,
+      "distinct_unarchived_cheat_labeled_blobs": 9,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 9,
+      "exclusive_unarchived_cheat_labeled_blobs": 9,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "gecko/RUUE01v0.txt",
+          "git_blob_sha": "91343c126437c611ae470173f25d0771f38a8738"
+        },
+        {
+          "path": "gecko/RUUE01v1.txt",
+          "git_blob_sha": "78175b6a1942fb43b3aae450966570dbc632bd8e"
+        },
+        {
+          "path": "gecko/RUUE02.txt",
+          "git_blob_sha": "5f16c0e14991cf29be6d908889b751711c34d818"
         }
       ]
     },
@@ -952,6 +1014,37 @@
       ]
     },
     {
+      "source_id": "wii-taiko-gecko-native",
+      "platform": "wii",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 5,
+      "cheat_labeled_occurrences": 5,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 5,
+      "distinct_blob_sha1": 5,
+      "distinct_unarchived_blob_sha1": 5,
+      "distinct_unarchived_cheat_labeled_blobs": 5,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 5,
+      "exclusive_unarchived_cheat_labeled_blobs": 5,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "codes/R2JJAF.ini",
+          "git_blob_sha": "b1de7b50f90727db81e2f0dd0f9950f42cc95845"
+        },
+        {
+          "path": "codes/S2TJAF.ini",
+          "git_blob_sha": "782d41e5854ef9753b7ee59cf62e2e57aecb7c3d"
+        },
+        {
+          "path": "codes/S3TJAF.ini",
+          "git_blob_sha": "6bc16521572845fee3f3c844d2495a74624d53c4"
+        }
+      ]
+    },
+    {
       "source_id": "leumas-gamecube-wiird-zips",
       "platform": "gamecube",
       "rights_status": "link_only_rights_review",
@@ -1010,6 +1103,37 @@
         {
           "path": "views/pages/cheats/2/codes.json",
           "git_blob_sha": "59396356c250c8776e5434045c5434ec3e791361"
+        }
+      ]
+    },
+    {
+      "source_id": "wii-metroid-other-m-gecko-native",
+      "platform": "wii",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 3,
+      "cheat_labeled_occurrences": 3,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 3,
+      "distinct_blob_sha1": 3,
+      "distinct_unarchived_blob_sha1": 3,
+      "distinct_unarchived_cheat_labeled_blobs": 3,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 3,
+      "exclusive_unarchived_cheat_labeled_blobs": 3,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "codes/R3OE01.ini",
+          "git_blob_sha": "e8e2040afa915d5238c192c4737f5f953c8b5b3e"
+        },
+        {
+          "path": "codes/R3OJ01.ini",
+          "git_blob_sha": "294ce5f8dac253367365b88d731ccaa881f9cee2"
+        },
+        {
+          "path": "codes/R3OP01.ini",
+          "git_blob_sha": "e74f087675102bdc5eefb5f4d0269f71f729e557"
         }
       ]
     },
@@ -1499,11 +1623,11 @@
     },
     {
       "platform": "wii",
-      "source_catalogs": 1,
-      "file_occurrences": 306,
-      "distinct_source_blobs": 306,
-      "distinct_blobs_absent_from_archive": 306,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 305,
+      "source_catalogs": 5,
+      "file_occurrences": 335,
+      "distinct_source_blobs": 335,
+      "distinct_blobs_absent_from_archive": 335,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 334,
       "distinct_patch_labeled_blobs_absent_from_archive": 1
     },
     {

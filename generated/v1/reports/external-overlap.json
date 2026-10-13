@@ -6,15 +6,59 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 43425,
-  "source_catalogs": 51,
+  "reference_files": 43454,
+  "source_catalogs": 55,
   "external_platforms": 26,
-  "distinct_git_blobs": 37051,
+  "distinct_git_blobs": 37080,
   "repeated_blob_excess_occurrences": 6374,
   "references_in_repeated_blob_groups": 9906,
   "cross_source_shared_blob_groups": 2785,
   "cross_source_shared_references": 8181,
   "sources": [
+    {
+      "id": "wii-accf-gecko-native",
+      "platform": "wii",
+      "reference_files": 9,
+      "distinct_git_blobs": 9,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 9
+      }
+    },
+    {
+      "id": "wii-metroid-prime-gecko-native",
+      "platform": "wii",
+      "reference_files": 12,
+      "distinct_git_blobs": 12,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 12
+      }
+    },
+    {
+      "id": "wii-metroid-other-m-gecko-native",
+      "platform": "wii",
+      "reference_files": 3,
+      "distinct_git_blobs": 3,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 3
+      }
+    },
+    {
+      "id": "wii-taiko-gecko-native",
+      "platform": "wii",
+      "reference_files": 5,
+      "distinct_git_blobs": 5,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 5
+      }
+    },
     {
       "id": "leumas-gamecube-wiird-zips",
       "platform": "gamecube",
@@ -809,11 +853,15 @@
     },
     {
       "platform": "wii",
-      "reference_files": 306,
-      "distinct_git_blobs": 306,
+      "reference_files": 335,
+      "distinct_git_blobs": 335,
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
-        "rogamer97-asm-wii"
+        "rogamer97-asm-wii",
+        "wii-accf-gecko-native",
+        "wii-metroid-other-m-gecko-native",
+        "wii-metroid-prime-gecko-native",
+        "wii-taiko-gecko-native"
       ]
     },
     {

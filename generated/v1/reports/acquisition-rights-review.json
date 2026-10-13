@@ -6,10 +6,10 @@
   "rights_reviews_are_legal_permissions": false,
   "license_absence_proves_copyright_or_prohibition": false,
   "no_automatic_rights_clearance": true,
-  "source_catalogs": 51,
-  "source_reviews_with_pinned_evidence": 12,
+  "source_catalogs": 55,
+  "source_reviews_with_pinned_evidence": 16,
   "source_catalogs_not_yet_documented": 39,
-  "reviewed_exclusive_unarchived_cheat_labeled_blobs": 18899,
+  "reviewed_exclusive_unarchived_cheat_labeled_blobs": 18928,
   "priority_ranking_does_not_assert_working_cheats": true,
   "reviewed_sources": [
     {
@@ -243,12 +243,37 @@
       "next_clearance_action": "Identify separately authored PS1 cheat/patch provenance and secure individual reuse terms for the 268 different-byte variants; a derived DuckStation database's MIT grant applies only to processing scripts."
     },
     {
+      "source_id": "wii-metroid-prime-gecko-native",
+      "platform": "wii",
+      "repository": "https://github.com/Wii-Patches/Metroid-Prime-Patch",
+      "pinned_revision": "2219bd56a4f59a15999a34454e0587b4922f4329",
+      "pinned_git_tree": "2219bd56a4f59a15999a34454e0587b4922f4329",
+      "priority_rank": 25,
+      "exclusive_unarchived_cheat_labeled_blobs": 12,
+      "distinct_unarchived_cheat_labeled_blobs": 12,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "cd8eb73218ce38436924781a4101f6d617fe3ab1",
+          "evidence_type": "multiple_upstream_cheat_sources",
+          "pinned_url": "https://github.com/Wii-Patches/Metroid-Prime-Patch/blob/2219bd56a4f59a15999a34454e0587b4922f4329/README.md"
+        }
+      ],
+      "next_clearance_action": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
+    },
+    {
       "source_id": "katsumaki-wiiu-xml",
       "platform": "wii-u",
       "repository": "https://github.com/KatsuMaki1/Wiiu-Cheats-Repo",
       "pinned_revision": "8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf",
       "pinned_git_tree": "8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf",
-      "priority_rank": 25,
+      "priority_rank": 26,
       "exclusive_unarchived_cheat_labeled_blobs": 9,
       "distinct_unarchived_cheat_labeled_blobs": 9,
       "rights_status": "link_only_rights_review",
@@ -268,12 +293,62 @@
       "next_clearance_action": "Review nine Wii U XML game/code documents against credited code authors and GBAtemp/Discord original posts; aggregator sharing and author fields do not demonstrate reusable licenses."
     },
     {
+      "source_id": "wii-accf-gecko-native",
+      "platform": "wii",
+      "repository": "https://github.com/Wii-Patches/ACCF-Patch",
+      "pinned_revision": "b626a4fd240d0675069939c23a3e4bb083739441",
+      "pinned_git_tree": "b626a4fd240d0675069939c23a3e4bb083739441",
+      "priority_rank": 27,
+      "exclusive_unarchived_cheat_labeled_blobs": 9,
+      "distinct_unarchived_cheat_labeled_blobs": 9,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "2662dfea23b6b8a08a78f9da87b61a3c0c2f4b9e",
+          "evidence_type": "multiple_upstream_cheat_sources",
+          "pinned_url": "https://github.com/Wii-Patches/ACCF-Patch/blob/b626a4fd240d0675069939c23a3e4bb083739441/README.md"
+        }
+      ],
+      "next_clearance_action": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
+    },
+    {
+      "source_id": "wii-taiko-gecko-native",
+      "platform": "wii",
+      "repository": "https://github.com/Wii-Patches/Taiko-Patch",
+      "pinned_revision": "9375d00ca939ed2e76a038cb24c42d947478c685",
+      "pinned_git_tree": "9375d00ca939ed2e76a038cb24c42d947478c685",
+      "priority_rank": 33,
+      "exclusive_unarchived_cheat_labeled_blobs": 5,
+      "distinct_unarchived_cheat_labeled_blobs": 5,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "442d12a6ae000a37d1b3cff487e88342c330f817",
+          "evidence_type": "multiple_upstream_cheat_sources",
+          "pinned_url": "https://github.com/Wii-Patches/Taiko-Patch/blob/9375d00ca939ed2e76a038cb24c42d947478c685/README.md"
+        }
+      ],
+      "next_clearance_action": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
+    },
+    {
       "source_id": "leumas-gamecube-wiird-zips",
       "platform": "gamecube",
       "repository": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats",
       "pinned_revision": "102502ee0dccd733b389f27ab073315d1033ec27",
       "pinned_git_tree": "102502ee0dccd733b389f27ab073315d1033ec27",
-      "priority_rank": 31,
+      "priority_rank": 34,
       "exclusive_unarchived_cheat_labeled_blobs": 3,
       "distinct_unarchived_cheat_labeled_blobs": 3,
       "rights_status": "link_only_rights_review",
@@ -298,7 +373,7 @@
       "repository": "https://github.com/vincent-coding/uCodes",
       "pinned_revision": "2dfb558ae387837fbecaefda7a3cb8b801d03ef7",
       "pinned_git_tree": "2dfb558ae387837fbecaefda7a3cb8b801d03ef7",
-      "priority_rank": 32,
+      "priority_rank": 35,
       "exclusive_unarchived_cheat_labeled_blobs": 3,
       "distinct_unarchived_cheat_labeled_blobs": 3,
       "rights_status": "link_only_rights_review",
@@ -320,12 +395,37 @@
       "next_clearance_action": "Separate website MIT notice from individually credited Wii U Cafe/Gecko code authors (e.g. distinct per-record author fields). Secure contributor-level source-code licensing before archiving codes; identical JSON exports are not different games."
     },
     {
+      "source_id": "wii-metroid-other-m-gecko-native",
+      "platform": "wii",
+      "repository": "https://github.com/Wii-Patches/Metroid-Other-M-Patch",
+      "pinned_revision": "7db0e507370bea107318b921497398fa7c22608b",
+      "pinned_git_tree": "7db0e507370bea107318b921497398fa7c22608b",
+      "priority_rank": 36,
+      "exclusive_unarchived_cheat_labeled_blobs": 3,
+      "distinct_unarchived_cheat_labeled_blobs": 3,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "ad39f60900b9fb7a30d8a0e25e4a87516955c058",
+          "evidence_type": "multiple_upstream_cheat_sources",
+          "pinned_url": "https://github.com/Wii-Patches/Metroid-Other-M-Patch/blob/7db0e507370bea107318b921497398fa7c22608b/README.md"
+        }
+      ],
+      "next_clearance_action": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
+    },
+    {
       "source_id": "ps2-widescreen-staging",
       "platform": "ps2",
       "repository": "https://github.com/PS2-Widescreen/pnach-DB",
       "pinned_revision": "91902dd63b67b7c8e2fcdf71b165b8e21f415346",
       "pinned_git_tree": "91902dd63b67b7c8e2fcdf71b165b8e21f415346",
-      "priority_rank": 48,
+      "priority_rank": 52,
       "exclusive_unarchived_cheat_labeled_blobs": 0,
       "distinct_unarchived_cheat_labeled_blobs": 0,
       "rights_status": "link_only_rights_review",
