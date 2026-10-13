@@ -22,7 +22,7 @@ I = re.compile(rf"atmosphere/titles/({HEX})/cheats/({HEX})\.txt\Z")
 JSON_TITLE = re.compile(rf"(?:cheats|cheats_gbatemp)/({HEX})\.json\Z")
 NATIVE = {"ademola-switch-native": A, "ibnux-switch-cheatdb": I}
 TITLE_ONLY = {"hamlet-switch-cheatdb", "sthetix-switch-mirror"}
-NON_NATIVE = {"rogamer97-asm-switch"}
+NON_NATIVE = {"rogamer97-asm-switch", "riyoway-switch-json"}
 
 
 def parsed_external(source_id, rows):

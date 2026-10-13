@@ -48,6 +48,7 @@ class SwitchExternalCoverageTests(unittest.TestCase):
                 "Switch/Sample/Cheat Code.md",
                 "Switch/Sample/FPS.pchtxt",
             ]),
+            entry("riyoway-switch-json", ["exports/JSON/Nintendo/switch.json"]),
         ]
 
     def test_native_pairs_and_mirror_title_only_are_distinct(self):
@@ -67,6 +68,7 @@ class SwitchExternalCoverageTests(unittest.TestCase):
         self.assertEqual(rows["hamlet-switch-cheatdb"]["title_only_json_file_occurrences"], 3)
         self.assertEqual(rows["hamlet-switch-cheatdb"]["patch_file_occurrences_not_assumed_cheats"], 1)
         self.assertEqual(rows["rogamer97-asm-switch"]["other_cheat_documents_without_exact_native_ids"], 1)
+        self.assertEqual(rows["riyoway-switch-json"]["other_cheat_documents_without_exact_native_ids"], 1)
         self.assertEqual(rows["ademola-switch-native"]["native_pairs_also_in_imported_sources"], 1)
         self.assertEqual(rows["ibnux-switch-cheatdb"]["native_pairs_not_in_imported_sources"], 1)
 

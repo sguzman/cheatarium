@@ -32,6 +32,7 @@ class Audit3DSCoverage(unittest.TestCase):
             ext("rogamer97-asm-3ds", [
                 "3DS/Mario Kart 7/Infinite Items.md"
             ]),
+            ext("riyoway-3ds-json", ["exports/JSON/Nintendo/3ds.json"]),
         ]
 
     def test_union_and_source_overlap(self):
@@ -42,7 +43,7 @@ class Audit3DSCoverage(unittest.TestCase):
         self.assertEqual(totals["title_ids_in_both_archive_and_external"], 1)
         self.assertEqual(totals["external_title_id_labels_absent_from_sharkive"], 2)
         self.assertEqual(totals["combined_distinct_3ds_title_id_labels"], 4)
-        self.assertEqual(totals["non_native_3ds_code_documents"], 1)
+        self.assertEqual(totals["non_native_3ds_code_documents"], 2)
         self.assertTrue(report["rights_blocked_external_codes_not_imported"])
         self.assertFalse(report["game_identity_verified"])
         self.assertEqual(report["external"][0]["source_titles_missing_from_archived_sharkive"], 1)

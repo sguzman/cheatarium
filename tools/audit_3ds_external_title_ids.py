@@ -18,7 +18,7 @@ SHARKIVE = re.compile(r"3ds/([0-9a-fA-F]{16})\.txt\Z")
 ADEMOLA = re.compile(r"[^/]+/(000400[0-9a-fA-F]{10})\.txt\Z")
 JOURNEY = re.compile(r"Cheats/[^/]+/([0-9a-fA-F]{16})\.txt\Z")
 NATIVE = {"ademola-3ds-native": ADEMOLA, "journeyover-3ds-ctrpf": JOURNEY}
-DOCUMENTS = {"rogamer97-asm-3ds"}
+DOCUMENTS = {"rogamer97-asm-3ds", "riyoway-3ds-json"}
 
 
 def tally_imported(rows):
@@ -109,7 +109,7 @@ def compare(sharkive, external_indexes):
         "limitations": [
             "Title ID filename labels are supplied by different upstream authors, not confirmed ROM hashes.",
             "Two different file paths for the same ID are not proof of duplicate executable cheat effects.",
-            "Many non-native source documents lack exact title-ID filenames and stay outside ID coverage.",
+            "Many non-native source documents, including consolidated JSON exports, lack exact title-ID filenames and stay outside ID coverage.",
             "No rights-blocked cheat bodies are copied or independently verified.",
         ],
     }
