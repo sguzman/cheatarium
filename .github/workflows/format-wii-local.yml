@@ -1,0 +1,36 @@
+name: Format check for private Wii Rust consumer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/format-wii-local.yml"
+      - "crates/cheatarium-client/src/local_wii.rs"
+      - "crates/cheatarium-client/src/bin/wii_local.rs"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rustfmt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Rust formatter
+        run: |
+          rustup toolchain install stable --profile minimal --component rustfmt
+          rustup default stable
+      - name: Format first-party Wii Rust client and show normalized text
+        run: |
+          cargo fmt --all
+          echo 'BEGIN_FORMATTED_LOCAL_WII'
+          cat crates/cheatarium-client/src/local_wii.rs
+          echo 'END_FORMATTED_LOCAL_WII'
+          echo 'BEGIN_FORMATTED_WII_LOCAL_BIN'
+          cat crates/cheatarium-client/src/bin/wii_local.rs
+          echo 'END_FORMATTED_WII_LOCAL_BIN'
+          echo 'BEGIN_RUSTFMT_CHANGES'
+          git diff --stat
+          echo 'END_RUSTFMT_CHANGES'
