@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "wii-accf-gecko-native",
+  "repository": "https://github.com/Wii-Patches/ACCF-Patch",
+  "snapshot_commit": "b626a4fd240d0675069939c23a3e4bb083739441",
+  "git_tree_sha": "b626a4fd240d0675069939c23a3e4bb083739441",
+  "platform": "wii",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Nine revision-specific City Folk/Deluxe Gecko text files. No pinned root license. README attributes SDHC support to Bero; revision mismatches may crash games, so exact filenames must be preserved. No original-contributor redistribution clearance.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 9
+  },
+  "files": [
+    [
+      "gecko/RUUE01v0.txt",
+      "91343c126437c611ae470173f25d0771f38a8738",
+      1406
+    ],
+    [
+      "gecko/RUUE01v1.txt",
+      "78175b6a1942fb43b3aae450966570dbc632bd8e",
+      1411
+    ],
+    [
+      "gecko/RUUE02.txt",
+      "5f16c0e14991cf29be6d908889b751711c34d818",
+      1406
+    ],
+    [
+      "gecko/RUUJ01v1.txt",
+      "aaa4ce46ca7de23e3c4d1a9fdbcb36b12414793a",
+      1415
+    ],
+    [
+      "gecko/RUUJ01v2.txt",
+      "4fdedb19e2edca992cfdd609106d007fe599931c",
+      1415
+    ],
+    [
+      "gecko/RUUJ02.txt",
+      "617e697d93058b8509732e9c8acfa0847e6d1180",
+      1408
+    ],
+    [
+      "gecko/RUUP01v0.txt",
+      "6bc625ee36405fc1cdb4badb02ecf46b0d0af94f",
+      1420
+    ],
+    [
+      "gecko/RUUP01v1.txt",
+      "863190bce053253dba159a32ea57f534cc1c38aa",
+      1420
+    ],
+    [
+      "gecko/RUUP02.txt",
+      "f40063e02e5a181ed1e17c5ac2cce97d78cc5404",
+      1406
+    ]
+  ]
+}

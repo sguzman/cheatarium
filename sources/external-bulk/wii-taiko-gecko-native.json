@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "wii-taiko-gecko-native",
+  "repository": "https://github.com/Wii-Patches/Taiko-Patch",
+  "snapshot_commit": "9375d00ca939ed2e76a038cb24c42d947478c685",
+  "git_tree_sha": "9375d00ca939ed2e76a038cb24c42d947478c685",
+  "platform": "wii",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Five Taiko Wii native Gecko INIs for source-declared game/disc variants. No root LICENSE found; original author reuse/compatibility unverified.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 5
+  },
+  "files": [
+    [
+      "codes/R2JJAF.ini",
+      "b1de7b50f90727db81e2f0dd0f9950f42cc95845",
+      3479
+    ],
+    [
+      "codes/S2TJAF.ini",
+      "782d41e5854ef9753b7ee59cf62e2e57aecb7c3d",
+      3283
+    ],
+    [
+      "codes/S3TJAF.ini",
+      "6bc16521572845fee3f3c844d2495a74624d53c4",
+      3288
+    ],
+    [
+      "codes/S5KJAF.ini",
+      "7f9e0f104d681788f4fd1001b5559f31fec4673b",
+      3278
+    ],
+    [
+      "codes/STJJAF.ini",
+      "680e2de614e0dbb3e1916f8376af3e2dda6d6b3b",
+      3274
+    ]
+  ]
+}

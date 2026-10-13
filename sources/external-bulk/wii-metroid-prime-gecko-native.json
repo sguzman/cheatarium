@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "wii-metroid-prime-gecko-native",
+  "repository": "https://github.com/Wii-Patches/Metroid-Prime-Patch",
+  "snapshot_commit": "2219bd56a4f59a15999a34454e0587b4922f4329",
+  "git_tree_sha": "2219bd56a4f59a15999a34454e0587b4922f4329",
+  "platform": "wii",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Twelve native Gecko INI files for source-declared Metroid Prime/Trilogy region and MP1/2/3 variants. README provenance and Git tree do not provide a root original-code license; source labels are not verified independent games or builds.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 12
+  },
+  "files": [
+    [
+      "codes/R32J01.ini",
+      "b41a125df24d2e9a0e14c70f8260439bb8031331",
+      5711
+    ],
+    [
+      "codes/R3IJ01.ini",
+      "aad82cc1d5f919a4ffb5cb8e1b8f7cd8ed996331",
+      5681
+    ],
+    [
+      "codes/R3ME01_mp1.ini",
+      "1eca1d5e568a3b63aef3107c0c1fd19c68e4e0ec",
+      5705
+    ],
+    [
+      "codes/R3ME01_mp2.ini",
+      "92dc5b969e529611fad7b6b1e1a8532ed446badc",
+      5705
+    ],
+    [
+      "codes/R3ME01_mp3.ini",
+      "f60c953d2e77da4211ee629be91418624ff2758f",
+      5705
+    ],
+    [
+      "codes/R3ME01.ini",
+      "7dd5159bd54e2442f46a873a5af162cfdef36be5",
+      5693
+    ],
+    [
+      "codes/R3MP01_mp1.ini",
+      "2ba96c511c6e429f2b6d647d600eeb3b2d03335b",
+      5687
+    ],
+    [
+      "codes/R3MP01_mp2.ini",
+      "ab2190b5e504d73c01bdd6cd1e24f787e5590c36",
+      5687
+    ],
+    [
+      "codes/R3MP01_mp3.ini",
+      "774d49b6b89fde40d12da1d2f45bfbbe2055431f",
+      5687
+    ],
+    [
+      "codes/R3MP01.ini",
+      "f24fcc2858b5e5e08bd7467e5c40195fe821bdd0",
+      5681
+    ],
+    [
+      "codes/RM3E01.ini",
+      "bf31c7ba6e607a35884be421c4fc86ec407ed0ef",
+      5705
+    ],
+    [
+      "codes/RM3P01.ini",
+      "b493acb9e92c906bda3625c1e1a86249613197f9",
+      5711
+    ]
+  ]
+}

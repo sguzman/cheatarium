@@ -211,6 +211,66 @@
         }
       ],
       "recommended_clearance": "Separate website MIT notice from individually credited Wii U Cafe/Gecko code authors (e.g. distinct per-record author fields). Secure contributor-level source-code licensing before archiving codes; identical JSON exports are not different games."
+    },
+    {
+      "source_id": "wii-accf-gecko-native",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "2662dfea23b6b8a08a78f9da87b61a3c0c2f4b9e",
+          "evidence_type": "multiple_upstream_cheat_sources"
+        }
+      ],
+      "recommended_clearance": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
+    },
+    {
+      "source_id": "wii-metroid-prime-gecko-native",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "cd8eb73218ce38436924781a4101f6d617fe3ab1",
+          "evidence_type": "multiple_upstream_cheat_sources"
+        }
+      ],
+      "recommended_clearance": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
+    },
+    {
+      "source_id": "wii-metroid-other-m-gecko-native",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "ad39f60900b9fb7a30d8a0e25e4a87516955c058",
+          "evidence_type": "multiple_upstream_cheat_sources"
+        }
+      ],
+      "recommended_clearance": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
+    },
+    {
+      "source_id": "wii-taiko-gecko-native",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "442d12a6ae000a37d1b3cff487e88342c330f817",
+          "evidence_type": "multiple_upstream_cheat_sources"
+        }
+      ],
+      "recommended_clearance": "Check original creator(s) and third-party Gecko author rights before any public cheat-code body import. Preserve region/revision file identity and do not assume source compiler testing generalizes."
     }
   ]
 }

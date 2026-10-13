@@ -15,6 +15,30 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FOLDER = Path("sources/external-bulk")
 SOURCES = {
+    "wii-accf-gecko-native": {
+        "repository": "Wii-Patches/ACCF-Patch",
+        "commit": "b626a4fd240d0675069939c23a3e4bb083739441",
+        "platform": "wii", "expected": {"cheat": 9},
+        "rights_note": "Nine revision-specific City Folk/Deluxe Gecko text files. No pinned root license. README attributes SDHC support to Bero; revision mismatches may crash games, so exact filenames must be preserved. No original-contributor redistribution clearance.",
+    },
+    "wii-metroid-prime-gecko-native": {
+        "repository": "Wii-Patches/Metroid-Prime-Patch",
+        "commit": "2219bd56a4f59a15999a34454e0587b4922f4329",
+        "platform": "wii", "expected": {"cheat": 12},
+        "rights_note": "Twelve native Gecko INI files for source-declared Metroid Prime/Trilogy region and MP1/2/3 variants. README provenance and Git tree do not provide a root original-code license; source labels are not verified independent games or builds.",
+    },
+    "wii-metroid-other-m-gecko-native": {
+        "repository": "Wii-Patches/Metroid-Other-M-Patch",
+        "commit": "7db0e507370bea107318b921497398fa7c22608b",
+        "platform": "wii", "expected": {"cheat": 3},
+        "rights_note": "Three source Gecko INIs for Other M USA/JP/EUR. README credits Vague Rant, and upstream Dolphin testing only covered USA Rev 0; there is no root LICENSE. Rights and other revisions unverified.",
+    },
+    "wii-taiko-gecko-native": {
+        "repository": "Wii-Patches/Taiko-Patch",
+        "commit": "9375d00ca939ed2e76a038cb24c42d947478c685",
+        "platform": "wii", "expected": {"cheat": 5},
+        "rights_note": "Five Taiko Wii native Gecko INIs for source-declared game/disc variants. No root LICENSE found; original author reuse/compatibility unverified.",
+    },
     "leumas-gamecube-wiird-zips": {
         "repository": "LeumasPlays/WiiRD-GameCube-Cheats",
         "commit": "102502ee0dccd733b389f27ab073315d1033ec27",
@@ -354,6 +378,14 @@ SHA = re.compile(r"^[0-9a-f]{40}$")
 
 
 def classify(source, path):
+    if source == "wii-accf-gecko-native" and re.fullmatch(r"gecko/[^/]+\.txt", path):
+        return "cheat"
+    if source == "wii-metroid-prime-gecko-native" and re.fullmatch(r"codes/[^/]+\.ini", path):
+        return "cheat"
+    if source == "wii-metroid-other-m-gecko-native" and re.fullmatch(r"codes/[^/]+\.ini", path):
+        return "cheat"
+    if source == "wii-taiko-gecko-native" and re.fullmatch(r"codes/[^/]+\.ini", path):
+        return "cheat"
     if source == "leumas-gamecube-wiird-zips" and re.fullmatch(r"^(?:NTSC-J codes\.zip|NTSC-U Codes\.zip|PAL codes\.zip)$", path):
         return "cheat"
     if source == "katsumaki-wiiu-xml" and re.fullmatch(r"^[^/]+/[^/]+\.xml$", path):

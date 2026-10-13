@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "wii-metroid-other-m-gecko-native",
+  "repository": "https://github.com/Wii-Patches/Metroid-Other-M-Patch",
+  "snapshot_commit": "7db0e507370bea107318b921497398fa7c22608b",
+  "git_tree_sha": "7db0e507370bea107318b921497398fa7c22608b",
+  "platform": "wii",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Three source Gecko INIs for Other M USA/JP/EUR. README credits Vague Rant, and upstream Dolphin testing only covered USA Rev 0; there is no root LICENSE. Rights and other revisions unverified.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 3
+  },
+  "files": [
+    [
+      "codes/R3OE01.ini",
+      "e8e2040afa915d5238c192c4737f5f953c8b5b3e",
+      7902
+    ],
+    [
+      "codes/R3OJ01.ini",
+      "294ce5f8dac253367365b88d731ccaa881f9cee2",
+      7906
+    ],
+    [
+      "codes/R3OP01.ini",
+      "e74f087675102bdc5eefb5f4d0269f71f729e557",
+      7908
+    ]
+  ]
+}
