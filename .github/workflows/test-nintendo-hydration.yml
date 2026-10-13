@@ -1,0 +1,28 @@
+name: Verify local Nintendo acquisition cache tool
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/test-nintendo-hydration.yml"
+      - "tools/hydrate_nintendo_bulk.py"
+      - "tools/test_hydrate_nintendo_bulk.py"
+      - "research/nintendo-gamecube-wiird-member-claims-v1.json"
+      - "sources/external-bulk/leumas-gamecube-wiird-zips.json"
+      - "sources/external-bulk/katsumaki-wiiu-xml.json"
+      - "sources/external-bulk/ucodes-wiiu-json.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v5
+      - name: Synthetic verification and cache safety regressions
+        run: python3 tools/test_hydrate_nintendo_bulk.py
+      - name: Verify user-owned cache CLI help (no downloads)
+        run: python3 tools/hydrate_nintendo_bulk.py --help
