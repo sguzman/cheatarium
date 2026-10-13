@@ -298,3 +298,38 @@ the nine newly searchable source partitions from comparing with themselves,
 so the historical **487 previously untracked blobs** remain auditable.
 All nine partitions are checksum-verified, source-path searchable offline,
 and explicitly not gameplay-verified or cleared for cheat-body redistribution.
+
+### Compiled code overlap: PSP CWCheat, Nintendo, Sega CD (2026-10-13)
+
+The source-verified, ephemeral [compiled source identity audit](../research/compiled-source-identity-audit-v1.json)
+compares original data **without exporting original cheat text, individual source
+identifiers, hashes of code blocks or ZIP member filenames**. The GitHub Actions
+job validates each pinned Git blob SHA-1 and uploads aggregate counts only.
+
+- **PSP derivative overlap:** Saramagrean and ApelFactory CWCheat databases
+  share **2,642 exact game-serial labels**. Saramagrean has another **36**
+  label values; all ApelFactory labels occur in Saramagrean. Comparing
+  each source-declared serial with its *exact normalized* `_L` command block
+  (ignoring header labels), **75,036 code-block pairs appear in both**.
+  Saramagrean has **2,281** additional exact pairs and ApelFactory **1,586**.
+  Together they form **78,903** distinct serial+text pairs, not the sum of
+  either collection's group counts. Exact equal bytes are stronger evidence
+  of redundant content, but *not* guaranteed compatible game builds, unique
+  effects, verified authorship or reuse rights. Original files remain links.
+- **Nintendo canonical data:** all four platform JSON exports reconcile
+  exactly with SQLite: **5,327 source game/variant rows and 117,861 cheat
+  rows**. Per-platform game/cheat rows are Switch 2,491/56,476; 3DS
+  644/12,265; NES 2,180/42,172; Wii U 12/6,948. Source-native text
+  repetitions within the same ID label are separately measured, not
+  destructively merged. The multiple export formats are **not additional
+  independent collections**.
+- **Sega CD:** the 48 byte-distinct parent ZIPs contain **385 file-member
+  occurrences**, but only **344 distinct member byte hashes**, leaving
+  **41 repeated member occurrences** across source ZIPs. The ZIPs contain
+  364 `.gg` and 21 text files, and the textual "credit" marker was not
+  observed in those text members. That observation is **not** a claim that
+  credit or contributor ownership is absent; original rights remain blocked.
+
+Next: scrutinize the 8,837 XML members of pinned MAME 2010 at per-file cheat
+entry level, then prioritize the most useful, author-cleared source families.
+Headless execution testing and ROM/build matching remain deferred.

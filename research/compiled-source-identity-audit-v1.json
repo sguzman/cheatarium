@@ -1,0 +1,124 @@
+{
+  "comparison": "pinned verified original source bytes, ephemeral exact syntax comparisons",
+  "distinct_games_or_cheat_effects_verified": false,
+  "format": "cheatarium-compiled-source-overlap-v1",
+  "gameplay_compatibility_verified": false,
+  "nintendo_source_exports_by_platform": {
+    "3ds": {
+      "cheat_record_occurrences": 12265,
+      "cheat_records_with_code_line_array": 9047,
+      "cheat_records_with_code_string": 3218,
+      "distinct_source_game_id_labels": 644,
+      "distinct_source_title_texts": 593,
+      "game_records_with_build_id_field": 0,
+      "individual_identifiers_titles_or_codes_exported": false,
+      "repeat_exact_code_text_within_same_id_label": 130,
+      "source_game_or_variant_records": 644,
+      "source_game_records_with_cheats": 644
+    },
+    "nes": {
+      "cheat_record_occurrences": 42172,
+      "cheat_records_with_code_line_array": 6666,
+      "cheat_records_with_code_string": 35506,
+      "distinct_source_game_id_labels": 2180,
+      "distinct_source_title_texts": 2180,
+      "game_records_with_build_id_field": 0,
+      "individual_identifiers_titles_or_codes_exported": false,
+      "repeat_exact_code_text_within_same_id_label": 975,
+      "source_game_or_variant_records": 2180,
+      "source_game_records_with_cheats": 2180
+    },
+    "switch": {
+      "cheat_record_occurrences": 56476,
+      "cheat_records_with_code_line_array": 42874,
+      "cheat_records_with_code_string": 13602,
+      "distinct_source_game_id_labels": 2491,
+      "distinct_source_title_texts": 2472,
+      "game_records_with_build_id_field": 0,
+      "individual_identifiers_titles_or_codes_exported": false,
+      "repeat_exact_code_text_within_same_id_label": 5331,
+      "source_game_or_variant_records": 2491,
+      "source_game_records_with_cheats": 2491
+    },
+    "wiiu": {
+      "cheat_record_occurrences": 6948,
+      "cheat_records_with_code_line_array": 6673,
+      "cheat_records_with_code_string": 275,
+      "distinct_source_game_id_labels": 12,
+      "distinct_source_title_texts": 12,
+      "game_records_with_build_id_field": 0,
+      "individual_identifiers_titles_or_codes_exported": false,
+      "repeat_exact_code_text_within_same_id_label": 1424,
+      "source_game_or_variant_records": 12,
+      "source_game_records_with_cheats": 12
+    }
+  },
+  "nintendo_sqlite_export_reconciliation": {
+    "canonical_sqlite_source_cheats": 117861,
+    "canonical_sqlite_source_games": 5327,
+    "cheat_row_count_reconciled": true,
+    "export_cheat_records": 117861,
+    "export_game_records": 5327,
+    "game_row_count_reconciled": true
+  },
+  "no_identifiers_or_member_paths_exported": true,
+  "no_original_code_text_exported_or_committed": true,
+  "no_per_code_fingerprints_exported": true,
+  "notes": [
+    "Nintendo JSON exports mirror canonical SQLite and are never summed as new cheat collections.",
+    "PSP overlap means exact serial label and normalized _L instruction block equality, not verified code effects.",
+    "Sega CD member-byte duplicates do not imply same game version or in-emulator cheat behavior.",
+    "Attribution string presence does not establish redistribution permission."
+  ],
+  "psp_cwcheat_pair": {
+    "a": {
+      "cheat_group_header_occurrences": 83044,
+      "code_bearing_group_occurrences": 83030,
+      "declared_game_sections": 2697,
+      "distinct_game_serial_labels": 2678,
+      "distinct_serial_and_exact_code_block_pairs": 77317,
+      "native_command_line_occurrences": 261101
+    },
+    "a_source_id": "saramagrean-psp-cwcheat",
+    "b": {
+      "cheat_group_header_occurrences": 82097,
+      "code_bearing_group_occurrences": 82082,
+      "declared_game_sections": 2660,
+      "distinct_game_serial_labels": 2642,
+      "distinct_serial_and_exact_code_block_pairs": 76622,
+      "native_command_line_occurrences": 254289
+    },
+    "b_source_id": "apelfactory-ppsspp-cheatdb",
+    "code_block_pairs_only_in_a": 2281,
+    "code_block_pairs_only_in_b": 1586,
+    "comparison_scope": "same source-declared serial plus exact normalized _L lines; cheat names ignored",
+    "distinct_exact_serial_and_code_block_pairs_in_union": 78903,
+    "exact_serial_and_code_block_pairs_in_both_sources": 75036,
+    "individual_serials_codes_or_hashes_exported": false,
+    "same_serial_labels_in_both_sources": 2642,
+    "serial_labels_only_in_a": 36,
+    "serial_labels_only_in_b": 0,
+    "source_files": 2
+  },
+  "rights_to_redistribute_established": false,
+  "schema_version": 1,
+  "segacd_member_byte_overlap": {
+    "distinct_exact_member_file_bodies": 344,
+    "distinct_original_zip_git_blobs": 48,
+    "gg_binary_member_file_occurrences": 364,
+    "individual_member_names_codes_or_fingerprints_exported": false,
+    "member_bodies_referenced_more_than_once": 41,
+    "member_file_occurrences_excluding_identical_zip_aliases": 385,
+    "repeated_member_byte_occurrences": 41,
+    "text_member_file_occurrences": 21,
+    "text_members_containing_credit_marker": 0
+  },
+  "audit_run": {
+    "workflow_run_url": "https://github.com/sguzman/cheatarium/actions/runs/38332470751",
+    "workflow_source_commit": "743c075c7d213b8acf9978037f27de9b5a8a6582",
+    "completed_utc_date": "2026-10-13",
+    "github_actions_job_id": 115085084188,
+    "pinned_original_bytes_verified": true,
+    "original_cheat_bodies_committed": false
+  }
+}

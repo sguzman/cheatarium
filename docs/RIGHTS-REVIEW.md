@@ -63,3 +63,17 @@ Smoker1's 98 FinalBurn Alpha INI file references (45 distinct source blobs) and 
 
 
 The seven new folder-scoped historical RetroArch mirror catalogs preserve **86 link-only file occurrences / 77 Git byte hashes** selected from 11,390 original upstream files using an earlier exact-blob comparison with Libretro/Emupedia/BitHeX. Unlike the original upstream homebrew secrets collection, these older CHT forks do not establish individual code-author permission to republish cheat bodies. Their platform labels are based on source folder names; they are not verification of game identity, effects or compatible ROM versions.
+
+### Measured internal code redundancy (2026-10-13)
+
+A checksum-verified aggregate-only [compiled-source audit](../research/compiled-source-identity-audit-v1.json)
+found 75,036 exact source-serial + normalized command-block pairs shared
+between two pinned PSP CWCheat collections; the source-only differences are
+2,281 (Saramagrean) and 1,586 (ApelFactory). This **does not establish
+redistribution rights for either collection** or prove version compatibility.
+The Nintendo SQLite dataset and its four JSON exports have exactly matching
+5,327/117,861 source-declared game/cheat row totals, so republication in multiple
+file formats must not increase unique-content totals. Distinct Sega CD ZIP
+parents contain 385 members but only 344 byte-distinct member bodies.
+Attribution and reuse clearance must be reviewed at the original creator
+level, not inferred from repackaging or matching content.
