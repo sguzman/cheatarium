@@ -151,6 +151,23 @@ def build_manifest(root):
     manifest_files.append({"path": archive_overlap_rel,
                            **digest(safe_path(root, archive_overlap_rel))})
     named_paths.add(archive_overlap_rel)
+    # Original-file novelty for pinned rights-blocked acquisition scouts. Keep
+    # scout candidates outside the consumer's executable cheat bundles.
+    from build_bulk_scout_overlap import build as build_bulk_scout_overlap
+    scout_rel = "reports/bulk-scout-exact-byte-gaps.json"
+    scout_gaps = checked_json(safe_path(root, scout_rel))
+    if scout_gaps != build_bulk_scout_overlap(ROOT):
+        raise ValueError("Stale or changed pinned bulk-source byte gap audit")
+    if (scout_gaps["scout_source_file_occurrences"] != 691
+            or scout_gaps["scout_distinct_git_blobs"] != 487
+            or scout_gaps["existing_external_reference_occurrences"] != external_catalog["reference_files"]
+            or scout_gaps["rights_to_redistribute_established"] is not False
+            or scout_gaps["source_payloads_included"] is not False):
+        raise ValueError("Unreconciled scout gap counts or unsafe rights claims")
+    if scout_rel in named_paths:
+        raise ValueError("Duplicate bulk scout gap report")
+    manifest_files.append({"path": scout_rel, **digest(safe_path(root, scout_rel))})
+    named_paths.add(scout_rel)
     # Independently recompute a licensing-priority queue by distinct original
     # Git blob identities, discounting mirrors and separating cheat labels
     # from patch labels. Ranking is NOT a permission grant.
@@ -483,6 +500,10 @@ def build_manifest(root):
         "compatibility": "filename candidates only; never auto-enable cheat codes",
         "console_bundles": len(entries),
         "external_reference_files": external_catalog["reference_files"],
+        "bulk_scout_source_file_occurrences": scout_gaps["scout_source_file_occurrences"],
+        "bulk_scout_distinct_git_blobs": scout_gaps["scout_distinct_git_blobs"],
+        "bulk_scout_blobs_absent_from_known_corpora":
+            scout_gaps["scout_distinct_git_blobs_not_in_either_known_corpus"],
         "homebrew_built_in_secret_occurrences": secrets["source_entries"],
         "homebrew_source_title_labels": secrets["distinct_source_game_title_labels"],
         "external_switch_native_pair_labels_not_in_archive": switch_external["summary"]["native_pairs_only_in_external_sources"],

@@ -247,6 +247,7 @@ jobs:
             fi
           done
           python3 tools/test_bulk_source_scout.py
+          python3 tools/test_bulk_scout_overlap.py
           python3 tools/test_external_bulk.py
           python3 tools/test_build_external_distribution.py
           python3 tools/test_external_overlap.py
@@ -315,6 +316,8 @@ jobs:
           python3 tools/audit_external_overlap.py --check
           python3 tools/audit_external_archive_overlap.py --write
           python3 tools/audit_external_archive_overlap.py --check
+          python3 tools/build_bulk_scout_overlap.py --write
+          python3 tools/build_bulk_scout_overlap.py --check
           python3 tools/build_acquisition_priorities.py --write
           python3 tools/build_acquisition_priorities.py --check
           python3 tools/audit_acquisition_rights.py --write

@@ -261,3 +261,19 @@ initial state, baseline/control run, modified run, memory or game-state
 observations, and evidence of a repeatable difference. A changed byte alone
 is not a verified intended cheat effect. No ROMs or test saves belong in
 Cheatarium; **this is not part of the current acquisition pass**.
+
+### Whole-corpus novelty audit for four pinned bulk scouts (2026-10-12)
+
+The reproducible `generated/v1/reports/bulk-scout-exact-byte-gaps.json` now
+compares all **691** selected original file occurrences (**487** byte-distinct
+Git blobs) against every file in the preserved archive's source manifests and
+all previously indexed link-only external catalogs. This is substantially
+more rigorous than the earlier Smoker1-only FBA comparison: exact-byte matches
+are separated from byte-only gaps, with per-source bounded path witnesses.
+Every code body remains rights-unresolved and outside the indexed playable
+cheat archive. An exact-byte gap is *not* an established new game, effect,
+compatible build or redistribution grant. Regenerate with
+`python3 tools/build_bulk_scout_overlap.py --write`, verify with `--check`;
+CI independently recomputes and checksum-manifests the report. Next acquisition
+step remains clearing authorship and inspecting compressed database/ZIP formats
+before importing eligible original code bodies.

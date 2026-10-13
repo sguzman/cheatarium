@@ -11,6 +11,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Curated games](curated/) — human-friendly cheats grouped by platform and game, including versions and code formats.
 - [Original archives](archive/) — unmodified, attributable imports in their original formats.
 - [Historical Libretro preservation gap](docs/HISTORICAL-LIBRETRO.md) — pinned Emupedia-era byte-overlap audit, rights-limited.
+- [New bulk-source byte gap audit](generated/v1/reports/bulk-scout-exact-byte-gaps.json) — four pinned source inventories compared against all archived originals and existing external metadata, without copying code.
 - [Bulk acquisition priorities](generated/v1/reports/acquisition-priorities.json) — mirror-discounted, rights-blocked source-by-source exact-blob coverage rankings; not redistribution grants.
 - [Pinned bulk source rights review](docs/RIGHTS-REVIEW.md) — documented original-author blockers, immutable upstream license/README evidence and next clearance actions.
 - [Platforms](platforms/platforms.json) — stable platform identifiers, including console and handheld generations.
