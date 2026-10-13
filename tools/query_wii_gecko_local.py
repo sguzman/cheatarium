@@ -22,6 +22,18 @@ CODE_PAIR = re.compile(r"^[0-9A-Fa-f]{8}[ \t]+[0-9A-Fa-f]{8}$")
 SECTION = re.compile(r"^\[([A-Za-z_]+)\]$")
 SCHEMA = "cheatarium.private_wii_gecko_lookup.v1"
 MAX_RESULTS = 100
+GAME_FAMILY_HINTS = {
+    "wii-accf-gecko-native": "Animal Crossing: City Folk / Deluxe",
+    "wii-metroid-prime-gecko-native": "Metroid Prime / Trilogy",
+    "wii-metroid-other-m-gecko-native": "Metroid: Other M",
+    "wii-taiko-gecko-native": "Taiko no Tatsujin",
+}
+SOURCE_CAVEATS = {
+    "wii-accf-gecko-native": "City Folk source revision tags v0/v1/v2 are incompatible patch-site variants; match your own disc revision externally before use.",
+    "wii-metroid-prime-gecko-native": "Trilogy source variants base/mp1/mp2/mp3 are not interchangeable; game and executable build have not been authenticated.",
+    "wii-metroid-other-m-gecko-native": "Original upstream runtime testing was limited; region-labeled sources do not prove revision compatibility.",
+    "wii-taiko-gecko-native": "Different Taiko Wii disc IDs are different native game variants; no emulator or hardware compatibility test was performed.",
+}
 
 
 def source_identity(relative):
@@ -105,6 +117,8 @@ def verified_index(cache, root=None):
         entries.append({
             **identity,
             "source_id": item["source_id"],
+            "game_family_title_hint": GAME_FAMILY_HINTS[item["source_id"]],
+            "source_compatibility_warning": SOURCE_CAVEATS[item["source_id"]],
             "local_path": item["path"],
             "upstream_original_url": upstream_url,
             "original_git_blob_sha1": item["source_git_blob_sha1"],
@@ -119,7 +133,8 @@ def verified_index(cache, root=None):
 
 
 def query(entries, game_id=None, revision=None, variant=None, title=None,
-          source_id=None, limit=50, offset=0, show_code=False, group_index=None):
+          source_id=None, limit=50, offset=0, show_code=False, group_index=None,
+          game_title=None):
     if game_id is not None:
         game_id = game_id.upper()
         if not re.fullmatch("[A-Z0-9]{6}", game_id):
@@ -143,7 +158,9 @@ def query(entries, game_id=None, revision=None, variant=None, title=None,
         raise ValueError("--group-index requires explicit --show-code")
 
     q = (title or "").casefold()
+    game_q = (game_title or "").casefold()
     matches = []
+    file_candidates = 0
     for entry in entries:
         if game_id and entry["claimed_disc_id"] != game_id:
             continue
@@ -153,13 +170,16 @@ def query(entries, game_id=None, revision=None, variant=None, title=None,
             continue
         if source_id and entry["source_id"] != source_id:
             continue
+        if game_q and game_q not in entry["game_family_title_hint"].casefold():
+            continue
+        file_candidates += 1
         groups = [g for g in entry["groups"]
                   if not q or q in g["title"].casefold() or
                   any(q in note.casefold() for note in g["notes"])]
         if q and not groups:
             continue
         matches.append((entry, groups))
-    if show_code and len(matches) != 1:
+    if show_code and (file_candidates != 1 or len(matches) != 1):
         raise ValueError("Ambiguous or absent native Wii file: select exact --revision / --variant; never silently choose a build")
     records = []
     selected = matches if show_code else matches[offset:offset + limit]
@@ -173,6 +193,8 @@ def query(entries, game_id=None, revision=None, variant=None, title=None,
             "source_revision_token": entry["source_revision_token"],
             "source_variant_token": entry["source_variant_token"],
             "native_file_stem": entry["native_file_stem"],
+            "game_family_title_hint": entry["game_family_title_hint"],
+            "source_compatibility_warning": entry["source_compatibility_warning"],
             "original_source_id": entry["source_id"],
             "original_source_path": entry["local_path"],
             "original_git_blob_sha1": entry["original_git_blob_sha1"],
@@ -190,7 +212,7 @@ def query(entries, game_id=None, revision=None, variant=None, title=None,
     return {
         "schema": SCHEMA,
         "query": {"game_id": game_id, "revision": revision, "variant": variant,
-                  "title": title, "source_id": source_id},
+                  "title": title, "game_title": game_title, "source_id": source_id},
         "file_matches": len(matches),
         "ambiguous_source_variants": len(matches) > 1,
         "returned": len(records),
@@ -215,6 +237,7 @@ def main():
     parser.add_argument("--variant", choices=["base", "mp1", "mp2", "mp3"])
     parser.add_argument("--source-id", choices=SOURCE_IDS)
     parser.add_argument("--title", help="Case-insensitive code-group title/notes search")
+    parser.add_argument("--game-title", help="Search one of the four original Wii source game-family labels")
     parser.add_argument("--limit", type=int, default=50)
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--group-index", type=int, help="One-based group in original file")
@@ -224,7 +247,7 @@ def main():
     try:
         output = query(verified_index(args.cache), args.game_id, args.revision,
                        args.variant, args.title, args.source_id, args.limit,
-                       args.offset, args.show_code, args.group_index)
+                       args.offset, args.show_code, args.group_index, args.game_title)
     except (ValueError, UnicodeError, OSError) as exc:
         parser.error(str(exc))
     print(json.dumps(output, indent=2, ensure_ascii=False))

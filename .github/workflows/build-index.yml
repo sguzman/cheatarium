@@ -251,6 +251,7 @@ jobs:
           python3 tools/test_query_gamecube_wiird_members.py
           python3 tools/test_hydrate_nintendo_bulk.py
           python3 tools/test_hydrate_wii_bulk.py
+          python3 tools/test_query_wii_gecko_local.py
           python3 tools/test_external_bulk.py
           python3 tools/test_build_external_distribution.py
           python3 tools/test_external_overlap.py

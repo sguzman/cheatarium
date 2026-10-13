@@ -214,3 +214,31 @@ empirically verified by Cheatarium.
 ### Wii Gecko native-code audit without source-body export
 
 After explicit private acquisition, `python3 tools/audit_wii_gecko_native.py --cache ~/.local/share/cheatarium/wii-originals` verifies the original files against pinned Git SHA-1s and outputs **aggregate code-group and hexadecimal instruction-line counts**. The committed [aggregate audit](../research/wii-gecko-native-syntax-audit-v1.json) contains **45 native Gecko group headers and 5,611 instruction-pair lines** across the 29 source files, with source-family counts. It exports no code text, per-game identifiers, fingerprints, or original cheat bytes; do not interpret its lines as separate executable cheat effects or auto-enable them.
+
+### Local Wii game/revision-specific Gecko group search
+
+Once the private original files have been acquired with
+`python3 tools/hydrate_wii_bulk.py --fetch`, all **45** source-native Wii
+Gecko groups are searchable **offline**, with the original author notes
+and source-version warnings preserved:
+
+- `python3 tools/query_wii_gecko_local.py --game-title "Metroid"` lists source-game families and native group names.
+- `python3 tools/query_wii_gecko_local.py --game-id RUUE01` lists two **distinct** City Folk variants (v0 and v1). Nothing is selected automatically.
+- `python3 tools/query_wii_gecko_local.py --game-id R3ME01` lists four separate Metroid Trilogy source variants (base/mp1/mp2/mp3).
+- `python3 tools/query_wii_gecko_local.py --game-id RUUE01 --revision 0 --show-code --group-index 1` deliberately displays the selected code text from the private **local source file**, retaining every Gecko native instruction pair. Use `--variant mp1` to disambiguate Prime-specific source files and `--title` to filter group titles/creator notes.
+
+The default JSON output includes **only metadata**, native group titles,
+original upstream URL and Git provenance, original source author notes,
+line counts and optional source-enabled flags. Original executable code
+appears only when `--show-code`, `--game-id`, and a one-based
+`--group-index` explicitly identify one original source file. If
+multiple revisions or variants remain, the code-view request fails
+rather than guessing a build. Even a title search cannot silently
+select an otherwise ambiguous revision.
+
+This lookup does **not** install, activate, copy, or export cheats to an
+emulator; it is read-only and it does not authenticate a user's actual
+game disc version or executable. The upstream source game-family title
+and version stem are hints, not independent ROM identity evidence.
+No third-party code bodies are added to public Git or CI artifacts;
+license grants and real hardware/emulator behavior remain unverified.

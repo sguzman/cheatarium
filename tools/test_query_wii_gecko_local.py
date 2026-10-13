@@ -9,7 +9,12 @@ def sample_entry(disc, rev=None, variant="base", source="wii-accf-gecko-native")
     stem = disc + (rev or "") + (("_" + variant) if variant != "base" else "")
     return {
         **source_identity("codes/" + stem + ".ini"),
-        "source_id": source, "local_path": "wii/" + source + "/codes/" + stem + ".ini",
+        "source_id": source, "game_family_title_hint": {
+            "wii-accf-gecko-native": "Animal Crossing: City Folk / Deluxe",
+            "wii-metroid-prime-gecko-native": "Metroid Prime / Trilogy",
+        }.get(source, "Unmapped synthetic family"),
+        "source_compatibility_warning": "Source file revision must be selected",
+        "local_path": "wii/" + source + "/codes/" + stem + ".ini",
         "upstream_original_url": "https://github.com/test/cheat/blob/" + "a"*40 + "/codes/" + stem + ".ini",
         "original_git_blob_sha1": "b"*40, "source_rights": "link_only_rights_review",
         "groups": parse_gecko(b"[Gecko]\n$Classic Controller\n*By Original Author\n"
@@ -57,6 +62,15 @@ class WiiLocalQueryTests(unittest.TestCase):
             query(entries, game_id="R3ME01", group_index=1, show_code=True)
         d = query(entries, game_id="R3ME01", variant="mp1", group_index=1, show_code=True)
         self.assertEqual(d["records"][0]["source_variant_token"], "mp1")
+
+    def test_group_title_cannot_silently_pick_incompatible_revision(self):
+        entries = [sample_entry("RUUE01", "v0"), sample_entry("RUUE01", "v1")]
+        entries[1]["groups"][0]["title"] = "Entirely Different Header"
+        with self.assertRaisesRegex(ValueError, "Ambiguous"):
+            query(entries, game_id="RUUE01", title="Classic", group_index=1, show_code=True)
+        by_family = query(entries, game_title="city folk")
+        self.assertEqual(by_family["file_matches"], 2)
+        self.assertIn("revision", by_family["records"][0]["source_compatibility_warning"])
 
     def test_title_search_and_pagination(self):
         entries = [sample_entry("R3ME01"), sample_entry("R3OE01"), sample_entry("R2JJAF")]

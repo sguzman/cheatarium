@@ -8,6 +8,9 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Explore
 
+- **Private Wii Gecko group lookup:** After local acquisition, `python3 tools/query_wii_gecko_local.py --game-title "Metroid"` searches source-native Wii Gecko cheat groups and authors; `--game-id RUUE01` displays available City Folk revisions without auto-selecting; `--game-id RUUE01 --revision 0 --show-code --group-index 1` deliberately shows one exact original group's native code from the verified private cache. [Full workflow](docs/CONSUMERS.md#local-wii-gamerevision-specific-gecko-group-search).
+
+
 - **Private Wii Gecko code acquisition:** `python3 tools/hydrate_wii_bulk.py --fetch` materializes **29** pinned original Wii `.ini`/`.txt` sources (City Folk/Deluxe, Metroid Prime/Trilogy, Other M, Taiko) into `~/.local/share/cheatarium/wii-originals` (or `$XDG_DATA_HOME`). `--check` verifies them offline against pinned original Git hashes. All exact region/revision filenames are preserved; third-party code bodies stay outside this public repository. [Details](docs/CONSUMERS.md#private-wii-original-code-acquisition).
 
 
