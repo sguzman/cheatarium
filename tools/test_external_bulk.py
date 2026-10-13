@@ -59,7 +59,7 @@ class TestExternalBulk(unittest.TestCase):
             "katsumaki-wiiu-xml": 9,
             "ucodes-wiiu-json": 4,
         })
-        self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
+        self.assertEqual(next(x for x in indexes if x["id"] == "duckstation-chtdb")["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
         self.assertEqual(sum(len(x["files"]) for x in indexes), 43425)
