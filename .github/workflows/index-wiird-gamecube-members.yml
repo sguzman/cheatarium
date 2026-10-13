@@ -1,0 +1,31 @@
+name: Index pinned Nintendo GameCube ZIP member labels
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/index-wiird-gamecube-members.yml"
+      - "tools/audit_wiird_member_catalog.py"
+      - "tools/test_audit_wiird_member_catalog.py"
+      - "sources/external-bulk/leumas-gamecube-wiird-zips.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - name: Verify safe ZIP name extraction without codes
+        run: python3 tools/test_audit_wiird_member_catalog.py
+      - name: Build pinned member filename inventory
+        run: python3 tools/audit_wiird_member_catalog.py --output gamecube-wiird-member-references.json
+      - name: Upload member filename references only
+        uses: actions/upload-artifact@v4
+        with:
+          name: cheatarium-gamecube-wiird-member-references
+          path: gamecube-wiird-member-references.json
+          retention-days: 30
