@@ -277,3 +277,24 @@ compatible build or redistribution grant. Regenerate with
 CI independently recomputes and checksum-manifests the report. Next acquisition
 step remains clearing authorship and inspecting compressed database/ZIP formats
 before importing eligible original code bodies.
+
+### Four audited bulk scouts now searchable by external consumers (2026-10-12)
+
+The previously pinned 691 original file occurrences / 487 byte-distinct
+Git blobs from Eignar17 (FinalBurn Alpha/Kawaks), Slade1972 (Sega CD MiSTer),
+SkillerCMP (original Xbox Xemu) and Riyoway (Nintendo database exports) are
+now packaged as nine rights-unresolved **external metadata-only partitions**.
+Classic FBA INIs (253) are kept separate from legacy arcade DAT (368);
+Nintendo's SQLite/JSONL mixed-platform exports (2) stay separate from native
+NES (1), Switch (1), 3DS (1) and Wii U (2) outputs. Sega CD ZIPs (51) and
+Xemu text files (12) retain original paths and formats. No contents of ZIPs,
+compiled databases or cheat text have been copied into preserved archives.
+
+There are now **43,409 link-only external references** in **48 source
+catalogs across 26 external platform labels**. The pre-onboarding whole-corpus
+byte-gap report continues comparing scout bytes against the original 42,718
+older external references and archived originals. This intentionally excludes
+the nine newly searchable source partitions from comparing with themselves,
+so the historical **487 previously untracked blobs** remain auditable.
+All nine partitions are checksum-verified, source-path searchable offline,
+and explicitly not gameplay-verified or cleared for cheat-body redistribution.
