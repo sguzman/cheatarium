@@ -1,0 +1,194 @@
+name: Inspect pinned bulk cheat source formats
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-bulk-source-formats.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Inspect ephemeral original archives without exporting cheat bodies
+        run: |
+          python3 - <<'PY'
+          import collections
+          import hashlib
+          import io
+          import json
+          import pathlib
+          import re
+          import sqlite3
+          import tempfile
+          import time
+          import urllib.parse
+          import urllib.request
+          import zipfile
+          
+          root = pathlib.Path(".")
+          scout = json.loads((root / "research/bulk-source-scout-v1.json").read_text("utf-8"))
+          sources = {s["id"]: s for s in scout["sources"]}
+          external = {
+              sid: json.loads((root / "sources/external-bulk" / (sid + ".json")).read_text("utf-8"))
+              for sid in ("libretro-mame2010-cheat-archive", "saramagrean-psp-cwcheat")
+          }
+          cache = {}
+          
+          def original_bytes(source, row):
+              path, sha, length = row
+              key = (source["repository"], source["snapshot_commit"], sha)
+              if key in cache:
+                  return cache[key]
+              repo = source["repository"].removeprefix("https://github.com/")
+              url = ("https://raw.githubusercontent.com/" + repo + "/" +
+                     source["snapshot_commit"] + "/" + urllib.parse.quote(path, safe="/"))
+              request = urllib.request.Request(url, headers={
+                  "User-Agent": "Cheatarium-pinned-ephemeral-format-audit",
+                  "Accept": "application/octet-stream",
+              })
+              for attempt in range(3):
+                  try:
+                      with urllib.request.urlopen(request, timeout=90) as response:
+                          body = response.read(length + 1)
+                      break
+                  except Exception:
+                      if attempt == 2:
+                          raise
+                      time.sleep(2 ** attempt)
+              if len(body) != length:
+                  raise ValueError("Upstream source size differs from pinned Git tree: " + path)
+              actual = hashlib.sha1(b"blob " + str(length).encode() + b"\0" + body).hexdigest()
+              if actual != sha:
+                  raise ValueError("Source original Git blob SHA-1 mismatch: " + path)
+              cache[key] = body
+              return body
+          
+          def zip_inventory(source):
+              occurrences = len(source["files"])
+              distinct = {}
+              unique_hist = collections.Counter()
+              occurrences_hist = collections.Counter()
+              member_occurrences = 0
+              for row in source["files"]:
+                  sha = row[1]
+                  if sha not in distinct:
+                      body = original_bytes(source, row)
+                      with zipfile.ZipFile(io.BytesIO(body)) as z:
+                          info = [m for m in z.infolist() if not m.is_dir()]
+                          if len(info) > 50000:
+                              raise ValueError("Unreasonably large ZIP member directory")
+                          if sum(m.file_size for m in info) > 500000000:
+                              raise ValueError("ZIP declares too many uncompressed bytes")
+                          suffixes = collections.Counter(
+                              pathlib.PurePosixPath(m.filename.replace("\\", "/")).suffix.lower() or "<none>"
+                              for m in info
+                          )
+                          if any(
+                              m.filename.startswith("/") or
+                              ".." in pathlib.PurePosixPath(m.filename.replace("\\", "/")).parts
+                              for m in info
+                          ):
+                              raise ValueError("Unsafe ZIP member name")
+                          distinct[sha] = {"members": len(info), "extensions": suffixes}
+                          unique_hist.update(suffixes)
+                  item = distinct[sha]
+                  member_occurrences += item["members"]
+                  occurrences_hist.update(item["extensions"])
+              return {
+                  "original_zip_file_occurrences": occurrences,
+                  "distinct_zip_git_blobs": len(distinct),
+                  "member_file_occurrences_including_cloned_zips": member_occurrences,
+                  "member_files_across_distinct_zip_blobs": sum(unique_hist.values()),
+                  "member_suffix_counts_including_clones": dict(sorted(occurrences_hist.items())),
+                  "member_suffix_counts_across_distinct_zip_blobs": dict(sorted(unique_hist.items())),
+                  "contents_and_cheat_codes_exported": False,
+              }
+          
+          segacd = zip_inventory(sources["slade1972-segacd"])
+          mame = zip_inventory(external["libretro-mame2010-cheat-archive"])
+          
+          sqlite_source = sources["riyoway-nintendo"]
+          dbrow = next(r for r in sqlite_source["files"] if r[0] == "cheatdb.db")
+          body = original_bytes(sqlite_source, dbrow)
+          with tempfile.TemporaryDirectory(prefix="cheatarium-readonly-format-") as folder:
+              dest = pathlib.Path(folder) / "pinned-cheatdb.db"
+              dest.write_bytes(body)
+              with sqlite3.connect("file:" + dest.as_posix() + "?mode=ro&immutable=1",
+                                   uri=True) as connection:
+                  tables = [name for (name,) in connection.execute(
+                      "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
+                  ) if re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", name)
+                            and not name.startswith("sqlite_")]
+                  counts = {}
+                  for name in tables:
+                      if name in {"platforms", "games", "cheats", "game_aliases",
+                                  "game_identifiers", "cheat_aliases", "cheat_authors"}:
+                          counts[name] = connection.execute(
+                              'SELECT COUNT(*) FROM "' + name + '"'
+                          ).fetchone()[0]
+                  sqlite_report = {
+                      "original_git_blob_sha1": dbrow[1],
+                      "original_source_bytes": len(body),
+                      "selected_table_row_counts": counts,
+                      "table_names_only": tables,
+                      "individual_records_exported": False,
+                  }
+          
+          psp_source = external["saramagrean-psp-cwcheat"]
+          psp_data = original_bytes(psp_source, psp_source["files"][0])
+          lines = psp_data.decode("utf-8", "replace").splitlines()
+          psp = {
+              "source_bytes": len(psp_data),
+              "declared_game_serial_lines": sum(x.startswith("_S ") for x in lines),
+              "declared_game_name_lines": sum(x.startswith("_G ") for x in lines),
+              "cheat_group_header_lines": sum(bool(re.match(r"^_C[01]\s", x)) for x in lines),
+              "code_command_lines": sum(x.startswith("_L ") for x in lines),
+              "code_text_exported": False,
+          }
+          
+          xemu_source = sources["skillercmp-xemu"]
+          xemu_counts = collections.Counter()
+          for row in xemu_source["files"]:
+              text = original_bytes(xemu_source, row).decode("utf-8", "replace")
+              lines = text.splitlines()
+              xemu_counts["original_text_files"] += 1
+              xemu_counts["declared_game_name_lines"] += sum(x.startswith("^3 = NAME:") for x in lines)
+              xemu_counts["code_label_lines"] += sum(x.startswith("+") for x in lines)
+              xemu_counts["native_code_instruction_lines"] += sum(x.startswith("$") for x in lines)
+              xemu_counts["credit_attribution_lines"] += sum(x.startswith("%Credits:") for x in lines)
+          
+          report = {
+              "schema_version": 1,
+              "format": "cheatarium-ephemeral-bulk-original-format-audit-v1",
+              "method": "ephemeral-original-byte-fetch-with-pinned-git-blob-verification",
+              "rights_to_redistribute_asserted": False,
+              "contents_redistributed_or_committed": False,
+              "gameplay_compatibility_verified": False,
+              "cheat_effects_verified": False,
+              "counts_are_source_syntax_not_verified_unique_games": True,
+              "segacd_mister_zip": segacd,
+              "mame2010_cheat_zip": mame,
+              "nintendo_sqlite": sqlite_report,
+              "psp_cwcheat_db": psp,
+              "original_xbox_cmp_syntax": dict(sorted(xemu_counts.items())),
+          }
+          pathlib.Path("bulk-format-summary.json").write_text(
+              json.dumps(report, indent=2, sort_keys=True) + "\n", "utf-8"
+          )
+          print("BEGIN_BULK_FORMAT_SUMMARY")
+          print(json.dumps(report, indent=2, sort_keys=True))
+          print("END_BULK_FORMAT_SUMMARY")
+          PY
+      - name: Publish aggregate counts only
+        uses: actions/upload-artifact@v4
+        with:
+          name: cheatarium-pinned-bulk-format-summary
+          path: bulk-format-summary.json
+          retention-days: 30
