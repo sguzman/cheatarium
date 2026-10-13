@@ -32,7 +32,7 @@ class TestBulkSourceScout(unittest.TestCase):
             verify(bad)
 
     def test_rejects_corruption_and_executable_paths(self):
-        for value in ("../escape.dat", "cheats/trainer.exe", "cheats/fake.dat"):
+        for value in ("../escape.dat", "cheats/trainer.exe", "cheats/invalid.ini"):
             self.assertFalse(selected("eignar17-arcade", value))
         for index, invalid in ((0, "../escape.dat"), (1, "wrong-sha"), (2, -1)):
             bad = copy.deepcopy(self.doc)
