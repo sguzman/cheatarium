@@ -7,16 +7,16 @@
   "unique_games_or_effects_established": false,
   "gameplay_compatibility_verified": false,
   "filename_kind_is_semantic_cheat_verification": false,
-  "source_file_occurrences": 42718,
-  "source_catalogs": 39,
-  "platforms_count": 21,
-  "all_external_distinct_blob_sha1": 36549,
+  "source_file_occurrences": 43409,
+  "source_catalogs": 48,
+  "platforms_count": 26,
+  "all_external_distinct_blob_sha1": 37036,
   "distinct_blobs_matching_archived_bytes": 56,
-  "distinct_blobs_absent_from_archive": 36493,
-  "distinct_cheat_labeled_blobs_absent_from_archive": 23564,
+  "distinct_blobs_absent_from_archive": 36980,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 24051,
   "distinct_patch_labeled_blobs_absent_from_archive": 13207,
   "blobs_labeled_both_cheat_and_patch": 278,
-  "exclusive_unarchived_blobs_in_one_source": 33708,
+  "exclusive_unarchived_blobs_in_one_source": 34195,
   "shared_unarchived_blobs_in_multiple_sources": 2785,
   "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
   "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
@@ -394,6 +394,37 @@
       ]
     },
     {
+      "source_id": "eignar17-arcade-dat",
+      "platform": "arcade-kawaks",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 368,
+      "cheat_labeled_occurrences": 368,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 368,
+      "distinct_blob_sha1": 238,
+      "distinct_unarchived_blob_sha1": 238,
+      "distinct_unarchived_cheat_labeled_blobs": 238,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 238,
+      "exclusive_unarchived_cheat_labeled_blobs": 238,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheats/1941.dat",
+          "git_blob_sha": "cd73b5b8d10dae867c42a66de917c529790debe5"
+        },
+        {
+          "path": "cheats/1944.dat",
+          "git_blob_sha": "18fc4fbe4be9c729407a02ba034a04b9f1941dff"
+        },
+        {
+          "path": "cheats/19xx.dat",
+          "git_blob_sha": "8d57d3af41eb199b109ddbeab2f2e72c2b43652f"
+        }
+      ]
+    },
+    {
       "source_id": "ademola-3ds-native",
       "platform": "3ds",
       "rights_status": "link_only_rights_review",
@@ -421,6 +452,37 @@
         {
           "path": "Animal Crossing - Happy Home Designer (USA)/000400000014F100.txt",
           "git_blob_sha": "fb62c190ad30a0599180df8f9acf6aec2ad3420b"
+        }
+      ]
+    },
+    {
+      "source_id": "eignar17-fba-ini",
+      "platform": "arcade-fba",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 253,
+      "cheat_labeled_occurrences": 253,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 253,
+      "distinct_blob_sha1": 182,
+      "distinct_unarchived_blob_sha1": 182,
+      "distinct_unarchived_cheat_labeled_blobs": 182,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 182,
+      "exclusive_unarchived_cheat_labeled_blobs": 182,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Final Burn Alpha Cheat Archive/1941.ini",
+          "git_blob_sha": "c0bb77e03418cc9481d662a938760da9358edcfc"
+        },
+        {
+          "path": "Final Burn Alpha Cheat Archive/1941j.ini",
+          "git_blob_sha": "c24217d5443a66ee6d94bbf2cda3798bf267ca36"
+        },
+        {
+          "path": "Final Burn Alpha Cheat Archive/1944.ini",
+          "git_blob_sha": "28ff11b3d76888db8b45a5c2a854bc6cc3550d4b"
         }
       ]
     },
@@ -514,6 +576,37 @@
         {
           "path": "SLES-53065_AC3C1147.pnach",
           "git_blob_sha": "76f61b5e37adff9e7370356ac76e1d9bbeb846f1"
+        }
+      ]
+    },
+    {
+      "source_id": "slade1972-segacd-zip",
+      "platform": "segacd",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 51,
+      "cheat_labeled_occurrences": 51,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 51,
+      "distinct_blob_sha1": 48,
+      "distinct_unarchived_blob_sha1": 48,
+      "distinct_unarchived_cheat_labeled_blobs": 48,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 48,
+      "exclusive_unarchived_cheat_labeled_blobs": 48,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Cheats/3 Ninjas Kick Back (USA).zip",
+          "git_blob_sha": "3a8b28519040e5fed29b0366989de9ea255874c6"
+        },
+        {
+          "path": "Cheats/A-X-101 (USA) (RE).zip",
+          "git_blob_sha": "8321266e422da8cd413fe308bd4047fe70da5156"
+        },
+        {
+          "path": "Cheats/AH3 - Thunderstrike (USA).zip",
+          "git_blob_sha": "a8c080c6c27f850ab9285c080197e746c1a8414e"
         }
       ]
     },
@@ -638,6 +731,37 @@
         {
           "path": "Gambatte/Street Fighter II (USA, Europe) (Rev A).cht",
           "git_blob_sha": "0de28d51687903373420802343c673e6f25ce88f"
+        }
+      ]
+    },
+    {
+      "source_id": "skillercmp-xemu-text",
+      "platform": "xbox",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 12,
+      "cheat_labeled_occurrences": 12,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 12,
+      "distinct_blob_sha1": 12,
+      "distinct_unarchived_blob_sha1": 12,
+      "distinct_unarchived_cheat_labeled_blobs": 12,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 12,
+      "exclusive_unarchived_cheat_labeled_blobs": 12,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Cheats/EA0049-17BDE1940BA65905.txt",
+          "git_blob_sha": "1c2b728decbfca6cc93fe160b0d4415160b8a9e3"
+        },
+        {
+          "path": "Cheats/EA0049-61BB0C206A391C8C.txt",
+          "git_blob_sha": "e385ed807e79aaa21df9381e20e7f3a951973329"
+        },
+        {
+          "path": "Cheats/EA009E-53780688DE742E83.txt",
+          "git_blob_sha": "b92434456793e13db3c0329d4f2253d427528a67"
         }
       ]
     },
@@ -851,6 +975,60 @@
       ]
     },
     {
+      "source_id": "riyoway-nintendo-multiformat",
+      "platform": "multi-nintendo",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 2,
+      "cheat_labeled_occurrences": 2,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 2,
+      "distinct_blob_sha1": 2,
+      "distinct_unarchived_blob_sha1": 2,
+      "distinct_unarchived_cheat_labeled_blobs": 2,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 2,
+      "exclusive_unarchived_cheat_labeled_blobs": 2,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "cheatdb.db",
+          "git_blob_sha": "623d27561cc7b1f437f3e7220bc69cf2ea51cd19"
+        },
+        {
+          "path": "exports/JSON/Nintendo/all.jsonl",
+          "git_blob_sha": "ec8fd751b1fa4a5e70a1e0f4cc695b01a57e1020"
+        }
+      ]
+    },
+    {
+      "source_id": "riyoway-wiiu-export",
+      "platform": "wii-u",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 2,
+      "cheat_labeled_occurrences": 2,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 2,
+      "distinct_blob_sha1": 2,
+      "distinct_unarchived_blob_sha1": 2,
+      "distinct_unarchived_cheat_labeled_blobs": 2,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 2,
+      "exclusive_unarchived_cheat_labeled_blobs": 2,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "exports/JGeckoU/AUMJ88.xml",
+          "git_blob_sha": "7f97b1875d44e1564d75f209ef76666672c83a92"
+        },
+        {
+          "path": "exports/JSON/Nintendo/wiiu.json",
+          "git_blob_sha": "cba4bfd671f36b1c61fef61bcf74ee1f0644b172"
+        }
+      ]
+    },
+    {
       "source_id": "apelfactory-ppsspp-cheatdb",
       "platform": "psp",
       "rights_status": "link_only_rights_review",
@@ -989,6 +1167,75 @@
       ]
     },
     {
+      "source_id": "riyoway-3ds-json",
+      "platform": "3ds",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "exports/JSON/Nintendo/3ds.json",
+          "git_blob_sha": "a832aecc46fa778a9e0e65349682a3a5720cea94"
+        }
+      ]
+    },
+    {
+      "source_id": "riyoway-nes-json",
+      "platform": "nes",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "exports/JSON/Nintendo/nes.json",
+          "git_blob_sha": "53af2ce0cff56425c6b9349f23ef9728f8bc78b8"
+        }
+      ]
+    },
+    {
+      "source_id": "riyoway-switch-json",
+      "platform": "switch",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 1,
+      "cheat_labeled_occurrences": 1,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 1,
+      "distinct_blob_sha1": 1,
+      "distinct_unarchived_blob_sha1": 1,
+      "distinct_unarchived_cheat_labeled_blobs": 1,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 1,
+      "exclusive_unarchived_cheat_labeled_blobs": 1,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "exports/JSON/Nintendo/switch.json",
+          "git_blob_sha": "6391e5f0294c2d8805e03f08b83db9a463a1ed2e"
+        }
+      ]
+    },
+    {
       "source_id": "saramagrean-psp-cwcheat",
       "platform": "psp",
       "rights_status": "link_only_rights_review",
@@ -1105,11 +1352,11 @@
   "platforms": [
     {
       "platform": "switch",
-      "source_catalogs": 5,
-      "file_occurrences": 17275,
-      "distinct_source_blobs": 11718,
-      "distinct_blobs_absent_from_archive": 11716,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 10383,
+      "source_catalogs": 6,
+      "file_occurrences": 17276,
+      "distinct_source_blobs": 11719,
+      "distinct_blobs_absent_from_archive": 11717,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 10384,
       "distinct_patch_labeled_blobs_absent_from_archive": 1589
     },
     {
@@ -1132,11 +1379,11 @@
     },
     {
       "platform": "3ds",
-      "source_catalogs": 3,
-      "file_occurrences": 938,
-      "distinct_source_blobs": 868,
-      "distinct_blobs_absent_from_archive": 868,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 868,
+      "source_catalogs": 4,
+      "file_occurrences": 939,
+      "distinct_source_blobs": 869,
+      "distinct_blobs_absent_from_archive": 869,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 869,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
@@ -1167,12 +1414,30 @@
       "distinct_patch_labeled_blobs_absent_from_archive": 1
     },
     {
-      "platform": "arcade-fba",
+      "platform": "arcade-kawaks",
       "source_catalogs": 1,
-      "file_occurrences": 98,
-      "distinct_source_blobs": 45,
-      "distinct_blobs_absent_from_archive": 45,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 45,
+      "file_occurrences": 368,
+      "distinct_source_blobs": 238,
+      "distinct_blobs_absent_from_archive": 238,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 238,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "arcade-fba",
+      "source_catalogs": 2,
+      "file_occurrences": 351,
+      "distinct_source_blobs": 227,
+      "distinct_blobs_absent_from_archive": 227,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 227,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "segacd",
+      "source_catalogs": 1,
+      "file_occurrences": 51,
+      "distinct_source_blobs": 48,
+      "distinct_blobs_absent_from_archive": 48,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 48,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
@@ -1212,6 +1477,15 @@
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
+      "platform": "xbox",
+      "source_catalogs": 1,
+      "file_occurrences": 12,
+      "distinct_source_blobs": 12,
+      "distinct_blobs_absent_from_archive": 12,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 12,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
       "platform": "arcade-naomi",
       "source_catalogs": 1,
       "file_occurrences": 9,
@@ -1222,11 +1496,11 @@
     },
     {
       "platform": "nes",
-      "source_catalogs": 1,
-      "file_occurrences": 8,
-      "distinct_source_blobs": 8,
-      "distinct_blobs_absent_from_archive": 8,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 8,
+      "source_catalogs": 2,
+      "file_occurrences": 9,
+      "distinct_source_blobs": 9,
+      "distinct_blobs_absent_from_archive": 9,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 9,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
@@ -1248,8 +1522,26 @@
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
+      "platform": "multi-nintendo",
+      "source_catalogs": 1,
+      "file_occurrences": 2,
+      "distinct_source_blobs": 2,
+      "distinct_blobs_absent_from_archive": 2,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 2,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
       "platform": "psp",
       "source_catalogs": 2,
+      "file_occurrences": 2,
+      "distinct_source_blobs": 2,
+      "distinct_blobs_absent_from_archive": 2,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 2,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "wii-u",
+      "source_catalogs": 1,
       "file_occurrences": 2,
       "distinct_source_blobs": 2,
       "distinct_blobs_absent_from_archive": 2,

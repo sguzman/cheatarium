@@ -6,12 +6,12 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 42718,
-  "source_catalogs": 39,
-  "external_platforms": 21,
-  "distinct_git_blobs": 36549,
-  "repeated_blob_excess_occurrences": 6169,
-  "references_in_repeated_blob_groups": 9604,
+  "reference_files": 43409,
+  "source_catalogs": 48,
+  "external_platforms": 26,
+  "distinct_git_blobs": 37036,
+  "repeated_blob_excess_occurrences": 6373,
+  "references_in_repeated_blob_groups": 9904,
   "cross_source_shared_blob_groups": 2785,
   "cross_source_shared_references": 8181,
   "sources": [
@@ -451,26 +451,127 @@
       "source_declared_file_types": {
         "cheat": 22
       }
+    },
+    {
+      "id": "eignar17-fba-ini",
+      "platform": "arcade-fba",
+      "reference_files": 253,
+      "distinct_git_blobs": 182,
+      "repeated_blob_excess_occurrences_within_source": 71,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 253
+      }
+    },
+    {
+      "id": "eignar17-arcade-dat",
+      "platform": "arcade-kawaks",
+      "reference_files": 368,
+      "distinct_git_blobs": 238,
+      "repeated_blob_excess_occurrences_within_source": 130,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 368
+      }
+    },
+    {
+      "id": "riyoway-nintendo-multiformat",
+      "platform": "multi-nintendo",
+      "reference_files": 2,
+      "distinct_git_blobs": 2,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 2
+      }
+    },
+    {
+      "id": "riyoway-3ds-json",
+      "platform": "3ds",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
+      }
+    },
+    {
+      "id": "riyoway-nes-json",
+      "platform": "nes",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
+      }
+    },
+    {
+      "id": "riyoway-switch-json",
+      "platform": "switch",
+      "reference_files": 1,
+      "distinct_git_blobs": 1,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 1
+      }
+    },
+    {
+      "id": "riyoway-wiiu-export",
+      "platform": "wii-u",
+      "reference_files": 2,
+      "distinct_git_blobs": 2,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 2
+      }
+    },
+    {
+      "id": "slade1972-segacd-zip",
+      "platform": "segacd",
+      "reference_files": 51,
+      "distinct_git_blobs": 48,
+      "repeated_blob_excess_occurrences_within_source": 3,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 51
+      }
+    },
+    {
+      "id": "skillercmp-xemu-text",
+      "platform": "xbox",
+      "reference_files": 12,
+      "distinct_git_blobs": 12,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 12
+      }
     }
   ],
   "platforms": [
     {
       "platform": "3ds",
-      "reference_files": 938,
-      "distinct_git_blobs": 868,
+      "reference_files": 939,
+      "distinct_git_blobs": 869,
       "repeated_blob_excess_occurrences": 70,
       "source_catalogs": [
         "ademola-3ds-native",
         "journeyover-3ds-ctrpf",
+        "riyoway-3ds-json",
         "rogamer97-asm-3ds"
       ]
     },
     {
       "platform": "arcade-fba",
-      "reference_files": 98,
-      "distinct_git_blobs": 45,
-      "repeated_blob_excess_occurrences": 53,
+      "reference_files": 351,
+      "distinct_git_blobs": 227,
+      "repeated_blob_excess_occurrences": 124,
       "source_catalogs": [
+        "eignar17-fba-ini",
         "smoker1-fba-official-ini"
       ]
     },
@@ -481,6 +582,15 @@
       "repeated_blob_excess_occurrences": 3,
       "source_catalogs": [
         "smoker1-legacy-fbneo"
+      ]
+    },
+    {
+      "platform": "arcade-kawaks",
+      "reference_files": 368,
+      "distinct_git_blobs": 238,
+      "repeated_blob_excess_occurrences": 130,
+      "source_catalogs": [
+        "eignar17-arcade-dat"
       ]
     },
     {
@@ -542,6 +652,15 @@
       ]
     },
     {
+      "platform": "multi-nintendo",
+      "reference_files": 2,
+      "distinct_git_blobs": 2,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "riyoway-nintendo-multiformat"
+      ]
+    },
+    {
       "platform": "multi-retroarch",
       "reference_files": 22,
       "distinct_git_blobs": 22,
@@ -561,11 +680,12 @@
     },
     {
       "platform": "nes",
-      "reference_files": 8,
-      "distinct_git_blobs": 8,
+      "reference_files": 9,
+      "distinct_git_blobs": 9,
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
-        "gcmcom-legacy-nes"
+        "gcmcom-legacy-nes",
+        "riyoway-nes-json"
       ]
     },
     {
@@ -612,6 +732,15 @@
       ]
     },
     {
+      "platform": "segacd",
+      "reference_files": 51,
+      "distinct_git_blobs": 48,
+      "repeated_blob_excess_occurrences": 3,
+      "source_catalogs": [
+        "slade1972-segacd-zip"
+      ]
+    },
+    {
       "platform": "snes",
       "reference_files": 1,
       "distinct_git_blobs": 1,
@@ -622,13 +751,14 @@
     },
     {
       "platform": "switch",
-      "reference_files": 17275,
-      "distinct_git_blobs": 11718,
+      "reference_files": 17276,
+      "distinct_git_blobs": 11719,
       "repeated_blob_excess_occurrences": 5557,
       "source_catalogs": [
         "ademola-switch-native",
         "hamlet-switch-cheatdb",
         "ibnux-switch-cheatdb",
+        "riyoway-switch-json",
         "rogamer97-asm-switch",
         "sthetix-switch-mirror"
       ]
@@ -650,6 +780,24 @@
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
         "rogamer97-asm-wii"
+      ]
+    },
+    {
+      "platform": "wii-u",
+      "reference_files": 2,
+      "distinct_git_blobs": 2,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "riyoway-wiiu-export"
+      ]
+    },
+    {
+      "platform": "xbox",
+      "reference_files": 12,
+      "distinct_git_blobs": 12,
+      "repeated_blob_excess_occurrences": 0,
+      "source_catalogs": [
+        "skillercmp-xemu-text"
       ]
     },
     {

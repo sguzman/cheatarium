@@ -60,6 +60,18 @@
       ],
       "source_titles_also_in_archived_sharkive": 620,
       "source_titles_missing_from_archived_sharkive": 8
+    },
+    {
+      "distinct_native_title_id_labels": 0,
+      "link_only_source_files": 1,
+      "native_title_id_file_occurrences": 0,
+      "native_title_id_repeat_file_occurrences": 0,
+      "non_native_markdown_or_asm_documents": 1,
+      "revision": "17938073e898b2774e09cce2153baabfeb07aa10",
+      "source_id": "riyoway-3ds-json",
+      "source_only_title_id_samples": [],
+      "source_titles_also_in_archived_sharkive": 0,
+      "source_titles_missing_from_archived_sharkive": 0
     }
   ],
   "format": "cheatarium-3ds-native-title-id-coverage-v1",
@@ -67,7 +79,7 @@
   "limitations": [
     "Title ID filename labels are supplied by different upstream authors, not confirmed ROM hashes.",
     "Two different file paths for the same ID are not proof of duplicate executable cheat effects.",
-    "Many non-native source documents lack exact title-ID filenames and stay outside ID coverage.",
+    "Many non-native source documents, including consolidated JSON exports, lack exact title-ID filenames and stay outside ID coverage.",
     "No rights-blocked cheat bodies are copied or independently verified."
   ],
   "region_build_effect_equivalence_verified": false,
@@ -78,10 +90,10 @@
     "archived_title_id_labels_absent_from_external": 19,
     "combined_distinct_3ds_title_id_labels": 752,
     "external_distinct_title_id_labels": 733,
-    "external_link_only_original_file_occurrences": 938,
+    "external_link_only_original_file_occurrences": 939,
     "external_native_title_id_file_occurrences": 885,
     "external_title_id_labels_absent_from_sharkive": 108,
-    "non_native_3ds_code_documents": 53,
+    "non_native_3ds_code_documents": 54,
     "title_ids_in_both_archive_and_external": 625
   }
 }

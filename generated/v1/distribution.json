@@ -3,7 +3,7 @@
   "format": "cheatarium-distribution-v1",
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
-  "external_reference_files": 42718,
+  "external_reference_files": 43409,
   "bulk_scout_source_file_occurrences": 691,
   "bulk_scout_distinct_git_blobs": 487,
   "bulk_scout_blobs_absent_from_known_corpora": 487,
@@ -15,12 +15,12 @@
   "external_ps2_native_pnach_files": 14452,
   "external_ps2_recognized_crc_filename_occurrences": 11033,
   "external_ps2_crc_labels_shared_between_sources": 3353,
-  "external_distinct_git_blobs": 36549,
+  "external_distinct_git_blobs": 37036,
   "external_references_matching_archived_bytes": 73,
   "external_distinct_git_blobs_matching_archive": 56,
-  "external_distinct_git_blobs_without_archive_byte_match": 36493,
-  "external_repeated_blob_excess_occurrences": 6169,
-  "external_reference_platforms": 21,
+  "external_distinct_git_blobs_without_archive_byte_match": 36980,
+  "external_repeated_blob_excess_occurrences": 6373,
+  "external_reference_platforms": 26,
   "source_files": 57351,
   "game_candidate_groups": 47502,
   "repeated_raw_code_groups": 7078,
@@ -111,18 +111,23 @@
     },
     {
       "path": "external/3ds.json.gz",
-      "sha256": "e30560918290501969f97dded697259b9678e9bac0c1dc9c1d623eb5e45f9b58",
-      "size_bytes": 57734
+      "sha256": "c65df6bde70c8b162fcd3cff5e0b4a485f5c0fdc3ef8538f00f1283391d90cd3",
+      "size_bytes": 57872
     },
     {
       "path": "external/arcade-fba.json.gz",
-      "sha256": "6c4c5d38cb1e4e4ec3fd2e93afddb6768544d5b734fc8509a168296184c7d33e",
-      "size_bytes": 2667
+      "sha256": "06c6890ae0edf7b9c07b47af3a38e173ca7a4ae0a4a3441aae622b6abc3e8e80",
+      "size_bytes": 10815
     },
     {
       "path": "external/arcade-fbneo.json.gz",
       "sha256": "eb7777d5f6687a8a2ecab015ae26130d41045ace784e87bcf87cc198c1b8e52e",
       "size_bytes": 1617
+    },
+    {
+      "path": "external/arcade-kawaks.json.gz",
+      "sha256": "4d1fefb4563d9e09a7ab39ae2249981eaabefc215b703fb668614810d4682548",
+      "size_bytes": 11643
     },
     {
       "path": "external/arcade-mame.json.gz",
@@ -136,8 +141,8 @@
     },
     {
       "path": "external/catalog.json",
-      "sha256": "f7361017fc28473c6263417dc8e537b62dda766afb350b2fe3a31ed0e6871a52",
-      "size_bytes": 3126
+      "sha256": "3809cbfae5ac4621e4d35eb3025172217502f65356c2cd4eddc9894d899f186c",
+      "size_bytes": 3810
     },
     {
       "path": "external/dreamcast.json.gz",
@@ -160,6 +165,11 @@
       "size_bytes": 550
     },
     {
+      "path": "external/multi-nintendo.json.gz",
+      "sha256": "33fb33022f72104f7a5de307f903729a15db151d615c601c1582b779d75e0f03",
+      "size_bytes": 434
+    },
+    {
       "path": "external/multi-retroarch.json.gz",
       "sha256": "b726eccfbe86214aabaaed872d444c4ba0f6891f4eb6344d14082b2996557877",
       "size_bytes": 1961
@@ -171,8 +181,8 @@
     },
     {
       "path": "external/nes.json.gz",
-      "sha256": "8a70c68bf2e733a94f2d79e8b582f6567e676cbbefffc462ea128d13af0e48d1",
-      "size_bytes": 881
+      "sha256": "4186e749ca310afcb12b8166b91beea37c0d031730cbe73739fe611dbaa802e5",
+      "size_bytes": 1007
     },
     {
       "path": "external/ps1.json.gz",
@@ -195,19 +205,29 @@
       "size_bytes": 472
     },
     {
+      "path": "external/segacd.json.gz",
+      "sha256": "dba638130574e4a1a24e11b3e3d260261f438b0c06d1a1b4fab6857f5d0f0930",
+      "size_bytes": 3122
+    },
+    {
       "path": "external/snes.json.gz",
       "sha256": "3e2bee4d2d36357d1f13dd6fbceb437fb8d74f0d822d9ea4371a7d21923ce129",
       "size_bytes": 449
     },
     {
       "path": "external/switch.json.gz",
-      "sha256": "1c458e92dbceb723673197f1bedc76a1cb1eee12d3122677c2c0ed457b273968",
-      "size_bytes": 808649
+      "sha256": "9c298de87816b2065b5416b55b2dc93ff29ad235a69749d59ca1f2b09b3fa794",
+      "size_bytes": 808775
     },
     {
       "path": "external/vita.json.gz",
       "sha256": "410fe2a453deedd8a2946e68e96363385d4ce1890695a70deba3cb3a8d5eaacc",
       "size_bytes": 30520
+    },
+    {
+      "path": "external/wii-u.json.gz",
+      "sha256": "ede1f09f5ed81e82f96524520d27eddf2fd66047389a2168eea50499de7f7294",
+      "size_bytes": 438
     },
     {
       "path": "external/wii.json.gz",
@@ -218,6 +238,11 @@
       "path": "external/xbox-360.json.gz",
       "sha256": "bd0db1f7a7a3931b04c26f2bee28b4604df0fad865e61b4849a4e09503cfc567",
       "size_bytes": 29359
+    },
+    {
+      "path": "external/xbox.json.gz",
+      "sha256": "86c2e12354dbdfde162efeda7388bde917f2bae22e70783e73803034d5711355",
+      "size_bytes": 1012
     },
     {
       "path": "fds.json.gz",
@@ -961,18 +986,18 @@
     },
     {
       "path": "reports/3ds-external-title-id-coverage.json",
-      "sha256": "10cbbabb60fc08528f556c6bddca3f4fe3e20f58794c1e59b09313df239de3cd",
-      "size_bytes": 3328
+      "sha256": "240e433c4c65630ef56c8bccc88679f14cc2e3f15fe040c75193ef58ac2f7329",
+      "size_bytes": 3855
     },
     {
       "path": "reports/acquisition-priorities.json",
-      "sha256": "017ca20096a7c82133fc731b6e960ae9f58fdb339776dc82f2c5fdd03e310a58",
-      "size_bytes": 50482
+      "sha256": "952e55b2abf29b373f50fdbc9cd34e99aad4ea2e2d8a07b8248dd1c8a65afc20",
+      "size_bytes": 61454
     },
     {
       "path": "reports/acquisition-rights-review.json",
-      "sha256": "d6192aaccc23f4eb942b271451962b642a59d711b1af7a7395b11bacc4c96590",
-      "size_bytes": 14902
+      "sha256": "312781cdc0df3f14552e805c66252a1b473fc594543334944bb64fb3ac1b9dcd",
+      "size_bytes": 15147
     },
     {
       "path": "reports/bulk-scout-exact-byte-gaps.json",
@@ -981,8 +1006,8 @@
     },
     {
       "path": "reports/external-overlap.json",
-      "sha256": "9f88e9e746cc030bed5a26db173f89305e3fc0a16c1b4ffe693576efab28a1a5",
-      "size_bytes": 2430825
+      "sha256": "27993d3e9d20dd72e54555b16e7fd9a36addd5c83be7bae73eb035860a0b9b70",
+      "size_bytes": 2434912
     },
     {
       "path": "reports/external-ps2-crc-labels.json",
@@ -991,8 +1016,8 @@
     },
     {
       "path": "reports/external-vs-archive-blobs.json",
-      "sha256": "55152398d9d84327f0158a023085e3bcf4d372eadc35519b52c6a99ed830d2ab",
-      "size_bytes": 25849
+      "sha256": "86f1420b072fbab00c1925a0fb33b480ffd8d2a874ee98bd35e0e4a0d757533d",
+      "size_bytes": 30846
     },
     {
       "path": "reports/snes-codec-coverage.json",
@@ -1006,8 +1031,8 @@
     },
     {
       "path": "reports/switch-external-title-build-coverage.json",
-      "sha256": "74ad7da04dc930603ae064d9e9f23b0d585328afe5187d3aa1b70d9a1f208863",
-      "size_bytes": 8110
+      "sha256": "d4667c1b40c997b689164ace9680bf39ffa94da59ac23c5a4771c15c764150bd",
+      "size_bytes": 8867
     },
     {
       "path": "reviews.json",
