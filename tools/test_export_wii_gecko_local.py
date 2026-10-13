@@ -17,7 +17,7 @@ def fabricated():
         n = 2 if i < 16 else 1  # 16*2 + 13 = 45 synthetic groups
         for j in range(n):
             group_num = 1 + j
-            pair_count = 5611 if (i == 0 and j == 0) else 0
+            pair_count = 1
             groups.append({
                 "group_index": group_num,
                 "title": "FAKE SELF-CONTAINED SAMPLE",

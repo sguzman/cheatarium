@@ -92,8 +92,9 @@ def encoded_document(cache):
 
 
 def safe_output_path(path, root=ROOT):
-    path = Path(path).expanduser().resolve()
-    if path == root.resolve() or root.resolve() in path.parents:
+    path = Path(path).expanduser().absolute()
+    resolved = path.resolve()
+    if resolved == root.resolve() or root.resolve() in resolved.parents:
         raise ValueError("Refusing to write third-party Wii source codes into Cheatarium's public Git tree")
     if path.suffix.lower() != ".json":
         raise ValueError("Sidecar output path must end with .json")
