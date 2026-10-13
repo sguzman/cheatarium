@@ -46,7 +46,7 @@ class TestExternalOverlap(unittest.TestCase):
         sthetix = next(x for x in doc["sources"] if x["id"] == "sthetix-switch-mirror")
         self.assertEqual((sthetix["reference_files"], sthetix["distinct_git_blobs"]), (5861, 5468))
         self.assertEqual(
-            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3384
+            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3588
         )
 
     def test_cross_source_matches_keep_paths_and_no_bodies(self):
