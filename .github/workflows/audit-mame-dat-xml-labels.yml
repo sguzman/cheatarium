@@ -1,0 +1,32 @@
+name: Audit MAME DAT versus XML driver labels
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-mame-dat-xml-labels.yml"
+      - "tools/audit_mame_dat_xml_labels.py"
+      - "tools/test_audit_mame_dat_xml_labels.py"
+      - "sources/external-bulk/libretro-mame2003plus-cheat-archive.json"
+      - "sources/external-bulk/libretro-mame2010-cheat-archive.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Verify MAME native source parser with synthetic fixtures
+        run: python3 tools/test_audit_mame_dat_xml_labels.py
+      - name: Compare verified pinned MAME driver labels ephemerally
+        run: python3 tools/audit_mame_dat_xml_labels.py --output mame-dat-xml-label-report.json
+      - name: Upload aggregate-only comparison
+        uses: actions/upload-artifact@v4
+        with:
+          name: cheatarium-mame-driver-label-overlap
+          path: mame-dat-xml-label-report.json
+          retention-days: 30
