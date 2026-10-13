@@ -164,6 +164,53 @@
         }
       ],
       "recommended_clearance": "Identify separately authored PS1 cheat/patch provenance and secure individual reuse terms for the 268 different-byte variants; a derived DuckStation database's MIT grant applies only to processing scripts."
+    },
+    {
+      "source_id": "leumas-gamecube-wiird-zips",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "07e1e792a1b23fafb8f0b507d5295bab739db694",
+          "evidence_type": "multiple_upstream_cheat_sources"
+        }
+      ],
+      "recommended_clearance": "Trace rights from the cited gc-forever WiiRD contributors for the three NTSC-J/U/PAL GameCube ZIP sets. Obtain source-code reuse grants for original authors before preserving code bodies; the aggregator admits only limited spot testing."
+    },
+    {
+      "source_id": "katsumaki-wiiu-xml",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "community_contributions_without_root_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "db1d65c78b50caecb6fb7c4d65e5811087c71757",
+          "evidence_type": "community_contributions"
+        }
+      ],
+      "recommended_clearance": "Review nine Wii U XML game/code documents against credited code authors and GBAtemp/Discord original posts; aggregator sharing and author fields do not demonstrate reusable licenses."
+    },
+    {
+      "source_id": "ucodes-wiiu-json",
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "aggregator_license_with_third_party_contributions",
+      "root_license_paths_observed": [
+        "LICENSE"
+      ],
+      "root_license_scope_assessment": "aggregator_mit_no_original_author_clearance",
+      "evidence": [
+        {
+          "upstream_path": "LICENSE",
+          "git_blob_sha": "3f710d89c1a148e918e3d8c044eb428eff748efb",
+          "evidence_type": "root_mit_notice"
+        }
+      ],
+      "recommended_clearance": "Separate website MIT notice from individually credited Wii U Cafe/Gecko code authors (e.g. distinct per-record author fields). Secure contributor-level source-code licensing before archiving codes; identical JSON exports are not different games."
     }
   ]
 }

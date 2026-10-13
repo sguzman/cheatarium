@@ -379,3 +379,30 @@ Bulk-acquisition implication: preserve the DAT separately as a historical
 lineage, prioritize the 53 DAT-only driver labels for future rights and
 content coverage investigation, and avoid presenting 2003 DAT and 2010 XML
 counts as independent unique games or effects.
+
+### Nintendo-specific bulk acquisition: GameCube and Wii U source gap (2026-10-13)
+
+Newly pinned source-native links are now searchable in the offline external
+browser. **GameCube:** LeumasPlays' three regional WiiRD original ZIPs
+(NTSC-J, NTSC-U, PAL; aggregate source-container bytes **1,310,887**),
+compiled from gc-forever contributors. They may hold far more codes than the
+three ZIP filenames suggest and must be inspected at the original member
+level; a file count of three is **not** a coverage estimate. The compiler
+reports having tested only a handful of NTSC-U codes; no independent
+per-code compatibility conclusions follow. **Wii U:** nine native XML
+source documents from KatsuMaki1 (46,756 source bytes) plus four JSON source
+documents from Vincent Coding's uCodes (33,633 source bytes; three distinct
+Git blobs due to a same-byte alias). The Wii U source documents include
+third-party credited code authors; a root website MIT license does not
+certify reuse of contributed cheat data. All **16 source-file occurrences,
+15 distinct Git blobs**, are original-blob pinned and currently
+**link-only**. No original Wii U code or ZIP members have been copied to
+Cheatarium's archived executable bundle. The external catalog advances to
+**43,425 source-file occurrences / 51 link-only source catalogs**; native
+Nintendo indexed code counts are unchanged.
+
+Next: use bounded, read-only ZIP inspection to quantify GameCube cheat files
+and compare source file aliases by exact member bytes; inventory Wii U XML
+and JSON declared code entries and attribution indicators without publishing
+individual cheat bodies. Track verified title/revision compatibility only
+after original-author reuse rights and test evidence are available.

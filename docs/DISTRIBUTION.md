@@ -17,7 +17,7 @@ Every successful index build produces the following under `generated/v1/`:
 - `reports/external-vs-archive-blobs.json`: deterministic audit of link-only external Git blob hashes against Git blobs already preserved as original files in Cheatarium. Reports total paths, exact-byte matches, distinct hashes and per-source/platform acquisition gaps, with a small number of source-path witnesses. It cannot grant redistribution rights or verify game/effect identity.
 - `reports/acquisition-priorities.json`: deterministic rights-review ranking for the 48 link-only catalogs, ordered by previously unarchived **exclusive cheat-labeled Git blobs** before shared/mirrored or patch-only data. A blob may be labeled both cheat and patch, and labels alone do not prove effects, ownership, working cheats, or game identity. Every ranking is metadata-only; none grants code redistribution rights.
 - `reports/acquisition-rights-review.json`: pinned upstream README/LICENSE/contributor Git blob evidence explaining why the nine documented bulk external catalogs remain link-only. Includes immutable evidence links, priority ranks and next clearance actions; no code bodies, grants, or gameplay verification.
-- `reports/external-overlap.json`: reproducible exact-Git-blob SHA identity audit across all 43,409 pinned link-only source paths (a current, pinned count of distinct byte hashes and duplicate paths). Its source and platform subtotals, plus cross-repository exact-byte examples, do not prove independent games or gameplay effects. It includes no cheat bodies and is covered by the distribution SHA-256 manifest.
+- `reports/external-overlap.json`: reproducible exact-Git-blob SHA identity audit across all 43,425 pinned link-only source paths (a current, pinned count of distinct byte hashes and duplicate paths). Its source and platform subtotals, plus cross-repository exact-byte examples, do not prove independent games or gameplay effects. It includes no cheat bodies and is covered by the distribution SHA-256 manifest.
 - `reviews.json`: independently evidenced effect-review register, currently with five external reports and zero tested observations; separately validated and included in checksums.
 - `taxonomy/effects-v1.json`: versioned lexical effect taxonomy (included once in the manifest).
 - `tags/<platform>.json.gz`: per-console lexical description phrase hits, each linked back to its source occurrence; recomputed from originals during validation.
@@ -89,5 +89,14 @@ Nine separately typed source-only collections now expose 691 additional upstream
 file references in 26 external search platform labels. These add 487 previously
 untracked Git blobs to the **external metadata** corpus only; the baseline
 `bulk-scout-exact-byte-gaps.json` excludes the nine self-references when auditing
-the pre-existing catalog. There are 48 current link-only source catalogs and
-43,409 file references, with no change to original archived code bodies.
+the pre-existing catalog. There are 51 current link-only source catalogs and
+43,425 file references, with no change to original archived code bodies.
+
+The Nintendo acquisition pass pinned three GameCube regional WiiRD ZIP
+containers and thirteen Wii U native XML/JSON cheat documents, adding 16
+external file occurrences (15 different upstream Git file blobs) to the
+checksum-verified external metadata catalog. They are link-only sources
+with individual original-author permissions unresolved. The region-split
+GameCube source ZIPs are **three containers, not three verified game titles**;
+the one same-byte Wii U JSON alias is not independent content. This does not
+alter the preserved archive or existing executable Nintendo code bundles.

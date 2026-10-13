@@ -27,7 +27,7 @@ An emulator can download the relevant platform artifacts at a **pinned Cheatariu
 
 ## External pinned source discovery (metadata only)
 
-Cheatarium provides **43,409 rights-unresolved source-file references in 48 pinned source catalogs across 26 external search platform labels** under checksum-checked `generated/v1/external/catalog.json` and platform bundles. The additional 691 pinned arcade, Sega CD, original Xbox and Nintendo export references are source paths and blob hashes only (487 byte-distinct Git blobs absent from the pre-onboarding archive and external inventories), not playable cheat bodies. Only source IDs, file paths, original Git blob identities, byte sizes, pinned URLs and source-native cheat/patch labels are exported. They do not confer code-author reuse rights, game identity, execution support or tested compatibility.
+Cheatarium provides **43,425 rights-unresolved source-file references in 51 pinned source catalogs across 26 external search platform labels** under checksum-checked `generated/v1/external/catalog.json` and platform bundles. The additional 691 pinned arcade, Sega CD, original Xbox and Nintendo export references are source paths and blob hashes only (487 byte-distinct Git blobs absent from the pre-onboarding archive and external inventories), not playable cheat bodies. Only source IDs, file paths, original Git blob identities, byte sizes, pinned URLs and source-native cheat/patch labels are exported. They do not confer code-author reuse rights, game identity, execution support or tested compatibility.
 
 ```sh
 cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title "Painkiller" --limit 10 --json
@@ -131,3 +131,9 @@ Complete SNES Game Genie and Pro Action Replay source-code groups may include a 
 Consumers must decide whether a code is compatible with the exact cartridge build and know how its specific Game Genie, Action Replay, or memory format behaves before applying anything. Nothing in this library activates a cheat automatically.
 
 See [the v1 contract](INDEX-V1.md), [SNES decoding and coverage](SNES-CODES.md), and [distribution specification](DISTRIBUTION.md). The generated [SNES coverage report](../generated/v1/reports/snes-codec-coverage.json) is available for any consumer to inspect.
+
+Nintendo GameCube/Wii U external-source acquisition: `--platform gamecube --source-id leumas-gamecube-wiird-zips --title "NTSC-U"`
+or `--platform wii-u --source-id katsumaki-wiiu-xml --title "Twilight Princess"`
+search strictly source paths and original pinned link provenance. A
+regional GameCube ZIP path is not a browseable game-by-game code list until
+its members are inspected separately. All returned codes remain excluded.

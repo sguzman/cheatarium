@@ -98,3 +98,16 @@ only; the [checksum-verified report](../research/mame-dat-xml-driver-labels-v1.j
 publishes no cheat records or per-game identifiers. No source-native
 MAME DAT / XML label match can be used as copyright, original-authorship,
 game-identity or executable compatibility evidence.
+
+### Nintendo GameCube / Wii U regional bulk sources (2026-10-13)
+
+A pinned [author-rights evidence update](../research/rights-evidence-v1.json)
+covers three newly indexed source families. The LeumasPlays WiiRD GameCube
+regional ZIPs are compiled from third-party gc-forever posts; no repository
+LICENSE was observed and the compiler admits limited game testing. The
+KatsuMaki1 Wii U/Cemu XML group cites GBAtemp/Discord and individual code
+authors; no root license was observed. Vincent Coding's uCodes website
+publishes an MIT LICENSE for the software but the original Wii U Cafe/Gecko
+cheat records carry independent author-credit fields. Do not transfer the
+software license across separately credited contributions without evidence.
+All three are **rights-unresolved links**; imported original cheat bodies = 0.
