@@ -8,6 +8,9 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Explore
 
+- **Private Wii Gecko code acquisition:** `python3 tools/hydrate_wii_bulk.py --fetch` materializes **29** pinned original Wii `.ini`/`.txt` sources (City Folk/Deluxe, Metroid Prime/Trilogy, Other M, Taiko) into `~/.local/share/cheatarium/wii-originals` (or `$XDG_DATA_HOME`). `--check` verifies them offline against pinned original Git hashes. All exact region/revision filenames are preserved; third-party code bodies stay outside this public repository. [Details](docs/CONSUMERS.md#private-wii-original-code-acquisition).
+
+
 - **New Nintendo Wii acquisition:** Pinned original Git blobs for 29 region/revision-specific Gecko source files in Animal Crossing: City Folk/Deluxe (9), Metroid Prime/Trilogy (12), Metroid: Other M (3), and Taiko (5). They are public source references only; author-level rights and executable compatibility are unresolved.
 
 

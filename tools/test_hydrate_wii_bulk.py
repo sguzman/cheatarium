@@ -21,19 +21,38 @@ class WiiPrivateHydrationTests(unittest.TestCase):
         self.assertIn("wii/wii-accf-gecko-native/gecko/RUUE01v1.txt", expected)
         self.assertIn("wii/wii-metroid-prime-gecko-native/codes/R3ME01_mp1.ini", expected)
 
-    def test_fixture_source_keeps_native_text_exact_and_checks_git_blob(self):
-        sources = pinned_sources()
-        raw_by_blob = {}
-        for s in sources:
-            for row in s["files"]:
-                # Exact original-byte validation is handled by the integration
-                # test, not simulated as a passing source blob here.
-                pass
+    def test_synthetic_full_collection_preserves_codes_and_detects_tampering(self):
+        # Exercise all 29 source paths, original blob hashes, revision suffixes,
+        # per-file manifest fingerprints and offline tamper detection. This
+        # fixture deliberately never uses real third-party cheat bytes.
         with tempfile.TemporaryDirectory() as temp:
-            dst = Path(temp)
+            root = Path(temp) / "fake-repo"
+            folder = root / "sources" / "external-bulk"
+            folder.mkdir(parents=True)
+            sources = pinned_sources()
+            fake_bytes = {}
+            for source in sources:
+                for row in source["files"]:
+                    body = ("SYNTHETIC_CODE:" + source["id"] + "/" + row[0]).encode()
+                    fake_bytes[(source["id"], row[0])] = body
+                    row[1] = git_blob_sha(body)
+                    row[2] = len(body)
+                (folder / (source["id"] + ".json")).write_text(
+                    json.dumps(source), encoding="utf-8")
+            stage = Path(temp) / "cache"
+            stage.mkdir()
+            build_into(stage, sources, lambda s, row: fake_bytes[(s["id"], row[0])])
+            receipt = check(stage, root)
+            self.assertEqual(receipt["wii_original_gecko_source_files"], 29)
+            self.assertEqual(
+                (stage / "wii/wii-accf-gecko-native/gecko/RUUE01v0.txt").read_bytes(),
+                fake_bytes[("wii-accf-gecko-native", "gecko/RUUE01v0.txt")])
+            self.assertNotEqual(
+                (stage / "wii/wii-accf-gecko-native/gecko/RUUE01v0.txt").read_bytes(),
+                (stage / "wii/wii-accf-gecko-native/gecko/RUUE01v1.txt").read_bytes())
+            (stage / "wii/wii-accf-gecko-native/gecko/RUUE01v0.txt").write_bytes(b"tampered")
             with self.assertRaises(ValueError):
-                build_into(dst, sources, lambda _source, row: b"INVALID")
-            self.assertFalse((dst / "manifest.json").exists())
+                check(stage, root)
 
     def test_wrong_license_cache_receipt_is_rejected(self):
         with tempfile.TemporaryDirectory() as temp:

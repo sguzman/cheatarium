@@ -175,3 +175,38 @@ runner's private path, verifies the manifest twice (including an offline
 ### Wii native Gecko code source paths
 
 External reference search now includes **29** pinned original code files across four Wii original-source families: for instance, `cheatarium-query external --db generated/v1 --platform wii --title RUUE01v0 --json` matches the explicit City Folk revision. The game ID alone is not enough for City Folk; do not merge `RUUE01v0` and `RUUE01v1`. This is source filename search and source provenance, **not** a version verification or public code-body import.
+
+### Private Wii original-code acquisition
+
+The newly pinned **29 original Wii Gecko code files** (9 City Folk/Deluxe,
+12 Metroid Prime/Trilogy, 3 Metroid: Other M, 5 Taiko) can be retrieved
+as actual native `.ini` and `.txt` source files into a private local cache:
+
+`python3 tools/hydrate_wii_bulk.py --fetch`
+
+The default destination is
+`$XDG_DATA_HOME/cheatarium/wii-originals` (typically
+`~/.local/share/cheatarium/wii-originals` on Linux). The tool writes
+`wii/<original-source-id>/<upstream-native-path>` and a private
+`manifest.json`. **Never combine differing disc revision variants**:
+City Folk `RUUE01v0.txt` and `RUUE01v1.txt` are distinct source files;
+Metroid Prime `R3ME01_mp1.ini` and `R3ME01_mp2.ini` are separate source
+variants. Set `--destination /some/other/private/path` if needed.
+
+`python3 tools/hydrate_wii_bulk.py --check` performs **offline** Git
+blob SHA-1 checks against the repository's pinned original files, plus
+SHA-256 verification of the user's cached contents. `--fetch` verifies
+and reuses an existing complete cache; incomplete/corrupt existing
+destinations are refused rather than overwritten. New caches are
+published only after all 29 real upstream source files have been
+downloaded and verified, in a staging directory outside the public
+repository. No ROMs, firmware, game files, third-party code bodies,
+or cache payloads are written to the Git tree, CI artifacts, or
+versioned Cheatarium distribution.
+
+**Caveat:** The raw native files are available for local study/use, not
+yet normalized into Cheatarium's index or proved compatible with any
+exact game revision. Original third-party Gecko code ownership is
+rights-unresolved, so private local acquisition does not grant
+permission to redistribute those codes. No game effects have been
+empirically verified by Cheatarium.
