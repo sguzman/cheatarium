@@ -12,11 +12,11 @@ class TestExternalOverlap(unittest.TestCase):
 
     def test_fixed_pinned_inventory(self):
         doc = self.data
-        self.assertEqual(doc["reference_files"], 43409)
-        self.assertEqual(doc["source_catalogs"], 48)
+        self.assertEqual(doc["reference_files"], 43425)
+        self.assertEqual(doc["source_catalogs"], 51)
         self.assertEqual(doc["external_platforms"], 26)
         self.assertGreater(doc["distinct_git_blobs"], 26638)
-        self.assertEqual(doc["repeated_blob_excess_occurrences"], 43409 - doc["distinct_git_blobs"])
+        self.assertEqual(doc["repeated_blob_excess_occurrences"], 43425 - doc["distinct_git_blobs"])
         self.assertGreaterEqual(doc["references_in_repeated_blob_groups"], 9076)
         self.assertGreaterEqual(doc["cross_source_shared_blob_groups"], 2759)
         self.assertGreaterEqual(doc["cross_source_shared_references"], 8129)
@@ -26,8 +26,8 @@ class TestExternalOverlap(unittest.TestCase):
 
     def test_platform_and_source_counts_reconcile(self):
         doc = self.data
-        self.assertEqual(sum(x["reference_files"] for x in doc["sources"]), 43409)
-        self.assertEqual(sum(x["reference_files"] for x in doc["platforms"]), 43409)
+        self.assertEqual(sum(x["reference_files"] for x in doc["sources"]), 43425)
+        self.assertEqual(sum(x["reference_files"] for x in doc["platforms"]), 43425)
         hamlet = next(x for x in doc["sources"] if x["id"] == "hamlet-switch-cheatdb")
         self.assertEqual((hamlet["reference_files"], hamlet["distinct_git_blobs"]), (5278, 3046))
         ds = next(x for x in doc["sources"] if x["id"] == "deadskullz-nds-formats")
@@ -46,7 +46,7 @@ class TestExternalOverlap(unittest.TestCase):
         sthetix = next(x for x in doc["sources"] if x["id"] == "sthetix-switch-mirror")
         self.assertEqual((sthetix["reference_files"], sthetix["distinct_git_blobs"]), (5861, 5468))
         self.assertEqual(
-            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3588
+            sum(x["repeated_blob_excess_occurrences_within_source"] for x in doc["sources"]), 3589
         )
 
     def test_cross_source_matches_keep_paths_and_no_bodies(self):

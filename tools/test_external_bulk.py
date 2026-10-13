@@ -55,11 +55,36 @@ class TestExternalBulk(unittest.TestCase):
             "riyoway-wiiu-export": 2,
             "slade1972-segacd-zip": 51,
             "skillercmp-xemu-text": 12,
+            "leumas-gamecube-wiird-zips": 3,
+            "katsumaki-wiiu-xml": 9,
+            "ucodes-wiiu-json": 4,
         })
         self.assertEqual(indexes[0]["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 43409)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 43425)
+
+    def test_nintendo_gamecube_wiiu_pinned_bulk_are_link_only(self):
+        indexes = load(__import__("external_bulk").ROOT)
+        expected = [
+            ("leumas-gamecube-wiird-zips", "gamecube", "NTSC-U Codes.zip", 1),
+            ("katsumaki-wiiu-xml", "wii-u", "Twilight Princess HD", 1),
+            ("ucodes-wiiu-json", "wii-u", "codes.json", 4),
+        ]
+        for sid, platform, term, count in expected:
+            with self.subTest(source=sid):
+                source = next(s for s in indexes if s["id"] == sid)
+                hits = lookup([source], term, platform, 10)
+                self.assertEqual(len(hits), count)
+                self.assertTrue(all(hit["kind"] == "cheat"
+                    and hit["redistribution"] == "link_only_rights_review"
+                    and hit["upstream_url"].startswith(source["repository"] + "/blob/")
+                    for hit in hits))
+        wiird = next(s for s in indexes if s["id"] == "leumas-gamecube-wiird-zips")
+        self.assertEqual({p for p, _, _ in wiird["files"]},
+                         {"NTSC-J codes.zip", "NTSC-U Codes.zip", "PAL codes.zip"})
+        ucodes = next(s for s in indexes if s["id"] == "ucodes-wiiu-json")
+        self.assertEqual(len({sha for _, sha, _ in ucodes["files"]}), 3)
 
     def test_new_pinned_scout_sources_retain_metadata_only_semantics(self):
         from external_bulk import SCOUT_GROUPS
