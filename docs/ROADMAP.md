@@ -219,3 +219,45 @@ The pinned [Smoker1 RetroArch 1.7.4+ cheat tree](https://github.com/Smoker1/Retr
 ### Seven consumer-searchable historical RetroArch fork gap partitions (2026-10-12)
 
 The previously audited [GCMCom / Smoker1 exact-byte gap report](../research/retroarch-mirror-source-gaps-v1.json) is now integrated into the external search catalog, not just a research footnote. In the immutable original source trees, GCMCom has 10,872 .cht occurrences and Smoker1 has 518. Compared solely with three pinned cheat byte corpora (Libretro, Emupedia and BitHeX), only 11 GCMCom occurrences and 75 Smoker1 occurrences were not exact-byte matches: **86 file occurrences / 77 distinct Git blobs**. Those candidates are partitioned into GBA (2), NES (8), SNES (1), Smoker1 FBNeo (32), Dreamcast (12), NAOMI (9), and ten other RetroArch core folders (22). Some paths in the mixed 22-record bucket refer to entirely different systems: the multi-retroarch label is an explicit mixed-source grouping, **not** a universal emulator format or evidence of compatibility. Each candidate retains the original upstream path, Git SHA-1, size, and frozen commit URL. The source importer cross-checks every exported record against both the local three-corpus gap inventory and the original complete pinned Git tree before refreshing. It **does not** copy cheat text, claim rights, or assert these bytes are absent from every other archived collection.
+
+### Newly pinned bulk-source scouts (2026-10-12)
+
+The reproducible [metadata-only bulk scout](../research/bulk-source-scout-v1.json) and
+`python3 tools/audit_bulk_source_scout.py --offline-check` record **691 original
+file occurrences across four pinned sources / 487 distinct Git blobs** without
+copying the cheat code, archive bodies or executables. These are
+**research candidates, not external consumer-search entries or archived files**.
+
+- **Arcade:** Eignar17's historic FinalBurn Alpha/Kawaks files contain 253 FBA INIs
+  plus 368 legacy DAT files (621 occurrences, 420 different Git blobs).
+  None shares exact blob bytes with the 98 pinned Smoker1 FBA INI occurrences;
+  legacy DAT and INI represent different native formats, possibly equivalent effects.
+  The original archive README attributes prior FBA work and lacks blanket code-author
+  redistribution permission.
+- **Nintendo:** Riyoway's recently published SQLite / JSON / JSONL / Wii U XML
+  releases contain seven selected output blobs totaling 191,660,391 bytes.
+  Its README **claims**, but we have not independently validated, 5,327
+  game/variant records and 117,861 cheats. Different exports must not be summed
+  as distinct data. No root redistribution license was found.
+- **Sega CD:** Slade1972 has 51 per-title MiSTer ZIP occurrences, 48 distinct
+  Git blobs. A GPLv3 LICENSE is present, but the README explicitly distinguishes
+  cheats found by other people; ZIP internals and code author rights still
+  need inspection.
+- **Original Xbox:** SkillerCMP's Xemu source has 12 native cheat text files.
+  Unrelated file replacements and binary assets are excluded; no root
+  redistribution license was located.
+
+Next: investigate actual member/data-format structure and source lineage, audit
+against **all** archived/pinned blobs (the arcade comparison above is Smoker1-only),
+then pursue rights clearance before moving eligible content into the original
+archive. See the four matching entries in `sources/candidates.json`.
+
+### Deferred idea: headless cheat-effect verification
+
+A future, separate research phase may test opt-in cheats against **user-supplied,
+locally possessed game images** through a headless emulator runner (possibly
+Starbyte for SNES). Capture exact ROM SHA-256, core/build version, code format,
+initial state, baseline/control run, modified run, memory or game-state
+observations, and evidence of a repeatable difference. A changed byte alone
+is not a verified intended cheat effect. No ROMs or test saves belong in
+Cheatarium; **this is not part of the current acquisition pass**.

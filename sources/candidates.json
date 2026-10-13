@@ -147,6 +147,22 @@
       "notes": "Pinned bulk inventory e3cce509 contains 4,497 cheats and 138 patches. Metadata-only snapshot under sources/external-bulk/; no cheat or patch contents archived."
     },
     {
+      "id": "eignar17-arcade",
+      "repo": "https://github.com/Eignar17/kawaks-cheats-Fba-MAME",
+      "platforms": [
+        "arcade-fba",
+        "arcade-mame"
+      ],
+      "formats": [
+        "fba-ini",
+        "legacy-arcade-dat"
+      ],
+      "state": "link_only_rights_review",
+      "pinned_commit": "9bc73944f2b11fc4719d95ce363744842143a778",
+      "rights": "No root LICENSE; nested FBA archive README identifies preexisting FBA Cheater's Dreams material. Original code-author reuse rights unknown.",
+      "notes": "621 original cheat-labeled files (253 INI and 368 DAT), 420 distinct Git blobs. Zero exact-blob overlaps against the existing Smoker1 FBA INI catalog only; this is not a full archive-overlap audit or 621 new cheat effects. 201 repeated file occurrences. See research/bulk-source-scout-v1.json."
+    },
+    {
       "id": "foxy-isz-multiauthor",
       "repo": "https://github.com/FoxyXTN/ISZ-3ds-cheats-for-ctrpf-ByFoxy.",
       "platforms": [
@@ -305,6 +321,26 @@
       "notes": "Several Melee native Gecko .txt output documents and matching assembly sources. Need code-by-code origin and reuse permission; do not bulk rehost."
     },
     {
+      "id": "riyoway-nintendo",
+      "repo": "https://github.com/Riyoway/CheatDB",
+      "platforms": [
+        "switch",
+        "3ds",
+        "nes",
+        "wii-u"
+      ],
+      "formats": [
+        "sqlite-cheat-database",
+        "json-cheat-export",
+        "jsonl-cheat-export",
+        "jgeckou-xml"
+      ],
+      "state": "link_only_rights_review",
+      "pinned_commit": "17938073e898b2774e09cce2153baabfeb07aa10",
+      "rights": "No root LICENSE. Source README claims 117,861 cheats, but the internal counts, origins and author rights have not been independently audited.",
+      "notes": "Seven pinned code-bearing database/export blobs totaling 191,660,391 file bytes. Source README claims 5,327 games/variants and 117,861 cheat entries across Switch, 3DS, NES, Wii U; counts and underlying novelty unverified, with SQLite/JSONL/JSON/XML likely representing the same data in different serializations. No code payload imported."
+    },
+    {
       "id": "rogamer97-asm-cheats-and-patches",
       "repo": "https://github.com/RoGamer97/ASM-Cheats-and-Patches",
       "platforms": [
@@ -346,6 +382,34 @@
       "state": "link_only_rights_review",
       "repo_license": "not_found_in_root",
       "notes": "Reviewed pinned tree a394316be0fe7b233b49b7ba22f14fae56a1b9c8 contains 119 .psv files; README acknowledges external code sites. No LICENSE/COPYING/NOTICE file found; third-party rights unresolved."
+    },
+    {
+      "id": "skillercmp-xemu",
+      "repo": "https://github.com/SkillerCMP/XEMU-CHEATDB",
+      "platforms": [
+        "xbox"
+      ],
+      "formats": [
+        "xemu-native-cheat-txt"
+      ],
+      "state": "link_only_rights_review",
+      "pinned_commit": "efdb486fbc95c4b8aa9384f47694124c6f03fa32",
+      "rights": "No root LICENSE or blanket cheat author grant; other file-replacement assets excluded from cheat-text inventory.",
+      "notes": "12 pinned native original Xbox Xemu .txt cheat sources, excluding binary game-file replacements and assets. Original author permissions and compatibility unverified."
+    },
+    {
+      "id": "slade1972-segacd",
+      "repo": "https://github.com/Slade1972/SegaCD-Cheats-MiSTer",
+      "platforms": [
+        "segacd"
+      ],
+      "formats": [
+        "mister-gg-zip"
+      ],
+      "state": "link_only_rights_review",
+      "pinned_commit": "0b2186db50e14e06617d6317d5ee0529c6d4631c",
+      "rights": "GPL-3.0 repository LICENSE exists, but README promises credit for cheats found by other people; permissions for all original codes and bundled ZIP members remain unreviewed.",
+      "notes": "51 pinned per-title ZIP occurrences, 48 byte-distinct ZIPs; actual archive members not inspected. GNU GPLv3 root license exists, but README credits codes discovered by others. Requires member-level provenance review before import."
     },
     {
       "id": "switch-cheats-db",

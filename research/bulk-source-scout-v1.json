@@ -1,0 +1,3539 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-bulk-source-scout-v1",
+  "method": "pinned-git-tree-metadata-only",
+  "cheat_bodies_included": false,
+  "licensed_to_archive": false,
+  "game_identity_verified": false,
+  "cheat_function_verified": false,
+  "archive_novelty_verified": false,
+  "source_file_occurrences": 691,
+  "distinct_git_blobs_in_source_union": 487,
+  "source_count": 4,
+  "comparisons": "Arcade exact Git blob comparison is only against pinned Smoker1 FBA INIs, not all archived Cheatarium data. Other source-to-archive overlaps have not been determined.",
+  "sources": [
+    {
+      "id": "eignar17-arcade",
+      "repository": "https://github.com/Eignar17/kawaks-cheats-Fba-MAME",
+      "snapshot_commit": "9bc73944f2b11fc4719d95ce363744842143a778",
+      "source_tree_sha": "9bc73944f2b11fc4719d95ce363744842143a778",
+      "rights_status": "link_only_rights_review",
+      "reuse_cleared": false,
+      "source_code_included": false,
+      "scope": "FBA INI and Kawaks DAT cheat files only",
+      "rights_note": "No root LICENSE; nested FBA archive README identifies preexisting FBA Cheater's Dreams material. Original code-author reuse rights unknown.",
+      "selected_file_occurrences": 621,
+      "distinct_git_blobs": 420,
+      "selected_bytes": 5464781,
+      "matching_smoker1_file_occurrences": 0,
+      "files": [
+        [
+          "Final Burn Alpha Cheat Archive/1941.ini",
+          "c0bb77e03418cc9481d662a938760da9358edcfc",
+          2184
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/1941j.ini",
+          "c24217d5443a66ee6d94bbf2cda3798bf267ca36",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/1944.ini",
+          "28ff11b3d76888db8b45a5c2a854bc6cc3550d4b",
+          1494
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/19xx.ini",
+          "f61078329f41f1789b21601d5de6c237a8bbda97",
+          3326
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/19xxh.ini",
+          "14a4f2747af0ac93b193c61952e2746b36ffbb3e",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/3wonders.ini",
+          "5235f6a12758eae736932d6782e9b09286af74ea",
+          4641
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/3wonderu.ini",
+          "8acae7e51c311ecd43517e2d8d31bcbf26fe5b74",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/agallet.ini",
+          "4fa3c0bf9e2c0a26da6359167dbf815706732bd9",
+          656
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/area88.ini",
+          "0c8a44ac75d0358f4a7c61564558c806ae73f7d0",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/armwar.ini",
+          "9c36fb620f9923502bc54ac29308d49a4b78d0e5",
+          4616
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/armwaru.ini",
+          "df48f8e7a802b0f669b08abb55de5faf6b922ce1",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/avsp.ini",
+          "47dab94006ec0923f31845f8124c811b43971179",
+          5613
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/avspj.ini",
+          "109b86e324eb13240b45a824cc7cd5a57d596e85",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/avspu.ini",
+          "109b86e324eb13240b45a824cc7cd5a57d596e85",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/batcir.ini",
+          "83a863c92f07d1cba8b2e6cb24bb36e2b56369f2",
+          5701
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/batcirj.ini",
+          "9abf4c8eb2413a572825495464745ed90f3753c3",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/batrider.ini",
+          "01ad535f9125eab69b1d21c4ac2e1dec925b3461",
+          1021
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/batridra.ini",
+          "ce1e03012c38c130fdf1ad7124ed5a5aefca6de5",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/batsugun.ini",
+          "c8510b890f554d3c532317733509260b8b4ec34f",
+          1010
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/battleg.ini",
+          "389d0253ca563960f563bece19cf67aa9e963dc5",
+          1000
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/battlega.ini",
+          "822ee197ad7af116ba89e879246d60f06485ce19",
+          1000
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/battlegb.ini",
+          "c419e8caf6aa3cb68b2a82fccee7d54b63dff7f6",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/batugnsp.ini",
+          "00a530c35529690c3b3160e498328b1659de4140",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/bbakrada.ini",
+          "4a14f3935fa4057831b594b6adc2d69c6916898e",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/bbakraid.ini",
+          "d5c5bb06a2679a57a2ce7468130cb1cda49a2323",
+          1205
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/captcomj.ini",
+          "f8b725ed6b6427c73661275bf479feb745262e17",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/captcomm.ini",
+          "ad0fb4af84fc7543ee315e382d2165e6d598f1dc",
+          4725
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/captcomu.ini",
+          "f8b725ed6b6427c73661275bf479feb745262e17",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cawing.ini",
+          "8dd5a76996b73822365d17b93cfe6c1135982fd3",
+          3243
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cawingb.ini",
+          "282a24c8abbda77342597b568e9aa77c97dfdfbd",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cawingj.ini",
+          "282a24c8abbda77342597b568e9aa77c97dfdfbd",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cawingu.ini",
+          "282a24c8abbda77342597b568e9aa77c97dfdfbd",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/chikij.ini",
+          "3632250647765ba2bb0af07e1e66fc8502226a47",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cscluba.ini",
+          "9e1660fb886242f310ce199e4c9bd42b67f14ce3",
+          5252
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/csclubj.ini",
+          "f8af2ece9f714834dfffa219a12d43e45734f13c",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cworld2j.ini",
+          "dfecdfcf7c218b422cf663aabe6f3729498a20cf",
+          441
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cybots.ini",
+          "8f6954af2df108e9d651ff398e4d99b9461eaec2",
+          6265
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/cybotsj.ini",
+          "5c2033dae503dc688fc37c4a18274d6a862381bd",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/daimakai.ini",
+          "9ea98c281188d0c7801b1077723e0cab43209ee0",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddonpach.ini",
+          "849668fb384aa3bc03f5f1e644bc1d137c90c2ef",
+          1536
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddsom.ini",
+          "60f3304af36a0daef7b750cc40e20f84ccc364ad",
+          49650
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddsomjr1.ini",
+          "ef36cf9a5c9814588f9d37ea8d2b6605b7a7ffbf",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddsomu.ini",
+          "ef36cf9a5c9814588f9d37ea8d2b6605b7a7ffbf",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddsomur1.ini",
+          "ef36cf9a5c9814588f9d37ea8d2b6605b7a7ffbf",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddtod.ini",
+          "6ee4cd2c273d362abcb3e5437f7a9ccef08c185c",
+          42428
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddtodh.ini",
+          "90fc273b5fabef5cef7a262520d37dbb6048f911",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddtodj.ini",
+          "90fc273b5fabef5cef7a262520d37dbb6048f911",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddtodu.ini",
+          "90fc273b5fabef5cef7a262520d37dbb6048f911",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ddtodur1.ini",
+          "90fc273b5fabef5cef7a262520d37dbb6048f911",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dfeveron.ini",
+          "d956b5cbb8781023f99fb5435a442becec9b307c",
+          2002
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dimahoo.ini",
+          "d2f1e8c9b5e4cc3d9df6c94bdc8901fd78c4de7d",
+          916
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dino.ini",
+          "bacd2b2e526939eb644be56e56dea08e9b45e664",
+          2040
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dinoh.ini",
+          "cfc851e59301c814005c6735b51f0d77dd619ccb",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dinoj.ini",
+          "cfc851e59301c814005c6735b51f0d77dd619ccb",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dinou.ini",
+          "cfc851e59301c814005c6735b51f0d77dd619ccb",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dogyuun.ini",
+          "32fee30e2e6799b83acc2aabf4fe60e47905fdae",
+          877
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/donpachi.ini",
+          "3e48520b60f1bb4ca6287b5914521e6255b50164",
+          571
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/donpachk.ini",
+          "ea96751339e1cdd0cd7b2fa32553fe2d349534e3",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dstlk.ini",
+          "57860de4cf8c8ab6ae43989db55665278e43be23",
+          2610
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dstlka.ini",
+          "29ca5f1e9cc70c2e5bea738820ed8540f9c1afbe",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dstlku.ini",
+          "29ca5f1e9cc70c2e5bea738820ed8540f9c1afbe",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dstlkur1.ini",
+          "29ca5f1e9cc70c2e5bea738820ed8540f9c1afbe",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dw.ini",
+          "a0625f4f37d53d69eabd9a27658ef5e733a4f93b",
+          1718
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/dwj.ini",
+          "b82c8d940e3b8ac6fc1e6c3fc7afdb0219199457",
+          14
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ecofghtr.ini",
+          "42b5eb9a01c7c004b5ac5d2efbb656d7ee149d35",
+          2542
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/esprade.ini",
+          "773af1c9b5a048f76c9b8d096ec14f96c3280222",
+          741
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/espradej.ini",
+          "5581d79ed1cdd233ecd8d3b7bd8246d4395d857b",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/espradeo.ini",
+          "5581d79ed1cdd233ecd8d3b7bd8246d4395d857b",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ffight.ini",
+          "9b0f3800ee3a34c5398b7743a36545be40599a03",
+          2557
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ffightj.ini",
+          "13138b1fc6b9d29f988c086e6214536226a880fc",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ffightu.ini",
+          "13138b1fc6b9d29f988c086e6214536226a880fc",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/forgottn.ini",
+          "7a5b9da14cbe0e8f509155f88c91dcc0c4c95704",
+          3183
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ghouls.ini",
+          "0d2bea3cdca3d023d5d91bc83d526e709530ff44",
+          2872
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ghoulsu.ini",
+          "9ea98c281188d0c7801b1077723e0cab43209ee0",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/gigawing.ini",
+          "4c9555c21a40a5b966270457185be496c0cd9812",
+          3263
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/gmahou.ini",
+          "983bb50e8f4453a3ff66a64615e5c3e9bcedcdd6",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/grindstm.ini",
+          "bf07f2be88c3825db06a5eb7ad20985654300dfc",
+          548
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/guwange.ini",
+          "be73fe91632414661165888aa5bd283183089d77",
+          921
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/gwingj.ini",
+          "a392f2cfb80c93ce224e78548ef608b41d40d264",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/kbash.ini",
+          "2637b461ffce2b40fdfde7a90d6f932da2d9171e",
+          581
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/kl2d.ini",
+          "cfc851e59301c814005c6735b51f0d77dd619ccb",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/knights.ini",
+          "73961b116db8c19eabe4c7ccab0a8ec453a2a4d5",
+          2431
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/knightsh.ini",
+          "f30fd734ee7c9610755aa085037ffd21bf5a07a1",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/knightsj.ini",
+          "f30fd734ee7c9610755aa085037ffd21bf5a07a1",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/knightsu.ini",
+          "f30fd734ee7c9610755aa085037ffd21bf5a07a1",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/kod.ini",
+          "8fbd7155d08fb8ee250e33deead99a2b849928c4",
+          3268
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/kodb.ini",
+          "7106d7d31e4ce81c76d1b2e3cd1e05f6b1085d85",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/kodj.ini",
+          "7106d7d31e4ce81c76d1b2e3cd1e05f6b1085d85",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/kodu.ini",
+          "7106d7d31e4ce81c76d1b2e3cd1e05f6b1085d85",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/kouryu.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/lostwrld.ini",
+          "eef1a90003976fbba09ae97c060786af4c02ff62",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mahoudai.ini",
+          "a0c800abec01b8ecf01224949bc5b8981528c010",
+          965
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mbomberj.ini",
+          "25135a9da37ede80aeb6ce1a97454cc7dfa42dc0",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mbombrd.ini",
+          "f3875e669f25daa5b64ce48b7295fb07fae5172d",
+          630
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mbombrdj.ini",
+          "1b841f097c7f8810a145a0a50d46feae1beb1fad",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/megaman.ini",
+          "80b2652aa1446c2702ccdcf171bdfa12a812b640",
+          4032
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/megaman2.ini",
+          "83503217106c48ffe47e5e40c5a051e0f95d81ca",
+          4394
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mercs.ini",
+          "fa09047cd3664e46b409cb50f4219940dfeb22ad",
+          2991
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mercsj.ini",
+          "63059805bf130e927640ffe829ed4a60acc25622",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mercsu.ini",
+          "63059805bf130e927640ffe829ed4a60acc25622",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mercsua.ini",
+          "63059805bf130e927640ffe829ed4a60acc25622",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mmatrix.ini",
+          "14820d66c7d29e77bc44f731a05e9d0089893c8b",
+          742
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mmatrixj.ini",
+          "b50d37acce75e7ce594e509580a568a9ab0aa75b",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mpangj.ini",
+          "5704748ed3a9b3d691eed6389a6cc30066f3dc2a",
+          1837
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/msh.ini",
+          "263b3b525e5114d5cd60997da7a6d5e43f18312b",
+          19678
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/msha.ini",
+          "8bb645770d144c4a232b3a318d916f3bcb1653f7",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mshh.ini",
+          "8bb645770d144c4a232b3a318d916f3bcb1653f7",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mshj.ini",
+          "8bb645770d144c4a232b3a318d916f3bcb1653f7",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mshvsf.ini",
+          "e9e00c21f36a44390ac67776b64311c12f139cbd",
+          111193
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mshvsfj.ini",
+          "0a0f6a08dde5f28d8e98bf2aac708f2fee6eba30",
+          111107
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mshvsfj1.ini",
+          "224f692c471a74c189d8da467c23a82fafe8cd70",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mshvsfu1.ini",
+          "300d42eda4b58e93c2834211a8210dc8673d668b",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/msword.ini",
+          "a00056b954bcbb1b7655742938642d911a764182",
+          4831
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mswordj.ini",
+          "7f9f3e904dffc5b0e7abb27425ef17106beaab2c",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mswordr1.ini",
+          "7f9f3e904dffc5b0e7abb27425ef17106beaab2c",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mswordu.ini",
+          "7f9f3e904dffc5b0e7abb27425ef17106beaab2c",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mtwins.ini",
+          "3b9cd5537057d05f7d452516a51d8f10d70e1176",
+          2724
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mvsc.ini",
+          "08e8a6298b46b64c0b5a6c495764d516a129812d",
+          117066
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mvsca.ini",
+          "37b57fecdfb9d02190cf0d8c1d4a454dcbca3612",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mvscj.ini",
+          "e5493a683ceab337a18704cbab08e8e5a3b8dce5",
+          116815
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/mvscjr1.ini",
+          "19ce75b7beeaf591cb677fb65a0f8a97eebcdd51",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/nemo.ini",
+          "b30382197a4f0dcdaa9bf1f3663e08df5d370a3c",
+          1970
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/nemoj.ini",
+          "524d8d28ce75a7289939ab76daaf5e175fb6a7a3",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/nwarr.ini",
+          "e006f25729672ca5bb7747bf2b83569c306acaed",
+          4570
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/pang3.ini",
+          "bdffc9c7bfca5c80d157907eaa360abe8f327478",
+          1309
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/pang3j.ini",
+          "f1cb8000f2a2fbebf8cee89c548c7c8b615c8a35",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/pfghtj.ini",
+          "c6e4e94deaa72ef4b0e15490ae94dacd9d0a197d",
+          39595
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/pgear.ini",
+          "61204c40c0b72292f68402a86efdd407821172f2",
+          4423
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/pgearr1.ini",
+          "62a1437340e832070c5bf47a3901b0ed3ab33feb",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/pnickj.ini",
+          "9f76ff259d372a6a8598a8497fa041e26f8fd2cb",
+          2583
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/punisher.ini",
+          "a333acc81e55f2807490e20df5265135f2054f35",
+          1127
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/punishrj.ini",
+          "9fb70f0777e7a55d2f05e7a09fd34ceb2703b712",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/punishru.ini",
+          "9fb70f0777e7a55d2f05e7a09fd34ceb2703b712",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/qad.ini",
+          "899af988618ee1cee1c278a0bd0ece06082d689c",
+          2214
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/qadj.ini",
+          "0c07f82c45eea966b63d96d6f7e1d174f574dd96",
+          623
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/qndream.ini",
+          "f66036a4703a7629e5b896bf5dcddc7e5d3a1862",
+          5619
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/qtono2.ini",
+          "fde9d4adb0bea42024da3d8ab6e584268c93332c",
+          435
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/rainbow.ini",
+          "813209a4e99c440386638b498030f50590ff49c7",
+          3389
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/rckman2j.ini",
+          "6114830b85e1a4319c28e5b19eaf60c0f37a6465",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ringdest.ini",
+          "4b6656ff71e83c44ad513c535ea79dfc6fd80f0d",
+          2870
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/rockmanj.ini",
+          "1a33c870e2f5c91ca958cca5dccc1276891ae4af",
+          4028
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sailormn.ini",
+          "12c01c18f004ec4a6af38a5e0650961de78bc859",
+          903
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sailormo.ini",
+          "80281c4b80e30101c510b940596514747127bbe7",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2.ini",
+          "c4dd5bbd69a08eaaf262b8e187f3443da56e6dd3",
+          7842
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2accp2.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ce.ini",
+          "d60f4b531b9b2a8edaed86a696a292e028c13147",
+          10709
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2cej.ini",
+          "abbcfe17e80759bdec55001534092fc42988d99a",
+          10713
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ceua.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ceub.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ceuc.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2eg.ini",
+          "7ef0e85296e4f93985b8bfb635012a055087e319",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2j.ini",
+          "0a4076788c9ea9164143f75459580df7abac1e0d",
+          7842
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ja.ini",
+          "66f75848825a84b5c00f93c73935534faff3ebb9",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2jc.ini",
+          "66f75848825a84b5c00f93c73935534faff3ebb9",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2m-1.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2m-2.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2m-3.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2m-4.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2m-5.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2m-6.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2m-7.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2rb.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2rb2.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2red.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2t.ini",
+          "7cf6354a14149fb11259b98c795f0636fe8aa754",
+          12217
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2tj.ini",
+          "ba5a545477e61bfd56bef186b329db10a592f3c1",
+          12223
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ua.ini",
+          "7ef0e85296e4f93985b8bfb635012a055087e319",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ub.ini",
+          "7ef0e85296e4f93985b8bfb635012a055087e319",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ud.ini",
+          "7ef0e85296e4f93985b8bfb635012a055087e319",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ue.ini",
+          "7ef0e85296e4f93985b8bfb635012a055087e319",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2uf.ini",
+          "7ef0e85296e4f93985b8bfb635012a055087e319",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2ui.ini",
+          "7ef0e85296e4f93985b8bfb635012a055087e319",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2v004.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sf2yyc.ini",
+          "9298d963087d00091aad3ba7592044f9df674566",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfa.ini",
+          "75a54f46351f238d15e01abdff6271c1d1e78a4e",
+          36937
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfa2.ini",
+          "fa810b609964b8e18cfe5b53dee57cf9e4333313",
+          48346
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfa3.ini",
+          "ab52964bb21216728aab7c7638b450ace65a169a",
+          158234
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfa3r1.ini",
+          "75a61b27aff383f29534cfd2c0b8be4d6fd20155",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfar2.ini",
+          "9ad350996a4166ae280b97f3cd8a8cdff03e0676",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfau.ini",
+          "9ad350996a4166ae280b97f3cd8a8cdff03e0676",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfz2a.ini",
+          "de43ae363e4f66ace5e4cd04903576f9a0fe0785",
+          44716
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfz2aa.ini",
+          "329303731d8d81491fd8c06c87fee4ff8024fc21",
+          85777
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfz2aj.ini",
+          "69cfed224da9387f1db0624f21d04ddc1481cb28",
+          85633
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfz2j.ini",
+          "28f91484c3b33f1b31837366ef4a1878b2826a49",
+          44635
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfz3a.ini",
+          "c71a82d5c654c30702890a6fac2256ae34c439ca",
+          158234
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfz3j.ini",
+          "d55e0a7495d4893f1eb48ebed60a071198dced51",
+          158182
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfz3jr1.ini",
+          "967725022fdcaedafccda5af393a0875c0675dcf",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfzch.ini",
+          "ca1c0f8eaf85ffabef49866aba19a5aa7e9c6326",
+          37500
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfzj.ini",
+          "2a7fd4ac2a7fac8e43148b5fa97aea44d3b93691",
+          36781
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfzjr1.ini",
+          "4cd29718eef33c75aa12531bc14c85790d8b8df4",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sfzjr2.ini",
+          "4cd29718eef33c75aa12531bc14c85790d8b8df4",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sgemf.ini",
+          "bb505e2a1455ac8e9167b7372928bc11dc51acdd",
+          39687
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/sgemfa.ini",
+          "1ae275f195a3202d60e8d3075c0547984718c9c2",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/shippumd.ini",
+          "45c40db141ac9d49c589c223d1fea5cb56139ca3",
+          965
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/slammast.ini",
+          "80cb7e5665a2c76446e89cab6e664058df5cd9a7",
+          3129
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/slammasu.ini",
+          "25135a9da37ede80aeb6ce1a97454cc7dfa42dc0",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/smbomb.ini",
+          "3b62231fcc02a3e13005e6d88dff9d24a8ced808",
+          2866
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/smbombr1.ini",
+          "4f05e56da42e6267f0b401f7a67291398c894b3f",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/snowbro2.ini",
+          "4ecf9e54bffe983a04a65922e2a985f99d787a74",
+          648
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/spf2t.ini",
+          "2558bc3da98d2300c1626e7301b889461f9d390d",
+          4739
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/spf2xj.ini",
+          "91cd47429b29f5468824b04f42f28035b09deb0d",
+          4736
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2.ini",
+          "a5d89e2c87b0b44bae2a9151924ed39fd2c24c3b",
+          14459
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2a.ini",
+          "8755758571be157cebcba7fb4e9589e7c4bca27b",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2ar1.ini",
+          "8755758571be157cebcba7fb4e9589e7c4bca27b",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2j.ini",
+          "b51a900570c2ec03992bfc80b7fa9dc73b7d4c2b",
+          14451
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2jr1.ini",
+          "768a836b437ad9f132ae587a9133040b05b45e2c",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2jr2.ini",
+          "768a836b437ad9f132ae587a9133040b05b45e2c",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2t.ini",
+          "49b9bc3147cd3ecaf2493cb2dc0fbdc4fab8168a",
+          25345
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2ta.ini",
+          "e51a4a8b7f5aa5f937688326b3dd156c46e04d10",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2tb.ini",
+          "8755758571be157cebcba7fb4e9589e7c4bca27b",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2tu.ini",
+          "e51a4a8b7f5aa5f937688326b3dd156c46e04d10",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2u.ini",
+          "8755758571be157cebcba7fb4e9589e7c4bca27b",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/ssf2xj.ini",
+          "a50853de1d3b9a29d1123ae41b294d9fd5d4c7a4",
+          25350
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/strider.ini",
+          "6f64634fe59eb28e5f61d9541363e5bab458fc4a",
+          1115
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/striderj.ini",
+          "87328e29a87870419fe40de2441cf84ab0aea442",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/stridrja.ini",
+          "87328e29a87870419fe40de2441cf84ab0aea442",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/stridrua.ini",
+          "87328e29a87870419fe40de2441cf84ab0aea442",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/tekipaki.ini",
+          "6e016f49d5ba6eb7b340b6d6c111b758fa30a63f",
+          1192
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/truxton2.ini",
+          "b0f38c2c6f27c2fc61990359a6cd9a03609acfa1",
+          1059
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/unsquad.ini",
+          "eca5b57002e607bc555bf9b32c429d519a9afad6",
+          3354
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/uopoko.ini",
+          "dc59298027424f21e1c22592e1bddfd92ebd1ba4",
+          2239
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vampj.ini",
+          "f5fb89d277fd2650f2ee504e1d7ea5f7d1b86d8c",
+          2598
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vampja.ini",
+          "6a025d87b08ca42249c241ea98a092e7da12e843",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vampjr1.ini",
+          "6a025d87b08ca42249c241ea98a092e7da12e843",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/varth.ini",
+          "fc46f8ffbae982851673af1d84ad8fa4b07a4ea7",
+          2823
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/varthj.ini",
+          "9b4b740d5343e7831ed1f2dd560b423e77b2fbef",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/varthu.ini",
+          "9b4b740d5343e7831ed1f2dd560b423e77b2fbef",
+          17
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vfive.ini",
+          "c491210bb78404038cd29e3942f7f01913e765f0",
+          236
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vhunt2.ini",
+          "f5129b973a43839f906a6564f76ee6119e170f5b",
+          59801
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vhuntj.ini",
+          "4dc1671e47baf92f3355d2f7d18a3248e76eff9f",
+          4537
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vhuntjr1.ini",
+          "f1c102ad4bfeeaa6e0ee1caa33ae907545faf91d",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vsav.ini",
+          "556a7b7b3a4031711b435d5502444bbc8f3bb893",
+          43502
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vsav2.ini",
+          "55fe0a0434c8371eccbd59754356452daa1bf05a",
+          59429
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vsava.ini",
+          "15e842bf5bff56b2935f168b0ced8c98d670edc5",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vsavj.ini",
+          "9c572e71eb86855b3d64a1a5ac8897253fa1aa62",
+          43214
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/vsavu.ini",
+          "15e842bf5bff56b2935f168b0ced8c98d670edc5",
+          16
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/willow.ini",
+          "54d7065d3becc4ac42358e1a0db94f54bce94fe1",
+          2458
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/willowj.ini",
+          "ee55133a5d09ebf817b0fd9f812c7dd1aee958b5",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/willowje.ini",
+          "ee55133a5d09ebf817b0fd9f812c7dd1aee958b5",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/wof.ini",
+          "5f4083b7ac50dab95029bef82ffc9612a4385e70",
+          3578
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/wofa.ini",
+          "3e2651d9f8154598fa5c5ed16318190fc0f52799",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/wofh.ini",
+          "3e2651d9f8154598fa5c5ed16318190fc0f52799",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/wofj.ini",
+          "3e2651d9f8154598fa5c5ed16318190fc0f52799",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/wofu.ini",
+          "3e2651d9f8154598fa5c5ed16318190fc0f52799",
+          15
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/wonder3.ini",
+          "8acae7e51c311ecd43517e2d8d31bcbf26fe5b74",
+          20
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmcota.ini",
+          "aefe0a9598e64086201e138c05fe517731481b9a",
+          22800
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmcotaa.ini",
+          "93e600f4dab0195a7b2b8dfbf4860ac6c12c6f0e",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmcotaj.ini",
+          "56e20412226ca068243c7c6fa67b24603d93f01c",
+          22800
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmcotaj1.ini",
+          "8be3be216322bc28fe8fd5b56caaf17015d036b0",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmcotajr.ini",
+          "8be3be216322bc28fe8fd5b56caaf17015d036b0",
+          19
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmcotau.ini",
+          "93e600f4dab0195a7b2b8dfbf4860ac6c12c6f0e",
+          18
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmvsf.ini",
+          "b8eee4e1e3161ac5e578281898b7073464b93044",
+          43359
+        ],
+        [
+          "Final Burn Alpha Cheat Archive/xmvsfu.ini",
+          "4ad1e4898a6e24ec9f212420d63a9609bcb86e34",
+          17
+        ],
+        [
+          "cheats/1941.dat",
+          "cd73b5b8d10dae867c42a66de917c529790debe5",
+          1756
+        ],
+        [
+          "cheats/1944.dat",
+          "18fc4fbe4be9c729407a02ba034a04b9f1941dff",
+          1194
+        ],
+        [
+          "cheats/19xx.dat",
+          "8d57d3af41eb199b109ddbeab2f2e72c2b43652f",
+          2642
+        ],
+        [
+          "cheats/2020bb.dat",
+          "e10bfe78bece2c542e19f161bb3e03e1d8c859d1",
+          694
+        ],
+        [
+          "cheats/3countb.dat",
+          "574b544f3ae315ce817bcc91468e97a634b6af22",
+          226
+        ],
+        [
+          "cheats/3wonders.dat",
+          "413708a4ebdc480079d24b8723a33e4036790431",
+          3870
+        ],
+        [
+          "cheats/3wonderu.dat",
+          "413708a4ebdc480079d24b8723a33e4036790431",
+          3870
+        ],
+        [
+          "cheats/alpham2.dat",
+          "834587b9c3280dbe926878cc34f548580402e51d",
+          2403
+        ],
+        [
+          "cheats/androdun.dat",
+          "687c72802b6a5f29bcaf68f68afb85909eb5c05d",
+          417
+        ],
+        [
+          "cheats/aodk.dat",
+          "f63155582bc14cb5f24ad13a55e38598c8c35497",
+          1142
+        ],
+        [
+          "cheats/aof.dat",
+          "8a2797041caf5905b374db10beb0729a81b71aa5",
+          1414
+        ],
+        [
+          "cheats/aof2.dat",
+          "483c40e7e97de04e9bb0efd21ef6038bad643988",
+          2310
+        ],
+        [
+          "cheats/aof3.dat",
+          "2787b9e46e0f936c5cd28b36bd0276c440bcaaa7",
+          916
+        ],
+        [
+          "cheats/area88.dat",
+          "4154bd1a4ca9291068701292487e109123516d33",
+          2608
+        ],
+        [
+          "cheats/armwar.dat",
+          "1902feb34f0f761fb08f9f4f02221f9907eb4422",
+          3571
+        ],
+        [
+          "cheats/armwarr1.dat",
+          "3bd62f9e6a8a66b4eaca8dc3aaaaf25942d86052",
+          3531
+        ],
+        [
+          "cheats/armwaru.dat",
+          "3bd62f9e6a8a66b4eaca8dc3aaaaf25942d86052",
+          3531
+        ],
+        [
+          "cheats/avsp.dat",
+          "d1bd23cf32964849d93f4ff90315298af75ce513",
+          4419
+        ],
+        [
+          "cheats/batcir.dat",
+          "86f9830f9619853c5903b7bb491f3d0eec5948b4",
+          4717
+        ],
+        [
+          "cheats/bjourney.dat",
+          "837dac8b4709744278e3847b9491bc415aa3e38f",
+          1128
+        ],
+        [
+          "cheats/blazstar.dat",
+          "53096437b7b2499aa5a1b9a5175ebca3246b5f50",
+          1156
+        ],
+        [
+          "cheats/breakers.dat",
+          "79e796e962b021cb984210c90f7662ff176e290e",
+          959
+        ],
+        [
+          "cheats/breakrev.dat",
+          "42d2d42b365bf0781b2a648d6ae8e49141ff5a85",
+          545
+        ],
+        [
+          "cheats/bstars2.dat",
+          "ab772a5cffd4f53802011cfa360208e7df3b4549",
+          219
+        ],
+        [
+          "cheats/captcomj.dat",
+          "9bcd676bcfe3d21c3202e8aafca8cc045c0a2ddc",
+          3821
+        ],
+        [
+          "cheats/captcomm.dat",
+          "9bcd676bcfe3d21c3202e8aafca8cc045c0a2ddc",
+          3821
+        ],
+        [
+          "cheats/captcomu.dat",
+          "9bcd676bcfe3d21c3202e8aafca8cc045c0a2ddc",
+          3821
+        ],
+        [
+          "cheats/cawing.dat",
+          "d881a07f0ebccf49603e5dd9989281749d944cc0",
+          2442
+        ],
+        [
+          "cheats/cawingb.dat",
+          "d881a07f0ebccf49603e5dd9989281749d944cc0",
+          2442
+        ],
+        [
+          "cheats/cawingj.dat",
+          "d881a07f0ebccf49603e5dd9989281749d944cc0",
+          2442
+        ],
+        [
+          "cheats/cawingu.dat",
+          "d881a07f0ebccf49603e5dd9989281749d944cc0",
+          2442
+        ],
+        [
+          "cheats/chikij.dat",
+          "5be7a5d11e59cb0d0bcbbf5dbdfa97e90974f2c6",
+          2143
+        ],
+        [
+          "cheats/crsword.dat",
+          "58ab660ec0536acaabe21ca6bda7f5c99a6967d7",
+          1233
+        ],
+        [
+          "cheats/csclub.dat",
+          "bfa7ed5867f50dff946177e89165908d7b07445c",
+          213
+        ],
+        [
+          "cheats/cscluba.dat",
+          "d36f050b18ce9f8150681d2acdd63ac0529c5fcf",
+          4129
+        ],
+        [
+          "cheats/csclubj.dat",
+          "d36f050b18ce9f8150681d2acdd63ac0529c5fcf",
+          4129
+        ],
+        [
+          "cheats/cworld2j.dat",
+          "99f24eac1c12e1bb62e035b594972233e3a37e51",
+          368
+        ],
+        [
+          "cheats/cyberlip.dat",
+          "58587dbca79ac5366ba9c6836d5b824384128791",
+          741
+        ],
+        [
+          "cheats/cybots.dat",
+          "3d79d367bebdea2ae4f4671a91267640f9aaeaec",
+          4302
+        ],
+        [
+          "cheats/cybotsj.dat",
+          "3d79d367bebdea2ae4f4671a91267640f9aaeaec",
+          4302
+        ],
+        [
+          "cheats/daimakai.dat",
+          "e18fec3d853e74d6e63c5abd64121f0a90f68fcf",
+          2160
+        ],
+        [
+          "cheats/ddsom.dat",
+          "259c0269e6ae4f33ceb6aa71531ab24522c72c55",
+          36761
+        ],
+        [
+          "cheats/ddsomjr1.dat",
+          "259c0269e6ae4f33ceb6aa71531ab24522c72c55",
+          36761
+        ],
+        [
+          "cheats/ddsomu.dat",
+          "259c0269e6ae4f33ceb6aa71531ab24522c72c55",
+          36761
+        ],
+        [
+          "cheats/ddsomur1.dat",
+          "259c0269e6ae4f33ceb6aa71531ab24522c72c55",
+          36761
+        ],
+        [
+          "cheats/ddtod.dat",
+          "36443db69bed0e5cdc0495c73c02428c6b8f6a3f",
+          29786
+        ],
+        [
+          "cheats/ddtodh.dat",
+          "36443db69bed0e5cdc0495c73c02428c6b8f6a3f",
+          29786
+        ],
+        [
+          "cheats/ddtodj.dat",
+          "36443db69bed0e5cdc0495c73c02428c6b8f6a3f",
+          29786
+        ],
+        [
+          "cheats/ddtodu.dat",
+          "36443db69bed0e5cdc0495c73c02428c6b8f6a3f",
+          29786
+        ],
+        [
+          "cheats/ddtodur1.dat",
+          "36443db69bed0e5cdc0495c73c02428c6b8f6a3f",
+          29786
+        ],
+        [
+          "cheats/dimahoo.dat",
+          "1ad208cb935fa747b505836f1e0e0493a11df964",
+          800
+        ],
+        [
+          "cheats/dino.dat",
+          "ed59bf62e2c6a58026341e3912dbd884efa8c33c",
+          1573
+        ],
+        [
+          "cheats/dinoh.dat",
+          "ed59bf62e2c6a58026341e3912dbd884efa8c33c",
+          1573
+        ],
+        [
+          "cheats/dinoj.dat",
+          "ed59bf62e2c6a58026341e3912dbd884efa8c33c",
+          1573
+        ],
+        [
+          "cheats/dinou.dat",
+          "ed59bf62e2c6a58026341e3912dbd884efa8c33c",
+          1573
+        ],
+        [
+          "cheats/doubledr.dat",
+          "96bda908a53a9f55bd16b166499762d4cf2936b6",
+          962
+        ],
+        [
+          "cheats/dstlk.dat",
+          "8ec8a727b34d3072fe1cd3f3ee71d42b649baec5",
+          2008
+        ],
+        [
+          "cheats/dstlka.dat",
+          "8ec8a727b34d3072fe1cd3f3ee71d42b649baec5",
+          2008
+        ],
+        [
+          "cheats/dstlku.dat",
+          "8ec8a727b34d3072fe1cd3f3ee71d42b649baec5",
+          2008
+        ],
+        [
+          "cheats/dstlkur1.dat",
+          "8ec8a727b34d3072fe1cd3f3ee71d42b649baec5",
+          2008
+        ],
+        [
+          "cheats/dw.dat",
+          "45b443859ec81016d6f375d4d344587ff0dc81c1",
+          1432
+        ],
+        [
+          "cheats/dwj.dat",
+          "45b443859ec81016d6f375d4d344587ff0dc81c1",
+          1432
+        ],
+        [
+          "cheats/ecofghtr.dat",
+          "14c2dc749a0ebab33222f96ce66f76f0892e5ea2",
+          1953
+        ],
+        [
+          "cheats/eightman.dat",
+          "dd8410b1f0bf0ac4c12274eea6af0a07d24b4bfa",
+          425
+        ],
+        [
+          "cheats/fatfursa.dat",
+          "83d5e36340b5fdf574e0417918d5072a08fb940a",
+          2187
+        ],
+        [
+          "cheats/fatfursp.dat",
+          "196599a863f00600f4d91d02cc3d4eb8d72e2f31",
+          1630
+        ],
+        [
+          "cheats/fatfury1.dat",
+          "802199fd79af727b4d14dfc49ab993b9bc53a51d",
+          831
+        ],
+        [
+          "cheats/fatfury2.dat",
+          "b451c7af56dbcbf76b3250de7f12e5aeb4aed5fa",
+          1346
+        ],
+        [
+          "cheats/fatfury3.dat",
+          "85776c78519b78467f6ce2fad2432cbcb584f46b",
+          1487
+        ],
+        [
+          "cheats/ffight.dat",
+          "e7e46154d33b0d5f3729b9a3b1e21a290b8bcee8",
+          2048
+        ],
+        [
+          "cheats/ffightj.dat",
+          "e7e46154d33b0d5f3729b9a3b1e21a290b8bcee8",
+          2048
+        ],
+        [
+          "cheats/ffightu.dat",
+          "e7e46154d33b0d5f3729b9a3b1e21a290b8bcee8",
+          2048
+        ],
+        [
+          "cheats/fightfev.dat",
+          "6a1a62ec04919242bfa1503d752e6bb5ce38b8c5",
+          200
+        ],
+        [
+          "cheats/flipshot.dat",
+          "909298112b88419b8b60d104b2dc41389115b58d",
+          145
+        ],
+        [
+          "cheats/forgottn.dat",
+          "9bff5e4a56884cdfb80df6b1fca6d36ff9499f91",
+          2344
+        ],
+        [
+          "cheats/galaxyfg.dat",
+          "f4e54c8e226ac2b5c8a1682dd47ec4eeb31fa2e1",
+          1065
+        ],
+        [
+          "cheats/ganryu.dat",
+          "d3b7abb6e1fd379b4b4203e50526dea4eb46deda",
+          795
+        ],
+        [
+          "cheats/garou.dat",
+          "c9a65a8720f1da25474d56f9b02a229d8b5c143f",
+          2052
+        ],
+        [
+          "cheats/garoup.dat",
+          "3fb54318458ecf77b173a07910ac2607ee4ad9d2",
+          2449
+        ],
+        [
+          "cheats/ghouls.dat",
+          "e18fec3d853e74d6e63c5abd64121f0a90f68fcf",
+          2160
+        ],
+        [
+          "cheats/ghoulsu.dat",
+          "e18fec3d853e74d6e63c5abd64121f0a90f68fcf",
+          2160
+        ],
+        [
+          "cheats/gigawing.dat",
+          "ae04986807f5300bd698c79d323b064e47a75b5d",
+          2515
+        ],
+        [
+          "cheats/gmahou.dat",
+          "1ad208cb935fa747b505836f1e0e0493a11df964",
+          800
+        ],
+        [
+          "cheats/goalx3.dat",
+          "c21bce071a6d08b7ca5501d8545ec96abe401a88",
+          372
+        ],
+        [
+          "cheats/gowcaizr.dat",
+          "071f2f66278ddb2090e3bb9990126ff8fa5ad6ba",
+          267
+        ],
+        [
+          "cheats/gpilots.dat",
+          "b022905bb5cfcc469da1637f26fc44511fb0b9bf",
+          832
+        ],
+        [
+          "cheats/gwingj.dat",
+          "ae04986807f5300bd698c79d323b064e47a75b5d",
+          2515
+        ],
+        [
+          "cheats/irrmaze.dat",
+          "a4285bd1c420cc84bec0628721225e8211d3ebf4",
+          632
+        ],
+        [
+          "cheats/janshin.dat",
+          "61bcc697a6bb90895ccede7640e8620ace0dd529",
+          86
+        ],
+        [
+          "cheats/joyjoy.dat",
+          "15f888b69f925f4b6b1a078a7a4f1efb1542376a",
+          362
+        ],
+        [
+          "cheats/kabukikl.dat",
+          "146d1bac51b7e8ddfc10f959fd7ee8516668e237",
+          1246
+        ],
+        [
+          "cheats/kizuna.dat",
+          "4eacfdc57ea0df9245ff182a02f3a407f92c8bbd",
+          208
+        ],
+        [
+          "cheats/kl2d.dat",
+          "ed59bf62e2c6a58026341e3912dbd884efa8c33c",
+          1573
+        ],
+        [
+          "cheats/knights.dat",
+          "abc1c1a5682b1dbdcba5813123b4c1f0a699b8d0",
+          1948
+        ],
+        [
+          "cheats/knightsh.dat",
+          "abc1c1a5682b1dbdcba5813123b4c1f0a699b8d0",
+          1948
+        ],
+        [
+          "cheats/knightsj.dat",
+          "abc1c1a5682b1dbdcba5813123b4c1f0a699b8d0",
+          1948
+        ],
+        [
+          "cheats/knightsu.dat",
+          "abc1c1a5682b1dbdcba5813123b4c1f0a699b8d0",
+          1948
+        ],
+        [
+          "cheats/kod.dat",
+          "13f6ca8bc5f751e48041d93d58dd364e7f605376",
+          2700
+        ],
+        [
+          "cheats/kodb.dat",
+          "13f6ca8bc5f751e48041d93d58dd364e7f605376",
+          2700
+        ],
+        [
+          "cheats/kodj.dat",
+          "13f6ca8bc5f751e48041d93d58dd364e7f605376",
+          2700
+        ],
+        [
+          "cheats/kodu.dat",
+          "13f6ca8bc5f751e48041d93d58dd364e7f605376",
+          2700
+        ],
+        [
+          "cheats/kof10th.dat",
+          "e9ae0d738a0e3420267eabe22af0269b2e68b340",
+          21464
+        ],
+        [
+          "cheats/kof2000.dat",
+          "c3b2f91bfe10a362ea26c521edec4ed6c377487d",
+          8016
+        ],
+        [
+          "cheats/kof2001.dat",
+          "2b9775a7cfaccde065708bc1bd892f30b11e37d2",
+          7785
+        ],
+        [
+          "cheats/kof2002.dat",
+          "bb453822fc17416e7baa554c2ecc3eed6fd79084",
+          2317
+        ],
+        [
+          "cheats/kof2k2pls.dat",
+          "6166a39332b56ae22a427299312f7c89a93699e7",
+          17072
+        ],
+        [
+          "cheats/kof2k4spe.dat",
+          "6166a39332b56ae22a427299312f7c89a93699e7",
+          17072
+        ],
+        [
+          "cheats/kof2knd.dat",
+          "df3491080e0bf577be0c83ae5d3fb413aba61d7e",
+          7976
+        ],
+        [
+          "cheats/kof94.dat",
+          "be032b0fd1e2f5b039af907561f90809e593677a",
+          5893
+        ],
+        [
+          "cheats/kof95.dat",
+          "0771479919943b1b6f47764a4d3f9e4a83db1fa7",
+          6431
+        ],
+        [
+          "cheats/kof96.dat",
+          "4b70d231c3f0f3afc4f4b6fdc7102bf77d654605",
+          2979
+        ],
+        [
+          "cheats/kof97.dat",
+          "7ebb540581e941855575619c13b4f873ca245ad8",
+          7815
+        ],
+        [
+          "cheats/kof97pls.dat",
+          "0206df0aecba912b9411bb51b51063c5407ec308",
+          9148
+        ],
+        [
+          "cheats/kof98.dat",
+          "1db1b10639c88ee8792183a7c3591893c925eb2d",
+          9305
+        ],
+        [
+          "cheats/kof99.dat",
+          "0b6e500bd25588c1c494857789cdd9d592cf137e",
+          4378
+        ],
+        [
+          "cheats/kof99p.dat",
+          "c81281b12638d79d475020acfbe1a5760996a004",
+          12385
+        ],
+        [
+          "cheats/kotm2.dat",
+          "0bb3145a76738cefe2eb6668309a706393fe7f7b",
+          342
+        ],
+        [
+          "cheats/kouryu.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/lastblad.dat",
+          "1634a776064bda1e189366d75a0bfb88a62e876f",
+          306
+        ],
+        [
+          "cheats/lastbld2.dat",
+          "2acaa20553c53888a38db8dd98fe0a19680b92c4",
+          2374
+        ],
+        [
+          "cheats/legendos.dat",
+          "8057b1580fdcf3a7e3a38d13309a834226a624d0",
+          145
+        ],
+        [
+          "cheats/lostwrld.dat",
+          "9bff5e4a56884cdfb80df6b1fca6d36ff9499f91",
+          2344
+        ],
+        [
+          "cheats/lresort.dat",
+          "a383a4df76eb8832e964c073d902f19844f21438",
+          1040
+        ],
+        [
+          "cheats/magdrop2.dat",
+          "2c8054da2db624bcfc6dfc2856e47564ae4d8119",
+          80
+        ],
+        [
+          "cheats/magdrop3.dat",
+          "7773081e2f79401898c26fd81b41c2a7691a4423",
+          209
+        ],
+        [
+          "cheats/maglord.dat",
+          "dde2ef65eb1e61467e414c98631d16cfcec354b3",
+          742
+        ],
+        [
+          "cheats/mahretsu.dat",
+          "914a17e27992117d1f37db27c3140d461be99591",
+          79
+        ],
+        [
+          "cheats/marukodq.dat",
+          "3f38b3916a475225aea7bc8621b0af30dc87832d",
+          87
+        ],
+        [
+          "cheats/matrim.dat",
+          "f6946324c0e824122c976810fb0c2c5457094b41",
+          1980
+        ],
+        [
+          "cheats/mbomberj.dat",
+          "1a273db3b64039468561ce8cf46d9e1e5119768b",
+          2304
+        ],
+        [
+          "cheats/mbombrd.dat",
+          "5ba9e9cc3a833f7517cee62c8992bc51a942aa95",
+          513
+        ],
+        [
+          "cheats/mbombrdj.dat",
+          "5ba9e9cc3a833f7517cee62c8992bc51a942aa95",
+          513
+        ],
+        [
+          "cheats/megaman.dat",
+          "cb40c77933ccf821d7a1f626945a02dd55c1ed17",
+          3198
+        ],
+        [
+          "cheats/megaman2.dat",
+          "0d2d1357647d2ba95e2a0225703a540beefd84b1",
+          3528
+        ],
+        [
+          "cheats/mercs.dat",
+          "8a41c355bef6707736e3486382d6342c4b02784b",
+          2307
+        ],
+        [
+          "cheats/mercsj.dat",
+          "8a41c355bef6707736e3486382d6342c4b02784b",
+          2307
+        ],
+        [
+          "cheats/mercsu.dat",
+          "8a41c355bef6707736e3486382d6342c4b02784b",
+          2307
+        ],
+        [
+          "cheats/mercsua.dat",
+          "8a41c355bef6707736e3486382d6342c4b02784b",
+          2307
+        ],
+        [
+          "cheats/mmatrix.dat",
+          "ea9d404323aa216ef15723952e10af30ad0d6c82",
+          636
+        ],
+        [
+          "cheats/mmatrixj.dat",
+          "ea9d404323aa216ef15723952e10af30ad0d6c82",
+          636
+        ],
+        [
+          "cheats/mpangj.dat",
+          "84d088a1384b3cb817a4ce7ca3ca3890896684ba",
+          1518
+        ],
+        [
+          "cheats/msh.dat",
+          "85e52bfa72e78cb62b505f0d03d7bfd244716bbc",
+          14283
+        ],
+        [
+          "cheats/msha.dat",
+          "85e52bfa72e78cb62b505f0d03d7bfd244716bbc",
+          14283
+        ],
+        [
+          "cheats/mshb.dat",
+          "85e52bfa72e78cb62b505f0d03d7bfd244716bbc",
+          14283
+        ],
+        [
+          "cheats/mshh.dat",
+          "85e52bfa72e78cb62b505f0d03d7bfd244716bbc",
+          14283
+        ],
+        [
+          "cheats/mshj.dat",
+          "85e52bfa72e78cb62b505f0d03d7bfd244716bbc",
+          14283
+        ],
+        [
+          "cheats/mshvsf.dat",
+          "8cadaf3ca2cbe048d9321447ab5c7988a1c2c328",
+          77197
+        ],
+        [
+          "cheats/mshvsfj.dat",
+          "29f7899d5bb020a1d98f6e731044b673acc836e0",
+          76435
+        ],
+        [
+          "cheats/mshvsfj1.dat",
+          "29f7899d5bb020a1d98f6e731044b673acc836e0",
+          76435
+        ],
+        [
+          "cheats/mshvsfu1.dat",
+          "8cadaf3ca2cbe048d9321447ab5c7988a1c2c328",
+          77197
+        ],
+        [
+          "cheats/mslug.dat",
+          "54b82fddc2d0d0a518d98f41341b00c585c94645",
+          1181
+        ],
+        [
+          "cheats/mslug2.dat",
+          "2ea2fa29a1c9b1750513d929f55fa2406c7cd242",
+          1491
+        ],
+        [
+          "cheats/mslug3.dat",
+          "573f0e000d4284eb4621de8707d9f924dd18f18b",
+          3485
+        ],
+        [
+          "cheats/mslug3n.dat",
+          "06e486c64b67d5217ec95c139fb3aa2faa287d0b",
+          3453
+        ],
+        [
+          "cheats/mslug3nd.dat",
+          "ff83a54ce42a23aedc8a456eb37a474dddac5dd9",
+          4143
+        ],
+        [
+          "cheats/mslug4.dat",
+          "511dd2cf647bdd48261504121bdbff02dbfc9bfa",
+          2069
+        ],
+        [
+          "cheats/mslug5.dat",
+          "7e4f22228f680c8928d98638ea5125e74fe809af",
+          2799
+        ],
+        [
+          "cheats/mslugx.dat",
+          "25a694f486db3fec0637a4a35c6c0e6f352fb18e",
+          1386
+        ],
+        [
+          "cheats/msword.dat",
+          "280c34c20bf514e16dd79a605264a8f5f657efe0",
+          3519
+        ],
+        [
+          "cheats/mswordj.dat",
+          "280c34c20bf514e16dd79a605264a8f5f657efe0",
+          3519
+        ],
+        [
+          "cheats/mswordr1.dat",
+          "280c34c20bf514e16dd79a605264a8f5f657efe0",
+          3519
+        ],
+        [
+          "cheats/mswordu.dat",
+          "280c34c20bf514e16dd79a605264a8f5f657efe0",
+          3519
+        ],
+        [
+          "cheats/mtwins.dat",
+          "5be7a5d11e59cb0d0bcbbf5dbdfa97e90974f2c6",
+          2143
+        ],
+        [
+          "cheats/mutnat.dat",
+          "52b70681b47edd49a448a0ced61fdc02e8b7fb9a",
+          614
+        ],
+        [
+          "cheats/mvsc.dat",
+          "00e8b421ffbcc87585bbb1f4c6e8ba2518eb0886",
+          8345
+        ],
+        [
+          "cheats/mvsca.dat",
+          "bc229305d48a2364a3b2d561e3ffcc19f81cd903",
+          80995
+        ],
+        [
+          "cheats/mvscj.dat",
+          "93e0f6b1996fe995f3a4453dc275228eb57c05d8",
+          80827
+        ],
+        [
+          "cheats/mvscjr1.dat",
+          "93e0f6b1996fe995f3a4453dc275228eb57c05d8",
+          80827
+        ],
+        [
+          "cheats/nam1975.dat",
+          "9610ecb2b91444f31316defe45cb1c2bcfd569dc",
+          484
+        ],
+        [
+          "cheats/ncombat.dat",
+          "7e142bf0fbad83fc79944a871afe33a57b1c4a4a",
+          646
+        ],
+        [
+          "cheats/ncommand.dat",
+          "ed115b8751f4216f7c5ba7a9e19f719cb9a3eddd",
+          558
+        ],
+        [
+          "cheats/nemo.dat",
+          "e30418fd3afad22a01efd5477e85542cdc3a63ab",
+          1549
+        ],
+        [
+          "cheats/nemoj.dat",
+          "e30418fd3afad22a01efd5477e85542cdc3a63ab",
+          1549
+        ],
+        [
+          "cheats/neobombe.dat",
+          "615a7fae3638f94602d74ae9559c166cf126646f",
+          3077
+        ],
+        [
+          "cheats/neocup98.dat",
+          "6c6844d7582e5b34a3794d069377b09886f7c272",
+          221
+        ],
+        [
+          "cheats/neodrift.dat",
+          "760aa87b78e50cf3d01712a4471fce44d685ce96",
+          285
+        ],
+        [
+          "cheats/neomrdo.dat",
+          "990adee807d9142bc75f4907b748c379f8c23305",
+          145
+        ],
+        [
+          "cheats/neopong.dat",
+          "5e106038b5dde4d9c72007f8d32a56417db504f3",
+          21
+        ],
+        [
+          "cheats/ninjamas.dat",
+          "2464278d46e9de5818205127279f318307abd223",
+          1600
+        ],
+        [
+          "cheats/nitd.dat",
+          "f9d60cfd51783679bd2eec3f2991a0f311cf09f1",
+          884
+        ],
+        [
+          "cheats/nwarr.dat",
+          "0c799a2ba2d1977c49126e701db9a6731d22b088",
+          3483
+        ],
+        [
+          "cheats/overtop.dat",
+          "f014ab7059601846e76d335f0cf2f3d8bee5fcd3",
+          80
+        ],
+        [
+          "cheats/pang3.dat",
+          "f09ffc1e2b7c6fae61e06c7c2bc8103aab5ca07f",
+          1062
+        ],
+        [
+          "cheats/pang3j.dat",
+          "f09ffc1e2b7c6fae61e06c7c2bc8103aab5ca07f",
+          1062
+        ],
+        [
+          "cheats/panicbom.dat",
+          "9fce223edbac21f74e613157f62509e0bc76a4bf",
+          145
+        ],
+        [
+          "cheats/pbobbl2n.dat",
+          "04304d96e06ea61dfc371754db5b7a4976d9aabd",
+          255
+        ],
+        [
+          "cheats/pbobblen.dat",
+          "c8cf0d2202bf1ff59f52eaf48b35ec063cf38096",
+          1296
+        ],
+        [
+          "cheats/pfghtj.dat",
+          "3bcc197a6073aa8f7222db72f0196afed9ffdb00",
+          27657
+        ],
+        [
+          "cheats/pgear.dat",
+          "88b339d86a489a564873e24f9fefa1e1196f980d",
+          3392
+        ],
+        [
+          "cheats/pgearr1.dat",
+          "88b339d86a489a564873e24f9fefa1e1196f980d",
+          3392
+        ],
+        [
+          "cheats/pgoal.dat",
+          "b8789de2c8ca8f40b98e1ff039927155d200b52b",
+          205
+        ],
+        [
+          "cheats/pnickj.dat",
+          "e92e0649ba17f8d87a1a3de6fcb7008f2310637b",
+          1828
+        ],
+        [
+          "cheats/preisle2.dat",
+          "5e6ddd47fc93eb0e88e7ac5072bbd1f562027130",
+          1833
+        ],
+        [
+          "cheats/progear.dat",
+          "5812e8fef86426aeaeee77d41142af5c16029bdc",
+          1030
+        ],
+        [
+          "cheats/progearj.dat",
+          "f559c609b98c80851816e8d25e5a8e8229bca280",
+          1205
+        ],
+        [
+          "cheats/pspikes2.dat",
+          "fd3a5752d708053e2b60012be6655dff3ddb7a15",
+          166
+        ],
+        [
+          "cheats/pulstar.dat",
+          "c866c9cba543cd0d32422c90b1c4a7ae578a2155",
+          496
+        ],
+        [
+          "cheats/punisher.dat",
+          "ffa1543a34703682bc370a9408f1e9a6b909d3c4",
+          934
+        ],
+        [
+          "cheats/punishrj.dat",
+          "ffa1543a34703682bc370a9408f1e9a6b909d3c4",
+          934
+        ],
+        [
+          "cheats/punishru.dat",
+          "ffa1543a34703682bc370a9408f1e9a6b909d3c4",
+          934
+        ],
+        [
+          "cheats/puzzledp.dat",
+          "bfb595c85ac29de3be1f734b3c695e8ef6f0d35e",
+          1123
+        ],
+        [
+          "cheats/pzloop2j.dat",
+          "fdac51e12cb61153553bd0d48d7965f9c780a3a3",
+          920
+        ],
+        [
+          "cheats/qad.dat",
+          "031ae08a4fe7b969524e1e0facba587f7e157254",
+          1646
+        ],
+        [
+          "cheats/qadj.dat",
+          "f6cd350322c06bf1ff3f95f58916484378cdfb38",
+          506
+        ],
+        [
+          "cheats/qndream.dat",
+          "04a4f2efc9f1dd73521c630087eea886dc27208a",
+          4227
+        ],
+        [
+          "cheats/qtono2.dat",
+          "b277dc05c229dd379544dec8c52d362a37c2f5d3",
+          362
+        ],
+        [
+          "cheats/quizdai2.dat",
+          "ab0469117f1f1a5e411dba0ebf93f0ff3a515ef9",
+          1065
+        ],
+        [
+          "cheats/quizkof.dat",
+          "5e106038b5dde4d9c72007f8d32a56417db504f3",
+          21
+        ],
+        [
+          "cheats/ragnagrd.dat",
+          "30c96e2e26c4d81c781cab0e8edebbf8c10417c6",
+          96
+        ],
+        [
+          "cheats/rbff1.dat",
+          "115c24cc7b586d96be16d1700343c7dd329e6b05",
+          2851
+        ],
+        [
+          "cheats/rbff2.dat",
+          "916019cf34a7739df4fdef6a125104b0c64e4de8",
+          2605
+        ],
+        [
+          "cheats/rbffspec.dat",
+          "8e72038386a774a9949c81da9cf07d1d3ba03685",
+          2214
+        ],
+        [
+          "cheats/rckman2j.dat",
+          "0d2d1357647d2ba95e2a0225703a540beefd84b1",
+          3528
+        ],
+        [
+          "cheats/ridhero.dat",
+          "89ba437fe08a54d3348c77196216d65e3a6aef07",
+          168
+        ],
+        [
+          "cheats/ringdest.dat",
+          "212dbf079aaad4fcf7defad95ef4217ba2d758f2",
+          2155
+        ],
+        [
+          "cheats/roboarmy.dat",
+          "f3964cf478096b51778ad51927e8697174734451",
+          275
+        ],
+        [
+          "cheats/rockmanj.dat",
+          "f744703289092faa9010276653b408c1da0574b7",
+          3194
+        ],
+        [
+          "cheats/rotd.dat",
+          "8708e3756cd4d6aa3d67f785217d6afdd07e4a43",
+          2535
+        ],
+        [
+          "cheats/s1945p.dat",
+          "2fb1f721f452322ec82580354757346e729d28cf",
+          1530
+        ],
+        [
+          "cheats/samsho.dat",
+          "781546a84d648e0710ce7aba5bfb96c8d19936d7",
+          1452
+        ],
+        [
+          "cheats/samsho2.dat",
+          "d5a2432f6fb3c218e03aa2d11d4f3bcd4d7b1f10",
+          1864
+        ],
+        [
+          "cheats/samsho3.dat",
+          "af6a5965aa07a6936c946fb9ed97276d2da6d39b",
+          2972
+        ],
+        [
+          "cheats/samsho4.dat",
+          "4a7e120e70908c08a3e98b4c193dd39553151a66",
+          2604
+        ],
+        [
+          "cheats/savagedb.dat",
+          "519040b4ec2d4a995f972645b86b76677b2d3325",
+          428
+        ],
+        [
+          "cheats/savagere.dat",
+          "280a868b003f1f02eaee10f8d451ed0d769a88cd",
+          1260
+        ],
+        [
+          "cheats/sdodgeb.dat",
+          "cbd595b4b329a6ef2e939908e341a4172682d6c5",
+          8180
+        ],
+        [
+          "cheats/sengokh.dat",
+          "cd9211bcf565f2f58f0e72a5299ab7a1aa5032f7",
+          689
+        ],
+        [
+          "cheats/sengoku.dat",
+          "bdd571a372a52458e3cdd5a0b8bb95950d775624",
+          1308
+        ],
+        [
+          "cheats/sengoku2.dat",
+          "c45b86094312c3097b9ab2605d994bc31bfdf352",
+          480
+        ],
+        [
+          "cheats/sengoku3.dat",
+          "aefd492eb6df308929e57bb966e59ad37826760b",
+          1363
+        ],
+        [
+          "cheats/sf2.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2accp2.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2ce.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2cej.dat",
+          "dfecfef5c90b6519fc9b19575a1f4d7ac9628b24",
+          7923
+        ],
+        [
+          "cheats/sf2ceua.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2ceub.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2ceue.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2eg.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2j.dat",
+          "11ae4b7e37e8838bd163975cdc85bc75ae73ae10",
+          6043
+        ],
+        [
+          "cheats/sf2ja.dat",
+          "11ae4b7e37e8838bd163975cdc85bc75ae73ae10",
+          6043
+        ],
+        [
+          "cheats/sf2jc.dat",
+          "11ae4b7e37e8838bd163975cdc85bc75ae73ae10",
+          6043
+        ],
+        [
+          "cheats/sf2m-1.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2m-2.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2m-3.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2m-4.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2m-5.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2m-6.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2m-7.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2rb.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2rb2.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2red.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2t.dat",
+          "dce7628e46ba23b2a60e9e4b08c96c8b3338c530",
+          8927
+        ],
+        [
+          "cheats/sf2tj.dat",
+          "1f9915f9fa5daac22a18730c50935f24619e5cfd",
+          8933
+        ],
+        [
+          "cheats/sf2ua.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2ub.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2ud.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2ue.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2uf.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2ui.dat",
+          "49592baae560827b1e3fd033af8d82470f510fa2",
+          6043
+        ],
+        [
+          "cheats/sf2v004.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sf2yyc.dat",
+          "262cf77baf665b9f13164a707e9f6e57163049b6",
+          7919
+        ],
+        [
+          "cheats/sfa.dat",
+          "7925c7cd2fe6c4d4048d430676f33fed7c6e6efe",
+          25542
+        ],
+        [
+          "cheats/sfa2.dat",
+          "a15568992475f4ff35f2b0381c07458581e28e16",
+          33822
+        ],
+        [
+          "cheats/sfa3.dat",
+          "c3c75c497bcd7ca169ad7a013ec6d61c24948a41",
+          111788
+        ],
+        [
+          "cheats/sfa3_nebula.dat",
+          "b95bcec3f8a6d82325c2c2167f99c0c1c3ef6e52",
+          5098
+        ],
+        [
+          "cheats/sfa3r1.dat",
+          "c3c75c497bcd7ca169ad7a013ec6d61c24948a41",
+          111788
+        ],
+        [
+          "cheats/sfach.dat",
+          "b8d96e9f21672a22efa883cf4e3e8a228da5e181",
+          965
+        ],
+        [
+          "cheats/sfar2.dat",
+          "7925c7cd2fe6c4d4048d430676f33fed7c6e6efe",
+          25542
+        ],
+        [
+          "cheats/sfau.dat",
+          "7925c7cd2fe6c4d4048d430676f33fed7c6e6efe",
+          25542
+        ],
+        [
+          "cheats/sfz2.dat",
+          "28d790e12434e04a7584fb1f3c8f8a1f7bd993e8",
+          1629
+        ],
+        [
+          "cheats/sfz2a.dat",
+          "1364a384db4f45cd9588033df9edd4030412825f",
+          31274
+        ],
+        [
+          "cheats/sfz2aa.dat",
+          "d42c5ffe00166df221187b441320a64e4ab7d1b0",
+          60127
+        ],
+        [
+          "cheats/sfz2aj.dat",
+          "75f16c9e1564631f8e1898e947655c1361954af9",
+          59983
+        ],
+        [
+          "cheats/sfz2j.dat",
+          "b9799fae5f1f8c34453b82393fcedc0a074df52b",
+          31193
+        ],
+        [
+          "cheats/sfz3a.dat",
+          "41c6fea724ef3e3a88d3121b7d9454a7212e48ca",
+          111788
+        ],
+        [
+          "cheats/sfz3j.dat",
+          "17e08d0de36e7b37f156116949b227d93aeefb60",
+          111736
+        ],
+        [
+          "cheats/sfz3jr1.dat",
+          "17e08d0de36e7b37f156116949b227d93aeefb60",
+          111736
+        ],
+        [
+          "cheats/sfz3r1.dat",
+          "b657969467933c2129e1b832e5b99a7f9f6cd039",
+          4311
+        ],
+        [
+          "cheats/sfzch.dat",
+          "725401c3c4797e9a8113d9a23cffc59ca611c4f1",
+          25900
+        ],
+        [
+          "cheats/sfzj.dat",
+          "d843c18b8f65aa8b8a4eee0c734b875811c4a02c",
+          25386
+        ],
+        [
+          "cheats/sfzjr1.dat",
+          "d843c18b8f65aa8b8a4eee0c734b875811c4a02c",
+          25386
+        ],
+        [
+          "cheats/sfzjr2.dat",
+          "d843c18b8f65aa8b8a4eee0c734b875811c4a02c",
+          25386
+        ],
+        [
+          "cheats/sgemf.dat",
+          "f38bea7f1676d97ec97aff5b8974107b3f68d7f1",
+          27739
+        ],
+        [
+          "cheats/sgemfa.dat",
+          "f38bea7f1676d97ec97aff5b8974107b3f68d7f1",
+          27739
+        ],
+        [
+          "cheats/shocktr2.dat",
+          "2342149a9edbeff4c0f59ea823dd32f7d74ee23f",
+          618
+        ],
+        [
+          "cheats/shocktra.dat",
+          "07a81bd4a690562f5348548b278cde0ffc8bb13c",
+          1277
+        ],
+        [
+          "cheats/shocktro.dat",
+          "07a81bd4a690562f5348548b278cde0ffc8bb13c",
+          1277
+        ],
+        [
+          "cheats/slammast.dat",
+          "1a273db3b64039468561ce8cf46d9e1e5119768b",
+          2304
+        ],
+        [
+          "cheats/slammasu.dat",
+          "1a273db3b64039468561ce8cf46d9e1e5119768b",
+          2304
+        ],
+        [
+          "cheats/smbomb.dat",
+          "0b6c37cb3686014a09ac1e04db039920f9119a54",
+          2151
+        ],
+        [
+          "cheats/smbombr1.dat",
+          "0b6c37cb3686014a09ac1e04db039920f9119a54",
+          2151
+        ],
+        [
+          "cheats/socbrawl.dat",
+          "2e152493e80a69a40f7bdcf1c2c945f1fc5c1397",
+          424
+        ],
+        [
+          "cheats/sonicwi2.dat",
+          "601211d4ee23f3231ffc9aacc000adb628fca513",
+          1253
+        ],
+        [
+          "cheats/sonicwi3.dat",
+          "ce5b540b8a157998253ee2252581f8d63b085601",
+          2283
+        ],
+        [
+          "cheats/spf2t.dat",
+          "959012fd1b211cd59c1597f13e0c36633e044d48",
+          3239
+        ],
+        [
+          "cheats/spf2xj.dat",
+          "480b6da1c1fba56e54157a2e6991646094863876",
+          3236
+        ],
+        [
+          "cheats/spinmast.dat",
+          "45a0065c88a8835424dea992546d962e133a1b6b",
+          146
+        ],
+        [
+          "cheats/ssf2.dat",
+          "3f5ccfd019541a05f6184ef8e76c416ef0041886",
+          10443
+        ],
+        [
+          "cheats/ssf2a.dat",
+          "3f5ccfd019541a05f6184ef8e76c416ef0041886",
+          10443
+        ],
+        [
+          "cheats/ssf2ar1.dat",
+          "3f5ccfd019541a05f6184ef8e76c416ef0041886",
+          10443
+        ],
+        [
+          "cheats/ssf2j.dat",
+          "5ce2ff6da2a8b5368579a3fca77eb91110aca482",
+          10435
+        ],
+        [
+          "cheats/ssf2jr1.dat",
+          "5ce2ff6da2a8b5368579a3fca77eb91110aca482",
+          10435
+        ],
+        [
+          "cheats/ssf2jr2.dat",
+          "5ce2ff6da2a8b5368579a3fca77eb91110aca482",
+          10435
+        ],
+        [
+          "cheats/ssf2t.dat",
+          "f37576f1fa5f92a273df7a501c6e1f72de2fba45",
+          18201
+        ],
+        [
+          "cheats/ssf2ta.dat",
+          "f37576f1fa5f92a273df7a501c6e1f72de2fba45",
+          18201
+        ],
+        [
+          "cheats/ssf2tb.dat",
+          "3f5ccfd019541a05f6184ef8e76c416ef0041886",
+          10443
+        ],
+        [
+          "cheats/ssf2tu.dat",
+          "f37576f1fa5f92a273df7a501c6e1f72de2fba45",
+          18201
+        ],
+        [
+          "cheats/ssf2u.dat",
+          "3f5ccfd019541a05f6184ef8e76c416ef0041886",
+          10443
+        ],
+        [
+          "cheats/ssf2xj.dat",
+          "26b9e996795edb1b3c7397e889d9cbd5311a2386",
+          18206
+        ],
+        [
+          "cheats/ssideki2.dat",
+          "0cad6e5b410e6b2badc369a04798927e2b119601",
+          209
+        ],
+        [
+          "cheats/ssideki3.dat",
+          "dfbea4a9c48d9c1fb942d718011284868e3c89d9",
+          141
+        ],
+        [
+          "cheats/ssideki4.dat",
+          "d04f931e96a23e10cb37c4a4026c501dc2587204",
+          465
+        ],
+        [
+          "cheats/stakwin.dat",
+          "67b0ce5b8c477269160e20511a247c24a0d725c3",
+          80
+        ],
+        [
+          "cheats/stakwin2.dat",
+          "4a44d7c11bdec22942b18b58732f653d7ddcf2fc",
+          365
+        ],
+        [
+          "cheats/strhoop.dat",
+          "c37999abb9f6ca4248849114f12f74cc8685f9c5",
+          146
+        ],
+        [
+          "cheats/strider.dat",
+          "113f964ce3aa2dc210f67cdb65660ec1b21de149",
+          880
+        ],
+        [
+          "cheats/striderj.dat",
+          "113f964ce3aa2dc210f67cdb65660ec1b21de149",
+          880
+        ],
+        [
+          "cheats/stridrja.dat",
+          "113f964ce3aa2dc210f67cdb65660ec1b21de149",
+          880
+        ],
+        [
+          "cheats/stridrua.dat",
+          "113f964ce3aa2dc210f67cdb65660ec1b21de149",
+          880
+        ],
+        [
+          "cheats/superspy.dat",
+          "93bbee986cb759af2d69d2f48b230bc255ecabc7",
+          658
+        ],
+        [
+          "cheats/svcsplus.dat",
+          "f8b37b63671323f58b7bc7fda454e274d00d646b",
+          9189
+        ],
+        [
+          "cheats/tophuntr.dat",
+          "3c0397b440620335d9172ca824650a376e20fb0b",
+          733
+        ],
+        [
+          "cheats/tpgolf.dat",
+          "2c5c9e45505a1ad6cfc673670869305df64ee7c8",
+          147
+        ],
+        [
+          "cheats/turfmast.dat",
+          "96c894eadbc0fe5bfff86d7d0a20f6ab2c7a419c",
+          818
+        ],
+        [
+          "cheats/twinspri.dat",
+          "7df2224506fea723ad352fc20a787029940d300c",
+          1534
+        ],
+        [
+          "cheats/tws96.dat",
+          "82e53d3704f365cf0f8127341ab288b7f42d506f",
+          391
+        ],
+        [
+          "cheats/unsquad.dat",
+          "4154bd1a4ca9291068701292487e109123516d33",
+          2608
+        ],
+        [
+          "cheats/vampa.dat",
+          "c08b19fe5d3521bcec2e1f62cc034449a8447460",
+          1296
+        ],
+        [
+          "cheats/vampj.dat",
+          "1ca9c02a752b58454d8e71b71513f92378bea4d2",
+          1996
+        ],
+        [
+          "cheats/vampja.dat",
+          "1ca9c02a752b58454d8e71b71513f92378bea4d2",
+          1996
+        ],
+        [
+          "cheats/vampjr1.dat",
+          "1ca9c02a752b58454d8e71b71513f92378bea4d2",
+          1996
+        ],
+        [
+          "cheats/varth.dat",
+          "357bbdc9476cd8328f55cc8c2bcada166bcc519e",
+          2160
+        ],
+        [
+          "cheats/varthj.dat",
+          "357bbdc9476cd8328f55cc8c2bcada166bcc519e",
+          2160
+        ],
+        [
+          "cheats/varthu.dat",
+          "357bbdc9476cd8328f55cc8c2bcada166bcc519e",
+          2160
+        ],
+        [
+          "cheats/vhunt2.dat",
+          "78e95849866ed93f75853dbf49a3f14306d34c90",
+          41533
+        ],
+        [
+          "cheats/vhuntj.dat",
+          "7a1b623e53e4b76443ca40f8ded2231977c50a2a",
+          3450
+        ],
+        [
+          "cheats/vhuntjr1.dat",
+          "7a1b623e53e4b76443ca40f8ded2231977c50a2a",
+          3450
+        ],
+        [
+          "cheats/viewpoin.dat",
+          "df71c2c9ca25a0fa20e0465a33c319771bd1a405",
+          647
+        ],
+        [
+          "cheats/vsav.dat",
+          "5a47f68c3ce95dad85dad34a15f70849bb59d522",
+          30046
+        ],
+        [
+          "cheats/vsav2.dat",
+          "2929ec7a306f4a34eb8faf1aad8b24ff31434824",
+          41220
+        ],
+        [
+          "cheats/vsava.dat",
+          "5a47f68c3ce95dad85dad34a15f70849bb59d522",
+          30046
+        ],
+        [
+          "cheats/vsavj.dat",
+          "49fdc229836854d7b5d0206ec82d580e12e1b2af",
+          29758
+        ],
+        [
+          "cheats/vsavu.dat",
+          "5a47f68c3ce95dad85dad34a15f70849bb59d522",
+          30046
+        ],
+        [
+          "cheats/wakuwak7.dat",
+          "3f1b261fbd0b7eec37d852b3ad9fc44ef9e3b257",
+          1603
+        ],
+        [
+          "cheats/wh1.dat",
+          "f10515cdeed2bdea7734b77f4ce25c7bf257d3e9",
+          1137
+        ],
+        [
+          "cheats/wh2.dat",
+          "7c09bce93c77fe196b1704f9b0bca3fab547e317",
+          1520
+        ],
+        [
+          "cheats/wh2j.dat",
+          "fe992a1c91655185524b589149a8628a2b24ead7",
+          1213
+        ],
+        [
+          "cheats/whp.dat",
+          "be6f5c64e41a47c26b315adfd32c216729a6263d",
+          1688
+        ],
+        [
+          "cheats/willow.dat",
+          "5083fc6958d7c3a3dd0b1015407138277bb9554d",
+          1912
+        ],
+        [
+          "cheats/willowj.dat",
+          "5083fc6958d7c3a3dd0b1015407138277bb9554d",
+          1912
+        ],
+        [
+          "cheats/willowje.dat",
+          "5083fc6958d7c3a3dd0b1015407138277bb9554d",
+          1912
+        ],
+        [
+          "cheats/wjammers.dat",
+          "79c03910e6e68198b11d5c4a4e04e1e748a1c657",
+          286
+        ],
+        [
+          "cheats/wof.dat",
+          "da80dc28bb33126872dd8dc58e4d3d7aa2d85046",
+          2783
+        ],
+        [
+          "cheats/wofa.dat",
+          "da80dc28bb33126872dd8dc58e4d3d7aa2d85046",
+          2783
+        ],
+        [
+          "cheats/wofh.dat",
+          "da80dc28bb33126872dd8dc58e4d3d7aa2d85046",
+          2783
+        ],
+        [
+          "cheats/wofj.dat",
+          "da80dc28bb33126872dd8dc58e4d3d7aa2d85046",
+          2783
+        ],
+        [
+          "cheats/wofu.dat",
+          "da80dc28bb33126872dd8dc58e4d3d7aa2d85046",
+          2783
+        ],
+        [
+          "cheats/wonder3.dat",
+          "413708a4ebdc480079d24b8723a33e4036790431",
+          3870
+        ],
+        [
+          "cheats/xmcota.dat",
+          "954a8e63a09ce381f8daa7f9f25e9bc28e8f9c34",
+          16396
+        ],
+        [
+          "cheats/xmcotaa.dat",
+          "954a8e63a09ce381f8daa7f9f25e9bc28e8f9c34",
+          16396
+        ],
+        [
+          "cheats/xmcotaj.dat",
+          "64425605acc7447a54abc041ee83826cab57ef21",
+          16396
+        ],
+        [
+          "cheats/xmcotaj1.dat",
+          "64425605acc7447a54abc041ee83826cab57ef21",
+          16396
+        ],
+        [
+          "cheats/xmcotajr.dat",
+          "64425605acc7447a54abc041ee83826cab57ef21",
+          16396
+        ],
+        [
+          "cheats/xmcotau.dat",
+          "954a8e63a09ce381f8daa7f9f25e9bc28e8f9c34",
+          16396
+        ],
+        [
+          "cheats/xmvsf.dat",
+          "19474c7bf3f40dcf98be0c7f656fc2b0f7c10e35",
+          30388
+        ],
+        [
+          "cheats/xmvsfu.dat",
+          "19474c7bf3f40dcf98be0c7f656fc2b0f7c10e35",
+          30388
+        ],
+        [
+          "cheats/zedblade.dat",
+          "cf66118f64339af3323a2fe13e204173879a7c0f",
+          923
+        ],
+        [
+          "cheats/zupapa.dat",
+          "5e106038b5dde4d9c72007f8d32a56417db504f3",
+          21
+        ]
+      ]
+    },
+    {
+      "id": "riyoway-nintendo",
+      "repository": "https://github.com/Riyoway/CheatDB",
+      "snapshot_commit": "17938073e898b2774e09cce2153baabfeb07aa10",
+      "source_tree_sha": "17938073e898b2774e09cce2153baabfeb07aa10",
+      "rights_status": "link_only_rights_review",
+      "reuse_cleared": false,
+      "source_code_included": false,
+      "scope": "SQLite database, Nintendo JSON/JSONL exports and one JGeckoU XML export",
+      "rights_note": "No root LICENSE. Source README claims 117,861 cheats, but the internal counts, origins and author rights have not been independently audited.",
+      "selected_file_occurrences": 7,
+      "distinct_git_blobs": 7,
+      "selected_bytes": 191660391,
+      "matching_smoker1_file_occurrences": null,
+      "files": [
+        [
+          "cheatdb.db",
+          "623d27561cc7b1f437f3e7220bc69cf2ea51cd19",
+          63660032
+        ],
+        [
+          "exports/JGeckoU/AUMJ88.xml",
+          "7f97b1875d44e1564d75f209ef76666672c83a92",
+          20978986
+        ],
+        [
+          "exports/JSON/Nintendo/3ds.json",
+          "a832aecc46fa778a9e0e65349682a3a5720cea94",
+          3275294
+        ],
+        [
+          "exports/JSON/Nintendo/all.jsonl",
+          "ec8fd751b1fa4a5e70a1e0f4cc695b01a57e1020",
+          49915229
+        ],
+        [
+          "exports/JSON/Nintendo/nes.json",
+          "53af2ce0cff56425c6b9349f23ef9728f8bc78b8",
+          4415981
+        ],
+        [
+          "exports/JSON/Nintendo/switch.json",
+          "6391e5f0294c2d8805e03f08b83db9a463a1ed2e",
+          16302151
+        ],
+        [
+          "exports/JSON/Nintendo/wiiu.json",
+          "cba4bfd671f36b1c61fef61bcf74ee1f0644b172",
+          33112718
+        ]
+      ]
+    },
+    {
+      "id": "slade1972-segacd",
+      "repository": "https://github.com/Slade1972/SegaCD-Cheats-MiSTer",
+      "snapshot_commit": "0b2186db50e14e06617d6317d5ee0529c6d4631c",
+      "source_tree_sha": "0b2186db50e14e06617d6317d5ee0529c6d4631c",
+      "rights_status": "link_only_rights_review",
+      "reuse_cleared": false,
+      "source_code_included": false,
+      "scope": "Original Sega CD cheat ZIP archives; ZIP member formats not yet audited",
+      "rights_note": "GPL-3.0 repository LICENSE exists, but README promises credit for cheats found by other people; permissions for all original codes and bundled ZIP members remain unreviewed.",
+      "selected_file_occurrences": 51,
+      "distinct_git_blobs": 48,
+      "selected_bytes": 81664,
+      "matching_smoker1_file_occurrences": null,
+      "files": [
+        [
+          "Cheats/3 Ninjas Kick Back (USA).zip",
+          "3a8b28519040e5fed29b0366989de9ea255874c6",
+          5105
+        ],
+        [
+          "Cheats/A-X-101 (USA) (RE).zip",
+          "8321266e422da8cd413fe308bd4047fe70da5156",
+          809
+        ],
+        [
+          "Cheats/AH3 - Thunderstrike (USA).zip",
+          "a8c080c6c27f850ab9285c080197e746c1a8414e",
+          502
+        ],
+        [
+          "Cheats/AX-101 (Japan).zip",
+          "f86331649016ac5205e0422c715fe932516831cc",
+          816
+        ],
+        [
+          "Cheats/Adventures of Batman and Robin, The (USA).zip",
+          "a03be48e7206d79e7aaed50633df79ba37b7a0cf",
+          4170
+        ],
+        [
+          "Cheats/After Burner III (Europe).zip",
+          "fc2bc54f25dcd6477d135f867d18add27289257e",
+          346
+        ],
+        [
+          "Cheats/After Burner III (Japan).zip",
+          "371738f1b5d4aae9ba8d16ea5b73f92570921e15",
+          346
+        ],
+        [
+          "Cheats/After Burner III (USA).zip",
+          "03f4712681cdeeca6b9eb9e6b636fa56d9998d3e",
+          346
+        ],
+        [
+          "Cheats/Amazing Spider-Man vs. The Kingpin, The (Europe).zip",
+          "7e1478d2fa5a81d0b8c31e8384eb35f3f2dcde84",
+          732
+        ],
+        [
+          "Cheats/Amazing Spider-Man vs. The Kingpin, The (USA) (Rev 1).zip",
+          "2b697e374f50d89eed09531e4c92656eead2d941",
+          732
+        ],
+        [
+          "Cheats/Amazing Spider-Man vs. The Kingpin, The (USA).zip",
+          "66360ad88ab59c684a523dc68579b133f7ff8c0e",
+          674
+        ],
+        [
+          "Cheats/Android Assault - The Revenge of Bari-Arm (USA).zip",
+          "eddc924150c6e3199c428fd3b5bf6d65069244e7",
+          842
+        ],
+        [
+          "Cheats/Annett Futatabi (Japan).zip",
+          "2b063b874a7a08fc72b92f9093a900f9d020284b",
+          358
+        ],
+        [
+          "Cheats/Bari-Arm (Japan).zip",
+          "dc8d68cb3726b7f3dcf591370579f378b6561d22",
+          842
+        ],
+        [
+          "Cheats/Batman Returns (Europe) (Alt).zip",
+          "5f44a049d6e57d75293762ca5f54620a7ed76ff2",
+          2678
+        ],
+        [
+          "Cheats/Batman Returns (Europe).zip",
+          "5f44a049d6e57d75293762ca5f54620a7ed76ff2",
+          2678
+        ],
+        [
+          "Cheats/Batman Returns (USA).zip",
+          "18c1f9cca4a0dbc61027cf6c9285564d9282f9d3",
+          2768
+        ],
+        [
+          "Cheats/Battle Fantasy (Japan) (Rev A).zip",
+          "ba8ccc828deb988d69f56e62845f2ac42a55d688",
+          4011
+        ],
+        [
+          "Cheats/Battle Frenzy (USA) (Unl).zip",
+          "48de877213ee90078f802ab40fce4834843297f2",
+          5766
+        ],
+        [
+          "Cheats/Battlecorps (USA).zip",
+          "5591092796644f35a7e719daf2e1270c24706acf",
+          1285
+        ],
+        [
+          "Cheats/Beast II (Europe).zip",
+          "3b9807283d068390db90b608f5f7f66a10b35ca5",
+          360
+        ],
+        [
+          "Cheats/Blackhole Assault (USA).zip",
+          "7a095c52cd4c72010f71ea7f00ca45fd58b0ae2a",
+          562
+        ],
+        [
+          "Cheats/Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es).zip",
+          "970bc8185ed08fe01aa69089f71b0f5a9520eda3",
+          5760
+        ],
+        [
+          "Cheats/Bram Stoker's Dracula (USA) (Version 2.0).zip",
+          "3d2958eeeb1aca641789b9036503feef52168e9a",
+          558
+        ],
+        [
+          "Cheats/Brutal - Paws of Fury (Europe) (En,Fr,De).zip",
+          "36850293dc61e2722dbcda73fb143e67037c8279",
+          1061
+        ],
+        [
+          "Cheats/Brutal - Paws of Fury (USA).zip",
+          "dcb0ca89d7a31e59ed5fd83b80df47a919c8bfca",
+          1133
+        ],
+        [
+          "Cheats/Burning Fists - Force Striker (USA) (Unl).zip",
+          "1c63e0fbcaecd9ef03966c80b9d4d699526123fe",
+          374
+        ],
+        [
+          "Cheats/Chuck Rock (Europe).zip",
+          "cf590231c83e14fc0a31cb08ecac3e172bf4844e",
+          502
+        ],
+        [
+          "Cheats/Chuck Rock (USA).zip",
+          "dd62a7d6fc2f8820bb40806272f133808c4f5a21",
+          502
+        ],
+        [
+          "Cheats/Chuck Rock II - Son of Chuck (Europe).zip",
+          "525617542a93d56f97faa8e2bed2de866c258648",
+          1074
+        ],
+        [
+          "Cheats/Chuck Rock II - Son of Chuck (USA).zip",
+          "67efb2a1d6f4b2438442b959eaec7dae09b57b5b",
+          1072
+        ],
+        [
+          "Cheats/Citizen X (USA) (Unl).zip",
+          "9caf15c9c382f3a6a5cfbce48078249f3435158b",
+          3425
+        ],
+        [
+          "Cheats/Cliffhanger (USA).zip",
+          "76ed140fdca0c859877ab3c9d2abed95ce3dd891",
+          1760
+        ],
+        [
+          "Cheats/Cobra Command (Europe).zip",
+          "82c92b7925ce9d8a0fb2d0b2c2985a38cabddbfc",
+          360
+        ],
+        [
+          "Cheats/Cobra Command (USA).zip",
+          "82c92b7925ce9d8a0fb2d0b2c2985a38cabddbfc",
+          360
+        ],
+        [
+          "Cheats/Corpse Killer (Europe).zip",
+          "6b3f94ccd1379b777e39588007284b660ad7437e",
+          674
+        ],
+        [
+          "Cheats/Corpse Killer (USA).zip",
+          "1370fbc74e1c85c38fdc552568c1aa3faf4be4b9",
+          674
+        ],
+        [
+          "Cheats/Crime Patrol (USA).zip",
+          "372fde53136f50c2771feff27b63515b2026abf0",
+          534
+        ],
+        [
+          "Cheats/Cyborg 009 (Japan).zip",
+          "433e337f714144c59f3f3df35ecbdb37e4092017",
+          478
+        ],
+        [
+          "Cheats/Demolition Man (USA).zip",
+          "4bf34756dbd31238d6fcc729a2899cee5b215d24",
+          1850
+        ],
+        [
+          "Cheats/Dragon's Lair (Europe).zip",
+          "d6ac75df9af9747dc7a09c646874993db82fc564",
+          178
+        ],
+        [
+          "Cheats/Dragon's Lair (Japan).zip",
+          "b2e5524d2ee5cdb9ae6d24c7c717bb6080ee5077",
+          178
+        ],
+        [
+          "Cheats/Dragon's Lair (USA).zip",
+          "2a1619ce25eb4ec04a2295becdb4a50d674e770d",
+          178
+        ],
+        [
+          "Cheats/Dungeon Explorer (Europe).zip",
+          "276f12c098453fa9dd3214dd05224d6c6212adfc",
+          4576
+        ],
+        [
+          "Cheats/Dungeon Explorer (USA).zip",
+          "276f12c098453fa9dd3214dd05224d6c6212adfc",
+          4576
+        ],
+        [
+          "Cheats/Dungeon Master II - Skullkeep (Japan).zip",
+          "ad2961617c28f7d51de5a7247217ae216d6d770b",
+          3544
+        ],
+        [
+          "Cheats/Dungeon Master II - Skullkeep (USA) (RE3).zip",
+          "eb22fac031b6f2b03321629428490df1e684ceb1",
+          3542
+        ],
+        [
+          "Cheats/Dynamic Country Club (Japan).zip",
+          "c172768511ad5bbcaf8e817c5dc97afebbcdb90e",
+          609
+        ],
+        [
+          "Cheats/Earnest Evans (Japan).zip",
+          "303a50596304d8f5f985c4661e5a20ce10fe719f",
+          520
+        ],
+        [
+          "Cheats/Earthworm Jim - Special Edition (Europe).zip",
+          "386cfe0c9eb64cea8aaa8bbcff7971d9b5cf4c8c",
+          2442
+        ],
+        [
+          "Cheats/Earthworm Jim - Special Edition (USA) (RE).zip",
+          "f820e0924fbc9b61e44db8c4bed9de32e6356eef",
+          2442
+        ]
+      ]
+    },
+    {
+      "id": "skillercmp-xemu",
+      "repository": "https://github.com/SkillerCMP/XEMU-CHEATDB",
+      "snapshot_commit": "efdb486fbc95c4b8aa9384f47694124c6f03fa32",
+      "source_tree_sha": "efdb486fbc95c4b8aa9384f47694124c6f03fa32",
+      "rights_status": "link_only_rights_review",
+      "reuse_cleared": false,
+      "source_code_included": false,
+      "scope": "Original Xbox Xemu cheat text files only, excluding file replacements",
+      "rights_note": "No root LICENSE or blanket cheat author grant; other file-replacement assets excluded from cheat-text inventory.",
+      "selected_file_occurrences": 12,
+      "distinct_git_blobs": 12,
+      "selected_bytes": 26858,
+      "matching_smoker1_file_occurrences": null,
+      "files": [
+        [
+          "Cheats/EA0049-17BDE1940BA65905.txt",
+          "1c2b728decbfca6cc93fe160b0d4415160b8a9e3",
+          1266
+        ],
+        [
+          "Cheats/EA0049-61BB0C206A391C8C.txt",
+          "e385ed807e79aaa21df9381e20e7f3a951973329",
+          173
+        ],
+        [
+          "Cheats/EA009E-53780688DE742E83.txt",
+          "b92434456793e13db3c0329d4f2253d427528a67",
+          1009
+        ],
+        [
+          "Cheats/EA009E-67ad4e07b3ff0b7e.txt",
+          "b7d87102af6e9b94fb83bcd9eaea0a2c748b7d3d",
+          647
+        ],
+        [
+          "Cheats/FL0002-E9321D858E5B2631.txt",
+          "73429804c302c0adc06dc4fd039019fc7d2129bd",
+          175
+        ],
+        [
+          "Cheats/MS0064-3688AAB5A15ACA3A.txt",
+          "40f7887cc55ce3c168ca4aaddbb3f4003827a1b6",
+          5834
+        ],
+        [
+          "Cheats/NM0003-66924760DA1C55DF.txt",
+          "cb891bb71f947e78af6e57cc7e7fb26eb947ffe1",
+          14546
+        ],
+        [
+          "Cheats/TQ0002-541F7862DFDC847A.txt",
+          "596c260223c771038149f73c56879d207250fa40",
+          489
+        ],
+        [
+          "Cheats/TQ0024-E81199895CEDA71A.txt",
+          "6546edaa31736c179a6df7d77bec29b9e391e73c",
+          388
+        ],
+        [
+          "Cheats/TQ0109-C7AF5877B8BD2FCF.txt",
+          "8ef7948932f278b99bf63b95e28dc007500253af",
+          749
+        ],
+        [
+          "Cheats/US0018-2AD68F55BB9C1D47.txt",
+          "bb81c5ee8d66aeeed3f261c17e00ad6e76eade15",
+          180
+        ],
+        [
+          "Cheats/US0018-8CAC9F4EF09317DC.txt",
+          "7251d8b36cc9eda4b44ad1f4c385dc4a3a5091fd",
+          1402
+        ]
+      ]
+    }
+  ]
+}
