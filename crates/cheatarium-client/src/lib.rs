@@ -3,9 +3,9 @@
 //! No network access, ROM reads, cartridge mutation, or code execution.
 //! All name matching is *advisory* and must not auto-enable cheats.
 pub mod external;
-pub mod local_wii;
 pub mod identity;
 pub mod inventory;
+pub mod local_wii;
 pub mod publications;
 pub mod reviews;
 use flate2::read::GzDecoder;

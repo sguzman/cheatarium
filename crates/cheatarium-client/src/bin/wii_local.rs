@@ -22,11 +22,15 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         match opt.as_str() {
             "--index" => path = PathBuf::from(args.next().ok_or("--index needs a path")?),
             "--game-id" => game_id = Some(args.next().ok_or("--game-id needs a disc ID")?),
-            "--revision" => revision = Some(args.next().ok_or("--revision needs a source revision")?),
+            "--revision" => {
+                revision = Some(args.next().ok_or("--revision needs a source revision")?)
+            }
             "--variant" => variant = Some(args.next().ok_or("--variant needs a value")?),
             "--game-title" => game_title = Some(args.next().ok_or("--game-title needs text")?),
             "--title" => group_title = Some(args.next().ok_or("--title needs text")?),
-            "--group-index" => group_index = Some(args.next().ok_or("--group-index needs a number")?.parse()?),
+            "--group-index" => {
+                group_index = Some(args.next().ok_or("--group-index needs a number")?.parse()?)
+            }
             "--limit" => limit = args.next().ok_or("--limit needs an integer")?.parse()?,
             "--offset" => offset = args.next().ok_or("--offset needs an integer")?.parse()?,
             "--show-code" => show_code = true,
@@ -59,22 +63,33 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
             "{} Wii Gecko native groups in {} source files; all unverified and disabled",
             result["matched_native_groups"], result["matched_source_files"]
         );
-        for row in result["results"].as_array().ok_or("Invalid private search result")? {
+        for row in result["results"]
+            .as_array()
+            .ok_or("Invalid private search result")?
+        {
             println!(
                 "- {} {} {} group {}: {} ({} source code lines)",
                 row["claimed_disc_id"].as_str().unwrap_or("?"),
-                row["source_revision_token"].as_str().unwrap_or("revision-unspecified"),
+                row["source_revision_token"]
+                    .as_str()
+                    .unwrap_or("revision-unspecified"),
                 row["source_variant_token"].as_str().unwrap_or("base"),
-                row["group_index"], row["group_title"].as_str().unwrap_or("?"),
+                row["group_index"],
+                row["group_title"].as_str().unwrap_or("?"),
                 row["native_code_pair_count"],
             );
             println!(
                 "  {} — {}",
-                row["source_compatibility_warning"].as_str().unwrap_or("Source version not verified"),
+                row["source_compatibility_warning"]
+                    .as_str()
+                    .unwrap_or("Source version not verified"),
                 row["original_upstream_url"].as_str().unwrap_or("No origin"),
             );
             if show_code {
-                for code in row["native_code_lines"].as_array().ok_or("Missing original code lines")? {
+                for code in row["native_code_lines"]
+                    .as_array()
+                    .ok_or("Missing original code lines")?
+                {
                     println!("{}", code.as_str().ok_or("Invalid native code line")?);
                 }
             }
