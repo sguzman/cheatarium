@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "riyoway-3ds-json",
+  "repository": "https://github.com/Riyoway/CheatDB",
+  "snapshot_commit": "17938073e898b2774e09cce2153baabfeb07aa10",
+  "git_tree_sha": "17938073e898b2774e09cce2153baabfeb07aa10",
+  "platform": "3ds",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "No root LICENSE. Source README claims 117,861 cheats, but the internal counts, origins and author rights have not been independently audited. Original body remains excluded; pinned source paths, Git blob SHA-1 identities and byte lengths are references only. Do not infer functional cheat effects, emulator compatibility or verified game builds.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 1
+  },
+  "files": [
+    [
+      "exports/JSON/Nintendo/3ds.json",
+      "a832aecc46fa778a9e0e65349682a3a5720cea94",
+      3275294
+    ]
+  ]
+}

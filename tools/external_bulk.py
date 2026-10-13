@@ -242,6 +242,62 @@ for _id, (_origin, _folders, _platform, _count) in MIRROR_GAP_GROUPS.items():
     }
 
 
+# Independently pinned source-level Git-blob inventories, partitioned by
+# original console/format. These are searchable external links, never cheats.
+SCOUT_GROUPS = {
+    "eignar17-fba-ini": ("eignar17-arcade", "arcade-fba", 253),
+    "eignar17-arcade-dat": ("eignar17-arcade", "arcade-kawaks", 368),
+    "riyoway-nintendo-multiformat": ("riyoway-nintendo", "multi-nintendo", 2),
+    "riyoway-3ds-json": ("riyoway-nintendo", "3ds", 1),
+    "riyoway-nes-json": ("riyoway-nintendo", "nes", 1),
+    "riyoway-switch-json": ("riyoway-nintendo", "switch", 1),
+    "riyoway-wiiu-export": ("riyoway-nintendo", "wii-u", 2),
+    "slade1972-segacd-zip": ("slade1972-segacd", "segacd", 51),
+    "skillercmp-xemu-text": ("skillercmp-xemu", "xbox", 12),
+}
+SCOUT_MATCHERS = {
+    "eignar17-fba-ini": r"Final Burn Alpha Cheat Archive/[^/]+\.ini",
+    "eignar17-arcade-dat": r"cheats/[^/]+\.dat",
+    "riyoway-nintendo-multiformat": r"(?:cheatdb\.db|exports/JSON/Nintendo/all\.jsonl)",
+    "riyoway-3ds-json": r"exports/JSON/Nintendo/3ds\.json",
+    "riyoway-nes-json": r"exports/JSON/Nintendo/nes\.json",
+    "riyoway-switch-json": r"exports/JSON/Nintendo/switch\.json",
+    "riyoway-wiiu-export": r"(?:exports/JSON/Nintendo/wiiu\.json|exports/JGeckoU/AUMJ88\.xml)",
+    "slade1972-segacd-zip": r"Cheats/[^/]+\.zip",
+    "skillercmp-xemu-text": r"Cheats/[^/]+\.txt",
+}
+from audit_bulk_source_scout import verify as verify_scout
+_SCOUT_REPORT = json.loads((ROOT / "research/bulk-source-scout-v1.json").read_text("utf-8"))
+verify_scout(_SCOUT_REPORT, ROOT)
+_SCOUT_BY_ORIGIN = {s["id"]: s for s in _SCOUT_REPORT["sources"]}
+for _id, (_origin, _platform, _count) in SCOUT_GROUPS.items():
+    _scout = _SCOUT_BY_ORIGIN[_origin]
+    SOURCES[_id] = {
+        "repository": _scout["repository"].removeprefix("https://github.com/"),
+        "commit": _scout["snapshot_commit"], "platform": _platform,
+        "expected": {"cheat": _count},
+        "rights_note": (_scout["rights_note"] +
+            " Original body remains excluded; pinned source paths, Git blob SHA-1 "
+            "identities and byte lengths are references only. Do not infer "
+            "functional cheat effects, emulator compatibility or verified game builds."),
+    }
+
+
+def pinned_scout_rows(source):
+    """Reconcile platform link-only partitions against the immutable scout."""
+    report = json.loads((ROOT / "research/bulk-source-scout-v1.json").read_text("utf-8"))
+    verify_scout(report, ROOT)
+    origin, _platform, expected = SCOUT_GROUPS[source]
+    parts = [s for s in report["sources"] if s["id"] == origin]
+    if len(parts) != 1:
+        raise ValueError("Missing source scout: " + source)
+    rows = sorted((r for r in parts[0]["files"] if classify(source, r[0])),
+                  key=lambda r: r[0])
+    if len(rows) != expected:
+        raise ValueError("Pinned scout partition changed: " + source)
+    return rows
+
+
 def pinned_mirror_gap_rows(source):
     """Exact file candidates from previously audited, immutable Git trees."""
     report = json.loads((ROOT / "research/retroarch-mirror-source-gaps-v1.json").read_text("utf-8"))
@@ -280,6 +336,8 @@ SHA = re.compile(r"^[0-9a-f]{40}$")
 
 
 def classify(source, path):
+    if source in SCOUT_GROUPS:
+        return "cheat" if re.fullmatch(SCOUT_MATCHERS[source], path) else None
     if source in MIRROR_GAP_GROUPS:
         origin, folders, _, _ = MIRROR_GAP_GROUPS[source]
         segments = path.split("/")
@@ -396,6 +454,9 @@ def make_index(source, tree):
                for item in tree["tree"]) != original_total:
             raise ValueError("Historical source CHT file count changed")
         rows = expected
+    if source in SCOUT_GROUPS:
+        if rows != pinned_scout_rows(source):
+            raise ValueError("Pinned scout Git tree disagrees with original source inventory: " + source)
     if source == "crashgg-ps1-chtdb-delta":
         # This is an exact-byte delta of another pinned external collection:
         # do not publish thousands of unchanged mirror paths as new leads.
@@ -535,7 +596,7 @@ def main():
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--refresh", action="store_true")
     mode.add_argument("--search", metavar="TEXT")
-    parser.add_argument("--platform", choices=("ps1", "xbox-360", "ps2", "arcade-mame", "arcade-fba", "arcade-fbneo", "arcade-naomi", "multi-retroarch", "n64", "gba", "nes", "snes", "vita", "dreamcast", "switch", "3ds", "ds", "gamecube", "wii", "ps3", "psp"))
+    parser.add_argument("--platform", choices=sorted({x["platform"] for x in SOURCES.values()}))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args()

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "skillercmp-xemu-text",
+  "repository": "https://github.com/SkillerCMP/XEMU-CHEATDB",
+  "snapshot_commit": "efdb486fbc95c4b8aa9384f47694124c6f03fa32",
+  "git_tree_sha": "efdb486fbc95c4b8aa9384f47694124c6f03fa32",
+  "platform": "xbox",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "No root LICENSE or blanket cheat author grant; other file-replacement assets excluded from cheat-text inventory. Original body remains excluded; pinned source paths, Git blob SHA-1 identities and byte lengths are references only. Do not infer functional cheat effects, emulator compatibility or verified game builds.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 12
+  },
+  "files": [
+    [
+      "Cheats/EA0049-17BDE1940BA65905.txt",
+      "1c2b728decbfca6cc93fe160b0d4415160b8a9e3",
+      1266
+    ],
+    [
+      "Cheats/EA0049-61BB0C206A391C8C.txt",
+      "e385ed807e79aaa21df9381e20e7f3a951973329",
+      173
+    ],
+    [
+      "Cheats/EA009E-53780688DE742E83.txt",
+      "b92434456793e13db3c0329d4f2253d427528a67",
+      1009
+    ],
+    [
+      "Cheats/EA009E-67ad4e07b3ff0b7e.txt",
+      "b7d87102af6e9b94fb83bcd9eaea0a2c748b7d3d",
+      647
+    ],
+    [
+      "Cheats/FL0002-E9321D858E5B2631.txt",
+      "73429804c302c0adc06dc4fd039019fc7d2129bd",
+      175
+    ],
+    [
+      "Cheats/MS0064-3688AAB5A15ACA3A.txt",
+      "40f7887cc55ce3c168ca4aaddbb3f4003827a1b6",
+      5834
+    ],
+    [
+      "Cheats/NM0003-66924760DA1C55DF.txt",
+      "cb891bb71f947e78af6e57cc7e7fb26eb947ffe1",
+      14546
+    ],
+    [
+      "Cheats/TQ0002-541F7862DFDC847A.txt",
+      "596c260223c771038149f73c56879d207250fa40",
+      489
+    ],
+    [
+      "Cheats/TQ0024-E81199895CEDA71A.txt",
+      "6546edaa31736c179a6df7d77bec29b9e391e73c",
+      388
+    ],
+    [
+      "Cheats/TQ0109-C7AF5877B8BD2FCF.txt",
+      "8ef7948932f278b99bf63b95e28dc007500253af",
+      749
+    ],
+    [
+      "Cheats/US0018-2AD68F55BB9C1D47.txt",
+      "bb81c5ee8d66aeeed3f261c17e00ad6e76eade15",
+      180
+    ],
+    [
+      "Cheats/US0018-8CAC9F4EF09317DC.txt",
+      "7251d8b36cc9eda4b44ad1f4c385dc4a3a5091fd",
+      1402
+    ]
+  ]
+}

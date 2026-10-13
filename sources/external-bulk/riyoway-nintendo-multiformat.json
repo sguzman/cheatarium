@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "riyoway-nintendo-multiformat",
+  "repository": "https://github.com/Riyoway/CheatDB",
+  "snapshot_commit": "17938073e898b2774e09cce2153baabfeb07aa10",
+  "git_tree_sha": "17938073e898b2774e09cce2153baabfeb07aa10",
+  "platform": "multi-nintendo",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "No root LICENSE. Source README claims 117,861 cheats, but the internal counts, origins and author rights have not been independently audited. Original body remains excluded; pinned source paths, Git blob SHA-1 identities and byte lengths are references only. Do not infer functional cheat effects, emulator compatibility or verified game builds.",
+  "filename_scope": "source-native cheat and patch files only; source contents intentionally omitted",
+  "file_counts": {
+    "cheat": 2
+  },
+  "files": [
+    [
+      "cheatdb.db",
+      "623d27561cc7b1f437f3e7220bc69cf2ea51cd19",
+      63660032
+    ],
+    [
+      "exports/JSON/Nintendo/all.jsonl",
+      "ec8fd751b1fa4a5e70a1e0f4cc695b01a57e1020",
+      49915229
+    ]
+  ]
+}
