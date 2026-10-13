@@ -1,0 +1,33 @@
+name: Inspect pinned Nintendo bulk source members
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-nintendo-bulk-members.yml"
+      - "tools/audit_nintendo_bulk_members.py"
+      - "tools/test_audit_nintendo_bulk_members.py"
+      - "sources/external-bulk/leumas-gamecube-wiird-zips.json"
+      - "sources/external-bulk/katsumaki-wiiu-xml.json"
+      - "sources/external-bulk/ucodes-wiiu-json.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Test GameCube ZIP and Wii U XML/JSON parsers without game images
+        run: python3 tools/test_audit_nintendo_bulk_members.py
+      - name: Inspect verified original source files ephemerally
+        run: python3 tools/audit_nintendo_bulk_members.py --output nintendo-bulk-member-report.json
+      - name: Upload aggregate source metadata counts only
+        uses: actions/upload-artifact@v4
+        with:
+          name: cheatarium-nintendo-gamecube-wiiu-aggregate-coverage
+          path: nintendo-bulk-member-report.json
+          retention-days: 30
