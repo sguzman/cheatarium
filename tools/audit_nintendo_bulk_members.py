@@ -101,8 +101,13 @@ def analyze_wiiu_xml(sources):
             raise ValueError("Unsupported source XML encoding") from exc
         if "<!DOCTYPE" in text.upper() or "<!ENTITY" in text.upper():
             raise ValueError("External XML entity declarations are not allowed")
+        # A few community Wii U XML dumps announce UTF-16 but are actually
+        # UTF-8 bytes without a BOM. Decode the bytes first, drop the unreliable
+        # encoding declaration and parse the recovered Unicode text. Never
+        # silently replace invalid source bytes.
+        normalized = re.sub(r'^\\s*<\\?xml[^>]*\\?>', '', text, count=1, flags=re.I)
         try:
-            root = ET.fromstring(raw)
+            root = ET.fromstring(normalized)
         except ET.ParseError as exc:
             raise ValueError("Broken original Wii U XML") from exc
         games += 1

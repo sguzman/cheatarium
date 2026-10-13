@@ -44,6 +44,13 @@ class NintendoBulkMemberTests(unittest.TestCase):
         self.assertEqual(d["repeated_nonempty_code_body_occurrences"], 1)
         self.assertFalse(d["original_codes_game_names_credit_strings_or_hashes_exported"])
 
+    def test_mislabelled_utf16_declaration_with_real_utf8_bytes(self):
+        original = (b'<?xml version="1.0" encoding="UTF-16"?>'
+                    b'<codes><entry><code>AAAA</code><authors>Creator</authors></entry></codes>')
+        doc = analyze_wiiu_xml([("misdeclared.xml", original)])
+        self.assertEqual(doc["entry_occurrences_with_code_text"], 1)
+        self.assertEqual(doc["entries_with_author_label"], 1)
+
     def test_json_counts_repeated_payloads(self):
         body = json.dumps([{"title": "a", "author": "p",
                             "cafe_code": {"code": "123"}, "ugecko": {"code": ""}}]).encode()
