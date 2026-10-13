@@ -26,7 +26,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
       - name: Check pinned Wii variants and cache safety without networking
@@ -61,6 +61,23 @@ jobs:
           python3 -c 'import json,os,pathlib; p=pathlib.Path(os.environ["RUNNER_TEMP"])/"private-wii-sidecar/codes.json"; d=json.loads(p.read_text()); r=d["records"]; assert d["source_native_group_count"] == len(r) == 45 and sum(x["native_code_pair_count"] for x in r) == 5611 and all(not x["enabled_for_execution"] for x in r) and all(not x["game_build_authenticated"] for x in r) and not d["public_archive_import"]'
           if python3 tools/export_wii_gecko_local.py --write --cache "${RUNNER_TEMP}/cheatarium-wii-originals" --output "${RUNNER_TEMP}/private-wii-sidecar/codes.json" > /dev/null 2>&1; then
             echo "ERROR: private Wii sidecar silently overwritten"
+            exit 1
+          fi
+      - name: Install Rust toolchain for native Wii private consumer
+        run: |
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+      - name: Test Rust Wii sidecar reader and query against verified originals
+        run: |
+          cargo test --locked -q -p cheatarium-client local_wii
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --index "${RUNNER_TEMP}/private-wii-sidecar/codes.json" --game-id RUUE01 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["matched_source_files"] == 2 and not d["original_code_text_included"] and not d["code_activated"] and all(x["native_code_lines"] is None for x in d["results"])'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --index "${RUNNER_TEMP}/private-wii-sidecar/codes.json" --game-id R3ME01 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["matched_source_files"] == 4 and not d["original_code_text_included"]'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --index "${RUNNER_TEMP}/private-wii-sidecar/codes.json" --game-id RUUE01 --revision 0 --show-code --group-index 1 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["matched_source_files"] == 1 and d["original_code_text_included"] and len(d["results"][0]["native_code_lines"]) > 0 and not d["game_build_authenticated"]'
+          if cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --index "${RUNNER_TEMP}/private-wii-sidecar/codes.json" --game-id RUUE01 --show-code --group-index 1 --json > /dev/null 2>&1; then
+            echo "ERROR: Rust consumer silently selected an incompatible City Folk revision"
             exit 1
           fi
       - name: Upload sanitized native Wii code-count report only

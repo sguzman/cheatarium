@@ -8,6 +8,9 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Explore
 
+- **Native Rust Wii Gecko lookup:** `cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --game-id RUUE01 --json` queries the private 45-group Gecko sidecar without Python or network access during lookup. Exact revision/variant selection and group opt-in are required to reveal code text; nothing is auto-enabled. [Details](docs/CONSUMERS.md#native-rust-consumer-for-the-private-wii-sidecar).
+
+
 - **Private Wii Gecko consumer sidecar:** `python3 tools/export_wii_gecko_local.py --write` projects all 45 locally acquired Gecko cheat groups (5,611 original instruction pairs) into one private, version-preserving JSON file with every group disabled by default. `--verify` confirms it matches the pinned source originals. [Instructions](docs/CONSUMERS.md#private-wii-gecko-consumer-sidecar-locally-projected-original-code).
 
 

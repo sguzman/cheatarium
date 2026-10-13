@@ -460,3 +460,18 @@ on ephemeral actual-source CI runners, without publication of individual
 code text or autoapplication. This closes the local *readable-data*
 projection gap but not the game-build authentication and executable
 emulator integration gaps.
+
+### Rust read-only Wii local consumer (2026-10-13)
+
+The `cheatarium-client` crate now provides a separate
+`cheatarium-wii-local` CLI and `local_wii` library module for
+the optional private on-disk native Gecko JSON sidecar. It validates
+45 groups across 29 original files and 5,611 instruction pairs, strict
+hex syntax, disabled-by-default execution state, source provenance
+and distinct revision/variant keys. Default queries never reveal code
+bytes; explicit `--show-code --game-id --group-index` additionally
+requires disambiguated original-source revision and variant. It does
+not access ROM files, activate emulator cheats, authenticate disc
+revisions or reuse code rights. Separate GitHub Actions integration
+uses the 29 pinned upstream source files to build the private sidecar
+ephemerally and runs the Rust consumer, without uploading its code.
