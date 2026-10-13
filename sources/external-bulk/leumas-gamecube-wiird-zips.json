@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "leumas-gamecube-wiird-zips",
+  "repository": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats",
+  "snapshot_commit": "102502ee0dccd733b389f27ab073315d1033ec27",
+  "git_tree_sha": "102502ee0dccd733b389f27ab073315d1033ec27",
+  "platform": "gamecube",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Regional GameCube/WiiRD ZIP compilations sourced by LeumasPlays from gc-forever community forum authors. No repository-wide LICENSE at pinned revision. ZIP bodies, cheat codes and per-game internal members are excluded; not tested or verified by the compiler except a handful of NTSC-U codes. The ZIP files are three containers, not three game titles or effects.",
+  "filename_scope": "original upstream GameCube or Wii U cheat containers only, no cheat payloads",
+  "file_counts": {
+    "cheat": 3
+  },
+  "files": [
+    [
+      "NTSC-J codes.zip",
+      "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      30179
+    ],
+    [
+      "NTSC-U Codes.zip",
+      "327caf4828f40734bec34bd9594925f9384fce3c",
+      515713
+    ],
+    [
+      "PAL codes.zip",
+      "562b62383bbfe8ace04583067390068d571ff76f",
+      764995
+    ]
+  ]
+}

@@ -15,6 +15,24 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FOLDER = Path("sources/external-bulk")
 SOURCES = {
+    "leumas-gamecube-wiird-zips": {
+        "repository": "LeumasPlays/WiiRD-GameCube-Cheats",
+        "commit": "102502ee0dccd733b389f27ab073315d1033ec27",
+        "platform": "gamecube", "expected": {"cheat": 3},
+        "rights_note": "Regional GameCube/WiiRD ZIP compilations sourced by LeumasPlays from gc-forever community forum authors. No repository-wide LICENSE at pinned revision. ZIP bodies, cheat codes and per-game internal members are excluded; not tested or verified by the compiler except a handful of NTSC-U codes. The ZIP files are three containers, not three game titles or effects.",
+    },
+    "katsumaki-wiiu-xml": {
+        "repository": "KatsuMaki1/Wiiu-Cheats-Repo",
+        "commit": "8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf",
+        "platform": "wii-u", "expected": {"cheat": 9},
+        "rights_note": "Nine source-native XML cheat documents from a Wii U/Cemu compilation with individual code authors and community/Discord/GBAtemp sources credited. No root LICENSE at pinned revision and no grant from each code author. Excludes all Cemu SDK binaries and third-party .NET documentation.",
+    },
+    "ucodes-wiiu-json": {
+        "repository": "vincent-coding/uCodes",
+        "commit": "2dfb558ae387837fbecaefda7a3cb8b801d03ef7",
+        "platform": "wii-u", "expected": {"cheat": 4},
+        "rights_note": "Four Wii U JSON cheat collections by uCodes, including codes with per-entry third-party author credits. Root MIT license is held by website author, but the presence of author credits does not establish that third-party cheat bodies are licensed under MIT. One exact-blob duplicate JSON file. No code texts imported.",
+    },
     "duckstation-chtdb": {
         "repository": "duckstation/chtdb",
         "commit": "e3cce509936261808b971199be3a20e84d0b9482",
@@ -336,6 +354,12 @@ SHA = re.compile(r"^[0-9a-f]{40}$")
 
 
 def classify(source, path):
+    if source == "leumas-gamecube-wiird-zips" and re.fullmatch(r"^(?:NTSC-J codes\.zip|NTSC-U Codes\.zip|PAL codes\.zip)$", path):
+        return "cheat"
+    if source == "katsumaki-wiiu-xml" and re.fullmatch(r"^[^/]+/[^/]+\.xml$", path):
+        return "cheat"
+    if source == "ucodes-wiiu-json" and re.fullmatch(r"^views/pages/cheats/[0-3]/codes\.json$", path):
+        return "cheat"
     if source in SCOUT_GROUPS:
         return "cheat" if re.fullmatch(SCOUT_MATCHERS[source], path) else None
     if source in MIRROR_GAP_GROUPS:

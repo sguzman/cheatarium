@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "katsumaki-wiiu-xml",
+  "repository": "https://github.com/KatsuMaki1/Wiiu-Cheats-Repo",
+  "snapshot_commit": "8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf",
+  "git_tree_sha": "8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf",
+  "platform": "wii-u",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Nine source-native XML cheat documents from a Wii U/Cemu compilation with individual code authors and community/Discord/GBAtemp sources credited. No root LICENSE at pinned revision and no grant from each code author. Excludes all Cemu SDK binaries and third-party .NET documentation.",
+  "filename_scope": "original upstream GameCube or Wii U cheat containers only, no cheat payloads",
+  "file_counts": {
+    "cheat": 9
+  },
+  "files": [
+    [
+      "Captain Toad: Treasure Tracker/AKBP.xml",
+      "4419189e8630755b4cae21cb3e9903c58fc210bb",
+      4743
+    ],
+    [
+      "Lego City Undercover/APLP01.xml",
+      "399f94edf47a7b264730d9055e166da7aed63622",
+      750
+    ],
+    [
+      "Mario Tennis: Ultra Smash/AVXP01.xml",
+      "85dd6fae31366b5297d6f4fe1b586f7839d7fcbc",
+      472
+    ],
+    [
+      "Mii Maker/000-50010-10040200.xml",
+      "d14f6909e2d800300afeb5f621f4284a7e2de1e9",
+      2844
+    ],
+    [
+      "New Super Mario Bros. U/ATWP.xml",
+      "44457cc36e60e6f1814b4ed2b6200332b9b1e9b3",
+      5414
+    ],
+    [
+      "Pikmin 3/AC3P.xml",
+      "0ee76f74b45b5cbe856c3277f205803e2d72e501",
+      483
+    ],
+    [
+      "Super Smash Bros Wii U/AXFP.xml",
+      "05b5978c8f3fc0d19990c16bedcfe554f07e2ed0",
+      2888
+    ],
+    [
+      "The Legend Of Zelda Twilight Princess HD/AZAE01.xml",
+      "72d5825b09d7eaa2dd80e30e930db848e96547a2",
+      26946
+    ],
+    [
+      "Watch Dogs/AWCE41.xml",
+      "da1cf18cb9c9adb647107b1b7c9b45ba07d613b1",
+      2216
+    ]
+  ]
+}

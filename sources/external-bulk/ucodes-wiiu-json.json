@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "ucodes-wiiu-json",
+  "repository": "https://github.com/vincent-coding/uCodes",
+  "snapshot_commit": "2dfb558ae387837fbecaefda7a3cb8b801d03ef7",
+  "git_tree_sha": "2dfb558ae387837fbecaefda7a3cb8b801d03ef7",
+  "platform": "wii-u",
+  "rights_status": "link_only_rights_review",
+  "rights_note": "Four Wii U JSON cheat collections by uCodes, including codes with per-entry third-party author credits. Root MIT license is held by website author, but the presence of author credits does not establish that third-party cheat bodies are licensed under MIT. One exact-blob duplicate JSON file. No code texts imported.",
+  "filename_scope": "original upstream GameCube or Wii U cheat containers only, no cheat payloads",
+  "file_counts": {
+    "cheat": 4
+  },
+  "files": [
+    [
+      "views/pages/cheats/0/codes.json",
+      "93a6d91797f49c798a28679033c7f004285a9e20",
+      31082
+    ],
+    [
+      "views/pages/cheats/1/codes.json",
+      "69fb6a9181ea4b715e14bd704c024ec8d8b2dbd2",
+      1079
+    ],
+    [
+      "views/pages/cheats/2/codes.json",
+      "59396356c250c8776e5434045c5434ec3e791361",
+      736
+    ],
+    [
+      "views/pages/cheats/3/codes.json",
+      "59396356c250c8776e5434045c5434ec3e791361",
+      736
+    ]
+  ]
+}
