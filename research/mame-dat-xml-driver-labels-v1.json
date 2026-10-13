@@ -1,0 +1,42 @@
+{
+  "comparison": {
+    "dat": {
+      "comment_lines": 7021,
+      "distinct_exact_native_record_text_lines": 27477,
+      "distinct_native_driver_labels": 546,
+      "duplicate_native_record_text_occurrences": 1121,
+      "internal_command_lines": 2,
+      "native_cheat_dat_record_occurrences": 28598,
+      "nonempty_lines": 139142,
+      "source_line_occurrences": 144062,
+      "unparsed_colon_line_occurrences": 2
+    },
+    "distinct_driver_labels_in_both_dat_and_xml": 493,
+    "distinct_driver_labels_only_in_dat": 53,
+    "distinct_driver_labels_only_in_xml": 8344,
+    "driver_label_union": 8890,
+    "exact_game_release_or_code_equivalence_verified": false,
+    "individual_driver_labels_code_text_or_hashes_exported": false,
+    "note": "Source-native MAME driver filename/record labels only; equal labels do not authenticate arcade ROM sets or cheat equivalence.",
+    "xml_distinct_filename_driver_labels": 8837,
+    "xml_member_filename_occurrences": 8837
+  },
+  "format": "cheatarium-mame-dat-xml-driver-label-comparison-v1",
+  "method": "ephemeral-pinned-git-blob-sha1-verified-native-driver-label-compare",
+  "original_git_blob_checksums_verified": true,
+  "rights_to_redistribute_established": false,
+  "schema_version": 1,
+  "source_catalogs": [
+    "libretro-mame2003plus-cheat-archive",
+    "libretro-mame2010-cheat-archive"
+  ],
+  "source_cheat_bodies_exported_or_committed": false,
+  "audit_run": {
+    "workflow_run_url": "https://github.com/sguzman/cheatarium/actions/runs/38332881544",
+    "workflow_source_commit": "3fca5d75b8309d43b48a1ce191929ef22a654580",
+    "successful_job_id": 115086376510,
+    "completed_utc_date": "2026-10-13",
+    "original_blob_sha1_verified": true,
+    "original_code_contents_committed": false
+  }
+}

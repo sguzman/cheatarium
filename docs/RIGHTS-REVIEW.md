@@ -88,3 +88,13 @@ This does not establish 33,400 unique effects, permissions, or game/build
 compatibility. The source's upstream emulator license does not independently
 clear historic cheat authors. Keep original XML content and machine-readable
 codes out of the archive pending actual author-level reuse evidence.
+
+### MAME historical DAT/XML overlap labels (2026-10-13)
+
+The link-only MAME 2003-Plus DAT has **546 strictly recognized native
+driver labels**, **493** of which match pinned MAME 2010 XML filename
+stems exactly; **53** occur only in that DAT. This is label overlap
+only; the [checksum-verified report](../research/mame-dat-xml-driver-labels-v1.json)
+publishes no cheat records or per-game identifiers. No source-native
+MAME DAT / XML label match can be used as copyright, original-authorship,
+game-identity or executable compatibility evidence.

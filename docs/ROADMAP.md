@@ -356,3 +356,26 @@ than summing the 8,837 aliases or 106,805 source elements as unique playable
 cheats. The ZIP remains a rights-unresolved **link-only** collection. Next
 work: identify earlier original cheat authors and overlap against other
 MAME versions before any new original-body import.
+
+### MAME 2003-Plus native DAT versus MAME 2010 XML coverage (2026-10-13)
+
+The [original-source-verified MAME driver-label audit](../research/mame-dat-xml-driver-labels-v1.json)
+compares a pinned 7,810,253-byte MAME 2003-Plus `cheat.dat` against
+the **8,837** member-name stems of pinned MAME 2010 `cheat.zip`.
+Parsing the [native colon-separated `cheat.dat` code record grammar](https://github.com/libretro/mame2003-plus-libretro/blob/master/src/cheat.c),
+the older DAT contains **28,598 syntactically recognized code record
+occurrences**, of which **27,477 are distinct exact source lines**, across
+**546 distinct native driver labels**. The remaining nonempty text is not
+classified as cheat code by this strict parser. Of those 546 DAT labels,
+**493** are also XML filename labels, leaving **53 DAT-only** labels and
+**8,344 XML-only** labels in the compared sources. This is a comparison
+of historical driver-name strings, **not** a determination that 53 new
+playable games or 8,344 newly discovered cheat effects exist, or that
+matching labels refer to compatible ROM versions. All cheat bodies
+remain upstream-only because original author redistribution rights
+have not been established.
+
+Bulk-acquisition implication: preserve the DAT separately as a historical
+lineage, prioritize the 53 DAT-only driver labels for future rights and
+content coverage investigation, and avoid presenting 2003 DAT and 2010 XML
+counts as independent unique games or effects.
