@@ -6,15 +6,48 @@
   "method": "exact-original-git-blob-sha-only",
   "independently_verified_games_or_effects": false,
   "archive_payloads_included": false,
-  "reference_files": 43409,
-  "source_catalogs": 48,
+  "reference_files": 43425,
+  "source_catalogs": 51,
   "external_platforms": 26,
-  "distinct_git_blobs": 37036,
-  "repeated_blob_excess_occurrences": 6373,
-  "references_in_repeated_blob_groups": 9904,
+  "distinct_git_blobs": 37051,
+  "repeated_blob_excess_occurrences": 6374,
+  "references_in_repeated_blob_groups": 9906,
   "cross_source_shared_blob_groups": 2785,
   "cross_source_shared_references": 8181,
   "sources": [
+    {
+      "id": "leumas-gamecube-wiird-zips",
+      "platform": "gamecube",
+      "reference_files": 3,
+      "distinct_git_blobs": 3,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 3
+      }
+    },
+    {
+      "id": "katsumaki-wiiu-xml",
+      "platform": "wii-u",
+      "reference_files": 9,
+      "distinct_git_blobs": 9,
+      "repeated_blob_excess_occurrences_within_source": 0,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 9
+      }
+    },
+    {
+      "id": "ucodes-wiiu-json",
+      "platform": "wii-u",
+      "reference_files": 4,
+      "distinct_git_blobs": 3,
+      "repeated_blob_excess_occurrences_within_source": 1,
+      "references_with_blob_shared_by_another_source": 0,
+      "source_declared_file_types": {
+        "cheat": 4
+      }
+    },
     {
       "id": "duckstation-chtdb",
       "platform": "ps1",
@@ -635,10 +668,11 @@
     },
     {
       "platform": "gamecube",
-      "reference_files": 30,
-      "distinct_git_blobs": 30,
+      "reference_files": 33,
+      "distinct_git_blobs": 33,
       "repeated_blob_excess_occurrences": 0,
       "source_catalogs": [
+        "leumas-gamecube-wiird-zips",
         "rogamer97-asm-gamecube"
       ]
     },
@@ -784,11 +818,13 @@
     },
     {
       "platform": "wii-u",
-      "reference_files": 2,
-      "distinct_git_blobs": 2,
-      "repeated_blob_excess_occurrences": 0,
+      "reference_files": 15,
+      "distinct_git_blobs": 14,
+      "repeated_blob_excess_occurrences": 1,
       "source_catalogs": [
-        "riyoway-wiiu-export"
+        "katsumaki-wiiu-xml",
+        "riyoway-wiiu-export",
+        "ucodes-wiiu-json"
       ]
     },
     {

@@ -6,10 +6,10 @@
   "rights_reviews_are_legal_permissions": false,
   "license_absence_proves_copyright_or_prohibition": false,
   "no_automatic_rights_clearance": true,
-  "source_catalogs": 48,
-  "source_reviews_with_pinned_evidence": 9,
+  "source_catalogs": 51,
+  "source_reviews_with_pinned_evidence": 12,
   "source_catalogs_not_yet_documented": 39,
-  "reviewed_exclusive_unarchived_cheat_labeled_blobs": 18884,
+  "reviewed_exclusive_unarchived_cheat_labeled_blobs": 18899,
   "priority_ranking_does_not_assert_working_cheats": true,
   "reviewed_sources": [
     {
@@ -243,12 +243,89 @@
       "next_clearance_action": "Identify separately authored PS1 cheat/patch provenance and secure individual reuse terms for the 268 different-byte variants; a derived DuckStation database's MIT grant applies only to processing scripts."
     },
     {
+      "source_id": "katsumaki-wiiu-xml",
+      "platform": "wii-u",
+      "repository": "https://github.com/KatsuMaki1/Wiiu-Cheats-Repo",
+      "pinned_revision": "8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf",
+      "pinned_git_tree": "8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf",
+      "priority_rank": 25,
+      "exclusive_unarchived_cheat_labeled_blobs": 9,
+      "distinct_unarchived_cheat_labeled_blobs": 9,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "community_contributions_without_root_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "db1d65c78b50caecb6fb7c4d65e5811087c71757",
+          "evidence_type": "community_code_contributions",
+          "pinned_url": "https://github.com/KatsuMaki1/Wiiu-Cheats-Repo/blob/8de6dab4613fb57b0a3575bfa93c3b4c1ea1cbbf/README.md"
+        }
+      ],
+      "next_clearance_action": "Review nine Wii U XML game/code documents against credited code authors and GBAtemp/Discord original posts; aggregator sharing and author fields do not demonstrate reusable licenses."
+    },
+    {
+      "source_id": "leumas-gamecube-wiird-zips",
+      "platform": "gamecube",
+      "repository": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats",
+      "pinned_revision": "102502ee0dccd733b389f27ab073315d1033ec27",
+      "pinned_git_tree": "102502ee0dccd733b389f27ab073315d1033ec27",
+      "priority_rank": 31,
+      "exclusive_unarchived_cheat_labeled_blobs": 3,
+      "distinct_unarchived_cheat_labeled_blobs": 3,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "multi_author_database_without_data_grant",
+      "root_license_paths_observed": [],
+      "root_license_scope_assessment": "no_root_grant_found",
+      "documentary_evidence": [
+        {
+          "upstream_path": "README.md",
+          "git_blob_sha": "07e1e792a1b23fafb8f0b507d5295bab739db694",
+          "evidence_type": "multiple_upstream_cheat_sources",
+          "pinned_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/README.md"
+        }
+      ],
+      "next_clearance_action": "Trace rights from the cited gc-forever WiiRD contributors for the three NTSC-J/U/PAL GameCube ZIP sets. Obtain source-code reuse grants for original authors before preserving code bodies; the aggregator admits only limited spot testing."
+    },
+    {
+      "source_id": "ucodes-wiiu-json",
+      "platform": "wii-u",
+      "repository": "https://github.com/vincent-coding/uCodes",
+      "pinned_revision": "2dfb558ae387837fbecaefda7a3cb8b801d03ef7",
+      "pinned_git_tree": "2dfb558ae387837fbecaefda7a3cb8b801d03ef7",
+      "priority_rank": 32,
+      "exclusive_unarchived_cheat_labeled_blobs": 3,
+      "distinct_unarchived_cheat_labeled_blobs": 3,
+      "rights_status": "link_only_rights_review",
+      "redistribution_cleared": false,
+      "review_state": "rights_unresolved_link_only",
+      "blocker": "aggregator_license_with_third_party_contributions",
+      "root_license_paths_observed": [
+        "LICENSE"
+      ],
+      "root_license_scope_assessment": "aggregator_mit_no_original_author_clearance",
+      "documentary_evidence": [
+        {
+          "upstream_path": "LICENSE",
+          "git_blob_sha": "3f710d89c1a148e918e3d8c044eb428eff748efb",
+          "evidence_type": "root_mit_notice",
+          "pinned_url": "https://github.com/vincent-coding/uCodes/blob/2dfb558ae387837fbecaefda7a3cb8b801d03ef7/LICENSE"
+        }
+      ],
+      "next_clearance_action": "Separate website MIT notice from individually credited Wii U Cafe/Gecko code authors (e.g. distinct per-record author fields). Secure contributor-level source-code licensing before archiving codes; identical JSON exports are not different games."
+    },
+    {
       "source_id": "ps2-widescreen-staging",
       "platform": "ps2",
       "repository": "https://github.com/PS2-Widescreen/pnach-DB",
       "pinned_revision": "91902dd63b67b7c8e2fcdf71b165b8e21f415346",
       "pinned_git_tree": "91902dd63b67b7c8e2fcdf71b165b8e21f415346",
-      "priority_rank": 45,
+      "priority_rank": 48,
       "exclusive_unarchived_cheat_labeled_blobs": 0,
       "distinct_unarchived_cheat_labeled_blobs": 0,
       "rights_status": "link_only_rights_review",

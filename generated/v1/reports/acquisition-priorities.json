@@ -7,16 +7,16 @@
   "unique_games_or_effects_established": false,
   "gameplay_compatibility_verified": false,
   "filename_kind_is_semantic_cheat_verification": false,
-  "source_file_occurrences": 43409,
-  "source_catalogs": 48,
+  "source_file_occurrences": 43425,
+  "source_catalogs": 51,
   "platforms_count": 26,
-  "all_external_distinct_blob_sha1": 37036,
+  "all_external_distinct_blob_sha1": 37051,
   "distinct_blobs_matching_archived_bytes": 56,
-  "distinct_blobs_absent_from_archive": 36980,
-  "distinct_cheat_labeled_blobs_absent_from_archive": 24051,
+  "distinct_blobs_absent_from_archive": 36995,
+  "distinct_cheat_labeled_blobs_absent_from_archive": 24066,
   "distinct_patch_labeled_blobs_absent_from_archive": 13207,
   "blobs_labeled_both_cheat_and_patch": 278,
-  "exclusive_unarchived_blobs_in_one_source": 34195,
+  "exclusive_unarchived_blobs_in_one_source": 34210,
   "shared_unarchived_blobs_in_multiple_sources": 2785,
   "ranking_rule": "exclusive-unarchived-cheat-blobs-desc;unarchived-cheat-blobs-desc;exclusive-blobs-desc;source-id",
   "interpretation": "Rights review priority, not a license grant, game count, runnable cheat count, build compatibility claim, or permission to import.",
@@ -766,6 +766,37 @@
       ]
     },
     {
+      "source_id": "katsumaki-wiiu-xml",
+      "platform": "wii-u",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 9,
+      "cheat_labeled_occurrences": 9,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 9,
+      "distinct_blob_sha1": 9,
+      "distinct_unarchived_blob_sha1": 9,
+      "distinct_unarchived_cheat_labeled_blobs": 9,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 9,
+      "exclusive_unarchived_cheat_labeled_blobs": 9,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "Captain Toad: Treasure Tracker/AKBP.xml",
+          "git_blob_sha": "4419189e8630755b4cae21cb3e9903c58fc210bb"
+        },
+        {
+          "path": "Lego City Undercover/APLP01.xml",
+          "git_blob_sha": "399f94edf47a7b264730d9055e166da7aed63622"
+        },
+        {
+          "path": "Mario Tennis: Ultra Smash/AVXP01.xml",
+          "git_blob_sha": "85dd6fae31366b5297d6f4fe1b586f7839d7fcbc"
+        }
+      ]
+    },
+    {
       "source_id": "deadskullz-nds-formats",
       "platform": "ds",
       "rights_status": "link_only_rights_review",
@@ -917,6 +948,68 @@
         {
           "path": "DS/Mario Kart DS (USA)/Future Fly Codes (2 Codes).md",
           "git_blob_sha": "0177eb8bffc1664803c11bad036366b1ded29e62"
+        }
+      ]
+    },
+    {
+      "source_id": "leumas-gamecube-wiird-zips",
+      "platform": "gamecube",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 3,
+      "cheat_labeled_occurrences": 3,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 3,
+      "distinct_blob_sha1": 3,
+      "distinct_unarchived_blob_sha1": 3,
+      "distinct_unarchived_cheat_labeled_blobs": 3,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 3,
+      "exclusive_unarchived_cheat_labeled_blobs": 3,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "NTSC-J codes.zip",
+          "git_blob_sha": "fd09a0078d77a61e34270eba737c7ca75a0343de"
+        },
+        {
+          "path": "NTSC-U Codes.zip",
+          "git_blob_sha": "327caf4828f40734bec34bd9594925f9384fce3c"
+        },
+        {
+          "path": "PAL codes.zip",
+          "git_blob_sha": "562b62383bbfe8ace04583067390068d571ff76f"
+        }
+      ]
+    },
+    {
+      "source_id": "ucodes-wiiu-json",
+      "platform": "wii-u",
+      "rights_status": "link_only_rights_review",
+      "original_file_occurrences": 4,
+      "cheat_labeled_occurrences": 4,
+      "patch_labeled_occurrences": 0,
+      "occurrences_already_archived_exact_bytes": 0,
+      "occurrences_without_archived_exact_bytes": 4,
+      "distinct_blob_sha1": 3,
+      "distinct_unarchived_blob_sha1": 3,
+      "distinct_unarchived_cheat_labeled_blobs": 3,
+      "distinct_unarchived_patch_labeled_blobs": 0,
+      "exclusive_unarchived_blob_sha1": 3,
+      "exclusive_unarchived_cheat_labeled_blobs": 3,
+      "shared_with_other_external_sources_unarchived_blobs": 0,
+      "sample_exclusive_cheat_source_paths": [
+        {
+          "path": "views/pages/cheats/0/codes.json",
+          "git_blob_sha": "93a6d91797f49c798a28679033c7f004285a9e20"
+        },
+        {
+          "path": "views/pages/cheats/1/codes.json",
+          "git_blob_sha": "69fb6a9181ea4b715e14bd704c024ec8d8b2dbd2"
+        },
+        {
+          "path": "views/pages/cheats/2/codes.json",
+          "git_blob_sha": "59396356c250c8776e5434045c5434ec3e791361"
         }
       ]
     },
@@ -1441,6 +1534,15 @@
       "distinct_patch_labeled_blobs_absent_from_archive": 0
     },
     {
+      "platform": "gamecube",
+      "source_catalogs": 2,
+      "file_occurrences": 33,
+      "distinct_source_blobs": 33,
+      "distinct_blobs_absent_from_archive": 33,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 31,
+      "distinct_patch_labeled_blobs_absent_from_archive": 2
+    },
+    {
       "platform": "arcade-fbneo",
       "source_catalogs": 1,
       "file_occurrences": 32,
@@ -1448,15 +1550,6 @@
       "distinct_blobs_absent_from_archive": 29,
       "distinct_cheat_labeled_blobs_absent_from_archive": 29,
       "distinct_patch_labeled_blobs_absent_from_archive": 0
-    },
-    {
-      "platform": "gamecube",
-      "source_catalogs": 1,
-      "file_occurrences": 30,
-      "distinct_source_blobs": 30,
-      "distinct_blobs_absent_from_archive": 30,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 28,
-      "distinct_patch_labeled_blobs_absent_from_archive": 2
     },
     {
       "platform": "multi-retroarch",
@@ -1469,6 +1562,15 @@
     },
     {
       "platform": "ds",
+      "source_catalogs": 3,
+      "file_occurrences": 15,
+      "distinct_source_blobs": 14,
+      "distinct_blobs_absent_from_archive": 14,
+      "distinct_cheat_labeled_blobs_absent_from_archive": 14,
+      "distinct_patch_labeled_blobs_absent_from_archive": 0
+    },
+    {
+      "platform": "wii-u",
       "source_catalogs": 3,
       "file_occurrences": 15,
       "distinct_source_blobs": 14,
@@ -1533,15 +1635,6 @@
     {
       "platform": "psp",
       "source_catalogs": 2,
-      "file_occurrences": 2,
-      "distinct_source_blobs": 2,
-      "distinct_blobs_absent_from_archive": 2,
-      "distinct_cheat_labeled_blobs_absent_from_archive": 2,
-      "distinct_patch_labeled_blobs_absent_from_archive": 0
-    },
-    {
-      "platform": "wii-u",
-      "source_catalogs": 1,
       "file_occurrences": 2,
       "distinct_source_blobs": 2,
       "distinct_blobs_absent_from_archive": 2,
