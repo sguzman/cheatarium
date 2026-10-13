@@ -137,3 +137,7 @@ or `--platform wii-u --source-id katsumaki-wiiu-xml --title "Twilight Princess"`
 search strictly source paths and original pinned link provenance. A
 regional GameCube ZIP path is not a browseable game-by-game code list until
 its members are inspected separately. All returned codes remain excluded.
+
+### Nintendo GameCube regional WiiRD member lookup
+
+Run `python3 tools/query_gamecube_wiird_members.py --query GZLE01 --region NTSC-U --limit 10` or omit the region to search all 375 source ZIP member filename hints. Results provide source path, region and original pinned parent ZIP URL; they are **not** local code payloads, ROM identities, tested cheats or license grants. Full regional counts are verified by a code-free synthetic test. The separate checksum-verified external catalog still indexes the three original regional ZIP containers, not their unarchived members.
