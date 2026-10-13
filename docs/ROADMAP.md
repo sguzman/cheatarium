@@ -398,7 +398,7 @@ certify reuse of contributed cheat data. All **16 source-file occurrences,
 15 distinct Git blobs**, are original-blob pinned and currently
 **link-only**. No original Wii U code or ZIP members have been copied to
 Cheatarium's archived executable bundle. The external catalog advances to
-**43,425 source-file occurrences / 51 link-only source catalogs**; native
+**43,454 source-file occurrences / 51 link-only source catalogs**; native
 Nintendo indexed code counts are unchanged.
 
 Next: use bounded, read-only ZIP inspection to quantify GameCube cheat files
@@ -434,3 +434,7 @@ are **not** archived; 16 link-only parent source-file references are
 searchable. Next priority is extracting safe ZIP member path/title labels
 into a code-free per-game lookup (without original code bodies) and
 documenting original-author reuse permissions for GameCube and Wii U.
+
+### Wii Gecko native source acquisition: 29 revision-specific file references (2026-10-13)
+
+Four new pinned source collections add **29 original Wii Gecko file occurrences**: City Folk and Deluxe (9 filenames; explicit v0/v1/v2 revisions must never be flattened), Metroid Prime and Trilogy (12 INIs, including source-specific MP1/MP2/MP3 variants), Metroid: Other M (3 regional INIs), and Taiko (5 native game-code INIs). These are source file and revision labels, not proof of **29 distinct games** or working cheats. All original Git blob SHA-1s, repository revisions, native paths, byte sizes and README provenance are saved; original code text is absent from the public archive. The repositories lack a pinned root code-author redistribution grant, and some acknowledge third-party Gecko authors and restricted upstream QA. External source catalogs rise to **55**, with **43,454** source file references and **335 Wii** link-only original file references. Next: a private local hydration path that verifies these 29 originals and preserves all region/revision filenames.

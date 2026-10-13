@@ -13,10 +13,10 @@ class TestExternalDistribution(unittest.TestCase):
         cls.catalog = json.loads(cls.files["external/catalog.json"])
 
     def test_full_pinned_collection(self):
-        self.assertEqual(self.catalog["reference_files"], 43425)
+        self.assertEqual(self.catalog["reference_files"], 43454)
         self.assertEqual(len(self.catalog["platforms"]), 26)
         self.assertEqual({x["platform"]: x["source_files"] for x in self.catalog["platforms"]},
-                         {"3ds": 939, "arcade-mame": 2, "arcade-fba": 351, "arcade-kawaks": 368, "n64": 1, "arcade-fbneo": 32, "arcade-naomi": 9, "multi-retroarch": 22, "nes": 9, "gba": 2, "snes": 1, "dreamcast": 399, "ds": 15, "gamecube": 33, "ps1": 4903, "ps2": 14452, "ps3": 2926, "psp": 2, "switch": 17276, "vita": 796, "wii": 306, "xbox-360": 501, "multi-nintendo": 2, "wii-u": 15, "segacd": 51, "xbox": 12})
+                         {"3ds": 939, "arcade-mame": 2, "arcade-fba": 351, "arcade-kawaks": 368, "n64": 1, "arcade-fbneo": 32, "arcade-naomi": 9, "multi-retroarch": 22, "nes": 9, "gba": 2, "snes": 1, "dreamcast": 399, "ds": 15, "gamecube": 33, "ps1": 4903, "ps2": 14452, "ps3": 2926, "psp": 2, "switch": 17276, "vita": 796, "wii": 335, "xbox-360": 501, "multi-nintendo": 2, "wii-u": 15, "segacd": 51, "xbox": 12})
         self.assertTrue(self.catalog["metadata_only"])
         self.assertFalse(self.catalog["archive_included"])
 

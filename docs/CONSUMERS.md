@@ -27,7 +27,7 @@ An emulator can download the relevant platform artifacts at a **pinned Cheatariu
 
 ## External pinned source discovery (metadata only)
 
-Cheatarium provides **43,425 rights-unresolved source-file references in 51 pinned source catalogs across 26 external search platform labels** under checksum-checked `generated/v1/external/catalog.json` and platform bundles. The additional 691 pinned arcade, Sega CD, original Xbox and Nintendo export references are source paths and blob hashes only (487 byte-distinct Git blobs absent from the pre-onboarding archive and external inventories), not playable cheat bodies. Only source IDs, file paths, original Git blob identities, byte sizes, pinned URLs and source-native cheat/patch labels are exported. They do not confer code-author reuse rights, game identity, execution support or tested compatibility.
+Cheatarium provides **43,454 rights-unresolved source-file references in 51 pinned source catalogs across 26 external search platform labels** under checksum-checked `generated/v1/external/catalog.json` and platform bundles. The additional 691 pinned arcade, Sega CD, original Xbox and Nintendo export references are source paths and blob hashes only (487 byte-distinct Git blobs absent from the pre-onboarding archive and external inventories), not playable cheat bodies. Only source IDs, file paths, original Git blob identities, byte sizes, pinned URLs and source-native cheat/patch labels are exported. They do not confer code-author reuse rights, game identity, execution support or tested compatibility.
 
 ```sh
 cargo run --release -p cheatarium-client --bin cheatarium-query -- external --db generated/v1 --platform xbox-360 --title "Painkiller" --limit 10 --json
@@ -171,3 +171,7 @@ GameCube source ZIPs have no effect-level emulator QA. A GitHub Actions
 integration test fetches the same pinned original files into an ephemeral
 runner's private path, verifies the manifest twice (including an offline
 `--check`), then discards the cache without artifact publication.
+
+### Wii native Gecko code source paths
+
+External reference search now includes **29** pinned original code files across four Wii original-source families: for instance, `cheatarium-query external --db generated/v1 --platform wii --title RUUE01v0 --json` matches the explicit City Folk revision. The game ID alone is not enough for City Folk; do not merge `RUUE01v0` and `RUUE01v1`. This is source filename search and source provenance, **not** a version verification or public code-body import.

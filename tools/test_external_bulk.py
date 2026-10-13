@@ -58,11 +58,36 @@ class TestExternalBulk(unittest.TestCase):
             "leumas-gamecube-wiird-zips": 3,
             "katsumaki-wiiu-xml": 9,
             "ucodes-wiiu-json": 4,
+            "wii-accf-gecko-native": 9,
+            "wii-metroid-prime-gecko-native": 12,
+            "wii-metroid-other-m-gecko-native": 3,
+            "wii-taiko-gecko-native": 5,
         })
         self.assertEqual(next(x for x in indexes if x["id"] == "duckstation-chtdb")["file_counts"], {"cheat": 4497, "patch": 138})
         self.assertEqual(next(x for x in indexes if x["id"] == "xenia-canary-game-patches")["file_counts"], {"patch": 501})
         self.assertTrue(all(x["rights_status"] == "link_only_rights_review" for x in indexes))
-        self.assertEqual(sum(len(x["files"]) for x in indexes), 43425)
+        self.assertEqual(sum(len(x["files"]) for x in indexes), 43454)
+
+    def test_new_pinned_wii_gecko_revisions_keep_source_identity(self):
+        from external_bulk import ROOT
+        sources = load(ROOT)
+        checks = {
+            "wii-accf-gecko-native": ("RUUE01v0", 9),
+            "wii-metroid-prime-gecko-native": ("_mp1", 12),
+            "wii-metroid-other-m-gecko-native": ("R3OE01", 3),
+            "wii-taiko-gecko-native": ("R2JJAF", 5),
+        }
+        for sid, (title, count) in checks.items():
+            with self.subTest(source=sid):
+                source = next(s for s in sources if s["id"] == sid)
+                self.assertEqual(len(source["files"]), count)
+                hits = lookup([source], title, "wii", 20)
+                self.assertGreaterEqual(len(hits), 1)
+                self.assertTrue(all(h["kind"] == "cheat"
+                    and h["redistribution"] == "link_only_rights_review"
+                    for h in hits))
+        accf = next(s for s in sources if s["id"] == "wii-accf-gecko-native")
+        self.assertEqual(sum("v" in p.rsplit("/", 1)[-1] for p, _, _ in accf["files"]), 6)
 
     def test_nintendo_gamecube_wiiu_pinned_bulk_are_link_only(self):
         indexes = load(__import__("external_bulk").ROOT)

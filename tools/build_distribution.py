@@ -124,7 +124,7 @@ def build_manifest(root):
     named_paths.add(secrets_rel)
     manifest_files.append({"path": secrets_rel, **digest(safe_path(root, secrets_rel))})
     external_catalog = checked_json(safe_path(root, "external/catalog.json"))
-    if external_catalog["reference_files"] != 43425:
+    if external_catalog["reference_files"] != 43454:
         raise ValueError("External reference count disagrees with pinned source snapshots")
     # Check exact SHA-1 Git-blob overlap from pinned filename inventories.
     # This is metadata-only source-byte identity, never effect equivalence.
