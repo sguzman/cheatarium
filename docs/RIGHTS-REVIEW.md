@@ -111,3 +111,14 @@ publishes an MIT LICENSE for the software but the original Wii U Cafe/Gecko
 cheat records carry independent author-credit fields. Do not transfer the
 software license across separately credited contributions without evidence.
 All three are **rights-unresolved links**; imported original cheat bodies = 0.
+
+### GameCube/Wii U actual contents measured (2026-10-13)
+
+The [read-only aggregate audit](../research/nintendo-bulk-member-coverage-v1.json)
+verified 375 GameCube WiiRD source text members inside the three
+regional ZIP containers, 97 Wii U XML entries and 50 Wii U JSON record
+occurrences. At least 90 of the XML entries bear source-credit author
+labels and 47 of the JSON records include author labels. This
+confirms contributor-level authorship review is still material.
+None of these counts establishes permission to redistribute original
+cheat-code text. No original source codes were committed.

@@ -1,0 +1,119 @@
+{
+  "format": "cheatarium-nintendo-bulk-member-coverage-v1",
+  "game_and_build_compatibility_verified": false,
+  "gamecube_wiird_zip": {
+    "distinct_exact_member_byte_bodies_across_all_regions": 375,
+    "game_title_or_rom_revision_verified": false,
+    "member_extension_occurrences": {
+      ".txt": 375
+    },
+    "member_names_hashes_and_code_text_not_exported": true,
+    "original_uncompressed_member_bytes": 5437380,
+    "regional_zip_counts": [
+      {
+        "distinct_member_body_bytes": 8,
+        "duplicate_casefolded_member_names_within_zip": 0,
+        "member_extension_occurrences": {
+          ".txt": 8
+        },
+        "member_file_occurrences": 8,
+        "original_zip_name": "NTSC-J codes.zip",
+        "repeated_member_byte_occurrences_within_zip": 0
+      },
+      {
+        "distinct_member_body_bytes": 138,
+        "duplicate_casefolded_member_names_within_zip": 0,
+        "member_extension_occurrences": {
+          ".txt": 138
+        },
+        "member_file_occurrences": 138,
+        "original_zip_name": "NTSC-U Codes.zip",
+        "repeated_member_byte_occurrences_within_zip": 0
+      },
+      {
+        "distinct_member_body_bytes": 229,
+        "duplicate_casefolded_member_names_within_zip": 0,
+        "member_extension_occurrences": {
+          ".txt": 229
+        },
+        "member_file_occurrences": 229,
+        "original_zip_name": "PAL codes.zip",
+        "repeated_member_byte_occurrences_within_zip": 0
+      }
+    ],
+    "repeated_exact_member_byte_occurrences": 0,
+    "same_member_path_occurrences_across_regions": 0,
+    "source_file_names_are_region_container_names_not_game_ids": true,
+    "source_regional_zip_containers": 3,
+    "total_member_file_occurrences": 375
+  },
+  "individual_cheat_code_effects_verified": false,
+  "method": "ephemeral-original-git-sha1-verified-native-container-audit",
+  "new_distinct_git_blobs": 15,
+  "new_file_reference_occurrences": 16,
+  "original_cheat_code_contents_committed": false,
+  "schema_version": 1,
+  "third_party_reuse_permissions_established": false,
+  "wiiu_json": {
+    "cafe_code_record_occurrences": 48,
+    "distinct_exact_dual_format_code_payload_pairs": 48,
+    "distinct_original_git_file_blobs": 3,
+    "individual_codes_names_authors_or_code_hashes_exported": false,
+    "original_json_source_file_occurrences": 4,
+    "per_file_source_record_counts": [
+      {
+        "cafe_code_record_occurrences": 46,
+        "original_json_source_path": "views/pages/cheats/0/codes.json",
+        "record_occurrences": 46,
+        "record_occurrences_with_author_label": 45,
+        "ugecko_code_record_occurrences": 33
+      },
+      {
+        "cafe_code_record_occurrences": 2,
+        "original_json_source_path": "views/pages/cheats/1/codes.json",
+        "record_occurrences": 2,
+        "record_occurrences_with_author_label": 0,
+        "ugecko_code_record_occurrences": 2
+      },
+      {
+        "cafe_code_record_occurrences": 0,
+        "original_json_source_path": "views/pages/cheats/2/codes.json",
+        "record_occurrences": 1,
+        "record_occurrences_with_author_label": 1,
+        "ugecko_code_record_occurrences": 0
+      },
+      {
+        "cafe_code_record_occurrences": 0,
+        "original_json_source_path": "views/pages/cheats/3/codes.json",
+        "record_occurrences": 1,
+        "record_occurrences_with_author_label": 1,
+        "ugecko_code_record_occurrences": 0
+      }
+    ],
+    "record_occurrences": 50,
+    "record_occurrences_with_author_label": 47,
+    "repeated_dual_format_payload_pair_occurrences": 2,
+    "root_website_license_does_not_clear_third_party_codes": true,
+    "ugecko_code_record_occurrences": 35
+  },
+  "wiiu_xml": {
+    "author_labels_are_not_copyright_permissions": true,
+    "distinct_exact_nonempty_code_text_bodies": 88,
+    "distinct_nonempty_author_label_strings": 10,
+    "entries_with_author_label": 90,
+    "entries_with_format_hint": 97,
+    "entry_occurrences": 97,
+    "entry_occurrences_with_code_text": 88,
+    "nonempty_code_line_occurrences": 609,
+    "original_codes_game_names_credit_strings_or_hashes_exported": false,
+    "original_xml_source_files": 9,
+    "repeated_nonempty_code_body_occurrences": 0
+  },
+  "audit_run": {
+    "url": "https://github.com/sguzman/cheatarium/actions/runs/38335307652",
+    "job_id": 115093928776,
+    "source_commit": "1f11f19cb5c271b7d8242dab0631919cc306d99d",
+    "date_utc": "2026-10-13",
+    "pinned_git_blob_sha_checks_verified": true
+  }
+}

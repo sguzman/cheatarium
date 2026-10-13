@@ -406,3 +406,31 @@ and compare source file aliases by exact member bytes; inventory Wii U XML
 and JSON declared code entries and attribution indicators without publishing
 individual cheat bodies. Track verified title/revision compatibility only
 after original-author reuse rights and test evidence are available.
+
+### GameCube WiiRD regional contents and Wii U native format counts (2026-10-13)
+
+The [pinned source-verified Nintendo bulk member audit](../research/nintendo-bulk-member-coverage-v1.json)
+inspected all three original WiiRD GameCube ZIPs: NTSC-J contains **8**
+`.txt` original member occurrences, NTSC-U **138** and PAL **229**:
+**375** total source text file occurrences, **375** distinct exact member-byte
+bodies, and no exact cross-region member-name or byte aliases. These are
+source-text files and are **not** 375 independently validated games,
+revisions, or cheat effects. The compiler sources from gc-forever and
+performed only limited personal testing; original-code reuse rights remain
+unresolved.
+
+The **nine original Wii U native XML** source documents contain **97**
+`entry` elements, of which **88** carry nonempty `code` text, with
+**90** entry occurrences bearing author credit labels (10 distinct
+source-credit strings). The **four Wii U uCodes JSON** documents contain
+**50** record occurrences, **48** with Cafe code text and **35** with
+uGecko code text. Two original JSON source files have identical Git bytes;
+do not count them as separate data. These are native syntax counts, not
+confirmed unique games or per-region compatible cheats.
+
+All measurements use verified pinned Git blobs, ephemeral extraction and
+aggregate-only reporting. The GameCube ZIPs, Wii U XML/JSON code bodies
+are **not** archived; 16 link-only parent source-file references are
+searchable. Next priority is extracting safe ZIP member path/title labels
+into a code-free per-game lookup (without original code bodies) and
+documenting original-author reuse permissions for GameCube and Wii U.
