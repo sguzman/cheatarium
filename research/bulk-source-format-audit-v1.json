@@ -1,0 +1,101 @@
+{
+  "cheat_effects_verified": false,
+  "contents_redistributed_or_committed": false,
+  "counts_are_source_syntax_not_verified_unique_games": true,
+  "format": "cheatarium-ephemeral-bulk-original-format-audit-v1",
+  "gameplay_compatibility_verified": false,
+  "mame2010_cheat_zip": {
+    "contents_and_cheat_codes_exported": false,
+    "distinct_zip_git_blobs": 1,
+    "member_file_occurrences_including_cloned_zips": 8837,
+    "member_files_across_distinct_zip_blobs": 8837,
+    "member_suffix_counts_across_distinct_zip_blobs": {
+      ".xml": 8837
+    },
+    "member_suffix_counts_including_clones": {
+      ".xml": 8837
+    },
+    "original_zip_file_occurrences": 1
+  },
+  "method": "ephemeral-original-byte-fetch-with-pinned-git-blob-verification",
+  "nintendo_sqlite": {
+    "individual_records_exported": false,
+    "original_git_blob_sha1": "623d27561cc7b1f437f3e7220bc69cf2ea51cd19",
+    "original_source_bytes": 63660032,
+    "selected_table_row_counts": {
+      "cheat_aliases": 2279,
+      "cheat_authors": 970,
+      "cheats": 117861,
+      "game_aliases": 5,
+      "game_identifiers": 3,
+      "games": 5327,
+      "platforms": 4
+    },
+    "table_names_only": [
+      "cheat_aliases",
+      "cheat_authors",
+      "cheat_fts",
+      "cheat_fts_config",
+      "cheat_fts_content",
+      "cheat_fts_data",
+      "cheat_fts_docsize",
+      "cheat_fts_idx",
+      "cheats",
+      "game_aliases",
+      "game_identifiers",
+      "games",
+      "metadata",
+      "platforms"
+    ]
+  },
+  "original_xbox_cmp_syntax": {
+    "code_label_lines": 46,
+    "credit_attribution_lines": 40,
+    "declared_game_name_lines": 12,
+    "native_code_instruction_lines": 1003,
+    "original_text_files": 12
+  },
+  "psp_cwcheat_db": {
+    "cheat_group_header_lines": 83042,
+    "code_command_lines": 261100,
+    "code_text_exported": false,
+    "declared_game_name_lines": 2697,
+    "declared_game_serial_lines": 2696,
+    "source_bytes": 8922567
+  },
+  "rights_to_redistribute_asserted": false,
+  "schema_version": 1,
+  "segacd_mister_zip": {
+    "contents_and_cheat_codes_exported": false,
+    "distinct_zip_git_blobs": 48,
+    "member_file_occurrences_including_cloned_zips": 426,
+    "member_files_across_distinct_zip_blobs": 385,
+    "member_suffix_counts_across_distinct_zip_blobs": {
+      ".gg": 364,
+      ".txt": 21
+    },
+    "member_suffix_counts_including_clones": {
+      ".gg": 404,
+      ".txt": 22
+    },
+    "original_zip_file_occurrences": 51
+  },
+  "audit_run": {
+    "repository": "https://github.com/sguzman/cheatarium",
+    "workflow_commit": "dece833f20885a589ba205eb90655c661910c4e9",
+    "workflow_file": ".github/workflows/audit-bulk-source-formats.yml",
+    "workflow_run_url": "https://github.com/sguzman/cheatarium/actions/runs/38331024444",
+    "successful_job_id": 115080538653,
+    "completed_utc_date": "2026-10-13",
+    "downloaded_source_bytes_committed": false,
+    "original_source_git_blob_checks_verified": true
+  },
+  "interpretation": {
+    "nintendo_sqlite": "Table row counts in one original SQLite database; the JSON and JSONL exports are alternative representations and must not be added.",
+    "mame2010": "ZIP member XML file count, not proven unique games, codes or compatible emulator versions.",
+    "segacd": "Member path-extension counts over distinct original ZIP byte blobs; three ZIP clone occurrences would repeat some member files.",
+    "psp": "CWCheat syntax marker line counts; not independently verified unique games or working effects.",
+    "xemu": "CMP source syntax marker line counts across twelve files; not an observed effect or compatibility audit.",
+    "copyright_and_redistribution": "All surveyed cheat source bodies retain their previously recorded original-author rights caveats and are not approved for new preservation imports by this format audit."
+  }
+}
