@@ -1,0 +1,31 @@
+name: Inspect pinned MAME cheat XML structure
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-mame-cheat-xml.yml"
+      - "tools/audit_mame_cheat_xml.py"
+      - "tools/test_audit_mame_cheat_xml.py"
+      - "sources/external-bulk/libretro-mame2010-cheat-archive.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Run synthetic MAME ZIP and XML parser tests
+        run: python3 tools/test_audit_mame_cheat_xml.py
+      - name: Verify original MAME archive bytes and count XML cheat records
+        run: python3 tools/audit_mame_cheat_xml.py --output mame-xml-structural-summary.json
+      - name: Upload aggregate counts only
+        uses: actions/upload-artifact@v4
+        with:
+          name: cheatarium-mame-xml-structure
+          path: mame-xml-structural-summary.json
+          retention-days: 30
