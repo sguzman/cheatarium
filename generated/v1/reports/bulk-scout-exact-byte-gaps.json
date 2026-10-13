@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-bulk-scout-exact-byte-gaps-v1",
+  "method": "pinned-original-git-blob-sha1-only",
+  "metadata_only": true,
+  "source_payloads_included": false,
+  "rights_to_redistribute_established": false,
+  "new_games_or_cheat_effects_verified": false,
+  "gameplay_compatibility_verified": false,
+  "coverage_universe": "pinned preserved originals and preexisting external catalogs only",
+  "archived_original_file_occurrences": 67834,
+  "existing_external_reference_occurrences": 42718,
+  "scout_source_count": 4,
+  "scout_source_file_occurrences": 691,
+  "scout_distinct_git_blobs": 487,
+  "scout_distinct_git_blobs_matching_archive": 0,
+  "scout_distinct_git_blobs_matching_existing_external": 0,
+  "scout_distinct_git_blobs_not_in_either_known_corpus": 487,
+  "sources": [
+    {
+      "source_id": "eignar17-arcade",
+      "rights_status": "link_only_rights_review",
+      "file_occurrences": 621,
+      "distinct_source_git_blobs": 420,
+      "repeated_byte_occurrences_within_source": 201,
+      "occurrences_matching_archived_original_bytes": 0,
+      "occurrences_matching_existing_external_bytes": 0,
+      "occurrences_matching_either_known_corpus": 0,
+      "distinct_blobs_matching_archived_original_bytes": 0,
+      "distinct_blobs_matching_existing_external_bytes": 0,
+      "distinct_blobs_not_in_either_known_corpus": 420,
+      "known_byte_match_examples": [],
+      "no_known_byte_match_examples": [
+        {
+          "path": "Final Burn Alpha Cheat Archive/1941.ini",
+          "git_blob_sha": "c0bb77e03418cc9481d662a938760da9358edcfc"
+        },
+        {
+          "path": "Final Burn Alpha Cheat Archive/1941j.ini",
+          "git_blob_sha": "c24217d5443a66ee6d94bbf2cda3798bf267ca36"
+        },
+        {
+          "path": "Final Burn Alpha Cheat Archive/1944.ini",
+          "git_blob_sha": "28ff11b3d76888db8b45a5c2a854bc6cc3550d4b"
+        }
+      ]
+    },
+    {
+      "source_id": "riyoway-nintendo",
+      "rights_status": "link_only_rights_review",
+      "file_occurrences": 7,
+      "distinct_source_git_blobs": 7,
+      "repeated_byte_occurrences_within_source": 0,
+      "occurrences_matching_archived_original_bytes": 0,
+      "occurrences_matching_existing_external_bytes": 0,
+      "occurrences_matching_either_known_corpus": 0,
+      "distinct_blobs_matching_archived_original_bytes": 0,
+      "distinct_blobs_matching_existing_external_bytes": 0,
+      "distinct_blobs_not_in_either_known_corpus": 7,
+      "known_byte_match_examples": [],
+      "no_known_byte_match_examples": [
+        {
+          "path": "cheatdb.db",
+          "git_blob_sha": "623d27561cc7b1f437f3e7220bc69cf2ea51cd19"
+        },
+        {
+          "path": "exports/JGeckoU/AUMJ88.xml",
+          "git_blob_sha": "7f97b1875d44e1564d75f209ef76666672c83a92"
+        },
+        {
+          "path": "exports/JSON/Nintendo/3ds.json",
+          "git_blob_sha": "a832aecc46fa778a9e0e65349682a3a5720cea94"
+        }
+      ]
+    },
+    {
+      "source_id": "slade1972-segacd",
+      "rights_status": "link_only_rights_review",
+      "file_occurrences": 51,
+      "distinct_source_git_blobs": 48,
+      "repeated_byte_occurrences_within_source": 3,
+      "occurrences_matching_archived_original_bytes": 0,
+      "occurrences_matching_existing_external_bytes": 0,
+      "occurrences_matching_either_known_corpus": 0,
+      "distinct_blobs_matching_archived_original_bytes": 0,
+      "distinct_blobs_matching_existing_external_bytes": 0,
+      "distinct_blobs_not_in_either_known_corpus": 48,
+      "known_byte_match_examples": [],
+      "no_known_byte_match_examples": [
+        {
+          "path": "Cheats/3 Ninjas Kick Back (USA).zip",
+          "git_blob_sha": "3a8b28519040e5fed29b0366989de9ea255874c6"
+        },
+        {
+          "path": "Cheats/A-X-101 (USA) (RE).zip",
+          "git_blob_sha": "8321266e422da8cd413fe308bd4047fe70da5156"
+        },
+        {
+          "path": "Cheats/AH3 - Thunderstrike (USA).zip",
+          "git_blob_sha": "a8c080c6c27f850ab9285c080197e746c1a8414e"
+        }
+      ]
+    },
+    {
+      "source_id": "skillercmp-xemu",
+      "rights_status": "link_only_rights_review",
+      "file_occurrences": 12,
+      "distinct_source_git_blobs": 12,
+      "repeated_byte_occurrences_within_source": 0,
+      "occurrences_matching_archived_original_bytes": 0,
+      "occurrences_matching_existing_external_bytes": 0,
+      "occurrences_matching_either_known_corpus": 0,
+      "distinct_blobs_matching_archived_original_bytes": 0,
+      "distinct_blobs_matching_existing_external_bytes": 0,
+      "distinct_blobs_not_in_either_known_corpus": 12,
+      "known_byte_match_examples": [],
+      "no_known_byte_match_examples": [
+        {
+          "path": "Cheats/EA0049-17BDE1940BA65905.txt",
+          "git_blob_sha": "1c2b728decbfca6cc93fe160b0d4415160b8a9e3"
+        },
+        {
+          "path": "Cheats/EA0049-61BB0C206A391C8C.txt",
+          "git_blob_sha": "e385ed807e79aaa21df9381e20e7f3a951973329"
+        },
+        {
+          "path": "Cheats/EA009E-53780688DE742E83.txt",
+          "git_blob_sha": "b92434456793e13db3c0329d4f2253d427528a67"
+        }
+      ]
+    }
+  ]
+}

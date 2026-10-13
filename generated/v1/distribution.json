@@ -4,6 +4,9 @@
   "compatibility": "filename candidates only; never auto-enable cheat codes",
   "console_bundles": 59,
   "external_reference_files": 42718,
+  "bulk_scout_source_file_occurrences": 691,
+  "bulk_scout_distinct_git_blobs": 487,
+  "bulk_scout_blobs_absent_from_known_corpora": 487,
   "homebrew_built_in_secret_occurrences": 19,
   "homebrew_source_title_labels": 16,
   "external_switch_native_pair_labels_not_in_archive": 3436,
@@ -970,6 +973,11 @@
       "path": "reports/acquisition-rights-review.json",
       "sha256": "d6192aaccc23f4eb942b271451962b642a59d711b1af7a7395b11bacc4c96590",
       "size_bytes": 14902
+    },
+    {
+      "path": "reports/bulk-scout-exact-byte-gaps.json",
+      "sha256": "bbefc5f0ec9e6b6dc761010ee1f39031aba77a641910ce223d707e6659a3ea49",
+      "size_bytes": 5151
     },
     {
       "path": "reports/external-overlap.json",
