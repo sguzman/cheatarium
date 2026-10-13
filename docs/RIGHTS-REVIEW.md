@@ -77,3 +77,14 @@ file formats must not increase unique-content totals. Distinct Sega CD ZIP
 parents contain 385 members but only 344 byte-distinct member bodies.
 Attribution and reuse clearance must be reviewed at the original creator
 level, not inferred from repackaging or matching content.
+
+### MAME 2010 source alias inflation (2026-10-13)
+
+The original cheat.zip contains **8,837 original XML file occurrences but
+4,108 distinct XML file bodies** and **106,805 cheat elements but only
+33,400 different serialized XML cheat subtrees**, measured by a reproducible
+[ephemeral pinned archive audit](../research/mame-xml-structural-audit-v1.json).
+This does not establish 33,400 unique effects, permissions, or game/build
+compatibility. The source's upstream emulator license does not independently
+clear historic cheat authors. Keep original XML content and machine-readable
+codes out of the archive pending actual author-level reuse evidence.

@@ -1,0 +1,50 @@
+{
+  "caveat": "Distinct exact XML subtrees do not mean distinct or working code effects, titles or game revisions.",
+  "format": "cheatarium-mame-xml-structural-audit-v1",
+  "game_and_revision_identity_verified": false,
+  "gameplay_effects_verified": false,
+  "method": "pinned-git-blob-verified-original-zip-ephemeral-read",
+  "no_original_code_xml_or_identifiers_exported": true,
+  "no_source_cheat_body_copied_into_repo": true,
+  "original_zip_file_occurrences": 1,
+  "original_zip_sha1_verified": true,
+  "redistribution_rights_cleared": false,
+  "schema_version": 1,
+  "source_id": "libretro-mame2010-cheat-archive",
+  "structure": {
+    "action_element_occurrences": 145757,
+    "cheat_element_occurrences": 106805,
+    "distinct_exact_member_file_bytes": 4108,
+    "distinct_exact_serialized_cheat_xml_subtrees": 33400,
+    "individual_game_labels_cheat_text_xml_or_fingerprints_exported": false,
+    "max_cheat_elements_in_one_xml_member": 215,
+    "non_xml_member_occurrences": 0,
+    "parameter_element_occurrences": 12836,
+    "repeated_exact_serialized_cheat_subtree_occurrences": 73405,
+    "repeated_exact_xml_member_byte_occurrences": 4729,
+    "same_filename_stem_excess_xml_members": 0,
+    "script_element_occurrences": 89243,
+    "source_game_filename_stem_labels": 8837,
+    "source_root_element_tag_counts": {
+      "mamecheat": 8837
+    },
+    "source_root_version_attribute_counts": {
+      "1": 8837
+    },
+    "uncompressed_source_member_bytes": 24109242,
+    "xml_files_with_cheat_elements": 8837,
+    "xml_member_occurrences": 8837,
+    "xml_members_parsed": 8837,
+    "xml_members_rejected_for_doctype_or_entity": 0,
+    "xml_parse_error_members": 0,
+    "zip_member_occurrences": 8837
+  },
+  "audit_run": {
+    "workflow_run_url": "https://github.com/sguzman/cheatarium/actions/runs/38332665858",
+    "source_code_commit": "67d0a146f62cb8d3e3bf165dc169f57d386a8271",
+    "successful_job_id": 115085703404,
+    "completed_utc_date": "2026-10-13",
+    "original_bytes_verified_with_pinned_git_blob": true,
+    "cheat_contents_saved_to_repository": false
+  }
+}

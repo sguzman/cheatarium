@@ -333,3 +333,26 @@ job validates each pinned Git blob SHA-1 and uploads aggregate counts only.
 Next: scrutinize the 8,837 XML members of pinned MAME 2010 at per-file cheat
 entry level, then prioritize the most useful, author-cleared source families.
 Headless execution testing and ROM/build matching remain deferred.
+
+### MAME 2010 XML cheat internals quantified (2026-10-13)
+
+The [pinned, original-Git-blob-verified MAME 2010 XML audit](../research/mame-xml-structural-audit-v1.json)
+reads the original 24,981,772-byte link-only ZIP ephemerally, parses every
+member without keeping XML/cheat bodies, and publishes **aggregate counts**.
+All **8,837 XML files** parsed with the declared `mamecheat` root and version
+1. There are **8,837 distinct filename stem labels**, but only **4,108
+different full XML file bodies**; hence **4,729 repeated file-byte occurrences**.
+Across all files there are **106,805 `cheat` elements**, but only **33,400
+distinct exact serialized `cheat` XML subtrees**, so **73,405 occurrences
+repeat a subtree's exact bytes**. The source also has 89,243 `script` and
+145,757 `action` element occurrences. Repeated XML bytes are highly
+significant for source-level de-duplication and mirrored clone aliases.
+They do **not** prove game-equivalent behavior, source-author rights, or
+game-release compatibility across different arcade sets.
+
+Acquisition priorities: separate MAME filename counts, full-file byte
+identity, subtree content identity, and validated game identities rather
+than summing the 8,837 aliases or 106,805 source elements as unique playable
+cheats. The ZIP remains a rights-unresolved **link-only** collection. Next
+work: identify earlier original cheat authors and overlap against other
+MAME versions before any new original-body import.
