@@ -1,0 +1,34 @@
+name: Audit compiled source identity overlap
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-compiled-source-identity.yml"
+      - "tools/audit_compiled_source_identity.py"
+      - "tools/test_audit_compiled_source_identity.py"
+      - "research/bulk-source-scout-v1.json"
+      - "research/bulk-source-format-audit-v1.json"
+      - "sources/external-bulk/saramagrean-psp-cwcheat.json"
+      - "sources/external-bulk/apelfactory-ppsspp-cheatdb.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - name: Run synthetic offline parser regressions
+        run: python3 tools/test_audit_compiled_source_identity.py
+      - name: Fetch verified pinned originals and calculate aggregate overlaps
+        run: python3 tools/audit_compiled_source_identity.py --output compiled-source-summary.json
+      - name: Upload aggregate report without source code bodies
+        uses: actions/upload-artifact@v4
+        with:
+          name: cheatarium-compiled-identity-summary
+          path: compiled-source-summary.json
+          retention-days: 30
