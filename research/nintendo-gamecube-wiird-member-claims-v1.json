@@ -1,0 +1,3403 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-nintendo-gamecube-wiird-member-references-v1",
+  "platform": "gamecube",
+  "provenance_scope": "GameCube WiiRD region-native original ZIP member name claims",
+  "read_only_filename_metadata": true,
+  "rights_status": "link_only_rights_review",
+  "cheat_bodies_included": false,
+  "original_file_bytes_verified": true,
+  "game_identifiers_or_revisions_confirmed": false,
+  "gameplay_tested": false,
+  "region_count": 3,
+  "reference_count": 375,
+  "file_occurrences_by_region": {
+    "NTSC-J": 8,
+    "NTSC-U": 138,
+    "PAL": 229
+  },
+  "records": [
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "DBJJ08.txt",
+      "source_filename_title_hint": "DBJJ08",
+      "source_member_uncompressed_bytes": 9236
+    },
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "G4NJDA.txt",
+      "source_filename_title_hint": "G4NJDA",
+      "source_member_uncompressed_bytes": 10231
+    },
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "GFZJ01.txt",
+      "source_filename_title_hint": "GFZJ01",
+      "source_member_uncompressed_bytes": 41630
+    },
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "GKQJ01.txt",
+      "source_filename_title_hint": "GKQJ01",
+      "source_member_uncompressed_bytes": 4474
+    },
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "GWEJB0.txt",
+      "source_filename_title_hint": "GWEJB0",
+      "source_member_uncompressed_bytes": 147
+    },
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "GZ2J01.txt",
+      "source_filename_title_hint": "GZ2J01",
+      "source_member_uncompressed_bytes": 35387
+    },
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "GZLJ01.txt",
+      "source_filename_title_hint": "GZLJ01",
+      "source_member_uncompressed_bytes": 774
+    },
+    {
+      "region": "NTSC-J",
+      "original_container_path": "NTSC-J codes.zip",
+      "original_container_git_blob_sha1": "fd09a0078d77a61e34270eba737c7ca75a0343de",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-J%20codes.zip",
+      "native_zip_member_path": "GZWJ01.txt",
+      "source_filename_title_hint": "GZWJ01",
+      "source_member_uncompressed_bytes": 953
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "DLSE64.txt",
+      "source_filename_title_hint": "DLSE64",
+      "source_member_uncompressed_bytes": 823
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G2CE52.txt",
+      "source_filename_title_hint": "G2CE52",
+      "source_member_uncompressed_bytes": 21135
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G2ME01.txt",
+      "source_filename_title_hint": "G2ME01",
+      "source_member_uncompressed_bytes": 3211
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G2OE41.txt",
+      "source_filename_title_hint": "G2OE41",
+      "source_member_uncompressed_bytes": 194
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G2VE08.txt",
+      "source_filename_title_hint": "G2VE08",
+      "source_member_uncompressed_bytes": 772
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G4BE08.txt",
+      "source_filename_title_hint": "G4BE08",
+      "source_member_uncompressed_bytes": 6808
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G4SE01.txt",
+      "source_filename_title_hint": "G4SE01",
+      "source_member_uncompressed_bytes": 11189
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G8ME01.txt",
+      "source_filename_title_hint": "G8ME01",
+      "source_member_uncompressed_bytes": 277743
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G8WE01.txt",
+      "source_filename_title_hint": "G8WE01",
+      "source_member_uncompressed_bytes": 2517
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "G9RE7D.txt",
+      "source_filename_title_hint": "G9RE7D",
+      "source_member_uncompressed_bytes": 2699
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GACE5H.txt",
+      "source_filename_title_hint": "GACE5H",
+      "source_member_uncompressed_bytes": 944
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAFE01.txt",
+      "source_filename_title_hint": "GAFE01",
+      "source_member_uncompressed_bytes": 20156
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAHEGG.txt",
+      "source_filename_title_hint": "GAHEGG",
+      "source_member_uncompressed_bytes": 2573
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAKE5D.txt",
+      "source_filename_title_hint": "GAKE5D",
+      "source_member_uncompressed_bytes": 20184
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GALE01_v100.txt",
+      "source_filename_title_hint": "GALE01_v100",
+      "source_member_uncompressed_bytes": 1131
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GALE01_v101.txt",
+      "source_filename_title_hint": "GALE01_v101",
+      "source_member_uncompressed_bytes": 1129
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GALE01_v102.txt",
+      "source_filename_title_hint": "GALE01_v102",
+      "source_member_uncompressed_bytes": 1129
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAME5H.txt",
+      "source_filename_title_hint": "GAME5H",
+      "source_member_uncompressed_bytes": 1210
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAPE52.txt",
+      "source_filename_title_hint": "GAPE52",
+      "source_member_uncompressed_bytes": 1841
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GARE5H.txt",
+      "source_filename_title_hint": "GARE5H",
+      "source_member_uncompressed_bytes": 2599
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAUE08.txt",
+      "source_filename_title_hint": "GAUE08",
+      "source_member_uncompressed_bytes": 2781
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAVE78.txt",
+      "source_filename_title_hint": "GAVE78",
+      "source_member_uncompressed_bytes": 733
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GAYE5D.txt",
+      "source_filename_title_hint": "GAYE5D",
+      "source_member_uncompressed_bytes": 10913
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GBGE5G.txt",
+      "source_filename_title_hint": "GBGE5G",
+      "source_member_uncompressed_bytes": 1976
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GBIE08.txt",
+      "source_filename_title_hint": "GBIE08",
+      "source_member_uncompressed_bytes": 5659
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GBLE52.txt",
+      "source_filename_title_hint": "GBLE52",
+      "source_member_uncompressed_bytes": 1324
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GBWE64.txt",
+      "source_filename_title_hint": "GBWE64",
+      "source_member_uncompressed_bytes": 1257
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GBZE08.txt",
+      "source_filename_title_hint": "GBZE08",
+      "source_member_uncompressed_bytes": 1114
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GC6E01.txt",
+      "source_filename_title_hint": "GC6E01",
+      "source_member_uncompressed_bytes": 174143
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GCBE7D.txt",
+      "source_filename_title_hint": "GCBE7D",
+      "source_member_uncompressed_bytes": 6813
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GCDE08.txt",
+      "source_filename_title_hint": "GCDE08",
+      "source_member_uncompressed_bytes": 6220
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GCIE69.txt",
+      "source_filename_title_hint": "GCIE69",
+      "source_member_uncompressed_bytes": 207
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GCNE7D.txt",
+      "source_filename_title_hint": "GCNE7D",
+      "source_member_uncompressed_bytes": 178
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GCOE52.txt",
+      "source_filename_title_hint": "GCOE52",
+      "source_member_uncompressed_bytes": 1371
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GCTE51.txt",
+      "source_filename_title_hint": "GCTE51",
+      "source_member_uncompressed_bytes": 1979
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GCVEEB.txt",
+      "source_filename_title_hint": "GCVEEB",
+      "source_member_uncompressed_bytes": 1585
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GDIX7D.txt",
+      "source_filename_title_hint": "GDIX7D",
+      "source_member_uncompressed_bytes": 2505
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GDJEB2.txt",
+      "source_filename_title_hint": "GDJEB2",
+      "source_member_uncompressed_bytes": 18033
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GE3E5D.txt",
+      "source_filename_title_hint": "GE3E5D",
+      "source_member_uncompressed_bytes": 12508
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GEAE8P.txt",
+      "source_filename_title_hint": "GEAE8P",
+      "source_member_uncompressed_bytes": 14373
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GEDE01.txt",
+      "source_filename_title_hint": "GEDE01",
+      "source_member_uncompressed_bytes": 2817
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GENE69.txt",
+      "source_filename_title_hint": "GENE69",
+      "source_member_uncompressed_bytes": 5650
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GEOE08.txt",
+      "source_filename_title_hint": "GEOE08",
+      "source_member_uncompressed_bytes": 931
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GEZE8P.txt",
+      "source_filename_title_hint": "GEZE8P",
+      "source_member_uncompressed_bytes": 1650
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GFEE01.txt",
+      "source_filename_title_hint": "GFEE01",
+      "source_member_uncompressed_bytes": 991
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GFTE01.txt",
+      "source_filename_title_hint": "GFTE01",
+      "source_member_uncompressed_bytes": 2956
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GFZE01.txt",
+      "source_filename_title_hint": "GFZE01",
+      "source_member_uncompressed_bytes": 32844
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GG4E08.txt",
+      "source_filename_title_hint": "GG4E08",
+      "source_member_uncompressed_bytes": 4560
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GGRE41.txt",
+      "source_filename_title_hint": "GGRE41",
+      "source_member_uncompressed_bytes": 1234
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GGSEA4.txt",
+      "source_filename_title_hint": "GGSEA4",
+      "source_member_uncompressed_bytes": 2859
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GGTE01.txt",
+      "source_filename_title_hint": "GGTE01",
+      "source_member_uncompressed_bytes": 833
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GGVE78.txt",
+      "source_filename_title_hint": "GGVE78",
+      "source_member_uncompressed_bytes": 11980
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GH2E69.txt",
+      "source_filename_title_hint": "GH2E69",
+      "source_member_uncompressed_bytes": 1586
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GHAE08.txt",
+      "source_filename_title_hint": "GHAE08",
+      "source_member_uncompressed_bytes": 3194
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GHFE4Z.txt",
+      "source_filename_title_hint": "GHFE4Z",
+      "source_member_uncompressed_bytes": 2260
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GHME4F.txt",
+      "source_filename_title_hint": "GHME4F",
+      "source_member_uncompressed_bytes": 525
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GHNE71.txt",
+      "source_filename_title_hint": "GHNE71",
+      "source_member_uncompressed_bytes": 2268
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GHQE7D.txt",
+      "source_filename_title_hint": "GHQE7D",
+      "source_member_uncompressed_bytes": 4944
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GIJEFP.txt",
+      "source_filename_title_hint": "GIJEFP",
+      "source_member_uncompressed_bytes": 1770
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GIPEAF.txt",
+      "source_filename_title_hint": "GIPEAF",
+      "source_member_uncompressed_bytes": 2012
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GIVE4Z.txt",
+      "source_filename_title_hint": "GIVE4Z",
+      "source_member_uncompressed_bytes": 2263
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GIZE52.txt",
+      "source_filename_title_hint": "GIZE52",
+      "source_member_uncompressed_bytes": 2305
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GJCE8P.txt",
+      "source_filename_title_hint": "GJCE8P",
+      "source_member_uncompressed_bytes": 7902
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GJFE78.txt",
+      "source_filename_title_hint": "GJFE78",
+      "source_member_uncompressed_bytes": 328
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GJKE52.txt",
+      "source_filename_title_hint": "GJKE52",
+      "source_member_uncompressed_bytes": 5405
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GK2E52.txt",
+      "source_filename_title_hint": "GK2E52",
+      "source_member_uncompressed_bytes": 102
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GK4E01.txt",
+      "source_filename_title_hint": "GK4E01",
+      "source_member_uncompressed_bytes": 9052
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GKAE8P.txt",
+      "source_filename_title_hint": "GKAE8P",
+      "source_member_uncompressed_bytes": 613
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GKFEGG.txt",
+      "source_filename_title_hint": "GKFEGG",
+      "source_member_uncompressed_bytes": 2792
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GKME41.txt",
+      "source_filename_title_hint": "GKME41",
+      "source_member_uncompressed_bytes": 195
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GKYE01.txt",
+      "source_filename_title_hint": "GKYE01",
+      "source_member_uncompressed_bytes": 4217
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GL8E4F.txt",
+      "source_filename_title_hint": "GL8E4F",
+      "source_member_uncompressed_bytes": 569
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GLEE08.txt",
+      "source_filename_title_hint": "GLEE08",
+      "source_member_uncompressed_bytes": 3232
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GLME01.txt",
+      "source_filename_title_hint": "GLME01",
+      "source_member_uncompressed_bytes": 101996
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GM2E8P.txt",
+      "source_filename_title_hint": "GM2E8P",
+      "source_member_uncompressed_bytes": 4561
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GM4E01.txt",
+      "source_filename_title_hint": "GM4E01",
+      "source_member_uncompressed_bytes": 245940
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GM8E01.txt",
+      "source_filename_title_hint": "GM8E01",
+      "source_member_uncompressed_bytes": 2303
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GMBE8P.txt",
+      "source_filename_title_hint": "GMBE8P",
+      "source_member_uncompressed_bytes": 966
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GMPE01.txt",
+      "source_filename_title_hint": "GMPE01",
+      "source_member_uncompressed_bytes": 36613
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GMSE01.txt",
+      "source_filename_title_hint": "GMSE01",
+      "source_member_uncompressed_bytes": 36811
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GMUE5D.txt",
+      "source_filename_title_hint": "GMUE5D",
+      "source_member_uncompressed_bytes": 2811
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GNJEAF.txt",
+      "source_filename_title_hint": "GNJEAF",
+      "source_member_uncompressed_bytes": 3715
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GNREDA.txt",
+      "source_filename_title_hint": "GNREDA",
+      "source_member_uncompressed_bytes": 2474
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GO7E69.txt",
+      "source_filename_title_hint": "GO7E69",
+      "source_member_uncompressed_bytes": 1516
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GOCE5D.txt",
+      "source_filename_title_hint": "GOCE5D",
+      "source_member_uncompressed_bytes": 4150
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GOME01.txt",
+      "source_filename_title_hint": "GOME01",
+      "source_member_uncompressed_bytes": 1808
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GONE69.txt",
+      "source_filename_title_hint": "GONE69",
+      "source_member_uncompressed_bytes": 2153
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GOPEB2.txt",
+      "source_filename_title_hint": "GOPEB2",
+      "source_member_uncompressed_bytes": 7397
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GOQEAF.txt",
+      "source_filename_title_hint": "GOQEAF",
+      "source_member_uncompressed_bytes": 8986
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GOYE69.txt",
+      "source_filename_title_hint": "GOYE69",
+      "source_member_uncompressed_bytes": 2165
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GP5E01.txt",
+      "source_filename_title_hint": "GP5E01",
+      "source_member_uncompressed_bytes": 27268
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GP6E01.txt",
+      "source_filename_title_hint": "GP6E01",
+      "source_member_uncompressed_bytes": 12820
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GP7E01.txt",
+      "source_filename_title_hint": "GP7E01",
+      "source_member_uncompressed_bytes": 41460
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPIE01.txt",
+      "source_filename_title_hint": "GPIE01",
+      "source_member_uncompressed_bytes": 12295
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPNE08.txt",
+      "source_filename_title_hint": "GPNE08",
+      "source_member_uncompressed_bytes": 1510
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPOE8P_v100.txt",
+      "source_filename_title_hint": "GPOE8P_v100",
+      "source_member_uncompressed_bytes": 222975
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPOE8P_v102.txt",
+      "source_filename_title_hint": "GPOE8P_v102",
+      "source_member_uncompressed_bytes": 197154
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPSE8P.txt",
+      "source_filename_title_hint": "GPSE8P",
+      "source_member_uncompressed_bytes": 187
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPTE41.txt",
+      "source_filename_title_hint": "GPTE41",
+      "source_member_uncompressed_bytes": 231
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPVE01.txt",
+      "source_filename_title_hint": "GPVE01",
+      "source_member_uncompressed_bytes": 8684
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GPXE01.txt",
+      "source_filename_title_hint": "GPXE01",
+      "source_member_uncompressed_bytes": 3312
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GQPE78.txt",
+      "source_filename_title_hint": "GQPE78",
+      "source_member_uncompressed_bytes": 12112
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GQSEAF.txt",
+      "source_filename_title_hint": "GQSEAF",
+      "source_member_uncompressed_bytes": 6210
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GREE08.txt",
+      "source_filename_title_hint": "GREE08",
+      "source_member_uncompressed_bytes": 1482
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GRFE78.txt",
+      "source_filename_title_hint": "GRFE78",
+      "source_member_uncompressed_bytes": 215
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GRHE41.txt",
+      "source_filename_title_hint": "GRHE41",
+      "source_member_uncompressed_bytes": 1458
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GRQE41.txt",
+      "source_filename_title_hint": "GRQE41",
+      "source_member_uncompressed_bytes": 2288
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GRYE41.txt",
+      "source_filename_title_hint": "GRYE41",
+      "source_member_uncompressed_bytes": 157
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GSAE01_v1.00.txt",
+      "source_filename_title_hint": "GSAE01_v1.00",
+      "source_member_uncompressed_bytes": 893
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GSAE01_v1.01.txt",
+      "source_filename_title_hint": "GSAE01_v1.01",
+      "source_member_uncompressed_bytes": 2922
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GSNE8P.txt",
+      "source_filename_title_hint": "GSNE8P",
+      "source_member_uncompressed_bytes": 5165
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GSOE8P.txt",
+      "source_filename_title_hint": "GSOE8P",
+      "source_member_uncompressed_bytes": 1758
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GTEE01.txt",
+      "source_filename_title_hint": "GTEE01",
+      "source_member_uncompressed_bytes": 1494
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GTKE51.txt",
+      "source_filename_title_hint": "GTKE51",
+      "source_member_uncompressed_bytes": 1850
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GTRE78.txt",
+      "source_filename_title_hint": "GTRE78",
+      "source_member_uncompressed_bytes": 1064
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GUME52.txt",
+      "source_filename_title_hint": "GUME52",
+      "source_member_uncompressed_bytes": 2614
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GUNE5D.txt",
+      "source_filename_title_hint": "GUNE5D",
+      "source_member_uncompressed_bytes": 324
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GUPE8P.txt",
+      "source_filename_title_hint": "GUPE8P",
+      "source_member_uncompressed_bytes": 1424
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GUTE52.txt",
+      "source_filename_title_hint": "GUTE52",
+      "source_member_uncompressed_bytes": 1916
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GVJE08.txt",
+      "source_filename_title_hint": "GVJE08",
+      "source_member_uncompressed_bytes": 1084
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GVLE69.txt",
+      "source_filename_title_hint": "GVLE69",
+      "source_member_uncompressed_bytes": 2288
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GW7E69.txt",
+      "source_filename_title_hint": "GW7E69",
+      "source_member_uncompressed_bytes": 643
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GWEE51.txt",
+      "source_filename_title_hint": "GWEE51",
+      "source_member_uncompressed_bytes": 160
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GWKE41.txt",
+      "source_filename_title_hint": "GWKE41",
+      "source_member_uncompressed_bytes": 2673
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GWOE5G.txt",
+      "source_filename_title_hint": "GWOE5G",
+      "source_member_uncompressed_bytes": 1746
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GWRE01.txt",
+      "source_filename_title_hint": "GWRE01",
+      "source_member_uncompressed_bytes": 3203
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GWWE01.txt",
+      "source_filename_title_hint": "GWWE01",
+      "source_member_uncompressed_bytes": 620
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GXAE51.txt",
+      "source_filename_title_hint": "GXAE51",
+      "source_member_uncompressed_bytes": 761
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GXCE01.txt",
+      "source_filename_title_hint": "GXCE01",
+      "source_member_uncompressed_bytes": 2172
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GXNE5D.txt",
+      "source_filename_title_hint": "GXNE5D",
+      "source_member_uncompressed_bytes": 2117
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GXSE8P.txt",
+      "source_filename_title_hint": "GXSE8P",
+      "source_member_uncompressed_bytes": 5246
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GXXE01.txt",
+      "source_filename_title_hint": "GXXE01",
+      "source_member_uncompressed_bytes": 179039
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GYBE01.txt",
+      "source_filename_title_hint": "GYBE01",
+      "source_member_uncompressed_bytes": 499
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GYRE41.txt",
+      "source_filename_title_hint": "GYRE41",
+      "source_member_uncompressed_bytes": 299
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GZ2E01.txt",
+      "source_filename_title_hint": "GZ2E01",
+      "source_member_uncompressed_bytes": 43372
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GZEE70.txt",
+      "source_filename_title_hint": "GZEE70",
+      "source_member_uncompressed_bytes": 2047
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GZLE01.txt",
+      "source_filename_title_hint": "GZLE01",
+      "source_member_uncompressed_bytes": 39712
+    },
+    {
+      "region": "NTSC-U",
+      "original_container_path": "NTSC-U Codes.zip",
+      "original_container_git_blob_sha1": "327caf4828f40734bec34bd9594925f9384fce3c",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/NTSC-U%20Codes.zip",
+      "native_zip_member_path": "GZSE70.txt",
+      "source_filename_title_hint": "GZSE70",
+      "source_member_uncompressed_bytes": 6190
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G2CD52.txt",
+      "source_filename_title_hint": "G2CD52",
+      "source_member_uncompressed_bytes": 21357
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G2FD78.txt",
+      "source_filename_title_hint": "G2FD78",
+      "source_member_uncompressed_bytes": 1025
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G2MP01.txt",
+      "source_filename_title_hint": "G2MP01",
+      "source_member_uncompressed_bytes": 1816
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G2OP41.txt",
+      "source_filename_title_hint": "G2OP41",
+      "source_member_uncompressed_bytes": 1293
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G2VP08.txt",
+      "source_filename_title_hint": "G2VP08",
+      "source_member_uncompressed_bytes": 3522
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G3AP69.txt",
+      "source_filename_title_hint": "G3AP69",
+      "source_member_uncompressed_bytes": 9985
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G3BP9G.txt",
+      "source_filename_title_hint": "G3BP9G",
+      "source_member_uncompressed_bytes": 7640
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G3EP51.txt",
+      "source_filename_title_hint": "G3EP51",
+      "source_member_uncompressed_bytes": 3371
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G3FP4F.txt",
+      "source_filename_title_hint": "G3FP4F",
+      "source_member_uncompressed_bytes": 31032
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G3MP41.txt",
+      "source_filename_title_hint": "G3MP41",
+      "source_member_uncompressed_bytes": 998
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G3RD52.txt",
+      "source_filename_title_hint": "G3RD52",
+      "source_member_uncompressed_bytes": 1893
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G3YY52.txt",
+      "source_filename_title_hint": "G3YY52",
+      "source_member_uncompressed_bytes": 5543
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G4BD08.txt",
+      "source_filename_title_hint": "G4BD08",
+      "source_member_uncompressed_bytes": 52246
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G4BP08.txt",
+      "source_filename_title_hint": "G4BP08",
+      "source_member_uncompressed_bytes": 51128
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G4QP01.txt",
+      "source_filename_title_hint": "G4QP01",
+      "source_member_uncompressed_bytes": 20404
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G4SP01.txt",
+      "source_filename_title_hint": "G4SP01",
+      "source_member_uncompressed_bytes": 8074
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G5NP69.txt",
+      "source_filename_title_hint": "G5NP69",
+      "source_member_uncompressed_bytes": 12871
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G63P41.txt",
+      "source_filename_title_hint": "G63P41",
+      "source_member_uncompressed_bytes": 1929
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G8MP01.txt",
+      "source_filename_title_hint": "G8MP01",
+      "source_member_uncompressed_bytes": 371848
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G8WP01.txt",
+      "source_filename_title_hint": "G8WP01",
+      "source_member_uncompressed_bytes": 2618
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G9RD7D.txt",
+      "source_filename_title_hint": "G9RD7D",
+      "source_member_uncompressed_bytes": 2596
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "G9TD52.txt",
+      "source_filename_title_hint": "G9TD52",
+      "source_member_uncompressed_bytes": 632
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GAFP01_eng.txt",
+      "source_filename_title_hint": "GAFP01_eng",
+      "source_member_uncompressed_bytes": 23335
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GAFP01_fre.txt",
+      "source_filename_title_hint": "GAFP01_fre",
+      "source_member_uncompressed_bytes": 27077
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GAFP01_ger.txt",
+      "source_filename_title_hint": "GAFP01_ger",
+      "source_member_uncompressed_bytes": 27486
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GAFP01_ita.txt",
+      "source_filename_title_hint": "GAFP01_ita",
+      "source_member_uncompressed_bytes": 26742
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GAFP01_spa.txt",
+      "source_filename_title_hint": "GAFP01_spa",
+      "source_member_uncompressed_bytes": 27074
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GAGP70.txt",
+      "source_filename_title_hint": "GAGP70",
+      "source_member_uncompressed_bytes": 2051
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GALP01.txt",
+      "source_filename_title_hint": "GALP01",
+      "source_member_uncompressed_bytes": 783
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GATP51.txt",
+      "source_filename_title_hint": "GATP51",
+      "source_member_uncompressed_bytes": 3555
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GB4P51.txt",
+      "source_filename_title_hint": "GB4P51",
+      "source_member_uncompressed_bytes": 1301
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBDP7D.txt",
+      "source_filename_title_hint": "GBDP7D",
+      "source_member_uncompressed_bytes": 1307
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBGP7D.txt",
+      "source_filename_title_hint": "GBGP7D",
+      "source_member_uncompressed_bytes": 2038
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBHDC8.txt",
+      "source_filename_title_hint": "GBHDC8",
+      "source_member_uncompressed_bytes": 8578
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBIP08.txt",
+      "source_filename_title_hint": "GBIP08",
+      "source_member_uncompressed_bytes": 12911
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBLP52.txt",
+      "source_filename_title_hint": "GBLP52",
+      "source_member_uncompressed_bytes": 1719
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBOP51.txt",
+      "source_filename_title_hint": "GBOP51",
+      "source_member_uncompressed_bytes": 1020
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBSP8P.txt",
+      "source_filename_title_hint": "GBSP8P",
+      "source_member_uncompressed_bytes": 1632
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBVP41.txt",
+      "source_filename_title_hint": "GBVP41",
+      "source_member_uncompressed_bytes": 2958
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBWP64.txt",
+      "source_filename_title_hint": "GBWP64",
+      "source_member_uncompressed_bytes": 978
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GBZP08.txt",
+      "source_filename_title_hint": "GBZP08",
+      "source_member_uncompressed_bytes": 23633
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GC2P75.txt",
+      "source_filename_title_hint": "GC2P75",
+      "source_member_uncompressed_bytes": 1604
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GC5PNK.txt",
+      "source_filename_title_hint": "GC5PNK",
+      "source_member_uncompressed_bytes": 4732
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GC6P01.txt",
+      "source_filename_title_hint": "GC6P01",
+      "source_member_uncompressed_bytes": 176928
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GC9P6S.txt",
+      "source_filename_title_hint": "GC9P6S",
+      "source_member_uncompressed_bytes": 1049
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCBP7D.txt",
+      "source_filename_title_hint": "GCBP7D",
+      "source_member_uncompressed_bytes": 7148
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCCP01.txt",
+      "source_filename_title_hint": "GCCP01",
+      "source_member_uncompressed_bytes": 5266
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCDP08.txt",
+      "source_filename_title_hint": "GCDP08",
+      "source_member_uncompressed_bytes": 8078
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCEP41.txt",
+      "source_filename_title_hint": "GCEP41",
+      "source_member_uncompressed_bytes": 1656
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCFP75.txt",
+      "source_filename_title_hint": "GCFP75",
+      "source_member_uncompressed_bytes": 2996
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCLP69.txt",
+      "source_filename_title_hint": "GCLP69",
+      "source_member_uncompressed_bytes": 3121
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCOD52.txt",
+      "source_filename_title_hint": "GCOD52",
+      "source_member_uncompressed_bytes": 1563
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCQD7D.txt",
+      "source_filename_title_hint": "GCQD7D",
+      "source_member_uncompressed_bytes": 3687
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCSPAF.txt",
+      "source_filename_title_hint": "GCSPAF",
+      "source_member_uncompressed_bytes": 4623
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCTP51.txt",
+      "source_filename_title_hint": "GCTP51",
+      "source_member_uncompressed_bytes": 2006
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GCZP69.txt",
+      "source_filename_title_hint": "GCZP69",
+      "source_member_uncompressed_bytes": 560
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GD6P70.txt",
+      "source_filename_title_hint": "GD6P70",
+      "source_member_uncompressed_bytes": 3690
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GDCP51.txt",
+      "source_filename_title_hint": "GDCP51",
+      "source_member_uncompressed_bytes": 2325
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GDED71.txt",
+      "source_filename_title_hint": "GDED71",
+      "source_member_uncompressed_bytes": 18849
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GDFP5D.txt",
+      "source_filename_title_hint": "GDFP5D",
+      "source_member_uncompressed_bytes": 907
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GDGP78.txt",
+      "source_filename_title_hint": "GDGP78",
+      "source_member_uncompressed_bytes": 1095
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GDQP6S.txt",
+      "source_filename_title_hint": "GDQP6S",
+      "source_member_uncompressed_bytes": 1720
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GDRP69.txt",
+      "source_filename_title_hint": "GDRP69",
+      "source_member_uncompressed_bytes": 1731
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GDSP78.txt",
+      "source_filename_title_hint": "GDSP78",
+      "source_member_uncompressed_bytes": 3110
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GEAP8P.txt",
+      "source_filename_title_hint": "GEAP8P",
+      "source_member_uncompressed_bytes": 4555
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GEDP01.txt",
+      "source_filename_title_hint": "GEDP01",
+      "source_member_uncompressed_bytes": 2814
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GEWP41.txt",
+      "source_filename_title_hint": "GEWP41",
+      "source_member_uncompressed_bytes": 3923
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GEZP8P.txt",
+      "source_filename_title_hint": "GEZP8P",
+      "source_member_uncompressed_bytes": 4743
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GF7P01.txt",
+      "source_filename_title_hint": "GF7P01",
+      "source_member_uncompressed_bytes": 10138
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFBP5D.txt",
+      "source_filename_title_hint": "GFBP5D",
+      "source_member_uncompressed_bytes": 1439
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFDP69.txt",
+      "source_filename_title_hint": "GFDP69",
+      "source_member_uncompressed_bytes": 1771
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFEP01.txt",
+      "source_filename_title_hint": "GFEP01",
+      "source_member_uncompressed_bytes": 64285
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFGPA4.txt",
+      "source_filename_title_hint": "GFGPA4",
+      "source_member_uncompressed_bytes": 1788
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFHP6V.txt",
+      "source_filename_title_hint": "GFHP6V",
+      "source_member_uncompressed_bytes": 10521
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFTP01.txt",
+      "source_filename_title_hint": "GFTP01",
+      "source_member_uncompressed_bytes": 3196
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFUP6V.txt",
+      "source_filename_title_hint": "GFUP6V",
+      "source_member_uncompressed_bytes": 2578
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GFZP01.txt",
+      "source_filename_title_hint": "GFZP01",
+      "source_member_uncompressed_bytes": 33430
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GG4P08.txt",
+      "source_filename_title_hint": "GG4P08",
+      "source_member_uncompressed_bytes": 305448
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GGEX41.txt",
+      "source_filename_title_hint": "GGEX41",
+      "source_member_uncompressed_bytes": 3302
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GGRD41.txt",
+      "source_filename_title_hint": "GGRD41",
+      "source_member_uncompressed_bytes": 1146
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GGSPA4.txt",
+      "source_filename_title_hint": "GGSPA4",
+      "source_member_uncompressed_bytes": 1271
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GGTP01.txt",
+      "source_filename_title_hint": "GGTP01",
+      "source_member_uncompressed_bytes": 10091
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GGVD78.txt",
+      "source_filename_title_hint": "GGVD78",
+      "source_member_uncompressed_bytes": 9155
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GGZX52.txt",
+      "source_filename_title_hint": "GGZX52",
+      "source_member_uncompressed_bytes": 985
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GH2P69.txt",
+      "source_filename_title_hint": "GH2P69",
+      "source_member_uncompressed_bytes": 1502
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GH9P52.txt",
+      "source_filename_title_hint": "GH9P52",
+      "source_member_uncompressed_bytes": 1870
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GHAP08.txt",
+      "source_filename_title_hint": "GHAP08",
+      "source_member_uncompressed_bytes": 6621
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GHBP7D.txt",
+      "source_filename_title_hint": "GHBP7D",
+      "source_member_uncompressed_bytes": 1245
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GHMP4F.txt",
+      "source_filename_title_hint": "GHMP4F",
+      "source_member_uncompressed_bytes": 548
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GHNX71.txt",
+      "source_filename_title_hint": "GHNX71",
+      "source_member_uncompressed_bytes": 2240
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GHQP7D.txt",
+      "source_filename_title_hint": "GHQP7D",
+      "source_member_uncompressed_bytes": 4455
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GIBP4F.txt",
+      "source_filename_title_hint": "GIBP4F",
+      "source_member_uncompressed_bytes": 2859
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GIKP70.txt",
+      "source_filename_title_hint": "GIKP70",
+      "source_member_uncompressed_bytes": 1879
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GISP36.txt",
+      "source_filename_title_hint": "GISP36",
+      "source_member_uncompressed_bytes": 1405
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GITP01.txt",
+      "source_filename_title_hint": "GITP01",
+      "source_member_uncompressed_bytes": 4316
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GJDX7D.txt",
+      "source_filename_title_hint": "GJDX7D",
+      "source_member_uncompressed_bytes": 5356
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GJKP52.txt",
+      "source_filename_title_hint": "GJKP52",
+      "source_member_uncompressed_bytes": 2521
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GJUD78.txt",
+      "source_filename_title_hint": "GJUD78",
+      "source_member_uncompressed_bytes": 989
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GJWP78.txt",
+      "source_filename_title_hint": "GJWP78",
+      "source_member_uncompressed_bytes": 1670
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GK5X78.txt",
+      "source_filename_title_hint": "GK5X78",
+      "source_member_uncompressed_bytes": 1429
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GK7P08.txt",
+      "source_filename_title_hint": "GK7P08",
+      "source_member_uncompressed_bytes": 10824
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKBPAF.txt",
+      "source_filename_title_hint": "GKBPAF",
+      "source_member_uncompressed_bytes": 44400
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKDP01.txt",
+      "source_filename_title_hint": "GKDP01",
+      "source_member_uncompressed_bytes": 2351
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKGP01.txt",
+      "source_filename_title_hint": "GKGP01",
+      "source_member_uncompressed_bytes": 793
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKHPA4.txt",
+      "source_filename_title_hint": "GKHPA4",
+      "source_member_uncompressed_bytes": 1658
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKLP69.txt",
+      "source_filename_title_hint": "GKLP69",
+      "source_member_uncompressed_bytes": 1773
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKMP41.txt",
+      "source_filename_title_hint": "GKMP41",
+      "source_member_uncompressed_bytes": 1493
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKOP6V.txt",
+      "source_filename_title_hint": "GKOP6V",
+      "source_member_uncompressed_bytes": 1647
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKRPB2.txt",
+      "source_filename_title_hint": "GKRPB2",
+      "source_member_uncompressed_bytes": 3723
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GKYP01.txt",
+      "source_filename_title_hint": "GKYP01",
+      "source_member_uncompressed_bytes": 5201
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GL5X4F.txt",
+      "source_filename_title_hint": "GL5X4F",
+      "source_member_uncompressed_bytes": 1992
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GL7P64_v100.txt",
+      "source_filename_title_hint": "GL7P64_v100",
+      "source_member_uncompressed_bytes": 4571
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GL8D4F.txt",
+      "source_filename_title_hint": "GL8D4F",
+      "source_member_uncompressed_bytes": 4304
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLEP08_eng.txt",
+      "source_filename_title_hint": "GLEP08_eng",
+      "source_member_uncompressed_bytes": 10810
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLEP08_fre.txt",
+      "source_filename_title_hint": "GLEP08_fre",
+      "source_member_uncompressed_bytes": 12232
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLEP08_ger.txt",
+      "source_filename_title_hint": "GLEP08_ger",
+      "source_member_uncompressed_bytes": 12226
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLEP08_ita.txt",
+      "source_filename_title_hint": "GLEP08_ita",
+      "source_member_uncompressed_bytes": 13012
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLEP08_spa.txt",
+      "source_filename_title_hint": "GLEP08_spa",
+      "source_member_uncompressed_bytes": 13011
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLMP01.txt",
+      "source_filename_title_hint": "GLMP01",
+      "source_member_uncompressed_bytes": 105635
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLQP41.txt",
+      "source_filename_title_hint": "GLQP41",
+      "source_member_uncompressed_bytes": 4588
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLRD64.txt",
+      "source_filename_title_hint": "GLRD64",
+      "source_member_uncompressed_bytes": 2643
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLSD64.txt",
+      "source_filename_title_hint": "GLSD64",
+      "source_member_uncompressed_bytes": 2930
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLVD4Q.txt",
+      "source_filename_title_hint": "GLVD4Q",
+      "source_member_uncompressed_bytes": 516
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GLZP69.txt",
+      "source_filename_title_hint": "GLZP69",
+      "source_member_uncompressed_bytes": 1507
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GM2P8P_eng.txt",
+      "source_filename_title_hint": "GM2P8P_eng",
+      "source_member_uncompressed_bytes": 2667
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GM2P8P_fre.txt",
+      "source_filename_title_hint": "GM2P8P_fre",
+      "source_member_uncompressed_bytes": 2763
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GM2P8P_ger.txt",
+      "source_filename_title_hint": "GM2P8P_ger",
+      "source_member_uncompressed_bytes": 2763
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GM4P01.txt",
+      "source_filename_title_hint": "GM4P01",
+      "source_member_uncompressed_bytes": 246146
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GM5D7D.txt",
+      "source_filename_title_hint": "GM5D7D",
+      "source_member_uncompressed_bytes": 562
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GM8P01.txt",
+      "source_filename_title_hint": "GM8P01",
+      "source_member_uncompressed_bytes": 2171
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMEP70.txt",
+      "source_filename_title_hint": "GMEP70",
+      "source_member_uncompressed_bytes": 3541
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMFP69.txt",
+      "source_filename_title_hint": "GMFP69",
+      "source_member_uncompressed_bytes": 2541
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMIP70.txt",
+      "source_filename_title_hint": "GMIP70",
+      "source_member_uncompressed_bytes": 1236
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMKD5D.txt",
+      "source_filename_title_hint": "GMKD5D",
+      "source_member_uncompressed_bytes": 5583
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMNP78.txt",
+      "source_filename_title_hint": "GMNP78",
+      "source_member_uncompressed_bytes": 2819
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMOP70.txt",
+      "source_filename_title_hint": "GMOP70",
+      "source_member_uncompressed_bytes": 3862
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMPP01.txt",
+      "source_filename_title_hint": "GMPP01",
+      "source_member_uncompressed_bytes": 9043
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMSP01.txt",
+      "source_filename_title_hint": "GMSP01",
+      "source_member_uncompressed_bytes": 33908
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GMXP70.txt",
+      "source_filename_title_hint": "GMXP70",
+      "source_member_uncompressed_bytes": 1649
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GNDP69.txt",
+      "source_filename_title_hint": "GNDP69",
+      "source_member_uncompressed_bytes": 4742
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GNED78.txt",
+      "source_filename_title_hint": "GNED78",
+      "source_member_uncompressed_bytes": 1258
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GNUPDA.txt",
+      "source_filename_title_hint": "GNUPDA",
+      "source_member_uncompressed_bytes": 4175
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GO2D4F.txt",
+      "source_filename_title_hint": "GO2D4F",
+      "source_member_uncompressed_bytes": 1899
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GOMP01.txt",
+      "source_filename_title_hint": "GOMP01",
+      "source_member_uncompressed_bytes": 10402
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GOND69.txt",
+      "source_filename_title_hint": "GOND69",
+      "source_member_uncompressed_bytes": 2503
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GONP69.txt",
+      "source_filename_title_hint": "GONP69",
+      "source_member_uncompressed_bytes": 2253
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GOWP69.txt",
+      "source_filename_title_hint": "GOWP69",
+      "source_member_uncompressed_bytes": 5739
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GOYD69.txt",
+      "source_filename_title_hint": "GOYD69",
+      "source_member_uncompressed_bytes": 2169
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GOYP69.txt",
+      "source_filename_title_hint": "GOYP69",
+      "source_member_uncompressed_bytes": 2162
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GP5P01.txt",
+      "source_filename_title_hint": "GP5P01",
+      "source_member_uncompressed_bytes": 8351
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GP6P01.txt",
+      "source_filename_title_hint": "GP6P01",
+      "source_member_uncompressed_bytes": 11689
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GP7P01.txt",
+      "source_filename_title_hint": "GP7P01",
+      "source_member_uncompressed_bytes": 41852
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GP9P7F.txt",
+      "source_filename_title_hint": "GP9P7F",
+      "source_member_uncompressed_bytes": 1321
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPAP01.txt",
+      "source_filename_title_hint": "GPAP01",
+      "source_member_uncompressed_bytes": 9147
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPIP01.txt",
+      "source_filename_title_hint": "GPIP01",
+      "source_member_uncompressed_bytes": 13805
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPNP08.txt",
+      "source_filename_title_hint": "GPNP08",
+      "source_member_uncompressed_bytes": 6001
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPOP8P.txt",
+      "source_filename_title_hint": "GPOP8P",
+      "source_member_uncompressed_bytes": 224007
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPSP8P.txt",
+      "source_filename_title_hint": "GPSP8P",
+      "source_member_uncompressed_bytes": 5960
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPTP41.txt",
+      "source_filename_title_hint": "GPTP41",
+      "source_member_uncompressed_bytes": 3790
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPUP8P.txt",
+      "source_filename_title_hint": "GPUP8P",
+      "source_member_uncompressed_bytes": 2582
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPVP01.txt",
+      "source_filename_title_hint": "GPVP01",
+      "source_member_uncompressed_bytes": 8374
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPWP69.txt",
+      "source_filename_title_hint": "GPWP69",
+      "source_member_uncompressed_bytes": 1149
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GPXP01.txt",
+      "source_filename_title_hint": "GPXP01",
+      "source_member_uncompressed_bytes": 4286
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GQ4D78.txt",
+      "source_filename_title_hint": "GQ4D78",
+      "source_member_uncompressed_bytes": 1040
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GQCD52.txt",
+      "source_filename_title_hint": "GQCD52",
+      "source_member_uncompressed_bytes": 2322
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GQPP78.txt",
+      "source_filename_title_hint": "GQPP78",
+      "source_member_uncompressed_bytes": 4514
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GQQD78.txt",
+      "source_filename_title_hint": "GQQD78",
+      "source_member_uncompressed_bytes": 1221
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GQSDAF.txt",
+      "source_filename_title_hint": "GQSDAF",
+      "source_member_uncompressed_bytes": 136057
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GR2P52.txt",
+      "source_filename_title_hint": "GR2P52",
+      "source_member_uncompressed_bytes": 1613
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GR8D69.txt",
+      "source_filename_title_hint": "GR8D69",
+      "source_member_uncompressed_bytes": 2187
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GR8P69.txt",
+      "source_filename_title_hint": "GR8P69",
+      "source_member_uncompressed_bytes": 1891
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GR9P6L.txt",
+      "source_filename_title_hint": "GR9P6L",
+      "source_member_uncompressed_bytes": 1083
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GRBP6S.txt",
+      "source_filename_title_hint": "GRBP6S",
+      "source_member_uncompressed_bytes": 6885
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GREP08.txt",
+      "source_filename_title_hint": "GREP08",
+      "source_member_uncompressed_bytes": 4549
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GRFD78.txt",
+      "source_filename_title_hint": "GRFD78",
+      "source_member_uncompressed_bytes": 2475
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GRHP41.txt",
+      "source_filename_title_hint": "GRHP41",
+      "source_member_uncompressed_bytes": 830
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GRJP69.txt",
+      "source_filename_title_hint": "GRJP69",
+      "source_member_uncompressed_bytes": 2102
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GRKP7G.txt",
+      "source_filename_title_hint": "GRKP7G",
+      "source_member_uncompressed_bytes": 1739
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GRNP52.txt",
+      "source_filename_title_hint": "GRNP52",
+      "source_member_uncompressed_bytes": 1921
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GS2D78.txt",
+      "source_filename_title_hint": "GS2D78",
+      "source_member_uncompressed_bytes": 2686
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GS8P7D.txt",
+      "source_filename_title_hint": "GS8P7D",
+      "source_member_uncompressed_bytes": 2983
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSAP01_v101.txt",
+      "source_filename_title_hint": "GSAP01_v101",
+      "source_member_uncompressed_bytes": 5379
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSHP5D.txt",
+      "source_filename_title_hint": "GSHP5D",
+      "source_member_uncompressed_bytes": 732
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSKP7D.txt",
+      "source_filename_title_hint": "GSKP7D",
+      "source_member_uncompressed_bytes": 2161
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSMD52.txt",
+      "source_filename_title_hint": "GSMD52",
+      "source_member_uncompressed_bytes": 2087
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSPP69.txt",
+      "source_filename_title_hint": "GSPP69",
+      "source_member_uncompressed_bytes": 5078
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSRP7S.txt",
+      "source_filename_title_hint": "GSRP7S",
+      "source_member_uncompressed_bytes": 2102
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSWD64.txt",
+      "source_filename_title_hint": "GSWD64",
+      "source_member_uncompressed_bytes": 5924
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GSYP6S.txt",
+      "source_filename_title_hint": "GSYP6S",
+      "source_member_uncompressed_bytes": 1213
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GT6P70.txt",
+      "source_filename_title_hint": "GT6P70",
+      "source_member_uncompressed_bytes": 862
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTEP01.txt",
+      "source_filename_title_hint": "GTEP01",
+      "source_member_uncompressed_bytes": 1879
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTGP60.txt",
+      "source_filename_title_hint": "GTGP60",
+      "source_member_uncompressed_bytes": 1006
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTKD51.txt",
+      "source_filename_title_hint": "GTKD51",
+      "source_member_uncompressed_bytes": 1381
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTPP6S.txt",
+      "source_filename_title_hint": "GTPP6S",
+      "source_member_uncompressed_bytes": 7356
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTRP78.txt",
+      "source_filename_title_hint": "GTRP78",
+      "source_member_uncompressed_bytes": 1043
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTSP4F.txt",
+      "source_filename_title_hint": "GTSP4F",
+      "source_member_uncompressed_bytes": 36593
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTWP70.txt",
+      "source_filename_title_hint": "GTWP70",
+      "source_member_uncompressed_bytes": 3208
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTYP69.txt",
+      "source_filename_title_hint": "GTYP69",
+      "source_member_uncompressed_bytes": 1853
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GTZP41.txt",
+      "source_filename_title_hint": "GTZP41",
+      "source_member_uncompressed_bytes": 1229
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GUGP69.txt",
+      "source_filename_title_hint": "GUGP69",
+      "source_member_uncompressed_bytes": 3194
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GUMP52.txt",
+      "source_filename_title_hint": "GUMP52",
+      "source_member_uncompressed_bytes": 2666
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GUNP5D.txt",
+      "source_filename_title_hint": "GUNP5D",
+      "source_member_uncompressed_bytes": 14902
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GUTP52.txt",
+      "source_filename_title_hint": "GUTP52",
+      "source_member_uncompressed_bytes": 1902
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GVCP08.txt",
+      "source_filename_title_hint": "GVCP08",
+      "source_member_uncompressed_bytes": 2366
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GVJP08.txt",
+      "source_filename_title_hint": "GVJP08",
+      "source_member_uncompressed_bytes": 1793
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GVMP41.txt",
+      "source_filename_title_hint": "GVMP41",
+      "source_member_uncompressed_bytes": 1245
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GW5D69.txt",
+      "source_filename_title_hint": "GW5D69",
+      "source_member_uncompressed_bytes": 2621
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GWAD8P.txt",
+      "source_filename_title_hint": "GWAD8P",
+      "source_member_uncompressed_bytes": 5334
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GWBP41.txt",
+      "source_filename_title_hint": "GWBP41",
+      "source_member_uncompressed_bytes": 2404
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GWHP41.txt",
+      "source_filename_title_hint": "GWHP41",
+      "source_member_uncompressed_bytes": 2132
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GWKP41.txt",
+      "source_filename_title_hint": "GWKP41",
+      "source_member_uncompressed_bytes": 2550
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GWMP8P.txt",
+      "source_filename_title_hint": "GWMP8P",
+      "source_member_uncompressed_bytes": 25319
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GWRP01.txt",
+      "source_filename_title_hint": "GWRP01",
+      "source_member_uncompressed_bytes": 1561
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GWWP01.txt",
+      "source_filename_title_hint": "GWWP01",
+      "source_member_uncompressed_bytes": 2552
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GX2D52.txt",
+      "source_filename_title_hint": "GX2D52",
+      "source_member_uncompressed_bytes": 1289
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GX3X41.txt",
+      "source_filename_title_hint": "GX3X41",
+      "source_member_uncompressed_bytes": 1547
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GXPP78.txt",
+      "source_filename_title_hint": "GXPP78",
+      "source_member_uncompressed_bytes": 23481
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GXRP08.txt",
+      "source_filename_title_hint": "GXRP08",
+      "source_member_uncompressed_bytes": 2577
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GXSP8P.txt",
+      "source_filename_title_hint": "GXSP8P",
+      "source_member_uncompressed_bytes": 5296
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GXXP01.txt",
+      "source_filename_title_hint": "GXXP01",
+      "source_member_uncompressed_bytes": 181273
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GYFPA4.txt",
+      "source_filename_title_hint": "GYFPA4",
+      "source_member_uncompressed_bytes": 1670
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GYTP69.txt",
+      "source_filename_title_hint": "GYTP69",
+      "source_member_uncompressed_bytes": 1999
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GZ2P01.txt",
+      "source_filename_title_hint": "GZ2P01",
+      "source_member_uncompressed_bytes": 32873
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GZDP70.txt",
+      "source_filename_title_hint": "GZDP70",
+      "source_member_uncompressed_bytes": 5572
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GZLP01.txt",
+      "source_filename_title_hint": "GZLP01",
+      "source_member_uncompressed_bytes": 42290
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GZPP70.txt",
+      "source_filename_title_hint": "GZPP70",
+      "source_member_uncompressed_bytes": 1121
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "GZWP01.txt",
+      "source_filename_title_hint": "GZWP01",
+      "source_member_uncompressed_bytes": 1287
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "PRJP01.txt",
+      "source_filename_title_hint": "PRJP01",
+      "source_member_uncompressed_bytes": 202
+    },
+    {
+      "region": "PAL",
+      "original_container_path": "PAL codes.zip",
+      "original_container_git_blob_sha1": "562b62383bbfe8ace04583067390068d571ff76f",
+      "original_container_url": "https://github.com/LeumasPlays/WiiRD-GameCube-Cheats/blob/102502ee0dccd733b389f27ab073315d1033ec27/PAL%20codes.zip",
+      "native_zip_member_path": "PZLP01.txt",
+      "source_filename_title_hint": "PZLP01",
+      "source_member_uncompressed_bytes": 43733
+    }
+  ],
+  "audit_run": {
+    "workflow": "https://github.com/sguzman/cheatarium/actions/runs/38335475253",
+    "job_id": 115094458142,
+    "source_commit": "992de1f3f0990e3d66a8e1166b3555f8cb6eab38",
+    "verified_pinned_original_zip_git_blob_sha": true,
+    "year_month_day_utc": "2026-10-13"
+  }
+}
