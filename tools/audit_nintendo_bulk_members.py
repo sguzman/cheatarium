@@ -105,7 +105,7 @@ def analyze_wiiu_xml(sources):
         # UTF-8 bytes without a BOM. Decode the bytes first, drop the unreliable
         # encoding declaration and parse the recovered Unicode text. Never
         # silently replace invalid source bytes.
-        normalized = re.sub(r'^\\s*<\\?xml[^>]*\\?>', '', text, count=1, flags=re.I)
+        normalized = re.sub(r'^\s*<\?xml[^>]*\?>', '', text, count=1, flags=re.I)
         try:
             root = ET.fromstring(normalized)
         except ET.ParseError as exc:
