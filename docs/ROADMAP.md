@@ -446,3 +446,17 @@ The separate `tools/hydrate_wii_bulk.py` acquired **29 actual native Wii Gecko s
 ### Source-authentic Wii Gecko group counts (2026-10-13)
 
 The [original-Git-blob-verified private Wii source audit](../research/wii-gecko-native-syntax-audit-v1.json) parsed all **29** native Wii Gecko source files with no unrecognized active code-section lines. **45 source-declared Gecko cheat header occurrences** contain **5,611 eight-hex-word memory/patch lines**: City Folk/Deluxe 9 headers and 450 lines; Metroid Prime/Trilogy 24 headers and 3,176 lines; Metroid: Other M 6 headers and 1,167 lines; Taiko 6 headers and 818 lines. The Taiko files also carry six source-enabled selector occurrences. These are raw native syntax counts and multiple instructions can belong to one controller patch; they are **not** 45 independently tested effects or 5,611 executable cheats. Exact original game revision matching remains unverified, and original code text never leaves the local private cache in CI. Source author reuse rights remain blocked. Next technical priority: a strictly local, source-format-aware consumer adapter for these codes with explicit game/revision selectors, without public republishing or executing unverified code automatically.
+
+### Local Wii Gecko sidecar: source-consumable, still explicitly unverified (2026-10-13)
+
+A distinct `tools/export_wii_gecko_local.py` command now builds a **user-owned
+private JSON** index by re-verifying all 29 original Wii source files
+and faithfully retaining 45 selectable native groups (5,611 code-pair
+lines). Game ID, revision, MP1/MP2/MP3 source variant, original author
+comments, source-enabled markers and original Git provenance remain
+attached to each group. All groups explicitly default to disabled.
+Sidecar generation and offline byte-identical verification are exercised
+on ephemeral actual-source CI runners, without publication of individual
+code text or autoapplication. This closes the local *readable-data*
+projection gap but not the game-build authentication and executable
+emulator integration gaps.

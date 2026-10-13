@@ -242,3 +242,37 @@ game disc version or executable. The upstream source game-family title
 and version stem are hints, not independent ROM identity evidence.
 No third-party code bodies are added to public Git or CI artifacts;
 license grants and real hardware/emulator behavior remain unverified.
+
+### Private Wii Gecko consumer sidecar (locally projected original code)
+
+The acquired private Wii originals can now be projected into one **local,
+version-preserving JSON sidecar** with 45 selectable native cheat groups
+and 5,611 Gecko instruction-pair lines. All original code bytes remain
+strictly outside the public Cheatarium repository, releases and CI
+artifacts:
+
+`python3 tools/export_wii_gecko_local.py --write`
+
+The default destination is
+`$XDG_DATA_HOME/cheatarium/wii-local-sidecar/codes.json`
+(typically `~/.local/share/cheatarium/wii-local-sidecar/codes.json`).
+Use `--verify` to compare the existing JSON **exactly** against freshly
+reparsed and Git-blob-verified original source files. Use
+`--output /your/private/codes.json` to choose another path, and
+`--replace` only if deliberately replacing an existing local sidecar.
+
+Each entry retains original game/disc-ID **claim**, source revision token,
+source variant (including MP1/MP2/MP3), code-group title and author notes,
+original source filename, original source Git SHA-1, pinned upstream
+provenance URL, unchanged native code instructions, source-enabled marker,
+and compatibility warning. Crucially, all projected entries set
+`enabled_for_execution: false`, `game_build_authenticated: false`,
+`gameplay_verified: false`, and
+`original_author_redistribution_rights_cleared: false`.
+
+This is a **consumer-readable local representation**, not emulator
+activation, authenticated disc matching, a tested cheat-effects database
+or authorization to redistribute the upstream authors' codes. The
+automatic end-to-end CI integration builds and verifies an ephemeral
+private sidecar but uploads **only aggregate code counts**, never the
+sidecar or its original third-party cheat text.

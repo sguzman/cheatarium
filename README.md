@@ -8,6 +8,9 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Explore
 
+- **Private Wii Gecko consumer sidecar:** `python3 tools/export_wii_gecko_local.py --write` projects all 45 locally acquired Gecko cheat groups (5,611 original instruction pairs) into one private, version-preserving JSON file with every group disabled by default. `--verify` confirms it matches the pinned source originals. [Instructions](docs/CONSUMERS.md#private-wii-gecko-consumer-sidecar-locally-projected-original-code).
+
+
 - **Private Wii Gecko group lookup:** After local acquisition, `python3 tools/query_wii_gecko_local.py --game-title "Metroid"` searches source-native Wii Gecko cheat groups and authors; `--game-id RUUE01` displays available City Folk revisions without auto-selecting; `--game-id RUUE01 --revision 0 --show-code --group-index 1` deliberately shows one exact original group's native code from the verified private cache. [Full workflow](docs/CONSUMERS.md#local-wii-gamerevision-specific-gecko-group-search).
 
 

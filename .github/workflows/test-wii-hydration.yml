@@ -11,6 +11,8 @@ on:
       - "tools/test_audit_wii_gecko_native.py"
       - "tools/query_wii_gecko_local.py"
       - "tools/test_query_wii_gecko_local.py"
+      - "tools/export_wii_gecko_local.py"
+      - "tools/test_export_wii_gecko_local.py"
       - "tools/hydrate_nintendo_bulk.py"
       - "sources/external-bulk/wii-accf-gecko-native.json"
       - "sources/external-bulk/wii-metroid-prime-gecko-native.json"
@@ -33,6 +35,8 @@ jobs:
         run: python3 tools/test_audit_wii_gecko_native.py
       - name: Test local Wii Gecko code-group browsing and version selection
         run: python3 tools/test_query_wii_gecko_local.py
+      - name: Test original source-to-private-sidecar projector
+        run: python3 tools/test_export_wii_gecko_local.py
       - name: Verify original 29 Wii Gecko sources in ephemeral private runner cache
         run: |
           python3 tools/hydrate_wii_bulk.py --fetch --destination "${RUNNER_TEMP}/cheatarium-wii-originals"
@@ -48,6 +52,15 @@ jobs:
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["file_matches"] == 1 and d["original_code_text_included"] and len(d["records"][0]["cheat_groups"][0]["code_lines"]) > 0 and not d["game_build_authenticated"]'
           if python3 tools/query_wii_gecko_local.py --cache "${RUNNER_TEMP}/cheatarium-wii-originals" --game-id RUUE01 --show-code --group-index 1 > /dev/null 2>&1; then
             echo "ERROR: ambiguous native disc revisions incorrectly accepted"
+            exit 1
+          fi
+      - name: Build and verify 45-group private Wii Gecko sidecar from original sources
+        run: |
+          python3 tools/export_wii_gecko_local.py --write --cache "${RUNNER_TEMP}/cheatarium-wii-originals" --output "${RUNNER_TEMP}/private-wii-sidecar/codes.json"
+          python3 tools/export_wii_gecko_local.py --verify --cache "${RUNNER_TEMP}/cheatarium-wii-originals" --output "${RUNNER_TEMP}/private-wii-sidecar/codes.json"
+          python3 -c 'import json,os,pathlib; p=pathlib.Path(os.environ["RUNNER_TEMP"])/"private-wii-sidecar/codes.json"; d=json.loads(p.read_text()); r=d["records"]; assert d["source_native_group_count"] == len(r) == 45 and sum(x["native_code_pair_count"] for x in r) == 5611 and all(not x["enabled_for_execution"] for x in r) and all(not x["game_build_authenticated"] for x in r) and not d["public_archive_import"]'
+          if python3 tools/export_wii_gecko_local.py --write --cache "${RUNNER_TEMP}/cheatarium-wii-originals" --output "${RUNNER_TEMP}/private-wii-sidecar/codes.json" > /dev/null 2>&1; then
+            echo "ERROR: private Wii sidecar silently overwritten"
             exit 1
           fi
       - name: Upload sanitized native Wii code-count report only
