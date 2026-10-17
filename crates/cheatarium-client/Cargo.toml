@@ -35,6 +35,10 @@ name = "cheatarium-wii-local"
 path = "src/bin/wii_local.rs"
 
 [[bin]]
+name = "cheatarium-eden-plan"
+path = "src/bin/eden_plan.rs"
+
+[[bin]]
 name = "cheatarium-eden-discover"
 path = "src/bin/eden_discover.rs"
 
