@@ -3,7 +3,7 @@
 use flate2::read::GzDecoder;
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
 use std::io::Read;
 use std::path::Path;
@@ -280,9 +280,125 @@ pub fn search(
     })
 }
 
+/// Advisory link-only coverage for a Switch title ID. Nothing here is an
+/// acquired, importable, or gameplay-verified cheat.
+#[derive(Debug, Clone, Default, Serialize)]
+pub struct SwitchReferenceCoverage {
+    pub total: usize,
+    pub sampled: usize,
+    pub source_ids: Vec<String>,
+}
+
+/// Exact hex-token match, not substring containment inside longer IDs.
+fn path_has_title_id(path: &str, title_id: &str) -> bool {
+    let a = path.as_bytes();
+    let id = title_id.as_bytes();
+    if id.len() != 16 || a.len() < id.len() { return false; }
+    for i in 0..=a.len()-id.len() {
+        if a[i..i+id.len()].eq_ignore_ascii_case(id)
+            && (i == 0 || !a[i-1].is_ascii_hexdigit())
+            && (i+id.len() == a.len() || !a[i+id.len()].is_ascii_hexdigit())
+        {
+            return true;
+        }
+    }
+    false
+}
+
+/// Load and verify the pinned Switch external metadata **once** for all title
+/// IDs, avoiding one decompression and integrity check per library game.
+pub fn switch_title_coverage(
+    root: impl AsRef<Path>,
+    title_ids: &BTreeSet<String>,
+) -> Result<BTreeMap<String, SwitchReferenceCoverage>> {
+    let mut coverage = BTreeMap::new();
+    for id in title_ids {
+        if id.len() != 16
+            || !id.starts_with("01")
+            || !id.bytes().all(|c| c.is_ascii_hexdigit())
+        {
+            return Err("Invalid Switch title ID for bulk external lookup".into());
+        }
+        coverage.insert(id.clone(), SwitchReferenceCoverage::default());
+    }
+    if coverage.is_empty() {
+        return Ok(coverage);
+    }
+    let root = root.as_ref();
+    let dist_bytes = fs::read(root.join("distribution.json"))?;
+    if dist_bytes.len() > MAX_META {
+        return Err("External distribution manifest too large".into());
+    }
+    let dist: Dist = serde_json::from_slice(&dist_bytes)?;
+    if dist.schema_version != 1 || dist.format != "cheatarium-distribution-v1" {
+        return Err("Wrong Cheatarium distribution manifest".into());
+    }
+    let catalog_bytes = checked_file(root, &dist, "external/catalog.json")?;
+    if catalog_bytes.len() > MAX_META {
+        return Err("External catalog too large".into());
+    }
+    let catalog: ExternalCatalog = serde_json::from_slice(&catalog_bytes)?;
+    if catalog.schema_version != 1
+        || catalog.format != FORMAT
+        || !catalog.metadata_only
+        || catalog.rights_status != STATUS
+        || catalog.gameplay_verified
+        || catalog.archive_included
+    {
+        return Err("Invalid or unsafe external reference catalog".into());
+    }
+    if catalog.platforms.iter().map(|e| e.source_files).sum::<usize>() != catalog.reference_files {
+        return Err("External reference catalog count mismatch".into());
+    }
+    let switch = catalog.platforms.iter().filter(|e| e.platform == "switch").collect::<Vec<_>>();
+    if switch.len() != 1 {
+        return Err("Exactly one external Switch platform catalog required".into());
+    }
+    let bundle = read_bundle(root, &dist, switch[0])?;
+    let mut sources = BTreeMap::<String, BTreeSet<String>>::new();
+    for reference in bundle.records {
+        for id in title_ids {
+            if path_has_title_id(&reference.path, id) {
+                let count = coverage.get_mut(id).expect("initialized title ID");
+                count.total += 1;
+                if count.sampled < 100 {
+                    count.sampled += 1;
+                    sources.entry(id.clone()).or_default().insert(reference.source_id.clone());
+                }
+            }
+        }
+    }
+    for (id, ids) in sources {
+        coverage.get_mut(&id).expect("initialized title ID").source_ids = ids.into_iter().collect();
+    }
+    Ok(coverage)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn exact_id_token_does_not_match_longer_hex_string() {
+        assert!(path_has_title_id(
+            "Titles/0100000000010000/cheats/B424BE150A8E7D78.txt",
+            "0100000000010000"
+        ));
+        assert!(!path_has_title_id(
+            "Titles/0100000000010000A/cheats/code.txt",
+            "0100000000010000"
+        ));
+        assert!(!path_has_title_id(
+            "Titles/0100000000010001/cheats/code.txt",
+            "0100000000010000"
+        ));
+    }
+
+    #[test]
+    fn empty_bulk_lookup_does_not_require_database() {
+        let coverage = switch_title_coverage("/path/not/present", &BTreeSet::new()).unwrap();
+        assert!(coverage.is_empty());
+    }
 
     #[test]
     fn reject_payload_fields_and_fake_licensing() {
