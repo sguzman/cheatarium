@@ -70,14 +70,20 @@ fn safe_label(s: &str) -> String {
             if separator && !result.is_empty() && result.len() < 40 {
                 result.push('-');
             }
-            if result.len() >= 40 { break; }
+            if result.len() >= 40 {
+                break;
+            }
             result.push(c);
             separator = false;
         } else {
             separator = true;
         }
     }
-    if result.is_empty() { "Unnamed".to_owned() } else { result }
+    if result.is_empty() {
+        "Unnamed".to_owned()
+    } else {
+        result
+    }
 }
 
 fn default_mod_root() -> PathBuf {
@@ -98,7 +104,9 @@ fn render(description: &str, body: &str) -> Option<String> {
         || name.chars().any(char::is_control)
         || payload.is_empty()
         || payload.contains('\0')
-        || payload.lines().any(|line| line.trim_start().starts_with('['))
+        || payload
+            .lines()
+            .any(|line| line.trim_start().starts_with('['))
     {
         return None;
     }
@@ -109,10 +117,15 @@ fn ascii_opcode_lines(body: &str) -> bool {
     let mut count = 0;
     for line in body.lines() {
         let line = line.trim();
-        if line.is_empty() { continue; }
+        if line.is_empty() {
+            continue;
+        }
         let words = line.split_ascii_whitespace().collect::<Vec<_>>();
-        if words.is_empty() || words.len() > 5
-            || words.iter().any(|word| word.len() != 8 || !word.bytes().all(|c| c.is_ascii_hexdigit()))
+        if words.is_empty()
+            || words.len() > 5
+            || words
+                .iter()
+                .any(|word| word.len() != 8 || !word.bytes().all(|c| c.is_ascii_hexdigit()))
         {
             return false;
         }
@@ -122,18 +135,19 @@ fn ascii_opcode_lines(body: &str) -> bool {
 }
 
 fn select<'a>(bundle: &'a Bundle, title: &str, build: &str) -> Vec<&'a IndexedFile> {
-    let key = format!("title-id-{}-build-{}", title.to_ascii_lowercase(), build.to_ascii_lowercase());
-    bundle.records.iter()
+    let key = format!(
+        "title-id-{}-build-{}",
+        title.to_ascii_lowercase(),
+        build.to_ascii_lowercase()
+    );
+    bundle
+        .records
+        .iter()
         .filter(|file| file.candidate_game_key == key && file.provenance.source_id == "sharkive")
         .collect()
 }
 
-fn preview(
-    bundle: &Bundle,
-    title: &str,
-    build: &str,
-    mod_root: &Path,
-) -> Result<Preview, ErrBox> {
+fn preview(bundle: &Bundle, title: &str, build: &str, mod_root: &Path) -> Result<Preview, ErrBox> {
     if !is_title_id(title) || !is_build_id(build) {
         return Err("Expected exact 16-hex Switch Title ID (01...) and Build ID".into());
     }
@@ -232,10 +246,24 @@ fn run() -> Result<(), ErrBox> {
     while let Some(arg) = args.next() {
         match arg.as_str() {
             "--db" => db = PathBuf::from(args.next().ok_or("--db requires a path")?),
-            "--mods-root" => mod_root = PathBuf::from(args.next().ok_or("--mods-root requires a path")?),
-            "--title-id" => title = Some(args.next().ok_or("--title-id requires a value")?.to_ascii_uppercase()),
-            "--build-id" => build = Some(args.next().ok_or("--build-id requires a value")?.to_ascii_uppercase()),
-            "--json" => {},
+            "--mods-root" => {
+                mod_root = PathBuf::from(args.next().ok_or("--mods-root requires a path")?)
+            }
+            "--title-id" => {
+                title = Some(
+                    args.next()
+                        .ok_or("--title-id requires a value")?
+                        .to_ascii_uppercase(),
+                )
+            }
+            "--build-id" => {
+                build = Some(
+                    args.next()
+                        .ok_or("--build-id requires a value")?
+                        .to_ascii_uppercase(),
+                )
+            }
+            "--json" => {}
             "--help" | "-h" => {
                 println!("Read-only Eden per-cheat addon preview:\n  cheatarium-eden-plan --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 [--mods-root /absolute/eden/load] [--json]\nDoes not install, alter, activate, or verify installed games.");
                 return Ok(());
@@ -302,21 +330,37 @@ mod tests {
     #[test]
     fn exact_build_only_and_individual_paths() {
         let db = fixture();
-        let out = preview(&db, "0100000000010000", "B424BE150A8E7D78", Path::new("/tmp/eden/load")).unwrap();
+        let out = preview(
+            &db,
+            "0100000000010000",
+            "B424BE150A8E7D78",
+            Path::new("/tmp/eden/load"),
+        )
+        .unwrap();
         assert!(out.read_only && !out.installation_allowed);
         assert_eq!(out.emulator_files_written, 0);
         assert!(out.exact_archived_build_candidate_found);
         assert_eq!(out.proposed_addons.len(), 2);
         assert_eq!(out.rejected_entries.len(), 1);
-        assert!(out.proposed_addons[0].proposed_mod_path.contains("/0100000000010000/Cheatarium-"));
-        assert!(out.proposed_addons[0].proposed_mod_path.ends_with("/cheats/B424BE150A8E7D78.txt"));
+        assert!(out.proposed_addons[0]
+            .proposed_mod_path
+            .contains("/0100000000010000/Cheatarium-"));
+        assert!(out.proposed_addons[0]
+            .proposed_mod_path
+            .ends_with("/cheats/B424BE150A8E7D78.txt"));
         assert!(!out.installed_build_id_verified);
     }
 
     #[test]
     fn mismatched_build_cannot_reuse_codes() {
         let db = fixture();
-        let out = preview(&db, "0100000000010000", "AAAAAAAAAAAAAAAA", Path::new("/tmp/eden/load")).unwrap();
+        let out = preview(
+            &db,
+            "0100000000010000",
+            "AAAAAAAAAAAAAAAA",
+            Path::new("/tmp/eden/load"),
+        )
+        .unwrap();
         assert!(!out.exact_archived_build_candidate_found);
         assert!(out.proposed_addons.is_empty());
     }
@@ -328,6 +372,8 @@ mod tests {
         assert!(render("Unsafe\nHeading", "00000000 00000000").is_none());
         assert!(render("Safe Heading", "[Injected]\nAAAA BBBB").is_none());
         assert!(!ascii_opcode_lines("not a code"));
-        assert!(ascii_opcode_lines("800000C0\n01100000 5C3BE7DC 00000006\n20000000\n"));
+        assert!(ascii_opcode_lines(
+            "800000C0\n01100000 5C3BE7DC 00000006\n20000000\n"
+        ));
     }
 }
