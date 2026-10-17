@@ -111,7 +111,7 @@ fn ascii_opcode_lines(body: &str) -> bool {
         let line = line.trim();
         if line.is_empty() { continue; }
         let words = line.split_ascii_whitespace().collect::<Vec<_>>();
-        if words.len() < 2 || words.len() > 5
+        if words.is_empty() || words.len() > 5
             || words.iter().any(|word| word.len() != 8 || !word.bytes().all(|c| c.is_ascii_hexdigit()))
         {
             return false;
@@ -328,5 +328,6 @@ mod tests {
         assert!(render("Unsafe\nHeading", "00000000 00000000").is_none());
         assert!(render("Safe Heading", "[Injected]\nAAAA BBBB").is_none());
         assert!(!ascii_opcode_lines("not a code"));
+        assert!(ascii_opcode_lines("800000C0\n01100000 5C3BE7DC 00000006\n20000000\n"));
     }
 }
