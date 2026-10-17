@@ -917,6 +917,45 @@ jobs:
           cargo run --locked --release -p cheatarium-client --bin cheatarium-query -- search \
             --db generated/v1 --platform snes --title 'Donkey Kong Country' --limit 2 --json \
             | python3 -c 'import json,sys; q=json.load(sys.stdin); assert q["total_source_records"] > 0 and q["candidate_only"]'
+      - name: Smoke-test Eden discovery against five archived Switch title labels
+        run: |
+          report="$(mktemp)"
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
+            --db generated/v1 \
+            --config /dev/null \
+            --cache-dir /tmp/cheatarium-eden-nonexistent-cache \
+            --title-id 01006BB00C6F0000 \
+            --title-id 0100000000010000 \
+            --title-id 0100152000022000 \
+            --title-id 01002DA013484000 \
+            --title-id 01006A800016E000 \
+            --json > "$report"
+          python3 - "$report" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          data = json.loads(Path(sys.argv[1]).read_text())
+          assert data["read_only"] is True
+          assert data["game_file_bytes_read"] == 0
+          assert data["emulator_files_written"] == 0
+          assert data["game_files"] == []
+          assert data["cached_titles"] == []
+          found = {match["title_id"]: match for match in data["title_id_matches"]}
+          assert len(found) == 5
+          for title in (
+              "01006BB00C6F0000",
+              "0100000000010000",
+              "0100152000022000",
+              "01006A800016E000",
+          ):
+              assert found[title]["archived_build_candidates"]
+          assert not found["01002DA013484000"]["archived_build_candidates"]
+          assert found["01002DA013484000"]["external_reference_total"] > 0
+          assert all(not m["compatible_with_installed_game"] for m in found.values())
+          assert all(m["origin"] == "explicit_lookup" for m in found.values())
+          print("Eden discovery is read-only; 4/5 archived titles and Skyward Sword external references confirmed.")
+          PY
+          rm "$report"
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
