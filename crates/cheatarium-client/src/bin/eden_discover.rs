@@ -356,7 +356,9 @@ fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
             continue;
         };
         if !metadata.is_file() || metadata.len() > MAX_CACHE_TITLE_BYTES {
-            warnings.push(format!("eden_cache_title_skipped_nonregular_or_oversized: {id}"));
+            warnings.push(format!(
+                "eden_cache_title_skipped_nonregular_or_oversized: {id}"
+            ));
             continue;
         }
         // A pv.txt is only a filename witness: its contents are patch/version
@@ -397,16 +399,19 @@ fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
         match read_title {
             Ok(title_name) => {
                 let prior_pv = matches.contains_key(&id);
-                matches.insert(id.clone(), CachedTitle {
-                    title_id: id,
-                    title_name,
-                    evidence: if prior_pv {
-                        "eden_game_list_cache_appname_and_pv"
-                    } else {
-                        "eden_game_list_cache_appname_filename_and_optional_title"
+                matches.insert(
+                    id.clone(),
+                    CachedTitle {
+                        title_id: id,
+                        title_name,
+                        evidence: if prior_pv {
+                            "eden_game_list_cache_appname_and_pv"
+                        } else {
+                            "eden_game_list_cache_appname_filename_and_optional_title"
+                        },
+                        installed_game_verified: false,
                     },
-                    installed_game_verified: false,
-                });
+                );
             }
             Err(_) => warnings.push(format!("eden_cache_title_unreadable: {id}")),
         }
@@ -681,16 +686,26 @@ mod tests {
         fs::write(path.join("0100000000010000.pv.txt"), b"v1.0.0").unwrap();
         fs::write(path.join("0100152000022000.pv.txt"), b"v3.0.0").unwrap();
         fs::write(path.join("01006A800016E000.pv.txt"), b"").unwrap();
-        fs::write(path.join("0100152000022000.appname.txt"), b"Mario Kart 8 Deluxe").unwrap();
+        fs::write(
+            path.join("0100152000022000.appname.txt"),
+            b"Mario Kart 8 Deluxe",
+        )
+        .unwrap();
         fs::write(path.join("0100152000022000.jpeg"), b"not read").unwrap();
         fs::write(path.join("ignore.appname.txt"), b"ignored").unwrap();
         let mut warnings = Vec::new();
         let games = cache_titles(&path, &mut warnings);
         assert_eq!(games.len(), 3);
-        let odyssey = games.iter().find(|g| g.title_id == "0100000000010000").unwrap();
+        let odyssey = games
+            .iter()
+            .find(|g| g.title_id == "0100000000010000")
+            .unwrap();
         assert_eq!(odyssey.title_name, None);
         assert_eq!(odyssey.evidence, "eden_game_list_cache_pv_filename");
-        let kart = games.iter().find(|g| g.title_id == "0100152000022000").unwrap();
+        let kart = games
+            .iter()
+            .find(|g| g.title_id == "0100152000022000")
+            .unwrap();
         assert_eq!(kart.title_name.as_deref(), Some("Mario Kart 8 Deluxe"));
         assert_eq!(kart.evidence, "eden_game_list_cache_appname_and_pv");
         assert!(games.iter().all(|g| !g.installed_game_verified));
