@@ -6,12 +6,14 @@ use std::collections::{BTreeMap, BTreeSet};
 use std::env;
 use std::error::Error;
 use std::fs;
+use std::io::Read;
 use std::path::{Path, PathBuf};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
 const MAX_ENTRIES: usize = 50_000;
 const MAX_FILES: usize = 20_000;
 const MAX_DEPTH: usize = 5;
+const MAX_CACHE_TITLE_BYTES: u64 = 4096;
 
 #[derive(Debug, Serialize)]
 struct LibraryFile {
@@ -20,6 +22,14 @@ struct LibraryFile {
     title_id_evidence: &'static str,
     /// A game-file suffix alone does not prove that this file is a base game.
     file_type: String,
+}
+
+#[derive(Debug, Serialize)]
+struct CachedTitle {
+    title_id: String,
+    title_name: Option<String>,
+    evidence: &'static str,
+    installed_game_verified: bool,
 }
 
 #[derive(Debug, Serialize)]
@@ -62,6 +72,9 @@ struct Report {
     emulator_files_written: u32,
     config_path: String,
     config_found: bool,
+    cache_dir: String,
+    cache_found: bool,
+    cached_titles: Vec<CachedTitle>,
     game_roots: Vec<GameRoot>,
     game_files: Vec<LibraryFile>,
     title_id_matches: Vec<CheatMatch>,
@@ -274,6 +287,93 @@ fn archived_builds(index: &GameIndex, id: &str) -> Vec<BuildCandidate> {
     matches
 }
 
+/// Eden Qt caches loader-derived title IDs in game_list/<TITLEID>.appname.txt.
+/// Cached data can survive game removal: never treat it as current installation.
+fn cached_title_id(name: &str) -> Option<String> {
+    let stem = name.strip_suffix(".appname.txt")?;
+    if !is_title_id(stem) {
+        return None;
+    }
+    Some(stem.to_ascii_uppercase())
+}
+
+fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
+    let mut result = Vec::new();
+    let Ok(metadata) = fs::symlink_metadata(root) else {
+        return result;
+    };
+    if metadata.file_type().is_symlink() || !metadata.is_dir() {
+        warnings.push("eden_game_cache_not_a_plain_directory".to_owned());
+        return result;
+    }
+    let Ok(dir) = fs::read_dir(root) else {
+        warnings.push("eden_game_cache_unreadable".to_owned());
+        return result;
+    };
+    let mut names = Vec::new();
+    for entry in dir {
+        if names.len() >= MAX_ENTRIES {
+            warnings.push("eden_game_cache_entry_limit_reached".to_owned());
+            return result;
+        }
+        let Ok(entry) = entry else {
+            warnings.push("eden_game_cache_entry_unreadable".to_owned());
+            continue;
+        };
+        names.push(entry);
+    }
+    names.sort_by_key(|entry| entry.file_name());
+    let mut seen = BTreeSet::new();
+    for entry in names {
+        let name = entry.file_name().to_string_lossy().into_owned();
+        let Some(id) = cached_title_id(&name) else { continue; };
+        if !seen.insert(id.clone()) {
+            warnings.push(format!("duplicate_eden_cache_title_id: {id}"));
+            continue;
+        }
+        let Ok(metadata) = fs::symlink_metadata(entry.path()) else { continue; };
+        if !metadata.is_file() || metadata.len() > MAX_CACHE_TITLE_BYTES {
+            warnings.push(format!("eden_cache_title_skipped_nonregular_or_oversized: {id}"));
+            continue;
+        }
+        let read_title = (|| -> std::io::Result<Option<String>> {
+            let mut data = Vec::new();
+            fs::File::open(entry.path())?
+                .take(MAX_CACHE_TITLE_BYTES + 1)
+                .read_to_end(&mut data)?;
+            if data.len() as u64 > MAX_CACHE_TITLE_BYTES {
+                return Ok(None);
+            }
+            Ok(String::from_utf8(data).ok().and_then(|s| {
+                let cleaned = s.trim_matches('\0').trim().to_owned();
+                if cleaned.is_empty() || cleaned.chars().any(char::is_control) {
+                    None
+                } else {
+                    Some(cleaned)
+                }
+            }))
+        })();
+        match read_title {
+            Ok(title_name) => result.push(CachedTitle {
+                title_id: id,
+                title_name,
+                evidence: "eden_game_list_cache_filename_and_optional_title",
+                installed_game_verified: false,
+            }),
+            Err(_) => warnings.push(format!("eden_cache_title_unreadable: {id}")),
+        }
+    }
+    result
+}
+
+fn default_cache_dir() -> PathBuf {
+    let base = env::var_os("XDG_CACHE_HOME")
+        .map(PathBuf::from)
+        .or_else(|| env::var_os("HOME").map(|x| PathBuf::from(x).join(".cache")))
+        .unwrap_or_default();
+    base.join("eden/game_list")
+}
+
 fn default_config() -> PathBuf {
     if let Some(xdg) = env::var_os("XDG_CONFIG_HOME") {
         return PathBuf::from(xdg).join("eden/qt-config.ini");
@@ -287,6 +387,7 @@ fn default_config() -> PathBuf {
 fn run() -> Result<(), ErrBox> {
     let mut db = PathBuf::from("generated/v1");
     let mut config = default_config();
+    let mut cache_dir = default_cache_dir();
     let mut extra_roots = Vec::new();
     let mut explicit_ids = BTreeSet::new();
     let mut args = env::args().skip(1);
@@ -294,6 +395,7 @@ fn run() -> Result<(), ErrBox> {
         match arg.as_str() {
             "--db" => db = PathBuf::from(args.next().ok_or("--db requires a path")?),
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
+            "--cache-dir" => cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?),
             "--game-dir" => extra_roots.push((
                 PathBuf::from(args.next().ok_or("--game-dir requires a path")?),
                 false,
@@ -310,7 +412,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--game-dir DIR] [--title-id 0100000000010000] [--json]\nNo ROM contents or emulator files are changed.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--json]\nNo ROM contents or emulator files are changed.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -326,6 +428,9 @@ fn run() -> Result<(), ErrBox> {
         emulator_files_written: 0,
         config_path: config.to_string_lossy().into_owned(),
         config_found: config.is_file(),
+        cache_dir: cache_dir.to_string_lossy().into_owned(),
+        cache_found: cache_dir.is_dir(),
+        cached_titles: Vec::new(),
         game_roots: Vec::new(),
         game_files: Vec::new(),
         title_id_matches: Vec::new(),
@@ -334,6 +439,7 @@ fn run() -> Result<(), ErrBox> {
             "Filenames and configured folder listings are not authenticated Eden game-library identities.",
             "Switch game containers are not opened or decrypted; Title IDs absent from filenames remain unresolved.",
             "Build IDs listed are cheat-source candidates, not verified installed executable Build IDs.",
+            "Eden cached Title IDs and names may refer to removed games and are not verified currently installed.",
             "External references are metadata-only; rights and compatibility are not established.",
             "No cheats are installed or activated.",
         ],
@@ -350,6 +456,7 @@ fn run() -> Result<(), ErrBox> {
         );
     }
     roots.extend(extra_roots);
+    report.cached_titles = cache_titles(&cache_dir, &mut report.warnings);
     let mut seen_roots = BTreeSet::new();
     let mut scanned = 0usize;
     for (root, deep_scan) in roots {
@@ -387,10 +494,17 @@ fn run() -> Result<(), ErrBox> {
         .filter(|item| item.title_id.is_none())
         .count();
     let mut ids = explicit_ids.clone();
+    let mut filename_ids = BTreeSet::new();
     for item in &report.game_files {
         if let Some(id) = &item.title_id {
+            filename_ids.insert(id.clone());
             ids.insert(id.clone());
         }
+    }
+    let mut cached_ids = BTreeSet::new();
+    for item in &report.cached_titles {
+        cached_ids.insert(item.title_id.clone());
+        ids.insert(item.title_id.clone());
     }
     for id in ids {
         let refs = external::search(&db, &id, Some("switch"), None, 0, 100)?;
@@ -401,9 +515,13 @@ fn run() -> Result<(), ErrBox> {
             .collect::<BTreeSet<_>>();
         report.title_id_matches.push(CheatMatch {
             origin: if explicit_ids.contains(&id) {
-                "explicit_lookup_or_filename"
-            } else {
+                "explicit_lookup"
+            } else if filename_ids.contains(&id) && cached_ids.contains(&id) {
+                "filename_and_eden_cache"
+            } else if filename_ids.contains(&id) {
                 "filename_only"
+            } else {
+                "eden_cache_only_unverified_installed"
             },
             archived_build_candidates: archived_builds(&index, &id),
             title_id: id,
@@ -477,6 +595,39 @@ mod tests {
         assert!(
             exact_build_key("title-id-0100000000010000-build-short", "0100000000010000").is_none()
         );
+    }
+
+    #[test]
+    fn recognizes_only_exact_eden_cache_title_labels() {
+        assert_eq!(
+            cached_title_id("0100000000010000.appname.txt").as_deref(),
+            Some("0100000000010000")
+        );
+        assert!(cached_title_id("0100000000010000.jpeg").is_none());
+        assert!(cached_title_id("0100000000010000.pv.txt").is_none());
+        assert!(cached_title_id("foo0100000000010000.appname.txt").is_none());
+        assert!(cached_title_id("0100000000010000.appname.txt.bak").is_none());
+    }
+
+    #[test]
+    fn reads_small_cache_labels_without_claiming_installation() {
+        let path = env::temp_dir().join(format!(
+            "cheatarium-eden-test-{}-{:?}",
+            std::process::id(),
+            std::thread::current().id()
+        ));
+        fs::create_dir_all(&path).unwrap();
+        fs::write(path.join("0100000000010000.appname.txt"), b"Super Mario Odyssey").unwrap();
+        fs::write(path.join("0100152000022000.jpeg"), b"not read").unwrap();
+        fs::write(path.join("ignore.appname.txt"), b"ignored").unwrap();
+        let mut warnings = Vec::new();
+        let games = cache_titles(&path, &mut warnings);
+        assert_eq!(games.len(), 1);
+        assert_eq!(games[0].title_name.as_deref(), Some("Super Mario Odyssey"));
+        assert_eq!(games[0].title_id, "0100000000010000");
+        assert!(!games[0].installed_game_verified);
+        assert!(warnings.is_empty());
+        fs::remove_dir_all(&path).unwrap();
     }
 
     #[test]
