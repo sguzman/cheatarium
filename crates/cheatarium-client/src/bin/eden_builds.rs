@@ -108,11 +108,12 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
     let mut seen = BTreeSet::new();
     for (line_index, line) in log.lines().enumerate() {
         let newly_loading = loading_title(line);
+        let is_new_launch = newly_loading.is_some();
         let announced = title_after(line, "Booting game: ")
             .or_else(|| title_after(line, "Now running: "));
         if let Some(id) = newly_loading.or(announced) {
             // Core Loading marks an explicit new launch even for the same title.
-            if newly_loading.is_some() || active.as_ref().is_none_or(|(title, _, _)| title != &id) {
+            if is_new_launch || active.as_ref().is_none_or(|(title, _, _)| title != &id) {
                 launch_ordinal += 1;
                 active = Some((id, launch_ordinal, line_index));
             }
@@ -129,7 +130,7 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
             continue;
         }
         // Duplicate messages in the same launch do not count as new builds.
-        if seen.insert((ordinal, title_id.clone(), build_id.clone())) {
+        if seen.insert((*ordinal, title_id.clone(), build_id.clone())) {
             if out.witness.len() >= MAX_OBSERVATIONS {
                 return Err("Too many Eden log Build ID observations".into());
             }
