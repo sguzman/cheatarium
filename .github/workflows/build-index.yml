@@ -1032,6 +1032,61 @@ jobs:
           assert m["emulator_files_written"] == 0
           print("Eden plan preview passes: exact build, unique add-on paths, no mutations.")
           PY
+      - name: Stage exact-build native cheats outside Eden without overwrites
+        run: |
+          set -euo pipefail
+          parent="$(mktemp -d)"
+          trap 'rm -rf "$parent"' EXIT
+          stage="$parent/staging"
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+            --db generated/v1 \
+            --title-id 0100000000010000 \
+            --build-id B424BE150A8E7D78 \
+            --mods-root /tmp/eden/load \
+            --stage-dir "$stage" \
+            --json > "$parent/result.json"
+          python3 - "$stage" "$parent/result.json" <<'PY'
+          import hashlib
+          import json
+          import sys
+          from pathlib import Path
+          stage = Path(sys.argv[1])
+          d = json.loads(Path(sys.argv[2]).read_text())
+          assert d["format"] == "cheatarium-eden-isolated-staging-v1"
+          assert d["emulator_files_written"] == 0
+          assert d["installation_allowed"] is False
+          assert d["activation_state_written"] is False
+          assert d["installed_build_id_verified"] is False
+          assert d["all_output_is_outside_eden"] is True
+          assert d["staged_count"] > 0
+          assert d["staged_count"] == len(d["staged_files"])
+          manifest = json.loads((stage / "cheatarium-staging-manifest.json").read_text())
+          assert manifest["staged_files"] == d["staged_files"]
+          for f in d["staged_files"]:
+              source = stage / f["relative_path"]
+              assert source.is_file()
+              assert hashlib.sha256(source.read_bytes()).hexdigest() == f["sha256"]
+              assert "/cheats/B424BE150A8E7D78.txt" in str(source)
+          print("Staging output and manifest checksums verified:", d["staged_count"])
+          PY
+          if cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+            --db generated/v1 \
+            --title-id 0100000000010000 \
+            --build-id B424BE150A8E7D78 \
+            --mods-root /tmp/eden/load \
+            --stage-dir "$stage" --json; then
+            echo "ERROR: staging unexpectedly overwrote an existing directory"
+            exit 1
+          fi
+          if cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+            --db generated/v1 \
+            --title-id 0100000000010000 \
+            --build-id B424BE150A8E7D78 \
+            --mods-root /tmp/eden/load \
+            --stage-dir /tmp/eden/load/Cheatarium-should-not-create --json; then
+            echo "ERROR: unsafe staging into emulator mod directory accepted"
+            exit 1
+          fi
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
