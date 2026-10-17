@@ -35,6 +35,10 @@ name = "cheatarium-wii-local"
 path = "src/bin/wii_local.rs"
 
 [[bin]]
+name = "cheatarium-eden-discover"
+path = "src/bin/eden_discover.rs"
+
+[[bin]]
 name = "cheatarium-explorer"
 path = "src/bin/explorer.rs"
 required-features = ["desktop"]
