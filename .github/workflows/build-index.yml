@@ -994,6 +994,44 @@ jobs:
           assert all(m["origin"] == "eden_cache_only_unverified_installed" for m in data["title_id_matches"])
           print("Eden real-layout regression: correct game root, 5 cached IDs, zero emulator writes.")
           PY
+      - name: Preview exact-build Eden cheats without modifying emulator
+        run: |
+          set -euo pipefail
+          report="$(mktemp)"
+          mismatch="$(mktemp)"
+          trap 'rm -f "$report" "$mismatch"' EXIT
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+            --db generated/v1 \
+            --title-id 0100000000010000 \
+            --build-id B424BE150A8E7D78 \
+            --mods-root /tmp/eden/load \
+            --json > "$report"
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+            --db generated/v1 \
+            --title-id 0100000000010000 \
+            --build-id AAAAAAAAAAAAAAAA \
+            --mods-root /tmp/eden/load \
+            --json > "$mismatch"
+          python3 - "$report" "$mismatch" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          d = json.loads(Path(sys.argv[1]).read_text())
+          m = json.loads(Path(sys.argv[2]).read_text())
+          assert d["read_only"] and d["emulator_files_written"] == 0
+          assert d["installation_allowed"] is False and d["activation_state_written"] is False
+          assert d["installed_build_id_verified"] is False
+          assert d["exact_archived_build_candidate_found"] is True
+          assert d["proposed_addons"]
+          paths = [a["proposed_mod_path"] for a in d["proposed_addons"]]
+          assert len(set(paths)) == len(paths)
+          assert all(p.startswith("/tmp/eden/load/0100000000010000/Cheatarium-") for p in paths)
+          assert all(p.endswith("/cheats/B424BE150A8E7D78.txt") for p in paths)
+          assert m["proposed_addons"] == []
+          assert m["exact_archived_build_candidate_found"] is False
+          assert m["emulator_files_written"] == 0
+          print("Eden plan preview passes: exact build, unique add-on paths, no mutations.")
+          PY
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
