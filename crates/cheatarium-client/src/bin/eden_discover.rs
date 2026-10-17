@@ -133,22 +133,38 @@ fn normalize_root(value: &str) -> PathBuf {
 /// QSettings array under [Paths]: gamedirs\1\path, gamedirs\1\deep_scan.
 /// Support '/' separators as well as the normal Qt backslash serialization.
 fn configured_game_dirs(contents: &str) -> Vec<(PathBuf, bool)> {
-    let mut in_paths = false;
+    // Eden's Qt file normally puts Paths\gamedirs keys inside [UI].
+    // Older/custom Qt configurations can instead use a dedicated [Paths].
+    let mut section = "";
     let mut entries: BTreeMap<usize, (Option<String>, bool)> = BTreeMap::new();
     let mut legacy = None;
     for line in contents.lines() {
         let line = line.trim();
         if line.starts_with('[') && line.ends_with(']') {
-            in_paths = line.eq_ignore_ascii_case("[Paths]");
+            section = if line.eq_ignore_ascii_case("[UI]") {
+                "UI"
+            } else if line.eq_ignore_ascii_case("[Paths]") {
+                "Paths"
+            } else {
+                ""
+            };
             continue;
         }
-        if !in_paths || line.starts_with(';') || line.starts_with('#') {
+        if section.is_empty() || line.starts_with(';') || line.starts_with('#') {
             continue;
         }
         let Some((key, value)) = line.split_once('=') else {
             continue;
         };
-        let key = key.trim().replace('\\', "/");
+        let normalized = key.trim().replace('\\', "/");
+        let key = if section == "UI" {
+            let Some(key) = normalized.strip_prefix("Paths/") else {
+                continue;
+            };
+            key
+        } else {
+            normalized.as_str()
+        };
         let value = value.trim();
         if key == "gameListRootDir" && value != "." {
             legacy = Some(value.to_owned());
@@ -289,32 +305,38 @@ fn archived_builds(index: &GameIndex, id: &str) -> Vec<BuildCandidate> {
 
 /// Eden Qt caches loader-derived title IDs in game_list/<TITLEID>.appname.txt.
 /// Cached data can survive game removal: never treat it as current installation.
-fn cached_title_id(name: &str) -> Option<String> {
-    let stem = name.strip_suffix(".appname.txt")?;
+fn cached_title_id(name: &str) -> Option<(String, bool)> {
+    let (stem, is_appname) = if let Some(stem) = name.strip_suffix(".appname.txt") {
+        (stem, true)
+    } else if let Some(stem) = name.strip_suffix(".pv.txt") {
+        // Eden's version/patch display cache is title-ID keyed too.
+        (stem, false)
+    } else {
+        return None;
+    };
     if !is_title_id(stem) {
         return None;
     }
-    Some(stem.to_ascii_uppercase())
+    Some((stem.to_ascii_uppercase(), is_appname))
 }
 
 fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
-    let mut result = Vec::new();
     let Ok(metadata) = fs::symlink_metadata(root) else {
-        return result;
+        return Vec::new();
     };
     if metadata.file_type().is_symlink() || !metadata.is_dir() {
         warnings.push("eden_game_cache_not_a_plain_directory".to_owned());
-        return result;
+        return Vec::new();
     }
     let Ok(dir) = fs::read_dir(root) else {
         warnings.push("eden_game_cache_unreadable".to_owned());
-        return result;
+        return Vec::new();
     };
     let mut names = Vec::new();
     for entry in dir {
         if names.len() >= MAX_ENTRIES {
             warnings.push("eden_game_cache_entry_limit_reached".to_owned());
-            return result;
+            return Vec::new();
         }
         let Ok(entry) = entry else {
             warnings.push("eden_game_cache_entry_unreadable".to_owned());
@@ -323,23 +345,29 @@ fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
         names.push(entry);
     }
     names.sort_by_key(|entry| entry.file_name());
-    let mut seen = BTreeSet::new();
+    let mut matches = BTreeMap::<String, CachedTitle>::new();
     for entry in names {
         let name = entry.file_name().to_string_lossy().into_owned();
-        let Some(id) = cached_title_id(&name) else {
+        let Some((id, appname)) = cached_title_id(&name) else {
             continue;
         };
-        if !seen.insert(id.clone()) {
-            warnings.push(format!("duplicate_eden_cache_title_id: {id}"));
-            continue;
-        }
+        // Never follow symlinks into unrelated files.
         let Ok(metadata) = fs::symlink_metadata(entry.path()) else {
             continue;
         };
         if !metadata.is_file() || metadata.len() > MAX_CACHE_TITLE_BYTES {
-            warnings.push(format!(
-                "eden_cache_title_skipped_nonregular_or_oversized: {id}"
-            ));
+            warnings.push(format!("eden_cache_title_skipped_nonregular_or_oversized: {id}"));
+            continue;
+        }
+        // A pv.txt is only a filename witness: its contents are patch/version
+        // presentation text, NOT the game's name or executable Build ID.
+        if !appname {
+            matches.entry(id.clone()).or_insert(CachedTitle {
+                title_id: id,
+                title_name: None,
+                evidence: "eden_game_list_cache_pv_filename",
+                installed_game_verified: false,
+            });
             continue;
         }
         let read_title = (|| -> std::io::Result<Option<String>> {
@@ -360,16 +388,23 @@ fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
             }))
         })();
         match read_title {
-            Ok(title_name) => result.push(CachedTitle {
-                title_id: id,
-                title_name,
-                evidence: "eden_game_list_cache_filename_and_optional_title",
-                installed_game_verified: false,
-            }),
+            Ok(title_name) => {
+                let prior_pv = matches.contains_key(&id);
+                matches.insert(id.clone(), CachedTitle {
+                    title_id: id,
+                    title_name,
+                    evidence: if prior_pv {
+                        "eden_game_list_cache_appname_and_pv"
+                    } else {
+                        "eden_game_list_cache_appname_filename_and_optional_title"
+                    },
+                    installed_game_verified: false,
+                });
+            }
             Err(_) => warnings.push(format!("eden_cache_title_unreadable: {id}")),
         }
     }
-    result
+    matches.into_values().collect()
 }
 
 fn default_cache_dir() -> PathBuf {
@@ -606,36 +641,52 @@ mod tests {
     #[test]
     fn recognizes_only_exact_eden_cache_title_labels() {
         assert_eq!(
-            cached_title_id("0100000000010000.appname.txt").as_deref(),
-            Some("0100000000010000")
+            cached_title_id("0100000000010000.appname.txt"),
+            Some(("0100000000010000".to_owned(), true))
+        );
+        assert_eq!(
+            cached_title_id("0100152000022000.pv.txt"),
+            Some(("0100152000022000".to_owned(), false))
         );
         assert!(cached_title_id("0100000000010000.jpeg").is_none());
-        assert!(cached_title_id("0100000000010000.pv.txt").is_none());
-        assert!(cached_title_id("foo0100000000010000.appname.txt").is_none());
-        assert!(cached_title_id("0100000000010000.appname.txt.bak").is_none());
+        assert!(cached_title_id("foo0100000000010000.pv.txt").is_none());
+        assert!(cached_title_id("0100000000010000.pv.txt.bak").is_none());
     }
 
     #[test]
-    fn reads_small_cache_labels_without_claiming_installation() {
+    fn parses_real_eden_ui_namespaced_qsettings_keys() {
+        let ini = "[UI]\nPaths\\gamedirs\\size=4\nUIGameList\\cache_game_list=true\nPaths\\gamedirs\\1\\path=SDMC\nPaths\\gamedirs\\2\\path=UserNAND\nPaths\\gamedirs\\3\\path=SysNAND\nPaths\\gamedirs\\4\\path=/drive/roms/switch/roms\nPaths\\gamedirs\\4\\deep_scan\\default=false\nPaths\\gamedirs\\4\\deep_scan=true\n";
+        assert_eq!(
+            configured_game_dirs(ini),
+            vec![(PathBuf::from("/drive/roms/switch/roms"), true)]
+        );
+    }
+
+    #[test]
+    fn reads_eden_patch_cache_even_without_game_name() {
         let path = env::temp_dir().join(format!(
             "cheatarium-eden-test-{}-{:?}",
             std::process::id(),
             std::thread::current().id()
         ));
         fs::create_dir_all(&path).unwrap();
-        fs::write(
-            path.join("0100000000010000.appname.txt"),
-            b"Super Mario Odyssey",
-        )
-        .unwrap();
+        // This is exactly the cache-file shape present in the local Eden report.
+        fs::write(path.join("0100000000010000.pv.txt"), b"v1.0.0").unwrap();
+        fs::write(path.join("0100152000022000.pv.txt"), b"v3.0.0").unwrap();
+        fs::write(path.join("01006A800016E000.pv.txt"), b"").unwrap();
+        fs::write(path.join("0100152000022000.appname.txt"), b"Mario Kart 8 Deluxe").unwrap();
         fs::write(path.join("0100152000022000.jpeg"), b"not read").unwrap();
         fs::write(path.join("ignore.appname.txt"), b"ignored").unwrap();
         let mut warnings = Vec::new();
         let games = cache_titles(&path, &mut warnings);
-        assert_eq!(games.len(), 1);
-        assert_eq!(games[0].title_name.as_deref(), Some("Super Mario Odyssey"));
-        assert_eq!(games[0].title_id, "0100000000010000");
-        assert!(!games[0].installed_game_verified);
+        assert_eq!(games.len(), 3);
+        let odyssey = games.iter().find(|g| g.title_id == "0100000000010000").unwrap();
+        assert_eq!(odyssey.title_name, None);
+        assert_eq!(odyssey.evidence, "eden_game_list_cache_pv_filename");
+        let kart = games.iter().find(|g| g.title_id == "0100152000022000").unwrap();
+        assert_eq!(kart.title_name.as_deref(), Some("Mario Kart 8 Deluxe"));
+        assert_eq!(kart.evidence, "eden_game_list_cache_appname_and_pv");
+        assert!(games.iter().all(|g| !g.installed_game_verified));
         assert!(warnings.is_empty());
         fs::remove_dir_all(&path).unwrap();
     }
