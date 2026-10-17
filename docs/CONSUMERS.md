@@ -339,3 +339,16 @@ cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db ge
 The writer requires at least one exact archived Sharkive source record for the selected Title ID + Build ID. It refuses staging if **any** selected source section has an unsafe name or an unsupported lexical opcode shape (no partial selection of unresolved source text). It preflights all source records and relative paths before creating anything, uses create-new writes so it never overwrites files, and writes a `cheatarium-staging-manifest.json` containing original source references, individual relative cheat paths, SHA-256 values, and explicit **not installed / not compatible-verified** flags. Repeating the same operation against the existing directory is an error, not an overwrite. If a filesystem error happens after directory creation, a partial staging directory can remain and must be inspected or discarded manually.
 
 **Staged cheats are not active and must not be copied into Eden yet.** Native add-ons may be enabled by default when placed under Eden's `load` directory, and the tool cannot currently verify the installed executable's Build ID or apply disabled-add-on settings. This stage does not touch Eden and is not an installation command. No rights-unresolved metadata-only external source is materialized.
+
+
+## Eden historical main Build ID observations (read-only)
+
+The `cheatarium-eden-builds` CLI inspects Eden's **existing** plaintext log at `$XDG_DATA_HOME/eden/log/eden_log.txt` (default `~/.local/share/eden/log/eden_log.txt`). Eden emits a game launch with a 16-digit Title ID and later emits a `Querying NSO patch existence for build_id=..., name=main` log record. Cheatarium associates those records **only within the same observed launch context**, normalizes the first 16 hex digits of the main NSO Build ID, and joins the observed pair to the archived Switch cheat candidate index.
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-builds -- --db generated/v1 --json
+```
+
+Use `--log /absolute/path/to/eden_log.txt` to inspect a deliberately chosen historical log file. Input is bounded to 32 MiB, read only, and symlinks are rejected. The JSON report does **not** reproduce arbitrary log lines, game paths, user names, or other log details. It reports Title ID, shortened main Build ID, original hex length, per-log launch sequence number, archived-match status, and unassociated main-build count. If the log does not exist, an empty report is returned; an empty report is **not** evidence there are no games.
+
+**Limits:** A historical main NSO Build ID is evidence of what Eden previously attempted to run, not proof of what is currently installed or proof that a cheat works. A single log may contain many games or old versions. Multiple builds for one Title ID are explicitly reported as ambiguous; contextless records are discarded. `current_installed_build_verified`, `compatible_cheats_verified`, and `installation_allowed` remain false. No ROMs, keys, saves, or emulator settings are accessed; no cheats are installed or activated. The staging/export process remains separate and opt-in.
