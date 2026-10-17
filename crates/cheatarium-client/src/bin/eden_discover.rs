@@ -506,13 +506,9 @@ fn run() -> Result<(), ErrBox> {
         cached_ids.insert(item.title_id.clone());
         ids.insert(item.title_id.clone());
     }
+    let external_coverage = external::switch_title_coverage(&db, &ids)?;
     for id in ids {
-        let refs = external::search(&db, &id, Some("switch"), None, 0, 100)?;
-        let sources = refs
-            .results
-            .iter()
-            .map(|r| r.source_id.clone())
-            .collect::<BTreeSet<_>>();
+        let refs = external_coverage.get(&id).ok_or("Missing external coverage result")?;
         report.title_id_matches.push(CheatMatch {
             origin: if explicit_ids.contains(&id) {
                 "explicit_lookup"
@@ -526,9 +522,9 @@ fn run() -> Result<(), ErrBox> {
             archived_build_candidates: archived_builds(&index, &id),
             title_id: id,
             external_reference_total: refs.total,
-            external_sampled: refs.results.len(),
-            external_sample_incomplete: refs.has_more,
-            external_sources_sample: sources.into_iter().collect(),
+            external_sampled: refs.sampled,
+            external_sample_incomplete: refs.total > refs.sampled,
+            external_sources_sample: refs.source_ids.clone(),
             external_is_link_only: true,
             compatible_with_installed_game: false,
         });
