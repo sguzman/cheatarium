@@ -71,21 +71,29 @@ struct Report {
 }
 
 fn is_title_id(value: &str) -> bool {
-    value.len() == 16
-        && value.starts_with("01")
-        && value.bytes().all(|b| b.is_ascii_hexdigit())
+    value.len() == 16 && value.starts_with("01") && value.bytes().all(|b| b.is_ascii_hexdigit())
 }
 
 fn title_id_in_filename(name: &str) -> Option<String> {
     let b = name.as_bytes();
     let mut found = None;
     for start in 0..=b.len().saturating_sub(16) {
-        if b.len() < 16 { break; }
+        if b.len() < 16 {
+            break;
+        }
         let end = start + 16;
-        if start > 0 && b[start - 1].is_ascii_hexdigit() { continue; }
-        if end < b.len() && b[end].is_ascii_hexdigit() { continue; }
-        let Ok(raw) = std::str::from_utf8(&b[start..end]) else { continue; };
-        if !is_title_id(raw) { continue; }
+        if start > 0 && b[start - 1].is_ascii_hexdigit() {
+            continue;
+        }
+        if end < b.len() && b[end].is_ascii_hexdigit() {
+            continue;
+        }
+        let Ok(raw) = std::str::from_utf8(&b[start..end]) else {
+            continue;
+        };
+        if !is_title_id(raw) {
+            continue;
+        }
         let id = raw.to_ascii_uppercase();
         if found.as_ref().is_some_and(|prev| prev != &id) {
             return None; // ambiguous filename: never pick the first match
@@ -101,7 +109,10 @@ fn normalize_root(value: &str) -> PathBuf {
         return env::var_os("HOME").map(PathBuf::from).unwrap_or_default();
     }
     if let Some(rest) = value.strip_prefix("~/") {
-        return env::var_os("HOME").map(PathBuf::from).unwrap_or_default().join(rest);
+        return env::var_os("HOME")
+            .map(PathBuf::from)
+            .unwrap_or_default()
+            .join(rest);
     }
     PathBuf::from(value)
 }
@@ -121,7 +132,9 @@ fn configured_game_dirs(contents: &str) -> Vec<(PathBuf, bool)> {
         if !in_paths || line.starts_with(';') || line.starts_with('#') {
             continue;
         }
-        let Some((key, value)) = line.split_once('=') else { continue; };
+        let Some((key, value)) = line.split_once('=') else {
+            continue;
+        };
         let key = key.trim().replace('\\', "/");
         let value = value.trim();
         if key == "gameListRootDir" && value != "." {
@@ -131,8 +144,12 @@ fn configured_game_dirs(contents: &str) -> Vec<(PathBuf, bool)> {
         if fields.len() != 3 || fields[0] != "gamedirs" {
             continue;
         }
-        let Ok(index) = fields[1].parse::<usize>() else { continue; };
-        if index == 0 || index > 1000 { continue; }
+        let Ok(index) = fields[1].parse::<usize>() else {
+            continue;
+        };
+        if index == 0 || index > 1000 {
+            continue;
+        }
         let item = entries.entry(index).or_insert((None, false));
         match fields[2] {
             "path" => item.0 = Some(value.to_owned()),
@@ -143,16 +160,26 @@ fn configured_game_dirs(contents: &str) -> Vec<(PathBuf, bool)> {
     let mut result = Vec::new();
     let mut seen = BTreeSet::new();
     for (_index, (path, deep_scan)) in entries {
-        let Some(path) = path else { continue; };
-        if matches!(path.as_str(), "SDMC" | "SysNAND" | "UserNAND") { continue; }
-        if path.trim().is_empty() { continue; }
+        let Some(path) = path else {
+            continue;
+        };
+        if matches!(path.as_str(), "SDMC" | "SysNAND" | "UserNAND") {
+            continue;
+        }
+        if path.trim().is_empty() {
+            continue;
+        }
         let path = normalize_root(&path);
-        if seen.insert(path.clone()) { result.push((path, deep_scan)); }
+        if seen.insert(path.clone()) {
+            result.push((path, deep_scan));
+        }
     }
     if result.is_empty() {
         if let Some(path) = legacy {
             let path = normalize_root(&path);
-            if !path.as_os_str().is_empty() { result.push((path, false)); }
+            if !path.as_os_str().is_empty() {
+                result.push((path, false));
+            }
         }
     }
     result
@@ -169,30 +196,49 @@ fn game_suffix(path: &Path) -> Option<String> {
 
 /// Only filesystem directory entries are examined; game-file contents are never opened.
 /// Never follows symlinks, even when deep-scan is enabled.
-fn scan_root(root: &Path, deep: bool, out: &mut Vec<LibraryFile>, scanned: &mut usize) -> Result<(), ErrBox> {
+fn scan_root(
+    root: &Path,
+    deep: bool,
+    out: &mut Vec<LibraryFile>,
+    scanned: &mut usize,
+) -> Result<(), ErrBox> {
     let mut stack = vec![(root.to_path_buf(), 0usize)];
     while let Some((dir, depth)) = stack.pop() {
         let mut entries = fs::read_dir(&dir)?.collect::<std::io::Result<Vec<_>>>()?;
         entries.sort_by_key(|entry| entry.file_name());
         for entry in entries {
             *scanned += 1;
-            if *scanned > MAX_ENTRIES { return Err("Eden directory scan entry limit reached".into()); }
+            if *scanned > MAX_ENTRIES {
+                return Err("Eden directory scan entry limit reached".into());
+            }
             let kind = fs::symlink_metadata(entry.path())?.file_type();
-            if kind.is_symlink() { continue; }
+            if kind.is_symlink() {
+                continue;
+            }
             if kind.is_dir() {
                 if deep && depth < MAX_DEPTH {
                     stack.push((entry.path(), depth + 1));
                 }
                 continue;
             }
-            if !kind.is_file() { continue; }
-            let Some(file_type) = game_suffix(&entry.path()) else { continue; };
-            if out.len() >= MAX_FILES { return Err("Eden game-file count limit reached".into()); }
+            if !kind.is_file() {
+                continue;
+            }
+            let Some(file_type) = game_suffix(&entry.path()) else {
+                continue;
+            };
+            if out.len() >= MAX_FILES {
+                return Err("Eden game-file count limit reached".into());
+            }
             let filename = entry.file_name().to_string_lossy().into_owned();
             let id = title_id_in_filename(&filename);
             out.push(LibraryFile {
                 path: entry.path().to_string_lossy().into_owned(),
-                title_id_evidence: if id.is_some() { "filename_label_only" } else { "unresolved_no_rom_read" },
+                title_id_evidence: if id.is_some() {
+                    "filename_label_only"
+                } else {
+                    "unresolved_no_rom_read"
+                },
                 title_id: id,
                 file_type,
             });
@@ -204,21 +250,27 @@ fn scan_root(root: &Path, deep: bool, out: &mut Vec<LibraryFile>, scanned: &mut 
 fn exact_build_key(candidate_key: &str, id: &str) -> Option<String> {
     let prefix = format!("title-id-{}-build-", id.to_ascii_lowercase());
     let rest = candidate_key.strip_prefix(&prefix)?;
-    if rest.len() != 16 || !rest.bytes().all(|c| c.is_ascii_hexdigit()) { return None; }
+    if rest.len() != 16 || !rest.bytes().all(|c| c.is_ascii_hexdigit()) {
+        return None;
+    }
     Some(rest.to_ascii_uppercase())
 }
 
 fn archived_builds(index: &GameIndex, id: &str) -> Vec<BuildCandidate> {
-    let mut matches: Vec<_> = index.candidates.iter().filter_map(|candidate| {
-        Some(BuildCandidate {
-            build_id: exact_build_key(&candidate.key, id)?,
-            candidate_key: candidate.key.clone(),
-            source_ids: candidate.source_ids.clone(),
-            code_fields: candidate.code_fields,
-            installed_build_verified: false,
+    let mut matches: Vec<_> = index
+        .candidates
+        .iter()
+        .filter_map(|candidate| {
+            Some(BuildCandidate {
+                build_id: exact_build_key(&candidate.key, id)?,
+                candidate_key: candidate.key.clone(),
+                source_ids: candidate.source_ids.clone(),
+                code_fields: candidate.code_fields,
+                installed_build_verified: false,
+            })
         })
-    }).collect();
-    matches.sort_by(|a,b| (&a.build_id, &a.candidate_key).cmp(&(&b.build_id, &b.candidate_key)));
+        .collect();
+    matches.sort_by(|a, b| (&a.build_id, &a.candidate_key).cmp(&(&b.build_id, &b.candidate_key)));
     matches
 }
 
@@ -226,7 +278,10 @@ fn default_config() -> PathBuf {
     if let Some(xdg) = env::var_os("XDG_CONFIG_HOME") {
         return PathBuf::from(xdg).join("eden/qt-config.ini");
     }
-    env::var_os("HOME").map(PathBuf::from).unwrap_or_default().join(".config/eden/qt-config.ini")
+    env::var_os("HOME")
+        .map(PathBuf::from)
+        .unwrap_or_default()
+        .join(".config/eden/qt-config.ini")
 }
 
 fn run() -> Result<(), ErrBox> {
@@ -239,10 +294,18 @@ fn run() -> Result<(), ErrBox> {
         match arg.as_str() {
             "--db" => db = PathBuf::from(args.next().ok_or("--db requires a path")?),
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
-            "--game-dir" => extra_roots.push((PathBuf::from(args.next().ok_or("--game-dir requires a path")?), false)),
+            "--game-dir" => extra_roots.push((
+                PathBuf::from(args.next().ok_or("--game-dir requires a path")?),
+                false,
+            )),
             "--title-id" => {
-                let id = args.next().ok_or("--title-id requires a 16-digit hexadecimal ID")?.to_ascii_uppercase();
-                if !is_title_id(&id) { return Err(format!("Invalid Switch title ID: {id}").into()); }
+                let id = args
+                    .next()
+                    .ok_or("--title-id requires a 16-digit hexadecimal ID")?
+                    .to_ascii_uppercase();
+                if !is_title_id(&id) {
+                    return Err(format!("Invalid Switch title ID: {id}").into());
+                }
                 explicit_ids.insert(id);
             }
             "--json" => {}
@@ -278,15 +341,21 @@ fn run() -> Result<(), ErrBox> {
     };
     let mut roots = if report.config_found {
         configured_game_dirs(&fs::read_to_string(&config)?)
-    } else { Vec::new() };
+    } else {
+        Vec::new()
+    };
     if !report.config_found {
-        report.warnings.push("eden_qt_config_not_found: supply --config for portable/custom installations".into());
+        report.warnings.push(
+            "eden_qt_config_not_found: supply --config for portable/custom installations".into(),
+        );
     }
     roots.extend(extra_roots);
     let mut seen_roots = BTreeSet::new();
     let mut scanned = 0usize;
     for (root, deep_scan) in roots {
-        if !seen_roots.insert(root.clone()) { continue; }
+        if !seen_roots.insert(root.clone()) {
+            continue;
+        }
         let kind = fs::symlink_metadata(&root).map(|m| m.file_type());
         let status = match kind {
             Ok(kind) if kind.is_dir() && !kind.is_symlink() => "scanned",
@@ -295,24 +364,47 @@ fn run() -> Result<(), ErrBox> {
         };
         if status == "scanned" {
             if let Err(e) = scan_root(&root, deep_scan, &mut report.game_files, &mut scanned) {
-                report.warnings.push(format!("directory_scan_incomplete: {}: {e}", root.display()));
+                report.warnings.push(format!(
+                    "directory_scan_incomplete: {}: {e}",
+                    root.display()
+                ));
             }
         } else {
-            report.warnings.push(format!("game_directory_{status}: {}", root.display()));
+            report
+                .warnings
+                .push(format!("game_directory_{status}: {}", root.display()));
         }
-        report.game_roots.push(GameRoot { path: root.to_string_lossy().into_owned(), deep_scan, status });
+        report.game_roots.push(GameRoot {
+            path: root.to_string_lossy().into_owned(),
+            deep_scan,
+            status,
+        });
     }
-    report.game_files.sort_by(|a,b| a.path.cmp(&b.path));
-    report.unresolved_game_files = report.game_files.iter().filter(|item| item.title_id.is_none()).count();
+    report.game_files.sort_by(|a, b| a.path.cmp(&b.path));
+    report.unresolved_game_files = report
+        .game_files
+        .iter()
+        .filter(|item| item.title_id.is_none())
+        .count();
     let mut ids = explicit_ids.clone();
     for item in &report.game_files {
-        if let Some(id) = &item.title_id { ids.insert(id.clone()); }
+        if let Some(id) = &item.title_id {
+            ids.insert(id.clone());
+        }
     }
     for id in ids {
         let refs = external::search(&db, &id, Some("switch"), None, 0, 100)?;
-        let sources = refs.results.iter().map(|r| r.source_id.clone()).collect::<BTreeSet<_>>();
+        let sources = refs
+            .results
+            .iter()
+            .map(|r| r.source_id.clone())
+            .collect::<BTreeSet<_>>();
         report.title_id_matches.push(CheatMatch {
-            origin: if explicit_ids.contains(&id) { "explicit_lookup_or_filename" } else { "filename_only" },
+            origin: if explicit_ids.contains(&id) {
+                "explicit_lookup_or_filename"
+            } else {
+                "filename_only"
+            },
             archived_build_candidates: archived_builds(&index, &id),
             title_id: id,
             external_reference_total: refs.total,
@@ -342,13 +434,25 @@ mod tests {
     fn parses_qt_array_and_respects_deep_scan_and_pseudodirs() {
         let ini = "[General]\ngamedirs\\1\\path=/ignore\n[Paths]\ngamedirs\\size=4\ngamedirs\\1\\path=/switch/games\ngamedirs\\1\\deep_scan=true\ngamedirs\\2\\path=SDMC\ngamedirs\\3\\path=/switch/other\ngamedirs\\4\\path=/switch/games\n";
         let dirs = configured_game_dirs(ini);
-        assert_eq!(dirs, vec![(PathBuf::from("/switch/games"), true), (PathBuf::from("/switch/other"), false)]);
+        assert_eq!(
+            dirs,
+            vec![
+                (PathBuf::from("/switch/games"), true),
+                (PathBuf::from("/switch/other"), false)
+            ]
+        );
     }
 
     #[test]
     fn only_accepts_unique_complete_id_tokens() {
-        assert_eq!(title_id_in_filename("The Legend [01006bb00c6f0000].nsp").as_deref(), Some("01006BB00C6F0000"));
-        assert_eq!(title_id_in_filename("Game_0100000000010000.xci").as_deref(), Some("0100000000010000"));
+        assert_eq!(
+            title_id_in_filename("The Legend [01006bb00c6f0000].nsp").as_deref(),
+            Some("01006BB00C6F0000")
+        );
+        assert_eq!(
+            title_id_in_filename("Game_0100000000010000.xci").as_deref(),
+            Some("0100000000010000")
+        );
         assert!(title_id_in_filename("01000000000100001.xci").is_none());
         assert!(title_id_in_filename("Title with no ID.nsp").is_none());
         assert!(title_id_in_filename("0100000000010000 and 01006BB00C6F0000.nsp").is_none());
@@ -357,9 +461,22 @@ mod tests {
 
     #[test]
     fn matches_only_exact_build_candidate_key() {
-        assert_eq!(exact_build_key("title-id-0100000000010000-build-b424be150a8e7d78", "0100000000010000").as_deref(), Some("B424BE150A8E7D78"));
-        assert!(exact_build_key("title-id-0100152000022000-build-b424be150a8e7d78", "0100000000010000").is_none());
-        assert!(exact_build_key("title-id-0100000000010000-build-short", "0100000000010000").is_none());
+        assert_eq!(
+            exact_build_key(
+                "title-id-0100000000010000-build-b424be150a8e7d78",
+                "0100000000010000"
+            )
+            .as_deref(),
+            Some("B424BE150A8E7D78")
+        );
+        assert!(exact_build_key(
+            "title-id-0100152000022000-build-b424be150a8e7d78",
+            "0100000000010000"
+        )
+        .is_none());
+        assert!(
+            exact_build_key("title-id-0100000000010000-build-short", "0100000000010000").is_none()
+        );
     }
 
     #[test]
