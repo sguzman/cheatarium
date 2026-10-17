@@ -362,12 +362,19 @@ fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
         // A pv.txt is only a filename witness: its contents are patch/version
         // presentation text, NOT the game's name or executable Build ID.
         if !appname {
-            matches.entry(id.clone()).or_insert(CachedTitle {
-                title_id: id,
-                title_name: None,
-                evidence: "eden_game_list_cache_pv_filename",
-                installed_game_verified: false,
-            });
+            match matches.entry(id.clone()) {
+                std::collections::btree_map::Entry::Vacant(v) => {
+                    v.insert(CachedTitle {
+                        title_id: id,
+                        title_name: None,
+                        evidence: "eden_game_list_cache_pv_filename",
+                        installed_game_verified: false,
+                    });
+                }
+                std::collections::btree_map::Entry::Occupied(mut o) => {
+                    o.get_mut().evidence = "eden_game_list_cache_appname_and_pv";
+                }
+            }
             continue;
         }
         let read_title = (|| -> std::io::Result<Option<String>> {
