@@ -1,14 +1,19 @@
-//! Native Switch -> Eden per-cheat add-on planning; absolutely no filesystem writes.
-//! Planned destinations and indexed source bytes are advisory, not installed-Build-ID evidence.
+//! Native Switch -> Eden per-cheat add-on planning and isolated staging.
+//! Preview is read-only; explicit staging creates a new directory outside Eden.
+//! Indexed source bytes are advisory, not installed-Build-ID evidence.
 use cheatarium_client::{load_platform, verify_platform_distribution, Bundle, IndexedFile};
 use serde::Serialize;
 use sha2::{Digest, Sha256};
 use std::env;
 use std::error::Error;
+use std::fs::{self, File, OpenOptions};
+use std::io::Write;
+use std::collections::BTreeSet;
 use std::path::{Path, PathBuf};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
 const MAX_PLANNED: usize = 2_000;
+const MAX_STAGED_TOTAL_BYTES: usize = 10 * 1024 * 1024;
 
 #[derive(Debug, Serialize)]
 struct PlannedCheat {
@@ -237,9 +242,201 @@ fn preview(bundle: &Bundle, title: &str, build: &str, mod_root: &Path) -> Result
     })
 }
 
+
+#[derive(Debug, Serialize)]
+struct StagedFile {
+    source_record_id: String,
+    source_ordinal: usize,
+    relative_path: String,
+    sha256: String,
+}
+
+#[derive(Debug, Serialize)]
+struct StagingReport {
+    schema_version: u32,
+    format: &'static str,
+    stage_root: String,
+    title_id: String,
+    explicitly_selected_build_id: String,
+    staged_count: usize,
+    staged_files: Vec<StagedFile>,
+    staged_manifest: &'static str,
+    staging_directory_created: bool,
+    emulator_files_written: u32,
+    activation_state_written: bool,
+    installed_build_id_verified: bool,
+    installation_allowed: bool,
+    all_output_is_outside_eden: bool,
+    warning: &'static str,
+}
+
+/// Fail closed if any existing ancestor uses a symlink: an explicit staging
+/// request must never traverse a redirect into the emulator's live directory.
+fn safe_staging_destination(path: &Path, mods_root: &Path) -> Result<(), ErrBox> {
+    if !path.is_absolute() || path.parent().is_none() {
+        return Err("Staging destination must be an absolute, new, non-root directory".into());
+    }
+    if path.components().any(|c| c.as_os_str().to_string_lossy().eq_ignore_ascii_case("eden")) {
+        return Err("Refusing to stage inside an Eden-named directory".into());
+    }
+    let mut parent = path.parent().ok_or("Missing staging parent")?;
+    if parent == Path::new("/") {
+        return Err("Refusing to create a new directory directly at filesystem root".into());
+    }
+    // Only accept an already existing direct parent; avoids implicit mkdir -p
+    // crossing unsupported links or unexpectedly creating a hierarchy.
+    while !parent.as_os_str().is_empty() {
+        let meta = fs::symlink_metadata(parent)?;
+        if meta.file_type().is_symlink() {
+            return Err("Staging parent path contains a symbolic link".into());
+        }
+        if !meta.is_dir() {
+            return Err("Staging parent path is not a directory".into());
+        }
+        let Some(next) = parent.parent() else { break };
+        parent = next;
+    }
+    if fs::symlink_metadata(path).is_ok() {
+        return Err("Staging destination already exists: refusing to reuse or overwrite".into());
+    }
+    let canonical_parent = path.parent().ok_or("Missing staging parent")?.canonicalize()?;
+    let canonical_candidate = canonical_parent.join(path.file_name().ok_or("Missing staging name")?);
+    for banned in [
+        mods_root.to_path_buf(),
+        default_mod_root(),
+        env::var_os("XDG_CONFIG_HOME").map(PathBuf::from)
+            .or_else(|| env::var_os("HOME").map(|x| PathBuf::from(x).join(".config")))
+            .unwrap_or_default().join("eden"),
+        env::var_os("XDG_CACHE_HOME").map(PathBuf::from)
+            .or_else(|| env::var_os("HOME").map(|x| PathBuf::from(x).join(".cache")))
+            .unwrap_or_default().join("eden"),
+    ] {
+        if banned.is_absolute() && canonical_candidate.starts_with(&banned) {
+            return Err("Refusing staging within Eden's live data/config/cache/mod directory".into());
+        }
+    }
+    Ok(())
+}
+
+fn write_new(path: &Path, contents: &[u8]) -> Result<(), ErrBox> {
+    let mut file = OpenOptions::new().write(true).create_new(true).open(path)?;
+    file.write_all(contents)?;
+    file.sync_all()?;
+    Ok(())
+}
+
+/// Explicitly staged output remains non-installed and is never linked into
+/// Eden's mod tree. Source code must pass the same checks as its preview.
+fn stage(
+    bundle: &Bundle,
+    selection: &Preview,
+    stage_root: &Path,
+    mods_root: &Path,
+) -> Result<StagingReport, ErrBox> {
+    safe_staging_destination(stage_root, mods_root)?;
+    if selection.proposed_addons.is_empty() || !selection.exact_archived_build_candidate_found {
+        return Err("Nothing to stage: no exact archived Title ID + Build ID match".into());
+    }
+    if !selection.rejected_entries.is_empty() {
+        return Err("Staging blocked: original source has rejected sections".into());
+    }
+    if selection.proposed_addons.iter().any(|a|
+        a.syntax_check != "lexical_hex_tokens_only_not_execution_validated"
+    ) {
+        return Err("Staging blocked: unknown native source syntax requires review".into());
+    }
+
+    let title = selection.title_id.as_str();
+    let build = selection.explicitly_selected_build_id.as_str();
+    let sources = select(bundle, title, build);
+    let mut prepared = Vec::<(StagedFile, Vec<u8>)>::new();
+    let mut planned_paths = BTreeSet::new();
+    let mut total_bytes = 0usize;
+    for source in sources {
+        for entry in &source.codes {
+            if entry.role.as_deref() != Some("code") || !entry.is_code() { continue; }
+            let Some(text) = render(
+                entry.description.as_deref().unwrap_or(""),
+                entry.code.as_deref().unwrap_or(""),
+            ) else {
+                return Err("Staging blocked: unrenderable native cheat".into());
+            };
+            if !ascii_opcode_lines(entry.code.as_deref().unwrap_or("")) {
+                return Err("Staging blocked: unsupported native cheat opcode shape".into());
+            }
+            let code = selection.proposed_addons.iter().find(|item|
+                item.source_record_id == source.id && item.source_ordinal == entry.ordinal
+            ).ok_or("Staging mismatch with preview source identity")?;
+            let relative = Path::new(&code.proposed_mod_path)
+                .strip_prefix(mods_root)
+                .map_err(|_| "Planned target does not belong to selected mods root")?;
+            if relative.is_absolute()
+                || relative.components().any(|c| !matches!(c, std::path::Component::Normal(_)))
+                || relative.components().count() != 4
+            {
+                return Err("Invalid planned relative cheat path".into());
+            }
+            let rel_text = relative.to_string_lossy().replace('\\', "/");
+            if !planned_paths.insert(rel_text.clone()) {
+                return Err("Duplicate staged cheat path".into());
+            }
+            if format!("{:x}", Sha256::digest(text.as_bytes())) != code.rendered_file_sha256 {
+                return Err("Staging checksum does not match preview".into());
+            }
+            total_bytes = total_bytes.checked_add(text.len()).ok_or("Staging size overflow")?;
+            if total_bytes > MAX_STAGED_TOTAL_BYTES {
+                return Err("Staging size limit exceeded".into());
+            }
+            prepared.push((StagedFile {
+                source_record_id: source.id.clone(),
+                source_ordinal: entry.ordinal,
+                relative_path: rel_text,
+                sha256: code.rendered_file_sha256.clone(),
+            }, text.into_bytes()));
+        }
+    }
+    if prepared.len() != selection.proposed_addons.len() {
+        return Err("Staging count mismatches the preview".into());
+    }
+    // All checks above happen BEFORE the first filesystem mutation.
+    fs::create_dir(stage_root)?; // no overwrite, no reuse
+    let title_dir = stage_root.join(title);
+    fs::create_dir(&title_dir)?;
+    for (entry, bytes) in &prepared {
+        let rel = Path::new(&entry.relative_path);
+        let mod_dir = title_dir.join(rel.components().nth(1).ok_or("No addon name")?.as_os_str());
+        fs::create_dir(&mod_dir)?;
+        let cheats_dir = mod_dir.join("cheats");
+        fs::create_dir(&cheats_dir)?;
+        let target = stage_root.join(rel);
+        write_new(&target, bytes)?;
+    }
+    let report = StagingReport {
+        schema_version: 1,
+        format: "cheatarium-eden-isolated-staging-v1",
+        stage_root: stage_root.to_string_lossy().into_owned(),
+        title_id: title.to_owned(),
+        explicitly_selected_build_id: build.to_owned(),
+        staged_count: prepared.len(),
+        staged_files: prepared.into_iter().map(|(file, _)| file).collect(),
+        staged_manifest: "cheatarium-staging-manifest.json",
+        staging_directory_created: true,
+        emulator_files_written: 0,
+        activation_state_written: false,
+        installed_build_id_verified: false,
+        installation_allowed: false,
+        all_output_is_outside_eden: true,
+        warning: "This is an isolated, non-installed export. Do not copy these cheats into Eden before exact installed Build ID verification and explicit disabled-by-default handling.",
+    };
+    let manifest = serde_json::to_vec_pretty(&report)?;
+    write_new(&stage_root.join(report.staged_manifest), &manifest)?;
+    Ok(report)
+}
+
 fn run() -> Result<(), ErrBox> {
     let mut db = PathBuf::from("generated/v1");
     let mut mod_root = default_mod_root();
+    let mut stage_dir = None;
     let mut title = None;
     let mut build = None;
     let mut args = env::args().skip(1);
@@ -248,6 +445,9 @@ fn run() -> Result<(), ErrBox> {
             "--db" => db = PathBuf::from(args.next().ok_or("--db requires a path")?),
             "--mods-root" => {
                 mod_root = PathBuf::from(args.next().ok_or("--mods-root requires a path")?)
+            }
+            "--stage-dir" => {
+                stage_dir = Some(PathBuf::from(args.next().ok_or("--stage-dir requires an absolute path")?))
             }
             "--title-id" => {
                 title = Some(
@@ -265,7 +465,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Read-only Eden per-cheat addon preview:\n  cheatarium-eden-plan --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 [--mods-root /absolute/eden/load] [--json]\nDoes not install, alter, activate, or verify installed games.");
+                println!("Eden per-cheat addon preview (default read-only), optional isolated staging:\n  cheatarium-eden-plan --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 [--mods-root /absolute/eden/load] [--stage-dir /absolute/new/staging-folder] [--json]\n--stage-dir creates only the named new folder outside Eden; never installs, activates, or verifies installed games.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -280,7 +480,12 @@ fn run() -> Result<(), ErrBox> {
     verify_platform_distribution(&db, "switch")?;
     let bundle = load_platform(&db, "switch")?;
     let output = preview(&bundle, &title, &build, &mod_root)?;
-    println!("{}", serde_json::to_string_pretty(&output)?);
+    if let Some(stage_dir) = stage_dir {
+        let staged = stage(&bundle, &output, &stage_dir, &mod_root)?;
+        println!("{}", serde_json::to_string_pretty(&staged)?);
+    } else {
+        println!("{}", serde_json::to_string_pretty(&output)?);
+    }
     Ok(())
 }
 
@@ -363,6 +568,55 @@ mod tests {
         .unwrap();
         assert!(!out.exact_archived_build_candidate_found);
         assert!(out.proposed_addons.is_empty());
+    }
+
+
+    #[test]
+    fn stages_once_only_outside_eden_and_never_overwrites() {
+        let db = fixture();
+        let root = env::temp_dir().join(format!(
+            "cheatarium-stage-test-{}-{:?}",
+            std::process::id(), std::thread::current().id()
+        ));
+        let selection = preview(
+            &db, "0100000000010000", "B424BE150A8E7D78",
+            Path::new("/tmp/eden/load")
+        ).unwrap();
+        // Fixture has an unsafe heading: all-or-nothing stage refuses without
+        // even creating a destination folder.
+        assert!(stage(&db, &selection, &root, Path::new("/tmp/eden/load")).is_err());
+        assert!(!root.exists());
+        let mut clean = db;
+        clean.records[0].codes.retain(|code| code.ordinal == 0);
+        let selection = preview(
+            &clean, "0100000000010000", "B424BE150A8E7D78",
+            Path::new("/tmp/eden/load")
+        ).unwrap();
+        let staged = stage(&clean, &selection, &root, Path::new("/tmp/eden/load")).unwrap();
+        assert_eq!(staged.staged_count, 1);
+        assert_eq!(staged.emulator_files_written, 0);
+        assert!(!staged.installation_allowed);
+        let output = root.join(&staged.staged_files[0].relative_path);
+        assert!(output.is_file());
+        assert_eq!(
+            format!("{:x}", Sha256::digest(fs::read(output).unwrap())),
+            staged.staged_files[0].sha256
+        );
+        assert!(root.join("cheatarium-staging-manifest.json").is_file());
+        assert!(stage(&clean, &selection, &root, Path::new("/tmp/eden/load")).is_err());
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn stage_rejects_live_eden_tree_and_nonexistent_parent() {
+        assert!(safe_staging_destination(
+            Path::new("/tmp/eden/load/cheatarium-stage"),
+            Path::new("/tmp/eden/load")
+        ).is_err());
+        assert!(safe_staging_destination(
+            Path::new("/tmp/absent-parent-f73ab928/stage"),
+            Path::new("/tmp/eden/load")
+        ).is_err());
     }
 
     #[test]
