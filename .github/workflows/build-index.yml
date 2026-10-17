@@ -956,6 +956,44 @@ jobs:
           print("Eden discovery is read-only; 4/5 archived titles and Skyward Sword external references confirmed.")
           PY
           rm "$report"
+      - name: Reproduce real Eden Qt UI namespace and patch-only Title ID cache
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          mkdir -p "$fixture/game_list" "$fixture/roms"
+          printf '[UI]\nPaths\\gamedirs\\size=4\nPaths\\gamedirs\\1\\path=SDMC\nPaths\\gamedirs\\2\\path=UserNAND\nPaths\\gamedirs\\3\\path=SysNAND\nPaths\\gamedirs\\4\\path=%s\nPaths\\gamedirs\\4\\deep_scan\\default=false\nPaths\\gamedirs\\4\\deep_scan=true\nUIGameList\\cache_game_list=true\n' "$fixture/roms" > "$fixture/qt-config.ini"
+          printf 'fixture' > "$fixture/roms/Unknown Game.nsp"
+          for title in \
+            01006BB00C6F0000 \
+            0100000000010000 \
+            0100152000022000 \
+            01002DA013484000 \
+            01006A800016E000; do
+            touch "$fixture/game_list/$title.pv.txt"
+          done
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
+            --db generated/v1 \
+            --config "$fixture/qt-config.ini" \
+            --cache-dir "$fixture/game_list" \
+            --json > "$fixture/report.json"
+          python3 - "$fixture/report.json" "$fixture/roms" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          data = json.loads(Path(sys.argv[1]).read_text())
+          assert data["read_only"] and data["game_file_bytes_read"] == 0
+          assert data["emulator_files_written"] == 0
+          assert data["game_roots"] == [{"path": sys.argv[2], "deep_scan": True, "status": "scanned"}]
+          assert len(data["game_files"]) == 1 and data["unresolved_game_files"] == 1
+          assert len(data["cached_titles"]) == 5
+          assert all(g["installed_game_verified"] is False for g in data["cached_titles"])
+          assert all(g["title_name"] is None for g in data["cached_titles"])
+          assert all(g["evidence"] == "eden_game_list_cache_pv_filename" for g in data["cached_titles"])
+          assert len(data["title_id_matches"]) == 5
+          assert all(m["origin"] == "eden_cache_only_unverified_installed" for m in data["title_id_matches"])
+          print("Eden real-layout regression: correct game root, 5 cached IDs, zero emulator writes.")
+          PY
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
