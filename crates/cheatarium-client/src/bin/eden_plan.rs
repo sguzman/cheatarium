@@ -4,11 +4,11 @@
 use cheatarium_client::{load_platform, verify_platform_distribution, Bundle, IndexedFile};
 use serde::Serialize;
 use sha2::{Digest, Sha256};
+use std::collections::BTreeSet;
 use std::env;
 use std::error::Error;
 use std::fs::{self, File, OpenOptions};
 use std::io::Write;
-use std::collections::BTreeSet;
 use std::path::{Path, PathBuf};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
@@ -242,7 +242,6 @@ fn preview(bundle: &Bundle, title: &str, build: &str, mod_root: &Path) -> Result
     })
 }
 
-
 #[derive(Debug, Serialize)]
 struct StagedFile {
     source_record_id: String,
@@ -276,7 +275,10 @@ fn safe_staging_destination(path: &Path, mods_root: &Path) -> Result<(), ErrBox>
     if !path.is_absolute() || path.parent().is_none() {
         return Err("Staging destination must be an absolute, new, non-root directory".into());
     }
-    if path.components().any(|c| c.as_os_str().to_string_lossy().eq_ignore_ascii_case("eden")) {
+    if path
+        .components()
+        .any(|c| c.as_os_str().to_string_lossy().eq_ignore_ascii_case("eden"))
+    {
         return Err("Refusing to stage inside an Eden-named directory".into());
     }
     let mut parent = path.parent().ok_or("Missing staging parent")?;
@@ -299,20 +301,30 @@ fn safe_staging_destination(path: &Path, mods_root: &Path) -> Result<(), ErrBox>
     if fs::symlink_metadata(path).is_ok() {
         return Err("Staging destination already exists: refusing to reuse or overwrite".into());
     }
-    let canonical_parent = path.parent().ok_or("Missing staging parent")?.canonicalize()?;
-    let canonical_candidate = canonical_parent.join(path.file_name().ok_or("Missing staging name")?);
+    let canonical_parent = path
+        .parent()
+        .ok_or("Missing staging parent")?
+        .canonicalize()?;
+    let canonical_candidate =
+        canonical_parent.join(path.file_name().ok_or("Missing staging name")?);
     for banned in [
         mods_root.to_path_buf(),
         default_mod_root(),
-        env::var_os("XDG_CONFIG_HOME").map(PathBuf::from)
+        env::var_os("XDG_CONFIG_HOME")
+            .map(PathBuf::from)
             .or_else(|| env::var_os("HOME").map(|x| PathBuf::from(x).join(".config")))
-            .unwrap_or_default().join("eden"),
-        env::var_os("XDG_CACHE_HOME").map(PathBuf::from)
+            .unwrap_or_default()
+            .join("eden"),
+        env::var_os("XDG_CACHE_HOME")
+            .map(PathBuf::from)
             .or_else(|| env::var_os("HOME").map(|x| PathBuf::from(x).join(".cache")))
-            .unwrap_or_default().join("eden"),
+            .unwrap_or_default()
+            .join("eden"),
     ] {
         if banned.is_absolute() && canonical_candidate.starts_with(&banned) {
-            return Err("Refusing staging within Eden's live data/config/cache/mod directory".into());
+            return Err(
+                "Refusing staging within Eden's live data/config/cache/mod directory".into(),
+            );
         }
     }
     Ok(())
@@ -340,9 +352,11 @@ fn stage(
     if !selection.rejected_entries.is_empty() {
         return Err("Staging blocked: original source has rejected sections".into());
     }
-    if selection.proposed_addons.iter().any(|a|
-        a.syntax_check != "lexical_hex_tokens_only_not_execution_validated"
-    ) {
+    if selection
+        .proposed_addons
+        .iter()
+        .any(|a| a.syntax_check != "lexical_hex_tokens_only_not_execution_validated")
+    {
         return Err("Staging blocked: unknown native source syntax requires review".into());
     }
 
@@ -354,7 +368,9 @@ fn stage(
     let mut total_bytes = 0usize;
     for source in sources {
         for entry in &source.codes {
-            if entry.role.as_deref() != Some("code") || !entry.is_code() { continue; }
+            if entry.role.as_deref() != Some("code") || !entry.is_code() {
+                continue;
+            }
             let Some(text) = render(
                 entry.description.as_deref().unwrap_or(""),
                 entry.code.as_deref().unwrap_or(""),
@@ -364,14 +380,20 @@ fn stage(
             if !ascii_opcode_lines(entry.code.as_deref().unwrap_or("")) {
                 return Err("Staging blocked: unsupported native cheat opcode shape".into());
             }
-            let code = selection.proposed_addons.iter().find(|item|
-                item.source_record_id == source.id && item.source_ordinal == entry.ordinal
-            ).ok_or("Staging mismatch with preview source identity")?;
+            let code = selection
+                .proposed_addons
+                .iter()
+                .find(|item| {
+                    item.source_record_id == source.id && item.source_ordinal == entry.ordinal
+                })
+                .ok_or("Staging mismatch with preview source identity")?;
             let relative = Path::new(&code.proposed_mod_path)
                 .strip_prefix(mods_root)
                 .map_err(|_| "Planned target does not belong to selected mods root")?;
             if relative.is_absolute()
-                || relative.components().any(|c| !matches!(c, std::path::Component::Normal(_)))
+                || relative
+                    .components()
+                    .any(|c| !matches!(c, std::path::Component::Normal(_)))
                 || relative.components().count() != 4
             {
                 return Err("Invalid planned relative cheat path".into());
@@ -383,16 +405,21 @@ fn stage(
             if format!("{:x}", Sha256::digest(text.as_bytes())) != code.rendered_file_sha256 {
                 return Err("Staging checksum does not match preview".into());
             }
-            total_bytes = total_bytes.checked_add(text.len()).ok_or("Staging size overflow")?;
+            total_bytes = total_bytes
+                .checked_add(text.len())
+                .ok_or("Staging size overflow")?;
             if total_bytes > MAX_STAGED_TOTAL_BYTES {
                 return Err("Staging size limit exceeded".into());
             }
-            prepared.push((StagedFile {
-                source_record_id: source.id.clone(),
-                source_ordinal: entry.ordinal,
-                relative_path: rel_text,
-                sha256: code.rendered_file_sha256.clone(),
-            }, text.into_bytes()));
+            prepared.push((
+                StagedFile {
+                    source_record_id: source.id.clone(),
+                    source_ordinal: entry.ordinal,
+                    relative_path: rel_text,
+                    sha256: code.rendered_file_sha256.clone(),
+                },
+                text.into_bytes(),
+            ));
         }
     }
     if prepared.len() != selection.proposed_addons.len() {
@@ -447,7 +474,9 @@ fn run() -> Result<(), ErrBox> {
                 mod_root = PathBuf::from(args.next().ok_or("--mods-root requires a path")?)
             }
             "--stage-dir" => {
-                stage_dir = Some(PathBuf::from(args.next().ok_or("--stage-dir requires an absolute path")?))
+                stage_dir = Some(PathBuf::from(
+                    args.next().ok_or("--stage-dir requires an absolute path")?,
+                ))
             }
             "--title-id" => {
                 title = Some(
@@ -570,18 +599,21 @@ mod tests {
         assert!(out.proposed_addons.is_empty());
     }
 
-
     #[test]
     fn stages_once_only_outside_eden_and_never_overwrites() {
         let db = fixture();
         let root = env::temp_dir().join(format!(
             "cheatarium-stage-test-{}-{:?}",
-            std::process::id(), std::thread::current().id()
+            std::process::id(),
+            std::thread::current().id()
         ));
         let selection = preview(
-            &db, "0100000000010000", "B424BE150A8E7D78",
-            Path::new("/tmp/eden/load")
-        ).unwrap();
+            &db,
+            "0100000000010000",
+            "B424BE150A8E7D78",
+            Path::new("/tmp/eden/load"),
+        )
+        .unwrap();
         // Fixture has an unsafe heading: all-or-nothing stage refuses without
         // even creating a destination folder.
         assert!(stage(&db, &selection, &root, Path::new("/tmp/eden/load")).is_err());
@@ -589,9 +621,12 @@ mod tests {
         let mut clean = db;
         clean.records[0].codes.retain(|code| code.ordinal == 0);
         let selection = preview(
-            &clean, "0100000000010000", "B424BE150A8E7D78",
-            Path::new("/tmp/eden/load")
-        ).unwrap();
+            &clean,
+            "0100000000010000",
+            "B424BE150A8E7D78",
+            Path::new("/tmp/eden/load"),
+        )
+        .unwrap();
         let staged = stage(&clean, &selection, &root, Path::new("/tmp/eden/load")).unwrap();
         assert_eq!(staged.staged_count, 1);
         assert_eq!(staged.emulator_files_written, 0);
@@ -612,11 +647,13 @@ mod tests {
         assert!(safe_staging_destination(
             Path::new("/tmp/eden/load/cheatarium-stage"),
             Path::new("/tmp/eden/load")
-        ).is_err());
+        )
+        .is_err());
         assert!(safe_staging_destination(
             Path::new("/tmp/absent-parent-f73ab928/stage"),
             Path::new("/tmp/eden/load")
-        ).is_err());
+        )
+        .is_err());
     }
 
     #[test]
