@@ -1087,6 +1087,42 @@ jobs:
             echo "ERROR: unsafe staging into emulator mod directory accepted"
             exit 1
           fi
+      - name: Check Eden log-derived main Build IDs without modifying games
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          cat > "$fixture/eden_log.txt" <<'LOG'
+          [  1.00] Core <Info> core/core.cpp:Load:351: Loading Super Mario Odyssey (0100000000010000) ...
+          [  1.10] Loader <Info> core/file_sys/patch_manager.cpp:475: Querying NSO patch existence for build_id=B424BE150A8E7D780000000000000000, name=main
+          [  1.11] Loader <Info> core/file_sys/patch_manager.cpp:475: Querying NSO patch existence for build_id=F5DCCDDB37E977240000000000000000, name=subsdk0
+          [  1.12] Frontend <Info> main_window.cpp:2042: Booting game: 0100000000010000 | Super Mario Odyssey | 1.0
+          [  3.00] Core <Info> core/core.cpp:Load:351: Loading Mario Kart 8 Deluxe (0100152000022000) ...
+          [  3.10] Loader <Info> core/file_sys/patch_manager.cpp:475: Querying NSO patch existence for build_id=96DFD1769E560C270000000000000000, name=main
+          LOG
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-builds -- \
+            --db generated/v1 --log "$fixture/eden_log.txt" --json > "$fixture/result.json"
+          python3 - "$fixture/result.json" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          x = json.loads(Path(sys.argv[1]).read_text())
+          assert x["read_only"] is True
+          assert x["emulator_files_written"] == 0 and x["game_file_bytes_read"] == 0
+          assert not x["installation_allowed"]
+          assert x["main_builds_without_launch_context"] == 0
+          found = {(w["title_id"], w["main_build_id"]): w for w in x["historical_main_build_observations"]}
+          assert len(found) == 2
+          for title, build in [
+              ("0100000000010000", "B424BE150A8E7D78"),
+              ("0100152000022000", "96DFD1769E560C27"),
+          ]:
+              record = found[(title, build)]
+              assert record["archived_build_candidate_found"]
+              assert not record["current_installed_build_verified"]
+              assert not record["compatible_cheats_verified"]
+          print("Historical main NSO build evidence found for both games, no installation claimed.")
+          PY
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
