@@ -91,10 +91,15 @@ fn loading_title(line: &str) -> Option<String> {
 }
 
 fn main_nso_build(line: &str) -> Option<(String, usize)> {
-    let suffix = line.split_once("Querying NSO patch existence for build_id=")?.1;
+    let suffix = line
+        .split_once("Querying NSO patch existence for build_id=")?
+        .1;
     let (raw, name) = suffix.split_once(", name=")?;
-    if name.trim() != "main" || raw.len() < 16 || raw.len() > 64
-        || raw.len() % 2 != 0 || !raw.bytes().all(|b| b.is_ascii_hexdigit())
+    if name.trim() != "main"
+        || raw.len() < 16
+        || raw.len() > 64
+        || raw.len() % 2 != 0
+        || !raw.bytes().all(|b| b.is_ascii_hexdigit())
     {
         return None;
     }
@@ -109,8 +114,8 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
     for (line_index, line) in log.lines().enumerate() {
         let newly_loading = loading_title(line);
         let is_new_launch = newly_loading.is_some();
-        let announced = title_after(line, "Booting game: ")
-            .or_else(|| title_after(line, "Now running: "));
+        let announced =
+            title_after(line, "Booting game: ").or_else(|| title_after(line, "Now running: "));
         if let Some(id) = newly_loading.or(announced) {
             // Core Loading marks an explicit new launch even for the same title.
             if is_new_launch || active.as_ref().is_none_or(|(title, _, _)| title != &id) {
@@ -207,17 +212,22 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
     report.main_builds_without_launch_context = parsed.orphan_main_builds;
     let mut titles = BTreeMap::<String, BTreeSet<String>>::new();
     for w in parsed.witness {
-        titles.entry(w.title_id.clone()).or_default().insert(w.build_id.clone());
-        report.historical_main_build_observations.push(ObservedBuild {
-            archived_build_candidate_found: archived_match(index, &w.title_id, &w.build_id),
-            title_id: w.title_id,
-            main_build_id: w.build_id,
-            original_build_hex_length: w.original_length,
-            launch_context_ordinal: w.launch_ordinal,
-            evidence: "same_log_launch_context_and_main_nso_patch_query",
-            current_installed_build_verified: false,
-            compatible_cheats_verified: false,
-        });
+        titles
+            .entry(w.title_id.clone())
+            .or_default()
+            .insert(w.build_id.clone());
+        report
+            .historical_main_build_observations
+            .push(ObservedBuild {
+                archived_build_candidate_found: archived_match(index, &w.title_id, &w.build_id),
+                title_id: w.title_id,
+                main_build_id: w.build_id,
+                original_build_hex_length: w.original_length,
+                launch_context_ordinal: w.launch_ordinal,
+                evidence: "same_log_launch_context_and_main_nso_patch_query",
+                current_installed_build_verified: false,
+                compatible_cheats_verified: false,
+            });
     }
     report.observed_title_ids = titles.len();
     report.multiple_builds_for_same_title = titles
@@ -294,10 +304,22 @@ mod tests {
 
     #[test]
     fn rejects_short_fake_builds_and_missing_context() {
-        assert!(main_nso_build("Querying NSO patch existence for build_id=DEADBEEF, name=main").is_none());
-        assert!(main_nso_build("Querying NSO patch existence for build_id=B424BE150A8E7D78, name=other").is_none());
+        assert!(
+            main_nso_build("Querying NSO patch existence for build_id=DEADBEEF, name=main")
+                .is_none()
+        );
+        assert!(main_nso_build(
+            "Querying NSO patch existence for build_id=B424BE150A8E7D78, name=other"
+        )
+        .is_none());
         assert!(loading_title("Unrelated loading (0100000000010000)").is_none());
-        assert_eq!(parse_log("Querying NSO patch existence for build_id=B424BE150A8E7D78, name=main").unwrap().witness.len(), 0);
+        assert_eq!(
+            parse_log("Querying NSO patch existence for build_id=B424BE150A8E7D78, name=main")
+                .unwrap()
+                .witness
+                .len(),
+            0
+        );
         assert!(title_after("Booting game: 01000000000100001", "Booting game: ").is_none());
     }
 }
