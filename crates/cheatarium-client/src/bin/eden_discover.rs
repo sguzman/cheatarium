@@ -326,14 +326,20 @@ fn cache_titles(root: &Path, warnings: &mut Vec<String>) -> Vec<CachedTitle> {
     let mut seen = BTreeSet::new();
     for entry in names {
         let name = entry.file_name().to_string_lossy().into_owned();
-        let Some(id) = cached_title_id(&name) else { continue; };
+        let Some(id) = cached_title_id(&name) else {
+            continue;
+        };
         if !seen.insert(id.clone()) {
             warnings.push(format!("duplicate_eden_cache_title_id: {id}"));
             continue;
         }
-        let Ok(metadata) = fs::symlink_metadata(entry.path()) else { continue; };
+        let Ok(metadata) = fs::symlink_metadata(entry.path()) else {
+            continue;
+        };
         if !metadata.is_file() || metadata.len() > MAX_CACHE_TITLE_BYTES {
-            warnings.push(format!("eden_cache_title_skipped_nonregular_or_oversized: {id}"));
+            warnings.push(format!(
+                "eden_cache_title_skipped_nonregular_or_oversized: {id}"
+            ));
             continue;
         }
         let read_title = (|| -> std::io::Result<Option<String>> {
@@ -395,7 +401,9 @@ fn run() -> Result<(), ErrBox> {
         match arg.as_str() {
             "--db" => db = PathBuf::from(args.next().ok_or("--db requires a path")?),
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
-            "--cache-dir" => cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?),
+            "--cache-dir" => {
+                cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?)
+            }
             "--game-dir" => extra_roots.push((
                 PathBuf::from(args.next().ok_or("--game-dir requires a path")?),
                 false,
@@ -508,7 +516,9 @@ fn run() -> Result<(), ErrBox> {
     }
     let external_coverage = external::switch_title_coverage(&db, &ids)?;
     for id in ids {
-        let refs = external_coverage.get(&id).ok_or("Missing external coverage result")?;
+        let refs = external_coverage
+            .get(&id)
+            .ok_or("Missing external coverage result")?;
         report.title_id_matches.push(CheatMatch {
             origin: if explicit_ids.contains(&id) {
                 "explicit_lookup"
@@ -613,7 +623,11 @@ mod tests {
             std::thread::current().id()
         ));
         fs::create_dir_all(&path).unwrap();
-        fs::write(path.join("0100000000010000.appname.txt"), b"Super Mario Odyssey").unwrap();
+        fs::write(
+            path.join("0100000000010000.appname.txt"),
+            b"Super Mario Odyssey",
+        )
+        .unwrap();
         fs::write(path.join("0100152000022000.jpeg"), b"not read").unwrap();
         fs::write(path.join("ignore.appname.txt"), b"ignored").unwrap();
         let mut warnings = Vec::new();

@@ -293,11 +293,13 @@ pub struct SwitchReferenceCoverage {
 fn path_has_title_id(path: &str, title_id: &str) -> bool {
     let a = path.as_bytes();
     let id = title_id.as_bytes();
-    if id.len() != 16 || a.len() < id.len() { return false; }
-    for i in 0..=a.len()-id.len() {
-        if a[i..i+id.len()].eq_ignore_ascii_case(id)
-            && (i == 0 || !a[i-1].is_ascii_hexdigit())
-            && (i+id.len() == a.len() || !a[i+id.len()].is_ascii_hexdigit())
+    if id.len() != 16 || a.len() < id.len() {
+        return false;
+    }
+    for i in 0..=a.len() - id.len() {
+        if a[i..i + id.len()].eq_ignore_ascii_case(id)
+            && (i == 0 || !a[i - 1].is_ascii_hexdigit())
+            && (i + id.len() == a.len() || !a[i + id.len()].is_ascii_hexdigit())
         {
             return true;
         }
@@ -313,10 +315,7 @@ pub fn switch_title_coverage(
 ) -> Result<BTreeMap<String, SwitchReferenceCoverage>> {
     let mut coverage = BTreeMap::new();
     for id in title_ids {
-        if id.len() != 16
-            || !id.starts_with("01")
-            || !id.bytes().all(|c| c.is_ascii_hexdigit())
-        {
+        if id.len() != 16 || !id.starts_with("01") || !id.bytes().all(|c| c.is_ascii_hexdigit()) {
             return Err("Invalid Switch title ID for bulk external lookup".into());
         }
         coverage.insert(id.clone(), SwitchReferenceCoverage::default());
@@ -347,10 +346,20 @@ pub fn switch_title_coverage(
     {
         return Err("Invalid or unsafe external reference catalog".into());
     }
-    if catalog.platforms.iter().map(|e| e.source_files).sum::<usize>() != catalog.reference_files {
+    if catalog
+        .platforms
+        .iter()
+        .map(|e| e.source_files)
+        .sum::<usize>()
+        != catalog.reference_files
+    {
         return Err("External reference catalog count mismatch".into());
     }
-    let switch = catalog.platforms.iter().filter(|e| e.platform == "switch").collect::<Vec<_>>();
+    let switch = catalog
+        .platforms
+        .iter()
+        .filter(|e| e.platform == "switch")
+        .collect::<Vec<_>>();
     if switch.len() != 1 {
         return Err("Exactly one external Switch platform catalog required".into());
     }
@@ -363,13 +372,19 @@ pub fn switch_title_coverage(
                 count.total += 1;
                 if count.sampled < 100 {
                     count.sampled += 1;
-                    sources.entry(id.clone()).or_default().insert(reference.source_id.clone());
+                    sources
+                        .entry(id.clone())
+                        .or_default()
+                        .insert(reference.source_id.clone());
                 }
             }
         }
     }
     for (id, ids) in sources {
-        coverage.get_mut(&id).expect("initialized title ID").source_ids = ids.into_iter().collect();
+        coverage
+            .get_mut(&id)
+            .expect("initialized title ID")
+            .source_ids = ids.into_iter().collect();
     }
     Ok(coverage)
 }
