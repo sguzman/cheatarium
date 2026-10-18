@@ -1160,6 +1160,81 @@ jobs:
             exit 1
           fi
           cmp "$fixture/eden-config/qt-config.ini" "$fixture/before-second.ini"
+      - name: Install one exact Eden game with files only and no Qt config change
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          mkdir -p "$fixture/roms" "$fixture/cache" "$fixture/config" \
+            "$fixture/eden/load/0100000000010000/Existing Mod"
+          printf 'untouched\n' > "$fixture/eden/load/0100000000010000/Existing Mod/readme.txt"
+          touch "$fixture/roms/Super Mario Odyssey [0100000000010000].nsp"
+          touch "$fixture/cache/0100152000022000.pv.txt"
+          printf '[UI]\nPaths\\gamedirs\\size=1\nPaths\\gamedirs\\1\\path=%s\nPaths\\gamedirs\\1\\deep_scan=true\n' "$fixture/roms" > "$fixture/config/qt-config.ini"
+          printf '[DisabledAddOns]\nsize=0\n' >> "$fixture/config/qt-config.ini"
+          cp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          cat > "$fixture/eden_log.txt" <<'LOG'
+          [  1.00] Core <Info> core/core.cpp:Load:351: Loading Super Mario Odyssey (0100000000010000) ...
+          [  1.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=B424BE150A8E7D780000000000000000, name=main
+          LOG
+          run_auto() {
+            cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+              --db generated/v1 --config "$fixture/config/qt-config.ini" \
+              --cache-dir "$fixture/cache" --mods-root "$fixture/eden/load" \
+              --log "$fixture/eden_log.txt" --history-file "$fixture/absent-history.json" \
+              --historical-main-only --only-title-id 0100000000010000 --files-only "$@" --json
+          }
+          run_auto --dry-run > "$fixture/preview.json"
+          cmp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          preview=json.loads((root/"preview.json").read_text())
+          assert preview["read_only"] and preview["files_only"]
+          assert preview["settings"]["would_update_config"] is False
+          assert preview["settings"]["current_config_sha256"] is None
+          assert preview["settings"]["proposed_config_sha256"] is None
+          assert preview["settings"]["issue"] is None
+          assert len(preview["files"])==5
+          assert all(x["status"]=="would_create_no_config_change" for x in preview["files"])
+          assert {x["title_id"] for x in preview["files"]}=={"0100000000010000"}
+          assert {x["build_id"] for x in preview["files"]}=={"B424BE150A8E7D78"}
+          PY
+          run_auto --install > "$fixture/installed.json"
+          cmp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          test "$(find "$fixture/config" -type f | wc -l)" -eq 1
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          d=json.loads((root/"installed.json").read_text())
+          assert d["mode"]=="file_only_install_no_config_change"
+          assert d["installed_title_build_pairs"]==1
+          row=d["installed"][0]
+          assert row["format"]=="cheatarium-eden-file-only-install-v1"
+          assert row["files_written"]==5
+          assert row["eden_config_updated"] is False
+          assert row["eden_config_backup_path"] is None
+          assert row["activation_state"]=="files_installed_no_activation_settings_changed"
+          assert not row["existing_mods_overwritten"]
+          assert len(row["installed_addons"])==5
+          for addon in row["installed_addons"]:
+              p=root/"eden/load/0100000000010000"/addon/"cheats/B424BE150A8E7D78.txt"
+              assert p.is_file() and p.read_text().startswith("[")
+          assert (root/"eden/load/0100000000010000/Existing Mod/readme.txt").read_text()=="untouched\n"
+          assert not (root/"eden/load/0100152000022000").exists()
+          print("File-only installer created five independent Eden cheats without touching Qt settings.")
+          PY
+          run_auto --install > "$fixture/repeated.json"
+          cmp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          python3 - "$fixture/repeated.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          d=json.loads(Path(sys.argv[1]).read_text())
+          assert d["installed_title_build_pairs"]==0
+          assert d["already_installed_title_build_pairs"]==1
+          PY
       - name: Automatically discover Eden games and synthesize archived-build cheats without any IDs
         run: |
           set -euo pipefail
