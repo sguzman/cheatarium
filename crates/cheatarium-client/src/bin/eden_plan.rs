@@ -1,7 +1,9 @@
 //! Native Switch -> Eden per-cheat add-on planning and isolated staging.
 //! Preview is read-only; explicit staging creates a new directory outside Eden.
 //! Indexed source bytes are advisory, not installed-Build-ID evidence.
-use cheatarium_client::{load_game_candidates, load_platform, verify_platform_distribution, Bundle, IndexedFile};
+use cheatarium_client::{
+    load_game_candidates, load_platform, verify_platform_distribution, Bundle, IndexedFile,
+};
 use serde::Serialize;
 use sha2::{Digest, Sha256};
 use std::collections::BTreeSet;
@@ -718,7 +720,8 @@ fn run() -> Result<(), ErrBox> {
         if dry_run {
             let index = load_game_candidates(&db, "switch")?;
             let evidence = eden_builds::read_launch_evidence(&log_path, &index)?;
-            let detailed = eden_dry_run::analyze(&report, &bundle, &config, &mod_root, &log_path, &evidence)?;
+            let detailed =
+                eden_dry_run::analyze(&report, &bundle, &config, &mod_root, &log_path, &evidence)?;
             if human_report {
                 print!("{}", eden_dry_run::render_human(&detailed));
             } else {

@@ -226,8 +226,7 @@ pub(super) fn analyze<'a>(
         }
         historical_main_builds.push(HistoricalBuildMatch {
             archived_cheat_candidate_in_plan: report.planned.iter().any(|plan| {
-                plan.title_id == item.title_id
-                    && plan.explicitly_selected_build_id == item.build_id
+                plan.title_id == item.title_id && plan.explicitly_selected_build_id == item.build_id
             }),
             title_id: item.title_id.clone(),
             build_id: item.build_id.clone(),
@@ -271,9 +270,9 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
     writeln!(
         out,
         "EDEN MAIN BUILD LOG: {} (found: {})",
-        report.main_build_evidence.log_path,
-        report.main_build_evidence.log_found
-    ).unwrap();
+        report.main_build_evidence.log_path, report.main_build_evidence.log_found
+    )
+    .unwrap();
     writeln!(out, "{}", report.main_build_evidence.warning).unwrap();
     for game in &report.discovery.games {
         writeln!(out, "\nGAME: {} [{}]", game.display_name, game.title_id).unwrap();
@@ -294,7 +293,11 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
             .filter(|item| item.title_id == game.title_id)
             .collect();
         if history.is_empty() {
-            writeln!(out, "  HISTORICAL MAIN BUILD: none observed in current Eden log").unwrap();
+            writeln!(
+                out,
+                "  HISTORICAL MAIN BUILD: none observed in current Eden log"
+            )
+            .unwrap();
         } else {
             for item in &history {
                 writeln!(
@@ -317,7 +320,10 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
                 out,
                 "  ARCHIVED BUILD: {} ({})",
                 plan.explicitly_selected_build_id,
-                if history.iter().any(|item| item.build_id == plan.explicitly_selected_build_id) {
+                if history
+                    .iter()
+                    .any(|item| item.build_id == plan.explicitly_selected_build_id)
+                {
                     "historically observed main NSO; NOT verified current"
                 } else {
                     "not observed as main in current log; NOT verified current"
