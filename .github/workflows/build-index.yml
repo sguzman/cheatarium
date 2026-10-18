@@ -1155,7 +1155,7 @@ jobs:
           set -euo pipefail
           fixture="$(mktemp -d)"
           trap 'rm -rf "$fixture"' EXIT
-          mkdir -p "$fixture/roms/games" "$fixture/roms/dlc" "$fixture/cache" "$fixture/eden/load" "$fixture/config"
+          mkdir -p "$fixture/roms/games" "$fixture/roms/dlc" "$fixture/cache" "$fixture/eden" "$fixture/config"
           touch "$fixture/roms/games/Super Mario Odyssey [0100000000010000].nsp"
           touch "$fixture/roms/dlc/Smash DLC [01006A8000161001].nsp"
           printf 'Update (1.7.0)\n' > "$fixture/cache/0100152000022000.pv.txt"
@@ -1182,7 +1182,7 @@ jobs:
           assert "01006A8000161001" not in ids
           assert d["discovery"]["recognized_game_files"]==2
           assert d["prepared_title_build_pairs"] >= 1
-          assert len(list((root/"eden/load").iterdir()))==0
+          assert not (root/"eden/load").exists()
           PY
           run_auto --install > "$fixture/installed.json"
           python3 - "$fixture" <<'PY'
