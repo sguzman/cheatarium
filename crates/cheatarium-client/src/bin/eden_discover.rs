@@ -680,7 +680,7 @@ fn build_readiness(
         ).unwrap_or_default();
         matches += main.iter().filter(|observed| observed.archived_build_candidate_found).count();
         if main.is_empty() { missing += 1; } else { historical_count += 1; }
-        let lookup_ids = lookups.get(&game.title_id)
+        let lookup_ids: Vec<String> = lookups.get(&game.title_id)
             .map(|set| set.iter().cloned().collect()).unwrap_or_default();
         let evidence_state = if main.len() > 1 {
             "multiple_historical_main_builds_ambiguous"
@@ -2016,6 +2016,7 @@ volume=100
             unresolved_nsp_inspections_truncated: false,
             inspected_nsp_file_bytes_read: 500,
             saved_disabled_addons: Vec::new(),
+            build_readiness: None,
             cached_update_displays: Vec::new(),
             installed_build_id_verified: false,
             warnings: Vec::new(),
