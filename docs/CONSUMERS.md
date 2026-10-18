@@ -375,7 +375,7 @@ Cheat compatibility and the current installed executable Build ID remain unverif
 
 ## Eden historical main Build ID observations (read-only)
 
-The `cheatarium-eden-builds` CLI inspects Eden's **existing** plaintext log at `$XDG_DATA_HOME/eden/log/eden_log.txt` (default `~/.local/share/eden/log/eden_log.txt`). Eden emits a game launch with a 16-digit Title ID and later emits a `Querying NSO patch existence for build_id=..., name=main` log record. Cheatarium associates those records **only within the same observed launch context**, normalizes the first 16 hex digits of the main NSO Build ID, and joins the observed pair to the archived Switch cheat candidate index.
+The `cheatarium-eden-builds` CLI inspects Eden's **existing** plaintext log at `$XDG_DATA_HOME/eden/log/eden_log.txt` (default `~/.local/share/eden/log/eden_log.txt`). Eden emits game-launch lines with a 16-digit Title ID and `Querying NSO patch existence for build_id=..., name=main` records. Depending on Eden's version, the main NSO query can appear **before or after** the `Core::Load` line. Cheatarium pairs nearby canonical core.cpp loading lines in either order and never treats non-main NSO queries as executable Build ID evidence. Cheatarium associates those records **only within the same observed launch context**, normalizes the first 16 hex digits of the main NSO Build ID, and joins the observed pair to the archived Switch cheat candidate index.
 
 ```sh
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-builds -- --db generated/v1 --json
