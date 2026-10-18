@@ -39,8 +39,24 @@ struct Report {
     observed_title_ids: usize,
     multiple_builds_for_same_title: Vec<String>,
     main_builds_without_launch_context: usize,
+    core_launch_contexts_seen: usize,
+    main_nso_patch_queries_seen: usize,
+    direct_cheat_lookup_observations: Vec<CheatLookupObservation>,
+    log_has_main_executable_build_evidence: bool,
     installation_allowed: bool,
     warnings: Vec<&'static str>,
+}
+
+/// Eden emits this paired identifier while looking for an installed cheat
+/// file. Such a record does NOT prove it was the main executable's Build ID.
+#[derive(Debug, Serialize)]
+struct CheatLookupObservation {
+    title_id: String,
+    build_id: String,
+    event: &'static str,
+    archived_build_candidate_found: bool,
+    main_executable_build_verified: bool,
+    current_installed_build_verified: bool,
 }
 
 #[derive(Debug, Clone)]
@@ -55,6 +71,9 @@ struct BuildWitness {
 struct ParsedLog {
     witness: Vec<BuildWitness>,
     orphan_main_builds: usize,
+    core_launches: usize,
+    main_queries: usize,
+    cheat_lookup_witness: BTreeSet<(String, String, &'static str)>,
 }
 
 fn hex_token(s: &str, n: usize) -> Option<String> {
@@ -106,6 +125,31 @@ fn main_nso_build(line: &str) -> Option<(String, usize)> {
     Some((raw[..16].to_ascii_uppercase(), raw.len()))
 }
 
+
+/// Eden patch_manager.cpp's ReadCheatFileFromFolder may emit one of these
+/// title+build pairs if an enabled mod folder tries to find a cheat file.
+/// This is a separate, weaker signal than a logged main NSO query.
+fn direct_cheat_lookup(line: &str) -> Option<(String, String, &'static str)> {
+    const PATTERNS: [(&str, &str); 2] = [
+        ("No cheats file found for title_id=", "missing_cheat_file_lookup"),
+        ("Failed to read cheats file for title_id=", "unreadable_cheat_file_lookup"),
+    ];
+    for (marker, kind) in PATTERNS {
+        let Some((_, suffix)) = line.split_once(marker) else { continue };
+        let Some(title) = hex_token(suffix, 16) else { continue };
+        if !title.starts_with("01") { continue; }
+        let Some(rest) = suffix.get(16..).and_then(|x| x.strip_prefix(", build_id=")) else {
+            continue;
+        };
+        let Some(build) = hex_token(rest, 16) else { continue };
+        if !rest.get(16..).is_some_and(|x| x.is_empty() || x.starts_with(|c: char| c.is_whitespace())) {
+            continue;
+        }
+        return Some((title, build, kind));
+    }
+    None
+}
+
 fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
     let mut out = ParsedLog::default();
     let mut active: Option<(String, usize, usize)> = None; // title, ordinal, last launch line
@@ -114,6 +158,12 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
     for (line_index, line) in log.lines().enumerate() {
         let newly_loading = loading_title(line);
         let is_new_launch = newly_loading.is_some();
+        if is_new_launch {
+            out.core_launches += 1;
+        }
+        if let Some(witness) = direct_cheat_lookup(line) {
+            out.cheat_lookup_witness.insert(witness);
+        }
         let announced =
             title_after(line, "Booting game: ").or_else(|| title_after(line, "Now running: "));
         if let Some(id) = newly_loading.or(announced) {
@@ -126,6 +176,7 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
         let Some((build_id, original_length)) = main_nso_build(line) else {
             continue;
         };
+        out.main_queries += 1;
         let Some((title_id, ordinal, start_index)) = active.as_ref() else {
             out.orphan_main_builds += 1;
             continue;
@@ -182,11 +233,16 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
         observed_title_ids: 0,
         multiple_builds_for_same_title: Vec::new(),
         main_builds_without_launch_context: 0,
+        core_launch_contexts_seen: 0,
+        main_nso_patch_queries_seen: 0,
+        direct_cheat_lookup_observations: Vec::new(),
+        log_has_main_executable_build_evidence: false,
         installation_allowed: false,
         warnings: vec![
             "Log-derived builds only describe prior launch activity, not the current installed executable.",
             "A matching archived cheat Build ID does not prove that the cheat works or is safe.",
             "Boot/Loading title context can be interrupted or stale; manual verification is still required.",
+            "Cheat-file lookup logs pair title and build but are not proof that the queried executable is main.",
             "No game containers, encryption keys, saves, or emulator configuration are accessed.",
             "No cheat files are exported, installed or activated.",
         ],
@@ -210,6 +266,15 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
     let log = std::str::from_utf8(&bytes)?;
     let parsed = parse_log(log)?;
     report.main_builds_without_launch_context = parsed.orphan_main_builds;
+    report.core_launch_contexts_seen = parsed.core_launches;
+    report.main_nso_patch_queries_seen = parsed.main_queries;
+    report.direct_cheat_lookup_observations = parsed.cheat_lookup_witness.into_iter()
+        .map(|(title_id, build_id, event)| CheatLookupObservation {
+            archived_build_candidate_found: archived_match(index, &title_id, &build_id),
+            title_id, build_id, event,
+            main_executable_build_verified: false,
+            current_installed_build_verified: false,
+        }).collect();
     let mut titles = BTreeMap::<String, BTreeSet<String>>::new();
     for w in parsed.witness {
         titles
@@ -230,6 +295,8 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
             });
     }
     report.observed_title_ids = titles.len();
+    report.log_has_main_executable_build_evidence =
+        !report.historical_main_build_observations.is_empty();
     report.multiple_builds_for_same_title = titles
         .into_iter()
         .filter_map(|(id, builds)| (builds.len() > 1).then_some(id))
@@ -300,6 +367,25 @@ mod tests {
         assert_eq!(data.witness.len(), 2);
         assert_eq!(data.witness[0].title_id, "0100000000010000");
         assert_eq!(data.witness[1].title_id, "0100152000022000");
+    }
+
+    #[test]
+    fn paired_cheat_lookup_is_reported_separately_from_main_executable() {
+        let log = concat!(
+            "[  0.0] Common.Filesystem <Info> patch_manager.cpp:93: No cheats file found for title_id=0100000000010000, build_id=B424BE150A8E7D78\n",
+            "[  0.1] Common.Filesystem <Info> patch_manager.cpp:93: No cheats file found for title_id=0100000000010000, build_id=B424BE150A8E7D78\n",
+            "[  0.2] Common.Filesystem <Info> patch_manager.cpp:100: Failed to read cheats file for title_id=0100152000022000, build_id=96DFD1769E560C27\n",
+            "[  0.3] Loader <Info> patch_manager.cpp:475: Querying NSO patch existence for build_id=B424BE150A8E7D78, name=main\n"
+        );
+        let parsed = parse_log(log).unwrap();
+        assert_eq!(parsed.main_queries, 1);
+        assert_eq!(parsed.orphan_main_builds, 1);
+        assert_eq!(parsed.witness.len(), 0);
+        assert_eq!(parsed.cheat_lookup_witness.len(), 2);
+        assert_eq!(parsed.core_launches, 0);
+        assert!(direct_cheat_lookup("No cheats file found for title_id=0100000000010000, build_id=BAD").is_none());
+        assert!(direct_cheat_lookup("No cheats file found for title_id=0100000000010000, build_id=B424BE150A8E7D7800").is_none());
+        assert!(direct_cheat_lookup("Failed to read cheats file for title_id=FOOBAR, build_id=B424BE150A8E7D78").is_none());
     }
 
     #[test]
