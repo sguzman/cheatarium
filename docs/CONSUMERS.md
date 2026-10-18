@@ -370,12 +370,12 @@ The older full JSON format is unchanged unless the `--summary` flag is specified
 
 ### Optional bounded NSP header inspection for unresolved filenames
 
-If Eden's registered folder contains `.nsp` files with no embedded Title ID (e.g. `Mario Kart 8 Deluxe.nsp`), Cheatarium can optionally inspect just a **bounded prefix** of up to 24 unresolved NSP files, each capped at **256 KiB read**:
+If Eden's registered folder contains `.nsp` files with no embedded Title ID (e.g. `Mario Kart 8 Deluxe.nsp`), Cheatarium can optionally inspect the **outer PFS0 header only** of up to 24 unresolved NSP files, each capped at **256 KiB of header bytes**:
 
 ```sh
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --inspect-nsp-headers --json
 ```
 
-By default, `--summary` continues to read **zero game-file bytes**. The additional option reads only outer NSP `PFS0` header and entry-name table metadata, using Eden's documented PFS0 layout with strict file-size and entry-count checks. It can sometimes derive a **candidate Title ID from a ticket's 32-hex filename** (first 16 digits), even if the NSP's human-readable basename contains no Title ID. Ticket **contents**, NCA payloads, ROM encryption keys, saves, and executable code are never parsed, decrypted, exported, or written. Unsupported or malformed files are reported as such; they are not guessed from neighboring files. Header reads are counted in `game_file_bytes_read` and `inspected_nsp_file_bytes_read`. The original full discovery output is unchanged.
+By default, `--summary` continues to read **zero game-file bytes**. The additional option reads **exactly** the outer NSP `PFS0` header and entry-name table, not the following ticket or encrypted NCA payload, using Eden's documented PFS0 layout with strict file-size and entry-count checks. It can sometimes derive a **candidate Title ID from a ticket's 32-hex filename** (first 16 digits), even if the NSP's human-readable basename contains no Title ID. Ticket **contents**, NCA payloads, ROM encryption keys, saves, and executable code are never parsed, decrypted, exported, or written. Unsupported or malformed files are reported as such; they are not guessed from neighboring files. Header reads are counted in `game_file_bytes_read` and `inspected_nsp_file_bytes_read`. The original full discovery output is unchanged.
 
 A title found in a ticket **filename** is weak, unauthenticated evidence; it does not prove the NSP's actual program identity, its type (base/update/DLC), or its executable Build ID. NSPs may not contain a ticket, and Switch update selection may depend on Eden's other installed/registered content. `executable_build_id_found`, `installed_build_id_verified`, and install compatibility remain false. The purpose is to improve offline discovery incrementally, **not** bypass encryption or silently enable cheats.
