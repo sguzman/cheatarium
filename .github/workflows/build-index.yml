@@ -1325,6 +1325,69 @@ jobs:
           assert any(f["file_type"] == "nsp" and f["filename_ticket_relation"] == "ticket_title_hint_only" for f in out["files"])
           print("All six registered files audited; deep scan verified; no executable/build/installation claim")
           PY
+      - name: Correlate Eden library titles with historical main Build IDs without installation
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          mkdir -p "$fixture/roms" "$fixture/cache"
+          printf '[UI]\nPaths\\gamedirs\\size=1\nPaths\\gamedirs\\1\\path=%s\nPaths\\gamedirs\\1\\deep_scan=true\n' "$fixture/roms" > "$fixture/qt-config.ini"
+          touch "$fixture/roms/Super Mario Odyssey [0100000000010000].nsp"
+          touch "$fixture/roms/Mario Kart 8 Deluxe [0100152000022000].nsp"
+          touch "$fixture/cache/01006A800016E000.pv.txt"
+          cat > "$fixture/eden_log.txt" <<'LOG'
+          [  0.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=AAAAAAAAAAAAAAAA, name=main
+          [  1.00] Core <Info> core/core.cpp:Load:351: Loading Super Mario Odyssey (0100000000010000) ...
+          [  1.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=B424BE150A8E7D780000000000000000, name=main
+          [  2.00] Core <Info> core/core.cpp:Load:351: Loading Mario Kart 8 Deluxe (0100152000022000) ...
+          [  2.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=96DFD1769E560C270000000000000000, name=main
+          [  3.00] Core <Info> core/core.cpp:Load:351: Loading Mario Kart 8 Deluxe (0100152000022000) ...
+          [  3.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=1234567890ABCDEF0000000000000000, name=main
+          [  4.00] Common.Filesystem <Info> patch_manager.cpp:93: No cheats file found for title_id=01006A800016E000, build_id=B424BE150A8E7D78
+          LOG
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
+            --db generated/v1 --config "$fixture/qt-config.ini" --cache-dir "$fixture/cache" \
+            --summary --build-readiness --log "$fixture/eden_log.txt" --json > "$fixture/status.json"
+          python3 - "$fixture/status.json" <<'PY'
+          import json, sys
+          from pathlib import Path
+          result = json.loads(Path(sys.argv[1]).read_text())
+          assert result["format"] == "cheatarium-eden-inventory-summary-v1"
+          assert result["total_game_container_files"] == 2
+          assert result["game_file_bytes_read"] == 0
+          assert result["emulator_files_written"] == 0
+          status = result["build_readiness"]
+          assert status["log_found"] and status["core_launch_contexts"] == 3
+          assert status["main_nso_build_queries"] == 4
+          assert status["main_queries_without_launch_context"] == 1
+          assert status["archived_main_build_matches"] == 2
+          assert status["games_with_historical_main_builds"] == 2
+          assert status["games_needing_main_build_evidence"] == 1
+          assert not status["installation_allowed"]
+          assert not status["current_installed_builds_verified"]
+          games = {entry["title_id"]: entry for entry in status["games"]}
+          assert set(games) == {"0100000000010000", "0100152000022000", "01006A800016E000"}
+          assert games["0100000000010000"]["evidence_state"] == "historical_main_build_matches_archived_candidate"
+          assert games["0100152000022000"]["evidence_state"] == "multiple_historical_main_builds_ambiguous"
+          assert games["01006A800016E000"]["evidence_state"] == "cheat_lookup_only_no_main_build"
+          assert games["01006A800016E000"]["weaker_cheat_lookup_build_ids"] == ["B424BE150A8E7D78"]
+          assert games["01006A800016E000"]["historical_main_executable_builds"] == []
+          assert all(not entry["current_installed_build_verified"]
+                     and not entry["automatic_installation_allowed"]
+                     and not entry["compatible_cheat_verified"] for entry in games.values())
+          print("Eden per-game readiness: matched, ambiguous and weak-only evidence; no installation.")
+          PY
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
+            --db generated/v1 --config "$fixture/qt-config.ini" --cache-dir "$fixture/cache" \
+            --summary --build-readiness --log "$fixture/missing_log.txt" --json > "$fixture/missing.json"
+          python3 - "$fixture/missing.json" <<'PY'
+          import json, sys
+          from pathlib import Path
+          readiness = json.loads(Path(sys.argv[1]).read_text())["build_readiness"]
+          assert not readiness["log_found"]
+          assert readiness["games_needing_main_build_evidence"] == 3
+          assert all(x["evidence_state"] == "eden_log_missing" for x in readiness["games"])
+          PY
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
