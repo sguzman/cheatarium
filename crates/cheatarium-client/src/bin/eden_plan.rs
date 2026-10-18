@@ -605,6 +605,8 @@ fn run_automatic(
     cache_dir: &Path,
     mod_root: &Path,
     installing: bool,
+    files_only: bool,
+    only_title_id: Option<&str>,
     historical_main_only: Option<(
         &eden_builds::LaunchEvidence,
         &eden_builds::eden_history::History,
@@ -616,13 +618,21 @@ fn run_automatic(
             "Eden registered directories and cache contain no identifiable base games".into(),
         );
     }
-    let pairs = automatic_pairs(bundle, &discovery.titles)?;
+    if let Some(id) = only_title_id {
+        if !discovery.titles.iter().any(|title| title == id) {
+            return Err(format!("Requested Title ID {id} was not found in Eden discovery; refusing writes").into());
+        }
+    }
+    let selected_titles = discovery.titles.iter()
+        .filter(|id| only_title_id.is_none_or(|wanted| id.as_str() == wanted))
+        .cloned().collect::<Vec<_>>();
+    let pairs = automatic_pairs(bundle, &selected_titles)?;
     let known_with_archive = pairs
         .iter()
         .map(|(t, _)| t.as_str())
         .collect::<BTreeSet<_>>();
     let mut skipped = Vec::new();
-    for title in &discovery.titles {
+    for title in &selected_titles {
         if !known_with_archive.contains(title.as_str()) {
             skipped.push(SkippedAutomaticBuild {
                 title_id: title.clone(),
@@ -664,13 +674,22 @@ fn run_automatic(
             continue;
         }
         if installing {
-            // Do not rewrite identical disabled Cheatarium add-ons; a changed
-            // or unrecognized pre-existing mod is still protected by install().
-            if eden_install::already_installed_unchanged(bundle, &candidate, mod_root, config)? {
+            // Only identical, complete installations count as existing.
+            // No partial or altered mod is ever overwritten.
+            let unchanged = if files_only {
+                eden_install::already_installed_files_unchanged(bundle, &candidate, mod_root)?
+            } else {
+                eden_install::already_installed_unchanged(bundle, &candidate, mod_root, config)?
+            };
+            if unchanged {
                 already_installed += 1;
                 continue;
             }
-            let result = eden_install::install(bundle, &candidate, mod_root, config)?;
+            let result = if files_only {
+                eden_install::install_files_only(bundle, &candidate, mod_root)?
+            } else {
+                eden_install::install(bundle, &candidate, mod_root, config)?
+            };
             installed.push(result);
         } else {
             planned.push(candidate);
@@ -679,7 +698,9 @@ fn run_automatic(
     Ok(AutomaticReport {
         schema_version: 1,
         format: "cheatarium-eden-auto-cheat-synthesis-v1",
-        mode: if installing { "direct_install_disabled" } else { "read_only_preview" },
+        mode: if installing {
+            if files_only { "file_only_install_no_config_change" } else { "direct_install_disabled" }
+        } else if files_only { "file_only_read_only_preview" } else { "read_only_preview" },
         discovery, archived_title_build_pairs: total_pairs,
         candidate_build_scope: if historical_main_only.is_some() {
             "unique_historical_main_nso_build_log_or_saved_history_not_current_verified"
@@ -695,7 +716,7 @@ fn run_automatic(
             "Title IDs discovered from Eden game directories and cache are advisory, not proof of installation.",
             "Archived Build IDs do not establish installed executable versions. The historical-main-only mode narrows candidates using launch logs; it never claims current-version verification.",
             "No runtime Build ID was guessed or required from the user.",
-            "Cheat effects and compatibility are unverified. Enable only desired cheats in Eden.",
+            "Cheat effects and compatibility are unverified. File-only installation leaves Eden's activation settings unchanged; review Add-ons before playing.",
         ]
     })
 }
@@ -713,6 +734,8 @@ fn run() -> Result<(), ErrBox> {
     let mut human_report = false;
     let mut historical_main_only = false;
     let mut install = false;
+    let mut files_only = false;
+    let mut only_title_id: Option<String> = None;
     let mut title = None;
     let mut build = None;
     let mut args = env::args().skip(1);
@@ -724,6 +747,10 @@ fn run() -> Result<(), ErrBox> {
             }
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
+            "--files-only" => files_only = true,
+            "--only-title-id" => {
+                only_title_id = Some(args.next().ok_or("--only-title-id requires an exact 16-hex Title ID")?.to_ascii_uppercase())
+            },
             "--auto" => auto = true,
             "--dry-run" => {
                 dry_run = true;
@@ -759,7 +786,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nAfter review, the identical selection policy is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nFile-only preview: --dry-run --historical-main-only --only-title-id TITLE --files-only.\nFile-only install: --install --historical-main-only --only-title-id TITLE --files-only. No qt-config.ini writes.\nAfter review, the disabled-by-default installer is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -776,6 +803,14 @@ fn run() -> Result<(), ErrBox> {
     }
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
+    }
+    if files_only && (!historical_main_only || !only_title_id.is_some() || (!install && !dry_run)) {
+        return Err("--files-only requires --historical-main-only, --only-title-id, and either --dry-run or --install".into());
+    }
+    if let Some(id) = &only_title_id {
+        if !is_title_id(id) || (!auto && !install && !dry_run) {
+            return Err("--only-title-id requires automatic mode and an exact 16-hex base Title ID".into());
+        }
     }
     if historical_main_only && (title.is_some() || build.is_some()) {
         return Err(
@@ -812,6 +847,8 @@ fn run() -> Result<(), ErrBox> {
             &cache_dir,
             &mod_root,
             install,
+            files_only,
+            only_title_id.as_deref(),
             if historical_main_only {
                 Some((
                     evidence.as_ref().ok_or("Missing Eden launch evidence")?,
@@ -835,6 +872,7 @@ fn run() -> Result<(), ErrBox> {
                 &history_path,
                 history,
                 *history_found,
+                files_only,
             )?;
             if human_report {
                 print!("{}", eden_dry_run::render_human(&detailed));
