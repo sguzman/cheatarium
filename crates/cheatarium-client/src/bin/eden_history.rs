@@ -54,12 +54,18 @@ pub(crate) fn default_path() -> PathBuf {
 }
 
 fn hex_id(value: &str) -> bool {
-    value.len() == 16 && value.starts_with("01")
-        && value.bytes().all(|c| c.is_ascii_hexdigit() && !c.is_ascii_lowercase())
+    value.len() == 16
+        && value.starts_with("01")
+        && value
+            .bytes()
+            .all(|c| c.is_ascii_hexdigit() && !c.is_ascii_lowercase())
 }
 
 fn valid_hash(value: &str) -> bool {
-    value.len() == 64 && value.bytes().all(|c| c.is_ascii_hexdigit() && !c.is_ascii_uppercase())
+    value.len() == 64
+        && value
+            .bytes()
+            .all(|c| c.is_ascii_hexdigit() && !c.is_ascii_uppercase())
 }
 
 fn validate(history: &History) -> Result<(), ErrBox> {
@@ -69,14 +75,21 @@ fn validate(history: &History) -> Result<(), ErrBox> {
     if history.entries.len() > MAX_HISTORY_RECORDS {
         return Err("Cheatarium Eden history exceeds entry limit".into());
     }
-    if history.last_log_sha256.as_deref().is_some_and(|x| !valid_hash(x)) {
+    if history
+        .last_log_sha256
+        .as_deref()
+        .is_some_and(|x| !valid_hash(x))
+    {
         return Err("Invalid Cheatarium Eden history log fingerprint".into());
     }
     let mut keys = BTreeSet::new();
     for item in &history.entries {
         if !hex_id(&item.title_id)
             || item.build_id.len() != 16
-            || !item.build_id.bytes().all(|c| c.is_ascii_hexdigit() && !c.is_ascii_lowercase())
+            || !item
+                .build_id
+                .bytes()
+                .all(|c| c.is_ascii_hexdigit() && !c.is_ascii_lowercase())
             || !matches!(item.evidence_kind.as_str(), "main_nso" | "cheat_lookup")
             || item.first_captured_unix_seconds > item.last_captured_unix_seconds
             || !keys.insert((&item.title_id, &item.build_id, &item.evidence_kind))
@@ -90,14 +103,18 @@ fn validate(history: &History) -> Result<(), ErrBox> {
 /// Guard parent directories, not only the leaf, to avoid symlink-based
 /// redirection into Eden or another unrelated application.
 fn check_path(path: &Path, creating: bool) -> Result<(), ErrBox> {
-    if !path.is_absolute() || path.file_name().is_none()
-        || path.components().any(|part| matches!(part, Component::ParentDir | Component::CurDir))
+    if !path.is_absolute()
+        || path.file_name().is_none()
+        || path
+            .components()
+            .any(|part| matches!(part, Component::ParentDir | Component::CurDir))
     {
         return Err("Cheatarium history path must be an absolute normalized file path".into());
     }
-    if path.components().any(|part| matches!(part, Component::Normal(name)
-        if name.to_string_lossy().eq_ignore_ascii_case("eden")))
-    {
+    if path.components().any(|part| {
+        matches!(part, Component::Normal(name)
+        if name.to_string_lossy().eq_ignore_ascii_case("eden"))
+    }) {
         return Err("Refusing history path inside an Eden directory".into());
     }
     let mut existing = path.to_path_buf();
@@ -121,7 +138,9 @@ fn check_path(path: &Path, creating: bool) -> Result<(), ErrBox> {
             }
             Err(e) => return Err(e.into()),
         }
-        if !existing.pop() { break; }
+        if !existing.pop() {
+            break;
+        }
     }
     Ok(())
 }
@@ -130,14 +149,18 @@ pub(crate) fn load(path: &Path) -> Result<(History, bool), ErrBox> {
     check_path(path, false)?;
     let meta = match fs::symlink_metadata(path) {
         Ok(meta) => meta,
-        Err(e) if e.kind() == std::io::ErrorKind::NotFound => return Ok((History::default(), false)),
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => {
+            return Ok((History::default(), false))
+        }
         Err(e) => return Err(e.into()),
     };
     if !meta.is_file() || meta.len() > MAX_HISTORY_BYTES {
         return Err("Cheatarium Eden history is not a bounded regular file".into());
     }
     let mut bytes = Vec::new();
-    File::open(path)?.take(MAX_HISTORY_BYTES + 1).read_to_end(&mut bytes)?;
+    File::open(path)?
+        .take(MAX_HISTORY_BYTES + 1)
+        .read_to_end(&mut bytes)?;
     if bytes.len() as u64 > MAX_HISTORY_BYTES {
         return Err("Cheatarium Eden history exceeds size limit".into());
     }
@@ -154,15 +177,22 @@ fn snapshot_items(log: &LaunchEvidence, captured: u64) -> Vec<Entry> {
     for item in &log.weak_lookup {
         found.insert((item.title_id.clone(), item.build_id.clone(), "cheat_lookup"));
     }
-    found.into_iter().map(|(title_id, build_id, kind)| Entry {
-        title_id, build_id, evidence_kind: kind.to_owned(),
-        first_captured_unix_seconds: captured,
-        last_captured_unix_seconds: captured,
-    }).collect()
+    found
+        .into_iter()
+        .map(|(title_id, build_id, kind)| Entry {
+            title_id,
+            build_id,
+            evidence_kind: kind.to_owned(),
+            first_captured_unix_seconds: captured,
+            last_captured_unix_seconds: captured,
+        })
+        .collect()
 }
 
 fn merge(history: &mut History, log: &LaunchEvidence, captured: u64) -> Result<bool, ErrBox> {
-    let Some(fingerprint) = &log.log_sha256 else { return Ok(false) };
+    let Some(fingerprint) = &log.log_sha256 else {
+        return Ok(false);
+    };
     if history.last_log_sha256.as_deref() == Some(fingerprint.as_str()) {
         return Ok(false);
     }
@@ -173,10 +203,21 @@ fn merge(history: &mut History, log: &LaunchEvidence, captured: u64) -> Result<b
     }
     let mut map = std::collections::BTreeMap::new();
     for record in history.entries.drain(..) {
-        map.insert((record.title_id.clone(), record.build_id.clone(), record.evidence_kind.clone()), record);
+        map.insert(
+            (
+                record.title_id.clone(),
+                record.build_id.clone(),
+                record.evidence_kind.clone(),
+            ),
+            record,
+        );
     }
     for record in additions {
-        let key = (record.title_id.clone(), record.build_id.clone(), record.evidence_kind.clone());
+        let key = (
+            record.title_id.clone(),
+            record.build_id.clone(),
+            record.evidence_kind.clone(),
+        );
         if let Some(old) = map.get_mut(&key) {
             old.last_captured_unix_seconds = old.last_captured_unix_seconds.max(captured);
         } else {
@@ -194,7 +235,9 @@ fn merge(history: &mut History, log: &LaunchEvidence, captured: u64) -> Result<b
 
 struct CaptureLock(PathBuf);
 impl Drop for CaptureLock {
-    fn drop(&mut self) { let _ = fs::remove_file(&self.0); }
+    fn drop(&mut self) {
+        let _ = fs::remove_file(&self.0);
+    }
 }
 
 #[cfg(unix)]
@@ -227,10 +270,7 @@ fn prepare_dir(parent: &Path) -> Result<(), ErrBox> {
 
 /// Only explicit capture writes to Cheatarium's own state directory. Reads
 /// stay read-only, and Eden's log/config/mods are never touched.
-pub(crate) fn capture(
-    path: &Path,
-    log: &LaunchEvidence,
-) -> Result<(History, bool), ErrBox> {
+pub(crate) fn capture(path: &Path, log: &LaunchEvidence) -> Result<(History, bool), ErrBox> {
     if log.main.is_empty() && log.weak_lookup.is_empty() {
         return load(path).map(|(history, _)| (history, false));
     }
@@ -238,14 +278,19 @@ pub(crate) fn capture(
     let parent = path.parent().ok_or("History has no parent directory")?;
     prepare_dir(parent)?;
     check_path(path, true)?;
-    let name = path.file_name().ok_or("History has no filename")?.to_string_lossy();
+    let name = path
+        .file_name()
+        .ok_or("History has no filename")?
+        .to_string_lossy();
     let lock_path = parent.join(format!(".{name}.lock"));
     let lock = private_options().open(&lock_path)?;
     let _lock = CaptureLock(lock_path);
     drop(lock);
     let (mut history, _) = load(path)?;
     let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs();
-    if !merge(&mut history, log, now)? { return Ok((history, false)); }
+    if !merge(&mut history, log, now)? {
+        return Ok((history, false));
+    }
     let encoded = serde_json::to_vec_pretty(&history)?;
     if encoded.len() as u64 > MAX_HISTORY_BYTES {
         return Err("Cheatarium Eden history serialized size limit exceeded".into());
@@ -260,15 +305,17 @@ pub(crate) fn capture(
         fs::rename(&temp, path)?;
         Ok(())
     })();
-    if outcome.is_err() { let _ = fs::remove_file(&temp); }
+    if outcome.is_err() {
+        let _ = fs::remove_file(&temp);
+    }
     outcome?;
     Ok((history, true))
 }
 
 #[cfg(test)]
 mod tests {
-    use super::*;
     use super::super::{MainBuildObservation, WeakLookupObservation};
+    use super::*;
     use std::time::SystemTime;
 
     fn witness() -> LaunchEvidence {
@@ -280,11 +327,14 @@ mod tests {
             main_queries: 1,
             orphan_queries: 0,
             main: vec![MainBuildObservation {
-                title_id: "0100000000010000".into(), build_id: "B424BE150A8E7D78".into(),
-                archived_candidate: true, launch_context_ordinal: 1,
+                title_id: "0100000000010000".into(),
+                build_id: "B424BE150A8E7D78".into(),
+                archived_candidate: true,
+                launch_context_ordinal: 1,
             }],
             weak_lookup: vec![WeakLookupObservation {
-                title_id: "0100152000022000".into(), build_id: "96DFD1769E560C27".into(),
+                title_id: "0100152000022000".into(),
+                build_id: "96DFD1769E560C27".into(),
             }],
         }
     }
@@ -304,18 +354,32 @@ mod tests {
         assert!(!merge(&mut history, &rotated, 200).unwrap());
         assert_eq!(history.entries.len(), 2);
         rotated.main.push(MainBuildObservation {
-            title_id: "0100000000010000".into(), build_id: "B424BE150A8E7D78".into(),
-            archived_candidate: true, launch_context_ordinal: 1,
+            title_id: "0100000000010000".into(),
+            build_id: "B424BE150A8E7D78".into(),
+            archived_candidate: true,
+            launch_context_ordinal: 1,
         });
         assert!(merge(&mut history, &rotated, 210).unwrap());
         assert_eq!(history.entries.len(), 2);
-        assert_eq!(history.entries.iter().find(|r| r.evidence_kind == "main_nso").unwrap().last_captured_unix_seconds, 210);
+        assert_eq!(
+            history
+                .entries
+                .iter()
+                .find(|r| r.evidence_kind == "main_nso")
+                .unwrap()
+                .last_captured_unix_seconds,
+            210
+        );
     }
 
     #[test]
     fn writes_only_minimal_cheatarium_state_and_reloads() {
-        let unique = format!("cheatarium-history-test-{}-{:?}-{:?}",
-            std::process::id(), std::thread::current().id(), SystemTime::now());
+        let unique = format!(
+            "cheatarium-history-test-{}-{:?}-{:?}",
+            std::process::id(),
+            std::thread::current().id(),
+            SystemTime::now()
+        );
         let root = env::temp_dir().join(unique);
         let path = root.join("history.json");
         let log = witness();
@@ -332,15 +396,21 @@ mod tests {
         #[cfg(unix)]
         {
             use std::os::unix::fs::PermissionsExt;
-            assert_eq!(fs::metadata(&path).unwrap().permissions().mode() & 0o777, 0o600);
+            assert_eq!(
+                fs::metadata(&path).unwrap().permissions().mode() & 0o777,
+                0o600
+            );
         }
         fs::remove_dir_all(root).unwrap();
     }
 
     #[test]
     fn rejects_symlink_and_eden_destinations_and_corrupt_history() {
-        let root = env::temp_dir().join(format!("cheatarium-history-safety-{}-{:?}",
-            std::process::id(), std::thread::current().id()));
+        let root = env::temp_dir().join(format!(
+            "cheatarium-history-safety-{}-{:?}",
+            std::process::id(),
+            std::thread::current().id()
+        ));
         fs::create_dir_all(&root).unwrap();
         assert!(capture(&root.join("eden/history.json"), &witness()).is_err());
         let path = root.join("history.json");

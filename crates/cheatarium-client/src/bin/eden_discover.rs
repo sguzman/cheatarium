@@ -738,21 +738,31 @@ fn build_readiness(
                 .get(&game.title_id)
                 .map(|set| set.iter().cloned().collect())
                 .unwrap_or_default();
-            let stored_main: Vec<StoredMainBuild> = history.entries.iter()
-                .filter(|record| record.title_id == game.title_id && record.evidence_kind == "main_nso")
+            let stored_main: Vec<StoredMainBuild> = history
+                .entries
+                .iter()
+                .filter(|record| {
+                    record.title_id == game.title_id && record.evidence_kind == "main_nso"
+                })
                 .map(|record| StoredMainBuild {
                     build_id: record.build_id.clone(),
                     first_captured_unix_seconds: record.first_captured_unix_seconds,
                     last_captured_unix_seconds: record.last_captured_unix_seconds,
                     archived_build_candidate_found: archive.contains(&record.build_id),
                     historical_snapshot_only: true,
-                }).collect();
+                })
+                .collect();
             if !stored_main.is_empty() {
                 saved_count += 1;
             }
-            let saved_lookup: Vec<String> = history.entries.iter()
-                .filter(|record| record.title_id == game.title_id && record.evidence_kind == "cheat_lookup")
-                .map(|record| record.build_id.clone()).collect();
+            let saved_lookup: Vec<String> = history
+                .entries
+                .iter()
+                .filter(|record| {
+                    record.title_id == game.title_id && record.evidence_kind == "cheat_lookup"
+                })
+                .map(|record| record.build_id.clone())
+                .collect();
             let evidence_state = if main.len() > 1 {
                 "multiple_historical_main_builds_ambiguous"
             } else if main.len() == 1 && main[0].archived_build_candidate_found {
@@ -1602,7 +1612,12 @@ fn run() -> Result<(), ErrBox> {
             "--audit-all-files" => audit_all_files = true,
             "--build-readiness" => with_readiness = true,
             "--capture-build-history" => capture_build_history = true,
-            "--history-file" => history_path = PathBuf::from(args.next().ok_or("--history-file requires an absolute path")?),
+            "--history-file" => {
+                history_path = PathBuf::from(
+                    args.next()
+                        .ok_or("--history-file requires an absolute path")?,
+                )
+            }
             "--log" => build_log = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--help" | "-h" => {
                 println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--history-file PATH] [--log PATH] [--json]\nNo ROM contents or emulator files are changed.");
@@ -1776,7 +1791,8 @@ fn run() -> Result<(), ErrBox> {
         let readiness_inputs = if with_readiness {
             let evidence = eden_builds::read_launch_evidence(&build_log, &index)?;
             let (history, written, exists) = if capture_build_history {
-                let (history, written) = eden_builds::eden_history::capture(&history_path, &evidence)?;
+                let (history, written) =
+                    eden_builds::eden_history::capture(&history_path, &evidence)?;
                 let exists = written || eden_builds::eden_history::load(&history_path)?.1;
                 (history, written, exists)
             } else {
@@ -1792,7 +1808,12 @@ fn run() -> Result<(), ErrBox> {
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
                 audit.inventory.read_only = !written;
                 audit.inventory.build_readiness = Some(build_readiness(
-                    &audit.inventory, &report, evidence, history, *exists, *written,
+                    &audit.inventory,
+                    &report,
+                    evidence,
+                    history,
+                    *exists,
+                    *written,
                 ));
             }
             println!("{}", serde_json::to_string_pretty(&audit)?);
