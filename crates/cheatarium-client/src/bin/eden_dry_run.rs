@@ -45,6 +45,12 @@ pub(super) struct HistoricalBuildMatch {
 pub(super) struct MainBuildEvidence {
     pub(super) log_path: String,
     pub(super) log_found: bool,
+    pub(super) log_bytes_read: usize,
+    pub(super) core_launch_contexts: usize,
+    pub(super) main_nso_build_queries: usize,
+    pub(super) unmatched_main_build_queries: usize,
+    pub(super) weak_cheat_lookup_observations: usize,
+    pub(super) log_diagnostic: &'static str,
     pub(super) saved_history_path: String,
     pub(super) saved_history_found: bool,
     pub(super) saved_historical_main_builds: Vec<HistoricalBuildMatch>,
@@ -240,6 +246,21 @@ pub(super) fn analyze<'a>(
             current_installed_build_verified: false,
         });
     }
+    let log_diagnostic = if !evidence.log_found {
+        "eden_log_missing"
+    } else if evidence.log_bytes_read == 0 {
+        "eden_log_empty"
+    } else if !evidence.main.is_empty() {
+        "historical_main_nso_builds_observed"
+    } else if evidence.main_queries > 0 && evidence.core_launch_contexts == 0 {
+        "main_queries_without_recognized_game_launch"
+    } else if evidence.main_queries > 0 {
+        "main_queries_not_correlated_with_game_launch"
+    } else if evidence.core_launch_contexts > 0 {
+        "game_launches_without_main_nso_queries"
+    } else {
+        "no_recognized_launch_or_main_build_queries"
+    };
     let mut seen_saved = BTreeSet::new();
     let mut saved_historical_main_builds = Vec::new();
     for item in &history.entries {
@@ -271,6 +292,12 @@ pub(super) fn analyze<'a>(
         main_build_evidence: MainBuildEvidence {
             log_path: log_path.to_string_lossy().into_owned(),
             log_found: evidence.log_found,
+            log_bytes_read: evidence.log_bytes_read,
+            core_launch_contexts: evidence.core_launch_contexts,
+            main_nso_build_queries: evidence.main_queries,
+            unmatched_main_build_queries: evidence.orphan_queries,
+            weak_cheat_lookup_observations: evidence.weak_lookup.len(),
+            log_diagnostic,
             saved_history_path: history_path.to_string_lossy().into_owned(),
             saved_history_found: history_found,
             saved_historical_main_builds,
@@ -310,6 +337,16 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         report.main_build_evidence.log_path, report.main_build_evidence.log_found
     )
     .unwrap();
+    writeln!(
+        out,
+        "EDEN LOG DIAGNOSTIC: {} | bytes: {} | game launches: {} | main NSO queries: {} | unassociated main queries: {} | weak cheat lookups: {}",
+        report.main_build_evidence.log_diagnostic,
+        report.main_build_evidence.log_bytes_read,
+        report.main_build_evidence.core_launch_contexts,
+        report.main_build_evidence.main_nso_build_queries,
+        report.main_build_evidence.unmatched_main_build_queries,
+        report.main_build_evidence.weak_cheat_lookup_observations,
+    ).unwrap();
     writeln!(
         out,
         "SAVED MAIN BUILD HISTORY: {} (found: {}; saved main records: {})",
@@ -369,7 +406,13 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
             .filter(|p| p.title_id == game.title_id)
             .collect();
         if plans.is_empty() {
-            writeln!(out, "  Archived cheats: NONE eligible for installation").unwrap();
+            if report.skipped.iter().any(|skip| {
+                skip.title_id == game.title_id && skip.build_id.is_some()
+            }) {
+                writeln!(out, "  Archived cheats: candidates exist, but NONE selected under this evidence policy").unwrap();
+            } else {
+                writeln!(out, "  Archived cheats: NONE eligible for installation").unwrap();
+            }
         }
         for plan in plans {
             writeln!(
