@@ -1224,7 +1224,21 @@ jobs:
           assert record["bytes_read"] == report["game_file_bytes_read"]
           assert 16 < record["bytes_read"] < 262145
           assert report["emulator_files_written"] == 0
-          print("PFS0 bounded header inspector: ticket-filename hint only, no executable Build ID.")
+          matched = report["advisory_nsp_title_associations"]
+          assert len(matched) == 1
+          assert matched[0]["title_id_hint"] == "0100152000022000"
+          assert matched[0]["title_role_hint"] == "base_title_label"
+          assert matched[0]["base_title_id_hint"] == "0100152000022000"
+          assert matched[0]["title_is_in_eden_cache"]
+          assert matched[0]["base_title_has_archived_cheat_candidates"]
+          assert not matched[0]["source_container_content_verified"]
+          assert not matched[0]["installed_game_verified"]
+          assert not matched[0]["installed_build_id_verified"]
+          game = next(g for g in report["candidate_base_titles"] if g["title_id"] == "0100152000022000")
+          assert game["ticket_filename_labeled_base_files"] == 1
+          assert game["filename_labeled_base_files"] == 0
+          assert report["unresolved_after_nsp_header_inspection"] == []
+          print("PFS0 header hint associated with cached title; no installed identity or executable Build ID claimed.")
           PY
       - name: Confirm consumer-cli stage
         env:
