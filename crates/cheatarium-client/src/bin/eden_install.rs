@@ -549,7 +549,6 @@ pub(super) fn install(
     })
 }
 
-
 /// Explicit file-only mode: install native per-cheat directories and never
 /// read, rewrite, or back up Eden's Qt settings. New add-ons are usually
 /// enabled by Eden; actual activation remains under the user's control.
@@ -669,7 +668,6 @@ pub(super) fn already_installed_files_unchanged(
     }
     Ok(true)
 }
-
 
 #[cfg(test)]
 mod tests {

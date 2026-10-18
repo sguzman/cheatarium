@@ -620,12 +620,18 @@ fn run_automatic(
     }
     if let Some(id) = only_title_id {
         if !discovery.titles.iter().any(|title| title == id) {
-            return Err(format!("Requested Title ID {id} was not found in Eden discovery; refusing writes").into());
+            return Err(format!(
+                "Requested Title ID {id} was not found in Eden discovery; refusing writes"
+            )
+            .into());
         }
     }
-    let selected_titles = discovery.titles.iter()
+    let selected_titles = discovery
+        .titles
+        .iter()
         .filter(|id| only_title_id.is_none_or(|wanted| id.as_str() == wanted))
-        .cloned().collect::<Vec<_>>();
+        .cloned()
+        .collect::<Vec<_>>();
     let pairs = automatic_pairs(bundle, &selected_titles)?;
     let known_with_archive = pairs
         .iter()
@@ -749,8 +755,12 @@ fn run() -> Result<(), ErrBox> {
             "--install" => install = true,
             "--files-only" => files_only = true,
             "--only-title-id" => {
-                only_title_id = Some(args.next().ok_or("--only-title-id requires an exact 16-hex Title ID")?.to_ascii_uppercase())
-            },
+                only_title_id = Some(
+                    args.next()
+                        .ok_or("--only-title-id requires an exact 16-hex Title ID")?
+                        .to_ascii_uppercase(),
+                )
+            }
             "--auto" => auto = true,
             "--dry-run" => {
                 dry_run = true;
@@ -809,7 +819,9 @@ fn run() -> Result<(), ErrBox> {
     }
     if let Some(id) = &only_title_id {
         if !is_title_id(id) || (!auto && !install && !dry_run) {
-            return Err("--only-title-id requires automatic mode and an exact 16-hex base Title ID".into());
+            return Err(
+                "--only-title-id requires automatic mode and an exact 16-hex base Title ID".into(),
+            );
         }
     }
     if historical_main_only && (title.is_some() || build.is_some()) {

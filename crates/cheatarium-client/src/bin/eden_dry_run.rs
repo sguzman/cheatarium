@@ -154,7 +154,11 @@ pub(super) fn analyze<'a>(
             let addon_path = mods_root.join(&plan.title_id).join(&addon);
             let status = if unchanged {
                 already += 1;
-                if files_only { "already_installed_identical_files_only" } else { "already_installed_identical_and_disabled" }
+                if files_only {
+                    "already_installed_identical_files_only"
+                } else {
+                    "already_installed_identical_and_disabled"
+                }
             } else {
                 match fs::symlink_metadata(&addon_path) {
                     Ok(_) => {
@@ -169,7 +173,11 @@ pub(super) fn analyze<'a>(
                                 .or_default()
                                 .push(addon);
                         }
-                        if files_only { "would_create_no_config_change" } else { "would_create_disabled" }
+                        if files_only {
+                            "would_create_no_config_change"
+                        } else {
+                            "would_create_disabled"
+                        }
                     }
                     Err(_) => {
                         conflicts += 1;
@@ -201,43 +209,44 @@ pub(super) fn analyze<'a>(
         issue: None,
     };
     if !files_only {
-    match fs::symlink_metadata(config) {
-        Ok(meta)
-            if meta.is_file()
-                && !meta.file_type().is_symlink()
-                && meta.len() <= 8 * 1024 * 1024 =>
-        {
-            let current = fs::read_to_string(config)?;
-            settings.current_config_sha256 = Some(sha(current.as_bytes()));
-            let mut proposed = current.clone();
-            for (title, names) in &to_disable {
-                match eden_install::disabled_config(&proposed, title, names) {
-                    Ok(next) => proposed = next,
-                    Err(err) => {
-                        settings.issue = Some(format!(
-                            "Eden settings invalid; installation blocked: {err}"
-                        ));
-                        break;
+        match fs::symlink_metadata(config) {
+            Ok(meta)
+                if meta.is_file()
+                    && !meta.file_type().is_symlink()
+                    && meta.len() <= 8 * 1024 * 1024 =>
+            {
+                let current = fs::read_to_string(config)?;
+                settings.current_config_sha256 = Some(sha(current.as_bytes()));
+                let mut proposed = current.clone();
+                for (title, names) in &to_disable {
+                    match eden_install::disabled_config(&proposed, title, names) {
+                        Ok(next) => proposed = next,
+                        Err(err) => {
+                            settings.issue = Some(format!(
+                                "Eden settings invalid; installation blocked: {err}"
+                            ));
+                            break;
+                        }
                     }
                 }
+                if settings.issue.is_none() {
+                    settings.would_update_config = proposed != current;
+                    settings.proposed_config_sha256 = Some(sha(proposed.as_bytes()));
+                    settings.proposed_disabled_settings_section = Some(section(&proposed));
+                }
             }
-            if settings.issue.is_none() {
-                settings.would_update_config = proposed != current;
-                settings.proposed_config_sha256 = Some(sha(proposed.as_bytes()));
-                settings.proposed_disabled_settings_section = Some(section(&proposed));
+            Ok(_) => {
+                settings.issue = Some(
+                    "Eden settings are symlinked, oversized or nonregular; installation blocked"
+                        .into(),
+                )
+            }
+            Err(err) => {
+                settings.issue = Some(format!(
+                    "Eden config unavailable; installation blocked: {err}"
+                ))
             }
         }
-        Ok(_) => {
-            settings.issue = Some(
-                "Eden settings are symlinked, oversized or nonregular; installation blocked".into(),
-            )
-        }
-        Err(err) => {
-            settings.issue = Some(format!(
-                "Eden config unavailable; installation blocked: {err}"
-            ))
-        }
-    }
     }
     // Only launch-context-linked main NSO build observations are shown as
     // evidence. A historical launch is never current-install verification.
@@ -481,9 +490,17 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         )
         .unwrap();
     }
-    writeln!(out, "\nEDEN SETTINGS: {} ({})", report.settings.config_path,
-        if report.files_only { "NOT READ OR MODIFIED in files-only mode" } else { "read-only proposed disabled settings" }
-    ).unwrap();
+    writeln!(
+        out,
+        "\nEDEN SETTINGS: {} ({})",
+        report.settings.config_path,
+        if report.files_only {
+            "NOT READ OR MODIFIED in files-only mode"
+        } else {
+            "read-only proposed disabled settings"
+        }
+    )
+    .unwrap();
     writeln!(
         out,
         "Would change config: {}",
