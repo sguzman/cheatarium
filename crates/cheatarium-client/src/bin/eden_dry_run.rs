@@ -3,7 +3,7 @@
 use super::{eden_install, prepare_addons, AutomaticReport, Bundle, ErrBox};
 use serde::Serialize;
 use sha2::{Digest, Sha256};
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
 use std::io::ErrorKind;
 use std::path::Path;
@@ -34,6 +34,23 @@ pub(super) struct DisabledSettingsPreview {
 }
 
 #[derive(Debug, Serialize)]
+pub(super) struct HistoricalBuildMatch {
+    pub(super) title_id: String,
+    pub(super) build_id: String,
+    pub(super) archived_cheat_candidate_in_plan: bool,
+    pub(super) current_installed_build_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
+pub(super) struct MainBuildEvidence {
+    pub(super) log_path: String,
+    pub(super) log_found: bool,
+    pub(super) historical_main_builds: Vec<HistoricalBuildMatch>,
+    pub(super) all_games_current_build_verified: bool,
+    pub(super) warning: &'static str,
+}
+
+#[derive(Debug, Serialize)]
 pub(super) struct DryRunReport<'a> {
     pub(super) format: &'static str,
     pub(super) read_only: bool,
@@ -41,6 +58,7 @@ pub(super) struct DryRunReport<'a> {
     pub(super) state_files_written: usize,
     pub(super) user_confirmation_required_before_install: bool,
     pub(super) discovery: &'a super::eden_auto::Discovery,
+    pub(super) main_build_evidence: MainBuildEvidence,
     pub(super) source_plans: &'a [super::Preview],
     pub(super) skipped: &'a [super::SkippedAutomaticBuild],
     pub(super) files: Vec<ProposedFile>,
@@ -77,6 +95,8 @@ pub(super) fn analyze<'a>(
     bundle: &Bundle,
     config: &Path,
     mods_root: &Path,
+    log_path: &Path,
+    evidence: &super::eden_builds::LaunchEvidence,
 ) -> Result<DryRunReport<'a>, ErrBox> {
     let mut files = Vec::new();
     let mut to_disable = BTreeMap::<String, Vec<String>>::new();
@@ -195,6 +215,25 @@ pub(super) fn analyze<'a>(
             ))
         }
     }
+    // Only launch-context-linked main NSO build observations are shown as
+    // evidence. A historical launch is never current-install verification.
+    let mut seen = BTreeSet::new();
+    let mut historical_main_builds = Vec::new();
+    for item in &evidence.main {
+        let key = (item.title_id.clone(), item.build_id.clone());
+        if !seen.insert(key) {
+            continue;
+        }
+        historical_main_builds.push(HistoricalBuildMatch {
+            archived_cheat_candidate_in_plan: report.planned.iter().any(|plan| {
+                plan.title_id == item.title_id
+                    && plan.explicitly_selected_build_id == item.build_id
+            }),
+            title_id: item.title_id.clone(),
+            build_id: item.build_id.clone(),
+            current_installed_build_verified: false,
+        });
+    }
     Ok(DryRunReport {
         format: "cheatarium-eden-detailed-dry-run-v1",
         read_only: true,
@@ -202,6 +241,13 @@ pub(super) fn analyze<'a>(
         state_files_written: 0,
         user_confirmation_required_before_install: true,
         discovery: &report.discovery,
+        main_build_evidence: MainBuildEvidence {
+            log_path: log_path.to_string_lossy().into_owned(),
+            log_found: evidence.log_found,
+            historical_main_builds,
+            all_games_current_build_verified: false,
+            warning: "Historical Eden main NSO logs are not proof of currently installed executable Build IDs; archived-only builds remain unverified.",
+        },
         source_plans: &report.planned,
         skipped: &report.skipped,
         files,
@@ -222,6 +268,13 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         report.discovery.games.len(),
         report.discovery.recognized_game_files,
         report.discovery.scanned_directories).unwrap();
+    writeln!(
+        out,
+        "EDEN MAIN BUILD LOG: {} (found: {})",
+        report.main_build_evidence.log_path,
+        report.main_build_evidence.log_found
+    ).unwrap();
+    writeln!(out, "{}", report.main_build_evidence.warning).unwrap();
     for game in &report.discovery.games {
         writeln!(out, "\nGAME: {} [{}]", game.display_name, game.title_id).unwrap();
         writeln!(
@@ -234,6 +287,23 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         if let Some(path) = &game.sample_game_file {
             writeln!(out, "  ROM filename witness: {path}").unwrap();
         }
+        let history: Vec<_> = report
+            .main_build_evidence
+            .historical_main_builds
+            .iter()
+            .filter(|item| item.title_id == game.title_id)
+            .collect();
+        if history.is_empty() {
+            writeln!(out, "  HISTORICAL MAIN BUILD: none observed in current Eden log").unwrap();
+        } else {
+            for item in &history {
+                writeln!(
+                    out,
+                    "  HISTORICAL MAIN BUILD: {} (archived cheats proposed: {}; NOT verified as currently installed)",
+                    item.build_id, item.archived_cheat_candidate_in_plan
+                ).unwrap();
+            }
+        }
         let plans: Vec<_> = report
             .source_plans
             .iter()
@@ -245,8 +315,13 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         for plan in plans {
             writeln!(
                 out,
-                "  ARCHIVED BUILD: {} (not verified as installed)",
-                plan.explicitly_selected_build_id
+                "  ARCHIVED BUILD: {} ({})",
+                plan.explicitly_selected_build_id,
+                if history.iter().any(|item| item.build_id == plan.explicitly_selected_build_id) {
+                    "historically observed main NSO; NOT verified current"
+                } else {
+                    "not observed as main in current log; NOT verified current"
+                }
             )
             .unwrap();
             for file in report.files.iter().filter(|f| {
