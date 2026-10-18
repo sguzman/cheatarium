@@ -1025,7 +1025,8 @@ jobs:
           assert d["proposed_addons"]
           paths = [a["proposed_mod_path"] for a in d["proposed_addons"]]
           assert len(set(paths)) == len(paths)
-          assert all(p.startswith("/tmp/eden/load/0100000000010000/Cheatarium-") for p in paths)
+          assert all(p.startswith("/tmp/eden/load/0100000000010000/") for p in paths)
+          assert all("Cheatarium-" not in p for p in paths)
           assert all(p.endswith("/cheats/B424BE150A8E7D78.txt") for p in paths)
           assert m["proposed_addons"] == []
           assert m["exact_archived_build_candidate_found"] is False
@@ -1234,6 +1235,96 @@ jobs:
           d=json.loads(Path(sys.argv[1]).read_text())
           assert d["installed_title_build_pairs"]==0
           assert d["already_installed_title_build_pairs"]==1
+          PY
+      - name: Migrate verified legacy Eden cheat folders to readable names without config writes
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          mkdir -p "$fixture/roms" "$fixture/cache" "$fixture/config" \
+            "$fixture/eden/load/0100000000010000/Unrelated Mod"
+          printf 'untouched\n' > "$fixture/eden/load/0100000000010000/Unrelated Mod/readme.txt"
+          touch "$fixture/roms/Super Mario Odyssey [0100000000010000].nsp"
+          printf '[UI]\nPaths\\gamedirs\\size=1\nPaths\\gamedirs\\1\\path=%s\nPaths\\gamedirs\\1\\deep_scan=true\n' "$fixture/roms" > "$fixture/config/qt-config.ini"
+          printf '[DisabledAddOns]\nsize=0\n' >> "$fixture/config/qt-config.ini"
+          cp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          cat > "$fixture/eden_log.txt" <<'LOG'
+          [ 1.00] Core <Info> core/core.cpp:Load:351: Loading Super Mario Odyssey (0100000000010000) ...
+          [ 1.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=B424BE150A8E7D780000000000000000, name=main
+          LOG
+          rename_cli() {
+            cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+              --db generated/v1 --config "$fixture/config/qt-config.ini" \
+              --cache-dir "$fixture/cache" --mods-root "$fixture/eden/load" \
+              --log "$fixture/eden_log.txt" --history-file "$fixture/no-history.json" \
+              --historical-main-only --only-title-id 0100000000010000 --files-only "$@" --json
+          }
+          rename_cli --dry-run > "$fixture/expected.json"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          plans=json.loads((root/"expected.json").read_text())["files"]
+          old=[
+              "Cheatarium-0000-Infinite-Health-Save-1-da91b01fa9b8",
+              "Cheatarium-0001-9999-Coins-Save-1-d0a6019d6f61",
+              "Cheatarium-0002-Refill-Health-Save-1-L-R-4d1faef1596c",
+              "Cheatarium-0003-Refill-Health-Save-1-press-L-R-d9f30e2e6972",
+              "Cheatarium-0004-Max-Purple-Coins-Save-1-01cdfc60125d"
+          ]
+          assert len(plans)==5
+          base=root/"eden/load/0100000000010000"
+          for old_name,entry in zip(old,plans):
+              assert entry["status"]=="would_create_no_config_change"
+              assert "Cheatarium-" not in entry["destination"]
+              directory=base/old_name/"cheats"
+              directory.mkdir(parents=True)
+              (directory/"B424BE150A8E7D78.txt").write_text(entry["exact_proposed_contents"])
+          PY
+          rename_cli --rename-installed --dry-run > "$fixture/rename-plan.json"
+          cmp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          python3 - "$fixture/rename-plan.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          d=json.loads(Path(sys.argv[1]).read_text())
+          assert d["mode"]=="read_only_rename_preview"
+          assert d["would_rename"]==5 and d["renamed"]==0
+          assert not d["eden_config_updated"]
+          assert len({x["readable_addon"] for x in d["addons"]})==5
+          PY
+          # Collision must abort before moving any of the five folders.
+          mkdir "$fixture/eden/load/0100000000010000/Infinite Health Save 1"
+          if rename_cli --rename-installed > "$fixture/unexpected.json"; then
+            echo "ERROR: legacy rename ignored colliding existing addon"
+            exit 1
+          fi
+          test -d "$fixture/eden/load/0100000000010000/Cheatarium-0000-Infinite-Health-Save-1-da91b01fa9b8"
+          rmdir "$fixture/eden/load/0100000000010000/Infinite Health Save 1"
+          rename_cli --rename-installed > "$fixture/renamed.json"
+          cmp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          d=json.loads((root/"renamed.json").read_text())
+          assert d["mode"]=="rename_verified_legacy_folders"
+          assert d["renamed"]==5 and d["would_rename"]==0
+          assert not d["eden_config_updated"]
+          base=root/"eden/load/0100000000010000"
+          for item in d["addons"]:
+              assert not (base/item["previous_addon"]).exists()
+              assert (base/item["readable_addon"]/"cheats/B424BE150A8E7D78.txt").is_file()
+              assert "Cheatarium-" not in item["readable_addon"]
+          assert (base/"Unrelated Mod/readme.txt").read_text()=="untouched\n"
+          PY
+          rename_cli --rename-installed > "$fixture/repeated.json"
+          cmp "$fixture/config/qt-config.ini" "$fixture/original.ini"
+          python3 - "$fixture/repeated.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          d=json.loads(Path(sys.argv[1]).read_text())
+          assert d["renamed"]==0 and d["already_readable"]==5
+          print("Five verified Eden addons renamed readably; config bytes unchanged and collision protected.")
           PY
       - name: Automatically discover Eden games and synthesize archived-build cheats without any IDs
         run: |
