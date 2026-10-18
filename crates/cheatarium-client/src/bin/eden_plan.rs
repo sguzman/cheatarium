@@ -12,6 +12,9 @@ use std::io::Write;
 use std::path::{Path, PathBuf};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
+
+#[path = "eden_install.rs"]
+mod eden_install;
 const MAX_PLANNED: usize = 2_000;
 const MAX_STAGED_TOTAL_BYTES: usize = 10 * 1024 * 1024;
 
@@ -337,15 +340,13 @@ fn write_new(path: &Path, contents: &[u8]) -> Result<(), ErrBox> {
     Ok(())
 }
 
-/// Explicitly staged output remains non-installed and is never linked into
-/// Eden's mod tree. Source code must pass the same checks as its preview.
-fn stage(
+/// Shared preflight and byte-for-byte rendering for staging and installation.
+/// No filesystem writes. The exact archived title/build source must match.
+fn prepare_addons(
     bundle: &Bundle,
     selection: &Preview,
-    stage_root: &Path,
     mods_root: &Path,
-) -> Result<StagingReport, ErrBox> {
-    safe_staging_destination(stage_root, mods_root)?;
+) -> Result<Vec<(StagedFile, Vec<u8>)>, ErrBox> {
     if selection.proposed_addons.is_empty() || !selection.exact_archived_build_candidate_found {
         return Err("Nothing to stage: no exact archived Title ID + Build ID match".into());
     }
@@ -425,6 +426,21 @@ fn stage(
     if prepared.len() != selection.proposed_addons.len() {
         return Err("Staging count mismatches the preview".into());
     }
+    Ok(prepared)
+}
+
+/// Explicitly staged output remains non-installed and is never linked into
+/// Eden's mod tree. Source code must pass the same checks as its preview.
+fn stage(
+    bundle: &Bundle,
+    selection: &Preview,
+    stage_root: &Path,
+    mods_root: &Path,
+) -> Result<StagingReport, ErrBox> {
+    safe_staging_destination(stage_root, mods_root)?;
+    let title = selection.title_id.as_str();
+    let build = selection.explicitly_selected_build_id.as_str();
+    let prepared = prepare_addons(bundle, selection, mods_root)?;
     // All checks above happen BEFORE the first filesystem mutation.
     fs::create_dir(stage_root)?; // no overwrite, no reuse
     let title_dir = stage_root.join(title);
