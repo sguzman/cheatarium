@@ -15,6 +15,8 @@ type ErrBox = Box<dyn Error + Send + Sync>;
 
 #[path = "eden_auto.rs"]
 mod eden_auto;
+#[path = "eden_dry_run.rs"]
+mod eden_dry_run;
 #[path = "eden_install.rs"]
 mod eden_install;
 const MAX_PLANNED: usize = 2_000;
@@ -635,6 +637,8 @@ fn run() -> Result<(), ErrBox> {
     let mut config = default_config();
     let mut cache_dir = eden_auto::default_cache_dir();
     let mut auto = false;
+    let mut dry_run = false;
+    let mut human_report = false;
     let mut install = false;
     let mut title = None;
     let mut build = None;
@@ -648,6 +652,8 @@ fn run() -> Result<(), ErrBox> {
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
             "--auto" => auto = true,
+            "--dry-run" => { dry_run = true; auto = true; },
+            "--report" => human_report = true,
             "--cache-dir" => {
                 cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?)
             }
@@ -672,11 +678,17 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("On-demand Cheatarium → Eden cheat synthesis (no IDs needed):\n  cheatarium-eden-plan --db generated/v1 --install --json\nThis discovers games from Eden's registered folders and cache, selects archived Build ID-specific cheats, and installs all available variants DISABLED by default. Eden must be closed.\nOptional: --auto for a read-only automatic preview; --title-id and --build-id for manual targeting; --config, --cache-dir, and --mods-root for portable setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nDetailed JSON (also read-only): --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if dry_run && (install || stage_dir.is_some()) {
+        return Err("--dry-run refuses --install and --stage-dir; it never writes".into());
+    }
+    if human_report && !dry_run {
+        return Err("--report requires --dry-run".into());
     }
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
@@ -695,7 +707,16 @@ fn run() -> Result<(), ErrBox> {
         verify_platform_distribution(&db, "switch")?;
         let bundle = load_platform(&db, "switch")?;
         let report = run_automatic(&bundle, &config, &cache_dir, &mod_root, install)?;
-        println!("{}", serde_json::to_string_pretty(&report)?);
+        if dry_run {
+            let detailed = eden_dry_run::analyze(&report, &bundle, &config, &mod_root)?;
+            if human_report {
+                print!("{}", eden_dry_run::render_human(&detailed));
+            } else {
+                println!("{}", serde_json::to_string_pretty(&detailed)?);
+            }
+        } else {
+            println!("{}", serde_json::to_string_pretty(&report)?);
+        }
         return Ok(());
     }
     let title = title.ok_or("Missing --title-id")?;
