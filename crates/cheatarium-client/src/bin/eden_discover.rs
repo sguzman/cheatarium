@@ -800,7 +800,7 @@ fn build_readiness(
         .collect();
     BuildReadiness {
         schema_version: 1,
-        read_only: true,
+        read_only: !history_written,
         evidence_source: "eden_registered_roots_and_historical_log",
         log_found: log.log_found,
         log_bytes_read: log.log_bytes_read,
@@ -1773,7 +1773,7 @@ fn run() -> Result<(), ErrBox> {
             summary.game_file_bytes_read = summary.inspected_nsp_file_bytes_read as u32;
             associate_nsp_ticket_hints(&mut summary, &report.game_files);
         }
-        if with_readiness {
+        let readiness_inputs = if with_readiness {
             let evidence = eden_builds::read_launch_evidence(&build_log, &index)?;
             let (history, written, exists) = if capture_build_history {
                 let (history, written) = eden_builds::eden_history::capture(&history_path, &evidence)?;
@@ -1783,25 +1783,26 @@ fn run() -> Result<(), ErrBox> {
                 let (history, exists) = eden_builds::eden_history::load(&history_path)?;
                 (history, false, exists)
             };
-            summary.build_readiness = Some(build_readiness(
-                &summary, &report, &evidence, &history, exists, written,
-            ));
-        }
+            Some((evidence, history, written, exists))
+        } else {
+            None
+        };
         if audit_all_files {
             let mut audit = run_registered_files_audit(summary, &report);
-            // Full audit enriches only the advisory counts; do not lose
-            // the historical readiness evidence attached to the summary.
-            if with_readiness {
-                let evidence = eden_builds::read_launch_evidence(&build_log, &index)?;
-                let (history, exists) = eden_builds::eden_history::load(&history_path)?;
-                let was_written = audit.inventory.build_readiness.as_ref()
-                    .is_some_and(|r| r.saved_history_written_this_run);
+            if let Some((evidence, history, written, exists)) = &readiness_inputs {
+                audit.inventory.read_only = !written;
                 audit.inventory.build_readiness = Some(build_readiness(
-                    &audit.inventory, &report, &evidence, &history, exists, was_written,
+                    &audit.inventory, &report, evidence, history, *exists, *written,
                 ));
             }
             println!("{}", serde_json::to_string_pretty(&audit)?);
         } else {
+            if let Some((evidence, history, written, exists)) = &readiness_inputs {
+                summary.read_only = !written;
+                summary.build_readiness = Some(build_readiness(
+                    &summary, &report, evidence, history, *exists, *written,
+                ));
+            }
             println!("{}", serde_json::to_string_pretty(&summary)?);
         }
     } else {
