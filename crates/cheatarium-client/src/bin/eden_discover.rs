@@ -83,6 +83,186 @@ struct Report {
     warnings: Vec<String>,
 }
 
+
+#[derive(Debug, Serialize)]
+struct InventoryGame {
+    title_id: String,
+    filename_labeled_base_files: usize,
+    in_eden_cache: bool,
+    archived_build_candidate_count: usize,
+    external_reference_count: usize,
+    update_files_in_registered_folders: usize,
+    installed_base_game_verified: bool,
+    installed_update_verified: bool,
+    installed_build_id_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct InventoryUpdate {
+    file_path: String,
+    update_title_id: String,
+    probable_base_title_id: String,
+    relationship_evidence: &'static str,
+    applied_by_eden_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct InventoryDlcFolder {
+    path: String,
+    file_count: usize,
+    installed_in_eden_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct InventorySummary {
+    schema_version: u32,
+    format: &'static str,
+    read_only: bool,
+    registered_game_roots: Vec<GameRoot>,
+    game_file_bytes_read: u32,
+    emulator_files_written: u32,
+    total_game_container_files: usize,
+    candidate_base_titles: Vec<InventoryGame>,
+    probable_update_files: Vec<InventoryUpdate>,
+    dlc_folder_groups: Vec<InventoryDlcFolder>,
+    filename_ids_not_classified: usize,
+    unresolved_filename_title_ids: Vec<String>,
+    cached_title_ids_without_labeled_base_file: Vec<String>,
+    installed_build_id_verified: bool,
+    warnings: Vec<&'static str>,
+}
+
+fn parsed_switch_id(value: &str) -> Option<u64> {
+    if !is_title_id(value) {
+        return None;
+    }
+    u64::from_str_radix(value, 16).ok()
+}
+
+/// Eden's GetUpdateTitleID(base) uses base | 0x800. This is
+/// a *label-level* relation, never proof that an update was applied.
+fn base_for_update_label(id: &str) -> Option<String> {
+    let raw = parsed_switch_id(id)?;
+    if raw & 0xfff != 0x800 {
+        return None;
+    }
+    Some(format!("{:016X}", raw & !0x800))
+}
+
+fn is_base_label(id: &str) -> bool {
+    parsed_switch_id(id).is_some_and(|raw| raw & 0xfff == 0)
+}
+
+/// Recognize directory labels only. This isn't content-type verification.
+fn dlc_directory(path: &str) -> Option<String> {
+    let mut folder = PathBuf::new();
+    for component in Path::new(path).components() {
+        folder.push(component.as_os_str());
+        let name = component.as_os_str().to_string_lossy();
+        if matches!(
+            name.to_ascii_lowercase().as_str(),
+            "dlc" | "aoc" | "add-ons" | "addons" | "downloadable-content"
+        ) {
+            return Some(folder.to_string_lossy().into_owned());
+        }
+    }
+    None
+}
+
+fn summarize_report(report: &Report) -> InventorySummary {
+    let mut base_counts = BTreeMap::<String, usize>::new();
+    let cached_ids: BTreeSet<String> = report.cached_titles.iter()
+        .filter(|item| is_base_label(&item.title_id))
+        .map(|item| item.title_id.clone())
+        .collect();
+    for id in &cached_ids {
+        base_counts.entry(id.clone()).or_default();
+    }
+
+    let mut updates = Vec::new();
+    let mut dlc_counts = BTreeMap::<String, usize>::new();
+    let mut unresolved = Vec::new();
+    let mut not_classified = 0;
+    for file in &report.game_files {
+        // A user-supplied /dlc/ directory is advisory evidence of add-on
+        // organization, not a claim about the game's executable identity.
+        if let Some(folder) = dlc_directory(&file.path) {
+            *dlc_counts.entry(folder).or_default() += 1;
+            continue;
+        }
+        match file.title_id.as_deref() {
+            Some(id) if base_for_update_label(id).is_some() => {
+                let base = base_for_update_label(id).expect("previous check");
+                base_counts.entry(base.clone()).or_default();
+                updates.push(InventoryUpdate {
+                    file_path: file.path.clone(),
+                    update_title_id: id.to_owned(),
+                    probable_base_title_id: base,
+                    relationship_evidence: "eden_get_update_title_id_bitmask_on_filename_label",
+                    applied_by_eden_verified: false,
+                });
+            }
+            Some(id) if is_base_label(id) => {
+                *base_counts.entry(id.to_owned()).or_default() += 1;
+            }
+            Some(_) => not_classified += 1,
+            None => unresolved.push(file.path.clone()),
+        }
+    }
+    let mut per_base_updates = BTreeMap::<String, usize>::new();
+    for item in &updates {
+        *per_base_updates.entry(item.probable_base_title_id.clone()).or_default() += 1;
+    }
+    let candidate_base_titles = base_counts.into_iter().map(|(id, count)| {
+        let matching = report.title_id_matches.iter().find(|m| m.title_id == id);
+        InventoryGame {
+            title_id: id.clone(),
+            filename_labeled_base_files: count,
+            in_eden_cache: cached_ids.contains(&id),
+            archived_build_candidate_count: matching.map_or(0, |m| m.archived_build_candidates.len()),
+            external_reference_count: matching.map_or(0, |m| m.external_reference_total),
+            update_files_in_registered_folders: per_base_updates.get(&id).copied().unwrap_or(0),
+            installed_base_game_verified: false,
+            installed_update_verified: false,
+            installed_build_id_verified: false,
+        }
+    }).collect();
+    let uncorrelated_cached = cached_ids.into_iter().filter(|id| {
+        !report.game_files.iter().any(|file|
+            file.title_id.as_deref() == Some(id.as_str()) && dlc_directory(&file.path).is_none()
+        )
+    }).collect();
+    InventorySummary {
+        schema_version: 1,
+        format: "cheatarium-eden-inventory-summary-v1",
+        read_only: true,
+        registered_game_roots: report.game_roots.iter().map(|root| GameRoot {
+            path: root.path.clone(),
+            deep_scan: root.deep_scan,
+            status: root.status,
+        }).collect(),
+        game_file_bytes_read: report.game_file_bytes_read,
+        emulator_files_written: report.emulator_files_written,
+        total_game_container_files: report.game_files.len(),
+        candidate_base_titles,
+        probable_update_files: updates,
+        dlc_folder_groups: dlc_counts.into_iter().map(|(path, file_count)| InventoryDlcFolder {
+            path, file_count, installed_in_eden_verified: false
+        }).collect(),
+        filename_ids_not_classified: not_classified,
+        unresolved_filename_title_ids: unresolved,
+        cached_title_ids_without_labeled_base_file: uncorrelated_cached,
+        installed_build_id_verified: false,
+        warnings: vec![
+            "Directory/filename and cached Title IDs are advisory; files may be renamed or removed.",
+            "Folder labels such as dlc are user organization, not authenticated Switch content types.",
+            "An update NSP in a registered folder does not mean Eden installed or selected it.",
+            "Only main executable metadata from the runtime or authenticated game content can verify installed Build IDs.",
+            "No ROM contents, keys or emulator settings were read or modified.",
+        ],
+    }
+}
+
 fn is_title_id(value: &str) -> bool {
     value.len() == 16 && value.starts_with("01") && value.bytes().all(|b| b.is_ascii_hexdigit())
 }
@@ -442,6 +622,7 @@ fn run() -> Result<(), ErrBox> {
     let mut config = default_config();
     let mut cache_dir = default_cache_dir();
     let mut extra_roots = Vec::new();
+    let mut summary = false;
     let mut explicit_ids = BTreeSet::new();
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -466,8 +647,9 @@ fn run() -> Result<(), ErrBox> {
                 explicit_ids.insert(id);
             }
             "--json" => {}
+            "--summary" => summary = true,
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--json]\nNo ROM contents or emulator files are changed.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--json]\nNo ROM contents or emulator files are changed.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -586,7 +768,11 @@ fn run() -> Result<(), ErrBox> {
             compatible_with_installed_game: false,
         });
     }
-    println!("{}", serde_json::to_string_pretty(&report)?);
+    if summary {
+        println!("{}", serde_json::to_string_pretty(&summarize_report(&report))?);
+    } else {
+        println!("{}", serde_json::to_string_pretty(&report)?);
+    }
     Ok(())
 }
 
@@ -711,6 +897,31 @@ mod tests {
         assert!(games.iter().all(|g| !g.installed_game_verified));
         assert!(warnings.is_empty());
         fs::remove_dir_all(&path).unwrap();
+    }
+
+
+    #[test]
+    fn update_title_label_uses_edens_base_or_0x800_rule() {
+        assert_eq!(
+            base_for_update_label("0100000000010800").as_deref(),
+            Some("0100000000010000")
+        );
+        assert_eq!(
+            base_for_update_label("01006A800016E800").as_deref(),
+            Some("01006A800016E000")
+        );
+        assert!(base_for_update_label("01006A800016F006").is_none());
+        assert!(base_for_update_label("garbage").is_none());
+        assert!(is_base_label("0100000000010000"));
+    }
+
+    #[test]
+    fn dlc_directory_is_a_path_hint_only() {
+        assert_eq!(
+            dlc_directory("/games/super-smash/dlc/Cosmetic [01006A800016F040].nsp").as_deref(),
+            Some("/games/super-smash/dlc")
+        );
+        assert!(dlc_directory("/games/super-smash/base-game/Game.nsp").is_none());
     }
 
     #[test]
