@@ -2011,7 +2011,7 @@ volume=100
         };
         let output = run_registered_files_audit(summarize_report(&report), &report);
         assert_eq!(output.audit_file_count, 3);
-        assert_eq!(output.inspected_nsp_file_bytes_read, output.files[0].header_bytes_read);
+        assert_eq!(output.inventory.inspected_nsp_file_bytes_read, output.files[0].header_bytes_read);
         assert_eq!(output.header_inspections_attempted, 2);
         assert_eq!(output.listed_only_files, 1);
         assert!(output.complete_registered_file_inventory);
