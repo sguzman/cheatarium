@@ -115,7 +115,6 @@ struct InventoryDlcFolder {
     installed_in_eden_verified: bool,
 }
 
-
 #[derive(Debug, Serialize)]
 struct NspHeaderInspection {
     file_path: String,
@@ -216,7 +215,7 @@ fn inspect_unresolved_nsp(path: &str) -> NspHeaderInspection {
     let names = &buffer[names_start..data_start];
     let mut ticket_ids = BTreeSet::new();
     for idx in 0..entries {
-        let e = &buffer[(16+24*idx)..(16+24*(idx+1))];
+        let e = &buffer[(16 + 24 * idx)..(16 + 24 * (idx + 1))];
         let offset = read_u64(&e[0..8]);
         let size = read_u64(&e[8..16]);
         let name_start = read_u32(&e[16..20]) as usize;
@@ -232,7 +231,7 @@ fn inspect_unresolved_nsp(path: &str) -> NspHeaderInspection {
             report.status = "malformed";
             return report;
         };
-        let Ok(name) = std::str::from_utf8(&names[name_start..name_start+end]) else {
+        let Ok(name) = std::str::from_utf8(&names[name_start..name_start + end]) else {
             report.status = "malformed";
             return report;
         };
@@ -243,8 +242,10 @@ fn inspect_unresolved_nsp(path: &str) -> NspHeaderInspection {
             report.status = "malformed";
             return report;
         };
-        if content_end > meta.len() || name.contains(['/', '\\'])
-            || name.is_empty() || name.chars().any(char::is_control)
+        if content_end > meta.len()
+            || name.contains(['/', '\\'])
+            || name.is_empty()
+            || name.chars().any(char::is_control)
         {
             report.status = "malformed";
             return report;
@@ -1142,17 +1143,24 @@ fn run() -> Result<(), ErrBox> {
         summary.cached_update_displays =
             read_cached_update_displays(&cache_dir, &summary.candidate_base_titles);
         if inspect_nsp_headers {
-            let filenames: Vec<_> = report.game_files.iter()
+            let filenames: Vec<_> = report
+                .game_files
+                .iter()
                 .filter(|f| f.title_id.is_none() && f.file_type == "nsp")
-                .take(MAX_NSP_HEADER_INSPECTIONS + 1).collect();
+                .take(MAX_NSP_HEADER_INSPECTIONS + 1)
+                .collect();
             summary.unresolved_nsp_inspections_truncated =
                 filenames.len() > MAX_NSP_HEADER_INSPECTIONS;
-            summary.unresolved_nsp_header_inspections = filenames.into_iter()
+            summary.unresolved_nsp_header_inspections = filenames
+                .into_iter()
                 .take(MAX_NSP_HEADER_INSPECTIONS)
-                .map(|file| inspect_unresolved_nsp(&file.path)).collect();
-            summary.inspected_nsp_file_bytes_read =
-                summary.unresolved_nsp_header_inspections.iter()
-                    .map(|entry| entry.bytes_read).sum();
+                .map(|file| inspect_unresolved_nsp(&file.path))
+                .collect();
+            summary.inspected_nsp_file_bytes_read = summary
+                .unresolved_nsp_header_inspections
+                .iter()
+                .map(|entry| entry.bytes_read)
+                .sum();
             summary.game_file_bytes_read = summary.inspected_nsp_file_bytes_read as u32;
         }
         println!("{}", serde_json::to_string_pretty(&summary)?);
@@ -1356,7 +1364,6 @@ volume=100
             .all(|x| !x.current_update_applied_verified));
     }
 
-
     fn write_synthetic_nsp(path: &Path, names: &[(&str, &[u8])]) {
         let mut strings = Vec::new();
         let mut entries = Vec::new();
@@ -1385,19 +1392,29 @@ volume=100
     #[test]
     fn bounded_pfs0_inspection_only_recovers_untrusted_ticket_filename_hints() {
         let p = env::temp_dir().join(format!(
-            "cheatarium-pfs0-{}-{:?}.nsp", std::process::id(),
+            "cheatarium-pfs0-{}-{:?}.nsp",
+            std::process::id(),
             std::thread::current().id()
         ));
-        write_synthetic_nsp(&p, &[
-            ("0100152000022000abcdef1234567890.tik", b"private ticket data"),
-            ("abcd.cnmt.nca", b"encrypted meta"),
-            ("abcd.nca", b"encrypted executable"),
-        ]);
+        write_synthetic_nsp(
+            &p,
+            &[
+                (
+                    "0100152000022000abcdef1234567890.tik",
+                    b"private ticket data",
+                ),
+                ("abcd.cnmt.nca", b"encrypted meta"),
+                ("abcd.nca", b"encrypted executable"),
+            ],
+        );
         let r = inspect_unresolved_nsp(p.to_str().unwrap());
         assert_eq!(r.status, "outer_pfs0_metadata_only");
         assert_eq!(r.nca_file_entries, 2);
         assert_eq!(r.cnmt_nca_file_entries, 1);
-        assert_eq!(r.ticket_filename_title_id_candidates, vec!["0100152000022000"]);
+        assert_eq!(
+            r.ticket_filename_title_id_candidates,
+            vec!["0100152000022000"]
+        );
         assert!(!r.executable_build_id_found);
         assert!(!r.installed_build_id_verified);
         assert!(r.bytes_read > 16);
@@ -1407,18 +1424,25 @@ volume=100
     #[test]
     fn rejects_malformed_outer_pfs0_without_reading_past_prefix() {
         let p = env::temp_dir().join(format!(
-            "cheatarium-pfs0-malformed-{}-{:?}.nsp", std::process::id(),
+            "cheatarium-pfs0-malformed-{}-{:?}.nsp",
+            std::process::id(),
             std::thread::current().id()
         ));
         fs::write(&p, b"PFS0").unwrap();
-        assert_eq!(inspect_unresolved_nsp(p.to_str().unwrap()).status, "too_short");
+        assert_eq!(
+            inspect_unresolved_nsp(p.to_str().unwrap()).status,
+            "too_short"
+        );
         // Oversized count is rejected before any table allocation.
         let mut bytes = b"PFS0".to_vec();
         bytes.extend_from_slice(&u32::MAX.to_le_bytes());
         bytes.extend_from_slice(&0u32.to_le_bytes());
         bytes.extend_from_slice(&[0; 4]);
         fs::write(&p, &bytes).unwrap();
-        assert_eq!(inspect_unresolved_nsp(p.to_str().unwrap()).status, "too_many_entries");
+        assert_eq!(
+            inspect_unresolved_nsp(p.to_str().unwrap()).status,
+            "too_many_entries"
+        );
         fs::remove_file(p).unwrap();
     }
 
