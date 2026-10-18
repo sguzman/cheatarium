@@ -217,7 +217,7 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
     Ok(out)
 }
 
-pub(super) fn log_default() -> PathBuf {
+pub(crate) fn log_default() -> PathBuf {
     let data = env::var_os("XDG_DATA_HOME")
         .map(PathBuf::from)
         .or_else(|| env::var_os("HOME").map(|h| PathBuf::from(h).join(".local/share")))
@@ -327,33 +327,33 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
 
 
 #[derive(Debug, Clone)]
-pub(super) struct MainBuildObservation {
-    pub(super) title_id: String,
-    pub(super) build_id: String,
-    pub(super) archived_candidate: bool,
-    pub(super) launch_context_ordinal: usize,
+pub(crate) struct MainBuildObservation {
+    pub(crate) title_id: String,
+    pub(crate) build_id: String,
+    pub(crate) archived_candidate: bool,
+    pub(crate) launch_context_ordinal: usize,
 }
 
 #[derive(Debug, Clone)]
-pub(super) struct WeakLookupObservation {
-    pub(super) title_id: String,
-    pub(super) build_id: String,
+pub(crate) struct WeakLookupObservation {
+    pub(crate) title_id: String,
+    pub(crate) build_id: String,
 }
 
 #[derive(Debug)]
-pub(super) struct LaunchEvidence {
-    pub(super) log_found: bool,
-    pub(super) log_bytes_read: usize,
-    pub(super) core_launch_contexts: usize,
-    pub(super) main_queries: usize,
-    pub(super) orphan_queries: usize,
-    pub(super) main: Vec<MainBuildObservation>,
-    pub(super) weak_lookup: Vec<WeakLookupObservation>,
+pub(crate) struct LaunchEvidence {
+    pub(crate) log_found: bool,
+    pub(crate) log_bytes_read: usize,
+    pub(crate) core_launch_contexts: usize,
+    pub(crate) main_queries: usize,
+    pub(crate) orphan_queries: usize,
+    pub(crate) main: Vec<MainBuildObservation>,
+    pub(crate) weak_lookup: Vec<WeakLookupObservation>,
 }
 
 /// Reuse the same bounded Eden log parser in discovery; never reinterpret
 /// a cheat-file lookup as main executable evidence or an installed Build ID.
-pub(super) fn read_launch_evidence(
+pub(crate) fn read_launch_evidence(
     path: &Path,
     index: &GameIndex,
 ) -> Result<LaunchEvidence, ErrBox> {
