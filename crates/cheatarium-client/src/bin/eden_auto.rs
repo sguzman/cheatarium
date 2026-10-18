@@ -12,8 +12,19 @@ const MAX_DEPTH: usize = 64;
 const MAX_TITLES: usize = 1024;
 
 #[derive(Debug, serde::Serialize)]
+pub(super) struct DiscoveredGame {
+    pub(super) title_id: String,
+    pub(super) display_name: String,
+    pub(super) name_evidence: &'static str,
+    pub(super) discovery_evidence: Vec<&'static str>,
+    pub(super) sample_game_file: Option<String>,
+    pub(super) executable_build_id_verified: bool,
+}
+
+#[derive(Debug, serde::Serialize)]
 pub(super) struct Discovery {
     pub(super) titles: Vec<String>,
+    pub(super) games: Vec<DiscoveredGame>,
     pub(super) cache_titles: usize,
     pub(super) filename_titles: usize,
     pub(super) recognized_game_files: usize,
@@ -146,6 +157,7 @@ fn configured_roots(contents: &str) -> Vec<(PathBuf, bool)> {
 pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox> {
     let mut out = Discovery {
         titles: Vec::new(),
+        games: Vec::new(),
         cache_titles: 0,
         filename_titles: 0,
         recognized_game_files: 0,
@@ -157,6 +169,8 @@ pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox>
     let mut ids = BTreeSet::<String>::new();
     let mut cache_ids = BTreeSet::<String>::new();
     let mut filename_ids = BTreeSet::<String>::new();
+    let mut names = BTreeMap::<String, (String, &'static str)>::new();
+    let mut file_examples = BTreeMap::<String, String>::new();
     if let Ok(meta) = fs::symlink_metadata(cache) {
         if meta.file_type().is_symlink() || !meta.is_dir() {
             return Err("Eden game-list cache is not a plain directory".into());
@@ -180,7 +194,16 @@ pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox>
             if !is_base_id(stem) {
                 continue;
             }
-            cache_ids.insert(stem.to_ascii_uppercase());
+            let id = stem.to_ascii_uppercase();
+            cache_ids.insert(id.clone());
+            if name.ends_with(".appname.txt") && meta.len() <= 4096 {
+                if let Ok(value) = fs::read_to_string(entry.path()) {
+                    let name = value.trim_matches('\0').trim();
+                    if !name.is_empty() && name.len() <= 240 && !name.chars().any(char::is_control) {
+                        names.insert(id, (name.to_owned(), "eden_appname_cache"));
+                    }
+                }
+            }
         }
     } else {
         out.warnings.push("Eden game-list cache absent".into());
@@ -253,7 +276,16 @@ pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox>
                 out.recognized_game_files += 1;
                 let name = entry.file_name().to_string_lossy().into_owned();
                 if let Some(id) = labeled_title(&name) {
-                    filename_ids.insert(id);
+                    filename_ids.insert(id.clone());
+                    file_examples.entry(id.clone())
+                        .or_insert_with(|| entry.path().to_string_lossy().into_owned());
+                    if !names.contains_key(&id) {
+                        let label = name.split('[').next().unwrap_or("").trim()
+                            .trim_end_matches(".nsp").trim_end_matches(".xci").trim();
+                        if !label.is_empty() && label.len() <= 180 && !label.chars().any(char::is_control) {
+                            names.insert(id, (label.to_owned(), "rom_filename_label"));
+                        }
+                    }
                 }
             }
         }
@@ -263,6 +295,18 @@ pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox>
         return Err("Too many discovered Eden base Title IDs".into());
     }
     out.titles = ids.into_iter().collect();
+    out.games = out.titles.iter().map(|id| {
+        let (display_name, name_evidence) = names.get(id)
+            .cloned().unwrap_or((id.clone(), "no_title_name_available"));
+        let mut discovery_evidence = Vec::new();
+        if cache_ids.contains(id) { discovery_evidence.push("eden_game_list_cache"); }
+        if filename_ids.contains(id) { discovery_evidence.push("rom_filename_title_id"); }
+        DiscoveredGame {
+            title_id: id.clone(), display_name, name_evidence,
+            discovery_evidence, sample_game_file: file_examples.get(id).cloned(),
+            executable_build_id_verified: false,
+        }
+    }).collect();
     out.cache_titles = cache_ids.len();
     out.filename_titles = filename_ids.len();
     Ok(out)
