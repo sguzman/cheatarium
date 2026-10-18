@@ -1265,19 +1265,19 @@ jobs:
           from pathlib import Path
           root=Path(sys.argv[1])
           plans=json.loads((root/"expected.json").read_text())["files"]
-          old=[
-              "Cheatarium-0000-Infinite-Health-Save-1-da91b01fa9b8",
-              "Cheatarium-0001-9999-Coins-Save-1-d0a6019d6f61",
-              "Cheatarium-0002-Refill-Health-Save-1-L-R-4d1faef1596c",
-              "Cheatarium-0003-Refill-Health-Save-1-press-L-R-d9f30e2e6972",
-              "Cheatarium-0004-Max-Purple-Coins-Save-1-01cdfc60125d"
-          ]
+          old={
+              "Infinite Health Save 1": "Cheatarium-0000-Infinite-Health-Save-1-da91b01fa9b8",
+              "9999 Coins Save 1": "Cheatarium-0001-9999-Coins-Save-1-d0a6019d6f61",
+              "Refill Health Save 1 (L+R)": "Cheatarium-0002-Refill-Health-Save-1-L-R-4d1faef1596c",
+              "Refill Health Save 1 press (L+R)": "Cheatarium-0003-Refill-Health-Save-1-press-L-R-d9f30e2e6972",
+              "Max Purple Coins Save 1": "Cheatarium-0004-Max-Purple-Coins-Save-1-01cdfc60125d"
+          }
           assert len(plans)==5
           base=root/"eden/load/0100000000010000"
-          for old_name,entry in zip(old,plans):
+          for entry in plans:
               assert entry["status"]=="would_create_no_config_change"
               assert "Cheatarium-" not in entry["destination"]
-              directory=base/old_name/"cheats"
+              directory=base/old[entry["cheat_name"]]/"cheats"
               directory.mkdir(parents=True)
               (directory/"B424BE150A8E7D78.txt").write_text(entry["exact_proposed_contents"])
           PY
