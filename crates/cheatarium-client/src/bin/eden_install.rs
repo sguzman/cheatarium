@@ -1,7 +1,8 @@
 //! On-demand Eden cheat installation. Existing mods never overwritten.
 //! Disable every new per-cheat addon in Eden's QSettings before creating it.
-use super::{prepare_addons, Bundle, ErrBox, Preview, StagedFile};
+use super::{prepare_addons, Bundle, ErrBox, Preview};
 use serde::Serialize;
+use sha2::Digest;
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs::{self, OpenOptions};
 use std::io::Write;
@@ -273,7 +274,7 @@ pub(super) fn install(
     for (entry, _) in &prepared {
         let relative = Path::new(&entry.relative_path);
         let parts = relative.components().collect::<Vec<_>>();
-        if parts.len() != 4 || parts[0].as_os_str() != title
+        if parts.len() != 4 || parts[0].as_os_str() != std::ffi::OsStr::new(title)
             || parts[2].as_os_str() != "cheats"
         {
             return Err("Unrecognized planned Eden addon structure".into());
