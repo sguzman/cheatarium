@@ -103,6 +103,30 @@ fn safe_label(s: &str) -> String {
     }
 }
 
+/// Render a human-facing Eden add-on title. Preserve useful punctuation
+/// and the source's Save 1 qualifier; do not expose internal ordinals/hashes.
+/// Filesystem separators and control characters are deliberately excluded.
+fn eden_display_label(s: &str) -> String {
+    let mut result = String::new();
+    let mut pending_space = false;
+    for c in s.trim().chars() {
+        let safe = c.is_ascii_alphanumeric() || matches!(c, '(' | ')' | '+' | '-' | '_' | '.');
+        if safe {
+            if pending_space && !result.is_empty() && result.len() < 66 {
+                result.push(' ');
+            }
+            if result.len() + c.len_utf8() > 68 {
+                break;
+            }
+            result.push(c);
+            pending_space = false;
+        } else {
+            pending_space = true;
+        }
+    }
+    if result.is_empty() { "Unnamed Cheat".to_owned() } else { result }
+}
+
 fn default_config() -> PathBuf {
     if let Some(config) = env::var_os("XDG_CONFIG_HOME") {
         return PathBuf::from(config).join("eden/qt-config.ini");
@@ -184,6 +208,7 @@ fn preview(bundle: &Bundle, title: &str, build: &str, mod_root: &Path) -> Result
     let files = select(bundle, title, build);
     let mut addons = Vec::new();
     let mut rejected = Vec::new();
+    let mut used_friendly_names = BTreeMap::<String, usize>::new();
     let exact_found = !files.is_empty();
     for file in files {
         for entry in &file.codes {
@@ -203,16 +228,17 @@ fn preview(bundle: &Bundle, title: &str, build: &str, mod_root: &Path) -> Result
                 });
                 continue;
             };
-            // Stable per-source identity; duplicate effect titles never overwrite
-            // one another because they get distinct add-on directories.
-            let ident = format!("{}:{}:{}", file.id, entry.ordinal, text);
-            let digest = format!("{:x}", Sha256::digest(ident.as_bytes()));
-            let filename = format!(
-                "Cheatarium-{:04}-{}-{}",
-                entry.ordinal,
-                safe_label(description),
-                &digest[..12]
-            );
+            // Source descriptions are the UI label. In the rare event two
+            // source entries have identical labels, suffix numerically.
+            // Keep provenance and source checksums in the report, not Eden UI.
+            let friendly = eden_display_label(description);
+            let count = used_friendly_names.entry(friendly.clone()).or_default();
+            *count += 1;
+            let filename = if *count == 1 {
+                friendly
+            } else {
+                format!("{friendly} ({count})")
+            };
             let path = mod_root
                 .join(title)
                 .join(filename)
@@ -1066,11 +1092,24 @@ mod tests {
         assert_eq!(out.rejected_entries.len(), 1);
         assert!(out.proposed_addons[0]
             .proposed_mod_path
-            .contains("/0100000000010000/Cheatarium-"));
+            .contains("/0100000000010000/Infinite Health (L+R)/"));
         assert!(out.proposed_addons[0]
             .proposed_mod_path
             .ends_with("/cheats/B424BE150A8E7D78.txt"));
         assert!(!out.installed_build_id_verified);
+    }
+
+    #[test]
+    fn friendly_eden_filenames_preserve_readable_source_names_and_uniqueness() {
+        assert_eq!(eden_display_label("Infinite Health Save 1"), "Infinite Health Save 1");
+        assert_eq!(eden_display_label("Refill Health Save 1 (L+R)"), "Refill Health Save 1 (L+R)");
+        assert_eq!(eden_display_label("../unsafe"), "unsafe");
+        let mut source = fixture();
+        source.records[0].codes.retain(|entry| entry.ordinal == 0);
+        let plan = preview(&source, "0100000000010000", "B424BE150A8E7D78",
+            Path::new("/tmp/eden/load")).unwrap();
+        assert!(plan.proposed_addons[0].proposed_mod_path.contains("/Infinite Health (L+R)/cheats/"));
+        assert!(!plan.proposed_addons[0].proposed_mod_path.contains("Cheatarium-"));
     }
 
     #[test]
