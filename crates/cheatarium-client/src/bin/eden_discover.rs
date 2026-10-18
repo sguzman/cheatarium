@@ -600,6 +600,15 @@ struct ObservedMainBuild {
 }
 
 #[derive(Debug, Serialize)]
+struct StoredMainBuild {
+    build_id: String,
+    first_captured_unix_seconds: u64,
+    last_captured_unix_seconds: u64,
+    archived_build_candidate_found: bool,
+    historical_snapshot_only: bool,
+}
+
+#[derive(Debug, Serialize)]
 struct PerGameBuildReadiness {
     title_id: String,
     cached_title_name: Option<String>,
@@ -609,6 +618,8 @@ struct PerGameBuildReadiness {
     archived_build_ids: Vec<String>,
     historical_main_executable_builds: Vec<ObservedMainBuild>,
     weaker_cheat_lookup_build_ids: Vec<String>,
+    saved_historical_main_builds: Vec<StoredMainBuild>,
+    saved_cheat_lookup_build_ids: Vec<String>,
     evidence_state: &'static str,
     current_installed_build_verified: bool,
     compatible_cheat_verified: bool,
@@ -628,6 +639,11 @@ struct BuildReadiness {
     archived_main_build_matches: usize,
     games_with_historical_main_builds: usize,
     games_needing_main_build_evidence: usize,
+    saved_history_file_present: bool,
+    saved_history_written_this_run: bool,
+    saved_history_records: usize,
+    games_with_saved_historical_main_builds: usize,
+    saved_history_last_captured_unix_seconds: Option<u64>,
     observed_log_title_ids_outside_current_inventory: Vec<String>,
     games: Vec<PerGameBuildReadiness>,
     current_installed_builds_verified: bool,
@@ -639,6 +655,9 @@ fn build_readiness(
     inventory: &InventorySummary,
     report: &Report,
     log: &eden_builds::LaunchEvidence,
+    history: &eden_builds::eden_history::History,
+    history_exists: bool,
+    history_written: bool,
 ) -> BuildReadiness {
     let mut by_title = BTreeMap::<String, BTreeMap<String, (bool, BTreeSet<usize>)>>::new();
     for observation in &log.main {
@@ -671,6 +690,7 @@ fn build_readiness(
         .into_iter()
         .collect();
     let mut matches = 0usize;
+    let mut saved_count = 0usize;
     let mut historical_count = 0usize;
     let mut missing = 0usize;
     let games = inventory
@@ -718,14 +738,37 @@ fn build_readiness(
                 .get(&game.title_id)
                 .map(|set| set.iter().cloned().collect())
                 .unwrap_or_default();
+            let stored_main: Vec<StoredMainBuild> = history.entries.iter()
+                .filter(|record| record.title_id == game.title_id && record.evidence_kind == "main_nso")
+                .map(|record| StoredMainBuild {
+                    build_id: record.build_id.clone(),
+                    first_captured_unix_seconds: record.first_captured_unix_seconds,
+                    last_captured_unix_seconds: record.last_captured_unix_seconds,
+                    archived_build_candidate_found: archive.contains(&record.build_id),
+                    historical_snapshot_only: true,
+                }).collect();
+            if !stored_main.is_empty() {
+                saved_count += 1;
+            }
+            let saved_lookup: Vec<String> = history.entries.iter()
+                .filter(|record| record.title_id == game.title_id && record.evidence_kind == "cheat_lookup")
+                .map(|record| record.build_id.clone()).collect();
             let evidence_state = if main.len() > 1 {
                 "multiple_historical_main_builds_ambiguous"
             } else if main.len() == 1 && main[0].archived_build_candidate_found {
                 "historical_main_build_matches_archived_candidate"
             } else if main.len() == 1 {
                 "historical_main_build_not_in_archive"
+            } else if stored_main.len() > 1 {
+                "stored_multiple_main_builds_ambiguous"
+            } else if stored_main.len() == 1 && stored_main[0].archived_build_candidate_found {
+                "stored_historical_main_build_matches_archive_only"
+            } else if stored_main.len() == 1 {
+                "stored_historical_main_build_not_in_archive"
             } else if !lookup_ids.is_empty() {
                 "cheat_lookup_only_no_main_build"
+            } else if !saved_lookup.is_empty() {
+                "stored_cheat_lookup_only_no_main_build"
             } else if !log.log_found {
                 "eden_log_missing"
             } else {
@@ -746,6 +789,8 @@ fn build_readiness(
                 archived_build_ids: archive,
                 historical_main_executable_builds: main,
                 weaker_cheat_lookup_build_ids: lookup_ids,
+                saved_historical_main_builds: stored_main,
+                saved_cheat_lookup_build_ids: saved_lookup,
                 evidence_state,
                 current_installed_build_verified: false,
                 compatible_cheat_verified: false,
@@ -765,6 +810,12 @@ fn build_readiness(
         archived_main_build_matches: matches,
         games_with_historical_main_builds: historical_count,
         games_needing_main_build_evidence: missing,
+        saved_history_file_present: history_exists,
+        saved_history_written_this_run: history_written,
+        saved_history_records: history.entries.len(),
+        games_with_saved_historical_main_builds: saved_count,
+        saved_history_last_captured_unix_seconds: history.entries.iter()
+            .map(|record| record.last_captured_unix_seconds).max(),
         observed_log_title_ids_outside_current_inventory: outside,
         games,
         current_installed_builds_verified: false,
@@ -774,6 +825,9 @@ fn build_readiness(
             "Cheat-file lookup Build IDs are weaker signals and never promoted to main executable evidence.",
             "Eden game-list caches, filenames and update files do not verify what is currently running.",
             "Historical matches do not verify installed versions, compatibility, safety or permission to install cheats.",
+            "Saved Build ID history contains only observed identifiers and capture times, never full Eden logs.",
+            "Capture timestamps reflect when a prior log was collected, not when the game ran.",
+            "A stored historical Build ID never proves an installed version or current compatibility.",
             "No game images or encryption keys are read by this optional readiness mode.",
             "No cheats are installed, enabled or written to emulator configuration.",
         ],
@@ -1517,6 +1571,8 @@ fn run() -> Result<(), ErrBox> {
     let mut audit_all_files = false;
     let mut with_readiness = false;
     let mut build_log = eden_builds::log_default();
+    let mut history_path = eden_builds::eden_history::default_path();
+    let mut capture_build_history = false;
     let mut explicit_ids = BTreeSet::new();
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -1545,13 +1601,18 @@ fn run() -> Result<(), ErrBox> {
             "--inspect-nsp-headers" => inspect_nsp_headers = true,
             "--audit-all-files" => audit_all_files = true,
             "--build-readiness" => with_readiness = true,
+            "--capture-build-history" => capture_build_history = true,
+            "--history-file" => history_path = PathBuf::from(args.next().ok_or("--history-file requires an absolute path")?),
             "--log" => build_log = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--log PATH] [--json]\nNo ROM contents or emulator files are changed.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--history-file PATH] [--log PATH] [--json]\nNo ROM contents or emulator files are changed.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if capture_build_history && !with_readiness {
+        return Err("--capture-build-history requires --build-readiness".into());
     }
     if with_readiness && !summary {
         return Err("--build-readiness requires --summary".into());
@@ -1712,19 +1773,35 @@ fn run() -> Result<(), ErrBox> {
             summary.game_file_bytes_read = summary.inspected_nsp_file_bytes_read as u32;
             associate_nsp_ticket_hints(&mut summary, &report.game_files);
         }
+        if with_readiness {
+            let evidence = eden_builds::read_launch_evidence(&build_log, &index)?;
+            let (history, written, exists) = if capture_build_history {
+                let (history, written) = eden_builds::eden_history::capture(&history_path, &evidence)?;
+                let exists = written || eden_builds::eden_history::load(&history_path)?.1;
+                (history, written, exists)
+            } else {
+                let (history, exists) = eden_builds::eden_history::load(&history_path)?;
+                (history, false, exists)
+            };
+            summary.build_readiness = Some(build_readiness(
+                &summary, &report, &evidence, &history, exists, written,
+            ));
+        }
         if audit_all_files {
             let mut audit = run_registered_files_audit(summary, &report);
+            // Full audit enriches only the advisory counts; do not lose
+            // the historical readiness evidence attached to the summary.
             if with_readiness {
                 let evidence = eden_builds::read_launch_evidence(&build_log, &index)?;
-                audit.inventory.build_readiness =
-                    Some(build_readiness(&audit.inventory, &report, &evidence));
+                let (history, exists) = eden_builds::eden_history::load(&history_path)?;
+                let was_written = audit.inventory.build_readiness.as_ref()
+                    .is_some_and(|r| r.saved_history_written_this_run);
+                audit.inventory.build_readiness = Some(build_readiness(
+                    &audit.inventory, &report, &evidence, &history, exists, was_written,
+                ));
             }
             println!("{}", serde_json::to_string_pretty(&audit)?);
         } else {
-            if with_readiness {
-                let evidence = eden_builds::read_launch_evidence(&build_log, &index)?;
-                summary.build_readiness = Some(build_readiness(&summary, &report, &evidence));
-            }
             println!("{}", serde_json::to_string_pretty(&summary)?);
         }
     } else {
