@@ -324,7 +324,7 @@ Use `cheatarium-eden-plan` to **preview** independent per-cheat Eden add-ons for
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 --json
 ```
 
-The plan lists each original section's name, source record and ordinal, code-line count, a source-text checksum, a lexical syntax status, and its proposed individual path under `$XDG_DATA_HOME/eden/load/<TITLEID>/Cheatarium-<ordinal>-<name>-<digest>/cheats/<BUILDID>.txt` (with `~/.local/share` as the standard XDG default). `--mods-root` customizes the **displayed destination** for portable Eden installs. Destination paths are previews, not directory creation. Each entry retains independently traceable source provenance; identical labels will not collide.
+The plan lists each original section's name, source record and ordinal, code-line count, a source-text checksum, a lexical syntax status, and its proposed individual path under `$XDG_DATA_HOME/eden/load/<TITLEID>/<readable cheat name>/cheats/<BUILDID>.txt` (with `~/.local/share` as the standard XDG default). `--mods-root` customizes the **displayed destination** for portable Eden installs. Destination paths are previews, not directory creation. Each entry retains independently traceable source provenance; duplicate labels receive a numeric suffix and do not collide.
 
 **Preview mode** (without `--stage-dir` or `--install`) is read-only: it does not write or check existing mod paths, enable cheats, inspect executable Build IDs, or verify cheat effects. Its `installation_allowed: false` and `installed_build_id_verified: false` mean that compatibility remains unverified, **not** that explicit file installation is unavailable. The archived Sharkive text is not gameplay-tested; a lexical hex check is not execution validation. Metadata-only external references never become cheat payloads.
 
@@ -374,6 +374,24 @@ cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db ge
 ```
 
 `--files-only` deliberately **requires** both the conservative `--historical-main-only` Build ID policy and `--only-title-id`; it refuses all-title/all-archive installs and guesses. Close Eden before running an installation. Existing mod directories are protected from overwrites; identical complete file-only installs are recognized on a repeat run. No config backup is needed because this operation does not write the config. If an I/O error interrupts file creation, some new directories may remain and should be reviewed, never silently overwritten. The source cheat effects are not verified, game updates can change the executable Build ID, and enabling several independent cheats can cause conflicting effects. Manage their checkboxes before launching the game if needed.
+
+### Readable Eden add-on names and safe legacy rename
+
+Cheatarium now uses the original human-readable cheat descriptions as folder names, e.g. `Infinite Health Save 1`, `9999 Coins Save 1`, `Refill Health Save 1 (L+R)`, and `Max Purple Coins Save 1`. Duplicate descriptions get a numeric suffix. Internal Cheatarium ordinals and hashes remain in source records and reports, **not the Eden Add-ons UI**.
+
+For installations from the older `Cheatarium-0000-...-<hash>` naming scheme, run a **read-only migration preview** after closing Eden:
+
+```sh
+cheatarium-eden-plan --db generated/v1 --historical-main-only --only-title-id 0100000000010000 --files-only --rename-installed --dry-run --json
+```
+
+To apply the exact verified rename, omit `--dry-run`:
+
+```sh
+cheatarium-eden-plan --db generated/v1 --historical-main-only --only-title-id 0100000000010000 --files-only --rename-installed --json
+```
+
+The migration requires unambiguous historical executable Build ID evidence, verifies every existing original directory and exact cheat-file bytes against the indexed source, checks for unexpected extra files and new-name collisions, and refuses to rename if a legacy addon name is recorded as disabled in Eden's settings. It changes **directory names only**, not cheat bodies, Qt configuration, user saves, or other mods. On an intermediate move error it attempts to reverse previously completed renames and reports if that recovery was incomplete. Re-running after success is idempotent. The existing legacy folders are not copied or duplicated; they are moved to clean names.
 
 ### Direct on-demand installation into Eden (no IDs to look up)
 
