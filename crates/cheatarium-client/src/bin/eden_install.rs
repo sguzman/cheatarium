@@ -21,6 +21,7 @@ pub(super) struct Installed {
     installed_addons: Vec<String>,
     files_written: usize,
     eden_config_updated: bool,
+    eden_config_backup_path: Option<String>,
     activation_state: &'static str,
     installed_build_id_verified: bool,
     compatible_cheats_verified: bool,
@@ -329,9 +330,47 @@ pub(super) fn disabled_config(
     Ok(format!("{}{}", lines.join(newline), newline))
 }
 
-fn write_config_atomic(path: &Path, expected: &str, updated: &str) -> Result<(), ErrBox> {
+/// Persist a private, create-new recovery copy of the unmodified Eden
+/// settings before replacing them. No existing backups are overwritten.
+fn save_config_backup(path: &Path, expected: &str) -> Result<PathBuf, ErrBox> {
+    let parent = path.parent().ok_or("Eden config has no parent")?;
+    validate_regular_ancestors(path, true)?;
+    for serial in 0..1024usize {
+        let backup = parent.join(format!(
+            ".qt-config.ini.cheatarium-backup-{}-{serial}",
+            std::process::id()
+        ));
+        let mut file = match OpenOptions::new().write(true).create_new(true).open(&backup) {
+            Ok(file) => file,
+            Err(err) if err.kind() == std::io::ErrorKind::AlreadyExists => continue,
+            Err(err) => return Err(err.into()),
+        };
+        let outcome = (|| -> Result<(), ErrBox> {
+            file.set_permissions(fs::metadata(path)?.permissions())?;
+            file.write_all(expected.as_bytes())?;
+            file.sync_all()?;
+            drop(file);
+            if fs::read_to_string(&backup)? != expected {
+                return Err("Eden configuration backup verification failed".into());
+            }
+            Ok(())
+        })();
+        if let Err(err) = outcome {
+            let _ = fs::remove_file(&backup);
+            return Err(err);
+        }
+        return Ok(backup);
+    }
+    Err("Eden config backup slots are exhausted; refusing installation".into())
+}
+
+fn write_config_atomic(
+    path: &Path,
+    expected: &str,
+    updated: &str,
+) -> Result<Option<PathBuf>, ErrBox> {
     if expected == updated {
-        return Ok(());
+        return Ok(None);
     }
     let parent = path.parent().ok_or("Eden config has no parent")?;
     validate_regular_ancestors(path, true)?;
@@ -339,11 +378,8 @@ fn write_config_atomic(path: &Path, expected: &str, updated: &str) -> Result<(),
         return Err("Eden config changed during installation; refusing to overwrite".into());
     }
     let temp = parent.join(format!(".qt-config.ini.cheatarium-{}", std::process::id()));
-    let mut file = OpenOptions::new()
-        .write(true)
-        .create_new(true)
-        .open(&temp)?;
-    let result = (|| -> Result<(), ErrBox> {
+    let mut file = OpenOptions::new().write(true).create_new(true).open(&temp)?;
+    let result = (|| -> Result<PathBuf, ErrBox> {
         file.set_permissions(fs::metadata(path)?.permissions())?;
         file.write_all(updated.as_bytes())?;
         file.sync_all()?;
@@ -352,13 +388,20 @@ fn write_config_atomic(path: &Path, expected: &str, updated: &str) -> Result<(),
         if fs::read_to_string(path)? != expected {
             return Err("Eden config changed before atomic update".into());
         }
+        // The original settings are preserved independently before rename,
+        // so an interrupted later mod write remains recoverable.
+        let backup = save_config_backup(path, expected)?;
+        if fs::read_to_string(path)? != expected {
+            return Err("Eden config changed after backup; refusing to overwrite".into());
+        }
+        eden_not_running()?;
         fs::rename(&temp, path)?;
-        Ok(())
+        Ok(backup)
     })();
     if result.is_err() {
         let _ = fs::remove_file(&temp);
     }
-    result
+    result.map(Some)
 }
 
 /// Idempotent on-demand auto-run: a prior Cheatarium install is considered
@@ -462,7 +505,7 @@ pub(super) fn install(
     let updated = disabled_config(&original, title, &names)?;
     // Ensure QSettings disables every new addon before the first file appears.
     eden_not_running()?;
-    write_config_atomic(config, &original, &updated)?;
+    let backup = write_config_atomic(config, &original, &updated)?;
     fs::create_dir_all(mods_root)?;
     validate_regular_ancestors(mods_root, false)?;
     if !title_dir.exists() {
@@ -489,6 +532,7 @@ pub(super) fn install(
         installed_addons: names,
         files_written: written,
         eden_config_updated: updated != original,
+        eden_config_backup_path: backup.map(|path| path.to_string_lossy().into_owned()),
         activation_state: "installed_disabled_by_default",
         installed_build_id_verified: false,
         compatible_cheats_verified: false,
