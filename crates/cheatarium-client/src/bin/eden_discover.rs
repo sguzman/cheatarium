@@ -875,7 +875,8 @@ fn run_registered_files_audit(
     }
     inventory.format = "cheatarium-eden-registered-files-audit-v1";
     inventory.game_file_bytes_read = read_total as u32;
-    let complete = !report.scan_statistics.traversal_limit_reached
+    let complete = !report.game_roots.is_empty()
+        && !report.scan_statistics.traversal_limit_reached
         && report.game_roots.iter().all(|r| r.status == "scanned")
         && !exhausted;
     RegisteredFilesAudit {
