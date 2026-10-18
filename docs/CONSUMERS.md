@@ -359,7 +359,7 @@ The corresponding explicit `--install --historical-main-only` command uses the *
 
 ### Eden file-only installation (no Qt settings changes)
 
-For users who prefer to manage active cheats directly in Eden, Cheatarium has a separate `--files-only` mode. It creates the normal native Eden layout `load/<TITLEID>/<Cheatarium addon name>/cheats/<BUILDID>.txt` **without reading, editing, backing up, or otherwise touching** `qt-config.ini` during the installation operation. The tool still reads the Qt configuration during game discovery to locate Eden's registered game directories. Eden's own [cheat guide](https://github.com/eden-emulator/mirror/blob/master/docs/user/UsingCheats.md) says newly discovered cheats are enabled by default and can be toggled individually in Configure Game → Add-ons.
+For users who prefer to manage active cheats directly in Eden, Cheatarium has a separate `--files-only` mode. It creates the normal native Eden layout `load/<TITLEID>/<Cheatarium addon name>/cheats/<BUILDID>.txt` **without editing or backing up** `qt-config.ini`. The tool still **reads** the Qt configuration during game discovery to locate Eden's registered game directories, but does not write it. Eden's own [cheat guide](https://github.com/eden-emulator/mirror/blob/master/docs/user/UsingCheats.md) says newly discovered cheats are enabled by default and can be toggled individually in Configure Game → Add-ons.
 
 For a narrowly scoped, non-writing preview of the previously observed Super Mario Odyssey build, run:
 
