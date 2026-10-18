@@ -14,6 +14,9 @@ const MAX_ENTRIES: usize = 50_000;
 const MAX_FILES: usize = 20_000;
 const MAX_DEPTH: usize = 5;
 const MAX_CACHE_TITLE_BYTES: u64 = 4096;
+const MAX_NSP_PREFIX_BYTES: u64 = 256 * 1024;
+const MAX_NSP_HEADER_ENTRIES: usize = 2048;
+const MAX_NSP_HEADER_INSPECTIONS: usize = 24;
 
 #[derive(Debug, Serialize)]
 struct LibraryFile {
@@ -112,6 +115,148 @@ struct InventoryDlcFolder {
     installed_in_eden_verified: bool,
 }
 
+
+#[derive(Debug, Serialize)]
+struct NspHeaderInspection {
+    file_path: String,
+    status: &'static str,
+    bytes_read: usize,
+    container_file_entries: usize,
+    nca_file_entries: usize,
+    cnmt_nca_file_entries: usize,
+    ticket_filename_title_id_candidates: Vec<String>,
+    executable_build_id_found: bool,
+    installed_build_id_verified: bool,
+}
+
+/// NSP's PFS0 outer header is unencrypted. Tickets, keys and NCA payloads
+/// are NOT opened or parsed; title hints here come only from ticket *names*.
+/// This is a deliberately small read-only slice of Eden's PFS0 implementation.
+fn inspect_unresolved_nsp(path: &str) -> NspHeaderInspection {
+    let mut report = NspHeaderInspection {
+        file_path: path.to_owned(),
+        status: "unavailable",
+        bytes_read: 0,
+        container_file_entries: 0,
+        nca_file_entries: 0,
+        cnmt_nca_file_entries: 0,
+        ticket_filename_title_id_candidates: Vec::new(),
+        executable_build_id_found: false,
+        installed_build_id_verified: false,
+    };
+    let path = Path::new(path);
+    let meta = match fs::symlink_metadata(path) {
+        Ok(meta) if meta.is_file() && !meta.file_type().is_symlink() => meta,
+        Ok(_) => {
+            report.status = "not_a_regular_file";
+            return report;
+        }
+        Err(_) => return report,
+    };
+    if meta.len() < 16 {
+        report.status = "too_short";
+        return report;
+    }
+    let file = match fs::File::open(path) {
+        Ok(file) => file,
+        Err(_) => return report,
+    };
+    let mut buffer = Vec::new();
+    let mut limited = file.take(MAX_NSP_PREFIX_BYTES);
+    if limited.read_to_end(&mut buffer).is_err() {
+        report.status = "read_error";
+        report.bytes_read = buffer.len();
+        return report;
+    }
+    report.bytes_read = buffer.len();
+    if buffer.len() < 16 || buffer.get(..4) != Some(b"PFS0".as_slice()) {
+        report.status = "not_pfs0";
+        return report;
+    }
+    let read_u32 = |a: &[u8]| u32::from_le_bytes(a.try_into().expect("4-byte field"));
+    let read_u64 = |a: &[u8]| u64::from_le_bytes(a.try_into().expect("8-byte field"));
+    let entries = read_u32(&buffer[4..8]) as usize;
+    let table_bytes = read_u32(&buffer[8..12]) as usize;
+    if entries > MAX_NSP_HEADER_ENTRIES {
+        report.status = "too_many_entries";
+        return report;
+    }
+    let Some(names_start) = entries.checked_mul(24).and_then(|x| x.checked_add(16)) else {
+        report.status = "malformed";
+        return report;
+    };
+    let Some(data_start) = names_start.checked_add(table_bytes) else {
+        report.status = "malformed";
+        return report;
+    };
+    if (data_start as u64) > meta.len() {
+        report.status = "malformed";
+        return report;
+    }
+    if data_start > buffer.len() {
+        report.status = "header_exceeds_prefix_limit";
+        return report;
+    }
+    let names = &buffer[names_start..data_start];
+    let mut ticket_ids = BTreeSet::new();
+    for idx in 0..entries {
+        let e = &buffer[(16+24*idx)..(16+24*(idx+1))];
+        let offset = read_u64(&e[0..8]);
+        let size = read_u64(&e[8..16]);
+        let name_start = read_u32(&e[16..20]) as usize;
+        let Some(last) = name_start.checked_add(1) else {
+            report.status = "malformed";
+            return report;
+        };
+        if last > names.len() {
+            report.status = "malformed";
+            return report;
+        }
+        let Some(end) = names[name_start..].iter().position(|b| *b == 0) else {
+            report.status = "malformed";
+            return report;
+        };
+        let Ok(name) = std::str::from_utf8(&names[name_start..name_start+end]) else {
+            report.status = "malformed";
+            return report;
+        };
+        let Some(content_end) = (data_start as u64)
+            .checked_add(offset)
+            .and_then(|x| x.checked_add(size))
+        else {
+            report.status = "malformed";
+            return report;
+        };
+        if content_end > meta.len() || name.contains(['/', '\\'])
+            || name.is_empty() || name.chars().any(char::is_control)
+        {
+            report.status = "malformed";
+            return report;
+        }
+        if name.ends_with(".nca") {
+            report.nca_file_entries += 1;
+            if name.ends_with(".cnmt.nca") {
+                report.cnmt_nca_file_entries += 1;
+            }
+        }
+        // Ticket filenames often start with 32 hex chars representing a
+        // rights ID, whose first 16 are a *hint* to the owning title.
+        // Never inspect ticket contents or treat this as authenticated.
+        if let Some(ident) = name.strip_suffix(".tik") {
+            if ident.len() == 32 && ident.bytes().all(|b| b.is_ascii_hexdigit()) {
+                let prefix = ident[..16].to_ascii_uppercase();
+                if is_title_id(&prefix) {
+                    ticket_ids.insert(prefix);
+                }
+            }
+        }
+    }
+    report.container_file_entries = entries;
+    report.ticket_filename_title_id_candidates = ticket_ids.into_iter().collect();
+    report.status = "outer_pfs0_metadata_only";
+    report
+}
+
 #[derive(Debug, Serialize)]
 struct InventorySummary {
     schema_version: u32,
@@ -127,6 +272,9 @@ struct InventorySummary {
     filename_ids_not_classified: usize,
     unresolved_filename_title_ids: Vec<String>,
     cached_title_ids_without_labeled_base_file: Vec<String>,
+    unresolved_nsp_header_inspections: Vec<NspHeaderInspection>,
+    unresolved_nsp_inspections_truncated: bool,
+    inspected_nsp_file_bytes_read: usize,
     saved_disabled_addons: Vec<SavedDisabledAddons>,
     cached_update_displays: Vec<CachedUpdateDisplay>,
     installed_build_id_verified: bool,
@@ -443,6 +591,9 @@ fn summarize_report(report: &Report) -> InventorySummary {
         filename_ids_not_classified: not_classified,
         unresolved_filename_title_ids: unresolved,
         cached_title_ids_without_labeled_base_file: uncorrelated_cached,
+        unresolved_nsp_header_inspections: Vec::new(),
+        unresolved_nsp_inspections_truncated: false,
+        inspected_nsp_file_bytes_read: 0,
         saved_disabled_addons: Vec::new(),
         cached_update_displays: Vec::new(),
         installed_build_id_verified: false,
@@ -817,6 +968,7 @@ fn run() -> Result<(), ErrBox> {
     let mut cache_dir = default_cache_dir();
     let mut extra_roots = Vec::new();
     let mut summary = false;
+    let mut inspect_nsp_headers = false;
     let mut explicit_ids = BTreeSet::new();
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -842,12 +994,16 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--summary" => summary = true,
+            "--inspect-nsp-headers" => inspect_nsp_headers = true,
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--json]\nNo ROM contents or emulator files are changed.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--json]\nNo ROM contents or emulator files are changed.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if inspect_nsp_headers && !summary {
+        return Err("--inspect-nsp-headers requires --summary".into());
     }
     verify_platform_distribution(&db, "switch")?;
     let index = load_game_candidates(&db, "switch")?;
@@ -969,6 +1125,19 @@ fn run() -> Result<(), ErrBox> {
         }
         summary.cached_update_displays =
             read_cached_update_displays(&cache_dir, &summary.candidate_base_titles);
+        if inspect_nsp_headers {
+            let filenames: Vec<_> = report.game_files.iter()
+                .filter(|f| f.title_id.is_none() && f.file_type == "nsp")
+                .take(MAX_NSP_HEADER_INSPECTIONS + 1).collect();
+            summary.unresolved_nsp_inspections_truncated =
+                filenames.len() > MAX_NSP_HEADER_INSPECTIONS;
+            summary.unresolved_nsp_header_inspections = filenames.into_iter()
+                .take(MAX_NSP_HEADER_INSPECTIONS)
+                .map(|file| inspect_unresolved_nsp(&file.path)).collect();
+            summary.inspected_nsp_file_bytes_read =
+                summary.unresolved_nsp_header_inspections.iter()
+                    .map(|entry| entry.bytes_read).sum();
+        }
         println!("{}", serde_json::to_string_pretty(&summary)?);
     } else {
         println!("{}", serde_json::to_string_pretty(&report)?);
@@ -1168,6 +1337,72 @@ volume=100
             .cached_update_lines
             .iter()
             .all(|x| !x.current_update_applied_verified));
+    }
+
+
+    fn write_synthetic_nsp(path: &Path, names: &[(&str, &[u8])]) {
+        let mut strings = Vec::new();
+        let mut entries = Vec::new();
+        let mut data = Vec::new();
+        for &(name, bytes) in names {
+            let offset = data.len() as u64;
+            let name_at = strings.len() as u32;
+            strings.extend_from_slice(name.as_bytes());
+            strings.push(0);
+            entries.extend_from_slice(&offset.to_le_bytes());
+            entries.extend_from_slice(&(bytes.len() as u64).to_le_bytes());
+            entries.extend_from_slice(&name_at.to_le_bytes());
+            entries.extend_from_slice(&[0u8; 4]);
+            data.extend_from_slice(bytes);
+        }
+        let mut out = b"PFS0".to_vec();
+        out.extend_from_slice(&(names.len() as u32).to_le_bytes());
+        out.extend_from_slice(&(strings.len() as u32).to_le_bytes());
+        out.extend_from_slice(&[0u8; 4]);
+        out.extend(entries);
+        out.extend(strings);
+        out.extend(data);
+        fs::write(path, out).unwrap();
+    }
+
+    #[test]
+    fn bounded_pfs0_inspection_only_recovers_untrusted_ticket_filename_hints() {
+        let p = env::temp_dir().join(format!(
+            "cheatarium-pfs0-{}-{:?}.nsp", std::process::id(),
+            std::thread::current().id()
+        ));
+        write_synthetic_nsp(&p, &[
+            ("0100152000022000abcdef1234567890.tik", b"private ticket data"),
+            ("abcd.cnmt.nca", b"encrypted meta"),
+            ("abcd.nca", b"encrypted executable"),
+        ]);
+        let r = inspect_unresolved_nsp(p.to_str().unwrap());
+        assert_eq!(r.status, "outer_pfs0_metadata_only");
+        assert_eq!(r.nca_file_entries, 2);
+        assert_eq!(r.cnmt_nca_file_entries, 1);
+        assert_eq!(r.ticket_filename_title_id_candidates, vec!["0100152000022000"]);
+        assert!(!r.executable_build_id_found);
+        assert!(!r.installed_build_id_verified);
+        assert!(r.bytes_read > 16);
+        fs::remove_file(p).unwrap();
+    }
+
+    #[test]
+    fn rejects_malformed_outer_pfs0_without_reading_past_prefix() {
+        let p = env::temp_dir().join(format!(
+            "cheatarium-pfs0-malformed-{}-{:?}.nsp", std::process::id(),
+            std::thread::current().id()
+        ));
+        fs::write(&p, b"PFS0").unwrap();
+        assert_eq!(inspect_unresolved_nsp(p.to_str().unwrap()).status, "too_short");
+        // Oversized count is rejected before any table allocation.
+        let mut bytes = b"PFS0".to_vec();
+        bytes.extend_from_slice(&u32::MAX.to_le_bytes());
+        bytes.extend_from_slice(&0u32.to_le_bytes());
+        bytes.extend_from_slice(&[0; 4]);
+        fs::write(&p, &bytes).unwrap();
+        assert_eq!(inspect_unresolved_nsp(p.to_str().unwrap()).status, "too_many_entries");
+        fs::remove_file(p).unwrap();
     }
 
     #[test]
