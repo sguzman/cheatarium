@@ -1870,6 +1870,102 @@ volume=100
         fs::remove_file(p).unwrap();
     }
 
+
+    #[test]
+    fn deep_directory_inventory_counts_unknown_and_symlinked_entries() {
+        let work = env::temp_dir().join(format!(
+            "cheatarium-deep-audit-{}-{:?}",
+            std::process::id(), std::thread::current().id()
+        ));
+        let mut deep = work.clone();
+        for n in 0..8 {
+            deep = deep.join(format!("layer-{n}"));
+        }
+        fs::create_dir_all(&deep).unwrap();
+        fs::write(deep.join("Deep Game [0100000000010000].nsp"), b"not nsp").unwrap();
+        fs::write(deep.join("readme.txt"), b"not a game").unwrap();
+        #[cfg(unix)]
+        std::os::unix::fs::symlink(
+            deep.join("Deep Game [0100000000010000].nsp"),
+            deep.join("skip-linked.nsp"),
+        ).unwrap();
+        let mut files = Vec::new();
+        let mut stats = ScanStatistics::default();
+        scan_root(&work, true, &mut files, &mut stats).unwrap();
+        assert_eq!(files.len(), 1);
+        assert_eq!(stats.directories_visited, 9);
+        assert_eq!(stats.deepest_directory_depth_visited, 8);
+        assert_eq!(stats.ignored_non_game_files, 1);
+        #[cfg(unix)]
+        assert_eq!(stats.ignored_symlinks, 1);
+        assert_eq!(stats.matched_game_file_types.get("nsp"), Some(&1));
+        assert!(!stats.traversal_limit_reached);
+        fs::remove_dir_all(work).unwrap();
+    }
+
+    #[test]
+    fn audits_every_discovered_game_file_and_records_unsupported_formats() {
+        let work = env::temp_dir().join(format!(
+            "cheatarium-all-file-audit-{}-{:?}",
+            std::process::id(), std::thread::current().id()
+        ));
+        fs::create_dir_all(&work).unwrap();
+        let nsp = work.join("Game [0100000000010000].nsp");
+        write_synthetic_nsp(&nsp, &[
+            ("0100000000010000abcdef1234567890.tik", b"no ticket parsing"),
+            ("ff.cnmt.nca", b"no encrypted content parsing"),
+        ]);
+        let xci = work.join("Game [0100000000010000].xci");
+        let mut image = vec![0u8; 0x220];
+        image[0x100..0x104].copy_from_slice(b"HEAD");
+        fs::write(&xci, &image).unwrap();
+        let other = work.join("Compressed game [0100000000010000].nsz");
+        fs::write(&other, b"compressed placeholder").unwrap();
+        let files = ["nsp", "xci", "nsz"].into_iter().map(|ext| {
+            let p = match ext { "nsp" => &nsp, "xci" => &xci, _ => &other };
+            LibraryFile {
+                path: p.to_string_lossy().into_owned(),
+                title_id: Some("0100000000010000".into()),
+                title_id_evidence: "filename_label_only",
+                file_type: ext.into(),
+            }
+        }).collect::<Vec<_>>();
+        let report = Report {
+            schema_version: 1, format: "test", read_only: true,
+            game_file_bytes_read: 0, emulator_files_written: 0,
+            config_path: String::new(), config_found: false,
+            cache_dir: String::new(), cache_found: false,
+            cached_titles: Vec::new(), game_roots: vec![GameRoot {
+                path: work.to_string_lossy().into_owned(),
+                deep_scan: true, status: "scanned",
+            }],
+            game_files: files, title_id_matches: Vec::new(),
+            unresolved_game_files: 0,
+            scan_statistics: ScanStatistics::default(),
+            limitations: Vec::new(), warnings: Vec::new(),
+        };
+        let output = run_registered_files_audit(summarize_report(&report), &report);
+        assert_eq!(output.audit_file_count, 3);
+        assert_eq!(output.header_inspections_attempted, 2);
+        assert_eq!(output.listed_only_files, 1);
+        assert!(output.complete_registered_file_inventory);
+        assert!(!output.budget_exhausted);
+        assert_eq!(output.filename_ticket_conflicts, 0);
+        assert_eq!(output.files[0].header_status, "outer_pfs0_metadata_only");
+        assert_eq!(output.files[0].filename_ticket_relation, "exact_same_title_id_hint");
+        assert_eq!(output.files[1].header_status, "xci_gamecard_header_magic_only");
+        assert_eq!(output.files[2].header_status, "compressed_container_not_parsed");
+        assert_eq!(
+            output.total_header_bytes_read,
+            output.files.iter().map(|f| f.header_bytes_read).sum()
+        );
+        assert!(output.files.iter().all(|f| {
+            !f.executable_build_id_verified && !f.game_identity_verified
+                && !f.emulator_content_modified
+        }));
+        fs::remove_dir_all(work).unwrap();
+    }
+
     #[test]
     fn filters_extensions_and_rejects_other_files() {
         assert_eq!(game_suffix(Path::new("a.NSP")).as_deref(), Some("nsp"));
