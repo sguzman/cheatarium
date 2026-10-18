@@ -308,6 +308,42 @@ fn write_config_atomic(path: &Path, expected: &str, updated: &str) -> Result<(),
     result
 }
 
+/// Idempotent on-demand auto-run: a prior Cheatarium install is considered
+/// complete only when *every* proposed file matches its exact source bytes
+/// and Eden's disabled list already contains every addon name. Never touch
+/// existing files here; any mismatch falls through to the no-overwrite path.
+pub(super) fn already_installed_unchanged(
+    bundle: &Bundle,
+    selection: &Preview,
+    mods_root: &Path,
+    config: &Path,
+) -> Result<bool, ErrBox> {
+    validate_regular_ancestors(config, true)?;
+    validate_regular_ancestors(mods_root, false)?;
+    let prepared = prepare_addons(bundle, selection, mods_root)?;
+    if prepared.is_empty() { return Ok(false); }
+    let mut names = Vec::new();
+    for (entry, bytes) in &prepared {
+        let relative = Path::new(&entry.relative_path);
+        let parts = relative.components().collect::<Vec<_>>();
+        if parts.len() != 4 || parts[0].as_os_str() != std::ffi::OsStr::new(&selection.title_id)
+            || parts[2].as_os_str() != "cheats" {
+            return Err("Unexpected prior Eden addon relative path".into());
+        }
+        let name = parts[1].as_os_str().to_string_lossy().into_owned();
+        let target = mods_root.join(relative);
+        if !target.exists() {return Ok(false);}
+        validate_regular_ancestors(&target, true)?;
+        let metadata = fs::metadata(&target)?;
+        if metadata.len() > super::MAX_STAGED_TOTAL_BYTES as u64 {return Ok(false);}
+        if fs::read(&target)? != *bytes {return Ok(false);}
+        names.push(name);
+    }
+    let original = fs::read_to_string(config)?;
+    if original.len() as u64 > MAX_INI_BYTES {return Err("Eden Qt configuration too large".into());}
+    Ok(disabled_config(&original, &selection.title_id, &names)? == original)
+}
+
 pub(super) fn install(
     bundle: &Bundle,
     selection: &Preview,
