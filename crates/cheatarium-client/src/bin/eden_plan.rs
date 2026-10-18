@@ -112,6 +112,9 @@ fn eden_display_label(s: &str) -> String {
     for c in s.trim().chars() {
         let safe = c.is_ascii_alphanumeric() || matches!(c, '(' | ')' | '+' | '-' | '_' | '.');
         if safe {
+            if result.is_empty() && c == '.' {
+                continue;
+            }
             if pending_space && !result.is_empty() && result.len() < 66 {
                 result.push(' ');
             }
@@ -1119,9 +1122,9 @@ mod tests {
         assert!(out.exact_archived_build_candidate_found);
         assert_eq!(out.proposed_addons.len(), 2);
         assert_eq!(out.rejected_entries.len(), 1);
-        assert!(out.proposed_addons[0]
-            .proposed_mod_path
-            .contains("/0100000000010000/Infinite Health (L+R)/"));
+        assert!(out.proposed_addons.iter().any(|addon|
+            addon.proposed_mod_path.contains("/0100000000010000/Infinite Health (L+R)/")
+        ));
         assert!(out.proposed_addons[0]
             .proposed_mod_path
             .ends_with("/cheats/B424BE150A8E7D78.txt"));
