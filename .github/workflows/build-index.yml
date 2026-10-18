@@ -1258,6 +1258,25 @@ jobs:
           assert d["prepared_title_build_pairs"] >= 1
           assert not (root/"eden/load").exists()
           PY
+          run_auto --install --historical-main-only > "$fixture/historical-installed.json"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          preview=json.loads((root/"historical-only.json").read_text())
+          result=json.loads((root/"historical-installed.json").read_text())
+          assert result["mode"]=="direct_install_disabled"
+          assert result["candidate_build_scope"]==preview["candidate_build_scope"]
+          assert result["installed_title_build_pairs"]==1
+          assert result["installed"][0]["title_id"]=="0100000000010000"
+          assert result["installed"][0]["selected_build_id"]=="B424BE150A8E7D78"
+          assert result["installed"][0]["activation_state"]=="installed_disabled_by_default"
+          assert result["installed"][0]["files_written"]==len(preview["files"])
+          config=(root/"config/qt-config.ini").read_text()
+          for name in result["installed"][0]["installed_addons"]:
+              assert "\\d="+name in config
+          print("Approved-mode synthetic install matches historical-only read-only preview.")
+          PY
           run_auto --install > "$fixture/installed.json"
           python3 - "$fixture" <<'PY'
           import json,sys
