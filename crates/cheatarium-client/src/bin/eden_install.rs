@@ -123,7 +123,7 @@ struct DisabledRow {
 
 /// Preserve all unrelated Qt settings and existing disabled names verbatim.
 /// Refuse malformed arrays rather than reconstructing/losing the user's data.
-fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Result<String, ErrBox> {
+pub(super) fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Result<String, ErrBox> {
     let title_number = u64::from_str_radix(title_id, 16)?;
     if new_names.is_empty() || new_names.len() > MAX_DISABLED_NAMES {
         return Err("No valid per-cheat addon names to disable".into());
