@@ -1166,6 +1166,41 @@ jobs:
               --db generated/v1 --config "$fixture/config/qt-config.ini" \
               --cache-dir "$fixture/cache" --mods-root "$fixture/eden/load" "$@" --json
           }
+          cp "$fixture/config/qt-config.ini" "$fixture/config-before-dry-run.ini"
+          run_auto --dry-run > "$fixture/dry-run.json"
+          run_auto --dry-run --report > "$fixture/dry-run.txt"
+          cmp "$fixture/config/qt-config.ini" "$fixture/config-before-dry-run.ini"
+          test ! -e "$fixture/eden/load"
+          python3 - "$fixture" <<'PY'
+          import json,hashlib,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          d=json.loads((root/"dry-run.json").read_text())
+          assert d["format"]=="cheatarium-eden-detailed-dry-run-v1"
+          assert d["read_only"] and d["emulator_files_written"]==0
+          assert d["state_files_written"]==0
+          names={g["title_id"]:g for g in d["discovery"]["games"]}
+          assert names["0100000000010000"]["display_name"]=="Super Mario Odyssey"
+          assert "01006A8000161001" not in names
+          assert d["would_create_file_count"]>0
+          assert d["collision_file_count"]==0
+          assert d["settings"]["would_update_config"]
+          assert not d["settings"]["issue"]
+          assert "[DisabledAddOns]" in d["settings"]["proposed_disabled_settings_section"]
+          assert len(d["files"])==d["would_create_file_count"]
+          for file in d["files"]:
+              assert file["status"]=="would_create_disabled"
+              assert file["destination"].endswith("/cheats/"+file["build_id"]+".txt")
+              assert file["cheat_name"] and file["source_archive_path"]
+              contents=file["exact_proposed_contents"].encode()
+              assert hashlib.sha256(contents).hexdigest()==file["sha256"]
+              assert len(contents)==file["byte_count"]
+          report=(root/"dry-run.txt").read_text()
+          assert "NO FILES WRITTEN" in report
+          assert "Super Mario Odyssey" in report
+          assert "EXACT CONTENTS" in report
+          assert "PROPOSED [DisabledAddOns]" in report
+          PY
           run_auto --auto > "$fixture/preview.json"
           python3 - "$fixture" <<'PY'
           import json,sys
