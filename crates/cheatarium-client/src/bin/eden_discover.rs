@@ -737,6 +737,163 @@ fn summarize_report(report: &Report) -> InventorySummary {
     }
 }
 
+
+#[derive(Debug, Serialize)]
+struct AuditedGameFile {
+    path: String,
+    file_type: String,
+    filename_title_id_hint: Option<String>,
+    header_status: &'static str,
+    header_bytes_read: usize,
+    outer_pfs0_entry_count: Option<usize>,
+    nca_entries: Option<usize>,
+    ticket_filename_title_id_candidates: Vec<String>,
+    filename_ticket_relation: &'static str,
+    executable_build_id_verified: bool,
+    game_identity_verified: bool,
+    emulator_content_modified: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct RegisteredFilesAudit {
+    #[serde(flatten)]
+    inventory: InventorySummary,
+    traversal: ScanStatistics,
+    files: Vec<AuditedGameFile>,
+    audit_file_count: usize,
+    header_inspections_attempted: usize,
+    listed_only_files: usize,
+    total_header_bytes_read: usize,
+    header_inspection_budget_bytes: usize,
+    budget_exhausted: bool,
+    header_status_totals: BTreeMap<String, usize>,
+    filename_ticket_conflicts: usize,
+    complete_registered_file_inventory: bool,
+}
+
+/// Eden validates the unencrypted XCI gamecard header's HEAD signature at
+/// offset 0x100, optionally with an initial 0x1000-byte key area.
+/// Reading this magic cannot identify which game/build is inside.
+fn inspect_xci_magic(path: &str) -> (&'static str, usize) {
+    let path = Path::new(path);
+    let Ok(meta) = fs::symlink_metadata(path) else { return ("unavailable", 0) };
+    if !meta.is_file() || meta.file_type().is_symlink() {
+        return ("not_a_regular_file", 0);
+    }
+    let Ok(mut file) = fs::File::open(path) else { return ("unavailable", 0) };
+    let mut bytes_read = 0;
+    for offset in [0x100u64, 0x1100u64] {
+        if meta.len() < offset + 4 { continue; }
+        if file.seek(SeekFrom::Start(offset)).is_err() {
+            return ("read_error", bytes_read);
+        }
+        let mut magic = [0u8; 4];
+        if file.read_exact(&mut magic).is_err() {
+            return ("read_error", bytes_read);
+        }
+        bytes_read += 4;
+        if &magic == b"HEAD" {
+            return (if offset == 0x100 {
+                "xci_gamecard_header_magic_only"
+            } else {
+                "xci_gamecard_header_after_key_area_magic_only"
+            }, bytes_read);
+        }
+    }
+    ("invalid_xci_gamecard_magic", bytes_read)
+}
+
+fn run_registered_files_audit(
+    mut inventory: InventorySummary,
+    report: &Report,
+) -> RegisteredFilesAudit {
+    let mut files = Vec::with_capacity(report.game_files.len());
+    let mut statuses = BTreeMap::new();
+    let mut read_total = 0usize;
+    let mut attempted = 0usize;
+    let mut listed_only = 0usize;
+    let mut conflicts = 0usize;
+    let mut exhausted = false;
+    for game in &report.game_files {
+        let mut record = AuditedGameFile {
+            path: game.path.clone(),
+            file_type: game.file_type.clone(),
+            filename_title_id_hint: game.title_id.clone(),
+            header_status: "metadata_reader_not_supported",
+            header_bytes_read: 0,
+            outer_pfs0_entry_count: None,
+            nca_entries: None,
+            ticket_filename_title_id_candidates: Vec::new(),
+            filename_ticket_relation: "no_ticket_title_hint",
+            executable_build_id_verified: false,
+            game_identity_verified: false,
+            emulator_content_modified: false,
+        };
+        if !matches!(game.file_type.as_str(), "nsp" | "xci") {
+            listed_only += 1;
+            record.header_status = match game.file_type.as_str() {
+                "nca" => "encrypted_nca_header_not_parsed",
+                "nro" => "nro_header_not_parsed",
+                "nsz" | "xcz" => "compressed_container_not_parsed",
+                _ => "metadata_reader_not_supported",
+            };
+        } else if read_total + MAX_NSP_HEADER_BYTES as usize > MAX_TOTAL_AUDIT_HEADER_BYTES {
+            // Reserve a full per-file envelope to keep the global read bound,
+            // even if previous files used just dozens of bytes.
+            exhausted = true;
+            listed_only += 1;
+            record.header_status = "header_read_budget_exhausted";
+        } else if game.file_type == "nsp" {
+            attempted += 1;
+            let header = inspect_unresolved_nsp(&game.path);
+            record.header_status = header.status;
+            record.header_bytes_read = header.bytes_read;
+            record.outer_pfs0_entry_count = Some(header.container_file_entries);
+            record.nca_entries = Some(header.nca_file_entries);
+            record.ticket_filename_title_id_candidates = header.ticket_filename_title_id_candidates;
+            record.filename_ticket_relation = match (
+                game.title_id.as_deref(),
+                record.ticket_filename_title_id_candidates.as_slice(),
+            ) {
+                (Some(a), [b]) if a == b => "exact_same_title_id_hint",
+                (Some(a), [b]) if base_for_update_label(a).as_deref() == Some(b)
+                    || base_for_update_label(b).as_deref() == Some(a) => "same_base_update_family",
+                (Some(_), [_]) => { conflicts += 1; "conflicting_single_title_id_hint" },
+                (_, []) => "no_ticket_title_hint",
+                (_, [_]) => "ticket_title_hint_only",
+                (_, _) => "multiple_ticket_title_hints_ambiguous",
+            };
+        } else {
+            attempted += 1;
+            let (status, read_bytes) = inspect_xci_magic(&game.path);
+            record.header_status = status;
+            record.header_bytes_read = read_bytes;
+        }
+        read_total += record.header_bytes_read;
+        *statuses.entry(record.header_status.to_owned()).or_insert(0) += 1;
+        files.push(record);
+    }
+    inventory.format = "cheatarium-eden-registered-files-audit-v1";
+    inventory.game_file_bytes_read = read_total as u32;
+    let complete = !report.scan_statistics.traversal_limit_reached
+        && report.game_roots.iter().all(|r| r.status == "scanned")
+        && !exhausted;
+    RegisteredFilesAudit {
+        inventory,
+        traversal: report.scan_statistics.clone(),
+        audit_file_count: files.len(),
+        files,
+        header_inspections_attempted: attempted,
+        listed_only_files: listed_only,
+        total_header_bytes_read: read_total,
+        header_inspection_budget_bytes: MAX_TOTAL_AUDIT_HEADER_BYTES,
+        budget_exhausted: exhausted,
+        header_status_totals: statuses,
+        filename_ticket_conflicts: conflicts,
+        complete_registered_file_inventory: complete,
+    }
+}
+
 fn is_title_id(value: &str) -> bool {
     value.len() == 16 && value.starts_with("01") && value.bytes().all(|b| b.is_ascii_hexdigit())
 }
@@ -1115,6 +1272,7 @@ fn run() -> Result<(), ErrBox> {
     let mut extra_roots = Vec::new();
     let mut summary = false;
     let mut inspect_nsp_headers = false;
+    let mut audit_all_files = false;
     let mut explicit_ids = BTreeSet::new();
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -1141,12 +1299,19 @@ fn run() -> Result<(), ErrBox> {
             "--json" => {}
             "--summary" => summary = true,
             "--inspect-nsp-headers" => inspect_nsp_headers = true,
+            "--audit-all-files" => audit_all_files = true,
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--json]\nNo ROM contents or emulator files are changed.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--audit-all-files] [--json]\nNo ROM contents or emulator files are changed.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if audit_all_files && inspect_nsp_headers {
+        return Err("Choose --audit-all-files or --inspect-nsp-headers, not both".into());
+    }
+    if audit_all_files && !summary {
+        return Err("--audit-all-files requires --summary".into());
     }
     if inspect_nsp_headers && !summary {
         return Err("--inspect-nsp-headers requires --summary".into());
@@ -1293,7 +1458,12 @@ fn run() -> Result<(), ErrBox> {
             summary.game_file_bytes_read = summary.inspected_nsp_file_bytes_read as u32;
             associate_nsp_ticket_hints(&mut summary, &report.game_files);
         }
-        println!("{}", serde_json::to_string_pretty(&summary)?);
+        if audit_all_files {
+            let audit = run_registered_files_audit(summary, &report);
+            println!("{}", serde_json::to_string_pretty(&audit)?);
+        } else {
+            println!("{}", serde_json::to_string_pretty(&summary)?);
+        }
     } else {
         println!("{}", serde_json::to_string_pretty(&report)?);
     }
