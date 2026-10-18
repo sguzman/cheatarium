@@ -102,7 +102,10 @@ fn title_after(line: &str, marker: &str) -> Option<String> {
 fn loading_title(line: &str) -> Option<String> {
     // Eden core.cpp writes "Loading <game name> (<TITLE_ID>) ...".
     // Don't interpret unrelated log messages containing "Loading".
-    if !line.contains("Core <Info>") && !line.contains("core/core.cpp") {
+    if !line.contains("Core <Info>")
+        && !line.contains("core/core.cpp")
+        && !line.contains(r"core\core.cpp")
+    {
         return None;
     }
     let (_, suffix) = line.split_once(": Loading ")?;
@@ -172,42 +175,77 @@ fn direct_cheat_lookup(line: &str) -> Option<(String, String, &'static str)> {
     None
 }
 
+// Eden versions can log the main NSO patch query *before* Core::Load
+// announces the game's Title ID. Relate a nearby following canonical Core
+// Loading record to that query, never an arbitrary later title. Previous
+// launch context still supports versions that log Loading first.
+const MAX_PRELOAD_LINES: usize = 96;
+
 fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
     let mut out = ParsedLog::default();
-    let mut active: Option<(String, usize, usize)> = None; // title, ordinal, last launch line
+    // line, title, launch ordinal, is canonical Core::Load evidence
+    let mut launches = Vec::<(usize, String, usize, bool)>::new();
+    // line, main build, full hex length
+    let mut queries = Vec::<(usize, String, usize)>::new();
+    let mut active: Option<(String, usize)> = None;
     let mut launch_ordinal = 0usize;
-    let mut seen = BTreeSet::new();
+
     for (line_index, line) in log.lines().enumerate() {
-        let newly_loading = loading_title(line);
-        let is_new_launch = newly_loading.is_some();
-        if is_new_launch {
+        let loading = loading_title(line);
+        if loading.is_some() {
             out.core_launches += 1;
         }
         if let Some(witness) = direct_cheat_lookup(line) {
             out.cheat_lookup_witness.insert(witness);
         }
-        let announced =
-            title_after(line, "Booting game: ").or_else(|| title_after(line, "Now running: "));
-        if let Some(id) = newly_loading.or(announced) {
-            // Core Loading marks an explicit new launch even for the same title.
-            if is_new_launch || active.as_ref().is_none_or(|(title, _, _)| title != &id) {
+        let announced = title_after(line, "Booting game: ")
+            .or_else(|| title_after(line, "Now running: "));
+        if let Some(title) = loading.clone().or(announced) {
+            let new_launch = loading.is_some()
+                || active.as_ref().is_none_or(|(prior, _)| prior != &title);
+            if new_launch {
                 launch_ordinal += 1;
-                active = Some((id, launch_ordinal, line_index));
+                active = Some((title.clone(), launch_ordinal));
             }
+            let ordinal = active.as_ref().ok_or("Missing launch ordinal")?.1;
+            // Backward association requires the actual core.cpp path rather
+            // than unrelated frontend/announcement text with a Title ID.
+            let canonical_core = loading.is_some()
+                && (line.contains("core/core.cpp") || line.contains(r"core\core.cpp"));
+            launches.push((line_index, title, ordinal, canonical_core));
         }
-        let Some((build_id, original_length)) = main_nso_build(line) else {
-            continue;
+        if let Some((build, length)) = main_nso_build(line) {
+            out.main_queries += 1;
+            if queries.len() >= MAX_OBSERVATIONS {
+                return Err("Too many Eden main NSO Build ID queries".into());
+            }
+            queries.push((line_index, build, length));
+        }
+    }
+
+    let mut seen = BTreeSet::new();
+    for (line_index, build_id, original_length) in queries {
+        let previous = launches.iter().rev().find(|(at, _, _, _)| {
+            *at <= line_index && line_index - *at <= MAX_CONTEXT_LINES
+        });
+        let upcoming = launches.iter().find(|(at, _, _, canonical)| {
+            *canonical && *at > line_index && *at - line_index <= MAX_PRELOAD_LINES
+        });
+        let chosen = match (previous, upcoming) {
+            (None, next) => next,
+            (prev @ Some(_), None) => prev,
+            (Some(prev), Some(next)) => {
+                if next.0 - line_index < line_index - prev.0 {
+                    Some(next)
+                } else {
+                    Some(prev)
+                }
+            }
         };
-        out.main_queries += 1;
-        let Some((title_id, ordinal, start_index)) = active.as_ref() else {
+        let Some((_, title_id, ordinal, _)) = chosen else {
             out.orphan_main_builds += 1;
             continue;
         };
-        if line_index.saturating_sub(*start_index) > MAX_CONTEXT_LINES {
-            out.orphan_main_builds += 1;
-            continue;
-        }
-        // Duplicate messages in the same launch do not count as new builds.
         if seen.insert((*ordinal, title_id.clone(), build_id.clone())) {
             if out.witness.len() >= MAX_OBSERVATIONS {
                 return Err("Too many Eden log Build ID observations".into());
@@ -457,6 +495,38 @@ mod tests {
         assert_eq!(data.witness.len(), 2);
         assert_eq!(data.witness[0].title_id, "0100000000010000");
         assert_eq!(data.witness[1].title_id, "0100152000022000");
+    }
+
+    #[test]
+    fn eden_real_log_order_main_query_precedes_core_loading() {
+        // Eden's own published logs use a backslash in the core.cpp path
+        // and emit HasNSOPatch(main) before Core::Load announces the title.
+        let log = concat!(
+            "[ 26.871569] Loader core\\file_sys\\patch_manager.cpp:304:HasNSOPatch: Querying NSO patch existence for build_id=567CDD4C5251494C5CD70822E3CCC740, name=rtld\n",
+            "[ 27.158151] Loader core\\file_sys\\patch_manager.cpp:304:HasNSOPatch: Querying NSO patch existence for build_id=C4067E8CB3258656D8E9B448EE31AA38, name=main\n",
+            "[ 27.191361] Loader core\\file_sys\\patch_manager.cpp:304:HasNSOPatch: Querying NSO patch existence for build_id=D0F13015E5BADF2243D60A2BC9B978DDDBA80608, name=subsdk0\n",
+            "[ 27.215285] Core core\\core.cpp:326:Load: Loading It Takes Two (010092A0172E4000) ...\n",
+        );
+        let parsed = parse_log(log).unwrap();
+        assert_eq!(parsed.core_launches, 1);
+        assert_eq!(parsed.main_queries, 1);
+        assert_eq!(parsed.orphan_main_builds, 0);
+        assert_eq!(parsed.witness.len(), 1);
+        assert_eq!(parsed.witness[0].title_id, "010092A0172E4000");
+        assert_eq!(parsed.witness[0].build_id, "C4067E8CB3258656");
+    }
+
+    #[test]
+    fn preloading_query_associates_with_next_game_not_stale_previous_launch() {
+        let log = concat!(
+            "[ 0.0] Core core\\core.cpp:326:Load: Loading Mario (0100000000010000) ...\n",
+            "[ 0.1] unrelated\n",
+            "[ 5.0] Loader patch_manager.cpp:HasNSOPatch: Querying NSO patch existence for build_id=96DFD1769E560C27, name=main\n",
+            "[ 5.1] Core core\\core.cpp:326:Load: Loading Mario Kart (0100152000022000) ...\n",
+        );
+        let parsed = parse_log(log).unwrap();
+        assert_eq!(parsed.witness.len(), 1);
+        assert_eq!(parsed.witness[0].title_id, "0100152000022000");
     }
 
     #[test]
