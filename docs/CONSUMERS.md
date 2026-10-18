@@ -396,3 +396,18 @@ The `--audit-all-files` option is separate from, and mutually exclusive with, th
 Traversal uses the recursive setting already present in Eden's `qt-config.ini`. The directory cap has been raised from 5 to 64 levels. The audit's `traversal` counters account for directories and entries visited, non-game files, symlinks, special files, and directories skipped due to depth or disabled deep scan. There is a 50,000-entry / 20,000-recognized-file inventory limit and a conservative **128 MiB aggregate header-read limit**; when reached the output explicitly reports incomplete coverage and records uninspected files. `complete_registered_file_inventory` is only true when all configured roots were accessible, no scan cap was reached and no header-read budget was exhausted. This covers recognized files under configured roots, **not** all files elsewhere on a disk or files with arbitrary unrelated extensions.
 
 The report does **not** claim that base games/updates/DLC are installed, that a particular update is active, or that a game's executable Build ID matches an archive. The operation is fully read-only and makes no modifications to Eden. Unlike `--summary` alone, audit mode will read bounded outer file metadata, with the actual number of bytes reported.
+
+
+### Per-game Eden cheat Build ID readiness (read-only)
+
+After the regular discovery is working, `cheatarium-eden-discover --summary --build-readiness --json` joins **the same Eden-registered game-directory inventory and existing game-list cache** to the bounded, read-only **historical Eden log parser** used by `cheatarium-eden-builds`. No second registration of game directories, and no game container bytes are read by this mode.
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --build-readiness --json
+```
+
+The optional `--log /path/to/eden_log.txt` supplies a specific historical log (default `$XDG_DATA_HOME/eden/log/eden_log.txt`, or `~/.local/share/eden/log/eden_log.txt`). It returns the existing inventory plus a `build_readiness` object with **one entry per candidate base Title ID**, archived Build ID options, uniquely observed **main** executable Build IDs, historical archive matches, weak title-paired cheat lookup hints, and explicit states: no log, no main observation, weak lookup only, single historical archive match, historical nonmatch, or ambiguous multiple historical builds. The output includes total Core launch contexts, main patch queries, orphan main queries, and log Title IDs outside the current inventory. Duplicate queries within a launch are collapsed; multiple *distinct* historical builds for the same title remain ambiguous.
+
+Every reported match is historical and unverified as a representation of the current installed/running game. Updates in ROM folders and cached labels are not evidence of the active update or Build ID. A `No cheats file found` lookup may be from a non-main executable and is **never promoted to a main executable Build ID**. `current_installed_build_verified`, `compatible_cheat_verified`, `automatic_installation_allowed`, and the overall `installation_allowed` remain false. Nothing is installed, activated, or written to Eden.
+
+Use `--summary --audit-all-files --build-readiness` only if an additional complete header audit is deliberately desired; the simpler `--summary --build-readiness` avoids rereading NSPs. The default summaries are unchanged unless `--build-readiness` is explicitly selected.
