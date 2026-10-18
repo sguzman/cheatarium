@@ -6,13 +6,14 @@ use std::collections::{BTreeMap, BTreeSet};
 use std::env;
 use std::error::Error;
 use std::fs;
-use std::io::Read;
+use std::io::{Read, Seek, SeekFrom};
 use std::path::{Path, PathBuf};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
 const MAX_ENTRIES: usize = 50_000;
 const MAX_FILES: usize = 20_000;
-const MAX_DEPTH: usize = 5;
+const MAX_DEPTH: usize = 64;
+const MAX_TOTAL_AUDIT_HEADER_BYTES: usize = 128 * 1024 * 1024;
 const MAX_CACHE_TITLE_BYTES: u64 = 4096;
 const MAX_NSP_HEADER_BYTES: u64 = 256 * 1024;
 const MAX_NSP_HEADER_ENTRIES: usize = 2048;
@@ -66,6 +67,20 @@ struct CheatMatch {
     compatible_with_installed_game: bool,
 }
 
+#[derive(Debug, Default, Clone, Serialize)]
+struct ScanStatistics {
+    directories_visited: usize,
+    directory_entries_visited: usize,
+    ignored_non_game_files: usize,
+    ignored_symlinks: usize,
+    ignored_special_entries: usize,
+    directories_skipped_depth_limit: usize,
+    directories_not_descended_scan_disabled: usize,
+    deepest_directory_depth_visited: usize,
+    matched_game_file_types: BTreeMap<String, usize>,
+    traversal_limit_reached: bool,
+}
+
 #[derive(Debug, Serialize)]
 struct Report {
     schema_version: u32,
@@ -82,6 +97,7 @@ struct Report {
     game_files: Vec<LibraryFile>,
     title_id_matches: Vec<CheatMatch>,
     unresolved_game_files: usize,
+    scan_statistics: ScanStatistics,
     limitations: Vec<&'static str>,
     warnings: Vec<String>,
 }
@@ -867,36 +883,53 @@ fn scan_root(
     root: &Path,
     deep: bool,
     out: &mut Vec<LibraryFile>,
-    scanned: &mut usize,
+    stats: &mut ScanStatistics,
 ) -> Result<(), ErrBox> {
     let mut stack = vec![(root.to_path_buf(), 0usize)];
     while let Some((dir, depth)) = stack.pop() {
-        let mut entries = fs::read_dir(&dir)?.collect::<std::io::Result<Vec<_>>>()?;
-        entries.sort_by_key(|entry| entry.file_name());
-        for entry in entries {
-            *scanned += 1;
-            if *scanned > MAX_ENTRIES {
+        stats.directories_visited += 1;
+        stats.deepest_directory_depth_visited = stats.deepest_directory_depth_visited.max(depth);
+        // Keep a bound before allocating a sorted directory inventory.
+        let mut entries = Vec::new();
+        for entry in fs::read_dir(&dir)? {
+            if stats.directory_entries_visited + entries.len() >= MAX_ENTRIES {
+                stats.traversal_limit_reached = true;
                 return Err("Eden directory scan entry limit reached".into());
             }
+            entries.push(entry?);
+        }
+        entries.sort_by_key(|entry| entry.file_name());
+        for entry in entries {
+            stats.directory_entries_visited += 1;
             let kind = fs::symlink_metadata(entry.path())?.file_type();
             if kind.is_symlink() {
+                stats.ignored_symlinks += 1;
                 continue;
             }
             if kind.is_dir() {
                 if deep && depth < MAX_DEPTH {
                     stack.push((entry.path(), depth + 1));
+                } else if deep {
+                    stats.directories_skipped_depth_limit += 1;
+                    stats.traversal_limit_reached = true;
+                } else {
+                    stats.directories_not_descended_scan_disabled += 1;
                 }
                 continue;
             }
             if !kind.is_file() {
+                stats.ignored_special_entries += 1;
                 continue;
             }
             let Some(file_type) = game_suffix(&entry.path()) else {
+                stats.ignored_non_game_files += 1;
                 continue;
             };
             if out.len() >= MAX_FILES {
+                stats.traversal_limit_reached = true;
                 return Err("Eden game-file count limit reached".into());
             }
+            *stats.matched_game_file_types.entry(file_type.clone()).or_default() += 1;
             let filename = entry.file_name().to_string_lossy().into_owned();
             let id = title_id_in_filename(&filename);
             out.push(LibraryFile {
@@ -1135,6 +1168,7 @@ fn run() -> Result<(), ErrBox> {
         game_files: Vec::new(),
         title_id_matches: Vec::new(),
         unresolved_game_files: 0,
+        scan_statistics: ScanStatistics::default(),
         limitations: vec![
             "Filenames and configured folder listings are not authenticated Eden game-library identities.",
             "Switch game containers are not opened or decrypted; Title IDs absent from filenames remain unresolved.",
@@ -1158,7 +1192,6 @@ fn run() -> Result<(), ErrBox> {
     roots.extend(extra_roots);
     report.cached_titles = cache_titles(&cache_dir, &mut report.warnings);
     let mut seen_roots = BTreeSet::new();
-    let mut scanned = 0usize;
     for (root, deep_scan) in roots {
         if !seen_roots.insert(root.clone()) {
             continue;
@@ -1170,7 +1203,7 @@ fn run() -> Result<(), ErrBox> {
             Err(_) => "unavailable",
         };
         if status == "scanned" {
-            if let Err(e) = scan_root(&root, deep_scan, &mut report.game_files, &mut scanned) {
+            if let Err(e) = scan_root(&root, deep_scan, &mut report.game_files, &mut report.scan_statistics) {
                 report.warnings.push(format!(
                     "directory_scan_incomplete: {}: {e}",
                     root.display()
