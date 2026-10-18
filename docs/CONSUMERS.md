@@ -316,7 +316,7 @@ Supported defaults: `$XDG_CONFIG_HOME/eden/qt-config.ini` or `~/.config/eden/qt-
 External Switch link-only source coverage is scanned once for the entire detected title-ID set, rather than reopened per game. Exporter work is deliberately **not** enabled in this phase. Eden uses `<mod directory>/<effect label>/cheats/<BuildID>.txt` for separate add-on toggles; cheat files may be enabled by default, so the future writer must guarantee disabled-by-default behavior, explicit Build ID confirmation, backups, and no overwrites before it can be exposed as a safe operation.
 
 
-## Eden native Switch add-on preview (read-only, experimental)
+## Eden native Switch cheat preview, staging, and direct installation
 
 Use `cheatarium-eden-plan` to **preview** independent per-cheat Eden add-ons for an **explicit Title ID + archived Build ID**. The scanner verifies the local Switch artifact checksums against the generated Cheatarium distribution and selects original `sharkive` cheat sections **only for that exact pair**. It never chooses a Build ID from title matching alone. The selected Build ID is **not proof** of the installed executable's version.
 
@@ -326,7 +326,7 @@ cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db ge
 
 The plan lists each original section's name, source record and ordinal, code-line count, a source-text checksum, a lexical syntax status, and its proposed individual path under `$XDG_DATA_HOME/eden/load/<TITLEID>/Cheatarium-<ordinal>-<name>-<digest>/cheats/<BUILDID>.txt` (with `~/.local/share` as the standard XDG default). `--mods-root` customizes the **displayed destination** for portable Eden installs. Destination paths are previews, not directory creation. Each entry retains independently traceable source provenance; identical labels will not collide.
 
-The command **does not write**, check existing paths, enable cheats, create mod folders, inspect game executable Build IDs, or verify cheat effects. It intentionally returns `installation_allowed: false` and `installed_build_id_verified: false`. The currently archived Sharkive text is not gameplay tested; the lexical hex check is not a compatibility validator. The future writer must preserve existing files, validate the exact installed executable Build ID, atomically handle Eden's per-title disabled add-on settings, and refuse to activate anything until the user deliberately enables it. Metadata-only rights-unresolved external sources are never included as executable cheat payloads.
+**Preview mode** (without `--stage-dir` or `--install`) is read-only: it does not write or check existing mod paths, enable cheats, inspect executable Build IDs, or verify cheat effects. Its `installation_allowed: false` and `installed_build_id_verified: false` mean that compatibility remains unverified, **not** that explicit file installation is unavailable. The archived Sharkive text is not gameplay-tested; a lexical hex check is not execution validation. Metadata-only external references never become cheat payloads.
 
 ### Isolated staging export
 
@@ -338,8 +338,20 @@ cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db ge
 
 The writer requires at least one exact archived Sharkive source record for the selected Title ID + Build ID. It refuses staging if **any** selected source section has an unsafe name or an unsupported lexical opcode shape (no partial selection of unresolved source text). It preflights all source records and relative paths before creating anything, uses create-new writes so it never overwrites files, and writes a `cheatarium-staging-manifest.json` containing original source references, individual relative cheat paths, SHA-256 values, and explicit **not installed / not compatible-verified** flags. Repeating the same operation against the existing directory is an error, not an overwrite. If a filesystem error happens after directory creation, a partial staging directory can remain and must be inspected or discarded manually.
 
-**Staged cheats are not active and must not be copied into Eden yet.** Native add-ons may be enabled by default when placed under Eden's `load` directory, and the tool cannot currently verify the installed executable's Build ID or apply disabled-add-on settings. This stage does not touch Eden and is not an installation command. No rights-unresolved metadata-only external source is materialized.
+**Staged cheats are not installed or active.** Isolated staging never modifies Eden, while the separate `--install` option performs installation with per-addon disabled-by-default configuration. No rights-unresolved metadata-only external source is materialized.
 
+
+### Direct on-demand installation into Eden
+
+**Close Eden completely**, then invoke the same CLI with `--install` and an explicit Title ID and Build ID:
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 --install --json
+```
+
+The command chooses only original archived Sharkive sections associated with **that exact pair**, validates native text shape, and installs individually named mods at `~/.local/share/eden/load/<TITLEID>/Cheatarium-.../cheats/<BUILDID>.txt`. Before creating those directories it atomically updates Eden's `~/.config/eden/qt-config.ini` `[DisabledAddOns]` section, preserving existing disabled add-ons and unrelated settings. **All newly installed Cheatarium mods start disabled**; enable desired individual cheats from Eden's per-game add-on controls. An existing mod directory, malformed disabled-settings array, symlink redirection, or missing/nonregular destination causes a refusal, never an overwrite. The installer also refuses to run while an Eden process is detected on Linux. Portable installations may explicitly set `--config` and `--mods-root` to their actual paths; `--install` and `--stage-dir` cannot be combined.
+
+**Limit:** The explicit Build ID is selected by the caller. Cheatarium does **not** prove that this is the Build ID Eden will execute, nor that cheats are functionally compatible. If an I/O failure occurs after Eden's settings are updated, some add-ons might be partially created but remain disabled. The tool never changes ROMs or saves, enables cheats automatically, or overwrites previously installed mods. The default without `--install` or `--stage-dir` remains a read-only preview.
 
 ## Eden historical main Build ID observations (read-only)
 
