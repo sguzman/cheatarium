@@ -1582,7 +1582,10 @@ fn run() -> Result<(), ErrBox> {
     let mut with_readiness = false;
     let mut build_log = eden_builds::log_default();
     let mut history_path = eden_builds::eden_history::default_path();
-    let mut capture_build_history = false;
+    // Readiness is the normal opt-in lifecycle: capture its bounded evidence
+    // automatically unless the caller explicitly requests read-only inspection.
+    let mut capture_build_history = true;
+    let mut force_read_only = false;
     let mut explicit_ids = BTreeSet::new();
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -1612,6 +1615,7 @@ fn run() -> Result<(), ErrBox> {
             "--audit-all-files" => audit_all_files = true,
             "--build-readiness" => with_readiness = true,
             "--capture-build-history" => capture_build_history = true,
+            "--no-capture-build-history" | "--read-only" => force_read_only = true,
             "--history-file" => {
                 history_path = PathBuf::from(
                     args.next()
@@ -1620,14 +1624,17 @@ fn run() -> Result<(), ErrBox> {
             }
             "--log" => build_log = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--history-file PATH] [--log PATH] [--json]\nNo ROM contents or emulator files are changed.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
     }
-    if capture_build_history && !with_readiness {
-        return Err("--capture-build-history requires --build-readiness".into());
+    if force_read_only && !with_readiness {
+        return Err("--read-only requires --build-readiness".into());
+    }
+    if force_read_only {
+        capture_build_history = false;
     }
     if with_readiness && !summary {
         return Err("--build-readiness requires --summary".into());
