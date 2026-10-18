@@ -1958,7 +1958,7 @@ volume=100
         assert_eq!(output.files[2].header_status, "compressed_container_not_parsed");
         assert_eq!(
             output.total_header_bytes_read,
-            output.files.iter().map(|f| f.header_bytes_read).sum()
+            output.files.iter().map(|f| f.header_bytes_read).sum::<usize>()
         );
         assert!(output.files.iter().all(|f| {
             !f.executable_build_id_verified && !f.game_identity_verified
