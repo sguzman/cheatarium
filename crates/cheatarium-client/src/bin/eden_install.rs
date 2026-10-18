@@ -55,6 +55,31 @@ fn validate_regular_ancestors(path: &Path, final_is_file: bool) -> Result<(), Er
     Ok(())
 }
 
+/// Validate an absent first-use Eden load directory without following
+/// symlinks. Create it only after the disabled settings are committed.
+fn validate_mod_root_plan(path: &Path) -> Result<(), ErrBox> {
+    if !path.is_absolute() || path == Path::new("/")
+        || path.components().any(|c| matches!(c, Component::CurDir | Component::ParentDir))
+    {
+        return Err("Eden mod root must be a normalized absolute non-root path".into());
+    }
+    let mut current = PathBuf::new();
+    let mut missing = false;
+    for component in path.components() {
+        current.push(component);
+        match fs::symlink_metadata(&current) {
+            Ok(meta) => {
+                if missing || meta.file_type().is_symlink() || !meta.is_dir() {
+                    return Err("Eden mod root contains a symlink or non-directory ancestor".into());
+                }
+            }
+            Err(err) if err.kind() == std::io::ErrorKind::NotFound => missing = true,
+            Err(err) => return Err(err.into()),
+        }
+    }
+    Ok(())
+}
+
 fn eden_not_running() -> Result<(), ErrBox> {
     // Eden rewrites qt-config.ini from its in-memory QSettings. Writing while
     // its process is running would risk lost settings and enabled-by-default mods.
@@ -319,6 +344,7 @@ pub(super) fn already_installed_unchanged(
     config: &Path,
 ) -> Result<bool, ErrBox> {
     validate_regular_ancestors(config, true)?;
+    if !mods_root.exists() { return Ok(false); }
     validate_regular_ancestors(mods_root, false)?;
     let prepared = prepare_addons(bundle, selection, mods_root)?;
     if prepared.is_empty() { return Ok(false); }
@@ -352,7 +378,7 @@ pub(super) fn install(
 ) -> Result<Installed, ErrBox> {
     eden_not_running()?;
     validate_regular_ancestors(config, true)?;
-    validate_regular_ancestors(mods_root, false)?;
+    validate_mod_root_plan(mods_root)?;
     let prepared = prepare_addons(bundle, selection, mods_root)?;
     let title = &selection.title_id;
     let title_dir = mods_root.join(title);
@@ -395,6 +421,8 @@ pub(super) fn install(
     // Ensure QSettings disables every new addon before the first file appears.
     eden_not_running()?;
     write_config_atomic(config, &original, &updated)?;
+    fs::create_dir_all(mods_root)?;
+    validate_regular_ancestors(mods_root, false)?;
     if !title_dir.exists() {
         fs::create_dir(&title_dir)?;
     }
