@@ -504,6 +504,7 @@ struct AutomaticReport {
     discovery: eden_auto::Discovery,
     archived_title_build_pairs: usize,
     installed_title_build_pairs: usize,
+    already_installed_title_build_pairs: usize,
     prepared_title_build_pairs: usize,
     installed: Vec<eden_install::Installed>,
     planned: Vec<Preview>,
@@ -560,6 +561,7 @@ fn run_automatic(
     let total_pairs = pairs.len();
     let mut planned = Vec::new();
     let mut installed = Vec::new();
+    let mut already_installed = 0usize;
     for (title, build) in pairs {
         let candidate = preview(bundle, &title, &build, mod_root)?;
         if candidate.proposed_addons.is_empty() {
@@ -578,8 +580,12 @@ fn run_automatic(
             continue;
         }
         if installing {
-            // Existing mods are never overwritten. A repeated on-demand
-            // invocation reports the previous install instead of replacing it.
+            // Do not rewrite identical disabled Cheatarium add-ons; a changed
+            // or unrecognized pre-existing mod is still protected by install().
+            if eden_install::already_installed_unchanged(bundle, &candidate, mod_root, config)? {
+                already_installed += 1;
+                continue;
+            }
             let result = eden_install::install(bundle, &candidate, mod_root, config)?;
             installed.push(result);
         } else {
@@ -592,6 +598,7 @@ fn run_automatic(
         mode: if installing { "direct_install_disabled" } else { "read_only_preview" },
         discovery, archived_title_build_pairs: total_pairs,
         installed_title_build_pairs: installed.len(),
+        already_installed_title_build_pairs: already_installed,
         prepared_title_build_pairs: planned.len(),
         installed, planned, skipped,
         game_executable_build_verified: false,
