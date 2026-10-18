@@ -1087,6 +1087,69 @@ jobs:
             echo "ERROR: unsafe staging into emulator mod directory accepted"
             exit 1
           fi
+      - name: Install exact-build Switch cheats directly into synthetic Eden, disabled by default
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          mkdir -p "$fixture/eden/load/0100000000010000/Existing Mod" "$fixture/eden-config"
+          printf 'unchanged\n' > "$fixture/eden/load/0100000000010000/Existing Mod/readme.txt"
+          cat > "$fixture/eden-config/qt-config.ini" <<'INI'
+          [UI]
+          theme=custom
+          [DisabledAddOns]
+          size=1
+          1\title_id=72057594037993472
+          1\disabled\size=1
+          1\disabled\1\d=Existing Mod
+          [Audio]
+          volume=22
+          INI
+          run_install() {
+            cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+              --db generated/v1 --title-id 0100000000010000 \
+              --build-id B424BE150A8E7D78 \
+              --mods-root "$fixture/eden/load" \
+              --config "$fixture/eden-config/qt-config.ini" --install --json "$@"
+          }
+          run_install > "$fixture/installed.json"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          result=json.loads((root/"installed.json").read_text())
+          assert result["format"]=="cheatarium-eden-direct-install-v1"
+          assert result["activation_state"]=="installed_disabled_by_default"
+          assert result["files_written"] > 0
+          assert result["files_written"] == len(result["installed_addons"])
+          assert not result["existing_mods_overwritten"]
+          assert not result["installed_build_id_verified"]
+          assert (root/"eden/load/0100000000010000/Existing Mod/readme.txt").read_text()=="unchanged\n"
+          ini=(root/"eden-config/qt-config.ini").read_text()
+          assert "[UI]\ntheme=custom" in ini
+          assert "[Audio]\nvolume=22" in ini
+          assert "1\\disabled\\1\\d=Existing Mod" in ini
+          assert f"1\\disabled\\size={1+result['files_written']}" in ini
+          for idx,name in enumerate(result["installed_addons"],2):
+              path=root/"eden/load/0100000000010000"/name/"cheats/B424BE150A8E7D78.txt"
+              assert path.is_file() and path.read_text().startswith("[")
+              assert f"1\\disabled\\{idx}\\d={name}" in ini
+          print("Installed",result["files_written"],"cheats directly into synthetic Eden, all disabled")
+          PY
+          cp "$fixture/eden-config/qt-config.ini" "$fixture/before-second.ini"
+          if run_install > "$fixture/repeated.json"; then
+            echo "ERROR: installation unexpectedly overwrote existing Eden add-ons"
+            exit 1
+          fi
+          cmp "$fixture/eden-config/qt-config.ini" "$fixture/before-second.ini"
+          if cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
+              --db generated/v1 --title-id 0100000000010000 --build-id AAAAAAAAAAAAAAAA \
+              --mods-root "$fixture/eden/load" \
+              --config "$fixture/eden-config/qt-config.ini" --install --json; then
+            echo "ERROR: unmatched Build ID created Eden addon"
+            exit 1
+          fi
+          cmp "$fixture/eden-config/qt-config.ini" "$fixture/before-second.ini"
       - name: Check Eden log-derived main Build IDs without modifying games
         run: |
           set -euo pipefail
