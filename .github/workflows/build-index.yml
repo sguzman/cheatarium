@@ -1243,6 +1243,11 @@ jobs:
           assert d["state_files_written"]==0
           evidence=d["main_build_evidence"]
           assert evidence["log_found"]
+          assert evidence["log_bytes_read"]>0
+          assert evidence["core_launch_contexts"]==1
+          assert evidence["main_nso_build_queries"]==1
+          assert evidence["unmatched_main_build_queries"]==0
+          assert evidence["log_diagnostic"]=="historical_main_nso_builds_observed"
           assert evidence["all_games_current_build_verified"] is False
           assert any(
               item["title_id"]=="0100000000010000"
@@ -1271,6 +1276,7 @@ jobs:
           assert "NO FILES WRITTEN" in report
           assert "Super Mario Odyssey" in report
           assert "EXACT CONTENTS" in report
+          assert "EDEN LOG DIAGNOSTIC: historical_main_nso_builds_observed" in report
           assert "HISTORICAL MAIN BUILD: B424BE150A8E7D78" in report
           assert "historically observed main NSO; NOT verified current" in report
           assert "PROPOSED [DisabledAddOns]" in report
