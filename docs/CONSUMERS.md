@@ -341,6 +341,18 @@ The writer requires at least one exact archived Sharkive source record for the s
 **Staged cheats are not installed or active.** Isolated staging never modifies Eden, while the separate `--install` option performs installation with per-addon disabled-by-default configuration. No rights-unresolved metadata-only external source is materialized.
 
 
+### First: inspect the complete proposed changes (strictly read-only)
+
+For normal operation, run the code already in this repository with **no Title ID or Build ID**, and with **no installation**:
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --dry-run --report
+```
+
+This prints every candidate game found in Eden's registered folders and game-list cache, its display name and discovery evidence, every matching archived build and cheat name, the originating archive, **exact target path, SHA-256, byte count and full proposed cheat-file contents**, plus the proposed `[DisabledAddOns]` section from Eden's Qt configuration. Existing identical disabled files and conflicting mod directories are marked separately. No files are staged, created, installed or enabled, and `qt-config.ini` is never changed. The program only reads the existing sources and creates its proposed files and settings **in memory**. Use `--dry-run --json` instead for the machine-readable equivalent; both modes are entirely non-writing. `--dry-run` explicitly **refuses** `--install` or `--stage-dir`.
+
+A dry-run report is **not authorization to install** and makes no claim that any archived Build ID matches the installed game's executable. A future installation should happen only after the user has reviewed the complete report.
+
 ### Direct on-demand installation into Eden (no IDs to look up)
 
 **Close Eden completely**, then run the normal CLI **without** any Title ID or Build ID arguments:
