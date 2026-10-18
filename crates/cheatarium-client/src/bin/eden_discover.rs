@@ -83,7 +83,6 @@ struct Report {
     warnings: Vec<String>,
 }
 
-
 #[derive(Debug, Serialize)]
 struct InventoryGame {
     title_id: String,
@@ -171,7 +170,9 @@ fn dlc_directory(path: &str) -> Option<String> {
 
 fn summarize_report(report: &Report) -> InventorySummary {
     let mut base_counts = BTreeMap::<String, usize>::new();
-    let cached_ids: BTreeSet<String> = report.cached_titles.iter()
+    let cached_ids: BTreeSet<String> = report
+        .cached_titles
+        .iter()
         .filter(|item| is_base_label(&item.title_id))
         .map(|item| item.title_id.clone())
         .collect();
@@ -211,27 +212,36 @@ fn summarize_report(report: &Report) -> InventorySummary {
     }
     let mut per_base_updates = BTreeMap::<String, usize>::new();
     for item in &updates {
-        *per_base_updates.entry(item.probable_base_title_id.clone()).or_default() += 1;
+        *per_base_updates
+            .entry(item.probable_base_title_id.clone())
+            .or_default() += 1;
     }
-    let candidate_base_titles = base_counts.into_iter().map(|(id, count)| {
-        let matching = report.title_id_matches.iter().find(|m| m.title_id == id);
-        InventoryGame {
-            title_id: id.clone(),
-            filename_labeled_base_files: count,
-            in_eden_cache: cached_ids.contains(&id),
-            archived_build_candidate_count: matching.map_or(0, |m| m.archived_build_candidates.len()),
-            external_reference_count: matching.map_or(0, |m| m.external_reference_total),
-            update_files_in_registered_folders: per_base_updates.get(&id).copied().unwrap_or(0),
-            installed_base_game_verified: false,
-            installed_update_verified: false,
-            installed_build_id_verified: false,
-        }
-    }).collect();
-    let uncorrelated_cached = cached_ids.into_iter().filter(|id| {
-        !report.game_files.iter().any(|file|
-            file.title_id.as_deref() == Some(id.as_str()) && dlc_directory(&file.path).is_none()
-        )
-    }).collect();
+    let candidate_base_titles = base_counts
+        .into_iter()
+        .map(|(id, count)| {
+            let matching = report.title_id_matches.iter().find(|m| m.title_id == id);
+            InventoryGame {
+                title_id: id.clone(),
+                filename_labeled_base_files: count,
+                in_eden_cache: cached_ids.contains(&id),
+                archived_build_candidate_count: matching
+                    .map_or(0, |m| m.archived_build_candidates.len()),
+                external_reference_count: matching.map_or(0, |m| m.external_reference_total),
+                update_files_in_registered_folders: per_base_updates.get(&id).copied().unwrap_or(0),
+                installed_base_game_verified: false,
+                installed_update_verified: false,
+                installed_build_id_verified: false,
+            }
+        })
+        .collect();
+    let uncorrelated_cached = cached_ids
+        .into_iter()
+        .filter(|id| {
+            !report.game_files.iter().any(|file| {
+                file.title_id.as_deref() == Some(id.as_str()) && dlc_directory(&file.path).is_none()
+            })
+        })
+        .collect();
     InventorySummary {
         schema_version: 1,
         format: "cheatarium-eden-inventory-summary-v1",
@@ -769,7 +779,10 @@ fn run() -> Result<(), ErrBox> {
         });
     }
     if summary {
-        println!("{}", serde_json::to_string_pretty(&summarize_report(&report))?);
+        println!(
+            "{}",
+            serde_json::to_string_pretty(&summarize_report(&report))?
+        );
     } else {
         println!("{}", serde_json::to_string_pretty(&report)?);
     }
@@ -898,7 +911,6 @@ mod tests {
         assert!(warnings.is_empty());
         fs::remove_dir_all(&path).unwrap();
     }
-
 
     #[test]
     fn update_title_label_uses_edens_base_or_0x800_rule() {
