@@ -1123,6 +1123,49 @@ jobs:
               assert not record["compatible_cheats_verified"]
           print("Historical main NSO build evidence found for both games, no installation claimed.")
           PY
+      - name: Confirm compact Eden inventory separates base games, updates, DLC and unresolved files
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          mkdir -p "$fixture/roms/super-smash/base-game" "$fixture/roms/super-smash/dlc" "$fixture/roms/super-mario-odyssey" "$fixture/roms/mario-kart-8" "$fixture/eden-cache"
+          printf '[UI]\nPaths\\gamedirs\\size=1\nPaths\\gamedirs\\1\\path=%s\nPaths\\gamedirs\\1\\deep_scan=true\n' "$fixture/roms" > "$fixture/eden.ini"
+          touch "$fixture/roms/super-smash/base-game/Smash [01006A800016E000].nsp"
+          touch "$fixture/roms/super-smash/dlc/Cosmetic [01006A800016F040].nsp"
+          touch "$fixture/roms/super-mario-odyssey/Odyssey [0100000000010000].nsp"
+          touch "$fixture/roms/super-mario-odyssey/Odyssey Update [0100000000010800].nsp"
+          touch "$fixture/roms/mario-kart-8/Mario Kart 8 Deluxe.nsp"
+          touch "$fixture/eden-cache/0100152000022000.pv.txt"
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
+            --db generated/v1 --config "$fixture/eden.ini" --cache-dir "$fixture/eden-cache" \
+            --summary --json > "$fixture/summary.json"
+          python3 - "$fixture/summary.json" "$fixture/roms" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          data = json.loads(Path(sys.argv[1]).read_text())
+          assert data["format"] == "cheatarium-eden-inventory-summary-v1"
+          assert data["read_only"] is True
+          assert data["total_game_container_files"] == 5
+          assert data["emulator_files_written"] == data["game_file_bytes_read"] == 0
+          assert data["installed_build_id_verified"] is False
+          games = {g["title_id"]: g for g in data["candidate_base_titles"]}
+          assert set(games) == {"01006A800016E000", "0100000000010000", "0100152000022000"}
+          assert games["0100152000022000"]["filename_labeled_base_files"] == 0
+          assert games["0100152000022000"]["in_eden_cache"]
+          assert games["0100000000010000"]["update_files_in_registered_folders"] == 1
+          assert all(not g["installed_update_verified"] for g in games.values())
+          assert len(data["probable_update_files"]) == 1
+          assert data["probable_update_files"][0]["probable_base_title_id"] == "0100000000010000"
+          assert not data["probable_update_files"][0]["applied_by_eden_verified"]
+          assert len(data["dlc_folder_groups"]) == 1
+          assert data["dlc_folder_groups"][0]["file_count"] == 1
+          assert data["dlc_folder_groups"][0]["path"].endswith("/super-smash/dlc")
+          assert len(data["unresolved_filename_title_ids"]) == 1
+          assert "Mario Kart" in data["unresolved_filename_title_ids"][0]
+          assert data["cached_title_ids_without_labeled_base_file"] == ["0100152000022000"]
+          print("Eden registered-folder summary: base, update, DLC, unknown; no content reads.")
+          PY
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
