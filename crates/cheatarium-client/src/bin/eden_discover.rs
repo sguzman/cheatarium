@@ -133,7 +133,6 @@ struct InventorySummary {
     warnings: Vec<&'static str>,
 }
 
-
 #[derive(Debug, Serialize)]
 struct SavedDisabledAddons {
     title_id: String,
@@ -173,16 +172,27 @@ fn saved_disabled_addons(contents: &str) -> Vec<SavedDisabledAddons> {
         if !in_section || line.starts_with('#') || line.starts_with(';') {
             continue;
         }
-        let Some((key, val)) = line.split_once('=') else { continue };
+        let Some((key, val)) = line.split_once('=') else {
+            continue;
+        };
         let path = key.trim().replace('\\', "/");
         let fields: Vec<_> = path.split('/').filter(|p| !p.is_empty()).collect();
-        if fields.is_empty() { continue; }
-        let Ok(idx) = fields[0].parse::<usize>() else { continue };
-        if idx == 0 || idx > 1000 { continue; }
+        if fields.is_empty() {
+            continue;
+        }
+        let Ok(idx) = fields[0].parse::<usize>() else {
+            continue;
+        };
+        if idx == 0 || idx > 1000 {
+            continue;
+        }
         let value = val.trim();
         match fields.as_slice() {
             [_, "title_id"] => {
-                let raw = if let Some(hex) = value.strip_prefix("0x").or_else(|| value.strip_prefix("0X")) {
+                let raw = if let Some(hex) = value
+                    .strip_prefix("0x")
+                    .or_else(|| value.strip_prefix("0X"))
+                {
                     u64::from_str_radix(hex, 16).ok()
                 } else {
                     value.parse::<u64>().ok()
@@ -192,11 +202,22 @@ fn saved_disabled_addons(contents: &str) -> Vec<SavedDisabledAddons> {
                 }
             }
             [_, "disabled", sub, "d"] => {
-                let Ok(sub) = sub.parse::<usize>() else { continue };
-                if sub == 0 || sub > 1000 || value.is_empty() || value.len() > 180
+                let Ok(sub) = sub.parse::<usize>() else {
+                    continue;
+                };
+                if sub == 0
+                    || sub > 1000
+                    || value.is_empty()
+                    || value.len() > 180
                     || value.chars().any(char::is_control)
-                { continue; }
-                entries.entry(idx).or_default().1.insert(sub, value.to_owned());
+                {
+                    continue;
+                }
+                entries
+                    .entry(idx)
+                    .or_default()
+                    .1
+                    .insert(sub, value.to_owned());
             }
             _ => {}
         }
@@ -205,11 +226,16 @@ fn saved_disabled_addons(contents: &str) -> Vec<SavedDisabledAddons> {
     for (_idx, (id, values)) in entries {
         let Some(id) = id else { continue };
         let title = format!("{id:016X}");
-        if !is_title_id(&title) { continue }
+        if !is_title_id(&title) {
+            continue;
+        }
         let names: Vec<String> = values.into_values().collect();
         let mut versions = Vec::new();
         for value in &names {
-            if let Some(v) = value.strip_prefix("Update@").and_then(|v| v.parse::<u32>().ok()) {
+            if let Some(v) = value
+                .strip_prefix("Update@")
+                .and_then(|v| v.parse::<u32>().ok())
+            {
                 versions.push(v);
             }
         }
@@ -265,13 +291,22 @@ fn read_cached_update_displays(root: &Path, ids: &[InventoryGame]) -> Vec<Cached
     let mut displays = Vec::new();
     for title in ids {
         let path = root.join(format!("{}.pv.txt", title.title_id));
-        let Ok(metadata) = fs::symlink_metadata(&path) else { continue };
-        if metadata.file_type().is_symlink() || !metadata.is_file()
+        let Ok(metadata) = fs::symlink_metadata(&path) else {
+            continue;
+        };
+        if metadata.file_type().is_symlink()
+            || !metadata.is_file()
             || metadata.len() > MAX_CACHE_TITLE_BYTES
-        { continue; }
+        {
+            continue;
+        }
         let Ok(bytes) = fs::read(&path) else { continue };
-        if bytes.len() as u64 > MAX_CACHE_TITLE_BYTES { continue; }
-        let Ok(contents) = std::str::from_utf8(&bytes) else { continue };
+        if bytes.len() as u64 > MAX_CACHE_TITLE_BYTES {
+            continue;
+        }
+        let Ok(contents) = std::str::from_utf8(&bytes) else {
+            continue;
+        };
         displays.push(parse_cached_patch_display(&title.title_id, contents));
     }
     displays
@@ -1088,7 +1123,6 @@ mod tests {
         assert!(dlc_directory("/games/super-smash/base-game/Game.nsp").is_none());
     }
 
-
     #[test]
     fn reads_exact_eden_disabled_addon_array_without_implying_runtime_state() {
         let ini = r#"[UI]
@@ -1120,14 +1154,20 @@ volume=100
     fn parses_cached_update_rows_but_preserves_staleness_warning() {
         let entry = parse_cached_patch_display(
             "0100000000010000",
-            "Update (1.3.0)\n[D] Update (1.1.0)\nSome Mod (0.2)\n"
+            "Update (1.3.0)\n[D] Update (1.1.0)\nSome Mod (0.2)\n",
         );
         assert_eq!(entry.cached_update_lines.len(), 2);
-        assert_eq!(entry.cached_update_lines[0].displayed_line, "Update (1.3.0)");
+        assert_eq!(
+            entry.cached_update_lines[0].displayed_line,
+            "Update (1.3.0)"
+        );
         assert!(entry.cached_update_lines[1].displayed_disabled);
         assert_eq!(entry.cached_other_patch_lines, 1);
         assert!(entry.cache_may_be_stale);
-        assert!(entry.cached_update_lines.iter().all(|x| !x.current_update_applied_verified));
+        assert!(entry
+            .cached_update_lines
+            .iter()
+            .all(|x| !x.current_update_applied_verified));
     }
 
     #[test]
