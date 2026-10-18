@@ -125,24 +125,40 @@ fn main_nso_build(line: &str) -> Option<(String, usize)> {
     Some((raw[..16].to_ascii_uppercase(), raw.len()))
 }
 
-
 /// Eden patch_manager.cpp's ReadCheatFileFromFolder may emit one of these
 /// title+build pairs if an enabled mod folder tries to find a cheat file.
 /// This is a separate, weaker signal than a logged main NSO query.
 fn direct_cheat_lookup(line: &str) -> Option<(String, String, &'static str)> {
     const PATTERNS: [(&str, &str); 2] = [
-        ("No cheats file found for title_id=", "missing_cheat_file_lookup"),
-        ("Failed to read cheats file for title_id=", "unreadable_cheat_file_lookup"),
+        (
+            "No cheats file found for title_id=",
+            "missing_cheat_file_lookup",
+        ),
+        (
+            "Failed to read cheats file for title_id=",
+            "unreadable_cheat_file_lookup",
+        ),
     ];
     for (marker, kind) in PATTERNS {
-        let Some((_, suffix)) = line.split_once(marker) else { continue };
-        let Some(title) = hex_token(suffix, 16) else { continue };
-        if !title.starts_with("01") { continue; }
+        let Some((_, suffix)) = line.split_once(marker) else {
+            continue;
+        };
+        let Some(title) = hex_token(suffix, 16) else {
+            continue;
+        };
+        if !title.starts_with("01") {
+            continue;
+        }
         let Some(rest) = suffix.get(16..).and_then(|x| x.strip_prefix(", build_id=")) else {
             continue;
         };
-        let Some(build) = hex_token(rest, 16) else { continue };
-        if !rest.get(16..).is_some_and(|x| x.is_empty() || x.starts_with(|c: char| c.is_whitespace())) {
+        let Some(build) = hex_token(rest, 16) else {
+            continue;
+        };
+        if !rest
+            .get(16..)
+            .is_some_and(|x| x.is_empty() || x.starts_with(|c: char| c.is_whitespace()))
+        {
             continue;
         }
         return Some((title, build, kind));
@@ -268,13 +284,18 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
     report.main_builds_without_launch_context = parsed.orphan_main_builds;
     report.core_launch_contexts_seen = parsed.core_launches;
     report.main_nso_patch_queries_seen = parsed.main_queries;
-    report.direct_cheat_lookup_observations = parsed.cheat_lookup_witness.into_iter()
+    report.direct_cheat_lookup_observations = parsed
+        .cheat_lookup_witness
+        .into_iter()
         .map(|(title_id, build_id, event)| CheatLookupObservation {
             archived_build_candidate_found: archived_match(index, &title_id, &build_id),
-            title_id, build_id, event,
+            title_id,
+            build_id,
+            event,
             main_executable_build_verified: false,
             current_installed_build_verified: false,
-        }).collect();
+        })
+        .collect();
     let mut titles = BTreeMap::<String, BTreeSet<String>>::new();
     for w in parsed.witness {
         titles
@@ -383,9 +404,18 @@ mod tests {
         assert_eq!(parsed.witness.len(), 0);
         assert_eq!(parsed.cheat_lookup_witness.len(), 2);
         assert_eq!(parsed.core_launches, 0);
-        assert!(direct_cheat_lookup("No cheats file found for title_id=0100000000010000, build_id=BAD").is_none());
-        assert!(direct_cheat_lookup("No cheats file found for title_id=0100000000010000, build_id=B424BE150A8E7D7800").is_none());
-        assert!(direct_cheat_lookup("Failed to read cheats file for title_id=FOOBAR, build_id=B424BE150A8E7D78").is_none());
+        assert!(direct_cheat_lookup(
+            "No cheats file found for title_id=0100000000010000, build_id=BAD"
+        )
+        .is_none());
+        assert!(direct_cheat_lookup(
+            "No cheats file found for title_id=0100000000010000, build_id=B424BE150A8E7D7800"
+        )
+        .is_none());
+        assert!(direct_cheat_lookup(
+            "Failed to read cheats file for title_id=FOOBAR, build_id=B424BE150A8E7D78"
+        )
+        .is_none());
     }
 
     #[test]

@@ -859,17 +859,21 @@ fn run_registered_files_audit(
             // Reuse the same inspection evidence for the compact inventory,
             // rather than leaving its advisory ticket counts incorrectly zero.
             if game.title_id.is_none() {
-                inventory.unresolved_nsp_header_inspections.push(NspHeaderInspection {
-                    file_path: header.file_path.clone(),
-                    status: header.status,
-                    bytes_read: header.bytes_read,
-                    container_file_entries: header.container_file_entries,
-                    nca_file_entries: header.nca_file_entries,
-                    cnmt_nca_file_entries: header.cnmt_nca_file_entries,
-                    ticket_filename_title_id_candidates: header.ticket_filename_title_id_candidates.clone(),
-                    executable_build_id_found: false,
-                    installed_build_id_verified: false,
-                });
+                inventory
+                    .unresolved_nsp_header_inspections
+                    .push(NspHeaderInspection {
+                        file_path: header.file_path.clone(),
+                        status: header.status,
+                        bytes_read: header.bytes_read,
+                        container_file_entries: header.container_file_entries,
+                        nca_file_entries: header.nca_file_entries,
+                        cnmt_nca_file_entries: header.cnmt_nca_file_entries,
+                        ticket_filename_title_id_candidates: header
+                            .ticket_filename_title_id_candidates
+                            .clone(),
+                        executable_build_id_found: false,
+                        installed_build_id_verified: false,
+                    });
             }
             record.header_status = header.status;
             record.header_bytes_read = header.bytes_read;
@@ -912,7 +916,10 @@ fn run_registered_files_audit(
     let complete = !report.game_roots.is_empty()
         && !report.scan_statistics.traversal_limit_reached
         && report.game_roots.iter().all(|r| r.status == "scanned")
-        && !report.warnings.iter().any(|warning| warning.starts_with("directory_scan_incomplete:"))
+        && !report
+            .warnings
+            .iter()
+            .any(|warning| warning.starts_with("directory_scan_incomplete:"))
         && !exhausted;
     RegisteredFilesAudit {
         inventory,
@@ -2011,7 +2018,10 @@ volume=100
         };
         let output = run_registered_files_audit(summarize_report(&report), &report);
         assert_eq!(output.audit_file_count, 3);
-        assert_eq!(output.inventory.inspected_nsp_file_bytes_read, output.files[0].header_bytes_read);
+        assert_eq!(
+            output.inventory.inspected_nsp_file_bytes_read,
+            output.files[0].header_bytes_read
+        );
         assert_eq!(output.header_inspections_attempted, 2);
         assert_eq!(output.listed_only_files, 1);
         assert!(output.complete_registered_file_inventory);
