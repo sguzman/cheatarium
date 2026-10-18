@@ -31,7 +31,9 @@ pub(super) struct Installed {
 
 fn validate_regular_ancestors(path: &Path, final_is_file: bool) -> Result<(), ErrBox> {
     if !path.is_absolute()
-        || path.components().any(|c| matches!(c, Component::CurDir | Component::ParentDir))
+        || path
+            .components()
+            .any(|c| matches!(c, Component::CurDir | Component::ParentDir))
     {
         return Err("Eden destination must be an absolute normalized path".into());
     }
@@ -66,7 +68,9 @@ fn eden_not_running() -> Result<(), ErrBox> {
             {
                 continue;
             }
-            let Ok(comm) = fs::read_to_string(item.path().join("comm")) else { continue };
+            let Ok(comm) = fs::read_to_string(item.path().join("comm")) else {
+                continue;
+            };
             let proc_name = comm.trim().to_ascii_lowercase();
             if proc_name == "eden"
                 || proc_name == "eden-qt"
@@ -96,30 +100,41 @@ fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Resu
     if new_names.is_empty() || new_names.len() > MAX_DISABLED_NAMES {
         return Err("No valid per-cheat addon names to disable".into());
     }
-    if new_names.iter().any(|n| n.is_empty() || n.contains(['\\', '\r', '\n', '='])
-        || n.chars().any(char::is_control)) {
+    if new_names.iter().any(|n| {
+        n.is_empty() || n.contains(['\\', '\r', '\n', '=']) || n.chars().any(char::is_control)
+    }) {
         return Err("Unsafe add-on name cannot be stored in Eden QSettings".into());
     }
     if new_names.iter().collect::<BTreeSet<_>>().len() != new_names.len() {
         return Err("Duplicate proposed Eden addon directory".into());
     }
-    let newline = if original.contains("\r\n") { "\r\n" } else { "\n" };
-    let mut lines: Vec<String> = original.lines().map(|l| l.trim_end_matches('\r').to_owned()).collect();
+    let newline = if original.contains("\r\n") {
+        "\r\n"
+    } else {
+        "\n"
+    };
+    let mut lines: Vec<String> = original
+        .lines()
+        .map(|l| l.trim_end_matches('\r').to_owned())
+        .collect();
     let mut start = None;
     let mut finish = lines.len();
     for (i, raw) in lines.iter().enumerate() {
         let t = raw.trim();
         if t.eq_ignore_ascii_case("[DisabledAddOns]") {
-            if start.is_some() { return Err("Repeated DisabledAddOns section in Eden config".into()); }
+            if start.is_some() {
+                return Err("Repeated DisabledAddOns section in Eden config".into());
+            }
             start = Some(i);
-        } else if start.is_some() && i > start.unwrap()
-            && t.starts_with('[') && t.ends_with(']') {
+        } else if start.is_some() && i > start.unwrap() && t.starts_with('[') && t.ends_with(']') {
             finish = i;
             break;
         }
     }
     let Some(begin) = start else {
-        if !original.is_empty() && !original.ends_with('\n') { lines.push(String::new()); }
+        if !original.is_empty() && !original.ends_with('\n') {
+            lines.push(String::new());
+        }
         lines.extend([
             "[DisabledAddOns]".into(),
             "size=1".into(),
@@ -127,7 +142,7 @@ fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Resu
             format!("1\\disabled\\size={}", new_names.len()),
         ]);
         for (i, name) in new_names.iter().enumerate() {
-            lines.push(format!("1\\disabled\\{}\\d={name}", i+1));
+            lines.push(format!("1\\disabled\\{}\\d={name}", i + 1));
         }
         return Ok(format!("{}{}", lines.join(newline), newline));
     };
@@ -135,10 +150,14 @@ fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Resu
     let mut size = None;
     let mut rows = BTreeMap::<usize, DisabledRow>::new();
     let mut seen_keys = BTreeSet::new();
-    for j in (begin+1)..finish {
+    for j in (begin + 1)..finish {
         let t = lines[j].trim();
-        if t.is_empty() || t.starts_with(';') || t.starts_with('#') { continue; }
-        let (key, val) = t.split_once('=').ok_or("Malformed DisabledAddOns setting")?;
+        if t.is_empty() || t.starts_with(';') || t.starts_with('#') {
+            continue;
+        }
+        let (key, val) = t
+            .split_once('=')
+            .ok_or("Malformed DisabledAddOns setting")?;
         if !seen_keys.insert(key.to_owned()) {
             return Err("Duplicate Eden DisabledAddOns QSettings key".into());
         }
@@ -176,7 +195,8 @@ fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Resu
         }
     }
     let declared = size.unwrap_or(0);
-    if declared > MAX_DISABLED_GROUPS || rows.len() != declared
+    if declared > MAX_DISABLED_GROUPS
+        || rows.len() != declared
         || (1..=declared).any(|n| !rows.contains_key(&n))
     {
         return Err("Eden DisabledAddOns group count is inconsistent".into());
@@ -184,24 +204,40 @@ fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Resu
     let mut matching = None;
     let mut unique_ids = BTreeSet::new();
     for (number, row) in &rows {
-        let id = row.title_id.ok_or("Eden disabled add-on group has no title_id")?;
-        if !unique_ids.insert(id) { return Err("Duplicate title ID in Eden DisabledAddOns".into()); }
+        let id = row
+            .title_id
+            .ok_or("Eden disabled add-on group has no title_id")?;
+        if !unique_ids.insert(id) {
+            return Err("Duplicate title ID in Eden DisabledAddOns".into());
+        }
         let count = row.count.unwrap_or(0);
-        if count > MAX_DISABLED_NAMES || row.names.len() != count
+        if count > MAX_DISABLED_NAMES
+            || row.names.len() != count
             || (1..=count).any(|i| !row.names.contains_key(&i))
         {
             return Err("Eden disabled add-on array count is inconsistent".into());
         }
-        if id == title_number { matching = Some(*number); }
+        if id == title_number {
+            matching = Some(*number);
+        }
     }
     if let Some(index) = matching {
         let row = &rows[&index];
         let existing: BTreeSet<&str> = row.names.values().map(String::as_str).collect();
-        let additional = new_names.iter().filter(|n| !existing.contains(n.as_str())).collect::<Vec<_>>();
-        if additional.is_empty() { return Ok(original.to_owned()); }
+        let additional = new_names
+            .iter()
+            .filter(|n| !existing.contains(n.as_str()))
+            .collect::<Vec<_>>();
+        if additional.is_empty() {
+            return Ok(original.to_owned());
+        }
         let old_count = row.count.unwrap_or(0);
-        let total = old_count.checked_add(additional.len()).ok_or("Disabled add-on count overflow")?;
-        if total > MAX_DISABLED_NAMES { return Err("Too many disabled Eden add-ons".into()); }
+        let total = old_count
+            .checked_add(additional.len())
+            .ok_or("Disabled add-on count overflow")?;
+        if total > MAX_DISABLED_NAMES {
+            return Err("Too many disabled Eden add-ons".into());
+        }
         if let Some(line) = row.count_line {
             lines[line] = format!("{index}\\disabled\\size={total}");
         }
@@ -210,19 +246,30 @@ fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Resu
             fresh.push(format!("{index}\\disabled\\size={total}"));
         }
         for (offset, name) in additional.iter().enumerate() {
-            fresh.push(format!("{index}\\disabled\\{}\\d={name}", old_count+offset+1));
+            fresh.push(format!(
+                "{index}\\disabled\\{}\\d={name}",
+                old_count + offset + 1
+            ));
         }
         lines.splice(finish..finish, fresh);
     } else {
-        let next = declared.checked_add(1).ok_or("Disabled title array overflow")?;
-        if next > MAX_DISABLED_GROUPS { return Err("Too many disabled Eden title groups".into()); }
-        if let Some(line) = size_line { lines[line] = format!("size={next}"); }
+        let next = declared
+            .checked_add(1)
+            .ok_or("Disabled title array overflow")?;
+        if next > MAX_DISABLED_GROUPS {
+            return Err("Too many disabled Eden title groups".into());
+        }
+        if let Some(line) = size_line {
+            lines[line] = format!("size={next}");
+        }
         let mut fresh = Vec::new();
-        if size_line.is_none() { fresh.push(format!("size={next}")); }
+        if size_line.is_none() {
+            fresh.push(format!("size={next}"));
+        }
         fresh.push(format!("{next}\\title_id={title_number}"));
         fresh.push(format!("{next}\\disabled\\size={}", new_names.len()));
-        for (idx,name) in new_names.iter().enumerate() {
-            fresh.push(format!("{next}\\disabled\\{}\\d={name}", idx+1));
+        for (idx, name) in new_names.iter().enumerate() {
+            fresh.push(format!("{next}\\disabled\\{}\\d={name}", idx + 1));
         }
         lines.splice(finish..finish, fresh);
     }
@@ -230,14 +277,19 @@ fn disabled_config(original: &str, title_id: &str, new_names: &[String]) -> Resu
 }
 
 fn write_config_atomic(path: &Path, expected: &str, updated: &str) -> Result<(), ErrBox> {
-    if expected == updated { return Ok(()); }
+    if expected == updated {
+        return Ok(());
+    }
     let parent = path.parent().ok_or("Eden config has no parent")?;
     validate_regular_ancestors(path, true)?;
     if fs::read_to_string(path)? != expected {
         return Err("Eden config changed during installation; refusing to overwrite".into());
     }
     let temp = parent.join(format!(".qt-config.ini.cheatarium-{}", std::process::id()));
-    let mut file = OpenOptions::new().write(true).create_new(true).open(&temp)?;
+    let mut file = OpenOptions::new()
+        .write(true)
+        .create_new(true)
+        .open(&temp)?;
     let result = (|| -> Result<(), ErrBox> {
         file.set_permissions(fs::metadata(path)?.permissions())?;
         file.write_all(updated.as_bytes())?;
@@ -250,7 +302,9 @@ fn write_config_atomic(path: &Path, expected: &str, updated: &str) -> Result<(),
         fs::rename(&temp, path)?;
         Ok(())
     })();
-    if result.is_err() { let _ = fs::remove_file(&temp); }
+    if result.is_err() {
+        let _ = fs::remove_file(&temp);
+    }
     result
 }
 
@@ -274,7 +328,8 @@ pub(super) fn install(
     for (entry, _) in &prepared {
         let relative = Path::new(&entry.relative_path);
         let parts = relative.components().collect::<Vec<_>>();
-        if parts.len() != 4 || parts[0].as_os_str() != std::ffi::OsStr::new(title)
+        if parts.len() != 4
+            || parts[0].as_os_str() != std::ffi::OsStr::new(title)
             || parts[2].as_os_str() != "cheats"
         {
             return Err("Unrecognized planned Eden addon structure".into());
@@ -285,11 +340,17 @@ pub(super) fn install(
         }
         let destination = title_dir.join(&addon);
         if fs::symlink_metadata(&destination).is_ok() {
-            return Err(format!("Refusing to overwrite an existing Eden mod: {}", destination.display()).into());
+            return Err(format!(
+                "Refusing to overwrite an existing Eden mod: {}",
+                destination.display()
+            )
+            .into());
         }
         names.push(addon);
     }
-    if prepared.is_empty() { return Err("No exact-build cheats to install".into()); }
+    if prepared.is_empty() {
+        return Err("No exact-build cheats to install".into());
+    }
     let original = fs::read_to_string(config)?;
     if original.len() as u64 > MAX_INI_BYTES {
         return Err("Eden configuration exceeds size limit".into());
@@ -298,7 +359,9 @@ pub(super) fn install(
     // Ensure QSettings disables every new addon before the first file appears.
     eden_not_running()?;
     write_config_atomic(config, &original, &updated)?;
-    if !title_dir.exists() { fs::create_dir(&title_dir)?; }
+    if !title_dir.exists() {
+        fs::create_dir(&title_dir)?;
+    }
     let mut written = 0usize;
     for ((entry, bytes), addon) in prepared.iter().zip(names.iter()) {
         let root = title_dir.join(addon);
@@ -336,28 +399,32 @@ mod tests {
     #[test]
     fn update_disabled_qsettings_preserves_existing_mods_and_unrelated_settings() {
         let ini = "[UI]\nfoo=bar\n[DisabledAddOns]\nsize=2\n1\\title_id=72057594037993472\n1\\disabled\\size=1\n1\\disabled\\1\\d=Existing Mod\n2\\title_id=72081146186022912\n2\\disabled\\size=0\n[Audio]\nvolume=22\n";
-        let title = format!("{:016X}",72057594037993472u64);
-        let next = disabled_config(ini,&title,&["Cheatarium-0000-Test".into()]).unwrap();
+        let title = format!("{:016X}", 72057594037993472u64);
+        let next = disabled_config(ini, &title, &["Cheatarium-0000-Test".into()]).unwrap();
         assert!(next.contains("1\\disabled\\size=2"));
         assert!(next.contains("1\\disabled\\2\\d=Cheatarium-0000-Test"));
         assert!(next.contains("1\\disabled\\1\\d=Existing Mod"));
         assert!(next.contains("[Audio]\nvolume=22"));
-        assert_eq!(disabled_config(&next,&title,&["Cheatarium-0000-Test".into()]).unwrap(),next);
+        assert_eq!(
+            disabled_config(&next, &title, &["Cheatarium-0000-Test".into()]).unwrap(),
+            next
+        );
     }
     #[test]
     fn create_new_disabled_addon_array() {
         let ini = "[UI]\nfoo=bar\n";
-        let result = disabled_config(ini,"0100000000010000",&["Cheatarium-Test".into()]).unwrap();
+        let result = disabled_config(ini, "0100000000010000", &["Cheatarium-Test".into()]).unwrap();
         assert!(result.contains("[DisabledAddOns]\nsize=1"));
         assert!(result.contains("1\\title_id=72057594037993472"));
         assert!(result.contains("1\\disabled\\1\\d=Cheatarium-Test"));
-        let second = disabled_config(&result,"0100152000022000",&["Cheatarium-Kart".into()]).unwrap();
+        let second =
+            disabled_config(&result, "0100152000022000", &["Cheatarium-Kart".into()]).unwrap();
         assert!(second.contains("size=2"));
         assert!(second.contains("2\\disabled\\1\\d=Cheatarium-Kart"));
     }
     #[test]
     fn rejects_corrupt_disable_array() {
         let ini = "[DisabledAddOns]\nsize=1\n1\\title_id=72057594037993472\n1\\disabled\\size=2\n1\\disabled\\1\\d=One\n";
-        assert!(disabled_config(ini,"0100000000010000",&["New".into()]).is_err());
+        assert!(disabled_config(ini, "0100000000010000", &["New".into()]).is_err());
     }
 }
