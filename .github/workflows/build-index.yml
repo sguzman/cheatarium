@@ -1240,6 +1240,66 @@ jobs:
           assert report["unresolved_after_nsp_header_inspection"] == []
           print("PFS0 header hint associated with cached title; no installed identity or executable Build ID claimed.")
           PY
+      - name: Audit every registered Eden file including nested NSPs, XCI and unsupported compressed formats
+        run: |
+          set -euo pipefail
+          testdir="$(mktemp -d)"
+          trap 'rm -rf "$testdir"' EXIT
+          mkdir -p "$testdir/roms/a/b/c/d/e/f/g/dlc" "$testdir/roms/other" "$testdir/eden-cache"
+          printf '[UI]\nPaths\\gamedirs\\size=1\nPaths\\gamedirs\\1\\path=%s\nPaths\\gamedirs\\1\\deep_scan=true\n' "$testdir/roms" > "$testdir/qt-config.ini"
+          python3 - "$testdir/roms" <<'PY'
+          from pathlib import Path
+          import struct
+          import sys
+          root = Path(sys.argv[1])
+          nested = root / "a/b/c/d/e/f/g"
+          def nsp(path, ticket):
+              entries = [(ticket + ".tik", b"not read"), ("fake.cnmt.nca", b"encrypted")]
+              names, descriptors, payload = bytearray(), bytearray(), bytearray()
+              for name, content in entries:
+                  name_at, content_at = len(names), len(payload)
+                  names.extend(name.encode() + b"\x00")
+                  descriptors.extend(struct.pack("<QQII", content_at, len(content), name_at, 0))
+                  payload.extend(content)
+              path.write_bytes(b"PFS0" + struct.pack("<III", len(entries), len(names), 0) + descriptors + names + payload)
+          nsp(nested/"Game [0100000000010000].nsp", "01000000000100000000000000000000")
+          nsp(nested/"Game Update [0100000000010800].nsp", "01000000000108000000000000000000")
+          nsp(nested/"dlc"/"Cosmetic [0100000000011001].nsp", "01000000000110010000000000000000")
+          xci = bytearray(0x220)
+          xci[0x100:0x104] = b"HEAD"
+          (root/"other"/"Card game.xci").write_bytes(xci)
+          (root/"other"/"Compressed Game.nsz").write_bytes(b"not read")
+          (root/"other"/"Standalone.nca").write_bytes(b"encrypted")
+          (root/"other"/"ignore.txt").write_bytes(b"not game")
+          PY
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
+            --db generated/v1 --config "$testdir/qt-config.ini" --cache-dir "$testdir/eden-cache" \
+            --summary --audit-all-files --json > "$testdir/full-audit.json"
+          python3 - "$testdir/full-audit.json" <<'PY'
+          import json, sys
+          from pathlib import Path
+          out = json.loads(Path(sys.argv[1]).read_text())
+          assert out["format"] == "cheatarium-eden-registered-files-audit-v1"
+          assert out["total_game_container_files"] == out["audit_file_count"] == 6
+          assert out["traversal"]["deepest_directory_depth_visited"] >= 7
+          assert out["traversal"]["ignored_non_game_files"] == 1
+          assert not out["traversal"]["traversal_limit_reached"]
+          assert out["header_inspections_attempted"] == 4
+          assert out["listed_only_files"] == 2
+          assert out["header_status_totals"]["outer_pfs0_metadata_only"] == 3
+          assert out["header_status_totals"]["xci_gamecard_header_magic_only"] == 1
+          assert out["header_status_totals"]["compressed_container_not_parsed"] == 1
+          assert out["header_status_totals"]["encrypted_nca_header_not_parsed"] == 1
+          assert out["total_header_bytes_read"] == out["game_file_bytes_read"]
+          assert out["total_header_bytes_read"] < 1024
+          assert not out["budget_exhausted"]
+          assert out["complete_registered_file_inventory"]
+          assert out["emulator_files_written"] == 0
+          assert not out["installed_build_id_verified"]
+          assert all(not f["executable_build_id_verified"] and not f["emulator_content_modified"] for f in out["files"])
+          assert any(f["file_type"] == "nsp" and f["filename_ticket_relation"] == "exact_same_title_id_hint" for f in out["files"])
+          print("All six registered files audited; deep scan verified; no executable/build/installation claim")
+          PY
       - name: Confirm consumer-cli stage
         env:
           GITHUB_TOKEN: ${{ github.token }}
