@@ -17,21 +17,21 @@ const SCHEMA_VERSION: u32 = 1;
 const HISTORY_FORMAT: &str = "cheatarium-eden-minimal-build-history-v1";
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub(super) struct Entry {
-    pub(super) title_id: String,
-    pub(super) build_id: String,
-    pub(super) evidence_kind: String,
+pub(crate) struct Entry {
+    pub(crate) title_id: String,
+    pub(crate) build_id: String,
+    pub(crate) evidence_kind: String,
     /// Time this observation was captured from a log, NOT game launch time.
-    pub(super) first_captured_unix_seconds: u64,
-    pub(super) last_captured_unix_seconds: u64,
+    pub(crate) first_captured_unix_seconds: u64,
+    pub(crate) last_captured_unix_seconds: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub(super) struct History {
-    pub(super) schema_version: u32,
-    pub(super) format: String,
-    pub(super) last_log_sha256: Option<String>,
-    pub(super) entries: Vec<Entry>,
+pub(crate) struct History {
+    pub(crate) schema_version: u32,
+    pub(crate) format: String,
+    pub(crate) last_log_sha256: Option<String>,
+    pub(crate) entries: Vec<Entry>,
 }
 
 impl Default for History {
@@ -45,7 +45,7 @@ impl Default for History {
     }
 }
 
-pub(super) fn default_path() -> PathBuf {
+pub(crate) fn default_path() -> PathBuf {
     let base = env::var_os("XDG_STATE_HOME")
         .map(PathBuf::from)
         .or_else(|| env::var_os("HOME").map(|h| PathBuf::from(h).join(".local/state")))
@@ -126,7 +126,7 @@ fn check_path(path: &Path, creating: bool) -> Result<(), ErrBox> {
     Ok(())
 }
 
-pub(super) fn load(path: &Path) -> Result<(History, bool), ErrBox> {
+pub(crate) fn load(path: &Path) -> Result<(History, bool), ErrBox> {
     check_path(path, false)?;
     let meta = match fs::symlink_metadata(path) {
         Ok(meta) => meta,
@@ -227,7 +227,7 @@ fn prepare_dir(parent: &Path) -> Result<(), ErrBox> {
 
 /// Only explicit capture writes to Cheatarium's own state directory. Reads
 /// stay read-only, and Eden's log/config/mods are never touched.
-pub(super) fn capture(
+pub(crate) fn capture(
     path: &Path,
     log: &LaunchEvidence,
 ) -> Result<(History, bool), ErrBox> {
