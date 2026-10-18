@@ -556,6 +556,7 @@ fn automatic_pairs(bundle: &Bundle, ids: &[String]) -> Result<Vec<(String, Strin
 fn single_historical_main_pairs(
     pairs: Vec<(String, String)>,
     observations: &[eden_builds::MainBuildObservation],
+    saved_history: &eden_builds::eden_history::History,
 ) -> (Vec<(String, String)>, Vec<SkippedAutomaticBuild>) {
     let mut by_title = BTreeMap::<String, BTreeSet<String>>::new();
     for observed in observations {
@@ -564,11 +565,21 @@ fn single_historical_main_pairs(
             .or_default()
             .insert(observed.build_id.clone());
     }
+    // Saved history is strictly a historical signal. Conflicting old/new
+    // observations fail closed; weak cheat-file lookups are never promoted.
+    for record in &saved_history.entries {
+        if record.evidence_kind == "main_nso" {
+            by_title
+                .entry(record.title_id.clone())
+                .or_default()
+                .insert(record.build_id.clone());
+        }
+    }
     let mut selected = Vec::new();
     let mut skipped = Vec::new();
     for (title, build) in pairs {
         let reason = match by_title.get(&title) {
-            None => Some("no_historical_main_build_observed"),
+            None => Some("no_historical_main_build_observed_in_log_or_private_history"),
             Some(builds) if builds.len() != 1 => Some("multiple_historical_main_builds_ambiguous"),
             Some(builds) if !builds.contains(&build) => {
                 Some("archived_build_not_historically_observed_as_main")
@@ -594,7 +605,7 @@ fn run_automatic(
     cache_dir: &Path,
     mod_root: &Path,
     installing: bool,
-    historical_main_only: Option<&eden_builds::LaunchEvidence>,
+    historical_main_only: Option<(&eden_builds::LaunchEvidence, &eden_builds::eden_history::History)>,
 ) -> Result<AutomaticReport, ErrBox> {
     let discovery = eden_auto::discover(config, cache_dir)?;
     if discovery.titles.is_empty() {
@@ -619,7 +630,7 @@ fn run_automatic(
     }
     let total_pairs = pairs.len();
     let (pairs, history_skipped) = match historical_main_only {
-        Some(evidence) => single_historical_main_pairs(pairs, &evidence.main),
+        Some((evidence, history)) => single_historical_main_pairs(pairs, &evidence.main, history),
         None => (pairs, Vec::new()),
     };
     skipped.extend(history_skipped);
@@ -668,7 +679,7 @@ fn run_automatic(
         mode: if installing { "direct_install_disabled" } else { "read_only_preview" },
         discovery, archived_title_build_pairs: total_pairs,
         candidate_build_scope: if historical_main_only.is_some() {
-            "unique_historical_main_nso_build_only_not_current_verified"
+            "unique_historical_main_nso_build_log_or_saved_history_not_current_verified"
         } else {
             "all_archived_builds_unverified"
         },
@@ -693,6 +704,7 @@ fn run() -> Result<(), ErrBox> {
     let mut config = default_config();
     let mut cache_dir = eden_auto::default_cache_dir();
     let mut log_path = eden_builds::log_default();
+    let mut history_path = eden_builds::eden_history::default_path();
     let mut auto = false;
     let mut dry_run = false;
     let mut human_report = false;
@@ -720,6 +732,9 @@ fn run() -> Result<(), ErrBox> {
                 cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?)
             }
             "--log" => log_path = PathBuf::from(args.next().ok_or("--log requires a path")?),
+            "--history-file" => {
+                history_path = PathBuf::from(args.next().ok_or("--history-file requires a path")?)
+            }
             "--stage-dir" => {
                 stage_dir = Some(PathBuf::from(
                     args.next().ok_or("--stage-dir requires an absolute path")?,
@@ -741,7 +756,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nAfter review, the identical selection policy is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nAfter review, the identical selection policy is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -783,6 +798,11 @@ fn run() -> Result<(), ErrBox> {
         } else {
             None
         };
+        let history = if dry_run || historical_main_only {
+            Some(eden_builds::eden_history::load(&history_path)?)
+        } else {
+            None
+        };
         let report = run_automatic(
             &bundle,
             &config,
@@ -790,15 +810,28 @@ fn run() -> Result<(), ErrBox> {
             &mod_root,
             install,
             if historical_main_only {
-                evidence.as_ref()
+                Some((
+                    evidence.as_ref().ok_or("Missing Eden launch evidence")?,
+                    &history.as_ref().ok_or("Missing Eden saved history")?.0,
+                ))
             } else {
                 None
             },
         )?;
         if dry_run {
             let evidence = evidence.as_ref().ok_or("Missing read-only Eden evidence")?;
-            let detailed =
-                eden_dry_run::analyze(&report, &bundle, &config, &mod_root, &log_path, evidence)?;
+            let (history, history_found) = history.as_ref().ok_or("Missing read-only saved history")?;
+            let detailed = eden_dry_run::analyze(
+                &report,
+                &bundle,
+                &config,
+                &mod_root,
+                &log_path,
+                evidence,
+                &history_path,
+                history,
+                *history_found,
+            )?;
             if human_report {
                 print!("{}", eden_dry_run::render_human(&detailed));
             } else {
@@ -862,7 +895,11 @@ mod tests {
             observed("0100152000022000", "1CD9216A21737FB4"),
             observed("0100152000022000", "96DFD1769E560C27"),
         ];
-        let (selected, skipped) = single_historical_main_pairs(pairs, &main);
+        let (selected, skipped) = single_historical_main_pairs(
+            pairs,
+            &main,
+            &eden_builds::eden_history::History::default(),
+        );
         assert_eq!(
             selected,
             vec![("0100000000010000".into(), "B424BE150A8E7D78".into())]
@@ -881,9 +918,46 @@ mod tests {
         let (none, all_skipped) = single_historical_main_pairs(
             vec![("0100000000010000".into(), "3CA12DFAAF9C82DA".into())],
             &[],
+            &eden_builds::eden_history::History::default(),
         );
         assert!(none.is_empty());
-        assert_eq!(all_skipped[0].reason, "no_historical_main_build_observed");
+        assert_eq!(
+            all_skipped[0].reason,
+            "no_historical_main_build_observed_in_log_or_private_history"
+        );
+    }
+
+    #[test]
+    fn saved_main_history_is_consulted_without_promoting_weak_lookups() {
+        use eden_builds::eden_history::Entry;
+        let mut history = eden_builds::eden_history::History::default();
+        history.entries.push(Entry {
+            title_id: "0100000000010000".into(),
+            build_id: "B424BE150A8E7D78".into(),
+            evidence_kind: "cheat_lookup".into(),
+            first_captured_unix_seconds: 100,
+            last_captured_unix_seconds: 100,
+        });
+        let pairs = vec![("0100000000010000".into(), "B424BE150A8E7D78".into())];
+        let (selected, skipped) = single_historical_main_pairs(pairs.clone(), &[], &history);
+        assert!(selected.is_empty());
+        assert_eq!(skipped.len(), 1);
+
+        history.entries[0].evidence_kind = "main_nso".into();
+        let (selected, skipped) = single_historical_main_pairs(pairs.clone(), &[], &history);
+        assert_eq!(selected, pairs);
+        assert!(skipped.is_empty());
+
+        history.entries.push(Entry {
+            title_id: "0100000000010000".into(),
+            build_id: "3CA12DFAAF9C82DA".into(),
+            evidence_kind: "main_nso".into(),
+            first_captured_unix_seconds: 100,
+            last_captured_unix_seconds: 100,
+        });
+        let (selected, skipped) = single_historical_main_pairs(pairs, &[], &history);
+        assert!(selected.is_empty());
+        assert_eq!(skipped[0].reason, "multiple_historical_main_builds_ambiguous");
     }
 
     fn fixture() -> Bundle {
