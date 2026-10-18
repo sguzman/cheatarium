@@ -1262,7 +1262,7 @@ jobs:
                   descriptors.extend(struct.pack("<QQII", content_at, len(content), name_at, 0))
                   payload.extend(content)
               path.write_bytes(b"PFS0" + struct.pack("<III", len(entries), len(names), 0) + descriptors + names + payload)
-          nsp(nested/"Game [0100000000010000].nsp", "01000000000100000000000000000000")
+          nsp(nested/"Game With No Title Label.nsp", "01000000000100000000000000000000")
           nsp(nested/"Game Update [0100000000010800].nsp", "01000000000108000000000000000000")
           nsp(nested/"dlc"/"Cosmetic [0100000000011001].nsp", "01000000000110010000000000000000")
           xci = bytearray(0x220)
@@ -1291,13 +1291,26 @@ jobs:
           assert out["header_status_totals"]["compressed_container_not_parsed"] == 1
           assert out["header_status_totals"]["encrypted_nca_header_not_parsed"] == 1
           assert out["total_header_bytes_read"] == out["game_file_bytes_read"]
+          assert out["inspected_nsp_file_bytes_read"] == sum(f["header_bytes_read"] for f in out["files"] if f["file_type"] == "nsp")
           assert out["total_header_bytes_read"] < 1024
+          assert len(out["advisory_nsp_title_associations"]) == 1
+          hint = out["advisory_nsp_title_associations"][0]
+          assert hint["file_path"].endswith("Game With No Title Label.nsp")
+          assert hint["title_id_hint"] == "0100000000010000"
+          assert not hint["installed_game_verified"]
+          assert not hint["installed_build_id_verified"]
+          assert out["unresolved_after_nsp_header_inspection"] == []
+          game = next(g for g in out["candidate_base_titles"] if g["title_id"] == "0100000000010000")
+          assert game["filename_labeled_base_files"] == 0
+          assert game["ticket_filename_labeled_base_files"] == 1
+          assert out["unresolved_filename_title_ids"] == [hint["file_path"]]
           assert not out["budget_exhausted"]
           assert out["complete_registered_file_inventory"]
           assert out["emulator_files_written"] == 0
           assert not out["installed_build_id_verified"]
           assert all(not f["executable_build_id_verified"] and not f["emulator_content_modified"] for f in out["files"])
           assert any(f["file_type"] == "nsp" and f["filename_ticket_relation"] == "exact_same_title_id_hint" for f in out["files"])
+          assert any(f["file_type"] == "nsp" and f["filename_ticket_relation"] == "ticket_title_hint_only" for f in out["files"])
           print("All six registered files audited; deep scan verified; no executable/build/installation claim")
           PY
       - name: Confirm consumer-cli stage
