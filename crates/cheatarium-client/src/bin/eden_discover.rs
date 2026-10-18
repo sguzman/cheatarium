@@ -1618,7 +1618,7 @@ fn run() -> Result<(), ErrBox> {
             "--capture-build-history" => {
                 capture_build_history = true;
                 explicit_capture = true;
-            },
+            }
             "--no-capture-build-history" | "--read-only" => force_read_only = true,
             "--history-file" => {
                 history_path = PathBuf::from(
