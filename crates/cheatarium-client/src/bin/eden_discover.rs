@@ -146,12 +146,13 @@ struct NspTitleAssociation {
     installed_build_id_verified: bool,
 }
 
-fn associate_nsp_ticket_hints(
-    summary: &mut InventorySummary,
-    all_files: &[LibraryFile],
-) {
-    let cache_ids: BTreeSet<String> = summary.candidate_base_titles
-        .iter().filter(|g| g.in_eden_cache).map(|g| g.title_id.clone()).collect();
+fn associate_nsp_ticket_hints(summary: &mut InventorySummary, all_files: &[LibraryFile]) {
+    let cache_ids: BTreeSet<String> = summary
+        .candidate_base_titles
+        .iter()
+        .filter(|g| g.in_eden_cache)
+        .map(|g| g.title_id.clone())
+        .collect();
     let mut unresolved = BTreeSet::new();
     let mut associations = Vec::new();
     for inspection in &summary.unresolved_nsp_header_inspections {
@@ -175,7 +176,9 @@ fn associate_nsp_ticket_hints(
             unresolved.insert(inspection.file_path.clone());
             continue;
         };
-        let Some(game) = summary.candidate_base_titles.iter_mut()
+        let Some(game) = summary
+            .candidate_base_titles
+            .iter_mut()
             .find(|g| g.title_id == base)
         else {
             // Do not invent game identity from a ticket filename alone.
@@ -201,8 +204,11 @@ fn associate_nsp_ticket_hints(
         });
     }
     // Filenames not inspected because of scan limit remain unresolved too.
-    let inspected: BTreeSet<&str> = summary.unresolved_nsp_header_inspections
-        .iter().map(|i| i.file_path.as_str()).collect();
+    let inspected: BTreeSet<&str> = summary
+        .unresolved_nsp_header_inspections
+        .iter()
+        .map(|i| i.file_path.as_str())
+        .collect();
     for file in all_files {
         if file.title_id.is_none() && !inspected.contains(file.path.as_str()) {
             unresolved.insert(file.path.clone());
@@ -1512,7 +1518,6 @@ volume=100
         fs::remove_file(p).unwrap();
     }
 
-
     #[test]
     fn single_ticket_hints_link_only_previously_known_eden_games() {
         let mut summary = InventorySummary {
@@ -1539,61 +1544,102 @@ volume=100
             probable_update_files: Vec::new(),
             dlc_folder_groups: Vec::new(),
             filename_ids_not_classified: 0,
-            unresolved_filename_title_ids: vec!["base.nsp".into(), "update.nsp".into(), "skyward.nsp".into()],
+            unresolved_filename_title_ids: vec![
+                "base.nsp".into(),
+                "update.nsp".into(),
+                "skyward.nsp".into(),
+            ],
             cached_title_ids_without_labeled_base_file: vec!["0100152000022000".into()],
             unresolved_nsp_header_inspections: vec![
                 NspHeaderInspection {
-                    file_path: "base.nsp".into(), status: "outer_pfs0_metadata_only",
-                    bytes_read: 100, container_file_entries: 2, nca_file_entries: 1,
+                    file_path: "base.nsp".into(),
+                    status: "outer_pfs0_metadata_only",
+                    bytes_read: 100,
+                    container_file_entries: 2,
+                    nca_file_entries: 1,
                     cnmt_nca_file_entries: 1,
                     ticket_filename_title_id_candidates: vec!["0100152000022000".into()],
-                    executable_build_id_found: false, installed_build_id_verified: false,
+                    executable_build_id_found: false,
+                    installed_build_id_verified: false,
                 },
                 NspHeaderInspection {
-                    file_path: "update.nsp".into(), status: "outer_pfs0_metadata_only",
-                    bytes_read: 200, container_file_entries: 4, nca_file_entries: 3,
+                    file_path: "update.nsp".into(),
+                    status: "outer_pfs0_metadata_only",
+                    bytes_read: 200,
+                    container_file_entries: 4,
+                    nca_file_entries: 3,
                     cnmt_nca_file_entries: 1,
                     ticket_filename_title_id_candidates: vec!["0100152000022800".into()],
-                    executable_build_id_found: false, installed_build_id_verified: false,
+                    executable_build_id_found: false,
+                    installed_build_id_verified: false,
                 },
                 NspHeaderInspection {
-                    file_path: "skyward.nsp".into(), status: "outer_pfs0_metadata_only",
-                    bytes_read: 200, container_file_entries: 3, nca_file_entries: 3,
-                    cnmt_nca_file_entries: 1, ticket_filename_title_id_candidates: Vec::new(),
-                    executable_build_id_found: false, installed_build_id_verified: false,
+                    file_path: "skyward.nsp".into(),
+                    status: "outer_pfs0_metadata_only",
+                    bytes_read: 200,
+                    container_file_entries: 3,
+                    nca_file_entries: 3,
+                    cnmt_nca_file_entries: 1,
+                    ticket_filename_title_id_candidates: Vec::new(),
+                    executable_build_id_found: false,
+                    installed_build_id_verified: false,
                 },
             ],
             advisory_nsp_title_associations: Vec::new(),
             unresolved_after_nsp_header_inspection: Vec::new(),
             unresolved_nsp_inspections_truncated: false,
             inspected_nsp_file_bytes_read: 500,
-            saved_disabled_addons: Vec::new(), cached_update_displays: Vec::new(),
-            installed_build_id_verified: false, warnings: Vec::new(),
+            saved_disabled_addons: Vec::new(),
+            cached_update_displays: Vec::new(),
+            installed_build_id_verified: false,
+            warnings: Vec::new(),
         };
-        let files = ["base.nsp","update.nsp","skyward.nsp"]
-            .into_iter().map(|path| LibraryFile {
-                path: path.into(), title_id: None, title_id_evidence: "unresolved_no_rom_read",
+        let files = ["base.nsp", "update.nsp", "skyward.nsp"]
+            .into_iter()
+            .map(|path| LibraryFile {
+                path: path.into(),
+                title_id: None,
+                title_id_evidence: "unresolved_no_rom_read",
                 file_type: "nsp".into(),
-            }).collect::<Vec<_>>();
+            })
+            .collect::<Vec<_>>();
         associate_nsp_ticket_hints(&mut summary, &files);
         assert_eq!(summary.advisory_nsp_title_associations.len(), 2);
-        assert_eq!(summary.candidate_base_titles[0].ticket_filename_labeled_base_files, 1);
-        assert_eq!(summary.candidate_base_titles[0].ticket_filename_labeled_update_files, 1);
-        assert!(summary.advisory_nsp_title_associations.iter().all(|x|
-            !x.installed_game_verified && !x.installed_build_id_verified
-                && !x.source_container_content_verified
-        ));
-        assert_eq!(summary.unresolved_after_nsp_header_inspection, vec!["skyward.nsp"]);
-        assert_eq!(summary.cached_title_ids_without_labeled_base_file, vec!["0100152000022000"]);
+        assert_eq!(
+            summary.candidate_base_titles[0].ticket_filename_labeled_base_files,
+            1
+        );
+        assert_eq!(
+            summary.candidate_base_titles[0].ticket_filename_labeled_update_files,
+            1
+        );
+        assert!(summary
+            .advisory_nsp_title_associations
+            .iter()
+            .all(|x| !x.installed_game_verified
+                && !x.installed_build_id_verified
+                && !x.source_container_content_verified));
+        assert_eq!(
+            summary.unresolved_after_nsp_header_inspection,
+            vec!["skyward.nsp"]
+        );
+        assert_eq!(
+            summary.cached_title_ids_without_labeled_base_file,
+            vec!["0100152000022000"]
+        );
         // A second ticket makes identity ambiguous even when it includes a known base ID.
         summary.unresolved_nsp_header_inspections[0]
-            .ticket_filename_title_id_candidates.push("01002DA013484000".into());
+            .ticket_filename_title_id_candidates
+            .push("01002DA013484000".into());
         summary.advisory_nsp_title_associations.clear();
         summary.candidate_base_titles[0].ticket_filename_labeled_base_files = 0;
         summary.candidate_base_titles[0].ticket_filename_labeled_update_files = 0;
         associate_nsp_ticket_hints(&mut summary, &files);
         assert_eq!(summary.advisory_nsp_title_associations.len(), 1);
-        assert_eq!(summary.unresolved_after_nsp_header_inspection, vec!["base.nsp", "skyward.nsp"]);
+        assert_eq!(
+            summary.unresolved_after_nsp_header_inspection,
+            vec!["base.nsp", "skyward.nsp"]
+        );
     }
 
     #[test]
