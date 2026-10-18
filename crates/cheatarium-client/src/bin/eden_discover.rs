@@ -127,8 +127,154 @@ struct InventorySummary {
     filename_ids_not_classified: usize,
     unresolved_filename_title_ids: Vec<String>,
     cached_title_ids_without_labeled_base_file: Vec<String>,
+    saved_disabled_addons: Vec<SavedDisabledAddons>,
+    cached_update_displays: Vec<CachedUpdateDisplay>,
     installed_build_id_verified: bool,
     warnings: Vec<&'static str>,
+}
+
+
+#[derive(Debug, Serialize)]
+struct SavedDisabledAddons {
+    title_id: String,
+    disabled_addon_names: Vec<String>,
+    disabled_external_update_versions: Vec<u32>,
+    generic_update_disabled: bool,
+    runtime_update_applied_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct CachedUpdateLine {
+    displayed_line: String,
+    displayed_disabled: bool,
+    current_update_applied_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct CachedUpdateDisplay {
+    title_id: String,
+    cached_update_lines: Vec<CachedUpdateLine>,
+    cached_other_patch_lines: usize,
+    cache_may_be_stale: bool,
+}
+
+/// Eden's Config::ReadDisabledAddOnValues uses [DisabledAddOns],
+/// an unnamed QSettings array, and nested disabled/1/d entries.
+/// Saved *disabled* selections do not establish the installed update set.
+fn saved_disabled_addons(contents: &str) -> Vec<SavedDisabledAddons> {
+    let mut in_section = false;
+    let mut entries: BTreeMap<usize, (Option<u64>, BTreeMap<usize, String>)> = BTreeMap::new();
+    for line in contents.lines() {
+        let line = line.trim();
+        if line.starts_with('[') && line.ends_with(']') {
+            in_section = line.eq_ignore_ascii_case("[DisabledAddOns]");
+            continue;
+        }
+        if !in_section || line.starts_with('#') || line.starts_with(';') {
+            continue;
+        }
+        let Some((key, val)) = line.split_once('=') else { continue };
+        let path = key.trim().replace('\\', "/");
+        let fields: Vec<_> = path.split('/').filter(|p| !p.is_empty()).collect();
+        if fields.is_empty() { continue; }
+        let Ok(idx) = fields[0].parse::<usize>() else { continue };
+        if idx == 0 || idx > 1000 { continue; }
+        let value = val.trim();
+        match fields.as_slice() {
+            [_, &"title_id"] => {
+                let raw = if let Some(hex) = value.strip_prefix("0x").or_else(|| value.strip_prefix("0X")) {
+                    u64::from_str_radix(hex, 16).ok()
+                } else {
+                    value.parse::<u64>().ok()
+                };
+                if let Some(raw) = raw {
+                    entries.entry(idx).or_default().0 = Some(raw);
+                }
+            }
+            [_, &"disabled", sub, &"d"] => {
+                let Ok(sub) = sub.parse::<usize>() else { continue };
+                if sub == 0 || sub > 1000 || value.is_empty() || value.len() > 180
+                    || value.chars().any(char::is_control)
+                { continue; }
+                entries.entry(idx).or_default().1.insert(sub, value.to_owned());
+            }
+            _ => {}
+        }
+    }
+    let mut out = Vec::new();
+    for (_idx, (id, values)) in entries {
+        let Some(id) = id else { continue };
+        let title = format!("{id:016X}");
+        if !is_title_id(&title) { continue }
+        let names: Vec<String> = values.into_values().collect();
+        let mut versions = Vec::new();
+        for value in &names {
+            if let Some(v) = value.strip_prefix("Update@").and_then(|v| v.parse::<u32>().ok()) {
+                versions.push(v);
+            }
+        }
+        versions.sort_unstable();
+        versions.dedup();
+        out.push(SavedDisabledAddons {
+            title_id: title,
+            generic_update_disabled: names.iter().any(|x| x == "Update"),
+            disabled_external_update_versions: versions,
+            disabled_addon_names: names,
+            runtime_update_applied_verified: false,
+        });
+    }
+    out.sort_by(|a, b| a.title_id.cmp(&b.title_id));
+    out
+}
+
+/// Eden GameListWorker's FormatPatchNameVersions writes "\n"-separated
+/// "Update (version)" or "[D] Update (version)" display rows.
+/// Those rows can be stale and are not authenticated program state.
+fn parse_cached_patch_display(title_id: &str, text: &str) -> CachedUpdateDisplay {
+    let mut update_lines = Vec::new();
+    let mut other = 0usize;
+    for line in text.lines().take(200) {
+        let line = line.trim();
+        if line.is_empty() || line.len() > 180 || line.chars().any(char::is_control) {
+            continue;
+        }
+        let (disabled, rest) = if let Some(rest) = line.strip_prefix("[D] ") {
+            (true, rest)
+        } else {
+            (false, line)
+        };
+        if rest == "Update" || (rest.starts_with("Update (") && rest.ends_with(')')) {
+            update_lines.push(CachedUpdateLine {
+                displayed_line: line.to_owned(),
+                displayed_disabled: disabled,
+                current_update_applied_verified: false,
+            });
+        } else {
+            other += 1;
+        }
+    }
+    CachedUpdateDisplay {
+        title_id: title_id.to_owned(),
+        cached_update_lines: update_lines,
+        cached_other_patch_lines: other,
+        cache_may_be_stale: true,
+    }
+}
+
+fn read_cached_update_displays(root: &Path, ids: &[InventoryGame]) -> Vec<CachedUpdateDisplay> {
+    let mut displays = Vec::new();
+    for title in ids {
+        let path = root.join(format!("{}.pv.txt", title.title_id));
+        let Ok(metadata) = fs::symlink_metadata(&path) else { continue };
+        if metadata.file_type().is_symlink() || !metadata.is_file()
+            || metadata.len() > MAX_CACHE_TITLE_BYTES
+        { continue; }
+        let Ok(bytes) = fs::read(&path) else { continue };
+        if bytes.len() as u64 > MAX_CACHE_TITLE_BYTES { continue; }
+        let Ok(contents) = std::str::from_utf8(&bytes) else { continue };
+        displays.push(parse_cached_patch_display(&title.title_id, contents));
+    }
+    displays
 }
 
 fn parsed_switch_id(value: &str) -> Option<u64> {
@@ -262,13 +408,16 @@ fn summarize_report(report: &Report) -> InventorySummary {
         filename_ids_not_classified: not_classified,
         unresolved_filename_title_ids: unresolved,
         cached_title_ids_without_labeled_base_file: uncorrelated_cached,
+        saved_disabled_addons: Vec::new(),
+        cached_update_displays: Vec::new(),
         installed_build_id_verified: false,
         warnings: vec![
             "Directory/filename and cached Title IDs are advisory; files may be renamed or removed.",
             "Folder labels such as dlc are user organization, not authenticated Switch content types.",
             "An update NSP in a registered folder does not mean Eden installed or selected it.",
             "Only main executable metadata from the runtime or authenticated game content can verify installed Build IDs.",
-            "No ROM contents, keys or emulator settings were read or modified.",
+            "Eden settings and cached update display are read-only snapshots; neither verifies which executable or update was applied.",
+            "No ROM contents or keys were accessed and no emulator settings were modified.",
         ],
     }
 }
@@ -779,10 +928,13 @@ fn run() -> Result<(), ErrBox> {
         });
     }
     if summary {
-        println!(
-            "{}",
-            serde_json::to_string_pretty(&summarize_report(&report))?
-        );
+        let mut summary = summarize_report(&report);
+        if report.config_found {
+            summary.saved_disabled_addons = saved_disabled_addons(&fs::read_to_string(&config)?);
+        }
+        summary.cached_update_displays =
+            read_cached_update_displays(&cache_dir, &summary.candidate_base_titles);
+        println!("{}", serde_json::to_string_pretty(&summary)?);
     } else {
         println!("{}", serde_json::to_string_pretty(&report)?);
     }
@@ -934,6 +1086,48 @@ mod tests {
             Some("/games/super-smash/dlc")
         );
         assert!(dlc_directory("/games/super-smash/base-game/Game.nsp").is_none());
+    }
+
+
+    #[test]
+    fn reads_exact_eden_disabled_addon_array_without_implying_runtime_state() {
+        let ini = r#"[UI]
+Paths\gamedirs\1\path=/games
+[DisabledAddOns]
+size=2
+1\title_id=72057594037993472
+1\disabled\size=3
+1\disabled\1\d=Update@262144
+1\disabled\2\d=Update
+1\disabled\3\d=Some Cosmetic Mod
+2\title_id=garbage
+2\disabled\1\d=Update@1
+[Audio]
+volume=100
+"#;
+        // Use a decimal title_id as Eden's QSettings serializer does.
+        let title_id = format!("{:016X}", 72057594037993472u64);
+        let parsed = saved_disabled_addons(ini);
+        assert_eq!(parsed.len(), 1);
+        assert_eq!(parsed[0].title_id, title_id);
+        assert_eq!(parsed[0].disabled_external_update_versions, vec![262144]);
+        assert!(parsed[0].generic_update_disabled);
+        assert_eq!(parsed[0].disabled_addon_names.len(), 3);
+        assert!(!parsed[0].runtime_update_applied_verified);
+    }
+
+    #[test]
+    fn parses_cached_update_rows_but_preserves_staleness_warning() {
+        let entry = parse_cached_patch_display(
+            "0100000000010000",
+            "Update (1.3.0)\n[D] Update (1.1.0)\nSome Mod (0.2)\n"
+        );
+        assert_eq!(entry.cached_update_lines.len(), 2);
+        assert_eq!(entry.cached_update_lines[0].displayed_line, "Update (1.3.0)");
+        assert!(entry.cached_update_lines[1].displayed_disabled);
+        assert_eq!(entry.cached_other_patch_lines, 1);
+        assert!(entry.cache_may_be_stale);
+        assert!(entry.cached_update_lines.iter().all(|x| !x.current_update_applied_verified));
     }
 
     #[test]
