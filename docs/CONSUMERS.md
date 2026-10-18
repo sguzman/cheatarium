@@ -353,6 +353,10 @@ This prints every candidate game found in Eden's registered folders and game-lis
 
 A dry-run report is **not authorization to install** and makes no claim that any archived Build ID matches the installed game's executable. A future installation should happen only after the user has reviewed the complete report.
 
+For a narrower **historical-main-only dry run**, use the same Rust CLI with `--dry-run --historical-main-only --report`. It reads Eden's existing launch log, selects an archived cheat Build ID only when exactly **one distinct main executable Build ID** was observed for that title in the log, and skips missing or ambiguous titles rather than guessing. It still prints every selected file's exact intended contents and destination, plus reasons for skipped archived builds. This mode is read-only and writes **nothing** to Eden. The report labels the selection scope `unique_historical_main_nso_build_only_not_current_verified`.
+
+The corresponding explicit `--install --historical-main-only` command uses the **same selection rule**, but must only be used after the dry-run has been reviewed and approved. Unlike `--install` alone, it will not install all archived variants for the discovered titles. Because Eden can rotate its log and game updates can change, rerun the preview immediately before any approved installation. **A historically observed main NSO Build ID does not prove the current installed executable version or cheat effectiveness.** Neither command launches games, reads ROM executable bytes or determines the currently active update.
+
 ### Direct on-demand installation into Eden (no IDs to look up)
 
 **Close Eden completely**, then run the normal CLI **without** any Title ID or Build ID arguments:
