@@ -15,6 +15,8 @@ type ErrBox = Box<dyn Error + Send + Sync>;
 
 #[path = "eden_install.rs"]
 mod eden_install;
+#[path = "eden_auto.rs"]
+mod eden_auto;
 const MAX_PLANNED: usize = 2_000;
 const MAX_STAGED_TOTAL_BYTES: usize = 10 * 1024 * 1024;
 
@@ -486,11 +488,129 @@ fn stage(
     Ok(report)
 }
 
+
+#[derive(Debug, Serialize)]
+struct SkippedAutomaticBuild {
+    title_id: String,
+    build_id: Option<String>,
+    reason: &'static str,
+}
+
+#[derive(Debug, Serialize)]
+struct AutomaticReport {
+    schema_version: u32,
+    format: &'static str,
+    mode: &'static str,
+    discovery: eden_auto::Discovery,
+    archived_title_build_pairs: usize,
+    installed_title_build_pairs: usize,
+    prepared_title_build_pairs: usize,
+    installed: Vec<eden_install::Installed>,
+    planned: Vec<Preview>,
+    skipped: Vec<SkippedAutomaticBuild>,
+    game_executable_build_verified: bool,
+    warnings: Vec<&'static str>,
+}
+
+/// An archived Build ID is a filename discriminator, not evidence of the
+/// executable version Eden currently runs. Installing all available variants
+/// disabled allows Eden to select the matching filename later without asking
+/// the user to discover or type arbitrary IDs.
+fn automatic_pairs(bundle: &Bundle, ids: &[String]) -> Result<Vec<(String, String)>, ErrBox> {
+    let known = ids.iter().map(String::as_str).collect::<BTreeSet<_>>();
+    let mut pairs = BTreeSet::new();
+    for record in &bundle.records {
+        if record.provenance.source_id != "sharkive" { continue; }
+        let Some(rest) = record.candidate_game_key.strip_prefix("title-id-") else { continue; };
+        let Some((title, build)) = rest.split_once("-build-") else { continue; };
+        let title = title.to_ascii_uppercase();
+        let build = build.to_ascii_uppercase();
+        if known.contains(title.as_str()) && is_title_id(&title) && is_build_id(&build) {
+            pairs.insert((title, build));
+        }
+    }
+    if pairs.len() > 512 {
+        return Err("Automatic installation has more than 512 archived title/build variants; refusing unbounded work".into());
+    }
+    Ok(pairs.into_iter().collect())
+}
+
+fn run_automatic(
+    bundle: &Bundle,
+    config: &Path,
+    cache_dir: &Path,
+    mod_root: &Path,
+    installing: bool,
+) -> Result<AutomaticReport, ErrBox> {
+    let discovery = eden_auto::discover(config, cache_dir)?;
+    if discovery.titles.is_empty() {
+        return Err("Eden registered directories and cache contain no identifiable base games".into());
+    }
+    let pairs = automatic_pairs(bundle, &discovery.titles)?;
+    let known_with_archive = pairs.iter().map(|(t,_)| t.as_str()).collect::<BTreeSet<_>>();
+    let mut skipped = Vec::new();
+    for title in &discovery.titles {
+        if !known_with_archive.contains(title.as_str()) {
+            skipped.push(SkippedAutomaticBuild {
+                title_id: title.clone(), build_id: None,
+                reason: "no_archived_sharkive_cheats_for_discovered_game",
+            });
+        }
+    }
+    let total_pairs = pairs.len();
+    let mut planned = Vec::new();
+    let mut installed = Vec::new();
+    for (title, build) in pairs {
+        let candidate = preview(bundle, &title, &build, mod_root)?;
+        if candidate.proposed_addons.is_empty() {
+            skipped.push(SkippedAutomaticBuild {
+                title_id: title, build_id: Some(build), reason: "no_renderable_cheat_sections",
+            });
+            continue;
+        }
+        if !candidate.rejected_entries.is_empty()
+            || candidate.proposed_addons.iter().any(|x|
+                x.syntax_check != "lexical_hex_tokens_only_not_execution_validated")
+        {
+            skipped.push(SkippedAutomaticBuild {
+                title_id: title, build_id: Some(build), reason: "unvalidated_or_unsafe_source_cheat",
+            });
+            continue;
+        }
+        if installing {
+            // Existing mods are never overwritten. A repeated on-demand
+            // invocation reports the previous install instead of replacing it.
+            let result = eden_install::install(bundle, &candidate, mod_root, config)?;
+            installed.push(result);
+        } else {
+            planned.push(candidate);
+        }
+    }
+    Ok(AutomaticReport {
+        schema_version: 1,
+        format: "cheatarium-eden-auto-cheat-synthesis-v1",
+        mode: if installing { "direct_install_disabled" } else { "read_only_preview" },
+        discovery, archived_title_build_pairs: total_pairs,
+        installed_title_build_pairs: installed.len(),
+        prepared_title_build_pairs: planned.len(),
+        installed, planned, skipped,
+        game_executable_build_verified: false,
+        warnings: vec![
+            "Title IDs discovered from Eden game directories and cache are advisory, not proof of installation.",
+            "All archived executable Build ID variants for discovered titles are installed separately and initially disabled; Eden loads only the corresponding Build ID filename.",
+            "No runtime Build ID was guessed or required from the user.",
+            "Cheat effects and compatibility are unverified. Enable only desired cheats in Eden.",
+        ]
+    })
+}
+
 fn run() -> Result<(), ErrBox> {
     let mut db = PathBuf::from("generated/v1");
     let mut mod_root = default_mod_root();
     let mut stage_dir = None;
     let mut config = default_config();
+    let mut cache_dir = eden_auto::default_cache_dir();
+    let mut auto = false;
     let mut install = false;
     let mut title = None;
     let mut build = None;
@@ -503,6 +623,8 @@ fn run() -> Result<(), ErrBox> {
             }
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
+            "--auto" => auto = true,
+            "--cache-dir" => cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?),
             "--stage-dir" => {
                 stage_dir = Some(PathBuf::from(
                     args.next().ok_or("--stage-dir requires an absolute path")?,
@@ -524,7 +646,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("On-demand Eden cheat preview, isolated staging or direct installation:\n  cheatarium-eden-plan --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 [--install] [--config /absolute/qt-config.ini] [--mods-root /absolute/eden/load] [--stage-dir /absolute/new/staging-folder] [--json]\n--install requires Eden to be closed. New per-cheat add-ons are disabled by default; existing mods are never overwritten.");
+                println!("On-demand Cheatarium → Eden cheat synthesis (no IDs needed):\n  cheatarium-eden-plan --db generated/v1 --install --json\nThis discovers games from Eden's registered folders and cache, selects archived Build ID-specific cheats, and installs all available variants DISABLED by default. Eden must be closed.\nOptional: --auto for a read-only automatic preview; --title-id and --build-id for manual targeting; --config, --cache-dir, and --mods-root for portable setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -532,6 +654,20 @@ fn run() -> Result<(), ErrBox> {
     }
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
+    }
+    let automatic = auto || (install && title.is_none() && build.is_none());
+    if automatic && (title.is_some() || build.is_some() || stage_dir.is_some()) {
+        return Err("Automatic discovery cannot be combined with manual IDs or staging".into());
+    }
+    if !automatic && (title.is_none() || build.is_none()) {
+        return Err("Provide both --title-id and --build-id, or use --install for automatic Eden discovery".into());
+    }
+    if automatic {
+        verify_platform_distribution(&db, "switch")?;
+        let bundle = load_platform(&db, "switch")?;
+        let report = run_automatic(&bundle, &config, &cache_dir, &mod_root, install)?;
+        println!("{}", serde_json::to_string_pretty(&report)?);
+        return Ok(());
     }
     let title = title.ok_or("Missing --title-id")?;
     let build = build.ok_or("Missing --build-id")?;
