@@ -144,7 +144,6 @@ impl Code {
 
     /// Description-only headings are not activatable codes.
     #[must_use]
-    #[must_use]
     pub fn requires_composition_review(&self) -> bool {
         self.composition
             .as_ref()
