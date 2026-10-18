@@ -357,6 +357,24 @@ For a narrower **historical-main-only dry run**, use the same Rust CLI with `--d
 
 The corresponding explicit `--install --historical-main-only` command uses the **same selection rule**, but must only be used after the dry-run has been reviewed and approved. Unlike `--install` alone, it will not install all archived variants for the discovered titles. Because Eden can rotate its log and game updates can change, rerun the preview immediately before any approved installation. **A historically observed main NSO Build ID does not prove the current installed executable version or cheat effectiveness.** Neither command launches games, reads ROM executable bytes or determines the currently active update.
 
+### Eden file-only installation (no Qt settings changes)
+
+For users who prefer to manage active cheats directly in Eden, Cheatarium has a separate `--files-only` mode. It creates the normal native Eden layout `load/<TITLEID>/<Cheatarium addon name>/cheats/<BUILDID>.txt` **without reading, editing, backing up, or otherwise touching** `qt-config.ini` during the installation operation. The tool still reads the Qt configuration during game discovery to locate Eden's registered game directories. Eden's own [cheat guide](https://github.com/eden-emulator/mirror/blob/master/docs/user/UsingCheats.md) says newly discovered cheats are enabled by default and can be toggled individually in Configure Game → Add-ons.
+
+For a narrowly scoped, non-writing preview of the previously observed Super Mario Odyssey build, run:
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --historical-main-only --only-title-id 0100000000010000 --files-only --dry-run --report
+```
+
+After reviewing the exact files and source Build ID, the matching, explicitly selected file-only operation is:
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --historical-main-only --only-title-id 0100000000010000 --files-only --install --json
+```
+
+`--files-only` deliberately **requires** both the conservative `--historical-main-only` Build ID policy and `--only-title-id`; it refuses all-title/all-archive installs and guesses. Close Eden before running an installation. Existing mod directories are protected from overwrites; identical complete file-only installs are recognized on a repeat run. No config backup is needed because this operation does not write the config. If an I/O error interrupts file creation, some new directories may remain and should be reviewed, never silently overwritten. The source cheat effects are not verified, game updates can change the executable Build ID, and enabling several independent cheats can cause conflicting effects. Manage their checkboxes before launching the game if needed.
+
 ### Direct on-demand installation into Eden (no IDs to look up)
 
 **Close Eden completely**, then run the normal CLI **without** any Title ID or Build ID arguments:
