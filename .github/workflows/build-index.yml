@@ -1187,7 +1187,7 @@ jobs:
           from pathlib import Path
           d=json.loads(Path(sys.argv[1]).read_text())
           assert d["read_only"] and d["emulator_files_written"]==0
-          assert d["candidate_build_scope"]=="unique_historical_main_nso_build_only_not_current_verified"
+          assert d["candidate_build_scope"]=="unique_historical_main_nso_build_log_or_saved_history_not_current_verified"
           assert d["would_create_file_count"]>0
           assert all(f["title_id"]=="0100000000010000" for f in d["files"])
           assert all(f["build_id"]=="B424BE150A8E7D78" for f in d["files"])
@@ -1196,6 +1196,41 @@ jobs:
           assert not d["main_build_evidence"]["all_games_current_build_verified"]
           assert not d["settings"]["issue"]
           print("Historical-only preview filters archived builds without changing Eden.")
+          PY
+          cat > "$fixture/private-history.json" <<'JSON'
+          {
+            "schema_version": 1,
+            "format": "cheatarium-eden-minimal-build-history-v1",
+            "last_log_sha256": null,
+            "entries": [
+              {
+                "title_id": "0100152000022000",
+                "build_id": "96DFD1769E560C27",
+                "evidence_kind": "main_nso",
+                "first_captured_unix_seconds": 100,
+                "last_captured_unix_seconds": 200
+              }
+            ]
+          }
+          JSON
+          run_auto --dry-run --historical-main-only --history-file "$fixture/private-history.json" > "$fixture/recovered-history.json"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          d=json.loads((root/"recovered-history.json").read_text())
+          assert d["read_only"] and d["state_files_written"]==0
+          assert d["main_build_evidence"]["saved_history_found"]
+          assert len(d["main_build_evidence"]["saved_historical_main_builds"])==1
+          assert {f["title_id"] for f in d["files"]}=={
+              "0100000000010000","0100152000022000"
+          }
+          assert {f["build_id"] for f in d["files"]}=={
+              "B424BE150A8E7D78","96DFD1769E560C27"
+          }
+          assert not d["settings"]["issue"]
+          assert not (root/"eden/load").exists()
+          print("Stored historical main Build IDs used read-only, no weak lookup promotion.")
           PY
           test ! -e "$fixture/eden/load"
           python3 - "$fixture" <<'PY'
