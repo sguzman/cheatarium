@@ -681,7 +681,7 @@ fn run_automatic(
         game_executable_build_verified: false,
         warnings: vec![
             "Title IDs discovered from Eden game directories and cache are advisory, not proof of installation.",
-            "Archived Build IDs do not establish installed executable versions. Only the historical-main-only read-only mode narrows candidates using launch logs.",
+            "Archived Build IDs do not establish installed executable versions. The historical-main-only mode narrows candidates using launch logs; it never claims current-version verification.",
             "No runtime Build ID was guessed or required from the user.",
             "Cheat effects and compatibility are unverified. Enable only desired cheats in Eden.",
         ]
@@ -743,7 +743,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nAfter review, the identical selection policy is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -755,8 +755,8 @@ fn run() -> Result<(), ErrBox> {
     if human_report && !dry_run {
         return Err("--report requires --dry-run".into());
     }
-    if historical_main_only && !dry_run {
-        return Err("--historical-main-only is read-only and requires --dry-run".into());
+    if historical_main_only && !dry_run && !install {
+        return Err("--historical-main-only requires --dry-run or --install".into());
     }
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
@@ -774,7 +774,7 @@ fn run() -> Result<(), ErrBox> {
     if automatic {
         verify_platform_distribution(&db, "switch")?;
         let bundle = load_platform(&db, "switch")?;
-        let evidence = if dry_run {
+        let evidence = if dry_run || historical_main_only {
             let index = load_game_candidates(&db, "switch")?;
             Some(eden_builds::read_launch_evidence(&log_path, &index)?)
         } else {
