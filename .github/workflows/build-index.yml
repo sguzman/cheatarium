@@ -1191,7 +1191,7 @@ jobs:
           assert d["would_create_file_count"]>0
           assert all(f["title_id"]=="0100000000010000" for f in d["files"])
           assert all(f["build_id"]=="B424BE150A8E7D78" for f in d["files"])
-          assert any(x["reason"]=="no_historical_main_build_observed" for x in d["skipped"])
+          assert any(x["reason"]=="no_historical_main_build_observed_in_log_or_private_history" for x in d["skipped"])
           assert any(x["reason"]=="archived_build_not_historically_observed_as_main" for x in d["skipped"])
           assert not d["main_build_evidence"]["all_games_current_build_verified"]
           assert not d["settings"]["issue"]
