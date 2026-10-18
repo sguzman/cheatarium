@@ -411,3 +411,18 @@ The optional `--log /path/to/eden_log.txt` supplies a specific historical log (d
 Every reported match is historical and unverified as a representation of the current installed/running game. Updates in ROM folders and cached labels are not evidence of the active update or Build ID. A `No cheats file found` lookup may be from a non-main executable and is **never promoted to a main executable Build ID**. `current_installed_build_verified`, `compatible_cheat_verified`, `automatic_installation_allowed`, and the overall `installation_allowed` remain false. Nothing is installed, activated, or written to Eden.
 
 Use `--summary --audit-all-files --build-readiness` only if an additional complete header audit is deliberately desired; the simpler `--summary --build-readiness` avoids rereading NSPs. The default summaries are unchanged unless `--build-readiness` is explicitly selected.
+
+
+### Preserve minimal Eden Build ID evidence across log rotation
+
+The historical Eden log may be overwritten on emulator restart. Cheatarium can preserve **only** observed 16-digit Title IDs, 16-digit Build IDs, evidence kinds (`main_nso` vs `cheat_lookup`), and *capture* timestamps in a private local JSON file (not the full log). No save files, keys, ROM contents, game filenames, log lines, or emulator settings are copied.
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --build-readiness --capture-build-history --json
+```
+
+The default history file is `$XDG_STATE_HOME/cheatarium/eden-build-history.json` (otherwise `~/.local/state/cheatarium/eden-build-history.json`). To isolate a test, supply `--history-file /absolute/path/to/history.json` along with `--log /absolute/path/to/eden_log.txt`. The first capture uses an atomic temporary-file replacement, a single-writer lock, and private permissions on Linux. Repeated capture of an unchanged log is idempotent. Corrupted histories, symlink destinations, disallowed Eden directories, oversized records, and conflicting writers are refused rather than silently repaired or overwritten. Only an **explicit** `--capture-build-history` invocation writes Cheatarium's state. All ordinary `--build-readiness` runs are read-only and automatically *read* the saved history if it exists; no repeat registration of Eden game folders is necessary.
+
+After Eden rotates or clears its log, the report retains old records as `saved_historical_main_builds` or `saved_cheat_lookup_build_ids`, separately from `historical_main_executable_builds` observed in the current log. Statuses beginning `stored_` explicitly mean **saved historical evidence**, not a fresh game launch. `first_captured_unix_seconds` and `last_captured_unix_seconds` mark **when Cheatarium captured a log**, not when a game was played. `saved_history_written_this_run` exposes the optional state write; the report's `read_only` field becomes false *only if* that write actually happened. `emulator_files_written` remains zero. A rotated or empty log does **not** clear the saved observations.
+
+**Limitations:** history capture only records observations present *when Cheatarium runs*. It cannot recover launches erased before the first capture, does not run as a background service, and cannot prove what Build ID Eden would run now. The stored history never enables cheat installation or elevates weak cheat-file lookup hints into verified main executable evidence.
