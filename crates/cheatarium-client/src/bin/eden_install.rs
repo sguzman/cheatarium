@@ -234,7 +234,11 @@ pub(super) fn disabled_config(
                     return Err("Invalid Eden disabled add-on default entry".into());
                 }
             }
-            _ => return Err(format!("Unrecognized Eden DisabledAddOns QSettings field: {key}").into()),
+            _ => {
+                return Err(
+                    format!("Unrecognized Eden DisabledAddOns QSettings field: {key}").into(),
+                )
+            }
         }
     }
     let declared = size.unwrap_or(0);
@@ -542,16 +546,14 @@ size=1
 [Audio]
 volume=22
 "#;
-        let next = disabled_config(ini, "0100000000010000", &["Cheatarium-Test".into()])
-            .unwrap();
+        let next = disabled_config(ini, "0100000000010000", &["Cheatarium-Test".into()]).unwrap();
         assert!(next.contains("1\\disabled\\1\\d=Existing Mod"));
         assert!(next.contains("1\\disabled\\1\\d\\default=false"));
         assert!(next.contains("1\\disabled\\2\\d\\default=false"));
         assert!(next.contains("1\\disabled\\2\\d=Cheatarium-Test"));
         assert!(next.contains("[Audio]\nvolume=22\n"));
         assert_eq!(
-            disabled_config(&next, "0100000000010000", &["Cheatarium-Test".into()])
-                .unwrap(),
+            disabled_config(&next, "0100000000010000", &["Cheatarium-Test".into()]).unwrap(),
             next
         );
     }
