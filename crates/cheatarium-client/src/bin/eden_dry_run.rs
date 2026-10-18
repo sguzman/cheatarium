@@ -265,7 +265,12 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
     let mut out = String::new();
     writeln!(out, "CHEATARIUM / EDEN — READ-ONLY DRY RUN").unwrap();
     writeln!(out, "NO FILES WRITTEN. NO CHEATS ENABLED.").unwrap();
-    writeln!(out, "CANDIDATE BUILD SCOPE: {}", report.candidate_build_scope).unwrap();
+    writeln!(
+        out,
+        "CANDIDATE BUILD SCOPE: {}",
+        report.candidate_build_scope
+    )
+    .unwrap();
     writeln!(out, "Discovered {} candidate games; inspected {} recognized game file names across {} directories.",
         report.discovery.games.len(),
         report.discovery.recognized_game_files,

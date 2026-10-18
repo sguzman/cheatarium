@@ -569,9 +569,7 @@ fn single_historical_main_pairs(
     for (title, build) in pairs {
         let reason = match by_title.get(&title) {
             None => Some("no_historical_main_build_observed"),
-            Some(builds) if builds.len() != 1 => {
-                Some("multiple_historical_main_builds_ambiguous")
-            }
+            Some(builds) if builds.len() != 1 => Some("multiple_historical_main_builds_ambiguous"),
             Some(builds) if !builds.contains(&build) => {
                 Some("archived_build_not_historically_observed_as_main")
             }
@@ -762,7 +760,9 @@ fn run() -> Result<(), ErrBox> {
         return Err("Choose --install or --stage-dir, not both".into());
     }
     if historical_main_only && (title.is_some() || build.is_some()) {
-        return Err("--historical-main-only uses automatic discovery and forbids manual IDs".into());
+        return Err(
+            "--historical-main-only uses automatic discovery and forbids manual IDs".into(),
+        );
     }
     let automatic = auto || (install && title.is_none() && build.is_none());
     if automatic && (title.is_some() || build.is_some() || stage_dir.is_some()) {
@@ -863,10 +863,21 @@ mod tests {
             observed("0100152000022000", "96DFD1769E560C27"),
         ];
         let (selected, skipped) = single_historical_main_pairs(pairs, &main);
-        assert_eq!(selected, vec![("0100000000010000".into(), "B424BE150A8E7D78".into())]);
+        assert_eq!(
+            selected,
+            vec![("0100000000010000".into(), "B424BE150A8E7D78".into())]
+        );
         assert_eq!(skipped.len(), 4);
-        assert_eq!(skipped.iter().filter(|s| s.reason == "multiple_historical_main_builds_ambiguous").count(), 2);
-        assert!(skipped.iter().any(|s| s.reason == "no_historical_main_build_observed"));
+        assert_eq!(
+            skipped
+                .iter()
+                .filter(|s| s.reason == "multiple_historical_main_builds_ambiguous")
+                .count(),
+            2
+        );
+        assert!(skipped
+            .iter()
+            .any(|s| s.reason == "no_historical_main_build_observed"));
         let (none, all_skipped) = single_historical_main_pairs(
             vec![("0100000000010000".into(), "3CA12DFAAF9C82DA".into())],
             &[],
