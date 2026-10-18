@@ -1,13 +1,13 @@
 //! Native Switch -> Eden per-cheat add-on planning and isolated staging.
 //! Preview is read-only; explicit staging creates a new directory outside Eden.
 //! Indexed source bytes are advisory, not installed-Build-ID evidence.
-use cheatarium_client::{load_platform, verify_platform_distribution, Bundle, IndexedFile};
+use cheatarium_client::{load_game_candidates, load_platform, verify_platform_distribution, Bundle, IndexedFile};
 use serde::Serialize;
 use sha2::{Digest, Sha256};
 use std::collections::BTreeSet;
 use std::env;
 use std::error::Error;
-use std::fs::{self, File, OpenOptions};
+use std::fs::{self, OpenOptions};
 use std::io::Write;
 use std::path::{Path, PathBuf};
 
@@ -15,6 +15,9 @@ type ErrBox = Box<dyn Error + Send + Sync>;
 
 #[path = "eden_auto.rs"]
 mod eden_auto;
+#[path = "eden_builds.rs"]
+#[allow(dead_code)]
+mod eden_builds;
 #[path = "eden_dry_run.rs"]
 mod eden_dry_run;
 #[path = "eden_install.rs"]
@@ -636,6 +639,7 @@ fn run() -> Result<(), ErrBox> {
     let mut stage_dir = None;
     let mut config = default_config();
     let mut cache_dir = eden_auto::default_cache_dir();
+    let mut log_path = eden_builds::log_default();
     let mut auto = false;
     let mut dry_run = false;
     let mut human_report = false;
@@ -660,6 +664,7 @@ fn run() -> Result<(), ErrBox> {
             "--cache-dir" => {
                 cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?)
             }
+            "--log" => log_path = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--stage-dir" => {
                 stage_dir = Some(PathBuf::from(
                     args.next().ok_or("--stage-dir requires an absolute path")?,
@@ -681,7 +686,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nDetailed JSON (also read-only): --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nDetailed JSON (also read-only): --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -711,7 +716,9 @@ fn run() -> Result<(), ErrBox> {
         let bundle = load_platform(&db, "switch")?;
         let report = run_automatic(&bundle, &config, &cache_dir, &mod_root, install)?;
         if dry_run {
-            let detailed = eden_dry_run::analyze(&report, &bundle, &config, &mod_root)?;
+            let index = load_game_candidates(&db, "switch")?;
+            let evidence = eden_builds::read_launch_evidence(&log_path, &index)?;
+            let detailed = eden_dry_run::analyze(&report, &bundle, &config, &mod_root, &log_path, &evidence)?;
             if human_report {
                 print!("{}", eden_dry_run::render_human(&detailed));
             } else {
