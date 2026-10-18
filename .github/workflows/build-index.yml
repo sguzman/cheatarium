@@ -1179,7 +1179,24 @@ jobs:
           cp "$fixture/config/qt-config.ini" "$fixture/config-before-dry-run.ini"
           run_auto --dry-run > "$fixture/dry-run.json"
           run_auto --dry-run --report > "$fixture/dry-run.txt"
+          run_auto --dry-run --historical-main-only > "$fixture/historical-only.json"
           cmp "$fixture/config/qt-config.ini" "$fixture/config-before-dry-run.ini"
+          test ! -e "$fixture/eden/load"
+          python3 - "$fixture/historical-only.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          d=json.loads(Path(sys.argv[1]).read_text())
+          assert d["read_only"] and d["emulator_files_written"]==0
+          assert d["candidate_build_scope"]=="unique_historical_main_nso_build_only_not_current_verified"
+          assert d["would_create_file_count"]>0
+          assert all(f["title_id"]=="0100000000010000" for f in d["files"])
+          assert all(f["build_id"]=="B424BE150A8E7D78" for f in d["files"])
+          assert any(x["reason"]=="no_historical_main_build_observed" for x in d["skipped"])
+          assert any(x["reason"]=="archived_build_not_historically_observed_as_main" for x in d["skipped"])
+          assert not d["main_build_evidence"]["all_games_current_build_verified"]
+          assert not d["settings"]["issue"]
+          print("Historical-only preview filters archived builds without changing Eden.")
+          PY
           test ! -e "$fixture/eden/load"
           python3 - "$fixture" <<'PY'
           import json,hashlib,sys
