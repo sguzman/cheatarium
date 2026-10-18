@@ -68,6 +68,7 @@ pub(super) struct DryRunReport<'a> {
     pub(super) user_confirmation_required_before_install: bool,
     pub(super) discovery: &'a super::eden_auto::Discovery,
     pub(super) candidate_build_scope: &'static str,
+    pub(super) files_only: bool,
     pub(super) main_build_evidence: MainBuildEvidence,
     pub(super) source_plans: &'a [super::Preview],
     pub(super) skipped: &'a [super::SkippedAutomaticBuild],
@@ -110,6 +111,7 @@ pub(super) fn analyze<'a>(
     history_path: &Path,
     history: &super::eden_builds::eden_history::History,
     history_found: bool,
+    files_only: bool,
 ) -> Result<DryRunReport<'a>, ErrBox> {
     let mut files = Vec::new();
     let mut to_disable = BTreeMap::<String, Vec<String>>::new();
@@ -120,9 +122,14 @@ pub(super) fn analyze<'a>(
         // Use identical rendering to the installer, including exact source
         // checks and size/section restrictions, but never call install().
         let prepared = prepare_addons(bundle, plan, mods_root)?;
-        let unchanged = if mods_root.exists() && config.exists() {
-            eden_install::already_installed_unchanged(bundle, plan, mods_root, config)
-                .unwrap_or(false)
+        let unchanged = if mods_root.exists() {
+            if files_only {
+                eden_install::already_installed_files_unchanged(bundle, plan, mods_root)?
+            } else if config.exists() {
+                eden_install::already_installed_unchanged(bundle, plan, mods_root, config)?
+            } else {
+                false
+            }
         } else {
             false
         };
@@ -147,7 +154,7 @@ pub(super) fn analyze<'a>(
             let addon_path = mods_root.join(&plan.title_id).join(&addon);
             let status = if unchanged {
                 already += 1;
-                "already_installed_identical_and_disabled"
+                if files_only { "already_installed_identical_files_only" } else { "already_installed_identical_and_disabled" }
             } else {
                 match fs::symlink_metadata(&addon_path) {
                     Ok(_) => {
@@ -156,11 +163,13 @@ pub(super) fn analyze<'a>(
                     }
                     Err(err) if err.kind() == ErrorKind::NotFound => {
                         will_create += 1;
-                        to_disable
-                            .entry(plan.title_id.clone())
-                            .or_default()
-                            .push(addon);
-                        "would_create_disabled"
+                        if !files_only {
+                            to_disable
+                                .entry(plan.title_id.clone())
+                                .or_default()
+                                .push(addon);
+                        }
+                        if files_only { "would_create_no_config_change" } else { "would_create_disabled" }
                     }
                     Err(_) => {
                         conflicts += 1;
@@ -191,6 +200,7 @@ pub(super) fn analyze<'a>(
         proposed_disabled_settings_section: None,
         issue: None,
     };
+    if !files_only {
     match fs::symlink_metadata(config) {
         Ok(meta)
             if meta.is_file()
@@ -227,6 +237,7 @@ pub(super) fn analyze<'a>(
                 "Eden config unavailable; installation blocked: {err}"
             ))
         }
+    }
     }
     // Only launch-context-linked main NSO build observations are shown as
     // evidence. A historical launch is never current-install verification.
@@ -288,6 +299,7 @@ pub(super) fn analyze<'a>(
         user_confirmation_required_before_install: true,
         discovery: &report.discovery,
         candidate_build_scope: report.candidate_build_scope,
+        files_only,
         main_build_evidence: MainBuildEvidence {
             log_path: log_path.to_string_lossy().into_owned(),
             log_found: evidence.log_found,
@@ -311,7 +323,11 @@ pub(super) fn analyze<'a>(
         already_installed_file_count: already,
         collision_file_count: conflicts,
         settings,
-        caveat: "An archived Build ID is not proof of the installed executable version. This report does not create folders, install mods, update Qt settings, enable cheats, or write any file.",
+        caveat: if files_only {
+            "Files-only mode: zero Eden Qt settings reads or writes. New cheats may be enabled on discovery. No files were written by this preview and execution compatibility is unverified."
+        } else {
+            "An archived Build ID is not proof of the installed executable version. This report does not create folders, install mods, update Qt settings, enable cheats, or write any file."
+        },
     })
 }
 
@@ -465,7 +481,9 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         )
         .unwrap();
     }
-    writeln!(out, "\nEDEN SETTINGS: {}", report.settings.config_path).unwrap();
+    writeln!(out, "\nEDEN SETTINGS: {} ({})", report.settings.config_path,
+        if report.files_only { "NOT READ OR MODIFIED in files-only mode" } else { "read-only proposed disabled settings" }
+    ).unwrap();
     writeln!(
         out,
         "Would change config: {}",
