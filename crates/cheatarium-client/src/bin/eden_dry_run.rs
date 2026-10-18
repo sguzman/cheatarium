@@ -58,6 +58,7 @@ pub(super) struct DryRunReport<'a> {
     pub(super) state_files_written: usize,
     pub(super) user_confirmation_required_before_install: bool,
     pub(super) discovery: &'a super::eden_auto::Discovery,
+    pub(super) candidate_build_scope: &'static str,
     pub(super) main_build_evidence: MainBuildEvidence,
     pub(super) source_plans: &'a [super::Preview],
     pub(super) skipped: &'a [super::SkippedAutomaticBuild],
@@ -240,6 +241,7 @@ pub(super) fn analyze<'a>(
         state_files_written: 0,
         user_confirmation_required_before_install: true,
         discovery: &report.discovery,
+        candidate_build_scope: report.candidate_build_scope,
         main_build_evidence: MainBuildEvidence {
             log_path: log_path.to_string_lossy().into_owned(),
             log_found: evidence.log_found,
@@ -263,6 +265,7 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
     let mut out = String::new();
     writeln!(out, "CHEATARIUM / EDEN — READ-ONLY DRY RUN").unwrap();
     writeln!(out, "NO FILES WRITTEN. NO CHEATS ENABLED.").unwrap();
+    writeln!(out, "CANDIDATE BUILD SCOPE: {}", report.candidate_build_scope).unwrap();
     writeln!(out, "Discovered {} candidate games; inspected {} recognized game file names across {} directories.",
         report.discovery.games.len(),
         report.discovery.recognized_game_files,
