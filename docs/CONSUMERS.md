@@ -352,3 +352,15 @@ cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-builds -- --db 
 Use `--log /absolute/path/to/eden_log.txt` to inspect a deliberately chosen historical log file. Input is bounded to 32 MiB, read only, and symlinks are rejected. The JSON report does **not** reproduce arbitrary log lines, game paths, user names, or other log details. It reports Title ID, shortened main Build ID, original hex length, per-log launch sequence number, archived-match status, and unassociated main-build count. If the log does not exist, an empty report is returned; an empty report is **not** evidence there are no games.
 
 **Limits:** A historical main NSO Build ID is evidence of what Eden previously attempted to run, not proof of what is currently installed or proof that a cheat works. A single log may contain many games or old versions. Multiple builds for one Title ID are explicitly reported as ambiguous; contextless records are discarded. `current_installed_build_verified`, `compatible_cheats_verified`, and `installation_allowed` remain false. No ROMs, keys, saves, or emulator settings are accessed; no cheats are installed or activated. The staging/export process remains separate and opt-in.
+
+### Compact inventory from Eden's registered folders
+
+`cheatarium-eden-discover --summary --json` produces a compact view derived from **the same configured Eden roots**, existing cache labels and filenames as the full discovery report:
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --json
+```
+
+The summary identifies candidate base games by standard Title ID label shape, possible update containers using Eden's own `GetUpdateTitleID(base) = base | 0x800` rule, and likely DLC files grouped by user directory labels such as `dlc/`. It lists filenames with no embedded Title ID separately, rather than guessing their identities from adjacent files. It does not report each individual DLC Title ID as an independent playable game.
+
+Every classification is explicitly **advisory**: an NSP filename may be wrong; a cached title may be stale; a directory labeled `dlc` does not verify an add-on; and a downloaded update in a game folder **does not mean that Eden has installed or enabled that update**. Likewise, neither `qt-config.ini` nor the game-list cache records the currently loaded executable Build ID. The summary doesn't open game containers or touch Eden, and it leaves all install/build compatibility flags false. The older full JSON format is unchanged unless the `--summary` flag is specified.
