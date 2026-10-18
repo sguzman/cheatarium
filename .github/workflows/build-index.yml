@@ -1114,6 +1114,7 @@ jobs:
               --mods-root "$fixture/eden/load" \
               --config "$fixture/eden-config/qt-config.ini" --install --json "$@"
           }
+          cp "$fixture/eden-config/qt-config.ini" "$fixture/config-original.ini"
           run_install > "$fixture/installed.json"
           python3 - "$fixture" <<'PY'
           import json,sys
@@ -1122,6 +1123,9 @@ jobs:
           result=json.loads((root/"installed.json").read_text())
           assert result["format"]=="cheatarium-eden-direct-install-v1"
           assert result["activation_state"]=="installed_disabled_by_default"
+          backup=Path(result["eden_config_backup_path"])
+          assert backup.is_file() and backup.parent==root/"eden-config"
+          assert backup.read_bytes()==(root/"config-original.ini").read_bytes()
           assert result["files_written"] > 0
           assert result["files_written"] == len(result["installed_addons"])
           assert not result["existing_mods_overwritten"]
@@ -1147,6 +1151,7 @@ jobs:
             exit 1
           fi
           cmp "$fixture/eden-config/qt-config.ini" "$fixture/before-second.ini"
+          test "$(find "$fixture/eden-config" -name '.qt-config.ini.cheatarium-backup-*' | wc -l)" -eq 1
           if cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
               --db generated/v1 --title-id 0100000000010000 --build-id AAAAAAAAAAAAAAAA \
               --mods-root "$fixture/eden/load" \
