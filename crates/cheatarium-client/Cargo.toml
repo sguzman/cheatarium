@@ -5,6 +5,7 @@ edition = "2021"
 description = "Read-only, versioned Cheatarium console cheat index consumer for emulators"
 license = "MIT OR Apache-2.0"
 publish = false
+autobins = false
 
 [features]
 default = []
