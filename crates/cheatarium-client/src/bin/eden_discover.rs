@@ -818,6 +818,7 @@ fn run_registered_files_audit(
     let mut files = Vec::with_capacity(report.game_files.len());
     let mut statuses = BTreeMap::new();
     let mut read_total = 0usize;
+    let mut nsp_read_total = 0usize;
     let mut attempted = 0usize;
     let mut listed_only = 0usize;
     let mut conflicts = 0usize;
@@ -854,6 +855,22 @@ fn run_registered_files_audit(
         } else if game.file_type == "nsp" {
             attempted += 1;
             let header = inspect_unresolved_nsp(&game.path);
+            nsp_read_total += header.bytes_read;
+            // Reuse the same inspection evidence for the compact inventory,
+            // rather than leaving its advisory ticket counts incorrectly zero.
+            if game.title_id.is_none() {
+                inventory.unresolved_nsp_header_inspections.push(NspHeaderInspection {
+                    file_path: header.file_path.clone(),
+                    status: header.status,
+                    bytes_read: header.bytes_read,
+                    container_file_entries: header.container_file_entries,
+                    nca_file_entries: header.nca_file_entries,
+                    cnmt_nca_file_entries: header.cnmt_nca_file_entries,
+                    ticket_filename_title_id_candidates: header.ticket_filename_title_id_candidates.clone(),
+                    executable_build_id_found: false,
+                    installed_build_id_verified: false,
+                });
+            }
             record.header_status = header.status;
             record.header_bytes_read = header.bytes_read;
             record.outer_pfs0_entry_count = Some(header.container_file_entries);
@@ -890,9 +907,12 @@ fn run_registered_files_audit(
     }
     inventory.format = "cheatarium-eden-registered-files-audit-v1";
     inventory.game_file_bytes_read = read_total as u32;
+    inventory.inspected_nsp_file_bytes_read = nsp_read_total;
+    associate_nsp_ticket_hints(&mut inventory, &report.game_files);
     let complete = !report.game_roots.is_empty()
         && !report.scan_statistics.traversal_limit_reached
         && report.game_roots.iter().all(|r| r.status == "scanned")
+        && !report.warnings.iter().any(|warning| warning.starts_with("directory_scan_incomplete:"))
         && !exhausted;
     RegisteredFilesAudit {
         inventory,
@@ -1991,6 +2011,7 @@ volume=100
         };
         let output = run_registered_files_audit(summarize_report(&report), &report);
         assert_eq!(output.audit_file_count, 3);
+        assert_eq!(output.inspected_nsp_file_bytes_read, output.files[0].header_bytes_read);
         assert_eq!(output.header_inspections_attempted, 2);
         assert_eq!(output.listed_only_files, 1);
         assert!(output.complete_registered_file_inventory);
