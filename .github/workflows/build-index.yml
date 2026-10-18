@@ -1099,8 +1099,10 @@ jobs:
           theme=custom
           [DisabledAddOns]
           size=1
+          1\title_id\default=false
           1\title_id=72057594037993472
           1\disabled\size=1
+          1\disabled\1\d\default=false
           1\disabled\1\d=Existing Mod
           [Audio]
           volume=22
@@ -1128,11 +1130,14 @@ jobs:
           ini=(root/"eden-config/qt-config.ini").read_text()
           assert "[UI]\ntheme=custom" in ini
           assert "[Audio]\nvolume=22" in ini
+          assert "1\\title_id\\default=false" in ini
+          assert "1\\disabled\\1\\d\\default=false" in ini
           assert "1\\disabled\\1\\d=Existing Mod" in ini
           assert f"1\\disabled\\size={1+result['files_written']}" in ini
           for idx,name in enumerate(result["installed_addons"],2):
               path=root/"eden/load/0100000000010000"/name/"cheats/B424BE150A8E7D78.txt"
               assert path.is_file() and path.read_text().startswith("[")
+              assert f"1\\disabled\\{idx}\\d\\default=false" in ini
               assert f"1\\disabled\\{idx}\\d={name}" in ini
           print("Installed",result["files_written"],"cheats directly into synthetic Eden, all disabled")
           PY
