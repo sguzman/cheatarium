@@ -669,6 +669,159 @@ pub(super) fn already_installed_files_unchanged(
     Ok(true)
 }
 
+
+#[derive(Debug, Serialize)]
+pub(super) struct RenameItem {
+    previous_addon: String,
+    readable_addon: String,
+    status: &'static str,
+}
+
+#[derive(Debug, Serialize)]
+pub(super) struct RenameReport {
+    format: &'static str,
+    title_id: String,
+    selected_build_id: String,
+    mode: &'static str,
+    eden_config_updated: bool,
+    would_rename: usize,
+    renamed: usize,
+    already_readable: usize,
+    addons: Vec<RenameItem>,
+}
+
+/// Rename only Cheatarium's precise legacy per-cheat folder names, without
+/// changing Qt configuration or regenerating any cheat code. Every file is
+/// verified against the same source snapshot before a single rename begins.
+pub(super) fn rename_legacy_file_only(
+    bundle: &Bundle,
+    selection: &Preview,
+    mods_root: &Path,
+    config: &Path,
+    dry_run: bool,
+) -> Result<RenameReport, ErrBox> {
+    if !dry_run {
+        eden_not_running()?;
+    }
+    validate_regular_ancestors(config, true)?;
+    validate_regular_ancestors(mods_root, false)?;
+    if !selection.rejected_entries.is_empty() || selection.proposed_addons.is_empty() {
+        return Err("Cannot rename unvalidated or empty source cheat selection".into());
+    }
+    let prepared = prepare_addons(bundle, selection, mods_root)?;
+    let title_dir = mods_root.join(&selection.title_id);
+    validate_regular_ancestors(&title_dir, false)?;
+    let config_meta = fs::metadata(config)?;
+    if config_meta.len() > MAX_INI_BYTES {
+        return Err("Eden Qt settings too large to verify activation state".into());
+    }
+    let ini = fs::read_to_string(config)?;
+    let mut addons = Vec::new();
+    let mut moves = Vec::<(PathBuf, PathBuf)>::new();
+    let mut already_readable = 0usize;
+    for (entry, expected_bytes) in &prepared {
+        let record = selection.proposed_addons.iter().find(|x| {
+            x.source_record_id == entry.source_record_id && x.source_ordinal == entry.source_ordinal
+        }).ok_or("Legacy rename lost source cheat identity")?;
+        if record.syntax_check != "lexical_hex_tokens_only_not_execution_validated" {
+            return Err("Unrecognized source opcode syntax: refusing rename".into());
+        }
+        let rendered = String::from_utf8(expected_bytes.clone())?;
+        let ident = format!("{}:{}:{}", entry.source_record_id, entry.source_ordinal, rendered);
+        let digest = format!("{:x}", sha2::Sha256::digest(ident.as_bytes()));
+        let old_name = format!(
+            "Cheatarium-{:04}-{}-{}",
+            entry.source_ordinal,
+            super::safe_label(&record.description),
+            &digest[..12]
+        );
+        let new_name = Path::new(&entry.relative_path)
+            .components().nth(1).ok_or("Missing readable Eden addon name")?
+            .as_os_str().to_string_lossy().into_owned();
+        if old_name == new_name {
+            return Err("Legacy and readable addon names are identical".into());
+        }
+        let old_dir = title_dir.join(&old_name);
+        let new_dir = title_dir.join(&new_name);
+        let old_exists = fs::symlink_metadata(&old_dir);
+        let new_exists = fs::symlink_metadata(&new_dir);
+        if old_exists.is_ok() && new_exists.is_ok() {
+            return Err(format!("Both old and new Eden addons exist: {old_name} / {new_name}").into());
+        }
+        let (target, status) = if old_exists.is_ok() {
+            (old_dir.as_path(), "would_rename")
+        } else if new_exists.is_ok() {
+            already_readable += 1;
+            (new_dir.as_path(), "already_readable")
+        } else {
+            return Err(format!("Neither expected legacy nor readable addon exists: {old_name}").into());
+        };
+        validate_regular_ancestors(target, false)?;
+        let cheats = target.join("cheats");
+        validate_regular_ancestors(&cheats, false)?;
+        let file = cheats.join(format!("{}.txt", selection.explicitly_selected_build_id));
+        validate_regular_ancestors(&file, true)?;
+        if fs::read(&file)? != *expected_bytes {
+            return Err(format!("Cheat bytes differ from the archived original: {old_name}").into());
+        }
+        // Do not rename a user-modified directory containing other content.
+        if fs::read_dir(target)?.count() != 1 || fs::read_dir(&cheats)?.count() != 1 {
+            return Err(format!("Unexpected contents in Eden addon: {old_name}").into());
+        }
+        // A renamed disabled addon could silently become active. Refuse to
+        // migrate if the old name appears in *any* disabled-addon setting.
+        if ini.lines().any(|line| {
+            line.trim().split_once('=').is_some_and(|(key, value)| {
+                key.trim().ends_with(r"\d") && value.trim() == old_name
+            })
+        }) {
+            return Err(format!("Addon is recorded as disabled in Eden settings; rename would change its activation: {old_name}").into());
+        }
+        if status == "would_rename" {
+            moves.push((old_dir, new_dir));
+        }
+        addons.push(RenameItem {
+            previous_addon: old_name,
+            readable_addon: new_name,
+            status,
+        });
+    }
+    let to_rename = moves.len();
+    if !dry_run {
+        let mut completed = Vec::<(PathBuf, PathBuf)>::new();
+        for (old, new) in &moves {
+            if let Err(problem) = eden_not_running().and_then(|_| fs::rename(old, new).map_err(Into::into)) {
+                let mut rollback_failed = false;
+                for (previous, current) in completed.into_iter().rev() {
+                    rollback_failed |= fs::rename(current, previous).is_err();
+                }
+                return Err(format!(
+                    "Cheat rename interrupted: {problem}; rollback {}",
+                    if rollback_failed { "INCOMPLETE, inspect Eden folders" } else { "completed" }
+                ).into());
+            }
+            completed.push((old.clone(), new.clone()));
+        }
+        for item in &mut addons {
+            if item.status == "would_rename" {
+                item.status = "renamed";
+            }
+        }
+    }
+    Ok(RenameReport {
+        format: "cheatarium-eden-readable-addon-rename-v1",
+        title_id: selection.title_id.clone(),
+        selected_build_id: selection.explicitly_selected_build_id.clone(),
+        mode: if dry_run { "read_only_rename_preview" } else { "rename_verified_legacy_folders" },
+        eden_config_updated: false,
+        would_rename: if dry_run { to_rename } else { 0 },
+        renamed: if dry_run { 0 } else { to_rename },
+        already_readable,
+        addons,
+    })
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
