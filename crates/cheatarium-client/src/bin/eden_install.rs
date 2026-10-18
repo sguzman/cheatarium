@@ -580,10 +580,11 @@ pub(super) fn install_files_only(
         }
         let relative = Path::new(&entry.relative_path);
         let parts = relative.components().collect::<Vec<_>>();
+        let expected_name = format!("{}.txt", selection.explicitly_selected_build_id);
         if parts.len() != 4
             || parts[0].as_os_str() != std::ffi::OsStr::new(title)
             || parts[2].as_os_str() != "cheats"
-            || parts[3].as_os_str() != format!("{}.txt", selection.explicitly_selected_build_id)
+            || parts[3].as_os_str() != std::ffi::OsStr::new(expected_name.as_str())
         {
             return Err("Unrecognized file-only Eden addon structure".into());
         }
