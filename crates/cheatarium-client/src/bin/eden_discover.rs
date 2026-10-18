@@ -14,7 +14,7 @@ const MAX_ENTRIES: usize = 50_000;
 const MAX_FILES: usize = 20_000;
 const MAX_DEPTH: usize = 5;
 const MAX_CACHE_TITLE_BYTES: u64 = 4096;
-const MAX_NSP_PREFIX_BYTES: u64 = 256 * 1024;
+const MAX_NSP_HEADER_BYTES: u64 = 256 * 1024;
 const MAX_NSP_HEADER_ENTRIES: usize = 2048;
 const MAX_NSP_HEADER_INSPECTIONS: usize = 24;
 
@@ -157,26 +157,26 @@ fn inspect_unresolved_nsp(path: &str) -> NspHeaderInspection {
         report.status = "too_short";
         return report;
     }
-    let file = match fs::File::open(path) {
+    let mut file = match fs::File::open(path) {
         Ok(file) => file,
         Err(_) => return report,
     };
-    let mut buffer = Vec::new();
-    let mut limited = file.take(MAX_NSP_PREFIX_BYTES);
-    if limited.read_to_end(&mut buffer).is_err() {
+    // Read exactly the header, not the fixed-size prefix: the bytes
+    // immediately after PFS0 metadata can be ticket or NCA contents.
+    let mut first = [0u8; 16];
+    if file.read_exact(&mut first).is_err() {
         report.status = "read_error";
-        report.bytes_read = buffer.len();
         return report;
     }
-    report.bytes_read = buffer.len();
-    if buffer.len() < 16 || buffer.get(..4) != Some(b"PFS0".as_slice()) {
+    report.bytes_read = 16;
+    if &first[..4] != b"PFS0" {
         report.status = "not_pfs0";
         return report;
     }
     let read_u32 = |a: &[u8]| u32::from_le_bytes(a.try_into().expect("4-byte field"));
     let read_u64 = |a: &[u8]| u64::from_le_bytes(a.try_into().expect("8-byte field"));
-    let entries = read_u32(&buffer[4..8]) as usize;
-    let table_bytes = read_u32(&buffer[8..12]) as usize;
+    let entries = read_u32(&first[4..8]) as usize;
+    let table_bytes = read_u32(&first[8..12]) as usize;
     if entries > MAX_NSP_HEADER_ENTRIES {
         report.status = "too_many_entries";
         return report;
@@ -193,10 +193,26 @@ fn inspect_unresolved_nsp(path: &str) -> NspHeaderInspection {
         report.status = "malformed";
         return report;
     }
-    if data_start > buffer.len() {
+    if (data_start as u64) > MAX_NSP_HEADER_BYTES {
         report.status = "header_exceeds_prefix_limit";
         return report;
     }
+    let mut buffer = Vec::with_capacity(data_start);
+    buffer.extend_from_slice(&first);
+    let mut rest = vec![0u8; data_start - 16];
+    let mut read = 0;
+    while read < rest.len() {
+        match file.read(&mut rest[read..]) {
+            Ok(0) | Err(_) => {
+                report.status = "read_error";
+                report.bytes_read += read;
+                return report;
+            }
+            Ok(count) => read += count,
+        }
+    }
+    report.bytes_read += rest.len();
+    buffer.extend_from_slice(&rest);
     let names = &buffer[names_start..data_start];
     let mut ticket_ids = BTreeSet::new();
     for idx in 0..entries {
