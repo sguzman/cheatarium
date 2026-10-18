@@ -94,6 +94,16 @@ fn safe_label(s: &str) -> String {
     }
 }
 
+fn default_config() -> PathBuf {
+    if let Some(config) = env::var_os("XDG_CONFIG_HOME") {
+        return PathBuf::from(config).join("eden/qt-config.ini");
+    }
+    env::var_os("HOME")
+        .map(PathBuf::from)
+        .unwrap_or_default()
+        .join(".config/eden/qt-config.ini")
+}
+
 fn default_mod_root() -> PathBuf {
     if let Some(data) = env::var_os("XDG_DATA_HOME") {
         return PathBuf::from(data).join("eden/load");
@@ -480,6 +490,8 @@ fn run() -> Result<(), ErrBox> {
     let mut db = PathBuf::from("generated/v1");
     let mut mod_root = default_mod_root();
     let mut stage_dir = None;
+    let mut config = default_config();
+    let mut install = false;
     let mut title = None;
     let mut build = None;
     let mut args = env::args().skip(1);
@@ -489,6 +501,8 @@ fn run() -> Result<(), ErrBox> {
             "--mods-root" => {
                 mod_root = PathBuf::from(args.next().ok_or("--mods-root requires a path")?)
             }
+            "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
+            "--install" => install = true,
             "--stage-dir" => {
                 stage_dir = Some(PathBuf::from(
                     args.next().ok_or("--stage-dir requires an absolute path")?,
@@ -510,11 +524,14 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Eden per-cheat addon preview (default read-only), optional isolated staging:\n  cheatarium-eden-plan --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 [--mods-root /absolute/eden/load] [--stage-dir /absolute/new/staging-folder] [--json]\n--stage-dir creates only the named new folder outside Eden; never installs, activates, or verifies installed games.");
+                println!("On-demand Eden cheat preview, isolated staging or direct installation:\n  cheatarium-eden-plan --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 [--install] [--config /absolute/qt-config.ini] [--mods-root /absolute/eden/load] [--stage-dir /absolute/new/staging-folder] [--json]\n--install requires Eden to be closed. New per-cheat add-ons are disabled by default; existing mods are never overwritten.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if install && stage_dir.is_some() {
+        return Err("Choose --install or --stage-dir, not both".into());
     }
     let title = title.ok_or("Missing --title-id")?;
     let build = build.ok_or("Missing --build-id")?;
@@ -525,7 +542,10 @@ fn run() -> Result<(), ErrBox> {
     verify_platform_distribution(&db, "switch")?;
     let bundle = load_platform(&db, "switch")?;
     let output = preview(&bundle, &title, &build, &mod_root)?;
-    if let Some(stage_dir) = stage_dir {
+    if install {
+        let installed = eden_install::install(&bundle, &output, &mod_root, &config)?;
+        println!("{}", serde_json::to_string_pretty(&installed)?);
+    } else if let Some(stage_dir) = stage_dir {
         let staged = stage(&bundle, &output, &stage_dir, &mod_root)?;
         println!("{}", serde_json::to_string_pretty(&staged)?);
     } else {
