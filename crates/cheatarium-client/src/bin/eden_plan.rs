@@ -13,10 +13,10 @@ use std::path::{Path, PathBuf};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
 
-#[path = "eden_install.rs"]
-mod eden_install;
 #[path = "eden_auto.rs"]
 mod eden_auto;
+#[path = "eden_install.rs"]
+mod eden_install;
 const MAX_PLANNED: usize = 2_000;
 const MAX_STAGED_TOTAL_BYTES: usize = 10 * 1024 * 1024;
 
@@ -488,7 +488,6 @@ fn stage(
     Ok(report)
 }
 
-
 #[derive(Debug, Serialize)]
 struct SkippedAutomaticBuild {
     title_id: String,
@@ -521,9 +520,15 @@ fn automatic_pairs(bundle: &Bundle, ids: &[String]) -> Result<Vec<(String, Strin
     let known = ids.iter().map(String::as_str).collect::<BTreeSet<_>>();
     let mut pairs = BTreeSet::new();
     for record in &bundle.records {
-        if record.provenance.source_id != "sharkive" { continue; }
-        let Some(rest) = record.candidate_game_key.strip_prefix("title-id-") else { continue; };
-        let Some((title, build)) = rest.split_once("-build-") else { continue; };
+        if record.provenance.source_id != "sharkive" {
+            continue;
+        }
+        let Some(rest) = record.candidate_game_key.strip_prefix("title-id-") else {
+            continue;
+        };
+        let Some((title, build)) = rest.split_once("-build-") else {
+            continue;
+        };
         let title = title.to_ascii_uppercase();
         let build = build.to_ascii_uppercase();
         if known.contains(title.as_str()) && is_title_id(&title) && is_build_id(&build) {
@@ -545,15 +550,21 @@ fn run_automatic(
 ) -> Result<AutomaticReport, ErrBox> {
     let discovery = eden_auto::discover(config, cache_dir)?;
     if discovery.titles.is_empty() {
-        return Err("Eden registered directories and cache contain no identifiable base games".into());
+        return Err(
+            "Eden registered directories and cache contain no identifiable base games".into(),
+        );
     }
     let pairs = automatic_pairs(bundle, &discovery.titles)?;
-    let known_with_archive = pairs.iter().map(|(t,_)| t.as_str()).collect::<BTreeSet<_>>();
+    let known_with_archive = pairs
+        .iter()
+        .map(|(t, _)| t.as_str())
+        .collect::<BTreeSet<_>>();
     let mut skipped = Vec::new();
     for title in &discovery.titles {
         if !known_with_archive.contains(title.as_str()) {
             skipped.push(SkippedAutomaticBuild {
-                title_id: title.clone(), build_id: None,
+                title_id: title.clone(),
+                build_id: None,
                 reason: "no_archived_sharkive_cheats_for_discovered_game",
             });
         }
@@ -566,16 +577,22 @@ fn run_automatic(
         let candidate = preview(bundle, &title, &build, mod_root)?;
         if candidate.proposed_addons.is_empty() {
             skipped.push(SkippedAutomaticBuild {
-                title_id: title, build_id: Some(build), reason: "no_renderable_cheat_sections",
+                title_id: title,
+                build_id: Some(build),
+                reason: "no_renderable_cheat_sections",
             });
             continue;
         }
         if !candidate.rejected_entries.is_empty()
-            || candidate.proposed_addons.iter().any(|x|
-                x.syntax_check != "lexical_hex_tokens_only_not_execution_validated")
+            || candidate
+                .proposed_addons
+                .iter()
+                .any(|x| x.syntax_check != "lexical_hex_tokens_only_not_execution_validated")
         {
             skipped.push(SkippedAutomaticBuild {
-                title_id: title, build_id: Some(build), reason: "unvalidated_or_unsafe_source_cheat",
+                title_id: title,
+                build_id: Some(build),
+                reason: "unvalidated_or_unsafe_source_cheat",
             });
             continue;
         }
@@ -631,7 +648,9 @@ fn run() -> Result<(), ErrBox> {
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
             "--auto" => auto = true,
-            "--cache-dir" => cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?),
+            "--cache-dir" => {
+                cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?)
+            }
             "--stage-dir" => {
                 stage_dir = Some(PathBuf::from(
                     args.next().ok_or("--stage-dir requires an absolute path")?,
@@ -667,7 +686,10 @@ fn run() -> Result<(), ErrBox> {
         return Err("Automatic discovery cannot be combined with manual IDs or staging".into());
     }
     if !automatic && (title.is_none() || build.is_none()) {
-        return Err("Provide both --title-id and --build-id, or use --install for automatic Eden discovery".into());
+        return Err(
+            "Provide both --title-id and --build-id, or use --install for automatic Eden discovery"
+                .into(),
+        );
     }
     if automatic {
         verify_platform_distribution(&db, "switch")?;
