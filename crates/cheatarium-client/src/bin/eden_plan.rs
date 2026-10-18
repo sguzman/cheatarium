@@ -914,7 +914,7 @@ mod tests {
         );
         assert!(skipped
             .iter()
-            .any(|s| s.reason == "no_historical_main_build_observed"));
+            .any(|s| s.reason == "no_historical_main_build_observed_in_log_or_private_history"));
         let (none, all_skipped) = single_historical_main_pairs(
             vec![("0100000000010000".into(), "3CA12DFAAF9C82DA".into())],
             &[],
