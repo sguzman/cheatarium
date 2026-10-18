@@ -1610,6 +1610,15 @@ jobs:
           [  3.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=1234567890ABCDEF0000000000000000, name=main
           [  4.00] Common.Filesystem <Info> patch_manager.cpp:93: No cheats file found for title_id=01006A800016E000, build_id=B424BE150A8E7D78
           LOG
+          # Keep the orphan query outside the bounded backwards-correlation
+          # window; a nearby main query before Core Loading is valid in Eden.
+          python3 - "$fixture/eden_log.txt" <<'PY'
+          from pathlib import Path
+          import sys
+          path = Path(sys.argv[1])
+          first, remaining = path.read_text().split("\n", 1)
+          path.write_text(first + "\n" + ("[  0.20] unrelated log line\n" * 100) + remaining)
+          PY
           cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
             --db generated/v1 --config "$fixture/qt-config.ini" --cache-dir "$fixture/cache" \
             --summary --build-readiness --read-only --log "$fixture/eden_log.txt" --json > "$fixture/status.json"
