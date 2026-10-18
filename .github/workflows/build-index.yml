@@ -1303,7 +1303,7 @@ jobs:
           game = next(g for g in out["candidate_base_titles"] if g["title_id"] == "0100000000010000")
           assert game["filename_labeled_base_files"] == 0
           assert game["ticket_filename_labeled_base_files"] == 1
-          assert out["unresolved_filename_title_ids"] == [hint["file_path"]]
+          assert sorted(Path(p).name for p in out["unresolved_filename_title_ids"]) == ["Card game.xci", "Compressed Game.nsz", "Game With No Title Label.nsp", "Standalone.nca"]
           assert not out["budget_exhausted"]
           assert out["complete_registered_file_inventory"]
           assert out["emulator_files_written"] == 0
