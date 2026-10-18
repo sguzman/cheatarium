@@ -549,6 +549,127 @@ pub(super) fn install(
     })
 }
 
+
+/// Explicit file-only mode: install native per-cheat directories and never
+/// read, rewrite, or back up Eden's Qt settings. New add-ons are usually
+/// enabled by Eden; actual activation remains under the user's control.
+pub(super) fn install_files_only(
+    bundle: &Bundle,
+    selection: &Preview,
+    mods_root: &Path,
+) -> Result<Installed, ErrBox> {
+    eden_not_running()?;
+    validate_mod_root_plan(mods_root)?;
+    if !selection.rejected_entries.is_empty() {
+        return Err("Refusing file-only install: source has rejected cheat entries".into());
+    }
+    let prepared = prepare_addons(bundle, selection, mods_root)?;
+    if prepared.is_empty() {
+        return Err("No exact-build cheats to install".into());
+    }
+    let title = &selection.title_id;
+    let title_dir = mods_root.join(title);
+    if fs::symlink_metadata(&title_dir).is_ok() {
+        validate_regular_ancestors(&title_dir, false)?;
+    }
+    let mut names = Vec::new();
+    let mut seen = BTreeSet::new();
+    for (entry, bytes) in &prepared {
+        if format!("{:x}", sha2::Sha256::digest(bytes)) != entry.sha256 {
+            return Err("Source cheat checksum changed before installation".into());
+        }
+        let relative = Path::new(&entry.relative_path);
+        let parts = relative.components().collect::<Vec<_>>();
+        if parts.len() != 4
+            || parts[0].as_os_str() != std::ffi::OsStr::new(title)
+            || parts[2].as_os_str() != "cheats"
+            || parts[3].as_os_str() != format!("{}.txt", selection.explicitly_selected_build_id)
+        {
+            return Err("Unrecognized file-only Eden addon structure".into());
+        }
+        let addon = parts[1].as_os_str().to_string_lossy().into_owned();
+        if !seen.insert(addon.clone()) {
+            return Err("Duplicate planned Eden addon directory".into());
+        }
+        if fs::symlink_metadata(title_dir.join(&addon)).is_ok() {
+            return Err(format!("Refusing to overwrite existing Eden mod: {addon}").into());
+        }
+        names.push(addon);
+    }
+    eden_not_running()?;
+    // All destinations checked before creating the first addon directory.
+    fs::create_dir_all(mods_root)?;
+    validate_regular_ancestors(mods_root, false)?;
+    if !title_dir.exists() {
+        fs::create_dir(&title_dir)?;
+    }
+    let mut written = 0usize;
+    for ((entry, bytes), name) in prepared.iter().zip(names.iter()) {
+        let addon_root = title_dir.join(name);
+        fs::create_dir(&addon_root)?;
+        let cheats = addon_root.join("cheats");
+        fs::create_dir(&cheats)?;
+        let target = cheats.join(format!("{}.txt", selection.explicitly_selected_build_id));
+        super::write_new(&target, bytes)?;
+        if fs::read(&target)? != *bytes
+            || format!("{:x}", sha2::Sha256::digest(bytes)) != entry.sha256
+        {
+            return Err("Installed file-only cheat checksum verification failed".into());
+        }
+        written += 1;
+    }
+    Ok(Installed {
+        schema_version: 1,
+        format: "cheatarium-eden-file-only-install-v1",
+        title_id: title.clone(),
+        selected_build_id: selection.explicitly_selected_build_id.clone(),
+        installed_addons: names,
+        files_written: written,
+        eden_config_updated: false,
+        eden_config_backup_path: None,
+        activation_state: "files_installed_no_activation_settings_changed",
+        installed_build_id_verified: false,
+        compatible_cheats_verified: false,
+        existing_mods_overwritten: false,
+        emulator_game_files_written: 0,
+        warning: "Created only Eden cheat folders. No Qt configuration was read or modified. Eden normally enables new add-ons by default; review Add-ons before playing. Actual effects remain unverified.",
+    })
+}
+
+/// Exact existing files are repeatable, but an incomplete or modified addon
+/// must be handled as a collision, never overwritten.
+pub(super) fn already_installed_files_unchanged(
+    bundle: &Bundle,
+    selection: &Preview,
+    mods_root: &Path,
+) -> Result<bool, ErrBox> {
+    if !mods_root.exists() {
+        return Ok(false);
+    }
+    validate_regular_ancestors(mods_root, false)?;
+    let prepared = prepare_addons(bundle, selection, mods_root)?;
+    if prepared.is_empty() {
+        return Ok(false);
+    }
+    for (entry, bytes) in prepared {
+        let dest = mods_root.join(&entry.relative_path);
+        let metadata = match fs::symlink_metadata(&dest) {
+            Ok(metadata) => metadata,
+            Err(err) if err.kind() == std::io::ErrorKind::NotFound => return Ok(false),
+            Err(err) => return Err(err.into()),
+        };
+        if metadata.file_type().is_symlink() || !metadata.is_file() {
+            return Err("Existing cheat destination is not a regular file".into());
+        }
+        validate_regular_ancestors(&dest, true)?;
+        if fs::read(dest)? != bytes {
+            return Ok(false);
+        }
+    }
+    Ok(true)
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
