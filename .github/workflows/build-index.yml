@@ -1207,6 +1207,17 @@ jobs:
           assert "01006A8000161001" not in config
           print("Auto mode installed",len(all_mods),"disabled per-cheat addons with no typed IDs")
           PY
+          cp "$fixture/config/qt-config.ini" "$fixture/before-repeat.ini"
+          run_auto --install > "$fixture/repeated.json"
+          cmp "$fixture/config/qt-config.ini" "$fixture/before-repeat.ini"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          d=json.loads((Path(sys.argv[1])/"repeated.json").read_text())
+          assert d["installed_title_build_pairs"] == 0
+          assert d["already_installed_title_build_pairs"] >= 1
+          print("Repeat auto run skipped already-installed, unchanged, disabled cheats.")
+          PY
       - name: Check Eden log-derived main Build IDs without modifying games
         run: |
           set -euo pipefail
