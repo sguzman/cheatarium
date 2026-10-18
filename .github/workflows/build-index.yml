@@ -1134,7 +1134,29 @@ jobs:
           touch "$fixture/roms/super-smash/dlc/Cosmetic [01006A800016F040].nsp"
           touch "$fixture/roms/super-mario-odyssey/Odyssey [0100000000010000].nsp"
           touch "$fixture/roms/super-mario-odyssey/Odyssey Update [0100000000010800].nsp"
-          touch "$fixture/roms/mario-kart-8/Mario Kart 8 Deluxe.nsp"
+          python3 - "$fixture/roms/mario-kart-8/Mario Kart 8 Deluxe.nsp" <<'PY'
+          import struct
+          import sys
+          from pathlib import Path
+          entries = [
+              ("01001520000220000000000000000000.tik", b"ticket contents never parsed"),
+              ("aabbccdd.cnmt.nca", b"encrypted metadata never parsed"),
+              ("ccddeeff.nca", b"encrypted executable never parsed"),
+          ]
+          strings = bytearray()
+          table = bytearray()
+          payload = bytearray()
+          for name, data in entries:
+              offset = len(payload)
+              name_offset = len(strings)
+              strings.extend(name.encode("ascii") + b"\x00")
+              table.extend(struct.pack("<QQII", offset, len(data), name_offset, 0))
+              payload.extend(data)
+          Path(sys.argv[1]).write_bytes(
+              b"PFS0" + struct.pack("<III", len(entries), len(strings), 0)
+              + table + strings + payload
+          )
+          PY
           touch "$fixture/eden-cache/0100152000022000.pv.txt"
           printf 'Update (1.3.0)\n[D] Update (1.2.0)\nOther Mod (1.0)\n' > "$fixture/eden-cache/0100000000010000.pv.txt"
           printf '[DisabledAddOns]\nsize=1\n1\\title_id=72057594037993472\n1\\disabled\\size=2\n1\\disabled\\1\\d=Update@262144\n1\\disabled\\2\\d=Some Cosmetic Mod\n' >> "$fixture/eden.ini"
@@ -1180,6 +1202,29 @@ jobs:
           assert all(not line["current_update_applied_verified"] for line in patch_display["0100000000010000"]["cached_update_lines"])
 
           print("Eden registered-folder summary: base, update, DLC, unknown; no content reads.")
+          PY
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
+            --db generated/v1 --config "$fixture/eden.ini" --cache-dir "$fixture/eden-cache" \
+            --summary --inspect-nsp-headers --json > "$fixture/inspected.json"
+          python3 - "$fixture/inspected.json" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          report = json.loads(Path(sys.argv[1]).read_text())
+          items = report["unresolved_nsp_header_inspections"]
+          assert len(items) == 1 and not report["unresolved_nsp_inspections_truncated"]
+          record = items[0]
+          assert record["status"] == "outer_pfs0_metadata_only"
+          assert record["file_path"].endswith("Mario Kart 8 Deluxe.nsp")
+          assert record["ticket_filename_title_id_candidates"] == ["0100152000022000"]
+          assert record["nca_file_entries"] == 2 and record["cnmt_nca_file_entries"] == 1
+          assert not record["executable_build_id_found"]
+          assert not record["installed_build_id_verified"]
+          assert record["bytes_read"] == report["inspected_nsp_file_bytes_read"]
+          assert record["bytes_read"] == report["game_file_bytes_read"]
+          assert 16 < record["bytes_read"] < 262145
+          assert report["emulator_files_written"] == 0
+          print("PFS0 bounded header inspector: ticket-filename hint only, no executable Build ID.")
           PY
       - name: Confirm consumer-cli stage
         env:
