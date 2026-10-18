@@ -340,7 +340,11 @@ fn save_config_backup(path: &Path, expected: &str) -> Result<PathBuf, ErrBox> {
             ".qt-config.ini.cheatarium-backup-{}-{serial}",
             std::process::id()
         ));
-        let mut file = match OpenOptions::new().write(true).create_new(true).open(&backup) {
+        let mut file = match OpenOptions::new()
+            .write(true)
+            .create_new(true)
+            .open(&backup)
+        {
             Ok(file) => file,
             Err(err) if err.kind() == std::io::ErrorKind::AlreadyExists => continue,
             Err(err) => return Err(err.into()),
@@ -378,7 +382,10 @@ fn write_config_atomic(
         return Err("Eden config changed during installation; refusing to overwrite".into());
     }
     let temp = parent.join(format!(".qt-config.ini.cheatarium-{}", std::process::id()));
-    let mut file = OpenOptions::new().write(true).create_new(true).open(&temp)?;
+    let mut file = OpenOptions::new()
+        .write(true)
+        .create_new(true)
+        .open(&temp)?;
     let result = (|| -> Result<PathBuf, ErrBox> {
         file.set_permissions(fs::metadata(path)?.permissions())?;
         file.write_all(updated.as_bytes())?;
