@@ -1585,6 +1585,7 @@ fn run() -> Result<(), ErrBox> {
     // Readiness is the normal opt-in lifecycle: capture its bounded evidence
     // automatically unless the caller explicitly requests read-only inspection.
     let mut capture_build_history = true;
+    let mut explicit_capture = false;
     let mut force_read_only = false;
     let mut explicit_ids = BTreeSet::new();
     let mut args = env::args().skip(1);
@@ -1614,7 +1615,10 @@ fn run() -> Result<(), ErrBox> {
             "--inspect-nsp-headers" => inspect_nsp_headers = true,
             "--audit-all-files" => audit_all_files = true,
             "--build-readiness" => with_readiness = true,
-            "--capture-build-history" => capture_build_history = true,
+            "--capture-build-history" => {
+                capture_build_history = true;
+                explicit_capture = true;
+            },
             "--no-capture-build-history" | "--read-only" => force_read_only = true,
             "--history-file" => {
                 history_path = PathBuf::from(
@@ -1629,6 +1633,9 @@ fn run() -> Result<(), ErrBox> {
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if explicit_capture && !with_readiness {
+        return Err("--capture-build-history requires --build-readiness".into());
     }
     if force_read_only && !with_readiness {
         return Err("--read-only requires --build-readiness".into());
