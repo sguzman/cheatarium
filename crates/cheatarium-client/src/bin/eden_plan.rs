@@ -767,6 +767,7 @@ fn run() -> Result<(), ErrBox> {
     let mut historical_main_only = false;
     let mut install = false;
     let mut files_only = false;
+    let mut rename_installed = false;
     let mut only_title_id: Option<String> = None;
     let mut title = None;
     let mut build = None;
@@ -780,6 +781,7 @@ fn run() -> Result<(), ErrBox> {
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
             "--files-only" => files_only = true,
+            "--rename-installed" => rename_installed = true,
             "--only-title-id" => {
                 only_title_id = Some(
                     args.next()
@@ -822,7 +824,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nFile-only preview: --dry-run --historical-main-only --only-title-id TITLE --files-only.\nFile-only install: --install --historical-main-only --only-title-id TITLE --files-only. No qt-config.ini writes.\nAfter review, the disabled-by-default installer is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nFile-only preview: --dry-run --historical-main-only --only-title-id TITLE --files-only.\nFile-only install: --install --historical-main-only --only-title-id TITLE --files-only. No qt-config.ini writes.\nLegacy folder rename: --rename-installed --historical-main-only --only-title-id TITLE --files-only [--dry-run].\nAfter review, the disabled-by-default installer is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -834,13 +836,16 @@ fn run() -> Result<(), ErrBox> {
     if human_report && !dry_run {
         return Err("--report requires --dry-run".into());
     }
-    if historical_main_only && !dry_run && !install {
+    if rename_installed && (install || stage_dir.is_some() || human_report) {
+        return Err("--rename-installed cannot combine with --install, --stage-dir or --report".into());
+    }
+    if historical_main_only && !dry_run && !install && !rename_installed {
         return Err("--historical-main-only requires --dry-run or --install".into());
     }
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
     }
-    if files_only && (!historical_main_only || !only_title_id.is_some() || (!install && !dry_run)) {
+    if files_only && (!historical_main_only || !only_title_id.is_some() || (!install && !dry_run && !rename_installed)) {
         return Err("--files-only requires --historical-main-only, --only-title-id, and either --dry-run or --install".into());
     }
     if let Some(id) = &only_title_id {
@@ -855,7 +860,7 @@ fn run() -> Result<(), ErrBox> {
             "--historical-main-only uses automatic discovery and forbids manual IDs".into(),
         );
     }
-    let automatic = auto || (install && title.is_none() && build.is_none());
+    let automatic = auto || rename_installed || (install && title.is_none() && build.is_none());
     if automatic && (title.is_some() || build.is_some() || stage_dir.is_some()) {
         return Err("Automatic discovery cannot be combined with manual IDs or staging".into());
     }
@@ -879,6 +884,30 @@ fn run() -> Result<(), ErrBox> {
         } else {
             None
         };
+        if rename_installed {
+            let title = only_title_id.as_deref().ok_or("Missing --only-title-id")?;
+            let discovered = eden_auto::discover(&config, &cache_dir)?;
+            if !discovered.titles.iter().any(|id| id == title) {
+                return Err("Title ID not found in Eden library; refusing legacy rename".into());
+            }
+            let historical = evidence.as_ref().ok_or("Missing Eden historical evidence")?;
+            let saved = &history.as_ref().ok_or("Missing saved Build ID history")?.0;
+            let (selected, _) = single_historical_main_pairs(
+                automatic_pairs(&bundle, &[title.to_owned()])?,
+                &historical.main,
+                saved,
+            );
+            if selected.len() != 1 {
+                return Err("Legacy rename requires exactly one archived Build ID with unambiguous historical main-executable evidence".into());
+            }
+            let (title_id, build_id) = &selected[0];
+            let plan = preview(&bundle, title_id, build_id, &mod_root)?;
+            let result = eden_install::rename_legacy_file_only(
+                &bundle, &plan, &mod_root, &config, dry_run,
+            )?;
+            println!("{}", serde_json::to_string_pretty(&result)?);
+            return Ok(());
+        }
         let report = run_automatic(
             &bundle,
             &config,
