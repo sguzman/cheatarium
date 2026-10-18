@@ -6,7 +6,7 @@ use cheatarium_client::{
 };
 use serde::Serialize;
 use sha2::{Digest, Sha256};
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 use std::env;
 use std::error::Error;
 use std::fs::{self, OpenOptions};
@@ -509,6 +509,7 @@ struct AutomaticReport {
     mode: &'static str,
     discovery: eden_auto::Discovery,
     archived_title_build_pairs: usize,
+    candidate_build_scope: &'static str,
     installed_title_build_pairs: usize,
     already_installed_title_build_pairs: usize,
     prepared_title_build_pairs: usize,
@@ -548,12 +549,54 @@ fn automatic_pairs(bundle: &Bundle, ids: &[String]) -> Result<Vec<(String, Strin
     Ok(pairs.into_iter().collect())
 }
 
+/// Limit the preview to games with exactly one main executable Build ID
+/// observed in the supplied Eden launch log. This is historical evidence
+/// only, never a verification of the current installed game executable.
+/// Ambiguity fails closed; do not pick the newest or first observation.
+fn single_historical_main_pairs(
+    pairs: Vec<(String, String)>,
+    observations: &[eden_builds::MainBuildObservation],
+) -> (Vec<(String, String)>, Vec<SkippedAutomaticBuild>) {
+    let mut by_title = BTreeMap::<String, BTreeSet<String>>::new();
+    for observed in observations {
+        by_title
+            .entry(observed.title_id.clone())
+            .or_default()
+            .insert(observed.build_id.clone());
+    }
+    let mut selected = Vec::new();
+    let mut skipped = Vec::new();
+    for (title, build) in pairs {
+        let reason = match by_title.get(&title) {
+            None => Some("no_historical_main_build_observed"),
+            Some(builds) if builds.len() != 1 => {
+                Some("multiple_historical_main_builds_ambiguous")
+            }
+            Some(builds) if !builds.contains(&build) => {
+                Some("archived_build_not_historically_observed_as_main")
+            }
+            _ => None,
+        };
+        if let Some(reason) = reason {
+            skipped.push(SkippedAutomaticBuild {
+                title_id: title,
+                build_id: Some(build),
+                reason,
+            });
+        } else {
+            selected.push((title, build));
+        }
+    }
+    (selected, skipped)
+}
+
 fn run_automatic(
     bundle: &Bundle,
     config: &Path,
     cache_dir: &Path,
     mod_root: &Path,
     installing: bool,
+    historical_main_only: Option<&eden_builds::LaunchEvidence>,
 ) -> Result<AutomaticReport, ErrBox> {
     let discovery = eden_auto::discover(config, cache_dir)?;
     if discovery.titles.is_empty() {
@@ -577,6 +620,11 @@ fn run_automatic(
         }
     }
     let total_pairs = pairs.len();
+    let (pairs, history_skipped) = match historical_main_only {
+        Some(evidence) => single_historical_main_pairs(pairs, &evidence.main),
+        None => (pairs, Vec::new()),
+    };
+    skipped.extend(history_skipped);
     let mut planned = Vec::new();
     let mut installed = Vec::new();
     let mut already_installed = 0usize;
@@ -621,6 +669,11 @@ fn run_automatic(
         format: "cheatarium-eden-auto-cheat-synthesis-v1",
         mode: if installing { "direct_install_disabled" } else { "read_only_preview" },
         discovery, archived_title_build_pairs: total_pairs,
+        candidate_build_scope: if historical_main_only.is_some() {
+            "unique_historical_main_nso_build_only_not_current_verified"
+        } else {
+            "all_archived_builds_unverified"
+        },
         installed_title_build_pairs: installed.len(),
         already_installed_title_build_pairs: already_installed,
         prepared_title_build_pairs: planned.len(),
@@ -628,7 +681,7 @@ fn run_automatic(
         game_executable_build_verified: false,
         warnings: vec![
             "Title IDs discovered from Eden game directories and cache are advisory, not proof of installation.",
-            "All archived executable Build ID variants for discovered titles are installed separately and initially disabled; Eden loads only the corresponding Build ID filename.",
+            "Archived Build IDs do not establish installed executable versions. Only the historical-main-only read-only mode narrows candidates using launch logs.",
             "No runtime Build ID was guessed or required from the user.",
             "Cheat effects and compatibility are unverified. Enable only desired cheats in Eden.",
         ]
@@ -645,6 +698,7 @@ fn run() -> Result<(), ErrBox> {
     let mut auto = false;
     let mut dry_run = false;
     let mut human_report = false;
+    let mut historical_main_only = false;
     let mut install = false;
     let mut title = None;
     let mut build = None;
@@ -663,6 +717,7 @@ fn run() -> Result<(), ErrBox> {
                 auto = true;
             }
             "--report" => human_report = true,
+            "--historical-main-only" => historical_main_only = true,
             "--cache-dir" => {
                 cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?)
             }
@@ -688,7 +743,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nDetailed JSON (also read-only): --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -699,6 +754,9 @@ fn run() -> Result<(), ErrBox> {
     }
     if human_report && !dry_run {
         return Err("--report requires --dry-run".into());
+    }
+    if historical_main_only && !dry_run {
+        return Err("--historical-main-only is read-only and requires --dry-run".into());
     }
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
@@ -716,12 +774,28 @@ fn run() -> Result<(), ErrBox> {
     if automatic {
         verify_platform_distribution(&db, "switch")?;
         let bundle = load_platform(&db, "switch")?;
-        let report = run_automatic(&bundle, &config, &cache_dir, &mod_root, install)?;
-        if dry_run {
+        let evidence = if dry_run {
             let index = load_game_candidates(&db, "switch")?;
-            let evidence = eden_builds::read_launch_evidence(&log_path, &index)?;
+            Some(eden_builds::read_launch_evidence(&log_path, &index)?)
+        } else {
+            None
+        };
+        let report = run_automatic(
+            &bundle,
+            &config,
+            &cache_dir,
+            &mod_root,
+            install,
+            if historical_main_only {
+                evidence.as_ref()
+            } else {
+                None
+            },
+        )?;
+        if dry_run {
+            let evidence = evidence.as_ref().ok_or("Missing read-only Eden evidence")?;
             let detailed =
-                eden_dry_run::analyze(&report, &bundle, &config, &mod_root, &log_path, &evidence)?;
+                eden_dry_run::analyze(&report, &bundle, &config, &mod_root, &log_path, evidence)?;
             if human_report {
                 print!("{}", eden_dry_run::render_human(&detailed));
             } else {
@@ -763,6 +837,40 @@ fn main() {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn historical_main_only_never_selects_ambiguous_or_unobserved_builds() {
+        let pairs = vec![
+            ("0100000000010000".into(), "3CA12DFAAF9C82DA".into()),
+            ("0100000000010000".into(), "B424BE150A8E7D78".into()),
+            ("0100152000022000".into(), "1CD9216A21737FB4".into()),
+            ("0100152000022000".into(), "96DFD1769E560C27".into()),
+            ("01006A800016E000".into(), "2EF410F4D4D2D279".into()),
+        ];
+        let observed = |title_id: &str, build_id: &str| eden_builds::MainBuildObservation {
+            title_id: title_id.into(),
+            build_id: build_id.into(),
+            archived_candidate: true,
+            launch_context_ordinal: 1,
+        };
+        let main = vec![
+            observed("0100000000010000", "B424BE150A8E7D78"),
+            observed("0100000000010000", "B424BE150A8E7D78"),
+            observed("0100152000022000", "1CD9216A21737FB4"),
+            observed("0100152000022000", "96DFD1769E560C27"),
+        ];
+        let (selected, skipped) = single_historical_main_pairs(pairs, &main);
+        assert_eq!(selected, vec![("0100000000010000".into(), "B424BE150A8E7D78".into())]);
+        assert_eq!(skipped.len(), 4);
+        assert_eq!(skipped.iter().filter(|s| s.reason == "multiple_historical_main_builds_ambiguous").count(), 2);
+        assert!(skipped.iter().any(|s| s.reason == "no_historical_main_build_observed"));
+        let (none, all_skipped) = single_historical_main_pairs(
+            vec![("0100000000010000".into(), "3CA12DFAAF9C82DA".into())],
+            &[],
+        );
+        assert!(none.is_empty());
+        assert_eq!(all_skipped[0].reason, "no_historical_main_build_observed");
+    }
 
     fn fixture() -> Bundle {
         serde_json::from_value(serde_json::json!({
