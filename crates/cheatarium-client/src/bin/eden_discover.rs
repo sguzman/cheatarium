@@ -90,6 +90,10 @@ struct Report {
 struct InventoryGame {
     title_id: String,
     filename_labeled_base_files: usize,
+    // An exact single title hint derived from the unencrypted NSP ticket
+    // filename, not from a verified executable or installed title.
+    ticket_filename_labeled_base_files: usize,
+    ticket_filename_labeled_update_files: usize,
     in_eden_cache: bool,
     archived_build_candidate_count: usize,
     external_reference_count: usize,
@@ -126,6 +130,86 @@ struct NspHeaderInspection {
     ticket_filename_title_id_candidates: Vec<String>,
     executable_build_id_found: bool,
     installed_build_id_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
+struct NspTitleAssociation {
+    file_path: String,
+    title_id_hint: String,
+    title_role_hint: &'static str,
+    base_title_id_hint: String,
+    evidence: &'static str,
+    title_is_in_eden_cache: bool,
+    base_title_has_archived_cheat_candidates: bool,
+    source_container_content_verified: bool,
+    installed_game_verified: bool,
+    installed_build_id_verified: bool,
+}
+
+fn associate_nsp_ticket_hints(
+    summary: &mut InventorySummary,
+    all_files: &[LibraryFile],
+) {
+    let cache_ids: BTreeSet<String> = summary.candidate_base_titles
+        .iter().filter(|g| g.in_eden_cache).map(|g| g.title_id.clone()).collect();
+    let mut unresolved = BTreeSet::new();
+    let mut associations = Vec::new();
+    for inspection in &summary.unresolved_nsp_header_inspections {
+        // More than one rights-ID prefix in a package is ambiguous. Never
+        // choose the first ticket, even if one candidate is in Eden's cache.
+        let [title] = inspection.ticket_filename_title_id_candidates.as_slice() else {
+            unresolved.insert(inspection.file_path.clone());
+            continue;
+        };
+        if inspection.status != "outer_pfs0_metadata_only"
+            || dlc_directory(&inspection.file_path).is_some()
+        {
+            unresolved.insert(inspection.file_path.clone());
+            continue;
+        }
+        let (base, role) = if let Some(base) = base_for_update_label(title) {
+            (base, "update_title_label")
+        } else if is_base_label(title) {
+            (title.clone(), "base_title_label")
+        } else {
+            unresolved.insert(inspection.file_path.clone());
+            continue;
+        };
+        let Some(game) = summary.candidate_base_titles.iter_mut()
+            .find(|g| g.title_id == base)
+        else {
+            // Do not invent game identity from a ticket filename alone.
+            unresolved.insert(inspection.file_path.clone());
+            continue;
+        };
+        if role == "base_title_label" {
+            game.ticket_filename_labeled_base_files += 1;
+        } else {
+            game.ticket_filename_labeled_update_files += 1;
+        }
+        associations.push(NspTitleAssociation {
+            file_path: inspection.file_path.clone(),
+            title_id_hint: title.clone(),
+            title_role_hint: role,
+            base_title_id_hint: base,
+            evidence: "single_pfs0_ticket_filename_rights_id_prefix_only",
+            title_is_in_eden_cache: cache_ids.contains(title),
+            base_title_has_archived_cheat_candidates: game.archived_build_candidate_count > 0,
+            source_container_content_verified: false,
+            installed_game_verified: false,
+            installed_build_id_verified: false,
+        });
+    }
+    // Filenames not inspected because of scan limit remain unresolved too.
+    let inspected: BTreeSet<&str> = summary.unresolved_nsp_header_inspections
+        .iter().map(|i| i.file_path.as_str()).collect();
+    for file in all_files {
+        if file.title_id.is_none() && !inspected.contains(file.path.as_str()) {
+            unresolved.insert(file.path.clone());
+        }
+    }
+    summary.unresolved_after_nsp_header_inspection = unresolved.into_iter().collect();
+    summary.advisory_nsp_title_associations = associations;
 }
 
 /// NSP's PFS0 outer header is unencrypted. Tickets, keys and NCA payloads
@@ -290,6 +374,8 @@ struct InventorySummary {
     unresolved_filename_title_ids: Vec<String>,
     cached_title_ids_without_labeled_base_file: Vec<String>,
     unresolved_nsp_header_inspections: Vec<NspHeaderInspection>,
+    advisory_nsp_title_associations: Vec<NspTitleAssociation>,
+    unresolved_after_nsp_header_inspection: Vec<String>,
     unresolved_nsp_inspections_truncated: bool,
     inspected_nsp_file_bytes_read: usize,
     saved_disabled_addons: Vec<SavedDisabledAddons>,
@@ -569,6 +655,8 @@ fn summarize_report(report: &Report) -> InventorySummary {
             InventoryGame {
                 title_id: id.clone(),
                 filename_labeled_base_files: count,
+                ticket_filename_labeled_base_files: 0,
+                ticket_filename_labeled_update_files: 0,
                 in_eden_cache: cached_ids.contains(&id),
                 archived_build_candidate_count: matching
                     .map_or(0, |m| m.archived_build_candidates.len()),
@@ -609,6 +697,8 @@ fn summarize_report(report: &Report) -> InventorySummary {
         unresolved_filename_title_ids: unresolved,
         cached_title_ids_without_labeled_base_file: uncorrelated_cached,
         unresolved_nsp_header_inspections: Vec::new(),
+        advisory_nsp_title_associations: Vec::new(),
+        unresolved_after_nsp_header_inspection: Vec::new(),
         unresolved_nsp_inspections_truncated: false,
         inspected_nsp_file_bytes_read: 0,
         saved_disabled_addons: Vec::new(),
@@ -1162,6 +1252,7 @@ fn run() -> Result<(), ErrBox> {
                 .map(|entry| entry.bytes_read)
                 .sum();
             summary.game_file_bytes_read = summary.inspected_nsp_file_bytes_read as u32;
+            associate_nsp_ticket_hints(&mut summary, &report.game_files);
         }
         println!("{}", serde_json::to_string_pretty(&summary)?);
     } else {
@@ -1419,6 +1510,90 @@ volume=100
         assert!(!r.installed_build_id_verified);
         assert!(r.bytes_read > 16);
         fs::remove_file(p).unwrap();
+    }
+
+
+    #[test]
+    fn single_ticket_hints_link_only_previously_known_eden_games() {
+        let mut summary = InventorySummary {
+            schema_version: 1,
+            format: "cheatarium-eden-inventory-summary-v1",
+            read_only: true,
+            registered_game_roots: Vec::new(),
+            game_file_bytes_read: 500,
+            emulator_files_written: 0,
+            total_game_container_files: 3,
+            candidate_base_titles: vec![InventoryGame {
+                title_id: "0100152000022000".into(),
+                filename_labeled_base_files: 0,
+                ticket_filename_labeled_base_files: 0,
+                ticket_filename_labeled_update_files: 0,
+                in_eden_cache: true,
+                archived_build_candidate_count: 3,
+                external_reference_count: 0,
+                update_files_in_registered_folders: 0,
+                installed_base_game_verified: false,
+                installed_update_verified: false,
+                installed_build_id_verified: false,
+            }],
+            probable_update_files: Vec::new(),
+            dlc_folder_groups: Vec::new(),
+            filename_ids_not_classified: 0,
+            unresolved_filename_title_ids: vec!["base.nsp".into(), "update.nsp".into(), "skyward.nsp".into()],
+            cached_title_ids_without_labeled_base_file: vec!["0100152000022000".into()],
+            unresolved_nsp_header_inspections: vec![
+                NspHeaderInspection {
+                    file_path: "base.nsp".into(), status: "outer_pfs0_metadata_only",
+                    bytes_read: 100, container_file_entries: 2, nca_file_entries: 1,
+                    cnmt_nca_file_entries: 1,
+                    ticket_filename_title_id_candidates: vec!["0100152000022000".into()],
+                    executable_build_id_found: false, installed_build_id_verified: false,
+                },
+                NspHeaderInspection {
+                    file_path: "update.nsp".into(), status: "outer_pfs0_metadata_only",
+                    bytes_read: 200, container_file_entries: 4, nca_file_entries: 3,
+                    cnmt_nca_file_entries: 1,
+                    ticket_filename_title_id_candidates: vec!["0100152000022800".into()],
+                    executable_build_id_found: false, installed_build_id_verified: false,
+                },
+                NspHeaderInspection {
+                    file_path: "skyward.nsp".into(), status: "outer_pfs0_metadata_only",
+                    bytes_read: 200, container_file_entries: 3, nca_file_entries: 3,
+                    cnmt_nca_file_entries: 1, ticket_filename_title_id_candidates: Vec::new(),
+                    executable_build_id_found: false, installed_build_id_verified: false,
+                },
+            ],
+            advisory_nsp_title_associations: Vec::new(),
+            unresolved_after_nsp_header_inspection: Vec::new(),
+            unresolved_nsp_inspections_truncated: false,
+            inspected_nsp_file_bytes_read: 500,
+            saved_disabled_addons: Vec::new(), cached_update_displays: Vec::new(),
+            installed_build_id_verified: false, warnings: Vec::new(),
+        };
+        let files = ["base.nsp","update.nsp","skyward.nsp"]
+            .into_iter().map(|path| LibraryFile {
+                path: path.into(), title_id: None, title_id_evidence: "unresolved_no_rom_read",
+                file_type: "nsp".into(),
+            }).collect::<Vec<_>>();
+        associate_nsp_ticket_hints(&mut summary, &files);
+        assert_eq!(summary.advisory_nsp_title_associations.len(), 2);
+        assert_eq!(summary.candidate_base_titles[0].ticket_filename_labeled_base_files, 1);
+        assert_eq!(summary.candidate_base_titles[0].ticket_filename_labeled_update_files, 1);
+        assert!(summary.advisory_nsp_title_associations.iter().all(|x|
+            !x.installed_game_verified && !x.installed_build_id_verified
+                && !x.source_container_content_verified
+        ));
+        assert_eq!(summary.unresolved_after_nsp_header_inspection, vec!["skyward.nsp"]);
+        assert_eq!(summary.cached_title_ids_without_labeled_base_file, vec!["0100152000022000"]);
+        // A second ticket makes identity ambiguous even when it includes a known base ID.
+        summary.unresolved_nsp_header_inspections[0]
+            .ticket_filename_title_id_candidates.push("01002DA013484000".into());
+        summary.advisory_nsp_title_associations.clear();
+        summary.candidate_base_titles[0].ticket_filename_labeled_base_files = 0;
+        summary.candidate_base_titles[0].ticket_filename_labeled_update_files = 0;
+        associate_nsp_ticket_hints(&mut summary, &files);
+        assert_eq!(summary.advisory_nsp_title_associations.len(), 1);
+        assert_eq!(summary.unresolved_after_nsp_header_inspection, vec!["base.nsp", "skyward.nsp"]);
     }
 
     #[test]
