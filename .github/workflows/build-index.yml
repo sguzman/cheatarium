@@ -1347,7 +1347,7 @@ jobs:
           LOG
           cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
             --db generated/v1 --config "$fixture/qt-config.ini" --cache-dir "$fixture/cache" \
-            --summary --build-readiness --log "$fixture/eden_log.txt" --json > "$fixture/status.json"
+            --summary --build-readiness --read-only --log "$fixture/eden_log.txt" --json > "$fixture/status.json"
           python3 - "$fixture/status.json" <<'PY'
           import json, sys
           from pathlib import Path
@@ -1379,7 +1379,7 @@ jobs:
           PY
           cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- \
             --db generated/v1 --config "$fixture/qt-config.ini" --cache-dir "$fixture/cache" \
-            --summary --build-readiness --log "$fixture/missing_log.txt" --json > "$fixture/missing.json"
+            --summary --build-readiness --read-only --log "$fixture/missing_log.txt" --json > "$fixture/missing.json"
           python3 - "$fixture/missing.json" <<'PY'
           import json, sys
           from pathlib import Path
@@ -1408,8 +1408,19 @@ jobs:
               --summary --build-readiness --history-file "$fixture/private/history.json" \
               --log "$fixture/log.txt" --json "$@"
           }
-          run_ready --capture-build-history > "$fixture/first.json"
-          run_ready --capture-build-history > "$fixture/repeated.json"
+          run_ready --read-only --history-file "$fixture/private/not-created.json" > "$fixture/readonly.json"
+          python3 - "$fixture" <<'PY'
+          import json, sys
+          from pathlib import Path
+          root = Path(sys.argv[1])
+          d = json.loads((root / "readonly.json").read_text())
+          assert d["read_only"] and d["build_readiness"]["read_only"]
+          assert not d["build_readiness"]["saved_history_file_present"]
+          assert not (root / "private/not-created.json").exists()
+          assert not d["build_readiness"]["saved_history_written_this_run"]
+          PY
+          run_ready > "$fixture/first.json"
+          run_ready > "$fixture/repeated.json"
           python3 - "$fixture" <<'PY'
           import json, os, sys
           from pathlib import Path
@@ -1428,7 +1439,7 @@ jobs:
               assert saved.stat().st_mode & 0o777 == 0o600
           PY
           printf 'New Eden session; log rotated\n' > "$fixture/log.txt"
-          run_ready > "$fixture/rotated.json"
+          run_ready --read-only > "$fixture/rotated.json"
           python3 - "$fixture" <<'PY'
           import json, sys
           from pathlib import Path
@@ -1444,7 +1455,7 @@ jobs:
           assert not readiness["installation_allowed"]
           assert all(not g["current_installed_build_verified"] for g in games.values())
           PY
-          run_ready --capture-build-history > "$fixture/empty.json"
+          run_ready > "$fixture/empty.json"
           python3 - "$fixture" <<'PY'
           import json, sys
           from pathlib import Path
