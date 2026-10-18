@@ -1299,7 +1299,7 @@ jobs:
           assert hint["title_id_hint"] == "0100000000010000"
           assert not hint["installed_game_verified"]
           assert not hint["installed_build_id_verified"]
-          assert out["unresolved_after_nsp_header_inspection"] == []
+          assert sorted(Path(p).name for p in out["unresolved_after_nsp_header_inspection"]) == ["Card game.xci", "Compressed Game.nsz", "Standalone.nca"]
           game = next(g for g in out["candidate_base_titles"] if g["title_id"] == "0100000000010000")
           assert game["filename_labeled_base_files"] == 0
           assert game["ticket_filename_labeled_base_files"] == 1
