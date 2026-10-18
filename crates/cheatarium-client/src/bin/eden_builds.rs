@@ -325,7 +325,6 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
     Ok(report)
 }
 
-
 #[derive(Debug, Clone)]
 pub(crate) struct MainBuildObservation {
     pub(crate) title_id: String,
@@ -364,18 +363,24 @@ pub(crate) fn read_launch_evidence(
         core_launch_contexts: report.core_launch_contexts_seen,
         main_queries: report.main_nso_patch_queries_seen,
         orphan_queries: report.main_builds_without_launch_context,
-        main: report.historical_main_build_observations.into_iter()
+        main: report
+            .historical_main_build_observations
+            .into_iter()
             .map(|record| MainBuildObservation {
                 title_id: record.title_id,
                 build_id: record.main_build_id,
                 archived_candidate: record.archived_build_candidate_found,
                 launch_context_ordinal: record.launch_context_ordinal,
-            }).collect(),
-        weak_lookup: report.direct_cheat_lookup_observations.into_iter()
+            })
+            .collect(),
+        weak_lookup: report
+            .direct_cheat_lookup_observations
+            .into_iter()
             .map(|record| WeakLookupObservation {
                 title_id: record.title_id,
                 build_id: record.build_id,
-            }).collect(),
+            })
+            .collect(),
     })
 }
 

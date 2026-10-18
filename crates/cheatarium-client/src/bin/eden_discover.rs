@@ -591,7 +591,6 @@ fn read_cached_update_displays(root: &Path, ids: &[InventoryGame]) -> Vec<Cached
     displays
 }
 
-
 #[derive(Debug, Serialize)]
 struct ObservedMainBuild {
     build_id: String,
@@ -653,67 +652,107 @@ fn build_readiness(
     }
     let mut lookups = BTreeMap::<String, BTreeSet<String>>::new();
     for hint in &log.weak_lookup {
-        lookups.entry(hint.title_id.clone())
-            .or_default().insert(hint.build_id.clone());
+        lookups
+            .entry(hint.title_id.clone())
+            .or_default()
+            .insert(hint.build_id.clone());
     }
-    let known: BTreeSet<&str> = inventory.candidate_base_titles.iter()
-        .map(|game| game.title_id.as_str()).collect();
-    let outside = by_title.keys().chain(lookups.keys())
+    let known: BTreeSet<&str> = inventory
+        .candidate_base_titles
+        .iter()
+        .map(|game| game.title_id.as_str())
+        .collect();
+    let outside = by_title
+        .keys()
+        .chain(lookups.keys())
         .filter(|id| !known.contains(id.as_str()))
-        .cloned().collect::<BTreeSet<_>>().into_iter().collect();
+        .cloned()
+        .collect::<BTreeSet<_>>()
+        .into_iter()
+        .collect();
     let mut matches = 0usize;
     let mut historical_count = 0usize;
     let mut missing = 0usize;
-    let games = inventory.candidate_base_titles.iter().map(|game| {
-        let archive: Vec<String> = report.title_id_matches.iter()
-            .find(|candidate| candidate.title_id == game.title_id)
-            .map(|candidate| candidate.archived_build_candidates.iter()
-                .map(|item| item.build_id.clone()).collect::<BTreeSet<_>>()
-                .into_iter().collect()).unwrap_or_default();
-        let main = by_title.get(&game.title_id).map(|builds|
-            builds.iter().map(|(build_id, (found, sessions))| ObservedMainBuild {
-                build_id: build_id.clone(),
-                launch_context_count: sessions.len(),
-                archived_build_candidate_found: *found,
-                historical_evidence_only: true,
-            }).collect::<Vec<_>>()
-        ).unwrap_or_default();
-        matches += main.iter().filter(|observed| observed.archived_build_candidate_found).count();
-        if main.is_empty() { missing += 1; } else { historical_count += 1; }
-        let lookup_ids: Vec<String> = lookups.get(&game.title_id)
-            .map(|set| set.iter().cloned().collect()).unwrap_or_default();
-        let evidence_state = if main.len() > 1 {
-            "multiple_historical_main_builds_ambiguous"
-        } else if main.len() == 1 && main[0].archived_build_candidate_found {
-            "historical_main_build_matches_archived_candidate"
-        } else if main.len() == 1 {
-            "historical_main_build_not_in_archive"
-        } else if !lookup_ids.is_empty() {
-            "cheat_lookup_only_no_main_build"
-        } else if !log.log_found {
-            "eden_log_missing"
-        } else {
-            "no_main_build_observed"
-        };
-        PerGameBuildReadiness {
-            title_id: game.title_id.clone(),
-            cached_title_name: report.cached_titles.iter()
-                .find(|t| t.title_id == game.title_id)
-                .and_then(|t| t.title_name.clone()),
-            in_eden_game_list_cache: game.in_eden_cache,
-            labeled_base_files: game.filename_labeled_base_files
-                + game.ticket_filename_labeled_base_files,
-            labeled_update_files: game.update_files_in_registered_folders
-                + game.ticket_filename_labeled_update_files,
-            archived_build_ids: archive,
-            historical_main_executable_builds: main,
-            weaker_cheat_lookup_build_ids: lookup_ids,
-            evidence_state,
-            current_installed_build_verified: false,
-            compatible_cheat_verified: false,
-            automatic_installation_allowed: false,
-        }
-    }).collect();
+    let games = inventory
+        .candidate_base_titles
+        .iter()
+        .map(|game| {
+            let archive: Vec<String> = report
+                .title_id_matches
+                .iter()
+                .find(|candidate| candidate.title_id == game.title_id)
+                .map(|candidate| {
+                    candidate
+                        .archived_build_candidates
+                        .iter()
+                        .map(|item| item.build_id.clone())
+                        .collect::<BTreeSet<_>>()
+                        .into_iter()
+                        .collect()
+                })
+                .unwrap_or_default();
+            let main = by_title
+                .get(&game.title_id)
+                .map(|builds| {
+                    builds
+                        .iter()
+                        .map(|(build_id, (found, sessions))| ObservedMainBuild {
+                            build_id: build_id.clone(),
+                            launch_context_count: sessions.len(),
+                            archived_build_candidate_found: *found,
+                            historical_evidence_only: true,
+                        })
+                        .collect::<Vec<_>>()
+                })
+                .unwrap_or_default();
+            matches += main
+                .iter()
+                .filter(|observed| observed.archived_build_candidate_found)
+                .count();
+            if main.is_empty() {
+                missing += 1;
+            } else {
+                historical_count += 1;
+            }
+            let lookup_ids: Vec<String> = lookups
+                .get(&game.title_id)
+                .map(|set| set.iter().cloned().collect())
+                .unwrap_or_default();
+            let evidence_state = if main.len() > 1 {
+                "multiple_historical_main_builds_ambiguous"
+            } else if main.len() == 1 && main[0].archived_build_candidate_found {
+                "historical_main_build_matches_archived_candidate"
+            } else if main.len() == 1 {
+                "historical_main_build_not_in_archive"
+            } else if !lookup_ids.is_empty() {
+                "cheat_lookup_only_no_main_build"
+            } else if !log.log_found {
+                "eden_log_missing"
+            } else {
+                "no_main_build_observed"
+            };
+            PerGameBuildReadiness {
+                title_id: game.title_id.clone(),
+                cached_title_name: report
+                    .cached_titles
+                    .iter()
+                    .find(|t| t.title_id == game.title_id)
+                    .and_then(|t| t.title_name.clone()),
+                in_eden_game_list_cache: game.in_eden_cache,
+                labeled_base_files: game.filename_labeled_base_files
+                    + game.ticket_filename_labeled_base_files,
+                labeled_update_files: game.update_files_in_registered_folders
+                    + game.ticket_filename_labeled_update_files,
+                archived_build_ids: archive,
+                historical_main_executable_builds: main,
+                weaker_cheat_lookup_build_ids: lookup_ids,
+                evidence_state,
+                current_installed_build_verified: false,
+                compatible_cheat_verified: false,
+                automatic_installation_allowed: false,
+            }
+        })
+        .collect();
     BuildReadiness {
         schema_version: 1,
         read_only: true,
@@ -1677,7 +1716,8 @@ fn run() -> Result<(), ErrBox> {
             let mut audit = run_registered_files_audit(summary, &report);
             if with_readiness {
                 let evidence = eden_builds::read_launch_evidence(&build_log, &index)?;
-                audit.inventory.build_readiness = Some(build_readiness(&audit.inventory, &report, &evidence));
+                audit.inventory.build_readiness =
+                    Some(build_readiness(&audit.inventory, &report, &evidence));
             }
             println!("{}", serde_json::to_string_pretty(&audit)?);
         } else {
