@@ -56,10 +56,14 @@ fn section(ini: &str) -> String {
     let mut section_lines = Vec::new();
     for line in ini.lines() {
         if line.trim().starts_with('[') && line.trim().ends_with(']') {
-            if in_disabled { break; }
+            if in_disabled {
+                break;
+            }
             in_disabled = line.trim().eq_ignore_ascii_case("[DisabledAddOns]");
         }
-        if in_disabled { section_lines.push(line.to_owned()); }
+        if in_disabled {
+            section_lines.push(line.to_owned());
+        }
     }
     section_lines.join("\n")
 }
@@ -90,14 +94,23 @@ pub(super) fn analyze<'a>(
             false
         };
         for (entry, bytes) in prepared {
-            let code = plan.proposed_addons.iter()
-                .find(|code| code.source_record_id == entry.source_record_id
-                    && code.source_ordinal == entry.source_ordinal)
+            let code = plan
+                .proposed_addons
+                .iter()
+                .find(|code| {
+                    code.source_record_id == entry.source_record_id
+                        && code.source_ordinal == entry.source_ordinal
+                })
                 .ok_or("Planned cheat lost its source identity")?;
             let relative = Path::new(&entry.relative_path);
             let destination = mods_root.join(relative);
-            let addon = relative.components().nth(1)
-                .ok_or("Missing planned addon directory")?.as_os_str().to_string_lossy().into_owned();
+            let addon = relative
+                .components()
+                .nth(1)
+                .ok_or("Missing planned addon directory")?
+                .as_os_str()
+                .to_string_lossy()
+                .into_owned();
             let addon_path = mods_root.join(&plan.title_id).join(&addon);
             let status = if unchanged {
                 already += 1;
@@ -110,7 +123,10 @@ pub(super) fn analyze<'a>(
                     }
                     Err(err) if err.kind() == ErrorKind::NotFound => {
                         will_create += 1;
-                        to_disable.entry(plan.title_id.clone()).or_default().push(addon);
+                        to_disable
+                            .entry(plan.title_id.clone())
+                            .or_default()
+                            .push(addon);
                         "would_create_disabled"
                     }
                     Err(_) => {
@@ -129,7 +145,7 @@ pub(super) fn analyze<'a>(
                 byte_count: bytes.len(),
                 sha256: sha(&bytes),
                 exact_proposed_contents: String::from_utf8(bytes)?,
-                status
+                status,
             });
         }
     }
@@ -143,7 +159,11 @@ pub(super) fn analyze<'a>(
         issue: None,
     };
     match fs::symlink_metadata(config) {
-        Ok(meta) if meta.is_file() && !meta.file_type().is_symlink() && meta.len() <= 8*1024*1024 => {
+        Ok(meta)
+            if meta.is_file()
+                && !meta.file_type().is_symlink()
+                && meta.len() <= 8 * 1024 * 1024 =>
+        {
             let current = fs::read_to_string(config)?;
             settings.current_config_sha256 = Some(sha(current.as_bytes()));
             let mut proposed = current.clone();
@@ -151,7 +171,9 @@ pub(super) fn analyze<'a>(
                 match eden_install::disabled_config(&proposed, title, names) {
                     Ok(next) => proposed = next,
                     Err(err) => {
-                        settings.issue = Some(format!("Eden settings invalid; installation blocked: {err}"));
+                        settings.issue = Some(format!(
+                            "Eden settings invalid; installation blocked: {err}"
+                        ));
                         break;
                     }
                 }
@@ -162,8 +184,16 @@ pub(super) fn analyze<'a>(
                 settings.proposed_disabled_settings_section = Some(section(&proposed));
             }
         }
-        Ok(_) => settings.issue = Some("Eden settings are symlinked, oversized or nonregular; installation blocked".into()),
-        Err(err) => settings.issue = Some(format!("Eden config unavailable; installation blocked: {err}")),
+        Ok(_) => {
+            settings.issue = Some(
+                "Eden settings are symlinked, oversized or nonregular; installation blocked".into(),
+            )
+        }
+        Err(err) => {
+            settings.issue = Some(format!(
+                "Eden config unavailable; installation blocked: {err}"
+            ))
+        }
     }
     Ok(DryRunReport {
         format: "cheatarium-eden-detailed-dry-run-v1",
@@ -194,45 +224,83 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         report.discovery.scanned_directories).unwrap();
     for game in &report.discovery.games {
         writeln!(out, "\nGAME: {} [{}]", game.display_name, game.title_id).unwrap();
-        writeln!(out, "  Name source: {}; discovery: {}",
-            game.name_evidence, game.discovery_evidence.join(", ")).unwrap();
+        writeln!(
+            out,
+            "  Name source: {}; discovery: {}",
+            game.name_evidence,
+            game.discovery_evidence.join(", ")
+        )
+        .unwrap();
         if let Some(path) = &game.sample_game_file {
             writeln!(out, "  ROM filename witness: {path}").unwrap();
         }
-        let plans: Vec<_> = report.source_plans.iter()
-            .filter(|p| p.title_id == game.title_id).collect();
+        let plans: Vec<_> = report
+            .source_plans
+            .iter()
+            .filter(|p| p.title_id == game.title_id)
+            .collect();
         if plans.is_empty() {
             writeln!(out, "  Archived cheats: NONE eligible for installation").unwrap();
         }
         for plan in plans {
-            writeln!(out, "  ARCHIVED BUILD: {} (not verified as installed)",
-                plan.explicitly_selected_build_id).unwrap();
-            for file in report.files.iter().filter(|f| f.title_id == game.title_id
-                && f.build_id == plan.explicitly_selected_build_id) {
+            writeln!(
+                out,
+                "  ARCHIVED BUILD: {} (not verified as installed)",
+                plan.explicitly_selected_build_id
+            )
+            .unwrap();
+            for file in report.files.iter().filter(|f| {
+                f.title_id == game.title_id && f.build_id == plan.explicitly_selected_build_id
+            }) {
                 writeln!(out, "    CHEAT: {}", file.cheat_name).unwrap();
                 writeln!(out, "    SOURCE: {}", file.source_archive_path).unwrap();
                 writeln!(out, "    WOULD WRITE: {}", file.destination).unwrap();
-                writeln!(out, "    STATUS: {} | bytes: {} | SHA256: {}",
-                    file.status, file.byte_count, file.sha256).unwrap();
-                writeln!(out, "    EXACT CONTENTS:\n{}", file.exact_proposed_contents.trim_end()).unwrap();
+                writeln!(
+                    out,
+                    "    STATUS: {} | bytes: {} | SHA256: {}",
+                    file.status, file.byte_count, file.sha256
+                )
+                .unwrap();
+                writeln!(
+                    out,
+                    "    EXACT CONTENTS:\n{}",
+                    file.exact_proposed_contents.trim_end()
+                )
+                .unwrap();
             }
         }
     }
     for skipped in report.skipped {
-        writeln!(out, "\nSKIPPED: {} / {} — {}", skipped.title_id,
-            skipped.build_id.as_deref().unwrap_or("no archived build"), skipped.reason).unwrap();
+        writeln!(
+            out,
+            "\nSKIPPED: {} / {} — {}",
+            skipped.title_id,
+            skipped.build_id.as_deref().unwrap_or("no archived build"),
+            skipped.reason
+        )
+        .unwrap();
     }
     writeln!(out, "\nEDEN SETTINGS: {}", report.settings.config_path).unwrap();
-    writeln!(out, "Would change config: {}", report.settings.would_update_config).unwrap();
+    writeln!(
+        out,
+        "Would change config: {}",
+        report.settings.would_update_config
+    )
+    .unwrap();
     if let Some(err) = &report.settings.issue {
         writeln!(out, "SETTINGS PROBLEM: {err}").unwrap();
     }
     if let Some(changes) = &report.settings.proposed_disabled_settings_section {
         writeln!(out, "PROPOSED [DisabledAddOns] SECTION:\n{changes}").unwrap();
     }
-    writeln!(out, "\nTOTAL: {} files would be created, {} already installed, {} blocked by collisions",
-        report.would_create_file_count, report.already_installed_file_count,
-        report.collision_file_count).unwrap();
+    writeln!(
+        out,
+        "\nTOTAL: {} files would be created, {} already installed, {} blocked by collisions",
+        report.would_create_file_count,
+        report.already_installed_file_count,
+        report.collision_file_count
+    )
+    .unwrap();
     writeln!(out, "{}", report.caveat).unwrap();
     out
 }

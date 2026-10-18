@@ -652,7 +652,10 @@ fn run() -> Result<(), ErrBox> {
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
             "--auto" => auto = true,
-            "--dry-run" => { dry_run = true; auto = true; },
+            "--dry-run" => {
+                dry_run = true;
+                auto = true;
+            }
             "--report" => human_report = true,
             "--cache-dir" => {
                 cache_dir = PathBuf::from(args.next().ok_or("--cache-dir requires a path")?)

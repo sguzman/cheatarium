@@ -199,7 +199,8 @@ pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox>
             if name.ends_with(".appname.txt") && meta.len() <= 4096 {
                 if let Ok(value) = fs::read_to_string(entry.path()) {
                     let name = value.trim_matches('\0').trim();
-                    if !name.is_empty() && name.len() <= 240 && !name.chars().any(char::is_control) {
+                    if !name.is_empty() && name.len() <= 240 && !name.chars().any(char::is_control)
+                    {
                         names.insert(id, (name.to_owned(), "eden_appname_cache"));
                     }
                 }
@@ -277,12 +278,22 @@ pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox>
                 let name = entry.file_name().to_string_lossy().into_owned();
                 if let Some(id) = labeled_title(&name) {
                     filename_ids.insert(id.clone());
-                    file_examples.entry(id.clone())
+                    file_examples
+                        .entry(id.clone())
                         .or_insert_with(|| entry.path().to_string_lossy().into_owned());
                     if !names.contains_key(&id) {
-                        let label = name.split('[').next().unwrap_or("").trim()
-                            .trim_end_matches(".nsp").trim_end_matches(".xci").trim();
-                        if !label.is_empty() && label.len() <= 180 && !label.chars().any(char::is_control) {
+                        let label = name
+                            .split('[')
+                            .next()
+                            .unwrap_or("")
+                            .trim()
+                            .trim_end_matches(".nsp")
+                            .trim_end_matches(".xci")
+                            .trim();
+                        if !label.is_empty()
+                            && label.len() <= 180
+                            && !label.chars().any(char::is_control)
+                        {
                             names.insert(id, (label.to_owned(), "rom_filename_label"));
                         }
                     }
@@ -295,18 +306,31 @@ pub(super) fn discover(config: &Path, cache: &Path) -> Result<Discovery, ErrBox>
         return Err("Too many discovered Eden base Title IDs".into());
     }
     out.titles = ids.into_iter().collect();
-    out.games = out.titles.iter().map(|id| {
-        let (display_name, name_evidence) = names.get(id)
-            .cloned().unwrap_or((id.clone(), "no_title_name_available"));
-        let mut discovery_evidence = Vec::new();
-        if cache_ids.contains(id) { discovery_evidence.push("eden_game_list_cache"); }
-        if filename_ids.contains(id) { discovery_evidence.push("rom_filename_title_id"); }
-        DiscoveredGame {
-            title_id: id.clone(), display_name, name_evidence,
-            discovery_evidence, sample_game_file: file_examples.get(id).cloned(),
-            executable_build_id_verified: false,
-        }
-    }).collect();
+    out.games = out
+        .titles
+        .iter()
+        .map(|id| {
+            let (display_name, name_evidence) = names
+                .get(id)
+                .cloned()
+                .unwrap_or((id.clone(), "no_title_name_available"));
+            let mut discovery_evidence = Vec::new();
+            if cache_ids.contains(id) {
+                discovery_evidence.push("eden_game_list_cache");
+            }
+            if filename_ids.contains(id) {
+                discovery_evidence.push("rom_filename_title_id");
+            }
+            DiscoveredGame {
+                title_id: id.clone(),
+                display_name,
+                name_evidence,
+                discovery_evidence,
+                sample_game_file: file_examples.get(id).cloned(),
+                executable_build_id_verified: false,
+            }
+        })
+        .collect();
     out.cache_titles = cache_ids.len();
     out.filename_titles = filename_ids.len();
     Ok(out)
