@@ -605,7 +605,10 @@ fn run_automatic(
     cache_dir: &Path,
     mod_root: &Path,
     installing: bool,
-    historical_main_only: Option<(&eden_builds::LaunchEvidence, &eden_builds::eden_history::History)>,
+    historical_main_only: Option<(
+        &eden_builds::LaunchEvidence,
+        &eden_builds::eden_history::History,
+    )>,
 ) -> Result<AutomaticReport, ErrBox> {
     let discovery = eden_auto::discover(config, cache_dir)?;
     if discovery.titles.is_empty() {
@@ -820,7 +823,8 @@ fn run() -> Result<(), ErrBox> {
         )?;
         if dry_run {
             let evidence = evidence.as_ref().ok_or("Missing read-only Eden evidence")?;
-            let (history, history_found) = history.as_ref().ok_or("Missing read-only saved history")?;
+            let (history, history_found) =
+                history.as_ref().ok_or("Missing read-only saved history")?;
             let detailed = eden_dry_run::analyze(
                 &report,
                 &bundle,
@@ -957,7 +961,10 @@ mod tests {
         });
         let (selected, skipped) = single_historical_main_pairs(pairs, &[], &history);
         assert!(selected.is_empty());
-        assert_eq!(skipped[0].reason, "multiple_historical_main_builds_ambiguous");
+        assert_eq!(
+            skipped[0].reason,
+            "multiple_historical_main_builds_ambiguous"
+        );
     }
 
     fn fixture() -> Bundle {

@@ -273,8 +273,7 @@ pub(super) fn analyze<'a>(
         }
         saved_historical_main_builds.push(HistoricalBuildMatch {
             archived_cheat_candidate_in_plan: report.planned.iter().any(|plan| {
-                plan.title_id == item.title_id
-                    && plan.explicitly_selected_build_id == item.build_id
+                plan.title_id == item.title_id && plan.explicitly_selected_build_id == item.build_id
             }),
             title_id: item.title_id.clone(),
             build_id: item.build_id.clone(),
@@ -352,8 +351,12 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         "SAVED MAIN BUILD HISTORY: {} (found: {}; saved main records: {})",
         report.main_build_evidence.saved_history_path,
         report.main_build_evidence.saved_history_found,
-        report.main_build_evidence.saved_historical_main_builds.len(),
-    ).unwrap();
+        report
+            .main_build_evidence
+            .saved_historical_main_builds
+            .len(),
+    )
+    .unwrap();
     writeln!(out, "{}", report.main_build_evidence.warning).unwrap();
     for game in &report.discovery.games {
         writeln!(out, "\nGAME: {} [{}]", game.display_name, game.title_id).unwrap();
@@ -406,9 +409,11 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
             .filter(|p| p.title_id == game.title_id)
             .collect();
         if plans.is_empty() {
-            if report.skipped.iter().any(|skip| {
-                skip.title_id == game.title_id && skip.build_id.is_some()
-            }) {
+            if report
+                .skipped
+                .iter()
+                .any(|skip| skip.title_id == game.title_id && skip.build_id.is_some())
+            {
                 writeln!(out, "  Archived cheats: candidates exist, but NONE selected under this evidence policy").unwrap();
             } else {
                 writeln!(out, "  Archived cheats: NONE eligible for installation").unwrap();

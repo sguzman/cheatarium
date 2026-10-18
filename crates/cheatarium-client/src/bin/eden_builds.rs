@@ -198,11 +198,11 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
         if let Some(witness) = direct_cheat_lookup(line) {
             out.cheat_lookup_witness.insert(witness);
         }
-        let announced = title_after(line, "Booting game: ")
-            .or_else(|| title_after(line, "Now running: "));
+        let announced =
+            title_after(line, "Booting game: ").or_else(|| title_after(line, "Now running: "));
         if let Some(title) = loading.clone().or(announced) {
-            let new_launch = loading.is_some()
-                || active.as_ref().is_none_or(|(prior, _)| prior != &title);
+            let new_launch =
+                loading.is_some() || active.as_ref().is_none_or(|(prior, _)| prior != &title);
             if new_launch {
                 launch_ordinal += 1;
                 active = Some((title.clone(), launch_ordinal));
@@ -225,9 +225,10 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
 
     let mut seen = BTreeSet::new();
     for (line_index, build_id, original_length) in queries {
-        let previous = launches.iter().rev().find(|(at, _, _, _)| {
-            *at <= line_index && line_index - *at <= MAX_CONTEXT_LINES
-        });
+        let previous = launches
+            .iter()
+            .rev()
+            .find(|(at, _, _, _)| *at <= line_index && line_index - *at <= MAX_CONTEXT_LINES);
         let upcoming = launches.iter().find(|(at, _, _, canonical)| {
             *canonical && *at > line_index && *at - line_index <= MAX_PRELOAD_LINES
         });
