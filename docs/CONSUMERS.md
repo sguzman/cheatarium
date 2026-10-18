@@ -341,17 +341,21 @@ The writer requires at least one exact archived Sharkive source record for the s
 **Staged cheats are not installed or active.** Isolated staging never modifies Eden, while the separate `--install` option performs installation with per-addon disabled-by-default configuration. No rights-unresolved metadata-only external source is materialized.
 
 
-### Direct on-demand installation into Eden
+### Direct on-demand installation into Eden (no IDs to look up)
 
-**Close Eden completely**, then invoke the same CLI with `--install` and an explicit Title ID and Build ID:
+**Close Eden completely**, then run the normal CLI **without** any Title ID or Build ID arguments:
 
 ```sh
-cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 --install --json
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --install --json
 ```
 
-The command chooses only original archived Sharkive sections associated with **that exact pair**, validates native text shape, and installs individually named mods at `~/.local/share/eden/load/<TITLEID>/Cheatarium-.../cheats/<BUILDID>.txt`. Before creating those directories it atomically updates Eden's `~/.config/eden/qt-config.ini` `[DisabledAddOns]` section, preserving existing disabled add-ons and unrelated settings. **All newly installed Cheatarium mods start disabled**; enable desired individual cheats from Eden's per-game add-on controls. An existing mod directory, malformed disabled-settings array, symlink redirection, or missing/nonregular destination causes a refusal, never an overwrite. The installer also refuses to run while an Eden process is detected on Linux. Portable installations may explicitly set `--config` and `--mods-root` to their actual paths; `--install` and `--stage-dir` cannot be combined.
+`--install` with no IDs automatically reads Eden's `qt-config.ini` registered game directories (recursively when enabled) and its `game_list` cache. It identifies candidate **base-game** Title IDs from known file labels and existing cache file names; update and DLC labels are not mistaken for base games. It then finds **all available archived Sharkive Build ID variants** for those titles. The user does not need to identify the executable Build ID: each code file is installed under its own archival Build ID-specific filename; **Eden will look up only the matching Build ID filename** for the executable it actually starts. The installer does **not** claim an archival Build ID matches the running version.
 
-**Limit:** The explicit Build ID is selected by the caller. Cheatarium does **not** prove that this is the Build ID Eden will execute, nor that cheats are functionally compatible. If an I/O failure occurs after Eden's settings are updated, some add-ons might be partially created but remain disabled. The tool never changes ROMs or saves, enables cheats automatically, or overwrites previously installed mods. The default without `--install` or `--stage-dir` remains a read-only preview.
+All newly installed per-cheat add-ons are **disabled by default**. Cheatarium writes the relevant `[DisabledAddOns]` settings in `~/.config/eden/qt-config.ini` before publishing their cheat files under `~/.local/share/eden/load/<TITLEID>/Cheatarium-.../cheats/<BUILDID>.txt`. Existing add-ons and unrelated Eden settings are preserved, with no overwrites. Repeated automatic runs recognize exact unchanged Cheatarium files that remain disabled and skip them; a collision with a different file is refused. Missing archive coverage or invalid source text is listed in the report rather than guessed or silently installed. Eden must be fully closed while installing.
+
+To **preview automatically without writing anything**, use `--auto` without `--install`. Portable setups may specify `--config`, `--cache-dir`, or `--mods-root` to match Eden's locations. The older manual `--title-id TITLE --build-id BUILD --install` remains optional and is **not required for normal use**. `--stage-dir` is the separately selected isolated staging mode.
+
+Cheat compatibility and the current installed executable Build ID remain unverified. The command writes no ROMs, saves, or encryption keys, and does not activate any cheats by itself. A partial I/O failure can leave some disabled add-ons on disk. After installing, individual cheats can be enabled from Eden's per-game add-on controls.
 
 ## Eden historical main Build ID observations (read-only)
 
