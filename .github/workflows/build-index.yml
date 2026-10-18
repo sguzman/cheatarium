@@ -1099,6 +1099,8 @@ jobs:
           [  1.12] Frontend <Info> main_window.cpp:2042: Booting game: 0100000000010000 | Super Mario Odyssey | 1.0
           [  3.00] Core <Info> core/core.cpp:Load:351: Loading Mario Kart 8 Deluxe (0100152000022000) ...
           [  3.10] Loader <Info> core/file_sys/patch_manager.cpp:475: Querying NSO patch existence for build_id=96DFD1769E560C270000000000000000, name=main
+          [  3.20] Common.Filesystem <Info> patch_manager.cpp:93: No cheats file found for title_id=0100152000022000, build_id=96DFD1769E560C27
+          [  3.21] Common.Filesystem <Info> patch_manager.cpp:93: No cheats file found for title_id=0100152000022000, build_id=96DFD1769E560C27
           LOG
           cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-builds -- \
             --db generated/v1 --log "$fixture/eden_log.txt" --json > "$fixture/result.json"
@@ -1111,6 +1113,16 @@ jobs:
           assert x["emulator_files_written"] == 0 and x["game_file_bytes_read"] == 0
           assert not x["installation_allowed"]
           assert x["main_builds_without_launch_context"] == 0
+          assert x["core_launch_contexts_seen"] == 2
+          assert x["main_nso_patch_queries_seen"] == 2
+          assert x["log_has_main_executable_build_evidence"]
+          assert len(x["direct_cheat_lookup_observations"]) == 1
+          lookup = x["direct_cheat_lookup_observations"][0]
+          assert lookup["title_id"] == "0100152000022000"
+          assert lookup["build_id"] == "96DFD1769E560C27"
+          assert lookup["archived_build_candidate_found"]
+          assert not lookup["main_executable_build_verified"]
+          assert not lookup["current_installed_build_verified"]
           found = {(w["title_id"], w["main_build_id"]): w for w in x["historical_main_build_observations"]}
           assert len(found) == 2
           for title, build in [
