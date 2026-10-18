@@ -1137,6 +1137,7 @@ fn run() -> Result<(), ErrBox> {
             summary.inspected_nsp_file_bytes_read =
                 summary.unresolved_nsp_header_inspections.iter()
                     .map(|entry| entry.bytes_read).sum();
+            summary.game_file_bytes_read = summary.inspected_nsp_file_bytes_read as u32;
         }
         println!("{}", serde_json::to_string_pretty(&summary)?);
     } else {
