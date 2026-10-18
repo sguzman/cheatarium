@@ -2,6 +2,11 @@
 //! A log-derived build is historical evidence, not proof of the current game installation.
 use cheatarium_client::{load_game_candidates, verify_platform_distribution, GameIndex};
 use serde::Serialize;
+use sha2::{Digest, Sha256};
+
+#[path = "eden_history.rs"]
+#[allow(dead_code)]
+pub(crate) mod eden_history;
 use std::collections::{BTreeMap, BTreeSet};
 use std::env;
 use std::error::Error;
@@ -35,6 +40,7 @@ struct Report {
     log_path: String,
     log_found: bool,
     log_bytes_read: usize,
+    log_sha256: Option<String>,
     historical_main_build_observations: Vec<ObservedBuild>,
     observed_title_ids: usize,
     multiple_builds_for_same_title: Vec<String>,
@@ -245,6 +251,7 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
         log_path: path.to_string_lossy().into_owned(),
         log_found: metadata.is_ok(),
         log_bytes_read: 0,
+        log_sha256: None,
         historical_main_build_observations: Vec::new(),
         observed_title_ids: 0,
         multiple_builds_for_same_title: Vec::new(),
@@ -279,6 +286,7 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
         return Err("Eden log changed during read and exceeded size limit".into());
     }
     report.log_bytes_read = bytes.len();
+    report.log_sha256 = Some(format!("{:x}", Sha256::digest(&bytes)));
     let log = std::str::from_utf8(&bytes)?;
     let parsed = parse_log(log)?;
     report.main_builds_without_launch_context = parsed.orphan_main_builds;
@@ -343,6 +351,7 @@ pub(crate) struct WeakLookupObservation {
 pub(crate) struct LaunchEvidence {
     pub(crate) log_found: bool,
     pub(crate) log_bytes_read: usize,
+    pub(crate) log_sha256: Option<String>,
     pub(crate) core_launch_contexts: usize,
     pub(crate) main_queries: usize,
     pub(crate) orphan_queries: usize,
@@ -360,6 +369,7 @@ pub(crate) fn read_launch_evidence(
     Ok(LaunchEvidence {
         log_found: report.log_found,
         log_bytes_read: report.log_bytes_read,
+        log_sha256: report.log_sha256,
         core_launch_contexts: report.core_launch_contexts_seen,
         main_queries: report.main_nso_patch_queries_seen,
         orphan_queries: report.main_builds_without_launch_context,
