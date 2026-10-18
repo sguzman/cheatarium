@@ -1166,10 +1166,15 @@ jobs:
           printf 'Update (1.7.0)\n' > "$fixture/cache/0100152000022000.pv.txt"
           touch "$fixture/cache/01002DA013484000.pv.txt"
           printf '[UI]\nPaths\\gamedirs\\size=1\nPaths\\gamedirs\\1\\path=%s\nPaths\\gamedirs\\1\\deep_scan=true\n' "$fixture/roms" > "$fixture/config/qt-config.ini"
+          cat > "$fixture/eden_log.txt" <<'LOG'
+          [  1.00] Core <Info> core/core.cpp:Load:351: Loading Super Mario Odyssey (0100000000010000) ...
+          [  1.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=B424BE150A8E7D780000000000000000, name=main
+          LOG
           run_auto() {
             cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- \
               --db generated/v1 --config "$fixture/config/qt-config.ini" \
-              --cache-dir "$fixture/cache" --mods-root "$fixture/eden/load" "$@" --json
+              --cache-dir "$fixture/cache" --mods-root "$fixture/eden/load" \
+              --log "$fixture/eden_log.txt" "$@" --json
           }
           cp "$fixture/config/qt-config.ini" "$fixture/config-before-dry-run.ini"
           run_auto --dry-run > "$fixture/dry-run.json"
@@ -1184,6 +1189,16 @@ jobs:
           assert d["format"]=="cheatarium-eden-detailed-dry-run-v1"
           assert d["read_only"] and d["emulator_files_written"]==0
           assert d["state_files_written"]==0
+          evidence=d["main_build_evidence"]
+          assert evidence["log_found"]
+          assert evidence["all_games_current_build_verified"] is False
+          assert any(
+              item["title_id"]=="0100000000010000"
+              and item["build_id"]=="B424BE150A8E7D78"
+              and item["archived_cheat_candidate_in_plan"]
+              and not item["current_installed_build_verified"]
+              for item in evidence["historical_main_builds"]
+          )
           names={g["title_id"]:g for g in d["discovery"]["games"]}
           assert names["0100000000010000"]["display_name"]=="Super Mario Odyssey"
           assert "01006A8000161001" not in names
@@ -1204,6 +1219,8 @@ jobs:
           assert "NO FILES WRITTEN" in report
           assert "Super Mario Odyssey" in report
           assert "EXACT CONTENTS" in report
+          assert "HISTORICAL MAIN BUILD: B424BE150A8E7D78" in report
+          assert "historically observed main NSO; NOT verified current" in report
           assert "PROPOSED [DisabledAddOns]" in report
           PY
           run_auto --auto > "$fixture/preview.json"
