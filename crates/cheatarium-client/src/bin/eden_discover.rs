@@ -181,7 +181,7 @@ fn saved_disabled_addons(contents: &str) -> Vec<SavedDisabledAddons> {
         if idx == 0 || idx > 1000 { continue; }
         let value = val.trim();
         match fields.as_slice() {
-            [_, &"title_id"] => {
+            [_, "title_id"] => {
                 let raw = if let Some(hex) = value.strip_prefix("0x").or_else(|| value.strip_prefix("0X")) {
                     u64::from_str_radix(hex, 16).ok()
                 } else {
@@ -191,7 +191,7 @@ fn saved_disabled_addons(contents: &str) -> Vec<SavedDisabledAddons> {
                     entries.entry(idx).or_default().0 = Some(raw);
                 }
             }
-            [_, &"disabled", sub, &"d"] => {
+            [_, "disabled", sub, "d"] => {
                 let Ok(sub) = sub.parse::<usize>() else { continue };
                 if sub == 0 || sub > 1000 || value.is_empty() || value.len() > 180
                     || value.chars().any(char::is_control)
