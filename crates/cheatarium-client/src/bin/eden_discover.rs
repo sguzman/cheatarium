@@ -737,7 +737,6 @@ fn summarize_report(report: &Report) -> InventorySummary {
     }
 }
 
-
 #[derive(Debug, Serialize)]
 struct AuditedGameFile {
     path: String,
@@ -776,14 +775,20 @@ struct RegisteredFilesAudit {
 /// Reading this magic cannot identify which game/build is inside.
 fn inspect_xci_magic(path: &str) -> (&'static str, usize) {
     let path = Path::new(path);
-    let Ok(meta) = fs::symlink_metadata(path) else { return ("unavailable", 0) };
+    let Ok(meta) = fs::symlink_metadata(path) else {
+        return ("unavailable", 0);
+    };
     if !meta.is_file() || meta.file_type().is_symlink() {
         return ("not_a_regular_file", 0);
     }
-    let Ok(mut file) = fs::File::open(path) else { return ("unavailable", 0) };
+    let Ok(mut file) = fs::File::open(path) else {
+        return ("unavailable", 0);
+    };
     let mut bytes_read = 0;
     for offset in [0x100u64, 0x1100u64] {
-        if meta.len() < offset + 4 { continue; }
+        if meta.len() < offset + 4 {
+            continue;
+        }
         if file.seek(SeekFrom::Start(offset)).is_err() {
             return ("read_error", bytes_read);
         }
@@ -793,11 +798,14 @@ fn inspect_xci_magic(path: &str) -> (&'static str, usize) {
         }
         bytes_read += 4;
         if &magic == b"HEAD" {
-            return (if offset == 0x100 {
-                "xci_gamecard_header_magic_only"
-            } else {
-                "xci_gamecard_header_after_key_area_magic_only"
-            }, bytes_read);
+            return (
+                if offset == 0x100 {
+                    "xci_gamecard_header_magic_only"
+                } else {
+                    "xci_gamecard_header_after_key_area_magic_only"
+                },
+                bytes_read,
+            );
         }
     }
     ("invalid_xci_gamecard_magic", bytes_read)
@@ -856,9 +864,16 @@ fn run_registered_files_audit(
                 record.ticket_filename_title_id_candidates.as_slice(),
             ) {
                 (Some(a), [b]) if a == b => "exact_same_title_id_hint",
-                (Some(a), [b]) if base_for_update_label(a).as_deref() == Some(b)
-                    || base_for_update_label(b).as_deref() == Some(a) => "same_base_update_family",
-                (Some(_), [_]) => { conflicts += 1; "conflicting_single_title_id_hint" },
+                (Some(a), [b])
+                    if base_for_update_label(a).as_deref() == Some(b)
+                        || base_for_update_label(b).as_deref() == Some(a) =>
+                {
+                    "same_base_update_family"
+                }
+                (Some(_), [_]) => {
+                    conflicts += 1;
+                    "conflicting_single_title_id_hint"
+                }
                 (_, []) => "no_ticket_title_hint",
                 (_, [_]) => "ticket_title_hint_only",
                 (_, _) => "multiple_ticket_title_hints_ambiguous",
@@ -1087,7 +1102,10 @@ fn scan_root(
                 stats.traversal_limit_reached = true;
                 return Err("Eden game-file count limit reached".into());
             }
-            *stats.matched_game_file_types.entry(file_type.clone()).or_default() += 1;
+            *stats
+                .matched_game_file_types
+                .entry(file_type.clone())
+                .or_default() += 1;
             let filename = entry.file_name().to_string_lossy().into_owned();
             let id = title_id_in_filename(&filename);
             out.push(LibraryFile {
@@ -1369,7 +1387,12 @@ fn run() -> Result<(), ErrBox> {
             Err(_) => "unavailable",
         };
         if status == "scanned" {
-            if let Err(e) = scan_root(&root, deep_scan, &mut report.game_files, &mut report.scan_statistics) {
+            if let Err(e) = scan_root(
+                &root,
+                deep_scan,
+                &mut report.game_files,
+                &mut report.scan_statistics,
+            ) {
                 report.warnings.push(format!(
                     "directory_scan_incomplete: {}: {e}",
                     root.display()
@@ -1871,12 +1894,12 @@ volume=100
         fs::remove_file(p).unwrap();
     }
 
-
     #[test]
     fn deep_directory_inventory_counts_unknown_and_symlinked_entries() {
         let work = env::temp_dir().join(format!(
             "cheatarium-deep-audit-{}-{:?}",
-            std::process::id(), std::thread::current().id()
+            std::process::id(),
+            std::thread::current().id()
         ));
         let mut deep = work.clone();
         for n in 0..8 {
@@ -1889,7 +1912,8 @@ volume=100
         std::os::unix::fs::symlink(
             deep.join("Deep Game [0100000000010000].nsp"),
             deep.join("skip-linked.nsp"),
-        ).unwrap();
+        )
+        .unwrap();
         let mut files = Vec::new();
         let mut stats = ScanStatistics::default();
         scan_root(&work, true, &mut files, &mut stats).unwrap();
@@ -1908,42 +1932,62 @@ volume=100
     fn audits_every_discovered_game_file_and_records_unsupported_formats() {
         let work = env::temp_dir().join(format!(
             "cheatarium-all-file-audit-{}-{:?}",
-            std::process::id(), std::thread::current().id()
+            std::process::id(),
+            std::thread::current().id()
         ));
         fs::create_dir_all(&work).unwrap();
         let nsp = work.join("Game [0100000000010000].nsp");
-        write_synthetic_nsp(&nsp, &[
-            ("0100000000010000abcdef1234567890.tik", b"no ticket parsing"),
-            ("ff.cnmt.nca", b"no encrypted content parsing"),
-        ]);
+        write_synthetic_nsp(
+            &nsp,
+            &[
+                ("0100000000010000abcdef1234567890.tik", b"no ticket parsing"),
+                ("ff.cnmt.nca", b"no encrypted content parsing"),
+            ],
+        );
         let xci = work.join("Game [0100000000010000].xci");
         let mut image = vec![0u8; 0x220];
         image[0x100..0x104].copy_from_slice(b"HEAD");
         fs::write(&xci, &image).unwrap();
         let other = work.join("Compressed game [0100000000010000].nsz");
         fs::write(&other, b"compressed placeholder").unwrap();
-        let files = ["nsp", "xci", "nsz"].into_iter().map(|ext| {
-            let p = match ext { "nsp" => &nsp, "xci" => &xci, _ => &other };
-            LibraryFile {
-                path: p.to_string_lossy().into_owned(),
-                title_id: Some("0100000000010000".into()),
-                title_id_evidence: "filename_label_only",
-                file_type: ext.into(),
-            }
-        }).collect::<Vec<_>>();
+        let files = ["nsp", "xci", "nsz"]
+            .into_iter()
+            .map(|ext| {
+                let p = match ext {
+                    "nsp" => &nsp,
+                    "xci" => &xci,
+                    _ => &other,
+                };
+                LibraryFile {
+                    path: p.to_string_lossy().into_owned(),
+                    title_id: Some("0100000000010000".into()),
+                    title_id_evidence: "filename_label_only",
+                    file_type: ext.into(),
+                }
+            })
+            .collect::<Vec<_>>();
         let report = Report {
-            schema_version: 1, format: "test", read_only: true,
-            game_file_bytes_read: 0, emulator_files_written: 0,
-            config_path: String::new(), config_found: false,
-            cache_dir: String::new(), cache_found: false,
-            cached_titles: Vec::new(), game_roots: vec![GameRoot {
+            schema_version: 1,
+            format: "test",
+            read_only: true,
+            game_file_bytes_read: 0,
+            emulator_files_written: 0,
+            config_path: String::new(),
+            config_found: false,
+            cache_dir: String::new(),
+            cache_found: false,
+            cached_titles: Vec::new(),
+            game_roots: vec![GameRoot {
                 path: work.to_string_lossy().into_owned(),
-                deep_scan: true, status: "scanned",
+                deep_scan: true,
+                status: "scanned",
             }],
-            game_files: files, title_id_matches: Vec::new(),
+            game_files: files,
+            title_id_matches: Vec::new(),
             unresolved_game_files: 0,
             scan_statistics: ScanStatistics::default(),
-            limitations: Vec::new(), warnings: Vec::new(),
+            limitations: Vec::new(),
+            warnings: Vec::new(),
         };
         let output = run_registered_files_audit(summarize_report(&report), &report);
         assert_eq!(output.audit_file_count, 3);
@@ -1953,15 +1997,29 @@ volume=100
         assert!(!output.budget_exhausted);
         assert_eq!(output.filename_ticket_conflicts, 0);
         assert_eq!(output.files[0].header_status, "outer_pfs0_metadata_only");
-        assert_eq!(output.files[0].filename_ticket_relation, "exact_same_title_id_hint");
-        assert_eq!(output.files[1].header_status, "xci_gamecard_header_magic_only");
-        assert_eq!(output.files[2].header_status, "compressed_container_not_parsed");
+        assert_eq!(
+            output.files[0].filename_ticket_relation,
+            "exact_same_title_id_hint"
+        );
+        assert_eq!(
+            output.files[1].header_status,
+            "xci_gamecard_header_magic_only"
+        );
+        assert_eq!(
+            output.files[2].header_status,
+            "compressed_container_not_parsed"
+        );
         assert_eq!(
             output.total_header_bytes_read,
-            output.files.iter().map(|f| f.header_bytes_read).sum::<usize>()
+            output
+                .files
+                .iter()
+                .map(|f| f.header_bytes_read)
+                .sum::<usize>()
         );
         assert!(output.files.iter().all(|f| {
-            !f.executable_build_id_verified && !f.game_identity_verified
+            !f.executable_build_id_verified
+                && !f.game_identity_verified
                 && !f.emulator_content_modified
         }));
         fs::remove_dir_all(work).unwrap();
