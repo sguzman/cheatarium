@@ -217,7 +217,7 @@ fn parse_log(log: &str) -> Result<ParsedLog, ErrBox> {
     Ok(out)
 }
 
-fn log_default() -> PathBuf {
+pub(super) fn log_default() -> PathBuf {
     let data = env::var_os("XDG_DATA_HOME")
         .map(PathBuf::from)
         .or_else(|| env::var_os("HOME").map(|h| PathBuf::from(h).join(".local/share")))
@@ -323,6 +323,60 @@ fn report_log(path: &Path, index: &GameIndex) -> Result<Report, ErrBox> {
         .filter_map(|(id, builds)| (builds.len() > 1).then_some(id))
         .collect();
     Ok(report)
+}
+
+
+#[derive(Debug, Clone)]
+pub(super) struct MainBuildObservation {
+    pub(super) title_id: String,
+    pub(super) build_id: String,
+    pub(super) archived_candidate: bool,
+    pub(super) launch_context_ordinal: usize,
+}
+
+#[derive(Debug, Clone)]
+pub(super) struct WeakLookupObservation {
+    pub(super) title_id: String,
+    pub(super) build_id: String,
+}
+
+#[derive(Debug)]
+pub(super) struct LaunchEvidence {
+    pub(super) log_found: bool,
+    pub(super) log_bytes_read: usize,
+    pub(super) core_launch_contexts: usize,
+    pub(super) main_queries: usize,
+    pub(super) orphan_queries: usize,
+    pub(super) main: Vec<MainBuildObservation>,
+    pub(super) weak_lookup: Vec<WeakLookupObservation>,
+}
+
+/// Reuse the same bounded Eden log parser in discovery; never reinterpret
+/// a cheat-file lookup as main executable evidence or an installed Build ID.
+pub(super) fn read_launch_evidence(
+    path: &Path,
+    index: &GameIndex,
+) -> Result<LaunchEvidence, ErrBox> {
+    let report = report_log(path, index)?;
+    Ok(LaunchEvidence {
+        log_found: report.log_found,
+        log_bytes_read: report.log_bytes_read,
+        core_launch_contexts: report.core_launch_contexts_seen,
+        main_queries: report.main_nso_patch_queries_seen,
+        orphan_queries: report.main_builds_without_launch_context,
+        main: report.historical_main_build_observations.into_iter()
+            .map(|record| MainBuildObservation {
+                title_id: record.title_id,
+                build_id: record.main_build_id,
+                archived_candidate: record.archived_build_candidate_found,
+                launch_context_ordinal: record.launch_context_ordinal,
+            }).collect(),
+        weak_lookup: report.direct_cheat_lookup_observations.into_iter()
+            .map(|record| WeakLookupObservation {
+                title_id: record.title_id,
+                build_id: record.build_id,
+            }).collect(),
+    })
 }
 
 fn run() -> Result<(), ErrBox> {
