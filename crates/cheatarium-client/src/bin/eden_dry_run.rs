@@ -45,6 +45,9 @@ pub(super) struct HistoricalBuildMatch {
 pub(super) struct MainBuildEvidence {
     pub(super) log_path: String,
     pub(super) log_found: bool,
+    pub(super) saved_history_path: String,
+    pub(super) saved_history_found: bool,
+    pub(super) saved_historical_main_builds: Vec<HistoricalBuildMatch>,
     pub(super) historical_main_builds: Vec<HistoricalBuildMatch>,
     pub(super) all_games_current_build_verified: bool,
     pub(super) warning: &'static str,
@@ -98,6 +101,9 @@ pub(super) fn analyze<'a>(
     mods_root: &Path,
     log_path: &Path,
     evidence: &super::eden_builds::LaunchEvidence,
+    history_path: &Path,
+    history: &super::eden_builds::eden_history::History,
+    history_found: bool,
 ) -> Result<DryRunReport<'a>, ErrBox> {
     let mut files = Vec::new();
     let mut to_disable = BTreeMap::<String, Vec<String>>::new();
@@ -234,6 +240,26 @@ pub(super) fn analyze<'a>(
             current_installed_build_verified: false,
         });
     }
+    let mut seen_saved = BTreeSet::new();
+    let mut saved_historical_main_builds = Vec::new();
+    for item in &history.entries {
+        if item.evidence_kind != "main_nso" {
+            continue;
+        }
+        let key = (item.title_id.clone(), item.build_id.clone());
+        if !seen_saved.insert(key) {
+            continue;
+        }
+        saved_historical_main_builds.push(HistoricalBuildMatch {
+            archived_cheat_candidate_in_plan: report.planned.iter().any(|plan| {
+                plan.title_id == item.title_id
+                    && plan.explicitly_selected_build_id == item.build_id
+            }),
+            title_id: item.title_id.clone(),
+            build_id: item.build_id.clone(),
+            current_installed_build_verified: false,
+        });
+    }
     Ok(DryRunReport {
         format: "cheatarium-eden-detailed-dry-run-v1",
         read_only: true,
@@ -245,9 +271,12 @@ pub(super) fn analyze<'a>(
         main_build_evidence: MainBuildEvidence {
             log_path: log_path.to_string_lossy().into_owned(),
             log_found: evidence.log_found,
+            saved_history_path: history_path.to_string_lossy().into_owned(),
+            saved_history_found: history_found,
+            saved_historical_main_builds,
             historical_main_builds,
             all_games_current_build_verified: false,
-            warning: "Historical Eden main NSO logs are not proof of currently installed executable Build IDs; archived-only builds remain unverified.",
+            warning: "Historical Eden main NSO logs and saved private history are not proof of currently installed executable Build IDs; archived-only builds remain unverified.",
         },
         source_plans: &report.planned,
         skipped: &report.skipped,
@@ -281,6 +310,13 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
         report.main_build_evidence.log_path, report.main_build_evidence.log_found
     )
     .unwrap();
+    writeln!(
+        out,
+        "SAVED MAIN BUILD HISTORY: {} (found: {}; saved main records: {})",
+        report.main_build_evidence.saved_history_path,
+        report.main_build_evidence.saved_history_found,
+        report.main_build_evidence.saved_historical_main_builds.len(),
+    ).unwrap();
     writeln!(out, "{}", report.main_build_evidence.warning).unwrap();
     for game in &report.discovery.games {
         writeln!(out, "\nGAME: {} [{}]", game.display_name, game.title_id).unwrap();
@@ -314,6 +350,18 @@ pub(super) fn render_human(report: &DryRunReport<'_>) -> String {
                     item.build_id, item.archived_cheat_candidate_in_plan
                 ).unwrap();
             }
+        }
+        for item in report
+            .main_build_evidence
+            .saved_historical_main_builds
+            .iter()
+            .filter(|item| item.title_id == game.title_id)
+        {
+            writeln!(
+                out,
+                "  SAVED HISTORICAL MAIN BUILD: {} (archived cheats proposed: {}; NOT verified as currently installed)",
+                item.build_id, item.archived_cheat_candidate_in_plan
+            ).unwrap();
         }
         let plans: Vec<_> = report
             .source_plans
