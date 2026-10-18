@@ -170,10 +170,12 @@ pub(super) fn disabled_config(
         lines.extend([
             "[DisabledAddOns]".into(),
             "size=1".into(),
+            "1\\title_id\\default=false".into(),
             format!("1\\title_id={title_number}"),
             format!("1\\disabled\\size={}", new_names.len()),
         ]);
         for (i, name) in new_names.iter().enumerate() {
+            lines.push(format!("1\\disabled\\{}\\d\\default=false", i + 1));
             lines.push(format!("1\\disabled\\{}\\d={name}", i + 1));
         }
         return Ok(format!("{}{}", lines.join(newline), newline));
@@ -199,7 +201,7 @@ pub(super) fn disabled_config(
             continue;
         }
         let parts = key.split('\\').collect::<Vec<_>>();
-        if parts.len() < 2 || parts.len() > 4 {
+        if parts.len() < 2 || parts.len() > 5 {
             return Err("Unknown Eden DisabledAddOns setting format".into());
         }
         let row_index = parts[0].parse::<usize>()?;
@@ -212,6 +214,9 @@ pub(super) fn disabled_config(
                 row.title_id = Some(val.parse::<u64>()?);
                 row.title_line = Some(j);
             }
+            // Qt WriteSetting produces companion /default keys. Eden ignores
+            // explicit values when the flag is true, so refuse that state.
+            [_, "title_id", "default"] if val == "false" => {}
             [_, "disabled", "size"] => {
                 row.count = Some(val.parse::<usize>()?);
                 row.count_line = Some(j);
@@ -223,7 +228,13 @@ pub(super) fn disabled_config(
                 }
                 row.names.insert(index, val.to_owned());
             }
-            _ => return Err("Unrecognized Eden DisabledAddOns QSettings field".into()),
+            [_, "disabled", name_index, "d", "default"] if val == "false" => {
+                let index = name_index.parse::<usize>()?;
+                if index == 0 || index > MAX_DISABLED_NAMES {
+                    return Err("Invalid Eden disabled add-on default entry".into());
+                }
+            }
+            _ => return Err(format!("Unrecognized Eden DisabledAddOns QSettings field: {key}").into()),
         }
     }
     let declared = size.unwrap_or(0);
@@ -279,6 +290,10 @@ pub(super) fn disabled_config(
         }
         for (offset, name) in additional.iter().enumerate() {
             fresh.push(format!(
+                "{index}\\disabled\\{}\\d\\default=false",
+                old_count + offset + 1
+            ));
+            fresh.push(format!(
                 "{index}\\disabled\\{}\\d={name}",
                 old_count + offset + 1
             ));
@@ -298,9 +313,11 @@ pub(super) fn disabled_config(
         if size_line.is_none() {
             fresh.push(format!("size={next}"));
         }
+        fresh.push(format!("{next}\\title_id\\default=false"));
         fresh.push(format!("{next}\\title_id={title_number}"));
         fresh.push(format!("{next}\\disabled\\size={}", new_names.len()));
         for (idx, name) in new_names.iter().enumerate() {
+            fresh.push(format!("{next}\\disabled\\{}\\d\\default=false", idx + 1));
             fresh.push(format!("{next}\\disabled\\{}\\d={name}", idx + 1));
         }
         lines.splice(finish..finish, fresh);
@@ -500,13 +517,59 @@ mod tests {
         let ini = "[UI]\nfoo=bar\n";
         let result = disabled_config(ini, "0100000000010000", &["Cheatarium-Test".into()]).unwrap();
         assert!(result.contains("[DisabledAddOns]\nsize=1"));
+        assert!(result.contains("1\\title_id\\default=false"));
         assert!(result.contains("1\\title_id=72057594037993472"));
+        assert!(result.contains("1\\disabled\\1\\d\\default=false"));
         assert!(result.contains("1\\disabled\\1\\d=Cheatarium-Test"));
         let second =
             disabled_config(&result, "0100152000022000", &["Cheatarium-Kart".into()]).unwrap();
         assert!(second.contains("size=2"));
+        assert!(second.contains("2\\title_id\\default=false"));
+        assert!(second.contains("2\\disabled\\1\\d\\default=false"));
         assert!(second.contains("2\\disabled\\1\\d=Cheatarium-Kart"));
     }
+    #[test]
+    fn accepts_real_qt_default_metadata_and_preserves_existing_addons() {
+        let ini = r#"[UI]
+foo=bar
+[DisabledAddOns]
+size=1
+1\title_id\default=false
+1\title_id=72057594037993472
+1\disabled\size=1
+1\disabled\1\d\default=false
+1\disabled\1\d=Existing Mod
+[Audio]
+volume=22
+"#;
+        let next = disabled_config(ini, "0100000000010000", &["Cheatarium-Test".into()])
+            .unwrap();
+        assert!(next.contains("1\\disabled\\1\\d=Existing Mod"));
+        assert!(next.contains("1\\disabled\\1\\d\\default=false"));
+        assert!(next.contains("1\\disabled\\2\\d\\default=false"));
+        assert!(next.contains("1\\disabled\\2\\d=Cheatarium-Test"));
+        assert!(next.contains("[Audio]\nvolume=22\n"));
+        assert_eq!(
+            disabled_config(&next, "0100000000010000", &["Cheatarium-Test".into()])
+                .unwrap(),
+            next
+        );
+    }
+
+    #[test]
+    fn refuses_ignored_or_unknown_qsettings_fields() {
+        for field in [
+            r"1\title_id\default=true",
+            r"1\disabled\1\d\default=true",
+            r"1\unexpected=value",
+        ] {
+            let ini = format!(
+                "[DisabledAddOns]\nsize=1\n1\\title_id=72057594037993472\n1\\disabled\\size=1\n1\\disabled\\1\\d=Existing\n{field}\n",
+            );
+            assert!(disabled_config(&ini, "0100000000010000", &["New".into()]).is_err());
+        }
+    }
+
     #[test]
     fn rejects_corrupt_disable_array() {
         let ini = "[DisabledAddOns]\nsize=1\n1\\title_id=72057594037993472\n1\\disabled\\size=2\n1\\disabled\\1\\d=One\n";
