@@ -849,7 +849,7 @@ fn run() -> Result<(), ErrBox> {
         return Err("--files-only requires --historical-main-only, --only-title-id, and either --dry-run or --install".into());
     }
     if let Some(id) = &only_title_id {
-        if !is_title_id(id) || (!auto && !install && !dry_run) {
+        if !is_title_id(id) || (!auto && !install && !dry_run && !rename_installed) {
             return Err(
                 "--only-title-id requires automatic mode and an exact 16-hex base Title ID".into(),
             );
