@@ -761,6 +761,9 @@ fn run() -> Result<(), ErrBox> {
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
     }
+    if historical_main_only && (title.is_some() || build.is_some()) {
+        return Err("--historical-main-only uses automatic discovery and forbids manual IDs".into());
+    }
     let automatic = auto || (install && title.is_none() && build.is_none());
     if automatic && (title.is_some() || build.is_some() || stage_dir.is_some()) {
         return Err("Automatic discovery cannot be combined with manual IDs or staging".into());
