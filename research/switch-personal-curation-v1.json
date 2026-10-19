@@ -64,7 +64,37 @@
       },
       "acquisition_status": "source_located_code_not_imported",
       "in_game_verified": false,
-      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100000000010000.json"
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100000000010000.json",
+      "cross_source_native_inventory": {
+        "sources": [
+          {
+            "source": "ibnux-switch-cheatdb",
+            "native_path_count": 3,
+            "distinct_native_builds": [
+              "3CA12DFAAF9C82DA",
+              "B424BE150A8E7D78",
+              "F5DCCDDB37E97724"
+            ],
+            "graphics_or_performance_paths": 0
+          },
+          {
+            "source": "ademola-switch-native",
+            "native_path_count": 2,
+            "distinct_native_builds": [
+              "3CA12DFAAF9C82DA",
+              "B424BE150A8E7D78"
+            ],
+            "graphics_or_performance_paths": 1
+          }
+        ],
+        "additional_build_ids_not_in_hamlet": [],
+        "combined_native_build_ids": [
+          "3CA12DFAAF9C82DA",
+          "B424BE150A8E7D78",
+          "F5DCCDDB37E97724"
+        ],
+        "other_source_code_payloads_not_rehosted": true
+      }
     },
     {
       "title_id": "0100152000022000",
@@ -201,7 +231,54 @@
       },
       "acquisition_status": "source_located_code_not_imported",
       "in_game_verified": false,
-      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100152000022000.json"
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100152000022000.json",
+      "cross_source_native_inventory": {
+        "sources": [
+          {
+            "source": "ibnux-switch-cheatdb",
+            "native_path_count": 8,
+            "distinct_native_builds": [
+              "1CD9216A21737FB4",
+              "381F6BF6894F3C33",
+              "4792ABA465F04534",
+              "60C8343AFBA2588F",
+              "937E57FF64D21ECD",
+              "96DFD1769E560C27",
+              "BDA8F5E6A0F87F36",
+              "FE1B230800D4933C"
+            ],
+            "graphics_or_performance_paths": 0
+          },
+          {
+            "source": "ademola-switch-native",
+            "native_path_count": 1,
+            "distinct_native_builds": [
+              "4B7A0BB5AE57E627"
+            ],
+            "graphics_or_performance_paths": 6
+          }
+        ],
+        "additional_build_ids_not_in_hamlet": [],
+        "combined_native_build_ids": [
+          "13296B64DFA7A131",
+          "1CD9216A21737FB4",
+          "2452C49BC26EC159",
+          "2C336A9BCF79C304",
+          "381F6BF6894F3C33",
+          "4792ABA465F04534",
+          "4B7A0BB5AE57E627",
+          "60C8343AFBA2588F",
+          "6A85262F21B90364",
+          "937E57FF64D21ECD",
+          "94FB3AFECA39D600",
+          "96DFD1769E560C27",
+          "9EF5CAA2D5B933C7",
+          "BDA8F5E6A0F87F36",
+          "FE1B230800D4933C",
+          "FE941ED5BA14BE5D"
+        ],
+        "other_source_code_payloads_not_rehosted": true
+      }
     },
     {
       "title_id": "01002DA013484000",
@@ -240,7 +317,34 @@
       },
       "acquisition_status": "source_located_code_not_imported",
       "in_game_verified": false,
-      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01002DA013484000.json"
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01002DA013484000.json",
+      "cross_source_native_inventory": {
+        "sources": [
+          {
+            "source": "ibnux-switch-cheatdb",
+            "native_path_count": 2,
+            "distinct_native_builds": [
+              "5441AF3C89F97E1D",
+              "D824D4B1BBD45D03"
+            ],
+            "graphics_or_performance_paths": 0
+          },
+          {
+            "source": "ademola-switch-native",
+            "native_path_count": 1,
+            "distinct_native_builds": [
+              "5441AF3C89F97E1D"
+            ],
+            "graphics_or_performance_paths": 1
+          }
+        ],
+        "additional_build_ids_not_in_hamlet": [],
+        "combined_native_build_ids": [
+          "5441AF3C89F97E1D",
+          "D824D4B1BBD45D03"
+        ],
+        "other_source_code_payloads_not_rehosted": true
+      }
     },
     {
       "title_id": "01006A800016E000",
@@ -345,7 +449,62 @@
       },
       "acquisition_status": "source_located_code_not_imported",
       "in_game_verified": false,
-      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006A800016E000.json"
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006A800016E000.json",
+      "cross_source_native_inventory": {
+        "sources": [
+          {
+            "source": "ibnux-switch-cheatdb",
+            "native_path_count": 13,
+            "distinct_native_builds": [
+              "06646FDDD47A619F",
+              "1B4270CED2653872",
+              "2EF410F4D4D2D279",
+              "343D891A4BCF0684",
+              "4590C9BB2C530754",
+              "4A3F8ED7DCCE3AD4",
+              "7A77E0D95E57814C",
+              "875F34E0D735B604",
+              "9825A8B3C3904A82",
+              "9FE4E3C363968930",
+              "B0CB5479F051741A",
+              "D45361E905C9E3C1",
+              "FD471EB458C915E7"
+            ],
+            "graphics_or_performance_paths": 0
+          },
+          {
+            "source": "ademola-switch-native",
+            "native_path_count": 1,
+            "distinct_native_builds": [
+              "B9B166DF1DB90BAF"
+            ],
+            "graphics_or_performance_paths": 3
+          }
+        ],
+        "additional_build_ids_not_in_hamlet": [
+          "2EF410F4D4D2D279",
+          "343D891A4BCF0684",
+          "4590C9BB2C530754"
+        ],
+        "combined_native_build_ids": [
+          "06646FDDD47A619F",
+          "1B4270CED2653872",
+          "2EF410F4D4D2D279",
+          "343D891A4BCF0684",
+          "4590C9BB2C530754",
+          "4A3F8ED7DCCE3AD4",
+          "77104350C9768709",
+          "7A77E0D95E57814C",
+          "875F34E0D735B604",
+          "9825A8B3C3904A82",
+          "9FE4E3C363968930",
+          "B0CB5479F051741A",
+          "B9B166DF1DB90BAF",
+          "D45361E905C9E3C1",
+          "FD471EB458C915E7"
+        ],
+        "other_source_code_payloads_not_rehosted": true
+      }
     },
     {
       "title_id": "01006BB00C6F0000",
@@ -384,7 +543,34 @@
       },
       "acquisition_status": "source_located_code_not_imported",
       "in_game_verified": false,
-      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006BB00C6F0000.json"
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006BB00C6F0000.json",
+      "cross_source_native_inventory": {
+        "sources": [
+          {
+            "source": "ibnux-switch-cheatdb",
+            "native_path_count": 2,
+            "distinct_native_builds": [
+              "909E904AF78AC1B8",
+              "AE16F71E002AF8CB"
+            ],
+            "graphics_or_performance_paths": 0
+          },
+          {
+            "source": "ademola-switch-native",
+            "native_path_count": 1,
+            "distinct_native_builds": [
+              "909E904AF78AC1B8"
+            ],
+            "graphics_or_performance_paths": 0
+          }
+        ],
+        "additional_build_ids_not_in_hamlet": [],
+        "combined_native_build_ids": [
+          "909E904AF78AC1B8",
+          "AE16F71E002AF8CB"
+        ],
+        "other_source_code_payloads_not_rehosted": true
+      }
     },
     {
       "title_id": "0100BC0018138000",
@@ -416,7 +602,54 @@
       },
       "acquisition_status": "source_located_code_not_imported",
       "in_game_verified": false,
-      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100BC0018138000.json"
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100BC0018138000.json",
+      "cross_source_native_inventory": {
+        "sources": [
+          {
+            "source": "ibnux-switch-cheatdb",
+            "native_path_count": 0,
+            "distinct_native_builds": [],
+            "graphics_or_performance_paths": 0
+          },
+          {
+            "source": "ademola-switch-native",
+            "native_path_count": 0,
+            "distinct_native_builds": [],
+            "graphics_or_performance_paths": 0
+          }
+        ],
+        "additional_build_ids_not_in_hamlet": [],
+        "combined_native_build_ids": [
+          "E968832CADE2AD7C"
+        ],
+        "other_source_code_payloads_not_rehosted": true
+      }
     }
-  ]
+  ],
+  "cross_source_review": {
+    "note": "Independent link-only native-file inventories checked against pinned Hamlet Build ID keys. Blob overlaps do not imply independent authors or compatibility.",
+    "source_snapshots": [
+      {
+        "id": "ibnux-switch-cheatdb",
+        "repository": "https://github.com/ibnux/switch-cheat",
+        "snapshot_commit": "14f899df1cecca3c2359125b5b4876c2deeaab20",
+        "rights_status": "link_only_rights_review"
+      },
+      {
+        "id": "ademola-switch-native",
+        "repository": "https://github.com/ADEMOLA200/Switch-Emulator-Mod-Database",
+        "snapshot_commit": "abd55774c369b9c3a4df960e7afdb0391cb52056",
+        "rights_status": "link_only_rights_review"
+      }
+    ],
+    "techgigs80_skyward_evidence": {
+      "repository": "https://github.com/techgigs80/SwitchCheats",
+      "snapshot_commit": "42ba58043391f677564d24c21c71036f43f2cdaa",
+      "source_paths": [
+        "The Legend of Zelda Skyward Sword HD/01002DA013484000/cheats/5441AF3C89F97E1D.txt",
+        "The Legend of Zelda Skyward Sword HD/01002DA013484000/cheats/D824D4B1BBD45D03.txt"
+      ],
+      "redistribution_status": "not_cleared_link_only"
+    }
+  }
 }
