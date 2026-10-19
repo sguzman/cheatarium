@@ -281,22 +281,40 @@ fn bounded_cnmt_files(root: &Path) -> Result<Vec<PathBuf>, String> {
     let mut pending = vec![(root.to_path_buf(), 0usize)];
     let mut entries = 0usize;
     while let Some((dir, depth)) = pending.pop() {
-        if depth > 5 { return Err("metadata_directory_too_deep".into()); }
+        if depth > 5 {
+            return Err("metadata_directory_too_deep".into());
+        }
         for entry in fs::read_dir(&dir).map_err(|_| "cannot_read_extracted_metadata".to_owned())? {
             entries += 1;
-            if entries > 4096 { return Err("too_many_extracted_metadata_entries".into()); }
+            if entries > 4096 {
+                return Err("too_many_extracted_metadata_entries".into());
+            }
             let entry = entry.map_err(|_| "cannot_read_extracted_metadata_entry".to_owned())?;
-            let ty = entry.file_type().map_err(|_| "cannot_stat_extracted_metadata_entry".to_owned())?;
-            if ty.is_symlink() { return Err("extracted_metadata_symlink_refused".into()); }
+            let ty = entry
+                .file_type()
+                .map_err(|_| "cannot_stat_extracted_metadata_entry".to_owned())?;
+            if ty.is_symlink() {
+                return Err("extracted_metadata_symlink_refused".into());
+            }
             if ty.is_dir() {
                 pending.push((entry.path(), depth + 1));
             } else if ty.is_file()
-                && entry.file_name().to_string_lossy().to_ascii_lowercase().ends_with(".cnmt")
+                && entry
+                    .file_name()
+                    .to_string_lossy()
+                    .to_ascii_lowercase()
+                    .ends_with(".cnmt")
             {
-                let meta = entry.metadata().map_err(|_| "cannot_stat_cnmt".to_owned())?;
-                if meta.len() > MAX_META_BYTES { return Err("extracted_cnmt_too_large".into()); }
+                let meta = entry
+                    .metadata()
+                    .map_err(|_| "cannot_stat_cnmt".to_owned())?;
+                if meta.len() > MAX_META_BYTES {
+                    return Err("extracted_cnmt_too_large".into());
+                }
                 files.push(entry.path());
-                if files.len() > 64 { return Err("too_many_extracted_cnmt_files".into()); }
+                if files.len() > 64 {
+                    return Err("too_many_extracted_cnmt_files".into());
+                }
             }
         }
     }
@@ -449,10 +467,16 @@ fn discover_package(
                                     "cnmt".into(),
                                     cnmt.to_string_lossy().to_string(),
                                 ],
-                            ).unwrap_or_default();
-                            if let Some((title, version, kind, program)) = parse_content_metadata(&info) {
+                            )
+                            .unwrap_or_default();
+                            if let Some((title, version, kind, program)) =
+                                parse_content_metadata(&info)
+                            {
                                 fallback_parsed_cnmts += 1;
-                                if let Some(entry) = items.iter().find(|item| item.name.eq_ignore_ascii_case(&program)) {
+                                if let Some(entry) = items
+                                    .iter()
+                                    .find(|item| item.name.eq_ignore_ascii_case(&program))
+                                {
                                     fallback_matched_programs += 1;
                                     found.push(Package {
                                         file: path.to_path_buf(),
@@ -908,7 +932,10 @@ mod tests {
         let root = scratch.path("extracted-metadata");
         fs::create_dir_all(&root).unwrap();
         std::os::unix::fs::symlink("/etc/passwd", root.join("untrusted.cnmt")).unwrap();
-        assert_eq!(bounded_cnmt_files(&root), Err("extracted_metadata_symlink_refused".into()));
+        assert_eq!(
+            bounded_cnmt_files(&root),
+            Err("extracted_metadata_symlink_refused".into())
+        );
     }
     #[test]
     fn identifies_program_from_nstool_cnmt() {
