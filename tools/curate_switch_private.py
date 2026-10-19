@@ -70,6 +70,20 @@ def inspect(manifest: dict, title: str | None) -> dict:
             "named_sections": item["hamlet_named_sections_total"],
             "known_local_build": item["runtime_evidence"]["build_id"],
             "source": item["source_url"],
+            "static_nsp_build_id": item.get("static_nsp_observation", {}).get("cheat_build_id"),
+            "pinned_exact_build_sections": item.get("static_nsp_observation", {}).get("pinned_native_cheat_sections_matched", 0),
+            "external_exact_build_sources": [
+                {
+                    "source_id": source["source_id"],
+                    "build_id": source["build_id"],
+                    "author_credit": source["author_credit"],
+                    "source_url": source["source_url"],
+                    "rights_status": source["rights_status"],
+                    "body_imported": source["body_imported"],
+                    "gameplay_verified": source["gameplay_verified"],
+                }
+                for source in item.get("exact_build_external_sources", [])
+            ],
             "status": "source_candidates_only_not_runtime_verified",
         }
         for item in manifest["games"]
