@@ -36,7 +36,7 @@ def parse_native(build_data: object) -> tuple[list[tuple[str, str]], list[str]]:
             or lines[0] != name
             or not name.startswith("[")
             or not name.endswith("]")
-            or any(c in name for c in "\\r\\n\\x00")
+            or any(c in name for c in "\r\n\x00")
             or len(name) > 130
         ):
             rejected.append(name)
@@ -48,7 +48,7 @@ def parse_native(build_data: object) -> tuple[list[tuple[str, str]], list[str]]:
         ):
             rejected.append(name)
             continue
-        accepted.append((name, "\\n".join(lines) + "\\n"))
+        accepted.append((name, "\n".join(lines) + "\n"))
     return accepted, rejected
 
 
@@ -92,8 +92,6 @@ def stage(manifest: dict, game: dict, root: Path) -> dict:
     title = game["title_id"]
     sha = manifest["upstream"]["snapshot_commit"]
     url = f"https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/{sha}/cheats/{title}.json"
-    if url.replace("https://raw.githubusercontent.com/", "https://github.com/").endswith(".txt"):
-        raise ValueError("Unexpected URL")
     with urlopen(Request(url, headers={"User-Agent": "Cheatarium-Private-Curation/1"}), timeout=30) as response:
         if response.geturl() != url:
             raise ValueError("Unexpected external redirect")
@@ -116,7 +114,7 @@ def stage(manifest: dict, game: dict, root: Path) -> dict:
         accepted, rejected = parse_native(sections)
         if not accepted:
             raise ValueError(f"No native sections for {bid}")
-        payload = "\\n".join(text for _, text in accepted).encode("utf-8")
+        payload = "\n".join(text for _, text in accepted).encode("utf-8")
         if len(payload) > LIMIT:
             raise ValueError("Oversized staged cheat file")
         dest = root / title / f"{bid}.txt"
