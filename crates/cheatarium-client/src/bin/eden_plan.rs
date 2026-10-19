@@ -24,6 +24,8 @@ mod eden_builds;
 mod eden_dry_run;
 #[path = "eden_install.rs"]
 mod eden_install;
+#[path = "eden_private.rs"]
+mod eden_private;
 const MAX_PLANNED: usize = 2_000;
 const MAX_STAGED_TOTAL_BYTES: usize = 10 * 1024 * 1024;
 
@@ -201,7 +203,10 @@ fn select<'a>(bundle: &'a Bundle, title: &str, build: &str) -> Vec<&'a IndexedFi
     bundle
         .records
         .iter()
-        .filter(|file| file.candidate_game_key == key && file.provenance.source_id == "sharkive")
+        .filter(|file| {
+            file.candidate_game_key == key
+                && matches!(file.provenance.source_id.as_str(), "sharkive" | "hamlet_private_curated")
+        })
         .collect()
 }
 
@@ -299,7 +304,15 @@ fn preview_with_names(
         title_id: title.to_owned(),
         explicitly_selected_build_id: build.to_owned(),
         installed_build_id_verified: false,
-        source_filter: "sharkive_native_switch_archive",
+        source_filter: if bundle.records.iter().any(|file| {
+            file.candidate_game_key == format!(
+                "title-id-{}-build-{}", title.to_ascii_lowercase(), build.to_ascii_lowercase()
+            ) && file.provenance.source_id == "hamlet_private_curated"
+        }) {
+            "private_pinned_hamlet_exact_static_nsp"
+        } else {
+            "sharkive_native_switch_archive"
+        },
         proposed_mod_root: mod_root.to_string_lossy().into_owned(),
         exact_archived_build_candidate_found: exact_found,
         proposed_addons: addons,
@@ -803,6 +816,9 @@ fn run() -> Result<(), ErrBox> {
     let mut db = PathBuf::from("generated/v1");
     let mut mod_root = default_mod_root();
     let mut stage_dir = None;
+    let mut private_curation = false;
+    let mut private_root = eden_private::default_root();
+    let mut private_manifest = PathBuf::from("research/switch-personal-curation-v1.json");
     let mut config = default_config();
     let mut cache_dir = eden_auto::default_cache_dir();
     let mut log_path = eden_builds::log_default();
@@ -826,6 +842,13 @@ fn run() -> Result<(), ErrBox> {
             }
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
+            "--private-curation" => private_curation = true,
+            "--private-root" => {
+                private_root = PathBuf::from(args.next().ok_or("--private-root requires an absolute directory")?)
+            }
+            "--private-manifest" => {
+                private_manifest = PathBuf::from(args.next().ok_or("--private-manifest requires a path")?)
+            }
             "--files-only" => files_only = true,
             "--rename-installed" => rename_installed = true,
             "--only-title-id" => {
@@ -870,11 +893,45 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nFile-only preview: --dry-run --historical-main-only --only-title-id TITLE --files-only.\nFile-only install: --install --historical-main-only --only-title-id TITLE --files-only. No qt-config.ini writes.\nLegacy folder rename: --rename-installed --historical-main-only --only-title-id TITLE --files-only [--dry-run].\nAfter review, the disabled-by-default installer is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nFile-only preview: --dry-run --historical-main-only --only-title-id TITLE --files-only.\nFile-only install: --install --historical-main-only --only-title-id TITLE --files-only. No qt-config.ini writes.\nLegacy folder rename: --rename-installed --historical-main-only --only-title-id TITLE --files-only [--dry-run].\nAfter review, the disabled-by-default installer is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nPrivate staged exact NSP build: --private-curation --title-id TITLE [--stage-dir ABSOLUTE_DIR | --install]. Writes disabled-by-default if installed; Eden must be closed.\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if private_curation {
+        if auto || dry_run || human_report || historical_main_only
+            || files_only || rename_installed || only_title_id.is_some() || build.is_some()
+        {
+            return Err("--private-curation requires explicit --title-id and cannot combine with automatic, historical, file-only or manual Build ID options".into());
+        }
+        if install && stage_dir.is_some() {
+            return Err("--private-curation: choose --install or --stage-dir, not both".into());
+        }
+        let title = title.as_deref().ok_or("--private-curation requires --title-id")?;
+        if !is_title_id(title) {
+            return Err("--private-curation requires a valid base-game Title ID".into());
+        }
+        let (private_bundle, private_build) =
+            eden_private::load_exact(&private_manifest, &private_root, title)?;
+        let plan = preview_readable(&private_bundle, title, &private_build, &mod_root)?;
+        if plan.proposed_addons.is_empty() || !plan.rejected_entries.is_empty()
+            || plan.proposed_addons.iter()
+                .any(|entry| entry.syntax_check != "lexical_hex_tokens_only_not_execution_validated")
+        {
+            return Err("Private exact-build source is not completely renderable; refusing installation or staging".into());
+        }
+        if install {
+            // Existing installer disables all new add-ons before writing them.
+            let installed = eden_install::install(&private_bundle, &plan, &mod_root, &config)?;
+            println!("{}", serde_json::to_string_pretty(&installed)?);
+        } else if let Some(directory) = &stage_dir {
+            let staged = stage(&private_bundle, &plan, directory, &mod_root)?;
+            println!("{}", serde_json::to_string_pretty(&staged)?);
+        } else {
+            println!("{}", serde_json::to_string_pretty(&plan)?);
+        }
+        return Ok(());
     }
     if dry_run && (install || stage_dir.is_some()) {
         return Err("--dry-run refuses --install and --stage-dir; it never writes".into());
