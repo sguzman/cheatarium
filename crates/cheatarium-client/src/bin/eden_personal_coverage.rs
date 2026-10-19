@@ -1,7 +1,10 @@
 //! Join the user's recorded static NSP Build IDs to Eden's *advisory* local
 //! inventory. Never opens game files or imports/installs third-party cheat bodies.
 //! The curation manifest is public metadata, not a runtime version witness.
-use super::{is_title_id, CachedTitle, ErrBox, InventoryGame, Report};
+use super::{
+    base_for_update_label, inspect_unresolved_nsp, is_base_label, is_title_id,
+    CachedTitle, ErrBox, InventoryGame, Report, MAX_NSP_HEADER_INSPECTIONS,
+};
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
@@ -78,6 +81,81 @@ struct UncuratedGame {
     cheats_gameplay_verified: bool,
 }
 
+// Sanitized file names are only local discovery hints; never serialize full paths.
+const MAX_UNRESOLVED_FILE_ROWS: usize = 128;
+const MAX_REPORTED_FILENAME_CHARS: usize = 180;
+
+#[derive(Debug, Serialize)]
+struct UnresolvedFile {
+    file_name: String,
+    file_type: String,
+    inspection_status: &'static str,
+    ticket_filename_title_id_candidates: Vec<String>,
+    probable_base_title_id_hint: Option<String>,
+    hint_matches_eden_candidate: bool,
+    content_identity_verified: bool,
+    installed_in_eden_verified: bool,
+}
+
+#[derive(Debug, Default, Serialize)]
+struct UnresolvedReview {
+    displayed_files: Vec<UnresolvedFile>,
+    truncated: bool,
+    header_inspections_performed: usize,
+    note: &'static str,
+}
+
+fn unresolved_review(report: &Report, inspect_headers: bool) -> UnresolvedReview {
+    let missing: Vec<_> = report.game_files.iter()
+        .filter(|file| file.title_id.is_none())
+        .collect();
+    let mut out = UnresolvedReview {
+        truncated: missing.len() > MAX_UNRESOLVED_FILE_ROWS,
+        note: "Filename and ticket filename hints are advisory; not authenticated game identities.",
+        ..UnresolvedReview::default()
+    };
+    let known: BTreeSet<_> = report.title_id_matches.iter()
+        .map(|m| m.title_id.as_str())
+        .collect();
+    for file in missing.into_iter().take(MAX_UNRESOLVED_FILE_ROWS) {
+        let raw_name = Path::new(&file.path).file_name()
+            .and_then(|n| n.to_str()).unwrap_or("<non-utf8-name>");
+        let file_name: String = raw_name.chars()
+            .filter(|c| !c.is_control())
+            .take(MAX_REPORTED_FILENAME_CHARS).collect();
+        let eligible = inspect_headers && file.file_type == "nsp"
+            && out.header_inspections_performed < MAX_NSP_HEADER_INSPECTIONS;
+        let (inspection_status, hints) = if eligible {
+            let evidence = inspect_unresolved_nsp(&file.path);
+            out.header_inspections_performed += 1;
+            (evidence.status, evidence.ticket_filename_title_id_candidates)
+        } else if file.file_type != "nsp" {
+            ("unsupported_format_no_header_inspection", Vec::new())
+        } else if !inspect_headers {
+            ("header_inspection_not_requested", Vec::new())
+        } else {
+            ("header_inspection_limit_reached", Vec::new())
+        };
+        let probable_base_title_id_hint = if let [single] = hints.as_slice() {
+            base_for_update_label(single)
+                .or_else(|| is_base_label(single).then(|| single.clone()))
+        } else {
+            None
+        };
+        let matches_known = probable_base_title_id_hint.as_ref()
+            .is_some_and(|id| known.contains(id.as_str()));
+        out.displayed_files.push(UnresolvedFile {
+            file_name, file_type: file.file_type.clone(), inspection_status,
+            ticket_filename_title_id_candidates: hints,
+            probable_base_title_id_hint,
+            hint_matches_eden_candidate: matches_known,
+            content_identity_verified: false,
+            installed_in_eden_verified: false,
+        });
+    }
+    out
+}
+
 #[derive(Debug, Default, Serialize)]
 struct ScanEvidence {
     scanned_game_files: usize,
@@ -126,6 +204,7 @@ pub(super) struct Coverage {
     format: &'static str,
     read_only: bool,
     scan_evidence: ScanEvidence,
+    unresolved_file_review: UnresolvedReview,
     matched_eden_candidate_games: usize,
     uncurated_eden_candidate_games: usize,
     uncurated_games: Vec<UncuratedGame>,
@@ -280,6 +359,7 @@ fn match_catalog(
         format: "cheatarium-eden-personal-switch-coverage-v1",
         read_only: true,
         scan_evidence: ScanEvidence::default(),
+        unresolved_file_review: UnresolvedReview::default(),
         matched_eden_candidate_games: matched.len(),
         uncurated_eden_candidate_games: uncurated.len(),
         uncurated_games: uncurated,
@@ -302,6 +382,7 @@ pub(super) fn read_coverage(
     inventory: &[InventoryGame],
     cached_titles: &[CachedTitle],
     report: &Report,
+    inspect_unresolved_headers: bool,
 ) -> Result<Coverage, ErrBox> {
     let meta = fs::symlink_metadata(path)?;
     if !meta.is_file() || meta.file_type().is_symlink() || meta.len() > MAX_MANIFEST_BYTES {
@@ -310,6 +391,7 @@ pub(super) fn read_coverage(
     let manifest: Manifest = serde_json::from_slice(&fs::read(path)?)?;
     let mut coverage = match_catalog(manifest, inventory, cached_titles)?;
     coverage.scan_evidence = scan_evidence(report);
+    coverage.unresolved_file_review = unresolved_review(report, inspect_unresolved_headers);
     Ok(coverage)
 }
 
