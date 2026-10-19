@@ -339,12 +339,18 @@ fn nca_nstool_args(keys: &Path, tickets: &[PathBuf]) -> Vec<String> {
 }
 // Do not include raw tool output or key material in user-visible reports.
 fn metadata_partition_diagnosis(output: &str) -> (usize, usize) {
-    let unreadable = output.lines().filter(|line| line.contains("NCA Partition") && line.contains("not readable")).count();
-    let missing_keys = output.lines().filter(|line| {
-        line.contains("AES-CTR Key was not determined")
-            || line.contains("key could not be loaded")
-            || line.contains("could not determine key")
-    }).count();
+    let unreadable = output
+        .lines()
+        .filter(|line| line.contains("NCA Partition") && line.contains("not readable"))
+        .count();
+    let missing_keys = output
+        .lines()
+        .filter(|line| {
+            line.contains("AES-CTR Key was not determined")
+                || line.contains("key could not be loaded")
+                || line.contains("could not determine key")
+        })
+        .count();
     (unreadable, missing_keys)
 }
 
@@ -424,8 +430,7 @@ fn discover_package(
                     cnmt.to_string_lossy().to_string(),
                     dest.to_string_lossy().to_string(),
                 ]);
-                if safe_output("nstool", &args).is_err()
-                {
+                if safe_output("nstool", &args).is_err() {
                     continue;
                 }
                 extracted_cnmt += 1;
@@ -960,7 +965,14 @@ mod tests {
         let tickets = [PathBuf::from("/example/scratch/base-ticket.tik")];
         assert_eq!(
             nca_nstool_args(&keys, &tickets),
-            vec!["-t", "nca", "-k", "/example/keys/prod.keys", "--tik", "/example/scratch/base-ticket.tik"]
+            vec![
+                "-t",
+                "nca",
+                "-k",
+                "/example/keys/prod.keys",
+                "--tik",
+                "/example/scratch/base-ticket.tik"
+            ]
         );
     }
     #[test]
