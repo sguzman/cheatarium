@@ -1,7 +1,7 @@
 //! Join the user's recorded static NSP Build IDs to Eden's *advisory* local
 //! inventory. Never opens game files or imports/installs third-party cheat bodies.
 //! The curation manifest is public metadata, not a runtime version witness.
-use super::{is_title_id, CachedTitle, InventoryGame, ErrBox};
+use super::{is_title_id, CachedTitle, ErrBox, InventoryGame};
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
@@ -112,7 +112,11 @@ fn match_catalog(
             || !valid_build(&game.static_nsp_observation.cheat_build_id)
             || game.static_nsp_observation.status != "main_nso_extracted_from_local_nsp"
         {
-            return Err(format!("Invalid or unverified static NSP identity: {}", game.title_id).into());
+            return Err(format!(
+                "Invalid or unverified static NSP identity: {}",
+                game.title_id
+            )
+            .into());
         }
         if game.exact_build_external_sources.len() > MAX_EXTERNAL_SOURCES_PER_GAME {
             return Err(format!("Too many external source links: {}", game.title_id).into());
@@ -129,7 +133,11 @@ fn match_catalog(
                 || source.source_id.is_empty()
                 || !source_ids.insert(source.source_id.as_str())
             {
-                return Err(format!("Invalid unverified external source claim: {}", game.title_id).into());
+                return Err(format!(
+                    "Invalid unverified external source claim: {}",
+                    game.title_id
+                )
+                .into());
             }
         }
         let title_id = game.title_id.clone();
@@ -145,7 +153,9 @@ fn match_catalog(
             if !present.insert(item.title_id.as_str()) {
                 continue;
             }
-            let sections = game.static_nsp_observation.pinned_native_cheat_sections_matched;
+            let sections = game
+                .static_nsp_observation
+                .pinned_native_cheat_sections_matched;
             let external = &game.exact_build_external_sources;
             matched.push(Match {
                 title_id: item.title_id.clone(),
@@ -178,7 +188,8 @@ fn match_catalog(
         if catalog.contains_key(&item.title_id) || !uncurated_ids.insert(item.title_id.as_str()) {
             continue;
         }
-        let name = cached_titles.iter()
+        let name = cached_titles
+            .iter()
             .find(|name| name.title_id == item.title_id)
             .and_then(|name| name.title_name.clone());
         uncurated.push(UncuratedGame {
@@ -192,7 +203,9 @@ fn match_catalog(
             archived_cheat_build_candidates: item.archived_build_candidate_count,
             external_link_only_references: item.external_reference_count,
             next_action: if item.filename_labeled_base_files
-                + item.ticket_filename_labeled_base_files > 0 {
+                + item.ticket_filename_labeled_base_files
+                > 0
+            {
                 "extract_static_main_build_id_from_owned_game_file"
             } else if item.in_eden_cache {
                 "confirm_cached_game_still_registered_and_locate_owned_game_file"
@@ -206,11 +219,16 @@ fn match_catalog(
     // Prioritize candidate games with native cheat data rather than chasing
     // metadata-only links; all entries remain advisory until Build ID extraction.
     uncurated.sort_by(|a, b| {
-        b.archived_cheat_build_candidates.cmp(&a.archived_cheat_build_candidates)
-            .then_with(|| b.filename_labeled_base_files.cmp(&a.filename_labeled_base_files))
+        b.archived_cheat_build_candidates
+            .cmp(&a.archived_cheat_build_candidates)
+            .then_with(|| {
+                b.filename_labeled_base_files
+                    .cmp(&a.filename_labeled_base_files)
+            })
             .then_with(|| a.title_id.cmp(&b.title_id))
     });
-    let absent = catalog.keys()
+    let absent = catalog
+        .keys()
         .filter(|id| !present.contains(id.as_str()))
         .cloned()
         .collect();
@@ -278,7 +296,10 @@ mod tests {
         let result = match_catalog(manifest, &one_game(), &[]).unwrap();
         assert_eq!(result.matched_eden_candidate_games, 1);
         assert!(result.curated_games_not_found_in_eden_candidates.is_empty());
-        assert_eq!(result.games[0].coverage_status, "external_exact_build_claims_link_only_not_imported");
+        assert_eq!(
+            result.games[0].coverage_status,
+            "external_exact_build_claims_link_only_not_imported"
+        );
         assert_eq!(result.games[0].exact_build_external_sources.len(), 1);
         assert!(!result.games[0].installation_allowed);
         assert!(!result.games[0].current_eden_build_verified);
@@ -336,9 +357,15 @@ mod tests {
         assert_eq!(result.matched_eden_candidate_games, 1);
         assert_eq!(result.uncurated_eden_candidate_games, 1);
         let uncurated = &result.uncurated_games[0];
-        assert_eq!(uncurated.cached_title_name.as_deref(), Some("Super Mario Odyssey"));
+        assert_eq!(
+            uncurated.cached_title_name.as_deref(),
+            Some("Super Mario Odyssey")
+        );
         assert_eq!(uncurated.archived_cheat_build_candidates, 3);
-        assert_eq!(uncurated.next_action, "extract_static_main_build_id_from_owned_game_file");
+        assert_eq!(
+            uncurated.next_action,
+            "extract_static_main_build_id_from_owned_game_file"
+        );
         assert!(!uncurated.current_eden_build_verified);
     }
 
@@ -350,8 +377,10 @@ mod tests {
         let manifest = serde_json::from_str(&example_json()).unwrap();
         let result = match_catalog(manifest, &[item], &[]).unwrap();
         assert_eq!(result.uncurated_eden_candidate_games, 1);
-        assert_eq!(result.uncurated_games[0].next_action,
-            "confirm_cached_game_still_registered_and_locate_owned_game_file");
+        assert_eq!(
+            result.uncurated_games[0].next_action,
+            "confirm_cached_game_still_registered_and_locate_owned_game_file"
+        );
         assert_eq!(result.matched_eden_candidate_games, 0);
     }
 
@@ -360,6 +389,9 @@ mod tests {
         let manifest = serde_json::from_str(&example_json()).unwrap();
         let result = match_catalog(manifest, &[], &[]).unwrap();
         assert_eq!(result.matched_eden_candidate_games, 0);
-        assert_eq!(result.curated_games_not_found_in_eden_candidates, vec!["01006A800016E000"]);
+        assert_eq!(
+            result.curated_games_not_found_in_eden_candidates,
+            vec!["01006A800016E000"]
+        );
     }
 }

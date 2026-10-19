@@ -1620,7 +1620,8 @@ fn run() -> Result<(), ErrBox> {
             "--json" => {}
             "--personal-curation" => {
                 personal_curation = Some(PathBuf::from(
-                    args.next().ok_or("--personal-curation requires a JSON manifest path")?,
+                    args.next()
+                        .ok_or("--personal-curation requires a JSON manifest path")?,
                 ));
             }
             "--summary" => summary = true,
@@ -1663,8 +1664,11 @@ fn run() -> Result<(), ErrBox> {
         return Err("--personal-curation requires --summary".into());
     }
     if coverage_only
-        && (!summary || personal_curation.is_none() || audit_all_files
-            || inspect_nsp_headers || with_readiness)
+        && (!summary
+            || personal_curation.is_none()
+            || audit_all_files
+            || inspect_nsp_headers
+            || with_readiness)
     {
         return Err("--coverage-only requires --summary and --personal-curation; cannot combine with audit or history capture".into());
     }
@@ -1842,11 +1846,11 @@ fn run() -> Result<(), ErrBox> {
         if audit_all_files {
             let mut audit = run_registered_files_audit(summary, &report);
             if let Some(path) = &personal_curation {
-                audit.inventory.personal_coverage = Some(
-                    eden_personal_coverage::read_coverage(
-                        path, &audit.inventory.candidate_base_titles, &report.cached_titles,
-                    )?,
-                );
+                audit.inventory.personal_coverage = Some(eden_personal_coverage::read_coverage(
+                    path,
+                    &audit.inventory.candidate_base_titles,
+                    &report.cached_titles,
+                )?);
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
                 audit.inventory.read_only = !written;
@@ -1862,11 +1866,11 @@ fn run() -> Result<(), ErrBox> {
             println!("{}", serde_json::to_string_pretty(&audit)?);
         } else {
             if let Some(path) = &personal_curation {
-                summary.personal_coverage = Some(
-                    eden_personal_coverage::read_coverage(
-                        path, &summary.candidate_base_titles, &report.cached_titles,
-                    )?,
-                );
+                summary.personal_coverage = Some(eden_personal_coverage::read_coverage(
+                    path,
+                    &summary.candidate_base_titles,
+                    &report.cached_titles,
+                )?);
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
                 summary.read_only = !written;
@@ -1877,7 +1881,9 @@ fn run() -> Result<(), ErrBox> {
             if coverage_only {
                 // Just candidate title metadata and cheat research; never export
                 // full registered ROM paths, Eden settings, or log observations.
-                let coverage = summary.personal_coverage.as_ref()
+                let coverage = summary
+                    .personal_coverage
+                    .as_ref()
                     .ok_or("--coverage-only requested without personal coverage")?;
                 println!("{}", serde_json::to_string_pretty(coverage)?);
             } else {
