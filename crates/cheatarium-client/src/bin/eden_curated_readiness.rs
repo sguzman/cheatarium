@@ -154,7 +154,12 @@ fn run() -> Result<(), ErrBox> {
                 println!("Read-only source/evidence readiness: --db PATH --manifest PATH --private-root PATH --log PATH --history-file PATH --title-id ID --json");
                 return Ok(());
             },
-            _ => return Err(format!("Unknown argument: {arg}. Installation is not supported by this read-only tool.").into()),
+            _ => {
+                return Err(format!(
+                    "Unknown argument: {arg}. Installation is not supported by this read-only tool."
+                )
+                .into())
+            }
         }
     }
     let meta = fs::symlink_metadata(&manifest)?;
