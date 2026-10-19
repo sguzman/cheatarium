@@ -1333,6 +1333,18 @@ fn configured_game_dirs(contents: &str) -> Vec<(PathBuf, bool)> {
     result
 }
 
+/// Merge repeated Eden/configured roots. An explicit recursive scan wins over
+/// an earlier shallow registration, without scanning the same root twice.
+fn merged_game_roots(roots: Vec<(PathBuf, bool)>) -> Vec<(PathBuf, bool)> {
+    let mut by_root = BTreeMap::<PathBuf, bool>::new();
+    for (path, deep_scan) in roots {
+        by_root.entry(path)
+            .and_modify(|deep| *deep |= deep_scan)
+            .or_insert(deep_scan);
+    }
+    by_root.into_iter().collect()
+}
+
 fn game_suffix(path: &Path) -> Option<String> {
     let ext = path.extension()?.to_str()?.to_ascii_lowercase();
     if matches!(ext.as_str(), "nsp" | "xci" | "nca" | "nro" | "nsz" | "xcz") {
@@ -1607,6 +1619,15 @@ fn run() -> Result<(), ErrBox> {
                 PathBuf::from(args.next().ok_or("--game-dir requires a path")?),
                 false,
             )),
+            "--game-dir-deep" => {
+                let root = PathBuf::from(
+                    args.next().ok_or("--game-dir-deep requires an absolute directory")?
+                );
+                if !root.is_absolute() {
+                    return Err("--game-dir-deep requires an absolute directory".into());
+                }
+                extra_roots.push((root, true));
+            },
             "--title-id" => {
                 let id = args
                     .next()
@@ -1642,7 +1663,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--log" => build_log = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--personal-curation research/switch-personal-curation-v1.json] [--coverage-only] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--game-dir-deep ABSOLUTE_DIR] [--title-id 0100000000010000] [--summary] [--personal-curation research/switch-personal-curation-v1.json] [--coverage-only] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -1721,11 +1742,7 @@ fn run() -> Result<(), ErrBox> {
     }
     roots.extend(extra_roots);
     report.cached_titles = cache_titles(&cache_dir, &mut report.warnings);
-    let mut seen_roots = BTreeSet::new();
-    for (root, deep_scan) in roots {
-        if !seen_roots.insert(root.clone()) {
-            continue;
-        }
+    for (root, deep_scan) in merged_game_roots(roots) {
         let kind = fs::symlink_metadata(&root).map(|m| m.file_type());
         let status = match kind {
             Ok(kind) if kind.is_dir() && !kind.is_symlink() => "scanned",
@@ -1906,6 +1923,19 @@ fn main() {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn explicit_recursive_root_overrides_shallow_eden_registration() {
+        let roots = merged_game_roots(vec![
+            (PathBuf::from("/switch/roms"), false),
+            (PathBuf::from("/switch/roms"), true),
+            (PathBuf::from("/switch/other"), false),
+        ]);
+        assert_eq!(roots, vec![
+            (PathBuf::from("/switch/other"), false),
+            (PathBuf::from("/switch/roms"), true),
+        ]);
+    }
 
     #[test]
     fn parses_qt_array_and_respects_deep_scan_and_pseudodirs() {
