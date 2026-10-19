@@ -1,8 +1,8 @@
 //! Adapt the already privately staged, exact-static-NSP-build Hamlet cheat files
 //! to the existing Eden preview/staging/disabled-by-default installation pipeline.
 //! No private cheat code or owned game inventory is committed to Git.
-use super::{is_build_id, is_title_id, Bundle, Code, ErrBox, IndexedFile};
-use cheatarium_client::Provenance;
+use super::{is_build_id, is_title_id, Bundle, ErrBox, IndexedFile};
+use cheatarium_client::{Code, Provenance};
 use serde::Deserialize;
 use std::env;
 use std::fs;
