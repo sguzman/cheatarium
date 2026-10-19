@@ -1582,6 +1582,7 @@ fn run() -> Result<(), ErrBox> {
     let mut cache_dir = default_cache_dir();
     let mut extra_roots = Vec::new();
     let mut personal_curation: Option<PathBuf> = None;
+    let mut coverage_only = false;
     let mut summary = false;
     let mut inspect_nsp_headers = false;
     let mut audit_all_files = false;
@@ -1623,6 +1624,7 @@ fn run() -> Result<(), ErrBox> {
                 ));
             }
             "--summary" => summary = true,
+            "--coverage-only" => coverage_only = true,
             "--inspect-nsp-headers" => inspect_nsp_headers = true,
             "--audit-all-files" => audit_all_files = true,
             "--build-readiness" => with_readiness = true,
@@ -1639,7 +1641,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--log" => build_log = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--personal-curation research/switch-personal-curation-v1.json] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--personal-curation research/switch-personal-curation-v1.json] [--coverage-only] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -1659,6 +1661,12 @@ fn run() -> Result<(), ErrBox> {
     }
     if personal_curation.is_some() && !summary {
         return Err("--personal-curation requires --summary".into());
+    }
+    if coverage_only
+        && (!summary || personal_curation.is_none() || audit_all_files
+            || inspect_nsp_headers || with_readiness)
+    {
+        return Err("--coverage-only requires --summary and --personal-curation; cannot combine with audit or history capture".into());
     }
     if audit_all_files && inspect_nsp_headers {
         return Err("Choose --audit-all-files or --inspect-nsp-headers, not both".into());
@@ -1866,7 +1874,15 @@ fn run() -> Result<(), ErrBox> {
                     &summary, &report, evidence, history, *exists, *written,
                 ));
             }
-            println!("{}", serde_json::to_string_pretty(&summary)?);
+            if coverage_only {
+                // Just candidate title metadata and cheat research; never export
+                // full registered ROM paths, Eden settings, or log observations.
+                let coverage = summary.personal_coverage.as_ref()
+                    .ok_or("--coverage-only requested without personal coverage")?;
+                println!("{}", serde_json::to_string_pretty(coverage)?);
+            } else {
+                println!("{}", serde_json::to_string_pretty(&summary)?);
+            }
         }
     } else {
         println!("{}", serde_json::to_string_pretty(&report)?);
