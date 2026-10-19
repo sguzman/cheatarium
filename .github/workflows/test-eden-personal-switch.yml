@@ -1,0 +1,32 @@
+name: Verify Eden personal Switch coverage
+
+on:
+  push:
+    branches:
+      - main
+      - "work/eden-personal-coverage-*"
+    paths:
+      - ".github/workflows/test-eden-personal-switch.yml"
+      - "crates/cheatarium-client/src/bin/eden_discover.rs"
+      - "crates/cheatarium-client/src/bin/eden_personal_coverage.rs"
+      - "research/switch-personal-curation-v1.json"
+      - "tools/curate_switch_private.py"
+      - "Cargo.lock"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-eden-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Test exact-build personal coverage against Eden discovery
+        run: cargo test --locked -p cheatarium-client --bin cheatarium-eden-discover
+      - name: Validate local curation preview
+        run: |
+          python3 -m py_compile tools/curate_switch_private.py
+          python3 tools/curate_switch_private.py --title-id 01006A800016E000
