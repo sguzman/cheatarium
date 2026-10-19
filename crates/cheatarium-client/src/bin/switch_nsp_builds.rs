@@ -892,6 +892,25 @@ fn main() {
 mod tests {
     use super::*;
     #[test]
+    fn discovers_nested_cnmt_files_without_parsing_human_readable_tree() {
+        let scratch = Scratch::new().unwrap();
+        let root = scratch.path("extracted-metadata");
+        fs::create_dir_all(root.join("0")).unwrap();
+        let cnmt = root.join("0/Application_0100bc0018138000.cnmt");
+        fs::write(&cnmt, b"synthetic CNMT fixture").unwrap();
+        let files = bounded_cnmt_files(&root).unwrap();
+        assert_eq!(files, vec![cnmt]);
+    }
+    #[cfg(unix)]
+    #[test]
+    fn refuses_symlink_in_extracted_metadata() {
+        let scratch = Scratch::new().unwrap();
+        let root = scratch.path("extracted-metadata");
+        fs::create_dir_all(&root).unwrap();
+        std::os::unix::fs::symlink("/etc/passwd", root.join("untrusted.cnmt")).unwrap();
+        assert_eq!(bounded_cnmt_files(&root), Err("extracted_metadata_symlink_refused".into()));
+    }
+    #[test]
     fn identifies_program_from_nstool_cnmt() {
         let doc = "[ContentMeta]\n  TitleId:               0x01002da013484800\n  Version:               1.0.1 (v65536)\n  Type:                  Patch (129)\n  PatchMetaExtendedHeader:\n    ApplicationId:         0x01002da013484000\n  ContentInfo:\n    0\n      Type:         Program (1)\n      Id:           0123456789abcdef0123456789abcdef\n      Size:         0x123456\n  Digest: abc";
         assert_eq!(
