@@ -338,6 +338,23 @@ fn nca_nstool_args(keys: &Path, tickets: &[PathBuf]) -> Vec<String> {
     args
 }
 // Do not include raw tool output or key material in user-visible reports.
+// Distinguish genuinely absent game metadata from an encrypted partition that
+// the installed keyset cannot open. No cryptographic key values are reported.
+fn discovery_blocked_status(reason: &str) -> &'static str {
+    if reason.contains("_missing_keys_") && reason.rsplit("_missing_keys_").next()
+        .and_then(|count| count.parse::<usize>().ok()).is_some_and(|count| count > 0)
+    {
+        "blocked_metadata_decryption_key_unavailable"
+    } else if reason.starts_with("metadata_unresolved") {
+        "blocked_metadata_unresolved"
+    } else if reason == "metadata_missing_cnmt_nca" {
+        "blocked_missing_metadata_nca"
+    } else if reason == "invalid_nsp_pfs0" {
+        "blocked_invalid_nsp"
+    } else {
+        "blocked_metadata_inspection_failed"
+    }
+}
 fn metadata_partition_diagnosis(output: &str) -> (usize, usize) {
     let unreadable = output
         .lines()
@@ -804,6 +821,7 @@ fn run() -> Result<(), ErrBox> {
     let scratch = Scratch::new_at(&scratch_root)?;
     let mut packages = Vec::new();
     let mut warnings = Vec::new();
+    let mut inspected_file_error: Option<String> = None;
     for (i, file) in files.iter().enumerate() {
         let temp = Scratch::new_at(&scratch_root)?;
         match discover_package(file, &keys, &temp) {
@@ -811,7 +829,12 @@ fn run() -> Result<(), ErrBox> {
                 packages.push(pkg)
             }
             Ok(_) => {}
-            Err(kind) => warnings.push(format!("package_{i}: {kind}")),
+            Err(kind) => {
+                if inspect_file.is_some() {
+                    inspected_file_error = Some(kind.clone());
+                }
+                warnings.push(format!("package_{i}: {kind}"));
+            },
         }
     }
     let mut grouped = BTreeMap::<String, Vec<Package>>::new();
@@ -908,7 +931,13 @@ fn run() -> Result<(), ErrBox> {
                 version: 0,
                 build_id: None,
                 cheat_build_id: None,
-                status: "not_found_in_scanned_nsp_content_metadata".into(),
+                status: if inspect_file.is_some() {
+                    inspected_file_error.as_deref()
+                        .map(discovery_blocked_status)
+                        .unwrap_or("blocked_title_not_found_in_inspected_metadata")
+                } else {
+                    "not_found_in_scanned_nsp_content_metadata"
+                }.into(),
             });
         }
     }
@@ -958,6 +987,16 @@ mod tests {
             bounded_cnmt_files(&root),
             Err("extracted_metadata_symlink_refused".into())
         );
+    }
+    #[test]
+    fn classifies_missing_content_key_as_blocked_not_absent_rom() {
+        assert_eq!(
+            discovery_blocked_status("metadata_unresolved_meta_ncas_1_ticket_count_0_unreadable_partitions_1_missing_keys_1"),
+            "blocked_metadata_decryption_key_unavailable"
+        );
+        assert_eq!(discovery_blocked_status("metadata_unresolved_meta_ncas_1_ticket_count_0_unreadable_partitions_1_missing_keys_0"), "blocked_metadata_unresolved");
+        assert_eq!(discovery_blocked_status("metadata_missing_cnmt_nca"), "blocked_missing_metadata_nca");
+        assert_eq!(discovery_blocked_status("invalid_nsp_pfs0"), "blocked_invalid_nsp");
     }
     #[test]
     fn metadata_nca_commands_include_package_tickets() {
