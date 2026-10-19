@@ -672,7 +672,7 @@ pub(super) fn already_installed_files_unchanged(
 
 #[derive(Debug, Serialize)]
 pub(super) struct RenameItem {
-    previous_addon: String,
+    previous_addon: Option<String>,
     readable_addon: String,
     status: &'static str,
 }
@@ -792,7 +792,7 @@ pub(super) fn rename_legacy_file_only(
             moves.push((old_dir, new_dir));
         }
         addons.push(RenameItem {
-            previous_addon: old_name,
+            previous_addon: prior_name,
             readable_addon: new_name,
             status,
         });
