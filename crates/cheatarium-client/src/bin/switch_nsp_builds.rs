@@ -9,6 +9,7 @@ use std::fs::{self, File};
 use std::io::Read;
 use std::path::{Path, PathBuf};
 use std::process::Command;
+use std::sync::OnceLock;
 use std::time::{SystemTime, UNIX_EPOCH};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
@@ -17,6 +18,8 @@ const DEFAULT_MAX_NCA_GIB: u64 = 32;
 const ABSOLUTE_MAX_NCA_GIB: u64 = 64;
 const MAX_META_BYTES: u64 = 48 * 1024 * 1024;
 const MAX_COMMAND_OUTPUT: usize = 1024 * 1024;
+// Child-only HOME override: NSTool loads title.keys only from $HOME/.switch/.
+static NSTOOL_KEY_HOME: OnceLock<PathBuf> = OnceLock::new();
 
 #[derive(Debug)]
 struct NcaEntry {
@@ -108,8 +111,14 @@ impl Drop for Scratch {
     }
 }
 fn safe_output(tool: &str, args: &[String]) -> Result<String, String> {
-    let result = Command::new(tool)
-        .args(args)
+    let mut command = Command::new(tool);
+    command.args(args);
+    if tool == "nstool" {
+        if let Some(home) = NSTOOL_KEY_HOME.get() {
+            command.env("HOME", home);
+        }
+    }
+    let result = command
         .output()
         .map_err(|_| format!("{tool}_missing_or_cannot_execute"))?;
     // Do not expose stdout/stderr: external tools may include keys or raw package paths.
@@ -232,6 +241,7 @@ fn keyfile(specified: Option<PathBuf>) -> Result<PathBuf, ErrBox> {
         let home = PathBuf::from(env::var_os("HOME").ok_or("HOME_not_set")?);
         candidates.extend([
             home.join(".switch/prod.keys"),
+            PathBuf::from("/drive/roms/switch/keys/system/prod.keys"),
             home.join(".local/share/eden/keys/prod.keys"),
             home.join(".config/eden/keys/prod.keys"),
         ]);
@@ -249,6 +259,43 @@ fn keyfile(specified: Option<PathBuf>) -> Result<PathBuf, ErrBox> {
     }
     Err("missing_local_prod_keys_supply_--keyset_path_without_printing_keys".into())
 }
+fn validate_local_keyfile(path: &Path) -> Result<bool, ErrBox> {
+    match fs::symlink_metadata(path) {
+        Ok(meta) => {
+            if meta.file_type().is_symlink() || !meta.is_file() {
+                return Err("keyset_path_must_be_a_regular_non_symlink_file".into());
+            }
+            if meta.len() == 0 || meta.len() > 1024 * 1024 {
+                return Err("keyset_size_outside_safety_bounds".into());
+            }
+            Ok(true)
+        }
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => Ok(false),
+        Err(_) => Err("cannot_stat_local_keyfile".into()),
+    }
+}
+// NSTool upstream accepts -k for prod.keys, but its --titlekeyset switch is
+// disabled. The only supported title.keys lookup is $HOME/.switch/title.keys.
+// Use a private temporary HOME for NSTool children, linking to the existing
+// local title.keys; never read key values, pass them in argv, or copy them.
+#[cfg(unix)]
+fn setup_nstool_key_home(
+    scratch: &Scratch,
+    title_keys: &Path,
+) -> Result<PathBuf, ErrBox> {
+    if !validate_local_keyfile(title_keys)? {
+        return Err("requested_title_keys_file_does_not_exist".into());
+    }
+    let home = scratch.path("nstool-key-home");
+    let switch_dir = home.join(".switch");
+    fs::create_dir_all(&switch_dir)?;
+    use std::os::unix::fs::{symlink, PermissionsExt};
+    fs::set_permissions(&home, fs::Permissions::from_mode(0o700))?;
+    fs::set_permissions(&switch_dir, fs::Permissions::from_mode(0o700))?;
+    symlink(title_keys.canonicalize()?, switch_dir.join("title.keys"))?;
+    Ok(home)
+}
+
 fn extract_nca(
     nsp: &Path,
     entry: &NcaEntry,
@@ -749,6 +796,7 @@ fn extract_build(
 fn run() -> Result<(), ErrBox> {
     let mut roms = PathBuf::from("/drive/roms/switch/roms");
     let mut specified_keys = None;
+    let mut specified_title_keys: Option<PathBuf> = None;
     let mut limit = 250usize;
     let mut max_nca_gib = DEFAULT_MAX_NCA_GIB;
     let mut scratch_dir: Option<PathBuf> = None;
@@ -761,6 +809,9 @@ fn run() -> Result<(), ErrBox> {
             "--roms" => roms = PathBuf::from(args.next().ok_or("--roms needs a directory")?),
             "--keyset" => {
                 specified_keys = Some(PathBuf::from(args.next().ok_or("--keyset needs a path")?))
+            }
+            "--title-keyset" => {
+                specified_title_keys = Some(PathBuf::from(args.next().ok_or("--title-keyset needs a path")?))
             }
             "--limit" => limit = args.next().ok_or("--limit needs a number")?.parse()?,
             "--max-nca-gib" => {
@@ -792,7 +843,7 @@ fn run() -> Result<(), ErrBox> {
             "--metadata-only" => metadata_only = true,
             "--json" => {}
             "--help" | "-h" => {
-                println!("Offline one-shot NSP Build ID inspector: --roms DIRECTORY --keyset PROD_KEYS --title-id ID (repeat) --limit COUNT --max-nca-gib 1..64 (default 32) --scratch-dir ABSOLUTE_PATH --inspect-file SINGLE_NSP --metadata-only --json. Requires nstool and hactool; XCI/NSZ/ XCZ are inventoried but not decrypted. Never writes to Eden or source game files.");
+                println!("Offline one-shot NSP Build ID inspector: --roms DIRECTORY --keyset PROD_KEYS --title-keyset TITLE_KEYS --title-id ID (repeat) --limit COUNT --max-nca-gib 1..64 (default 32) --scratch-dir ABSOLUTE_PATH --inspect-file SINGLE_NSP --metadata-only --json. Requires nstool and hactool; XCI/NSZ/ XCZ are inventoried but not decrypted. Never writes to Eden or source game files.");
                 return Ok(());
             }
             _ => return Err("unknown_option".into()),
@@ -823,6 +874,23 @@ fn run() -> Result<(), ErrBox> {
     };
     let scratch_root = scratch_dir.unwrap_or(Scratch::default_root()?);
     let scratch = Scratch::new_at(&scratch_root)?;
+    let explicit_title_keyset = specified_title_keys.is_some();
+    let title_keys = specified_title_keys
+        .or_else(|| keys.parent().map(|parent| parent.join("title.keys")));
+    if let Some(title_keys) = title_keys {
+        if validate_local_keyfile(&title_keys)? {
+            #[cfg(unix)]
+            {
+                let temp_home = setup_nstool_key_home(&scratch, &title_keys)?;
+                NSTOOL_KEY_HOME.set(temp_home)
+                    .map_err(|_| "nstool_key_home_already_initialized")?;
+            }
+            #[cfg(not(unix))]
+            return Err("temporary_title_keys_home_only_supported_on_unix".into());
+        } else if explicit_title_keyset {
+            return Err("explicit_title_keyset_file_does_not_exist".into());
+        }
+    }
     let mut packages = Vec::new();
     let mut warnings = Vec::new();
     let mut inspected_file_error: Option<String> = None;
@@ -1009,6 +1077,19 @@ mod tests {
             discovery_blocked_status("invalid_nsp_pfs0"),
             "blocked_invalid_nsp"
         );
+    }
+    #[cfg(unix)]
+    #[test]
+    fn makes_private_title_key_home_without_copying_key_values() {
+        let scratch = Scratch::new().unwrap();
+        let keys = scratch.path("title.keys");
+        fs::write(&keys, b"dummy_test_data_not_real_keys").unwrap();
+        let home = setup_nstool_key_home(&scratch, &keys).unwrap();
+        let link = home.join(".switch/title.keys");
+        assert!(fs::symlink_metadata(&link).unwrap().file_type().is_symlink());
+        assert_eq!(fs::read_link(&link).unwrap(), keys.canonicalize().unwrap());
+        assert_eq!(std::fs::read(&link).unwrap(), b"dummy_test_data_not_real_keys");
+        assert!(!home.join(".switch/prod.keys").exists());
     }
     #[test]
     fn metadata_nca_commands_include_package_tickets() {
