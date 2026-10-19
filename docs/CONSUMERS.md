@@ -571,5 +571,15 @@ cargo run --release --locked -p cheatarium-client --bin cheatarium-switch-nsp-bu
 
 **Observed six-game static scan (2026-10-19):** Four executable Build IDs extracted from 9 NSP files: Odyssey `B424BE150A8E7D78`, Mario Kart 8 Deluxe `96DFD1769E560C27`, Skyward Sword HD `D824D4B1BBD45D03`, and Link's Awakening `AE16F71E002AF8CB`. These are the *first 16 hex digits* of each full 32-byte NSO header Build ID, matching Switch cheat filename conventions. New output has separate `cheat_build_id` (16 hex) and `build_id` (32 hex) fields. Smash Ultimate's selected update was blocked by the previous 12 GiB copy cap; after enabling configurable size limits, it still needs actual extraction to confirm a Build ID. Super Mario RPG was not found in the nine NSP packages. The CLI now counts `xci`, `nsz`, and `xcz` alongside `nsp`, but **does not yet decrypt these other formats**. Never infer a Build ID from a similar filename or a different title version.
 
+**Diagnosing an NSP that exists but is not recognized:** the focused CLI probe reports why CNMT Program metadata is unresolved (missing metadata NCA, extraction failure, unreadable filesystem tree, no CNMT filename, CNMT extraction failure, parse failure, or Program NCA missing from package). It never guesses a Title ID from the file's name.
+
+```fish
+cargo run --release --locked -p cheatarium-client --bin cheatarium-switch-nsp-builds -- \
+  --inspect-file '/drive/roms/switch/roms/super-mario-rpg/Super Mario RPG [0100BC0018138000][v0].nsp' \
+  --title-id 0100BC0018138000 --metadata-only --json
+```
+
+Use `--metadata-only` when diagnosing recognition failures to avoid extracting the full game executable again. A diagnostic warning such as `package_0: metadata_unresolved_meta_ncas_1_extracted_1_trees_1_cnmt_paths_0_...` tells the developer which stage failed without exposing keys or raw executable bytes. A reported `metadata_discovered_program_extraction_skipped` means metadata recognition succeeded, **not** that the executable Build ID has been extracted. Debug counts are designed for unattended Jobflick logs.
+
 The older launch-log watcher is **not part of this workflow**. Prefer static extraction when accessible NSP data and decryption keys are available. It is not required to build, scan, or curate new Switch cheat sources.
 
