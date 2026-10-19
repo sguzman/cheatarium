@@ -341,8 +341,12 @@ fn nca_nstool_args(keys: &Path, tickets: &[PathBuf]) -> Vec<String> {
 // Distinguish genuinely absent game metadata from an encrypted partition that
 // the installed keyset cannot open. No cryptographic key values are reported.
 fn discovery_blocked_status(reason: &str) -> &'static str {
-    if reason.contains("_missing_keys_") && reason.rsplit("_missing_keys_").next()
-        .and_then(|count| count.parse::<usize>().ok()).is_some_and(|count| count > 0)
+    if reason.contains("_missing_keys_")
+        && reason
+            .rsplit("_missing_keys_")
+            .next()
+            .and_then(|count| count.parse::<usize>().ok())
+            .is_some_and(|count| count > 0)
     {
         "blocked_metadata_decryption_key_unavailable"
     } else if reason.starts_with("metadata_unresolved") {
@@ -834,7 +838,7 @@ fn run() -> Result<(), ErrBox> {
                     inspected_file_error = Some(kind.clone());
                 }
                 warnings.push(format!("package_{i}: {kind}"));
-            },
+            }
         }
     }
     let mut grouped = BTreeMap::<String, Vec<Package>>::new();
@@ -932,12 +936,14 @@ fn run() -> Result<(), ErrBox> {
                 build_id: None,
                 cheat_build_id: None,
                 status: if inspect_file.is_some() {
-                    inspected_file_error.as_deref()
+                    inspected_file_error
+                        .as_deref()
                         .map(discovery_blocked_status)
                         .unwrap_or("blocked_title_not_found_in_inspected_metadata")
                 } else {
                     "not_found_in_scanned_nsp_content_metadata"
-                }.into(),
+                }
+                .into(),
             });
         }
     }
@@ -995,8 +1001,14 @@ mod tests {
             "blocked_metadata_decryption_key_unavailable"
         );
         assert_eq!(discovery_blocked_status("metadata_unresolved_meta_ncas_1_ticket_count_0_unreadable_partitions_1_missing_keys_0"), "blocked_metadata_unresolved");
-        assert_eq!(discovery_blocked_status("metadata_missing_cnmt_nca"), "blocked_missing_metadata_nca");
-        assert_eq!(discovery_blocked_status("invalid_nsp_pfs0"), "blocked_invalid_nsp");
+        assert_eq!(
+            discovery_blocked_status("metadata_missing_cnmt_nca"),
+            "blocked_missing_metadata_nca"
+        );
+        assert_eq!(
+            discovery_blocked_status("invalid_nsp_pfs0"),
+            "blocked_invalid_nsp"
+        );
     }
     #[test]
     fn metadata_nca_commands_include_package_tickets() {
