@@ -139,8 +139,8 @@ class PrivateCuratorTests(unittest.TestCase):
         manifest = {"upstream": {"snapshot_commit": sha}}
         url = f"https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/{sha}/cheats/{title}.json"
         body = {
-            bid: {"[One]": "[One]\\n04000000 00000001"},
-            other: {"[Two]": "[Two]\\n04000000 00000002"},
+            bid: {"[One]": "[One]\n04000000 00000001"},
+            other: {"[Two]": "[Two]\n04000000 00000002"},
         }
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory) / "private-switch-curation"
