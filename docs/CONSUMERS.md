@@ -324,7 +324,7 @@ Use `cheatarium-eden-plan` to **preview** independent per-cheat Eden add-ons for
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db generated/v1 --title-id 0100000000010000 --build-id B424BE150A8E7D78 --json
 ```
 
-The plan lists each original section's name, source record and ordinal, code-line count, a source-text checksum, a lexical syntax status, and its proposed individual path under `$XDG_DATA_HOME/eden/load/<TITLEID>/<readable cheat name>/cheats/<BUILDID>.txt` (with `~/.local/share` as the standard XDG default). `--mods-root` customizes the **displayed destination** for portable Eden installs. Destination paths are previews, not directory creation. Each entry retains independently traceable source provenance; duplicate labels receive a numeric suffix and do not collide.
+The plan lists each original section's name, source record and ordinal, code-line count, a source-text checksum, a lexical syntax status, and its proposed individual path under `$XDG_DATA_HOME/eden/load/<TITLEID>/<Cheatarium ordinal, name, hash>/cheats/<BUILDID>.txt` for the multi-build legacy mode (with `~/.local/share` as the standard XDG default). **Scoped `--files-only` installs instead use `<readable cheat name>` with no internal ordinal or hash**, and existing file-only add-ons can be migrated with `--rename-installed`. `--mods-root` customizes the **displayed destination** for portable Eden installs. Destination paths are previews, not directory creation. Each entry retains independently traceable source provenance; duplicate labels receive a numeric suffix and do not collide.
 
 **Preview mode** (without `--stage-dir` or `--install`) is read-only: it does not write or check existing mod paths, enable cheats, inspect executable Build IDs, or verify cheat effects. Its `installation_allowed: false` and `installed_build_id_verified: false` mean that compatibility remains unverified, **not** that explicit file installation is unavailable. The archived Sharkive text is not gameplay-tested; a lexical hex check is not execution validation. Metadata-only external references never become cheat payloads.
 
@@ -377,7 +377,7 @@ cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --db ge
 
 ### Readable Eden add-on names and safe legacy rename
 
-Cheatarium now uses the original human-readable cheat descriptions as folder names, e.g. `Infinite Health Save 1`, `9999 Coins Save 1`, `Refill Health Save 1 (L+R)`, and `Max Purple Coins Save 1`. Duplicate descriptions get a numeric suffix. Internal Cheatarium ordinals and hashes remain in source records and reports, **not the Eden Add-ons UI**.
+Cheatarium's scoped `--files-only` mode now uses the original human-readable cheat descriptions as folder names, e.g. `Infinite Health Save 1`, `9999 Coins Save 1`, `Refill Health Save 1 (L+R)`, and `Max Purple Coins Save 1`. Duplicate descriptions get a numeric suffix. Internal Cheatarium ordinals and hashes remain in source records and reports, **not the Eden Add-ons UI**.
 
 For installations from the older `Cheatarium-0000-...-<hash>` naming scheme, run a **read-only migration preview** after closing Eden:
 
