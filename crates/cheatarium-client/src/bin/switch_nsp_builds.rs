@@ -273,6 +273,37 @@ fn extract_nca(
     }
     Ok(())
 }
+// NSTool's --fstree text is useful for users but is not a machine-readable
+// manifest. Extract only the bounded metadata NCA into the private scratch tree
+// when filename discovery or the single-file extraction path fails.
+fn bounded_cnmt_files(root: &Path) -> Result<Vec<PathBuf>, String> {
+    let mut files = Vec::new();
+    let mut pending = vec![(root.to_path_buf(), 0usize)];
+    let mut entries = 0usize;
+    while let Some((dir, depth)) = pending.pop() {
+        if depth > 5 { return Err("metadata_directory_too_deep".into()); }
+        for entry in fs::read_dir(&dir).map_err(|_| "cannot_read_extracted_metadata".to_owned())? {
+            entries += 1;
+            if entries > 4096 { return Err("too_many_extracted_metadata_entries".into()); }
+            let entry = entry.map_err(|_| "cannot_read_extracted_metadata_entry".to_owned())?;
+            let ty = entry.file_type().map_err(|_| "cannot_stat_extracted_metadata_entry".to_owned())?;
+            if ty.is_symlink() { return Err("extracted_metadata_symlink_refused".into()); }
+            if ty.is_dir() {
+                pending.push((entry.path(), depth + 1));
+            } else if ty.is_file()
+                && entry.file_name().to_string_lossy().to_ascii_lowercase().ends_with(".cnmt")
+            {
+                let meta = entry.metadata().map_err(|_| "cannot_stat_cnmt".to_owned())?;
+                if meta.len() > MAX_META_BYTES { return Err("extracted_cnmt_too_large".into()); }
+                files.push(entry.path());
+                if files.len() > 64 { return Err("too_many_extracted_cnmt_files".into()); }
+            }
+        }
+    }
+    files.sort();
+    Ok(files)
+}
+
 fn discover_package(
     path: &Path,
     keys: &Path,
@@ -293,6 +324,10 @@ fn discover_package(
     let mut extracted_cnmt = 0usize;
     let mut parsed_cnmt = 0usize;
     let mut matched_program = 0usize;
+    let mut fallback_cnmt_paths = 0usize;
+    let mut fallback_parsed_cnmts = 0usize;
+    let mut fallback_matched_programs = 0usize;
+    let mut fallback_extractions = 0usize;
     for (i, meta) in metas.iter().enumerate() {
         if meta.size > MAX_META_BYTES {
             continue;
@@ -386,15 +421,65 @@ fn discover_package(
                 }
             }
         }
+        // When stdout's human-readable tree has no recognizable .cnmt name
+        // (as observed on Super Mario RPG), or single-file path discovery
+        // fails, let NSTool itself extract the bounded metadata filesystem.
+        // This avoids assuming CNMT filenames have a fixed printed layout.
+        if found.iter().all(|pkg| pkg.file != path.to_path_buf()) {
+            let extracted_root = scratch.path(&format!("meta-{i}-extracted"));
+            if fs::create_dir(&extracted_root).is_ok() {
+                let full_meta_args = [
+                    "-t".into(),
+                    "nca".into(),
+                    "-k".into(),
+                    keys.to_string_lossy().to_string(),
+                    "-x".into(),
+                    extracted_root.to_string_lossy().to_string(),
+                    dest.to_string_lossy().to_string(),
+                ];
+                if safe_output("nstool", &full_meta_args).is_ok() {
+                    fallback_extractions += 1;
+                    if let Ok(extracted_cnmts) = bounded_cnmt_files(&extracted_root) {
+                        fallback_cnmt_paths += extracted_cnmts.len();
+                        for cnmt in extracted_cnmts {
+                            let info = safe_output(
+                                "nstool",
+                                &[
+                                    "-t".into(),
+                                    "cnmt".into(),
+                                    cnmt.to_string_lossy().to_string(),
+                                ],
+                            ).unwrap_or_default();
+                            if let Some((title, version, kind, program)) = parse_content_metadata(&info) {
+                                fallback_parsed_cnmts += 1;
+                                if let Some(entry) = items.iter().find(|item| item.name.eq_ignore_ascii_case(&program)) {
+                                    fallback_matched_programs += 1;
+                                    found.push(Package {
+                                        file: path.to_path_buf(),
+                                        title,
+                                        version,
+                                        kind,
+                                        program: entry.name.clone(),
+                                        program_size: entry.size,
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            let _ = fs::remove_dir_all(extracted_root);
+        }
         let _ = fs::remove_file(dest);
     }
     found.sort_by(|a, b| b.version.cmp(&a.version));
     match found.into_iter().next() {
         Some(pkg) => Ok(Some(pkg)),
         None => Err(format!(
-            "metadata_unresolved_meta_ncas_{}_extracted_{}_trees_{}_cnmt_paths_{}_extracted_cnmts_{}_parsed_cnmts_{}_matched_programs_{}",
+            "metadata_unresolved_meta_ncas_{}_extracted_{}_trees_{}_cnmt_paths_{}_extracted_cnmts_{}_parsed_cnmts_{}_matched_programs_{}_fallback_extractions_{}_fallback_cnmt_paths_{}_fallback_parsed_{}_fallback_matched_{}",
             metas.len(), extracted_meta, readable_tree, cnmt_paths,
-            extracted_cnmt, parsed_cnmt, matched_program
+            extracted_cnmt, parsed_cnmt, matched_program,
+            fallback_extractions, fallback_cnmt_paths, fallback_parsed_cnmts, fallback_matched_programs
         )),
     }
 }
