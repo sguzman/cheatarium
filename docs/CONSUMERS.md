@@ -442,6 +442,12 @@ Games with existing native cheat sources sort first, but candidate source counts
 
 
 
+For unresolved files, `unresolved_file_review` provides sanitized filenames and container types without full paths. Its default is **no header reads**. Add `--inspect-coverage-unresolved` together with `--coverage-only` to inspect only the outer PFS0 metadata of up to 24 unresolved NSPs (up to 256 KiB each); ticket **filenames** can suggest Title IDs even when the outer NSP filename has no ID. The report distinguishes an advisory base-game Title ID hint from an existing known game and never treats it as authenticated installed content. Non-NSP types are listed but not parsed. All candidate filenames remain personal inventory information.
+
+```sh
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --game-dir-deep /drive/roms/switch/roms --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --inspect-coverage-unresolved --json
+```
+
 If the queue reports **zero new games**, check the `scan_evidence` object before concluding the library has only six. It reports how many game files were listed, how many lacked usable filename Title IDs, how many directories were skipped due to nonrecursive settings, and whether any roots were unavailable or traversal limits were hit. An incomplete scan cannot establish full game coverage.
 
 For your owned Switch library arranged in nested game directories, `--game-dir-deep /drive/roms/switch/roms` explicitly requests a recursive directory walk. Unlike the shallow `--game-dir DIR` option, this descends into subdirectories; it does not follow symlinks, open ROMs, decrypt content, or modify Eden. If that directory is already registered shallowly in Eden, the explicit recursive scan takes precedence for the same root without scanning it twice. The existing traversal limits still apply (64 levels, 50,000 directory entries, 20,000 game files). The following command discovers nested filename Title IDs and reports only compact metadata:
