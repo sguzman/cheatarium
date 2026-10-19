@@ -557,6 +557,32 @@ For Skyward Sword HD (`01002DA013484000`), external source collections list at l
 
 
 
+### Existing Eden installer: locally staged exact-build cheats
+
+The original source-import pipeline only admitted indexed Sharkive records. The `cheatarium-eden-plan --private-curation` path now adapts the **five locally staged pinned Hamlet code bodies** into the **same existing per-cheat Eden addon preview, isolated staging, and disabled-by-default installer**. The parser validates the exact NSP-derived Build ID and manifest native-section count, requires a bounded regular private file with no symlink ancestors, and rejects malformed hex sections. Source bodies remain local and are not committed to Git.
+
+Preview one game without writing or reading ROMs:
+
+```sh
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --private-curation --title-id 0100000000010000 --json
+```
+
+Optional isolated export outside Eden (`DIR` must be a new absolute directory with an existing parent):
+
+```sh
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --private-curation --title-id 0100000000010000 --stage-dir /tmp/cheatarium-odyssey-stage --json
+```
+
+Explicit install for **one** known Title ID, with Eden fully closed:
+
+```sh
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --private-curation --title-id 0100000000010000 --install --json
+```
+
+The install uses the existing `eden_install::install` transaction: it verifies destinations are not symlinks, refuses to overwrite live add-ons, creates a recoverable QSettings backup, records every new add-on as disabled **before** writing its code files, and will not proceed while Eden is running. Nothing is enabled or gameplay-tested by the installer. It does not install all games automatically. `--private-curation` explicitly disallows automatic, file-only and historical-only modes as well as a manually guessed Build ID. The original `--files-only` mode remains a different, potentially enabled-by-default pathway: do not substitute it for this private mode.
+
+**Important:** NSP-extracted Build IDs and even historical launch matches are not proof of the currently running Eden executable. Installing code as disabled is only a preparation step; activating a cheat requires exact active executable confirmation and individual in-game review. Smash's `CBD5A9B56EA859BA` source has *no* pinned Hamlet native body; this private-source pathway fails closed for Smash until its separately attributed third-party source can be acquired and validated. The absence of RPG from the **Eden cache** is also not proof the game cannot appear or launch in Eden.
+
 ### Rust gate: which privately staged Switch cheats can be matched?
 
 The native `cheatarium-eden-curated-readiness` CLI checks the six-game curated matrix against privately staged native cheat files, Eden's most recent log, and Cheatarium's saved **main-NSO** Build ID history. It never promotes weak lookup observations or filenames into executable version evidence. The command is deliberately read-only:
