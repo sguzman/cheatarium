@@ -12,6 +12,8 @@ use std::path::{Path, PathBuf};
 #[path = "eden_builds.rs"]
 #[allow(dead_code)]
 mod eden_builds;
+#[path = "eden_personal_coverage.rs"]
+mod eden_personal_coverage;
 
 type ErrBox = Box<dyn Error + Send + Sync>;
 const MAX_ENTRIES: usize = 50_000;
@@ -407,6 +409,8 @@ struct InventorySummary {
     saved_disabled_addons: Vec<SavedDisabledAddons>,
     #[serde(skip_serializing_if = "Option::is_none")]
     build_readiness: Option<BuildReadiness>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    personal_coverage: Option<eden_personal_coverage::Coverage>,
     cached_update_displays: Vec<CachedUpdateDisplay>,
     installed_build_id_verified: bool,
     warnings: Vec<&'static str>,
@@ -984,6 +988,7 @@ fn summarize_report(report: &Report) -> InventorySummary {
         inspected_nsp_file_bytes_read: 0,
         saved_disabled_addons: Vec::new(),
         build_readiness: None,
+        personal_coverage: None,
         cached_update_displays: Vec::new(),
         installed_build_id_verified: false,
         warnings: vec![
@@ -1576,6 +1581,7 @@ fn run() -> Result<(), ErrBox> {
     let mut config = default_config();
     let mut cache_dir = default_cache_dir();
     let mut extra_roots = Vec::new();
+    let mut personal_curation: Option<PathBuf> = None;
     let mut summary = false;
     let mut inspect_nsp_headers = false;
     let mut audit_all_files = false;
@@ -1611,6 +1617,11 @@ fn run() -> Result<(), ErrBox> {
                 explicit_ids.insert(id);
             }
             "--json" => {}
+            "--personal-curation" => {
+                personal_curation = Some(PathBuf::from(
+                    args.next().ok_or("--personal-curation requires a JSON manifest path")?,
+                ));
+            }
             "--summary" => summary = true,
             "--inspect-nsp-headers" => inspect_nsp_headers = true,
             "--audit-all-files" => audit_all_files = true,
@@ -1628,7 +1639,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--log" => build_log = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--title-id 0100000000010000] [--summary] [--personal-curation research/switch-personal-curation-v1.json] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -1645,6 +1656,9 @@ fn run() -> Result<(), ErrBox> {
     }
     if with_readiness && !summary {
         return Err("--build-readiness requires --summary".into());
+    }
+    if personal_curation.is_some() && !summary {
+        return Err("--personal-curation requires --summary".into());
     }
     if audit_all_files && inspect_nsp_headers {
         return Err("Choose --audit-all-files or --inspect-nsp-headers, not both".into());
@@ -1819,6 +1833,11 @@ fn run() -> Result<(), ErrBox> {
         };
         if audit_all_files {
             let mut audit = run_registered_files_audit(summary, &report);
+            if let Some(path) = &personal_curation {
+                audit.inventory.personal_coverage = Some(
+                    eden_personal_coverage::read_coverage(path, &audit.inventory.candidate_base_titles)?,
+                );
+            }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
                 audit.inventory.read_only = !written;
                 audit.inventory.build_readiness = Some(build_readiness(
@@ -1832,6 +1851,11 @@ fn run() -> Result<(), ErrBox> {
             }
             println!("{}", serde_json::to_string_pretty(&audit)?);
         } else {
+            if let Some(path) = &personal_curation {
+                summary.personal_coverage = Some(
+                    eden_personal_coverage::read_coverage(path, &summary.candidate_base_titles)?,
+                );
+            }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
                 summary.read_only = !written;
                 summary.build_readiness = Some(build_readiness(
