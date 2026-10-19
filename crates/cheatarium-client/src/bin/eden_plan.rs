@@ -201,7 +201,7 @@ fn select<'a>(bundle: &'a Bundle, title: &str, build: &str) -> Vec<&'a IndexedFi
         .collect()
 }
 
-fn preview(bundle: &Bundle, title: &str, build: &str, mod_root: &Path) -> Result<Preview, ErrBox> {
+fn preview_with_names(bundle: &Bundle, title: &str, build: &str, mod_root: &Path, readable: bool) -> Result<Preview, ErrBox> {
     if !is_title_id(title) || !is_build_id(build) {
         return Err("Expected exact 16-hex Switch Title ID (01...) and Build ID".into());
     }
@@ -234,13 +234,18 @@ fn preview(bundle: &Bundle, title: &str, build: &str, mod_root: &Path) -> Result
             // Source descriptions are the UI label. In the rare event two
             // source entries have identical labels, suffix numerically.
             // Keep provenance and source checksums in the report, not Eden UI.
-            let friendly = eden_display_label(description);
-            let count = used_friendly_names.entry(friendly.clone()).or_default();
-            *count += 1;
-            let filename = if *count == 1 {
-                friendly
+            let filename = if readable {
+                let friendly = eden_display_label(description);
+                let count = used_friendly_names.entry(friendly.clone()).or_default();
+                *count += 1;
+                if *count == 1 { friendly } else { format!("{friendly} ({count})") }
             } else {
-                format!("{friendly} ({count})")
+                // Unscoped archived-build installs can contain the same name
+                // across different executable versions. Preserve the legacy
+                // collision-resistant namespace for that workflow.
+                let ident = format!("{}:{}:{}", file.id, entry.ordinal, text);
+                let digest = format!("{:x}", Sha256::digest(ident.as_bytes()));
+                format!("Cheatarium-{:04}-{}-{}", entry.ordinal, safe_label(description), &digest[..12])
             };
             let path = mod_root
                 .join(title)
@@ -524,6 +529,20 @@ fn stage(
     Ok(report)
 }
 
+// Keep the existing all-archive default collision-resistant. The scoped
+// file-only pathway uses readable UI names without losing legacy support.
+fn preview(
+    bundle: &Bundle, title: &str, build: &str, mods_root: &Path
+) -> Result<Preview, ErrBox> {
+    preview_with_names(bundle, title, build, mods_root, false)
+}
+
+fn preview_readable(
+    bundle: &Bundle, title: &str, build: &str, mods_root: &Path
+) -> Result<Preview, ErrBox> {
+    preview_with_names(bundle, title, build, mods_root, true)
+}
+
 #[derive(Debug, Serialize)]
 struct SkippedAutomaticBuild {
     title_id: String,
@@ -686,7 +705,8 @@ fn run_automatic(
     let mut installed = Vec::new();
     let mut already_installed = 0usize;
     for (title, build) in pairs {
-        let candidate = preview(bundle, &title, &build, mod_root)?;
+        let candidate = if files_only { preview_readable(bundle, &title, &build, mod_root)? }
+            else { preview(bundle, &title, &build, mod_root)? };
         if candidate.proposed_addons.is_empty() {
             skipped.push(SkippedAutomaticBuild {
                 title_id: title,
@@ -904,7 +924,7 @@ fn run() -> Result<(), ErrBox> {
                 return Err("Legacy rename requires exactly one archived Build ID with unambiguous historical main-executable evidence".into());
             }
             let (title_id, build_id) = &selected[0];
-            let plan = preview(&bundle, title_id, build_id, &mod_root)?;
+            let plan = preview_readable(&bundle, title_id, build_id, &mod_root)?;
             let result = eden_install::rename_legacy_file_only(
                 &bundle, &plan, &mod_root, &config, dry_run,
             )?;
