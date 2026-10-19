@@ -530,9 +530,10 @@ mod tests {
         assert_eq!(result.games[0].pinned_native_exact_build_sections, 0);
         assert_eq!(result.games[0].static_nsp_build_id, "CBD5A9B56EA859BA");
         assert_eq!(result.games[0].exact_build_external_sources.len(), 3);
-        assert!(result.games[0].exact_build_external_sources.iter().all(|source|
-            !source.body_imported && !source.gameplay_verified
-        ));
+        assert!(result.games[0]
+            .exact_build_external_sources
+            .iter()
+            .all(|source| !source.body_imported && !source.gameplay_verified));
         assert!(!result.games[0].installation_allowed);
     }
 

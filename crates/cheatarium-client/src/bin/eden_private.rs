@@ -50,7 +50,9 @@ pub(super) fn default_root() -> PathBuf {
 
 fn regular_file(path: &Path, max_size: u64) -> Result<(), ErrBox> {
     if !path.is_absolute()
-        || path.components().any(|c| matches!(c, Component::CurDir | Component::ParentDir))
+        || path
+            .components()
+            .any(|c| matches!(c, Component::CurDir | Component::ParentDir))
     {
         return Err("Private source path must be normalized and absolute".into());
     }
@@ -103,7 +105,9 @@ fn parse_sections(input: &str) -> Result<Vec<(String, String)>, ErrBox> {
             let words: Vec<_> = line.split_ascii_whitespace().collect();
             if words.is_empty()
                 || words.len() > 5
-                || words.iter().any(|w| w.len() != 8 || !w.bytes().all(|b| b.is_ascii_hexdigit()))
+                || words
+                    .iter()
+                    .any(|w| w.len() != 8 || !w.bytes().all(|b| b.is_ascii_hexdigit()))
             {
                 return Err("Private cheat has non-native or malformed hex code".into());
             }
@@ -143,12 +147,21 @@ pub(super) fn load_exact(
     let manifest: Manifest = serde_json::from_slice(&fs::read(&manifest_file)?)?;
     if manifest.format != "cheatarium-user-switch-cheat-source-curation-v1"
         || manifest.upstream.snapshot_commit.len() != 40
-        || !manifest.upstream.snapshot_commit.bytes().all(|b| b.is_ascii_hexdigit() && !b.is_ascii_uppercase())
+        || !manifest
+            .upstream
+            .snapshot_commit
+            .bytes()
+            .all(|b| b.is_ascii_hexdigit() && !b.is_ascii_uppercase())
     {
         return Err("Invalid pinned private curation manifest".into());
     }
-    let mut selected = manifest.games.into_iter().filter(|g| g.title_id == title_id);
-    let game = selected.next().ok_or("Title ID absent from six-game private curation")?;
+    let mut selected = manifest
+        .games
+        .into_iter()
+        .filter(|g| g.title_id == title_id);
+    let game = selected
+        .next()
+        .ok_or("Title ID absent from six-game private curation")?;
     if selected.next().is_some() {
         return Err("Duplicate curated game Title ID".into());
     }
@@ -159,29 +172,42 @@ pub(super) fn load_exact(
     {
         return Err("No valid static NSP main-executable Build ID".into());
     }
-    let expected = game.hamlet_builds.iter()
+    let expected = game
+        .hamlet_builds
+        .iter()
         .find(|entry| entry.build_id == *build_id)
         .map_or(0, |entry| entry.strict_native_hex_sections);
-    if expected == 0 || expected != game.static_nsp_observation.pinned_native_cheat_sections_matched {
+    if expected == 0
+        || expected
+            != game
+                .static_nsp_observation
+                .pinned_native_cheat_sections_matched
+    {
         return Err("No pinned native exact-build cheats for this NSP (Smash needs external source integration)".into());
     }
-    let path = private_root.join(&game.title_id).join(format!("{build_id}.txt"));
+    let path = private_root
+        .join(&game.title_id)
+        .join(format!("{build_id}.txt"));
     regular_file(&path, MAX_PRIVATE_CHEAT_BYTES)?;
     let sections = parse_sections(&fs::read_to_string(&path)?)?;
     if sections.len() != expected {
         return Err("Private staged native cheat count disagrees with pinned manifest".into());
     }
-    let codes = sections.into_iter().enumerate().map(|(i, (description, code))| Code {
-        ordinal: i + 1,
-        description: Some(description),
-        code: Some(code),
-        source_enabled: false,
-        verification: "lexical_native_hex_only_not_gameplay_verified".into(),
-        role: Some("code".into()),
-        native_fields: Vec::new(),
-        snes_decode: None,
-        composition: None,
-    }).collect();
+    let codes = sections
+        .into_iter()
+        .enumerate()
+        .map(|(i, (description, code))| Code {
+            ordinal: i + 1,
+            description: Some(description),
+            code: Some(code),
+            source_enabled: false,
+            verification: "lexical_native_hex_only_not_gameplay_verified".into(),
+            role: Some("code".into()),
+            native_fields: Vec::new(),
+            snes_decode: None,
+            composition: None,
+        })
+        .collect();
     let archive_path = format!("privately_staged/{}/{}.txt", game.title_id, build_id);
     let file = IndexedFile {
         id: format!("private-hamlet-{}-{}", game.title_id, build_id),
@@ -234,7 +260,9 @@ mod tests {
     #[test]
     fn private_cache_loads_only_exact_static_build() {
         let base = std::env::temp_dir().join(format!(
-            "cheatarium-private-adapter-{}-{:?}", std::process::id(), std::thread::current().id()
+            "cheatarium-private-adapter-{}-{:?}",
+            std::process::id(),
+            std::thread::current().id()
         ));
         let title = "0100000000010000";
         let build = "B424BE150A8E7D78";
@@ -245,13 +273,19 @@ mod tests {
             r#"{{"format":"cheatarium-user-switch-cheat-source-curation-v1","upstream":{{"snapshot_commit":"{}"}},"games":[{{"title_id":"{}","title":"Test game","hamlet_builds":[{{"build_id":"{}","strict_native_hex_sections":1}}],"static_nsp_observation":{{"status":"main_nso_extracted_from_local_nsp","cheat_build_id":"{}","pinned_native_cheat_sections_matched":1}}}}]}}"#,
             "a".repeat(40), title, build, build
         )).unwrap();
-        fs::write(root.join(title).join(format!("{build}.txt")),
-            "[Infinite Health]\n04000000 12345678 00000001\n").unwrap();
+        fs::write(
+            root.join(title).join(format!("{build}.txt")),
+            "[Infinite Health]\n04000000 12345678 00000001\n",
+        )
+        .unwrap();
         let (bundle, id) = load_exact(&manifest, &root, title).unwrap();
         assert_eq!(id, build);
         assert_eq!(bundle.records.len(), 1);
         assert_eq!(bundle.records[0].codes.len(), 1);
-        assert_eq!(bundle.records[0].provenance.source_id, "hamlet_private_curated");
+        assert_eq!(
+            bundle.records[0].provenance.source_id,
+            "hamlet_private_curated"
+        );
         assert!(!bundle.records[0].codes[0].source_enabled);
         let mod_root = base.join("eden/load");
         fs::create_dir_all(&mod_root).unwrap();
@@ -259,11 +293,13 @@ mod tests {
         fs::write(&config, "[General]\nexample=true\n").unwrap();
         let preview = super::super::preview_readable(&bundle, title, &id, &mod_root).unwrap();
         assert_eq!(preview.proposed_addons.len(), 1);
-        assert_eq!(preview.source_filter, "private_pinned_hamlet_exact_static_nsp");
+        assert_eq!(
+            preview.source_filter,
+            "private_pinned_hamlet_exact_static_nsp"
+        );
         assert!(!preview.installation_allowed);
-        let installed = super::super::eden_install::install(
-            &bundle, &preview, &mod_root, &config,
-        ).unwrap();
+        let installed =
+            super::super::eden_install::install(&bundle, &preview, &mod_root, &config).unwrap();
         let report = serde_json::to_value(installed).unwrap();
         assert_eq!(report["activation_state"], "installed_disabled_by_default");
         assert_eq!(report["installed_build_id_verified"], false);
@@ -272,19 +308,25 @@ mod tests {
         let config_after = fs::read_to_string(&config).unwrap();
         assert!(config_after.contains("[DisabledAddOns]"));
         assert!(config_after.contains("Infinite Health"));
-        assert!(mod_root.join(title).join("Infinite Health")
-            .join("cheats").join(format!("{id}.txt")).is_file());
+        assert!(mod_root
+            .join(title)
+            .join("Infinite Health")
+            .join("cheats")
+            .join(format!("{id}.txt"))
+            .is_file());
         // The same data cannot silently replace an existing live mod.
-        assert!(super::super::eden_install::install(
-            &bundle, &preview, &mod_root, &config,
-        ).is_err());
+        assert!(
+            super::super::eden_install::install(&bundle, &preview, &mod_root, &config,).is_err()
+        );
         assert_eq!(fs::read_to_string(&config).unwrap(), config_after);
         fs::remove_dir_all(base).unwrap();
     }
     #[test]
     fn missing_exact_static_build_fails_closed() {
         let root = std::env::temp_dir().join(format!(
-            "cheatarium-private-smash-{}-{:?}", std::process::id(), std::thread::current().id()
+            "cheatarium-private-smash-{}-{:?}",
+            std::process::id(),
+            std::thread::current().id()
         ));
         fs::create_dir_all(&root).unwrap();
         let manifest = root.join("manifest.json");

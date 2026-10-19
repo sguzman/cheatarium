@@ -205,7 +205,10 @@ fn select<'a>(bundle: &'a Bundle, title: &str, build: &str) -> Vec<&'a IndexedFi
         .iter()
         .filter(|file| {
             file.candidate_game_key == key
-                && matches!(file.provenance.source_id.as_str(), "sharkive" | "hamlet_private_curated")
+                && matches!(
+                    file.provenance.source_id.as_str(),
+                    "sharkive" | "hamlet_private_curated"
+                )
         })
         .collect()
 }
@@ -844,10 +847,14 @@ fn run() -> Result<(), ErrBox> {
             "--install" => install = true,
             "--private-curation" => private_curation = true,
             "--private-root" => {
-                private_root = PathBuf::from(args.next().ok_or("--private-root requires an absolute directory")?)
+                private_root = PathBuf::from(
+                    args.next()
+                        .ok_or("--private-root requires an absolute directory")?,
+                )
             }
             "--private-manifest" => {
-                private_manifest = PathBuf::from(args.next().ok_or("--private-manifest requires a path")?)
+                private_manifest =
+                    PathBuf::from(args.next().ok_or("--private-manifest requires a path")?)
             }
             "--files-only" => files_only = true,
             "--rename-installed" => rename_installed = true,
@@ -900,24 +907,34 @@ fn run() -> Result<(), ErrBox> {
         }
     }
     if private_curation {
-        if auto || dry_run || human_report || historical_main_only
-            || files_only || rename_installed || only_title_id.is_some() || build.is_some()
+        if auto
+            || dry_run
+            || human_report
+            || historical_main_only
+            || files_only
+            || rename_installed
+            || only_title_id.is_some()
+            || build.is_some()
         {
             return Err("--private-curation requires explicit --title-id and cannot combine with automatic, historical, file-only or manual Build ID options".into());
         }
         if install && stage_dir.is_some() {
             return Err("--private-curation: choose --install or --stage-dir, not both".into());
         }
-        let title = title.as_deref().ok_or("--private-curation requires --title-id")?;
+        let title = title
+            .as_deref()
+            .ok_or("--private-curation requires --title-id")?;
         if !is_title_id(title) {
             return Err("--private-curation requires a valid base-game Title ID".into());
         }
         let (private_bundle, private_build) =
             eden_private::load_exact(&private_manifest, &private_root, title)?;
         let plan = preview_readable(&private_bundle, title, &private_build, &mod_root)?;
-        if plan.proposed_addons.is_empty() || !plan.rejected_entries.is_empty()
-            || plan.proposed_addons.iter()
-                .any(|entry| entry.syntax_check != "lexical_hex_tokens_only_not_execution_validated")
+        if plan.proposed_addons.is_empty()
+            || !plan.rejected_entries.is_empty()
+            || plan.proposed_addons.iter().any(|entry| {
+                entry.syntax_check != "lexical_hex_tokens_only_not_execution_validated"
+            })
         {
             return Err("Private exact-build source is not completely renderable; refusing installation or staging".into());
         }
