@@ -1161,6 +1161,48 @@ jobs:
             exit 1
           fi
           cmp "$fixture/eden-config/qt-config.ini" "$fixture/before-second.ini"
+      - name: Capture two rotated Eden game launches through bounded private watcher
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-build-watch -- \
+            --db generated/v1 --log "$fixture/eden_log.txt" \
+            --history-file "$fixture/cheatarium-state/history.json" \
+            --duration-seconds 12 --poll-ms 250 \
+            --until-title-ids 0100000000010000,01002DA013484000 > "$fixture/watched.json" &
+          watcher=$!
+          sleep 1
+          cat > "$fixture/eden_log.txt" <<'LOG'
+          [ 1.00] Core <Info> core/core.cpp:Load:351: Loading Super Mario Odyssey (0100000000010000) ...
+          [ 1.10] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=B424BE150A8E7D780000000000000000, name=main
+          LOG
+          sleep 1
+          cat > "$fixture/eden_log.txt" <<'LOG'
+          [ 1.00] Loader <Info> patch_manager.cpp:HasNSOPatch:475: Querying NSO patch existence for build_id=5441AF3C89F97E1D0000000000000000, name=main
+          [ 1.10] Core <Info> core/core.cpp:Load:351: Loading The Legend of Zelda Skyward Sword HD (01002DA013484000) ...
+          LOG
+          wait "$watcher"
+          python3 - "$fixture" <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          result=json.loads((root/"watched.json").read_text())
+          assert result["completed"]
+          assert len(result["captured_title_ids"])==2
+          assert not result["missing_title_ids"]
+          assert result["installed_cheats"]==0
+          assert not result["eden_settings_written"]
+          assert not result["eden_game_files_written"]
+          history=json.loads((root/"cheatarium-state/history.json").read_text())
+          mains={(entry["title_id"],entry["build_id"]) for entry in history["entries"] if entry["evidence_kind"]=="main_nso"}
+          assert mains=={
+              ("0100000000010000","B424BE150A8E7D78"),
+              ("01002DA013484000","5441AF3C89F97E1D"),
+          }
+          assert not any(entry["evidence_kind"]!="main_nso" for entry in history["entries"])
+          print("Rotating Eden logs preserved both main-executable Build IDs without touching Eden.")
+          PY
       - name: Install one exact Eden game with files only and no Qt config change
         run: |
           set -euo pipefail
