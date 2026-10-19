@@ -105,16 +105,6 @@ def stage(manifest: dict, game: dict, root: Path, exact_build: str | None = None
     """Private copy only. No Eden writes or installation; refuse overwrite."""
     title = game["title_id"]
     sha = manifest["upstream"]["snapshot_commit"]
-    url = f"https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/{sha}/cheats/{title}.json"
-    with urlopen(Request(url, headers={"User-Agent": "Cheatarium-Private-Curation/1"}), timeout=30) as response:
-        if response.geturl() != url:
-            raise ValueError("Unexpected external redirect")
-        raw = response.read(LIMIT + 1)
-    if len(raw) > LIMIT:
-        raise ValueError("Oversized upstream cheat JSON")
-    obj = json.loads(raw)
-    if not isinstance(obj, dict):
-        raise ValueError("Unexpected upstream schema")
     expected = {build["build_id"]: build["named_sections"] for build in game["hamlet_builds"]}
     if exact_build is not None:
         observed = game["static_nsp_observation"]
@@ -132,6 +122,16 @@ def stage(manifest: dict, game: dict, root: Path, exact_build: str | None = None
         )
         if strict_count != observed["pinned_native_cheat_sections_matched"]:
             raise ValueError(f"Static NSP section count disagrees with pinned manifest: {exact_build}")
+    url = f"https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/{sha}/cheats/{title}.json"
+    with urlopen(Request(url, headers={"User-Agent": "Cheatarium-Private-Curation/1"}), timeout=30) as response:
+        if response.geturl() != url:
+            raise ValueError("Unexpected external redirect")
+        raw = response.read(LIMIT + 1)
+    if len(raw) > LIMIT:
+        raise ValueError("Oversized upstream cheat JSON")
+    obj = json.loads(raw)
+    if not isinstance(obj, dict):
+        raise ValueError("Unexpected upstream schema")
     if {k for k in obj if BUILD_ID.fullmatch(k)} != set(expected):
         raise ValueError("Pinned Build ID list differs from the curated manifest")
     outputs = []
