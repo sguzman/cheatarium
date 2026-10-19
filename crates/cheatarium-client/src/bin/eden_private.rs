@@ -253,6 +253,32 @@ mod tests {
         assert_eq!(bundle.records[0].codes.len(), 1);
         assert_eq!(bundle.records[0].provenance.source_id, "hamlet_private_curated");
         assert!(!bundle.records[0].codes[0].source_enabled);
+        let mod_root = base.join("eden/load");
+        fs::create_dir_all(&mod_root).unwrap();
+        let config = base.join("qt-config.ini");
+        fs::write(&config, "[General]\nexample=true\n").unwrap();
+        let preview = super::super::preview_readable(&bundle, title, &id, &mod_root).unwrap();
+        assert_eq!(preview.proposed_addons.len(), 1);
+        assert_eq!(preview.source_filter, "private_pinned_hamlet_exact_static_nsp");
+        assert!(!preview.installation_allowed);
+        let installed = super::super::eden_install::install(
+            &bundle, &preview, &mod_root, &config,
+        ).unwrap();
+        let report = serde_json::to_value(installed).unwrap();
+        assert_eq!(report["activation_state"], "installed_disabled_by_default");
+        assert_eq!(report["installed_build_id_verified"], false);
+        assert_eq!(report["files_written"], 1);
+        assert_eq!(report["existing_mods_overwritten"], false);
+        let config_after = fs::read_to_string(&config).unwrap();
+        assert!(config_after.contains("[DisabledAddOns]"));
+        assert!(config_after.contains("Infinite Health"));
+        assert!(mod_root.join(title).join("Infinite Health")
+            .join("cheats").join(format!("{id}.txt")).is_file());
+        // The same data cannot silently replace an existing live mod.
+        assert!(super::super::eden_install::install(
+            &bundle, &preview, &mod_root, &config,
+        ).is_err());
+        assert_eq!(fs::read_to_string(&config).unwrap(), config_after);
         fs::remove_dir_all(base).unwrap();
     }
     #[test]
