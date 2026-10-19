@@ -90,22 +90,30 @@ struct ScanEvidence {
 }
 
 fn scan_evidence(report: &Report) -> ScanEvidence {
-    let unavailable = report.game_roots.iter()
+    let unavailable = report
+        .game_roots
+        .iter()
         .filter(|root| root.status != "scanned")
         .count();
-    let scan_warnings = report.warnings.iter()
+    let scan_warnings = report
+        .warnings
+        .iter()
         .filter(|message| message.starts_with("directory_scan_incomplete:"))
         .count();
     ScanEvidence {
         scanned_game_files: report.game_files.len(),
         game_files_without_filename_title_id: report.unresolved_game_files,
-        directories_not_descended_without_recursive_scan:
-            report.scan_statistics.directories_not_descended_scan_disabled,
+        directories_not_descended_without_recursive_scan: report
+            .scan_statistics
+            .directories_not_descended_scan_disabled,
         registered_roots_not_scanned: unavailable,
         traversal_limit_reached: report.scan_statistics.traversal_limit_reached,
         scan_warnings,
         may_have_unexamined_games: report.unresolved_game_files > 0
-            || report.scan_statistics.directories_not_descended_scan_disabled > 0
+            || report
+                .scan_statistics
+                .directories_not_descended_scan_disabled
+                > 0
             || report.scan_statistics.traversal_limit_reached
             || unavailable > 0
             || scan_warnings > 0,

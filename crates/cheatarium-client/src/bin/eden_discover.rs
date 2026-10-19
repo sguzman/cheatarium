@@ -1338,7 +1338,8 @@ fn configured_game_dirs(contents: &str) -> Vec<(PathBuf, bool)> {
 fn merged_game_roots(roots: Vec<(PathBuf, bool)>) -> Vec<(PathBuf, bool)> {
     let mut by_root = BTreeMap::<PathBuf, bool>::new();
     for (path, deep_scan) in roots {
-        by_root.entry(path)
+        by_root
+            .entry(path)
             .and_modify(|deep| *deep |= deep_scan)
             .or_insert(deep_scan);
     }
@@ -1621,13 +1622,14 @@ fn run() -> Result<(), ErrBox> {
             )),
             "--game-dir-deep" => {
                 let root = PathBuf::from(
-                    args.next().ok_or("--game-dir-deep requires an absolute directory")?
+                    args.next()
+                        .ok_or("--game-dir-deep requires an absolute directory")?,
                 );
                 if !root.is_absolute() {
                     return Err("--game-dir-deep requires an absolute directory".into());
                 }
                 extra_roots.push((root, true));
-            },
+            }
             "--title-id" => {
                 let id = args
                     .next()
@@ -1933,10 +1935,13 @@ mod tests {
             (PathBuf::from("/switch/roms"), true),
             (PathBuf::from("/switch/other"), false),
         ]);
-        assert_eq!(roots, vec![
-            (PathBuf::from("/switch/other"), false),
-            (PathBuf::from("/switch/roms"), true),
-        ]);
+        assert_eq!(
+            roots,
+            vec![
+                (PathBuf::from("/switch/other"), false),
+                (PathBuf::from("/switch/roms"), true),
+            ]
+        );
     }
 
     #[test]
