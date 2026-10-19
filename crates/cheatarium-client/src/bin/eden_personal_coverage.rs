@@ -218,6 +218,20 @@ mod tests {
     }
 
     #[test]
+    fn public_six_game_manifest_reports_smash_as_link_only_gap() {
+        let content = include_str!("../../../../research/switch-personal-curation-v1.json");
+        let manifest = serde_json::from_str(content).unwrap();
+        let result = match_catalog(manifest, &one_game()).unwrap();
+        assert_eq!(result.matched_eden_candidate_games, 1);
+        assert_eq!(result.curated_games_not_found_in_eden_candidates.len(), 5);
+        assert_eq!(result.games[0].title, "Super Smash Bros. Ultimate");
+        assert_eq!(result.games[0].pinned_native_exact_build_sections, 0);
+        assert_eq!(result.games[0].static_nsp_build_id, "CBD5A9B56EA859BA");
+        assert_eq!(result.games[0].exact_build_external_sources.len(), 2);
+        assert!(!result.games[0].installation_allowed);
+    }
+
+    #[test]
     fn refuses_mismatched_claimed_build_id() {
         let changed = example_json().replace(
             r#""build_id":"CBD5A9B56EA859BA""#,
