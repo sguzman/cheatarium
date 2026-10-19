@@ -278,7 +278,9 @@ fn run() -> Result<(), ErrBox> {
         {
             return Err("Curated manifest contains invalid static NSP Build ID evidence".into());
         }
-        let catalog_native_count = game.hamlet_builds.iter()
+        let catalog_native_count = game
+            .hamlet_builds
+            .iter()
             .find(|b| b.build_id == static_obs.cheat_build_id)
             .map_or(0, |b| b.strict_native_hex_sections);
         if catalog_native_count != static_obs.pinned_native_cheat_sections_matched {
@@ -343,7 +345,10 @@ mod tests {
         assert_eq!(result.status, "blocked_no_historical_main_build_evidence");
         assert!(result.static_nsp_source_staged);
         assert_eq!(result.static_nsp_native_sections_staged, 57);
-        assert_eq!(result.next_action, "observe_eden_main_nso_build_when_game_is_launched");
+        assert_eq!(
+            result.next_action,
+            "observe_eden_main_nso_build_when_game_is_launched"
+        );
         assert!(!result.current_eden_build_verified);
         assert!(!result.installation_allowed);
     }
@@ -355,16 +360,25 @@ mod tests {
         let result = evaluate(&game, &seen, &private);
         assert_eq!(result.native_sections_in_matching_source, 57);
         assert!(result.historical_main_build_matches_static_nsp);
-        assert_eq!(result.next_action, "historical_static_build_matches_source_review_before_any_install");
+        assert_eq!(
+            result.next_action,
+            "historical_static_build_matches_source_review_before_any_install"
+        );
         assert_eq!(
             result.exact_matching_build_id.as_deref(),
             Some("5441AF3C89F97E1D")
         );
         let different = BTreeSet::from(["D824D4B1BBD45D03".into()]);
         let mismatch = evaluate(&game, &different, &private);
-        assert_eq!(mismatch.status, "blocked_no_private_source_for_observed_build");
+        assert_eq!(
+            mismatch.status,
+            "blocked_no_private_source_for_observed_build"
+        );
         assert!(!mismatch.historical_main_build_matches_static_nsp);
-        assert_eq!(mismatch.next_action, "reconcile_runtime_update_with_static_nsp_build_and_cheat_source");
+        assert_eq!(
+            mismatch.next_action,
+            "reconcile_runtime_update_with_static_nsp_build_and_cheat_source"
+        );
         let conflicting = BTreeSet::from(["5441AF3C89F97E1D".into(), "D824D4B1BBD45D03".into()]);
         assert_eq!(
             evaluate(&game, &conflicting, &private).status,
