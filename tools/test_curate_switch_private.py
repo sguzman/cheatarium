@@ -88,5 +88,85 @@ class PrivateCuratorTests(unittest.TestCase):
                 self.assertEqual(dest.read_text(), "USER MODIFIED")
 
 
+    def test_bulk_exact_mode_selects_five_observed_builds_and_skips_smash(self):
+        catalog = curator.load_manifest()
+        calls = []
+
+        def staged(_manifest, game, _root, exact_build=None):
+            calls.append((game["title_id"], exact_build))
+            return {"title_id": game["title_id"], "files": []}
+
+        from contextlib import redirect_stdout
+        output = io.StringIO()
+        with (
+            patch.object(curator, "load_manifest", return_value=catalog),
+            patch.object(curator, "safe_output_root", return_value=Path("/unused/test")),
+            patch.object(curator, "stage", side_effect=staged),
+            patch.object(sys, "argv", ["curate_switch_private.py", "--fetch-personal-exact"]),
+            redirect_stdout(output),
+        ):
+            self.assertEqual(curator.main(), 0)
+        report = json.loads(output.getvalue())
+        self.assertEqual(report["staged_game_count"], 5)
+        self.assertFalse(report["eden_mods_modified"])
+        self.assertFalse(report["runtime_compatibility_verified"])
+        self.assertEqual(report["selection"], "static_nsp_build_only_not_runtime_version_verified")
+        self.assertEqual([entry["title_id"] for entry in report["skipped"]], ["01006A800016E000"])
+        expected = {
+            (game["title_id"], game["static_nsp_observation"]["cheat_build_id"])
+            for game in catalog["games"]
+            if game["static_nsp_observation"]["pinned_native_cheat_sections_matched"] > 0
+        }
+        self.assertEqual(set(calls), expected)
+
+    def test_exact_mode_writes_only_selected_build(self):
+        sha = "a" * 40
+        title = "0100000000010000"
+        bid = "AAAAAAAAAAAAAAAA"
+        other = "BBBBBBBBBBBBBBBB"
+        game = {
+            "title_id": title,
+            "hamlet_builds": [
+                {"build_id": bid, "named_sections": 1, "strict_native_hex_sections": 1},
+                {"build_id": other, "named_sections": 1, "strict_native_hex_sections": 1},
+            ],
+            "static_nsp_observation": {
+                "status": "main_nso_extracted_from_local_nsp",
+                "cheat_build_id": bid,
+                "pinned_native_cheat_sections_matched": 1,
+            },
+        }
+        manifest = {"upstream": {"snapshot_commit": sha}}
+        url = f"https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/{sha}/cheats/{title}.json"
+        body = {
+            bid: {"[One]": "[One]\\n04000000 00000001"},
+            other: {"[Two]": "[Two]\\n04000000 00000002"},
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / "private-switch-curation"
+            with patch.object(curator, "urlopen", side_effect=lambda *_args, **_kwargs: FakeResponse(json.dumps(body).encode(), url)):
+                report = curator.stage(manifest, game, root, exact_build=bid)
+            self.assertEqual([file["build_id"] for file in report["files"]], [bid])
+            self.assertTrue((root / title / (bid + ".txt")).is_file())
+            self.assertFalse((root / title / (other + ".txt")).exists())
+
+    def test_exact_mode_rejects_manifest_count_disagreement_without_writes(self):
+        bid = "AAAAAAAAAAAAAAAA"
+        game = {
+            "title_id": "0100000000010000",
+            "hamlet_builds": [{"build_id": bid, "named_sections": 1, "strict_native_hex_sections": 2}],
+            "static_nsp_observation": {
+                "status": "main_nso_extracted_from_local_nsp",
+                "cheat_build_id": bid,
+                "pinned_native_cheat_sections_matched": 1,
+            },
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / "private-switch-curation"
+            with self.assertRaisesRegex(ValueError, "section count disagrees"):
+                curator.stage({"upstream": {"snapshot_commit": "a" * 40}}, game, target, exact_build=bid)
+            self.assertFalse(target.exists())
+
+
 if __name__ == "__main__":
     unittest.main()
