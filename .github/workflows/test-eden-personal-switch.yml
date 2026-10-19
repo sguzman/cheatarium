@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/test-eden-personal-switch.yml"
       - "crates/cheatarium-client/src/bin/eden_discover.rs"
+      - "crates/cheatarium-client/src/bin/eden_curated_readiness.rs"
       - "crates/cheatarium-client/src/bin/eden_personal_coverage.rs"
       - "research/switch-personal-curation-v1.json"
       - "tools/curate_switch_private.py"
@@ -26,7 +27,9 @@ jobs:
       - uses: actions/checkout@v5
       - uses: dtolnay/rust-toolchain@stable
       - name: Test exact-build personal coverage against Eden discovery
-        run: cargo test --locked -p cheatarium-client --bin cheatarium-eden-discover
+        run: |
+          cargo test --locked -p cheatarium-client --bin cheatarium-eden-discover
+          cargo test --locked -p cheatarium-client --bin cheatarium-eden-curated-readiness
       - name: Validate local curation preview
         run: |
           python3 -m py_compile tools/curate_switch_private.py
