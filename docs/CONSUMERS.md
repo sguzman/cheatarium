@@ -517,3 +517,17 @@ This fetches the **commit-pinned** original JSON directly from the credited sour
 
 For Skyward Sword HD (`01002DA013484000`), external source collections list at least two historical BIDs (`5441AF3C89F97E1D`, `D824D4B1BBD45D03`); neither has been observed as the user's current executable Build ID. User-owned files and game-update selection are not independently verified by the metadata index, and no other title's Build ID is inferred from a cache entry.
 
+
+
+### Rust gate: which privately staged Switch cheats can be matched?
+
+The native `cheatarium-eden-curated-readiness` CLI checks the six-game curated matrix against privately staged native cheat files, Eden's most recent log, and Cheatarium's saved **main-NSO** Build ID history. It never promotes weak lookup observations or filenames into executable version evidence. The command is deliberately read-only:
+
+```sh
+cargo run --locked -p cheatarium-client --bin cheatarium-eden-curated-readiness -- --db generated/v1
+```
+
+Its per-game states distinguish missing historical evidence, conflicting historical Build IDs, no staged source for the observed Build ID, and a historical source match. All statuses explicitly warn that log-derived evidence is not confirmation of the **current** installed game update or that a cheat executes correctly. No `--install` switch exists; unknown flags fail closed. It never modifies Eden settings, game saves, the private cache, or the mods directory. It reads only the six known curated Title IDs, the bounded source files, and existing log/history metadata. It can be restricted with `--title-id` for a single game.
+
+This gate does not infer that "Save 1" cheats work in any Odyssey save slot: the original author's description is not runtime validation. Notably, Super Mario Odyssey supports five save slots behind in-game Pause → Options → Data Management, and contemporaneous source comments flag some 1.3.0 health codes as untested. Treat a checked Eden add-on as *discovered*, not *working*.
+
