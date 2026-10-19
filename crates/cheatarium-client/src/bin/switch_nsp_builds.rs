@@ -151,7 +151,7 @@ fn scan_pfs0(path: &Path) -> Result<Vec<NcaEntry>, ErrBox> {
         let end = names[index..].iter().position(|c| *c == 0).ok_or("invalid_pfs0_name")? + index;
         let name = std::str::from_utf8(&names[index..end])?;
         if name.contains('/') || name.contains('\\') || name.contains("..") { return Err("unsafe_pfs0_entry_name".into()); }
-        if name.to_ascii_lowercase().ends_with(".nca") {
+        if name.to_ascii_lowercase().ends_with(".nca") || name.to_ascii_lowercase().ends_with(".tik") {
             out.push(NcaEntry { name: name.to_owned(), size });
         }
     }
@@ -259,6 +259,18 @@ fn main_nso_build(path: &Path) -> Result<String, String> {
     if id.iter().all(|b| *b==0) { return Err("zero_main_build_id".into()); }
     Ok(id.iter().map(|b| format!("{b:02X}")).collect())
 }
+fn ticket_sources(nsp: &Path, scratch: &Scratch, prefix: &str) -> Result<Vec<PathBuf>, String> {
+    let entries = scan_pfs0(nsp).map_err(|_| "invalid_nsp".to_owned())?;
+    let mut out = Vec::new();
+    for (i, ticket) in entries.iter().filter(|entry| entry.name.to_ascii_lowercase().ends_with(".tik")).enumerate() {
+        if i >= 16 { return Err("too_many_package_tickets".into()); }
+        if ticket.size > 64 * 1024 { return Err("oversized_package_ticket".into()); }
+        let dest = scratch.path(&format!("{prefix}-ticket-{i}.tik"));
+        extract_nca(nsp, ticket, &dest)?;
+        out.push(dest);
+    }
+    Ok(out)
+}
 fn extract_build(package: &Package, base: Option<&Package>, keys: &Path, scratch: &Scratch) -> Result<String, String> {
     let source_item = NcaEntry { name: package.program.clone(), size: package.program_size };
     let update_nca = scratch.path("selected-program.nca");
@@ -268,15 +280,49 @@ fn extract_build(package: &Package, base: Option<&Package>, keys: &Path, scratch
         let base_entry = NcaEntry { name: original.program.clone(), size: original.program_size };
         extract_nca(&original.file, &base_entry, &base_file)?;
     }
+    let mut tickets = ticket_sources(&package.file, scratch, "selected")?;
+    if let Some(original) = base {
+        tickets.extend(ticket_sources(&original.file, scratch, "base")?);
+    }
     let output = scratch.path("exefs");
     fs::create_dir(&output).map_err(|_| "cannot_create_private_exefs".to_owned())?;
+    // First try NSTool. Unlike raw hactool this accepts NSP-local encrypted tickets,
+    // so an ordinary legally dumped game need not have external title.keys.
+    let mut nstool_args = vec![
+        "-t".into(), "nca".into(), "-k".into(), keys.to_string_lossy().to_string()
+    ];
+    if base.is_some() {
+        nstool_args.extend(["--basenca".into(), base_file.to_string_lossy().to_string()]);
+    }
+    for ticket in tickets {
+        nstool_args.extend(["--tik".into(), ticket.to_string_lossy().to_string()]);
+    }
+    let main = output.join("main");
+    let mut nstool_status = "nstool_cannot_extract_main_nso".to_owned();
+    for partition in [0, 1, 2, 3] {
+        let _ = fs::remove_file(&main);
+        let mut opts = nstool_args.clone();
+        opts.extend(["-x".into(), format!("/{partition}/main"), main.to_string_lossy().to_string(),
+            update_nca.to_string_lossy().to_string()]);
+        if safe_output("nstool", &opts).is_ok() {
+            if let Ok(build) = main_nso_build(&main) {
+                return Ok(build);
+            }
+        }
+    }
+    // Fallback for NCAs which hactool can extract without an NSP-local ticket.
     let mut opts = vec!["-i".into(), "-t".into(), "nca".into(), "-k".into(),
         keys.to_string_lossy().to_string(), "--suppresskeys".into(),
         format!("--exefsdir={}", output.display())];
     if base.is_some() { opts.push(format!("--basenca={}", base_file.display())); }
     opts.push(update_nca.to_string_lossy().to_string());
-    safe_output("hactool", &opts)?;
-    main_nso_build(&output.join("main"))
+    if safe_output("hactool", &opts).is_ok() {
+        if let Ok(build) = main_nso_build(&main) {
+            return Ok(build);
+        }
+    }
+    nstool_status.push_str("_and_hactool_fallback_failed");
+    Err(nstool_status)
 }
 fn run() -> Result<(), ErrBox> {
     let mut roms = PathBuf::from("/drive/roms/switch/roms");
