@@ -1,7 +1,7 @@
 //! Join the user's recorded static NSP Build IDs to Eden's *advisory* local
 //! inventory. Never opens game files or imports/installs third-party cheat bodies.
 //! The curation manifest is public metadata, not a runtime version witness.
-use super::{is_title_id, InventoryGame, ErrBox};
+use super::{is_title_id, CachedTitle, InventoryGame, ErrBox};
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
@@ -65,11 +65,27 @@ struct Match {
 }
 
 #[derive(Debug, Serialize)]
+struct UncuratedGame {
+    title_id: String,
+    cached_title_name: Option<String>,
+    in_eden_cache: bool,
+    filename_labeled_base_files: usize,
+    registered_update_files: usize,
+    archived_cheat_build_candidates: usize,
+    external_link_only_references: usize,
+    next_action: &'static str,
+    current_eden_build_verified: bool,
+    cheats_gameplay_verified: bool,
+}
+
+#[derive(Debug, Serialize)]
 pub(super) struct Coverage {
     schema_version: u32,
     format: &'static str,
     read_only: bool,
     matched_eden_candidate_games: usize,
+    uncurated_eden_candidate_games: usize,
+    uncurated_games: Vec<UncuratedGame>,
     curated_games_not_found_in_eden_candidates: Vec<String>,
     games: Vec<Match>,
     limitations: Vec<&'static str>,
@@ -79,7 +95,11 @@ fn valid_build(id: &str) -> bool {
     id.len() == 16 && id.bytes().all(|byte| byte.is_ascii_hexdigit())
 }
 
-fn match_catalog(manifest: Manifest, inventory: &[InventoryGame]) -> Result<Coverage, ErrBox> {
+fn match_catalog(
+    manifest: Manifest,
+    inventory: &[InventoryGame],
+    cached_titles: &[CachedTitle],
+) -> Result<Coverage, ErrBox> {
     if manifest.format != "cheatarium-user-switch-cheat-source-curation-v1" {
         return Err("Unexpected Switch personal curation format".into());
     }
@@ -150,6 +170,46 @@ fn match_catalog(manifest: Manifest, inventory: &[InventoryGame]) -> Result<Cove
             });
         }
     }
+    // This is the user-library expansion queue. Cache-only labels can be stale
+    // and must never be presented as confirmed installed games.
+    let mut uncurated = Vec::new();
+    let mut uncurated_ids = BTreeSet::new();
+    for item in inventory {
+        if catalog.contains_key(&item.title_id) || !uncurated_ids.insert(item.title_id.as_str()) {
+            continue;
+        }
+        let name = cached_titles.iter()
+            .find(|name| name.title_id == item.title_id)
+            .and_then(|name| name.title_name.clone());
+        uncurated.push(UncuratedGame {
+            title_id: item.title_id.clone(),
+            cached_title_name: name,
+            in_eden_cache: item.in_eden_cache,
+            filename_labeled_base_files: item.filename_labeled_base_files
+                + item.ticket_filename_labeled_base_files,
+            registered_update_files: item.update_files_in_registered_folders
+                + item.ticket_filename_labeled_update_files,
+            archived_cheat_build_candidates: item.archived_build_candidate_count,
+            external_link_only_references: item.external_reference_count,
+            next_action: if item.filename_labeled_base_files
+                + item.ticket_filename_labeled_base_files > 0 {
+                "extract_static_main_build_id_from_owned_game_file"
+            } else if item.in_eden_cache {
+                "confirm_cached_game_still_registered_and_locate_owned_game_file"
+            } else {
+                "confirm_game_identity_from_registered_update_or_filename"
+            },
+            current_eden_build_verified: false,
+            cheats_gameplay_verified: false,
+        });
+    }
+    // Prioritize candidate games with native cheat data rather than chasing
+    // metadata-only links; all entries remain advisory until Build ID extraction.
+    uncurated.sort_by(|a, b| {
+        b.archived_cheat_build_candidates.cmp(&a.archived_cheat_build_candidates)
+            .then_with(|| b.filename_labeled_base_files.cmp(&a.filename_labeled_base_files))
+            .then_with(|| a.title_id.cmp(&b.title_id))
+    });
     let absent = catalog.keys()
         .filter(|id| !present.contains(id.as_str()))
         .cloned()
@@ -159,6 +219,8 @@ fn match_catalog(manifest: Manifest, inventory: &[InventoryGame]) -> Result<Cove
         format: "cheatarium-eden-personal-switch-coverage-v1",
         read_only: true,
         matched_eden_candidate_games: matched.len(),
+        uncurated_eden_candidate_games: uncurated.len(),
+        uncurated_games: uncurated,
         curated_games_not_found_in_eden_candidates: absent,
         games: matched,
         limitations: vec![
@@ -166,18 +228,24 @@ fn match_catalog(manifest: Manifest, inventory: &[InventoryGame]) -> Result<Cove
             "The recorded Build IDs were extracted from local NSP snapshots; they are not proof of what Eden currently launches.",
             "Pinned source sections are lexical matches to those snapshots, not gameplay-tested cheats.",
             "External source links claim exact Title ID and Build ID; their third-party code bodies have not been imported.",
+            "Uncurated games are candidate Title IDs discovered from Eden labels, not confirmed currently installed games.",
+            "Archive candidate counts alone never prove a compatible Build ID; uncurated games require static or runtime executable identification.",
             "No cheats, ROMs, secrets, saved games, or Eden settings are read or changed by this comparison.",
         ],
     })
 }
 
-pub(super) fn read_coverage(path: &Path, inventory: &[InventoryGame]) -> Result<Coverage, ErrBox> {
+pub(super) fn read_coverage(
+    path: &Path,
+    inventory: &[InventoryGame],
+    cached_titles: &[CachedTitle],
+) -> Result<Coverage, ErrBox> {
     let meta = fs::symlink_metadata(path)?;
     if !meta.is_file() || meta.file_type().is_symlink() || meta.len() > MAX_MANIFEST_BYTES {
         return Err("Personal curation must be a bounded regular JSON file".into());
     }
     let manifest: Manifest = serde_json::from_slice(&fs::read(path)?)?;
-    match_catalog(manifest, inventory)
+    match_catalog(manifest, inventory, cached_titles)
 }
 
 #[cfg(test)]
@@ -207,7 +275,7 @@ mod tests {
     #[test]
     fn exact_external_claim_is_not_an_installed_or_gameplay_verified_cheat() {
         let manifest = serde_json::from_str(&example_json()).unwrap();
-        let result = match_catalog(manifest, &one_game()).unwrap();
+        let result = match_catalog(manifest, &one_game(), &[]).unwrap();
         assert_eq!(result.matched_eden_candidate_games, 1);
         assert!(result.curated_games_not_found_in_eden_candidates.is_empty());
         assert_eq!(result.games[0].coverage_status, "external_exact_build_claims_link_only_not_imported");
@@ -221,7 +289,7 @@ mod tests {
     fn public_six_game_manifest_reports_smash_as_link_only_gap() {
         let content = include_str!("../../../../research/switch-personal-curation-v1.json");
         let manifest = serde_json::from_str(content).unwrap();
-        let result = match_catalog(manifest, &one_game()).unwrap();
+        let result = match_catalog(manifest, &one_game(), &[]).unwrap();
         assert_eq!(result.matched_eden_candidate_games, 1);
         assert_eq!(result.curated_games_not_found_in_eden_candidates.len(), 5);
         assert_eq!(result.games[0].title, "Super Smash Bros. Ultimate");
@@ -238,13 +306,59 @@ mod tests {
             r#""build_id":"B9B166DF1DB90BAF""#,
         );
         let manifest = serde_json::from_str(&changed).unwrap();
-        assert!(match_catalog(manifest, &one_game()).is_err());
+        assert!(match_catalog(manifest, &one_game(), &[]).is_err());
+    }
+
+    #[test]
+    fn expansion_queue_reports_uncurated_eden_game_without_guessing_build() {
+        let mut inventory = one_game();
+        inventory.push(InventoryGame {
+            title_id: "0100000000010000".into(),
+            filename_labeled_base_files: 1,
+            ticket_filename_labeled_base_files: 0,
+            ticket_filename_labeled_update_files: 0,
+            in_eden_cache: true,
+            archived_build_candidate_count: 3,
+            external_reference_count: 2,
+            update_files_in_registered_folders: 0,
+            installed_base_game_verified: false,
+            installed_update_verified: false,
+            installed_build_id_verified: false,
+        });
+        let names = vec![CachedTitle {
+            title_id: "0100000000010000".into(),
+            title_name: Some("Super Mario Odyssey".into()),
+            evidence: "eden_appname_cache",
+            installed_game_verified: false,
+        }];
+        let manifest = serde_json::from_str(&example_json()).unwrap();
+        let result = match_catalog(manifest, &inventory, &names).unwrap();
+        assert_eq!(result.matched_eden_candidate_games, 1);
+        assert_eq!(result.uncurated_eden_candidate_games, 1);
+        let uncurated = &result.uncurated_games[0];
+        assert_eq!(uncurated.cached_title_name.as_deref(), Some("Super Mario Odyssey"));
+        assert_eq!(uncurated.archived_cheat_build_candidates, 3);
+        assert_eq!(uncurated.next_action, "extract_static_main_build_id_from_owned_game_file");
+        assert!(!uncurated.current_eden_build_verified);
+    }
+
+    #[test]
+    fn cache_only_candidate_is_not_claimed_as_installed() {
+        let mut item = one_game().remove(0);
+        item.title_id = "0100000000010000".into();
+        item.filename_labeled_base_files = 0;
+        let manifest = serde_json::from_str(&example_json()).unwrap();
+        let result = match_catalog(manifest, &[item], &[]).unwrap();
+        assert_eq!(result.uncurated_eden_candidate_games, 1);
+        assert_eq!(result.uncurated_games[0].next_action,
+            "confirm_cached_game_still_registered_and_locate_owned_game_file");
+        assert_eq!(result.matched_eden_candidate_games, 0);
     }
 
     #[test]
     fn unregistered_curated_game_is_not_invented_in_eden() {
         let manifest = serde_json::from_str(&example_json()).unwrap();
-        let result = match_catalog(manifest, &[]).unwrap();
+        let result = match_catalog(manifest, &[], &[]).unwrap();
         assert_eq!(result.matched_eden_candidate_games, 0);
         assert_eq!(result.curated_games_not_found_in_eden_candidates, vec!["01006A800016E000"]);
     }
