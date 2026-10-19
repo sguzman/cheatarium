@@ -101,7 +101,7 @@ def safe_output_root() -> Path:
     return home / ".local/share/cheatarium/private-switch-curation"
 
 
-def stage(manifest: dict, game: dict, root: Path) -> dict:
+def stage(manifest: dict, game: dict, root: Path, exact_build: str | None = None) -> dict:
     """Private copy only. No Eden writes or installation; refuse overwrite."""
     title = game["title_id"]
     sha = manifest["upstream"]["snapshot_commit"]
@@ -116,16 +116,34 @@ def stage(manifest: dict, game: dict, root: Path) -> dict:
     if not isinstance(obj, dict):
         raise ValueError("Unexpected upstream schema")
     expected = {build["build_id"]: build["named_sections"] for build in game["hamlet_builds"]}
+    if exact_build is not None:
+        observed = game["static_nsp_observation"]
+        if (
+            observed["status"] != "main_nso_extracted_from_local_nsp"
+            or observed["cheat_build_id"] != exact_build
+            or exact_build not in expected
+            or observed["pinned_native_cheat_sections_matched"] < 1
+        ):
+            raise ValueError(f"No pinned exact-build native cheats for {game['title_id']}")
+        strict_count = next(
+            entry["strict_native_hex_sections"]
+            for entry in game["hamlet_builds"]
+            if entry["build_id"] == exact_build
+        )
+        if strict_count != observed["pinned_native_cheat_sections_matched"]:
+            raise ValueError(f"Static NSP section count disagrees with pinned manifest: {exact_build}")
     if {k for k in obj if BUILD_ID.fullmatch(k)} != set(expected):
         raise ValueError("Pinned Build ID list differs from the curated manifest")
     outputs = []
     pending = []
     for bid, sections in obj.items():
-        if not BUILD_ID.fullmatch(bid):
+        if not BUILD_ID.fullmatch(bid) or (exact_build is not None and bid != exact_build):
             continue
         if not isinstance(sections, dict) or len(sections) != expected[bid]:
             raise ValueError("Pinned section count differs from curated manifest")
         accepted, rejected = parse_native(sections)
+        if exact_build is not None and len(accepted) != strict_count:
+            raise ValueError(f"Exact-build strict-native section count mismatch: {bid}")
         if not accepted:
             raise ValueError(f"No native sections for {bid}")
         payload = "\n".join(text for _, text in accepted).encode("utf-8")
@@ -148,6 +166,8 @@ def stage(manifest: dict, game: dict, root: Path) -> dict:
             "rejected_non_native_sections": rejected,
             "status": status,
         })
+    if exact_build is not None and len(outputs) != 1:
+        raise ValueError(f"Missing pinned exact Build ID in upstream source: {exact_build}")
     # Validate all candidates before writing the first output. All target
     # filenames are source-declared Build IDs; no arbitrary path segments.
     for dest, payload in pending:
@@ -169,13 +189,45 @@ def stage(manifest: dict, game: dict, root: Path) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--title-id", help="Curated Title ID (optional in preview, required to fetch)")
-    parser.add_argument("--fetch-private", action="store_true", help="Download original codes into private non-Eden cache")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--fetch-private", action="store_true", help="Download source variants into private non-Eden cache")
+    mode.add_argument("--fetch-personal-exact", action="store_true", help="Stage only strict native codes for the five observed static NSP Build IDs; skip Smash")
     args = parser.parse_args()
     manifest = load_manifest()
     if args.title_id and not re.fullmatch(r"01[0-9A-F]{14}", args.title_id):
         parser.error("--title-id must be an exact uppercase base Title ID")
     selected = next((g for g in manifest["games"] if g["title_id"] == args.title_id), None)
-    if args.fetch_private:
+    if args.fetch_personal_exact:
+        games = [selected] if args.title_id else manifest["games"]
+        if not games or any(game is None for game in games):
+            parser.error("--fetch-personal-exact requires a curated --title-id, or omit it for all six")
+        results = []
+        skipped = []
+        root = safe_output_root()
+        for game in games:
+            observed = game["static_nsp_observation"]
+            bid = observed["cheat_build_id"]
+            if observed["pinned_native_cheat_sections_matched"] < 1:
+                skipped.append({
+                    "title_id": game["title_id"],
+                    "static_nsp_build_id": bid,
+                    "status": "no_strict_native_sections_in_pinned_source",
+                    "linked_external_sources": len(game.get("exact_build_external_sources", [])),
+                })
+                continue
+            results.append(stage(manifest, game, root, exact_build=bid))
+        result = {
+            "format": "cheatarium-switch-private-exact-staging-v1",
+            "selection": "static_nsp_build_only_not_runtime_version_verified",
+            "eden_config_modified": False,
+            "eden_mods_modified": False,
+            "runtime_compatibility_verified": False,
+            "gameplay_verified": False,
+            "staged_game_count": len(results),
+            "skipped": skipped,
+            "results": results,
+        }
+    elif args.fetch_private:
         if selected is None:
             parser.error("--fetch-private requires a curated --title-id")
         result = {
