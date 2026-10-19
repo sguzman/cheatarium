@@ -1867,6 +1867,7 @@ fn run() -> Result<(), ErrBox> {
                     path,
                     &audit.inventory.candidate_base_titles,
                     &report.cached_titles,
+                    &report,
                 )?);
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
@@ -1887,6 +1888,7 @@ fn run() -> Result<(), ErrBox> {
                     path,
                     &summary.candidate_base_titles,
                     &report.cached_titles,
+                    &report,
                 )?);
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
