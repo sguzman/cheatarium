@@ -56,6 +56,10 @@ name = "cheatarium-eden-build-watch"
 path = "src/bin/eden_build_watch.rs"
 
 [[bin]]
+name = "cheatarium-switch-nsp-builds"
+path = "src/bin/switch_nsp_builds.rs"
+
+[[bin]]
 name = "cheatarium-explorer"
 path = "src/bin/explorer.rs"
 required-features = ["desktop"]
