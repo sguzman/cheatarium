@@ -322,6 +322,32 @@ fn bounded_cnmt_files(root: &Path) -> Result<Vec<PathBuf>, String> {
     Ok(files)
 }
 
+// The content metadata NCA can itself be rights-encrypted. Supply the
+// containing NSP's tickets to NSTool before attempting its filesystem,
+// exactly as we already do for Program NCA extraction.
+fn nca_nstool_args(keys: &Path, tickets: &[PathBuf]) -> Vec<String> {
+    let mut args = vec![
+        "-t".into(),
+        "nca".into(),
+        "-k".into(),
+        keys.to_string_lossy().to_string(),
+    ];
+    for ticket in tickets {
+        args.extend(["--tik".into(), ticket.to_string_lossy().to_string()]);
+    }
+    args
+}
+// Do not include raw tool output or key material in user-visible reports.
+fn metadata_partition_diagnosis(output: &str) -> (usize, usize) {
+    let unreadable = output.lines().filter(|line| line.contains("NCA Partition") && line.contains("not readable")).count();
+    let missing_keys = output.lines().filter(|line| {
+        line.contains("AES-CTR Key was not determined")
+            || line.contains("key could not be loaded")
+            || line.contains("could not determine key")
+    }).count();
+    (unreadable, missing_keys)
+}
+
 fn discover_package(
     path: &Path,
     keys: &Path,
@@ -346,6 +372,10 @@ fn discover_package(
     let mut fallback_parsed_cnmts = 0usize;
     let mut fallback_matched_programs = 0usize;
     let mut fallback_extractions = 0usize;
+    let mut unreadable_metadata_partitions = 0usize;
+    let mut missing_metadata_decryption_keys = 0usize;
+    let tickets = ticket_sources(path, scratch, "metadata")?;
+    let nstool_base_args = nca_nstool_args(keys, &tickets);
     for (i, meta) in metas.iter().enumerate() {
         if meta.size > MAX_META_BYTES {
             continue;
@@ -355,23 +385,18 @@ fn discover_package(
             continue;
         }
         extracted_meta += 1;
-        let tree = match safe_output(
-            "nstool",
-            &[
-                "-t".into(),
-                "nca".into(),
-                "-k".into(),
-                keys.to_string_lossy().to_string(),
-                "--fstree".into(),
-                dest.to_string_lossy().to_string(),
-            ],
-        ) {
+        let mut tree_args = nstool_base_args.clone();
+        tree_args.extend(["--fstree".into(), dest.to_string_lossy().to_string()]);
+        let tree = match safe_output("nstool", &tree_args) {
             Ok(tree) => {
                 readable_tree += 1;
                 tree
             }
             Err(_) => continue,
         };
+        let (bad_partitions, missing_keys) = metadata_partition_diagnosis(&tree);
+        unreadable_metadata_partitions += bad_partitions;
+        missing_metadata_decryption_keys += missing_keys;
         // Metadata NCAs have a small CNMT in one of the archive partitions.
         // A known virtual file tree is required; do not guess content IDs.
         let names = tree
@@ -392,20 +417,14 @@ fn discover_package(
             let virtual_paths = [format!("/0/{name}"), format!("/1/{name}")];
             for vp in virtual_paths {
                 let _ = fs::remove_file(&cnmt);
-                if safe_output(
-                    "nstool",
-                    &[
-                        "-t".into(),
-                        "nca".into(),
-                        "-k".into(),
-                        keys.to_string_lossy().to_string(),
-                        "-x".into(),
-                        vp,
-                        cnmt.to_string_lossy().to_string(),
-                        dest.to_string_lossy().to_string(),
-                    ],
-                )
-                .is_err()
+                let mut args = nstool_base_args.clone();
+                args.extend([
+                    "-x".into(),
+                    vp,
+                    cnmt.to_string_lossy().to_string(),
+                    dest.to_string_lossy().to_string(),
+                ]);
+                if safe_output("nstool", &args).is_err()
                 {
                     continue;
                 }
@@ -446,15 +465,12 @@ fn discover_package(
         if found.iter().all(|pkg| pkg.file != path.to_path_buf()) {
             let extracted_root = scratch.path(&format!("meta-{i}-extracted"));
             if fs::create_dir(&extracted_root).is_ok() {
-                let full_meta_args = [
-                    "-t".into(),
-                    "nca".into(),
-                    "-k".into(),
-                    keys.to_string_lossy().to_string(),
+                let mut full_meta_args = nstool_base_args.clone();
+                full_meta_args.extend([
                     "-x".into(),
                     extracted_root.to_string_lossy().to_string(),
                     dest.to_string_lossy().to_string(),
-                ];
+                ]);
                 if safe_output("nstool", &full_meta_args).is_ok() {
                     fallback_extractions += 1;
                     if let Ok(extracted_cnmts) = bounded_cnmt_files(&extracted_root) {
@@ -500,10 +516,11 @@ fn discover_package(
     match found.into_iter().next() {
         Some(pkg) => Ok(Some(pkg)),
         None => Err(format!(
-            "metadata_unresolved_meta_ncas_{}_extracted_{}_trees_{}_cnmt_paths_{}_extracted_cnmts_{}_parsed_cnmts_{}_matched_programs_{}_fallback_extractions_{}_fallback_cnmt_paths_{}_fallback_parsed_{}_fallback_matched_{}",
+            "metadata_unresolved_meta_ncas_{}_extracted_{}_trees_{}_cnmt_paths_{}_extracted_cnmts_{}_parsed_cnmts_{}_matched_programs_{}_fallback_extractions_{}_fallback_cnmt_paths_{}_fallback_parsed_{}_fallback_matched_{}_ticket_count_{}_unreadable_partitions_{}_missing_keys_{}",
             metas.len(), extracted_meta, readable_tree, cnmt_paths,
             extracted_cnmt, parsed_cnmt, matched_program,
-            fallback_extractions, fallback_cnmt_paths, fallback_parsed_cnmts, fallback_matched_programs
+            fallback_extractions, fallback_cnmt_paths, fallback_parsed_cnmts, fallback_matched_programs,
+            tickets.len(), unreadable_metadata_partitions, missing_metadata_decryption_keys
         )),
     }
 }
@@ -936,6 +953,20 @@ mod tests {
             bounded_cnmt_files(&root),
             Err("extracted_metadata_symlink_refused".into())
         );
+    }
+    #[test]
+    fn metadata_nca_commands_include_package_tickets() {
+        let keys = PathBuf::from("/example/keys/prod.keys");
+        let tickets = [PathBuf::from("/example/scratch/base-ticket.tik")];
+        assert_eq!(
+            nca_nstool_args(&keys, &tickets),
+            vec!["-t", "nca", "-k", "/example/keys/prod.keys", "--tik", "/example/scratch/base-ticket.tik"]
+        );
+    }
+    #[test]
+    fn diagnosis_redacts_key_values_and_reports_only_reason_counts() {
+        let output = "[WARNING] NCA Partition 0 not readable. (AES-CTR Key was not determined)\nKey = abcdef";
+        assert_eq!(metadata_partition_diagnosis(output), (1, 1));
     }
     #[test]
     fn identifies_program_from_nstool_cnmt() {
