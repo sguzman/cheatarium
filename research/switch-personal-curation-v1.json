@@ -14,7 +14,8 @@
     "build_identity": "Title ID + pinned native cheat Build ID identifies source applicability claim; static executable NSO Build IDs have now been extracted for all six user-targeted games. Whether those match Eden's active runtime and whether codes work in-game remain unverified.",
     "code_validation": "hex_lexical_candidates is approximate syntax inspection of formatted source strings, not executable validation",
     "install_safety": "no new cheats installed or enabled; no Qt configuration or ROM read; source candidates require private acquisition, parsed-code audit, and runtime Build ID match.",
-    "strict_native_syntax_note": "Strict native section validation: heading and text header must match; one or more lines of 1-5 eight-digit hexadecimal words; excludes commentary, non-code headings and malformed bodies. This is lexical validation only; not safety, semantics, or gameplay testing."
+    "strict_native_syntax_note": "Strict native section validation: heading and text header must match; one or more lines of 1-5 eight-digit hexadecimal words; excludes commentary, non-code headings and malformed bodies. This is lexical validation only; not safety, semantics, or gameplay testing.",
+    "exact_build_external_sources_policy": "Explicitly linked public source claims are separate from the pinned Hamlet database, which has zero exact Smash 13.0.2 sections. Exact Title ID + Build ID is a claimed text match, not authentication, runtime compatibility, or gameplay QA. No third-party cheat code bodies copied here."
   },
   "games": [
     {
@@ -636,7 +637,35 @@
         "other_source_code_payloads_not_rehosted": true
       },
       "strict_native_hex_sections_total": 67,
-      "non_native_or_malformed_sections_total": 1
+      "non_native_or_malformed_sections_total": 1,
+      "exact_build_external_sources": [
+        {
+          "source_id": "panda-smash-1302",
+          "title_id": "01006A800016E000",
+          "build_id": "CBD5A9B56EA859BA",
+          "game_version_claim": "13.0.2",
+          "author_credit": "Panda",
+          "source_url": "https://www.imwmi.com/cheats/2025.html",
+          "relationship": "attributed_original_public_post",
+          "rights_status": "link_only_redistribution_permission_not_established",
+          "source_build_claim_verified": true,
+          "body_imported": false,
+          "gameplay_verified": false
+        },
+        {
+          "source_id": "gbatemp-smash-1302-adaptation",
+          "title_id": "01006A800016E000",
+          "build_id": "CBD5A9B56EA859BA",
+          "game_version_claim": "13.0.2",
+          "author_credit": "GBAtemp user oinker; adapted using zzpong code updater",
+          "source_url": "https://gbatemp.net/threads/super-smash-bros-ultimate-tid-01006a800016e000-bid-b9b166df1db90baf-v-13-0-1.608055/",
+          "relationship": "community_update_not_independent_confirmation",
+          "rights_status": "link_only_redistribution_permission_not_established",
+          "source_build_claim_verified": true,
+          "body_imported": false,
+          "gameplay_verified": false
+        }
+      ]
     },
     {
       "title_id": "01006BB00C6F0000",
