@@ -1596,6 +1596,7 @@ fn run() -> Result<(), ErrBox> {
     let mut extra_roots = Vec::new();
     let mut personal_curation: Option<PathBuf> = None;
     let mut coverage_only = false;
+    let mut inspect_coverage_unresolved = false;
     let mut summary = false;
     let mut inspect_nsp_headers = false;
     let mut audit_all_files = false;
@@ -1649,6 +1650,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--summary" => summary = true,
             "--coverage-only" => coverage_only = true,
+            "--inspect-coverage-unresolved" => inspect_coverage_unresolved = true,
             "--inspect-nsp-headers" => inspect_nsp_headers = true,
             "--audit-all-files" => audit_all_files = true,
             "--build-readiness" => with_readiness = true,
@@ -1665,7 +1667,7 @@ fn run() -> Result<(), ErrBox> {
             }
             "--log" => build_log = PathBuf::from(args.next().ok_or("--log requires a path")?),
             "--help" | "-h" => {
-                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--game-dir-deep ABSOLUTE_DIR] [--title-id 0100000000010000] [--summary] [--personal-curation research/switch-personal-curation-v1.json] [--coverage-only] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
+                println!("Read-only Eden discovery:\n  cheatarium-eden-discover [--db generated/v1] [--config ~/.config/eden/qt-config.ini] [--cache-dir ~/.cache/eden/game_list] [--game-dir DIR] [--game-dir-deep ABSOLUTE_DIR] [--title-id 0100000000010000] [--summary] [--personal-curation research/switch-personal-curation-v1.json] [--coverage-only] [--inspect-coverage-unresolved] [--inspect-nsp-headers] [--audit-all-files] [--build-readiness] [--capture-build-history] [--no-capture-build-history|--read-only] [--history-file PATH] [--log PATH] [--json]\nBuild readiness automatically preserves minimal observations in Cheatarium state; use --read-only to opt out. Eden files and ROMs are never modified.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
@@ -1685,6 +1687,9 @@ fn run() -> Result<(), ErrBox> {
     }
     if personal_curation.is_some() && !summary {
         return Err("--personal-curation requires --summary".into());
+    }
+    if inspect_coverage_unresolved && !coverage_only {
+        return Err("--inspect-coverage-unresolved requires --coverage-only".into());
     }
     if coverage_only
         && (!summary
@@ -1870,6 +1875,7 @@ fn run() -> Result<(), ErrBox> {
                     &audit.inventory.candidate_base_titles,
                     &report.cached_titles,
                     &report,
+                    inspect_coverage_unresolved,
                 )?);
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
@@ -1891,6 +1897,7 @@ fn run() -> Result<(), ErrBox> {
                     &summary.candidate_base_titles,
                     &report.cached_titles,
                     &report,
+                    inspect_coverage_unresolved,
                 )?);
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
