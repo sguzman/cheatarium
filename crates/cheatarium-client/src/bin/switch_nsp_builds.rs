@@ -55,7 +55,11 @@ struct Scratch(PathBuf);
 impl Scratch {
     fn new() -> Result<Self, ErrBox> {
         let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
-        let root = env::temp_dir().join(format!("cheatarium-nsp-{}-{now}", std::process::id()));
+        // Avoid RAM-backed /tmp on Arch: an NSP Program NCA may be gigabytes.
+        let home = PathBuf::from(env::var_os("HOME").ok_or("HOME_not_set")?);
+        let cache = home.join(".cache/cheatarium/nsp-temporary");
+        fs::create_dir_all(&cache)?;
+        let root = cache.join(format!("cheatarium-nsp-{}-{now}", std::process::id()));
         fs::create_dir(&root)?;
         #[cfg(unix)] {
             use std::os::unix::fs::PermissionsExt;
