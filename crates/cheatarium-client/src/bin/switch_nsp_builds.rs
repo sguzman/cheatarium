@@ -5,15 +5,16 @@ use serde::Serialize;
 use std::collections::{BTreeMap, BTreeSet};
 use std::env;
 use std::error::Error;
-use std::fs::{self, File, OpenOptions};
-use std::io::{Read, Seek, SeekFrom};
+use std::fs::{self, File};
+use std::io::Read;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 use std::time::{SystemTime, UNIX_EPOCH};
 
 type ErrBox = Box<dyn Error + Send + Sync>;
 const MAX_NSP_COUNT: usize = 4096;
-const MAX_NCA_BYTES: u64 = 12 * 1024 * 1024 * 1024;
+const DEFAULT_MAX_NCA_GIB: u64 = 32;
+const ABSOLUTE_MAX_NCA_GIB: u64 = 64;
 const MAX_META_BYTES: u64 = 48 * 1024 * 1024;
 const MAX_COMMAND_OUTPUT: usize = 1024 * 1024;
 
@@ -37,6 +38,8 @@ struct Found {
     source_kind: String,
     version: u32,
     build_id: Option<String>,
+    /// 16 hexadecimal characters used for Switch cheat filenames.
+    cheat_build_id: Option<String>,
     status: String,
 }
 #[derive(Serialize)]
@@ -49,16 +52,36 @@ struct Report {
     temporary_files_removed_on_exit: bool,
     results: Vec<Found>,
     warnings: Vec<String>,
+    /// Files found in formats this version does not decrypt (e.g. XCI).
+    non_nsp_files_by_extension: BTreeMap<String, usize>,
 }
 
 struct Scratch(PathBuf);
 impl Scratch {
-    fn new() -> Result<Self, ErrBox> {
-        let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
-        // Avoid RAM-backed /tmp on Arch: an NSP Program NCA may be gigabytes.
+    fn default_root() -> Result<PathBuf, ErrBox> {
         let home = PathBuf::from(env::var_os("HOME").ok_or("HOME_not_set")?);
-        let cache = home.join(".cache/cheatarium/nsp-temporary");
-        fs::create_dir_all(&cache)?;
+        Ok(home.join(".cache/cheatarium/nsp-temporary"))
+    }
+    fn new() -> Result<Self, ErrBox> {
+        Self::new_at(&Self::default_root()?)
+    }
+    fn new_at(cache: &Path) -> Result<Self, ErrBox> {
+        if !cache.is_absolute() || cache.components().any(|part| matches!(part, std::path::Component::ParentDir | std::path::Component::CurDir)) {
+            return Err("scratch_dir_must_be_absolute_and_normalized".into());
+        }
+        // Refuse pre-existing symlinks in an external scratch path.
+        let mut parent = PathBuf::new();
+        for component in cache.components() {
+            parent.push(component);
+            match fs::symlink_metadata(&parent) {
+                Ok(meta) if meta.is_dir() && !meta.file_type().is_symlink() => {},
+                Ok(_) => return Err("scratch_dir_contains_symlink_or_non_directory".into()),
+                Err(e) if e.kind() == std::io::ErrorKind::NotFound => {},
+                Err(e) => return Err(e.into()),
+            }
+        }
+        fs::create_dir_all(cache)?;
+        let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
         let root = cache.join(format!("cheatarium-nsp-{}-{now}", std::process::id()));
         fs::create_dir(&root)?;
         #[cfg(unix)]
@@ -219,9 +242,9 @@ fn keyfile(specified: Option<PathBuf>) -> Result<PathBuf, ErrBox> {
     }
     Err("missing_local_prod_keys_supply_--keyset_path_without_printing_keys".into())
 }
-fn extract_nca(nsp: &Path, entry: &NcaEntry, output: &Path) -> Result<(), String> {
-    if entry.size > MAX_NCA_BYTES {
-        return Err("nca_exceeds_12gib_safety_limit".into());
+fn extract_nca(nsp: &Path, entry: &NcaEntry, output: &Path, limit_bytes: u64) -> Result<(), String> {
+    if entry.size > limit_bytes {
+        return Err("nca_exceeds_configured_safety_limit".into());
     }
     let args = vec![
         "-t".into(),
@@ -254,7 +277,7 @@ fn discover_package(
             continue;
         }
         let dest = scratch.path(&format!("meta-{i}.nca"));
-        if extract_nca(path, meta, &dest).is_err() {
+        if extract_nca(path, meta, &dest, MAX_META_BYTES).is_err() {
             continue;
         }
         let tree = safe_output(
@@ -379,6 +402,31 @@ fn scan_paths(root: &Path, max: usize) -> Result<Vec<PathBuf>, ErrBox> {
     files.sort();
     Ok(files)
 }
+fn discover_other_formats(root: &Path) -> Result<BTreeMap<String, usize>, ErrBox> {
+    let mut counts = BTreeMap::new();
+    let mut dirs = vec![(root.to_path_buf(), 0usize)];
+    while let Some((dir, depth)) = dirs.pop() {
+        if depth > 10 { continue; }
+        for entry in fs::read_dir(dir)? {
+            let entry = entry?;
+            let kind = entry.file_type()?;
+            if kind.is_symlink() { continue; }
+            if kind.is_dir() {
+                if !entry.file_name().to_string_lossy().eq_ignore_ascii_case("dlc") {
+                    dirs.push((entry.path(), depth+1));
+                }
+            } else if kind.is_file() {
+                if let Some(ext) = entry.path().extension().and_then(|x| x.to_str()) {
+                    let ext = ext.to_ascii_lowercase();
+                    if ["xci", "nsz", "xcz", "nsp"].contains(&ext.as_str()) {
+                        *counts.entry(ext).or_insert(0) += 1;
+                    }
+                }
+            }
+        }
+    }
+    Ok(counts)
+}
 fn main_nso_build(path: &Path) -> Result<String, String> {
     let mut f = File::open(path).map_err(|_| "missing_main_nso".to_owned())?;
     if f.metadata()
@@ -415,7 +463,7 @@ fn ticket_sources(nsp: &Path, scratch: &Scratch, prefix: &str) -> Result<Vec<Pat
             return Err("oversized_package_ticket".into());
         }
         let dest = scratch.path(&format!("{prefix}-ticket-{i}.tik"));
-        extract_nca(nsp, ticket, &dest)?;
+        extract_nca(nsp, ticket, &dest, 64 * 1024)?;
         out.push(dest);
     }
     Ok(out)
@@ -425,20 +473,21 @@ fn extract_build(
     base: Option<&Package>,
     keys: &Path,
     scratch: &Scratch,
+    limit_bytes: u64,
 ) -> Result<String, String> {
     let source_item = NcaEntry {
         name: package.program.clone(),
         size: package.program_size,
     };
     let update_nca = scratch.path("selected-program.nca");
-    extract_nca(&package.file, &source_item, &update_nca)?;
+    extract_nca(&package.file, &source_item, &update_nca, limit_bytes)?;
     let base_file = scratch.path("base-program.nca");
     if let Some(original) = base {
         let base_entry = NcaEntry {
             name: original.program.clone(),
             size: original.program_size,
         };
-        extract_nca(&original.file, &base_entry, &base_file)?;
+        extract_nca(&original.file, &base_entry, &base_file, limit_bytes)?;
     }
     let mut tickets = ticket_sources(&package.file, scratch, "selected")?;
     if let Some(original) = base {
@@ -503,6 +552,8 @@ fn run() -> Result<(), ErrBox> {
     let mut roms = PathBuf::from("/drive/roms/switch/roms");
     let mut specified_keys = None;
     let mut limit = 250usize;
+    let mut max_nca_gib = DEFAULT_MAX_NCA_GIB;
+    let mut scratch_dir: Option<PathBuf> = None;
     let mut selected = BTreeSet::new();
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -512,6 +563,8 @@ fn run() -> Result<(), ErrBox> {
                 specified_keys = Some(PathBuf::from(args.next().ok_or("--keyset needs a path")?))
             }
             "--limit" => limit = args.next().ok_or("--limit needs a number")?.parse()?,
+            "--max-nca-gib" => max_nca_gib = args.next().ok_or("--max-nca-gib needs an integer")?.parse()?,
+            "--scratch-dir" => scratch_dir = Some(PathBuf::from(args.next().ok_or("--scratch-dir needs a path")?)),
             "--title-id" => {
                 let id = args
                     .next()
@@ -533,13 +586,18 @@ fn run() -> Result<(), ErrBox> {
     if limit == 0 || limit > MAX_NSP_COUNT {
         return Err("invalid_nsp_scan_limit".into());
     }
+    if max_nca_gib == 0 || max_nca_gib > ABSOLUTE_MAX_NCA_GIB {
+        return Err("max_nca_gib_must_be_1_to_64".into());
+    }
+    let max_nca_bytes = max_nca_gib * 1024 * 1024 * 1024;
     let keys = keyfile(specified_keys)?;
     let files = scan_paths(&roms, limit)?;
-    let scratch = Scratch::new()?;
+    let scratch_root = scratch_dir.unwrap_or(Scratch::default_root()?);
+    let scratch = Scratch::new_at(&scratch_root)?;
     let mut packages = Vec::new();
     let mut warnings = Vec::new();
     for (i, file) in files.iter().enumerate() {
-        let temp = Scratch::new()?;
+        let temp = Scratch::new_at(&scratch_root)?;
         match discover_package(file, &keys, &temp) {
             Ok(Some(pkg)) if selected.is_empty() || selected.contains(&pkg.title) => {
                 packages.push(pkg)
@@ -586,6 +644,7 @@ fn run() -> Result<(), ErrBox> {
                 source_kind: "patch".into(),
                 version: selected_pkg.version,
                 build_id: None,
+                cheat_build_id: None,
                 status: "ambiguous_same_version_updates".into(),
             });
             continue;
@@ -596,17 +655,19 @@ fn run() -> Result<(), ErrBox> {
                 source_kind: "patch".into(),
                 version: selected_pkg.version,
                 build_id: None,
+                cheat_build_id: None,
                 status: "missing_base_program_nca_for_update".into(),
             });
             continue;
         }
         // Read-only against source and Eden: all extraction is into temporary files.
-        let res = extract_build(selected_pkg, base, &keys, &scratch);
+        let res = extract_build(selected_pkg, base, &keys, &scratch, max_nca_bytes);
         results.push(Found {
             title_id: title,
             source_kind: selected_pkg.kind.clone(),
             version: selected_pkg.version,
             build_id: res.as_ref().ok().cloned(),
+            cheat_build_id: res.as_ref().ok().and_then(|id| id.get(..16)).map(str::to_owned),
             status: res
                 .err()
                 .unwrap_or_else(|| "extracted_main_nso_build_id".into()),
@@ -623,11 +684,13 @@ fn run() -> Result<(), ErrBox> {
                 source_kind: "none".into(),
                 version: 0,
                 build_id: None,
+                cheat_build_id: None,
                 status: "not_found_in_scanned_nsp_content_metadata".into(),
             });
         }
     }
     results.sort_by(|a, b| a.title_id.cmp(&b.title_id));
+    let non_nsp_files_by_extension = discover_other_formats(&roms)?;
     let report = Report {
         format: "cheatarium-static-nsp-build-inspection-v1",
         read_only: true,
@@ -637,6 +700,7 @@ fn run() -> Result<(), ErrBox> {
         temporary_files_removed_on_exit: true,
         results,
         warnings,
+        non_nsp_files_by_extension,
     };
     println!("{}", serde_json::to_string_pretty(&report)?);
     Ok(())
