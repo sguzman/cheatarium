@@ -432,9 +432,17 @@ To reconcile only the games Eden actually lists or labels with your **six direct
 
 ```sh
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --personal-curation research/switch-personal-curation-v1.json --json
+# Compact, path-free candidate inventory for your local Switch library
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --json
 ```
 
-The `personal_coverage` result distinguishes (1) named Eden **candidates** seen in the cache/registered folder filenames, (2) previously extracted **static** NSP Build IDs and their exact pinned code-section counts, and (3) exact-build **third-party source links** that have not been imported. It also lists curated games absent from Eden's candidate inventory. A source merely claiming the matching Title ID and Build ID is not proof Eden currently runs that build, and no codes are installed. `--personal-curation` is valid with `--summary` and also with `--audit-all-files`, which can include extra advisory NSP ticket filename hints. It refuses mismatched claimed Build IDs, code-body imports or gameplay-verified claims in the link-only metadata. This overlay is not a replacement for Eden runtime Build ID inspection.
+The `personal_coverage` result distinguishes (1) named Eden **candidates** seen in the cache/registered folder filenames, (2) previously extracted **static** NSP Build IDs and their exact pinned code-section counts, and (3) exact-build **third-party source links** that have not been imported. It also lists curated games absent from Eden's candidate inventory. The additional `uncurated_games` queue lists **all other candidate base games** recognized from Eden's cache and registered filename labels, with cached game names (when available), archived native cheat Build ID counts, metadata-only external links, and the next identity-check action.
+
+Games with existing native cheat sources sort first, but candidate source counts do not prove an executable version. A cache-only record might be stale, and a game with only an update filename may not be installed. A source merely claiming the matching Title ID and Build ID is not proof Eden currently runs that build, and no codes are installed.
+
+
+
+Use `--coverage-only` for a compact read-only JSON inventory without registered game-file paths or Eden launch history. This mode rejects `--build-readiness`, `--audit-all-files`, and NSP header inspection. It still contains candidate Title IDs and cached names: treat it as *private inventory data*, not public repository material. `--personal-curation` is valid with `--summary` and also with `--audit-all-files`, which can include extra advisory NSP ticket filename hints. It refuses mismatched claimed Build IDs, code-body imports or gameplay-verified claims in the link-only metadata. This overlay is not a replacement for Eden runtime Build ID inspection.
 ```
 
 The summary identifies candidate base games by standard Title ID label shape, possible update containers using Eden's own `GetUpdateTitleID(base) = base | 0x800` rule, and likely DLC files grouped by user directory labels such as `dlc/`. It lists filenames with no embedded Title ID separately, rather than guessing their identities from adjacent files. It does not report each individual DLC Title ID as an independent playable game.
