@@ -1143,7 +1143,7 @@ mod tests {
         assert_eq!(out.proposed_addons.len(), 2);
         assert_eq!(out.rejected_entries.len(), 1);
         assert!(out.proposed_addons.iter().any(|addon|
-            addon.proposed_mod_path.contains("/0100000000010000/Infinite Health (L+R)/")
+            addon.proposed_mod_path.contains("/0100000000010000/Cheatarium-")
         ));
         assert!(out.proposed_addons[0]
             .proposed_mod_path
@@ -1158,7 +1158,7 @@ mod tests {
         assert_eq!(eden_display_label("../unsafe"), "unsafe");
         let mut source = fixture();
         source.records[0].codes.retain(|entry| entry.ordinal == 0);
-        let plan = preview(&source, "0100000000010000", "B424BE150A8E7D78",
+        let plan = preview_readable(&source, "0100000000010000", "B424BE150A8E7D78",
             Path::new("/tmp/eden/load")).unwrap();
         assert!(plan.proposed_addons[0].proposed_mod_path.contains("/Infinite Health (L+R)/cheats/"));
         assert!(!plan.proposed_addons[0].proposed_mod_path.contains("Cheatarium-"));
