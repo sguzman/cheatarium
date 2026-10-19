@@ -259,6 +259,7 @@ jobs:
           python3 tools/test_external_archive_overlap.py
           python3 tools/test_acquisition_priorities.py
           python3 tools/test_audit_acquisition_rights.py
+          python3 tools/test_curate_switch_private.py
           python3 tools/test_audit_switch_external_title_build.py
           python3 tools/test_audit_3ds_external_title_ids.py
           python3 tools/test_ps2_external_crc_labels.py
