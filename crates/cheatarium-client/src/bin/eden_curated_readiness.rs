@@ -127,11 +127,12 @@ fn evaluate(game: &Game, observations: &BTreeSet<String>, private: &BTreeMap<Str
     }
 }
 fn default_private_root() -> PathBuf {
-    env::var_os("XDG_DATA_HOME")
+    // Match the existing private Python acquisition tool's actual destination,
+    // even on hosts where XDG_DATA_HOME points somewhere else.
+    env::var_os("HOME")
         .map(PathBuf::from)
-        .or_else(|| env::var_os("HOME").map(|h| PathBuf::from(h).join(".local/share")))
         .unwrap_or_default()
-        .join("cheatarium/private-switch-curation")
+        .join(".local/share/cheatarium/private-switch-curation")
 }
 fn run() -> Result<(), ErrBox> {
     let mut manifest = PathBuf::from("research/switch-personal-curation-v1.json");
