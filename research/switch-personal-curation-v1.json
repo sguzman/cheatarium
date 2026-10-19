@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-user-switch-cheat-source-curation-v1",
+  "upstream": {
+    "repository": "https://github.com/HamletDuFromage/switch-cheats-db",
+    "snapshot_commit": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+    "source_path_pattern": "cheats/<TITLE_ID>.json",
+    "rights_status": "link_only_source_contains_independently_authored_community_codes",
+    "source_license_assessment": "No root cheat-body redistribution grant established; code bodies intentionally not copied into this public repository."
+  },
+  "review": {
+    "rule": "16-hex Build ID keys only; attribution entries excluded",
+    "count_meaning": "named_sections counts raw upstream dictionary headings, not unique working cheats; several are reset, toggle alternatives, graphics patches or metadata.",
+    "build_identity": "Title ID + archived Build ID identifies source applicability claim; current executable Build IDs for five games remain unobserved.",
+    "code_validation": "hex_lexical_candidates is approximate syntax inspection of formatted source strings, not executable validation",
+    "install_safety": "no new cheats installed or enabled; no Qt configuration or ROM read; source candidates require private acquisition, parsed-code audit, and runtime Build ID match."
+  },
+  "games": [
+    {
+      "title_id": "0100000000010000",
+      "title": "Super Mario Odyssey",
+      "sharkive_native_builds": [
+        "3CA12DFAAF9C82DA",
+        "B424BE150A8E7D78",
+        "F5DCCDDB37E97724"
+      ],
+      "hamlet_builds": [
+        {
+          "build_id": "3CA12DFAAF9C82DA",
+          "named_sections": 15,
+          "hex_lexical_candidates": 15,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": true
+        },
+        {
+          "build_id": "B424BE150A8E7D78",
+          "named_sections": 9,
+          "hex_lexical_candidates": 9,
+          "control_or_graphics_name_hints": 1,
+          "sharkive_archive_contains_build": true
+        },
+        {
+          "build_id": "F5DCCDDB37E97724",
+          "named_sections": 16,
+          "hex_lexical_candidates": 16,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": true
+        }
+      ],
+      "hamlet_named_sections_total": 40,
+      "relevant_heading_examples": [
+        "9999 Coins Save 1]",
+        "Infinite Health Save 1]",
+        "Max Purple Coins Save 1]",
+        "9999 Coins Save 2]",
+        "Infinite Health Save 2]",
+        "Max Purple Coins Save 2]",
+        "9999 Coins Save 3]",
+        "Infinite Health Save 3]"
+      ],
+      "runtime_evidence": {
+        "status": "historical_main_observed_not_current_proof",
+        "build_id": "B424BE150A8E7D78"
+      },
+      "acquisition_status": "source_located_code_not_imported",
+      "in_game_verified": false,
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100000000010000.json"
+    },
+    {
+      "title_id": "0100152000022000",
+      "title": "Mario Kart 8 Deluxe",
+      "sharkive_native_builds": [
+        "1CD9216A21737FB4",
+        "96DFD1769E560C27",
+        "FE1B230800D4933C"
+      ],
+      "hamlet_builds": [
+        {
+          "build_id": "13296B64DFA7A131",
+          "named_sections": 12,
+          "hex_lexical_candidates": 11,
+          "control_or_graphics_name_hints": 5,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "1CD9216A21737FB4",
+          "named_sections": 2,
+          "hex_lexical_candidates": 2,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": true
+        },
+        {
+          "build_id": "2452C49BC26EC159",
+          "named_sections": 5,
+          "hex_lexical_candidates": 5,
+          "control_or_graphics_name_hints": 5,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "2C336A9BCF79C304",
+          "named_sections": 5,
+          "hex_lexical_candidates": 5,
+          "control_or_graphics_name_hints": 5,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "381F6BF6894F3C33",
+          "named_sections": 11,
+          "hex_lexical_candidates": 10,
+          "control_or_graphics_name_hints": 4,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "4792ABA465F04534",
+          "named_sections": 9,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 1,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "4B7A0BB5AE57E627",
+          "named_sections": 2,
+          "hex_lexical_candidates": 2,
+          "control_or_graphics_name_hints": 2,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "60C8343AFBA2588F",
+          "named_sections": 9,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 2,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "6A85262F21B90364",
+          "named_sections": 5,
+          "hex_lexical_candidates": 5,
+          "control_or_graphics_name_hints": 5,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "937E57FF64D21ECD",
+          "named_sections": 9,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 2,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "94FB3AFECA39D600",
+          "named_sections": 3,
+          "hex_lexical_candidates": 3,
+          "control_or_graphics_name_hints": 3,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "96DFD1769E560C27",
+          "named_sections": 2,
+          "hex_lexical_candidates": 2,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": true
+        },
+        {
+          "build_id": "9EF5CAA2D5B933C7",
+          "named_sections": 19,
+          "hex_lexical_candidates": 18,
+          "control_or_graphics_name_hints": 5,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "BDA8F5E6A0F87F36",
+          "named_sections": 9,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 2,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "FE1B230800D4933C",
+          "named_sections": 9,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 1,
+          "sharkive_archive_contains_build": true
+        },
+        {
+          "build_id": "FE941ED5BA14BE5D",
+          "named_sections": 5,
+          "hex_lexical_candidates": 5,
+          "control_or_graphics_name_hints": 5,
+          "sharkive_archive_contains_build": false
+        }
+      ],
+      "hamlet_named_sections_total": 116,
+      "relevant_heading_examples": [
+        "№ 1. Can use all Parts and Characters without Unlock]",
+        "№ 2. 1000 Upper limited Coins]",
+        "№ 3. 5x Coins Collected (for Player 1)]",
+        "№ 4. No Coins Dropped (for Player 1)]"
+      ],
+      "runtime_evidence": {
+        "status": "not_observed_for_current_runtime",
+        "build_id": null
+      },
+      "acquisition_status": "source_located_code_not_imported",
+      "in_game_verified": false,
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100152000022000.json"
+    },
+    {
+      "title_id": "01002DA013484000",
+      "title": "The Legend of Zelda: Skyward Sword HD",
+      "sharkive_native_builds": [],
+      "hamlet_builds": [
+        {
+          "build_id": "5441AF3C89F97E1D",
+          "named_sections": 57,
+          "hex_lexical_candidates": 57,
+          "control_or_graphics_name_hints": 20,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "D824D4B1BBD45D03",
+          "named_sections": 47,
+          "hex_lexical_candidates": 47,
+          "control_or_graphics_name_hints": 17,
+          "sharkive_archive_contains_build": false
+        }
+      ],
+      "hamlet_named_sections_total": 104,
+      "relevant_heading_examples": [
+        "Infinite Stamina]",
+        "Infinite Hearts (80)]",
+        "Rupees always 300]",
+        "Infinite Spiral Charges (3)]",
+        "Max Rupees]",
+        "Max Heart]",
+        "Inf Spiral]",
+        "Inf SP]"
+      ],
+      "runtime_evidence": {
+        "status": "not_observed_for_current_runtime",
+        "build_id": null
+      },
+      "acquisition_status": "source_located_code_not_imported",
+      "in_game_verified": false,
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01002DA013484000.json"
+    },
+    {
+      "title_id": "01006A800016E000",
+      "title": "Super Smash Bros. Ultimate",
+      "sharkive_native_builds": [
+        "2EF410F4D4D2D279",
+        "343D891A4BCF0684",
+        "4590C9BB2C530754",
+        "FD471EB458C915E7"
+      ],
+      "hamlet_builds": [
+        {
+          "build_id": "06646FDDD47A619F",
+          "named_sections": 3,
+          "hex_lexical_candidates": 3,
+          "control_or_graphics_name_hints": 1,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "1B4270CED2653872",
+          "named_sections": 1,
+          "hex_lexical_candidates": 1,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "4A3F8ED7DCCE3AD4",
+          "named_sections": 8,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 4,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "77104350C9768709",
+          "named_sections": 3,
+          "hex_lexical_candidates": 3,
+          "control_or_graphics_name_hints": 3,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "7A77E0D95E57814C",
+          "named_sections": 6,
+          "hex_lexical_candidates": 6,
+          "control_or_graphics_name_hints": 1,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "875F34E0D735B604",
+          "named_sections": 14,
+          "hex_lexical_candidates": 14,
+          "control_or_graphics_name_hints": 7,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "9825A8B3C3904A82",
+          "named_sections": 6,
+          "hex_lexical_candidates": 6,
+          "control_or_graphics_name_hints": 2,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "9FE4E3C363968930",
+          "named_sections": 8,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "B0CB5479F051741A",
+          "named_sections": 6,
+          "hex_lexical_candidates": 6,
+          "control_or_graphics_name_hints": 2,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "B9B166DF1DB90BAF",
+          "named_sections": 3,
+          "hex_lexical_candidates": 3,
+          "control_or_graphics_name_hints": 3,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "D45361E905C9E3C1",
+          "named_sections": 8,
+          "hex_lexical_candidates": 8,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "FD471EB458C915E7",
+          "named_sections": 2,
+          "hex_lexical_candidates": 2,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": true
+        }
+      ],
+      "hamlet_named_sections_total": 68,
+      "relevant_heading_examples": [],
+      "runtime_evidence": {
+        "status": "not_observed_for_current_runtime",
+        "build_id": null
+      },
+      "acquisition_status": "source_located_code_not_imported",
+      "in_game_verified": false,
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006A800016E000.json"
+    },
+    {
+      "title_id": "01006BB00C6F0000",
+      "title": "The Legend of Zelda: Link's Awakening",
+      "sharkive_native_builds": [
+        "AE16F71E002AF8CB"
+      ],
+      "hamlet_builds": [
+        {
+          "build_id": "909E904AF78AC1B8",
+          "named_sections": 9,
+          "hex_lexical_candidates": 9,
+          "control_or_graphics_name_hints": 0,
+          "sharkive_archive_contains_build": false
+        },
+        {
+          "build_id": "AE16F71E002AF8CB",
+          "named_sections": 38,
+          "hex_lexical_candidates": 38,
+          "control_or_graphics_name_hints": 1,
+          "sharkive_archive_contains_build": true
+        }
+      ],
+      "hamlet_named_sections_total": 47,
+      "relevant_heading_examples": [
+        "Infinite / Max Hearts Press ZR]",
+        "9999 Rupees Press L]",
+        "Infinite Arrows (Right Stick Down)]",
+        "Have 3/4 Hearts (Press Right Stick)]",
+        "Have 3/4 Hearts (Press Left Stick)]",
+        "Infinite Small Keys]"
+      ],
+      "runtime_evidence": {
+        "status": "not_observed_for_current_runtime",
+        "build_id": null
+      },
+      "acquisition_status": "source_located_code_not_imported",
+      "in_game_verified": false,
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006BB00C6F0000.json"
+    },
+    {
+      "title_id": "0100BC0018138000",
+      "title": "Super Mario RPG",
+      "sharkive_native_builds": [],
+      "hamlet_builds": [
+        {
+          "build_id": "E968832CADE2AD7C",
+          "named_sections": 54,
+          "hex_lexical_candidates": 52,
+          "control_or_graphics_name_hints": 6,
+          "sharkive_archive_contains_build": false
+        }
+      ],
+      "hamlet_named_sections_total": 54,
+      "relevant_heading_examples": [
+        "♯ 1. Inf. HP]",
+        "♯ 2. Inf. MP (Flower Power)]",
+        "♯ 3. Inf. Item Usage]",
+        "♯ 5a Coin Multiplier (2x) ★]",
+        "♯ 5b Coin Multiplier (4x)]",
+        "♯ 5c Coin Multiplier (8x)]",
+        "♯ 6a Frog Coin Multiplier (2x) ★]",
+        "♯ 6b FrogCoin Multiplier (4x)]"
+      ],
+      "runtime_evidence": {
+        "status": "not_observed_for_current_runtime",
+        "build_id": null
+      },
+      "acquisition_status": "source_located_code_not_imported",
+      "in_game_verified": false,
+      "source_url": "https://github.com/HamletDuFromage/switch-cheats-db/blob/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100BC0018138000.json"
+    }
+  ]
+}
