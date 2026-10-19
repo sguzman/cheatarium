@@ -13,7 +13,8 @@
     "count_meaning": "named_sections counts raw upstream dictionary headings, not unique working cheats; several are reset, toggle alternatives, graphics patches or metadata.",
     "build_identity": "Title ID + archived Build ID identifies source applicability claim; current executable Build IDs for five games remain unobserved.",
     "code_validation": "hex_lexical_candidates is approximate syntax inspection of formatted source strings, not executable validation",
-    "install_safety": "no new cheats installed or enabled; no Qt configuration or ROM read; source candidates require private acquisition, parsed-code audit, and runtime Build ID match."
+    "install_safety": "no new cheats installed or enabled; no Qt configuration or ROM read; source candidates require private acquisition, parsed-code audit, and runtime Build ID match.",
+    "strict_native_syntax_note": "Strict native section validation: heading and text header must match; one or more lines of 1-5 eight-digit hexadecimal words; excludes commentary, non-code headings and malformed bodies. This is lexical validation only; not safety, semantics, or gameplay testing."
   },
   "games": [
     {
@@ -30,21 +31,27 @@
           "named_sections": 15,
           "hex_lexical_candidates": 15,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 15,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "B424BE150A8E7D78",
           "named_sections": 9,
           "hex_lexical_candidates": 9,
           "control_or_graphics_name_hints": 1,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 9,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "F5DCCDDB37E97724",
           "named_sections": 16,
           "hex_lexical_candidates": 16,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 16,
+          "excluded_non_native_headings": []
         }
       ],
       "hamlet_named_sections_total": 40,
@@ -94,7 +101,9 @@
           "F5DCCDDB37E97724"
         ],
         "other_source_code_payloads_not_rehosted": true
-      }
+      },
+      "strict_native_hex_sections_total": 40,
+      "non_native_or_malformed_sections_total": 0
     },
     {
       "title_id": "0100152000022000",
@@ -110,112 +119,163 @@
           "named_sections": 12,
           "hex_lexical_candidates": 11,
           "control_or_graphics_name_hints": 5,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 11,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe v2.3.0 TID=0100152000022000 BID=13296B64DFA7A131]"
+          ]
         },
         {
           "build_id": "1CD9216A21737FB4",
           "named_sections": 2,
           "hex_lexical_candidates": 2,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 2,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "2452C49BC26EC159",
           "named_sections": 5,
           "hex_lexical_candidates": 5,
           "control_or_graphics_name_hints": 5,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 5,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "2C336A9BCF79C304",
           "named_sections": 5,
           "hex_lexical_candidates": 5,
           "control_or_graphics_name_hints": 5,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 5,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "381F6BF6894F3C33",
           "named_sections": 11,
           "hex_lexical_candidates": 10,
           "control_or_graphics_name_hints": 4,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 10,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe v917504 TID=0100152000022000 BID=381F6BF6894F3C33]"
+          ]
         },
         {
           "build_id": "4792ABA465F04534",
           "named_sections": 9,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 1,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 7,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe (US) v1.7.2(v655360)  TID=0100152000022000  BID=4792ABA465F04534 ]",
+            "{Created by Eiffel2018, enjoy!}"
+          ]
         },
         {
           "build_id": "4B7A0BB5AE57E627",
           "named_sections": 2,
           "hex_lexical_candidates": 2,
           "control_or_graphics_name_hints": 2,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 2,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "60C8343AFBA2588F",
           "named_sections": 9,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 2,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 8,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe v851968 TID=0100152000022000 BID=60C8343AFBA2588F]"
+          ]
         },
         {
           "build_id": "6A85262F21B90364",
           "named_sections": 5,
           "hex_lexical_candidates": 5,
           "control_or_graphics_name_hints": 5,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 5,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "937E57FF64D21ECD",
           "named_sections": 9,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 2,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 7,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe (US) v2.0.0(v720896)  TID=0100152000022000  BID=937E57FF64D21ECD ]",
+            "{Restore Codes}"
+          ]
         },
         {
           "build_id": "94FB3AFECA39D600",
           "named_sections": 3,
           "hex_lexical_candidates": 3,
           "control_or_graphics_name_hints": 3,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 3,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "96DFD1769E560C27",
           "named_sections": 2,
           "hex_lexical_candidates": 2,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 2,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "9EF5CAA2D5B933C7",
           "named_sections": 19,
           "hex_lexical_candidates": 18,
           "control_or_graphics_name_hints": 5,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 18,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe v1179648 TID=0100152000022000 BID=9EF5CAA2D5B933C7]"
+          ]
         },
         {
           "build_id": "BDA8F5E6A0F87F36",
           "named_sections": 9,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 2,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 8,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe v2.1.0 TID=0100152000022000 BID=BDA8F5E6A0F87F36]"
+          ]
         },
         {
           "build_id": "FE1B230800D4933C",
           "named_sections": 9,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 1,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 7,
+          "excluded_non_native_headings": [
+            "[Mario Kart 8 Deluxe (US) v1.7.1(v589824)  TID=0100152000022000  BID=FE1B230800D4933C ]",
+            "{Created by Eiffel2018, enjoy!}"
+          ]
         },
         {
           "build_id": "FE941ED5BA14BE5D",
           "named_sections": 5,
           "hex_lexical_candidates": 5,
           "control_or_graphics_name_hints": 5,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 5,
+          "excluded_non_native_headings": []
         }
       ],
       "hamlet_named_sections_total": 116,
@@ -278,7 +338,9 @@
           "FE941ED5BA14BE5D"
         ],
         "other_source_code_payloads_not_rehosted": true
-      }
+      },
+      "strict_native_hex_sections_total": 105,
+      "non_native_or_malformed_sections_total": 11
     },
     {
       "title_id": "01002DA013484000",
@@ -290,14 +352,18 @@
           "named_sections": 57,
           "hex_lexical_candidates": 57,
           "control_or_graphics_name_hints": 20,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 57,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "D824D4B1BBD45D03",
           "named_sections": 47,
           "hex_lexical_candidates": 47,
           "control_or_graphics_name_hints": 17,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 47,
+          "excluded_non_native_headings": []
         }
       ],
       "hamlet_named_sections_total": 104,
@@ -344,7 +410,9 @@
           "D824D4B1BBD45D03"
         ],
         "other_source_code_payloads_not_rehosted": true
-      }
+      },
+      "strict_native_hex_sections_total": 104,
+      "non_native_or_malformed_sections_total": 0
     },
     {
       "title_id": "01006A800016E000",
@@ -361,84 +429,110 @@
           "named_sections": 3,
           "hex_lexical_candidates": 3,
           "control_or_graphics_name_hints": 1,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 3,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "1B4270CED2653872",
           "named_sections": 1,
           "hex_lexical_candidates": 1,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 1,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "4A3F8ED7DCCE3AD4",
           "named_sections": 8,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 4,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 8,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "77104350C9768709",
           "named_sections": 3,
           "hex_lexical_candidates": 3,
           "control_or_graphics_name_hints": 3,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 3,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "7A77E0D95E57814C",
           "named_sections": 6,
           "hex_lexical_candidates": 6,
           "control_or_graphics_name_hints": 1,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 6,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "875F34E0D735B604",
           "named_sections": 14,
           "hex_lexical_candidates": 14,
           "control_or_graphics_name_hints": 7,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 13,
+          "excluded_non_native_headings": [
+            "[all cpu no move]"
+          ]
         },
         {
           "build_id": "9825A8B3C3904A82",
           "named_sections": 6,
           "hex_lexical_candidates": 6,
           "control_or_graphics_name_hints": 2,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 6,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "9FE4E3C363968930",
           "named_sections": 8,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 8,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "B0CB5479F051741A",
           "named_sections": 6,
           "hex_lexical_candidates": 6,
           "control_or_graphics_name_hints": 2,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 6,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "B9B166DF1DB90BAF",
           "named_sections": 3,
           "hex_lexical_candidates": 3,
           "control_or_graphics_name_hints": 3,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 3,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "D45361E905C9E3C1",
           "named_sections": 8,
           "hex_lexical_candidates": 8,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 8,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "FD471EB458C915E7",
           "named_sections": 2,
           "hex_lexical_candidates": 2,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 2,
+          "excluded_non_native_headings": []
         }
       ],
       "hamlet_named_sections_total": 68,
@@ -504,7 +598,9 @@
           "FD471EB458C915E7"
         ],
         "other_source_code_payloads_not_rehosted": true
-      }
+      },
+      "strict_native_hex_sections_total": 67,
+      "non_native_or_malformed_sections_total": 1
     },
     {
       "title_id": "01006BB00C6F0000",
@@ -518,14 +614,18 @@
           "named_sections": 9,
           "hex_lexical_candidates": 9,
           "control_or_graphics_name_hints": 0,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 9,
+          "excluded_non_native_headings": []
         },
         {
           "build_id": "AE16F71E002AF8CB",
           "named_sections": 38,
           "hex_lexical_candidates": 38,
           "control_or_graphics_name_hints": 1,
-          "sharkive_archive_contains_build": true
+          "sharkive_archive_contains_build": true,
+          "strict_native_hex_sections": 38,
+          "excluded_non_native_headings": []
         }
       ],
       "hamlet_named_sections_total": 47,
@@ -570,7 +670,9 @@
           "AE16F71E002AF8CB"
         ],
         "other_source_code_payloads_not_rehosted": true
-      }
+      },
+      "strict_native_hex_sections_total": 47,
+      "non_native_or_malformed_sections_total": 0
     },
     {
       "title_id": "0100BC0018138000",
@@ -582,7 +684,11 @@
           "named_sections": 54,
           "hex_lexical_candidates": 52,
           "control_or_graphics_name_hints": 6,
-          "sharkive_archive_contains_build": false
+          "sharkive_archive_contains_build": false,
+          "strict_native_hex_sections": 53,
+          "excluded_non_native_headings": [
+            "[Super Mario RPG (US) v0 TID=0100BC0018138000 BID=E968832CADE2AD7C]"
+          ]
         }
       ],
       "hamlet_named_sections_total": 54,
@@ -623,7 +729,9 @@
           "E968832CADE2AD7C"
         ],
         "other_source_code_payloads_not_rehosted": true
-      }
+      },
+      "strict_native_hex_sections_total": 53,
+      "non_native_or_malformed_sections_total": 1
     }
   ],
   "cross_source_review": {
