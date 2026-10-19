@@ -279,10 +279,7 @@ fn validate_local_keyfile(path: &Path) -> Result<bool, ErrBox> {
 // Use a private temporary HOME for NSTool children, linking to the existing
 // local title.keys; never read key values, pass them in argv, or copy them.
 #[cfg(unix)]
-fn setup_nstool_key_home(
-    scratch: &Scratch,
-    title_keys: &Path,
-) -> Result<PathBuf, ErrBox> {
+fn setup_nstool_key_home(scratch: &Scratch, title_keys: &Path) -> Result<PathBuf, ErrBox> {
     if !validate_local_keyfile(title_keys)? {
         return Err("requested_title_keys_file_does_not_exist".into());
     }
@@ -811,7 +808,9 @@ fn run() -> Result<(), ErrBox> {
                 specified_keys = Some(PathBuf::from(args.next().ok_or("--keyset needs a path")?))
             }
             "--title-keyset" => {
-                specified_title_keys = Some(PathBuf::from(args.next().ok_or("--title-keyset needs a path")?))
+                specified_title_keys = Some(PathBuf::from(
+                    args.next().ok_or("--title-keyset needs a path")?,
+                ))
             }
             "--limit" => limit = args.next().ok_or("--limit needs a number")?.parse()?,
             "--max-nca-gib" => {
@@ -875,14 +874,15 @@ fn run() -> Result<(), ErrBox> {
     let scratch_root = scratch_dir.unwrap_or(Scratch::default_root()?);
     let scratch = Scratch::new_at(&scratch_root)?;
     let explicit_title_keyset = specified_title_keys.is_some();
-    let title_keys = specified_title_keys
-        .or_else(|| keys.parent().map(|parent| parent.join("title.keys")));
+    let title_keys =
+        specified_title_keys.or_else(|| keys.parent().map(|parent| parent.join("title.keys")));
     if let Some(title_keys) = title_keys {
         if validate_local_keyfile(&title_keys)? {
             #[cfg(unix)]
             {
                 let temp_home = setup_nstool_key_home(&scratch, &title_keys)?;
-                NSTOOL_KEY_HOME.set(temp_home)
+                NSTOOL_KEY_HOME
+                    .set(temp_home)
                     .map_err(|_| "nstool_key_home_already_initialized")?;
             }
             #[cfg(not(unix))]
@@ -1086,9 +1086,15 @@ mod tests {
         fs::write(&keys, b"dummy_test_data_not_real_keys").unwrap();
         let home = setup_nstool_key_home(&scratch, &keys).unwrap();
         let link = home.join(".switch/title.keys");
-        assert!(fs::symlink_metadata(&link).unwrap().file_type().is_symlink());
+        assert!(fs::symlink_metadata(&link)
+            .unwrap()
+            .file_type()
+            .is_symlink());
         assert_eq!(fs::read_link(&link).unwrap(), keys.canonicalize().unwrap());
-        assert_eq!(std::fs::read(&link).unwrap(), b"dummy_test_data_not_real_keys");
+        assert_eq!(
+            std::fs::read(&link).unwrap(),
+            b"dummy_test_data_not_real_keys"
+        );
         assert!(!home.join(".switch/prod.keys").exists());
     }
     #[test]
