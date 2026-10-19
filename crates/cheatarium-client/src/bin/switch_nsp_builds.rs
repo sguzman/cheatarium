@@ -53,7 +53,7 @@ struct Report {
     results: Vec<Found>,
     warnings: Vec<String>,
     /// Files found in formats this version does not decrypt (e.g. XCI).
-    non_nsp_files_by_extension: BTreeMap<String, usize>,
+    source_file_counts_by_extension: BTreeMap<String, usize>,
 }
 
 struct Scratch(PathBuf);
@@ -690,7 +690,7 @@ fn run() -> Result<(), ErrBox> {
         }
     }
     results.sort_by(|a, b| a.title_id.cmp(&b.title_id));
-    let non_nsp_files_by_extension = discover_other_formats(&roms)?;
+    let source_file_counts_by_extension = discover_other_formats(&roms)?;
     let report = Report {
         format: "cheatarium-static-nsp-build-inspection-v1",
         read_only: true,
@@ -700,7 +700,7 @@ fn run() -> Result<(), ErrBox> {
         temporary_files_removed_on_exit: true,
         results,
         warnings,
-        non_nsp_files_by_extension,
+        source_file_counts_by_extension,
     };
     println!("{}", serde_json::to_string_pretty(&report)?);
     Ok(())
@@ -755,6 +755,30 @@ mod tests {
         raw.pop();
         fs::write(&path, &raw).unwrap();
         assert!(scan_pfs0(&path).is_err());
+    }
+    #[test]
+    fn inventories_xci_and_nsz_without_claiming_build_evidence() {
+        let scratch = Scratch::new().unwrap();
+        fs::write(scratch.path("Super Mario RPG.xci"), b"not a parsed XCI").unwrap();
+        fs::write(scratch.path("Other Game.nsz"), b"unparsed").unwrap();
+        fs::write(scratch.path("update.nsp"), b"unparsed").unwrap();
+        let formats = discover_other_formats(&scratch.0).unwrap();
+        assert_eq!(formats.get("xci"), Some(&1));
+        assert_eq!(formats.get("nsz"), Some(&1));
+        assert_eq!(formats.get("nsp"), Some(&1));
+    }
+    #[test]
+    fn program_extraction_respects_explicit_size_cap() {
+        let scratch = Scratch::new().unwrap();
+        let package = scratch.path("not_a_real_game.nsp");
+        fs::write(&package, b"PFS0").unwrap();
+        let oversized = NcaEntry { name: "large.nca".into(), size: 13 * 1024 * 1024 * 1024 };
+        let dest = scratch.path("unwritten.nca");
+        assert_eq!(
+            extract_nca(&package, &oversized, &dest, 12 * 1024 * 1024 * 1024),
+            Err("nca_exceeds_configured_safety_limit".into())
+        );
+        assert!(!dest.exists());
     }
     #[test]
     fn reads_nso_build_id_at_expected_offset() {
