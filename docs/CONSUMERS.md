@@ -537,6 +537,14 @@ python3 tools/curate_switch_private.py
 python3 tools/curate_switch_private.py --title-id 01002DA013484000
 ```
 
+For your six directly observed Switch NSP Build IDs, prefer **exact-build-only private staging**:
+
+```sh
+python3 tools/curate_switch_private.py --fetch-personal-exact
+```
+
+This fetches the commit-pinned community source JSON for each of the five games with strict native exact-build sections, and writes **only the observed static NSP Build ID** file to the local private cache. It does **not** stage unrelated build variants, touch Eden, enable mods, or claim these cheats work with Eden's current runtime build. Super Smash Bros. Ultimate has no exact-build sections in that pinned database, so it is reported as skipped with its third-party source links remaining metadata-only. The operation can be retried: byte-identical existing files are accepted and conflicting private files are never overwritten. With `--title-id ID`, the same mode is limited to one curated game. Obtain current Eden version evidence before any installation; static NSP extraction is not runtime proof.
+
 For strictly private local acquisition, choose a single game:
 
 ```sh
