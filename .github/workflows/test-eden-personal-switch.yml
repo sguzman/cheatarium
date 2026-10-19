@@ -11,6 +11,7 @@ on:
       - "crates/cheatarium-client/src/bin/eden_personal_coverage.rs"
       - "research/switch-personal-curation-v1.json"
       - "tools/curate_switch_private.py"
+      - "tools/test_curate_switch_private.py"
       - "Cargo.lock"
   workflow_dispatch:
 
@@ -29,4 +30,5 @@ jobs:
       - name: Validate local curation preview
         run: |
           python3 -m py_compile tools/curate_switch_private.py
+          python3 -m unittest discover -s tools -p test_curate_switch_private.py
           python3 tools/curate_switch_private.py --title-id 01006A800016E000
