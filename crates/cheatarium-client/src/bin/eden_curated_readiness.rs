@@ -56,9 +56,14 @@ struct Report {
     warning: &'static str,
 }
 fn valid_build(id: &str) -> bool {
-    id.len() == 16 && id.bytes().all(|b| b.is_ascii_hexdigit() && !b.is_ascii_lowercase())
+    id.len() == 16
+        && id
+            .bytes()
+            .all(|b| b.is_ascii_hexdigit() && !b.is_ascii_lowercase())
 }
-fn valid_title(id: &str) -> bool { valid_build(id) && id.starts_with("01") }
+fn valid_title(id: &str) -> bool {
+    valid_build(id) && id.starts_with("01")
+}
 
 fn staged(root: &Path, game: &Game) -> Result<BTreeMap<String, usize>, ErrBox> {
     let mut known = BTreeMap::new();
@@ -66,11 +71,18 @@ fn staged(root: &Path, game: &Game) -> Result<BTreeMap<String, usize>, ErrBox> {
         if !valid_build(&build.build_id) {
             return Err("Curated source contains malformed Build ID".into());
         }
-        let file = root.join(&game.title_id).join(format!("{}.txt", build.build_id));
+        let file = root
+            .join(&game.title_id)
+            .join(format!("{}.txt", build.build_id));
         match fs::symlink_metadata(&file) {
             Ok(meta) => {
-                if !meta.is_file() || meta.file_type().is_symlink() || meta.len() > MAX_CHEAT_BYTES {
-                    return Err(format!("Private cheat cache contains invalid file: {}", file.display()).into());
+                if !meta.is_file() || meta.file_type().is_symlink() || meta.len() > MAX_CHEAT_BYTES
+                {
+                    return Err(format!(
+                        "Private cheat cache contains invalid file: {}",
+                        file.display()
+                    )
+                    .into());
                 }
                 let body = fs::read_to_string(&file)?;
                 // Private curator stages original bracketed native-hex sections
@@ -83,24 +95,37 @@ fn staged(root: &Path, game: &Game) -> Result<BTreeMap<String, usize>, ErrBox> {
                         active = true;
                     } else if !active || {
                         let words = line.split_ascii_whitespace().collect::<Vec<_>>();
-                        words.is_empty() || words.len() > 5
-                            || words.iter().any(|word| word.len() != 8 || !word.bytes().all(|b| b.is_ascii_hexdigit()))
+                        words.is_empty()
+                            || words.len() > 5
+                            || words.iter().any(|word| {
+                                word.len() != 8 || !word.bytes().all(|b| b.is_ascii_hexdigit())
+                            })
                     } {
-                        return Err(format!("Invalid staged cheat syntax: {}", file.display()).into());
+                        return Err(
+                            format!("Invalid staged cheat syntax: {}", file.display()).into()
+                        );
                     }
                 }
                 if count == 0 || count != build.strict_native_hex_sections {
-                    return Err(format!("Staged source section count mismatched manifest: {}", file.display()).into());
+                    return Err(format!(
+                        "Staged source section count mismatched manifest: {}",
+                        file.display()
+                    )
+                    .into());
                 }
                 known.insert(build.build_id.clone(), count);
-            },
-            Err(e) if e.kind() == std::io::ErrorKind::NotFound => {},
+            }
+            Err(e) if e.kind() == std::io::ErrorKind::NotFound => {}
             Err(e) => return Err(e.into()),
         };
     }
     Ok(known)
 }
-fn evaluate(game: &Game, observations: &BTreeSet<String>, private: &BTreeMap<String, usize>) -> GameStatus {
+fn evaluate(
+    game: &Game,
+    observations: &BTreeSet<String>,
+    private: &BTreeMap<String, usize>,
+) -> GameStatus {
     let match_id = if observations.len() == 1 {
         let id = observations.iter().next().expect("one observation");
         private.get(id).map(|_| id.clone())
@@ -121,7 +146,11 @@ fn evaluate(game: &Game, observations: &BTreeSet<String>, private: &BTreeMap<Str
         title_id: game.title_id.clone(),
         historical_main_build_ids: observations.iter().cloned().collect(),
         staged_source_build_ids: private.keys().cloned().collect(),
-        native_sections_in_matching_source: match_id.as_ref().and_then(|id| private.get(id)).copied().unwrap_or(0),
+        native_sections_in_matching_source: match_id
+            .as_ref()
+            .and_then(|id| private.get(id))
+            .copied()
+            .unwrap_or(0),
         exact_matching_build_id: match_id,
         status,
     }
@@ -144,17 +173,29 @@ fn run() -> Result<(), ErrBox> {
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
         match arg.as_str() {
-            "--manifest" => manifest = PathBuf::from(args.next().ok_or("--manifest requires a path")?),
+            "--manifest" => {
+                manifest = PathBuf::from(args.next().ok_or("--manifest requires a path")?)
+            }
             "--db" => db = PathBuf::from(args.next().ok_or("--db requires a path")?),
-            "--private-root" => root = PathBuf::from(args.next().ok_or("--private-root requires a path")?),
+            "--private-root" => {
+                root = PathBuf::from(args.next().ok_or("--private-root requires a path")?)
+            }
             "--log" => log = PathBuf::from(args.next().ok_or("--log requires a path")?),
-            "--history-file" => history = PathBuf::from(args.next().ok_or("--history-file requires a path")?),
-            "--title-id" => only_title = Some(args.next().ok_or("--title-id requires a Title ID")?.to_ascii_uppercase()),
-            "--json" => {},
+            "--history-file" => {
+                history = PathBuf::from(args.next().ok_or("--history-file requires a path")?)
+            }
+            "--title-id" => {
+                only_title = Some(
+                    args.next()
+                        .ok_or("--title-id requires a Title ID")?
+                        .to_ascii_uppercase(),
+                )
+            }
+            "--json" => {}
             "--help" | "-h" => {
                 println!("Read-only source/evidence readiness: --db PATH --manifest PATH --private-root PATH --log PATH --history-file PATH --title-id ID --json");
                 return Ok(());
-            },
+            }
             _ => {
                 return Err(format!(
                     "Unknown argument: {arg}. Installation is not supported by this read-only tool."
@@ -176,11 +217,17 @@ fn run() -> Result<(), ErrBox> {
     let (saved, found_history) = eden_builds::eden_history::load(&history)?;
     let mut by_title = BTreeMap::<String, BTreeSet<String>>::new();
     for entry in &live.main {
-        by_title.entry(entry.title_id.clone()).or_default().insert(entry.build_id.clone());
+        by_title
+            .entry(entry.title_id.clone())
+            .or_default()
+            .insert(entry.build_id.clone());
     }
     for entry in &saved.entries {
         if entry.evidence_kind == "main_nso" {
-            by_title.entry(entry.title_id.clone()).or_default().insert(entry.build_id.clone());
+            by_title
+                .entry(entry.title_id.clone())
+                .or_default()
+                .insert(entry.build_id.clone());
         }
     }
     let mut rows = Vec::new();
@@ -188,14 +235,19 @@ fn run() -> Result<(), ErrBox> {
         if !valid_title(&game.title_id) {
             return Err("Curated manifest contains malformed Title ID".into());
         }
-        if only_title.as_ref().is_some_and(|title| title != &game.title_id) {
+        if only_title
+            .as_ref()
+            .is_some_and(|title| title != &game.title_id)
+        {
             continue;
         }
         let local = staged(&root, game)?;
         let seen = by_title.get(&game.title_id).cloned().unwrap_or_default();
         rows.push(evaluate(game, &seen, &local));
     }
-    if rows.is_empty() { return Err("No curated title matched the requested --title-id".into()); }
+    if rows.is_empty() {
+        return Err("No curated title matched the requested --title-id".into());
+    }
     let report = Report {
         format: "cheatarium-eden-private-cheat-readiness-v1",
         read_only: true,
@@ -220,26 +272,44 @@ fn main() {
 mod tests {
     use super::*;
     fn source() -> Game {
-        Game { title_id: "01002DA013484000".into(), title: "Skyward Sword HD".into(),
-            hamlet_builds: vec![Build { build_id: "5441AF3C89F97E1D".into(), strict_native_hex_sections: 57 }]}
+        Game {
+            title_id: "01002DA013484000".into(),
+            title: "Skyward Sword HD".into(),
+            hamlet_builds: vec![Build {
+                build_id: "5441AF3C89F97E1D".into(),
+                strict_native_hex_sections: 57,
+            }],
+        }
     }
     #[test]
     fn fails_closed_without_observed_build() {
         let game = source();
-        let private = BTreeMap::from([("5441AF3C89F97E1D".into(),57)]);
-        assert_eq!(evaluate(&game, &BTreeSet::new(), &private).status, "blocked_no_historical_main_build_evidence");
+        let private = BTreeMap::from([("5441AF3C89F97E1D".into(), 57)]);
+        assert_eq!(
+            evaluate(&game, &BTreeSet::new(), &private).status,
+            "blocked_no_historical_main_build_evidence"
+        );
     }
     #[test]
     fn matches_only_single_exact_archived_build() {
         let game = source();
-        let private = BTreeMap::from([("5441AF3C89F97E1D".into(),57)]);
+        let private = BTreeMap::from([("5441AF3C89F97E1D".into(), 57)]);
         let seen = BTreeSet::from(["5441AF3C89F97E1D".into()]);
         let result = evaluate(&game, &seen, &private);
         assert_eq!(result.native_sections_in_matching_source, 57);
-        assert_eq!(result.exact_matching_build_id.as_deref(), Some("5441AF3C89F97E1D"));
+        assert_eq!(
+            result.exact_matching_build_id.as_deref(),
+            Some("5441AF3C89F97E1D")
+        );
         let different = BTreeSet::from(["D824D4B1BBD45D03".into()]);
-        assert_eq!(evaluate(&game,&different,&private).status,"blocked_no_private_source_for_observed_build");
-        let conflicting = BTreeSet::from(["5441AF3C89F97E1D".into(),"D824D4B1BBD45D03".into()]);
-        assert_eq!(evaluate(&game,&conflicting,&private).status,"blocked_conflicting_historical_builds");
+        assert_eq!(
+            evaluate(&game, &different, &private).status,
+            "blocked_no_private_source_for_observed_build"
+        );
+        let conflicting = BTreeSet::from(["5441AF3C89F97E1D".into(), "D824D4B1BBD45D03".into()]);
+        assert_eq!(
+            evaluate(&game, &conflicting, &private).status,
+            "blocked_conflicting_historical_builds"
+        );
     }
 }
