@@ -531,3 +531,21 @@ Its per-game states distinguish missing historical evidence, conflicting histori
 
 This gate does not infer that "Save 1" cheats work in any Odyssey save slot: the original author's description is not runtime validation. Notably, Super Mario Odyssey supports five save slots behind in-game Pause → Options → Data Management, and contemporaneous source comments flag some 1.3.0 health codes as untested. Treat a checked Eden add-on as *discovered*, not *working*.
 
+
+### Capture successive Eden executable Build IDs automatically (bounded Rust watcher)
+
+The `cheatarium-eden-build-watch` CLI watches the existing Eden launch log for a **finite** period, using file metadata to avoid pointless repeated parsing, and preserves observed `main_nso` Build IDs in the same private history format already used by Eden discovery. It handles log replacement between game launches, which can otherwise erase the previous game's evidence. There are no ROM, save, cheat, or Eden configuration writes. It does create/update a small private history file under `~/.local/state/cheatarium/eden-build-history.json`.
+
+The watcher **requires explicit Title IDs to observe**, exits when all have been observed or the deadline expires, and defaults to two hours with checks approximately every 750ms. Both duration (1–21,600 seconds) and interval (250–10,000ms) are bounded. Errors in unsafe paths or malformed private history fail closed. It never treats cheat-file lookup messages as proof of a main executable.
+
+To collect the five not-yet-observed personal games during one session:
+
+```sh
+cargo run --locked -p cheatarium-client --bin cheatarium-eden-build-watch -- \
+  --db generated/v1 \
+  --until-title-ids 0100152000022000,01002DA013484000,01006A800016E000,01006BB00C6F0000,0100BC0018138000 \
+  --duration-seconds 7200
+```
+
+Launch each game normally while the watcher runs. Each captured title is reported, even if its cheat source lacks that Build ID. A changed game update may cause more than one historical Build ID to be recorded for a title; the curated readiness checker **fails closed** for ambiguity rather than choosing. The watcher is a foreground command by default; users may explicitly start it as a temporary user service with systemd-run and inspect its journal. It never starts itself automatically, never installs cheats, and does not alter permanent systemd configuration.
+
