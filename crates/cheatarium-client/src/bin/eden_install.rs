@@ -669,7 +669,6 @@ pub(super) fn already_installed_files_unchanged(
     Ok(true)
 }
 
-
 #[derive(Debug, Serialize)]
 pub(super) struct RenameItem {
     previous_addon: Option<String>,
@@ -720,9 +719,14 @@ pub(super) fn rename_legacy_file_only(
     let mut moves = Vec::<(PathBuf, PathBuf)>::new();
     let mut already_readable = 0usize;
     for (entry, expected_bytes) in &prepared {
-        let record = selection.proposed_addons.iter().find(|x| {
-            x.source_record_id == entry.source_record_id && x.source_ordinal == entry.source_ordinal
-        }).ok_or("Legacy rename lost source cheat identity")?;
+        let record = selection
+            .proposed_addons
+            .iter()
+            .find(|x| {
+                x.source_record_id == entry.source_record_id
+                    && x.source_ordinal == entry.source_ordinal
+            })
+            .ok_or("Legacy rename lost source cheat identity")?;
         if record.syntax_check != "lexical_hex_tokens_only_not_execution_validated" {
             return Err("Unrecognized source opcode syntax: refusing rename".into());
         }
@@ -733,7 +737,8 @@ pub(super) fn rename_legacy_file_only(
         // current serialized index IDs.
         let prefix = format!(
             "Cheatarium-{:04}-{}-",
-            entry.source_ordinal, super::safe_label(&record.description)
+            entry.source_ordinal,
+            super::safe_label(&record.description)
         );
         let mut old_names = Vec::<String>::new();
         for item in fs::read_dir(&title_dir)? {
@@ -746,18 +751,30 @@ pub(super) fn rename_legacy_file_only(
             }
         }
         if old_names.len() > 1 {
-            return Err(format!("Ambiguous legacy addon directories for source ordinal {}", entry.source_ordinal).into());
+            return Err(format!(
+                "Ambiguous legacy addon directories for source ordinal {}",
+                entry.source_ordinal
+            )
+            .into());
         }
         let prior_name = old_names.pop();
-        let old_name = prior_name.clone().unwrap_or_else(|| format!("{prefix}<absent>"));
+        let old_name = prior_name
+            .clone()
+            .unwrap_or_else(|| format!("{prefix}<absent>"));
         let new_name = Path::new(&entry.relative_path)
-            .components().nth(1).ok_or("Missing readable Eden addon name")?
-            .as_os_str().to_string_lossy().into_owned();
+            .components()
+            .nth(1)
+            .ok_or("Missing readable Eden addon name")?
+            .as_os_str()
+            .to_string_lossy()
+            .into_owned();
         let old_dir = title_dir.join(&old_name);
         let new_dir = title_dir.join(&new_name);
         let new_exists = fs::symlink_metadata(&new_dir);
         if prior_name.is_some() && new_exists.is_ok() {
-            return Err(format!("Both old and new Eden addons exist: {old_name} / {new_name}").into());
+            return Err(
+                format!("Both old and new Eden addons exist: {old_name} / {new_name}").into(),
+            );
         }
         let (target, status) = if prior_name.is_some() {
             (old_dir.as_path(), "would_rename")
@@ -765,7 +782,11 @@ pub(super) fn rename_legacy_file_only(
             already_readable += 1;
             (new_dir.as_path(), "already_readable")
         } else {
-            return Err(format!("Neither legacy nor readable addon exists for source ordinal {}", entry.source_ordinal).into());
+            return Err(format!(
+                "Neither legacy nor readable addon exists for source ordinal {}",
+                entry.source_ordinal
+            )
+            .into());
         };
         validate_regular_ancestors(target, false)?;
         let cheats = target.join("cheats");
@@ -773,7 +794,9 @@ pub(super) fn rename_legacy_file_only(
         let file = cheats.join(format!("{}.txt", selection.explicitly_selected_build_id));
         validate_regular_ancestors(&file, true)?;
         if fs::read(&file)? != *expected_bytes {
-            return Err(format!("Cheat bytes differ from the archived original: {old_name}").into());
+            return Err(
+                format!("Cheat bytes differ from the archived original: {old_name}").into(),
+            );
         }
         // Do not rename a user-modified directory containing other content.
         if fs::read_dir(target)?.count() != 1 || fs::read_dir(&cheats)?.count() != 1 {
@@ -782,9 +805,9 @@ pub(super) fn rename_legacy_file_only(
         // A renamed disabled addon could silently become active. Refuse to
         // migrate if the old name appears in *any* disabled-addon setting.
         if ini.lines().any(|line| {
-            line.trim().split_once('=').is_some_and(|(key, value)| {
-                key.trim().ends_with(r"\d") && value.trim() == old_name
-            })
+            line.trim()
+                .split_once('=')
+                .is_some_and(|(key, value)| key.trim().ends_with(r"\d") && value.trim() == old_name)
         }) {
             return Err(format!("Addon is recorded as disabled in Eden settings; rename would change its activation: {old_name}").into());
         }
@@ -801,15 +824,22 @@ pub(super) fn rename_legacy_file_only(
     if !dry_run {
         let mut completed = Vec::<(PathBuf, PathBuf)>::new();
         for (old, new) in &moves {
-            if let Err(problem) = eden_not_running().and_then(|_| fs::rename(old, new).map_err(Into::into)) {
+            if let Err(problem) =
+                eden_not_running().and_then(|_| fs::rename(old, new).map_err(Into::into))
+            {
                 let mut rollback_failed = false;
                 for (previous, current) in completed.into_iter().rev() {
                     rollback_failed |= fs::rename(current, previous).is_err();
                 }
                 return Err(format!(
                     "Cheat rename interrupted: {problem}; rollback {}",
-                    if rollback_failed { "INCOMPLETE, inspect Eden folders" } else { "completed" }
-                ).into());
+                    if rollback_failed {
+                        "INCOMPLETE, inspect Eden folders"
+                    } else {
+                        "completed"
+                    }
+                )
+                .into());
             }
             completed.push((old.clone(), new.clone()));
         }
@@ -823,7 +853,11 @@ pub(super) fn rename_legacy_file_only(
         format: "cheatarium-eden-readable-addon-rename-v1",
         title_id: selection.title_id.clone(),
         selected_build_id: selection.explicitly_selected_build_id.clone(),
-        mode: if dry_run { "read_only_rename_preview" } else { "rename_verified_legacy_folders" },
+        mode: if dry_run {
+            "read_only_rename_preview"
+        } else {
+            "rename_verified_legacy_folders"
+        },
         eden_config_updated: false,
         would_rename: if dry_run { to_rename } else { 0 },
         renamed: if dry_run { 0 } else { to_rename },
@@ -831,7 +865,6 @@ pub(super) fn rename_legacy_file_only(
         addons,
     })
 }
-
 
 #[cfg(test)]
 mod tests {

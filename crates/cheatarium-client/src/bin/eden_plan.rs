@@ -127,7 +127,11 @@ fn eden_display_label(s: &str) -> String {
             pending_space = true;
         }
     }
-    if result.is_empty() { "Unnamed Cheat".to_owned() } else { result }
+    if result.is_empty() {
+        "Unnamed Cheat".to_owned()
+    } else {
+        result
+    }
 }
 
 fn default_config() -> PathBuf {
@@ -201,7 +205,13 @@ fn select<'a>(bundle: &'a Bundle, title: &str, build: &str) -> Vec<&'a IndexedFi
         .collect()
 }
 
-fn preview_with_names(bundle: &Bundle, title: &str, build: &str, mod_root: &Path, readable: bool) -> Result<Preview, ErrBox> {
+fn preview_with_names(
+    bundle: &Bundle,
+    title: &str,
+    build: &str,
+    mod_root: &Path,
+    readable: bool,
+) -> Result<Preview, ErrBox> {
     if !is_title_id(title) || !is_build_id(build) {
         return Err("Expected exact 16-hex Switch Title ID (01...) and Build ID".into());
     }
@@ -238,14 +248,23 @@ fn preview_with_names(bundle: &Bundle, title: &str, build: &str, mod_root: &Path
                 let friendly = eden_display_label(description);
                 let count = used_friendly_names.entry(friendly.clone()).or_default();
                 *count += 1;
-                if *count == 1 { friendly } else { format!("{friendly} ({count})") }
+                if *count == 1 {
+                    friendly
+                } else {
+                    format!("{friendly} ({count})")
+                }
             } else {
                 // Unscoped archived-build installs can contain the same name
                 // across different executable versions. Preserve the legacy
                 // collision-resistant namespace for that workflow.
                 let ident = format!("{}:{}:{}", file.id, entry.ordinal, text);
                 let digest = format!("{:x}", Sha256::digest(ident.as_bytes()));
-                format!("Cheatarium-{:04}-{}-{}", entry.ordinal, safe_label(description), &digest[..12])
+                format!(
+                    "Cheatarium-{:04}-{}-{}",
+                    entry.ordinal,
+                    safe_label(description),
+                    &digest[..12]
+                )
             };
             let path = mod_root
                 .join(title)
@@ -531,14 +550,15 @@ fn stage(
 
 // Keep the existing all-archive default collision-resistant. The scoped
 // file-only pathway uses readable UI names without losing legacy support.
-fn preview(
-    bundle: &Bundle, title: &str, build: &str, mods_root: &Path
-) -> Result<Preview, ErrBox> {
+fn preview(bundle: &Bundle, title: &str, build: &str, mods_root: &Path) -> Result<Preview, ErrBox> {
     preview_with_names(bundle, title, build, mods_root, false)
 }
 
 fn preview_readable(
-    bundle: &Bundle, title: &str, build: &str, mods_root: &Path
+    bundle: &Bundle,
+    title: &str,
+    build: &str,
+    mods_root: &Path,
 ) -> Result<Preview, ErrBox> {
     preview_with_names(bundle, title, build, mods_root, true)
 }
@@ -705,8 +725,11 @@ fn run_automatic(
     let mut installed = Vec::new();
     let mut already_installed = 0usize;
     for (title, build) in pairs {
-        let candidate = if files_only { preview_readable(bundle, &title, &build, mod_root)? }
-            else { preview(bundle, &title, &build, mod_root)? };
+        let candidate = if files_only {
+            preview_readable(bundle, &title, &build, mod_root)?
+        } else {
+            preview(bundle, &title, &build, mod_root)?
+        };
         if candidate.proposed_addons.is_empty() {
             skipped.push(SkippedAutomaticBuild {
                 title_id: title,
@@ -860,7 +883,9 @@ fn run() -> Result<(), ErrBox> {
         return Err("--report requires --dry-run".into());
     }
     if rename_installed && (install || stage_dir.is_some() || human_report) {
-        return Err("--rename-installed cannot combine with --install, --stage-dir or --report".into());
+        return Err(
+            "--rename-installed cannot combine with --install, --stage-dir or --report".into(),
+        );
     }
     if historical_main_only && !dry_run && !install && !rename_installed {
         return Err("--historical-main-only requires --dry-run or --install".into());
@@ -868,7 +893,11 @@ fn run() -> Result<(), ErrBox> {
     if install && stage_dir.is_some() {
         return Err("Choose --install or --stage-dir, not both".into());
     }
-    if files_only && (!historical_main_only || !only_title_id.is_some() || (!install && !dry_run && !rename_installed)) {
+    if files_only
+        && (!historical_main_only
+            || !only_title_id.is_some()
+            || (!install && !dry_run && !rename_installed))
+    {
         return Err("--files-only requires --historical-main-only, --only-title-id, and either --dry-run or --install".into());
     }
     if let Some(id) = &only_title_id {
@@ -913,7 +942,9 @@ fn run() -> Result<(), ErrBox> {
             if !discovered.titles.iter().any(|id| id == title) {
                 return Err("Title ID not found in Eden library; refusing legacy rename".into());
             }
-            let historical = evidence.as_ref().ok_or("Missing Eden historical evidence")?;
+            let historical = evidence
+                .as_ref()
+                .ok_or("Missing Eden historical evidence")?;
             let saved = &history.as_ref().ok_or("Missing saved Build ID history")?.0;
             let (selected, _) = single_historical_main_pairs(
                 automatic_pairs(&bundle, &[title.to_owned()])?,
@@ -925,9 +956,8 @@ fn run() -> Result<(), ErrBox> {
             }
             let (title_id, build_id) = &selected[0];
             let plan = preview_readable(&bundle, title_id, build_id, &mod_root)?;
-            let result = eden_install::rename_legacy_file_only(
-                &bundle, &plan, &mod_root, &config, dry_run,
-            )?;
+            let result =
+                eden_install::rename_legacy_file_only(&bundle, &plan, &mod_root, &config, dry_run)?;
             println!("{}", serde_json::to_string_pretty(&result)?);
             return Ok(());
         }
@@ -1142,9 +1172,9 @@ mod tests {
         assert!(out.exact_archived_build_candidate_found);
         assert_eq!(out.proposed_addons.len(), 2);
         assert_eq!(out.rejected_entries.len(), 1);
-        assert!(out.proposed_addons.iter().any(|addon|
-            addon.proposed_mod_path.contains("/0100000000010000/Cheatarium-")
-        ));
+        assert!(out.proposed_addons.iter().any(|addon| addon
+            .proposed_mod_path
+            .contains("/0100000000010000/Cheatarium-")));
         assert!(out.proposed_addons[0]
             .proposed_mod_path
             .ends_with("/cheats/B424BE150A8E7D78.txt"));
@@ -1153,15 +1183,30 @@ mod tests {
 
     #[test]
     fn friendly_eden_filenames_preserve_readable_source_names_and_uniqueness() {
-        assert_eq!(eden_display_label("Infinite Health Save 1"), "Infinite Health Save 1");
-        assert_eq!(eden_display_label("Refill Health Save 1 (L+R)"), "Refill Health Save 1 (L+R)");
+        assert_eq!(
+            eden_display_label("Infinite Health Save 1"),
+            "Infinite Health Save 1"
+        );
+        assert_eq!(
+            eden_display_label("Refill Health Save 1 (L+R)"),
+            "Refill Health Save 1 (L+R)"
+        );
         assert_eq!(eden_display_label("../unsafe"), "unsafe");
         let mut source = fixture();
         source.records[0].codes.retain(|entry| entry.ordinal == 0);
-        let plan = preview_readable(&source, "0100000000010000", "B424BE150A8E7D78",
-            Path::new("/tmp/eden/load")).unwrap();
-        assert!(plan.proposed_addons[0].proposed_mod_path.contains("/Infinite Health (L+R)/cheats/"));
-        assert!(!plan.proposed_addons[0].proposed_mod_path.contains("Cheatarium-"));
+        let plan = preview_readable(
+            &source,
+            "0100000000010000",
+            "B424BE150A8E7D78",
+            Path::new("/tmp/eden/load"),
+        )
+        .unwrap();
+        assert!(plan.proposed_addons[0]
+            .proposed_mod_path
+            .contains("/Infinite Health (L+R)/cheats/"));
+        assert!(!plan.proposed_addons[0]
+            .proposed_mod_path
+            .contains("Cheatarium-"));
     }
 
     #[test]
