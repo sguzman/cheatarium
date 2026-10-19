@@ -427,6 +427,14 @@ Use `--log /absolute/path/to/eden_log.txt` to inspect a deliberately chosen hist
 
 ```sh
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --json
+
+To reconcile only the games Eden actually lists or labels with your **six directly extracted static NSP Build IDs**, use the optional curated source overlay:
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --personal-curation research/switch-personal-curation-v1.json --json
+```
+
+The `personal_coverage` result distinguishes (1) named Eden **candidates** seen in the cache/registered folder filenames, (2) previously extracted **static** NSP Build IDs and their exact pinned code-section counts, and (3) exact-build **third-party source links** that have not been imported. It also lists curated games absent from Eden's candidate inventory. A source merely claiming the matching Title ID and Build ID is not proof Eden currently runs that build, and no codes are installed. `--personal-curation` is valid with `--summary` and also with `--audit-all-files`, which can include extra advisory NSP ticket filename hints. It refuses mismatched claimed Build IDs, code-body imports or gameplay-verified claims in the link-only metadata. This overlay is not a replacement for Eden runtime Build ID inspection.
 ```
 
 The summary identifies candidate base games by standard Title ID label shape, possible update containers using Eden's own `GetUpdateTitleID(base) = base | 0x800` rule, and likely DLC files grouped by user directory labels such as `dlc/`. It lists filenames with no embedded Title ID separately, rather than guessing their identities from adjacent files. It does not report each individual DLC Title ID as an independent playable game.
@@ -580,7 +588,7 @@ cargo run --release --locked -p cheatarium-client --bin cheatarium-switch-nsp-bu
 | Link's Awakening | `01006BB00C6F0000` | Base application | 0 | `AE16F71E002AF8CB` | `AE16F71E002AF8CB059A9A74C4D90F34` | Yes; 38 strict sections |
 | Super Mario RPG | `0100BC0018138000` | Base application | 0 | `E968832CADE2AD7C` | `E968832CADE2AD7CBD85B6C6DFE1D9C1` | Yes; 53 strict sections |
 
-The selected files and specific executable Build IDs are **static NSP evidence**, not proof of what Eden has currently loaded or that any cheat works in gameplay. Five of six exact Build IDs have corresponding pinned native cheat sections (149 strict sections in total); Smash requires code matching its extracted version. The user has not yet completed gameplay validation. Do not infer Title IDs from filenames, assume an update's Build ID applies to another version, or mark untested codes as working.
+The selected files and specific executable Build IDs are **static NSP evidence**, not proof of what Eden has currently loaded or that any cheat works in gameplay. Five of six exact Build IDs have corresponding pinned native cheat sections (149 strict sections in total). **Smash 13.0.2 now has two attributed link-only exact-build candidate sources**, including the Panda source posting and a GBAtemp adaptation; the pinned Hamlet collection still has zero matching sections for `CBD5A9B56EA859BA`. The two links are not independent gameplay confirmations and neither has been imported or installed. See the `exact_build_external_sources` entries in the curated JSON. The user has not yet completed gameplay validation. Do not infer Title IDs from filenames, assume an update's Build ID applies to another version, or mark untested codes as working.
 
 **Diagnosing an NSP that exists but is not recognized:** the focused CLI probe reports why CNMT Program metadata is unresolved (missing metadata NCA, extraction failure, unreadable filesystem tree, no CNMT filename, CNMT extraction failure, parse failure, or Program NCA missing from package). It never guesses a Title ID from the file's name.
 
