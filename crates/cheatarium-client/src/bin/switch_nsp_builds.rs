@@ -632,7 +632,11 @@ fn run() -> Result<(), ErrBox> {
                 }
                 selected.insert(id);
             }
-            "--inspect-file" => inspect_file = Some(PathBuf::from(args.next().ok_or("--inspect-file requires an NSP path")?)),
+            "--inspect-file" => {
+                inspect_file = Some(PathBuf::from(
+                    args.next().ok_or("--inspect-file requires an NSP path")?,
+                ))
+            }
             "--metadata-only" => metadata_only = true,
             "--json" => {}
             "--help" | "-h" => {
@@ -651,7 +655,10 @@ fn run() -> Result<(), ErrBox> {
     let max_nca_bytes = max_nca_gib * 1024 * 1024 * 1024;
     let keys = keyfile(specified_keys)?;
     let files = if let Some(path) = &inspect_file {
-        if !path.extension().is_some_and(|ext| ext.eq_ignore_ascii_case("nsp")) {
+        if !path
+            .extension()
+            .is_some_and(|ext| ext.eq_ignore_ascii_case("nsp"))
+        {
             return Err("--inspect-file requires an .nsp file".into());
         }
         let meta = fs::symlink_metadata(path)?;
