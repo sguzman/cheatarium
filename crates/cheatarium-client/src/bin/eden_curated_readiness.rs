@@ -26,6 +26,13 @@ struct Game {
     title_id: String,
     title: String,
     hamlet_builds: Vec<Build>,
+    static_nsp_observation: StaticNspObservation,
+}
+#[derive(Deserialize)]
+struct StaticNspObservation {
+    status: String,
+    cheat_build_id: String,
+    pinned_native_cheat_sections_matched: usize,
 }
 #[derive(Deserialize)]
 struct Build {
@@ -39,6 +46,13 @@ struct GameStatus {
     title_id: String,
     historical_main_build_ids: Vec<String>,
     staged_source_build_ids: Vec<String>,
+    static_nsp_build_id: String,
+    static_nsp_source_staged: bool,
+    static_nsp_native_sections_staged: usize,
+    historical_main_build_matches_static_nsp: bool,
+    current_eden_build_verified: bool,
+    installation_allowed: bool,
+    next_action: &'static str,
     exact_matching_build_id: Option<String>,
     native_sections_in_matching_source: usize,
     status: &'static str,
@@ -126,6 +140,22 @@ fn evaluate(
     observations: &BTreeSet<String>,
     private: &BTreeMap<String, usize>,
 ) -> GameStatus {
+    let static_id = &game.static_nsp_observation.cheat_build_id;
+    let static_sections = private.get(static_id).copied().unwrap_or(0);
+    let historical_matches_static = observations.len() == 1 && observations.contains(static_id);
+    let next_action = if observations.len() > 1 {
+        "reconcile_conflicting_historical_main_build_ids"
+    } else if observations.is_empty() && static_sections == 0 {
+        "acquire_exact_static_build_source_and_observe_eden_launch"
+    } else if observations.is_empty() {
+        "observe_eden_main_nso_build_when_game_is_launched"
+    } else if !historical_matches_static {
+        "reconcile_runtime_update_with_static_nsp_build_and_cheat_source"
+    } else if static_sections == 0 {
+        "acquire_exact_static_build_source"
+    } else {
+        "historical_static_build_matches_source_review_before_any_install"
+    };
     let match_id = if observations.len() == 1 {
         let id = observations.iter().next().expect("one observation");
         private.get(id).map(|_| id.clone())
@@ -146,6 +176,13 @@ fn evaluate(
         title_id: game.title_id.clone(),
         historical_main_build_ids: observations.iter().cloned().collect(),
         staged_source_build_ids: private.keys().cloned().collect(),
+        static_nsp_build_id: static_id.clone(),
+        static_nsp_source_staged: static_sections > 0,
+        static_nsp_native_sections_staged: static_sections,
+        historical_main_build_matches_static_nsp: historical_matches_static,
+        current_eden_build_verified: false,
+        installation_allowed: false,
+        next_action,
         native_sections_in_matching_source: match_id
             .as_ref()
             .and_then(|id| private.get(id))
@@ -235,6 +272,18 @@ fn run() -> Result<(), ErrBox> {
         if !valid_title(&game.title_id) {
             return Err("Curated manifest contains malformed Title ID".into());
         }
+        let static_obs = &game.static_nsp_observation;
+        if static_obs.status != "main_nso_extracted_from_local_nsp"
+            || !valid_build(&static_obs.cheat_build_id)
+        {
+            return Err("Curated manifest contains invalid static NSP Build ID evidence".into());
+        }
+        let catalog_native_count = game.hamlet_builds.iter()
+            .find(|b| b.build_id == static_obs.cheat_build_id)
+            .map_or(0, |b| b.strict_native_hex_sections);
+        if catalog_native_count != static_obs.pinned_native_cheat_sections_matched {
+            return Err("Static NSP native section count disagrees with pinned source".into());
+        }
         if only_title
             .as_ref()
             .is_some_and(|title| title != &game.title_id)
@@ -279,16 +328,24 @@ mod tests {
                 build_id: "5441AF3C89F97E1D".into(),
                 strict_native_hex_sections: 57,
             }],
+            static_nsp_observation: StaticNspObservation {
+                status: "main_nso_extracted_from_local_nsp".into(),
+                cheat_build_id: "5441AF3C89F97E1D".into(),
+                pinned_native_cheat_sections_matched: 57,
+            },
         }
     }
     #[test]
     fn fails_closed_without_observed_build() {
         let game = source();
         let private = BTreeMap::from([("5441AF3C89F97E1D".into(), 57)]);
-        assert_eq!(
-            evaluate(&game, &BTreeSet::new(), &private).status,
-            "blocked_no_historical_main_build_evidence"
-        );
+        let result = evaluate(&game, &BTreeSet::new(), &private);
+        assert_eq!(result.status, "blocked_no_historical_main_build_evidence");
+        assert!(result.static_nsp_source_staged);
+        assert_eq!(result.static_nsp_native_sections_staged, 57);
+        assert_eq!(result.next_action, "observe_eden_main_nso_build_when_game_is_launched");
+        assert!(!result.current_eden_build_verified);
+        assert!(!result.installation_allowed);
     }
     #[test]
     fn matches_only_single_exact_archived_build() {
@@ -297,15 +354,17 @@ mod tests {
         let seen = BTreeSet::from(["5441AF3C89F97E1D".into()]);
         let result = evaluate(&game, &seen, &private);
         assert_eq!(result.native_sections_in_matching_source, 57);
+        assert!(result.historical_main_build_matches_static_nsp);
+        assert_eq!(result.next_action, "historical_static_build_matches_source_review_before_any_install");
         assert_eq!(
             result.exact_matching_build_id.as_deref(),
             Some("5441AF3C89F97E1D")
         );
         let different = BTreeSet::from(["D824D4B1BBD45D03".into()]);
-        assert_eq!(
-            evaluate(&game, &different, &private).status,
-            "blocked_no_private_source_for_observed_build"
-        );
+        let mismatch = evaluate(&game, &different, &private);
+        assert_eq!(mismatch.status, "blocked_no_private_source_for_observed_build");
+        assert!(!mismatch.historical_main_build_matches_static_nsp);
+        assert_eq!(mismatch.next_action, "reconcile_runtime_update_with_static_nsp_build_and_cheat_source");
         let conflicting = BTreeSet::from(["5441AF3C89F97E1D".into(), "D824D4B1BBD45D03".into()]);
         assert_eq!(
             evaluate(&game, &conflicting, &private).status,
