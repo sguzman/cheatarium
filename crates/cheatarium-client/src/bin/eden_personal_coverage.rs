@@ -419,6 +419,69 @@ mod tests {
         r#"{"format":"cheatarium-user-switch-cheat-source-curation-v1","games":[{"title_id":"01006A800016E000","title":"Smash","static_nsp_observation":{"status":"main_nso_extracted_from_local_nsp","cheat_build_id":"CBD5A9B56EA859BA","pinned_native_cheat_sections_matched":0},"exact_build_external_sources":[{"source_id":"sample","title_id":"01006A800016E000","build_id":"CBD5A9B56EA859BA","game_version_claim":"13.0.2","author_credit":"Author","source_url":"https://example.com/source","relationship":"original","rights_status":"link_only","source_build_claim_verified":true,"body_imported":false,"gameplay_verified":false}]}]}"#.to_owned()
     }
 
+    fn minimal_report(game_files: Vec<super::super::LibraryFile>) -> Report {
+        Report {
+            schema_version: 1,
+            format: "test",
+            read_only: true,
+            game_file_bytes_read: 0,
+            emulator_files_written: 0,
+            config_path: String::new(),
+            config_found: false,
+            cache_dir: String::new(),
+            cache_found: false,
+            cached_titles: Vec::new(),
+            game_roots: Vec::new(),
+            unresolved_game_files: game_files.iter().filter(|file| file.title_id.is_none()).count(),
+            game_files,
+            title_id_matches: Vec::new(),
+            scan_statistics: super::super::ScanStatistics::default(),
+            limitations: Vec::new(),
+            warnings: Vec::new(),
+        }
+    }
+
+    #[test]
+    fn private_path_is_not_serialized_for_unresolved_game() {
+        let path = "/private/owned/switch/Unidentified Game.nsp";
+        let report = minimal_report(vec![super::super::LibraryFile {
+            path: path.into(),
+            title_id: None,
+            title_id_evidence: "unresolved_no_rom_read",
+            file_type: "nsp".into(),
+        }]);
+        let review = unresolved_review(&report, false);
+        assert_eq!(review.displayed_files.len(), 1);
+        assert_eq!(review.header_inspections_performed, 0);
+        assert_eq!(review.displayed_files[0].file_name, "Unidentified Game.nsp");
+        assert_eq!(review.displayed_files[0].inspection_status, "header_inspection_not_requested");
+        let printed = serde_json::to_string(&review).unwrap();
+        assert!(!printed.contains("/private/owned"));
+    }
+
+    #[test]
+    fn optional_header_probe_only_reports_bounded_metadata() {
+        let path = std::env::temp_dir().join(format!(
+            "cheatarium-unresolved-only-{}-{:?}.nsp",
+            std::process::id(), std::thread::current().id()
+        ));
+        std::fs::write(&path, b"PFS0").unwrap();
+        let report = minimal_report(vec![super::super::LibraryFile {
+            path: path.to_string_lossy().into_owned(),
+            title_id: None,
+            title_id_evidence: "unresolved_no_rom_read",
+            file_type: "nsp".into(),
+        }]);
+        let review = unresolved_review(&report, true);
+        assert_eq!(review.header_inspections_performed, 1);
+        assert_eq!(review.displayed_files[0].inspection_status, "too_short");
+        assert!(!review.displayed_files[0].content_identity_verified);
+        assert!(!review.displayed_files[0].installed_in_eden_verified);
+        let printed = serde_json::to_string(&review).unwrap();
+        assert!(!printed.contains(&path.parent().unwrap().to_string_lossy().to_string()));
+        std::fs::remove_file(path).unwrap();
+    }
+
     #[test]
     fn exact_external_claim_is_not_an_installed_or_gameplay_verified_cheat() {
         let manifest = serde_json::from_str(&example_json()).unwrap();
