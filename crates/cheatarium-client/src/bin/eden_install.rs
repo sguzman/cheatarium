@@ -726,35 +726,46 @@ pub(super) fn rename_legacy_file_only(
         if record.syntax_check != "lexical_hex_tokens_only_not_execution_validated" {
             return Err("Unrecognized source opcode syntax: refusing rename".into());
         }
-        let rendered = String::from_utf8(expected_bytes.clone())?;
-        let ident = format!("{}:{}:{}", entry.source_record_id, entry.source_ordinal, rendered);
-        let digest = format!("{:x}", sha2::Sha256::digest(ident.as_bytes()));
-        let old_name = format!(
-            "Cheatarium-{:04}-{}-{}",
-            entry.source_ordinal,
-            super::safe_label(&record.description),
-            &digest[..12]
+        // Discover the previous Cheatarium directory using its exact ordinal
+        // and source-label prefix, plus its bounded 12-hex identity suffix.
+        // The suffix is a legacy identity hash, NOT a code checksum: verify
+        // the file contents independently rather than reconstructing it from
+        // current serialized index IDs.
+        let prefix = format!(
+            "Cheatarium-{:04}-{}-",
+            entry.source_ordinal, super::safe_label(&record.description)
         );
+        let mut old_names = Vec::<String>::new();
+        for item in fs::read_dir(&title_dir)? {
+            let item = item?;
+            let name = item.file_name().to_string_lossy().into_owned();
+            if let Some(suffix) = name.strip_prefix(&prefix) {
+                if suffix.len() == 12 && suffix.bytes().all(|c| c.is_ascii_hexdigit()) {
+                    old_names.push(name);
+                }
+            }
+        }
+        if old_names.len() > 1 {
+            return Err(format!("Ambiguous legacy addon directories for source ordinal {}", entry.source_ordinal).into());
+        }
+        let prior_name = old_names.pop();
+        let old_name = prior_name.clone().unwrap_or_else(|| format!("{prefix}<absent>"));
         let new_name = Path::new(&entry.relative_path)
             .components().nth(1).ok_or("Missing readable Eden addon name")?
             .as_os_str().to_string_lossy().into_owned();
-        if old_name == new_name {
-            return Err("Legacy and readable addon names are identical".into());
-        }
         let old_dir = title_dir.join(&old_name);
         let new_dir = title_dir.join(&new_name);
-        let old_exists = fs::symlink_metadata(&old_dir);
         let new_exists = fs::symlink_metadata(&new_dir);
-        if old_exists.is_ok() && new_exists.is_ok() {
+        if prior_name.is_some() && new_exists.is_ok() {
             return Err(format!("Both old and new Eden addons exist: {old_name} / {new_name}").into());
         }
-        let (target, status) = if old_exists.is_ok() {
+        let (target, status) = if prior_name.is_some() {
             (old_dir.as_path(), "would_rename")
         } else if new_exists.is_ok() {
             already_readable += 1;
             (new_dir.as_path(), "already_readable")
         } else {
-            return Err(format!("Neither expected legacy nor readable addon exists: {old_name}").into());
+            return Err(format!("Neither legacy nor readable addon exists for source ordinal {}", entry.source_ordinal).into());
         };
         validate_regular_ancestors(target, false)?;
         let cheats = target.join("cheats");
