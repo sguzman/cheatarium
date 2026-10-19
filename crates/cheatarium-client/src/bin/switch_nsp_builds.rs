@@ -636,7 +636,7 @@ fn run() -> Result<(), ErrBox> {
             "--metadata-only" => metadata_only = true,
             "--json" => {}
             "--help" | "-h" => {
-                println!("Offline one-shot NSP Build ID inspector: --roms DIRECTORY --keyset PROD_KEYS --title-id ID (repeat) --limit COUNT --max-nca-gib 1..64 (default 32) --scratch-dir ABSOLUTE_PATH --json. Requires nstool and hactool; XCI/NSZ/ XCZ are inventoried but not decrypted. Never writes to Eden or source game files.");
+                println!("Offline one-shot NSP Build ID inspector: --roms DIRECTORY --keyset PROD_KEYS --title-id ID (repeat) --limit COUNT --max-nca-gib 1..64 (default 32) --scratch-dir ABSOLUTE_PATH --inspect-file SINGLE_NSP --metadata-only --json. Requires nstool and hactool; XCI/NSZ/ XCZ are inventoried but not decrypted. Never writes to Eden or source game files.");
                 return Ok(());
             }
             _ => return Err("unknown_option".into()),
