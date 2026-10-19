@@ -278,12 +278,21 @@ fn discover_package(
     keys: &Path,
     scratch: &Scratch,
 ) -> Result<Option<Package>, String> {
-    let items = scan_pfs0(path).map_err(|_| "invalid_nsp".to_owned())?;
+    let items = scan_pfs0(path).map_err(|_| "invalid_nsp_pfs0".to_owned())?;
     let metas = items
         .iter()
         .filter(|it| it.name.to_ascii_lowercase().ends_with(".cnmt.nca"))
         .collect::<Vec<_>>();
+    if metas.is_empty() {
+        return Err("metadata_missing_cnmt_nca".into());
+    }
     let mut found = Vec::new();
+    let mut extracted_meta = 0usize;
+    let mut readable_tree = 0usize;
+    let mut cnmt_paths = 0usize;
+    let mut extracted_cnmt = 0usize;
+    let mut parsed_cnmt = 0usize;
+    let mut matched_program = 0usize;
     for (i, meta) in metas.iter().enumerate() {
         if meta.size > MAX_META_BYTES {
             continue;
@@ -292,7 +301,8 @@ fn discover_package(
         if extract_nca(path, meta, &dest, MAX_META_BYTES).is_err() {
             continue;
         }
-        let tree = safe_output(
+        extracted_meta += 1;
+        let tree = match safe_output(
             "nstool",
             &[
                 "-t".into(),
@@ -302,8 +312,13 @@ fn discover_package(
                 "--fstree".into(),
                 dest.to_string_lossy().to_string(),
             ],
-        )
-        .unwrap_or_default();
+        ) {
+            Ok(tree) => {
+                readable_tree += 1;
+                tree
+            }
+            Err(_) => continue,
+        };
         // Metadata NCAs have a small CNMT in one of the archive partitions.
         // A known virtual file tree is required; do not guess content IDs.
         let names = tree
@@ -318,6 +333,7 @@ fn discover_package(
                     })
             })
             .collect::<Vec<_>>();
+        cnmt_paths += names.len();
         for (j, name) in names.iter().enumerate() {
             let cnmt = scratch.path(&format!("metadata-{i}-{j}.cnmt"));
             let virtual_paths = [format!("/0/{name}"), format!("/1/{name}")];
@@ -340,6 +356,7 @@ fn discover_package(
                 {
                     continue;
                 }
+                extracted_cnmt += 1;
                 let info = safe_output(
                     "nstool",
                     &[
@@ -350,10 +367,12 @@ fn discover_package(
                 )
                 .unwrap_or_default();
                 if let Some((title, version, kind, program)) = parse_content_metadata(&info) {
+                    parsed_cnmt += 1;
                     if let Some(entry) = items
                         .iter()
                         .find(|item| item.name.eq_ignore_ascii_case(&program))
                     {
+                        matched_program += 1;
                         found.push(Package {
                             file: path.to_path_buf(),
                             title,
@@ -362,15 +381,22 @@ fn discover_package(
                             program: entry.name.clone(),
                             program_size: entry.size,
                         });
+                        break;
                     }
                 }
-                break;
             }
         }
         let _ = fs::remove_file(dest);
     }
     found.sort_by(|a, b| b.version.cmp(&a.version));
-    Ok(found.into_iter().next())
+    match found.into_iter().next() {
+        Some(pkg) => Ok(Some(pkg)),
+        None => Err(format!(
+            "metadata_unresolved_meta_ncas_{}_extracted_{}_trees_{}_cnmt_paths_{}_extracted_cnmts_{}_parsed_cnmts_{}_matched_programs_{}",
+            metas.len(), extracted_meta, readable_tree, cnmt_paths,
+            extracted_cnmt, parsed_cnmt, matched_program
+        )),
+    }
 }
 fn scan_paths(root: &Path, max: usize) -> Result<Vec<PathBuf>, ErrBox> {
     if !root.is_dir() {
@@ -574,6 +600,8 @@ fn run() -> Result<(), ErrBox> {
     let mut limit = 250usize;
     let mut max_nca_gib = DEFAULT_MAX_NCA_GIB;
     let mut scratch_dir: Option<PathBuf> = None;
+    let mut inspect_file: Option<PathBuf> = None;
+    let mut metadata_only = false;
     let mut selected = BTreeSet::new();
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -604,6 +632,8 @@ fn run() -> Result<(), ErrBox> {
                 }
                 selected.insert(id);
             }
+            "--inspect-file" => inspect_file = Some(PathBuf::from(args.next().ok_or("--inspect-file requires an NSP path")?)),
+            "--metadata-only" => metadata_only = true,
             "--json" => {}
             "--help" | "-h" => {
                 println!("Offline one-shot NSP Build ID inspector: --roms DIRECTORY --keyset PROD_KEYS --title-id ID (repeat) --limit COUNT --max-nca-gib 1..64 (default 32) --scratch-dir ABSOLUTE_PATH --json. Requires nstool and hactool; XCI/NSZ/ XCZ are inventoried but not decrypted. Never writes to Eden or source game files.");
@@ -620,7 +650,18 @@ fn run() -> Result<(), ErrBox> {
     }
     let max_nca_bytes = max_nca_gib * 1024 * 1024 * 1024;
     let keys = keyfile(specified_keys)?;
-    let files = scan_paths(&roms, limit)?;
+    let files = if let Some(path) = &inspect_file {
+        if !path.extension().is_some_and(|ext| ext.eq_ignore_ascii_case("nsp")) {
+            return Err("--inspect-file requires an .nsp file".into());
+        }
+        let meta = fs::symlink_metadata(path)?;
+        if !meta.is_file() || meta.file_type().is_symlink() {
+            return Err("--inspect-file requires a nonsymlink regular NSP file".into());
+        }
+        vec![path.to_owned()]
+    } else {
+        scan_paths(&roms, limit)?
+    };
     let scratch_root = scratch_dir.unwrap_or(Scratch::default_root()?);
     let scratch = Scratch::new_at(&scratch_root)?;
     let mut packages = Vec::new();
@@ -690,6 +731,17 @@ fn run() -> Result<(), ErrBox> {
             continue;
         }
         // Read-only against source and Eden: all extraction is into temporary files.
+        if metadata_only {
+            results.push(Found {
+                title_id: title,
+                source_kind: selected_pkg.kind.clone(),
+                version: selected_pkg.version,
+                build_id: None,
+                cheat_build_id: None,
+                status: "metadata_discovered_program_extraction_skipped".into(),
+            });
+            continue;
+        }
         let res = extract_build(selected_pkg, base, &keys, &scratch, max_nca_bytes);
         results.push(Found {
             title_id: title,
