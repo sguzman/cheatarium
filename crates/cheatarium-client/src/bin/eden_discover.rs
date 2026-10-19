@@ -1835,7 +1835,9 @@ fn run() -> Result<(), ErrBox> {
             let mut audit = run_registered_files_audit(summary, &report);
             if let Some(path) = &personal_curation {
                 audit.inventory.personal_coverage = Some(
-                    eden_personal_coverage::read_coverage(path, &audit.inventory.candidate_base_titles)?,
+                    eden_personal_coverage::read_coverage(
+                        path, &audit.inventory.candidate_base_titles, &report.cached_titles,
+                    )?,
                 );
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
@@ -1853,7 +1855,9 @@ fn run() -> Result<(), ErrBox> {
         } else {
             if let Some(path) = &personal_curation {
                 summary.personal_coverage = Some(
-                    eden_personal_coverage::read_coverage(path, &summary.candidate_base_titles)?,
+                    eden_personal_coverage::read_coverage(
+                        path, &summary.candidate_base_titles, &report.cached_titles,
+                    )?,
                 );
             }
             if let Some((evidence, history, written, exists)) = &readiness_inputs {
