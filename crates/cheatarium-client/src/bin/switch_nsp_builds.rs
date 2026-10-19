@@ -66,7 +66,14 @@ impl Scratch {
         Self::new_at(&Self::default_root()?)
     }
     fn new_at(cache: &Path) -> Result<Self, ErrBox> {
-        if !cache.is_absolute() || cache.components().any(|part| matches!(part, std::path::Component::ParentDir | std::path::Component::CurDir)) {
+        if !cache.is_absolute()
+            || cache.components().any(|part| {
+                matches!(
+                    part,
+                    std::path::Component::ParentDir | std::path::Component::CurDir
+                )
+            })
+        {
             return Err("scratch_dir_must_be_absolute_and_normalized".into());
         }
         // Refuse pre-existing symlinks in an external scratch path.
@@ -74,9 +81,9 @@ impl Scratch {
         for component in cache.components() {
             parent.push(component);
             match fs::symlink_metadata(&parent) {
-                Ok(meta) if meta.is_dir() && !meta.file_type().is_symlink() => {},
+                Ok(meta) if meta.is_dir() && !meta.file_type().is_symlink() => {}
                 Ok(_) => return Err("scratch_dir_contains_symlink_or_non_directory".into()),
-                Err(e) if e.kind() == std::io::ErrorKind::NotFound => {},
+                Err(e) if e.kind() == std::io::ErrorKind::NotFound => {}
                 Err(e) => return Err(e.into()),
             }
         }
@@ -242,7 +249,12 @@ fn keyfile(specified: Option<PathBuf>) -> Result<PathBuf, ErrBox> {
     }
     Err("missing_local_prod_keys_supply_--keyset_path_without_printing_keys".into())
 }
-fn extract_nca(nsp: &Path, entry: &NcaEntry, output: &Path, limit_bytes: u64) -> Result<(), String> {
+fn extract_nca(
+    nsp: &Path,
+    entry: &NcaEntry,
+    output: &Path,
+    limit_bytes: u64,
+) -> Result<(), String> {
     if entry.size > limit_bytes {
         return Err("nca_exceeds_configured_safety_limit".into());
     }
@@ -406,14 +418,22 @@ fn discover_other_formats(root: &Path) -> Result<BTreeMap<String, usize>, ErrBox
     let mut counts = BTreeMap::new();
     let mut dirs = vec![(root.to_path_buf(), 0usize)];
     while let Some((dir, depth)) = dirs.pop() {
-        if depth > 10 { continue; }
+        if depth > 10 {
+            continue;
+        }
         for entry in fs::read_dir(dir)? {
             let entry = entry?;
             let kind = entry.file_type()?;
-            if kind.is_symlink() { continue; }
+            if kind.is_symlink() {
+                continue;
+            }
             if kind.is_dir() {
-                if !entry.file_name().to_string_lossy().eq_ignore_ascii_case("dlc") {
-                    dirs.push((entry.path(), depth+1));
+                if !entry
+                    .file_name()
+                    .to_string_lossy()
+                    .eq_ignore_ascii_case("dlc")
+                {
+                    dirs.push((entry.path(), depth + 1));
                 }
             } else if kind.is_file() {
                 if let Some(ext) = entry.path().extension().and_then(|x| x.to_str()) {
@@ -563,8 +583,17 @@ fn run() -> Result<(), ErrBox> {
                 specified_keys = Some(PathBuf::from(args.next().ok_or("--keyset needs a path")?))
             }
             "--limit" => limit = args.next().ok_or("--limit needs a number")?.parse()?,
-            "--max-nca-gib" => max_nca_gib = args.next().ok_or("--max-nca-gib needs an integer")?.parse()?,
-            "--scratch-dir" => scratch_dir = Some(PathBuf::from(args.next().ok_or("--scratch-dir needs a path")?)),
+            "--max-nca-gib" => {
+                max_nca_gib = args
+                    .next()
+                    .ok_or("--max-nca-gib needs an integer")?
+                    .parse()?
+            }
+            "--scratch-dir" => {
+                scratch_dir = Some(PathBuf::from(
+                    args.next().ok_or("--scratch-dir needs a path")?,
+                ))
+            }
             "--title-id" => {
                 let id = args
                     .next()
@@ -667,7 +696,11 @@ fn run() -> Result<(), ErrBox> {
             source_kind: selected_pkg.kind.clone(),
             version: selected_pkg.version,
             build_id: res.as_ref().ok().cloned(),
-            cheat_build_id: res.as_ref().ok().and_then(|id| id.get(..16)).map(str::to_owned),
+            cheat_build_id: res
+                .as_ref()
+                .ok()
+                .and_then(|id| id.get(..16))
+                .map(str::to_owned),
             status: res
                 .err()
                 .unwrap_or_else(|| "extracted_main_nso_build_id".into()),
@@ -772,7 +805,10 @@ mod tests {
         let scratch = Scratch::new().unwrap();
         let package = scratch.path("not_a_real_game.nsp");
         fs::write(&package, b"PFS0").unwrap();
-        let oversized = NcaEntry { name: "large.nca".into(), size: 13 * 1024 * 1024 * 1024 };
+        let oversized = NcaEntry {
+            name: "large.nca".into(),
+            size: 13 * 1024 * 1024 * 1024,
+        };
         let dest = scratch.path("unwritten.nca");
         assert_eq!(
             extract_nca(&package, &oversized, &dest, 12 * 1024 * 1024 * 1024),
