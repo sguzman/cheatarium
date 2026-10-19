@@ -2194,6 +2194,7 @@ volume=100
             inspected_nsp_file_bytes_read: 500,
             saved_disabled_addons: Vec::new(),
             build_readiness: None,
+            personal_coverage: None,
             cached_update_displays: Vec::new(),
             installed_build_id_verified: false,
             warnings: Vec::new(),
