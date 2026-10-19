@@ -442,6 +442,14 @@ Games with existing native cheat sources sort first, but candidate source counts
 
 
 
+If the queue reports **zero new games**, check the `scan_evidence` object before concluding the library has only six. It reports how many game files were listed, how many lacked usable filename Title IDs, how many directories were skipped due to nonrecursive settings, and whether any roots were unavailable or traversal limits were hit. An incomplete scan cannot establish full game coverage.
+
+For your owned Switch library arranged in nested game directories, `--game-dir-deep /drive/roms/switch/roms` explicitly requests a recursive directory walk. Unlike the shallow `--game-dir DIR` option, this descends into subdirectories; it does not follow symlinks, open ROMs, decrypt content, or modify Eden. If that directory is already registered shallowly in Eden, the explicit recursive scan takes precedence for the same root without scanning it twice. The existing traversal limits still apply (64 levels, 50,000 directory entries, 20,000 game files). The following command discovers nested filename Title IDs and reports only compact metadata:
+
+```sh
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --game-dir-deep /drive/roms/switch/roms --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --json
+```
+
 Use `--coverage-only` for a compact read-only JSON inventory without registered game-file paths or Eden launch history. This mode rejects `--build-readiness`, `--audit-all-files`, and NSP header inspection. It still contains candidate Title IDs and cached names: treat it as *private inventory data*, not public repository material. `--personal-curation` is valid with `--summary` and also with `--audit-all-files`, which can include extra advisory NSP ticket filename hints. It refuses mismatched claimed Build IDs, code-body imports or gameplay-verified claims in the link-only metadata. This overlay is not a replacement for Eden runtime Build ID inspection.
 ```
 
