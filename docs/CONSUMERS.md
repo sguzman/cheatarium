@@ -549,3 +549,25 @@ cargo run --locked -p cheatarium-client --bin cheatarium-eden-build-watch -- \
 
 Launch each game normally while the watcher runs. Each captured title is reported, even if its cheat source lacks that Build ID. A changed game update may cause more than one historical Build ID to be recorded for a title; the curated readiness checker **fails closed** for ambiguity rather than choosing. The watcher is a foreground command by default; users may explicitly start it as a temporary user service with systemd-run and inspect its journal. It never starts itself automatically, never installs cheats, and does not alter permanent systemd configuration.
 
+
+### Static, offline Switch NSP Build IDs (the preferred route)
+
+**Required local tools:** `nstool` **1.9.2** and `hactool` **1.4.0**, installed from the AUR via `yay -S --needed nstool hactool`. **hactoolnet is neither required nor expected.** Verified installation is recorded in the user's local yay transcript. These binaries are external system dependencies for `cheatarium-switch-nsp-builds`, **not** bundled into Cheatarium.
+
+Cheatarium's one-shot Rust CLI reads NSP package metadata using NSTool's NCA and CNMT support to identify the correct **Program NCA** and source title/version. It selects the highest available patch (not DLC) for each title, and invokes hactool with a matched base Program NCA if that patch requires it. It extracts the `main` NSO into a private temporary directory and reads the executable Build ID from its header. The tool never installs, enables, or tests any cheat; it **does not invoke Eden or systemd**, and it never writes a source NSP, save file, `qt-config.ini`, or Eden mod folder.
+
+```fish
+cargo run --release --locked -p cheatarium-client --bin cheatarium-switch-nsp-builds -- \
+  --roms /drive/roms/switch/roms \
+  --title-id 01002DA013484000 \
+  --json
+```
+
+- Use `--title-id` repeatedly to restrict output to the six known games; omit it to scan all non-DLC NSP contents in the directory (defaults to 250 NSP files, max 4096).
+- NSTool and hactool both need **locally owned decryption keys** for encrypted NCAs. The CLI looks for a regular `prod.keys` in `~/.switch/`, `~/.local/share/eden/keys/` or `~/.config/eden/keys/`; an explicit `--keyset /absolute/path/prod.keys` overrides the search. **Never commit, print, upload, or paste keys.** The tool invokes hactool with `--suppresskeys` and discards external-tool output on failures.
+- Unlike a game-list lookup, the native Build ID is read only after a successful extraction of a valid `NSO0` header. If the NSP is corrupt, a key is missing, an NCA cannot be decrypted, a patch is missing its base, or the correct program cannot be identified, output reports a blocked status rather than inventing a Build ID.
+- NSTool stages only bounded candidate NCAs, but some full **Program NCAs can be large**. Staging is temporary, private (0700 directory), and removed automatically. A 12 GiB per-NCA safety bound prevents unbounded extraction. The original NSP remains unchanged. There is no permanent daemon, timer, persistent service, or required game launch.
+- The output identifies what is **in the NSP files scanned**, not necessarily which update Eden currently selected, and certainly not whether any cheat is functional. After extraction succeeds, compare the observed Title ID + Build ID against Cheatarium's pinned cheat sources; validate conflicting alternatives and test individual effects separately.
+
+The older launch-log watcher is **not part of this workflow**. Prefer static extraction when accessible NSP data and decryption keys are available. It is not required to build, scan, or curate new Switch cheat sources.
+
