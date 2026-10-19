@@ -33,7 +33,7 @@ struct StaticObservation {
     pinned_native_cheat_sections_matched: usize,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 struct ExternalSource {
     source_id: String,
     title_id: String,
