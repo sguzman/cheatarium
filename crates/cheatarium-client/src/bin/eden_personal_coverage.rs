@@ -2,8 +2,8 @@
 //! inventory. Never opens game files or imports/installs third-party cheat bodies.
 //! The curation manifest is public metadata, not a runtime version witness.
 use super::{
-    base_for_update_label, inspect_unresolved_nsp, is_base_label, is_title_id,
-    CachedTitle, ErrBox, InventoryGame, Report, MAX_NSP_HEADER_INSPECTIONS,
+    base_for_update_label, inspect_unresolved_nsp, is_base_label, is_title_id, CachedTitle, ErrBox,
+    InventoryGame, Report, MAX_NSP_HEADER_INSPECTIONS,
 };
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
@@ -106,7 +106,9 @@ struct UnresolvedReview {
 }
 
 fn unresolved_review(report: &Report, inspect_headers: bool) -> UnresolvedReview {
-    let missing: Vec<_> = report.game_files.iter()
+    let missing: Vec<_> = report
+        .game_files
+        .iter()
         .filter(|file| file.title_id.is_none())
         .collect();
     let mut out = UnresolvedReview {
@@ -114,21 +116,31 @@ fn unresolved_review(report: &Report, inspect_headers: bool) -> UnresolvedReview
         note: "Filename and ticket filename hints are advisory; not authenticated game identities.",
         ..UnresolvedReview::default()
     };
-    let known: BTreeSet<_> = report.title_id_matches.iter()
+    let known: BTreeSet<_> = report
+        .title_id_matches
+        .iter()
         .map(|m| m.title_id.as_str())
         .collect();
     for file in missing.into_iter().take(MAX_UNRESOLVED_FILE_ROWS) {
-        let raw_name = Path::new(&file.path).file_name()
-            .and_then(|n| n.to_str()).unwrap_or("<non-utf8-name>");
-        let file_name: String = raw_name.chars()
+        let raw_name = Path::new(&file.path)
+            .file_name()
+            .and_then(|n| n.to_str())
+            .unwrap_or("<non-utf8-name>");
+        let file_name: String = raw_name
+            .chars()
             .filter(|c| !c.is_control())
-            .take(MAX_REPORTED_FILENAME_CHARS).collect();
-        let eligible = inspect_headers && file.file_type == "nsp"
+            .take(MAX_REPORTED_FILENAME_CHARS)
+            .collect();
+        let eligible = inspect_headers
+            && file.file_type == "nsp"
             && out.header_inspections_performed < MAX_NSP_HEADER_INSPECTIONS;
         let (inspection_status, hints) = if eligible {
             let evidence = inspect_unresolved_nsp(&file.path);
             out.header_inspections_performed += 1;
-            (evidence.status, evidence.ticket_filename_title_id_candidates)
+            (
+                evidence.status,
+                evidence.ticket_filename_title_id_candidates,
+            )
         } else if file.file_type != "nsp" {
             ("unsupported_format_no_header_inspection", Vec::new())
         } else if !inspect_headers {
@@ -137,15 +149,17 @@ fn unresolved_review(report: &Report, inspect_headers: bool) -> UnresolvedReview
             ("header_inspection_limit_reached", Vec::new())
         };
         let probable_base_title_id_hint = if let [single] = hints.as_slice() {
-            base_for_update_label(single)
-                .or_else(|| is_base_label(single).then(|| single.clone()))
+            base_for_update_label(single).or_else(|| is_base_label(single).then(|| single.clone()))
         } else {
             None
         };
-        let matches_known = probable_base_title_id_hint.as_ref()
+        let matches_known = probable_base_title_id_hint
+            .as_ref()
             .is_some_and(|id| known.contains(id.as_str()));
         out.displayed_files.push(UnresolvedFile {
-            file_name, file_type: file.file_type.clone(), inspection_status,
+            file_name,
+            file_type: file.file_type.clone(),
+            inspection_status,
             ticket_filename_title_id_candidates: hints,
             probable_base_title_id_hint,
             hint_matches_eden_candidate: matches_known,
@@ -432,7 +446,10 @@ mod tests {
             cache_found: false,
             cached_titles: Vec::new(),
             game_roots: Vec::new(),
-            unresolved_game_files: game_files.iter().filter(|file| file.title_id.is_none()).count(),
+            unresolved_game_files: game_files
+                .iter()
+                .filter(|file| file.title_id.is_none())
+                .count(),
             game_files,
             title_id_matches: Vec::new(),
             scan_statistics: super::super::ScanStatistics::default(),
@@ -454,7 +471,10 @@ mod tests {
         assert_eq!(review.displayed_files.len(), 1);
         assert_eq!(review.header_inspections_performed, 0);
         assert_eq!(review.displayed_files[0].file_name, "Unidentified Game.nsp");
-        assert_eq!(review.displayed_files[0].inspection_status, "header_inspection_not_requested");
+        assert_eq!(
+            review.displayed_files[0].inspection_status,
+            "header_inspection_not_requested"
+        );
         let printed = serde_json::to_string(&review).unwrap();
         assert!(!printed.contains("/private/owned"));
     }
@@ -463,7 +483,8 @@ mod tests {
     fn optional_header_probe_only_reports_bounded_metadata() {
         let path = std::env::temp_dir().join(format!(
             "cheatarium-unresolved-only-{}-{:?}.nsp",
-            std::process::id(), std::thread::current().id()
+            std::process::id(),
+            std::thread::current().id()
         ));
         std::fs::write(&path, b"PFS0").unwrap();
         let report = minimal_report(vec![super::super::LibraryFile {
