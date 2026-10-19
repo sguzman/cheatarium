@@ -1,7 +1,7 @@
 //! Join the user's recorded static NSP Build IDs to Eden's *advisory* local
 //! inventory. Never opens game files or imports/installs third-party cheat bodies.
 //! The curation manifest is public metadata, not a runtime version witness.
-use super::{is_title_id, CachedTitle, ErrBox, InventoryGame};
+use super::{is_title_id, CachedTitle, ErrBox, InventoryGame, Report};
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
@@ -78,11 +78,46 @@ struct UncuratedGame {
     cheats_gameplay_verified: bool,
 }
 
+#[derive(Debug, Default, Serialize)]
+struct ScanEvidence {
+    scanned_game_files: usize,
+    game_files_without_filename_title_id: usize,
+    directories_not_descended_without_recursive_scan: usize,
+    registered_roots_not_scanned: usize,
+    traversal_limit_reached: bool,
+    scan_warnings: usize,
+    may_have_unexamined_games: bool,
+}
+
+fn scan_evidence(report: &Report) -> ScanEvidence {
+    let unavailable = report.game_roots.iter()
+        .filter(|root| root.status != "scanned")
+        .count();
+    let scan_warnings = report.warnings.iter()
+        .filter(|message| message.starts_with("directory_scan_incomplete:"))
+        .count();
+    ScanEvidence {
+        scanned_game_files: report.game_files.len(),
+        game_files_without_filename_title_id: report.unresolved_game_files,
+        directories_not_descended_without_recursive_scan:
+            report.scan_statistics.directories_not_descended_scan_disabled,
+        registered_roots_not_scanned: unavailable,
+        traversal_limit_reached: report.scan_statistics.traversal_limit_reached,
+        scan_warnings,
+        may_have_unexamined_games: report.unresolved_game_files > 0
+            || report.scan_statistics.directories_not_descended_scan_disabled > 0
+            || report.scan_statistics.traversal_limit_reached
+            || unavailable > 0
+            || scan_warnings > 0,
+    }
+}
+
 #[derive(Debug, Serialize)]
 pub(super) struct Coverage {
     schema_version: u32,
     format: &'static str,
     read_only: bool,
+    scan_evidence: ScanEvidence,
     matched_eden_candidate_games: usize,
     uncurated_eden_candidate_games: usize,
     uncurated_games: Vec<UncuratedGame>,
@@ -236,6 +271,7 @@ fn match_catalog(
         schema_version: 1,
         format: "cheatarium-eden-personal-switch-coverage-v1",
         read_only: true,
+        scan_evidence: ScanEvidence::default(),
         matched_eden_candidate_games: matched.len(),
         uncurated_eden_candidate_games: uncurated.len(),
         uncurated_games: uncurated,
@@ -257,13 +293,16 @@ pub(super) fn read_coverage(
     path: &Path,
     inventory: &[InventoryGame],
     cached_titles: &[CachedTitle],
+    report: &Report,
 ) -> Result<Coverage, ErrBox> {
     let meta = fs::symlink_metadata(path)?;
     if !meta.is_file() || meta.file_type().is_symlink() || meta.len() > MAX_MANIFEST_BYTES {
         return Err("Personal curation must be a bounded regular JSON file".into());
     }
     let manifest: Manifest = serde_json::from_slice(&fs::read(path)?)?;
-    match_catalog(manifest, inventory, cached_titles)
+    let mut coverage = match_catalog(manifest, inventory, cached_titles)?;
+    coverage.scan_evidence = scan_evidence(report);
+    Ok(coverage)
 }
 
 #[cfg(test)]
