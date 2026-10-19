@@ -1025,8 +1025,7 @@ jobs:
           assert d["proposed_addons"]
           paths = [a["proposed_mod_path"] for a in d["proposed_addons"]]
           assert len(set(paths)) == len(paths)
-          assert all(p.startswith("/tmp/eden/load/0100000000010000/") for p in paths)
-          assert all("Cheatarium-" not in p for p in paths)
+          assert all(p.startswith("/tmp/eden/load/0100000000010000/Cheatarium-") for p in paths)
           assert all(p.endswith("/cheats/B424BE150A8E7D78.txt") for p in paths)
           assert m["proposed_addons"] == []
           assert m["exact_archived_build_candidate_found"] is False
