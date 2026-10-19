@@ -494,3 +494,26 @@ The default history file is `$XDG_STATE_HOME/cheatarium/eden-build-history.json`
 After Eden rotates or clears its log, the report retains old records as `saved_historical_main_builds` or `saved_cheat_lookup_build_ids`, separately from `historical_main_executable_builds` observed in the current log. Statuses beginning `stored_` explicitly mean **saved historical evidence**, not a fresh game launch. `first_captured_unix_seconds` and `last_captured_unix_seconds` mark **when Cheatarium captured a log**, not when a game was played. `saved_history_written_this_run` exposes the optional state write; the report's `read_only` field becomes false *only if* that write actually happened. `emulator_files_written` remains zero. A rotated or empty log does **not** clear the saved observations.
 
 **Limitations:** automatic history capture happens **when Cheatarium's readiness command runs**, not continuously when Eden launches a game. It cannot recover launches erased before the first capture, does not run as a background service, and cannot prove what Build ID Eden would run now. The stored history never enables cheat installation or elevates weak cheat-file lookup hints into verified main executable evidence.
+
+
+### Six-game Switch cheat-source curation (source-pinned, non-installing)
+
+Cheatarium now maintains [the six-game curated Build ID matrix](../research/switch-personal-curation-v1.json) covering Super Mario Odyssey, Mario Kart 8 Deluxe, Skyward Sword HD, Super Smash Bros. Ultimate, Link's Awakening and Super Mario RPG. This is **not** a claim that all published cheat headings work. Source data was inspected under a pinned HamletDuFromage Switch cheats database revision, with 16-hex Build IDs separated from attribution, version-specific alternatives, restores and graphics settings. Source-body redistribution remains unresolved, so the public repository contains **metadata and links only**, not the new community cheat codes.
+
+The curator first gives a read-only list:
+
+```sh
+python3 tools/curate_switch_private.py
+python3 tools/curate_switch_private.py --title-id 01002DA013484000
+```
+
+For strictly private local acquisition, choose a single game:
+
+```sh
+python3 tools/curate_switch_private.py --title-id 01002DA013484000 --fetch-private
+```
+
+This fetches the **commit-pinned** original JSON directly from the credited source, validates its declared Build ID set and heading counts, retains only native hex-token sections, and privately stages candidate text by **Title ID + Build ID** under `~/.local/share/cheatarium/private-switch-curation/`. It does not access game ROMs, save data or Eden, does **not** change `qt-config.ini`, and never installs, activates, or claims to have tested cheats. Existing private files are only accepted when byte-for-byte identical; mismatches refuse overwrites. Names, alternate code branches, and reset/restore effects still require manual semantic review before later installation.
+
+For Skyward Sword HD (`01002DA013484000`), external source collections list at least two historical BIDs (`5441AF3C89F97E1D`, `D824D4B1BBD45D03`); neither has been observed as the user's current executable Build ID. User-owned files and game-update selection are not independently verified by the metadata index, and no other title's Build ID is inferred from a cache entry.
+
