@@ -20,6 +20,9 @@ on:
       - "tools/test_fetch_smash_private.py"
       - "tools/test_curated_switch.py"
       - "tools/test_switch_exact_build_coverage.py"
+      - "tools/reconcile_switch_exact_build_coverage.py"
+      - "crates/cheatarium-client/src/curated.rs"
+      - "crates/cheatarium-client/src/main.rs"
       - "research/switch-exact-build-coverage-v1.json"
       - "curated/switch/**"
       - "Cargo.lock"
@@ -40,6 +43,7 @@ jobs:
           cargo test --locked -p cheatarium-client --bin cheatarium-eden-discover
           cargo test --locked -p cheatarium-client --bin cheatarium-eden-curated-readiness
           cargo test --locked -p cheatarium-client --bin cheatarium-eden-plan
+          cargo test --locked -p cheatarium-client --bin cheatarium-query
       - name: Validate local curation preview
         run: |
           python3 -m py_compile tools/curate_switch_private.py
@@ -47,4 +51,6 @@ jobs:
           python3 -m unittest discover -s tools -p test_fetch_smash_private.py
           python3 -m unittest discover -s tools -p test_curated_switch.py
           python3 -m unittest discover -s tools -p test_switch_exact_build_coverage.py
+          python3 tools/reconcile_switch_exact_build_coverage.py --check
           python3 tools/curate_switch_private.py --title-id 01006A800016E000
+
