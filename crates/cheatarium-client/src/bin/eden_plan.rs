@@ -929,7 +929,7 @@ fn run() -> Result<(), ErrBox> {
         }
         let (private_bundle, private_build) =
             eden_private::load_exact(&private_manifest, &private_root, title)?;
-        let plan = preview_readable(&private_bundle, title, &private_build, &mod_root)?;
+        let plan = eden_private::preview_isolated(&private_bundle, title, &private_build, &mod_root)?;
         if plan.proposed_addons.is_empty()
             || !plan.rejected_entries.is_empty()
             || plan.proposed_addons.iter().any(|entry| {
@@ -939,9 +939,28 @@ fn run() -> Result<(), ErrBox> {
             return Err("Private exact-build source is not completely renderable; refusing installation or staging".into());
         }
         if install {
-            // Existing installer disables all new add-ons before writing them.
-            let installed = eden_install::install(&private_bundle, &plan, &mod_root, &config)?;
-            println!("{}", serde_json::to_string_pretty(&installed)?);
+            // An earlier identical isolated installation may be retried without
+            // creating new backups, changing settings or touching any add-ons.
+            if eden_install::already_installed_unchanged(&private_bundle, &plan, &mod_root, &config)? {
+                println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+                    "format": "cheatarium-eden-private-existing-install-v1",
+                    "title_id": title,
+                    "selected_build_id": private_build,
+                    "status": "already_installed_unchanged_and_disabled",
+                    "installed_addons_verified": plan.proposed_addons.len(),
+                    "files_written": 0,
+                    "eden_config_updated": false,
+                    "existing_mods_overwritten": false,
+                    "installed_build_id_verified": false,
+                    "compatible_cheats_verified": false,
+                    "warning": "Existing private Cheatarium add-ons match the staged bytes and are listed as disabled. No settings or files changed. Runtime and gameplay remain unverified."
+                }))?);
+            } else {
+                // Existing installer disables new add-ons BEFORE writing files,
+                // refuses colliding private namespace paths, and backs up Qt.
+                let installed = eden_install::install(&private_bundle, &plan, &mod_root, &config)?;
+                println!("{}", serde_json::to_string_pretty(&installed)?);
+            }
         } else if let Some(directory) = &stage_dir {
             let staged = stage(&private_bundle, &plan, directory, &mod_root)?;
             println!("{}", serde_json::to_string_pretty(&staged)?);
