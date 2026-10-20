@@ -1259,6 +1259,52 @@ mod tests {
     use super::*;
 
     #[test]
+    fn recognizes_only_eden_process_names_and_linux_task_states() {
+        assert!(is_eden_process_name("eden"));
+        assert!(is_eden_process_name("eden-qt"));
+        assert!(is_eden_process_name("eden-app"));
+        assert!(is_eden_process_name("eden-emu"));
+        assert!(!is_eden_process_name("eden-unrelated"));
+        assert!(!is_eden_process_name("cheatarium-eden-plan"));
+        assert_eq!(process_state("Name:\teden\\nState:\tZ (zombie)\\n"), None);
+        assert_eq!(process_state("Name:\teden\nState:\tZ (zombie)\n"), Some('Z'));
+        assert_eq!(process_state("State:\tS (sleeping)\n"), Some('S'));
+        assert_eq!(process_state("Name:\teden\n"), None);
+    }
+
+    #[cfg(target_os = "linux")]
+    #[test]
+    fn mock_proc_ignores_zombies_and_reports_remaining_live_pid() {
+        let root = std::env::temp_dir().join(format!(
+            "cheatarium-eden-process-test-{}-{:?}",
+            std::process::id(), std::thread::current().id()
+        ));
+        fs::create_dir_all(&root).unwrap();
+        let zombie = root.join("12345");
+        let active = root.join("12346");
+        let unrelated = root.join("12347");
+        for folder in [&zombie, &active, &unrelated] {
+            fs::create_dir(folder).unwrap();
+        }
+        fs::write(zombie.join("comm"), "eden\n").unwrap();
+        fs::write(zombie.join("status"), "Name:\teden\nState:\tZ (zombie)\n").unwrap();
+        fs::write(active.join("comm"), "eden-app\n").unwrap();
+        fs::write(active.join("status"), "Name:\teden\nState:\tS (sleeping)\n").unwrap();
+        fs::write(active.join("cmdline"), b"eden-app\0--test\0").unwrap();
+        fs::write(unrelated.join("comm"), "eden-unrelated\n").unwrap();
+        fs::write(unrelated.join("status"), "State:\tS (sleeping)\n").unwrap();
+        let found = eden_processes_in(&root, 99999).unwrap();
+        assert_eq!(found.len(), 1);
+        assert_eq!(found[0].pid, 12346);
+        assert_eq!(found[0].name, "eden-app");
+        assert_eq!(found[0].state, "S");
+        assert_eq!(found[0].command.as_deref(), Some("eden-app --test"));
+        fs::write(active.join("status"), "State:\tX (dead)\n").unwrap();
+        assert!(eden_processes_in(&root, 99999).unwrap().is_empty());
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
     fn update_disabled_qsettings_preserves_existing_mods_and_unrelated_settings() {
         let ini = "[UI]\nfoo=bar\n[DisabledAddOns]\nsize=2\n1\\title_id=72057594037993472\n1\\disabled\\size=1\n1\\disabled\\1\\d=Existing Mod\n2\\title_id=72081146186022912\n2\\disabled\\size=0\n[Audio]\nvolume=22\n";
         let title = format!("{:016X}", 72057594037993472u64);
