@@ -269,8 +269,9 @@ pub(super) fn preview_isolated(
                 .ok_or("Private add-on name is not valid Unicode")?,
             _ => return Err("Private add-on path has no regular name".into()),
         };
+        let expected_file = format!("{build}.txt");
         if !matches!(parts.next(), Some(Component::Normal(x)) if x == "cheats")
-            || !matches!(parts.next(), Some(Component::Normal(x)) if x == format!("{build}.txt"))
+            || !matches!(parts.next(), Some(Component::Normal(x)) if x == std::ffi::OsStr::new(expected_file.as_str()))
             || parts.next().is_some()
         {
             return Err("Private add-on path has unexpected layout".into());
