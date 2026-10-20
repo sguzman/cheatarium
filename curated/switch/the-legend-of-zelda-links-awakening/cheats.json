@@ -1,0 +1,852 @@
+{
+  "schema_version": 1,
+  "platform": "switch",
+  "game": {
+    "id": "the-legend-of-zelda-links-awakening",
+    "title": "The Legend of Zelda: Link's Awakening"
+  },
+  "editions": [
+    {
+      "id": "build-ae16f71e002af8cb",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "AE16F71E002AF8CB"
+    }
+  ],
+  "cheats": [
+    {
+      "id": "high-jump-zl-ae16f71e002af8cb-001",
+      "name": "High Jump (ZL)",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "80000100\n581F0000 39f486c8\n780F0000 000000c8\n640F0000 00000000 C1800000\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-rupees-ae16f71e002af8cb-002",
+      "name": "Infinite Rupees",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "02000000 01CC0760 0000270F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-max-hearts-ae16f71e002af8cb-003",
+      "name": "Infinite / Max Hearts",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC0764 00000028",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-magic-powder-ae16f71e002af8cb-004",
+      "name": "Infinite Magic Powder",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC0780 00000014",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-bombs-ae16f71e002af8cb-005",
+      "name": "Infinite Bombs",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC077E 0000000A",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-arrows-ae16f71e002af8cb-006",
+      "name": "Infinite Arrows",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC077F 00000014",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "have-3-4-hearts-press-zl-zr-ae16f71e002af8cb-007",
+      "name": "Have 3/4 Hearts (Press ZL+ZR)",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "80000300 01000000 01cc0777 00000007\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invincible-ae16f71e002af8cb-008",
+      "name": "Invincible",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "581F0000 00a2fcd0\n780F0000 00001ea0\n640F0000 00000000 40000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "have-all-items-ae16f71e002af8cb-009",
+      "name": "Have All Items",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 01cc0788 0000FFFF\n04000000 01cc078c 000FFFFF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "upgrade-sword-shield-tunic-bracelet-ae16f71e002af8cb-010",
+      "name": "Upgrade Sword/Shield/Tunic/Bracelet",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 01cc077c 000000ff",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "have-map-compass-boss-key-other-items-in-map-screen-ae16f71e002af8cb-011",
+      "name": "Have Map/Compass/Boss Key & Other Items In Map Screen",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cbb301 0000000f\n01000000 01cbb321 0000000f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-small-keys-ae16f71e002af8cb-012",
+      "name": "Infinite Small Keys",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cbb300 00000001\n01000000 01cbb320 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "yoshi-doll-ae16f71e002af8cb-013",
+      "name": "Yoshi Doll",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ribbon-ae16f71e002af8cb-014",
+      "name": "Ribbon",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000002",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dog-food-ae16f71e002af8cb-015",
+      "name": "Dog Food",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bananas-ae16f71e002af8cb-016",
+      "name": "Bananas",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000004",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stick-ae16f71e002af8cb-017",
+      "name": "Stick",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000005",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "honeycomb-ae16f71e002af8cb-018",
+      "name": "Honeycomb",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000006",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pineapple-ae16f71e002af8cb-019",
+      "name": "Pineapple",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000007",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hibiscus-ae16f71e002af8cb-020",
+      "name": "Hibiscus",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000008",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "goat-s-letter-ae16f71e002af8cb-021",
+      "name": "Goat's Letter",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 00000009",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "broom-ae16f71e002af8cb-022",
+      "name": "Broom",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 0000000a",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-hook-ae16f71e002af8cb-023",
+      "name": "Fishing Hook",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 0000000b",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "necklace-ae16f71e002af8cb-024",
+      "name": "Necklace",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 0000000c",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mermaid-s-scale-ae16f71e002af8cb-025",
+      "name": "Mermaid's Scale",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 0000000d",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "magnifying-lense-ae16f71e002af8cb-026",
+      "name": "Magnifying Lense",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077a 0000000e",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ciaociao-figure-ae16f71e002af8cb-027",
+      "name": "CiaoCiao Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "goomba-figure-ae16f71e002af8cb-028",
+      "name": "Goomba Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000002",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "spiny-figure-ae16f71e002af8cb-029",
+      "name": "Spiny Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000004",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "boo-figure-ae16f71e002af8cb-030",
+      "name": "Boo Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000008",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cheep-cheep-figure-ae16f71e002af8cb-031",
+      "name": "Cheep Cheep Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000010",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blooper-figure-ae16f71e002af8cb-032",
+      "name": "Blooper Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000020",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shy-guy-figure-ae16f71e002af8cb-033",
+      "name": "Shy Guy Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000040",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "piranha-plant-figure-ae16f71e002af8cb-034",
+      "name": "Piranha Plant Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC07c8 00000080",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pokey-figure-ae16f71e002af8cb-035",
+      "name": "Pokey Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "02000000 01CC07c8 00000100",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bowwow-figure-ae16f71e002af8cb-036",
+      "name": "BowWow Figure",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "02000000 01CC07c8 00000200",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dog-on-chain-ae16f71e002af8cb-037",
+      "name": "Dog on Chain",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077d 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "girl-ae16f71e002af8cb-038",
+      "name": "Girl",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077d 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ghost-ae16f71e002af8cb-039",
+      "name": "Ghost",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077d 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blue-chicken-ae16f71e002af8cb-040",
+      "name": "Blue Chicken",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cc077d 00000004",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "all-secret-seashells-ae16f71e002af8cb-041",
+      "name": "All Secret Seashells",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 01CC076c FFFFFFFF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "have-map-compass-nightmare-key-stone-beak-ae16f71e002af8cb-042",
+      "name": "Have Map/Compass/Nightmare Key/Stone Beak",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01cbb301 0000000f\n01000000 01cbb321 0000000f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "have-5-5-gold-leafs-press-l3-r3-ae16f71e002af8cb-043",
+      "name": "Have 5/5 Gold Leafs (Press L3+R3)",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "80000030 01000000 01cc07a2 0000001f\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rupees-ae16f71e002af8cb-044",
+      "name": "Rupees",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "02000000 01CC0760 0000270F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hearts-ae16f71e002af8cb-045",
+      "name": "Hearts",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC0764 00000028",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "magic-powder-ae16f71e002af8cb-046",
+      "name": "Magic Powder",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC0780 00000014",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bombs-ae16f71e002af8cb-047",
+      "name": "Bombs",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC077E 0000000A",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "arrows-ae16f71e002af8cb-048",
+      "name": "Arrows",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC077F 00000014",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rubies-ae16f71e002af8cb-049",
+      "name": "Rubies",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "02000000 01CC0760 0000270F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt"
+          }
+        }
+      ]
+    }
+  ]
+}
