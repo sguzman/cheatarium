@@ -1,4 +1,6 @@
 //! Offline, read-only Cheatarium source and candidate-game search.
+mod curated;
+
 use cheatarium_client::{
     load_all_game_candidates, load_catalog, load_effect_tags, load_game_candidates, load_platform,
     load_repeated_codes, publications::load_snes_publications, reviews::load_effect_reviews,
@@ -30,6 +32,7 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut offset = 0usize;
     let mut args = env::args().skip(1);
     let mode = match args.next().as_deref() {
+        Some("curated") => "curated",
         Some("external") => "external",
         Some("search") => "search",
         Some("source") => "source",
@@ -48,10 +51,13 @@ fn run() -> Result<(), Box<dyn Error + Send + Sync>> {
         Some("publications") => "publications",
         Some("compositions") => "compositions",
         _ => {
-            eprintln!("Usage: cheatarium-query <external|discover|platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--region-hint USA] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
+            eprintln!("Usage: cheatarium-query <curated|external|discover|platforms|search|source|games|game|entries|entry|effects|codes|repeats|tags|reviews|compositions|publications|verify> --db generated/v1 --platform snes [--title Mario] [--effect Infinite] [--code EXACT_RAW_CODE] [--game-key super-mario-world] [--role code|memory-entry|section-heading] [--description-contains TEXT] [--ordinal SOURCE_ORDINAL] [--category lives] [--source-record-id SOURCE] [--relation revision-alternatives] [--varying-descriptions] [--region-hint USA] [--declared-format game-genie] [--source-id libretro-database] [--limit 10] [--offset 0] [--json]");
             return Err("Expected search, games, effects, or verify subcommand".into());
         }
     };
+    if mode == "curated" {
+        return curated::run(args);
+    }
     while let Some(arg) = args.next() {
         match arg.as_str() {
             "--db" => root = PathBuf::from(args.next().ok_or("--db needs a path")?),
