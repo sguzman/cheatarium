@@ -427,12 +427,13 @@ Use `--log /absolute/path/to/eden_log.txt` to inspect a deliberately chosen hist
 
 ```sh
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --json
+```
 
-To reconcile only the games Eden actually lists or labels with your **six directly extracted static NSP Build IDs**, use the optional curated source overlay:
+To reconcile Eden-discovered game candidates with a curated static NSP Build ID manifest, use the optional source overlay:
 
 ```sh
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --personal-curation research/switch-personal-curation-v1.json --json
-# Compact, path-free candidate inventory for your local Switch library
+# Compact, path-free candidate inventory from the local game library
 cargo run --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --json
 ```
 
@@ -445,15 +446,15 @@ Games with existing native cheat sources sort first, but candidate source counts
 For unresolved files, `unresolved_file_review` provides sanitized filenames and container types without full paths. Its default is **no header reads**. Add `--inspect-coverage-unresolved` together with `--coverage-only` to inspect only the outer PFS0 metadata of up to 24 unresolved NSPs (up to 256 KiB each); ticket **filenames** can suggest Title IDs even when the outer NSP filename has no ID. The report distinguishes an advisory base-game Title ID hint from an existing known game and never treats it as authenticated installed content. Non-NSP types are listed but not parsed. All candidate filenames remain personal inventory information.
 
 ```sh
-cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --game-dir-deep /drive/roms/switch/roms --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --inspect-coverage-unresolved --json
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --game-dir-deep /path/to/switch-roms --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --inspect-coverage-unresolved --json
 ```
 
 If the queue reports **zero new games**, check the `scan_evidence` object before concluding the library has only six. It reports how many game files were listed, how many lacked usable filename Title IDs, how many directories were skipped due to nonrecursive settings, and whether any roots were unavailable or traversal limits were hit. An incomplete scan cannot establish full game coverage.
 
-For your owned Switch library arranged in nested game directories, `--game-dir-deep /drive/roms/switch/roms` explicitly requests a recursive directory walk. Unlike the shallow `--game-dir DIR` option, this descends into subdirectories; it does not follow symlinks, open ROMs, decrypt content, or modify Eden. If that directory is already registered shallowly in Eden, the explicit recursive scan takes precedence for the same root without scanning it twice. The existing traversal limits still apply (64 levels, 50,000 directory entries, 20,000 game files). The following command discovers nested filename Title IDs and reports only compact metadata:
+For Switch libraries arranged in nested game directories, `--game-dir-deep /path/to/switch-roms` explicitly requests a recursive directory walk. Unlike the shallow `--game-dir DIR` option, this descends into subdirectories; it does not follow symlinks, open ROMs, decrypt content, or modify Eden. If that directory is already registered shallowly in Eden, the explicit recursive scan takes precedence for the same root without scanning it twice. The existing traversal limits still apply (64 levels, 50,000 directory entries, 20,000 game files). The following command discovers nested filename Title IDs and reports only compact metadata:
 
 ```sh
-cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --game-dir-deep /drive/roms/switch/roms --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --json
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-discover -- --db generated/v1 --game-dir-deep /path/to/switch-roms --summary --personal-curation research/switch-personal-curation-v1.json --coverage-only --json
 ```
 
 Use `--coverage-only` for a compact read-only JSON inventory without registered game-file paths or Eden launch history. This mode rejects `--build-readiness`, `--audit-all-files`, and NSP header inspection. It still contains candidate Title IDs and cached names: treat it as *private inventory data*, not public repository material. `--personal-curation` is valid with `--summary` and also with `--audit-all-files`, which can include extra advisory NSP ticket filename hints. It refuses mismatched claimed Build IDs, code-body imports or gameplay-verified claims in the link-only metadata. This overlay is not a replacement for Eden runtime Build ID inspection.
@@ -537,7 +538,7 @@ python3 tools/curate_switch_private.py
 python3 tools/curate_switch_private.py --title-id 01002DA013484000
 ```
 
-For your six directly observed Switch NSP Build IDs, prefer **exact-build-only private staging**:
+For the Build IDs enumerated by the curated static NSP manifest, use **exact-build-only private staging**:
 
 ```sh
 python3 tools/curate_switch_private.py --fetch-personal-exact
@@ -553,7 +554,7 @@ python3 tools/curate_switch_private.py --title-id 01002DA013484000 --fetch-priva
 
 This fetches the **commit-pinned** original JSON directly from the credited source, validates its declared Build ID set and heading counts, retains only native hex-token sections, and privately stages candidate text by **Title ID + Build ID** under `~/.local/share/cheatarium/private-switch-curation/`. It does not access game ROMs, save data or Eden, does **not** change `qt-config.ini`, and never installs, activates, or claims to have tested cheats. Existing private files are only accepted when byte-for-byte identical; mismatches refuse overwrites. Names, alternate code branches, and reset/restore effects still require manual semantic review before later installation.
 
-For Skyward Sword HD (`01002DA013484000`), external source collections list at least two historical BIDs (`5441AF3C89F97E1D`, `D824D4B1BBD45D03`); neither has been observed as the user's current executable Build ID. User-owned files and game-update selection are not independently verified by the metadata index, and no other title's Build ID is inferred from a cache entry.
+For Skyward Sword HD (`01002DA013484000`), external sources list multiple historical Build IDs. Neither source metadata nor a static NSP extraction verifies the executable currently selected by Eden; game-update selection must be checked separately.
 
 
 
@@ -654,18 +655,18 @@ Cheatarium's one-shot Rust CLI reads NSP package metadata using NSTool's NCA and
 
 ```fish
 cargo run --release --locked -p cheatarium-client --bin cheatarium-switch-nsp-builds -- \
-  --roms /drive/roms/switch/roms \
+  --roms /path/to/switch-roms \
   --title-id 01002DA013484000 \
   --json
 ```
 
 - Use `--title-id` repeatedly to restrict output to the six known games; omit it to scan all non-DLC NSP contents in the directory (defaults to 250 NSP files, max 4096).
-- NSTool and hactool both need **locally owned decryption keys** for encrypted NCAs. NSTool also reads a matching `.tik` ticket from the user's own NSP when available, so title keys generally need not be supplied manually. The CLI looks for a regular `prod.keys` in `~/.switch/`, `/drive/roms/switch/keys/system/`, `~/.local/share/eden/keys/` or `~/.config/eden/keys/`; an explicit `--keyset /absolute/path/prod.keys` overrides the search. If `title.keys` exists next to the selected `prod.keys`, Cheatarium supplies it to NSTool through a 0700 private temporary child-only HOME containing a symlink to the original file. Upstream NSTool **only** auto-loads `title.keys` from `$HOME/.switch/title.keys`; it does not have an active `--titlekeyset` switch. Use `--title-keyset /absolute/path/title.keys` when keys are stored elsewhere. No key file is copied, printed, committed or uploaded, and the ordinary user HOME and Eden configuration are left unchanged. **Never commit, print, upload, or paste keys.** The tool invokes hactool with `--suppresskeys` and discards external-tool output on failures.
+- NSTool and hactool both need **locally owned decryption keys** for encrypted NCAs. NSTool also reads a matching `.tik` ticket from the user's own NSP when available, so title keys generally need not be supplied manually. The CLI looks for a regular `prod.keys` in `~/.switch/`, `~/.local/share/eden/keys/` or `~/.config/eden/keys/`; an explicit `--keyset /absolute/path/prod.keys` overrides the search. If `title.keys` exists next to the selected `prod.keys`, Cheatarium supplies it to NSTool through a 0700 private temporary child-only HOME containing a symlink to the original file. Upstream NSTool **only** auto-loads `title.keys` from `$HOME/.switch/title.keys`; it does not have an active `--titlekeyset` switch. Use `--title-keyset /absolute/path/title.keys` when keys are stored elsewhere. No key file is copied, printed, committed or uploaded, and the ordinary user HOME and Eden configuration are left unchanged. **Never commit, print, upload, or paste keys.** The tool invokes hactool with `--suppresskeys` and discards external-tool output on failures.
 - Unlike a game-list lookup, the native Build ID is read only after a successful extraction of a valid `NSO0` header. If the NSP is corrupt, a key is missing, an NCA cannot be decrypted, a patch is missing its base, or the correct program cannot be identified, output reports a blocked status rather than inventing a Build ID.
-- NSTool stages only bounded candidate NCAs, but some full **Program NCAs can be large**. Staging is temporary, private (0700 directory), and removed automatically; temporary NCAs are placed on disk under `~/.cache/cheatarium/nsp-temporary/`, **not** RAM-backed `/tmp`. A configurable 32 GiB per-NCA default cap (maximum 64 GiB with `--max-nca-gib`) prevents unbounded extraction; use `--scratch-dir /drive/.cache/cheatarium/nsp-temporary` to place large temporary files on a spacious writable disk instead of consuming your home filesystem. The original NSP remains unchanged. There is no permanent daemon, timer, persistent service, or required game launch.
+- NSTool stages only bounded candidate NCAs, but some full **Program NCAs can be large**. Staging is temporary, private (0700 directory), and removed automatically; temporary NCAs are placed on disk under `~/.cache/cheatarium/nsp-temporary/`, **not** RAM-backed `/tmp`. A configurable 32 GiB per-NCA default cap (maximum 64 GiB with `--max-nca-gib`) prevents unbounded extraction; use `--scratch-dir /path/to/large-scratch` to place large temporary files on a spacious writable disk instead of consuming your home filesystem. The original NSP remains unchanged. There is no permanent daemon, timer, persistent service, or required game launch.
 - The output identifies what is **in the NSP files scanned**, not necessarily which update Eden currently selected, and certainly not whether any cheat is functional. After extraction succeeds, compare the observed Title ID + Build ID against Cheatarium's pinned cheat sources; validate conflicting alternatives and test individual effects separately.
 
-**Confirmed six-game static extraction (2026-10-19):** All six user-targeted games have **directly extracted NSP executable Build IDs**, from `nstool` and `hactool` on the user's local game packages:
+**Six-game static NSP extraction snapshot (2026-10-19):** The curated research manifest records extracted executable Build IDs for six sample titles. These are static package observations, not runtime Eden evidence:
 
 | Game | Title ID | Selected source | NCA title version | Cheat Build ID (16 hex) | Full executable Build ID (32 hex) | Native cheat source match |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -676,21 +677,19 @@ cargo run --release --locked -p cheatarium-client --bin cheatarium-switch-nsp-bu
 | Link's Awakening | `01006BB00C6F0000` | Base application | 0 | `AE16F71E002AF8CB` | `AE16F71E002AF8CB059A9A74C4D90F34` | Yes; 38 strict sections |
 | Super Mario RPG | `0100BC0018138000` | Base application | 0 | `E968832CADE2AD7C` | `E968832CADE2AD7CBD85B6C6DFE1D9C1` | Yes; 53 strict sections |
 
-The selected files and specific executable Build IDs are **static NSP evidence**, not proof of what Eden has currently loaded or that any cheat works in gameplay. Five of six exact Build IDs have corresponding pinned native cheat sections (149 strict sections in total). **Smash 13.0.2 now has two attributed link-only exact-build candidate sources**, including the Panda source posting and a GBAtemp adaptation; the pinned Hamlet collection still has zero matching sections for `CBD5A9B56EA859BA`. The two links are not independent gameplay confirmations and neither has been imported or installed. See the `exact_build_external_sources` entries in the curated JSON. The user has not yet completed gameplay validation. Do not infer Title IDs from filenames, assume an update's Build ID applies to another version, or mark untested codes as working.
+The selected files and specific executable Build IDs are **static NSP evidence**, not proof of what Eden has currently loaded or that any cheat works in gameplay. Five of six exact Build IDs have corresponding pinned native cheat sections (149 strict sections in total). **Smash 13.0.2 now has two attributed link-only exact-build candidate sources**, including the Panda source posting and a GBAtemp adaptation; the pinned Hamlet collection still has zero matching sections for `CBD5A9B56EA859BA`. These sources are not independent gameplay confirmations. The separate opt-in private importer can stage source bodies locally; the public manifest does not establish whether a particular Eden installation has imported or enabled them. See the `exact_build_external_sources` entries in the curated JSON. Gameplay validation is not documented. Do not infer Title IDs from filenames, assume an update's Build ID applies to another version, or mark untested codes as working.
 
 **Diagnosing an NSP that exists but is not recognized:** the focused CLI probe reports why CNMT Program metadata is unresolved (missing metadata NCA, extraction failure, unreadable filesystem tree, no CNMT filename, CNMT extraction failure, parse failure, or Program NCA missing from package). It never guesses a Title ID from the file's name.
 
 ```fish
 cargo run --release --locked -p cheatarium-client --bin cheatarium-switch-nsp-builds -- \
-  --inspect-file '/drive/roms/switch/roms/super-mario-rpg/Super Mario RPG [0100BC0018138000][v0].nsp' \
+  --inspect-file '/path/to/switch-roms/game.nsp' \
   --title-id 0100BC0018138000 --metadata-only --json
 ```
 
 Use `--metadata-only` when diagnosing recognition failures to avoid extracting the full game executable again. A diagnostic warning such as `package_0: metadata_unresolved_meta_ncas_1_extracted_1_trees_1_cnmt_paths_0_...` tells the developer which stage failed without exposing keys or raw executable bytes. After this was observed on Super Mario RPG, Cheatarium added a bounded NSTool fallback that extracts only the already-staged metadata NCA's filesystem into private scratch and searches real `.cnmt` files there (including nested paths). This no longer relies solely on parsing NSTool's human-readable `--fstree` text. The output has separate `fallback_extractions`, `fallback_cnmt_paths`, `fallback_parsed` and `fallback_matched` diagnostic counters. The fallback does not read a game's large Program NCA when `--metadata-only` is requested. **Metadata NCAs can also require title tickets.** The scanner now passes the NSP's own `.tik` files to NSTool during metadata inspection, not only during Program NCA extraction. If the CNMT is still absent, sanitized diagnostics report ticket count, unreadable partitions and missing decryption-key indications. A successful NSTool exit does not alone establish that an encrypted partition was readable; don't confuse metadata NCA file extraction with CNMT decryption. A reported `metadata_discovered_program_extraction_skipped` means metadata recognition succeeded, **not** that the executable Build ID has been extracted. Debug counts are designed for unattended Jobflick logs.
 
-**RPG decryption resolved (2026-10-19):** The old `system/` `prod.keys` and `title.keys` failed to decrypt the metadata of `Super Mario RPG [0100BC0018138000][v0].nsp` (no package ticket, AES-CTR key unavailable). The user identified a separate `systemv2/` keyset; both its production and title key files differ from the old set. With **both `systemv2` files passed explicitly** to Cheatarium's one-shot CLI (`--keyset` and `--title-keyset`), the exact executable Build ID `E968832CADE2AD7CBD85B6C6DFE1D9C1` was successfully extracted with no warnings. Thus this specific game's blocker was **insufficient key material in the old combination**, *not* absence of the NSP or an unfixable CNMT parser issue. We did **not** isolate which of the two updated key files provided the missing decryption material.
-
-The original `system/` production key file was byte-for-byte equal to the one at the user's default Eden key path during this investigation. That establishes only that Eden had the old `prod.keys` at that path; it does not prove Eden's active configured root, loaded `title.keys`, current startup state, or whether Super Mario RPG will be registered or launchable. Investigate Eden game discovery separately if it still fails to list the game. Never publish key contents, tickets, decrypted game files, ROM dumps, or saves.
+**Encrypted metadata troubleshooting:** A missing or outdated keyset can prevent CNMT decryption even when the NSP is present and its metadata NCA can be extracted. For diagnostic runs, `--keyset` and `--title-keyset` can select explicitly supplied local key files without exposing their contents. If static extraction succeeds but Eden still does not list a game, investigate emulator game discovery independently. Never publish keys, tickets, decrypted game files, ROM dumps, or saves.
 
 The older launch-log watcher is **not part of this workflow**. Prefer static extraction when accessible NSP data and decryption keys are available. It is not required to build, scan, or curate new Switch cheat sources.
 
