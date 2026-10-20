@@ -84,31 +84,109 @@ fn validate_mod_root_plan(path: &Path) -> Result<(), ErrBox> {
     Ok(())
 }
 
-fn eden_not_running() -> Result<(), ErrBox> {
-    // Eden rewrites qt-config.ini from its in-memory QSettings. Writing while
-    // its process is running would risk lost settings and enabled-by-default mods.
+/// A process name is advisory: we must also distinguish a live emulator from
+/// a reaped/dead Linux task whose comm still reads "eden". The scan is read-only.
+#[derive(Debug, Serialize)]
+pub(super) struct EdenProcess {
+    pub(super) pid: u32,
+    pub(super) name: String,
+    pub(super) state: String,
+    pub(super) executable: Option<String>,
+    pub(super) command: Option<String>,
+}
+
+fn is_eden_process_name(name: &str) -> bool {
+    matches!(name, "eden" | "eden-qt")
+        || name.starts_with("eden-app")
+        || name.starts_with("eden-emu")
+}
+
+fn process_state(status: &str) -> Option<char> {
+    status.lines()
+        .find_map(|line| line.strip_prefix("State:"))
+        .and_then(|value| value.trim().chars().next())
+}
+
+#[cfg(target_os = "linux")]
+fn eden_processes_in(proc_dir: &Path, current_pid: u32) -> Result<Vec<EdenProcess>, ErrBox> {
+    let mut matches = Vec::new();
+    for item in fs::read_dir(proc_dir)? {
+        let item = item?;
+        let filename = item.file_name();
+        let Some(pid) = filename.to_str().and_then(|name| name.parse::<u32>().ok()) else {
+            continue;
+        };
+        if pid == current_pid {
+            continue;
+        }
+        let process = item.path();
+        let comm = match fs::read_to_string(process.join("comm")) {
+            Ok(value) => value.trim().to_ascii_lowercase(),
+            Err(error) if matches!(error.kind(),
+                std::io::ErrorKind::NotFound | std::io::ErrorKind::PermissionDenied) => continue,
+            Err(error) => return Err(error.into()),
+        };
+        if !is_eden_process_name(&comm) {
+            continue;
+        }
+        // A Zombie is a dead task whose /proc/<pid>/comm can linger until the
+        // parent reaps it. A Dead task is also not an active Qt owner.
+        // An unreadable state is conservatively treated as unknown/live.
+        let state = match fs::read_to_string(process.join("status")) {
+            Ok(status) => process_state(&status).map_or_else(|| "?".into(), |s| s.to_string()),
+            Err(error) if error.kind() == std::io::ErrorKind::NotFound => continue,
+            Err(_) => "?".into(),
+        };
+        if matches!(state.as_str(), "Z" | "X" | "x") {
+            continue;
+        }
+        let executable = fs::read_link(process.join("exe"))
+            .ok().map(|path| path.to_string_lossy().into_owned());
+        let command = fs::read(process.join("cmdline")).ok().and_then(|cmd| {
+            let args = cmd.split(|&b| b == 0).filter(|s| !s.is_empty())
+                .take(4)
+                .map(|s| String::from_utf8_lossy(s).into_owned())
+                .collect::<Vec<_>>();
+            (!args.is_empty()).then(|| args.join(" "))
+        });
+        matches.push(EdenProcess {
+            pid, name: comm, state, executable, command,
+        });
+    }
+    matches.sort_by_key(|process| process.pid);
+    Ok(matches)
+}
+
+pub(super) fn eden_process_report() -> Result<Vec<EdenProcess>, ErrBox> {
     #[cfg(target_os = "linux")]
     {
-        for item in fs::read_dir("/proc")? {
-            let item = item?;
-            let pid = item.file_name();
-            if !pid.to_string_lossy().bytes().all(|b| b.is_ascii_digit())
-                || pid.to_string_lossy() == std::process::id().to_string()
-            {
-                continue;
-            }
-            let Ok(comm) = fs::read_to_string(item.path().join("comm")) else {
-                continue;
-            };
-            let proc_name = comm.trim().to_ascii_lowercase();
-            if proc_name == "eden"
-                || proc_name == "eden-qt"
-                || proc_name.starts_with("eden-app")
-                || proc_name.starts_with("eden-emu")
-            {
-                return Err("Close Eden completely before installing cheats; its running settings would overwrite the disabled-by-default configuration".into());
-            }
-        }
+        eden_processes_in(Path::new("/proc"), std::process::id())
+    }
+    #[cfg(not(target_os = "linux"))]
+    {
+        Err("Eden process inspection is supported only on Linux".into())
+    }
+}
+
+fn eden_not_running() -> Result<(), ErrBox> {
+    // Eden rewrites qt-config.ini from in-memory QSettings; live processes
+    // must block all writes to avoid lost settings and accidental activation.
+    let live = eden_process_report()?;
+    if !live.is_empty() {
+        let summary = live.iter()
+            .map(|process| {
+                format!(
+                    "PID {} name={} state={} executable={}",
+                    process.pid,
+                    process.name,
+                    process.state,
+                    process.executable.as_deref().unwrap_or("unknown")
+                )
+            })
+            .collect::<Vec<_>>().join("; ");
+        return Err(format!(
+            "Eden process still active ({summary}). The app window may already be closed. Run --eden-process-report for read-only details; no files or settings changed."
+        ).into());
     }
     Ok(())
 }
