@@ -29,6 +29,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 - [Nintendo GameCube regional member lookup](research/nintendo-gamecube-wiird-member-claims-v1.json) — 375 original WiiRD ZIP member filenames, with NTSC-J/U/PAL regions, original container links and **no** cheat bodies. Search offline with `python3 tools/query_gamecube_wiird_members.py --query GZLE01 --region NTSC-U`. Source filenames do not verify game identity, execution or licensing.
 
 - [Curated games](curated/) — human-friendly cheats grouped by platform and game, including versions and code formats.
+- [Curated Switch games](curated/switch/) — native code variants indexed by exact Build ID, with preserved archive provenance.
 - [Original archives](archive/) — unmodified, attributable imports in their original formats.
 - [Historical Libretro preservation gap](docs/HISTORICAL-LIBRETRO.md) — pinned Emupedia-era byte-overlap audit, rights-limited.
 - [New bulk-source byte gap audit](generated/v1/reports/bulk-scout-exact-byte-gaps.json) — four pinned source inventories compared against all archived originals and existing external metadata, without copying code.
