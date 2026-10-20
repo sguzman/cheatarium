@@ -96,7 +96,11 @@ struct Options {
 }
 impl Options {
     fn defaults() -> Self {
-        Self { root: PathBuf::from("."), limit: 25, ..Self::default() }
+        Self {
+            root: PathBuf::from("."),
+            limit: 25,
+            ..Self::default()
+        }
     }
 }
 
@@ -104,7 +108,9 @@ fn clean_directory(path: &Path) -> Result<bool, ErrBox> {
     match fs::symlink_metadata(path) {
         Ok(meta) => {
             if meta.file_type().is_symlink() {
-                return Err(format!("Curated path must not be a symlink: {}", path.display()).into());
+                return Err(
+                    format!("Curated path must not be a symlink: {}", path.display()).into(),
+                );
             }
             Ok(meta.is_dir())
         }
@@ -129,7 +135,12 @@ fn sorted_directories(path: &Path) -> Result<Vec<PathBuf>, ErrBox> {
 }
 
 fn build_matches(edition: &Edition, requested: Option<&str>) -> bool {
-    requested.is_none_or(|build| edition.build_id.as_deref().is_some_and(|id| id.eq_ignore_ascii_case(build)))
+    requested.is_none_or(|build| {
+        edition
+            .build_id
+            .as_deref()
+            .is_some_and(|id| id.eq_ignore_ascii_case(build))
+    })
 }
 fn includes(haystack: &str, needle: Option<&str>) -> bool {
     needle.is_none_or(|text| haystack.to_lowercase().contains(&text.to_lowercase()))
@@ -142,7 +153,10 @@ fn search(opts: &Options) -> Result<Vec<Match>, ErrBox> {
     }
     let mut results = Vec::new();
     for platform in sorted_directories(&top)? {
-        let platform_id = platform.file_name().and_then(|p| p.to_str()).ok_or("Invalid platform name")?;
+        let platform_id = platform
+            .file_name()
+            .and_then(|p| p.to_str())
+            .ok_or("Invalid platform name")?;
         if opts.platform.as_deref().is_some_and(|p| p != platform_id) {
             continue;
         }
@@ -157,35 +171,57 @@ fn search(opts: &Options) -> Result<Vec<Match>, ErrBox> {
                 return Err(format!("Invalid curated file: {}", file.display()).into());
             }
             let document: CuratedGame = serde_json::from_slice(&fs::read(&file)?)?;
-            if document.schema_version != 1 || document.platform != platform_id ||
-                game_dir.file_name().and_then(|p| p.to_str()) != Some(document.game.id.as_str()) {
+            if document.schema_version != 1
+                || document.platform != platform_id
+                || game_dir.file_name().and_then(|p| p.to_str()) != Some(document.game.id.as_str())
+            {
                 return Err(format!("Curated identity mismatch: {}", file.display()).into());
             }
-            if opts.title_id.as_deref().is_some_and(|tid| document.game.title_id.as_deref() != Some(tid)) {
+            if opts
+                .title_id
+                .as_deref()
+                .is_some_and(|tid| document.game.title_id.as_deref() != Some(tid))
+            {
                 continue;
             }
-            if !includes(&document.game.title, opts.title.as_deref()) && 
-                !includes(&document.game.id, opts.title.as_deref()) {
+            if !includes(&document.game.title, opts.title.as_deref())
+                && !includes(&document.game.id, opts.title.as_deref())
+            {
                 continue;
             }
-            let editions: BTreeMap<&str, &Edition> = document.editions.iter().map(|e| (e.id.as_str(), e)).collect();
+            let editions: BTreeMap<&str, &Edition> = document
+                .editions
+                .iter()
+                .map(|e| (e.id.as_str(), e))
+                .collect();
             if editions.len() != document.editions.len() {
                 return Err(format!("Duplicate curated edition: {}", file.display()).into());
             }
             for cheat in document.cheats {
-                if !includes(&cheat.name, opts.effect.as_deref()) && !includes(&cheat.id, opts.effect.as_deref()) {
+                if !includes(&cheat.name, opts.effect.as_deref())
+                    && !includes(&cheat.id, opts.effect.as_deref())
+                {
                     continue;
                 }
                 for variant in cheat.variants {
                     let edition = editions.get(variant.edition.as_str()).ok_or_else(|| {
                         format!("Unknown edition in curated record {}", file.display())
                     })?;
-                    if !build_matches(edition, opts.build_id.as_deref()) ||
-                        opts.source_id.as_deref().is_some_and(|source| source != variant.source.source) {
+                    if !build_matches(edition, opts.build_id.as_deref())
+                        || opts
+                            .source_id
+                            .as_deref()
+                            .is_some_and(|source| source != variant.source.source)
+                    {
                         continue;
                     }
-                    if !variant.source.archive_path.starts_with("archive/") ||
-                        variant.source.archive_path.split('/').any(|s| s == ".." || s == "." || s.is_empty()) {
+                    if !variant.source.archive_path.starts_with("archive/")
+                        || variant
+                            .source
+                            .archive_path
+                            .split('/')
+                            .any(|s| s == ".." || s == "." || s.is_empty())
+                    {
                         return Err("Unsafe archive reference in curated record".into());
                     }
                     let notes = match (cheat.notes.as_ref(), variant.notes.as_ref()) {
@@ -216,7 +252,6 @@ fn search(opts: &Options) -> Result<Vec<Match>, ErrBox> {
     Ok(results)
 }
 
-
 fn coverage_rows(opts: &Options) -> Result<Vec<serde_json::Value>, ErrBox> {
     if opts.platform.as_deref().is_some_and(|p| p != "switch") {
         return Ok(Vec::new());
@@ -224,7 +259,9 @@ fn coverage_rows(opts: &Options) -> Result<Vec<serde_json::Value>, ErrBox> {
     if opts.source_id.is_some() || opts.with_code {
         return Err("Coverage metadata does not support --source-id or --with-code".into());
     }
-    let file = opts.root.join("research/switch-exact-build-coverage-v1.json");
+    let file = opts
+        .root
+        .join("research/switch-exact-build-coverage-v1.json");
     let meta = fs::symlink_metadata(&file)?;
     if meta.file_type().is_symlink() || !meta.is_file() || meta.len() > MAX_GAME_BYTES {
         return Err("Invalid Switch coverage report file".into());
@@ -234,21 +271,28 @@ fn coverage_rows(opts: &Options) -> Result<Vec<serde_json::Value>, ErrBox> {
         return Err("Unexpected Switch coverage format".into());
     }
     let mut rows = Vec::new();
-    for game in data["games"].as_array().ok_or("Missing Switch coverage games")? {
+    for game in data["games"]
+        .as_array()
+        .ok_or("Missing Switch coverage games")?
+    {
         let game_title = game["title"].as_str().ok_or("Missing game title")?;
         let game_id = game["title_id"].as_str().ok_or("Missing game Title ID")?;
         let game_build = game["build_id"].as_str().ok_or("Missing Build ID")?;
-        if opts.title_id.as_deref().is_some_and(|tid| tid != game_id) ||
-            !(includes(game_title, opts.title.as_deref()) ||
-             includes(game_id, opts.title.as_deref())) ||
-            opts.build_id.as_deref().is_some_and(|b| b != game_build) {
+        if opts.title_id.as_deref().is_some_and(|tid| tid != game_id)
+            || !(includes(game_title, opts.title.as_deref())
+                || includes(game_id, opts.title.as_deref()))
+            || opts.build_id.as_deref().is_some_and(|b| b != game_build)
+        {
             continue;
         }
         for section in game["sections"].as_array().ok_or("Missing section list")? {
-            let heading = section["heading"].as_str().ok_or("Missing source heading")?;
+            let heading = section["heading"]
+                .as_str()
+                .ok_or("Missing source heading")?;
             let state = section["state"].as_str().ok_or("Missing archival state")?;
-            if !includes(heading, opts.effect.as_deref()) ||
-                opts.only_missing && state != "linked_only_no_public_code_body" {
+            if !includes(heading, opts.effect.as_deref())
+                || opts.only_missing && state != "linked_only_no_public_code_body"
+            {
                 continue;
             }
             rows.push(serde_json::json!({
@@ -269,32 +313,43 @@ fn coverage_rows(opts: &Options) -> Result<Vec<serde_json::Value>, ErrBox> {
 fn show_coverage(opts: &Options) -> Result<(), ErrBox> {
     let all = coverage_rows(opts)?;
     let count = all.len();
-    let missing = all.iter().filter(|row|
-        row["state"] == "linked_only_no_public_code_body").count();
+    let missing = all
+        .iter()
+        .filter(|row| row["state"] == "linked_only_no_public_code_body")
+        .count();
     let returned: Vec<_> = all.into_iter().skip(opts.offset).take(opts.limit).collect();
     if opts.json {
-        println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-            "schema": "cheatarium.curated_coverage.v1",
-            "read_only": true,
-            "metadata_only_for_missing_codes": true,
-            "active_emulator_modified": false,
-            "matched_sections": count,
-            "archived_sections": count - missing,
-            "source_only_sections": missing,
-            "offset": opts.offset,
-            "returned": returned.len(),
-            "has_more": opts.offset.saturating_add(returned.len()) < count,
-            "results": returned
-        }))?);
+        println!(
+            "{}",
+            serde_json::to_string_pretty(&serde_json::json!({
+                "schema": "cheatarium.curated_coverage.v1",
+                "read_only": true,
+                "metadata_only_for_missing_codes": true,
+                "active_emulator_modified": false,
+                "matched_sections": count,
+                "archived_sections": count - missing,
+                "source_only_sections": missing,
+                "offset": opts.offset,
+                "returned": returned.len(),
+                "has_more": opts.offset.saturating_add(returned.len()) < count,
+                "results": returned
+            }))?
+        );
     } else {
-        println!("{} exact-build sections: {} archived, {} source-only; none activated",
-            count, count - missing, missing);
+        println!(
+            "{} exact-build sections: {} archived, {} source-only; none activated",
+            count,
+            count - missing,
+            missing
+        );
         for row in returned {
-            println!("{} | {} | {} | {}",
+            println!(
+                "{} | {} | {} | {}",
                 row["game_title"].as_str().unwrap_or("Unknown game"),
                 row["build_id"].as_str().unwrap_or("?"),
                 row["heading"].as_str().unwrap_or("?"),
-                row["state"].as_str().unwrap_or("?"));
+                row["state"].as_str().unwrap_or("?")
+            );
         }
     }
     Ok(())
@@ -304,7 +359,9 @@ pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
     let mut opts = Options::defaults();
     while let Some(arg) = args.next() {
         match arg.as_str() {
-            "--root" => opts.root = PathBuf::from(args.next().ok_or("--root requires a directory")?),
+            "--root" => {
+                opts.root = PathBuf::from(args.next().ok_or("--root requires a directory")?)
+            }
             "--platform" => opts.platform = Some(args.next().ok_or("--platform requires a value")?),
             "--title" => opts.title = Some(args.next().ok_or("--title requires text")?),
             "--title-id" => {
@@ -327,7 +384,9 @@ pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
             "--coverage" => opts.coverage = true,
             "--only-missing" => opts.only_missing = true,
             "--json" => opts.json = true,
-            "--offset" => opts.offset = args.next().ok_or("--offset requires an integer")?.parse()?,
+            "--offset" => {
+                opts.offset = args.next().ok_or("--offset requires an integer")?.parse()?
+            }
             "--limit" => {
                 opts.limit = args.next().ok_or("--limit requires an integer")?.parse()?;
                 if !(1..=200).contains(&opts.limit) {
@@ -349,26 +408,40 @@ pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
     }
     let rows = search(&opts)?;
     let total = rows.len();
-    let result: Vec<_> = rows.into_iter().skip(opts.offset).take(opts.limit).collect();
+    let result: Vec<_> = rows
+        .into_iter()
+        .skip(opts.offset)
+        .take(opts.limit)
+        .collect();
     if opts.json {
-        println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-            "schema": "cheatarium.curated_search.v1",
-            "read_only": true,
-            "source_originals_preserved": true,
-            "gameplay_verified_by_search": false,
-            "active_emulator_modified": false,
-            "code_visible": opts.with_code,
-            "total": total,
-            "offset": opts.offset,
-            "returned": result.len(),
-            "has_more": opts.offset.saturating_add(result.len()) < total,
-            "results": result
-        }))?);
+        println!(
+            "{}",
+            serde_json::to_string_pretty(&serde_json::json!({
+                "schema": "cheatarium.curated_search.v1",
+                "read_only": true,
+                "source_originals_preserved": true,
+                "gameplay_verified_by_search": false,
+                "active_emulator_modified": false,
+                "code_visible": opts.with_code,
+                "total": total,
+                "offset": opts.offset,
+                "returned": result.len(),
+                "has_more": opts.offset.saturating_add(result.len()) < total,
+                "results": result
+            }))?
+        );
     } else {
         println!("{total} curated code variants match; no cheats activated");
         for hit in result {
-            println!("{} | {} | {} | {} [{}] — {}", hit.platform, hit.game_title, 
-                hit.edition.build_id.as_deref().unwrap_or(&hit.edition.id), hit.name, hit.status, hit.provenance.source);
+            println!(
+                "{} | {} | {} | {} [{}] — {}",
+                hit.platform,
+                hit.game_title,
+                hit.edition.build_id.as_deref().unwrap_or(&hit.edition.id),
+                hit.name,
+                hit.status,
+                hit.provenance.source
+            );
             if let Some(code) = hit.code {
                 println!("{code}");
             }
@@ -394,13 +467,23 @@ mod tests {
         };
         let results = search(&opts).expect("repository curated collection");
         assert_eq!(results.len(), 58);
-        assert!(results.iter().all(|r| r.title_id.as_deref() == Some("0100BC0018138000")));
+        assert!(results
+            .iter()
+            .all(|r| r.title_id.as_deref() == Some("0100BC0018138000")));
         assert!(results.iter().all(|r| r.code.is_none()));
         assert!(results.iter().all(|r| r.status == "unverified"));
-        assert!(results.iter().all(|r| r.edition.build_id.as_deref() == Some("E968832CADE2AD7C")));
-        let with_code = search(&Options { with_code: true, ..opts }).unwrap();
+        assert!(results
+            .iter()
+            .all(|r| r.edition.build_id.as_deref() == Some("E968832CADE2AD7C")));
+        let with_code = search(&Options {
+            with_code: true,
+            ..opts
+        })
+        .unwrap();
         assert_eq!(with_code.len(), 58);
-        assert!(with_code.iter().all(|r| r.code.as_deref().is_some_and(|c| !c.is_empty())));
+        assert!(with_code
+            .iter()
+            .all(|r| r.code.as_deref().is_some_and(|c| !c.is_empty())));
     }
     #[test]
     fn prevents_mislabeling_other_game_builds() {
@@ -410,21 +493,33 @@ mod tests {
             title: Some("Mario Kart".into()),
             build_id: Some("E968832CADE2AD7C".into()),
             ..Options::defaults()
-        }).unwrap();
+        })
+        .unwrap();
         assert!(results.is_empty());
     }
 
     #[test]
     fn exact_build_coverage_reports_all_six_games_without_rehosting_code() {
-        let opts = Options { root: repository(), platform: Some("switch".into()),
-            coverage: true, only_missing: true, ..Options::defaults() };
+        let opts = Options {
+            root: repository(),
+            platform: Some("switch".into()),
+            coverage: true,
+            only_missing: true,
+            ..Options::defaults()
+        };
         let rows = coverage_rows(&opts).expect("six-title coverage");
         assert_eq!(rows.len(), 123);
-        assert!(rows.iter().all(|row| row["state"] == "linked_only_no_public_code_body"));
+        assert!(rows
+            .iter()
+            .all(|row| row["state"] == "linked_only_no_public_code_body"));
         let skyward = coverage_rows(&Options {
-            title: Some("Skyward Sword".into()), ..opts
-        }).unwrap();
+            title: Some("Skyward Sword".into()),
+            ..opts
+        })
+        .unwrap();
         assert_eq!(skyward.len(), 47);
-        assert!(skyward.iter().all(|row| row["build_id"] == "D824D4B1BBD45D03"));
+        assert!(skyward
+            .iter()
+            .all(|row| row["build_id"] == "D824D4B1BBD45D03"));
     }
 }
