@@ -197,7 +197,11 @@ pub(super) fn load_exact(
         .iter()
         .find(|entry| entry.build_id == *build_id)
         .map_or(0, |entry| entry.strict_native_hex_sections);
-    if expected != game.static_nsp_observation.pinned_native_cheat_sections_matched {
+    if expected
+        != game
+            .static_nsp_observation
+            .pinned_native_cheat_sections_matched
+    {
         return Err("Pinned native count mismatches static NSP curation".into());
     }
     let path = private_root
@@ -217,19 +221,26 @@ pub(super) fn load_exact(
         if title_id != "01006A800016E000" || build_id != "CBD5A9B56EA859BA" {
             return Err("No pinned exact-build native source for this game".into());
         }
-        let receipt_path = private_root.join(title_id).join(format!("{build_id}.source.json"));
+        let receipt_path = private_root
+            .join(title_id)
+            .join(format!("{build_id}.source.json"));
         regular_file(&receipt_path, 16_384)?;
         let receipt: ExternalReceipt = serde_json::from_slice(&fs::read(receipt_path)?)?;
         let matching = game.exact_build_external_sources.iter().any(|source| {
             source.source_id == receipt.source_id
                 && source.source_url == receipt.source_url
                 && source.build_id == *build_id
-                && matches!(source.source_id.as_str(),
-                    "panda-smash-1302" | "gbatemp-smash-1302-adaptation")
+                && matches!(
+                    source.source_id.as_str(),
+                    "panda-smash-1302" | "gbatemp-smash-1302-adaptation"
+                )
         });
-        if !matching || receipt.format != "cheatarium-private-external-native-source-v1"
-            || receipt.title_id != title_id || receipt.build_id != *build_id
-            || receipt.section_count != 25 || receipt.gameplay_verified
+        if !matching
+            || receipt.format != "cheatarium-private-external-native-source-v1"
+            || receipt.title_id != title_id
+            || receipt.build_id != *build_id
+            || receipt.section_count != 25
+            || receipt.gameplay_verified
             || receipt.body_sha256 != format!("{:x}", Sha256::digest(&payload))
         {
             return Err("External Smash private receipt or native checksum is invalid".into());
@@ -495,7 +506,8 @@ mod tests {
     fn external_smash_receipt_is_bound_to_pinned_source_and_private_bytes() {
         let base = std::env::temp_dir().join(format!(
             "cheatarium-private-external-{}-{:?}",
-            std::process::id(), std::thread::current().id()
+            std::process::id(),
+            std::thread::current().id()
         ));
         let title = "01006A800016E000";
         let build = "CBD5A9B56EA859BA";
@@ -527,7 +539,9 @@ mod tests {
         }
         let bytes = body.as_bytes();
         fs::write(private_root.join(title).join(format!("{build}.txt")), bytes).unwrap();
-        let receipt = private_root.join(title).join(format!("{build}.source.json"));
+        let receipt = private_root
+            .join(title)
+            .join(format!("{build}.source.json"));
         let mut data = serde_json::json!({
             "format": "cheatarium-private-external-native-source-v1",
             "title_id": title, "build_id": build,
@@ -541,10 +555,16 @@ mod tests {
         assert_eq!(exact, build);
         assert_eq!(bundle.records.len(), 1);
         assert_eq!(bundle.records[0].codes.len(), 25);
-        assert_eq!(bundle.records[0].provenance.source_id, "external_smash_private_curated");
+        assert_eq!(
+            bundle.records[0].provenance.source_id,
+            "external_smash_private_curated"
+        );
         let mod_root = base.join("eden/load");
         let preview = super::super::preview_readable(&bundle, title, build, &mod_root).unwrap();
-        assert_eq!(preview.source_filter, "private_exact_static_nsp_native_source");
+        assert_eq!(
+            preview.source_filter,
+            "private_exact_static_nsp_native_source"
+        );
         assert_eq!(preview.proposed_addons.len(), 25);
         assert!(preview.rejected_entries.is_empty());
         assert!(!preview.installation_allowed);
