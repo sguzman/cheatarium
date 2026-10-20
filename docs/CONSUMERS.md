@@ -4,6 +4,20 @@ Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust 
 
 The 58-platform bulk distribution includes PS5-native etaHEN, original PS Vita rinCheat runtime text/save-editor Lua, and complete source-declared PS2 CheatDevice game sections. PS2's 1,483 separately searchable records come from **one original 6.4 MB source file** and retain the same original provenance hash; per-record source IDs include exact original game-section ordinals. The PS2 parser groups contiguous native hexadecimal device-code lines under source labels; code-group counts are not raw line counts, distinct validated effects, or evidence that a code executes. Vita Lua is indexed as inert original source data, never executed. Each imported record remains unverified, and actual game-build compatibility must be established separately.
 
+## Repository-native curated cheat search
+
+The Rust client now reads the human-curated records directly from Cheatarium's `curated/<platform>/<game>/cheats.json`. It does not create a second collection, use Eden, fetch network data, or activate cheats.
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --title "Super Mario RPG" --build-id E968832CADE2AD7C --json
+cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --title "Super Mario RPG" --build-id E968832CADE2AD7C --effect "Inf. HP" --with-code --json
+cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --source-id sharkive --effect "Infinite" --limit 25
+```
+
+Use `--root` for another Cheatarium checkout, `--offset`/`--limit` for pagination, `--title` to match title or game slug, and `--source-id` to restrict source records. By default, results **do not print executable code**; `--with-code` explicitly requests original curated code strings. The results include exact source archive paths, editions and 16-character Switch Build IDs. Matching a Build ID from a curated file is **not** verification against the current running game, and neither indexing nor displaying a cheat means it works.
+
+The [six-game exact-build coverage register](../research/switch-exact-build-coverage-v1.json) separately distinguishes archived bodies from unimported third-party source references. It is metadata, not a replacement for `curated/` entries, nor an emulator installer. Only rights-cleared original source bodies can be added to the public repository.
+
 ## SNES files
 
 - `generated/v1/catalog.json`: the machine-readable console catalog.
