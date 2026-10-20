@@ -228,10 +228,7 @@ def main() -> int:
         try:
             payload = extract(fetch(source_id).decode("utf-8", errors="replace"))
             root = Path.home().resolve(strict=True) / ".local/share/cheatarium/private-switch-curation"
-            result = store(payload, source_id, SOURCE[source_id], root)
-            from private_switch_collection import refresh_collection
-            result["private_collection"] = refresh_collection(root)
-            print(json.dumps(result, indent=2))
+            print(json.dumps(store(payload, source_id, SOURCE[source_id], root), indent=2))
             return 0
         except (OSError, UnicodeError, ValueError) as exc:
             errors.append(f"{source_id}: {exc}")
