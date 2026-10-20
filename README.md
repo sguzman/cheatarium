@@ -8,6 +8,10 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 ## Explore
 
+- **Exact archived Switch cheats:** `cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- native-switch --title-id 0100000000010000 --build-id B424BE150A8E7D78 --json` searches original source sections by Nintendo Title ID and Build ID without activating them. [Documentation](docs/CONSUMERS.md#exact-archived-switch-originals).
+
+- **Human-curated Switch cheats:** `cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --title-id 0100BC0018138000 --build-id E968832CADE2AD7C --json` searches curated effects and provenance. Add `--with-code` to display code bodies, or `--coverage --only-missing` to inspect unarchived exact-build source references. [Documentation](docs/CONSUMERS.md#repository-native-curated-cheat-search).
+
 - **Native Rust Wii Gecko lookup:** `cargo run --locked -q -p cheatarium-client --bin cheatarium-wii-local -- --game-id RUUE01 --json` queries the private 45-group Gecko sidecar without Python or network access during lookup. Exact revision/variant selection and group opt-in are required to reveal code text; nothing is auto-enabled. [Details](docs/CONSUMERS.md#native-rust-consumer-for-the-private-wii-sidecar).
 
 
