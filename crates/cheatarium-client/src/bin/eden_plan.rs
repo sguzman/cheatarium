@@ -911,21 +911,34 @@ fn run() -> Result<(), ErrBox> {
         }
     }
     if eden_process_report {
-        if private_curation || auto || install || stage_dir.is_some() || dry_run
-            || rename_installed || files_only || replace_existing_cheats
-            || title.is_some() || build.is_some() || only_title_id.is_some()
+        if private_curation
+            || auto
+            || install
+            || stage_dir.is_some()
+            || dry_run
+            || rename_installed
+            || files_only
+            || replace_existing_cheats
+            || title.is_some()
+            || build.is_some()
+            || only_title_id.is_some()
         {
-            return Err("--eden-process-report must be used alone; it performs no installation".into());
+            return Err(
+                "--eden-process-report must be used alone; it performs no installation".into(),
+            );
         }
         let processes = eden_install::eden_process_report()?;
-        println!("{}", serde_json::to_string_pretty(&serde_json::json!({
-            "format": "cheatarium-eden-process-report-v1",
-            "read_only": true,
-            "live_eden_processes": processes.len(),
-            "processes": processes,
-            "installation_safe_when_zero": true,
-            "note": "This is only process inspection; it does not prove an installed game Build ID or cheat compatibility."
-        }))?);
+        println!(
+            "{}",
+            serde_json::to_string_pretty(&serde_json::json!({
+                "format": "cheatarium-eden-process-report-v1",
+                "read_only": true,
+                "live_eden_processes": processes.len(),
+                "processes": processes,
+                "installation_safe_when_zero": true,
+                "note": "This is only process inspection; it does not prove an installed game Build ID or cheat compatibility."
+            }))?
+        );
         return Ok(());
     }
     if replace_existing_cheats && (!private_curation || !install || stage_dir.is_some()) {

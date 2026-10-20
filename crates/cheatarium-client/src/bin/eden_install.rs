@@ -102,7 +102,8 @@ fn is_eden_process_name(name: &str) -> bool {
 }
 
 fn process_state(status: &str) -> Option<char> {
-    status.lines()
+    status
+        .lines()
         .find_map(|line| line.strip_prefix("State:"))
         .and_then(|value| value.trim().chars().next())
 }
@@ -122,8 +123,14 @@ fn eden_processes_in(proc_dir: &Path, current_pid: u32) -> Result<Vec<EdenProces
         let process = item.path();
         let comm = match fs::read_to_string(process.join("comm")) {
             Ok(value) => value.trim().to_ascii_lowercase(),
-            Err(error) if matches!(error.kind(),
-                std::io::ErrorKind::NotFound | std::io::ErrorKind::PermissionDenied) => continue,
+            Err(error)
+                if matches!(
+                    error.kind(),
+                    std::io::ErrorKind::NotFound | std::io::ErrorKind::PermissionDenied
+                ) =>
+            {
+                continue
+            }
             Err(error) => return Err(error.into()),
         };
         if !is_eden_process_name(&comm) {
@@ -141,16 +148,23 @@ fn eden_processes_in(proc_dir: &Path, current_pid: u32) -> Result<Vec<EdenProces
             continue;
         }
         let executable = fs::read_link(process.join("exe"))
-            .ok().map(|path| path.to_string_lossy().into_owned());
+            .ok()
+            .map(|path| path.to_string_lossy().into_owned());
         let command = fs::read(process.join("cmdline")).ok().and_then(|cmd| {
-            let args = cmd.split(|&b| b == 0).filter(|s| !s.is_empty())
+            let args = cmd
+                .split(|&b| b == 0)
+                .filter(|s| !s.is_empty())
                 .take(4)
                 .map(|s| String::from_utf8_lossy(s).into_owned())
                 .collect::<Vec<_>>();
             (!args.is_empty()).then(|| args.join(" "))
         });
         matches.push(EdenProcess {
-            pid, name: comm, state, executable, command,
+            pid,
+            name: comm,
+            state,
+            executable,
+            command,
         });
     }
     matches.sort_by_key(|process| process.pid);
@@ -173,7 +187,8 @@ fn eden_not_running() -> Result<(), ErrBox> {
     // must block all writes to avoid lost settings and accidental activation.
     let live = eden_process_report()?;
     if !live.is_empty() {
-        let summary = live.iter()
+        let summary = live
+            .iter()
             .map(|process| {
                 format!(
                     "PID {} name={} state={} executable={}",
@@ -183,7 +198,8 @@ fn eden_not_running() -> Result<(), ErrBox> {
                     process.executable.as_deref().unwrap_or("unknown")
                 )
             })
-            .collect::<Vec<_>>().join("; ");
+            .collect::<Vec<_>>()
+            .join("; ");
         return Err(format!(
             "Eden process still active ({summary}). The app window may already be closed. Run --eden-process-report for read-only details; no files or settings changed."
         ).into());
@@ -1267,7 +1283,10 @@ mod tests {
         assert!(!is_eden_process_name("eden-unrelated"));
         assert!(!is_eden_process_name("cheatarium-eden-plan"));
         assert_eq!(process_state("Name:\teden\\nState:\tZ (zombie)\\n"), None);
-        assert_eq!(process_state("Name:\teden\nState:\tZ (zombie)\n"), Some('Z'));
+        assert_eq!(
+            process_state("Name:\teden\nState:\tZ (zombie)\n"),
+            Some('Z')
+        );
         assert_eq!(process_state("State:\tS (sleeping)\n"), Some('S'));
         assert_eq!(process_state("Name:\teden\n"), None);
     }
@@ -1277,7 +1296,8 @@ mod tests {
     fn mock_proc_ignores_zombies_and_reports_remaining_live_pid() {
         let root = std::env::temp_dir().join(format!(
             "cheatarium-eden-process-test-{}-{:?}",
-            std::process::id(), std::thread::current().id()
+            std::process::id(),
+            std::thread::current().id()
         ));
         fs::create_dir_all(&root).unwrap();
         let zombie = root.join("12345");
