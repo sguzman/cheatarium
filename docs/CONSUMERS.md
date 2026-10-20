@@ -557,6 +557,24 @@ For Skyward Sword HD (`01002DA013484000`), external source collections list at l
 
 
 
+### Sixth curated Switch game: Smash 13.0.2
+
+Smash's **locally extracted static NSP** Build ID is `CBD5A9B56EA859BA`, but the pinned Hamlet dataset has **zero matching native cheat sections**. Panda's attributed post and its GBAtemp 13.0.2 adaptation publish **25 exact-build native code sections**. The public manifest stores source links, not the third-party code bodies.
+
+The on-demand stdlib-only importer tries GBAtemp, then Panda. It rejects redirects, unexpected Title/Build IDs, missing or changed section lists, invalid native hex, oversized pages and conflicting local files. It saves the codes and their source/checksum receipt privately under `~/.local/share/cheatarium/private-switch-curation/01006A800016E000/`. It never writes Eden or the git repository.
+
+```sh
+python3 tools/fetch_smash_private.py
+```
+
+The existing `cheatarium-eden-plan --private-curation` reader accepts the external source only if its local receipt matches the manifest's linked source, exact Build ID, native section count and file SHA-256. Other five games retain the pinned Hamlet source/count validations. With Eden closed, install Smash's add-ons **disabled by default**:
+
+```sh
+cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --private-curation --title-id 01006A800016E000 --install --replace-existing-cheats --json
+```
+
+**Limits:** No runtime Eden executable ID or cheat effects have been verified. This source contains reset alternatives and duplicate functions; 25 sections do not imply 25 independent beneficial effects. Leave add-ons disabled until reviewed individually. A source/network failure leaves Smash uninstalled instead of guessing or fabricating codes.
+
 ### Existing Eden installer: locally staged exact-build cheats
 
 The original source-import pipeline only admitted indexed Sharkive records. The `cheatarium-eden-plan --private-curation` path now adapts the **five locally staged pinned Hamlet code bodies** into the **same existing per-cheat Eden addon preview, isolated staging, and disabled-by-default installer**. The parser validates the exact NSP-derived Build ID and manifest native-section count, requires a bounded regular private file with no symlink ancestors, and rejects malformed hex sections. Source bodies remain local and are not committed to Git.
