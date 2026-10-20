@@ -46,8 +46,11 @@ def archived_candidates(root: Path, game: dict) -> list[dict]:
         raise ValueError(f"Title mismatch in {rel}")
     edition = "build-" + game["build_id"].lower()
     editions = {item["id"]: item for item in document["editions"]}
-    if edition not in editions or editions[edition].get("build_id", "").upper() != game["build_id"]:
-        raise ValueError(f"Missing expected build edition in {rel}")
+    # Other archived Build IDs are real sources but do not cover this one.
+    if edition not in editions:
+        return []
+    if editions[edition].get("build_id", "").upper() != game["build_id"]:
+        raise ValueError(f"Contradictory Build ID in {rel}")
     candidates = []
     for cheat in document["cheats"]:
         for variant in cheat["variants"]:
