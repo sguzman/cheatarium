@@ -22,6 +22,7 @@ on:
       - "tools/test_switch_exact_build_coverage.py"
       - "tools/reconcile_switch_exact_build_coverage.py"
       - "crates/cheatarium-client/src/curated.rs"
+      - "crates/cheatarium-client/src/native_switch.rs"
       - "crates/cheatarium-client/src/main.rs"
       - "research/switch-exact-build-coverage-v1.json"
       - "curated/switch/**"

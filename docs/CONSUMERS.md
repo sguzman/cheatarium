@@ -4,6 +4,17 @@ Cheatarium publishes **read-only**, revision-pinned, compressed JSON and a Rust 
 
 The 58-platform bulk distribution includes PS5-native etaHEN, original PS Vita rinCheat runtime text/save-editor Lua, and complete source-declared PS2 CheatDevice game sections. PS2's 1,483 separately searchable records come from **one original 6.4 MB source file** and retain the same original provenance hash; per-record source IDs include exact original game-section ordinals. The PS2 parser groups contiguous native hexadecimal device-code lines under source labels; code-group counts are not raw line counts, distinct validated effects, or evidence that a code executes. Vita Lua is indexed as inert original source data, never executed. Each imported record remains unverified, and actual game-build compatibility must be established separately.
 
+## Exact archived Switch originals
+
+The existing `generated/v1/switch.json.gz` already contains preserved, attributed native source sections for Switch games beyond those individually reviewed in `curated/`. Find these originals by **exact Nintendo Title ID and Build ID**, without creating another archive:
+
+```sh
+cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- native-switch --title-id 0100000000010000 --build-id B424BE150A8E7D78 --json
+cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- native-switch --title-id 0100000000010000 --build-id B424BE150A8E7D78 --effect "Health" --with-code
+```
+
+This is an **archived-source query**, not per-effect reviewed curation. Source sections stay attached to their original provenance, and --with-code is required to display native code bodies. It does not scan the user's filesystem, fetch third-party material, activate cheats, or infer gameplay compatibility. The `curated` mode below remains the human-oriented catalog.
+
 ## Repository-native curated cheat search
 
 The Rust client now reads the human-curated records directly from Cheatarium's `curated/<platform>/<game>/cheats.json`. It does not create a second collection, use Eden, fetch network data, or activate cheats.
