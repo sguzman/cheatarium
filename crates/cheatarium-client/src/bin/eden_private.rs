@@ -391,8 +391,13 @@ mod tests {
         let backup_root = base.join("private-backups");
         let original_settings = fs::read(&config).unwrap();
         assert!(super::super::eden_install::replace_legacy_private(
-            &bundle, &legacy_plan, &mod_root, &config, &backup_root,
-        ).is_err());
+            &bundle,
+            &legacy_plan,
+            &mod_root,
+            &config,
+            &backup_root,
+        )
+        .is_err());
         assert_eq!(fs::read(&legacy).unwrap(), unchanged_user_mod);
         assert_eq!(fs::read(&config).unwrap(), original_settings);
         // A previously generated readable native-hex cheat with the exact
@@ -401,23 +406,34 @@ mod tests {
         fs::write(&legacy, old_native).unwrap();
         let backup_test = base.join("private-backups");
         let replaced = super::super::eden_install::replace_legacy_private(
-            &bundle, &legacy_plan, &mod_root, &config, &backup_test,
-        ).unwrap();
+            &bundle,
+            &legacy_plan,
+            &mod_root,
+            &config,
+            &backup_test,
+        )
+        .unwrap();
         let result = serde_json::to_value(replaced).unwrap();
         assert_eq!(result["files_replaced"], 1);
         assert_eq!(result["files_created"], 0);
         assert_eq!(result["original_files_backed_up"], 1);
         assert_eq!(result["activation_state"], "disabled_before_install");
-        let backing = std::path::PathBuf::from(
-            result["backup_directory"].as_str().unwrap()
-        ).join("0000-Infinite Health.txt.backup");
+        let backing = std::path::PathBuf::from(result["backup_directory"].as_str().unwrap())
+            .join("0000-Infinite Health.txt.backup");
         assert_eq!(fs::read(backing).unwrap(), old_native);
-        assert_eq!(fs::read_to_string(&legacy).unwrap(),
-            "[Infinite Health]\n04000000 12345678 00000001\n");
+        assert_eq!(
+            fs::read_to_string(&legacy).unwrap(),
+            "[Infinite Health]\n04000000 12345678 00000001\n"
+        );
         assert!(fs::read_to_string(&config).unwrap().contains("1\\disabled"));
         let retry = super::super::eden_install::replace_legacy_private(
-            &bundle, &legacy_plan, &mod_root, &config, &backup_test,
-        ).unwrap();
+            &bundle,
+            &legacy_plan,
+            &mod_root,
+            &config,
+            &backup_test,
+        )
+        .unwrap();
         let repeated = serde_json::to_value(retry).unwrap();
         assert_eq!(repeated["files_replaced"], 0);
         assert_eq!(repeated["files_identical"], 1);

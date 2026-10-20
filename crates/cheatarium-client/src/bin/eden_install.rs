@@ -898,7 +898,9 @@ pub(super) fn default_legacy_backup_dir() -> Result<PathBuf, ErrBox> {
 
 fn backup_parent(path: &Path) -> Result<PathBuf, ErrBox> {
     if !path.is_absolute()
-        || path.components().any(|c| matches!(c, Component::CurDir | Component::ParentDir))
+        || path
+            .components()
+            .any(|c| matches!(c, Component::CurDir | Component::ParentDir))
     {
         return Err("Private backup path must be absolute and normalized".into());
     }
@@ -936,7 +938,9 @@ fn backup_originals(
             for (i, (addon, bytes)) in originals.iter().enumerate() {
                 let destination = dir.join(format!("{i:04}-{addon}.txt.backup"));
                 let mut file = OpenOptions::new()
-                    .write(true).create_new(true).open(&destination)?;
+                    .write(true)
+                    .create_new(true)
+                    .open(&destination)?;
                 #[cfg(unix)]
                 {
                     use std::os::unix::fs::PermissionsExt;
@@ -954,7 +958,8 @@ fn backup_originals(
             return Err(format!(
                 "Unable to complete original mod backups in {}: {e}",
                 dir.display()
-            ).into());
+            )
+            .into());
         }
         return Ok(Some(dir));
     }
@@ -969,32 +974,47 @@ fn legacy_existing_bytes(
     validate_regular_ancestors(directory, false)?;
     let children = fs::read_dir(directory)?.collect::<Result<Vec<_>, _>>()?;
     if children.len() != 1 || children[0].file_name() != "cheats" {
-        return Err("Existing addon is not a simple previously generated cheat-only directory".into());
+        return Err(
+            "Existing addon is not a simple previously generated cheat-only directory".into(),
+        );
     }
     let cheats_dir = directory.join("cheats");
     validate_regular_ancestors(&cheats_dir, false)?;
     let children = fs::read_dir(&cheats_dir)?.collect::<Result<Vec<_>, _>>()?;
     if children.len() != 1 || children[0].path() != cheat_file {
-        return Err("Existing addon has extra files or a different Build ID; refusing replacement".into());
+        return Err(
+            "Existing addon has extra files or a different Build ID; refusing replacement".into(),
+        );
     }
     validate_regular_ancestors(cheat_file, true)?;
     if fs::metadata(cheat_file)?.len() > super::MAX_STAGED_TOTAL_BYTES as u64 {
         return Err("Existing cheat exceeds bounded inspection limit".into());
     }
     let old = fs::read(cheat_file)?;
-    let text = std::str::from_utf8(&old)
-        .map_err(|_| "Existing cheat isn't readable UTF-8 native code")?;
+    let text =
+        std::str::from_utf8(&old).map_err(|_| "Existing cheat isn't readable UTF-8 native code")?;
     if text.lines().next() != Some(expected_header) {
-        return Err("Existing addon heading doesn't match selected Cheatarium cheat; refusing replacement".into());
+        return Err(
+            "Existing addon heading doesn't match selected Cheatarium cheat; refusing replacement"
+                .into(),
+        );
     }
     if !text.lines().skip(1).any(|line| !line.trim().is_empty()) {
         return Err("Existing legacy cheat has no opcode lines".into());
     }
-    if !text.lines().skip(1).filter(|line| !line.trim().is_empty()).all(|line| {
-        let words: Vec<_> = line.split_ascii_whitespace().collect();
-        !words.is_empty() && words.len() <= 5 && words.iter()
-            .all(|w| w.len() == 8 && w.bytes().all(|b| b.is_ascii_hexdigit()))
-    }) {
+    if !text
+        .lines()
+        .skip(1)
+        .filter(|line| !line.trim().is_empty())
+        .all(|line| {
+            let words: Vec<_> = line.split_ascii_whitespace().collect();
+            !words.is_empty()
+                && words.len() <= 5
+                && words
+                    .iter()
+                    .all(|w| w.len() == 8 && w.bytes().all(|b| b.is_ascii_hexdigit()))
+        })
+    {
         return Err("Existing addon isn't in Cheatarium's native-hex legacy format".into());
     }
     Ok(old)
@@ -1049,7 +1069,9 @@ pub(super) fn replace_legacy_private(
         let old = match fs::symlink_metadata(&directory) {
             Ok(_) => {
                 let header = std::str::from_utf8(bytes)?
-                    .lines().next().ok_or("Empty prepared private cheat")?;
+                    .lines()
+                    .next()
+                    .ok_or("Empty prepared private cheat")?;
                 Some(legacy_existing_bytes(&directory, &file, header)?)
             }
             Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
@@ -1090,18 +1112,26 @@ pub(super) fn replace_legacy_private(
             }
             Some(previous) => {
                 let dir = title_dir.join(&addon);
-                let header = std::str::from_utf8(&previous)?.lines().next()
-                    .ok_or("Empty legacy cheat")?.to_owned();
+                let header = std::str::from_utf8(&previous)?
+                    .lines()
+                    .next()
+                    .ok_or("Empty legacy cheat")?
+                    .to_owned();
                 if legacy_existing_bytes(&dir, &path, &header)? != previous {
                     return Err(format!(
                         "Legacy addon changed after backup; originals are preserved at {:?}",
                         backed_up
-                    ).into());
+                    )
+                    .into());
                 }
                 let temp = path.with_file_name(format!(
-                    ".{build}.cheatarium-replace-{}-{i}.tmp", std::process::id()
+                    ".{build}.cheatarium-replace-{}-{i}.tmp",
+                    std::process::id()
                 ));
-                let mut writer = OpenOptions::new().write(true).create_new(true).open(&temp)?;
+                let mut writer = OpenOptions::new()
+                    .write(true)
+                    .create_new(true)
+                    .open(&temp)?;
                 #[cfg(unix)]
                 {
                     use std::os::unix::fs::PermissionsExt;
