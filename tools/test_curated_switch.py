@@ -64,7 +64,14 @@ class SwitchCurationTests(unittest.TestCase):
                         section = (cheat["name"], tuple(variant["code"].splitlines()))
                         self.assertIn(section, archived[rel], f"{cheat['name']} not in {rel}")
                         total += 1
-        self.assertGreaterEqual(total, 200)
+        self.assertGreaterEqual(total, 300)
+        rpg = json.loads((ROOT / "curated/switch/super-mario-rpg/cheats.json").read_text(encoding="utf-8"))
+        v0 = [
+            variant for cheat in rpg["cheats"] for variant in cheat["variants"]
+            if variant["edition"] == "build-e968832cade2ad7c"
+        ]
+        self.assertEqual(len(v0), 58)
+        self.assertTrue(all(v["status"] == "unverified" for v in v0))
 
 
 if __name__ == "__main__":
