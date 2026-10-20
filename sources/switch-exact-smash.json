@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "switch-exact-smash",
+  "repository": "https://gbatemp.net/threads/super-smash-bros-ultimate-tid-01006a800016e000-bid-b9b166df1db90baf-v-13-0-1.608055/",
+  "snapshot_commit": "a1e3e2d165f38c97b90d3880e302972e74d8e0262f384c9ca303fe952a2de452",
+  "license": "unresolved-independent-contributor-rights",
+  "rights_status": "redistribution_rights_unverified",
+  "archive_prefix": "archive/switch-exact-smash/",
+  "source_format": "strict-native-text-extracted-from-pinned-source",
+  "note": "Preserved local native-code extraction; file Git blob hashes identify these exact bytes and are not upstream JSON Git blob hashes.",
+  "files": [
+    {
+      "upstream_path": "01006A800016E000/CBD5A9B56EA859BA.txt",
+      "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+      "git_blob_sha": "515c043a85d827261c396df51ecff3d0c9bb998f",
+      "source_url": "https://gbatemp.net/threads/super-smash-bros-ultimate-tid-01006a800016e000-bid-b9b166df1db90baf-v-13-0-1.608055/",
+      "source_label": "gbatemp-smash-1302-adaptation",
+      "source_body_sha256": "a1e3e2d165f38c97b90d3880e302972e74d8e0262f384c9ca303fe952a2de452",
+      "native_section_count": 25
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "switch-exact-hamlet",
+  "repository": "https://github.com/HamletDuFromage/switch-cheats-db",
+  "snapshot_commit": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+  "license": "unresolved-independent-contributor-rights",
+  "rights_status": "redistribution_rights_unverified",
+  "archive_prefix": "archive/switch-exact-hamlet/",
+  "source_format": "strict-native-text-extracted-from-pinned-source",
+  "note": "Preserved local native-code extraction; file Git blob hashes identify these exact bytes and are not upstream JSON Git blob hashes.",
+  "files": [
+    {
+      "upstream_path": "0100000000010000/B424BE150A8E7D78.txt",
+      "archive_path": "archive/switch-exact-hamlet/0100000000010000/B424BE150A8E7D78.txt",
+      "git_blob_sha": "ca989b6027a71e1b13a1ce74bfa6deedaec6bfd8",
+      "source_url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100000000010000.json",
+      "source_label": "pinned-hamlet-native-extract",
+      "source_body_sha256": "45059604a9b91ce64c74f0dd80059c65f01ac1ca977d9919960bf88dd5a1b43c",
+      "native_section_count": 9
+    },
+    {
+      "upstream_path": "0100152000022000/96DFD1769E560C27.txt",
+      "archive_path": "archive/switch-exact-hamlet/0100152000022000/96DFD1769E560C27.txt",
+      "git_blob_sha": "848e79658dd5f92e55707a4b8ee5c72a7f32fcd5",
+      "source_url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100152000022000.json",
+      "source_label": "pinned-hamlet-native-extract",
+      "source_body_sha256": "9028b5c5ce0b995ff112980b78f82c14ed51885019e66b66deef0a3ceebdea20",
+      "native_section_count": 2
+    },
+    {
+      "upstream_path": "01002DA013484000/D824D4B1BBD45D03.txt",
+      "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+      "git_blob_sha": "4366236649ace527918d73a76674caede8de14ff",
+      "source_url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01002DA013484000.json",
+      "source_label": "pinned-hamlet-native-extract",
+      "source_body_sha256": "c4e8b3f71d352dcb6e5f302b3271f9248b36bd771d6e6486e7fc9232625bf89c",
+      "native_section_count": 47
+    },
+    {
+      "upstream_path": "01006BB00C6F0000/AE16F71E002AF8CB.txt",
+      "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+      "git_blob_sha": "256d1baba376af2056f30b90a0d6463eadbb6f0f",
+      "source_url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006BB00C6F0000.json",
+      "source_label": "pinned-hamlet-native-extract",
+      "source_body_sha256": "85a41451206079c294bc5068dfb14b9aad38c47a927584a5acf91039cdb1af14",
+      "native_section_count": 38
+    },
+    {
+      "upstream_path": "0100BC0018138000/E968832CADE2AD7C.txt",
+      "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+      "git_blob_sha": "3840afcd1b5c3472b85ae32ece4d863c441aafbe",
+      "source_url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100BC0018138000.json",
+      "source_label": "pinned-hamlet-native-extract",
+      "source_body_sha256": "92b3c516c4cc95a517ec962ca1acc7ac5dda2d3525a54a7b69ad56f90617d7c2",
+      "native_section_count": 53
+    }
+  ]
+}

@@ -848,6 +848,168 @@
           }
         }
       ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-001",
+      "name": "Infinite / Max Hearts",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC0764 00000050",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-006",
+      "name": "Have 3/4 Hearts (Press ZL+ZR)",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "80000300 01000000 01CC0770 0000000F\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-007",
+      "name": "Have Map/Compass/Nightmare Key/Stone Beak",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CBB301 0000000F\n01000000 01CBB311 0000000F\n01000000 01CBB321 0000000F\n01000000 01CBB331 0000000F\n01000000 01CBB341 0000000F\n01000000 01CBB351 0000000F\n01000000 01CBB361 0000000F\n01000000 01CBB371 0000000F\n01000000 01CBB381 0000000F\n01000000 01CBB3A1 0000000F\n01000000 01CBB3C1 0000000F\n01000000 01CBB3E1 0000000F\n01000000 01CBB421 0000000F",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-008",
+      "name": "Infinite Small Keys",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CBB300 00000001\n01000000 01CBB310 00000001\n01000000 01CBB320 00000001\n01000000 01CBB330 00000001\n01000000 01CBB340 00000001\n01000000 01CBB350 00000001\n01000000 01CBB360 00000001\n01000000 01CBB370 00000001\n01000000 01CBB380 00000001\n01000000 01CBB3A0 00000001\n01000000 01CBB3C0 00000001\n01000000 01CBB3E0 00000001\n01000000 01CBB420 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-034",
+      "name": "0 Retries death counter",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "01000000 01CC05A4 00000000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-035",
+      "name": "High Jump (ZL)",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "80000100\n580F0000 01CC8B50\n580F1000 00001528\n580F1000 00000928\n580F1000 00000018\n780F0000 000000C8\n640F0000 00000000 C1800000\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-036",
+      "name": "Invincible",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 01CC8B50\n580F1000 000014C0\n580F1000 00001710\n780F0000 000007F0\n640F0000 00000000 40000000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-037",
+      "name": "Invincible On",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00D4C690 D65F03C0",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-ae16f71e002af8cb-038",
+      "name": "Invincible Off",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-ae16f71e002af8cb",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00D4C690 D10143FF",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-hamlet",
+            "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt"
+          }
+        }
+      ]
     }
   ]
 }

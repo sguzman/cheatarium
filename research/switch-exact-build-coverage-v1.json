@@ -8,8 +8,8 @@
   "counts": {
     "games": 6,
     "source_sections": 174,
-    "archived_exact_sections": 51,
-    "linked_only_sections": 123
+    "archived_exact_sections": 174,
+    "linked_only_sections": 0
   },
   "games": [
     {
@@ -24,8 +24,8 @@
         "rights_state": "redistribution_not_cleared"
       },
       "section_count": 9,
-      "archived_exact_section_count": 4,
-      "missing_body_count": 5,
+      "archived_exact_section_count": 9,
+      "missing_body_count": 0,
       "sections": [
         {
           "ordinal": 1,
@@ -62,41 +62,41 @@
         {
           "ordinal": 5,
           "heading": "[01# Moonjump (press B)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-b424be150a8e7d78-005",
+          "archive_path": "archive/switch-exact-hamlet/0100000000010000/B424BE150A8E7D78.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "72b251fcd52c4ef8b3a938a10f491186f49a70f553bd2ffd3fc5b18198903585"
         },
         {
           "ordinal": 6,
           "heading": "[Super Mario Odyssey Ultrawidescreen 21.9]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-b424be150a8e7d78-006",
+          "archive_path": "archive/switch-exact-hamlet/0100000000010000/B424BE150A8E7D78.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "472b4f22d0599fec31227fdf1bd2320d9d0408ad46a974d8c77e342ed4390153"
         },
         {
           "ordinal": 7,
           "heading": "[inf health L disable ]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-b424be150a8e7d78-007",
+          "archive_path": "archive/switch-exact-hamlet/0100000000010000/B424BE150A8E7D78.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "eb33a72e28a66bea1125ec0c0c9780a5a0270fb88cdc3843aef5551408b661b8"
         },
         {
           "ordinal": 8,
           "heading": "[ invicible]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-b424be150a8e7d78-008",
+          "archive_path": "archive/switch-exact-hamlet/0100000000010000/B424BE150A8E7D78.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "ce3d3b9b32e8bab734409ee7033ab2cf5dbdcb5b869c7c1e18074267d5af626f"
         },
         {
           "ordinal": 9,
           "heading": "[Screenshot Mode GFX]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-b424be150a8e7d78-009",
+          "archive_path": "archive/switch-exact-hamlet/0100000000010000/B424BE150A8E7D78.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "ecf71d3fa33eb7a2b466a904a1d317cd94018b4484e0d9d53fec8591195f1f07"
         }
       ]
@@ -146,383 +146,383 @@
         "rights_state": "redistribution_not_cleared"
       },
       "section_count": 47,
-      "archived_exact_section_count": 0,
-      "missing_body_count": 47,
+      "archived_exact_section_count": 47,
+      "missing_body_count": 0,
       "sections": [
         {
           "ordinal": 1,
           "heading": "[Infinite Stamina]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-001",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "a508348ca6dbc1a8dc411ca3332fcab1624c77322cb80a645ed3d23e2974a535"
         },
         {
           "ordinal": 2,
           "heading": "[Infinite Hearts (80)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-002",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "c90bdd9ede4aa10fd60869c271d5034002ca8b2fdba1d4cce508d9e16e7157bd"
         },
         {
           "ordinal": 3,
           "heading": "[Infinite Rupees (300)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-003",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "528d621e222517c4125b86e52a06d5cb91f2d954c64c0de65c18c5bf3041a072"
         },
         {
           "ordinal": 4,
           "heading": "[Infinite Spiral Charges (3)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-004",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "6045d33a0e1e4394689aa181ca69c6f485466b0e97c756f9701133206bf4d3de"
         },
         {
           "ordinal": 5,
           "heading": "[1p hit range on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-005",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "25fce38b11a403197d46ffe93f115af778bef9023f7f5cc4aed86de6ce1e8849"
         },
         {
           "ordinal": 6,
           "heading": "[1p hit range off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-006",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "456bf4c8c6e035f6236219fc3fb227e3fbb456649ae0dbfa252cf8ea54d1d19e"
         },
         {
           "ordinal": 7,
           "heading": "[Max Rupees]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-007",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "abff80a65373ec96fd6fd6244cb4b06c22ab55077c5ac115cd0b04615f78c91b"
         },
         {
           "ordinal": 8,
           "heading": "[Max Heart]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-008",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "d9046479dd89f8213ec158d5ceb166e25fa3adc4a9159f1f71a424c8315fbcbb"
         },
         {
           "ordinal": 9,
           "heading": "[Inf Spiral]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-009",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "526a4cb3bd637330b93aa901f35edb926d8aa2e7ad741011300a0e4d8da28060"
         },
         {
           "ordinal": 10,
           "heading": "[Inf SP]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-010",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "4a3d69b05c9071e44aa632a4e64c868fddfc284a9898ee8b361dc9cdce495984"
         },
         {
           "ordinal": 11,
           "heading": "[Lightning Skyward Sword]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-011",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "cdb964c2b1d1374c408a84efd5d4433b6c5dbc6f78ff17a10f93f10dffc11aff"
         },
         {
           "ordinal": 12,
           "heading": "[Lightning Skyward Sword with sound]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-012",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "d63fa9a4fbdd8476f34c2855d8d479b18a2ea4c6ac78bf121097ef00481d4c8e"
         },
         {
           "ordinal": 13,
           "heading": "[Inf Beetle Flying Time]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-013",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "5f1b9d8fff7910b5c0f30da83d767e5246464268e1b205f84aa0b85c79bb8cda"
         },
         {
           "ordinal": 14,
           "heading": "[All items]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-014",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "da22ae6ec9efd5f7803e67760387184dab919150d0837b9d47f38cb196e590d0"
         },
         {
           "ordinal": 15,
           "heading": "[o Infinite Loftwing Charge]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-015",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "b53b427dea6746c48dc9e87f71e83b64df28973147307237a8d638e20a3c511d"
         },
         {
           "ordinal": 16,
           "heading": "[= Have Shield / Infinite Durability]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-016",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "afb0307d312cda97726a5f8eaed6a68be64c0d512a18e2d1744a14b9a65d1458"
         },
         {
           "ordinal": 17,
           "heading": "[    o Wooden Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-017",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "42a46c1aa3723e8aea58e3b1a407c2fccf62bcb911fc1afd2127b621f7714e36"
         },
         {
           "ordinal": 18,
           "heading": "[    o Banded Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-018",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "d1f7de44d4a8d3e252de8f519e85cf3375daf56097d4aa0e563cf9b8470fb07c"
         },
         {
           "ordinal": 19,
           "heading": "[    o Braced Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-019",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "8e5dc8e5d44f2006172fdd60edc435e71c17a5b1271217a50e07e36593ea85bd"
         },
         {
           "ordinal": 20,
           "heading": "[    o Iron Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-020",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "24e3f7a5908e1fc55a29853e3986ec07879447bf43173f757209d0422a869d44"
         },
         {
           "ordinal": 21,
           "heading": "[    o Reinforced Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-021",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "bfd651f6296461e10e0533708d6d713f85fdba95e5dc4f16336840289d67a4a0"
         },
         {
           "ordinal": 22,
           "heading": "[    o Fortified Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-022",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "39e33321bd43a21ba59d95a71331ecd6e13c0d6bcfbaec937259094a29a01ef2"
         },
         {
           "ordinal": 23,
           "heading": "[    o Sacred Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-023",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "9b1246e4f7bb1ac93505e18eaa6a1893ff4f670b20f9fbb272378396fe977f91"
         },
         {
           "ordinal": 24,
           "heading": "[    o Divine Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-024",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "0a502a6372a129d38fd6a9764c4b29bcf5141a89179dd4569e20d09d481905c5"
         },
         {
           "ordinal": 25,
           "heading": "[    o Goddess Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-025",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "d842dfc2dfe23ede2cef1bf80ee2c1039b17e2d755b0342f6f9c0759846cfa2d"
         },
         {
           "ordinal": 26,
           "heading": "[    o Hylian Shield]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-026",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "a2c515e9074f725c614e0b6aa4e2835355240ae651fd58bf6a8d3ce0cb41e632"
         },
         {
           "ordinal": 27,
           "heading": "[Jump(ZR)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-027",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "273c8dd5c545a65a732d64709c05739f757f55f9119d5942877d537485c41dce"
         },
         {
           "ordinal": 28,
           "heading": "[Automatic Speed(R+L)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-028",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "284ea251ab2ccccb7df491afb3e4b945d988ee3657976ae872b7057375573797"
         },
         {
           "ordinal": 29,
           "heading": "[1p inf heath]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-029",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "ed70ee858d97796df0de66f57577758dfb7673a36aeef12ad20d27c895250ed4"
         },
         {
           "ordinal": 30,
           "heading": "[1p speed move normal]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-030",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "565bf2655035313cb209e9a755e6c128ca0ec759a2a5de3125457abbe07c2449"
         },
         {
           "ordinal": 31,
           "heading": "[1p speed move 1.25x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-031",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "f41db6a8256de97be374429557070ba701d1e1a61d2d5796573fe512b0969db3"
         },
         {
           "ordinal": 32,
           "heading": "[1p speed move 1.5x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-032",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "f4aac8da0abbfc649ef76ba43295425683fed20422edf67edd0c922460b7c1ff"
         },
         {
           "ordinal": 33,
           "heading": "[1p speed move 2x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-033",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "34cff34481aad4244a90688dd37137f49e3d668fae5335fbcd81dbde8df6e00f"
         },
         {
           "ordinal": 34,
           "heading": "[1p speed run normal]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-034",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "66b283147dcd939176f1287b264f24f2bc3be2f36bace822f46b981761ad6db6"
         },
         {
           "ordinal": 35,
           "heading": "[1p speed run 1.25x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-035",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "4bff2f53e8d529dded3e35bcd2c66b78e8406f28b3a92c20c4b1f11818938285"
         },
         {
           "ordinal": 36,
           "heading": "[1p speed run 1.5x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-036",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "7d1c3edd1d085f511a05f4f674c8b02534310e86f66bfc9860f285edbffb18b7"
         },
         {
           "ordinal": 37,
           "heading": "[1p speed run 2x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-037",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "0ffcd154aa4edb6316f931e85c169eb92a3de8aaed21bf9d8db63af1ae6f31bf"
         },
         {
           "ordinal": 38,
           "heading": "[speed game normal]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-038",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "fb19250787f584ebddb1a79c7c0b9b4836291d67d1d290035f4b5969d608c2d2"
         },
         {
           "ordinal": 39,
           "heading": "[speed game 1.25x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-039",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "fecf773bb8e38f23f8ebac6809b466624c59381d392d1bfe627063e8d5af0347"
         },
         {
           "ordinal": 40,
           "heading": "[speed game 1.5x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-040",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "c6d63360b8614923199596a007d816bcd297250fa08fef7d769791708720ea7c"
         },
         {
           "ordinal": 41,
           "heading": "[speed game 1.75x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-041",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "38b22141e5562de47c8d29289e2ea3842a9081f3db30f21a717aedc2b10825da"
         },
         {
           "ordinal": 42,
           "heading": "[speed game 2x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-042",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "54dae4d288b0e402e053b2a0448496203f899e1f497a791d52a49af61cf1fd3e"
         },
         {
           "ordinal": 43,
           "heading": "[*Moonjump Y Jericoss]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-043",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "642b8a5b4d4dd5ca06e335ab86f1f1b562759b2a3a101b85e52f74d268051411"
         },
         {
           "ordinal": 44,
           "heading": "[*Speed R ]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-044",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "059bb8f13dd985bb0e3b0923018d76adefdf5be0bf15b07224a00054c4d4003c"
         },
         {
           "ordinal": 45,
           "heading": "[get 9999 ruby+ get itens max on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-045",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "52a8ee6ee87a20b8cfc672b82da23c281b4296aeb451e74fb598de6c32d58bb1"
         },
         {
           "ordinal": 46,
           "heading": "[get 9999 ruby+ get itens max off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-046",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "a614f060efc661b51cd60924c4c8d6f4e539692fd46cb2edb6149de40a7017fe"
         },
         {
           "ordinal": 47,
           "heading": "[Moonjump L+A]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-d824d4b1bbd45d03-047",
+          "archive_path": "archive/switch-exact-hamlet/01002DA013484000/D824D4B1BBD45D03.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "62e3756e37492f9d54a96f99b6eaae6bb260b6ca8b3233004ecd57e899a750b8"
         }
       ]
@@ -550,183 +550,208 @@
         "source_body_archived": false
       },
       "section_count": 25,
-      "archived_exact_section_count": 0,
-      "missing_body_count": 25,
+      "archived_exact_section_count": 25,
+      "missing_body_count": 0,
       "sections": [
         {
           "ordinal": 1,
           "heading": "[1p invincible]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-001",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "ddd820255280389cb47d0dabdead47c3747791c1a17340a86a3dd4de2f9aeee6"
         },
         {
           "ordinal": 2,
           "heading": "[1p invincible off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-002",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "ec796e89b8a5e926b09f90ca41fa8e98398ef06a9bb6f4427332c5048f29b0d1"
         },
         {
           "ordinal": 3,
           "heading": "[cpu no move]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-003",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "f7007e8824ac7918076c953dfbe118beb6cbc41396bdeb6c4e8868d8706c6613"
         },
         {
           "ordinal": 4,
           "heading": "[cpu no move off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-004",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "0a9d160106a6baadb955de4c2a16ecd1df6559677fe522664c9baeb4ab327f0f"
         },
         {
           "ordinal": 5,
           "heading": "[hitkill on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-005",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "f01b6d922a22ce4e1c772c2dc040da42fdb14a374f0e6c72ca276142dfbf7a42"
         },
         {
           "ordinal": 6,
           "heading": "[hitkill off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-006",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "2886e8c1d2fa4a1a3cbfb8232ea3214e0f5e4bc1c2c6d32f25535a0b080c38b5"
         },
         {
           "ordinal": 7,
           "heading": "[run+speed normal]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-007",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "e4f076a1fbc5a9db593b279d80243abeed6e29045e79ebbf16d01375ad02a4e9"
         },
         {
           "ordinal": 8,
           "heading": "[run+speed 1.25x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-008",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "6d51e495e3bff0be0cd09659d22534da6f4594941b30a188ed70405ed7da8ec7"
         },
         {
           "ordinal": 9,
           "heading": "[run+speed 1.5x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-009",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "8be422d80d86f3d4e429fd191c1429e3a290ca1edf1127b4ef18cce0e5215a46"
         },
         {
           "ordinal": 10,
           "heading": "[run+speed 1.75x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-010",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "3f2199ad70cbcab96a59579a818b320b7f1534c2779f0ffd68eab3d8eda189a3"
         },
         {
           "ordinal": 11,
           "heading": "[run+speed 2x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-011",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "aff14b6d68c560bb298a56a38c2ed869104877de37a081dbf3b252770675a802"
         },
         {
           "ordinal": 12,
           "heading": "[jump up normal]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-012",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "a81953c64a940633ab67db9a37c0ea08c3c090d12fad07eaa324f6c379f34b30"
         },
         {
           "ordinal": 13,
           "heading": "[jump up 1.25x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-013",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "f90d0df5c65e31992fa6193fe7f837a77fe3f56dfa01f85a02a46a3f059491d0"
         },
         {
           "ordinal": 14,
           "heading": "[jump up 1.5x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-014",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "757079a375d49bb63ad81707be11152d3020479742920c9ae5f2aa612187a68d"
         },
         {
           "ordinal": 15,
           "heading": "[jump up 1.75x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-015",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "8d96564430e6ed07dbcf7cef6496c8e686169d7ced5d4fa5aec13ca6b83a4f50"
         },
         {
           "ordinal": 16,
           "heading": "[jump up 2x]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-016",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "f893dc6eadc3f782c8f4a7e2c8f7a0e0ce7ed6657368733e37523f0938395f25"
         },
         {
           "ordinal": 17,
           "heading": "[999.0 damager on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-017",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "0f7469de7acdaa1962e1cadaeb04bcaca9762e8d20b67e5260a7e1c2855cb9f3"
         },
         {
           "ordinal": 18,
           "heading": "[999.0 damager off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-018",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "95e3e9c00e5be8def8322acba68fc608cb27e441213d61bff3e91eb9749da694"
         },
         {
           "ordinal": 19,
           "heading": "[god mode on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-001",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "ddd820255280389cb47d0dabdead47c3747791c1a17340a86a3dd4de2f9aeee6"
         },
         {
           "ordinal": 20,
           "heading": "[god mode off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-002",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "ec796e89b8a5e926b09f90ca41fa8e98398ef06a9bb6f4427332c5048f29b0d1"
         },
         {
           "ordinal": 21,
           "heading": "[1 hit kill on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-005",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "f01b6d922a22ce4e1c772c2dc040da42fdb14a374f0e6c72ca276142dfbf7a42"
         },
         {
           "ordinal": 22,
           "heading": "[1 hit kill off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-006",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "2886e8c1d2fa4a1a3cbfb8232ea3214e0f5e4bc1c2c6d32f25535a0b080c38b5"
         },
         {
           "ordinal": 23,
           "heading": "[999999d money on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-023",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "913f5badd5dbdb7014c050ba5f16c3fe91099f0e63bf582815304d09415819cc"
         },
         {
           "ordinal": 24,
           "heading": "[999999d money off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-024",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "d2dc307d1619feba645c301529ae2b718eab4e81d55c1bc14025d8d091fa8875"
         },
         {
           "ordinal": 25,
           "heading": "[boss no move]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body"
+          "curated_cheat_id": "exact-cbd5a9b56ea859ba-025",
+          "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt",
+          "state": "archived_code_exact_match",
+          "source_code_sha256": "5a7e174e94cfbcb1ab242755be65f7f2cc87fbebb57073bc08e20990832927c8"
         }
       ]
     },
@@ -742,15 +767,15 @@
         "rights_state": "redistribution_not_cleared"
       },
       "section_count": 38,
-      "archived_exact_section_count": 29,
-      "missing_body_count": 9,
+      "archived_exact_section_count": 38,
+      "missing_body_count": 0,
       "sections": [
         {
           "ordinal": 1,
           "heading": "[Infinite / Max Hearts]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-001",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "60b394e53dc7f460efa68bc1497f11785fdc15e4e0ae71e9479083b7b80aca6e"
         },
         {
@@ -788,25 +813,25 @@
         {
           "ordinal": 6,
           "heading": "[Have 3/4 Hearts (Press ZL+ZR)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-006",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "8708ad58890fdd6dc748c5043dbdb4ed19d722a487ecc9c045a92a14bcc40c86"
         },
         {
           "ordinal": 7,
           "heading": "[Have Map/Compass/Nightmare Key/Stone Beak]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-007",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "e43fe5394367833e13aeb182020cb29b5c4fde996a691ec95eb0923e079cd3ba"
         },
         {
           "ordinal": 8,
           "heading": "[Infinite Small Keys]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-008",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "c6c35b6a20570492af7790edf34717f808e3bd9dc58fe3fd093458de8ca1dbab"
         },
         {
@@ -1012,41 +1037,41 @@
         {
           "ordinal": 34,
           "heading": "[0 Retries death counter]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-034",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "bd0464a891ffc169ff5c1754c9b9aaddddf706db9e8df1dcd5f833a74553b364"
         },
         {
           "ordinal": 35,
           "heading": "[High Jump (ZL) ]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-035",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "1c9acbcdd2dd7bc70f4fc3a1efea010c449b9de4bb57e8f63523fb9767ecce9e"
         },
         {
           "ordinal": 36,
           "heading": "[Invincible]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-036",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "15fabb7a568b99fbdf86a69847ab2b545f9922c9a061bfaffe07ce4f5a4e6090"
         },
         {
           "ordinal": 37,
           "heading": "[Invincible On]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-037",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "f49379ed5078432f36ed448c5796bf324619f105a7193d19b015fa7e75167db9"
         },
         {
           "ordinal": 38,
           "heading": "[Invincible Off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-ae16f71e002af8cb-038",
+          "archive_path": "archive/switch-exact-hamlet/01006BB00C6F0000/AE16F71E002AF8CB.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "9e4269e0f04478e27a06ddf754614a2abd112bb8b6aec07c870442521629d803"
         }
       ]
@@ -1063,23 +1088,23 @@
         "rights_state": "redistribution_not_cleared"
       },
       "section_count": 53,
-      "archived_exact_section_count": 16,
-      "missing_body_count": 37,
+      "archived_exact_section_count": 53,
+      "missing_body_count": 0,
       "sections": [
         {
           "ordinal": 1,
           "heading": "[Restore Code (Use after unchecking any cheats below)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-001",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "390499a3a625db94aebb870d62b3a95ea7591e33663dbc5bd32991f828a6687a"
         },
         {
           "ordinal": 2,
           "heading": "[♯ 1. Inf. HP]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-002",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "690837fef158de9cbc18f0e8d12b97eb97258a2506ab5f4b9f8d3107ece3bdfa"
         },
         {
@@ -1101,169 +1126,169 @@
         {
           "ordinal": 5,
           "heading": "[♯ 4a XP Multiplier (2x) ★]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-005",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "69567e6ae43f19596575301e9f7f2c6366d360bf82c6fd6edcfbcac7878ce826"
         },
         {
           "ordinal": 6,
           "heading": "[♯ 4b XP Multiplier (4x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-006",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "fd6a923bd9b55db90d0162afdf306400758dbdbdf8c657c25a949dcbe87216f6"
         },
         {
           "ordinal": 7,
           "heading": "[♯ 4c XP Multiplier (8x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-007",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "dff21c4d68031749266bc9cc911764b07fd118a7aa7530e5067594466951cf15"
         },
         {
           "ordinal": 8,
           "heading": "[♯ 5a Coin Multiplier (2x) ★]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-008",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "935be07f8f2f0f840bfab51f23c66a3de7d02470e59a90aa96f290da4beb7866"
         },
         {
           "ordinal": 9,
           "heading": "[♯ 5b Coin Multiplier (4x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-009",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "6864b9164d7fb58d8bc6e669a7a566915444b53b23164a39fb380095d2873d21"
         },
         {
           "ordinal": 10,
           "heading": "[♯ 5c Coin Multiplier (8x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-010",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "4c1cfea5e0bbe2db4a085e1d08c8ffc609f664b1d21f2321a84378bd1e0a340a"
         },
         {
           "ordinal": 11,
           "heading": "[♯ 6a Frog Coin Multiplier (2x) ★]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-011",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "3e14bc147ca35b99c31e4ff7d12dfdb166bcf697174da402d83840363e6bc90f"
         },
         {
           "ordinal": 12,
           "heading": "[♯ 6b FrogCoin Multiplier (4x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-012",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "60467e30a14a15e4693d1819ab5f37039ee76c2e25a647d9cc862666f3fd9a09"
         },
         {
           "ordinal": 13,
           "heading": "[♯ 6c Frog Coin Multiplier (8x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-013",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "7e4a3cbb005aec8c90bf0bc0b5673c9c8b70210a9bea6a21c54fa277013f8f04"
         },
         {
           "ordinal": 14,
           "heading": "[♯ 7. Free Purchases (Coins & Frog Coins)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-014",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "db72521a688d2367438ae7d37f5fb84050ea5985f6e8d591eab695b2339630d6"
         },
         {
           "ordinal": 15,
           "heading": "[- khuong ツ -]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-015",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "fc3470c0a606fa577563fed814ad9b9657554fea813da955311c023ef31ee1ba"
         },
         {
           "ordinal": 16,
           "heading": "[P1 Attack 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-016",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "a985b8e1aba8f196eed7ada54227cd4378bcb7a0f6aab45c9ca68648dddb6422"
         },
         {
           "ordinal": 17,
           "heading": "[P1 Defense 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-017",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "803c84a7387c8b97bc484f4e9950a7b560a52615db75d9cdfdf2eb9686d8007d"
         },
         {
           "ordinal": 18,
           "heading": "[P1 Mg. Attack 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-018",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "79393c77ada5bcf8f10ef956d8d457d62e9e7c0b0bb33187e8194a82705d318a"
         },
         {
           "ordinal": 19,
           "heading": "[P1 Mg. Defense 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-019",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "7c414738f5e8c1c937b506f13da487506293e0010caf0390448ad547d27d5855"
         },
         {
           "ordinal": 20,
           "heading": "[P1 Speed 99]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-020",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "ca174d8326d2c9da579af7fa9b679cc778881f66571d7ed3c41d62da90dffbad"
         },
         {
           "ordinal": 21,
           "heading": "[P2 Attack 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-021",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "3e882013b5f0c81dc3be028bb6ae0de775463c2c6c2f3f8d25c53ba9a4862a3a"
         },
         {
           "ordinal": 22,
           "heading": "[P2 Defense 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-022",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "290e2a63eb8b4f96c84994f6d11b4e5cc7a5b417c4d4a1e7d8c613f6580f5748"
         },
         {
           "ordinal": 23,
           "heading": "[P2 Mg. Attack 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-023",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "7839a16f2e0167e7538a464993c44d1fa62783b603214f7ec629c6a134999d36"
         },
         {
           "ordinal": 24,
           "heading": "[P2 Mg. Defense 999]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-024",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "8240bdba1308ae81f76bc774a381d668f13e7063a565b5ff41668011ca288527"
         },
         {
           "ordinal": 25,
           "heading": "[P2 Speed 99]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-025",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "0d70bf0180bbc4a44d34ab0188a1d041fd920e60f1d92536dc0255feca46cd67"
         },
         {
@@ -1277,9 +1302,9 @@
         {
           "ordinal": 27,
           "heading": "[♯ 5. Action Guage Always Full]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-027",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "863456d0341fc64f13ec82f71d149e55fb5507e3278197d02111811d85090642"
         },
         {
@@ -1293,9 +1318,9 @@
         {
           "ordinal": 29,
           "heading": "[♯ 7. 100% Item Drop Rate]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-029",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "92d09721e276e511722b3b7c0241c7daea9c79f028e13d4093539adfda596a01"
         },
         {
@@ -1309,25 +1334,25 @@
         {
           "ordinal": 31,
           "heading": "[♯ 9a XP Multiplier (2x) ★]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-005",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "69567e6ae43f19596575301e9f7f2c6366d360bf82c6fd6edcfbcac7878ce826"
         },
         {
           "ordinal": 32,
           "heading": "[♯ 9b XP Multiplier (4x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-006",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "fd6a923bd9b55db90d0162afdf306400758dbdbdf8c657c25a949dcbe87216f6"
         },
         {
           "ordinal": 33,
           "heading": "[♯ 9c XP Multiplier (8x)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-007",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "dff21c4d68031749266bc9cc911764b07fd118a7aa7530e5067594466951cf15"
         },
         {
@@ -1389,17 +1414,17 @@
         {
           "ordinal": 41,
           "heading": "[♯13. Movement Speed Multiplier]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-041",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "88f3a8ce1ddb8ab3e79244829aea3eaa349224ba70061a4e69b2fb76dd28e908"
         },
         {
           "ordinal": 42,
           "heading": "[♯14. Jump Height Multiplier]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-042",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "9c01ccf4d45e21401a781292f5dad22dab3f68ab90f11cbd55dc92b56bce0f43"
         },
         {
@@ -1421,17 +1446,17 @@
         {
           "ordinal": 45,
           "heading": "[zl ignore enemy button on]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-045",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "6e3c1a6093195625b67ec71fa3a83b9596e9fde92081e3502a2a9701c080c39a"
         },
         {
           "ordinal": 46,
           "heading": "[zr ignore enemy button off]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-046",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "85af7121a6210d1baa78b96ea7043c7f3d6af2b5e7ba946d24c610d35d19167d"
         },
         {
@@ -1445,17 +1470,17 @@
         {
           "ordinal": 48,
           "heading": "[Moonjump]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-048",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "ee29f1fa795f92ece0677be1391f2bbbc40833efd61085480de8803a58187802"
         },
         {
           "ordinal": 49,
           "heading": "[100% Hit Chance]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-049",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "f35369d2716194582b129f23935fa99d4fc04ad157d9dd3ea9dfe97d3eb9b8b6"
         },
         {
@@ -1469,25 +1494,25 @@
         {
           "ordinal": 51,
           "heading": "[Max Experience in 1 fight]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-051",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "8d4df7358c979a529652e2e0bd21267ee86b9e4282c0852ffbbe8a9ee4e1d966"
         },
         {
           "ordinal": 52,
           "heading": "[Infinite Jumps]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-052",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "5c21805a0c25b4aefd4b284d7796a32d5c487209e986201504ac1922ac6ea5cc"
         },
         {
           "ordinal": 53,
           "heading": "[Jump Counter Multiplier (x8)]",
-          "curated_cheat_id": null,
-          "archive_path": null,
-          "state": "linked_only_no_public_code_body",
+          "curated_cheat_id": "exact-e968832cade2ad7c-053",
+          "archive_path": "archive/switch-exact-hamlet/0100BC0018138000/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match",
           "source_code_sha256": "5d5b591af306959ffbeb897bd31f97b586d2690f526a9569bc8addff016c4d3f"
         }
       ]

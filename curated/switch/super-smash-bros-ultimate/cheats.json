@@ -34,6 +34,13 @@
       "revision": null,
       "hashes": {},
       "build_id": "FD471EB458C915E7"
+    },
+    {
+      "id": "build-cbd5a9b56ea859ba",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "CBD5A9B56EA859BA"
     }
   ],
   "cheats": [
@@ -203,6 +210,384 @@
           "source": {
             "source": "sharkive",
             "archive_path": "archive/sharkive/switch/01006A800016E000/fd471eb458c915e7.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-001",
+      "name": "1p invincible",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 003E6610 540000E4",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-002",
+      "name": "1p invincible off",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 003E6610 540000E1",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-003",
+      "name": "cpu no move",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 002DA180 D65F03C0",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-004",
+      "name": "cpu no move off",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 002DA180 D10603FF",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-005",
+      "name": "hitkill on",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 006C6220 D65F03C0",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-006",
+      "name": "hitkill off",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 006C6220 6DBB2BEB",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-007",
+      "name": "run+speed normal",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00630178 1E2E1000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-008",
+      "name": "run+speed 1.25x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00630178 1E2E9000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-009",
+      "name": "run+speed 1.5x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00630178 1E2F1000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-010",
+      "name": "run+speed 1.75x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00630178 1E2F9000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-011",
+      "name": "run+speed 2x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00630178 1E201000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-012",
+      "name": "jump up normal",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00621354 1E2E1000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-013",
+      "name": "jump up 1.25x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00621354 1E2E9000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-014",
+      "name": "jump up 1.5x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00621354 1E2F1000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-015",
+      "name": "jump up 1.75x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00621354 1E2F9000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-016",
+      "name": "jump up 2x",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 00621354 1E201000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-017",
+      "name": "999.0 damager on",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 003DDC78 1E27F000\n04000000 003DDF08 1E27F000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-018",
+      "name": "999.0 damager off",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 003DDC78 1E2E1000\n04000000 003DDF08 1E2E1000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-023",
+      "name": "999999D MONEY ON",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 003DDF08 1E27F000\n04000000 003DE0D0 1E27F000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-024",
+      "name": "999999D MONEY OFF",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 003DDF08 1E2E1000\n04000000 003DE0D0 1E2E1000",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exact-cbd5a9b56ea859ba-025",
+      "name": "boss no move",
+      "kind": "patch",
+      "notes": "Source-reported native cheat; build match and gameplay not independently verified.",
+      "variants": [
+        {
+          "edition": "build-cbd5a9b56ea859ba",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 015C9190 D65F03C0",
+          "status": "unverified",
+          "source": {
+            "source": "switch-exact-smash",
+            "archive_path": "archive/switch-exact-smash/01006A800016E000/CBD5A9B56EA859BA.txt"
           }
         }
       ]
