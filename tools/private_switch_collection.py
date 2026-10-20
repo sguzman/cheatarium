@@ -200,6 +200,7 @@ def write_index(root: Path, index: dict) -> bytes:
 
 
 def copy_verified(source: Path, dest: Path, *, verify_only: bool) -> None:
+    safe_directory(dest.parent, create=not verify_only)
     data = checked_file(source, 8_000_000)
     if dest.exists() or dest.is_symlink():
         if checked_file(dest, 8_000_000) != data:
@@ -207,7 +208,6 @@ def copy_verified(source: Path, dest: Path, *, verify_only: bool) -> None:
         return
     if verify_only:
         raise ValueError(f"Missing backup file: {dest}")
-    safe_directory(dest.parent, create=True)
     fd = os.open(dest, os.O_WRONLY | os.O_CREAT | os.O_EXCL | getattr(os, "O_NOFOLLOW", 0), 0o600)
     with os.fdopen(fd, "wb") as out:
         out.write(data)
@@ -227,11 +227,11 @@ def back_up(root: Path, files: list[Path], index_payload: bytes, backup: Path, v
         copy_verified(root / relative, backup / relative, verify_only=verify_only)
     digest = sha(index_payload)
     snapshot = backup / "index-snapshots" / (digest + ".json")
+    safe_directory(snapshot.parent, create=not verify_only)
     if snapshot.exists() or verify_only:
         if checked_file(snapshot, 8_000_000) != index_payload:
             raise ValueError("Collection index backup mismatch")
     else:
-        safe_directory(snapshot.parent, create=True)
         fd = os.open(snapshot, os.O_WRONLY | os.O_CREAT | os.O_EXCL | getattr(os, "O_NOFOLLOW", 0), 0o600)
         with os.fdopen(fd, "wb") as stream:
             stream.write(index_payload)
