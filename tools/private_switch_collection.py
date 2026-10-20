@@ -218,6 +218,8 @@ def copy_verified(source: Path, dest: Path, *, verify_only: bool) -> None:
 def back_up(root: Path, files: list[Path], index_payload: bytes, backup: Path, verify_only: bool = False) -> dict:
     if backup == root or backup in root.parents or root in backup.parents:
         raise ValueError("Backup must be independent of the source collection")
+    if any((parent / ".git").exists() or (parent / ".git").is_symlink() for parent in (backup, *backup.parents)):
+        raise ValueError("Refusing backup inside a Git working tree")
     if Path("/drive") in backup.parents and not os.path.ismount("/drive"):
         raise ValueError("Refusing /drive backup: /drive is not mounted")
     safe_directory(backup, create=not verify_only)
