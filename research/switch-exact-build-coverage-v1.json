@@ -1,0 +1,1347 @@
+{
+  "schema_version": 1,
+  "format": "cheatarium-switch-exact-build-coverage-v1",
+  "scope": "six_game_exact_build_source_reconciliation",
+  "method": "strict_native_hex_sections_compared_with_existing_curated_code_text",
+  "metadata_only_for_unarchived_sections": true,
+  "gameplay_verified": false,
+  "counts": {
+    "games": 6,
+    "source_sections": 174,
+    "archived_exact_sections": 51,
+    "linked_only_sections": 123
+  },
+  "games": [
+    {
+      "title": "Super Mario Odyssey",
+      "title_id": "0100000000010000",
+      "build_id": "B424BE150A8E7D78",
+      "curated_file": "curated/switch/super-mario-odyssey/cheats.json",
+      "source": {
+        "kind": "pinned_hamlet_mirror",
+        "url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100000000010000.json",
+        "revision": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+        "rights_state": "redistribution_not_cleared"
+      },
+      "section_count": 9,
+      "archived_exact_section_count": 4,
+      "missing_body_count": 5,
+      "sections": [
+        {
+          "ordinal": 1,
+          "heading": "[Infinite Health Save 1]",
+          "curated_cheat_id": "infinite-health-save-1-b424be150a8e7d78-001",
+          "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 2,
+          "heading": "[9999 Coins Save 1]",
+          "curated_cheat_id": "9999-coins-save-1-b424be150a8e7d78-002",
+          "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 3,
+          "heading": "[Max Purple Coins Save 1]",
+          "curated_cheat_id": "max-purple-coins-save-1-b424be150a8e7d78-005",
+          "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 4,
+          "heading": "[Refill Health Save 1 (L+R)]",
+          "curated_cheat_id": "refill-health-save-1-l-r-b424be150a8e7d78-003",
+          "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 5,
+          "heading": "[01# Moonjump (press B)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 6,
+          "heading": "[Super Mario Odyssey Ultrawidescreen 21.9]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 7,
+          "heading": "[inf health L disable ]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 8,
+          "heading": "[ invicible]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 9,
+          "heading": "[Screenshot Mode GFX]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        }
+      ]
+    },
+    {
+      "title": "Mario Kart 8 Deluxe",
+      "title_id": "0100152000022000",
+      "build_id": "96DFD1769E560C27",
+      "curated_file": "curated/switch/mario-kart-8-deluxe/cheats.json",
+      "source": {
+        "kind": "pinned_hamlet_mirror",
+        "url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100152000022000.json",
+        "revision": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+        "rights_state": "redistribution_not_cleared"
+      },
+      "section_count": 2,
+      "archived_exact_section_count": 2,
+      "missing_body_count": 0,
+      "sections": [
+        {
+          "ordinal": 1,
+          "heading": "[Unlock Gold Mario]",
+          "curated_cheat_id": "unlock-gold-mario-1-7-0-96dfd1769e560c27-003",
+          "archive_path": "archive/sharkive/switch/0100152000022000/96dfd1769e560c27.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 2,
+          "heading": "[Unlock All Parts]",
+          "curated_cheat_id": "unlock-all-parts-1-7-0-96dfd1769e560c27-004",
+          "archive_path": "archive/sharkive/switch/0100152000022000/96dfd1769e560c27.txt",
+          "state": "archived_code_exact_match"
+        }
+      ]
+    },
+    {
+      "title": "The Legend of Zelda: Skyward Sword HD",
+      "title_id": "01002DA013484000",
+      "build_id": "D824D4B1BBD45D03",
+      "curated_file": "curated/switch/the-legend-of-zelda-skyward-sword-hd/cheats.json",
+      "source": {
+        "kind": "pinned_hamlet_mirror",
+        "url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01002DA013484000.json",
+        "revision": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+        "rights_state": "redistribution_not_cleared"
+      },
+      "section_count": 47,
+      "archived_exact_section_count": 0,
+      "missing_body_count": 47,
+      "sections": [
+        {
+          "ordinal": 1,
+          "heading": "[Infinite Stamina]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 2,
+          "heading": "[Infinite Hearts (80)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 3,
+          "heading": "[Infinite Rupees (300)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 4,
+          "heading": "[Infinite Spiral Charges (3)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 5,
+          "heading": "[1p hit range on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 6,
+          "heading": "[1p hit range off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 7,
+          "heading": "[Max Rupees]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 8,
+          "heading": "[Max Heart]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 9,
+          "heading": "[Inf Spiral]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 10,
+          "heading": "[Inf SP]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 11,
+          "heading": "[Lightning Skyward Sword]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 12,
+          "heading": "[Lightning Skyward Sword with sound]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 13,
+          "heading": "[Inf Beetle Flying Time]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 14,
+          "heading": "[All items]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 15,
+          "heading": "[o Infinite Loftwing Charge]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 16,
+          "heading": "[= Have Shield / Infinite Durability]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 17,
+          "heading": "[    o Wooden Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 18,
+          "heading": "[    o Banded Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 19,
+          "heading": "[    o Braced Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 20,
+          "heading": "[    o Iron Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 21,
+          "heading": "[    o Reinforced Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 22,
+          "heading": "[    o Fortified Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 23,
+          "heading": "[    o Sacred Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 24,
+          "heading": "[    o Divine Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 25,
+          "heading": "[    o Goddess Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 26,
+          "heading": "[    o Hylian Shield]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 27,
+          "heading": "[Jump(ZR)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 28,
+          "heading": "[Automatic Speed(R+L)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 29,
+          "heading": "[1p inf heath]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 30,
+          "heading": "[1p speed move normal]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 31,
+          "heading": "[1p speed move 1.25x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 32,
+          "heading": "[1p speed move 1.5x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 33,
+          "heading": "[1p speed move 2x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 34,
+          "heading": "[1p speed run normal]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 35,
+          "heading": "[1p speed run 1.25x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 36,
+          "heading": "[1p speed run 1.5x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 37,
+          "heading": "[1p speed run 2x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 38,
+          "heading": "[speed game normal]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 39,
+          "heading": "[speed game 1.25x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 40,
+          "heading": "[speed game 1.5x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 41,
+          "heading": "[speed game 1.75x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 42,
+          "heading": "[speed game 2x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 43,
+          "heading": "[*Moonjump Y Jericoss]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 44,
+          "heading": "[*Speed R ]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 45,
+          "heading": "[get 9999 ruby+ get itens max on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 46,
+          "heading": "[get 9999 ruby+ get itens max off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 47,
+          "heading": "[Moonjump L+A]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        }
+      ]
+    },
+    {
+      "title": "Super Smash Bros. Ultimate",
+      "title_id": "01006A800016E000",
+      "build_id": "CBD5A9B56EA859BA",
+      "curated_file": "curated/switch/super-smash-bros-ultimate/cheats.json",
+      "source": {
+        "kind": "independent_exact_build_external",
+        "sources": [
+          {
+            "source_id": "panda-smash-1302",
+            "url": "https://www.imwmi.com/cheats/2025.html",
+            "rights_state": "link_only_redistribution_permission_not_established"
+          },
+          {
+            "source_id": "gbatemp-smash-1302-adaptation",
+            "url": "https://gbatemp.net/threads/super-smash-bros-ultimate-tid-01006a800016e000-bid-b9b166df1db90baf-v-13-0-1.608055/",
+            "rights_state": "link_only_redistribution_permission_not_established"
+          }
+        ],
+        "version": "13.0.2",
+        "source_body_archived": false
+      },
+      "section_count": 25,
+      "archived_exact_section_count": 0,
+      "missing_body_count": 25,
+      "sections": [
+        {
+          "ordinal": 1,
+          "heading": "[1p invincible]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 2,
+          "heading": "[1p invincible off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 3,
+          "heading": "[cpu no move]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 4,
+          "heading": "[cpu no move off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 5,
+          "heading": "[hitkill on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 6,
+          "heading": "[hitkill off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 7,
+          "heading": "[run+speed normal]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 8,
+          "heading": "[run+speed 1.25x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 9,
+          "heading": "[run+speed 1.5x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 10,
+          "heading": "[run+speed 1.75x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 11,
+          "heading": "[run+speed 2x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 12,
+          "heading": "[jump up normal]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 13,
+          "heading": "[jump up 1.25x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 14,
+          "heading": "[jump up 1.5x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 15,
+          "heading": "[jump up 1.75x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 16,
+          "heading": "[jump up 2x]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 17,
+          "heading": "[999.0 damager on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 18,
+          "heading": "[999.0 damager off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 19,
+          "heading": "[god mode on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 20,
+          "heading": "[god mode off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 21,
+          "heading": "[1 hit kill on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 22,
+          "heading": "[1 hit kill off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 23,
+          "heading": "[999999d money on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 24,
+          "heading": "[999999d money off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 25,
+          "heading": "[boss no move]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        }
+      ]
+    },
+    {
+      "title": "The Legend of Zelda: Link's Awakening",
+      "title_id": "01006BB00C6F0000",
+      "build_id": "AE16F71E002AF8CB",
+      "curated_file": "curated/switch/the-legend-of-zelda-links-awakening/cheats.json",
+      "source": {
+        "kind": "pinned_hamlet_mirror",
+        "url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/01006BB00C6F0000.json",
+        "revision": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+        "rights_state": "redistribution_not_cleared"
+      },
+      "section_count": 38,
+      "archived_exact_section_count": 29,
+      "missing_body_count": 9,
+      "sections": [
+        {
+          "ordinal": 1,
+          "heading": "[Infinite / Max Hearts]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 2,
+          "heading": "[Infinite Rupees]",
+          "curated_cheat_id": "infinite-rupees-ae16f71e002af8cb-002",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 3,
+          "heading": "[Infinite Magic Powder]",
+          "curated_cheat_id": "infinite-magic-powder-ae16f71e002af8cb-004",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 4,
+          "heading": "[Infinite Bombs]",
+          "curated_cheat_id": "infinite-bombs-ae16f71e002af8cb-005",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 5,
+          "heading": "[Infinite Arrows]",
+          "curated_cheat_id": "infinite-arrows-ae16f71e002af8cb-006",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 6,
+          "heading": "[Have 3/4 Hearts (Press ZL+ZR)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 7,
+          "heading": "[Have Map/Compass/Nightmare Key/Stone Beak]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 8,
+          "heading": "[Infinite Small Keys]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 9,
+          "heading": "[  Yoshi Doll]",
+          "curated_cheat_id": "yoshi-doll-ae16f71e002af8cb-013",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 10,
+          "heading": "[  Ribbon]",
+          "curated_cheat_id": "ribbon-ae16f71e002af8cb-014",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 11,
+          "heading": "[  Dog Food]",
+          "curated_cheat_id": "dog-food-ae16f71e002af8cb-015",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 12,
+          "heading": "[  Bananas]",
+          "curated_cheat_id": "bananas-ae16f71e002af8cb-016",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 13,
+          "heading": "[  Stick]",
+          "curated_cheat_id": "stick-ae16f71e002af8cb-017",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 14,
+          "heading": "[  Honeycomb]",
+          "curated_cheat_id": "honeycomb-ae16f71e002af8cb-018",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 15,
+          "heading": "[  Pineapple]",
+          "curated_cheat_id": "pineapple-ae16f71e002af8cb-019",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 16,
+          "heading": "[  Hibiscus]",
+          "curated_cheat_id": "hibiscus-ae16f71e002af8cb-020",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 17,
+          "heading": "[  Goat's Letter]",
+          "curated_cheat_id": "goat-s-letter-ae16f71e002af8cb-021",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 18,
+          "heading": "[  Broom]",
+          "curated_cheat_id": "broom-ae16f71e002af8cb-022",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 19,
+          "heading": "[  Fishing Hook]",
+          "curated_cheat_id": "fishing-hook-ae16f71e002af8cb-023",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 20,
+          "heading": "[  Necklace]",
+          "curated_cheat_id": "necklace-ae16f71e002af8cb-024",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 21,
+          "heading": "[  Mermaid's Scale]",
+          "curated_cheat_id": "mermaid-s-scale-ae16f71e002af8cb-025",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 22,
+          "heading": "[  Magnifying Lense]",
+          "curated_cheat_id": "magnifying-lense-ae16f71e002af8cb-026",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 23,
+          "heading": "[  CiaoCiao Figure]",
+          "curated_cheat_id": "ciaociao-figure-ae16f71e002af8cb-027",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 24,
+          "heading": "[  Goomba Figure]",
+          "curated_cheat_id": "goomba-figure-ae16f71e002af8cb-028",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 25,
+          "heading": "[  Spiny Figure]",
+          "curated_cheat_id": "spiny-figure-ae16f71e002af8cb-029",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 26,
+          "heading": "[  Boo Figure]",
+          "curated_cheat_id": "boo-figure-ae16f71e002af8cb-030",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 27,
+          "heading": "[  Cheep Cheep Figure]",
+          "curated_cheat_id": "cheep-cheep-figure-ae16f71e002af8cb-031",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 28,
+          "heading": "[  Blooper Figure]",
+          "curated_cheat_id": "blooper-figure-ae16f71e002af8cb-032",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 29,
+          "heading": "[  Shy Guy Figure]",
+          "curated_cheat_id": "shy-guy-figure-ae16f71e002af8cb-033",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 30,
+          "heading": "[  Piranha Plant Figure]",
+          "curated_cheat_id": "piranha-plant-figure-ae16f71e002af8cb-034",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 31,
+          "heading": "[  Pokey Figure]",
+          "curated_cheat_id": "pokey-figure-ae16f71e002af8cb-035",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 32,
+          "heading": "[  BowWow Figure]",
+          "curated_cheat_id": "bowwow-figure-ae16f71e002af8cb-036",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 33,
+          "heading": "[Invincible/Not working restart the game]",
+          "curated_cheat_id": "invincible-ae16f71e002af8cb-008",
+          "archive_path": "archive/sharkive/switch/01006BB00C6F0000/ae16f71e002af8cb.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 34,
+          "heading": "[0 Retries death counter]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 35,
+          "heading": "[High Jump (ZL) ]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 36,
+          "heading": "[Invincible]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 37,
+          "heading": "[Invincible On]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 38,
+          "heading": "[Invincible Off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        }
+      ]
+    },
+    {
+      "title": "Super Mario RPG",
+      "title_id": "0100BC0018138000",
+      "build_id": "E968832CADE2AD7C",
+      "curated_file": "curated/switch/super-mario-rpg/cheats.json",
+      "source": {
+        "kind": "pinned_hamlet_mirror",
+        "url": "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/9a062e9b9a9e5b422d0310cf5c829a3855cb77e7/cheats/0100BC0018138000.json",
+        "revision": "9a062e9b9a9e5b422d0310cf5c829a3855cb77e7",
+        "rights_state": "redistribution_not_cleared"
+      },
+      "section_count": 53,
+      "archived_exact_section_count": 16,
+      "missing_body_count": 37,
+      "sections": [
+        {
+          "ordinal": 1,
+          "heading": "[Restore Code (Use after unchecking any cheats below)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 2,
+          "heading": "[♯ 1. Inf. HP]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 3,
+          "heading": "[♯ 2. Inf. MP (Flower Power)]",
+          "curated_cheat_id": "2-inf-mp-flower-power-e968832cade2ad7c-004",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 4,
+          "heading": "[♯ 3. Inf. Item Usage]",
+          "curated_cheat_id": "5-inf-item-usage-e968832cade2ad7c-020",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 5,
+          "heading": "[♯ 4a XP Multiplier (2x) ★]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 6,
+          "heading": "[♯ 4b XP Multiplier (4x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 7,
+          "heading": "[♯ 4c XP Multiplier (8x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 8,
+          "heading": "[♯ 5a Coin Multiplier (2x) ★]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 9,
+          "heading": "[♯ 5b Coin Multiplier (4x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 10,
+          "heading": "[♯ 5c Coin Multiplier (8x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 11,
+          "heading": "[♯ 6a Frog Coin Multiplier (2x) ★]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 12,
+          "heading": "[♯ 6b FrogCoin Multiplier (4x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 13,
+          "heading": "[♯ 6c Frog Coin Multiplier (8x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 14,
+          "heading": "[♯ 7. Free Purchases (Coins & Frog Coins)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 15,
+          "heading": "[- khuong ツ -]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 16,
+          "heading": "[P1 Attack 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 17,
+          "heading": "[P1 Defense 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 18,
+          "heading": "[P1 Mg. Attack 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 19,
+          "heading": "[P1 Mg. Defense 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 20,
+          "heading": "[P1 Speed 99]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 21,
+          "heading": "[P2 Attack 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 22,
+          "heading": "[P2 Defense 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 23,
+          "heading": "[P2 Mg. Attack 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 24,
+          "heading": "[P2 Mg. Defense 999]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 25,
+          "heading": "[P2 Speed 99]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 26,
+          "heading": "[♯ 4. 999 Chain (After Successful Chain)]",
+          "curated_cheat_id": "10-999-chain-after-successful-chain-e968832cade2ad7c-025",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 27,
+          "heading": "[♯ 5. Action Guage Always Full]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 28,
+          "heading": "[♯ 6. Always Succeed At Running Away]",
+          "curated_cheat_id": "11-always-succeed-at-running-away-e968832cade2ad7c-026",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 29,
+          "heading": "[♯ 7. 100% Item Drop Rate]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 30,
+          "heading": "[♯ 8. Bonus Flower Always Drops]",
+          "curated_cheat_id": "15-bonus-flower-always-drops-e968832cade2ad7c-030",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 31,
+          "heading": "[♯ 9a XP Multiplier (2x) ★]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 32,
+          "heading": "[♯ 9b XP Multiplier (4x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 33,
+          "heading": "[♯ 9c XP Multiplier (8x)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 34,
+          "heading": "[♯10a Coin Multiplier (1x) ★]",
+          "curated_cheat_id": "18a-coin-multiplier-2x-e968832cade2ad7c-036",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 35,
+          "heading": "[♯10b Coin Multiplier (2x)]",
+          "curated_cheat_id": "18b-coin-multiplier-4x-e968832cade2ad7c-037",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 36,
+          "heading": "[♯10c Coin Multiplier (8x)]",
+          "curated_cheat_id": "18c-coin-multiplier-8x-e968832cade2ad7c-038",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 37,
+          "heading": "[♯14a Frog Coin Multiplier (2x) ★]",
+          "curated_cheat_id": "19a-frog-coin-multiplier-2x-e968832cade2ad7c-040",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 38,
+          "heading": "[♯14b Frog Coin Multiplier (4x)]",
+          "curated_cheat_id": "19b-frog-coin-multiplier-4x-e968832cade2ad7c-041",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 39,
+          "heading": "[♯14c Frog Coin Multiplier (8x)]",
+          "curated_cheat_id": "19c-frog-coin-multiplier-8x-e968832cade2ad7c-042",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 40,
+          "heading": "[♯12. Free Purchases (Coins & Frog Coins)]",
+          "curated_cheat_id": "21-free-purchases-coins-frog-coins-e968832cade2ad7c-045",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 41,
+          "heading": "[♯13. Movement Speed Multiplier]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 42,
+          "heading": "[♯14. Jump Height Multiplier]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 43,
+          "heading": "[♯15. Ignore Encounter Trigger (On)]",
+          "curated_cheat_id": "24-ignore-encounter-trigger-on-e968832cade2ad7c-048",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 44,
+          "heading": "[♯16. Ignore Encounter Trigger (Off)]",
+          "curated_cheat_id": "25-ignore-encounter-trigger-off-e968832cade2ad7c-049",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 45,
+          "heading": "[zl ignore enemy button on]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 46,
+          "heading": "[zr ignore enemy button off]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 47,
+          "heading": "[♯17. Midas River - No Fish Hit(s)]",
+          "curated_cheat_id": "27-midas-river-no-fish-hit-s-e968832cade2ad7c-051",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 48,
+          "heading": "[Moonjump]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 49,
+          "heading": "[100% Hit Chance]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 50,
+          "heading": "[Attack Action Commands Always Proc (Lucky Star)]",
+          "curated_cheat_id": "7-auto-action-commands-atk-only-e968832cade2ad7c-022",
+          "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt",
+          "state": "archived_code_exact_match"
+        },
+        {
+          "ordinal": 51,
+          "heading": "[Max Experience in 1 fight]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 52,
+          "heading": "[Infinite Jumps]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        },
+        {
+          "ordinal": 53,
+          "heading": "[Jump Counter Multiplier (x8)]",
+          "curated_cheat_id": null,
+          "archive_path": null,
+          "state": "linked_only_no_public_code_body"
+        }
+      ]
+    }
+  ]
+}
