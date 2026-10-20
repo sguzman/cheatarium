@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "platform": "switch",
+  "game": {
+    "id": "super-smash-bros-ultimate",
+    "title": "Super Smash Bros. Ultimate"
+  },
+  "editions": [
+    {
+      "id": "build-2ef410f4d4d2d279",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "2EF410F4D4D2D279"
+    },
+    {
+      "id": "build-343d891a4bcf0684",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "343D891A4BCF0684"
+    },
+    {
+      "id": "build-4590c9bb2c530754",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "4590C9BB2C530754"
+    },
+    {
+      "id": "build-fd471eb458c915e7",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "FD471EB458C915E7"
+    }
+  ],
+  "cheats": [
+    {
+      "id": "inf-hp-2ef410f4d4d2d279-001",
+      "name": "Inf. Hp",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-2ef410f4d4d2d279",
+          "format": "atmosphere-native-switch",
+          "code": "58000000 043D6A10\n78000000 00A62108\n68000000 00000000\n00000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/2ef410f4d4d2d279.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "master-hand-2ef410f4d4d2d279-002",
+      "name": "Master Hand",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-2ef410f4d4d2d279",
+          "format": "atmosphere-native-switch",
+          "code": "08010000 06530a18\nC1005113 89102CBF\n08020000 06530a20\nC1005113 89102CBF\n08030000 065318A8\nC1005113 89102CBF\n08040000 065318b0\nC1005113 89102CBF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/2ef410f4d4d2d279.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "giga-bowser-2ef410f4d4d2d279-003",
+      "name": "Giga Bowser",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-2ef410f4d4d2d279",
+          "format": "atmosphere-native-switch",
+          "code": "08010000 06530a18\nC1005D0F 93DBBF13\n08020000 06530a20\nC1005D0F 93DBBF13\n08030000 065318A8\nC1005D0F 93DBBF13\n08040000 065318b0\nC1005D0F 93DBBF13",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/2ef410f4d4d2d279.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "always-bowser-2ef410f4d4d2d279-004",
+      "name": "Always Bowser",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-2ef410f4d4d2d279",
+          "format": "atmosphere-native-switch",
+          "code": "08010000 06530a18\nC100100E DD2AFECC\n08020000 06530a20\nC100100E DD2AFECC\n08030000 065318A8\nC100100E DD2AFECC",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/2ef410f4d4d2d279.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9-999-999-gold-343d891a4bcf0684-001",
+      "name": "9.999.999 Gold",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-343d891a4bcf0684",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 04f73200\n780F1000 0006443C\n640F0000 00000000 0098967F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/343d891a4bcf0684.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9-999-999-sp-343d891a4bcf0684-002",
+      "name": "9.999.999 Sp",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-343d891a4bcf0684",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 04f73200\n780F1000 00131934\n680F0000 00000000 0098967F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/343d891a4bcf0684.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "999-999-999-gold-fd471eb458c915e7-001",
+      "name": "999.999.999 Gold",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fd471eb458c915e7",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 0649E6D8\n780F1000 0006443C\n640F0000 00000000 3B9AC9FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/fd471eb458c915e7.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "999-999-999-spirit-points-fd471eb458c915e7-002",
+      "name": "999.999.999 Spirit Points",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fd471eb458c915e7",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 0649E6D8\n780F1000 00131934\n680F0000 00000000 3B9AC9FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/fd471eb458c915e7.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9-999-999-gold-1-0-fd471eb458c915e7-003",
+      "name": "9.999.999 Gold 1.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fd471eb458c915e7",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 0649E6D8\n780F1000 0006443C\n640F0000 00000000 0098967F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/fd471eb458c915e7.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9-999-999-sp-1-0-fd471eb458c915e7-004",
+      "name": "9.999.999 Sp 1.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fd471eb458c915e7",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 0649E6D8\n780F1000 00131934\n680F0000 00000000 0098967F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/01006A800016E000/fd471eb458c915e7.txt"
+          }
+        }
+      ]
+    }
+  ]
+}
