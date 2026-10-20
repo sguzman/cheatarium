@@ -887,13 +887,21 @@ pub(super) struct ReplacedLegacy {
     warning: &'static str,
 }
 
-fn backup_parent() -> Result<PathBuf, ErrBox> {
+pub(super) fn default_legacy_backup_dir() -> Result<PathBuf, ErrBox> {
     let home = std::env::var_os("HOME").ok_or("HOME is required for private cheat backups")?;
     let base = PathBuf::from(home);
     if !base.is_absolute() {
         return Err("HOME must be an absolute path".into());
     }
-    let path = base.join(".local/share/cheatarium/mod-backups");
+    Ok(base.join(".local/share/cheatarium/mod-backups"))
+}
+
+fn backup_parent(path: &Path) -> Result<PathBuf, ErrBox> {
+    if !path.is_absolute()
+        || path.components().any(|c| matches!(c, Component::CurDir | Component::ParentDir))
+    {
+        return Err("Private backup path must be absolute and normalized".into());
+    }
     let mut current = PathBuf::new();
     for component in path.components() {
         current.push(component);
@@ -904,18 +912,19 @@ fn backup_parent() -> Result<PathBuf, ErrBox> {
             Err(e) => return Err(e.into()),
         }
     }
-    Ok(path)
+    Ok(path.to_path_buf())
 }
 
 fn backup_originals(
     title: &str,
     build: &str,
     originals: &[(String, Vec<u8>)],
+    backup_root: &Path,
 ) -> Result<Option<PathBuf>, ErrBox> {
     if originals.is_empty() {
         return Ok(None);
     }
-    let parent = backup_parent()?;
+    let parent = backup_parent(backup_root)?;
     for serial in 0..1024 {
         let dir = parent.join(format!("{title}-{build}-{}-{serial}", std::process::id()));
         match fs::create_dir(&dir) {
@@ -978,6 +987,9 @@ fn legacy_existing_bytes(
     if text.lines().next() != Some(expected_header) {
         return Err("Existing addon heading doesn't match selected Cheatarium cheat; refusing replacement".into());
     }
+    if !text.lines().skip(1).any(|line| !line.trim().is_empty()) {
+        return Err("Existing legacy cheat has no opcode lines".into());
+    }
     if !text.lines().skip(1).filter(|line| !line.trim().is_empty()).all(|line| {
         let words: Vec<_> = line.split_ascii_whitespace().collect();
         !words.is_empty() && words.len() <= 5 && words.iter()
@@ -996,6 +1008,7 @@ pub(super) fn replace_legacy_private(
     selection: &Preview,
     mods_root: &Path,
     config: &Path,
+    backup_root: &Path,
 ) -> Result<ReplacedLegacy, ErrBox> {
     if selection.source_filter != "private_pinned_hamlet_exact_static_nsp" {
         return Err("Legacy replacement requires a curated private source".into());
@@ -1057,7 +1070,7 @@ pub(super) fn replace_legacy_private(
     let updated_config = disabled_config(&original_config, title, &names)?;
     // Preflight, back up ALL conflicting originals, then commit QSettings
     // disabled state before changing the first live cheat.
-    let backed_up = backup_originals(title, build, &originals)?;
+    let backed_up = backup_originals(title, build, &originals, backup_root)?;
     eden_not_running()?;
     let config_backup = write_config_atomic(config, &original_config, &updated_config)?;
     fs::create_dir_all(mods_root)?;
