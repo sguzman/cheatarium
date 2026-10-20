@@ -24,7 +24,7 @@ def archived_sections(path: Path) -> set[tuple[str, tuple[str, ...]]]:
         match = HEADING.fullmatch(line)
         if match:
             flush()
-            heading = match.group(1).strip().removeprefix("♯ ").strip()
+            heading = re.sub(r"^♯\\s*", "", match.group(1).strip()).strip()
             codes = []
         elif heading and NATIVE.fullmatch(line):
             codes.append(line)
