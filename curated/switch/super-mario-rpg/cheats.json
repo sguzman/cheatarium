@@ -2883,24 +2883,6 @@
           }
         }
       ]
-    },
-    {
-      "id": "khuong-e968832cade2ad7c-062",
-      "name": "- khuong ツ -",
-      "kind": "patch",
-      "notes": "Exact v0 archive source; consult the source's master/restore-code sections before use.",
-      "variants": [
-        {
-          "edition": "build-e968832cade2ad7c",
-          "format": "atmosphere-native-switch",
-          "code": "20000000",
-          "status": "unverified",
-          "source": {
-            "source": "bad1dea-nxcheats-switch",
-            "archive_path": "archive/bad1dea-nxcheats-switch/_old/Super Mario RPG/Super Mario RPG (US)/0100BC0018138000/cheats/E968832CADE2AD7C.txt"
-          }
-        }
-      ]
     }
   ]
 }
