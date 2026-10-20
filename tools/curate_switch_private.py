@@ -239,9 +239,6 @@ def main() -> int:
         }
     else:
         result = inspect(manifest, args.title_id)
-    if args.fetch_personal_exact or args.fetch_private:
-        from private_switch_collection import refresh_collection
-        result["private_collection"] = refresh_collection(safe_output_root())
     print(json.dumps(result, indent=2))
     return 0
 
