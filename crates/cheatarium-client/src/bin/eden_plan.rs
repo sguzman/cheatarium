@@ -949,8 +949,9 @@ fn run() -> Result<(), ErrBox> {
             return Err("Private exact-build source is not completely renderable; refusing installation or staging".into());
         }
         if install && replace_existing_cheats {
+            let backup_root = eden_install::default_legacy_backup_dir()?;
             let result = eden_install::replace_legacy_private(
-                &private_bundle, &plan, &mod_root, &config,
+                &private_bundle, &plan, &mod_root, &config, &backup_root,
             )?;
             println!("{}", serde_json::to_string_pretty(&result)?);
         } else if install {
