@@ -1,0 +1,730 @@
+{
+  "schema_version": 1,
+  "platform": "switch",
+  "game": {
+    "id": "super-mario-odyssey",
+    "title": "Super Mario Odyssey"
+  },
+  "editions": [
+    {
+      "id": "build-3ca12dfaaf9c82da",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "3CA12DFAAF9C82DA"
+    },
+    {
+      "id": "build-b424be150a8e7d78",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "B424BE150A8E7D78"
+    },
+    {
+      "id": "build-f5dccddb37e97724",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "F5DCCDDB37E97724"
+    }
+  ],
+  "cheats": [
+    {
+      "id": "9999-coins-save-1-3ca12dfaaf9c82da-001",
+      "name": "9999 Coins Save 1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 619ED858 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-1-3ca12dfaaf9c82da-002",
+      "name": "Infinite Health Save 1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 61B30CD4 00000006",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-coins-save-1-3ca12dfaaf9c82da-003",
+      "name": "Max Purple Coins Save 1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 61C77360 00000032\n02100000 61C77364 00000032\n02100000 61C77368 00000064\n02100000 61C7736C 00000064\n02100000 61C77370 00000032\n02100000 61C77378 00000032\n02100000 61C7737C 00000064\n02100000 61C77380 00000064\n02100000 61C77384 00000032\n02100000 61C77388 00000064\n02100000 61C77390 00000064\n02100000 61C77394 00000032\n02100000 61C77398 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-2-3ca12dfaaf9c82da-004",
+      "name": "9999 Coins Save 2",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 61CAD4F0 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-2-3ca12dfaaf9c82da-005",
+      "name": "Infinite Health Save 2",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 61DF096C 00000006",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-coins-save-2-3ca12dfaaf9c82da-006",
+      "name": "Max Purple Coins Save 2",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 61F36FF8 00000032\n02100000 61F36FFC 00000032\n02100000 61F37000 00000064\n02100000 61F37004 00000064\n02100000 61F37008 00000032\n02100000 61F37010 00000032\n02100000 61F37014 00000064\n02100000 61F37018 00000064\n02100000 61F3701C 00000032\n02100000 61F37020 00000064\n02100000 61F37028 00000064\n02100000 61F3702C 00000032\n02100000 61F37030 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-3-3ca12dfaaf9c82da-007",
+      "name": "9999 Coins Save 3",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 61F6D188 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-3-3ca12dfaaf9c82da-008",
+      "name": "Infinite Health Save 3",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 620B0604 00000006",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-coins-save-3-3ca12dfaaf9c82da-009",
+      "name": "Max Purple Coins Save 3",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 621F6C90 00000032\n02100000 621F6C94 00000032\n02100000 621F6C98 00000064\n02100000 621F6C9C 00000064\n02100000 621F6CA0 00000032\n02100000 621F6CA4 00000032\n02100000 621F6CAC 00000064\n02100000 621F6CB0 00000064\n02100000 621F6CB4 00000032\n02100000 621F6CB8 00000064\n02100000 621F6CC0 00000064\n02100000 621F6CC4 00000032\n02100000 621F6CC8 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-4-3ca12dfaaf9c82da-010",
+      "name": "9999 Coins Save 4",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 6222CE20 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-4-3ca12dfaaf9c82da-011",
+      "name": "Infinite Health Save 4",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 6237029C 00000006",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-coins-save-4-3ca12dfaaf9c82da-012",
+      "name": "Max Purple Coins Save 4",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 624B6928 00000032\n02100000 624B692C 00000032\n02100000 624B6930 00000064\n02100000 624B6934 00000064\n02100000 624B6938 00000032\n02100000 624B6940 00000032\n02100000 624B6944 00000064\n02100000 624B6948 00000064\n02100000 624B694C 00000032\n02100000 624B6950 00000064\n02100000 624B6958 00000064\n02100000 624B695C 00000032\n02100000 624B6960 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-5-3ca12dfaaf9c82da-013",
+      "name": "9999 Coins Save 5",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 624ECAB8 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-5-3ca12dfaaf9c82da-014",
+      "name": "Infinite Health Save 5",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 6262FF34 00000006",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-coins-save-5-3ca12dfaaf9c82da-015",
+      "name": "Max Purple Coins Save 5",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-3ca12dfaaf9c82da",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 627765C0 00000032\n02100000 627765C4 00000032\n02100000 627765C8 00000064\n02100000 627765CC 00000064\n02100000 627765D0 00000032\n02100000 627765D8 00000032\n02100000 627765DC 00000064\n02100000 627765E0 00000064\n02100000 627765E4 00000032\n02100000 627765E8 00000064\n02100000 627765F0 00000064\n02100000 627765F4 00000032\n02100000 627765F8 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/3ca12dfaaf9c82da.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-1-b424be150a8e7d78-001",
+      "name": "Infinite Health Save 1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-b424be150a8e7d78",
+          "format": "atmosphere-native-switch",
+          "code": "11160000 5C3BE7DC 00000000\n01100000 5C3BE7DC 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-1-b424be150a8e7d78-002",
+      "name": "9999 Coins Save 1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-b424be150a8e7d78",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 5C27B318 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "refill-health-save-1-l-r-b424be150a8e7d78-003",
+      "name": "Refill Health Save 1 (L+R)",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-b424be150a8e7d78",
+          "format": "atmosphere-native-switch",
+          "code": "800000C0\n01100000 5C3BE7DC 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "refill-health-save-1-press-l-r-b424be150a8e7d78-004",
+      "name": "Refill Health Save 1 press (L+R)",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-b424be150a8e7d78",
+          "format": "atmosphere-native-switch",
+          "code": "800000C0\n01100000 5C3BE7DC 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-coins-save-1-b424be150a8e7d78-005",
+      "name": "Max Purple Coins Save 1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-b424be150a8e7d78",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 5C506DA0 00000032\n02100000 5C506DA4 00000032\n02100000 5C506DA8 00000064\n02100000 5C506DAC 00000064\n02100000 5C506DB0 00000032\n02100000 5C506DB8 00000032\n02100000 5C506DBC 00000064\n02100000 5C506DC0 00000064\n02100000 5C506DC4 00000032\n02100000 5C506DC8 00000064\n02100000 5C506DD0 00000064\n02100000 5C506DD4 00000032\n02100000 5C506DD8 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/b424be150a8e7d78.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inf-health-f5dccddb37e97724-001",
+      "name": "Inf. Health",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "580f0000 026583c0\n780f0000 00642d3c\n640f0000 00000000 00000006",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-gold-coins-f5dccddb37e97724-002",
+      "name": "9999 Gold Coins",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "580f0000 0264af58\n780f0000 004ff8a0\n640f0000 00000000 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "999-purple-coins-cap-sand-kingdoms-f5dccddb37e97724-003",
+      "name": "999 Purple Coins (Cap + Sand Kingdoms)",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "580f0000 0264af58\n780f0000 0078B330\n640f0000 00000000 000003e7",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-regional-currency-f5dccddb37e97724-004",
+      "name": "Max Regional Currency",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "580f0000 0264af58\n780f0000 0078B328\n640f0000 00000000 00000032\n580f0000 0264af58\n780f0000 0078B32c\n640f0000 00000000 00000032\n580f0000 0264af58\n780f0000 0078B330\n640f0000 00000000 00000064\n580f0000 0264af58\n780f0000 0078B338\n640f0000 00000000 00000032\n580f0000 0264af58\n780f0000 0078B334\n640f0000 00000000 00000064\n580f0000 0264af58\n780f0000 0078B340\n640f0000 00000000 00000032\n580f0000 0264af58\n780f0000 0078B344\n640f0000 00000000 00000064\n580f0000 0264af58\n780f0000 0078B34c\n640f0000 00000000 00000032\n580f0000 0264af58\n780f0000 0078B348\n640f0000 00000000 00000064\n580f0000 0264af58\n780f0000 0078B350\n640f0000 00000000 00000064\n580f0000 0264af58\n780f0000 0078B358\n640f0000 00000000 00000064\n580f0000 0264af58\n780f0000 0078B35c\n640f0000 00000000 00000032",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "999-regional-currency-f5dccddb37e97724-005",
+      "name": "999 Regional Currency",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "580f0000 0264af58\n780f0000 0078B324\n300e0000 0000000f\n640f1000 00000000 000003e7\n310e0000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "free-shopping-in-crazy-cap-1-2-0-f5dccddb37e97724-006",
+      "name": "Free Shopping in Crazy Cap 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 0031CBC4 52800016",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-1-1-2-0-f5dccddb37e97724-007",
+      "name": "9999 Coins Save 1 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 635E7098 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-1-1-2-0-f5dccddb37e97724-008",
+      "name": "Infinite Health Save 1 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "11160000 6372A534 00000000\n01100000 6372A534 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-currency-save-1-1-2-0-f5dccddb37e97724-009",
+      "name": "Max Purple Currency Save 1 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 63872B20 00000032\n02100000 63872B24 00000032\n02100000 63872B28 00000064\n02100000 63872B2C 00000064\n02100000 63872B30 00000032\n02100000 63872B38 00000032\n02100000 63872B3C 00000064\n02100000 63872B40 00000064\n02100000 63872B44 00000032\n02100000 63872B48 00000064\n02100000 63872B50 00000064\n02100000 63872B54 00000032\n02100000 63872B58 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-2-1-2-0-f5dccddb37e97724-010",
+      "name": "9999 Coins Save 2 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 638A9118 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-2-1-2-0-f5dccddb37e97724-011",
+      "name": "Infinite Health Save 2 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "11160000 639EC5B4 00000000\n01100000 639EC5B4 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-currency-save-2-1-2-0-f5dccddb37e97724-012",
+      "name": "Max Purple Currency Save 2 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 63B34BA0 00000032\n02100000 63B34BA4 00000032\n02100000 63B34BA8 00000064\n02100000 63B34BAC 00000064\n02100000 63B34BB0 00000032\n02100000 63B34BB8 00000032\n02100000 63B34BBC 00000064\n02100000 63B34BC0 00000064\n02100000 63B34BC4 00000032\n02100000 63B34BC8 00000064\n02100000 63B34BD0 00000064\n02100000 63B34BD4 00000032\n02100000 63B34BD8 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-3-1-2-0-f5dccddb37e97724-013",
+      "name": "9999 Coins Save 3 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 63B6B198 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-3-1-2-0-f5dccddb37e97724-014",
+      "name": "Infinite Health Save 3 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "11160000 63CAE634 00000000\n01100000 63CAE634 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-currency-save-3-1-2-0-f5dccddb37e97724-015",
+      "name": "Max Purple Currency Save 3 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 63DF6C20 00000032\n02100000 63DF6C24 00000032\n02100000 63DF6C28 00000064\n02100000 63DF6C2C 00000064\n02100000 63DF6C30 00000032\n02100000 63DF6C38 00000032\n02100000 63DF6C3C 00000064\n02100000 63DF6C40 00000064\n02100000 63DF6C44 00000032\n02100000 63DF6C48 00000064\n02100000 63DF6C50 00000064\n02100000 63DF6C54 00000032\n02100000 63DF6C58 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-4-1-2-0-f5dccddb37e97724-016",
+      "name": "9999 Coins Save 4 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 63E2D218 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-4-1-2-0-f5dccddb37e97724-017",
+      "name": "Infinite Health Save 4 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "11160000 63F706B4 00000000\n01100000 63F706B4 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-currency-save-4-1-2-0-f5dccddb37e97724-018",
+      "name": "Max Purple Currency Save 4 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 640B8CA0 00000032\n02100000 640B8CA4 00000032\n02100000 640B8CA8 00000064\n02100000 640B8CAC 00000064\n02100000 640B8CB0 00000032\n02100000 640B8CB8 00000032\n02100000 640B8CBC 00000064\n02100000 640B8CC0 00000064\n02100000 640B8CC4 00000032\n02100000 640B8CC8 00000064\n02100000 640B8CD0 00000064\n02100000 640B8CD4 00000032\n02100000 640B8CD8 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9999-coins-save-5-1-2-0-f5dccddb37e97724-019",
+      "name": "9999 Coins Save 5 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 640EF298 0000270f",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "infinite-health-save-5-1-2-0-f5dccddb37e97724-020",
+      "name": "Infinite Health Save 5 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "11160000 64232734 00000000\n01100000 64232734 00000006\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "max-purple-currency-save-5-1-2-0-f5dccddb37e97724-021",
+      "name": "Max Purple Currency Save 5 1.2.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-f5dccddb37e97724",
+          "format": "atmosphere-native-switch",
+          "code": "02100000 6437AD20 00000032\n02100000 6437AD24 00000032\n02100000 6437AD28 00000064\n02100000 6437AD2C 00000064\n02100000 6437AD30 00000032\n02100000 6437AD38 00000032\n02100000 6437AD3C 00000064\n02100000 6437AD40 00000064\n02100000 6437AD44 00000032\n02100000 6437AD48 00000064\n02100000 6437AD50 00000064\n02100000 6437AD54 00000032\n02100000 6437AD58 00000064",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100000000010000/f5dccddb37e97724.txt"
+          }
+        }
+      ]
+    }
+  ]
+}
