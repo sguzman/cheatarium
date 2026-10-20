@@ -207,7 +207,7 @@ fn select<'a>(bundle: &'a Bundle, title: &str, build: &str) -> Vec<&'a IndexedFi
             file.candidate_game_key == key
                 && matches!(
                     file.provenance.source_id.as_str(),
-                    "sharkive" | "hamlet_private_curated"
+                    "sharkive" | "hamlet_private_curated" | "external_smash_private_curated"
                 )
         })
         .collect()
@@ -310,9 +310,9 @@ fn preview_with_names(
         source_filter: if bundle.records.iter().any(|file| {
             file.candidate_game_key == format!(
                 "title-id-{}-build-{}", title.to_ascii_lowercase(), build.to_ascii_lowercase()
-            ) && file.provenance.source_id == "hamlet_private_curated"
+            ) && matches!(file.provenance.source_id.as_str(), "hamlet_private_curated" | "external_smash_private_curated")
         }) {
-            "private_pinned_hamlet_exact_static_nsp"
+            "private_exact_static_nsp_native_source"
         } else {
             "sharkive_native_switch_archive"
         },
