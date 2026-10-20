@@ -573,6 +573,8 @@ The existing `cheatarium-eden-plan --private-curation` reader accepts the extern
 cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --private-curation --title-id 01006A800016E000 --install --replace-existing-cheats --json
 ```
 
+**If Eden refuses installation after its window has closed:** the installer now skips Linux zombie/dead processes and reports the actual live PID, process name and executable that is blocking a QSettings write. The read-only diagnostic command is `cargo run --release --locked -q -p cheatarium-client --bin cheatarium-eden-plan -- --eden-process-report`. It does not start, stop, signal, or modify Eden, nor touch the user's mod files. A live background emulator still blocks configuration writes until it exits; this protection is not bypassed by `--replace-existing-cheats`.
+
 **Limits:** No runtime Eden executable ID or cheat effects have been verified. This source contains reset alternatives and duplicate functions; 25 sections do not imply 25 independent beneficial effects. Leave add-ons disabled until reviewed individually. A source/network failure leaves Smash uninstalled instead of guessing or fabricating codes.
 
 ### Existing Eden installer: locally staged exact-build cheats
