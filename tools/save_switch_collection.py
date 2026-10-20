@@ -192,7 +192,24 @@ def prepare(root: Path, cache: Path) -> tuple[dict[str, bytes], dict]:
         if title not in TITLES or by_title[title]["static_nsp_observation"]["cheat_build_id"] != bid:
             raise ValueError("Unrecognized or mismatched game Build ID")
         expected_rows = game["sections"]
-        data, url, label = source_bytes(game, manifest, cache)
+        source_id = SMASH_SOURCE if title == "01006A800016E000" else HAMLET_SOURCE
+        archive_path = "archive/" + source_id + "/" + title + "/" + bid + ".txt"
+        preserved = root / archive_path
+        if preserved.is_file():
+            ensure_no_symlinks(preserved, root)
+            declared_path = root / ("sources/" + source_id + ".json")
+            if not declared_path.is_file():
+                raise ValueError("Preserved original lacks source inventory: " + archive_path)
+            declared = json.loads(declared_path.read_text("utf-8"))
+            record = next((row for row in declared["files"] if row["archive_path"] == archive_path), None)
+            if record is None:
+                raise ValueError("Preserved original omitted from source inventory")
+            data = preserved.read_bytes()
+            if git_blob_sha(data) != record["git_blob_sha"] or hashlib.sha256(data).hexdigest() != record["source_body_sha256"]:
+                raise ValueError("Preserved source integrity mismatch: " + archive_path)
+            url, label = record["source_url"], record["source_label"]
+        else:
+            data, url, label = source_bytes(game, manifest, cache)
         entries = native_sections(data)
         if len(entries) != game["section_count"]:
             raise ValueError("Exact-build section count mismatch: " + title)
@@ -204,8 +221,6 @@ def prepare(root: Path, cache: Path) -> tuple[dict[str, bytes], dict]:
             if row.get("source_code_sha256") and digest(body) != row["source_code_sha256"]:
                 raise ValueError("Pinned code-body checksum mismatch: " + title + " " + name)
 
-        source_id = SMASH_SOURCE if title == "01006A800016E000" else HAMLET_SOURCE
-        archive_path = "archive/" + source_id + "/" + title + "/" + bid + ".txt"
         output[archive_path] = data
         source_rows[source_id].append({
             "title_id": title, "build_id": bid, "source_url": url,
@@ -298,6 +313,9 @@ def verify(root: Path, cache: Path) -> dict:
             missing.append(relative)
     if missing:
         raise ValueError("Missing or changed preserved files: " + ", ".join(missing))
+    report = json.loads((root / "research/switch-exact-build-coverage-v1.json").read_text("utf-8"))
+    if report["counts"]["archived_exact_sections"] != EXPECTED_COUNT or report["counts"]["linked_only_sections"] != 0:
+        raise ValueError("Exact-build source coverage is incomplete")
     return {"status": "preserved_in_cheatarium", **result, "all_files_match": True}
 
 
