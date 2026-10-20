@@ -11,6 +11,7 @@ on:
       - "crates/cheatarium-client/src/bin/eden_curated_readiness.rs"
       - "crates/cheatarium-client/src/bin/eden_plan.rs"
       - "crates/cheatarium-client/src/bin/eden_private.rs"
+      - "crates/cheatarium-client/src/bin/eden_install.rs"
       - "crates/cheatarium-client/src/bin/eden_personal_coverage.rs"
       - "research/switch-personal-curation-v1.json"
       - "tools/curate_switch_private.py"
