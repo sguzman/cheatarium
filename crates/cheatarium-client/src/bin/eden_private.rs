@@ -261,11 +261,13 @@ pub(super) fn preview_isolated(
     let mut names = std::collections::BTreeSet::new();
     for cheat in &mut preview.proposed_addons {
         let original = Path::new(&cheat.proposed_mod_path);
-        let relative = original.strip_prefix(&title_root)
+        let relative = original
+            .strip_prefix(&title_root)
             .map_err(|_| "Private add-on path unexpectedly outside Title ID directory")?;
         let mut parts = relative.components();
         let addon = match parts.next() {
-            Some(Component::Normal(value)) => value.to_str()
+            Some(Component::Normal(value)) => value
+                .to_str()
                 .ok_or("Private add-on name is not valid Unicode")?,
             _ => return Err("Private add-on path has no regular name".into()),
         };
@@ -281,8 +283,11 @@ pub(super) fn preview_isolated(
             return Err("Duplicate private add-on name after namespacing".into());
         }
         cheat.proposed_mod_path = title_root
-            .join(isolated).join("cheats").join(format!("{build}.txt"))
-            .to_string_lossy().into_owned();
+            .join(isolated)
+            .join("cheats")
+            .join(format!("{build}.txt"))
+            .to_string_lossy()
+            .into_owned();
     }
     Ok(preview)
 }
@@ -341,10 +346,17 @@ mod tests {
         assert!(!preview.installation_allowed);
         // An older user-managed add-on with the same readable heading
         // must survive the new private installation unmodified.
-        let legacy = mod_root.join(title).join("Infinite Health")
-            .join("cheats").join(format!("{id}.txt"));
+        let legacy = mod_root
+            .join(title)
+            .join("Infinite Health")
+            .join("cheats")
+            .join(format!("{id}.txt"));
         fs::create_dir_all(legacy.parent().unwrap()).unwrap();
-        fs::write(&legacy, "[Existing user mod]\\n04000000 11111111 22222222\\n").unwrap();
+        fs::write(
+            &legacy,
+            "[Existing user mod]\\n04000000 11111111 22222222\\n",
+        )
+        .unwrap();
         let unchanged_user_mod = fs::read(&legacy).unwrap();
         let installed =
             super::super::eden_install::install(&bundle, &preview, &mod_root, &config).unwrap();
@@ -366,7 +378,8 @@ mod tests {
         assert!(config_after.contains("Cheatarium - Infinite Health"));
         assert!(super::super::eden_install::already_installed_unchanged(
             &bundle, &preview, &mod_root, &config,
-        ).unwrap());
+        )
+        .unwrap());
         // The same data cannot silently replace an existing live mod.
         assert!(
             super::super::eden_install::install(&bundle, &preview, &mod_root, &config,).is_err()
