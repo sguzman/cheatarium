@@ -492,6 +492,73 @@ mod tests {
         fs::remove_dir_all(base).unwrap();
     }
     #[test]
+    fn external_smash_receipt_is_bound_to_pinned_source_and_private_bytes() {
+        let base = std::env::temp_dir().join(format!(
+            "cheatarium-private-external-{}-{:?}",
+            std::process::id(), std::thread::current().id()
+        ));
+        let title = "01006A800016E000";
+        let build = "CBD5A9B56EA859BA";
+        let url = "https://www.imwmi.com/cheats/2025.html";
+        let private_root = base.join("cache");
+        fs::create_dir_all(private_root.join(title)).unwrap();
+        let manifest = base.join("manifest.json");
+        let input = serde_json::json!({
+            "format": "cheatarium-user-switch-cheat-source-curation-v1",
+            "upstream": {"snapshot_commit": "a".repeat(40)},
+            "games": [{
+                "title_id": title, "title": "Smash",
+                "hamlet_builds": [],
+                "static_nsp_observation": {
+                    "status": "main_nso_extracted_from_local_nsp",
+                    "cheat_build_id": build, "pinned_native_cheat_sections_matched": 0
+                },
+                "exact_build_external_sources": [{
+                    "source_id": "panda-smash-1302",
+                    "source_url": url,
+                    "build_id": build
+                }]
+            }]
+        });
+        fs::write(&manifest, serde_json::to_vec(&input).unwrap()).unwrap();
+        let mut body = String::new();
+        for i in 0..25usize {
+            body.push_str(&format!("[Test {i}]\n04000000 {i:08X} 00000001\n\n"));
+        }
+        let bytes = body.as_bytes();
+        fs::write(private_root.join(title).join(format!("{build}.txt")), bytes).unwrap();
+        let receipt = private_root.join(title).join(format!("{build}.source.json"));
+        let mut data = serde_json::json!({
+            "format": "cheatarium-private-external-native-source-v1",
+            "title_id": title, "build_id": build,
+            "source_id": "panda-smash-1302", "source_url": url,
+            "section_count": 25,
+            "body_sha256": format!("{:x}", Sha256::digest(bytes)),
+            "gameplay_verified": false
+        });
+        fs::write(&receipt, serde_json::to_vec(&data).unwrap()).unwrap();
+        let (bundle, exact) = load_exact(&manifest, &private_root, title).unwrap();
+        assert_eq!(exact, build);
+        assert_eq!(bundle.records.len(), 1);
+        assert_eq!(bundle.records[0].codes.len(), 25);
+        assert_eq!(bundle.records[0].provenance.source_id, "external_smash_private_curated");
+        let mod_root = base.join("eden/load");
+        let preview = super::super::preview_readable(&bundle, title, build, &mod_root).unwrap();
+        assert_eq!(preview.source_filter, "private_exact_static_nsp_native_source");
+        assert_eq!(preview.proposed_addons.len(), 25);
+        assert!(preview.rejected_entries.is_empty());
+        assert!(!preview.installation_allowed);
+        data["body_sha256"] = serde_json::json!("0".repeat(64));
+        fs::write(&receipt, serde_json::to_vec(&data).unwrap()).unwrap();
+        assert!(load_exact(&manifest, &private_root, title).is_err());
+        data["body_sha256"] = serde_json::json!(format!("{:x}", Sha256::digest(bytes)));
+        data["source_url"] = serde_json::json!("https://unexpected.invalid/");
+        fs::write(&receipt, serde_json::to_vec(&data).unwrap()).unwrap();
+        assert!(load_exact(&manifest, &private_root, title).is_err());
+        fs::remove_dir_all(base).unwrap();
+    }
+
+    #[test]
     fn missing_exact_static_build_fails_closed() {
         let root = std::env::temp_dir().join(format!(
             "cheatarium-private-smash-{}-{:?}",
