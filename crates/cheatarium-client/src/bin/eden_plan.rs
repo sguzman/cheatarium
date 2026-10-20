@@ -820,6 +820,7 @@ fn run() -> Result<(), ErrBox> {
     let mut mod_root = default_mod_root();
     let mut stage_dir = None;
     let mut private_curation = false;
+    let mut eden_process_report = false;
     let mut replace_existing_cheats = false;
     let mut private_root = eden_private::default_root();
     let mut private_manifest = PathBuf::from("research/switch-personal-curation-v1.json");
@@ -847,6 +848,7 @@ fn run() -> Result<(), ErrBox> {
             "--config" => config = PathBuf::from(args.next().ok_or("--config requires a path")?),
             "--install" => install = true,
             "--private-curation" => private_curation = true,
+            "--eden-process-report" => eden_process_report = true,
             "--replace-existing-cheats" => replace_existing_cheats = true,
             "--private-root" => {
                 private_root = PathBuf::from(
@@ -902,11 +904,29 @@ fn run() -> Result<(), ErrBox> {
             }
             "--json" => {}
             "--help" | "-h" => {
-                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nFile-only preview: --dry-run --historical-main-only --only-title-id TITLE --files-only.\nFile-only install: --install --historical-main-only --only-title-id TITLE --files-only. No qt-config.ini writes.\nLegacy folder rename: --rename-installed --historical-main-only --only-title-id TITLE --files-only [--dry-run].\nAfter review, the disabled-by-default installer is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nPrivate staged exact NSP build: --private-curation --title-id TITLE [--stage-dir ABSOLUTE_DIR | --install]. Writes disabled-by-default if installed; Eden must be closed.\nOpt-in legacy overwrite: --private-curation --title-id TITLE --install --replace-existing-cheats (validates and privately backs up conflicting old cheats).\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
+                println!("Review every game and cheat without writing:\n  cheatarium-eden-plan --db generated/v1 --dry-run --report\nConservative historical main-only preview: --dry-run --historical-main-only --report\nFile-only preview: --dry-run --historical-main-only --only-title-id TITLE --files-only.\nFile-only install: --install --historical-main-only --only-title-id TITLE --files-only. No qt-config.ini writes.\nLegacy folder rename: --rename-installed --historical-main-only --only-title-id TITLE --files-only [--dry-run].\nAfter review, the disabled-by-default installer is available with --install --historical-main-only.\nHistorical evidence is NOT proof of the currently installed executable.\nRead-only Eden process diagnostics: --eden-process-report (shows PID, state, executable and command; no writes).\nPrivate staged exact NSP build: --private-curation --title-id TITLE [--stage-dir ABSOLUTE_DIR | --install]. Writes disabled-by-default if installed; Eden must be closed.\nOpt-in legacy overwrite: --private-curation --title-id TITLE --install --replace-existing-cheats (validates and privately backs up conflicting old cheats).\nDetailed JSON: --dry-run --json\nOnly after review, run --install to create disabled cheat add-ons. No IDs required. Options: --config, --cache-dir, --mods-root, --log, --history-file for portable Eden setups.");
                 return Ok(());
             }
             _ => return Err(format!("Unknown option: {arg}").into()),
         }
+    }
+    if eden_process_report {
+        if private_curation || auto || install || stage_dir.is_some() || dry_run
+            || rename_installed || files_only || replace_existing_cheats
+            || title.is_some() || build.is_some() || only_title_id.is_some()
+        {
+            return Err("--eden-process-report must be used alone; it performs no installation".into());
+        }
+        let processes = eden_install::eden_process_report()?;
+        println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+            "format": "cheatarium-eden-process-report-v1",
+            "read_only": true,
+            "live_eden_processes": processes.len(),
+            "processes": processes,
+            "installation_safe_when_zero": true,
+            "note": "This is only process inspection; it does not prove an installed game Build ID or cheat compatibility."
+        }))?);
+        return Ok(());
     }
     if replace_existing_cheats && (!private_curation || !install || stage_dir.is_some()) {
         return Err("--replace-existing-cheats requires --private-curation --title-id TITLE --install without --stage-dir".into());
