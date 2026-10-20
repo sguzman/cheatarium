@@ -81,7 +81,7 @@ class SaveSwitchTests(TestCase):
                 # One corrupted archived original must never be overwritten.
                 saved = root / "archive/switch-exact-hamlet/0100000000010000/B424BE150A8E7D78.txt"
                 saved.write_bytes(b"tampered")
-                with self.assertRaisesRegex(ValueError, "Refusing to alter"):
+                with self.assertRaisesRegex(ValueError, "Preserved source integrity mismatch"):
                     saver.save_files(root, saver.prepare(root, root)[0])
 
 
