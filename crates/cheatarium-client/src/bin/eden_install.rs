@@ -1030,7 +1030,7 @@ pub(super) fn replace_legacy_private(
     config: &Path,
     backup_root: &Path,
 ) -> Result<ReplacedLegacy, ErrBox> {
-    if selection.source_filter != "private_pinned_hamlet_exact_static_nsp" {
+    if selection.source_filter != "private_exact_static_nsp_native_source" {
         return Err("Legacy replacement requires a curated private source".into());
     }
     eden_not_running()?;
