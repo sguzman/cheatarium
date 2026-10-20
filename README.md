@@ -30,6 +30,7 @@ This is primarily a **console and handheld game** archive. The goal is a fun, se
 
 - [Curated games](curated/) — human-friendly cheats grouped by platform and game, including versions and code formats.
 - [Curated Switch games](curated/switch/) — native code variants indexed by exact Build ID, with preserved archive provenance.
+- [Switch exact-build source coverage](research/switch-exact-build-coverage-v1.json) — six-title, section-level accounting of archived native codes versus source-only references; no claims of emulator or gameplay verification.
 - [Original archives](archive/) — unmodified, attributable imports in their original formats.
 - [Historical Libretro preservation gap](docs/HISTORICAL-LIBRETRO.md) — pinned Emupedia-era byte-overlap audit, rights-limited.
 - [New bulk-source byte gap audit](generated/v1/reports/bulk-scout-exact-byte-gaps.json) — four pinned source inventories compared against all archived originals and existing external metadata, without copying code.
