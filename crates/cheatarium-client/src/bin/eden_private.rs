@@ -246,6 +246,46 @@ pub(super) fn load_exact(
     ))
 }
 
+/// Namespace private cheat add-ons so ordinary existing Eden mods with
+/// matching human-readable names are preserved rather than overwritten.
+/// The derived names are stable across retries; no install paths are reused
+/// from the unscoped archive or from older user-managed cheats.
+pub(super) fn preview_isolated(
+    bundle: &Bundle,
+    title: &str,
+    build: &str,
+    mods_root: &Path,
+) -> Result<super::Preview, ErrBox> {
+    let mut preview = super::preview_readable(bundle, title, build, mods_root)?;
+    let title_root = mods_root.join(title);
+    let mut names = std::collections::BTreeSet::new();
+    for cheat in &mut preview.proposed_addons {
+        let original = Path::new(&cheat.proposed_mod_path);
+        let relative = original.strip_prefix(&title_root)
+            .map_err(|_| "Private add-on path unexpectedly outside Title ID directory")?;
+        let mut parts = relative.components();
+        let addon = match parts.next() {
+            Some(Component::Normal(value)) => value.to_str()
+                .ok_or("Private add-on name is not valid Unicode")?,
+            _ => return Err("Private add-on path has no regular name".into()),
+        };
+        if !matches!(parts.next(), Some(Component::Normal(x)) if x == "cheats")
+            || !matches!(parts.next(), Some(Component::Normal(x)) if x == format!("{build}.txt"))
+            || parts.next().is_some()
+        {
+            return Err("Private add-on path has unexpected layout".into());
+        }
+        let isolated = format!("Cheatarium - {addon}");
+        if !names.insert(isolated.clone()) {
+            return Err("Duplicate private add-on name after namespacing".into());
+        }
+        cheat.proposed_mod_path = title_root
+            .join(isolated).join("cheats").join(format!("{build}.txt"))
+            .to_string_lossy().into_owned();
+    }
+    Ok(preview)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -291,15 +331,23 @@ mod tests {
         fs::create_dir_all(&mod_root).unwrap();
         let config = base.join("qt-config.ini");
         fs::write(&config, "[General]\nexample=true\n").unwrap();
-        let preview = super::super::preview_readable(&bundle, title, &id, &mod_root).unwrap();
+        let preview = preview_isolated(&bundle, title, &id, &mod_root).unwrap();
         assert_eq!(preview.proposed_addons.len(), 1);
         assert_eq!(
             preview.source_filter,
             "private_pinned_hamlet_exact_static_nsp"
         );
         assert!(!preview.installation_allowed);
+        // An older user-managed add-on with the same readable heading
+        // must survive the new private installation unmodified.
+        let legacy = mod_root.join(title).join("Infinite Health")
+            .join("cheats").join(format!("{id}.txt"));
+        fs::create_dir_all(legacy.parent().unwrap()).unwrap();
+        fs::write(&legacy, "[Existing user mod]\\n04000000 11111111 22222222\\n").unwrap();
+        let unchanged_user_mod = fs::read(&legacy).unwrap();
         let installed =
             super::super::eden_install::install(&bundle, &preview, &mod_root, &config).unwrap();
+        assert_eq!(fs::read(&legacy).unwrap(), unchanged_user_mod);
         let report = serde_json::to_value(installed).unwrap();
         assert_eq!(report["activation_state"], "installed_disabled_by_default");
         assert_eq!(report["installed_build_id_verified"], false);
@@ -310,10 +358,14 @@ mod tests {
         assert!(config_after.contains("Infinite Health"));
         assert!(mod_root
             .join(title)
-            .join("Infinite Health")
+            .join("Cheatarium - Infinite Health")
             .join("cheats")
             .join(format!("{id}.txt"))
             .is_file());
+        assert!(config_after.contains("Cheatarium - Infinite Health"));
+        assert!(super::super::eden_install::already_installed_unchanged(
+            &bundle, &preview, &mod_root, &config,
+        ).unwrap());
         // The same data cannot silently replace an existing live mod.
         assert!(
             super::super::eden_install::install(&bundle, &preview, &mod_root, &config,).is_err()
