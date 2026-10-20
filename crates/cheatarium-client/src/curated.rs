@@ -83,6 +83,8 @@ struct Options {
     build_id: Option<String>,
     source_id: Option<String>,
     with_code: bool,
+    coverage: bool,
+    only_missing: bool,
     json: bool,
     limit: usize,
     offset: usize,
@@ -205,6 +207,89 @@ fn search(opts: &Options) -> Result<Vec<Match>, ErrBox> {
     Ok(results)
 }
 
+
+fn coverage_rows(opts: &Options) -> Result<Vec<serde_json::Value>, ErrBox> {
+    if opts.platform.as_deref().is_some_and(|p| p != "switch") {
+        return Ok(Vec::new());
+    }
+    if opts.source_id.is_some() || opts.with_code {
+        return Err("Coverage metadata does not support --source-id or --with-code".into());
+    }
+    let file = opts.root.join("research/switch-exact-build-coverage-v1.json");
+    let meta = fs::symlink_metadata(&file)?;
+    if meta.file_type().is_symlink() || !meta.is_file() || meta.len() > MAX_GAME_BYTES {
+        return Err("Invalid Switch coverage report file".into());
+    }
+    let data: serde_json::Value = serde_json::from_slice(&fs::read(file)?)?;
+    if data["format"] != "cheatarium-switch-exact-build-coverage-v1" {
+        return Err("Unexpected Switch coverage format".into());
+    }
+    let mut rows = Vec::new();
+    for game in data["games"].as_array().ok_or("Missing Switch coverage games")? {
+        let game_title = game["title"].as_str().ok_or("Missing game title")?;
+        let game_id = game["title_id"].as_str().ok_or("Missing game Title ID")?;
+        let game_build = game["build_id"].as_str().ok_or("Missing Build ID")?;
+        if !(includes(game_title, opts.title.as_deref()) ||
+             includes(game_id, opts.title.as_deref())) ||
+            opts.build_id.as_deref().is_some_and(|b| b != game_build) {
+            continue;
+        }
+        for section in game["sections"].as_array().ok_or("Missing section list")? {
+            let heading = section["heading"].as_str().ok_or("Missing source heading")?;
+            let state = section["state"].as_str().ok_or("Missing archival state")?;
+            if !includes(heading, opts.effect.as_deref()) ||
+                opts.only_missing && state != "linked_only_no_public_code_body" {
+                continue;
+            }
+            rows.push(serde_json::json!({
+                "game_title": game_title,
+                "title_id": game_id,
+                "build_id": game_build,
+                "heading": heading,
+                "state": state,
+                "curated_cheat_id": section["curated_cheat_id"],
+                "archive_path": section["archive_path"],
+                "source": game["source"]
+            }));
+        }
+    }
+    Ok(rows)
+}
+
+fn show_coverage(opts: &Options) -> Result<(), ErrBox> {
+    let all = coverage_rows(opts)?;
+    let count = all.len();
+    let missing = all.iter().filter(|row|
+        row["state"] == "linked_only_no_public_code_body").count();
+    let returned: Vec<_> = all.into_iter().skip(opts.offset).take(opts.limit).collect();
+    if opts.json {
+        println!("{}", serde_json::to_string_pretty(&serde_json::json!({
+            "schema": "cheatarium.curated_coverage.v1",
+            "read_only": true,
+            "metadata_only_for_missing_codes": true,
+            "active_emulator_modified": false,
+            "matched_sections": count,
+            "archived_sections": count - missing,
+            "source_only_sections": missing,
+            "offset": opts.offset,
+            "returned": returned.len(),
+            "has_more": opts.offset.saturating_add(returned.len()) < count,
+            "results": returned
+        }))?);
+    } else {
+        println!("{} exact-build sections: {} archived, {} source-only; none activated",
+            count, count - missing, missing);
+        for row in returned {
+            println!("{} | {} | {} | {}",
+                row["game_title"].as_str().unwrap_or("Unknown game"),
+                row["build_id"].as_str().unwrap_or("?"),
+                row["heading"].as_str().unwrap_or("?"),
+                row["state"].as_str().unwrap_or("?"));
+        }
+    }
+    Ok(())
+}
+
 pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
     let mut opts = Options::defaults();
     while let Some(arg) = args.next() {
@@ -222,6 +307,8 @@ pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
                 opts.build_id = Some(value.to_ascii_uppercase());
             }
             "--with-code" => opts.with_code = true,
+            "--coverage" => opts.coverage = true,
+            "--only-missing" => opts.only_missing = true,
             "--json" => opts.json = true,
             "--offset" => opts.offset = args.next().ok_or("--offset requires an integer")?.parse()?,
             "--limit" => {
@@ -231,11 +318,17 @@ pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
                 }
             }
             "--help" => {
-                println!("Usage: cheatarium-query curated [--root .] [--platform switch] [--title Mario] [--effect Health] [--build-id E968832CADE2AD7C] [--source-id sharkive] [--with-code] [--offset 0] [--limit 25] [--json]");
+                println!("Usage: cheatarium-query curated [--root .] [--platform switch] [--title Mario] [--effect Health] [--build-id E968832CADE2AD7C] [--source-id sharkive] [--with-code] [--coverage --only-missing] [--offset 0] [--limit 25] [--json]");
                 return Ok(());
             }
             _ => return Err(format!("Unknown curated option: {arg}").into()),
         }
+    }
+    if opts.coverage {
+        return show_coverage(&opts);
+    }
+    if opts.only_missing {
+        return Err("--only-missing requires --coverage".into());
     }
     let rows = search(&opts)?;
     let total = rows.len();
@@ -301,5 +394,19 @@ mod tests {
             ..Options::defaults()
         }).unwrap();
         assert!(results.is_empty());
+    }
+
+    #[test]
+    fn exact_build_coverage_reports_all_six_games_without_rehosting_code() {
+        let opts = Options { root: repository(), platform: Some("switch".into()),
+            coverage: true, only_missing: true, ..Options::defaults() };
+        let rows = coverage_rows(&opts).expect("six-title coverage");
+        assert_eq!(rows.len(), 123);
+        assert!(rows.iter().all(|row| row["state"] == "linked_only_no_public_code_body"));
+        let skyward = coverage_rows(&Options {
+            title: Some("Skyward Sword".into()), ..opts
+        }).unwrap();
+        assert_eq!(skyward.len(), 47);
+        assert!(skyward.iter().all(|row| row["build_id"] == "D824D4B1BBD45D03"));
     }
 }
