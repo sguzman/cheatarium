@@ -1,0 +1,1837 @@
+{
+  "schema_version": 1,
+  "platform": "switch",
+  "game": {
+    "id": "super-mario-rpg",
+    "title": "Super Mario RPG"
+  },
+  "editions": [
+    {
+      "id": "build-97f9664cfb272154",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "97F9664CFB272154"
+    }
+  ],
+  "cheats": [
+    {
+      "id": "super-mario-rpg-global-v65536-tid-0100bc0018138000-bid-97f9664cfb-97f9664cfb272154-001",
+      "name": "Super Mario RPG (GLOBAL) v65536 TID=0100BC0018138000 BID=97F9664CFB272154",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency. Source annotation: {IPS patch required or cheats won't work}",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "080E0000 02323F68 00000000 00000000\n080E0000 02323F70 00000000 00000000\n080E0000 02323F78 00000000 00000000\n080E0000 02323F80 00000000 00000000\n080E0000 02323F88 00000000 00000000\n080E0000 02323F90 00000000 00000000\n080E0000 02323F98 00000000 00000000\n080E0000 02323FA0 00000000 00000000\n080E0000 02323FA8 00000000 00000000\n080E0000 02323FB0 00000000 00000000\n080E0000 02323FB8 00000000 00000000\n080E0000 02323FC0 00000000 00000000\n080E0000 02323FC8 00000000 00000000\n080E0000 02323FD0 00000000 00000000\n080E0000 02323FD8 00000000 00000000\n080E0000 02323FE0 00000000 00000000\n080E0000 02323FE8 00000000 00000000\n080E0000 02323FF0 00000000 00000000\n080E0000 02323FF8 00000000 00000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1-inf-hp-97f9664cfb272154-003",
+      "name": "1. Inf. HP",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F68 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2-inf-mp-flower-power-97f9664cfb272154-004",
+      "name": "2. Inf. MP (Flower Power)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F78 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3-inf-item-usage-97f9664cfb272154-005",
+      "name": "3. Inf. Item Usage",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F7C 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4a-star-power-invincible-97f9664cfb272154-007",
+      "name": "4a Star Power (Invincible)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F6C 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4b-star-power-hotkey-minus-toggles-97f9664cfb272154-008",
+      "name": "4b Star Power Hotkey (Minus Toggles)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "54000000 02323F58\n54010000 02323F5C\n040E0000 02323F5C 00000000\n80000800\n040E0000 02323F5C 00000001\nC0451400 00000000\nC0450400 00000000\n040E0000 02323F58 00000001\n20000000\nC0460400 00000000\n040E0000 02323F58 00000000\n58030000 03A579D8\nC0863400 00000000 00000000\n58031000 00000000\nC0863400 00000000 00000000\n58031000 000000B8\nC0863400 00000000 00000000\n78030000 00000170\n64030000 00000000 3DCCCCCD\n20000000\n20000000\n20000000\n20000000\n20000000\n20000000\n54020000 02323F58\nC0462400 00000000\n040E0000 02323F6C 00000001\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4c-star-power-hotkey-minus-gives-a-10-s-star-97f9664cfb272154-009",
+      "name": "4c Star Power Hotkey (Minus Gives a 10 s Star)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "54010000 02323F60\n040E0000 02323F60 00000000\n80000800\n040E0000 02323F60 00000001\nC0451400 00000000\n040E0000 02323F74 00000001\n20000000\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "star-power-end-97f9664cfb272154-010",
+      "name": "Star Power end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5a-party-starts-battles-with-attack-up-and-defense-up-97f9664cfb272154-012",
+      "name": "5a Party Starts Battles With Attack Up and Defense Up",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F80 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5b-party-starts-battles-behind-a-barrier-99-97f9664cfb272154-013",
+      "name": "5b Party Starts Battles Behind a Barrier (99)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F80 00000002",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5c-party-starts-battles-with-both-buffs-and-a-barrier-97f9664cfb272154-014",
+      "name": "5c Party Starts Battles With Both Buffs and a Barrier",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F80 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "party-starts-battles-end-97f9664cfb272154-015",
+      "name": "Party Starts Battles end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "party-end-97f9664cfb272154-016",
+      "name": "Party end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6-100-hit-chance-97f9664cfb272154-018",
+      "name": "6. 100% Hit Chance",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F84 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7-always-succeed-at-running-away-97f9664cfb272154-019",
+      "name": "7. Always Succeed At Running Away",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F88 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8-always-special-enemies-97f9664cfb272154-020",
+      "name": "8. Always Special Enemies",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F8C 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9-action-gauge-always-full-97f9664cfb272154-021",
+      "name": "9. Action Gauge Always Full",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F90 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "10-999-chain-after-successful-chain-97f9664cfb272154-022",
+      "name": "10. 999 Chain (After Successful Chain)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F94 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "11-always-perfect-super-ultra-jumps-hold-zr-to-stop-jumping-97f9664cfb272154-023",
+      "name": "11. Always Perfect Super & Ultra Jumps (Hold ZR to Stop Jumping)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F98 00000001\n040E0000 01B748C4 37000160\n80000200\n040E0000 01B748C4 D503201F\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "12a-auto-action-commands-atk-only-97f9664cfb272154-025",
+      "name": "12a Auto Action Commands (Atk Only)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F9C 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "12b-auto-action-commands-both-atk-and-def-97f9664cfb272154-026",
+      "name": "12b Auto Action Commands (Both Atk and Def)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FA0 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "auto-action-commands-end-97f9664cfb272154-027",
+      "name": "Auto Action Commands end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "13a-enemies-are-0-to-50-stronger-per-enemy-97f9664cfb272154-029",
+      "name": "13a Enemies Are 0% to 50% Stronger (Per Enemy)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 0111D844 3F800000\n040E0000 0111D840 3FC00000\n040E0000 02323FA4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "13b-enemies-are-50-to-100-stronger-per-enemy-97f9664cfb272154-030",
+      "name": "13b Enemies Are 50% to 100% Stronger (Per Enemy)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 0111D844 3FC00000\n040E0000 0111D840 40000000\n040E0000 02323FA4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "13c-enemies-are-100-to-200-stronger-per-enemy-97f9664cfb272154-031",
+      "name": "13c Enemies Are 100% to 200% Stronger (Per Enemy)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 0111D844 40000000\n040E0000 0111D840 40400000\n040E0000 02323FA4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "13d-enemies-are-50-weaker-97f9664cfb272154-032",
+      "name": "13d Enemies Are 50% Weaker",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 0111D844 3F000000\n040E0000 0111D840 3F000000\n040E0000 02323FA4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "13e-enemies-are-75-weaker-97f9664cfb272154-033",
+      "name": "13e Enemies Are 75% Weaker",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 0111D844 3E800000\n040E0000 0111D840 3E800000\n040E0000 02323FA4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "13f-enemies-have-1-hp-97f9664cfb272154-034",
+      "name": "13f Enemies Have 1 HP",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FA8 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "enemies-end-97f9664cfb272154-035",
+      "name": "Enemies end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14a-player-dmg-multiplier-0-5x-97f9664cfb272154-037",
+      "name": "14a Player Dmg Multiplier (0.5x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FAC BF000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14b-player-dmg-multiplier-1x-97f9664cfb272154-038",
+      "name": "14b Player Dmg Multiplier (1x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FAC 00000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14c-player-dmg-multiplier-1-5x-97f9664cfb272154-039",
+      "name": "14c Player Dmg Multiplier (1.5x) ★",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FAC 3F000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14d-player-dmg-multiplier-2x-97f9664cfb272154-040",
+      "name": "14d Player Dmg Multiplier (2x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FAC 3F800000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14e-player-dmg-multiplier-3x-97f9664cfb272154-041",
+      "name": "14e Player Dmg Multiplier (3x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FAC 40000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14f-player-dmg-multiplier-4x-97f9664cfb272154-042",
+      "name": "14f Player Dmg Multiplier (4x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FAC 40400000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14g-player-dmg-multiplier-5x-97f9664cfb272154-043",
+      "name": "14g Player Dmg Multiplier (5x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FAC 40800000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "player-dmg-multiplier-end-97f9664cfb272154-044",
+      "name": "Player Dmg Multiplier end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15a-enemy-dmg-multiplier-0x-97f9664cfb272154-046",
+      "name": "15a Enemy Dmg Multiplier (0x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 BF800000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15b-enemy-dmg-multiplier-0-5x-97f9664cfb272154-047",
+      "name": "15b Enemy Dmg Multiplier (0.5x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 BF000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15c-enemy-dmg-multiplier-1x-97f9664cfb272154-048",
+      "name": "15c Enemy Dmg Multiplier (1x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 00000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15d-enemy-dmg-multiplier-2x-97f9664cfb272154-049",
+      "name": "15d Enemy Dmg Multiplier (2x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 3F800000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15e-enemy-dmg-multiplier-3x-97f9664cfb272154-050",
+      "name": "15e Enemy Dmg Multiplier (3x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 40000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15f-enemy-dmg-multiplier-4x-97f9664cfb272154-051",
+      "name": "15f Enemy Dmg Multiplier (4x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 40400000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15g-enemy-dmg-multiplier-5x-97f9664cfb272154-052",
+      "name": "15g Enemy Dmg Multiplier (5x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 40800000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15h-enemy-dmg-multiplier-10x-97f9664cfb272154-053",
+      "name": "15h Enemy Dmg Multiplier (10x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB0 41100000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "enemy-dmg-multiplier-end-97f9664cfb272154-054",
+      "name": "Enemy Dmg Multiplier end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "battle-end-97f9664cfb272154-055",
+      "name": "Battle end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "16-bonus-flower-always-drops-97f9664cfb272154-057",
+      "name": "16. Bonus Flower Always Drops",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "17-force-item-drop-edit-this-must-use-with-100-drop-rate-97f9664cfb272154-058",
+      "name": "17. Force Item Drop (EDIT THIS - Must use with 100% Drop Rate)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FB8 00000040",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "set-the-first-value-of-this-entry-to-the-item-id-to-drop-97f9664cfb272154-059",
+      "name": "ツ Set the first value of this entry to the item ID to drop. ツ",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "400F0000 00000000 00000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "18a-100-item-drop-rate-normal-drop-only-97f9664cfb272154-061",
+      "name": "18a 100% Item Drop Rate (Normal Drop Only)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FBC 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "18b-100-item-drop-rate-prefer-rare-item-drop-97f9664cfb272154-062",
+      "name": "18b 100% Item Drop Rate (Prefer Rare Item Drop)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC0 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "100-item-drop-rate-end-97f9664cfb272154-063",
+      "name": "100% Item Drop Rate end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "19a-xp-multiplier-2x-97f9664cfb272154-065",
+      "name": "19a XP Multiplier (2x) ★",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "19b-xp-multiplier-4x-97f9664cfb272154-066",
+      "name": "19b XP Multiplier (4x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC4 00000002",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "19c-xp-multiplier-8x-97f9664cfb272154-067",
+      "name": "19c XP Multiplier (8x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC4 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "19d-xp-multiplier-16x-97f9664cfb272154-068",
+      "name": "19d XP Multiplier (16x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC4 00000004",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "xp-multiplier-end-97f9664cfb272154-069",
+      "name": "XP Multiplier end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "20a-coin-multiplier-2x-97f9664cfb272154-071",
+      "name": "20a Coin Multiplier (2x) ★",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC8 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "20b-coin-multiplier-4x-97f9664cfb272154-072",
+      "name": "20b Coin Multiplier (4x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC8 00000002",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "20c-coin-multiplier-8x-97f9664cfb272154-073",
+      "name": "20c Coin Multiplier (8x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC8 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "20d-coin-multiplier-16x-97f9664cfb272154-074",
+      "name": "20d Coin Multiplier (16x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FC8 00000004",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "coin-multiplier-end-97f9664cfb272154-075",
+      "name": "Coin Multiplier end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "21a-frog-coin-multiplier-2x-97f9664cfb272154-077",
+      "name": "21a Frog Coin Multiplier (2x) ★",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FCC 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "21b-frog-coin-multiplier-4x-97f9664cfb272154-078",
+      "name": "21b Frog Coin Multiplier (4x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FCC 00000002",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "21c-frog-coin-multiplier-8x-97f9664cfb272154-079",
+      "name": "21c Frog Coin Multiplier (8x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FCC 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "21d-frog-coin-multiplier-16x-97f9664cfb272154-080",
+      "name": "21d Frog Coin Multiplier (16x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FCC 00000004",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frog-coin-multiplier-end-97f9664cfb272154-081",
+      "name": "Frog Coin Multiplier end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rewards-end-97f9664cfb272154-082",
+      "name": "Rewards end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "22-all-items-cost-0-coins-97f9664cfb272154-084",
+      "name": "22. All Items Cost 0 Coins",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FD0 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "23-free-purchases-coins-frog-coins-97f9664cfb272154-085",
+      "name": "23. Free Purchases (Coins & Frog Coins)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FD4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "24-add-1-of-every-single-item-after-buying-anything-97f9664cfb272154-086",
+      "name": "24. Add 1 of Every Single Item (After Buying Anything)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FD8 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "also-adds-key-items-this-may-affect-progress-97f9664cfb272154-087",
+      "name": "ツ Also adds key items; this may affect progress. ツ",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "400F0000 00000000 00000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "25-all-consumable-items-check-storage-box-97f9664cfb272154-088",
+      "name": "25. All Consumable Items (Check Storage Box)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FDC 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "26-have-5-of-all-shared-gear-use-any-item-after-97f9664cfb272154-089",
+      "name": "26. Have (5) of All Shared Gear (Use Any Item After)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "580F0000 032A5D38\nC086F400 00000000 00000000\n580F1000 000000B8\nC086F400 00000000 00000000\n580F1000 00000000\nC086F400 00000000 00000000\n580F1000 00000130\nC086F400 00000000 00000000\n580F1000 00000070\nC086F400 00000000 00000000\n580F1000 00000010\nC086F400 00000000 00000000\n400E0000 00000000 000000CC\n640F01E0 00000000 00000005\n400E0000 00000000 00000120\n640F01E0 00000000 00000005\n400E0000 00000000 00000124\n640F01E0 00000000 00000005\n400E0000 00000000 0000012C\n640F01E0 00000000 00000005\n400E0000 00000000 00000130\n640F01E0 00000000 00000005\n400E0000 00000000 00000134\n640F01E0 00000000 00000005\n400E0000 00000000 00000138\n640F01E0 00000000 00000005\n400E0000 00000000 0000013C\n640F01E0 00000000 00000005\n400E0000 00000000 00000140\n640F01E0 00000000 00000005\n400E0000 00000000 00000148\n640F01E0 00000000 00000005\n400E0000 00000000 0000014C\n640F01E0 00000000 00000005\n400E0000 00000000 00000150\n640F01E0 00000000 00000005\n400E0000 00000000 00000154\n640F01E0 00000000 00000005\n400E0000 00000000 00000160\n640F01E0 00000000 00000005\n400E0000 00000000 00000164\n640F01E0 00000000 00000005\n400E0000 00000000 00000168\n640F01E0 00000000 00000005\n400E0000 00000000 0000016C\n640F01E0 00000000 00000005\n400E0000 00000000 00000170\n640F01E0 00000000 00000005\n400E0000 00000000 00000174\n640F01E0 00000000 00000005\n400E0000 00000000 00000178\n640F01E0 00000000 00000005\n400E0000 00000000 000002A4\n640F01E0 00000000 00000005\n400E0000 00000000 000002A8\n640F01E0 00000000 00000005\n400E0000 00000000 000002BC\n640F01E0 00000000 00000005\n20000000\n20000000\n20000000\n20000000\n20000000\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shops-and-items-end-97f9664cfb272154-090",
+      "name": "Shops and Items end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "27-ignore-encounter-trigger-97f9664cfb272154-092",
+      "name": "27. Ignore Encounter Trigger",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE8 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28a-game-speed-1x-97f9664cfb272154-094",
+      "name": "28a Game Speed (1x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F70 3F800000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28b-game-speed-1-5x-97f9664cfb272154-095",
+      "name": "28b Game Speed (1.5x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F70 3FC00000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28c-game-speed-2x-97f9664cfb272154-096",
+      "name": "28c Game Speed (2x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F70 40000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28d-game-speed-3x-97f9664cfb272154-097",
+      "name": "28d Game Speed (3x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F70 40400000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28e-game-speed-4x-97f9664cfb272154-098",
+      "name": "28e Game Speed (4x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323F70 40800000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28f-game-speed-hold-r3-for-3x-97f9664cfb272154-099",
+      "name": "28f Game Speed (Hold R3 for 3x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "80000020\n040E0000 02323F70 40400000\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "game-speed-end-97f9664cfb272154-100",
+      "name": "Game Speed end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "29a-movement-speed-multiplier-1-5x-97f9664cfb272154-102",
+      "name": "29a Movement Speed Multiplier (1.5x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE0 3FC00000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "29b-movement-speed-multiplier-1-75x-97f9664cfb272154-103",
+      "name": "29b Movement Speed Multiplier (1.75x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE0 3FE00000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "29c-movement-speed-multiplier-2x-97f9664cfb272154-104",
+      "name": "29c Movement Speed Multiplier (2x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE0 40000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "29d-movement-speed-multiplier-3x-97f9664cfb272154-105",
+      "name": "29d Movement Speed Multiplier (3x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE0 40400000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "movement-speed-multiplier-end-97f9664cfb272154-106",
+      "name": "Movement Speed Multiplier end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "30a-jump-height-multiplier-1-5x-97f9664cfb272154-108",
+      "name": "30a Jump Height Multiplier (1.5x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE4 3FC00000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "30b-jump-height-multiplier-2x-97f9664cfb272154-109",
+      "name": "30b Jump Height Multiplier (2x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE4 40000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "30c-jump-height-multiplier-3x-97f9664cfb272154-110",
+      "name": "30c Jump Height Multiplier (3x)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FE4 40400000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jump-height-multiplier-end-97f9664cfb272154-111",
+      "name": "Jump Height Multiplier end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "field-end-97f9664cfb272154-112",
+      "name": "Field end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "31-2x-reward-for-egg-shuffle-game-97f9664cfb272154-114",
+      "name": "31. 2x Reward for Egg Shuffle Game",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FEC 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "32-midas-river-no-fish-hit-s-97f9664cfb272154-115",
+      "name": "32. Midas River - No Fish Hit(s)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FF0 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "33-auto-yoshi-race-97f9664cfb272154-116",
+      "name": "33. Auto Yoshi Race",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FF4 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "34-goomba-thumping-high-score-97f9664cfb272154-117",
+      "name": "34. Goomba Thumping High Score",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FF8 00000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mini-games-end-97f9664cfb272154-118",
+      "name": "Mini Games end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "35-debug-menu-hotkey-l3-r3-opens-it-97f9664cfb272154-120",
+      "name": "35. Debug Menu Hotkey (L3+R3 Opens It)",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "040E0000 02323FFC 00000001\n80000030\n58030000 032A5400\nC0863400 00000000 00000000\n58031000 000000B8\nC0863400 00000000 00000000\n58031000 00000000\nC0863400 00000000 00000000\n78030000 0000003C\n61030000 00000000 00000001\n20000000\n20000000\n20000000\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "debug-end-97f9664cfb272154-121",
+      "name": "Debug end",
+      "kind": "patch",
+      "notes": "The archived source declares a required IPS patch; this cheat has not been validated without that dependency.",
+      "variants": [
+        {
+          "edition": "build-97f9664cfb272154",
+          "format": "atmosphere-native-switch",
+          "code": "20000001",
+          "status": "unverified",
+          "source": {
+            "source": "bad1dea-nxcheats-switch",
+            "archive_path": "archive/bad1dea-nxcheats-switch/0100BC0018138000 Super Mario RPG™/atmosphere/contents/0100BC0018138000/cheats/97F9664CFB272154.txt"
+          }
+        }
+      ]
+    }
+  ]
+}
