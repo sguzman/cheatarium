@@ -36,12 +36,20 @@ class SwitchCurationTests(unittest.TestCase):
     def test_preserved_exact_native_sections(self):
         paths = sorted((ROOT / "curated/switch").glob("*/cheats.json"))
         self.assertGreaterEqual(len(paths), 5)
+        expected_ids = {
+            "super-mario-odyssey": "0100000000010000",
+            "mario-kart-8-deluxe": "0100152000022000",
+            "the-legend-of-zelda-links-awakening": "01006BB00C6F0000",
+            "super-smash-bros-ultimate": "01006A800016E000",
+            "super-mario-rpg": "0100BC0018138000",
+        }
         total = 0
         for path in paths:
             with self.subTest(file=str(path.relative_to(ROOT))):
                 obj = json.loads(path.read_text(encoding="utf-8"))
                 self.assertEqual(obj["platform"], "switch")
                 self.assertEqual(obj["game"]["id"], path.parent.name)
+                self.assertEqual(obj["game"]["title_id"], expected_ids[path.parent.name])
                 editions = {x["id"]: x for x in obj["editions"]}
                 found = set()
                 archived: dict[str, set] = {}

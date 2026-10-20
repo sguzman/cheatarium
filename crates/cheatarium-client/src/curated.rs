@@ -24,6 +24,8 @@ struct CuratedGame {
 struct Game {
     id: String,
     title: String,
+    #[serde(default)]
+    title_id: Option<String>,
 }
 #[derive(Debug, Deserialize, Clone, Serialize)]
 struct Edition {
@@ -62,6 +64,8 @@ struct Match {
     platform: String,
     game_id: String,
     game_title: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    title_id: Option<String>,
     edition: Edition,
     cheat_id: String,
     name: String,
@@ -79,6 +83,7 @@ struct Options {
     root: PathBuf,
     platform: Option<String>,
     title: Option<String>,
+    title_id: Option<String>,
     effect: Option<String>,
     build_id: Option<String>,
     source_id: Option<String>,
@@ -156,6 +161,9 @@ fn search(opts: &Options) -> Result<Vec<Match>, ErrBox> {
                 game_dir.file_name().and_then(|p| p.to_str()) != Some(document.game.id.as_str()) {
                 return Err(format!("Curated identity mismatch: {}", file.display()).into());
             }
+            if opts.title_id.as_deref().is_some_and(|tid| document.game.title_id.as_deref() != Some(tid)) {
+                continue;
+            }
             if !includes(&document.game.title, opts.title.as_deref()) && 
                 !includes(&document.game.id, opts.title.as_deref()) {
                 continue;
@@ -190,6 +198,7 @@ fn search(opts: &Options) -> Result<Vec<Match>, ErrBox> {
                         platform: platform_id.to_owned(),
                         game_id: document.game.id.clone(),
                         game_title: document.game.title.clone(),
+                        title_id: document.game.title_id.clone(),
                         edition: (*edition).clone(),
                         cheat_id: cheat.id.clone(),
                         name: cheat.name.clone(),
@@ -229,7 +238,8 @@ fn coverage_rows(opts: &Options) -> Result<Vec<serde_json::Value>, ErrBox> {
         let game_title = game["title"].as_str().ok_or("Missing game title")?;
         let game_id = game["title_id"].as_str().ok_or("Missing game Title ID")?;
         let game_build = game["build_id"].as_str().ok_or("Missing Build ID")?;
-        if !(includes(game_title, opts.title.as_deref()) ||
+        if opts.title_id.as_deref().is_some_and(|tid| tid != game_id) ||
+            !(includes(game_title, opts.title.as_deref()) ||
              includes(game_id, opts.title.as_deref())) ||
             opts.build_id.as_deref().is_some_and(|b| b != game_build) {
             continue;
@@ -297,6 +307,13 @@ pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
             "--root" => opts.root = PathBuf::from(args.next().ok_or("--root requires a directory")?),
             "--platform" => opts.platform = Some(args.next().ok_or("--platform requires a value")?),
             "--title" => opts.title = Some(args.next().ok_or("--title requires text")?),
+            "--title-id" => {
+                let value = args.next().ok_or("--title-id requires a 16-digit hex ID")?;
+                if value.len() != 16 || !value.bytes().all(|b| b.is_ascii_hexdigit()) {
+                    return Err("--title-id must be 16 hexadecimal digits".into());
+                }
+                opts.title_id = Some(value.to_ascii_uppercase());
+            }
             "--effect" => opts.effect = Some(args.next().ok_or("--effect requires text")?),
             "--source-id" => opts.source_id = Some(args.next().ok_or("--source-id requires text")?),
             "--build-id" => {
@@ -318,7 +335,7 @@ pub fn run(mut args: impl Iterator<Item = String>) -> Result<(), ErrBox> {
                 }
             }
             "--help" => {
-                println!("Usage: cheatarium-query curated [--root .] [--platform switch] [--title Mario] [--effect Health] [--build-id E968832CADE2AD7C] [--source-id sharkive] [--with-code] [--coverage --only-missing] [--offset 0] [--limit 25] [--json]");
+                println!("Usage: cheatarium-query curated [--root .] [--platform switch] [--title Mario] [--title-id 0100BC0018138000] [--effect Health] [--build-id E968832CADE2AD7C] [--source-id sharkive] [--with-code] [--coverage --only-missing] [--offset 0] [--limit 25] [--json]");
                 return Ok(());
             }
             _ => return Err(format!("Unknown curated option: {arg}").into()),
@@ -377,6 +394,7 @@ mod tests {
         };
         let results = search(&opts).expect("repository curated collection");
         assert_eq!(results.len(), 58);
+        assert!(results.iter().all(|r| r.title_id.as_deref() == Some("0100BC0018138000")));
         assert!(results.iter().all(|r| r.code.is_none()));
         assert!(results.iter().all(|r| r.status == "unverified"));
         assert!(results.iter().all(|r| r.edition.build_id.as_deref() == Some("E968832CADE2AD7C")));

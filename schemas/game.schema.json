@@ -39,6 +39,10 @@
           "items": {
             "type": "string"
           }
+        },
+        "title_id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{16}$"
         }
       }
     },

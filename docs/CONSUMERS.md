@@ -10,12 +10,13 @@ The Rust client now reads the human-curated records directly from Cheatarium's `
 
 ```sh
 cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --title "Super Mario RPG" --build-id E968832CADE2AD7C --json
+cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --title-id 0100BC0018138000 --build-id E968832CADE2AD7C --json
 cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --title "Super Mario RPG" --build-id E968832CADE2AD7C --effect "Inf. HP" --with-code --json
 cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --source-id sharkive --effect "Infinite" --limit 25
 cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --coverage --platform switch --only-missing --title "Skyward Sword" --json
 ```
 
-Use `--root` for another Cheatarium checkout, `--offset`/`--limit` for pagination, `--title` to match title or game slug, and `--source-id` to restrict source records. By default, results **do not print executable code**; `--with-code` explicitly requests original curated code strings. The results include exact source archive paths, editions and 16-character Switch Build IDs. Matching a Build ID from a curated file is **not** verification against the current running game, and neither indexing nor displaying a cheat means it works.
+Use `--title-id` to select a Switch title without relying on its displayed name; use `--root` for another Cheatarium checkout, `--offset`/`--limit` for pagination, `--title` to match title or game slug, and `--source-id` to restrict source records. By default, results **do not print executable code**; `--with-code` explicitly requests original curated code strings. The results include exact source archive paths, editions and 16-character Switch Build IDs. Matching a Build ID from a curated file is **not** verification against the current running game, and neither indexing nor displaying a cheat means it works.
 
 The [six-game exact-build coverage register](../research/switch-exact-build-coverage-v1.json) separately distinguishes archived bodies from unimported third-party source references. It is metadata, not a replacement for `curated/` entries, nor an emulator installer. Only rights-cleared original source bodies can be added to the public repository. The `--coverage` mode exposes all six exact Build IDs, including a title whose exact code body has not been publicly archived; add `--only-missing` to see only unarchived section headings. This mode contains source/provenance metadata only and never exposes unimported code.
 

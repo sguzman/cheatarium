@@ -103,6 +103,8 @@ for path in sorted((ROOT / "curated").glob("*/*/cheats.json")):
         error(f"{path}: game path/identity mismatch")
     if doc.get("platform") not in platforms:
         error(f"{path}: unknown platform")
+    if doc.get("platform") == "switch" and not re.fullmatch(r"[0-9A-Fa-f]{16}", doc.get("game", {}).get("title_id", "")):
+        error(f"{path}: missing or malformed Switch Title ID")
     editions = [e.get("id") for e in doc.get("editions", [])]
     if not editions or len(editions) != len(set(editions)):
         error(f"{path}: no editions or duplicate edition IDs")
@@ -119,6 +121,8 @@ for path in sorted((ROOT / "curated").glob("*/*/cheats.json")):
             if variant.get("status") not in ("unverified", "verified", "broken"):
                 error(f"{path}: invalid verification status")
             ref = variant.get("source", {})
+            if doc.get("platform") == "switch" and doc["game"]["title_id"].lower() not in ref.get("archive_path", "").lower():
+                error(f"{path}: archived Switch source path does not include exact Title ID")
             if (ref.get("source"), ref.get("archive_path")) not in inventory:
                 error(f"{path}: untracked source reference {ref}")
 
