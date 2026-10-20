@@ -21,6 +21,10 @@ on:
       - "tools/test_curated_switch.py"
       - "tools/test_switch_exact_build_coverage.py"
       - "tools/reconcile_switch_exact_build_coverage.py"
+      - "tools/save_switch_collection.py"
+      - "tools/test_save_switch_collection.py"
+      - "sources/switch-exact-*.json"
+      - "archive/switch-exact-*/**"
       - "crates/cheatarium-client/src/curated.rs"
       - "crates/cheatarium-client/src/native_switch.rs"
       - "crates/cheatarium-client/src/main.rs"
@@ -59,5 +63,6 @@ jobs:
           python3 -m unittest discover -s tools -p test_curated_switch.py
           python3 -m unittest discover -s tools -p test_switch_exact_build_coverage.py
           python3 tools/reconcile_switch_exact_build_coverage.py --check
+          python3 -m unittest discover -s tools -p test_save_switch_collection.py
           python3 tools/curate_switch_private.py --title-id 01006A800016E000
 

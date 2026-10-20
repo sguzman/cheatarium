@@ -32,3 +32,25 @@ Run `python tools/validate.py` (or `uv run python tools/validate.py`). It checks
 ## 5. Enrich over time
 
 Record screenshots or actual test observations separately; prioritize adding known regional differences, multiple code devices, prerequisites, warnings, and cross-format equivalents. Do not overwrite unverified upstream evidence with guesses.
+
+## Preserve the selected six Switch cheat collections
+
+`python3 tools/save_switch_collection.py --save` imports the full 174 selected
+native cheat sections into this checkout's own `archive/switch-exact-hamlet/`
+and `archive/switch-exact-smash/` and adds missing entries to
+`curated/switch/`. The exact Build IDs, original page/source URLs and
+attribution receipts are retained in `sources/switch-exact-*.json`; the existing
+six-game coverage report updates to exact code-body matches.
+`python3 tools/save_switch_collection.py --verify` checks those preserved files.
+
+The importer uses existing personal acquisition files when available, and
+otherwise fetches the pinned source. It refuses mismatched source headings,
+checksums, incompatible game versions, symlinks and changed archived originals.
+It never modifies Eden, writes a separate hoard, or activates cheats.
+
+`--save --publish` additionally commits **only** its changed files to the
+existing `main` branch and pushes to the configured Cheatarium origin.
+**That makes the imported third-party code bodies publicly downloadable.**
+Their authorship and independent redistribution permissions are not established;
+source credit and a public Git commit do **not** grant reuse rights.
+Assess that public-release decision before using `--publish`.

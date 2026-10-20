@@ -42,6 +42,7 @@ class SwitchCurationTests(unittest.TestCase):
             "the-legend-of-zelda-links-awakening": "01006BB00C6F0000",
             "super-smash-bros-ultimate": "01006A800016E000",
             "super-mario-rpg": "0100BC0018138000",
+            "the-legend-of-zelda-skyward-sword-hd": "01002DA013484000",
         }
         total = 0
         for path in paths:
