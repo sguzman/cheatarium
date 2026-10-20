@@ -4,6 +4,7 @@
 use super::{is_build_id, is_title_id, Bundle, ErrBox, IndexedFile};
 use cheatarium_client::{Code, Provenance};
 use serde::Deserialize;
+use sha2::{Digest, Sha256};
 use std::env;
 use std::fs;
 use std::path::{Component, Path, PathBuf};
@@ -28,6 +29,25 @@ struct Game {
     title: String,
     hamlet_builds: Vec<Build>,
     static_nsp_observation: StaticNsp,
+    #[serde(default)]
+    exact_build_external_sources: Vec<ExternalSource>,
+}
+#[derive(Deserialize)]
+struct ExternalSource {
+    source_id: String,
+    source_url: String,
+    build_id: String,
+}
+#[derive(Deserialize)]
+struct ExternalReceipt {
+    format: String,
+    title_id: String,
+    build_id: String,
+    source_id: String,
+    source_url: String,
+    section_count: usize,
+    body_sha256: String,
+    gameplay_verified: bool,
 }
 #[derive(Deserialize)]
 struct Build {
@@ -177,21 +197,52 @@ pub(super) fn load_exact(
         .iter()
         .find(|entry| entry.build_id == *build_id)
         .map_or(0, |entry| entry.strict_native_hex_sections);
-    if expected == 0
-        || expected
-            != game
-                .static_nsp_observation
-                .pinned_native_cheat_sections_matched
-    {
-        return Err("No pinned native exact-build cheats for this NSP (Smash needs external source integration)".into());
+    if expected != game.static_nsp_observation.pinned_native_cheat_sections_matched {
+        return Err("Pinned native count mismatches static NSP curation".into());
     }
     let path = private_root
         .join(&game.title_id)
         .join(format!("{build_id}.txt"));
     regular_file(&path, MAX_PRIVATE_CHEAT_BYTES)?;
-    let sections = parse_sections(&fs::read_to_string(&path)?)?;
-    if sections.len() != expected {
-        return Err("Private staged native cheat count disagrees with pinned manifest".into());
+    let payload = fs::read(&path)?;
+    let mut source_id = "hamlet_private_curated".to_owned();
+    let mut repository = "https://github.com/HamletDuFromage/switch-cheats-db".to_owned();
+    let mut revision = manifest.upstream.snapshot_commit;
+    let mut source_path = format!("cheats/{}.json", game.title_id);
+    let actual_count = if expected > 0 {
+        expected
+    } else {
+        // No matching body in pinned Hamlet; accept *only* an exact external
+        // source explicitly catalogued for this one observed Smash build.
+        if title_id != "01006A800016E000" || build_id != "CBD5A9B56EA859BA" {
+            return Err("No pinned exact-build native source for this game".into());
+        }
+        let receipt_path = private_root.join(title_id).join(format!("{build_id}.source.json"));
+        regular_file(&receipt_path, 16_384)?;
+        let receipt: ExternalReceipt = serde_json::from_slice(&fs::read(receipt_path)?)?;
+        let matching = game.exact_build_external_sources.iter().any(|source| {
+            source.source_id == receipt.source_id
+                && source.source_url == receipt.source_url
+                && source.build_id == *build_id
+                && matches!(source.source_id.as_str(),
+                    "panda-smash-1302" | "gbatemp-smash-1302-adaptation")
+        });
+        if !matching || receipt.format != "cheatarium-private-external-native-source-v1"
+            || receipt.title_id != title_id || receipt.build_id != *build_id
+            || receipt.section_count != 25 || receipt.gameplay_verified
+            || receipt.body_sha256 != format!("{:x}", Sha256::digest(&payload))
+        {
+            return Err("External Smash private receipt or native checksum is invalid".into());
+        }
+        source_id = "external_smash_private_curated".to_owned();
+        repository = receipt.source_url.clone();
+        source_path = receipt.source_url;
+        revision = receipt.body_sha256;
+        receipt.section_count
+    };
+    let sections = parse_sections(std::str::from_utf8(&payload)?)?;
+    if sections.len() != actual_count {
+        return Err("Private native cheat section count disagrees with verified source".into());
     }
     let codes = sections
         .into_iter()
@@ -210,7 +261,7 @@ pub(super) fn load_exact(
         .collect();
     let archive_path = format!("privately_staged/{}/{}.txt", game.title_id, build_id);
     let file = IndexedFile {
-        id: format!("private-hamlet-{}-{}", game.title_id, build_id),
+        id: format!("private-native-{}-{}", game.title_id, build_id),
         title_hint: game.title,
         candidate_game_key: format!(
             "title-id-{}-build-{}",
@@ -221,15 +272,15 @@ pub(super) fn load_exact(
         raw_filename: format!("{build_id}.txt"),
         region_hint: None,
         format_hint: Some("atmosphere_native_switch_cheats".into()),
-        declared_cheats: Some(expected),
+        declared_cheats: Some(actual_count),
         parse_warnings: Vec::new(),
         codes,
         provenance: Provenance {
-            source_id: "hamlet_private_curated".into(),
-            repository: "https://github.com/HamletDuFromage/switch-cheats-db".into(),
-            revision: manifest.upstream.snapshot_commit,
+            source_id,
+            repository,
+            revision,
             license: "third_party_unverified_code_local_private_only".into(),
-            upstream_path: format!("cheats/{}.json", game.title_id),
+            upstream_path: source_path,
             archive_path,
             git_blob_sha: "not_verified".into(),
         },
