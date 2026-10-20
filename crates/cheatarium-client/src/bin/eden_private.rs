@@ -392,7 +392,7 @@ mod tests {
         assert_eq!(preview.proposed_addons.len(), 1);
         assert_eq!(
             preview.source_filter,
-            "private_pinned_hamlet_exact_static_nsp"
+            "private_exact_static_nsp_native_source"
         );
         assert!(!preview.installation_allowed);
         // An older user-managed add-on with the same readable heading
