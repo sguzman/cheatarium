@@ -335,7 +335,20 @@ def main() -> int:
         # Update the already existing exact-build source coverage report from the repository's actual bytes.
         from reconcile_switch_exact_build_coverage import reconcile
         coverage_path = ROOT / "research/switch-exact-build-coverage-v1.json"
-        report = reconcile(ROOT, json.loads(coverage_path.read_text("utf-8")))
+        current_report = json.loads(coverage_path.read_text("utf-8"))
+        smash = next(game for game in current_report["games"] if game["title_id"] == "01006A800016E000")
+        smash_data = output["archive/" + SMASH_SOURCE + "/01006A800016E000/" + smash["build_id"] + ".txt"]
+        smash_sections = native_sections(smash_data)
+        if len(smash_sections) != len(smash["sections"]):
+            raise ValueError("Missing Smash sections")
+        for row, (heading, code) in zip(smash["sections"], smash_sections):
+            if row["heading"].casefold() != heading.casefold():
+                raise ValueError("Smash section label changed")
+            code_digest = digest(code)
+            if row.get("source_code_sha256") and row["source_code_sha256"] != code_digest:
+                raise ValueError("Smash code fingerprint mismatch")
+            row["source_code_sha256"] = code_digest
+        report = reconcile(ROOT, current_report)
         if report["counts"]["archived_exact_sections"] != 174 or report["counts"]["linked_only_sections"] != 0:
             raise ValueError("Preservation coverage is not complete: " + str(report["counts"]))
         payload = (json.dumps(report, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
