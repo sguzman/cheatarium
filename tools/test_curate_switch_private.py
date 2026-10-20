@@ -102,7 +102,6 @@ class PrivateCuratorTests(unittest.TestCase):
             patch.object(curator, "load_manifest", return_value=catalog),
             patch.object(curator, "safe_output_root", return_value=Path("/unused/test")),
             patch.object(curator, "stage", side_effect=staged),
-            patch("private_switch_collection.refresh_collection", return_value={"backup": {"status": "not_configured"}}),
             patch.object(sys, "argv", ["curate_switch_private.py", "--fetch-personal-exact"]),
             redirect_stdout(output),
         ):
