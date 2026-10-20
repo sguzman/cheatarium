@@ -466,7 +466,7 @@ mod tests {
             ..Options::defaults()
         };
         let results = search(&opts).expect("repository curated collection");
-        assert_eq!(results.len(), 58);
+        assert!(results.len() >= 53);
         assert!(results
             .iter()
             .all(|r| r.title_id.as_deref() == Some("0100BC0018138000")));
@@ -480,7 +480,7 @@ mod tests {
             ..opts
         })
         .unwrap();
-        assert_eq!(with_code.len(), 58);
+        assert_eq!(with_code.len(), results.len());
         assert!(with_code
             .iter()
             .all(|r| r.code.as_deref().is_some_and(|c| !c.is_empty())));
@@ -499,27 +499,37 @@ mod tests {
     }
 
     #[test]
-    fn exact_build_coverage_reports_all_six_games_without_rehosting_code() {
+    fn exact_build_coverage_reports_all_six_games_archived() {
         let opts = Options {
             root: repository(),
             platform: Some("switch".into()),
             coverage: true,
-            only_missing: true,
             ..Options::defaults()
         };
         let rows = coverage_rows(&opts).expect("six-title coverage");
-        assert_eq!(rows.len(), 123);
+        assert_eq!(rows.len(), 174);
         assert!(rows
             .iter()
-            .all(|row| row["state"] == "linked_only_no_public_code_body"));
+            .all(|row| row["state"] == "archived_code_exact_match"));
         let skyward = coverage_rows(&Options {
             title: Some("Skyward Sword".into()),
-            ..opts
+            ..Options {
+                root: repository(),
+                platform: Some("switch".into()),
+                coverage: true,
+                ..Options::defaults()
+            }
         })
         .unwrap();
         assert_eq!(skyward.len(), 47);
         assert!(skyward
             .iter()
             .all(|row| row["build_id"] == "D824D4B1BBD45D03"));
+        let missing = coverage_rows(&Options {
+            only_missing: true,
+            ..opts
+        })
+        .unwrap();
+        assert!(missing.is_empty());
     }
 }

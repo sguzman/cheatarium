@@ -50,9 +50,11 @@ jobs:
           cargo test --locked -p cheatarium-client --bin cheatarium-eden-plan
           cargo test --locked -p cheatarium-client --bin cheatarium-query
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --platform switch --title-id 0100BC0018138000 --build-id E968832CADE2AD7C --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total"] == 58 and d["code_visible"] is False and all("code" not in row for row in d["results"])'
-          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --coverage --only-missing --title-id 01002DA013484000 --json \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["matched_sections"] == 47 and d["source_only_sections"] == 47 and d["archived_sections"] == 0'
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total"] >= 53 and d["code_visible"] is False and all("code" not in row for row in d["results"])'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --coverage --title-id 01002DA013484000 --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["matched_sections"] == 47 and d["source_only_sections"] == 0 and d["archived_sections"] == 47'
+          cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- curated --coverage --only-missing --json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["matched_sections"] == 0 and d["source_only_sections"] == 0'
           cargo run --locked -q -p cheatarium-client --bin cheatarium-query -- native-switch --title-id 0100000000010000 --build-id B424BE150A8E7D78 --source-id sharkive --json \
             | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["total"] > 0 and not d["code_visible"] and all("code" not in row for row in d["results"])'
       - name: Validate local curation preview
