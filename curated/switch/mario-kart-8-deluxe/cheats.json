@@ -1,0 +1,1157 @@
+{
+  "schema_version": 1,
+  "platform": "switch",
+  "game": {
+    "id": "mario-kart-8-deluxe",
+    "title": "Mario Kart 8 Deluxe"
+  },
+  "editions": [
+    {
+      "id": "build-1cd9216a21737fb4",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "1CD9216A21737FB4"
+    },
+    {
+      "id": "build-96dfd1769e560c27",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "96DFD1769E560C27"
+    },
+    {
+      "id": "build-fe1b230800d4933c",
+      "region": "Unspecified",
+      "revision": null,
+      "hashes": {},
+      "build_id": "FE1B230800D4933C"
+    }
+  ],
+  "cheats": [
+    {
+      "id": "unlock-gold-mario-1cd9216a21737fb4-001",
+      "name": "Unlock Gold Mario",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-1cd9216a21737fb4",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 29af136d 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/1cd9216a21737fb4.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-all-parts-1cd9216a21737fb4-002",
+      "name": "Unlock All Parts",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-1cd9216a21737fb4",
+          "format": "atmosphere-native-switch",
+          "code": "08100000 29af1388 03030303 03030303\n08100000 29af1390 03030303 03030303\n08100000 29af1398 03030303 03030303\n08100000 29af13A0 03030303 03030303\n08100000 29af13A8 03030303 03030303\n08100000 29af13c8 03030303 03030303\n08100000 29af13d0 03030303 03030303\n08100000 29af13d8 00000003 03030303\n08100000 29af1408 03030303 03030303\n08100000 29af1410 00000303 03030303",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/1cd9216a21737fb4.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-gold-mario-1-4-0-1cd9216a21737fb4-003",
+      "name": "Unlock Gold Mario 1.4.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-1cd9216a21737fb4",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 29af136d 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/1cd9216a21737fb4.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-all-parts-1-4-0-1cd9216a21737fb4-004",
+      "name": "Unlock All Parts 1.4.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-1cd9216a21737fb4",
+          "format": "atmosphere-native-switch",
+          "code": "08100000 29af1388 03030303 03030303\n08100000 29af1390 03030303 03030303\n08100000 29af1398 03030303 03030303\n08100000 29af13A0 03030303 03030303\n08100000 29af13A8 03030303 03030303\n08100000 29af13c8 03030303 03030303\n08100000 29af13d0 03030303 03030303\n08100000 29af13d8 00000003 03030303\n08100000 29af1408 03030303 03030303\n08100000 29af1410 00000303 03030303",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/1cd9216a21737fb4.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-gold-mario-96dfd1769e560c27-001",
+      "name": "Unlock Gold Mario",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-96dfd1769e560c27",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 29af136d\n00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/96dfd1769e560c27.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-all-parts-96dfd1769e560c27-002",
+      "name": "Unlock All Parts",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-96dfd1769e560c27",
+          "format": "atmosphere-native-switch",
+          "code": "08100000 29af1388\n03030303 03030303\n08100000 29af1390\n03030303 03030303\n08100000 29af1398\n03030303 03030303\n08100000 29af13A0\n03030303 03030303\n08100000 29af13A8\n03030303 03030303\n08100000 29af13c8\n03030303 03030303\n08100000 29af13d0\n03030303 03030303\n08100000 29af13d8\n00000003 03030303\n08100000 29af1408\n03030303 03030303\n08100000 29af1410\n00000303 03030303",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/96dfd1769e560c27.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-gold-mario-1-7-0-96dfd1769e560c27-003",
+      "name": "Unlock Gold Mario 1.7.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-96dfd1769e560c27",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 29af136d 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/96dfd1769e560c27.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-all-parts-1-7-0-96dfd1769e560c27-004",
+      "name": "Unlock All Parts 1.7.0",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-96dfd1769e560c27",
+          "format": "atmosphere-native-switch",
+          "code": "08100000 29af1388 03030303 03030303\n08100000 29af1390 03030303 03030303\n08100000 29af1398 03030303 03030303\n08100000 29af13A0 03030303 03030303\n08100000 29af13A8 03030303 03030303\n08100000 29af13c8 03030303 03030303\n08100000 29af13d0 03030303 03030303\n08100000 29af13d8 00000003 03030303\n08100000 29af1408 03030303 03030303\n08100000 29af1410 00000303 03030303",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/96dfd1769e560c27.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cpu-no-move-fe1b230800d4933c-001",
+      "name": "cpu no move",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "04000000 007289B0 48D80000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "always-10-coins-fe1b230800d4933c-002",
+      "name": "ALWAYS 10 COINS",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "011F0000 56c04ac4 0000000A",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-donkey-kong-fe1b230800d4933c-003",
+      "name": "BIGGER KART DONKEY KONG",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9B2 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-toad-fe1b230800d4933c-004",
+      "name": "BIGGER KART TOAD",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9A2 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-toadette-fe1b230800d4933c-005",
+      "name": "BIGGER KART TOADETTE",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9A6 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-koopa-troopa-fe1b230800d4933c-006",
+      "name": "BIGGER KART KOOPA TROOPA",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9AA 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-bowser-fe1b230800d4933c-007",
+      "name": "BIGGER KART BOWSER",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9AE 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-wario-fe1b230800d4933c-008",
+      "name": "BIGGER KART WARIO",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9B6 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-waluigi-fe1b230800d4933c-009",
+      "name": "BIGGER KART WALUIGI",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9BA 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-rosalina-fe1b230800d4933c-010",
+      "name": "BIGGER KART ROSALINA",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9BE 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-shy-guy-fe1b230800d4933c-011",
+      "name": "BIGGER KART SHY GUY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9CE 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-lakitu-fe1b230800d4933c-012",
+      "name": "BIGGER KART LAKITU",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9CA 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-baby-mario-fe1b230800d4933c-013",
+      "name": "BIGGER KART BABY MARIO",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9D2 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-baby-luigi-fe1b230800d4933c-014",
+      "name": "BIGGER KART BABY LUIGI",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9D6 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-baby-peach-fe1b230800d4933c-015",
+      "name": "BIGGER KART BABY PEACH",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9DA 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-baby-daisy-fe1b230800d4933c-016",
+      "name": "BIGGER KART BABY DAISY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9DE 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-baby-rosalina-fe1b230800d4933c-017",
+      "name": "BIGGER KART BABY ROSALINA",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9E2 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-larry-fe1b230800d4933c-018",
+      "name": "BIGGER KART LARRY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9E6 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-wendy-fe1b230800d4933c-019",
+      "name": "BIGGER KART WENDY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9EE 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-roy-fe1b230800d4933c-020",
+      "name": "BIGGER KART ROY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9FA 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-morton-fe1b230800d4933c-021",
+      "name": "BIGGER KART MORTON",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9FE 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-isabelle-fe1b230800d4933c-022",
+      "name": "BIGGER KART ISABELLE",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA12 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-dry-bowser-fe1b230800d4933c-023",
+      "name": "BIGGER KART DRY BOWSER",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA1A 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-dry-bones-fe1b230800d4933c-024",
+      "name": "BIGGER KART DRY BONES",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA26 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-bowser-jr-fe1b230800d4933c-025",
+      "name": "BIGGER KART BOWSER JR",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA2A 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-king-boo-fe1b230800d4933c-026",
+      "name": "BIGGER KART KING BOO",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA2E 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-link-fe1b230800d4933c-027",
+      "name": "BIGGER KART LINK",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA3A 000000FF\n010F0000 00C2FA0A 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-tanooki-mario-fe1b230800d4933c-028",
+      "name": "BIGGER KART TANOOKI MARIO",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA06 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-villager-fe1b230800d4933c-029",
+      "name": "BIGGER KART VILLAGER",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA1E 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-cat-peach-fe1b230800d4933c-030",
+      "name": "BIGGER KART CAT PEACH",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA16 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-inkling-girl-fe1b230800d4933c-031",
+      "name": "BIGGER KART INKLING GIRL",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA32 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-inkling-boy-fe1b230800d4933c-032",
+      "name": "BIGGER KART INKLING BOY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2FA36 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-metal-mario-fe1b230800d4933c-033",
+      "name": "BIGGER KART METAL MARIO",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9C2 000000FF\n010F0000 00C2FA22 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-pink-gold-peach-fe1b230800d4933c-034",
+      "name": "BIGGER KART PINK GOLD PEACH",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9C6 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-ludwig-fe1b230800d4933c-035",
+      "name": "BIGGER KART LUDWIG",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9F2 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-iggy-fe1b230800d4933c-036",
+      "name": "BIGGER KART IGGY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9F6 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigger-kart-lemmy-fe1b230800d4933c-037",
+      "name": "BIGGER KART LEMMY",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "010F0000 00C2F9EA 000000FF",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-track-music-fe1b230800d4933c-038",
+      "name": "No Track Music",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 0007CC48 EE311A41",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-kart-engine-sound-effect-fe1b230800d4933c-039",
+      "name": "No Kart Engine Sound Effect",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 00075B98 EE388A48",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stretch-player-vertically-fe1b230800d4933c-040",
+      "name": "Stretch Player Vertically",
+      "kind": "patch",
+      "notes": "Source annotation: 040F0000 00AF45D8 XXXXXXXX",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 000DAFB0 EB286586\n040F0000 00AF45D0 ED9F2A00\n040F0000 00AF45D4 E12FFF1E",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stretch-player-horizontally-fe1b230800d4933c-041",
+      "name": "Stretch Player Horizontally",
+      "kind": "patch",
+      "notes": "Source annotation: 040F0000 00AF45E4 XXXXXXXX | X values: Float values. Use 0x3F800000 for default. | Following two older cheat codes are by optantic.",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 000DB0A4 EB28654C\n040F0000 00AF45DC ED9F2A00\n040F0000 00AF45E0 E12FFF1E",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-gold-mario-fe1b230800d4933c-042",
+      "name": "Unlock Gold Mario",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 29af136d 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-all-parts-fe1b230800d4933c-043",
+      "name": "Unlock All Parts",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "08100000 29af1388 03030303 03030303\n08100000 29af1390 03030303 03030303\n08100000 29af1398 03030303 03030303\n08100000 29af13A0 03030303 03030303\n08100000 29af13A8 03030303 03030303\n08100000 29af13c8 03030303 03030303\n08100000 29af13d0 03030303 03030303\n08100000 29af13d8 00000003 03030303\n08100000 29af1408 03030303 03030303\n08100000 29af1410 00000303 03030303",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-gold-mario-1-7-1-fe1b230800d4933c-044",
+      "name": "Unlock Gold Mario 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "01100000 29af136d 00000003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock-all-parts-1-7-1-fe1b230800d4933c-045",
+      "name": "Unlock All Parts 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "08100000 29af1388 03030303 03030303\n08100000 29af1390 03030303 03030303\n08100000 29af1398 03030303 03030303\n08100000 29af13A0 03030303 03030303\n08100000 29af13A8 03030303 03030303\n08100000 29af13c8 03030303 03030303\n08100000 29af13d0 03030303 03030303\n08100000 29af13d8 00000003 03030303\n08100000 29af1408 03030303 03030303\n08100000 29af1410 00000303 03030303",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "coins-are-rupees-1-7-1-fe1b230800d4933c-046",
+      "name": "Coins Are Rupees 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 00020964 E3A01001",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "coins-are-bell-coins-1-7-1-fe1b230800d4933c-047",
+      "name": "Coins are Bell Coins 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 00020964 E3A01002",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "coins-are-superbell-subway-coins-1-7-1-fe1b230800d4933c-048",
+      "name": "Coins are Superbell Subway Coins 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 00020964 E3A01003",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "course-object-intangibility-1-7-1-fe1b230800d4933c-049",
+      "name": "Course Object Intangibility 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 007704A0 E12FFF1E",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-track-music-1-7-1-fe1b230800d4933c-050",
+      "name": "No Track Music 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 0007CC48 EE311A41",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "disable-backwards-camera-1-7-1-fe1b230800d4933c-051",
+      "name": "Disable Backwards Camera 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 001164EC E12FFF1E",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-kart-engine-sound-effect-1-7-1-fe1b230800d4933c-052",
+      "name": "No Kart Engine Sound Effect 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 00075B98 EE388A48",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stretch-player-vertically-1-7-1-fe1b230800d4933c-053",
+      "name": "Stretch Player Vertically 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 000DAFB0 EB286586\n040F0000 00AF45D0 ED9F2A00\n040F0000 00AF45D4 E12FFF1E\n040F0000 00AF45D8 FFFF0000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stretch-player-horizontally-1-7-1-fe1b230800d4933c-054",
+      "name": "Stretch Player Horizontally 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "040F0000 000DB0A4 EB28654C\n040F0000 00AF45DC ED9F2A00\n040F0000 00AF45E0 E12FFF1E\n040F0000 00AF45E4 FFFF0000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "race-vr-modifier-1-7-1-fe1b230800d4933c-055",
+      "name": "Race VR Modifier 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "041F0000 29AF124C 0001869F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "battle-vr-modifier-1-7-1-fe1b230800d4933c-056",
+      "name": "Battle VR Modifier 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "041F0000 29AF1250 0001869F",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stop-cpus-toad-harbour-1-7-1-fe1b230800d4933c-057",
+      "name": "Stop CPUs | Toad Harbour 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "041F0000 5904B0FE 00010000\n041F0000 59286716 00010000\n041F0000 594C1D2E 00010000\n041F0000 596FD346 00010000\n041F0000 5993895E 00010000\n041F0000 59B73F76 00010000\n041F0000 59DAF58E 00010000\n041F0000 59FEABA6 00010000\n041F0000 5A2261BE 00010000\n041F0000 5A4617D6 00010000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "grand-prix-always-10-coins-1-7-1-fe1b230800d4933c-058",
+      "name": "Grand Prix - Always 10 Coins 1.7.1",
+      "kind": "patch",
+      "variants": [
+        {
+          "edition": "build-fe1b230800d4933c",
+          "format": "atmosphere-native-switch",
+          "code": "58000000 00DA9EA8\n98010100 00000000 000C28FC\n54011000 00000000\nC0431400 0000000A\n40010000 00000000 0000000A\nA4100200 000C28FC\n20000000",
+          "status": "unverified",
+          "source": {
+            "source": "sharkive",
+            "archive_path": "archive/sharkive/switch/0100152000022000/fe1b230800d4933c.txt"
+          }
+        }
+      ]
+    }
+  ]
+}
