@@ -866,6 +866,273 @@ pub(super) fn rename_legacy_file_only(
     })
 }
 
+/// Deliberately opt-in replacement of the *legacy readable* add-on layout
+/// emitted by Cheatarium's earlier file-only installs. This is NOT a general
+/// Eden mod updater: refuse any unexpected directory content or heading.
+#[derive(Debug, Serialize)]
+pub(super) struct ReplacedLegacy {
+    format: &'static str,
+    title_id: String,
+    selected_build_id: String,
+    original_files_backed_up: usize,
+    backup_directory: Option<String>,
+    files_replaced: usize,
+    files_identical: usize,
+    files_created: usize,
+    eden_config_updated: bool,
+    eden_config_backup_path: Option<String>,
+    activation_state: &'static str,
+    installed_build_id_verified: bool,
+    compatible_cheats_verified: bool,
+    warning: &'static str,
+}
+
+fn backup_parent() -> Result<PathBuf, ErrBox> {
+    let home = std::env::var_os("HOME").ok_or("HOME is required for private cheat backups")?;
+    let base = PathBuf::from(home);
+    if !base.is_absolute() {
+        return Err("HOME must be an absolute path".into());
+    }
+    let path = base.join(".local/share/cheatarium/mod-backups");
+    let mut current = PathBuf::new();
+    for component in path.components() {
+        current.push(component);
+        match fs::symlink_metadata(&current) {
+            Ok(meta) if meta.is_dir() && !meta.file_type().is_symlink() => {}
+            Ok(_) => return Err("Private backup path contains a symlink or non-directory".into()),
+            Err(e) if e.kind() == std::io::ErrorKind::NotFound => fs::create_dir(&current)?,
+            Err(e) => return Err(e.into()),
+        }
+    }
+    Ok(path)
+}
+
+fn backup_originals(
+    title: &str,
+    build: &str,
+    originals: &[(String, Vec<u8>)],
+) -> Result<Option<PathBuf>, ErrBox> {
+    if originals.is_empty() {
+        return Ok(None);
+    }
+    let parent = backup_parent()?;
+    for serial in 0..1024 {
+        let dir = parent.join(format!("{title}-{build}-{}-{serial}", std::process::id()));
+        match fs::create_dir(&dir) {
+            Err(e) if e.kind() == std::io::ErrorKind::AlreadyExists => continue,
+            Err(e) => return Err(e.into()),
+            Ok(()) => {}
+        }
+        let outcome = (|| -> Result<(), ErrBox> {
+            for (i, (addon, bytes)) in originals.iter().enumerate() {
+                let destination = dir.join(format!("{i:04}-{addon}.txt.backup"));
+                let mut file = OpenOptions::new()
+                    .write(true).create_new(true).open(&destination)?;
+                #[cfg(unix)]
+                {
+                    use std::os::unix::fs::PermissionsExt;
+                    file.set_permissions(fs::Permissions::from_mode(0o600))?;
+                }
+                file.write_all(bytes)?;
+                file.sync_all()?;
+                if fs::read(&destination)? != *bytes {
+                    return Err("Private mod backup verification failed".into());
+                }
+            }
+            Ok(())
+        })();
+        if let Err(e) = outcome {
+            return Err(format!(
+                "Unable to complete original mod backups in {}: {e}",
+                dir.display()
+            ).into());
+        }
+        return Ok(Some(dir));
+    }
+    Err("Private backup directory slots exhausted".into())
+}
+
+fn legacy_existing_bytes(
+    directory: &Path,
+    cheat_file: &Path,
+    expected_header: &str,
+) -> Result<Vec<u8>, ErrBox> {
+    validate_regular_ancestors(directory, false)?;
+    let children = fs::read_dir(directory)?.collect::<Result<Vec<_>, _>>()?;
+    if children.len() != 1 || children[0].file_name() != "cheats" {
+        return Err("Existing addon is not a simple previously generated cheat-only directory".into());
+    }
+    let cheats_dir = directory.join("cheats");
+    validate_regular_ancestors(&cheats_dir, false)?;
+    let children = fs::read_dir(&cheats_dir)?.collect::<Result<Vec<_>, _>>()?;
+    if children.len() != 1 || children[0].path() != cheat_file {
+        return Err("Existing addon has extra files or a different Build ID; refusing replacement".into());
+    }
+    validate_regular_ancestors(cheat_file, true)?;
+    if fs::metadata(cheat_file)?.len() > super::MAX_STAGED_TOTAL_BYTES as u64 {
+        return Err("Existing cheat exceeds bounded inspection limit".into());
+    }
+    let old = fs::read(cheat_file)?;
+    let text = std::str::from_utf8(&old)
+        .map_err(|_| "Existing cheat isn't readable UTF-8 native code")?;
+    if text.lines().next() != Some(expected_header) {
+        return Err("Existing addon heading doesn't match selected Cheatarium cheat; refusing replacement".into());
+    }
+    if !text.lines().skip(1).filter(|line| !line.trim().is_empty()).all(|line| {
+        let words: Vec<_> = line.split_ascii_whitespace().collect();
+        !words.is_empty() && words.len() <= 5 && words.iter()
+            .all(|w| w.len() == 8 && w.bytes().all(|b| b.is_ascii_hexdigit()))
+    }) {
+        return Err("Existing addon isn't in Cheatarium's native-hex legacy format".into());
+    }
+    Ok(old)
+}
+
+/// Mutates only matching single-file legacy add-ons, after explicit opt-in.
+/// Every changed original is backed up outside Eden and verified before any
+/// config or mod mutation; Eden must not be running.
+pub(super) fn replace_legacy_private(
+    bundle: &Bundle,
+    selection: &Preview,
+    mods_root: &Path,
+    config: &Path,
+) -> Result<ReplacedLegacy, ErrBox> {
+    if selection.source_filter != "private_pinned_hamlet_exact_static_nsp" {
+        return Err("Legacy replacement requires a curated private source".into());
+    }
+    eden_not_running()?;
+    validate_regular_ancestors(config, true)?;
+    validate_mod_root_plan(mods_root)?;
+    let prepared = prepare_addons(bundle, selection, mods_root)?;
+    if prepared.is_empty() {
+        return Err("No native private cheats to install or replace".into());
+    }
+    let title = &selection.title_id;
+    let build = &selection.explicitly_selected_build_id;
+    let title_dir = mods_root.join(title);
+    if fs::symlink_metadata(&title_dir).is_ok() {
+        validate_regular_ancestors(&title_dir, false)?;
+    }
+    let mut pending = Vec::<(String, PathBuf, Vec<u8>, Option<Vec<u8>>)>::new();
+    let mut originals = Vec::<(String, Vec<u8>)>::new();
+    let mut names = Vec::new();
+    let mut unique = BTreeSet::new();
+    for (entry, bytes) in &prepared {
+        let relative = Path::new(&entry.relative_path);
+        let parts = relative.components().collect::<Vec<_>>();
+        if parts.len() != 4
+            || parts[0].as_os_str() != std::ffi::OsStr::new(title)
+            || parts[2].as_os_str() != "cheats"
+            || parts[3].as_os_str() != std::ffi::OsStr::new(format!("{build}.txt").as_str())
+        {
+            return Err("Unexpected private legacy cheat layout".into());
+        }
+        let name = parts[1].as_os_str().to_string_lossy().into_owned();
+        if name.starts_with("Cheatarium - ") || !unique.insert(name.clone()) {
+            return Err("Legacy replacement expects distinct original readable cheat names".into());
+        }
+        let directory = title_dir.join(&name);
+        let file = directory.join("cheats").join(format!("{build}.txt"));
+        let old = match fs::symlink_metadata(&directory) {
+            Ok(_) => {
+                let header = std::str::from_utf8(bytes)?
+                    .lines().next().ok_or("Empty prepared private cheat")?;
+                Some(legacy_existing_bytes(&directory, &file, header)?)
+            }
+            Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
+            Err(e) => return Err(e.into()),
+        };
+        if let Some(existing) = &old {
+            if existing != bytes {
+                originals.push((name.clone(), existing.clone()));
+            }
+        }
+        pending.push((name.clone(), file, bytes.clone(), old));
+        names.push(name);
+    }
+    let original_config = fs::read_to_string(config)?;
+    if original_config.len() as u64 > MAX_INI_BYTES {
+        return Err("Eden Qt config exceeds bounded size limit".into());
+    }
+    let updated_config = disabled_config(&original_config, title, &names)?;
+    // Preflight, back up ALL conflicting originals, then commit QSettings
+    // disabled state before changing the first live cheat.
+    let backed_up = backup_originals(title, build, &originals)?;
+    eden_not_running()?;
+    let config_backup = write_config_atomic(config, &original_config, &updated_config)?;
+    fs::create_dir_all(mods_root)?;
+    validate_regular_ancestors(mods_root, false)?;
+    if !title_dir.exists() {
+        fs::create_dir(&title_dir)?;
+    }
+    let mut replaced = 0;
+    let mut identical = 0;
+    let mut created = 0;
+    for (i, (addon, path, bytes, old)) in pending.into_iter().enumerate() {
+        eden_not_running()?;
+        match old {
+            Some(previous) if previous == bytes => {
+                // Treat an identical, already installed legacy cheat as a no-op.
+                identical += 1;
+            }
+            Some(previous) => {
+                let dir = title_dir.join(&addon);
+                let header = std::str::from_utf8(&previous)?.lines().next()
+                    .ok_or("Empty legacy cheat")?.to_owned();
+                if legacy_existing_bytes(&dir, &path, &header)? != previous {
+                    return Err(format!(
+                        "Legacy addon changed after backup; originals are preserved at {:?}",
+                        backed_up
+                    ).into());
+                }
+                let temp = path.with_file_name(format!(
+                    ".{build}.cheatarium-replace-{}-{i}.tmp", std::process::id()
+                ));
+                let mut writer = OpenOptions::new().write(true).create_new(true).open(&temp)?;
+                #[cfg(unix)]
+                {
+                    use std::os::unix::fs::PermissionsExt;
+                    writer.set_permissions(fs::Permissions::from_mode(0o600))?;
+                }
+                writer.write_all(&bytes)?;
+                writer.sync_all()?;
+                drop(writer);
+                fs::rename(&temp, &path)?;
+                if fs::read(&path)? != bytes {
+                    return Err("Replaced cheat failed byte-for-byte verification".into());
+                }
+                replaced += 1;
+            }
+            None => {
+                let root = title_dir.join(&addon);
+                fs::create_dir(&root)?;
+                fs::create_dir(root.join("cheats"))?;
+                super::write_new(&path, &bytes)?;
+                if fs::read(&path)? != bytes {
+                    return Err("Created cheat failed byte-for-byte verification".into());
+                }
+                created += 1;
+            }
+        }
+    }
+    Ok(ReplacedLegacy {
+        format: "cheatarium-eden-private-legacy-replacement-v1",
+        title_id: title.clone(),
+        selected_build_id: build.clone(),
+        original_files_backed_up: originals.len(),
+        backup_directory: backed_up.map(|path| path.to_string_lossy().into_owned()),
+        files_replaced: replaced,
+        files_identical: identical,
+        files_created: created,
+        eden_config_updated: updated_config != original_config,
+        eden_config_backup_path: config_backup.map(|path| path.to_string_lossy().into_owned()),
+        activation_state: "disabled_before_install",
+        installed_build_id_verified: false,
+        compatible_cheats_verified: false,
+        warning: "Explicit legacy overwrite completed; only structurally matching native single-file add-ons were eligible. Unrelated add-ons were not touched. Historical ownership cannot be proven from a folder name alone. Runtime and gameplay remain unverified.",
+    })
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
