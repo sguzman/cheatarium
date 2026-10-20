@@ -27,7 +27,7 @@ def archived_sections(path: Path) -> set[tuple[str, tuple[str, ...]]]:
             heading = re.sub(r"^♯\s*", "", match.group(1).strip()).strip()
             codes = []
         elif heading and NATIVE.fullmatch(line):
-            codes.append(line)
+            codes.append(" ".join(word.upper() for word in line.split()))
     flush()
     return out
 
@@ -70,7 +70,7 @@ class SwitchCurationTests(unittest.TestCase):
                         self.assertTrue(full.is_file())
                         if rel not in archived:
                             archived[rel] = archived_sections(full)
-                        section = (cheat["name"], tuple(variant["code"].splitlines()))
+                        section = (cheat["name"], tuple(" ".join(word.upper() for word in line.split()) for line in variant["code"].splitlines()))
                         self.assertIn(section, archived[rel], f"{cheat['name']} not in {rel}")
                         total += 1
         self.assertGreaterEqual(total, 300)
